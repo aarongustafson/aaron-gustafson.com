@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://aaron-gustafson.com/blog/</loc>
+        <loc>http://aarongustafson.github.io/blog/</loc>
         <lastmod>2014-06-16T22:15:59-04:00</lastmod>
     </url>
     <url>
-        <loc>http://aaron-gustafson.com/</loc>
+        <loc>http://aarongustafson.github.io/</loc>
         <lastmod>2014-06-16T22:15:59-04:00</lastmod>
     </url>
     <url>
-        <loc>http://aaron-gustafson.com/robots.txt</loc>
+        <loc>http://aarongustafson.github.io/robots.txt</loc>
         <lastmod>2014-06-16T22:15:59-04:00</lastmod>
     </url>
 </urlset>
