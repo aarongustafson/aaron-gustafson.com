@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Articles | Aaron Gustafson]]></title>
+  <link href="http://aarongustafson.github.io/blog/categories/articles/atom.xml" rel="self"/>
+  <link href="http://aarongustafson.github.io/"/>
+  <updated>2014-06-20T14:41:18-04:00</updated>
+  <id>http://aarongustafson.github.io/</id>
+  <author>
+    <name><![CDATA[Aaron Gustafson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Master Mobile Navigation]]></title>
+    <link href="http://aarongustafson.github.io/notes/2012/master-mobile-navigation/"/>
+    <updated>2012-09-15T13:00:00-04:00</updated>
+    <id>http://aarongustafson.github.io/notes/2012/master-mobile-navigation</id>
+    <content type="html"><![CDATA[<p>Users want content. But first you need to ensure they can locate it, whatever their device type. In this article, I discuss top strategies to adapt your navigation to smaller screens.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Build a Smart Mobile Navigation Without Hacks]]></title>
+    <link href="http://aarongustafson.github.io/notes/2012/build-smart-mobile-navigation-without-hacks/"/>
+    <updated>2012-06-07T13:00:00-04:00</updated>
+    <id>http://aarongustafson.github.io/notes/2012/build-smart-mobile-navigation-without-hacks</id>
+    <content type="html"><![CDATA[<p>In this article, I explore creating a progressively-enhanced, CSS-based dropdown navigation menu that works as part of a responsive design.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Cleaner Living Through Content Management]]></title>
+    <link href="http://aarongustafson.github.io/notes/2011/cleaner-living-through-content-management/"/>
+    <updated>2011-09-01T13:00:00-04:00</updated>
+    <id>http://aarongustafson.github.io/notes/2011/cleaner-living-through-content-management</id>
+    <content type="html"><![CDATA[<p>Half the battle with adopting any CMS or framework is to figure out how to best organize your content within it. In this article, I show how Norwin Alliance might approach a CMS migration.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Progressive Enhancement Demystified]]></title>
+    <link href="http://aarongustafson.github.io/notes/2011/progressive-enhancement-demystified/"/>
+    <updated>2011-06-28T13:00:00-04:00</updated>
+    <id>http://aarongustafson.github.io/notes/2011/progressive-enhancement-demystified</id>
+    <content type="html"><![CDATA[<p>In this excerpt from Chapter 1 of my book, <cite>Adaptive Web Design</cite>, I explain what progressive enhancement really means, how it works, and what it&rsquo;s got to do with the Galapagos finches and peanut M&amp;Ms.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Now You See Me]]></title>
+    <link href="http://aarongustafson.github.io/notes/2011/now-you-see-me/"/>
+    <updated>2011-06-28T13:00:00-04:00</updated>
+    <id>http://aarongustafson.github.io/notes/2011/now-you-see-me</id>
+    <content type="html"><![CDATA[<p>Showing and hiding content using JavaScript-based page manipulations for tabbed interfaces, collapsible elements, and accordion widgets is a common development pattern. Learn how your choice of hiding mechanism can influence content accessibility in assistive technologies like screen readers in an excerpt from <cite>Adaptive Web Design</cite>.</p>
+]]></content>
+  </entry>
+  
+</feed>

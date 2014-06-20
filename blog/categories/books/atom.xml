@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Books | Aaron Gustafson]]></title>
+  <link href="http://aarongustafson.github.io/blog/categories/books/atom.xml" rel="self"/>
+  <link href="http://aarongustafson.github.io/"/>
+  <updated>2014-06-20T14:41:18-04:00</updated>
+  <id>http://aarongustafson.github.io/</id>
+  <author>
+    <name><![CDATA[Aaron Gustafson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[A Web for Everyone]]></title>
+    <link href="http://aarongustafson.github.io/notes/2014/a-web-for-everyone/"/>
+    <updated>2014-01-16T12:00:00-05:00</updated>
+    <id>http://aarongustafson.github.io/notes/2014/a-web-for-everyone</id>
+    <content type="html"><![CDATA[<p>I was honored when Sarah Horton and Whitney Quesenbery approached me to write <a href="http://blog.easy-designs.net/archives/a-web-for-everyone/">the foreword</a> for this incredibly important book on accessibility. I highly recommend it to anyone looking to really understand what accessibility is all about and who is looking for inspiration for designing more inclusively.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Smashing Book 4]]></title>
+    <link href="http://aarongustafson.github.io/notes/2013/smashing-book-4/"/>
+    <updated>2013-11-25T12:00:00-05:00</updated>
+    <id>http://aarongustafson.github.io/notes/2013/smashing-book-4</id>
+    <content type="html"><![CDATA[<p>Smashing Magazine’s books are legendarily epic and, clocking in at 498 pages, this is no light read. That said, it is chock full of some of the best and most important writing about the world of web design out there. I contributed a chapter on planning adaptive interfaces.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Implementing Responsive Design]]></title>
+    <link href="http://aarongustafson.github.io/notes/2012/implementing-responsive-design/"/>
+    <updated>2012-08-10T13:00:00-04:00</updated>
+    <id>http://aarongustafson.github.io/notes/2012/implementing-responsive-design</id>
+    <content type="html"><![CDATA[<p>Tim Kadlec is one of those brilliant individuals who really gets the Web. His book on responsive design is a must-read for its practical approach and thorough coverage. I was stoked he asked me to write <a href="http://blog.easy-designs.net/archives/implementing-responsive-design/">the foreword</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Adaptive Web Design]]></title>
+    <link href="http://aarongustafson.github.io/notes/2011/adaptive-web-design/"/>
+    <updated>2011-05-30T13:00:00-04:00</updated>
+    <id>http://aarongustafson.github.io/notes/2011/adaptive-web-design</id>
+    <content type="html"><![CDATA[<p>In this brief book, I chronicle the origins of progressive enhancement—its philosophy and mechanisms—and reveal the countless practical ways you can apply progressive enhancement principles in HTML, CSS, and JavaScript. By understanding progressive enhancement and how to apply it properly, you can craft experiences that serve users (rather than browsers), giving them access to your content from anywhere.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Web Form Design]]></title>
+    <link href="http://aarongustafson.github.io/notes/2008/web-form-design/"/>
+    <updated>2008-05-02T13:00:00-04:00</updated>
+    <id>http://aarongustafson.github.io/notes/2008/web-form-design</id>
+    <content type="html"><![CDATA[<p>Luke asked me to contribute a perspective on developing web forms in HTML to his seminal exploration of form design. This is a must-read book if you don’t have a copy.</p>
+]]></content>
+  </entry>
+  
+</feed>
