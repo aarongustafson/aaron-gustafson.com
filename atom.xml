@@ -4,7 +4,7 @@
   <title><![CDATA[Aaron Gustafson]]></title>
   <link href="http://aarongustafson.github.io/atom.xml" rel="self"/>
   <link href="http://aarongustafson.github.io/"/>
-  <updated>2014-06-20T14:42:51-04:00</updated>
+  <updated>2014-06-20T19:32:54-04:00</updated>
   <id>http://aarongustafson.github.io/</id>
   <author>
     <name><![CDATA[Aaron Gustafson]]></name>
@@ -113,11 +113,56 @@
   </entry>
   
   <entry>
+    <title type="html"><![CDATA[Progressive Enhancement With JavaScript]]></title>
+    <link href="http://aarongustafson.github.io/notes/2008/progressive-enhancement-with-javascript/"/>
+    <updated>2008-11-04T12:00:00-05:00</updated>
+    <id>http://aarongustafson.github.io/notes/2008/progressive-enhancement-with-javascript</id>
+    <content type="html"><![CDATA[<p>Organize an execute JavaScript to streamline delivery and ensure no user is left with a bad experience. Part three of a series.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Progressive Enhancement With CSS]]></title>
+    <link href="http://aarongustafson.github.io/notes/2008/progressive-enhancement-with-css/"/>
+    <updated>2008-10-21T13:00:00-04:00</updated>
+    <id>http://aarongustafson.github.io/notes/2008/progressive-enhancement-with-css</id>
+    <content type="html"><![CDATA[<p>Organize multiple style sheets to simplify the creation of environmentally appropriate visual experiences. Support older browsers while keeping your CSS hack-free. Use generated content to provide visual enhancements, and seize the power of advanced selectors to create wondrous (or amusing) effects. Part two of a series.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Keeping the Hot Side Hot and the Cold Side Cold]]></title>
+    <link href="http://aarongustafson.github.io/notes/2008/keeping-the-hot-side-hot/"/>
+    <updated>2008-10-21T13:00:00-04:00</updated>
+    <id>http://aarongustafson.github.io/notes/2008/keeping-the-hot-side-hot</id>
+    <content type="html"><![CDATA[<p>Applying 1980s’ fast-food logic to JavaScript and CSS separation: techniques for keeping your presentation out of your scripts.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Understanding Progressive Enhancement]]></title>
+    <link href="http://aarongustafson.github.io/notes/2008/understanding-progressive-enhancement/"/>
+    <updated>2008-10-07T13:00:00-04:00</updated>
+    <id>http://aarongustafson.github.io/notes/2008/understanding-progressive-enhancement</id>
+    <content type="html"><![CDATA[<p>Steven Champeon turned web development upside down, and created an instant best practice of standards-based design, when he introduced the notion of designing for content and experience instead of browsers. In part one of the series, I remind you of the principles of progressive enhancement.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Web Form Design]]></title>
     <link href="http://aarongustafson.github.io/notes/2008/web-form-design/"/>
     <updated>2008-05-02T13:00:00-04:00</updated>
     <id>http://aarongustafson.github.io/notes/2008/web-form-design</id>
     <content type="html"><![CDATA[<p>Luke asked me to contribute a perspective on developing web forms in HTML to his seminal exploration of form design. This is a must-read book if you don’t have a copy.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Beyond DOCTYPE: Web Standards, Forward Compatibility, and IE8]]></title>
+    <link href="http://aarongustafson.github.io/notes/2008/beyond-doctype/"/>
+    <updated>2008-01-21T12:00:00-05:00</updated>
+    <id>http://aarongustafson.github.io/notes/2008/beyond-doctype</id>
+    <content type="html"><![CDATA[<p>For seven years, the DOCTYPE switch has stood designers and developers in good stead as a toggle between standards mode and quirks mode. But when IE7, with its greatly improved support for standards, &ldquo;broke the web,&rdquo; it revealed the flaw in our toggle. The quest was on to find a more reliable ensurer of forward compatibility. Is version targeting the answer?</p>
 ]]></content>
   </entry>
   
@@ -140,29 +185,11 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Web Design in a Nutshell]]></title>
-    <link href="http://aarongustafson.github.io/notes/2006/web-design-in-a-nutshell/"/>
-    <updated>2006-03-06T12:00:00-05:00</updated>
-    <id>http://aarongustafson.github.io/notes/2006/web-design-in-a-nutshell</id>
-    <content type="html"><![CDATA[<p>Jen Robbins’s <cite>Web Design in a Nutshell</cite> is the prefect desktop reference for all things web design-related. I contributed three chapters to the 3rd edition, covering CSS, JavaScript, and the DOM.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[More Usability Frosting for Your Accessibility Cake]]></title>
-    <link href="http://aarongustafson.github.io/notes/2005/usability-frosting-accessibility-cake/"/>
-    <updated>2005-04-20T13:00:00-04:00</updated>
-    <id>http://aarongustafson.github.io/notes/2005/usability-frosting-accessibility-cake</id>
-    <content type="html"><![CDATA[<p>Mac users are spoiled. It’s a fact we Windows folks have to live with—when it comes to usable interfaces, Mac applications are far ahead. Even Microsoft makes better products for OS X than for Windows.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Let Them Eat Cake]]></title>
-    <link href="http://aarongustafson.github.io/notes/2004/let-them-eat-cake/"/>
-    <updated>2004-04-16T13:00:00-04:00</updated>
-    <id>http://aarongustafson.github.io/notes/2004/let-them-eat-cake</id>
-    <content type="html"><![CDATA[<p>A growing debate pits accessibility against usability. From our point of view, it’s like pitting peanut butter against jelly. This article helps you create a page that is both usable and accessible, saving readers the trouble of scrolling with a little help from JavaScript and the Document Object Model.</p>
+    <title type="html"><![CDATA[Ruining the User Experience]]></title>
+    <link href="http://aarongustafson.github.io/notes/2007/ruining-user-experience/"/>
+    <updated>2007-03-27T13:00:00-04:00</updated>
+    <id>http://aarongustafson.github.io/notes/2007/ruining-user-experience</id>
+    <content type="html"><![CDATA[<p>Anticipating your users&#8217; needs is the key to making a good impression; it&rsquo;s the little things that matter most. In this article, I explain why progressive enhancement is synonymous with good service.</p>
 ]]></content>
   </entry>
   

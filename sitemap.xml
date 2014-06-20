@@ -11,8 +11,28 @@
         <lastmod>2014-06-20T14:07:12-04:00</lastmod>
     </url>
     <url>
+        <loc>http://aarongustafson.github.io/notes/2005/improving-print/</loc>
+        <lastmod>2014-06-20T19:24:33-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aarongustafson.github.io/notes/2005/jeremy-keith/</loc>
+        <lastmod>2014-06-20T19:27:15-04:00</lastmod>
+    </url>
+    <url>
         <loc>http://aarongustafson.github.io/notes/2006/web-design-in-a-nutshell/</loc>
         <lastmod>2014-06-19T10:45:32-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aarongustafson.github.io/notes/2006/getting-started-with-ajax/</loc>
+        <lastmod>2014-06-20T19:16:25-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aarongustafson.github.io/notes/2006/push-my-button/</loc>
+        <lastmod>2014-06-20T19:23:25-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aarongustafson.github.io/notes/2007/ruining-user-experience/</loc>
+        <lastmod>2014-06-20T19:14:18-04:00</lastmod>
     </url>
     <url>
         <loc>http://aarongustafson.github.io/notes/2007/advanced-dom-scripting/</loc>
@@ -23,8 +43,32 @@
         <lastmod>2014-06-19T08:10:40-04:00</lastmod>
     </url>
     <url>
+        <loc>http://aarongustafson.github.io/notes/2008/beyond-doctype/</loc>
+        <lastmod>2014-06-20T19:11:52-04:00</lastmod>
+    </url>
+    <url>
         <loc>http://aarongustafson.github.io/notes/2008/web-form-design/</loc>
         <lastmod>2014-06-19T10:31:33-04:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://aarongustafson.github.io/notes/2008/understanding-progressive-enhancement/
+        </loc>
+        <lastmod>2014-06-20T19:22:47-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aarongustafson.github.io/notes/2008/keeping-the-hot-side-hot/</loc>
+        <lastmod>2014-06-20T19:10:15-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://aarongustafson.github.io/notes/2008/progressive-enhancement-with-css/</loc>
+        <lastmod>2014-06-20T19:06:37-04:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://aarongustafson.github.io/notes/2008/progressive-enhancement-with-javascript/
+        </loc>
+        <lastmod>2014-06-20T19:07:18-04:00</lastmod>
     </url>
     <url>
         <loc>http://aarongustafson.github.io/notes/2011/adaptive-layouts-media-queries/</loc>
@@ -77,12 +121,12 @@
         <lastmod>2014-06-19T10:21:41-04:00</lastmod>
     </url>
     <url>
-        <loc>http://aarongustafson.github.io/blog/</loc>
-        <lastmod>2014-06-20T14:34:26-04:00</lastmod>
+        <loc>http://aarongustafson.github.io/</loc>
+        <lastmod>2014-06-20T19:27:15-04:00</lastmod>
     </url>
     <url>
-        <loc>http://aarongustafson.github.io/</loc>
-        <lastmod>2014-06-20T14:42:38-04:00</lastmod>
+        <loc>http://aarongustafson.github.io/notes/</loc>
+        <lastmod>2014-06-20T19:27:15-04:00</lastmod>
     </url>
     <url>
         <loc>http://aarongustafson.github.io/robots.txt</loc>
