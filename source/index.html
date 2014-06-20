@@ -1,29 +1,58 @@
 ---
-layout: default
+layout: page
+title: Aaron Gustafson
+footer: true
 ---
 
-<div class="blog-index">
-  {% assign index = true %}
-  {% for post in paginator.posts %}
-  {% assign content = post.content %}
-    <article>
-      {% include article.html %}
-    </article>
-  {% endfor %}
-  <div class="pagination">
-    {% if paginator.next_page %}
-      <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
-    {% endif %}
-    <a href="/blog/archives">Blog Archives</a>
-    {% if paginator.previous_page %}
-    <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
-    {% endif %}
-  </div>
-</div>
-<aside class="sidebar">
-  {% if site.blog_index_asides.size %}
-    {% include_array blog_index_asides %}
-  {% else %}
-    {% include_array default_asides %}
-  {% endif %}
-</aside>
+	<section id="books" class="section">
+		
+		<h2 class="section__title hidden">Books</h2>
+		
+		<ul class="publication-list publication-list--books">
+			{% for post in site.posts %}
+				{% if post.categories contains 'books' %}
+					<li class="publication-list__item">
+						<h3 class="publication-list__item__title"><cite>{{ post.title }}</cite></h3>
+						<p class="publication-list__item__meta">
+							{{ post.author }}
+							{% if post.meta %}<br>{{ post.meta }}{% endif %}
+						</p>
+						<div class="publication-list__item__content">
+							{{ post.content }}
+						</div>
+						<p class="publication-list__item__link"><a href="{{ post.buy_url }}">Purchase on {{ post.sales_channel }}</a></p>
+					</li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+		
+		{% render_partial _microcopy/other-books.markdown %}
+		
+	</section>
+
+	<section id="articles" class="section">
+		
+		<h2 class="section__title hidden">Articles</h2>
+		
+		<ul class="publication-list publication-list--articles">
+			{% for post in site.posts %}
+				{% if post.categories contains 'articles' %}
+					<li class="publication-list__item">
+						{% if post.read_url %}
+							<h3 class="publication-list__item__title"><a href="{{ post.read_url }}">{{ post.title }}</a></h3>
+						{% else %}
+							<h3 class="publication-list__item__title">{{ post.title }}</h3>
+						{% endif %}
+						<p class="publication-list__item__meta">
+							<cite>{{ post.publisher }}</cite>, <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %Y" }}</time>
+						</p>
+						<div class="publication-list__item__content">
+							{{ post.content }}
+						</div>
+					</li>
+			  	{% endif %}
+			{% endfor %}
+		</ul>
+		
+	</section>
+	
