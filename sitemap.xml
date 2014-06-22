@@ -1,135 +1,183 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/2004/let-them-eat-cake/</loc>
-        <lastmod>2014-06-20T14:03:53-04:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://aarongustafson.github.io/notes/2005/usability-frosting-accessibility-cake/
-        </loc>
-        <lastmod>2014-06-20T14:07:12-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/2005/improving-print/</loc>
-        <lastmod>2014-06-20T19:24:33-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/2005/jeremy-keith/</loc>
-        <lastmod>2014-06-20T19:27:15-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/2006/web-design-in-a-nutshell/</loc>
-        <lastmod>2014-06-19T10:45:32-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/2006/getting-started-with-ajax/</loc>
-        <lastmod>2014-06-20T19:16:25-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/2006/push-my-button/</loc>
-        <lastmod>2014-06-20T19:23:25-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/2007/ruining-user-experience/</loc>
-        <lastmod>2014-06-20T19:14:18-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/2007/advanced-dom-scripting/</loc>
-        <lastmod>2014-06-19T10:27:50-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/2007/accelerated-dom-scripting/</loc>
-        <lastmod>2014-06-19T08:10:40-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/2008/beyond-doctype/</loc>
-        <lastmod>2014-06-20T19:11:52-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/2008/web-form-design/</loc>
-        <lastmod>2014-06-19T10:31:33-04:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://aarongustafson.github.io/notes/2008/understanding-progressive-enhancement/
-        </loc>
-        <lastmod>2014-06-20T19:22:47-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/2008/keeping-the-hot-side-hot/</loc>
-        <lastmod>2014-06-20T19:10:15-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/2008/progressive-enhancement-with-css/</loc>
-        <lastmod>2014-06-20T19:06:37-04:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://aarongustafson.github.io/notes/2008/progressive-enhancement-with-javascript/
-        </loc>
-        <lastmod>2014-06-20T19:07:18-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/2011/adaptive-layouts-media-queries/</loc>
-        <lastmod>2014-06-20T14:34:26-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/2011/adaptive-web-design/</loc>
-        <lastmod>2014-06-19T08:12:43-04:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://aarongustafson.github.io/notes/2011/getting-up-to-speed-with-lighthouses/
-        </loc>
-        <lastmod>2014-06-20T13:49:12-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/2011/now-you-see-me/</loc>
-        <lastmod>2014-06-20T14:01:28-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/2011/progressive-enhancement-demystified/</loc>
-        <lastmod>2014-06-20T13:46:19-04:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://aarongustafson.github.io/notes/2011/cleaner-living-through-content-management/
-        </loc>
-        <lastmod>2014-06-20T13:42:39-04:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://aarongustafson.github.io/notes/2012/build-smart-mobile-navigation-without-hacks/
-        </loc>
-        <lastmod>2014-06-20T10:21:31-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/2012/implementing-responsive-design/</loc>
-        <lastmod>2014-06-19T10:23:09-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/2012/master-mobile-navigation/</loc>
-        <lastmod>2014-06-20T10:11:25-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/2013/smashing-book-4/</loc>
-        <lastmod>2014-06-19T10:40:25-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/2014/a-web-for-everyone/</loc>
-        <lastmod>2014-06-19T10:21:41-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/</loc>
-        <lastmod>2014-06-20T19:27:15-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/notes/</loc>
-        <lastmod>2014-06-20T19:27:15-04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://aarongustafson.github.io/robots.txt</loc>
-        <lastmod>2014-06-16T23:16:39-04:00</lastmod>
-    </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2014/a-web-for-everyone/</loc>
+    <lastmod>2014-01-16T12:00:00-05:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2013/smashing-book-4/</loc>
+    <lastmod>2013-11-25T12:00:00-05:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2012/master-mobile-navigation/</loc>
+    <lastmod>2012-09-15T13:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2012/implementing-responsive-design/</loc>
+    <lastmod>2012-08-10T13:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2012/build-smart-mobile-navigation-without-hacks/</loc>
+    <lastmod>2012-06-07T13:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2011/cleaner-living-through-content-management/</loc>
+    <lastmod>2011-09-01T13:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2011/progressive-enhancement-demystified/</loc>
+    <lastmod>2011-06-28T13:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2011/now-you-see-me/</loc>
+    <lastmod>2011-06-28T13:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2011/getting-up-to-speed-with-lighthouses/</loc>
+    <lastmod>2011-06-28T13:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2011/adaptive-web-design/</loc>
+    <lastmod>2011-05-30T13:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2011/adaptive-layouts-media-queries/</loc>
+    <lastmod>2011-03-25T13:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2008/progressive-enhancement-with-javascript/</loc>
+    <lastmod>2008-11-04T12:00:00-05:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2008/progressive-enhancement-with-css/</loc>
+    <lastmod>2008-10-21T13:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2008/keeping-the-hot-side-hot/</loc>
+    <lastmod>2008-10-21T13:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2008/understanding-progressive-enhancement/</loc>
+    <lastmod>2008-10-07T13:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2008/web-form-design/</loc>
+    <lastmod>2008-05-02T13:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2008/beyond-doctype/</loc>
+    <lastmod>2008-01-21T12:00:00-05:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2007/accelerated-dom-scripting/</loc>
+    <lastmod>2007-09-25T13:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2007/advanced-dom-scripting/</loc>
+    <lastmod>2007-08-03T13:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2007/ruining-user-experience/</loc>
+    <lastmod>2007-03-27T13:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2006/push-my-button/</loc>
+    <lastmod>2006-09-26T13:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2006/getting-started-with-ajax/</loc>
+    <lastmod>2006-03-07T12:00:00-05:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2006/web-design-in-a-nutshell/</loc>
+    <lastmod>2006-03-06T12:00:00-05:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2005/jeremy-keith/</loc>
+    <lastmod>2005-10-10T13:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2005/improving-print/</loc>
+    <lastmod>2005-09-20T13:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2005/usability-frosting-accessibility-cake/</loc>
+    <lastmod>2005-04-20T13:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/2004/let-them-eat-cake/</loc>
+    <lastmod>2004-04-16T13:00:00-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  <url>
+    <loc>http://aarongustafson.github.io/</loc>
+    <lastmod>2014-06-22T17:51:49-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/</loc>
+    <lastmod>2014-06-22T17:51:49-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
 </urlset>
