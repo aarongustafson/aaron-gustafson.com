@@ -1,28 +1,68 @@
 ---
-layout: page
-title: Aaron Gustafson
+layout: default
+title: At a Glance
+description: 
 footer: true
 ---
 
+	<section id="hi" class="section section--hi">
+		<div class="layout-container">
+			<p>Hi there.</p>
+			<p>My name is Aaron Gustafson and I work on the web.</p>
+		</div>
+	</section>
+	
+	<section id="about" class="section">
+		<div class="layout-container">
+			<div class="layout-container__primary">
+			
+				<p>I am the founder and technical lead of <a href="http://easy-designs.net">Easy Designs</a>, a web development consultancy focused on helping businesses elegantly tackle the challenges of presented by all these crazy screens you see everywhere.</p>
+				<p>I am an Invited Expert to the World Wide Web Consortium’s Responsive Images Community Group, a Rosenfeld Media Expert specializing in front-end web design technologies and techniques, the Founder and Publisher of <a href="http://webstandardssherpa.com">Web Standards Sherpa</a>, and the Founder of the <a href="http://chadevicelab.org">Chattanooga Open Device Lab</a>. I also co-founded the event series <a href="http://codeandcreativity.com">Code &amp; Creativity</a> and <a href="http://retreats4geeks.com">Retreats 4 Geeks</a>. I’m also a former Manager of the <a href="http://webstandards.org">Web Standards Project (WaSP)</a>.</p>
+				<p>I wrote the web design book <a href="http://zeldman.com">Jeffrey Zeldman</a> calls <a href="http://alistapart.com/column/doctor-is-in">a “modern classic”</a>: <a href="http://adaptivewebdesign.info"><cite>Adaptive Web Design</cite></a>. I’ve contributed to <a href="#books">a few other books</a>, have written <a href="#articles">a ton of articles</a>, and edited dozens more when I served as Tech Editor for the esteemed web magazine <a href="http://alistapart.com"><cite>A List Apart</cite></a>.</p>
+				<p>I live and work in beautiful Chattanooga, <abbr title="Tennessee">TN</abbr> with my lovely and talented partner <a href="http://kelly-mccarthy.com">Kelly McCarthy</a>.</p>
+
+			</div>
+			<div class="layout-container__secondary">
+
+				<h2>You can stalk me on the following networks:</h2>
+				<ul class="link-list link-list--social">
+					{% for link in site.data.links %}
+						{% if link.category == 'profile' %}
+							<li class="link-list__item link-list__item--{{ link.site | downcase }}">
+								<a href="{{ link.url }}" title="{{ link.title }}">{{ link.site }}</a>
+							</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+
+			</div>
+		</div>
+	</section>
+	
 	<section id="books" class="section">
 		
-		<h2 class="section__title hidden">Books</h2>
+		<h2 class="section__title hidden">A Library of Books</h2>
 		
 		<ul class="publication-list publication-list--books">
-			{% for post in site.posts %}
-				{% if post.categories contains 'books' %}
-					<li class="publication-list__item">
-						<h3 class="publication-list__item__title"><cite>{{ post.title }}</cite></h3>
-						<p class="publication-list__item__meta">
-							{{ post.author }}
-							{% if post.meta %}<br>{{ post.meta }}{% endif %}
-						</p>
-						<div class="publication-list__item__content">
-							{{ post.content }}
-						</div>
-						<p class="publication-list__item__link"><a href="{{ post.buy_url }}">Purchase on {{ post.sales_channel }}</a></p>
-					</li>
-				{% endif %}
+			{% for book in site.data.books reversed %}
+				<li class="publication-list__item publication-list__item--{{ forloop.index }} book">
+					<h3 class="publication-list__item__title"><cite>
+						<b class="book__title">{{ book.title }}</b>
+						{% if book.subtitle %}
+							<b class="book__subtitle">{{ book.subtitle }}</b>
+						{% endif %}
+					</cite></h3>
+					<p class="publication-list__item__meta">
+						<b class="book__author">{{ book.author }}</b>
+						{% if book.meta %}
+							<b class="book__meta">{{ book.meta }}</b>
+						{% endif %}
+					</p>
+					<div class="publication-list__item__content book__notes">
+						{{ book.notes | markdownify }}
+					</div>
+					<p class="publication-list__item__link book__link"><a href="{{ book.sales_url }}">Purchase on {{ book.sales_channel }}</a></p>
+				</li>
 			{% endfor %}
 		</ul>
 		
@@ -32,27 +72,31 @@ footer: true
 
 	<section id="articles" class="section">
 		
-		<h2 class="section__title hidden">Articles</h2>
+		<h2 class="section__title hidden">A Book’s-worth of Articles</h2>
 		
 		<ul class="publication-list publication-list--articles">
-			{% for post in site.posts %}
-				{% if post.categories contains 'articles' %}
-					<li class="publication-list__item">
-						{% if post.read_url %}
-							<h3 class="publication-list__item__title"><a href="{{ post.read_url }}">{{ post.title }}</a></h3>
-						{% else %}
-							<h3 class="publication-list__item__title">{{ post.title }}</h3>
-						{% endif %}
-						<p class="publication-list__item__meta">
-							<cite>{{ post.publisher }}</cite>, <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %Y" }}</time>
-						</p>
-						<div class="publication-list__item__content">
-							{{ post.content }}
-						</div>
-					</li>
-			  	{% endif %}
+			{% for article in site.data.articles reversed %}
+				<li class="publication-list__item publication-list__item--{{ forloop.index }} article">
+					{% if article.url %}
+						<h3 class="publication-list__item__title article__title"><a href="{{ article.url }}">{{ article.title }}</a></h3>
+					{% else %}
+						<h3 class="publication-list__item__title article__title">{{ article.title }}</h3>
+					{% endif %}
+					<p class="publication-list__item__meta article__publisher">
+						<cite>{{ article.publisher }}</cite>,
+						<time datetime="{{ article.published | date_to_xmlschema }}">{{ article.published | date: "%B %Y" }}</time>
+					</p>
+					<div class="publication-list__item__content article__notes">
+						{{ article.notes | markdownify }}
+					</div>
+				</li>
 			{% endfor %}
 		</ul>
 		
 	</section>
+	
+	<section id="events" class="section">
+		
+	</section>
+	
 	
