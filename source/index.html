@@ -98,9 +98,19 @@ footer: true
 <section id="events" class="section">
 	
 	<h1 class="section__title hidden">Conferences &amp; Workshops</h1>
-	
-	<ul class="event-list event-list--future">
-		{% for event in site.data.events %}
+		
+	{% for event in site.data.events %}
+
+		{% if forloop.index == 1 %}
+			<p>It’s hard to believe, but I’ve presented over {{ forloop.length }} conferences and workshops since 2003. And that’s just 
+				the public stuff. I’ve also presented numerous talks and customized workshops for a bunch of companies. I wish I could 
+				tell you who they were, but let’s just say you’ve likely patronized most of them and have definitely heard of the others.</p>
+			<p>You can keep up with my travels on Lanyrd and if you want me to come present at your company or conference,
+				<a href="/contact">drop me a line</a>.</p>
+			
+			<ul class="event-list event-list--future">
+		{% endif %}
+
 			<li class="event-list__item event-list__item--{{ forloop.index }} event">
 				<h3 class="event-list__item__title event__title">
 					{% if event.url %}
@@ -114,7 +124,11 @@ footer: true
 					<b class="event__location">{{ event.location }}</b>
 				</p>
 			</li>
-		{% endfor %}
-	</ul>
+
+		{% if forloop.index == forloop.length %}
+			</ul>
+		{% endif %}
+		
+	{% endfor %}
 	
 </section>
