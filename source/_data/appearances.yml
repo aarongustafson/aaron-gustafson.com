@@ -37,6 +37,18 @@
   url: "http://shoutengine.com/BeyondTheDesktop/adaptive-web-design-with-aaron-gustafson-1643"
   description: "Jim King and I chatted about adaptive design, the Chattanooga tech scene, and Web Standards Sherpa."
 
+- title: "Big question: what skills does a digital designer need in 2013?"
+  outlet: "Creative Bloq"
+  date: 2012-12-10 00:00:00 +0000
+  url: "http://www.creativebloq.com/design/big-question-what-skills-does-digital-designer-need-2013-12125914"
+  description: "In a nutshell: I think it’s imprtant to be familiar with the technologies that drive the web, but I think it’s unrealistic to expect every designer to be able to code the websites they help shape."
+
+- title: "Big question: how do you handle project management?"
+  outlet: "Net Magazine"
+  date: 2012-11-08 00:00:00 +0000
+  url: "http://www.creativebloq.com/netmag/big-question-how-do-you-handle-project-management-11125976"
+  description: "I weigh in regarding the dust-up Andy Rutledge created with his tirade against project mamangers. Simply: Good project managers are a godsend."
+
 - title: "Devs respond to the Adobe Edge suite"
   outlet: "Net Magazine"
   date: 2012-10-05 00:00:00 +0000
@@ -71,6 +83,12 @@
   url: "http://www.creativebloq.com/netmag/webkit-scuppers-skip-content-links-2126494"
   description: "I weigh in on Webkit’s issue with moving focus to targeted elements. Thankfully, the issue has been resolved now."
 
+- title: "15 top web design and development trends for 2012"
+  outlet: "Creative Bloq"
+  date: 2012-01-09 00:00:00 +0000
+  url: "http://www.creativebloq.com/industry-trends/15-top-web-design-and-development-trends-2012-1123018"
+  description: "I call on responsive designers to consider smaller, “low-end” tablets and phones."
+
 - title: "Firefox 6 out today"
   outlet: "Net Magazine"
   date: 2011-08-16 00:00:00 +0000
@@ -83,27 +101,8 @@
   url: "http://www.creativebloq.com/netmag/google-apps-ditches-support-ie7-6116978"
   description: "I made a few comments about Google’s retirement of IE7."
 
-- title: "Big question: what skills does a digital designer need in 2013?"
-  outlet: "Creative Bloq"
-  date: 2012-12-10 00:00:00 +0000
-  url: "http://www.creativebloq.com/design/big-question-what-skills-does-digital-designer-need-2013-12125914"
-  description: "In a nutshell: I think it’s imprtant to be familiar with the technologies that drive the web, but I think it’s unrealistic to expect every designer to be able to code the websites they help shape."
-
-- title: "Big question: how do you handle project management?"
-  outlet: "Net Magazine"
-  date: 2012-11-08 00:00:00 +0000
-  url: "http://www.creativebloq.com/netmag/big-question-how-do-you-handle-project-management-11125976"
-  description: "I weigh in regarding the dust-up Andy Rutledge created with his tirade against project mamangers. Simply: Good project managers are a godsend."
-
-- title: "15 top web design and development trends for 2012"
-  outlet: "Creative Bloq"
-  date: 2012-01-09 00:00:00 +0000
-  url: "http://www.creativebloq.com/industry-trends/15-top-web-design-and-development-trends-2012-1123018"
-  description: "I call on responsive designers to consider smaller, “low-end” tablets and phones."
-
 - title: "Big question: fair play"
-  outlet: "Creative Bloq"
+  outlet: "Net Magazine"
   date: 2011-03-11 00:00:00 +0000
   url: "http://www.creativebloq.com/netmag/big-question-fair-play-3117079"
   description: "My thoughts on web conferences."
-
