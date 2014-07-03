@@ -99,3 +99,6 @@ google_analytics_tracking_id:
 
 # Facebook Like
 facebook_like: false
+
+# Github repo path
+repo_url: "https://github.com/aarongustafson/aarongustafson.github.io/tree/source/source/"

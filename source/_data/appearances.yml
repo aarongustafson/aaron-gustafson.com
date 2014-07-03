@@ -1,0 +1,109 @@
+- title: "Aaron Gustafson: The Interview"
+  outlet: "Net Magazine"
+  date: 2014-06-17 00:00:00 +0000
+  #url: ""
+  description: "To say I was floored that the venerable <cite>Net Magazine</cite> asked if I’be be the subject of their Interview spread would be the understatement of the century. I mean holy crap! It was an honor to be asked and I loved getting to wax philosophical about progressive enhancement, web standards, and the future of web design."
+
+- title: "15 pro techniques for beating creative block"
+  outlet: "Creative Bloq"
+  date: 2014-03-28 00:00:00 +0000
+  url: "http://www.creativebloq.com/creativity/15-pro-techniques-beating-creative-block-3145683"
+  description: "Dan Rubin, Trent Walton, Derek Featherstone, Rachel Shillcock, and I discussed creative block and what we do to move past it."
+
+- outlet: "modern.IE Podcast"
+  date: 2014-03-27 00:00:00 +0000
+  url: "https://www.modern.ie/en-us/podcast/modernie-podcast-with-aaron-gustafson"
+  description: "Josh Holmes and I chatted about the state of web design, progressive enhancement, and more."
+
+- outlet: "The top 50 books for web designers"
+  date: 2013-11-27 00:00:00 +0000
+  url: "http://www.creativebloq.com/inspiration/books-web-designers-11122782"
+  description: "My book made the top of the web designer’s Christmas reading list!"
+
+- title: "Responsive web design: 6 experts, 4 questions"
+  outlet: "Net Magazine"
+  date: 2013-07-31 00:00:00 +0000
+  url: "http://www.creativebloq.com/responsive-web-design-6-experts-4-questions-7133876"
+  description: "Helen Bailey cornered Brad Frost, Tim Kadlec, Ben Callahan, Dan Mall, David Rupert, and me to get our thoughts on responsive design."
+
+- title: "Big question – what was the last thing you built for fun?"
+  outlet: "Net Magazine"
+  date: 2013-06-18 00:00:00 +0000
+  url: "http://www.creativebloq.com/design/big-question-what-was-last-thing-you-built-fun-6135581"
+  description: "I got to talk a little about my pet project, (tipr.mobi)[http://tipr.mobi]."
+
+- outlet: "Breaking Development Podcast"
+  date: 2013-01-22 00:00:00 +0000
+  url: "http://shoutengine.com/BeyondTheDesktop/adaptive-web-design-with-aaron-gustafson-1643"
+  description: "Jim King and I chatted about adaptive design, the Chattanooga tech scene, and Web Standards Sherpa."
+
+- title: "Devs respond to the Adobe Edge suite"
+  outlet: "Net Magazine"
+  date: 2012-10-05 00:00:00 +0000
+  url: "http://www.creativebloq.com/design/devs-respond-adobe-edge-suite-10126049"
+  description: "As part of a feature on Adobe’s release of its Edge Suite, I offered some of my thoughts."
+
+- outlet: "UIE Brainsparks Podcast"
+  date: 2012-07-20 00:00:00 +0000
+  url: "http://www.uie.com/brainsparks/2012/07/20/aaron-gustafson-adapting-your-designs-with-progressive-enhancement/"
+  description: "Jared Spool and I spent a bit of time chatting about progressive enhancement ,responsive design, and more in this interview."
+
+- title: "Big question: should we drop social media buttons?"
+  outlet: "Net Magazine"
+  date: 2012-07-18 00:00:00 +0000
+  url: "http://www.creativebloq.com/netmag/big-question-should-we-drop-social-media-buttons-7126198"
+  description: "While I do think social media buttons are often overused with little to know thought, I don’t despise them and believe they can be used smartly."
+
+- title: "Coding the future: HTML5 takes the internet by storm"
+  outlet: "BBC News"
+  date: 2012-05-07 00:00:00 +0000
+  url: "http://www.bbc.com/news/business-17931814"
+  description: "The BBC was doing a story on the rise of HTML5 and asked if I would agree to be interviewed. Are you friggin’ kidding me?"
+
+- outlet: "ExpressionEngine Podcast"
+  date: 2012-02-23 00:00:00 +0000
+  url: "http://ctrlclickcast.com/episodes/progressive-enhancement"
+  description: "Lea Alcantara, Emily Lewis, and I talked about progressive enhancement, ExpressionEngine & more."
+
+- title: "WebKit scuppers skip-to-content links"
+  outlet: "Net Magazine"
+  date: 2012-02-02 00:00:00 +0000
+  url: "http://www.creativebloq.com/netmag/webkit-scuppers-skip-content-links-2126494"
+  description: "I weigh in on Webkit’s issue with moving focus to targeted elements. Thankfully, the issue has been resolved now."
+
+- title: "Firefox 6 out today"
+  outlet: "Net Magazine"
+  date: 2011-08-16 00:00:00 +0000
+  url: "http://www.creativebloq.com/netmag/firefox-6-out-today-8116834"
+  description: "I had a few things to say about Firefox’s move to a rapid release cycle."
+
+- title: "Google Apps ditches support for IE7"
+  outlet: "Net Magazine"
+  date: 2011-06-03 00:00:00 +0000
+  url: "http://www.creativebloq.com/netmag/google-apps-ditches-support-ie7-6116978"
+  description: "I made a few comments about Google’s retirement of IE7."
+
+- title: "Big question: what skills does a digital designer need in 2013?"
+  outlet: "Creative Bloq"
+  date: 2012-12-10 00:00:00 +0000
+  url: "http://www.creativebloq.com/design/big-question-what-skills-does-digital-designer-need-2013-12125914"
+  description: "In a nutshell: I think it’s imprtant to be familiar with the technologies that drive the web, but I think it’s unrealistic to expect every designer to be able to code the websites they help shape."
+
+- title: "Big question: how do you handle project management?"
+  outlet: "Net Magazine"
+  date: 2012-11-08 00:00:00 +0000
+  url: "http://www.creativebloq.com/netmag/big-question-how-do-you-handle-project-management-11125976"
+  description: "I weigh in regarding the dust-up Andy Rutledge created with his tirade against project mamangers. Simply: Good project managers are a godsend."
+
+- title: "15 top web design and development trends for 2012"
+  outlet: "Creative Bloq"
+  date: 2012-01-09 00:00:00 +0000
+  url: "http://www.creativebloq.com/industry-trends/15-top-web-design-and-development-trends-2012-1123018"
+  description: "I call on responsive designers to consider smaller, “low-end” tablets and phones."
+
+- title: "Big question: fair play"
+  outlet: "Creative Bloq"
+  date: 2011-03-11 00:00:00 +0000
+  url: "http://www.creativebloq.com/netmag/big-question-fair-play-3117079"
+  description: "My thoughts on web conferences."
+

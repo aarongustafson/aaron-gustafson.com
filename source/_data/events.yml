@@ -38,6 +38,11 @@
   date: 2014-02-14 17:00:00 +0100
   location: "Paris, France"
 
+- title: "PechaKucha Chattanooga"
+  url: "http://www.pechakucha.org/cities/chattanooga/events/526e68fc4f5c29f968000004"
+  date: 2013-12-13 19:00:00 -0400
+  location: "Chattanooga, TN USA"
+
 - title: "UIE Virtual Seminar"
   url: "http://aycl.uie.com/virtual_seminars/designing_across_devices_with_progressive_enhancement"
   date: 2013-11-21 13:30:00 -0400
