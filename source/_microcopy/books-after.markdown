@@ -1,4 +1,4 @@
-<p>I have also tech edited and contributed in various other ways to the following books: 
+<p>{{ site.data.microcopy.books.editing_intro }}
 	{% for book in site.data.book-contributions %}
 		{% if forloop.index == forloop.length %}
 			and

@@ -1,4 +1,4 @@
-<p>My work has also been cited in a few books: 
+<p>{{ site.data.microcopy.appearances.citations_intro }}
 	{% for book in site.data.book-citations %}
 		{% if forloop.index == forloop.length %}
 			and

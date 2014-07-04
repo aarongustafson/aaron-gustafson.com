@@ -1,7 +1,7 @@
 ---
 layout: default
-title: At a Glance
-description: 
+title: Aaron Gustafson at a Glance
+description: {{ site.data.microcopy.description }}
 footer: true
 ---
 
@@ -41,73 +41,69 @@ footer: true
 
 <section id="books" class="section">
 	
-	<h1 class="section__title hidden">A Library of Books</h1>
+	<h1 class="section__title hidden">Book Contributions</h1>
 	
-	<ul class="publication-list publication-list--books">
-		{% for book in site.data.books reversed %}
-			<li class="publication-list__item publication-list__item--{{ forloop.index }} book">
-				<h3 class="publication-list__item__title"><cite>
+	<ul class="listing listing--books">
+		{% for book in site.data.books limit:6 %}
+			<li class="listing__item listing__item--{{ forloop.index }} book">
+				<h3 class="listing__item__title"><cite>
 					<b class="book__title">{{ book.title }}</b>
 					{% if book.subtitle %}
 						<b class="book__subtitle">{{ book.subtitle }}</b>
 					{% endif %}
 				</cite></h3>
-				<p class="publication-list__item__meta">
+				<p class="listing__item__meta">
 					<b class="book__author">{{ book.author }}</b>
 					{% if book.meta %}
 						<b class="book__meta">{{ book.meta }}</b>
 					{% endif %}
 				</p>
-				<div class="publication-list__item__content book__notes">
+				<div class="listing__item__content book__notes">
 					{{ book.notes | markdownify }}
 				</div>
-				<p class="publication-list__item__link book__link"><a href="{{ book.sales_url }}">Purchase on {{ book.sales_channel }}</a></p>
+				<p class="listing__item__link book__link"><a href="{{ book.sales_url }}">Purchase on {{ book.sales_channel }}</a></p>
 			</li>
 		{% endfor %}
 	</ul>
 	
-	{% render_partial _microcopy/books-after.markdown %}
+	<p class="more">See a complete list of <a href="/books">my book contributions</a>.</p>
 	
 </section>
 
 <section id="articles" class="section">
 	
-	<h1 class="section__title hidden">A Book’s-worth of Articles</h1>
+	<h1 class="section__title hidden">Articles</h1>
 	
-	{% render_partial _microcopy/articles-before.markdown %}
-	
-	<ul class="publication-list publication-list--articles">
-		{% for article in site.data.articles reversed %}
-			<li class="publication-list__item publication-list__item--{{ forloop.index }} article">
+	<ul class="listing listing--articles">
+		{% for article in site.data.articles limit:12 %}
+			<li class="listing__item listing__item--{{ forloop.index }} article">
 				{% if article.url %}
-					<h3 class="publication-list__item__title article__title"><a href="{{ article.url }}">{{ article.title }}</a></h3>
+					<h3 class="listing__item__title article__title"><a href="{{ article.url }}">{{ article.title }}</a></h3>
 				{% else %}
-					<h3 class="publication-list__item__title article__title">{{ article.title }}</h3>
+					<h3 class="listing__item__title article__title">{{ article.title }}</h3>
 				{% endif %}
-				<p class="publication-list__item__meta article__publisher">
+				<p class="listing__item__meta article__publisher">
 					<cite>{{ article.publisher }}</cite>,
 					<time datetime="{{ article.published | date_to_xmlschema }}">{{ article.published | date: "%B %Y" }}</time>
 				</p>
-				<div class="publication-list__item__content article__notes">
+				<div class="listing__item__content article__notes">
 					{{ article.notes | markdownify }}
 				</div>
 			</li>
 		{% endfor %}
 	</ul>
-	
-	{% render_partial _microcopy/articles-after.markdown %}
+
+	<p class="more">See a complete list of <a href="/articles">my articles</a>.</p>
 	
 </section>
 
 <section id="events" class="section">
 	
-	<h1 class="section__title hidden">Conferences &amp; Workshops</h1>
+	<h1 class="section__title hidden">Upcoming Conferences &amp; Workshops</h1>
 		
-	{% render_partial _microcopy/events-before.markdown %}
-
 	<ul class="listing listing--events">
-		{% for event in site.data.events %}
-			<li class="listing__item listing__item--{{ forloop.index }} event">
+		{% for event in site.data.events-future limit:2 %}
+			<li class="listing__item listing__item--{{ forloop.index }} event event--future">
 				<h3 class="listing__item__title event__title">
 					{% if event.url %}
 						<a href="{{ event.url }}">{{ event.title }}</a>
@@ -123,18 +119,36 @@ footer: true
 		{% endfor %}
 	</ul>
 	
-	{% render_partial _microcopy/events-after.markdown %}
+	<h1 class="section__title hidden">Past Conferences &amp; Workshops</h1>
+		
+	<ul class="listing listing--events">
+		{% for event in site.data.events-past limit:9 %}
+			<li class="listing__item listing__item--{{ forloop.index }} event event--past">
+				<h3 class="listing__item__title event__title">
+					{% if event.url %}
+						<a href="{{ event.url }}">{{ event.title }}</a>
+					{% else %}
+						{{ event.title }}
+					{% endif %}
+				</h3>
+				<p class="listing__item__meta">
+					<b class="event__date">{{ event.date | date: "%B %Y" }}</b>
+					<b class="event__location">{{ event.location }}</b>
+				</p>
+			</li>
+		{% endfor %}
+	</ul>
+	
+	<p class="more">See a complete list of <a href="/events">my conferences &amp; workshops</a>.</p>
 	
 </section>
 
 <section id="other" class="section">
 	
-	<h1 class="section__title hidden">Other Appearances</h1>
+	<h1 class="section__title hidden">Appearances &amp; Interviews</h1>
 	
-	{% render_partial _microcopy/appearances-before.markdown %}
-
 	<ul class="listing">
-		{% for appearance in site.data.appearances %}
+		{% for appearance in site.data.appearances limit:9 %}
 			{% capture display_title %}{% if appearance.title %}{{ appearance.title }}{% else %}{{ appearance.outlet }}{% endif %}{% endcapture %}
 			<li class="listing__item listing__item--{{ forloop.index }} appearance">
 				<h3 class="listing__item__title appearance__title">
@@ -156,7 +170,7 @@ footer: true
 			</li>
 		{% endfor %}
 	</ul>
-	
-	{% render_partial _microcopy/appearances-after.markdown %}
+
+	<p class="more">See a complete list of <a href="/appearances">my appearances &amp; interviews</a>.</p>
 
 </section>

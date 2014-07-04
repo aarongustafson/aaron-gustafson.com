@@ -1,1 +1,1 @@
-Strangely, some folks seem to want to pick my addled brain about the web and such. Here’s a collection of those.
+{{ site.data.microcopy.appearances.intro }}
