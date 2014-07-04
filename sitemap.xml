@@ -4,22 +4,50 @@
   
   
   <url>
-    <loc>http://aarongustafson.github.io/</loc>
-    <lastmod>2014-07-02T10:15:25-04:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-  <url>
-    <loc>http://aarongustafson.github.io/notes/</loc>
-    <lastmod>2014-07-02T10:15:25-04:00</lastmod>
+    <loc>http://aarongustafson.github.io/contact/</loc>
+    <lastmod>2014-07-04T10:09:50-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
-    <loc>http://aarongustafson.github.io/contact/</loc>
-    <lastmod>2014-07-02T10:15:25-04:00</lastmod>
+    <loc>http://aarongustafson.github.io/articles/</loc>
+    <lastmod>2014-07-04T10:09:50-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/appearances/</loc>
+    <lastmod>2014-07-04T10:09:50-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/notes/</loc>
+    <lastmod>2014-07-04T10:09:50-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/events/</loc>
+    <lastmod>2014-07-04T10:09:50-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/</loc>
+    <lastmod>2014-07-04T10:09:50-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://aarongustafson.github.io/books/</loc>
+    <lastmod>2014-07-04T10:09:50-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
