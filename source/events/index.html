@@ -1,0 +1,45 @@
+---
+layout: default
+title: My Speaking Events
+description: 
+footer: true
+---
+
+<h1 class="page__title">A Complete List of My Conferences &amp; Workshops</h1>
+	
+{% render_partial _microcopy/events-before.html %}
+
+<ul class="listing listing--events">
+	{% for event in site.data.events-future %}
+		<li class="listing__item listing__item--{{ forloop.index }} event event--future">
+			<h3 class="listing__item__title event__title">
+				{% if event.url %}
+					<a href="{{ event.url }}">{{ event.title }}</a>
+				{% else %}
+					{{ event.title }}
+				{% endif %}
+			</h3>
+			<p class="listing__item__meta">
+				<b class="event__date">{{ event.date | date: "%B %Y" }}</b>
+				<b class="event__location">{{ event.location }}</b>
+			</p>
+		</li>
+	{% endfor %}
+	{% for event in site.data.events-past %}
+		<li class="listing__item listing__item--{{ forloop.index }} event event--past">
+			<h3 class="listing__item__title event__title">
+				{% if event.url %}
+					<a href="{{ event.url }}">{{ event.title }}</a>
+				{% else %}
+					{{ event.title }}
+				{% endif %}
+			</h3>
+			<p class="listing__item__meta">
+				<b class="event__date">{{ event.date | date: "%B %Y" }}</b>
+				<b class="event__location">{{ event.location }}</b>
+			</p>
+		</li>
+	{% endfor %}
+</ul>
+
+{% render_partial _microcopy/events-after.markdown %}

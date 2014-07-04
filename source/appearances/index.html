@@ -1,0 +1,34 @@
+---
+layout: default
+title: My Interviews &amp; Appearances
+---
+
+<h1 class="page__title">Interviews &amp; Appearances</h1>
+
+{% render_partial _microcopy/appearances-before.markdown %}
+
+<ul class="listing">
+	{% for appearance in site.data.appearances %}
+		{% capture display_title %}{% if appearance.title %}{{ appearance.title }}{% else %}{{ appearance.outlet }}{% endif %}{% endcapture %}
+		<li class="listing__item listing__item--{{ forloop.index }} appearance">
+			<h3 class="listing__item__title appearance__title">
+				{% if appearance.url %}
+					<a href="{{ appearance.url }}">{{ display_title }}</a>
+				{% else %}
+					{{ display_title }}
+				{% endif %}
+			</h3>
+			<p class="listing__item__meta appearance__meta">
+				<b class="appearance__date">{{ appearance.date | date: "%B %Y" }}</b>
+				{% if display_title != appearance.outlet %}
+					<b class="appearance__venue">{{ appearance.outlet }}</b>
+				{% endif %}
+			</p>
+			<div class="listing__item__description appearance__description">
+				{{ appearance.description | markdownify }}
+			</div>
+		</li>
+	{% endfor %}
+</ul>
+
+{% render_partial _microcopy/appearances-after.markdown %}

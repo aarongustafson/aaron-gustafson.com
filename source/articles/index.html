@@ -1,0 +1,29 @@
+---
+layout: default
+title: "Articles"
+---
+
+<h1 class="section__title hidden">A Complete List of My Articles</h1>
+
+{% render_partial _microcopy/articles-before.markdown %}
+
+<ul class="publication-list publication-list--articles">
+	{% for article in site.data.articles %}
+		<li class="publication-list__item publication-list__item--{{ forloop.index }} article">
+			{% if article.url %}
+				<h3 class="publication-list__item__title article__title"><a href="{{ article.url }}">{{ article.title }}</a></h3>
+			{% else %}
+				<h3 class="publication-list__item__title article__title">{{ article.title }}</h3>
+			{% endif %}
+			<p class="publication-list__item__meta article__publisher">
+				<cite>{{ article.publisher }}</cite>,
+				<time datetime="{{ article.published | date_to_xmlschema }}">{{ article.published | date: "%B %Y" }}</time>
+			</p>
+			<div class="publication-list__item__content article__notes">
+				{{ article.notes | markdownify }}
+			</div>
+		</li>
+	{% endfor %}
+</ul>
+
+{% render_partial _microcopy/articles-after.markdown %}

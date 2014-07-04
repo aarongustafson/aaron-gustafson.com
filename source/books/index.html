@@ -1,0 +1,34 @@
+---
+layout: default
+title: Book Contributions
+description: {{ site.data.microcopy.books.intro }}
+---
+
+<h1 class="page__title">A Complete List of My Books</h1>
+
+{% render_partial _microcopy/books-before.markdown %}
+
+<ul class="publication-list publication-list--books">
+	{% for book in site.data.books %}
+		<li class="publication-list__item publication-list__item--{{ forloop.index }} book">
+			<h3 class="publication-list__item__title"><cite>
+				<b class="book__title">{{ book.title }}</b>
+				{% if book.subtitle %}
+					<b class="book__subtitle">{{ book.subtitle }}</b>
+				{% endif %}
+			</cite></h3>
+			<p class="publication-list__item__meta">
+				<b class="book__author">{{ book.author }}</b>
+				{% if book.meta %}
+					<b class="book__meta">{{ book.meta }}</b>
+				{% endif %}
+			</p>
+			<div class="publication-list__item__content book__notes">
+				{{ book.notes | markdownify }}
+			</div>
+			<p class="publication-list__item__link book__link"><a href="{{ book.sales_url }}">Purchase on {{ book.sales_channel }}</a></p>
+		</li>
+	{% endfor %}
+</ul>
+
+{% render_partial _microcopy/books-after.markdown %}
