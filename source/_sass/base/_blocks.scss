@@ -1,0 +1,55 @@
+/*------------------------------------*\
+    Block-level Semantics
+\*------------------------------------*/
+
+blockquote {
+
+    @include rem( font-size, 24 );
+    font-family: $font-stack-serif;
+    font-style: italic; 
+    @include rem( text-indent, -8 );
+    
+    @include rem( margin-bottom, 20 );
+    
+}
+
+p {
+    @include breakup-placeholder( text );
+    @include rem( margin-bottom, 20 );
+}
+
+[aria-hidden="true"] {
+    display: none;
+}
+
+.layout-container__primary blockquote {
+    
+    border-top: 1px solid $color-rule;
+    border-bottom: 1px solid $color-rule;
+    @include rem( padding, $default-spacing 0 );
+    
+    @include breakup-breakpoint( "medium" ) {
+        @include rem( padding, $default-spacing ( 1 * $default-spacing ) );
+    }
+    
+    @include breakup-breakpoint( "full" ) {
+        @include rem( padding, $default-spacing ( 2 * $default-spacing ) );
+    }
+
+}
+
+.blockquote__attribution {
+
+    color: $color-text-light;
+
+    @include rem( font-size, $font-size-subtext );
+    font-family: $font-stack-sansserif;
+
+    margin: 0;
+    @include rem( padding-left, 2 * $default-spacing );
+
+    cite {
+        font-style: normal;
+    }
+
+}

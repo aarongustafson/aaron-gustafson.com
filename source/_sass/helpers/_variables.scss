@@ -1,0 +1,161 @@
+/*------------------------------------*\
+    Variables
+\*------------------------------------*/
+
+/*	Debug controls
+	========================================================================== */
+$debug-grid: false; // true;
+
+
+/*	CDN
+	========================================================================== */
+$cdn_domain: ""; //"//e.ed-cdn.com";
+
+
+/*	Breakpoint Management
+	========================================================================== */
+$bp-tiny: 320;
+$bp-tiny-em: 20em;
+$bp-small: 460;
+$bp-small-em: 28.75em;
+$bp-medium: 690;
+$bp-medium-em: 43.125em;
+$bp-full: 960;
+$bp-full-em: 60em;
+$breakup-breakpoints: (
+    "tiny":         "only screen and (min-width: #{$bp-tiny-em})",
+    "small":        "only screen and (min-width: #{$bp-small-em})",
+    "medium":       "only screen and (min-width: #{$bp-medium-em})",
+    "full":         "only screen and (min-width: #{$bp-full-em})"
+);
+
+
+/*	Grid Management
+	========================================================================== */
+$grid-full-column-sizes: "( 60px 20px )";
+$grid-breakpoints: (
+    "tiny":     3,
+    "small":    6,
+    "medium":   8,
+    "full":     12
+);
+
+
+/*	Legacy support
+	========================================================================== */
+$legacy-support-for-ie6: true;
+$legacy-support-for-ie7: true;
+$legacy-support-for-ie8: true;
+$support-for-original-webkit-gradients: true;
+
+
+/*	Typography
+	========================================================================== */
+// Font Stacks
+$font-stack-sansserif: "proxima-nova", "Helvetica Neue", Helvetica, sans-serif;
+$font-stack-serif: "Arnhem", Georgia, serif;
+$font-stack-bits: "Calluna", "Helvetica Neue", Helvetica, sans-serif;
+$font-stack-headings: $font-stack-serif;
+$font-stack-body: $font-stack-sansserif;
+$font-stack-nav: $font-stack-serif;
+
+// Font-weights
+$font-weight-sansserif-normal: 400;
+$font-weight-sansserif-semibold: 600;
+$font-weight-sansserif-bold: 700;
+
+// Font sizes
+$font-size-default: 16;
+$font-size-h1: 32;
+$font-size-h2: 25;
+$font-size-h3: 20;
+$font-size-h4: 15;
+$font-size-nav: 18;
+$font-size-body: $font-size-default;
+$font-size-subtext: 14;
+$font-size-small: 13;
+$font-size-tiny: 12;
+$font-size-teeny-tiny: 11;
+
+// Line heights
+$line-height-default: 1.4;
+
+// spacing
+$default-spacing: 20;
+$margin-default: 0 0 $default-spacing;
+
+// table spacing
+$table-spacing: 15;
+
+/*	Colors
+	========================================================================== */
+// Color Names
+$color-black: #2c2825;
+$color-brown: #2e2a28;
+$color-border-light: #53504e;
+$color-grey: #6c6865;
+$color-grey-dark: #9d9893;
+$color-grey-medium: #d6cecc;
+$color-grey-light: #c1bab4;
+$color-white: #fff;
+$color-white-off: #efeae8;
+$color-blue: #1096b4;
+$color-blue-light: mix( $color-blue, #fff, 40% );
+$color-teal: #0293b2;
+$color-blue-dark: #00809b;
+$color-blue-text: #0c95b2;
+$color-yellow: #ecbe1c;
+$color-yellow-dark: #eca920;
+$color-green: #068961;
+$color-green-dark: mix( $color-green, #000, 85% );
+$color-green-light: mix( $color-green, #fff, 85% );
+$color-red: #ef4137;
+$color-orange: #dc8c01;
+
+// Functional Colors
+$color-background: $color-white-off;
+$color-text: $color-black;
+$color-text-light: $color-grey;
+$color-link: $color-green;
+$color-link-hover: $color-green-dark;
+$color-border: $color-grey-dark;
+$color-rule: $color-grey-medium;
+$color-header-mobile: #018860;
+$color-alert: #C6321C;
+
+// Homepage Carousel Types
+$hp-carousel-colors: (
+    "event":    $color-teal,
+    "profile":  $color-green,
+    "news":     $color-orange
+);
+
+// Nav Colors
+$nav-colors: (
+    "background":   #015036,
+    "primary":      #01734e,
+    "primary-open": #003927,
+    "border":       #348f71
+);
+
+// Calendar Colors
+$calendar-colors: (
+    "bicentennial": #0E577B, // blue
+    "academics":    #D25028, // red
+    "admissions":   #DD9129, // gold
+    "alumni":       #923365, // plum
+    "athletics":    #1D96A1, // teal
+    "campus":       #82589D, // purple
+    "gps":          #B0673C, // brown
+    "families":     #6D6965  // grey
+);
+
+
+/*	Images
+	========================================================================== */
+$css_images: "/c/i";
+
+/*	Defaults
+	========================================================================== */
+$default-box-shadow: 1px 1px 0 $color-rule;
+$default-transition: .25s ease;

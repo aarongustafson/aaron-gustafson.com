@@ -1,0 +1,227 @@
+/*------------------------------------*\
+    Footer
+\*------------------------------------*/
+
+.footer {
+    
+    background: $color-green;
+    color: $color-white;
+    
+    border-top: 1px solid $color-rule;
+
+    a {
+        border: 0;
+        color: $color-white;
+    }
+    
+    ul {
+        
+        @include breakup-placeholder( delist );
+        
+    }
+
+    &__section {
+        
+        @include rem( font-size, $font-size-h4 );
+        font-family: $font-stack-serif;
+        text-align: center;
+        
+        @include rem( padding, 40 0 );
+        
+        &__title {
+            
+            @include rem( font-size, $font-size-small );
+            font-family: $font-stack-sansserif;
+            font-weight: $font-weight-sansserif-semibold;
+            letter-spacing: 1px;
+            
+            text-transform: uppercase;
+            
+            @include rem( margin-bottom, 10 );
+            
+        }
+        
+        &--contact {
+            
+            @include rem( padding-bottom, 20 );
+            
+        }
+        
+        &--social {
+
+            padding-top: 0;
+            
+            .icon {
+                
+                @include rem( margin-right, 10 );
+                
+            }
+            
+            .icon-facebook {
+
+                @include rem( margin, 0 5 0 5 );
+
+            }
+
+        }
+        
+    }
+    
+    &__elevator-pitch {
+        
+        background-color: $color-green-dark;
+        
+        border-top: 1px solid $color-green-light;
+        @include rem( padding, 20 );
+        
+        font-family: $font-stack-serif;
+        @include rem( font-size, $font-size-h4 );
+        text-align: center;
+        
+	    clear: both;
+
+        p {
+            margin: 0 auto;
+            
+            @include breakup-breakpoint( "medium" ) {
+                max-width: span( 6 of 12 columns fluid );
+            }
+        }
+        
+    }
+    
+    &__copyright {
+
+        background: $color-white;
+        color: $color-text-light;
+
+        @include rem( font-size, $font-size-small );
+        font-family: $font-stack-serif;
+        text-align: center;
+
+        @include rem( padding, 20 0 );
+        margin: 0;
+        
+        
+        // by default we will make copyright block and the links below (sans the first bullet)
+        #copyright {
+            display: block;
+        }
+        .bullet--1 {
+            display: none;
+        }
+        // then return them in "small"
+        @include breakup-breakpoint( "small" ) {
+            #copyright {
+                display: inline;
+            }
+            .bullet--1 {
+                display: inline;
+            }
+        }
+        
+        
+        a {
+            color: $color-green;
+            
+            &:hover,
+            &:focus,
+            &:active {
+                border-bottom: 1px solid;
+            }
+        }
+
+    }
+    
+    @include breakup-breakpoint( "small" ) {
+        
+        $grid-columns: map-get( $grid-breakpoints, "small" );
+        
+        &__section {
+            
+            @include box-sizing( border-box );
+            
+            &__title {
+
+                @include rem( margin-bottom, 20 );
+
+            }
+            
+            &--contact {
+
+                // Grid [---]---
+                @include span( ( $grid-columns / 2 ) of $grid-columns fluid );
+                
+                text-align: right;
+            
+                @include rem( padding, 40 40 40 0 );
+                margin-right: gutters( $grid-columns ) / 2;
+
+                .vcard {
+                    margin: 0;
+                }
+
+            }
+        
+            &--social {
+
+                // Grid ---[---]
+                @include span( ( $grid-columns / 2 ) of $grid-columns fluid );
+
+                text-align: left;
+
+                border-left: 1px solid $color-green-light;
+                @include rem( padding, 40 0 40 40 );
+                margin-right: 0;
+
+            }
+        
+        }
+        
+    }
+    
+    @include breakup-breakpoint( "medium" ) {
+        
+        position: relative;
+        
+        &::before {
+            content: "";
+            
+            @include background-image( mark, $css_images );
+            
+            display: block;
+            
+            width: 60px;
+            height: 88px;
+            
+            position: absolute;
+            top: 59px;
+            left: 50%;
+            margin-left: -30px;
+            
+        }
+        
+        &__section {
+
+            @include rem( padding, 40 );
+        	
+			@include breakup-placeholder( clearfix );
+
+            &--contact {
+                // Grid [-----]-------
+                @include span( 5 of 12 ltr fluid );
+                border-right: 1px solid $color-green-light;
+            }
+        
+            &--social {
+                // Grid -------[-----]
+                @include span( last 5 of 12 ltr fluid );
+                border-left: 1px solid $color-green-light;
+            }
+            
+        }
+        
+    }
+    
+}
+

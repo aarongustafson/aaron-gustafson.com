@@ -1,0 +1,82 @@
+/*------------------------------------*\
+    Transitions
+\*------------------------------------*/
+
+details {
+	
+	display: block;
+	@include rem( margin, $margin-default );
+	
+	&[open] {
+		@include rem( padding-bottom, $table-spacing );
+	}
+	
+	& + details {
+		
+		border-top: 1px solid $color-rule;
+		@include rem( margin-top, 0 - $default-spacing );
+		
+	}
+	
+	summary {
+		
+		font-weight: normal;
+		
+    	display: block;
+		@include rem( padding, $table-spacing 0 );
+		
+		cursor: default;
+		
+        // create the necessary experimental block versions of this selector to 
+		// remove the default details marker
+		@include experimental-block( "&::", "details-marker" ){
+			display: none;
+		}
+		
+		&:focus {
+			@include breakup-placeholder( focus-ring );
+		}
+		
+	}
+
+	// add in our custom arrows
+	.detailed & {
+	    
+	    summary {
+
+			@include breakup-placeholder( focus-ring );
+            cursor: pointer;
+			position: relative;
+
+			&:after {
+
+				content: url(/c/icn/png/details--collapsed.png);
+
+				display: block;
+				width: 15px;
+				height: 9px;
+
+				position: absolute;
+				right: 0;
+				top: 50%;
+				margin-top: -12px;
+				bottom: 0;
+
+			}
+
+		}
+
+		&.open {
+	        @include rem( padding-bottom, $table-spacing );
+
+			summary:after {
+				content: url(/c/icn/png/details--collapsible.png);
+			}
+		}
+		
+	}
+
+	& > :last-child {
+		margin-bottom: 0;
+	}
+}

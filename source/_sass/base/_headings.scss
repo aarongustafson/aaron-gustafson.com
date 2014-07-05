@@ -1,0 +1,23 @@
+/*------------------------------------*\
+    Heading Levels
+\*------------------------------------*/
+
+h1 {
+    @include breakup-placeholder( h1 );
+    @include breakup-placeholder( text );
+}
+
+h2 {
+    @include breakup-placeholder( h2 );
+    @include breakup-placeholder( text );
+}
+
+h3 {
+    @include breakup-placeholder( h3 );
+    @include breakup-placeholder( text );
+}
+
+h4 {
+    @include breakup-placeholder( h4 );
+    @include breakup-placeholder( text );
+}
