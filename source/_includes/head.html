@@ -4,18 +4,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	
 	<title>{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %} - {% endif %}{{ site.title }}</title>
+	
 	<link href="{{ root_url }}/favicon.png" rel="icon">
 	
-	{% include grunticon.html %}
-	
-	{% include typekit.html %}
-	
+	{% include css.html %}
+
 	{% include mobile.html %}
 	
 	{% include sharing.html %}
 	
 	<link href="{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
 
-	{% include google_analytics.html %}
+	{% include head-javascript.html %}
 
 </head>

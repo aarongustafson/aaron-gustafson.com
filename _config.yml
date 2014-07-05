@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://aarongustafson.github.io
-title: Aaron Gustafson
-subtitle: Web Design Author, Evangelist, Practitioner, and Teacher
-author: Aaron Gustafson
-simple_search: https://www.google.com/search
-description:
+url: "http://aaron-gustafson.com"
+title: "Aaron Gustafson"
+subtitle: "Web Design Author, Evangelist, Practitioner, and Teacher"
+author: "Aaron Gustafson"
+simple_search: "https://www.google.com/search"
+description: "Hi there. My name is Aaron Gustafson and I work on the web."
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -27,12 +27,12 @@ email:
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
 root: /
-permalink: /notes/:year/:title/
+permalink: /notebook/:year/:title/
 source: source
 destination: public
 plugins: plugins
 code_dir: downloads/code
-category_dir: blog/categories
+category_dir: notebook/tags
 markdown: rdiscount
 rdiscount:
   extensions:
@@ -51,7 +51,7 @@ titlecase: true       # Converts page and post titles to titlecase
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
-default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.html, asides/pinboard.html, asides/googleplus.html]
+default_asides: [asides/recent_posts.html]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.
@@ -59,46 +59,25 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/delicious.
 # post_asides:
 # page_asides:
 
+navigation:
+  - About: /about
+  - Notebook: /notebook
+
 # ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #
 
-# Github repositories
-github_user: aarongustafson
-github_repo_count: 0
-github_show_profile_link: true
-github_skip_forks: true
-
-# Twitter
-twitter_user: aarongustafson
-twitter_tweet_button: false
-
-# Google +1
-google_plus_one: false
-google_plus_one_size: medium
-
-# Google Plus Profile
-# Hidden: No visible button, just add author information to search results
-googleplus_user: AaronGustafson
-googleplus_hidden: false
-
-# Pinboard
-pinboard_user:
-pinboard_count: 3
-
-# Delicious
-delicious_user:
-delicious_count: 3
+# Open Graph
+og:
+  image: /i/og-logo.png
+  type: website
 
 # Disqus Comments
 disqus_short_name:
 disqus_show_comment_count: false
 
 # Google Analytics
-google_analytics_tracking_id:
-
-# Facebook Like
-facebook_like: false
+google_analytics_tracking_id: "UA-176472-5"
 
 # Github repo path
 repo_url: "https://github.com/aarongustafson/aarongustafson.github.io/tree/source/source/"

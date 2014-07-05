@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Aaron Gustafson at a Glance
-description: {{ site.data.microcopy.description }}
+comments: false
 footer: true
 ---
 
@@ -98,49 +98,67 @@ footer: true
 </section>
 
 <section id="events" class="section">
-	
-	<h1 class="section__title hidden">Upcoming Conferences &amp; Workshops</h1>
+	<div class="layout-container">
+		<div class="layout-container__primary">
+			
+			<h1 class="section__title hidden">Upcoming Conferences &amp; Workshops</h1>
 		
-	<ul class="listing listing--events">
-		{% for event in site.data.events-future limit:2 %}
-			<li class="listing__item listing__item--{{ forloop.index }} event event--future">
-				<h3 class="listing__item__title event__title">
-					{% if event.url %}
-						<a href="{{ event.url }}">{{ event.title }}</a>
-					{% else %}
-						{{ event.title }}
-					{% endif %}
-				</h3>
-				<p class="listing__item__meta">
-					<b class="event__date">{{ event.date | date: "%B %Y" }}</b>
-					<b class="event__location">{{ event.location }}</b>
-				</p>
-			</li>
-		{% endfor %}
-	</ul>
+			<ul class="listing listing--events">
+				{% for event in site.data.events-future limit:2 %}
+					<li class="listing__item listing__item--{{ forloop.index }} event event--future">
+						<h3 class="listing__item__title event__title">
+							{% if event.url %}
+								<a href="{{ event.url }}">{{ event.title }}</a>
+							{% else %}
+								{{ event.title }}
+							{% endif %}
+						</h3>
+						<p class="listing__item__meta">
+							<b class="event__date">{{ event.date | date: "%B %Y" }}</b>
+							<b class="event__location">{{ event.location }}</b>
+						</p>
+					</li>
+				{% endfor %}
+			</ul>
 	
-	<h1 class="section__title hidden">Past Conferences &amp; Workshops</h1>
+			<h1 class="section__title hidden">Past Conferences &amp; Workshops</h1>
 		
-	<ul class="listing listing--events">
-		{% for event in site.data.events-past limit:9 %}
-			<li class="listing__item listing__item--{{ forloop.index }} event event--past">
-				<h3 class="listing__item__title event__title">
-					{% if event.url %}
-						<a href="{{ event.url }}">{{ event.title }}</a>
-					{% else %}
-						{{ event.title }}
+			<ul class="listing listing--events">
+				{% for event in site.data.events-past limit:9 %}
+					<li class="listing__item listing__item--{{ forloop.index }} event event--past">
+						<h3 class="listing__item__title event__title">
+							{% if event.url %}
+								<a href="{{ event.url }}">{{ event.title }}</a>
+							{% else %}
+								{{ event.title }}
+							{% endif %}
+						</h3>
+						<p class="listing__item__meta">
+							<b class="event__date">{{ event.date | date: "%B %Y" }}</b>
+							<b class="event__location">{{ event.location }}</b>
+						</p>
+					</li>
+				{% endfor %}
+			</ul>
+	
+			<p class="more">See a complete list of <a href="/events">my conferences &amp; workshops</a>.</p>
+			
+		</div>
+		<div class="layout-container__secondary">
+
+			<h2>If you’re interested in following my presentations:</h2>
+			<ul class="link-list link-list--speaking">
+				{% for link in site.data.links %}
+					{% if link.category == 'speaking' %}
+						<li class="link-list__item link-list__item--{{ link.site | downcase }}">
+							<a href="{{ link.url }}" title="{{ link.title }}">{{ link.site }}</a>
+						</li>
 					{% endif %}
-				</h3>
-				<p class="listing__item__meta">
-					<b class="event__date">{{ event.date | date: "%B %Y" }}</b>
-					<b class="event__location">{{ event.location }}</b>
-				</p>
-			</li>
-		{% endfor %}
-	</ul>
-	
-	<p class="more">See a complete list of <a href="/events">my conferences &amp; workshops</a>.</p>
-	
+				{% endfor %}
+			</ul>
+
+		</div>
+	</div>
 </section>
 
 <section id="other" class="section">

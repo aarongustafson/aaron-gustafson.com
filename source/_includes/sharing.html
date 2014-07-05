@@ -1,5 +1,5 @@
 {% capture title %}{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %} - {% endif %}{{ site.title }}{% endcapture %}
-{% capture description %}{% if page.description %}{{ page.description }}{% else %}{{ content | raw_content }}{% endif %}{% endcapture %}
+{% capture description %}{% if page.description %}{{ page.description | raw_content }}{% else %}{{ site.description | raw_content }}{% endif %}{% endcapture %}
 {% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
 
 <title>{{ title }}</title>
@@ -11,11 +11,11 @@
 <meta name="copyright" content="(cc) {{ site.author }}">
 <meta name="publisher" content="{{ site.author }}">
 <meta name="author" content="{{ site.author }}">
-<meta name="medium" content="website">
+<meta name="medium" content="{{ site.og.type }}">
 <meta property="og:title" content="{{ title }}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="{{ site.og.type }}">
 <meta property="og:site_name" content="{{ site.author }}">
-<meta property="og:image" content="/i/og-logo.png">
+<meta property="og:image" content="{{ site.og.image }}">
 <meta property="og:locale" content="en_US">
 
 <link rel="canonical" href="{{ canonical }}">
@@ -24,4 +24,6 @@
 <meta property="og:description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
 <meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
 
-{% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+{% if page.keywords %}
+	<meta name="keywords" content="{{ page.keywords }}">
+{% endif %}
