@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://aarongustafson.github.io/sitemap.xml 
+Sitemap: http://aaron-gustafson.com/sitemap.xml 

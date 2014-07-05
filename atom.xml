@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 	<title><![CDATA[Aaron Gustafson]]></title>
-	<link href="http://aarongustafson.github.io/atom.xml" rel="self"/>
-	<link href="http://aarongustafson.github.io/"/>
-	<updated>2014-07-04T10:09:50-04:00</updated>
-	<id>http://aarongustafson.github.io/</id>
+	<link href="http://aaron-gustafson.com/atom.xml" rel="self"/>
+	<link href="http://aaron-gustafson.com/"/>
+	<updated>2014-07-05T09:57:49-04:00</updated>
+	<id>http://aaron-gustafson.com/</id>
 	<author>
 		<name><![CDATA[Aaron Gustafson]]></name>
 		
