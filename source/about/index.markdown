@@ -5,4 +5,4 @@ comments: true
 footer: true
 ---
 
-{% render_partial _microcopy/about.markdown %}
+{% include about.markdown %}

@@ -16,7 +16,8 @@ footer: true
 	<div class="layout-container">
 		<div class="layout-container__primary">
 		
-			{% render_partial _microcopy/about.markdown %}
+			{% capture about %}{% include about.markdown %}{% endcapture %}
+			{{ about | markdownify }}
 
 		</div>
 		<div class="layout-container__secondary">
