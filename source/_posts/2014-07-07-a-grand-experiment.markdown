@@ -4,6 +4,7 @@ title: "A Grand Experiment"
 date: 2014-07-07 20:46:48 -0400
 comments: true
 categories: [blogging, web design, this site]
+description: So, a mere three years after my old “life blog” stopped working, I decided to scrap it and start fresh.
 ---
 
 So, a mere three years after my old “life blog” stopped working, I decided to scrap it and start fresh.
