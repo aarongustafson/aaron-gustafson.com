@@ -3,7 +3,7 @@
 	<title><![CDATA[Aaron Gustafson]]></title>
 	<link href="http://aaron-gustafson.com/atom.xml" rel="self"/>
 	<link href="http://aaron-gustafson.com/"/>
-	<updated>2014-07-07T20:46:10-04:00</updated>
+	<updated>2014-07-09T10:04:22-04:00</updated>
 	<id>http://aaron-gustafson.com/</id>
 	<author>
 		<name><![CDATA[Aaron Gustafson]]></name>
@@ -11,5 +11,7 @@
 	</author>
 	<generator uri="http://octopress.org/">Octopress</generator>
 
+	
+		
 	
 </feed>
