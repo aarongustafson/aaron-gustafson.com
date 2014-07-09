@@ -1,0 +1,7 @@
+I am the founder and technical lead of [Easy Designs](http://easy-designs.net), a web development consultancy focused on helping businesses elegantly tackle the challenges of presented by all these crazy screens you see everywhere.
+
+I am an Invited Expert to the World Wide Web Consortium’s Responsive Images Community Group, a Rosenfeld Media Expert specializing in front-end web design technologies and techniques, the Founder and Publisher of [Web Standards Sherpa](http://webstandardssherpa.com), and the Founder of the [Chattanooga Open Device Lab](http://chadevicelab.org). I also co-founded the event series [Code &amp; Creativity](http://codeandcreativity.com) and [Retreats 4 Geeks](http://retreats4geeks.com). I’m also a former Manager of the [Web Standards Project (WaSP)](http://webstandards.org).
+
+I wrote the web design book [Jeffrey Zeldman](http://zeldman.com) calls [a “modern classic”](http://alistapart.com/column/doctor-is-in): [<cite>Adaptive Web Design</cite>](http://adaptivewebdesign.info). I’ve contributed to [a few other books](#books), have written [a ton of articles](#articles), and helped shape dozens more during my tenure as Tech Editor for the esteemed magazine [<cite>A List Apart</cite>](http://alistapart.com).
+
+I live and work in beautiful Chattanooga, <abbr title="Tennessee">TN</abbr> with my lovely and talented partner [Kelly McCarthy](https://twitter.com/ShirleyTemper).
