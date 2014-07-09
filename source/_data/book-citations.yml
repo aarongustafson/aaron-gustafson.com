@@ -1,11 +1,19 @@
-- title: "Pro CSS Techniques"
-  author: "Dan Rubin, Ian Lloyd, and Jeff Croft"
-  url: "http://amzn.to/1iKWQao"
-
-- title: "Responsive Web Design with HTML5 and CSS3"
-  author: "Ben Frain"
-  url: "http://amzn.to/1iKVxIH"
+- title: Responsive Web Design with HTML5 and CSS3
+  author: Ben Frain
+  url: http://amzn.to/1iKVxIH
   
-- title: "Web Standards Creativity"
-  author: "Andy Budd, et al"
-  url: "http://amzn.to/1lETHNH"
+- title: Implementing Responsive Design
+  author: Tim Kadlec
+  url: http://amzn.to/1vXqIs6
+
+- title: Pro CSS Techniques
+  author: Dan Rubin, Ian Lloyd, and Jeff Croft
+  url: http://amzn.to/1iKWQao
+
+- title: Web Standards Creativity
+  author: Andy Budd, et al
+  url: http://amzn.to/1lETHNH
+
+- title: "Transcending CSS: The Fine Art of Web Design"
+  author: Andy Clarke and Molly Holzschlag
+  url: http://amzn.to/1ioxape

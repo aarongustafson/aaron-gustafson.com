@@ -1,14 +1,24 @@
-- title: "Beyond The Desktop"
-  url: "http://lanyrd.com/2014/bdconf-2/"
-  date: 2014-11-03 09:00:00 -0400
-  location: "Orlando, FL USA"
-
-- title: "BlendConf"
-  url: "http://lanyrd.com/2014/blendconf14/"
-  date: 2014-09-11 09:00:00 -0400
-  location: "Charlotte, NC USA"
-
-- title: "DevLink"
-  url: "http://lanyrd.com/2014/devlink2014/"
+- title: DevDev
+  url: http://www.devdev.is/summer-of-code
+  date: 2014-07-14 12:00:00 -0400
+  location: Chattanooga, TN USA
+  
+- title: DevLink
+  url: http://lanyrd.com/2014/devlink2014/
   date: 2014-08-26 09:00:00 -0400
-  location: "Chattanooga, TN USA"
+  location: Chattanooga, TN USA
+
+- title: BlendConf
+  url: http://lanyrd.com/2014/blendconf14/
+  date: 2014-09-11 09:00:00 -0400
+  location: Charlotte, NC USA
+
+- title: Chattanoog Chamber of Commerce Luncheon
+  #url: http://www.devdev.is/summer-of-code
+  date: 2014-10-23 11:00:00 -0400
+  location: Chattanooga, TN USA
+
+- title: Beyond The Desktop
+  url: http://lanyrd.com/2014/bdconf-2/
+  date: 2014-11-03 09:00:00 -0400
+  location: Orlando, FL USA

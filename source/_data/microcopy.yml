@@ -1,17 +1,17 @@
 appearances:
-  intro: "Strangely, some folks seem to want to pick my addled brain about the web and such. Here’s a collection of those."
-  citations_intro: "My work has also been cited in a few books:"
+  intro: Strangely, some folks seem to want to pick my addled brain about the web and such. Here’s a collection of those.
+  citations_intro: My work has also been cited in
 articles:
-  intro: "This is a complete collection of the articles I’ve written."
-  after: "My work has also been cited in a few books:"
+  intro: This is a complete collection of the articles I’ve written.
 books:
-  intro: "I love to write and over the years I’ve contributed to a shelf’s-worth of books."
-  editing_intro: "I have also tech edited and contributed in various other ways to the following books:"
+  intro: I love to write and over the years I’ve contributed to a shelf’s-worth of books.
+  editing_intro: I have also tech edited and contributed in various other ways to
 events:
-  description: "I’ve spoken at my fair share of events over the years. Here’s a collection of the public ones."
-  intro_pre_count: "It’s hard to believe, but I’ve presented over"
-  intro_post_count: "conferences and workshops since 2003. And that’s just the public stuff. I’ve also presented numerous talks and customized workshops for a bunch of companies. I wish I could tell you who they were, but let’s just say you’ve likely patronized most of them and have definitely heard of the others."
-  contact: "You can keep up with my travels on Lanyrd and if you want me to come present at your company or conference, [drop me a line](/contact)."
-  after: ""
+  description: I’ve spoken at my fair share of events over the years. Here’s a collection of the public ones.
+  intro_pre_count: It’s hard to believe, but I’ve presented over
+  intro_post_count: conferences and workshops since 2003. And that’s just the public stuff. I’ve also presented numerous talks and customized workshops for a bunch of companies. I wish I could tell you who they were, but let’s just say you’ve likely patronized most of them and have definitely heard of the others.
+  contact: You can keep up with my travels on Lanyrd and if you want me to come present at your company or conference, [drop me a line](/contact).
 contact:
-  intro: "Interested in having me present at your company or conference? Want me to write an article or book for you? Just wanna say hey? Go for it!"
+  intro: Interested in having me present at your company or conference? Want me to write an article or book for you? Just wanna say hey? Go for it!
+sidebar:
+  about: Hi there. I’m Aaron and I work on the web. I’m a [prolific](/books) [writer](/articles), [frequent speaker](/events), and [evangelist for web stewardship](/appearances). I live & work in Chattanooga, <abbr title=Tennessee>TN</abbr>. Want to know more? [Read on](/about).

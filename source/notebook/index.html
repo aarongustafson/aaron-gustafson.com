@@ -1,18 +1,18 @@
 ---
-layout: page
-title: Blog Archive
+layout: index
+title: The Notebook of
+show_title: false
 footer: true
+comments: false
+sharing: false
 ---
 
 <div id="blog-archives">
-{% for post in site.posts reverse %}
-{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-{% unless year == this_year %}
-  {% assign year = this_year %}
-  <h2>{{ year }}</h2>
-{% endunless %}
-<article>
-  {% include archive_post.html %}
-</article>
-{% endfor %}
+	{% for post in site.posts reverse %}
+		{% unless post.external-url %}
+			<article>
+	  			{% include archive_post.html %}
+			</article>
+		{% endunless %}
+	{% endfor %}
 </div>

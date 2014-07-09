@@ -49,15 +49,23 @@ excerpt_separator: "<!--more-->"
 
 titlecase: true       # Converts page and post titles to titlecase
 
+permalink_label: "&infin;"
+permalink_label_feed: "&infin; Permalink"
+linklog_marker: "&rarr;"
+linklog_marker_position: after
+linklog_marker_position_feed: after
+standard_post_marker:
+
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in /source/_includes/custom/asides/ and add them to the list like 'custom/asides/custom_aside_name.html'
 default_asides: [asides/recent_posts.html]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.
-# blog_index_asides:
-# post_asides:
-# page_asides:
+blog_index_asides: [asides/about.html,asides/networks.html]
+post_asides: [asides/about.html,asides/recent_posts.html]
+page_asides: [asides/about.html,asides/networks.html]
+about_asides: [asides/networks.html,asides/recent_posts.html]
 
 navigation:
   - About: /about
@@ -73,8 +81,8 @@ og:
   type: website
 
 # Disqus Comments
-disqus_short_name:
-disqus_show_comment_count: false
+disqus_short_name: aarongustafson
+disqus_show_comment_count: true
 
 # Google Analytics
 google_analytics_tracking_id: "UA-176472-5"
