@@ -70,6 +70,7 @@ about_asides: [asides/networks.html,asides/recent_posts.html]
 navigation:
   - About: /about
   - Notebook: /notebook
+  - Contact: /contact
 
 # ----------------------- #
 #   3rd Party Settings    #
