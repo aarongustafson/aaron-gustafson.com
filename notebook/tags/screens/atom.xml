@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Screens | Aaron Gustafson]]></title>
+  <link href="http://aaron-gustafson.com//notebook/tags/screens/atom.xml" rel="self"/>
+  <link href="http://aaron-gustafson.com/"/>
+  <updated>2014-07-10T21:07:22-04:00</updated>
+  <id>http://aaron-gustafson.com/</id>
+  <author>
+    <name><![CDATA[Aaron Gustafson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Searching for the “Right Size”]]></title>
+    <link href="http://aaron-gustafson.com/notebook/2014/searching-for-the-right-size/"/>
+    <updated>2014-07-10T20:38:16-04:00</updated>
+    <id>http://aaron-gustafson.com/notebook/2014/searching-for-the-right-size</id>
+    <content type="html"><![CDATA[<p>This <a href="http://www.wired.com/2014/07/what-a-stalling-tablet-market-says-about-our-search-for-the-perfect-screen/">recent piece from <cite>Wired</cite></a> attributes dwindling tablet sales to cannibalization from larger mobile phones (<abbr title="also known as">aka</abbr> “phablets”) which are nearly as big as 7-8˝ tablets:</p>
+
+<blockquote><p>Aside from the ability to make a phone call, the difference between a phone and a tablet comes down to 1.5 inches or less. … But the real issue is device makers are running out of good arguments for why these ever more subtle size gradations matter. After a point, the differences come down to personal preference rather than any meaningful new use case. As phones and tablets converge into this tight window, slightly bigger phones could accelerate the decline in tablet demand.</p></blockquote>
+
+<p>Personally, I’m not sure it matters. We’re in the midst of one big experiment being run by the device manufacturers. We’re in the scattershot. The industry is feeling out the &ldquo;right&rdquo; screen size (or sizes) that most people want to use and we are (in large part) footing the bill.</p>
+]]></content>
+  </entry>
+  
+</feed>
