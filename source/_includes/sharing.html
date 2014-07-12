@@ -1,22 +1,15 @@
-{% capture title %}{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %} - {% endif %}{{ site.title }}{% endcapture %}
+{% capture title %}{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %} {% endif %}{{ site.title }}{% endcapture %}
 {% capture description %}{% if page.description %}{{ page.description | raw_content }}{% else %}{{ site.description | raw_content }}{% endif %}{% endcapture %}
-{% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
+{% capture canonical %}{% if page.canonical %}{{ page.canonical }}{% else %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endif %}{% endcapture %}
 
-<title>{{ title }}</title>
-
-<meta name="revisit-after" content="7 days">
-<meta name="ROBOTS" content="index,follow">
-<meta name="robots" content="NOODP">
-
-<meta name="copyright" content="(cc) {{ site.author }}">
-<meta name="publisher" content="{{ site.author }}">
 <meta name="author" content="{{ site.author }}">
-<meta name="medium" content="{{ site.og.type }}">
 <meta property="og:title" content="{{ title }}">
 <meta property="og:type" content="{{ site.og.type }}">
 <meta property="og:site_name" content="{{ site.author }}">
-<meta property="og:image" content="{{ site.og.image }}">
+<meta property="og:image" content="{{ site.url }}{{ site.og.image }}">
 <meta property="og:locale" content="en_US">
+
+<link href="https://plus.google.com/+AaronGustafson" rel="publisher" />
 
 <link rel="canonical" href="{{ canonical }}">
 <meta property="og:url" content="{{ canonical }}">
@@ -27,3 +20,9 @@
 {% if page.keywords %}
 	<meta name="keywords" content="{{ page.keywords }}">
 {% endif %}
+
+<link href="{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
+
+<meta name="revisit-after" content="7 days">
+<meta name="ROBOTS" content="index,follow">
+<meta name="robots" content="NOODP">

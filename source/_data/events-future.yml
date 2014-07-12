@@ -8,12 +8,22 @@
   date: 2014-08-26 09:00:00 -0400
   location: Chattanooga, TN USA
 
+- title: Accessibility Summit
+  url: http://environmentsforhumans.com/2014/accessibility-summit/
+  date: 2014-09-09 09:00:00 -0400
+  location: Online
+
 - title: BlendConf
   url: http://lanyrd.com/2014/blendconf14/
   date: 2014-09-11 09:00:00 -0400
   location: Charlotte, NC USA
 
-- title: Chattanoog Chamber of Commerce Luncheon
+- title: a11yqc
+  url: http://lanyrd.com/2014/a11yqc/
+  date: 2014-10-14 09:00:00 -0400
+  location: Quebec, Canada
+
+- title: Chattanooga Chamber of Commerce Luncheon
   #url: http://www.devdev.is/summer-of-code
   date: 2014-10-23 11:00:00 -0400
   location: Chattanooga, TN USA

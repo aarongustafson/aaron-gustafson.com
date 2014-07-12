@@ -12,6 +12,8 @@ sharing: false
 	
 {% render_partial _microcopy/events-before.html %}
 
+<h2>In the Future</h2>
+
 <ul class="listing listing--events">
 	{% for event in site.data.events-future %}
 		<li class="listing__item listing__item--{{ forloop.index }} event event--future">
@@ -28,6 +30,11 @@ sharing: false
 			</p>
 		</li>
 	{% endfor %}
+</ul>
+
+<h2>In the Past</h2>
+
+<ul class="listing listing--events">
 	{% for event in site.data.events-past %}
 		<li class="listing__item listing__item--{{ forloop.index }} event event--past">
 			<h3 class="listing__item__title event__title">
