@@ -1,10 +1,12 @@
-<section>
-  <h1>Recent Notes</h1>
-  <ul id="recent_posts">
-    {% for post in site.posts limit: site.recent_posts %}
-      <li class="post">
-        <a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a>
-      </li>
-    {% endfor %}
-  </ul>
-</section>
+{% unless page.show_posts == false %}
+	<section>
+		<h1>Recent Posts</h1>
+		<ul id="listing listing--blog">
+			{% for post in site.posts limit: site.recent_posts %}
+				<li class="listing__item listing__item--{{ forloop.index }} blog-post">
+					<a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</section>
+{% endunless %}

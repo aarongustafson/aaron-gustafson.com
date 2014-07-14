@@ -1,3 +1,5 @@
-<div class="about">
-	{{ site.data.microcopy.sidebar.about | markdownify }}
-</div>
+{% unless page.show_about == false %}
+	<div class="about">
+		{{ site.data.microcopy.sidebar.about | markdownify }}
+	</div>
+{% endunless %}

@@ -62,17 +62,22 @@ default_asides: [asides/recent_posts.html]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.
-blog_index_asides: [asides/about.html,asides/networks.html]
-post_asides: [asides/about.html,asides/recent_posts.html]
-page_asides: [asides/about.html,asides/networks.html]
-about_asides: [asides/networks.html,asides/recent_posts.html]
+blog_index_asides: [asides/about.html,asides/networks.html,asides/events.html]
+post_asides: [asides/about.html,asides/recent_posts.html,asides/events.htm]
+page_asides: [asides/about.html,asides/networks.html,asides/events.html]
 
 navigation:
-  - text: About
+  - text: <b class="hidden">A Bit </b>About<b class="hidden"> Me</b>
     url: /about/
-  - text: Notebook
+  - text: <b class="hidden">A List of My </b>Books
+    url: /books/
+  - text: <b class="hidden">Links to My </b>Articles
+    url: /articles/
+  - text: <b class="hidden">Links to </b>Interviews<b class="hidden"> &amp; Such I’ve Given</b>
+    url: /appearances/
+  - text: <b class="hidden">Entries in My </b>Notebook
     url: /notebook/
-  - text: Contact
+  - text: <b class="">The Requisite </b>Contact<b class="hidden"> Form</b>
     url: /contact/
 
 # ----------------------- #

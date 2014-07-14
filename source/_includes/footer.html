@@ -1,5 +1,9 @@
 <footer role="contentinfo">
 	
+	{% if page.path %}
+		<p class="fork-me">Did you spot a typo or error? Eesh. <a href="{{ site.repo_url }}{{ page.path }}">Would you mind fixing it for me?</a> You’re so awesome.</p>
+	{% endif %}
+	
 	<p><b id="license">The content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a>.</b> This site is powered by <a href="http://octopress.org">Octopress</a> and <a href="https://github.com/aarongustafson/aarongustafson.github.io/">forkable on Github</a>.</p>
 	
 </footer>
