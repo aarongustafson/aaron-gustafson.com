@@ -41,6 +41,8 @@ layout: default
 {% endif %}
 
 {% unless page.sidebar == false %}
+	<hr>
+
 	<aside class="sidebar">
   		{% if site.page_asides.size %}
     		{% include_array page_asides %}

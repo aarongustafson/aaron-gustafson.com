@@ -6,7 +6,7 @@ single: true
 {% include article.html %}
 
 <footer>
-	<p class="meta">
+	<p class="post__meta">
 		{% include post/categories.html %}
 	</p>
 	
@@ -26,7 +26,9 @@ single: true
 </footer>
 
 {% if site.disqus_short_name and page.comments == true %}
-	<section>
+	<hr>
+
+	<section class="post__comments">
 		<h1>Comments</h1>
 		<div id="disqus_thread" aria-live="polite">
 			{% include post/disqus_thread.html %}
@@ -35,6 +37,8 @@ single: true
 {% endif %}
 
 {% unless page.sidebar == false %}
+	<hr>
+
 	<aside class="sidebar">
 		{% if site.post_asides.size %}
     		{% include_array post_asides %}

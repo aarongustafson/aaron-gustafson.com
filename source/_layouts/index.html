@@ -9,6 +9,7 @@ layout: default
 			<header>
 		    	<h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
 		    	{% if page.date %}<p class="meta">{% include post/date.html %}{{ time }}</p>{% endif %}
+				<p class="meta">You can read this in {{ content | reading_time_as_i }}.</p>
 		  	</header>
 		{% endunless %}
   	{% endif %}
@@ -34,6 +35,8 @@ layout: default
 </article>
 
 {% unless page.sidebar == false %}
+	<hr>
+
 	<aside class="sidebar">
   		{% if site.blog_index_asides.size %}
     		{% include_array blog_index_asides %}

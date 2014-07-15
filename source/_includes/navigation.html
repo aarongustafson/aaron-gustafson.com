@@ -9,11 +9,14 @@
 	</ul>
 
 	{% if site.simple_search %}
-		<form action="{{ site.simple_search }}" method="get">
-			<fieldset role="search">
-				<input type="hidden" name="q" value="site:{{ site.url | shorthand_url }}" />
-				<input class="search" type="text" name="q" results="0" placeholder="Search"/>
-			</fieldset>
+		<form action="{{ site.simple_search }}" method="get" role="search">
+			<ol>
+				<li class="search">
+					<label class="hidden">What are you looking for?</label>
+					<input type="search" name="q">
+				</li>
+				<li><button><b class="hidden">Let’s see if </b>Google <b class="hidden">Finds </b>it</button></li>
+			</ol>
 		</form>
 	{% endif %}
 
