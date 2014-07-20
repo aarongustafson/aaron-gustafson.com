@@ -7,6 +7,7 @@
     	{% endif %}
     	
 		{% unless page.meta == false %}
+			
 			<p class="post__meta">
         		{% include post/date.html %}{{ time }}
         		
@@ -14,7 +15,13 @@
 					| <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">Comments</a>
         		{% endif %}
       		</p>
+			
 			<p class="post__meta">You can read this in {{ content | reading_time_as_i }}</p>
+			
+			{% if page.canonical and page.canonical_site %}
+				<p class="post__meta">This post originally appeared on <a href="{{ page.canonical }}">{{ page.canonical_site }}</a>.</p>
+			{% endif %}
+			
     	{% endunless %}
   	</header>
 {% endunless %}

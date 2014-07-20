@@ -1,6 +1,7 @@
 {% capture title %}{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %} {% endif %}{{ site.title }}{% endcapture %}
 {% capture description %}{% if page.description %}{{ page.description | raw_content }}{% else %}{{ site.description | raw_content }}{% endif %}{% endcapture %}
-{% capture canonical %}{% if page.canonical %}{{ page.canonical }}{% else %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endif %}{% endcapture %}
+{% capture page_url %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
+{% capture canonical %}{% if page.canonical %}{{ page.canonical }}{% else %}{{ page_url }}{% endif %}{% endcapture %}
 
 <meta name="author" content="{{ site.author }}">
 <meta property="og:title" content="{{ title }}">
@@ -12,10 +13,10 @@
 <link href="https://plus.google.com/+AaronGustafson" rel="publisher" />
 
 <link rel="canonical" href="{{ canonical }}">
-<meta property="og:url" content="{{ canonical }}">
+<meta property="og:url" content="{{ page_url }}">
 
-<meta property="og:description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
-<meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
+<meta property="og:description" content="{{ description | strip_html | condense_spaces | truncate:200 }}">
+<meta name="description" content="{{ description | strip_html | condense_spaces | truncate:200 }}">
 
 {% if page.keywords %}
 	<meta name="keywords" content="{{ page.keywords }}">
