@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Browsers | Aaron Gustafson]]></title>
   <link href="http://aaron-gustafson.com//notebook/tags/browsers/atom.xml" rel="self"/>
   <link href="http://aaron-gustafson.com/"/>
-  <updated>2014-07-20T08:32:33-04:00</updated>
+  <updated>2014-07-20T12:27:55-04:00</updated>
   <id>http://aaron-gustafson.com/</id>
   <author>
     <name><![CDATA[Aaron Gustafson]]></name>
@@ -18,7 +18,7 @@
     <link href="http://aaron-gustafson.com/notebook/2014/native-vs-stylable-tug-of-war/"/>
     <updated>2014-07-17T08:21:47-04:00</updated>
     <id>http://aaron-gustafson.com/notebook/2014/native-vs-stylable-tug-of-war</id>
-    <content type="html"><![CDATA[<p>In his astute post <a href="www.brucelawson.co.uk/2014/native-experience-vs-styling-select-boxes/">“‘Native experience’ vs styling select boxes”</a>, Bruce Lawson correctly identified a common tension in the web world:</p>
+    <content type="html"><![CDATA[<p>In his astute post <a href="//www.brucelawson.co.uk/2014/native-experience-vs-styling-select-boxes/">“‘Native experience’ vs styling select boxes”</a>, Bruce Lawson correctly identified a common tension in the web world:</p>
 
 <blockquote><p>But why this urge to re-style page elements that end-users are familiar with? … Or is it that we love native look and feel, except when we don’t?</p></blockquote>
 
