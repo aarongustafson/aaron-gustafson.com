@@ -706,12 +706,14 @@ div.gsc-url-top {
     Listing
 \*------------------------------------*/
 @media screen {
-  .listing__item {
-    border-bottom: 1px solid #cccccc;
+  .listing {
     margin: 0 0 20px;
     margin: 0 0 1.25rem;
-    padding: 0 0 20px;
-    padding: 0 0 1.25rem;
+  }
+  .listing__item {
+    margin: 0;
+    padding: 10px 0;
+    padding: 0.625rem 0;
   }
   .listing__item:last-child {
     border-bottom-width: 0;
@@ -720,6 +722,10 @@ div.gsc-url-top {
   }
   .listing__item__meta {
     color: #cccccc;
+  }
+  .listing__item :last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 /*------------------------------------*\
