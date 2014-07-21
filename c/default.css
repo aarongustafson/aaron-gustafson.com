@@ -655,3 +655,45 @@ div.gsc-url-top {
 /*------------------------------------*\
     Animations
 \*------------------------------------*/
+/*------------------------------------*\
+    $LAYOUT
+	Page layout
+\*------------------------------------*/
+/*------------------------------------*\
+    Header
+\*------------------------------------*/
+.banner {
+  margin: 0 0 20px;
+  margin: 0 0 1.25rem;
+}
+
+.alert {
+  background: #2c2825;
+  color: white;
+  margin: 0 0 20px;
+  margin: 0 0 1.25rem;
+  padding: 5px;
+  padding: 0.3125rem;
+  text-align: center;
+}
+.alert a {
+  border-color: inherit;
+  color: inherit;
+}
+.alert strong {
+  font-weight: normal;
+}
+
+/*------------------------------------*\
+    Main
+\*------------------------------------*/
+/*------------------------------------*\
+    Footer
+\*------------------------------------*/
+.footer {
+  padding: 0 0 20px;
+  padding: 0 0 1.25rem;
+}
+.footer p {
+  margin: 0;
+}
