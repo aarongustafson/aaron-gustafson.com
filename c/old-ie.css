@@ -91,7 +91,7 @@ table.striped {
   background: white;
 }
 table.striped thead {
-  background: #cccccc;
+  background: #666666;
   border-bottom: 0;
 }
 table.striped tbody tr {
@@ -107,7 +107,7 @@ table.striped tbody tr:hover {
 }
 table.striped th,
 table.striped td {
-  border: 1px solid #2c2825;
+  border: 1px solid #666666;
   padding: 15px;
   padding: 0.9375rem;
 }
