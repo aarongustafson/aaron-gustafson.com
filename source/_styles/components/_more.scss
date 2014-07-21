@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    More
+\*------------------------------------*/
+
+.more {
+    
+    @include breakup-placeholder( small-caps );
+    font-weight: bold;
+    white-space: nowrap;
+    
+    a {
+        border: 0;
+    }
+    
+}

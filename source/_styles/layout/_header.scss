@@ -1,0 +1,24 @@
+/*------------------------------------*\
+    Header
+\*------------------------------------*/
+
+.banner {
+    @include rem( margin, $margin-default );
+}
+
+.alert {
+    background: $color-black;
+    color: $color-white;
+    
+    @include rem( margin, $margin-default );
+    @include rem( padding, 5 );
+    text-align: center;
+    
+    a {
+        border-color: inherit;
+        color: inherit;
+    }
+    strong {
+        font-weight: normal;
+    }
+}

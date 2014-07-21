@@ -1,0 +1,14 @@
+/*------------------------------------*\
+    $LAYOUT
+	Page layout
+\*------------------------------------*/
+
+// Susy configuration
+$susy: (
+    global-box-sizing: border-box
+);
+
+//@import "grid";
+@import "header";
+@import "main";
+@import "footer";

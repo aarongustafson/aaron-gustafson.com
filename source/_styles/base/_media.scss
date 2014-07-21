@@ -1,0 +1,36 @@
+/*------------------------------------*\
+    Media Elements
+\*------------------------------------*/
+
+@include breakup-breakpoint("default") {
+
+    object[data*="svg"] {
+        pointer-events: none;
+    }
+    object[data^="#"] {
+        @include breakup-placeholder( hidden );
+    }
+
+    // Responsive images
+    img {
+    
+        display: block;
+    	width: 100%;
+    	height: auto;
+	
+    	&[style] {
+        	width: 100% !important;
+        	height: auto !important;
+    	}
+	
+    }
+    picture {
+    	display: block;
+    }
+    // Noscript fallback for picture
+    .noscript-picture {
+    	margin: 0;
+    	padding: 0;
+    }
+
+}

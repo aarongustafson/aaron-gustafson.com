@@ -1,0 +1,214 @@
+//////////////////////////////////////////////////////////////////
+// Breakup
+//
+// A tool for defining breakpoints and conditionally loading them.
+//////////////////////////////////////////////////////////////////
+
+
+// Global Variables
+//
+// $breakup-breakpoints: List of many named breakpoints that can be called with
+//     breakup-breakpoint. Each breakpoint is a list containing the breakpoint
+//     name and the media query it describes. Example:
+//
+//     $breakup-breakpoints: (
+//       'palm'		:	'(max-width: 480px)',
+//       'lap'		:	'(min-width: 481px) and (max-width: 1023px)',
+//       'portable'	:	'(max-width: 1023px)',
+//       'desk'		:	'(min-width: 1024px)'
+//     );
+//
+//
+// $breakup-included-blocks: A list of blocks to render in your stylesheet
+//
+//
+// $breakup-naked: Should breakpoint/tweakpoint blocks be wrapped in an @media
+//     declaration? You should set this to true within stylesheets for browsers
+//     which don't support @media, such as oldIE.
+//
+//
+// $breakup-allow-naked: List of named breakpoints and if they should be output
+//     when $breakup-naked is true (by default this is false). This is separate
+//     to $breakup-breakpoints because you may want to configure what
+//     breakpoints are unwrapped on a per stylesheet basis.
+//
+//
+// $breakup-default-breakpoint: Default name used for scoping placeholders.
+//
+//
+// $breakup-current-breakpoint: Used to internally track current breakpoint 
+//     for placeholder scoping.
+//
+//
+// $breakup-placeholders: Placeholder storage for internal use.
+///
+$breakup-breakpoints: () !default;
+$breakup-included-blocks: () !default;
+$breakup-naked: false !default;
+$breakup-breakpoints-allow-naked: () !default;
+$breakup-default-breakpoint: root;
+$breakup-current-breakpoint: $breakup-default-breakpoint;
+$breakup-placeholders: () !default;
+
+// Wrapper around a @media block. if $breakup-naked is true then the
+// content is output directly if the declaration has been marked as a fallback
+// breakpoint.
+//
+// $declaration:    A @media declaration to wrap the content block in.
+// $allow-naked:    Should this content should be rendered if the we are
+//                    displaying naked content (i.e. not wrapped in a media
+//                    query).
+@mixin breakup-media( $declaration, $allow-naked: false )
+{
+    @if not $breakup-naked
+    {
+        @media #{$declaration} {
+            @content;
+        }
+    }
+    @else
+    {
+        // If we are outputting naked content, only items with $allow-naked
+        // shall be rendered
+        @if $allow-naked == true or $allow-naked == 'allow-naked'
+        {
+            @content;
+        }
+    }
+}
+
+
+
+// Include a block in the page if it is included in within
+// $breakup-included-blocks
+//
+// $block-name:     The block name to render
+@mixin breakup-block( $block-name )
+{
+    @if index($breakup-included-blocks, $block-name) != false
+    {
+        @content;
+    }
+}
+
+
+
+// Look up a named breakpoint from $breakup-breakpoints, and wrap it in a block
+// so that it only appears if it is in the current stylesheet's
+// $breakup-included-blocks.
+//
+// $breakpoint-name:     The breakpoint name to render
+@mixin breakup-breakpoint( $breakpoint-name )
+{
+    $breakpoint: map-get( $breakup-breakpoints, $breakpoint-name );
+
+	// If `$breakpoint-name` exists as a key in `$breakup-breakpoints`
+	@if $breakpoint != null
+	{
+		// Update `$current-breakpoint`
+	    $breakup-current-breakpoint: $breakpoint-name !global;
+
+		// Handle Sass treating a list containing a single item as a single item
+        $allow-naked-list: $breakup-breakpoints-allow-naked;
+        @if length( $allow-naked-list ) == 1 {
+            $allow-naked-list: $breakup-breakpoints-allow-naked, null;
+        }
+
+        $allow-naked: index( $allow-naked-list, $breakpoint-name ) != false;
+
+        // For breakpoints, the block name is the same as the breakpoint name
+        @include breakup-block( $breakpoint-name ) {
+            @include breakup-media( $breakpoint, $allow-naked ) {
+                @content;
+            }
+        }
+
+	    // Then reset `$current-breakpoint` to `$default-breakpoint` (root)
+	    $breakup-current-breakpoint: $breakup-default-breakpoint !global;
+	}
+
+	// If `$breakpoint-name` doesn't exist in `$breakup-breakpoints`, 
+	// Warn the user and do nothing
+    @else
+    {
+        @warn "Breakpoint '#{$breakpoint-name}' does not exist";
+    }
+}
+
+
+
+// Create an unnamed tweakpoint and wrap it in a block so that it only appears
+// if it is in the current stylesheet's $breakup-included-blocks.
+//
+// $declaration:    A media query that the content shall be wrapped in
+// $block-name:     The block name to display
+// $allow-naked:    Should this content should be rendered if the we are
+//                    displaying naked content (i.e. not wrapped in a media
+//                    query).
+@mixin breakup-tweakpoint( $declaration, $block-name, $allow-naked: false )
+{
+	// Update `$current-breakpoint`
+    $breakup-current-breakpoint: $block-name !global;
+	
+	@include breakup-block( $block-name ) {
+        @include breakup-media( $declaration, $allow-naked ) {
+            @content;
+        }
+    }
+
+	// Then reset `$current-breakpoint` to `$default-breakpoint` (root)
+    $breakup-current-breakpoint: $breakup-default-breakpoint !global;
+}
+
+
+
+// Generate scoped placeholders if they do not exist.
+//
+// $name:    The placeholder name to reserve (or use)
+@mixin breakup-create-placeholder( $name )
+{
+    // If placeholder doesn't exist yet in `$breakup-placeholders` list
+    @if not index( $breakup-placeholders, $name )
+    {
+        // Store its name
+        $breakup-placeholders: append( $breakup-placeholders, $name ) !global;
+        
+        // At root level
+        @at-root
+        {
+            // Looping through `$breakpoints`
+            @each $breakpoint, $declaration in $breakup-breakpoints
+            {
+                @include breakup-block( $breakpoint ) {
+                    // No allowing naked because we’ll have a naked placeholder already
+                    @include breakup-media( $declaration, false ) {
+                        %#{$name}-#{$breakpoint} {
+                            @content;
+                        }
+                    }
+                }
+            }
+            
+            // And dumping a placeholder out of any media query as well
+            // so basically at root level
+            %#{$name}-#{$breakup-default-breakpoint} {
+                @content;
+            }
+        }
+    }
+	// If placeholder already exists, just warn the user
+	@else
+	{
+		@warn "Placeholder `#{$name}` already exists.";
+    }
+}
+
+
+
+// Use the scoped placeholders
+//
+// $name:    The placeholder name to reserve (or use)
+@mixin breakup-placeholder( $name )
+{
+      @extend %#{$name}-#{$breakup-current-breakpoint} !optional;
+}

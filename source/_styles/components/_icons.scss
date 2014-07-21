@@ -1,0 +1,44 @@
+/*------------------------------------*\
+    Icons
+\*------------------------------------*/
+
+.icon {
+    
+	@include breakup-placeholder( overflow-hide );
+
+    background-size: contain;
+	
+	display: inline-block;
+	vertical-align: baseline;
+	
+	height: .75em;
+	width: .75em;
+	
+	@include rem( margin-right, 7 );
+	
+}
+
+$get-started-links: (
+    "apply-now":        ( 15 15 ),
+    "ask-a-question":   ( 20 18 ),
+    "request-info":     ( 15 15 ),
+    "visit-campus":     ( 11 17 )
+);
+@each $icon-name, $dimensions in $get-started-links {
+    
+    $space-to-text: 25;
+    
+    .icon-#{$icon-name},
+    .icon-#{$icon-name}-alt {
+        
+        // center in the available space, horizontally
+        $margin: ( $space-to-text - nth( $dimensions, 1 ) ) / 2;
+        @include rem( margin, 0 ceil( $margin ) 0 floor( $margin ) );
+
+        width: 0px + nth( $dimensions, 1 );
+        height: 0px + nth( $dimensions, 2 );
+        
+        vertical-align: middle;
+    }
+    
+}

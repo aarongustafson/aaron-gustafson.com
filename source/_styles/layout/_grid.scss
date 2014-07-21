@@ -1,0 +1,158 @@
+/*------------------------------------*\
+    Grid
+\*------------------------------------*/
+
+.layout-container {
+    
+    @if $debug-grid == true
+    {
+        @include show-grid( overlay );
+    }
+    
+    @include container( map-get( $grid-breakpoints, "tiny" ) nest );
+    height: ie8( 1% );
+    
+    // padding on a small screen
+    @include rem( padding, 0 20 );
+    
+    @include breakup-breakpoint( "small" ) {
+
+        @if $debug-grid == true
+        {
+            @include show-grid( overlay );
+        }
+
+        @include container( map-get( $grid-breakpoints, "small" ) nest );
+        
+    }
+    
+    @include breakup-breakpoint( "medium" ) {
+
+        @if $debug-grid == true
+        {
+            @include show-grid( overlay );
+        }
+
+        @include container( map-get( $grid-breakpoints, "medium" ) nest );
+        
+    }
+    
+    @include breakup-breakpoint( "full" ) {
+
+        @if $debug-grid == true
+        {
+            @include show-grid( overlay );
+        }
+
+        @include container( map-get( $grid-breakpoints, "full" ) $grid-full-column-sizes center nest );
+        @include rem( padding, 0 );
+        @include rem( max-width, 940 );
+        
+    }
+    
+    // Primary container
+    &__primary {
+
+        @include box-sizing( border-box );
+        
+        // Grid [-----]---
+        @include breakup-breakpoint( "medium" ) {
+            @include span( 5 of map-get( $grid-breakpoints, "medium" ) fluid );
+        }
+
+        // Grid [--------]----
+        @include breakup-breakpoint( "full" ) {
+            @include span( 8 of map-get( $grid-breakpoints, "full" ) $grid-full-column-sizes fluid );
+        }
+        
+    }
+    
+    // Secondary
+    &__secondary {
+
+        @include box-sizing( border-box );
+
+        // Grid ------[--]
+        @include breakup-breakpoint( "medium" ) {
+            @include span( last 3 of map-get( $grid-breakpoints, "medium" ) fluid );
+            margin-right: 0;
+            
+            // ensure last children have no margin bottom (to stop overflow)
+            & > :last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        // Grid ---------[---]
+        @include breakup-breakpoint( "full" ) {
+            @include span( last 3 of map-get( $grid-breakpoints, "full" ) $grid-full-column-sizes fluid );
+            margin-right: 0;
+        }
+        
+    }
+    
+    
+    // Swap columns
+    &--alt &__primary {
+
+        // Grid ---[-----]
+        @include breakup-breakpoint( "medium" ) {
+            @include span( last 5 of map-get( $grid-breakpoints, "medium" ) fluid );
+            margin-right: 0;
+        }
+
+        // Grid ----[--------]
+        @include breakup-breakpoint( "full" ) {
+            @include span( last 8 of map-get( $grid-breakpoints, "full" ) $grid-full-column-sizes fluid );
+            margin-right: 0;
+        }
+        
+    }
+    
+    &--alt &__secondary {
+
+        // Grid [--]------
+        @include breakup-breakpoint( "medium" ) {
+            @include span( 3 of map-get( $grid-breakpoints, "medium" ) fluid );
+        }
+
+        // Grid [---]---------
+        @include breakup-breakpoint( "full" ) {
+            @include span( 3 of map-get( $grid-breakpoints, "full" ) $grid-full-column-sizes fluid );
+        }
+        
+    }
+    
+    // Split
+    &--split &__primary {
+
+        // Grid [----]----
+        @include breakup-breakpoint( "medium" ) {
+            @include span( 4 of map-get( $grid-breakpoints, "medium" ) fluid );
+            @include rem( padding-right, 6 );
+        }
+
+        // Grid ----[--------]
+        @include breakup-breakpoint( "full" ) {
+            @include span( 6 of map-get( $grid-breakpoints, "full" ) $grid-full-column-sizes fluid );
+        }
+        
+    }
+    &--split &__secondary {
+
+        // Grid ----[----]
+        @include breakup-breakpoint( "medium" ) {
+            @include span( last 4 of map-get( $grid-breakpoints, "medium" ) fluid );
+            @include rem( padding-left, 6 );
+            margin-right: 0;
+        }
+
+        // Grid ------[-----]
+        @include breakup-breakpoint( "full" ) {
+            @include span( last 6 of map-get( $grid-breakpoints, "full" ) $grid-full-column-sizes fluid );
+            margin-right: 0;
+        }
+        
+    }
+    
+}

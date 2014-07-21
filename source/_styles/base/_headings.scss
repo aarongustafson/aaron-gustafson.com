@@ -1,0 +1,34 @@
+/*------------------------------------*\
+    Heading Levels
+\*------------------------------------*/
+
+@include breakup-breakpoint( "default" ) {
+
+    h1, h2, h3, h4, h5, h6 {
+
+    	font-family: $font-stack-serif;
+    	font-weight: $font-weight-serif;
+    	line-height: $line-height-default;
+    	
+    	margin: 0;
+    	
+    	.wf-active & {
+        	word-spacing: 2px;
+    	}
+
+    }
+
+    h1 {
+        @include rem( font-size, $font-size-h1 );
+    }
+
+    section > h1,
+    h2 {
+        @include rem( font-size, $font-size-h2 );
+    }
+
+    h3 {
+        @include rem( font-size, $font-size-h3 );
+    }
+
+}

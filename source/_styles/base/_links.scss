@@ -1,0 +1,58 @@
+/*------------------------------------*\
+    Links
+\*------------------------------------*/
+
+@include breakup-breakpoint("default") {
+
+    a {
+	
+    	color: $color-link;
+    
+        border-bottom: 1px dotted;
+        border-bottom-color: rgba( $color-link, .25 );
+	
+    	cursor: pointer;
+	
+        transition: background-color $default-transition, border-color $default-transition, color $default-transition;
+	
+    	&,
+    	&:link,
+    	&:visited {
+    	    text-decoration: none;
+    	}
+	
+    	&:hover,
+    	&:focus,
+    	&:active {
+    		color: $color-link-hover;
+    		border-bottom-color: $color-link-hover;
+    	}
+	
+    	// don’t wrap phone #s or emails
+    	&[href^=mailto],
+    	&[href^=tel] {
+    	    white-space: nowrap;
+    	}
+    	&.email,
+    	&.tel {
+    	    white-space: nowrap;
+    	}
+	
+    	h1 &,
+    	h2 &,
+    	h3 &,
+    	h4 &,
+    	h5 &,
+    	h6 & {
+    	    border-bottom-width: 0;
+	    
+    	    &:hover,
+        	&:focus,
+        	&:active {
+        		border-bottom-width: 1px;
+        	}
+    	}
+	
+    }
+
+}
