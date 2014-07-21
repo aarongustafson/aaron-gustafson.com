@@ -133,7 +133,7 @@
     background: white;
   }
   table.striped thead {
-    background: #666666;
+    background: #cccccc;
     border-bottom: 0;
   }
   table.striped tbody tr {
@@ -149,7 +149,7 @@
   }
   table.striped th,
   table.striped td {
-    border: 1px solid #666666;
+    border: 1px solid #cccccc;
     padding: 15px;
     padding: 0.9375rem;
   }

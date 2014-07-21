@@ -324,8 +324,8 @@ div.gsc-url-top {
     font-style: italic;
     text-indent: -8px;
     text-indent: -0.5rem;
-    border-top: 1px solid #666666;
-    border-bottom: 1px solid #666666;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
     margin: 0 0 20px;
     margin: 0 0 1.25rem;
     padding: 20px;
@@ -359,7 +359,7 @@ div.gsc-url-top {
 
   hr {
     border: 0;
-    border-top: 1px solid #666666;
+    border-top: 1px solid #cccccc;
     margin: 20px auto;
     margin: 1.25rem auto;
     max-width: 200px;
@@ -498,7 +498,7 @@ div.gsc-url-top {
     min-width: 100px;
   }
   table thead {
-    border-bottom: 3px solid #666666;
+    border-bottom: 3px solid #cccccc;
     font-size: 12px;
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -516,7 +516,7 @@ div.gsc-url-top {
     font-size: 1.125rem;
   }
   table tr {
-    border-top: 1px solid #666666;
+    border-top: 1px solid #cccccc;
   }
   table td,
   table th {
@@ -602,7 +602,7 @@ div.gsc-url-top {
   .fields__group input,
   .fields__group select,
   .fields__group textarea {
-    color: #666666;
+    color: #cccccc;
     font-size: 12px;
     font-size: 0.75rem;
     -webkit-box-sizing: border-box;
@@ -707,7 +707,7 @@ div.gsc-url-top {
 \*------------------------------------*/
 @media screen {
   .listing__item {
-    border-bottom: 1px solid #666666;
+    border-bottom: 1px solid #cccccc;
     margin: 0 0 20px;
     margin: 0 0 1.25rem;
     padding: 0 0 20px;
@@ -719,7 +719,7 @@ div.gsc-url-top {
     padding-bottom: 0;
   }
   .listing__item__meta {
-    color: #666666;
+    color: #cccccc;
     margin-top: -20px;
     margin-top: -1.25rem;
   }
@@ -732,7 +732,7 @@ div.gsc-url-top {
     color: #666666;
   }
   .post__footer {
-    border-top: 1px solid #666666;
+    border-top: 1px solid #cccccc;
     padding-top: 20px;
     padding-top: 1.25rem;
   }
