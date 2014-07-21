@@ -9,7 +9,7 @@ canonical: http://blog.easy-designs.net/archives/the-native-vs-stylable-tug-of-w
 canonical_site: The Easy Designs Blog
 ---
 
-In his astute post [“‘Native experience’ vs styling select boxes”](www.brucelawson.co.uk/2014/native-experience-vs-styling-select-boxes/), Bruce Lawson correctly identified a common tension in the web world:
+In his astute post [“‘Native experience’ vs styling select boxes”](//www.brucelawson.co.uk/2014/native-experience-vs-styling-select-boxes/), Bruce Lawson correctly identified a common tension in the web world:
 
 > But why this urge to re-style page elements that end-users are familiar with? … Or is it that we love native look and feel, except when we don’t?
 

@@ -1,7 +1,0 @@
-/*------------------------------------*\
-    Transitions
-\*------------------------------------*/
-
-a {
-    @include transition( background-color $default-transition, border-color $default-transition, color $default-transition );
-}

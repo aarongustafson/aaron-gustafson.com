@@ -1,14 +1,16 @@
+{% comment %} 
 <script>(function(){
 	var link = document.createElement('link');
 	link.rel = 'stylesheet';
 	link.media = 'screen';
-	link.href = '/c/fonts.css';
+	link.href = '/c/fonts.min.css';
 	document.getElementsByTagName('head')[0].appendChild(link);
 }())</script>
 <noscript>
 	<link rel="stylesheet" href="/c/fonts.css" media="screen">
 </noscript>
- 
+{% endcomment %}
+
 <link rel="stylesheet" href="/c/default.css" media="screen">
 <!--[if gt IE 8]><!-->
 	<link rel="stylesheet" href="/c/advanced.css" media="screen">
