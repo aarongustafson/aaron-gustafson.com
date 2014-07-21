@@ -1,9 +1,10 @@
 {% capture this_url %}{{ site.url }}{{ page.url }}{% endcapture %}
 
-<div class="sharing">
-	<p>If you liked this post, please consider sharing it with others:</p>
-	<p><a href="https://twitter.com/intent/tweet?original_referer={{ this_url }}&amp;source=tweetbutton&amp;text={{ page.title | replace: ' ', '+' }}&amp;url={{ this_url }}">Share on Twitter</a></p>
-    <p class="facebook"><a href="http://www.facebook.com/sharer.php?u={{ this_url }}">Post on Facebook</a></p>
-	<p class="linkedin"><a href="https://www.linkedin.com/cws/share?url={{ this_url }}&amp;original_referer={{ this_url }}">Share on LinkedIn</a></p>
-	<p class="google_plus"><a href="https://plus.google.com/share?url={{ this_url }}">Share on Google+</a></p>
+<div class="post__sharing">
+	<p>If you liked this post, please consider sharing it with others:
+		<a href="https://twitter.com/intent/tweet?original_referer={{ this_url }}&amp;source=tweetbutton&amp;text={{ page.title | replace: ' ', '+' }}&amp;url={{ this_url }}">Share on Twitter</a>
+		<a href="http://www.facebook.com/sharer.php?u={{ this_url }}">Post on Facebook</a>
+		<a href="https://www.linkedin.com/cws/share?url={{ this_url }}&amp;original_referer={{ this_url }}">Share on LinkedIn</a>
+		<a href="https://plus.google.com/share?url={{ this_url }}">Share on Google+</a>
+	</p>
 </div>

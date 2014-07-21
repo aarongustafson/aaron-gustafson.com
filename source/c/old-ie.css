@@ -107,7 +107,7 @@ table.striped tbody tr:hover {
 }
 table.striped th,
 table.striped td {
-  border: 1px solid #2c2825;
+  border: 1px solid #cccccc;
   padding: 15px;
   padding: 0.9375rem;
 }

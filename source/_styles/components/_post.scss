@@ -1,0 +1,20 @@
+/*------------------------------------*\
+    Post
+\*------------------------------------*/
+
+@include breakup-breakpoint( "default" ) {
+
+    .post {
+
+        &__meta {
+            color: $color-grey;
+        }
+        
+        &__footer {
+            border-top: 1px solid $color-rule;
+            @include rem( padding-top, $default-spacing );
+        }
+
+    }
+    
+}

@@ -1,8 +1,7 @@
 {% capture category %}{% if post %}{{ post.categories | category_links | size }}{% else %}{{ page.categories | category_links | size }}{% endif %}{% endcapture %}
 
 {% unless category == '0' %}
-	Posted in
-	<span class="categories">
+	<span class="post__categories">
 		{% if post %}
 			{{ post.categories | category_links }}
 		{% else %}

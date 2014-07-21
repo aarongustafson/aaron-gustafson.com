@@ -91,15 +91,19 @@ $table-spacing: 15;
 // Color Names
 $color-black: #2c2825;
 $color-white: #fff;
+$color-grey: #666;
 $color-grey-light: #ccc;
+$color-green: #34AD23;
+$color-green-dark: darken( $color-green, 10% );
 
 // Functional Colors
 $color-background: $color-white;
 $color-text: $color-black;
-$color-link: $color-black;
-$color-link-hover: $color-black;
-$color-border: $color-black;
-$color-rule: $color-black;
+$color-text-light: $color-grey-light;
+$color-link: $color-green;
+$color-link-hover: $color-green-dark;
+$color-border: $color-grey-light;
+$color-rule: $color-grey-light;
 
 /*	Images
 	========================================================================== */

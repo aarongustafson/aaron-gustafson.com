@@ -5,23 +5,32 @@ single: true
 
 {% include article.html %}
 
-<footer>
+<footer class="post__footer">
+
 	<p class="post__meta">
+		This post <b class="hidden">is by <a class="post__author" href="/about">Aaron Gustafson</a> and</b> was filed under:
 		{% include post/categories.html %}
-	</p>
 	
+		{% if page.canonical and page.canonical_site %}
+			| <b class="post__canonical">It originally appeared on <a href="{{ page.canonical }}">{{ page.canonical_site }}</a>.
+		{% endif %}
+	</p>
+
     {% unless page.sharing == false %}
 		{% include post/sharing.html %}
     {% endunless %}
-    
-	<p class="pagination">
-		{% if page.previous.url %}
-			<a class="pagination__link pagination__link--prev" href="{{ page.previous.url }}"><b class="hidden">Previous Post: </b>{{ page.previous.title }}</a>
-      	{% endif %}
-		{% if page.next.url %}
-			<a class="pagination__link pagination__link--next" href="{{page.next.url}}"><b class="hidden">Next Post: </b>{{ page.next.title }}</a>
-		{% endif %}
-	</p>
+
+	<div class="pagination">
+		<p>Looking for something else to read?</p>
+		<ol class="pagination__list">
+			{% if page.previous.url %}
+				<li><a class="pagination__link pagination__link--prev" href="{{ page.previous.url }}"><b class="hidden">Previous Post: </b>{{ page.previous.title }}</a></li>
+      		{% endif %}
+			{% if page.next.url %}
+				<li><a class="pagination__link pagination__link--next" href="{{page.next.url}}"><b class="hidden">Next Post: </b>{{ page.next.title }}</a></li>
+			{% endif %}
+		</ol>
+	</div>
 	
 </footer>
 
