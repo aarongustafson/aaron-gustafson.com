@@ -16,8 +16,8 @@
 
 
 
-<title>Searching for the “Right Size” Aaron Gustafson</title>
-<meta property="og:title" content="Searching for the “Right Size” Aaron Gustafson">
+<title>The Network Effect Aaron Gustafson</title>
+<meta property="og:title" content="The Network Effect Aaron Gustafson">
 
 <meta name="author" content="Aaron Gustafson">
 <meta property="og:type" content="website">
@@ -27,8 +27,8 @@
 
 <link href="https://plus.google.com/+AaronGustafson?rel=author" rel="publisher" />
 
-<link rel="canonical" href="http://aaron-gustafson.com/notebook/2014/searching-for-the-right-size/">
-<meta property="og:url" content="http://aaron-gustafson.com/notebook/2014/searching-for-the-right-size/">
+<link rel="canonical" href="http://aaron-gustafson.com/notebook/2014/comcast-is-hacking-your-page/">
+<meta property="og:url" content="http://aaron-gustafson.com/notebook/2014/comcast-is-hacking-your-page/">
 
 <meta property="og:description" content="Hi there. My name is Aaron Gustafson and I work on the web.">
 <meta name="description" content="Hi there. My name is Aaron Gustafson and I work on the web.">
@@ -111,7 +111,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 			
 	<header class="post__header">
     	
-      		<h1 class="post__title entry-title">Searching for the “Right Size”</h1>
+      		<h1 class="post__title entry-title">The Network Effect</h1>
     	
     	
 		
@@ -131,10 +131,10 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 
 	
-<time datetime="2014-07-10T20:38:16-04:00"  data-updated="true">10 July 2014
+<time datetime="2014-09-08T16:40:44-04:00"  data-updated="true">08 September 2014
 		</time>
         		
-				| You can read this in about less than 1 minute
+				| You can read this in about 2 minutes
 				
 				
 					| <a href="#disqus_thread" data-disqus-identifier="http://aaron-gustafson.com">Comments</a>
@@ -148,11 +148,31 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 
 	<div class="entry__content">
-		<p>This <a href="http://www.wired.com/2014/07/what-a-stalling-tablet-market-says-about-our-search-for-the-perfect-screen/">recent piece from <cite>Wired</cite></a> attributes dwindling tablet sales to cannibalization from larger mobile phones (<abbr title="also known as">aka</abbr> “phablets”) which are nearly as big as 7-8˝ tablets:</p>
+		<p><cite>Ars Technica</cite> revealed today that <a href="http://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/">Comcast is injecting self-promotional advertising into web pages delivered via it’s Wi-Fi hotspots</a>:</p>
 
-<blockquote><p>Aside from the ability to make a phone call, the difference between a phone and a tablet comes down to 1.5 inches or less. … But the real issue is device makers are running out of good arguments for why these ever more subtle size gradations matter. After a point, the differences come down to personal preference rather than any meaningful new use case. As phones and tablets converge into this tight window, slightly bigger phones could accelerate the decline in tablet demand.</p></blockquote>
+<blockquote cite="http://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/">
+    <p>A Comcast spokesman told Ars the program began months ago. One facet of it is designed to alert consumers that they are connected to Comcast&#8217;s Xfinity service. Other ads remind Web surfers to download Xfinity apps, Comcast spokesman Charlie Douglas told Ars in telephone interviews.</p>
+</blockquote>
 
-<p>Personally, I’m not sure it matters. We’re in the midst of one big experiment being run by the device manufacturers. We’re in the scattershot. The industry is feeling out the &ldquo;right&rdquo; screen size (or sizes) that most people want to use and we are (in large part) footing the bill.</p>
+
+<p>I wish I could say this is surprising, but it’s not: Any service that routes your content has the opportunity to modify the response being returned. Comcast is exploiting that opportunity and injecting JavaScript that, in turn, injects the ads.</p>
+
+<p>The fact that middlemen can manipulate server responses is one reason <a href="https://www.youtube.com/watch?v=cBhZ6S0PFCY">Google is pushing for all sites to be served under HTTPS</a>. With traffic running to and from your server in an encrypted fashion, <a href="http://en.wikipedia.org/wiki/Man-in-the-middle_attack">man-in-the-middle attacks</a>—which, if we’re honest, is what this amounts to—become much more difficult.</p>
+
+<p>Assuming you can’t run under HTTPS for one reason or another, how do you harden your <a href="https://adactio.com/journal/6246">web thang</a> against 3rd party manipulation you can’t control? What if Comcast’s JavaScript interferes with your own? Remember when <a href="http://www.theguardian.com/technology/2014/jan/28/sky-broadband-blocks-jquery-web-critical-plugin">Sky blocked jQuery for all of their customers</a>? That was a bad couple of hours for most UK-based internet users.</p>
+
+<p>Comcast’s move only serves to remind us—yet again—that we don’t control how our sites are delivered or what our users see. Or rather we do, but only up to a point. So rather than focus on some ideal experience we expect everyone to have, we must focus on building great experiences that work in a variety of contexts and situations.</p>
+
+<p>We need to develop <a href="http://en.wikipedia.org/wiki/Demolition_derby#Vehicles">the 1964 Chrysler Imperial</a> of websites: Sites that soldier on even when they are getting pummeled from all sides. After all, browsers, plug-ins, users, networks, and, yes, even the very routers that deliver our connections all have a say in how (and what) content gets to our users.</p>
+
+<p>I’ll leave you with this scary quote from the <cite>Ars</cite> piece:</p>
+
+<blockquote cite="http://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/">
+    <p>Security expert Dan Kaminsky said in an e-mail that JavaScript injection has the potential to break “all sorts of stuff, in that you no longer know as a website developer precisely what code is running in browsers out there. You didn&#8217;t send it, but your customers received it.”</p>
+</blockquote>
+
+
+<p>Hooray!</p>
 
 	</div>
 	
@@ -167,7 +187,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 	<span class="post__categories">
 		
-			<a class='category' href='//notebook/tags/mobile/'>mobile</a>, <a class='category' href='//notebook/tags/screens/'>screens</a>
+			<a class='category' href='//notebook/tags/javascript/'>javascript</a>, <a class='category' href='//notebook/tags/web-design/'>web design</a>
 		
 	</span>
 
@@ -181,10 +201,10 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 
 <div class="post__sharing">
 	<p>If you liked this post, please consider sharing it with others:
-		<a href="https://twitter.com/intent/tweet?original_referer=http://aaron-gustafson.com/notebook/2014/searching-for-the-right-size/&amp;source=tweetbutton&amp;text=Searching+for+the+“Right+Size”&amp;url=http://aaron-gustafson.com/notebook/2014/searching-for-the-right-size/">Share on Twitter</a>
-		<a href="http://www.facebook.com/sharer.php?u=http://aaron-gustafson.com/notebook/2014/searching-for-the-right-size/">Post on Facebook</a>
-		<a href="https://www.linkedin.com/cws/share?url=http://aaron-gustafson.com/notebook/2014/searching-for-the-right-size/&amp;original_referer=http://aaron-gustafson.com/notebook/2014/searching-for-the-right-size/">Share on LinkedIn</a>
-		<a href="https://plus.google.com/share?url=http://aaron-gustafson.com/notebook/2014/searching-for-the-right-size/">Share on Google+</a>
+		<a href="https://twitter.com/intent/tweet?original_referer=http://aaron-gustafson.com/notebook/2014/comcast-is-hacking-your-page/&amp;source=tweetbutton&amp;text=The+Network+Effect&amp;url=http://aaron-gustafson.com/notebook/2014/comcast-is-hacking-your-page/">Share on Twitter</a>
+		<a href="http://www.facebook.com/sharer.php?u=http://aaron-gustafson.com/notebook/2014/comcast-is-hacking-your-page/">Post on Facebook</a>
+		<a href="https://www.linkedin.com/cws/share?url=http://aaron-gustafson.com/notebook/2014/comcast-is-hacking-your-page/&amp;original_referer=http://aaron-gustafson.com/notebook/2014/comcast-is-hacking-your-page/">Share on LinkedIn</a>
+		<a href="https://plus.google.com/share?url=http://aaron-gustafson.com/notebook/2014/comcast-is-hacking-your-page/">Share on Google+</a>
 	</p>
 </div>
     
@@ -193,10 +213,8 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 		<p>Looking for something else to read?</p>
 		<ol class="pagination__list">
 			
-				<li><a class="pagination__link pagination__link--prev" href="/notebook/2014/a-grand-experiment/"><b class="hidden">Previous Post: </b>A Grand Experiment</a></li>
+				<li><a class="pagination__link pagination__link--prev" href="/notebook/2014/native-vs-stylable-tug-of-war/"><b class="hidden">Previous Post: </b>The “Native” vs. “Stylable” Tug of War</a></li>
       		
-			
-				<li><a class="pagination__link pagination__link--next" href="/notebook/2014/native-vs-stylable-tug-of-war/"><b class="hidden">Next Post: </b>The “Native” vs. “Stylable” Tug of War</a></li>
 			
 		</ol>
 	</div>
@@ -380,7 +398,7 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 		<footer role="contentinfo" class="footer">
 	
 	
-		<p class="footer__fork-me">Did you spot a typo or error? Eesh. <a href="https://github.com/aarongustafson/aarongustafson.github.io/tree/source/source/_posts/2014-07-10-searching-for-the-right-size.markdown">Would you mind fixing it for me?</a> You’re so awesome.</p>
+		<p class="footer__fork-me">Did you spot a typo or error? Eesh. <a href="https://github.com/aarongustafson/aarongustafson.github.io/tree/source/source/_posts/2014-09-08-comcast-is-hacking-your-page.markdown">Would you mind fixing it for me?</a> You’re so awesome.</p>
 	
 	
 	<p class="footer__copyright"><b id="license">The content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a>.</b> <b>The site itself is powered by <a href="http://octopress.org">Octopress</a> and is <a href="https://github.com/aarongustafson/aarongustafson.github.io/">forkable on Github</a>.</b></p>
@@ -395,8 +413,8 @@ window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!(!t.document.cr
 		
 			
 			// disqus_developer = 1,
-			disqus_identifier = 'http://aaron-gustafson.com/notebook/2014/searching-for-the-right-size/',
-			disqus_url = 'http://aaron-gustafson.com/notebook/2014/searching-for-the-right-size/',
+			disqus_identifier = 'http://aaron-gustafson.com/notebook/2014/comcast-is-hacking-your-page/',
+			disqus_url = 'http://aaron-gustafson.com/notebook/2014/comcast-is-hacking-your-page/',
 			disqus_script = 'embed.js';
 		
 		(function () {
