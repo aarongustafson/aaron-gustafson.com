@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Javascript | Aaron Gustafson]]></title>
   <link href="http://aaron-gustafson.com//notebook/tags/javascript/atom.xml" rel="self"/>
   <link href="http://aaron-gustafson.com/"/>
-  <updated>2014-09-08T19:59:20-04:00</updated>
+  <updated>2014-09-08T20:00:11-04:00</updated>
   <id>http://aaron-gustafson.com/</id>
   <author>
     <name><![CDATA[Aaron Gustafson]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[The Network Effect]]></title>
-    <link href="http://aaron-gustafson.com/notebook/2014/comcast-is-hacking-your-page/"/>
+    <link href="http://aaron-gustafson.com/notebook/2014/the-network-effect/"/>
     <updated>2014-09-08T16:40:44-04:00</updated>
-    <id>http://aaron-gustafson.com/notebook/2014/comcast-is-hacking-your-page</id>
+    <id>http://aaron-gustafson.com/notebook/2014/the-network-effect</id>
     <content type="html"><![CDATA[<p><cite>Ars Technica</cite> revealed today that <a href="http://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/">Comcast is injecting self-promotional advertising into web pages delivered via it’s Wi-Fi hotspots</a>:</p>
 
 <blockquote cite="http://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/">
