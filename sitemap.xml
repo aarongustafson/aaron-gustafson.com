@@ -3,6 +3,12 @@
   
   
   <url>
+    <loc>http://aaron-gustafson.com/notebook/2014/a-fundamental-disconnect/</loc>
+    <lastmod>2014-09-13T15:01:58-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
     <loc>http://aaron-gustafson.com/notebook/2014/the-network-effect/</loc>
     <lastmod>2014-09-08T16:40:44-04:00</lastmod>
     <priority>0.8</priority>
@@ -29,56 +35,56 @@
   
   <url>
     <loc>http://aaron-gustafson.com/articles/</loc>
-    <lastmod>2014-09-12T11:05:33-04:00</lastmod>
+    <lastmod>2014-09-13T15:52:15-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://aaron-gustafson.com/books/</loc>
-    <lastmod>2014-09-12T11:05:33-04:00</lastmod>
+    <lastmod>2014-09-13T15:52:15-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://aaron-gustafson.com/appearances/</loc>
-    <lastmod>2014-09-12T11:05:33-04:00</lastmod>
+    <lastmod>2014-09-13T15:52:15-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://aaron-gustafson.com/events/</loc>
-    <lastmod>2014-09-12T11:05:33-04:00</lastmod>
+    <lastmod>2014-09-13T15:52:15-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://aaron-gustafson.com/</loc>
-    <lastmod>2014-09-12T11:05:33-04:00</lastmod>
+    <lastmod>2014-09-13T15:52:15-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
   <url>
     <loc>http://aaron-gustafson.com/contact/</loc>
-    <lastmod>2014-09-12T11:05:33-04:00</lastmod>
+    <lastmod>2014-09-13T15:52:15-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://aaron-gustafson.com/notebook/</loc>
-    <lastmod>2014-09-12T11:05:33-04:00</lastmod>
+    <lastmod>2014-09-13T15:52:15-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>http://aaron-gustafson.com/about/</loc>
-    <lastmod>2014-09-12T11:05:33-04:00</lastmod>
+    <lastmod>2014-09-13T15:52:15-04:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
