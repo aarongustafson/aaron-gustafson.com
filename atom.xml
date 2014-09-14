@@ -3,7 +3,7 @@
 	<title><![CDATA[Aaron Gustafson]]></title>
 	<link href="http://aaron-gustafson.com/atom.xml" rel="self"/>
 	<link href="http://aaron-gustafson.com/"/>
-	<updated>2014-09-14T07:53:42-04:00</updated>
+	<updated>2014-09-14T11:09:54-04:00</updated>
 	<id>http://aaron-gustafson.com/</id>
 	<author>
 		<name><![CDATA[Aaron Gustafson]]></name>
@@ -25,31 +25,31 @@
 
 <p>Most of these developers first began taking JavaScript seriously in the mid ’00s when Ajax became popular. And with the rise of JavaScript MVC frameworks and their ilk—Angular, Ember, etc.—many of these developers made their way onto the Web. I would argue that this, overall, is a good thing: We need more people working on the Web to make it better.</p>
 
-<p>The one problem I’ve seen, however, is the fundamental disconnect many of these developers seem to have with the way deploying code on the Web works. In traditional software development, you have some say in the execution environment. On the Web, you don’t.</p>
+<p>The one problem I’ve seen, however, is the fundamental disconnect many of these developers seem to have with the way deploying code on the Web works. In traditional software development, we have some say in the execution environment. On the Web, we don’t.</p>
 
 <p>I’ll explain.</p>
 
-<p>If you’re writing server-side software in Python or Rails or even PHP, one of two things is true:</p>
+<p>If we’re writing server-side software in Python or Rails or even PHP, one of two things is true:</p>
 
 <ol>
-<li>You control the server environment: operating system, language versions, packages, etc.; or</li>
-<li>You don’t control the server environment, but you have knowledge of it and can author your program accordingly so it will execute as anticipated.</li>
+<li>We control the server environment: operating system, language versions, packages, etc.; or</li>
+<li>We don’t control the server environment, but we have knowledge of it and can author your program accordingly so it will execute as anticipated.</li>
 </ol>
 
 
-<p>If you come from the more traditional installed software world, you can similarly control the environment by placing certain restrictions on what operating systems your code can run on and what the dependencies for its use may be in terms of hard drive space and RAM required. You provide that information up front and users can choose to use your software or use a competing product based on what will work for them.</p>
+<p>In the more traditional installed software world, we can similarly control the environment by placing certain restrictions on what operating systems our code can run on and what the dependencies for its use may be in terms of hard drive space and RAM required. We provide that information up front and users can choose to use our software or use a competing product based on what will work for them.</p>
 
-<p>On the Web, however, neither of these is the case. The Web is ubiquitous. The Web is messy. And, as much as we might like to control a user’s experience down to the very pixel, those of us who have been working on the Web for a while understand that it’s a fool’s errand and <a href="http://dowebsitesneedtolookexactlythesameineverybrowser.com/">have adjusted our expectations accordingly</a>. This new crop of Web developers doesn’t seem to have gotten that memo.</p>
+<p>On the Web, however, all bets are off. The Web is ubiquitous. The Web is messy. And, as much as we might like to control a user’s experience down to the very pixel, those of us who have been working on the Web for a while understand that it’s a fool’s errand and <a href="http://dowebsitesneedtolookexactlythesameineverybrowser.com/">have adjusted our expectations accordingly</a>. Unfortunately, this new crop of Web developers doesn’t seem to have gotten that memo.</p>
 
-<p>We do not control the environment executing our JavaScript code, interpreting our HTML, or applying our CSS. Our users control the device (and, thereby, it’s processor speed, RAM, etc.). Our users choose the operating system. Our users pick the browser and which version they use. Our users can decide which add-ons they put in the browser. Our users can shrink or enlarge the fonts used to display our Web pages and apps. And the Internet providers that sit between us and our users dictate the network speed, latency, and ultimately control how—and what part—of our content makes it to our users.</p>
+<p>We do not control the environment executing our JavaScript code, interpreting our HTML, or applying our CSS. Our users control the device (and, thereby, it’s processor speed, RAM, etc.). Our users choose the operating system. Our users pick the browser and which version they use. Our users can decide which add-ons they put in the browser. Our users can shrink or enlarge the fonts used to display our Web pages and apps. And the Internet providers that sit between us and our users, dictating the network speed, latency, and ultimately <a href="http://aaron-gustafson.com/notebook/2014/the-network-effect/">controlling how—and what part of—our content makes it to our users</a>.</p>
 
-<p>All we can do is author a compelling, robust experience and hope for the best.</p>
+<p>All we can do is author an compelling, adaptive experience, cross our fingers, and hope for the best.</p>
 
-<p>The fundamental problem with viewing JavaScript as the new VM is that it creates the illusion of control. Sure, if you are building an internal Web app, you might be able to dictate the OS/browser combination for all of your users and lock down their machines to prevent them from modifying those settings, but that’s not the reality on the open Web.</p>
+<p>The fundamental problem with viewing JavaScript as the new VM is that it creates the illusion of control. Sure, if we are building an internal Web app, we might be able to dictate the OS/browser combination for all of our users and lock down their machines to prevent them from modifying those settings, but that’s not the reality on the open Web.</p>
 
-<p>The fact is that you can’t absolutely rely on the availability of any specific technology when it comes to delivering a Web experience. Instead, we must look at <em>how</em> we construct that experience and make smarter decisions about how we use specific technologies in order to take advantage of their benefits while simultaneously understanding that they’re availability is not guaranteed. This is why progressive enhancement is such a useful philosophy.</p>
+<p>The fact is that we can’t absolutely rely on the availability of any specific technology when it comes to delivering a Web experience. Instead, we must look at <em>how</em> we construct that experience and make smarter decisions about how we use specific technologies in order to take advantage of their benefits while simultaneously understanding that they’re availability is not guaranteed. This is why progressive enhancement is such a useful philosophy.</p>
 
-<p>The history of the Web is littered with JavaScript disaster stories. That doesn’t mean you shouldn’t use JavaScript or that it’s inherently bad. It simply means we need to be smarter about our approach to JavaScript and build robust experiences that allow users to do what they need to do even quickly an easily even if our carefully-crafted, incredibly well-designed JavaScript-driven interface won’t run.</p>
+<p>The history of the Web is littered with JavaScript disaster stories. That doesn’t mean we shouldn’t use JavaScript or that it’s inherently bad. It simply means we need to be smarter about our approach to JavaScript and build robust experiences that allow users to do what they need to do even quickly an easily even if our carefully-crafted, incredibly well-designed JavaScript-driven interface won’t run.</p>
 ]]></content>
 		</entry>
 	
