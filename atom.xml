@@ -3,7 +3,7 @@
 	<title><![CDATA[Aaron Gustafson]]></title>
 	<link href="http://aaron-gustafson.com/atom.xml" rel="self"/>
 	<link href="http://aaron-gustafson.com/"/>
-	<updated>2014-09-19T16:39:33-04:00</updated>
+	<updated>2014-09-19T16:46:53-04:00</updated>
 	<id>http://aaron-gustafson.com/</id>
 	<author>
 		<name><![CDATA[Aaron Gustafson]]></name>
@@ -11,6 +11,15 @@
 	</author>
 	<generator uri="http://octopress.org/">Octopress</generator>
 
+	
+		<entry>
+			<title type="html"><![CDATA[Responsive Typography]]></title>
+			<link href="http://aaron-gustafson.com/notebook/2014/responsive-typography/"/>
+			<updated>2014-09-19T16:43:22-04:00</updated>
+			<id>http://aaron-gustafson.com/notebook/2014/responsive-typography</id>
+			<content type="html"><![CDATA[
+]]></content>
+		</entry>
 	
 		<entry>
 			<title type="html"><![CDATA[Missed Connections]]></title>
