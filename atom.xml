@@ -3,7 +3,7 @@
 	<title><![CDATA[Aaron Gustafson]]></title>
 	<link href="http://aaron-gustafson.com/atom.xml" rel="self"/>
 	<link href="http://aaron-gustafson.com/"/>
-	<updated>2014-09-19T16:15:36-04:00</updated>
+	<updated>2014-09-19T16:16:37-04:00</updated>
 	<id>http://aaron-gustafson.com/</id>
 	<author>
 		<name><![CDATA[Aaron Gustafson]]></name>
@@ -41,14 +41,7 @@
 
 <p>Here’s what he was reacting to:</p>
 
-<blockquote>
-    <p>If we’re writing server-side software in Python or Rails or even PHP, one of two things is true:</p>
-
-    <ol>
-        <li>We control the server environment: operating system, language versions, packages, etc.; or</li>
-        <li>We don’t control the server environment, but we have knowledge of it and can author your program accordingly so it will execute as anticipated.</li>
-    </ol>
-</blockquote>
+<blockquote><p>If we’re writing server-side software in Python or Rails or even PHP, one of two things is true:</p><ol><li>We control the server environment: operating system, language versions, packages, etc.; or</li><li>We don’t control the server environment, but we have knowledge of it and can author your program accordingly so it will execute as anticipated.</li></ol></blockquote>
 
 
 <p>In this passage, I was talking about software we write for ourselves, our companies, and our clients. In those cases we do—or at least we <em>should</em>—know the environment our code is running in and can customize our code or the server build if a particular package or feature is missing. In fact, this is such a consistent need that we now have umpteen tools that empower us make recipes of server requirements so we can quickly build, configure, and deploy servers right from the command line. I would never write server-side code for a client running Windows without testing it on a carbon-copy of their Windows server. That would be reckless and unprofessional.</p>
