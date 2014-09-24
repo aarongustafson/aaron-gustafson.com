@@ -9,10 +9,18 @@ sharing: false
 
 <div id="blog-archives">
 	{% for post in site.posts reverse %}
+
 		{% unless post.external-url %}
+
 			<article>
 	  			{% include archive_post.html %}
 			</article>
+
+			{% unless forloop.last %}
+				<hr>
+			{% endunless %}
+
 		{% endunless %}
+
 	{% endfor %}
 </div>

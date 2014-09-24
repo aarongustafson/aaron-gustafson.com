@@ -232,7 +232,7 @@ div.gsc-url-top {
     font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
-    letter-spacing: 2px \9;
+    letter-spacing: 2px 	;
     text-transform: uppercase;
     word-spacing: 1px;
   }
@@ -266,13 +266,13 @@ div.gsc-url-top {
     zoom: 1.0;
   }
   html {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(1px, #ff6ba6), color-stop(1px, transparent));
-    background: -webkit-linear-gradient(#ff6ba6 1px, transparent 1px);
-    background: linear-gradient(#ff6ba6 1px, transparent 1px);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1px, #FF6BA6), color-stop(1px, transparent));
+    background: -webkit-linear-gradient(#FF6BA6 1px, transparent 1px);
+    background: linear-gradient(#FF6BA6 1px, transparent 1px);
     background-size: 100% .75;
   }
   html body {
-    background: white;
+    background: #fff;
     color: #2c2825;
     font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 400;
@@ -281,6 +281,12 @@ div.gsc-url-top {
     margin: 0 auto;
     max-width: 960px;
     max-width: 60rem;
+  }
+}
+@media only screen and (min-width: 60em) {
+  [role=main] {
+    min-height: 400px;
+    min-height: 25rem;
   }
 }
 /*------------------------------------*\
@@ -318,21 +324,23 @@ div.gsc-url-top {
 \*------------------------------------*/
 @media screen {
   blockquote {
-    font-size: 24px;
-    font-size: 1.5rem;
+    font-size: 18px;
+    font-size: 1.125rem;
     font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
     font-style: italic;
-    text-indent: -8px;
-    text-indent: -0.5rem;
-    border-top: 1px solid #cccccc;
-    border-bottom: 1px solid #cccccc;
-    margin: 0 0 20px;
-    margin: 0 0 1.25rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+    margin: 1.25rem auto;
     padding: 20px;
     padding: 1.25rem;
+    max-width: 700px;
+    max-width: 43.75rem;
   }
-  blockquote > *:not([class]):before {
+  blockquote > :first-child:not([class]):before {
     content: "\201C";
+    margin-left: -8px;
+    margin-left: -0.5rem;
   }
   blockquote > :last-child {
     margin: 0;
@@ -359,10 +367,22 @@ div.gsc-url-top {
 
   hr {
     border: 0;
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid #ccc;
     margin: 20px auto;
     margin: 1.25rem auto;
     max-width: 200px;
+  }
+}
+@media only screen and (min-width: 43.125em) {
+  blockquote {
+    padding: 20px 20px;
+    padding: 1.25rem 1.25rem;
+  }
+}
+@media only screen and (min-width: 60em) {
+  blockquote {
+    padding: 20px 40px;
+    padding: 1.25rem 2.5rem;
   }
 }
 /*------------------------------------*\
@@ -386,7 +406,7 @@ div.gsc-url-top {
 \*------------------------------------*/
 @media screen {
   a {
-    color: #34ad23;
+    color: #34AD23;
     border-bottom: 1px dotted;
     border-bottom-color: rgba(52, 173, 35, 0.25);
     cursor: pointer;
@@ -498,7 +518,7 @@ div.gsc-url-top {
     min-width: 100px;
   }
   table thead {
-    border-bottom: 3px solid #cccccc;
+    border-bottom: 3px solid #ccc;
     font-size: 12px;
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -516,7 +536,7 @@ div.gsc-url-top {
     font-size: 1.125rem;
   }
   table tr {
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid #ccc;
   }
   table td,
   table th {
@@ -567,7 +587,7 @@ div.gsc-url-top {
   }
   .layout-container__primary table th[data-title]:before,
   .layout-container__primary table td[data-title]:before {
-    content: attr(data-title) ":\00A0";
+    content: attr(data-title) ": ";
     font-weight: bold;
   }
   .layout-container__primary table th:not([data-title]) {
@@ -575,6 +595,32 @@ div.gsc-url-top {
   }
   .layout-container__primary table td:empty {
     display: none;
+  }
+}
+@media only screen and (min-width: 43.125em) {
+  table.striped {
+    background: #fff;
+  }
+  table.striped thead {
+    background: #ccc;
+    border-bottom: 0;
+  }
+  table.striped tbody tr {
+    background: #fff;
+    -webkit-transition: background-color 0.25s ease;
+    transition: background-color 0.25s ease;
+  }
+  table.striped tbody tr:nth-child(even) {
+    background: #413d3a;
+  }
+  table.striped tbody tr:hover {
+    background: #fff;
+  }
+  table.striped th,
+  table.striped td {
+    border: 1px solid #ccc;
+    padding: 15px;
+    padding: 0.9375rem;
   }
 }
 /*------------------------------------*\
@@ -602,7 +648,7 @@ div.gsc-url-top {
   .fields__group input,
   .fields__group select,
   .fields__group textarea {
-    color: #cccccc;
+    color: #ccc;
     font-size: 12px;
     font-size: 0.75rem;
     -webkit-box-sizing: border-box;
@@ -618,7 +664,7 @@ div.gsc-url-top {
   }
   .fields__group input,
   .fields__group textarea {
-    background: white;
+    background: #fff;
     color: #2c2825;
     display: block;
     width: 100%;
@@ -652,6 +698,16 @@ div.gsc-url-top {
     }
   }
 }
+@media only screen and (min-width: 43.125em) {
+  input,
+  textarea {
+    width: 80%;
+  }
+
+  .fields__note {
+    width: 80%;
+  }
+}
 /*------------------------------------*\
     Animations
 \*------------------------------------*/
@@ -669,7 +725,7 @@ div.gsc-url-top {
 
 .alert {
   background: #2c2825;
-  color: white;
+  color: #fff;
   margin: 0 0 20px;
   margin: 0 0 1.25rem;
   padding: 5px;
@@ -721,7 +777,7 @@ div.gsc-url-top {
     padding-bottom: 0;
   }
   .listing__item__meta {
-    color: #666666;
+    color: #666;
   }
   .listing__item :last-child {
     margin-bottom: 0;
@@ -733,10 +789,10 @@ div.gsc-url-top {
 \*------------------------------------*/
 @media screen {
   .post__meta {
-    color: #666666;
+    color: #666;
   }
   .post__footer {
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid #ccc;
     padding-top: 20px;
     padding-top: 1.25rem;
   }

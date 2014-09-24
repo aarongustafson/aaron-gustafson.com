@@ -47,6 +47,44 @@
 /*------------------------------------*\
     Body-level settings
 \*------------------------------------*/
+@-moz-viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+@-ms-viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+@-o-viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+@-webkit-viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+html {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1px, #FF6BA6), color-stop(1px, transparent));
+  background: -webkit-linear-gradient(#FF6BA6 1px, transparent 1px);
+  background: linear-gradient(#FF6BA6 1px, transparent 1px);
+  background-size: 100% .75;
+}
+html body {
+  background: #fff;
+  color: #2c2825;
+  font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
+  max-width: 960px;
+  max-width: 60rem;
+}
+
 [role=main] {
   min-height: 400px;
   min-height: 25rem;
@@ -55,19 +93,91 @@
 /*------------------------------------*\
     Heading Levels
 \*------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "quatro-slab", Georgia, serif;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+}
+.wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6 {
+  word-spacing: 2px;
+}
+
+h1 {
+  font-size: 32px;
+  font-size: 2rem;
+}
+
+section > h1,
+h2 {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+
 /*------------------------------------*\
     Block-level Semantics
 \*------------------------------------*/
 blockquote {
-  margin: 20px;
-  margin: 1.25rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
+  font-style: italic;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+  margin: 1.25rem auto;
+  padding: 20px;
+  padding: 1.25rem;
+  max-width: 700px;
+  max-width: 43.75rem;
+}
+blockquote > :first-child:not([class]):before {
+  content: "\201C";
+  margin-left: -8px;
+  margin-left: -0.5rem;
+}
+blockquote > :last-child {
+  margin: 0;
+}
+
+.blockquote__attribution {
+  font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
+  margin: 0;
+  padding-left: 40px;
+  padding-left: 2.5rem;
+}
+.blockquote__attribution cite {
+  font-style: normal;
+}
+
+p {
+  margin: 0 0 20px;
+  margin: 0 0 1.25rem;
+}
+
+[aria-hidden="true"] {
+  display: none;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 20px auto;
+  margin: 1.25rem auto;
+  max-width: 200px;
+}
+
+blockquote {
   padding: 20px 20px;
   padding: 1.25rem 1.25rem;
 }
 
 blockquote {
-  margin: 20px;
-  margin: 1.25rem;
   padding: 20px 40px;
   padding: 1.25rem 2.5rem;
 }
@@ -75,27 +185,181 @@ blockquote {
 /*------------------------------------*\
     Lists
 \*------------------------------------*/
+ol,
+ul {
+  line-height: 1.4;
+  margin: 0 20px 20px;
+  margin: 0 1.25rem 1.25rem;
+}
+
+dl dt,
+dl dd {
+  font-weight: normal;
+}
+
 /*------------------------------------*\
     Links
 \*------------------------------------*/
+a {
+  color: #34AD23;
+  border-bottom: 1px dotted;
+  border-bottom-color: rgba(52, 173, 35, 0.25);
+  cursor: pointer;
+  -webkit-transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+a, a:link, a:visited {
+  text-decoration: none;
+}
+a:hover, a:focus, a:active {
+  color: #27831a;
+  border-bottom-color: #27831a;
+}
+a[href^=mailto], a[href^=tel] {
+  white-space: nowrap;
+}
+a.email, a.tel {
+  white-space: nowrap;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  border-bottom-width: 0;
+}
+h1 a:hover, h1 a:focus, h1 a:active, h2 a:hover, h2 a:focus, h2 a:active, h3 a:hover, h3 a:focus, h3 a:active, h4 a:hover, h4 a:focus, h4 a:active, h5 a:hover, h5 a:focus, h5 a:active, h6 a:hover, h6 a:focus, h6 a:active {
+  border-bottom-width: 1px;
+}
+
 /*------------------------------------*\
     Text-level semantics
 \*------------------------------------*/
+abbr {
+  cursor: help;
+  border: 0;
+}
+abbr[title] {
+  border: 0;
+}
+
+mark {
+  background: transparent;
+  color: #2c2825;
+  color: inherit;
+  font-weight: normal;
+  font-weight: inherit;
+  font-style: normal;
+  font-style: inherit;
+}
+
+b {
+  font-weight: inherit;
+}
+
+i {
+  font-style: inherit;
+}
+
+sub, sup {
+  font-size: 10px;
+  font-size: 0.625rem;
+  font-style: inherit;
+  font-weight: inherit;
+  position: relative;
+}
+
+sub {
+  bottom: -1em;
+}
+
+sup {
+  bottom: 1em;
+}
+
 /*------------------------------------*\
     Media Elements
 \*------------------------------------*/
+object[data*="svg"] {
+  pointer-events: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+img[style] {
+  width: 100% !important;
+  height: auto !important;
+}
+
+picture {
+  display: block;
+}
+
+.noscript-picture {
+  margin: 0;
+  padding: 0;
+}
+
 /*------------------------------------*\
     Tables
 \*------------------------------------*/
+table {
+  border-collapse: collapse;
+  margin: 0 0 20px;
+  margin: 0 0 1.25rem;
+  width: 100%;
+  min-width: 100px;
+}
+table thead {
+  border-bottom: 3px solid #ccc;
+  font-size: 12px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+table thead th {
+  font-weight: bold;
+}
+table thead th p {
+  font-weight: bold;
+  display: inline;
+  margin: 0;
+}
+table tbody {
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+table tr {
+  border-top: 1px solid #ccc;
+}
+table td,
+table th {
+  font-weight: normal;
+  text-align: left;
+  padding: 15px;
+  padding: 0.9375rem;
+  padding-left: 0;
+}
+table td:last-child,
+table th:last-child {
+  padding-right: 0;
+}
+table td :last-child,
+table th :last-child {
+  margin-bottom: 0;
+}
+table td[colspan],
+table th[colspan] {
+  font-weight: bold;
+}
+
 table.striped {
-  background: white;
+  background: #fff;
 }
 table.striped thead {
-  background: #cccccc;
+  background: #ccc;
   border-bottom: 0;
 }
 table.striped tbody tr {
-  background: white;
+  background: #fff;
   -webkit-transition: background-color 0.25s ease;
   transition: background-color 0.25s ease;
 }
@@ -103,11 +367,11 @@ table.striped tbody tr:nth-child(even) {
   background: #413d3a;
 }
 table.striped tbody tr:hover {
-  background: white;
+  background: #fff;
 }
 table.striped th,
 table.striped td {
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   padding: 15px;
   padding: 0.9375rem;
 }
@@ -115,6 +379,76 @@ table.striped td {
 /*------------------------------------*\
     Form Styles
 \*------------------------------------*/
+form {
+  margin: 0 0 20px;
+  margin: 0 0 1.25rem;
+}
+
+.fields__group {
+  margin: 0 0 20px;
+  margin: 0 0 1.25rem;
+}
+.fields__group:last-child {
+  margin: 0;
+}
+.fields__group label {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  display: block;
+}
+.fields__group input,
+.fields__group select,
+.fields__group textarea {
+  color: #ccc;
+  font-size: 12px;
+  font-size: 0.75rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid;
+  margin: 5px 0;
+  margin: 0.3125rem 0;
+  padding: 5px;
+  padding: 0.3125rem;
+  -webkit-transition: background-color 0.25s ease, color 0.25s ease;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+.fields__group input,
+.fields__group textarea {
+  background: #fff;
+  color: #2c2825;
+  display: block;
+  width: 100%;
+}
+.fields__group input[type=search] {
+  -webkit-appearance: textfield;
+}
+.fields__group select {
+  font-size: 18px;
+  font-size: 1.125rem;
+  max-width: 100%;
+}
+.fields__group__note {
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+.fields__required {
+  color: #f00;
+  font-weight: normal;
+}
+.fields .validation-error input,
+.fields .validation-error select,
+.fields .validation-error textarea {
+  color: #f00;
+}
+
+@-moz-document url-prefix() {
+  .fields select {
+    font-size: 12px;
+    font-size: 0.75rem;
+  }
+}
 input,
 textarea {
   width: 80%;

@@ -1,7 +1,25 @@
+- title: Episode 82: The Accessibility of Web Forms
+  outlet: Unmatched Style Podcast
+  date: 2014-09-09 00:00:00 +0000
+  url: http://unmatchedstyle.com/news/aaron-gustafson-interview-the-accessibility-of-web-forms.php
+  description: Giovanni DiFeterici & I discuss the accessibility of web forms and how we, as designers, can change the way things are done to create better experiences for our users.
+
+- title: Episode 18
+  outlet: RWD Podcast 
+  date: 2014-09-05 00:00:00 +0000
+  url: http://responsivedesign.is/articles/rwd-podcast-episode-18-aaron-gustafson
+  description: Justin Avery and I chat about responsive design, element queries, progressive enhancement and dumb JavaScript.
+
+- title: Adaptive Web Design
+  outlet: edUI Interview Series 
+  date: 2014-09-05 00:00:00 +0000
+  url: http://eduiconf.org/aaron-gustafson-adaptive-web-design/
+  description: From the vault, I sat down with the edUi folks to talk about what adaptive design is and why it’s important while I was at edUi 2013.
+
 - title: "Aaron Gustafson: The Interview"
   outlet: Net Magazine
   date: 2014-06-17 00:00:00 +0000
-  #url: 
+  url: http://www.creativebloq.com/netmag/aaron-gustafson-creating-accessible-mobile-web-81412687 
   description: To say I was floored that the venerable <cite>Net Magazine</cite> asked if I’be be the subject of their Interview spread would be the understatement of the century. I mean holy crap! It was an honor to be asked and I loved getting to wax philosophical about progressive enhancement, web standards, and the future of web design.
 
 - title: 15 Pro Techniques for Beating Creative Block

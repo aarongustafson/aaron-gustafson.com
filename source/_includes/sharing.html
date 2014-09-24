@@ -1,19 +1,17 @@
-{% capture title %}{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %} {% endif %}{{ site.title }}{% endcapture %}
+{% capture title %}{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}{% endif %}{% endcapture %}
 {% capture description %}{% if page.description %}{{ page.description | raw_content }}{% else %}{{ site.description | raw_content }}{% endif %}{% endcapture %}
 {% capture page_url %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
-{% capture canonical %}{% if page.canonical %}{{ page.canonical }}{% else %}{{ page_url }}{% endif %}{% endcapture %}
+
+<title>{{ title }}{% if page.url contains 'notebook/2' %}, From the Notebook of{% endif %} {{ site.title }}</title>
+<meta property="og:title" content="{{ title }}">
+
+<meta property="og:url" content="{{ page_url }}">
 
 <meta name="author" content="{{ site.author }}">
-<meta property="og:title" content="{{ title }}">
 <meta property="og:type" content="{{ site.og.type }}">
 <meta property="og:site_name" content="{{ site.author }}">
 <meta property="og:image" content="{{ site.url }}{{ site.og.image }}">
 <meta property="og:locale" content="en_US">
-
-<link href="https://plus.google.com/+AaronGustafson" rel="publisher" />
-
-<link rel="canonical" href="{{ canonical }}">
-<meta property="og:url" content="{{ page_url }}">
 
 <meta property="og:description" content="{{ description | strip_html | condense_spaces | truncate:200 }}">
 <meta name="description" content="{{ description | strip_html | condense_spaces | truncate:200 }}">
@@ -27,3 +25,10 @@
 <meta name="revisit-after" content="7 days">
 <meta name="ROBOTS" content="index,follow">
 <meta name="robots" content="NOODP">
+
+<link href="https://plus.google.com/+AaronGustafson?rel=author" rel="publisher">
+<meta property="fb:admins" content="100002880350996" />
+
+{% if page.canonical %}
+	<link rel="canonical" href="{{ page.canonical }}">
+{% endif %}

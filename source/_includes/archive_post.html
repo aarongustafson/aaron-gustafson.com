@@ -1,8 +1,10 @@
 {% unless post.no_header %}
+	
 	<header class="post__header">
 		<h1 class="post__title entry-title"><a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h1>
     	
 		{% unless post.meta == false %}
+	
 			<p class="post__meta">
         		{% include post/date.html %}
         		
@@ -10,9 +12,13 @@
 					| <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">Comments</a>
         		{% endif %}
       		</p>
+
 			<p class="post__meta">You can read this in {{ post.content | reading_time_as_i }}</p>
-    	{% endunless %}
+    
+		{% endunless %}
+
   	</header>
+
 {% endunless %}
 
 {% if index %}
