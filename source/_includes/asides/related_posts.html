@@ -1,0 +1,16 @@
+{% unless page.show_posts == false %}
+	{% for post in site.related_posts %}
+		{% if forloop.first == true %}
+			<section>
+				<p>Looking for something else to read? These entries may be related in some way:</p>
+				<ul class="related_posts">
+		{% endif %}
+
+		<li class="related_posts__post"><a href="{{ post.url }}">{{ post.title }}</a></li>
+			
+		{% if forloop.last == true %}
+		  		</ul>
+			</section>
+		{% endif %}
+	{% endfor %}
+{% endunless %}
