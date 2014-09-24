@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Blogging | Aaron Gustafson]]></title>
+  <link href="http://aaron-gustafson.com//notebook/tags/blogging/atom.xml" rel="self"/>
+  <link href="http://aaron-gustafson.com/"/>
+  <updated>2014-09-22T14:25:44-04:00</updated>
+  <id>http://aaron-gustafson.com/</id>
+  <author>
+    <name><![CDATA[Aaron Gustafson]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[A Grand Experiment]]></title>
+    <link href="http://aaron-gustafson.com/notebook/2014/a-grand-experiment/"/>
+    <updated>2014-07-07T20:46:48-04:00</updated>
+    <id>http://aaron-gustafson.com/notebook/2014/a-grand-experiment</id>
+    <content type="html"><![CDATA[<p>So, a mere three years after my old “life blog” stopped working, I decided to scrap it and start fresh.</p>
+
+<p>In my quest to learn something new (more on that in a forthcoming post), I decided to give <a href="http://octopress.org">Octopress</a> a whirl. We’ll see how it goes, but the content entry has gone well so far and the Octopress community has been pretty responsive to my requests. I just need to get used to the workflow.</p>
+
+<p>In the spirit of openness, I’ve decided to host the new site on <a href="http://github.com">Github</a> as a <a href="https://pages.github.com/">Github Page</a>. This frees me up from worrying about hosting fees of course, but it also means this site can serve as an educational tool for those inclined to dig in to the work I do and want some introspection into the way I do it. You can <a href="https://github.com/aarongustafson/aarongustafson.github.io/">view (and fork) the whole darn thing</a> at your leisure.</p>
+
+<p>Finally, I’m designing and building this site in the open and, for posterity, taking screen shot of the progress. The screenshots will go up in time as an animated GIF, but those of you who wish will be able to follow along at home or work, seeing how I typically piece together a site, layer by layer, using <a href="http://adaptivewebdesign.info">progressive enhancement</a>. So far it’s just the content, but that’s what I preach: content first.</p>
+
+<p>Now it’s time to get back to it. Feel free to reach out if you have any questions.</p>
+]]></content>
+  </entry>
+  
+</feed>

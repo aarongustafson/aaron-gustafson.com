@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+  <url>
+    <loc>http://aaron-gustafson.com/notebook/2014/responsive-typography/</loc>
+    <lastmod>2014-09-20T16:43:22-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aaron-gustafson.com/notebook/2014/missed-connections/</loc>
+    <lastmod>2014-09-19T16:12:50-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aaron-gustafson.com/notebook/2014/a-fundamental-disconnect/</loc>
+    <lastmod>2014-09-13T15:01:58-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aaron-gustafson.com/notebook/2014/the-network-effect/</loc>
+    <lastmod>2014-09-08T16:40:44-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aaron-gustafson.com/notebook/2014/native-vs-stylable-tug-of-war/</loc>
+    <lastmod>2014-07-17T08:21:47-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aaron-gustafson.com/notebook/2014/searching-for-the-right-size/</loc>
+    <lastmod>2014-07-10T20:38:16-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>http://aaron-gustafson.com/notebook/2014/a-grand-experiment/</loc>
+    <lastmod>2014-07-07T20:46:48-04:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  
+  
+  <url>
+    <loc>http://aaron-gustafson.com/articles/</loc>
+    <lastmod>2014-09-22T14:25:44-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://aaron-gustafson.com/books/</loc>
+    <lastmod>2014-09-22T14:25:44-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://aaron-gustafson.com/contact/</loc>
+    <lastmod>2014-09-22T14:25:44-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://aaron-gustafson.com/events/</loc>
+    <lastmod>2014-09-22T14:25:44-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://aaron-gustafson.com/</loc>
+    <lastmod>2014-09-22T14:25:44-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>http://aaron-gustafson.com/appearances/</loc>
+    <lastmod>2014-09-22T14:25:44-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://aaron-gustafson.com/notebook/</loc>
+    <lastmod>2014-09-22T14:25:44-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>http://aaron-gustafson.com/about/</loc>
+    <lastmod>2014-09-22T14:25:44-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  
+</urlset>
