@@ -3,7 +3,7 @@
 {% capture page_url %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
 
 <title>{{ title }}{% if page.url contains 'notebook/2' %}, From the Notebook of{% endif %} {{ site.title }}</title>
-<meta property="og:title" content="{{ title }}">
+<meta property="og:title" content="{{ title }}{% unless page.url contains 'notebook/2' %} {{ site.title }}{% endunless %}">
 
 <meta property="og:url" content="{{ page_url }}">
 
