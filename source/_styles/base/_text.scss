@@ -24,7 +24,18 @@
         font-style: normal;
         font-style: inherit;
     }
-
+    
+    // Code
+    code,
+    kbd {
+        background-color: $color-off-white;
+        border: 1px solid $color-grey-light;
+        border-radius: 3px;
+        color: $color-grey;
+        font-style: normal;
+        padding: .05em .25em;
+        white-space: nowrap;
+    }
 
     // Pseudo-semantics
     b {

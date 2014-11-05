@@ -6,6 +6,73 @@
     $VENDORS
 	Other people’s code
 \*------------------------------------*/
+.embed-video-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+.embed-video-container iframe, .embed-video-container object, .embed-video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-info {
+  font-size: 0.7em;
+  font-style: italic;
+}
+
+.ratio-16-9 {
+  padding-bottom: 56.25%;
+  /* 9/16*100 */
+}
+
+.ratio-4-3 {
+  padding-bottom: 75%;
+  /* 3/4*100 */
+}
+
+.ratio-1-1 {
+  padding-bottom: 100%;
+  /* ... */
+}
+
+a.youtube-lazy-link {
+  vertical-align: top;
+  background: #555;
+  text-decoration: none;
+  color: #DDD;
+  text-align: left;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  display: inline-block;
+}
+
+a.youtube-lazy-link:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.youtube-lazy-link-div {
+  width: 100%;
+  height: 100%;
+  background: url(http://lh4.googleusercontent.com/-QCeB6REIFlE/TuGUlY3N46I/AAAAAAAAAaI/9-urEUtpKcI/s800/youtube-play-button.png) center center no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.youtube-lazy-link-div:hover {
+  background: url(http://lh5.googleusercontent.com/-oBFjswrosz4/TuHqainRc3I/AAAAAAAAAbE/t3rMQuSJdLA/s800/youtube-play-button-hover.png) center center no-repeat;
+}
+
+.youtube-lazy-link-info {
+  position: absolute;
+  top: 0.6em;
+  left: 0.6em;
+}
+
 /**
  * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
  * Richard Clark (http://richclarkdesign.com)
@@ -455,6 +522,17 @@ div.gsc-url-top {
     font-style: inherit;
   }
 
+  code,
+  kbd {
+    background-color: #ebebeb;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #666;
+    font-style: normal;
+    padding: .05em .25em;
+    white-space: nowrap;
+  }
+
   b {
     font-weight: inherit;
   }
@@ -504,6 +582,11 @@ div.gsc-url-top {
   .noscript-picture {
     margin: 0;
     padding: 0;
+  }
+
+  .embed-video-container {
+    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
 }
 /*------------------------------------*\
@@ -805,4 +888,8 @@ div.gsc-url-top {
 }
 .gist table .line-numbers {
   width: 3em;
+}
+.gist table .line-numbers,
+.gist table .gist-meta {
+  speak: none;
 }

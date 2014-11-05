@@ -32,5 +32,9 @@
     	margin: 0;
     	padding: 0;
     }
+    
+    .embed-video-container {
+        @include rem( margin-bottom, $default-spacing );
+    }
 
 }

@@ -10,5 +10,11 @@
         .line-numbers {
             width: 3em;
         }
+        
+        .line-numbers,
+        .gist-meta {
+            speak: none;
+        }
     }
+    
 }
