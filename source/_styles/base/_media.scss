@@ -33,7 +33,9 @@
     	padding: 0;
     }
     
-    .embed-video-container {
+    .media-container {
+        max-width: 600px;
+        margin: auto;
         @include rem( margin-bottom, $default-spacing );
     }
 

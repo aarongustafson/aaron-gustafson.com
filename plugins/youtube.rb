@@ -93,11 +93,12 @@ class YouTube < Liquid::Tag
    # note: so special care is required to produce html code that will not be massage by the 
    #       markdown processor :
    #       extract from the markdown doc :  
-   #           'The only restrictions are that block-level HTML elements ¿ e.g. <div>, <table>, <pre>, <p>, etc. 
+   #           'The only restrictions are that block-level HTML elements Â¿ e.g. <div>, <table>, <pre>, <p>, etc. 
    #            must be separated from surrounding content by blank lines, and the start and end tags of the block
    #            should not be indented with tabs or spaces. '
    result = <<-EOF
 
+<figure id="fig-#{@id}" class="media-container media-container--youtube">
 <div class="ratio-4-3 embed-video-container" onclick="#{@onclick}" title="click here to play">
 <a class="youtube-lazy-link" style="#{@style}" href="http://www.youtube.com/watch?v=#{@id}" id="#{@id}" onclick="return false;">
 <div class="youtube-lazy-link-div"></div>
@@ -105,6 +106,7 @@ class YouTube < Liquid::Tag
 </a>
 <div class="video-info" >#{@description}</div>
 </div>
+</figure>
 
 EOF
   Cache[@id] = result
