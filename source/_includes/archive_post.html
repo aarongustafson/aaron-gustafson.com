@@ -37,7 +37,7 @@
 {% else %}
 
 	<div class="entry__content">
-		{{ post.content }}
+		{{ post.content | markdownify }}
 	</div>
 
 {% endif %}

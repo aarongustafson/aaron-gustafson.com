@@ -797,3 +797,12 @@ div.gsc-url-top {
     padding-top: 1.25rem;
   }
 }
+/*------------------------------------*\
+    Gist
+\*------------------------------------*/
+.gist table {
+  margin: 0;
+}
+.gist table .line-numbers {
+  width: 3em;
+}
