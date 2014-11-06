@@ -1,3 +1,11 @@
 /*------------------------------------*\
     Main
 \*------------------------------------*/
+
+@include breakup-breakpoint("default") {
+
+    main {
+        @include rem( padding, $default-spacing );
+    }
+   
+}

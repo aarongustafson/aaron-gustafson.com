@@ -15,23 +15,33 @@ sharing: false
 
 <h2 id="future-events">In the Future</h2>
 
-<ul class="listing listing--events">
-	{% for event in site.data.events-future %}
-		<li class="listing__item listing__item--{{ forloop.index }} event event--future">
-			<h3 class="listing__item__title event__title">
-				{% if event.url %}
-					<a href="{{ event.url }}">{{ event.title }}</a>
-				{% else %}
-					{{ event.title }}
-				{% endif %}
-			</h3>
-			<p class="listing__item__meta">
-				<b class="event__date">{{ event.date | date: "%B %Y" }}</b>
-				<b class="event__location">{{ event.location }}</b>
-			</p>
-		</li>
-	{% endfor %}
-</ul>
+{% unless site.data.events-future %}
+	{{ site.data.microcopy.events.no_upcoming | markdownify }}
+{% endunless %}
+
+{% for event in site.data.events-future %}
+	{% if forloop.first %}
+		<ul class="listing listing--events">
+	{% endif %}
+	
+	<li class="listing__item listing__item--{{ forloop.index }} event event--future">
+		<h3 class="listing__item__title event__title">
+			{% if event.url %}
+				<a href="{{ event.url }}">{{ event.title }}</a>
+			{% else %}
+				{{ event.title }}
+			{% endif %}
+		</h3>
+		<p class="listing__item__meta">
+			<b class="event__date">{{ event.date | date: "%B %Y" }}</b>
+			<b class="event__location">{{ event.location }}</b>
+		</p>
+	</li>
+
+	{% if forloop.last %}
+		</ul>
+	{% endif %}
+{% endfor %}
 
 <h2 id="past-events">In the Past</h2>
 

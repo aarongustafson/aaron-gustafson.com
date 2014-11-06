@@ -716,6 +716,13 @@ div.gsc-url-top {
     margin: 0 0 20px;
     margin: 0 0 1.25rem;
   }
+  form ul,
+  form ol {
+    list-style: none;
+  }
+  form li {
+    margin-bottom: .5em;
+  }
 
   .fields__group {
     margin: 0 0 20px;
@@ -803,42 +810,50 @@ div.gsc-url-top {
 /*------------------------------------*\
     Header
 \*------------------------------------*/
-.banner {
-  margin: 0 0 20px;
-  margin: 0 0 1.25rem;
-}
+@media screen {
+  .banner {
+    padding: 20px;
+    padding: 1.25rem;
+  }
 
-.alert {
-  background: #2c2825;
-  color: #fff;
-  margin: 0 0 20px;
-  margin: 0 0 1.25rem;
-  padding: 5px;
-  padding: 0.3125rem;
-  text-align: center;
+  .alert {
+    background: #2c2825;
+    color: #fff;
+    margin: 0 0 20px;
+    margin: 0 0 1.25rem;
+    padding: 5px;
+    padding: 0.3125rem;
+    text-align: center;
+  }
+  .alert a {
+    border-color: inherit;
+    color: inherit;
+  }
+  .alert strong {
+    font-weight: normal;
+  }
 }
-.alert a {
-  border-color: inherit;
-  color: inherit;
-}
-.alert strong {
-  font-weight: normal;
-}
-
 /*------------------------------------*\
     Main
 \*------------------------------------*/
+@media screen {
+  main {
+    padding: 20px;
+    padding: 1.25rem;
+  }
+}
 /*------------------------------------*\
     Footer
 \*------------------------------------*/
-.footer {
-  padding: 0 0 20px;
-  padding: 0 0 1.25rem;
+@media screen {
+  .footer {
+    padding: 20px;
+    padding: 1.25rem;
+  }
+  .footer p {
+    margin: 0;
+  }
 }
-.footer p {
-  margin: 0;
-}
-
 /*------------------------------------*\
     $COMPONENTS
 	Interface patterns

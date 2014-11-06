@@ -2,23 +2,27 @@
     Header
 \*------------------------------------*/
 
-.banner {
-    @include rem( margin, $margin-default );
-}
+@include breakup-breakpoint("default") {
 
-.alert {
-    background: $color-black;
-    color: $color-white;
-    
-    @include rem( margin, $margin-default );
-    @include rem( padding, 5 );
-    text-align: center;
-    
-    a {
-        border-color: inherit;
-        color: inherit;
+    .banner {
+        @include rem( padding, $default-spacing );
     }
-    strong {
-        font-weight: normal;
+
+    .alert {
+        background: $color-black;
+        color: $color-white;
+    
+        @include rem( margin, $margin-default );
+        @include rem( padding, 5 );
+        text-align: center;
+    
+        a {
+            border-color: inherit;
+            color: inherit;
+        }
+        strong {
+            font-weight: normal;
+        }
     }
+    
 }

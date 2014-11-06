@@ -6,6 +6,15 @@
 
 	form {
 	    @include rem( margin, $margin-default );
+	    
+	    ul,
+	    ol {
+	        list-style: none;
+	    }
+	    
+	    li {
+	        margin-bottom: .5em;
+	    }
 	}
 
 	.fields {

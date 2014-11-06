@@ -2,13 +2,16 @@
     Footer
 \*------------------------------------*/
 
-.footer {
-    
-    @include rem( padding, 0 0 $default-spacing );
-    
-    p {
-        margin: 0;
-    }
-    
-}
+@include breakup-breakpoint("default") {
 
+    .footer {
+
+        @include rem( padding, $default-spacing );
+
+        p {
+            margin: 0;
+        }
+
+    }
+
+}

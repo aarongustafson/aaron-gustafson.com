@@ -568,6 +568,13 @@ a.youtube-lazy-link:hover {
     margin: 0 0 20px;
     margin: 0 0 1.25rem;
   }
+  form ul,
+  form ol {
+    list-style: none;
+  }
+  form li {
+    margin-bottom: .5em;
+  }
 
   .fields__group {
     margin: 0 0 20px;
