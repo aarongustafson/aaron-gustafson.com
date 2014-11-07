@@ -765,3 +765,8 @@ a.youtube-lazy-link:hover {
 .gist table .gist-meta {
   speak: none;
 }
+.gist table,
+.gist tbody,
+.gist div.file-data {
+  font-size: 100%;
+}

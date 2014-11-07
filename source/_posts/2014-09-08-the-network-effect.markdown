@@ -15,6 +15,8 @@ categories: ["web design", JavaScript]
 	
 I wish I could say this is surprising, but it’s not: Any service that routes your content has the opportunity to modify the response being returned. Comcast is exploiting that opportunity and injecting JavaScript that, in turn, injects the ads.
 
+<!-- more -->
+
 The fact that middlemen can manipulate server responses is one reason [Google is pushing for all sites to be served under HTTPS](https://www.youtube.com/watch?v=cBhZ6S0PFCY). With traffic running to and from your server in an encrypted fashion, [man-in-the-middle attacks](http://en.wikipedia.org/wiki/Man-in-the-middle_attack)—which, if we’re honest, is what this amounts to—become much more difficult.
 
 Assuming you can’t run under HTTPS for one reason or another, how do you harden your [web thang](https://adactio.com/journal/6246) against 3rd party manipulation you can’t control? What if Comcast’s JavaScript interferes with your own? Remember when [Sky blocked jQuery for all of their customers](http://www.theguardian.com/technology/2014/jan/28/sky-broadband-blocks-jquery-web-critical-plugin)? That was a bad couple of hours for most UK-based internet users.

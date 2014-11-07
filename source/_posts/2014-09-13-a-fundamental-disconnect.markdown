@@ -9,6 +9,8 @@ description: "The Web is ubiquitous. The Web is messy. And, as much as we might 
 
 Yesterday at [BlendConf](//2014.blendconf.com/), [Scott Hanselman](//www.hanselman.com/) gave a fantastically-entertaining keynote entitled “JavaScript, The Cloud, and the rise of the New Virtual Machine.” In it, he chronicled all of the ways Web development and deployment has changed—for the better—over the years. He also boldly declared that JavaScript is now, effectively, a virtual machine in the browser.
 
+<!-- more -->
+
 This is a topic that has been weighing on my mind for quite some time now. I’ll start by saying that I’m a big fan of JavaScript. I write a lot of it and I find it incredibly useful, both as a programming language and as a way to improve the usability and accessibility of content on the Web. That said, I know its limitations. But I’ll get to that in a minute.
 
 In the early days of the Web, “proper” software developers shied away from JavaScript. Many viewed it as a “toy” language (and felt similarly about HTML and CSS). It wasn’t as powerful as Java or Perl or C in their minds, so it wasn’t really worth learning. In the intervening years, however, JavaScript has changed a lot.

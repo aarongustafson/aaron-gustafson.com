@@ -9,6 +9,8 @@ description: So, a mere three years after my old “life blog” stopped working
 
 So, a mere three years after my old “life blog” stopped working, I decided to scrap it and start fresh.
 
+<!-- more -->
+
 In my quest to learn something new (more on that in a forthcoming post), I decided to give [Octopress](http://octopress.org) a whirl. We’ll see how it goes, but the content entry has gone well so far and the Octopress community has been pretty responsive to my requests. I just need to get used to the workflow.
 
 In the spirit of openness, I’ve decided to host the new site on [Github](http://github.com) as a [Github Page](https://pages.github.com/). This frees me up from worrying about hosting fees of course, but it also means this site can serve as an educational tool for those inclined to dig in to the work I do and want some introspection into the way I do it. You can [view (and fork) the whole darn thing](https://github.com/aarongustafson/aarongustafson.github.io/) at your leisure.

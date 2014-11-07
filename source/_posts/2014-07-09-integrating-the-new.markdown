@@ -13,4 +13,6 @@ I love to learn and I love to tinker. That’s why I love working on the web: Th
 2. **Take a Measured Approach**: My educational background is in science and math, so my de facto approach to problem solving is reducing the number of variables in the equation. As such, I don’t like to introduce a bunch of new technologies or techniques at once just in case it incurs technical debt or the learning curve on something ends up being steeper than I’d thought. If you’re smart about this, you can introduce a handful of new aspects to your work on each project as long as they operate in separate spheres and are of differing levels of complexity.
 3. **Keep an Open Mind**: Things change so frequently in our world that it doesn’t make sense to dismiss something entirely and then block it out. After all, a tool you thought you had no need for six months ago may become invaluable to you in another six months.
 
+<!-- more -->
+
 I recently

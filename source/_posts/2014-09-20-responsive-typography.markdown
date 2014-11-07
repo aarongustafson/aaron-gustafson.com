@@ -10,6 +10,8 @@ canonical: "http://blog.easy-designs.net/archives/responsive-typography/"
 
 I’m incredibly excited to see that [Jason Pamental](https://twitter.com/jpamental)’s fantastic [<cite>Responsive Typography</cite>](http://www.amazon.com/gp/product/1491907096/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1491907096&amp;linkCode=as2&amp;tag=easydesign-20&amp;linkId=JC6INFXF3DHODKEM) is finally available. I had the great pleasure of reviewing an early galley and I can honestly say that it’s a book well worth reading. Jason’s natural and friendly style makes for an easy read and it’s chock-full of actionable recommendations and tips you’ll want to start using right away.
 
+<!-- more -->
+
 In fact, I think <cite>Responsive Typography</cite> is such an invaluable book, I offered to write the Foreword and Jason (and O’Reilly) have been kind enough to let me reprint it here:
 
 > Back in my day, all we had was the `font` element.

@@ -910,3 +910,8 @@ div.gsc-url-top {
 .gist table .gist-meta {
   speak: none;
 }
+.gist table,
+.gist tbody,
+.gist div.file-data {
+  font-size: 100%;
+}

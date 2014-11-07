@@ -11,6 +11,8 @@ I’ll level with you: I used to think I wanted variables in CSS.
 
 As a programmer, I love the idea of being able to abstract reusable bits like colors, border widths, font sizes, and the like to obviously named variables. It’s a far more [DRY](https://en.wikipedia.org/wiki/Don't_repeat_yourself) approach and makes maintenance far easier.
 
+<!-- more -->
+
 Before I made the leap to using a CSS preprocessor, I was convinced we needed CSS variables, but I always wondered how we might make it possible without breaking one of the fundamental [design principles of CSS](http://www.w3.org/TR/CSS21/intro.html#design-principles): Forward and backward compatibility. Take a look at this example (which is based on [the working draft spec](http://www.w3.org/TR/css-variables/)) and I think you’ll spot the problem:
 
 {% gist c3ddcb792eb69e0703e1 css-vairables.css %}

@@ -11,6 +11,8 @@ In case you missed it, [yesterday Pierre Far updated Google’s Webmaster Guidel
 
 > Just like modern browsers, our rendering engine might not support all of the technologies a page uses. Make sure your web design adheres to the principles of progressive enhancement as this helps our systems (and a wider range of browsers) see usable content and basic functionality when certain web design features are not yet supported.
 
+<!-- more -->
+
 As someone who has been beating the drum for progressive enhancement for over a decade, this sort of support from such an influential company gets me a little teary-eyed.
 
 It’s nice to see Steve Champeon’s philosophy for web design finally beginning to gain traction outside of the ivory tower of Web standards. It is a fantastic philosophy that has been guiding our work since Steve unveiled it. And it has paid some handsome dividends for both us and our clients.

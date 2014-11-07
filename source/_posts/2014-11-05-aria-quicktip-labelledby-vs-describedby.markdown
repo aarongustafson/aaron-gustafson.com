@@ -9,6 +9,8 @@ description: "The difference between the `aria-labelledby` and `aria-describedby
 
 Last night, while we were enjoying a cool evening and a few drinks outside after day 1 of [BDConf](http://bdconf.com), [Jeremy](http://adactio.com) asked me for some clarification on the ARIA attributes I had demoed as part of [my forms presentation](http://www.slideshare.net/AaronGustafson/falling-in-love-with-forms-bdconf-2014) earlier in the afternoon. In particular, he was confused by how `aria-labelledby` and `aria-describedby` differ.
 
+<!-- more -->
+
 I hadn’t really thought about it before, but it’s a good question. They seem pretty similar in function, right? And both support a space separated list of one or more `id` references. It’s downright confusing.
 
 My simple explanation was that, at least in terms of form fields, they differ in when they are read. The `aria-labelledby` attribute replaces the associated `label` element (which is, of course, associated with the field via the `label`’s `for` attribute). The `aria-describedby` attribute, on the other hand, is read after the field type is stated.

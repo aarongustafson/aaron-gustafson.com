@@ -9,6 +9,8 @@ published: false
 
 Almost two years ago, Kelly bought me my first salt water aquarium as an anniversary present. While awesome in any sense, the gift was particularly special to me because of my history with the ocean.
 
+<!-- more -->
+
 I <abbr title="self contained underwater breathing apparatus">scuba</abbr> dived for the very first time when I was 13. I was immediately hooked. I started diving at every opportunity I had, got PADI certified in Junior Open Water, Open Water, Advanced Open Water, and Rescue Diver by the time I was 16.
 
 Unfortunately, a few short months after becoming a certified rescue diver (one step away from Dive Master), I accidentally punctured my eardrum with a cotton swab and lost 70% of my right tympanum.  Despite undergoing a tympanoplasty to patch the hole in my ear, the hole persisted and my diving career ended abruptly.

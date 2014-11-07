@@ -15,6 +15,8 @@ In his astute post [“‘Native experience’ vs styling select boxes”](//www
 
 Speaking as the guy who not only wrote JavaScript to help me create an accessible `select` element alternative, but who also made it [the focus of a case study (image)](http://d1b14unh5d6w7g.cloudfront.net/1590598563.01.S0ER.LXXXXXXX.jpg?Expires=1405686346&Signature=DCT4Z0l75JQESDNyP0PVGVonuJYwY9XYtaTI3grX/RhdlLcXGRAVADJCB/N/fAj7GxLhEVzuXqstMebJIJ9Ip5I6kE7IKYt2F20F5EGD+1ghua9zKwyjS1e4KBgumMKzQytbcfIVX4dMr7XFzj26mScFKz9bSKtZT5jU1LU6hWM=&Key-Pair-Id=APKAIUO27P366FGALUMQ) in [AdvancED DOM Scripting](http://amzn.to/TaoffD), I am fully aware of the desire to have it both ways. I have not often seen the desire for both in a single individual, but it does happen in one particular instance occasionally.
 
+<!-- more -->
+
 Based on my own experience, I see the following arguments in favor of changing the display of a native control quite often:
 
 1. It doesn’t look good to me.

@@ -1,7 +1,7 @@
 {% unless post.no_header %}
 	
 	<header class="post__header">
-		<h1 class="post__title entry-title"><a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h1>
+		<h1 class="post__title entry-title"><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h1>
     	
 		{% unless post.meta == false %}
 	
@@ -12,8 +12,6 @@
 					| <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">Comments</a>
         		{% endif %}
       		</p>
-
-			<p class="post__meta">You can read this in {{ post.content | reading_time_as_i }}</p>
     
 		{% endunless %}
 
@@ -21,23 +19,14 @@
 
 {% endunless %}
 
-{% if index %}
-
-	<div class="entry__content entry__content--excerpt">
-		{{ post.content | excerpt }}
-	</div>
-  	
-	{% capture excerpted %}{{ post.content | has_excerpt }}{% endcapture %}
-	{% if excerpted == 'true' %}
-		<footer>
-			<a rel="full-article" href="{{ root_url }}{{ post.url }}">{{ site.excerpt_link }}</a>
-		</footer>
-	{% endif %}
-
-{% else %}
-
-	<div class="entry__content">
-		{{ post.content | markdownify }}
-	</div>
-
+<div class="entry__content entry__content--excerpt">
+	{{ post.content | excerpt }}
+</div>
+ 	
+{% capture excerpted %}{{ post.content | has_excerpt }}{% endcapture %}
+{% if excerpted == 'true' %}
+	<footer>
+		<a rel="full-article" href="{{ root_url }}{{ post.url }}">You can finish reading
+			<cite>{{ post.title }}</cite> in less than {{ post.content | reading_time_as_i }} &rarr;</a>
+	</footer>
 {% endif %}
