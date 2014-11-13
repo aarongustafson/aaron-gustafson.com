@@ -2,7 +2,7 @@
     Media Elements
 \*------------------------------------*/
 
-@include breakup-breakpoint("default") {
+@include breakup-breakpoint( "global" ) {
 
     object[data*="svg"] {
         pointer-events: none;

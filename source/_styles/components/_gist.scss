@@ -2,25 +2,29 @@
     Gist
 \*------------------------------------*/
 
-.gist {
+@include breakup-breakpoint( "global" ) {
+
+    .gist {
     
-    table {
-        margin: 0;
+        table {
+            margin: 0;
         
-        .line-numbers {
-            width: 3em;
-        }
+            .line-numbers {
+                width: 3em;
+            }
         
-        .line-numbers,
-        .gist-meta {
-            speak: none;
+            .line-numbers,
+            .gist-meta {
+                speak: none;
+            }
         }
-    }
     
-    table,
-    tbody,
-    div.file-data {
-        font-size: 100%;
+        table,
+        tbody,
+        div.file-data {
+            font-size: 100%;
+        }
+    
     }
     
 }

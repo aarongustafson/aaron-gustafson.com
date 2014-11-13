@@ -1,0 +1,26 @@
+{% capture excerpted %}{{ post.content | has_excerpt }}{% endcapture %}
+
+{% unless post.no_header %}
+	<header class="entry__header">
+		<h1 class="entry__title entry-title"><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></h1>
+		{% unless post.meta == false %}
+			<p class="entry__meta">
+        		{{ site.data.microcopy.notebook.date_prefix }} {% include post/date.html %}
+				{% if site.disqus_short_name and post.comments != false and site.disqus_show_comment_count == true %}
+					| <a href="{{ root_url }}{{ post.url }}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">Comments</a>
+        		{% endif %}
+      		</p>
+		{% endunless %}
+  	</header>
+{% endunless %}
+
+<div class="entry__content entry__content--excerpt entry-content">
+	{{ post.content | excerpt }}
+</div>
+ 	
+{% if excerpted == 'true' %}
+	<footer class="entry__footer">
+		<a rel="full-article" href="{{ root_url }}{{ post.url }}">You can finish reading
+			<cite>{{ post.title }}</cite> in less than {{ post.content | reading_time_as_i }} &rarr;</a>
+	</footer>
+{% endif %}

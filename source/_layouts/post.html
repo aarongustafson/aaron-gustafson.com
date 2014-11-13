@@ -3,46 +3,66 @@ layout: default
 single: true
 ---
 
-{% include article.html %}
+<article role="article" class="layout-container__primary">
+	<div class="entry">
+		<header class="entry__header">
+	     	<h1 class="entry__title entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
 
-<footer class="post__footer">
+			{% unless page.meta == false %}
+				<p class="entry__meta">
+	        		This will take {{ content | reading_time_as_i }} to read
 
-	{% unless page.sharing == false %}
-		{% include post/sharing.html %}
-    {% endunless %}
+					{% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
+						| <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">Comments</a>
+	        		{% endif %}
+	      		</p>
 
-	<p class="post__meta">
-		This post <b class="hidden">is by <a class="post__author" href="/about">Aaron Gustafson</a> and</b> was filed under:
-		{% include post/categories.html %}
-	
-		{% if page.canonical and page.canonical_site %}
-			| <b class="post__canonical">It originally appeared on <a href="{{ page.canonical }}">{{ page.canonical_site }}</a>.
-		{% endif %}
-	</p>
+	    	{% endunless %}
+	  	</header>
 
-	{% include asides/related_posts.html %}
-	
-</footer>
-
-{% if site.disqus_short_name and page.comments == true %}
-	<hr>
-
-	<section class="post__comments">
-		<h1>Comments</h1>
-		<div id="disqus_thread" aria-live="polite">
-			{% include post/disqus_thread.html %}
+		<div class="entry__content entry-content">
+			{{ content }}
 		</div>
-	</section>
-{% endif %}
 
+		<footer class="entry__footer">
+			{% unless page.sharing == false %}
+				{% include post/sharing.html %}
+		    {% endunless %}
+
+			<p class="entry__meta">
+				This entry was posted on {% include post/date.html %} 
+				<b class="hidden">by <a class="entry__author" href="/about">Aaron Gustafson</a></b>
+				and was filed under: {% include post/categories.html %}
+				{% if page.canonical and page.canonical_site %}
+					| <b class="entry__canonical">It originally appeared on <a href="{{ page.canonical }}">{{ page.canonical_site }}</a>.
+				{% endif %}
+			</p>
+		</footer>
+
+		{% if site.disqus_short_name and page.comments == true %}
+			<hr>
+
+			<section class="entry__comments">
+				<h1>Comments</h1>
+				<div id="disqus_thread" aria-live="polite">
+					{% include post/disqus_thread.html %}
+				</div>
+			</section>
+		{% endif %}
+		
+	</div>
+</article>
+	
 {% unless page.sidebar == false %}
-	<hr>
+	<hr class="rule rule--optional">
 
-	<aside class="sidebar">
+	<aside class="layout-container__secondary">
 		{% if site.post_asides.size %}
     		{% include_array post_asides %}
 		{% else %}
    			{% include_array default_asides %}
 		{% endif %}
+		
+		{% include asides/related_posts.html %}
 	</aside>
 {% endunless %}

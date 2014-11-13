@@ -2,7 +2,7 @@
     Footer
 \*------------------------------------*/
 
-@include breakup-breakpoint("default") {
+@include breakup-breakpoint( "global" ) {
 
     .footer {
 

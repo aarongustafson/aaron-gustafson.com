@@ -10,17 +10,17 @@
 		
 		{% include header.html %}
 		
-		<main role="main">
+		<main role="main" class="layout-container">
 			
 			{{ content | expand_urls: root_url }}
 			
 	    </main>
 	  	
-		<hr>
+		<hr class="rule rule--optional">
 		
 		{% include navigation.html %}
 		
-		<hr>
+		<hr class="rule">
 		
 		{% include footer.html %}
 		

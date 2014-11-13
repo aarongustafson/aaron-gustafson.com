@@ -1,0 +1,24 @@
+/*------------------------------------*\
+    Rules
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+
+    .rule {
+    
+        border: 0;
+        border-top: 1px solid $color-rule;
+        @include rem( margin, $default-spacing auto );
+        max-width: 200px;
+    
+        @include breakup-breakpoint( "medium" ) {
+
+            &--optional {
+                display: none;
+            }
+        
+        }
+
+    }
+
+}

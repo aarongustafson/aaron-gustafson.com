@@ -5,10 +5,13 @@
 @import "vendors/_vendors";
 @import "vendors/html5doctor-css-reset/reset";
 @import "vendors/gse/gse";
+@import "vendors/youtube/youtube";
 
 // Breakup Configuration
 // https://github.com/BPScott/breakup
-$breakup-included-blocks: ( "default" );
+$breakup-included-blocks: ( "global" );
+$breakup-naked: true;
+$breakup-breakpoints-allow-naked: ( "global" );
 
 @import "helpers/_helpers";
 @import "base/_base";

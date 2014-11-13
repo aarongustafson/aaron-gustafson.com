@@ -2,78 +2,81 @@
     Buttons
 \*------------------------------------*/
 
-button {
-    cursor: pointer;
-}
+@include breakup-breakpoint( "global" ) {
 
-.button {
-    
-    background: $color-blue;
-    color: $color-white;
-    @include box-shadow( $default-box-shadow );
-    
-    @include breakup-placeholder( small-caps );
-    font-family: $font-stack-sansserif;
-    font-weight: bold;
-    text-align: center;
+    button {
+        cursor: pointer;
+    }
 
-    border-width: 0;
-    @include border-radius( 3px );
-    display: inline-block;
-    @include rem( padding, 10 40 );
+    .button {
     
-    cursor: pointer;
-    
-    @include transition( background-color $default-transition, color $default-transition );
-    
-    &:hover,
-    &:focus,
-    &:active {
-
-        background: $color-blue-dark;
+        background: $color-blue;
         color: $color-white;
-
-        border: 0;
-        
-    }
-    // Shift down and right when clicked
-    &:active {
-        position: relative;
-        top: 1px;
-        left: 1px;
-    }
+        @include box-shadow( $default-box-shadow );
     
-    // Alt Pattern
-    &--alt {
-        
-        background: $color-yellow;
-        color: $color-brown;
-        
+        @include breakup-placeholder( small-caps );
+        font-family: $font-stack-sansserif;
+        font-weight: bold;
+        text-align: center;
+
+        border-width: 0;
+        @include border-radius( 3px );
+        display: inline-block;
+        @include rem( padding, 10 40 );
+    
+        cursor: pointer;
+    
+        @include transition( background-color $default-transition, color $default-transition );
+    
         &:hover,
         &:focus,
         &:active {
-            background: $color-yellow-dark;
+
+            background: $color-blue-dark;
+            color: $color-white;
+
+            border: 0;
+        
+        }
+        // Shift down and right when clicked
+        &:active {
+            position: relative;
+            top: 1px;
+            left: 1px;
+        }
+    
+        // Alt Pattern
+        &--alt {
+        
+            background: $color-yellow;
             color: $color-brown;
+        
+            &:hover,
+            &:focus,
+            &:active {
+                background: $color-yellow-dark;
+                color: $color-brown;
+            }
         }
-    }
     
-    // Calendar version
-    &--calendar {
+        // Calendar version
+        &--calendar {
         
-        background: transparent;
-        color: $color-link;
-        
-        padding: 0;
-        
-        &:hover,
-        &:focus,
-        &:active {
-
             background: transparent;
-            color: $color-link-hover;
-
-        }
+            color: $color-link;
         
-    }
+            padding: 0;
+        
+            &:hover,
+            &:focus,
+            &:active {
+
+                background: transparent;
+                color: $color-link-hover;
+
+            }
+        
+        }
     
+    }
 }

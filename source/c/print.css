@@ -1,753 +1,95 @@
-@charset "UTF-8";
-/*------------------------------------*\
-    $VENDORS
-	Other people’s code
-\*------------------------------------*/
-.embed-video-container {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-}
-.embed-video-container iframe, .embed-video-container object, .embed-video-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+/*
+Error: Undefined mixin 'breakup-create-placeholder'.
+        on line 20 of /Users/aaron/Sites/aaron-gustafson.new/source/_styles/helpers/_placeholders.scss, in `breakup-create-placeholder'
+        from line 20 of /Users/aaron/Sites/aaron-gustafson.new/source/_styles/helpers/_placeholders.scss
+        from line 9 of /Users/aaron/Sites/aaron-gustafson.new/source/_styles/helpers/__helpers.scss
+        from line 6 of ./print.scss
 
-.video-info {
-  font-size: 0.7em;
-  font-style: italic;
-}
+15:     background: transparent;
+16: }
+17: body {
+18:     background: $color-background;
+19:     color: $color-text;
+20: 	font-size: 12pt;
+21: 	margin: 0;
+22: 	position: relative;
+23: }
+24: section,
+25: [role="contentinfo"] {
 
-.ratio-16-9 {
-  padding-bottom: 56.25%;
-  /* 9/16*100 */
-}
-
-.ratio-4-3 {
-  padding-bottom: 75%;
-  /* 3/4*100 */
-}
-
-.ratio-1-1 {
-  padding-bottom: 100%;
-  /* ... */
-}
-
-a.youtube-lazy-link {
-  vertical-align: top;
-  background: #555;
-  text-decoration: none;
-  color: #DDD;
-  text-align: left;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  display: inline-block;
-}
-
-a.youtube-lazy-link:hover {
-  text-decoration: none;
-  color: #FFF;
-}
-
-.youtube-lazy-link-div {
-  width: 100%;
-  height: 100%;
-  background: url(http://lh4.googleusercontent.com/-QCeB6REIFlE/TuGUlY3N46I/AAAAAAAAAaI/9-urEUtpKcI/s800/youtube-play-button.png) center center no-repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.youtube-lazy-link-div:hover {
-  background: url(http://lh5.googleusercontent.com/-oBFjswrosz4/TuHqainRc3I/AAAAAAAAAbE/t3rMQuSJdLA/s800/youtube-play-button-hover.png) center center no-repeat;
-}
-
-.youtube-lazy-link-info {
-  position: absolute;
-  top: 0.6em;
-  left: 0.6em;
-}
-
-/*------------------------------------*\
-    $HELPERS
-	SASS Tools
-\*------------------------------------*/
-/*------------------------------------*\
-    Variables
-\*------------------------------------*/
-/*	Debug controls
-	========================================================================== */
-/*	CDN
-	========================================================================== */
-/*	Breakpoint Management
-	========================================================================== */
-/*	Grid Management
-	========================================================================== */
-/*	Legacy support
-	========================================================================== */
-/*	Typography
-	========================================================================== */
-/*	Colors
-	========================================================================== */
-/*	Images
-	========================================================================== */
-/*	Defaults
-	========================================================================== */
-/*------------------------------------*\
-    Functions
-\*------------------------------------*/
-/*------------------------------------*\
-    Mixins
-\*------------------------------------*/
-/*------------------------------------*\
-    Placeholders
-\*------------------------------------*/
-@media screen {
-  html body, p, dl, dl dt,
-  dl dd {
-    margin: 0 0 20px;
-    margin: 0 0 1.25rem;
-    font-weight: normal;
-    line-height: 1.4;
-  }
-  .wf-active html body, html .wf-active body, .wf-active p, .wf-active dl, .wf-active dl dt, dl .wf-active dt,
-  .wf-active dl dd,
-  dl .wf-active dd {
-    word-spacing: 2px;
-  }
-}
-@media screen {
-  .fields {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-}
-@media screen {
-  .hidden, object[data^="#"] {
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-  }
-}
-@media screen {
-  html body {
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    -ms-font-smoothing: antialiased;
-    -o-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-  }
-}
-@media screen {
-  table thead {
-    font-size: 12px;
-    font-size: 0.75rem;
-    font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
-    letter-spacing: 2px 	;
-    text-transform: uppercase;
-    word-spacing: 1px;
-  }
-}
-/*------------------------------------*\
-    $BASE
-	Global element styles
-\*------------------------------------*/
-/*------------------------------------*\
-    Body-level settings
-\*------------------------------------*/
-@media screen {
-  @-moz-viewport {
-    width: device-width;
-    zoom: 1.0;
-  }
-  @-ms-viewport {
-    width: device-width;
-    zoom: 1.0;
-  }
-  @-o-viewport {
-    width: device-width;
-    zoom: 1.0;
-  }
-  @-webkit-viewport {
-    width: device-width;
-    zoom: 1.0;
-  }
-  @viewport {
-    width: device-width;
-    zoom: 1.0;
-  }
-  html {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(1px, #FF6BA6), color-stop(1px, transparent));
-    background: -webkit-linear-gradient(#FF6BA6 1px, transparent 1px);
-    background: linear-gradient(#FF6BA6 1px, transparent 1px);
-    background-size: 100% .75;
-  }
-  html body {
-    background: #fff;
-    color: #2c2825;
-    font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
-    font-weight: 400;
-    font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin: 0 auto;
-    max-width: 960px;
-    max-width: 60rem;
-  }
-}
-@media only screen and (min-width: 60em) {
-  [role=main] {
-    min-height: 400px;
-    min-height: 25rem;
-  }
-}
-/*------------------------------------*\
-    Heading Levels
-\*------------------------------------*/
-@media screen {
-  h1, h2, h3, h4, h5, h6 {
-    font-family: "quatro-slab", Georgia, serif;
-    font-weight: 500;
-    line-height: 1.4;
-    margin: 0;
-  }
-  .wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6 {
-    word-spacing: 2px;
-  }
-
-  h1 {
-    font-size: 32px;
-    font-size: 2rem;
-  }
-
-  section > h1,
-  h2 {
-    font-size: 24px;
-    font-size: 1.5rem;
-  }
-
-  h3 {
-    font-size: 18px;
-    font-size: 1.125rem;
-  }
-}
-/*------------------------------------*\
-    Block-level Semantics
-\*------------------------------------*/
-@media screen {
-  blockquote {
-    font-size: 18px;
-    font-size: 1.125rem;
-    font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
-    font-style: italic;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    margin: 20px auto;
-    margin: 1.25rem auto;
-    padding: 20px;
-    padding: 1.25rem;
-    max-width: 700px;
-    max-width: 43.75rem;
-  }
-  blockquote > :first-child:not([class]):before {
-    content: "\201C";
-    margin-left: -8px;
-    margin-left: -0.5rem;
-  }
-  blockquote > :last-child {
-    margin: 0;
-  }
-
-  .blockquote__attribution {
-    font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
-    margin: 0;
-    padding-left: 40px;
-    padding-left: 2.5rem;
-  }
-  .blockquote__attribution cite {
-    font-style: normal;
-  }
-
-  p {
-    margin: 0 0 20px;
-    margin: 0 0 1.25rem;
-  }
-
-  [aria-hidden="true"] {
-    display: none;
-  }
-
-  hr {
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 20px auto;
-    margin: 1.25rem auto;
-    max-width: 200px;
-  }
-}
-@media only screen and (min-width: 43.125em) {
-  blockquote {
-    padding: 20px 20px;
-    padding: 1.25rem 1.25rem;
-  }
-}
-@media only screen and (min-width: 60em) {
-  blockquote {
-    padding: 20px 40px;
-    padding: 1.25rem 2.5rem;
-  }
-}
-/*------------------------------------*\
-    Lists
-\*------------------------------------*/
-@media screen {
-  ol,
-  ul {
-    line-height: 1.4;
-    margin: 0 20px 20px;
-    margin: 0 1.25rem 1.25rem;
-  }
-
-  dl dt,
-  dl dd {
-    font-weight: normal;
-  }
-}
-/*------------------------------------*\
-    Links
-\*------------------------------------*/
-@media screen {
-  a {
-    color: #34AD23;
-    border-bottom: 1px dotted;
-    border-bottom-color: rgba(52, 173, 35, 0.25);
-    cursor: pointer;
-    -webkit-transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
-    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
-  }
-  a, a:link, a:visited {
-    text-decoration: none;
-  }
-  a:hover, a:focus, a:active {
-    color: #27831a;
-    border-bottom-color: #27831a;
-  }
-  a[href^=mailto], a[href^=tel] {
-    white-space: nowrap;
-  }
-  a.email, a.tel {
-    white-space: nowrap;
-  }
-  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    border-bottom-width: 0;
-  }
-  h1 a:hover, h1 a:focus, h1 a:active, h2 a:hover, h2 a:focus, h2 a:active, h3 a:hover, h3 a:focus, h3 a:active, h4 a:hover, h4 a:focus, h4 a:active, h5 a:hover, h5 a:focus, h5 a:active, h6 a:hover, h6 a:focus, h6 a:active {
-    border-bottom-width: 1px;
-  }
-}
-/*------------------------------------*\
-    Text-level semantics
-\*------------------------------------*/
-@media screen {
-  abbr {
-    cursor: help;
-    border: 0;
-  }
-  abbr[title] {
-    border: 0;
-  }
-
-  mark {
-    background: transparent;
-    color: #2c2825;
-    color: inherit;
-    font-weight: normal;
-    font-weight: inherit;
-    font-style: normal;
-    font-style: inherit;
-  }
-
-  code,
-  kbd {
-    background-color: #ebebeb;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    color: #666;
-    font-style: normal;
-    padding: .05em .25em;
-    white-space: nowrap;
-  }
-
-  b {
-    font-weight: inherit;
-  }
-
-  i {
-    font-style: inherit;
-  }
-
-  sub, sup {
-    font-size: 10px;
-    font-size: 0.625rem;
-    font-style: inherit;
-    font-weight: inherit;
-    position: relative;
-  }
-
-  sub {
-    bottom: -1em;
-  }
-
-  sup {
-    bottom: 1em;
-  }
-}
-/*------------------------------------*\
-    Media Elements
-\*------------------------------------*/
-@media screen {
-  object[data*="svg"] {
-    pointer-events: none;
-  }
-
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  img[style] {
-    width: 100% !important;
-    height: auto !important;
-  }
-
-  picture {
-    display: block;
-  }
-
-  .noscript-picture {
-    margin: 0;
-    padding: 0;
-  }
-
-  .media-container {
-    max-width: 600px;
-    margin: auto;
-    margin-bottom: 20px;
-    margin-bottom: 1.25rem;
-  }
-}
-/*------------------------------------*\
-    Tables
-\*------------------------------------*/
-@media screen {
-  table {
-    border-collapse: collapse;
-    margin: 0 0 20px;
-    margin: 0 0 1.25rem;
-    width: 100%;
-    min-width: 100px;
-  }
-  table thead {
-    border-bottom: 3px solid #ccc;
-    font-size: 12px;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-  }
-  table thead th {
-    font-weight: bold;
-  }
-  table thead th p {
-    font-weight: bold;
-    display: inline;
-    margin: 0;
-  }
-  table tbody {
-    font-size: 18px;
-    font-size: 1.125rem;
-  }
-  table tr {
-    border-top: 1px solid #ccc;
-  }
-  table td,
-  table th {
-    font-weight: normal;
-    text-align: left;
-    padding: 15px;
-    padding: 0.9375rem;
-    padding-left: 0;
-  }
-  table td:last-child,
-  table th:last-child {
-    padding-right: 0;
-  }
-  table td :last-child,
-  table th :last-child {
-    margin-bottom: 0;
-  }
-  table td[colspan],
-  table th[colspan] {
-    font-weight: bold;
-  }
-}
-@media only screen and (max-width: 770px) {
-  .layout-container__primary table {
-    border: 0;
-    padding-bottom: 0;
-    display: block;
-    width: 100%;
-  }
-  .layout-container__primary table caption {
-    display: block;
-  }
-  .layout-container__primary table thead {
-    display: none;
-  }
-  .layout-container__primary table tbody,
-  .layout-container__primary table tr,
-  .layout-container__primary table th,
-  .layout-container__primary table td {
-    border: 0;
-    display: block;
-    padding: 0;
-    text-align: left;
-  }
-  .layout-container__primary table tr {
-    margin: 0 0 20px;
-    margin: 0 0 1.25rem;
-  }
-  .layout-container__primary table th[data-title]:before,
-  .layout-container__primary table td[data-title]:before {
-    content: attr(data-title) ": ";
-    font-weight: bold;
-  }
-  .layout-container__primary table th:not([data-title]) {
-    font-weight: bold;
-  }
-  .layout-container__primary table td:empty {
-    display: none;
-  }
-}
-@media only screen and (min-width: 43.125em) {
-  table.striped {
-    background: #fff;
-  }
-  table.striped thead {
-    background: #ccc;
-    border-bottom: 0;
-  }
-  table.striped tbody tr {
-    background: #fff;
-    -webkit-transition: background-color 0.25s ease;
-    transition: background-color 0.25s ease;
-  }
-  table.striped tbody tr:nth-child(even) {
-    background: #413d3a;
-  }
-  table.striped tbody tr:hover {
-    background: #fff;
-  }
-  table.striped th,
-  table.striped td {
-    border: 1px solid #ccc;
-    padding: 15px;
-    padding: 0.9375rem;
-  }
-}
-/*------------------------------------*\
-    Form Styles
-\*------------------------------------*/
-@media screen {
-  form {
-    margin: 0 0 20px;
-    margin: 0 0 1.25rem;
-  }
-  form ul,
-  form ol {
-    list-style: none;
-  }
-  form li {
-    margin-bottom: .5em;
-  }
-
-  .fields__group {
-    margin: 0 0 20px;
-    margin: 0 0 1.25rem;
-  }
-  .fields__group:last-child {
-    margin: 0;
-  }
-  .fields__group label {
-    font-size: 12px;
-    font-size: 0.75rem;
-    font-weight: bold;
-    display: block;
-  }
-  .fields__group input,
-  .fields__group select,
-  .fields__group textarea {
-    color: #ccc;
-    font-size: 12px;
-    font-size: 0.75rem;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    border: 1px solid;
-    margin: 5px 0;
-    margin: 0.3125rem 0;
-    padding: 5px;
-    padding: 0.3125rem;
-    -webkit-transition: background-color 0.25s ease, color 0.25s ease;
-    transition: background-color 0.25s ease, color 0.25s ease;
-  }
-  .fields__group input,
-  .fields__group textarea {
-    background: #fff;
-    color: #2c2825;
-    display: block;
-    width: 100%;
-  }
-  .fields__group input[type=search] {
-    -webkit-appearance: textfield;
-  }
-  .fields__group select {
-    font-size: 18px;
-    font-size: 1.125rem;
-    max-width: 100%;
-  }
-  .fields__group__note {
-    font-size: 12px;
-    font-size: 0.75rem;
-  }
-  .fields__required {
-    color: #f00;
-    font-weight: normal;
-  }
-  .fields .validation-error input,
-  .fields .validation-error select,
-  .fields .validation-error textarea {
-    color: #f00;
-  }
-
-  @-moz-document url-prefix() {
-    .fields select {
-      font-size: 12px;
-      font-size: 0.75rem;
-    }
-  }
-}
-@media only screen and (min-width: 43.125em) {
-  input,
-  textarea {
-    width: 80%;
-  }
-
-  .fields__note {
-    width: 80%;
-  }
-}
-/*------------------------------------*\
-    Animations
-\*------------------------------------*/
-@page {
-  margin: .75in;
-  padding: 0;
-}
-* {
-  background: transparent;
-}
-
-body {
-  background: #fff;
-  color: #2c2825;
-  font-size: 12pt;
-  margin: 0;
-  position: relative;
-}
-
-section,
-[role="contentinfo"] {
-  border-top: 1px solid;
-  margin: 2em 0 0;
-  padding: 2em 0 0;
-}
-
-a {
-  text-decoration: none;
-}
-a[href]:after {
-  content: "(" attr(href) ")";
-  font-size: 10pt;
-  margin-left: 9pt;
-}
-a[href^="/"]:after {
-  content: " (http://nichols.edu" attr(href) ")";
-}
-a[href^="#"]:after, a[href^="mailto:"]:after, a[href^="tel:"]:after {
-  display: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  page-break-inside: avoid;
-  page-break-after: avoid;
-}
-h1 a[href]:after, h2 a[href]:after, h3 a[href]:after, h4 a[href]:after, h5 a[href]:after, h6 a[href]:after {
-  display: block;
-  margin-left: 0;
-  margin-bottom: 10pt;
-}
-h1 a[href^="#"]:after,
-h1 a[href^="mailto:"]:after,
-h1 a[href^="tel:"]:after, h2 a[href^="#"]:after,
-h2 a[href^="mailto:"]:after,
-h2 a[href^="tel:"]:after, h3 a[href^="#"]:after,
-h3 a[href^="mailto:"]:after,
-h3 a[href^="tel:"]:after, h4 a[href^="#"]:after,
-h4 a[href^="mailto:"]:after,
-h4 a[href^="tel:"]:after, h5 a[href^="#"]:after,
-h5 a[href^="mailto:"]:after,
-h5 a[href^="tel:"]:after, h6 a[href^="#"]:after,
-h6 a[href^="mailto:"]:after,
-h6 a[href^="tel:"]:after {
-  display: none;
-}
-
-#logo a:after {
-  display: none;
-}
-
-p, ol, ol, dl {
-  orphans: 3;
-  widows: 3;
-}
-
-#header #logo {
-  font-size: 1.5em;
-}
-#header #logo a {
-  border: 0;
-}
-
-nav,
-button,
-.button,
-.nav-jump,
-.pagination,
-.footer__fork-me,
-.footer__copyright b {
-  display: none;
-}
-
-b#license {
-  display: block;
-}
-
-input[type=submit] {
-  display: none;
-}
+Backtrace:
+/Users/aaron/Sites/aaron-gustafson.new/source/_styles/helpers/_placeholders.scss:20:in `breakup-create-placeholder'
+/Users/aaron/Sites/aaron-gustafson.new/source/_styles/helpers/_placeholders.scss:20
+/Users/aaron/Sites/aaron-gustafson.new/source/_styles/helpers/__helpers.scss:9
+./print.scss:6
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:331:in `block in visit_mixin'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/stack.rb:115:in `with_frame'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/stack.rb:98:in `with_mixin'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:329:in `visit_mixin'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/stack.rb:115:in `with_frame'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/stack.rb:79:in `with_base'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:308:in `block (2 levels) in visit_import'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:308:in `map'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:308:in `block in visit_import'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/stack.rb:88:in `block in with_import'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/stack.rb:115:in `with_frame'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/stack.rb:88:in `with_import'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:305:in `visit_import'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/stack.rb:115:in `with_frame'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/stack.rb:79:in `with_base'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:308:in `block (2 levels) in visit_import'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:308:in `map'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:308:in `block in visit_import'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/stack.rb:88:in `block in with_import'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/stack.rb:115:in `with_frame'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/stack.rb:88:in `with_import'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:305:in `visit_import'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/stack.rb:79:in `block in with_base'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/stack.rb:115:in `with_frame'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/stack.rb:79:in `with_base'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:151:in `visit'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/plugin/compiler.rb:214:in `block in update_stylesheets'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/plugin/compiler.rb:208:in `each'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/plugin/compiler.rb:208:in `update_stylesheets'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/plugin.rb:82:in `update_stylesheets'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/exec/sass_scss.rb:329:in `watch_or_update'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/exec/sass_scss.rb:50:in `process_result'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/exec/base.rb:40:in `parse'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/lib/sass/exec/base.rb:19:in `parse!'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.0.rc.3/bin/sass:13:in `<top (required)>'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/bin/sass:23:in `load'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/bin/sass:23:in `<main>'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/bin/ruby_executable_hooks:15:in `eval'
+/Users/aaron/.rvm/gems/ruby-2.0.0-p195/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'breakup-create-placeholder'.\A         on line 20 of /Users/aaron/Sites/aaron-gustafson.new/source/_styles/helpers/_placeholders.scss, in `breakup-create-placeholder'\A         from line 20 of /Users/aaron/Sites/aaron-gustafson.new/source/_styles/helpers/_placeholders.scss\A         from line 9 of /Users/aaron/Sites/aaron-gustafson.new/source/_styles/helpers/__helpers.scss\A         from line 6 of ./print.scss\A \A 15:     background: transparent;\A 16: }\A 17: body {\A 18:     background: $color-background;\A 19:     color: $color-text;\A 20: 	font-size: 12pt;\A 21: 	margin: 0;\A 22: 	position: relative;\A 23: }\A 24: section,\A 25: [role=\"contentinfo\"] {"; }

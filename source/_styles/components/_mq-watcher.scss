@@ -2,17 +2,19 @@
     Media Query Watcher (for JS)
 \*------------------------------------*/
 
-#getActiveMQ-watcher {
-    
-	font-family: "default";
+@include breakup-breakpoint( "global" ) {
+    #getActiveMQ-watcher {
+        font-family: "global";
+    }
+}
 	
-	@each $breakpoint, $declaration in $breakup-breakpoints
-    {
-        @include breakup-block( $breakpoint ) {
-            @include breakup-media( $declaration, true ) {
+@each $breakpoint, $declaration in $breakup-breakpoints
+{
+    @include breakup-block( $breakpoint ) {
+        @include breakup-media( $declaration, true ) {
+            #getActiveMQ-watcher {
                 font-family: "#{$breakpoint}";
             }
         }
-    } 
-
+    }
 }

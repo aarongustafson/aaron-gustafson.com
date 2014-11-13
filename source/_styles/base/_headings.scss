@@ -2,13 +2,13 @@
     Heading Levels
 \*------------------------------------*/
 
-@include breakup-breakpoint( "default" ) {
+@include breakup-breakpoint( "global" ) {
 
     h1, h2, h3, h4, h5, h6 {
 
     	font-family: $font-stack-serif;
     	font-weight: $font-weight-serif;
-    	line-height: $line-height-default;
+    	line-height: 1.1;
     	
     	margin: 0;
     	

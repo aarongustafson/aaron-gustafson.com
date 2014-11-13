@@ -2,7 +2,7 @@
     Header
 \*------------------------------------*/
 
-@include breakup-breakpoint("default") {
+@include breakup-breakpoint( "global" ) {
 
     .banner {
         @include rem( padding, $default-spacing );

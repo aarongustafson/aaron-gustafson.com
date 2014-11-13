@@ -2,26 +2,26 @@
 layout: index
 title: The Notebook of
 show_title: false
+display_title: Notes from the Internets
 footer: true
 comments: false
 sharing: false
 is_index: true
+body_class: notebook
 ---
 
-<div id="blog-archives">
-	{% for post in site.posts reverse %}
+{% for post in site.posts reverse %}
 
-		{% unless post.external-url %}
+	{% unless post.external-url %}
 
-			<article>
-	  			{% include archive_post.html %}
-			</article>
+		<article class="entry entry--teaser">
+  			{% include entry_teaser.html %}
+		</article>
 
-			{% unless forloop.last %}
-				<hr>
-			{% endunless %}
-
+		{% unless forloop.last %}
+			<hr class="rule">
 		{% endunless %}
 
-	{% endfor %}
-</div>
+	{% endunless %}
+
+{% endfor %}

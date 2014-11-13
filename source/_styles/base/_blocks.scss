@@ -1,7 +1,7 @@
 /*------------------------------------*\
     Block-level Semantics
 \*------------------------------------*/
-@include breakup-breakpoint("default") {
+@include breakup-breakpoint( "global" ) {
 
 	blockquote {
 
@@ -9,10 +9,8 @@
 	    font-family: $font-stack-sansserif;
 	    font-style: italic; 
 	    
-	    border-top: 1px solid $color-rule;
-	    border-bottom: 1px solid $color-rule;
 	    @include rem( margin, $default-spacing auto );
-        @include rem( padding, $default-spacing );
+        @include rem( padding, 0 $default-spacing );
         @include rem( max-width, 700 );
         
         & > :first-child:not([class]):before {
@@ -40,31 +38,29 @@
 	}
 
 	p {
-	    @include breakup-placeholder( text );
-	    @include rem( margin, $margin-default );
+        @include rem( margin, $margin-default );
+    	font-weight: normal;
+    	line-height: $line-height-default;
+
+    	.wf-active & {
+        	word-spacing: 2px;
+    	}
 	}
 
 	[aria-hidden="true"] {
 	    display: none;
-	}
-	
-	hr {
-	    border: 0;
-	    border-top: 1px solid $color-rule;
-	    @include rem( margin, $default-spacing auto );
-	    max-width: 200px;
 	}
 
 }
 
 @include breakup-breakpoint( "medium" ) {
 	blockquote {
-        @include rem( padding, $default-spacing ( 1 * $default-spacing ) );
+        @include rem( padding, 0 ( 1 * $default-spacing ) );
 	}
 }
 
 @include breakup-breakpoint( "full" ) {
 	blockquote {
-        @include rem( padding, $default-spacing ( 2 * $default-spacing ) );
+        @include rem( padding, 0 ( 2 * $default-spacing ) );
     }
 }

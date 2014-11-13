@@ -2,7 +2,7 @@
     Text-level semantics
 \*------------------------------------*/
 
-@include breakup-breakpoint("default") {
+@include breakup-breakpoint( "global" ) {
 
     // Abbreviations
     abbr {
@@ -31,7 +31,7 @@
         background-color: $color-off-white;
         border: 1px solid $color-grey-light;
         border-radius: 3px;
-        color: $color-grey;
+        color: $color-black;
         font-style: normal;
         padding: .05em .25em;
         white-space: nowrap;

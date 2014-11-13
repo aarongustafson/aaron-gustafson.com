@@ -1,7 +1,7 @@
 /*------------------------------------*\
     Body-level settings
 \*------------------------------------*/
-@include breakup-breakpoint("default") {
+@include breakup-breakpoint( "global" ) {
 
 	// CSS Device Adaptation
 	// http://dev.w3.org/csswg/css-device-adapt/

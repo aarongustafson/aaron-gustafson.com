@@ -1,11 +1,13 @@
 /*------------------------------------*\
-    Post
+    Blog Entry
 \*------------------------------------*/
 
-@include breakup-breakpoint( "default" ) {
+@include breakup-breakpoint( "global" ) {
 
-    .post {
+    .entry {
 
+        @include rem( margin, $margin-default );
+        
         &__meta {
             color: $color-grey;
         }
@@ -13,6 +15,11 @@
         &__footer {
             border-top: 1px solid $color-rule;
             @include rem( padding-top, $default-spacing );
+        }
+        
+        &--teaser &__footer {
+            border-top: 0;
+            padding-top: 0;
         }
 
     }

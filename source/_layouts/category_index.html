@@ -11,11 +11,11 @@ sharing: false
 		{% unless post.external-url %}
 
 			<article>
-	  			{% include archive_post.html %}
+	  			{% include entry_teaser.html %}
 			</article>
 
 			{% unless forloop.last %}
-				<hr>
+				<hr class="rule">
 			{% endunless %}
 
 		{% endunless %}

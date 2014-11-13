@@ -2,46 +2,29 @@
 layout: default
 ---
 
-<article role="article">
+<article role="article" class="page">
 
-  	{% if page.title %}
-	  	{% unless page.show_title == false %}
-			<header>
-		    	<h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
-		    	{% if page.date %}<p class="meta">{% include post/date.html %}{{ time }}</p>{% endif %}
-				<p class="meta">You can read this in {{ content | reading_time_as_i }}.</p>
-		  	</header>
-		{% endunless %}
-  	{% endif %}
+	{% if page.title or page.display_title %}
+  		{% capture the_title %}{% if page.show_title == false and page.display_title %}{{ page.display_title }}{% else %}{{ page.title }}{% endif %}{% endcapture %}
+		<h1 class="page__title">{% if site.titlecase %}{{ the_title | titlecase }}{% else %}{{ the_title }}{% endif %}</h1>
+	{% endif %}
+
+	<div class="layout-container__primary">
   	
-	{{ content }}
-  	
-	{% unless page.footer == false %}
-    	<footer>
-      		{% if page.date or page.author %}
-				<p class="meta">
-	        		{% if page.author %}{% include post/author.html %}{% endif %}
-	        		{% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
-	        		{% if page.categories %}{% include post/categories.html %}{% endif %}
-      			</p>
-			{% endif %}
-			
-      		{% unless page.sharing == false %}
-        		{% include post/sharing.html %}
-      		{% endunless %}
-		</footer>
+		{{ content }}
+		
+  	</div>
+
+	{% unless page.sidebar == false %}
+		<hr class="rule rule--optional">
+
+		<aside class="layout-container__secondary">
+	  		{% if site.blog_index_asides.size %}
+	    		{% include_array blog_index_asides %}
+	  		{% else %}
+	    		{% include_array default_asides %}
+	  		{% endif %}
+		</aside>
 	{% endunless %}
 
 </article>
-
-{% unless page.sidebar == false %}
-	<hr>
-
-	<aside class="sidebar">
-  		{% if site.blog_index_asides.size %}
-    		{% include_array blog_index_asides %}
-  		{% else %}
-    		{% include_array default_asides %}
-  		{% endif %}
-	</aside>
-{% endunless %}

@@ -23,11 +23,13 @@ $bp-medium-em: 43.125em;
 $bp-full: 960;
 $bp-full-em: 60em;
 $breakup-breakpoints: (
-    "default":      "screen",
+    "global":       "screen",
     "tiny":         "only screen and (min-width: #{$bp-tiny-em})",
     "small":        "only screen and (min-width: #{$bp-small-em})",
     "medium":       "only screen and (min-width: #{$bp-medium-em})",
-    "full":         "only screen and (min-width: #{$bp-full-em})"
+    "full":         "only screen and (min-width: #{$bp-full-em})",
+    "print":        "print",
+    "old-ie":       "screen"
 );
 
 
@@ -92,8 +94,8 @@ $table-spacing: 15;
 $color-black: #2c2825;
 $color-white: #fff;
 $color-grey: #666;
-$color-grey-light: #ccc;
-$color-off-white: #ebebeb;
+$color-grey-light: #DDD;
+$color-off-white: #F9F9F9;
 $color-green: #34AD23;
 $color-green-dark: darken( $color-green, 10% );
 

@@ -6,9 +6,9 @@
 
 // Breakup Configuration
 // https://github.com/BPScott/breakup
-$breakup-included-blocks: ( "tiny" "small" "medium" "full" );
+$breakup-included-blocks: ( "tiny" "small" "medium" "full" "old-ie" );
 $breakup-naked: true;
-$breakup-breakpoints-allow-naked: ( "tiny" "small" "medium" "full" );
+$breakup-breakpoints-allow-naked: ( "tiny" "small" "medium" "full" "old-ie" );
 
 @import "helpers/_helpers";
 @import "base/_base";

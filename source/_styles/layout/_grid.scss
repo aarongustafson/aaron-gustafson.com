@@ -9,11 +9,13 @@
         @include show-grid( overlay );
     }
     
-    @include container( map-get( $grid-breakpoints, "tiny" ) nest );
-    height: ie8( 1% );
+    @include breakup-breakpoint( "global" ) {
+        @include container( map-get( $grid-breakpoints, "global" ) nest );
+        height: ie8( 1% );
     
-    // padding on a small screen
-    @include rem( padding, 0 20 );
+        // padding on a small screen
+        @include rem( padding, 0 20 );
+    }
     
     @include breakup-breakpoint( "small" ) {
 
@@ -46,14 +48,16 @@
 
         @include container( map-get( $grid-breakpoints, "full" ) $grid-full-column-sizes center nest );
         @include rem( padding, 0 );
-        @include rem( max-width, 940 );
+        @include rem( max-width, 920 );
         
     }
     
     // Primary container
     &__primary {
 
-        @include box-sizing( border-box );
+        @include breakup-breakpoint( "global" ) {
+             box-sizing: border-box;
+        }
         
         // Grid [-----]---
         @include breakup-breakpoint( "medium" ) {
@@ -70,8 +74,10 @@
     // Secondary
     &__secondary {
 
-        @include box-sizing( border-box );
-
+        @include breakup-breakpoint( "global" ) {
+             box-sizing: border-box;
+        }
+        
         // Grid ------[--]
         @include breakup-breakpoint( "medium" ) {
             @include span( last 3 of map-get( $grid-breakpoints, "medium" ) fluid );

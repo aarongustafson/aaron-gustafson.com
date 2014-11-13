@@ -2,7 +2,7 @@
     Lists
 \*------------------------------------*/
 
-@include breakup-breakpoint("default") {
+@include breakup-breakpoint( "global" ) {
 
     ol,
     ul {

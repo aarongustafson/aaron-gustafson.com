@@ -2,7 +2,7 @@
     Main
 \*------------------------------------*/
 
-@include breakup-breakpoint("default") {
+@include breakup-breakpoint( "global" ) {
 
     main {
         @include rem( padding, $default-spacing );
