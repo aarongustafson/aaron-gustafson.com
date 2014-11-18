@@ -2,23 +2,23 @@
     Rules
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+.rule {
 
-    .rule {
-    
+    @include breakup-breakpoint( "global" ) {
+
         border: 0;
         border-top: 1px solid $color-rule;
         @include rem( margin, $default-spacing auto );
         max-width: 200px;
+
+    }
     
-        @include breakup-breakpoint( "medium" ) {
+    @include breakup-breakpoint( "medium" ) {
 
-            &--optional {
-                display: none;
-            }
-        
+        &--optional {
+            display: none;
         }
-
+        
     }
 
 }

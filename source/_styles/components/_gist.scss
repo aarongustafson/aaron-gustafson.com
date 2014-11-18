@@ -4,8 +4,10 @@
 
 @include breakup-breakpoint( "global" ) {
 
-    .gist {
-    
+    div.gist {
+        
+        @include rem( font-size, $font-size-code );
+        
         table {
             margin: 0;
         

@@ -269,7 +269,7 @@ dl .wf-active dd {
   margin: 0;
   padding: 0;
 }
-.hidden, object[data^="#"] {
+.hidden, object[data^="#"], .webmention--author-starts .fn {
   position: absolute !important;
   height: 1px;
   width: 1px;
@@ -813,19 +813,23 @@ main {
 /*------------------------------------*\
     Gist
 \*------------------------------------*/
-.gist table {
+div.gist {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+div.gist table {
   margin: 0;
 }
-.gist table .line-numbers {
+div.gist table .line-numbers {
   width: 3em;
 }
-.gist table .line-numbers,
-.gist table .gist-meta {
+div.gist table .line-numbers,
+div.gist table .gist-meta {
   speak: none;
 }
-.gist table,
-.gist tbody,
-.gist div.file-data {
+div.gist table,
+div.gist tbody,
+div.gist div.file-data {
   font-size: 100%;
 }
 
@@ -838,4 +842,66 @@ main {
   margin: 20px auto;
   margin: 1.25rem auto;
   max-width: 200px;
+}
+
+/*------------------------------------*\
+    Post
+\*------------------------------------*/
+.page__title {
+  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
+}
+.page__footer {
+  border-top: 1px solid #DDD;
+  padding-top: 20px;
+  padding-top: 1.25rem;
+}
+
+/*------------------------------------*\
+    Webmentions
+\*------------------------------------*/
+.webmentions {
+  margin-top: 10px;
+  margin-top: 0.625rem;
+}
+
+.webmentions__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.webmentions__item {
+  clear: both;
+  border-top: 1px solid #DDD;
+  margin: 0;
+  padding: 20px 0 20px 68px;
+  padding: 1.25rem 0 1.25rem 4.25rem;
+  min-height: 48px;
+  min-height: 3rem;
+  position: relative;
+}
+.webmentions__item:first-child {
+  border-top: 0;
+}
+
+.webmention__author__photo {
+  border-radius: 3px;
+  display: block;
+  width: 48px;
+  width: 3rem;
+  height: 48px;
+  height: 3rem;
+  position: absolute;
+  top: 20px;
+  top: 1.25rem;
+  left: 0;
+}
+
+.webmention__content > :last-child {
+  margin-bottom: 0;
+}
+
+.webmention__meta {
+  color: #666;
 }

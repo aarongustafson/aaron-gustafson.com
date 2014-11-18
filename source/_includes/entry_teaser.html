@@ -15,7 +15,7 @@
 {% endunless %}
 
 <div class="entry__content entry__content--excerpt entry-content">
-	{{ post.content | excerpt }}
+	{{ post.content | excerpt | markdownify }}
 </div>
  	
 {% if excerpted == 'true' %}

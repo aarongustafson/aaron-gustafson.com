@@ -3,6 +3,8 @@ layout: default
 single: true
 ---
 
+{% capture this_url %}{{ site.url }}{{ page.url }}{% endcapture %}
+
 <article role="article" class="layout-container__primary">
 	<div class="entry">
 		<header class="entry__header">
@@ -13,7 +15,8 @@ single: true
 	        		This will take {{ content | reading_time_as_i }} to read
 
 					{% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
-						| <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">Comments</a>
+						| <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ this_url }}{% endif %}">Comments</a>
+						| <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#webmentions">Webmentions</a>
 	        		{% endif %}
 	      		</p>
 
@@ -42,7 +45,7 @@ single: true
 		{% if site.disqus_short_name and page.comments == true %}
 			<hr>
 
-			<section class="entry__comments">
+			<section id="disqus" class="entry__comments">
 				<h1>Comments</h1>
 				<div id="disqus_thread" aria-live="polite">
 					{% include post/disqus_thread.html %}
@@ -50,6 +53,13 @@ single: true
 			</section>
 		{% endif %}
 		
+		<hr>
+
+		<section id="webmentions" class="entry__comments">
+			<h1>Webmentions</h1>
+			{% include post/webmentions.html %}
+		</section>
+
 	</div>
 </article>
 	
@@ -66,3 +76,5 @@ single: true
 		{% include asides/related_posts.html %}
 	</aside>
 {% endunless %}
+
+<script src="/j/post.min.js" async></script>
