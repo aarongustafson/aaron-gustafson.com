@@ -254,8 +254,8 @@ a.youtube-lazy-link:hover {
 \*------------------------------------*/
 html body, dl, dl dt,
 dl dd {
-  margin: 0 0 20px;
-  margin: 0 0 1.25rem;
+  margin: 0 0 22px;
+  margin: 0 0 1.375rem;
   font-weight: normal;
   line-height: 1.4;
 }
@@ -332,8 +332,6 @@ html body {
   color: #2c2825;
   font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 400;
-  font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   margin: 0 auto;
   max-width: 960px;
   max-width: 60rem;
@@ -372,14 +370,14 @@ h3 {
     Block-level Semantics
 \*------------------------------------*/
 blockquote {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 16px;
+  font-size: 1rem;
   font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
   font-style: italic;
-  margin: 20px auto;
-  margin: 1.25rem auto;
-  padding: 0 20px;
-  padding: 0 1.25rem;
+  margin: 22px auto;
+  margin: 1.375rem auto;
+  padding: 0 22px;
+  padding: 0 1.375rem;
   max-width: 700px;
   max-width: 43.75rem;
 }
@@ -395,16 +393,16 @@ blockquote > :last-child {
 .blockquote__attribution {
   font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
   margin: 0;
-  padding-left: 40px;
-  padding-left: 2.5rem;
+  padding-left: 44px;
+  padding-left: 2.75rem;
 }
 .blockquote__attribution cite {
   font-style: normal;
 }
 
 p {
-  margin: 0 0 20px;
-  margin: 0 0 1.25rem;
+  margin: 0 0 22px;
+  margin: 0 0 1.375rem;
   font-weight: normal;
   line-height: 1.4;
 }
@@ -422,8 +420,8 @@ p {
 ol,
 ul {
   line-height: 1.4;
-  margin: 0 20px 20px;
-  margin: 0 1.25rem 1.25rem;
+  margin: 0 22px 22px;
+  margin: 0 1.375rem 1.375rem;
 }
 
 dl dt,
@@ -547,8 +545,8 @@ picture {
 .media-container {
   max-width: 600px;
   margin: auto;
-  margin-bottom: 20px;
-  margin-bottom: 1.25rem;
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
 }
 
 /*------------------------------------*\
@@ -556,8 +554,8 @@ picture {
 \*------------------------------------*/
 table {
   border-collapse: collapse;
-  margin: 0 0 20px;
-  margin: 0 0 1.25rem;
+  margin: 0 0 22px;
+  margin: 0 0 1.375rem;
   width: 100%;
   min-width: 100px;
 }
@@ -607,8 +605,8 @@ table th[colspan] {
     Form Styles
 \*------------------------------------*/
 form {
-  margin: 0 0 20px;
-  margin: 0 0 1.25rem;
+  margin: 0 0 22px;
+  margin: 0 0 1.375rem;
 }
 form ul,
 form ol {
@@ -619,8 +617,8 @@ form li {
 }
 
 .fields__group {
-  margin: 0 0 20px;
-  margin: 0 0 1.25rem;
+  margin: 0 0 22px;
+  margin: 0 0 1.375rem;
 }
 .fields__group:last-child {
   margin: 0;
@@ -721,15 +719,15 @@ form li {
     Header
 \*------------------------------------*/
 .banner {
-  padding: 20px;
-  padding: 1.25rem;
+  padding: 22px;
+  padding: 1.375rem;
 }
 
 .alert {
   background: #2c2825;
   color: #fff;
-  margin: 0 0 20px;
-  margin: 0 0 1.25rem;
+  margin: 0 0 22px;
+  margin: 0 0 1.375rem;
   padding: 5px;
   padding: 0.3125rem;
   text-align: center;
@@ -746,16 +744,16 @@ form li {
     Main
 \*------------------------------------*/
 main {
-  padding: 20px;
-  padding: 1.25rem;
+  padding: 22px;
+  padding: 1.375rem;
 }
 
 /*------------------------------------*\
     Footer
 \*------------------------------------*/
 .footer {
-  padding: 20px;
-  padding: 1.25rem;
+  padding: 22px;
+  padding: 1.375rem;
 }
 .footer p {
   margin: 0;
@@ -769,13 +767,13 @@ main {
     Listing
 \*------------------------------------*/
 .listing {
-  margin: 0 0 20px;
-  margin: 0 0 1.25rem;
+  margin: 0 0 22px;
+  margin: 0 0 1.375rem;
 }
 .listing__item {
   margin: 0;
-  padding: 10px 0;
-  padding: 0.625rem 0;
+  padding: 11px 0;
+  padding: 0.6875rem 0;
 }
 .listing__item:last-child {
   border-bottom-width: 0;
@@ -794,16 +792,16 @@ main {
     Blog Entry
 \*------------------------------------*/
 .entry {
-  margin: 0 0 20px;
-  margin: 0 0 1.25rem;
+  margin: 0 0 22px;
+  margin: 0 0 1.375rem;
 }
 .entry__meta {
   color: #666;
 }
 .entry__footer {
   border-top: 1px solid #DDD;
-  padding-top: 20px;
-  padding-top: 1.25rem;
+  padding-top: 22px;
+  padding-top: 1.375rem;
 }
 .entry--teaser .entry__footer {
   border-top: 0;
@@ -816,6 +814,8 @@ main {
 div.gist {
   font-size: 14px;
   font-size: 0.875rem;
+  margin: 0 0 22px;
+  margin: 0 0 1.375rem;
 }
 div.gist table {
   margin: 0;
@@ -839,8 +839,8 @@ div.gist div.file-data {
 .rule {
   border: 0;
   border-top: 1px solid #DDD;
-  margin: 20px auto;
-  margin: 1.25rem auto;
+  margin: 22px auto;
+  margin: 1.375rem auto;
   max-width: 200px;
 }
 
@@ -848,21 +848,21 @@ div.gist div.file-data {
     Post
 \*------------------------------------*/
 .page__title {
-  margin-bottom: 40px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 44px;
+  margin-bottom: 2.75rem;
 }
 .page__footer {
   border-top: 1px solid #DDD;
-  padding-top: 20px;
-  padding-top: 1.25rem;
+  padding-top: 22px;
+  padding-top: 1.375rem;
 }
 
 /*------------------------------------*\
     Webmentions
 \*------------------------------------*/
 .webmentions {
-  margin-top: 10px;
-  margin-top: 0.625rem;
+  margin-top: 11px;
+  margin-top: 0.6875rem;
 }
 
 .webmentions__list {
@@ -875,8 +875,8 @@ div.gist div.file-data {
   clear: both;
   border-top: 1px solid #DDD;
   margin: 0;
-  padding: 20px 0 20px 68px;
-  padding: 1.25rem 0 1.25rem 4.25rem;
+  padding: 22px 0 22px 70px;
+  padding: 1.375rem 0 1.375rem 4.375rem;
   min-height: 48px;
   min-height: 3rem;
   position: relative;
@@ -893,8 +893,8 @@ div.gist div.file-data {
   height: 48px;
   height: 3rem;
   position: absolute;
-  top: 20px;
-  top: 1.25rem;
+  top: 22px;
+  top: 1.375rem;
   left: 0;
 }
 

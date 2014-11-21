@@ -152,13 +152,6 @@
 }
 
 
-@mixin nicer-font-display {
-    font-smoothing: antialiased;
-    // Just for FF Mac
-    -moz-osx-font-smoothing: grayscale;
-}
-
-
 @mixin moz {
     @-moz-document url-prefix() {
         @content;

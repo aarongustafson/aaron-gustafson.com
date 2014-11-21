@@ -7,6 +7,7 @@
     div.gist {
         
         @include rem( font-size, $font-size-code );
+        @include rem( margin, $margin-default );
         
         table {
             margin: 0;

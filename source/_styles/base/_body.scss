@@ -42,7 +42,6 @@
 
 	        font-family: $font-stack-body;
 	        font-weight: $font-weight-sansserif;
-	        @include nicer-font-display;
 
 	        margin: 0 auto;
 			@include rem( max-width, 960 );

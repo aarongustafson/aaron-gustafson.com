@@ -5,11 +5,11 @@ single: true
 
 {% capture this_url %}{{ site.url }}{{ page.url }}{% endcapture %}
 
-<article role="article" class="layout-container__primary">
+<article role="article" class="layout-container__primary h-entry">
 	<div class="entry">
 		<header class="entry__header">
-	     	<h1 class="entry__title entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
-
+	     	<h1 class="entry__title p-name">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+			
 			{% unless page.meta == false %}
 				<p class="entry__meta">
 	        		This will take {{ content | reading_time_as_i }} to read
@@ -19,11 +19,15 @@ single: true
 						| <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#webmentions">Webmentions</a>
 	        		{% endif %}
 	      		</p>
-
 	    	{% endunless %}
 	  	</header>
+	
+		{% if page.reply_to_url %}
+			<p class="entry__in-reply-to">You are reading a reply to 
+				<a class="u-in-reply-to" href="{{ page.reply_to_url }}">{{ page.reply_to_title }}</a></p>
+    	{% endif %}
 
-		<div class="entry__content entry-content">
+		<div class="entry__content e-content">
 			{{ content }}
 		</div>
 
@@ -34,10 +38,14 @@ single: true
 
 			<p class="entry__meta">
 				This entry was posted on {% include post/date.html %} 
-				<b class="hidden">by <a class="entry__author" href="/about">Aaron Gustafson</a></b>
+				<b class="hidden">by <a class="p-author h-card" href="/about">Aaron Gustafson</a></b>
+				{% if page.in_reply_to %}
+					<b class="hidden">in reply to <a class="u-in-reply-to" href="{{ page.in_reply_to }}">{{ page.in_reply_to }}</a></b>
+				{% endif %}
 				and was filed under: {% include post/categories.html %}
 				{% if page.canonical and page.canonical_site %}
-					| <b class="entry__canonical">It originally appeared on <a href="{{ page.canonical }}">{{ page.canonical_site }}</a>.
+					| <b class="entry__canonical">It originally appeared on 
+					<a class="u-repost-of" href="{{ page.canonical }}">{{ page.canonical_site }}</a>.
 				{% endif %}
 			</p>
 		</footer>
@@ -69,6 +77,31 @@ single: true
 	<aside class="layout-container__secondary">
 		{% if site.post_asides.size %}
     		{% include_array post_asides %}
+			{% comment %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% include_array post_asides %}
+			{% endcomment %}
 		{% else %}
    			{% include_array default_asides %}
 		{% endif %}

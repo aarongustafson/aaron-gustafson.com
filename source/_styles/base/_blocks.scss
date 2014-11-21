@@ -5,7 +5,7 @@
 
 	blockquote {
 
-	    @include rem( font-size, 18 );
+	    @include rem( font-size, $font-size-default );
 	    font-family: $font-stack-sansserif;
 	    font-style: italic; 
 	    

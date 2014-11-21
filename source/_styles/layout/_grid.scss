@@ -93,6 +93,7 @@
         @include breakup-breakpoint( "full" ) {
             @include span( last 3 of map-get( $grid-breakpoints, "full" ) $grid-full-column-sizes fluid );
             margin-right: 0;
+            @include rem( padding-top, 35 );
         }
         
     }

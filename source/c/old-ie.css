@@ -59,13 +59,13 @@
     Block-level Semantics
 \*------------------------------------*/
 blockquote {
-  padding: 0 20px;
-  padding: 0 1.25rem;
+  padding: 0 22px;
+  padding: 0 1.375rem;
 }
 
 blockquote {
-  padding: 0 40px;
-  padding: 0 2.5rem;
+  padding: 0 44px;
+  padding: 0 2.75rem;
 }
 
 /*------------------------------------*\

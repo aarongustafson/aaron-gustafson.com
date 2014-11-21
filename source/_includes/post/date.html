@@ -8,18 +8,13 @@
 
 {% if has_date != '0' %}
 	{% capture time %}
-		<time class="entry-date" datetime="{{ date | datetime | date_to_xmlschema }}"
-			{% if updated %} data-updated="true"{% endif %}>{{ date_formatted }}</time>
-	{% endcapture %}
+		<time class="dt-published" datetime="{{ date | datetime | date_to_xmlschema }}">{{ date_formatted }}</time>{% endcapture %}
 {% endif %}
 
 {% if was_updated != '0' %}
 	{% capture updated %}
-		<time datetime="{{ updated | datetime | date_to_xmlschema }}" class="entry-updated">Updated 
-			{{ updated_formatted }}</time>
-	{% endcapture %}
-{% else %}
-	{% assign updated = false %}
+		updated on
+		<time class="dt-updated" datetime="{{ updated | datetime | date_to_xmlschema }}">{{ updated_formatted }}</time>{% endcapture %}
 {% endif %}
 
-{{ time }} {% if updated %}, {{ updated }} {% endif %}
+{{ time }}{% if was_updated != '0' %}, {{ updated }},{% endif %}
