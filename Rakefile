@@ -447,7 +447,11 @@ task :webmention do
           endpoint = `curl -s --location "#{target}" | grep 'rel="webmention"'`
           if endpoint
             endpoint.scan(/href="([^"]+)"/) do |endpoint_url|
-              `curl -i -d "source=#{source}&target=#{target}" "#{endpoint_url}"`
+              endpoint_url = endpoint_url[0]
+              puts "Sending webmention of #{source} to #{endpoint_url}"
+              command =  "curl -s -i -d \"source=#{source}&target=#{target}\" #{endpoint_url}"
+              # puts command
+              system command
             end
             sent_webmentions[source].push( target )
           end
