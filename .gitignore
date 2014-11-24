@@ -1,6 +1,6 @@
 .bundle
 .DS_Store
-.cache
+.webmention-cache
 .sass-cache
 .gist-cache
 .pygments-cache

@@ -1,6 +1,7 @@
 require "rubygems"
 require "bundler/setup"
 require "stringex"
+require 'uri'
 
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
@@ -26,7 +27,6 @@ themes_dir      = ".themes"   # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 new_page_ext    = "markdown"  # default new page file extension when using the new_page task
 server_port     = "4000"      # port for preview server eg. localhost:4000
-cache_dir       = '.cache'    # generic caching directory
 
 if (/cygwin|mswin|mingw|bccwin|wince|emx/ =~ RUBY_PLATFORM) != nil
   puts '## Set the codepage to 65001 for Windows machines'
@@ -409,22 +409,51 @@ end
 # Custom     #
 ##############
 
-if ! File.directory?(cache_dir)
-  mkdir_p cache_dir
+desc "Generate website, add, commit and deploy"
+task :go do
+    system "git add ."
+    message = "Site updated at #{Time.now.utc}"
+    system "git commit -am \"#{message}\""
+    Rake::Task[:integrate].execute
+    Rake::Task[:generate].execute
+    system "git push origin source"
+    Rake::Task[:deploy].execute
+    Rake::Task[:webmention].execute
 end
 
 desc "Trigger webmentions"
 task :webmention do
-  cache_file = "#{cache_dir}/webmentions.yml"
-  webmentions = {}
-  if ! File.exists?("#{cache_dir}/#{cache_file}")
-    webmentions.merge!('http://test.com'=>['foo.bar','bar.baz'])
-    File.open(cache_file, 'w') { |f| YAML.dump(webmentions, f) }
+  # Caches
+  webmention_cache = '.webmention-cache'    # generic caching directory
+  FileUtils.mkdir_p( webmention_cache )
+  cache_all_webmentions = "#{webmention_cache}/webmentions.yml"
+  cache_sent_webmentions = "#{webmention_cache}/sent_webmentions.yml"
+  if File.exists?(cache_all_webmentions)
+    if File.exists?(cache_sent_webmentions)
+      sent_webmentions = open(cache_sent_webmentions) { |f| YAML.load(f) }
+    else
+      sent_webmentions = {}
+    end
+    all_webmentions = open(cache_all_webmentions) { |f| YAML.load(f) }
+    all_webmentions.each_pair do |source, targets|
+      if ! sent_webmentions[source] or ! sent_webmentions[source].kind_of?(Array)
+        sent_webmentions[source] = Array.new
+      end
+      targets.each do |target|
+        if target and ! sent_webmentions[source].find_index( target )
+          if target.index( "//" ) == 0
+            target  = "http:#{target}"
+          end
+          endpoint = `curl -s --location "#{target}" | grep 'rel="webmention"'`
+          if endpoint
+            endpoint.scan(/href="([^"]+)"/) do |endpoint_url|
+              `curl -i -d "source=#{source}&target=#{target}" "#{endpoint_url}"`
+            end
+            sent_webmentions[source].push( target )
+          end
+        end
+      end
+    end
+    File.open(cache_sent_webmentions, 'w') { |f| YAML.dump(sent_webmentions, f) }
   end
-  webmentions = open(cache_file) { |f| YAML.load(f) }
-  if webmentions.has_key?("http://test.com")
-    puts "Found http://test.com"
-  end
-  puts "## Loop files and ignore already mentioned ones"
-  File.open(cache_file, 'w') { |f| YAML.dump(webmentions, f) }
 end

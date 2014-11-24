@@ -31,7 +31,7 @@
         }
     }
     
-    .webmention--author-starts .fn {
+    .webmention--author-starts .h-card .p-name {
         @include breakup-placeholder( hidden );
     }
     

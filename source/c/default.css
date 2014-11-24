@@ -269,7 +269,7 @@ dl .wf-active dd {
   margin: 0;
   padding: 0;
 }
-.hidden, object[data^="#"], .webmention--author-starts .fn {
+.hidden, object[data^="#"], .webmention--author-starts .h-card .p-name {
   position: absolute !important;
   height: 1px;
   width: 1px;
