@@ -27,11 +27,12 @@ email:
 
 gems:
   - jekyll-time-to-read
+  - jekyll-redirect-from
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
 root: /
 blog_index_dir: /notebook/
-permalink: /notebook/:year/:title/
+permalink: /notebook/:title/
 source: source
 destination: public
 plugins: plugins
@@ -74,14 +75,14 @@ page_asides: [asides/about.html,asides/networks.html,asides/events.html]
 navigation:
   - text: <b class="hidden">A Bit </b>About<b class="hidden"> Me</b>
     url: /about/
-  - text: <b class="hidden">A List of My </b>Books
-    url: /books/
-  - text: <b class="hidden">Links to My </b>Articles
-    url: /articles/
-  - text: <b class="hidden">Links to </b>Interviews<b class="hidden"> &amp; Such I’ve Given</b>
-    url: /appearances/
   - text: <b class="hidden">Entries in My </b>Notebook
     url: /notebook/
+  - text: <b class="hidden">A List of My </b>Speaking<b class="hidden"> Engagements</b>
+    url: /speaking-engagements/
+  - text: <b class="hidden">A List of My </b>Publications
+    url: /publications/
+  - text: <b class="hidden">Links to </b>Interviews<b class="hidden"> I’ve Given</b>
+    url: /appearances/
   - text: <b class="hidden">The Requisite </b>Contact<b class="hidden"> Form</b>
     url: /contact/
 

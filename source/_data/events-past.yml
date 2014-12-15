@@ -1,7 +1,28 @@
+- title: Chattanooga City Employees Lunch &amp; Learn
+  date: 2014-12-10 12:00:00 -0400
+  location: Chattanooga, TN USA
+
+- title: Chattanooga Developer’s Lunch
+  url: https://www.youtube.com/watch?feature=player_embedded&v=2V0JU10H3Ro
+  date: 2014-12-04 12:00:00 -0400
+  location: Chattanooga, TN USA
+
+- title: Talk @ Google
+  date: 2014-11-13 12:00:00 -0400
+  location: Cambridge, MA USA
+
+- title: Mullen Smart Stop
+  date: 2014-11-12 12:00:00 -0400
+  location: Boston, MA USA
+
 - title: Beyond The Desktop
   url: http://lanyrd.com/2014/bdconf-2/
   date: 2014-11-03 09:00:00 -0400
   location: Orlando, FL USA
+
+- title: Private Workshop &amp; Consulting
+  date: 2014-10-27 09:00:00 -0400
+  location: Raleigh, NC USA
 
 - title: a11yqc
   url: http://lanyrd.com/2014/a11yqc/
@@ -43,10 +64,14 @@
   date: 2014-05-18 12:00:00 +0100
   location: Düsseldorf, Germany
 
-- title: "Responsive Design and Beyond Workshop"
+- title: “Responsive Design and Beyond” Workshop
   url: http://codeandcreativity.com/workshops/responsive-design-and-beyond/
   date: 2014-05-02 09:00:00 -0400
   location: Chattanooga, TN USA
+  
+- title: Private Workshop
+  date: 2014-03-26 09:00:00 -0400
+  location: Bethesda, MD USA
   
 - title: Awwwards - Love Days
   url: http://lanyrd.com/2014/awwwardsoffday/
@@ -93,6 +118,10 @@
   date: 2013-09-04 09:00:00 +0000
   location: Brighton, England
 
+- title: Private Workshop
+  date: 2013-08-07 09:00:00 +0100
+  location: Chicago, IL USA
+
 - title: Beyond Tellerrand
   url: http://lanyrd.com/2013/btconf/
   date: 2013-05-27 09:00:00 +0100
@@ -128,6 +157,10 @@
   date: 2013-03-08 09:00:00 -0600
   location: Austin, TX USA
 
+- title: Private Workshop
+  date: 2012-12-02 09:00:00 -0400
+  location: Santa Clara, CA USA
+
 - title: User Interface
   url: http://lanyrd.com/2012/uiconf17/
   date: 2012-11-05 09:00:00 -0400
@@ -137,6 +170,14 @@
   url: http://lanyrd.com/2012/how-interactive-san-francisco/
   date: 2012-10-29 09:00:00 -0700
   location: San Francisco, CA USA
+
+- title: Private Workshop
+  date: 2012-10-15 09:00:00 -0400
+  location: Madison, WI USA
+
+- title: Private Workshop
+  date: 2012-06-12 09:00:00 -0400
+  location: Raleigh, NC USA
 
 - title: WebVisions Portland
   url: http://lanyrd.com/2012/webvisions-portland/

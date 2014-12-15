@@ -1,1 +1,0 @@
-{{ site.data.microcopy.events.after }}

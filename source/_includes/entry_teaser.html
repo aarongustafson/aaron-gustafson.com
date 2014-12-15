@@ -21,6 +21,6 @@
 {% if excerpted == 'true' %}
 	<footer class="entry__footer">
 		<a rel="full-article" href="{{ root_url }}{{ post.url }}">You can finish reading
-			<cite>{{ post.title }}</cite> in less than {{ post.content | reading_time_as_i }} &rarr;</a>
+			<cite>{{ post.title }}</cite> in less than {{ post.content | reading_time_as_i }}&nbsp;&rarr;</a>
 	</footer>
 {% endif %}

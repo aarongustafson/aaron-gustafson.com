@@ -6,6 +6,7 @@ comments: true
 categories: ["web design", "web development", JavaScript, "software development"]
 description: "I couldn’t comment directly on Stuart Langridge’s response to my last post, so here goes…"
 in_reply_to: http://www.kryogenix.org/days/2014/09/19/fundamentally-connected
+redirect_from: /notebook/2014/missed-connections/
 ---
 
 Earlier today, [Stuart Langridge](http://www.kryogenix.org)—who I worked with on WaSP’s DOM Scripting Task Force and have the utmost respect for—[published a blog response](http://www.kryogenix.org/days/2014/09/19/fundamentally-connected/) to [my last post](http://aaron-gustafson.com/notebook/2014/a-fundamental-disconnect/). In it, he made some good points I wanted to highlight, but he also misunderstood one thing I said and managed to avoid addressing the core of my argument. As comments aren’t enabled on his site, I thought I’d respond here.

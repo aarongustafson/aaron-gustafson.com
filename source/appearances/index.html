@@ -10,7 +10,7 @@ footer: true
 
 <h1 class="page__title">Interviews &amp; Appearances</h1>
 
-{% render_partial _microcopy/appearances-before.markdown %}
+{{ site.data.microcopy.appearances.intro | markdownify }}
 
 <ul class="listing">
 	{% for appearance in site.data.appearances %}
@@ -36,4 +36,12 @@ footer: true
 	{% endfor %}
 </ul>
 
-{% render_partial _microcopy/appearances-after.markdown %}
+<p>{{ site.data.microcopy.appearances.citations_intro }}
+	{% for book in site.data.book-citations %}
+		{% if forloop.index == forloop.length %}
+			and
+		{% endif %}
+		<a href="{{ book.url }}">{{ book.title }}</a> by
+		{{ book.author }}{% if forloop.index == forloop.length %}.{% else %},{% endif %}
+	{% endfor %}
+</p>

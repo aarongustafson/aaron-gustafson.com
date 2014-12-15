@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article role="article">
+<article role="article" class="layout-container__primary h-entry">
 
   	{% if page.title %}
 		{% unless page.show_title == false %}
@@ -33,18 +33,15 @@ layout: default
 
 </article>
 
-{% if site.disqus_short_name and page.comments == true %}
-  	<section>
-    	<h1>Comments</h1>
-    	<div id="disqus_thread" aria-live="polite">{% include post/disqus_thread.html %}</div>
-  	</section>
-{% endif %}
-
 {% unless page.sidebar == false %}
 	<hr class="rule rule--optional">
 
-	<aside class="sidebar">
-  		{% if site.page_asides.size %}
+	<aside class="layout-container__secondary">
+  		{% if page.sidebars %}
+			{% for sidebar in page.sidebars %}
+				{% include {{ sidebar }} %}
+			{% endfor %}
+		{% elsif site.page_asides.size %}
     		{% include_array page_asides %}
   		{% else %}
     		{% include_array default_asides %}

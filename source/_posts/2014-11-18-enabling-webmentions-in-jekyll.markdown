@@ -5,6 +5,7 @@ date: 2014-11-18 17:01:08 -0500
 comments: true
 categories:  ["blogging", "web design", "indie web", "self-publishing", "decentralization"]
 description: "A chronicle of my effort to get webmentions and Jekyll playing nicely together."
+redirect_from: /notebook/2014/enabling-webmentions-in-jekyll/
 ---
 
 While I am really happy with my choice to move away from a dynamic website/blog to a static one—powered by [Octopress](http://octopress.org/), hosted for free on [Github](https://github.com)—it’s been pretty limiting when it comes to integrating comments and other more necessarily dynamic components.

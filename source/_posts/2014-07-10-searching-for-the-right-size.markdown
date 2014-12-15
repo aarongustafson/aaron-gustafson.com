@@ -4,6 +4,7 @@ title: Searching for the “Right Size”
 date: 2014-07-10 20:38:16 -0400
 comments: true
 categories: [mobile,screens]
+redirect_from: /notebook/2014/searching-for-the-right-size/
 ---
 
 This [recent piece from <cite>Wired</cite>](http://www.wired.com/2014/07/what-a-stalling-tablet-market-says-about-our-search-for-the-perfect-screen/) attributes dwindling tablet sales to cannibalization from larger mobile phones (<abbr title="also known as">aka</abbr> “phablets”) which are nearly as big as 7-8˝ tablets:

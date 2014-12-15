@@ -5,6 +5,7 @@ date: 2014-11-04 14:58:01 -0500
 comments: true
 categories: [CSS, W3C, "web standards", "web design", "web development"]
 description: "For numerous reasons outlined herein, I’m not convinced there’s an upside to CSS variables."
+redirect_from: /notebook/2014/css-variables-are-a-bad-idea/
 ---
 
 I’ll level with you: I used to think I wanted variables in CSS.

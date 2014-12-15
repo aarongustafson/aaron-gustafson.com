@@ -1,16 +1,21 @@
-- title: "Responsive Typography: "
+- title: "Responsive Typography"
   subtitle: "Using Type Well on the Web"
   author: "Jason Pamental"
   meta: "Foreword by Aaron Gustafson"
   published: 2014-10-06 12:00:00 -0500
+  cover: "responsive-typography"
+  width: 152,
   sales_url: "http://www.amazon.com/gp/product/1491907096/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1491907096&linkCode=as2&tag=easydesign-20&linkId=JC6INFXF3DHODKEM"
   sales_channel: "Amazon"
   notes: "Jason is a super-smart dude and you totally owe it to yourself to read this book. It is filled with tons of practical advice on working with type on the Web. Oh, and I wrote [the foreword](http://aaron-gustafson.com/notebook/2014/responsive-typography/)."
 
 - title: "A Web For Everyone"
+  subtitle: "Designing Accessible User Experiences"
   author: "Sarah Horton and Whitney Quesenbery"
   meta: "Foreword by Aaron Gustafson"
   published: 2014-01-16 12:00:00 -0500
+  cover: "a-web-for-everyone"
+  width: 134,
   sales_url: "http://amzn.to/1pizZXD"
   sales_channel: "Amazon"
   notes: "I was honored when Sarah Horton and Whitney Quesenbery approached me to write [the foreword](http://blog.easy-designs.net/archives/a-web-for-everyone/) for this incredibly important book on accessibility. I highly recommend it to anyone looking to really understand what accessibility is all about and who is looking for inspiration for designing more inclusively."
@@ -19,6 +24,8 @@
   subtitle: "New Perspectives on Web Design"
   author: "Aaron Gustafson, et al"
   published: 2013-11-25 12:00:00 -0500
+  cover: "smashing-book-4"
+  width: 144,
   sales_url: "http://www.smashingmagazine.com/smashing-book-4-new-perspectives/#your-smashing-book"
   sales_channel: "the Smashing Shop"
   notes: "Smashing Magazine’s books are legendarily epic and, clocking in at 498 pages, this is no light read. That said, it is chock full of some of the best and most important writing about the world of web design out there. I contributed a chapter on planning adaptive interfaces."
@@ -27,6 +34,8 @@
   author: "Tim Kadlec"
   meta: "Foreword by Aaron Gustafson"
   published: 2012-08-10 13:00:00 -0400
+  cover: "implementing-responsive-design"
+  width: 156,
   sales_url: "http://amzn.to/1vXqIs6"
   sales_channel: "Amazon"
   notes: "Tim Kadlec is one of those brilliant individuals who really gets the Web. His book on responsive design is a must-read for its practical approach and thorough coverage. I was stoked he asked me to write [the foreword](http://blog.easy-designs.net/archives/implementing-responsive-design/)."
@@ -35,6 +44,8 @@
   subtitle: "Crafting Rich Experience with Progressive Enhancement"
   author: "Aaron Gustafson"
   published: 2011-05-30 13:00:00 -0400
+  cover: "adaptive-web-design"
+  width: 129,
   sales_url: "http://easy-readers.net/books/adaptive-web-design/"
   sales_channel: "Easy Readers"
   notes: "In this brief book, I chronicle the origins of progressive enhancement—its philosophy and mechanisms—and reveal the countless practical ways you can apply progressive enhancement principles in HTML, CSS, and JavaScript. By understanding progressive enhancement and how to apply it properly, you can craft experiences that serve users (rather than browsers), giving them access to your content from anywhere."
@@ -43,6 +54,8 @@
   subtitle: "Filling in the Blanks"
   author: "Luke Wroblewski"
   published: 2008-05-02 13:00:00 -0400
+  cover: "web-form-design"
+  width: 134,
   sales_url: "http://amzn.to/1piVKXw"
   sales_channel: "Amazon"
   notes: "Luke asked me to contribute a perspective on developing web forms in HTML to his seminal exploration of form design. This is a must-read book if you don’t have a copy."
@@ -52,6 +65,8 @@
   author: "Jonathan Snook"
   meta: "with Aaron Gustafson, Stuart Langridge, Dan Webb"
   published: 2007-09-25 13:00:00 -0400
+  cover: "accelerated-dom-scripting"
+  width: 152,
   sales_url: "http://amzn.to/1uFyiVT"
   sales_channel: "Amazon"
   notes: "When I was asked to contribute a chapter to Jonathan Snook’s book on JavaScript, I was floored. I got to pick the topic, so I wrote about upgrading FAQ pages with JavaScript."
@@ -61,6 +76,8 @@
   author: "Jeffrey Sambells"
   meta: "with Aaron Gustafson"
   published: 2007-08-03 13:00:00 -0400
+  cover: "advanced-dom-scripting"
+  width: 167,
   sales_url: "http://amzn.to/TaoffD"
   sales_channel: "Amazon"
   notes: "I contributed a chapter exploring the creation of a custom-designed, accessible `select` element to Jeffrey Sambells’ advanced JavaScript technique book."
@@ -69,6 +86,8 @@
   author: "Jennifer Robbins"
   meta: "with Tantek Çelik, Derek Featherstone, and Aaron Gustafson"
   published: 2006-03-06 12:00:00 -0500
+  cover: "web-design-in-a-nutshell"
+  width: 134,
   sales_url: "http://amzn.to/1rbJycl"
   sales_channel: "Amazon"
   notes: "Jen Robbins’s <cite>Web Design in a Nutshell</cite> is the prefect desktop reference for all things web design-related. I contributed three chapters to the 3rd edition, covering CSS, JavaScript, and the DOM."

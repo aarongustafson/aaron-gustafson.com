@@ -17,25 +17,13 @@ footer: true
 		<div class="layout-container__primary">
 		
 			{% capture about %}{% include about.markdown %}{% endcapture %}
-			{{ about | markdownify }}
-
-		</div>
-		<div class="layout-container__secondary">
-
-			<h2>You can stalk me on the following networks:</h2>
-			<ul class="link-list link-list--social">
-				{% for link in site.data.links %}
-					{% if link.category == 'profile' %}
-						<li class="link-list__item link-list__item--{{ link.site | downcase }}">
-							<a href="{{ link.url }}" title="{{ link.title }}">{{ link.site }}</a>
-						</li>
-					{% endif %}
-				{% endfor %}
-			</ul>
+			{{ about | excerpt | markdownify }}
 
 		</div>
 	</div>
 </section>
+
+{% comment %}
 
 <hr class="rule rule--optional">
 
@@ -204,3 +192,5 @@ footer: true
 	<p class="more">See a complete list of <a href="/appearances">my appearances &amp; interviews</a>.</p>
 
 </section>
+
+{% endcomment %}

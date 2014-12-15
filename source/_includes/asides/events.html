@@ -2,8 +2,9 @@
 	{% for event in site.data.events-future limit:4 %}
 
 		{% if forloop.first %}
-			<section>
+			<section class="module module--events">
 				<h1>Let’s Meet Up</h1>
+				{{ site.data.microcopy.sidebar.events | markdownify }}
 				<ul class="listing listing--events">
 		{% endif %}
 
@@ -22,7 +23,7 @@
 		</li>
 	
 		{% if forloop.last %}
-					<li class="more"><a href="/events/#future-events">See More<b class="hidden"> Events</b></a></li>
+					<li class="more"><a href="/speaking-engagements/#future-events">See More<b class="hidden"> Events</b></a></li>
 				</ul>
 			</section>
 		{% endif %}

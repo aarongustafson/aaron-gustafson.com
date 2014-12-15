@@ -1,0 +1,71 @@
+---
+layout: page
+title: The Speaking Engagements of
+description: "I’ve spoken at my fair share of events over the years. Here’s a collection of them."
+show_title: false
+show_events: false
+footer: true
+sidebars: [asides/about.html,asides/speaking.html]
+---
+
+<h1 class="page__title">A Complete List of My Conferences &amp; Workshops</h1>
+
+<p>{{ site.data.microcopy.speaking_engagements.intro_pre_count }}
+{% for event in site.data.events-past %}
+	{% if forloop.index == 1 %}
+		{{ forloop.length }}
+	{% endif %}
+{% endfor %}
+{{ site.data.microcopy.speaking_engagements.intro_post_count }}</p>
+
+{{ site.data.microcopy.speaking_engagements.contact | markdownify }}
+
+<h2 id="future-events">In the Future</h2>
+
+{% unless site.data.events-future %}
+	{{ site.data.microcopy.speaking_engagements.no_upcoming | markdownify }}
+{% endunless %}
+
+{% for event in site.data.events-future %}
+	{% if forloop.first %}
+		<ul class="listing listing--events">
+	{% endif %}
+
+	<li class="listing__item listing__item--{{ forloop.index }} event event--future">
+		<h3 class="listing__item__title event__title">
+			{% if event.url %}
+				<a href="{{ event.url }}">{{ event.title }}</a>
+			{% else %}
+				{{ event.title }}
+			{% endif %}
+		</h3>
+		<p class="listing__item__meta">
+			<b class="event__date">{{ event.date | date: "%B %Y" }}</b>
+			<b class="event__location">{{ event.location }}</b>
+		</p>
+	</li>
+
+	{% if forloop.last %}
+		</ul>
+	{% endif %}
+{% endfor %}
+
+<h2 id="past-events">In the Past</h2>
+
+<ul class="listing listing--events">
+	{% for event in site.data.events-past %}
+		<li class="listing__item listing__item--{{ forloop.index }} event event--past">
+			<h3 class="listing__item__title event__title">
+				{% if event.url %}
+					<a href="{{ event.url }}">{{ event.title }}</a>
+				{% else %}
+					{{ event.title }}
+				{% endif %}
+			</h3>
+			<p class="listing__item__meta">
+				<b class="event__date">{{ event.date | date: "%B %Y" }}</b>
+				<b class="event__location">{{ event.location }}</b>
+			</p>
+		</li>
+	{% endfor %}
+</ul>

@@ -35,3 +35,7 @@
 {% if page.canonical %}
 	<link rel="canonical" href="{{ page.canonical }}">
 {% endif %}
+
+{% if page.redirect_from %}
+	<meta property="webmention:redirected_from" content="{{ page.redirect_from | join: ',' }}">
+{% endif %}

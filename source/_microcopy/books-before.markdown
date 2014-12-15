@@ -1,1 +1,0 @@
-<p>{{ site.data.microcopy.books.intro }}</p>

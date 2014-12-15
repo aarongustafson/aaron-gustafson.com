@@ -7,6 +7,7 @@ categories: ["web design","browsers","design","mobile","native"]
 comments: true
 canonical: http://blog.easy-designs.net/archives/the-native-vs-stylable-tug-of-war/
 canonical_site: The Easy Designs Blog
+redirect_from: /notebook/2014/the-native-vs-stylable-tug-of-war/
 ---
 
 In his astute post [“‘Native experience’ vs styling select boxes”](//www.brucelawson.co.uk/2014/native-experience-vs-styling-select-boxes/), Bruce Lawson correctly identified a common tension in the web world:

@@ -1,9 +1,0 @@
-<p>{{ site.data.microcopy.events.intro_pre_count }}
-{% for event in site.data.events-past %}
-	{% if forloop.index == 1 %}
-		{{ forloop.length }}
-	{% endif %}
-{% endfor %}
-{{ site.data.microcopy.events.intro_post_count }}</p>
-
-{{ site.data.microcopy.events.contact | markdownify }}

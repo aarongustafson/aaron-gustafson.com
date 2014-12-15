@@ -50,6 +50,8 @@ GEM
       jekyll (>= 1.0.0)
     jekyll-page-hooks (1.2.0)
       jekyll (>= 2.0.0)
+    jekyll-redirect-from (0.6.2)
+      jekyll (~> 2.0)
     jekyll-sass-converter (1.0.0)
       sass (~> 3.2)
     jekyll-sitemap (0.4.1)
@@ -122,6 +124,7 @@ DEPENDENCIES
   jekyll (~> 2.0)
   jekyll-date-format (~> 1.0)
   jekyll-page-hooks (~> 1.2)
+  jekyll-redirect-from
   jekyll-sitemap
   jekyll-time-to-read
   rake (~> 10.0)
