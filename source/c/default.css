@@ -710,11 +710,13 @@ form li {
   clear: both;
 }
 .layout-container__primary {
+  margin-top: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .layout-container__secondary {
+  margin-top: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
