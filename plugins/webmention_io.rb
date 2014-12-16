@@ -86,7 +86,11 @@ module Jekyll
       body = "<p class=\"webmentions__not-found\">No webmentions were found</p>"
       
       if response and response['links']
-        body = parse_links(response['links'])
+        webmentions = parse_links(response['links'])
+      end
+
+      if webmentions != ""
+        body = webmentions
       end
       
       "<div class=\"webmentions\">#{body}</div>"
@@ -228,7 +232,9 @@ module Jekyll
       # store it all back in the cache
       File.open(cache_file, 'w') { |f| YAML.dump(cached_webmentions, f) }
       
-      "<ol class=\"webmentions__list\">#{lis}</ol>"
+      if lis != ""
+        "<ol class=\"webmentions__list\">#{lis}</ol>"
+      end
     end
 
   end
