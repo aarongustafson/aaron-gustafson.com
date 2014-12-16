@@ -28,6 +28,7 @@
             &__meta {
                 color: $color-text-light;
                 @include breakup-placeholder( small-caps );
+                @include rem( margin, 2 0 0 );
             }
             
             :last-child {
