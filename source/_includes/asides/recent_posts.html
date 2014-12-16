@@ -1,6 +1,6 @@
 {% unless page.show_posts == false %}
 	<section class="module module--promotional">
-		<h1>Recent Posts</h1>
+		<h1 class="module__title">Recent Posts</h1>
 		<ul class="listing listing--links">
 			{% for post in site.posts limit: site.recent_posts %}
 				<li class="listing__item listing__item--{{ forloop.index }}">

@@ -18,7 +18,6 @@
 
 // Default Text
 @include breakup-create-placeholder( text ) {
-    @include rem( margin, $margin-default );
 	font-weight: normal;
 	line-height: $line-height-default;
 
@@ -30,8 +29,8 @@
 // Remove list formatting
 @include breakup-create-placeholder( delist ) {
 	list-style: none;
-	margin: 0;
-	padding: 0;
+	margin-left: 0;
+	padding-left: 0;
 }
 
 // Hidden

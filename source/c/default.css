@@ -22,10 +22,6 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
@@ -254,8 +250,6 @@ a.youtube-lazy-link:hover {
 \*------------------------------------*/
 html body, dl, dl dt,
 dl dd {
-  margin: 0 0 22px;
-  margin: 0 0 1.375rem;
   font-weight: normal;
   line-height: 1.4;
 }
@@ -266,8 +260,8 @@ dl .wf-active dd {
 }
 .fields, .listing {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-left: 0;
+  padding-left: 0;
 }
 .hidden, object[data^="#"], .webmention--author-starts .h-card .p-name {
   position: absolute !important;
@@ -349,6 +343,10 @@ h1, h2, h3, h4, h5, h6 {
 .wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6 {
   word-spacing: 2px;
 }
+h1 + *, h2 + *, h3 + *, h4 + *, h5 + *, h6 + * {
+  margin-top: 11px;
+  margin-top: 0.6875rem;
+}
 
 h1 {
   font-size: 32px;
@@ -369,6 +367,16 @@ h3 {
 /*------------------------------------*\
     Block-level Semantics
 \*------------------------------------*/
+* {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+* + * {
+  margin-top: 22px;
+  margin-top: 1.375rem;
+}
+
 blockquote {
   font-size: 16px;
   font-size: 1rem;
@@ -401,8 +409,6 @@ blockquote > :last-child {
 }
 
 p {
-  margin: 0 0 22px;
-  margin: 0 0 1.375rem;
   font-weight: normal;
   line-height: 1.4;
 }
@@ -420,8 +426,8 @@ p {
 ol,
 ul {
   line-height: 1.4;
-  margin: 0 22px 22px;
-  margin: 0 1.375rem 1.375rem;
+  margin-left: 22px;
+  margin-left: 1.375rem;
 }
 
 dl dt,
@@ -764,28 +770,45 @@ main {
 	Interface patterns
 \*------------------------------------*/
 /*------------------------------------*\
+    Media Query Watcher (for JS)
+\*------------------------------------*/
+#getActiveMQ-watcher {
+  font-family: "global";
+}
+
+#getActiveMQ-watcher {
+  font-family: "global";
+}
+
+/*------------------------------------*\
+    Modules
+\*------------------------------------*/
+.module__title {
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+.module * + * {
+  margin-top: 11px;
+  margin-top: 0.6875rem;
+}
+
+/*------------------------------------*\
     Listing
 \*------------------------------------*/
-.listing {
-  margin: 0 0 22px;
-  margin: 0 0 1.375rem;
-}
-.listing__item {
-  margin: 0;
-  padding: 11px 0;
-  padding: 0.6875rem 0;
-}
-.listing__item:last-child {
-  border-bottom-width: 0;
-  margin-bottom: 0;
-  padding-bottom: 0;
+.listing__item__title {
+  font-size: 16px;
+  font-size: 1rem;
 }
 .listing__item__meta {
   color: #666;
+  margin: 2px 0 0;
+  margin: 0.125rem 0 0;
 }
-.listing__item :last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
+.listing__item__description {
+  margin: 0;
+}
+.listing--links .listing__item {
+  margin: 0;
 }
 
 /*------------------------------------*\
@@ -847,10 +870,6 @@ div.gist div.file-data {
 /*------------------------------------*\
     Post
 \*------------------------------------*/
-.page__title {
-  margin-bottom: 44px;
-  margin-bottom: 2.75rem;
-}
 .page__footer {
   border-top: 1px solid #DDD;
   padding-top: 22px;

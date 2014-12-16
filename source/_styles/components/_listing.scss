@@ -8,21 +8,10 @@
 
         @include breakup-placeholder( delist );
         
-        @include rem( margin, $margin-default );
-
         &__item {
 
-            margin: 0;
-            @include rem( padding, ( $default-spacing / 2 ) 0 );
-
-            &:last-child {
-                border-bottom-width: 0;
-                margin-bottom: 0;
-                padding-bottom: 0;
-            }
-
             &__title {
-                @include breakup-placeholder( h2 );
+                @include rem( font-size, $font-size-body );
             }
 
             &__meta {
@@ -31,11 +20,14 @@
                 @include rem( margin, 2 0 0 );
             }
             
-            :last-child {
-                margin-bottom: 0;
-                padding-bottom: 0;
+            &__description {
+                margin: 0;
             }
 
+        }
+        
+        &--links &__item {
+            margin: 0;
         }
 
     }

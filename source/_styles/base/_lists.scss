@@ -6,22 +6,17 @@
 
     ol,
     ul {
-    
         line-height: $line-height-default;
-
-        @include rem( margin, 0 $default-spacing $default-spacing );
-
+        @include rem( margin-left, $default-spacing);
     }
 
     dl {
-
+        
         @include breakup-placeholder( text );
 
         dt,
         dd {
-
             @include breakup-placeholder( text );
-
             font-weight: normal;
         }
 

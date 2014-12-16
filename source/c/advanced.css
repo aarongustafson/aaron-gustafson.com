@@ -326,6 +326,32 @@
 	Interface patterns
 \*------------------------------------*/
 /*------------------------------------*\
+    Media Query Watcher (for JS)
+\*------------------------------------*/
+@media only screen and (min-width: 20em) {
+  #getActiveMQ-watcher {
+    font-family: "tiny";
+  }
+}
+@media only screen and (min-width: 28.75em) {
+  #getActiveMQ-watcher {
+    font-family: "small";
+  }
+}
+@media only screen and (min-width: 43.125em) {
+  #getActiveMQ-watcher {
+    font-family: "medium";
+  }
+}
+@media only screen and (min-width: 60em) {
+  #getActiveMQ-watcher {
+    font-family: "full";
+  }
+}
+/*------------------------------------*\
+    Modules
+\*------------------------------------*/
+/*------------------------------------*\
     Listing
 \*------------------------------------*/
 /*------------------------------------*\

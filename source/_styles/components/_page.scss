@@ -6,10 +6,6 @@
 
     .page {
 
-        &__title {
-            @include rem( margin-bottom, 2 * $default-spacing );
-        }
-        
         &__footer {
             border-top: 1px solid $color-rule;
             @include rem( padding-top, $default-spacing );

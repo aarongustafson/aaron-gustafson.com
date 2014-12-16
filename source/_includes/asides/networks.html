@@ -1,6 +1,6 @@
 {% unless page.show_networks == false %}
 	<section class="module module--social">
-		<h2>You can stalk me on the following networks:</h2>
+		<h1 class="module__title">You can stalk me on the following networks:</h1>
 		<ul class="listing listing--links">
 			{% for link in site.data.links %}
 				<li class="listing__item listing__item--{{ link.site | downcase }}">

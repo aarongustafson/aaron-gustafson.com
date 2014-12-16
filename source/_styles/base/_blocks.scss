@@ -2,7 +2,16 @@
     Block-level Semantics
 \*------------------------------------*/
 @include breakup-breakpoint( "global" ) {
-
+    
+    * {
+        @include rem( margin-top, 0 );
+	    @include rem( margin-bottom, 0 );
+    }
+    
+    * + * {
+	    @include rem( margin-top, $default-spacing );
+    }
+    
 	blockquote {
 
 	    @include rem( font-size, $font-size-default );
@@ -38,7 +47,6 @@
 	}
 
 	p {
-        @include rem( margin, $margin-default );
     	font-weight: normal;
     	line-height: $line-height-default;
 
