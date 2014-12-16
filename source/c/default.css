@@ -819,8 +819,7 @@ main {
 }
 .entry__meta {
   color: #666;
-  margin-top: 11px;
-  margin-top: 0.6875rem;
+  margin-top: 0;
 }
 .entry__footer {
   border-top: 1px solid #DDD;

@@ -10,7 +10,7 @@
         
         &__meta {
             color: $color-grey;
-            @include rem( margin-top, $default-spacing / 2 );
+            margin-top: 0;
         }
         
         &__footer {
