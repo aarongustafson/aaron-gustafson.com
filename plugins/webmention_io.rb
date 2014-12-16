@@ -89,7 +89,7 @@ module Jekyll
         webmentions = parse_links(response['links'])
       end
 
-      if webmentions != ""
+      if webmentions
         body = webmentions
       end
       
