@@ -17,7 +17,7 @@ What I’m trying to say (or rather excuse) is that I have been struggling with 
 
 Well, consider me uncool as I decided to change some things around here:
 
-1. I dropped the year indicator from blog post URLs. I realized that the likelihood of me having two posts with the same name was pretty much nil, so it was unnecessary to disambiguate like that. Plus it would save me from having to create the annual archives I would feel compelled to make in order to justify the “2014“ directory in the URL.
+1. I dropped the year indicator from blog post URLs. I realized that the likelihood of me having two posts with the same name was pretty much nil, so it was unnecessary to disambiguate like that. Plus it would save me from having to create the annual archives I would feel compelled to make in order to justify the “2014” directory in the URL.
 2. I consolidated my book and article pages to [a single page or publications](/publications). I thought it might be nice to maintain them separately, but in retrospect that seems unnecessarily complicated.
 3. I changed the URL to my speaking engagements from “events” to “speaking-engagements” as it just made more sense.
 
