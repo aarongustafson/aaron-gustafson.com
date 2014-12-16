@@ -6,6 +6,10 @@
 
     .banner {
         @include rem( padding, $default-spacing );
+        
+        * + * {
+            margin: 0;
+        }
     }
 
     .alert {

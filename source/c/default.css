@@ -337,7 +337,7 @@ html body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "quatro-slab", Georgia, serif;
   font-weight: 500;
-  line-height: 1.1;
+  line-height: 1.25;
 }
 .wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6 {
   word-spacing: 2px;
@@ -728,6 +728,9 @@ form li {
 .banner {
   padding: 22px;
   padding: 1.375rem;
+}
+.banner * + * {
+  margin: 0;
 }
 
 .alert {
