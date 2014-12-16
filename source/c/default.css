@@ -338,7 +338,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "quatro-slab", Georgia, serif;
   font-weight: 500;
   line-height: 1.1;
-  margin: 0;
 }
 .wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6 {
   word-spacing: 2px;
@@ -820,6 +819,8 @@ main {
 }
 .entry__meta {
   color: #666;
+  margin-top: 11px;
+  margin-top: 0.6875rem;
 }
 .entry__footer {
   border-top: 1px solid #DDD;
