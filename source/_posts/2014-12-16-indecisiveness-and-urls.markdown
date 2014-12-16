@@ -9,6 +9,8 @@ categories: ["web design","this site"]
 
 If you know me, you know I am a pretty indecisive guy. It is not uncommon for [Kelly](https://twitter.com/shirleytemper) and I to spend 15 minutes or more just trying to figure out where we want to grab a meal.
 
+<!-- more -->
+
 What I’m trying to say (or rather excuse) is that I have been struggling with some of my initial decisions with respect to URLs on this site and finally decided to make some changes before too many links to its content get out there. I was a bit reluctant to do so as we all know [what Sir Tim Berners-Lee says](http://www.w3.org/Provider/Style/URI.html)
 
 > Cool URIs don’t change.
