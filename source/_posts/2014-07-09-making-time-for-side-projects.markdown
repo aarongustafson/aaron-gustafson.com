@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "Making Time for Side Projects"
-date: 2014-02-12 09:21:08 -0400
+date: 2014-07-09 09:21:08 -0400
 comments: false
-external-url: http://alistapart.com/column/making-time-for-side-projects
-published: false
+in_reply_to: http://alistapart.com/column/making-time-for-side-projects
+ref_url: http://alistapart.com/column/making-time-for-side-projects
+ref_source: A List Apart
 ---
 
 Great piece on how to carve out time while still working & living.

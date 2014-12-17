@@ -870,6 +870,10 @@ div.gist div.file-data {
 /*------------------------------------*\
     Post
 \*------------------------------------*/
+.page__title {
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
+}
 .page__footer {
   border-top: 1px solid #DDD;
   padding-top: 22px;

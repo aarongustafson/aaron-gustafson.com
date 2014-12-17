@@ -69,7 +69,7 @@ default_asides: [asides/recent_posts.html]
 
 # Each layout uses the default asides, but they can have their own asides instead. Simply uncomment the lines below
 # and add an array with the asides you want to use.
-blog_index_asides: [asides/about.html,asides/networks.html,asides/events.html]
+blog_index_asides: [asides/about.html,asides/networks.html,asides/recent_links.html]
 post_asides: [asides/about.html,asides/events.html]
 page_asides: [asides/about.html,asides/networks.html,asides/events.html]
 

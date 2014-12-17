@@ -1,0 +1,27 @@
+---
+layout: index
+title: Links from the Notebook of
+show_title: false
+display_title: The Best of the Internets
+footer: true
+comments: false
+sharing: false
+is_index: true
+body_class: "notebook notebook--links"
+---
+
+{% for post in site.posts reverse %}
+
+	{% if post.ref_url %}
+
+		<article class="entry entry--teaser">
+  			{% include entry_teaser.html %}
+		</article>
+
+		{% unless forloop.last %}
+			<hr class="rule">
+		{% endunless %}
+
+	{% endif %}
+
+{% endfor %}
