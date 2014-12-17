@@ -2,49 +2,52 @@
 layout: default
 ---
 
-<article role="article" class="layout-container__primary h-entry">
+<div class="layout-container">
+	<article role="article" class="layout-container__primary h-entry">
 
-  	{% if page.title %}
-		{% unless page.show_title == false %}
-		  	<header>
-		    	<h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
-		    	{% if page.date %}<p class="meta">{% include post/date.html %}{{ time }}</p>{% endif %}
-		  	</header>
-		{% endunless %}
-  	{% endif %}
+	  	{% if page.title %}
+			{% unless page.show_title == false %}
+			  	<header>
+			    	<h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+			    	{% if page.date %}<p class="meta">{% include post/date.html %}{{ time }}</p>{% endif %}
+			  	</header>
+			{% endunless %}
+	  	{% endif %}
   	
-	{{ content }}
+		{{ content }}
   	
-	{% unless page.footer == false %}
-    	<footer>
-      		{% if page.date or page.author %}
-				<p class="meta">
-	        		{% if page.author %}{% include post/author.html %}{% endif %}
-	        		{% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
-	        		{% if page.categories %}{% include post/categories.html %}{% endif %}
-      			</p>
-			{% endif %}
+		{% unless page.footer == false %}
+	    	<footer>
+	      		{% if page.date or page.author %}
+					<p class="meta">
+		        		{% if page.author %}{% include post/author.html %}{% endif %}
+		        		{% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
+		        		{% if page.categories %}{% include post/categories.html %}{% endif %}
+	      			</p>
+				{% endif %}
 			
-      		{% unless page.sharing == false %}
-        		{% include post/sharing.html %}
-      		{% endunless %}
-		</footer>
+	      		{% unless page.sharing == false %}
+	        		{% include post/sharing.html %}
+	      		{% endunless %}
+			</footer>
+		{% endunless %}
+
+	</article>
+
+	{% unless page.sidebar == false %}
+		<hr class="rule rule--optional">
+
+		<aside class="layout-container__secondary">
+	  		{% if page.sidebars %}
+				{% for sidebar in page.sidebars %}
+					{% include {{ sidebar }} %}
+				{% endfor %}
+			{% elsif site.page_asides.size %}
+	    		{% include_array page_asides %}
+	  		{% else %}
+	    		{% include_array default_asides %}
+	  		{% endif %}
+		</aside>
 	{% endunless %}
 
-</article>
-
-{% unless page.sidebar == false %}
-	<hr class="rule rule--optional">
-
-	<aside class="layout-container__secondary">
-  		{% if page.sidebars %}
-			{% for sidebar in page.sidebars %}
-				{% include {{ sidebar }} %}
-			{% endfor %}
-		{% elsif site.page_asides.size %}
-    		{% include_array page_asides %}
-  		{% else %}
-    		{% include_array default_asides %}
-  		{% endif %}
-	</aside>
-{% endunless %}
+</div>

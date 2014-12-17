@@ -258,7 +258,8 @@ dl dd {
 dl .wf-active dd {
   word-spacing: 2px;
 }
-.fields, .listing {
+nav ol, nav
+ul, .fields, .listing {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
@@ -327,8 +328,6 @@ html body {
   font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 400;
   margin: 0 auto;
-  max-width: 960px;
-  max-width: 60rem;
 }
 
 /*------------------------------------*\
@@ -427,6 +426,14 @@ ul {
   line-height: 1.4;
   margin-left: 22px;
   margin-left: 1.375rem;
+}
+nav ol, nav
+ul {
+  margin: 0;
+}
+nav ol li, nav
+ul li {
+  margin: 0;
 }
 
 dl dt,
@@ -703,6 +710,7 @@ form li {
   height: 1% 	;
   padding: 0 20px;
   padding: 0 1.25rem;
+  position: relative;
 }
 .layout-container:after {
   content: " ";
@@ -725,10 +733,6 @@ form li {
 /*------------------------------------*\
     Header
 \*------------------------------------*/
-.banner {
-  padding: 22px;
-  padding: 1.375rem;
-}
 .banner * + * {
   margin: 0;
 }
@@ -753,18 +757,9 @@ form li {
 /*------------------------------------*\
     Main
 \*------------------------------------*/
-main {
-  padding: 22px;
-  padding: 1.375rem;
-}
-
 /*------------------------------------*\
     Footer
 \*------------------------------------*/
-.footer {
-  padding: 22px;
-  padding: 1.375rem;
-}
 .footer p {
   margin: 0;
 }
@@ -928,4 +923,15 @@ div.gist div.file-data {
 
 .webmention__meta {
   color: #666;
+}
+
+/*------------------------------------*\
+    Hero Shot
+\*------------------------------------*/
+.hero-shot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  left: 0;
+  right: 0;
 }

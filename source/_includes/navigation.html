@@ -1,23 +1,24 @@
 <nav role="navigation">
+	<div class="layout-container">
 
-	<h1 class="hidden">Here’s what you can find on this site:</h1>
-	<ul class="main-navigation">
-		{% for link in site.navigation %}
-			<li><a href="{{ link.url }}">{{ link.text }}</a></li>
-		{% endfor %}
-		<li><a href="{{ site.subscribe_rss }}" title="subscribe via RSS">RSS</a></li>
-	</ul>
+		<h1 class="hidden">Here’s what you can find on this site:</h1>
+		<ul class="main-navigation">
+			{% for link in site.navigation %}
+				<li><a href="{{ link.url }}">{{ link.text }}</a></li>
+			{% endfor %}
+			<li><a href="{{ site.subscribe_rss }}" title="subscribe via RSS">RSS</a></li>
+		</ul>
 
-	{% if site.simple_search %}
-		<form action="{{ site.simple_search }}" method="get" role="search">
-			<ol>
-				<li class="search">
-					<label class="hidden">What are you looking for?</label>
-					<input type="search" name="q">
-				</li>
-				<li><button><b class="hidden">Let’s see if </b>Google <b class="hidden">Finds </b>it</button></li>
-			</ol>
-		</form>
-	{% endif %}
-
+		{% if site.simple_search %}
+			<form action="{{ site.simple_search }}" method="get" role="search">
+				<ol>
+					<li class="search">
+						<label class="hidden">What are you looking for?</label>
+						<input type="search" name="q">
+					</li>
+					<li><button><b class="hidden">Let’s see if </b>Google <b class="hidden">Finds </b>it</button></li>
+				</ol>
+			</form>
+		{% endif %}
+	</div>
 </nav>

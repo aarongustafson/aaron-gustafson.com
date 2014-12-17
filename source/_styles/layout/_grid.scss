@@ -15,6 +15,8 @@
     
         // padding on a small screen
         @include rem( padding, 0 20 );
+        
+        position: relative;
     }
     
     @include breakup-breakpoint( "small" ) {

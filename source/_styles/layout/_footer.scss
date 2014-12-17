@@ -6,8 +6,6 @@
 
     .footer {
 
-        @include rem( padding, $default-spacing );
-
         p {
             margin: 0;
         }

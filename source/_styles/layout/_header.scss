@@ -5,7 +5,6 @@
 @include breakup-breakpoint( "global" ) {
 
     .banner {
-        @include rem( padding, $default-spacing );
         
         * + * {
             margin: 0;

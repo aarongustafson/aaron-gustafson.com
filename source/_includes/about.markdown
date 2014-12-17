@@ -1,3 +1,7 @@
+Hi there.
+	
+My name is Aaron Gustafson and I work on the web.
+
 I am the founder and technical lead of [Easy Designs](http://easy-designs.net), through which I help clients elegantly tackle the challenges presented by all the crazy devices and screens you see everywhere using [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement).
 
 <!-- more -->

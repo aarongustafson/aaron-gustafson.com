@@ -44,7 +44,7 @@
 	        font-weight: $font-weight-sansserif;
 
 	        margin: 0 auto;
-			@include rem( max-width, 960 );
+			//@include rem( max-width, 960 );
 	    }
 
 	}	
@@ -52,8 +52,8 @@
 
 @include breakup-breakpoint( "full" ) {
 
-    [role=main] {
-        @include rem( min-height, 400 );
-    }
+    //[role=main] {
+    //    @include rem( min-height, 400 );
+    //}
 
 }

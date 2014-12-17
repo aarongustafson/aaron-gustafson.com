@@ -8,6 +8,15 @@
     ul {
         line-height: $line-height-default;
         @include rem( margin-left, $default-spacing);
+        
+        nav & {
+            @include breakup-placeholder( delist );
+            margin: 0;
+            
+            li {
+                margin: 0;
+            }
+        }
     }
 
     dl {

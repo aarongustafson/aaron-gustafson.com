@@ -5,12 +5,19 @@
 	{% include head.html %}
 
 	<body {% if page.body_class %} class="{{ page.body_class }}" {% endif %} >
-		
+
+		{% comment %}
+		{% if page.body_class == "hi" %}
+			<img class="hero-shot" src="/c/i/home@400.jpg" alt=""
+				 srcset="/c/i/home@400.jpg 400w, /c/i/home@750.jpg 750w, /c/i/home@1500.jpg 1500w, /c/i/home@2000.jpg 2000w, /c/i/home@3000.jpg 3000w">
+		{% endif %}
+		{% endcomment %}
+
 		<div class="alert"><strong>This site is <a href="/notebook/a-grand-experiment/">undergoing an open redesign</a>, so if it looks strange, that’s why.</strong></div>
 		
 		{% include header.html %}
 		
-		<main role="main" class="layout-container">
+		<main role="main">
 			
 			{{ content | expand_urls: root_url }}
 			
