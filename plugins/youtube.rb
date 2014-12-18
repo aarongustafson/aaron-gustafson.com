@@ -72,7 +72,7 @@ class YouTube < Liquid::Tag
     @title = result["data"]["title"]
     @description = result["data"]["description"]
 
-    puts " title #{@title}"
+    puts "Embedding YouTube video: #{@title}"
 
     @style = "width:100%;height:100%;background:#000 url(http://i2.ytimg.com/vi/#{@id}/0.jpg) center center no-repeat;background-size:contain;position:absolute" 
     
