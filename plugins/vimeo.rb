@@ -85,15 +85,13 @@ class Vimeo < Liquid::Tag
    result = <<-EOF
 
 <figure id="fig-#{@id}" class="media-container media-container--vimeo">
-<div class="ratio-16-9 embed-video-container" onclick="#{@onclick}" title="click here to play" tabindex="0">
+<div class="ratio-16-9 embed-video-container" onclick="#{@onclick}" title="Click here to play “@title”">
 <a class="vimeo-lazy-link" style="#{@style}" href="http://www.youtube.com/watch?v=#{@id}" id="#{@id}" onclick="return false;">
 <div class="vimeo-lazy-link-div"></div>
+<div class="vimeo-lazy-link-info">#{@title}</div>
 </a>
+<div class="video-info" >#{@description}</div>
 </div>
-<figcaption>
-  <h1 class="vimeo-lazy-link-info">#{@title}</h1>
-  <p class="video-info">#{@description}</p>
-</figcaption>
 </figure>
 
 EOF
