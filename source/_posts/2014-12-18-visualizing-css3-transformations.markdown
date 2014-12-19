@@ -22,5 +22,3 @@ Here’s a video of me playing around with the default `transform` stack:
 {% vimeo 114921831 %}
 
 Have a play and let me know your thoughts. I hope you find this tool as helpful as I (and my students) have.
-
-Link: [Visualizing CSS Transforms](http://codepen.io/aarongustafson/full/jEryLV/)

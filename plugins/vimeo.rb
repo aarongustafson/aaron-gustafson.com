@@ -60,43 +60,25 @@ class Vimeo < Liquid::Tag
 
     puts "Embedding Vimeo video: #{@title}"
 
-    @style = "width:100%;height:100%;background:#000 url(#{@poster}) center center no-repeat;background-size:contain;position:absolute" 
+    @style = "background-image:url(#{@poster})" 
     
     @player = "//player.vimeo.com/video/#{@id}?autoplay=1"
 
-    @videoFrame =  CGI.escapeHTML("<iframe style=\"vertical-align:top;width:100%;height:100%;position:absolute;\" src=\"#{@player}\" frameborder=\"0\" allowfullscreen></iframe>")
- 
-    # with jQuery 
-    #@onclick    = "$('##{@id}').replaceWith('#{@videoFrame}');return false;"
- 
-    # without JQuery
-    @onclick    = "var myAnchor = document.getElementById('#{@id}');" + 
-                  "var tmpDiv = document.createElement('div');" +  
-                  "tmpDiv.innerHTML = '#{@videoFrame}';" + 
-                  "myAnchor.parentNode.replaceChild(tmpDiv.firstChild, myAnchor);"+
-                  "return false;" 
+    # note: so special care is required to produce html code that will not be massage by the 
+    #       markdown processor :
+    #       extract from the markdown doc :  
+    #           'The only restrictions are that block-level HTML elements ¿ e.g. <div>, <table>, <pre>, <p>, etc. 
+    #            must be separated from surrounding content by blank lines, and the start and end tags of the block
+    #            should not be indented with tabs or spaces. '
+    result = "<figure id=\"fig-#{@id}\" class=\"figure figure--video\">"
+    result << '<div class="video-embed video-embed--vimeo video-embed--16x9">'
+    result << "<a class=\"video-embed__lazy-link\" style=\"#{@style}\" href=\"//vimeo.com/#{@id}\" data-lazy-video-src=\"#{@player}\">"
+    result << '<div class="video-embed__lazy-div"></div>'
+    result << "<div class=\"video-embed__lazy-info\">#{@title}</div>"
+    result << '</a></div></figure>'
 
-   # note: so special care is required to produce html code that will not be massage by the 
-   #       markdown processor :
-   #       extract from the markdown doc :  
-   #           'The only restrictions are that block-level HTML elements ¿ e.g. <div>, <table>, <pre>, <p>, etc. 
-   #            must be separated from surrounding content by blank lines, and the start and end tags of the block
-   #            should not be indented with tabs or spaces. '
-   result = <<-EOF
-
-<figure id="fig-#{@id}" class="media-container media-container--vimeo">
-<div class="ratio-16-9 embed-video-container" onclick="#{@onclick}" title="Click here to play “@title”">
-<a class="vimeo-lazy-link" style="#{@style}" href="http://www.youtube.com/watch?v=#{@id}" id="#{@id}" onclick="return false;">
-<div class="vimeo-lazy-link-div"></div>
-<div class="vimeo-lazy-link-info">#{@title}</div>
-</a>
-<div class="video-info" >#{@description}</div>
-</div>
-</figure>
-
-EOF
-  Cache[@id] = result
-  return result
+    Cache[@id] = result
+    return result
 
   end
 

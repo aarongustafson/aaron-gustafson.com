@@ -147,73 +147,6 @@ div.gsc-url-top {
   padding: 0;
 }
 
-.embed-video-container {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-}
-.embed-video-container iframe, .embed-video-container object, .embed-video-container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.video-info {
-  font-size: 0.7em;
-  font-style: italic;
-}
-
-.ratio-16-9 {
-  padding-bottom: 56.25%;
-  /* 9/16*100 */
-}
-
-.ratio-4-3 {
-  padding-bottom: 75%;
-  /* 3/4*100 */
-}
-
-.ratio-1-1 {
-  padding-bottom: 100%;
-  /* ... */
-}
-
-a.youtube-lazy-link {
-  vertical-align: top;
-  background: #555;
-  text-decoration: none;
-  color: #DDD;
-  text-align: left;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  display: inline-block;
-}
-
-a.youtube-lazy-link:hover {
-  text-decoration: none;
-  color: #FFF;
-}
-
-.youtube-lazy-link-div {
-  width: 100%;
-  height: 100%;
-  background: url(http://lh4.googleusercontent.com/-QCeB6REIFlE/TuGUlY3N46I/AAAAAAAAAaI/9-urEUtpKcI/s800/youtube-play-button.png) center center no-repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.youtube-lazy-link-div:hover {
-  background: url(http://lh5.googleusercontent.com/-oBFjswrosz4/TuHqainRc3I/AAAAAAAAAbE/t3rMQuSJdLA/s800/youtube-play-button-hover.png) center center no-repeat;
-}
-
-.youtube-lazy-link-info {
-  position: absolute;
-  top: 0.6em;
-  left: 0.6em;
-}
-
 /*------------------------------------*\
     $HELPERS
 	SASS Tools
@@ -808,6 +741,81 @@ form li {
 }
 .listing--links .listing__item {
   margin: 0;
+}
+
+/*------------------------------------*\
+    Media Elements
+\*------------------------------------*/
+.figure {
+  margin: 22px auto;
+  margin: 1.375rem auto;
+}
+
+/*------------------------------------*\
+    Webmentions
+\*------------------------------------*/
+.video-embed {
+  border: 1px solid #DDD;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+}
+.video-embed__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.video-embed--16x9 {
+  padding-bottom: 56.25%;
+  /* 9/16*100 */
+}
+.video-embed--4x3 {
+  padding-bottom: 75%;
+  /* 3/4*100 */
+}
+.video-embed--1x1 {
+  padding-bottom: 100%;
+}
+.video-embed__lazy-link {
+  background: #2c2825 center center no-repeat;
+  background-size: contain;
+  color: #DDD;
+  text-decoration: none;
+  text-align: left;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.video-embed__lazy-link:hover, .video-embed__lazy-link:focus {
+  text-decoration: none;
+  color: #FFF;
+}
+.video-embed__lazy-div {
+  width: 100%;
+  height: 100%;
+  background: url(/c/i/play-button.png) center center no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.video-embed__lazy-div:hover {
+  background-image: url(/c/i/play-button-hover.png);
+}
+.video-embed__lazy-info {
+  background: #2c2825;
+  background-color: rgba(44, 40, 37, 0.9);
+  margin: 0;
+  padding: 11px;
+  padding: 0.6875rem;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
 }
 
 /*------------------------------------*\

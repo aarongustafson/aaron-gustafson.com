@@ -74,44 +74,26 @@ class YouTube < Liquid::Tag
 
     puts "Embedding YouTube video: #{@title}"
 
-    @style = "width:100%;height:100%;background:#000 url(http://i2.ytimg.com/vi/#{@id}/0.jpg) center center no-repeat;background-size:contain;position:absolute" 
+    @style = "background-image:url(http://i2.ytimg.com/vi/#{@id}/0.jpg)" 
     
-    @emu = "http://www.youtube.com/embed/#{@id}?autoplay=1"
+    @player = "http://www.youtube.com/embed/#{@id}?autoplay=1"
 
-    @videoFrame =  CGI.escapeHTML("<iframe style=\"vertical-align:top;width:100%;height:100%;position:absolute;\" src=\"#{@emu}\" frameborder=\"0\" allowfullscreen></iframe>")
- 
-    # with jQuery 
-    #@onclick    = "$('##{@id}').replaceWith('#{@videoFrame}');return false;"
- 
-    # without JQuery
-    @onclick    = "var myAnchor = document.getElementById('#{@id}');" + 
-                  "var tmpDiv = document.createElement('div');" +  
-                  "tmpDiv.innerHTML = '#{@videoFrame}';" + 
-                  "myAnchor.parentNode.replaceChild(tmpDiv.firstChild, myAnchor);"+
-                  "return false;" 
-
-   # note: so special care is required to produce html code that will not be massage by the 
-   #       markdown processor :
-   #       extract from the markdown doc :  
-   #           'The only restrictions are that block-level HTML elements ¿ e.g. <div>, <table>, <pre>, <p>, etc. 
-   #            must be separated from surrounding content by blank lines, and the start and end tags of the block
-   #            should not be indented with tabs or spaces. '
-   result = <<-EOF
-
-<figure id="fig-#{@id}" class="media-container media-container--youtube">
-<div class="ratio-4-3 embed-video-container" onclick="#{@onclick}" title="click here to play">
-<a class="youtube-lazy-link" style="#{@style}" href="http://www.youtube.com/watch?v=#{@id}" id="#{@id}" onclick="return false;">
-<div class="youtube-lazy-link-div"></div>
-<div class="youtube-lazy-link-info">#{@title}</div>
-</a>
-<div class="video-info" >#{@description}</div>
-</div>
-</figure>
-
-EOF
-  Cache[@id] = result
-  return result
-
+    # note: so special care is required to produce html code that will not be massage by the 
+    #       markdown processor :
+    #       extract from the markdown doc :  
+    #           'The only restrictions are that block-level HTML elements ¿ e.g. <div>, <table>, <pre>, <p>, etc. 
+    #            must be separated from surrounding content by blank lines, and the start and end tags of the block
+    #            should not be indented with tabs or spaces. '
+    result = "<figure id=\"fig-#{@id}\" class=\"figure figure--video\">"
+    result << '<div class="video-embed video-embed--youtube video-embed--4x3">'
+    result << "<a class=\"video-embed__lazy-link\" style=\"#{@style}\" href=\"//www.youtube.com/watch?v=#{@id}\" data-lazy-video-src=\"#{@player}\">"
+    result << '<div class="video-embed__lazy-div"></div>'
+    result << "<div class=\"video-embed__lazy-info\">#{@title}</div>"
+    result << '</a></div></figure>'
+    
+    Cache[@id] = result
+    return result
+    
   end
 
   Liquid::Template.register_tag "youtube", self

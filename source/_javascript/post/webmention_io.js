@@ -13,7 +13,9 @@
  * The content should be a single URL or multiple, separated by commas.
  */
     
-;(function(window){
+;(function(window,document){
+    
+    if ( ! 'querySelectorAll' in document ){ return; }
     
     if ( !( 'AG' in window ) ){ window.AG = {}; }
     
@@ -261,4 +263,4 @@
         };
     }
     
-}(window));
+}(this,this.document));

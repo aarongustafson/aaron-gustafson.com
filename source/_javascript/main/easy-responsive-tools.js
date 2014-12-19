@@ -101,7 +101,7 @@
 			var o_style = body.getAttribute( 'style' );
 			
 			body.style.overflow = 'hidden';
-			body.innerHeight();
+			body.offsetHeight = body.offsetHeight;
 			
 			if ( o_style )
 			{
