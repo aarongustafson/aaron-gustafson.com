@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Autoplay, Don’t Do It"
-date: 2014-09-19 16:12:50 -0400
+date: 2014-12-21 16:12:50 -0400
 comments: true
 categories: ["web design", "web development", video, audio]
 description: "A while back GogOm reported on Facebook’s sole responsibility for an increase in mobile data usage by 60% by auto-playing videos. Don’t do it."
