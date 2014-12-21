@@ -12,6 +12,8 @@ A while back [GogOm reported on how Facebook’s decision to autoplay videos led
 
 You may be wondering _Why is this a bad thing for users? They want to see videos, so we’re just giving them what they want._ Well, let me share a little story.
 
+<!-- more -->
+
 I was in Lisbon for [UxLx](http://lanyrd.com/2013/uxlx/) last year and was on roaming data through my mobile provider. At the hotel, the Wifi was giving me trouble, so I opted to tether my computer so I can pull down a document I needed. Chrome crashed. Lame, but no big deal. I relaunched it and, Chrome being the helpful browser that it is, all of my tabs were restored and I got back to work.
 
 A few minutes later I got a text message from my provider: I’d just used a tremendous amount of my data in a very short amount of time. And I had only landed an hour before. I was understandably concerned. And perplexed. What happened?
