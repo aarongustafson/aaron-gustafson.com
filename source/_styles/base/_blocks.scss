@@ -18,17 +18,14 @@
 	    font-family: $font-stack-sansserif;
 	    font-style: italic; 
 	    
-	    @include rem( margin, $default-spacing auto );
+	    margin-left: auto;
+	    margin-right: auto;
         @include rem( padding, 0 $default-spacing );
         @include rem( max-width, 700 );
         
         & > :first-child:not([class]):before {
             content: "\201C";
             @include rem( margin-left, -8 );
-        }
-        
-        & > :last-child {
-            margin: 0;
         }
         
 	}
