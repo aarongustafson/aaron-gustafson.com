@@ -375,15 +375,15 @@ dl dd {
     Links
 \*------------------------------------*/
 a {
+  text-decoration: none;
+}
+a:link, a:visited {
   color: #34AD23;
   border-bottom: 1px dotted;
   border-bottom-color: rgba(52, 173, 35, 0.25);
   cursor: pointer;
   -webkit-transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
   transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
-}
-a, a:link, a:visited {
-  text-decoration: none;
 }
 a:hover, a:focus, a:active {
   color: #27831a;
