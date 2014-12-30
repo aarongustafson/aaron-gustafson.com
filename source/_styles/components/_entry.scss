@@ -22,6 +22,10 @@
             border-top: 0;
             padding-top: 0;
         }
+        
+        &__footer &__meta {
+            @include rem( margin-top, $default-spacing );
+        }
 
     }
     

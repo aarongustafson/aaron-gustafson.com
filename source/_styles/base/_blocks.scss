@@ -55,6 +55,13 @@
 	[aria-hidden="true"] {
 	    display: none;
 	}
+	
+	hr {
+	    border-color: $color-rule;
+	    
+	    height: 0;
+	    @include rem( margin, $default-spacing 0 0 );
+	}
 
 }
 

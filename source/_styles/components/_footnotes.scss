@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    Footnotes
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+
+    .footnotes {
+        
+        ol {
+            @include rem( font-size, $font-size-small );
+            
+            margin-left: 0;
+            padding-left: 2em;
+        }
+        
+        a[rev=footnote] {
+            margin-left: .5em;
+        }
+        
+    }
+
+}

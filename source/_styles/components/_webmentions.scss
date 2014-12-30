@@ -8,51 +8,57 @@
     
     .webmentions {
         @include rem( margin-top, $default-spacing / 2 );
-    }
-    
-    .webmentions__list {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    .webmentions__item {
-        clear: both;
-
-        border-top: 1px solid $color-border;
-        margin: 0;
-        @include rem( padding, $default-spacing 0 $default-spacing ( $avatar-width + $default-spacing ) );
-        @include rem( min-height, $avatar-width );
-
-        position: relative;
         
-        &:first-child {
-            border-top: 0;
+        &__list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        &__item {
+            clear: both;
+
+            border-top: 1px solid $color-border;
+            margin: 0;
+            @include rem( padding, $default-spacing 0 $default-spacing ( $avatar-width + $default-spacing ) );
+            @include rem( min-height, $avatar-width );
+
+            position: relative;
+
+            &:first-child {
+                border-top: 0;
+            }
         }
     }
     
-    .webmention--author-starts .h-card .p-name {
-        @include breakup-placeholder( hidden );
-    }
-    
-    .webmention__author__photo {
-        border-radius: 3px;
-
-        display: block;
-        @include rem( width, $avatar-width );
-        @include rem( height, $avatar-width );
+    .webmention {
         
-        position: absolute;
-        @include rem( top, $default-spacing );
-        left: 0;
-    }
-    
-    .webmention__content > :last-child {
-        margin-bottom: 0;
-    }
-    
-    .webmention__meta {
-        color: $color-grey;
+        &--author-starts .h-card .p-name {
+            @include breakup-placeholder( hidden );
+        }
+        
+        &__author__photo {
+            border-radius: 3px;
+
+            display: block;
+            @include rem( width, $avatar-width );
+            @include rem( height, $avatar-width );
+
+            position: absolute;
+            @include rem( top, $default-spacing );
+            
+            left: 0;
+        }
+        
+        &__title,
+        &__content,
+        &__meta {
+            margin: 0;
+        }
+        
+        &__meta {
+            color: $color-grey;
+        }
     }
 
 }

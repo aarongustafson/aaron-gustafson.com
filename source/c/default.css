@@ -348,6 +348,13 @@ p {
   display: none;
 }
 
+hr {
+  border-color: #DDD;
+  height: 0;
+  margin: 22px 0 0;
+  margin: 1.375rem 0 0;
+}
+
 /*------------------------------------*\
     Lists
 \*------------------------------------*/
@@ -816,6 +823,19 @@ form li {
 }
 
 /*------------------------------------*\
+    Footnotes
+\*------------------------------------*/
+.footnotes ol {
+  font-size: 12px;
+  font-size: 0.75rem;
+  margin-left: 0;
+  padding-left: 2em;
+}
+.footnotes a[rev=footnote] {
+  margin-left: .5em;
+}
+
+/*------------------------------------*\
     Blog Entry
 \*------------------------------------*/
 .entry {
@@ -834,6 +854,10 @@ form li {
 .entry--teaser .entry__footer {
   border-top: 0;
   padding-top: 0;
+}
+.entry__footer .entry__meta {
+  margin-top: 22px;
+  margin-top: 1.375rem;
 }
 
 /*------------------------------------*\
@@ -892,13 +916,11 @@ div.gist div.file-data {
   margin-top: 11px;
   margin-top: 0.6875rem;
 }
-
 .webmentions__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 .webmentions__item {
   clear: both;
   border-top: 1px solid #DDD;
@@ -925,11 +947,9 @@ div.gist div.file-data {
   top: 1.375rem;
   left: 0;
 }
-
-.webmention__content > :last-child {
-  margin-bottom: 0;
+.webmention__title, .webmention__content, .webmention__meta {
+  margin: 0;
 }
-
 .webmention__meta {
   color: #666;
 }
