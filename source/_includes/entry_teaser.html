@@ -4,7 +4,7 @@
 	<header class="entry__header">
 		<h1 class="entry__title entry-title">
 			{% if post.ref_url %}
-				<a href="{{ post.ref_url }}">{{ post.title }}</a></h1>
+				» <a href="{{ post.ref_url }}">{{ post.title }}</a></h1>
 			{% else %}
 				<a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
 			{% endif %}
