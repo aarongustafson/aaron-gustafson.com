@@ -1,15 +1,15 @@
-{% capture title %}{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}{% endif %}{% endcapture %}
+{% capture title %}{% if page.title %}{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}{% endif %}{% if page.url contains 'notebook/' and page.title != 'The Notebook of' %}, From the Notebook of{% endif %} {{ site.title }}{% if page.url contains 'notebook/pg-' %}, Page {{ page.url | remove:'/notebook/pg-' | remove:'/index.html' }}{% endif %}{% endcapture %}
 {% capture description %}{% if page.description %}{{ page.description | raw_content }}{% else %}{{ site.description | raw_content }}{% endif %}{% endcapture %}
 {% capture page_url %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
 
-<title>{{ title }}{% if page.url contains 'notebook/2' %}, From the Notebook of{% endif %} {{ site.title }}</title>
-<meta property="og:title" content="{{ title }}{% unless page.url contains 'notebook/2' %} {{ site.title }}{% endunless %}">
+<title>{{ title }}</title>
+<meta property="og:title" content="{{ title }}">
 
 <meta property="og:url" content="{{ page_url }}">
 
 <meta name="author" content="{{ site.author }}">
 <meta property="og:type" content="{{ site.og.type }}">
-<meta property="og:site_name" content="{{ site.author }}">
+<meta property="og:site_name" content="{{ site.title }}">
 <meta property="og:image" content="{{ site.url }}{{ site.og.image }}">
 <meta property="og:locale" content="en_US">
 
@@ -20,7 +20,9 @@
 	<meta name="keywords" content="{{ page.keywords }}">
 {% endif %}
 
-<link href="{{ site.subscribe_rss }}" rel="alternate" title="{{site.title}}" type="application/atom+xml">
+<link href="{{ site.subscribe_rss }}" rel="alternate" title="Posts and Links From the Notebook of {{ site.title }}" type="application/atom+xml">
+<link href="{{ site.subscribe_rss_posts }}" rel="alternate" title="Posts From the Notebook of {{ site.title }}" type="application/atom+xml">
+<link href="{{ site.subscribe_rss_links }}" rel="alternate" title="Links From the Notebook of {{ site.title }}" type="application/atom+xml">
 
 <meta name="revisit-after" content="7 days">
 <meta name="ROBOTS" content="index,follow">
