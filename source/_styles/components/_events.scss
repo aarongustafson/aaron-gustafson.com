@@ -1,0 +1,14 @@
+/*------------------------------------*\
+    Events
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+
+    .event {
+        
+        &__content {
+            @include rem( margin-top, 2 );
+        }
+        
+    }
+}
