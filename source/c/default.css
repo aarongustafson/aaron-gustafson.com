@@ -756,6 +756,18 @@ form li {
 }
 
 /*------------------------------------*\
+    Embeds
+\*------------------------------------*/
+.embed {
+  margin-left: auto;
+  margin-right: auto;
+}
+.embed.tweet {
+  max-width: 502px;
+  max-width: 31.375rem;
+}
+
+/*------------------------------------*\
     Webmentions
 \*------------------------------------*/
 .video-embed {

@@ -1,8 +1,8 @@
 /*
 Error: Undefined mixin 'breakup-create-placeholder'.
-        on line 20 of /Users/aaron/Sites/aaron-gustafson.new/source/_styles/helpers/_placeholders.scss, in `breakup-create-placeholder'
-        from line 20 of /Users/aaron/Sites/aaron-gustafson.new/source/_styles/helpers/_placeholders.scss
-        from line 9 of /Users/aaron/Sites/aaron-gustafson.new/source/_styles/helpers/__helpers.scss
+        on line 20 of /Users/aaron/Sites/aaron-gustafson.com/source/_styles/helpers/_placeholders.scss, in `breakup-create-placeholder'
+        from line 20 of /Users/aaron/Sites/aaron-gustafson.com/source/_styles/helpers/_placeholders.scss
+        from line 9 of /Users/aaron/Sites/aaron-gustafson.com/source/_styles/helpers/__helpers.scss
         from line 6 of ./print.scss
 
 15:     background: transparent;
@@ -18,9 +18,9 @@ Error: Undefined mixin 'breakup-create-placeholder'.
 25: [role="contentinfo"] {
 
 Backtrace:
-/Users/aaron/Sites/aaron-gustafson.new/source/_styles/helpers/_placeholders.scss:20:in `breakup-create-placeholder'
-/Users/aaron/Sites/aaron-gustafson.new/source/_styles/helpers/_placeholders.scss:20
-/Users/aaron/Sites/aaron-gustafson.new/source/_styles/helpers/__helpers.scss:9
+/Users/aaron/Sites/aaron-gustafson.com/source/_styles/helpers/_placeholders.scss:20:in `breakup-create-placeholder'
+/Users/aaron/Sites/aaron-gustafson.com/source/_styles/helpers/_placeholders.scss:20
+/Users/aaron/Sites/aaron-gustafson.com/source/_styles/helpers/__helpers.scss:9
 ./print.scss:6
 /Users/aaron/.rvm/gems/ruby-2.0.0-p195@global/gems/sass-3.4.9/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
 /Users/aaron/.rvm/gems/ruby-2.0.0-p195@global/gems/sass-3.4.9/lib/sass/stack.rb:98:in `block in with_mixin'
@@ -92,4 +92,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'breakup-create-placeholder'.\A         on line 20 of /Users/aaron/Sites/aaron-gustafson.new/source/_styles/helpers/_placeholders.scss, in `breakup-create-placeholder'\A         from line 20 of /Users/aaron/Sites/aaron-gustafson.new/source/_styles/helpers/_placeholders.scss\A         from line 9 of /Users/aaron/Sites/aaron-gustafson.new/source/_styles/helpers/__helpers.scss\A         from line 6 of ./print.scss\A \A 15:     background: transparent;\A 16: }\A 17: body {\A 18:     background: $color-background;\A 19:     color: $color-text;\A 20: 	font-size: 12pt;\A 21: 	margin: 0;\A 22: 	position: relative;\A 23: }\A 24: section,\A 25: [role=\"contentinfo\"] {"; }
+  content: "Error: Undefined mixin 'breakup-create-placeholder'.\A         on line 20 of /Users/aaron/Sites/aaron-gustafson.com/source/_styles/helpers/_placeholders.scss, in `breakup-create-placeholder'\A         from line 20 of /Users/aaron/Sites/aaron-gustafson.com/source/_styles/helpers/_placeholders.scss\A         from line 9 of /Users/aaron/Sites/aaron-gustafson.com/source/_styles/helpers/__helpers.scss\A         from line 6 of ./print.scss\A \A 15:     background: transparent;\A 16: }\A 17: body {\A 18:     background: $color-background;\A 19:     color: $color-text;\A 20: 	font-size: 12pt;\A 21: 	margin: 0;\A 22: 	position: relative;\A 23: }\A 24: section,\A 25: [role=\"contentinfo\"] {"; }

@@ -1,0 +1,16 @@
+/*------------------------------------*\
+    Embeds
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+    
+    .embed {
+        margin-left: auto;
+        margin-right: auto;
+        
+        &.tweet {
+            @include rem( max-width, 502 );
+        }        
+    }
+    
+}
