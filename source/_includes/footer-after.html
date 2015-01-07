@@ -1,9 +1,12 @@
+{% comment %}
 {% include disqus.html %}
+{% endcomment %}
 
 	<script src="/j/main.js"></script>
 {% for script in page.javascripts.body %}
 	<script src="/j/{{ script }}.js" async></script>
 {% endfor %}
+
 
 <noscript>
 	<img src="http://nojsstats.appspot.com/{{ site.google_analytics_tracking_id }}/{{ site.url }}" alt=""/>
