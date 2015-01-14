@@ -16,4 +16,7 @@ sidebar:
   about: Hi there. I’m Aaron and I work on the Web. I’m a [prolific writer](/publications/), [frequent speaker](/events/), and [evangelist for web stewardship](/appearances/). I live & work in Chattanooga, <abbr title="Tennessee">TN</abbr>. Want to know more? [Read on](/bio/).
   events: I travel often for conferences. If I’m coming to your city and you’d like to arrange a private training or consultation while I’m there, feel free to [reach out](/contact).
 notebook:
-  date_prefix: Added to the Notebook on
+  date_prefix: Posted on
+links:
+  date_prefix: Saved on
+  more_link: All links (with commentary)

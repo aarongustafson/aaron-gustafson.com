@@ -118,3 +118,180 @@ textarea {
 /*------------------------------------*\
     Animations
 \*------------------------------------*/
+/*------------------------------------*\
+    $LAYOUT
+	Page layout
+\*------------------------------------*/
+/*------------------------------------*\
+    Grid
+\*------------------------------------*/
+.layout-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  max-width: 920px;
+  max-width: 57.5rem;
+}
+.layout-container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.layout-container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.layout-container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+.layout-container__primary {
+  width: 61.53846%;
+  float: left;
+  margin-right: 2.5641%;
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
+}
+.layout-container__secondary {
+  width: 35.89744%;
+  float: right;
+  margin-right: 0;
+  margin-right: 0;
+  width: 23.72881%;
+  float: right;
+  margin-right: 0;
+  margin-right: 0;
+}
+.layout-container__secondary > :last-child {
+  margin-bottom: 0;
+}
+.layout-container--alt .layout-container__primary {
+  width: 61.53846%;
+  float: right;
+  margin-right: 0;
+  margin-right: 0;
+  width: 66.10169%;
+  float: right;
+  margin-right: 0;
+  margin-right: 0;
+}
+.layout-container--alt .layout-container__secondary {
+  width: 35.89744%;
+  float: left;
+  margin-right: 2.5641%;
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+}
+.layout-container--split .layout-container__primary {
+  width: 48.71795%;
+  float: left;
+  margin-right: 2.5641%;
+  padding-right: 6px;
+  padding-right: 0.375rem;
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+}
+.layout-container--split .layout-container__secondary {
+  width: 48.71795%;
+  float: right;
+  margin-right: 0;
+  padding-left: 6px;
+  padding-left: 0.375rem;
+  margin-right: 0;
+  width: 49.15254%;
+  float: right;
+  margin-right: 0;
+  margin-right: 0;
+}
+
+/*------------------------------------*\
+    Header
+\*------------------------------------*/
+/*------------------------------------*\
+    Main
+\*------------------------------------*/
+/*------------------------------------*\
+    Footer
+\*------------------------------------*/
+/*------------------------------------*\
+    $COMPONENTS
+	Interface patterns
+\*------------------------------------*/
+/*------------------------------------*\
+    Media Query Watcher (for JS)
+\*------------------------------------*/
+#getActiveMQ-watcher {
+  font-family: "tiny";
+}
+
+#getActiveMQ-watcher {
+  font-family: "small";
+}
+
+#getActiveMQ-watcher {
+  font-family: "medium";
+}
+
+#getActiveMQ-watcher {
+  font-family: "full";
+}
+
+#getActiveMQ-watcher {
+  font-family: "old-ie";
+}
+
+/*------------------------------------*\
+    Modules
+\*------------------------------------*/
+/*------------------------------------*\
+    Listing
+\*------------------------------------*/
+/*------------------------------------*\
+    Media Elements
+\*------------------------------------*/
+/*------------------------------------*\
+    Embeds
+\*------------------------------------*/
+/*------------------------------------*\
+    Webmentions
+\*------------------------------------*/
+/*------------------------------------*\
+    Footnotes
+\*------------------------------------*/
+/*------------------------------------*\
+    Events
+\*------------------------------------*/
+/*------------------------------------*\
+    Blog Entry
+\*------------------------------------*/
+/*------------------------------------*\
+    Gist
+\*------------------------------------*/
+/*------------------------------------*\
+    Rules
+\*------------------------------------*/
+.rule--optional {
+  display: none;
+}
+
+/*------------------------------------*\
+    Post
+\*------------------------------------*/
+/*------------------------------------*\
+    Webmentions
+\*------------------------------------*/
+/*------------------------------------*\
+    Hero Shot
+\*------------------------------------*/

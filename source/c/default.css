@@ -746,6 +746,10 @@ form li {
 .listing--links .listing__item {
   margin: 0;
 }
+.listing--links .listing__item--link {
+  margin-bottom: 11px;
+  margin-bottom: 0.6875rem;
+}
 
 /*------------------------------------*\
     Media Elements

@@ -12,6 +12,6 @@ $breakup-breakpoints-allow-naked: ( "tiny" "small" "medium" "full" "old-ie" );
 
 @import "helpers/_helpers";
 @import "base/_base";
-//@import "layout/_layout";
-//@import "components/_components";
+@import "layout/_layout";
+@import "components/_components";
 //@import "pages/_pages";

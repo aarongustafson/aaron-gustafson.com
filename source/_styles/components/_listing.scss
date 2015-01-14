@@ -29,6 +29,10 @@
         &--links &__item {
             margin: 0;
         }
+        
+        &--links &__item--link {
+            @include rem( margin-bottom, $default-spacing / 2 );
+        }
 
     }
     

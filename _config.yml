@@ -55,14 +55,16 @@ paginate_path: "notebook/pg-:num/"    # Directory base for pagination URLs eg. /
 recent_posts: 5                   # Posts in the sidebar Recent Posts section
 excerpt_link: "Continue Reading"  # "Continue reading" link text at the bottom of excerpted articles
 excerpt_separator: "<!-- more -->"
+linkblog_pagination_dir: "notebook/links"
+linkblog_paginate_path: "notebook/links/pg-:num/"    # Directory base for pagination URLs eg. /blog/page/2/
 
 titlecase: true       # Converts page and post titles to titlecase
 
 permalink_label: "&infin;"
 permalink_label_feed: "&infin; Permalink"
-linklog_marker: "&rarr;"
-linklog_marker_position: after
-linklog_marker_position_feed: after
+#linklog_marker: "&rarr;"
+#linklog_marker_position: after
+#linklog_marker_position_feed: after
 standard_post_marker:
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.

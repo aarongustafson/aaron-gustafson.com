@@ -14,7 +14,7 @@ body_class: notebook
 {% for post in paginator.posts reverse %}
 
 	<article class="entry entry--teaser">
- 			{% include entry_teaser.html %}
+ 		{% include entry_teaser.html %}
 	</article>
 
 	{% unless forloop.last %}
