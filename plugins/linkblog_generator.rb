@@ -1,7 +1,7 @@
 # encoding: utf-8
 #
 # Jekyll Linkblog generator.
-# A generator that creates a Linkblog variable.
+# A generator that creates a paginated Linkblog and moves files to the links directory
 #
 # Version: 0.1 (2015-01-14)
 #
@@ -10,6 +10,30 @@
 #
 
 module Linkblog
+  
+  class Generator < Jekyll::Generator
+    # This generator is safe from arbitrary code execution.
+    safe true
+
+    # This generator should be passive with regard to its execution
+    priority :lowest
+
+    def generate(site)
+      all_links = []
+      
+      links = site.site_payload['site']['posts'].select { |post| post.data.has_key?('ref_url') }
+      links.each { |link|
+        all_links << link.data['path'].gsub(/\d{4}-\d{2}-\d{2}-(.*?)\.markdown/, '\1')
+      }
+      
+      # Create the Cache
+      link_cache = '.link-cache'
+      FileUtils.mkdir_p( link_cache )
+      # Save to a file
+      link_file = "#{link_cache}/links.yml"
+      File.open(link_file, 'w') { |f| YAML.dump(all_links, f) }
+    end
+  end
   
   class Page < Jekyll::Page
   end
@@ -50,7 +74,7 @@ module Linkblog
     def paginate(site, page)
       all_links = site.site_payload['site']['posts'].select { |post| post.data.has_key?('ref_url') }
 
-      pages = Pager.calculate_pages(all_links, site.config['paginate'].to_i)
+      pages = Pager.calculate_pages(all_links, site.config['notebook_paginate'].to_i)
       (1..pages).each do |num_page|
         pager = Pager.new(site, num_page, all_links, pages)
         if num_page > 1
@@ -112,7 +136,7 @@ module Linkblog
     #
     # Returns true if pagination is enabled, false otherwise.
     def self.pagination_enabled?(site)
-     !site.config['paginate'].nil? &&
+     !site.config['notebook_paginate'].nil? &&
        site.pages.size > 0
     end
 
@@ -193,7 +217,7 @@ module Linkblog
     #             of pages calculated.
     def initialize(site, page, all_posts, num_pages = nil)
       @page = page
-      @per_page = site.config['paginate'].to_i
+      @per_page = site.config['notebook_paginate'].to_i
       @total_pages = num_pages || Pager.calculate_pages(all_posts, @per_page)
 
       if @page > @total_pages

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "Great Products Focus On A Motif"
 date: 2014-02-16 17:53:14 -0500
 comments: false

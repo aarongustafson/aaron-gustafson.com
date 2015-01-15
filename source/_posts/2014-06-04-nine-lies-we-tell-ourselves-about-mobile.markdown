@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "Nine Lies We Tell Ourselves About Mobile"
 date: 2014-06-04 18:01:48 -0500
 comments: false

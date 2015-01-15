@@ -26,7 +26,7 @@ body_class: notebook
 {% if paginator.total_pages > 1 %}
 	<div class="pagination">
 		{% if paginator.previous_page %}
-			<a class="prev" href="/{{ site.pagination_dir }}/{% if paginator.previous_page != 1 %}pg-{{ paginator.previous_page }}/{% endif %}">&larr; Prev</a>
+			<a class="prev" href="/{{ site.notebook_pagination_dir }}/{% if paginator.previous_page != 1 %}pg-{{ paginator.previous_page }}/{% endif %}">&larr; Prev</a>
 		{% endif %}
 		<span class="pagination__pages">
 			page
@@ -35,7 +35,7 @@ body_class: notebook
 			<span class="pagination__pages__current">{{ paginator.total_pages }}</span>
 		</span>
 		{% if paginator.next_page %}
-			<a class="prev" href="/{{ site.pagination_dir }}/pg-{{ paginator.next_page }}/">Next &rarr;</a>
+			<a class="prev" href="/{{ site.notebook_pagination_dir }}/pg-{{ paginator.next_page }}/">Next &rarr;</a>
 		{% endif %}
 	</div>
 {% endif %}

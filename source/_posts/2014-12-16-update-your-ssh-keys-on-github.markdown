@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "Update Your SSH Keys on Github"
 date: 2014-12-16 09:21:08 -0400
 comments: false

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "Five Principles for Accommodating User Needs In Developer-Led Projects"
 date: 2014-02-12 17:48:09 -0500
 comments: false

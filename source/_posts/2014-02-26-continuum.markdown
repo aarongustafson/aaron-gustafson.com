@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "Continuum"
 date: 2014-02-26 17:57:02 -0500
 comments: false

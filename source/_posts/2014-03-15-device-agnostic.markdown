@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "Device-Agnostic"
 date: 2014-03-15 17:58:43 -0500
 comments: false

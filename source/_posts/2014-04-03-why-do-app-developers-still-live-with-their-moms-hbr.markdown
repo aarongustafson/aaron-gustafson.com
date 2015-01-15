@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "Why Do App Developers Still Live with Their Moms?"
 date: 2014-04-03 17:59:59 -0500
 comments: false

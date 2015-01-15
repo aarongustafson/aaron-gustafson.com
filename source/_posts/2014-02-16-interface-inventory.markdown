@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "Interface Inventory"
 date: 2014-02-16 17:54:17 -0500
 comments: false

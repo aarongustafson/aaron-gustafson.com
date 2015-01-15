@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: Personal Histories
 date: 2015-01-14 09:34:56 -0500
 comments: false

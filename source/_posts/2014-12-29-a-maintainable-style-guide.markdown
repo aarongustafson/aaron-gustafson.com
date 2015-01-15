@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "A Maintainable Style Guide"
 date: 2014-12-29 18:29:18 -0500
 comments: false

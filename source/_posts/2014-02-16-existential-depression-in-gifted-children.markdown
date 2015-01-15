@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "Existential Depression in Gifted Children"
 date: 2014-02-16 17:52:20 -0500
 comments: false

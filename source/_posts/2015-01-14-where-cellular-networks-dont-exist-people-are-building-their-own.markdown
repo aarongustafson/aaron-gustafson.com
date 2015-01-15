@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "Where Cellular Networks Don&#039;t Exist, People Are Building Their Own"
 date: 2015-01-14 09:35:30 -0500
 comments: false

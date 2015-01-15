@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "Living on the Edge – Our Next Step in Helping the Web Just Work"
 date: 2015-01-07 08:42:43 -0500
 comments: false

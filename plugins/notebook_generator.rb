@@ -49,7 +49,7 @@ module Notebook
     def paginate(site, page)
       all_posts = site.site_payload['site']['posts'].reject { |post| post.data.has_key?('ref_url') }.reject { |post| post['hidden'] }
 
-      pages = Pager.calculate_pages(all_posts, site.config['paginate'].to_i)
+      pages = Pager.calculate_pages(all_posts, site.config['notebook_paginate'].to_i)
       (1..pages).each do |num_page|
         pager = Pager.new(site, num_page, all_posts, pages)
         if num_page > 1
@@ -111,7 +111,7 @@ module Notebook
     #
     # Returns true if pagination is enabled, false otherwise.
     def self.pagination_enabled?(site)
-     !site.config['paginate'].nil? &&
+     !site.config['notebook_paginate'].nil? &&
        site.pages.size > 0
     end
 
@@ -125,7 +125,7 @@ module Notebook
     # Returns true if the
     def self.pagination_candidate?(config, page)
       page_dir = File.dirname(File.expand_path(remove_leading_slash(page.path), config['source']))
-      paginate_path = remove_leading_slash(config['paginate_path'])
+      paginate_path = remove_leading_slash(config['notebook_paginate_path'])
       paginate_path = File.expand_path(paginate_path, config['source'])
       page.name == 'index.html' &&
         in_hierarchy(config['source'], page_dir, File.dirname(paginate_path))
@@ -154,7 +154,7 @@ module Notebook
     def self.paginate_path(site, num_page)
       return nil if num_page.nil?
       return Pagination.first_page_url(site) if num_page <= 1
-      format = site.config['paginate_path']
+      format = site.config['notebook_paginate_path']
       if format.include?(":num")
         format = format.sub(':num', num_page.to_s)
       else
@@ -192,7 +192,7 @@ module Notebook
     #             of pages calculated.
     def initialize(site, page, all_posts, num_pages = nil)
       @page = page
-      @per_page = site.config['paginate'].to_i
+      @per_page = site.config['notebook_paginate'].to_i
       @total_pages = num_pages || Pager.calculate_pages(all_posts, @per_page)
 
       if @page > @total_pages

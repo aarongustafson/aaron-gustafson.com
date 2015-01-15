@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "Celebrating CSS"
 date: 2014-10-14 18:07:18 -0500
 comments: false

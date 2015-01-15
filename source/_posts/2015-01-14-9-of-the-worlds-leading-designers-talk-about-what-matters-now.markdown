@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "9 of the World&#039;s Leading Designers Talk About What Matters Now"
 date: 2015-01-14 09:35:19 -0500
 comments: false

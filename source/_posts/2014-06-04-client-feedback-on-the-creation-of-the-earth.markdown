@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "Client Feedback On the Creation of the Earth."
 date: 2014-06-04 18:03:30 -0500
 comments: false

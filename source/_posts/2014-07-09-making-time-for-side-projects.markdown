@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "Making Time for Side Projects"
 date: 2014-07-09 09:21:08 -0400
 comments: false

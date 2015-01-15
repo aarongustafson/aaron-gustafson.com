@@ -1,0 +1,50 @@
+---
+layout: default
+single: true
+---
+
+<div class="layout-container">
+	<article role="article" class="layout-container__primary h-entry">
+		<div class="entry">
+			<header class="entry__header">
+		     	<h1 class="entry__title p-name"><a rel="external" href="{{ page.ref_url }}">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</a></h1>
+				<p class="entry__meta">Published by {{ page.ref_source }}
+					|
+					{{ site.data.microcopy.links.date_prefix }} {% include post/date.html %} 
+					<b class="hidden">by <a class="p-author h-card" href="/about">Aaron Gustafson</a></b>
+				</p>
+		  	</header>
+	
+			{% if page.reply_to_url %}
+				<p class="entry__in-reply-to">You are reading a reply to 
+					<a class="u-in-reply-to" href="{{ page.reply_to_url }}">{{ page.reply_to_title }}</a></p>
+	    	{% endif %}
+
+			<div class="entry__content e-content">
+				{{ content }}
+				<p class="read-on"><a rel="external" href="{{ page.ref_url }}">Read on {{ page.ref_source }}&nbsp;&rarr;</a></p>
+			</div>
+
+			<footer class="entry__footer">
+				{% unless page.sharing == false %}
+					{% include post/sharing.html %}
+			    {% endunless %}
+			</footer>
+
+		</div>
+	</article>
+	
+	{% unless page.sidebar == false %}
+		<hr class="rule rule--optional">
+
+		<aside class="layout-container__secondary">
+			{% if site.post_asides.size %}
+	    		{% include_array post_asides %}
+			{% else %}
+	   			{% include_array default_asides %}
+			{% endif %}
+		</aside>
+	{% endunless %}
+
+	<script src="/j/post.min.js" async></script>
+</div>

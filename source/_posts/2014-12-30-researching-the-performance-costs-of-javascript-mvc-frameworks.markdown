@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "Researching the Performance costs of JavaScript MVC Frameworks"
 date: 2014-12-30 09:36:18 -0500
 comments: false

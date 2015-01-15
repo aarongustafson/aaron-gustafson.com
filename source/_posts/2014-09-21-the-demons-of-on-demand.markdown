@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "The Demons Of On-Demand"
 date: 2014-09-21 18:08:27 -0500
 comments: false

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "Fixed and inflexible"
 date: 2014-07-25 18:06:07 -0500
 comments: false

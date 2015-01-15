@@ -10,8 +10,8 @@ sharing: false
 
 		{% unless post.external-url %}
 
-			<article>
-	  			{% include entry_teaser.html %}
+			<article class="entry entry--teaser">
+		 		{% include entry_teaser.html %}
 			</article>
 
 			{% unless forloop.last %}

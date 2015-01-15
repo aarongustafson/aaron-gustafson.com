@@ -415,6 +415,7 @@ task :go do
     system "git commit -am \"#{message}\""
     Rake::Task[:integrate].execute
     Rake::Task[:generate].execute
+    Rake::Task[:move_links].execute
     system "git push origin source"
     Rake::Task[:deploy].execute
     Rake::Task[:webmention].execute
@@ -490,7 +491,7 @@ task :new_link, :url do |t, args|
   puts "Creating new link post: #{filename}"
   open(filename, 'w') do |post|
     post.puts "---"
-    post.puts "layout: post"
+    post.puts "layout: link"
     post.puts "title: \"#{link_title}\""
     post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
     post.puts "comments: false"
@@ -498,5 +499,27 @@ task :new_link, :url do |t, args|
     post.puts "in_reply_to: #{url}"
     post.puts "ref_source: #{source}"
     post.puts "---"
+  end
+end
+
+# usage rake move_links
+desc "Move all Notebook links to the links subdirectory"
+task :move_links do |t, args|
+  # Cache
+  link_cache = '.link-cache'
+  FileUtils.mkdir_p( link_cache )
+  # get the file
+  link_file = "#{link_cache}/links.yml"
+  if File.exists?(link_file)
+    links = open(link_file) { |f| YAML.load(f) }
+    source_dir = "./public/notebook"
+    links.each {|link|
+      if File.directory?("#{source_dir}/#{link}")
+        # puts "#{source_dir}/#{link} to #{source_dir}/links/#{link}"
+        FileUtils.mv "#{source_dir}/#{link}", "#{source_dir}/links/#{link}"
+      end
+    }
+    count = links.length
+    puts "#{count} links moved"
   end
 end

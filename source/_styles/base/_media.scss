@@ -35,8 +35,8 @@
     
     .media-container {
         max-width: 600px;
-        margin: auto;
-        @include rem( margin-bottom, $default-spacing );
+        margin-left: auto;
+        margin-right: auto;
     }
     
 }

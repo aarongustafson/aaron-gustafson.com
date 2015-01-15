@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "requestAutocomplete - Take My Money, Not My Time"
 date: 2014-02-16 17:27:11 -0500
 comments: false

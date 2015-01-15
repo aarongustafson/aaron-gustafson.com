@@ -4,6 +4,7 @@
 .sass-cache
 .gist-cache
 .pygments-cache
+.link-cache
 _deploy
 public
 sass.old

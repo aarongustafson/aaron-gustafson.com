@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "I Am Not Broken: The Language of Disability"
 date: 2014-12-23 12:49:09 -0500
 comments: false

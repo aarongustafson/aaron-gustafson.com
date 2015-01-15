@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "Prioritizing Devices: Testing And Responsive Web Design"
 date: 2014-06-14 18:04:26 -0500
 comments: false

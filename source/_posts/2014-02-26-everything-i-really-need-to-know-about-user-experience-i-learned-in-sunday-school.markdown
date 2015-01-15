@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "Everything I Really Need to Know about User Experience I Learned in Sunday School"
 date: 2014-02-26 17:56:08 -0500
 comments: false

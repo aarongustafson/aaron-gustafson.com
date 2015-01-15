@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "Web Design: Progressive Enhancement &amp; The Power of Constraint"
 date: 2014-02-26 17:45:43 -0500
 comments: false

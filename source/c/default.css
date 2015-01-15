@@ -493,9 +493,8 @@ picture {
 
 .media-container {
   max-width: 600px;
-  margin: auto;
-  margin-bottom: 22px;
-  margin-bottom: 1.375rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*------------------------------------*\

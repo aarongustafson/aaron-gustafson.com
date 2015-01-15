@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: link
 title: "Ten Reasons We Switched From an Icon Font to SVG"
 date: 2014-02-12 17:25:19 -0500
 comments: false
