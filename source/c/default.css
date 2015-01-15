@@ -898,9 +898,14 @@ div.gist table {
 div.gist table .line-numbers {
   width: 3em;
 }
-div.gist table .line-numbers,
-div.gist table .gist-meta {
+div.gist .line-numbers,
+div.gist .gist-meta {
   speak: none;
+}
+div.gist .line-number,
+div.gist .line,
+div.gist .gist-meta {
+  margin-top: 0;
 }
 div.gist table,
 div.gist tbody,

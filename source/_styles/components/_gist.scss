@@ -16,12 +16,19 @@
                 width: 3em;
             }
         
-            .line-numbers,
-            .gist-meta {
-                speak: none;
-            }
         }
     
+        .line-numbers,
+        .gist-meta {
+            speak: none;
+        }
+        
+        .line-number,
+        .line,
+        .gist-meta {
+            margin-top: 0;
+        }
+
         table,
         tbody,
         div.file-data {
