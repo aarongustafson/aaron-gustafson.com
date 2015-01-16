@@ -13,7 +13,9 @@ This week the W3C published a couple of really cool new Working Drafts I wanted 
 
 ## [CSS 4 Pseudo-elements](http://www.w3.org/TR/2015/WD-css-pseudo-4-20150115).
 
-Most of this is stuff you know: `::first-line`, `::first-letter`, and `::selection`. But what magic is this? `::spelling-error` and `::grammar-error` too! What?! Now I know I may be a little too excited about this, but it’s not because spelling and grammar errors are going to solve all of our design problems; I am excited about this because it points to us being granted more control over how more of the internals of browser operations are rendered to our users. Obviously [this is a double edged sword](/notebook/native-vs-stylable-tug-of-war/) and could be abused to the detriment of the user experience, but it may also lead to someone coming up with clearer conventions for indicating spelling and grammar errors than the ones we’ve been using since the early days of Microsoft Word.
+Most of this is stuff you know: `::first-line`, `::first-letter`, and `::selection`. But what magic is this? `::spelling-error` and `::grammar-error` too! What?! Now I know I may be a little too excited about this, but it’s not because spelling and grammar errors are going to solve all of our design problems; I am excited about this because it points to us being granted more control over how more of the internals of browser operations are rendered to our users.
+
+Obviously [this is a double edged sword](/notebook/native-vs-stylable-tug-of-war/) and could be abused to the detriment of the user experience, but it may also lead to someone coming up with clearer conventions for indicating spelling and grammar errors than the ones we’ve been using since the early days of Microsoft Word.
 
 ## [CSS 3 Exclusions](http://www.w3.org/TR/2015/WD-css3-exclusions-20150115/)
 
