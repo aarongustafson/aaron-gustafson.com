@@ -23,11 +23,6 @@
         @include rem( padding, 0 $default-spacing );
         @include rem( max-width, 700 );
         
-        & > :first-child:not([class]):before {
-            content: "\201C";
-            @include rem( margin-left, -8 );
-        }
-        
 	}
 
 	.blockquote__attribution {
@@ -66,13 +61,15 @@
 }
 
 @include breakup-breakpoint( "medium" ) {
-	blockquote {
+	blockquote,
+	dl {
         @include rem( padding, 0 ( 1 * $default-spacing ) );
 	}
 }
 
 @include breakup-breakpoint( "full" ) {
-	blockquote {
+	blockquote,
+	dl {
         @include rem( padding, 0 ( 2 * $default-spacing ) );
     }
 }

@@ -181,14 +181,11 @@ div.gsc-url-top {
 /*------------------------------------*\
     Placeholders
 \*------------------------------------*/
-html body, dl, dl dt,
-dl dd {
+html body {
   font-weight: normal;
   line-height: 1.4;
 }
-.wf-active html body, html .wf-active body, .wf-active dl, .wf-active dl dt, dl .wf-active dt,
-.wf-active dl dd,
-dl .wf-active dd {
+.wf-active html body, html .wf-active body {
   word-spacing: 2px;
 }
 nav ol, nav
@@ -320,11 +317,6 @@ blockquote {
   max-width: 700px;
   max-width: 43.75rem;
 }
-blockquote > :first-child:not([class]):before {
-  content: "\201C";
-  margin-left: -8px;
-  margin-left: -0.5rem;
-}
 
 .blockquote__attribution {
   font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
@@ -373,9 +365,21 @@ ul li {
   margin: 0;
 }
 
-dl dt,
+dl {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 22px;
+  padding: 0 1.375rem;
+  max-width: 700px;
+  max-width: 43.75rem;
+}
+dl dt {
+  font-weight: bold;
+}
 dl dd {
-  font-weight: normal;
+  margin-left: 0;
+  margin-top: 0;
+  padding-left: 0;
 }
 
 /*------------------------------------*\
@@ -881,6 +885,12 @@ form li {
 .entry__footer .entry__meta {
   margin-top: 22px;
   margin-top: 1.375rem;
+}
+.entry__content hr {
+  max-width: 100px;
+  max-width: 6.25rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*------------------------------------*\

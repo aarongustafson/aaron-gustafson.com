@@ -26,6 +26,12 @@
         &__footer &__meta {
             @include rem( margin-top, $default-spacing );
         }
+        
+        &__content hr {
+            @include rem( max-width, 100 );
+            margin-left: auto;
+            margin-right: auto;
+        }
 
     }
     
