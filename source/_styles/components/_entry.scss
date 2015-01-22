@@ -28,9 +28,7 @@
         }
         
         &__content hr {
-            @include rem( max-width, 100 );
-            margin-left: auto;
-            margin-right: auto;
+            @include rem( max-width, 220 );
         }
 
     }

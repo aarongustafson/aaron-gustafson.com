@@ -52,10 +52,11 @@
 	}
 	
 	hr {
-	    border-color: $color-rule;
-	    
-	    height: 0;
-	    @include rem( margin, $default-spacing 0 0 );
+	    border: 0;
+        border-top: 1px solid $color-rule;
+        
+        height: 0;
+        @include rem( margin, $default-spacing auto );
 	}
 
 }
