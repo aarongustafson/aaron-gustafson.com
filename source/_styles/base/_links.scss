@@ -50,6 +50,16 @@
         		border-bottom-width: 1px;
         	}
     	}
+    	
+    	&[rel="full-article"]::after {
+    	    content: "\00A0\2192";
+    	}
+
+    	&[rel="original-article"]::after {
+    	    content: "\00A0\2192";
+            display: inline-block;
+    	    transform: translateX(-.25em) rotate(-45deg) translateY(0.25em);
+    	}
 	
     }
 

@@ -29,15 +29,22 @@
 	{{ post.content | excerpt }}
 </div>
  	
-{% if excerpted == 'true' %}
+{% if excerpted == 'true' and post.ref_source %}
 	<footer class="entry__footer">
-		<a rel="full-article" href="{{ root_url }}{{ post.url }}">You can finish reading
-			<cite>{{ post.title }}</cite> in less than {{ post.content | reading_time_as_i }}&nbsp;&rarr;</a>
+		<p>
+			You can <a rel="full-article" href="{{ root_url }}{% if post.ref_source %}{{ post.url | replace:"notebook/","notebook/links/" }}{% else %}{{ post.url }}{% endif %}">finish reading
+			my thoughts in less than {{ post.content | reading_time_as_i }}</a> or your can
+			<a rel="original-article" href="{{ post.ref_url }}">read the original on {{ post.ref_source }}</a>
+		</p>
 	</footer>
-{% endif %}
-
-{% if post.ref_source %}
+{% elsif excerpted == 'true' %}
 	<footer class="entry__footer">
-		<a rel="full-article" href="{{ post.ref_url }}">Read on {{ post.ref_source }}&nbsp;&rarr;</a>
+		<p><a rel="full-article" href="{{ root_url }}{% if post.ref_source %}links/{% endif %}{{ post.url }}">You can finish reading
+			<cite>{{ post.title }}</cite> in less than {{ post.content | reading_time_as_i }}</a>
+		</p>
+	</footer>
+{% elsif post.ref_source %}
+	<footer class="entry__footer">
+		<p><a rel="original-article" href="{{ post.ref_url }}">Read on {{ post.ref_source }}</a></p>
 	</footer>
 {% endif %}
