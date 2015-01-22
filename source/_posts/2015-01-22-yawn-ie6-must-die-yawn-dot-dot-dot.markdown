@@ -20,10 +20,10 @@ I wonder if he called it. Will “Project Spartan” live alongside IE11? I gues
 
 PS - I love this opening rant from that post. I still feel this way, nearly five years later:
 
-> I am so entirely bored by the “IE6 must die” External Link movement External Link. All you people out there who think you’re on some high horse External Link of morality and rightness for the web’s future — this is a complete waste of effort. It’s useless windbaggery and nonsense. To date, I don’t think a single user has ever upgraded their IE6 simply because some douche-bag developer told them to. You live in a bubble if that’s how you think the real world works.
+> I am so entirely bored by the “IE6 must die” movement External Link. All you people out there who think you’re on some high horse of morality and rightness for the web’s future — this is a complete waste of effort. It’s useless windbaggery and nonsense. To date, I don’t think a single user has ever upgraded their IE6 simply because some douche-bag developer told them to. You live in a bubble if that’s how you think the real world works.
 
 > And while we’re at it, you sites out there who intentionally abandon IE6 support, not because it makes sense for your site (and not because you’ve provided a reasonable fallback graceful degradation for the less fortunate), but instead just because you want to flip the finger at Microsoft… well, you suck. And you know who else sucks? The sites who intentionally employ techniques they know will cause IE6 to crash External Link, as sort of a holier-than-thou “screw you” to a user who still surfs any of the web with IE6.
 
-> Then there are those who feel that we can create self-fulfilling prophecies External Link and that will make this problem go away. Or the nagging site banners and twitter icon overlays External Link reminding everyone just how much of a jack ass you are about IE6. Yeah right. Amusing, I guess, but not productive.
+> Then there are those who feel that we can create self-fulfilling prophecies and that will make this problem go away. Or the nagging site banners and twitter icon overlays reminding everyone just how much of a jack ass you are about IE6. Yeah right. Amusing, I guess, but not productive.
 
 > Get over yourselves, already. There, I said it. Deal with it.
