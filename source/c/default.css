@@ -512,6 +512,16 @@ picture {
   margin-right: auto;
 }
 
+figcaption {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
+  font-style: italic;
+  text-align: center;
+  margin-top: 11px;
+  margin-top: 0.6875rem;
+}
+
 /*------------------------------------*\
     Tables
 \*------------------------------------*/

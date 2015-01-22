@@ -39,4 +39,13 @@
         margin-right: auto;
     }
     
+    figcaption {
+        @include rem( font-size, $font-size-caption );
+	    font-family: $font-stack-sansserif;
+	    font-style: italic;
+	    text-align: center;
+	    
+        @include rem( margin-top, $default-spacing / 2 );
+    }
+    
 }

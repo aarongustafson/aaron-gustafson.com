@@ -12,9 +12,6 @@ ref_source: IEBlog
 
 Because a picture is worth a thousand words:
 
-<figure id="2015-01-22-1">
+<figure id="2015-01-22-1" class="media-container">
 	<img src="http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-38-71-metablogapi/3644.psatwjpb_2D00_image3.gif" alt="Dual rendering engine architecture animation">
-	<figcaption>
-		<p>Image credit Jason Weber</p>
-	</figcaption>
 </figure>
