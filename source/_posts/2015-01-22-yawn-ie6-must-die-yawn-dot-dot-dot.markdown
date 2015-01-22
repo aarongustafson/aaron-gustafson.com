@@ -27,3 +27,5 @@ PS - I love this opening rant from that post. I still feel this way, nearly five
 > Then there are those who feel that we can create self-fulfilling prophecies and that will make this problem go away. Or the nagging site banners and twitter icon overlays reminding everyone just how much of a jack ass you are about IE6. Yeah right. Amusing, I guess, but not productive.
 
 > Get over yourselves, already. There, I said it. Deal with it.
+
+I just give IE6 the mobile layout and no JS and call it a day.
