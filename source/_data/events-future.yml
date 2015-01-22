@@ -1,7 +1,10 @@
-- title: UX Immersion Mobile
+- title: UX Mobile Immersion
   url: http://uxim15.uie.com/
   date: 2015-04-13 09:00:00 -0400
   location: Salt Lake City, UT USA
+  workshops:
+    - title: Adaptive Designs Across Devices
+      with: Jenn Lukas
 
 - title: To Be Announced
   #url: http://lanyrd.com/2014/bdconf-2/
@@ -17,7 +20,9 @@
   url: http://www.webdesignday.com/
   date: 2015-06-11 09:00:00 -0400
   location: Pittsburgh, PA USA
-
+  workshops:
+    - title: Adaptive Designs Across Devices
+      
 - title: To Be Announced
   #url: http://lanyrd.com/2014/bdconf-2/
   date: 2015-06-19 09:00:00 -0400
