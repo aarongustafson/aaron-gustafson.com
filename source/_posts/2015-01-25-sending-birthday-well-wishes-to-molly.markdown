@@ -7,7 +7,9 @@ categories: [personal,"web design"]
 description: "Today is the birthday of an amazing woman, Molly Holzschlag, and she needs our help!"
 ---
 
-Today is the birthday of an amazing woman: [Molly Holzschlag](https://twitter.com/mollydotcom).
+Today is the birthday of an amazing woman, [Molly Holzschlag](http://molly.com), and she needs our help!
+
+<!-- more -->
 
 If you’re relatively new to the Web, you may not recognize her name, but you are benefiting from her legacy. You see, Molly has been a force of nature on the Web for the better part of two decades. She was an [early blogger](https://web.archive.org/web/20000229205046/http://www.molly.com/molly/news.html). She was our fearless leader at the [Web Standards Project](http://webstandards.org) for three years. [Molly wrote *35 books* on Web design, CSS, and other Web standards-related topics](http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=books&keywords=molly%20holzschlag&linkCode=ur2&tag=easydesign-20&linkId=BDCVT2YGNT7BNCHR). She’s presented at conferences the world over and educated thousands of Web designers and developers during her tenure. And Molly was way ahead of us when it came to understanding the Web:
 
