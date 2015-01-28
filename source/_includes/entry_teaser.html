@@ -17,6 +17,9 @@
 					{{ site.data.microcopy.notebook.date_prefix }}
 				{% endif %}
 				{% include post/date.html %}
+				{% if post.via %}
+					(<abbr title="via">↬</abbr> <a href="{{ post.via.url }}">{{ post.via.name }}</a>)
+				{% endif %}
 				{% if site.disqus_short_name and post.comments != false and site.disqus_show_comment_count == true %}
 					| <a href="{{ root_url }}{{ post.url }}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">Comments</a>
         		{% endif %}
@@ -39,12 +42,15 @@
 	</footer>
 {% elsif excerpted == 'true' %}
 	<footer class="entry__footer">
-		<p><a rel="full-article" href="{{ root_url }}{% if post.ref_source %}links/{% endif %}{{ post.url }}">You can finish reading
+		<p>
+			<a rel="full-article" href="{{ root_url }}{% if post.ref_source %}links/{% endif %}{{ post.url }}">You can finish reading
 			<cite>{{ post.title }}</cite> in less than {{ post.content | reading_time_as_i }}</a>
 		</p>
 	</footer>
 {% elsif post.ref_source %}
 	<footer class="entry__footer">
-		<p><a rel="original-article" href="{{ post.ref_url }}">Read on {{ post.ref_source }}</a></p>
+		<p>
+			<a rel="original-article" href="{{ post.ref_url }}">Read on {{ post.ref_source }}</a>
+		</p>
 	</footer>
 {% endif %}
