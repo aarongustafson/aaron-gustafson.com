@@ -5,7 +5,7 @@
 <title>{{ title }}</title>
 <meta property="og:title" content="{{ title }}">
 
-<meta property="og:url" content="{{ page_url }}">
+<meta property="og:url" content="{% if page.ref_source %}{{ page_url | replace:"notebook/","notebook/links/" }}{% else %}{{ page_url }}{% endif %}">
 
 <meta name="author" content="{{ site.author }}">
 <meta property="og:type" content="{{ site.og.type }}">
