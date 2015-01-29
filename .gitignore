@@ -1,6 +1,7 @@
 .bundle
 .DS_Store
 .webmention-cache
+.facebook-og-cache
 .sass-cache
 .gist-cache
 .pygments-cache
