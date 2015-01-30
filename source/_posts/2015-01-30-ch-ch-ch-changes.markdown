@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ch-ch-ch-changes"
-date: 2015-01-29 16:29:40 -0500
+date: 2015-01-30 10:14:40 -0500
 comments: true
 categories: ["web design",personal]
 description: "Monday, February 2nd will be the start of a new chapter in my professional career: I will joining Microsoft as a standards evangelist."
