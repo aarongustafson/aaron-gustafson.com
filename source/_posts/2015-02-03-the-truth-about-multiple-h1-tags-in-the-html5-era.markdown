@@ -8,4 +8,4 @@ in_reply_to: http://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-
 ref_source: Tuts+
 ---
 
-This is a beautiful and exhaustive survey of heading level usage before HTML5 and in HTML5. If you ever wondered how the document outline works, this is a must read.
+This is a beautiful and exhaustive survey of heading level usage before HTML5 and in HTML5. Sadly, [no one implements the HTML5 scenario yet](http://www.w3.org/TR/html5/sections.html#outlines). But it’s nice to dream. Maybe one day.
