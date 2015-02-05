@@ -116,7 +116,8 @@ task :new_post, :title do |t, args|
     post.puts "title: \"#{title.gsub(/&/,'&amp;')}\""
     post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
     post.puts "comments: true"
-    post.puts "categories: "
+    post.puts "categories: []"
+    page.puts "description: \"\""
     post.puts "---"
   end
 end
@@ -153,6 +154,7 @@ task :new_page, :filename do |t, args|
       page.puts "comments: true"
       page.puts "sharing: true"
       page.puts "footer: true"
+      page.puts "description: \"\""
       page.puts "---"
     end
   else
@@ -479,13 +481,17 @@ task :new_link, :url do |t, args|
     link_title = get_stdin("What is the title of the article? ")
   end
   source = ""
-  if link_title.include? "|"
-    temp = link_title.split('|');
+  separators = ["|", "-", "—", "–", "*"]
+  if separators.any? { |sep| link_title.include? sep }
+    temp = link_title.split(/[|-–—*']/);
     link_title = temp.first.strip
     source = temp.last.strip
   end
   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
   mkdir_p "#{source_dir}/#{posts_dir}"
+  if !Dir.glob("#{source_dir}/#{posts_dir}/*-#{link_title.to_url}*").empty?
+      abort("rake aborted!") if ask("This link may already exist. Do you want to proceed?", ['y', 'n']) == 'n'
+  end
   filename = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{link_title.to_url}.#{new_post_ext}"
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
