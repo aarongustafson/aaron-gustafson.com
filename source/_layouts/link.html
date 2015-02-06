@@ -8,12 +8,12 @@ single: true
 		<div class="entry">
 			<header class="entry__header">
 		     	<h1 class="entry__title p-name"><a rel="external" href="{{ page.ref_url }}">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</a></h1>
-				<p class="entry__meta">Published by {{ page.ref_source }}
+				<p class="entry__meta">Published in {{ page.ref_source }}
 					|
 					{{ site.data.microcopy.links.date_prefix }} {% include post/date.html %} 
 					<b class="hidden">by <a class="p-author h-card" href="/about">Aaron Gustafson</a></b>
-					{% if post.via %}
-						(<abbr title="via">↬</abbr> <a href="{{ post.via.url }}">{{ post.via.name }}</a>)
+					{% if page.via %}
+						(<abbr title="via">↬</abbr> <a href="{{ post.via.url }}">{{ page.via.name }}</a>)
 					{% endif %}
 				</p>
 		  	</header>
