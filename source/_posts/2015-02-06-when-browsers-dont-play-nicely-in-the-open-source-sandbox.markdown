@@ -9,4 +9,4 @@ ref_source: Github
 
 Passive aggression at its best:
 
-> `console.log('Google, please make sure your obfuscator does not change class names, so our patch continues working (or stop browser-sniffing as we both use and contribute to Blink!) - love, Opera.');`
+<pre><code class="javascript">console.log('Google, please make sure your obfuscator does not change class names, so our patch continues working (or stop browser-sniffing as we both use and contribute to Blink!) - love, Opera.');</code></pre>

@@ -445,17 +445,6 @@ mark {
   font-style: inherit;
 }
 
-code,
-kbd {
-  background-color: #F9F9F9;
-  border: 1px solid #DDD;
-  border-radius: 3px;
-  color: #2c2825;
-  font-style: normal;
-  padding: .05em .25em;
-  white-space: nowrap;
-}
-
 b {
   font-weight: inherit;
 }
@@ -478,6 +467,40 @@ sub {
 
 sup {
   bottom: 1em;
+}
+
+/*------------------------------------*\
+    Code styles
+\*------------------------------------*/
+code,
+kbd {
+  background-color: #F9F9F9;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  color: #2c2825;
+  font-style: normal;
+  padding: .05em .25em;
+  white-space: nowrap;
+}
+
+pre {
+  background-color: #F9F9F9;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  color: #2c2825;
+  font-style: normal;
+  white-space: prewrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .05em .25em;
+  max-width: 700px;
+  max-width: 43.75rem;
+}
+pre code {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  white-space: normal;
 }
 
 /*------------------------------------*\
