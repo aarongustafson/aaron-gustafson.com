@@ -1,7 +1,7 @@
 ---
 layout: link
 title: "Designing For The Elderly: Ways Older People Use Digital Technology Differently"
-date: 2015-01-28 17:51:36 -0500
+date: 2015-02-06 17:51:36 -0500
 comments: false
 ref_url: http://www.smashingmagazine.com/2015/02/05/designing-digital-technology-for-the-elderly/
 in_reply_to: http://www.smashingmagazine.com/2015/02/05/designing-digital-technology-for-the-elderly/
