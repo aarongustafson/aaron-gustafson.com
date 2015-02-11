@@ -13,7 +13,7 @@ single: true
 					{{ site.data.microcopy.links.date_prefix }} {% include post/date.html %} 
 					<b class="hidden">by <a class="p-author h-card" href="/about">Aaron Gustafson</a></b>
 					{% if page.via %}
-						(<abbr title="via">↬</abbr> <a href="{{ post.via.url }}">{{ page.via.name }}</a>)
+						<br><abbr title="via">↬</abbr> <a href="{{ post.via.url }}">{{ page.via.name }}</a>
 					{% endif %}
 				</p>
 		  	</header>

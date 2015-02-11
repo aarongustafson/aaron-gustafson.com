@@ -18,11 +18,8 @@
 				{% endif %}
 				{% include post/date.html %}
 				{% if post.via %}
-					(<abbr title="via">↬</abbr> <a href="{{ post.via.url }}">{{ post.via.name }}</a>)
+					<br><abbr title="via">↬</abbr> <a href="{{ post.via.url }}">{{ page.via.name }}</a>
 				{% endif %}
-				{% if site.disqus_short_name and post.comments != false and site.disqus_show_comment_count == true %}
-					| <a href="{{ root_url }}{{ post.url }}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">Comments</a>
-        		{% endif %}
       		</p>
 		{% endunless %}
   	</header>
