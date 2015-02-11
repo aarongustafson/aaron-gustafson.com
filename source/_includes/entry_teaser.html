@@ -18,7 +18,7 @@
 				{% endif %}
 				{% include post/date.html %}
 				{% if post.via %}
-					<br><abbr title="via">↬</abbr> <a href="{{ post.via.url }}">{{ page.via.name }}</a>
+					<br><abbr title="via">↬</abbr> <a href="{{ post.via.url }}">{{ post.via.name }}</a>
 				{% endif %}
       		</p>
 		{% endunless %}
