@@ -5,7 +5,7 @@ date: 2015-02-11 09:53:53 -0500
 comments: false
 ref_url: http://psycnet.apa.org/?&fa=main.doiLanding&doi=10.1037/pspi0000008
 in_reply_to: http://psycnet.apa.org/?&fa=main.doiLanding&doi=10.1037/pspi0000008
-ref_source: American Psychological Association
+ref_source: Journal of Personality and Social Psychology
 via:
  name: Ars Technica
  url: http://arstechnica.com/science/2015/02/the-powerful-cheat-for-themselves-the-powerless-cheat-for-others/
