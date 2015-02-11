@@ -34,7 +34,7 @@
 		<p>
 			You can <a rel="full-article" href="{{ root_url }}{% if post.ref_source %}{{ post.url | replace:"notebook/","notebook/links/" }}{% else %}{{ post.url }}{% endif %}">finish reading
 			my thoughts in less than {{ post.content | reading_time_as_i }}</a> or your can
-			<a rel="original-article" href="{{ post.ref_url }}">read the original on {{ post.ref_source }}</a>
+			<a rel="original-article" href="{{ post.ref_url }}">read the original in {{ post.ref_source }}</a>
 		</p>
 	</footer>
 {% elsif excerpted == 'true' %}
@@ -47,7 +47,7 @@
 {% elsif post.ref_source %}
 	<footer class="entry__footer">
 		<p>
-			<a rel="original-article" href="{{ post.ref_url }}">Read on {{ post.ref_source }}</a>
+			<a rel="original-article" href="{{ post.ref_url }}">Read in {{ post.ref_source }}</a>
 		</p>
 	</footer>
 {% endif %}
