@@ -5,11 +5,7 @@
 		<key>Label</key>
 		<string>com.aaron-gustafson.auto-publish</string>
 		<key>Program</key>
-		<string>sh</string>
-		<key>ProgramArguments</key>
-		<array>
-			<string>/Users/Easy/Sites/aaron-gustafson.com/sh/publish.sh</string>
-		</array>
+		<string>/Users/Easy/Sites/aaron-gustafson.com/sh/publish.sh</string>
 		<key>QueueDirectories</key>
 		<array>
 			<string>/Users/Easy/Dropbox/Blog/to_publish</string>
