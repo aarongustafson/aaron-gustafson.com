@@ -4,7 +4,7 @@ title: "Three Worthwhile Posts on Progressive Enhancement"
 date: 2015-02-13 10:14:40 -0500
 comments: true
 categories: ["progressive enhancement","web design"]
-description: ""
+description: "Jason Garber has penned a series of posts on progressive enhancement. Here’s a quick rundown on what they cover and why you should read them."
 ---
 
 Jason Garber has penned a series of posts on progressive enhancement. Here’s a quick rundown on what they cover and why you should read them.
