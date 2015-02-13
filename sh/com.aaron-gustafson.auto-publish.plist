@@ -8,9 +8,11 @@
 		<string>sh</string>
 		<key>ProgramArguments</key>
 		<array>
-			<string>/Users/easy/Sites/aaron-gustafson.com/sh/publish.sh</string>
+			<string>/Users/Easy/Sites/aaron-gustafson.com/sh/publish.sh</string>
 		</array>
-		<key>StartInterval</key>
-		<integer>300</integer>
+		<key>QueueDirectories</key>
+		<array>
+			<string>/Users/Easy/Dropbox/Blog/to_publish</string>
+		</array>
 	</dict>
 </plist>
