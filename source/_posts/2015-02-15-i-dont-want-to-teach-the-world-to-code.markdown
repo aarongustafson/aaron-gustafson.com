@@ -9,6 +9,8 @@ description: "I’ve been wrestling for a while with the notion of “coding” 
 
 It seems that every other day a new code school opens it doors. In my mid-sized city, Chattanooga, there are no fewer than three businesses centered around teaching “coding” classes[^1] that I am aware of. And there are at least a half-dozen free or community driven programs and camps on top of that. Most are aimed at youth, but some offer adult education as well. And that, of course, is over and above what's available in our public and private schools (which is considerable) and a plethora of online options.
 
+<!-- more -->
+
 On one hand I think this is great. I love to code and I love to share my knowledge of that world with anyone who will listen (I’m sorry, Kelly). Also, as someone who ran a web design studio, I know first hand how hard it is to find talented people to hire. More coders equals a larger talent pool; it's simple math.
 
 Currently—at least here in the U.S.—the numbers aren't where we need them to be. We just aren't graduating enough STEM (Science, Technology, Engineering, and Math) students. And the pressure to fill open positions has led to a lot of outsourcing and an increased demand for employment visas. As an unemployed or unhappy worker, making yourself employable as a coder sounds like a win-win.
@@ -24,10 +26,6 @@ First off, on the Web side of things, I think learning to code can be empowering
 The other reason I like that people are learning to code is that it changes how they see and deal with problems.
 
 As a programmer, I am forced to break lumbering, gnarly problems into simpler, accomplishable tasks. I'm forced to think about cause and effect, of process, of the steps required to achieve the desired outcome.
-
-<figure id="fig-2015-02-15-01”>
-[<img alt="Groot from Guardians of the Galaxy was a lumbering, gnarly problem that was broken into smaller, friendlier bits." src="http://fc07.deviantart.net/fs70/i/2014/219/5/b/we_are_groot_by_tyrinecarver-d7u0zfr.jpg">](http://www.deviantart.com/art/We-Are-Groot-473697639)
-</figure>
 
 I also experience failure. Constantly. I've learned to find the errors in my own logic, to second guess myself, to refine and improve, to refactor my code and my brain. This constant refinement helps me achieve a deeper understanding of my tools and my medium.
 
