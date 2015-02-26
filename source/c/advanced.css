@@ -82,6 +82,15 @@
 /*------------------------------------*\
     Media Elements
 \*------------------------------------*/
+@media only screen and (min-width: 43.125em) {
+  .media-container--right {
+    float: right;
+    max-width: 250px;
+    margin-left: 22px;
+    margin-left: 1.375rem;
+    margin-right: 0;
+  }
+}
 /*------------------------------------*\
     Tables
 \*------------------------------------*/

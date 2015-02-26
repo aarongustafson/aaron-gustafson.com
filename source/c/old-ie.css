@@ -80,6 +80,14 @@ dl {
 /*------------------------------------*\
     Media Elements
 \*------------------------------------*/
+.media-container--right {
+  float: right;
+  max-width: 250px;
+  margin-left: 22px;
+  margin-left: 1.375rem;
+  margin-right: 0;
+}
+
 /*------------------------------------*\
     Tables
 \*------------------------------------*/

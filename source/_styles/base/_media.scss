@@ -49,3 +49,14 @@
     }
     
 }
+
+@include breakup-breakpoint( "medium" ) {
+
+    .media-container--right {
+        float: right;
+        max-width: 250px;
+        @include rem( margin-left, $default-spacing );
+        margin-right: 0;
+    }
+
+}
