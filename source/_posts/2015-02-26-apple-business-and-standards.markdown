@@ -7,7 +7,7 @@ categories: ["web design","web standards",interoperability,business]
 description: "With Pointer Events now officially a W3C Recommendation, Apple is playing the role of the Web standards and interoperability party pooper."
 ---
 
-At [Tuesday night’s Code & Creativity](www.codeandcreativity.com/events/2015-02-24), digital governance expert [Lisa Welchman](https://twitter.com/lwelchman) equated digital projects to an atom. Content, IA, project management, networking, graphic design, application development, performance, and other concerns are flying this way and that like electrons—a swirling mass of energy and velocity. What holds this chaos together and keeps the electrons from flying off in all directions is the magnetic pull of protons in the nucleus of the atom.
+At [Tuesday night’s Code & Creativity](http://www.codeandcreativity.com/events/2015-02-24), digital governance expert [Lisa Welchman](https://twitter.com/lwelchman) equated digital projects to an atom. Content, IA, project management, networking, graphic design, application development, performance, and other concerns are flying this way and that like electrons—a swirling mass of energy and velocity. What holds this chaos together and keeps the electrons from flying off in all directions is the magnetic pull of protons in the nucleus of the atom.
 
 <!-- more -->
 
@@ -95,4 +95,4 @@ When browsers refuse to implement Web standards, we all lose. And we take one st
 
 [^3]: I am composing this post on a Mac… provided by Microsoft. Yes, you read that correctly.
 
-[^4]: I have felt the same way about Microsoft for years because I knew the great work they were doing behind the curtains. Part of the reason [I joined them earlier this month](aaron-gustafson.com/notebook/ch-ch-ch-changes/) was because they have been opening up and I want to encourage and nurture that.
+[^4]: I have felt the same way about Microsoft for years because I knew the great work they were doing behind the curtains. Part of the reason [I joined them earlier this month](/notebook/ch-ch-ch-changes/) was because they have been opening up and I want to encourage and nurture that.
