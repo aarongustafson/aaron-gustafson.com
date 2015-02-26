@@ -9,6 +9,8 @@ description: "With Pointer Events now officially a W3C Recommendation, Apple is 
 
 At [Tuesday night’s Code & Creativity](www.codeandcreativity.com/events/2015-02-24), digital governance expert [Lisa Welchman](https://twitter.com/lwelchman) equated digital projects to an atom. Content, IA, project management, networking, graphic design, application development, performance, and other concerns are flying this way and that like electrons—a swirling mass of energy and velocity. What holds this chaos together and keeps the electrons from flying off in all directions is the magnetic pull of protons in the nucleus of the atom.
 
+<!-- more -->
+
 <figure id="fig-2015-02-26-01" class="media-container">
 	<img src="/i/posts/2015-02-26/atom-sm.jpg"
 		 srcset="/i/posts/2015-02-26/atom-lg.jpg 800w, /i/posts/2015-02-26/atom-sm.jpg 320w"
