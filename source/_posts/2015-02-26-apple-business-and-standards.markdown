@@ -42,14 +42,14 @@ So, effectively, Apple is holding the Web back. [Tim Kadlec](https://twitter.com
 
 > Let’s set any opinions about Pointer Events aside. Frankly, I need to do a *lot* more digging here before I have any sort of strong opinion in one direction or another. There is a bigger issue here. We have a recurring situation where all vendors (save for Apple) show interest in standard, but because Apple does not express that same interest, the standard gets waylaid.
 
-This whole thing has caused quite a kerfuffle in the Web community. Obviously, some people are demonizing Apple (and, by proxy, Google) for holding us back. Others are quick to excuse Apple because of their history of pushing the Web forward (see CSS transitions, animations, etc.).[^1] Personally, I don’t think anything is ever truly black and white. Every company does some good things and some bad things. To channel Lisa Welshman again, it’s like yin and yang: The light has a little bit of the dark in it, and the dark has a little bit of the light in it.
-
-<figure id="fig-2015-02-25-02" class="media-container">
+<figure id="fig-2015-02-25-02" class="media-container media-container--right">
 	<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Yin_yang.svg/200px-Yin_yang.svg.png"
 		 srcset="http://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Yin_yang.svg/800px-Yin_yang.svg.png 800w, http://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Yin_yang.svg/400px-Yin_yang.svg.png 400w, http://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Yin_yang.svg/200px-Yin_yang.svg.png 200w"
 		 alt="Yin and yang."
 		 >
 </figure>
+
+This whole thing has caused quite a kerfuffle in the Web community. Obviously, some people are demonizing Apple (and, by proxy, Google) for holding us back. Others are quick to excuse Apple because of their history of pushing the Web forward (see CSS transitions, animations, etc.).[^1] Personally, I don’t think anything is ever truly black and white. Every company does some good things and some bad things. To channel Lisa Welshman again, it’s like yin and yang: The light has a little bit of the dark in it, and the dark has a little bit of the light in it.
 
 Generally, I’ve found that Apple tends to do what is best for Apple, without considering how it affects designers, developers, or the Open Web. On this issue however, I just haven’t figured out their angle yet.
 
