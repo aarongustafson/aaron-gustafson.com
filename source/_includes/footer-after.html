@@ -6,6 +6,7 @@
 {% endfor %}
 
 
+{% capture page_url %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
 <noscript>
-	<img src="http://nojsstats.appspot.com/{{ site.google_analytics_tracking_id }}/{{ site.url }}" alt=""/>
+	<img src="http://nojsstats.appspot.com/{{ site.google_analytics_tracking_id }}/{{ page_url }}" alt=""/>
 </noscript>
