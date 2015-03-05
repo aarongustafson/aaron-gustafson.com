@@ -1,5 +1,5 @@
 {% capture title %}{% if page.title %}{% if site.titlecase %}{{ page.title | strip_html | titlecase }}{% else %}{{ page.title | strip_html }}{% endif %}{% endif %}{% if page.url contains 'notebook/' and page.title != 'The Notebook of' %}, From the Notebook of{% endif %} {{ site.title }}{% if page.url contains 'notebook/pg-' %}, Page {{ page.url | remove:'/notebook/pg-' | remove:'/index.html' }}{% endif %}{% endcapture %}
-{% capture description %}{% if page.description %}{{ page.description | raw_content }}{% else %}{{ page.content }}{% endif %}{% endcapture %}
+{% capture description %}{% if page.description %}{{ page.description | raw_content }}{% else %}{{ page.content | raw_content }}{% endif %}{% endcapture %}
 {% capture page_url %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
 
 <title>{{ title }}</title>
