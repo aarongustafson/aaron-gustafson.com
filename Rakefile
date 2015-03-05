@@ -153,10 +153,10 @@ task :new_page, :filename do |t, args|
       page.puts "layout: page"
       page.puts "title: \"#{title}\""
       page.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M')}"
+      page.puts "description: \"\""
       page.puts "comments: true"
       page.puts "sharing: true"
       page.puts "footer: true"
-      page.puts "description: \"\""
       page.puts "---"
     end
   else
@@ -503,6 +503,7 @@ task :new_link, :url do |t, args|
     post.puts "---"
     post.puts "layout: link"
     post.puts "title: \"#{link_title}\""
+    post.puts "description: \"\""
     post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
     post.puts "comments: false"
     post.puts "ref_url: #{url}"
