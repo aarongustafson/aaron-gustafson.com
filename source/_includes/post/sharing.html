@@ -1,4 +1,4 @@
-{% capture this_url %}{{ site.url }}{{ page.url }}{% endcapture %}
+{% capture this_url %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
 
 <p class="entry__sharing">If you liked this, would you mind sharing it?
 	<a class="share_link share_link--twitter" href="https://twitter.com/intent/tweet?original_referer={{ this_url }}&amp;source=tweetbutton&amp;text={{ page.title | replace: ' ', '+' }}&amp;url={{ this_url }}">Share on Twitter</a>
