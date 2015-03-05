@@ -14,5 +14,5 @@ via:
 View content minus the jargon. ’Nuff said.
 
 <figure id="fig-2015-03-05-01" class="media-container">
-	<img src="http://www.sansbullshitsans.com/img/sans-bullshit-sans-in-action.gif" alt="">
+  <img src="http://www.sansbullshitsans.com/img/sans-bullshit-sans-in-action.gif" alt="">
 <figure>
