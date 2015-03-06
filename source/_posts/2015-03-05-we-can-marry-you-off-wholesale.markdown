@@ -1,7 +1,6 @@
 ---
 layout: link
 title: "We can marry you off, wholesale"
-description: ""
 date: 2015-03-05 17:29:18 -0500
 comments: false
 ref_url: https://shkspr.mobi/blog/2015/03/we-can-marry-you-off-wholesale/
