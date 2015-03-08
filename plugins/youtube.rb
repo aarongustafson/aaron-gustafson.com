@@ -31,18 +31,20 @@ require 'json'
 require 'erb'
 require 'yaml'
 
-VIDEO_CACHE_DIR = File.expand_path('../../.video-cache', __FILE__)
-FileUtils.mkdir_p(YOUTUBE_CACHE_DIR)
+if ( ! defined? VIDEO_CACHE_DIR )
+  VIDEO_CACHE_DIR = File.expand_path('../../.video-cache', __FILE__)
+  FileUtils.mkdir_p(VIDEO_CACHE_DIR)
+end
 
 class YouTube < Liquid::Tag
   Syntax = /^\s*([^\s]+)(\s+(\d+)\s+(\d+)\s*)?/
 
   # load from the cache
-  cache_file = File.join(VIDEO_CACHE_DIR, "youtube.yml")
-  if File.exists?(cache_file)
-    cache = open(cache_file) { |f| YAML.load(f) }
+  Cache_file = File.join(VIDEO_CACHE_DIR, "youtube.yml")
+  if File.exists?(Cache_file)
+    Cache = open(Cache_file) { |f| YAML.load(f) }
   else
-    cache = {}
+    Cache = Hash.new
   end
 
   def initialize(tagName, markup, tokens)
@@ -65,8 +67,9 @@ class YouTube < Liquid::Tag
 
   def render(context)
 
-    if cache[@id] then 
-        return cache[@id]
+    if ( Cache.has_key?(@id) ) then 
+        puts "Using Cached YouTube video: #{@id}"
+        return Cache[@id]
     end
 
     # extract video information using a REST command 
@@ -104,8 +107,8 @@ class YouTube < Liquid::Tag
     
     
     # store it back in the cache
-    cache[@id] = result
-    File.open(cache_file, 'w') { |f| YAML.dump(cache, f) }
+    Cache[@id] = result
+    File.open(Cache_file, 'w') { |f| YAML.dump(Cache, f) }
     
     return result
     

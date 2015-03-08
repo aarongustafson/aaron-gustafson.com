@@ -13,10 +13,23 @@
 #   
 require 'json'
 require 'erb'
+require 'yaml'
+
+if ( ! defined? VIDEO_CACHE_DIR )
+  VIDEO_CACHE_DIR = File.expand_path('../../.video-cache', __FILE__)
+  FileUtils.mkdir_p(VIDEO_CACHE_DIR)
+end
 
 class Vimeo < Liquid::Tag
   Syntax = /^\s*([^\s]+)(\s+(\d+)\s+(\d+)\s*)?/
-  Cache = Hash.new
+
+  # load from the cache
+  Cache_file = File.join(VIDEO_CACHE_DIR, "vimeo.yml")
+  if File.exists?(Cache_file)
+    Cache = open(Cache_file) { |f| YAML.load(f) }
+  else
+    Cache = Hash.new
+  end
 
   def initialize(tagName, markup, tokens)
     super
@@ -38,7 +51,8 @@ class Vimeo < Liquid::Tag
 
   def render(context)
 
-    if ( Cache.has_key?(@id)) then 
+    if ( Cache.has_key?(@id) ) then 
+        puts "Using Cached Vimeo video: #{@id}"
         return Cache[@id]
     end
 
@@ -77,7 +91,10 @@ class Vimeo < Liquid::Tag
     result << "<div class=\"video-embed__lazy-info\">#{@title}</div>"
     result << '</a></div></figure>'
 
+    # store it back in the cache
     Cache[@id] = result
+    File.open(Cache_file, 'w') { |f| YAML.dump(Cache, f) }
+    
     return result
 
   end
