@@ -30,8 +30,6 @@
 require 'json'
 require 'erb'
 require 'yaml'
-require 'file'
-require 'fileutils'
 
 VIDEO_CACHE_DIR = File.expand_path('../../.video-cache', __FILE__)
 FileUtils.mkdir_p(YOUTUBE_CACHE_DIR)
