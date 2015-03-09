@@ -4,7 +4,7 @@ title: "Bidding Farewell to Shirley the Goat"
 date: 2015-03-09 09:35:42 -0400
 comments: true
 categories: ["web design",publications]
-description: "On April 2nd, Web Standards Sherpa, a publication I helped found."
+description: "On April 2nd, Web Standards Sherpa, a publication I helped found, will close its doors."
 ---
 
 <figure id="fig-2015-03-09-02" class="media-container media-container--right">
