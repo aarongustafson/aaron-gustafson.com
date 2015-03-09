@@ -24,4 +24,4 @@ As one last hurrah—and as a way to raise some funds to pay for the site’s ar
 
 I am very thankful to [all of our staff and authors](http://webstandardssherpa.com/about/#staff) and to you, our readers, for making *Web Standards Sherpa* such a fun and rewarding endeavor! It was a great run and I count myself lucky to have had a small hand in the creation of so much great content.
 
-You can find all of the details regarding the conference [over on the Environments for Humans website](http://environmentsforhumans.com/2015/web-sherpa-summit/). I hope you’ll consider attending so we can ensure *Web Standards Sherpa*’s excellent content will remain available for years to come.
+You can find all of the details regarding the conference [over on the Environments for Humans website](http://environmentsforhumans.com/2015/web-sherpa-summit/). I hope you’ll consider attending so we can ensure *Web Standards Sherpa*’s excellent content will remain available for years to come. Use the discount code SHERPA to save 20% off of the ticket price.
