@@ -1,6 +1,7 @@
 ---
 layout: page
 title: A Bit About
+description: "My bio, headshots, etc."
 footer: true
 show_title: false
 sidebars: [asides/networks.html,asides/events.html]
