@@ -1,7 +1,15 @@
+- title: Web Sherpa Summit
+  url: http://lanyrd.com/2015/web-sherpa-summit/
+  date: 2015-04-02 09:00:00 -0400
+  location: Online
+
 - title: UX Mobile Immersion
   url: http://uxim15.uie.com/
   date: 2015-04-13 09:00:00 -0400
   location: Salt Lake City, UT USA
+  talks:
+    - title: There Are No Buts in Progressive Enhancement
+      with: Jenn Lukas
   workshops:
     - title: Adaptive Designs Across Devices
       with: Jenn Lukas
@@ -33,8 +41,8 @@
   workshops:
     - title: Beyond Responsive
       
-- title: To Be Announced
-  #url: http://lanyrd.com/2014/bdconf-2/
+- title: Responsive Day Out
+  url: http://lanyrd.com/2015/responsive-day-out-3/
   date: 2015-06-19 09:00:00 -0400
   location: Brighton, UK
 
@@ -46,3 +54,27 @@
     - title: Falling in Love with Forms
   workshops:
     - title: Beyond Responsive
+
+- title: TBA
+  #title: An Event Apart
+  #url: http://aneventapart.com/event/washington-dc-2015
+  date: 2015-08-10 09:00:00 -0400
+  location: Washington, DC USA
+  #talks:
+  #  - title: Falling in Love with Forms
+  
+- title: TBA
+  #title: Future of Web Design
+  #url: http://lanyrd.com/2015/future-of-web-design-new-york/
+  date: 2015-11-02 09:00:00 -0400
+  location: New York, NY USA
+  #talks:
+  #  - title: Falling in Love with Forms
+  #workshops:
+  #  - title: Beyond Responsive
+
+- title: TBA
+  #title: Øredev
+  url: http://lanyrd.com/2015/oredev/
+  date: 2015-11-02 09:00:00 -0400
+  location: Malmø, Sweden

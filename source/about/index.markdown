@@ -12,12 +12,12 @@ sidebars: [asides/networks.html,asides/events.html]
 
 <ul class="listing listing--gallery">
 	<li class="listing__item listing__item--photo">
-		<figure id="headshot-2007">
-			<a href="/i/headshots/2007.jpg">
-				<img src="/i/headshots/2007-sm.jpg" srcset="/i/headshots/2007-sm.jpg 310w, /i/headshots/2007.jpg 576w"
+		<figure id="headshot-2014">
+			<a href="/i/headshots/2014.jpg">
+				<img src="/i/headshots/2014-sm.jpg" srcset="/i/headshots/2014-sm.jpg 310w, /i/headshots/2014.jpg 713w"
 					 alt="" width="310" height="310">
 			</a>
-			<figcaption>576px × 383px. Headshot by <a href="https://www.flickr.com/photos/cindyli/">Cindy Li</a> circa 2007</figcaption>
+			<figcaption>710px × 710px. Headshot by <a href="https://www.flickr.com/photos/chlobotphoto">Chloe Wright</a> circa 2014</figcaption>
 		</figure>
 	</li>
 	<li class="listing__item listing__item--photo">
@@ -27,6 +27,15 @@ sidebars: [asides/networks.html,asides/events.html]
 					 alt="" width="310" height="310">
 			</a>
 			<figcaption>3000px × 2000px. Headshot by <a href="https://www.flickr.com/photos/johndavey/">John Davey</a> circa 2013</figcaption>
+		</figure>
+	</li>
+	<li class="listing__item listing__item--photo">
+		<figure id="headshot-2007">
+			<a href="/i/headshots/2007.jpg">
+				<img src="/i/headshots/2007-sm.jpg" srcset="/i/headshots/2007-sm.jpg 310w, /i/headshots/2007.jpg 576w"
+					 alt="" width="310" height="310">
+			</a>
+			<figcaption>576px × 383px. Headshot by <a href="https://www.flickr.com/photos/cindyli/">Cindy Li</a> circa 2007</figcaption>
 		</figure>
 	</li>
 	<li class="listing__item listing__item--photo">
