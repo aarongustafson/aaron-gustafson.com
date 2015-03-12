@@ -16,4 +16,4 @@ sidebars: [asides/networks.html,asides/events.html]
 
 <hr>
 
-{{ site.data.microcopy.about.bio_promo | markdownify }} {{ site.data.microcopy.about.headshot_promo | markdownify }}
+{{ site.data.microcopy.about.bio_promo | append:" " | append:site.data.microcopy.about.headshot_promo | markdownify }}
