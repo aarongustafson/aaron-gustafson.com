@@ -2,7 +2,7 @@ Hi there.
 	
 My name is Aaron Gustafson and I work on the web.
 
-I am a web standards advocate at [Microsoft](http://www.microsoft.com/), where I work closely with their browser team. I also the founder and technical lead of [Easy Designs](http://easy-designs.net), through which I help .
+I am a web standards advocate at [Microsoft](http://www.microsoft.com/), where I work closely with their browser team. I also help organizations elegantly tackle the challenges presented by all the crazy devices and screens you see everywhere using [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement) via [Easy Designs](http://easy-designs.net) and , through which I help .
 
 <!-- more -->
 
