@@ -2,4 +2,13 @@
     Speaking Engagements
 \*------------------------------------*/
 
-#future-events .
+#future-events .listing--events .listing__item {
+	
+	// Only the lonely
+	@include exactly(1) {
+        
+    }
+
+    
+
+}
