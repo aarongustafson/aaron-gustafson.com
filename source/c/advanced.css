@@ -434,11 +434,14 @@
   }
   .event--future:nth-last-child(1):first-child, .event--future:nth-last-child(1):first-child ~ .event--future {
     width: 100%;
+    font-size: 2em;
   }
   .event--future:nth-last-child(2):first-child, .event--future:nth-last-child(2):first-child ~ .event--future {
     width: 46%;
+    font-size: 1.5em;
   }
   .event--future:nth-last-child(n+3):first-child, .event--future:nth-last-child(n+3):first-child + .event--future {
     width: 46%;
+    font-size: 1.5em;
   }
 }

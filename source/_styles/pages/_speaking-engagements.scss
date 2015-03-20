@@ -12,6 +12,12 @@
 	
 }
 
+%larger {
+	.listing__item__title {
+		@include rem( font-size, 24 );
+	}
+}
+
 .event {
 	
 	@include breakup-breakpoint('global') {
@@ -39,11 +45,13 @@
 
 			@include exactly(2) {
 		        width: 46%;
+		        font-size: 1.5em;
 		    }
 
 		    &:nth-last-child(n+3):first-child,
 		    &:nth-last-child(n+3):first-child + & {
 		    	width: 46%;
+		        font-size: 1.5em;
 		    }
 
 		}
