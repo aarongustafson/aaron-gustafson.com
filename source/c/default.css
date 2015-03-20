@@ -264,6 +264,7 @@ html body {
     Heading Levels
 \*------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
+  clear: both;
   font-family: "quatro-slab", Georgia, serif;
   font-weight: 500;
   line-height: 1.25;
@@ -1057,4 +1058,7 @@ div.gist div.file-data {
   border: 1px solid;
   padding: 20px;
   padding: 1.25rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
