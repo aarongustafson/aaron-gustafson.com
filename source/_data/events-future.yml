@@ -31,7 +31,7 @@
     - title: Falling in Love with Forms
   workshops:
     - title: Beyond Responsive
-  
+
 - title: Web Design Day
   url: http://www.webdesignday.com/
   date: 2015-06-11 09:00:00 -0400
@@ -40,7 +40,7 @@
     - title: Falling in Love with Forms
   workshops:
     - title: Beyond Responsive
-      
+
 - title: Responsive Day Out
   url: http://lanyrd.com/2015/responsive-day-out-3/
   date: 2015-06-19 09:00:00 -0400
@@ -56,13 +56,13 @@
     - title: Beyond Responsive
 
 - title: TBA
-  #title: An Event Apart
-  #url: http://aneventapart.com/event/washington-dc-2015
+  title: An Event Apart
+  url: http://aneventapart.com/event/washington-dc-2015
   date: 2015-08-10 09:00:00 -0400
   location: Washington, DC USA
-  #talks:
-  #  - title: Falling in Love with Forms
-  
+  talks:
+    - title: Falling in Love with Forms
+
 - title: TBA
   #title: Future of Web Design
   #url: http://lanyrd.com/2015/future-of-web-design-new-york/
@@ -75,6 +75,6 @@
 
 - title: TBA
   #title: Øredev
-  url: http://lanyrd.com/2015/oredev/
+  #url: http://lanyrd.com/2015/oredev/
   date: 2015-11-02 09:00:00 -0400
   location: Malmø, Sweden
