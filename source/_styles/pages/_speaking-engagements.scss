@@ -4,14 +4,16 @@
 
 .listing__item {
 	
-	border: 1px solid;
-	@include rem( padding, 20 );
+	@include breakup-breakpoint('global') {
+		border: 1px solid;
+		@include rem( padding, 20 );
+	}
 
-	
+	&
 
 }
 
-#future-events .listing--events .listing__item {
+.listing--events .listing__item {
 	
 	border: 1px solid;
 
