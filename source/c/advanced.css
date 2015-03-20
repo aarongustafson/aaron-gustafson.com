@@ -422,3 +422,17 @@
   -ms-flex-align: stretch;
   align-items: stretch;
 }
+
+@media only screen and (min-width: 43.125em) {
+  .event {
+    width: 46%;
+  }
+}
+@media only screen and (min-width: 60em) {
+  .event {
+    width: 30%;
+  }
+}
+.event--future:nth-last-child(2):first-child, .event--future:nth-last-child(2):first-child ~ .event--future {
+  width: 46%;
+}

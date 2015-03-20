@@ -1072,7 +1072,12 @@ div.gist div.file-data {
   border: 1px solid;
   padding: 20px;
   padding: 1.25rem;
+  margin: 0 20px 20px 0;
+  margin: 0 1.25rem 1.25rem 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+.event--future:nth-last-child(2):first-child, .event--future:nth-last-child(2):first-child ~ .event--future {
+  width: 46%;
 }

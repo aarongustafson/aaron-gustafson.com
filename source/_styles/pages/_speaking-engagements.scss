@@ -17,18 +17,16 @@
 	@include breakup-breakpoint('global') {
 		border: 1px solid;
 		@include rem( padding, 20 );
+		@include rem( margin, 0 20 20 0 );
 		box-sizing: border-box;
 	}
 
 	@include breakup-breakpoint('medium') {
-		margin: 2%;
+		width: 46%;
+	}
 
-		&:nth-child(2n+1) {
-			margin-left: 0;
-		}
-		&:nth-child(2n+3) {
-			clear: left;
-		}
+	@include breakup-breakpoint('full') {
+		width: 30%;
 	}
 
 	&--future {
@@ -39,8 +37,11 @@
 	    }
 
 		@include exactly(2) {
-	        
+	        width: 46%;
 	    }
+
+	    &:nth-last-child(n+3):first-child,
+	    
 
 	}
 
