@@ -409,16 +409,29 @@
 /*------------------------------------*\
     Speaking Engagements
 \*------------------------------------*/
+.listing--events {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
 @media only screen and (min-width: 43.125em) {
-  .listing--events .listing__item {
+  .listing--events {
     float: left;
     width: 47%;
     margin-left: 2%;
   }
-  .listing--events .listing__item:nth-child(2n+1) {
+  .listing--events:nth-child(2n+1) {
     margin-left: 0;
   }
-  .listing--events .listing__item:nth-child(2n+3) {
+  .listing--events:nth-child(2n+3) {
     clear: left;
   }
 }

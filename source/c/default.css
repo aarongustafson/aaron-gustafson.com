@@ -1054,7 +1054,21 @@ div.gist div.file-data {
 /*------------------------------------*\
     Speaking Engagements
 \*------------------------------------*/
-.listing--events .listing__item {
+.listing--events {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.event {
   border: 1px solid;
   padding: 20px;
   padding: 1.25rem;
