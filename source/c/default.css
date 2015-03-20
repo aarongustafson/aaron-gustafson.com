@@ -1078,6 +1078,3 @@ div.gist div.file-data {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.event--future:nth-last-child(2):first-child, .event--future:nth-last-child(2):first-child ~ .event--future {
-  width: 46%;
-}

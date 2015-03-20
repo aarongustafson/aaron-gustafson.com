@@ -26,22 +26,27 @@
 	}
 
 	@include breakup-breakpoint('full') {
+	
 		width: 30%;
-	}
+	
+		&--future {
 
-	&--future {
+			// Only the lonely
+			@include exactly(1) {
+		        width: 100%;
+		        font-size: 2em;
+		    }
 
-		// Only the lonely
-		@include exactly(1) {
-	        
-	    }
+			@include exactly(2) {
+		        width: 46%;
+		    }
 
-		@include exactly(2) {
-	        width: 46%;
-	    }
+		    &:nth-last-child(n+3):first-child,
+		    &:nth-last-child(n+3):first-child + & {
+		    	width: 46%;
+		    }
 
-	    &:nth-last-child(n+3):first-child,
-	    
+		}
 
 	}
 
