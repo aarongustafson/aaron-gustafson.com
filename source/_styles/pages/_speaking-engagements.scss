@@ -20,7 +20,16 @@
 		box-sizing: border-box;
 	}
 
+	@include breakup-breakpoint('medium') {
+		margin: 2%;
 
+		&:nth-child(2n+1) {
+			margin-left: 0;
+		}
+		&:nth-child(2n+3) {
+			clear: left;
+		}
+	}
 
 	&--future {
 
