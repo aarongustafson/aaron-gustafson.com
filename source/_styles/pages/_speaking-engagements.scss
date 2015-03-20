@@ -2,13 +2,26 @@
     Speaking Engagements
 \*------------------------------------*/
 
+.listing__item {
+	
+	border: 1px solid;
+	@include rem( padding, 20 );
+
+	
+
+}
+
 #future-events .listing--events .listing__item {
 	
+	border: 1px solid;
+
 	// Only the lonely
 	@include exactly(1) {
         
     }
 
-    
+	@include exactly(2) {
+        
+    }
 
 }
