@@ -2,16 +2,25 @@
     Speaking Engagements
 \*------------------------------------*/
 
-.listing__item {
+.listing--events .listing__item {
 	
 	@include breakup-breakpoint('global') {
 		border: 1px solid;
 		@include rem( padding, 20 );
 	}
 
+	
+
 	#future-events & {
 
-		
+		// Only the lonely
+		@include exactly(1) {
+	        
+	    }
+
+		@include exactly(2) {
+	        
+	    }
 
 	}
 

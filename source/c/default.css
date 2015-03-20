@@ -1041,3 +1041,20 @@ div.gist div.file-data {
   left: 0;
   right: 0;
 }
+
+/*------------------------------------*\
+    $PAGES
+	Page-specific styles
+	(use sparingly)
+\*------------------------------------*/
+/*------------------------------------*\
+    Homepage
+\*------------------------------------*/
+/*------------------------------------*\
+    Speaking Engagements
+\*------------------------------------*/
+.listing--events .listing__item {
+  border: 1px solid;
+  padding: 20px;
+  padding: 1.25rem;
+}
