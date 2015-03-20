@@ -1,0 +1,11 @@
+---
+layout: link
+title: "The Big Web Show #130: Progressive Enhancement FTW with Aaron Gustafson"
+date: 2015-03-20 10:53:58 -0400
+comments: false
+ref_url: http://5by5.tv/bigwebshow/130
+in_reply_to: http://5by5.tv/bigwebshow/130
+ref_source: 5 by 5
+---
+
+Jeffrey Zeldman and I discuss web design then and now; why Flipboard’s 60fps web launch is anti-web and anti-user; [Genesis’ “Land of Confusion” video](https://www.youtube.com/watch?v=1pkVLqSaahk), and other bad ideas from the 1980s; design versus art; the demise and sendoff of [Web Standards Sherpa](http://webstandardssherpa.com); how the web community differs from other creative communities; and the 2nd Edition of [<cite>Adaptive Web Design</cite>](http://adaptivewebdesign.info), coming from New Riders later this year.
