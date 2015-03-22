@@ -9,6 +9,11 @@
         &__content {
             @include rem( margin-top, 2 );
         }
+
+        &__location {
+        	display: block;
+        	margin-top: 0;
+        }
         
     }
 }

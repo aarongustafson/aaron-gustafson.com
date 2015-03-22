@@ -66,64 +66,69 @@ sidebars: [asides/about.html,asides/speaking.html]
 				<b class="event__date">{{ event.date | date: "%B %Y" }}</b>
 				<b class="event__location">{{ event.location }}</b>
 			</p>
-			{% if event.keynotes %}
-				<p class="event__content">
-					{% for keynote in event.keynotes %}
-						{% if forloop.index == 1 %}
-							Keynote{% if forloop.length > 1 %}s{% endif %}:
-						{% endif %}
-						{% if forloop.length > 1 and forloop.index == forloop.length %}
-							and
-						{% endif %}
-						{% if keynote.slides %}<a href="{{ keynote.slides }}">{{ keynote.title }}</a>{% else %}
-						{{ keynote.title }}{% endif %}{% if forloop.length > 2 and forloop.index != forloop.length %},{% endif %}
-					{% endfor %}
-				</p>
-			{% endif %}
-			{% if event.talks %}
-				<p class="event__content">
-					{% for talk in event.talks %}
-						{% if forloop.index == 1 %}
-							Talk{% if forloop.length > 1 %}s{% endif %}:
-						{% endif %}
-						{% if forloop.length > 1 and forloop.index == forloop.length %}
-							and
-						{% endif %}
-						{% if talk.slides %}<a href="{{ talk.slides }}">{{ talk.title }}</a>{% else %}
-						{{ talk.title }}{% endif %}{% if talk.with %}
-						<b class="event__with">(with {{ talk.with }})</b>{% endif %}{% if forloop.length > 2 and forloop.index != forloop.length %},
-						{% endif %}
-					{% endfor %}
-				</p>
-			{% endif %}
-			{% if event.panels %}
-				<p class="event__content">
-					{% for panel in event.panels %}
-						{% if forloop.index == 1 %}
-							Panel{% if forloop.length > 1 %}s{% endif %}:
-						{% endif %}
-						{% if forloop.length > 1 and forloop.index == forloop.length %}
-							and
-						{% endif %}
-						{% if panel.slides %}<a href="{{ panel.slides }}">{{ panel.title }}</a>{% else %}
-						{{ panel.title }}{% endif %}{% if forloop.length > 2 and forloop.index != forloop.length %},{% endif %}
-					{% endfor %}
-				</p>
-			{% endif %}
-			{% if event.workshops %}
-				<p class="event__content">
-					{% for workshop in event.workshops %}
-						{% if forloop.index == 1 %}
-							Workshop{% if forloop.length > 1 %}s{% endif %}:
-						{% endif %}
-						{% if forloop.length > 1 and forloop.index == forloop.length %}
-							and
-						{% endif %}
-						{{ workshop.title }}{% if workshop.with %}
-						<b class="event__with">(with {{ workshop.with }})</b>{% endif %}{% if forloop.length > 2 and forloop.index != forloop.length %},
-						{% endif %}
-					{% endfor %}
-				</p>
+			{% if event.keynotes or event.talks or event.panels or event.workshops %}
+				<details class="listing__extra">
+					<summary class="listing__extra__title">Details</summary>
+					{% if event.keynotes %}
+						<p class="event__content">
+							{% for keynote in event.keynotes %}
+								{% if forloop.index == 1 %}
+									Keynote{% if forloop.length > 1 %}s{% endif %}:
+								{% endif %}
+								{% if forloop.length > 1 and forloop.index == forloop.length %}
+									and
+								{% endif %}
+								{% if keynote.slides %}<a href="{{ keynote.slides }}">{{ keynote.title }}</a>{% else %}
+								{{ keynote.title }}{% endif %}{% if forloop.length > 2 and forloop.index != forloop.length %},{% endif %}
+							{% endfor %}
+						</p>
+					{% endif %}
+					{% if event.talks %}
+						<p class="event__content">
+							{% for talk in event.talks %}
+								{% if forloop.index == 1 %}
+									Talk{% if forloop.length > 1 %}s{% endif %}:
+								{% endif %}
+								{% if forloop.length > 1 and forloop.index == forloop.length %}
+									and
+								{% endif %}
+								{% if talk.slides %}<a href="{{ talk.slides }}">{{ talk.title }}</a>{% else %}
+								{{ talk.title }}{% endif %}{% if talk.with %}
+								<b class="event__with">(with {{ talk.with }})</b>{% endif %}{% if forloop.length > 2 and forloop.index != forloop.length %},
+								{% endif %}
+							{% endfor %}
+						</p>
+					{% endif %}
+					{% if event.panels %}
+						<p class="event__content">
+							{% for panel in event.panels %}
+								{% if forloop.index == 1 %}
+									Panel{% if forloop.length > 1 %}s{% endif %}:
+								{% endif %}
+								{% if forloop.length > 1 and forloop.index == forloop.length %}
+									and
+								{% endif %}
+								{% if panel.slides %}<a href="{{ panel.slides }}">{{ panel.title }}</a>{% else %}
+								{{ panel.title }}{% endif %}{% if forloop.length > 2 and forloop.index != forloop.length %},{% endif %}
+							{% endfor %}
+						</p>
+					{% endif %}
+					{% if event.workshops %}
+						<p class="event__content">
+							{% for workshop in event.workshops %}
+								{% if forloop.index == 1 %}
+									Workshop{% if forloop.length > 1 %}s{% endif %}:
+								{% endif %}
+								{% if forloop.length > 1 and forloop.index == forloop.length %}
+									and
+								{% endif %}
+								{{ workshop.title }}{% if workshop.with %}
+								<b class="event__with">(with {{ workshop.with }})</b>{% endif %}{% if forloop.length > 2 and forloop.index != forloop.length %},
+								{% endif %}
+							{% endfor %}
+						</p>
+					{% endif %}
+				</details>
 			{% endif %}
 		</li>
 	{% endfor %}
