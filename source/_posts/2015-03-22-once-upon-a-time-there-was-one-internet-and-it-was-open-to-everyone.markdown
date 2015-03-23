@@ -10,4 +10,4 @@ ref_source: Wired
 
 A  great discussion of the implications of Internet censorship on businesses and the economy. Choice quote:
 
-> When governments begin developing complex and counterintuitive online rules for their various jurisdictions, any semblance of global development is broken down. The resulting risk is that we will be left with multiple internets, each with their own rules, laws and jguidelines.
+> When governments begin developing complex and counterintuitive online rules for their various jurisdictions, any semblance of global development is broken down. The resulting risk is that we will be left with multiple internets, each with their own rules, laws and guidelines.

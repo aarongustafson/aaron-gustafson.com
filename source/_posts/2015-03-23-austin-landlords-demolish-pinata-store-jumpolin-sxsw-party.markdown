@@ -1,7 +1,6 @@
 ---
 layout: link
 title: "Austin Landlords Demolish Piñata Store For SXSW, Call Mexican Tenants ‘Roaches’"
-description: "This is despicable. If you are the mother of either Jordan French or Darius Fisher, please slap some sense into your little fuckwit."
 date: 2015-03-23 17:51:36 -0500
 comments: false
 ref_url: http://www.latina.com/lifestyle/our-issues/austin-landlords-demolish-pinata-store-jumpolin-sxsw-party
