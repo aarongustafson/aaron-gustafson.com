@@ -2,7 +2,7 @@
 layout: link
 title: "I Can Text You A Pile of Poo, But I Can’t Write My Name"
 description: "A heartbreaking and damning assessment of the current state of Unicode by Aditya Mukerjee."
-date: 2015-01-28 17:51:36 -0500
+date: 2015-03-23 17:51:36 -0500
 comments: false
 ref_url: https://modelviewculture.com/pieces/i-can-text-you-a-pile-of-poo-but-i-cant-write-my-name
 ref_source: Model View Culture
