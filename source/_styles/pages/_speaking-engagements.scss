@@ -2,7 +2,7 @@
     Speaking Engagements
 \*------------------------------------*/
 
-.speaking-engegements {
+.speaking-engagements {
 
 	.listing--events {
 
@@ -13,17 +13,52 @@
 		
 	}
 
+	.listing__item__meta {
+		color: $color-off-white;
+	}
+
 	.event {
 
 		@include breakup-breakpoint('global') {
+			
 			border: 1px solid $color-grey-light;
-			background: $color-off-white;
+			background: $color-dark-teal;
+			color: $color-off-white;
+			text-shadow: 1px 1px 1px $color-dark-teal;
 
 			box-sizing: border-box;
 			@include rem( padding, 20 );
 			@include rem( margin, 0 20 20 0 );
 			@include rem( min-height, 120 );
 			flex: 0 0 100%;
+
+			position: relative;
+
+			a {
+				color: $color-white;
+				border-bottom: none;
+			}
+
+			& > * {
+				position: relative;
+				z-index: 1;
+			}
+
+			&__location-picture {
+				
+				background: transparent center center no-repeat;
+				background-size: cover;
+
+				opacity: .35;
+
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: 0;
+
+			}
 
 			&--future {
 

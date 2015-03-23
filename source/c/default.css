@@ -1058,7 +1058,7 @@ div.gist div.file-data {
 /*------------------------------------*\
     Speaking Engagements
 \*------------------------------------*/
-.speaking-engegements .listing--events {
+.speaking-engagements .listing--events {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1071,9 +1071,14 @@ div.gist div.file-data {
   -ms-flex-align: stretch;
   align-items: stretch;
 }
-.speaking-engegements .event {
+.speaking-engagements .listing__item__meta {
+  color: #F9F9F9;
+}
+.speaking-engagements .event {
   border: 1px solid #DDD;
-  background: #F9F9F9;
+  background: #17779E;
+  color: #F9F9F9;
+  text-shadow: 1px 1px 1px #17779E;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1087,12 +1092,32 @@ div.gist div.file-data {
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
+  position: relative;
 }
-.speaking-engegements .event--future:nth-last-child(1):first-child .listing__item__title, .speaking-engegements .event--future:nth-last-child(1):first-child ~ .event--future .listing__item__title {
+.speaking-engagements .event a {
+  color: #fff;
+  border-bottom: none;
+}
+.speaking-engagements .event > * {
+  position: relative;
+  z-index: 1;
+}
+.speaking-engagements .event__location-picture {
+  background: transparent center center no-repeat;
+  background-size: cover;
+  opacity: .35;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.speaking-engagements .event--future:nth-last-child(1):first-child .listing__item__title, .speaking-engagements .event--future:nth-last-child(1):first-child ~ .event--future .listing__item__title {
   font-size: 36px;
   font-size: 2.25rem;
 }
-.speaking-engegements .event--future:nth-last-child(n+2):first-child .listing__item__title {
+.speaking-engagements .event--future:nth-last-child(n+2):first-child .listing__item__title {
   font-size: 24px;
   font-size: 1.5rem;
 }
