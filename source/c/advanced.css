@@ -409,7 +409,7 @@
 /*------------------------------------*\
     Speaking Engagements
 \*------------------------------------*/
-.listing--events {
+.speaking-engegements .listing--events {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -422,15 +422,14 @@
   -ms-flex-align: stretch;
   align-items: stretch;
 }
-
 @media only screen and (min-width: 28.75em) {
-  .event {
+  .speaking-engegements .event {
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 30%;
     -ms-flex: 1 0 30%;
     flex: 1 0 30%;
   }
-  .event--future:nth-last-child(n+1):first-child {
+  .speaking-engegements .event--future:nth-last-child(n+1):first-child {
     -webkit-box-flex: 0;
     -webkit-flex: 0 1 96%;
     -ms-flex: 0 1 96%;
@@ -438,31 +437,31 @@
   }
 }
 @media only screen and (min-width: 60em) {
-  .event {
+  .speaking-engegements .event {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 30%;
     -ms-flex: 0 0 30%;
     flex: 0 0 30%;
   }
-  .event--future:nth-last-child(1):first-child, .event--future:nth-last-child(1):first-child ~ .event--future {
+  .speaking-engegements .event--future:nth-last-child(1):first-child, .speaking-engegements .event--future:nth-last-child(1):first-child ~ .event--future {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
   }
-  .event--future:nth-last-child(n+1):first-child {
+  .speaking-engegements .event--future:nth-last-child(n+1):first-child {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 30%;
     -ms-flex: 0 0 30%;
     flex: 0 0 30%;
   }
-  .event--future:nth-last-child(n+2):first-child, .event--future:nth-last-child(n+2):first-child + .event--future {
+  .speaking-engegements .event--future:nth-last-child(n+2):first-child, .speaking-engegements .event--future:nth-last-child(n+2):first-child + .speaking-engegements .event--future {
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 46%;
     -ms-flex: 1 0 46%;
     flex: 1 0 46%;
   }
-  .event--future:nth-last-child(n+2):first-child .listing__item__title, .event--future:nth-last-child(n+2):first-child + .event--future .listing__item__title {
+  .speaking-engegements .event--future:nth-last-child(n+2):first-child .listing__item__title, .speaking-engegements .event--future:nth-last-child(n+2):first-child + .speaking-engegements .event--future .listing__item__title {
     font-size: 24px;
     font-size: 1.5rem;
   }

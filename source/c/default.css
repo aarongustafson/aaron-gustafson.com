@@ -1058,7 +1058,7 @@ div.gist div.file-data {
 /*------------------------------------*\
     Speaking Engagements
 \*------------------------------------*/
-.listing--events {
+.speaking-engegements .listing--events {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1071,8 +1071,7 @@ div.gist div.file-data {
   -ms-flex-align: stretch;
   align-items: stretch;
 }
-
-.event {
+.speaking-engegements .event {
   border: 1px solid #DDD;
   background: #F9F9F9;
   -webkit-box-sizing: border-box;
@@ -1089,11 +1088,11 @@ div.gist div.file-data {
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
 }
-.event--future:nth-last-child(1):first-child .listing__item__title, .event--future:nth-last-child(1):first-child ~ .event--future .listing__item__title {
+.speaking-engegements .event--future:nth-last-child(1):first-child .listing__item__title, .speaking-engegements .event--future:nth-last-child(1):first-child ~ .event--future .listing__item__title {
   font-size: 36px;
   font-size: 2.25rem;
 }
-.event--future:nth-last-child(n+2):first-child .listing__item__title {
+.speaking-engegements .event--future:nth-last-child(n+2):first-child .listing__item__title {
   font-size: 24px;
   font-size: 1.5rem;
 }

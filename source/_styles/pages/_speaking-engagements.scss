@@ -2,82 +2,86 @@
     Speaking Engagements
 \*------------------------------------*/
 
-.listing--events {
+.speaking-engegements {
 
-	// Flexbox!
-	display: flex;
-	flex-wrap: wrap;
-	align-items: stretch;
-	
-}
+	.listing--events {
 
-.event {
+		// Flexbox!
+		display: flex;
+		flex-wrap: wrap;
+		align-items: stretch;
+		
+	}
 
-	@include breakup-breakpoint('global') {
-		border: 1px solid $color-grey-light;
-		background: $color-off-white;
+	.event {
 
-		box-sizing: border-box;
-		@include rem( padding, 20 );
-		@include rem( margin, 0 20 20 0 );
-		@include rem( min-height, 120 );
-		flex: 0 0 100%;
+		@include breakup-breakpoint('global') {
+			border: 1px solid $color-grey-light;
+			background: $color-off-white;
 
-		&--future {
+			box-sizing: border-box;
+			@include rem( padding, 20 );
+			@include rem( margin, 0 20 20 0 );
+			@include rem( min-height, 120 );
+			flex: 0 0 100%;
 
-			// Only the lonely
-			@include exactly(1) {
-		        .listing__item__title {
-					@include rem( font-size, 36 );
-				}
-		    }
+			&--future {
 
-			// first two if more >= 2
-		    &:nth-last-child(n+2):first-child {
-		        .listing__item__title {
-					@include rem( font-size, 24 );
-				}
+				// Only the lonely
+				@include exactly(1) {
+			        .listing__item__title {
+						@include rem( font-size, 36 );
+					}
+			    }
+
+				// first two if more >= 2
+			    &:nth-last-child(n+2):first-child {
+			        .listing__item__title {
+						@include rem( font-size, 24 );
+					}
+			    }
+
+			}
+		}
+
+		@include breakup-breakpoint('small') {
+			
+			flex: 1 0 30%;
+
+			// first if more >= 1
+		    &--future:nth-last-child(n+1):first-child {
+		    	flex: 0 1 96%;
 		    }
 
 		}
-	}
 
-	@include breakup-breakpoint('small') {
+		@include breakup-breakpoint('full') {
 		
-		flex: 1 0 30%;
+			flex: 0 0 30%;
 
-		// first if more >= 1
-	    &--future:nth-last-child(n+1):first-child {
-	    	flex: 0 1 96%;
-	    }
+			&--future {
 
-	}
+				// Only the lonely
+				@include exactly(1) {
+			        flex: 0 0 100%;
+			    }
 
-	@include breakup-breakpoint('full') {
-	
-		flex: 0 0 30%;
+			    // Reset Medium
+				&:nth-last-child(n+1):first-child {
+		    		flex: 0 0 30%;
+		    	}
 
-		&--future {
+				// first two if more >= 2
+			    &:nth-last-child(n+2):first-child,
+			    &:nth-last-child(n+2):first-child + & {
+			    	flex: 1 0 46%;
+			        
+			        .listing__item__title {
+						@include rem( font-size, 24 );
+					}
+			    }
 
-			// Only the lonely
-			@include exactly(1) {
-		        flex: 0 0 100%;
-		    }
-
-		    // Reset Medium
-			&:nth-last-child(n+1):first-child {
-	    		flex: 0 0 30%;
-	    	}
-
-			// first two if more >= 2
-		    &:nth-last-child(n+2):first-child,
-		    &:nth-last-child(n+2):first-child + & {
-		    	flex: 1 0 46%;
-		        
-		        .listing__item__title {
-					@include rem( font-size, 24 );
-				}
-		    }
+			}
 
 		}
 
