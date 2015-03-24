@@ -409,22 +409,6 @@
 /*------------------------------------*\
     Speaking Engagements
 \*------------------------------------*/
-.speaking-engagements .listing--events {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-}
-.speaking-engagements .listing__item__meta {
-  color: #F9F9F9;
-}
 @media only screen and (min-width: 28.75em) {
   .speaking-engagements .event {
     -webkit-box-flex: 1;
@@ -452,19 +436,23 @@
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
   }
+  .speaking-engagements .event--future:nth-last-child(1):first-child .listing__item__title, .speaking-engagements .event--future:nth-last-child(1):first-child ~ .event--future .listing__item__title {
+    font-size: 36px;
+    font-size: 2.25rem;
+  }
   .speaking-engagements .event--future:nth-last-child(n+1):first-child {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 30%;
     -ms-flex: 0 0 30%;
     flex: 0 0 30%;
   }
-  .speaking-engagements .event--future:nth-last-child(n+2):first-child, .speaking-engagements .event--future:nth-last-child(n+2):first-child + .speaking-engagements .event--future {
+  .speaking-engagements .event--future:nth-last-child(n+2):first-child, .speaking-engagements .event--future:nth-last-child(n+2):first-child + .event--future {
     -webkit-box-flex: 1;
     -webkit-flex: 1 0 46%;
     -ms-flex: 1 0 46%;
     flex: 1 0 46%;
   }
-  .speaking-engagements .event--future:nth-last-child(n+2):first-child .listing__item__title, .speaking-engagements .event--future:nth-last-child(n+2):first-child + .speaking-engagements .event--future .listing__item__title {
+  .speaking-engagements .event--future:nth-last-child(n+2):first-child .listing__item__title, .speaking-engagements .event--future:nth-last-child(n+2):first-child + .event--future .listing__item__title {
     font-size: 24px;
     font-size: 1.5rem;
   }

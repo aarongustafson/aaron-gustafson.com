@@ -35,7 +35,7 @@
 - title: a11yqc
   url: http://lanyrd.com/2014/a11yqc/
   date: 2014-10-14 09:00:00 -0400
-  location: Quebec, Canada
+  location: Québec City, QC Canada
   keynotes:
     - title: The Web is for Everyone
       slides: "/notebook/the-web-is-for-everyone/"
@@ -279,7 +279,7 @@
     - title: How to Hire a Web Professional
       slides: http://www.slideshare.net/AaronGustafson/how-to-hire-a-web-professional
 
-- title: Funkas Tillgänglighetsdagar
+- title: Funkas Tillgäng&shy;lighetsdagar
   url: http://lanyrd.com/2012/funkas-tillganglighetsdagar/
   date: 2012-04-18 09:00:00 +0000
   location: Stockholm, Sweden
@@ -297,7 +297,7 @@
 - title: Iceweb Light
   url: http://lanyrd.com/2011/iceweb-light/
   date: 2011-12-02 09:00:00 -0200
-  location: Reykjavik, Iceland
+  location: Reykjavík, Iceland
   workshops:
     - title: Adaptive Web Design
 
@@ -326,7 +326,7 @@
   workshops:
     - title: "HTML5 &amp; CSS3"
 
-- title: The ExpressionEngine and CodeIgniter Conference
+- title: The Expression&shy;Engine and CodeIgniter Conference
   url: http://lanyrd.com/2011/the-expressionengine-and-codeigniter-conference/
   date: 2011-10-19 09:00:00 -0400
   location: Brooklyn, NY USA

@@ -1,10 +1,244 @@
-Online:
-  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/1995_Ford_L9000_Aeromax_dumptruck.jpg/400px-1995_Ford_L9000_Aeromax_dumptruck.jpg
-  credit:
-  	name: Mr.choppers
-  	url: http://commons.wikimedia.org/wiki/User:Mr.choppers
-Salt Lake City, UT USA:
+- name: "Albany, NY USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Amsterdam, Netherlands"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Atlanta, GA USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Austin, TX USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Bethesda, MD USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Bologna, Italy"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Boston, MA USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Brighton, England"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Brooklyn, NY USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Cambridge, MA USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Charlotte, NC USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Chattnooga, TN USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Chicago, IL USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Cincinnati, OH USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Columbia, SC USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Downtown_Columbia%2C_SC.jpg/400px-Downtown_Columbia%2C_SC.jpg
+  credit_name: Fotisto
+  credit_url: http://www.flickr.com/photos/43346400@N07/4211434555/
+
+- name: "Cupertino, CA USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Düsseldorf, Germany"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Fargo, ND USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Gatlinburg, TN USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Joliet, IL USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Las Vegas, NV USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Lisbon, Portugal"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Madison, WI USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Malmö, Sweden"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Jorchr-Malm%C3%B6_r%C3%A5dhus.jpg/400px-Jorchr-Malm%C3%B6_r%C3%A5dhus.jpg
+  credit_name: Användare Jorchr
+  credit_url: http://commons.wikimedia.org/wiki/File:Jorchr-Malm%C3%B6_r%C3%A5dhus.jpg
+
+- name: "Malvern, PA USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Mountain View, CA USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Nashville, TN USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Nashville_skyline_2009.jpg/400px-Nashville_skyline_2009.jpg
+  credit_name: Kaldari
+  credit_url: http://commons.wikimedia.org/wiki/File:Nashville_skyline_2009.jpg
+
+- name: "New Orleans, LA USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "New York, NY USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Manhattan_Skyline_West_Side_%283539277981%29.jpg/400px-Manhattan_Skyline_West_Side_%283539277981%29.jpg
+  credit_name: Francisco Anzola
+  credit_url: http://www.flickr.com/photos/fran001/3539277981/
+
+- name: "Online"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/100_megabit_token_ring_adapter.JPG/400px-100_megabit_token_ring_adapter.JPG
+  credit_name: Raymangold22
+  credit_url: http://commons.wikimedia.org/wiki/File:100_megabit_token_ring_adapter.JPG
+
+- name: "Orlando, FL USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Paris, France"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Pasadena, CA USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Pittsburgh, PA USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/PNC_Park_-_Pittsburgh%2C_PA_%2814594423673%29.jpg/400px-PNC_Park_-_Pittsburgh%2C_PA_%2814594423673%29.jpg
+  credit_name: Dan Gaken
+  credit_url: https://www.flickr.com/photos/dgaken/14594423673/
+
+- name: "Portland, OR USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Québec City, QC Canada"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Ville_de_Qu%C3%A9bec01.jpg/400px-Ville_de_Qu%C3%A9bec01.jpg
+  credit_name: Bernard Gagnon
+  credit_url: http://commons.wikimedia.org/wiki/File:Ville_de_Qu%C3%A9bec01.jpg
+
+- name: "Raleigh, NC USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Research Triangle Park, NC USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Reykjavík, Iceland"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Richmond, VA USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Salt Lake City, UT USA"
   photo: http://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Jan_14_06_400_South_Salt_Lake_City_UT_USA.JPG/400px-Jan_14_06_400_South_Salt_Lake_City_UT_USA.JPG
-  credit:
-    name: Apollomelos
-    url: http://commons.wikimedia.org/wiki/User:Apollomelos
+  credit_name: Apollomelos
+  credit_url: http://commons.wikimedia.org/wiki/File:Jan_14_06_400_South_Salt_Lake_City_UT_USA.JPG
+
+- name: "San Francisco, CA USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "San Jose, CA USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Santa Clara, CA USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Seattle, WA USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Stockholm, Sweden"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Sydney, Australia"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Brighton.UK.JPG/320px-Brighton.UK.JPG
+  credit_name: Bojan Lazarevic
+  credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
+
+- name: "Vancouver, BC Canada"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Vancouver-bridge.jpg/400px-Vancouver-bridge.jpg
+  credit_name: quinet
+  credit_url: http://commons.wikimedia.org/wiki/File:Vancouver-bridge.jpg
+
+- name: "Washington, DC USA"
+  photo: http://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Uscapitolindaylight.jpg/400px-Uscapitolindaylight.jpg
+  credit_name: Kmccoy
+  credit_url: http://commons.wikimedia.org/wiki/File:Uscapitolindaylight.jpg

@@ -4,17 +4,46 @@
 
 .speaking-engagements {
 
-	.listing--events {
+	@include breakup-breakpoint('global') {
+			
+		.listing--events {
 
-		// Flexbox!
-		display: flex;
-		flex-wrap: wrap;
-		align-items: stretch;
-		
-	}
+			// Flexbox!
+			display: flex;
+			flex-wrap: wrap;
+			align-items: stretch;
+			
+		}
 
-	.listing__item__meta {
-		color: $color-off-white;
+		.listing__item__meta {
+			color: $color-off-white;
+		}
+
+		.listing__extra {
+			
+			border-top: 1px solid;
+			margin: 20px -20px -20px;
+			
+			&__title {
+				padding: 10px 20px;
+				transition: background-color .25s ease-in-out;
+
+				&:hover,
+				&:focus {
+					background-color: lighten($color-dark-teal,10%);
+				}
+			}
+
+			&[open] {
+				padding: 0 20px 20px;
+			}
+
+			&[open] .listing__extra__title {
+				background-color: lighten($color-dark-teal,10%);
+				margin: 0 -20px 20px;
+			}
+		}
+
 	}
 
 	.event {
@@ -32,6 +61,10 @@
 			@include rem( min-height, 120 );
 			flex: 0 0 100%;
 
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
 			position: relative;
 
 			a {
@@ -39,7 +72,8 @@
 				border-bottom: none;
 			}
 
-			& > * {
+			.listing__item__title,
+			.listing__item__meta {
 				position: relative;
 				z-index: 1;
 			}
@@ -50,7 +84,9 @@
 				background-size: cover;
 
 				opacity: .35;
+				filter: grayscale(100%);
 
+				margin: 0;
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -58,25 +94,38 @@
 				bottom: 0;
 				z-index: 0;
 
-			}
-
-			&--future {
-
-				// Only the lonely
-				@include exactly(1) {
-			        .listing__item__title {
-						@include rem( font-size, 36 );
-					}
-			    }
-
-				// first two if more >= 2
-			    &:nth-last-child(n+2):first-child {
-			        .listing__item__title {
-						@include rem( font-size, 24 );
-					}
-			    }
+				transition: opacity .5s ease-in-out;
 
 			}
+
+			& a:focus .event__location-picture,
+			&:hover .event__location-picture {
+				opacity: .05;
+			}
+
+			.listing__item__title {
+				@include rem( font-size, 18 );
+				line-height: 1.1;
+  				@include rem( margin-bottom, 12 );
+
+  				&--future .listing__item__title {
+					@include rem( font-size, 24 );
+  				}
+			}
+
+			&__presentation-type {
+				font-weight: bold;
+			}
+
+			&__presentation-title {
+				font-style: italic;
+			}
+
+			&__presentation-with {
+				font-size: .8em;
+				white-space: nowrap;
+			}
+
 		}
 
 		@include breakup-breakpoint('small') {
@@ -99,6 +148,10 @@
 				// Only the lonely
 				@include exactly(1) {
 			        flex: 0 0 100%;
+
+			        .listing__item__title {
+						@include rem( font-size, 36 );
+					}
 			    }
 
 			    // Reset Medium
@@ -108,7 +161,7 @@
 
 				// first two if more >= 2
 			    &:nth-last-child(n+2):first-child,
-			    &:nth-last-child(n+2):first-child + & {
+			    &:nth-last-child(n+2):first-child + .event--future {
 			    	flex: 1 0 46%;
 			        
 			        .listing__item__title {
