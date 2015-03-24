@@ -99,7 +99,8 @@ $color-grey: #666;
 $color-grey-light: #DDD;
 $color-off-white: #F9F9F9;
 $color-green: #34AD23;
-$color-green-dark: darken( $color-green, 10% );
+$color-green-mid: darken( $color-green, 10% );
+$color-green-dark: darken( $color-green, 20% );
 $color-teal: #75CEED;
 $color-dark-teal: rgb(0,121,157);
 
@@ -108,7 +109,7 @@ $color-background: $color-white;
 $color-text: $color-black;
 $color-text-light: $color-grey;
 $color-link: $color-green;
-$color-link-hover: $color-green-dark;
+$color-link-hover: $color-green-mid;
 $color-border: $color-grey-light;
 $color-rule: $color-grey-light;
 

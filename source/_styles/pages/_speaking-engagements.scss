@@ -4,15 +4,33 @@
 
 .speaking-engagements {
 
-	@include breakup-breakpoint('global') {
+	// Flexbox!
+	.listing--events {
+	
+		@include breakup-breakpoint('global') {
 			
-		.listing--events {
-
-			// Flexbox!
 			display: flex;
 			flex-wrap: wrap;
 			align-items: stretch;
+
+			@include rem( margin, 20 auto 0 );
+
+		}
+
+		@include breakup-breakpoint('full') {
+			@include rem( margin, 20 -150 0 );
+		}
+
+	}
+
+		
+	@include breakup-breakpoint('global') {
 			
+		// Flexbox!
+		.listing--events {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: stretch;
 		}
 
 		.listing__item__meta {
@@ -50,10 +68,10 @@
 
 		@include breakup-breakpoint('global') {
 			
-			border: 1px solid $color-grey-light;
-			background: $color-dark-teal;
+			border: 1px solid $color-green-dark;
+			background: $color-green-dark;
 			color: $color-off-white;
-			text-shadow: 1px 1px 1px $color-dark-teal;
+			text-shadow: 1px 1px 1px $color-green-dark;
 
 			box-sizing: border-box;
 			@include rem( padding, 20 );
@@ -68,6 +86,12 @@
 
 			position: relative;
 			overflow: hidden;
+
+			&--future {
+				border-color: $color-dark-teal;
+				background: $color-dark-teal;
+				text-shadow-color: $color-dark-teal;
+			}
 
 			a {
 				color: $color-white;
@@ -102,11 +126,14 @@
 
 			& a:focus .event__location-picture,
 			&:hover .event__location-picture {
+				
 				opacity: .05;
 				transform: scale(1.125);
+
 			}
 
 			.listing__item__title {
+
 				@include rem( font-size, 18 );
 				line-height: 1.1;
   				@include rem( margin-bottom, 12 );
@@ -114,6 +141,7 @@
   				&--future .listing__item__title {
 					@include rem( font-size, 24 );
   				}
+  				
 			}
 
 			//&__presentation-type {
@@ -133,24 +161,28 @@
 
 		@include breakup-breakpoint('small') {
 			
-			flex: 1 0 30%;
+			flex: 1 1 46%;
 
 			// first if more >= 1
 		    &--future:nth-last-child(n+1):first-child {
-		    	flex: 0 1 96%;
+		    	flex: 1 1 92%;
+
+		    	.listing__item__title {
+					@include rem( font-size, 36 );
+				}
 		    }
 
 		}
 
 		@include breakup-breakpoint('full') {
 		
-			flex: 0 0 30%;
+			flex: 0 0 31%;
 
 			&--future {
 
 				// Only the lonely
 				@include exactly(1) {
-			        flex: 0 0 100%;
+			        flex: 0 0 99%;
 
 			        .listing__item__title {
 						@include rem( font-size, 36 );
@@ -159,7 +191,7 @@
 
 			    // Reset Medium
 				&:nth-last-child(n+1):first-child {
-		    		flex: 0 0 30%;
+		    		flex: 0 0 31%;
 		    	}
 
 				// first two if more >= 2
