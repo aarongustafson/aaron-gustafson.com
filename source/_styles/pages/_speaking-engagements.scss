@@ -19,30 +19,30 @@
 			color: $color-off-white;
 		}
 
-		.listing__extra {
-			
-			border-top: 1px solid;
-			margin: 20px -20px -20px;
-			
-			&__title {
-				padding: 10px 20px;
-				transition: background-color .25s ease-in-out;
-
-				&:hover,
-				&:focus {
-					background-color: lighten($color-dark-teal,10%);
-				}
-			}
-
-			&[open] {
-				padding: 0 20px 20px;
-			}
-
-			&[open] .listing__extra__title {
-				background-color: lighten($color-dark-teal,10%);
-				margin: 0 -20px 20px;
-			}
-		}
+		//.listing__extra {
+		//	
+		//	border-top: 1px solid;
+		//	margin: 20px -20px -20px;
+		//	
+		//	&__title {
+		//		padding: 10px 20px;
+		//		transition: background-color .25s ease-in-out;
+		//		
+		//		&:hover,
+		//		&:focus {
+		//			background-color: lighten($color-dark-teal,10%);
+		//		}
+		//	}
+		//	
+		//	&[open] {
+		//		padding: 0 20px 20px;
+		//	}
+		//	
+		//	&[open] .listing__extra__title {
+		//		background-color: lighten($color-dark-teal,10%);
+		//		margin: 0 -20px 20px;
+		//	}
+		//}
 
 	}
 
@@ -61,11 +61,13 @@
 			@include rem( min-height, 120 );
 			flex: 0 0 100%;
 
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
+			// not needed without <details>
+			//display: flex;
+			//flex-direction: column;
+			//justify-content: space-between;
 
 			position: relative;
+			overflow: hidden;
 
 			a {
 				color: $color-white;
@@ -94,13 +96,14 @@
 				bottom: 0;
 				z-index: 0;
 
-				transition: opacity .5s ease-in-out;
+				transition: opacity .5s ease-in-out, transform .5s linear;
 
 			}
 
 			& a:focus .event__location-picture,
 			&:hover .event__location-picture {
 				opacity: .05;
+				transform: scale(1.125);
 			}
 
 			.listing__item__title {
@@ -113,18 +116,18 @@
   				}
 			}
 
-			&__presentation-type {
-				font-weight: bold;
-			}
-
-			&__presentation-title {
-				font-style: italic;
-			}
-
-			&__presentation-with {
-				font-size: .8em;
-				white-space: nowrap;
-			}
+			//&__presentation-type {
+			//	font-weight: bold;
+			//}
+//
+			//&__presentation-title {
+			//	font-style: italic;
+			//}
+//
+			//&__presentation-with {
+			//	font-size: .8em;
+			//	white-space: nowrap;
+			//}
 
 		}
 
