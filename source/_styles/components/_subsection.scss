@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    Subsections
+\*------------------------------------*/
+
+.subsection {
+
+	@include breakup-breakpoint( "global" ) {
+	
+		&__header {
+
+			@include rem( font-size, 18 );
+			text-align: center;
+			text-transform: uppercase;
+			
+			&::before,
+			&::after {
+  				font-size: 0.75em;
+  				position: relative;
+  				bottom: 0.125em;
+			}
+			&::before {
+  				content: '\2726\00A0\2726\00A0\2726\00A0\00A0';
+			}
+			&::after {
+  				content: '\00A0\00A0\2726\00A0\2726\00A0\2726';
+			}
+
+		}
+
+	}
+
+}

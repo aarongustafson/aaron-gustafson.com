@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<article role="article" class="page layout-container layout-container--blog">
+
+	{% if page.title or page.display_title %}
+  		{% capture the_title %}{% if page.show_title == false and page.display_title %}{{ page.display_title }}{% else %}{{ page.title }}{% endif %}{% endcapture %}
+		<h1 class="page__title">{% if site.titlecase %}{{ the_title | titlecase }}{% else %}{{ the_title }}{% endif %}</h1>
+	{% endif %}
+
+	<div class="layout-container__primary">
+  	
+		{{ content }}
+		
+  	</div>
+
+	{% unless page.sidebar == false %}
+		<hr class="rule rule--optional">
+
+		<aside class="layout-container__secondary">
+	  		{% if site.blog_index_asides.size %}
+	    		{% include_array blog_index_asides %}
+	  		{% else %}
+	    		{% include_array default_asides %}
+	  		{% endif %}
+		</aside>
+	{% endunless %}
+
+</article>
