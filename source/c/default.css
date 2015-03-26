@@ -1048,6 +1048,27 @@ div.gist div.file-data {
 }
 
 /*------------------------------------*\
+    Subsections
+\*------------------------------------*/
+.subsection__header {
+  font-size: 18px;
+  font-size: 1.125rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.subsection__header::before, .subsection__header::after {
+  font-size: 0.75em;
+  position: relative;
+  bottom: 0.125em;
+}
+.subsection__header::before {
+  content: '\2726\00A0\2726\00A0\2726\00A0\00A0';
+}
+.subsection__header::after {
+  content: '\00A0\00A0\2726\00A0\2726\00A0\2726';
+}
+
+/*------------------------------------*\
     $PAGES
 	Page-specific styles
 	(use sparingly)
@@ -1090,7 +1111,6 @@ div.gist div.file-data {
   color: #F9F9F9;
 }
 .speaking-engagements .event {
-  border: 1px solid #1a5812;
   background: #1a5812;
   color: #F9F9F9;
   text-shadow: 1px 1px 1px #1a5812;
@@ -1110,11 +1130,6 @@ div.gist div.file-data {
   position: relative;
   overflow: hidden;
 }
-.speaking-engagements .event--future {
-  border-color: #00799d;
-  background: #00799d;
-  text-shadow-color: #00799d;
-}
 .speaking-engagements .event a {
   color: #fff;
   border-bottom: none;
@@ -1124,10 +1139,23 @@ div.gist div.file-data {
   position: relative;
   z-index: 1;
 }
+.speaking-engagements .event .listing__item__title {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+}
+.speaking-engagements .event .listing__item__title--future .listing__item__title {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
 .speaking-engagements .event__location-picture {
   background: transparent center center no-repeat;
   background-size: cover;
-  opacity: .35;
+  -webkit-box-shadow: inset 0 0 50px 7px #1a5812;
+  box-shadow: inset 0 0 50px 7px #1a5812;
+  opacity: .45;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   margin: 0;
@@ -1146,14 +1174,10 @@ div.gist div.file-data {
   -ms-transform: scale(1.125);
   transform: scale(1.125);
 }
-.speaking-engagements .event .listing__item__title {
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 1.1;
-  margin-bottom: 12px;
-  margin-bottom: 0.75rem;
-}
-.speaking-engagements .event .listing__item__title--future .listing__item__title {
-  font-size: 24px;
-  font-size: 1.5rem;
+.speaking-engagements .event--future {
+  border-color: #00799d;
+  background: #00799d;
+  -webkit-box-shadow: inset 0 0 50px 7px #00799d;
+  box-shadow: inset 0 0 50px 7px #00799d;
+  text-shadow: 1px 1px 1px #00799d;
 }

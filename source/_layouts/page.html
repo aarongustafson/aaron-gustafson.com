@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="layout-container">
-	<article role="article" class="layout-container__primary h-entry">
+	<article role="article" class="h-entry">
 
 	  	{% if page.title %}
 			{% unless page.show_title == false %}
@@ -37,7 +37,7 @@ layout: default
 	{% unless page.sidebar == false %}
 		<hr class="rule rule--optional">
 
-		<aside class="layout-container__secondary">
+		<aside>
 	  		{% if page.sidebars %}
 				{% for sidebar in page.sidebars %}
 					{% include {{ sidebar }} %}

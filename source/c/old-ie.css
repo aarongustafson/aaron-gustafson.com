@@ -167,6 +167,71 @@ textarea {
   display: block;
   clear: both;
 }
+.layout-container--blog {
+  max-width: 920px;
+  max-width: 57.5rem;
+}
+.layout-container__primary {
+  width: 61.53846%;
+  float: left;
+  margin-right: 2.5641%;
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
+}
+.layout-container__secondary {
+  width: 35.89744%;
+  float: right;
+  margin-right: 0;
+  margin-right: 0;
+  width: 23.72881%;
+  float: right;
+  margin-right: 0;
+  margin-right: 0;
+}
+.layout-container__secondary > :last-child {
+  margin-bottom: 0;
+}
+.layout-container--alt .layout-container__primary {
+  width: 61.53846%;
+  float: right;
+  margin-right: 0;
+  margin-right: 0;
+  width: 66.10169%;
+  float: right;
+  margin-right: 0;
+  margin-right: 0;
+}
+.layout-container--alt .layout-container__secondary {
+  width: 35.89744%;
+  float: left;
+  margin-right: 2.5641%;
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+}
+.layout-container--split .layout-container__primary {
+  width: 48.71795%;
+  float: left;
+  margin-right: 2.5641%;
+  padding-right: 6px;
+  padding-right: 0.375rem;
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+}
+.layout-container--split .layout-container__secondary {
+  width: 48.71795%;
+  float: right;
+  margin-right: 0;
+  padding-left: 6px;
+  padding-left: 0.375rem;
+  margin-right: 0;
+  width: 49.15254%;
+  float: right;
+  margin-right: 0;
+  margin-right: 0;
+}
 
 /*------------------------------------*\
     Header
@@ -246,4 +311,7 @@ textarea {
 \*------------------------------------*/
 /*------------------------------------*\
     Hero Shot
+\*------------------------------------*/
+/*------------------------------------*\
+    Subsections
 \*------------------------------------*/
