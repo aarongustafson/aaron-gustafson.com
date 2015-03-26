@@ -32,7 +32,7 @@ sharing: false
 
 	{% for event in site.data.events-future %}
 		{% if forloop.first %}
-			<ul class="listing listing--events">
+			<ol class="listing listing--events">
 		{% endif %}
 
 		<li class="listing__item listing__item--{{ forloop.index }} event event--future">
@@ -58,7 +58,7 @@ sharing: false
 		</li>
 
 		{% if forloop.last %}
-			</ul>
+			</ol>
 		{% endif %}
 	{% endfor %}
 
@@ -68,7 +68,7 @@ sharing: false
 
 	<h2 id="past-events" class="subsection__header">In the Past</h2>
 
-	<ul class="listing listing--events">
+	<ol class="listing listing--events">
 		{% for event in site.data.events-past %}
 			<li class="listing__item listing__item--{{ forloop.index }} event event--past">
 				
@@ -160,6 +160,6 @@ sharing: false
 				{% endcomment %}
 			</li>
 		{% endfor %}
-	</ul>
+	</ol>
 
 </section>

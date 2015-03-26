@@ -1091,21 +1091,12 @@ div.gist div.file-data {
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 20px auto 0;
   margin: 1.25rem auto 0;
-}
-.speaking-engagements .listing--events {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
 }
 .speaking-engagements .listing__item__meta {
   color: #F9F9F9;
@@ -1119,8 +1110,8 @@ div.gist div.file-data {
   box-sizing: border-box;
   padding: 20px;
   padding: 1.25rem;
-  margin: 0 20px 20px 0;
-  margin: 0 1.25rem 1.25rem 0;
+  margin: 0 0 20px 0;
+  margin: 0 0 1.25rem 0;
   min-height: 120px;
   min-height: 7.5rem;
   -webkit-box-flex: 0;

@@ -9,9 +9,11 @@
 
 		@include breakup-breakpoint('global') {
 
+			// Flexbox!
 			display: flex;
 			flex-wrap: wrap;
 			align-items: stretch;
+			justify-content: space-between;
 
 			@include rem( margin, 20 auto 0 );
 
@@ -25,13 +27,6 @@
 
 
 	@include breakup-breakpoint('global') {
-
-		// Flexbox!
-		.listing--events {
-			display: flex;
-			flex-wrap: wrap;
-			align-items: stretch;
-		}
 
 		.listing__item__meta {
 			color: $color-off-white;
@@ -74,7 +69,7 @@
 
 			box-sizing: border-box;
 			@include rem( padding, 20 );
-			@include rem( margin, 0 20 20 0 );
+			@include rem( margin, 0 0 20 0 );
 			@include rem( min-height, 120 );
 			flex: 0 0 100%;
 
@@ -164,11 +159,11 @@
 
 		@include breakup-breakpoint('small') {
 
-			flex: 1 1 46%;
+			flex: 0 0 calc( 50% - 10px );
 
 			// first if more >= 1
 		    &--future:nth-last-child(n+1):first-child {
-		    	flex: 1 1 92%;
+		    	flex: 0 0 100%;
 
 		    	.listing__item__title {
 					@include rem( font-size, 36 );
@@ -177,15 +172,15 @@
 
 		}
 
-		@include breakup-breakpoint('full') {
+		@include breakup-breakpoint('medium') {
 
-			flex: 0 0 31%;
+			flex: 0 0 calc( 100% / 3 - 40px / 3 );
 
 			&--future {
 
 				// Only the lonely
 				@include exactly(1) {
-			        flex: 0 0 99%;
+			        flex: 0 0 100%;
 
 			        .listing__item__title {
 						@include rem( font-size, 36 );
@@ -194,13 +189,13 @@
 
 			    // Reset Medium
 				&:nth-last-child(n+1):first-child {
-		    		flex: 0 0 31%;
+		    		flex: 0 0 calc( 100% / 3 - 40px / 3 );
 		    	}
 
 				// first two if more >= 2
 			    &:nth-last-child(n+2):first-child,
 			    &:nth-last-child(n+2):first-child + .event--future {
-			    	flex: 1 0 46%;
+			    	flex: 0 0 calc( 50% - 10px );
 
 			        .listing__item__title {
 						@include rem( font-size, 24 );
