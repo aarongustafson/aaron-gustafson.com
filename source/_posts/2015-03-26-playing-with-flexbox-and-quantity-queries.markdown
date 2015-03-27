@@ -94,9 +94,7 @@ To handle the margins in the quantity query instance, I added all the margins ba
 
 And there you have it. In about 80 lines of very generously spaced and commented CSS, we’ve got a flexible grid-based Flexbox layout with visual enhancements injected via quantity queries. I’m sure I’ll continue to tinker, but I’m pretty happy with the results so far.
 
-{% youtube V20wuGM2tzU %}
-
-You can view [the final page of course](/speaking-engagements/), but I also created a [distilled demo on Codepen for you to play with](http://codepen.io/aarongustafson/pen/VYRZBP). 
+You can view [the final page of course](/speaking-engagements/) (or [watch a video of the interaction](https://www.youtube.com/watch?v=V20wuGM2tzU)), but I also created a [distilled demo on Codepen for you to play with](http://codepen.io/aarongustafson/pen/VYRZBP). 
 
 [^1]: If you aren’t familiar with Flexbox, [CSS Tricks has a great cheatsheet](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
 [^2]: Interestingly, the support matrices for [`calc()`](http://caniuse.com/#feat=calc) and [Flexbox](http://caniuse.com/#feat=flexbox) are pretty well aligned.
