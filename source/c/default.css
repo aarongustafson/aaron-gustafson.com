@@ -1091,10 +1091,6 @@ div.gist div.file-data {
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   margin: 20px auto 0;
   margin: 1.25rem auto 0;
 }
@@ -1112,8 +1108,6 @@ div.gist div.file-data {
   padding: 1.25rem;
   margin: 0 0 20px 0;
   margin: 0 0 1.25rem 0;
-  min-height: 120px;
-  min-height: 7.5rem;
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
