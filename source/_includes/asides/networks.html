@@ -4,7 +4,7 @@
 		<ul class="listing listing--links">
 			{% for link in site.data.links %}
 				<li class="listing__item listing__item--{{ link.site | downcase }}">
-					<a href="{{ link.url }}" title="{{ link.title }}"><b class="icon icon-{{ link.site | downcase }}"></b>{{ link.site }}</a>
+					<a rel="me" href="{{ link.url }}" title="{{ link.title }}"><b class="icon icon-{{ link.site | downcase }}"></b>{{ link.site }}</a>
 				</li>
 			{% endfor %}
 		</ul>
