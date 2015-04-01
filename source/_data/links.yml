@@ -10,6 +10,12 @@
   title: Follow me on Facebook
   category: profile
 
+- site: Github
+  username: AaronGustafson
+  url: https://github.com/aarongustafson
+  title: Follow my work on Github
+  category: profile
+
 - site: Google+
   url: https://plus.google.com/+AaronGustafson
   title: Follow me on Google+
@@ -40,7 +46,7 @@
   url: http://instagram.com/AaronGustafson
   title: View my square photos on Instagram
   category: photos
-  
+
 - site: Flickr
   url: https://www.flickr.com/photos/aarongustafson
   title: View my photos on Flickr
