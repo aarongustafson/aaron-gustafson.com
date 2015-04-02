@@ -76,6 +76,7 @@
             li:         document.createElement('li'),
             time:       document.createElement('time')
         },
+        space = document.createTextNode(' '),
         months = [
             'January', 'February', 'March', 'April', 'May', 'June',
             'July', 'August', 'September', 'October', 'November', 'December'
@@ -159,6 +160,9 @@
             title = data.name,
             content = data.content,
             url = data.url,
+            type = data.activity.type,
+            activity = ( type == "like" || type == "repost" ),
+            sentence = data.activity.sentence_html,
             author = data.author.name,
             author_photo = data.author.photo,
             pubdate,
@@ -166,13 +170,6 @@
 
         $item.id = 'webmention-' + id;
         $item.appendChild( $mention );
-
-        // no doubling up
-        if ( title && content &&
-             title == content )
-        {
-            title = false;
-        }
 
         if ( author )
         {
@@ -186,6 +183,12 @@
             $author_link.appendChild( $author_name );
             $author.appendChild( $author_link );
             $mention.appendChild( $author );
+
+            if (activity)
+            {
+              title = author + ' ' + title;
+              $mention.className += ' webmention--author-starts';
+            }
         }
 
         if ( data.published )
@@ -197,19 +200,35 @@
             display_date += pubdate.getUTCFullYear();
             $pubdate.appendChild( document.createTextNode( display_date ) );
             $meta.appendChild( $pubdate );
+            if ( url )
+            {
+                $meta.appendChild( document.createTextNode( ' | ' ) );
+            }
         }
-        
-
-        if ( ( title && title.indexOf(author) === 0 ) ||
-             ( content && content.indexOf(author) === 0 ) )
+        if ( url )
         {
-            $mention.className += ' webmention--author-starts';
+            $link = elements.permalink.cloneNode( true );
+            $link.href = url;
+            $meta.appendChild( $link );
         }
-        
+
+        if ( type == "reply" )
+        {
+            title = false;
+        }
+
+        // no doubling up
+        if ( title && content &&
+             title == content )
+        {
+            title = false;
+        }
 
         if ( title )
         {
             $mention.className += ' webmention--title-only';
+
+            title = title.replace( 'resposts', 'reposted' );
 
             if ( url )
             {
@@ -224,28 +243,32 @@
 
             $block = elements.title.cloneNode( true );
             $block.appendChild( $link );
+            $mention.appendChild( space.cloneNode( true ) );
             $mention.appendChild( $block );
-
-            $mention.appendChild( $meta );
         }
         else if ( content )
         {
             $mention.className += ' webmention--content-only';
 
-            if ( url )
-            {
-                $meta.appendChild( document.createTextNode( ' | ' ) );
-                $link = elements.permalink.cloneNode( true );
-                $link.href = url;
-                $meta.appendChild( $link );
-            }
-
-            $mention.appendChild( $meta );
-
             // TODO: Add Markdown
             $block = elements.content.cloneNode( true );
-            $block.appendChild( document.createTextNode( content ) );
+            
+            if ( activity && sentence )
+            {
+                $block.appendChild( document.createTextNode(
+                    sentence.replace( /href/, 'class="p-author h-card" href' )
+                );
+            }
+            else
+            {
+                $block.appendChild( document.createTextNode( content ) );
+            }
             $mention.appendChild( $block );
+        }
+
+        if ( $meta.children.length > 0 )
+        {
+            $mention.appendChild( $meta );
         }
         
         if ( $existing_mention.length < 1 )

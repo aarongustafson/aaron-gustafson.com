@@ -47,7 +47,11 @@
 	    
         @include rem( margin-top, $default-spacing / 2 );
     }
-    
+
+    footer ~ noscript img {
+        width:1px;
+        height:1px;
+    }
 }
 
 @include breakup-breakpoint( "medium" ) {

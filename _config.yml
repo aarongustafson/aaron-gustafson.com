@@ -42,6 +42,7 @@ code_dir: /downloads/code
 category_dir: notebook/tags
 category_title_prefix: "Browse by Tag: "
 markdown: rdiscount
+encoding: utf-8
 rdiscount:
   extensions:
     - autolink

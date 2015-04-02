@@ -59,6 +59,11 @@
         &__meta {
             color: $color-grey;
         }
+
+        &--activity &__author,
+        &--activity &__title {
+            display: inline;
+        }
     }
 
 }

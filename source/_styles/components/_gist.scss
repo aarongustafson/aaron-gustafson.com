@@ -38,3 +38,12 @@
     }
     
 }
+
+// De-table on smaller screens
+// (using staff directory as a gauge)
+@include breakup-media( "only screen and (max-width: 770px)" ) {
+    div.gist .line-numbers,
+    div.gist .line-data {
+        display: table-cell;
+    }
+}

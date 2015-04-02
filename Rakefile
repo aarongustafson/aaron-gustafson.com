@@ -563,4 +563,3 @@ task :fix_opengraph do
     File.open(cache_fixed, 'w') { |f| YAML.dump(fixed, f) }
   end
 end
-

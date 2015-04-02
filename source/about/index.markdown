@@ -9,7 +9,7 @@ sidebars: [asides/networks.html,asides/events.html]
 ---
 
 <figure id="headshot-2014" class="media-container media-container--right">
-	<img src="/i/headshots/2014-sm.jpg" srcset="/i/headshots/2014-sm.jpg 310w, /i/headshots/2014.jpg 713w" alt="" width="310" height="310">
+	<img class="photo" src="/i/headshots/2014-sm.jpg" srcset="/i/headshots/2014-sm.jpg 310w, /i/headshots/2014.jpg 713w" alt="" width="310" height="310">
 </figure>
 
 {% include about.markdown %}

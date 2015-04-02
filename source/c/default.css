@@ -546,6 +546,11 @@ figcaption {
   margin-top: 0.6875rem;
 }
 
+footer ~ noscript img {
+  width: 1px;
+  height: 1px;
+}
+
 /*------------------------------------*\
     Tables
 \*------------------------------------*/
@@ -1034,6 +1039,9 @@ div.gist div.file-data {
 }
 .webmention__meta {
   color: #666;
+}
+.webmention--activity .webmention__author, .webmention--activity .webmention__title {
+  display: inline;
 }
 
 /*------------------------------------*\

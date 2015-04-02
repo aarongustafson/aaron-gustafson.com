@@ -9,6 +9,7 @@
 #    {% webmention_count URL %}
 #   
 require 'json'
+require 'net/http'
 
 WEBMENTION_CACHE_DIR = File.expand_path('../../.webmention-cache', __FILE__)
 FileUtils.mkdir_p(WEBMENTION_CACHE_DIR)
@@ -32,6 +33,9 @@ module Jekyll
       args.each do |url|
         target = lookup(context, url)
         targets.push(target)
+        # For legacy (non www) URIs
+        legacy = target.sub "www.", ""
+        targets.push(legacy)
       end
       
       api_params = targets.collect { |v| "target[]=#{v}" }.join("&")
@@ -55,8 +59,11 @@ module Jekyll
 
     def get_response(api_params)
       api_uri = URI.parse(@api_endpoint + "?#{api_params}")
+      # print api_uri
+      # print "\r\n"
       response = Net::HTTP.get(api_uri.host, api_uri.request_uri)
       if response
+        # print response
         JSON.parse(response)
       else
         ""
@@ -115,27 +122,68 @@ module Jekyll
         if ! cached_webmentions[id]
           
           webmention = ""
-
+          webmention_classes = "webmention"
+          
           title = link["data"]["name"]
           content = link["data"]["content"]
-          url = link["data"]["url"]
+          url = link["data"]["url"] || link["source"]
+          type = link["activity"]["type"]
+          sentence = link["activity"]["sentence_html"]
 
-          if ! ( title and content and url )
+          activity = false
+          if type == "like" or type == "repost"
+            activity = true
+          end
+          
+          link_title = false
+          if !( title and content ) and url
             url = link["source"]
             
             status = `curl -s -I -L -o /dev/null -w "%{http_code}" --location "#{url}"`
             next if status != "200"
             
-            title = `curl -s --location "#{url}" | grep '<title>'`
-            if title
-              title = title.gsub(/<\/?title>/i,'').strip
+            # print "checking #{url}\r\n"
+            html_source = `curl -s --location "#{url}"`
+            
+            if ! html_source.valid_encoding?
+              html_source = html_source.encode("UTF-16be", :invalid=>:replace, :replace=>"?").encode('UTF-8')
             end
+
+            matches = /<title>(.*)<\/title>/.match( html_source )
+            if matches
+              title = matches[1].strip
+            else
+              matches = /<h1>(.*)<\/h1>/.match( html_source )
+              if matches
+                title = matches[1].strip
+              else
+                title = "No title available"
+              end
+            end
+            
+            title = title.gsub(%r{</?[^>]+?>}, '')
+            link_title = title
           end
 
-          link_title = title || url
+          # make sure non-activities also get a link_title
+          if !( activity and link_title )
+            link_title = title
+          end
 
+          # except replies
+          if type == "reply"
+            link_title = false
+          end
+
+          # no duplicate content
           if title and content and title == content
             title = false
+            link_title = false
+          end
+
+          # truncation
+          if content and content.length > 200 
+            content = content[0..200].gsub(/\s\w+\s*$/, '...')
           end
 
           if ! id
@@ -146,7 +194,7 @@ module Jekyll
           author_block = ""
           if author = link["data"]["author"]
 
-            #puts author
+            # puts author
             a_name = author["name"]
             a_url = author["url"]
             a_photo = author["photo"]
@@ -155,6 +203,8 @@ module Jekyll
               status = `curl -s -I -L -o /dev/null -w "%{http_code}" --location "#{a_photo}"`
               if status == "200"
                 author_block << "<img class=\"webmention__author__photo u-photo\" src=\"#{a_photo}\" alt=\"\" title=\"#{a_name}\">"
+              else
+                webmention_classes << " webmention--no-photo"
               end
             end
 
@@ -166,7 +216,20 @@ module Jekyll
             end
 
             author_block = "<div class=\"webmention__author p-author h-card\">#{author_block}</div>"
+
+            if activity
+              link_title = "#{a_name} #{title}"
+              webmention_classes << ' webmention--author-starts'
+            end
+
+          elsif
+            webmention_classes << " webmention--no-author"
           end
+
+          # API change. The content now loses the person.
+          #if author and title and content and title == "#{author["name"]} #{content}"
+          #  link_title = title
+          #end
 
           published_block = ""
           pubdate = link["data"]["published_ts"]
@@ -179,44 +242,66 @@ module Jekyll
             pubdate_iso = pubdate.strftime("%FT%T%:z")
             pubdate_formatted = pubdate.strftime("%-d %B %Y")
             published_block = "<time class=\"webmention__pubdate dt-published\" datetime=\"#{pubdate_iso}\">#{pubdate_formatted}</time>"
+          elsif
+            webmention_classes << " webmention--no-pubdate"
           end
 
-          webmention_classes = "webmention"
-          if a_name and ( title and title.start_with?(a_name) ) or ( content and content.start_with?(a_name) )
+          meta_block = ""
+          if published_block
+            meta_block << published_block
+          end
+          if ! link_title
+            if published_block and url
+              meta_block << " | "
+            end
+            if url
+              meta_block << "<a class=\"webmention__source u-url\" href=\"#{url}\">Permalink</a>"
+            end
+          end
+          if meta_block
+            meta_block = "<div class=\"webmention__meta\">#{meta_block}</div>"
+          end
+
+          if a_name and ( ( title and title.start_with?(a_name) ) or ( content and content.start_with?(a_name) ) )
             webmention_classes << ' webmention--author-starts'
           end
 
+          # Build the content block
           content_block = ""
           if link_title
+
+            link_title = link_title.sub "reposts", "reposted"
+            
             webmention_classes << " webmention--title-only"
-            if url
-              content_block << "<div class=\"webmention__title p-name\"><a href=\"#{url}\">#{link_title}</a></div>"
-            else
-              content_block << "<div class=\"webmention__title p-name\">#{link_title}</div>"
-            end
-            if published_block
-              content_block << "<div class=\"webmention__meta\">#{published_block}</div>"
-            end
-          elsif content
-            content = @converter.convert("#{content}")
+
+            content_block = "<a href=\"#{url}\">#{link_title}</a>"
+            
+            # build the block
+            content_block = " <div class=\"webmention__title p-name\">#{content_block}</div>"
+            
+          else
+            
             webmention_classes << " webmention--content-only"
-            content_block << "<div class=\"webmention__meta\">"
-            if published_block
-              content_block << published_block
+            
+            # like, repost
+            if activity and sentence
+              content = sentence.sub /href/, "class=\"p-author h-card\" href"
+            # everything else
+            else
+              content = @converter.convert("#{content}")
             end
-            if published_block and url
-                content_block << " | "
-            end
-            if url
-              content_block << "<a class=\"webmention__source u-url\" href=\"#{url}\">Permalink</a>"
-            end
-            content_block << "</div>"
+
             content_block << "<div class=\"webmention__content p-content\">#{content}</div>"
+
           end
 
+          # meta
+          content_block << meta_block
+            
           # put it together
           webmention << "<li id=\"webmention-#{id}\" class=\"webmentions__item\">"
           webmention << "<article class=\"h-cite #{webmention_classes}\">"
+          
           webmention << author_block
           webmention << content_block
           webmention << "</article></li>"

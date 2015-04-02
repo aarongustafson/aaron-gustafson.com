@@ -14,7 +14,7 @@ gulp.task('scripts', folder(source_folder, function(folder){
         .pipe(concat(folder + '.js'))
         .pipe(gulp.dest(destination_folder))
         .pipe(rename({suffix: '.min'}))
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(gulp.dest(destination_folder))
         .pipe(notify({ message: 'Scripts task complete' }))
         .on('error', handleErrors);;
