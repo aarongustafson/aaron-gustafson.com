@@ -9,7 +9,7 @@ in_reply_to: http://www.washingtonpost.com/opinions/why-stem-wont-make-us-succes
 ref_source: The Washington Post
 ---
 
-A fantastic op-Ed by Fareed Zakaria on why a well-rounded populace is a good thing:
+A fantastic op-ed by Fareed Zakaria on why a well-rounded populace is a good thing:
 
 > A broad general education helps foster critical thinking and creativity. Exposure to a variety of fields produces synergy and cross fertilization. Yes, science and technology are crucial components of this education, but so are English and philosophy.
 
