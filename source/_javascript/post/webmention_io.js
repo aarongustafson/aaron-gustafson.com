@@ -215,7 +215,7 @@
             {
                 $block.appendChild( document.createTextNode(
                     sentence.replace( /href/, 'class="p-author h-card" href' )
-                );
+                ) );
             }
             else
             {
