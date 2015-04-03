@@ -82,11 +82,16 @@
             'July', 'August', 'September', 'October', 'November', 'December'
         ],
         json_webmentions,
-        targets = [ window.location.href ],
+        targets = [
+            window.location.href.replace( 'localhost', 'www.aaron-gustafson.com' )
+        ],
         $none = false,
         $redirects = document.querySelector('meta[property="webmention:redirected_from"]'),
         redirects,
-        base_url = window.location.origin;
+        base_url = window.location.origin,
+        $existing_webmentions,
+        existing_webmentions = [],
+        e = 0;
     
     if ( $redirects )
     {
@@ -117,6 +122,21 @@
     else
     {
         $webmentions_list = $webmentions_list[0];
+        // get existing webmentions
+        $existing_webmentions = $webmentions_list.querySelectorAll( '[id^=webmention-]' );
+        e = $existing_webmentions.length;
+        while ( e-- )
+        {
+            existing_webmentions.push(
+                parseInt( 
+                    $existing_webmentions[e]
+                        .getAttribute( 'id' )
+                        .replace( 'webmention-', '' ),
+                    10
+                )
+            );
+        }
+        $existing_webmentions = null;
     }
     
     // Set up the markup
@@ -145,6 +165,12 @@
         var streaming = !( 'data' in mention ),
             data = streaming ? mention : mention.data,
             id = streaming ? mention.element_id : mention.id;
+
+        // No need to replace
+        if ( existing_webmentions.indexOf( id ) > -1 )
+        {
+            return;
+        }
         
         var $existing_mention = document.querySelectorAll( '#webmention-' + id  ),
             $item = elements.li.cloneNode( true ),
@@ -160,14 +186,14 @@
             title = data.name,
             content = data.content,
             url = data.url,
-            type = data.activity ? data.activity.type : false,
+            type = mention.activity.type,
             activity = ( type == "like" || type == "repost" ),
-            sentence = data.activity ? data.activity.sentence_html : null,
+            sentence = mention.activity.sentence_html,
             author = data.author.name,
             author_photo = data.author.photo,
-            pubdate,
+            pubdate = data.published || mention.verified_date,
             display_date = '';
-
+        
         $item.id = 'webmention-' + id;
         $item.appendChild( $mention );
 
@@ -184,28 +210,30 @@
             $author.appendChild( $author_link );
             $mention.appendChild( $author );
 
-            if (activity)
+            if ( activity )
             {
-              title = author + ' ' + title;
-              $mention.className += ' webmention--author-starts';
+                console.log( 'activity!' );
+                title = author + ' ' + title;
+                $mention.className += ' webmention--author-starts';
             }
         }
 
-        if ( data.published )
+        if ( pubdate )
         {
-            $pubdate.setAttribute( 'datetime', data.published );
-            pubdate = new Date( data.published );
+            $pubdate.setAttribute( 'datetime', pubdate );
+            pubdate = new Date( pubdate );
             display_date += pubdate.getUTCDate() + ' ';
             display_date += months[ pubdate.getUTCMonth() ] + ' ';
             display_date += pubdate.getUTCFullYear();
             $pubdate.appendChild( document.createTextNode( display_date ) );
             $meta.appendChild( $pubdate );
-            if ( url )
+            
+            if ( url & ! activity )
             {
                 $meta.appendChild( document.createTextNode( ' | ' ) );
             }
         }
-        if ( url )
+        if ( url & ! activity )
         {
             $link = elements.permalink.cloneNode( true );
             $link.href = url;
@@ -234,11 +262,11 @@
             {
                 $link = elements.a.cloneNode( true );
                 $link.href = url;
-                $link.appendChild( document.createTextNode( data.name ) );
+                $link.appendChild( document.createTextNode( title ) );
             }
             else
             {
-                $link = document.createTextNode( data.name );
+                $link = document.createTextNode( title );
             }
 
             $block = elements.title.cloneNode( true );
@@ -284,6 +312,9 @@
         {
             $webmentions_list.replaceChild( $item, $existing_mention[0] );
         }
+
+        // Store the id
+        existing_webmentions.push( id );
         
         // Release
         $item = null;
