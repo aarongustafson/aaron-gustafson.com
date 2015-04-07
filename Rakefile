@@ -122,6 +122,7 @@ task :new_post, :title do |t, args|
     post.puts "description: \"\""
     post.puts "---"
   end
+  `open -fe #{filename}`
 end
 
 # usage rake new_page[my-new-page] or rake new_page[my-new-page.html] or rake new_page (defaults to "new-page.markdown")
@@ -159,6 +160,7 @@ task :new_page, :filename do |t, args|
       page.puts "footer: true"
       page.puts "---"
     end
+    `open -fe #{file}`
   else
     puts "Syntax error: #{args.filename} contains unsupported characters"
   end
@@ -511,6 +513,7 @@ task :new_link, :url do |t, args|
     post.puts "ref_source: #{source}"
     post.puts "---"
   end
+  `open -fe #{filename}`
 end
 
 # usage rake move_links
