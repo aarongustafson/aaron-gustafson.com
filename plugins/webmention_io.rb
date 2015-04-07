@@ -118,8 +118,27 @@ module Jekyll
       links.reverse_each { |link|
         
         id = link["id"]
-        
-        if ! cached_webmentions[id]
+        target = link["target"]
+        pubdate = link["data"]["published_ts"]
+        if pubdate
+          pubdate = Time.at(pubdate)
+        elsif link["verified_date"]
+          pubdate = Time.parse(link["verified_date"])
+        end
+        the_date = pubdate.strftime("%F")
+
+        # Make sure we have the target
+        if ! cached_webmentions[target]
+          cached_webmentions[target] = {}
+        end
+
+        # Make sure we have the date
+        if ! cached_webmentions[target][the_date]
+          cached_webmentions[target][the_date] = {}
+        end
+
+        # Make sure we have the webmention
+        if ! cached_webmentions[target][the_date][id]
           
           webmention = ""
           webmention_classes = "webmention"
@@ -231,20 +250,9 @@ module Jekyll
           #  link_title = title
           #end
 
-          published_block = ""
-          pubdate = link["data"]["published_ts"]
-          if pubdate
-            pubdate = Time.at(pubdate)
-          elsif link["verified_date"]
-            pubdate = Time.parse(link["verified_date"])
-          end
-          if pubdate
-            pubdate_iso = pubdate.strftime("%FT%T%:z")
-            pubdate_formatted = pubdate.strftime("%-d %B %Y")
-            published_block = "<time class=\"webmention__pubdate dt-published\" datetime=\"#{pubdate_iso}\">#{pubdate_formatted}</time>"
-          elsif
-            webmention_classes << " webmention--no-pubdate"
-          end
+          pubdate_iso = pubdate.strftime("%FT%T%:z")
+          pubdate_formatted = pubdate.strftime("%-d %B %Y")
+          published_block = "<time class=\"webmention__pubdate dt-published\" datetime=\"#{pubdate_iso}\">#{pubdate_formatted}</time>"
 
           meta_block = ""
           if published_block
@@ -306,11 +314,11 @@ module Jekyll
           webmention << content_block
           webmention << "</article></li>"
 
-          cached_webmentions[id] = webmention
+          cached_webmentions[target][the_date][id] = webmention
           
         end
         
-        lis << cached_webmentions[id]
+        lis << cached_webmentions[target][the_date][id]
         
       }
       
