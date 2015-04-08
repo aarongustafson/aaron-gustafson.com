@@ -1,5 +1,5 @@
-source_dir = '../../public/notebook'
-link_cache = '../../.cache'
+source_dir = File.expand_path('../../public/notebook', __FILE__)
+link_cache = File.expand_path('../../.cache', __FILE__)
 FileUtils.mkdir_p( link_cache )
 link_file = "#{link_cache}/notebook-links.yml"
 

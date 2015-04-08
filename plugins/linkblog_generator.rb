@@ -27,7 +27,7 @@ module Linkblog
       }
       
       # Create the Cache
-      link_cache = '.cache'
+      link_cache = File.expand_path('../../.cache', __FILE__)
       FileUtils.mkdir_p( link_cache )
       # Save to a file
       link_file = "#{link_cache}/notebook-links.yml"
