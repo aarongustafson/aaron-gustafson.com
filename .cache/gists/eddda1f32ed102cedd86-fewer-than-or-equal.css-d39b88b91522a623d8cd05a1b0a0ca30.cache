@@ -1,0 +1,4 @@
+li:nth-last-child(-n+6):first-child,
+li:nth-last-child(-n+6):first-child ~ li {
+  /* properties here */
+}

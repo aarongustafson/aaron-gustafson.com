@@ -1,0 +1,11 @@
+{exp:ce_img:pair
+    src="{content_focal_image}"
+    filename_suffix="_full"
+    width="940"
+    allow_scale_larger="yes"
+    crop="yes"
+    interlace="yes"
+    cache_dir="/"
+    }
+    <source srcset="{made}" media="(min-width: 40em)">
+{/exp:ce_img:pair}

@@ -1,0 +1,10 @@
+.listing--events {
+  display: flex;
+}
+
+.event {
+  box-sizing: border-box;
+  padding: 1.25rem; /* 20px padding */
+  margin: 0 0 1.25rem 0; /* 20px bottom margin */
+  flex: 0 0 100%;
+}

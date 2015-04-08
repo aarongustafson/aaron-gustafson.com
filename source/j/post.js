@@ -166,6 +166,12 @@
             data = streaming ? mention : mention.data,
             id = streaming ? mention.element_id : mention.id;
 
+        // Twitter uses the actual satus ID
+        if ( data.url && data.url.indexOf( 'twitter.com/' ) > -1 )
+        {
+            id = data.url.replace(/^.*?status\/(.*)$/, '$1' );
+        }
+
         // No need to replace
         if ( existing_webmentions.indexOf( id ) > -1 )
         {

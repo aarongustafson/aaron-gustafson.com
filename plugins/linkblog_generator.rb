@@ -27,10 +27,10 @@ module Linkblog
       }
       
       # Create the Cache
-      link_cache = '.link-cache'
+      link_cache = '.cache'
       FileUtils.mkdir_p( link_cache )
       # Save to a file
-      link_file = "#{link_cache}/links.yml"
+      link_file = "#{link_cache}/notebook-links.yml"
       File.open(link_file, 'w') { |f| YAML.dump(all_links, f) }
     end
   end

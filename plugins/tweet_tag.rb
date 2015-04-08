@@ -22,7 +22,7 @@ module Jekyll
       super
       @text           = text
       @cache_disabled = false
-      @cache_folder   = File.expand_path "../.tweet-cache", File.dirname(__FILE__)
+      @cache_folder   = File.expand_path "../.cache/twitter", File.dirname(__FILE__)
       FileUtils.mkdir_p @cache_folder
     end
 

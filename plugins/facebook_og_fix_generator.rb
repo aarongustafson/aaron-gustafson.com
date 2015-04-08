@@ -8,7 +8,7 @@
 #   
 require 'json'
 
-FB_OG_FIX_CACHE_DIR = File.expand_path('../../.facebook-og-cache', __FILE__)
+FB_OG_FIX_CACHE_DIR = File.expand_path('../../.cache', __FILE__)
 FileUtils.mkdir_p(FB_OG_FIX_CACHE_DIR)
 
 module Jekyll
@@ -20,7 +20,7 @@ module Jekyll
     def generate(site)
       urls = []
       if defined?(FB_OG_FIX_CACHE_DIR)
-        cache_file = File.join(FB_OG_FIX_CACHE_DIR, "urls.yml")
+        cache_file = File.join(FB_OG_FIX_CACHE_DIR, "facebook-og-urls.yml")
         site.posts.each do |post|
           if post.data.has_key?('ref_url')
             url = post.url.sub("notebook/","notebook/links/")
