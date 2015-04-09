@@ -1,5 +1,5 @@
 # Caches
-cache = '../../.cache'
+cache = File.expand_path('../../../.cache', __FILE__)
 FileUtils.mkdir_p( cache )
 cache_urls = "#{cache}/facebook-og-urls.yml"
 cache_fixed = "#{cache}/facebook-og-fixed.yml"

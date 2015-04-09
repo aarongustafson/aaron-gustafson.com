@@ -1,5 +1,5 @@
-source_dir      = "../../source"    # source file directory
-posts_dir       = "_posts"    # directory for blog files
+source_dir = File.expand_path('../../../source', __FILE__)
+posts_dir  = "_posts"    # directory for blog files
 
 # usage rake new_link[URL]
 desc "Begin a new link post in #{source_dir}/#{posts_dir}"
