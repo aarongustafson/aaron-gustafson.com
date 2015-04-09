@@ -44,5 +44,5 @@ task :new_link, :url do |t, args|
     post.puts "ref_source: #{source}"
     post.puts "---"
   end
-  `open -fe #{filename}`
+  `open ./#{filename}`
 end
