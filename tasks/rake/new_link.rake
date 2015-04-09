@@ -1,9 +1,12 @@
-source_dir = File.expand_path('../../../source', __FILE__)
-posts_dir  = "_posts"    # directory for blog files
+source_dir   = File.expand_path('../../../source', __FILE__)
+posts_dir    = "_posts"
+new_post_ext = "markdown"
 
 # usage rake new_link[URL]
 desc "Begin a new link post in #{source_dir}/#{posts_dir}"
 task :new_link, :url do |t, args|
+  puts source_dir
+  puts "#{source_dir}/#{posts_dir}"
   if args.url
     url = args.url
   else
@@ -44,5 +47,5 @@ task :new_link, :url do |t, args|
     post.puts "ref_source: #{source}"
     post.puts "---"
   end
-  `open ./#{filename}`
+  `open #{filename}`
 end
