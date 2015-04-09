@@ -29,6 +29,10 @@ A lot of folks have helped me on the way to becoming the web professional that I
 
 {% tweet https://twitter.com/aarongustafson/status/586245773089734659 %}
 
+{% tweet https://twitter.com/aarongustafson/status/586282730805194752 %}
+
+{% tweet https://twitter.com/aarongustafson/status/586282944572055553 %}
+
 {% tweet https://twitter.com/aarongustafson/status/586233397791629314 %}
 
 {% tweet https://twitter.com/aarongustafson/status/586233486081662976 %}
