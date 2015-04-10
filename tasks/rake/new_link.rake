@@ -5,8 +5,6 @@ new_post_ext = "markdown"
 # usage rake new_link[URL]
 desc "Begin a new link post in #{source_dir}/#{posts_dir}"
 task :new_link, :url do |t, args|
-  puts source_dir
-  puts "#{source_dir}/#{posts_dir}"
   if args.url
     url = args.url
   else
