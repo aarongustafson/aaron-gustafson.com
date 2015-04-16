@@ -22,6 +22,7 @@ module Jekyll
       super
       @text = text
       @api_endpoint = ''
+      @api_suffix = ''
     end
     
     def render(context)
@@ -39,6 +40,8 @@ module Jekyll
       end
       
       api_params = targets.collect { |v| "target[]=#{v}" }.join('&')
+      api_params << @api_suffix
+
       response = get_response(api_params)
 
       site = context.registers[:site]
@@ -87,6 +90,8 @@ module Jekyll
     def initialize(tagName, text, tokens)
       super
       @api_endpoint = 'http://webmention.io/api/mentions'
+      # add an arbitrarily high perPage to trump pagination
+      @api_suffix = '&perPage=9999'
     end
 
     def html_output_for(response)
