@@ -123,7 +123,7 @@ module Jekyll
       links.reverse_each { |link|
         
         id = link['id']
-        target = link['target']
+        target = link['target'].sub(/\?.*$/, '')
         pubdate = link['data']['published_ts']
         if pubdate
           pubdate = Time.at(pubdate)
