@@ -50,18 +50,16 @@
   talks:
     - title: Falling in Love with Forms
 
-- title: TBA
-  #title: Future of Web Design
-  #url: http://lanyrd.com/2015/future-of-web-design-new-york/
+- title: Future of Web Design
+  url: http://lanyrd.com/2015/future-of-web-design-new-york/
   date: 2015-11-02 09:00:00 -0400
   location: New York, NY USA
-  #talks:
-  #  - title: Falling in Love with Forms
-  #workshops:
-  #  - title: Beyond Responsive
+  talks:
+    - title: Falling in Love with Forms
+  workshops:
+    - title: Beyond Responsive
 
-- title: TBA
-  #title: Øredev
-  #url: http://lanyrd.com/2015/oredev/
+- title: Øredev
+  url: http://lanyrd.com/2015/oredev/
   date: 2015-11-02 09:00:00 -0400
   location: Malmö, Sweden
