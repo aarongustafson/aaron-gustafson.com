@@ -10,6 +10,11 @@ sidebars: [asides/networks.html,asides/events.html]
 
 # Biographies
 
+## One-liner (59 Words)
+
+[Aaron Gustafson](http://www.aaron-gustafson.com/) is a web standards and accessibility advocate working at [Microsoft](http://www.microsoft.com/).
+
+
 ## Brief Bio (59 Words)
 
 As would be expected from a former manager of the [Web Standards Project](http://webstandards.org), Aaron Gustafson is passionate about web standards and accessibility. He has been working on the web for nearly two decades and recently joined [Microsoft](http://www.microsoft.com/) as a web standards advocate to work closely with their browser team. He writes about whatever’s on his mind at [aaron-gustafson.com](http://www.aaron-gustafson.com/).
