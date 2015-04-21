@@ -7,8 +7,9 @@
 $debug-grid: false; // true;
 
 
-/*	CDN
+/*	URLs
 	========================================================================== */
+$domain: "http://www.aaron-gustafson.com";
 $cdn_domain: ""; //"//e.ed-cdn.com";
 
 
@@ -24,10 +25,10 @@ $bp-full: 960;
 $bp-full-em: 60em;
 $breakup-breakpoints: (
     "global":       "screen",
-    "tiny":         "only screen and (min-width: #{$bp-tiny-em})",
-    "small":        "only screen and (min-width: #{$bp-small-em})",
-    "medium":       "only screen and (min-width: #{$bp-medium-em})",
-    "full":         "only screen and (min-width: #{$bp-full-em})",
+    "tiny":         "(min-width: #{$bp-tiny-em})",
+    "small":        "(min-width: #{$bp-small-em})",
+    "medium":       "(min-width: #{$bp-medium-em})",
+    "full":         "(min-width: #{$bp-full-em})",
     "print":        "print",
     "old-ie":       "screen"
 );

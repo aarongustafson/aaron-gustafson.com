@@ -156,7 +156,7 @@ div.gsc-url-top {
 \*------------------------------------*/
 /*	Debug controls
 	========================================================================== */
-/*	CDN
+/*	URLs
 	========================================================================== */
 /*	Breakpoint Management
 	========================================================================== */
@@ -755,16 +755,15 @@ form li {
 }
 
 /*------------------------------------*\
+    Print Layout stuff
+\*------------------------------------*/
+/*------------------------------------*\
     $COMPONENTS
 	Interface patterns
 \*------------------------------------*/
 /*------------------------------------*\
     Media Query Watcher (for JS)
 \*------------------------------------*/
-#getActiveMQ-watcher {
-  font-family: "global";
-}
-
 #getActiveMQ-watcher {
   font-family: "global";
 }
@@ -1174,3 +1173,259 @@ div.gist div.file-data {
   box-shadow: inset 0 0 50px 7px #00799d;
   text-shadow: 1px 1px 1px #00799d;
 }
+
+/*------------------------------------*\
+    $BASE
+	Global element styles
+\*------------------------------------*/
+/*------------------------------------*\
+    Body-level settings
+\*------------------------------------*/
+/*------------------------------------*\
+    Heading Levels
+\*------------------------------------*/
+@media print {
+  h1, h2, h3, h4, h5, h6 {
+    page-break-inside: avoid;
+    page-break-after: avoid;
+  }
+  h1 a[href]:after, h2 a[href]:after, h3 a[href]:after, h4 a[href]:after, h5 a[href]:after, h6 a[href]:after {
+    display: block;
+    margin-left: 0;
+    margin-bottom: 10pt;
+  }
+  h1 a[href^="#"]:after,
+  h1 a[href^="mailto:"]:after,
+  h1 a[href^="tel:"]:after, h2 a[href^="#"]:after,
+  h2 a[href^="mailto:"]:after,
+  h2 a[href^="tel:"]:after, h3 a[href^="#"]:after,
+  h3 a[href^="mailto:"]:after,
+  h3 a[href^="tel:"]:after, h4 a[href^="#"]:after,
+  h4 a[href^="mailto:"]:after,
+  h4 a[href^="tel:"]:after, h5 a[href^="#"]:after,
+  h5 a[href^="mailto:"]:after,
+  h5 a[href^="tel:"]:after, h6 a[href^="#"]:after,
+  h6 a[href^="mailto:"]:after,
+  h6 a[href^="tel:"]:after {
+    display: none;
+  }
+}
+/*------------------------------------*\
+    Block-level Semantics
+\*------------------------------------*/
+@media print {
+  p, ol, ol, dl {
+    orphans: 3;
+    widows: 3;
+  }
+}
+/*------------------------------------*\
+    Lists
+\*------------------------------------*/
+/*------------------------------------*\
+    Links
+\*------------------------------------*/
+@media print {
+  a {
+    text-decoration: none;
+  }
+  a[href]:after {
+    content: "(" attr(href) ")";
+    font-size: 10pt;
+    margin-left: 9pt;
+  }
+  a[href^="/"]:after {
+    content: " (http://www.aaron-gustafson.com" attr(href) ")";
+  }
+  a[href^="#"]:after, a[href^="mailto:"]:after, a[href^="tel:"]:after {
+    display: none;
+  }
+}
+/*------------------------------------*\
+    Text-level semantics
+\*------------------------------------*/
+/*------------------------------------*\
+    Code styles
+\*------------------------------------*/
+/*------------------------------------*\
+    Media Elements
+\*------------------------------------*/
+/*------------------------------------*\
+    Tables
+\*------------------------------------*/
+@media only screen and (max-width: 770px) {
+  .layout-container__primary table {
+    border: 0;
+    padding-bottom: 0;
+    display: block;
+    width: 100%;
+  }
+  .layout-container__primary table caption {
+    display: block;
+  }
+  .layout-container__primary table thead {
+    display: none;
+  }
+  .layout-container__primary table tbody,
+  .layout-container__primary table tr,
+  .layout-container__primary table th,
+  .layout-container__primary table td {
+    border: 0;
+    display: block;
+    padding: 0;
+    text-align: left;
+  }
+  .layout-container__primary table tr {
+    margin: 0 0 22px;
+    margin: 0 0 1.375rem;
+  }
+  .layout-container__primary table th[data-title]:before,
+  .layout-container__primary table td[data-title]:before {
+    content: attr(data-title) ": ";
+    font-weight: bold;
+  }
+  .layout-container__primary table th:not([data-title]) {
+    font-weight: bold;
+  }
+  .layout-container__primary table td:empty {
+    display: none;
+  }
+}
+/*------------------------------------*\
+    Form Styles
+\*------------------------------------*/
+/*------------------------------------*\
+    Animations
+\*------------------------------------*/
+/*------------------------------------*\
+    $LAYOUT
+	Page layout
+\*------------------------------------*/
+/*------------------------------------*\
+    Grid
+\*------------------------------------*/
+/*------------------------------------*\
+    Header
+\*------------------------------------*/
+/*------------------------------------*\
+    Main
+\*------------------------------------*/
+/*------------------------------------*\
+    Footer
+\*------------------------------------*/
+/*------------------------------------*\
+    Print Layout stuff
+\*------------------------------------*/
+@media print {
+  @page {
+    margin: .75in;
+    padding: 0;
+  }
+  * {
+    background: transparent;
+  }
+
+  body {
+    background: #fff;
+    color: #2c2825;
+    font-size: 12pt;
+    margin: 0;
+    position: relative;
+  }
+
+  section,
+  [role="contentinfo"] {
+    border-top: 1px solid;
+    margin: 2em 0 0;
+    padding: 2em 0 0;
+  }
+
+  nav,
+  button,
+  .button,
+  .nav-jump,
+  .pagination,
+  .footer__fork-me,
+  .footer__copyright b {
+    display: none;
+  }
+
+  b#license {
+    display: block;
+  }
+
+  input[type=submit] {
+    display: none;
+  }
+}
+/*------------------------------------*\
+    $COMPONENTS
+	Interface patterns
+\*------------------------------------*/
+/*------------------------------------*\
+    Media Query Watcher (for JS)
+\*------------------------------------*/
+@media print {
+  #getActiveMQ-watcher {
+    font-family: "print";
+  }
+}
+/*------------------------------------*\
+    Modules
+\*------------------------------------*/
+/*------------------------------------*\
+    Listing
+\*------------------------------------*/
+/*------------------------------------*\
+    Media Elements
+\*------------------------------------*/
+/*------------------------------------*\
+    Embeds
+\*------------------------------------*/
+/*------------------------------------*\
+    Webmentions
+\*------------------------------------*/
+/*------------------------------------*\
+    Footnotes
+\*------------------------------------*/
+/*------------------------------------*\
+    Events
+\*------------------------------------*/
+/*------------------------------------*\
+    Blog Entry
+\*------------------------------------*/
+/*------------------------------------*\
+    Gist
+\*------------------------------------*/
+@media (max-width: 770px) {
+  div.gist .line-numbers,
+  div.gist .line-data {
+    display: table-cell;
+  }
+}
+/*------------------------------------*\
+    Rules
+\*------------------------------------*/
+/*------------------------------------*\
+    Post
+\*------------------------------------*/
+/*------------------------------------*\
+    Webmentions
+\*------------------------------------*/
+/*------------------------------------*\
+    Hero Shot
+\*------------------------------------*/
+/*------------------------------------*\
+    Subsections
+\*------------------------------------*/
+/*------------------------------------*\
+    $PAGES
+	Page-specific styles
+	(use sparingly)
+\*------------------------------------*/
+/*------------------------------------*\
+    Homepage
+\*------------------------------------*/
+/*------------------------------------*\
+    Speaking Engagements
+\*------------------------------------*/

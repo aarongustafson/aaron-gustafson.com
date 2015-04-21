@@ -74,3 +74,10 @@
         @include rem( padding, 0 ( 2 * $default-spacing ) );
     }
 }
+
+@include breakup-breakpoint( "print" ) {
+    p, ol, ol, dl {
+    	orphans: 3;
+    	widows: 3;
+    }
+}

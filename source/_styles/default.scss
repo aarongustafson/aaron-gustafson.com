@@ -5,7 +5,7 @@
 @import "vendors/_vendors";
 @import "vendors/html5doctor-css-reset/reset";
 @import "vendors/gse/gse";
-//@import "vendors/youtube/youtube";
+@import "helpers/_helpers";
 
 // Breakup Configuration
 // https://github.com/BPScott/breakup
@@ -13,7 +13,15 @@ $breakup-included-blocks: ( "global" );
 $breakup-naked: true;
 $breakup-breakpoints-allow-naked: ( "global" );
 
-@import "helpers/_helpers";
+@import "base/_base";
+@import "layout/_layout";
+@import "components/_components";
+@import "pages/_pages";
+
+// Print
+$breakup-included-blocks: ( "print" );
+$breakup-naked: false;
+
 @import "base/_base";
 @import "layout/_layout";
 @import "components/_components";

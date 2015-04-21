@@ -15,7 +15,7 @@
 \*------------------------------------*/
 /*	Debug controls
 	========================================================================== */
-/*	CDN
+/*	URLs
 	========================================================================== */
 /*	Breakpoint Management
 	========================================================================== */
@@ -53,14 +53,14 @@
 /*------------------------------------*\
     Block-level Semantics
 \*------------------------------------*/
-@media only screen and (min-width: 43.125em) {
+@media (min-width: 43.125em) {
   blockquote,
   dl {
     padding: 0 22px;
     padding: 0 1.375rem;
   }
 }
-@media only screen and (min-width: 60em) {
+@media (min-width: 60em) {
   blockquote,
   dl {
     padding: 0 44px;
@@ -82,7 +82,7 @@
 /*------------------------------------*\
     Media Elements
 \*------------------------------------*/
-@media only screen and (min-width: 43.125em) {
+@media (min-width: 43.125em) {
   .media-container--right {
     float: right;
     max-width: 250px;
@@ -132,7 +132,7 @@
     display: none;
   }
 }
-@media only screen and (min-width: 43.125em) {
+@media (min-width: 43.125em) {
   table.striped {
     background: #fff;
   }
@@ -161,7 +161,7 @@
 /*------------------------------------*\
     Form Styles
 \*------------------------------------*/
-@media only screen and (min-width: 43.125em) {
+@media (min-width: 43.125em) {
   input,
   textarea {
     width: 80%;
@@ -181,7 +181,7 @@
 /*------------------------------------*\
     Grid
 \*------------------------------------*/
-@media only screen and (min-width: 28.75em) {
+@media (min-width: 28.75em) {
   .layout-container {
     max-width: 100%;
     margin-left: auto;
@@ -193,7 +193,7 @@
     clear: both;
   }
 }
-@media only screen and (min-width: 43.125em) {
+@media (min-width: 43.125em) {
   .layout-container {
     max-width: 100%;
     margin-left: auto;
@@ -205,7 +205,7 @@
     clear: both;
   }
 }
-@media only screen and (min-width: 60em) {
+@media (min-width: 60em) {
   .layout-container {
     max-width: 100%;
     margin-left: auto;
@@ -224,21 +224,21 @@
     max-width: 57.5rem;
   }
 }
-@media only screen and (min-width: 43.125em) {
+@media (min-width: 43.125em) {
   .layout-container__primary {
     width: 61.53846%;
     float: left;
     margin-right: 2.5641%;
   }
 }
-@media only screen and (min-width: 60em) {
+@media (min-width: 60em) {
   .layout-container__primary {
     width: 66.10169%;
     float: left;
     margin-right: 1.69492%;
   }
 }
-@media only screen and (min-width: 43.125em) {
+@media (min-width: 43.125em) {
   .layout-container__secondary {
     width: 35.89744%;
     float: right;
@@ -249,7 +249,7 @@
     margin-bottom: 0;
   }
 }
-@media only screen and (min-width: 60em) {
+@media (min-width: 60em) {
   .layout-container__secondary {
     width: 23.72881%;
     float: right;
@@ -257,7 +257,7 @@
     margin-right: 0;
   }
 }
-@media only screen and (min-width: 43.125em) {
+@media (min-width: 43.125em) {
   .layout-container--alt .layout-container__primary {
     width: 61.53846%;
     float: right;
@@ -265,7 +265,7 @@
     margin-right: 0;
   }
 }
-@media only screen and (min-width: 60em) {
+@media (min-width: 60em) {
   .layout-container--alt .layout-container__primary {
     width: 66.10169%;
     float: right;
@@ -273,21 +273,21 @@
     margin-right: 0;
   }
 }
-@media only screen and (min-width: 43.125em) {
+@media (min-width: 43.125em) {
   .layout-container--alt .layout-container__secondary {
     width: 35.89744%;
     float: left;
     margin-right: 2.5641%;
   }
 }
-@media only screen and (min-width: 60em) {
+@media (min-width: 60em) {
   .layout-container--alt .layout-container__secondary {
     width: 23.72881%;
     float: left;
     margin-right: 1.69492%;
   }
 }
-@media only screen and (min-width: 43.125em) {
+@media (min-width: 43.125em) {
   .layout-container--split .layout-container__primary {
     width: 48.71795%;
     float: left;
@@ -296,14 +296,14 @@
     padding-right: 0.375rem;
   }
 }
-@media only screen and (min-width: 60em) {
+@media (min-width: 60em) {
   .layout-container--split .layout-container__primary {
     width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
   }
 }
-@media only screen and (min-width: 43.125em) {
+@media (min-width: 43.125em) {
   .layout-container--split .layout-container__secondary {
     width: 48.71795%;
     float: right;
@@ -313,7 +313,7 @@
     margin-right: 0;
   }
 }
-@media only screen and (min-width: 60em) {
+@media (min-width: 60em) {
   .layout-container--split .layout-container__secondary {
     width: 49.15254%;
     float: right;
@@ -332,28 +332,31 @@
     Footer
 \*------------------------------------*/
 /*------------------------------------*\
+    Print Layout stuff
+\*------------------------------------*/
+/*------------------------------------*\
     $COMPONENTS
 	Interface patterns
 \*------------------------------------*/
 /*------------------------------------*\
     Media Query Watcher (for JS)
 \*------------------------------------*/
-@media only screen and (min-width: 20em) {
+@media (min-width: 20em) {
   #getActiveMQ-watcher {
     font-family: "tiny";
   }
 }
-@media only screen and (min-width: 28.75em) {
+@media (min-width: 28.75em) {
   #getActiveMQ-watcher {
     font-family: "small";
   }
 }
-@media only screen and (min-width: 43.125em) {
+@media (min-width: 43.125em) {
   #getActiveMQ-watcher {
     font-family: "medium";
   }
 }
-@media only screen and (min-width: 60em) {
+@media (min-width: 60em) {
   #getActiveMQ-watcher {
     font-family: "full";
   }
@@ -385,7 +388,7 @@
 /*------------------------------------*\
     Gist
 \*------------------------------------*/
-@media only screen and (max-width: 770px) {
+@media (max-width: 770px) {
   div.gist .line-numbers,
   div.gist .line-data {
     display: table-cell;
@@ -394,7 +397,7 @@
 /*------------------------------------*\
     Rules
 \*------------------------------------*/
-@media only screen and (min-width: 43.125em) {
+@media (min-width: 43.125em) {
   .rule--optional {
     display: none;
   }
@@ -422,13 +425,13 @@
 /*------------------------------------*\
     Speaking Engagements
 \*------------------------------------*/
-@media only screen and (min-width: 60em) {
+@media (min-width: 60em) {
   .speaking-engagements .listing--events {
     margin: 20px -150px 0;
     margin: 1.25rem -9.375rem 0;
   }
 }
-@media only screen and (min-width: 28.75em) {
+@media (min-width: 28.75em) {
   .speaking-engagements .event {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 -webkit-calc( 50% - 1.25rem / 2 );
@@ -458,7 +461,7 @@
     font-size: 2.25rem;
   }
 }
-@media only screen and (min-width: 43.125em) {
+@media (min-width: 43.125em) {
   .speaking-engagements .event {
     /* 1/3 width with a 20px gap (fudged) */
     -webkit-box-flex: 0;

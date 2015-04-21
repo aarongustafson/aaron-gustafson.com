@@ -64,3 +64,24 @@
     }
 
 }
+
+@include breakup-breakpoint( "print" ) {
+    
+    a {
+    	text-decoration: none;
+    	&[href]:after {
+    		content: "(" attr(href) ")";
+    		font-size: 10pt;
+    		margin-left: 9pt;
+    	}
+    	&[href^="/"]:after {
+    		content: " (#{$domain}" attr(href) ")";
+    	}
+    	&[href^="#"]:after,
+    	&[href^="mailto:"]:after,
+    	&[href^="tel:"]:after {
+    		display: none;
+    	}
+    }
+    
+}
