@@ -9,7 +9,7 @@ task :move_links do |t, args|
   if File.exists?(link_file)
     links = open(link_file) { |f| YAML.load(f) }
     links.each {|link|
-      puts "#{source_dir}/#{link}"
+      # puts "#{source_dir}/#{link}"
       if File.directory?("#{source_dir}/#{link}")
         # puts "#{source_dir}/#{link} to #{source_dir}/links/#{link}"
         FileUtils.mv "#{source_dir}/#{link}", "#{source_dir}/links/#{link}"
