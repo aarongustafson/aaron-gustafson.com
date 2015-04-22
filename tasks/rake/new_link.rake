@@ -2,6 +2,8 @@ source_dir   = File.expand_path('../../../source', __FILE__)
 posts_dir    = "_posts"
 new_post_ext = "markdown"
 
+require 'uri';
+
 # usage rake new_link[URL]
 desc "Begin a new link post in #{source_dir}/#{posts_dir}"
 task :new_link, :url do |t, args|
@@ -10,12 +12,23 @@ task :new_link, :url do |t, args|
   else
     url = get_stdin("What URL did you want to link? ")
   end
-  link_title = `curl -s --location "#{url}" | awk "/<title>/,/<\\/title>/"`
-  if link_title
-    link_title = link_title.gsub(/<\/?title>/i,'').strip
-  else
-    link_title = get_stdin("What is the title of the article? ")
+  # print "checking #{url}\r\n"
+  html_source = `curl -s --location "#{url}"`
+  if ! html_source.valid_encoding?
+    html_source = html_source.encode('UTF-16be', :invalid=>:replace, :replace=>"?").encode('UTF-8')
   end
+  matches = /<title>(.*)<\/title>/.match( html_source )
+  if matches
+    link_title = matches[1].strip
+  else
+    matches = /<h1>(.*)<\/h1>/.match( html_source )
+    if matches
+      link_title = matches[1].strip
+    else
+      link_title = get_stdin('What is the title of the article? ')
+    end
+  end
+  link_title = link_title.gsub(%r{</?[^>]+?>}, '')
   source = ""
   separators = ["|", "-", "—", "–", "*"]
   if separators.any? { |sep| link_title.include? sep }
@@ -25,10 +38,11 @@ task :new_link, :url do |t, args|
   end
   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
   mkdir_p "#{source_dir}/#{posts_dir}"
-  if !Dir.glob("#{source_dir}/#{posts_dir}/*-#{link_title.to_url}*").empty?
+  slug = URI(url).path.split('/').last.split('.').first
+  if !Dir.glob("#{source_dir}/#{posts_dir}/*-#{slug}*").empty?
       abort("rake aborted!") if ask("This link may already exist. Do you want to proceed?", ['y', 'n']) == 'n'
   end
-  filename = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{link_title.to_url}.#{new_post_ext}"
+  filename = "#{source_dir}/#{posts_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{slug}.#{new_post_ext}"
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
