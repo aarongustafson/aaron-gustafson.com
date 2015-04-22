@@ -42,6 +42,8 @@ task :get_twitter_webmentions do |t, args|
   	id = tweet.id
   	content = tweet.text
 
+    puts id
+
   	permalink = tweet.url.to_s
   	# puts permalink
   	
