@@ -220,7 +220,7 @@
         {
             $mention.className += ' webmention--title-only';
 
-            title = title.replace( 'resposts', 'reposted' );
+            title = title.replace( 'reposts', 'reposted' );
 
             if ( url )
             {
