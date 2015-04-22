@@ -19,7 +19,7 @@ This is a quick win. I’ve done the mobile-first overhaul on a number of existi
 2. Move all of your existing desktop-only CSS into advanced.css and wrap the rules in a media query corresponding to your design width (e.g. `@media (min-width:60em)` for a 960px max width).
 3. Open a page from your site in a new browser window and make it as small as possible. Move any basic typographic and color styles from advanced.css to default.css and refresh the page. How does it look? Make the browser wider. Still acceptable? Awesome! This is the CSS you’ll serve to older browsers that don’t understand media queries and it forms the basis of your larger screen styles.
 4. Shrink the browser back down to the smallest it can go and create a breakpoint for that size in advanced.css (e.g. `@media (min-width:10.5em)` if you want to small target devices like the [Pebble](https://getpebble.com/)). Move any styles you want applied in this scenario from your "full screen" breakpoint and add any new rules you need to make things look good.
-5. Increase the browser with until the layout looks odd, then make a new breakpoint and move in or add the necessary styles.
+5. Increase the browser width until the layout looks odd, then make a new breakpoint and move in or add the necessary styles.
 6. Rinse & repeat until you get up to the "full screen" layout.
 7. Move your print styles—you do have print styles, right?—into default.css and wrap them in a print `@media` block.
 
