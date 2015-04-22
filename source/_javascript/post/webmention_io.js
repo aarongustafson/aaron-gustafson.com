@@ -247,13 +247,11 @@
             
             if ( activity && sentence )
             {
-                $block.appendChild( document.createTextNode(
-                    sentence.replace( /href/, 'class="p-author h-card" href' )
-                ) );
+                $block.innerHTML = sentence.replace( /href/, 'class="p-author h-card" href' );
             }
             else
             {
-                $block.appendChild( document.createTextNode( content ) );
+                $block.innerHTML = content;
             }
             $mention.appendChild( $block );
         }
