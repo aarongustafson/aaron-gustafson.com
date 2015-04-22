@@ -10,6 +10,7 @@
 #   
 require 'json'
 require 'net/http'
+require 'uri'
 
 WEBMENTION_CACHE_DIR = File.expand_path('../../.cache', __FILE__)
 FileUtils.mkdir_p(WEBMENTION_CACHE_DIR)
@@ -149,8 +150,7 @@ module Jekyll
 
         # Twitter gets unique ids
         if link['data']['url'] and link['data']['url'].include? 'twitter.com/'
-          id = link['data']['url'].gsub(/^.*?status\/(.*)$/, '\1' )
-          # puts id
+          id = URI(link['data']['url']).path.split('/').last
         end
 
         # Make sure we have the webmention
