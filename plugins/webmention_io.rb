@@ -150,8 +150,10 @@ module Jekyll
 
         # Twitter gets unique ids
         if link['data']['url'] and link['data']['url'].include? 'twitter.com/'
+          puts link['data']['url']
           id = URI(link['data']['url']).path.split('/').last
         end
+        puts id
 
         # Make sure we have the webmention
         if ! cached_webmentions[target][the_date][id]
