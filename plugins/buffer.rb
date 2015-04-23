@@ -31,7 +31,7 @@ module Jekyll
       linkedin = ENV['BUFFER_LINKEDIN_PROFILE'] or false
 
       # tweet length = 140 - 22 url chars & a space
-      twitter_text_length = 140 - 22
+      twitter_text_length = 140 - 22 - 1
 
       buffer_url = 'https://api.bufferapp.com/1/updates/create.json'
       today = Date.today
@@ -42,7 +42,7 @@ module Jekyll
         if File.exists?(buffered_file)
           buffered = open(buffered_file) { |f| YAML.load(f) }
         else
-          buffered = {}
+          buffered = []
         end
         
         site.posts.each do |post|
@@ -51,34 +51,35 @@ module Jekyll
             continue
           end
 
-          date = Date.parse(post.date)
-          if post.date < today
-            continue
+          date = Date.parse(post.date.strftime("%Y-%m-%d %H:%M:%S"))
+          if date < today
+            next
           end
 
           # link posts should be handled differently
           if post.data.has_key?('ref_url')
-            url = post.data.ref_url
+            url = post.data['ref_url']
           else  
             url = "#{site.config['url']}#{post.url}"
           end
 
-          if url and ! buffered.find_index( url )
+          if url and ! buffered.include? url
 
             if twitter
-              text = post.data.tweet_text || post.title
-              text = text.truncate( twitter_text_length )
-              puts "curl --data-urlencode 'text=#{text} #{url}' --data 'profile_ids[]=#{twitter}' #{buffer_url}"
-              # `curl --data-urlencode 'text=#{text} #{url}' --data 'profile_ids[]=#{twitter}' #{buffer_url}`
+              twitter_text = post.data['twitter_text'] || post.title
+              twitter_text = twitter_text[0,twitter_text_length]
+              # puts "curl --data-urlencode 'text=#{twitter_text} #{url}' --data 'profile_ids[]=#{twitter}' #{buffer_url}"
+              `curl --data-urlencode 'text=#{twitter_text} #{url}' --data 'profile_ids[]=#{twitter}' #{buffer_url}`
             end
 
             data = ""
-            text = post.excerpt
+            excerpt = post.data['description'] or post.excerpt
 
             if facebook
               if post.data.has_key?('facebook_text')
-                puts "curl --data-urlencode 'text=#{post.data.facebook_text} #{url}' --data 'profile_ids[]=#{facebook}' #{buffer_url}"
-                # `curl --data-urlencode 'text=#{post.data.facebook_text} #{url}' --data 'profile_ids[]=#{facebook}' #{buffer_url}`
+                facebook_text = post.data['facebook_text']
+                # puts "curl --data-urlencode 'text=#{facebook_text} #{url}' --data 'profile_ids[]=#{facebook}' #{buffer_url}"
+                `curl --data-urlencode 'text=#{facebook_text} #{url}' --data 'profile_ids[]=#{facebook}' #{buffer_url}`
               else
                 data << " --data 'profile_ids[]=#{facebook}'"
               end
@@ -86,16 +87,17 @@ module Jekyll
 
             if linkedin
               if post.data.has_key?('linkedin_text')
-                puts "curl --data-urlencode 'text=#{post.data.linkedin_text} #{url}' --data 'profile_ids[]=#{linkedin}' #{buffer_url}"
-                # `curl --data-urlencode 'text=#{post.data.linkedin_text} #{url}' --data 'profile_ids[]=#{linkedin}' #{buffer_url}`
+                linkedin_text = post.data['linkedin_text']
+                # puts "curl --data-urlencode 'text=#{linkedin_text} #{url}' --data 'profile_ids[]=#{linkedin}' #{buffer_url}"
+                `curl --data-urlencode 'text=#{linkedin_text} #{url}' --data 'profile_ids[]=#{linkedin}' #{buffer_url}`
               else
                 data << " --data 'profile_ids[]=#{linkedin}'"
               end
             end
 
-            if data
-              puts "curl --data-urlencode 'text=#{text} #{url}' #{data} #{buffer_url}"
-              # `curl --data-urlencode 'text=#{text} #{url}' #{data} #{buffer_url}`
+            if data != ""
+              # puts "curl --data-urlencode 'text=#{excerpt} #{url}' #{data} #{buffer_url}"
+              `curl --data-urlencode 'text=#{excerpt} #{url}' #{data} #{buffer_url}`
             end
 
             buffered << url
@@ -105,7 +107,7 @@ module Jekyll
         end
         
         # Save it back
-        File.open(cache_file, 'w') { |f| YAML.dump(urls, f) }
+        File.open(buffered_file, 'w') { |f| YAML.dump(buffered, f) }
 
       end
     end
