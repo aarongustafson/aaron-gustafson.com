@@ -12,6 +12,7 @@
 #   
 
 require 'net/http'
+require 'net/https'
 require 'uri'
 require 'date'
 
@@ -38,7 +39,6 @@ module Jekyll
       # tweet length = 140 - 22 url chars & a space
       twitter_text_length = 140 - 22 - 1
 
-      buffer_url = 'https://api.bufferapp.com/1/updates/create.json'
       today = Date.today
 
       if defined?(BUFFER_CACHE_DIR)
@@ -70,39 +70,58 @@ module Jekyll
 
           if url and ! buffered.include? url
 
+            excerpt = post.data['description'] or post.excerpt
+
+            payload = {
+              'text' => "#{excerpt} #{url}",
+              'access_token' => access_token,
+              'profile_ids[]' => []
+            }
+
+            # Twitter is special
             if twitter
               twitter_text = post.data['twitter_text'] || post.title
               twitter_text = twitter_text[0,twitter_text_length]
-              # puts "curl --data-urlencode 'text=#{twitter_text} #{url}' --data 'profile_ids[]=#{twitter}' #{buffer_url}"
-              `curl -s --data-urlencode 'text=#{twitter_text} #{url}' --data 'profile_ids[]=#{twitter}' --data 'access_token=#{access_token}' #{buffer_url}`
+
+              twitter_data = payload.dup
+              twitter_data['text'] = "#{twitter_text} #{url}"
+              twitter_data['profile_ids[]'] << twitter
+
+              post_to_buffer( twitter_data )
             end
 
-            data = ""
-            excerpt = post.data['description'] or post.excerpt
-
+            # Facebook & LinkedIn
+            profile_ids = []
             if facebook
               if post.data.has_key?('facebook_text')
-                facebook_text = post.data['facebook_text']
-                # puts "curl --data-urlencode 'text=#{facebook_text} #{url}' --data 'profile_ids[]=#{facebook}' #{buffer_url}"
-                `curl -s --data-urlencode 'text=#{facebook_text} #{url}' --data 'profile_ids[]=#{facebook}' --data 'access_token=#{access_token}' #{buffer_url}`
+                facebook_data = payload.dup
+                facebook_data['text'] = post.data['facebook_text']
+                facebook_data['text'] << " #{url}"
+                facebook_data['profile_ids[]'] << facebook
+
+                post_to_buffer( facebook_data )
               else
-                data << " --data 'profile_ids[]=#{facebook}'"
+                profile_ids << facebook
               end
             end
 
             if linkedin
               if post.data.has_key?('linkedin_text')
-                linkedin_text = post.data['linkedin_text']
-                # puts "curl --data-urlencode 'text=#{linkedin_text} #{url}' --data 'profile_ids[]=#{linkedin}' #{buffer_url}"
-                `curl -s --data-urlencode 'text=#{linkedin_text} #{url}' --data 'profile_ids[]=#{linkedin}' --data 'access_token=#{access_token}' #{buffer_url}`
+                linkedin_data = payload.dup
+                linkedin_data['text'] = post.data['linkedin_text']
+                linkedin_data['text'] << " #{url}"
+                linkedin_data['profile_ids[]'] << linkedin
+
+                post_to_buffer( linkedin_data )
               else
-                data << " --data 'profile_ids[]=#{linkedin}'"
+                profile_ids << linkedin
               end
             end
 
-            if data != ""
-              # puts "curl --data-urlencode 'text=#{excerpt} #{url}' #{data} #{buffer_url}"
-              `curl -s --data-urlencode 'text=#{excerpt} #{url}' #{data} --data 'access_token=#{access_token}' #{buffer_url}`
+            # Both Facebook & LinkedIn
+            if profile_ids.length > 0
+              payload['profile_ids[]'] = profile_ids
+              post_to_buffer( payload )
             end
 
             buffered << url
@@ -116,6 +135,39 @@ module Jekyll
 
       end
     end
+
+    def post_to_buffer( payload )
+
+      # Idea
+      # puts "curl --data-urlencode 'text=#{twitter_text}' --data 'media[link]=#{url}' --data 'profile_ids[]=#{twitter}' #{buffer_url}"
+      buffer_url = URI.parse('https://api.bufferapp.com/1/updates/create.json')
+      https = Net::HTTP.new(buffer_url.host, buffer_url.port)
+      https.use_ssl = true
+      request = Net::HTTP::Post.new(buffer_url.path)
+      set_form_data(request, payload)
+      response = https.request(request)
+
+    end
+
+    # Using custom set_form_data and urlencode
+    # See http://cloudlines.tumblr.com/post/653645115/post-put-arrays-with-ruby-net-http-set-form-data
+    # Ruby NET/HTTP does not support duplicate parameter names
+    # File net/http.rb, line 1426
+    def set_form_data(request, params, sep = '&')
+      request.body = params.map {|k,v| 
+        if v.instance_of?(Array)
+          v.map {|e| "#{urlencode(k.to_s)}=#{urlencode(e.to_s)}"}.join(sep)
+        else
+          "#{urlencode(k.to_s)}=#{urlencode(v.to_s)}"
+        end
+      }.join(sep)
+      request.content_type = 'application/x-www-form-urlencoded'
+    end
+    
+    def urlencode(str)
+      URI::encode(str)
+    end
+
   end
   
 end
