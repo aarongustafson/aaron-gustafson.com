@@ -57,6 +57,9 @@ task :new_link, :url do |t, args|
     post.puts "ref_url: #{url}"
     post.puts "in_reply_to: #{url}"
     post.puts "ref_source: #{source}"
+    post.puts "via:"
+    post.puts " name: "
+    post.puts " url: "
     post.puts "---"
   end
   `open #{filename}`
