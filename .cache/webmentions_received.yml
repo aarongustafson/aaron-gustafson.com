@@ -4641,6 +4641,7 @@ http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/
       class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/590709114453549057">Chris
       Avila likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-04-23T13:28:38-04:00">23 April 2015</time></div></article></li>
+  '2015-04-24': {}
 ? http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/?imm_mid=0d0abb&cmp=em-web-na-na-newsltr_20150422_oreilly_media
 : '2015-04-23':
     https://twitter.com/LenAtLambton/status/591269202666872833: |-
@@ -4656,3 +4657,8 @@ http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/
     https://twitter.com/drupalizeme/status/590943273738489856: |-
       <li id="webmention-590943273738489856" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/drupalizeme"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/378800000679941586/6ae228548d6be264abb65ea36b6a02b7_normal.png" alt="" title="Drupalize.Me"><b class="p-name">Drupalize.Me</b></a></div><div class="webmention__content p-content"><p>How to Apply Progressive Enhancement When JavaScript Seems Like a Requirement - Aaron Gustafson #js <a href="http://t.co/8BZicybhCn">http://t.co/8BZicybhCn</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-22T14:20:30-04:00">22 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/drupalizeme/status/590943273738489856">Permalink</a></div></article></li>
+http://www.aaron-gustafson.com/notebook/the-network-effect/:
+  '2015-04-24':
+    https://twitter.com/emtjc/status/591560269698043904: |-
+      <li id="webmention-591560269698043904" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/emtjc"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/583275271995830272/898zLRDS_normal.png" alt="" title="TJC eMarketing"><b class="p-name">TJC eMarketing</b></a></div><div class="webmention__content p-content"><p>Comcast injected ads at their wi-fi hotspots - or why it’s important to use HTTPS. <a href="http://t.co/hqzliNtJZO">http://t.co/hqzliNtJZO</a> #webdev #security</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-24T07:12:13-04:00">24 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/emtjc/status/591560269698043904">Permalink</a></div></article></li>
