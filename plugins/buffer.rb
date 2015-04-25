@@ -79,7 +79,7 @@ module Jekyll
 
           if url and ! buffered.include? url
 
-            excerpt = post.data['description'] or post.excerpt
+            excerpt = post.data['description'] || post.excerpt
 
             payload = {
               'shorten' => false,
