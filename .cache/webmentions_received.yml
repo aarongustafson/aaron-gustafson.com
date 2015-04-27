@@ -621,7 +621,13 @@ http://aaron-gustafson.com/notebook/css-variables-are-a-bad-idea/:
       Fresh Articles and Tutorials for Web Designers | Splashnology.com</a></div><div
       class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-02-27T10:57:27-07:00">27
       February 2015</time></div></article></li>
-  '2015-04-02': {}
+  '2015-04-02':
+    18501: <li id="webmention-18501" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://grafikerlermerkezi.com/web-tasarimcilari-icin-30-son-makaleler-ve-ogreticiler/">Web
+      Tasarımcıları için 30 Son Makaleler ve Öğreticiler | Grafikerler Merkezi</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-02T06:41:14-04:00">2
+      April 2015</time></div></article></li>
   '2015-04-03':
     18548: <li id="webmention-18548" class="webmentions__item"><article class="h-cite
       webmention webmention--no-author webmention--title-only"> <div class="webmention__title
@@ -4641,7 +4647,17 @@ http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/
       class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/590709114453549057">Chris
       Avila likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-04-23T13:28:38-04:00">23 April 2015</time></div></article></li>
-  '2015-04-24': {}
+  '2015-04-24':
+    https://twitter.com/mario_sommer/status/591664209110441987: |-
+      <li id="webmention-591664209110441987" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/mario_sommer"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/500682366411485187/5M3rrxTr_normal.jpeg" alt="" title="Mario Sommer"><b class="p-name">Mario Sommer</b></a></div><div class="webmention__content p-content"><p>Tips for Surviving Google’s “Mobilegeddon” from @AaronGustafson <a href="http://t.co/GrU1ztkQys">http://t.co/GrU1ztkQys</a> #mobileFirst</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-24T14:05:14-04:00">24 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/mario_sommer/status/591664209110441987">Permalink</a></div></article></li>
+  '2015-04-27':
+    24379: <li id="webmention-24379" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://wp.zitaio.tk/habrahabr-tip-256669/">Дайджест интересных
+      материалов из мира веб-разработки и IT за последнюю неделю №157 (20 — 26 апреля
+      2015) | Zit@i0</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-04-27T15:01:49-04:00">27 April 2015</time></div></article></li>
 ? http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/?imm_mid=0d0abb&cmp=em-web-na-na-newsltr_20150422_oreilly_media
 : '2015-04-23':
     https://twitter.com/LenAtLambton/status/591269202666872833: |-
@@ -4662,3 +4678,22 @@ http://www.aaron-gustafson.com/notebook/the-network-effect/:
     https://twitter.com/emtjc/status/591560269698043904: |-
       <li id="webmention-591560269698043904" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/emtjc"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/583275271995830272/898zLRDS_normal.png" alt="" title="TJC eMarketing"><b class="p-name">TJC eMarketing</b></a></div><div class="webmention__content p-content"><p>Comcast injected ads at their wi-fi hotspots - or why it’s important to use HTTPS. <a href="http://t.co/hqzliNtJZO">http://t.co/hqzliNtJZO</a> #webdev #security</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-24T07:12:13-04:00">24 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/emtjc/status/591560269698043904">Permalink</a></div></article></li>
+http://www.aaron-gustafson.com/notebook/2014/the-network-effect/:
+  '2015-04-25':
+    https://twitter.com/snhasani/status/591853957691015168: |-
+      <li id="webmention-591853957691015168" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/snhasani"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/579389284534370304/3O2ERJRG_normal.jpg" alt="" title="Naser ¯\_(ツ)_/¯"><b class="p-name">Naser ¯\_(ツ)_/¯</b></a></div><div class="webmention__content p-content"><p>@snhasani /تق
+      ۲. یه بانکی پروسس بار فِیک نشون میده به کاربراش!</p>
+
+      <ul>
+        <li>لینک‌ها
+      ۱. <a href="https://t.co/8yBGT3zM2J">https://t.co/8yBGT3zM2J</a>
+      ۲. <a href="http://t.co/gRmpOLnKXM">http://t.co/gRmpOLnKXM</a></li>
+      </ul>
+
+      <h1 id="wtf">wtf</h1>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-25T02:39:14-04:00">25 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/snhasani/status/591853957691015168">Permalink</a></div></article></li>
+? http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/?imm_mid=0d0ad1&cmp=em-web-na-na-newsltr_20150422_oreilly_web&utm_content=buffer4df36&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+: '2015-04-24':
+    https://twitter.com/ItaliandirRu/status/591715814824398848: |-
+      <li id="webmention-591715814824398848" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/ItaliandirRu"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/582489557662363649/TtEF_eJj_normal.png" alt="" title="ItalianDirectory"><b class="p-name">ItalianDirectory</b></a></div><div class="webmention__content p-content"><p>Tips for Surviving Google’s “Mobilegeddon”, From the Notebook of Aaron Gustafson <a href="http://t.co/7mda6PDWZn">http://t.co/7mda6PDWZn</a>  #css</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-24T17:30:18-04:00">24 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/ItaliandirRu/status/591715814824398848">Permalink</a></div></article></li>
