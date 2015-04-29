@@ -1,6 +1,6 @@
 ---
 layout: link
-title: "Modern.IE and the IEBlog"
+title: "Microsoft Edge is the browser for Windows 10"
 date: 2015-04-29 15:13:19 -0400
 comments: false
 ref_url: http://blogs.msdn.com/b/ie/archive/2015/04/29/microsoft-edge-is-the-browser-for-windows-10.aspx

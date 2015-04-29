@@ -4690,6 +4690,15 @@ http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/
     https://twitter.com/thecuriousquale/status/591999904484073472: |-
       <li id="webmention-591999904484073472" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/thecuriousquale"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/533234697606676480/xu-arGaZ_normal.png" alt="" title="Curious Quale"><b class="p-name">Curious Quale</b></a></div><div class="webmention__content p-content"><p>One for the mobile friendly web developers among you. Tips on how survive Google’s Mobilegeddon. <a href="http://t.co/9ezvX6CfMP">http://t.co/9ezvX6CfMP</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-25T12:19:10-04:00">25 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/thecuriousquale/status/591999904484073472">Permalink</a></div></article></li>
+  '2015-04-29':
+    https://twitter.com/dboudreau/status/593414277702234112: |-
+      <li id="webmention-593414277702234112" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/dboudreau"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/592571500726714369/bF-sCe-K_normal.jpg" alt="" title="Denis Boudreau "><b class="p-name">Denis Boudreau </b></a></div><div class="webmention__content p-content"><p>Tips for Surviving Google’s “Mobilegeddon” » <a href="http://t.co/KTSNuK9DTG">http://t.co/KTSNuK9DTG</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-29T09:59:23-04:00">29 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/dboudreau/status/593414277702234112">Permalink</a></div></article></li>
+  '2015-04-28':
+    https://twitter.com/ka1tmaz/status/593177864893296640: |-
+      <li id="webmention-593177864893296640" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/ka1tmaz"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/549612558747832320/7zlwtsma_normal.jpeg" alt="" title="Peace&deaths ☠"><b class="p-name">Peace&deaths ☠</b></a></div><div class="webmention__content p-content"><h1 id="digest-aaron-gustafson-tips-for-surviving-googles-mobilegeddon">digest Aaron Gustafson: Tips for Surviving Google’s ‘Mobilegeddon’</h1>
+      <p><a href="http://t.co/208CET86nx">http://t.co/208CET86nx</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-28T18:19:58-04:00">28 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/ka1tmaz/status/593177864893296640">Permalink</a></div></article></li>
 ? http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/?imm_mid=0d0abb&cmp=em-web-na-na-newsltr_20150422_oreilly_media
 : '2015-04-23':
     https://twitter.com/LenAtLambton/status/591269202666872833: |-
@@ -4749,3 +4758,56 @@ http://www.aaron-gustafson.com/notebook/links/does-responsive-web-design-make-yo
     https://twitter.com/tomstardust/status/592631844807532544: |-
       <li id="webmention-592631844807532544" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/tomstardust"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/229429779/avatar_eye_normal.jpg" alt="" title="Tommaso Baldovino"><b class="p-name">Tommaso Baldovino</b></a></div><div class="webmention__content p-content"><p>Tips for Surviving #Google’s “Mobilegeddon”: <a href="http://t.co/FMyfupY0ih">http://t.co/FMyfupY0ih</a> via @AaronGustafson #mobile</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-27T06:10:17-04:00">27 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/tomstardust/status/592631844807532544">Permalink</a></div></article></li>
+http://www.aaron-gustafson.com/notebook/lies-damn-lies-and-javascript/:
+  '2015-04-28':
+    https://twitter.com/maxbarners/status/592961594046439424: |-
+      <li id="webmention-592961594046439424" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/maxbarners"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/67845526/square_barners_normal.jpg" alt="" title="Steve Barnett"><b class="p-name">Steve Barnett</b></a></div><div class="webmention__content p-content"><p>Nice catch, @graemepyle! @fnbsa’s site uses JavaScript to load <em>a placebo progress bar</em>. /hat tip @AaronGustafson <a href="http://t.co/XNoQa5cCOZ">http://t.co/XNoQa5cCOZ</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-28T04:00:35-04:00">28 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/maxbarners/status/592961594046439424">Permalink</a></div></article></li>
+    '592796640379043840': <li id="webmention-592796640379043840" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/pzxc0"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/pzxc0/profile_image?size=original"
+      alt="" title="Sean"><b class="p-name">Sean</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/AaronGustafson/status/592796640379043840">Sean
+      likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-04-28T01:06:03-04:00">28 April 2015</time></div></article></li>
+    '592959885467320320': |-
+      <li id="webmention-592959885467320320" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://seb.ly/"><img class="webmention__author__photo u-photo" src="https://twitter.com/seb_ly/profile_image?size=original" alt="" title="Seb Lee-Delisle"><b class="p-name">Seb Lee-Delisle</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> web sockets for a progress bar is probably overkill. Most assets have a loaded event, tracking that is poss the best way.</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-28T03:53:48-04:00">28 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/seb_ly/status/592959885467320320">Permalink</a></div></article></li>
+    '592987445227978752': <li id="webmention-592987445227978752" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.jsuttonmedia.com/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/jsutt/profile_image?size=original"
+      alt="" title="Jennifer Sutton"><b class="p-name">Jennifer Sutton</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/jsutt/status/592987445227978752">Jennifer
+      Sutton reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-04-28T05:43:18-04:00">28 April 2015</time></div></article></li>
+    '593016693913423873': |-
+      <li id="webmention-593016693913423873" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://seb.ly/"><img class="webmention__author__photo u-photo" src="https://twitter.com/seb_ly/profile_image?size=original" alt="" title="Seb Lee-Delisle"><b class="p-name">Seb Lee-Delisle</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> Oh yeah you’re probably right. Crazy if that’s the only way!</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-28T07:39:32-04:00">28 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/seb_ly/status/593016693913423873">Permalink</a></div></article></li>
+    '593014929545912320': |-
+      <li id="webmention-593014929545912320" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.aaron-gustafson.com/"><img class="webmention__author__photo u-photo" src="https://twitter.com/AaronGustafson/profile_image?size=original" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/seb_ly" rel="nofollow">@seb_ly</a> Fair Enough. But it would depend on the direction something is going, right? An upload wouldn’t have that same option.</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-28T07:32:31-04:00">28 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/593014929545912320">Permalink</a></div></article></li>
+  '2015-04-27':
+    https://twitter.com/themattsparks/status/592848547546017793: |-
+      <li id="webmention-592848547546017793" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/themattsparks"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/517456783640498176/exahHZUf_normal.jpeg" alt="" title="Matt Sparks"><b class="p-name">Matt Sparks</b></a></div><div class="webmention__content p-content"><p>Lies, Damn Lies, and JavaScript <a href="http://t.co/QHnJ9mnf6n">http://t.co/QHnJ9mnf6n</a> (via @AaronGustafson) #javascript</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-27T20:31:22-04:00">27 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/themattsparks/status/592848547546017793">Permalink</a></div></article></li>
+    https://twitter.com/AaronGustafson/status/592796640379043840: |-
+      <li id="webmention-592796640379043840" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/590426547808534529/7qvJmSRz_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Lies, Damn Lies, and JavaScript <a href="http://t.co/Wtwc3ULfsR">http://t.co/Wtwc3ULfsR</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-27T17:05:07-04:00">27 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/592796640379043840">Permalink</a></div></article></li>
+    '592796640379043840': <li id="webmention-592796640379043840" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/da_vaibhav"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/da_vaibhav/profile_image?size=original"
+      alt="" title="वैभव"><b class="p-name">वैभव</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/AaronGustafson/status/592796640379043840">वैभव
+      likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-04-27T17:20:17-04:00">27 April 2015</time></div></article></li>
+    '592802582264971265': <li id="webmention-592802582264971265" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://simbasystems.com/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/javascriptd/profile_image?size=original"
+      alt="" title="Javascript Digest"><b class="p-name">Javascript Digest</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/javascriptd/status/592802582264971265">Javascript
+      Digest reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-04-27T17:28:44-04:00">27 April 2015</time></div></article></li>
