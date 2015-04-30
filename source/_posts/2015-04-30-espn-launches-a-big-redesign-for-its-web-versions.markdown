@@ -1,7 +1,7 @@
 ---
 layout: link
 title: "ESPN Launches A Big Redesign For Its Web Versions"
-description: ""
+description: "Testing "new" tech isn’t really a new thing for ESPN. Those of you who have been on the web a while might remember it being one of the first really big sites to embrace CSS and web standards, back in 2003."
 date: 2015-04-30 18:30:08 -0400
 comments: false
 ref_url: http://techcrunch.com/2015/03/31/espn-launches-a-big-redesign-for-its-web-versions/
