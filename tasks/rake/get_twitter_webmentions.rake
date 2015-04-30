@@ -2,12 +2,20 @@ require 'rubygems'
 require 'twitter'
 require 'kramdown'
 
-cache_folder = File.expand_path('../../../.cache', __FILE__)
+root_folder = '../../../'
+cache_folder = File.expand_path("#{root_folder}.cache", __FILE__)
 cache_file = File.join(cache_folder, 'webmentions_received.yml')
+config_file = File.expand_path("#{root_folder}_config.yml", __FILE__)
 
 # usage rake get_twitter_webmentions
 desc "Import Twitter webmentions"
 task :get_twitter_webmentions do |t, args|
+
+  # Load the config file
+  jekyll_config = open(config_file) { |f| YAML.load(f) }
+  
+  # counting 
+  count = 0
 
   if File.exists?(cache_file)
 	  cached_webmentions = open(cache_file) { |f| YAML.load(f) }
@@ -28,7 +36,7 @@ task :get_twitter_webmentions do |t, args|
   	tweet.urls.each do |url|
   		url = url.url.to_s
 	  	url = `curl -w "%{url_effective}\n" -L -s -S $URL -o /dev/null #{url}`
-	  	if url.include? "aaron-gustafson.com"
+	  	if url.include? jekyll_config['url']
 	  		target = url.gsub("\n",'')
 	  		break
 	  	end
@@ -113,6 +121,7 @@ task :get_twitter_webmentions do |t, args|
 
       cached_webmentions[target][the_date][permalink] = webmention
       
+      count += 1
     end
 
   end
@@ -121,4 +130,5 @@ task :get_twitter_webmentions do |t, args|
   # puts cached_webmentions
 	File.open(cache_file, 'w') { |f| YAML.dump(cached_webmentions, f) }
 
+  puts "Twitter Mebmentions Added: #{count}"
 end
