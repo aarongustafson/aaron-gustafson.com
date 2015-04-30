@@ -110,3 +110,13 @@ google_analytics_tracking_id: "UA-176472-5"
 
 # Github repo path
 repo_url: "https://github.com/aarongustafson/aarongustafson.github.io/tree/source/source/"
+
+# Adaptive Images Config
+adaptive_image:
+  cache: 2592000
+  srcset: 
+    - 1920
+    - 600
+    - 320
+  sizes:
+    - 100vw
