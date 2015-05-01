@@ -29,5 +29,9 @@ The Microsoft App Store is a little scant on first-rate programs right now, so i
 Obviously the web is where I live and work. I’ve been playing with early builds of the new Microsoft browser for a few months now and have been pretty happy with its speed and capabilities, but it is nice to read an outside perspective on it.
 * [Microsoft Just Nonchalantly Showed Us the Single-Device UI of the Future](http://gizmodo.com/microsoft-just-nonchalantly-showed-us-the-single-device-1701020050)
 I don’t know about "nonchalantly", but the whole Continuum feature is pretty amazing. The potential for being able to use the computer in your pocket with other peripherals is pretty intriguing. Imagine using your phone, a set of holographic or [virtual screen glasses](http://www.amazon.com/Cinemizer-1909-127-Multimedia-Video-Glasses/dp/B0091OI530/), and a bluetooth keyboard & mouse to get work done on a plane. No need to worry about someone leaning back and breaking your laptop!
+* [HoloLens Hands-On: How We Built An App For Microsoft’s Augmented Reality Headset](http://techcrunch.com/2015/04/30/hololens-is-real/)  
+One reporter’s experience developing for and playing with HoloLens. Sounds like it was pretty cool. I wonder if it can be tweaked to work for people with poor vision like me or if it fits nicely over glasses.
+* [Microsoft’s Windows 10 Vision Isn’t As Simple as It Seems](http://www.wired.com/2015/05/microsofts-one-billion-device-vision-genius-next-impossible/)  
+A deeper analysis of Microsoft’s play for more developer (and consumer) mindshare.
 
 *I will continue adding to this list as new & interesting pieces come out*.
