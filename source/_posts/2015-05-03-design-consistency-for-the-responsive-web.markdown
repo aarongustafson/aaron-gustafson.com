@@ -5,7 +5,7 @@ description: "This is a fantastic presentation from Patty Toland, given at the S
 date: 2015-05-03 16:22:49 -0400
 comments: false
 ref_url: https://docs.google.com/presentation/d/1Fh7bZne2lEffUxI2cL6gaqdayNm3tv6_6d_mmSdOkiE/edit
-ref_source: Patty Toland
+ref_source: Google Slides
 ---
 
 This is a fantastic presentation from [Patty Toland](https://twitter.com/pattytoland) (of [Filament Group](http://www.filamentgroup.com/)), given at the Smashing Conference in Santa Monica.
