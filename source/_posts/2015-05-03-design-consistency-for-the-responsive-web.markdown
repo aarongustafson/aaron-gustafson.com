@@ -10,4 +10,6 @@ ref_source: Patty Toland
 
 This is a fantastic presentation from [Patty Toland](https://twitter.com/pattytoland) (of [Filament Group](http://www.filamentgroup.com/)), given at the Smashing Conference in Santa Monica.
 
-<iframe src="https://docs.google.com/presentation/embed?id=1Fh7bZne2lEffUxI2cL6gaqdayNm3tv6_6d_mmSdOkiE&amp;start=false&amp;loop=false&amp;" frameborder="0"></iframe>
+<figure class="video-embed video-embed--16x9">  
+<iframe class="video-embed__video" src="https://docs.google.com/presentation/embed?id=1Fh7bZne2lEffUxI2cL6gaqdayNm3tv6_6d_mmSdOkiE&amp;start=false&amp;loop=false&amp;" frameborder="0"></iframe>  
+</figure>
