@@ -10,13 +10,14 @@
 		</ul>
 
 		{% if site.simple_search %}
-			<form action="{{ site.simple_search }}" method="get" role="search">
+			<form action="{{ site.simple_search }}" method="get" role="search" id="search">
 				<ol>
 					<li class="search">
 						<label class="hidden">What are you looking for?</label>
+						<input name='q' type='hidden' value='site:www.aaron-gustafson.com'>
 						<input type="search" name="q">
 					</li>
-					<li><button><b class="hidden">Let’s see if </b>Google <b class="hidden">Finds </b>it</button></li>
+					<li><button name="sa" value="Search"><b class="hidden">Let’s see if </b>Google <b class="hidden">Finds </b>it</button></li>
 				</ol>
 			</form>
 		{% endif %}

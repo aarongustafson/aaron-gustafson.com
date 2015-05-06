@@ -4745,6 +4745,16 @@ http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/
     https://twitter.com/dboudreau/status/593414277702234112: |-
       <li id="webmention-593414277702234112" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/dboudreau"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/592571500726714369/bF-sCe-K_normal.jpg" alt="" title="Denis Boudreau "><b class="p-name">Denis Boudreau </b></a></div><div class="webmention__content p-content"><p>Tips for Surviving Google’s “Mobilegeddon” » <a href="http://t.co/KTSNuK9DTG">http://t.co/KTSNuK9DTG</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-29T06:59:23-07:00">29 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/dboudreau/status/593414277702234112">Permalink</a></div></article></li>
+    https://twitter.com/freshfrontend/status/593467565957079040: |-
+      <li id="webmention-593467565957079040" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/freshfrontend"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/3658942973/ad28655102861ba0778fa2467656c88f_normal.jpeg" alt="" title="FreshBrewed Frontend"><b class="p-name">FreshBrewed Frontend</b></a></div><div class="webmention__content p-content"><table>
+        <tbody>
+          <tr>
+            <td>Tips for Surviving Google’s “Mobilegeddon”</td>
+            <td><a href="http://t.co/WRaicOZ7lC">http://t.co/WRaicOZ7lC</a></td>
+          </tr>
+        </tbody>
+      </table>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-29T10:31:08-07:00">29 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/freshfrontend/status/593467565957079040">Permalink</a></div></article></li>
   '2015-04-28':
     https://twitter.com/ka1tmaz/status/593177864893296640: |-
       <li id="webmention-593177864893296640" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/ka1tmaz"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/549612558747832320/7zlwtsma_normal.jpeg" alt="" title="Peace&deaths ☠"><b class="p-name">Peace&deaths ☠</b></a></div><div class="webmention__content p-content"><h1 id="digest-aaron-gustafson-tips-for-surviving-googles-mobilegeddon">digest Aaron Gustafson: Tips for Surviving Google’s ‘Mobilegeddon’</h1>
@@ -4921,3 +4931,64 @@ http://www.aaron-gustafson.com/notebook/links/design-consistency-for-the-respons
     https://twitter.com/portenkirchner/status/595327529327710208: |-
       <li id="webmention-595327529327710208" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/portenkirchner"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/291829846/dsC02522_normal.jpg" alt="" title="Georg Portenkirchner"><b class="p-name">Georg Portenkirchner</b></a></div><div class="webmention__content p-content"><p>Design Consistency for the Responsive Web <a href="http://t.co/JAFbX30ON7">http://t.co/JAFbX30ON7</a> #RWD</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-04T13:41:58-07:00">4 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/portenkirchner/status/595327529327710208">Permalink</a></div></article></li>
+http://www.aaron-gustafson.com/notebook/slides-from-my-talk-at-number-msedgesummit/:
+  '2015-05-06':
+    https://twitter.com/HTeuMeuLeu/status/595907741241212928: |-
+      <li id="webmention-595907741241212928" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/HTeuMeuLeu"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1296449277/icon_normal.jpg" alt="" title="HTeuMeuLeu"><b class="p-name">HTeuMeuLeu</b></a></div><div class="webmention__content p-content"><p>“Falling in love with forms”, des slides plutôt complets de @AaronGustafson sur l’écriture de formulaires HTML <a href="http://t.co/oOqeIPFGUC">http://t.co/oOqeIPFGUC</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-06T04:07:31-07:00">6 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/HTeuMeuLeu/status/595907741241212928">Permalink</a></div></article></li>
+    https://twitter.com/smithua/status/595871766548971522: |-
+      <li id="webmention-595871766548971522" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/smithua"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/344513261580632002/a542c98a1f1d79da2c6f83781ea3ea52_normal.png" alt="" title="Alexandr Fesenko"><b class="p-name">Alexandr Fesenko</b></a></div><div class="webmention__content p-content"><p>Falling in Love with Forms:
+      “@AaronGustafson: Slides from my talk at #msEdgeSummit <a href="http://t.co/1TAD1R9xCA”">http://t.co/1TAD1R9xCA”</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-06T01:44:34-07:00">6 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/smithua/status/595871766548971522">Permalink</a></div></article></li>
+    '595800437158207489': <li id="webmention-595800437158207489" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/funnycom"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/funnycom/profile_image?size=original"
+      alt="" title="고경희(Kyunghee Ko)"><b class="p-name">고경희(Kyunghee Ko)</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/595800437158207489">고경희(Kyunghee
+      Ko) likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-05-06T00:00:37-07:00">6 May 2015</time></div></article></li>
+  '2015-05-05':
+    https://twitter.com/AaronGustafson/status/595800437158207489: |-
+      <li id="webmention-595800437158207489" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/590426547808534529/7qvJmSRz_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Slides from my talk at #msEdgeSummit <a href="http://t.co/jcp04zqKJf">http://t.co/jcp04zqKJf</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-05T21:01:08-07:00">5 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/595800437158207489">Permalink</a></div></article></li>
+    '595801439273902080': <li id="webmention-595801439273902080" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://blogs.msdn.com/b/ie/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/kylealden/profile_image?size=original"
+      alt="" title="Kyle Pflug"><b class="p-name">Kyle Pflug</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/kylealden/status/595801439273902080">Kyle
+      Pflug reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-05-05T21:05:07-07:00">5 May 2015</time></div></article></li>
+    '595800437158207489': <li id="webmention-595800437158207489" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/higley"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/higley/profile_image?size=original"
+      alt="" title="John Higley"><b class="p-name">John Higley</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/595800437158207489">John
+      Higley likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-05-05T21:40:21-07:00">5 May 2015</time></div></article></li>
+    '595808410706247681': <li id="webmention-595808410706247681" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://about.me/siyam"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/potasiyam/profile_image?size=original"
+      alt="" title="Tanbin Islam Siyam"><b class="p-name">Tanbin Islam Siyam</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/potasiyam/status/595808410706247681">Tanbin
+      Islam Siyam reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-05-05T21:32:49-07:00">5 May 2015</time></div></article></li>
+    '595812840163954688': |-
+      <li id="webmention-595812840163954688" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/jaymzB1476"><img class="webmention__author__photo u-photo" src="https://twitter.com/jaymzB1476/profile_image?size=original" alt="" title="J.C. Stevens"><b class="p-name">J.C. Stevens</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> What are your thoughts on paginating complex forms rather than the whole form on one page? With a progress bar&hellip;</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-05T21:50:25-07:00">5 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/jaymzB1476/status/595812840163954688">Permalink</a></div></article></li>
+    '595811830515261440': <li id="webmention-595811830515261440" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.css-manufaktur.de/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/Renaade/profile_image?size=original"
+      alt="" title="Renate Hermanns"><b class="p-name">Renate Hermanns</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/Renaade/status/595811830515261440">Renate
+      Hermanns reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-05-05T21:46:24-07:00">5 May 2015</time></div></article></li>
+http://www.aaron-gustafson.com/notebook/lessons-learned%20from-atari/:
+  '2015-05-05':
+    https://twitter.com/AaronGustafson/status/595782552872423424: |-
+      <li id="webmention-595782552872423424" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/590426547808534529/7qvJmSRz_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Lessons Learned from Atari <a href="http://t.co/MFxCSMkktr">http://t.co/MFxCSMkktr</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-05T19:50:04-07:00">5 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/595782552872423424">Permalink</a></div></article></li>
