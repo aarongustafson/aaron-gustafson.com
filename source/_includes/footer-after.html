@@ -5,6 +5,7 @@
 	<script src="/j/{{ script }}.js" async></script>
 {% endfor %}
 
+{% include google_analytics.html %}
 
 {% capture page_url %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
 <noscript>
