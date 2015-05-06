@@ -652,10 +652,10 @@ http://www.aaron-gustafson.com/notebook/css-variables-are-a-bad-idea/:
   '2015-05-01':
     https://twitter.com/SaraSoueidan/status/594205460531548160: |-
       <li id="webmention-594205460531548160" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/SaraSoueidan"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/558566575465177088/0Y6iPGJQ_normal.jpeg" alt="" title="Sara Soueidan"><b class="p-name">Sara Soueidan</b></a></div><div class="webmention__content p-content"><p>@jpamental Credit for that idea goes to this post: <a href="http://t.co/fMy0ROcXs4">http://t.co/fMy0ROcXs4</a> and this post: <a href="http://t.co/EErnEPPecO">http://t.co/EErnEPPecO</a></p>
-      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-01T14:23:16-04:00">1 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/SaraSoueidan/status/594205460531548160">Permalink</a></div></article></li>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-01T11:23:16-07:00">1 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/SaraSoueidan/status/594205460531548160">Permalink</a></div></article></li>
     https://twitter.com/SaraSoueidan/status/594203341002907649: |-
       <li id="webmention-594203341002907649" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/SaraSoueidan"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/558566575465177088/0Y6iPGJQ_normal.jpeg" alt="" title="Sara Soueidan"><b class="p-name">Sara Soueidan</b></a></div><div class="webmention__content p-content"><p>@potch yup. there is a disadvantage to css variables as mentioned by @AaronGustafson <a href="http://t.co/fMy0ROcXs4">http://t.co/fMy0ROcXs4</a> but in SVG we don’t it!</p>
-      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-01T14:14:50-04:00">1 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/SaraSoueidan/status/594203341002907649">Permalink</a></div></article></li>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-01T11:14:50-07:00">1 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/SaraSoueidan/status/594203341002907649">Permalink</a></div></article></li>
 http://aaron-gustafson.com/notebook/2014/aria-quicktip-labelledby-vs-describedby/:
   '2014-11-05':
     11803: <li id="webmention-11803" class="webmentions__item"><article class="h-cite
@@ -783,6 +783,17 @@ http://aaron-gustafson.com/notebook/2014/what-do-we-own/:
       can be a problem for archiving. See, for example, Ben Ward on TARDNS: https://benward.me/blog/tardns</a></div><div
       class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2014-11-17T19:44:31-07:00">17
       November 2014</time></div></article></li>'
+    11855: <li id="webmention-11855" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/hansup"><img class="webmention__author__photo
+      u-photo" src="https://pbs.twimg.com/profile_images/533292726968537088/vPFQizFb.jpeg"
+      alt="" title="hans verhaegen"><b class="p-name">hans verhaegen</b></a></div>
+      <div class="webmention__title p-name"><a href="https://brid-gy.appspot.com/like/twitter/AaronGustafson/534477350713700352/20617296">hans
+      verhaegen favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2014-11-17T23:42:39-08:00">17 November 2014</time></div></article></li>
+    11856: |-
+      <li id="webmention-11856" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.hansup.be/"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/533292726968537088/vPFQizFb.jpeg" alt="" title="hans verhaegen"><b class="p-name">hans verhaegen</b></a></div><div class="webmention__content p-content"><p>@AaronGustafson 2 different concepts: owning/controlling your data and the permanence of data. Eternity doesn’t exist not even 4 print.</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2014-11-17T23:39:01-08:00">17 November 2014</time> | <a class="webmention__source u-url" href="https://brid-gy.appspot.com/comment/twitter/AaronGustafson/534477350713700352/534611719516352513">Permalink</a></div></article></li>
   '2014-11-18':
     11855: <li id="webmention-11855" class="webmentions__item"><article class="h-cite
       webmention webmention--author-starts webmention--title-only"><div class="webmention__author
@@ -3028,6 +3039,14 @@ http://aaron-gustafson.com/notebook/ch-ch-ch-changes/:
       Fathonih Akhmad Fathonih retweeted this.</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2015-01-30T21:06:28-07:00">30
       January 2015</time></div></article></li>
+    '561427415059415040': <li id="webmention-561427415059415040" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--author-starts
+      webmention--title-only"><div class="webmention__author p-author h-card"><a class="u-url"
+      href="http://mced.it/"><img class="webmention__author__photo u-photo" src="https://twitter.com/brassy/profile_image?size=original"
+      alt="" title="Emanuela"><b class="p-name">Emanuela</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/brassy/status/561427415059415040">Emanuela
+      Emanuela retweeted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-01-30T23:35:01-08:00">30 January 2015</time></div></article></li>
   '2015-01-31':
     '561427415059415040': <li id="webmention-561427415059415040" class="webmentions__item"><article
       class="h-cite webmention webmention--author-starts webmention--author-starts
@@ -3666,7 +3685,7 @@ http://www.aaron-gustafson.com/notebook/who-should-pay/:
   '2015-05-01':
     https://twitter.com/AaronGustafson/status/594245934638354432: |-
       <li id="webmention-594245934638354432" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/590426547808534529/7qvJmSRz_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@potch Agreed. That’s a poor design decision that opts to make it easier on the devs &amp; harder on users <a href="http://t.co/ENCa72yNZS">http://t.co/ENCa72yNZS</a> @SaraSoueidan</p>
-      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-01T17:04:06-04:00">1 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/594245934638354432">Permalink</a></div></article></li>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-01T14:04:06-07:00">1 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/594245934638354432">Permalink</a></div></article></li>
     '594249514048888832': |-
       <li id="webmention-594249514048888832" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://github.com/potch"><img class="webmention__author__photo u-photo" src="https://twitter.com/potch/profile_image?size=original" alt="" title="potch"><b class="p-name">potch</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> <a href="https://twitter.com/SaraSoueidan" rel="nofollow">@SaraSoueidan</a> Not to excusing either- both tempt laziness&hellip;</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-01T17:18:19-04:00">1 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/potch/status/594249514048888832">Permalink</a></div></article></li>
@@ -4645,6 +4664,14 @@ http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/
     https://twitter.com/jeremylatham/status/590713115328798721: |-
       <li id="webmention-590713115328798721" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/jeremylatham"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/461931977604468737/fMYjRo0x_normal.jpeg" alt="" title="Jeremy Latham"><b class="p-name">Jeremy Latham</b></a></div><div class="webmention__content p-content"><p>Tips for Surviving Google’s “Mobilegeddon” <a href="http://t.co/HVdAXlOzxm">http://t.co/HVdAXlOzxm</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-21T23:05:56-04:00">21 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/jeremylatham/status/590713115328798721">Permalink</a></div></article></li>
+    '590749307457953792': <li id="webmention-590749307457953792" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.benorudolf.com/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/BenoRudolf/profile_image?size=original"
+      alt="" title="Beno Rudolf"><b class="p-name">Beno Rudolf</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/BenoRudolf/status/590749307457953792">Beno
+      Rudolf reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-04-21T22:29:45-07:00">21 April 2015</time></div></article></li>
   '2015-04-23':
     https://twitter.com/r_parkin/status/591236755392700416: |-
       <li id="webmention-591236755392700416" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/r_parkin"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/3702488469/67c23bb59d645f04b8fc052b2a7a412f_normal.jpeg" alt="" title="Rich Parkin"><b class="p-name">Rich Parkin</b></a></div><div class="webmention__content p-content"><p>Tips for Surviving Google’s “Mobilegeddon” <a href="http://t.co/Wb2fSVBCTP">http://t.co/Wb2fSVBCTP</a></p>
@@ -4717,16 +4744,16 @@ http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/
   '2015-04-29':
     https://twitter.com/dboudreau/status/593414277702234112: |-
       <li id="webmention-593414277702234112" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/dboudreau"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/592571500726714369/bF-sCe-K_normal.jpg" alt="" title="Denis Boudreau "><b class="p-name">Denis Boudreau </b></a></div><div class="webmention__content p-content"><p>Tips for Surviving Google’s “Mobilegeddon” » <a href="http://t.co/KTSNuK9DTG">http://t.co/KTSNuK9DTG</a></p>
-      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-29T09:59:23-04:00">29 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/dboudreau/status/593414277702234112">Permalink</a></div></article></li>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-29T06:59:23-07:00">29 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/dboudreau/status/593414277702234112">Permalink</a></div></article></li>
   '2015-04-28':
     https://twitter.com/ka1tmaz/status/593177864893296640: |-
       <li id="webmention-593177864893296640" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/ka1tmaz"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/549612558747832320/7zlwtsma_normal.jpeg" alt="" title="Peace&deaths ☠"><b class="p-name">Peace&deaths ☠</b></a></div><div class="webmention__content p-content"><h1 id="digest-aaron-gustafson-tips-for-surviving-googles-mobilegeddon">digest Aaron Gustafson: Tips for Surviving Google’s ‘Mobilegeddon’</h1>
       <p><a href="http://t.co/208CET86nx">http://t.co/208CET86nx</a></p>
-      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-28T18:19:58-04:00">28 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/ka1tmaz/status/593177864893296640">Permalink</a></div></article></li>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-28T15:19:58-07:00">28 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/ka1tmaz/status/593177864893296640">Permalink</a></div></article></li>
   '2015-05-01':
     https://twitter.com/portz/status/594092188402749441: |-
       <li id="webmention-594092188402749441" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/portz"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/464935055576399872/D6Xzvuyp_normal.jpeg" alt="" title="James Portz"><b class="p-name">James Portz</b></a></div><div class="webmention__content p-content"><p>Tips to survive the Google mobile search bias  <a href="http://t.co/sVnQqqHvDD">http://t.co/sVnQqqHvDD</a></p>
-      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-01T06:53:10-04:00">1 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/portz/status/594092188402749441">Permalink</a></div></article></li>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-01T03:53:10-07:00">1 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/portz/status/594092188402749441">Permalink</a></div></article></li>
 ? http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/?imm_mid=0d0abb&cmp=em-web-na-na-newsltr_20150422_oreilly_media
 : '2015-04-23':
     https://twitter.com/LenAtLambton/status/591269202666872833: |-
@@ -4790,7 +4817,7 @@ http://www.aaron-gustafson.com/notebook/lies-damn-lies-and-javascript/:
   '2015-04-28':
     https://twitter.com/maxbarners/status/592961594046439424: |-
       <li id="webmention-592961594046439424" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/maxbarners"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/67845526/square_barners_normal.jpg" alt="" title="Steve Barnett"><b class="p-name">Steve Barnett</b></a></div><div class="webmention__content p-content"><p>Nice catch, @graemepyle! @fnbsa’s site uses JavaScript to load <em>a placebo progress bar</em>. /hat tip @AaronGustafson <a href="http://t.co/XNoQa5cCOZ">http://t.co/XNoQa5cCOZ</a></p>
-      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-28T04:00:35-04:00">28 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/maxbarners/status/592961594046439424">Permalink</a></div></article></li>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-28T01:00:35-07:00">28 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/maxbarners/status/592961594046439424">Permalink</a></div></article></li>
     '592796640379043840': <li id="webmention-592796640379043840" class="webmentions__item"><article
       class="h-cite webmention webmention--author-starts webmention--title-only"><div
       class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/pzxc0"><img
@@ -4839,16 +4866,23 @@ http://www.aaron-gustafson.com/notebook/lies-damn-lies-and-javascript/:
       <div class="webmention__title p-name"><a href="https://twitter.com/javascriptd/status/592802582264971265">Javascript
       Digest reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-04-27T17:28:44-04:00">27 April 2015</time></div></article></li>
+  '2015-05-03':
+    26961: <li id="webmention-26961" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://mattsparks.com/stuff-i-found-this-week-6/">Stuff I Found
+      This Week... - The Online Internet Site of Matt Sparks</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-05-03T17:57:40-07:00">3
+      May 2015</time></div></article></li>
 http://www.aaron-gustafson.com/notebook/collected-reactions-to-build/:
   '2015-04-30':
     https://twitter.com/AaronGustafson/status/593883803170516992: |-
       <li id="webmention-593883803170516992" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/590426547808534529/7qvJmSRz_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Collected Reactions to //build/ <a href="http://t.co/hD5m9oofaz">http://t.co/hD5m9oofaz</a></p>
-      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-30T17:05:07-04:00">30 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/593883803170516992">Permalink</a></div></article></li>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-30T14:05:07-07:00">30 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/593883803170516992">Permalink</a></div></article></li>
     https://twitter.com/AaronGustafson/status/593886052701609986: |-
       <li id="webmention-593886052701609986" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/590426547808534529/7qvJmSRz_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@pepelsbey_ Post is up now: <a href="http://t.co/hD5m9oofaz">http://t.co/hD5m9oofaz</a></p>
 
       <p>Sorry about that.</p>
-      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-30T17:14:03-04:00">30 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/593886052701609986">Permalink</a></div></article></li>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-30T14:14:03-07:00">30 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/593886052701609986">Permalink</a></div></article></li>
     '593883803170516992': <li id="webmention-593883803170516992" class="webmentions__item"><article
       class="h-cite webmention webmention--author-starts webmention--title-only"><div
       class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/cdevroe"><img
@@ -4861,18 +4895,18 @@ http://www.aaron-gustafson.com/notebook/espn-launches-a-big-redesign-for-its-web
   '2015-05-01':
     https://twitter.com/AaronGustafson/status/594188535361622016: |-
       <li id="webmention-594188535361622016" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/590426547808534529/7qvJmSRz_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Espn Launches A Big Redesign For Its Web Versions <a href="http://t.co/ZhATI1TrWB">http://t.co/ZhATI1TrWB</a></p>
-      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-01T13:16:00-04:00">1 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/594188535361622016">Permalink</a></div></article></li>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-01T10:16:00-07:00">1 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/594188535361622016">Permalink</a></div></article></li>
 http://www.aaron-gustafson.com/notebook/links/espn-launches-a-big-redesign-for-its-web-versions/:
   '2015-05-01':
     https://twitter.com/AaronGustafson/status/594246210904530944: |-
       <li id="webmention-594246210904530944" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/590426547808534529/7qvJmSRz_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@cdevroe Publishing issue with Jekyll. Sorry, here’s the actual URL: <a href="http://t.co/58JLqOKBTI">http://t.co/58JLqOKBTI</a></p>
-      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-01T17:05:11-04:00">1 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/594246210904530944">Permalink</a></div></article></li>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-01T14:05:11-07:00">1 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/594246210904530944">Permalink</a></div></article></li>
     https://twitter.com/AaronGustafson/status/594195711085928448: |-
       <li id="webmention-594195711085928448" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/590426547808534529/7qvJmSRz_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Ok, that link <em>should</em> have been <a href="http://t.co/58JLqOKBTI">http://t.co/58JLqOKBTI</a></p>
-      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-01T13:44:31-04:00">1 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/594195711085928448">Permalink</a></div></article></li>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-01T10:44:31-07:00">1 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/594195711085928448">Permalink</a></div></article></li>
     https://twitter.com/AaronGustafson/status/594195072482201603: |-
       <li id="webmention-594195072482201603" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/590426547808534529/7qvJmSRz_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@miklb Yup. Here’s the real link: <a href="http://t.co/58JLqOKBTI">http://t.co/58JLqOKBTI</a></p>
-      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-01T13:41:59-04:00">1 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/594195072482201603">Permalink</a></div></article></li>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-01T10:41:59-07:00">1 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/594195072482201603">Permalink</a></div></article></li>
 http://www.aaron-gustafson.com/colophon/:
   '2015-05-01':
     https://twitter.com/AaronGustafson/status/594199274881196032: |-
@@ -4881,4 +4915,9 @@ http://www.aaron-gustafson.com/colophon/:
       <p>In case it helps with evaluation: <a href="http://t.co/1ER6UjQJ2e">http://t.co/1ER6UjQJ2e</a></p>
 
       <p>All my source is on Github too.</p>
-      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-01T13:58:41-04:00">1 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/594199274881196032">Permalink</a></div></article></li>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-01T10:58:41-07:00">1 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/594199274881196032">Permalink</a></div></article></li>
+http://www.aaron-gustafson.com/notebook/links/design-consistency-for-the-responsive-web/:
+  '2015-05-04':
+    https://twitter.com/portenkirchner/status/595327529327710208: |-
+      <li id="webmention-595327529327710208" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/portenkirchner"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/291829846/dsC02522_normal.jpg" alt="" title="Georg Portenkirchner"><b class="p-name">Georg Portenkirchner</b></a></div><div class="webmention__content p-content"><p>Design Consistency for the Responsive Web <a href="http://t.co/JAFbX30ON7">http://t.co/JAFbX30ON7</a> #RWD</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-04T13:41:58-07:00">4 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/portenkirchner/status/595327529327710208">Permalink</a></div></article></li>
