@@ -4,7 +4,7 @@ title: "Lessons Learned from Atari"
 date: 2015-05-05 17:05:40 -0500
 comments: true
 categories: ["web design",industry]
-description: "In watching Atari: Game Over, I couldn't help but see all of the parallels between the early video game industry and the web design industry. "
+description: "In watching Atari: Game Over, I couldn’t help but see all of the parallels between the early video game industry and the web design industry."
 ---
 
 In watching [<cite>Atari: Game Over</cite>](http://www.slashfilm.com/watch-atari-game-over/), I couldn't help but see all of the parallels between the early video game industry and the web design industry. The boys’ club… Engineers as rockstars… It's a tale of a meteoric commercial rise followed by a swift and dismal collapse.
