@@ -38,7 +38,11 @@ task :new_link, :url do |t, args|
   end
   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
   mkdir_p "#{source_dir}/#{posts_dir}"
-  slug = URI(url).path.split('/').last.split('.').first
+  if URI(url).path != '/'
+    slug = URI(url).path.split('/').last.split('.').first
+  else
+    slug = URI(url).host.split('.').first
+  end
   if !Dir.glob("#{source_dir}/#{posts_dir}/*-#{slug}*").empty?
       abort("rake aborted!") if ask("This link may already exist. Do you want to proceed?", ['y', 'n']) == 'n'
   end
