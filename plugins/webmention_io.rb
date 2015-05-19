@@ -316,9 +316,9 @@ module Jekyll
             else
               content = @converter.convert("#{content}")
               if !content.starts_with?('<p')
-                puts content
+                # puts content
                 content = content.replace(/^<[^>]+>/, '<p>').replace(/<\/[^>]+>$/, '</p>')
-                puts content
+                # puts content
               end
             end
 

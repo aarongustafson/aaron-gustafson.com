@@ -7,10 +7,23 @@ categories: [presentations,"HTML forms"]
 description: "I just came off stage from my talk at the Microsoft Edge Web Summit and I wanted to share the deck with you. The talk was live-streamed, but I will post a video link as soon as it is up."
 ---
 
-I just came off stage from my talk at the [Microsoft Edge Web Summit](http://devchannel.modern.ie/websummit2015) and I wanted to share the deck with you. The talk was live-streamed, but I will post a video link as soon as it is up.
+I just came off stage from my talk at the [Microsoft Edge Web Summit](https://channel9.msdn.com/Events/WebPlatformSummit/2015) and I wanted to share [the deck](#figure-2015-05-05-01) with you. The talk was live-streamed, but I will post a video link as soon as it is up.
+
+**Update:** [The video is now online](https://channel9.msdn.com/Events/WebPlatformSummit/2015/Falling-in-love-with-forms). You can also [view it below](#figure-2015-05-05-02).
 
 <!-- more -->
 
-<figure class="video-embed video-embed--16x9">  
+## Slides
+
+<figure class="video-embed video-embed--16x9" id="figure-2015-05-05-01">  
 <iframe class="video-embed__video" src="//www.slideshare.net/slideshow/embed_code/key/H1xKkpN0KIoXq3" frameborder="0"></iframe>  
+</figure>
+
+## Video
+
+<figure class="video-embed video-embed--16x9" id="figure-2015-05-05-02">  
+<video poster="//sec.ch9.ms/sessions/websummit/2015/GA05-LG.jpg">
+<source src="//video.ch9.ms/sessions/websummit/2015/GA05.mp4">
+<p>Download it: <a href="//video.ch9.ms/sessions/websummit/2015/GA05.mp4">High Quality MP4</a> or <a href="//video.ch9.ms/sessions/websummit/2015/GA05-mobile.mp4">Low Quality MP4</a></p>
+</video>
 </figure>
