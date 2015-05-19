@@ -5096,7 +5096,7 @@ http://www.aaron-gustafson.com/notebook/lessons-learned%20from-atari/:
 http://www.aaron-gustafson.com/notebook/url-inception/:
   '2015-05-18':
     https://twitter.com/portenkirchner/status/600422650310172672: |-
-      <li id="webmention-600422650310172672" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/portenkirchner"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/291829846/dsC02522_normal.jpg" alt="" title="Georg Portenkirchner"><b class="p-name">Georg Portenkirchner</b></a></div><div class="webmention__content p-content"><p>URL Inception <a href="http://t.co/dVA95ltZtR">http://t.co/dVA95ltZtR</a></p>
+      <li id="webmention-600422650310172672" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/portenkirchner"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/291829846/dsC02522_normal.jpg" alt="" title="Georg Portenkirchner"><b class="p-name">Georg Portenkirchner</b></a></div><div class="webmention__content p-content"><h1 id="url-inception-httptcodva95ltztrhttptcodva95ltztr">URL Inception <a href="http://t.co/dVA95ltZtR">http://t.co/dVA95ltZtR</a></h1>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-18T18:08:09-04:00">18 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/portenkirchner/status/600422650310172672">Permalink</a></div></article></li>
     34301: <li id="webmention-34301" class="webmentions__item"><article class="h-cite
       webmention webmention--title-only"><div class="webmention__author p-author h-card"><a
@@ -5123,3 +5123,8 @@ http://www.aaron-gustafson.com/notebook/url-inception/:
       class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/600406847485562881">Chris
       Avila likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-05-18T19:10:16-04:00">18 May 2015</time></div></article></li>
+http://www.aaron-gustafson.com/notebook/links/the-javascript-framework-bangwagonism/:
+  '2015-05-19':
+    https://twitter.com/benriga/status/600696467150352384: |-
+      <li id="webmention-600696467150352384" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/benriga"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/2151132114/2012-Apr-BenRiga-002-457x457_normal.jpg" alt="" title="Ben Riga"><b class="p-name">Ben Riga</b></a></div><div class="webmention__content p-content"><p>The JavaScript Framework Bandwagonism <a href="http://t.co/6l6ypZgdb0">http://t.co/6l6ypZgdb0</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-19T12:16:12-04:00">19 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/benriga/status/600696467150352384">Permalink</a></div></article></li>
