@@ -315,6 +315,9 @@ module Jekyll
             # everything else
             else
               content = @converter.convert("#{content}")
+              if !content.starts_with?('<p>')
+                content.replace(/^<[^>]+>/, '<p>').replace(/<\/[^>]+>$/, '</p>')
+              end
             end
 
             content_block << "<div class=\"webmention__content p-content\">#{content}</div>"

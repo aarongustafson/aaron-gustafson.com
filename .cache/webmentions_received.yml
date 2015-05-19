@@ -1026,7 +1026,7 @@ http://aaron-gustafson.com/notebook/2014/enabling-webmentions-in-jekyll/:
       Ducamp favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2014-11-20T01:30:10-07:00">20 November 2014</time></div></article></li>
     11919: |-
-      <li id="webmention-11919" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://christopheducamp.com/"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/3585902892/c841be488b34741d25cf1d470903c3a4.png" alt="" title="Christophe Ducamp"><b class="p-name">Christophe Ducamp</b></a></div><div class="webmention__content p-content"><h1>indieweb : bricolage à suivre de @AaronGustafson pour activer les #webmentions sur @JekyllRB aaron-gustafson.com/notebook/2014/…</h1>
+      <li id="webmention-11919" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://christopheducamp.com/"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/3585902892/c841be488b34741d25cf1d470903c3a4.png" alt="" title="Christophe Ducamp"><b class="p-name">Christophe Ducamp</b></a></div><div class="webmention__content p-content"><p>indieweb : bricolage à suivre de @AaronGustafson pour activer les #webmentions sur @JekyllRB aaron-gustafson.com/notebook/2014/…</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2014-11-20T01:28:11-07:00">20 November 2014</time> | <a class="webmention__source u-url" href="https://brid-gy.appspot.com/comment/twitter/AaronGustafson/534866325160878080/535348867647021056">Permalink</a></div></article></li>
     11924: <li id="webmention-11924" class="webmentions__item"><article class="h-cite
       webmention webmention--title-only"><div class="webmention__author p-author h-card"><a
@@ -4761,7 +4761,7 @@ http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-29T10:31:08-07:00">29 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/freshfrontend/status/593467565957079040">Permalink</a></div></article></li>
   '2015-04-28':
     https://twitter.com/ka1tmaz/status/593177864893296640: |-
-      <li id="webmention-593177864893296640" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/ka1tmaz"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/549612558747832320/7zlwtsma_normal.jpeg" alt="" title="Peace&deaths ☠"><b class="p-name">Peace&deaths ☠</b></a></div><div class="webmention__content p-content"><h1 id="digest-aaron-gustafson-tips-for-surviving-googles-mobilegeddon">digest Aaron Gustafson: Tips for Surviving Google’s ‘Mobilegeddon’</h1>
+      <li id="webmention-593177864893296640" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/ka1tmaz"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/549612558747832320/7zlwtsma_normal.jpeg" alt="" title="Peace&deaths ☠"><b class="p-name">Peace&deaths ☠</b></a></div><div class="webmention__content p-content"><p id="digest-aaron-gustafson-tips-for-surviving-googles-mobilegeddon">digest Aaron Gustafson: Tips for Surviving Google’s ‘Mobilegeddon’</p>
       <p><a href="http://t.co/208CET86nx">http://t.co/208CET86nx</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-28T15:19:58-07:00">28 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/ka1tmaz/status/593177864893296640">Permalink</a></div></article></li>
   '2015-05-01':
@@ -4800,7 +4800,7 @@ http://www.aaron-gustafson.com/notebook/2014/the-network-effect/:
       ۲. <a href="http://t.co/gRmpOLnKXM">http://t.co/gRmpOLnKXM</a></li>
       </ul>
 
-      <h1 id="wtf">wtf</h1>
+      <p id="wtf">wtf</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-25T02:39:14-04:00">25 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/snhasani/status/591853957691015168">Permalink</a></div></article></li>
 ? http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/?imm_mid=0d0ad1&cmp=em-web-na-na-newsltr_20150422_oreilly_web&utm_content=buffer4df36&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
 : '2015-04-24':
@@ -5088,3 +5088,38 @@ http://www.aaron-gustafson.com/notebook/lessons-learned%20from-atari/:
     https://twitter.com/cssradar/status/597987573211000833: |-
       <li id="webmention-597987573211000833" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/cssradar"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1478202419/cssradar_icon_200_normal.png" alt="" title="Yuya Saito"><b class="p-name">Yuya Saito</b></a></div><div class="webmention__content p-content"><p>Falling in Love with Forms [Microsoft Edge Web Summit 2015] <a href="http://t.co/q591Ggxo7d">http://t.co/q591Ggxo7d</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-12T00:52:02-04:00">12 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/cssradar/status/597987573211000833">Permalink</a></div></article></li>
+? http://www.aaron-gustafson.com/notebook/url-inception/?utm_content=buffer6c1c2&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+: '2015-05-19':
+    https://twitter.com/BrowseEmAll/status/600645110267772929: |-
+      <li id="webmention-600645110267772929" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/BrowseEmAll"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/439422687832592384/BNRlVCLI_normal.png" alt="" title="BrowseEmAll"><b class="p-name">BrowseEmAll</b></a></div><div class="webmention__content p-content"><p>url inception <a href="http://t.co/XytO2cYlPi">http://t.co/XytO2cYlPi</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-19T08:52:08-04:00">19 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/BrowseEmAll/status/600645110267772929">Permalink</a></div></article></li>
+http://www.aaron-gustafson.com/notebook/url-inception/:
+  '2015-05-18':
+    https://twitter.com/portenkirchner/status/600422650310172672: |-
+      <li id="webmention-600422650310172672" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/portenkirchner"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/291829846/dsC02522_normal.jpg" alt="" title="Georg Portenkirchner"><b class="p-name">Georg Portenkirchner</b></a></div><div class="webmention__content p-content"><p>URL Inception <a href="http://t.co/dVA95ltZtR">http://t.co/dVA95ltZtR</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-18T18:08:09-04:00">18 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/portenkirchner/status/600422650310172672">Permalink</a></div></article></li>
+    34301: <li id="webmention-34301" class="webmentions__item"><article class="h-cite
+      webmention webmention--title-only"><div class="webmention__author p-author h-card"><a
+      class="u-url" href="https://portenkirchner.withknown.com/profile/portenkirchner"><img
+      class="webmention__author__photo u-photo" src="https://portenkirchner.withknown.com/file/3433409f8d652ed58539dcbab4562912/thumb.jpg"
+      alt="" title="Georg Portenkirchner"><b class="p-name">Georg Portenkirchner</b></a></div>
+      <div class="webmention__title p-name"><a href="https://portenkirchner.withknown.com/2015/url-inception--gustafsoncomnotebookurl-inception">#URL
+      Inception http://www.aaron-gustafson.com/notebook/url-inception/</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-18T18:08:16-04:00">18
+      May 2015</time></div></article></li>
+    '600417827678388226': <li id="webmention-600417827678388226" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/christophavila"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/christophavila/profile_image?size=original"
+      alt="" title="Chris Avila"><b class="p-name">Chris Avila</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/christophavila/status/600417827678388226">Chris
+      Avila reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-05-18T17:48:59-04:00">18 May 2015</time></div></article></li>
+    '600406847485562881': <li id="webmention-600406847485562881" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/christophavila"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/christophavila/profile_image?size=original"
+      alt="" title="Chris Avila"><b class="p-name">Chris Avila</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/600406847485562881">Chris
+      Avila likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-05-18T19:10:16-04:00">18 May 2015</time></div></article></li>
