@@ -108,7 +108,7 @@ task :get_twitter_webmentions do |t, args|
       content = content.gsub(/(http[^\s]+)/, '[\1](\1)')
       content = Kramdown::Document.new(content).to_html
       if !content.start_with?('<p')
-        content = content.replace(/^<[^>]+>/, '<p>').replace(/<\/[^>]+>$/, '</p>')
+        content = content.sub(/^<[^>]+>/, '<p>').sub(/<\/[^>]+>$/, '</p>')
       end
       content_block = "<div class=\"webmention__content p-content\">#{content}</div>"
 
