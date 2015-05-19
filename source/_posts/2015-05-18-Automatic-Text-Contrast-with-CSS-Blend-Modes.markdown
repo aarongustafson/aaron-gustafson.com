@@ -1,4 +1,4 @@
-1. ---
+---
 layout: link
 title: "Automatic Text Contrast with CSS Blend Modes"
 date: 2015-05-18 16:24:45 -0400
