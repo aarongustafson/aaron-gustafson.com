@@ -43,7 +43,7 @@ task :get_twitter_webmentions do |t, args|
   	end
 
   	if ! target
-  		continue
+  		next
   	end
   	# puts target
 
