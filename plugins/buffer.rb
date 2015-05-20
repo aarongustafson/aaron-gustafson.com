@@ -82,7 +82,7 @@ module Jekyll
             excerpt = post.data['description'] || post.excerpt
 
             payload = {
-              'shorten' => false,
+              'shorten' => 'false',
               'text' => "#{excerpt} #{url}",
               'access_token' => access_token,
               'profile_ids[]' => []
