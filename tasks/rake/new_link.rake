@@ -38,7 +38,7 @@ task :new_link, :url do |t, args|
   end
   raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
   mkdir_p "#{source_dir}/#{posts_dir}"
-  if URI(url).path != '/'
+  if !URI(url).path.empty? and URI(url).path != '/'
     slug = URI(url).path.split('/').last.split('.').first
   else
     slug = URI(url).host.split('.').first
