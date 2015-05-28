@@ -7,9 +7,9 @@ categories: [presentations,"HTML forms"]
 description: "I just came off stage from my talk at the Microsoft Edge Web Summit and I wanted to share the deck with you. The talk was live-streamed, but I will post a video link as soon as it is up."
 ---
 
-I just came off stage from my talk at the [Microsoft Edge Web Summit](https://channel9.msdn.com/Events/WebPlatformSummit/2015) and I wanted to share [the deck](#figure-2015-05-05-01) with you. The talk was live-streamed, but I will post a video link as soon as it is up.
+I just came off stage from my talk at the [Microsoft Edge Web Summit](https://channel9.msdn.com/Events/WebPlatformSummit/2015) and I wanted to share [the deck](/notebook/slides-from-my-talk-at-number-msedgesummit/#figure-2015-05-05-01) with you. The talk was live-streamed, but I will post a video link as soon as it is up.
 
-**Update:** [The video is now online](https://channel9.msdn.com/Events/WebPlatformSummit/2015/Falling-in-love-with-forms). You can also [view it below](#figure-2015-05-05-02).
+**Update:** [The video is now online](https://channel9.msdn.com/Events/WebPlatformSummit/2015/Falling-in-love-with-forms). You can also [view it below](/notebook/slides-from-my-talk-at-number-msedgesummit/#figure-2015-05-05-02).
 
 <!-- more -->
 

@@ -54,7 +54,7 @@ Here’s an example from [my Beyond Responsive workshop](https://www.facebook.co
 
 <figure id="fig-2015-05-28-04" class="media-container">{% adaptive_image /i/posts/2015-05-28/04.png %}<figcaption>Pass 2: Add a live width test into the mix to see if there’s enough room for the tabs and make it an accordion if the screen is too narrow.</figcaption></figure>
 
-<figure id="fig-2015-05-28-05" class="media-container">{% adaptive_image /i/posts/2015-05-28/05.png %}<figcaption>Pass 3: Test for native `details`/`summary` support and use the native functionality if available.</figcaption></figure>
+<figure id="fig-2015-05-28-05" class="media-container">{% adaptive_image /i/posts/2015-05-28/05.png %}<figcaption>Pass 3: Test for native <code>details</code>/<code>summary</code> support and use the native functionality if available.</figcaption></figure>
 
 ## Simple, Powerful
 
