@@ -4546,6 +4546,10 @@ http://www.aaron-gustafson.com/notebook/how-to-apply-progressive-enhancement-whe
       class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/583699922274361344">Jack
       Preston likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-04-04T05:19:08-06:00">4 April 2015</time></div></article></li>
+  '2015-05-28':
+    https://twitter.com/DanHousch/status/603997123932258304: |-
+      <li id="webmention-603997123932258304" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/DanHousch"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/591211961532215296/NcfKY4yD_normal.jpg" alt="" title="Dan Housch"><b class="p-name">Dan Housch</b></a></div><div class="webmention__content p-content"><p>On using progressive enhancement via old web solutions (without JavaScript) @AaronGustafson <a href="http://t.co/aM09XSo3ky">http://t.co/aM09XSo3ky</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-28T14:51:50-04:00">28 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/DanHousch/status/603997123932258304">Permalink</a></div></article></li>
 http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/:
   '2015-04-22':
     '590709114453549057': <li id="webmention-590709114453549057" class="webmentions__item"><article
@@ -5181,3 +5185,80 @@ http://www.aaron-gustafson.com/notebook/links/the-javascript-framework-bangwagon
     https://twitter.com/benriga/status/600696467150352384: |-
       <li id="webmention-600696467150352384" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/benriga"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/2151132114/2012-Apr-BenRiga-002-457x457_normal.jpg" alt="" title="Ben Riga"><b class="p-name">Ben Riga</b></a></div><div class="webmention__content p-content"><p>The JavaScript Framework Bandwagonism <a href="http://t.co/6l6ypZgdb0">http://t.co/6l6ypZgdb0</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-19T12:16:12-04:00">19 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/benriga/status/600696467150352384">Permalink</a></div></article></li>
+http://www.aaron-gustafson.com/notebook/interface-experience-maps/:
+  '2015-05-29':
+    https://twitter.com/noahblon/status/604271182913892352: |-
+      <li id="webmention-604271182913892352" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/noahblon"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/378800000424843799/a687e4dd912a15b29ff7f8acb59357a7_normal.png" alt="" title="Noah Blon"><b class="p-name">Noah Blon</b></a></div><div class="webmention__content p-content"><p>“Interface Experience Maps”  : progressive enhancement deliverables. Cool idea to organize thought and back up work.
+      <a href="http://t.co/D3mFynJdn0">http://t.co/D3mFynJdn0</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-29T09:00:51-04:00">29 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/noahblon/status/604271182913892352">Permalink</a></div></article></li>
+    https://twitter.com/openwebdaily/status/604226959938211840: |-
+      <li id="webmention-604226959938211840" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/openwebdaily"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/451363348303450112/Oyv2D11s_normal.png" alt="" title="Web Platform Daily"><b class="p-name">Web Platform Daily</b></a></div><div class="webmention__content p-content"><p>Articulating progressive enhancement with “interface experience maps” <a href="http://t.co/wz2dIK5g5c">http://t.co/wz2dIK5g5c</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-29T06:05:07-04:00">29 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/openwebdaily/status/604226959938211840">Permalink</a></div></article></li>
+    '604107145899053060': <li id="webmention-604107145899053060" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/emerysj"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/emerysj/profile_image?size=original"
+      alt="" title="Simon Emery"><b class="p-name">Simon Emery</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/604107145899053060">Simon
+      Emery likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-05-29T02:55:12-04:00">29 May 2015</time></div></article></li>
+    '604200683974320129': <li id="webmention-604200683974320129" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.joelanman.com/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/joelanman/profile_image?size=original"
+      alt="" title="Joe Lanman"><b class="p-name">Joe Lanman</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/joelanman/status/604200683974320129">Joe
+      Lanman reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-05-29T04:20:43-04:00">29 May 2015</time></div></article></li>
+    '604216963108311040': <li id="webmention-604216963108311040" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://ghost.alan-tyla.co.uk/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/alantyla/profile_image?size=original"
+      alt="" title="Alan Tyla"><b class="p-name">Alan Tyla</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/alantyla/status/604216963108311040">Alan
+      Tyla reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-05-29T05:25:24-04:00">29 May 2015</time></div></article></li>
+  '2015-05-28':
+    https://twitter.com/AaronGustafson/status/604107145899053060: |-
+      <li id="webmention-604107145899053060" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/601300978479013888/YzU4UlYz_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Interface Experience Maps <a href="http://t.co/zxr79P54QL">http://t.co/zxr79P54QL</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-28T22:09:02-04:00">28 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/604107145899053060">Permalink</a></div></article></li>
+    https://twitter.com/PageRankSEO/status/604073105510797312: |-
+      <li id="webmention-604073105510797312" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/PageRankSEO"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1764160130/PageRankSEO-SOPA_normal.jpg" alt="" title="Robert Visser"><b class="p-name">Robert Visser</b></a></div><div class="webmention__content p-content"><p>Interface Experience Maps /by @AaronGustafson <a href="http://t.co/fAbYcJPDVD">http://t.co/fAbYcJPDVD</a> #progressive_enhancement #ux</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-28T19:53:46-04:00">28 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/PageRankSEO/status/604073105510797312">Permalink</a></div></article></li>
+    https://twitter.com/clintioo/status/604041068804456448: |-
+      <li id="webmention-604041068804456448" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/clintioo"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/536287037905596416/rxPYjSY8_normal.jpeg" alt="" title="Clint Brown"><b class="p-name">Clint Brown</b></a></div><div class="webmention__content p-content"><p>This is handy - using interface experience maps to show the progressive enhancement flow <a href="http://t.co/Dn37C7731A">http://t.co/Dn37C7731A</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-28T17:46:28-04:00">28 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/clintioo/status/604041068804456448">Permalink</a></div></article></li>
+    https://twitter.com/grigs/status/604034036676173824: |-
+      <li id="webmention-604034036676173824" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/grigs"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/478672550969348096/AOKArwPW_normal.jpeg" alt="" title="Jason Grigsby, ☁4"><b class="p-name">Jason Grigsby, ☁4</b></a></div><div class="webmention__content p-content"><p>Interface Experience Maps by @AaronGustafson <a href="http://t.co/KDpQgUcp0X">http://t.co/KDpQgUcp0X</a></p>
+
+      <p>I’m interested in trying this on some projects.</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-28T17:18:31-04:00">28 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/grigs/status/604034036676173824">Permalink</a></div></article></li>
+    '604107145899053060': <li id="webmention-604107145899053060" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/bryandavidk"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/bryandavidk/profile_image?size=original"
+      alt="" title="Bryan Kearney"><b class="p-name">Bryan Kearney</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/604107145899053060">Bryan
+      Kearney likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-05-28T22:15:11-04:00">28 May 2015</time></div></article></li>
+    '604107782384664576': <li id="webmention-604107782384664576" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://8hrs.net/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/vanadium/profile_image?size=original"
+      alt="" title="Gary DuVall"><b class="p-name">Gary DuVall</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/vanadium/status/604107782384664576">Gary
+      DuVall reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-05-28T22:11:33-04:00">28 May 2015</time></div></article></li>
+    '604114341848162304': <li id="webmention-604114341848162304" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.tyrick.com/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/tyrickc/profile_image?size=original"
+      alt="" title="Tyrick Christian"><b class="p-name">Tyrick Christian</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/tyrickc/status/604114341848162304">Tyrick
+      Christian reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-05-28T22:37:37-04:00">28 May 2015</time></div></article></li>
+? http://www.aaron-gustafson.com/notebook/interface-experience-maps/?utm_content=bufferc9ace&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+: '2015-05-29':
+    https://twitter.com/tomstardust/status/604226686104813568: |-
+      <li id="webmention-604226686104813568" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/tomstardust"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/229429779/avatar_eye_normal.jpg" alt="" title="Tommaso Baldovino"><b class="p-name">Tommaso Baldovino</b></a></div><div class="webmention__content p-content"><p>Interface Experience Maps: <a href="http://t.co/SZibOj7tFe">http://t.co/SZibOj7tFe</a> How to plan progressive enhancement. #javascript</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-29T06:04:02-04:00">29 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/tomstardust/status/604226686104813568">Permalink</a></div></article></li>
