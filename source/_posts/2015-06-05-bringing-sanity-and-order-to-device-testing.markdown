@@ -54,7 +54,7 @@ What makes progressive enhancement so helpful when it comes to dealing with this
 
 In order to ensure we don’t accidentally deliver advanced features to less capable browsers like these, we just need to be smart about how we load stuff like CSS and JavaScript.
 
-Some basic CSS—think typography, color, etc.—will be usable by just about anyone, so we can put all that stuff in one CSS file (e.g. `basic.css`) and include it with a standard `link`. Then we can tuck all of our layout rules and other advanced CSS into a separate CSS file (e.g. `advanced.css`) that we link to with an associated media query.
+Some basic CSS—think typography, color, etc.—will be usable by just about anyone, so we can put all that stuff in one CSS file (e.g., `basic.css`) and include it with a standard `link`. Then we can tuck all of our layout rules and other advanced CSS into a separate CSS file (e.g., `advanced.css`) that we link to with an associated media query.
 
 {% gist 166b285a4fe3d854b97b css-linking.html %}
 
@@ -110,7 +110,7 @@ It’s important to bear in mind that we will never be able to give each user on
 
 If we really want to make things easy on ourselves (and our team), we should consider building a [pattern library](http://alistapart.com/blog/post/getting-started-with-pattern-libraries) before we build a single page of our website.
 
-Breaking our interfaces down into discrete, repeatable patterns (e.g. a label and form control, a tabbed interface, etc.) lets us look at each in isolation and test it that way too. Testing in isolation is far easier than trying to debug a page with a lot of moving parts.
+Breaking our interfaces down into discrete, repeatable patterns (e.g., a label and form control, a tabbed interface, etc.) lets us look at each in isolation and test it that way too. Testing in isolation is far easier than trying to debug a page with a lot of moving parts.
 
 Gathering our patterns into a live, web-based pattern library  allows anyone on our team to collect the patterns they need to build a given interface as easily as they’d assemble a plate at a smörgåsbord. And if we really want to streamline the building and testing process, we can even [make the patterns importable into the live site](http://ianfeather.co.uk/a-maintainable-style-guide/) so everything stays in sync.
 
