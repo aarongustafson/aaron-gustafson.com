@@ -3697,6 +3697,10 @@ http://www.aaron-gustafson.com/notebook/who-should-pay/:
     '594249514048888832': |-
       <li id="webmention-594249514048888832" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://github.com/potch"><img class="webmention__author__photo u-photo" src="https://twitter.com/potch/profile_image?size=original" alt="" title="potch"><b class="p-name">potch</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> <a href="https://twitter.com/SaraSoueidan" rel="nofollow">@SaraSoueidan</a> Not to excusing either- both tempt laziness&hellip;</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-01T17:18:19-04:00">1 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/potch/status/594249514048888832">Permalink</a></div></article></li>
+  '2015-06-03':
+    https://twitter.com/bryanburgers/status/606098036998217728: |-
+      <li id="webmention-606098036998217728" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/bryanburgers"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/378800000022137768/64d0699c0f83008177a71b79795c27e1_normal.png" alt="" title="Bryan Burgers"><b class="p-name">Bryan Burgers</b></a></div><div class="webmention__content p-content"><p>“Our users should never foot the bill for our convenience. We need to put their needs above our own.” <a href="http://t.co/vVYsUxs42H">http://t.co/vVYsUxs42H</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-03T10:00:07-04:00">3 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/bryanburgers/status/606098036998217728">Permalink</a></div></article></li>
 http://aaron-gustafson.com/notebook/consider-how-your-forms-read/:
   '2015-02-23':
     '569921701347241985': <li id="webmention-569921701347241985" class="webmentions__item"><article
@@ -4780,6 +4784,14 @@ http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/
     https://twitter.com/portz/status/594092188402749441: |-
       <li id="webmention-594092188402749441" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/portz"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/464935055576399872/D6Xzvuyp_normal.jpeg" alt="" title="James Portz"><b class="p-name">James Portz</b></a></div><div class="webmention__content p-content"><p>Tips to survive the Google mobile search bias  <a href="http://t.co/sVnQqqHvDD">http://t.co/sVnQqqHvDD</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-01T03:53:10-07:00">1 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/portz/status/594092188402749441">Permalink</a></div></article></li>
+  '2015-05-31': {}
+  '2015-06-02':
+    43041: <li id="webmention-43041" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://blog.adrianroselli.com/2015/04/on-mis-named-mobilegeddon.html">On
+      the Mis-Named Mobilegeddon | Adrian Roselli</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-06-02T17:15:10-04:00">2
+      June 2015</time></div></article></li>
 ? http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/?imm_mid=0d0abb&cmp=em-web-na-na-newsltr_20150422_oreilly_media
 : '2015-04-23':
     https://twitter.com/LenAtLambton/status/591269202666872833: |-
@@ -5218,6 +5230,12 @@ http://www.aaron-gustafson.com/notebook/interface-experience-maps/:
       p-name"><a href="https://twitter.com/alantyla/status/604216963108311040">Alan
       Tyla reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-05-29T05:25:24-04:00">29 May 2015</time></div></article></li>
+    https://twitter.com/ahmedAlamiFr/status/604382580687810561: |-
+      <li id="webmention-604382580687810561" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/ahmedAlamiFr"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/378800000249989626/528f907d8accde04a968ffa37f0321c2_normal.jpeg" alt="" title="Ahmed ALAMI"><b class="p-name">Ahmed ALAMI</b></a></div><div class="webmention__content p-content"><p>Interface Experience Maps, From the Notebook of Aaron Gustafson #javascript <a href="http://t.co/StgmXIHhZH">http://t.co/StgmXIHhZH</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-29T16:23:30-04:00">29 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/ahmedAlamiFr/status/604382580687810561">Permalink</a></div></article></li>
+    https://twitter.com/inkpixelspaper/status/604329261709836289: |-
+      <li id="webmention-604329261709836289" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/inkpixelspaper"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/603224586608627712/1TfJj_zU_normal.jpg" alt="" title="★ jen strickland ★"><b class="p-name">★ jen strickland ★</b></a></div><div class="webmention__content p-content"><p>How to plan/communicate progressive enhancement, by @AaronGustafson -  <a href="http://t.co/pB2u8UchBi">http://t.co/pB2u8UchBi</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-29T12:51:38-04:00">29 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/inkpixelspaper/status/604329261709836289">Permalink</a></div></article></li>
   '2015-05-28':
     https://twitter.com/AaronGustafson/status/604107145899053060: |-
       <li id="webmention-604107145899053060" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/601300978479013888/YzU4UlYz_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Interface Experience Maps <a href="http://t.co/zxr79P54QL">http://t.co/zxr79P54QL</a></p>
@@ -5257,8 +5275,192 @@ http://www.aaron-gustafson.com/notebook/interface-experience-maps/:
       <div class="webmention__title p-name"><a href="https://twitter.com/tyrickc/status/604114341848162304">Tyrick
       Christian reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-05-28T22:37:37-04:00">28 May 2015</time></div></article></li>
+  '2015-06-04':
+    https://twitter.com/vasilis/status/606643729282297856: |-
+      <li id="webmention-606643729282297856" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/vasilis"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/180609810/work-kills_normal.jpg" alt="" title="Vasilis"><b class="p-name">Vasilis</b></a></div><div class="webmention__content p-content"><p>Interface Experience Maps, From the Notebook of Aaron Gustafson — <a href="http://t.co/5voN7Lveqs">http://t.co/5voN7Lveqs</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-04T22:08:30-04:00">4 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/vasilis/status/606643729282297856">Permalink</a></div></article></li>
+    https://twitter.com/cssradar/status/606618188479139840: |-
+      <li id="webmention-606618188479139840" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/cssradar"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1478202419/cssradar_icon_200_normal.png" alt="" title="Yuya Saito"><b class="p-name">Yuya Saito</b></a></div><div class="webmention__content p-content"><p>Interface Experience Maps <a href="http://t.co/7CmETP4zfo">http://t.co/7CmETP4zfo</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-04T20:27:01-04:00">4 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/cssradar/status/606618188479139840">Permalink</a></div></article></li>
+    https://twitter.com/inautilo/status/606314173308485632: |-
+      <li id="webmention-606314173308485632" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/inautilo"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/480440384741318657/-E7N7skr_normal.png" alt="" title="Inautilo"><b class="p-name">Inautilo</b></a></div><div class="webmention__content p-content"><p>Interface Experience Maps · Descriptions of the progressive enhancement flow <a href="http://t.co/Hvw9bGvTpa">http://t.co/Hvw9bGvTpa</a> #tech #approach</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-04T00:18:58-04:00">4 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/inautilo/status/606314173308485632">Permalink</a></div></article></li>
+  '2015-06-03':
+    https://twitter.com/adactioLinks/status/606211105862623232: |-
+      <li id="webmention-606211105862623232" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/adactioLinks"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/491494058292809728/oGSxtt0o_normal.jpeg" alt="" title="Adactio Links"><b class="p-name">Adactio Links</b></a></div><div class="webmention__content p-content"><p>Interface Experience Maps, From the Notebook of Aaron Gustafson <a href="http://t.co/z1hzo4Ae5s">http://t.co/z1hzo4Ae5s</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-03T17:29:25-04:00">3 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/adactioLinks/status/606211105862623232">Permalink</a></div></article></li>
+    44030: <li id="webmention-44030" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="https://adactio.com/links/9053">Interface Experience Maps,
+      From the Notebook of Aaron Gustafson</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-06-03T18:13:01-04:00">3
+      June 2015</time></div></article></li>
+  '2015-06-02':
+    https://twitter.com/dscamahorn/status/605854039100637186: |-
+      <li id="webmention-605854039100637186" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/dscamahorn"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/586715181650063360/T9OHbj62_normal.png" alt="" title="Doug Scamahorn"><b class="p-name">Doug Scamahorn</b></a></div><div class="webmention__content p-content"><p>Interface Experience Maps, via @AaronGustafson <a href="http://t.co/OpUdZ1qajq">http://t.co/OpUdZ1qajq</a> - Sounds cool given the JS Dependency Backlash <a href="http://t.co/PzmA84EAkG">http://t.co/PzmA84EAkG</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-02T17:50:33-04:00">2 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/dscamahorn/status/605854039100637186">Permalink</a></div></article></li>
+  '2015-06-01':
+    https://twitter.com/AMStrategy/status/605358881158635520: |-
+      <li id="webmention-605358881158635520" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AMStrategy"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/585439256539226112/lKOY_lGJ_normal.png" alt="" title="AMS"><b class="p-name">AMS</b></a></div><div class="webmention__content p-content"><p>.@AaronGustafson has a piece on mapping how the user experience differs across different users: <a href="http://t.co/D2jInPyZhB">http://t.co/D2jInPyZhB</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-01T09:02:58-04:00">1 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AMStrategy/status/605358881158635520">Permalink</a></div></article></li>
+    '604107145899053060': <li id="webmention-604107145899053060" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/SirEngelbrecht"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/SirEngelbrecht/profile_image?size=original"
+      alt="" title="Paula Engelbrecht"><b class="p-name">Paula Engelbrecht</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/604107145899053060">Paula
+      Engelbrecht likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-01T10:18:53-04:00">1 June 2015</time></div></article></li>
+    '605376131978657795': <li id="webmention-605376131978657795" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://chriswrightdesign.com/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/cwrightdesign/profile_image?size=original"
+      alt="" title="Chris Wright"><b class="p-name">Chris Wright</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/cwrightdesign/status/605376131978657795">Chris
+      Wright reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-01T10:11:31-04:00">1 June 2015</time></div></article></li>
+    '605375049042903040': <li id="webmention-605375049042903040" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://rosenfeldmedia.com/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/RosenfeldMedia/profile_image?size=original"
+      alt="" title="Rosenfeld Media"><b class="p-name">Rosenfeld Media</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/RosenfeldMedia/status/605375049042903040">Rosenfeld
+      Media reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-01T10:07:13-04:00">1 June 2015</time></div></article></li>
+    42289: <li id="webmention-42289" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://profiles.google.com/114207754492667012043"><img
+      class="webmention__author__photo u-photo" src="https://lh3.googleusercontent.com/-nI4WHmZRrvQ/AAAAAAAAAAI/AAAAAAAAAAA/d1-goHvNP9I/photo.jpg?sz=50"
+      alt="" title="Derek Pennycuff"><b class="p-name">Derek Pennycuff</b></a></div>
+      <div class="webmention__title p-name"><a href="https://plus.google.com/+AaronGustafson/posts/gx51idrXB2q">Derek
+      Pennycuff likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-01T11:53:41-04:00">1 June 2015</time></div></article></li>
 ? http://www.aaron-gustafson.com/notebook/interface-experience-maps/?utm_content=bufferc9ace&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
 : '2015-05-29':
     https://twitter.com/tomstardust/status/604226686104813568: |-
       <li id="webmention-604226686104813568" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/tomstardust"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/229429779/avatar_eye_normal.jpg" alt="" title="Tommaso Baldovino"><b class="p-name">Tommaso Baldovino</b></a></div><div class="webmention__content p-content"><p>Interface Experience Maps: <a href="http://t.co/SZibOj7tFe">http://t.co/SZibOj7tFe</a> How to plan progressive enhancement. #javascript</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-29T06:04:02-04:00">29 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/tomstardust/status/604226686104813568">Permalink</a></div></article></li>
+? http://www.aaron-gustafson.com/notebook/css-variables-are-a-bad-idea/?utm_content=bufferee3fd&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+: '2015-06-02':
+    https://twitter.com/chsweb/status/605766592832487424: |-
+      <li id="webmention-605766592832487424" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/chsweb"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/504428640407273472/chtrcGR0_normal.jpeg" alt="" title="Jono Young"><b class="p-name">Jono Young</b></a></div><div class="webmention__content p-content"><p>“I’ll level with you: I used to think I wanted variables in #CSS.” <a href="http://t.co/rO0fPT1ywZ">http://t.co/rO0fPT1ywZ</a> #rwd</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-02T12:03:04-04:00">2 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/chsweb/status/605766592832487424">Permalink</a></div></article></li>
+? http://www.aaron-gustafson.com/notebook/how-to-apply-progressive-enhancement-when-javascript-seems-like-a-requirement/?utm_content=buffere7fe8&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+: '2015-06-01':
+    https://twitter.com/lucirebecca/status/605414506165059584: |-
+      <li id="webmention-605414506165059584" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/lucirebecca"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/590884277752991744/znToJCdX_normal.png" alt="" title="Luci Rebecca"><b class="p-name">Luci Rebecca</b></a></div><div class="webmention__content p-content"><p>How to Apply Progressive Enhancement When JavaScript Seems Like a Requirement… <a href="http://t.co/psaOo30a1U">http://t.co/psaOo30a1U</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-01T12:44:00-04:00">1 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/lucirebecca/status/605414506165059584">Permalink</a></div></article></li>
+? http://www.aaron-gustafson.com/notebook/aria-quicktip-labelledby-vs-describedby/?utm_content=bufferf8cc8&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+: '2015-06-01':
+    https://twitter.com/lucirebecca/status/605359681612197888: |-
+      <li id="webmention-605359681612197888" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/lucirebecca"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/590884277752991744/znToJCdX_normal.png" alt="" title="Luci Rebecca"><b class="p-name">Luci Rebecca</b></a></div><div class="webmention__content p-content"><p>ARIA Quicktip: Labelledby vs. Describedby, From the Notebook of Aaron Gustafson <a href="http://t.co/SQFP9mCoBJ">http://t.co/SQFP9mCoBJ</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-01T09:06:09-04:00">1 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/lucirebecca/status/605359681612197888">Permalink</a></div></article></li>
+? http://www.aaron-gustafson.com/notebook/interface-experience-maps/?utm_content=buffer56927&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+: '2015-06-01':
+    https://twitter.com/usabilityed/status/605266558726860800: |-
+      <li id="webmention-605266558726860800" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/usabilityed"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/527154342378209280/CDwTfx8U_normal.jpeg" alt="" title="Neil Allison"><b class="p-name">Neil Allison</b></a></div><div class="webmention__content p-content"><p>Interface Experience Maps - interesting concept by @AaronGustafson <a href="http://t.co/VTfgQBsugT">http://t.co/VTfgQBsugT</a> Might be of use @stratosf1</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-01T02:56:07-04:00">1 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/usabilityed/status/605266558726860800">Permalink</a></div></article></li>
+? http://www.aaron-gustafson.com/notebook/interface-experience-maps/?utm_content=buffer1f530&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
+: '2015-05-29':
+    https://twitter.com/dalmaer/status/604477176662982656: |-
+      <li id="webmention-604477176662982656" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/dalmaer"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/3380865881/f73b3687ff39b795db05fcaf35972270_normal.jpeg" alt="" title="Dion Almaer"><b class="p-name">Dion Almaer</b></a></div><div class="webmention__content p-content"><p>“t can be incredibly challenging to articulate how a single interface might adapt to a wide variety of situation” <a href="http://t.co/eBg0UAE8Rt">http://t.co/eBg0UAE8Rt</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-29T22:39:24-04:00">29 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/dalmaer/status/604477176662982656">Permalink</a></div></article></li>
+http://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/:
+  '2014-09-26':
+    25737: '<li id="webmention-25737" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://timkadlec.com/2014/09/js-parse-and-execution-time/">—
+      September 26, 2014 — JS Parse and Execution Time At Velocity NY, Daniel Espeset
+      of Etsy gave a great talk about how Etsy profiles their JavaScript parse and
+      execution time. Even better, after the talk, they released the tool on GitHub.
+      Daniel shared a few examples in his deck, but I couldn’t wait to take Daniel’s
+      tool and fire it up on a bunch of random browsers and devices that I have sitting
+      around. For this test, I decided to profile just jQuery 2.1.1, which weighs
+      in at 88kb when minimized. jQuery was selected for its popularity, not because
+      it’s the worst offender. There are many libraries much worse (hey there Angular
+      and your 120kb payload). The results above are based on the median times taken
+      from 20 tests per browser/device combination. The list of tested devices isn’t
+      exhaustive by any means—I just took some of the ones I have sitting around to
+      try and get a picture of how much parse and execution time would vary. Parse
+      and execution times of minimized jQuery 2.1.1 Device Browser Median Parse Median
+      Execution Median Total Blackberry 9650 Default, BB6 171ms 554ms 725ms UMX U670C
+      Android 2.3.6 Browser 168ms 484ms 652ms Galaxy S3 Chrome 32 39ms 297ms 336ms
+      Galaxy S3 UC 8.6 45ms 215ms 260ms Galaxy S3 Dolphin 10 2ms 222ms 224ms Kindle
+      Touch Kindle 3.0+ 63ms 132ms 195ms Geeksphone Peak Firefox 25 51ms 109ms 160ms
+      Kindle Fire Silk 3.17 16ms 139ms 155ms Lumia 520 IE10 97ms 56ms 153ms Nexus
+      4 Chrome 36 13ms 122ms 135ms Galaxy S3 Android 4.1.1 Browser 3ms 125ms 128ms
+      Kindle Paperwhite Kindle 3.0+ 43ms 71ms 114ms Lumia 920 IE10 70ms 37ms 107ms
+      Droid X Android 2.3.4 Browser 6ms 96ms 102ms Nexus 5 Chrome 37 11ms 81ms 92ms
+      iPod Touch iOS 6 26ms 37ms 63ms Nexus 5 Firefox 32 20ms 41ms 61ms Asus X202E
+      IE10 31ms 14ms 45ms iPad Mini iOS6 16ms 30ms 46ms Macbook Air (2014) Chrome
+      37 5ms 29ms 34ms Macbook Air (2014) Opera 9.8 14ms 5ms 19ms iPhone 5s iOS 7
+      2ms 16ms 18ms Macbook Air (2014) Firefox 31 4ms 10ms 14ms iPad (4th Gen) iOS
+      7 1ms 13ms 14ms iPhone 5s Chrome 37 2ms 8ms 10ms Macbook Air (2014) Safari 7
+      1ms 4ms 5ms As you can see from the table above, even in this small sample size
+      the parsing and execution times varied dramatically from device to device and
+      browser to browser. On powerful devices, like my Macbook Air (2014), parse and
+      execution time was negligible. Powerful mobile devices like the iPhone 5s also
+      fared very well. But as soon as you moved away from the latest and greatest
+      top-end devices, the ugly truth of JS parse and execution time started to rear
+      its head. On a Blackberry 9650 (running BB6), the combined time to parse and
+      execute jQuery was a whopping 725ms. My UMX running Android 2.3.6 took 652ms.
+      Before you laugh off this little device running the 2.3.6 browser, it’s worth
+      mentioning I bought this a month ago, brand new. It’s a device actively being
+      sold by a few prepaid networks. Another interesting note was how significant
+      the impact of hardware has on the timing. The Lumia 520, despite running the
+      same browser as the 920, had a median parse and execution time that was 46%
+      slower than the 920. The Kindle Touch, despite running the same browser as the
+      Paperwhite, was 71% slower than it’s more powerful replacement. How powerful
+      the device was, not just the browser, had a large impact. This is notable because
+      we’re seeing companies such as Mozilla and Google targeting emerging markets
+      with affordable, low-powered devices that otherwise run modern browsers. Those
+      markets are going to dominate internet growth over the next few years, and affordability
+      is a more necessary feature than a souped up device. In addition, as the cost
+      of technology cheapens, we’re going to continue seeing an incredibly diverse
+      set of connected devices. With endless new form factors being released (even
+      the Android Wear watches quickly got a Chromium based browser), the adage about
+      not knowing where our sites will end up has never been more true. The truly
+      frightening thing about these parse and execution times is that this is for
+      the latest version of jQuery, and only the latest version of jQuery. No older
+      versions. No additional plugins or frameworks. According to the latest run of
+      HTTP Archive, the median JS transfer size is 230kb and this test includes just
+      a fraction of that size. I’m not even asking jQuery to actually do anything.
+      Basically, I’m lobbing the browsers a softball here—these are best case results.
+      This re-affirms what many have been arguing for some time: reducing your dependency
+      on JS is not healthy merely for the minor percentage of people who have JS disabled—it
+      improves the experience for everyone. When anything over 100ms stops feeling
+      instantaneous and anything over 1000ms breaks the users flow, taking 700ms to
+      parse your JavaScript cripples the user experience before it really has a chance
+      to get started. So what’s a web developer to do? Use less JavaScript. This is
+      the simple one. Anything you can offload onto HTML or CSS, do it. JavaScript
+      is fun and awesome but it’s also the most brittle layer of the web stack and,
+      as we’ve seen, can seriously impact performance. Render on the server If you’re
+      using a client-side MVC framework, make sure you pre-render on the server. If
+      you build a client-side MVC framework and you’re not ensuring those templates
+      can easily be rendered on the server as well, you’re being irresponsible. That’s
+      a bug. A bug that impacts performance, stability and reach. Defer all the scripts.
+      Defer every bit of JavaScript that you can. Get it out of the critical path.
+      When it makes sense, take steps to defer the parsing as well. Google had a great
+      post a few years back about how they reduced startup latency for Gmail. One
+      of the things they did was initially comment out blocks of JavaScript so that
+      it wouldn’t be parsed during page load. The result was a 10x reduction in startup
+      latency. That number is probably different on today’s devices, but the approach
+      still stands. Cut the mustard. I’m a big fan of “cutting the mustard”, an approach
+      made popular by the BBC. This doesn’t solve the problem of low-end devices with
+      modern browsers, but it will make a better experience for people using less
+      capable browsers. Better yet, by consciously deciding not to overwhelm less
+      capable browsers with excess scripts you not only provide a better experience
+      for those users, but you reduce the need for extra polyfills and frameworks
+      for modern browsers as well. On one recent project where we did this, the entire
+      JavaScript for the site was about 43% of the size of jQuery alone! There are
+      certainly cases to be made for JS libraries, client-side MVC frameworks, and
+      the like, but providing a quality, performant experience across a variety of
+      devices and browsers requires that we take special care to ensure that the initial
+      rendering is not reliant on them. Frameworks and libraries should be carefully
+      considered additions, not the default. When you consider the combination of
+      weight, parse time and execution time, it becomes pretty clear that optimizing
+      your JS and reducing your site’s reliance on it is one of the most impactful
+      optimizations you can make. # javascript, performance Please enable JavaScript
+      to view the comments powered by Disqus.</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2014-09-26T10:06:00-04:00">26
+      September 2014</time></div></article></li>'
