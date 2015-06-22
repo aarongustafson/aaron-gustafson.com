@@ -125,7 +125,7 @@ These skills will make us invaluable as technology continues to offer novel ways
 We’re just starting to dip or toes—er, hands—into the world of motion-based gestural controls. Sure, we’ve had them in two dimensions on touch screens for a while now but three dimensional motion-based controls are only beginning to appear.
 
 <figure class="video-embed video-embed--16x9" id="figure-2015-06-22-05">
-<iframe class="video-embed__video" type="text/html" src="https://www.youtube.com/v/VXhhE-l96qQ?start=41&amp;end=78" frameborder="0"></iframe>
+<iframe class="video-embed__video" type="text/html" src="https://www.youtube.com/v/VXhhE-l96qQ?start=41&amp;end=78&amp;volume=0" frameborder="0"></iframe>
 </figure>
 
 The first big leap in this direction was [Kinect](https://en.wikipedia.org/wiki/Kinect) on the Xbox 360 (and later, Windows). With Kinect, we interact with the computer using body movements like raising a hand (which gets Kinect to pay attention), pushing our hand forward to click/tap, and grasping to drag the canvas in a particular direction.
@@ -133,7 +133,7 @@ The first big leap in this direction was [Kinect](https://en.wikipedia.org/wiki/
 The Kinect ushered in a major revolution in terms of interfacing with computers, but from an interaction perspective, it presents similar challenges to those of the [Wii controller](https://en.wikipedia.org/wiki/Wii#Wii_Remote) and Sony’s [PlayStation Move](https://en.wikipedia.org/wiki/PlayStation_Move). Large body gestures like raising your hand (or a wand controller) can be tiring. 
 
 <figure class="video-embed video-embed--16x9" id="figure-2015-06-22-06">
-<iframe class="video-embed__video" type="text/html" src="https://www.youtube.com/v/21LtA5-wiwU?start=7&amp;end=19" frameborder="0"></iframe>
+<iframe class="video-embed__video" type="text/html" src="https://www.youtube.com/v/21LtA5-wiwU?start=7&amp;end=19&amp;volume=0" frameborder="0"></iframe>
 </figure>
 
 They’re also not terribly accurate. If you thought that touchscreen accuracy was an issue, hand gestures like those for the Kinect or [LEAP Motion](https://en.wikipedia.org/wiki/Leap_Motion) pose even more of a challenge.
@@ -189,7 +189,7 @@ If you don’t want to turn something like that on automatically, you can enable
 Things get even crazier when you start to factor in devices like the HoloLens. And no, I have not gotten to play with one yet.
 
 <figure class="video-embed video-embed--16x9" id="figure-2015-06-22-09">
-<iframe class="video-embed__video" type="text/html" src="https://www.youtube.com/v/3AADEqLIALk?start=87&amp;end=117" frameborder="0"></iframe>
+<iframe class="video-embed__video" type="text/html" src="https://www.youtube.com/v/3AADEqLIALk?start=87&amp;end=117&amp;volume=0" frameborder="0"></iframe>
 </figure>
 
 But the idea of being able to drop a resizable virtual screen on any surface presents some interesting possibilities as a user and some unique challenges as a designer. HoloLens, of course, brings with it gesture controls as well, so accounting for a variety of input types should get us pretty far.
@@ -199,7 +199,7 @@ In a similar vein, we should begin to think about what experiences can and shoul
 In the last few years, the computational power of our devices has increased as the hardware costs associated with supporting gaze tracking have dropped dramatically. Looking around, you can see gaze tracking beginning to move into the public sphere: Many smartphones and smartwatches can recognize when you are looking at them (or at least they do sometimes). This is only a short step away from knowing where on the screen you are looking. And nearly every high-end smartphone is now equipped with a front-facing camera which makes them perfect candidates to provide this interaction method. 
 
 <figure class="video-embed video-embed--16x9" id="figure-2015-06-22-10">
-<iframe class="video-embed__video" type="text/html" src="https://www.youtube.com/v/DEk7PlJWQgI?start=18&amp;end=54" frameborder="0"></iframe>
+<iframe class="video-embed__video" type="text/html" src="https://www.youtube.com/v/DEk7PlJWQgI?start=18&amp;end=54&amp;volume=0" frameborder="0"></iframe>
 </figure>
 
 The [Sesame Phone](http://sesame-enable.com/phone/) was designed to allow people to use a smartphone without using their hands. It uses facial tracking to move a virtual cursor around the screen, allowing users to interact with the underlying operating system as well as individual applications. It supports tap, swipe, and other gestures (via a context menu) and is pretty impressive in my experience. Technology like this enables people suffering from MS, arthritis, Muscular Dystrophy, and more to use a smartphone and—more importantly to us—browse the web.
