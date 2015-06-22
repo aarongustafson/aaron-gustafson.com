@@ -52,6 +52,7 @@ class YouTube < Liquid::Tag
 
     if markup =~ Syntax then
       @id = $1
+      puts "Got YouTube ID #{@id}"
 
       if $2.nil? then
           @width = 560
@@ -72,14 +73,16 @@ class YouTube < Liquid::Tag
         return Cache[@id]
     end
 
+    puts "Rendering YouTube ID #{@id}"
     # extract video information using a REST command 
     response = Net::HTTP.get_response("gdata.youtube.com","/feeds/api/videos/#{@id}?v=2&alt=jsonc")
     data = response.body
     result = JSON.parse(data)
 
     # if the hash has 'Error' as a key, we raise an error
-    if result.has_key? 'Error'
+    if result.has_key? 'error'
         puts "web service error or invalid video id"
+        return
     end
 
     # extract the title and description from the json string

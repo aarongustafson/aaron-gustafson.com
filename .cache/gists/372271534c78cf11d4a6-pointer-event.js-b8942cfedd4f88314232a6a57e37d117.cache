@@ -1,0 +1,15 @@
+function detectType( event ) {
+  switch( event.pointerType ) {
+    case "mouse:
+      /* mouse input detected */
+      break;
+    case "pen":
+      /* pen/stylus input detected */
+      break;
+    case "touch:
+      /* touch input detected */
+      break;
+    default:
+      /* pointerType is empty (could not be detected) or UA-specific custom type */
+  }
+}
