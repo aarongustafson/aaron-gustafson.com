@@ -241,7 +241,7 @@ This particular app passes the captured information over to JavaScript for proce
 But traditional computers and smart mobile devices aren’t the only place we’re starting to see voice based experiences. We also have disembodied voices like [Amazon’s Echo](https://en.wikipedia.org/wiki/Amazon_Echo) and [the Ubi](http://www.theubi.com/) which are completely headless.
 
 <figure id="figure-2015-06-22-11">
-{% adaptive_image /i/posts/2015-06-22/04.jpg %}
+{% adaptive_image /i/posts/2015-06-22/05.jpg %}
 </figure>
 
 Right now, they both seem squarely focused on helping your house become "smarter"—streaming music, adjusting the thermostat, etc.—but it isn’t hard to imagine these devices becoming coupled with the ability to browse and interact with the web.
