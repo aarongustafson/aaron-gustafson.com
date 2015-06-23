@@ -852,7 +852,7 @@ form li {
 }
 .video-embed__lazy-link {
   background: #2c2825 center center no-repeat;
-  background-size: contain;
+  background-size: cover;
   color: #DDD;
   text-decoration: none;
   text-align: left;

@@ -27,6 +27,8 @@
 #       http://makokal.github.com/blog/2012/02/24/simple-jekyll-plugin-for-youtube-videos/
 #       https://gist.github.com/1805814
 #   
+require 'uri'
+require 'net/http'
 require 'json'
 require 'erb'
 require 'yaml'
@@ -37,7 +39,7 @@ if ( ! defined? VIDEO_CACHE_DIR )
 end
 
 class YouTube < Liquid::Tag
-  Syntax = /^\s*([^\s]+)(\s+(\d+)\s+(\d+)\s*)?/
+  Syntax = /^\s*([^\s]+)(?:\s+(\d+)\s+(\d+)\s*)?(?:\s+(\d+s\/\d+s))?\s*/
 
   # load from the cache
   Cache_file = File.join(VIDEO_CACHE_DIR, "youtube.yml")
@@ -47,12 +49,24 @@ class YouTube < Liquid::Tag
     Cache = Hash.new
   end
 
+  API_key = ENV['GOOGLE_API_KEY'] or false
+
+  Google = URI.parse("https://www.googleapis.com")
+  Browser = Net::HTTP.new(Google.host, Google.port)
+  Browser.use_ssl = true
+  Browser.verify_mode = OpenSSL::SSL::VERIFY_NONE
+    
   def initialize(tagName, markup, tokens)
     super
 
+    if ! API_key
+      puts "No API key provided"
+      return
+    end
+    
     if markup =~ Syntax then
       @id = $1
-      puts "Got YouTube ID #{@id}"
+      #puts "Got YouTube ID #{@id}"
 
       if $2.nil? then
           @width = 560
@@ -60,6 +74,12 @@ class YouTube < Liquid::Tag
       else
           @width = $2.to_i
           @height = $3.to_i
+      end
+
+      @snippet = ''
+      if ! $4.nil? then
+          times = $4.split('/').map { |s| s.to_i }
+          @snippet << "&amp;start=#{times[0]}&amp;end=#{times[1]}"
       end
     else
       raise "No YouTube ID provided in the \"youtube\" tag"
@@ -73,27 +93,42 @@ class YouTube < Liquid::Tag
         return Cache[@id]
     end
 
-    puts "Rendering YouTube ID #{@id}"
-    # extract video information using a REST command 
-    response = Net::HTTP.get_response("gdata.youtube.com","/feeds/api/videos/#{@id}?v=2&alt=jsonc")
-    data = response.body
-    result = JSON.parse(data)
+    #puts "Rendering YouTube ID #{@id}"
+    # extract video information using a REST command
+    request = Net::HTTP::Get.new("/youtube/v3/videos/?part=snippet&id=#{@id}&key=#{API_key}")
+    response = Browser.request(request)
+    result = JSON.parse(response.body)
 
     # if the hash has 'Error' as a key, we raise an error
-    if result.has_key? 'error'
-        puts "web service error or invalid video id"
+    if result["items"].length != 1
+        puts "No video found"
         return
     end
 
+    video = result['items'][0]['snippet']
+
     # extract the title and description from the json string
-    @title = result["data"]["title"]
-    @description = result["data"]["description"]
+    @title = video['localized']['title']
+    @description = video['localized']['description']
+
+    # get the size
+    thumbnails = video['thumbnails']
+    if thumbnails.has_key?('maxres')
+      @size = Rational( thumbnails['maxres']['width'], thumbnails['maxres']['height'] )
+    else
+      @size = Rational( thumbnails['default']['width'], thumbnails['default']['height'] )
+    end
+    @size = @size.to_s.sub( '/', 'x' )
 
     puts "Embedding YouTube video: #{@title}"
 
-    @style = "background-image:url(http://i2.ytimg.com/vi/#{@id}/0.jpg)" 
+    @style = "background-image:url(http://i2.ytimg.com/vi/#{@id}/0.jpg);"
     
-    @player = "http://www.youtube.com/embed/#{@id}?autoplay=1"
+    @player = "http://www.youtube.com/embed/#{@id}?"
+    @player << 'autoplay=1' # start playing
+    @player << @snippet # start and end
+    @player << '&amp;modestbranding=1' # Turn off YouTube branding
+    @player << '&amp;iv_load_policy=3' # Turn off annotations
 
     # note: so special care is required to produce html code that will not be massage by the 
     #       markdown processor :
@@ -102,8 +137,8 @@ class YouTube < Liquid::Tag
     #            must be separated from surrounding content by blank lines, and the start and end tags of the block
     #            should not be indented with tabs or spaces. '
     result = "<figure id=\"fig-#{@id}\" class=\"figure figure--video\">"
-    result << '<div class="video-embed video-embed--youtube video-embed--4x3">'
-    result << "<a class=\"video-embed__lazy-link\" style=\"#{@style}\" href=\"//www.youtube.com/watch?v=#{@id}\" data-lazy-video-src=\"#{@player}\">"
+    result << "<div class=\"video-embed video-embed--youtube video-embed--#{@size}\">"
+    result << "<a class=\"video-embed__lazy-link\" style=\"#{@style}\" href=\"//www.youtube.com/watch?v=#{@id}#{@snippet}\" data-lazy-video-src=\"#{@player}\">"
     result << '<div class="video-embed__lazy-div"></div>'
     result << "<div class=\"video-embed__lazy-info\">#{@title}</div>"
     result << '</a></div></figure>'
