@@ -1,3 +1,26 @@
+- title: Responsive Day Out
+  url: http://lanyrd.com/2015/responsive-day-out-3/
+  date: 2015-06-19 09:00:00 -0400
+  location: Brighton, England
+
+- title: Web Design Day
+  url: http://www.webdesignday.com/
+  date: 2015-06-11 09:00:00 -0400
+  location: Pittsburgh, PA USA
+  talks:
+    - title: Falling in Love with Forms
+  workshops:
+    - title: Beyond Responsive
+
+- title: Breaking Development
+  url: http://lanyrd.com/2015/bdconf/
+  date: 2015-06-08 09:00:00 -0400
+  location: Nashville, TN USA
+  talks:
+    - title: Falling in Love with Forms
+  workshops:
+    - title: Beyond Responsive
+
 - title: Microsoft Edge Web Summit
   url: http://lanyrd.com/2015/project-spartan-web-summit/
   date: 2015-05-05 09:00:00 -0400
