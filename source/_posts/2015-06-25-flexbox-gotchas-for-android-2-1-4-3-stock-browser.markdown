@@ -1,7 +1,7 @@
 ---
 layout: link
 title: "Flexbox gotchas for Android 2.1–4.3 (stock browser)"
-description: "Many thanks to Ben Frain for surfacing these issues"
+description: "Many thanks to Ben Frain for surfacing these issues."
 date: 2015-06-25 17:46:09 -0400
 comments: false
 ref_url: http://benfrain.com/flexbox-gotchas-for-android-2-1-4-3-stock-browser/

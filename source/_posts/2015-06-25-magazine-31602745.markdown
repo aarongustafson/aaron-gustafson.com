@@ -11,7 +11,7 @@ ref_source: BBC News
 
 A good overview of why the “hamburger” can’t stand alone.
 
-> "I did multiple tests," says James Foster, a web developer based in New Zealand, who has surveyed users' interactions with the button over the course of many months. "The results all came out the same - the icon is not as clear to some users as developers and designers think it is."
+> "I did multiple tests," says James Foster, a web developer based in New Zealand, who has surveyed users' interactions with the button over the course of many months. "The results all came out the same—the icon is not as clear to some users as developers and designers think it is."
 
 > Adding the word "menu" underneath the three lines increases the button's use by 7.2%, according to Foster's tests.
 

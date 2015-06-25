@@ -1,7 +1,7 @@
 ---
 layout: link
 title: "Designing For (and With) Color Blindness"
-description: "An interesting look at color blindness from a designer with it."
+description: "An interesting look at color blindness from Aaron Tenbuuren, a designer living with it."
 date: 2015-06-25 17:37:38 -0400
 comments: false
 ref_url: https://medium.com/@aaron10buuren/designing-for-and-with-color-blindness-48392aab3d87
