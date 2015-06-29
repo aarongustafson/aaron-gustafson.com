@@ -4584,6 +4584,12 @@ http://www.aaron-gustafson.com/notebook/how-to-apply-progressive-enhancement-whe
       <div class="webmention__title p-name"><a href="https://twitter.com/javascriptd/status/613056675398877184">Javascript
       Digest reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-06-22T14:51:16-04:00">22 June 2015</time></div></article></li>
+  '2015-06-29':
+    https://twitter.com/frippz/status/615499592684171264: |-
+      <li id="webmention-615499592684171264" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/frippz"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/615473859647508480/anOoplf-_normal.png" alt="" title="Fredrik Frodlund"><b class="p-name">Fredrik Frodlund</b></a></div><div class="webmention__content p-content"><p>@andersekdahl <a href="https://t.co/hku0R5ySXx">https://t.co/hku0R5ySXx</a>
+      <a href="http://t.co/XZe6ToSr2b">http://t.co/XZe6ToSr2b</a>
+      <a href="http://t.co/ky3wAf9Fos">http://t.co/ky3wAf9Fos</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-29T08:38:32-04:00">29 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/frippz/status/615499592684171264">Permalink</a></div></article></li>
 http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/:
   '2015-04-22':
     '590709114453549057': <li id="webmention-590709114453549057" class="webmentions__item"><article
@@ -5697,6 +5703,85 @@ http://www.aaron-gustafson.com/notebook/where-do-we-go-from-here/:
     https://twitter.com/frontendfront/status/614351072799391744: |-
       <li id="webmention-614351072799391744" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/frontendfront"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/539519250545668096/2hF95nBY_normal.png" alt="" title="Front-end Front"><b class="p-name">Front-end Front</b></a></div><div class="webmention__content p-content"><p>Where Do We Go From Here? <a href="http://t.co/GuBYwdXo54">http://t.co/GuBYwdXo54</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-26T04:34:44-04:00">26 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/frontendfront/status/614351072799391744">Permalink</a></div></article></li>
+    https://twitter.com/muzzlehatch_/status/614624910867083264: |-
+      <li id="webmention-614624910867083264" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/muzzlehatch_"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/458242713981186048/3yvK5XxH_normal.jpeg" alt="" title="Benjamin Read"><b class="p-name">Benjamin Read</b></a></div><div class="webmention__content p-content"><p>“What is responsive web design about if not accessibility?” - @AaronGustafson at Responsive Conf: <a href="http://t.co/vNtnaQSg1d">http://t.co/vNtnaQSg1d</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-26T22:42:52-04:00">26 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/muzzlehatch_/status/614624910867083264">Permalink</a></div></article></li>
+    https://twitter.com/AaronGustafson/status/614616396849389568: |-
+      <li id="webmention-614616396849389568" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/612180052231495680/8_CXQjez_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Progressive enhancement as a treasure hunt (from my closing keynote at Responsive Day Out <a href="http://t.co/Dt5gbr7pTh">http://t.co/Dt5gbr7pTh)</a>) <a href="http://t.co/JdZYuRMD8E">http://t.co/JdZYuRMD8E</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-26T22:09:02-04:00">26 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/614616396849389568">Permalink</a></div></article></li>
+    https://twitter.com/brackenm/status/614497248181796864: |-
+      <li id="webmention-614497248181796864" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/brackenm"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/97171427/goblin_surf_normal.jpg" alt="" title="Bracken M"><b class="p-name">Bracken M</b></a></div><div class="webmention__content p-content"><p>Great article on inclusive design: <a href="http://t.co/MWB3tVyQI3">http://t.co/MWB3tVyQI3</a> (thanks @antiheroine)</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-26T14:15:35-04:00">26 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/brackenm/status/614497248181796864">Permalink</a></div></article></li>
+    https://twitter.com/Pamela_Drouin/status/614485532412936192: |-
+      <li id="webmention-614485532412936192" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/Pamela_Drouin"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/3769450987/a88cadc16de55c3818db4ec0ff66a568_normal.jpeg" alt="" title="Pamela Drouin"><b class="p-name">Pamela Drouin</b></a></div><div class="webmention__content p-content"><p>This is beautiful: <a href="http://t.co/OKz5rkPbWp">http://t.co/OKz5rkPbWp</a> cc: @ljndawson</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-26T13:29:02-04:00">26 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/Pamela_Drouin/status/614485532412936192">Permalink</a></div></article></li>
+    '614616396849389568': <li id="webmention-614616396849389568" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/andrewsmyk"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/andrewsmyk/profile_image?size=original"
+      alt="" title="Andrew Smyk"><b class="p-name">Andrew Smyk</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/614616396849389568">Andrew
+      Smyk likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-26T22:11:21-04:00">26 June 2015</time></div></article></li>
+    '614616750529867777': <li id="webmention-614616750529867777" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.andrewsmyk.com/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/andrewsmyk/profile_image?size=original"
+      alt="" title="Andrew Smyk"><b class="p-name">Andrew Smyk</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/andrewsmyk/status/614616750529867777">Andrew
+      Smyk reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-26T22:10:27-04:00">26 June 2015</time></div></article></li>
+    '614617394313474048': <li id="webmention-614617394313474048" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://about.me/daigen"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/daigen/profile_image?size=original"
+      alt="" title="Ben Kim"><b class="p-name">Ben Kim</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/daigen/status/614617394313474048">Ben Kim
+      reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-26T22:13:00-04:00">26 June 2015</time></div></article></li>
+  '2015-06-29':
+    https://twitter.com/theystolemynick/status/615577866298916864: |-
+      <li id="webmention-615577866298916864" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/theystolemynick"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/416108368/avatar_JP_normal.jpg" alt="" title="Jean-Pierre Vincent"><b class="p-name">Jean-Pierre Vincent</b></a></div><div class="webmention__content p-content"><p>Le progressive enhancement, seule voix raisonnable de salut   <a href="http://t.co/lpT6vXqRcT">http://t.co/lpT6vXqRcT</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-29T13:49:34-04:00">29 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/theystolemynick/status/615577866298916864">Permalink</a></div></article></li>
+    https://twitter.com/UIE/status/615546564292050944: |-
+      <li id="webmention-615546564292050944" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/UIE"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/3759116326/19308cfcdb0b831111d4ee3fc3e6232c_normal.jpeg" alt="" title="UIE"><b class="p-name">UIE</b></a></div><div class="webmention__content p-content"><p>Where Do We Go From Here? <a href="http://t.co/xZaCiJXZ8S">http://t.co/xZaCiJXZ8S</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-29T11:45:11-04:00">29 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/UIE/status/615546564292050944">Permalink</a></div></article></li>
+    https://twitter.com/HearingSilence/status/615533737015681024: |-
+      <li id="webmention-615533737015681024" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/HearingSilence"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/435708975737106432/S94z8pYK_normal.jpeg" alt="" title="HearingSilence"><b class="p-name">HearingSilence</b></a></div><div class="webmention__content p-content"><p>Where Do We Go From Here? <a href="http://t.co/LjxLYE2LkN">http://t.co/LjxLYE2LkN</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-29T10:54:13-04:00">29 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/HearingSilence/status/615533737015681024">Permalink</a></div></article></li>
+    https://twitter.com/webstandards_ru/status/615474852040962048: |-
+      <li id="webmention-615474852040962048" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/webstandards_ru"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/590602680340480002/9T12byKD_normal.png" alt="" title="Веб-стандарты"><b class="p-name">Веб-стандарты</b></a></div><div class="webmention__content p-content"><p>Куда дальше? Расшифровка доклада Аарона Густавсона о будущем адаптивного подхода и дизайна — <a href="http://t.co/CMFtkBVI5J">http://t.co/CMFtkBVI5J</a> <a href="http://t.co/u2invqKtWv">http://t.co/u2invqKtWv</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-29T07:00:14-04:00">29 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/webstandards_ru/status/615474852040962048">Permalink</a></div></article></li>
+  '2015-06-27':
+    https://twitter.com/rstrangh/status/614700903120158720: |-
+      <li id="webmention-614700903120158720" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/rstrangh"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/533605411388010496/a2iBf8qh_normal.jpeg" alt="" title="Roman Stranghöner"><b class="p-name">Roman Stranghöner</b></a></div><div class="webmention__content p-content"><p>“Where do we go from now” – collected thoughts on the future of progressive enhancement by @AaronGustafson</p>
+
+      <p><a href="http://t.co/WRyEheaLeL">http://t.co/WRyEheaLeL</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-27T03:44:50-04:00">27 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/rstrangh/status/614700903120158720">Permalink</a></div></article></li>
+    '614655476463206400': <li id="webmention-614655476463206400" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://joacimlowgren.com/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/jlowgren/profile_image?size=original"
+      alt="" title="Joacim Löwgren"><b class="p-name">Joacim Löwgren</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/jlowgren/status/614655476463206400">Joacim
+      Löwgren reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-27T00:44:19-04:00">27 June 2015</time></div></article></li>
+    '614692162215804928': <li id="webmention-614692162215804928" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/f_ariasm"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/f_ariasm/profile_image?size=original"
+      alt="" title="Federico Arias"><b class="p-name">Federico Arias</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/f_ariasm/status/614692162215804928">Federico
+      Arias reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-27T03:10:06-04:00">27 June 2015</time></div></article></li>
+    '614616396849389568': <li id="webmention-614616396849389568" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/rstrangh"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/rstrangh/profile_image?size=original"
+      alt="" title="Roman Stranghöner"><b class="p-name">Roman Stranghöner</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/614616396849389568">Roman
+      Stranghöner likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-27T03:50:09-04:00">27 June 2015</time></div></article></li>
 ? http://www.aaron-gustafson.com/notebook/bringing-sanity-and-order-to-device-testing/?utm_content=buffere43f4&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
 : '2015-06-23':
     https://twitter.com/alvarlaigna/status/613208870496940032: |-
