@@ -7,7 +7,7 @@ categories: [accessibility,"web design"]
 description: "The U.S. Department of Justice has sided with the National Association of the Deaf in their cases against Harvard and MIT over online captioning."
 ---
 
-The U.S. Department of Justice (DOJ) has published Statements of Interest in two cases brought by the National Association of the Deaf (NAD) against Harvard and MIT, respectively. The NAD is suing the two universities for violations of Title III of the Americans with Disabilities Act (ADA) and Section 504 of the Rehabilitation Act because the video and audio materials they are making available as part of their online learning offerings are not captioned.
+The U.S. Department of Justice (DOJ) has published Statements of Interest in two cases brought by the National Association of the Deaf (NAD) against [Harvard (PDF)](http://www.ada.gov/briefs/harvard_soi.pdf) and [MIT (PDF)](http://www.ada.gov/briefs/mit_soi.pdf), respectively. The NAD is suing the two universities for violations of Title III of the Americans with Disabilities Act (ADA) and Section 504 of the Rehabilitation Act because the video and audio materials they are making available as part of their online learning offerings are not captioned.
 
 The DOJ Statements make it quite clear that
 
