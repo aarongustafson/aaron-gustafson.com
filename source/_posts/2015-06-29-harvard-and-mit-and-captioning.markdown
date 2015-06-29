@@ -9,6 +9,8 @@ description: "The U.S. Department of Justice has sided with the National Associa
 
 The U.S. Department of Justice (DOJ) has published Statements of Interest in two cases brought by the National Association of the Deaf (NAD) against [Harvard (PDF)](http://www.ada.gov/briefs/harvard_soi.pdf) and [MIT (PDF)](http://www.ada.gov/briefs/mit_soi.pdf), respectively. The NAD is suing the two universities for violations of Title III of the Americans with Disabilities Act (ADA) and Section 504 of the Rehabilitation Act because the video and audio materials they are making available as part of their online learning offerings are not captioned.
 
+<!-- more -->
+
 The DOJ Statements make it quite clear that
 
 > Both the ADA and Section 504 currently obligate Harvard to provide effective communication to ensure equal access to its online programming services, and resolution of Plaintiffs’ claim involves a straightforward application of longstanding statutory and regulatory requirements. For more than two decades, federal courts have resolved effective communication claims brought under the ADA and Section 504 in a wide range of contexts, including claims alleging unequal access to goods, benefits and services provided through websites or other electronic media. And the Departments of Justice and Education have routinely required covered entities to ensure equal access to goods, benefits and services, electronic or otherwise, through the provision of captioning or other auxiliary aids or services. 
