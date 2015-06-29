@@ -4822,6 +4822,10 @@ http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/
       the Mis-Named Mobilegeddon | Adrian Roselli</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2015-06-02T17:15:10-04:00">2
       June 2015</time></div></article></li>
+  '2015-06-25':
+    https://twitter.com/chuckdowe/status/614234223818461184: |-
+      <li id="webmention-614234223818461184" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/chuckdowe"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/597134604940615680/dahHVFK6_normal.jpg" alt="" title="Chuck Dowe"><b class="p-name">Chuck Dowe</b></a></div><div class="webmention__content p-content"><p>Tips for Surviving Google’s “Mobilegeddon” <a href="http://t.co/BKqaMxuNo6">http://t.co/BKqaMxuNo6</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-25T20:50:25-04:00">25 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/chuckdowe/status/614234223818461184">Permalink</a></div></article></li>
 ? http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/?imm_mid=0d0abb&cmp=em-web-na-na-newsltr_20150422_oreilly_media
 : '2015-04-23':
     https://twitter.com/LenAtLambton/status/591269202666872833: |-
@@ -5683,6 +5687,16 @@ http://www.aaron-gustafson.com/notebook/where-do-we-go-from-here/:
     https://twitter.com/codepo8/status/614096907867189248: |-
       <li id="webmention-614096907867189248" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/codepo8"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1666904408/codepo8_normal.png" alt="" title="Christian Heilmann "><b class="p-name">Christian Heilmann </b></a></div><div class="webmention__content p-content"><p>“Where Do We Go From Here?” - my team colleague @AaronGustafson rocking the closing talk at the responsive day out <a href="http://t.co/WMLk1LBbD1">http://t.co/WMLk1LBbD1</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-25T11:44:46-04:00">25 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/codepo8/status/614096907867189248">Permalink</a></div></article></li>
+    56272: '<li id="webmention-56272" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://davidakennedy.com/2015/06/25/responsive-design-where-do-we-go-from-here/">Responsive
+      Design: Where Do We Go From Here? | David A. Kennedy</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-06-25T23:22:05-04:00">25
+      June 2015</time></div></article></li>'
+  '2015-06-26':
+    https://twitter.com/frontendfront/status/614351072799391744: |-
+      <li id="webmention-614351072799391744" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/frontendfront"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/539519250545668096/2hF95nBY_normal.png" alt="" title="Front-end Front"><b class="p-name">Front-end Front</b></a></div><div class="webmention__content p-content"><p>Where Do We Go From Here? <a href="http://t.co/GuBYwdXo54">http://t.co/GuBYwdXo54</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-26T04:34:44-04:00">26 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/frontendfront/status/614351072799391744">Permalink</a></div></article></li>
 ? http://www.aaron-gustafson.com/notebook/bringing-sanity-and-order-to-device-testing/?utm_content=buffere43f4&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
 : '2015-06-23':
     https://twitter.com/alvarlaigna/status/613208870496940032: |-
