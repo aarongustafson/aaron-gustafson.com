@@ -5530,6 +5530,11 @@ http://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/:
       to view the comments powered by Disqus.</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2014-09-26T10:06:00-04:00">26
       September 2014</time></div></article></li>'
+  '2015-06-29':
+    https://twitter.com/AaronGustafson/status/615607099096215552: |-
+      <li id="webmention-615607099096215552" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/612180052231495680/8_CXQjez_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@tkadlec @jaffathecake @scottjehl @adactio Similar thoughts: <a href="http://t.co/rtsbI1v2TH">http://t.co/rtsbI1v2TH</a>
+      See also (regarding the network): <a href="http://t.co/bto9cOoToE">http://t.co/bto9cOoToE</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-29T15:45:44-04:00">29 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/615607099096215552">Permalink</a></div></article></li>
 http://www.aaron-gustafson.com/notebook/bringing-sanity-and-order-to-device-testing/:
   '2015-06-05':
     https://twitter.com/UIE/status/606868603133149184: |-
