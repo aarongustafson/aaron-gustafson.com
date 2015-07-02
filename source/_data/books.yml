@@ -1,3 +1,13 @@
+- title: "Adaptive Web Design (2nd Edition)"
+  subtitle: "Crafting Rich Experiences with Progressive Enhancement"
+  author: "Aaron Gustafson"
+  published: 2015-12-06 12:00:00 -0500
+  cover: "adaptive-web-design-2nd"
+  width: 129,
+  sales_url: "http://www.amazon.com/gp/product/0134216148/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0134216148&linkCode=as2&tag=easydesign-20&linkId=JZGGRHGNTTGMGB2Z"
+  sales_channel: "Amazon"
+  notes: "The definitive guide to progressive enhancement, completely revised and rewritten. In this brief book, I chronicle the origins of progressive enhancement—its philosophy and mechanisms—and reveal the countless practical ways you can apply progressive enhancement principles in HTML, CSS, and JavaScript. By understanding progressive enhancement and how to apply it properly, you can craft experiences that serve users (rather than browsers), giving them access to your content from anywhere."
+
 - title: "Responsive Typography"
   subtitle: "Using Type Well on the Web"
   author: "Jason Pamental"
@@ -41,7 +51,7 @@
   notes: "Tim Kadlec is one of those brilliant individuals who really gets the Web. His book on responsive design is a must-read for its practical approach and thorough coverage. I was stoked he asked me to write [the foreword](http://blog.easy-designs.net/archives/implementing-responsive-design/)."
 
 - title: "Adaptive Web Design"
-  subtitle: "Crafting Rich Experience with Progressive Enhancement"
+  subtitle: "Crafting Rich Experiences with Progressive Enhancement"
   author: "Aaron Gustafson"
   published: 2011-05-30 13:00:00 -0400
   cover: "adaptive-web-design"
