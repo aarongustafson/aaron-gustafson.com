@@ -4852,6 +4852,18 @@ http://www.aaron-gustafson.com/notebook/the-network-effect/:
     https://twitter.com/emtjc/status/591560269698043904: |-
       <li id="webmention-591560269698043904" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/emtjc"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/583275271995830272/898zLRDS_normal.png" alt="" title="TJC eMarketing"><b class="p-name">TJC eMarketing</b></a></div><div class="webmention__content p-content"><p>Comcast injected ads at their wi-fi hotspots - or why it’s important to use HTTPS. <a href="http://t.co/hqzliNtJZO">http://t.co/hqzliNtJZO</a> #webdev #security</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-24T07:12:13-04:00">24 April 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/emtjc/status/591560269698043904">Permalink</a></div></article></li>
+  '2015-06-29':
+    '615607099096215552': <li id="webmention-615607099096215552" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/tkadlec"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/tkadlec/profile_image?size=original"
+      alt="" title="Tim Kadlec"><b class="p-name">Tim Kadlec</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/AaronGustafson/status/615607099096215552">Tim
+      Kadlec likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-29T16:53:02-04:00">29 June 2015</time></div></article></li>
+    '615656265604308992': |-
+      <li id="webmention-615656265604308992" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://sixtwothree.org/"><img class="webmention__author__photo u-photo" src="https://twitter.com/jgarber/profile_image?size=original" alt="" title="Jason Garber"><b class="p-name">Jason Garber</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> <a href="https://twitter.com/tkadlec" rel="nofollow">@tkadlec</a> &lt;a href=&ldquo;<a href="https://twitter.com/jaffathecake">https://twitter.com/jaffathecake</a>&rdquo; rel=&ldquo;nofollo</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-29T19:01:06-04:00">29 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/jgarber/status/615656265604308992">Permalink</a></div></article></li>
 http://www.aaron-gustafson.com/notebook/2014/the-network-effect/:
   '2015-04-25':
     https://twitter.com/snhasani/status/591853957691015168: |-
@@ -5535,6 +5547,17 @@ http://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/:
       <li id="webmention-615607099096215552" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/612180052231495680/8_CXQjez_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@tkadlec @jaffathecake @scottjehl @adactio Similar thoughts: <a href="http://t.co/rtsbI1v2TH">http://t.co/rtsbI1v2TH</a>
       See also (regarding the network): <a href="http://t.co/bto9cOoToE">http://t.co/bto9cOoToE</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-29T15:45:44-04:00">29 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/615607099096215552">Permalink</a></div></article></li>
+    '615607099096215552': <li id="webmention-615607099096215552" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/tkadlec"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/tkadlec/profile_image?size=original"
+      alt="" title="Tim Kadlec"><b class="p-name">Tim Kadlec</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/AaronGustafson/status/615607099096215552">Tim
+      Kadlec likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-29T16:53:02-04:00">29 June 2015</time></div></article></li>
+    '615656265604308992': |-
+      <li id="webmention-615656265604308992" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://sixtwothree.org/"><img class="webmention__author__photo u-photo" src="https://twitter.com/jgarber/profile_image?size=original" alt="" title="Jason Garber"><b class="p-name">Jason Garber</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> <a href="https://twitter.com/tkadlec" rel="nofollow">@tkadlec</a> &lt;a href=&ldquo;<a href="https://twitter.com/jaffathecake">https://twitter.com/jaffathecake</a>&rdquo; rel=&ldquo;nofollo</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-29T19:01:06-04:00">29 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/jgarber/status/615656265604308992">Permalink</a></div></article></li>
 http://www.aaron-gustafson.com/notebook/bringing-sanity-and-order-to-device-testing/:
   '2015-06-05':
     https://twitter.com/UIE/status/606868603133149184: |-
@@ -5757,6 +5780,52 @@ http://www.aaron-gustafson.com/notebook/where-do-we-go-from-here/:
     https://twitter.com/webstandards_ru/status/615474852040962048: |-
       <li id="webmention-615474852040962048" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/webstandards_ru"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/590602680340480002/9T12byKD_normal.png" alt="" title="Веб-стандарты"><b class="p-name">Веб-стандарты</b></a></div><div class="webmention__content p-content"><p>Куда дальше? Расшифровка доклада Аарона Густавсона о будущем адаптивного подхода и дизайна — <a href="http://t.co/CMFtkBVI5J">http://t.co/CMFtkBVI5J</a> <a href="http://t.co/u2invqKtWv">http://t.co/u2invqKtWv</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-29T07:00:14-04:00">29 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/webstandards_ru/status/615474852040962048">Permalink</a></div></article></li>
+    https://twitter.com/caztcha/status/615628550226382848: |-
+      <li id="webmention-615628550226382848" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/caztcha"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/612724228421357568/Gts9oDd2_normal.jpg" alt="" title="caztcha"><b class="p-name">caztcha</b></a></div><div class="webmention__content p-content"><p>clip Where Do We Go From Here?, From the Notebook of Aaron Gustafson <a href="http://t.co/NjlsIi3RhD">http://t.co/NjlsIi3RhD</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-29T17:10:58-04:00">29 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/caztcha/status/615628550226382848">Permalink</a></div></article></li>
+    https://twitter.com/knaipa/status/615622202172420096: |-
+      <li id="webmention-615622202172420096" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/knaipa"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/511490602932772865/1FQOR4j0_normal.jpeg" alt="" title="Хунтовий Правосектан"><b class="p-name">Хунтовий Правосектан</b></a></div><div class="webmention__content p-content"><p><a href="http://t.co/CsYUOi0VUx">http://t.co/CsYUOi0VUx</a> (Where Do We Go From Here?, From the Notebook of Aaron Gustafson) <a href="http://t.co/3xKw5Izrgs">http://t.co/3xKw5Izrgs</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-29T16:45:45-04:00">29 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/knaipa/status/615622202172420096">Permalink</a></div></article></li>
+    58280: <li id="webmention-58280" class="webmentions__item"><article class="h-cite
+      webmention webmention--title-only"><div class="webmention__author p-author h-card"><a
+      class="u-url" href="http://sixtwothree.org/"><img class="webmention__author__photo
+      u-photo" src="http://sixtwothree.org/jgarber.png" alt="" title="Jason Garber"><b
+      class="p-name">Jason Garber</b></a></div> <div class="webmention__title p-name"><a
+      href="/posts/responsible-web-design">Responsible Web Design</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-06-29T18:43:00-04:00">29
+      June 2015</time></div></article></li>
+    '615580836197494784': <li id="webmention-615580836197494784" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://www.baldurbjarnason.com/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/fakebaldur/profile_image?size=original"
+      alt="" title="Baldur Bjarnason"><b class="p-name">Baldur Bjarnason</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/fakebaldur/status/615580836197494784">Baldur
+      Bjarnason reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-29T14:01:22-04:00">29 June 2015</time></div></article></li>
+    '615530620043816960': <li id="webmention-615530620043816960" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.aaron-gustafson.com/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/AaronGustafson/profile_image?size=original"
+      alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/615530620043816960">Aaron
+      Gustafson reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-29T10:41:50-04:00">29 June 2015</time></div></article></li>
+    '615550052182982658': <li id="webmention-615550052182982658" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.temesis.com/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/goetsu/profile_image?size=original"
+      alt="" title="goetsu"><b class="p-name">goetsu</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/goetsu/status/615550052182982658">goetsu
+      reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-29T11:59:03-04:00">29 June 2015</time></div></article></li>
+    '615538787863691264': <li id="webmention-615538787863691264" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://sixtwothree.org/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/jgarber/profile_image?size=original"
+      alt="" title="Jason Garber"><b class="p-name">Jason Garber</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/jgarber/status/615538787863691264">Jason
+      Garber reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-29T11:14:17-04:00">29 June 2015</time></div></article></li>
   '2015-06-27':
     https://twitter.com/rstrangh/status/614700903120158720: |-
       <li id="webmention-614700903120158720" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/rstrangh"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/533605411388010496/a2iBf8qh_normal.jpeg" alt="" title="Roman Stranghöner"><b class="p-name">Roman Stranghöner</b></a></div><div class="webmention__content p-content"><p>“Where do we go from now” – collected thoughts on the future of progressive enhancement by @AaronGustafson</p>
@@ -5787,8 +5856,79 @@ http://www.aaron-gustafson.com/notebook/where-do-we-go-from-here/:
       <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/614616396849389568">Roman
       Stranghöner likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-06-27T03:50:09-04:00">27 June 2015</time></div></article></li>
+  '2015-06-30':
+    https://twitter.com/cssradar/status/615744579636211712: |-
+      <li id="webmention-615744579636211712" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/cssradar"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1478202419/cssradar_icon_200_normal.png" alt="" title="Yuya Saito"><b class="p-name">Yuya Saito</b></a></div><div class="webmention__content p-content"><p>Where Do We Go From Here? <a href="http://t.co/pcZpmLm5ur">http://t.co/pcZpmLm5ur</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-30T00:52:02-04:00">30 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/cssradar/status/615744579636211712">Permalink</a></div></article></li>
+    '614700903120158720': <li id="webmention-614700903120158720" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/AaronGustafson/profile_image?size=original"
+      alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/rstrangh/status/614700903120158720">Aaron
+      Gustafson likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-30T01:20:40-04:00">30 June 2015</time></div></article></li>
 ? http://www.aaron-gustafson.com/notebook/bringing-sanity-and-order-to-device-testing/?utm_content=buffere43f4&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
 : '2015-06-23':
     https://twitter.com/alvarlaigna/status/613208870496940032: |-
       <li id="webmention-613208870496940032" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/alvarlaigna"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/459237559751561216/VIEo4jHf_normal.png" alt="" title="Alvar Laigna"><b class="p-name">Alvar Laigna</b></a></div><div class="webmention__content p-content"><p>Bringing #Sanity and #Order to #Device #Testing, From the Notebook of Aaron Gustafson <a href="http://t.co/Onqk4HuLZ0">http://t.co/Onqk4HuLZ0</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-23T00:56:02-04:00">23 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/alvarlaigna/status/613208870496940032">Permalink</a></div></article></li>
+http://www.aaron-gustafson.com/notebook/harvard-and-mit-and-captioning/:
+  '2015-06-30':
+    https://twitter.com/AaronGustafson/status/615732245798723584: |-
+      <li id="webmention-615732245798723584" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/612180052231495680/8_CXQjez_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Harvard, MIT, and Captioning <a href="http://t.co/3FeLTwNnSM">http://t.co/3FeLTwNnSM</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-30T00:03:01-04:00">30 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/615732245798723584">Permalink</a></div></article></li>
+    '615732245798723584': <li id="webmention-615732245798723584" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/ewaccess"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/ewaccess/profile_image?size=original"
+      alt="" title="Eric Wright"><b class="p-name">Eric Wright</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/615732245798723584">Eric
+      Wright likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-30T00:12:57-04:00">30 June 2015</time></div></article></li>
+    '615733982357909504': <li id="webmention-615733982357909504" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.microsoft.com/enable/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/MSFTEnable/profile_image?size=original"
+      alt="" title="MSFT Accessibility"><b class="p-name">MSFT Accessibility</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/MSFTEnable/status/615733982357909504">MSFT
+      Accessibility reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-30T00:09:55-04:00">30 June 2015</time></div></article></li>
+    '615741439880859648': <li id="webmention-615741439880859648" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/thea11ygator"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/thea11ygator/profile_image?size=original"
+      alt="" title="The A11ygator"><b class="p-name">The A11ygator</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/thea11ygator/status/615741439880859648">The
+      A11ygator reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-30T00:39:33-04:00">30 June 2015</time></div></article></li>
+    '615738553021149184': <li id="webmention-615738553021149184" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.aodaalliance.org/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/DavidLepofsky/profile_image?size=original"
+      alt="" title="David Lepofsky"><b class="p-name">David Lepofsky</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/DavidLepofsky/status/615738553021149184">David
+      Lepofsky reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-30T00:28:05-04:00">30 June 2015</time></div></article></li>
+    '615784780181823490': |-
+      <li id="webmention-615784780181823490" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://iandevlin.com/"><img class="webmention__author__photo u-photo" src="https://twitter.com/iandevlin/profile_image?size=original" alt="" title="Ian Devlin"><b class="p-name">Ian Devlin</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> Sadly though, while &lt;video&gt; supports it, browser implementations vary: &lt;a href=&ldquo;<a href="http://www.iandevlin.com/blog/2015/">http://www.iandevlin.com/blog/2015/</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-30T03:31:46-04:00">30 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/iandevlin/status/615784780181823490">Permalink</a></div></article></li>
+    '615797846625796096': <li id="webmention-615797846625796096" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/autismDad3"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/autismDad3/profile_image?size=original"
+      alt="" title="autism Dad"><b class="p-name">autism Dad</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/autismDad3/status/615797846625796096">autism
+      Dad reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-30T04:23:42-04:00">30 June 2015</time></div></article></li>
+    '615845772412764160': <li id="webmention-615845772412764160" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.aodaalliance.org/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/aodaalliance/profile_image?size=original"
+      alt="" title="AODA Alliance"><b class="p-name">AODA Alliance</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/aodaalliance/status/615845772412764160">AODA
+      Alliance reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-30T07:34:08-04:00">30 June 2015</time></div></article></li>
+    '615953054307872768': |-
+      <li id="webmention-615953054307872768" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.jeremyosborn.com/"><img class="webmention__author__photo u-photo" src="https://twitter.com/jeremias/profile_image?size=original" alt="" title="Jeremy Osborn"><b class="p-name">Jeremy Osborn</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> We are very fond of <a href="https://twitter.com/3playmedia" rel="nofollow">@3playmedia</a> as a transcription &amp;&hellip;</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-30T14:40:26-04:00">30 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/jeremias/status/615953054307872768">Permalink</a></div></article></li>
