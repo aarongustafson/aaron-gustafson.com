@@ -12,6 +12,27 @@ http://www.aaron-gustafson.com/notebook/visualizing-css3-transformations/:
       <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/588131740444708864">Thomas
       Michaud likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-04-14T18:45:25-06:00">14 April 2015</time></div></article></li>
+  '2015-07-07':
+    https://twitter.com/AaronGustafson/status/618510593612451840: |-
+      <li id="webmention-618510593612451840" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/618240098614816768/VexZFM1u_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@rachelnabors It’s complicated because they stack and the order matters. If separated, what’s the stacking order? <a href="http://t.co/RgplqzLUKE">http://t.co/RgplqzLUKE</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-07-07T16:03:11-04:00">7 July 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/618510593612451840">Permalink</a></div></article></li>
+    '618510593612451840': <li id="webmention-618510593612451840" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/wchwd"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/wchwd/profile_image?size=original"
+      alt="" title="Maciej Jasiobedzki"><b class="p-name">Maciej Jasiobedzki</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/618510593612451840">Maciej
+      Jasiobedzki likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-07-07T16:08:06-04:00">7 July 2015</time></div></article></li>
+  '2015-07-08':
+    '618510593612451840': <li id="webmention-618510593612451840" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/inkpixelspaper"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/inkpixelspaper/profile_image?size=original"
+      alt="" title="★ jen strickland ★"><b class="p-name">★ jen strickland ★</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/618510593612451840">★
+      jen strickland ★ likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-07-08T02:15:36-04:00">8 July 2015</time></div></article></li>
 http://www.aaron-gustafson.com/notebook/playing-with-flexbox-and-quantity-queries/:
   '2015-04-13':
     https://twitter.com/amlinarev/status/587679155678007296: |-
@@ -5958,3 +5979,8 @@ http://www.aaron-gustafson.com/notebook/harvard-and-mit-and-captioning/:
     https://twitter.com/theprivileges/status/617386424392925184: |-
       <li id="webmention-617386424392925184" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/theprivileges"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/611930144651894784/_PvyibC4_normal.png" alt="" title="Luiz Lopes"><b class="p-name">Luiz Lopes</b></a></div><div class="webmention__content p-content"><p>An awesome article, discussing what it means to make the web accessible, now and into the future — <a href="http://t.co/UCibCfxQEr">http://t.co/UCibCfxQEr</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-07-04T13:36:08-04:00">4 July 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/theprivileges/status/617386424392925184">Permalink</a></div></article></li>
+http://www.aaron-gustafson.com/notebook/links/ui-fail-how-our-user-interfaces-help-to-ruin-lives/:
+  '2015-07-07':
+    https://twitter.com/portenkirchner/status/618540464308912128: |-
+      <li id="webmention-618540464308912128" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/portenkirchner"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/291829846/dsC02522_normal.jpg" alt="" title="Georg Portenkirchner"><b class="p-name">Georg Portenkirchner</b></a></div><div class="webmention__content p-content"><p>UI Fail: How Our User Interfaces Help to Ruin Lives <a href="http://t.co/8nCIdGnWrc">http://t.co/8nCIdGnWrc</a> #UI</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-07-07T18:01:53-04:00">7 July 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/portenkirchner/status/618540464308912128">Permalink</a></div></article></li>
