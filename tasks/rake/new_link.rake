@@ -19,7 +19,9 @@ task :new_link, :url do |t, args|
   end
   matches = /<title>(.*)<\/title>/m.match( html_source )
   if matches
-    link_title = matches[1].delete!("\n").delete!("\r").strip
+    link_title = matches[1].strip
+    link_title.delete!("\n")
+    link_title.delete!("\r")
   else
     matches = /<h1>(.*)<\/h1>/m.match( html_source )
     if matches
