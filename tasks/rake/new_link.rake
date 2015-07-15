@@ -17,11 +17,11 @@ task :new_link, :url do |t, args|
   if ! html_source.valid_encoding?
     html_source = html_source.encode('UTF-16be', :invalid=>:replace, :replace=>"?").encode('UTF-8')
   end
-  matches = /<title>(.*)<\/title>/.match( html_source )
+  matches = /<title>(.*)<\/title>/m.match( html_source )
   if matches
-    link_title = matches[1].strip
+    link_title = matches[1].delete!("\n").delete!("\r").strip
   else
-    matches = /<h1>(.*)<\/h1>/.match( html_source )
+    matches = /<h1>(.*)<\/h1>/m.match( html_source )
     if matches
       link_title = matches[1].strip
     else
@@ -32,7 +32,7 @@ task :new_link, :url do |t, args|
   source = ""
   separators = ["|", "-", "—", "–", "*"]
   if separators.any? { |sep| link_title.include? sep }
-    temp = link_title.split(/[|-–—*']/);
+    temp = link_title.split(/[|-–—*:]+/);
     link_title = temp.first.strip
     source = temp.last.strip
   end
