@@ -17,6 +17,8 @@ group :development do
   gem 'twitter'
   gem 'jekyll-time-to-read'
   gem 'jekyll-redirect-from'
+  gem 'nokogiri'
+  gem 'kramdown'
 end
 
 gem 'sinatra', '~> 1.4.2'
