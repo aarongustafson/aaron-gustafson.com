@@ -41,7 +41,7 @@ plugins: plugins
 code_dir: /downloads/code
 category_dir: notebook/tags
 category_title_prefix: "Browse by Tag: "
-markdown: rdiscount
+markdown: kramdown
 encoding: utf-8
 rdiscount:
   extensions:

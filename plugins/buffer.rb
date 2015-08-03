@@ -24,6 +24,8 @@ require 'net/http'
 require 'net/https'
 require 'uri'
 require 'date'
+require 'kramdown'
+require 'rubygems'
 
 BUFFER_CACHE_DIR = File.expand_path('../../.cache', __FILE__)
 FileUtils.mkdir_p(BUFFER_CACHE_DIR)
@@ -80,6 +82,12 @@ module Jekyll
           if url and ! buffered.include? url
 
             excerpt = post.data['description'] || post.excerpt
+            # Convert to HTML
+            excerpt = Kramdown::Document.new(excerpt).to_html
+            # And back to plain text
+            excerpt = Nokogiri::HTML(excerpt).text
+            # Then encode ampersands
+            excerpt = excerpt.gsub( '&', '&amp;' )
 
             payload = {
               'shorten' => 'false',
