@@ -26,7 +26,7 @@ require 'uri'
 require 'date'
 require 'kramdown'
 require 'rubygems'
-require 'nokogiri'
+gem 'nokogiri'
 
 BUFFER_CACHE_DIR = File.expand_path('../../.cache', __FILE__)
 FileUtils.mkdir_p(BUFFER_CACHE_DIR)
