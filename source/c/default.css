@@ -976,6 +976,12 @@ div.gist tbody,
 div.gist div.file-data {
   font-size: 100%;
 }
+div.gist .blob-wrapper {
+  padding: 4px 0;
+}
+div.gist .blob-code {
+  padding: 2px 10px !important;
+}
 
 /*------------------------------------*\
     Rules
