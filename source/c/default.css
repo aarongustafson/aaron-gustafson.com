@@ -956,6 +956,9 @@ div.gist {
 div.gist table {
   margin: 0;
 }
+div.gist table tr {
+  border: 0;
+}
 div.gist table .line-numbers {
   width: 3em;
 }

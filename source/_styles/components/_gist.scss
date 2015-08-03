@@ -12,6 +12,10 @@
         table {
             margin: 0;
         
+            tr {
+                border: 0;
+            }
+
             .line-numbers {
                 width: 3em;
             }
@@ -34,7 +38,7 @@
         div.file-data {
             font-size: 100%;
         }
-    
+
     }
     
 }
