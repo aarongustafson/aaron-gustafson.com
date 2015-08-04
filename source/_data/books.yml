@@ -56,9 +56,9 @@
   published: 2011-05-30 13:00:00 -0400
   cover: "adaptive-web-design"
   width: 129,
-  sales_url: "http://easy-readers.net/books/adaptive-web-design/"
+  sales_url: "http://adaptivewebdesign.info/1st-edition/"
   sales_channel: "Easy Readers"
-  notes: "In this brief book, I chronicle the origins of progressive enhancement—its philosophy and mechanisms—and reveal the countless practical ways you can apply progressive enhancement principles in HTML, CSS, and JavaScript. By understanding progressive enhancement and how to apply it properly, you can craft experiences that serve users (rather than browsers), giving them access to your content from anywhere."
+  notes: "In this brief book, I chronicle the origins of progressive enhancement—its philosophy and mechanisms—and reveal the countless practical ways you can apply progressive enhancement principles in HTML, CSS, and JavaScript. By understanding progressive enhancement and how to apply it properly, you can craft experiences that serve users (rather than browsers), giving them access to your content from anywhere. Bonus: You can read it online for free!"
 
 - title: "Web Form Design"
   subtitle: "Filling in the Blanks"
