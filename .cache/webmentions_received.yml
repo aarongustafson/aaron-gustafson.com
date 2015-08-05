@@ -6069,3 +6069,19 @@ http://www.aaron-gustafson.com/notebook/unum-releases-their-pattern-libraries/:
     https://twitter.com/AaronGustafson/status/628882642331639808: |-
       <li id="webmention-628882642331639808" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/624234118566531073/V08FeIk8_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Unum Releases Their Pattern Libraries <a href="http://t.co/yFoFzVYk1w">http://t.co/yFoFzVYk1w</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-05T06:58:00-04:00">5 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/628882642331639808">Permalink</a></div></article></li>
+    '628882642331639808': <li id="webmention-628882642331639808" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/bjankord"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/bjankord/profile_image?size=original"
+      alt="" title="Brett Jankord"><b class="p-name">Brett Jankord</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/628882642331639808">Brett
+      Jankord likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-05T07:53:29-04:00">5 August 2015</time></div></article></li>
+    '628890143269765120': <li id="webmention-628890143269765120" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.thewiredserf.com/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/thewiredserf/profile_image?size=original"
+      alt="" title="Jeff Jones"><b class="p-name">Jeff Jones</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/thewiredserf/status/628890143269765120">Jeff
+      Jones reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-05T07:27:49-04:00">5 August 2015</time></div></article></li>
