@@ -8,4 +8,4 @@ in_reply_to: http://www.popularmechanics.com/technology/a16653/windows-10-micros
 ref_source: Popular Mechanics
 ---
 
-It’s not the "browser war" our industry talks about. It’s just healthy competition. There’s a good bit of history in here though.
+It’s not the "browser war" our industry talks about, it’s just healthy competition. There’s a good bit of history in here though.
