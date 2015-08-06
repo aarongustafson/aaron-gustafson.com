@@ -84,6 +84,8 @@ module Jekyll
             excerpt = post.data['description'] || post.excerpt
             # Convert to HTML
             excerpt = Kramdown::Document.new(excerpt).to_html
+            # Swap blockquotes
+            exceprt = excerpt.gsub( '<blockquote>', '“' ).gsub( '</blockquote>', '”' )
             # And back to plain text
             excerpt = Nokogiri::HTML(excerpt).text
             # Then encode ampersands
