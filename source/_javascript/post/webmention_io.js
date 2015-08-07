@@ -149,12 +149,12 @@
             $link,
             title = data.name || '',
             content = data.content | '',
-            url = data.url,
-            type = mention.activity.type,
+            url = data.url || '',
+            type = mention.activity.type || '',
             activity = ( type == "like" || type == "repost" ),
-            sentence = mention.activity.sentence_html,
-            author = data.author.name,
-            author_photo = data.author.photo,
+            sentence = mention.activity.sentence_html || '',
+            author = data.author.name || '',
+            author_photo = data.author.photo || '',
             pubdate = data.published || mention.verified_date,
             display_date = '';
         
