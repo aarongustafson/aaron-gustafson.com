@@ -38,7 +38,7 @@ Now I’m not sure I agree with applying the brakes for a specific amount of tim
 So, here’s what I’d love to see browser vendors do:
 
 1. Prioritize interop over new features. Don’t halt development on new features, just put them on the back burner so the rising tide can, as they say, lift *all* the ships. Web developers and end users all benefit when there’s feature parity and stability among browsers.
-2. Put a moratorium on vendor-prefixes. They are not generally understood to be experimental. If you feel you must use a vendor prefix, ensure it’s only enabled by a corresponding feature flag.
+2. Put a ban on vendor-prefixes. They are not generally understood to be experimental. If you feel you must use a vendor prefix, ensure it’s only enabled by a corresponding feature flag.
 2. Use feature flags (or some similar opt-in) to enable developers to test experimental features in their own browsers, but also to ensure they aren’t available on the "open web" before they’re ready.
 
 ## The Web vs. Native
@@ -73,7 +73,7 @@ The web is changing. In some ways it’s changing for the better, in some ways f
 
 As Jake points out in his response, stagnation is not a good policy. Stagnation pretty much killed BlackBerry. It also led to a lot of developer frustration in the guise of IE 6.
 
-Change is not inherently bad. It’s pace can be quite frustrating at times, though. PPK certainly seems to be feeling that way about its speed now just as [Alex Russell lamented it’s plodding progress back in 2007](https://infrequently.org/2007/09/slides-from-my-standards-heresy-talk/). But when you take a step back, especially with a historical perspective, you see the changes are cyclical in many ways. The bandwidth issues we dealt with during the dial-up era are with us again in the form of mobile networks. The lessons we learned building a web for 640x480 screens are equally applicable in a world of wearables. And the text-based interactions we created in the very early days will serve as a template as we move boldly forward into the realm of voice-driven user experiences.
+Change is not inherently bad. It’s pace can be quite frustrating at times, though. PPK certainly seems to be feeling that way about its speed now just as [Alex Russell lamented its plodding progress back in 2007](https://infrequently.org/2007/09/slides-from-my-standards-heresy-talk/). But when you take a step back, especially with a historical perspective, you see the changes are cyclical in many ways. The bandwidth issues we dealt with during the dial-up era are with us again in the form of mobile networks. The lessons we learned building a web for 640x480 screens are equally applicable in a world of wearables. And the text-based interactions we created in the very early days will serve as a template as we move boldly forward into the realm of voice-driven user experiences.
 
 ## Cutting Edge vs. Craft
 
