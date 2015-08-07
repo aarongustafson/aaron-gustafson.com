@@ -9,6 +9,8 @@ description: "A few thoughts and ramblings spurred by a post from PPK and reacti
 
 Last week [Peter-Paul Koch (PPK)](http://www.quirksmode.org/about/) posted [a lengthy treatise on why browsers should stop "pushing the web forward"](http://www.quirksmode.org/blog/archives/2015/07/stop_pushing_th.html). I thoroughly enjoyed the read and agree with him on a number of points. I also agreed with the well-articulated responses from [Jake Archibald (of Google)](https://jakearchibald.com/2015/if-we-stand-still-we-go-backwards/) and [Bruce Lawson (of Opera)](https://dev.opera.com/blog/on-a-moratorium-on-new-browser-features/). I guess I’m saying I see both sides. Like [Chris Coyier](http://chriscoyier.net/), I live in [a world filled with varying shades of grey](https://css-tricks.com/the-gray-gray-ghost-that-i-call-home/) rather than stark black & white.
 
+<!-- more -->
+
 ## New Features vs. Interoperability
 
 One of the arguments PPK makes is against browsers competing on features. It really rang true to me: 

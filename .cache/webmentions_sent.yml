@@ -1412,6 +1412,9 @@ http://www.aaron-gustafson.com/notebook/native-vs-stylable-tug-of-war/:
 - http://www.brucelawson.co.uk/2014/native-experience-vs-styling-select-boxes/
 - http://w3.org
 - http://whatwg.org
+- http://www.brucelawson.co.uk/2014/native-experience-vs-styling-select-boxes/
+- http://w3.org
+- http://whatwg.org
 http://www.aaron-gustafson.com/notebook/fixed-and-inflexible/:
 - http://blog.cloudfour.com/fixed-and-inflexible/
 http://www.aaron-gustafson.com/notebook/the-network-effect/:
@@ -1422,6 +1425,10 @@ http://www.aaron-gustafson.com/notebook/the-network-effect/:
 - http://www.theguardian.com/technology/2014/jan/28/sky-broadband-blocks-jquery-web-critical-plugin
 - http://en.wikipedia.org/wiki/Demolition_derby
 http://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/:
+- http://2014.blendconf.com/
+- http://www.hanselman.com/
+- http://dowebsitesneedtolookexactlythesameineverybrowser.com/
+- http://aaron-gustafson.com/notebook/2014/the-network-effect/
 - http://2014.blendconf.com/
 - http://www.hanselman.com/
 - http://dowebsitesneedtolookexactlythesameineverybrowser.com/
@@ -2836,6 +2843,7 @@ http://www.aaron-gustafson.com/notebook/doug-kerney-freaks-over-internet-explore
 - http://player.theplatform.com/p/NnzsPC/widget/select/media/Rq9eJUYppzJM
 - http://player.theplatform.com/p/NnzsPC/widget/select/media/Rq9eJUYppzJM
 - http://player.theplatform.com/p/NnzsPC/widget/select/media/Rq9eJUYppzJM
+- http://player.theplatform.com/p/NnzsPC/widget/select/media/Rq9eJUYppzJM
 http://www.aaron-gustafson.com/notebook/quantity-queries-where-have-you-been-all-my-life/:
 - http://twitter.com/heydonworks
 - http://alistapart.com/article/quantity-queries-for-css
@@ -2844,6 +2852,7 @@ http://www.aaron-gustafson.com/notebook/quantity-queries-where-have-you-been-all
 - http://codepen.io/danielguillan/pen/GgBOxm/'>Quantity
 - http://codepen.io/danielguillan'>@danielguillan</a>
 - http://codepen.io'>CodePen</a>.</p>
+- http://assets.codepen.io/assets/embed/ei.js
 - http://assets.codepen.io/assets/embed/ei.js
 - http://assets.codepen.io/assets/embed/ei.js
 - http://assets.codepen.io/assets/embed/ei.js
@@ -3229,6 +3238,7 @@ http://www.aaron-gustafson.com/notebook/collected-reactions-to-build/:
 - http://build/](http://aka.ms/ktlsyd
 - http://build/](http://aka.ms/ktlsyd
 - http://build/](http://aka.ms/ktlsyd
+- http://build/](http://aka.ms/ktlsyd
 http://www.aaron-gustafson.com/notebook/email-design/:
 - http://www.tedgoas.com/blog/email-design/
 - http://www.twitter.com/tedgoas
@@ -3268,6 +3278,10 @@ http://www.aaron-gustafson.com/notebook/slides-from-my-talk-at-number-msedgesumm
 - http://www.slideshare.net/slideshow/embed_code/key/H1xKkpN0KIoXq3
 - https://channel9.msdn.com/Events/WebPlatformSummit/2015
 - https://channel9.msdn.com/Events/WebPlatformSummit/2015/Falling-in-love-with-forms
+- http://www.slideshare.net/slideshow/embed_code/key/H1xKkpN0KIoXq3
+- http://sec.ch9.ms/sessions/websummit/2015/GA05-LG.jpg
+- http://video.ch9.ms/sessions/websummit/2015/GA05.mp4
+- http://video.ch9.ms/sessions/websummit/2015/GA05-mobile.mp4
 - http://www.slideshare.net/slideshow/embed_code/key/H1xKkpN0KIoXq3
 - http://sec.ch9.ms/sessions/websummit/2015/GA05-LG.jpg
 - http://video.ch9.ms/sessions/websummit/2015/GA05.mp4
@@ -3884,3 +3898,34 @@ http://www.aaron-gustafson.com/notebook/text-justification-and-accessibility/:
 - http://www.accessiq.org/news/news-features/2015/08/text-justification-and-accessibility
 http://www.aaron-gustafson.com/notebook/this-is-what-android-fragmentation-looks-like-in-2015/:
 - http://thenextweb.com/insider/2015/08/05/this-is-what-android-fragmentation-looks-like-in-2015/
+http://www.aaron-gustafson.com/notebook/ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web/:
+- http://www.quirksmode.org/about/
+- http://www.quirksmode.org/blog/archives/2015/07/stop_pushing_th.html
+- https://jakearchibald.com/2015/if-we-stand-still-we-go-backwards/
+- https://dev.opera.com/blog/on-a-moratorium-on-new-browser-features/
+- http://chriscoyier.net/
+- https://css-tricks.com/the-gray-gray-ghost-that-i-call-home/
+- http://snook.ca/archives/html_and_css/vendor-prefixes-competing
+- https://dev.opera.com/articles/opera-mobile-emulator-webkit-prefix-support/
+- https://wiki.mozilla.org/Platform/Layout/CSS_Compatibility
+- https://lists.w3.org/Archives/Public/www-style/2012Feb/0313.html
+- http://christianheilmann.com/2015/07/17/the-full-stackoverflow-developer/
+- http://www.howtogeek.com/139736/how-to-change-hidden-advanced-settings-in-any-browser/
+- http://www.otsukare.info/
+- http://www.otsukare.info/2015/07/29/vendor-prefixes-market
+- https://wiki.mozilla.org/Compatibility/Mobile/Non_Standard_Compatibility
+- https://twitter.com/jacobrossi/status/614544147941355520
+- http://alistapart.com/article/prefix-or-posthack
+- https://adactio.com/journal/8245
+- https://infrequently.org/2007/09/slides-from-my-standards-heresy-talk/
+- http://lanyrd.com/2015/web-design-day/sdpbgz/
+- https://www.google.com/search?q=sara+soueidan+svg
+- https://www.google.com/search?q=rachel+nabors+css+animation
+- https://www.google.com/search?q=Zoe+Mickley+Gillenwater+flexbox
+- http://www.quirksmode.org/blog/archives/2015/05/tools_dont_solv.html
+- http://kryogenix.org/code/browser/everyonehasjs.html
+- http://www.theverge.com/2015/7/20/9002721/the-mobile-web-sucks
+- http://www.soasta.com/blog/page-bloat-average-web-page-2-mb/
+- http://www.yottaa.com/bid/277715/Why-Your-Website-Is-Slow-Poor-JavaScript-Performance
+- http://farukat.es/journal/2015/02/708-how-flipboard-chose-form-over-function-their-web-version
+- http://sighjavascript.tumblr.com/
