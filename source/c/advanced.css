@@ -415,6 +415,17 @@
     Subsections
 \*------------------------------------*/
 /*------------------------------------*\
+    Pullquotes
+\*------------------------------------*/
+@media (min-width: 43.125em) {
+  .quotable {
+    float: right;
+    margin-left: 22px;
+    margin-left: 1.375rem;
+    width: 50%;
+  }
+}
+/*------------------------------------*\
     $PAGES
 	Page-specific styles
 	(use sparingly)

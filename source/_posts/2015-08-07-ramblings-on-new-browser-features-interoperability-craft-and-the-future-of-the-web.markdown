@@ -15,9 +15,13 @@ Last week [Peter-Paul Koch (PPK)](http://www.quirksmode.org/about/) posted [a le
 
 One of the arguments PPK makes is against browsers competing on features. It really rang true to me: 
 
-> I call for a moratorium on new browser features of about a year. Let’s postpone all completely new features that as of right now don’t yet work in any browser.
+<blockquote>
 
-> Browsers are encouraged to add features that are already supported by other browsers, and to write bug fixes. In fact, finding time for these unglorious but necessary jobs would be an important advantage of the moratorium. As an added bonus it would decrease the amount of tools web developers need.
+I call for a moratorium on new browser features of about a year. Let’s postpone all completely new features that as of right now don’t yet work in any browser.
+
+Browsers are encouraged to add features that are already supported by other browsers, and to write bug fixes. In fact, finding time for these unglorious but necessary jobs would be an important advantage of the moratorium. As an added bonus it would decrease the amount of tools web developers need.
+
+</blockquote>
 
 [Back in January](/notebook/competing-on-chrome/), I wrote about how I was excited by Microsoft’s announcement of "Project Spartan" (now "Microsoft Edge") and it’s focus on interoperability. Interoperability’s a long word, so I’m gonna go with "interop" from here on out.
 

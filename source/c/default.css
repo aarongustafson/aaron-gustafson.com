@@ -1085,6 +1085,38 @@ div.gist .blob-code {
 }
 
 /*------------------------------------*\
+    Pullquotes
+\*------------------------------------*/
+.quotable {
+  display: block;
+  font-size: 1.25em;
+  margin: 33px 0 22px;
+  margin: 2.0625rem 0 1.375rem;
+  padding: 22px 0;
+  padding: 1.375rem 0;
+  border: solid #DDD;
+  border-width: 2px 0;
+  position: relative;
+}
+.quotable:before, .quotable:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: .9em;
+  font-size: 2em;
+}
+.quotable:before {
+  content: '\201C';
+  top: -.5em;
+}
+.quotable:after {
+  content: '\201D';
+  bottom: -.5em;
+}
+
+/*------------------------------------*\
     $PAGES
 	Page-specific styles
 	(use sparingly)
@@ -1426,6 +1458,9 @@ div.gist .blob-code {
 \*------------------------------------*/
 /*------------------------------------*\
     Subsections
+\*------------------------------------*/
+/*------------------------------------*\
+    Pullquotes
 \*------------------------------------*/
 /*------------------------------------*\
     $PAGES
