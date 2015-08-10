@@ -13,6 +13,7 @@
 		re_headings = /^h[1-6]$/,
 		$quote,
 		quote,
+		last,
 		$template,
 		$parent,
 		$current_sibling,
@@ -29,7 +30,9 @@
 		{
 			$container = $quotes[q];
 			$quote = $template.cloneNode( true );
-			$quote.querySelector('p').innerText = $container.innerText;
+			quote = $container.innerText.split(' ');
+			last = quote.pop();
+			$quote.querySelector('p').innerText = quote + '&nbsp;' + last;
 
 			// make sure we’re at a block container
 			while ( ! $container.nodeName.toLowerCase().match( re_blocks ) )
