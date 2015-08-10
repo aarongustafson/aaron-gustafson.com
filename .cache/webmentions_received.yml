@@ -3734,6 +3734,10 @@ http://www.aaron-gustafson.com/notebook/who-should-pay/:
     https://twitter.com/helloanselm/status/624110484669775872: |-
       <li id="webmention-624110484669775872" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/helloanselm"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/613437424635670528/dJQk2X65_normal.jpg" alt="" title="Anselm Hannemann"><b class="p-name">Anselm Hannemann</b></a></div><div class="webmention__content p-content"><p>Who should pay? <a href="http://t.co/9XUur7LBxJ">http://t.co/9XUur7LBxJ</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-07-23T02:55:09-04:00">23 July 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/helloanselm/status/624110484669775872">Permalink</a></div></article></li>
+  '2015-08-08':
+    https://twitter.com/wernancheta/status/630034459547467776: |-
+      <li id="webmention-630034459547467776" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/wernancheta"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/2585189311/7q7dmz2h78lv32f8tw78_normal.jpeg" alt="" title="Wern Ancheta"><b class="p-name">Wern Ancheta</b></a></div><div class="webmention__content p-content"><p>Who should pay? <a href="http://t.co/9iylR6xayA">http://t.co/9iylR6xayA</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-08T11:14:55-04:00">8 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/wernancheta/status/630034459547467776">Permalink</a></div></article></li>
 http://aaron-gustafson.com/notebook/consider-how-your-forms-read/:
   '2015-02-23':
     '569921701347241985': <li id="webmention-569921701347241985" class="webmentions__item"><article
@@ -6063,11 +6067,11 @@ http://www.aaron-gustafson.com/notebook/links/braille-tablet-convert-text-blind-
 http://www.aaron-gustafson.com/notebook/unum-releases-their-pattern-libraries/:
   '2015-08-04':
     https://twitter.com/AaronGustafson/status/628636600520544257: |-
-      <li id="webmention-628636600520544257" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/624234118566531073/V08FeIk8_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@anna_debenham <a href="http://t.co/yFoFzVYk1w">http://t.co/yFoFzVYk1w</a></p>
+      <li id="webmention-628636600520544257" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/630053493575950336/QSUbB-hv_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@anna_debenham <a href="http://t.co/yFoFzVYk1w">http://t.co/yFoFzVYk1w</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-04T14:40:19-04:00">4 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/628636600520544257">Permalink</a></div></article></li>
   '2015-08-05':
     https://twitter.com/AaronGustafson/status/628882642331639808: |-
-      <li id="webmention-628882642331639808" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/624234118566531073/V08FeIk8_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Unum Releases Their Pattern Libraries <a href="http://t.co/yFoFzVYk1w">http://t.co/yFoFzVYk1w</a></p>
+      <li id="webmention-628882642331639808" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/630053493575950336/QSUbB-hv_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Unum Releases Their Pattern Libraries <a href="http://t.co/yFoFzVYk1w">http://t.co/yFoFzVYk1w</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-05T06:58:00-04:00">5 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/628882642331639808">Permalink</a></div></article></li>
     '628882642331639808': <li id="webmention-628882642331639808" class="webmentions__item"><article
       class="h-cite webmention webmention--author-starts webmention--title-only"><div
@@ -6166,5 +6170,79 @@ http://www.aaron-gustafson.com/notebook/ramblings-on-new-browser-features-intero
       <p>Amen</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-07T13:48:35-04:00">7 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/skeeter/status/629710745421352960">Permalink</a></div></article></li>
     https://twitter.com/AaronGustafson/status/629701993716690944: |-
-      <li id="webmention-629701993716690944" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/624234118566531073/V08FeIk8_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Ramblings on New Browser Features, Interoperability, Craft, and the Future of the Web <a href="http://t.co/brJ1AYkJ0T">http://t.co/brJ1AYkJ0T</a></p>
+      <li id="webmention-629701993716690944" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/630053493575950336/QSUbB-hv_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Ramblings on New Browser Features, Interoperability, Craft, and the Future of the Web <a href="http://t.co/brJ1AYkJ0T">http://t.co/brJ1AYkJ0T</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-07T13:13:49-04:00">7 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/629701993716690944">Permalink</a></div></article></li>
+    '629768275245797380': <li id="webmention-629768275245797380" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/STxN"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/STxN/profile_image?size=original"
+      alt="" title="Stijn Michiels"><b class="p-name">Stijn Michiels</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/STxN/status/629768275245797380">Stijn
+      Michiels reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-07T17:37:12-04:00">7 August 2015</time></div></article></li>
+  '2015-08-09':
+    https://twitter.com/swijeyakumar/status/630250054930948096: |-
+      <li id="webmention-630250054930948096" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/swijeyakumar"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1164584510/IMG_0255__427x640__normal.jpg" alt="" title="Sharmila Wijeyakumar"><b class="p-name">Sharmila Wijeyakumar</b></a></div><div class="webmention__content p-content"><p>Ramblings on New Browser Features, Interoperability, Craft, and the Future of the Web <a href="http://t.co/YEISqAwsZO">http://t.co/YEISqAwsZO</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-09T01:31:37-04:00">9 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/swijeyakumar/status/630250054930948096">Permalink</a></div></article></li>
+    '630545671561449474': <li id="webmention-630545671561449474" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/frankolivier"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/frankolivier/profile_image?size=original"
+      alt="" title="Frank Olivier"><b class="p-name">Frank Olivier</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/frankolivier/status/630545671561449474">Frank
+      Olivier reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-09T21:06:17-04:00">9 August 2015</time></div></article></li>
+    '630563149016514560': |-
+      <li id="webmention-630563149016514560" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.textslashplain.com/"><img class="webmention__author__photo u-photo" src="https://twitter.com/ericlaw/profile_image?size=original" alt="" title="Eric Lawrence"><b class="p-name">Eric Lawrence</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> Broken link in your “Ramblings on New Browser Features…” article; I was curious about TBL’s “&lt;HEADER&gt;” (vs. HEAD)</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-09T22:15:44-04:00">9 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/ericlaw/status/630563149016514560">Permalink</a></div></article></li>
+    '630563334547312640': <li id="webmention-630563334547312640" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.textslashplain.com/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/ericlaw/profile_image?size=original"
+      alt="" title="Eric Lawrence"><b class="p-name">Eric Lawrence</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/ericlaw/status/630563334547312640">Eric
+      Lawrence reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-09T22:16:28-04:00">9 August 2015</time></div></article></li>
+    '630571414152544256': <li id="webmention-630571414152544256" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://blog.hackedbrain.com/"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/drub0y/profile_image?size=original"
+      alt="" title="Drew Marsh"><b class="p-name">Drew Marsh</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/drub0y/status/630571414152544256">Drew
+      Marsh reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-09T22:48:35-04:00">9 August 2015</time></div></article></li>
+  '2015-08-08':
+    https://twitter.com/faraj51989/status/629954236357324800: |-
+      <li id="webmention-629954236357324800" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/faraj51989"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/552480096762621952/V2xgwLRl_normal.jpeg" alt="" title="Mohamed Faraj"><b class="p-name">Mohamed Faraj</b></a></div><div class="webmention__content p-content"><p>Ramblings on New Browser Features, Interoperability, Craft, and the Future of the Web <a href="http://t.co/hWHDC5rPdk">http://t.co/hWHDC5rPdk</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-08T05:56:08-04:00">8 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/faraj51989/status/629954236357324800">Permalink</a></div></article></li>
+    https://twitter.com/shane_tomlinson/status/629937270217383936: |-
+      <li id="webmention-629937270217383936" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/shane_tomlinson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1765997904/shane_tomlinson_small_normal.jpg" alt="" title="Shane Tomlinson"><b class="p-name">Shane Tomlinson</b></a></div><div class="webmention__content p-content"><p>An incredibly thoughtful piece on new browser features, interop, and developers by @AaronGustafson - <a href="http://t.co/BF00x5mvnB">http://t.co/BF00x5mvnB</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-08T04:48:43-04:00">8 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/shane_tomlinson/status/629937270217383936">Permalink</a></div></article></li>
+    '629875080093306880': <li id="webmention-629875080093306880" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://authenticpros.com/jenstrickland"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/inkpixelspaper/profile_image?size=original"
+      alt="" title="★ jen strickland ★"><b class="p-name">★ jen strickland ★</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/inkpixelspaper/status/629875080093306880">★
+      jen strickland ★ reposted this.</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-08-08T00:41:36-04:00">8
+      August 2015</time></div></article></li>
+    '629701993716690944': <li id="webmention-629701993716690944" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/GARIupdates"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/GARIupdates/profile_image?size=original"
+      alt="" title="MobileManufacturers"><b class="p-name">MobileManufacturers</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/629701993716690944">MobileManufacturers
+      likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-08T13:21:55-04:00">8 August 2015</time></div></article></li>
+    81210: <li id="webmention-81210" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://davidakennedy.com/2015/08/08/new-browser-features-interoperability-craft-and-the-future-of-the-web/">New
+      Browser Features, Interoperability, Craft, and the Future of the Web | David
+      A. Kennedy</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-08T22:27:58-04:00">8 August 2015</time></div></article></li>
+http://www.aaron-gustafson.com/notebook/links/windows-10-microsoft-edge-browser-war/:
+  '2015-08-07':
+    https://twitter.com/AaronGustafson/status/629864217437433856: |-
+      <li id="webmention-629864217437433856" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/630053493575950336/QSUbB-hv_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@slightlylate That just happens to be the title of the article, I wrote more commentary on the linkblog: <a href="http://t.co/OrAfPWTO5r">http://t.co/OrAfPWTO5r</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-07T23:58:26-04:00">7 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/629864217437433856">Permalink</a></div></article></li>

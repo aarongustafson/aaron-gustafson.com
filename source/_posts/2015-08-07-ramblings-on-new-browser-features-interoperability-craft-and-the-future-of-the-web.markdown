@@ -73,7 +73,7 @@ Underpinning this whole "native vs. web" thing is, I think, a feeling many of us
 
 [^2]: In the other sense of the word.
 
-The web is changing. In some ways it’s changing for the better, in some ways for the worse. It’s a far different beast today than [when Tim Berners-Lee typed that first `<HEADER>`](info.cern.ch/hypertext/WWW/TheProject.html) and you can certainly do a lot more in the browser now than you could when I first picked up HTML. But I don’t think halting progress on the web is desirable.
+The web is changing. In some ways it’s changing for the better, in some ways for the worse. It’s a far different beast today than [when Tim Berners-Lee typed that first `<HEADER>`](http://info.cern.ch/hypertext/WWW/TheProject.html) and you can certainly do a lot more in the browser now than you could when I first picked up HTML. But I don’t think halting progress on the web is desirable.
 
 As Jake points out in his response, stagnation is not a good policy. Stagnation pretty much killed BlackBerry. It also led to a lot of developer frustration in the guise of IE 6.
 
