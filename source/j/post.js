@@ -32,7 +32,7 @@
 			$quote = $template.cloneNode( true );
 			quote = $container.innerText.split(' ');
 			last = quote.pop();
-			$quote.querySelector('p').innerText = quote.join(' ') + '&nbsp;' + last;
+			$quote.querySelector('p').innerText = quote.join(' ') + '\xA0' + last;
 
 			// make sure we’re at a block container
 			while ( ! $container.nodeName.toLowerCase().match( re_blocks ) )
@@ -64,7 +64,6 @@
 				// no blockquotes next to blockquotes
 				while ( $current_sibling.nodeName.toLowerCase() == 'blockquote' )
 				{
-					console.log('found a blockquote, skipping ahead again');
 					$current_sibling = $current_sibling.nextElementSibling.nextElementSibling;
 				}				
 			}
@@ -304,7 +303,6 @@
 
             if ( activity )
             {
-                console.log( 'activity!' );
                 title = author + ' ' + title;
                 $mention.className += ' webmention--author-starts';
             }

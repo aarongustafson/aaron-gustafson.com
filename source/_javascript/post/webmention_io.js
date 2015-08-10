@@ -176,7 +176,6 @@
 
             if ( activity )
             {
-                console.log( 'activity!' );
                 title = author + ' ' + title;
                 $mention.className += ' webmention--author-starts';
             }
