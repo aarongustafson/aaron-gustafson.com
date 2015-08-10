@@ -32,7 +32,7 @@
 			$quote = $template.cloneNode( true );
 			quote = $container.innerText.split(' ');
 			last = quote.pop();
-			$quote.querySelector('p').innerText = quote + '&nbsp;' + last;
+			$quote.querySelector('p').innerText = quote.join(' ') + '&nbsp;' + last;
 
 			// make sure we’re at a block container
 			while ( ! $container.nodeName.toLowerCase().match( re_blocks ) )
