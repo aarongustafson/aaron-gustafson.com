@@ -10,7 +10,7 @@
 
     	font-family: $font-stack-serif;
     	font-weight: $font-weight-serif;
-    	line-height: 1.25;
+    	line-height: $line-height-headings;
     	
     	.wf-active & {
         	word-spacing: 2px;

@@ -34,3 +34,27 @@
     }
     
 }
+
+@include breakup-breakpoint( "full" ) {
+
+    .entry {
+
+        position: relative;
+
+        &__header &__meta {
+
+            @include rem( font-size, $font-size-small );
+            
+            border-left: 1px solid;
+            padding: .4em 1em;
+            margin-left: 1em;
+            @include rem( margin-top, $default-spacing );
+            width: 25%;
+            
+            position: absolute;
+            left: 100%;
+
+        }
+    }
+    
+}

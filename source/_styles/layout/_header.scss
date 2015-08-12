@@ -5,18 +5,50 @@
 @include breakup-breakpoint( "global" ) {
 
     .banner {
-        
+
+        text-align: center;
+
         * + * {
             margin: 0;
+        }
+
+        .layout-container {
+            max-width: 100%;
+        }
+
+    }
+
+    .site-title {
+
+        font-family: $font-stack-body;
+        font-weight: normal;
+        letter-spacing: 0.1em;
+        word-spacing: 0.25em;
+        text-transform: uppercase;
+        
+        a {
+            background: $color-grey;
+            color: $color-grey-light;
+            
+            border: 0;
+            padding: .15em 0;
+            display: block;
+            
+            &:hover,
+            &:focus {
+                background: $color-black;
+                color: $color-white;
+            }
         }
     }
 
     .alert {
+
         background: $color-black;
         color: $color-white;
     
         @include rem( margin, $margin-default );
-        @include rem( padding, 5 );
+        @include rem( padding, 7 5 );
         text-align: center;
     
         a {
@@ -25,6 +57,14 @@
         }
         strong {
             font-weight: normal;
+        }
+
+        & + header {
+            @include rem( margin-top, 0 - $default-spacing );
+
+            .site-title {
+                @include rem( margin-bottom, $default-spacing / 2 );
+            }
         }
     }
     

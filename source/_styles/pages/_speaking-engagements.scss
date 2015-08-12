@@ -19,7 +19,7 @@
 		}
 
 		@include breakup-breakpoint('full') {
-			@include rem( margin, 20 -150 0 );
+			@include rem( margin, 20 0 0 );
 		}
 
 	}

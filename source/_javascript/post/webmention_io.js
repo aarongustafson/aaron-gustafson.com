@@ -156,10 +156,17 @@
             author = data.author ? data.author.name : false,
             author_photo = data.author ? data.author.photo : false,
             pubdate = data.published || mention.verified_date,
-            display_date = '';
+            display_date = '',
+            xhr;
         
         $item.id = 'webmention-' + id;
         $item.appendChild( $mention );
+
+        // no data, skip it
+        if ( ! title && ! content )
+        {
+            return;
+        }
 
         if ( author )
         {

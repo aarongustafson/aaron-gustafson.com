@@ -16,6 +16,10 @@
         a[rev=footnote] {
             margin-left: .5em;
         }
+
+        * + * {
+            margin-top: 0;
+        }
         
     }
 

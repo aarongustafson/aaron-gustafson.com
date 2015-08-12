@@ -1,3 +1,17 @@
+- title: 18F Speaker Series
+  url: https://www.eventbrite.com/e/18f-design-presents-aaron-gustafson-registration-17919708330
+  date: 2015-08-12 09:00:00 -0400
+  location: Washington, DC USA
+  talks:
+    - title: Beyond Responsive
+
+- title: An Event Apart
+  url: http://aneventapart.com/event/washington-dc-2015
+  date: 2015-08-10 09:00:00 -0400
+  location: Washington, DC USA
+  talks:
+    - title: Falling in Love with Forms
+
 - title: Responsive Day Out
   url: http://lanyrd.com/2015/responsive-day-out-3/
   date: 2015-06-19 09:00:00 -0400

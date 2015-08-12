@@ -18,7 +18,8 @@
 
 // Default Text
 @include breakup-create-placeholder( text ) {
-	font-weight: normal;
+	@include rem( font-size, $font-size-body );
+    font-weight: normal;
 	line-height: $line-height-default;
 
 	.wf-active & {

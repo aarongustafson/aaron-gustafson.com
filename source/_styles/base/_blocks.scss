@@ -14,7 +14,7 @@
     
 	blockquote {
 
-	    @include rem( font-size, $font-size-default );
+	    @include rem( font-size, $font-size-body );
 	    font-family: $font-stack-sansserif;
 	    font-style: italic; 
 	    

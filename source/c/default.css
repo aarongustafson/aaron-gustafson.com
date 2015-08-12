@@ -182,6 +182,8 @@ div.gsc-url-top {
     Placeholders
 \*------------------------------------*/
 html body {
+  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: normal;
   line-height: 1.4;
 }
@@ -210,8 +212,8 @@ html body {
   font-smoothing: antialiased;
 }
 table thead, .listing__item__meta {
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
@@ -267,7 +269,7 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
   font-family: "quatro-slab", Georgia, serif;
   font-weight: 500;
-  line-height: 1.25;
+  line-height: 1.1;
 }
 .wf-active h1, .wf-active h2, .wf-active h3, .wf-active h4, .wf-active h5, .wf-active h6 {
   word-spacing: 2px;
@@ -278,19 +280,19 @@ h1 + *, h2 + *, h3 + *, h4 + *, h5 + *, h6 + * {
 }
 
 h1 {
-  font-size: 32px;
-  font-size: 2rem;
+  font-size: 48px;
+  font-size: 3rem;
 }
 
 section > h1,
 h2 {
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 32px;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 /*------------------------------------*\
@@ -307,8 +309,8 @@ h3 {
 }
 
 blockquote {
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
   font-style: italic;
   margin-left: auto;
@@ -455,8 +457,8 @@ i {
 }
 
 sub, sup {
-  font-size: 10px;
-  font-size: 0.625rem;
+  font-size: 12px;
+  font-size: 0.75rem;
   font-style: inherit;
   font-weight: inherit;
   position: relative;
@@ -537,8 +539,8 @@ picture {
 }
 
 figcaption {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
   font-style: italic;
   text-align: center;
@@ -563,8 +565,8 @@ table {
 }
 table thead {
   border-bottom: 3px solid #DDD;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
 }
 table thead th {
@@ -576,8 +578,8 @@ table thead th p {
   margin: 0;
 }
 table tbody {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 24px;
+  font-size: 1.5rem;
 }
 table tr {
   border-top: 1px solid #DDD;
@@ -626,8 +628,8 @@ form li {
   margin: 0;
 }
 .fields__group label {
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: bold;
   display: block;
 }
@@ -635,8 +637,8 @@ form li {
 .fields__group select,
 .fields__group textarea {
   color: #DDD;
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -659,13 +661,13 @@ form li {
   -webkit-appearance: textfield;
 }
 .fields__group select {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 24px;
+  font-size: 1.5rem;
   max-width: 100%;
 }
 .fields__group__note {
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 .fields__required {
   color: #f00;
@@ -679,8 +681,8 @@ form li {
 
 @-moz-document url-prefix() {
   .fields select {
-    font-size: 12px;
-    font-size: 0.75rem;
+    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 /*------------------------------------*\
@@ -707,14 +709,8 @@ form li {
   display: block;
   clear: both;
 }
-.layout-container__primary {
-  margin-top: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.layout-container__secondary {
-  margin-top: 0;
+.layout-container__primary, .layout-container__secondary {
+  margin: 0 auto;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -723,8 +719,33 @@ form li {
 /*------------------------------------*\
     Header
 \*------------------------------------*/
+.banner {
+  text-align: center;
+}
 .banner * + * {
   margin: 0;
+}
+.banner .layout-container {
+  max-width: 100%;
+}
+
+.site-title {
+  font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  word-spacing: 0.25em;
+  text-transform: uppercase;
+}
+.site-title a {
+  background: #666;
+  color: #DDD;
+  border: 0;
+  padding: .15em 0;
+  display: block;
+}
+.site-title a:hover, .site-title a:focus {
+  background: #2c2825;
+  color: #fff;
 }
 
 .alert {
@@ -732,8 +753,8 @@ form li {
   color: #fff;
   margin: 0 0 22px;
   margin: 0 0 1.375rem;
-  padding: 5px;
-  padding: 0.3125rem;
+  padding: 7px 5px;
+  padding: 0.4375rem 0.3125rem;
   text-align: center;
 }
 .alert a {
@@ -742,6 +763,14 @@ form li {
 }
 .alert strong {
   font-weight: normal;
+}
+.alert + header {
+  margin-top: -22px;
+  margin-top: -1.375rem;
+}
+.alert + header .site-title {
+  margin-bottom: 11px;
+  margin-bottom: 0.6875rem;
 }
 
 /*------------------------------------*\
@@ -772,8 +801,8 @@ form li {
     Modules
 \*------------------------------------*/
 .module__title {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 24px;
+  font-size: 1.5rem;
 }
 .module * + * {
   margin-top: 11px;
@@ -784,8 +813,8 @@ form li {
     Listing
 \*------------------------------------*/
 .listing__item__title {
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 20px;
+  font-size: 1.25rem;
 }
 .listing__item__meta {
   color: #666;
@@ -894,13 +923,16 @@ form li {
     Footnotes
 \*------------------------------------*/
 .footnotes ol {
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   margin-left: 0;
   padding-left: 2em;
 }
 .footnotes a[rev=footnote] {
   margin-left: .5em;
+}
+.footnotes * + * {
+  margin-top: 0;
 }
 
 /*------------------------------------*\
@@ -948,8 +980,8 @@ form li {
     Gist
 \*------------------------------------*/
 div.gist {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   margin: 0 0 22px;
   margin: 0 0 1.375rem;
 }
@@ -1097,6 +1129,7 @@ div.gist .blob-code {
   border: solid #DDD;
   border-width: 2px 0;
   position: relative;
+  margin-right: -25%;
 }
 .quotable:before, .quotable:after {
   display: block;

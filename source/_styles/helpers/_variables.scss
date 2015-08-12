@@ -71,18 +71,19 @@ $font-weight-mono: 500;
 
 // Font sizes
 $font-size-default: 16;
-$font-size-h1: 32;
-$font-size-h2: 24;
-$font-size-h3: 18;
-$font-size-body: $font-size-default;
+$font-size-h1: 48;
+$font-size-h2: 32;
+$font-size-h3: 24;
+$font-size-body: 20;
 $font-size-nav: 18;
-$font-size-caption: 14;
-$font-size-code: 14;
-$font-size-small: 12;
-$font-size-tiny: 10;
+$font-size-caption: 18;
+$font-size-code: 18;
+$font-size-small: 14;
+$font-size-tiny: 12;
 
 // Line heights
 $line-height-default: 1.4;
+$line-height-headings: 1.1;
 
 // spacing
 $default-spacing: 22;

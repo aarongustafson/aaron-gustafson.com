@@ -1,10 +1,16 @@
-<div class="alert"><strong>This site is <a href="/notebook/a-grand-experiment/">undergoing an open redesign</a>, so if it looks strange, that’s why.</strong></div>
-		
+{% if page.url == '/index.html' %}
+	{% include alert.html %}
+{% endif %}
+
 <header role="banner" class="banner">
 	<div class="layout-container">
-		<h1><a href="{{ root_url }}/">{{ site.title }}</a></h1>
-		{% if site.subtitle %}
-			<h2>{{ site.subtitle }}</h2>
+		<h1 class="site-title"><a href="{{ root_url }}/">{{ site.title }}</a></h1>
+		{% if page.url == '/index.html' %}
+			<h2 class="site-subtitle">{{ site.subtitle }}</h2>
 		{% endif %}
 	</div>
 </header>
+
+{% if page.url != '/index.html' %}
+	{% include alert.html %}
+{% endif %}
