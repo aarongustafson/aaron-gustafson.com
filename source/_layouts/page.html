@@ -8,7 +8,7 @@ layout: default
 	  	{% if page.title %}
 			{% unless page.show_title == false %}
 			  	<header>
-			    	<h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+			    	<h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase | widont }}{% else %}{{ page.title | widont }}{% endif %}</h1>
 			    	{% if page.date %}<p class="meta">{% include post/date.html %}</p>{% endif %}
 			  	</header>
 			{% endunless %}

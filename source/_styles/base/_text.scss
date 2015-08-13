@@ -49,6 +49,11 @@
     }
 
 
+    time {
+        white-space: nowrap;
+    }
+
+
     // Hidden
     .hidden {
         @include breakup-placeholder( hidden );

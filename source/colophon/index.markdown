@@ -6,6 +6,7 @@ comments: false
 sharing: false
 footer: false
 show_title: false
+sidebar: false
 ---
 
 # Colophon

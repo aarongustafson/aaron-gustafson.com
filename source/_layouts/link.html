@@ -7,22 +7,18 @@ single: true
 	<article role="article" class="layout-container__primary h-entry">
 		<div class="entry">
 			<header class="entry__header">
-		     	<h1 class="entry__title p-name"><a rel="external" href="{{ page.ref_url }}">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</a></h1>
-				<p class="entry__meta">Published in {{ page.ref_source }}
-					|
-					{{ site.data.microcopy.links.date_prefix }} {% include post/date.html %} 
-					<b class="hidden">by <a class="p-author h-card" href="/about">Aaron Gustafson</a></b>
+		     	<h1 class="entry__title p-name"><a rel="external" href="{{ page.ref_url }}">{% if site.titlecase %}{{ page.title | titlecase | widont }}{% else %}{{ page.title | widont }}{% endif %}</a></h1>
+				<p class="entry__meta">
+					Published in {{ page.ref_source }}
+					<br>
+					{{ site.data.microcopy.links.date_prefix }} {% include post/date.html %} <b class="hidden">by <a class="p-author h-card" href="/about">Aaron Gustafson</a></b>
 					{% if page.via %}
-						<br><abbr title="via">↬</abbr> <a href="{{ post.via.url }}">{{ page.via.name }}</a>
+						<br>
+						<abbr title="via">↬</abbr> <a href="{{ post.via.url }}">{{ page.via.name }}</a>
 					{% endif %}
 				</p>
 		  	</header>
 	
-			{% if page.reply_to_url %}
-				<p class="entry__in-reply-to">You are reading a reply to 
-					<a class="u-in-reply-to" href="{{ page.reply_to_url }}">{{ page.reply_to_title }}</a></p>
-	    	{% endif %}
-
 			<div class="entry__content e-content">
 				{{ content }}
 				<p class="read-on"><a rel="original-article" href="{{ page.ref_url }}">Read on {{ page.ref_source }}</a></p>

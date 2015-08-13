@@ -191,7 +191,7 @@ html body {
   word-spacing: 2px;
 }
 nav ol, nav
-ul, .fields, .listing {
+ul, .fields, .listing, .entry__jump-links {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
@@ -427,6 +427,15 @@ a[rel="original-article"]::after {
   transform: translateX(-0.25em) rotate(-45deg) translateY(0.25em);
 }
 
+@supports (background-image: linear-gradient(black, white)) {
+  a:link,
+  a:visited {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(85%, transparent), color-stop(86%, rgba(52, 173, 35, 0.5)), color-stop(87%, transparent));
+    background-image: -webkit-linear-gradient(transparent 85%, rgba(52, 173, 35, 0.5) 86%, transparent 87%);
+    background-image: linear-gradient(transparent 85%, rgba(52, 173, 35, 0.5) 86%, transparent 87%);
+    border-bottom-width: 0 !important;
+  }
+}
 /*------------------------------------*\
     Text-level semantics
 \*------------------------------------*/
@@ -470,6 +479,10 @@ sub {
 
 sup {
   bottom: 1em;
+}
+
+time {
+  white-space: nowrap;
 }
 
 /*------------------------------------*\
@@ -744,7 +757,7 @@ form li {
   display: block;
 }
 .site-title a:hover, .site-title a:focus {
-  background: #2c2825;
+  background: #34AD23;
   color: #fff;
 }
 
@@ -958,6 +971,12 @@ form li {
   color: #666;
   margin-top: 0;
 }
+.entry__jump-links {
+  margin-top: 0;
+}
+.entry__jump {
+  margin: 0;
+}
 .entry__footer {
   border-top: 1px solid #DDD;
   padding-top: 22px;
@@ -1040,6 +1059,8 @@ div.gist .blob-code {
     Webmentions
 \*------------------------------------*/
 .webmentions {
+  font-size: 16px;
+  font-size: 1rem;
   margin-top: 11px;
   margin-top: 0.6875rem;
 }
@@ -1062,6 +1083,11 @@ div.gist .blob-code {
   border-top: 0;
 }
 
+.webmention__author {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
 .webmention__author__photo {
   border-radius: 3px;
   display: block;
@@ -1079,6 +1105,8 @@ div.gist .blob-code {
 }
 .webmention__meta {
   color: #666;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 .webmention--activity .webmention__author, .webmention--activity .webmention__title {
   display: inline;

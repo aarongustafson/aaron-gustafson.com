@@ -7,6 +7,7 @@
     $avatar-width: 48;
     
     .webmentions {
+        @include rem( font-size, $font-size-default );
         @include rem( margin-top, $default-spacing / 2 );
         
         &__list {
@@ -32,6 +33,11 @@
     }
     
     .webmention {
+
+        &__author {
+            @include rem( font-size, $font-size-small );
+            font-weight: $font-weight-sansserif-bold;
+        }
         
         &--author-starts .h-card .p-name {
             @include breakup-placeholder( hidden );
@@ -58,6 +64,7 @@
         
         &__meta {
             color: $color-grey;
+            @include rem( font-size, $font-size-small );
         }
 
         &--activity &__author,

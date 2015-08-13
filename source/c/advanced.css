@@ -211,7 +211,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-    max-width: 75%;
+    max-width: 34em;
   }
   .layout-container:after {
     content: " ";
@@ -219,7 +219,7 @@
     clear: both;
   }
   .layout-container--blog {
-    max-width: 90%;
+    max-width: 47em;
   }
 }
 @media (min-width: 43.125em) {
@@ -307,7 +307,7 @@
   .entry__header .entry__meta {
     font-size: 14px;
     font-size: 0.875rem;
-    border-left: 1px solid;
+    border-left: 1px solid #DDD;
     padding: .4em 1em;
     margin-left: 1em;
     margin-top: 22px;
@@ -370,8 +370,8 @@
 \*------------------------------------*/
 @media (min-width: 60em) {
   .speaking-engagements .listing--events {
-    margin: 20px 0 0;
-    margin: 1.25rem 0 0;
+    margin: 20px -80px 0;
+    margin: 1.25rem -5rem 0;
   }
 }
 @media (min-width: 28.75em) {

@@ -149,7 +149,7 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  max-width: 75%;
+  max-width: 34em;
 }
 .layout-container:after {
   content: " ";
@@ -167,7 +167,7 @@ textarea {
   clear: both;
 }
 .layout-container--blog {
-  max-width: 90%;
+  max-width: 47em;
 }
 .layout-container__primary, .layout-container__secondary {
   width: 74.35897%;
@@ -247,7 +247,7 @@ textarea {
 .entry__header .entry__meta {
   font-size: 14px;
   font-size: 0.875rem;
-  border-left: 1px solid;
+  border-left: 1px solid #DDD;
   padding: .4em 1em;
   margin-left: 1em;
   margin-top: 22px;

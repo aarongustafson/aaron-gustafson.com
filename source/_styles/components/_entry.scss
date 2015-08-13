@@ -12,6 +12,15 @@
             color: $color-grey;
             margin-top: 0;
         }
+
+        &__jump-links {
+            @include breakup-placeholder( delist );
+            margin-top: 0;
+        }
+
+        &__jump {
+            margin: 0;
+        }
         
         &__footer {
             border-top: 1px solid $color-rule;
@@ -45,7 +54,7 @@
 
             @include rem( font-size, $font-size-small );
             
-            border-left: 1px solid;
+            border-left: 1px solid $color-grey-light;
             padding: .4em 1em;
             margin-left: 1em;
             @include rem( margin-top, $default-spacing );

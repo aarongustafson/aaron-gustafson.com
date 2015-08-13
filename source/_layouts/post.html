@@ -9,23 +9,42 @@ single: true
 	<article role="article" class="layout-container__primary h-entry">
 		<div class="entry">
 			<header class="entry__header">
-		     	<h1 class="entry__title p-name">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+		     	<h1 class="entry__title p-name">{% if site.titlecase %}{{ page.title | titlecase | widont }}{% else %}{{ page.title | widont }}{% endif %}</h1>
 			
 				{% unless page.meta == false %}
-					<p class="entry__meta">
-		        		This will take {{ content | reading_time_as_i }} to read
+					<dl class="entry__meta">
+						
+						<dt>Published</dt>
+						<dd>{% include post/date.html %}<b class="hidden"> by <a class="p-author h-card" href="/about">Aaron Gustafson</a></b>{% if page.in_reply_to %} <b class="hidden">in reply to <a class="u-in-reply-to" href="{{ page.in_reply_to }}">{{ page.in_reply_to }}</a></b>{% endif %}</dd>
+						
+						<dt>Reading Time</dt>
+						<dd>{{ content | reading_time_as_i }}</dd>
 
-						{% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
-							| <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ this_url }}{% endif %}">Comments</a>
-							| <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#webmentions">Webmentions</a>
+						<dt>Tagged</dt>
+						<dd>{% include post/categories.html %}</dd>
+
+		        		{% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
+							<dt>Reactions</dt>
+							<dd>
+								<ul class="entry__jump-links">
+									<li class="entry__jump entry__jump--comments"><a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ this_url }}{% endif %}">Comments</a></li>
+									<li class="entry__jump entry__jump--webmentions"><a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#webmentions">Webmentions</a></li>
+								</ul>
+							</dd>
 		        		{% endif %}
-		      		</p>
+		        		
+		        		{% if page.canonical and page.canonical_site %}
+		        			<dt>Cross-posted</dt>
+		        			<dd><a class="u-repost-of" href="{{ page.canonical }}">{{ page.canonical_site }}</a></dd>
+						{% endif %}
+				
+		      		</dl>
 		    	{% endunless %}
 		  	</header>
 	
 			{% if page.reply_to_url %}
-				<p class="entry__in-reply-to">You are reading a reply to 
-					<a class="u-in-reply-to" href="{{ page.reply_to_url }}">{{ page.reply_to_title }}</a></p>
+				<p class="entry__in-reply-to">You are reading a reply to <a class="u-in-reply-to" href="{{ page.reply_to_url }}">{{ page.reply_to_title }}</a>.
+				</p>
 	    	{% endif %}
 
 			<div class="entry__content e-content">
@@ -37,18 +56,7 @@ single: true
 					{% include post/sharing.html %}
 			    {% endunless %}
 
-				<p class="entry__meta">
-					This entry was posted on {% include post/date.html %} 
-					<b class="hidden">by <a class="p-author h-card" href="/about">Aaron Gustafson</a></b>
-					{% if page.in_reply_to %}
-						<b class="hidden">in reply to <a class="u-in-reply-to" href="{{ page.in_reply_to }}">{{ page.in_reply_to }}</a></b>
-					{% endif %}
-					and was filed under: {% include post/categories.html %}
-					{% if page.canonical and page.canonical_site %}
-						| <b class="entry__canonical">It originally appeared on 
-						<a class="u-repost-of" href="{{ page.canonical }}">{{ page.canonical_site }}</a>.
-					{% endif %}
-				</p>
+			    {% include asides/related_posts.html %}
 			</footer>
 
 			{% if site.disqus_short_name and page.comments == true %}
@@ -72,6 +80,7 @@ single: true
 		</div>
 	</article>
 	
+	{% comment %}
 	{% unless page.sidebar == false %}
 		<hr class="rule rule--optional">
 
@@ -81,10 +90,9 @@ single: true
 			{% else %}
 	   			{% include_array default_asides %}
 			{% endif %}
-		
-			{% include asides/related_posts.html %}
 		</aside>
 	{% endunless %}
+	{% endcomment %}
 
 	<script src="/j/post.min.js" async></script>
 </div>
