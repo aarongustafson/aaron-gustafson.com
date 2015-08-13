@@ -693,6 +693,10 @@ http://www.aaron-gustafson.com/notebook/css-variables-are-a-bad-idea/:
     https://twitter.com/bekahbeets2003/status/597738242482511872: |-
       <li id="webmention-597738242482511872" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/bekahbeets2003"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/595044542795112448/lsii7HRF_normal.jpg" alt="" title="Rebekah Beets"><b class="p-name">Rebekah Beets</b></a></div><div class="webmention__content p-content"><p><a href="http://t.co/bvoRvOHF5S">http://t.co/bvoRvOHF5S</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-11T08:21:17-04:00">11 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/bekahbeets2003/status/597738242482511872">Permalink</a></div></article></li>
+  '2015-08-10':
+    https://twitter.com/xician/status/630889453440077824: |-
+      <li id="webmention-630889453440077824" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/xician"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/583152578935930881/lLqiTa0b_normal.jpg" alt="" title="Zeeshan Ali"><b class="p-name">Zeeshan Ali</b></a></div><div class="webmention__content p-content"><p><a href="http://t.co/Y0hoi2cLsQ">http://t.co/Y0hoi2cLsQ</a> <a href="http://t.co/z5BjSjpEAo">http://t.co/z5BjSjpEAo</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-10T19:52:21-04:00">10 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/xician/status/630889453440077824">Permalink</a></div></article></li>
 http://aaron-gustafson.com/notebook/2014/aria-quicktip-labelledby-vs-describedby/:
   '2014-11-05':
     11803: <li id="webmention-11803" class="webmentions__item"><article class="h-cite
@@ -6253,6 +6257,29 @@ http://www.aaron-gustafson.com/notebook/ramblings-on-new-browser-features-intero
       <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/629701993716690944">Alfonso
       Martínez L. likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-08-10T03:07:52-04:00">10 August 2015</time></div></article></li>
+  '2015-08-12':
+    https://twitter.com/webcraftsman/status/631456780237803520: |-
+      <li id="webmention-631456780237803520" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/webcraftsman"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/528173567070851072/1UqYnsnS_normal.jpeg" alt="" title="Jeff Bridgforth"><b class="p-name">Jeff Bridgforth</b></a></div><div class="webmention__content p-content"><p>Strongly encourage you to read this: <a href="http://t.co/wMCvShXKTi">http://t.co/wMCvShXKTi</a></p>
+
+      <p>Great thoughts adding to current discussions about developing on the Web.</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-12T09:26:42-04:00">12 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/webcraftsman/status/631456780237803520">Permalink</a></div></article></li>
+    83397: '<li id="webmention-83397" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://jeffbridgforth.com/dilemmas-of-modern-web-development/">Dilemmas
+      of Modern Web Development | Jeff Bridgforth :: Front-end developer in Chattanooga,
+      Tennessee</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-12T09:19:38-04:00">12 August 2015</time></div></article></li>'
+  '2015-08-11':
+    https://twitter.com/wassonii/status/631303412563476481: |-
+      <li id="webmention-631303412563476481" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/wassonii"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/378800000093083986/0ba1262dedda344be1b18124478ccb6d_normal.jpeg" alt="" title="Larry Terrell"><b class="p-name">Larry Terrell</b></a></div><div class="webmention__content p-content"><p>Ramblings on New Browser Features, Interoperability, Craft, and the Future of the Web <a href="http://t.co/FuGPROLoqi">http://t.co/FuGPROLoqi</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-11T23:17:17-04:00">11 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/wassonii/status/631303412563476481">Permalink</a></div></article></li>
+    https://twitter.com/iamkamalnayan/status/631094219952619520: |-
+      <li id="webmention-631094219952619520" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/iamkamalnayan"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/550178209698816000/HHSNehBn_normal.jpeg" alt="" title="Kamal Nayan"><b class="p-name">Kamal Nayan</b></a></div><div class="webmention__content p-content"><p>Ramblings on New #Browser #Features, #Interoperability, #Craft, &amp; Future of #Web <a href="http://t.co/ZdVm3QnOMO">http://t.co/ZdVm3QnOMO</a>
+      #webdevelopment #technology</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-11T09:26:01-04:00">11 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/iamkamalnayan/status/631094219952619520">Permalink</a></div></article></li>
+    https://twitter.com/wnas/status/631025490225164288: |-
+      <li id="webmention-631025490225164288" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/wnas"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/378800000332599060/2e2409197cef7ec4649c98aa071bc310_normal.jpeg" alt="" title="Wilfred Nas"><b class="p-name">Wilfred Nas</b></a></div><div class="webmention__content p-content"><p><a href="http://t.co/QGvZMvJv13">http://t.co/QGvZMvJv13</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-11T04:52:55-04:00">11 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/wnas/status/631025490225164288">Permalink</a></div></article></li>
 http://www.aaron-gustafson.com/notebook/links/windows-10-microsoft-edge-browser-war/:
   '2015-08-07':
     https://twitter.com/AaronGustafson/status/629864217437433856: |-
