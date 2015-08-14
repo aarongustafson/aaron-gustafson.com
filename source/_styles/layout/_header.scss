@@ -67,5 +67,25 @@
             }
         }
     }
+
+    // better underlines
+    @supports (background-image:linear-gradient(black,white)) {
+        
+        .site-title a:link,
+        .site-title a:visited {
+            background: $color-grey;
+            text-shadow: none;
+        }
+        .site-title a:hover,
+        .site-title a:focus {
+            background: $color-green;
+            color: $color-white;
+        }
+
+        .alert a {
+            @include underline( $color: $color-white, $background-color: $color-black );
+        }
+
+    }
     
 }

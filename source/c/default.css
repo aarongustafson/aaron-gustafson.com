@@ -428,12 +428,33 @@ a[rel="original-article"]::after {
 }
 
 @supports (background-image: linear-gradient(black, white)) {
-  a:link,
-  a:visited {
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(85%, transparent), color-stop(86%, rgba(52, 173, 35, 0.5)), color-stop(87%, transparent));
-    background-image: -webkit-linear-gradient(transparent 85%, rgba(52, 173, 35, 0.5) 86%, transparent 87%);
-    background-image: linear-gradient(transparent 85%, rgba(52, 173, 35, 0.5) 86%, transparent 87%);
+  a:link, a:visited {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(2px, transparent), color-stop(2px, #34AD23), color-stop(3px, #34AD23), color-stop(3px, transparent));
+    background-image: -webkit-linear-gradient(bottom, transparent, transparent 2px, #34AD23 2px, #34AD23 3px, transparent 3px);
+    background-image: linear-gradient(bottom, transparent, transparent 2px, #34AD23 2px, #34AD23 3px, transparent 3px);
     border-bottom-width: 0 !important;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  }
+  h1 a:link, h1 a:visited {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(8px, transparent), color-stop(8px, #34AD23), color-stop(9px, #34AD23), color-stop(9px, transparent));
+    background-image: -webkit-linear-gradient(bottom, transparent, transparent 8px, #34AD23 8px, #34AD23 9px, transparent 9px);
+    background-image: linear-gradient(bottom, transparent, transparent 8px, #34AD23 8px, #34AD23 9px, transparent 9px);
+    border-bottom-width: 0 !important;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  }
+  a:hover, a:focus {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(2px, transparent), color-stop(2px, #27831a), color-stop(3px, #27831a), color-stop(3px, transparent));
+    background-image: -webkit-linear-gradient(bottom, transparent, transparent 2px, #27831a 2px, #27831a 3px, transparent 3px);
+    background-image: linear-gradient(bottom, transparent, transparent 2px, #27831a 2px, #27831a 3px, transparent 3px);
+    border-bottom-width: 0 !important;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  }
+  h1 a:hover, h1 a:focus {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(8px, transparent), color-stop(8px, #27831a), color-stop(9px, #27831a), color-stop(9px, transparent));
+    background-image: -webkit-linear-gradient(bottom, transparent, transparent 8px, #27831a 8px, #27831a 9px, transparent 9px);
+    background-image: linear-gradient(bottom, transparent, transparent 8px, #27831a 8px, #27831a 9px, transparent 9px);
+    border-bottom-width: 0 !important;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
 }
 /*------------------------------------*\
@@ -786,6 +807,27 @@ form li {
   margin-bottom: 0.6875rem;
 }
 
+@supports (background-image: linear-gradient(black, white)) {
+  .site-title a:link,
+  .site-title a:visited {
+    background: #666;
+    text-shadow: none;
+  }
+
+  .site-title a:hover,
+  .site-title a:focus {
+    background: #34AD23;
+    color: #fff;
+  }
+
+  .alert a {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(2px, transparent), color-stop(2px, #fff), color-stop(3px, #fff), color-stop(3px, transparent));
+    background-image: -webkit-linear-gradient(bottom, transparent, transparent 2px, #fff 2px, #fff 3px, transparent 3px);
+    background-image: linear-gradient(bottom, transparent, transparent 2px, #fff 2px, #fff 3px, transparent 3px);
+    border-bottom-width: 0 !important;
+    text-shadow: -1px -1px 0 #2c2825, 1px -1px 0 #2c2825, -1px 1px 0 #2c2825, 1px 1px 0 #2c2825;
+  }
+}
 /*------------------------------------*\
     Main
 \*------------------------------------*/

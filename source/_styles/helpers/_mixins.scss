@@ -8,6 +8,26 @@
     background-size: 100% .75; // 12px grid
 }
 
+// Better Underline
+// Based on the work of Gary Hepting
+// http://codepen.io/ghepting/pen/tLnHK/
+@mixin underline( $color: $color-foreground, $offset: 2px, $width: 1px, $background-color: $color-background )
+{
+    background-image: linear-gradient(
+        bottom,
+        transparent,
+        transparent $offset,
+        $color $offset,
+        $color ($offset + $width),
+        transparent ($offset + $width)
+    );
+    border-bottom-width: 0 !important;
+    text-shadow: (0 - $width) (0 - $width) 0 $background-color,
+                 $width (0 - $width) 0 $background-color,
+                 (0 - $width) $width 0 $background-color,
+                 $width $width 0 $background-color;
+}
+
 // REM values
 // Adapted from http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
 @mixin rem( $property, $values )
