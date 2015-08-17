@@ -8,7 +8,7 @@ description: "When you design something that looks interactive, always make sure
 twitter_text: "When you design something that looks interactive, always make sure the whole thing is actually tappable."
 ---
 
-I see this one all the time: something that looks like a button, but only a portion of it is tappable. Consider this example from a recent email I received (emails are notorious for this crap):
+I see this one all the time: something that looks like a button, but only a portion of it is tappable. <!-- more -->Consider this example from a recent email I received (emails are notorious for this crap):
 
 <figure id="fig-2015-08-17-01" class="media-container">{% adaptive_image /i/posts/2015-08-17/01.png %}<figcaption>A call to action from a recent email with the tiny tappable area highlighted within the much larger "button".</figcaption></figure>
 
