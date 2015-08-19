@@ -6,6 +6,7 @@ comments: true
 categories: ["web design 101","web design",buttons]
 description: "When you design something that looks interactive, always make sure the whole thing is actually tappable."
 twitter_text: "When you design something that looks interactive, always make sure the whole thing is actually tappable."
+redirect_from: /notebook/web-design-101-buttons-should-be-tappable/
 ---
 
 I see this one all the time: something that looks like a button, but only a portion of it is tappable. <!-- more -->Consider this example from a recent email I received (emails are notorious for this crap):
