@@ -1055,6 +1055,9 @@ div.gist table tr {
 div.gist table .line-numbers {
   width: 3em;
 }
+div.gist a {
+  background: transparent;
+}
 div.gist .line-numbers,
 div.gist .gist-meta {
   speak: none;

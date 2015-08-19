@@ -316,6 +316,9 @@
     position: absolute;
     left: 100%;
   }
+  .entry__title {
+    width: 134%;
+  }
 }
 /*------------------------------------*\
     Gist
