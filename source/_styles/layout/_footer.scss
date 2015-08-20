@@ -6,10 +6,23 @@
 
     .footer {
 
+    	@include rem( font-size, $font-size-small );
+    	text-align: center;
+
+    	@include rem( padding-bottom, $default-spacing );
+
         p {
             margin: 0;
         }
 
     }
+
+}
+
+@include breakup-breakpoint( "full" ) {
+
+    .footer .layout-container {
+    	max-width: 100%;
+	}
 
 }

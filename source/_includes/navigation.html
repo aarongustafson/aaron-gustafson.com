@@ -4,22 +4,29 @@
 		<h1 class="hidden">Here’s what you can find on this site:</h1>
 		<ul class="main-navigation">
 			{% for link in site.navigation %}
-				<li><a href="{{ link.url }}">{{ link.text }}</a></li>
+				<li class="main-navigation__item">
+					<a class="main-navigation__link main-navigation__link--{{ link.url | remove:"/" }}" href="{{ link.url }}">{{ link.text }}</a>
+				</li>
 			{% endfor %}
-			<li><a href="{{ site.subscribe_rss }}" title="subscribe via RSS">RSS</a></li>
+			<li class="main-navigation__item">
+				<a class="main-navigation__link main-navigation__link--rss" href="{{ site.subscribe_rss }}" title="subscribe via RSS">RSS</a>
+			</li>
 		</ul>
 
 		{% if site.simple_search %}
-			<form action="{{ site.simple_search }}" method="get" role="search" id="search">
+			<form class="form search-form" action="{{ site.simple_search }}" method="get" role="search" id="search">
 				<ol>
-					<li class="search">
+					<li class="form-control form-control--search">
 						<label class="hidden">What are you looking for?</label>
 						<input name='q' type='hidden' value='site:www.aaron-gustafson.com'>
 						<input type="search" name="q">
 					</li>
-					<li><button name="sa" value="Search"><b class="hidden">Let’s see if </b>Google <b class="hidden">Finds </b>it</button></li>
+					<li class="form-control form-control--buttons">
+						<button type="submit" name="sa" value="Search"><b class="hidden">Let’s see if </b>Google <b class="hidden">Finds </b>it</button>
+					</li>
 				</ol>
 			</form>
 		{% endif %}
+
 	</div>
 </nav>
