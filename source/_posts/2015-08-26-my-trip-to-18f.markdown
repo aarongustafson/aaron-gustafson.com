@@ -1,0 +1,20 @@
+---
+layout: post
+title: "My trip to 18F"
+date: 2015-08-26 15:51:14 -0400
+comments: true
+categories: ["progressive enhancement","web design",presentations]
+description: "The fine folks at 18F just posted a beautiful write-up of the talk on progressive enhancement that I delivered as part of the 18F Design Speaker Series."
+---
+
+The fine folks at 18F just posted [a beautiful write-up of the talk on progressive enhancement that I delivered](https://18f.gsa.gov/2015/08/26/aaron-gustafson-beyond-responsive-design/) as part of the [18F Design Speaker Series](https://18f.gsa.gov/tags/speaker-series/). I thoroughly enjoyed talking to the folks that came. They presented some interesting challenges and asked pressing questions—exactly the kind of engagement I love.
+
+<!-- more -->
+
+They live-streamed the event and immediately [posted the video on YouTube](https://youtu.be/Fu1L34TLUHM). I also [posted the deck to SlideShare](http://www.slideshare.net/AaronGustafson/beyond-responsive-18f-2015) so you can follow along a little easier. I’ve embedded each below if you want to tuck in right away:
+
+{% youtube Fu1L34TLUHM %}
+
+<figure class="video-embed video-embed--16x9" id="figure-2015-08-26-01"><iframe class="video-embed__video" src="//www.slideshare.net/slideshow/embed_code/key/7jsUtSzGEqFyKj" frameborder="0"></iframe></figure>
+
+For a little more coverage, you can also check out [Will Sullivan’s takeaways from the talk](http://www.digitalgov.gov/2015/08/25/trends-on-tuesday-web-standards-advocate-advises-adaptive-web-design-for-government-sites/).
