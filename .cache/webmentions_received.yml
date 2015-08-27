@@ -7684,6 +7684,10 @@ http://www.aaron-gustafson.com/notebook/ramblings-on-new-browser-features-intero
     https://twitter.com/lagotonio/status/635852094055030784: |-
       <li id="webmention-635852094055030784" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/lagotonio"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/424189350536941568/fiL6HIwa_normal.jpeg" alt="" title="Anthony Le Courtes"><b class="p-name">Anthony Le Courtes</b></a></div><div class="webmention__content p-content"><p>Interesting article about Interoperability and user experience : <a href="http://t.co/jpfaQnfx4Q">http://t.co/jpfaQnfx4Q</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-24T12:32:07-04:00">24 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/lagotonio/status/635852094055030784">Permalink</a></div></article></li>
+  '2015-08-27':
+    https://twitter.com/maxrubare/status/636823665095610369: |-
+      <li id="webmention-636823665095610369" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/maxrubare"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/477727346468741120/h-vEozEM_normal.png" alt="" title="max rubare"><b class="p-name">max rubare</b></a></div><div class="webmention__content p-content"><p>Ramblings on New Browser Features, Interoperability, Craft, and the Future of the Web <a href="http://t.co/lcCjs7yZRJ">http://t.co/lcCjs7yZRJ</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-27T04:52:48-04:00">27 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/maxrubare/status/636823665095610369">Permalink</a></div></article></li>
 http://www.aaron-gustafson.com/notebook/links/windows-10-microsoft-edge-browser-war/:
   '2015-08-07':
     https://twitter.com/AaronGustafson/status/629864217437433856: |-
@@ -7802,3 +7806,36 @@ http://www.aaron-gustafson.com/notebook/links/18f-open-source-style-guide/:
     https://twitter.com/mbcrump/status/634768185519157248: |-
       <li id="webmention-634768185519157248" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/mbcrump"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/549352293598912512/XJr1PCXH_normal.png" alt="" title="Michael Crump"><b class="p-name">Michael Crump</b></a></div><div class="webmention__content p-content"><p>Here is a nice guide to running an open source project on #GitHub -  <a href="http://t.co/cIhoGwvWnL">http://t.co/cIhoGwvWnL</a> #opensource</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-21T12:45:03-04:00">21 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/mbcrump/status/634768185519157248">Permalink</a></div></article></li>
+http://www.aaron-gustafson.com/notebook/my-trip-to-18f/:
+  '2015-08-27':
+    https://twitter.com/UIE/status/636901106182963200: |-
+      <li id="webmention-636901106182963200" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/UIE"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/3759116326/19308cfcdb0b831111d4ee3fc3e6232c_normal.jpeg" alt="" title="UIE"><b class="p-name">UIE</b></a></div><div class="webmention__content p-content"><p>@AaronGustafson’s Trip to 18F <a href="http://t.co/rHEgRfW284">http://t.co/rHEgRfW284</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-27T10:00:31-04:00">27 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/UIE/status/636901106182963200">Permalink</a></div></article></li>
+    '636722064125206528': <li id="webmention-636722064125206528" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/MarcDrummond"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/dead51f0a6b107b9549373fe4a5ab2edf6339ae4d95bf4c7b3ed3b2c1e83b962.jpeg"
+      alt="" title="Marc Drummond"><b class="p-name">Marc Drummond</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/636722064125206528">Marc
+      Drummond likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-27T01:54:22-04:00">27 August 2015</time></div></article></li>
+  '2015-08-26':
+    https://twitter.com/AaronGustafson/status/636722064125206528: |-
+      <li id="webmention-636722064125206528" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/635107999120531456/W_YXtoX-_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>My trip to 18F <a href="http://t.co/7wwxWAeV0n">http://t.co/7wwxWAeV0n</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-26T22:09:04-04:00">26 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/636722064125206528">Permalink</a></div></article></li>
+    '636722064125206528': <li id="webmention-636722064125206528" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/briangoldstein"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/dce4260b61d814b5dc18fcdb7e8792a75c64ed53a3a12cdf2cd53fad5c6db3ac.jpeg"
+      alt="" title="Brian Goldstein"><b class="p-name">Brian Goldstein</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/636722064125206528">Brian
+      Goldstein likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-26T23:18:11-04:00">26 August 2015</time></div></article></li>
+    '636738246488145920': <li id="webmention-636738246488145920" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.jsuttonmedia.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/e9d402391f537a43e5fc4c1ee4875230ff960886c5bc8f07e35779302cb22612.png"
+      alt="" title="Jennifer Sutton"><b class="p-name">Jennifer Sutton</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/jsutt/status/636738246488145920">Jennifer
+      Sutton reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-26T23:13:22-04:00">26 August 2015</time></div></article></li>
