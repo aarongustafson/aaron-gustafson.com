@@ -1,6 +1,6 @@
 ---
 layout: link
-title: "Infinite Scrolling and Accessibility (It&#8217;s Usually Bad)"
+title: "Infinite Scrolling and Accessibility (It’s Usually Bad)"
 date: 2015-08-27 14:47:38 -0400
 comments: false
 ref_url: http://www.webaxe.org/infinite-scrolling-and-accessibility/
