@@ -31,7 +31,8 @@
             padding-bottom:100%;
         }
         
-        &__lazy-link {
+        &__lazy-link:link,
+        &__lazy-link:visited {
 
             background: $color-black center center no-repeat;
             background-size: cover;

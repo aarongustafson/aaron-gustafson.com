@@ -941,7 +941,7 @@ form li {
 .video-embed--1x1 {
   padding-bottom: 100%;
 }
-.video-embed__lazy-link {
+.video-embed__lazy-link:link, .video-embed__lazy-link:visited {
   background: #2c2825 center center no-repeat;
   background-size: cover;
   color: #DDD;
@@ -954,7 +954,7 @@ form li {
   height: 100%;
   position: absolute;
 }
-.video-embed__lazy-link:hover, .video-embed__lazy-link:focus {
+.video-embed__lazy-link:link:hover, .video-embed__lazy-link:link:focus, .video-embed__lazy-link:visited:hover, .video-embed__lazy-link:visited:focus {
   text-decoration: none;
   color: #FFF;
 }
