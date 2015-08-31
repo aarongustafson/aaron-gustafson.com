@@ -1,0 +1,12 @@
+---
+layout: link
+title: "Progressive Enhancement with Aaron Gustafson"
+twitter_text: "I had a great time chatting with @jensimmons  about progressive enhancement on @thewebahead"
+date: 2015-08-31 16:20:56 -0400
+comments: false
+ref_url: http://thewebahead.net/105
+in_reply_to: http://thewebahead.net/105
+ref_source: The Web Ahead
+---
+
+Jen Simmons and I discuss working on the web and all things progressive enhancement.
