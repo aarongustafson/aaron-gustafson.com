@@ -1,0 +1,11 @@
+---
+layout: link
+title: "V8 Release 4.6"
+date: 2015-09-01 10:58:58 -0400
+comments: false
+ref_url: http://v8project.blogspot.co.uk/2015/08/v8-release-46.html
+in_reply_to: http://v8project.blogspot.co.uk/2015/08/v8-release-46.html
+ref_source: V8 JavaScript Engine Blog
+---
+
+New ES6 (ECMAScript 2015) features rolling out in V8: `spread` and `new.target`. Also: Reduced jank.
