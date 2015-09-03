@@ -46,6 +46,7 @@
         $none = false,
         $redirects = document.querySelector('meta[property="webmention:redirected_from"]'),
         redirects,
+        complete_urls = [],
         base_url = window.location.origin,
         $existing_webmentions,
         existing_webmentions = [],
@@ -60,6 +61,17 @@
             );
         });
         redirects = false;
+    }
+
+    // map to http too
+    if ( window.location.protocol != 'http' )
+    {
+        targets.forEach(function( value, i ){
+            complete_urls.push( value );
+            complete_urls.push( value.replace( 'https://', 'http://' ) );
+        });
+        targets = complete_urls;
+        complete_urls = false;
     }
 
     // Do we need to create the list?
@@ -308,7 +320,7 @@
     // Load up any unpublished webmentions on load
     json_webmentions = document.createElement('script');
     json_webmentions.async = true;
-    json_webmentions.src = 'http://webmention.io/api/mentions?jsonp=window.AG.processWebmentions&amp;target[]=' +
+    json_webmentions.src = window.location.protocol + '://webmention.io/api/mentions?jsonp=window.AG.processWebmentions&amp;target[]=' +
                             targets.join( '&amp;target[]' );
     document.getElementsByTagName('head')[0].appendChild( json_webmentions );
     

@@ -38,6 +38,9 @@ module Jekyll
         # For legacy (non www) URIs
         legacy = target.sub 'www.', ''
         targets.push(legacy)
+        # For legacy (non https) URIs
+        legacy = target.sub 'https://', 'http://'
+        targets.push(legacy)
       end
       
       api_params = targets.collect { |v| "target[]=#{v}" }.join('&')
