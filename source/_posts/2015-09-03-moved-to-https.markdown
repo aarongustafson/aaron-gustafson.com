@@ -11,7 +11,7 @@ I’ve been complaining about ["man in the middle" attacks brought on by interne
 
 <!-- more -->
 
-I was using [Github](https://github.com/) to host my site as a [Github page](https://pages.github.com/). It worked really well given this is a static site, but you can’t run Github-hosted sites under HTTPS unless you go with their `*.github.io` domain name (they have a [wildcard certificate](https://en.wikipedia.org/wiki/Wildcard_certificate) for that domain). There’s been [a ton of interest in Github allowing custom cert installation, but no movement yet](https://github.com/isaacs/github/issues/156), so… <i>onward!</i>
+I was using [Github](https://github.com/) to host my site as a [Github page](https://pages.github.com/). It worked really well given this is a static site, but you can’t run Github-hosted sites under HTTPS unless you go with their `*.github.io` domain name (they have a [wildcard certificate](https://en.wikipedia.org/wiki/Wildcard_certificate) for that domain). There’s been [a ton of interest in Github allowing custom cert installation, but no movement yet](https://github.com/isaacs/github/issues/156), so… <i>onward!</i>[^1]
 
 I opted to move to [DigitalOcean](https://www.digitalocean.com/?refcode=5270a681c6fe) since [my consultancy](http://easy-designs.net) recently relocated all of its sites there in a mass exodus from MediaTemple. Migrating the site was as simple as [setting up the DigitalOcean server as a new "live" `remote` on my local git install](https://www.digitalocean.com/community/tutorials/how-to-set-up-automatic-deployment-with-git-with-a-vps) and pushing it up there. Since it’s a static site, I didn’t have to worry too much about the server config. Apache is really great at hosting static files.
 
@@ -24,3 +24,5 @@ Once the DNS propagated, I had to go back and button up a few scripts that were 
 All in all, it was a relatively painless migration. Admittedly, the initial re-build of the site (after updating the Rake tasks) did re-submit all of the webmentions I’d previously sent in order to provide the new address. If I referenced you a bunch in the past, I apologize for the flood of traffic, but it had to be done.
 
 Anyway, so now this site is running under HTTPS. If you encounter any issues, please let me know. And if you want to read a really good account of migrating a site to HTTPS, you should definitely [read Jeremy Keith’s step-by-step guide](https://adactio.com/articles/7435).
+
+[^1]: It’s worth noting that [the source of the site](https://github.com/aarongustafson/aarongustafson.github.io/tree/source) (and even [a back-up build](https://github.com/aarongustafson/aarongustafson.github.io/tree/master)) will remain on Github for the forseeable future.

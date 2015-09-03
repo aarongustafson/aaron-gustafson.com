@@ -11,7 +11,7 @@ sidebar: false
 
 # Colophon
 
-So you want to know more about what makes this site tick, huh? Well, it’s powered by [Octopress](http://octopress.org/), a Jekyll-based blogging engine created by [Brandon Mathis](http://twitter.com/imathis). The site is hosted on [Github](https://github.com) and published via [Github pages](https://pages.github.com/).
+So you want to know more about what makes this site tick, huh? Well, it’s powered by [Octopress](http://octopress.org/), a Jekyll-based blogging engine created by [Brandon Mathis](http://twitter.com/imathis). The site is hosted on [DigitalOcean](https://www.digitalocean.com/?refcode=5270a681c6fe).
 
 No frameworks were used in the creation of this site. I did use [Sass](http://sass-lang.com/) to help me with my CSS workflow and use the [Susy](http://susy.oddbird.net/), [Breakup](https://github.com/BPScott/breakup), and [Quantity Query](https://github.com/danielguillan/quantity-queries) add-ins. I also use the [HTML5 Doctor CSS reset](http://html5doctor.com/html-5-reset-stylesheet/). I have a couple of [Gulp scripts](https://github.com/aarongustafson/aarongustafson.github.io/tree/source/tasks/gulp) I use to manage my builds. I also created a handful of [custom Rake commands](https://github.com/aarongustafson/aarongustafson.github.io/tree/source/tasks/rake) to assist me in building and maintaining the site.
 
