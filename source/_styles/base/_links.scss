@@ -84,6 +84,11 @@
                     @include underline( $color-link-hover, 8px, 1px );
                 }
             }
+
+            &.footnote {
+                background: transparent;
+                box-shadow: none;
+            }
             
         }
     }

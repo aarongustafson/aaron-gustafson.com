@@ -462,6 +462,11 @@ a[rel="original-article"]::after {
     border-bottom-width: 0 !important;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
+  a.footnote {
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
 }
 /*------------------------------------*\
     Text-level semantics
