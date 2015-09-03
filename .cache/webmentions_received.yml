@@ -7688,6 +7688,13 @@ http://www.aaron-gustafson.com/notebook/ramblings-on-new-browser-features-intero
     https://twitter.com/maxrubare/status/636823665095610369: |-
       <li id="webmention-636823665095610369" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/maxrubare"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/477727346468741120/h-vEozEM_normal.png" alt="" title="max rubare"><b class="p-name">max rubare</b></a></div><div class="webmention__content p-content"><p>Ramblings on New Browser Features, Interoperability, Craft, and the Future of the Web <a href="http://t.co/lcCjs7yZRJ">http://t.co/lcCjs7yZRJ</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-27T04:52:48-04:00">27 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/maxrubare/status/636823665095610369">Permalink</a></div></article></li>
+  '2015-09-01':
+    95519: '<li id="webmention-95519" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://americanfido.com/web-development-reading-list-100/">Web
+      Development Reading List #100 - American Fido</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-09-01T10:52:40-04:00">1
+      September 2015</time></div></article></li>'
 http://www.aaron-gustafson.com/notebook/links/windows-10-microsoft-edge-browser-war/:
   '2015-08-07':
     https://twitter.com/AaronGustafson/status/629864217437433856: |-
@@ -7875,6 +7882,15 @@ http://www.aaron-gustafson.com/notebook/my-trip-to-18f/:
       @AaronGustafson: My trip to 18F aaron-gustafson.com/notebook/my-tr…</a></div><div
       class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-29T17:56:47-04:00">29
       August 2015</time></div></article></li>'
+  '2015-09-01':
+    '636722064125206528': <li id="webmention-636722064125206528" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/willcanderson"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/20286ade5ca12675157bd9717086bf229aa40fb156a3336b94b441d2e29cc67b.jpeg"
+      alt="" title="Will C Anderson"><b class="p-name">Will C Anderson</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/636722064125206528">Will
+      C Anderson likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-09-01T10:52:37-04:00">1 September 2015</time></div></article></li>
 ? http://www.aaron-gustafson.com/notebook/ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web/?utm_content=buffer0bd43&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
 : '2015-08-29':
     https://twitter.com/rjene/status/637665535094837249: |-
