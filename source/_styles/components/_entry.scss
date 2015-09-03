@@ -10,7 +10,11 @@
         
         &__meta {
             color: $color-grey;
-            margin-top: 0;
+            padding: 0;
+        }
+
+        &__header &__meta {
+            @include rem( font-size, $font-size-small );
         }
 
         &__jump-links {
@@ -31,20 +35,23 @@
             border-top: 0;
             padding-top: 0;
         }
-        
-        &__footer &__meta {
-            @include rem( margin-top, $default-spacing );
-        }
-        
+                
         &__content hr {
             @include rem( max-width, 220 );
         }
 
     }
+
+    @supports (column-count:2) or (-webkit-column-count:2) or (-moz-column-count:2) {
+        .entry__meta {
+            column-count: 2;
+            @include rem( column-gap, $default-spacing );
+        }
+    }
     
 }
 
-@include breakup-breakpoint( "full" ) {
+@include breakup-breakpoint( "medium" ) {
 
     .entry {
 
@@ -52,8 +59,6 @@
 
         &__header &__meta {
 
-            @include rem( font-size, $font-size-small );
-            
             border-left: 1px solid $color-grey-light;
             padding: .4em 1em;
             margin-left: 1em;
@@ -69,6 +74,12 @@
             width: 134%;
         }
         
+    }
+
+    @supports (column-count:2) or (-webkit-column-count:2) or (-moz-column-count:2) {
+        .entry__meta {
+            column-count: 1;
+        }
     }
     
 }

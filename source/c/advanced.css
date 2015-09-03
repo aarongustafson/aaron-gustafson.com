@@ -70,6 +70,12 @@
 /*------------------------------------*\
     Lists
 \*------------------------------------*/
+@media (min-width: 60em) {
+  ol,
+  ul {
+    margin-left: 0;
+  }
+}
 /*------------------------------------*\
     Links
 \*------------------------------------*/
@@ -305,13 +311,11 @@
 /*------------------------------------*\
     Blog Entry
 \*------------------------------------*/
-@media (min-width: 60em) {
+@media (min-width: 43.125em) {
   .entry {
     position: relative;
   }
   .entry__header .entry__meta {
-    font-size: 14px;
-    font-size: 0.875rem;
     border-left: 1px solid #DDD;
     padding: .4em 1em;
     margin-left: 1em;
@@ -323,6 +327,14 @@
   }
   .entry__title {
     width: 134%;
+  }
+
+  @supports (column-count: 2) or (-webkit-column-count: 2) or (-moz-column-count: 2) {
+    .entry__meta {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+    }
   }
 }
 /*------------------------------------*\

@@ -8,6 +8,7 @@
     ul {
         line-height: $line-height-default;
         @include rem( margin-left, $default-spacing);
+        padding-left: 0;
         
         nav & {
             @include breakup-placeholder( delist );
@@ -17,6 +18,10 @@
                 margin: 0;
             }
         }
+    }
+
+    li + li {
+        @include rem( margin-top, $default-spacing/2 );
     }
 
     dl {
@@ -36,6 +41,16 @@
             padding-left: 0;
         }
 
+    }
+
+}
+
+@include breakup-breakpoint( "full" ) {
+
+    // Hanging!
+    ol,
+    ul {
+        margin-left: 0;
     }
 
 }

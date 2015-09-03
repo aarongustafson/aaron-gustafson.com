@@ -359,6 +359,7 @@ ul {
   line-height: 1.4;
   margin-left: 22px;
   margin-left: 1.375rem;
+  padding-left: 0;
 }
 nav ol, nav
 ul {
@@ -367,6 +368,11 @@ ul {
 nav ol li, nav
 ul li {
   margin: 0;
+}
+
+li + li {
+  margin-top: 11px;
+  margin-top: 0.6875rem;
 }
 
 dl {
@@ -761,6 +767,7 @@ form li {
 }
 .banner .layout-container {
   max-width: 100%;
+  padding: 0;
 }
 
 .site-title {
@@ -774,7 +781,8 @@ form li {
   background: #666;
   color: #DDD;
   border: 0;
-  padding: .15em 0;
+  padding: 8px 22px;
+  padding: 0.5rem 1.375rem;
   display: block;
 }
 .site-title a:hover, .site-title a:focus {
@@ -1018,7 +1026,11 @@ form li {
 }
 .entry__meta {
   color: #666;
-  margin-top: 0;
+  padding: 0;
+}
+.entry__header .entry__meta {
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 .entry__jump-links {
   margin-top: 0;
@@ -1035,15 +1047,24 @@ form li {
   border-top: 0;
   padding-top: 0;
 }
-.entry__footer .entry__meta {
-  margin-top: 22px;
-  margin-top: 1.375rem;
-}
 .entry__content hr {
   max-width: 220px;
   max-width: 13.75rem;
 }
 
+@supports (column-count: 2) or (-webkit-column-count: 2) or (-moz-column-count: 2) {
+  .entry__meta {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 22px;
+    -moz-column-gap: 22px;
+    column-gap: 22px;
+    -webkit-column-gap: 1.375rem;
+    -moz-column-gap: 1.375rem;
+    column-gap: 1.375rem;
+  }
+}
 /*------------------------------------*\
     Gist
 \*------------------------------------*/

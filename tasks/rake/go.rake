@@ -10,6 +10,7 @@ task :go do
     Rake::Task[:move_links].execute
     system "git push origin source"
     Rake::Task[:deploy].execute
+    Rake::Task[:publish].execute
     Rake::Task[:webmention].execute
     Rake::Task[:fix_opengraph].execute
 end
