@@ -64,16 +64,20 @@
     }
 
     // map to http too
-    if ( window.location.protocol != 'http' )
+    console.log( targets );
+    if ( window.location.protocol != 'http:' )
     {
         targets.forEach(function( value, i ){
             complete_urls.push( value );
-            complete_urls.push( value.replace( 'https://', 'http://' ) );
+            if ( value.indexOf('https://') != -1 )
+            {
+                complete_urls.push( value.replace( 'https://', 'http://' ) );
+            }
         });
         targets = complete_urls;
-        console.log(targets);
         complete_urls = false;
     }
+    console.log( targets );
 
     // Do we need to create the list?
     if ( $webmentions_list.length < 1 )
@@ -321,7 +325,7 @@
     // Load up any unpublished webmentions on load
     json_webmentions = document.createElement('script');
     json_webmentions.async = true;
-    json_webmentions.src = window.location.protocol + '://webmention.io/api/mentions?jsonp=window.AG.processWebmentions&amp;target[]=' +
+    json_webmentions.src = '//webmention.io/api/mentions?jsonp=window.AG.processWebmentions&amp;target[]=' +
                             targets.join( '&amp;target[]' );
     document.getElementsByTagName('head')[0].appendChild( json_webmentions );
     
