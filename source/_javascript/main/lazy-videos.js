@@ -51,7 +51,6 @@
 
         while ( link_count-- )
         {
-            console.log($video_links[link_count]);
             $video_links[link_count].addEventListener( 'click', start, false );
             $video_links[link_count].addEventListener( 'touchdown', start, false );
         }

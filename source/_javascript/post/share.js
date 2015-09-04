@@ -10,7 +10,6 @@
 	// event handler
 	function click(e)
 	{
-		console.log('click');
 		var target = e.target;
 
 		// target must be an anchor and the inner width threshold must be met

@@ -116,7 +116,6 @@
 	// event handler
 	function click(e)
 	{
-		console.log('click');
 		var target = e.target;
 
 		// target must be an anchor and the inner width threshold must be met
@@ -146,6 +145,20 @@
 	}
 
 }( this, this.document ));
+// Social media avatars disappear on occasion.
+// If they aren’t available, hide em.
+(function( images ){
+	
+	var i = images.length;
+	while ( i-- )
+	{
+		if ( ! images[i].naturalWidth )
+		{
+			images[i].style.visibility = 'hidden';
+		}
+	}
+
+}( document.getElementsByTagName('img') ));
 /**
  *  WebMentions.io JS
  *  A re-tooling of Aaron Parecki’s recommended JS for using the WebMention.io API

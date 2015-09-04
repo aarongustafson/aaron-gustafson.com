@@ -122,7 +122,7 @@ class YouTube < Liquid::Tag
 
     puts "Embedding YouTube video: #{@title}"
 
-    @style = "background-image:url(http://i2.ytimg.com/vi/#{@id}/0.jpg);"
+    @style = "background-image:url(https://i2.ytimg.com/vi/#{@id}/0.jpg);"
     
     @player = "http://www.youtube.com/embed/#{@id}?"
     @player << 'autoplay=1' # start playing

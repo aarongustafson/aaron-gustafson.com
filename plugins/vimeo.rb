@@ -70,7 +70,7 @@ class Vimeo < Liquid::Tag
     # extract the title and description from the json string
     @title = result["title"]
     @description = result["description"]
-    @poster = result["thumbnail_url"]
+    @poster = result["thumbnail_url"].sub 'http://', 'https://'
 
     puts "Embedding Vimeo video: #{@title}"
 
