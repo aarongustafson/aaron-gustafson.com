@@ -71,6 +71,7 @@
             complete_urls.push( value.replace( 'https://', 'http://' ) );
         });
         targets = complete_urls;
+        console.log(targets);
         complete_urls = false;
     }
 
