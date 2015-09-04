@@ -1,6 +1,6 @@
 ---
 layout: link
-title: "On the Device Context Continuum Cloud Four Blog"
+title: "On the Device Context Continuum"
 date: 2015-09-04 16:23:53 -0400
 comments: false
 ref_url: http://blog.cloudfour.com/on-the-device-context-continuum/
