@@ -64,7 +64,6 @@
     }
 
     // map to http too
-    console.log( targets );
     if ( window.location.protocol != 'http:' )
     {
         targets.forEach(function( value, i ){
@@ -77,8 +76,7 @@
         targets = complete_urls;
         complete_urls = false;
     }
-    console.log( targets );
-
+    
     // Do we need to create the list?
     if ( $webmentions_list.length < 1 )
     {
