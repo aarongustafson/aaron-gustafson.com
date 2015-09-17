@@ -12,5 +12,5 @@ task :go do
     Rake::Task[:deploy].execute
     Rake::Task[:publish].execute
     Rake::Task[:webmention].execute
-    Rake::Task[:fix_opengraph].execute
+    # Rake::Task[:fix_opengraph].execute
 end

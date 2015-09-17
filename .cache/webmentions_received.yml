@@ -7711,6 +7711,20 @@ http://www.aaron-gustafson.com/notebook/ramblings-on-new-browser-features-intero
       Development Reading List #100 - American Fido</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2015-09-01T10:52:40-04:00">1
       September 2015</time></div></article></li>'
+  '2015-09-14':
+    100061: '<li id="webmention-100061" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="https://hakandeliduman.wordpress.com/2015/09/09/web-development-reading-list-100/">Web
+      Development Reading List #100 | Hakan Deliduman</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-09-14T17:22:41-04:00">14
+      September 2015</time></div></article></li>'
+  '2015-09-16':
+    104753: '<li id="webmention-104753" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://www.webhostingreviewsbynerds.com/web-development-reading-list-100/">Web
+      Development Reading List #100 : Cheap Web Hosting Reviews | Top 10 Web Hosting
+      Sites | Compare Prices</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-09-16T00:55:59-04:00">16 September 2015</time></div></article></li>'
 http://www.aaron-gustafson.com/notebook/links/windows-10-microsoft-edge-browser-war/:
   '2015-08-07':
     https://twitter.com/AaronGustafson/status/629864217437433856: |-
@@ -8104,6 +8118,33 @@ https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-page
     https://twitter.com/noliverte/status/639842781582766080: |-
       <li id="webmention-639842781582766080" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/noliverte"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1991268741/nolive_normal.jpg" alt="" title="noliverte"><b class="p-name">noliverte</b></a></div><div class="webmention__content p-content"><p>More Proof We Don’t Control Our Web Pages <a href="http://t.co/XOIobMqbCV">http://t.co/XOIobMqbCV</a> -via Flynx</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-04T12:49:41-04:00">4 September 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/noliverte/status/639842781582766080">Permalink</a></div></article></li>
+  '2015-09-15':
+    https://twitter.com/maxbarners/status/643695803832397824: |-
+      <li id="webmention-643695803832397824" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/maxbarners"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/67845526/square_barners_normal.jpg" alt="" title="Steve Barnett"><b class="p-name">Steve Barnett</b></a></div><div class="webmention__content p-content"><p>&lt;3 @AaronGustafson. “We can’t control what happens to us in this world, we can only control our reaction to it.” <a href="https://t.co/3BRgciCVPd">https://t.co/3BRgciCVPd</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-15T04:00:13-04:00">15 September 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/maxbarners/status/643695803832397824">Permalink</a></div></article></li>
+  '2015-09-14':
+    https://twitter.com/adactioLinks/status/643540209985044481: |-
+      <li id="webmention-643540209985044481" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/adactioLinks"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/491494058292809728/oGSxtt0o_normal.jpeg" alt="" title="Adactio Links"><b class="p-name">Adactio Links</b></a></div><div class="webmention__content p-content"><p>More Proof We Don’t Control Our Web Pages, From the Notebook of Aaron Gustafson <a href="http://t.co/bAySUwP7EO">http://t.co/bAySUwP7EO</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-14T17:41:57-04:00">14 September 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/adactioLinks/status/643540209985044481">Permalink</a></div></article></li>
+    104001: <li id="webmention-104001" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-pages/">More
+      Proof We Don’t Control Our Web Pages, From the Notebook of Aaron Gustafson</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-14T18:21:10-04:00">14
+      September 2015</time></div></article></li>
+  '2015-09-09':
+    https://twitter.com/danellesheree/status/641790392573276161: |-
+      <li id="webmention-641790392573276161" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/danellesheree"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/3548446605/69c94c04fa9c3030f5700db4fc10cbbc_normal.jpeg" alt="" title="Danelle Bailey"><b class="p-name">Danelle Bailey</b></a></div><div class="webmention__content p-content"><p>More Proof We Don’t Control Our Web Pages, From the Notebook of Aaron Gustafson <a href="http://t.co/GHsm4WduPB">http://t.co/GHsm4WduPB</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-09T21:48:48-04:00">9 September 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/danellesheree/status/641790392573276161">Permalink</a></div></article></li>
+  '2015-09-06':
+    '640697741060866048': <li id="webmention-640697741060866048" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.weboverhauls.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/e34fa692b1812aead41eb9bab0eec182300f1956699b7063ffa629c1e83a81cb.jpeg"
+      alt="" title="WebOverhauls.com"><b class="p-name">WebOverhauls.com</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/weboverhauls/status/640697741060866048">WebOverhauls.com
+      reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-09-06T21:26:59-04:00">6 September 2015</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/links/9370/:
   '2015-09-01':
     https://twitter.com/werthao/status/638919061766864896: |-
@@ -8153,3 +8194,18 @@ https://www.aaron-gustafson.com/notebook/moved-to-https/:
     https://twitter.com/AaronGustafson/status/639621224008687616: |-
       <li id="webmention-639621224008687616" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/635107999120531456/W_YXtoX-_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Moved to HTTPS <a href="https://t.co/vm4WFhR9dg">https://t.co/vm4WFhR9dg</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-03T22:09:18-04:00">3 September 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/639621224008687616">Permalink</a></div></article></li>
+https://www.aaron-gustafson.com/notebook/interface-experience-maps/:
+  '2015-09-10':
+    https://twitter.com/CTDWebDesigns/status/642005838320771072: |-
+      <li id="webmention-642005838320771072" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/CTDWebDesigns"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/460810317572739072/i_7zezqL_normal.png" alt="" title="CTD Web Designs"><b class="p-name">CTD Web Designs</b></a></div><div class="webmention__content p-content"><p>How to write Interface Experience Maps - <a href="http://t.co/ma3So84o3w">http://t.co/ma3So84o3w</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-10T12:04:54-04:00">10 September 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/CTDWebDesigns/status/642005838320771072">Permalink</a></div></article></li>
+https://www.aaron-gustafson.com/notebook/web-design-101-100-percent-tappable/:
+  '2015-09-09':
+    https://twitter.com/danellesheree/status/641782659216207873: |-
+      <li id="webmention-641782659216207873" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/danellesheree"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/3548446605/69c94c04fa9c3030f5700db4fc10cbbc_normal.jpeg" alt="" title="Danelle Bailey"><b class="p-name">Danelle Bailey</b></a></div><div class="webmention__content p-content"><p>Web Design 101: 100% Tappable <a href="https://t.co/EqdgxoZqFM">https://t.co/EqdgxoZqFM</a> THIS. Thanks, @AaronGustafson!</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-09T21:18:04-04:00">9 September 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/danellesheree/status/641782659216207873">Permalink</a></div></article></li>
+https://www.aaron-gustafson.com/notebook/where-do-we-go-from-here/:
+  '2015-09-09':
+    https://twitter.com/danellesheree/status/641642891748724736: |-
+      <li id="webmention-641642891748724736" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/danellesheree"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/3548446605/69c94c04fa9c3030f5700db4fc10cbbc_normal.jpeg" alt="" title="Danelle Bailey"><b class="p-name">Danelle Bailey</b></a></div><div class="webmention__content p-content"><p>Where Do We Go From Here? <a href="http://t.co/wrTcBovwuP">http://t.co/wrTcBovwuP</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-09T12:02:41-04:00">9 September 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/danellesheree/status/641642891748724736">Permalink</a></div></article></li>
