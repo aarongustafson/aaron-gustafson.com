@@ -1305,7 +1305,7 @@ div.gist .blob-code {
 .speaking-engagements .event a {
   color: #fff;
   border-bottom: none;
-  text-decoration: none;
+  text-shadow: none;
 }
 .speaking-engagements .event .listing__item__title,
 .speaking-engagements .event .listing__item__meta {
