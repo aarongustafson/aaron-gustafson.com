@@ -8154,6 +8154,36 @@ https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-page
     https://twitter.com/maxbarners/status/643695803832397824: |-
       <li id="webmention-643695803832397824" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/maxbarners"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/67845526/square_barners_normal.jpg" alt="" title="Steve Barnett"><b class="p-name">Steve Barnett</b></a></div><div class="webmention__content p-content"><p>&lt;3 @AaronGustafson. “We can’t control what happens to us in this world, we can only control our reaction to it.” <a href="https://t.co/3BRgciCVPd">https://t.co/3BRgciCVPd</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-15T01:00:13-07:00">15 September 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/maxbarners/status/643695803832397824">Permalink</a></div></article></li>
+    '643695803832397824': <li id="webmention-643695803832397824" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://naga.co.za/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/0526379c8e7ce9912388d39e7394627e8dc98397982108c4f3ae6d3425870433.jpeg"
+      alt="" title="Steve Barnett"><b class="p-name">Steve Barnett</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/maxbarners/status/643695803832397824"><3
+      @AaronGustafson. "We can’t control what happens to us in this world, we can
+      only control our reaction to it." aaron-gustafson.com/notebook/more-…</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-15T04:00:13-04:00">15
+      September 2015</time></div></article></li>
+    '643648821176717312': '<li id="webmention-643648821176717312" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://www.batjan.com/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/4e9c19e70e7f7a51578de8d5ca84ba8120a3d833b3792724bbd2c2e0994725f6.jpeg"
+      alt="" title="Jan Skovgaard"><b class="p-name">Jan Skovgaard</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/TheRealBatJan/status/643648821176717312">RT
+      @adactioLinks: More Proof We Don’t Control Our Web Pages, From the Notebook
+      of Aaron Gustafson ift.tt/1VYtn1F</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-09-15T00:53:32-04:00">15
+      September 2015</time></div></article></li>'
+    '643654067420569600': '<li id="webmention-643654067420569600" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/madjor5"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/400a8f64354705bd9022919749a52587cafafd3d88e7c0fc24052b1b058aa25d.jpeg"
+      alt="" title="Mads Jørgensen"><b class="p-name">Mads Jørgensen</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/madjor5/status/643654067420569600">RT
+      @adactioLinks: More Proof We Don’t Control Our Web Pages, From the Notebook
+      of Aaron Gustafson ift.tt/1VYtn1F</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-09-15T01:14:22-04:00">15
+      September 2015</time></div></article></li>'
   '2015-09-14':
     https://twitter.com/adactioLinks/status/643540209985044481: |-
       <li id="webmention-643540209985044481" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/adactioLinks"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/491494058292809728/oGSxtt0o_normal.jpeg" alt="" title="Adactio Links"><b class="p-name">Adactio Links</b></a></div><div class="webmention__content p-content"><p>More Proof We Don’t Control Our Web Pages, From the Notebook of Aaron Gustafson <a href="http://t.co/bAySUwP7EO">http://t.co/bAySUwP7EO</a></p>
@@ -8163,6 +8193,15 @@ https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-page
       p-name"><a href="https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-pages/">More
       Proof We Don’t Control Our Web Pages, From the Notebook of Aaron Gustafson</a></div><div
       class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-14T18:21:10-04:00">14
+      September 2015</time></div></article></li>
+    '643540209985044481': <li id="webmention-643540209985044481" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://adactio.com/links"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/8e0a805eae6791b05c23541931a123a5446393bb9929fcdd274f7e5c33d7792f.jpeg"
+      alt="" title="Adactio Links"><b class="p-name">Adactio Links</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/adactioLinks/status/643540209985044481">More
+      Proof We Don’t Control Our Web Pages, From the Notebook of Aaron Gustafson ift.tt/1VYtn1F</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-14T17:41:57-04:00">14
       September 2015</time></div></article></li>
   '2015-09-09':
     https://twitter.com/danellesheree/status/641790392573276161: |-
@@ -8192,6 +8231,50 @@ https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-page
       <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/639160156073426944">AgencyofSocialMedia
       likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-09-19T06:28:17-04:00">19 September 2015</time></div></article></li>
+    '645181349612097536': |-
+      <li id="webmention-645181349612097536" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://www.baldurbjarnason.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/f2791c22ce91d5d90c1443c20b71720c6616f50207f8156207bc83c1332544ab.png" alt="" title="Baldur Bjarnason"><b class="p-name">Baldur Bjarnason</b></a></div><div class="webmention__content p-content"><p>And this is from <a href="https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-pages/" rel="nofollow">aaron-gustafson.com/notebook/more-…</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-19T06:23:15-04:00">19 September 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/fakebaldur/status/645181349612097536">Permalink</a></div></article></li>
+    '645185669644595200': <li id="webmention-645185669644595200" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://meredithcase.com/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/06ba86abacc41725f3042179cf06ba55eb6996297c42911a7eee859a8b868192.jpeg"
+      alt="" title="Meredith Case"><b class="p-name">Meredith Case</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/goldieashe/status/645185669644595200">"More
+      Proof We Don’t Control Our Web Pages" aaron-gustafson.com/notebook/more-…</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-19T06:40:25-04:00">19
+      September 2015</time></div></article></li>
+  '2015-09-25':
+    https://twitter.com/somelaniesaid/status/647615057325457408: |-
+      <li id="webmention-647615057325457408" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/somelaniesaid"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/618182494160982016/Mpku0iHF_normal.jpg" alt="" title="Melanie Richards"><b class="p-name">Melanie Richards</b></a></div><div class="webmention__content p-content"><p>Conclusion: everyone is awful <a href="https://t.co/Nu9ulcDCKx">https://t.co/Nu9ulcDCKx</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-25T23:33:56-04:00">25 September 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/somelaniesaid/status/647615057325457408">Permalink</a></div></article></li>
+    '647615057325457408': '<li id="webmention-647615057325457408" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://melanie-richards.com/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/7dd65f7a7b6261486adc51a39028d6c58fe631727960868e7d8b7aa0685d992e.jpeg"
+      alt="" title="Melanie Richards"><b class="p-name">Melanie Richards</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/somelaniesaid/status/647615057325457408">Conclusion:
+      everyone is awful aaron-gustafson.com/notebook/more-…</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-09-25T23:33:56-04:00">25
+      September 2015</time></div></article></li>'
+  '2015-09-23':
+    '639160156073426944': <li id="webmention-639160156073426944" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AgencyofM"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/a50309e2b40eb2c0be3aad2d37f34a83408c40d48a9a8b0b5189ba28cf08ce9d.jpeg"
+      alt="" title="AgencyofSocialMedia"><b class="p-name">AgencyofSocialMedia</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/639160156073426944">AgencyofSocialMedia
+      likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-09-23T00:01:10-04:00">23 September 2015</time></div></article></li>
+  '2015-09-26':
+    '647673477558857728': '<li id="webmention-647673477558857728" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://magnusleo.com/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/4462b63a90c281500031dbf39ce15062b251c24a6dfb1e18fe51bd2ec5841280.png"
+      alt="" title="Magnus Leo"><b class="p-name">Magnus Leo</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/leoillustratus/status/647673477558857728">RT
+      @somelaniesaid: Conclusion: everyone is awful aaron-gustafson.com/notebook/more-…</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-26T03:26:04-04:00">26
+      September 2015</time></div></article></li>'
 https://www.aaron-gustafson.com/notebook/links/9370/:
   '2015-09-01':
     https://twitter.com/werthao/status/638919061766864896: |-
@@ -8256,3 +8339,13 @@ https://www.aaron-gustafson.com/notebook/where-do-we-go-from-here/:
     https://twitter.com/danellesheree/status/641642891748724736: |-
       <li id="webmention-641642891748724736" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/danellesheree"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/3548446605/69c94c04fa9c3030f5700db4fc10cbbc_normal.jpeg" alt="" title="Danelle Bailey"><b class="p-name">Danelle Bailey</b></a></div><div class="webmention__content p-content"><p>Where Do We Go From Here? <a href="http://t.co/wrTcBovwuP">http://t.co/wrTcBovwuP</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-09T12:02:41-04:00">9 September 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/danellesheree/status/641642891748724736">Permalink</a></div></article></li>
+https://www.aaron-gustafson.com/notebook/links/zte-s-cheap-phones-quietly-winning-the-u-s-/:
+  '2015-09-28':
+    https://twitter.com/hs0ucy/status/648484742610964480: |-
+      <li id="webmention-648484742610964480" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/hs0ucy"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/2175619694/gabriel-dumont-gros-plan_normal.jpg" alt="" title="Hugo Soucy"><b class="p-name">Hugo Soucy</b></a></div><div class="webmention__content p-content"><p>«ZTE’s Cheap Phones Quietly Winning the U.S.: […] You should be testing on low-spec smartphones.» ~ <a href="https://t.co/rqXm5BmFRB">https://t.co/rqXm5BmFRB</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-28T09:09:45-04:00">28 September 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/hs0ucy/status/648484742610964480">Permalink</a></div></article></li>
+https://www.aaron-gustafson.com/notebook/links/WD-css-round-display-1-20150922/:
+  '2015-09-23':
+    https://twitter.com/lpatti10/status/646691102288953346: |-
+      <li id="webmention-646691102288953346" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/lpatti10"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/510169293070163968/5G1v3k-J_normal.png" alt="" title="Laura Patti"><b class="p-name">Laura Patti</b></a></div><div class="webmention__content p-content"><p>CSS Round Display Level 1 <a href="https://t.co/TzALStL10t">https://t.co/TzALStL10t</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-23T10:22:28-04:00">23 September 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/lpatti10/status/646691102288953346">Permalink</a></div></article></li>
