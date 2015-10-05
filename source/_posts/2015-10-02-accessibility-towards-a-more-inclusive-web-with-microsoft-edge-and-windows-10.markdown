@@ -1,6 +1,6 @@
 ---
 layout: link
-title: "Accessibility"
+title: "Accessibility: Towards a more inclusive web with Microsoft Edge and Windows 10"
 date: 2015-10-02 14:13:16 -0400
 comments: false
 ref_url: http://blogs.windows.com/msedgedev/2015/09/25/accessibility-towards-a-more-inclusive-web-with-microsoft-edge-and-windows-10/

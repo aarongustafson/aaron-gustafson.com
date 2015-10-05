@@ -11,3 +11,33 @@
   url: http://lanyrd.com/2015/oredev/
   date: 2015-11-03 09:00:00 -0400
   location: Malmö, Sweden
+
+- title: TBA # An Event Apart
+  # url: http://aneventapart.com/event/nashville-2016
+  date: 2016-03-14 09:00:00 -0400
+  location: Nashville, TN USA
+
+- title: TBA # Respond
+  # url: http://www.webdirections.org/events/
+  date: 2016-04-11 09:00:00 -0400
+  location: Sydney, Australia
+
+- title: TBA # Respond
+  # url: http://www.webdirections.org/events/
+  date: 2016-04-14 09:00:00 -0400
+  location: Melbourne, Australia
+
+- title: TBA # Respond
+  # url: http://www.webdirections.org/events/
+  date: 2016-04-18 09:00:00 -0400
+  location: Tokyo, Japan
+
+- title: SmashingConf New York
+  url: http://lanyrd.com/2016/smashingconf-new-york/
+  date: 2016-06-14 09:00:00 -0400
+  location: New York, NY USA
+
+- title: SmashingConf Freiburg
+  url: http://lanyrd.com/2016/smashingconf-freiburg/
+  date: 2015-09-13 09:00:00 -0400
+  location: Freiburg, Germany

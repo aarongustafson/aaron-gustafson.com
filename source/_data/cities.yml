@@ -88,6 +88,11 @@
   credit_name: Ron Reiring
   credit_url: http://commons.wikimedia.org/wiki/File:Fargo_ND_Downtown_overview.jpg
 
+- name: "Freiburg, Germany"
+  photo: https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Freiburg_Martinstor.jpg/400px-Freiburg_Martinstor.jpg
+  credit_name: Luidger
+  credit_url: https://commons.wikimedia.org/wiki/File:Freiburg_Martinstor.jpg
+
 - name: "Gatlinburg, TN USA"
   photo: https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Gatlinburg-TN-overlook1.jpg/400px-Gatlinburg-TN-overlook1.jpg
   credit_name: Mountain Vacation Resorts
@@ -122,6 +127,11 @@
   photo: https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Malvern_PA_1st_Presby_PHS332.jpg/400px-Malvern_PA_1st_Presby_PHS332.jpg
   credit_name: Presbyterian Historical Society
   credit_url: http://commons.wikimedia.org/wiki/File:Malvern_PA_1st_Presby_PHS332.jpg
+
+- name: "Melbourne, Australia"
+  photo: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Bolte_bridge_dusk.jpg/400px-Bolte_bridge_dusk.jpg
+  credit_name: Jes
+  credit_url: https://commons.wikimedia.org/wiki/File:Bolte_bridge_dusk.jpg#/media/File:Bolte_bridge_dusk.jpg
 
 - name: "Mountain View, CA USA"
   photo: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Google_Campus%2C_Mountain_View%2C_CA.jpg/400px-Google_Campus%2C_Mountain_View%2C_CA.jpg
@@ -232,6 +242,11 @@
   photo: https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Sydney_Opera_House_-_Dec_2008.jpg/400px-Sydney_Opera_House_-_Dec_2008.jpg
   credit_name: Diliff
   credit_url: http://commons.wikimedia.org/wiki/File:Sydney_Opera_House_-_Dec_2008.jpg
+
+- name: "Tokyo, Japan"
+  photo: https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Tokyo_odaiba.jpg/400px-Tokyo_odaiba.jpg
+  credit_name: Cors
+  credit_url: https://commons.wikimedia.org/wiki/File:Tokyo_odaiba.jpg#/media/File:Tokyo_odaiba.jpg
 
 - name: "Vancouver, BC Canada"
   photo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Vancouver-bridge.jpg/400px-Vancouver-bridge.jpg
