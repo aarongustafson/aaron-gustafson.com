@@ -1,0 +1,9 @@
+---
+layout: post
+title: "SaaS, Control, and BYOD"
+date: 2015-10-20 15:31:58 -0400
+comments: true
+categories: ["web design","progressive enhancement"]
+description: ""
+---
+
