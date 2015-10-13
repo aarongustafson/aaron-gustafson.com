@@ -1,0 +1,5 @@
+<img class="page__image-header__photo" alt=""
+     src="about_480_320_int_c1_small.jpg"
+     srcset="about_480_320_int_c1_small.jpg 480w,
+             about_800_350_int_c1_medium.jpg 800w,
+             about_940_343_int_s_c1_full.jpg 940w">

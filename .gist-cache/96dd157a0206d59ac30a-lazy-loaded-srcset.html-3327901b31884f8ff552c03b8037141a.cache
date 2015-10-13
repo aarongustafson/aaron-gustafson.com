@@ -1,0 +1,5 @@
+<div class="module__image image--lazy"
+     data-image="about_480_320_int_c1_small.jpg"
+     data-image-srcset="about_480_320_int_c1_small.jpg 480w,
+                      about_800_350_int_c1_medium.jpg 800w,
+                      about_940_343_int_s_c1_full.jpg 940w"></div>

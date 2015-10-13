@@ -1,0 +1,36 @@
+<img class="page__image-header__photo" alt=""
+    {exp:ce_img:pair
+        src="{embed:image}"
+        filename_suffix="_small"
+        width="480"
+        height="320"
+        crop="yes"
+        interlace="yes"
+        cache_dir="/"
+        } 
+        src="{made}"
+        srcset="{made} 480w,
+    {/exp:ce_img:pair}
+    {exp:ce_img:pair
+        src="{embed:image}"
+        filename_suffix="_medium"
+        width="800"
+        height="600"
+        crop="yes"
+        interlace="yes"
+        cache_dir="/"
+        }
+        {made} 800w,
+    {/exp:ce_img:pair}
+    {exp:ce_img:pair
+        src="{embed:image}"
+        filename_suffix="_full"
+        width="940"
+        allow_scale_larger="yes"
+        crop="yes"
+        interlace="yes"
+        cache_dir="/"
+        }
+        {made} 940w"
+    {/exp:ce_img:pair}
+    >

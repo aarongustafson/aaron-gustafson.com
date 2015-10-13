@@ -1,0 +1,3 @@
+if ( 'querySelector' in document ) {
+  // We can use querySelector!
+}
