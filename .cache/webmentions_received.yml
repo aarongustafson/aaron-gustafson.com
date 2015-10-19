@@ -8396,3 +8396,54 @@ https://www.aaron-gustafson.com/notebook/aria-quicktip-labelledby-vs-describedby
       Quicktip: Labelledby vs. Describedby aaron-gustafson.com/notebook/aria-… #a11y
       #a11yTO</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-10-17T11:25:59-04:00">17 October 2015</time></div></article></li>'
+https://www.aaron-gustafson.com/notebook/strapless/:
+  '2015-10-19':
+    https://twitter.com/bingeling/status/656174658593648640: |-
+      <li id="webmention-656174658593648640" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/bingeling"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/586439486357184513/A8XpuJqy_normal.png" alt="" title="Nina"><b class="p-name">Nina</b></a></div><div class="webmention__content p-content"><p>A browser extension to remove bootstrap from websites. I LIKE YOU! <a href="https://t.co/j4lUoqJmVd">https://t.co/j4lUoqJmVd</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-19T14:26:44-04:00">19 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/bingeling/status/656174658593648640">Permalink</a></div></article></li>
+    https://twitter.com/jmmcduffie/status/656173394510139392: |-
+      <li id="webmention-656173394510139392" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/jmmcduffie"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/620632601829617664/WWlkxirU_normal.jpg" alt="" title="Jeremy McDuffie"><b class="p-name">Jeremy McDuffie</b></a></div><div class="webmention__content p-content"><p>“Strapless” (A web without Bootstrap) <a href="https://t.co/HBYowi6aHS">https://t.co/HBYowi6aHS</a> +@AaronGustafson // This is hilarious.</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-19T14:21:43-04:00">19 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/jmmcduffie/status/656173394510139392">Permalink</a></div></article></li>
+    https://twitter.com/tcaspers/status/656171567378993156: |-
+      <li id="webmention-656171567378993156" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/tcaspers"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/604024161103691776/wpGlRTG0_normal.png" alt="" title="FußballmafiaDFB"><b class="p-name">FußballmafiaDFB</b></a></div><div class="webmention__content p-content"><p>Strapless. Groß! <a href="https://t.co/MLQADKycnD">https://t.co/MLQADKycnD</a> #bootcrap</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-19T14:14:27-04:00">19 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/tcaspers/status/656171567378993156">Permalink</a></div></article></li>
+    https://twitter.com/codepo8/status/656169694492282881: |-
+      <li id="webmention-656169694492282881" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/codepo8"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1666904408/codepo8_normal.png" alt="" title="Christian Heilmann "><b class="p-name">Christian Heilmann </b></a></div><div class="webmention__content p-content"><p>That @AaronGustafson goes Strapless <a href="https://t.co/HG0BKGyNpz">https://t.co/HG0BKGyNpz</a> - extension to remove bootstrap from sites.</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-19T14:07:00-04:00">19 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/codepo8/status/656169694492282881">Permalink</a></div></article></li>
+    '656174658593648640': <li id="webmention-656174658593648640" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/bingeling"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/613448e99f4fe0c3d167cc4c0f5466547d1a8259043659ae7dcb8b2d765480f2.png"
+      alt="" title="Nina"><b class="p-name">Nina</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/bingeling/status/656174658593648640">A
+      browser extension to remove bootstrap from websites. I LIKE YOU! aaron-gustafson.com/notebook/strap…</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-19T14:26:44-04:00">19
+      October 2015</time></div></article></li>
+    '656173394510139392': <li id="webmention-656173394510139392" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://jmmcduffie.com/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/a6528bf361147716f27941a2c815d12c365b4d63883fe6631eaf0217454c1646.jpeg"
+      alt="" title="Jeremy McDuffie"><b class="p-name">Jeremy McDuffie</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/jmmcduffie/status/656173394510139392">"Strapless"
+      (A web without Bootstrap) aaron-gustafson.com/notebook/strap… +@AaronGustafson
+      // This is hilarious.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-10-19T14:21:43-04:00">19 October 2015</time></div></article></li>
+    '656171567378993156': '<li id="webmention-656171567378993156" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://tomascaspers.de/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/de0373284b7438c53694749718983969815076ad861a62fc9f888f5136832e8c.png"
+      alt="" title="FußballmafiaDFB"><b class="p-name">FußballmafiaDFB</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/tcaspers/status/656171567378993156">Strapless.
+      Groß! aaron-gustafson.com/notebook/strap… #bootcrap</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-10-19T14:14:27-04:00">19
+      October 2015</time></div></article></li>'
+    '656169694492282881': <li id="webmention-656169694492282881" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://christianheilmann.com/2013/02/11/hello-it-is-me-on-twitter/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/2cb539703b09adb2ef4818c0fa52e2d97c6b8365befe25ba741bbc98ca12fde9.png"
+      alt="" title="Christian Heilmann"><b class="p-name">Christian Heilmann</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/codepo8/status/656169694492282881">That
+      @AaronGustafson goes Strapless aaron-gustafson.com/notebook/strap… - extension
+      to remove bootstrap from sites.</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-10-19T14:07:00-04:00">19
+      October 2015</time></div></article></li>
