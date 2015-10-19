@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Strapless"
-date: 2015-10-16 17:13:37 -0400
+date: 2015-10-19 11:33:37 -0400
 comments: true
 categories: ["web design",pranks]
 description: "I wrote a silly little extension that stops Bootstrap dead in its tracks."
