@@ -8410,40 +8410,84 @@ https://www.aaron-gustafson.com/notebook/strapless/:
     https://twitter.com/codepo8/status/656169694492282881: |-
       <li id="webmention-656169694492282881" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/codepo8"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1666904408/codepo8_normal.png" alt="" title="Christian Heilmann "><b class="p-name">Christian Heilmann </b></a></div><div class="webmention__content p-content"><p>That @AaronGustafson goes Strapless <a href="https://t.co/HG0BKGyNpz">https://t.co/HG0BKGyNpz</a> - extension to remove bootstrap from sites.</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-19T14:07:00-04:00">19 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/codepo8/status/656169694492282881">Permalink</a></div></article></li>
-    '656174658593648640': <li id="webmention-656174658593648640" class="webmentions__item"><article
+    https://twitter.com/reybango/status/656199466656006144: |-
+      <li id="webmention-656199466656006144" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/reybango"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/3742774565/09ba858a7751fc0faef2fb2ab1cce05c_normal.jpeg" alt="" title="Rey Bango"><b class="p-name">Rey Bango</b></a></div><div class="webmention__content p-content"><p>Strapless, @AaronGustafson’s thoughts on the use of Bootstrap  <a href="https://t.co/0uLWSEBoEJ">https://t.co/0uLWSEBoEJ</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-19T16:05:19-04:00">19 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/reybango/status/656199466656006144">Permalink</a></div></article></li>
+    https://twitter.com/AaronGustafson/status/656192349677178881: |-
+      <li id="webmention-656192349677178881" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/651797747188822016/D7ctIoYg_normal.jpg" alt="" title="Aaron GUTStafson"><b class="p-name">Aaron GUTStafson</b></a></div><div class="webmention__content p-content"><p>Strapless <a href="https://t.co/wMRzUTlViv">https://t.co/wMRzUTlViv</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-19T15:37:02-04:00">19 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/656192349677178881">Permalink</a></div></article></li>
+    '656195934049718272': |-
+      <li id="webmention-656195934049718272" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.aaron-gustafson.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/c5f31ea6e3e6b07a554d7a19d8998978de8b137dd49ecef6a26470864608d6e4.jpeg" alt="" title="Aaron GUTStafson"><b class="p-name">Aaron GUTStafson</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/webcraftsman" rel="nofollow">@webcraftsman</a> I thought about making a button for it so you could turn it on and off. Maybe in v2.</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-19T15:51:16-04:00">19 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/656195934049718272">Permalink</a></div></article></li>
+    '656199466656006144': <li id="webmention-656199466656006144" class="webmentions__item"><article
       class="h-cite webmention webmention--title-only"><div class="webmention__author
-      p-author h-card"><a class="u-url" href="https://twitter.com/bingeling"><img
-      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/613448e99f4fe0c3d167cc4c0f5466547d1a8259043659ae7dcb8b2d765480f2.png"
-      alt="" title="Nina"><b class="p-name">Nina</b></a></div> <div class="webmention__title
-      p-name"><a href="https://twitter.com/bingeling/status/656174658593648640">A
-      browser extension to remove bootstrap from websites. I LIKE YOU! aaron-gustafson.com/notebook/strap…</a></div><div
-      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-19T14:26:44-04:00">19
+      p-author h-card"><a class="u-url" href="http://blog.reybango.com/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/17014adc56f0e45a4eb245f3aebdd8dd12b48ea8c3a0222c2c1b4f80e64b35db.jpeg"
+      alt="" title="Rey Bango"><b class="p-name">Rey Bango</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/reybango/status/656199466656006144">Strapless,
+      @AaronGustafson's thoughts on the use of Bootstrap bit.ly/1PCsVES</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-19T16:05:19-04:00">19
       October 2015</time></div></article></li>
-    '656173394510139392': <li id="webmention-656173394510139392" class="webmentions__item"><article
-      class="h-cite webmention webmention--title-only"><div class="webmention__author
-      p-author h-card"><a class="u-url" href="http://jmmcduffie.com/"><img class="webmention__author__photo
-      u-photo" src="https://webmention.io/avatar/twitter.com/a6528bf361147716f27941a2c815d12c365b4d63883fe6631eaf0217454c1646.jpeg"
-      alt="" title="Jeremy McDuffie"><b class="p-name">Jeremy McDuffie</b></a></div>
-      <div class="webmention__title p-name"><a href="https://twitter.com/jmmcduffie/status/656173394510139392">"Strapless"
-      (A web without Bootstrap) aaron-gustafson.com/notebook/strap… +@AaronGustafson
-      // This is hilarious.</a></div><div class="webmention__meta"><time class="webmention__pubdate
-      dt-published" datetime="2015-10-19T14:21:43-04:00">19 October 2015</time></div></article></li>
-    '656171567378993156': '<li id="webmention-656171567378993156" class="webmentions__item"><article
-      class="h-cite webmention webmention--title-only"><div class="webmention__author
-      p-author h-card"><a class="u-url" href="http://tomascaspers.de/"><img class="webmention__author__photo
-      u-photo" src="https://webmention.io/avatar/twitter.com/de0373284b7438c53694749718983969815076ad861a62fc9f888f5136832e8c.png"
-      alt="" title="FußballmafiaDFB"><b class="p-name">FußballmafiaDFB</b></a></div>
-      <div class="webmention__title p-name"><a href="https://twitter.com/tcaspers/status/656171567378993156">Strapless.
-      Groß! aaron-gustafson.com/notebook/strap… #bootcrap</a></div><div class="webmention__meta"><time
-      class="webmention__pubdate dt-published" datetime="2015-10-19T14:14:27-04:00">19
-      October 2015</time></div></article></li>'
-    '656169694492282881': <li id="webmention-656169694492282881" class="webmentions__item"><article
-      class="h-cite webmention webmention--title-only"><div class="webmention__author
-      p-author h-card"><a class="u-url" href="http://christianheilmann.com/2013/02/11/hello-it-is-me-on-twitter/"><img
-      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/2cb539703b09adb2ef4818c0fa52e2d97c6b8365befe25ba741bbc98ca12fde9.png"
-      alt="" title="Christian Heilmann"><b class="p-name">Christian Heilmann</b></a></div>
-      <div class="webmention__title p-name"><a href="https://twitter.com/codepo8/status/656169694492282881">That
-      @AaronGustafson goes Strapless aaron-gustafson.com/notebook/strap… - extension
-      to remove bootstrap from sites.</a></div><div class="webmention__meta"><time
-      class="webmention__pubdate dt-published" datetime="2015-10-19T14:07:00-04:00">19
-      October 2015</time></div></article></li>
+    '656198482508840960': <li id="webmention-656198482508840960" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.maddesigns.de/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/e3088286184d1bfe3eed1fed03ceaff9ba98d2f569a70ea788a8cf488ba820b1.jpeg"
+      alt="" title="Sven Wolfermann"><b class="p-name">Sven Wolfermann</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/maddesigns/status/656198482508840960">Sven
+      Wolfermann reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-10-19T16:01:24-04:00">19 October 2015</time></div></article></li>
+    '656200349728960512': |-
+      <li id="webmention-656200349728960512" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/sgalineau"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/9ded2a361f1c66649260fbbc7021be407c9026aa95e0b4ba648c8d3005372f7c.png" alt="" title="Sylvain Galineau"><b class="p-name">Sylvain Galineau</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/reybango" rel="nofollow">@reybango</a> <a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> Expect me to click a link about what you and/or…</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-19T16:08:49-04:00">19 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/sgalineau/status/656200349728960512">Permalink</a></div></article></li>
+    '656192349677178881': <li id="webmention-656192349677178881" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/maddesigns"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/e3088286184d1bfe3eed1fed03ceaff9ba98d2f569a70ea788a8cf488ba820b1.jpeg"
+      alt="" title="Sven Wolfermann"><b class="p-name">Sven Wolfermann</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/656192349677178881">Sven
+      Wolfermann likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-10-19T16:18:34-04:00">19 October 2015</time></div></article></li>
+    '656201567327096837': <li id="webmention-656201567327096837" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://be.net/dbfx"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/d85e849acc48565f3119bd7ee9a591ec104ff0599e9e8476eba32d991cb9a491.jpeg"
+      alt="" title="Rik Shadbolt"><b class="p-name">Rik Shadbolt</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/dbfxstudio/status/656201567327096837">Rik
+      Shadbolt reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-10-19T16:13:39-04:00">19 October 2015</time></div></article></li>
+    '656195943478480896': <li id="webmention-656195943478480896" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.heydonworks.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/4d2afe2f1c8b5149e9fabab1a8c617dd5467402e0fdff2b4bb3ee15fe53df9f6.jpeg"
+      alt="" title="Heydon"><b class="p-name">Heydon</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/heydonworks/status/656195943478480896">Heydon
+      reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-10-19T15:51:19-04:00">19 October 2015</time></div></article></li>
+    '656195391336095744': |-
+      <li id="webmention-656195391336095744" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://jeffbridgforth.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/5f9d999f31d34ae6776a49a3225f38c259d2cfada9ab1d10314ab0681ef37cb5.jpeg" alt="" title="Jeff Bridgforth"><b class="p-name">Jeff Bridgforth</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@aarongustafson</a> That’s awesome!</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-19T15:49:07-04:00">19 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/webcraftsman/status/656195391336095744">Permalink</a></div></article></li>
+    '656195549025144833': |-
+      <li id="webmention-656195549025144833" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.aaron-gustafson.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/c5f31ea6e3e6b07a554d7a19d8998978de8b137dd49ecef6a26470864608d6e4.jpeg" alt="" title="Aaron GUTStafson"><b class="p-name">Aaron GUTStafson</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/webcraftsman" rel="nofollow">@webcraftsman</a> It’ll remove the Bootstrap CSS and reload the HTML without Bootstrap’s JS. You can try it out on &lt;a href=”http://getbootstrap</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-19T15:49:45-04:00">19 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/656195549025144833">Permalink</a></div></article></li>
+    '656197998846877696': <li id="webmention-656197998846877696" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://frippz.se/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/5b9d4087ad7f3c949f8332a2d45c46577a61913d68d66a54ded41da0012de208.jpeg"
+      alt="" title="Fredrik Frodlund"><b class="p-name">Fredrik Frodlund</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/frippz/status/656197998846877696">Fredrik
+      Frodlund reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-10-19T15:59:29-04:00">19 October 2015</time></div></article></li>
+    '656195240173379584': |-
+      <li id="webmention-656195240173379584" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://jeffbridgforth.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/5f9d999f31d34ae6776a49a3225f38c259d2cfada9ab1d10314ab0681ef37cb5.jpeg" alt="" title="Jeff Bridgforth"><b class="p-name">Jeff Bridgforth</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@aarongustafson</a> So once I install the extension, it automatically will turn it off when I encounter a Bootstrap site?</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-19T15:48:31-04:00">19 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/webcraftsman/status/656195240173379584">Permalink</a></div></article></li>
+    '656195795318915072': |-
+      <li id="webmention-656195795318915072" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://jeffbridgforth.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/5f9d999f31d34ae6776a49a3225f38c259d2cfada9ab1d10314ab0681ef37cb5.jpeg" alt="" title="Jeff Bridgforth"><b class="p-name">Jeff Bridgforth</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@aarongustafson</a> Adding a toggle feature might be a good addition just so you could then see what they did with it.</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-19T15:50:43-04:00">19 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/webcraftsman/status/656195795318915072">Permalink</a></div></article></li>
+    '656197570826473472': <li id="webmention-656197570826473472" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/schofeld"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/55fca99be863584062e1089d38fe1d2b9fec0c9c23401c4ddc146b69d03efdbd.jpeg"
+      alt="" title="Jonathan Schofield"><b class="p-name">Jonathan Schofield</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/schofeld/status/656197570826473472">Jonathan
+      Schofield reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-10-19T15:57:47-04:00">19 October 2015</time></div></article></li>
