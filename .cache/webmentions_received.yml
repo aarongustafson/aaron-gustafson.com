@@ -8363,3 +8363,36 @@ https://www.aaron-gustafson.com/notebook/a-grand-experiment/:
       Grand Experiment aaron-gustafson.com/notebook/a-gra…</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2015-10-01T14:29:28-04:00">1
       October 2015</time></div></article></li>
+https://www.aaron-gustafson.com/notebook/links/notes-on-use-of-multiple-aria-role-attribute-values/:
+  '2015-10-18':
+    https://twitter.com/portenkirchner/status/655866536788426752: |-
+      <li id="webmention-655866536788426752" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/portenkirchner"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/291829846/dsC02522_normal.jpg" alt="" title="Georg Portenkirchner"><b class="p-name">Georg Portenkirchner</b></a></div><div class="webmention__content p-content"><p>Notes on Use of Multiple ARIA Role Attribute Values <a href="https://t.co/6PCuIqp7Pg">https://t.co/6PCuIqp7Pg</a> via @AaronGustafson #accessibility</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-18T18:02:22-04:00">18 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/portenkirchner/status/655866536788426752">Permalink</a></div></article></li>
+https://www.aaron-gustafson.com/notebook/bringing-sanity-and-order-to-device-testing/:
+  '2015-10-17':
+    https://twitter.com/CTDWebDesigns/status/655413913295716352: |-
+      <li id="webmention-655413913295716352" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/CTDWebDesigns"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/460810317572739072/i_7zezqL_normal.png" alt="" title="CTD Web Designs"><b class="p-name">CTD Web Designs</b></a></div><div class="webmention__content p-content"><p>Bringing Sanity and Order to Device Testing - <a href="http://t.co/iGQ1ekU8HG">http://t.co/iGQ1ekU8HG</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-17T12:03:48-04:00">17 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/CTDWebDesigns/status/655413913295716352">Permalink</a></div></article></li>
+    '655413913295716352': <li id="webmention-655413913295716352" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://www.ctdwebdesigns.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/46097e9feb22df5d36d6358658fd069da901194e6d8f2de7e2431beadc94ab90.png"
+      alt="" title="CTD Web Designs"><b class="p-name">CTD Web Designs</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/CTDWebDesigns/status/655413913295716352">Bringing
+      Sanity and Order to Device Testing - ow.ly/OSEMq</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-10-17T12:03:48-04:00">17
+      October 2015</time></div></article></li>
+https://www.aaron-gustafson.com/notebook/aria-quicktip-labelledby-vs-describedby/:
+  '2015-10-17':
+    https://twitter.com/ShawnHooper/status/655404397027983360: |-
+      <li id="webmention-655404397027983360" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/ShawnHooper"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/634721180709093377/p2gEctsl_normal.jpg" alt="" title="Shawn Hooper"><b class="p-name">Shawn Hooper</b></a></div><div class="webmention__content p-content"><p>ARIA Quicktip: Labelledby vs. Describedby <a href="https://t.co/OtMcUmfXE9">https://t.co/OtMcUmfXE9</a> #a11y #a11yTO</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-17T11:25:59-04:00">17 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/ShawnHooper/status/655404397027983360">Permalink</a></div></article></li>
+    '655404397027983360': '<li id="webmention-655404397027983360" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://www.shawnhooper.ca/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/c60d17e784e17a41e06f4dd793d3f735438e0fca17fa941dc6909c8722e76c64.jpeg"
+      alt="" title="Shawn Hooper"><b class="p-name">Shawn Hooper</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/ShawnHooper/status/655404397027983360">ARIA
+      Quicktip: Labelledby vs. Describedby aaron-gustafson.com/notebook/aria-… #a11y
+      #a11yTO</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-10-17T11:25:59-04:00">17 October 2015</time></div></article></li>'

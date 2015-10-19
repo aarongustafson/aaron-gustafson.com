@@ -9,6 +9,8 @@ description: "I wrote a silly little extension that stops Bootstrap dead in its 
 
 On Friday, [Kelly](https://twitter.com/ShirleyTemper) and I were having a conversation over lunch about the ubiquity of Bootstrap. It’s a topic we’ve been kvetching about for the the last few years—we’ve grown tired of seeing the same site everywhere we look.
 
+<!-- more -->
+
 It’s not that we have any issues with Bootstrap specifically. It’s a solid framework for rapidly prototyping an idea before deciding if it’s got legs. It’s also a great tool to learn from when considering your own pattern library. That said, we don’t think it should be used in the way it so often is: as the entirety of your front end design with only a teensiest amount of theming applied.
 
 The reasons we aren’t big Bootstrap fans are manifold. [Steve Fisher](https://twitter.com/hellofisher), [Yesenia Perez-Cruz](https://twitter.com/yeseniaa), [Samantha Warren](https://twitter.com/samanthatoy) and I hashed out a bunch of them in our SXSW panel [“The Real Responsive Process?”](http://schedule.sxsw.com/2013/events/event_IAP137). Here are a few of the highlights:
