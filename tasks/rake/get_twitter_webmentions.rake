@@ -33,10 +33,11 @@ task :get_twitter_webmentions do |t, args|
   client.search("aaron-gustafson.com -rt").collect do |tweet|
   	
   	target = false
-  	tweet.urls.each do |url| 
-      url.url.fragment = url.url.query = nil
-  		url = url.url.to_s
-	  	url = `curl -w "%{url_effective}\n" -L -s -S $URL -o /dev/null #{url}`
+  	tweet.urls.each do |url|
+      url = URI::parse( url.url.to_s )
+      url.fragment = url.query = nil
+      url = url.to_s
+      url = `curl -w "%{url_effective}\n" -L -s -S $URL -o /dev/null #{url}`
 	  	if url.include? jekyll_config['url']
 	  		target = url.gsub("\n",'')
 	  		break
