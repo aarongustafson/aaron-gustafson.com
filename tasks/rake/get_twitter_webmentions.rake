@@ -34,12 +34,12 @@ task :get_twitter_webmentions do |t, args|
   	
   	target = false
   	tweet.urls.each do |url|
-      url = URI::parse( url.url.to_s )
-      url.fragment = url.query = nil
-      url = url.to_s
+      url = url.url.to_s
       url = `curl -w "%{url_effective}\n" -L -s -S $URL -o /dev/null #{url}`
 	  	if url.include? jekyll_config['url']
-	  		target = url.gsub("\n",'')
+	  		target = URI::parse( url.gsub("\n",'') )
+        target.fragment = target.query = nil
+        target = target.to_s
 	  		break
 	  	end
   	end
@@ -62,11 +62,13 @@ task :get_twitter_webmentions do |t, args|
 
     # Make sure we have the target
     if ! cached_webmentions[target]
+      puts "Target #{target} not found, making one"
       cached_webmentions[target] = {}
     end
 
     # Make sure we have the date
     if ! cached_webmentions[target][the_date]
+      puts "No entries for #{target} on #{the_date}, making a collection"
       cached_webmentions[target][the_date] = {}
     end
 
@@ -124,7 +126,7 @@ task :get_twitter_webmentions do |t, args|
       webmention << content_block
       webmention << "</article></li>"
 
-      cached_webmentions[target][the_date][permalink] = webmention
+      cached_webmentions[target][the_date][id] = webmention
       
       count += 1
     end

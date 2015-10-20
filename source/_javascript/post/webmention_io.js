@@ -135,6 +135,7 @@
     
     function addMention( mention )
     {
+        //console.log(mention);
         var streaming = !( 'data' in mention ),
             data = streaming ? mention : mention.data,
             id = streaming ? mention.element_id : mention.id;
