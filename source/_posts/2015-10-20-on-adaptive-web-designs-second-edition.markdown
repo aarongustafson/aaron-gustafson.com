@@ -21,7 +21,7 @@ My target length for the Second Edition was a modest increase from 135 pages to 
 
 I finished writing the Second Edition about a month and a half ago and have read and re-read it several times since then. I’m quite happy with the end result and I hope you will be too. I plan to get some of the content out there for you to read before deciding whether to purchase it, but in the meantime you can [read more about it on the updated book site](http://adaptivewebdesign.info/2nd-edition/). I also encourage you to check out [Jeremy Keith’s amazing Foreword](http://adaptivewebdesign.info/2nd-edition/read/foreword.html)—which, admittedly, made me a little misty—and [the sweet things Ethan and Tim Kadlec had to say about the book](http://adaptivewebdesign.info/2nd-edition/reviews/) after reading it.
 
-[^1]: Interestingly enough, Ethan’s book came out around the same time as <cite>Adaptive Web Design</cite>, leading many people to think they were conflicting approaches, which is hardly the case.
+[^1]: Interestingly enough, Ethan’s book came out around the same time as <cite>Adaptive Web Design</cite>, leading many people to think they were conflicting approaches, [which is hardly the case](http://blog.easy-designs.net/archives/on-adaptive-vs-responsive-web-design/).
 
 [^2]: I like boozy cocktails, in case you were wondering.
 
