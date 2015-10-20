@@ -127,7 +127,12 @@ module Jekyll
       links.reverse_each { |link|
         
         id = link['id']
-        target = link['target'].sub(/\?.*$/, '')
+
+        # Get the mentioned URI, stripping fragments and query strings
+        target = URI::parse( link['target'] )
+        target.fragment = target.query = nil
+        target = target.to_s
+        
         pubdate = link['data']['published_ts']
         if pubdate
           pubdate = Time.at(pubdate)

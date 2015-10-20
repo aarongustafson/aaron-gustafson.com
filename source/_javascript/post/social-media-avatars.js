@@ -1,14 +1,23 @@
 // Social media avatars disappear on occasion.
 // If they aren’t available, hide em.
-(function( images ){
+(function( window, images ){
 	
-	var i = images.length;
-	while ( i-- )
+	if ( 'addEventListener' in window )
 	{
-		if ( ! images[i].naturalWidth )
-		{
-			images[i].style.visibility = 'hidden';
-		}
+		window.addEventListener( 'load', checkImages, false );
 	}
 
-}( document.getElementsByTagName('img') ));
+	function checkImages(){
+		var i = images.length;
+		while ( i-- )
+		{
+			if ( ! images[i].naturalWidth )
+			{
+				images[i].style.visibility = 'hidden';
+			}
+		}
+		// release the DOM reference
+		images = null;
+	}
+
+}( this, document.getElementsByTagName('img') ));

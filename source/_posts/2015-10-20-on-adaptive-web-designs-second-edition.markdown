@@ -1,13 +1,15 @@
 ---
 layout: post
 title: "On Adaptive Web Design’s Second Edition"
-date: 2015-10-15 15:43:16 -0400
+date: 2015-10-20 11:43:16 -0400
 comments: true
 categories: ["adaptive web design","progressive enhancement"]
 description: "A little background as to why I wrote the Second Edition of Adaptive Web Design and what you can expect from it."
 ---
 
 I wrote the bulk of <cite>Adaptive Web Design</cite> in early 2010 while taking a much-needed break from client projects. I had originally slated for it to be released just before the holidays that year, but life happened and the book did not make it out into the world until mid-2011. Six months is a long time in the technical world, and especially on the Web. A year is forever.
+
+<!-- more -->
 
 Thankfully, <cite>Adaptive Web Design</cite> was never meant to be a technique book. As web design books go, technique books have perhaps the shortest lifespan. Heck, some are even out of date before they come off the press. Rather than going down that road, I consciously positioned my book as a web design philosophy book—the code samples were merely there to demonstrate how the philosophy could be applied to your work. That simple choice is probably why <cite>Adaptive Web Design</cite> continued to have strong sales year-after-year and it’s the reason that book continues to rank highly on many recommended reading lists.
 
