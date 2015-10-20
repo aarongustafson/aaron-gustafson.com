@@ -324,7 +324,7 @@
     json_webmentions = document.createElement('script');
     json_webmentions.async = true;
     json_webmentions.src = '//webmention.io/api/mentions?jsonp=window.AG.processWebmentions&amp;target[]=' +
-                            targets.join( '&amp;target[]' );
+                            targets.join( '&amp;target[]=' );
     document.getElementsByTagName('head')[0].appendChild( json_webmentions );
     
     // Listen for new ones
