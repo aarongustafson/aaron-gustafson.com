@@ -1,6 +1,6 @@
 // Social media avatars disappear on occasion.
 // If they aren’t available, hide em.
-(function( window, images ){
+(function( window ){
 	
 	if ( 'addEventListener' in window )
 	{
@@ -8,7 +8,8 @@
 	}
 
 	function checkImages(){
-		var i = images.length;
+		var images = document.getElementById("webmentions").getElementsByTagName('img'),
+			i = images.length;
 		while ( i-- )
 		{
 			if ( ! images[i].naturalWidth )
@@ -20,4 +21,4 @@
 		images = null;
 	}
 
-}( this, document.getElementsByTagName('img') ));
+}( this ));

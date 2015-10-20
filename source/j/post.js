@@ -147,7 +147,7 @@
 }( this, this.document ));
 // Social media avatars disappear on occasion.
 // If they aren’t available, hide em.
-(function( window, images ){
+(function( window ){
 	
 	if ( 'addEventListener' in window )
 	{
@@ -155,7 +155,8 @@
 	}
 
 	function checkImages(){
-		var i = images.length;
+		var images = document.getElementById("webmentions").getElementsByTagName('img'),
+			i = images.length;
 		while ( i-- )
 		{
 			if ( ! images[i].naturalWidth )
@@ -167,7 +168,7 @@
 		images = null;
 	}
 
-}( this, document.getElementsByTagName('img') ));
+}( this ));
 /**
  *  WebMentions.io JS
  *  A re-tooling of Aaron Parecki’s recommended JS for using the WebMention.io API
@@ -305,6 +306,7 @@
     
     function addMention( mention )
     {
+        //console.log(mention);
         var streaming = !( 'data' in mention ),
             data = streaming ? mention : mention.data,
             id = streaming ? mention.element_id : mention.id;
