@@ -64,7 +64,7 @@ module Jekyll
         site.posts.each do |post|
           
           if ! post.published?
-            continue
+            next
           end
 
           date = Date.parse(post.date.strftime("%Y-%m-%d %H:%M:%S"))
