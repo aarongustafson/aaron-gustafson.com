@@ -93,7 +93,7 @@ module Jekyll
 
     def crosspost_to_medium( payload )
 
-    	puts "Cross-posting #{payload.title} to Medium"
+    	puts "Cross-posting #{payload['title']} to Medium"
 
       user_id = ENV['MEDIUM_USER_ID'] or false
       token = ENV['MEDIUM_INTEGRATION_TOKEN'] or false
