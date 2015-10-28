@@ -13,7 +13,7 @@ Like many, I’m disappointed that gender—or ethnicity, etc., etc., etc.—sho
 
 <!-- more -->
 
-I applaud <cite>The Next Web</cite> for their recent list of “[100+ tech & business women speakers you need at your next event](http://thenextweb.com/insider/2015/10/27/the-100-tech-business-women-speakers-you-need-at-your-next-event/)”, but I’ve got a few more to add. In no particular order:
+I applaud <cite>The Next Web</cite> for their recent list of “[100+ tech & business women speakers you need at your next event](http://thenextweb.com/insider/2015/10/27/the-100-tech-business-women-speakers-you-need-at-your-next-event/)”, but I’ve got a few more to add from the interactive/UX/web world. In no particular order:
 
 * **Natalie Downe** — Co-founder and Chief Product Officer, Lanyrd; Director of Frontend Engineering, Eventbrite — [Twitter](https://twitter.com/Natbat), [LinkedIn](https://www.linkedin.com/in/nataliedowne), [Lanyrd](http://lanyrd.com/profile/natbat/)
 * **Lisa Welchman** — President, Digital Governance Solutions, Active Standards; Author, [<cite>Managing Chaos</cite>](http://rosenfeldmedia.com/books/managing-chaos/) — [Twitter](https://twitter.com/lwelchman), [LinkedIn](https://www.linkedin.com/in/lisawelchman), [Lanyrd](http://lanyrd.com/profile/lwelchman/)
