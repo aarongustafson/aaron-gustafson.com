@@ -6,6 +6,7 @@ comments: true
 categories: [industry,business,equality]
 description: "Like many, I’m disappointed that gender—or ethnicity, etc., etc., etc.—should even have to play a role when it comes to selecting awesome speakers, but the reality is that the dais at most tech-related conferences is still occupied (largely) by white men. That needs to change."
 in_reply_to: http://thenextweb.com/insider/2015/10/27/the-100-tech-business-women-speakers-you-need-at-your-next-event/
+crosspost_to_medium: true
 ---
 
 Like many, I’m disappointed that gender—or ethnicity, etc., etc., etc.—should even have to play a role when it comes to selecting awesome speakers, but the reality is that the dais at most tech-related events and conferences is still occupied (largely) by white men. That needs to change. We’ve been very intentional with our programming of [Code & Creativity](codeandcreativity.com), but it wasn’t like it was hard to find [an incredible speaker lineup that also happened to be pretty diverse](http://www.codeandcreativity.com/events/).
