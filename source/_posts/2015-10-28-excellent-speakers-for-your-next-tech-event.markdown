@@ -61,6 +61,7 @@ I applaud <cite>The Next Web</cite> for their recent list of “[100+ tech & bus
 * **Nicole Fenton** — Innovation Specialist, 18F — [Twitter](http://twitter.com/nicoleslaw), [Lanyrd](http://lanyrd.com/profile/nicoleslaw/)
 * **Jina Bolton** — Senior Product Designer, Salesforce — [Twitter](http://twitter.com/jina), [Lanyrd](http://lanyrd.com/profile/jina/)
 * **Jen Myers** — Director of Open Source Curriculum, Pluralsight — [Twitter](http://twitter.com/antiheroine), [LinkedIn](https://www.linkedin.com/in/jenmyers), [Lanyrd](http://lanyrd.com/profile/antiheroine/)
+* **Sara Soueidan** — Front-end Developer — [Twitter](https://twitter.com/SaraSoueidan), [Lanyrd](http://lanyrd.com/profile/sarasoueidan/)
 
 I also highly recommend [Molly Holzschlag](https://about.me/mollydotcom). She’s currently on medical leave, but she is a-mazing. When she’s ready to get back in the saddle, she’ll bring a wealth of knowledge to your event from her decades of working in technology.
 
