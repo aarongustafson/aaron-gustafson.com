@@ -8615,6 +8615,44 @@ https://www.aaron-gustafson.com/notebook/strapless/:
     659058253595148289: |-
       <li id="webmention-659058253595148289" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/jalonsoa"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/90326143/elkuko_normal.jpg" alt="" title="juan alonso"><b class="p-name">juan alonso</b></a></div><div class="webmention__content p-content"><p>Strapless: The reasons we aren’t big #Bootstrap fans <a href="https://t.co/BZtrVHLuEo">https://t.co/BZtrVHLuEo</a> @aaron-gustafson #programacionweb</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-27T13:25:07-04:00">27 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/jalonsoa/status/659058253595148289">Permalink</a></div></article></li>
+    659210435183398912: |-
+      <li id="webmention-659210435183398912" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/GoesBruno"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/544323605765423104/2IvcP2Gf_normal.jpeg" alt="" title="Bruno Goes De Meira"><b class="p-name">Bruno Goes De Meira</b></a></div><div class="webmention__content p-content"><p>Nothing new here but I agree with some of the author’s point.
+      Problems of using Bootstrap in your app:
+      <a href="https://t.co/0vxCzJFq6q">https://t.co/0vxCzJFq6q</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-27T23:29:49-04:00">27 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/GoesBruno/status/659210435183398912">Permalink</a></div></article></li>
+    '659058253595148289': '<li id="webmention-659058253595148289" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://www.acentocreativo.es/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/e8a5a348858935d79b35dc04b3e5e2e59c39bc3d3781f39f278459f561a1f599.jpeg"
+      alt="" title="juan alonso"><b class="p-name">juan alonso</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/jalonsoa/status/659058253595148289">Strapless:
+      The reasons we aren’t big #Bootstrap fans bit.ly/1RbQdjq @aaron-gustafson #programacionweb</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-27T13:25:07-04:00">27
+      October 2015</time></div></article></li>'
+    '659210435183398912': '<li id="webmention-659210435183398912" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://www.spare-code.com/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/5a58ac8de0a1a6ac6b0bfb58388c2e7146e93a02fd2fbda7e87fee083efbb5ff.jpeg"
+      alt="" title="Bruno Goes De Meira"><b class="p-name">Bruno Goes De Meira</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/GoesBruno/status/659210435183398912">Nothing
+      new here but I agree with some of the author''s point. Problems of using Bootstrap
+      in your app: aaron-gustafson.com/notebook/strap…</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-10-27T23:29:49-04:00">27
+      October 2015</time></div></article></li>'
+  '2015-10-28':
+    659309912527343616: |-
+      <li id="webmention-659309912527343616" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/legendarypixels"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/656379544702595072/MO7fr67Q_normal.jpg" alt="" title="Legendary Pixels"><b class="p-name">Legendary Pixels</b></a></div><div class="webmention__content p-content"><p>Totally understand. #Bootstrap is great, but in the end might be overkill. To me it is. <a href="https://t.co/gusD5WLpcT">https://t.co/gusD5WLpcT</a> (also read the comments)</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-28T06:05:07-04:00">28 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/legendarypixels/status/659309912527343616">Permalink</a></div></article></li>
+    '659309912527343616': '<li id="webmention-659309912527343616" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://www.legendarypixels.nl/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/a8b683b99f80521ff5f3734c34373d1f6beda53d844f70cc1d1fe73aeaf36e41.jpeg"
+      alt="" title="Legendary Pixels"><b class="p-name">Legendary Pixels</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/legendarypixels/status/659309912527343616">Totally
+      understand. #Bootstrap is great, but in the end might be overkill. To me it
+      is. aaron-gustafson.com/notebook/strap… (also read the comments)</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-28T06:05:07-04:00">28
+      October 2015</time></div></article></li>'
 https://www.aaron-gustafson.com/notebook/on-adaptive-web-designs-second-edition/:
   '2015-10-20':
     656653480204046336: |-
@@ -8794,3 +8832,11 @@ https://www.aaron-gustafson.com/notebook/crossposting-to-medium-from-jekyll/:
       <li id="webmention-658856602318053376" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://robin2go.net/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/94a627531b415d46da9cf3ff68d132e8f336e7a1b210a95806e084679a3a98d9.png" alt="" title="Robin Smail"><b class="p-name">Robin Smail</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/SvenAas" rel="nofollow">@SvenAas</a> As someone dear to me once said, I AM THE KING OF FUCK MOUNTAIN.
       &lt;a href=”https://www.aaron-gustafson.com/notebook/crossposting-to-medi</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-27T00:03:49-04:00">27 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/Robin2go/status/658856602318053376">Permalink</a></div></article></li>
+https://www.aaron-gustafson.com/notebook/apple-business-and-standards/:
+  '2015-10-27':
+    131988: <li id="webmention-131988" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://takethe5th.com/wp/2015_10/apple-abandons-web-designers/">Apple
+      Abandons Web Designers | Takethe5th Picks and Pans</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-10-27T18:29:30-04:00">27
+      October 2015</time></div></article></li>
