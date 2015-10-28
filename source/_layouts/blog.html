@@ -6,7 +6,7 @@ layout: default
 
 	{% if page.title or page.display_title %}
   		{% capture the_title %}{% if page.show_title == false and page.display_title %}{{ page.display_title }}{% else %}{{ page.title }}{% endif %}{% endcapture %}
-		<h1 class="page__title">{% if site.titlecase %}{{ the_title | titlecase | widont }}{% else %}{{ the_title | widont }}{% endif %}</h1>
+		<h1 class="page__title subsection__header">{% if site.titlecase %}{{ the_title | titlecase | widont }}{% else %}{{ the_title | widont }}{% endif %}</h1>
 	{% endif %}
 
 	<div class="layout-container__primary">

@@ -109,7 +109,7 @@ table.striped tbody tr {
   transition: background-color 0.25s ease;
 }
 table.striped tbody tr:nth-child(even) {
-  background: #413d3a;
+  background: #413e3b;
 }
 table.striped tbody tr:hover {
   background: #fff;
@@ -285,7 +285,7 @@ textarea {
 }
 
 /*------------------------------------*\
-    Post
+    Page
 \*------------------------------------*/
 /*------------------------------------*\
     Webmentions
@@ -305,3 +305,7 @@ textarea {
   margin-left: 1.375rem;
   width: 50%;
 }
+
+/*------------------------------------*\
+    Pagination
+\*------------------------------------*/

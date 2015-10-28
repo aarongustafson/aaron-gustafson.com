@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    Pagination
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+
+	.pagination {
+		
+		@include rem( margin-bottom, $default-spacing );
+		text-align: center;
+
+		&__pages {
+			@include rem( margin, 0 $default-spacing );
+		}
+
+		a {
+			background: $color-text-light;
+			color: $color-white;
+			text-shadow: none;
+
+			border: 1px solid $color-text;
+			border-radius: 3px;
+			@include rem( padding, 0 5 );
+
+			&:hover,
+			&:focus {
+				background: $color-green-dark;
+			}
+		}
+
+	}
+
+}

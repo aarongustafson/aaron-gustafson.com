@@ -438,28 +438,28 @@ a[rel="original-article"]::after {
     background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(2px, transparent), color-stop(2px, #34AD23), color-stop(3px, #34AD23), color-stop(3px, transparent));
     background-image: -webkit-linear-gradient(bottom, transparent, transparent 2px, #34AD23 2px, #34AD23 3px, transparent 3px);
     background-image: linear-gradient(bottom, transparent, transparent 2px, #34AD23 2px, #34AD23 3px, transparent 3px);
-    border-bottom-width: 0 !important;
+    border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
   h1 a:link, h1 a:visited {
     background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(8px, transparent), color-stop(8px, #34AD23), color-stop(9px, #34AD23), color-stop(9px, transparent));
     background-image: -webkit-linear-gradient(bottom, transparent, transparent 8px, #34AD23 8px, #34AD23 9px, transparent 9px);
     background-image: linear-gradient(bottom, transparent, transparent 8px, #34AD23 8px, #34AD23 9px, transparent 9px);
-    border-bottom-width: 0 !important;
+    border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
   a:hover, a:focus {
     background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(2px, transparent), color-stop(2px, #27831a), color-stop(3px, #27831a), color-stop(3px, transparent));
     background-image: -webkit-linear-gradient(bottom, transparent, transparent 2px, #27831a 2px, #27831a 3px, transparent 3px);
     background-image: linear-gradient(bottom, transparent, transparent 2px, #27831a 2px, #27831a 3px, transparent 3px);
-    border-bottom-width: 0 !important;
+    border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
   h1 a:hover, h1 a:focus {
     background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(8px, transparent), color-stop(8px, #27831a), color-stop(9px, #27831a), color-stop(9px, transparent));
     background-image: -webkit-linear-gradient(bottom, transparent, transparent 8px, #27831a 8px, #27831a 9px, transparent 9px);
     background-image: linear-gradient(bottom, transparent, transparent 8px, #27831a 8px, #27831a 9px, transparent 9px);
-    border-bottom-width: 0 !important;
+    border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
   a.footnote {
@@ -837,7 +837,7 @@ form li {
     background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(2px, transparent), color-stop(2px, #fff), color-stop(3px, #fff), color-stop(3px, transparent));
     background-image: -webkit-linear-gradient(bottom, transparent, transparent 2px, #fff 2px, #fff 3px, transparent 3px);
     background-image: linear-gradient(bottom, transparent, transparent 2px, #fff 2px, #fff 3px, transparent 3px);
-    border-bottom-width: 0 !important;
+    border-bottom-width: 0;
     text-shadow: -1px -1px 0 #2c2825, 1px -1px 0 #2c2825, -1px 1px 0 #2c2825, 1px 1px 0 #2c2825;
   }
 }
@@ -1121,7 +1121,7 @@ div.gist .blob-code {
 }
 
 /*------------------------------------*\
-    Post
+    Page
 \*------------------------------------*/
 .page__title {
   margin-bottom: 22px;
@@ -1256,6 +1256,31 @@ div.gist .blob-code {
 }
 
 /*------------------------------------*\
+    Pagination
+\*------------------------------------*/
+.pagination {
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
+  text-align: center;
+}
+.pagination__pages {
+  margin: 0 22px;
+  margin: 0 1.375rem;
+}
+.pagination a {
+  background: #666;
+  color: #fff;
+  text-shadow: none;
+  border: 1px solid #2c2825;
+  border-radius: 3px;
+  padding: 0 5px;
+  padding: 0 0.3125rem;
+}
+.pagination a:hover, .pagination a:focus {
+  background: #1b5812;
+}
+
+/*------------------------------------*\
     $PAGES
 	Page-specific styles
 	(use sparingly)
@@ -1285,9 +1310,9 @@ div.gist .blob-code {
   color: #F9F9F9;
 }
 .speaking-engagements .event {
-  background: #1a5812;
+  background: #1b5812;
   color: #F9F9F9;
-  text-shadow: 1px 1px 1px #1a5812;
+  text-shadow: 1px 1px 1px #1b5812;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1326,8 +1351,8 @@ div.gist .blob-code {
 .speaking-engagements .event__location-picture {
   background: transparent center center no-repeat;
   background-size: cover;
-  -webkit-box-shadow: inset 0 0 50px 7px #1a5812;
-  box-shadow: inset 0 0 50px 7px #1a5812;
+  -webkit-box-shadow: inset 0 0 50px 7px #1b5812;
+  box-shadow: inset 0 0 50px 7px #1b5812;
   opacity: .45;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -1588,7 +1613,7 @@ div.gist .blob-code {
     Rules
 \*------------------------------------*/
 /*------------------------------------*\
-    Post
+    Page
 \*------------------------------------*/
 /*------------------------------------*\
     Webmentions
@@ -1601,6 +1626,9 @@ div.gist .blob-code {
 \*------------------------------------*/
 /*------------------------------------*\
     Pullquotes
+\*------------------------------------*/
+/*------------------------------------*\
+    Pagination
 \*------------------------------------*/
 /*------------------------------------*\
     $PAGES
