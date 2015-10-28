@@ -33,9 +33,14 @@ single: true
 							</dd>
 		        		{% endif %}
 		        		
-		        		{% if page.canonical and page.canonical_site %}
-		        			<dt>Cross-posted</dt>
-		        			<dd><a class="u-repost-of" href="{{ page.canonical }}">{{ page.canonical_site }}</a></dd>
+		        		{% if page.canonical or page.crossposted %}
+		        			<dt>Crossposted</dt>
+		        			{% if page.canonical and page.canonical_site %}
+		        				<dd><a class="u-repost-of" href="{{ page.canonical }}">{{ page.canonical_site }}</a></dd>
+		        			{% endif %}
+		        			{% for item in page.crossposted  %}
+		        				<dd><a class="u-syndication" href="{{ item.url }}">{{ item.site }}</a></dd>
+		        			{% endfor %}
 						{% endif %}
 				
 		      		</dl>
