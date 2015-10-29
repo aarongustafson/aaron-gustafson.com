@@ -17,4 +17,4 @@
 		<time class="dt-updated" datetime="{{ updated | datetime | date_to_xmlschema }}">{{ updated_formatted }}</time>{% endcapture %}
 {% endif %}
 
-{{ time }}{% if was_updated != '0' %}, {{ updated }},{% endif %}
+{{ time }}{% if was_updated != '0' %}, {{ updated }}{% endif %}
