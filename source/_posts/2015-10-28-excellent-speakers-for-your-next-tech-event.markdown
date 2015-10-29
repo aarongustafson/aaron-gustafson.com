@@ -97,6 +97,7 @@ I applaud <cite>The Next Web</cite> for their recent list of “[100+ tech & bus
 * **Eva-Lotta Lamm** — Designer & Visual Improviser — [Twitter](http://twitter.com/evalottchen), [LinkedIn](https://uk.linkedin.com/in/evalottalamm), [Lanyrd](http://lanyrd.com/profile/evalottchen/)
 * **Robin Smail** — Technologist — [Twitter](http://twitter.com/Robin2go), [LinkedIn](https://www.linkedin.com/in/robin2go), [Lanyrd](http://lanyrd.com/profile/robin2go/)
 * **Patty Toland** — Partner, Filament Group — [Twitter](https://twitter.com/pattytoland), [LinkedIn](https://www.linkedin.com/pub/patty-toland/0/576/a49), [Lanyrd](http://lanyrd.com/profile/PattyToland/)
+* **Marcy Sutton** — Accessibility Engineer, Adobe — [Twitter](https://twitter.com/marcysutton), [LinkedIn](https://www.linkedin.com/in/marcysutton), [Lanyrd](http://lanyrd.com/profile/marcysutton/)
 
 I also highly recommend [Molly Holzschlag](https://about.me/mollydotcom). She’s currently on medical leave, but she is a-mazing. When she’s ready to get back in the saddle, she’ll bring a wealth of knowledge to your event from her decades of working in technology.
 
