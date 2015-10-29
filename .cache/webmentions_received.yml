@@ -8662,6 +8662,33 @@ https://www.aaron-gustafson.com/notebook/strapless/:
     659448665535348741: |-
       <li id="webmention-659448665535348741" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/convergese"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/557292300414353409/ZV1SMiWe_normal.jpeg" alt="" title="ConvergeSE"><b class="p-name">ConvergeSE</b></a></div><div class="webmention__content p-content"><p>Talking about using bootstrap or not by @aarongustafson <a href="https://t.co/c0wPk8hmuB">https://t.co/c0wPk8hmuB</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-28T15:16:28-04:00">28 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/convergese/status/659448665535348741">Permalink</a></div></article></li>
+    '659448666013474816': <li id="webmention-659448666013474816" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://frontenddesignconference.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/b2b68025ce12d16c0ce8855fd4b064b7dae58df9d9063242f4cfa1eb3eb50342.png"
+      alt="" title="Front-End Conference"><b class="p-name">Front-End Conference</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/frontendconf/status/659448666013474816">Talking
+      about using bootstrap or not by @aarongustafson ow.ly/TLz8U</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-10-28T15:16:28-04:00">28
+      October 2015</time></div></article></li>
+    '659448665883484160': <li id="webmention-659448665883484160" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://www.unmatchedstyle.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/6dba88513deb6bc9654b1c7a4063be742475b6d2057dcb4db2600c0b8872f05f.png"
+      alt="" title="unmatchedstyle"><b class="p-name">unmatchedstyle</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/unmatchedstyle/status/659448665883484160">Talking
+      about using bootstrap or not by @aarongustafson ow.ly/TLz8Z</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-10-28T15:16:28-04:00">28
+      October 2015</time></div></article></li>
+    '659448665535348741': <li id="webmention-659448665535348741" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://convergese.com/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/b3fed7a88a2e224e897c9c0d517765201807d2ff45c980d46a4ec013c9dcc195.jpeg"
+      alt="" title="ConvergeSE"><b class="p-name">ConvergeSE</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/convergese/status/659448665535348741">Talking
+      about using bootstrap or not by @aarongustafson ow.ly/TLz4J</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-10-28T15:16:28-04:00">28
+      October 2015</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/on-adaptive-web-designs-second-edition/:
   '2015-10-20':
     656653480204046336: |-
@@ -8849,3 +8876,8 @@ https://www.aaron-gustafson.com/notebook/apple-business-and-standards/:
       Abandons Web Designers | Takethe5th Picks and Pans</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2015-10-27T18:29:30-04:00">27
       October 2015</time></div></article></li>
+https://www.aaron-gustafson.com/notebook/excellent-speakers-for-your-next-tech-event/:
+  '2015-10-28':
+    659453844225658880: |-
+      <li id="webmention-659453844225658880" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/651797747188822016/D7ctIoYg_normal.jpg" alt="" title="Aaron GUTStafson"><b class="p-name">Aaron GUTStafson</b></a></div><div class="webmention__content p-content"><p>Excellent Speakers for Your Next Tech Event <a href="https://t.co/Y4lFtvxfKz">https://t.co/Y4lFtvxfKz</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-28T15:37:03-04:00">28 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/659453844225658880">Permalink</a></div></article></li>

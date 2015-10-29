@@ -2,6 +2,7 @@
 layout: post
 title: "Excellent Speakers for Your Next Tech Event"
 date: 2015-10-28 09:28:09 -0400
+updated: 2015-10-29 12:57:09 -0400
 comments: true
 categories: [industry,business,equality]
 description: "Like many, I’m disappointed that gender—or ethnicity, etc., etc., etc.—should even have to play a role when it comes to selecting awesome speakers, but the reality is that the dais at most tech-related conferences is still occupied (largely) by white men. That needs to change."
@@ -39,7 +40,7 @@ I applaud <cite>The Next Web</cite> for their recent list of “[100+ tech & bus
 * **Laura Kalbag** — Designer, ind.ie — [Twitter](http://twitter.com/laurakalbag), [LinkedIn](https://uk.linkedin.com/in/laurakalbag), [Lanyrd](http://lanyrd.com/profile/laurakalbag/)
 * **Lea Verou** — Invited Expert, W3C — [Twitter](http://twitter.com/leaverou), [LinkedIn](https://www.linkedin.com/in/leaverou), [Lanyrd](http://lanyrd.com/profile/leaverou/)
 * **Val Head** — Designer & Consultant — [Twitter](http://twitter.com/vlh), [LinkedIn](https://www.linkedin.com/in/valhead), [Lanyrd](http://lanyrd.com/profile/vlh/)
-* **Lea Alcantara** — Co-host, <cite>CTRL+CLICK Cast</cite> — [Twitter](https://twitter.com/lealea), [LinkedIn](https://www.linkedin.com/in/lealea), Lanyrd
+* **Lea Alcantara** — Co-host, <cite>CTRL+CLICK Cast</cite> — [Twitter](https://twitter.com/lealea), [LinkedIn](https://www.linkedin.com/in/lealea), [Lanyrd](http://lanyrd.com/profile/lealea)
 * **Sarah Horton** — User Experience Strategy Lead, The Paciello Group  — [Twitter](http://twitter.com/gradualclearing), [LinkedIn](https://www.linkedin.com/in/sarahhorton), [Lanyrd](http://lanyrd.com/profile/gradualclearing/)
 * **Whitney Quesenbery** — Co-Founder, Center for Civic Design  — [Twitter](http://twitter.com/whitneyq), [LinkedIn](https://www.linkedin.com/in/whitneyq), [Lanyrd](http://lanyrd.com/profile/whitneyq/)
 * **Leisa Reichelt** — Head of User Research, Government Digital Service — [Twitter](http://twitter.com/leisa), [LinkedIn](https://au.linkedin.com/in/leisareichelt), [Lanyrd](http://lanyrd.com/profile/leisa/)
@@ -65,6 +66,36 @@ I applaud <cite>The Next Web</cite> for their recent list of “[100+ tech & bus
 * **Jina Bolton** — Senior Product Designer, Salesforce — [Twitter](http://twitter.com/jina), [Lanyrd](http://lanyrd.com/profile/jina/)
 * **Jen Myers** — Director of Open Source Curriculum, Pluralsight — [Twitter](http://twitter.com/antiheroine), [LinkedIn](https://www.linkedin.com/in/jenmyers), [Lanyrd](http://lanyrd.com/profile/antiheroine/)
 * **Sara Soueidan** — Front-end Developer — [Twitter](https://twitter.com/SaraSoueidan), [Lanyrd](http://lanyrd.com/profile/sarasoueidan/)
+* **Una Kravets** — Front End Developer, IBM Design — [Twitter](https://twitter.com/Una), [LinkedIn](http://www.linkedin.com/pub/una-kravets/30/827/a35/), [Lanyrd](http://lanyrd.com/profile/una/)
+* **Lisa Herrod** — Head of User Research & Inclusive Design, Inclusive UX — [Twitter](https://twitter.com/scenariogirl), [LinkedIn](https://www.linkedin.com/in/lisaherrod), [Lanyrd](http://lanyrd.com/profile/scenariogirl/)
+* **Allison Urban** — Software Developer, MailChimp — [Twitter](http://twitter.com/allisonurban), [LinkedIn](https://www.linkedin.com/in/allisonurban), [Lanyrd](http://lanyrd.com/profile/allisonurban)
+* **Lis Hubert** — UX Consultant — [Twitter](http://twitter.com/lishubert), [LinkedIn](https://www.linkedin.com/in/elisabethhubert), [Lanyrd](http://lanyrd.com/profile/lishubert/)
+* **Dori Smith** — Author, <cite>JavaScript: Visual QuickStart Guide</cite> — [Twitter](https://twitter.com/dori), [LinkedIn](https://www.linkedin.com/in/dorismith), [Lanyrd](http://lanyrd.com/profile/dori/)
+* **Henny Swan** — UX & Design Lead, The Paciello Group — [Twitter](http://twitter.com/iheni), [LinkedIn](https://uk.linkedin.com/in/hennyswan), [Lanyrd](http://lanyrd.com/profile/iheni/)
+* **Jenifer Hanen** — Mobile Expert — [Twitter](http://twitter.com/msjen), [LinkedIn](https://www.linkedin.com/in/msjen), [Lanyrd](http://lanyrd.com/profile/msjen/)
+* **Jill Pala Pieritz** — CS Department Chair, GPS — [Twitter](http://twitter.com/JillPala), [LinkedIn](https://www.linkedin.com/pub/jill-pala-pieritz/92/907/422), [Lanyrd](http://lanyrd.com/profile/jillpala/)
+* **Kristina Halvorson** — CEO & Founder, Brain Traffic — [Twitter](https://twitter.com/halvorson), [LinkedIn](https://www.linkedin.com/in/kristinahalvorson), [Lanyrd](http://lanyrd.com/profile/halvorson/)
+* **Rosie Campbell** — BBC R & D Technologist — [Twitter](http://twitter.com/RosieCampbell), [LinkedIn](https://uk.linkedin.com/in/rosiecampbell), [Lanyrd](http://lanyrd.com/profile/rosiecampbell/)
+* **Lisa Maria Martin** — Information Architect — [Twitter](http://twitter.com/redsesame), [LinkedIn](https://www.linkedin.com/in/redsesame), [Lanyrd](http://lanyrd.com/profile/redsesame/)
+* **Zoe (Mickley) Gillenwater** — Senior Designer, Booking.com — [Twitter](https://twitter.com/zomigi), [LinkedIn](https://nl.linkedin.com/in/zoemickleygillenwater), [Lanyrd](http://lanyrd.com/profile/zomigi/)
+* **Lyza Danger Gardner** — Co-Founder, Cloud Four — [Twitter](http://twitter.com/lyzadanger), [LinkedIn](https://www.linkedin.com/in/lyzadanger), [Lanyrd](http://lanyrd.com/profile/lyzadanger/)
+* **Meri Williams** — Geek Manager — [Twitter](http://twitter.com/Geek_Manager), [LinkedIn](https://uk.linkedin.com/in/meriwilliams), [Lanyrd](http://lanyrd.com/profile/geek_manager/)
+* **Sarah Parmenter** — Founder, You Know Who — [Twitter](http://twitter.com/sazzy), [LinkedIn](https://www.linkedin.com/in/sazzy), [Lanyrd](http://lanyrd.com/profile/sazzy/)
+* **Sharron Rush** — Executive Director, Knowbility.org — [Twitter](http://twitter.com/sharrush), [LinkedIn](https://www.linkedin.com/pub/sharron-rush/0/41/434), [Lanyrd](http://lanyrd.com/profile/sharrush/)
+* **Wendy Chisholm** — Senior Accessibility Strategist, Microsoft — [Twitter](http://twitter.com/wendyabc), [LinkedIn](https://www.linkedin.com/in/wendychisholm), [Lanyrd](http://lanyrd.com/profile/wendyabc/)
+* **Paula Chuchro** — UX Designer, Microsoft — [Twitter](http://twitter.com/P4OL1N4), [LinkedIn](https://www.linkedin.com/in/paulachuchro), [Lanyrd](http://lanyrd.com/profile/p4ol1n4/)
+* **Alice Bartlett** — Frontend Developer, Government Digital Service — [Twitter](http://twitter.com/alicebartlett), [LinkedIn](https://uk.linkedin.com/pub/alice-bartlett/23/2b1/192), [Lanyrd](http://lanyrd.com/profile/alicebartlett/)
+* **Wren Lanier** — Designer, Highrise — [Twitter](http://twitter.com/heywren), [LinkedIn](https://www.linkedin.com/in/wrenlanier), [Lanyrd](http://lanyrd.com/profile/heywren/)
+* **Jennifer Pahlka** — Founder, Code for America — [Twitter](https://www.linkedin.com/redir/redirect?url=http%3A%2F%2Ftwitter%2Ecom%2Fpahlkadot&urlhash=ysV_), [LinkedIn](https://www.linkedin.com/in/jpahlka), [Lanyrd](http://lanyrd.com/profile/pahlkadot/)
+* **Kimberly Bryant** — Founder, Black Girls Code — [Twitter](http://twitter.com/6Gems), [LinkedIn](https://www.linkedin.com/in/kimberlybryant), [Lanyrd](http://lanyrd.com/profile/6gems/)
+* **Ola Gasidlo** — JavaScript Developer — [Twitter](http://twitter.com/misprintedtype), [Lanyrd](http://lanyrd.com/profile/misprintedtype/)
+* **Alla Kholmatova** — Interaction designer, FutureLearn — [Twitter](http://twitter.com/craftui), [LinkedIn](https://uk.linkedin.com/in/allakholmatova), [Lanyrd](http://lanyrd.com/profile/craftui/)
+* **Marta Armada** — Web Designer, Swwweet — [Twitter](http://twitter.com/martuishere), [Lanyrd](http://lanyrd.com/profile/martuishere/)
+* **Evgenia Grinblo** — UX Designer — [Twitter](http://twitter.com/Grinblo), [LinkedIn](https://uk.linkedin.com/in/grinblo), [Lanyrd](http://lanyrd.com/profile/grinblo/)
+* **Kim Goodwin** — Author, <cite>Designing for the Digital Age</cite> — [Twitter](http://twitter.com/kimgoodwin), [LinkedIn](https://www.linkedin.com/in/kimgoodwin), [Lanyrd](http://lanyrd.com/profile/kimgoodwin/)
+* **Geri Coady** — Author, <cite>Pocket Guide to Colour Accessibility</cite> — [Twitter](http://twitter.com/hellogeri), [Lanyrd](http://lanyrd.com/profile/hellogeri/)
+* **Eva-Lotta Lamm** — Designer & Visual Improviser — [Twitter](http://twitter.com/evalottchen), [LinkedIn](https://uk.linkedin.com/in/evalottalamm), [Lanyrd](http://lanyrd.com/profile/evalottchen/)
+* **Robin Smail** — Technologist — [Twitter](http://twitter.com/Robin2go), [LinkedIn](https://www.linkedin.com/in/robin2go), [Lanyrd](http://lanyrd.com/profile/robin2go/)
 
 I also highly recommend [Molly Holzschlag](https://about.me/mollydotcom). She’s currently on medical leave, but she is a-mazing. When she’s ready to get back in the saddle, she’ll bring a wealth of knowledge to your event from her decades of working in technology.
 
