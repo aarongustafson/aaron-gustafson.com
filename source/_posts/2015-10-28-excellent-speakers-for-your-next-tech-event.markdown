@@ -2,7 +2,7 @@
 layout: post
 title: "Excellent Speakers for Your Next Tech Event"
 date: 2015-10-28 09:28:09 -0400
-updated: 2015-10-29 12:57:09 -0400
+updated: 2015-10-29 16:23:09 -0400
 comments: true
 categories: [industry,business,equality]
 description: "Like many, I’m disappointed that gender—or ethnicity, etc., etc., etc.—should even have to play a role when it comes to selecting awesome speakers, but the reality is that the dais at most tech-related conferences is still occupied (largely) by white men. That needs to change."
@@ -98,6 +98,7 @@ I applaud <cite>The Next Web</cite> for their recent list of “[100+ tech & bus
 * **Robin Smail** — Technologist — [Twitter](http://twitter.com/Robin2go), [LinkedIn](https://www.linkedin.com/in/robin2go), [Lanyrd](http://lanyrd.com/profile/robin2go/)
 * **Patty Toland** — Partner, Filament Group — [Twitter](https://twitter.com/pattytoland), [LinkedIn](https://www.linkedin.com/pub/patty-toland/0/576/a49), [Lanyrd](http://lanyrd.com/profile/PattyToland/)
 * **Marcy Sutton** — Accessibility Engineer, Adobe — [Twitter](https://twitter.com/marcysutton), [LinkedIn](https://www.linkedin.com/in/marcysutton), [Lanyrd](http://lanyrd.com/profile/marcysutton/)
+* **Léonie Watson** —  Web Platform Working Group Co-Chair, W3C — [Twitter](https://twitter.com/LeonieWatson), [LinkedIn](https://uk.linkedin.com/in/lwatson), [Lanyrd](http://lanyrd.com/profile/leoniewatson/)
 
 I also highly recommend [Molly Holzschlag](https://about.me/mollydotcom). She’s currently on medical leave, but she is a-mazing. When she’s ready to get back in the saddle, she’ll bring a wealth of knowledge to your event from her decades of working in technology.
 
