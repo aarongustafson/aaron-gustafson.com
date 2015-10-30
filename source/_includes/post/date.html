@@ -13,8 +13,9 @@
 
 {% if was_updated != '0' %}
 	{% capture updated %}
-		updated on
-		<time class="dt-updated" datetime="{{ updated | datetime | date_to_xmlschema }}">{{ updated_formatted }}</time>{% endcapture %}
+		(updated <b class="hidden">on</b>
+		<time class="dt-updated" datetime="{{ updated | datetime | date_to_xmlschema }}">{{ updated_formatted }}</time>)
+	{% endcapture %}
 {% endif %}
 
-{{ time }}{% if was_updated != '0' %}, {{ updated }}{% endif %}
+{{ time }}{% if was_updated != '0' %}<br>{{ updated }}{% endif %}
