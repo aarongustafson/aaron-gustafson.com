@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ramblings on New Browser Features, Interoperability, Craft, and the Future of the Web"
+title: "Ramblings on New Browser Features, Interop&shy;erability, Craft, and the Future of the Web"
 date: 2015-08-07 10:14:23 -0400
 comments: true
 categories: ["web design",browsers,craft,"the web"]
