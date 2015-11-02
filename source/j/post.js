@@ -19,6 +19,24 @@
 	(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 
 }( this, this.document ));
+// Add a comments message if offline
+(function(){
+	var offline = !window.navigator.onLine,
+		$p,
+		$comments;
+
+	if ( offline )
+	{
+		$p = document.createElement('p');
+		$p.innerText = 'Your internet connection is currently offline, so I can’t load in the comment thread from Disqus.';
+		$comments = document.getElementById('disqus');
+		$comments.appendChild($p);
+
+		$p = null;
+		$comments = null;
+	}
+
+}());
 (function(document){
 	
 	if ( ! 'querySelectorAll' in document )

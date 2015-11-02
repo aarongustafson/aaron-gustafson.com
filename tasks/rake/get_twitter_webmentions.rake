@@ -62,13 +62,13 @@ task :get_twitter_webmentions do |t, args|
 
     # Make sure we have the target
     if ! cached_webmentions[target]
-      puts "Target #{target} not found, making one"
+      # puts "Target #{target} not found, making one"
       cached_webmentions[target] = {}
     end
 
     # Make sure we have the date
     if ! cached_webmentions[target][the_date]
-      puts "No entries for #{target} on #{the_date}, making a collection"
+      # puts "No entries for #{target} on #{the_date}, making a collection"
       cached_webmentions[target][the_date] = {}
     end
 

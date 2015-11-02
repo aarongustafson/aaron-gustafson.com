@@ -6,7 +6,6 @@
 
     [role=navigation] {
 
-        @include rem( font-size, $font-size-small );
         text-align: center;
 
         @include rem( padding-bottom, $default-spacing );
@@ -15,39 +14,187 @@
             margin: 0;
         }
 
+        a {
+            @include rem( font-size, $font-size-nav );
+            display: block;
+            padding: .5em 1em;
+        }
+
     }
 
-    .main__navigation {
+    .main-navigation {
 
-    	a:link,
-        a:visited,
-        a:hover,
-        a:focus {
-        	background: transparent;
+    	#aaron-gustafson_com &__link {
+        	background-image: none;
         	text-shadow: none;
+        }
+
+        &__link:hover,
+        &__link:focus,
+        &__link:active,
+        mark &__link {
+            background-color: $color-link-hover;
+            color: $color-white;
+        }
+
+        // no search needed on small screens
+        [role=navigation] &__link--search {
+            display: none;
         }
     }
 
+    .form--search {
+
+        [type=search] {
+            @include rem( font-size, $font-size-nav );
+
+            appearance: none;
+            border: 1px solid;
+            border-radius: 3px;
+            @include rem( margin, 0 5 0 0 );
+        }
+
+        button {
+            font-weight: bold;
+            @include rem( font-size, $font-size-small );
+        }
+
+    }
+
+    // Better layout: Flexbox
+    @supports (display: flex) {
+        [role=search] {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+        }
+    }
 }
 
 @include breakup-breakpoint( "medium" ) {
 
+    [role=navigation] {
+        background: $color-green;
+        color: $color-background;
+
+        padding-bottom: 0;
+
+        .layout-container {
+            position: relative;
+        }
+
+        a:link,
+        a:visited,
+        a:hover,
+        a:focus,
+        a:active {
+            color: $color-white;
+            color: inherit;
+        }
+
+    }
+
     .main-navigation {
-    	
-    	display: flex;
-    	flex-direction: row;
+        @include breakup-placeholder( clearfix );
 
-    	&__item {
-			padding: .1em .5em;
+        &__item {
+            float: left;
 
-			&:first-child {
-				padding-left: 0;
-			}
-			&:last-child {
-				padding-right: 0;
-			}
-    	}
+            &:first-child {
+                margin-left: -.5em;
+            }
+            &:last-child {
+               margin-right: -.5em;
+            }
+        }
 
+        [role=navigation] &__link {
+            padding: .1em .5em;    
+            
+            position: relative;
+
+            &--search {
+                display: block;
+            }
+
+            &::after {
+                content: "";
+
+                background: $color-green-dark;
+
+                display: block;
+                height: 3px;
+                width: 100%;
+
+                transition: transform .25s;
+                transform: scaleX( 0 );
+
+                position: absolute;
+                top: 100%;
+                left: 0;
+            }
+            &:hover::after,
+            &:focus::after {
+                transform: scaleX(1);
+            }
+        }
+    }
+
+    .form--search {
+        margin: 0;
+        overflow: hidden;
+        box-sizing: content-box;
+        
+        height: 0;
+        padding-bottom: 0;
+        
+        transition: height .25s, padding-bottom .25s;
+
+        &:target,
+        &.toggleable--open {
+            height: auto;
+            padding-bottom: .5em;
+        }
+
+    }
+
+    [role=search] {
+        @include breakup-placeholder( clearfix );
+    }
+    .form-control--search {
+        @include rem( margin, 0 5 0 0 );
+        width: 70%;
+        
+        input[type=search] {
+            width: 100%;
+            margin: 0;
+        }
+        
+    }
+
+    // Better layout: Flexbox
+    @supports (display: flex) {
+    
+        .alert {
+            margin-bottom: 0;
+        }
+    
+        [role=navigation] {
+            margin-top: 0;
+        }
+    
+        .main-navigation {
+        
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            
+            &__item {
+                float: none;
+            }
+    
+        }
     }
 
 }

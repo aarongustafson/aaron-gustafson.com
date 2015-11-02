@@ -73,6 +73,12 @@
         &__title {
             width: 134%;
         }
+
+        & + .rule {
+            position: relative;
+            left: 68%;
+            margin-left: -110px;
+        }
         
     }
 

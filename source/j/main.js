@@ -178,8 +178,27 @@
     $video_links = null;
     
 }( this, this.document ));
-(function(){
+(function(window,document){
+
+    if ( !'querySelector' in document ||
+         !'classList' in document.body ){
+        return;
+    }
     
+    var $search_link = document.querySelector( '.main-navigation__link--search' ),
+        $search_form = document.querySelector( '.form--search' );
+    
+    $search_form.classList.add( 'toggleable' );
+
+    $search_link.addEventListener( 'click', openSearch, false );
+    $search_link.addEventListener( 'touchdown', openSearch, false );
+    
+    function openSearch( e ) {
+        e.preventDefault();
+        $search_form.classList.add( 'toggleable--open' );
+        $search_form.querySelector( '[type=search]' ).focus();
+    }        
+
     // defend against Comcast injection
     //var head = document.getElementsByTagName('head')[0],
     //    children = head.children,
@@ -225,5 +244,6 @@
     //element = null;
     //child = null;
     //head = null;
+    //}
     
-}());
+}(this,this.document));

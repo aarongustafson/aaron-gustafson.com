@@ -18,3 +18,29 @@
     }
     
 }
+
+@include breakup-breakpoint( "medium" ) {
+
+    @supports (display:flex) {
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        .alert,
+        [role=banner] {
+            order: 1;
+        }
+        [role=navigation] {
+            order: 2;
+        }
+        [role=main] {
+            order: 3;
+        }
+        [role=contentinfo] {
+            order: 4;
+        }
+
+    }
+    
+}

@@ -8702,6 +8702,19 @@ https://www.aaron-gustafson.com/notebook/strapless/:
       Why you should not use it. Really good article. aaron-gustafson.com/notebook/strap…</a></div><div
       class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-29T10:13:39-04:00">29
       October 2015</time></div></article></li>
+  '2015-10-30':
+    660299514801057793: |-
+      <li id="webmention-660299514801057793" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/premii"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/464981499863773185/oEmpZqFZ_normal.jpeg" alt="" title="Dharmesh Patel"><b class="p-name">Dharmesh Patel</b></a></div><div class="webmention__content p-content"><p>The Bootstrap Framework … Should You Use It or Not? <a href="https://t.co/fEOzE6h4Y0">https://t.co/fEOzE6h4Y0</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-30T23:37:26-04:00">30 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/premii/status/660299514801057793">Permalink</a></div></article></li>
+    '660299514801057793': <li id="webmention-660299514801057793" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://www.premii.com/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/73798bf1d6ffc38c8046e77b18a218f105dc03f7695ba302715fa0e910945aad.jpeg"
+      alt="" title="Dharmesh Patel"><b class="p-name">Dharmesh Patel</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/premii/status/660299514801057793">The
+      Bootstrap Framework ... Should You Use It or Not? aaron-gustafson.com/notebook/strap…</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-30T23:37:26-04:00">30
+      October 2015</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/on-adaptive-web-designs-second-edition/:
   '2015-10-20':
     656653480204046336: |-
@@ -9228,3 +9241,23 @@ https://www.aaron-gustafson.com/notebook/excellent-speakers-for-your-next-tech-e
       class="webmention__title p-name"><a href="https://twitter.com/dc7590/status/660027965930135552">Darren
       Cooper reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-10-30T05:38:24-04:00">30 October 2015</time></div></article></li>
+  '2015-10-31':
+    660486180551548928: "<li id=\"webmention-660486180551548928\" class=\"webmentions__item\"><article
+      class=\"h-cite webmention webmention--content-only\"><div class=\"webmention__author
+      p-author h-card\"><a class=\"u-url\" href=\"https://twitter.com/bnox\"><img
+      class=\"webmention__author__photo u-photo\" src=\"https://pbs.twimg.com/profile_images/591903755953508353/vGDn2zp0_normal.jpg\"
+      alt=\"\" title=\"Clo Willaerts\"><b class=\"p-name\">Clo Willaerts</b></a></div><div
+      class=\"webmention__content p-content\"><p>List of the day: Excellent Speakers
+      for Your Next Tech Event \n<a href=\"https://t.co/7BaxmbOLar\">https://t.co/7BaxmbOLar</a></p>\n</div><div
+      class=\"webmention__meta\"><time class=\"webmention__pubdate dt-published\"
+      datetime=\"2015-10-31T11:59:11-04:00\">31 October 2015</time> | <a class=\"webmention__source
+      u-url\" href=\"https://twitter.com/bnox/status/660486180551548928\">Permalink</a></div></article></li>"
+    '660486180551548928': '<li id="webmention-660486180551548928" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://about.me/clo"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/d2030a4e835b55e09293eaacd2830435c9968c93c65de9abe8ad2b25fe2602e7.jpeg"
+      alt="" title="Clo Willaerts"><b class="p-name">Clo Willaerts</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/bnox/status/660486180551548928">List
+      of the day: Excellent Speakers for Your Next Tech Event bit.ly/1XGQeja</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-31T11:59:11-04:00">31
+      October 2015</time></div></article></li>'

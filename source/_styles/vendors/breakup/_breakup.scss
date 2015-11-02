@@ -162,6 +162,10 @@ $breakup-placeholders: () !default;
     $breakpoint: breakup-list-key-search($breakup-breakpoints, $breakpoint-name, 1);
 
     @if $breakpoint {
+        
+        // overwrite the global variable
+        $breakup-current-breakpoint: $breakpoint-name !global;
+        
         $declaration: nth($breakpoint, 2);
 
         // Handle Sass treating a list containing a single item as a single item

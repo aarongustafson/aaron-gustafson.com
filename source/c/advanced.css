@@ -40,6 +40,18 @@
 /*------------------------------------*\
     Placeholders
 \*------------------------------------*/
+@media (min-width: 43.125em) {
+  .main-navigation, [role=search] {
+    *zoom: 1;
+  }
+  .main-navigation::before, [role=search]::before, .main-navigation::after, [role=search]::after {
+    content: " ";
+    display: table;
+  }
+  .main-navigation::after, [role=search]::after {
+    clear: both;
+  }
+}
 /*------------------------------------*\
     $BASE
 	Global element styles
@@ -250,6 +262,119 @@
     Main
 \*------------------------------------*/
 /*------------------------------------*\
+    Navigation
+\*------------------------------------*/
+@media (min-width: 43.125em) {
+  [role=navigation] {
+    background: #34AD23;
+    color: #fff;
+    padding-bottom: 0;
+  }
+  [role=navigation] .layout-container {
+    position: relative;
+  }
+  [role=navigation] a:link,
+  [role=navigation] a:visited,
+  [role=navigation] a:hover,
+  [role=navigation] a:focus,
+  [role=navigation] a:active {
+    color: #fff;
+    color: inherit;
+  }
+
+  .main-navigation__item {
+    float: left;
+  }
+  .main-navigation__item:first-child {
+    margin-left: -.5em;
+  }
+  .main-navigation__item:last-child {
+    margin-right: -.5em;
+  }
+  [role=navigation] .main-navigation__link {
+    padding: .1em .5em;
+    position: relative;
+  }
+  [role=navigation] .main-navigation__link--search {
+    display: block;
+  }
+  [role=navigation] .main-navigation__link::after {
+    content: "";
+    background: #1b5812;
+    display: block;
+    height: 3px;
+    width: 100%;
+    -webkit-transition: -webkit-transform .25s;
+    transition: transform .25s;
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  [role=navigation] .main-navigation__link:hover::after, [role=navigation] .main-navigation__link:focus::after {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+  .form--search {
+    margin: 0;
+    overflow: hidden;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+    padding-bottom: 0;
+    -webkit-transition: height .25s, padding-bottom .25s;
+    transition: height .25s, padding-bottom .25s;
+  }
+  .form--search:target, .form--search.toggleable--open {
+    height: auto;
+    padding-bottom: .5em;
+  }
+
+  .form-control--search {
+    margin: 0 5px 0 0;
+    margin: 0 0.3125rem 0 0;
+    width: 70%;
+  }
+  .form-control--search input[type=search] {
+    width: 100%;
+    margin: 0;
+  }
+
+  @supports (display: flex) {
+    .alert {
+      margin-bottom: 0;
+    }
+
+    [role=navigation] {
+      margin-top: 0;
+    }
+
+    .main-navigation {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+    .main-navigation__item {
+      float: none;
+    }
+  }
+}
+/*------------------------------------*\
     Footer
 \*------------------------------------*/
 @media (min-width: 60em) {
@@ -291,6 +416,9 @@
     Modules
 \*------------------------------------*/
 /*------------------------------------*\
+    Buttons
+\*------------------------------------*/
+/*------------------------------------*\
     Listing
 \*------------------------------------*/
 /*------------------------------------*\
@@ -328,6 +456,11 @@
   .entry__title {
     width: 134%;
   }
+  .entry + .rule {
+    position: relative;
+    left: 68%;
+    margin-left: -110px;
+  }
 
   @supports (column-count: 2) or (-webkit-column-count: 2) or (-moz-column-count: 2) {
     .entry__meta {
@@ -357,6 +490,50 @@
 /*------------------------------------*\
     Page
 \*------------------------------------*/
+@media (min-width: 43.125em) {
+  @supports (display: flex) {
+    body {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+
+    .alert,
+    [role=banner] {
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+      -ms-flex-order: 1;
+      order: 1;
+    }
+
+    [role=navigation] {
+      -webkit-box-ordinal-group: 3;
+      -webkit-order: 2;
+      -ms-flex-order: 2;
+      order: 2;
+    }
+
+    [role=main] {
+      -webkit-box-ordinal-group: 4;
+      -webkit-order: 3;
+      -ms-flex-order: 3;
+      order: 3;
+    }
+
+    [role=contentinfo] {
+      -webkit-box-ordinal-group: 5;
+      -webkit-order: 4;
+      -ms-flex-order: 4;
+      order: 4;
+    }
+  }
+}
 /*------------------------------------*\
     Webmentions
 \*------------------------------------*/
@@ -380,6 +557,11 @@
 /*------------------------------------*\
     Pagination
 \*------------------------------------*/
+@media (min-width: 43.125em) {
+  .pagination {
+    margin-left: 33%;
+  }
+}
 /*------------------------------------*\
     $PAGES
 	Page-specific styles

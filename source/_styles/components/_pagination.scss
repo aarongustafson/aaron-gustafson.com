@@ -7,13 +7,14 @@
 	.pagination {
 		
 		@include rem( margin-bottom, $default-spacing );
+		
 		text-align: center;
 
 		&__pages {
 			@include rem( margin, 0 $default-spacing );
 		}
 
-		a {
+		#aaron-gustafson_com & a {
 			background: $color-text-light;
 			color: $color-white;
 			text-shadow: none;
@@ -28,6 +29,14 @@
 			}
 		}
 
+	}
+
+}
+
+@include breakup-breakpoint( "medium" ) {
+
+	.pagination {
+		margin-left: 33%;
 	}
 
 }

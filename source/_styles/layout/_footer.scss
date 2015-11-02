@@ -15,6 +15,16 @@
             margin: 0;
         }
 
+        &::before {
+            content: "";
+
+            display: block;
+            border: 0;
+            border-top: 1px solid $color-rule;
+            height: 0;
+            @include rem( margin, $default-spacing auto );
+        }
+
     }
 
 }

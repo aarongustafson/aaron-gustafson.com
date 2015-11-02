@@ -434,35 +434,79 @@ a[rel="original-article"]::after {
 }
 
 @supports (background-image: linear-gradient(black, white)) {
-  a:link, a:visited {
+  a:link,
+  a:visited {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(1px, transparent), color-stop(1px, #34AD23), color-stop(2px, #34AD23), color-stop(2px, transparent));
+    background-image: -webkit-linear-gradient(bottom, transparent, transparent 1px, #34AD23 1px, #34AD23 2px, transparent 2px);
+    background-image: linear-gradient(bottom, transparent, transparent 1px, #34AD23 1px, #34AD23 2px, transparent 2px);
+    border-bottom-width: 0;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  }
+  h1 a:link, h1
+  a:visited {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(6px, transparent), color-stop(6px, #34AD23), color-stop(7px, #34AD23), color-stop(7px, transparent));
+    background-image: -webkit-linear-gradient(bottom, transparent, transparent 6px, #34AD23 6px, #34AD23 7px, transparent 7px);
+    background-image: linear-gradient(bottom, transparent, transparent 6px, #34AD23 6px, #34AD23 7px, transparent 7px);
+    border-bottom-width: 0;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  }
+
+  a:hover,
+  a:focus {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(1px, transparent), color-stop(1px, #27831a), color-stop(2px, #27831a), color-stop(2px, transparent));
+    background-image: -webkit-linear-gradient(bottom, transparent, transparent 1px, #27831a 1px, #27831a 2px, transparent 2px);
+    background-image: linear-gradient(bottom, transparent, transparent 1px, #27831a 1px, #27831a 2px, transparent 2px);
+    border-bottom-width: 0;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  }
+  h1 a:hover, h1
+  a:focus {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(6px, transparent), color-stop(6px, #27831a), color-stop(7px, #27831a), color-stop(7px, transparent));
+    background-image: -webkit-linear-gradient(bottom, transparent, transparent 6px, #27831a 6px, #27831a 7px, transparent 7px);
+    background-image: linear-gradient(bottom, transparent, transparent 6px, #27831a 6px, #27831a 7px, transparent 7px);
+    border-bottom-width: 0;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  }
+
+  a.footnote {
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  html.wf-active a:link,
+  html.wf-active a:visited {
     background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(2px, transparent), color-stop(2px, #34AD23), color-stop(3px, #34AD23), color-stop(3px, transparent));
     background-image: -webkit-linear-gradient(bottom, transparent, transparent 2px, #34AD23 2px, #34AD23 3px, transparent 3px);
     background-image: linear-gradient(bottom, transparent, transparent 2px, #34AD23 2px, #34AD23 3px, transparent 3px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
-  h1 a:link, h1 a:visited {
+  html.wf-active h1 a:link,
+  html.wf-active h1 a:visited {
     background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(8px, transparent), color-stop(8px, #34AD23), color-stop(9px, #34AD23), color-stop(9px, transparent));
     background-image: -webkit-linear-gradient(bottom, transparent, transparent 8px, #34AD23 8px, #34AD23 9px, transparent 9px);
     background-image: linear-gradient(bottom, transparent, transparent 8px, #34AD23 8px, #34AD23 9px, transparent 9px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
-  a:hover, a:focus {
+  html.wf-active a:hover,
+  html.wf-active a:focus {
     background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(2px, transparent), color-stop(2px, #27831a), color-stop(3px, #27831a), color-stop(3px, transparent));
     background-image: -webkit-linear-gradient(bottom, transparent, transparent 2px, #27831a 2px, #27831a 3px, transparent 3px);
     background-image: linear-gradient(bottom, transparent, transparent 2px, #27831a 2px, #27831a 3px, transparent 3px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
-  h1 a:hover, h1 a:focus {
+  html.wf-active h1 a:hover,
+  html.wf-active h1 a:focus {
     background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(8px, transparent), color-stop(8px, #27831a), color-stop(9px, #27831a), color-stop(9px, transparent));
     background-image: -webkit-linear-gradient(bottom, transparent, transparent 8px, #27831a 8px, #27831a 9px, transparent 9px);
     background-image: linear-gradient(bottom, transparent, transparent 8px, #27831a 8px, #27831a 9px, transparent 9px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
-  a.footnote {
+  html.wf-active a.footnote {
     background: transparent;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -812,28 +856,21 @@ form li {
   font-weight: normal;
 }
 .alert + header {
-  margin-top: -22px;
-  margin-top: -1.375rem;
+  margin-top: 0;
 }
-.alert + header .site-title {
+.alert + header .site-title,
+.alert + header .site-subtitle {
   margin-bottom: 11px;
   margin-bottom: 0.6875rem;
 }
 
 @supports (background-image: linear-gradient(black, white)) {
-  .site-title a:link,
-  .site-title a:visited {
-    background: #666;
+  #aaron-gustafson_com .site-title a {
+    background-image: none;
     text-shadow: none;
   }
 
-  .site-title a:hover,
-  .site-title a:focus {
-    background: #34AD23;
-    color: #fff;
-  }
-
-  .alert a {
+  #aaron-gustafson_com .alert a {
     background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(2px, transparent), color-stop(2px, #fff), color-stop(3px, #fff), color-stop(3px, transparent));
     background-image: -webkit-linear-gradient(bottom, transparent, transparent 2px, #fff 2px, #fff 3px, transparent 3px);
     background-image: linear-gradient(bottom, transparent, transparent 2px, #fff 2px, #fff 3px, transparent 3px);
@@ -844,6 +881,69 @@ form li {
 /*------------------------------------*\
     Main
 \*------------------------------------*/
+/*------------------------------------*\
+    Navigation
+\*------------------------------------*/
+[role=navigation] {
+  text-align: center;
+  padding-bottom: 22px;
+  padding-bottom: 1.375rem;
+}
+[role=navigation] p {
+  margin: 0;
+}
+[role=navigation] a {
+  font-size: 18px;
+  font-size: 1.125rem;
+  display: block;
+  padding: .5em 1em;
+}
+
+#aaron-gustafson_com .main-navigation__link {
+  background-image: none;
+  text-shadow: none;
+}
+.main-navigation__link:hover, .main-navigation__link:focus, .main-navigation__link:active, mark .main-navigation__link {
+  background-color: #27831a;
+  color: #fff;
+}
+[role=navigation] .main-navigation__link--search {
+  display: none;
+}
+
+.form--search [type=search] {
+  font-size: 18px;
+  font-size: 1.125rem;
+  appearance: none;
+  border: 1px solid;
+  border-radius: 3px;
+  margin: 0 5px 0 0;
+  margin: 0 0.3125rem 0 0;
+}
+.form--search button {
+  font-weight: bold;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+@supports (display: flex) {
+  [role=search] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
 /*------------------------------------*\
     Footer
 \*------------------------------------*/
@@ -856,6 +956,15 @@ form li {
 }
 .footer p {
   margin: 0;
+}
+.footer::before {
+  content: "";
+  display: block;
+  border: 0;
+  border-top: 1px solid #DDD;
+  height: 0;
+  margin: 22px auto;
+  margin: 1.375rem auto;
 }
 
 /*------------------------------------*\
@@ -882,6 +991,26 @@ form li {
 .module * + * {
   margin-top: 11px;
   margin-top: 0.6875rem;
+}
+
+/*------------------------------------*\
+    Buttons
+\*------------------------------------*/
+button,
+.button {
+  cursor: pointer;
+  background: #666;
+  color: #fff;
+  text-shadow: none;
+  border: 1px solid #2c2825;
+  border-radius: 3px;
+  padding: 5px 10px;
+  padding: 0.3125rem 0.625rem;
+}
+button:hover, button:focus,
+.button:hover,
+.button:focus {
+  background: #1b5812;
 }
 
 /*------------------------------------*\
@@ -1267,7 +1396,7 @@ div.gist .blob-code {
   margin: 0 22px;
   margin: 0 1.375rem;
 }
-.pagination a {
+#aaron-gustafson_com .pagination a {
   background: #666;
   color: #fff;
   text-shadow: none;
@@ -1276,7 +1405,7 @@ div.gist .blob-code {
   padding: 0 5px;
   padding: 0 0.3125rem;
 }
-.pagination a:hover, .pagination a:focus {
+#aaron-gustafson_com .pagination a:hover, #aaron-gustafson_com .pagination a:focus {
   background: #1b5812;
 }
 
@@ -1327,7 +1456,7 @@ div.gist .blob-code {
   position: relative;
   overflow: hidden;
 }
-.speaking-engagements .event a {
+#aaron-gustafson_com .speaking-engagements .event a {
   color: #fff;
   border-bottom: none;
   text-shadow: none;
@@ -1517,6 +1646,9 @@ div.gist .blob-code {
     Main
 \*------------------------------------*/
 /*------------------------------------*\
+    Navigation
+\*------------------------------------*/
+/*------------------------------------*\
     Footer
 \*------------------------------------*/
 /*------------------------------------*\
@@ -1578,6 +1710,9 @@ div.gist .blob-code {
 }
 /*------------------------------------*\
     Modules
+\*------------------------------------*/
+/*------------------------------------*\
+    Buttons
 \*------------------------------------*/
 /*------------------------------------*\
     Listing

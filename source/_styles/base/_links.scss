@@ -66,31 +66,54 @@
     // better underlines
     @supports (background-image:linear-gradient(black,white)) {
         
-        a {
+        a:link,
+        a:visited {
+            @include underline( $color-link, 1px );
 
-            &:link,
-            &:visited {
+            h1 & {
+                @include underline( $color-link, 6px );
+            }
+        }
+        a:hover,
+        a:focus {
+            @include underline( $color-link-hover, 1px );
+
+            h1 & {
+                @include underline( $color-link-hover, 6px );
+            }
+        }
+
+        a.footnote {
+            background: transparent;
+            box-shadow: none;
+        }
+
+        html.wf-active {
+
+            a:link,
+            a:visited {
                 @include underline( $color-link );
-
-                h1 & {
-                    @include underline( $color-link, 8px, 1px );
-                }
             }
-            &:hover,
-            &:focus {
+            h1 a:link,
+            h1 a:visited {
+                @include underline( $color-link, 8px, 1px );
+            }
+            a:hover,
+            a:focus {
                 @include underline( $color-link-hover );
-
-                h1 & {
-                    @include underline( $color-link-hover, 8px, 1px );
-                }
+            }
+            h1 a:hover,
+            h1 a:focus {
+                @include underline( $color-link-hover, 8px, 1px );
             }
 
-            &.footnote {
+            a.footnote {
                 background: transparent;
                 box-shadow: none;
             }
             
         }
+
     }
 
 }
