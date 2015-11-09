@@ -14,12 +14,16 @@ Between [Future of Web Design](https://futureofwebdesign.com/nyc-2015/) in New Y
 
 ## Falling in Love with Forms
 
+{% vimeo 144870932 %}
+
 This one’s a survey of current forms best practices. This one’s a bit abbreviated from my previous iterations as the talks were only 40 minutes at FoWD and Øredev, but I distilled out the most important bits.
 
 * **Slides**: http://www.slideshare.net/AaronGustafson/falling-in-love-with-forms-redev-2015
 * **Video**: https://vimeo.com/144870932
 
 ## There Are No “Buts” in Progressive Enhancement
+
+{% vimeo 144979022 %}
 
 Wherein I dispel the myth that progressive enhancement has no place in news, healthcare, education, financial, commerce, and single-page app websites. Lots of goodies in here.
 
