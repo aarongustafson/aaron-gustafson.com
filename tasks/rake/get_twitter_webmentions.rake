@@ -31,7 +31,7 @@ task :get_twitter_webmentions do |t, args|
   	config.access_token_secret = ENV['TWITTER_ACCESS_SECRET']
   end
 
-  put cached_webmentions
+  puts cached_webmentions
 
   client.search("aaron-gustafson.com -rt").collect do |tweet|
   	
