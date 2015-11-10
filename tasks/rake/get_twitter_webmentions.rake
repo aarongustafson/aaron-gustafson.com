@@ -13,7 +13,7 @@ task :get_twitter_webmentions do |t, args|
 
   # Load the config file
   jekyll_config = open(config_file) { |f| YAML.load(f) }
-  
+  puts jekyll_config
   # counting 
   count = 0
 
