@@ -45,7 +45,7 @@ module Jekyll
     def render(context)
       render_markup = Liquid::Template.parse(@tag_text).render(context).gsub(/\\\{\\\{|\\\{\\%/, '\{\{' => '{{', '\{\%' => '{%')
 
-        # Gather settings
+      # Gather settings
       site = context.registers[:site]
       settings = site.config['adaptive_image']
 

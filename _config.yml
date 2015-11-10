@@ -121,3 +121,6 @@ adaptive_image:
     - 320
   sizes:
     - 100vw
+
+# Crosspost to Medium
+crosspost_to_medium: true
