@@ -1,7 +1,6 @@
 require 'rubygems'
 require 'twitter'
 require 'kramdown'
-require 'json'
 
 root_folder = '../../../'
 cache_folder = File.expand_path("#{root_folder}.cache", __FILE__)
