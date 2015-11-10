@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'twitter'
 require 'kramdown'
+require 'json'
 
 root_folder = '../../../'
 cache_folder = File.expand_path("#{root_folder}.cache", __FILE__)
@@ -31,7 +32,7 @@ task :get_twitter_webmentions do |t, args|
   end
 
   client.search("aaron-gustafson.com -rt").collect do |tweet|
-  	puts tweet.to_s
+  	puts tweet.to_json
   	target = false
   	tweet.urls.each do |url|
       url = url.url.to_s
