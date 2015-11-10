@@ -13,7 +13,7 @@ task :get_twitter_webmentions do |t, args|
 
   # Load the config file
   jekyll_config = open(config_file) { |f| YAML.load(f) }
-  puts jekyll_config
+  
   # counting 
   count = 0
 
@@ -29,7 +29,7 @@ task :get_twitter_webmentions do |t, args|
   	config.access_token        = ENV['TWITTER_ACCESS_TOKEN']
   	config.access_token_secret = ENV['TWITTER_ACCESS_SECRET']
   end
-
+  puts client.search("aaron-gustafson.com -rt").collect
   client.search("aaron-gustafson.com -rt").collect do |tweet|
   	
   	target = false
