@@ -32,7 +32,7 @@ task :get_twitter_webmentions do |t, args|
   end
 
   client.search("aaron-gustafson.com -rt").collect do |tweet|
-  	puts tweet.to_json
+  	JSON.dump tweet
   	target = false
   	tweet.urls.each do |url|
       url = url.url.to_s
