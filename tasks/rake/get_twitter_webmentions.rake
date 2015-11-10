@@ -31,13 +31,11 @@ task :get_twitter_webmentions do |t, args|
   	config.access_token_secret = ENV['TWITTER_ACCESS_SECRET']
   end
 
+  put cached_webmentions
+
   client.search("aaron-gustafson.com -rt").collect do |tweet|
   	
-  	if ! tweet
-      next
-    end
-
-    target = false
+  	target = false
   	tweet.urls.each do |url|
       url = url.url.to_s
       url = `curl -w "%{url_effective}\n" -L -s -S $URL -o /dev/null #{url}`
