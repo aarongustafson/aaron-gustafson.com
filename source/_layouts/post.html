@@ -20,6 +20,11 @@ single: true
 						<dt>Reading Time</dt>
 						<dd>{{ content | reading_time_as_i }}</dd>
 
+						{% if page.series %}
+							<dt>Series</dt>
+							<dd>{{ page.series.name }}</dd>
+						{% endif %}
+
 						<dt>Tagged</dt>
 						<dd>{% include post/categories.html %}</dd>
 
@@ -51,6 +56,11 @@ single: true
 				<p class="entry__in-reply-to">You are reading a reply to <a class="u-in-reply-to" href="{{ page.reply_to_url }}">{{ page.reply_to_title }}</a>.
 				</p>
 	    	{% endif %}
+
+	    	{% if page.series %}
+	    		<p class="entry__series">This is the {{ page.series.ordinal }} entry in the series <a  href="/notebook/tags/{{ page.series.tag }}">{{ page.series.name }}</a>.
+				</p>
+			{% endif %}
 
 			<div class="entry__content e-content">
 				{{ content }}

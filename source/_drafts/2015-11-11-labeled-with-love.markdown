@@ -1,0 +1,86 @@
+---
+layout: post
+title: "Labeled with Love"
+date: 2015-11-11 11:20:33 -0500
+comments: true
+categories: ["web design",forms,accessibility,content,"web forms"]
+description: "Proper labeling is key to ensuring your web forms are usable."
+series:
+  name: "Modern Web Form Best Practices"
+  tag: web-forms
+  ordinal: first
+---
+
+Forms exist on pretty much every site on the web in one form or another. They are the primary mechanism by which we gather information from our users.[^1] Of course, before anyone can fill out a form, they need to know what it’s asking for. Labeling is key.
+
+<!-- more -->
+
+A few months back, I relayed [a story from Facebook](https://www.aaron-gustafson.com/notebook/consider-how-your-forms-read/) about how important the wording of their questions was in getting accurate responses from their users. The words we use are incredibly important. After all, your interface is a conversation with your users. I highly recommend reading that post (and [listening to the Radiolab episode](http://www.radiolab.org/story/trust-engineers/) I was reacting to), but I’m going to spend the remainder of this post talking about the utilitarian aspects of labels and how to use them properly in your forms.
+
+## Connecting the Dots
+
+When you look at a basic form field, you have two bits of information: the field and the label.
+
+<figure id="fig-2015-11-11-01" class="media-container">{% adaptive_image /i/posts/2015-11-11/01.png %}<figcaption>A typical form control: a label and a field.</figcaption></figure>
+
+You could achieve this with a minimum of markup:
+
+{% gist 3585c019108025b2f568 unlabeled-field.html %}
+
+The thing is, the text "Your Name" is not associated in any way with the `input`. Sure, a sighted person would probably be able to tell that that text is associated with the field, but no computer can tell that. And if a computer can’t tell the text and `input` are associated, your form control is inaccessible to anyone who uses assistive technology like a screen reader and in future "headless UI" scnearios like those hinted at by Cortana, Siri, and the Echo.
+
+Thankfully, establishing a relationship between the two is quite easy using the `label` element. The most common (and preferable) way to do this is to wrap the labeling text in a `label` element. Then you create an explicit association with the field using the `for` attribute, which is an `id` reference. In other words, the value of the `for` attribute needs to match the value of the `id` attribute on the field you want to associate with that `label`.
+
+{% gist 3585c019108025b2f568 labeled-field.html %}
+
+With that markup in place, the programmatic connection between the elements is made and the results speak for themselves: When you focus the field, the contents of the `label` are read out.
+
+{% youtube WR4_MAjalsU %}
+
+## An Alternate Approach
+
+Since I specifically referred to this approach as *explicit* association, you probably assumed that there’s another kind of association. And you were right: *implicit* association. Implicit association is created by wrapping a form control and its associated label text in a `label` element. I like to use this approach with radio and checkbox controls:
+
+{% gist 3585c019108025b2f568 implicitly-labeled-checkbox.html %}
+
+It’s worth noting that there’s nothing wrong with explicit association in this context either. That would look like this:
+
+{% gist 3585c019108025b2f568 explicitly-labeled-checkbox.html %}
+
+You can even combine the two approaches like this:
+
+{% gist 3585c019108025b2f568 combo-labeled-checkbox.html %}
+
+The reason I like to use implicit association with radio and form controls has to do with ensuring the greatest breadth of support when it comes to styling inputs. For instance, if I set `width: 80%` on all `input` elements using a simple [type selector](https://developer.mozilla.org/docs/Web/CSS/Type_selectors), that width would be applied to *all* `input` elements, including radio and checkbox controls. In order to prevent radio and checkbox form controls from getting rendered at that width, I would need to assign an override value of `width: auto` to them them specifically. I can do that easily using [attribute selectors](https://developer.mozilla.org/docs/Web/CSS/Attribute_selectors):
+
+{% gist 3585c019108025b2f568 modern-only.css %}
+
+While completely valid, that approach leaves out any browsers that don’t support attribute selection (e.g. IE 6). That may not seem like a deal-breaker in your book, but on the off chance some poor soul happens to be stuck using an out-of-date browser, I like to show them a little love. And, thankfully, using the implicit markup pattern for checkboxes and radio controls allows for this quite easily: just use a [descendent selector](https://developer.mozilla.org/docs/Web/CSS/Descendant_selectors).
+
+{% gist 3585c019108025b2f568 universal.css %}
+
+Not only do you get a greater amount of support, you’re also writing less CSS.
+
+## Added Benefit
+
+Obviously, associated labels are great for folks who use screen readers, but they have another benefit: tapping on a `label` will focus or activate the associated form control.
+
+<figure id="fig-2015-11-11-02" class="media-container"><img src="/i/posts/2015-11-11/02.gif" alt=""><figcaption>Clicking a label will focus the form control.</figcaption></figure>
+
+This isn’t a game-changer when it comes to standard text fields, but it’s an exceptional affordance when it comes to radio and checkbox controls, especially on mobile, as it vastly increases the tappable region used to activate the control.
+
+<figure id="fig-2015-11-11-03" class="media-container"><img src="/i/posts/2015-11-11/03.png" alt=""><figcaption>A screenshot of a group of checkbox controls with their labels outlined.</figcaption></figure>
+
+That does wonders for tap-ability, but we can do more. To create incredibly generous tap targets on mobile devices, you can add padding to the label to make it bigger and then use negative margins to counter that enlargement and keep the layout as it was before the padding was applied:
+
+{% gist 3585c019108025b2f568 larger-labels.css %}
+
+<figure id="fig-2015-11-11-04" class="media-container"><img src="/i/posts/2015-11-11/04.gif" alt=""><figcaption>An animation showing very generous tap targets on a small screen.</figcaption></figure>
+
+It’s worth noting that older versions of Internet Explorer only provide the focus/interaction benefit when you use explicit label association. That’s why I like the combo approach of implicit *and* explicit association for checkbox and radio controls.
+
+<hr>
+
+We don’t have a ton of elements in HTML, which is why it’s important that we use the ones we do have well. When it comes to forms, improper labeling is quite common. Hopefully this has provided a helpful overview of how to properly label form controls.
+
+[^1]: When we’re not, you know, tracking them with a [super cookie](http://arstechnica.com/security/2015/10/verizons-zombie-cookie-gets-new-life/) or something.
