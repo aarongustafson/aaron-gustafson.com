@@ -1117,6 +1117,7 @@ button:hover, button:focus,
   margin: 0;
   padding: 11px;
   padding: 0.6875rem;
+  text-shadow: none;
   position: absolute;
   top: -1px;
   left: -1px;

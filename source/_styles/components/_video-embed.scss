@@ -77,6 +77,8 @@
             margin: 0;
             @include rem( padding, $default-spacing / 2 );
 
+            text-shadow: none;
+
             position:absolute;
             top: -1px;
             left: -1px;
