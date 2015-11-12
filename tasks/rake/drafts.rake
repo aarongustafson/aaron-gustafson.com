@@ -28,7 +28,7 @@ task :draft_post, :title do |t, args|
     post.puts "description: \"\""
     post.puts "---"
   end
-  `open ./#{filename}`
+  `open #{filename}`
 end
 
 desc "Publish a draft"

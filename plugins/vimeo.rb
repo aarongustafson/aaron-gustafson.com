@@ -58,7 +58,6 @@ class Vimeo < Liquid::Tag
 
     # extract video information using a REST command 
     response = Net::HTTP.get_response("vimeo.com","/api/oembed.json?url=http%3A//vimeo.com/#{@id}")
-    puts response
     data = response.body
     result = JSON.parse(data)
 

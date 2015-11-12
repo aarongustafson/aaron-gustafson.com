@@ -93,7 +93,7 @@ Of course, since `placeholder` implements an existing pattern, it came with bagg
 
 {% gist 3585c019108025b2f568 fancy-example.css %}
 
-<figure id="fig-2015-11-11-06" class="media-container"><img src="/i/posts/2015-11-11/06.gif" alt=""><figcaption>A simple demo of this code. <a href="http://codepen.io/aarongustafson/pen/BoGgYM">It’s on CodePen</a> if you wanna dissect it.</figcaption></figure>
+<figure id="fig-2015-11-11-06" class="media-container">{% codepen BoGgYM aarongustafson result 112 preview %}</figure>
 
 Mary Lou assembled some beautiful examples of this approach in her [Inspiration for Text Input Effects](http://tympanus.net/codrops/2015/01/08/inspiration-text-input-effects/). I highly recommend you check those out, but here’s a teaser to whet your whistle:
 
