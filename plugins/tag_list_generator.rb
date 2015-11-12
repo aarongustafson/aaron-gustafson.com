@@ -10,12 +10,11 @@ FileUtils.mkdir_p(TAG_CACHE_DIR)
 module Jekyll
 
   # Jekyll hook - the generate method is called by jekyll, and generates all of the category pages.
-  class GenerateCategories < Generator
+  class GenerateTagList < Generator
     safe true
     priority :low
 
     def generate(site)
-
       tag_list_file = File.join(TAG_CACHE_DIR, "site-tags.yml")
       if File.exists?(tag_list_file)
         tags = open(tag_list_file) { |f| YAML.load(f) }
