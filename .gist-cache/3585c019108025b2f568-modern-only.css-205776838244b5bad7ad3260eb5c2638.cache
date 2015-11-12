@@ -1,0 +1,7 @@
+input {
+  width: 80%;
+}
+input[type=checkbox],
+input[type=radio] {
+  width: auto;
+}

@@ -14,12 +14,13 @@
     // Responsive images
     img {
     
-        display: block;
-    	width: 100%;
+        display: inline-block;
+    	max-width: 100%;
     	height: auto;
 	
     	&[style] {
-        	width: 100% !important;
+            width: auto !important;
+        	max-width: 100% !important;
         	height: auto !important;
     	}
 	
@@ -37,6 +38,10 @@
         max-width: 600px;
         margin-left: auto;
         margin-right: auto;
+    }
+    
+    figure {
+        text-align: center;
     }
     
     figcaption {

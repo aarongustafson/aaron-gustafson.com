@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Labeled with Love"
-date: 2015-11-11 11:20:33 -0500
+date: 2015-11-11 21:05:33 -0500
 comments: true
-categories: ["web design",forms,accessibility,content,"web forms"]
+categories: ["web design", forms, accessibility, "web forms"]
 description: "Proper labeling is key to ensuring your web forms are usable."
 series:
   name: "Modern Web Form Best Practices"
@@ -65,11 +65,11 @@ This approach results in a greater amount of support and, incidentally, less CSS
 
 Obviously, associated labels are great for folks who use screen readers, but they have another benefit: tapping on a `label` will focus or activate the associated form control.
 
-<figure id="fig-2015-11-11-02" class="media-container"><img src="/i/posts/2015-11-11/02.gif" alt=""><figcaption>Animation showing how clicking a `label` will focus the associated form control.</figcaption></figure>
+<figure id="fig-2015-11-11-02" class="media-container"><img src="/i/posts/2015-11-11/02.gif" alt=""><figcaption>Animation showing how clicking a <code>label</code> will focus the associated form control.</figcaption></figure>
 
 This isn’t a game-changer when it comes to standard text fields, but it’s an exceptional affordance when it comes to radio and checkbox controls, especially on mobile, as it vastly increases the tappable region used to activate the control.
 
-<figure id="fig-2015-11-11-03" class="media-container"><img src="/i/posts/2015-11-11/03.png" alt=""><figcaption>A screenshot of a group of checkbox controls with their labels outlined.</figcaption></figure>
+<figure id="fig-2015-11-11-03" class="media-container">{% adaptive_image /i/posts/2015-11-11/03.png %}<figcaption>A screenshot of a group of checkbox controls with their labels outlined.</figcaption></figure>
 
 To create incredibly generous tap targets on mobile devices, we can take things a little further. Add padding to the top and bottom of the `label` to make it bigger and then use negative margins to counter that enlargement and keep the layout as it was before the padding was applied.
 
@@ -81,14 +81,27 @@ It’s worth noting that older versions of Internet Explorer only provide the fo
 
 ## Placeholders Aren’t Labels
 
-what a placeholder is
-why we needed it
-what a placeholder isn't
-how to achieve a similar effect in CSS
-advanced, animated version
+HTML5 ushered in a new option for working with `input` elements: the `placeholder` attribute. This declarative attribute makes it possible to offer hint as to the sort of content you were looking for in a field. In [supporting browsers](http://caniuse.com/#feat=input-placeholder), it appears in the field, ghosted back a bit, and disappears when you start typing a response.[^2]
+
+<figure id="fig-2015-11-11-05" class="media-container"><img src="/i/posts/2015-11-11/05.gif" alt=""><figcaption>An animation showing a placeholder in action on <a href="http://webstandardssherpa.com"><cite>Web Standards Sherpa</cite></a>.</figcaption></figure>
+
+Having this natively supported in the browser was a huge boon. For years we’d been using JavaScript to achieve this very effect—albeit typically for label text—in an effort to create more compact forms. Now we get the effect without having to include any additional files or libraries.
+
+Of course, since `placeholder` implements an existing pattern, it came with baggage. People commonly achieved this effect by (ab)using the `value` attribute as a fake label. As such, its introduction didn’t do much to increase the accessibility of forms. *Form controls need a label*. If you want to make your form more compact, you can do that using proper markup and a little clever CSS.
+
+{% gist 3585c019108025b2f568 fancy-example.html %}
+
+{% gist 3585c019108025b2f568 fancy-example.css %}
+
+<figure id="fig-2015-11-11-06" class="media-container"><img src="/i/posts/2015-11-11/06.gif" alt=""><figcaption>A simple demo of this code. <a href="http://codepen.io/aarongustafson/pen/BoGgYM">It’s on CodePen</a> if you wanna dissect it.</figcaption></figure>
+
+Mary Lou assembled some beautiful examples of this approach in her [Inspiration for Text Input Effects](http://tympanus.net/codrops/2015/01/08/inspiration-text-input-effects/). I highly recommend you check those out, but here’s a teaser to whet your whistle:
+
+<figure id="fig-2015-11-11-07" class="media-container"><img src="/i/posts/2015-11-11/07.gif" alt=""><figcaption>A fancy, accessible form field and label from Mary Lou’s collection.</figcaption></figure>
 
 <hr>
 
 We don’t have a ton of elements in HTML, which is why it’s important that we properly use the ones we do have. Hopefully this has provided a helpful overview of how to properly label form controls using HTML.
 
 [^1]: When we’re not, you know, tracking them with a [super cookie](http://arstechnica.com/security/2015/10/verizons-zombie-cookie-gets-new-life/) or something.
+[^2]: Browsers typically exhibit two different behaviors here. Some hide the placeholder text as soon as you focus the field, others hide it only when you start typing. Either one works although, admittedly, I favor the text disappearing when you type rather than when the field receives focus. I can see how that approach might confuse some users, I just prefer it because it ensures you see the placeholder.

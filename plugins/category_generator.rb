@@ -72,7 +72,6 @@ module Jekyll
       self.process(name)
 
       if File.exist?(template_path)
-        puts "category template found"
         @perform_render = true
         template_dir    = File.dirname(template_path)
         template        = File.basename(template_path)
@@ -86,7 +85,6 @@ module Jekyll
         meta_description_prefix  = site.config['category_meta_description_prefix'] || 'Category: '
         self.data['description'] = "#{meta_description_prefix}#{category}"
       else
-        puts "category template NOT found"
         @perform_render = false
       end
     end
