@@ -56,6 +56,10 @@ blogging:
 - 2014-11-18-enabling-webmentions-in-jekyll.markdown
 - 2015-01-14-the-linkblog.markdown
 - 2015-10-26-crossposting-to-medium-from-jekyll.markdown
+- 2014-07-07-a-grand-experiment.markdown
+- 2014-11-18-enabling-webmentions-in-jekyll.markdown
+- 2015-01-14-the-linkblog.markdown
+- 2015-10-26-crossposting-to-medium-from-jekyll.markdown
 web design:
 - 2014-07-07-a-grand-experiment.markdown
 - 2014-07-17-native-vs-stylable-tug-of-war.markdown
@@ -804,7 +808,65 @@ web design:
 - 2015-10-19-strapless.markdown
 - 2015-11-09-future-of-web-design-and-oredev.markdown
 - 2015-11-11-labeled-with-love.markdown
+- 2014-07-07-a-grand-experiment.markdown
+- 2014-07-17-native-vs-stylable-tug-of-war.markdown
+- 2014-09-08-the-network-effect.markdown
+- 2014-09-13-a-fundamental-disconnect.markdown
+- 2014-09-19-missed-connections.markdown
+- 2014-09-20-responsive-typography.markdown
+- 2014-10-28-google-embraces-progressive-enhancement.markdown
+- 2014-11-04-css-variables-are-a-bad-idea.markdown
+- 2014-11-05-aria-quicktip-labelledby-vs-describedby.markdown
+- 2014-11-06-the-web-is-for-everyone.markdown
+- 2014-11-17-what-do-we-own.markdown
+- 2014-11-18-enabling-webmentions-in-jekyll.markdown
+- 2014-11-21-adaptive-images-in-expressionengine-with-ce-image.markdown
+- 2014-12-16-indecisiveness-and-urls.markdown
+- 2014-12-18-visualizing-css3-transformations.markdown
+- 2014-12-21-autoplay-dont-do-it.markdown
+- 2014-12-28-we-need-more-empathy.markdown
+- 2015-01-05-revisiting-and-releasing-adaptive-web-design.markdown
+- 2015-01-08-webos-is-back.markdown
+- 2015-01-14-the-linkblog.markdown
+- 2015-01-15-an-onslaught-of-low-cost-smartphones.markdown
+- 2015-01-16-spelling-errors-exclusions-and-packages-oh-my.markdown
+- 2015-01-19-egalitarianism.markdown
+- 2015-01-21-competing-on-chrome.markdown
+- 2015-01-25-sending-birthday-well-wishes-to-molly.markdown
+- 2015-01-26-the-one-weird-trick-that-takes-the-pain-out-of-cross-browser-testing.markdown
+- 2015-01-30-ch-ch-ch-changes.markdown
+- 2015-02-13-three-worthwhile-posts-on-progressive-enhancement.markdown
+- 2015-02-18-who-should-pay.markdown
+- 2015-02-23-consider-how-your-forms-read.markdown
+- 2015-02-26-apple-business-and-standards.markdown
+- 2015-03-06-who-should-pay-2-the-hosting.markdown
+- 2015-03-09-bidding-farewell-to-shirley-the-goat.markdown
+- 2015-03-11-lines-in-the-sand.markdown
+- 2015-03-20-quantity-queries-where-have-you-been-all-my-life.markdown
+- 2015-03-26-playing-with-flexbox-and-quantity-queries.markdown
+- 2015-04-02-how-to-apply-progressive-enhancement-when-javascript-seems-like-a-requirement.markdown
+- 2015-04-09-honoringwebfolk.markdown
+- 2015-04-21-tips-for-surviving-googles-mobilegeddon.markdown
+- 2015-04-30-collected-reactions-to-build.markdown
+- 2015-05-05-lessons-learned-from-atari.markdown
+- 2015-05-18-url-inception.markdown
+- 2015-05-28-interface-experience-maps.markdown
+- 2015-06-05-bringing-sanity-and-order-to-device-testing.markdown
+- 2015-06-29-harvard-and-mit-and-captioning.markdown
+- 2015-08-04-unum-releases-their-pattern-libraries.markdown
+- 2015-08-07-ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web.markdown
+- 2015-08-17-web-design-101-100-percent-tappable.markdown
+- 2015-08-26-my-trip-to-18f.markdown
+- 2015-09-01-more-proof-we-dont-control-our-web-pages.markdown
+- 2015-09-03-moved-to-https.markdown
+- 2015-10-19-strapless.markdown
+- 2015-11-09-future-of-web-design-and-oredev.markdown
+- 2015-11-11-labeled-with-love.markdown
 this site:
+- 2014-07-07-a-grand-experiment.markdown
+- 2014-12-16-indecisiveness-and-urls.markdown
+- 2015-01-14-the-linkblog.markdown
+- 2015-09-03-moved-to-https.markdown
 - 2014-07-07-a-grand-experiment.markdown
 - 2014-12-16-indecisiveness-and-urls.markdown
 - 2015-01-14-the-linkblog.markdown
@@ -932,7 +994,13 @@ mobile:
 - 2015-01-15-an-onslaught-of-low-cost-smartphones.markdown
 - 2015-04-21-tips-for-surviving-googles-mobilegeddon.markdown
 - 2015-06-05-bringing-sanity-and-order-to-device-testing.markdown
+- 2014-07-10-searching-for-the-right-size.markdown
+- 2014-07-17-native-vs-stylable-tug-of-war.markdown
+- 2015-01-15-an-onslaught-of-low-cost-smartphones.markdown
+- 2015-04-21-tips-for-surviving-googles-mobilegeddon.markdown
+- 2015-06-05-bringing-sanity-and-order-to-device-testing.markdown
 screens:
+- 2014-07-10-searching-for-the-right-size.markdown
 - 2014-07-10-searching-for-the-right-size.markdown
 - 2014-07-10-searching-for-the-right-size.markdown
 - 2014-07-10-searching-for-the-right-size.markdown
@@ -1018,7 +1086,13 @@ browsers:
 - 2015-01-26-the-one-weird-trick-that-takes-the-pain-out-of-cross-browser-testing.markdown
 - 2015-03-11-lines-in-the-sand.markdown
 - 2015-08-07-ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web.markdown
+- 2014-07-17-native-vs-stylable-tug-of-war.markdown
+- 2015-01-21-competing-on-chrome.markdown
+- 2015-01-26-the-one-weird-trick-that-takes-the-pain-out-of-cross-browser-testing.markdown
+- 2015-03-11-lines-in-the-sand.markdown
+- 2015-08-07-ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web.markdown
 design:
+- 2014-07-17-native-vs-stylable-tug-of-war.markdown
 - 2014-07-17-native-vs-stylable-tug-of-war.markdown
 - 2014-07-17-native-vs-stylable-tug-of-war.markdown
 - 2014-07-17-native-vs-stylable-tug-of-war.markdown
@@ -1048,7 +1122,15 @@ native:
 - 2014-07-17-native-vs-stylable-tug-of-war.markdown
 - 2014-07-17-native-vs-stylable-tug-of-war.markdown
 - 2014-07-17-native-vs-stylable-tug-of-war.markdown
+- 2014-07-17-native-vs-stylable-tug-of-war.markdown
 javascript:
+- 2014-09-08-the-network-effect.markdown
+- 2014-09-13-a-fundamental-disconnect.markdown
+- 2014-09-19-missed-connections.markdown
+- 2014-10-28-google-embraces-progressive-enhancement.markdown
+- 2015-04-02-how-to-apply-progressive-enhancement-when-javascript-seems-like-a-requirement.markdown
+- 2015-04-27-lies-damn-lies-and-javascript.markdown
+- 2015-09-01-more-proof-we-dont-control-our-web-pages.markdown
 - 2014-09-08-the-network-effect.markdown
 - 2014-09-13-a-fundamental-disconnect.markdown
 - 2014-09-19-missed-connections.markdown
@@ -1246,7 +1328,16 @@ web development:
 - 2014-12-21-autoplay-dont-do-it.markdown
 - 2014-12-28-we-need-more-empathy.markdown
 - 2015-01-26-the-one-weird-trick-that-takes-the-pain-out-of-cross-browser-testing.markdown
+- 2014-09-13-a-fundamental-disconnect.markdown
+- 2014-09-19-missed-connections.markdown
+- 2014-10-28-google-embraces-progressive-enhancement.markdown
+- 2014-11-04-css-variables-are-a-bad-idea.markdown
+- 2014-12-21-autoplay-dont-do-it.markdown
+- 2014-12-28-we-need-more-empathy.markdown
+- 2015-01-26-the-one-weird-trick-that-takes-the-pain-out-of-cross-browser-testing.markdown
 software development:
+- 2014-09-13-a-fundamental-disconnect.markdown
+- 2014-09-19-missed-connections.markdown
 - 2014-09-13-a-fundamental-disconnect.markdown
 - 2014-09-19-missed-connections.markdown
 - 2014-09-13-a-fundamental-disconnect.markdown
@@ -1290,6 +1381,7 @@ book contributions:
 - 2014-09-20-responsive-typography.markdown
 - 2014-09-20-responsive-typography.markdown
 - 2014-09-20-responsive-typography.markdown
+- 2014-09-20-responsive-typography.markdown
 writing:
 - 2014-09-20-responsive-typography.markdown
 - 2014-09-20-responsive-typography.markdown
@@ -1305,7 +1397,22 @@ writing:
 - 2014-09-20-responsive-typography.markdown
 - 2014-09-20-responsive-typography.markdown
 - 2014-09-20-responsive-typography.markdown
+- 2014-09-20-responsive-typography.markdown
 progressive enhancement:
+- 2014-10-28-google-embraces-progressive-enhancement.markdown
+- 2014-11-21-adaptive-images-in-expressionengine-with-ce-image.markdown
+- 2015-01-26-the-one-weird-trick-that-takes-the-pain-out-of-cross-browser-testing.markdown
+- 2015-02-13-three-worthwhile-posts-on-progressive-enhancement.markdown
+- 2015-02-18-who-should-pay.markdown
+- 2015-03-11-lines-in-the-sand.markdown
+- 2015-04-02-how-to-apply-progressive-enhancement-when-javascript-seems-like-a-requirement.markdown
+- 2015-04-21-tips-for-surviving-googles-mobilegeddon.markdown
+- 2015-05-28-interface-experience-maps.markdown
+- 2015-06-05-bringing-sanity-and-order-to-device-testing.markdown
+- 2015-06-22-where-do-we-go-from-here.markdown
+- 2015-08-26-my-trip-to-18f.markdown
+- 2015-10-20-on-adaptive-web-designs-second-edition.markdown
+- 2015-11-09-future-of-web-design-and-oredev.markdown
 - 2014-10-28-google-embraces-progressive-enhancement.markdown
 - 2014-11-21-adaptive-images-in-expressionengine-with-ce-image.markdown
 - 2015-01-26-the-one-weird-trick-that-takes-the-pain-out-of-cross-browser-testing.markdown
@@ -1545,6 +1652,9 @@ css:
 - 2014-11-04-css-variables-are-a-bad-idea.markdown
 - 2015-03-20-quantity-queries-where-have-you-been-all-my-life.markdown
 - 2015-03-26-playing-with-flexbox-and-quantity-queries.markdown
+- 2014-11-04-css-variables-are-a-bad-idea.markdown
+- 2015-03-20-quantity-queries-where-have-you-been-all-my-life.markdown
+- 2015-03-26-playing-with-flexbox-and-quantity-queries.markdown
 w3c:
 - 2014-11-04-css-variables-are-a-bad-idea.markdown
 - 2014-11-04-css-variables-are-a-bad-idea.markdown
@@ -1560,7 +1670,13 @@ w3c:
 - 2014-11-04-css-variables-are-a-bad-idea.markdown
 - 2014-11-04-css-variables-are-a-bad-idea.markdown
 - 2014-11-04-css-variables-are-a-bad-idea.markdown
+- 2014-11-04-css-variables-are-a-bad-idea.markdown
 web standards:
+- 2014-11-04-css-variables-are-a-bad-idea.markdown
+- 2014-12-18-visualizing-css3-transformations.markdown
+- 2015-01-16-spelling-errors-exclusions-and-packages-oh-my.markdown
+- 2015-01-21-competing-on-chrome.markdown
+- 2015-02-26-apple-business-and-standards.markdown
 - 2014-11-04-css-variables-are-a-bad-idea.markdown
 - 2014-12-18-visualizing-css3-transformations.markdown
 - 2015-01-16-spelling-errors-exclusions-and-packages-oh-my.markdown
@@ -1721,6 +1837,13 @@ accessibility:
 - 2015-06-22-where-do-we-go-from-here.markdown
 - 2015-06-29-harvard-and-mit-and-captioning.markdown
 - 2015-11-11-labeled-with-love.markdown
+- 2014-11-05-aria-quicktip-labelledby-vs-describedby.markdown
+- 2014-11-06-the-web-is-for-everyone.markdown
+- 2015-01-19-egalitarianism.markdown
+- 2015-02-23-consider-how-your-forms-read.markdown
+- 2015-06-22-where-do-we-go-from-here.markdown
+- 2015-06-29-harvard-and-mit-and-captioning.markdown
+- 2015-11-11-labeled-with-love.markdown
 wai-aria:
 - 2014-11-05-aria-quicktip-labelledby-vs-describedby.markdown
 - 2014-11-05-aria-quicktip-labelledby-vs-describedby.markdown
@@ -1736,7 +1859,9 @@ wai-aria:
 - 2014-11-05-aria-quicktip-labelledby-vs-describedby.markdown
 - 2014-11-05-aria-quicktip-labelledby-vs-describedby.markdown
 - 2014-11-05-aria-quicktip-labelledby-vs-describedby.markdown
+- 2014-11-05-aria-quicktip-labelledby-vs-describedby.markdown
 ux:
+- 2014-11-06-the-web-is-for-everyone.markdown
 - 2014-11-06-the-web-is-for-everyone.markdown
 - 2014-11-06-the-web-is-for-everyone.markdown
 - 2014-11-06-the-web-is-for-everyone.markdown
@@ -1808,7 +1933,12 @@ presentations:
 - 2015-05-05-slides-from-my-talk-at-number-msedgesummit.markdown
 - 2015-08-26-my-trip-to-18f.markdown
 - 2015-11-09-future-of-web-design-and-oredev.markdown
+- 2014-11-06-the-web-is-for-everyone.markdown
+- 2015-05-05-slides-from-my-talk-at-number-msedgesummit.markdown
+- 2015-08-26-my-trip-to-18f.markdown
+- 2015-11-09-future-of-web-design-and-oredev.markdown
 voice ux:
+- 2014-11-06-the-web-is-for-everyone.markdown
 - 2014-11-06-the-web-is-for-everyone.markdown
 - 2014-11-06-the-web-is-for-everyone.markdown
 - 2014-11-06-the-web-is-for-everyone.markdown
@@ -1838,7 +1968,11 @@ the future:
 - 2014-11-06-the-web-is-for-everyone.markdown
 - 2014-11-06-the-web-is-for-everyone.markdown
 - 2014-11-06-the-web-is-for-everyone.markdown
+- 2014-11-06-the-web-is-for-everyone.markdown
 indie web:
+- 2014-11-17-what-do-we-own.markdown
+- 2014-11-18-enabling-webmentions-in-jekyll.markdown
+- 2015-10-26-crossposting-to-medium-from-jekyll.markdown
 - 2014-11-17-what-do-we-own.markdown
 - 2014-11-18-enabling-webmentions-in-jekyll.markdown
 - 2015-10-26-crossposting-to-medium-from-jekyll.markdown
@@ -1910,7 +2044,11 @@ self-publishing:
 - 2014-11-18-enabling-webmentions-in-jekyll.markdown
 - 2014-11-17-what-do-we-own.markdown
 - 2014-11-18-enabling-webmentions-in-jekyll.markdown
+- 2014-11-17-what-do-we-own.markdown
+- 2014-11-18-enabling-webmentions-in-jekyll.markdown
 decentralization:
+- 2014-11-17-what-do-we-own.markdown
+- 2014-11-18-enabling-webmentions-in-jekyll.markdown
 - 2014-11-17-what-do-we-own.markdown
 - 2014-11-18-enabling-webmentions-in-jekyll.markdown
 - 2014-11-17-what-do-we-own.markdown
@@ -1968,7 +2106,10 @@ responsive web design:
 - 2015-06-22-where-do-we-go-from-here.markdown
 - 2014-11-21-adaptive-images-in-expressionengine-with-ce-image.markdown
 - 2015-06-22-where-do-we-go-from-here.markdown
+- 2014-11-21-adaptive-images-in-expressionengine-with-ce-image.markdown
+- 2015-06-22-where-do-we-go-from-here.markdown
 expressionengine:
+- 2014-11-21-adaptive-images-in-expressionengine-with-ce-image.markdown
 - 2014-11-21-adaptive-images-in-expressionengine-with-ce-image.markdown
 - 2014-11-21-adaptive-images-in-expressionengine-with-ce-image.markdown
 - 2014-11-21-adaptive-images-in-expressionengine-with-ce-image.markdown
@@ -1998,7 +2139,9 @@ ce images:
 - 2014-11-21-adaptive-images-in-expressionengine-with-ce-image.markdown
 - 2014-11-21-adaptive-images-in-expressionengine-with-ce-image.markdown
 - 2014-11-21-adaptive-images-in-expressionengine-with-ce-image.markdown
+- 2014-11-21-adaptive-images-in-expressionengine-with-ce-image.markdown
 responsive images:
+- 2014-11-21-adaptive-images-in-expressionengine-with-ce-image.markdown
 - 2014-11-21-adaptive-images-in-expressionengine-with-ce-image.markdown
 - 2014-11-21-adaptive-images-in-expressionengine-with-ce-image.markdown
 - 2014-11-21-adaptive-images-in-expressionengine-with-ce-image.markdown
@@ -2028,7 +2171,9 @@ css3:
 - 2014-12-18-visualizing-css3-transformations.markdown
 - 2014-12-18-visualizing-css3-transformations.markdown
 - 2014-12-18-visualizing-css3-transformations.markdown
+- 2014-12-18-visualizing-css3-transformations.markdown
 tools:
+- 2014-12-18-visualizing-css3-transformations.markdown
 - 2014-12-18-visualizing-css3-transformations.markdown
 - 2014-12-18-visualizing-css3-transformations.markdown
 - 2014-12-18-visualizing-css3-transformations.markdown
@@ -2058,7 +2203,9 @@ video:
 - 2014-12-21-autoplay-dont-do-it.markdown
 - 2014-12-21-autoplay-dont-do-it.markdown
 - 2014-12-21-autoplay-dont-do-it.markdown
+- 2014-12-21-autoplay-dont-do-it.markdown
 audio:
+- 2014-12-21-autoplay-dont-do-it.markdown
 - 2014-12-21-autoplay-dont-do-it.markdown
 - 2014-12-21-autoplay-dont-do-it.markdown
 - 2014-12-21-autoplay-dont-do-it.markdown
@@ -2088,7 +2235,11 @@ software:
 - 2014-12-28-we-need-more-empathy.markdown
 - 2014-12-28-we-need-more-empathy.markdown
 - 2014-12-28-we-need-more-empathy.markdown
+- 2014-12-28-we-need-more-empathy.markdown
 empathy:
+- 2014-12-28-we-need-more-empathy.markdown
+- 2015-02-18-who-should-pay.markdown
+- 2015-03-06-who-should-pay-2-the-hosting.markdown
 - 2014-12-28-we-need-more-empathy.markdown
 - 2015-02-18-who-should-pay.markdown
 - 2015-03-06-who-should-pay-2-the-hosting.markdown
@@ -2160,7 +2311,11 @@ publications:
 - 2015-03-09-bidding-farewell-to-shirley-the-goat.markdown
 - 2015-01-05-revisiting-and-releasing-adaptive-web-design.markdown
 - 2015-03-09-bidding-farewell-to-shirley-the-goat.markdown
+- 2015-01-05-revisiting-and-releasing-adaptive-web-design.markdown
+- 2015-03-09-bidding-farewell-to-shirley-the-goat.markdown
 adaptive web design:
+- 2015-01-05-revisiting-and-releasing-adaptive-web-design.markdown
+- 2015-10-20-on-adaptive-web-designs-second-edition.markdown
 - 2015-01-05-revisiting-and-releasing-adaptive-web-design.markdown
 - 2015-10-20-on-adaptive-web-designs-second-edition.markdown
 - 2015-01-05-revisiting-and-releasing-adaptive-web-design.markdown
@@ -2232,7 +2387,11 @@ devices:
 - 2015-01-08-webos-is-back.markdown
 - 2015-01-15-an-onslaught-of-low-cost-smartphones.markdown
 - 2015-06-05-bringing-sanity-and-order-to-device-testing.markdown
+- 2015-01-08-webos-is-back.markdown
+- 2015-01-15-an-onslaught-of-low-cost-smartphones.markdown
+- 2015-06-05-bringing-sanity-and-order-to-device-testing.markdown
 operating systems:
+- 2015-01-08-webos-is-back.markdown
 - 2015-01-08-webos-is-back.markdown
 - 2015-01-08-webos-is-back.markdown
 - 2015-01-08-webos-is-back.markdown
@@ -2262,7 +2421,9 @@ philosophy:
 - 2015-01-19-egalitarianism.markdown
 - 2015-01-19-egalitarianism.markdown
 - 2015-01-19-egalitarianism.markdown
+- 2015-01-19-egalitarianism.markdown
 social media:
+- 2015-01-22-creepy-namefellow.markdown
 - 2015-01-22-creepy-namefellow.markdown
 - 2015-01-22-creepy-namefellow.markdown
 - 2015-01-22-creepy-namefellow.markdown
@@ -2320,7 +2481,11 @@ personal:
 - 2015-01-22-creepy-namefellow.markdown
 - 2015-01-25-sending-birthday-well-wishes-to-molly.markdown
 - 2015-01-30-ch-ch-ch-changes.markdown
+- 2015-01-22-creepy-namefellow.markdown
+- 2015-01-25-sending-birthday-well-wishes-to-molly.markdown
+- 2015-01-30-ch-ch-ch-changes.markdown
 programming:
+- 2015-02-15-i-dont-want-to-teach-the-world-to-code.markdown
 - 2015-02-15-i-dont-want-to-teach-the-world-to-code.markdown
 - 2015-02-15-i-dont-want-to-teach-the-world-to-code.markdown
 - 2015-02-15-i-dont-want-to-teach-the-world-to-code.markdown
@@ -2350,6 +2515,7 @@ education:
 - 2015-02-15-i-dont-want-to-teach-the-world-to-code.markdown
 - 2015-02-15-i-dont-want-to-teach-the-world-to-code.markdown
 - 2015-02-15-i-dont-want-to-teach-the-world-to-code.markdown
+- 2015-02-15-i-dont-want-to-teach-the-world-to-code.markdown
 culture:
 - 2015-02-15-i-dont-want-to-teach-the-world-to-code.markdown
 - 2015-02-15-i-dont-want-to-teach-the-world-to-code.markdown
@@ -2365,7 +2531,10 @@ culture:
 - 2015-02-15-i-dont-want-to-teach-the-world-to-code.markdown
 - 2015-02-15-i-dont-want-to-teach-the-world-to-code.markdown
 - 2015-02-15-i-dont-want-to-teach-the-world-to-code.markdown
+- 2015-02-15-i-dont-want-to-teach-the-world-to-code.markdown
 performance:
+- 2015-02-18-who-should-pay.markdown
+- 2015-03-06-who-should-pay-2-the-hosting.markdown
 - 2015-02-18-who-should-pay.markdown
 - 2015-03-06-who-should-pay-2-the-hosting.markdown
 - 2015-02-18-who-should-pay.markdown
@@ -2428,6 +2597,9 @@ forms:
 - 2015-02-23-consider-how-your-forms-read.markdown
 - 2015-11-09-future-of-web-design-and-oredev.markdown
 - 2015-11-11-labeled-with-love.markdown
+- 2015-02-23-consider-how-your-forms-read.markdown
+- 2015-11-09-future-of-web-design-and-oredev.markdown
+- 2015-11-11-labeled-with-love.markdown
 content:
 - 2015-02-23-consider-how-your-forms-read.markdown
 - 2015-02-23-consider-how-your-forms-read.markdown
@@ -2443,7 +2615,9 @@ content:
 - 2015-02-23-consider-how-your-forms-read.markdown
 - 2015-02-23-consider-how-your-forms-read.markdown
 - 2015-02-23-consider-how-your-forms-read.markdown
+- 2015-02-23-consider-how-your-forms-read.markdown
 interoperability:
+- 2015-02-26-apple-business-and-standards.markdown
 - 2015-02-26-apple-business-and-standards.markdown
 - 2015-02-26-apple-business-and-standards.markdown
 - 2015-02-26-apple-business-and-standards.markdown
@@ -2487,7 +2661,10 @@ business:
 - 2015-10-28-excellent-speakers-for-your-next-tech-event.markdown
 - 2015-02-26-apple-business-and-standards.markdown
 - 2015-10-28-excellent-speakers-for-your-next-tech-event.markdown
+- 2015-02-26-apple-business-and-standards.markdown
+- 2015-10-28-excellent-speakers-for-your-next-tech-event.markdown
 hosting:
+- 2015-03-06-who-should-pay-2-the-hosting.markdown
 - 2015-03-06-who-should-pay-2-the-hosting.markdown
 - 2015-03-06-who-should-pay-2-the-hosting.markdown
 - 2015-03-06-who-should-pay-2-the-hosting.markdown
@@ -2517,7 +2694,9 @@ sass:
 - 2015-03-20-quantity-queries-where-have-you-been-all-my-life.markdown
 - 2015-03-20-quantity-queries-where-have-you-been-all-my-life.markdown
 - 2015-03-20-quantity-queries-where-have-you-been-all-my-life.markdown
+- 2015-03-20-quantity-queries-where-have-you-been-all-my-life.markdown
 experiments:
+- 2015-03-26-playing-with-flexbox-and-quantity-queries.markdown
 - 2015-03-26-playing-with-flexbox-and-quantity-queries.markdown
 - 2015-03-26-playing-with-flexbox-and-quantity-queries.markdown
 - 2015-03-26-playing-with-flexbox-and-quantity-queries.markdown
@@ -2561,6 +2740,8 @@ user experience:
 - 2015-05-28-interface-experience-maps.markdown
 - 2015-04-27-lies-damn-lies-and-javascript.markdown
 - 2015-05-28-interface-experience-maps.markdown
+- 2015-04-27-lies-damn-lies-and-javascript.markdown
+- 2015-05-28-interface-experience-maps.markdown
 microsoft:
 - 2015-04-30-collected-reactions-to-build.markdown
 - 2015-04-30-collected-reactions-to-build.markdown
@@ -2576,7 +2757,9 @@ microsoft:
 - 2015-04-30-collected-reactions-to-build.markdown
 - 2015-04-30-collected-reactions-to-build.markdown
 - 2015-04-30-collected-reactions-to-build.markdown
+- 2015-04-30-collected-reactions-to-build.markdown
 apps:
+- 2015-04-30-collected-reactions-to-build.markdown
 - 2015-04-30-collected-reactions-to-build.markdown
 - 2015-04-30-collected-reactions-to-build.markdown
 - 2015-04-30-collected-reactions-to-build.markdown
@@ -2620,7 +2803,10 @@ industry:
 - 2015-10-28-excellent-speakers-for-your-next-tech-event.markdown
 - 2015-05-05-lessons-learned-from-atari.markdown
 - 2015-10-28-excellent-speakers-for-your-next-tech-event.markdown
+- 2015-05-05-lessons-learned-from-atari.markdown
+- 2015-10-28-excellent-speakers-for-your-next-tech-event.markdown
 html forms:
+- 2015-05-05-slides-from-my-talk-at-number-msedgesummit.markdown
 - 2015-05-05-slides-from-my-talk-at-number-msedgesummit.markdown
 - 2015-05-05-slides-from-my-talk-at-number-msedgesummit.markdown
 - 2015-05-05-slides-from-my-talk-at-number-msedgesummit.markdown
@@ -2650,7 +2836,9 @@ urls:
 - 2015-05-18-url-inception.markdown
 - 2015-05-18-url-inception.markdown
 - 2015-05-18-url-inception.markdown
+- 2015-05-18-url-inception.markdown
 planning:
+- 2015-05-28-interface-experience-maps.markdown
 - 2015-05-28-interface-experience-maps.markdown
 - 2015-05-28-interface-experience-maps.markdown
 - 2015-05-28-interface-experience-maps.markdown
@@ -2694,7 +2882,10 @@ testing:
 - 2015-06-05-bringing-sanity-and-order-to-device-testing.markdown
 - 2015-05-28-interface-experience-maps.markdown
 - 2015-06-05-bringing-sanity-and-order-to-device-testing.markdown
+- 2015-05-28-interface-experience-maps.markdown
+- 2015-06-05-bringing-sanity-and-order-to-device-testing.markdown
 pattern libraries:
+- 2015-08-04-unum-releases-their-pattern-libraries.markdown
 - 2015-08-04-unum-releases-their-pattern-libraries.markdown
 - 2015-08-04-unum-releases-their-pattern-libraries.markdown
 - 2015-08-04-unum-releases-their-pattern-libraries.markdown
@@ -2724,7 +2915,9 @@ craft:
 - 2015-08-07-ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web.markdown
 - 2015-08-07-ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web.markdown
 - 2015-08-07-ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web.markdown
+- 2015-08-07-ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web.markdown
 the web:
+- 2015-08-07-ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web.markdown
 - 2015-08-07-ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web.markdown
 - 2015-08-07-ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web.markdown
 - 2015-08-07-ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web.markdown
@@ -2754,7 +2947,9 @@ web design 101:
 - 2015-08-17-web-design-101-100-percent-tappable.markdown
 - 2015-08-17-web-design-101-100-percent-tappable.markdown
 - 2015-08-17-web-design-101-100-percent-tappable.markdown
+- 2015-08-17-web-design-101-100-percent-tappable.markdown
 buttons:
+- 2015-08-17-web-design-101-100-percent-tappable.markdown
 - 2015-08-17-web-design-101-100-percent-tappable.markdown
 - 2015-08-17-web-design-101-100-percent-tappable.markdown
 - 2015-08-17-web-design-101-100-percent-tappable.markdown
@@ -2784,7 +2979,9 @@ networks:
 - 2015-09-01-more-proof-we-dont-control-our-web-pages.markdown
 - 2015-09-01-more-proof-we-dont-control-our-web-pages.markdown
 - 2015-09-01-more-proof-we-dont-control-our-web-pages.markdown
+- 2015-09-01-more-proof-we-dont-control-our-web-pages.markdown
 advertising:
+- 2015-09-01-more-proof-we-dont-control-our-web-pages.markdown
 - 2015-09-01-more-proof-we-dont-control-our-web-pages.markdown
 - 2015-09-01-more-proof-we-dont-control-our-web-pages.markdown
 - 2015-09-01-more-proof-we-dont-control-our-web-pages.markdown
@@ -2814,7 +3011,9 @@ security:
 - 2015-09-03-moved-to-https.markdown
 - 2015-09-03-moved-to-https.markdown
 - 2015-09-03-moved-to-https.markdown
+- 2015-09-03-moved-to-https.markdown
 pranks:
+- 2015-10-19-strapless.markdown
 - 2015-10-19-strapless.markdown
 - 2015-10-19-strapless.markdown
 - 2015-10-19-strapless.markdown
@@ -2844,7 +3043,9 @@ jekyll:
 - 2015-10-26-crossposting-to-medium-from-jekyll.markdown
 - 2015-10-26-crossposting-to-medium-from-jekyll.markdown
 - 2015-10-26-crossposting-to-medium-from-jekyll.markdown
+- 2015-10-26-crossposting-to-medium-from-jekyll.markdown
 octopress:
+- 2015-10-26-crossposting-to-medium-from-jekyll.markdown
 - 2015-10-26-crossposting-to-medium-from-jekyll.markdown
 - 2015-10-26-crossposting-to-medium-from-jekyll.markdown
 - 2015-10-26-crossposting-to-medium-from-jekyll.markdown
@@ -2874,7 +3075,9 @@ equality:
 - 2015-10-28-excellent-speakers-for-your-next-tech-event.markdown
 - 2015-10-28-excellent-speakers-for-your-next-tech-event.markdown
 - 2015-10-28-excellent-speakers-for-your-next-tech-event.markdown
+- 2015-10-28-excellent-speakers-for-your-next-tech-event.markdown
 web forms:
+- 2015-11-11-labeled-with-love.markdown
 - 2015-11-11-labeled-with-love.markdown
 - 2015-11-11-labeled-with-love.markdown
 - 2015-11-11-labeled-with-love.markdown
