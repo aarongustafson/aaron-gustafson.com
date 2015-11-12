@@ -4,6 +4,20 @@
 
 @include breakup-breakpoint( "global" ) {
 
+    a.footnote {
+        
+        display: inline-block;
+        padding: .5em 1em;
+        margin: -.5em -1em;
+
+        @supports (background-image:linear-gradient(black,white)) {
+            html.wf-active & {
+                background: transparent;
+                text-shadow: none;
+            }
+        }
+    }
+
     .footnotes {
         
         ol {

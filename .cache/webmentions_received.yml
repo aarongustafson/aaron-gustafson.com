@@ -9312,3 +9312,31 @@ https://www.aaron-gustafson.com/notebook/links/less-content-marketing-more-quali
       <li id="webmention-664170951311912961" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/benriga"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/2151132114/2012-Apr-BenRiga-002-457x457_normal.jpg" alt="" title="Ben Riga"><b class="p-name">Ben Riga</b></a></div><div class="webmention__content p-content"><p>Less content marketing, more quality content
       <a href="https://t.co/5Gslmsf7n3">https://t.co/5Gslmsf7n3</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-10T15:01:09-05:00">10 November 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/benriga/status/664170951311912961">Permalink</a></div></article></li>
+https://www.aaron-gustafson.com/notebook/labeled-with-love/:
+  '2015-11-12':
+    664680629867556865: |-
+      <li id="webmention-664680629867556865" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/simevidas"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/477975801342595073/1GEJDN4C_normal.jpeg" alt="" title="Šime Vidas"><b class="p-name">Šime Vidas</b></a></div><div class="webmention__content p-content"><p>@AaronGustafson Heads up: The embedded video on <a href="https://t.co/kijqf1mHh3">https://t.co/kijqf1mHh3</a> is blocked by mixed content policy (<a href="http:">http:</a> → <a href="https:">https:)</a>)</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-12T00:46:25-05:00">12 November 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/simevidas/status/664680629867556865">Permalink</a></div></article></li>
+    '664680629867556865': '<li id="webmention-664680629867556865" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://webplatformdaily.org/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/86a3eb9574582ae0f9f60ed4baaf278dfd92e854622472a7c5dde16239266299.jpeg"
+      alt="" title="Šime Vidas"><b class="p-name">Šime Vidas</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/simevidas/status/664680629867556865">@AaronGustafson
+      Heads up: The embedded video on aaron-gustafson.com/notebook/label… is blocked
+      by mixed content policy (http: → https:)</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-11-12T00:46:25-05:00">12
+      November 2015</time></div></article></li>'
+    '664785036462456832': |-
+      <li id="webmention-664785036462456832" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://www.aaron-gustafson.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/5aa5e91fcf360e85ab22ce89dcdfeec0e59876bafece84849618d408fce9f2e9.jpeg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/simevidas" rel="nofollow">@simevidas</a> Thanks for the heads-up! I thought I’d fixed that plugin to be all https back when I made the switch. Weird. I’ll fix shortly.
+      &lt;a…</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-12T07:41:18-05:00">12 November 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/664785036462456832">Permalink</a></div></article></li>
+https://www.aaron-gustafson.com/notebook/consider-how-your-forms-read/:
+  '2015-11-11':
+    143647: <li id="webmention-143647" class="webmentions__item"><article class="h-cite
+      webmention webmention--title-only"><div class="webmention__author p-author h-card"><a
+      class="u-url" href="https://www.aaron-gustafson.com/about"><b class="p-name">Aaron
+      Gustafson</b></a></div> <div class="webmention__title p-name"><a href="https://www.aaron-gustafson.com/notebook/labeled-with-love/">Labeled
+      With Love, From the Notebook of Aaron Gustafson</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-11-11T21:43:12-05:00">11
+      November 2015</time></div></article></li>
