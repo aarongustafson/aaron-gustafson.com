@@ -22,7 +22,7 @@ single: true
 
 						{% if page.series %}
 							<dt>Series</dt>
-							<dd>{{ page.series.name }}</dd>
+							<dd><a  href="/notebook/tags/{{ page.series.tag }}">{{ page.series.name }}</a></dd>
 						{% endif %}
 
 						<dt>Tagged</dt>
