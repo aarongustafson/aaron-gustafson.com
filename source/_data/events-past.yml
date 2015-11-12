@@ -1,3 +1,17 @@
+- title: Øredev
+  url: http://lanyrd.com/2015/oredev/
+  date: 2015-11-03 09:00:00 -0400
+  location: Malmö, Sweden
+
+- title: Future of Web Design
+  url: http://lanyrd.com/2015/future-of-web-design-new-york/
+  date: 2015-11-02 09:00:00 -0400
+  location: New York, NY USA
+  talks:
+    - title: Falling in Love with Forms
+  workshops:
+    - title: Beyond Responsive
+
 - title: 18F Speaker Series
   url: https://www.eventbrite.com/e/18f-design-presents-aaron-gustafson-registration-17919708330
   date: 2015-08-12 09:00:00 -0400

@@ -1,19 +1,5 @@
-- title: Future of Web Design
-  url: http://lanyrd.com/2015/future-of-web-design-new-york/
-  date: 2015-11-02 09:00:00 -0400
-  location: New York, NY USA
-  talks:
-    - title: Falling in Love with Forms
-  workshops:
-    - title: Beyond Responsive
-
-- title: Øredev
-  url: http://lanyrd.com/2015/oredev/
-  date: 2015-11-03 09:00:00 -0400
-  location: Malmö, Sweden
-
-- title: TBA # An Event Apart
-  # url: http://aneventapart.com/event/nashville-2016
+- title: An Event Apart
+  url: http://aneventapart.com/event/nashville-2016
   date: 2016-03-14 09:00:00 -0400
   location: Nashville, TN USA
 

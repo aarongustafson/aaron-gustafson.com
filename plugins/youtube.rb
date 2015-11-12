@@ -124,7 +124,7 @@ class YouTube < Liquid::Tag
 
     @style = "background-image:url(https://i2.ytimg.com/vi/#{@id}/0.jpg);"
     
-    @player = "http://www.youtube.com/embed/#{@id}?"
+    @player = "//www.youtube.com/embed/#{@id}?"
     @player << 'autoplay=1' # start playing
     @player << @snippet # start and end
     @player << '&amp;modestbranding=1' # Turn off YouTube branding
