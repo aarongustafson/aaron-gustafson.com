@@ -99,10 +99,11 @@
     {
         window.watchResize(function(){
             
-            var o_style = body.getAttribute( 'style' );
+            var o_style = body.getAttribute( 'style' ),
+                height;
             
             body.style.overflow = 'hidden';
-            body.offsetHeight = body.offsetHeight;
+            height = body.offsetHeight;
             
             if ( o_style )
             {
@@ -190,29 +191,6 @@
     }
 
 }( this, this.document ));
-(function(window,document){
-    'use strict';
-
-    if ( ! ( 'querySelector' in document ) ||
-         ! ( 'classList' in document.body ) ){
-        return;
-    }
-    
-    var $search_link = document.querySelector( '.main-navigation__link--search' ),
-        $search_form = document.querySelector( '.form--search' );
-    
-    $search_form.classList.add( 'toggleable' );
-
-    $search_link.addEventListener( 'click', openSearch, false );
-    $search_link.addEventListener( 'touchdown', openSearch, false );
-    
-    function openSearch( e ) {
-        e.preventDefault();
-        $search_form.classList.add( 'toggleable--open' );
-        $search_form.querySelector( '[type=search]' ).focus();
-    }
-    
-}(this,this.document));
 (function( window ){
 	'use strict';
 	
@@ -236,6 +214,7 @@
 		window.AG.prefetch( '//use.typekit.net/jje3afr.js' );
 		window.AG.preconnect( '//gist.github.com' );
 		window.AG.preconnect( '//assets-cdn.github.com' );
+		window.AG.preconnect( 'https://images1-focus-opensocial.googleusercontent.com' );
 	});
 
 }(window));
@@ -375,3 +354,45 @@
     }
 
 }( this, this.document ));
+(function( navigator ){
+	// Register the service worker
+	if ( 'serviceWorker' in navigator )
+	{
+		navigator.serviceWorker
+			.register('/serviceworker.min.js')
+				.then(function(registration) {
+					// Registration was successful
+					console.log(
+						'ServiceWorker registration successful with scope: ',
+						registration.scope
+					);
+				})
+				.catch(function(err) {
+				    // registration failed :(
+				    console.log( 'ServiceWorker registration failed: ', err );
+				});
+	}
+}( this.navigator ));
+(function(window,document){
+    'use strict';
+
+    if ( ! ( 'querySelector' in document ) ||
+         ! ( 'classList' in document.body ) ){
+        return;
+    }
+    
+    var $search_link = document.querySelector( '.main-navigation__link--search' ),
+        $search_form = document.querySelector( '.form--search' );
+    
+    $search_form.classList.add( 'toggleable' );
+
+    $search_link.addEventListener( 'click', openSearch, false );
+    $search_link.addEventListener( 'touchdown', openSearch, false );
+    
+    function openSearch( e ) {
+        e.preventDefault();
+        $search_form.classList.add( 'toggleable--open' );
+        $search_form.querySelector( '[type=search]' ).focus();
+    }
+    
+}(this,this.document));

@@ -506,10 +506,6 @@ a[rel="original-article"]::after {
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
-  html.wf-active a.footnote {
-    background: transparent;
-    text-shadow: none;
-  }
 }
 /*------------------------------------*\
     Text-level semantics

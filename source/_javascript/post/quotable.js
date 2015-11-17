@@ -1,10 +1,7 @@
 (function(document){
     'use strict';
 
-    if ( ! ( 'querySelectorAll' in document ) )
-    {
-        return;
-    }
+    if ( ! ( 'querySelectorAll' in document ) ) { return; }
 
     var $quotes = document.querySelectorAll('[data-quotable]'),
         q = $quotes.length,

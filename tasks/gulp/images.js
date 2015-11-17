@@ -1,12 +1,26 @@
-var changed    = require('gulp-changed');
-var gulp       = require('gulp');
-var imagemin   = require('gulp-imagemin');
+var gulp     = require('gulp'),
+	changed  = require('gulp-changed'),
+	imagemin = require('gulp-imagemin'),
+	webp     = require('gulp-webp'),
+	debug    = require('gulp-debug');
 
 gulp.task('images', function() {
-	var dest = './_deploy/i';
+	var deploy_folder = './_deploy/i',
+		public_folder = './public/i';
 
-	return gulp.src('./source/i/**')
-		.pipe(changed(dest)) // Ignore unchanged files
+	gulp.src('./source/i/**/*.{jpg,png,svg,gif}')
+		.pipe(changed(deploy_folder)) // Ignore unchanged files
 		.pipe(imagemin()) // Optimize
-		.pipe(gulp.dest(dest));
+		// Publish
+		.pipe(gulp.dest(deploy_folder))
+		.pipe(gulp.dest(public_folder));
+
+	gulp.src('./source/i/**/*.{jpg,png}')
+		.pipe(changed(deploy_folder)) // Ignore unchanged files
+		.pipe(webp())
+		// Publish
+		.pipe(gulp.dest(deploy_folder))
+		.pipe(gulp.dest(public_folder));
+
+	return true;
 });

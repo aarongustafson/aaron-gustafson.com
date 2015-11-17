@@ -33,8 +33,8 @@
 }( this, this.document ));
 (function( window, document ) {
     'use strict';
-    
-    var dsq = document.createElement('script'),
+
+    var $discuss_script = document.createElement('script'),
     	script_name = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
    	
 	if ( 'AG' in window &&
@@ -44,19 +44,28 @@
         window.AG.preconnect( '//aarongustafson.disqus.com' );
         window.AG.preconnect( '//links.services.disqus.com/' );
         window.AG.preconnect( '//a.disquscdn.com' );
+        window.AG.prefetch( '//use.typekit.net/jje3afr.js' );
         window.AG.prefetch( script_name );
+        if ( script_name.indexOf('count') < 0 )
+        {
+            window.AG.prefetch( '//' + disqus_shortname + '.disqus.com/count.js' );
+        }
     }
 	
-	dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = script_name;
+	$discuss_script.type = 'text/javascript';
+    $discuss_script.async = true;
+    $discuss_script.src = script_name;
     
-    (document.head || document.body).appendChild(dsq);
+    (document.head || document.body).appendChild( $discuss_script );
+
+    $discuss_script = null;
 
 }( this, this.document ));
 // Add a comments message if offline
 (function(){
     'use strict';
+
+    if ( ! ( 'onLine' in window.navigator ) ){ return; }
 
     var offline = !window.navigator.onLine,
         $p,
@@ -66,7 +75,7 @@
     {
         $p = document.createElement('p');
         $p.innerText = 'Your internet connection is currently offline, so I can’t load in the comment thread from Disqus.';
-        $comments = document.getElementById('disqus');
+        $comments = document.getElementById( 'disqus' );
         $comments.appendChild($p);
 
         $p = null;
@@ -77,10 +86,7 @@
 (function(document){
     'use strict';
 
-    if ( ! ( 'querySelectorAll' in document ) )
-    {
-        return;
-    }
+    if ( ! ( 'querySelectorAll' in document ) ) { return; }
 
     var $quotes = document.querySelectorAll('[data-quotable]'),
         q = $quotes.length,

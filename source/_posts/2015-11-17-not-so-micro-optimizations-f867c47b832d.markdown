@@ -11,4 +11,4 @@ ref_source: Medium
 
 There’s some really interesting performance-related lessons to be learned from [Google’s AMP project](https://www.ampproject.org). This chronicles a few.
 
-I’m gonna give the preconnect & prefetch stuff a whirl on this site to see if it helps speed things up at all.
+<del datetime="2015-11-17T13:40:00">I’m gonna give the preconnect & prefetch stuff a whirl on this site to see if it helps speed things up at all.</del> <ins datetime="2015-11-17T13:40:00">I gave the preconnect & prefetch stuff a whirl on this site, and it sped things up substantially.</ins>
