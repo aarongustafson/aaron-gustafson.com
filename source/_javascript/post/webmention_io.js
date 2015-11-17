@@ -14,14 +14,15 @@
  */
     
 ;(function(window,document){
+    'use strict';
     
-    if ( ! 'querySelectorAll' in document ){ return; }
+    if ( ! ( 'querySelectorAll' in document ) ){ return; }
     
-    if ( !( 'AG' in window ) ){ window.AG = {}; }
+    if ( ! ( 'AG' in window ) ){ window.AG = {}; }
     
     if ( ! window.location.origin )
     {
-       window.location.origin = window.location.protocol + "//" + window.location.host;
+       window.location.origin = window.location.protocol + '//' + window.location.host;
     }
 
     var $webmentions_list = document.querySelectorAll( '.webmentions__list' ),
@@ -55,7 +56,7 @@
     if ( $redirects )
     {
         redirects = $redirects.getAttribute('content').split(',');
-        redirects.forEach(function( value, i ){
+        redirects.forEach(function( value ){
             targets.push( 
                 value.indexOf('//') < 0 ? base_url + value : value
             );
@@ -66,9 +67,9 @@
     // map to http too
     if ( window.location.protocol != 'http:' )
     {
-        targets.forEach(function( value, i ){
+        targets.forEach(function( value ){
             complete_urls.push( value );
-            if ( value.indexOf('https://') != -1 )
+            if ( value.indexOf( 'https://' ) != -1 )
             {
                 complete_urls.push( value.replace( 'https://', 'http://' ) );
             }
@@ -80,7 +81,7 @@
     // Do we need to create the list?
     if ( $webmentions_list.length < 1 )
     {
-        var $none = document.querySelectorAll( '.webmentions__not-found' );
+        $none = document.querySelectorAll( '.webmentions__not-found' );
         if ( $none.length )
         {
             $none = $none[0];
@@ -167,13 +168,12 @@
             content = data.content,
             url = data.url || mention.source,
             type = mention.activity.type,
-            activity = ( type == "like" || type == "repost" ),
+            activity = ( type == 'like' || type == 'repost' ),
             sentence = mention.activity.sentence_html,
             author = data.author ? data.author.name : false,
             author_photo = data.author ? data.author.photo : false,
             pubdate = data.published || mention.verified_date,
-            display_date = '',
-            xhr;
+            display_date = '';
         
         $item.id = 'webmention-' + id;
         $item.appendChild( $mention );
@@ -226,7 +226,7 @@
             $meta.appendChild( $link );
         }
 
-        if ( type == "reply" )
+        if ( type == 'reply' )
         {
             title = false;
         }
@@ -321,6 +321,13 @@
         }
     };
     
+    // Preconnect to Webmention.io
+    if ( 'preconnect' in window.AG )
+    {
+        window.AG.preconnect( '//webmention.io' );
+        window.AG.preconnect( 'ws://webmention.io:8080' );
+    }
+
     // Load up any unpublished webmentions on load
     json_webmentions = document.createElement('script');
     json_webmentions.async = true;
@@ -330,13 +337,13 @@
     
     // Listen for new ones
     if ( $webmentions_list.length &&
-        "WebSocket" in window )
+         'WebSocket' in window )
     {
         var ws = new WebSocket('ws://webmention.io:8080');
         
-        ws.onopen = function( event ){
+        ws.onopen = function(){
             // Send the current window URL to the server to register to receive notifications about this URL
-            ws.send( this_page );
+            ws.send( window.location );
         };
         ws.onmessage = function( event ){
             addMention( JSON.parse( event.data ) );

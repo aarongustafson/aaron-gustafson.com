@@ -20,6 +20,12 @@
 			disqus_script = 'count.js';
 		{% endif %}
 		(function () {
+			if ( 'AG' in window && 'preconnect' in window.AG ) {
+    		    window.AG.preconnect( '//disqus.com/' );
+    		    window.AG.preconnect( '//aarongustafson.disqus.com' );
+    		    window.AG.preconnect( '//links.services.disqus.com/' );
+    		    window.AG.preconnect( '//a.disquscdn.com' );
+    		}
 			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 			dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
 			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);

@@ -1,18 +1,20 @@
 // Add a comments message if offline
 (function(){
-	var offline = !window.navigator.onLine,
-		$p,
-		$comments;
+    'use strict';
 
-	if ( offline )
-	{
-		$p = document.createElement('p');
-		$p.innerText = 'Your internet connection is currently offline, so I can’t load in the comment thread from Disqus.';
-		$comments = document.getElementById('disqus');
-		$comments.appendChild($p);
+    var offline = !window.navigator.onLine,
+        $p,
+        $comments;
 
-		$p = null;
-		$comments = null;
-	}
+    if ( offline )
+    {
+        $p = document.createElement('p');
+        $p.innerText = 'Your internet connection is currently offline, so I can’t load in the comment thread from Disqus.';
+        $comments = document.getElementById('disqus');
+        $comments.appendChild($p);
+
+        $p = null;
+        $comments = null;
+    }
 
 }());

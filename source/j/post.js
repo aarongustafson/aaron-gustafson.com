@@ -1,190 +1,210 @@
 (function( window, document ){
-	
-	if ( ! "querySelectorAll" in window )
-	{
-		return;
-	}
+    'use strict';
 
-	var s = document.createElement('script'),
-		$webmentions_link = document.querySelector('.entry__jump--webmentions a'),
-		webmentions_count = document.querySelectorAll( '.webmentions__item' ).length;
+    if ( ! ( 'querySelectorAll' in window ) )
+    {
+        return;
+    }
 
-	// Add the webmentions count
-	$webmentions_link.innerHTML = webmentions_count + ' ' + $webmentions_link.innerHTML;
+    var s = document.createElement('script'),
+        $webmentions_link = document.querySelector( '.entry__jump--webmentions a' ),
+        webmentions_count = document.querySelectorAll( '.webmentions__item' ).length;
 
-	// Add the comment count
-	s.async = true;
-	s.type = 'text/javascript';
-	s.src = '//aarongustafson.disqus.com/count.js';
-	(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    // Add the webmentions count
+    $webmentions_link.innerHTML = webmentions_count + ' ' + $webmentions_link.innerHTML;
+
+    // Preconnect to Disqus if possible
+    if ( 'AG' in window &&
+         'preconnect' in window.AG )
+    {
+        window.AG.preconnect( '//disqus.com/' );
+        window.AG.preconnect( '//aarongustafson.disqus.com' );
+        window.AG.preconnect( '//links.services.disqus.com/' );
+        window.AG.preconnect( '//a.disquscdn.com' );
+    }
+    else
+    {
+        console.log('No preconnect');
+    }
+
+    // Add the comment count
+    s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//aarongustafson.disqus.com/count.js';
+    (document.head || document.body).appendChild(s);
 
 }( this, this.document ));
 // Add a comments message if offline
 (function(){
-	var offline = !window.navigator.onLine,
-		$p,
-		$comments;
+    'use strict';
 
-	if ( offline )
-	{
-		$p = document.createElement('p');
-		$p.innerText = 'Your internet connection is currently offline, so I can’t load in the comment thread from Disqus.';
-		$comments = document.getElementById('disqus');
-		$comments.appendChild($p);
+    var offline = !window.navigator.onLine,
+        $p,
+        $comments;
 
-		$p = null;
-		$comments = null;
-	}
+    if ( offline )
+    {
+        $p = document.createElement('p');
+        $p.innerText = 'Your internet connection is currently offline, so I can’t load in the comment thread from Disqus.';
+        $comments = document.getElementById('disqus');
+        $comments.appendChild($p);
+
+        $p = null;
+        $comments = null;
+    }
 
 }());
 (function(document){
-	
-	if ( ! 'querySelectorAll' in document )
-	{
-		return;
-	}
+    'use strict';
 
-	var $quotes = document.querySelectorAll('[data-quotable]'),
-		q = $quotes.length,
-		$container,
-		re_blocks = /^(blockquote|[uod]l|p|h[1-6])$/,
-		re_containers = /^(body|main|section|article|aside)$/,
-		re_headings = /^h[1-6]$/,
-		$quote,
-		quote,
-		last,
-		$template,
-		$parent,
-		$current_sibling,
-		$previous_heading;
+    if ( ! ( 'querySelectorAll' in document ) )
+    {
+        return;
+    }
 
-	if ( q )
-	{
-		$template = document.createElement('blockquote');
-		$template.setAttribute('class', 'quotable');
-		$template.setAttribute('aria-hidden', 'true');
-		$template.appendChild( document.createElement('p') );
+    var $quotes = document.querySelectorAll('[data-quotable]'),
+        q = $quotes.length,
+        $container,
+        re_blocks = /^(blockquote|[uod]l|p|h[1-6])$/,
+        re_containers = /^(body|main|section|article|aside)$/,
+        re_headings = /^h[1-6]$/,
+        $quote,
+        quote,
+        last,
+        $template,
+        $parent,
+        $current_sibling,
+        $previous_heading;
 
-		while ( q-- )
-		{
-			$container = $quotes[q];
-			$quote = $template.cloneNode( true );
-			quote = $container.innerText.split(' ');
-			last = quote.pop();
-			$quote.querySelector('p').innerText = quote.join(' ') + '\xA0' + last;
+    if ( q )
+    {
+        $template = document.createElement('blockquote');
+        $template.setAttribute('class', 'quotable');
+        $template.setAttribute('aria-hidden', 'true');
+        $template.appendChild( document.createElement('p') );
 
-			// make sure we’re at a block container
-			while ( ! $container.nodeName.toLowerCase().match( re_blocks ) )
-			{
-				if ( !! $container.nodeName.toLowerCase().match( re_containers ) )
-				{
-					break;
-				}
+        while ( q-- )
+        {
+            $container = $quotes[q];
+            $quote = $template.cloneNode( true );
+            quote = $container.innerText.split(' ');
+            last = quote.pop();
+            $quote.querySelector('p').innerText = quote.join(' ') + '\xA0' + last;
 
-				$container = $container.parentNode;
-			}
-			
-			// if there is a previous sibling that is a heading,
-			// drop the quote in after the second block element after it
-			$parent = $container.parentNode;
-			$current_sibling = $container.previousElementSibling;
-			while ( $current_sibling )
-			{
-				if ( $current_sibling.nodeName.toLowerCase().match( re_headings ) )
-				{
-					$previous_heading = $current_sibling;
-					break;
-				}
-				$current_sibling = $current_sibling.previousElementSibling;
-			}
-			if ( $previous_heading )
-			{
-				$current_sibling = $previous_heading.nextElementSibling.nextElementSibling;
-				// no blockquotes next to blockquotes
-				while ( $current_sibling.nodeName.toLowerCase() == 'blockquote' )
-				{
-					$current_sibling = $current_sibling.nextElementSibling.nextElementSibling;
-				}				
-			}
+            // make sure we’re at a block container
+            while ( ! $container.nodeName.toLowerCase().match( re_blocks ) )
+            {
+                if ( !! $container.nodeName.toLowerCase().match( re_containers ) )
+                {
+                    break;
+                }
 
-			// insert
-			if ( $current_sibling )
-			{
-				$parent.insertBefore( $quote, $current_sibling );
-			}
-			else
-			{
-				$parent.insertBefore( $quote, $container );
-			}
-		
-		}
-	}
+                $container = $container.parentNode;
+            }
+            
+            // if there is a previous sibling that is a heading,
+            // drop the quote in after the second block element after it
+            $parent = $container.parentNode;
+            $current_sibling = $container.previousElementSibling;
+            while ( $current_sibling )
+            {
+                if ( $current_sibling.nodeName.toLowerCase().match( re_headings ) )
+                {
+                    $previous_heading = $current_sibling;
+                    break;
+                }
+                $current_sibling = $current_sibling.previousElementSibling;
+            }
+            if ( $previous_heading )
+            {
+                $current_sibling = $previous_heading.nextElementSibling.nextElementSibling;
+                // no blockquotes next to blockquotes
+                while ( $current_sibling.nodeName.toLowerCase() == 'blockquote' )
+                {
+                    $current_sibling = $current_sibling.nextElementSibling.nextElementSibling;
+                }               
+            }
+
+            // insert
+            if ( $current_sibling )
+            {
+                $parent.insertBefore( $quote, $current_sibling );
+            }
+            else
+            {
+                $parent.insertBefore( $quote, $container );
+            }
+        
+        }
+    }
 
 
 }(document));
 /* ! Sharing popup */
 (function( window, document ){
-	
-	// Filter older browsers
-	if ( ! 'querySelectorAll' in document )
-	{
-		return;
-	}
-	
-	// event handler
-	function click(e)
-	{
-		var target = e.target;
+    'use strict';
 
-		// target must be an anchor and the inner width threshold must be met
-		if ( e.target.nodeName.toLowerCase() == 'a' &&
-			 window.innerWidth >= threshold )
-		{
-			// prevent the default link click
-			e.preventDefault();
+    // Filter older browsers
+    if ( ! ( 'querySelectorAll' in document ) )
+    {
+        return;
+    }
+    
+    // event handler
+    function click(e)
+    {
+        var target = e.target;
 
-			// open the link in a popup
-			window.open( target.href, 'share-this', 'height=300,width=500,status=no,toolbar=no' );
+        // target must be an anchor and the inner width threshold must be met
+        if ( e.target.nodeName.toLowerCase() == 'a' &&
+             window.innerWidth >= threshold )
+        {
+            // prevent the default link click
+            e.preventDefault();
 
-			// return
-			return false;
-		}
-	}
+            // open the link in a popup
+            window.open( target.href, 'share-this', 'height=300,width=500,status=no,toolbar=no' );
 
-		// gather the links container
-	var share_links = document.querySelectorAll('.entry__sharing'),
-		// set the threshold width
-		threshold = 640;
+            // return
+            return false;
+        }
+    }
 
-	// watcher
-	if ( share_links.length > 0 )
-	{
-		share_links[0].addEventListener( 'click', click, false );
-	}
+        // gather the links container
+    var share_links = document.querySelectorAll('.entry__sharing'),
+        // set the threshold width
+        threshold = 640;
+
+    // watcher
+    if ( share_links.length > 0 )
+    {
+        share_links[0].addEventListener( 'click', click, false );
+    }
 
 }( this, this.document ));
 // Social media avatars disappear on occasion.
 // If they aren’t available, hide em.
 (function( window ){
-	
-	if ( 'addEventListener' in window )
-	{
-		window.addEventListener( 'load', checkImages, false );
-	}
+    'use strict';
 
-	function checkImages(){
-		var images = document.getElementById("webmentions").getElementsByTagName('img'),
-			i = images.length;
-		while ( i-- )
-		{
-			if ( ! images[i].naturalWidth )
-			{
-				images[i].style.visibility = 'hidden';
-			}
-		}
-		// release the DOM reference
-		images = null;
-	}
+    if ( 'addEventListener' in window )
+    {
+        window.addEventListener( 'load', checkImages, false );
+    }
+
+    function checkImages(){
+        var images = document.getElementById('webmentions').getElementsByTagName('img'),
+            i = images.length;
+        while ( i-- )
+        {
+            if ( ! images[i].naturalWidth )
+            {
+                images[i].style.visibility = 'hidden';
+            }
+        }
+        // release the DOM reference
+        images = null;
+    }
 
 }( this ));
 /**
@@ -203,14 +223,15 @@
  */
     
 ;(function(window,document){
+    'use strict';
     
-    if ( ! 'querySelectorAll' in document ){ return; }
+    if ( ! ( 'querySelectorAll' in document ) ){ return; }
     
-    if ( !( 'AG' in window ) ){ window.AG = {}; }
+    if ( ! ( 'AG' in window ) ){ window.AG = {}; }
     
     if ( ! window.location.origin )
     {
-       window.location.origin = window.location.protocol + "//" + window.location.host;
+       window.location.origin = window.location.protocol + '//' + window.location.host;
     }
 
     var $webmentions_list = document.querySelectorAll( '.webmentions__list' ),
@@ -244,7 +265,7 @@
     if ( $redirects )
     {
         redirects = $redirects.getAttribute('content').split(',');
-        redirects.forEach(function( value, i ){
+        redirects.forEach(function( value ){
             targets.push( 
                 value.indexOf('//') < 0 ? base_url + value : value
             );
@@ -255,9 +276,9 @@
     // map to http too
     if ( window.location.protocol != 'http:' )
     {
-        targets.forEach(function( value, i ){
+        targets.forEach(function( value ){
             complete_urls.push( value );
-            if ( value.indexOf('https://') != -1 )
+            if ( value.indexOf( 'https://' ) != -1 )
             {
                 complete_urls.push( value.replace( 'https://', 'http://' ) );
             }
@@ -269,7 +290,7 @@
     // Do we need to create the list?
     if ( $webmentions_list.length < 1 )
     {
-        var $none = document.querySelectorAll( '.webmentions__not-found' );
+        $none = document.querySelectorAll( '.webmentions__not-found' );
         if ( $none.length )
         {
             $none = $none[0];
@@ -356,13 +377,12 @@
             content = data.content,
             url = data.url || mention.source,
             type = mention.activity.type,
-            activity = ( type == "like" || type == "repost" ),
+            activity = ( type == 'like' || type == 'repost' ),
             sentence = mention.activity.sentence_html,
             author = data.author ? data.author.name : false,
             author_photo = data.author ? data.author.photo : false,
             pubdate = data.published || mention.verified_date,
-            display_date = '',
-            xhr;
+            display_date = '';
         
         $item.id = 'webmention-' + id;
         $item.appendChild( $mention );
@@ -415,7 +435,7 @@
             $meta.appendChild( $link );
         }
 
-        if ( type == "reply" )
+        if ( type == 'reply' )
         {
             title = false;
         }
@@ -510,6 +530,13 @@
         }
     };
     
+    // Preconnect to Webmention.io
+    if ( 'preconnect' in window.AG )
+    {
+        window.AG.preconnect( '//webmention.io' );
+        window.AG.preconnect( 'ws://webmention.io:8080' );
+    }
+
     // Load up any unpublished webmentions on load
     json_webmentions = document.createElement('script');
     json_webmentions.async = true;
@@ -519,13 +546,13 @@
     
     // Listen for new ones
     if ( $webmentions_list.length &&
-        "WebSocket" in window )
+         'WebSocket' in window )
     {
         var ws = new WebSocket('ws://webmention.io:8080');
         
-        ws.onopen = function( event ){
+        ws.onopen = function(){
             // Send the current window URL to the server to register to receive notifications about this URL
-            ws.send( this_page );
+            ws.send( window.location );
         };
         ws.onmessage = function( event ){
             addMention( JSON.parse( event.data ) );
