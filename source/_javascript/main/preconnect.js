@@ -11,7 +11,8 @@
     // Preconnect (from the AMP project)
     // https://github.com/ampproject/amphtml/
     window.AG.preconnect = function( url ){
-        console.log('preconnecting to '+url);
+        //console.log( 'preconnecting', url );
+
         // validate the URL
         var domain = getDomainFromURL( url );
         if ( ! domain ) { return; }
@@ -49,7 +50,8 @@
     };
 
     window.AG.prefetch = function( url ) {
-        console.log('prefetching '+url);
+        //console.log( 'prefetching', url );
+        
         // validate the URL
         url = parseURL( url );
         if ( ! url ) { return; }

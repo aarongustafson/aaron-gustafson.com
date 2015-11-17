@@ -4792,6 +4792,13 @@ http://www.aaron-gustafson.com/notebook/who-should-pay/:
     '633491275740803072': |-
       <li id="webmention-633491275740803072" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/byronweb_meetup"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/619133940394143745/z-jC9Syj_normal.png" alt="" title="Byron Web"><b class="p-name">Byron Web</b></a></div><div class="webmention__content p-content"><p>Who Should Pay? <a href="http://t.co/LpaJbRHfX1">http://t.co/LpaJbRHfX1</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-18T00:11:04-04:00">18 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/byronweb_meetup/status/633491275740803072">Permalink</a></div></article></li>
+  '2015-11-14':
+    145734: <li id="webmention-145734" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://www.stillbreathing.co.uk/2015/07/21/wednesday-is-link-day-2">Wednesday
+      is Link Day Still Breathing - online home of Chris Taylor - web developer, musician,
+      geek</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-14T19:56:57-05:00">14 November 2015</time></div></article></li>
 http://aaron-gustafson.com/notebook/consider-how-your-forms-read/:
   '2015-02-23':
     '569921701347241985': <li id="webmention-569921701347241985" class="webmentions__item"><article
@@ -6084,6 +6091,13 @@ http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/
       <div class="webmention__title p-name"><a href="https://plus.google.com/+AaronGustafson/posts/FW8Y46rtuf6">Derek
       Pennycuff likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-08-25T18:28:14-04:00">25 August 2015</time></div></article></li>
+  '2015-11-14':
+    145729: <li id="webmention-145729" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://www.stillbreathing.co.uk/2015/05/06/wednesday-is-link-day">Wednesday
+      is Link Day Still Breathing - online home of Chris Taylor - web developer, musician,
+      geek</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-14T19:52:52-05:00">14 November 2015</time></div></article></li>
 http://www.aaron-gustafson.com/notebook/the-network-effect/:
   '2015-04-24':
     '591560269698043904': |-
@@ -8066,6 +8080,13 @@ https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-page
       @somelaniesaid: Conclusion: everyone is awful aaron-gustafson.com/notebook/more-…</a></div><div
       class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-26T03:26:04-04:00">26
       September 2015</time></div></article></li>'
+  '2015-11-14':
+    145735: <li id="webmention-145735" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://www.stillbreathing.co.uk/2015/09/15/wednesday-is-link-day-3">Wednesday
+      is Link Day! Still Breathing - online home of Chris Taylor - web developer,
+      musician, geek</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-14T19:58:25-05:00">14 November 2015</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/links/9370/:
   '2015-09-01':
     '638919061766864896': |-
@@ -8796,6 +8817,65 @@ https://www.aaron-gustafson.com/notebook/who-should-pay/:
       Amanda Kievet on Attending Full Stack Fest</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2015-10-21T07:02:33-04:00">21
       October 2015</time></div></article></li>
+  '2015-11-17':
+    '666604735684870144': <li id="webmention-666604735684870144" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/gericci"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/b51f1701299bcfef14a7a22cdbb7d47d8b5778e772292f6a16e74b29995b018a.jpeg"
+      alt="" title="ge ricci"><b class="p-name">ge ricci</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/AaronGustafson/status/666604735684870144">ge
+      ricci likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-17T08:28:40-05:00">17 November 2015</time></div></article></li>
+    '666615367729590272': <li id="webmention-666615367729590272" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/jlbruno"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/4b05fb06bcddb815cfadf8411266761621a099e4756654943143cbe7a8c83462.jpeg"
+      alt="" title="Jeff L"><b class="p-name">Jeff L</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/jlbruno/status/666615367729590272">Jeff
+      L shared this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-17T08:54:23-05:00">17 November 2015</time></div></article></li>
+    '666621712054788097': <li id="webmention-666621712054788097" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.spellacy.net/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/790cd6ca67d80fb8b80761650686eebf0c7843aa37720b885db6cdb0f872b82d.jpeg"
+      alt="" title="Michael Spellacy"><b class="p-name">Michael Spellacy</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/Spellacy/status/666621712054788097">Michael
+      Spellacy shared this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-17T09:19:36-05:00">17 November 2015</time></div></article></li>
+    '666624466538110976': <li id="webmention-666624466538110976" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://www.uie.com/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/f2a36a140a7a1a9fcffcfcb849ce914e4ba37be916a243bb8ee4c8c7761da1c2.jpeg"
+      alt="" title="UIE"><b class="p-name">UIE</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/UIE/status/666624466538110976">Who Should
+      Pay? ow.ly/UKHT8</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-17T09:30:32-05:00">17 November 2015</time></div></article></li>
+    '666627357969653760': <li id="webmention-666627357969653760" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://ashleyjoost.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/5137a7a987d686d603a1a007f3a423705ae707844e44ea5e0c470cef33134fab.jpeg"
+      alt="" title="Ashley Joost"><b class="p-name">Ashley Joost</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/ashleyjoost/status/666627357969653760">Ashley
+      Joost shared this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-17T09:42:02-05:00">17 November 2015</time></div></article></li>
+    '666628647067889665': '<li id="webmention-666628647067889665" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://shawncampbell.co/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/ee7b703df425bd60688eea678cfdf066469d528b46508ad71cdbfc965c59ba72.jpeg"
+      alt="" title="Shawn Campbell"><b class="p-name">Shawn Campbell</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/shawncampbell/status/666628647067889665">"users
+      should never foot the bill for our convenience" aaron-gustafson.com/notebook/who-s…
+      #webdev #ux</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-17T09:47:09-05:00">17 November 2015</time></div></article></li>'
+    '666631699544023040': '<li id="webmention-666631699544023040" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/i0ewx76"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/303772f3517008a217483cff9bc0087a0ee8cc6fa3ffd05fb72c81260c547806.jpeg"
+      alt="" title="Christopher Wheat"><b class="p-name">Christopher Wheat</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/i0ewx76/status/666631699544023040">RT
+      shawncampbell "users should never foot the bill for our convenience" aaron-gustafson.com/notebook/who-s…
+      #webdev #ux</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-17T09:59:17-05:00">17 November 2015</time></div></article></li>'
 https://aaron-gustafson.com/notebook/strapless/:
   '2015-10-25':
     '658358178195906560': <li id="webmention-658358178195906560" class="webmentions__item"><article
@@ -9295,6 +9375,21 @@ https://www.aaron-gustafson.com/notebook/excellent-speakers-for-your-next-tech-e
       class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/659779849888862208">Jose
       Coronado likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-11-02T18:23:09-05:00">2 November 2015</time></div></article></li>
+  '2015-11-16':
+    666343602549710849: |-
+      <li id="webmention-666343602549710849" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/kylealden"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/649230553875652608/mu7ddO83_normal.jpg" alt="" title="Kyle Pflug"><b class="p-name">Kyle Pflug</b></a></div><div class="webmention__content p-content"><p>Great iOS/Mac list. @AaronGustafson has a similar list of amazing speakers in tech here: <a href="https://t.co/HARNAYFesw">https://t.co/HARNAYFesw</a>
+      <a href="https://t.co/NJvFBnHaUC">https://t.co/NJvFBnHaUC</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-16T14:54:29-05:00">16 November 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/kylealden/status/666343602549710849">Permalink</a></div></article></li>
+    '666343602549710849': '<li id="webmention-666343602549710849" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://blog.microsoftedge.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/da34ee964fb28b05fa93922ac2362a1409b14218843ad41b30ba8ada34857c38.jpeg"
+      alt="" title="Kyle Pflug"><b class="p-name">Kyle Pflug</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/kylealden/status/666343602549710849">Great
+      iOS/Mac list. @AaronGustafson has a similar list of amazing speakers in tech
+      here: aaron-gustafson.com/notebook/excel… twitter.com/brentsimmons/s…</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-16T14:54:29-05:00">16
+      November 2015</time></div></article></li>'
 https://aaron-gustafson.com/notebook/excellent-speakers-for-your-next-tech-event/:
   '2015-11-06':
     '662627421376618496': <li id="webmention-662627421376618496" class="webmentions__item"><article
@@ -9349,6 +9444,15 @@ https://www.aaron-gustafson.com/notebook/labeled-with-love/:
     664845190130237440: |-
       <li id="webmention-664845190130237440" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/662665276664729600/MGpepYFM_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Labeled with Love <a href="https://t.co/6W7ifR0ibS">https://t.co/6W7ifR0ibS</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-12T11:40:20-05:00">12 November 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/664845190130237440">Permalink</a></div></article></li>
+    664968508187533312: "<li id=\"webmention-664968508187533312\" class=\"webmentions__item\"><article
+      class=\"h-cite webmention webmention--content-only\"><div class=\"webmention__author
+      p-author h-card\"><a class=\"u-url\" href=\"https://twitter.com/_hmig\"><img
+      class=\"webmention__author__photo u-photo\" src=\"https://pbs.twimg.com/profile_images/541745700112171009/SDOxWh8n_normal.jpeg\"
+      alt=\"\" title=\"Mocha Heather\"><b class=\"p-name\">Mocha Heather</b></a></div><div
+      class=\"webmention__content p-content\"><p>This is how you do forms: <a href=\"https://t.co/aiNqhoVjxx\">https://t.co/aiNqhoVjxx</a>
+      by @AaronGustafson. \U0001F63B</p>\n</div><div class=\"webmention__meta\"><time
+      class=\"webmention__pubdate dt-published\" datetime=\"2015-11-12T19:50:21-05:00\">12
+      November 2015</time> | <a class=\"webmention__source u-url\" href=\"https://twitter.com/_hmig/status/664968508187533312\">Permalink</a></div></article></li>"
 https://www.aaron-gustafson.com/notebook/consider-how-your-forms-read/:
   '2015-11-11':
     143647: <li id="webmention-143647" class="webmentions__item"><article class="h-cite
@@ -9363,3 +9467,37 @@ https://www.aaron-gustafson.com/notebook/links/50-female-tech-influencers-to-fol
     664875234693095424: |-
       <li id="webmention-664875234693095424" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/reybango"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/3742774565/09ba858a7751fc0faef2fb2ab1cce05c_normal.jpeg" alt="" title="Rey Bango"><b class="p-name">Rey Bango</b></a></div><div class="webmention__content p-content"><p>50 Female Tech Influencers You Need to Follow on Twitter <a href="https://t.co/ZGrwsBVD1o">https://t.co/ZGrwsBVD1o</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-12T13:39:43-05:00">12 November 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/reybango/status/664875234693095424">Permalink</a></div></article></li>
+https://www.aaron-gustafson.com/notebook/who-should-pay-2-the-hosting/:
+  '2015-11-17':
+    '666604735684870144': <li id="webmention-666604735684870144" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/gericci"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/b51f1701299bcfef14a7a22cdbb7d47d8b5778e772292f6a16e74b29995b018a.jpeg"
+      alt="" title="ge ricci"><b class="p-name">ge ricci</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/AaronGustafson/status/666604735684870144">ge
+      ricci likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-17T08:28:39-05:00">17 November 2015</time></div></article></li>
+    '666615367729590272': <li id="webmention-666615367729590272" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/jlbruno"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/4b05fb06bcddb815cfadf8411266761621a099e4756654943143cbe7a8c83462.jpeg"
+      alt="" title="Jeff L"><b class="p-name">Jeff L</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/jlbruno/status/666615367729590272">Jeff
+      L shared this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-17T08:54:23-05:00">17 November 2015</time></div></article></li>
+    '666621712054788097': <li id="webmention-666621712054788097" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.spellacy.net/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/790cd6ca67d80fb8b80761650686eebf0c7843aa37720b885db6cdb0f872b82d.jpeg"
+      alt="" title="Michael Spellacy"><b class="p-name">Michael Spellacy</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/Spellacy/status/666621712054788097">Michael
+      Spellacy shared this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-17T09:19:36-05:00">17 November 2015</time></div></article></li>
+    '666627357969653760': <li id="webmention-666627357969653760" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://ashleyjoost.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/5137a7a987d686d603a1a007f3a423705ae707844e44ea5e0c470cef33134fab.jpeg"
+      alt="" title="Ashley Joost"><b class="p-name">Ashley Joost</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/ashleyjoost/status/666627357969653760">Ashley
+      Joost shared this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-17T09:42:02-05:00">17 November 2015</time></div></article></li>

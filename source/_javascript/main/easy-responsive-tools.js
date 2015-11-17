@@ -99,11 +99,10 @@
     {
         window.watchResize(function(){
             
-            var o_style = body.getAttribute( 'style' ),
-                foo;
+            var o_style = body.getAttribute( 'style' );
             
             body.style.overflow = 'hidden';
-            foo = body.offsetHeight;
+            body.offsetHeight = body.offsetHeight;
             
             if ( o_style )
             {

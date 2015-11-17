@@ -99,11 +99,10 @@
     {
         window.watchResize(function(){
             
-            var o_style = body.getAttribute( 'style' ),
-                foo;
+            var o_style = body.getAttribute( 'style' );
             
             body.style.overflow = 'hidden';
-            foo = body.offsetHeight;
+            body.offsetHeight = body.offsetHeight;
             
             if ( o_style )
             {
@@ -214,6 +213,32 @@
     }
     
 }(this,this.document));
+(function( window ){
+	'use strict';
+	
+	if ( ! ( 'Promise' in window ) ) { return; }
+
+	var preconnectAvailable = new Promise(function(resolve, reject) {
+  		var timer = setInterval(function(){
+  			if ( 'AG' in window &&
+  			 'preconnect' in window.AG )
+	  		{
+	  			clearInterval( timer );
+	    		resolve( 'preconnect available' );
+	  		}
+  		},50);
+	});
+
+	preconnectAvailable.then(function(){
+		window.AG.preconnect( '//www.google-analytics.com' );
+		window.AG.prefetch( '//www.google-analytics.com/analytics.js' );
+		window.AG.preconnect( '//use.typekit.net' );
+		window.AG.prefetch( '//use.typekit.net/jje3afr.js' );
+		window.AG.preconnect( '//gist.github.com' );
+		window.AG.preconnect( '//assets-cdn.github.com' );
+	});
+
+}(window));
 (function( window, document ){
     'use strict';
 
@@ -227,7 +252,8 @@
     // Preconnect (from the AMP project)
     // https://github.com/ampproject/amphtml/
     window.AG.preconnect = function( url ){
-        console.log('preconnecting to '+url);
+        //console.log( 'preconnecting', url );
+
         // validate the URL
         var domain = getDomainFromURL( url );
         if ( ! domain ) { return; }
@@ -265,7 +291,8 @@
     };
 
     window.AG.prefetch = function( url ) {
-        console.log('prefetching '+url);
+        //console.log( 'prefetching', url );
+        
         // validate the URL
         url = parseURL( url );
         if ( ! url ) { return; }

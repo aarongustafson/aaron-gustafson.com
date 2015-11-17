@@ -1,6 +1,8 @@
 ---
 layout: default
 single: true
+javascripts:
+  body: ['post.min']
 ---
 
 {% capture this_url %}{{ site.url }}{{ page.url }}{% endcapture %}
@@ -109,5 +111,4 @@ single: true
 	{% endunless %}
 	{% endcomment %}
 
-	<script src="/j/post.min.js" async></script>
 </div>

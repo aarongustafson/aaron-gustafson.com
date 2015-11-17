@@ -1,10 +1,7 @@
 (function( window, document ){
     'use strict';
 
-    if ( ! ( 'querySelectorAll' in window ) )
-    {
-        return;
-    }
+    if ( ! ( 'querySelectorAll' in document ) ) { return; }
 
     var s = document.createElement('script'),
         $webmentions_link = document.querySelector( '.entry__jump--webmentions a' ),
