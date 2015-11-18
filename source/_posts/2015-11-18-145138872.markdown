@@ -1,0 +1,11 @@
+---
+layout: link
+title: "What is the Business Case for Accessibility?"
+date: 2015-11-18 14:08:12 -0500
+comments: false
+ref_url: https://vimeo.com/145138872
+in_reply_to: https://vimeo.com/145138872
+ref_source: Alice Bartlett (on Vimeo)
+---
+
+If you’ve ever struggled to convince someone why they should be making their site or web product accessible, [Alice Bartlett](http://alicebartlett.co.uk/) has your back.
