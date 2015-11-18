@@ -1,6 +1,6 @@
 self.addEventListener( 'activate', function( event ){
 
-    console.log('WORKER: activate event in progress.');
+    // console.log('WORKER: activate event in progress.');
 
     event.waitUntil(
         caches
@@ -15,8 +15,8 @@ self.addEventListener( 'activate', function( event ){
                          })
                 );
             })
-            .then(function(){
-                console.log('WORKER: activate completed.');
-            })
+            //.then(function(){
+            //    console.log('WORKER: activate completed.');
+            //})
     );
 });

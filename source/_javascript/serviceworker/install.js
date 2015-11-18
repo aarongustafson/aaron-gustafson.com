@@ -1,6 +1,6 @@
 self.addEventListener( 'install', function( event ){
 
-    console.log('WORKER: install event in progress.');
+    // console.log( 'WORKER: install event in progress.' );
 
     var offline_assets = [
         'favicon.png',
@@ -17,8 +17,8 @@ self.addEventListener( 'install', function( event ){
             .then(function( cache ){
                 return cache.addAll( offline_assets );
             })
-            .then(function(){
-                console.log('WORKER: install completed');
-            })
+            // .then(function(){
+            //     console.log('WORKER: install completed');
+            // })
     );
 });

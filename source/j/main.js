@@ -360,17 +360,18 @@
 	{
 		navigator.serviceWorker
 			.register('/serviceworker.min.js')
-				.then(function(registration) {
-					// Registration was successful
-					console.log(
-						'ServiceWorker registration successful with scope: ',
-						registration.scope
-					);
-				})
-				.catch(function(err) {
-				    // registration failed :(
-				    console.log( 'ServiceWorker registration failed: ', err );
-				});
+				//.then(function(registration) {
+				//	// Registration was successful
+				//	console.log(
+				//		'ServiceWorker registration successful with scope: ',
+				//		registration.scope
+				//	);
+				//})
+				//.catch(function(err) {
+				//    // registration failed :(
+				//    console.log( 'ServiceWorker registration failed: ', err );
+				//})
+				;
 	}
 }( this.navigator ));
 (function(window,document){
