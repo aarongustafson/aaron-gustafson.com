@@ -42,7 +42,7 @@ To keep my Service Worker code modularized (like my other JavaScript code), I op
 
 As most of the walkthroughs recommended that you version your Service Worker if you’re doing any caching, I set mine up to be auto-versioned by inserting a timestamp (lines 23-27, above) into my Service Worker header file (line 3, below):
 
-{% gist 7f05709cca9293e4efea gulp-scripts.js embed %}
+{% gist 7f05709cca9293e4efea _header.js embed %}
 
 Service Workers are still pretty new (and [modestly supported](http://caniuse.com/#feat=serviceworkers)), but it’s definitely interesting to see what’s possible using them. [Like Jeremy](https://adactio.com/journal/9844), I want to do a bit more exploration into caching and how it may actually *increase* the monetary cost of accessing a website if not used properly. Like any powerful tool, we need to wield it wisely.
 
