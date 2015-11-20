@@ -18,4 +18,12 @@ I’m always looking for ways to improve these aspects of this site. And since i
 
 After reading these pieces, I decided to see how much I could increase the performance of this site, especially on posts with a lot of images and embedded code samples, like [my recent post on form labels](https://www.aaron-gustafson.com/notebook/labeled-with-love/).
 
-To kick things off, I followed Malte’s advice and used Resource Hints to *prime the pump* for any third-party servers hosting assets I use frequently. I used the code Malte references in the AMP Project as my starting point.
+To kick things off, I followed Malte’s advice and used Resource Hints to *prime the pump* for any third-party servers hosting assets I use frequently. I used the code Malte references in the AMP Project as my starting point and [added two new methods (`preconnect` and `prefetch`) to my global `AG` object](https://github.com/aarongustafson/aarongustafson.github.io/blob/source/source/_javascript/main/resource-hints.js). With that library code in place, I can call those methods as necessary from within my other JavaScript files. Here’s a simplified extract from [my Disqus integration script](https://github.com/aarongustafson/aarongustafson.github.io/blob/source/source/_javascript/post/disqus.js):
+
+{% gist 7f05709cca9293e4efea resource-hints-sample.js embed %}
+
+While a minor addition, the speed improvement in [supporting browsers](http://caniuse.com/#search=resource%20hints) was noticeable.[^1] 
+
+With that in the bag, I set about making my first Service Worker. I started off gently, using Dean’s piece as a guide. I added a WebP conversion bit to [my image processing Gulp task](https://github.com/aarongustafson/aarongustafson.github.io/blob/source/tasks/gulp/images.js) to get the files in place and then I created the Service Worker. By default, [Dean’s code](https://gist.github.com/deanhume/c04478df744ce833925c#file-client-hints-service-worker-js) appears to convert *all* JPG and PNG requests to WebP responses, so I set it up to limit the requests to only those files being requested directly from my server (since it’s the only one I control):
+
+[^1]: Sadly I forgot to run some speed tests prior to rolling out this change and I didn’t feel like rolling back the site, so I don’t have solid numbers for you. That said, it seemed to shave nearly 2 seconds off of the load time on heavy pages like the post I mentioned.

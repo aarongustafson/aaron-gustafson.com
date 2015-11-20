@@ -1,6 +1,6 @@
 'use strict';
 
-var version = 'v1448030835145:',
+var version = 'v1448052547263:',
 	default_avatar = 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&f=y',
 	missing_image = 'https://i.imgur.com/oWLuFAa.gif';
 self.addEventListener( 'activate', function( event ){
@@ -158,15 +158,16 @@ self.addEventListener('fetch', function(event) {
 
     var request = event.request,
         url = request.url,
-        re_local_image = /^(?:https?:)?\/\/www\.aaron-gustafson\.com\/.+\.(:?jpg|png)$/;
+        url_object = new URL( url ),
+        re_jpg_or_png = /\.(?:jpg|png)$/,
+        supports_webp = false, // pessimism
+        webp_url;
 
     // Check if the image is a local jpg or png
-    if ( re_local_image.test( url ) )
-    {
-        // console.log('WORKER: caught a request for a local image');
+    if ( re_jpg_or_png.test( request.url ) &&
+         url_object.origin == location.origin ) {
 
-        var supports_webp = false, // pessimism
-            webp_url;
+        // console.log('WORKER: caught a request for a local PNG or JPG');
 
         // Inspect the accept header for WebP support
         if ( request.headers.has('accept') )

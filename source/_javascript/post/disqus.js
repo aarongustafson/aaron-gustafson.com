@@ -8,10 +8,9 @@
 		 'preconnect' in window.AG )
 	{
         window.AG.preconnect( '//disqus.com/' );
-        window.AG.preconnect( '//aarongustafson.disqus.com' );
+        window.AG.preconnect( '//' + disqus_shortname + '.disqus.com' );
         window.AG.preconnect( '//links.services.disqus.com/' );
         window.AG.preconnect( '//a.disquscdn.com' );
-        window.AG.prefetch( '//use.typekit.net/jje3afr.js' );
         window.AG.prefetch( script_name );
         if ( script_name.indexOf('count') < 0 )
         {
