@@ -56,7 +56,7 @@ In order to ensure we don’t accidentally deliver advanced features to less cap
 
 Some basic CSS—think typography, color, etc.—will be usable by just about anyone, so we can put all that stuff in one CSS file (e.g., `basic.css`) and include it with a standard `link`. Then we can tuck all of our layout rules and other advanced CSS into a separate CSS file (e.g., `advanced.css`) that we link to with an associated media query.
 
-{% gist 166b285a4fe3d854b97b css-linking.html %}
+{% gist 166b285a4fe3d854b97b css-linking.html embed %}
 
 Any [browsers that don’t understand media queries will ignore the second CSS file entirely](http://www.slideshare.net/bryanrieger/rethinking-the-mobile-web-by-yiibu/106) and receive only the linear, mobile view. Easy peasy, and IE8 gets the mobile layout (a baseline level of support that is not likely to cause you any testing headaches).
 
@@ -64,11 +64,11 @@ You can even take things a step further and use [the `@supports` block](https://
 
 Of course, CSS support issues are nothing compared to JavaScript, so sometimes it’s best not to deliver certain bits of JavaScript-based functionality to browsers that can’t handle it. This is where [feature (and object) detection](http://www.quirksmode.org/js/support.html) becomes incredibly useful:
 
-{% gist 166b285a4fe3d854b97b feature-test.js %}
+{% gist 166b285a4fe3d854b97b feature-test.js embed %}
 
 You can also use [inverted conditional comments](http://en.wikipedia.org/wiki/Conditional_comment#Downlevel-revealed_conditional_comment) to prohibit older versions of IE from getting JavaScript in the first place (which means you don’t even need to worry about debugging JavaScript there). Here’s an example that hides `main.js` from IE8 and below, but makes it available to IE9 on up and to every other non-IE browser.
 
-{% gist 166b285a4fe3d854b97b no-script-in-lte-ie8.html %}
+{% gist 166b285a4fe3d854b97b no-script-in-lte-ie8.html embed %}
 
 By being conservative in what we deliver to browsers we [ensure the greatest level of support, but can still optimize for more advanced ones](http://bradfrost.com/blog/mobile/support-vs-optimization/). This makes testing so much easier because we know older browsers will be okay with the basics and we aren’t trying to use JavaScript features unless we know they’re available.
 

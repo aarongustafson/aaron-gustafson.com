@@ -18,9 +18,7 @@ Today has provided an amazing tour of the world of responsive design. We’ve se
 
 We’ve explored the future of modular code and browsers’ capacity for working without network connectivity. And we’ve even taken a trip into the possible future of where the web might go.
 
-<figure id="figure-2015-06-22-01">
-{% adaptive_image /i/posts/2015-06-22/01.jpg %}
-</figure>
+<figure id="figure-2015-06-22-01">{% adaptive_image /i/posts/2015-06-22/01.jpg %}</figure>
 
 We’ve come a long way since [Ethan’s article](https://huffduffer.com/adactio/243780), fluid grids, flexible media, and media queries. Those three tenets sowed a seed that has grown and flourished as we have come to better understand the implications of device proliferation. We’ve seen that the web is capable of going anywhere and doing pretty much anything.
 
@@ -64,9 +62,7 @@ On a touchscreen, I may need the experience to be slightly different, but I stil
 
 Embracing the reality that experience does’t need to be just one thing will help us reach more people with fewer headaches. Experience can—and should—be crafted as a continuum. This is progressive enhancement: We start with a baseline experience that works for everyone—content, real links, first generation form controls, and forms that actually submit to the server. Then we build up the experience from there.
 
-<figure id="figure-2015-06-22-02">
-<img src="/i/posts/2015-06-22/02.gif" alt="">
-</figure>
+<figure id="figure-2015-06-22-02"><img src="/i/posts/2015-06-22/02.gif" alt=""></figure>
 
 Your browser supports HTML5 form controls? Great! You’ll get a better virtual keyboard when you go to type your email address. You can use CSS? Awesome, let me make that reading experience better for you. Oh, you can handle media queries! Let me adjust the layout so those line lengths are a little more comfortable. Wow, your browser supports Ajax?! Here let me load in some teasers for related content you might find interesting.
 
@@ -92,9 +88,7 @@ It’s up to us to educate those around us who have—either by accident or inte
 
 When I am trying to help folks understand and embrace diversity, I often reach for one of my favorite thought exercises from [John Rawls](https://en.wikipedia.org/wiki/John_Rawls). 
 
-<figure id="figure-2015-06-22-03">
-{% adaptive_image /i/posts/2015-06-22/03.jpg %}
-</figure>
+<figure id="figure-2015-06-22-03">{% adaptive_image /i/posts/2015-06-22/03.jpg %}</figure>
 
 Rawls was a philosopher who used to run a social experiment with students, church groups, and the like.
 
@@ -106,9 +100,7 @@ It makes sense: what rational, self-interested human being would treat the elder
 
 The things we do to accommodate special needs now pay dividends in the future. Look at ramps.
 
-<figure id="figure-2015-06-22-04">
-{% adaptive_image /i/posts/2015-06-22/04.jpg %}
-</figure>
+<figure id="figure-2015-06-22-04">{% adaptive_image /i/posts/2015-06-22/04.jpg %}</figure>
 
 They’re a classic example of an accessibility feature for people in wheelchairs that also benefit people who aren’t in them: People toting luggage, delivery services hauling heavy things on dollies, parents pushing children (or their dressed up dogs) in strollers, a commuter walking her bike, and that guy who just prefers walking up a gentle incline to expending the effort required to mount a step.
 
@@ -139,13 +131,13 @@ To accommodate interactions like this (which we currently have no way of detecti
 
 In [Media Queries Level 4](http://dev.w3.org/csswg/mediaqueries-4/), we became able to apply style rules to particular interaction contexts. For instance, when we have very accurate control over our cursor (as in the case of a stylus or mouse) or less accurate control (as in the case of a touch screen or physical gesture):
 
-{% gist 372271534c78cf11d4a6 mq4-pointer.css %}
+{% gist 372271534c78cf11d4a6 mq4-pointer.css embed %}
 
 Of course, we want to offer a sensible default in terms of size and spacing as a fallback for older browsers and devices. 
 
 We also have the ability to determine whether the device is capable of hovering over an element and can adjust the interface accordingly.
 
-{% gist 372271534c78cf11d4a6 mq4-hover.css %}
+{% gist 372271534c78cf11d4a6 mq4-hover.css embed %}
 
 We still need to figure out how well all of this ends up working on multimodal devices like the Surface tablet, however. Will the design change as the user switches between input modes? Should it? To that end, the spec also provides `any-pointer` and `any-hover` to allow you to query for whether *any* supported interaction method meets your requirements, but here’s a word of warning from the spec:
 
@@ -157,11 +149,11 @@ These media query options are starting to roll out in Chrome, Mobile Safari, and
 
 We can unobtrusively detect support for Pointer Events…
 
-{% gist 372271534c78cf11d4a6 pointer-test.js %}
+{% gist 372271534c78cf11d4a6 pointer-test.js embed %}
 
 …and then handle them all in the same way or create branches based on the `pointerType`:
 
-{% gist 372271534c78cf11d4a6 pointer-event.js %}
+{% gist 372271534c78cf11d4a6 pointer-event.js embed %}
 
 Of course, in addition to considering the level of accuracy our users have while interacting with our screens, we also need to consider the potentially increased distance at which our users are reading our content.
 
@@ -169,7 +161,7 @@ To that end, I’ve been experimenting with the viewport width (`vw`) unit.
 
 For a long time, I’ve used ems for the layout’s `max-width` (so the line length is proportional to the font size). I also use relative font sizes. With that as the foundation, I can use a media query that matches the maximum width and set the base font size at the vw equivalent at the max width.
 
-{% gist 372271534c78cf11d4a6 vw-scaling.css %}
+{% gist 372271534c78cf11d4a6 vw-scaling.css embed %}
 
 Then the whole design will simply zoom the layout when viewed beyond that size.
 
@@ -217,21 +209,19 @@ Interestingly, Microsoft has given us a peek at what it might be like to design 
 
 In Windows 10, installable web apps can include a [Voice Command Definition (VCD) file](https://msdn.microsoft.com/en-us/library/windows/apps/dn722331.aspx) in the `head` of the page to enable custom commands:
 
-{% gist 372271534c78cf11d4a6 vcd.html %}
+{% gist 372271534c78cf11d4a6 vcd.html embed %}
 
 The referenced VCD file is simply an XML file defining the keyword for the web app and commands that can be issued. 
 
 Using very basic syntax, The VCD identifies optional pieces of a given phrase and variables Cortana should extract:
 
-{% gist 372271534c78cf11d4a6 vcd.xml %}
+{% gist 372271534c78cf11d4a6 vcd.xml embed %}
 
 This particular app passes the captured information over to JavaScript for processing. That’s right, [Cortana has a JavaScript API too](https://msdn.microsoft.com/en-us/library/dn722330.aspx#handle_activation_and_execute_voice_commands). Pretty neat.
 
 But traditional computers and smart mobile devices aren’t the only place we’re starting to see voice based experiences. We also have disembodied voices like [Amazon’s Echo](https://en.wikipedia.org/wiki/Amazon_Echo) and [the Ubi](http://www.theubi.com/) which are completely headless.
 
-<figure id="figure-2015-06-22-11">
-{% adaptive_image /i/posts/2015-06-22/05.jpg %}
-</figure>
+<figure id="figure-2015-06-22-11">{% adaptive_image /i/posts/2015-06-22/05.jpg %}</figure>
 
 Right now, they both seem squarely focused on helping your house become "smarter"—streaming music, adjusting the thermostat, etc.—but it isn’t hard to imagine these devices becoming coupled with the ability to browse and interact with the web.
 
@@ -251,9 +241,7 @@ We can help bridge the digital divide and the literacy gap. We can create opport
 
 This is an incredibly exciting time, not just for the responsive design community, not just the web, but for the world! The future is coming and I can’t wait to see how awesome you make it!
 
-<figure id="figure-2015-06-22-12">
-{% adaptive_image /i/posts/2015-06-22/06.jpg %}
-</figure>
+<figure id="figure-2015-06-22-12">{% adaptive_image /i/posts/2015-06-22/06.jpg %}</figure>
 
 <hr>
 

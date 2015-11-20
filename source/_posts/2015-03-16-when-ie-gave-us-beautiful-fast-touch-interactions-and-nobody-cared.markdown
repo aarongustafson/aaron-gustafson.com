@@ -11,4 +11,4 @@ ref_source: The Sea of Ideas
 
 I never even saw this proposal, but how cool would it be to set snap points for scrolling content in  CSS?!
 
-{% gist bdc0efc31cbc7c1308c7 scroll-snap-points.css %}
+{% gist bdc0efc31cbc7c1308c7 scroll-snap-points.css embed %}

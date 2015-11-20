@@ -1,3 +1,39 @@
-<!--[if gte IE 9]><!-->
-  <script src="not-for-ie8.js"></script>
-<!--<![endif]-->
+<link rel="stylesheet" href="https://assets-cdn.github.com/assets/gist/embed-e75a8866f2a8f51e8bbbf8ca746676f1e7cacb08f4b1d9b52ea62524b333cc6d.css">
+<div id="gist20247370" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-js-filter-html" class="file">
+    
+
+  <div class="blob-wrapper data type-html">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="file-js-filter-html-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-js-filter-html-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-c">&lt;!--[if gte IE 9]&gt;&lt;!--&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-js-filter-html-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-js-filter-html-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-s1">  &lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>not-for-ie8.js<span class="pl-pds">&quot;</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-js-filter-html-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-js-filter-html-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-c">&lt;!--&lt;![endif]--&gt;</span></td>
+      </tr>
+</table>
+
+  </div>
+
+  </div>
+  
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/aarongustafson/b9bca995a67ba298225d/raw/928c4c69fc1030fa3f4e8265c7e34bfb375ee44e/js-filter.html" style="float:right">view raw</a>
+        <a href="https://gist.github.com/aarongustafson/b9bca995a67ba298225d#file-js-filter-html">js-filter.html</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div>
+

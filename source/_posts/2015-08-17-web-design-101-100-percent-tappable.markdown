@@ -17,7 +17,7 @@ This screenshot shows a very large call to action, which is good. Unfortunately,
 
 The markup itself isn’t horrible; here’s a distillation of that row in the design:
 
-{% gist 711cbd1054e8ee868a93 example.html %}
+{% gist 711cbd1054e8ee868a93 example.html embed %}
 
 The problem is that the 15px padding and overall button styles were put on the table cell rather than the link itself. Setting the link to have a `display` of "block" or "inline-block" would allow it to be given vertical padding (which is probably the issue the designer was struggling with here). Then the remainder of the styles could be migrated without adjusting the design at all.
 

@@ -24,11 +24,11 @@ In preparation for building my plugin, I looked over a few other Jekyll plugins 
 
 The tag to display webentions for a page is pretty simple:
 
-{% gist cb15ead6bf3a72b8f92a webmentions.html %}
+{% gist cb15ead6bf3a72b8f92a webmentions.html embed %}
 
 This tag outputs a container `div` and an ordered list of every webmention found when the site is generated (or previewed). To show the current webmention count, you use a slightly different tag which just outputs a number:
 
-{% gist cb15ead6bf3a72b8f92a webmention_count.html %}
+{% gist cb15ead6bf3a72b8f92a webmention_count.html embed %}
 
 These two tags allows me to bypass the JavaScript used in webmention.io’s integration examples and have Ruby consult the API directly. The plugin then creates the necessary markup using the JSON data the API provided.
 

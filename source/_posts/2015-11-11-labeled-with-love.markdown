@@ -25,13 +25,13 @@ When you look at a basic form field, you have two bits of information: the field
 
 You could achieve this with a minimum of markup:
 
-{% gist 3585c019108025b2f568 unlabeled-field.html %}
+{% gist 3585c019108025b2f568 unlabeled-field.html embed %}
 
 The thing is, the text "Your Name" is not associated in any way with the `input`. Sure, a sighted person would likely be able to tell that that text is associated with the field, but no computer can tell that. And if a computer can’t tell the text and `input` are associated, your form control is inaccessible to anyone who uses assistive technology like a screen reader. It’s also going to pose a problem in the near-future of "headless UIs" like those hinted at by Cortana, Siri, and the Echo.
 
 Thankfully, establishing a relationship between the two is quite easy using the `label` element. The most common (and preferable) way to do this is to wrap the labeling text in a `label` element. Then you create an explicit association with the field using the `for` attribute, which is an `id` reference. In other words, the value of the `for` attribute needs to match the value of the `id` attribute on the field you want to associate with that `label`.
 
-{% gist 3585c019108025b2f568 labeled-field.html %}
+{% gist 3585c019108025b2f568 labeled-field.html embed %}
 
 With that markup in place, the programmatic connection between the elements is made and the results speak for themselves: When you focus the field, the contents of the `label` are read out.
 
@@ -41,23 +41,23 @@ With that markup in place, the programmatic connection between the elements is m
 
 Since I specifically referred to this approach as *explicit* association, you probably assumed that there’s another kind of association. And you were right: *implicit* association. Implicit association is created by wrapping a form control and its associated label text in a `label` element. I like to use this approach with radio and checkbox controls:
 
-{% gist 3585c019108025b2f568 implicitly-labeled-checkbox.html %}
+{% gist 3585c019108025b2f568 implicitly-labeled-checkbox.html embed %}
 
 It’s worth noting that there’s nothing wrong with explicit association in this context either.
 
-{% gist 3585c019108025b2f568 explicitly-labeled-checkbox.html %}
+{% gist 3585c019108025b2f568 explicitly-labeled-checkbox.html embed %}
 
 You can even combine the two approaches.
 
-{% gist 3585c019108025b2f568 combo-labeled-checkbox.html %}
+{% gist 3585c019108025b2f568 combo-labeled-checkbox.html embed %}
 
 The reason I like to use implicit association with checkbox and radio controls has to do with ensuring the greatest breadth of support when it comes to styling inputs. For instance, if I set `width: 80%` on all `input` elements using a simple [type selector](https://developer.mozilla.org/docs/Web/CSS/Type_selectors), that width would be applied to *all* `input` elements, including radio and checkbox controls. In order to prevent radio and checkbox controls from getting rendered at that width, I would need to assign an override value of `width: auto` to them them specifically. I can do that using [attribute selectors](https://developer.mozilla.org/docs/Web/CSS/Attribute_selectors):
 
-{% gist 3585c019108025b2f568 modern-only.css %}
+{% gist 3585c019108025b2f568 modern-only.css embed %}
 
 While completely valid, that approach leaves out any browsers that don’t support attribute selection (e.g. IE 6). That may not seem like a deal-breaker in your book, but on the off chance some poor soul happens to be stuck using an out-of-date browser (as many are on mobile), I like to show them a little love. And, thankfully, using the implicit markup pattern for checkboxes and radio controls allows for this quite easily: I just use a [descendent selector](https://developer.mozilla.org/docs/Web/CSS/Descendant_selectors) instead.
 
-{% gist 3585c019108025b2f568 universal.css %}
+{% gist 3585c019108025b2f568 universal.css embed %}
 
 This approach results in a greater amount of support and, incidentally, less CSS.
 
@@ -73,7 +73,7 @@ This isn’t a game-changer when it comes to standard text fields, but it’s an
 
 To create incredibly generous tap targets on mobile devices, we can take things a little further. Add padding to the top and bottom of the `label` to make it bigger and then use negative margins to counter that enlargement and keep the layout as it was before the padding was applied.
 
-{% gist 3585c019108025b2f568 larger-labels.css %}
+{% gist 3585c019108025b2f568 larger-labels.css embed %}
 
 <figure id="fig-2015-11-11-04" class="media-container"><img src="/i/posts/2015-11-11/04.gif" alt=""><figcaption>An animation showing very generous tap targets on a narrow screen.</figcaption></figure>
 
@@ -89,9 +89,9 @@ Having this natively supported in the browser was a huge boon. For years we’d 
 
 Of course, since `placeholder` implements an existing pattern, it came with baggage. People commonly achieved this effect by (ab)using the `value` attribute as a fake label. As such, its introduction didn’t do much to increase the accessibility of forms. *Form controls need a label*. If you want to make your form more compact, you can do that using proper markup and a little clever CSS.
 
-{% gist 3585c019108025b2f568 fancy-example.html %}
+{% gist 3585c019108025b2f568 fancy-example.html embed %}
 
-{% gist 3585c019108025b2f568 fancy-example.css %}
+{% gist 3585c019108025b2f568 fancy-example.css embed %}
 
 <figure id="fig-2015-11-11-06" class="media-container">{% codepen BoGgYM aarongustafson result 112 preview %}</figure>
 

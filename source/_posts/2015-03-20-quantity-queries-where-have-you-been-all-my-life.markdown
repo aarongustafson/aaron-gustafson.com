@@ -17,7 +17,7 @@ Heydon to the rescue!
 
 Here’s Heydon’s first quantity query example:
 
-{% gist eddda1f32ed102cedd86 equal.css %}
+{% gist eddda1f32ed102cedd86 equal.css embed %}
 
 With these selectors, the rule set would only apply if the total count of list items was exactly 6. Here’s what he is selecting:
 
@@ -29,7 +29,7 @@ Brilliant! [Heydon breaks it down way more eloquently](http://alistapart.com/art
 But Heydon doesn’t stop there. He also gives us ways to test for  more than or equal to and fewer than or equal to a certain number. We’ll start with the   
 "more than" variant (because everyone always wants more):
 
-{% gist eddda1f32ed102cedd86 more-than-or-equal.css %}
+{% gist eddda1f32ed102cedd86 more-than-or-equal.css embed %}
 
 This one is slightly more complex, using the `nth-*` formula to manage the calculation. In English, this selects:
 
@@ -46,7 +46,7 @@ Now count from the end and then select that and everything that follows and you 
 
 The final example he gives is for fewer than or equal to a particular number:
 
-{% gist eddda1f32ed102cedd86 fewer-than-or-equal.css %}
+{% gist eddda1f32ed102cedd86 fewer-than-or-equal.css embed %}
 
 This one is largely the same as the "more than" example, but the multiplier is reversed (with the minus sign) which means the count runs backward: 0+6 (6), -1+5 (5), -2+6 (4), and so on.
 
@@ -56,7 +56,6 @@ I am just overjoyed with how brilliant this is. I can think of so many places to
 
 [Daniel Guillan](https://twitter.com/danielguillan) has [ported this functionality (and more) to SASS](https://github.com/danielguillan/quantity-queries) using a handful of really straightforward mixins. Here’s a demo:
 
-<p data-height="331" data-theme-id="0" data-slug-hash="GgBOxm" data-default-tab="result" data-user="danielguillan" class='codepen'>See the Pen <a href='http://codepen.io/danielguillan/pen/GgBOxm/'>Quantity Queries Sass mixins demo</a> by Daniel Guillan (<a href='http://codepen.io/danielguillan'>@danielguillan</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+<figure id="fig-2015-03-20-01" class="media-container">{% codepen GgBOxm danielguillan result 331 preview %}</figure>
 
 Happy counting!

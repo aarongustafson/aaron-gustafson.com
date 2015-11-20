@@ -1,2 +1,35 @@
-<link rel="stylesheet" href="simple.css">
-<link rel="stylesheet" href="complex.css" media="only screen">
+<link rel="stylesheet" href="https://assets-cdn.github.com/assets/gist/embed-e75a8866f2a8f51e8bbbf8ca746676f1e7cacb08f4b1d9b52ea62524b333cc6d.css">
+<div id="gist20247370" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-css-filter-html" class="file">
+    
+
+  <div class="blob-wrapper data type-html">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="file-css-filter-html-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-css-filter-html-LC1" class="blob-code blob-code-inner js-file-line">&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>stylesheet<span class="pl-pds">&quot;</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>simple.css<span class="pl-pds">&quot;</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-css-filter-html-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-css-filter-html-LC2" class="blob-code blob-code-inner js-file-line">&lt;<span class="pl-ent">link</span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>stylesheet<span class="pl-pds">&quot;</span></span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>complex.css<span class="pl-pds">&quot;</span></span> <span class="pl-e">media</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>only screen<span class="pl-pds">&quot;</span></span>&gt;</td>
+      </tr>
+</table>
+
+  </div>
+
+  </div>
+  
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/aarongustafson/b9bca995a67ba298225d/raw/928c4c69fc1030fa3f4e8265c7e34bfb375ee44e/css-filter.html" style="float:right">view raw</a>
+        <a href="https://gist.github.com/aarongustafson/b9bca995a67ba298225d#file-css-filter-html">css-filter.html</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div>
+

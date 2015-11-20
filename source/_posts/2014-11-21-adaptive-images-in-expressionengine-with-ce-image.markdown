@@ -20,15 +20,15 @@ I won’t bore you with how to set up CE Image as there is [documentation on tha
 
 The first use case we had was a series of large, focal images. You can find different examples of them on [the homepage](http://www.nichols.edu) and landing pages (like [this one for Admissions](http://www.nichols.edu/admissions/)). The first pass on making these images adaptive involved the `picture` element for which [the spec](https://html.spec.whatwg.org/multipage/embedded-content.html#adaptive-images) is known. The markup we were generating was based on the pattern outlined for [Picturefill](http://scottjehl.github.io/picturefill/), a JavaScript polyfill that implements adaptive images in browsers that don’t do it natively:
 
-{% gist 96dd157a0206d59ac30a picture-result.html %}
+{% gist 96dd157a0206d59ac30a picture-result.html embed %}
 
 To get to that point, however, we needed to use CE Image to generate (and cache) the specific sizes we needed:
 
-{% gist 96dd157a0206d59ac30a picture-element.html %}
+{% gist 96dd157a0206d59ac30a picture-element.html embed %}
 
 Not what’s a lot of code, so let’s just look at one segment of that jumble:
 
-{% gist 96dd157a0206d59ac30a  picture-excerpt.html %}
+{% gist 96dd157a0206d59ac30a  picture-excerpt.html embed %}
 
 This is an example using CE Image’s tag pair option, which lets you control the markup output. In the opening tag, we set several properties:
 
@@ -46,11 +46,11 @@ Multiply that a few times for the different sizes and you have the full `picture
 
 Now that’s all well and good, but shortly after launch, [Eric Portis](http://ericportis.com/) wrote [an amazing post explaining how the `srcset` and `sizes` attributes operate](http://ericportis.com/posts/2014/srcset-sizes/) and it cleared up a lot of my confusion on the matter. He convinced me that the age-old `img` element, with these new attributes, would be far more maintainable. With a fire in my belly, I rewrote the markup:
 
-{% gist 96dd157a0206d59ac30a  simple-resize.html %}
+{% gist 96dd157a0206d59ac30a  simple-resize.html embed %}
 
 The CE Image behavior is exactly the same, but the resulting markup is much clearer:
 
-{% gist 96dd157a0206d59ac30a  srcset-result.html %}
+{% gist 96dd157a0206d59ac30a  srcset-result.html embed %}
 
 The added bonus of this approach is that I am not hard-coding any media queries and the browser gets to make the ultimate decision of which image to request. All I am doing is telling the browser the image options and their respective widths within the `srcset` attribute. As all of the images take up 100% of their containers, I didn’t even need to use the `sizes` attribute. Easy peasy.
 
@@ -62,20 +62,20 @@ Now some of you might be wondering: _Why not just `display:none` below a certain
 
 We wrote [a lazy-loading image script](https://github.com/easy-designs/easy-lazy-images.js) a few years back and have battle tested it on numerous sites to great success. It’s all based on a simple markup pattern:
 
-{% gist 96dd157a0206d59ac30a lazy-loaded-markup.html %}
+{% gist 96dd157a0206d59ac30a lazy-loaded-markup.html embed %}
 
 The `data-img-src` attribute defines the path to the "nice to have" image and then the JavaScript adds the image element into the page when the appropriate conditions are met:
 
-{% gist 96dd157a0206d59ac30a lazy-loaded-result.html %}
+{% gist 96dd157a0206d59ac30a lazy-loaded-result.html embed %}
 
 Pretty simple. It even supports `srcset`:
 
-{% gist 96dd157a0206d59ac30a lazy-loaded-srcset.html %}
+{% gist 96dd157a0206d59ac30a lazy-loaded-srcset.html embed %}
 
 The [full documentation is up on Github](https://github.com/easy-designs/easy-lazy-images.js#usage).
 
 Implementing this in the context of CE Image was a breeze and builds on the `source` pattern I showed earlier:
 
-{% gist 96dd157a0206d59ac30a lazy-loading.html %}
+{% gist 96dd157a0206d59ac30a lazy-loading.html embed %}
 
 We are only just beginning to scratch the surface of what’s possible with adaptive images and I am sure we will come up with newer, better ways to do this stuff. Heck, there may even be an adaptive images add-on in the pipeline for ExpressionEngine. But, in the meantime, if you are trying to implement adaptive images with ExpressionEngine, CE Image is a good way to go.

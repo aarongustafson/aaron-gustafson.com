@@ -21,7 +21,7 @@ When it comes to HTML and CSS, browsers ignore what they don’t understand. It�
 
 A simple way to rid yourself of IE8 related headaches is to embrace the idea that [web pages don’t need to look (or behave) the same in every browser](http://dowebsitesneedtolookexactlythesameineverybrowser.com/) and look for ways to achieve this while still providing access to your content and tools for less-capable browsers and devices. For example:
 
-{% gist b9bca995a67ba298225d css-filter.html %}
+{% gist b9bca995a67ba298225d css-filter.html embed %}
 
 This simple stylesheet setup will deliver only the `simple.css` file to browsers that are incapable of understanding media queries. Browsers that do understand them will get both stylesheets. Media queries support is an easy line in the sand we can draw because [lack of media query support is in fact the first media query](http://www.slideshare.net/bryanrieger/rethinking-the-mobile-web-by-yiibu/79).
 
@@ -29,7 +29,7 @@ Once you’ve done that, it’s as simple as putting all of your advanced styles
 
 On the JavaScript end, you can draw a line in the sand too. Let’s say you don’t want to spend your time debugging JavaScript in IE8. You can just skip it using [Conditional Comments](http://www.quirksmode.org/css/condcom.html):
 
-{% gist b9bca995a67ba298225d js-filter.html %}
+{% gist b9bca995a67ba298225d js-filter.html embed %}
 
 Using an approach like this avoids delivering the contained JavaScript files to IE8 at all, but all other browsers will see them.
 

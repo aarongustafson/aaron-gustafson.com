@@ -17,18 +17,11 @@ Here’s a brief overview of the project:
 **The Challenge**: The "Future" list will grow and shrink as I book things, so I never know how many will be there. The "Past" list will also grow, but I am less interested in getting crazy with that.<br>
 **The Idea**: A grid layout that flexes to visually highlight 1-2 upcoming future events and allows the others to flow in at the default grid size. It should be set up to handle everything from a single future event to a dozen or more.
 
-<figure id="2015-03-26-1" class="media-container">
-	<img src="/i/posts/2015-03-26/the-idea-sm.jpg"
-	 	 srcset="/i/posts/2015-03-26/the-idea-lg.jpg 1024w, /i/posts/2015-03-26/the-idea-md.jpg 600w, /i/posts/2015-03-26/the-idea-sm.jpg 320w"
-		 alt="">
-	<figcaption>
-		<p>My sketch of the idea.</p>
-	</figcaption>
-</figure>
+<figure id="2015-03-26-1" class="media-container">{% adaptive_image /i/posts/2015-03-26/the-idea-lg.jpg %}<figcaption>My sketch of the idea.</figcaption></figure>
 
 The markup pattern was pretty simple. It’s just a list of events:
 
-{% gist 597284affc88b9084cf3 markup.html %} 
+{% gist 597284affc88b9084cf3 markup.html embed %} 
 
 With that in place, I got to work.
 
@@ -36,23 +29,19 @@ With that in place, I got to work.
 
 To set the stage, I started with some basic Flexbox syntax[^1] by handling the container and the basic full-width small screen view:
 
-{% gist 597284affc88b9084cf3 first-pass.css %} 
+{% gist 597284affc88b9084cf3 first-pass.css embed %} 
 
 You may be wondering where all of the experimental style rules are. I use [Autoprefixer](https://github.com/postcss/autoprefixer) to handle the experimental property inclusion/trans-compilation so I can keep my CSS clean and standards-based.
 
 This simple CSS gives you exactly what you’d expect: a vertical list of events, separated by 20px worth of space.
 
-<figure id="2015-03-26-2" class="media-container">
-	<img src="/i/posts/2015-03-26/first-pass.jpg"
-	 	 srcset="/i/posts/2015-03-26/first-pass-lg.jpg 1024w, /i/posts/2015-03-26/first-pass-md.jpg 600w, /i/posts/2015-03-26/first-pass-sm.jpg 320w"
-		 alt="">
-</figure>
+<figure id="2015-03-26-2" class="media-container">{% adaptive_image /i/posts/2015-03-26/first-pass-lg.jpg %}</figure>
 
 ## Two by Two
 
 Next up, I tackled the first breakpoint at 28.75em:
 
-{% gist 597284affc88b9084cf3 second-pass.css %}
+{% gist 597284affc88b9084cf3 second-pass.css embed %}
 
 In this pass, I set up the event blocks to fill 50% of the parent container (well, 50% minus the 1.25rem gutter between them, using [`calc()`](http://www.w3.org/TR/css3-values/#calc)).[^2] In order to make the children wrap to form rows, I set `flex-wrap: wrap` on the list (`.listing--events`). Then, to make the children all equal heights across each row, I set `align-items: stretch`. The gutter space was achieved via left margins on all events save the row starters (`.event:nth-child(odd)`).
 
@@ -60,17 +49,13 @@ It’s worth noting that in the full page I have two sets of event listings: one
 
 Then I used a quantity query to select the first future event when there is more than one in the list (line 38) and set it span 100% of the parent width. To keep the gutters accurate, I also swapped where the margins were applied, adding the margin back to `.event--future:nth-child(odd)` and removing it from `.event--future:nth-child(even)`.
 
-<figure id="2015-03-26-3" class="media-container">
-	<img src="/i/posts/2015-03-26/second-pass-sm.jpg"
-	 	 srcset="/i/posts/2015-03-26/second-pass-lg.jpg 1024w, /i/posts/2015-03-26/second-pass-md.jpg 600w, /i/posts/2015-03-26/second-pass-sm.jpg 320w"
-		 alt="">
-</figure>
+<figure id="2015-03-26-3" class="media-container">{% adaptive_image /i/posts/2015-03-26/second-pass-lg.jpg %}</figure>
 
 ## Three’s a Crowd
 
 Finally, I could tackle the third and most complicated layout. Things seemed to get a little wide around 690px, so I set the breakpoint to 43.125em.
 
-{% gist 597284affc88b9084cf3 third-pass.css %}
+{% gist 597284affc88b9084cf3 third-pass.css embed %}
 
 In this final pass, I used a slightly more complicated calculation to set the width of each child to 1/3 of the parent minus the gutters between them (100% / 3 - 0.875rem). 
 
@@ -84,11 +69,7 @@ With that in place, I went to work on the future events, resetting the margins t
 
 To handle the margins in the quantity query instance, I added all the margins back (line 64) and then removed the left margins from the new row starters (line 77).
 
-<figure id="2015-03-26-4" class="media-container">
-	<img src="/i/posts/2015-03-26/third-pass-sm.jpg"
-	 	 srcset="/i/posts/2015-03-26/third-pass-lg.jpg 1024w, /i/posts/2015-03-26/third-pass-md.jpg 600w, /i/posts/2015-03-26/third-pass-sm.jpg 320w"
-		 alt="">
-</figure>
+<figure id="2015-03-26-4" class="media-container">{% adaptive_image /i/posts/2015-03-26/third-pass-lg.jpg %}</figure>
 
 ## Ta-da!
 

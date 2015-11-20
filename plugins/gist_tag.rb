@@ -12,30 +12,50 @@ require 'uri'
 
 module Jekyll
   class GistTag < Liquid::Tag
+
     def initialize(tag_name, text, token)
       super
       @text           = text
       @cache_disabled = false
       @cache_folder   = File.expand_path "../.gist-cache", File.dirname(__FILE__)
+      @embed_code     = false
+      @encoding       = 'UTF-8'
       FileUtils.mkdir_p @cache_folder
     end
 
     def render(context)
-      if parts = @text.match(/([a-zA-Z\d]*) (.*)/)
-        gist, file = parts[1].strip, parts[2].strip
+      # Get the encoding
+      site = context.registers[:site]
+      if site.config.include? 'encoding'
+        @encoding = site.config['encoding']
+      end
+      # get the info
+      if @text.match(/^[a-zA-Z\d]*\s.*?$/)
+        string = @text.gsub(/\s+/, ' ').strip
+        gist, file, @embed_code = string.split(' ')
       else
         gist, file = @text.strip, ""
       end
       if gist.empty?
         ""
       else
-        script_url = script_url_for gist, file
-        code       = get_cached_gist(gist, file) || get_gist_from_web(gist, file)
-        html_output_for script_url, code
+        script_url = script_url_for(gist, file)
+        if @embed_code
+          code = get_cached_gist(gist, file) || get_gist_from_web(gist, file, script_url)
+          html_embed code
+        else
+          gist_url = get_gist_url_for(gist, file)
+          code = get_cached_gist(gist, file) || get_gist_from_web(gist, file, gist_url)
+          javascript_embed script_url, code
+        end
       end
     end
 
-    def html_output_for(script_url, code)
+    def html_embed(code)
+      "<div>#{code}</div>" 
+    end
+
+    def javascript_embed(script_url, code)
       code = CGI.escapeHTML code
       <<-HTML
 <div><script src="#{script_url}"></script>
@@ -74,9 +94,8 @@ module Jekyll
       File.join @cache_folder, "#{gist}-#{file}-#{md5}.cache"
     end
 
-    def get_gist_from_web(gist, file)
-      gist_url = get_gist_url_for(gist, file)
-      data     = get_web_content(gist_url)
+    def get_gist_from_web(gist, file, gist_url)
+      data = get_web_content(gist_url)
 
       locations = Array.new
       while (data.code.to_i == 301 || data.code.to_i == 302)
@@ -89,8 +108,15 @@ module Jekyll
         raise RuntimeError, "Gist replied with #{data.code} for #{gist_url}"
       end
 
-      cache(gist, file, data.body) unless @cache_disabled
-      data.body
+      # Cleanup embed version
+      code = data.body.force_encoding("UTF-8").encode(@encoding)
+      code = code.gsub( /document\.write\('/, '' ).gsub( /'\)/, '' ) # JS
+      code = code.gsub( /\\"/, '"' ).gsub( /\\\//, '/' ) # escaped stuff
+      code = code.gsub( /\\n/, "\n" ) # returns
+      code = code.encode(@encoding) # encode
+
+      cache(gist, file, code) unless @cache_disabled
+      code
     end
 
     def handle_gist_redirecting(data)

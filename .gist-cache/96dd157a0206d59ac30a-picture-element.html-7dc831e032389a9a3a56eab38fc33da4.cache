@@ -1,38 +1,179 @@
-<picture class="page__image-header__photo">
-    <!--[if IE 9]><video style="display: none;"><![endif]-->
-    {exp:ce_img:pair
-        src="{content_focal_image}"
-        filename_suffix="_full"
-        width="940"
-        allow_scale_larger="yes"
-        crop="yes"
-        interlace="yes"
-        cache_dir="/"
-        }
-        <source srcset="{made}" media="(min-width: 40em)">
-    {/exp:ce_img:pair}
-    {exp:ce_img:pair
-        src="{content_focal_image}"
-        filename_suffix="_medium"
-        width="800"
-        height="600"
-        crop="yes"
-        interlace="yes"
-        cache_dir="/"
-        }
-        <source srcset="{made}" media="(min-width: 20em)">
-    {/exp:ce_img:pair}
-    {exp:ce_img:pair
-        src="{content_focal_image}"
-        filename_suffix="_small"
-        width="480"
-        height="360"
-        crop="yes"
-        interlace="yes"
-        cache_dir="/"
-        }
-        <source srcset="{made}">
-        <!--[if IE 9]></video><![endif]-->
-        <img src="{made}" alt="">
-    {/exp:ce_img:pair}
-</picture>
+<link rel="stylesheet" href="https://assets-cdn.github.com/assets/gist/embed-e75a8866f2a8f51e8bbbf8ca746676f1e7cacb08f4b1d9b52ea62524b333cc6d.css">
+<div id="gist16210770" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-picture-element-html" class="file">
+    
+
+  <div class="blob-wrapper data type-html">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="file-picture-element-html-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-picture-element-html-LC1" class="blob-code blob-code-inner js-file-line">&lt;<span class="pl-ent">picture</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>page__image-header__photo<span class="pl-pds">&quot;</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-picture-element-html-LC2" class="blob-code blob-code-inner js-file-line">    <span class="pl-c">&lt;!--[if IE 9]&gt;&lt;video style=&quot;display: none;&quot;&gt;&lt;![endif]--&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-picture-element-html-LC3" class="blob-code blob-code-inner js-file-line">    {exp:ce_img:pair</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-picture-element-html-LC4" class="blob-code blob-code-inner js-file-line">        src=&quot;{content_focal_image}&quot;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-picture-element-html-LC5" class="blob-code blob-code-inner js-file-line">        filename_suffix=&quot;_full&quot;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-picture-element-html-LC6" class="blob-code blob-code-inner js-file-line">        width=&quot;940&quot;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-picture-element-html-LC7" class="blob-code blob-code-inner js-file-line">        allow_scale_larger=&quot;yes&quot;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-picture-element-html-LC8" class="blob-code blob-code-inner js-file-line">        crop=&quot;yes&quot;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-picture-element-html-LC9" class="blob-code blob-code-inner js-file-line">        interlace=&quot;yes&quot;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-picture-element-html-LC10" class="blob-code blob-code-inner js-file-line">        cache_dir=&quot;/&quot;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-picture-element-html-LC11" class="blob-code blob-code-inner js-file-line">        }</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-picture-element-html-LC12" class="blob-code blob-code-inner js-file-line">        &lt;<span class="pl-ent">source</span> <span class="pl-e">srcset</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>{made}<span class="pl-pds">&quot;</span></span> <span class="pl-e">media</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>(min-width: 40em)<span class="pl-pds">&quot;</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-picture-element-html-LC13" class="blob-code blob-code-inner js-file-line">    {/exp:ce_img:pair}</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-picture-element-html-LC14" class="blob-code blob-code-inner js-file-line">    {exp:ce_img:pair</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-picture-element-html-LC15" class="blob-code blob-code-inner js-file-line">        src=&quot;{content_focal_image}&quot;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-picture-element-html-LC16" class="blob-code blob-code-inner js-file-line">        filename_suffix=&quot;_medium&quot;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-picture-element-html-LC17" class="blob-code blob-code-inner js-file-line">        width=&quot;800&quot;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-picture-element-html-LC18" class="blob-code blob-code-inner js-file-line">        height=&quot;600&quot;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-picture-element-html-LC19" class="blob-code blob-code-inner js-file-line">        crop=&quot;yes&quot;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-picture-element-html-LC20" class="blob-code blob-code-inner js-file-line">        interlace=&quot;yes&quot;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-picture-element-html-LC21" class="blob-code blob-code-inner js-file-line">        cache_dir=&quot;/&quot;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-picture-element-html-LC22" class="blob-code blob-code-inner js-file-line">        }</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-picture-element-html-LC23" class="blob-code blob-code-inner js-file-line">        &lt;<span class="pl-ent">source</span> <span class="pl-e">srcset</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>{made}<span class="pl-pds">&quot;</span></span> <span class="pl-e">media</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>(min-width: 20em)<span class="pl-pds">&quot;</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-picture-element-html-LC24" class="blob-code blob-code-inner js-file-line">    {/exp:ce_img:pair}</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-picture-element-html-LC25" class="blob-code blob-code-inner js-file-line">    {exp:ce_img:pair</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-picture-element-html-LC26" class="blob-code blob-code-inner js-file-line">        src=&quot;{content_focal_image}&quot;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-picture-element-html-LC27" class="blob-code blob-code-inner js-file-line">        filename_suffix=&quot;_small&quot;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="file-picture-element-html-LC28" class="blob-code blob-code-inner js-file-line">        width=&quot;480&quot;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="file-picture-element-html-LC29" class="blob-code blob-code-inner js-file-line">        height=&quot;360&quot;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="file-picture-element-html-LC30" class="blob-code blob-code-inner js-file-line">        crop=&quot;yes&quot;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="file-picture-element-html-LC31" class="blob-code blob-code-inner js-file-line">        interlace=&quot;yes&quot;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="file-picture-element-html-LC32" class="blob-code blob-code-inner js-file-line">        cache_dir=&quot;/&quot;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="file-picture-element-html-LC33" class="blob-code blob-code-inner js-file-line">        }</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="file-picture-element-html-LC34" class="blob-code blob-code-inner js-file-line">        &lt;<span class="pl-ent">source</span> <span class="pl-e">srcset</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>{made}<span class="pl-pds">&quot;</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="file-picture-element-html-LC35" class="blob-code blob-code-inner js-file-line">        <span class="pl-c">&lt;!--[if IE 9]&gt;&lt;/video&gt;&lt;![endif]--&gt;</span></td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="file-picture-element-html-LC36" class="blob-code blob-code-inner js-file-line">        &lt;<span class="pl-ent">img</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>{made}<span class="pl-pds">&quot;</span></span> <span class="pl-e">alt</span>=<span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-pds">&quot;</span></span>&gt;</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="file-picture-element-html-LC37" class="blob-code blob-code-inner js-file-line">    {/exp:ce_img:pair}</td>
+      </tr>
+      <tr>
+        <td id="file-picture-element-html-L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="file-picture-element-html-LC38" class="blob-code blob-code-inner js-file-line">&lt;/<span class="pl-ent">picture</span>&gt;</td>
+      </tr>
+</table>
+
+  </div>
+
+  </div>
+  
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/aarongustafson/96dd157a0206d59ac30a/raw/6fbb03d511c507c41521c008f62491d739a56871/picture-element.html" style="float:right">view raw</a>
+        <a href="https://gist.github.com/aarongustafson/96dd157a0206d59ac30a#file-picture-element-html">picture-element.html</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div>
+

@@ -1,11 +1,72 @@
-.listing--events {
-  display: flex;
-  flex-wrap: wrap;
-}
+<link rel="stylesheet" href="https://assets-cdn.github.com/assets/gist/embed-e75a8866f2a8f51e8bbbf8ca746676f1e7cacb08f4b1d9b52ea62524b333cc6d.css">
+<div id="gist20766084" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-first-pass-css" class="file">
+    
 
-.event {
-  box-sizing: border-box;
-  padding: 1.25rem; /* 20px padding */
-  margin: 0 0 1.25rem 0; /* 20px bottom margin */
-  flex: 0 0 100%;
-}
+  <div class="blob-wrapper data type-css">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="file-first-pass-css-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-first-pass-css-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.listing--events</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-first-pass-css-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-first-pass-css-LC2" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">display</span></span>: flex;</td>
+      </tr>
+      <tr>
+        <td id="file-first-pass-css-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-first-pass-css-LC3" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">flex</span>-<span class="pl-c1">wrap</span></span>: wrap;</td>
+      </tr>
+      <tr>
+        <td id="file-first-pass-css-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-first-pass-css-LC4" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-first-pass-css-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-first-pass-css-LC5" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-first-pass-css-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-first-pass-css-LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.event</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-first-pass-css-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-first-pass-css-LC7" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">box-sizing</span></span>: border-box;</td>
+      </tr>
+      <tr>
+        <td id="file-first-pass-css-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-first-pass-css-LC8" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">padding</span></span>: <span class="pl-c1">1.25<span class="pl-k">rem</span></span>; <span class="pl-c">/* 20px padding */</span></td>
+      </tr>
+      <tr>
+        <td id="file-first-pass-css-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-first-pass-css-LC9" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">margin</span></span>: <span class="pl-c1">0</span> <span class="pl-c1">0</span> <span class="pl-c1">1.25<span class="pl-k">rem</span></span> <span class="pl-c1">0</span>; <span class="pl-c">/* 20px bottom margin */</span></td>
+      </tr>
+      <tr>
+        <td id="file-first-pass-css-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-first-pass-css-LC10" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">flex</span></span>: <span class="pl-c1">0</span> <span class="pl-c1">0</span> <span class="pl-c1">100<span class="pl-k">%</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-first-pass-css-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-first-pass-css-LC11" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+</table>
+
+  </div>
+
+  </div>
+  
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/aarongustafson/597284affc88b9084cf3/raw/5e59e3c9bb9ce7b4db20a3f367fa40575d9467f2/first-pass.css" style="float:right">view raw</a>
+        <a href="https://gist.github.com/aarongustafson/597284affc88b9084cf3#file-first-pass-css">first-pass.css</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div>
+
