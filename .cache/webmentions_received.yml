@@ -9601,6 +9601,35 @@ https://www.aaron-gustafson.com/notebook/labeled-with-love/:
     667715815811235840: |-
       <li id="webmention-667715815811235840" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/OlivierNourry"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/3465733777/3ec6fcad021f6c1350f8882ecab6fe99_normal.jpeg" alt="" title="Olivier Nourry"><b class="p-name">Olivier Nourry</b></a></div><div class="webmention__content p-content"><p>On form fields: “[missing labels are] going to pose a problem in the near-future of headless UIs” <a href="https://t.co/NXKe4Y5Unw">https://t.co/NXKe4Y5Unw</a> #a11y #IoT</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-20T09:47:10-05:00">20 November 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/OlivierNourry/status/667715815811235840">Permalink</a></div></article></li>
+    '667715815811235840': '<li id="webmention-667715815811235840" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://about.me/oliviernourry"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/bf0805a08b92fb5d50ca6bce514164b4538d567305f30b32ca9a8445bb656aef.jpeg"
+      alt="" title="Olivier Nourry"><b class="p-name">Olivier Nourry</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/OlivierNourry/status/667715815811235840">On
+      form fields: "[missing labels are] going to pose a problem in the near-future
+      of headless UIs" ow.ly/USWMj #a11y #IoT</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-11-20T09:47:10-05:00">20
+      November 2015</time></div></article></li>'
+    '667716044207861762': '<li id="webmention-667716044207861762" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://www.diigo.com/user/a11ytips"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/a9af746f9410d7bf40476237b34aac4dcb05a41fff7bc9ddfdb3971680bb909c.png"
+      alt="" title="Accessibility Tips"><b class="p-name">Accessibility Tips</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/A11yTips/status/667716044207861762">Labeled
+      With Love, From the Notebook of @AaronGustafson ow.ly/USX81 #form #label #ux
+      #webdesign</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-20T09:48:05-05:00">20 November 2015</time></div></article></li>'
+    '667716561059389441': '<li id="webmention-667716561059389441" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/twok3design"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/1cfa104e5d8194a7569193c251d278ed61961e4e68b460738c52cbded63dae08.jpeg"
+      alt="" title="twok3design"><b class="p-name">twok3design</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/twok3design/status/667716561059389441">RT:
+      twitter.com/A11yTips/statu… Labeled With Love, From the Notebook of AaronGustafson
+      ow.ly/USX81 #form #label #ux #webdesign</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-11-20T09:50:08-05:00">20
+      November 2015</time></div></article></li>'
 https://www.aaron-gustafson.com/notebook/consider-how-your-forms-read/:
   '2015-11-11':
     143647: <li id="webmention-143647" class="webmentions__item"><article class="h-cite
