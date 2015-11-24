@@ -100,6 +100,7 @@ I applaud <cite>The Next Web</cite> for their recent list of “[100+ tech & bus
 * **Marcy Sutton** — Accessibility Engineer, Adobe — [Twitter](https://twitter.com/marcysutton), [LinkedIn](https://www.linkedin.com/in/marcysutton), [Lanyrd](http://lanyrd.com/profile/marcysutton/)
 * **Léonie Watson** —  Web Platform Working Group Co-Chair, W3C — [Twitter](https://twitter.com/LeonieWatson), [LinkedIn](https://uk.linkedin.com/in/lwatson), [Lanyrd](http://lanyrd.com/profile/leoniewatson/)
 * **Emma Boulton** —  Research Director, Monotype — [Twitter](http://twitter.com/emmaboulton), [LinkedIn](https://uk.linkedin.com/in/emmalouiseboulton), [Lanyrd](http://lanyrd.com/profile/emmaboulton/)
+* **Cyd Harrell** —  UX & Product, Code for America — [Twitter](https://twitter.com/cydharrell), [LinkedIn](https://www.linkedin.com/in/cydharrell), [Lanyrd](http://lanyrd.com/profile/cydharrell/)
 
 I also highly recommend [Molly Holzschlag](https://about.me/mollydotcom). She’s currently on medical leave, but she is a-mazing. When she’s ready to get back in the saddle, she’ll bring a wealth of knowledge to your event from her decades of working in technology.
 
