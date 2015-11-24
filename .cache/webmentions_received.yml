@@ -9900,3 +9900,9 @@ https://www.aaron-gustafson.com/notebook/speeding-things-up-with-service-worker-
     668317393463021568: |-
       <li id="webmention-668317393463021568" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/chris__pearce"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/657337140561379328/-NSQYTFd_normal.jpg" alt="" title="Chris Pearce"><b class="p-name">Chris Pearce</b></a></div><div class="webmention__content p-content"><p>Speeding Things Up with Service Worker, Resource Hints, and More <a href="https://t.co/VQvGx2LZWv">https://t.co/VQvGx2LZWv</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-22T01:37:37-05:00">22 November 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/chris__pearce/status/668317393463021568">Permalink</a></div></article></li>
+  '2015-11-24':
+    151821: <li id="webmention-151821" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://www.blogpresso.com/service-workers/">Service Workers   Actualités</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-24T07:33:36-05:00">24
+      November 2015</time></div></article></li>

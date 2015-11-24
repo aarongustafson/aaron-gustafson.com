@@ -57,7 +57,6 @@ module Jekyll
 
           # If Jekyll 3.0, use hooks
           if (Jekyll.const_defined? :Hooks)
-            puts "Using Jekyll hooks"
             Jekyll::Hooks.register :posts, :post_render do |post|
               if ! post.published?
                 next
@@ -75,31 +74,23 @@ module Jekyll
               crosspost_payload(crossposted, post, content, title, url)
             end
           else
-            puts "Looping the posts"
-            site.posts do |post|
-              puts "trying #{post.url}"
+            markdown_converter = site.getConverterImpl(Jekyll::Converters::Markdown)
+            site.posts.each do |post|
               
               if ! post.published?
-                puts "Post wasn’t published"
                 next
               end
 
               crosspost = post.data.include? 'crosspost_to_medium'
               if ! crosspost or ! post.data['crosspost_to_medium']
-                puts "Post shouldn’t be cross-posted"
                 next
               end
 
-              # custom conversion
-              markdown_converter = site.getConverterImpl(Jekyll::Converters::Markdown)
-              content = mkconverter.convert(post.content)
-              puts content
-              content = Kramdown::Document.new(post.content).to_html
-              puts content
+              content = markdown_converter.convert(post.content)
               url = "#{site.config['url']}#{post.url}"
               title = post.title
 
-              # crosspost_payload(crossposted, post, content, title, url)
+              crosspost_payload(crossposted, post, content, title, url)
             end
           end
         end
@@ -123,7 +114,7 @@ module Jekyll
           'license'       => @settings['license'] || "all-rights-reserved",
           'canonicalUrl'  => url
         }
-
+        
         crosspost_to_medium(payload)
         crossposted << url
 
