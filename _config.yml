@@ -31,6 +31,7 @@ gems:
   - jekyll-time-to-read
   - jekyll-redirect-from
   - octopress-date-format
+  - jekyll-crosspost-to-medium
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
 root: /
