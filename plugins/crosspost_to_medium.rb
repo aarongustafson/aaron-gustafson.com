@@ -77,20 +77,29 @@ module Jekyll
           else
             puts "Looping the posts"
             site.posts do |post|
+              puts "trying #{post.url}"
+              
               if ! post.published?
+                puts "Post wasn’t published"
                 next
               end
 
               crosspost = post.data.include? 'crosspost_to_medium'
               if ! crosspost or ! post.data['crosspost_to_medium']
+                puts "Post shouldn’t be cross-posted"
                 next
               end
 
+              # custom conversion
+              markdown_converter = site.getConverterImpl(Jekyll::Converters::Markdown)
+              content = mkconverter.convert(post.content)
+              puts content
               content = Kramdown::Document.new(post.content).to_html
+              puts content
               url = "#{site.config['url']}#{post.url}"
               title = post.title
 
-              crosspost_payload(crossposted, post, content, title, url)
+              # crosspost_payload(crossposted, post, content, title, url)
             end
           end
         end
