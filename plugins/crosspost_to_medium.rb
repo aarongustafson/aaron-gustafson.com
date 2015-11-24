@@ -27,6 +27,7 @@ module Jekyll
     priority :low
 
     def generate(site)
+      puts "Kicking off cross-posting to Medium"
       @settings = site.config['jekyll-crosspost_to_medium']
 
       globally_enabled = @settings['enabled'] || true
@@ -34,6 +35,7 @@ module Jekyll
       @crossposted_file = File.join(cache_dir, "medium_crossposted.yml")
 
       if globally_enabled
+        puts "Cross-posting enabled"
         user_id = ENV['MEDIUM_USER_ID'] or false
         token = ENV['MEDIUM_INTEGRATION_TOKEN'] or false
 
@@ -51,8 +53,11 @@ module Jekyll
             crossposted = []
           end
 
+          puts crossposted.inspect
+
           # If Jekyll 3.0, use hooks
           if (Jekyll.const_defined? :Hooks)
+            puts "Using Jekyll hooks"
             Jekyll::Hooks.register :posts, :post_render do |post|
               if ! post.published?
                 next
@@ -70,6 +75,7 @@ module Jekyll
               crosspost_payload(crossposted, post, content, title, url)
             end
           else
+            puts "Looping the posts"
             site.posts do |post|
               if ! post.published?
                 next
