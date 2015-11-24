@@ -113,7 +113,11 @@ google_analytics_tracking_id: "UA-176472-5"
 repo_url: "https://github.com/aarongustafson/aarongustafson.github.io/tree/source/source/"
 
 # Crosspost to Medium
-crosspost_to_medium: true
+jekyll-crosspost_to_medium:
+  enabled: true
+  cache: .cache
+  status: public
+  license: cc-40-by-sa
 
 # Adaptive Images Config
 adaptive_image:
