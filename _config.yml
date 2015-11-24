@@ -112,6 +112,10 @@ google_analytics_tracking_id: "UA-176472-5"
 # Github repo path
 repo_url: "https://github.com/aarongustafson/aarongustafson.github.io/tree/source/source/"
 
+# Gists
+gist_tag:
+  cache: .cache/gists
+
 # Crosspost to Medium
 jekyll-crosspost_to_medium:
   enabled: true

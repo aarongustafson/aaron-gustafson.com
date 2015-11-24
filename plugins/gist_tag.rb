@@ -17,19 +17,14 @@ module Jekyll
       super
       @text           = text
       @cache_disabled = false
-      @cache_folder   = File.expand_path "../.gist-cache", File.dirname(__FILE__)
       @embed_code     = false
-      @encoding       = 'UTF-8'
+      @config         = Jekyll.configuration({})
+      @cache_folder   = @config['gist_tag']['cache'] || File.expand_path( "../.gist-cache", File.dirname(__FILE__) )
+      @encoding       = @config['encoding'] || 'UTF-8'
       FileUtils.mkdir_p @cache_folder
     end
 
     def render(context)
-      # Get the encoding
-      site = context.registers[:site]
-      if site.config.include? 'encoding'
-        @encoding = site.config['encoding']
-      end
-      # get the info
       if @text.match(/^[a-zA-Z\d]*\s.*?$/)
         string = @text.gsub(/\s+/, ' ').strip
         gist, file, @embed_code = string.split(' ')

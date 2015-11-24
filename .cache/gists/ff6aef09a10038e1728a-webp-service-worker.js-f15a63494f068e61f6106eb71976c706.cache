@@ -19,7 +19,7 @@
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L3" class="blob-num js-line-number" data-line-number="3"></td>
-        <td id="file-webp-service-worker-js-LC3" class="blob-code blob-code-inner js-file-line">self.addEventListener(<span class="pl-s"><span class="pl-pds">&#39;</span>fetch<span class="pl-pds">&#39;</span></span>, <span class="pl-k">function</span>(<span class="pl-smi">event</span>) {</td>
+        <td id="file-webp-service-worker-js-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-smi">self</span>.<span class="pl-en">addEventListener</span>(<span class="pl-s"><span class="pl-pds">&#39;</span>fetch<span class="pl-pds">&#39;</span></span>, <span class="pl-k">function</span>(<span class="pl-smi">event</span>) {</td>
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L4" class="blob-num js-line-number" data-line-number="4"></td>
@@ -28,11 +28,11 @@
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L5" class="blob-num js-line-number" data-line-number="5"></td>
-        <td id="file-webp-service-worker-js-LC5" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">var</span> request <span class="pl-k">=</span> <span class="pl-c1">event</span>.request,</td>
+        <td id="file-webp-service-worker-js-LC5" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">var</span> request <span class="pl-k">=</span> <span class="pl-smi">event</span>.<span class="pl-smi">request</span>,</td>
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L6" class="blob-num js-line-number" data-line-number="6"></td>
-        <td id="file-webp-service-worker-js-LC6" class="blob-code blob-code-inner js-file-line">        url <span class="pl-k">=</span> request.url,</td>
+        <td id="file-webp-service-worker-js-LC6" class="blob-code blob-code-inner js-file-line">        url <span class="pl-k">=</span> <span class="pl-smi">request</span>.<span class="pl-smi">url</span>,</td>
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L7" class="blob-num js-line-number" data-line-number="7"></td>
@@ -61,11 +61,11 @@
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L13" class="blob-num js-line-number" data-line-number="13"></td>
-        <td id="file-webp-service-worker-js-LC13" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> ( re_jpg_or_png.<span class="pl-c1">test</span>( request.url ) <span class="pl-k">&amp;&amp;</span></td>
+        <td id="file-webp-service-worker-js-LC13" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">if</span> ( <span class="pl-smi">re_jpg_or_png</span>.<span class="pl-c1">test</span>( <span class="pl-smi">request</span>.<span class="pl-smi">url</span> ) <span class="pl-k">&amp;&amp;</span></td>
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L14" class="blob-num js-line-number" data-line-number="14"></td>
-        <td id="file-webp-service-worker-js-LC14" class="blob-code blob-code-inner js-file-line">         url_object.origin <span class="pl-k">==</span> location.origin ) {</td>
+        <td id="file-webp-service-worker-js-LC14" class="blob-code blob-code-inner js-file-line">         <span class="pl-smi">url_object</span>.<span class="pl-smi">origin</span> <span class="pl-k">==</span> <span class="pl-smi">location</span>.<span class="pl-smi">origin</span> ) {</td>
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L15" class="blob-num js-line-number" data-line-number="15"></td>
@@ -87,7 +87,7 @@
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L19" class="blob-num js-line-number" data-line-number="19"></td>
-        <td id="file-webp-service-worker-js-LC19" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span> ( request.<span class="pl-c1">headers</span>.has(<span class="pl-s"><span class="pl-pds">&#39;</span>accept<span class="pl-pds">&#39;</span></span>) )</td>
+        <td id="file-webp-service-worker-js-LC19" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span> ( <span class="pl-smi">request</span>.<span class="pl-c1">headers</span>.<span class="pl-en">has</span>(<span class="pl-s"><span class="pl-pds">&#39;</span>accept<span class="pl-pds">&#39;</span></span>) )</td>
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L20" class="blob-num js-line-number" data-line-number="20"></td>
@@ -95,7 +95,7 @@
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L21" class="blob-num js-line-number" data-line-number="21"></td>
-        <td id="file-webp-service-worker-js-LC21" class="blob-code blob-code-inner js-file-line">            supports_webp <span class="pl-k">=</span> request.<span class="pl-c1">headers</span>.get(<span class="pl-s"><span class="pl-pds">&#39;</span>accept<span class="pl-pds">&#39;</span></span>).includes(<span class="pl-s"><span class="pl-pds">&#39;</span>webp<span class="pl-pds">&#39;</span></span>);</td>
+        <td id="file-webp-service-worker-js-LC21" class="blob-code blob-code-inner js-file-line">            supports_webp <span class="pl-k">=</span> <span class="pl-smi">request</span>.<span class="pl-c1">headers</span>.<span class="pl-en">get</span>(<span class="pl-s"><span class="pl-pds">&#39;</span>accept<span class="pl-pds">&#39;</span></span>).<span class="pl-en">includes</span>(<span class="pl-s"><span class="pl-pds">&#39;</span>webp<span class="pl-pds">&#39;</span></span>);</td>
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L22" class="blob-num js-line-number" data-line-number="22"></td>
@@ -124,7 +124,7 @@
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L28" class="blob-num js-line-number" data-line-number="28"></td>
-        <td id="file-webp-service-worker-js-LC28" class="blob-code blob-code-inner js-file-line">            webp_url <span class="pl-k">=</span> url.<span class="pl-c1">substr</span>(<span class="pl-c1">0</span>, url.<span class="pl-c1">lastIndexOf</span>(<span class="pl-s"><span class="pl-pds">&#39;</span>.<span class="pl-pds">&#39;</span></span>)) <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&#39;</span>.webp<span class="pl-pds">&#39;</span></span>;</td>
+        <td id="file-webp-service-worker-js-LC28" class="blob-code blob-code-inner js-file-line">            webp_url <span class="pl-k">=</span> <span class="pl-smi">url</span>.<span class="pl-c1">substr</span>(<span class="pl-c1">0</span>, <span class="pl-smi">url</span>.<span class="pl-c1">lastIndexOf</span>(<span class="pl-s"><span class="pl-pds">&#39;</span>.<span class="pl-pds">&#39;</span></span>)) <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&#39;</span>.webp<span class="pl-pds">&#39;</span></span>;</td>
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L29" class="blob-num js-line-number" data-line-number="29"></td>
@@ -133,11 +133,11 @@
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L30" class="blob-num js-line-number" data-line-number="30"></td>
-        <td id="file-webp-service-worker-js-LC30" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">event</span>.respondWith(</td>
+        <td id="file-webp-service-worker-js-LC30" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">event</span>.<span class="pl-en">respondWith</span>(</td>
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L31" class="blob-num js-line-number" data-line-number="31"></td>
-        <td id="file-webp-service-worker-js-LC31" class="blob-code blob-code-inner js-file-line">                fetch(</td>
+        <td id="file-webp-service-worker-js-LC31" class="blob-code blob-code-inner js-file-line">                <span class="pl-en">fetch</span>(</td>
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L32" class="blob-num js-line-number" data-line-number="32"></td>

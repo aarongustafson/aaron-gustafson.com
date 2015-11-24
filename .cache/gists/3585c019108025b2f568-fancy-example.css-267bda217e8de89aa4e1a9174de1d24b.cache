@@ -70,7 +70,7 @@
       </tr>
       <tr>
         <td id="file-fancy-example-css-L16" class="blob-num js-line-number" data-line-number="16"></td>
-        <td id="file-fancy-example-css-LC16" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">padding</span></span>: <span class="pl-c1">.25<span class="pl-k">em</span></span></td>
+        <td id="file-fancy-example-css-LC16" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">padding</span></span>: <span class="pl-c1">.25<span class="pl-k">em</span></span>;</td>
       </tr>
       <tr>
         <td id="file-fancy-example-css-L17" class="blob-num js-line-number" data-line-number="17"></td>
@@ -82,7 +82,7 @@
       </tr>
       <tr>
         <td id="file-fancy-example-css-L19" class="blob-num js-line-number" data-line-number="19"></td>
-        <td id="file-fancy-example-css-LC19" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">transform</span></span>: translateY(<span class="pl-c1">-1.5<span class="pl-k">em</span></span>)</td>
+        <td id="file-fancy-example-css-LC19" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">transform</span></span>: translateY(<span class="pl-c1">-1.5<span class="pl-k">em</span></span>);</td>
       </tr>
       <tr>
         <td id="file-fancy-example-css-L20" class="blob-num js-line-number" data-line-number="20"></td>
@@ -98,7 +98,7 @@
 
       </div>
       <div class="gist-meta">
-        <a href="https://gist.github.com/aarongustafson/3585c019108025b2f568/raw/835accad37d2217128dbee1096454c94b38111d6/fancy-example.css" style="float:right">view raw</a>
+        <a href="https://gist.github.com/aarongustafson/3585c019108025b2f568/raw/af7d34e88830a540478fcb49839be692d47248f2/fancy-example.css" style="float:right">view raw</a>
         <a href="https://gist.github.com/aarongustafson/3585c019108025b2f568#file-fancy-example-css">fancy-example.css</a>
         hosted with &#10084; by <a href="https://github.com">GitHub</a>
       </div>
