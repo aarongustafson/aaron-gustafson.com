@@ -8749,6 +8749,12 @@ https://www.aaron-gustafson.com/notebook/strapless/:
       - why you shouldn't use Bootstrap j.mp/1ORfEsV</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2015-11-02T06:58:03-05:00">2
       November 2015</time></div></article></li>
+  '2015-11-28':
+    156052: <li id="webmention-156052" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://blog.enue.cn/2015/10/24/html5-weekly-no-211/">HTML5
+      Weekly No.211 | ENUE</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-28T12:52:45-05:00">28 November 2015</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/on-adaptive-web-designs-second-edition/:
   '2015-10-20':
     656653480204046336: |-
@@ -9793,6 +9799,128 @@ https://www.aaron-gustafson.com/notebook/labeled-with-love/:
     668813907260080130: |-
       <li id="webmention-668813907260080130" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/webaxe"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/2630721697/149d0c91dc14cab26d7d2ba1c5219699_normal.jpeg" alt="" title="Web Axe"><b class="p-name">Web Axe</b></a></div><div class="webmention__content p-content"><p>Labeled With Love <a href="https://t.co/sIGLDoAaNB">https://t.co/sIGLDoAaNB</a> by @AaronGustafson #forms #labels #ux #webdesign #a11y</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-23T10:30:36-05:00">23 November 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/webaxe/status/668813907260080130">Permalink</a></div></article></li>
+  '2015-11-29':
+    670972974518923265: |-
+      <li id="webmention-670972974518923265" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/mmalioris"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/378800000028064379/f50f9fe9f307059156e328621128dba6_normal.png" alt="" title="Margaritis Malioris"><b class="p-name">Margaritis Malioris</b></a></div><div class="webmention__content p-content"><p>Labeled with Love <a href="https://t.co/6b6dJeVgwT">https://t.co/6b6dJeVgwT</a> Tweet Parade <a href="https://t.co/qlfiaPnC4j">https://t.co/qlfiaPnC4j</a> @gonzodesign</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-29T09:29:57-05:00">29 November 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/mmalioris/status/670972974518923265">Permalink</a></div></article></li>
+    670859741271334912: |-
+      <li id="webmention-670859741271334912" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/mmalioris"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/378800000028064379/f50f9fe9f307059156e328621128dba6_normal.png" alt="" title="Margaritis Malioris"><b class="p-name">Margaritis Malioris</b></a></div><div class="webmention__content p-content"><p>Labeled with Love <a href="https://t.co/6b6dJeVgwT">https://t.co/6b6dJeVgwT</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-29T02:00:00-05:00">29 November 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/mmalioris/status/670859741271334912">Permalink</a></div></article></li>
+    '670859741271334912': <li id="webmention-670859741271334912" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/mmalioris"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/e08c15c857605dc3740c3396ac633ae2a066e21aa558315bce0fda5d8f45ff6c.png"
+      alt="" title="Margaritis Malioris"><b class="p-name">Margaritis Malioris</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/mmalioris/status/670859741271334912">Labeled
+      with Love aaron-gustafson.com/notebook/label…</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-11-29T02:00:00-05:00">29
+      November 2015</time></div></article></li>
+    156864: <li id="webmention-156864" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://www.gonzoblog.nl/2015/11/29/tweet-parade-no-48-2015/">Tweet
+      Parade (no.48-2015) - Best Articles of Last Week | gonzoblog</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-11-29T09:02:53-05:00">29
+      November 2015</time></div></article></li>
+    '670972974518923265': <li id="webmention-670972974518923265" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/mmalioris"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/e08c15c857605dc3740c3396ac633ae2a066e21aa558315bce0fda5d8f45ff6c.png"
+      alt="" title="Margaritis Malioris"><b class="p-name">Margaritis Malioris</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/mmalioris/status/670972974518923265">Labeled
+      with Love aaron-gustafson.com/notebook/label… Tweet Parade bit.ly/1XpdLZn @gonzodesign</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-29T09:29:57-05:00">29
+      November 2015</time></div></article></li>
+  '2015-11-27':
+    670334931411709952: |-
+      <li id="webmention-670334931411709952" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/webaxe"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/2630721697/149d0c91dc14cab26d7d2ba1c5219699_normal.jpeg" alt="" title="Web Axe"><b class="p-name">Web Axe</b></a></div><div class="webmention__content p-content"><p>Labeled With Love <a href="https://t.co/lD4pJAsWp2">https://t.co/lD4pJAsWp2</a> (+comment from @DennisL) #forms #a11y #webdesign #webdev</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-27T15:14:36-05:00">27 November 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/webaxe/status/670334931411709952">Permalink</a></div></article></li>
+    670276496771170304: |-
+      <li id="webmention-670276496771170304" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/johan_ramon"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/3219618343/e82a427c4d933ead1f5d2d5cf8c0e9e3_normal.png" alt="" title="Johan Ramon"><b class="p-name">Johan Ramon</b></a></div><div class="webmention__content p-content"><p>Labeled With Love: <a href="https://t.co/P67dSEblWS">https://t.co/P67dSEblWS</a>
+      #accessibility #a11y</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-27T11:22:24-05:00">27 November 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/johan_ramon/status/670276496771170304">Permalink</a></div></article></li>
+    670218154677669888: |-
+      <li id="webmention-670218154677669888" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/gonzodesign"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/2364936508/ubtpf82t0m0ipy8wtxwe_normal.png" alt="" title="Jan Rajtoral™"><b class="p-name">Jan Rajtoral™</b></a></div><div class="webmention__content p-content"><p>.. wrapping a form control and its associated label text in a label element ~ Labeled With Love <a href="https://t.co/01aBK8A9Xp">https://t.co/01aBK8A9Xp</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-27T07:30:34-05:00">27 November 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/gonzodesign/status/670218154677669888">Permalink</a></div></article></li>
+    670218152089817088: |-
+      <li id="webmention-670218152089817088" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/Rajtoral"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/418036123135254529/j8HFjBXY_normal.png" alt="" title="Jan Rajtoral"><b class="p-name">Jan Rajtoral</b></a></div><div class="webmention__content p-content"><p>.. wrapping a form control and its associated label text in a label element ~ Labeled With Love <a href="https://t.co/RqwpuQg4tk">https://t.co/RqwpuQg4tk</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-27T07:30:34-05:00">27 November 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/Rajtoral/status/670218152089817088">Permalink</a></div></article></li>
+    '670218154677669888': <li id="webmention-670218154677669888" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://gonzodesign.nl/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/0bda142fc498c118ac4c5f238ac191811ed30aca5c1f6bd2dc1ceff038acf1a1.png"
+      alt="" title="Jan Rajtoral™"><b class="p-name">Jan Rajtoral™</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/gonzodesign/status/670218154677669888">..
+      wrapping a form control and its associated label text in a label element ~ Labeled
+      With Love dlvr.it/Cs0tSm</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-27T07:30:34-05:00">27 November 2015</time></div></article></li>
+    '670218152089817088': <li id="webmention-670218152089817088" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://www.gonzodesign.nl/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/cf014c8e547e6235ace5fa7943123a7e44b6b6435e5b20fc780725a3fb8c41a4.png"
+      alt="" title="Jan Rajtoral"><b class="p-name">Jan Rajtoral</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/Rajtoral/status/670218152089817088">..
+      wrapping a form control and its associated label text in a label element ~ Labeled
+      With Love dlvr.it/Cs0tgQ</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-27T07:30:34-05:00">27 November 2015</time></div></article></li>
+    '670276496771170304': '<li id="webmention-670276496771170304" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://johanramon.fr/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/13843a040d5e3440cbcfb521eed2241bc2fa174dabd79092ee303d1b2b7543d7.png"
+      alt="" title="Johan Ramon"><b class="p-name">Johan Ramon</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/johan_ramon/status/670276496771170304">Labeled
+      With Love: aaron-gustafson.com/notebook/label… #accessibility #a11y</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-27T11:22:24-05:00">27
+      November 2015</time></div></article></li>'
+    '670336124552916992': '<li id="webmention-670336124552916992" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/twok3design"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/1cfa104e5d8194a7569193c251d278ed61961e4e68b460738c52cbded63dae08.jpeg"
+      alt="" title="twok3design"><b class="p-name">twok3design</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/twok3design/status/670336124552916992">RT
+      ► Labeled With Love bit.ly/1MDAWa0 (+comment from DennisL) #forms #a11y #webdesign
+      #webdev | twitter.com/webaxe/status/…</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-11-27T15:19:20-05:00">27
+      November 2015</time></div></article></li>'
+    '670334931411709952': '<li id="webmention-670334931411709952" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://www.webaxe.org/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/e5811440b2f391f31e10a524c9aec98580fd08d5c39d2213f6b228807dd048f3.jpeg"
+      alt="" title="Web Axe"><b class="p-name">Web Axe</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/webaxe/status/670334931411709952">Labeled
+      With Love bit.ly/1MDAWa0 (+comment from @DennisL) #forms #a11y #webdesign #webdev</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-27T15:14:36-05:00">27
+      November 2015</time></div></article></li>'
+    '670335423273676800': '<li id="webmention-670335423273676800" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/i0ewx76"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/303772f3517008a217483cff9bc0087a0ee8cc6fa3ffd05fb72c81260c547806.jpeg"
+      alt="" title="Christopher Wheat"><b class="p-name">Christopher Wheat</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/i0ewx76/status/670335423273676800">RT
+      webaxe Labeled With Love bit.ly/1MDAWa0 (+comment from DennisL) #forms #a11y
+      #webdesign #webdev</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-27T15:16:33-05:00">27 November 2015</time></div></article></li>'
+  '2015-11-25':
+    669712344432443392: |-
+      <li id="webmention-669712344432443392" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/cssradar"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1478202419/cssradar_icon_200_normal.png" alt="" title="Yuya Saito"><b class="p-name">Yuya Saito</b></a></div><div class="webmention__content p-content"><p>Labeled With Love <a href="https://t.co/drUGAAiNbM">https://t.co/drUGAAiNbM</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-25T22:00:40-05:00">25 November 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/cssradar/status/669712344432443392">Permalink</a></div></article></li>
+    669501589141499904: |-
+      <li id="webmention-669501589141499904" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/tomstardust"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/229429779/avatar_eye_normal.jpg" alt="" title="Tommaso Baldovino"><b class="p-name">Tommaso Baldovino</b></a></div><div class="webmention__content p-content"><p>Labeled with love by @AaronGustafson <a href="https://t.co/tZ7fHhuFaw">https://t.co/tZ7fHhuFaw</a> Note: placeholders aren’t labels. #UX #usability #accessibility</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-25T08:03:12-05:00">25 November 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/tomstardust/status/669501589141499904">Permalink</a></div></article></li>
+    '669712344432443392': <li id="webmention-669712344432443392" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://frontendweekly.tokyo/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/b80465a02c7f06aa18d2116b0661ca1e7965c7b81f79d6ec217db070ae6dc5ae.png"
+      alt="" title="Yuya Saito"><b class="p-name">Yuya Saito</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/cssradar/status/669712344432443392">Labeled
+      With Love bit.ly/1OZS8dt</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-25T22:00:40-05:00">25 November 2015</time></div></article></li>
+  '2015-11-26':
+    153881: <li id="webmention-153881" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://accessibility.lifekludger.net/2015/11/26/labeled-with-love-from-the-notebook-of-aaron-gustafson/">Labeled
+      With Love, From the Notebook of Aaron Gustafson | accessibility news</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-26T05:08:46-05:00">26
+      November 2015</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/consider-how-your-forms-read/:
   '2015-11-11':
     143647: <li id="webmention-143647" class="webmentions__item"><article class="h-cite
@@ -9801,6 +9929,13 @@ https://www.aaron-gustafson.com/notebook/consider-how-your-forms-read/:
       Gustafson</b></a></div> <div class="webmention__title p-name"><a href="https://www.aaron-gustafson.com/notebook/labeled-with-love/">Labeled
       With Love, From the Notebook of Aaron Gustafson</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2015-11-11T21:43:12-05:00">11
+      November 2015</time></div></article></li>
+  '2015-11-26':
+    153882: <li id="webmention-153882" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://accessibility.lifekludger.net/2015/11/26/labeled-with-love-from-the-notebook-of-aaron-gustafson/">Labeled
+      With Love, From the Notebook of Aaron Gustafson | accessibility news</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-26T05:08:47-05:00">26
       November 2015</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/links/50-female-tech-influencers-to-follow-on-twitter/:
   '2015-11-12':
@@ -9905,4 +10040,12 @@ https://www.aaron-gustafson.com/notebook/speeding-things-up-with-service-worker-
       webmention webmention--no-author webmention--title-only"> <div class="webmention__title
       p-name"><a href="http://www.blogpresso.com/service-workers/">Service Workers   Actualités</a></div><div
       class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-24T07:33:36-05:00">24
+      November 2015</time></div></article></li>
+https://www.aaron-gustafson.com/notebook/css-variables-are-a-bad-idea/:
+  '2015-11-25':
+    153018: <li id="webmention-153018" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://publishing-project.rivendellweb.net/native-css-variables-yay/">Native
+      CSS Variables (Yay?) | The Publishing Project</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-11-25T13:32:36-05:00">25
       November 2015</time></div></article></li>
