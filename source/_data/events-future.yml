@@ -1,15 +1,20 @@
+- title: EnhanceConf
+  url: http://lanyrd.com/2016/enhanceconf/
+  date: 2016-03-03 09:00:00 -0400
+  location: London, UK
+
 - title: An Event Apart
   url: http://aneventapart.com/event/nashville-2016
   date: 2016-03-14 09:00:00 -0400
   location: Nashville, TN USA
 
-- title: TBA # Respond
-  # url: http://www.webdirections.org/events/
+- title: Respond
+  url: http://lanyrd.com/cfxzmq
   date: 2016-04-11 09:00:00 -0400
   location: Sydney, Australia
 
-- title: TBA # Respond
-  # url: http://www.webdirections.org/events/
+- title: Respond
+  url: http://lanyrd.com/cfxzmt
   date: 2016-04-14 09:00:00 -0400
   location: Melbourne, Australia
 
