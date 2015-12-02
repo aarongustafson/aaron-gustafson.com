@@ -8135,6 +8135,10 @@ https://www.aaron-gustafson.com/notebook/moved-to-https/:
     '639621224008687616': |-
       <li id="webmention-639621224008687616" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/635107999120531456/W_YXtoX-_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Moved to HTTPS <a href="https://t.co/vm4WFhR9dg">https://t.co/vm4WFhR9dg</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-03T22:09:18-04:00">3 September 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/639621224008687616">Permalink</a></div></article></li>
+  '2015-12-02':
+    672080472915202048: |-
+      <li id="webmention-672080472915202048" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/abrightumbrella"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/488853376457654272/YMx_ojci_normal.png" alt="" title="Bright Umbrella"><b class="p-name">Bright Umbrella</b></a></div><div class="webmention__content p-content"><p>Thinking about locking your site down with #HTTPS? Nice recap from @aarongustafson on migrating his site. <a href="https://t.co/c35tFCZNA3">https://t.co/c35tFCZNA3</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-02T10:50:46-05:00">2 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/abrightumbrella/status/672080472915202048">Permalink</a></div></article></li>
 https://www.aaron-gustafson.com/notebook/interface-experience-maps/:
   '2015-09-10':
     '642005838320771072': |-
