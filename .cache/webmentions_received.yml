@@ -8763,6 +8763,20 @@ https://www.aaron-gustafson.com/notebook/strapless/:
       p-name"><a href="http://blog.enue.cn/2015/10/24/html5-weekly-no-211/">HTML5
       Weekly No.211 | ENUE</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-11-28T12:52:45-05:00">28 November 2015</time></div></article></li>
+  '2015-12-03':
+    672461240774492160: |-
+      <li id="webmention-672461240774492160" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/nikmd23"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1891304362/puppet_normal.jpeg" alt="" title="Nik Molnar"><b class="p-name">Nik Molnar</b></a></div><div class="webmention__content p-content"><p>Already moved away from jQuery &amp; towards VanillaJS? Now it’s time to go Strapless &amp; drop Bootstrap. <a href="https://t.co/919omVtHYR">https://t.co/919omVtHYR</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-03T12:03:48-05:00">3 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/nikmd23/status/672461240774492160">Permalink</a></div></article></li>
+    '672461240774492160': <li id="webmention-672461240774492160" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://getglimpse.com/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/9eead97a318e63c095a5fd4b6217230656706275d50d62a62427134598021b92.jpeg"
+      alt="" title="Nik Molnar"><b class="p-name">Nik Molnar</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/nikmd23/status/672461240774492160">Already
+      moved away from jQuery & towards VanillaJS? Now it's time to go Strapless &
+      drop Bootstrap. bit.ly/1SzPyZP</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-12-03T12:03:48-05:00">3
+      December 2015</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/on-adaptive-web-designs-second-edition/:
   '2015-10-20':
     656653480204046336: |-
@@ -8835,6 +8849,15 @@ https://www.aaron-gustafson.com/notebook/on-adaptive-web-designs-second-edition/
     668408343959117825: |-
       <li id="webmention-668408343959117825" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/662665276664729600/MGpepYFM_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@jitendravyas Nearly everything: <a href="https://t.co/yYbNXrRkuW">https://t.co/yYbNXrRkuW</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-22T07:39:02-05:00">22 November 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/668408343959117825">Permalink</a></div></article></li>
+  '2015-12-04':
+    672897629731299328: |-
+      <li id="webmention-672897629731299328" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/662665276664729600/MGpepYFM_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@stephenhay A bit of background on how it came together: <a href="https://t.co/yYbNXrRkuW">https://t.co/yYbNXrRkuW</a></p>
+
+      <p>I also talked about it on the @bigwebshow today.</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-04T16:57:51-05:00">4 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/672897629731299328">Permalink</a></div></article></li>
+    '672898035828039680': |-
+      <li id="webmention-672898035828039680" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.the-haystack.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/c84f9febb4c9a3db2bb804c5c9f2d589376a7f79587c37c4ba4e2334ed09b649.jpeg" alt="" title="Stephen Hay"><b class="p-name">Stephen Hay</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> Oh, I don’t listen to the <a href="https://twitter.com/bigwebshow" rel="nofollow">@bigwebshow</a> because no one…</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-04T16:59:28-05:00">4 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/stephenhay/status/672898035828039680">Permalink</a></div></article></li>
 https://www.aaron-gustafson.com/notebook/who-should-pay/:
   '2015-10-21':
     127377: <li id="webmention-127377" class="webmentions__item"><article class="h-cite
@@ -9929,6 +9952,13 @@ https://www.aaron-gustafson.com/notebook/labeled-with-love/:
       With Love, From the Notebook of Aaron Gustafson | accessibility news</a></div><div
       class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-26T05:08:46-05:00">26
       November 2015</time></div></article></li>
+  '2015-12-03':
+    161284: <li id="webmention-161284" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="https://www.christianheilmann.com/2015/12/04/a-quick-reminder-on-how-and-why-to-use-labels-in-forms-to-make-them-more-accessible/">A
+      quick reminder on how and why to use labels in forms to make them more accessible
+      | Christian Heilmann</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-12-03T20:26:35-05:00">3 December 2015</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/consider-how-your-forms-read/:
   '2015-11-11':
     143647: <li id="webmention-143647" class="webmentions__item"><article class="h-cite
@@ -10057,3 +10087,20 @@ https://www.aaron-gustafson.com/notebook/css-variables-are-a-bad-idea/:
       CSS Variables (Yay?) | The Publishing Project</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2015-11-25T13:32:36-05:00">25
       November 2015</time></div></article></li>
+https://www.aaron-gustafson.com/notebook/links/flexbox-s-best-kept-secret-bd3d892826b6/:
+  '2015-12-04':
+    672894290171961344: |-
+      <li id="webmention-672894290171961344" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/662665276664729600/MGpepYFM_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@stephenhay That’s just the title :-)</p>
+
+      <p>My commentary: <a href="https://t.co/4FPa19LkXm">https://t.co/4FPa19LkXm</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-04T16:44:35-05:00">4 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/672894290171961344">Permalink</a></div></article></li>
+https://www.aaron-gustafson.com/notebook/tags/web-forms/:
+  '2015-12-04':
+    672760932062351360: |-
+      <li id="webmention-672760932062351360" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/codepo8"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1666904408/codepo8_normal.png" alt="" title="Christian Heilmann "><b class="p-name">Christian Heilmann </b></a></div><div class="webmention__content p-content"><p>@raymondcamden @AmeliasBrain My esteemed colleague @AaronGustafson is doing a blog post series on them now <a href="https://t.co/JqKiwSrRVz">https://t.co/JqKiwSrRVz</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-04T07:54:40-05:00">4 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/codepo8/status/672760932062351360">Permalink</a></div></article></li>
+https://www.aaron-gustafson.com/notebook/avoiding-linkrot-in-print-with-the-help-of-perma-dot-cc/:
+  '2015-12-03':
+    672435494052110336: |-
+      <li id="webmention-672435494052110336" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/LawFirmSearchEn"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/509041518166818817/lK9pna_D_normal.png" alt="" title="LawFirmSearchEngine"><b class="p-name">LawFirmSearchEngine</b></a></div><div class="webmention__content p-content"><p>Avoiding Link Rot in Print With the Help of Perma.cc (via @AaronGustafson) <a href="https://t.co/DQfiK9PhAb">https://t.co/DQfiK9PhAb</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-03T10:21:29-05:00">3 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/LawFirmSearchEn/status/672435494052110336">Permalink</a></div></article></li>
