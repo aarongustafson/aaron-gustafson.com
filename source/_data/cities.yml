@@ -113,6 +113,11 @@
   credit_name: David Holt
   credit_url: http://commons.wikimedia.org/wiki/File:Lisbon_Portugal_282_(5108432388).jpg
 
+- name: "London, UK"
+  photo: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Tower_bridge_London_Twilight_-_November_2006.jpg/400px-Tower_bridge_London_Twilight_-_November_2006.jpg
+  credit_name: Diliff
+  credit_url: https://commons.wikimedia.org/wiki/File:Tower_bridge_London_Twilight_-_November_2006.jpg
+
 - name: "Madison, WI USA"
   photo: https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/One_South_Pinckney_Street_-_Madison%2C_WI_-_DSC03091.JPG/400px-One_South_Pinckney_Street_-_Madison%2C_WI_-_DSC03091.JPG
   credit_name: Daderot

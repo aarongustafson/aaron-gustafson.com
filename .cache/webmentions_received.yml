@@ -8858,6 +8858,23 @@ https://www.aaron-gustafson.com/notebook/on-adaptive-web-designs-second-edition/
     '672898035828039680': |-
       <li id="webmention-672898035828039680" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.the-haystack.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/c84f9febb4c9a3db2bb804c5c9f2d589376a7f79587c37c4ba4e2334ed09b649.jpeg" alt="" title="Stephen Hay"><b class="p-name">Stephen Hay</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> Oh, I don’t listen to the <a href="https://twitter.com/bigwebshow" rel="nofollow">@bigwebshow</a> because no one…</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-04T16:59:28-05:00">4 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/stephenhay/status/672898035828039680">Permalink</a></div></article></li>
+    '672897629731299328': <li id="webmention-672897629731299328" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/harriha"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/48a9d7083441af0b714a17547ca74897c4230c7964b6cd83884641935c3a6097.jpeg"
+      alt="" title="Harri Hälikkä"><b class="p-name">Harri Hälikkä</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/672897629731299328">Harri
+      Hälikkä likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-12-04T17:44:27-05:00">4 December 2015</time></div></article></li>
+  '2015-12-05':
+    '672897629731299328': <li id="webmention-672897629731299328" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/jhidalgoreina"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/fe8c287b50904549125be02f8892dd72e420ad921b88ca5a8f9f0692975fdcd0.jpeg"
+      alt="" title="Juan Hidalgo Reina"><b class="p-name">Juan Hidalgo Reina</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/672897629731299328">Juan
+      Hidalgo Reina likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-12-05T10:37:48-05:00">5 December 2015</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/who-should-pay/:
   '2015-10-21':
     127377: <li id="webmention-127377" class="webmentions__item"><article class="h-cite
@@ -9959,6 +9976,10 @@ https://www.aaron-gustafson.com/notebook/labeled-with-love/:
       quick reminder on how and why to use labels in forms to make them more accessible
       | Christian Heilmann</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-12-03T20:26:35-05:00">3 December 2015</time></div></article></li>
+  '2015-12-07':
+    673919219113693184: |-
+      <li id="webmention-673919219113693184" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/webaxe"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/2630721697/149d0c91dc14cab26d7d2ba1c5219699_normal.jpeg" alt="" title="Web Axe"><b class="p-name">Web Axe</b></a></div><div class="webmention__content p-content"><p>Important! Primer on the HTML Label element and some best practices: <a href="https://t.co/WS9mof5MdR">https://t.co/WS9mof5MdR</a> by @AaronGustafson #webdev #forms #tips</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-07T12:37:17-05:00">7 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/webaxe/status/673919219113693184">Permalink</a></div></article></li>
 https://www.aaron-gustafson.com/notebook/consider-how-your-forms-read/:
   '2015-11-11':
     143647: <li id="webmention-143647" class="webmentions__item"><article class="h-cite
@@ -10104,3 +10125,47 @@ https://www.aaron-gustafson.com/notebook/avoiding-linkrot-in-print-with-the-help
     672435494052110336: |-
       <li id="webmention-672435494052110336" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/LawFirmSearchEn"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/509041518166818817/lK9pna_D_normal.png" alt="" title="LawFirmSearchEngine"><b class="p-name">LawFirmSearchEngine</b></a></div><div class="webmention__content p-content"><p>Avoiding Link Rot in Print With the Help of Perma.cc (via @AaronGustafson) <a href="https://t.co/DQfiK9PhAb">https://t.co/DQfiK9PhAb</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-03T10:21:29-05:00">3 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/LawFirmSearchEn/status/672435494052110336">Permalink</a></div></article></li>
+  '2015-12-07':
+    673916316957429760: |-
+      <li id="webmention-673916316957429760" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/jacobsberg"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/518771169063731201/hgTpLFb-_normal.jpeg" alt="" title="F. W. Popov"><b class="p-name">F. W. Popov</b></a></div><div class="webmention__content p-content"><p>Avoiding Link Rot in Print With the Help of Perma.cc <a href="https://t.co/IWSTxVqyfr">https://t.co/IWSTxVqyfr</a> h/t @griffey</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-07T12:25:45-05:00">7 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/jacobsberg/status/673916316957429760">Permalink</a></div></article></li>
+    673904911428542466: |-
+      <li id="webmention-673904911428542466" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/673541801870016512/mlsp36Yy_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Avoiding Link Rot in Print with the Help of Perma.cc <a href="https://t.co/ccRAQGTnj4">https://t.co/ccRAQGTnj4</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-07T11:40:26-05:00">7 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/673904911428542466">Permalink</a></div></article></li>
+    '673904911428542466': <li id="webmention-673904911428542466" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/griffey"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/38578cf6cca3650f4ac587cfab37eb7f7707435752b4900e2063634e1998d726.jpeg"
+      alt="" title="Jason Griffey"><b class="p-name">Jason Griffey</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/673904911428542466">Jason
+      Griffey likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-12-07T12:05:03-05:00">7 December 2015</time></div></article></li>
+    '673910268125184000': |-
+      <li id="webmention-673910268125184000" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.jasongriffey.net/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/38578cf6cca3650f4ac587cfab37eb7f7707435752b4900e2063634e1998d726.jpeg" alt="" title="Jason Griffey"><b class="p-name">Jason Griffey</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> The world is really small. I’ve been talking with Jack a lot this semester about Perma. Such a great use of the platform!</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-07T12:01:43-05:00">7 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/griffey/status/673910268125184000">Permalink</a></div></article></li>
+    '673913807383695361': |-
+      <li id="webmention-673913807383695361" class="webmentions__item"><article class="h-cite webmention webmention--no-photo webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://literarymachin.es/"><b class="p-name">Raffaele Messuti</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@aarongustafson</a> yay! i wish that every electronic book i’ve bought have archived links &lt;a href=”https://literarymachin.es/epub-linkrot/”</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-07T12:15:47-05:00">7 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/atomotic/status/673913807383695361">Permalink</a></div></article></li>
+    '673914176264380416': <li id="webmention-673914176264380416" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://anjackson.net/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/e1720ee16acb476634c956f1ff416b50ca350e3b6f0290735f62b781569826fe.jpeg"
+      alt="" title="Andy Jackson"><b class="p-name">Andy Jackson</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/anjacks0n/status/673914176264380416">Andy
+      Jackson shared this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-12-07T12:17:14-05:00">7 December 2015</time></div></article></li>
+    '673912543035961344': <li id="webmention-673912543035961344" class="webmentions__item"><article
+      class="h-cite webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://literarymachin.es/"><b
+      class="p-name">Raffaele Messuti</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/atomotic/status/673912543035961344">Raffaele
+      Messuti shared this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-12-07T12:10:45-05:00">7 December 2015</time></div></article></li>
+    '673918038945566720': <li id="webmention-673918038945566720" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.cssmojo.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/f51aa093a45817470b472eea42f7c430e597b77958584975df1bc3cf6c5ce1c2.jpeg"
+      alt="" title="Thierry"><b class="p-name">Thierry</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/thierrykoblentz/status/673918038945566720">Thierry
+      shared this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-12-07T12:32:35-05:00">7 December 2015</time></div></article></li>

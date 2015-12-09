@@ -80,6 +80,8 @@ To create incredibly generous tap targets on mobile devices, we can take things 
 
 It’s worth noting that older versions of Internet Explorer only provide the focus/interaction benefit when you use explicit label association. That’s why I like the combo approach of implicit *and* explicit association for checkbox and radio controls.
 
+<ins datetime="2015-12-09" cite="#comment-2374683375">As Dennis Lembrée mentions in the comments below, Dragon’s Naturally Speaking also doesn’t recognize implicit association, which is why it’s incredibly important to use explicit association even if it seems implicit association should suffice.</ins>
+
 ## Placeholders Aren’t Labels
 
 HTML5 ushered in a new option for working with `input` elements: the `placeholder` attribute. This declarative attribute makes it possible to offer hint as to the sort of content you were looking for in a field. In [supporting browsers](http://caniuse.com/#feat=input-placeholder), it appears in the field, ghosted back a bit, and disappears when you start typing a response.[^2]
