@@ -5328,6 +5328,14 @@ http://www.aaron-gustafson.com/notebook/bidding-farewell-to-shirley-the-goat/:
       Standards Sherpa Web Standards Sherpa retweeted this.</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2015-03-10T05:59:57-06:00">10
       March 2015</time></div></article></li>
+  '2015-12-09':
+    166391: <li id="webmention-166391" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://davidjohnmead.com/blog/2015/03/09/aww-standardssherpa-is-closing-httpwww-aaron-gustafson-comnotebookbidding-farewell-to-shirley-the-goat-thx-for-everything-aarongustafson-et-al/">Aww.
+      @standardssherpa is closing http://www.aaron-gustafson.com/notebook/bidding-farewell-to-shirley-the-goat/
+      :-( Thx for everything @aarongustafson et al. &#8211; David John Mead</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-09T16:44:39-05:00">9
+      December 2015</time></div></article></li>
 http://www.aaron-gustafson.com/notebook/lines-in-the-sand/:
   '2015-03-11':
     '575684183521148928': <li id="webmention-575684183521148928" class="webmentions__item"><article
@@ -10108,6 +10116,10 @@ https://www.aaron-gustafson.com/notebook/css-variables-are-a-bad-idea/:
       CSS Variables (Yay?) | The Publishing Project</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2015-11-25T13:32:36-05:00">25
       November 2015</time></div></article></li>
+  '2015-12-08':
+    674333867927601153: |-
+      <li id="webmention-674333867927601153" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/arkoudos"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/2818170510/36d2931322c33ba792c0583c38edd898_normal.jpeg" alt="" title="Γιάννης @arkoudos"><b class="p-name">Γιάννης @arkoudos</b></a></div><div class="webmention__content p-content"><p>@aleksious επίσης, διάβαζα πριν πολύ λίγες ημέρες ότι κάποιοι διαφωνούν <a href="https://t.co/GhIdm2nhD5">https://t.co/GhIdm2nhD5</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-08T16:04:57-05:00">8 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/arkoudos/status/674333867927601153">Permalink</a></div></article></li>
 https://www.aaron-gustafson.com/notebook/links/flexbox-s-best-kept-secret-bd3d892826b6/:
   '2015-12-04':
     672894290171961344: |-
@@ -10169,3 +10181,8 @@ https://www.aaron-gustafson.com/notebook/avoiding-linkrot-in-print-with-the-help
       p-name"><a href="https://twitter.com/thierrykoblentz/status/673918038945566720">Thierry
       shared this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-12-07T12:32:35-05:00">7 December 2015</time></div></article></li>
+https://www.aaron-gustafson.com/notebook/label:
+  '2015-12-07':
+    674077977647456256: |-
+      <li id="webmention-674077977647456256" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/CEEKTechnology"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/2342920299/v5nxzbxedemmiepkxqor_normal.jpeg" alt="" title="Christopher McMillan"><b class="p-name">Christopher McMillan</b></a></div><div class="webmention__content p-content"><p>Important! Primer on the #HTML Label element and some best practices: <a href="https://t.co/xMKqJZE0XD…">https://t.co/xMKqJZE0XD…</a> by @AaronGustafson #webdev #forms #tips</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-07T23:08:08-05:00">7 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/CEEKTechnology/status/674077977647456256">Permalink</a></div></article></li>

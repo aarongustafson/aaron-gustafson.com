@@ -1,0 +1,13 @@
+---
+layout: link
+title: "Quick PSA on icon fonts and ligatures"
+date: 2015-12-10 12:22:29 -0500
+comments: false
+ref_url: https://gist.github.com/jareware/76beb201c717fd6333c7
+in_reply_to: https://gist.github.com/jareware/76beb201c717fd6333c7
+ref_source: Jarno Rantanen via Github Gist
+---
+
+A fair rebuttal to [Tyler Sticka’s “Seriously, Don’t Use Icon Fonts”](http://blog.cloudfour.com/seriously-dont-use-icon-fonts/). I completely agree on the ligature point, although not all browsers support them. Assuming you’ve planned for the fallback, you’re all good.
+
+There is no black & white on the Web. It always depends. Know what each tool and technology is good for and use it when it makes sense.
