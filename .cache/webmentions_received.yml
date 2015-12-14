@@ -8883,6 +8883,20 @@ https://www.aaron-gustafson.com/notebook/on-adaptive-web-designs-second-edition/
       <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/672897629731299328">Juan
       Hidalgo Reina likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-12-05T10:37:48-05:00">5 December 2015</time></div></article></li>
+  '2015-12-11':
+    675369712637882368: |-
+      <li id="webmention-675369712637882368" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/673541801870016512/mlsp36Yy_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@dirtystylus Thank you!</p>
+
+      <p>I hope the new edition will continue that and maybe even improve on the first edition. <a href="https://t.co/yYbNXrRkuW">https://t.co/yYbNXrRkuW</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-11T12:41:01-05:00">11 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/675369712637882368">Permalink</a></div></article></li>
+    '675369712637882368': <li id="webmention-675369712637882368" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/dirtystylus"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/2331df1454d4aead2e62664f98a6f1a9715fc86c81a89cc49564641a262a1396.jpeg"
+      alt="" title="Mark Llobrera"><b class="p-name">Mark Llobrera</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/675369712637882368">Mark
+      Llobrera likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-12-11T12:49:08-05:00">11 December 2015</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/who-should-pay/:
   '2015-10-21':
     127377: <li id="webmention-127377" class="webmentions__item"><article class="h-cite
@@ -10181,8 +10195,22 @@ https://www.aaron-gustafson.com/notebook/avoiding-linkrot-in-print-with-the-help
       p-name"><a href="https://twitter.com/thierrykoblentz/status/673918038945566720">Thierry
       shared this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-12-07T12:32:35-05:00">7 December 2015</time></div></article></li>
+  '2015-12-11':
+    675314778089353216: |-
+      <li id="webmention-675314778089353216" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/TopLeftBrick"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1187560197/tlb-twitter_normal.png" alt="" title="Top Left Brick"><b class="p-name">Top Left Brick</b></a></div><div class="webmention__content p-content"><p>Avoiding Link Rot in Print With the Help of Perma.cc […and “connections”]
+      <a href="https://t.co/mbS806IZ9n">https://t.co/mbS806IZ9n</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-11T09:02:44-05:00">11 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/TopLeftBrick/status/675314778089353216">Permalink</a></div></article></li>
+  '2015-12-10':
+    675084507574345730: |-
+      <li id="webmention-675084507574345730" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/vfowler"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1176597648/CRW_3105_cropped_normal.jpg" alt="" title="Vernon Fowler"><b class="p-name">Vernon Fowler</b></a></div><div class="webmention__content p-content"><p>Avoiding link rot in print with the help of @permacc (Powered by Libraries) <a href="https://t.co/bLbTFdy07X">https://t.co/bLbTFdy07X</a> @AaronGustafson… <a href="https://t.co/VDnFiFAuqL">https://t.co/VDnFiFAuqL</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-10T17:47:43-05:00">10 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/vfowler/status/675084507574345730">Permalink</a></div></article></li>
 https://www.aaron-gustafson.com/notebook/label:
   '2015-12-07':
     674077977647456256: |-
       <li id="webmention-674077977647456256" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/CEEKTechnology"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/2342920299/v5nxzbxedemmiepkxqor_normal.jpeg" alt="" title="Christopher McMillan"><b class="p-name">Christopher McMillan</b></a></div><div class="webmention__content p-content"><p>Important! Primer on the #HTML Label element and some best practices: <a href="https://t.co/xMKqJZE0XD…">https://t.co/xMKqJZE0XD…</a> by @AaronGustafson #webdev #forms #tips</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-07T23:08:08-05:00">7 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/CEEKTechnology/status/674077977647456256">Permalink</a></div></article></li>
+https://www.reading.am/p/467d/https://www.aaron-gustafson.com/notebook/on-adaptive-web-designs-second-edition/:
+  '2015-12-11':
+    675370250884489216: |-
+      <li id="webmention-675370250884489216" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/dsisreading"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/2844285678/b9945f92af55bff1734b7c5813b7fb93_normal.jpeg" alt="" title="Mark Llobrera"><b class="p-name">Mark Llobrera</b></a></div><div class="webmention__content p-content"><p>✌ @Reading “On Adaptive Web Design’s Second Edition” <a href="https://t.co/exIbUfvdfH">https://t.co/exIbUfvdfH</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-11T12:43:10-05:00">11 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/dsisreading/status/675370250884489216">Permalink</a></div></article></li>
