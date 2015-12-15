@@ -8785,6 +8785,13 @@ https://www.aaron-gustafson.com/notebook/strapless/:
       drop Bootstrap. bit.ly/1SzPyZP</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2015-12-03T12:03:48-05:00">3
       December 2015</time></div></article></li>
+  '2015-12-14':
+    169627: <li id="webmention-169627" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://digital-workflows.de/news/bootstrap-segen-oder-fluch/">Bootstrap
+      – Segen oder Fluch? » Digital Workflows » Digital Workflows</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-12-14T01:31:36-05:00">14
+      December 2015</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/on-adaptive-web-designs-second-edition/:
   '2015-10-20':
     656653480204046336: |-
@@ -10002,6 +10009,17 @@ https://www.aaron-gustafson.com/notebook/labeled-with-love/:
     673919219113693184: |-
       <li id="webmention-673919219113693184" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/webaxe"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/2630721697/149d0c91dc14cab26d7d2ba1c5219699_normal.jpeg" alt="" title="Web Axe"><b class="p-name">Web Axe</b></a></div><div class="webmention__content p-content"><p>Important! Primer on the HTML Label element and some best practices: <a href="https://t.co/WS9mof5MdR">https://t.co/WS9mof5MdR</a> by @AaronGustafson #webdev #forms #tips</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-07T12:37:17-05:00">7 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/webaxe/status/673919219113693184">Permalink</a></div></article></li>
+  '2015-12-13':
+    676222825959718913: |-
+      <li id="webmention-676222825959718913" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/jaredpdesigns"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/579066682842304517/h9v2aIrd_normal.jpg" alt="" title="Jared Pendergraft"><b class="p-name">Jared Pendergraft</b></a></div><div class="webmention__content p-content"><p>Great Read: “Labeled With Love” <a href="https://t.co/BwCOrSkhBu">https://t.co/BwCOrSkhBu</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-13T21:10:59-05:00">13 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/jaredpdesigns/status/676222825959718913">Permalink</a></div></article></li>
+    676096890279096320: |-
+      <li id="webmention-676096890279096320" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/cordeliadillon"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/424085087819284482/JJOo98g1_normal.jpeg" alt="" title="Cordelia"><b class="p-name">Cordelia</b></a></div><div class="webmention__content p-content"><p>“We don’t have a ton of elements in HTML, which is why it’s important that we properly use the ones we do have.” <a href="https://t.co/a7k8cH1yNA">https://t.co/a7k8cH1yNA</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-13T12:50:34-05:00">13 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/cordeliadillon/status/676096890279096320">Permalink</a></div></article></li>
+  '2015-12-12':
+    675693663410741248: |-
+      <li id="webmention-675693663410741248" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/webaxe"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/2630721697/149d0c91dc14cab26d7d2ba1c5219699_normal.jpeg" alt="" title="Web Axe"><b class="p-name">Web Axe</b></a></div><div class="webmention__content p-content"><p>Labeled With Love <a href="https://t.co/WS9mof5MdR">https://t.co/WS9mof5MdR</a> by @AaronGustafson #webdev #forms #tips #a11y #ux</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-12T10:08:17-05:00">12 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/webaxe/status/675693663410741248">Permalink</a></div></article></li>
 https://www.aaron-gustafson.com/notebook/consider-how-your-forms-read/:
   '2015-11-11':
     143647: <li id="webmention-143647" class="webmentions__item"><article class="h-cite
@@ -10214,3 +10232,8 @@ https://www.reading.am/p/467d/https://www.aaron-gustafson.com/notebook/on-adapti
     675370250884489216: |-
       <li id="webmention-675370250884489216" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/dsisreading"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/2844285678/b9945f92af55bff1734b7c5813b7fb93_normal.jpeg" alt="" title="Mark Llobrera"><b class="p-name">Mark Llobrera</b></a></div><div class="webmention__content p-content"><p>✌ @Reading “On Adaptive Web Design’s Second Edition” <a href="https://t.co/exIbUfvdfH">https://t.co/exIbUfvdfH</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-11T12:43:10-05:00">11 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/dsisreading/status/675370250884489216">Permalink</a></div></article></li>
+https://www.aaron-gustafson.com/notebook/links/76beb201c717fd6333c7/:
+  '2015-12-11':
+    675434391045316608: |-
+      <li id="webmention-675434391045316608" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/676406909939904512/rTs9fND4_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@zachleat @SaraSoueidan: That was my comment as well: <a href="https://t.co/vWFYxOmqom">https://t.co/vWFYxOmqom</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-11T16:58:02-05:00">11 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/675434391045316608">Permalink</a></div></article></li>

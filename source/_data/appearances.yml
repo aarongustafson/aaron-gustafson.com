@@ -73,12 +73,12 @@
   outlet: Creative Bloq
   date: 2014-03-28 00:00:00 +0000
   url: http://www.creativebloq.com/creativity/15-pro-techniques-beating-creative-block-3145683
-  description: Dan Rubin, Trent Walton, Derek Featherstone, Rachel Shillcock, and I discussed creative block and what we do to move past it.
+  description: "Dan Rubin, Trent Walton, Derek Featherstone, Rachel Shillcock, and I discussed creative block and what we do to move past it."
 
 - outlet: modern.IE Podcast
   date: 2014-03-27 00:00:00 +0000
   url: https://www.modern.ie/en-us/podcast/modernie-podcast-with-aaron-gustafson
-  description: Josh Holmes and I chatted about the state of web design, progressive enhancement, and more.
+  description: "Josh Holmes and I chatted about the state of web design, progressive enhancement, and more."
 
 - outlet: The Top 50 Books for Web Designers
   date: 2013-11-27 00:00:00 +0000
@@ -89,18 +89,18 @@
   outlet: Net Magazine
   date: 2013-07-31 00:00:00 +0000
   url: http://www.creativebloq.com/responsive-web-design-6-experts-4-questions-7133876
-  description: Helen Bailey cornered Brad Frost, Tim Kadlec, Ben Callahan, Dan Mall, David Rupert, and me to get our thoughts on responsive design.
+  description: "Helen Bailey cornered Brad Frost, Tim Kadlec, Ben Callahan, Dan Mall, David Rupert, and me to get our thoughts on responsive design."
 
 - title: "Big Question: What Was the Last Thing You Built for Fun?"
   outlet: Net Magazine
   date: 2013-06-18 00:00:00 +0000
   url: http://www.creativebloq.com/design/big-question-what-was-last-thing-you-built-fun-6135581
-  description: I got to talk a little about my pet project, [tipr.mobi](http://tipr.mobi).
+  description: "I got to talk a little about my pet project, [tipr.mobi](http://tipr.mobi)."
 
 - outlet: Breaking Development Podcast
   date: 2013-01-22 00:00:00 +0000
   url: http://shoutengine.com/BeyondTheDesktop/adaptive-web-design-with-aaron-gustafson-1643
-  description: Jim King and I chatted about adaptive design, the Chattanooga tech scene, and Web Standards Sherpa.
+  description: "Jim King and I chatted about adaptive design, the Chattanooga tech scene, and Web Standards Sherpa."
 
 - title: "Big Question: What Skills Does a Digital Designer Need In 2013?"
   outlet: Creative Bloq
@@ -118,18 +118,18 @@
   outlet: Net Magazine
   date: 2012-10-05 00:00:00 +0000
   url: http://www.creativebloq.com/design/devs-respond-adobe-edge-suite-10126049
-  description: As part of a feature on Adobe’s release of its Edge Suite, I offered some of my thoughts.
+  description: "As part of a feature on Adobe’s release of its Edge Suite, I offered some of my thoughts."
 
 - outlet: UIE Brainsparks Podcast
   date: 2012-07-20 00:00:00 +0000
   url: http://www.uie.com/brainsparks/2012/07/20/aaron-gustafson-adapting-your-designs-with-progressive-enhancement/
-  description: Jared Spool and I spent a bit of time chatting about progressive enhancement, responsive design, and more in this interview.
+  description: "Jared Spool and I spent a bit of time chatting about progressive enhancement, responsive design, and more in this interview."
 
 - title: "Big Question: Should We Drop Social Media Buttons?"
   outlet: Net Magazine
   date: 2012-07-18 00:00:00 +0000
   url: http://www.creativebloq.com/netmag/big-question-should-we-drop-social-media-buttons-7126198
-  description: While I do think social media buttons are often overused with little to know thought, I don’t despise them and believe they can be used smartly.
+  description: "While I do think social media buttons are often overused with little to know thought, I don’t despise them and believe they can be used smartly."
 
 - title: "Coding the Future: HTML5 Takes the Internet by Storm"
   outlet: BBC News
@@ -140,20 +140,20 @@
 - outlet: ExpressionEngine Podcast
   date: 2012-02-23 00:00:00 +0000
   url: http://ctrlclickcast.com/episodes/progressive-enhancement
-  description: Lea Alcantara, Emily Lewis, and I talked about progressive enhancement, ExpressionEngine & more.
+  description: "Lea Alcantara, Emily Lewis, and I talked about progressive enhancement, ExpressionEngine & more."
   transcript: http://cdn.ctrlclickcast.com/transcripts/2012/eepodcast-063.pdf
 
 - title: "Webkit Scuppers Skip-To-Content Links"
   outlet: Net Magazine
   date: 2012-02-02 00:00:00 +0000
   url: http://www.creativebloq.com/netmag/webkit-scuppers-skip-content-links-2126494
-  description: I weigh in on Webkit’s issue with moving focus to targeted elements. Thankfully, the issue has been resolved now.
+  description: "I weigh in on Webkit’s issue with moving focus to targeted elements. Thankfully, the issue has been resolved now."
 
 - title: "15 Top Web Design and Development Trends For 2012"
   outlet: Creative Bloq
   date: 2012-01-09 00:00:00 +0000
   url: http://www.creativebloq.com/industry-trends/15-top-web-design-and-development-trends-2012-1123018
-  description: I call on responsive designers to consider smaller, “low-end” tablets and phones.
+  description: "I call on responsive designers to consider smaller, “low-end” tablets and phones."
 
 - title: "Firefox 6 out Today"
   outlet: Net Magazine
