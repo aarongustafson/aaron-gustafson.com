@@ -40,6 +40,10 @@
             @include rem( max-width, 220 );
         }
 
+        &__sharing {
+            text-align: center;
+        }
+
     }
 
     @supports (column-count:2) or (-webkit-column-count:2) or (-moz-column-count:2) {

@@ -32,16 +32,13 @@ $social-buttons: (
 
 @include breakup-breakpoint( "global" ) {
 
-	.share-links {
-		white-space: pre-wrap;
-	}
-
-    .share-link {
+	.share-link {
 
         background: $color-green;
 		@include rem( border-radius, 6 );
 
 		display: inline-block;
+		@include rem( margin-top, $default-spacing / 2 );
         padding: 4px 8px;
 
 		&:link,
