@@ -46,9 +46,16 @@
         .entry__meta {
             column-count: 2;
             @include rem( column-gap, $default-spacing );
+
+            dd + dt {
+                margin-top: 0;
+            }
+            dd {
+                @include rem( padding-bottom, $default-spacing );
+            }
         }
     }
-    
+
 }
 
 @include breakup-breakpoint( "medium" ) {
@@ -85,6 +92,13 @@
     @supports (column-count:2) or (-webkit-column-count:2) or (-moz-column-count:2) {
         .entry__meta {
             column-count: 1;
+
+            dd + dt {
+                @include rem( margin-top, $default-spacing );
+            }
+            dd {
+                padding-bottom: 0;
+            }
         }
     }
     

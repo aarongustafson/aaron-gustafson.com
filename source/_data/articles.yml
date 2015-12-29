@@ -50,7 +50,7 @@
   publisher: Web Standards Sherpa
   published: 2012-11-27 00:00:00 +0000
   url: http://webstandardssherpa.com/ask-the-sherpas/finding-a-web-designer
-  notes: Finding talented, reliable people is probably one of the hardest tasks a business owner or manager must do. And, unfortunately, there’s no magic formula to find them.
+  notes: "Finding talented, reliable people is probably one of the hardest tasks a business owner or manager must do. And, unfortunately, there’s no magic formula to find them."
 
 - title: "Q&A: Nested <code>div</code>s"
   publisher: Web Standards Sherpa
@@ -62,13 +62,13 @@
   publisher: Net Magazine
   published: 2012-09-15 00:00:00 +0000
   url: http://www.creativebloq.com/mobile/master-mobile-navigation-2135807
-  notes: Users want content. But first you need to ensure they can locate it, whatever their device type. In this article, I discuss top strategies to adapt your navigation to smaller screens.
+  notes: "Users want content. But first you need to ensure they can locate it, whatever their device type. In this article, I discuss top strategies to adapt your navigation to smaller screens."
 
 - title: Build a Smart Mobile Navigation Without Hacks
   publisher: Net Magazine
   published: 2012-06-07 00:00:00 +0000
   url: http://www.creativebloq.com/netmag/build-smart-mobile-navigation-without-hacks-6126265
-  notes: In this article, I explore creating a progressively-enhanced, CSS-based dropdown navigation menu that works as part of a responsive design.
+  notes: "In this article, I explore creating a progressively-enhanced, CSS-based dropdown navigation menu that works as part of a responsive design."
 
 - title: Cleaner Living Through Content Management
   publisher: Web Standards Sherpa
@@ -80,25 +80,25 @@
   publisher: Net Magazine
   published: 2011-06-28 00:00:00 +0000
   url: http://www.creativebloq.com/design/progressive-enhancement-demystified-6116940
-  notes: In this excerpt from Chapter 1 of my book, <cite>Adaptive Web Design</cite>, I explain what progressive enhancement really means, how it works, and what it&#8217;s got to do with the Galapagos finches and peanut M&amp;Ms.
+  notes: "In this excerpt from Chapter 1 of my book, <cite>Adaptive Web Design</cite>, I explain what progressive enhancement really means, how it works, and what it&#8217;s got to do with the Galapagos finches and peanut M&amp;Ms."
 
 - title: Getting up to Speed with Lighthouses
   publisher: Web Standards Sherpa
   published: 2011-06-28 00:00:00 +0000
   url: http://webstandardssherpa.com/reviews/getting-up-to-speed-with-lighthouses
-  notes: Responding to Worldwide Lighthouses’ request to help them speed up their gallery pages, I discuss file ‘munging’, compression, and organization to improve performance.
+  notes: "Responding to Worldwide Lighthouses’ request to help them speed up their gallery pages, I discuss file ‘munging’, compression, and organization to improve performance."
 
 - title: Now You See Me
   publisher: A List Apart
   published: 2011-06-28 00:00:00 +0000
   url: http://www.alistapart.com/articles/now-you-see-me/
-  notes: Showing and hiding content using JavaScript-based page manipulations for tabbed interfaces, collapsible elements, and accordion widgets is a common development pattern. Learn how your choice of hiding mechanism can influence content accessibility in assistive technologies like screen readers in an excerpt from <cite>Adaptive Web Design</cite>.
+  notes: "Showing and hiding content using JavaScript-based page manipulations for tabbed interfaces, collapsible elements, and accordion widgets is a common development pattern. Learn how your choice of hiding mechanism can influence content accessibility in assistive technologies like screen readers in an excerpt from <cite>Adaptive Web Design</cite>."
 
 - title: A Legendary Misunderstanding
   publisher: Web Standards Sherpa
   published: 2011-03-31 00:00:00 +0000
   url: http://webstandardssherpa.com/reviews/a-legendary-misunderstanding
-  notes: I unearthed code consistency issues at American Express, and shows how we can use <code>fieldset</code> and <code>legend</code> more effectively in the markup of web forms.
+  notes: "I unearthed code consistency issues at American Express, and shows how we can use <code>fieldset</code> and <code>legend</code> more effectively in the markup of web forms."
 
 - title: Improving the Tweet Box
   publisher: Web Standards Sherpa
@@ -110,7 +110,7 @@
   publisher: A List Apart
   published: 2010-06-22 00:00:00 +0000
   url: http://alistapart.com/article/stop-forking-with-css3
-  notes: We’ve un-forked our JavaScript, but now our CSS is a mess. eCSStender could help us address that bu letting us clean up our prefixes.
+  notes: "We’ve un-forked our JavaScript, but now our CSS is a mess. eCSStender could help us address that bu letting us clean up our prefixes."
 
 - title: Adaptive Layouts with Media Queries
   publisher: Net Magazine
@@ -122,25 +122,25 @@
   publisher: Web Standards Sherpa
   published: 2011-06-28 00:00:00 +0000
   url: http://webstandardssherpa.com/reviews/getting-up-to-speed-with-lighthouses
-  notes: Responding to Worldwide Lighthouses’ request to help them speed up their gallery pages, I discuss file ‘munging’, compression, and organization to improve performance.
+  notes: "Responding to Worldwide Lighthouses’ request to help them speed up their gallery pages, I discuss file ‘munging’, compression, and organization to improve performance."
 
 - title: Progressive Enhancement with JavaScript
   publisher: A List Apart
   published: 2008-11-04 12:00:00 -0500
   url: http://www.alistapart.com/articles/progressiveenhancementwithjavascript
-  notes: Organize an execute JavaScript to streamline delivery and ensure no user is left with a bad experience. Part three of a series.
+  notes: "Organize an execute JavaScript to streamline delivery and ensure no user is left with a bad experience. Part three of a series."
 
 - title: Progressive Enhancement with CSS
   publisher: A List Apart
   published: 2008-10-21 00:00:00 +0000
   url: http://www.alistapart.com/articles/progressiveenhancementwithcss
-  notes: Organize multiple style sheets to simplify the creation of environmentally appropriate visual experiences. Support older browsers while keeping your CSS hack-free. Use generated content to provide visual enhancements, and seize the power of advanced selectors to create wondrous (or amusing) effects. Part two of a series.
+  notes: "Organize multiple style sheets to simplify the creation of environmentally appropriate visual experiences. Support older browsers while keeping your CSS hack-free. Use generated content to provide visual enhancements, and seize the power of advanced selectors to create wondrous (or amusing) effects. Part two of a series."
 
 - title: Understanding Progressive Enhancement
   publisher: A List Apart
   published: 2008-10-07 00:00:00 +0000
   url: http://www.alistapart.com/articles/understandingprogressiveenhancement
-  notes: Steven Champeon turned web development upside down, and created an instant best practice of standards-based design, when he introduced the notion of designing for content and experience instead of browsers. In part one of the series, I remind you of the principles of progressive enhancement.
+  notes: "Steven Champeon turned web development upside down, and created an instant best practice of standards-based design, when he introduced the notion of designing for content and experience instead of browsers. In part one of the series, I remind you of the principles of progressive enhancement."
 
 - title: Keeping the Hot Side Hot and the Cold Side Cold
   publisher: Scroll Magazine
@@ -152,25 +152,25 @@
   publisher: A List Apart
   published: 2008-01-21 12:00:00 -0500
   url: http://www.alistapart.com/articles/beyonddoctype
-  notes: For seven years, the DOCTYPE switch has stood designers and developers in good stead as a toggle between standards mode and quirks mode. But when IE7, with its greatly improved support for standards, “broke the web,” it revealed the flaw in our toggle. The quest was on to find a more reliable ensurer of forward compatibility. Is version targeting the answer?
+  notes: "For seven years, the DOCTYPE switch has stood designers and developers in good stead as a toggle between standards mode and quirks mode. But when IE7, with its greatly improved support for standards, “broke the web,” it revealed the flaw in our toggle. The quest was on to find a more reliable ensurer of forward compatibility. Is version targeting the answer?"
 
 - title: Ruining the User Experience
   publisher: A List Apart
   published: 2007-03-27 00:00:00 +0000
   url: http://www.alistapart.com/articles/ruininguserexperience
-  notes: Anticipating your users&#8217; needs is the key to making a good impression; it&#8217;s the little things that matter most. In this article, I explain why progressive enhancement is synonymous with good service.
+  notes: "Anticipating your users’ needs is the key to making a good impression; it’s the little things that matter most. In this article, I explain why progressive enhancement is synonymous with good service."
 
 - title: Push my <code>button</code>
   publisher: Digital Web Magazine
   published: 2006-09-26 00:00:00 +0000
   url: http://www.digital-web.com/articles/push_my_button
-  notes: If there’s one element I think doesn’t get enough respect, it’s gotta be button. It’s played second fiddle to input in tutorials and form examples for as long as I can remember.
+  notes: "If there’s one element I think doesn’t get enough respect, it’s gotta be button. It’s played second fiddle to input in tutorials and form examples for as long as I can remember."
 
 - title: Getting Started with Ajax
   publisher: A List Apart
   published: 2006-03-07 12:00:00 -0500
   url: http://www.alistapart.com/articles/gettingstartedwithajax
-  notes: In this excerpt from O&#8217;Reilly&#8217;s <cite>Web Design in a Nutshell</cite>, I take you aside for a little chat about the birds and the bees. Or maybe about Ajax.
+  notes: "In this excerpt from O’Reilly’s <cite>Web Design in a Nutshell</cite>, I take you aside for a little chat about the birds and the bees. Or maybe about Ajax."
 
 - title: Jeremy Keith Interview
   publisher: Digital Web Magazine
@@ -182,16 +182,16 @@
   publisher: A List Apart
   published: 2005-09-20 00:00:00 +0000
   url: http://www.alistapart.com/articles/improvingprint
-  notes: Some time ago, Eric Meyer showed you how to add URIs to the printed version of your pages using print styles. Sometimes, though, too many inline URIs can make pages hard to read. I created a JavaScript add-on that’ll have you loving your linkage again.
+  notes: "Some time ago, Eric Meyer showed you how to add URIs to the printed version of your pages using print styles. Sometimes, though, too many inline URIs can make pages hard to read. I created a JavaScript add-on that’ll have you loving your linkage again."
 
 - title: More Usability Frosting for Your Accessibility Cake
   publisher: Digital Web Magazine
   published: 2005-04-20 00:00:00 +0000
   url: http://www.alistapart.com/articles/eatcake/
-  notes: Mac users are spoiled. It’s a fact we Windows folks have to live with—when it comes to usable interfaces, Mac applications are far ahead. Even Microsoft makes better products for OS X than for Windows.
+  notes: "Mac users are spoiled. It’s a fact we Windows folks have to live with—when it comes to usable interfaces, Mac applications are far ahead. Even Microsoft makes better products for OS X than for Windows."
 
 - title: Let Them Eat Cake
   publisher: A List Apart
   published: 2004-04-16 00:00:00 +0000
   url: http://www.alistapart.com/articles/eatcake/
-  notes: A growing debate pits accessibility against usability. From our point of view, it’s like pitting peanut butter against jelly. This article helps you create a page that is both usable and accessible, saving readers the trouble of scrolling with a little help from JavaScript and the Document Object Model.
+  notes: "A growing debate pits accessibility against usability. From our point of view, it’s like pitting peanut butter against jelly. This article helps you create a page that is both usable and accessible, saving readers the trouble of scrolling with a little help from JavaScript and the Document Object Model."

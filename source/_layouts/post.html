@@ -76,6 +76,11 @@ javascripts:
 			    {% include asides/related_posts.html %}
 			</footer>
 
+			<aside class="promo promo--book promo--image">
+				<img class="promo__image" src="{{ site.data.promos.awd2e.image }}" alt="">
+				<div class="promo__copy">{{ site.data.promos.awd2e.text | markdownify }}</div>
+			</aside>
+
 			{% if site.disqus_short_name and page.comments == true %}
 				<hr>
 
