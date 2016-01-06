@@ -10341,6 +10341,9 @@ https://www.aaron-gustafson.com/notebook/avoiding-linkrot-in-print-with-the-help
     '682557846509240320': |-
       <li id="webmention-682557846509240320" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.splintered.co.uk/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/135af27b6df41e5fbe0304f0f8c7937de6164e346b1845828c2cb79658bf11ee.jpeg" alt="" title="patrick h. lauke"><b class="p-name">patrick h. lauke</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> <a href="https://twitter.com/sil" rel="nofollow">@sil</a> <a href="https://twitter.com/permacc" rel="nofollow">@permacc&lt;/</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-31T08:44:06-05:00">31 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/patrick_h_lauke/status/682557846509240320">Permalink</a></div></article></li>
+    682554686113759232: |-
+      <li id="webmention-682554686113759232" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/684409509620637696/--FPRPqA_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@patrick_h_lauke @sil @permacc may be doing an upgrade. Looping them in. <a href="https://t.co/ccRAQGTnj4">https://t.co/ccRAQGTnj4</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-31T08:31:33-05:00">31 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/682554686113759232">Permalink</a></div></article></li>
 https://www.aaron-gustafson.com/notebook/label:
   '2015-12-07':
     674077977647456256: |-
@@ -10361,3 +10364,24 @@ https://www.aaron-gustafson.com/notebook/links/joomla-3-4-6-fixes-zero-day-remot
     679371861176786944: |-
       <li id="webmention-679371861176786944" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/676406909939904512/rTs9fND4_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@webcraftsman Argh, Buffer lost the rest of that tweet. <a href="https://t.co/yjoURUnBil">https://t.co/yjoURUnBil</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-22T12:44:08-06:00">22 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/679371861176786944">Permalink</a></div></article></li>
+https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/:
+  '2016-01-06':
+    684814365048975360: "<li id=\"webmention-684814365048975360\" class=\"webmentions__item\"><article
+      class=\"h-cite webmention webmention--content-only\"><div class=\"webmention__author
+      p-author h-card\"><a class=\"u-url\" href=\"https://twitter.com/adamspelbring\"><img
+      class=\"webmention__author__photo u-photo\" src=\"https://pbs.twimg.com/profile_images/612669250700849152/gZthjMk3_normal.png\"
+      alt=\"\" title=\"Adam Spelbring\"><b class=\"p-name\">Adam Spelbring</b></a></div><div
+      class=\"webmention__content p-content\"><p>A Fundamental Disconnect, by @AaronGustafson
+      \n<a href=\"https://t.co/YgK0hmxlFh\">https://t.co/YgK0hmxlFh</a></p>\n</div><div
+      class=\"webmention__meta\"><time class=\"webmention__pubdate dt-published\"
+      datetime=\"2016-01-06T14:10:42-05:00\">6 January 2016</time> | <a class=\"webmention__source
+      u-url\" href=\"https://twitter.com/adamspelbring/status/684814365048975360\">Permalink</a></div></article></li>"
+    '684814365048975360': <li id="webmention-684814365048975360" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://www.avsdesign.net/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/d2ef406a6984f9cd5dca68c9be9d0c40a2e382428bea68b41863515f46a65091.png"
+      alt="" title="Adam Spelbring"><b class="p-name">Adam Spelbring</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/adamspelbring/status/684814365048975360">A
+      Fundamental Disconnect, by @AaronGustafson aaron-gustafson.com/notebook/a-fun…</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-01-06T14:10:42-05:00">6
+      January 2016</time></div></article></li>
