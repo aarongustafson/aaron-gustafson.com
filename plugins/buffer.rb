@@ -102,6 +102,7 @@ module Jekyll
             if twitter
               twitter_text = post.data['twitter_text'] || post.title
               twitter_text = twitter_text[0,twitter_text_length]
+              twitter_text = URI::escape( twitter_text )
 
               twitter_data = payload.dup
               twitter_data['text'] = "#{twitter_text} #{url}"
