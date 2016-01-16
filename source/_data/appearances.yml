@@ -1,8 +1,14 @@
-- title: "Episode 140: Progressive Enhancement FTW"
-  outlet: The Big Web Show
-  date: 2015-12-04 00:00:00 +0000
-  url: http://5by5.tv/bigwebshow/140
-  description: "Jeffrey Zeldman and I discuss my new book, <cite>Adaptive Web Design</cite>, progressive enhancement, my “super hero origin story” (his words), and more."
+- title: "Web Performance: 20+ Experts Share Their Advice and Mistakes"
+  outlet: "CDN News & Insights"
+  date: 2016-01-14 00:00:00 +0000
+  url: https://www.keycdn.com/blog/web-performance-advice/
+  description: "Mine not withstanding, there is some truly great advice in this post."
+
+- title: "60 Web Performance Experts to Follow Online"
+  outlet: "CDN News & Insights"
+  date: 2015-12-10 00:00:00 +0000
+  url: https://www.keycdn.com/blog/web-performance-experts/
+  description: "I’m honored to have been included on this list!"
 
 - title: "Kodsnack Interview"
   outlet: Kodsnack
