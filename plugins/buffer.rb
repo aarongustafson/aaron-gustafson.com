@@ -63,12 +63,14 @@ module Jekyll
         
         site.posts.each do |post|
           
+          # Unpublished
           if ! post.published?
             next
           end
 
+          # Future posts
           date = Date.parse(post.date.strftime("%Y-%m-%d %H:%M:%S"))
-          if date < today
+          if date > today
             next
           end
 
@@ -80,6 +82,13 @@ module Jekyll
           end
 
           if url and ! buffered.include? url
+
+            # Skip old posts and cache them
+            cutoff = Date.parse('2015-12-01')
+            if date < cutoff
+              buffered << url
+              next
+            end
 
             excerpt = post.data['description'] || post.excerpt
             # Convert to HTML
@@ -102,7 +111,7 @@ module Jekyll
             if twitter
               twitter_text = post.data['twitter_text'] || post.title
               twitter_text = twitter_text[0,twitter_text_length]
-              twitter_text = URI::escape( twitter_text )
+              #twitter_text = URI::escape( twitter_text )
 
               twitter_data = payload.dup
               twitter_data['text'] = "#{twitter_text} #{url}"
@@ -166,7 +175,15 @@ module Jekyll
       https.use_ssl = true
       request = Net::HTTP::Post.new(buffer_url.path)
       set_form_data(request, payload)
-      response = https.request(request)
+
+      puts request.inspect
+      #response = https.request(request)
+
+      if response.code == '200'
+        puts "Buffered '#{payload.text}'"
+      else
+        puts "Buffer responded #{response.body}"
+      end
 
     end
 
