@@ -83,13 +83,6 @@ module Jekyll
 
           if url and ! buffered.include? url
 
-            # Skip old posts and cache them
-            cutoff = Date.parse('2015-12-01')
-            if date < cutoff
-              buffered << url
-              next
-            end
-
             excerpt = post.data['description'] || post.excerpt
             # Convert to HTML
             excerpt = Kramdown::Document.new(excerpt).to_html
@@ -176,11 +169,10 @@ module Jekyll
       request = Net::HTTP::Post.new(buffer_url.path)
       set_form_data(request, payload)
 
-      puts request.inspect
-      #response = https.request(request)
+      response = https.request(request)
 
       if response.code == '200'
-        puts "Buffered '#{payload.text}'"
+        puts "Buffered '#{payload['text']}'"
       else
         puts "Buffer responded #{response.body}"
       end
@@ -203,7 +195,7 @@ module Jekyll
     end
     
     def urlencode(str)
-      URI::encode(str)
+      URI::encode(str, '&')
     end
 
   end
