@@ -18,7 +18,7 @@ Thankfully, apart from the very finger-unfriendly hellscape the screen had becom
 
 It was an iPhone 6 I purchased right when they came out, so a warranty repair was not an option. And I don’t see the point of paying for phone insurance or Apple Care[^1], so I was on my own to cover the cost of the repair. No biggie; it was my fault for putting it in the loose pocket of my pajama pants anyway.
 
-[^1] This is the first device I’ve broken in more than a decade of (ab)using expensive smartphones.
+[^1]: This is the first device I’ve broken in more than a decade of (ab)using expensive smartphones.
 
 I began researching my options:
 
