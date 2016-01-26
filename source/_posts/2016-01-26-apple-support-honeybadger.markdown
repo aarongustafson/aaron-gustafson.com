@@ -5,6 +5,7 @@ date: 2016-01-26 17:34:17 -0500
 comments: true
 categories: [personal,"customer service",empathy]
 description: "My iPhone fell clumsily out of my pocket when I was sitting down in the kitchen the other day. I was crestfallen."
+crosspost_to_medium: true
 ---
 
 My iPhone fell clumsily out of my pocket when I was sitting down in the kitchen the other day. *Thwack!* It fell face-first onto the tile from my seated position a mere 18 inches up. Of course the screen cracked. Protective case be damned, the cracks spread across the screen like a spider web cast from razor blades.
@@ -19,11 +20,19 @@ It was an iPhone 6 I purchased right when they came out, so a warranty repair wa
 
 [^1] This is the first device I’ve broken in more than a decade of (ab)using expensive smartphones.
 
-I began researching my options. I could self-repair as [the process is pretty straightforward](http://www.imore.com/iphone-6-screen-replacement-how-to), but in talking with a friend who repairs smartphones for a living, I discovered the replacement screens weren’t that great. Apple offered screen repair for $109, which wasn’t too bad, but it would take a few days to ship the phone back and forth.
+I began researching my options:
 
-I contacted the local authorized Apple repair center and discovered that they would just be sending it on to Apple anyway, so it seemed like my best bet would be to go back to the source. After all, who could know how to best replace a broken iPhone screen ([and digitizer, since they’re fused](https://www.etechparts.com/lcd-screen-and-digitizer-full-assembly-with-small-parts-black-for-iphone-6.html)) than Apple Support.
+1. I could cover the broken phone with a rugged case and just deal with it.
+2. I could use one of our old iPhones until the next version came out.
+3. I could upgrade my phone with AT&T.
+4. I could self-repair as [the process is pretty straightforward](http://www.imore.com/iphone-6-screen-replacement-how-to), but in talking with a friend who repairs smartphones for a living, I discovered the replacement screens weren’t that great.
+5. I could have Apple repair it.
 
-I chatted with a support rep about doing the repair and confirmed that the repair would cost $109. The rep told me, however, that they would need to authorize my card for $299—the out-of warranty replacement cost—in case they discovered other damage to the phone. I agreed (it was my only option) with the understanding that Apple would run some diagnostic utilities to determine what (if any) additional issues the phone might have.
+Apple offers screen repair for $109, which isn’t too bad, but that takes a few days to ship the phone back and forth. They offer an expedited option where they just send you a new phone, but at $299, it seemed silly.
+
+I contacted the local authorized Apple repair center to see if they could do the repair, but it turns out that they would just be sending it on to Apple anyway, so it seemed like my best bet would be to go back to the source. After all, who could know better how to replace a broken iPhone screen ([and digitizer, since they’re fused](https://www.etechparts.com/lcd-screen-and-digitizer-full-assembly-with-small-parts-black-for-iphone-6.html)) than Apple Support?
+
+I chatted with an Apple Support rep about doing the repair and confirmed that the repair would cost $109. The rep told me, however, that they would need to authorize my card for $299—the out-of warranty replacement cost—in case they discovered other damage to the phone. I agreed (it was my only option) with the understanding that Apple would run some diagnostic utilities to determine what (if any) additional issues the phone might have.
 
 A day or two later I got the mailer to send the phone to Apple, I shipped it to them and waited. They confirmed receipt of the phone the next day and, two days later, I got an email saying the phone was en route back to me. I was thrilled with the quick turnaround!
 
@@ -73,7 +82,7 @@ I countered:
 
 Josh, to his credit, was still on my side:
 
-> Right, trust me, I fully understand, or alternatively we could have taken it into the local Apple Authorized Service Provider, which would have been able to diagnose the phone as well in order to determine what had to be done, and then give you a price right then and there. Right, I do the same things with my upgrades. I’ve actually covered cracked screens in cling wrap so that I didn’t need to risk furthering the damage, or hurting myself. I can also fully understand the process of not expecting that there was any further damage, since you were able to sue the phone just fine, and that’s why you ended up getting it setup that way.
+> Right, trust me, I fully understand, or alternatively we could have taken it into the local Apple Authorized Service Provider, which would have been able to diagnose the phone as well in order to determine what had to be done, and then give you a price right then and there. … I’ve actually covered cracked screens in cling wrap so that I didn’t need to risk furthering the damage, or hurting myself. I can also fully understand the process of not expecting that there was any further damage, since you were able to sue the phone just fine, and that’s why you ended up getting it setup that way.
 
 Ultimately, however, it didn’t really matter:
 
@@ -89,7 +98,7 @@ Then he dropped the bombshell:
 
 > So the main bit of information that I want to address is not that the phone was replaced to address issues that may arise down the road. In this case, a screen replacement was attempted and did not yield a functioning device. When that occurs, our only option is to replace the device. I do see from your chats with Michelle and Teresa that they advised this was the procedure that we have
 
-*Wait. What?!* So in replacing the screen, the tech bricked the phone?
+*Wait. What?!* They didn’t find any problems. In replacing the screen, the tech bricked the phone.
 
 > No, not at all. Just that they were unable to have a fully functioning unit after a screen replacement. That does not mean that the tech bricked the phone or messed up when replacing the screen, it means the phone was not able to work after the screen was replaced.
 
@@ -117,6 +126,6 @@ Alexander conceded that the process was less than ideal:
 
 > I don’t disagree, but that does vary from place to place and device to device. Our procedures are in line with most of the mobile phone world on this though. I will certainly leave some feedback for those advisors to be more clear about this process when a repair is set up though.
 
-We talked for a few more minutes, but it was clear I was out of options. I could file a complaint with Apple (and have), but I am skeptical they even pay attention to that stuff. I know they don’t chime in on their own forums. My only other options was to share my story with you, in hopes you might avoid a similar situation.
+We talked for a few more minutes, but it was clear I was out of options. I could file a complaint with Apple (and have), but I am skeptical they even pay attention to that stuff. I know they don’t chime in on their own forums. My only other option was to share my story with you, in hopes you might avoid a similar situation.
 
-So consider yourself warned: If you send your phone to Apple for something as simple as a screen repair, they just may brick your phone and charge you for the convenience.
+So consider yourself warned: If you send your phone to Apple for something as simple as a screen repair, they just may brick your phone and charge you for the convenience. Oh and the replacement phone only has a 90-day warranty. *Hooray!*
