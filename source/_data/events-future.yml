@@ -8,20 +8,10 @@
   date: 2016-03-14 09:00:00 -0400
   location: Nashville, TN USA
 
-- title: Respond
-  url: http://lanyrd.com/cfxzmq
-  date: 2016-04-11 09:00:00 -0400
-  location: Sydney, Australia
-
-- title: Respond
-  url: http://lanyrd.com/cfxzmt
-  date: 2016-04-14 09:00:00 -0400
-  location: Melbourne, Australia
-
-- title: TBA # Respond
-  # url: http://www.webdirections.org/events/
-  date: 2016-04-18 09:00:00 -0400
-  location: Tokyo, Japan
+- title: SpeechTEK
+  url: http://lanyrd.com/2016/speechtek
+  date: 2016-05-22 09:00:00 -0400
+  location: Washington, DC USA
 
 - title: SmashingConf New York
   url: http://lanyrd.com/2016/smashingconf-new-york/
@@ -32,3 +22,13 @@
   url: http://lanyrd.com/2016/smashingconf-freiburg/
   date: 2015-09-13 09:00:00 -0400
   location: Freiburg, Germany
+
+- title: TBA
+  #url: http://lanyrd.com/cfxzmq
+  date: 2017-04-11 09:00:00 -0400
+  location: Sydney, Australia
+
+- title: TBA
+  #url: http://lanyrd.com/cfxzmt
+  date: 2017-04-14 09:00:00 -0400
+  location: Melbourne, Australia
