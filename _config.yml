@@ -31,7 +31,7 @@ gems:
   - jekyll-time-to-read
   - jekyll-redirect-from
   - octopress-date-format
-#  - jekyll-crosspost-to-medium
+  - jekyll-crosspost-to-medium
 
 # If publishing to a subdirectory as in http://site.com/project set 'root: /project'
 root: /
@@ -123,6 +123,7 @@ jekyll-crosspost_to_medium:
   cache: .cache
   status: draft
   license: cc-40-by-sa
+  text: '<p><i>This post originally appeared <a href=\"#{url}\" rel=\"canonical\">on my blog</a>.</i></p>'
 
 # Adaptive Images Config
 adaptive_image:
