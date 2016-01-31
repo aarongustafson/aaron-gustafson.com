@@ -140,11 +140,11 @@ module Jekyll
           'canonicalUrl'  => canonical_url
         }
 
-        crosspost_to_medium(payload)
-        crossposted << url
-
-        # Update cache
-        File.open(@crossposted_file, 'w') { |f| YAML.dump(crossposted, f) }
+        if crosspost_to_medium(payload)
+          crossposted << url
+          # Update cache
+          File.open(@crossposted_file, 'w') { |f| YAML.dump(crossposted, f) }
+        end
       end
     end
 
