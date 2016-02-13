@@ -7675,6 +7675,19 @@ http://www.aaron-gustafson.com/notebook/ramblings-on-new-browser-features-intero
       Friday &#8211; #17 : Safari on IE 31.8.2015 | Jakso.fi</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2015-12-31T18:41:07-05:00">31
       December 2015</time></div></article></li>'
+  '2016-02-08':
+    221424: <li id="webmention-221424" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://howtounite.com/2015/08/03/on-ppks-moratorium-on-new-browser-features/">How
+      To Unite  &raquo; Blog Archive   &raquo; On PPK’s moratorium on new browser
+      features</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-02-08T18:15:43-05:00">8 February 2016</time></div></article></li>
+    221425: <li id="webmention-221425" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://howtounite.com/2015/08/03/on-ppks-moratorium-on-new-browser-features-2/">How
+      To Unite  &raquo; Blog Archive   &raquo; On PPK’s moratorium on new browser
+      features</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-02-08T18:18:33-05:00">8 February 2016</time></div></article></li>
 http://www.aaron-gustafson.com/notebook/links/windows-10-microsoft-edge-browser-war/:
   '2015-08-07':
     '629864217437433856': |-
@@ -10326,6 +10339,62 @@ https://www.aaron-gustafson.com/notebook/css-variables-are-a-bad-idea/:
     674333867927601153: |-
       <li id="webmention-674333867927601153" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/arkoudos"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/2818170510/36d2931322c33ba792c0583c38edd898_normal.jpeg" alt="" title="Γιάννης @arkoudos"><b class="p-name">Γιάννης @arkoudos</b></a></div><div class="webmention__content p-content"><p>@aleksious επίσης, διάβαζα πριν πολύ λίγες ημέρες ότι κάποιοι διαφωνούν <a href="https://t.co/GhIdm2nhD5">https://t.co/GhIdm2nhD5</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-08T16:04:57-05:00">8 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/arkoudos/status/674333867927601153">Permalink</a></div></article></li>
+  '2016-02-06':
+    695887444202237953: |-
+      <li id="webmention-695887444202237953" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/esaborit4code"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1647722212/green_normal.png" alt="" title="Edu Saborit"><b class="p-name">Edu Saborit</b></a></div><div class="webmention__content p-content"><p>CSS variables are as good or bad idea as client-side rendering.
+      Just consider wether they meet your project needs.
+      <a href="https://t.co/rW55Erv7eD">https://t.co/rW55Erv7eD</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-06T03:31:10-05:00">6 February 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/esaborit4code/status/695887444202237953">Permalink</a></div></article></li>
+    '695887444202237953': <li id="webmention-695887444202237953" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/esaborit4code"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/dde825df6af35402db8f051efebd640a2f52d9f5f496a617a57d43459aca7570.png"
+      alt="" title="Edu Saborit"><b class="p-name">Edu Saborit</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/esaborit4code/status/695887444202237953">CSS
+      variables are as good or bad idea as client-side rendering. Just consider wether
+      they meet your project needs. aaron-gustafson.com/notebook/css-v…</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-06T03:31:10-05:00">6
+      February 2016</time></div></article></li>
+  '2016-02-05':
+    695643147213402112: |-
+      <li id="webmention-695643147213402112" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/aardrian"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/477441054895919104/OB69-tiw_normal.jpeg" alt="" title="Adrian Roselli"><b class="p-name">Adrian Roselli</b></a></div><div class="webmention__content p-content"><p>CSS variables in Chrome 49: <a href="https://t.co/jxViNUqm5u">https://t.co/jxViNUqm5u</a></p>
+
+      <p>via @yatil, 2008: <a href="https://t.co/TdAOzHJMdM">https://t.co/TdAOzHJMdM</a>
+      via @StuRobson, 2014: <a href="https://t.co/2dDOyRIJSu">https://t.co/2dDOyRIJSu</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-05T11:20:25-05:00">5 February 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/aardrian/status/695643147213402112">Permalink</a></div></article></li>
+    695599428531593216: |-
+      <li id="webmention-695599428531593216" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/arnauddelafosse"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/378800000473951631/e7b2063bb96f2bef97f1958c92ceef9d_normal.jpeg" alt="" title="Arnaud Delafosse"><b class="p-name">Arnaud Delafosse</b></a></div><div class="webmention__content p-content"><p>“CSS Variables are a Bad Idea” <a href="https://t.co/zRiTFcyeHb">https://t.co/zRiTFcyeHb</a> by @AaronGustafson</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-05T08:26:42-05:00">5 February 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/arnauddelafosse/status/695599428531593216">Permalink</a></div></article></li>
+    695594842672533505: |-
+      <li id="webmention-695594842672533505" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/StuRobson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/686443739443793920/94yOy2i0_normal.jpg" alt="" title="Stuart Robson"><b class="p-name">Stuart Robson</b></a></div><div class="webmention__content p-content"><p>CSS Variables are a Bad Idea <a href="https://t.co/MhW5utZvaN">https://t.co/MhW5utZvaN</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-05T08:08:28-05:00">5 February 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/StuRobson/status/695594842672533505">Permalink</a></div></article></li>
+    '695599428531593216': <li id="webmention-695599428531593216" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://www.arnauddelafosse.com/web"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/fe014f1daac316cd6979cfe80898b37b500543fbbf7f3505fde95920848c9be7.jpeg"
+      alt="" title="Arnaud Delafosse"><b class="p-name">Arnaud Delafosse</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/arnauddelafosse/status/695599428531593216">"CSS
+      Variables are a Bad Idea" aaron-gustafson.com/notebook/css-v… by @AaronGustafson</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-05T08:26:42-05:00">5
+      February 2016</time></div></article></li>
+    '695643147213402112': '<li id="webmention-695643147213402112" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://adrianroselli.com/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/2802f5da6057132df9da7f04acee0dc3b93167f1f8b23230a15c6b138cf8acb1.jpeg"
+      alt="" title="Adrian Roselli"><b class="p-name">Adrian Roselli</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/aardrian/status/695643147213402112">CSS
+      variables in Chrome 49: developers.google.com/web/updates/20… via @yatil, 2008:
+      w3.org/People/Bos/CSS… via @StuRobson, 2014: aaron-gustafson.com/notebook/css-v…</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-05T11:20:25-05:00">5
+      February 2016</time></div></article></li>'
+    '695650888090841088': |-
+      <li id="webmention-695650888090841088" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.456bereastreet.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/ab640d792384e9a704522e0c0ab1a8d56df85949a57779187e06ebf970a7c0f8.png" alt="" title="Roger Johansson"><b class="p-name">Roger Johansson</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/aardrian" rel="nofollow">@aardrian</a> Been in Firefox for a long time, but I guess now more devs will take note…
+      &lt;a href=”https://www.aaron-gustafson.com/notebook/css-vari</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-05T11:51:10-05:00">5 February 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/rogerjohansson/status/695650888090841088">Permalink</a></div></article></li>
+    '695655670323023872': |-
+      <li id="webmention-695655670323023872" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://adrianroselli.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/2802f5da6057132df9da7f04acee0dc3b93167f1f8b23230a15c6b138cf8acb1.jpeg" alt="" title="Adrian Roselli"><b class="p-name">Adrian Roselli</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/rogerjohansson" rel="nofollow">@rogerjohansson</a> Sadly, they only care when it makes it into their binky browser.
+      &lt;a href=”https://www.aaron-gustafson.com/notebook/css-va</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-05T12:10:11-05:00">5 February 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/aardrian/status/695655670323023872">Permalink</a></div></article></li>
 https://www.aaron-gustafson.com/notebook/links/flexbox-s-best-kept-secret-bd3d892826b6/:
   '2015-12-04':
     672894290171961344: |-
@@ -10563,6 +10632,31 @@ https://www.aaron-gustafson.com/notebook/playing-with-flexbox-and-quantity-queri
       Skovgaard https://twitter.com/AaronGustafson/status/689587488852197380#favorited-by-27247248</a></div><div
       class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-01-20T00:14:22-05:00">20
       January 2016</time></div></article></li>
+  '2016-02-07':
+    696405481607139328: |-
+      <li id="webmention-696405481607139328" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/jlkinley"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/142996030/jeff-head-small_normal.jpg" alt="" title="Jeff Kinley"><b class="p-name">Jeff Kinley</b></a></div><div class="webmention__content p-content"><p>@aaronGustafson Brilliant article on using calc with using Flexbox to deal with margins and gutters. <a href="https://t.co/pae3bBDDtZ">https://t.co/pae3bBDDtZ</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-07T13:49:40-05:00">7 February 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/jlkinley/status/696405481607139328">Permalink</a></div></article></li>
+    '696405481607139328': <li id="webmention-696405481607139328" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/jlkinley"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/343ae5d82bbeb259ffa6d00ee64862e2b1891084cf654f790eb628a35674b2c6.jpeg"
+      alt="" title="Jeff Kinley"><b class="p-name">Jeff Kinley</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/jlkinley/status/696405481607139328">@aaronGustafson
+      Brilliant article on using calc with using Flexbox to deal with margins and
+      gutters. aaron-gustafson.com/notebook/playi…</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2016-02-07T13:49:40-05:00">7
+      February 2016</time></div></article></li>
+  '2016-02-01':
+    '689587488852197380': <li id="webmention-689587488852197380" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/IgnaciodeNuevo"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/ff512170a88e9c9c0758154eb01f635cd67bf334eb58f9804af45e31d4f3bf72.jpeg"
+      alt="" title="Ignacio Villanueva"><b class="p-name">Ignacio Villanueva</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/689587488852197380#favorited-by-2730132444">Ignacio
+      Villanueva tag:twitter.com,2013:689587488852197380_favorited_by_2730132444 Ignacio
+      Villanueva https://twitter.com/AaronGustafson/status/689587488852197380#favorited-by-2730132444</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-01T11:45:44-05:00">1
+      February 2016</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/links/on-accessibility-and-the-lack-of-proper-html/:
   '2016-01-26':
     692109287104122881: |-
@@ -10657,3 +10751,10 @@ https://www.aaron-gustafson.com/notebook/apple-support-honeybadger/:
     '692939108361080832': |-
       <li id="webmention-692939108361080832" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/seh"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/9f47e0c9f43bb05300b4f2f3e669dfbb6ba3332604d3b5a61efc8ad770186b42.jpeg" alt="" title="Sarah Hopkins"><b class="p-name">Sarah Hopkins</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> “I recognize your strife, but understand that this is just the way the universe works.”</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-01-28T21:15:32-08:00">28 January 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/seh/status/692939108361080832">Permalink</a></div></article></li>
+  '2016-02-03':
+    694895927136358400: |-
+      <li id="webmention-694895927136358400" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/mrsourdust"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1362292195/image_normal.jpg" alt="" title="David Givens"><b class="p-name">David Givens</b></a></div><div class="webmention__content p-content"><p>Apple Support: Honeybadger <a href="https://t.co/cWbWmqIZdu">https://t.co/cWbWmqIZdu</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-03T09:51:14-05:00">3 February 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/mrsourdust/status/694895927136358400">Permalink</a></div></article></li>
+    694895879308718081: |-
+      <li id="webmention-694895879308718081" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/mrsourdust"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1362292195/image_normal.jpg" alt="" title="David Givens"><b class="p-name">David Givens</b></a></div><div class="webmention__content p-content"><p>iPhorewarned is iPhorearmed. <a href="https://t.co/2HlmwVsryz">https://t.co/2HlmwVsryz</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-03T09:51:02-05:00">3 February 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/mrsourdust/status/694895879308718081">Permalink</a></div></article></li>

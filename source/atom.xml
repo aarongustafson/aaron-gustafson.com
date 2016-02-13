@@ -17,7 +17,7 @@ layout: null
 	{% for post in site.posts limit: 20 %}
 		{% if post.ref_url %}
 			<entry>
-				<title type="html"><![CDATA[{% if site.titlecase %}{{ post.title | titlecase | cdata_escape }}{% else %}{{ post.title | cdata_escape }}{% endif %}]]></title>
+				<title type="html"><![CDATA[Link: {% if site.titlecase %}{{ post.title | titlecase | cdata_escape }}{% else %}{{ post.title | cdata_escape }}{% endif %}]]></title>
 				<link href="{{ site.url }}{{ post.url | replace:"notebook/","notebook/links/" }}"/>
 				<updated>{{ post.date | date_to_xmlschema }}</updated>
 				<id>{{ site.url }}{{ post.id | replace:"notebook/","notebook/links/" }}</id>
@@ -25,7 +25,7 @@ layout: null
 			</entry>
 		{% else %}
 			<entry>
-				<title type="html"><![CDATA[{% if site.titlecase %}{{ post.title | titlecase | cdata_escape }}{% else %}{{ post.title | cdata_escape }}{% endif %}]]></title>
+				<title type="html"><![CDATA[Post: {% if site.titlecase %}{{ post.title | titlecase | cdata_escape }}{% else %}{{ post.title | cdata_escape }}{% endif %}]]></title>
 				<link href="{{ site.url }}{{ post.url }}"/>
 				<updated>{{ post.date | date_to_xmlschema }}</updated>
 				<id>{{ site.url }}{{ post.id }}</id>
