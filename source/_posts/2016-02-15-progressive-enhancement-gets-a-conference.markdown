@@ -5,7 +5,6 @@ date: 2016-02-15 10:00:51 -0500
 comments: true
 categories: ["progressive enhancement",conferences]
 description: "I interviewed EnhanceConf’s organizer, Simon McMcanus."
-published: false
 # crosspost_to_medium: true
 ---
 
