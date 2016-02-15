@@ -92,3 +92,5 @@ I'd like to do some traveling this year, maybe 2018?
 <hr>
 
 EnhanceConf will take place March 4th at the [RSA House](http://www.thersa.org/) in London. [Tickets are available on the conference website](http://enhanceconf.com/tickets.html). I will also be giving [a one-day workshop entitled Planning Adaptive Interfaces](http://enhanceconf.com/workshop.html) on March 3rd as part of the conference. Seating is limited.
+
+EnhanceConf is offering a small number of educational scholarships. For more information on the scholarships and how to apply, check out [Simon’s post about the program](https://simonmcmanus.wordpress.com/2016/02/14/enhanceconf-scholarship/).
