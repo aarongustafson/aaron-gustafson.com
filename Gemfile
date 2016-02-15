@@ -18,7 +18,7 @@ group :development do
   gem 'jekyll-redirect-from'
   gem 'nokogiri'
   gem 'kramdown'
-  gem 'jekyll-crosspost-to-medium', '~> 0.1'
+  gem 'jekyll-crosspost-to-medium'
 end
 
 gem 'sinatra', '~> 1.4.2'

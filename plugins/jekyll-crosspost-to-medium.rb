@@ -10,7 +10,7 @@
 #
 #  `crosspost_to_medium: true`
 #
-#  You can control crossposting globally by setting `enabled: true` under the 
+#  You can control crossposting globally by setting `enabled: true` under the
 #  `jekyll-crosspost_to_medium` variable in your Jekyll configuration file.
 #  Setting it to false will skip the processing loop entirely which can be
 #  useful for local preview builds.
@@ -114,13 +114,13 @@ module Jekyll
       content.prepend("<h1>#{title}</h1>")
       # Append a canonical link and text
       # TODO Accept a position option, e.g., top, bottom.
-      # 
+      #
       # User the user's config if it exists
       if @settings['text']
           canonical_text = "#{@settings['text']}"
           canonical_text = canonical_text.gsub /{{ url }}/, canonical_url
       # Otherwise, use boilerplate
-      else 
+      else
           canonical_text = "<p><i>This article was originally posted <a href=\"#{url}\" rel=\"canonical\">on my own site</a>.</i></p>"
       end
       content << canonical_text
@@ -176,6 +176,7 @@ module Jekyll
 
       # Post it
       response = https.request(request)
+      puts response.body
 
       if response.code == '201'
         puts "Posted '#{payload['title']}' to Medium (#{payload['publishStatus']})"
