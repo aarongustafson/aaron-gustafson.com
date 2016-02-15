@@ -12,8 +12,6 @@ On March 4th, I’ll be in London to give the closing talk at [EnhanceConf](http
 
 <!-- more -->
 
-<div class="interview">
-
 <b class="interview__attribution">Me:</b> As a philosophy, progressive enhancement has been around for more than a dozen years. Why do you think it needs a conference now?
 
 <b class="interview__attribution">Simon:</b> I first started thinking about EnhanceConf in 2014. At the time, Tom Dale had declared progressive enhancement dead and I had just heard Henrik Joreteg telling his Single Page Story.I was hearing lots of talk about progressive enhancement being hard and expensive when my experience showed quite the opposite.
@@ -89,8 +87,6 @@ If at the end of EnhanceConf we had a reasoned and nurturing community able to t
 <b class="interview__attribution">Simon:</b> EnhanceConf is the first conference I’ve organised. It’s been an unfathomable amount of work and financial risk to get this far and it’s mostly been done in my evenings and weekends. That said, it has been quite fun.
 
 I'd like to do some traveling this year, maybe 2018?
-
-</div>
 
 <hr>
 
