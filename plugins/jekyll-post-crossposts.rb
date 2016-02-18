@@ -21,12 +21,9 @@ module Jekyll
         crosspost_caches.each do |source, file|
           if File.exists?(file)
             posts = open(file) { |f| YAML.load(f) }
-            posts.each do |original_url, crosspost_url|
-              puts "original: #{original_url}"
-              puts "self: #{self.url}"
-              if original_url == self.url
-                crossposted_to[source] = crosspost_url
-              end
+            if posts.has_key? self.url
+              puts "Found crosspost to #{source}: #{posts[self.url]}"
+              crossposted_to[source] = posts[self.url]
             end
           end
         end
