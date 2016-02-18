@@ -10774,3 +10774,23 @@ https://www.aaron-gustafson.com/notebook/apple-support-honeybadger/:
     694895879308718081: |-
       <li id="webmention-694895879308718081" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/mrsourdust"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1362292195/image_normal.jpg" alt="" title="David Givens"><b class="p-name">David Givens</b></a></div><div class="webmention__content p-content"><p>iPhorewarned is iPhorearmed. <a href="https://t.co/2HlmwVsryz">https://t.co/2HlmwVsryz</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-03T09:51:02-05:00">3 February 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/mrsourdust/status/694895879308718081">Permalink</a></div></article></li>
+https://www.aaron-gustafson.com/notebook/enabling-webmentions-in-jekyll/:
+  '2016-02-16':
+    287900: <li id="webmention-287900" class="webmentions__item"><article class="h-cite
+      webmention webmention--title-only"><div class="webmention__author p-author h-card"><a
+      class="u-url" href="http://matienzo.org/"><b class="p-name">Mx A. Matienzo</b></a></div>
+      <div class="webmention__title p-name"><a href="http://matienzo.org/2016/jekyll-todo-list/">My
+      Jekyll todo list</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-02-16T18:01:24-05:00">16 February 2016</time></div></article></li>
+https://www.aaron-gustafson.com/notebook/progressive-enhancement-gets-a-conference/:
+  '2016-02-16':
+    '699430249222840320': <li id="webmention-699430249222840320" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/olleolleolle"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/126385c6988fbe9fd743b7cfe67f3b1c7d8e1a214daa333c2c59ddbb46547517.jpeg"
+      alt="" title="Olle Jonsson"><b class="p-name">Olle Jonsson</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/699430249222840320#favorited-by-1482161">Olle
+      Jonsson tag:twitter.com,2013:699430249222840320_favorited_by_1482161 Olle Jonsson
+      https://twitter.com/AaronGustafson/status/699430249222840320#favorited-by-1482161</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-16T02:17:05-05:00">16
+      February 2016</time></div></article></li>

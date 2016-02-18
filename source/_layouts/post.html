@@ -40,6 +40,7 @@ javascripts:
 							</dd>
 		        		{% endif %}
 		        		
+		        		{% comment %}
 		        		{% if page.canonical or page.crossposted %}
 		        			<dt>Crossposted</dt>
 		        			{% if page.canonical and page.canonical_site %}
@@ -47,6 +48,14 @@ javascripts:
 		        			{% endif %}
 		        			{% for item in page.crossposted  %}
 		        				<dd><a class="u-syndication" href="{{ item.url }}">{{ item.site }}</a></dd>
+		        			{% endfor %}
+						{% endif %}
+						{% endcomment %}
+		        		
+						{% if page.crossposts %}
+		        			<dt>Crossposted</dt>
+		        			{% for crosspost in page.crossposts  %}
+		        				<dd><a class="u-syndication" href="{{ crosspost[1] }}">{{ crosspost[0] }}</a></dd>
 		        			{% endfor %}
 						{% endif %}
 				

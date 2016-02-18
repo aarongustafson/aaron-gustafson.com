@@ -125,6 +125,10 @@ jekyll-crosspost_to_medium:
   license: cc-40-by-sa
   text: '<p><i>This post originally appeared <a href=\"#{url}\" rel=\"canonical\">on my blog</a>.</i></p>'
 
+# Crossposts
+crosspost_caches:
+  Medium: ./.cache/medium_crossposted.yml
+
 # Adaptive Images Config
 adaptive_image:
   cache: 2592000
