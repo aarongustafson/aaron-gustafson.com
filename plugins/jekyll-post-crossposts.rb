@@ -15,14 +15,15 @@ module Jekyll
     
     alias orig_to_liquid to_liquid
     def to_liquid
-        puts "crossposts to liquid"
-        crosspost_caches = Jekyll.configuration({})['crosspost_caches'] || {}
+        crosspost_caches = site.config['crosspost_caches'] || {}
 
         crossposted_to = {}
         crosspost_caches.each do |source, file|
           if File.exists?(file)
             posts = open(file) { |f| YAML.load(f) }
             posts.each do |original_url, crosspost_url|
+              puts "original: #{original_url}"
+              puts "self: #{self.url}"
               if original_url == self.url
                 crossposted_to[source] = crosspost_url
               end

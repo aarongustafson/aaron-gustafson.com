@@ -52,9 +52,9 @@ javascripts:
 						{% endif %}
 						{% endcomment %}
 		        		
-						{% if page.crossposts %}
+						{% if page.crossposted %}
 		        			<dt>Crossposted</dt>
-		        			{% for crosspost in page.crossposts  %}
+		        			{% for crosspost in page.crossposted  %}
 		        				<dd><a class="u-syndication" href="{{ crosspost[1] }}">{{ crosspost[0] }}</a></dd>
 		        			{% endfor %}
 						{% endif %}
