@@ -59,7 +59,7 @@
             $link = $link.parentNode;
         }
         
-        $video_embed.setAttribute( 'src', $video_links[link_count].getAttribute('data-lazy-video-src') );
+        $video_embed.setAttribute( 'src', $link.getAttribute('data-lazy-video-src') );
         
         $link.parentNode.replaceChild( $video_embed, $link );
         
