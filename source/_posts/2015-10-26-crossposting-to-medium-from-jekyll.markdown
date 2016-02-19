@@ -6,9 +6,6 @@ comments: true
 categories: [jekyll,octopress,blogging,"indie web"]
 description: "Last week, Jeremy Keith posted about syndicating his content to Medium using their new API."
 crosspost_to_medium: true
-crossposted:
-  - site: Medium
-    url: https://medium.com/@AaronGustafson/crossposting-to-medium-from-jekyll-eb52aa3379cb#.jd1ar05m3
 ---
 
 Last week, [Jeremy Keith posted about syndicating his content to Medium using their new API](https://adactio.com/journal/9694). Before they added [the API](https://github.com/Medium/medium-api-docs), there was no way to automatically publishing to [Medium](https://medium.com) from your own blog. And doing it manually was quite tedious.

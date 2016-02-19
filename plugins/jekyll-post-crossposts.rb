@@ -13,8 +13,8 @@ module Jekyll
 
   class Post
     
-    alias orig_to_liquid to_liquid
-    def to_liquid
+    alias :orig_to_liquid :to_liquid
+    def to_liquid(attrs = nil)
         crosspost_caches = site.config['crosspost_caches'] || {}
 
         crossposted_to = {}
@@ -22,13 +22,16 @@ module Jekyll
           if File.exists?(file)
             posts = open(file) { |f| YAML.load(f) }
             if posts.has_key? self.url
-              puts "Found crosspost to #{source}: #{posts[self.url]}"
               crossposted_to[source] = posts[self.url]
             end
           end
         end
 
-        h = orig_to_liquid
+        if crossposted_to == {}
+          crossposted_to = nil
+        end
+
+        h = orig_to_liquid(attrs)
         h['crossposted'] = crossposted_to
         h
     end

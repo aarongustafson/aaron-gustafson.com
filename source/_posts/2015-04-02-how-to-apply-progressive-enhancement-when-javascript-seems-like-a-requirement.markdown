@@ -5,9 +5,6 @@ date: 2015-04-02 09:14:40 -0500
 comments: true
 categories: ["web design","progressive enhancement",javascript]
 description: "On Stack Overflow last week, JamHam asked how to apply progressive enhancement in interfaces that seem to require JavaScript. Unfortunately he deleted the question before I could post my response, so I thought I would post it all here for posterity."
-crossposted:
-  - site: Medium
-    url: hhttps://medium.com/@AaronGustafson/how-to-apply-progressive-enhancement-when-javascript-seems-like-a-requirement-6cf91e0822cf#.5db233c95
 ---
 
 On Stack Overflow last week, [JamHam](http://stackoverflow.com/users/4719194/jamham) asked how to apply progressive enhancement in interfaces that seem to require JavaScript. Unfortunately he deleted the question before I could post my response, so I thought I would post it all here for posterity.
