@@ -1,0 +1,31 @@
+---
+layout: post
+title: "EnhanceConf 2016"
+date: 2016-02-19 18:33:57 -0500
+comments: true
+categories: []
+description: ""
+---
+
+Everything is cyclical
+lessons learned from the past pay dividends in the future
+Slow networks -> global networks, mobile networks
+Small screens -> mobile, wearables
+Old school video games -> the future of voice interfaces
+Interface is a conversation
+What is the conversation we want to have with our audience?
+How do we design it?
+The point of design is to illuminate, to streamline, to remove reduce the friction inherent in accomplishing a task
+It all starts with the writing
+Facebook example
+Writing for our audience, using words they would use, is the first step
+Choosing the right markup patterns is another
+We’ll need to spell out relationships that are implied visually
+(the outline, fields & labels, ARIA, etc.)
+We’ll need to be respectful of our users’ time (get to the point, streamline content, remove distractions, axe non-required fields)
+That will get us pretty far, but Microsoft and Amazon have some ideas around how we can take things further…
+Microsoft is enabling installed websites to hook into Cortana, allowing users to trigger functionality on that site using their voice.
+(Show that)
+Similarly, Amazon’s Alexa service can be "taught" skills that enable someone using the Echo or Fire TV or any other device hooked into that service immediate access to the functionality of your website.
+(Show that)
+When Luke Wroblewski coined "mobile first", he told us to focus on the core purpose of our pages and that sage advice is even more important when it comes to the headless UI.
