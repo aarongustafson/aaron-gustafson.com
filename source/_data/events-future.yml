@@ -8,6 +8,16 @@
   date: 2016-03-14 09:00:00 -0400
   location: Nashville, TN USA
 
+- title: RWD Summit
+  url: http://environmentsforhumans.com/2016/responsive-web-design-summit/
+  date: 2016-03-30 09:00:00 -0400
+  location: Online
+
+- title: UIE Virtual Seminar
+  #url: http://lanyrd.com/2016/enhanceconf/
+  date: 2016-03-31 09:00:00 -0400
+  location: Online
+
 - title: SpeechTEK
   url: http://lanyrd.com/2016/speechtek
   date: 2016-05-22 09:00:00 -0400
@@ -20,7 +30,7 @@
 
 - title: SmashingConf Freiburg
   url: http://lanyrd.com/2016/smashingconf-freiburg/
-  date: 2015-09-13 09:00:00 -0400
+  date: 2016-09-13 09:00:00 -0400
   location: Freiburg, Germany
 
 - title: TBA

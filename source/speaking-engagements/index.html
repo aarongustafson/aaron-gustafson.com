@@ -8,6 +8,8 @@ show_events: false
 footer: true
 sidebars: false
 sharing: false
+javascripts:
+  body: ['speaking-engagements.min']
 ---
 
 <h1 class="page__title">A Complete List of My Conferences &amp; Workshops</h1>
@@ -35,7 +37,8 @@ sharing: false
 			<ol class="listing listing--events">
 		{% endif %}
 
-		<li class="listing__item listing__item--{{ forloop.index }} event event--future">
+		<li class="listing__item listing__item--{{ forloop.index }} event event--future"
+			data-date="{{ event.date | date: "%Y-%m-%d" }}">
 			{% if event.url %}
 				<a href="{{ event.url }}">
 			{% endif %}
@@ -70,7 +73,8 @@ sharing: false
 
 	<ol class="listing listing--events">
 		{% for event in site.data.events-past %}
-			<li class="listing__item listing__item--{{ forloop.index }} event event--past">
+			<li class="listing__item listing__item--{{ forloop.index }} event event--past"
+				data-date="{{ event.date | date: "%Y-%m-%d" }}">
 				
 				{% if event.url %}
 					<a href="{{ event.url }}">

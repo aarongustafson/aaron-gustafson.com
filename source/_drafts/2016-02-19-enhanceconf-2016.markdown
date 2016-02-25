@@ -7,11 +7,74 @@ categories: []
 description: ""
 ---
 
-Everything is cyclical
-lessons learned from the past pay dividends in the future
-Slow networks -> global networks, mobile networks
-Small screens -> mobile, wearables
-Old school video games -> the future of voice interfaces
+Early last year, a cry for help on Stack Overflow drew my attention:
+
+> I’ve been trying to make my site (a content publishing “web app”) work fully without JavaScript, however, I’ve found myself in situations where I can’t honestly think how I would do some features without it.
+
+The submitter is certainly not alone in feeling this way. The ways we build websites change all the time. When I started out, it was pretty simple: you had HTML. Lots and lots of HTML. We also had Java applets, then Shockwave and Flash. Then we got some very basic stylesheet support. Then JavaScript.
+
+As the years pressed on, the three major technologies underpinning the Web—HTML, CSS, and JavaScript—evolved and became even more powerful.
+
+Things coalesced for a while in the early oughts before Jesse James Garrett re-christened a relatively obscure Microsoft creation, `XMLHttpRequest`, AJAX and set countless designers hearts aflutter with the promise of asynchronous communication with the server. And at the heart of this revolution was JavaScript and companies began betting their entire web presence on its availability. Most learned that wasn’t such a good idea and began using it as an enhancement to the experience rather than a requirement.
+
+After Ajax, there was HTML5, CSS3, and a host of new JavaScript APIs, all helpfully classified as "HTML5" by the same marketing wonks who gave us DHTML. Then there was the rise of the JavaScript frameworks—Angular, Knockout, Backbone, Ember, React. Thing just keep changing. Sometimes slowly, but more often than not at such a speedy clip it leaves my head spinning.
+
+The one thing I’ve learned however, being an "old man" in Web terms, is that web design is cyclical, just like real life. The challenges we face in building web products today are not new challenges. Moreover, the lessons we learned building similar products in the "Web 1.0" days pay dividends today and will continue to in the future.
+
+When I started out on the Web, I had a 28.8 kbit/s modem, but still had to support users on 14.4 kbit/s connections. That’s half the speed I was running at. That may have been 20 years ago, but the lessons I learned about streamlining pages, optimizing images, and minimizing downloads has helped immeasurably when dealing with high-latency mobile networks and excruciatingly slow "broadband" connections. (I’m looking at you, every hotel ever.)
+
+When I started out on the Web, I had an 800x600 monitor, but still had to support 640x480 screen resolutions. I learned the importance of prioritizing content way before media queries and flexbox enabled us to move things around on the fly. And while our computer screens keep getting bigger, mobile devices and wearables present the very same challenges I was tackling with 640x480, but with even tighter confines.
+
+When I started out on the Web, there was no JavaScript. All dynamic functionality had to be handled by the server. I learned how to process web forms in Perl, later trading in my CGI scripts for PHP, Ruby, and Python. And while the vast majority of our users today have JavaScript baked into their browsers, I still rely on server-side fallbacks because I realize that JavaScript is brittle and the Web is and unpredictable execution environment.
+
+You’re a savvy bunch, so I’m sure none of this is news to you. So I want to spend the bulk of my time talking about the cycle that’s about to hit us that you might not be considering yet: Voice.
+
+Before we go there, though, let’s take a trip back in time to one of the earliest computer games: Zork. Zork was a text-based adventure game that operated a lot like a Dungeons & Dragons game, with the program serving the role of gamemaster. As you moved from location to location throughout the game, the program would describe the environment and note objects or people you could interact with. As the player, you’d type what you wanted to do and the program would tell you the results of your actions.
+
+As this was the early days of computer gaming, you might think Zork’s interactions would be simple noun-verb combinations—"kill troll"—but Zork was more sophisticated than that. Its parser was could understand far more complex commands—"hit the troll with the Elvish sword". The experience was far more natural, like it would be if you were playing a table top game with friends.
+
+At the center of every Web page, every interface is a conversation. You engage your users directly in an effort to inform them, entertain them, or persuade them to act in a particular way. How this conversation goes will directly affect the experience your users have.
+
+* **Homepage** - You’ve just met someone and are explaining what you do (and, in some cases, why it matters). It goes best if you can find a way to relate what you do to something they’ve experienced.
+* **Contact Form** - You’re trying to understand what someone needs in order to help them. Managing their expectations is key—let them know how long it may take you to get back to them.
+* **Product Page** - You’re explaining what this object or service is, what it does, and how it will benefit them. If you know the type of person you’ll be having this conversation with ahead of time, you’d probably plan ahead so you’re ready to answer their questions quickly and easily.
+* **Status Update** - You’re there to help someone open up… and then you shut up and listen (and mine their data for marketing purposes).
+
+When you approach interfaces as conversations, it humanizes the interactions and improves your users’ experiences. It also improves your product.
+
+Over the 2011 holidays, Facebook users were uploading photos like crazy. In the span of a few days, Facebook processed more photo uploads than are contained in the entirety of Flickr. Seriously, that’s a lot of photos.
+
+One unintended consequence of this deluge of photo uploads was a significant uptick in people asking Facebook to remove specific ones. Facebook received millions of these “photo reports”, but they made no sense: Moms holding babies reported for harassment, pictures of puppies reported for hate speech, and so on. Roughly 97% of these photo reports were dramatically mis-categorized.
+
+Facebook’s engineers reached out to some of the users who had reported these photos to get a bit more background regarding their submissions. At the time Facebook’s photo reporting interface provided a list of reasons users could choose from if they wanted a photo removed, but, as Facebook soon discovered, many of the reports were made because users didn’t want the photo posted for reasons other than those provided. In some cases, it was because they didn’t like how they looked in the photo. In others, it was because the photo was of an ex-partner or even a beloved pet they’d shared with an ex-boyfriend or ex-girlfriend.
+
+The existing photo reporting tool had not done a good job of accounting for these more personal reasons for wanting a photo removed, so the Facebook engineers went to work. They added a step that asked *How does this photo make you feel*? The options were simple:
+
+*	Embarrassing
+*	Upsetting
+*	Saddening
+*	Bad Photo
+*	Other
+
+The “other” option also provided a free-response text field to fill in.
+
+With this system in place, they found that 50% of reporters who answered the new question chose one of the provided options. That was pretty helpful, but there was still a problem: 34% of the “other” respondents were writing “It’s embarrassing” in the blank rather than choosing the “embarrassing” option already provided.
+
+What the Facebook team realized was that people were not identifying with the “embarrassing” text (or may have even thought it was referring to them, rather than assuming the implied “It’s”). A subtle shift in language was needed, so they changed the label to Please describe the photo and they updated the options to mirror how people actually talk:
+
+*	It’s embarrassing
+*	It’s a bad photo of me
+*	It makes me sad
+
+With this subtle change, they were able to increase the percentage of photo reporters who chose one of the options provided to a whopping 78%.
+
+Words matter. Even in something as simple and banal as a form, the words you choose set the tone for your users’ experiences and often have an affect on what they do, or fail to do.
+
+The text of your interfaces—especially form labels and responses—is just one small part of the content picture. There are many other types of content like product descriptions, marketing copy, legal statements, photography, illustrations, visualizations, video, audio, and more. Content is where experience begins. We often lose sight of that.
+
+
+
+
 Interface is a conversation
 What is the conversation we want to have with our audience?
 How do we design it?
@@ -29,3 +92,11 @@ Microsoft is enabling installed websites to hook into Cortana, allowing users to
 Similarly, Amazon’s Alexa service can be "taught" skills that enable someone using the Echo or Fire TV or any other device hooked into that service immediate access to the functionality of your website.
 (Show that)
 When Luke Wroblewski coined "mobile first", he told us to focus on the core purpose of our pages and that sage advice is even more important when it comes to the headless UI.
+Paying attention to the conversation is key to success in the future Web
+[optional]
+Global audiences
+literacy
+[/optional]
+We need to think beyond the confines of our browsers, our screens, and our graphical user interfaces and embrace the original interface… conversation
+
+"It is pitch black. You are likely to be eaten by a grue"

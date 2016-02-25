@@ -10629,6 +10629,17 @@ https://www.aaron-gustafson.com/notebook/affirming-user-choice-with-checkboxes/:
       интересных материалов из мира веб-разработки и IT за последнюю неделю №193 (3
       — 10 января 2016) - itfm.pro</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2016-01-10T16:21:12-05:00">10 January 2016</time></div></article></li>
+  '2016-02-24':
+    '702632954779013120': <li id="webmention-702632954779013120" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://www.uie.com/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/f2a36a140a7a1a9fcffcfcb849ce914e4ba37be916a243bb8ee4c8c7761da1c2.jpeg"
+      alt="" title="UIE"><b class="p-name">UIE</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/UIE/status/702632954779013120">Affirming
+      User Choice With Checkboxes, the 2nd entry in @AaronGustafson's Modern Web Form
+      Best Practices series. ow.ly/YHDZa</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2016-02-24T18:15:25-05:00">24
+      February 2016</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/playing-with-flexbox-and-quantity-queries/:
   '2016-01-19':
     '689587488852197380': <li id="webmention-689587488852197380" class="webmentions__item"><article
@@ -10695,6 +10706,18 @@ https://www.aaron-gustafson.com/notebook/playing-with-flexbox-and-quantity-queri
       Villanueva tag:twitter.com,2013:689587488852197380_favorited_by_2730132444 Ignacio
       Villanueva https://twitter.com/AaronGustafson/status/689587488852197380#favorited-by-2730132444</a></div><div
       class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-01T11:45:44-05:00">1
+      February 2016</time></div></article></li>
+  '2016-02-23':
+    308829: <li id="webmention-308829" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://www.timeoutpk.net/techniques-and-tools-smashing-magazine/">Techniques
+      and Tools – Smashing Magazine | TimeOutPk</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2016-02-23T13:20:03-05:00">23
+      February 2016</time></div></article></li>
+    308902: <li id="webmention-308902" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://digitalmofo.com/the-flexbox-reading-list-techniques-and-tools/">DigitalMofo</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-23T19:03:27-05:00">23
       February 2016</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/links/on-accessibility-and-the-lack-of-proper-html/:
   '2016-01-26':
@@ -10841,3 +10864,24 @@ https://www.aaron-gustafson.com/publications/:
     699841809682403328: |-
       <li id="webmention-699841809682403328" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/alienlebarge"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/555464003842228224/W5DVL1yn_normal.jpeg" alt="" title="Cédric Aellen"><b class="p-name">Cédric Aellen</b></a></div><div class="webmention__content p-content"><p>Adaptive Web Design (2nd Edition) Crafting Rich Experiences with […] by @aarongustafson <a href="https://t.co/6AGoHjyoqO">https://t.co/6AGoHjyoqO</a> <a href="https://t.co/309CqPnDvC">https://t.co/309CqPnDvC</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-17T01:24:24-05:00">17 February 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/alienlebarge/status/699841809682403328">Permalink</a></div></article></li>
+https://www.aaron-gustafson.com/notebook/planning-adaptive-interfaces-the-workshop/:
+  '2016-02-22':
+    '701633291422720000': <li id="webmention-701633291422720000" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/ryanrumsey"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/5341975809b847c2258bc685a906c696241167b07dec517d454b7f8f2e890ff5.jpeg"
+      alt="" title="Ryan Rumsey"><b class="p-name">Ryan Rumsey</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/701633291422720000#favorited-by-1639811">Ryan
+      Rumsey tag:twitter.com,2013:701633291422720000_favorited_by_1639811 Ryan Rumsey
+      https://twitter.com/AaronGustafson/status/701633291422720000#favorited-by-1639811</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-22T00:34:53-05:00">22
+      February 2016</time></div></article></li>
+    '701676738309390336': '<li id="webmention-701676738309390336" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://enhanceconf.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/895d54886db0a78ca90fca28b5f6cc290ef84d3142c576ef5383606d2f21636b.png"
+      alt="" title="EnhanceConf"><b class="p-name">EnhanceConf</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/EnhanceConf/status/701676738309390336">EnhanceConf
+      RT @AaronGustafson: Planning Adaptive Interfaces: The Workshop aaron-gustafson.com/notebook/plann…</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-22T02:55:45-05:00">22
+      February 2016</time></div></article></li>'
