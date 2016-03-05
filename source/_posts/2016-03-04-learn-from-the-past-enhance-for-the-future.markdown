@@ -174,7 +174,7 @@ Similarly, we should avoid legalese and write in plain language. Medium has done
 
 In perhaps the most common form example, consider the label "First Name". It’s not terribly conversational and doesn’t beg for a response. Labels like "What is your first name?" make it clear the user should respond. 
 
-{% gist  better-labels.html %}
+{% gist 6f5b7c0f0c072631a908 better-labels.html %}
 
 <figure id="figure-2016-03-04-05">
 <audio controls>
