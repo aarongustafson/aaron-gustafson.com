@@ -4,6 +4,7 @@ title: "Learn from the Past, Enhance for the Future"
 date: 2016-03-04 17:33:57 -0500
 comments: true
 categories: ["the future",presentations,accessibility,"voice ux"]
+crosspost_to_medium: true
 twitter_text: "In case you missed it, here’s a written version of my #EnhanceConf talk:"
 description: "I had the great pleasure of delivering the closing keynote for the first EnhanceConf. I wanted to talk about voice and the future of “headless” user interfaces. Here’s what I had to say."
 ---
@@ -72,8 +73,7 @@ So how do you design a “headless” UI? That’s easy: You design the conversa
 
 Let’s take a trip back in time to one of the earliest computer games: Zork. Zork was written between 1977 and 1979. It’s a text-based adventure game that operates a lot like a game of *Dungeons & Dragons*—with the program serving the role of gamemaster.
 
-> West of House<br> You are standing in an open field west of a white house, with a boarded front door.<br> There is a small mailbox here. 
-> $> **open mailbox**
+> West of House<br> You are standing in an open field west of a white house, with a boarded front door.<br> There is a small mailbox here.<br><br>&gt; **open mailbox**
 
 As you move from location to location throughout the game, the program describes the environment and notes objects and people you can interact with. You type what you want to do and the program tells you the results of your actions.
 
