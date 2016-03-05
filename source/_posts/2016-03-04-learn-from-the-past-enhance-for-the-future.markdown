@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Learn from the Past, Enhance for the Future"
-date: 2016-03-04 22:33:57 -0500
+date: 2016-03-04 17:33:57 -0500
 comments: true
 categories: ["the future",presentations,accessibility,"voice ux"]
 twitter_text: "In case you missed it, here’s a written version of my #EnhanceConf talk:"
