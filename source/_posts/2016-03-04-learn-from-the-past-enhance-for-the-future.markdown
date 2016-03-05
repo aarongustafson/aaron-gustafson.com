@@ -132,7 +132,7 @@ Back in 2006, [Dustin Diaz proposed CSS Naked Day](http://www.dustindiaz.com/nak
 
 If the words we use form the basis of the conversations we have with our users, the semantics we employ clarify that meaning. Choosing elements with semantic value enriches our content, illuminating the meaning and intent of our words in order to overcome the limitations of text and bring it up to par with spoken language. After all, they may look the same visually, but there’s a big difference between these two statements:
 
-{% gist 6f5b7c0f0c072631a908 different-meaningss.html %}
+{% gist 6f5b7c0f0c072631a908 different-meanings.html %}
 
 Beyond using markup to clarify the intent of the words we write, we can use it to spell out relationships that are often represented visually. Dustin described one way we do this as part of the impetus for CSS Naked Day (emphasis mine):
 
