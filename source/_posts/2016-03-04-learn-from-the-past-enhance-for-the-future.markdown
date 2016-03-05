@@ -5,7 +5,7 @@ date: 2016-03-04 22:33:57 -0500
 comments: true
 categories: ["the future",presentations,accessibility,"voice ux"]
 twitter_text: "In case you missed it, here’s a written version of my #EnhanceConf talk:"
-description: "I had the great pleasure of delivering the closing keynote for the first EnhanceConf. I wanted to talk about voice and the future of "headless" user interfaces. Here’s what I had to say."
+description: "I had the great pleasure of delivering the closing keynote for the first EnhanceConf. I wanted to talk about voice and the future of “headless” user interfaces. Here’s what I had to say."
 ---
 
 *I had the great pleasure of delivering the closing keynote for the first EnhanceConf. I wanted to talk about voice and the future of "headless" user interfaces. Here’s what I had to say.*
