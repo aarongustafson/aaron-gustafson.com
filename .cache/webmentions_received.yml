@@ -44,6 +44,17 @@ http://www.aaron-gustafson.com/notebook/visualizing-css3-transformations/:
       <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/618510593612451840">Maciej
       Jasiobedzki likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-08-25T19:34:15-04:00">25 August 2015</time></div></article></li>
+  '2015-08-26':
+    '618510593612451840': <li id="webmention-618510593612451840" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--author-starts
+      webmention--title-only"><div class="webmention__author p-author h-card"><a class="u-url"
+      href="https://twitter.com/wchwd"><img class="webmention__author__photo u-photo"
+      src="https://webmention.io/avatar/twitter.com/92992fde906a8c5cfb477da12c82ffcff5381cd7db4740a05aa9732e5dfa53b3.jpeg"
+      alt="" title="Maciej Jasiobedzki"><b class="p-name">Maciej Jasiobedzki</b></a></div>
+      <div class="webmention__title p-name"><a href="https://brid-gy.appspot.com/like/twitter/AaronGustafson/618510593612451840/1447436395">Maciej
+      Jasiobedzki Maciej Jasiobedzki</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-08-26T00:34:15+01:00">26
+      August 2015</time></div></article></li>
 http://www.aaron-gustafson.com/notebook/playing-with-flexbox-and-quantity-queries/:
   '2015-04-13':
     '587679155678007296': |-
@@ -124,6 +135,9 @@ http://www.aaron-gustafson.com/notebook/playing-with-flexbox-and-quantity-querie
       class="webmention__title p-name"><a href="https://plus.google.com/+AaronGustafson/posts/7aoPty58chG">Mats
       Lindblad likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-03-28T05:08:19-06:00">28 March 2015</time></div></article></li>
+    '581665838979141633': |-
+      <li id="webmention-581665838979141633" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/Acts7"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/12db5663c006e528c0e2fe56cddab78440f8f358dbedad83adeedf68af2a7f1b.png" alt="" title="Acts7"><b class="p-name">Acts7</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> flexbox and quantity queries = brilliant for layout</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-03-28T03:55:17+00:00">28 March 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/Acts7/status/581665838979141633">Permalink</a></div></article></li>
   '2015-03-30':
     '582587615196667904': <li id="webmention-582587615196667904" class="webmentions__item"><article
       class="h-cite webmention webmention--author-starts webmention--title-only"><div
@@ -231,6 +245,22 @@ http://www.aaron-gustafson.com/notebook/playing-with-flexbox-and-quantity-querie
       <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/582587615196667904">Dorijan
       Covran likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-04-02T00:55:00-06:00">2 April 2015</time></div></article></li>
+    '583415678176067584': <li id="webmention-583415678176067584" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.eduardorabelo.com.br/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/df6ecc6e06197d7f798514e0d2161ed0e35bc03cc80e4e14dbc443668fae9583.jpeg"
+      alt="" title="Eduardo Rabelo"><b class="p-name">Eduardo Rabelo</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/oieduardorabelo/status/583415678176067584">Eduardo
+      Rabelo reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-04-02T00:48:31+01:00">2 April 2015</time></div></article></li>
+    '583424624047841281': <li id="webmention-583424624047841281" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/hoffigk"><img
+      class="webmention__author__photo u-photo" src="https://twitter.com/hoffigk/profile_image?size=original"
+      alt="" title="Frank Hoffmann"><b class="p-name">Frank Hoffmann</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/hoffigk/status/583424624047841281">Frank
+      Hoffmann reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-04-02T01:24:04+01:00">2 April 2015</time></div></article></li>
   '2015-04-04':
     18552: <li id="webmention-18552" class="webmentions__item"><article class="h-cite
       webmention webmention--no-author webmention--title-only"> <div class="webmention__title
@@ -316,6 +346,22 @@ http://www.aaron-gustafson.com/notebook/honoringwebfolk/:
       <div class="webmention__title p-name"><a href="https://twitter.com/mollydotcom/status/586381214048628739">Molly
       E. Holzschlag reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-04-10T00:12:30-04:00">10 April 2015</time></div></article></li>
+    '586361118324568065': <li id="webmention-586361118324568065" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://placenamehere.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/9a7a80dcdfa8773105df338bd909baee68431835067cb5133ecfc56c683eb645.jpeg"
+      alt="" title="Chris Casciano"><b class="p-name">Chris Casciano</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/placenamehere/status/586361118324568065">Chris
+      Casciano reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-04-10T03:52:39+01:00">10 April 2015</time></div></article></li>
+    '586360961164038144': <li id="webmention-586360961164038144" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.simpleprimate.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/e3d02a88dac89299bae8703d23f03695043579709154a9bf048626e0f3dd6a94.jpeg"
+      alt="" title="james williamson"><b class="p-name">james williamson</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/jameswillweb/status/586360961164038144">james
+      williamson reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-04-10T03:52:01+01:00">10 April 2015</time></div></article></li>
   '2015-04-09':
     '586404854857248770': |-
       <li id="webmention-586404854857248770" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AccessTechcomm"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/568510631611867136/8sgNWjZN_normal.jpeg" alt="" title="Accessible Techcomm"><b class="p-name">Accessible Techcomm</b></a></div><div class="webmention__content p-content"><p>I love waking up to the #HonoringWebFolk hashtag from @mollydotcom. I nod at all of @AaronGustafson’s chioces. <a href="http://t.co/ifU1ovLyaz">http://t.co/ifU1ovLyaz</a></p>
@@ -4799,6 +4845,13 @@ http://www.aaron-gustafson.com/notebook/who-should-pay/:
       is Link Day Still Breathing - online home of Chris Taylor - web developer, musician,
       geek</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-11-14T19:56:57-05:00">14 November 2015</time></div></article></li>
+  '2015-11-15':
+    145734: <li id="webmention-145734" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://www.stillbreathing.co.uk/2015/07/21/wednesday-is-link-day-2">Wednesday
+      is Link Day Still Breathing - online home of Chris Taylor - web developer, musician,
+      geek</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-15T00:56:57+00:00">15 November 2015</time></div></article></li>
 http://aaron-gustafson.com/notebook/consider-how-your-forms-read/:
   '2015-02-23':
     '569921701347241985': <li id="webmention-569921701347241985" class="webmentions__item"><article
@@ -5328,6 +5381,11 @@ http://www.aaron-gustafson.com/notebook/bidding-farewell-to-shirley-the-goat/:
       Standards Sherpa Web Standards Sherpa retweeted this.</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2015-03-10T05:59:57-06:00">10
       March 2015</time></div></article></li>
+    16575: |-
+      <li id="webmention-16575" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://blog.davidjohnmead.com/profile/davidmead"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/blog.davidjohnmead.com/9e4ea78d69b37a599bce81c3e8313386c386a70852d2af6ffe2da9118cc373c7.jpeg" alt="" title="David Mead"><b class="p-name">David Mead</b></a></div><div class="webmention__content p-content">
+      <p><code>&lt;p&gt;Aww. @standardssherpa is closing &lt;a href="http://www.aaron-gustafson.com/notebook/bidding-farewell-to-shirley-the-goat/" rel="nofollow"&gt;http://www.aaron-gustafson.com/notebook/bidding-farewell
+      </code></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-03-10T00:16:15+00:00">10 March 2015</time> | <a class="webmention__source u-url" href="http://blog.davidjohnmead.com/2015/aww-standardssherpa-is-closing--gustafsoncomnotebookbidding-farewell-to-shirley-the-goat---thx-for-everything-aarongustafson">Permalink</a></div></article></li>
   '2015-12-09':
     166391: <li id="webmention-166391" class="webmentions__item"><article class="h-cite
       webmention webmention--no-author webmention--title-only"> <div class="webmention__title
@@ -5814,6 +5872,17 @@ http://www.aaron-gustafson.com/notebook/how-to-apply-progressive-enhancement-whe
     '605414506165059584': |-
       <li id="webmention-605414506165059584" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/lucirebecca"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/590884277752991744/znToJCdX_normal.png" alt="" title="Luci Rebecca"><b class="p-name">Luci Rebecca</b></a></div><div class="webmention__content p-content"><p>How to Apply Progressive Enhancement When JavaScript Seems Like a Requirement… <a href="http://t.co/psaOo30a1U">http://t.co/psaOo30a1U</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-01T11:44:00-05:00">1 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/lucirebecca/status/605414506165059584">Permalink</a></div></article></li>
+  '2015-04-05':
+    '583699922274361344': <li id="webmention-583699922274361344" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--author-starts
+      webmention--title-only"><div class="webmention__author p-author h-card"><a class="u-url"
+      href="https://twitter.com/pwdst"><img class="webmention__author__photo u-photo"
+      src="https://twitter.com/pwdst/profile_image?size=original" alt="" title="Peter
+      Stone-Thompson"><b class="p-name">Peter Stone-Thompson</b></a></div> <div class="webmention__title
+      p-name"><a href="https://brid-gy.appspot.com/like/twitter/AaronGustafson/583699922274361344/292004016">Peter
+      Stone-Thompson Peter Stone-Thompson</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-04-05T00:21:31+01:00">5
+      April 2015</time></div></article></li>
 http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/:
   '2015-04-22':
     '591082475251720193': |-
@@ -5873,6 +5942,60 @@ http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/
       <div class="webmention__title p-name"><a href="https://plus.google.com/+AaronGustafson/posts/FW8Y46rtuf6">Derek
       Pennycuff likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-04-22T22:41:21-04:00">22 April 2015</time></div></article></li>
+    21603: <li id="webmention-21603" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://davidakennedy.com/2015/04/21/tips-for-surviving-googles-mobilegeddon/">Tips
+      for Surviving Google’s “Mobilegeddon” &#8211; David A. Kennedy</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-04-22T03:50:38+01:00">22
+      April 2015</time></div></article></li>
+    '590711127010582528': <li id="webmention-590711127010582528" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.dennislembree.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/b2d299a98e3d5a4999a1b7fbea8fcff7f00cbf5b95c814cb24dd757b6fd182cf.jpeg"
+      alt="" title="Dennis Lembrée"><b class="p-name">Dennis Lembrée</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/dennisl/status/590711127010582528">Dennis
+      Lembrée reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-04-22T03:58:02+01:00">22 April 2015</time></div></article></li>
+    '590711861479346177': <li id="webmention-590711861479346177" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://kidachi.kazuhi.to/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/aa139fa1f2563fd6796d179d924a0c3293a62017e9dce0c04f196387a9814ac8.jpeg"
+      alt="" title="Kazuhito Kidachi"><b class="p-name">Kazuhito Kidachi</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/kazuhito/status/590711861479346177">Kazuhito
+      Kidachi reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-04-22T04:00:57+01:00">22 April 2015</time></div></article></li>
+    '590710580127916032': <li id="webmention-590710580127916032" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.boonsheridan.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/4b323f4474af55350bd9e5e3432ccb953c9a2e4e892b0684910ab56480aa3470.jpeg"
+      alt="" title="Boon Sheridan"><b class="p-name">Boon Sheridan</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/boonerang/status/590710580127916032">Boon
+      Sheridan reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-04-22T03:55:51+01:00">22 April 2015</time></div></article></li>
+    '590719634762047488': <li id="webmention-590719634762047488" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://bohemianalps.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/bfbd26cac34bb5f2da86900257c07f736b3149969233c1405c1efe8c606a1c90.png"
+      alt="" title="Jason Simanek"><b class="p-name">Jason Simanek</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/JasonSimanek/status/590719634762047488">Jason
+      Simanek reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-04-22T04:31:50+01:00">22 April 2015</time></div></article></li>
+    '590722544216473600': <li id="webmention-590722544216473600" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/mckeescott"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/a372975d04107fa745da68feeca08c5072b271f4827750009095d474b645b878.jpeg"
+      alt="" title="Scott McKee"><b class="p-name">Scott McKee</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/mckeescott/status/590722544216473600">Scott
+      McKee reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-04-22T04:43:24+01:00">22 April 2015</time></div></article></li>
+    '590725706902011905': <li id="webmention-590725706902011905" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/toobdesign"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/15bdd9e53792f39004439a8664d9811ef548e7e811505691836536107014e429.jpeg"
+      alt="" title="to"><b class="p-name">to</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/toobdesign/status/590725706902011905">to
+      reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-04-22T04:55:58+01:00">22 April 2015</time></div></article></li>
   '2015-04-21':
     21603: <li id="webmention-21603" class="webmentions__item"><article class="h-cite
       webmention webmention--no-author webmention--title-only"> <div class="webmention__title
@@ -6106,6 +6229,14 @@ http://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/
       is Link Day Still Breathing - online home of Chris Taylor - web developer, musician,
       geek</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-11-14T19:52:52-05:00">14 November 2015</time></div></article></li>
+  '2015-06-01': {}
+  '2015-11-15':
+    145729: <li id="webmention-145729" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://www.stillbreathing.co.uk/2015/05/06/wednesday-is-link-day">Wednesday
+      is Link Day Still Breathing - online home of Chris Taylor - web developer, musician,
+      geek</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-15T00:52:52+00:00">15 November 2015</time></div></article></li>
 http://www.aaron-gustafson.com/notebook/the-network-effect/:
   '2015-04-24':
     '591560269698043904': |-
@@ -6148,6 +6279,20 @@ http://www.aaron-gustafson.com/notebook/the-network-effect/:
       Proof We Don’t Control Our Web Pages, From the Notebook of Aaron Gustafson</a></div><div
       class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-03T15:42:07-04:00">3
       September 2015</time></div></article></li>
+  '2015-08-26':
+    '615607099096215552': <li id="webmention-615607099096215552" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--author-starts
+      webmention--title-only"><div class="webmention__author p-author h-card"><a class="u-url"
+      href="https://twitter.com/tkadlec"><img class="webmention__author__photo u-photo"
+      src="https://webmention.io/avatar/twitter.com/ef82f596d044f637c43ebb38059d99447745f5a9a7ad637b4da1f079c1afa9ec.jpeg"
+      alt="" title="Tim Kadlec"><b class="p-name">Tim Kadlec</b></a></div> <div class="webmention__title
+      p-name"><a href="https://brid-gy.appspot.com/like/twitter/AaronGustafson/615607099096215552/13182702">Tim
+      Kadlec Tim Kadlec</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-26T00:28:24+01:00">26 August 2015</time></div></article></li>
+  '2015-06-30':
+    '615656265604308992': |-
+      <li id="webmention-615656265604308992" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://sixtwothree.org/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/a4d3035ef0dd73f46aad475755fe10c4d7f7ddae3e4f6e2b5ea4d3cba25c6eb7.jpeg" alt="" title="Jason Garber"><b class="p-name">Jason Garber</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> <a href="https://twitter.com/tkadlec" rel="nofollow">@tkadlec</a> &lt;a href=”https://twitter.com/jaffathecake” rel=”nofollo</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-30T00:01:06+01:00">30 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/jgarber/status/615656265604308992">Permalink</a></div></article></li>
 http://www.aaron-gustafson.com/notebook/2014/the-network-effect/:
   '2015-04-25':
     '591853957691015168': |-
@@ -6233,6 +6378,7 @@ http://www.aaron-gustafson.com/notebook/lies-damn-lies-and-javascript/:
       p-name"><a href="https://twitter.com/AaronGustafson/status/592796640379043840">वैभव
       likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-08-25T18:31:16-04:00">25 August 2015</time></div></article></li>
+  '2015-05-04': {}
 http://www.aaron-gustafson.com/notebook/collected-reactions-to-build/:
   '2015-04-30':
     '593886052701609986': |-
@@ -6477,6 +6623,14 @@ http://www.aaron-gustafson.com/notebook/slides-from-my-talk-at-number-msedgesumm
       <div class="webmention__title p-name"><a href="https://twitter.com/jsutt/status/601307617802096640">Jennifer
       Sutton reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-05-21T04:44:42-04:00">21 May 2015</time></div></article></li>
+    '601210574282723328': <li id="webmention-601210574282723328" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://blog.natbat.net/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/9cc147e5c29e943339e3ac87f4c607d924bf7af59c3ca765a2e3fe9163ce9031.jpeg"
+      alt="" title="Natalie Downe"><b class="p-name">Natalie Downe</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/Natbat/status/601210574282723328">Natalie
+      Downe reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-05-21T03:19:05+01:00">21 May 2015</time></div></article></li>
   '2015-08-25':
     '595800437158207489': <li id="webmention-595800437158207489" class="webmentions__item"><article
       class="h-cite webmention webmention--author-starts webmention--title-only"><div
@@ -6600,6 +6754,22 @@ http://www.aaron-gustafson.com/notebook/interface-experience-maps/:
     '604477176662982656': |-
       <li id="webmention-604477176662982656" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/dalmaer"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/3380865881/f73b3687ff39b795db05fcaf35972270_normal.jpeg" alt="" title="Dion Almaer"><b class="p-name">Dion Almaer</b></a></div><div class="webmention__content p-content"><p>“t can be incredibly challenging to articulate how a single interface might adapt to a wide variety of situation” <a href="http://t.co/eBg0UAE8Rt">http://t.co/eBg0UAE8Rt</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-05-29T22:39:24-04:00">29 May 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/dalmaer/status/604477176662982656">Permalink</a></div></article></li>
+    '604107782384664576': <li id="webmention-604107782384664576" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://8hrs.net/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/0a6cd7fc95f677005c7d1ba84d62bff9e7e648f5a18cc4de29c5d6e921154944.jpeg"
+      alt="" title="Gary DuVall"><b class="p-name">Gary DuVall</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/vanadium/status/604107782384664576">Gary
+      DuVall reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-05-29T03:11:33+01:00">29 May 2015</time></div></article></li>
+    '604114341848162304': <li id="webmention-604114341848162304" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.tyrick.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/52d53dbc2859d6020fa9a5f2df6aa83e801956e5e451ded8d76d446021f4875c.jpeg"
+      alt="" title="Tyrick Christian"><b class="p-name">Tyrick Christian</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/tyrickc/status/604114341848162304">Tyrick
+      Christian reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-05-29T03:37:37+01:00">29 May 2015</time></div></article></li>
   '2015-05-28':
     '604073105510797312': |-
       <li id="webmention-604073105510797312" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/PageRankSEO"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1764160130/PageRankSEO-SOPA_normal.jpg" alt="" title="Robert Visser"><b class="p-name">Robert Visser</b></a></div><div class="webmention__content p-content"><p>Interface Experience Maps /by @AaronGustafson <a href="http://t.co/fAbYcJPDVD">http://t.co/fAbYcJPDVD</a> #progressive_enhancement #ux</p>
@@ -6770,6 +6940,24 @@ http://www.aaron-gustafson.com/notebook/interface-experience-maps/:
       <li id="webmention-608832601047113728" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/jakob_anderson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1138387795/49142_566531482_6116_n_normal.jpg" alt="" title="Jakob Anderson"><b class="p-name">Jakob Anderson</b></a></div><div class="webmention__content p-content"><p>“Interface Experience Maps, From the Notebook of Aaron Gustafson”  <a href="http://t.co/sgOE5TGExE">http://t.co/sgOE5TGExE</a> #feedly</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-10T23:06:18-04:00">10 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/jakob_anderson/status/608832601047113728">Permalink</a></div></article></li>
   '2015-06-09': {}
+  '2015-08-26':
+    '604107145899053060': <li id="webmention-604107145899053060" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--author-starts
+      webmention--title-only"><div class="webmention__author p-author h-card"><a class="u-url"
+      href="https://twitter.com/bryandavidk"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/f00c296376e38a3b6de026a9f9b8eb1d4cea30ffd6f8e569baba6a84f19539d0.jpeg"
+      alt="" title="Bryan Kearney"><b class="p-name">Bryan Kearney</b></a></div> <div
+      class="webmention__title p-name"><a href="https://brid-gy.appspot.com/like/twitter/AaronGustafson/604107145899053060/13444782">Bryan
+      Kearney Bryan Kearney</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-26T00:00:23+01:00">26 August 2015</time></div></article></li>
+    42289: <li id="webmention-42289" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://profiles.google.com/114207754492667012043"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/lh3.googleusercontent.com/d07a1132051cdf30b67353d33a7fff32e05957104dc3b2f8304ef23681d7e4d8.jpeg"
+      alt="" title="Derek Pennycuff"><b class="p-name">Derek Pennycuff</b></a></div>
+      <div class="webmention__title p-name"><a href="https://brid-gy.appspot.com/like/googleplus/108150195728870260258/z13dephgbtfhijuzi04cgpbhbxazzfwjqcw/114207754492667012043">Derek
+      Pennycuff Derek Pennycuff</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-26T00:02:49+01:00">26 August 2015</time></div></article></li>
 http://www.aaron-gustafson.com/notebook/aria-quicktip-labelledby-vs-describedby/:
   '2015-06-01':
     '605359681612197888': |-
@@ -6891,6 +7079,20 @@ http://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/:
       p-name"><a href="https://twitter.com/AaronGustafson/status/615607099096215552">Tim
       Kadlec likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-08-25T19:28:24-04:00">25 August 2015</time></div></article></li>
+  '2015-08-26':
+    '615607099096215552': <li id="webmention-615607099096215552" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--author-starts
+      webmention--title-only"><div class="webmention__author p-author h-card"><a class="u-url"
+      href="https://twitter.com/tkadlec"><img class="webmention__author__photo u-photo"
+      src="https://webmention.io/avatar/twitter.com/ef82f596d044f637c43ebb38059d99447745f5a9a7ad637b4da1f079c1afa9ec.jpeg"
+      alt="" title="Tim Kadlec"><b class="p-name">Tim Kadlec</b></a></div> <div class="webmention__title
+      p-name"><a href="https://brid-gy.appspot.com/like/twitter/AaronGustafson/615607099096215552/13182702">Tim
+      Kadlec Tim Kadlec</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-26T00:28:24+01:00">26 August 2015</time></div></article></li>
+  '2015-06-30':
+    '615656265604308992': |-
+      <li id="webmention-615656265604308992" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://sixtwothree.org/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/a4d3035ef0dd73f46aad475755fe10c4d7f7ddae3e4f6e2b5ea4d3cba25c6eb7.jpeg" alt="" title="Jason Garber"><b class="p-name">Jason Garber</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> <a href="https://twitter.com/tkadlec" rel="nofollow">@tkadlec</a> &lt;a href=”https://twitter.com/jaffathecake” rel=”nofollo</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-30T00:01:06+01:00">30 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/jgarber/status/615656265604308992">Permalink</a></div></article></li>
 http://www.aaron-gustafson.com/notebook/bringing-sanity-and-order-to-device-testing/:
   '2015-06-05':
     '606868603133149184': |-
@@ -6956,6 +7158,16 @@ http://www.aaron-gustafson.com/notebook/bringing-sanity-and-order-to-device-test
     '613208870496940032': |-
       <li id="webmention-613208870496940032" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/alvarlaigna"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/459237559751561216/VIEo4jHf_normal.png" alt="" title="Alvar Laigna"><b class="p-name">Alvar Laigna</b></a></div><div class="webmention__content p-content"><p>Bringing #Sanity and #Order to #Device #Testing, From the Notebook of Aaron Gustafson <a href="http://t.co/Onqk4HuLZ0">http://t.co/Onqk4HuLZ0</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-23T00:56:02-04:00">23 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/alvarlaigna/status/613208870496940032">Permalink</a></div></article></li>
+  '2015-08-26':
+    '606847953223974912': <li id="webmention-606847953223974912" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--author-starts
+      webmention--title-only"><div class="webmention__author p-author h-card"><a class="u-url"
+      href="https://twitter.com/jasonenter"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/e1c90cad8ca31fab48ff140f154016e9c44d3f6d960b3a7af59b0618fe61a55c.png"
+      alt="" title="Jason Enter"><b class="p-name">Jason Enter</b></a></div> <div
+      class="webmention__title p-name"><a href="https://brid-gy.appspot.com/like/twitter/AaronGustafson/606847953223974912/22955594">Jason
+      Enter Jason Enter</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-26T00:08:03+01:00">26 August 2015</time></div></article></li>
 http://www.aaron-gustafson.com/notebook/where-do-we-go-from-here/:
   '2015-06-23':
     '613339756584374273': |-
@@ -6990,6 +7202,22 @@ http://www.aaron-gustafson.com/notebook/where-do-we-go-from-here/:
       From the Notebook of Aaron Gustafson</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2015-06-23T10:05:36-04:00">23
       June 2015</time></div></article></li>
+    '613171298194173952': <li id="webmention-613171298194173952" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://chriswrightdesign.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/16cf4c0c39b67c8ad5fb790df4a9ca34e5224d063206c8fe0a9374b373f67313.jpeg"
+      alt="" title="Chris Wright"><b class="p-name">Chris Wright</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/cwrightdesign/status/613171298194173952">Chris
+      Wright reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-23T03:26:44+01:00">23 June 2015</time></div></article></li>
+    '613192935153266688': |-
+      <li id="webmention-613192935153266688" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://frippz.se/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/f654a95e386b5467eb573906821484f9802ea06d1755868579bf36b78004cca3.jpeg" alt="" title="Fredrik Frodlund"><b class="p-name">Fredrik Frodlund</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> Whoa! Safari just downloaded six oddly named files when the page loaded. Looks like YouTube video IDs. A bug perchance?</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-23T04:52:42+01:00">23 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/frippz/status/613192935153266688">Permalink</a></div></article></li>
+    '613194638032273408': |-
+      <li id="webmention-613194638032273408" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://frippz.se/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/f654a95e386b5467eb573906821484f9802ea06d1755868579bf36b78004cca3.jpeg" alt="" title="Fredrik Frodlund"><b class="p-name">Fredrik Frodlund</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> It’s a pretty cool effect, though. :)<br />
+      <br />
+      <a href="http://gfycat.com/FondRichBluefintuna" rel="nofollow">gfycat.com/</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-06-23T04:59:28+01:00">23 June 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/frippz/status/613194638032273408">Permalink</a></div></article></li>
   '2015-06-22':
     '613166908163158016': |-
       <li id="webmention-613166908163158016" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/612180052231495680/8_CXQjez_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Here’s my closing keynote from Responsive Day Out 3. <a href="http://t.co/Dt5gbr7pTh">http://t.co/Dt5gbr7pTh</a></p>
@@ -7082,6 +7310,12 @@ http://www.aaron-gustafson.com/notebook/where-do-we-go-from-here/:
       <div class="webmention__title p-name"><a href="https://twitter.com/jlowgren/status/614655476463206400">Joacim
       Löwgren reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-06-26T23:44:19-05:00">26 June 2015</time></div></article></li>
+    56272: '<li id="webmention-56272" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://davidakennedy.com/2015/06/25/responsive-design-where-do-we-go-from-here/">Responsive
+      Design: Where Do We Go From Here? &#8211; David A. Kennedy</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-06-26T04:22:05+01:00">26
+      June 2015</time></div></article></li>'
   '2015-06-29':
     '615577866298916864': |-
       <li id="webmention-615577866298916864" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/theystolemynick"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/416108368/avatar_JP_normal.jpg" alt="" title="Jean-Pierre Vincent"><b class="p-name">Jean-Pierre Vincent</b></a></div><div class="webmention__content p-content"><p>Le progressive enhancement, seule voix raisonnable de salut   <a href="http://t.co/lpT6vXqRcT">http://t.co/lpT6vXqRcT</a></p>
@@ -7171,6 +7405,22 @@ http://www.aaron-gustafson.com/notebook/where-do-we-go-from-here/:
       <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/614616396849389568">Roman
       Stranghöner likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-06-27T03:50:09-04:00">27 June 2015</time></div></article></li>
+    '614616750529867777': <li id="webmention-614616750529867777" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.andrewsmyk.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/47bd4ea3d68ca9bcc7693506379dda52f412dd6631b19767a9ca66d93173d3ae.jpeg"
+      alt="" title="Andrew Smyk"><b class="p-name">Andrew Smyk</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/andrewsmyk/status/614616750529867777">Andrew
+      Smyk reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-27T03:10:27+01:00">27 June 2015</time></div></article></li>
+    '614617394313474048': <li id="webmention-614617394313474048" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://about.me/daigen"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/4bd7792af2832a241a62aa005a94d5346708193ba98208cb2f39925030894cb1.jpeg"
+      alt="" title="Ben Kim"><b class="p-name">Ben Kim</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/daigen/status/614617394313474048">Ben Kim
+      reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-06-27T03:13:00+01:00">27 June 2015</time></div></article></li>
   '2015-06-30':
     '615744579636211712': |-
       <li id="webmention-615744579636211712" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/cssradar"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1478202419/cssradar_icon_200_normal.png" alt="" title="Yuya Saito"><b class="p-name">Yuya Saito</b></a></div><div class="webmention__content p-content"><p>Where Do We Go From Here? <a href="http://t.co/pcZpmLm5ur">http://t.co/pcZpmLm5ur</a></p>
@@ -7239,6 +7489,34 @@ http://www.aaron-gustafson.com/notebook/where-do-we-go-from-here/:
     '617386424392925184': |-
       <li id="webmention-617386424392925184" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/theprivileges"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/611930144651894784/_PvyibC4_normal.png" alt="" title="Luiz Lopes"><b class="p-name">Luiz Lopes</b></a></div><div class="webmention__content p-content"><p>An awesome article, discussing what it means to make the web accessible, now and into the future — <a href="http://t.co/UCibCfxQEr">http://t.co/UCibCfxQEr</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-07-04T13:36:08-04:00">4 July 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/theprivileges/status/617386424392925184">Permalink</a></div></article></li>
+  '2015-08-26':
+    '613166908163158016': <li id="webmention-613166908163158016" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--author-starts
+      webmention--title-only"><div class="webmention__author p-author h-card"><a class="u-url"
+      href="https://twitter.com/cwrightdesign"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/16cf4c0c39b67c8ad5fb790df4a9ca34e5224d063206c8fe0a9374b373f67313.jpeg"
+      alt="" title="Chris Wright"><b class="p-name">Chris Wright</b></a></div> <div
+      class="webmention__title p-name"><a href="https://brid-gy.appspot.com/like/twitter/AaronGustafson/613166908163158016/40005417">Chris
+      Wright Chris Wright</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-26T00:20:33+01:00">26 August 2015</time></div></article></li>
+    '614616396849389568': <li id="webmention-614616396849389568" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--author-starts
+      webmention--title-only"><div class="webmention__author p-author h-card"><a class="u-url"
+      href="https://twitter.com/andrewsmyk"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/47bd4ea3d68ca9bcc7693506379dda52f412dd6631b19767a9ca66d93173d3ae.jpeg"
+      alt="" title="Andrew Smyk"><b class="p-name">Andrew Smyk</b></a></div> <div
+      class="webmention__title p-name"><a href="https://brid-gy.appspot.com/like/twitter/AaronGustafson/614616396849389568/69402135">Andrew
+      Smyk Andrew Smyk</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-26T00:24:53+01:00">26 August 2015</time></div></article></li>
+    '614700903120158720': <li id="webmention-614700903120158720" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--author-starts
+      webmention--title-only"><div class="webmention__author p-author h-card"><a class="u-url"
+      href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/58d267db61f74cbbd5a5f8e38f276f673b0bb0ec1087d750848d1055ef1812c0.jpeg"
+      alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div>
+      <div class="webmention__title p-name"><a href="https://brid-gy.appspot.com/like/twitter/rstrangh/614700903120158720/12028">Aaron
+      Gustafson Aaron Gustafson</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-26T00:28:39+01:00">26 August 2015</time></div></article></li>
 http://www.aaron-gustafson.com/notebook/harvard-and-mit-and-captioning/:
   '2015-06-30':
     '615732245798723584': |-
@@ -7335,6 +7613,16 @@ http://www.aaron-gustafson.com/notebook/harvard-and-mit-and-captioning/:
       class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/615732245798723584">Eric
       Wright likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-08-25T19:28:28-04:00">25 August 2015</time></div></article></li>
+  '2015-08-26':
+    '615732245798723584': <li id="webmention-615732245798723584" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--author-starts
+      webmention--title-only"><div class="webmention__author p-author h-card"><a class="u-url"
+      href="https://twitter.com/ewaccess"><img class="webmention__author__photo u-photo"
+      src="https://webmention.io/avatar/twitter.com/ff063f2b6c8dca8656f8fab5d76ae5af1e0c534884d97beca8d45ea7a8b67ea6.jpeg"
+      alt="" title="Eric Wright"><b class="p-name">Eric Wright</b></a></div> <div
+      class="webmention__title p-name"><a href="https://brid-gy.appspot.com/like/twitter/AaronGustafson/615732245798723584/65170384">Eric
+      Wright Eric Wright</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-26T00:28:28+01:00">26 August 2015</time></div></article></li>
 http://www.aaron-gustafson.com/notebook/links/ui-fail-how-our-user-interfaces-help-to-ruin-lives/:
   '2015-07-07':
     '618540464308912128': |-
@@ -7371,6 +7659,16 @@ http://www.aaron-gustafson.com/notebook/unum-releases-their-pattern-libraries/:
       class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/628882642331639808">Brett
       Jankord likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-08-25T20:02:52-04:00">25 August 2015</time></div></article></li>
+  '2015-08-26':
+    '628882642331639808': <li id="webmention-628882642331639808" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--author-starts
+      webmention--title-only"><div class="webmention__author p-author h-card"><a class="u-url"
+      href="https://twitter.com/bjankord"><img class="webmention__author__photo u-photo"
+      src="https://webmention.io/avatar/twitter.com/61ad91aec315e9b6cb995ed335af1899a57a866754fa85176bcddf619e54ff1e.png"
+      alt="" title="Brett Jankord"><b class="p-name">Brett Jankord</b></a></div> <div
+      class="webmention__title p-name"><a href="https://brid-gy.appspot.com/like/twitter/AaronGustafson/628882642331639808/40922269">Brett
+      Jankord Brett Jankord</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-26T01:02:52+01:00">26 August 2015</time></div></article></li>
 http://www.aaron-gustafson.com/notebook/links/text-justification-and-accessibility/:
   '2015-08-07':
     '629591811401588736': |-
@@ -7505,6 +7803,12 @@ http://www.aaron-gustafson.com/notebook/ramblings-on-new-browser-features-intero
     '630579650939498497': |-
       <li id="webmention-630579650939498497" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.aaron-gustafson.com/"><img class="webmention__author__photo u-photo" src="https://twitter.com/AaronGustafson/profile_image?size=original" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/ericlaw" rel="nofollow">@ericlaw</a> Sorry about that, fixing now. It’s <a href="http://info.cern.ch/hypertext/WWW/TheProject.html" rel="nofollow">info.cern.ch/hypertext/WW</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-09T23:21:19-04:00">9 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/630579650939498497">Permalink</a></div></article></li>
+    81210: <li id="webmention-81210" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://davidakennedy.com/2015/08/08/new-browser-features-interoperability-craft-and-the-future-of-the-web/">New
+      Browser Features, Interoperability, Craft, and the Future of the Web &#8211;
+      David A. Kennedy</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-09T03:27:58+01:00">9 August 2015</time></div></article></li>
   '2015-08-08':
     '629954236357324800': |-
       <li id="webmention-629954236357324800" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/faraj51989"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/552480096762621952/V2xgwLRl_normal.jpeg" alt="" title="Mohamed Faraj"><b class="p-name">Mohamed Faraj</b></a></div><div class="webmention__content p-content"><p>Ramblings on New Browser Features, Interoperability, Craft, and the Future of the Web <a href="http://t.co/hWHDC5rPdk">http://t.co/hWHDC5rPdk</a></p>
@@ -7544,6 +7848,36 @@ http://www.aaron-gustafson.com/notebook/ramblings-on-new-browser-features-intero
       <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/629701993716690944">Alfonso
       Martínez L. likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-08-10T03:07:52-04:00">10 August 2015</time></div></article></li>
+    '630545671561449474': <li id="webmention-630545671561449474" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/frankolivier"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/f05480e2bbbee22a5b2d6b16900f5ae03fcee30de38c21f2eb9b4fc4cb7aeb4e.jpeg"
+      alt="" title="Frank Olivier"><b class="p-name">Frank Olivier</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/frankolivier/status/630545671561449474">Frank
+      Olivier reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-10T02:06:17+01:00">10 August 2015</time></div></article></li>
+    '630563149016514560': |-
+      <li id="webmention-630563149016514560" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.textslashplain.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/e3975eb9ec90e0373fb6b3650c49984e0d5ed0ed8c3290b404bccb34efe0649e.jpeg" alt="" title="Eric Lawrence"><b class="p-name">Eric Lawrence</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> Broken link in your “Ramblings on New Browser Features…” article; I was curious about TBL’s “&lt;HEADER&gt;” (vs. HEAD)</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-10T03:15:44+01:00">10 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/ericlaw/status/630563149016514560">Permalink</a></div></article></li>
+    '630563334547312640': <li id="webmention-630563334547312640" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.textslashplain.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/e3975eb9ec90e0373fb6b3650c49984e0d5ed0ed8c3290b404bccb34efe0649e.jpeg"
+      alt="" title="Eric Lawrence"><b class="p-name">Eric Lawrence</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/ericlaw/status/630563334547312640">Eric
+      Lawrence reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-10T03:16:28+01:00">10 August 2015</time></div></article></li>
+    '630571414152544256': <li id="webmention-630571414152544256" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://blog.hackedbrain.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/1f17788b6c546a1c9c33f53d67beea2866e45f497860f83ceba193b3423f4bc2.jpeg"
+      alt="" title="Drew Marsh"><b class="p-name">Drew Marsh</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/drub0y/status/630571414152544256">Drew
+      Marsh reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-10T03:48:35+01:00">10 August 2015</time></div></article></li>
+    '630579650939498497': |-
+      <li id="webmention-630579650939498497" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.aaron-gustafson.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/58d267db61f74cbbd5a5f8e38f276f673b0bb0ec1087d750848d1055ef1812c0.jpeg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/ericlaw" rel="nofollow">@ericlaw</a> Sorry about that, fixing now. It’s <a href="http://info.cern.ch/hypertext/WWW/TheProject.html" rel="nofollow">info.cern.ch/hypertext/WW</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-10T04:21:19+01:00">10 August 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/630579650939498497">Permalink</a></div></article></li>
   '2015-08-12':
     '631456780237803520': |-
       <li id="webmention-631456780237803520" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/webcraftsman"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/528173567070851072/1UqYnsnS_normal.jpeg" alt="" title="Jeff Bridgforth"><b class="p-name">Jeff Bridgforth</b></a></div><div class="webmention__content p-content"><p>Strongly encourage you to read this: <a href="http://t.co/wMCvShXKTi">http://t.co/wMCvShXKTi</a></p>
@@ -7688,6 +8022,16 @@ http://www.aaron-gustafson.com/notebook/ramblings-on-new-browser-features-intero
       To Unite  &raquo; Blog Archive   &raquo; On PPK’s moratorium on new browser
       features</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2016-02-08T18:18:33-05:00">8 February 2016</time></div></article></li>
+  '2015-08-26':
+    '629701993716690944': <li id="webmention-629701993716690944" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--author-starts
+      webmention--title-only"><div class="webmention__author p-author h-card"><a class="u-url"
+      href="https://twitter.com/robrecord"><img class="webmention__author__photo u-photo"
+      src="https://webmention.io/avatar/twitter.com/2f6d2bb9d96091716ba32ab5c48e2662aa988cafe9f0e1b596c0914d66573a5e.jpeg"
+      alt="" title="Rob Record"><b class="p-name">Rob Record</b></a></div> <div class="webmention__title
+      p-name"><a href="https://brid-gy.appspot.com/like/twitter/AaronGustafson/629701993716690944/3228191">Rob
+      Record Rob Record</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-26T01:04:23+01:00">26 August 2015</time></div></article></li>
 http://www.aaron-gustafson.com/notebook/links/windows-10-microsoft-edge-browser-war/:
   '2015-08-07':
     '629864217437433856': |-
@@ -7762,6 +8106,25 @@ http://www.aaron-gustafson.com/notebook/web-design-101-100-percent-tappable/:
       p-name"><a href="https://twitter.com/the_iBackPack/status/634770276551684096">iBackPack™
       reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-08-21T12:53:22-04:00">21 August 2015</time></div></article></li>
+  '2015-08-19':
+    87362: <li id="webmention-87362" class="webmentions__item"><article class="h-cite
+      webmention webmention--title-only"><div class="webmention__author p-author h-card"><a
+      class="u-url" href="https://yatil.net/author/yatil/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/2.gravatar.com/889a26b113b27ea79117d2d991a2cb714456ccbb2cd73b8035accfca2b0c498e.jpeg"
+      alt="" title="yatil"><b class="p-name">yatil</b></a></div> <div class="webmention__title
+      p-name"><a href="https://yatil.net/100-percent-tappable/">100% Tappable</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-08-19T01:03:13+01:00">19
+      August 2015</time></div></article></li>
+  '2015-08-26':
+    '633822947967414272': <li id="webmention-633822947967414272" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--author-starts
+      webmention--title-only"><div class="webmention__author p-author h-card"><a class="u-url"
+      href="https://twitter.com/briangoldstein"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/dce4260b61d814b5dc18fcdb7e8792a75c64ed53a3a12cdf2cd53fad5c6db3ac.jpeg"
+      alt="" title="Brian Goldstein"><b class="p-name">Brian Goldstein</b></a></div>
+      <div class="webmention__title p-name"><a href="https://brid-gy.appspot.com/like/twitter/AaronGustafson/633822947967414272/16003224">Brian
+      Goldstein Brian Goldstein</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-26T01:15:37+01:00">26 August 2015</time></div></article></li>
 http://www.aaron-gustafson.com/notebook/my-trip-to-18f/:
   '2015-08-27':
     '636901106182963200': |-
@@ -7775,6 +8138,14 @@ http://www.aaron-gustafson.com/notebook/my-trip-to-18f/:
       class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/636722064125206528">Marc
       Drummond likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-08-27T01:54:22-04:00">27 August 2015</time></div></article></li>
+    '636738246488145920': <li id="webmention-636738246488145920" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.jsuttonmedia.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/e9d402391f537a43e5fc4c1ee4875230ff960886c5bc8f07e35779302cb22612.png"
+      alt="" title="Jennifer Sutton"><b class="p-name">Jennifer Sutton</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/jsutt/status/636738246488145920">Jennifer
+      Sutton reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-08-27T04:13:22+01:00">27 August 2015</time></div></article></li>
   '2015-08-26':
     '636722064125206528': |-
       <li id="webmention-636722064125206528" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/635107999120531456/W_YXtoX-_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>My trip to 18F <a href="http://t.co/7wwxWAeV0n">http://t.co/7wwxWAeV0n</a></p>
@@ -8024,6 +8395,13 @@ https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-page
     '639842781582766080': |-
       <li id="webmention-639842781582766080" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/noliverte"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1991268741/nolive_normal.jpg" alt="" title="noliverte"><b class="p-name">noliverte</b></a></div><div class="webmention__content p-content"><p>More Proof We Don’t Control Our Web Pages <a href="http://t.co/XOIobMqbCV">http://t.co/XOIobMqbCV</a> -via Flynx</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-04T12:49:41-04:00">4 September 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/noliverte/status/639842781582766080">Permalink</a></div></article></li>
+    96899: <li id="webmention-96899" class="webmentions__item"><article class="h-cite
+      webmention webmention--title-only"><div class="webmention__author p-author h-card"><a
+      class="u-url" href="https://www.aaron-gustafson.com/about"><b class="p-name">Aaron
+      Gustafson</b></a></div> <div class="webmention__title p-name"><a href="https://www.aaron-gustafson.com/notebook/moved-to-https/">Moved
+      to HTTPS, From the Notebook of Aaron Gustafson</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-09-04T03:42:08+01:00">4
+      September 2015</time></div></article></li>
   '2015-09-15':
     '643695803832397824': |-
       <li id="webmention-643695803832397824" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/maxbarners"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/67845526/square_barners_normal.jpg" alt="" title="Steve Barnett"><b class="p-name">Steve Barnett</b></a></div><div class="webmention__content p-content"><p>&lt;3 @AaronGustafson. “We can’t control what happens to us in this world, we can only control our reaction to it.” <a href="https://t.co/3BRgciCVPd">https://t.co/3BRgciCVPd</a></p>
@@ -8129,6 +8507,15 @@ https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-page
       @somelaniesaid: Conclusion: everyone is awful aaron-gustafson.com/notebook/more-…</a></div><div
       class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-09-26T03:26:04-04:00">26
       September 2015</time></div></article></li>'
+    '647615057325457408': '<li id="webmention-647615057325457408" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://melanie-richards.com/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/7dd65f7a7b6261486adc51a39028d6c58fe631727960868e7d8b7aa0685d992e.jpeg"
+      alt="" title="Melanie Richards"><b class="p-name">Melanie Richards</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/somelaniesaid/status/647615057325457408">Conclusion:
+      everyone is awful aaron-gustafson.com/notebook/more-…</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-09-26T04:33:56+01:00">26
+      September 2015</time></div></article></li>'
   '2015-11-14':
     145735: <li id="webmention-145735" class="webmentions__item"><article class="h-cite
       webmention webmention--no-author webmention--title-only"> <div class="webmention__title
@@ -8149,6 +8536,22 @@ https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-page
     705453585241346048: |-
       <li id="webmention-705453585241346048" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/WillyPoteloin"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/3217183752/7722d56e16aa35949edc3a1a0882a550_normal.jpeg" alt="" title="Willy Poteloin"><b class="p-name">Willy Poteloin</b></a></div><div class="webmention__content p-content"><p>Petite collection de ces moments où d’autres injectent des trucs dans tes pages   <a href="https://t.co/vejFuQSweC">https://t.co/vejFuQSweC</a> (via @theystolemynick)</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-03-03T18:03:36+00:00">3 March 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/WillyPoteloin/status/705453585241346048">Permalink</a></div></article></li>
+  '2015-09-07':
+    '640697741060866048': <li id="webmention-640697741060866048" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.weboverhauls.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/e34fa692b1812aead41eb9bab0eec182300f1956699b7063ffa629c1e83a81cb.jpeg"
+      alt="" title="WebOverhauls.com"><b class="p-name">WebOverhauls.com</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/weboverhauls/status/640697741060866048">WebOverhauls.com
+      reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-09-07T02:26:59+01:00">7 September 2015</time></div></article></li>
+  '2015-11-15':
+    145735: <li id="webmention-145735" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://www.stillbreathing.co.uk/2015/09/15/wednesday-is-link-day-3">Wednesday
+      is Link Day! Still Breathing - online home of Chris Taylor - web developer,
+      musician, geek</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-15T00:58:25+00:00">15 November 2015</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/links/9370/:
   '2015-09-01':
     '638919061766864896': |-
@@ -8572,6 +8975,15 @@ https://www.aaron-gustafson.com/notebook/strapless/:
         </tbody>
       </table>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-21T13:49:32-04:00">21 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/ironpress/status/656890072973901824">Permalink</a></div></article></li>
+    '656624997776125952': '<li id="webmention-656624997776125952" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://about.me/NathanRedBlur"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/1ba66bf7800428263d04d667fd2c3bc069f305e90abfcda0441ed5c40f19714e.jpeg"
+      alt="" title="Nathan Red Blur"><b class="p-name">Nathan Red Blur</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/NathanRedBlur/status/656624997776125952">If
+      you are going to use #bootstrap, use wisely : aaron-gustafson.com/notebook/strap…</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-21T01:16:13+01:00">21
+      October 2015</time></div></article></li>'
   '2015-10-22':
     127967: <li id="webmention-127967" class="webmentions__item"><article class="h-cite
       webmention webmention--no-author webmention--title-only"> <div class="webmention__title
@@ -8675,6 +9087,15 @@ https://www.aaron-gustafson.com/notebook/strapless/:
     657126343340072960: |-
       <li id="webmention-657126343340072960" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/edimoldovan"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/583355272749588480/cJRQCODD_normal.jpg" alt="" title="Eduárd"><b class="p-name">Eduárd</b></a></div><div class="webmention__content p-content"><p>“The reasons we aren’t big Bootstrap fans are manifold” <a href="https://t.co/LnI3vV4kXV">https://t.co/LnI3vV4kXV</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-22T05:28:23-04:00">22 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/edimoldovan/status/657126343340072960">Permalink</a></div></article></li>
+    '656991153682849796': <li id="webmention-656991153682849796" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://www.linkedin.com/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/2fd64341d94ecb6d666dd7983bdef0bf654c59ce5d260c559df8182c528b386e.jpeg"
+      alt="" title="Christos Tsakmakis"><b class="p-name">Christos Tsakmakis</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/khristaki/status/656991153682849796">"Bootstrap
+      doesn’t solve your problems." aaron-gustafson.com/notebook/strap…</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-22T01:31:12+01:00">22
+      October 2015</time></div></article></li>
   '2015-10-24':
     '657876491460591617': '<li id="webmention-657876491460591617" class="webmentions__item"><article
       class="h-cite webmention webmention--title-only"><div class="webmention__author
@@ -8784,6 +9205,16 @@ https://www.aaron-gustafson.com/notebook/strapless/:
       about using bootstrap or not by @aarongustafson ow.ly/TLz4J</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2015-10-28T15:16:28-04:00">28
       October 2015</time></div></article></li>
+    '659210435183398912': '<li id="webmention-659210435183398912" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://www.spare-code.com/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/5a58ac8de0a1a6ac6b0bfb58388c2e7146e93a02fd2fbda7e87fee083efbb5ff.jpeg"
+      alt="" title="Bruno Goes De Meira"><b class="p-name">Bruno Goes De Meira</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/GoesBruno/status/659210435183398912">Nothing
+      new here but I agree with some of the author''s point. Problems of using Bootstrap
+      in your app: aaron-gustafson.com/notebook/strap…</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-10-28T03:29:49+00:00">28
+      October 2015</time></div></article></li>'
   '2015-10-29':
     659734846563090432: |-
       <li id="webmention-659734846563090432" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/RazvanSpatariu"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/572194979993243648/sHR7qccX_normal.jpeg" alt="" title="Razvan Spatariu"><b class="p-name">Razvan Spatariu</b></a></div><div class="webmention__content p-content"><p>Bootstrap. Why you should not use it. Really good article. <a href="https://t.co/pAhvqnrVWe">https://t.co/pAhvqnrVWe</a></p>
@@ -8857,6 +9288,35 @@ https://www.aaron-gustafson.com/notebook/strapless/:
       – Segen oder Fluch? » Digital Workflows » Digital Workflows</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2015-12-13T22:31:36-08:00">13
       December 2015</time></div></article></li>
+  '2015-10-23':
+    '657340135864832000': '<li id="webmention-657340135864832000" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://github.com/andrewiiird"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/eaef13850e5b2f6847c3a8d29c5f9ed8dac5a5eff8e3d3acea7ca377484350e8.jpeg"
+      alt="" title="Andrew Heinrichs"><b class="p-name">Andrew Heinrichs</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/Andrewiiird/status/657340135864832000">Strapless
+      = going "cold turkey" 4 the #CodeNewbie addiction to #frameworks aaron-gustafson.com/notebook/strap…</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-23T00:37:55+01:00">23
+      October 2015</time></div></article></li>'
+  '2015-10-26':
+    '658478206211739650': <li id="webmention-658478206211739650" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://frontendweekly.tokyo/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/b80465a02c7f06aa18d2116b0661ca1e7965c7b81f79d6ec217db070ae6dc5ae.png"
+      alt="" title="Yuya Saito"><b class="p-name">Yuya Saito</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/cssradar/status/658478206211739650">Strapless
+      bit.ly/1kxodwe</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-10-26T03:00:12+00:00">26 October 2015</time></div></article></li>
+  '2015-10-31':
+    '660299514801057793': <li id="webmention-660299514801057793" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://www.premii.com/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/73798bf1d6ffc38c8046e77b18a218f105dc03f7695ba302715fa0e910945aad.jpeg"
+      alt="" title="Dharmesh Patel"><b class="p-name">Dharmesh Patel</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/premii/status/660299514801057793">The
+      Bootstrap Framework ... Should You Use It or Not? aaron-gustafson.com/notebook/strap…</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-31T03:37:26+00:00">31
+      October 2015</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/on-adaptive-web-designs-second-edition/:
   '2015-10-20':
     656653480204046336: |-
@@ -8911,6 +9371,22 @@ https://www.aaron-gustafson.com/notebook/on-adaptive-web-designs-second-edition/
       class="webmention__title p-name"><a href="https://twitter.com/snowcoda/status/656708283332341761">Paul
       Wilson reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-10-21T01:47:10-04:00">21 October 2015</time></div></article></li>
+    '656655459269656576': <li id="webmention-656655459269656576" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://about.me/ipaintcode"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/c98e0a9ae517324cf4d1ed690246b1caef83f0bf84bebfd57ef207cd3c538372.jpeg"
+      alt="" title="Mark Learst"><b class="p-name">Mark Learst</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/iPaintCode/status/656655459269656576">Mark
+      Learst reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-10-21T03:17:16+01:00">21 October 2015</time></div></article></li>
+    '656660306815414276': <li id="webmention-656660306815414276" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://kkendle.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/55eaa924308622740b085597a2d26ed5503341322bad1d875474d79537c1f66c.jpeg"
+      alt="" title="Kevin Kendle"><b class="p-name">Kevin Kendle</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/KKendle/status/656660306815414276">Kevin
+      Kendle reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-10-21T03:36:31+01:00">21 October 2015</time></div></article></li>
   '2015-10-22':
     '657164619472084992': <li id="webmention-657164619472084992" class="webmentions__item"><article
       class="h-cite webmention webmention--title-only"><div class="webmention__author
@@ -9208,6 +9684,64 @@ https://www.aaron-gustafson.com/notebook/crossposting-to-medium-from-jekyll/:
       <li id="webmention-658856602318053376" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://robin2go.net/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/94a627531b415d46da9cf3ff68d132e8f336e7a1b210a95806e084679a3a98d9.png" alt="" title="Robin Smail"><b class="p-name">Robin Smail</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/SvenAas" rel="nofollow">@SvenAas</a> As someone dear to me once said, I AM THE KING OF FUCK MOUNTAIN.
       &lt;a href=”https://www.aaron-gustafson.com/notebook/crossposting-to-medi</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-27T00:03:49-04:00">27 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/Robin2go/status/658856602318053376">Permalink</a></div></article></li>
+    '658827707590037504': <li id="webmention-658827707590037504" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/patrickbjohnson"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/30a51764715686f396b9d3023f5bc89183a19f97bc0a59c6cefb25147d8dff24.jpeg"
+      alt="" title="pbj"><b class="p-name">pbj</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/AaronGustafson/status/658827707590037504">pbj
+      likes this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-10-27T03:09:18+00:00">27 October 2015</time></div></article></li>
+    '658853856051384320': |-
+      <li id="webmention-658853856051384320" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/SvenAas"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/4a59f1b525f224cd82f97d664f07b3858a4f18d91507dc01f4de34db8ad3e708.jpeg" alt="" title="Sven Aas"><b class="p-name">Sven Aas</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/Robin2go" rel="nofollow">@Robin2go</a> but then how does this help?
+      <a href="https://www.aaron-gustafson.com/notebook/crossposting-to-medium-from-jekyll/" rel="nofollow">&lt;/</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-27T03:52:54+00:00">27 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/SvenAas/status/658853856051384320">Permalink</a></div></article></li>
+    '658853627386331136': |-
+      <li id="webmention-658853627386331136" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/SvenAas"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/4a59f1b525f224cd82f97d664f07b3858a4f18d91507dc01f4de34db8ad3e708.jpeg" alt="" title="Sven Aas"><b class="p-name">Sven Aas</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/Robin2go" rel="nofollow">@Robin2go</a> Do you use Jeckyll or OctoPress?
+      &lt;a href=”https://www.aaron-gustafson.com/notebook/crossposting-to-medium-from-jekyll/” rel=”nofollow</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-27T03:52:00+00:00">27 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/SvenAas/status/658853627386331136">Permalink</a></div></article></li>
+    '658854445464297472': |-
+      <li id="webmention-658854445464297472" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/SvenAas"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/4a59f1b525f224cd82f97d664f07b3858a4f18d91507dc01f4de34db8ad3e708.jpeg" alt="" title="Sven Aas"><b class="p-name">Sven Aas</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/Robin2go" rel="nofollow">@Robin2go</a> You can also use Übercart. Or Vignette. Or even SharePoint (God help you). How will you choose?
+      &lt;a href=”https://www.aaron-gustafson.</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-27T03:55:15+00:00">27 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/SvenAas/status/658854445464297472">Permalink</a></div></article></li>
+    '658854084246642688': |-
+      <li id="webmention-658854084246642688" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/SvenAas"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/4a59f1b525f224cd82f97d664f07b3858a4f18d91507dc01f4de34db8ad3e708.jpeg" alt="" title="Sven Aas"><b class="p-name">Sven Aas</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/Robin2go" rel="nofollow">@Robin2go</a> I’m not ready to blog again but I need to do something about my personal web presence. Someday. Maybe. And I might use Jeckyll.
+      &lt;a…</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-27T03:53:49+00:00">27 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/SvenAas/status/658854084246642688">Permalink</a></div></article></li>
+    '658852692450803712': '<li id="webmention-658852692450803712" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://robin2go.net/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/94a627531b415d46da9cf3ff68d132e8f336e7a1b210a95806e084679a3a98d9.png"
+      alt="" title="Robin Smail"><b class="p-name">Robin Smail</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/Robin2go/status/658852692450803712">I
+      know smart people. Now I can actually use Medium. RT @AaronGustafson: Crossposting
+      to Medium from Jekyll aaron-gustafson.com/notebook/cross…</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-10-27T03:48:17+00:00">27
+      October 2015</time></div></article></li>'
+    '658853712329224192': |-
+      <li id="webmention-658853712329224192" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://robin2go.net/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/94a627531b415d46da9cf3ff68d132e8f336e7a1b210a95806e084679a3a98d9.png" alt="" title="Robin Smail"><b class="p-name">Robin Smail</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/SvenAas" rel="nofollow">@SvenAas</a> Neither. Yet.
+      <a href="https://www.aaron-gustafson.com/notebook/crossposting-to-medium-from-jekyll/" rel="nofollow"></a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-27T03:52:20+00:00">27 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/Robin2go/status/658853712329224192">Permalink</a></div></article></li>
+    '658853952956596224': |-
+      <li id="webmention-658853952956596224" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://robin2go.net/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/94a627531b415d46da9cf3ff68d132e8f336e7a1b210a95806e084679a3a98d9.png" alt="" title="Robin Smail"><b class="p-name">Robin Smail</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/SvenAas" rel="nofollow">@SvenAas</a> Because now I can.
+      <a href="https://www.aaron-gustafson.com/notebook/crossposting-to-medium-from-jekyll/" rel="nofollow"></a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-27T03:53:17+00:00">27 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/Robin2go/status/658853952956596224">Permalink</a></div></article></li>
+    '658855168751071232': |-
+      <li id="webmention-658855168751071232" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://robin2go.net/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/94a627531b415d46da9cf3ff68d132e8f336e7a1b210a95806e084679a3a98d9.png" alt="" title="Robin Smail"><b class="p-name">Robin Smail</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/SvenAas" rel="nofollow">@SvenAas</a> <em>snort</em> It’s on the list.
+      <a href="https://www.aaron-gustafson.com/notebook/crossposting-to-medium-from-jekyll/" rel="nofollow"></a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-27T03:58:07+00:00">27 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/Robin2go/status/658855168751071232">Permalink</a></div></article></li>
+    '658854717150375937': |-
+      <li id="webmention-658854717150375937" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://robin2go.net/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/94a627531b415d46da9cf3ff68d132e8f336e7a1b210a95806e084679a3a98d9.png" alt="" title="Robin Smail"><b class="p-name">Robin Smail</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/SvenAas" rel="nofollow">@SvenAas</a> By following the lead of someone I trust — and then unabashedly sucking up to the to help me fix it when I Bork it.
+      &lt;a href=”https://ww</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-27T03:56:20+00:00">27 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/Robin2go/status/658854717150375937">Permalink</a></div></article></li>
+    '658854973657235456': |-
+      <li id="webmention-658854973657235456" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://robin2go.net/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/94a627531b415d46da9cf3ff68d132e8f336e7a1b210a95806e084679a3a98d9.png" alt="" title="Robin Smail"><b class="p-name">Robin Smail</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/SvenAas" rel="nofollow">@SvenAas</a> And as an aside — my phone auto capitalized Bork. This makes me want to put an exclamation on it. Bork! Bork! Bork!
+      &lt;a href=”https://ww</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-27T03:57:21+00:00">27 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/Robin2go/status/658854973657235456">Permalink</a></div></article></li>
+    '658855009183006720': |-
+      <li id="webmention-658855009183006720" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/SvenAas"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/4a59f1b525f224cd82f97d664f07b3858a4f18d91507dc01f4de34db8ad3e708.jpeg" alt="" title="Sven Aas"><b class="p-name">Sven Aas</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/Robin2go" rel="nofollow">@Robin2go</a> So, um, let me know when you’ve got it all worked out, ok? You’re so good at this sort of thing.
+      &lt;a href=”https://www.aaron-gustafson</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-10-27T03:57:29+00:00">27 October 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/SvenAas/status/658855009183006720">Permalink</a></div></article></li>
 https://www.aaron-gustafson.com/notebook/apple-business-and-standards/:
   '2015-10-27':
     131988: <li id="webmention-131988" class="webmentions__item"><article class="h-cite
@@ -9558,6 +10092,14 @@ https://www.aaron-gustafson.com/notebook/excellent-speakers-for-your-next-tech-e
       class="webmention__title p-name"><a href="https://twitter.com/juliemtaylor/status/659979546133929984">Julie
       Pixels reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-10-29T23:26:00-07:00">29 October 2015</time></div></article></li>
+    '659570910387572736': <li id="webmention-659570910387572736" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://anniegreens.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/e63f856e24cd3f5f3d54db7a4d0948d543274e5733a3ee83f0d2b381e6460c9b.jpeg"
+      alt="" title="Anne Sturdivant"><b class="p-name">Anne Sturdivant</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/anniegreens/status/659570910387572736">Anne
+      Sturdivant reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-10-29T03:22:13+00:00">29 October 2015</time></div></article></li>
   '2015-10-30':
     660009514649956352: |-
       <li id="webmention-660009514649956352" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/mcorcontas"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/494813336996155392/s9pD34zs_normal.jpeg" alt="" title="Mario Corcontas"><b class="p-name">Mario Corcontas</b></a></div><div class="webmention__content p-content"><p>Excellent Speakers for Your Next Tech Event, From the Notebook of Aaron Gustafson <a href="https://t.co/f8g8CoJiGX">https://t.co/f8g8CoJiGX</a></p>
@@ -9595,6 +10137,15 @@ https://www.aaron-gustafson.com/notebook/excellent-speakers-for-your-next-tech-e
       class="webmention__title p-name"><a href="https://twitter.com/dc7590/status/660027965930135552">Darren
       Cooper reposted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-10-30T05:38:24-04:00">30 October 2015</time></div></article></li>
+    '659883051867103232': <li id="webmention-659883051867103232" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://www.lireo.com/"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/1d7987deac95f80de3ec18ce05e4aa555570d64eee7bc3e840d657491d555bef.jpeg"
+      alt="" title="DeborahEdwards-Onoro"><b class="p-name">DeborahEdwards-Onoro</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/redcrew/status/659883051867103232">For
+      your next tech event, consider these speakers bit.ly/1PTEgRT by @AaronGustafson
+      <- glad to have met many IRL!</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-10-30T00:02:34+00:00">30 October 2015</time></div></article></li>
   '2015-10-31':
     660486180551548928: "<li id=\"webmention-660486180551548928\" class=\"webmentions__item\"><article
       class=\"h-cite webmention webmention--content-only\"><div class=\"webmention__author
@@ -10155,6 +10706,14 @@ https://www.aaron-gustafson.com/notebook/labeled-with-love/:
       With Love, From the Notebook of Aaron Gustafson | accessibility news</a></div><div
       class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-11-26T05:08:46-05:00">26
       November 2015</time></div></article></li>
+    '669712344432443392': <li id="webmention-669712344432443392" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://frontendweekly.tokyo/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/b80465a02c7f06aa18d2116b0661ca1e7965c7b81f79d6ec217db070ae6dc5ae.png"
+      alt="" title="Yuya Saito"><b class="p-name">Yuya Saito</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/cssradar/status/669712344432443392">Labeled
+      With Love bit.ly/1OZS8dt</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-11-26T03:00:40+00:00">26 November 2015</time></div></article></li>
   '2015-12-03':
     161284: <li id="webmention-161284" class="webmentions__item"><article class="h-cite
       webmention webmention--no-author webmention--title-only"> <div class="webmention__title
@@ -10198,6 +10757,13 @@ https://www.aaron-gustafson.com/notebook/labeled-with-love/:
       with Love aaron-gustafson.com/notebook/label…</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2015-11-28T23:00:00-08:00">28
       November 2015</time></div></article></li>
+  '2015-12-04':
+    161284: <li id="webmention-161284" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="https://www.christianheilmann.com/2015/12/04/a-quick-reminder-on-how-and-why-to-use-labels-in-forms-to-make-them-more-accessible/">A
+      quick reminder on how and why to use labels in forms to make them more accessible
+      | Christian Heilmann</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2015-12-04T01:26:35+00:00">4 December 2015</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/consider-how-your-forms-read/:
   '2015-11-11':
     143647: <li id="webmention-143647" class="webmentions__item"><article class="h-cite
@@ -10218,6 +10784,14 @@ https://www.aaron-gustafson.com/notebook/consider-how-your-forms-read/:
     678835589563551745: |-
       <li id="webmention-678835589563551745" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/Dmitri145"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1637544880/mypic_normal.jpg" alt="" title="Dmitri Zaitsev"><b class="p-name">Dmitri Zaitsev</b></a></div><div class="webmention__content p-content"><p>Consider How Your Forms Read <a href="https://t.co/Xq018aqtip">https://t.co/Xq018aqtip</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2015-12-21T01:13:11-06:00">21 December 2015</time> | <a class="webmention__source u-url" href="https://twitter.com/Dmitri145/status/678835589563551745">Permalink</a></div></article></li>
+  '2015-11-12':
+    143647: <li id="webmention-143647" class="webmentions__item"><article class="h-cite
+      webmention webmention--title-only"><div class="webmention__author p-author h-card"><a
+      class="u-url" href="https://www.aaron-gustafson.com/about"><b class="p-name">Aaron
+      Gustafson</b></a></div> <div class="webmention__title p-name"><a href="https://www.aaron-gustafson.com/notebook/labeled-with-love/">Labeled
+      With Love, From the Notebook of Aaron Gustafson</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2015-11-12T02:43:12+00:00">12
+      November 2015</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/links/50-female-tech-influencers-to-follow-on-twitter/:
   '2015-11-12':
     664875234693095424: |-
@@ -10737,6 +11311,18 @@ https://www.aaron-gustafson.com/notebook/playing-with-flexbox-and-quantity-queri
     702240326799507457: |-
       <li id="webmention-702240326799507457" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/foralien"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/481872669457936384/SpG5fwL0_normal.jpeg" alt="" title="Anna Ladoshkina"><b class="p-name">Anna Ladoshkina</b></a></div><div class="webmention__content p-content"><p>Playing With Flexbox and Quantity Queries, From the Notebook of Aaron Gustafson <a href="https://t.co/Gs8dDTYPml">https://t.co/Gs8dDTYPml</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-23T16:15:15-05:00">23 February 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/foralien/status/702240326799507457">Permalink</a></div></article></li>
+  '2016-02-24':
+    308902: <li id="webmention-308902" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://digitalmofo.com/the-flexbox-reading-list-techniques-and-tools/">DigitalMofo</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-24T00:03:27+00:00">24
+      February 2016</time></div></article></li>
+  '2016-02-29':
+    310434: <li id="webmention-310434" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://digitalmofo.com/the-flexbox-reading-list-techniques-and-tools-2/">DigitalMofo</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-02-29T00:18:50+00:00">29
+      February 2016</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/links/on-accessibility-and-the-lack-of-proper-html/:
   '2016-01-26':
     692109287104122881: |-
