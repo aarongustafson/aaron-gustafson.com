@@ -1,0 +1,8 @@
+<nav id="nav" tabindex="0" aria-labelledby="nav-title">
+  <h1 id="nav-title" class="hidden">Here’s what you can find on this site:</h1>
+  <ul>
+    <li><a href="/about/"><b class="hidden">A Bit </b>About<b class="hidden"> Me</b></a></li>
+    <li><a href="/notebook/"><b class="hidden">Entries in My </b>Notebook</a></li>
+    …
+  </ul>
+</nav>

@@ -35,7 +35,7 @@ When I started out on the Web, I had a 28.8 <abbr aria-label="kilobits per secon
 When I started out on the Web, I had an 800x600 monitor, but still had to support 640x480 screen resolutions. I learned the importance of prioritizing content long before media queries and flexbox enabled us to adapt our layouts on the fly. And while our computer screens keep getting bigger, mobile devices and wearables present the very same challenges I was tackling with 640x480, but in even tighter confines.
 
 <figure id="figure-2016-03-04-01">
-{% adaptive_image /i/posts/2016-03-04/01.gif %}
+<img src="/i/posts/2016-03-04/01.gif" alt="Screen sizes changing over time.">
 </figure>
 
 When I started out on the Web, there was no JavaScript. All calculations, data processing, and dynamic functionality had to be handled by the server. I learned how to process web forms in Perl, later trading in my CGI scripts for PHP, Ruby, and Python. And while the vast majority of our users today have JavaScript baked into their browsers, I still rely on server-side fallbacks because I recognize that we don’t control the execution environment on the open Web.
@@ -51,7 +51,7 @@ Science fiction has often been a strong predictor of our technological future. H
 To function in the real world like they do on TV and in the movies, computers need two capabilities: Natural language processing (to understand what we say) and speech synthesis (to communicate, aurally, back to us).
 
 <figure id="figure-2016-03-04-02">
-{% adaptive_image /i/posts/2016-03-04/02.gif %}
+<img src="/i/posts/2016-03-04/02.gif" alt="Visual of a human and a computer conversing.">
 </figure>
 
 Natural language processing has its roots in the 1950s, but many of these early speech models were limited because they were built around a series of hard-coded rules that the computers followed. In the 1980s, however, machine learning and real-time statistical analysis became possible.
@@ -275,13 +275,13 @@ While not specifically designed for the future of headless UIs, this form is pre
 We show our users respect by respecting their time. Obviously straightforward, brief writing is one way we do that, but another is to reduce the time it takes to complete a task. Many forms are brimming with fields to be filled in. In some cases, the vast majority are purely optional. And while it may be easy to spot the required fields visually, bypassing them in an aural interface can be incredibly difficult.
 
 <figure id="figure-2016-03-04-11">
-{% adaptive_image /i/posts/2016-03-04/11.png %}
+{% adaptive_image /i/posts/2016-03-04/11.jpg %}
 </figure>
 
 User experience designers have been pushing for simplified forms since… well, as long as I can remember. Users appreciate them, they tend to result in better data, and they also tend to convert better than long forms. And when it comes to voice-based interactions, they will become a necessity. No one is going to want to spend 15 minutes working their way through a 15 question registration form when all that’s required is their email address and for them to choose a password.
 
 <figure id="figure-2016-03-04-12">
-{% adaptive_image /i/posts/2016-03-04/12.png %}
+{% adaptive_image /i/posts/2016-03-04/12.jpg %}
 </figure>
 
 On a similar note, we should avoid slicing fields into multiple parts if at all possible. For instance, you still see fields like this one, asking for a US phone number, quite often:
