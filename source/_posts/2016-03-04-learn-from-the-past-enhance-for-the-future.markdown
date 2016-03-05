@@ -178,8 +178,8 @@ In perhaps the most common form example, consider the label "First Name". It’s
 
 <figure id="figure-2016-03-04-05">
 <audio controls>
-<source src="/i/posts/2016-03-04/05.mp3" type="audio/mp3">
-<source src="/i/posts/2016-03-04/05.ogg" type="audio/oga">
+<source src="/i/posts/2016-03-04/05.mp3" type="audio/mpeg">
+<source src="/i/posts/2016-03-04/05.ogg" type="audio/ogg">
 </audio>
 </figure>
 
@@ -189,8 +189,8 @@ Similarly, when there’s an error, notify them of the error and, if possible, g
 
 <figure id="figure-2016-03-04-06">
 <audio controls>
-<source src="/i/posts/2016-03-04/06.mp3" type="audio/mp3">
-<source src="/i/posts/2016-03-04/06.ogg" type="audio/oga">
+<source src="/i/posts/2016-03-04/06.mp3" type="audio/mpeg">
+<source src="/i/posts/2016-03-04/06.ogg" type="audio/ogg">
 </audio>
 </figure>
 
@@ -206,8 +206,8 @@ You can also use the `fieldset` and `legend` elements to group the related contr
 
 <figure id="figure-2016-03-04-07">
 <audio controls>
-<source src="/i/posts/2016-03-04/07.mp3" type="audio/mp3">
-<source src="/i/posts/2016-03-04/07.ogg" type="audio/oga">
+<source src="/i/posts/2016-03-04/07.mp3" type="audio/mpeg">
+<source src="/i/posts/2016-03-04/07.ogg" type="audio/ogg">
 </audio>
 </figure>
 
@@ -217,8 +217,8 @@ We should strive for the same sort of clarity when presenting navigation options
 
 <figure id="figure-2016-03-04-08">
 <audio controls>
-<source src="/i/posts/2016-03-04/08.mp3" type="audio/mp3">
-<source src="/i/posts/2016-03-04/08.ogg" type="audio/oga">
+<source src="/i/posts/2016-03-04/08.mp3" type="audio/mpeg">
+<source src="/i/posts/2016-03-04/08.ogg" type="audio/ogg">
 </audio>
 </figure>
 
