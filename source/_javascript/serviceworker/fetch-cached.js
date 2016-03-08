@@ -7,7 +7,12 @@ self.addEventListener( 'fetch', function( event ){
         // don’t bother caching these
         ignore = [
             'p.typekit.net/p.gif',
-            'www.google-analytics.com/r/collect'
+            'www.google-analytics.com/r/collect',
+            'ogg',
+            'mp3',
+            'mp4',
+            'ogv',
+            'webm'
         ],
         // only grab these once (they’re unlikely to need refreshing)
         fetch_once = [

@@ -1,6 +1,6 @@
 'use strict';
 
-var version = 'v1456367491253:',
+var version = 'v1457470650813:',
 	default_avatar = 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&f=y',
 	missing_image = 'https://i.imgur.com/oWLuFAa.gif';
 self.addEventListener( 'activate', function( event ){
@@ -34,7 +34,12 @@ self.addEventListener( 'fetch', function( event ){
         // don’t bother caching these
         ignore = [
             'p.typekit.net/p.gif',
-            'www.google-analytics.com/r/collect'
+            'www.google-analytics.com/r/collect',
+            'ogg',
+            'mp3',
+            'mp4',
+            'ogv',
+            'webm'
         ],
         // only grab these once (they’re unlikely to need refreshing)
         fetch_once = [
