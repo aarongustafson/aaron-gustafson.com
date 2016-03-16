@@ -5,6 +5,7 @@ date: 2016-03-16 09:54:59 -0500
 comments: true
 categories: [conferences,forms,"progressive enhancement","the future","user experience","web design"]
 description: "Unfortunately, I was unable to spend Tuesday in Nashville for An Event Apart (for reasons that will be revealed in about a month), but I did catch Monday and it was amazing."
+redirect_from: /notebook/slides-the-features-of-highly-effective-forms-at-an-event-apart-nashville/
 ---
 
 Unfortunately, I was unable to spend Tuesday in Nashville for An Event Apart (for reasons that will be revealed in about a month), but I did catch Monday and it was amazing.
