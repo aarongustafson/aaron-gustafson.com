@@ -81,7 +81,16 @@ module Jekyll
               crosspost_payload(crossposted, post, content, title, url)
             end
           else
-            markdown_converter = @site.getConverterImpl(Jekyll::Converters::Markdown)
+            
+            # post Jekyll commit 0c0aea3
+            # https://github.com/jekyll/jekyll/commit/0c0aea3ad7d2605325d420a23d21729c5cf7cf88
+            if defined? site.find_converter_instance
+              markdown_converter = @site.find_converter_instance(Jekyll::Converters::Markdown)
+            # Prior to Jekyll commit 0c0aea3
+            else
+              markdown_converter = @site.getConverterImpl(Jekyll::Converters::Markdown)
+            end
+
             @site.posts.each do |post|
 
               if ! post.published?
@@ -102,6 +111,7 @@ module Jekyll
               title = post.title
 
               crosspost_payload(crossposted, post, content, title, url)
+              
             end
           end
         end
@@ -110,9 +120,13 @@ module Jekyll
 
 
     def crosspost_payload(crossposted, post, content, title, url)
+      puts content
+      exit
+
       # Update any absolute URLs
-      content = content.gsub /href=(["'])\//, "href=\"\1#{@site.config['url']}/"
-      content = content.gsub /src=(["'])\//, "src=\"\1#{@site.config['url']}/"
+      # But don’t clobber protocol-less (i.e. "//") URLs
+      content = content.gsub /href=(["'])\/(?!\/)/, "href=\"\1#{@site.config['url']}/"
+      content = content.gsub /src=(["'])\/(?!\/)/, "src=\"\1#{@site.config['url']}/"
 
       # Save canonical URL
       canonical_url = url
