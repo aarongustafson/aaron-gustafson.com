@@ -1,0 +1,7 @@
+<div class="highlight"><pre><span class="kn">library</span><span class="p">(</span>ggplot2<span class="p">)</span>
+<span class="kp">load</span><span class="p">(</span><span class="s">&quot;~/Dropbox/Dissertation.Data/FitbitData/ProcessedData/Daily.Activity.Final.rdata&quot;</span><span class="p">)</span>
+ggplot<span class="p">(</span>Daily.Activity.Final<span class="p">,</span> aes<span class="p">(</span>x<span class="o">=</span>Date<span class="p">,</span> y<span class="o">=</span>Valid.Final<span class="p">))</span> <span class="o">+</span>
+  geom_bar<span class="p">(</span>stat<span class="o">=</span><span class="s">&quot;identity&quot;</span><span class="p">)</span> <span class="o">+</span>
+  scale_y_continuous<span class="p">(</span>breaks<span class="o">=</span><span class="kc">NULL</span><span class="p">,</span> labels <span class="o">=</span> <span class="kc">NULL</span><span class="p">)</span> <span class="o">+</span>
+  facet_grid<span class="p">(</span>id <span class="o">~</span><span class="m">.</span><span class="p">)</span>
+</pre></div>

@@ -11683,6 +11683,9 @@ https://www.aaron-gustafson.com/notebook/learn-from-the-past-enhance-for-the-fut
       aaron-gustafson.com/notebook/learn…</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2016-03-16T08:41:09-05:00">16
       March 2016</time></div></article></li>
+    710297871598407681: |-
+      <li id="webmention-710297871598407681" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/Graahf"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/639172686980218880/5vC-FVYJ_normal.jpg" alt="" title="Steve Tegtmejer"><b class="p-name">Steve Tegtmejer</b></a></div><div class="webmention__content p-content"><p>Learn From the Past and be better then the Future <a href="https://t.co/uHDq5C7XDt">https://t.co/uHDq5C7XDt</a> #blogging #web #javascript #html #css #performance</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-03-16T22:53:03-04:00">16 March 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/Graahf/status/710297871598407681">Permalink</a></div></article></li>
   '2016-03-15':
     709647326839709696: |-
       <li id="webmention-709647326839709696" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/ManckoFr"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/656572184551424000/FwZ5bzQl_normal.jpg" alt="" title="Alexis"><b class="p-name">Alexis</b></a></div><div class="webmention__content p-content"><p>Apprendre du passé, améliorer le futur, par Aaron Gustafson @AaronGustafson <a href="https://t.co/lFgY9RLAdA">https://t.co/lFgY9RLAdA</a> #enhance #UX</p>
@@ -11771,6 +11774,20 @@ https://www.aaron-gustafson.com/notebook/learn-from-the-past-enhance-for-the-fut
       class="webmention__title p-name"><a href="https://brid-gy.appspot.com/like/twitter/AaronGustafson/705953284276756482/448601093">Michael
       Baker Michael Baker</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2016-03-10T11:52:49-06:00">10 March 2016</time></div></article></li>
+  '2016-03-17':
+    710388040984883200: |-
+      <li id="webmention-710388040984883200" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/anthonydillon"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/438976428147634176/GKxk0wzS_normal.jpeg" alt="" title="Anthony Dillon"><b class="p-name">Anthony Dillon</b></a></div><div class="webmention__content p-content"><p>Interesting article from @AaronGustafson. Frontend to content to UX. They tackle the same problems and always have. <a href="https://t.co/P886Ak4Mr3">https://t.co/P886Ak4Mr3</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-03-17T04:51:21-04:00">17 March 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/anthonydillon/status/710388040984883200">Permalink</a></div></article></li>
+    '710388040984883200': <li id="webmention-710388040984883200" class="webmentions__item"><article
+      class="h-cite webmention webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="http://www.anthonydillon.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/ffc335ed42ff9abe968c25cb82dbccdb683784cb87bf5d25d470e0db4c7e4128.jpeg"
+      alt="" title="Anthony Dillon"><b class="p-name">Anthony Dillon</b></a></div>
+      <div class="webmention__title p-name"><a href="https://brid-gy.appspot.com/post/twitter/AaronGustafson/710388040984883200">Interesting
+      article from @AaronGustafson. Frontend to content to UX. They tackle the same
+      problems and always have. aaron-gustafson.com/notebook/learn…</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-03-17T04:51:21-04:00">17
+      March 2016</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/how-to-apply-progressive-enhancement-when-javascript-seems-like-a-requirement/:
   '2016-03-08':
     707324845634138112: |-
@@ -11790,3 +11807,75 @@ https://www.aaron-gustafson.com/notebook/slides-the-features-of-highly-effective
     710188190490038272: |-
       <li id="webmention-710188190490038272" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/706159857632722944/wEx7iM5W_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>An Event Apart Nashville 2016, Day One <a href="https://t.co/qjxwvz8DHe">https://t.co/qjxwvz8DHe</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-03-16T15:37:13-04:00">16 March 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/710188190490038272">Permalink</a></div></article></li>
+    '710220781171679232': '<li id="webmention-710220781171679232" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.amberweinberg.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/9139b3fe9527ef6a9211daf6bccec1a0953b56e801591c7e4b12dc6368ba8f2a.jpeg"
+      alt="" title="Amber Weinberg"><b class="p-name">Amber Weinberg</b></a></div>
+      <div class="webmention__title p-name"><a href="https://brid-gy.appspot.com/repost/twitter/AaronGustafson/710188190490038272/710220781171679232">Amber
+      Weinberg RT @AaronGustafson: An Event Apart Nashville 2016, Day One aaron-gustafson.com/notebook/slide…</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-03-16T17:46:44-04:00">16
+      March 2016</time></div></article></li>'
+    '710222448080322560': '<li id="webmention-710222448080322560" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.websteronline.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/3e3d08f51c66c8922eca1615c5005b6ab773525cf077fbbd6f1d4d0f34314955.jpeg"
+      alt="" title="Thomas Pietrosanti"><b class="p-name">Thomas Pietrosanti</b></a></div>
+      <div class="webmention__title p-name"><a href="https://brid-gy.appspot.com/repost/twitter/AaronGustafson/710188190490038272/710222448080322560">Thomas
+      Pietrosanti RT @AaronGustafson: An Event Apart Nashville 2016, Day One aaron-gustafson.com/notebook/slide…</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-03-16T17:53:21-04:00">16
+      March 2016</time></div></article></li>'
+    '710188190490038272': <li id="webmention-710188190490038272" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--author-starts
+      webmention--title-only"><div class="webmention__author p-author h-card"><a class="u-url"
+      href="https://twitter.com/amberweinberg"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/9139b3fe9527ef6a9211daf6bccec1a0953b56e801591c7e4b12dc6368ba8f2a.jpeg"
+      alt="" title="Amber Weinberg"><b class="p-name">Amber Weinberg</b></a></div>
+      <div class="webmention__title p-name"><a href="https://brid-gy.appspot.com/like/twitter/AaronGustafson/710188190490038272/16847294">Amber
+      Weinberg Amber Weinberg</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-03-16T17:56:10-04:00">16 March 2016</time></div></article></li>
+    '710228264409694208': |-
+      <li id="webmention-710228264409694208" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/joshuamilford"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/102e79e050025403201bfbef5b1be45b623df8cf7537d81ad478ad14c2118611.jpeg" alt="" title="Joshua Milford"><b class="p-name">Joshua Milford</b></a></div><div class="webmention__content p-content"><p>I think the sore neck is a pretty common sentiment of AEA attendees! <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> &lt;a href=”https://twitter.com/AaronGustafson/status/7101881904900382</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-03-16T18:16:28-04:00">16 March 2016</time> | <a class="webmention__source u-url" href="https://brid-gy.appspot.com/comment/twitter/AaronGustafson/710188190490038272/710228264409694208">Permalink</a></div></article></li>
+    '710229007086821377': |-
+      <li id="webmention-710229007086821377" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://www.aaron-gustafson.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/a5889f8f5b1fcd29b9b812aceacc9f0ebe12347de014e106f517f8b5aeecb3ce.jpeg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/joshuamilford">@joshuamilford</a> True enough.</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-03-16T18:19:25-04:00">16 March 2016</time> | <a class="webmention__source u-url" href="https://brid-gy.appspot.com/comment/twitter/AaronGustafson/710188190490038272/710229007086821377">Permalink</a></div></article></li>
+https://www.aaron-gustafson.com/notebook/an-event-apart-nashville-2016-day-one/:
+  '2016-03-16':
+    710286830982340609: |-
+      <li id="webmention-710286830982340609" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/706159857632722944/wEx7iM5W_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>An Event Apart Nashville 2016, Day One <a href="https://t.co/Zg3PKNbQ8X">https://t.co/Zg3PKNbQ8X</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-03-16T22:09:11-04:00">16 March 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/710286830982340609">Permalink</a></div></article></li>
+    710220875224768512: |-
+      <li id="webmention-710220875224768512" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/amberweinberg"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/609113956347691011/-zZ3ciYY_normal.jpg" alt="" title="Amber Weinberg"><b class="p-name">Amber Weinberg</b></a></div><div class="webmention__content p-content"><p>@tolsondesigns BTW @AaronGustafson wrote a better wrap up that I could for AEA: <a href="https://t.co/if1jWChKpL">https://t.co/if1jWChKpL</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-03-16T17:47:06-04:00">16 March 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/amberweinberg/status/710220875224768512">Permalink</a></div></article></li>
+    '710286830982340609': <li id="webmention-710286830982340609" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--author-starts
+      webmention--title-only"><div class="webmention__author p-author h-card"><a class="u-url"
+      href="https://twitter.com/_hmig"><img class="webmention__author__photo u-photo"
+      src="https://webmention.io/avatar/twitter.com/67a09de9863f8eca50a465df79166db575912a9b1ae024697e4b20356abb351d.jpeg"
+      alt="" title="Mocha Heather"><b class="p-name">Mocha Heather</b></a></div> <div
+      class="webmention__title p-name"><a href="https://brid-gy.appspot.com/like/twitter/AaronGustafson/710286830982340609/292958173">Mocha
+      Heather Mocha Heather</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-03-16T22:24:19-04:00">16 March 2016</time></div></article></li>
+    '710286965602648068': '<li id="webmention-710286965602648068" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://alistapart.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/6fa4ea37928727b0981ca90c11c165368b27307360e186ed44af5ae26a5a303a.jpeg"
+      alt="" title="Weisburd"><b class="p-name">Weisburd</b></a></div> <div class="webmention__title
+      p-name"><a href="https://brid-gy.appspot.com/repost/twitter/AaronGustafson/710286830982340609/710286965602648068">Weisburd
+      RT @AaronGustafson: An Event Apart Nashville 2016, Day One aaron-gustafson.com/notebook/an-ev…</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-03-16T22:09:43-04:00">16
+      March 2016</time></div></article></li>'
+  '2016-03-17':
+    '710286830982340609': <li id="webmention-710286830982340609" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--author-starts
+      webmention--title-only"><div class="webmention__author p-author h-card"><a class="u-url"
+      href="https://twitter.com/codyspriggs"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/twitter.com/bb245086e950b6efd8941d8005d25b7089dd3dfcde46475a608821552939a16c.jpeg"
+      alt="" title="Cody Spriggs"><b class="p-name">Cody Spriggs</b></a></div> <div
+      class="webmention__title p-name"><a href="https://brid-gy.appspot.com/like/twitter/AaronGustafson/710286830982340609/50078560">Cody
+      Spriggs Cody Spriggs</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-03-17T00:19:11-04:00">17 March 2016</time></div></article></li>
+    '710318275029172225': |-
+      <li id="webmention-710318275029172225" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/codyspriggs"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/bb245086e950b6efd8941d8005d25b7089dd3dfcde46475a608821552939a16c.jpeg" alt="" title="Cody Spriggs"><b class="p-name">Cody Spriggs</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> really enjoyed your presentation Aaron! This was my first AEA and was blown away by the whole event. Thx &lt;a href=”https://twitter.com/ze</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-03-17T00:14:08-04:00">17 March 2016</time> | <a class="webmention__source u-url" href="https://brid-gy.appspot.com/comment/twitter/AaronGustafson/710286830982340609/710318275029172225">Permalink</a></div></article></li>
