@@ -1,3 +1,13 @@
+- title: An Event Apart
+  url: http://aneventapart.com/event/nashville-2016
+  date: 2016-03-14 09:00:00 -0400
+  location: Nashville, TN USA
+
+- title: EnhanceConf
+  url: http://lanyrd.com/2016/enhanceconf/
+  date: 2016-03-03 09:00:00 -0400
+  location: London, UK
+
 - title: Øredev
   url: http://lanyrd.com/2015/oredev/
   date: 2015-11-03 09:00:00 -0400
