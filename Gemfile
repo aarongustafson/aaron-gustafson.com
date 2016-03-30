@@ -19,6 +19,7 @@ group :development do
   gem 'nokogiri'
   gem 'kramdown'
   gem 'jekyll-crosspost-to-medium'
+  gem 'html-proofer'
 end
 
 gem 'sinatra', '~> 1.4.2'
