@@ -1,15 +1,87 @@
-function detectType( event ) {
-  switch( event.pointerType ) {
-    case "mouse:
-      /* mouse input detected */
-      break;
-    case "pen":
-      /* pen/stylus input detected */
-      break;
-    case "touch:
-      /* touch input detected */
-      break;
-    default:
-      /* pointerType is empty (could not be detected) or UA-specific custom type */
-  }
-}
+<link rel="stylesheet" href="https://assets-cdn.github.com/assets/gist-embed-51ae8299bd14b6c42fb20b0ce07f643175347abaca051f9c55e114bfc98b10b1.css">
+<div id="gist23609938" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-pointer-event-js" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-javascript">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="file-pointer-event-js-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-pointer-event-js-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">function</span> <span class="pl-en">detectType</span>( <span class="pl-c1">event</span> ) {</td>
+      </tr>
+      <tr>
+        <td id="file-pointer-event-js-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-pointer-event-js-LC2" class="blob-code blob-code-inner js-file-line">  <span class="pl-k">switch</span>( <span class="pl-c1">event</span>.<span class="pl-smi">pointerType</span> ) {</td>
+      </tr>
+      <tr>
+        <td id="file-pointer-event-js-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-pointer-event-js-LC3" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">case</span> <span class="pl-s"><span class="pl-pds">&quot;</span>mouse<span class="pl-pds">&quot;</span></span><span class="pl-k">:</span></td>
+      </tr>
+      <tr>
+        <td id="file-pointer-event-js-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-pointer-event-js-LC4" class="blob-code blob-code-inner js-file-line">      <span class="pl-c">/* mouse input detected */</span></td>
+      </tr>
+      <tr>
+        <td id="file-pointer-event-js-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-pointer-event-js-LC5" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">break</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-pointer-event-js-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-pointer-event-js-LC6" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">case</span> <span class="pl-s"><span class="pl-pds">&quot;</span>pen<span class="pl-pds">&quot;</span></span><span class="pl-k">:</span></td>
+      </tr>
+      <tr>
+        <td id="file-pointer-event-js-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-pointer-event-js-LC7" class="blob-code blob-code-inner js-file-line">      <span class="pl-c">/* pen/stylus input detected */</span></td>
+      </tr>
+      <tr>
+        <td id="file-pointer-event-js-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-pointer-event-js-LC8" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">break</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-pointer-event-js-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-pointer-event-js-LC9" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">case</span> <span class="pl-s"><span class="pl-pds">&quot;</span>touch<span class="pl-pds">&quot;</span></span><span class="pl-k">:</span></td>
+      </tr>
+      <tr>
+        <td id="file-pointer-event-js-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-pointer-event-js-LC10" class="blob-code blob-code-inner js-file-line">      <span class="pl-c">/* touch input detected */</span></td>
+      </tr>
+      <tr>
+        <td id="file-pointer-event-js-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-pointer-event-js-LC11" class="blob-code blob-code-inner js-file-line">      <span class="pl-k">break</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-pointer-event-js-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-pointer-event-js-LC12" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">default</span><span class="pl-k">:</span></td>
+      </tr>
+      <tr>
+        <td id="file-pointer-event-js-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-pointer-event-js-LC13" class="blob-code blob-code-inner js-file-line">      <span class="pl-c">/* pointerType is empty (could not be detected) or UA-specific custom type */</span></td>
+      </tr>
+      <tr>
+        <td id="file-pointer-event-js-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-pointer-event-js-LC14" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      <tr>
+        <td id="file-pointer-event-js-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-pointer-event-js-LC15" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+</table>
+
+  </div>
+
+  </div>
+  
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/aarongustafson/372271534c78cf11d4a6/raw/949f48a1550d502edeccf4e8e8392cb687fe1064/pointer-event.js" style="float:right">view raw</a>
+        <a href="https://gist.github.com/aarongustafson/372271534c78cf11d4a6#file-pointer-event-js">pointer-event.js</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div>
+

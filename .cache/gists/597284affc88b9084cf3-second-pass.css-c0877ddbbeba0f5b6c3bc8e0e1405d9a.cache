@@ -1,44 +1,205 @@
-.listing--events {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-}
+<link rel="stylesheet" href="https://assets-cdn.github.com/assets/gist-embed-51ae8299bd14b6c42fb20b0ce07f643175347abaca051f9c55e114bfc98b10b1.css">
+<div id="gist20766084" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-second-pass-css" class="file">
+    
 
-.event {
-  box-sizing: border-box;
-  padding: 1.25rem; /* 20px */
-  margin: 0 0 1.25rem 0; /* 20px v */
-  flex: 0 0 100%;
-}
+  <div itemprop="text" class="blob-wrapper data type-css">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="file-second-pass-css-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-second-pass-css-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.listing--events</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-second-pass-css-LC2" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">display</span></span>: flex;</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-second-pass-css-LC3" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">flex</span>-<span class="pl-c1">wrap</span></span>: wrap;</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-second-pass-css-LC4" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">align</span>-items</span>: stretch;</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-second-pass-css-LC5" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-second-pass-css-LC6" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-second-pass-css-LC7" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.event</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-second-pass-css-LC8" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">box-sizing</span></span>: border-box;</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-second-pass-css-LC9" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">padding</span></span>: <span class="pl-c1">1.25<span class="pl-k">rem</span></span>; <span class="pl-c">/* 20px */</span></td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-second-pass-css-LC10" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">margin</span></span>: <span class="pl-c1">0</span> <span class="pl-c1">0</span> <span class="pl-c1">1.25<span class="pl-k">rem</span></span> <span class="pl-c1">0</span>; <span class="pl-c">/* 20px v */</span></td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-second-pass-css-LC11" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">flex</span></span>: <span class="pl-c1">0</span> <span class="pl-c1">0</span> <span class="pl-c1">100<span class="pl-k">%</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-second-pass-css-LC12" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-second-pass-css-LC13" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-second-pass-css-LC14" class="blob-code blob-code-inner js-file-line"><span class="pl-k">@media</span> <span class="pl-k">only</span> <span class="pl-c1">screen</span> <span class="pl-k">and</span> (<span class="pl-c1">min-width</span>: <span class="pl-c1">28.75<span class="pl-k">em</span></span>) {</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-second-pass-css-LC15" class="blob-code blob-code-inner js-file-line">  </td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-second-pass-css-LC16" class="blob-code blob-code-inner js-file-line">  <span class="pl-c">/* 20px gap divided by 2 events per row */</span></td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-second-pass-css-LC17" class="blob-code blob-code-inner js-file-line">  <span class="pl-e">.event</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-second-pass-css-LC18" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1"><span class="pl-c1">flex</span></span>: <span class="pl-c1">0</span> <span class="pl-c1">0</span> calc( <span class="pl-c1">50<span class="pl-k">%</span></span> - <span class="pl-c1">1.25<span class="pl-k">rem</span></span> / <span class="pl-c1">2</span> );</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-second-pass-css-LC19" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1"><span class="pl-c1">margin-left</span></span>: <span class="pl-c1">1.25<span class="pl-k">rem</span></span>; <span class="pl-c">/* 20px &lt; */</span></td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-second-pass-css-LC20" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="file-second-pass-css-LC21" class="blob-code blob-code-inner js-file-line">  </td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="file-second-pass-css-LC22" class="blob-code blob-code-inner js-file-line">  <span class="pl-c">/* Remove left margin for row starters */</span></td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="file-second-pass-css-LC23" class="blob-code blob-code-inner js-file-line">  <span class="pl-e">.event</span><span class="pl-e">:nth-child</span>(<span class="pl-c1">odd</span>) {</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="file-second-pass-css-LC24" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1"><span class="pl-c1">margin-left</span></span>: <span class="pl-c1">0</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="file-second-pass-css-LC25" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="file-second-pass-css-LC26" class="blob-code blob-code-inner js-file-line">  </td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="file-second-pass-css-LC27" class="blob-code blob-code-inner js-file-line">  <span class="pl-c">/* Reset margins on &quot;future&quot; events</span></td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="file-second-pass-css-LC28" class="blob-code blob-code-inner js-file-line"><span class="pl-c">     &amp; remove the correct one */</span></td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="file-second-pass-css-LC29" class="blob-code blob-code-inner js-file-line">  <span class="pl-e">.event--future</span><span class="pl-e">:nth-child</span>(<span class="pl-c1">odd</span>) {</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="file-second-pass-css-LC30" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1"><span class="pl-c1">margin-left</span></span>: <span class="pl-c1">1.25<span class="pl-k">rem</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="file-second-pass-css-LC31" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="file-second-pass-css-LC32" class="blob-code blob-code-inner js-file-line">  <span class="pl-e">.event--future</span><span class="pl-e">:nth-child</span>(<span class="pl-c1">even</span>) {</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="file-second-pass-css-LC33" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1"><span class="pl-c1">margin-left</span></span>: <span class="pl-c1">0</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="file-second-pass-css-LC34" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="file-second-pass-css-LC35" class="blob-code blob-code-inner js-file-line">  </td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="file-second-pass-css-LC36" class="blob-code blob-code-inner js-file-line">  <span class="pl-c">/* Quantity Query - when more than 1,</span></td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="file-second-pass-css-LC37" class="blob-code blob-code-inner js-file-line"><span class="pl-c">     make the first span both columns  */</span></td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="file-second-pass-css-LC38" class="blob-code blob-code-inner js-file-line">  <span class="pl-e">.event--future</span><span class="pl-e">:nth-last-child</span>(<span class="pl-c1">n+1</span>)<span class="pl-e">:first-child</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="file-second-pass-css-LC39" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1"><span class="pl-c1">flex</span></span>: <span class="pl-c1">0</span> <span class="pl-c1">0</span> <span class="pl-c1">100<span class="pl-k">%</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="file-second-pass-css-LC40" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1"><span class="pl-c1">font-size</span></span>: <span class="pl-c1">1.5<span class="pl-k">em</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="file-second-pass-css-LC41" class="blob-code blob-code-inner js-file-line">    <span class="pl-c1"><span class="pl-c1">margin-left</span></span>: <span class="pl-c1">0</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="file-second-pass-css-LC42" class="blob-code blob-code-inner js-file-line">  }</td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L43" class="blob-num js-line-number" data-line-number="43"></td>
+        <td id="file-second-pass-css-LC43" class="blob-code blob-code-inner js-file-line">  </td>
+      </tr>
+      <tr>
+        <td id="file-second-pass-css-L44" class="blob-num js-line-number" data-line-number="44"></td>
+        <td id="file-second-pass-css-LC44" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+</table>
 
-@media only screen and (min-width: 28.75em) {
+  </div>
+
+  </div>
   
-  /* 20px gap divided by 2 events per row */
-  .event {
-    flex: 0 0 calc( 50% - 1.25rem / 2 );
-    margin-left: 1.25rem; /* 20px < */
-  }
-  
-  /* Remove left margin for row starters */
-  .event:nth-child(odd) {
-    margin-left: 0;
-  }
-  
-  /* Reset margins on "future" events
-     & remove the correct one */
-  .event--future:nth-child(odd) {
-    margin-left: 1.25rem;
-  }
-  .event--future:nth-child(even) {
-    margin-left: 0;
-  }
-  
-  /* Quantity Query - when more than 1,
-     make the first span both columns  */
-  .event--future:nth-last-child(n+1):first-child {
-    flex: 0 0 100%;
-    font-size: 1.5em;
-    margin-left: 0;
-  }
-  
-}
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/aarongustafson/597284affc88b9084cf3/raw/5e59e3c9bb9ce7b4db20a3f367fa40575d9467f2/second-pass.css" style="float:right">view raw</a>
+        <a href="https://gist.github.com/aarongustafson/597284affc88b9084cf3#file-second-pass-css">second-pass.css</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div>
+

@@ -1,3 +1,39 @@
-if ( 'querySelector' in document ) {
-	// We can use querySelector!
-}
+<link rel="stylesheet" href="https://assets-cdn.github.com/assets/gist-embed-51ae8299bd14b6c42fb20b0ce07f643175347abaca051f9c55e114bfc98b10b1.css">
+<div id="gist23102530" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-feature-test-js" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-javascript">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="file-feature-test-js-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-feature-test-js-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">if</span> ( <span class="pl-s"><span class="pl-pds">&#39;</span>querySelector<span class="pl-pds">&#39;</span></span> <span class="pl-k">in</span> <span class="pl-c1">document</span> ) {</td>
+      </tr>
+      <tr>
+        <td id="file-feature-test-js-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-feature-test-js-LC2" class="blob-code blob-code-inner js-file-line">  <span class="pl-c">// We can use querySelector!</span></td>
+      </tr>
+      <tr>
+        <td id="file-feature-test-js-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-feature-test-js-LC3" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+</table>
+
+  </div>
+
+  </div>
+  
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/aarongustafson/166b285a4fe3d854b97b/raw/21e0e8a5cffdfb04fb40d80c8a613aef7b1c9bee/feature-test.js" style="float:right">view raw</a>
+        <a href="https://gist.github.com/aarongustafson/166b285a4fe3d854b97b#file-feature-test-js">feature-test.js</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div>
+

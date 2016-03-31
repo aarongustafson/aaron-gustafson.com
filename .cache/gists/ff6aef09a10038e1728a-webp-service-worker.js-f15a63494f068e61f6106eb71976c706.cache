@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://assets-cdn.github.com/assets/gist/embed-e75a8866f2a8f51e8bbbf8ca746676f1e7cacb08f4b1d9b52ea62524b333cc6d.css">
+<link rel="stylesheet" href="https://assets-cdn.github.com/assets/gist-embed-51ae8299bd14b6c42fb20b0ce07f643175347abaca051f9c55e114bfc98b10b1.css">
 <div id="gist28206589" class="gist">
     <div class="gist-file">
       <div class="gist-data">
@@ -6,7 +6,7 @@
   <div id="file-webp-service-worker-js" class="file">
     
 
-  <div class="blob-wrapper data type-javascript">
+  <div itemprop="text" class="blob-wrapper data type-javascript">
       <table class="highlight tab-size js-file-line-container" data-tab-size="8">
       <tr>
         <td id="file-webp-service-worker-js-L1" class="blob-num js-line-number" data-line-number="1"></td>
@@ -19,7 +19,7 @@
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L3" class="blob-num js-line-number" data-line-number="3"></td>
-        <td id="file-webp-service-worker-js-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-smi">self</span>.<span class="pl-en">addEventListener</span>(<span class="pl-s"><span class="pl-pds">&#39;</span>fetch<span class="pl-pds">&#39;</span></span>, <span class="pl-k">function</span>(<span class="pl-smi">event</span>) {</td>
+        <td id="file-webp-service-worker-js-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-smi">self</span>.<span class="pl-en">addEventListener</span>(<span class="pl-s"><span class="pl-pds">&#39;</span>fetch<span class="pl-pds">&#39;</span></span>, <span class="pl-k">function</span>(<span class="pl-c1">event</span>) {</td>
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L4" class="blob-num js-line-number" data-line-number="4"></td>
@@ -28,7 +28,7 @@
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L5" class="blob-num js-line-number" data-line-number="5"></td>
-        <td id="file-webp-service-worker-js-LC5" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">var</span> request <span class="pl-k">=</span> <span class="pl-smi">event</span>.<span class="pl-smi">request</span>,</td>
+        <td id="file-webp-service-worker-js-LC5" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">var</span> request <span class="pl-k">=</span> <span class="pl-c1">event</span>.<span class="pl-smi">request</span>,</td>
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L6" class="blob-num js-line-number" data-line-number="6"></td>
@@ -133,7 +133,7 @@
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L30" class="blob-num js-line-number" data-line-number="30"></td>
-        <td id="file-webp-service-worker-js-LC30" class="blob-code blob-code-inner js-file-line">            <span class="pl-smi">event</span>.<span class="pl-en">respondWith</span>(</td>
+        <td id="file-webp-service-worker-js-LC30" class="blob-code blob-code-inner js-file-line">            <span class="pl-c1">event</span>.<span class="pl-en">respondWith</span>(</td>
       </tr>
       <tr>
         <td id="file-webp-service-worker-js-L31" class="blob-num js-line-number" data-line-number="31"></td>

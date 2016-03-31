@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://assets-cdn.github.com/assets/gist/embed-e75a8866f2a8f51e8bbbf8ca746676f1e7cacb08f4b1d9b52ea62524b333cc6d.css">
+<link rel="stylesheet" href="https://assets-cdn.github.com/assets/gist-embed-51ae8299bd14b6c42fb20b0ce07f643175347abaca051f9c55e114bfc98b10b1.css">
 <div id="gist28197221" class="gist">
     <div class="gist-file">
       <div class="gist-data">
@@ -6,19 +6,19 @@
   <div id="file-resource-hints-sample-js" class="file">
     
 
-  <div class="blob-wrapper data type-javascript">
+  <div itemprop="text" class="blob-wrapper data type-javascript">
       <table class="highlight tab-size js-file-line-container" data-tab-size="8">
       <tr>
         <td id="file-resource-hints-sample-js-L1" class="blob-num js-line-number" data-line-number="1"></td>
-        <td id="file-resource-hints-sample-js-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">if</span> ( <span class="pl-s"><span class="pl-pds">&#39;</span>AG<span class="pl-pds">&#39;</span></span> <span class="pl-k">in</span> <span class="pl-c1">window</span> <span class="pl-k">&amp;&amp;</span> <span class="pl-s"><span class="pl-pds">&#39;</span>preconnect<span class="pl-pds">&#39;</span></span> <span class="pl-k">in</span> <span class="pl-smi">window</span>.<span class="pl-c1">AG</span> ) {</td>
+        <td id="file-resource-hints-sample-js-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">if</span> ( <span class="pl-s"><span class="pl-pds">&#39;</span>AG<span class="pl-pds">&#39;</span></span> <span class="pl-k">in</span> <span class="pl-c1">window</span> <span class="pl-k">&amp;&amp;</span> <span class="pl-s"><span class="pl-pds">&#39;</span>preconnect<span class="pl-pds">&#39;</span></span> <span class="pl-k">in</span> <span class="pl-c1">window</span>.<span class="pl-c1">AG</span> ) {</td>
       </tr>
       <tr>
         <td id="file-resource-hints-sample-js-L2" class="blob-num js-line-number" data-line-number="2"></td>
-        <td id="file-resource-hints-sample-js-LC2" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">window</span>.<span class="pl-c1">AG</span>.<span class="pl-en">preconnect</span>( <span class="pl-s"><span class="pl-pds">&#39;</span>//disqus.com/<span class="pl-pds">&#39;</span></span> );</td>
+        <td id="file-resource-hints-sample-js-LC2" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1">window</span>.<span class="pl-c1">AG</span>.<span class="pl-en">preconnect</span>( <span class="pl-s"><span class="pl-pds">&#39;</span>//disqus.com/<span class="pl-pds">&#39;</span></span> );</td>
       </tr>
       <tr>
         <td id="file-resource-hints-sample-js-L3" class="blob-num js-line-number" data-line-number="3"></td>
-        <td id="file-resource-hints-sample-js-LC3" class="blob-code blob-code-inner js-file-line">  <span class="pl-smi">window</span>.<span class="pl-c1">AG</span>.<span class="pl-en">prefetch</span>( <span class="pl-s"><span class="pl-pds">&#39;</span>//<span class="pl-pds">&#39;</span></span> <span class="pl-k">+</span> disqus_shortname <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&#39;</span>.disqus.com/count.js<span class="pl-pds">&#39;</span></span> );</td>
+        <td id="file-resource-hints-sample-js-LC3" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1">window</span>.<span class="pl-c1">AG</span>.<span class="pl-en">prefetch</span>( <span class="pl-s"><span class="pl-pds">&#39;</span>//<span class="pl-pds">&#39;</span></span> <span class="pl-k">+</span> disqus_shortname <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">&#39;</span>.disqus.com/count.js<span class="pl-pds">&#39;</span></span> );</td>
       </tr>
       <tr>
         <td id="file-resource-hints-sample-js-L4" class="blob-num js-line-number" data-line-number="4"></td>
