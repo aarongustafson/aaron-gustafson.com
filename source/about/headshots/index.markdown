@@ -39,7 +39,7 @@ sidebars: [asides/networks.html,asides/events.html]
 	</li>
 	<li class="listing__item listing__item--photo">
 		<figure id="headshot-avatar">
-			<a href="/i/headshots/avatar.jpg">
+			<a href="/i/headshots/avatar-cornell.jpg">
 				<img src="/i/headshots/avatar-cornell-sm.png" srcset="/i/headshots/avatar-cornell-sm.png 310w, /i/headshots/avatar-cornell.png 960w"
 				 	 alt="" width="310" height="310">
 			</a>
