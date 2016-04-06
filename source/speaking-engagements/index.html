@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The Speaking Engagements of
-description: "I’ve spoken at my fair share of events over the years. Here’s a collection of them."
+description: "I love sharing what I know and I’ve been granted many opportunities to do this over the years. Here’s a collection of the conferences I’ve spoken at and workshops I’ve given."
 body_class: speaking-engagements
 show_title: false
 show_events: false
@@ -15,7 +15,7 @@ javascripts:
 <h1 class="page__title">A Complete List of My Conferences &amp; Workshops</h1>
 
 <p>{{ site.data.microcopy.speaking_engagements.intro_pre_count }}
-{% for event in site.data.events-past %}
+{% for event in site.data.events.past %}
 	{% if forloop.index == 1 %}
 		{{ forloop.length }}
 	{% endif %}
@@ -28,11 +28,11 @@ javascripts:
 
 	<h2 id="future-events" class="subsection__header">In the Future</h2>
 
-	{% unless site.data.events-future %}
+	{% unless site.data.events.future %}
 		{{ site.data.microcopy.speaking_engagements.no_upcoming | markdownify }}
 	{% endunless %}
 
-	{% for event in site.data.events-future %}
+	{% for event in site.data.events.future %}
 		{% if forloop.first %}
 			<ol class="listing listing--events">
 		{% endif %}
@@ -72,7 +72,7 @@ javascripts:
 	<h2 id="past-events" class="subsection__header">In the Past</h2>
 
 	<ol class="listing listing--events">
-		{% for event in site.data.events-past %}
+		{% for event in site.data.events.past %}
 			<li class="listing__item listing__item--{{ forloop.index }} event event--past"
 				data-date="{{ event.date | date: "%Y-%m-%d" }}">
 				
