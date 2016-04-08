@@ -146,7 +146,7 @@ module Jekyll
         id = link['id']
         url = link['data']['url'] || link["source"]
           
-        # Tweets gets handled differently
+        # Tweets get handled differently
         is_tweet = false
         if url.include? 'twitter.com/'
           is_tweet = true
@@ -288,7 +288,7 @@ module Jekyll
             end
           end
 
-        # Posts (but not tweeted links)
+          # Posts (but not tweeted links)
           link_title = false
           if type == 'post' or ( type == 'link' and ! is_tweet and ! is_gplus )
 

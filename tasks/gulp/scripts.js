@@ -11,7 +11,7 @@ var gulp = require('gulp'),
     source_folder = 'source/_javascript',
     destination_root = 'source',
     destination_folder = destination_root + '/j',
-    public_root = 'public'
+    public_root = '_deploy'
     public_folder = public_root + '/j',
     rename_serviceworker = rename({
         dirname: "../"

@@ -8,7 +8,7 @@ var gulp = require('gulp'),
     //handleErrors = require('./utils/handleErrors'),
     source_folder = 'source/_styles/*.scss',
     destination_folder = 'source/c',
-    preview_folder = 'public/c';
+    preview_folder = '_deploy/c';
 
 gulp.task('styles', function() {
     return gulp.src(source_folder)
