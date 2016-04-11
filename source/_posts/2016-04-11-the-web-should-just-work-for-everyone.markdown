@@ -32,7 +32,10 @@ The points of interaction between a person and society are where disability happ
 
 If we use our own abilities and biases as a starting point, we end up with products designed for people of a specific age, language ability, tech literacy, and physical ability. Plus those with specific access to money, time, and stable network connections. 
 
-<figure id="fig-2016-04-11-02" class="media-container">{% adaptive_image /i/posts/2016-04-11/02.png %}<figcaption>A figurative graph charting user ability against population using a bunch of different icons for people. One person is identified as a designer and she is part of a subset of the people that are in grey, signifying that they are "included" when the designer considers things from their own perspective. The vast majority of the people icons are in red, signifying they are "excluded" by this line of thinking.</figcaption></figure>
+<figure id="fig-2016-04-11-02" class="media-container">
+{% adaptive_image /i/posts/2016-04-11/02.png %}
+<figcaption>A figurative graph charting user ability against population using a bunch of different icons for people. One person is identified as a designer and she is part of a subset of the people that are in grey, signifying that they are "included" when the designer considers things from their own perspective. The vast majority of the people icons are in red, signifying they are "excluded" by this line of thinking.</figcaption>
+</figure>
 
 When it comes to people, there’s no such thing as “normal”. For example, the interactions we design with technology depend heavily on what we can see, hear, say, and touch. If we’re designing with ourselves as a baseline, we can overlook people with circumstances different from ours.
 
@@ -52,19 +55,28 @@ Recognizing that we all have special needs leads us to make better decisions as 
 
 Designing for people with permanent disabilities can seem like a significant constraint, but the resulting designs can actually benefit a much larger number of people. For example, curb cuts in sidewalks were first created to make it safer and easier for people in wheelchairs to cross the street.
 
-<figure id="fig-2016-04-11-03" class="media-container">{% adaptive_image /i/posts/2016-04-11/03.jpg %}<figcaption>A curb cut. <b class="media-container__credit">Photo credit: [Dylan Passmore](https://www.flickr.com/photos/12155320@N00/6793281764/)</b></figcaption></figure>
+<figure id="fig-2016-04-11-03" class="media-container">
+{% adaptive_image /i/posts/2016-04-11/03.jpg %}
+<figcaption>A curb cut. <b class="media-container__credit">Photo credit: [Dylan Passmore](https://www.flickr.com/photos/12155320@N00/6793281764/)</b></figcaption>
+</figure>
 
 But curb cuts also help people with a wide range of circumstances, from kids riding bicycles, to parents pushing strollers, to workers hauling heavy equipment.
 
-<figure id="fig-2016-04-11-04" class="media-container">{% adaptive_image /i/posts/2016-04-11/04.png [alt="Numerous needs that benefit from curb cuts: wheelchairs, strollers, bicycles, and skateboards."] %}</figure>
+<figure id="fig-2016-04-11-04" class="media-container">
+{% adaptive_image /i/posts/2016-04-11/04.png alt="Numerous needs that benefit from curb cuts: wheelchairs, strollers, bicycles, and skateboards." %}
+</figure>
 
 Similarly, high-contrast screen settings were initially made to benefit people with vision impairments. But today, many people benefit from high-contrast settings when they use a device in bright sunlight. The same is true for remote controls, automatic door openers, voice controls, and much more. Designing with constraints in mind is simply designing well. 
 
-<figure id="fig-2016-04-11-05" class="media-container">{% adaptive_image /i/posts/2016-04-11/05.png [alt="A disability continuum from permanent (a person with one arm) to temporary (a person with an arm injury) to situational (a new parent holding a baby)."] %}</figure>
+<figure id="fig-2016-04-11-05" class="media-container">
+{% adaptive_image /i/posts/2016-04-11/05.png alt="A disability continuum from permanent (a person with one arm) to temporary (a person with an arm injury) to situational (a new parent holding a baby)." %}
+</figure>
 
 By designing for someone with a permanent disability, someone with a situational disability can also benefit. For example, a device designed for a person who has one arm could be used just as effectively by a person with a temporary wrist injury or a new parent holding an infant.
 
-<figure id="fig-2016-04-11-06" class="media-container">{% adaptive_image /i/posts/2016-04-11/06.png [alt="Adding up the number of people in the U.S. who deal with disabilities relating to arm usage gets your to 21 million pretty quickly."] %}</figure>
+<figure id="fig-2016-04-11-06" class="media-container">
+{% adaptive_image /i/posts/2016-04-11/06.png alt="Adding up the number of people in the U.S. who deal with disabilities relating to arm usage gets your to 21 million pretty quickly." %}
+</figure>
 
 Being mindful of the continuum from permanent to situational disabilities helps us rethink how our designs can scale to more people in new ways. In the United States, 26,000 people a year suffer from loss of upper extremities.
 
@@ -84,11 +96,17 @@ As Jeff Veen so astutely observed in [this quote](http://www.inspireux.com/2009/
 
 When we are concerned with the user interface, it can sometimes be at the expense of the user experience.
 
-<figure id="fig-2016-04-11-07" class="media-container">{% adaptive_image /i/posts/2016-04-11/07.png %}<figcaption>The [Coffeepot for Masochists by Jaques Carelman](http://impossibleobjects.com/coffeepot-for-masochists.html) famously referenced by Donald Norman in [<cite>Emotional Design</cite><](http://amzn.to/1RP2vB9).</figcaption></figure>
+<figure id="fig-2016-04-11-07" class="media-container">
+{% adaptive_image /i/posts/2016-04-11/07.png %}
+<figcaption>The [Coffeepot for Masochists by Jaques Carelman](http://impossibleobjects.com/coffeepot-for-masochists.html) famously referenced by Donald Norman in [<cite>Emotional Design</cite>](http://amzn.to/1RP2vB9).</figcaption>
+</figure>
 
 It is possible to have something both beautiful and highly functional.
 
-<figure id="fig-2016-04-11-08" class="media-container">{% adaptive_image /i/posts/2016-04-11/08.png %}<figcaption>A ramp embedded in staircase of [Robson Square](https://en.wikipedia.org/wiki/Robson_Square) in Vancouver, <abbr aria-label="British Columbia">BC</abbr>. <b class="media-container__credit">Photo credit: [Tom Magliery](https://www.flickr.com/photos/mag3737/)</b></figcaption></figure>
+<figure id="fig-2016-04-11-08" class="media-container">
+{% adaptive_image /i/posts/2016-04-11/08.jpg %}
+<figcaption>A ramp embedded in staircase of [Robson Square](https://en.wikipedia.org/wiki/Robson_Square) in Vancouver, <abbr aria-label="British Columbia">BC</abbr>. <b class="media-container__credit">Photo credit: [Tom Magliery](https://www.flickr.com/photos/mag3737/)</b></figcaption>
+</figure>
 
 [24 Ways](https://24ways.org/) is an advent calendar for web professionals. It’s a magazine of sorts, but it is both highly interactive and accessible. The site’s developers employ a handful of features from [the ARIA spec](https://www.w3.org/TR/wai-aria/) to increase the accessibility of the site. 
 
@@ -110,11 +128,11 @@ Or even information about the content, such as copyright designations.
 
 Users browsing with an ARIA-aware screen reader can use these landmarks to quickly navigate through a document.
 
-<figure id="figure-2016-04-11-08">
+<figure id="figure-2016-04-11-09">
 <audio controls>
-<source src="/i/posts/2016-04-11/08.ogg" type='audio/ogg; codecs="vorbis"'>
-<source src="/i/posts/2016-04-11/08.mp3" type="audio/mpeg;">
-<p>Listen to this <a download href="/i/posts/2016-04-11/08.mp3">as an MP3</a> or <a download href="/i/posts/2016-04-11/08.ogg">as an OGG</a> audio file.</p>
+<source src="/i/posts/2016-04-11/09.ogg" type='audio/ogg; codecs="vorbis"'>
+<source src="/i/posts/2016-04-11/09.mp3" type="audio/mpeg;">
+<p>Listen to this <a download href="/i/posts/2016-04-11/09.mp3">as an MP3</a> or <a download href="/i/posts/2016-04-11/09.ogg">as an OGG</a> audio file.</p>
 </audio>
 </figure>
 
