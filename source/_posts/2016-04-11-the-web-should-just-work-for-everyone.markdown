@@ -57,7 +57,7 @@ Designing for people with permanent disabilities can seem like a significant con
 
 <figure id="fig-2016-04-11-03" class="media-container">
 {% adaptive_image /i/posts/2016-04-11/03.jpg %}
-<figcaption>A curb cut. <b class="media-container__credit">Photo credit: [Dylan Passmore](https://www.flickr.com/photos/12155320@N00/6793281764/)</b></figcaption>
+<figcaption>A curb cut. <b class="media-container__credit">Photo credit: <a href="https://www.flickr.com/photos/12155320@N00/6793281764/">Dylan Passmore</a></b></figcaption>
 </figure>
 
 But curb cuts also help people with a wide range of circumstances, from kids riding bicycles, to parents pushing strollers, to workers hauling heavy equipment.
@@ -98,14 +98,14 @@ When we are concerned with the user interface, it can sometimes be at the expens
 
 <figure id="fig-2016-04-11-07" class="media-container">
 {% adaptive_image /i/posts/2016-04-11/07.png %}
-<figcaption>The [Coffeepot for Masochists by Jaques Carelman](http://impossibleobjects.com/coffeepot-for-masochists.html) famously referenced by Donald Norman in [<cite>Emotional Design</cite>](http://amzn.to/1RP2vB9).</figcaption>
+<figcaption>The <a href="http://impossibleobjects.com/coffeepot-for-masochists.html">Coffeepot for Masochists by Jaques Carelman</a> famously referenced by Donald Norman in <a href="http://amzn.to/1RP2vB9"><cite>Emotional Design</cite></a>.</figcaption>
 </figure>
 
 It is possible to have something both beautiful and highly functional.
 
 <figure id="fig-2016-04-11-08" class="media-container">
 {% adaptive_image /i/posts/2016-04-11/08.jpg %}
-<figcaption>A ramp embedded in staircase of [Robson Square](https://en.wikipedia.org/wiki/Robson_Square) in Vancouver, <abbr aria-label="British Columbia">BC</abbr>. <b class="media-container__credit">Photo credit: [Tom Magliery](https://www.flickr.com/photos/mag3737/)</b></figcaption>
+<figcaption>A ramp embedded in staircase of <a href="https://en.wikipedia.org/wiki/Robson_Square">Robson Square</a> in Vancouver, <abbr aria-label="British Columbia">BC</abbr>. <b class="media-container__credit">Photo credit: <a href="https://www.flickr.com/photos/mag3737/">Tom Magliery</a></b></figcaption>
 </figure>
 
 [24 Ways](https://24ways.org/) is an advent calendar for web professionals. It’s a magazine of sorts, but it is both highly interactive and accessible. The site’s developers employ a handful of features from [the ARIA spec](https://www.w3.org/TR/wai-aria/) to increase the accessibility of the site. 
