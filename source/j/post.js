@@ -525,34 +525,36 @@
         if ( type == 'post' ||
              ( type == 'link' && ! is_tweet && ! is_gplus ) )
         {
-             // No title - Async update
-             if ( ! title && url )
-             {
-                 readWebPage( url, function( html_source ){
-                     if ( html_source )
-                     {
-                         linkTitle( $item, url, html_source );
-                     }
-                 });
-             }
-             // Likes & Shares
-             else if ( type == 'like' || type == 'repost' )
-             {
-                 // new Twitter faves are doing something weird
-                 if ( type == 'like' && is_tweet )
-                 {
-                     link_title = author + ' favorited this.';
-                 }
-                 else if ( type == 'repost' && is_tweet )
-                 {
-                     link_title = author + ' retweeted this.';
-                 }
-                 else
-                 {
-                     link_title = title;
-                 }
-                 $mention.className += ' webmention--author-starts';
-             }
+            link_title = title;
+            
+            // No title - Async update
+            if ( ! title && url )
+            {
+                readWebPage( url, function( html_source ){
+                    if ( html_source )
+                    {
+                        linkTitle( $item, url, html_source );
+                    }
+                });
+            }    
+        }
+        // Likes & Shares
+        else if ( type == 'like' || type == 'repost' )
+        {
+            // new Twitter faves are doing something weird
+            if ( type == 'like' && is_tweet )
+            {
+                link_title = author + ' favorited this.';
+            }
+            else if ( type == 'repost' && is_tweet )
+            {
+                link_title = author + ' retweeted this.';
+            }
+            else
+            {
+                link_title = title;
+            }
+            $mention.className += ' webmention--author-starts';
         }
         
         // Published info
