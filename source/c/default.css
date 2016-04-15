@@ -1242,6 +1242,10 @@ div.gist table {
 }
 div.gist table tr {
   border: 0;
+  margin: 0;
+}
+div.gist table td {
+  margin: 0;
 }
 div.gist table .line-numbers {
   width: 3em;
