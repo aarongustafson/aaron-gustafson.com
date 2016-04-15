@@ -45,8 +45,8 @@ module Jekyll
     def render(context)
       render_markup = Liquid::Template.parse(@tag_text).render(context).gsub(/\\\{\\\{|\\\{\\%/, '\{\{' => '{{', '\{\%' => '{%')
 
-      site = context.registers[:site]
-      settings = Jekyll.configuration({})['adaptive_image']
+      config = Jekyll.configuration({})
+      settings = config['adaptive_image']
 
       markup = /^(?<image_src>[^\s]+\.[a-zA-Z0-9]{3,4})\s*(?<html_attr>[\s\S]+)$/.match(render_markup)
       
@@ -76,7 +76,7 @@ module Jekyll
         # set up the url
         original_source = markup[:image_src]
         if original_source[0] == '/' and original_source[1] != '/'
-          original_source = "#{site.config['url']}#{original_source}"
+          original_source = "#{config['url']}#{original_source}"
         end
 
         # Add the src & srcset

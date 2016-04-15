@@ -80,7 +80,7 @@ module Jekyll
               url = "#{@site.config['url']}#{post.url}"
               title = post.data['title']
               
-              published_at = backdate ? DateTime.parse( post.date ) : DateTime.now
+              published_at = backdate ? post.date : DateTime.now
 
               crosspost_payload(crossposted, post, content, title, url, published_at)
             end
@@ -114,7 +114,7 @@ module Jekyll
               url = "#{@site.config['url']}#{post.url}"
               title = post.title
               
-              published_at = backdate ? DateTime.parse( post.date ) : DateTime.now
+              published_at = backdate ? post.date : DateTime.now
 
               crosspost_payload(crossposted, post, content, title, url, published_at)
               
