@@ -10,7 +10,7 @@ sidebars: [asides/networks.html,asides/events.html]
 
 # Biographies
 
-## One-liner (59 Words)
+## One-liner (12 Words)
 
 [Aaron Gustafson](http://www.aaron-gustafson.com/) is a web standards and accessibility advocate working at [Microsoft](http://www.microsoft.com/).
 
