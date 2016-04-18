@@ -107,6 +107,7 @@ module Jekyll
     end
     
     def is_working_uri(uri, redirect_limit = 10, original_uri = false)
+      puts "checking URI #{uri}"
       original_uri = original_uri || uri
       if redirect_limit > 0
         uri = URI.parse(URI.encode(uri))
@@ -132,6 +133,7 @@ module Jekyll
     end
     
     def get_uri_source(uri, redirect_limit = 10, original_uri = false)
+      puts "Getting the source of #{uri}"
       original_uri = original_uri || uri
       if redirect_limit > 0
         uri = URI.parse(URI.encode(uri))
