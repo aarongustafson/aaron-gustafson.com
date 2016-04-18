@@ -115,6 +115,7 @@ module Jekyll
           when Net::HTTPSuccess then
             return true
           when Net::HTTPRedirection then
+            puts "Location redirect to #{response['location']}"
             redirect_to = URI.parse(URI.encode(response['location']))
             redirect_to = redirect_to.relative? ? "#{uri.scheme}://#{uri.host}" + redirect_to.to_s : redirect_to.to_s
             puts "redirecting to #{redirect_to}"
@@ -148,6 +149,7 @@ module Jekyll
           when Net::HTTPSuccess then
             return response.body
           when Net::HTTPRedirection then
+            puts "Location redirect to #{response['location']}"
             redirect_to = URI.parse(URI.encode(response['location']))
             redirect_to = redirect_to.relative? ? "#{uri.scheme}://#{uri.host}" + redirect_to.to_s : redirect_to.to_s
             puts "redirecting to #{redirect_to}"
