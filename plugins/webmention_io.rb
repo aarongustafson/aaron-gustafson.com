@@ -125,8 +125,8 @@ module Jekyll
             else
               return false
           end
-        rescue SocketError => se
-          puts "Got socket error: #{se}"
+        rescue SocketError, Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, EOFError, Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError => e
+          puts "Got an error: #{se}"
           return false
         end
       else
