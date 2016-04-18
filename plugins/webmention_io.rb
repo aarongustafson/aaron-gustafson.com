@@ -52,7 +52,15 @@ module Jekyll
       response = get_response(api_params)
 
       site = context.registers[:site]
-      @converter = site.getConverterImpl(::Jekyll::Converters::Markdown)
+
+      # post Jekyll commit 0c0aea3
+      # https://github.com/jekyll/jekyll/commit/0c0aea3ad7d2605325d420a23d21729c5cf7cf88
+      if defined? site.find_converter_instance
+        @converter = site.find_converter_instance(::Jekyll::Converters::Markdown)
+      # Prior to Jekyll commit 0c0aea3
+      else
+        @converter = site.getConverterImpl(::Jekyll::Converters::Markdown)
+      end
 
       html_output_for(response)
     end
@@ -107,7 +115,7 @@ module Jekyll
     end
     
     def is_working_uri(uri, redirect_limit = 10, original_uri = false)
-      puts "checking URI #{uri}"
+      # puts "checking URI #{uri}"
       original_uri = original_uri || uri
       if redirect_limit > 0
         uri = URI.parse(URI.encode(uri))
@@ -117,16 +125,16 @@ module Jekyll
             when Net::HTTPSuccess then
               return true
             when Net::HTTPRedirection then
-              puts "Location redirect to #{response['location']}"
+              # puts "Location redirect to #{response['location']}"
               redirect_to = URI.parse(URI.encode(response['location']))
               redirect_to = redirect_to.relative? ? "#{uri.scheme}://#{uri.host}" + redirect_to.to_s : redirect_to.to_s
-              puts "redirecting to #{redirect_to}"
+              # puts "redirecting to #{redirect_to}"
               return is_working_uri(redirect_to, redirect_limit - 1, original_uri)
             else
               return false
           end
         rescue SocketError, Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, Errno::ECONNREFUSED, EOFError, Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError => e
-          puts "Got an error: #{e}"
+          warn "Got an error: #{e}"
           return false
         end
       else
@@ -138,7 +146,7 @@ module Jekyll
     end
     
     def get_uri_source(uri, redirect_limit = 10, original_uri = false)
-      puts "Getting the source of #{uri}"
+      # puts "Getting the source of #{uri}"
       original_uri = original_uri || uri
       if redirect_limit > 0
         uri = URI.parse(URI.encode(uri))
@@ -151,15 +159,14 @@ module Jekyll
         end
         request = Net::HTTP::Get.new(uri.request_uri)
         response = http.request(request)
-        puts response
         case response
           when Net::HTTPSuccess then
             return response.body
           when Net::HTTPRedirection then
-            puts "Location redirect to #{response['location']}"
+            # puts "Location redirect to #{response['location']}"
             redirect_to = URI.parse(URI.encode(response['location']))
             redirect_to = redirect_to.relative? ? "#{uri.scheme}://#{uri.host}" + redirect_to.to_s : redirect_to.to_s
-            puts "redirecting to #{redirect_to}"
+            # puts "redirecting to #{redirect_to}"
             return get_uri_source(redirect_to, redirect_limit - 1, original_uri)
           else
             return false
