@@ -111,18 +111,23 @@ module Jekyll
       original_uri = original_uri || uri
       if redirect_limit > 0
         uri = URI.parse(URI.encode(uri))
-        response = Net::HTTP.get_response(uri)
-        case response
-          when Net::HTTPSuccess then
-            return true
-          when Net::HTTPRedirection then
-            puts "Location redirect to #{response['location']}"
-            redirect_to = URI.parse(URI.encode(response['location']))
-            redirect_to = redirect_to.relative? ? "#{uri.scheme}://#{uri.host}" + redirect_to.to_s : redirect_to.to_s
-            puts "redirecting to #{redirect_to}"
-            return is_working_uri(redirect_to, redirect_limit - 1, original_uri)
-          else
-            return false
+        begin 
+          response = Net::HTTP.get_response(uri)
+          case response
+            when Net::HTTPSuccess then
+              return true
+            when Net::HTTPRedirection then
+              puts "Location redirect to #{response['location']}"
+              redirect_to = URI.parse(URI.encode(response['location']))
+              redirect_to = redirect_to.relative? ? "#{uri.scheme}://#{uri.host}" + redirect_to.to_s : redirect_to.to_s
+              puts "redirecting to #{redirect_to}"
+              return is_working_uri(redirect_to, redirect_limit - 1, original_uri)
+            else
+              return false
+          end
+        rescue SocketError => se
+          puts "Got socket error: #{se}"
+          return false
         end
       else
         if original_uri
