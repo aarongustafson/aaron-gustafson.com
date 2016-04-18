@@ -116,7 +116,8 @@ module Jekyll
             return true
           when Net::HTTPRedirection then
             redirect_to = URI.parse(URI.encode(response['location']))
-            redirect_to = redirect_to.relative? ? uri.host + redirect_to.to_s : redirect_to.to_s
+            redirect_to = redirect_to.relative? ? "#{uri.scheme}://#{uri.host}" + redirect_to.to_s : redirect_to.to_s
+            puts "redirecting to #{redirect_to}"
             return is_working_uri(redirect_to, redirect_limit - 1, original_uri)
           else
             return false
@@ -148,7 +149,8 @@ module Jekyll
             return response.body
           when Net::HTTPRedirection then
             redirect_to = URI.parse(URI.encode(response['location']))
-            redirect_to = redirect_to.relative? ? uri.host + redirect_to.to_s : redirect_to.to_s
+            redirect_to = redirect_to.relative? ? "#{uri.scheme}://#{uri.host}" + redirect_to.to_s : redirect_to.to_s
+            puts "redirecting to #{redirect_to}"
             return get_uri_source(redirect_to, redirect_limit - 1, original_uri)
           else
             return false
