@@ -105,8 +105,8 @@ module Jekyll
       return false
     end
     
-    def is_working_uri(url, redirect_limit = 10, original_uri = false)
-      original_url = original_uri || uri
+    def is_working_uri(uri, redirect_limit = 10, original_uri = false)
+      original_uri = original_uri || uri
       if redirect_limit > 0
         response = Net::HTTP.get_response(URI.parse(uri))
         case response
