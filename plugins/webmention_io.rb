@@ -11,6 +11,7 @@
 require 'json'
 require 'net/http'
 require 'uri'
+require 'openssl'
 
 WEBMENTION_CACHE_DIR = File.expand_path('../../.cache', __FILE__)
 FileUtils.mkdir_p(WEBMENTION_CACHE_DIR)
@@ -108,12 +109,15 @@ module Jekyll
     def is_working_uri(uri, redirect_limit = 10, original_uri = false)
       original_uri = original_uri || uri
       if redirect_limit > 0
-        response = Net::HTTP.get_response(URI.parse(uri))
+        uri = URI.parse(URI.encode(uri))
+        response = Net::HTTP.get_response(uri)
         case response
           when Net::HTTPSuccess then
             return true
           when Net::HTTPRedirection then
-            return is_working_uri(response['location'], redirect_limit - 1, original_uri)
+            redirect_to = URI.parse(URI.encode(response['location']))
+            redirect_to = redirect_to.relative? ? uri.host + redirect_to.to_s : redirect_to.to_s
+            return is_working_uri(redirect_to, redirect_limit - 1, original_uri)
           else
             return false
         end
@@ -128,7 +132,7 @@ module Jekyll
     def get_uri_source(uri, redirect_limit = 10, original_uri = false)
       original_uri = original_uri || uri
       if redirect_limit > 0
-        uri = URI.parse(uri)
+        uri = URI.parse(URI.encode(uri))
         http = Net::HTTP.new(uri.host, uri.port)
         if uri.scheme == 'https'
           http.use_ssl = true
@@ -143,7 +147,9 @@ module Jekyll
           when Net::HTTPSuccess then
             return response.body
           when Net::HTTPRedirection then
-            return get_uri_source(response['location'], redirect_limit - 1, original_uri)
+            redirect_to = URI.parse(URI.encode(response['location']))
+            redirect_to = redirect_to.relative? ? uri.host + redirect_to.to_s : redirect_to.to_s
+            return get_uri_source(redirect_to, redirect_limit - 1, original_uri)
           else
             return false
         end
