@@ -104,6 +104,56 @@ module Jekyll
       end
       return false
     end
+    
+    def is_working_uri(url, redirect_limit = 10, original_uri = false)
+      original_url = original_uri || uri
+      if redirect_limit > 0
+        response = Net::HTTP.get_response(URI.parse(uri))
+        case response
+          when Net::HTTPSuccess then
+            return true
+          when Net::HTTPRedirection then
+            return is_working_uri(response['location'], redirect_limit - 1, original_uri)
+          else
+            return false
+        end
+      else
+        if original_uri
+          warn "too many redirects for #{original_uri}"
+        end
+        return false
+      end
+    end
+    
+    def get_uri_source(uri, redirect_limit = 10, original_uri = false)
+      original_uri = original_uri || uri
+      if redirect_limit > 0
+        uri = URI.parse(uri)
+        http = Net::HTTP.new(uri.host, uri.port)
+        if uri.scheme == 'https'
+          http.use_ssl = true
+          http.ssl_version = :TLSv1
+          http.ciphers = "ALL:!ADH:!EXPORT:!SSLv2:RC4+RSA:+HIGH:+MEDIUM:-LOW"
+          http.verify_mode = OpenSSL::SSL::VERIFY_PEER
+        end
+        request = Net::HTTP::Get.new(uri.request_uri)
+        response = http.request(request)
+        puts response
+        case response
+          when Net::HTTPSuccess then
+            return response.body
+          when Net::HTTPRedirection then
+            return get_uri_source(response['location'], redirect_limit - 1, original_uri)
+          else
+            return false
+        end
+      else
+        if original_uri
+          warn "too many redirects for #{original_uri}"
+        end
+        return false
+      end
+    end
 
   end
   
@@ -216,8 +266,7 @@ module Jekyll
             a_photo = author['photo']
 
             if a_photo
-              status = `curl -s -I -L -o /dev/null -w "%{http_code}" --location "#{a_photo}"`
-              if status == "200"
+              if is_working_uri( a_photo )
                 author_block << "<img class=\"webmention__author__photo u-photo\" src=\"#{a_photo}\" alt=\"\" title=\"#{a_name}\">"
               else
                 webmention_classes << ' webmention--no-photo'
@@ -270,10 +319,9 @@ module Jekyll
           # Google Plus masked by Bridgy
           if is_gplus and url.include? 'brid-gy'
             # sometimes links go away
-            status = `curl -s -I -L -o /dev/null -w "%{http_code}" --location "#{url}"`
-            if status == '200'
+            if is_working_uri( url )
               # Now get the content
-              html_source = `curl -s --location "#{url}"`
+              html_source = get_uri_source(url)
               
               if ! html_source.valid_encoding?
                 html_source = html_source.encode('UTF-16be', :invalid=>:replace, :replace=>"?").encode('UTF-8')
@@ -297,15 +345,14 @@ module Jekyll
               url = link['source']
               
               # ping it first
-              status = `curl -s -I -L -o /dev/null -w "%{http_code}" --location "#{url}"`
-              if status != '200'
+              if ! is_working_uri( url )
                 puts "#{url} is not returning a 200 HTTP status, skipping it"
                 next
               end
               
               # Now get the content
               # print "checking #{url}\r\n"
-              html_source = `curl -s --location "#{url}"`
+              html_source = get_uri_source(url)
               
               if ! html_source.valid_encoding?
                 html_source = html_source.encode('UTF-16be', :invalid=>:replace, :replace=>"?").encode('UTF-8')

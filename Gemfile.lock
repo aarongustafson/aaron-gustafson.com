@@ -44,7 +44,7 @@ GEM
     ffi (1.9.10)
     haml (4.0.7)
       tilt
-    html-proofer (3.0.4)
+    html-proofer (3.0.5)
       activesupport (~> 4.2)
       addressable (~> 2.3)
       colored (~> 1.2)
@@ -53,7 +53,7 @@ GEM
       parallel (~> 1.3)
       typhoeus (~> 0.7)
       yell (~> 2.0)
-    http (1.0.3)
+    http (1.0.4)
       addressable (~> 2.3)
       http-cookie (~> 1.0)
       http-form_data (~> 1.0.1)
@@ -80,7 +80,7 @@ GEM
       toml (~> 0.1.0)
     jekyll-coffeescript (1.0.1)
       coffee-script (~> 2.2)
-    jekyll-crosspost-to-medium (0.1.13)
+    jekyll-crosspost-to-medium (0.1.14)
     jekyll-gist (1.4.0)
       octokit (~> 4.2)
     jekyll-paginate (1.1.0)
@@ -101,7 +101,7 @@ GEM
       rb-inotify (>= 0.9.7)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
-    mercenary (0.3.5)
+    mercenary (0.3.6)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
     multi_json (1.11.2)
@@ -133,7 +133,7 @@ GEM
     rdiscount (2.1.8)
     redcarpet (3.3.4)
     safe_yaml (1.0.4)
-    sass (3.4.21)
+    sass (3.4.22)
     sass-globbing (1.0.0)
       sass (>= 3.1)
     sawyer (0.7.0)
@@ -168,7 +168,7 @@ GEM
       unf_ext
     unf_ext (0.0.7.2)
     yajl-ruby (1.2.1)
-    yell (2.0.5)
+    yell (2.0.6)
 
 PLATFORMS
   ruby
