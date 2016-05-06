@@ -506,8 +506,8 @@ textarea {
   width: 1px;
   height: 1px;
   opacity: 0;
-  -webkit-transition: opacity .25s;
-  transition: opacity .25s;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
   position: fixed;
   top: 0;
   left: 0;

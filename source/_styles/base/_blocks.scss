@@ -11,6 +11,10 @@
     * + * {
 	    @include rem( margin-top, $default-spacing );
     }
+	
+	noscript {
+		display: none;
+	}
     
 	blockquote {
 
