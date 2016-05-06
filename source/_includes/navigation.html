@@ -22,9 +22,9 @@
 			<form class="form form--search" action="{{ site.simple_search }}" method="get" id="search">
 				<ol role="search">
 					<li class="form-control form-control--search">
-						<label class="hidden">What are you looking for?</label>
+						<label for="query" class="hidden">What are you looking for?</label>
 						<input name='q' type='hidden' value='site:www.aaron-gustafson.com'>
-						<input type="search" name="q">
+						<input id="query" type="search" name="q">
 					</li>
 					<li class="form-control form-control--buttons">
 						<button type="submit" name="sa" value="Search"><b class="hidden">Let’s see if </b>Google <b class="hidden">Finds </b>it</button>

@@ -1658,6 +1658,42 @@ html.wf-active .promo a:active {
 }
 
 /*------------------------------------*\
+    Search
+\*------------------------------------*/
+.form--search [type=search] {
+  font-size: 18px;
+  font-size: 1.125rem;
+  appearance: none;
+  border: 1px solid;
+  border-radius: 3px;
+  margin: 0 5px 0 0;
+  margin: 0 0.3125rem 0 0;
+}
+.form--search button {
+  font-weight: bold;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+
+@supports (display: flex) {
+  [role=search] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+/*------------------------------------*\
     $PAGES
 	Page-specific styles
 	(use sparingly)
@@ -2024,6 +2060,9 @@ html.wf-active .promo a:active {
 \*------------------------------------*/
 /*------------------------------------*\
     Buttons
+\*------------------------------------*/
+/*------------------------------------*\
+    Search
 \*------------------------------------*/
 /*------------------------------------*\
     $PAGES
