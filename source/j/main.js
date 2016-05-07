@@ -420,13 +420,14 @@
     
     function closeSearch( e ) {
         if ( ! open ) { return false; }
-        open = false;
         
         var target_tag = e.target.nodeName.toLowerCase();
         if ( target_tag == 'button' ||
              target_tag == 'input' ) {
             return false;
-        } 
+        }
+        
+        open = false;
         
         e.preventDefault();
         window.location.hash = '#';
