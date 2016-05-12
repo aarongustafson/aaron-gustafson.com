@@ -10,6 +10,8 @@ sidebars: [asides/networks.html,asides/events.html]
 
 # Headshots
 
+<aside class="alternate">{{ site.data.microcopy.about.bio_promo | markdownify }}</aside>
+
 <ul class="listing listing--gallery">
 	<li class="listing__item listing__item--photo">
 		<figure id="headshot-2014">
@@ -18,6 +20,15 @@ sidebars: [asides/networks.html,asides/events.html]
 					 alt="" width="310" height="310">
 			</a>
 			<figcaption>710px × 710px. Headshot by <a href="https://www.flickr.com/photos/chlobotphoto">Chloe Wright</a> circa 2014</figcaption>
+		</figure>
+	</li>
+	<li class="listing__item listing__item--photo">
+		<figure id="headshot-doll">
+			<a href="/i/headshots/doll.jpg">
+				<img src="/i/headshots/doll-sm.jpg" srcset="/i/headshots/doll-sm.jpg 310w, /i/headshots/doll.jpg 960w"
+				 	 alt="" width="310" height="310">
+			</a>
+			<figcaption>960px × 960px. Doll by <a href="https://www.etsy.com/shop/N3rdWool">N3rdWool</a> circa 2013</figcaption>
 		</figure>
 	</li>
 	<li class="listing__item listing__item--photo">
@@ -47,17 +58,4 @@ sidebars: [asides/networks.html,asides/events.html]
 			<figcaption>490px × 504px. Illustration by <a href="http://bearskinrug.co.uk">Kevin Cornell</a> circa 2008</figcaption>
 		</figure>
 	</li>
-	<li class="listing__item listing__item--photo">
-		<figure id="headshot-doll">
-			<a href="/i/headshots/doll.jpg">
-				<img src="/i/headshots/doll-sm.jpg" srcset="/i/headshots/doll-sm.jpg 310w, /i/headshots/doll.jpg 960w"
-				 	 alt="" width="310" height="310">
-			</a>
-			<figcaption>960px × 960px. Doll by <a href="https://www.etsy.com/shop/N3rdWool">N3rdWool</a> circa 2013</figcaption>
-		</figure>
-	</li>
 </ul>
-
-<hr>
-
-{{ site.data.microcopy.about.bio_promo | markdownify }}

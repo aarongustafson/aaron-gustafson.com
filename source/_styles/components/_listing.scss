@@ -65,8 +65,21 @@
             flex: 0 0 calc( 100% / 2 - 0.875rem );
             
             @include rem( margin-bottom, $default-spacing );
+            margin-top: 0;
+            
+            &:nth-child(2n+1) {
+                @include rem( margin-right, $default-spacing );
+            }
         }
         
+    }
+}
+
+// photo comes in at medium
+@include breakup-breakpoint( "full" ) {
+
+    .listing--gallery {
+        @include rem( margin, 20 -80 0 );
     }
 }
 

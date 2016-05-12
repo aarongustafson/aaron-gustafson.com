@@ -1,0 +1,20 @@
+ /*------------------------------------*\
+    Buttons
+\*------------------------------------*/
+
+@include breakup-breakpoint( "medium" ) {
+
+    h1 + .alternate {
+        
+        @include rem( font-size, $font-size-nav );
+        
+        margin: 0;
+        @include rem( line-height, 72 );
+        
+        position: absolute;
+        top: 0;
+        right: 0;
+        
+    }
+    
+}

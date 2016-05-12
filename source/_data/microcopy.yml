@@ -1,6 +1,6 @@
 about:
-  bio_promo: "*Looking for an official bio? I have [a few options for you](/about/biography/).*"
-  headshot_promo: "*Need a headshot? [I have a few](/about/headshots/).*"
+  bio_promo: "Looking for [an official bio?](/about/biography/)?"
+  headshot_promo: "Looking for [a headshot](/about/headshots/)?"
 appearances:
   intro: "Traveling takes a lot out of me, so I jump at every opportunity to share what I know in other ways. Here’s a list of interviews and such I’ve given."
   citations_intro: "My work has also been cited in"

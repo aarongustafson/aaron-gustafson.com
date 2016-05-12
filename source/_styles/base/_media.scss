@@ -23,6 +23,10 @@
         	max-width: 100% !important;
         	height: auto !important;
     	}
+        
+        &[width] {
+            width: auto;
+        }
 	
     }
     picture {
@@ -42,6 +46,8 @@
     
     figure {
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     figcaption {
