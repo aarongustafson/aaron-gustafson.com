@@ -11,7 +11,7 @@
         margin: 0;
         
         position: absolute;
-        @rem( top, 24 );
+        @include rem( top, 24 );
         right: 0;
         
     }

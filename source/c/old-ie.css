@@ -625,9 +625,8 @@ h1 + .alternate {
   font-size: 18px;
   font-size: 1.125rem;
   margin: 0;
-  line-height: 72px;
-  line-height: 4.5rem;
   position: absolute;
-  top: 0;
+  top: 24px;
+  top: 1.5rem;
   right: 0;
 }
