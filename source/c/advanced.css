@@ -710,6 +710,21 @@
     }
   }
 }
+ /*------------------------------------*\
+    Buttons
+\*------------------------------------*/
+@media (min-width: 43.125em) {
+  h1 + .alternate {
+    font-size: 18px;
+    font-size: 1.125rem;
+    margin: 0;
+    line-height: 72px;
+    line-height: 4.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
 /*------------------------------------*\
     $PAGES
 	Page-specific styles
