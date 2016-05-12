@@ -9,10 +9,9 @@
         @include rem( font-size, $font-size-nav );
         
         margin: 0;
-        @include rem( line-height, 72 );
         
         position: absolute;
-        top: 0;
+        @rem( top, 24 );
         right: 0;
         
     }
