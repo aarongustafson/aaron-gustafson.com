@@ -4,6 +4,7 @@ title: Headshots for
 description: "If you’re looking for photos of me, look no further."
 footer: true
 show_title: false
+sharing: false
 sidebars: [asides/networks.html,asides/events.html]
 ---
 

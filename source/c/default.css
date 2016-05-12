@@ -423,6 +423,9 @@ a[href^=mailto], a[href^=tel] {
 a.email, a.tel {
   white-space: nowrap;
 }
+a a[href$="jpg"], a a[href$=png], a a[href$=gif] {
+  border-bottom-width: 0;
+}
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   border-bottom-width: 0;
 }
@@ -512,6 +515,10 @@ a[rel="original-article"]::after {
     background-image: linear-gradient(bottom, transparent, transparent 8px, #27831a 8px, #27831a 9px, transparent 9px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  }
+
+  a[href$="jpg"], a[href$=png], a[href$=gif] {
+    background: transparent !important;
   }
 }
 /*------------------------------------*\
