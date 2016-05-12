@@ -35,6 +35,11 @@
     	&.tel {
     	    white-space: nowrap;
     	}
+		
+		// No underlines on image links
+		a[href$="jpg"],  a[href$=png],  a[href$=gif] {
+    		border-bottom-width: 0;
+		}
 	
     	h1 &,
     	h2 &,
@@ -108,6 +113,11 @@
             }
             
         }
+		
+		// No underlines on image links
+		a[href$="jpg"],  a[href$=png],  a[href$=gif] {
+    		background: transparent !important;
+		}
 
     }
 

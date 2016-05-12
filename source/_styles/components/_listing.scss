@@ -44,30 +44,29 @@
 }
 
 // photo comes in at medium
-// @include breakup-breakpoint( "medium" ) {
-// 
-//     .listing__item {
-//         
-//         $photo-width: 142;
-//         
-//         &--with-photo {
-// 
-//             // make space for the photo
-//             @include rem( padding-left, $photo-width + $default-spacing );
-// 
-//             // contain the photo
-//             @include breakup-placeholder( clearfix );
-// 
-//         }
-//         &--with-photo &__photo {
-//         
-//             @include box-shadow( $default-box-shadow );
-// 
-//             float: left;
-//             max-width: $photo-width + 0px;
-//             @include rem( margin-left, 0 - $photo-width - $default-spacing );
-//         
-//         }
-//     }
-// }
+@include breakup-breakpoint( "medium" ) {
+
+    .listing {
+        
+        &--gallery {
+        
+            // Flexbox!
+		    display: flex;
+		    flex-wrap: wrap;
+		    align-items: stretch;
+            
+            figcaption {
+                margin-top: 0;
+            }
+        }
+        
+        &--gallery &__item {
+            /* 1/3 width with a 20px gap (fudged) */
+            flex: 0 0 calc( 100% / 2 - 0.875rem );
+            
+            @include rem( margin-bottom, $default-spacing );
+        }
+        
+    }
+}
 
