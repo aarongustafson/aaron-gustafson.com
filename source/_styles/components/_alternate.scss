@@ -12,8 +12,16 @@
         
         position: absolute;
         @include rem( top, 24 );
-        right: 0;
+        @include rem( right, $default-spacing );
         
+    }
+    
+}
+
+@include breakup-breakpoint( "full" ) {
+
+    h1 + .alternate {
+        right: 0;
     }
     
 }

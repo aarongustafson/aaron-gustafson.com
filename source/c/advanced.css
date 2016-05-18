@@ -721,6 +721,12 @@
     position: absolute;
     top: 24px;
     top: 1.5rem;
+    right: 22px;
+    right: 1.375rem;
+  }
+}
+@media (min-width: 60em) {
+  h1 + .alternate {
     right: 0;
   }
 }

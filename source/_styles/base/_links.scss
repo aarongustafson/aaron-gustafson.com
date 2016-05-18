@@ -56,7 +56,7 @@
         	}
     	}
     	
-    	&[rel="full-article"]::after {
+        footer &[rel="bookmark"]::after {
     	    content: "\00A0\2192";
     	}
 

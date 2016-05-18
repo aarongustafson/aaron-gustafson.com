@@ -4,9 +4,9 @@
 	<header class="entry__header">
 		<h1 class="entry__title entry-title">
 			{% if post.ref_url %}
-				<a href="{{ post.ref_url }}">{{ post.title | widont }}</a>
+				<a rel="bookmark" href="{{ post.ref_url }}">{{ post.title | widont }}</a>
 			{% else %}
-				<a href="{{ root_url }}{{ post.url }}">{{ post.title | widont }}</a>
+				<a rel="bookmark" href="{{ root_url }}{{ post.url }}">{{ post.title | widont }}</a>
 			{% endif %}
 		</h1>
 		{% unless post.meta == false %}
@@ -32,7 +32,7 @@
 {% if excerpted == 'true' and post.ref_source %}
 	<footer class="entry__footer">
 		<p>
-			You can <a rel="full-article" href="{{ root_url }}{% if post.ref_source %}{{ post.url | replace:"notebook/","notebook/links/" }}{% else %}{{ post.url }}{% endif %}">finish reading
+			You can <a rel="bookmark" href="{{ root_url }}{% if post.ref_source %}{{ post.url | replace:"notebook/","notebook/links/" }}{% else %}{{ post.url }}{% endif %}">finish reading
 			my thoughts in less than {{ post.content | reading_time_as_i }}</a> or your can
 			<a rel="original-article" href="{{ post.ref_url }}">read the original in {{ post.ref_source }}</a>
 		</p>
@@ -40,7 +40,7 @@
 {% elsif excerpted == 'true' %}
 	<footer class="entry__footer">
 		<p>
-			<a rel="full-article" href="{{ root_url }}{% if post.ref_source %}links/{% endif %}{{ post.url }}">You can finish reading
+			<a rel="bookmark" href="{{ root_url }}{% if post.ref_source %}links/{% endif %}{{ post.url }}">You can finish reading
 			<cite>{{ post.title }}</cite> in less than {{ post.content | reading_time_as_i }}</a>
 		</p>
 	</footer>

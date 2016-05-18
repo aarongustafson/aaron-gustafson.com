@@ -628,5 +628,10 @@ h1 + .alternate {
   position: absolute;
   top: 24px;
   top: 1.5rem;
+  right: 22px;
+  right: 1.375rem;
+}
+
+h1 + .alternate {
   right: 0;
 }
