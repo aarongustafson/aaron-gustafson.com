@@ -432,7 +432,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 h1 a:hover, h1 a:focus, h1 a:active, h2 a:hover, h2 a:focus, h2 a:active, h3 a:hover, h3 a:focus, h3 a:active, h4 a:hover, h4 a:focus, h4 a:active, h5 a:hover, h5 a:focus, h5 a:active, h6 a:hover, h6 a:focus, h6 a:active {
   border-bottom-width: 1px;
 }
-a[rel="full-article"]::after {
+footer a[rel="bookmark"]::after {
   content: "\00A0\2192";
 }
 a[rel="original-article"]::after {
@@ -1713,6 +1713,44 @@ html.wf-active .promo a:active {
     Buttons
 \*------------------------------------*/
 /*------------------------------------*\
+    Scripts
+\*------------------------------------*/
+.script__stage-direction {
+  font-style: italic;
+}
+.script__stage-direction::before {
+  content: "[";
+}
+.script__stage-direction::after {
+  content: "]";
+}
+.script__dialog {
+  list-style: none;
+  margin-left: 0;
+}
+.script__item {
+  margin-left: 0;
+}
+.script__statement {
+  font-style: normal;
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+.script__statement * + * {
+  margin-top: 0;
+}
+.script__speaker {
+  display: inline;
+  font-style: normal;
+  font-weight: bold;
+}
+.script__speaker__description {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/*------------------------------------*\
     $PAGES
 	Page-specific styles
 	(use sparingly)
@@ -2085,6 +2123,9 @@ html.wf-active .promo a:active {
 \*------------------------------------*/
  /*------------------------------------*\
     Buttons
+\*------------------------------------*/
+/*------------------------------------*\
+    Scripts
 \*------------------------------------*/
 /*------------------------------------*\
     $PAGES

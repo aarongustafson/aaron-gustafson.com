@@ -1,0 +1,55 @@
+/*------------------------------------*\
+    Scripts
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+
+    .script {
+        
+        &__stage-direction {
+            font-style: italic;
+            
+            &::before {
+                content: "[";
+            }
+            &::after {
+                content: "]";
+            }
+            
+        }
+        
+        &__dialog {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        &__item {
+            margin-left: 0;
+        }
+        
+        &__statement {
+            font-style: normal;
+            
+            margin-top: 0;
+            margin-left: 0;
+            padding-left: 0;
+            
+            * + * {
+                margin-top: 0;
+            }
+        }
+        
+        &__speaker {
+            display: inline;
+            font-style: normal;
+            font-weight: bold;
+            
+            &__description {
+                font-style: normal;
+                font-weight: normal;
+            }
+            
+        }
+    
+    }
+}
