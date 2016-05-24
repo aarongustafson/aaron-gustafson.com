@@ -43,7 +43,7 @@
     // exit early
     if ( ! length )
     {
-        console.log('nothing found');
+        // console.log('nothing found');
         return;
     }
     
