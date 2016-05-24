@@ -14,7 +14,7 @@ One of the greatest challenges of progressive enhancement lies not with the codi
 
 <hr>
 
-Back in 2007, I was presented with this challenge while putting together a talk called [Ruining the User Experience](https://web.archive.org/web/20070515221318/http://2007.sxsw.com/interactive/programming/panels/?action=show&id=IAP060214) (which I co-presented for the first time with at SXSW with [Sarah B. Nelson](https://twitter.com/sarahbeee)). In the talk, Sarah and I discussed how to treat JavaScript as an enhancement and what happens when you don’t—in 2007, I know!
+Back in 2007, I was presented with this challenge while putting together a talk called [Ruining the User Experience](https://web.archive.org/web/20070515221318/http://2007.sxsw.com/interactive/programming/panels/?action=show&id=IAP060214) (which I co-presented for the first time at SXSW with [Sarah B. Nelson](https://twitter.com/sarahbeee)). In the talk, Sarah and I discussed how to treat JavaScript as an enhancement and what happens when you don’t—in 2007, I know!
 
 Anyway, in the talk I was struggling to convey the various decision points and interface adjustments that would happen as a result of those decisions. I don’t remember which of us came up with the idea—it was probably Sarah—but we opted to use a flowchart to visually describe what we were talking about on stage. Here was the first one we did:
 
@@ -59,4 +59,4 @@ Here’s an example from [my Beyond Responsive workshop](https://www.facebook.co
 
 ## Simple, Powerful
 
-Ix Maps have been incredibly useful to me and the dozens of teams I’ve worked with. They’ve helped us explore innovative ways to solve design challenges and have been an amazing touchstone to organize our work around. Give them a shot an I’m sure you’ll discover lots of ways to put them to use in your own projects.
+Ix Maps have been incredibly useful to me and the dozens of teams I’ve worked with. They’ve helped us explore innovative ways to solve design challenges and have been an amazing touchstone to organize our work around. Give them a shot and I’m sure you’ll discover lots of ways to put them to use in your own projects.
