@@ -110,6 +110,7 @@
                 )
             );
         }
+        console.log( 'existing_webmentions', existing_webmentions );
         $existing_webmentions = null;
     }
     
