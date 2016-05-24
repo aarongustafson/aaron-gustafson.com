@@ -151,14 +151,20 @@ module Jekyll
       if redirect_limit > 0
         uri = URI.parse(URI.encode(uri))
         http = Net::HTTP.new(uri.host, uri.port)
+        http.read_timeout = 10
         if uri.scheme == 'https'
           http.use_ssl = true
           http.ssl_version = :TLSv1
           http.ciphers = "ALL:!ADH:!EXPORT:!SSLv2:RC4+RSA:+HIGH:+MEDIUM:-LOW"
           http.verify_mode = OpenSSL::SSL::VERIFY_PEER
         end
-        request = Net::HTTP::Get.new(uri.request_uri)
-        response = http.request(request)
+        begin
+          request = Net::HTTP::Get.new(uri.request_uri)
+          response = http.request(request)
+        rescue SocketError, Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, Errno::ECONNREFUSED, EOFError, Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError => e
+          warn "Got an error checking #{original_uri}: #{e}"
+          return false
+        end
         case response
           when Net::HTTPSuccess then
             return response.body
