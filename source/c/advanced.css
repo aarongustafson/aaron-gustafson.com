@@ -734,6 +734,26 @@
     Scripts
 \*------------------------------------*/
 /*------------------------------------*\
+    Anchorable
+\*------------------------------------*/
+@media (min-width: 43.125em) {
+  .anchorable__anchor {
+    top: 0;
+    left: 100%;
+    margin-left: 5px;
+    margin-left: 0.3125rem;
+  }
+}
+@media (min-width: 64em) {
+  .anchorable__anchor {
+    left: auto;
+    right: 100%;
+    margin-left: 0;
+    margin-right: 5px;
+    margin-right: 0.3125rem;
+  }
+}
+/*------------------------------------*\
     $PAGES
 	Page-specific styles
 	(use sparingly)

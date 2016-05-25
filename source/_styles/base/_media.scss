@@ -14,9 +14,11 @@
     // Responsive images
     img {
     
-        display: inline-block;
+        display: block;
     	max-width: 100%;
     	height: auto;
+        margin-left: auto;
+        margin-right: auto;
 	
     	&[style] {
             width: auto !important;
@@ -36,6 +38,11 @@
     .noscript-picture {
     	margin: 0;
     	padding: 0;
+    }
+    
+    // Audio
+    audio {
+        width: 100%;
     }
     
     .media-container {

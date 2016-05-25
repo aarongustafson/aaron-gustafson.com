@@ -196,7 +196,7 @@ ul, .fields, .listing, .entry__jump-links {
   margin-left: 0;
   padding-left: 0;
 }
-.hidden, object[data^="#"], .webmention--author-starts .h-card .p-name, .share-link__text {
+.hidden, object[data^="#"], .webmention--author-starts .h-card .p-name, .share-link__text, .anchorable__anchor__text {
   position: absolute !important;
   height: 1px;
   width: 1px;
@@ -612,9 +612,11 @@ object[data*="svg"] {
 }
 
 img {
-  display: inline-block;
+  display: block;
   max-width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 img[style] {
   width: auto !important;
@@ -632,6 +634,10 @@ picture {
 .noscript-picture {
   margin: 0;
   padding: 0;
+}
+
+audio {
+  width: 100%;
 }
 
 .media-container {
@@ -1751,6 +1757,97 @@ html.wf-active .promo a:active {
 }
 
 /*------------------------------------*\
+    Anchorable
+\*------------------------------------*/
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.anchorable {
+  font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
+  position: relative;
+}
+.anchorable__icon {
+  vertical-align: top;
+  display: inline-block;
+  padding: 11px;
+  padding: 0.6875rem;
+  width: 15px;
+  width: 0.9375rem;
+  height: 15px;
+  height: 0.9375rem;
+}
+.anchorable__icon path {
+  fill: #DDD;
+  -webkit-transition: fill .5s;
+  transition: fill .5s;
+}
+.anchorable__anchor__text {
+  left: 0;
+  bottom: 0;
+}
+.anchorable__anchor {
+  background: #fff;
+  text-decoration: none;
+  line-height: 15px;
+  line-height: 0.9375rem;
+  border: 0;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: -999em;
+}
+.anchorable__anchor:hover path, .anchorable__anchor:focus path {
+  fill: #2c2825;
+  -webkit-transition: fill .5s;
+  transition: fill .5s;
+}
+.anchorable:hover path, .anchorable:focus path {
+  fill: #2c2825;
+  -webkit-transition: fill .5s;
+  transition: fill .5s;
+}
+.anchorable__alert {
+  font-weight: normal;
+  color: #666;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 15px;
+  line-height: 0.9375rem;
+  display: block;
+  margin: 0;
+}
+.anchorable__alert--fading {
+  -webkit-animation: 2.2s linear 0s 1 fade-out;
+  animation: 2.2s linear 0s 1 fade-out;
+}
+
+@supports (background-image: linear-gradient(black, white)) {
+  .anchorable__anchor:link,
+  .anchorable__anchor:visited,
+  .anchorable__anchor:hover,
+  .anchorable__anchor:focus,
+  html.wf-active .anchorable__anchor:link,
+  html.wf-active .anchorable__anchor:visited,
+  html.wf-active .anchorable__anchor:hover,
+  html.wf-active .anchorable__anchor:focus {
+    background: #fff;
+  }
+}
+/*------------------------------------*\
     $PAGES
 	Page-specific styles
 	(use sparingly)
@@ -2126,6 +2223,9 @@ html.wf-active .promo a:active {
 \*------------------------------------*/
 /*------------------------------------*\
     Scripts
+\*------------------------------------*/
+/*------------------------------------*\
+    Anchorable
 \*------------------------------------*/
 /*------------------------------------*\
     $PAGES

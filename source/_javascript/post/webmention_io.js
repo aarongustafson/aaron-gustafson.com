@@ -96,7 +96,6 @@
     else
     {
         $webmentions_list = $webmentions_list[0];
-        console.log( 'webmentions', $webmentions_list.querySelectorAll( '[id^=webmention-]' ) );
         // get existing webmentions
         $existing_webmentions = $webmentions_list.querySelectorAll( '[id^=webmention-]' );
         e = $existing_webmentions.length;
@@ -108,7 +107,6 @@
                     .replace( 'webmention-', '' )
             );
         }
-        console.log( 'existing_webmentions', existing_webmentions );
         $existing_webmentions = null;
     }
     
@@ -162,11 +160,9 @@
         // No need to replace
         if ( existing_webmentions.indexOf( id + '' ) > -1 )
         {
-            console.log('skipping', id );
             return;
         }
         
-        console.log( 'adding', id );
         var $item = elements.li.cloneNode( true ),
             $mention = elements.article.cloneNode( true ),
             $author = elements.author.cloneNode( true ),
