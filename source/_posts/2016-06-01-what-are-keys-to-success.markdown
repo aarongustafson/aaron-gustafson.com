@@ -5,11 +5,14 @@ date: 2016-06-01 11:18:31 -0400
 comments: true
 categories: [culture,empathy,equality,personal,philosophy]
 description: "What makes me feel successful? The Golden Rule."
+crosspost_to_medium: true
 ---
 
 The other day I got a message from someone I’ve been mentoring via email. His question was one I think a lot of folks in our industry struggle with:
 
 > Can you please tell what are keys to success and what should I do to become a successful programmer and software engineer? Anything is appreciated.
+
+<!-- more -->
 
 That’s a tough one. "Success" can be defined in so many ways. Is success making truckloads of money? Is it having 100,000 Twitter followers? Is it getting invited to speak at conferences in exotic locations? Those are very external notions of success, perhaps it’s more personal: Feeling like you’ve accomplished what you set out to do. Feeling like your life has meaning. Finding joy in both your work and your play. With so many ways to define success, there’s no magic formula for achieving it.
 
