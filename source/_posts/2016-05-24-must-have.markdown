@@ -13,7 +13,7 @@ ref_source: CommitStrip
 
 For the non-visual among you…
 
-<article id="comic-must-have-translated" class="script">
+<article id="comic-must-have-transcribed" class="script">
 
 <p class="script__stage-direction">Programmer sits at a computer with his back to a Project Manager</p>
 
