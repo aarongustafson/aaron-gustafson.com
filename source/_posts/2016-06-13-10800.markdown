@@ -1,0 +1,11 @@
+---
+layout: link
+title: "Progressive web app store"
+date: 2016-06-13 16:28:09 -0400
+comments: false
+ref_url: https://adactio.com/journal/10800
+in_reply_to: https://adactio.com/journal/10800
+ref_source: Adactio
+---
+
+Jeremy on aggregating links for Progressive Web Apps. Sounds a lot like bringing back the Yahoo directory :-)
