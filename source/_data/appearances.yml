@@ -1,3 +1,21 @@
+- title: "A Funny Thing Happened To Me On The Way To 2016…"
+  outlet: An Event Apart
+  date: 2016-06-07 00:00:00 +0000
+  url: http://aneventapart.com/news/post/a-funny-thing-happened-to-me-on-the-way-to-2016
+  description: "I join an impressive list of AEA speakers in reflecting on where we were in our careers 10 years ago."
+
+- title: "Gone fishin': Patagonia bids farewell to mobile app"
+  outlet: Digiday
+  date: 2016-06-01 00:00:00 +0000
+  url: http://digiday.com/brands/gone-fishin-patagonia-bids-farewell-mobile-app/
+  description: "Quoted again on Progressive Web Apps."
+
+- title: "WTF are Progressive Web Apps?"
+  outlet: Digiday
+  date: 2016-05-23 00:00:00 +0000
+  url: http://digiday.com/platforms/wtf-progressive-web-apps/
+  description: "Digiday’s coverage of Progressive Web Apps includes a bit of commentary from me."
+
 - title: "Episode 67: Progressive Enhancement Revisited, with Aaron Gustafson"
   outlet: Ctrl+Click Cast
   date: 2016-05-05 00:00:00 +0000
