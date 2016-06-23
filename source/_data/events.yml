@@ -3,27 +3,32 @@ future:
   - title: SpeechTEK
     url: http://lanyrd.com/2016/speechtek
     date: 2016-05-22 09:00:00 -0400
-    location: Washington, DC USA
+    location: "Washington, DC USA"
 
   - title: SmashingConf New York
     url: http://lanyrd.com/2016/smashingconf-new-york/
     date: 2016-06-14 09:00:00 -0400
-    location: New York, NY USA
+    location: "New York, NY USA"
 
   - title: SmashingConf Freiburg
     url: http://lanyrd.com/2016/smashingconf-freiburg/
     date: 2016-09-13 09:00:00 -0400
-    location: Freiburg, Germany
+    location: "Freiburg, Germany"
+
+  - title: Build Right Maker Series
+    url: https://buildright.io/maker-series/2016/aaron-gustafson
+    date: 2016-11-10 09:00:00 -0600
+    location: "Dayton, OH USA"
 
   - title: TBA
     #url: http://lanyrd.com/cfxzmq
     date: 2017-04-11 09:00:00 -0400
-    location: Sydney, Australia
+    location: "Sydney, Australia"
 
   - title: TBA
     #url: http://lanyrd.com/cfxzmt
     date: 2017-04-14 09:00:00 -0400
-    location: Melbourne, Australia
+    location: "Melbourne, Australia"
 
 past:
 

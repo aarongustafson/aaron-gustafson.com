@@ -78,6 +78,11 @@
   credit_name: Alison Cassidy
   credit_url: http://commons.wikimedia.org/wiki/File:Apple_Campus.png
 
+- name: "Dayton, OH USA"
+  photo: https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/UniversityofDayton.jpg/400px-UniversityofDayton.jpg
+  credit_name: Namtrofk
+  credit_url: https://commons.wikimedia.org/wiki/File:UniversityofDayton.jpg
+
 - name: "Düsseldorf, Germany"
   photo: https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/DUSSELDORF_CITY_TRAM_AT_THE_HAUPTBAHNHOF_DUSSELDORF_GERMANY_APRIL_2013_%288711697558%29.jpg/400px-DUSSELDORF_CITY_TRAM_AT_THE_HAUPTBAHNHOF_DUSSELDORF_GERMANY_APRIL_2013_%288711697558%29.jpg
   credit_name: calflier001
