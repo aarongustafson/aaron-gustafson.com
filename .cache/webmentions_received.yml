@@ -307,6 +307,15 @@ https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/:
     745524247678717952: |-
       <li id="webmention-745524247678717952" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/JiminyPan"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/736911517187223553/tBhz3yUH_normal.jpg" alt="" title="Jiminy Panoz"><b class="p-name">Jiminy Panoz</b></a></div><div class="webmention__content p-content"><p>A Fundamental Disconnect, From the Notebook of Aaron Gustafson <a href="https://t.co/6CzDtWNp6B">https://t.co/6CzDtWNp6B</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-06-22T03:50:06-04:00">22 June 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/JiminyPan/status/745524247678717952">Permalink</a></div></article></li>
+  '1467178083':
+    353191: <li id="webmention-353191" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/Spellacy"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/pbs.twimg.com/e6aeae98e12598f4e8ee44875a5b4aa07d6c01701c930cf296ad8ff9a0d5579b.jpeg"
+      alt="" title="Michael Spellacy"><b class="p-name">Michael Spellacy</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/745288856367407104#favorited-by-132282117">Michael
+      Spellacy favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-06-29T01:28:03-04:00">29 June 2016</time></div></article></li>
 http://aaron-gustafson.com/notebook/2014/missed-connections/:
   '1416670812':
     12049: <li id="webmention-12049" class="webmentions__item"><article class="h-cite
@@ -4901,6 +4910,100 @@ https://www.aaron-gustafson.com/notebook/how-to-apply-progressive-enhancement-wh
     '707324845634138112': |-
       <li id="webmention-707324845634138112" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.ishadeed.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/twitter.com/0e8acb4b6db66035033ef27c1d8d18a7065f49cc4553c32e58d79fcdaa4dea2e.jpeg" alt="" title="Ahmad Shadeed"><b class="p-name">Ahmad Shadeed</b></a></div><div class="webmention__content p-content"><p>How to Apply Progressive Enhancement When JavaScript Seems Like a Requirement <a href="https://www.aaron-gustafson.com/notebook/how-to-apply-progressive-enhancement-when-javascript-seems-like-a-requirement/">aaron-gustafson.com/notebook/how-t…</a> by <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-03-08T16:59:19-05:00">8 March 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/shadeed9/status/707324845634138112">Permalink</a></div></article></li>
+  '1467644523':
+    355049: <li id="webmention-355049" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://www.hongkiat.com/blog/progressive-enhancements-web-design-best-practices/">Best
+      Practices for Progressive Enhancement in Web Design</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2016-07-04T11:02:03-04:00">4
+      July 2016</time></div></article></li>
+  '1467728604': {}
+  '1467729860':
+    355376: <li id="webmention-355376" class="webmentions__item"><article class="h-cite
+      webmention webmention--title-only"><div class="webmention__author p-author h-card"><b
+      class="p-name">JohnPaul</b></div> <div class="webmention__title p-name"><a href="http://www.opencodegroup.com/web-design/best-practices-for-progressive-enhancement-in-web-design/">Best
+      Practices for Progressive Enhancement in Web Design</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2016-07-05T10:44:20-04:00">5
+      July 2016</time></div></article></li>
+  '1467729877':
+    355377: <li id="webmention-355377" class="webmentions__item"><article class="h-cite
+      webmention webmention--title-only"><div class="webmention__author p-author h-card"><b
+      class="p-name">JohnPaul</b></div> <div class="webmention__title p-name"><a href="http://www.opencodegroup.com/web-design/best-practices-for-progressive-enhancement-in-web-design-2/">Best
+      Practices for Progressive Enhancement in Web Design</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2016-07-05T10:44:37-04:00">5
+      July 2016</time></div></article></li>
+  '1467736196':
+    355414: <li id="webmention-355414" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://digitalmofo.com/best-practices-for-progressive-enhancement-in-web-design/">DigitalMofo</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-07-05T12:29:56-04:00">5
+      July 2016</time></div></article></li>
+  '1467760568':
+    355511: <li id="webmention-355511" class="webmentions__item"><article class="h-cite
+      webmention webmention--title-only"><div class="webmention__author p-author h-card"><b
+      class="p-name">mycreative-admin</b></div> <div class="webmention__title p-name"><a
+      href="http://mycreativegateway.com/blog/2016/07/04/best-practices-for-progressive-enhancement-in-web-design/">Best
+      Practices for Progressive Enhancement in Web Design</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2016-07-05T19:16:08-04:00">5
+      July 2016</time></div></article></li>
+  '1467763757':
+    355526: <li id="webmention-355526" class="webmentions__item"><article class="h-cite
+      webmention webmention--title-only"><div class="webmention__author p-author h-card"><b
+      class="p-name">bittabi</b></div> <div class="webmention__title p-name"><a href="http://bittabi.com/best-practices-for-progressive-enhancement-in-web-design/">Best
+      Practices for Progressive Enhancement in Web Design</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2016-07-05T20:09:17-04:00">5
+      July 2016</time></div></article></li>
+  '1467765454':
+    355531: <li id="webmention-355531" class="webmentions__item"><article class="h-cite
+      webmention webmention--title-only"><div class="webmention__author p-author h-card"><b
+      class="p-name">MadoxWeb</b></div> <div class="webmention__title p-name"><a href="http://madoxweb.com/best-practices-for-progressive-enhancement-in-web-design/">Best
+      Practices for Progressive Enhancement in Web Design</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2016-07-05T20:37:34-04:00">5
+      July 2016</time></div></article></li>
+  '1467768811':
+    355540: <li id="webmention-355540" class="webmentions__item"><article class="h-cite
+      webmention webmention--title-only"><div class="webmention__author p-author h-card"><b
+      class="p-name">admin</b></div> <div class="webmention__title p-name"><a href="http://technologytodayworld.com/best-practices-for-progressive-enhancement-in-web-design/">Best
+      Practices for Progressive Enhancement in Web Design</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2016-07-05T21:33:31-04:00">5
+      July 2016</time></div></article></li>
+  '1467772062':
+    355547: <li id="webmention-355547" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://www.wp-dd.com/best-practices-for-progressive-enhancement-in-web-design/">Best
+      Practices for Progressive Enhancement in Web Design - WordPress Design &amp;
+      Development -WordPress Experts, WordPress Designers, WordPress Developers</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-07-05T22:27:42-04:00">5
+      July 2016</time></div></article></li>
+  '1467788254':
+    355606: <li id="webmention-355606" class="webmentions__item"><article class="h-cite
+      webmention webmention--title-only"><div class="webmention__author p-author h-card"><a
+      class="u-url" href="http://www.socialblog.top/author/admin/"><b class="p-name">admin</b></a></div>
+      <div class="webmention__title p-name"><a href="http://www.socialblog.top/best-practices-for-progressive-enhancement-in-web-design/">Best
+      Practices for Progressive Enhancement in Web Design</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2016-07-06T02:57:34-04:00">6
+      July 2016</time></div></article></li>
+  '1467810672':
+    355669: <li id="webmention-355669" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://www.brodneil.net/best-practices-for-progressive-enhancement-in-web-design/">Best
+      Practices for Progressive Enhancement in Web Design</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2016-07-06T09:11:12-04:00">6
+      July 2016</time></div></article></li>
+  '1467850029':
+    355805: <li id="webmention-355805" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://latesttechnology.space/best-practices-for-progressive-enhancement-in-web-design/">Best
+      Practices for Progressive Enhancement in Web Design  |   Latest Technology</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-07-06T20:07:09-04:00">6
+      July 2016</time></div></article></li>
+  '1468156528':
+    356842: <li id="webmention-356842" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://www.1touchindia.co.in/best-practices-for-progressive-enhancement-in-web-design/">Best
+      Practices for Progressive Enhancement in Web Design - 1touchindia</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-07-10T09:15:28-04:00">10
+      July 2016</time></div></article></li>
 http://www.aaron-gustafson.com/notebook/honoringwebfolk/:
   '1428634359':
     '586361118324568065': <li id="webmention-586361118324568065" class="webmentions__item"><article
@@ -8567,6 +8670,15 @@ https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/:
     745379511798210560: |-
       <li id="webmention-745379511798210560" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/JTweedie"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/3384051765/769a0a2d0082d7925c9a1391f24fe8ab_normal.jpeg" alt="" title="John Tweedie"><b class="p-name">John Tweedie</b></a></div><div class="webmention__content p-content"><p>The Web Should Just Work for Everyone <a href="https://t.co/XlyAm2THZn">https://t.co/XlyAm2THZn</a> #accessibility #UX</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-06-21T18:14:58-04:00">21 June 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/JTweedie/status/745379511798210560">Permalink</a></div></article></li>
+  '2016-07-07':
+    751251586299654148: |-
+      <li id="webmention-751251586299654148" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/mjanusauskas"><img class="webmention__author__photo u-photo" src="https://abs.twimg.com/sticky/default_profile_images/default_profile_6_normal.png" alt="" title="Matthew Janusauskas"><b class="p-name">Matthew Janusauskas</b></a></div><div class="webmention__content p-content"><p>The Web Should Just Work for Everyone, From the Notebook of Aaron Gustafson <a href="https://t.co/P9JmtKpYKI">https://t.co/P9JmtKpYKI</a> via @Instapaper</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-07-07T23:08:30-04:00">7 July 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/mjanusauskas/status/751251586299654148">Permalink</a></div></article></li>
+  '1466768109':
+    '746305659503771648': |-
+      <li id="webmention-746305659503771648" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.webaxe.org/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/e5811440b2f391f31e10a524c9aec98580fd08d5c39d2213f6b228807dd048f3.jpeg" alt="" title="Web Axe"><b class="p-name">Web Axe</b></a></div><div class="webmention__content p-content"><p>The Web Should Just Work for Everyone <a href="http://bit.ly/28T636t">bit.ly/28T636t</a> by <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> <a href="https://twitter.com/search?q=%23webdev">#webdev</a> <a href="https://twitter.com/search?q=%23webdesign">#webdesign</a> <a href="https://twitter.com/search?q=%23a11y">#a11y</a>
+      <a class="u-mention" href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/"></a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-06-24T07:35:09-04:00">24 June 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/webaxe/status/746305659503771648">Permalink</a></div></article></li>
 https://www.aaron-gustafson.com/:
   '2016-05-06':
     728658688240713728: |-
