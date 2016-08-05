@@ -8683,6 +8683,15 @@ https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/:
     753605436444708864: |-
       <li id="webmention-753605436444708864" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/UIE"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/3759116326/19308cfcdb0b831111d4ee3fc3e6232c_normal.jpeg" alt="" title="UIE"><b class="p-name">UIE</b></a></div><div class="webmention__content p-content"><p>The Web Should Just Work for Everyone <a href="https://t.co/iebfGKtL7p">https://t.co/iebfGKtL7p</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-07-14T11:01:52-04:00">14 July 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/UIE/status/753605436444708864">Permalink</a></div></article></li>
+  '2016-07-17':
+    754677669044772868: |-
+      <li id="webmention-754677669044772868" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/EasyChirp"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/378800000680152167/a4429bfaa93ee0e3110ce77082077965_normal.jpeg" alt="" title="Easy Chirp"><b class="p-name">Easy Chirp</b></a></div><div class="webmention__content p-content"><p>The Web Should Just Work for Everyone <a href="https://t.co/z2C8Rt0LTz">https://t.co/z2C8Rt0LTz</a> by @AaronGustafson #webdev #webdesign #a11y</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-07-17T10:02:32-04:00">17 July 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/EasyChirp/status/754677669044772868">Permalink</a></div></article></li>
+  '1468764152':
+    '754677669044772868': |-
+      <li id="webmention-754677669044772868" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.easychirp.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/53301e8a9533281db64852bce555ee8fc64d2a709c4c08df5ef437134aabeb01.jpeg" alt="" title="Easy Chirp"><b class="p-name">Easy Chirp</b></a></div><div class="webmention__content p-content"><p>The Web Should Just Work for Everyone <a href="http://bit.ly/28T636t">bit.ly/28T636t</a> by <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> <a href="https://twitter.com/search?q=%23webdev">#webdev</a> <a href="https://twitter.com/search?q=%23webdesign">#webdesign</a> <a href="https://twitter.com/search?q=%23a11y">#a11y</a>
+      <a class="u-mention" href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/"></a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-07-17T10:02:32-04:00">17 July 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/EasyChirp/status/754677669044772868">Permalink</a></div></article></li>
 https://www.aaron-gustafson.com/:
   '2016-05-06':
     728658688240713728: |-
@@ -8767,3 +8776,65 @@ https://www.reading.am/p/4jRn/https://www.aaron-gustafson.com/notebook/a-fundame
     745439770688499712: |-
       <li id="webmention-745439770688499712" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/andrewsreading"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/566793154150400002/mlodEFV8_normal.jpeg" alt="" title="Andrew Maier"><b class="p-name">Andrew Maier</b></a></div><div class="webmention__content p-content"><p>✌ @Reading “A Fundamental Disconnect, From the Notebook of Aaron Gustafson” <a href="https://t.co/vzGEZUcfoz">https://t.co/vzGEZUcfoz</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-06-21T22:14:25-04:00">21 June 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/andrewsreading/status/745439770688499712">Permalink</a></div></article></li>
+https://www.aaron-gustafson.com/notebook/the-web-is-messy-and-beautiful/:
+  '2016-07-14':
+    753771369968439296: |-
+      <li id="webmention-753771369968439296" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/cijanzen"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/675805555760345088/D3OHCrjQ_normal.jpg" alt="" title="Christopher Janzen"><b class="p-name">Christopher Janzen</b></a></div><div class="webmention__content p-content"><p>The Web is Messy and Beautiful <a href="https://t.co/Ic5QXbGjpx">https://t.co/Ic5QXbGjpx</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-07-14T22:01:13-04:00">14 July 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/cijanzen/status/753771369968439296">Permalink</a></div></article></li>
+    753615158807764992: |-
+      <li id="webmention-753615158807764992" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/744914872144637952/ApXPNaZi_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>The Web is Messy and Beautiful <a href="https://t.co/zwxkK5WlRm">https://t.co/zwxkK5WlRm</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-07-14T11:40:30-04:00">14 July 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/753615158807764992">Permalink</a></div></article></li>
+  '1468513364':
+    358216: <li id="webmention-358216" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/geertmelotte"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/592d72d173e26d7ff2619f023bc20e77dc839537e4616b5304b668cd95b1d9d4.jpeg"
+      alt="" title="geertmelotte"><b class="p-name">geertmelotte</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/753615158807764992#favorited-by-10221942">geertmelotte
+      favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-07-14T12:22:44-04:00">14 July 2016</time></div></article></li>
+  '1468512012':
+    '753620119578894338': |-
+      <li id="webmention-753620119578894338" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://www.aaron-gustafson.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/2bb8f52162bf2625f344cf7271ec625c52733b0e3f0e30994cba02ddf2503ba2.jpeg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/helloanselm">@helloanselm</a> <a href="https://twitter.com/adamspelbring">@adamspelbring</a> <a href="https://twitter.com/webcraftsman">@webcraftsman</a> Try now :-)
+      I think the publish got out of sync.</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-07-14T12:00:12-04:00">14 July 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/753620119578894338">Permalink</a></div></article></li>
+  '1468513382':
+    358218: <li id="webmention-358218" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/TheRealBatJan"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/4e9c19e70e7f7a51578de8d5ca84ba8120a3d833b3792724bbd2c2e0994725f6.jpeg"
+      alt="" title="Jan Skovgaard"><b class="p-name">Jan Skovgaard</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/753615158807764992#favorited-by-27247248">Jan
+      Skovgaard favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-07-14T12:23:02-04:00">14 July 2016</time></div></article></li>
+  '1468518354':
+    358237: <li id="webmention-358237" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/m_ott"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/pbs.twimg.com/33e1c06aa2b70a01228a4748f32f6f0b9b942b112325a8911db520651cceafb1.png"
+      alt="" title="Matthias Ott"><b class="p-name">Matthias Ott</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/753615158807764992#favorited-by-58448784">Matthias
+      Ott favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-07-14T13:45:54-04:00">14 July 2016</time></div></article></li>
+  '1468523971':
+    358252: <li id="webmention-358252" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/gvnmrl"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/pbs.twimg.com/b6cabd5e630583f59a2bdf04ad6849339196e92c964c85c35e4c3dc9bed3a740.jpeg"
+      alt="" title="Giovanni Morelli"><b class="p-name">Giovanni Morelli</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/753615158807764992#favorited-by-2255013277">Giovanni
+      Morelli favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-07-14T15:19:31-04:00">14 July 2016</time></div></article></li>
+  '1468538631':
+    '753731765819158529': |-
+      <li id="webmention-753731765819158529" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.avsdesign.net/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/d2ef406a6984f9cd5dca68c9be9d0c40a2e382428bea68b41863515f46a65091.png" alt="" title="Adam Spelbring"><b class="p-name">Adam Spelbring</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> Lots of growing pains, and some square pegs in round holes. I feel his angst but the Web is the Web. And it’s beautiful.</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-07-14T19:23:51-04:00">14 July 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/adamspelbring/status/753731765819158529">Permalink</a></div></article></li>
+  '1468868182':
+    359565: <li id="webmention-359565" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/Mendy_1"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/pbs.twimg.com/66f116b71c91fd4effef3ed3396c83b743b3f1430d92c209eb81b8d3a9730a3e.jpeg"
+      alt="" title="Dave Mendlen"><b class="p-name">Dave Mendlen</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/753615158807764992#favorited-by-139134777">Dave
+      Mendlen favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-07-18T14:56:22-04:00">18 July 2016</time></div></article></li>
