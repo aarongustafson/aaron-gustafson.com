@@ -13,7 +13,7 @@ sidebars: [asides/networks.html,asides/events.html]
 {% endcapture %}
 
 {% capture brief %}
-As would be expected from a former manager of the [Web Standards Project](http://webstandards.org), Aaron Gustafson is passionate about web standards and accessibility. He has been working on the Web for two decades now and is a web standards advocate at [Microsoft](http://www.microsoft.com/), working closely with their browser team. He writes about whatever’s on his mind at [aaron-gustafson.com](http://www.aaron-gustafson.com/).
+As would be expected from a former manager of the [Web Standards Project](http://webstandards.org), Aaron Gustafson is passionate about web standards and accessibility. He has been working on the Web for two decades now and is a web standards advocate at [Microsoft](http://www.microsoft.com/), working closely with their browser team. He penned the seminal book on progressive enhancement, [*Adaptive Web Design*](http://adaptivewebdesign.com), and writes about whatever’s on his mind at [aaron-gustafson.com](http://www.aaron-gustafson.com/).
 {% endcapture %}
 
 {% capture full %}
