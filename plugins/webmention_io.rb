@@ -79,11 +79,17 @@ module Jekyll
       api_uri = URI.parse(@api_endpoint + "?#{api_params}")
       # print api_uri
       # print "\r\n"
-      response = Net::HTTP.get(api_uri.host, api_uri.request_uri)
-      if response
-        # print response
-        JSON.parse(response)
-      else
+      begin
+        response = Net::HTTP.get(api_uri.host, api_uri.request_uri)
+        if response
+          # print response
+          JSON.parse(response)
+        else
+          ""
+        end
+      rescue Timeout::Error => exc
+        ""
+      rescue Errno::ETIMEDOUT => exc
         ""
       end
     end
