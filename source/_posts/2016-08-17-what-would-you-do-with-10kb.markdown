@@ -5,12 +5,14 @@ date: 2016-08-17 14:48:27 -0400
 comments: true
 categories: ["web design", accessibility, Microsoft, performance, "progressive enhancement"]
 description: "I’m thrilled to announce that the 10k Apart contest is back and brings with it a handful of new challenges."
-canonical: https://blogs.windows.com/msedgedev/2016/08/15/10k-apart/
+canonical: "https://blogs.windows.com/msedgedev/2016/08/15/10k-apart/"
 ---
 
 Sixteen years ago, [Stewart Butterfield](https://twitter.com/stewart) conceived of a contest that would test the mettle of any web designer: [The 5k](http://web.archive.org/web/20000510010054/http:/www.sylloge.com/5k/home.html). The idea was that entrants would build [an entire site in 5kB of code or less](http://alistapart.com/article/5k). Its aim was to force us to get creative by putting a bounding box on what we could do:
 
 > Between servers and bandwidth, clients and users, HTML and the DOM, browsers and platforms, our conscience and our ego, we’re left in a very small space to find highly optimal solutions. Since the space we have to explore is so small, we have to look harder, get more creative; and that’s what makes it all interesting.
+
+<!-- more -->
 
 The 5k contest ran from 2000 until 2002. In 2010, [An Event Apart and Microsoft revived the idea](http://www.zeldman.com/2010/07/29/10k-apart-%E2%80%93%C2%A0inspire-the-web/) with an updated limit and a new name: [10k Apart](http://web.archive.org/web/20100730090946/http:/10k.aneventapart.com/). Staying true to its roots, this new incarnation, which ran for two years, continued to push designers and developers to get creative within a pretty extreme (though slightly expanded) limit while incorporating new goodies like HTML5 and responsive design.
 
