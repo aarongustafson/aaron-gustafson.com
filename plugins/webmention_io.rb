@@ -76,18 +76,20 @@ module Jekyll
     end
 
     def get_response(api_params)
+      api_uri = URI.parse(@api_endpoint + "?#{api_params}")
+      # print api_uri
+      # print "\r\n"
       begin
-        request = Net::HTTP::Get.new(@api_endpoint + "?#{api_params}")
-        response = http.request(request)
+        response =  Net::HTTP.get_response(api_uri)
         if response
           # print response
           JSON.parse(response)
         else
-          return ""
+          ""
         end
       rescue SocketError, Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, Errno::ECONNREFUSED, EOFError, Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError => e
         warn "Got an error checking #{original_uri}: #{e}"
-      	return ""
+      	""
       end
     end
     
