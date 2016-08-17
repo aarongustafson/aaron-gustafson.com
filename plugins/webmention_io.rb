@@ -76,21 +76,12 @@ module Jekyll
     end
 
     def get_response(api_params)
-      api_uri = URI.parse(@api_endpoint + "?#{api_params}")
-      http = Net::HTTP.new(api_uri.host, api_uri.port)
-      begin
-        puts api_uri.request_uri
-        request = Net::HTTP::Get.new(api_uri.request_uri)
-        response = http.request(request)
-        if response
-          # print response
-          JSON.parse(response)
-        else
-          ""
-        end
-      rescue SocketError, Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, Errno::ECONNREFUSED, EOFError, Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError => e
-        warn "Got an error checking #{api_uri.request_uri}: #{e}"
-        return ""
+      source = get_uri_source(@api_endpoint + "?#{api_params}")
+      if source
+        # print response
+        JSON.parse(source)
+      else
+        ""
       end
     end
     
@@ -121,12 +112,15 @@ module Jekyll
     end
     
     def is_working_uri(uri, redirect_limit = 10, original_uri = false)
-      # puts "checking URI #{uri}"
+      puts "checking URI #{uri}"
       original_uri = original_uri || uri
       if redirect_limit > 0
         uri = URI.parse(URI.encode(uri))
+        http = Net::HTTP.new(uri.host, uri.port)
+        http.read_timeout = 10
         begin 
-          response = Net::HTTP.get_response(uri)
+          request = Net::HTTP::Get.new(uri.request_uri)
+          response = http.request(request)
           case response
             when Net::HTTPSuccess then
               return true
@@ -142,6 +136,8 @@ module Jekyll
         rescue SocketError, Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, Errno::ECONNREFUSED, EOFError, Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError => e
           warn "Got an error checking #{original_uri}: #{e}"
           return false
+        rescue Exception => e
+          warn "Got an error: #{e}"
         end
       else
         if original_uri
@@ -152,7 +148,7 @@ module Jekyll
     end
     
     def get_uri_source(uri, redirect_limit = 10, original_uri = false)
-      # puts "Getting the source of #{uri}"
+      #puts "Getting the source of #{uri}"
       original_uri = original_uri || uri
       if redirect_limit > 0
         uri = URI.parse(URI.encode(uri))
