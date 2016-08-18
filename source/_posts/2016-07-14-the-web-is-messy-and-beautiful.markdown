@@ -9,7 +9,7 @@ description: "As with everything, the decision to go Web or native often depends
 
 In two back-to-back, potentially <abbr aria-label="Not Safe for Work">NSFW</abbr> posts discussing web development vs. native development, [Eran Hammer](https://hueniverse.com) covered a lot of the pain points encountered in each. For instance, on the Web, you’ve got rendering and user interface inconsistencies between browsers. On the other hand, retention for native apps is notoriously crappy.
 
-<-- more -->
+<!-- more -->
 
 Toward the end of his second piece, Eran nailed my long-time contention in this quasi-fictional war between the Web and native:
 
