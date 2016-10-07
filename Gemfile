@@ -20,6 +20,7 @@ group :development do
   gem 'kramdown'
   gem 'jekyll-crosspost-to-medium'
   gem 'html-proofer'
+  gem 'fastimage'
 end
 
 gem 'sinatra', '~> 1.4.2'

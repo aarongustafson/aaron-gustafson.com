@@ -7,7 +7,7 @@ categories: ["web design",publications]
 description: "On April 2nd, Web Standards Sherpa, a publication I helped found, will close its doors."
 ---
 
-<figure id="fig-2015-03-09-02" class="media-container media-container--right"><img src="http://cdn.webstandardssherpa.com/c/i/logo.png" alt="The Web Standards Sherpa logo, by Dan Cederholm"></figure>
+<figure id="fig-2015-03-09-02" class="media-container media-container--right"><img src="http://webstandardssherpa.com/c/i/logo.png" alt="The Web Standards Sherpa logo, by Dan Cederholm"></figure>
 
 It is with a heavy heart that I announce that we are closing [*Web Standards Sherpa*](http://webstandardssherpa.com/). As of April 2, we will be archiving the site in order to keep the valuable insights and techniques shared by our authors available in perpetuity.
 

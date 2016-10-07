@@ -17,7 +17,6 @@
 <meta property="og:description" content="{{ description | strip_html | condense_spaces | truncate:200 }}">
 <meta name="description" content="{{ description | strip_html | condense_spaces | truncate:200 }}">
 
-<!-- Twitter -->
 <meta name="twitter:card" value="summary"/>
 <meta name="twitter:site" value="@AaronGustafson"/>
 
@@ -36,8 +35,8 @@
 <link href="https://plus.google.com/+AaronGustafson?rel=author" rel="publisher">
 <meta property="fb:admins" content="100002880350996">
 
-<link rel="pingback" href="http://webmention.io/aaron-gustafson.com/xmlrpc" />
-<link rel="webmention" href="http://webmention.io/aaron-gustafson.com/webmention" />
+<link rel="pingback" href="https://webmention.io/aaron-gustafson.com/xmlrpc" />
+<link rel="webmention" href="https://webmention.io/aaron-gustafson.com/webmention" />
 
 {% if page.canonical %}
 	<link rel="canonical" href="{{ page.canonical }}">
@@ -45,4 +44,8 @@
 
 {% if page.redirect_from %}
 	<meta property="webmention:redirected_from" content="{{ page.redirect_from | join: ',' }}">
+{% endif %}
+
+{% if page.url contains 'notebook' %}
+  <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">
 {% endif %}

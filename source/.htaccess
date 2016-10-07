@@ -1,3 +1,8 @@
+# Force www:
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^aaron-gustafson.com [NC]
+RewriteRule ^(.*)$ https://www.aaron-gustafson.com/$1 [L,R=301,NC]
+
 # GZip
 AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
 BrowserMatch ^Mozilla/4 gzip-only-text/html
@@ -51,3 +56,8 @@ Header set Content-Encoding "gzip"
 
 # Fonts
 AddType application/vnd.ms-fontobject eot
+
+# Lockdown
+Header set Content-Security-Policy "default-src * ; script-src * 'unsafe-inline' ; style-src * 'unsafe-inline' ; upgrade-insecure-requests; block-all-mixed-content; disown-opener; reflected-xss block;"
+Header always set X-Xss-Protection "1; mode=block"
+Header set Public-Key-Pins "pin-sha256='1AD97Iz6xlmMrlaim5bZoIhwUr2WAowsI+msDc0op2k='; pin-sha256='4SflGm7MUpml4PWSclDw7OGMJdRk+YcIfi6qJ2iG6zE='; pin-sha256='BFhqRqgHU+b7VQLsM1kZwBu6VVKnLx7QiO2PCLfG1m4='; max-age=10"

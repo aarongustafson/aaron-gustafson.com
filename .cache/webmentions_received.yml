@@ -5013,6 +5013,8 @@ https://www.aaron-gustafson.com/notebook/how-to-apply-progressive-enhancement-wh
       Practices for Progressive Enhancement in Web Design - 1touchindia</a></div><div
       class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-07-10T09:15:28-04:00">10
       July 2016</time></div></article></li>
+  '1473150794': {}
+  '1473323096': {}
 http://www.aaron-gustafson.com/notebook/honoringwebfolk/:
   '1428634359':
     '586361118324568065': <li id="webmention-586361118324568065" class="webmentions__item"><article
@@ -6233,6 +6235,43 @@ https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-page
       is Link Day! Still Breathing - online home of Chris Taylor - web developer,
       musician, geek</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2015-11-14T19:58:25-05:00">14 November 2015</time></div></article></li>
+  '1473679182': {}
+  '1473680975':
+    377605: <li id="webmention-377605" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://webdesign.jitheshpr.com/content-security-policy-your-future-best-friend/">Content
+      Security Policy, Your Future Best Friend - Webdesign Journal</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2016-09-12T07:49:35-04:00">12
+      September 2016</time></div></article></li>
+  '1473688295':
+    377652: <li id="webmention-377652" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://americanfido.com/content-security-policy-your-future-best-friend/">Content
+      Security Policy, Your Future Best Friend - American Fido</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2016-09-12T09:51:35-04:00">12
+      September 2016</time></div></article></li>
+  '1473706182':
+    377751: <li id="webmention-377751" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://digitalmofo.com/content-security-policy-your-future-best-friend/">DigitalMofo</a></div><div
+      class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-09-12T14:49:42-04:00">12
+      September 2016</time></div></article></li>
+  '1473715607':
+    377793: <li id="webmention-377793" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://www.webhostingreviewsbynerds.com/content-security-policy-your-future-best-friend/">Content
+      Security Policy, Your Future Best Friend</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2016-09-12T17:26:47-04:00">12
+      September 2016</time></div></article></li>
+  '1473717645':
+    377804: <li id="webmention-377804" class="webmentions__item"><article class="h-cite
+      webmention webmention--title-only"><div class="webmention__author p-author h-card"><a
+      class="u-url" href="http://www.wordpressstyles.com/author/john-anderson/"><b
+      class="p-name">John Anderson</b></a></div> <div class="webmention__title p-name"><a
+      href="http://www.wordpressstyles.com/2016/09/12/content-security-policy-your-future-best-friend/">Content
+      Security Policy, Your Future Best Friend | WordPress development services and
+      website design</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-09-12T18:00:45-04:00">12 September 2016</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/moved-to-https/:
   '1441373732':
     '639621224008687616': <li id="webmention-639621224008687616" class="webmentions__item"><article
@@ -8937,3 +8976,42 @@ http://webmention.io/api/mentions:
     766072429009571840: |-
       <li id="webmention-766072429009571840" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/744914872144637952/ApXPNaZi_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@aaronpk <a href="https://t.co/NU8LoD3bP6">https://t.co/NU8LoD3bP6</a> - First entry fails</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-08-17T20:41:14-04:00">17 August 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/766072429009571840">Permalink</a></div></article></li>
+https://www.aaron-gustafson.com/notebook/interface-experience-maps/:
+  '1472577400':
+    372097: '<li id="webmention-372097" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://news.publicel.net/2016/08/30/building-in-10k-content-and-strategy/">Building
+      in 10k: Content and Strategy</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-08-30T13:16:40-04:00">30 August 2016</time></div></article></li>'
+  '1472579829':
+    372131: '<li id="webmention-372131" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://cooltech4fun.com/blog/2016/08/30/building-in-10k-content-and-strategy/">Building
+      in 10k: Content and Strategy</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-08-30T13:57:09-04:00">30 August 2016</time></div></article></li>'
+  '1472605961':
+    372150: '<li id="webmention-372150" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://www.x-vision.co.at/building-in-10k-content-and-strategy/">Building
+      in 10k: Content and Strategy</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-08-30T21:12:41-04:00">30 August 2016</time></div></article></li>'
+  '1472635791':
+    372317: '<li id="webmention-372317" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://www.gmycinstudio.com/building-in-10k-content-and-strategy/">Building
+      in 10k: Content and Strategy</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-08-31T05:29:51-04:00">31 August 2016</time></div></article></li>'
+  '1472647241':
+    372359: '<li id="webmention-372359" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://windowsadmins.com/building-in-10k-content-and-strategy/">Building
+      in 10k: Content and Strategy | Windows Admins</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2016-08-31T08:40:41-04:00">31
+      August 2016</time></div></article></li>'
+  '1472659527':
+    372406: '<li id="webmention-372406" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-author webmention--title-only"> <div class="webmention__title
+      p-name"><a href="http://readings.space/2016/08/30/building-in-10k-content-and-strategy/">Building
+      in 10k: Content and Strategy &#8211; An IT Guy</a></div><div class="webmention__meta"><time
+      class="webmention__pubdate dt-published" datetime="2016-08-31T12:05:27-04:00">31
+      August 2016</time></div></article></li>'

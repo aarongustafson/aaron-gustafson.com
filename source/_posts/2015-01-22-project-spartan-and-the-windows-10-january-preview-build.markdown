@@ -13,5 +13,5 @@ ref_source: IEBlog
 Because a picture is worth a thousand words:
 
 <figure id="2015-01-22-1" class="media-container">
-	<img src="http://blogs.msdn.com/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-38-71-metablogapi/3644.psatwjpb_2D00_image3.gif" alt="Dual rendering engine architecture animation">
+	<img src="https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Blogs.Components.WeblogFiles/00/00/00/38/71/metablogapi/1541.project-spartan-diagram.gif" alt="Dual rendering engine architecture animation">
 </figure>
