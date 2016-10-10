@@ -316,6 +316,19 @@ https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/:
       <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/745288856367407104#favorited-by-132282117">Michael
       Spellacy favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2016-06-29T01:28:03-04:00">29 June 2016</time></div></article></li>
+  '2016-10-07':
+    784543864929546240: |-
+      <li id="webmention-784543864929546240" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/744914872144637952/ApXPNaZi_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@MacYET @LocalSourceNL @assassinacc <a href="https://t.co/sChLuQ3IAR">https://t.co/sChLuQ3IAR</a></p>
+
+      <p>See also <a href="https://t.co/p4CqAnxIdc">https://t.co/p4CqAnxIdc</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-07T20:00:08-04:00">7 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/784543864929546240">Permalink</a></div></article></li>
+  '1475887212':
+    384630: <li id="webmention-384630" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/assassinacc"><b
+      class="p-name">aq</b></a></div> <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/784543864929546240#favorited-by-619613683">aq
+      favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-10-07T20:40:12-04:00">7 October 2016</time></div></article></li>
 http://aaron-gustafson.com/notebook/2014/missed-connections/:
   '1416670812':
     12049: <li id="webmention-12049" class="webmentions__item"><article class="h-cite
@@ -6272,6 +6285,10 @@ https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-page
       Security Policy, Your Future Best Friend | WordPress development services and
       website design</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2016-09-12T18:00:45-04:00">12 September 2016</time></div></article></li>
+  '2016-10-07':
+    784486468458782720: |-
+      <li id="webmention-784486468458782720" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/xNicaxChaka"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/2170776252/photo_normal.jpg" alt="" title="chaka"><b class="p-name">chaka</b></a></div><div class="webmention__content p-content"><p>Sabias que tu sitio web puede swr alterado ? <a href="https://t.co/ndLGuz3LPM">https://t.co/ndLGuz3LPM</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-07T16:12:03-04:00">7 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/xNicaxChaka/status/784486468458782720">Permalink</a></div></article></li>
 https://www.aaron-gustafson.com/notebook/moved-to-https/:
   '1441373732':
     '639621224008687616': <li id="webmention-639621224008687616" class="webmentions__item"><article
@@ -8763,6 +8780,16 @@ https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/:
     781144577596071936: |-
       <li id="webmention-781144577596071936" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/kskeene"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/683285948428333056/6hf1vZox_normal.jpg" alt="" title="kendra skeene"><b class="p-name">kendra skeene</b></a></div><div class="webmention__content p-content"><p>@AaronGustafson @Artifacture TL;DR, this article is brilliant and I love it. That’s all that matters. <a href="https://t.co/81yKMrvVeJ">https://t.co/81yKMrvVeJ</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-09-28T10:52:34-04:00">28 September 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/kskeene/status/781144577596071936">Permalink</a></div></article></li>
+  '2016-10-09':
+    785299844227276800: |-
+      <li id="webmention-785299844227276800" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/RoseMusachio"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/730161729640898560/u_SLj74P_normal.jpg" alt="" title="Rosemary Musachio"><b class="p-name">Rosemary Musachio</b></a></div><div class="webmention__content p-content"><p>The Web Should Just Work for Everyone <a href="https://t.co/h9OE01UZhh">https://t.co/h9OE01UZhh</a> #a11y</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-09T22:04:07-04:00">9 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/RoseMusachio/status/785299844227276800">Permalink</a></div></article></li>
+    785191352535552000: |-
+      <li id="webmention-785191352535552000" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/sararuh"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/653450636566990848/tv3772pH_normal.jpg" alt="" title="Sara Ruh"><b class="p-name">Sara Ruh</b></a></div><div class="webmention__content p-content"><p>The Web Should Just Work for Everyone <a href="https://t.co/h0yP9Rto38">https://t.co/h0yP9Rto38</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-09T14:53:01-04:00">9 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/sararuh/status/785191352535552000">Permalink</a></div></article></li>
+    785145044898615296: |-
+      <li id="webmention-785145044898615296" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/sararuh"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/653450636566990848/tv3772pH_normal.jpg" alt="" title="Sara Ruh"><b class="p-name">Sara Ruh</b></a></div><div class="webmention__content p-content"><p>The Web Should Just Work for Everyone <a href="https://t.co/2XZgZkQWHu">https://t.co/2XZgZkQWHu</a> #a11y</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-09T11:49:00-04:00">9 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/sararuh/status/785145044898615296">Permalink</a></div></article></li>
 https://www.aaron-gustafson.com/:
   '2016-05-06':
     728658688240713728: |-
