@@ -46,6 +46,6 @@
 	<meta property="webmention:redirected_from" content="{{ page.redirect_from | join: ',' }}">
 {% endif %}
 
-{% if page.url contains 'notebook' %}
+{% if page.url contains /notebook\/(?!pg-|links).+/ or page.url contains /notebook\/links\/.+/ %}
   <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">
 {% endif %}
