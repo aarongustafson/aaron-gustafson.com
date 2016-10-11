@@ -1477,8 +1477,8 @@ html.wf-active div.gist a {
   border-radius: 6px;
   border-radius: 0.375rem;
   display: inline-block;
-  margin-top: 11px;
-  margin-top: 0.6875rem;
+  margin: 11px 0;
+  margin: 0.6875rem 0;
   padding: 4px 8px;
 }
 .share-link:link, .share-link:visited, .share-link:hover, .share-link:focus, .share-link:active {

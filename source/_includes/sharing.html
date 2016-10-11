@@ -4,7 +4,7 @@
 {% capture page_url %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
 
 <title>{{ title }}</title>
-<meta property="og:title" content="{{ og_title }}">
+<meta property="og:title" content="{{ og_title | titlecase | smartypants }}">
 
 <meta property="og:url" content="{% if page.ref_source %}{{ page_url | replace:"notebook/","notebook/links/" }}{% else %}{{ page_url }}{% endif %}">
 
@@ -14,8 +14,8 @@
 <meta property="og:image" content="{{ site.url }}{{ site.og.image }}">
 <meta property="og:locale" content="en_US">
 
-<meta property="og:description" content="{{ description | strip_html | condense_spaces | truncate:200 }}">
-<meta name="description" content="{{ description | strip_html | condense_spaces | truncate:200 }}">
+<meta property="og:description" content="{{ description | strip_html | smartypants | condense_spaces | truncate:200 }}">
+<meta name="description" content="{{ description | strip_html | smartypants | condense_spaces | truncate:200 }}">
 
 <meta name="twitter:card" value="summary"/>
 <meta name="twitter:site" value="@AaronGustafson"/>
@@ -46,6 +46,10 @@
 	<meta property="webmention:redirected_from" content="{{ page.redirect_from | join: ',' }}">
 {% endif %}
 
-{% if page.url contains /notebook\/(?!pg-|links).+/ or page.url contains /notebook\/links\/.+/ %}
-  <link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">
+{% if page.url contains "notebook" %}
+	{% if page.ref_source %}
+		<link rel="amphtml" href="{{ page.id | replace:'notebook/','notebook/links/' | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">
+	{% else %}
+		<link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">
+	{% endif %}
 {% endif %}

@@ -6,15 +6,57 @@
     <link rel="canonical" href="{{ page.canonical_url | prepend: site.baseurl | prepend: site.url }}" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <style amp-custom>
-      body { padding: .5em; }
+      html {
+        font-size: calc( 1em + .5vw );
+        max-width: 70ch;
+        margin: 0 auto;
+      }
+      body {
+        padding: .5em;
+      }
+      h1, h2, h3, h4, h5, h6, .post-meta {
+        font-family: sans-serif;
+      }
+      .post-meta, .post-footer {
+        color: #999; 
+      }
+      li {
+        margin-bottom: .5em;
+      }
+      blockquote {
+        font-style: italic;
+      }
+      .promo--image {
+        position: relative;
+        background: #ebebeb;
+        padding: 1px 1em 1px 122px;
+      }
+      .promo__image {
+        max-width: 100px;
+        position: absolute;
+        margin-top: -.7em;
+        transform: rotate(-10deg);
+        left: 0;
+        top: 0;
+      }
+      .post-footer {
+        font-size: calc( .5em + .5vw );
+        font-style: italic;
+        text-align: center;
+      }
+      hr {
+        border: 1px solid #ccc;
+      }
     </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
   </head>
   <body>
     <h1 class="post-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
-    <p class="post-meta">{{ page.date }} - <a href="https://www.aaron-gustafson.com/about/">{{ site.author }}</p>
+    <p class="post-meta">by <a href="https://www.aaron-gustafson.com/about/">{{ site.author }} on {{ page.date_text }}</p>
     {{ page.body | markdownify | amp_images }}
+    <hr>
+    {% include post/promo.html %}
     <hr>
     <p class="post-footer">The content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a>.</p>
   </body>

@@ -1,6 +1,6 @@
 'use strict';
 
-var version = 'v1464146218531:',
+var version = 'v1476209190760:',
 	default_avatar = 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&f=y',
 	missing_image = 'https://i.imgur.com/oWLuFAa.gif';
 self.addEventListener( 'activate', function( event ){
@@ -39,13 +39,17 @@ self.addEventListener( 'fetch', function( event ){
             'mp3',
             'mp4',
             'ogv',
-            'webm'
+            'webm',
+            'chrome-extension'
         ],
         // only grab these once (they’re unlikely to need refreshing)
         fetch_once = [
             'https://pbs.twimg.com',
             'https://webmention.io/avatar/',
-            'https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy'
+            'https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy',
+            'https://disqus.com',
+            'https://a.disquscdn.com',
+            'https://referrer.disqus.com',
         ];
 
     if ( request.method !== 'GET' || urlShouldBeIgnored() )

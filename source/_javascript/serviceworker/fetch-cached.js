@@ -12,13 +12,17 @@ self.addEventListener( 'fetch', function( event ){
             'mp3',
             'mp4',
             'ogv',
-            'webm'
+            'webm',
+            'chrome-extension'
         ],
         // only grab these once (they’re unlikely to need refreshing)
         fetch_once = [
             'https://pbs.twimg.com',
             'https://webmention.io/avatar/',
-            'https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy'
+            'https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy',
+            'https://disqus.com',
+            'https://a.disquscdn.com',
+            'https://referrer.disqus.com',
         ];
 
     if ( request.method !== 'GET' || urlShouldBeIgnored() )

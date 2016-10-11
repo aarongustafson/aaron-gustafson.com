@@ -38,7 +38,7 @@ $social-buttons: (
 		@include rem( border-radius, 6 );
 
 		display: inline-block;
-		@include rem( margin-top, $default-spacing / 2 );
+		@include rem( margin, ($default-spacing/2) .25em 0 );
         padding: 4px 8px;
 
 		&:link,

@@ -4,7 +4,7 @@ module Jekyll
     def initialize(site, base, dir, post)
       @site = site
       @base = base
-      @dir = dir
+      @dir = post.data.has_key?('ref_url') ? dir.sub( "notebook/", "notebook/links/" ) : dir
       @name = 'index.html'
       self.process(@name)
       self.read_yaml(File.join(base, '_layouts'), 'amp.html')

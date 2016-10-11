@@ -21,6 +21,7 @@ group :development do
   gem 'jekyll-crosspost-to-medium'
   gem 'html-proofer'
   gem 'fastimage'
+  gem 'jekyll-typogrify'
 end
 
 gem 'sinatra', '~> 1.4.2'

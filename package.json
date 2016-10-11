@@ -1,4 +1,9 @@
 {
+  "name": "aaron-gustafson.com",
+  "version": "1.0.0",
+  "description": "Aaron Gustafson’s Website",
+  "repository": "https://github.com/aarongustafson/aarongustafson.github.io",
+  "private": true,
   "devDependencies": {
     "gulp": "~3.9.0",
     "gulp-autoprefixer": "0.0.7",
@@ -11,6 +16,7 @@
     "gulp-folders": "^1.0.0",
     "gulp-if": "^2.0.0",
     "gulp-ignore": "^2.0.1",
+    "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "~0.6.1",
     "gulp-insert": "^0.5.0",
     "gulp-jshint": "~1.6.3",
