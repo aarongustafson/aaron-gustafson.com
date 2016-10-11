@@ -8,13 +8,13 @@ gulp.task('images', function() {
 	var destination = './_deploy/i';
 
 	gulp.src('./source/i/**/*.{jpg,png,svg,gif}')
-		.pipe(changed(deploy_folder)) // Ignore unchanged files
+		.pipe(changed(destination)) // Ignore unchanged files
 		.pipe(imagemin()) // Optimize
 		// Publish
 		.pipe(gulp.dest(destination));
 
 	gulp.src('./source/i/**/*.{jpg,png}')
-		.pipe(changed(deploy_folder)) // Ignore unchanged files
+		.pipe(changed(destination)) // Ignore unchanged files
 		.pipe(webp())
 		// Publish
 		.pipe(gulp.dest(destination));
