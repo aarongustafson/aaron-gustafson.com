@@ -7,7 +7,7 @@ categories: [personal,culture,equality,empathy,"the future"]
 description: "My son Oscar is black and I fear for his future in Trump’s America."
 ---
 
-<figure id="2016-10-11-1" class="media-container">{% adaptive_image /i/posts/2011-10-11/oscar.jpg %}</figure>
+<figure id="2016-10-11-1" class="media-container">{% adaptive_image /i/posts/2016-10-11/oscar.jpg %}</figure>
 
 [This is my son Oscar](#2016-10-11-1). In case you can’t see the picture, he looks nothing like me because he’s adopted. He’s also friggin’ adorable, but that’s not why I’m writing this. I’m writing this because my son is black and despite the fact that he will grow up in a family that has the means to provide him with a good education and far more opportunity than a lot of children in America—including me—the sheer fact that his skin is dark means he will grow up in a far different America than I did.
 
