@@ -1,8 +1,50 @@
+- title: "Building in 10k: Compilation, Optimization, and Compression"
+  publisher: Microsoft Edge Dev Blog
+  published: 2016-09-23 00:00:00 +0000
+  url: https://blogs.windows.com/msedgedev/2016/09/23/10k-compilation-optimization-compression
+  notes: "A behind-the-scenes look at how we compressed & optmized the crap out of the 2016 10k Apart website."
+
+- title: "Building in 10k: Svelte JavaScript Enhancements"
+  publisher: Microsoft Edge Dev Blog
+  published: 2016-09-20 00:00:00 +0000
+  url: https://blogs.windows.com/msedgedev/2016/09/20/10k-svelte-javascript-enhancements/
+  notes: "A behind-the-scenes look at how I used JavaScript in building the 2016 10k Apart website."
+
+- title: "Building in 10k: CSS Structure and Sandboxing"
+  publisher: Microsoft Edge Dev Blog
+  published: 2016-09-08 00:00:00 +0000
+  url: https://blogs.windows.com/msedgedev/2016/09/08/10k-css-structure-and-sandboxing/
+  notes: "A behind-the-scenes look at my CSS strategy for building the 2016 10k Apart website."
+
+- title: "Building in 10k: Designing for Optimization and Performance"
+  publisher: Microsoft Edge Dev Blog
+  published: 2016-09-06 00:00:00 +0000
+  url: https://blogs.windows.com/msedgedev/2016/09/06/10k-for-optimization-performance/
+  notes: "A behind-the-scenes look at the design decisions we made for the 2016 10k Apart website."
+
+- title: "Building in 10k: Markup for Accessibility, Clarity, and Affordance"
+  publisher: Microsoft Edge Dev Blog
+  published: 2016-09-02 00:00:00 +0000
+  url: https://blogs.windows.com/msedgedev/2016/09/02/building-in-10k-markup-for-accessibility-clarity-and-affordance/
+  notes: "A behind-the-scenes look at the markup decisions I made in building the 2016 10k Apart website."
+
+- title: "Building in 10k: Content and Strategy"
+  publisher: Microsoft Edge Dev Blog
+  published: 2016-08-30 00:00:00 +0000
+  url: https://blogs.windows.com/msedgedev/2016/08/30/building-in-10k-content-and-strategy/
+  notes: "A behind-the-scenes look at the strategy and copywriting behind the 2016 10k Apart website."
+
+- title: "Developing Dependency Awareness"
+  publisher: Smashing Magazine
+  published: 2016-05-23 00:00:00 +0000
+  url: https://www.smashingmagazine.com/2016/05/developing-dependency-awareness/
+  notes: "As web designers & developers, we take a lot for granted and it can get us into trouble."
+
 - title: "Interaction is an Enhancement"
   publisher: A List Apart
   published: 2015-12-15 00:00:00 +0000
   url: http://alistapart.com/article/interaction-is-an-enhancement
-  notes: "This is an excerpt from Chapter 5 of <cite>Adaptive Web Design, Second Edition</cite>"
+  notes: "This is an excerpt from Chapter 5 of <cite>Adaptive Web Design, Second Edition</cite>."
 
 - title: "Establishing Web Standards"
   publisher: Net Magazine

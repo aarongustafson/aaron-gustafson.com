@@ -5,6 +5,7 @@ date: 2016-10-11 08:06:49 -0400
 comments: true
 categories: [personal,culture,equality,empathy,"the future"]
 description: "My son Oscar is black and I fear for his future in Trump’s America."
+crosspost_to_medium: true
 ---
 
 <figure id="2016-10-11-1" class="media-container">{% adaptive_image /i/posts/2016-10-11/oscar.jpg %}</figure>

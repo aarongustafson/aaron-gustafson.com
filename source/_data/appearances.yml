@@ -22,6 +22,12 @@
   url: http://ctrlclickcast.com/episodes/progressive-enhancement-revisited
   description: "My rather lengthy chat with Emily Lewis & Lea Alcantara on progressive enhancement and all things web design."
 
+- title: "Software developers keep outdated tech relevant thanks to Chattanooga's Open Device Lab"
+  outlet: Chattanooga Times Free Press
+  date: 2016-04-22 00:00:00 +0000
+  url: http://www.timesfreepress.com/news/life/entertainment/story/2016/apr/22/chattanoogas-open-device-lab-helps-software-d/361237/
+  description: "A bit about the CHA Open Device Lab which Kelly & I co-founded."
+
 - title: "An Interview with Aaron Gustafson on Crafting Rich Experiences with Progressive Enhancement"
   outlet: Peachpit
   date: 2016-01-28 00:00:00 +0000
@@ -63,6 +69,12 @@
   date: 2015-03-20 00:00:00 +0000
   url: http://5by5.tv/bigwebshow/130 
   description: "Jeffrey Zeldman and I discuss web design then and now; why Flipboard's 60fps web launch is anti-web and anti-user; Genesis's “Land of Confusion” video, and other bad ideas from the 1980s; design versus art; the demise and sendoff of Web Standards Sherpa; how the web community differs from other creative communities; and the 2nd Edition of my book, coming from New Riders this year."
+
+- title: "Microsoft Hires Two Open Standards Warriors (And Ex-Foes) For Its Developer Evangelism Unit"
+  outlet: CRN
+  date: 2015-01-30 00:00:00 +0000
+  url: http://www.crn.com/news/applications-os/300075586/microsoft-hires-two-open-standards-warriors-and-ex-foes-for-its-developer-evangelism-unit.htm 
+  description: "It’s strange to have a new job make the news."
 
 - title: "Aaron Gustafson &amp; Jenn Lukas – Cross-device Adaptive Design"
   outlet: UIE Brainsparks Podcast
@@ -184,6 +196,12 @@
   date: 2012-02-02 00:00:00 +0000
   url: http://www.creativebloq.com/netmag/webkit-scuppers-skip-content-links-2126494
   description: "I weigh in on Webkit’s issue with moving focus to targeted elements. Thankfully, the issue has been resolved now."
+
+- title: "How to find the Right Web Services People"
+  outlet: Small Business Roundtable
+  date: 2012-02-02 00:00:00 +0000
+  url: http://www.blogtalkradio.com/sbr/2012/02/02/how-to-find-the-right-web-services-people
+  description: "I joined the Small Business Roundtable to talk about hiring a web design firm."
 
 - title: "15 Top Web Design and Development Trends For 2012"
   outlet: Creative Bloq
