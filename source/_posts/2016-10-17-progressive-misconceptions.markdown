@@ -3,6 +3,7 @@ layout: post
 title: "Progressive Misconceptions"
 twitter_text: "My colleague Nolan recently wrote of his struggle with progressive enhancement. It’s a rift we need to repair."
 date: 2016-10-17 15:33:55 -0400
+updated: 2016-10-18 11:11:00 -0400
 comments: true
 categories: ["progressive enhancement","web design",accessibility,JavaScript]
 description: "My colleague Nolan recently wrote of his struggle with progressive enhancement. It’s a rift we need to repair."
