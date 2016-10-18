@@ -6,6 +6,7 @@ date: 2016-10-17 15:33:55 -0400
 comments: true
 categories: ["progressive enhancement","web design",accessibility,JavaScript]
 description: "My colleague Nolan recently wrote of his struggle with progressive enhancement. It’s a rift we need to repair."
+crosspost_to_medium: true
 ---
 
 Last week, my colleague[^1] [Nolan Lawson](https://nolanlawson.com/) wrote [a lengthy post about his struggles with progressive enhancement](https://nolanlawson.com/2016/10/13/progressive-enhancement-isnt-dead-but-it-smells-funny/). In it, he identified a key tension between the JavaScript community and the progressive enhancement community that has, frankly, existed since the term “progressive enhancement” was coined some 13 years ago. I wanted to take a few minutes to tuck into that tension and assure Nolan and other folks within the JS community that neither progressive enhancement nor the folks who advocate it (like me) is at odds with them or their work.
@@ -16,15 +17,17 @@ But first let’s take a a trip back in time to 2003. In March of that year, [St
 
 ## What’s graceful degradation?
 
-*Graceful degradation* assumes that an experience is going to be worse on older, less capable browsers and devices. To address potential problems, it recommends that developers take steps to avoid throwing errors—JavaScript or otherwise—for their users. Under this philosophy, egregious errors may be addressed or a developer may chose to block certain browsers from accessing the content if they are known to have problems with it. We saw this often with Flash-only sites, but it wasn’t limited to them. I used <a href="#2016-10-17-1">this "roadblock" example from Kodak.com</a> in [my book](http://adaptivewebdesign.info/):
+*Graceful degradation* assumes that an experience is going to be worse on older, less capable browsers and devices. To address potential problems, it recommends that developers take steps to avoid throwing errors—JavaScript or otherwise—for their users. Under this philosophy, a developer can take a range of approaches ranging from making everything work perfectly in down-level browsers to only addressing egregious errors or even chosing to block certain browsers from accessing the content if they are known to have problems. We saw this latter approach often with Flash-only sites, but it wasn’t limited to them. I used <a href="#2016-10-17-1">this "roadblock" example from Kodak.com</a> in [my book](http://adaptivewebdesign.info/):
 
 <figure id="fig-2016-10-17-1" class="media-container">{% adaptive_image /i/posts/2016-10-17/kodak-roadblock.png %}</figure>
 
-Overall, graceful degradation is about risk avoidance. The problem was that it created a climate on the Web where we, as developers, were actively denying access to services (e.g., people’s bank accounts) because we deemed a particular browser (or browsers) too difficult to work with. Or, in many cases, we just didn’t have the time or budget (or both) to address the broadest number of browsers. It’s kind of hard to reconcile the challenge of cross-browser development in 2003 with what we are faced with today as we were only really dealing with 2-3 browsers back then, but you need to remember that standards support was far worse at the time.
+Overall, graceful degradation is about risk avoidance. The problem was that it created a climate on the Web where we, as developers, got comfortable with the idea of denying access to services (e.g., people’s bank accounts) because we deemed a particular browser (or browsers) too difficult to work with. Or, in many cases, we just didn’t have the time or budget (or both) to address the broadest number of browsers. It’s kind of hard to reconcile the challenge of cross-browser development in 2003 with what we are faced with today as we were only really dealing with 2-3 browsers back then, but you need to remember that standards support was far worse at the time.
 
 ## So what’s progressive enhancement?
 
 In his talk, Steve upended the generally shared perspective that older browsers deserved a worse experience because they were less technically capable. He asked us to look beyond the browsers and the technologies in play and focus on the user experience, challenging us to design inclusive experiences that would work in the broadest of scenarios. He asked that we focus on the content and core tasks in a given interface and then enhance the experience when we could. We accomplish this by layering experiences on top of one another, hence “progressive enhancement”.
+
+What’s particularly interesting about this approach is that it is still technically graceful degradation because all of the interfaces do gracefully fall back to a usable state. But it’s graceful degradation at its best, focused on delivering a good experience to everyone. No excuses.
 
 To give a simple example, consider a form field for entering your email address. If we were to mark it up like this
 
@@ -32,13 +35,16 @@ To give a simple example, consider a form field for entering your email address.
 
 I automatically create layers of experience with no extra effort:
 
-1. Browsers that don’t understand "email" as a valid `input` type will treat the "email" text as a typo in my HTML (like when you type "rdio" instead of "radio"… or maybe I’m the only one that does that). As a result, they will fall back to the default input type of "text", which is usable in every browser that supports HTML2 and up.
-2. Browsers that consider "email" a valid `input` type will provide one (or more) of many potential enhanced experiences:
-<ol type="a">
+<ol>
+  <li>Browsers that don’t understand "email" as a valid `input` type will treat the "email" text as a typo in my HTML (like when you type "rdio" instead of "radio"… or maybe I’m the only one that does that). As a result, they will fall back to the default input type of "text", which is usable in every browser that supports HTML2 and up.</li>
+  <li>Browsers that consider "email" a valid `input` type will provide one (or more) of many potential enhanced experiences:
+  <ol type="a">
   <li>In a virtual keyboard context, the browser may present a keyboard that is tailored toward quickly entering email addresses.</li>
   <li>In a browser that supports auto-completion, it may use this as a cue to suggest entering a commonly-entered email or one that has been stored in the user’s profile.</li>
   <li>In a browser that supports HTML5 validation, the browser may validate this field for proper email formatting when the user attempts to submit the form.</li>
-  <li>In a browser that does not support HTML5 validation (or that doesn’t actively block submission on validation errors [as Safari currently doesn't](https://bugs.webkit.org/show_bug.cgi?id=28649)), a developer-supplied JavaScript program may use the `type` attribute as a signal that it should validate the field for proper email address formatting.</li>
+  <li>In a browser that does not support HTML5 validation (or that doesn’t actively block submission on validation errors [like Safari](https://bugs.webkit.org/show_bug.cgi?id=28649)), a developer-supplied JavaScript program may use the `type` attribute as a signal that it should validate the field for proper email address formatting.</li>
+  </ol>
+  </li>
 </ol>
 
 That means that there are between 5 and 13 potential experiences (given all of the different possible combinations of these layers) in this one single single element… it’s kind of mind-boggling to think about, right? And the clincher here is that any of these experiences can be a good experience. Heck for nearly 15 years of the Web, the plain-ol’ text `input` was the only way we had for entering an email address. Anything better than that is gravy.
@@ -80,7 +86,7 @@ Some of these can be addressed by programming defensively using test-driven deve
 
 The devices themselves, we have no control over. It’s not like we can send a new device to each and every user (or prospective user) we have just to ensure they have the appropriate hardware and software requirements to use our product.[^2] Instead, we need to [write JavaScript programs that play well in a multitude of of scenarios (including resource-limited ones)](https://www.smashingmagazine.com/2012/11/writing-fast-memory-efficient-javascript/).
 
-And, of course, none of this addresses network availability. In many instances, a user’s network connection has the greatest impact on their experience of our products. If the connection is slow (or the page’s resources are exceptionally large) the page load experience can be excruciatingly painful. If the connection goes down and dependencies aren’t met, the experience can feel disjointed or may be flat out broken. Using [Service Worker](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) and client-side storage (`[indexedDB](https://developer.mozilla.org/docs/Web/API/IndexedDB_API)` and [Web Storage](https://developer.mozilla.org/docs/Web/API/Web_Storage_API)) can definitely help mitigate these issues for repeat visits, but they don’t do much to help with initial load. They also don’t work at all if your JavaScript program doesn’t run. Which brings me to my last point.
+And, of course, none of this addresses network availability. In many instances, a user’s network connection has the greatest impact on their experience of our products. If the connection is slow (or the page’s resources are exceptionally large) the page load experience can be excruciatingly painful. If the connection goes down and dependencies aren’t met, the experience can feel disjointed or may be flat out broken. Using [Service Worker](https://developer.mozilla.org/docs/Web/API/Service_Worker_API) and client-side storage ([`indexedDB`](https://developer.mozilla.org/docs/Web/API/IndexedDB_API) and [Web Storage](https://developer.mozilla.org/docs/Web/API/Web_Storage_API)) can definitely help mitigate these issues for repeat visits, but they don’t do much to help with initial load. They also don’t work at all if your JavaScript program doesn’t run. Which brings me to my last point.
 
 When you love a language like JavaScript (as I do), it can be difficult to recognize (or even admit) it’s shortcomings, but recognizing them is part of becoming a better programmer. The Web is constantly evolving and our understanding of the languages we use to build it expands as fast as—or often faster than—their capabilities do. As such, we need to remain open to new and different ways of doing things. Change can be scary, but it can also be good. Being asked to consider a non-JavaScript experience shouldn’t be seen as an affront to JavaScript, but rather a challenge to create more robust experiences. After all, our last line of defense in providing a good user experience is providing one with the least number of dependencies. That’s what progressive enhancements asks us to do.
 
@@ -95,6 +101,8 @@ JavaScript absolutely makes the user experience better for anyone who can benefi
 In order to come together, however, folks [need to stop demonizing and dismissing one another](https://www.baldurbjarnason.com/notes/debating-web-development/). Instead we need to rally together to make the Web better. But before we can do that, we need to start with a common understanding of the nature of JavaScript. The progressive enhancement camp needs to concede that all JavaScript is not evil, or even bad—JavaScript can be a force for good and it’s got really solid support. The JavaScript camp needs to concede that, despite its ubiquity and near universal support, we can never be absolutely guaranteed our JavaScript programs will run.
 
 I fully believe we can heal this rift, but it’s probably gonna take some time. I fully intend to do my part and I hope you will as well.
+
+<ins datetime="2016-10-18T11:11:00-04:00">**Update:** This post was updated to clarify that graceful degradation can take many forms and to explicitly tie progressive enhancement and graceful degradation together.</ins>
 
 [^1]: Full disclosure: We both work at Microsoft, but on different teams.
 
