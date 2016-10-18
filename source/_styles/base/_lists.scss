@@ -53,6 +53,11 @@
     ol,
     ul {
         margin-left: 0;
-    }
 
+        ol,
+        ul {
+            @include rem( margin-left, $default-spacing);
+        }
+        
+    }
 }

@@ -9188,6 +9188,12 @@ https://www.aaron-gustafson.com/notebook/progressive-misconceptions/:
     788200176913616896: |-
       <li id="webmention-788200176913616896" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/786000270144700416/hNgR_bZi_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>My colleague Nolan recently wrote of his struggle with progressive enhancement. It’s a rift we need to repair. <a href="https://t.co/QIRBI3eW2P">https://t.co/QIRBI3eW2P</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-18T02:09:00+00:00">18 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/788200176913616896">Permalink</a></div></article></li>
+    788403989536710656: |-
+      <li id="webmention-788403989536710656" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/pistenprinz"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/740619174611963904/IRoonMdF_normal.jpg" alt="" title="Christoph Reinartz"><b class="p-name">Christoph Reinartz</b></a></div><div class="webmention__content p-content"><p>Progressive misconceptions <a href="https://t.co/GYVSxIML6J">https://t.co/GYVSxIML6J</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-18T15:38:53+00:00">18 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/pistenprinz/status/788403989536710656">Permalink</a></div></article></li>
+    788402168445407232: |-
+      <li id="webmention-788402168445407232" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/codepo8"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1666904408/codepo8_normal.png" alt="" title="Chris Heilmann"><b class="p-name">Chris Heilmann</b></a></div><div class="webmention__content p-content"><p>Progressive Misconceptions <a href="https://t.co/EKjJVP88Um">https://t.co/EKjJVP88Um</a> my colleague @AaronGustafson trying to explain the problems with Progressive Enhancement</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-18T15:31:39+00:00">18 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/codepo8/status/788402168445407232">Permalink</a></div></article></li>
   '1476757726':
     387469: <li id="webmention-387469" class="webmentions__item"><article class="h-cite
       webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
@@ -9712,6 +9718,19 @@ https://www.aaron-gustafson.com/notebook/progressive-misconceptions/:
       href="https://twitter.com/AaronGustafson/status/788200176913616896#favorited-by-21003916">Neil
       Osman favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2016-10-18T14:44:34+00:00">18 October 2016</time></div></article></li>
+  '1476805154':
+    '788404077378109440': <li id="webmention-788404077378109440" class="webmentions__item"><article
+      class="h-cite webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://medium.com/@BradleyHolt"><b
+      class="p-name">Bradley Holt</b></a></div> <div class="webmention__title p-name"><a
+      href="https://twitter.com/BradleyHolt/status/788404077378109440">Bradley Holt
+      retweeted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-10-18T11:39:14-04:00">18 October 2016</time></div></article></li>
+  '1476804699':
+    '788402168445407232': |-
+      <li id="webmention-788402168445407232" class="webmentions__item"><article class="h-cite webmention webmention--no-photo webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://christianheilmann.com/2013/02/11/hello-it-is-me-on-twitter/"><b class="p-name">Chris Heilmann</b></a></div><div class="webmention__content p-content"><p>Progressive Misconceptions <a href="https://www.aaron-gustafson.com/notebook/progressive-misconceptions">aaron-gustafson.com/notebook/progr…</a> my colleague <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> trying to explain the problems with Progressive Enhancement
+      <a class="u-mention" href="https://www.aaron-gustafson.com/notebook/progressive-misconceptions/"></a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-18T11:31:39-04:00">18 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/codepo8/status/788402168445407232">Permalink</a></div></article></li>
 http://route.overnewser.com/programmingwrld/:
   '2016-10-18':
     788341183374356481: |-

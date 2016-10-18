@@ -36,15 +36,15 @@ To give a simple example, consider a form field for entering your email address.
 I automatically create layers of experience with no extra effort:
 
 <ol>
-  <li>Browsers that don’t understand "email" as a valid `input` type will treat the "email" text as a typo in my HTML (like when you type "rdio" instead of "radio"… or maybe I’m the only one that does that). As a result, they will fall back to the default input type of "text", which is usable in every browser that supports HTML2 and up.</li>
-  <li>Browsers that consider "email" a valid `input` type will provide one (or more) of many potential enhanced experiences:
-  <ol type="a">
-  <li>In a virtual keyboard context, the browser may present a keyboard that is tailored toward quickly entering email addresses.</li>
-  <li>In a browser that supports auto-completion, it may use this as a cue to suggest entering a commonly-entered email or one that has been stored in the user’s profile.</li>
-  <li>In a browser that supports HTML5 validation, the browser may validate this field for proper email formatting when the user attempts to submit the form.</li>
-  <li>In a browser that does not support HTML5 validation or that doesn’t actively block submission on validation errors—[like Safari](https://bugs.webkit.org/show_bug.cgi?id=28649)—a developer-supplied JavaScript program may use the `type` attribute as a signal that it should validate the field for proper email address formatting.</li>
-  </ol>
-  </li>
+<li>Browsers that don’t understand "email" as a valid `input` type will treat the "email" text as a typo in my HTML (like when you type "rdio" instead of "radio"… or maybe I’m the only one that does that). As a result, they will fall back to the default input type of "text", which is usable in every browser that supports HTML2 and up.</li>
+<li>Browsers that consider "email" a valid `input` type will provide one (or more) of many potential enhanced experiences:
+<ol type="a">
+<li>In a virtual keyboard context, the browser may present a keyboard that is tailored toward quickly entering email addresses.</li>
+<li>In a browser that supports auto-completion, it may use this as a cue to suggest entering a commonly-entered email or one that has been stored in the user’s profile.</li>
+<li>In a browser that supports HTML5 validation, the browser may validate this field for proper email formatting when the user attempts to submit the form.</li>
+<li>In a browser that does not support HTML5 validation or that doesn’t actively block submission on validation errors—<a href="https://bugs.webkit.org/show_bug.cgi?id=28649">like Safari</a>—a developer-supplied JavaScript program may use the <code>type</code> attribute as a signal that it should validate the field for proper email address formatting.</li>
+</ol>
+</li>
 </ol>
 
 That means that there are between 5 and 13 potential experiences (given all of the different possible combinations of these layers) in this one single single element… it’s kind of mind-boggling to think about, right? And the clincher here is that any of these experiences can be a good experience. Heck for nearly 15 years of the Web, the plain-ol’ text `input` was the only way we had for entering an email address. Anything better than that is gravy.

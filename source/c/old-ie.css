@@ -72,6 +72,13 @@ ol,
 ul {
   margin-left: 0;
 }
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin-left: 22px;
+  margin-left: 1.375rem;
+}
 
 /*------------------------------------*\
     Links
