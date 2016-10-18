@@ -36,8 +36,8 @@ To give a simple example, consider a form field for entering your email address.
 I automatically create layers of experience with no extra effort:
 
 <ol>
-<li>Browsers that don’t understand "email" as a valid `input` type will treat the "email" text as a typo in my HTML (like when you type "rdio" instead of "radio"… or maybe I’m the only one that does that). As a result, they will fall back to the default input type of "text", which is usable in every browser that supports HTML2 and up.</li>
-<li>Browsers that consider "email" a valid `input` type will provide one (or more) of many potential enhanced experiences:
+<li>Browsers that don’t understand “email” as a valid <code>input</code> type will treat the “email” text as a typo in my HTML (like when you type “rdio” instead of “radio”… or maybe I’m the only one that does that). As a result, they will fall back to the default input type of “text”, which is usable in every browser that supports HTML2 and up.</li>
+<li>Browsers that consider “email” a valid <code>input</code> type will provide one (or more) of many potential enhanced experiences:
 <ol type="a">
 <li>In a virtual keyboard context, the browser may present a keyboard that is tailored toward quickly entering email addresses.</li>
 <li>In a browser that supports auto-completion, it may use this as a cue to suggest entering a commonly-entered email or one that has been stored in the user’s profile.</li>

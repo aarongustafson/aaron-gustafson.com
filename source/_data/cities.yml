@@ -38,6 +38,11 @@
   credit_name: Bojan Lazarevic
   credit_url: http://commons.wikimedia.org/wiki/File:Brighton.UK.JPG
 
+- name: "Brisbane, Australia"
+  photo: https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Brisbane_May_2013.jpg/400px-Brisbane_May_2013.jpg
+  credit_name: Lachlan Fearnley
+  credit_url: https://commons.wikimedia.org/wiki/File:Brisbane_May_2013.jpg
+
 - name: "Brooklyn, NY USA"
   photo: https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Fort_Greene_Brooklyn_NY_assorted_photos_near_Fulton_Street_9_building_facades.jpg/400px-Fort_Greene_Brooklyn_NY_assorted_photos_near_Fulton_Street_9_building_facades.jpg
   credit_name: Tomwsulcer

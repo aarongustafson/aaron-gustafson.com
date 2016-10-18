@@ -57,7 +57,8 @@
         ol,
         ul {
             @include rem( margin-left, $default-spacing);
+            @include rem( margin-top, $default-spacing/2);
         }
-        
+
     }
 }
