@@ -322,6 +322,7 @@
                     .replace( 'webmention-', '' )
             );
         }
+        //console.log(existing_webmentions);
         $existing_webmentions = null;
     }
     
@@ -355,6 +356,9 @@
             is_tweet = false,
             is_gplus = false;
 
+        // make sure the id is a string
+        id = id.toString();
+
         // Tweets gets handled differently
         if ( data.url && data.url.indexOf( 'twitter.com/' ) > -1 )
         {
@@ -366,16 +370,17 @@
             }
         }
         
+        // No need to replace
+        console.log( existing_webmentions, id, existing_webmentions.indexOf( id ) );
+        if ( existing_webmentions.indexOf( id ) > -1 )
+        {
+            return;
+        }
+        
         // Google Plus gets handled differently
         if ( data.url.indexOf( '/googleplus/' ) )
         {
             is_gplus = true;
-        }
-        
-        // No need to replace
-        if ( existing_webmentions.indexOf( id + '' ) > -1 )
-        {
-            return;
         }
         
         var $item = elements.li.cloneNode( true ),

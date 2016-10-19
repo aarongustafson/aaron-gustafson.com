@@ -41,9 +41,7 @@
             'July', 'August', 'September', 'October', 'November', 'December'
         ],
         json_webmentions,
-        targets = [
-            window.location.href.replace( 'localhost', 'www.aaron-gustafson.com' )
-        ],
+        targets = [],
         $none = false,
         $redirects = document.querySelector('meta[property="webmention:redirected_from"]'),
         redirects,
@@ -52,7 +50,11 @@
         $existing_webmentions,
         existing_webmentions = [],
         e = 0;
+
+    // push the base page
+    targets.push( 'https://www.aaron-gustafson.com' + window.location.pathname );
     
+    // handle redirects
     if ( $redirects )
     {
         redirects = $redirects.getAttribute('content').split(',');
@@ -107,8 +109,10 @@
                     .replace( 'webmention-', '' )
             );
         }
+        //console.log(existing_webmentions);
         $existing_webmentions = null;
     }
+    window.AG.existing_webmentions = existing_webmentions;
     
     // Set up the markup
     elements.li.className = 'webmentions__item';
@@ -140,6 +144,9 @@
             is_tweet = false,
             is_gplus = false;
 
+        // make sure the id is a string
+        id = id.toString();
+
         // Tweets gets handled differently
         if ( data.url && data.url.indexOf( 'twitter.com/' ) > -1 )
         {
@@ -151,16 +158,17 @@
             }
         }
         
+        // No need to replace
+        console.log( existing_webmentions, id, existing_webmentions.indexOf( id ) );
+        if ( existing_webmentions.indexOf( id ) > -1 )
+        {
+            return;
+        }
+        
         // Google Plus gets handled differently
         if ( data.url.indexOf( '/googleplus/' ) )
         {
             is_gplus = true;
-        }
-        
-        // No need to replace
-        if ( existing_webmentions.indexOf( id + '' ) > -1 )
-        {
-            return;
         }
         
         var $item = elements.li.cloneNode( true ),
@@ -422,7 +430,8 @@
     }
     
     window.AG.processWebmentions = function( data ){
-        if ( ! ( 'error' in data ) )
+        if ( data &&
+             ! ( 'error' in data ) )
         {
             data.links.reverse();
             data.links.forEach( addMention );
@@ -437,7 +446,7 @@
             var XHR = new XMLHttpRequest();
             readWebPage = function( uri, callback ){
                 var done = false;
-                uri = 'http://whateverorigin.org/get?url=' + encodeURIComponent( uri );
+                uri = '//whateverorigin.org/get?url=' + encodeURIComponent( uri );
                 XHR.onreadystatechange = function() {
                     if ( this.readyState == 4 && ! done ) {
                         done = true;
@@ -511,8 +520,8 @@
     // Load up any unpublished webmentions on load
     json_webmentions = document.createElement('script');
     json_webmentions.async = true;
-    json_webmentions.src = '//webmention.io/api/mentions?jsonp=window.AG.processWebmentions&amp;target[]=' +
-                            targets.join( '&amp;target[]=' );
+    json_webmentions.src = '//webmention.io/api/mentions?jsonp=window.AG.processWebmentions&target[]=' +
+                            targets.join( '&target[]=' );
     document.getElementsByTagName('head')[0].appendChild( json_webmentions );
     
     // Listen for new ones

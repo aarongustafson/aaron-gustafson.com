@@ -23,6 +23,50 @@ task :get_twitter_webmentions do |t, args|
 	  cached_webmentions = {}
 	end
 
+  # cleanup
+  #puts 'cleaning up webmentions'
+  removed = 0
+  cached_webmentions.each do |post, dates|
+    #puts "looking at #{post}"
+    ids = {}
+    # remove duplicates
+    dates.sort.map do |date, mentions|
+      #puts "checking #{date}"
+      mentions.delete_if { |id, mention|
+        if ids.has_key? id
+          #puts "#{id} (date #{date}) is duplicated in date #{ids[id]}"
+          removed = removed + 1
+          true
+        else
+          #puts "adding #{id} for #{date}"
+          ids[id] = date
+          false
+        end
+      }
+    end
+    # axe empty dates
+    dates.delete_if { |date, mentions|
+      if mentions.empty?
+        #puts "#{date} is no longer needed"
+        true
+      else
+        false
+      end
+    }
+    # convert %F to %s for future sorting
+    dates.keys.each do |date|
+      if date.include? '-'
+        new_key = Date.parse date
+        new_key = new_key.strftime("%s")
+        #puts "converted #{date} to #{new_key}"
+        dates[new_key] = dates[date]
+        dates.delete(date)
+      end
+    end
+    #puts ids  
+  end
+  puts "removed #{removed} duplicates"
+  
   client = Twitter::REST::Client.new do |config|
   	config.consumer_key        = ENV['TWITTER_CONSUMER_KEY']
   	config.consumer_secret     = ENV['TWITTER_CONSUMER_SECRET']
@@ -57,7 +101,7 @@ task :get_twitter_webmentions do |t, args|
   	# puts permalink
   	
   	pubdate = tweet.created_at
-  	the_date = pubdate.strftime("%F")
+  	the_date = pubdate.strftime("%s")
   	# puts the_date
 
     # Make sure we have the target
@@ -134,7 +178,7 @@ task :get_twitter_webmentions do |t, args|
   end
 
   # store it all back in the cache
-  # puts cached_webmentions
+  #puts cached_webmentions.inspect
 	File.open(cache_file, 'w') { |f| YAML.dump(cached_webmentions, f) }
 
   puts "Twitter Mebmentions Added: #{count}"
