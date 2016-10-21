@@ -129,7 +129,7 @@
     }
     function clickHandler( event )
     {
-        console.log( event );
+        //console.log( event );
         // only way to detech Enter keypress on a link
         if ( ! event.screenX &&
              ! event.screenY )
@@ -167,7 +167,7 @@
         }
         
         // return focus
-        console.log( keypress );
+        //console.log( keypress );
         if ( keypress )
         {
             $element.focus();

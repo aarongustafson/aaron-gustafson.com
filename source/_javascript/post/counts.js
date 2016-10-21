@@ -21,7 +21,7 @@
     }
     else
     {
-        console.log('No preconnect');
+        //console.log('No preconnect');
     }
 
     // Add the comment count

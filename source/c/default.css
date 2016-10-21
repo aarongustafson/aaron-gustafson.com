@@ -260,6 +260,8 @@ html body {
   font-family: "prenton", "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 400;
   margin: 0 auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /*------------------------------------*\

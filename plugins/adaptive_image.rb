@@ -45,7 +45,7 @@ module Jekyll
     def render(context)
       render_markup = Liquid::Template.parse(@tag_text).render(context).gsub(/\\\{\\\{|\\\{\\%/, '\{\{' => '{{', '\{\%' => '{%')
 
-      config = Jekyll.configuration({})
+      config = Jekyll.configuration({ 'quiet' => true })
       settings = config['adaptive_image']
 
       markup = /^(?<image_src>[^\s]+\.[a-zA-Z0-9]{3,4})\s*(?<html_attr>[\s\S]+)$/.match(render_markup)

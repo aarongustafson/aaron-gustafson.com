@@ -34,36 +34,25 @@ Beyond the devices we carry with us everywhere, more and more of our homes are b
 And of course there’s the coolness factor of being able to turn on your heat while on your way home from work. These advancements are incredible!
 
 <figure id="fig-2014-11-06-01" class="media-container">
-	<img src="/i/posts/2014-11-06/01-sm.jpg"
-		 srcset="/i/posts/2014-11-06/01-lg.jpg 1920w, /i/posts/2014-11-06/01-md.jpg 600w, /i/posts/2014-11-06/01-sm.jpg 320w"
-		 alt="Two pie charts comparing Internet usage in the U.S. and Canada."
-		 >
+{% adaptive_image /i/posts/2014-11-06/01-lg.jpg alt="Two pie charts comparing Internet usage in the U.S. and Canada." %}
 </figure>
 
 Of course, what enables all of these things to be as amazing as they are is our ubiquitous connectivity. According to [Internet Live Stats](http://www.InternetLiveStats.com), roughly 86% of Americans use the Internet. You Canadians are a wee bit more “online” at 93%.
 
 <figure id="fig-2014-11-06-02" class="media-container">
-	<img src="/i/posts/2014-11-06/02-sm.jpg"
-		 srcset="/i/posts/2014-11-06/02-lg.jpg 1920w, /i/posts/2014-11-06/02-md.jpg 600w, /i/posts/2014-11-06/02-sm.jpg 320w"
-		 alt="Two pie charts comparing the number of mobile data connections in the U.S. and Canada."
-		 >
+{% adaptive_image /i/posts/2014-11-06/02-lg.jpg alt="Two pie charts comparing the number of mobile data connections in the U.S. and Canada." %}
 </figure>
 
 America does have you beat when it comes to mobile connectivity: there are over 100 mobile data subscriptions per 100 individuals in the U.S. (probably because of the whole multi-device thing). Mobile connections in Canada are around 53 per 100 people. <small>[(source)](http://www.oecd.org/sti/broadband/oecdbroadbandportal.htm)</small>
 
 <figure id="fig-2014-11-06-03" class="media-container">
-	<img src="/i/posts/2014-11-06/03-sm.jpg"
-		 srcset="/i/posts/2014-11-06/03-lg.jpg 1920w, /i/posts/2014-11-06/03-md.jpg 600w, /i/posts/2014-11-06/03-sm.jpg 320w"
-		 alt="Two pie charts comparing wired Internet connections in the U.S. and Canada."
-		 >
+{% adaptive_image /i/posts/2014-11-06/03-lg.jpg alt="Two pie charts comparing wired Internet connections in the U.S. and Canada." %}
 </figure>
 
 Wired connectivity is a bit lower: 30 for every 100 in the U.S. and 33 for every 100 in Canada. <small>[(source)](http://www.oecd.org/sti/broadband/oecdbroadbandportal.htm)</small>
 
 <figure id="fig-2014-11-06-04" class="media-container">
-	<img src="/i/posts/2014-11-06/04-sm.jpg"
-		 srcset="/i/posts/2014-11-06/04-lg.jpg 1920w, /i/posts/2014-11-06/04-md.jpg 600w, /i/posts/2014-11-06/04-sm.jpg 320w"
-		 alt="A bar chart depicting the cost range, per megabit per month, in the U.S. and Canada."
+{% adaptive_image /i/posts/2014-11-06/04-lg.jpg alt="A bar chart depicting the cost range, per megabit per month, in the U.S. and Canada." %}
 		 >
 </figure>
 
@@ -74,10 +63,7 @@ Comcast and Rogers may be equally hated on our respective sides of the 49th para
 This technology and access makes it possible for us to live richer lives and post photos of our cats and kids on Instagram, but it has insulated us. We live in a fantasy world of speed, high definition, and Beats by Dre. Sadly, our experience is far from the reality most of the world lives in.
 
 <figure id="fig-2014-11-06-05" class="media-container">
-	<img src="/i/posts/2014-11-06/05-sm.jpg"
-		 srcset="/i/posts/2014-11-06/05-lg.jpg 1920w, /i/posts/2014-11-06/05-md.jpg 600w, /i/posts/2014-11-06/05-sm.jpg 320w"
-		 alt="A bar chart comparing the average monthly incomes of people living in the U.S., Canada, China, and India."
-		 >
+{% adaptive_image /i/posts/2014-11-06/05-lg.jpg alt="A bar chart comparing the average monthly incomes of people living in the U.S., Canada, China, and India." %}
 </figure>
 
 The average American takes home $3,263 a month. For the average Canadian, that figure is $2,724. By comparison, the average worker in China makes $656 a month. But that is a fortune compared to folks in India, who only take home $295 for a month of hard work. <small>[(source)](http://en.wikipedia.org/wiki/List_of_countries_by_average_wage)</small>
@@ -85,10 +71,7 @@ The average American takes home $3,263 a month. For the average Canadian, that f
 How much is an unlocked iPhone 6 again? It starts around $649. That’s more than two months salary for the average Indian. The Galaxy S5? $799 or nearly three months of hard work. In places like India, feature phones are still quite prevalent. And even when a smartphone is introduced for their market, it pales in comparison to the sort of tech we are used to seeing.
 
 <figure id="fig-2014-11-06-06" class="media-container">
-	<img src="/i/posts/2014-11-06/06-sm.jpg"
-		 srcset="/i/posts/2014-11-06/06-lg.jpg 1920w, /i/posts/2014-11-06/06-md.jpg 600w, /i/posts/2014-11-06/06-sm.jpg 320w"
-		 alt="The Samsung Galaxy S5 smartphone with a specification summary (relevant details follow)."
-		 >
+{% adaptive_image /i/posts/2014-11-06/06-lg.jpg alt="The Samsung Galaxy S5 smartphone with a specification summary (relevant details follow)." %}
 </figure>
 
 Here we have [Samsung’s flagship Galaxy S5](http://www.samsung.com/gr/microsite/galaxys5/) with an amazing set of specs. A 16GB camera?! A quad-core processor?! This is the stuff of dreams for anyone who has been working with computers for more than 10 years. My first desktop was a 5150.
@@ -96,10 +79,7 @@ Here we have [Samsung’s flagship Galaxy S5](http://www.samsung.com/gr/microsit
 No not [that awesome Van Halen record](https://en.wikipedia.org/wiki/5150_(album)), [this beast from IBM](http://www-03.ibm.com/ibm/history/exhibits/pc25/pc25_intro.html):
 
 <figure id="fig-2014-11-06-08" class="media-container">
-	<img src="/i/posts/2014-11-06/08-sm.jpg"
-		 srcset="/i/posts/2014-11-06/08-lg.jpg 1920w, /i/posts/2014-11-06/08-md.jpg 600w, /i/posts/2014-11-06/08-sm.jpg 320w"
-		 alt="The IBM 5150 personal computer."
-		 >
+{% adaptive_image /i/posts/2014-11-06/08-lg.jpg alt="The IBM 5150 personal computer." %}
 </figure>
 
 It weighted over 20 lbs, 28 lbs with two floppy drives. The screen weighed another 13 lbs and the keyboard was 6 lbs. It maxed out at 256K of memory and offered 40K of read only memory. I couldn‘t even find a spec detailing how slow the processor was, but let’s just say that the computer I began my Web career with nearly 15 years later was only a Pentium 90 with something like 16 MB of RAM.
@@ -107,10 +87,7 @@ It weighted over 20 lbs, 28 lbs with two floppy drives. The screen weighed anoth
 And here, this pocket-sized computer just blows all of that out of the water.
 
 <figure id="fig-2014-11-06-09" class="media-container">
-	<img src="/i/posts/2014-11-06/09-sm.jpg"
-		 srcset="/i/posts/2014-11-06/09-lg.jpg 1920w, /i/posts/2014-11-06/09-md.jpg 600w, /i/posts/2014-11-06/09-sm.jpg 320w"
-		 alt="The Intex Cloud FX smartphone with specification summary (relevant details follow)."
-		 >
+{% adaptive_image /i/posts/2014-11-06/09-lg.jpg alt="The Intex Cloud FX smartphone with specification summary (relevant details follow)." %}
 </figure>
 
 By contrast, here we have [Intex’s Cloud FX](http://www.intexmobile.in/product_detail.aspx?PID=191&PCatID=3), a new phone with specs that read like the state of the art in 2007. A crappy camera, no front camera, a slow 1 GHz processor, a paltry 128 MB of RAM and barely double that in internal storage. It’s a crappy phone by our standards.
@@ -118,10 +95,7 @@ By contrast, here we have [Intex’s Cloud FX](http://www.intexmobile.in/product
 But that’s a Firefox OS phone aimed at the Indian market vs. an Android one aimed at the “developed” world. Perhaps you’d like to look at a more apples-to-apples comparison:
 
 <figure id="fig-2014-11-06-10" class="media-container">
-	<img src="/i/posts/2014-11-06/10-sm.jpg"
-		 srcset="/i/posts/2014-11-06/10-lg.jpg 1920w, /i/posts/2014-11-06/10-md.jpg 600w, /i/posts/2014-11-06/10-sm.jpg 320w"
-		 alt="The BLU Dash Jr K smartphone with specification summary (relevant details follow)."
-		 >
+{% adaptive_image /i/posts/2014-11-06/10-lg.jpg alt="The BLU Dash Jr K smartphone with specification summary (relevant details follow)." %}
 </figure>
 
 Here we have the [BLU Dash Jr K](http://www.gsmarena.com/blu_dash_jr-5662.php).
@@ -137,10 +111,7 @@ In the U.S., we see stats like “Smartphone sales accounted for nearly 85% of a
 The dirty little secret behind that 50% penetration number is that the penetration in question was concentrated in a scant 30% of U.S. households. Kinda burying the lead if you ask me. <small>[(source)](http://www.chetansharma.com/usmarketupdateq12013.htm)</small>
 
 <figure id="fig-2014-11-06-12" class="media-container">
-	<img src="/i/posts/2014-11-06/12-sm.jpg"
-		 srcset="/i/posts/2014-11-06/12-lg.jpg 1920w, /i/posts/2014-11-06/12-md.jpg 600w, /i/posts/2014-11-06/12-sm.jpg 320w"
-		 alt="A pie chart breakdown of the findings by the Pew Research Center on smartphone penetration by household income (relevant details follow)."
-		 >
+{% adaptive_image /i/posts/2014-11-06/12-lg.jpg alt="A pie chart breakdown of the findings by the Pew Research Center on smartphone penetration by household income (relevant details follow)." %}
 </figure>
 
 The Pew Research Center released a study earlier this year that showed smartphone penetration in the US, broken down by income bracket. As expected, the higher the household income, the more likely you were to find someone with a smartphone.
@@ -148,10 +119,7 @@ The Pew Research Center released a study earlier this year that showed smartphon
 In the < $30,000 income bracket, smartphones were found in 47% of households. But it starts to get really interesting when you cross-reference that data with how many people fall into those income brackets. <small>[(source)](http://www.pewinternet.org/2014/02/27/part-1-how-the-internet-has-woven-itself-into-american-life/)</small>
 
 <figure id="fig-2014-11-06-13" class="media-container">
-	<img src="/i/posts/2014-11-06/13-sm.jpg"
-		 srcset="/i/posts/2014-11-06/13-lg.jpg 1920w, /i/posts/2014-11-06/13-md.jpg 600w, /i/posts/2014-11-06/13-sm.jpg 320w"
-		 alt="The Pew Research Center’s findings when compared to U.S. Census Data (relevant details follow)."
-		 >
+{% adaptive_image /i/posts/2014-11-06/13-lg.jpg alt="The Pew Research Center’s findings when compared to U.S. Census Data (relevant details follow)." %}
 </figure>
 
 $30,000 was the average income in the U.S. in 2013. And, according to the 2010 census, the overwhelming majority of American households earn less than that. <small>[(source)](http://www.census.gov/2010census/data/)</small>
@@ -167,10 +135,7 @@ So even if a household has a smartphone, there’s probably decent odds on it be
 While it may not be a big deal for us to pay $60, $100, or more a month for mobile data access with fast speeds and high bandwidth limits, that would be a burden for most people. It’s worth noting that the cheaper pay-as-you-go plans typically have substantially lower data caps, frequently cost more per megabit, and often run at far slower speeds. Accordingly, while the Galaxy S5 supports blazingly fast 4G LTE speeds, both the Cloud FX and the Dash Jr K run on 2G technology.
 
 <figure id="fig-2014-11-06-14" class="media-container">
-	<img src="/i/posts/2014-11-06/14-sm.jpg"
-		 srcset="/i/posts/2014-11-06/14-lg.jpg 1920w, /i/posts/2014-11-06/14-md.jpg 600w, /i/posts/2014-11-06/14-sm.jpg 320w"
-		 alt="A photo of a Blackberry device experiencing an error loading a webpage because the page was too large. Photo Credit: Brad Frost."
-		 >
+{% adaptive_image /i/posts/2014-11-06/14-lg.jpg alt="A photo of a Blackberry device experiencing an error loading a webpage because the page was too large. Photo Credit: Brad Frost." %}
 </figure>
 
 All of this is to say that we must be hyper-aware of how big our Web pages are. Large pages with tons of high-resolution images cost our users real money and, frankly, waste their time. Some might not even load. Big Web pages are a barrier to access.
@@ -180,19 +145,13 @@ Beyond page size, we should also be concerned with how much work we we are requi
 These are just a few of the concerns we’re having to deal with today, and only about a third of our planet is online. There are 4.8 billion people with no Internet access. But it’s coming. And when it happens, we will likely have even more to deal with. Like language barriers.
 
 <figure id="fig-2014-11-06-15" class="media-container">
-	<img src="/i/posts/2014-11-06/15-sm.jpg"
-		 srcset="/i/posts/2014-11-06/15-lg.jpg 1920w, /i/posts/2014-11-06/15-md.jpg 600w, /i/posts/2014-11-06/15-sm.jpg 320w"
-		 alt="A pie chart comparison of the global population that speaks English versus the percentage of the Web that is in English."
-		 >
+{% adaptive_image /i/posts/2014-11-06/15-lg.jpg alt="A pie chart comparison of the global population that speaks English versus the percentage of the Web that is in English." %}
 </figure>
 
 Consider this: [About 11.7% of the world speaks English as its first or second language](http://en.wikipedia.org/wiki/List_of_languages_by_total_number_of_speakers) yet [55.7% of the Web is in English](http://en.wikipedia.org/wiki/Languages_used_on_the_Internet). (French is spoken by roughly 1.4% of the world and 4% of the Web is in French.)
 
 <figure id="fig-2014-11-06-16" class="media-container">
-	<img src="/i/posts/2014-11-06/16-sm.jpg"
-		 srcset="/i/posts/2014-11-06/16-lg.jpg 1920w, /i/posts/2014-11-16/15-md.jpg 600w, /i/posts/2014-11-06/16-sm.jpg 320w"
-		 alt="Pie charts detailing the percentage of people in India and China who speak English."
-		 >
+{% adaptive_image /i/posts/2014-11-06/16-lg.jpg alt="Pie charts detailing the percentage of people in India and China who speak English." %}
 </figure>
 
 This presents some significant challenges as the Web expands into places like India and China. Only 18.61% of India’s 1.2 billion people speak English as a first, second, or even third language. In China, only about 0.73% of their 1.2 billion people speak English. Network availability is only the first of many hurdles to accessing the Web for much of the planet. <small>[(source)](http://en.wikipedia.org/wiki/List_of_countries_by_English-speaking_population)</small>
@@ -228,10 +187,7 @@ I had to educate him, but I needed to do it softly. I need to explain to him tha
 If our primary job is to empower people to live independently, our second job is surely to educate the world, not just on how to make the Web more accessible, but why it matters. **We need to bring everyone into the fold.**
 
 <figure id="fig-2014-11-06-17" class="media-container">
-	<img src="/i/posts/2014-11-06/17-sm.jpg"
-		 srcset="/i/posts/2014-11-06/17-lg.jpg 1920w, /i/posts/2014-11-06/17-md.jpg 600w, /i/posts/2014-11-06/17-sm.jpg 320w"
-		 alt="A photo of the philosopher John Rawls."
-		 >
+{% adaptive_image /i/posts/2014-11-06/17-lg.jpg alt="A photo of the philosopher John Rawls." %}
 </figure>
 
 I love exercises that create opportunities for revelation. One of my favorites originates from John Rawls. Rawls was a philosopher who used to run a social experiment with students, church groups, and the like.
@@ -277,19 +233,13 @@ Our focus on semantic, meaningful, markup allows our content to be pulled into o
 And while we can certainly do a lot to make rich, JavaScript-based interactions far more accessible to assistive technology, our advocacy for progressive enhancement ensures that our content and tools work no matter what.
 
 <figure id="fig-2014-11-06-18" class="media-container">
-	<img src="/i/posts/2014-11-06/18-sm.jpg"
-		 srcset="/i/posts/2014-11-06/18-lg.jpg 1920w, /i/posts/2014-11-06/18-md.jpg 600w, /i/posts/2014-11-06/18-sm.jpg 320w"
-		 alt="Headline: “Sky’s internet service mistakenly blocks web-critical plugin” (Source: The Guardian)"
-		 >
+{% adaptive_image /i/posts/2014-11-06/18-lg.jpg alt="Headline: “Sky’s internet service mistakenly blocks web-critical plugin” (Source: The Guardian)" %}
 </figure>
 
 Let’s say an ISP blocks jQuery as malware. No problem.
 
 <figure id="fig-2014-11-06-19" class="media-container">
-	<img src="/i/posts/2014-11-06/19-sm.jpg"
-		 srcset="/i/posts/2014-11-06/19-lg.jpg 1920w, /i/posts/2014-11-06/19-md.jpg 600w, /i/posts/2014-11-06/19-sm.jpg 320w"
-		 alt="Headline: “FCC to Marriott: No, you can’t force your customers onto terrible hotel WiFi” (Source: The Washington Post)"
-		 >
+{% adaptive_image /i/posts/2014-11-06/19-lg.jpg alt="Headline: “FCC to Marriott: No, you can’t force your customers onto terrible hotel WiFi” (Source: The Washington Post)" %}
 </figure>
 
 Let’s say the page is taking a long time to download on a high-latency mobile network (or hotel Wi-Fi). No big deal.
@@ -323,10 +273,7 @@ We can help bridge the digital divide and the literacy gap. We can create opport
 This is an incredibly exciting time, not just for the accessibility experts, not just for user experience, not just the Web, but for the world! I can’t wait to see how awesome you make it!
 
 <figure id="fig-2014-11-06-20" class="media-container">
-	<img src="/i/posts/2014-11-06/20-sm.jpg"
-		 srcset="/i/posts/2014-11-06/20-lg.jpg 1920w, /i/posts/2014-11-06/20-md.jpg 600w, /i/posts/2014-11-06/20-sm.jpg 320w"
-		 alt="A photo of the opening ceremony of the 2012 London Olympic Games when Sir Tim Berners-Lee (creator of the World Wide Web) typed “This is for Everyone” across the stadium."
-		 >
+{% adaptive_image /i/posts/2014-11-06/20-lg.jpg alt="A photo of the opening ceremony of the 2012 London Olympic Games when Sir Tim Berners-Lee (creator of the World Wide Web) typed “This is for Everyone” across the stadium." %}
 </figure>
 
 Thank you.

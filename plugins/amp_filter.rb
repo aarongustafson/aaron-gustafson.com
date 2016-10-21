@@ -9,6 +9,9 @@ module Jekyll
     #   input       - the content of the post
     #   responsive  - boolean, whether to add layout=responsive, true by default
     def amp_images(input, responsive = true, wi = nil, he = nil)
+      if input.include? '{% adaptive_image'
+        input = input.gsub(/{% adaptive_image ([^\s]+)(?:\s(.*?))?\s?%}/, '<img src="\1" \2>')
+      end
       doc = Nokogiri::HTML.fragment(input);
       # Add width and height to img elements lacking them
       doc.css('img:not([width])').each do |image|
@@ -21,7 +24,7 @@ module Jekyll
           else
             # FastImage doesn't seem to handle local paths when used with Jekyll
             # so let's just force the path
-            src = File.join(Dir.pwd, 'public/', image['src'])
+            src = File.join(Dir.pwd, '_deploy/', image['src'])
           end
           # Jekyll generates static assets after the build process.
           # This causes problems when trying to determine the dimensions of a locally stored image.

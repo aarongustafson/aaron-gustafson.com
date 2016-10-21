@@ -159,7 +159,7 @@
         }
         
         // No need to replace
-        console.log( existing_webmentions, id, existing_webmentions.indexOf( id ) );
+        //console.log( existing_webmentions, id, existing_webmentions.indexOf( id ) );
         if ( existing_webmentions.indexOf( id ) > -1 )
         {
             return;

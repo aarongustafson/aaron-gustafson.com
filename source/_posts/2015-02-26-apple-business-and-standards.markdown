@@ -12,10 +12,7 @@ At [Tuesday night’s Code & Creativity](http://www.codeandcreativity.com/events
 <!-- more -->
 
 <figure id="fig-2015-02-26-01" class="media-container">
-	<img src="/i/posts/2015-02-26/atom-sm.jpg"
-		 srcset="/i/posts/2015-02-26/atom-lg.jpg 800w, /i/posts/2015-02-26/atom-sm.jpg 320w"
-		 alt="A slide from Lisa Welchman’s talk showing Web Standards and KPI at the center of the project “atom”."
-		 >
+{% adaptive_image /i/posts/2015-02-26/atom-lg.jpg alt="A slide from Lisa Welchman’s talk showing Web Standards and KPI at the center of the project “atom”." %}
 </figure>
 
 In Lisa’s analogy, the protons of a digital project are Web standards and Key Performance Indicators (KPIs). She believes that without these key ingredients, projects will often career out of control. Her reasoning? We all need to know how we should be doing things in order to work together well (Web standards) and we need to know what our expectations are for the project to be successful (KPI).

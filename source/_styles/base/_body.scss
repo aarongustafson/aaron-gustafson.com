@@ -45,15 +45,10 @@
 
 	        margin: 0 auto;
 			//@include rem( max-width, 960 );
+
+			word-wrap: break-word;
+			overflow-wrap: break-word;
 	    }
 
 	}	
-}
-
-@include breakup-breakpoint( "full" ) {
-
-    //[role=main] {
-    //    @include rem( min-height, 400 );
-    //}
-
 }
