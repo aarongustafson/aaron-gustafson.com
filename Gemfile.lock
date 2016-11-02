@@ -206,6 +206,3 @@ DEPENDENCIES
   sinatra (~> 1.4.2)
   stringex (~> 1.4.0)
   twitter
-
-BUNDLED WITH
-   1.13.5
