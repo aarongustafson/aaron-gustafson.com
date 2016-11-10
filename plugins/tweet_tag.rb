@@ -28,7 +28,7 @@ module Jekyll
 
     def render(context)
       args       = @text.split(/\s+/).map(&:strip)
-      api_params = {'url' => args.shift,'conversation' => 'none'}
+      api_params = {'url' => args.shift}
 
       args.each do |arg|
         k,v = arg.split('=').map(&:strip)
@@ -48,7 +48,7 @@ module Jekyll
       if response = cached_response(api_params) || live_response(api_params)
         body = response['html'] || response['error'] || body
       end
-      "<div class='embed tweet'>#{body}</div>"
+      "<div class='embed tweet' data-conversation='none'>#{body}</div>"
     end
 
     def cache(api_params, data)
