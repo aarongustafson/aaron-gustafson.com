@@ -599,6 +599,18 @@ https://www.aaron-gustafson.com/notebook/css-variables-are-a-bad-idea/:
     759015970207768576: |-
       <li id="webmention-759015970207768576" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/dougdrouillard"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1272666920/eightbit-3481a878-1ce3-4287-b87a-c27112a6ec87_normal.png" alt="" title="Doug"><b class="p-name">Doug</b></a></div><div class="webmention__content p-content"><p>@AaronGustafson from collective internet, sorry for the comments on <a href="https://t.co/pajFwIGdNs">https://t.co/pajFwIGdNs</a> such unnecessary attitude. keep up good fight.</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-07-29T09:21:23-04:00">29 July 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/dougdrouillard/status/759015970207768576">Permalink</a></div></article></li>
+  '1478608663':
+    795968540998336512: "<li id=\"webmention-795968540998336512\" class=\"webmentions__item\"><article
+      class=\"h-cite webmention webmention--content-only\"><div class=\"webmention__author
+      p-author h-card\"><a class=\"u-url\" href=\"https://twitter.com/jgthms\"><img
+      class=\"webmention__author__photo u-photo\" src=\"https://pbs.twimg.com/profile_images/765643433469997060/2ZTHZtqI_normal.jpg\"
+      alt=\"\" title=\"Jeremy Thomas\"><b class=\"p-name\">Jeremy Thomas</b></a></div><div
+      class=\"webmention__content p-content\"><p>“CSS variables are a bad idea” just
+      because they’re not supported yet? #LOL\nIgnorance is bliss. \U0001F44E \n<a
+      href=\"https://t.co/HQkRr3igoZ\">https://t.co/HQkRr3igoZ</a></p>\n</div><div
+      class=\"webmention__meta\"><time class=\"webmention__pubdate dt-published\"
+      datetime=\"2016-11-08T12:37:43+00:00\">8 November 2016</time> | <a class=\"webmention__source
+      u-url\" href=\"https://twitter.com/jgthms/status/795968540998336512\">Permalink</a></div></article></li>"
 http://aaron-gustafson.com/notebook/2014/aria-quicktip-labelledby-vs-describedby/:
   '1415217698':
     11803: <li id="webmention-11803" class="webmentions__item"><article class="h-cite
@@ -4843,6 +4855,10 @@ https://www.aaron-gustafson.com/notebook/playing-with-flexbox-and-quantity-queri
     789263943273320449: |-
       <li id="webmention-789263943273320449" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/r3vome"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/580281370984853504/A80YU8wd_normal.png" alt="" title="Rich Ravestein"><b class="p-name">Rich Ravestein</b></a></div><div class="webmention__content p-content"><p>Playing With Flexbox and Quantity Queries <a href="https://t.co/RkltjHPxE8">https://t.co/RkltjHPxE8</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-21T00:36:02+00:00">21 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/r3vome/status/789263943273320449">Permalink</a></div></article></li>
+  '1478534735':
+    795658465926610944: |-
+      <li id="webmention-795658465926610944" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/chuckdowe"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/710872984458633216/ihYWEaDm_normal.jpg" alt="" title="Chuck Dowe"><b class="p-name">Chuck Dowe</b></a></div><div class="webmention__content p-content"><p>Playing With Flexbox and Quantity Queries - <a href="https://t.co/1QbJLvoLrM">https://t.co/1QbJLvoLrM</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-07T16:05:35+00:00">7 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/chuckdowe/status/795658465926610944">Permalink</a></div></article></li>
 http://www.aaron-gustafson.com/notebook/how-to-apply-progressive-enhancement-when-javascript-seems-like-a-requirement/:
   '1428000045':
     '583700611214008320': <li id="webmention-583700611214008320" class="webmentions__item"><article
@@ -8837,6 +8853,22 @@ https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/:
     789162016170573824: |-
       <li id="webmention-789162016170573824" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AMAC_tweet"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/647119268211916801/0O07CL6C_normal.png" alt="" title="AMAC"><b class="p-name">AMAC</b></a></div><div class="webmention__content p-content"><p>The Web Should Just Work for Everyone <a href="https://t.co/Gn2Z4CZKv3">https://t.co/Gn2Z4CZKv3</a> #a11y</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-20T17:51:01+00:00">20 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AMAC_tweet/status/789162016170573824">Permalink</a></div></article></li>
+  '1478384581':
+    795028672306626560: |-
+      <li id="webmention-795028672306626560" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/EmilyRuhGlobal"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/702018223055704064/RyvaEUcx_normal.jpg" alt="" title="Emily Ha"><b class="p-name">Emily Ha</b></a></div><div class="webmention__content p-content"><p>The Web Should Just Work for Everyone <a href="https://t.co/XjkpPihNgc">https://t.co/XjkpPihNgc</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-05T22:23:01+00:00">5 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/EmilyRuhGlobal/status/795028672306626560">Permalink</a></div></article></li>
+  '1478370542':
+    794969791266168833: |-
+      <li id="webmention-794969791266168833" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/EmilyRuhGlobal"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/702018223055704064/RyvaEUcx_normal.jpg" alt="" title="Emily Ha"><b class="p-name">Emily Ha</b></a></div><div class="webmention__content p-content"><p>The Web Should Just Work for Everyone <a href="https://t.co/LFtziFDinv">https://t.co/LFtziFDinv</a> #a11y</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-05T18:29:02+00:00">5 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/EmilyRuhGlobal/status/794969791266168833">Permalink</a></div></article></li>
+  '1478214902':
+    794316990957703173: |-
+      <li id="webmention-794316990957703173" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/KevinRuhGlobal"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/494527209592201217/JpuJ7jer_normal.jpeg" alt="" title="Kevin Ruh"><b class="p-name">Kevin Ruh</b></a></div><div class="webmention__content p-content"><p>The Web Should Just Work for Everyone <a href="https://t.co/cGqP0r3v0L">https://t.co/cGqP0r3v0L</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-03T23:15:02+00:00">3 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/KevinRuhGlobal/status/794316990957703173">Permalink</a></div></article></li>
+  '1478195414':
+    794235250616532993: |-
+      <li id="webmention-794235250616532993" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/KevinRuhGlobal"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/494527209592201217/JpuJ7jer_normal.jpeg" alt="" title="Kevin Ruh"><b class="p-name">Kevin Ruh</b></a></div><div class="webmention__content p-content"><p>The Web Should Just Work for Everyone <a href="https://t.co/4Hpa4amxgo">https://t.co/4Hpa4amxgo</a> #a11y</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-03T17:50:14+00:00">3 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/KevinRuhGlobal/status/794235250616532993">Permalink</a></div></article></li>
 https://www.aaron-gustafson.com/:
   '1462492800':
     728658688240713728: |-
@@ -9234,6 +9266,10 @@ https://www.aaron-gustafson.com/notebook/im-voting-for-oscar/:
       href="https://twitter.com/AaronGustafson/status/795975455979556865#favorited-by-132791429">Adam
       Spelbring favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2016-11-08T14:14:30+00:00">8 November 2016</time></div></article></li>
+  '1478610311':
+    795975455979556865: |-
+      <li id="webmention-795975455979556865" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/788549577653846016/f9mahox4_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>If you live in the US &amp; can vote, please do. And when you do… consider how your vote affects the next generation <a href="https://t.co/bDE3Q00ldK">https://t.co/bDE3Q00ldK</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-08T13:05:11+00:00">8 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/795975455979556865">Permalink</a></div></article></li>
 https://www.aaron-gustafson.com/notebook/progressive-misconceptions/:
   '1476757726':
     387469: <li id="webmention-387469" class="webmentions__item"><article class="h-cite
@@ -10184,6 +10220,30 @@ https://www.aaron-gustafson.com/notebook/progressive-misconceptions/:
       href="https://twitter.com/AaronGustafson/status/795652670115692544#favorited-by-16741286">Darin
       Dimitroff favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2016-11-07T17:08:11+00:00">7 November 2016</time></div></article></li>
+  '1478533353':
+    795652670115692544: |-
+      <li id="webmention-795652670115692544" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/788549577653846016/f9mahox4_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@deezel I can understand that. Like so many things, dogma can get in the way of finding connections: <a href="https://t.co/QIRBI3eW2P">https://t.co/QIRBI3eW2P</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-07T15:42:33+00:00">7 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/795652670115692544">Permalink</a></div></article></li>
+  '1478268378':
+    794541281523486721: |-
+      <li id="webmention-794541281523486721" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/ivow"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/2478048139/f5xxg5vfzd2l6kznrbah_normal.png" alt="" title="Yves Van Broekhoven"><b class="p-name">Yves Van Broekhoven</b></a></div><div class="webmention__content p-content"><p>“We need to make the web better”</p>
+
+      <p><a href="https://t.co/HzaaA2800j">https://t.co/HzaaA2800j</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-04T14:06:18+00:00">4 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/ivow/status/794541281523486721">Permalink</a></div></article></li>
+  '1478194290':
+    794230537451950088: |-
+      <li id="webmention-794230537451950088" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/SecNewsBot"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/662701599769231360/XUc4W7Xm_normal.jpg" alt="" title="Sec News Bot"><b class="p-name">Sec News Bot</b></a></div><div class="webmention__content p-content"><p>Hacker News - Progressive Misconceptions <a href="https://t.co/v9FXYulazu">https://t.co/v9FXYulazu</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-03T17:31:30+00:00">3 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/SecNewsBot/status/794230537451950088">Permalink</a></div></article></li>
+  '1478194265':
+    794230431663190017: |-
+      <li id="webmention-794230431663190017" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/ryf_feed"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/781713047928700928/fDQZI55u_normal.jpg" alt="" title="ryf_feed"><b class="p-name">ryf_feed</b></a></div><div class="webmention__content p-content"><p>Progressive Misconceptions <a href="https://t.co/7MKJAKHQQg">https://t.co/7MKJAKHQQg</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-03T17:31:05+00:00">3 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/ryf_feed/status/794230431663190017">Permalink</a></div></article></li>
+  '1478193670':
+    794227935687286784: |-
+      <li id="webmention-794227935687286784" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/nathansmith"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1842564571/nathan_bio_photo_normal.png" alt="" title="Nathan Smith"><b class="p-name">Nathan Smith</b></a></div><div class="webmention__content p-content"><p>A good follow-up post on progressive enhancement and the role of JS…</p>
+
+      <p><a href="https://t.co/Z7vvm5ZWNS">https://t.co/Z7vvm5ZWNS</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-03T17:21:10+00:00">3 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/nathansmith/status/794227935687286784">Permalink</a></div></article></li>
 http://route.overnewser.com/programmingwrld/:
   '1476790159':
     788341183374356481: |-
@@ -10311,6 +10371,9 @@ https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
     '793880035367219200': |-
       <li id="webmention-793880035367219200" class="webmentions__item"><article class="h-cite webmention webmention--no-photo webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://christianheilmann.com/2013/02/11/hello-it-is-me-on-twitter/"><b class="p-name">Chris Heilmann</b></a></div><div class="webmention__content p-content"><p>Mac-like Special Characters in Windows <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">aaron-gustafson.com/notebook/mac-l…</a> - <a href="https://twitter.com/AaronGustafson">@aarongustafson</a>, I love ya.</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-02T14:18:44-04:00">2 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/codepo8/status/793880035367219200">Permalink</a></div></article></li>
+    793880035367219200: |-
+      <li id="webmention-793880035367219200" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/codepo8"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/1666904408/codepo8_normal.png" alt="" title="Chris Heilmann"><b class="p-name">Chris Heilmann</b></a></div><div class="webmention__content p-content"><p>Mac-like Special Characters in Windows <a href="https://t.co/28Cr6WU9Sr">https://t.co/28Cr6WU9Sr</a> - @aarongustafson, I love ya.</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-02T18:18:44+00:00">2 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/codepo8/status/793880035367219200">Permalink</a></div></article></li>
   '1478116652':
     391739: <li id="webmention-391739" class="webmentions__item"><article class="h-cite
       webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
@@ -10355,6 +10418,9 @@ https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
     '794215812022185984': |-
       <li id="webmention-794215812022185984" class="webmentions__item"><article class="h-cite webmention webmention--no-photo webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://daverupert.com/"><b class="p-name">Dave Rupert</b></a></div><div class="webmention__content p-content"><p>Thîs Må¢—style áutø–key $k®¡pt for Wïndows is wöndérfül! Thanks <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">aaron-gustafson.com/notebook/mac-l…</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-03T12:33:00-04:00">3 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/davatron5000/status/794215812022185984">Permalink</a></div></article></li>
+    794215812022185984: |-
+      <li id="webmention-794215812022185984" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/davatron5000"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/477460555981025280/JUGkf8zv_normal.jpeg" alt="" title="Dave Rupert"><b class="p-name">Dave Rupert</b></a></div><div class="webmention__content p-content"><p>Thîs Må¢—style áutø–key $k®¡pt for Wïndows is wöndérfül! Thanks @AaronGustafson <a href="https://t.co/7vzDmVWDL1">https://t.co/7vzDmVWDL1</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-03T16:33:00+00:00">3 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/davatron5000/status/794215812022185984">Permalink</a></div></article></li>
   '1478191565':
     391992: <li id="webmention-391992" class="webmentions__item"><article class="h-cite
       webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
@@ -10379,3 +10445,28 @@ https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
       href="https://twitter.com/danielmall/status/795681208218882048">Dan Mall retweeted
       this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2016-11-07T12:35:57-05:00">7 November 2016</time></div></article></li>
+  '1478190792':
+    794215863654219777: |-
+      <li id="webmention-794215863654219777" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/latest_is"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/378800000739935847/5e79ac7e7e80ac44a93beb48dc3950a5_normal.png" alt="" title="The Latest"><b class="p-name">The Latest</b></a></div><div class="webmention__content p-content"><p>Mac-like Special Characters in Windows, From the Notebook of Aaron Gustafson <a href="https://t.co/muhj3UeWyj">https://t.co/muhj3UeWyj</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-03T16:33:12+00:00">3 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/latest_is/status/794215863654219777">Permalink</a></div></article></li>
+  '1478174699':
+    794148365504131073: |-
+      <li id="webmention-794148365504131073" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/lydiamann"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/477564145269620737/IKWsRV79_normal.jpeg" alt="" title="lydiamann"><b class="p-name">lydiamann</b></a></div><div class="webmention__content p-content"><p>Interesting, as I mull over Surface vs Mac product comparisons, struggling with an overloaded MacBook Pro: <a href="https://t.co/vRbwTFnB4R">https://t.co/vRbwTFnB4R</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-03T12:04:59+00:00">3 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/lydiamann/status/794148365504131073">Permalink</a></div></article></li>
+  '1478169046':
+    794124654885515264: |-
+      <li id="webmention-794124654885515264" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/KevinJHill"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/650517669456646144/9y1jmNWO_normal.jpg" alt="" title="KevinJHill"><b class="p-name">KevinJHill</b></a></div><div class="webmention__content p-content"><p><a href="https://t.co/U1SPczVl2R">https://t.co/U1SPczVl2R</a> #windows</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-03T10:30:46+00:00">3 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/KevinJHill/status/794124654885515264">Permalink</a></div></article></li>
+  '1478115422':
+    793899737565003778: |-
+      <li id="webmention-793899737565003778" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/788549577653846016/f9mahox4_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Mac-like Special Characters in Windows <a href="https://t.co/fMd7l9Uuq0">https://t.co/fMd7l9Uuq0</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-02T19:37:02+00:00">2 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/793899737565003778">Permalink</a></div></article></li>
+  '1478113805':
+    793892957640273924: |-
+      <li id="webmention-793892957640273924" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/teylorfeliz"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/604115804/teylorfeliz_normal.jpg" alt="" title="Teylor Feliz"><b class="p-name">Teylor Feliz</b></a></div><div class="webmention__content p-content"><p>Mac-like Special Characters in Windows
+      <a href="https://t.co/swVEZUuRZF">https://t.co/swVEZUuRZF</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-02T19:10:05+00:00">2 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/teylorfeliz/status/793892957640273924">Permalink</a></div></article></li>
+  '1478108440':
+    793870456369606656: |-
+      <li id="webmention-793870456369606656" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/788549577653846016/f9mahox4_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@davatron5000 @danielmall @snookca This may be of interest to ya: <a href="https://t.co/fMd7l9Uuq0">https://t.co/fMd7l9Uuq0</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-02T17:40:40+00:00">2 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/793870456369606656">Permalink</a></div></article></li>
