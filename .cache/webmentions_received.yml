@@ -9186,6 +9186,54 @@ https://www.aaron-gustafson.com/notebook/im-voting-for-oscar/:
     785927200881205248: |-
       <li id="webmention-785927200881205248" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/788549577653846016/f9mahox4_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>I’m voting for Oscar <a href="https://t.co/bDE3Q00ldK">https://t.co/bDE3Q00ldK</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-11T19:37:01+00:00">11 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/785927200881205248">Permalink</a></div></article></li>
+  '1478610418':
+    393397: <li id="webmention-393397" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/Spellacy"><b
+      class="p-name">Michael Spellacy</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/AaronGustafson/status/795975455979556865#favorited-by-132282117">Michael
+      Spellacy favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-11-08T13:06:58+00:00">8 November 2016</time></div></article></li>
+  '1478612497':
+    393403: <li id="webmention-393403" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/jpdevries"><b
+      class="p-name">JP de Vries</b></a></div> <div class="webmention__title p-name"><a
+      href="https://twitter.com/AaronGustafson/status/795975455979556865#favorited-by-17331901">JP
+      de Vries favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-11-08T13:41:37+00:00">8 November 2016</time></div></article></li>
+  '1478612506':
+    393404: <li id="webmention-393404" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/nhilcissistic"><b
+      class="p-name">Nhil Banda</b></a></div> <div class="webmention__title p-name"><a
+      href="https://twitter.com/AaronGustafson/status/795975455979556865#favorited-by-96502975">Nhil
+      Banda favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-11-08T13:41:46+00:00">8 November 2016</time></div></article></li>
+  '1478614426':
+    393420: <li id="webmention-393420" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/sarah_edo"><b
+      class="p-name">Sarah Drasner</b></a></div> <div class="webmention__title p-name"><a
+      href="https://twitter.com/AaronGustafson/status/795975455979556865#favorited-by-813333008">Sarah
+      Drasner favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-11-08T14:13:46+00:00">8 November 2016</time></div></article></li>
+  '1478614444':
+    393421: <li id="webmention-393421" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/seaotta"><b
+      class="p-name">Stephanie</b></a></div> <div class="webmention__title p-name"><a
+      href="https://twitter.com/AaronGustafson/status/795975455979556865#favorited-by-107281171">Stephanie
+      favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-11-08T14:14:04+00:00">8 November 2016</time></div></article></li>
+  '1478614470':
+    393422: <li id="webmention-393422" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/adamspelbring"><b
+      class="p-name">Adam Spelbring</b></a></div> <div class="webmention__title p-name"><a
+      href="https://twitter.com/AaronGustafson/status/795975455979556865#favorited-by-132791429">Adam
+      Spelbring favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-11-08T14:14:30+00:00">8 November 2016</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/progressive-misconceptions/:
   '1476757726':
     387469: <li id="webmention-387469" class="webmentions__item"><article class="h-cite
@@ -10072,6 +10120,70 @@ https://www.aaron-gustafson.com/notebook/progressive-misconceptions/:
       enhancement isn’t dead, but it smells funny</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2016-10-26T21:01:31+00:00">26
       October 2016</time></div></article></li>
+  '1478020086':
+    793499871626063872: |-
+      <li id="webmention-793499871626063872" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/788549577653846016/f9mahox4_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@AlwaysCheyenne Assumptions are also a problem: <a href="https://t.co/QIRBI3eW2P">https://t.co/QIRBI3eW2P</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-01T17:08:06+00:00">1 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/793499871626063872">Permalink</a></div></article></li>
+  '1478020039':
+    793499675487789056: |-
+      <li id="webmention-793499675487789056" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/788549577653846016/f9mahox4_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@IvanODonoghue The polarization isn’t necessary though: <a href="https://t.co/QIRBI3eW2P">https://t.co/QIRBI3eW2P</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-01T17:07:19+00:00">1 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/793499675487789056">Permalink</a></div></article></li>
+  '1478020013':
+    793499566826000384: |-
+      <li id="webmention-793499566826000384" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/788549577653846016/f9mahox4_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@oliklee See also: <a href="https://t.co/QIRBI3eW2P">https://t.co/QIRBI3eW2P</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-01T17:06:53+00:00">1 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/793499566826000384">Permalink</a></div></article></li>
+  '1477935057':
+    793143234260271108: |-
+      <li id="webmention-793143234260271108" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/A11YChi"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/688208321166192640/YW_kWEis_normal.png" alt="" title="A11YChi Meetup"><b class="p-name">A11YChi Meetup</b></a></div><div class="webmention__content p-content"><p>Progressive Misconceptions by @AaronGustafson <a href="https://t.co/3yhfmp2cMX">https://t.co/3yhfmp2cMX</a> #a11y #webdev #pe</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-31T17:30:57+00:00">31 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/A11YChi/status/793143234260271108">Permalink</a></div></article></li>
+  '1477582275':
+    791663557742133248: |-
+      <li id="webmention-791663557742133248" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/788549577653846016/f9mahox4_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@kivi_shapiro See also: <a href="https://t.co/QIRBI3eW2P">https://t.co/QIRBI3eW2P</a> and <a href="https://t.co/wjcsr7lwMG">https://t.co/wjcsr7lwMG</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-27T15:31:15+00:00">27 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/791663557742133248">Permalink</a></div></article></li>
+  '1477536187':
+    791470250168553473: |-
+      <li id="webmention-791470250168553473" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/788549577653846016/f9mahox4_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@gradar Not quite… <a href="https://t.co/QIRBI3eW2P">https://t.co/QIRBI3eW2P</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-27T02:43:07+00:00">27 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/791470250168553473">Permalink</a></div></article></li>
+  '1477584037':
+    389940: <li id="webmention-389940" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/kivi_shapiro"><b
+      class="p-name">Kivi Shapiro</b></a></div> <div class="webmention__title p-name"><a
+      href="https://twitter.com/AaronGustafson/status/791663557742133248#favorited-by-1436314602">Kivi
+      Shapiro favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-10-27T16:00:37+00:00">27 October 2016</time></div></article></li>
+  '1478024121':
+    391341: <li id="webmention-391341" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/oliklee"><b
+      class="p-name">(((Oliver Klee)))</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/AaronGustafson/status/793499566826000384#favorited-by-125621381">(((Oliver
+      Klee))) favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-11-01T18:15:21+00:00">1 November 2016</time></div></article></li>
+  '1478024145':
+    391342: <li id="webmention-391342" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AlwaysCheyenne"><b
+      class="p-name">Cheyenne</b></a></div> <div class="webmention__title p-name"><a
+      href="https://twitter.com/AaronGustafson/status/793499871626063872#favorited-by-216947037">Cheyenne
+      favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-11-01T18:15:45+00:00">1 November 2016</time></div></article></li>
+  '1478026538':
+    '793526931903901696': |-
+      <li id="webmention-793526931903901696" class="webmentions__item"><article class="h-cite webmention webmention--no-photo webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://alwayscheyenne.com/"><b class="p-name">Cheyenne</b></a></div><div class="webmention__content p-content"><p>Thank you Aaron! Also a good read…I like to attack my opinions from all angles! Thanks for sharing…learned lots…</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-01T14:55:38-04:00">1 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AlwaysCheyenne/status/793526931903901696">Permalink</a></div></article></li>
+  '1478087870':
+    '793784178743599104': |-
+      <li id="webmention-793784178743599104" class="webmentions__item"><article class="h-cite webmention webmention--no-photo webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.spiralli.ie/"><b class="p-name">Ivan O'Donoghue</b></a></div><div class="webmention__content p-content"><p>I agree with “JavaScript is an indispensable part of the modern Web” and I prefer graceful degradation for the minority</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-02T07:57:50-04:00">2 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/IvanODonoghue/status/793784178743599104">Permalink</a></div></article></li>
+  '1478538491':
+    393116: <li id="webmention-393116" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/deezel"><b
+      class="p-name">Darin Dimitroff</b></a></div> <div class="webmention__title p-name"><a
+      href="https://twitter.com/AaronGustafson/status/795652670115692544#favorited-by-16741286">Darin
+      Dimitroff favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-11-07T17:08:11+00:00">7 November 2016</time></div></article></li>
 http://route.overnewser.com/programmingwrld/:
   '1476790159':
     788341183374356481: |-
@@ -10082,6 +10194,22 @@ https://www.aaron-gustafson.com/notebook/one-persons-bloat-dot-dot-dot/:
     791303400948391936: |-
       <li id="webmention-791303400948391936" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/788549577653846016/f9mahox4_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>One Person’s Bloat… <a href="https://t.co/65tLonxmct">https://t.co/65tLonxmct</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-26T15:40:07+00:00">26 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/791303400948391936">Permalink</a></div></article></li>
+  '1477516783':
+    389727: <li id="webmention-389727" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/jfc3"><b
+      class="p-name">John F Croston III</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/AaronGustafson/status/791303400948391936#favorited-by-7801382">John
+      F Croston III favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-10-26T21:19:43+00:00">26 October 2016</time></div></article></li>
+  '1477516808':
+    389728: <li id="webmention-389728" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/williamvdodson"><b
+      class="p-name">William Dodson</b></a></div> <div class="webmention__title p-name"><a
+      href="https://twitter.com/AaronGustafson/status/791303400948391936#favorited-by-15504091">William
+      Dodson favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-10-26T21:20:08+00:00">26 October 2016</time></div></article></li>
 http://AARON-GUSTAFSON.COM:
   '1477458001':
     '791142316329340932': |-
@@ -10111,3 +10239,143 @@ http://AARON-GUSTAFSON.COM:
       <li id="webmention-791100035970760704" class="webmentions__item"><article class="h-cite webmention webmention--no-photo webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://vitamintalent.com/SimonHedt"><b class="p-name">Simon Hedt</b></a></div><div class="webmention__content p-content"><p>Learn Modern <a href="https://twitter.com/search?q=%23WebDesign">#WebDesign</a> for Free with <a href="https://twitter.com/AaronGustafson">@aarongustafson</a> &amp; Gymnasium via <a href="https://twitter.com/vitamintalent">@vitamintalent</a> <a href="http://buff.ly/2dNsRFR">buff.ly/2dNsRFR</a>
       <a class="u-mention" href="http://vitamintalent.com/blog/learn-modern-web-design-for-free-with-aaron-gustafson"></a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-25T22:12:01-04:00">25 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/SimonHedt/status/791100035970760704">Permalink</a></div></article></li>
+  '1477486800':
+    '791263108853538816': |-
+      <li id="webmention-791263108853538816" class="webmentions__item"><article class="h-cite webmention webmention--no-photo webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/HollyDeSouzaLee"><b class="p-name">Holly DeSouza Lee</b></a></div><div class="webmention__content p-content"><p>Learn Modern Web Design for Free with <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> via <a href="https://twitter.com/vitamintalent">@vitamintalent</a> <a href="https://twitter.com/search?q=%23webdesign">#webdesign</a> <a href="http://bit.ly/2e2Js9t">bit.ly/2e2Js9t</a>
+      <a class="u-mention" href="http://vitamintalent.com/blog/learn-modern-web-design-for-free-with-aaron-gustafson"></a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-26T09:00:00-04:00">26 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/HollyDeSouzaLee/status/791263108853538816">Permalink</a></div></article></li>
+  '1477494361':
+    '791294818974519296': |-
+      <li id="webmention-791294818974519296" class="webmentions__item"><article class="h-cite webmention webmention--no-photo webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://vitamintalent.com/careers/"><b class="p-name">Andrea Lyn Fitch</b></a></div><div class="webmention__content p-content"><p>Learn Modern Web Design for Free with Aaron Gustafson via <a href="https://twitter.com/vitamintalent">@vitamintalent</a> <a href="https://twitter.com/search?q=%23webdesign">#webdesign</a> <a href="https://twitter.com/AaronGustafson">@aarongustafson</a> <a href="http://bit.ly/2edJbAD">bit.ly/2edJbAD</a>
+      <a class="u-mention" href="http://vitamintalent.com/blog/learn-modern-web-design-for-free-with-aaron-gustafson"></a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-26T11:06:01-04:00">26 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/Andrealyn_Fitch/status/791294818974519296">Permalink</a></div></article></li>
+  '1477525892':
+    '791427072371679232': |-
+      <li id="webmention-791427072371679232" class="webmentions__item"><article class="h-cite webmention webmention--no-photo webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://rwt.io/"><b class="p-name">Jason Pamental</b></a></div><div class="webmention__content p-content"><p>was just in recording another lesson today &amp; <a href="https://twitter.com/GymnasiumTweets">@GymnasiumTweets</a> is looking forward to feedback you have on <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> ‘a course!</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-26T19:51:32-04:00">26 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/jpamental/status/791427072371679232">Permalink</a></div></article></li>
+  '1477526877':
+    '791431201441492993': |-
+      <li id="webmention-791431201441492993" class="webmentions__item"><article class="h-cite webmention webmention--no-photo webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://jden.us/"><b class="p-name">bad hambre</b></a></div><div class="webmention__content p-content"><p>.<a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> is Edge going to support the Surface Dial?</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-26T20:07:57-04:00">26 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/jsdnxx/status/791431201441492993">Permalink</a></div></article></li>
+https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/:
+  '1478108857':
+    391670: <li id="webmention-391670" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/davatron5000"><b
+      class="p-name">Dave Rupert</b></a></div> <div class="webmention__title p-name"><a
+      href="https://twitter.com/AaronGustafson/status/793870456369606656#favorited-by-14839862">Dave
+      Rupert favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-11-02T17:47:37+00:00">2 November 2016</time></div></article></li>
+  '1478108753':
+    '793871767249031168': |-
+      <li id="webmention-793871767249031168" class="webmentions__item"><article class="h-cite webmention webmention--no-photo webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://snook.ca/"><b class="p-name">Snook</b></a></div><div class="webmention__content p-content"><p>I set up a shortcut for – already. :)</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-02T13:45:53-04:00">2 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/snookca/status/793871767249031168">Permalink</a></div></article></li>
+  '1478108879':
+    391672: <li id="webmention-391672" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/jongalloway"><b
+      class="p-name">Jon Galloway</b></a></div> <div class="webmention__title p-name"><a
+      href="https://twitter.com/AaronGustafson/status/793870456369606656#favorited-by-765694">Jon
+      Galloway favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-11-02T17:47:59+00:00">2 November 2016</time></div></article></li>
+  '1478110693':
+    391679: "<li id=\"webmention-391679\" class=\"webmentions__item\"><article class=\"h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only\"><div
+      class=\"webmention__author p-author h-card\"><a class=\"u-url\" href=\"https://twitter.com/matthewsimo\"><b
+      class=\"p-name\">Simo \U0001F983 \U0001F917</b></a></div> <div class=\"webmention__title
+      p-name\"><a href=\"https://twitter.com/AaronGustafson/status/793870456369606656#favorited-by-15865532\">Simo
+      \U0001F983 \U0001F917 favorited this.</a></div><div class=\"webmention__meta\"><time
+      class=\"webmention__pubdate dt-published\" datetime=\"2016-11-02T18:18:13+00:00\">2
+      November 2016</time></div></article></li>"
+  '1478110698':
+    391680: <li id="webmention-391680" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/tylersticka"><b
+      class="p-name">Tyler Sticka</b></a></div> <div class="webmention__title p-name"><a
+      href="https://twitter.com/AaronGustafson/status/793870456369606656#favorited-by-796896">Tyler
+      Sticka favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-11-02T18:18:18+00:00">2 November 2016</time></div></article></li>
+  '1478108844':
+    '793872151170265088': |-
+      <li id="webmention-793872151170265088" class="webmentions__item"><article class="h-cite webmention webmention--no-photo webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://daverupert.com/"><b class="p-name">Dave Rupert</b></a></div><div class="webmention__content p-content"><p>Oh wow. Mac-bindings for special chars? This is a dream.</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-02T13:47:24-04:00">2 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/davatron5000/status/793872151170265088">Permalink</a></div></article></li>
+  '1478110721':
+    391682: <li id="webmention-391682" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AmeliasBrain"><b
+      class="p-name">Amelia Bellamy-Royds</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/AaronGustafson/status/793870456369606656#favorited-by-3122402048">Amelia
+      Bellamy-Royds favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-11-02T18:18:41+00:00">2 November 2016</time></div></article></li>
+  '1478110724':
+    '793880035367219200': |-
+      <li id="webmention-793880035367219200" class="webmentions__item"><article class="h-cite webmention webmention--no-photo webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://christianheilmann.com/2013/02/11/hello-it-is-me-on-twitter/"><b class="p-name">Chris Heilmann</b></a></div><div class="webmention__content p-content"><p>Mac-like Special Characters in Windows <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">aaron-gustafson.com/notebook/mac-l…</a> - <a href="https://twitter.com/AaronGustafson">@aarongustafson</a>, I love ya.</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-02T14:18:44-04:00">2 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/codepo8/status/793880035367219200">Permalink</a></div></article></li>
+  '1478116652':
+    391739: <li id="webmention-391739" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/nizarmah_"><b
+      class="p-name">Nizar</b></a></div> <div class="webmention__title p-name"><a
+      href="https://twitter.com/AaronGustafson/status/793899737565003778#favorited-by-1106920117">Nizar
+      favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-11-02T19:57:32+00:00">2 November 2016</time></div></article></li>
+  '1478118446':
+    391749: <li id="webmention-391749" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/jkphl"><b
+      class="p-name">Joschi Kuphal 吉</b></a></div> <div class="webmention__title p-name"><a
+      href="https://twitter.com/AaronGustafson/status/793899737565003778#favorited-by-1432439216">Joschi
+      Kuphal 吉 favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-11-02T20:27:26+00:00">2 November 2016</time></div></article></li>
+  '1478134645':
+    391798: <li id="webmention-391798" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/jfc3"><b
+      class="p-name">John F Croston III</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/AaronGustafson/status/793870456369606656#favorited-by-7801382">John
+      F Croston III favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-11-03T00:57:25+00:00">3 November 2016</time></div></article></li>
+  '1478182151':
+    391962: <li id="webmention-391962" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/danielmall"><b
+      class="p-name">Dan Mall</b></a></div> <div class="webmention__title p-name"><a
+      href="https://twitter.com/AaronGustafson/status/793870456369606656#favorited-by-799212">Dan
+      Mall favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-11-03T14:09:11+00:00">3 November 2016</time></div></article></li>
+  '1478191559':
+    391990: <li id="webmention-391990" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/philcoffman"><b
+      class="p-name">Phil Coffman</b></a></div> <div class="webmention__title p-name"><a
+      href="https://twitter.com/AaronGustafson/status/793870456369606656#favorited-by-18644328">Phil
+      Coffman favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-11-03T16:45:59+00:00">3 November 2016</time></div></article></li>
+  '1478190780':
+    '794215812022185984': |-
+      <li id="webmention-794215812022185984" class="webmentions__item"><article class="h-cite webmention webmention--no-photo webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://daverupert.com/"><b class="p-name">Dave Rupert</b></a></div><div class="webmention__content p-content"><p>Thîs Må¢—style áutø–key $k®¡pt for Wïndows is wöndérfül! Thanks <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">aaron-gustafson.com/notebook/mac-l…</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-03T12:33:00-04:00">3 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/davatron5000/status/794215812022185984">Permalink</a></div></article></li>
+  '1478191565':
+    391992: <li id="webmention-391992" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/philcoffman"><b
+      class="p-name">Phil Coffman</b></a></div> <div class="webmention__title p-name"><a
+      href="https://twitter.com/AaronGustafson/status/793899737565003778#favorited-by-18644328">Phil
+      Coffman favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-11-03T16:46:05+00:00">3 November 2016</time></div></article></li>
+  '1478346089':
+    392433: <li id="webmention-392433" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/asbjornu"><b
+      class="p-name">Asbjørn Ulsberg</b></a></div> <div class="webmention__title p-name"><a
+      href="https://twitter.com/AaronGustafson/status/793899737565003778#favorited-by-13665432">Asbjørn
+      Ulsberg favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-11-05T11:41:29+00:00">5 November 2016</time></div></article></li>
+  '1478540157':
+    '795681208218882048': <li id="webmention-795681208218882048" class="webmentions__item"><article
+      class="h-cite webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.danielmall.com/"><b
+      class="p-name">Dan Mall</b></a></div> <div class="webmention__title p-name"><a
+      href="https://twitter.com/danielmall/status/795681208218882048">Dan Mall retweeted
+      this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-11-07T12:35:57-05:00">7 November 2016</time></div></article></li>
