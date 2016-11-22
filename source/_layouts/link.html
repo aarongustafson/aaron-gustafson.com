@@ -7,7 +7,7 @@ single: true
 	<article role="article" class="layout-container__primary h-entry">
 		<div class="entry">
 			<header class="entry__header">
-		     	<h1 class="entry__title p-name"><a rel="external" href="{{ page.ref_url }}">{% if site.titlecase %}{{ page.title | titlecase | widont }}{% else %}{{ page.title | widont }}{% endif %}</a></h1>
+		     	<h1 class="entry__title p-name"><a rel="external"{% if post.hreflang %} hreflang="{{ post.hreflang }}"{% endif %} href="{{ page.ref_url }}">{% if site.titlecase %}{{ page.title | titlecase | widont }}{% else %}{{ page.title | widont }}{% endif %}</a></h1>
 				<p class="entry__meta">
 					Published in {{ page.ref_source }}
 					<br>
@@ -21,7 +21,7 @@ single: true
 	
 			<div class="entry__content e-content">
 				{{ content }}
-				<p class="read-on"><a rel="original-article" href="{{ page.ref_url }}">Read on {{ page.ref_source }}</a></p>
+				<p class="read-on"><a rel="original-article"{% if post.hreflang %} hreflang="{{ post.hreflang }}"{% endif %} href="{{ page.ref_url }}">Read on {{ page.ref_source }}</a></p>
 			</div>
 
 			<footer class="entry__footer">
