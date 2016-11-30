@@ -1,31 +1,27 @@
 future:
 
-  - title: Journey to the Web Summit
-    url: http://www.journeytows.net/
-    date: 2016-11-01 09:00:00 -0400
-    location: Online
+  - title: Respond
+    #url: http://lanyrd.com/cfxzmt
+    date: 2017-05-04 09:00:00 -0400
+    location: "Sydney, Australia"
+
+  - title: Respond
+    #url: http://lanyrd.com/cfxzmt
+    date: 2017-05-08 09:00:00 -0400
+    location: "Melbourne, Australia"
+
+  - title: Respond
+    #url: http://lanyrd.com/cfxzmq
+    date: 2017-05-12 09:00:00 -0400
+    location: "Brisbane, Australia"
+
+  
+past:
 
   - title: Build Right Maker Series
     url: https://buildright.io/maker-series/2016/aaron-gustafson
     date: 2016-11-10 09:00:00 -0600
     location: "Dayton, OH USA"
-
-  - title: TBA
-    #url: http://lanyrd.com/cfxzmq
-    date: 2017-05-01 09:00:00 -0400
-    location: "Brisbane, Australia"
-
-  - title: TBA
-    #url: http://lanyrd.com/cfxzmt
-    date: 2017-05-04 09:00:00 -0400
-    location: "Sydney, Australia"
-
-  - title: TBA
-    #url: http://lanyrd.com/cfxzmt
-    date: 2017-05-08 09:00:00 -0400
-    location: "Melbourne, Australia"
-
-past:
 
   - title: SmashingConf Freiburg
     url: http://lanyrd.com/2016/smashingconf-freiburg/

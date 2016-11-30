@@ -611,6 +611,10 @@ https://www.aaron-gustafson.com/notebook/css-variables-are-a-bad-idea/:
       class=\"webmention__meta\"><time class=\"webmention__pubdate dt-published\"
       datetime=\"2016-11-08T12:37:43+00:00\">8 November 2016</time> | <a class=\"webmention__source
       u-url\" href=\"https://twitter.com/jgthms/status/795968540998336512\">Permalink</a></div></article></li>"
+  '1479490332':
+    799666529843322880: |-
+      <li id="webmention-799666529843322880" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/laurenbhowell"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/795836607790084096/zygOgvEk_normal.jpg" alt="" title="Lauren Howell"><b class="p-name">Lauren Howell</b></a></div><div class="webmention__content p-content"><p>So yeah I learned this the hard way… <a href="https://t.co/wVDkhJenvZ">https://t.co/wVDkhJenvZ</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-18T17:32:12+00:00">18 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/laurenbhowell/status/799666529843322880">Permalink</a></div></article></li>
 http://aaron-gustafson.com/notebook/2014/aria-quicktip-labelledby-vs-describedby/:
   '1415217698':
     11803: <li id="webmention-11803" class="webmentions__item"><article class="h-cite
@@ -4859,6 +4863,10 @@ https://www.aaron-gustafson.com/notebook/playing-with-flexbox-and-quantity-queri
     795658465926610944: |-
       <li id="webmention-795658465926610944" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/chuckdowe"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/710872984458633216/ihYWEaDm_normal.jpg" alt="" title="Chuck Dowe"><b class="p-name">Chuck Dowe</b></a></div><div class="webmention__content p-content"><p>Playing With Flexbox and Quantity Queries - <a href="https://t.co/1QbJLvoLrM">https://t.co/1QbJLvoLrM</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-07T16:05:35+00:00">7 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/chuckdowe/status/795658465926610944">Permalink</a></div></article></li>
+  '1479251725':
+    798665739892822016: |-
+      <li id="webmention-798665739892822016" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/CTDWebDesigns"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/460810317572739072/i_7zezqL_normal.png" alt="" title="CTD Web Designs"><b class="p-name">CTD Web Designs</b></a></div><div class="webmention__content p-content"><p>Playing With Flexbox and Quantity Queries - <a href="https://t.co/W1RLHKAYuG">https://t.co/W1RLHKAYuG</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-15T23:15:25+00:00">15 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/CTDWebDesigns/status/798665739892822016">Permalink</a></div></article></li>
 http://www.aaron-gustafson.com/notebook/how-to-apply-progressive-enhancement-when-javascript-seems-like-a-requirement/:
   '1428000045':
     '583700611214008320': <li id="webmention-583700611214008320" class="webmentions__item"><article
@@ -8066,6 +8074,10 @@ https://www.aaron-gustafson.com/notebook/learn-from-the-past-enhance-for-the-fut
     729256032216715264: |-
       <li id="webmention-729256032216715264" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/ana108"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/573161532235911168/zqYh-JKc_normal.jpeg" alt="" title="Ana Travas"><b class="p-name">Ana Travas</b></a></div><div class="webmention__content p-content"><p>Learn from the Past, Enhance for the Future <a href="https://t.co/33DTGsCLrK">https://t.co/33DTGsCLrK</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-05-08T06:26:01-04:00">8 May 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/ana108/status/729256032216715264">Permalink</a></div></article></li>
+  '1479834154':
+    801108625724817408: |-
+      <li id="webmention-801108625724817408" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/chuckdowe"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/710872984458633216/ihYWEaDm_normal.jpg" alt="" title="Chuck Dowe"><b class="p-name">Chuck Dowe</b></a></div><div class="webmention__content p-content"><p>Learn From the Past, Enhance for the Future <a href="https://t.co/AfNCyxaWsO">https://t.co/AfNCyxaWsO</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-22T17:02:34+00:00">22 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/chuckdowe/status/801108625724817408">Permalink</a></div></article></li>
 https://www.aaron-gustafson.com/notebook/slides-the-features-of-highly-effective-forms-at-an-event-apart-nashville/:
   '1458164804':
     '710220781171679232': <li id="webmention-710220781171679232" class="webmentions__item"><article
@@ -8350,6 +8362,10 @@ https://www.aaron-gustafson.com/notebook/offline-first-love-the-idea-hate-the-na
     723111880265441280: |-
       <li id="webmention-723111880265441280" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/_linomari"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/717629987298353152/cYEztvQc_normal.jpg" alt="" title="Lino Mari"><b class="p-name">Lino Mari</b></a></div><div class="webmention__content p-content"><p>Offline First: Love the Idea, Hate the Name <a href="https://t.co/M8IA3mtuth">https://t.co/M8IA3mtuth</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-04-21T07:31:21-04:00">21 April 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/_linomari/status/723111880265441280">Permalink</a></div></article></li>
+  '1479062599':
+    797872486859894784: |-
+      <li id="webmention-797872486859894784" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/vicchow"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/786602615144484868/butjuA6a_normal.jpg" alt="" title="Victor Chow"><b class="p-name">Victor Chow</b></a></div><div class="webmention__content p-content"><p><a href="https://t.co/JqevVo5MVr">https://t.co/JqevVo5MVr</a> Offline First: Love the Idea, Hate the Name via Instapaper</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-13T18:43:19+00:00">13 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/vicchow/status/797872486859894784">Permalink</a></div></article></li>
 https://www.aaron-gustafson.com/notebook/my-top-takeaways-from-the-edge-web-summit-2016/:
   '1459995143':
     '717897779675201536': <li id="webmention-717897779675201536" class="webmentions__item"><article
@@ -10255,6 +10271,10 @@ https://www.aaron-gustafson.com/notebook/progressive-misconceptions/:
       #Enhancement vs #Degradation / cc @_lagspike</p>\n</div><div class=\"webmention__meta\"><time
       class=\"webmention__pubdate dt-published\" datetime=\"2016-11-10T13:31:07+00:00\">10
       November 2016</time> | <a class=\"webmention__source u-url\" href=\"https://twitter.com/render_ghost/status/796706755996741632\">Permalink</a></div></article></li>"
+  '1479832520':
+    801101769820475392: |-
+      <li id="webmention-801101769820475392" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/788549577653846016/f9mahox4_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@youngElPaso See also <a href="https://t.co/QIRBI3eW2P">https://t.co/QIRBI3eW2P</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-11-22T16:35:20+00:00">22 November 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/801101769820475392">Permalink</a></div></article></li>
 http://route.overnewser.com/programmingwrld/:
   '1476790159':
     788341183374356481: |-
