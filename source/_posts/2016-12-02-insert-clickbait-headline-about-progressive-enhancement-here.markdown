@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Insert Clickbait Headline About Progressive Enhancement Here"
+title: "[Insert Clickbait Headline About Progressive Enhancement Here]"
 date: 2016-12-02 14:45:25 -0500
 comments: true
 categories: ["progressive enhancement","web design"]
-description: ""
+description: "Late last week, Josh Korr, a project manager at Viget, posted at length about what he sees as a fundamental flaw with the argument for progressive enhancement. In reading the post, it became clear to me that Josh really doesn’t have a good grasp on progressive enhancement or the reasons its proponents think it’s a good philosophy to follow."
 ---
 
 Late last week, Josh Korr, a project manager at Viget, posted at length about [what he sees as a fundamental flaw with the argument for progressive enhancement](https://www.viget.com/articles/the-case-against-progressive-enhancements-flimsy-moral-foundation). In reading the post, it became clear to me that Josh really doesn’t have a good grasp on progressive enhancement or the reasons its proponents think it’s a good philosophy to follow. Despite claiming to be “an expert at spotting fuzzy rhetoric and teasing out what’s really being said”, Josh makes a lot of false assumptions and inferences. My response would not have fit in a comment, so here it is…
@@ -56,8 +56,8 @@ As I mentioned, I disagree with his characterization of the argument for progres
 
 * **Legal:** Progressive enhancement and accessibility are very closely tied. Whether [brought by legitimate groups](https://en.wikipedia.org/wiki/National_Federation_of_the_Blind_v._Target_Corp.) or [opportunists](http://chrishofstader.com/stop-the-ada-trolls/), lawsuits over the accessibility of your web presence can happen; following progressive enhancement *may* help you avoid them.
 * **Development Costs:** As I mentioned earlier, progressive enhancement is a more cost-effective approach, especially for long-lived projects. Here’s that link again: [The True Cost of Progressive Enhancement](http://blog.easy-designs.net/archives/the-true-cost-of-progressive-enhancement/).
-* **Reach:** The more means by which you enable users to access your products, information, etc., the more opportunities you create to earn their business. Consider that no one though folks would buy big-ticket items on mobile just a few short years ago. Boy, were they wrong. Folks buy cars, planes, and more from their tablets and smartphones on the regular these days.
-* **Reliability:** When your site is down, not only do you lose potential customers, you run the risk of losing existing ones too. There have been numerous incidents where big sites got hosed due to JavaScript dependencies and they didn’t have a fallback. Progressive enhancement ensures users can always do what they came to your site to do, even if it’s not the ideal experience.
+* **Reach:** The more means by which you enable users to access your products, information, etc., the more opportunities you create to earn their business. Consider that no one thought folks would buy big-ticket items on mobile just a few short years ago. Boy, were they wrong. Folks buy cars, planes, and more from their tablets and smartphones on the regular these days.
+* **Reliability:** When your site is down, not only do you lose potential customers, you run the risk of losing existing ones too. There have been [numerous](http://blogs.wsj.com/digits/2011/02/07/gawker-outage-causing-twitter-stir) [incidents](http://www.theguardian.com/technology/2014/jan/28/sky-broadband-blocks-jquery-web-critical-plugin) where big sites got hosed due to JavaScript dependencies and they didn’t have a fallback. Progressive enhancement ensures users can always do what they came to your site to do, even if it’s not the ideal experience.
 
 Hmm, no moral arguments for progressive enhancement there… but let’s continue.
 
@@ -106,13 +106,19 @@ As for the "unstated assumptions", I know for a fact that Tim would never call "
 
 This list is by no means exhaustive nor is it in any particular order; it’s what came immediately to mind for me. Some interfaces may have fewer or more considerations as each is different. And some of these considerations might be in opposition to others depending on the interface. It’s critical that we consider the implications of our design decisions by weighing them against one another before we make any sort of decision about how to progress. Otherwise we open ourselves up to potential problems and the cost of changing things goes up the further into a project we are:
 
-![The cost of changing your mind goes up the further into any project you are. Just ask any contractor you hire to work on your house.](/i/posts/2016-12-05/01.png)
+<figure id="fig-2016-12-06-01" class="media-container">
+{% adaptive_image /i/posts/2016-12-05/01.png %}
+<figcaption>The cost of changing your mind goes up the further into any project you are. Just ask any contractor you hire to work on your house.</figcaption>
+</figure>
 
 As a project manager, I’m sure Josh understands this reality.
 
 As to the "morally problematic" bit, I’ll refer back to [my earlier discussion of business considerations](#working-without-javascript). Sure, morality can certainly be part of it, but I’d argue that it’s unwise to make assumptions about your users regardless. It’s easy to fall into the trap of thinking that all of or users are like us (or like the personas we come up with). My employer, Microsoft, makes a great case for why we should avoid doing this in their [Inclusive Design materials](https://www.microsoft.com/en-us/design/inclusive):
 
-![When we design only for others like us, we exclude everyone who is not like us.](/i/posts/2016-04-11/02.png)
+<figure id="fig-2016-04-11-02" class="media-container">
+{% adaptive_image /i/posts/2016-04-11/02.png %}
+<figcaption>When we design only for others like us, we exclude everyone who is not like us.</figcaption>
+</figure>
 
 If you’re in business, it doesn’t pay to exclude potential customers (or alienate current ones).
 
@@ -129,15 +135,21 @@ I don’t think anyone quoted here would argue that the Web (taken in its entire
 
 In my talk [*Designing with Empathy*](https://vimeo.com/70018634) ([slides](http://www.slideshare.net/AaronGustafson/designing-with-empathy-beyond-tellerrand-2013)), I discussed ["mystery meat" navigation](https://en.wikipedia.org/wiki/Mystery_meat_navigation). I can’t imagine any designer sets out to make their site difficult to navigate, but we are influenced by what we see (and are inspired by) on the web. Some folks took inspiration from web-based art projects like this Toyota microsite:
 
-![[On Toyota’s Mind](http://www.northkingdom.com/cases/i-huvudet-pa-toyota/) is a classic example of mystery meat navigation. It’s a Flash site and you can navigate when you happen to mouse over "hotspots" in the design. I’m pointing to one with a big red arrow here.](/i/posts/2016-12-05/02.png)
+<figure id="fig-2016-12-05-02" class="media-container">
+{% adaptive_image /i/posts/2016-12-05/02.png %}
+<figcaption>[On Toyota’s Mind](http://www.northkingdom.com/cases/i-huvudet-pa-toyota/) is a classic example of mystery meat navigation. It’s a Flash site and you can navigate when you happen to mouse over "hotspots" in the design. I’m pointing to one with a big red arrow here.</figcaption>
+</figure>
 
 Though probably not directly influenced by On Toyota’s Mind, [Yeshiva of Flatbush](https://www.flatbush.org/) was certainly influenced by the concept of "experiential" (which is a polite way of saying "mystery meat") navigation.
 
-![[Yeshiva of Flatbush](https://www.flatbush.org/) uses giant circles for their navigation. Intuitive, right?](/i/posts/2016-12-05/03.png)
+<figure id="fig-2016-12-05-03" class="media-container">
+{% adaptive_image /i/posts/2016-12-05/03.png %}
+<figcaption>[Yeshiva of Flatbush](https://www.flatbush.org/) uses giant circles for their navigation. Intuitive, right?</figcaption>
+</figure>
 
-That’s a design/UX example, but development is no different. How many Single Page Apps have you see out there that really didn’t need to be built that way? Hundreds? Thousands? We often put the cart before the horse and decide to build a site using a particular stack or framework without even considering the type of content we’re dealing with or whether that decision is in the best interest of the project or its end users. That goes directly back to [Tim’s earlier point](#project-priorities).
+That’s a design/UX example, but development is no different. How many Single Page Apps have you see out there that really didn’t need to be built that way? Dozens? We often put the cart before the horse and decide to build a site using a particular stack or framework without even considering the type of content we’re dealing with or whether that decision is in the best interest of the project or its end users. That goes directly back to [Tim’s earlier point](#project-priorities).
 
-Progressive enhancement recognizes that **experience is a continuum** and we all have different needs when accessing the Web. Some are permanent: Low vision or blindness. Some are temporary: Imprecise mousing due to injury. Others are purely situational: Glare when your users are outside on a mobile device or have turned their screen brightness down to conserve battery. When we make our design and development decisions in the service of the project and the users who will access it, everyone wins.
+Progressive enhancement recognizes that [**experience is a continuum**](https://adaptivewebdesign.info/1st-edition/read/chapter-1.html#figure-1-2) and we all have different needs when accessing the Web. Some are permanent: Low vision or blindness. Some are temporary: Imprecise mousing due to injury. Others are purely situational: Glare when your users are outside on a mobile device or have turned their screen brightness down to conserve battery. When we make our design and development decisions in the service of the project and the users who will access it, everyone wins.
 
 ## Real answers to real questions
 
@@ -151,10 +163,10 @@ Folks turning off JavaScript isn’t really the issue. It used to be, but that w
 
 > "I’m not trying to be mean, but I don’t think people in Sudan are going to buy my product."
 
-This isn’t really a question, but it is the kinda thing I hear every now and then. An even more aggressive and ill-informed version I got was "I sell TVs; blind people don’t watch TV". As a practical person, I’m willing ot admit that your organization probably knows its market pretty well. If your products aren’t available in certain regions, it’s probably not worth your while to cater to folks in that region. But here’s some additional food for thought:
+This isn’t really a question, but it is the kinda thing I hear every now and then. An even more aggressive and ill-informed version I got was "I sell TVs; blind people don’t watch TV". As a practical person, I’m willing to admit that your organization probably knows its market pretty well. If your products aren’t available in certain regions, it’s probably not worth your while to cater to folks in that region. But here’s some additional food for thought:
 
 * **When you remove barriers to access for one group, you create opportunities for others.** A perfect example of this is the curb cut. Curb cuts were originally created to facilitate folks in wheelchairs getting across the road. In creating curb cuts, we’ve also enabled kids to ride bicycles more safely on the sidewalk, delivery personnel to more easily move large numbers of boxes from their trucks into buildings, and parents to more easily cross streets with a stroller. Small considerations for one group pay dividends to more. What rational business doesn’t want to enable more folks to become customers?
-* **Geography isn’t everything.** I’m not as familiar with specific design considerations for Sudanese users, but since about 97% of Sudanese people are Muslim, let’s tuck into that. Ignoring translations and right-to-left text, let’s just focus on cultural sensitivity. For instance, a photo of a muscular, shirtless guy is relatively acceptable in much of the West, but [would be incredibly offensive to a traditional Muslim population](http://www.instantshift.com/2015/04/23/website-designs-for-various-cultures/). Similarly [a man wearing red might be considered taboo](https://islamqa.info/en/2843). Now your target audience may not be 100% Muslim, but if you are creating sites for mass consumption, knowing this might help you art direct the project better and build something that doesn’t offend potential customers.
+* **Geography isn’t everything.** I’m not as familiar with specific design considerations for Sudanese users, but since about 97% of Sudanese people are Muslim, let’s tuck into that. Ignoring translations and right-to-left text, let’s just focus on cultural sensitivity. For instance, a photo of a muscular, shirtless guy is relatively acceptable in much of the West, but [would be incredibly offensive to a traditional Muslim population](http://www.instantshift.com/2015/04/23/website-designs-for-various-cultures/). Now your target audience may not be 100% Muslim (nor may your content lend itself to scantily-clad men), but if you are creating sites for mass consumption, knowing this might help you art direct the project better and build something that doesn’t offend potential customers.
 
 Reach is incredibly important for companies and is something the Web enables quite easily. To squander that—whether intentionally or not—would be a shame.
 
@@ -162,7 +174,7 @@ Reach is incredibly important for companies and is something the Web enables qui
 
 Josh spends the next section discussing what he views as failures of the argument for progressive enhancement. He’s of course, still debating it as a purely moral argument, which I think I’ve disproven at this point, but let’s take a look at what he has to say…
 
-The first "fail" he casts on progressive enhancement proponents is that we "are wrong about what’s actually on the Web." Josh, knows best and offers three primary offerings on the Web:
+The first "fail" he casts on progressive enhancement proponents is that we "are wrong about what’s actually on the Web." Josh offers three primary offerings on the Web:
 
 <blockquote cite="https://www.viget.com/articles/the-case-against-progressive-enhancements-flimsy-moral-foundation">
 <ul><li>Business and personal software, both of which have exploded in use now that <a href="http://www.wsj.com/articles/SB10001424053111903480904576512250915629460">software has eaten the world</a> and is accessed primarily via the web</li><li>Copyrighted news and entertainment content (text, photos, music, video, video games)</li><li>Advertising and marketing content</li></ul>
@@ -188,9 +200,11 @@ The second "fail" he identifies is that our "concepts of universal access and mo
 
 * *All software and copyrighted news/entertainment content accessed via the web should be free.* and *Netflix, Spotify, HBO Now, etc. should allow anyone to download original music and video files because some people don’t have JavaScript.* I’ve never heard anyone say that… ever. Advocating a smart development philosophy doesn’t make you anti-copyright or against making money.
 * *Any content that can’t be accessed via old browsers/devices shouldn’t be on the web in the first place.* No one made that judgement. We just think it behooves you to increase the potential reach of your products and to have a workable fallback in case the ideal access scenario isn’t available. You know, smart business decisions.
-* *Everything on the web should have built-in translations into every language.* This would be an absurd idea given that the number of languages in use on this planet top 6,500. Even if you consider that 2,000 of those have less than 1,000 speakers it’s still absurd. I don’t know anyone who would advocate for translation to every language. Of course, last I checked, over 55% of the Web was in English and just shy of 12% of the world speaks English, so…
-* *Honda needs to consider a universal audience for its marketing websites even though (a) its offline advertising is not universal, and (b) only certain people can access or afford the cars being advertised.* Wait, what? Honda doesn’t offer offline advertising in multiple languages? ["The newspaper and radio advertisements will appear in Spanish or English to match the primary language of each targeted media outlet."](http://news.honda.com/newsandviews/article.aspx?id=8340-en) Um… and as for the second argument… making assumptions about target audience and who can or cannot afford your product seems pretty friggin’ elitist. It’s also incredibly subjective. For instance, we did a project for a major investment firm where we needed to support Blackberry 4 & 5 even though there were many more popular smartphones on the market. The reason? They had several high-dollar investors who loved their older phones. You can’t make assumptions.
+* *Everything on the web should have built-in translations into every language.* This would be an absurd idea given that the number of languages in use on this planet top 6,500. Even if you consider that 2,000 of those have less than 1,000 speakers it’s still absurd. I don’t know anyone who would advocate for translation to every language.[^1]
+* *Honda needs to consider a universal audience for its marketing websites even though (a) its offline advertising is not universal, and (b) only certain people can access or afford the cars being advertised.* To you his first point, Honda does actually offline advertising in multiple languages. They even [issue press releases mentioning it](](http://news.honda.com/newsandviews/article.aspx?id=8340-en)): "The newspaper and radio advertisements will appear in Spanish or English to match the primary language of each targeted media outlet." As for his second argument… making assumptions about target audience and who can or cannot afford your product seems pretty friggin’ elitist; it’s also incredibly subjective. For instance, we did a project for a major investment firm where we needed to support Blackberry 4 & 5 even though there were many more popular smartphones on the market. The reason? They had several high-dollar investors who loved their older phones. You can’t make assumptions.
 * *All of the above should also be applied to offline software, books, magazines, newspapers, TV shows, CDs, movies, advertising, etc.* Oh, I see, he’s being intentionally ridiculous.
+
+[^1]: Of course, last I checked, over 55% of the Web was in English and just shy of 12% of the world speaks English, so…
 
 I’m gonna skip the third fail since it presumes morality is the only argument progressive enhancement has and then chastises the progressive enhancement community for not spending time fighting for equitable Internet access and net neutrality and against things like censorship (which, of course, many of us actually do).
 
@@ -222,3 +236,7 @@ Would users benefit from progressive enhancement if it was followed on more site
 Is progressive enhancement right for your project?
 
 *It depends.*
+
+----
+
+My sincere thanks to [Sara Soueidan](https://sarasoueidan.com/), [Baldur Bjarnasun](https://www.baldurbjarnason.com/), [Jason Garber](https://sixtwothree.org/), and [Tim Kadlec](https://timkadlec.com/) for taking the time give me feedback on this piece._
