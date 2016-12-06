@@ -239,4 +239,4 @@ Is progressive enhancement right for your project?
 
 ----
 
-My sincere thanks to [Sara Soueidan](https://sarasoueidan.com/), [Baldur Bjarnasun](https://www.baldurbjarnason.com/), [Jason Garber](https://sixtwothree.org/), and [Tim Kadlec](https://timkadlec.com/) for taking the time give me feedback on this piece._
+_My sincere thanks to [Sara Soueidan](https://sarasoueidan.com/), [Baldur Bjarnasun](https://www.baldurbjarnason.com/), [Jason Garber](https://sixtwothree.org/), and [Tim Kadlec](https://timkadlec.com/) for taking the time give me feedback on this piece._
