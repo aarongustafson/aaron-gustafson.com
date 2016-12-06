@@ -5,6 +5,7 @@ date: 2016-12-06 14:45:25 -0500
 comments: true
 categories: ["progressive enhancement","web design"]
 description: "Late last week, Josh Korr, a project manager at Viget, posted at length about what he sees as a fundamental flaw with the argument for progressive enhancement. In reading the post, it became clear to me that Josh really doesn’t have a good grasp on progressive enhancement or the reasons its proponents think it’s a good philosophy to follow."
+crosspost_to_medium: true
 ---
 
 Late last week, Josh Korr, a project manager at Viget, posted at length about [what he sees as a fundamental flaw with the argument for progressive enhancement](https://www.viget.com/articles/the-case-against-progressive-enhancements-flimsy-moral-foundation). In reading the post, it became clear to me that Josh really doesn’t have a good grasp on progressive enhancement or the reasons its proponents think it’s a good philosophy to follow. Despite claiming to be “an expert at spotting fuzzy rhetoric and teasing out what’s really being said”, Josh makes a lot of false assumptions and inferences. My response would not have fit in a comment, so here it is…
