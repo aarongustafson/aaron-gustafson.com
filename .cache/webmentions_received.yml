@@ -10295,6 +10295,9 @@ https://www.aaron-gustafson.com/notebook/progressive-misconceptions/:
     804970708992454656: |-
       <li id="webmention-804970708992454656" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/gericci"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/804602930766684160/7XR_ZLqE_normal.jpg" alt="" title="ge ricci"><b class="p-name">ge ricci</b></a></div><div class="webmention__content p-content"><p>Amazing reference on PE. “Progressive Enhancement Misconceptions”, by @aarongustafson <a href="https://t.co/m6HVz5KznZ">https://t.co/m6HVz5KznZ</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-12-03T08:49:07+00:00">3 December 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/gericci/status/804970708992454656">Permalink</a></div></article></li>
+    '804970708992454656': |-
+      <li id="webmention-804970708992454656" class="webmentions__item"><article class="h-cite webmention webmention--no-photo webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://gericci.me/"><b class="p-name">ge ricci</b></a></div><div class="webmention__content p-content"><p>Amazing reference on PE. “Progressive Enhancement Misconceptions”, by <a href="https://twitter.com/AaronGustafson">@aarongustafson</a> <a href="https://www.aaron-gustafson.com/notebook/progressive-misconceptions/">aaron-gustafson.com/notebook/progr…</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-12-03T03:49:07-05:00">3 December 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/gericci/status/804970708992454656">Permalink</a></div></article></li>
   '1480707817':
     804773033495953408: |-
       <li id="webmention-804773033495953408" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/788549577653846016/f9mahox4_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@bryanp I think that does happen. I’d equate a lot of the “camp” issues with misunderstandings (and echo chambers): <a href="https://t.co/QIRBI3eW2P">https://t.co/QIRBI3eW2P</a></p>
@@ -10303,6 +10306,22 @@ https://www.aaron-gustafson.com/notebook/progressive-misconceptions/:
     804737265306128384: |-
       <li id="webmention-804737265306128384" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/788549577653846016/f9mahox4_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@gericci @molily @patrick_h_lauke Yep: <a href="https://t.co/QIRBI3eW2P">https://t.co/QIRBI3eW2P</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-12-02T17:21:30+00:00">2 December 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/804737265306128384">Permalink</a></div></article></li>
+  '1480708310':
+    '804775101845491713': |-
+      <li id="webmention-804775101845491713" class="webmentions__item"><article class="h-cite webmention webmention--no-photo webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://notmagic.org/"><b class="p-name">Bryan Powell</b></a></div><div class="webmention__content p-content"><p>I think it happens some too, but then when new devs are labeled as “frameworkistas” it makes me wonder.</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-12-02T14:51:50-05:00">2 December 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/bryanp/status/804775101845491713">Permalink</a></div></article></li>
+  '1480752289':
+    400841: <li id="webmention-400841" class="webmentions__item"><article class="h-cite
+      webmention webmention--no-photo webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/gericci"><b
+      class="p-name">ge ricci</b></a></div> <div class="webmention__title p-name"><a
+      href="https://twitter.com/AaronGustafson/status/804737265306128384#favorited-by-42375791">ge
+      ricci favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2016-12-03T08:04:49+00:00">3 December 2016</time></div></article></li>
+  '1480751928':
+    '804958048980762624': |-
+      <li id="webmention-804958048980762624" class="webmentions__item"><article class="h-cite webmention webmention--no-photo webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://gericci.me/"><b class="p-name">ge ricci</b></a></div><div class="webmention__content p-content"><p>this is awesome! Thanks!!</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-12-03T02:58:48-05:00">3 December 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/gericci/status/804958048980762624">Permalink</a></div></article></li>
 http://route.overnewser.com/programmingwrld/:
   '1476790159':
     788341183374356481: |-
