@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[Insert Clickbait Headline About Progressive Enhancement Here]"
-date: 2016-12-02 14:45:25 -0500
+date: 2016-12-06 14:45:25 -0500
 comments: true
 categories: ["progressive enhancement","web design"]
 description: "Late last week, Josh Korr, a project manager at Viget, posted at length about what he sees as a fundamental flaw with the argument for progressive enhancement. In reading the post, it became clear to me that Josh really doesn’t have a good grasp on progressive enhancement or the reasons its proponents think it’s a good philosophy to follow."
