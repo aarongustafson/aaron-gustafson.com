@@ -107,7 +107,7 @@ As for the "unstated assumptions", I know for a fact that Tim would never call "
 This list is by no means exhaustive nor is it in any particular order; it’s what came immediately to mind for me. Some interfaces may have fewer or more considerations as each is different. And some of these considerations might be in opposition to others depending on the interface. It’s critical that we consider the implications of our design decisions by weighing them against one another before we make any sort of decision about how to progress. Otherwise we open ourselves up to potential problems and the cost of changing things goes up the further into a project we are:
 
 <figure id="fig-2016-12-06-01" class="media-container">
-{% adaptive_image /i/posts/2016-12-05/01.png %}
+{% adaptive_image /i/posts/2016-12-06/01.png %}
 <figcaption>The cost of changing your mind goes up the further into any project you are. Just ask any contractor you hire to work on your house.</figcaption>
 </figure>
 
@@ -135,15 +135,15 @@ I don’t think anyone quoted here would argue that the Web (taken in its entire
 
 In my talk [*Designing with Empathy*](https://vimeo.com/70018634) ([slides](http://www.slideshare.net/AaronGustafson/designing-with-empathy-beyond-tellerrand-2013)), I discussed ["mystery meat" navigation](https://en.wikipedia.org/wiki/Mystery_meat_navigation). I can’t imagine any designer sets out to make their site difficult to navigate, but we are influenced by what we see (and are inspired by) on the web. Some folks took inspiration from web-based art projects like this Toyota microsite:
 
-<figure id="fig-2016-12-05-02" class="media-container">
-{% adaptive_image /i/posts/2016-12-05/02.png %}
+<figure id="fig-2016-12-06-02" class="media-container">
+{% adaptive_image /i/posts/2016-12-06/02.png %}
 <figcaption>[On Toyota’s Mind](http://www.northkingdom.com/cases/i-huvudet-pa-toyota/) is a classic example of mystery meat navigation. It’s a Flash site and you can navigate when you happen to mouse over "hotspots" in the design. I’m pointing to one with a big red arrow here.</figcaption>
 </figure>
 
 Though probably not directly influenced by On Toyota’s Mind, [Yeshiva of Flatbush](https://www.flatbush.org/) was certainly influenced by the concept of "experiential" (which is a polite way of saying "mystery meat") navigation.
 
-<figure id="fig-2016-12-05-03" class="media-container">
-{% adaptive_image /i/posts/2016-12-05/03.png %}
+<figure id="fig-2016-12-06-03" class="media-container">
+{% adaptive_image /i/posts/2016-12-06/03.png %}
 <figcaption>[Yeshiva of Flatbush](https://www.flatbush.org/) uses giant circles for their navigation. Intuitive, right?</figcaption>
 </figure>
 
