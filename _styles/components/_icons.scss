@@ -1,0 +1,23 @@
+/*------------------------------------*\
+    Icons
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+
+    .icon {
+    
+    	@include breakup-placeholder( overflow-hide );
+
+        background-size: contain;
+	
+    	display: inline-block;
+    	vertical-align: baseline;
+	
+    	height: .75em;
+    	width: .75em;
+	
+    	@include rem( margin-right, 7 );
+	
+    }
+    
+}

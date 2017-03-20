@@ -1,0 +1,17 @@
+{% comment %}
+	Load script if disqus comments are enabled and `page.comments` is either empty (index) or set to true
+{% endcomment %}
+
+{% if site.disqus_short_name and page.comments != false %}
+	<script>
+		if ( ! ('AG' in window) ){ window.AG = {}; }
+		window.AG.disqus = {
+			shortname: '{{ site.disqus_short_name }}',
+			script: {% if page.comments == true %}'embed.js'{% else %}'count.js'{% endif %}
+		};
+		var disqus_config = function () {
+			this.page.url = '{{ site.url }}{{ page.url }}';
+			this.page.identifier = '{{ site.url }}{{ page.url }}';
+		};
+	</script>
+{% endif %}

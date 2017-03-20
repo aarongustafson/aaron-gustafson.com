@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    Hero Shot
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+    
+    .hero-shot {
+        position: fixed;
+        top: 0;
+        left: 0;
+        left: 0;
+        right: 0;
+    }
+
+}

@@ -1,0 +1,39 @@
+---
+layout: blog
+title: The Notebook of
+description: "My notebook is a collection of posts, essays, presentations, videos, and recommended reading about a variety of topics from the Web and technology to social justice to marine biology and reef keeping."
+show_title: false
+display_title: Dispatches from the Internets
+footer: true
+comments: false
+sharing: false
+is_index: true
+body_class: notebook
+---
+
+{% for post in paginator.posts reverse %}
+
+	<article class="entry entry--teaser">
+ 		{% include entry_teaser.html %}
+	</article>
+
+	<hr class="rule">
+
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+	<div class="pagination">
+		{% if paginator.previous_page %}
+			<a class="prev" href="/{{ site.notebook_pagination_dir }}/{% if paginator.previous_page != 1 %}pg-{{ paginator.previous_page }}/{% endif %}">&larr; Prev</a>
+		{% endif %}
+		<span class="pagination__pages">
+			page
+			<span class="pagination__pages__current">{{ paginator.page }}</span>
+			of
+			<span class="pagination__pages__current">{{ paginator.total_pages }}</span>
+		</span>
+		{% if paginator.next_page %}
+			<a class="prev" href="/{{ site.notebook_pagination_dir }}/pg-{{ paginator.next_page }}/">Next &rarr;</a>
+		{% endif %}
+	</div>
+{% endif %}

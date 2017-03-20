@@ -1,0 +1,11 @@
+---
+layout: link
+title: "Added extended `srcset` and flipped the state to In Development"
+date: 2015-07-02 18:14:17 -0400
+comments: false
+ref_url: https://github.com/MicrosoftEdge/Status/pull/241
+in_reply_to: https://github.com/MicrosoftEdge/Status/pull/241
+ref_source: Microsoft Edge on Github
+---
+
+No ETA, but `srcset` and `sizes` are coming in Microsoft Edge. So excited about this!

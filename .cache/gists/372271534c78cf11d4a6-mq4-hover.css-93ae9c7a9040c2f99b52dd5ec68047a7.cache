@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="https://assets-cdn.github.com/assets/gist-embed-51ae8299bd14b6c42fb20b0ce07f643175347abaca051f9c55e114bfc98b10b1.css">
+<div id="gist23609938" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-mq4-hover-css" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-css">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="file-mq4-hover-css-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-mq4-hover-css-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-k">@media</span> (hover:hover) {</td>
+      </tr>
+      <tr>
+        <td id="file-mq4-hover-css-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-mq4-hover-css-LC2" class="blob-code blob-code-inner js-file-line">  <span class="pl-c">/* hover-related interactions are A-OK */</span></td>
+      </tr>
+      <tr>
+        <td id="file-mq4-hover-css-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-mq4-hover-css-LC3" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-mq4-hover-css-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-mq4-hover-css-LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-k">@media</span> (hover:on-demand) {</td>
+      </tr>
+      <tr>
+        <td id="file-mq4-hover-css-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-mq4-hover-css-LC5" class="blob-code blob-code-inner js-file-line">  <span class="pl-c">/* hover-related interactions are potentially difficult,</span></td>
+      </tr>
+      <tr>
+        <td id="file-mq4-hover-css-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-mq4-hover-css-LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-c">     maybe do something else instead */</span></td>
+      </tr>
+      <tr>
+        <td id="file-mq4-hover-css-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-mq4-hover-css-LC7" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-mq4-hover-css-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-mq4-hover-css-LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-k">@media</span> (hover:none) {</td>
+      </tr>
+      <tr>
+        <td id="file-mq4-hover-css-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-mq4-hover-css-LC9" class="blob-code blob-code-inner js-file-line">  <span class="pl-c">/* No hover possible :-( */</span></td>
+      </tr>
+      <tr>
+        <td id="file-mq4-hover-css-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-mq4-hover-css-LC10" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+</table>
+
+  </div>
+
+  </div>
+  
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/aarongustafson/372271534c78cf11d4a6/raw/949f48a1550d502edeccf4e8e8392cb687fe1064/mq4-hover.css" style="float:right">view raw</a>
+        <a href="https://gist.github.com/aarongustafson/372271534c78cf11d4a6#file-mq4-hover-css">mq4-hover.css</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div>
+

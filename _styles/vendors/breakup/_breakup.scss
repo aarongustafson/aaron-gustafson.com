@@ -1,0 +1,268 @@
+//////////////////////////////////////////////////////////////////
+// Breakup
+//
+// A tool for defining breakpoints and conditionally loading them.
+//////////////////////////////////////////////////////////////////
+
+
+// Global Variables
+//
+// $breakup-breakpoints: List of many named breakpoints that can be called with
+//     breakup-breakpoint. Each breakpoint is a list containing the breakpoint
+//     name and the media query it describes. Example:
+//
+//     $breakup-breakpoints: (
+//       'palm' '(max-width: 480px)',
+//       'lap' '(min-width: 481px) and (max-width: 1023px)',
+//       'portable' '(max-width: 1023px)',
+//       'desk' '(min-width: 1024px)'
+//     );
+//
+//
+// $breakup-included-blocks: A list of blocks to render in your stylesheet
+//
+//
+// $breakup-naked: Should breakpoint/tweakpoint blocks be wrapped in an @media
+//     declaration? You should set this to true within stylesheets for browsers
+//     which don't support @media, such as oldIE.
+//
+//
+// $breakup-allow-naked: List of named breakpoints and if they should be output
+//     when $breakup-naked is true (by default this is false). This is separate
+//     to $breakup-breakpoints because you may want to configure what
+//     breakpoints are unwrapped on a per stylesheet basis.
+///
+$breakup-breakpoints: () !default;
+$breakup-included-blocks: () !default;
+$breakup-naked: false !default;
+$breakup-breakpoints-allow-naked: () !default;
+$breakup-default-breakpoint: "global";
+$breakup-current-breakpoint: $breakup-default-breakpoint;
+$breakup-placeholders: () !default;
+
+
+
+// Search a list of lists ($haystack) for value ($needle) at a given position
+// ($offset). Returns that item in the list, or false if not found.
+//
+// Example:
+//  list-key-search((
+//    ('key1' 'value1'),
+//    ('key2' 'value2')
+//  ), 'key1', 1) => (key1 value1)
+@function breakup-list-key-search($haystack, $needle, $offset: 1) {
+    @each $haystack-item in $haystack {
+        @if $needle == nth($haystack-item, $offset) {
+            @return $haystack-item;
+        }
+    }
+
+    @return false;
+}
+
+
+
+// Merge a list of breakpoints into an already defined $breakup-breakpoints
+// list. Returns null, as it manipulates the $breakup-breakpoints list directly.
+//
+// $breakpoints: A list of lists in the same style as $breakup-breakpoints, that
+// shall be merged into the $breakup-breakpoints list.
+@function breakup-add-breakpoints($breakpoints) {
+    @each $breakpoint in $breakpoints {
+        // Assign to a junk variable as sass doesn't let you run a function just
+        // for its side effects
+        $breakup-tmp: breakup-add-breakpoint($breakpoint...);
+    }
+    @return null;
+}
+
+
+
+// Wrapper around index as its return value differs from Sass 3.4 upwards.
+// Sass 3.2, 3.3 and libsass return false if the item is not found
+// Sass 3.4 returns null if the item is not found
+// This function follows the Sass 3.4 convention of returning null
+//
+// $list: The list to search through
+// $value: The value to search for
+@function breakup-index($list, $value) {
+    $index-result: index($list, $value);
+    @if $index-result {
+        @return $index-result;
+    }
+    @else {
+        @return null;
+    }
+}
+
+
+
+// Merge a single breakpoint into an already defined $breakup-breakpoints list.
+// Returns null, as it manipulates the $breakup-breakpoints list directly.
+//
+// $breakpoint-name:    The name of the breakpoint to add
+// $value:              The media query value to add
+@function breakup-add-breakpoint($breakpoint-name, $value) {
+    // Check the breakpoint-name doesn't already exist.
+    // If if already exists, throw a warning saying the shall be overwritten
+    @if breakup-list-key-search($breakup-breakpoints, $breakpoint-name) != false {
+        @warn 'Attempting to add "#{$breakpoint-name}" to $breakup-breakpoints but it already exists. Refusing to write the new value.';
+        @return null;
+    }
+
+    $breakup-breakpoints: append($breakup-breakpoints, ($breakpoint-name $value));
+    @return null;
+}
+
+
+
+// Wrapper around a @media block. if $breakup-naked is true then the
+// content is output directly if the declaration has been marked as a fallback
+// breakpoint.
+//
+// $declaration:    A @media declaration to wrap the content block in.
+// $allow-naked:    Should this content should be rendered if the we are
+//                    displaying naked content (i.e. not wrapped in a media
+//                    query).
+@mixin breakup-media($declaration, $allow-naked: false) {
+    @if $breakup-naked != true {
+        @media #{$declaration} {
+            @content;
+        }
+    }
+    @else {
+        // If we are outputting naked content, only items with $allow-naked
+        // shall be rendered
+        @if $allow-naked == true or $allow-naked == 'allow-naked' {
+            @content;
+        }
+    }
+}
+
+
+
+// Include a block in the page if it is included in within
+// $breakup-included-blocks
+//
+// $block-name:     The block name to render
+@mixin breakup-block($block-name) {
+    @if breakup-index($breakup-included-blocks, $block-name) != null {
+        @content;
+    }
+}
+
+
+
+// Look up a named breakpoint from $breakup-breakpoints, and wrap it in a block
+// so that it only appears if it is in the current stylesheet's
+// $breakup-included-blocks.
+//
+// $breakpoint-name:     The breakpoint name to render
+@mixin breakup-breakpoint($breakpoint-name) {
+    $breakpoint: breakup-list-key-search($breakup-breakpoints, $breakpoint-name, 1);
+
+    @if $breakpoint {
+        
+        // overwrite the global variable
+        $breakup-current-breakpoint: $breakpoint-name !global;
+        
+        $declaration: nth($breakpoint, 2);
+
+        // Handle Sass treating a list containing a single item as a single item
+        $allow-naked-list: $breakup-breakpoints-allow-naked;
+        @if length($allow-naked-list) == 1 {
+            $allow-naked-list: $breakup-breakpoints-allow-naked, null;
+        }
+
+        $allow-naked: breakup-index($allow-naked-list, $breakpoint-name) != null;
+
+
+        // For breakpoints, the block name is the same as the breakpoint name
+        @include breakup-block($breakpoint-name) {
+            @include breakup-media($declaration, $allow-naked) {
+                @content;
+            }
+        }
+    }
+    @else {
+        @warn "Breakpoint '#{$breakpoint-name}' does not exist";        
+    }
+}
+
+
+
+// Create an unnamed tweakpoint and wrap it in a block so that it only appears
+// if it is in the current stylesheet's $breakup-included-blocks.
+//
+// $declaration:    A media query that the content shall be wrapped in
+// $block-name:     The block name to display
+// $allow-naked:    Should this content should be rendered if the we are
+//                    displaying naked content (i.e. not wrapped in a media
+//                    query).
+@mixin breakup-tweakpoint($declaration, $block-name, $allow-naked: false) {
+    @include breakup-block($block-name) {
+        @include breakup-media($declaration, $allow-naked) {
+            @content;
+        }
+    }
+}
+
+
+
+// Generate scoped placeholders if they do not exist.
+//
+// $name:    The placeholder name to reserve (or use)
+@mixin breakup-create-placeholder( $name )
+{
+    // Ensure the breakpoints contain the default
+    $create-default: true;
+
+    // If placeholder doesn't exist yet in `$breakup-placeholders` list
+    @if not index( $breakup-placeholders, $name )
+    {
+        // Store its name
+        $breakup-placeholders: append( $breakup-placeholders, $name ) !global;
+        
+        // At root level
+        @at-root
+        {
+            // Looping through `$breakpoints`
+            @each $breakpoint, $declaration in $breakup-breakpoints
+            {
+                @if $breakpoint == $breakup-default-breakpoint
+                {
+                    $create-default: false;
+                }
+                
+                @include breakup-block( $breakpoint ) {
+                    // No allowing naked because we’ll have a naked placeholder already
+                    @include breakup-media( $declaration, false ) {
+                        %#{$name}-#{$breakpoint} {
+                            @content;
+                        }
+                    }
+                }
+            }
+            
+            // Make sure the default is in there
+            %#{$name}-#{$breakup-default-breakpoint} {
+                @content;
+            }
+        }
+    }
+	// If placeholder already exists, just warn the user
+	@else
+	{
+		@warn "Placeholder `#{$name}` already exists.";
+    }
+}
+
+
+
+// Use the scoped placeholders
+//
+// $name:    The placeholder name to reserve (or use)
+@mixin breakup-placeholder( $name )
+{
+    @extend %#{$name}-#{$breakup-current-breakpoint} !optional;
+}

@@ -1,0 +1,28 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}, From the Notebook of {{ site.title }}</title>
+    <link rel="canonical" href="{{ page.canonical_url | prepend: site.baseurl | prepend: site.url }}" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-custom>{% include amp/amp.min.css %}</style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="post-title">{{ page.title | titlecase }}</h1>
+      <p class="post-meta">by <a href="https://www.aaron-gustafson.com/about/">{{ site.author }}</a> on {{ page.date | date:"%d %B %Y" }}</p>
+    </header>
+    <main>
+      {{ page.body | markdownify | amp_images }}
+    </main>
+    <aside class="promo promo--book promo--image">
+	    <img class="promo__image" src="{{ site.data.promos.awd2e.image | replace:"https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?url=","" | replace:"&amp;container=focus&amp;refresh=2592000","" }}" alt="">
+	    <div class="promo__copy">{{ site.data.promos.awd2e.text | markdownify }}</div>
+    </aside>
+    <footer>
+      <small>The content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a>.</small>
+    </footer>
+  </body>
+</html>

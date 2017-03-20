@@ -1,0 +1,17 @@
+---
+layout: link
+title: "Shaper_pmp comments on Everyone has JavaScript, right?"
+description: "A snarky, clever backhanded rant against the JavaScript-only crowd. Good for a chuckle."
+date: 2015-04-25 09:15:09 -0400
+comments: false
+ref_url: http://www.reddit.com/r/javascript/comments/33p3yg/everyone_has_javascript_right/cqn8vpn
+in_reply_to: http://www.reddit.com/r/javascript/comments/33p3yg/everyone_has_javascript_right/cqn8vpn
+ref_source: Reddit
+via:
+ name: Alfonso Gómez-Arzola
+ url: https://twitter.com/agarzola
+---
+
+A snarky, clever backhanded rant against the JavaScript-only crowd. Good for a chuckle:
+
+> They aren't really on your site to read your article or check what time their train leaves - they're really there to marvel at your buttery-smooth, hardware-accelerated 60fps animations and 1337 client-side javascript skillz that mean you can browse the entire site without ever once touching the server after the first page-load... just as long as you don't mind that first page-load being 3MB in size, crapping out on unreliable mobile connections and taking whole seconds between DOM-ready and the UI actually appearing.

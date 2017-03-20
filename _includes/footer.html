@@ -1,0 +1,8 @@
+<footer role="contentinfo" class="footer">
+	<div class="layout-container">
+		{% if page.path %}
+			<p class="footer__fork-me">Did you spot a typo or error? Eesh. <a href="{{ site.repo_url }}{% if page.url contains 'notebook/' and page.title != 'The Notebook of' and page.title != 'The Notebook of' %}_posts/{% endif %}{{ page.path }}">Would you mind fixing it for me?</a> You’re so awesome.</p>
+		{% endif %}
+		<p class="footer__copyright"><b id="license">The content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a>.</b> Interested in how this site was made? <a href="/colophon/">Check this out</a>.</b></p>
+	</div>
+</footer>

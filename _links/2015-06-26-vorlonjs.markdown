@@ -1,0 +1,11 @@
+---
+layout: link
+title: "Vorlon.JS"
+description: "Extensible remote browser debugging via node.js. ’Nuff said."
+date: 2015-06-26 10:34:34 -0400
+comments: false
+ref_url: http://vorlonjs.com
+in_reply_to: http://vorlonjs.com
+---
+
+Extensible remote browser debugging via node.js. ’Nuff said.

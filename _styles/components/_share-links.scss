@@ -1,0 +1,111 @@
+/*------------------------------------*\
+    Share Links
+\*------------------------------------*/
+
+$social-buttons: (
+	facebook: (
+		color: #306199,
+		size: 20,
+		offset: 4
+	),
+	googleplus: (
+		color: #e93f2e,
+		size: 27,
+		offset: 1
+	),
+	linkedin: (
+		color: #007bb6,
+		size: 23,
+		offset: 3
+	),
+	pinterest: (
+		color: #b81621,
+		size: 25,
+		offset: 1
+	),
+	twitter: (
+		color: #26c4f1,
+		size: 22,
+		offset: 3
+	)
+);
+
+@include breakup-breakpoint( "global" ) {
+
+	.share-link {
+
+        background: $color-green;
+		@include rem( border-radius, 6 );
+
+		display: inline-block;
+		margin: 0 .25em;
+		@include rem( margin-top, $default-spacing / 2 );
+		padding: 4px 8px;
+
+		&:link,
+    	&:visited,
+    	&:hover,
+    	&:focus,
+    	&:active {
+			color: $color-white;
+    	}
+
+		@each $site, $config in $social-buttons {
+			
+			&--#{$site} {
+
+        		background: map-get( $config, 'color' );
+        		transition: background .5s;
+
+        		&:hover,
+        		&:focus,
+        		&:active {
+					background: darken( map-get( $config, 'color' ), 20% );
+        		}
+
+        	}
+
+        	&--#{$site} &__icon {
+        		@include rem( width, map-get( $config, 'size' ) );
+        		@include rem( height, map-get( $config, 'size' ) );
+        		@include rem( margin-top, map-get( $config, 'offset' ) );
+        	}
+
+		}
+
+		&__icon  {
+
+			vertical-align: top;
+			display: inline-block;
+
+			path {
+				fill: $color-white;
+			}
+
+		}
+
+		&__text {
+    		@include breakup-placeholder( hidden );
+		}
+
+    }
+
+    // better underlines
+    @supports (background-image:linear-gradient(black,white)) {
+        
+        .share-link:link,
+        .share-link:visited,
+        .share-link:hover,
+        .share-link:focus,
+        .share-link:active,
+        html.wf-active .share-link:link,
+        html.wf-active .share-link:visited,
+        html.wf-active .share-link:hover,
+        html.wf-active .share-link:focus,
+        html.wf-active .share-link:active {
+            background-image: none;
+            text-shadow: none;
+        }
+
+    }
+}

@@ -1,0 +1,3 @@
+<input type="hidden" name="REMEMBERME" value="no">
+<input type="checkbox" id="lilo_checkBox" name="REMEMBERME" value="yes">
+<label for="lilo_checkBox">Remember Me</label>

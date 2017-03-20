@@ -1,0 +1,64 @@
+/*------------------------------------*\
+    Lists
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+
+    ol,
+    ul {
+        line-height: $line-height-default;
+        @include rem( margin-left, $default-spacing);
+        padding-left: 0;
+        
+        nav & {
+            @include breakup-placeholder( delist );
+            margin: 0;
+            
+            li {
+                margin: 0;
+            }
+        }
+    }
+
+    li + li {
+        @include rem( margin-top, $default-spacing/2 );
+    }
+
+    dl {
+        
+	    margin-left: auto;
+	    margin-right: auto;
+        @include rem( padding, 0 $default-spacing );
+        @include rem( max-width, 700 );
+
+        dt {
+            font-weight: bold;
+        }
+        
+        dd {
+            margin-left: 0;
+            margin-top: 0;
+            padding-left: 0;
+
+            break-inside: avoid;
+        }
+
+    }
+
+}
+
+@include breakup-breakpoint( "full" ) {
+
+    // Hanging!
+    ol,
+    ul {
+        margin-left: 0;
+
+        ol,
+        ul {
+            @include rem( margin-left, $default-spacing);
+            @include rem( margin-top, $default-spacing/2);
+        }
+
+    }
+}

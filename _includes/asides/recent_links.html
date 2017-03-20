@@ -1,0 +1,31 @@
+{% unless page.show_links == false %}
+
+	{% assign max_links = "5" %}
+	{% assign counter = "0" %}
+	{% assign show_more = false %}
+
+	<section class="module module--promotional">
+		<h1 class="module__title">Recommended Reading</h1>
+		<ul class="listing listing--links">
+			
+			{% for post in site.posts %}
+				{% if post.ref_url and counter != max_links %}
+					{% capture counter %}{{ counter | plus:1 }}{% endcapture %}
+					<li class="listing__item listing__item--link listing__item--{{ counter }}">
+						<a href="{{ post.url | replace:"notebook/","notebook/links/" }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a>
+					</li>
+				{% elsif counter == max_links %}
+					{% assign show_more = true %}
+				{% endif %}
+			{% endfor %}
+			
+			{% if show_more %}
+				<li class="listing__item listing__item--more">
+					<a href="/notebook/links/">{{ site.data.microcopy.links.more_link }}</a>
+				</li>
+			{% endif %}
+			
+		</ul>
+	</section>
+
+{% endunless %}

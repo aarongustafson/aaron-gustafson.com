@@ -1,0 +1,22 @@
+# Build directory
+_site
+
+# SASS
+.sass-cache
+
+# Jekyll internals
+.jekyll-metadata
+
+# Gulp
+node_modules
+
+# Gems
+.bundle
+vendor
+Gemfile.lock
+
+# System
+.DS_Store
+
+# VSCode
+.vscode

@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Intranets and the Illusion of Control"
+date: 2015-10-20 15:31:58 -0400
+comments: true
+tags: ["web design","progressive enhancement"]
+description: ""
+---
+
+* used to be simple: standard corporate browser
+* tailor sites to a browser’s quirks
+* The web evolved, the sites didn’t
+* that was a big part of why Microsoft introduced version targeting
+* ActiveX and BHOs
+* Edge falls back to IE11
+* mobile happened - few companies have corporate standard mobile devices anymore (they used to—blackberry)
+* BYOD and VPNs, working from home
+* No longer have control over the execution environment
+* No longer have control over the network
+* It’s time for intranets and legacy applications to get updated to web standards or get the boot.
+* It will take time, but the investment in reaching more devices is well worth it. And it doesn’t have to be expensive
+* Progressive enhancement.

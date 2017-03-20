@@ -1,0 +1,24 @@
+---
+layout: blog
+footer: true
+comments: false
+sharing: false
+---
+
+<div id="blog-archives">
+	{% for post in site.categories[page.category] reverse %}
+
+		{% unless post.external-url %}
+
+			<article class="entry entry--teaser">
+		 		{% include entry_teaser.html %}
+			</article>
+
+			{% unless forloop.last %}
+				<hr class="rule">
+			{% endunless %}
+
+		{% endunless %}
+
+	{% endfor %}
+</div>

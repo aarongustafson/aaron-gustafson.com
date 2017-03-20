@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    Buttons
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+
+    button,
+    .button {
+
+        cursor: pointer;
+    
+        background: $color-text-light;
+        color: $color-white;
+        text-shadow: none;
+
+        border: 1px solid $color-text;
+        border-radius: 3px;
+        @include rem( padding, 5 10 );
+
+        &:hover,
+        &:focus {
+            background: $color-green-dark;
+        }
+    
+    }
+}

@@ -1,0 +1,251 @@
+- title: "When Your Code Has To Work: Complying With Legal Mandates"
+  publisher: Smashing Magazine
+  published: 2017-03-02 00:00:00 +0000
+  url: https://www.smashingmagazine.com/2017/03/code-complying-with-legal-mandates/
+  notes: "Ensuring that our websites work across a myriad of different devices, screen sizes and browsers our users depend on to access the web is a tall order, but it's necessary."
+
+- title: "Experimenting With speechSynthesis"
+  publisher: Smashing Magazine
+  published: 2017-02-14 00:00:00 +0000
+  url: https://www.smashingmagazine.com/2017/02/experimenting-with-speechsynthesis/
+  notes: "I’ve been thinking a lot about speech for the last few years. In fact, it’s been a major focus in several of my talks of late, including my well-received Smashing Conference talk “Designing the Conversation.” As such, I’ve been keenly interested in the development of the Web Speech API."
+
+- title: "Building in 10k: Compilation, Optimization, and Compression"
+  publisher: Microsoft Edge Dev Blog
+  published: 2016-09-23 00:00:00 +0000
+  url: https://blogs.windows.com/msedgedev/2016/09/23/10k-compilation-optimization-compression
+  notes: "A behind-the-scenes look at how we compressed & optmized the crap out of the 2016 10k Apart website."
+
+- title: "Building in 10k: Svelte JavaScript Enhancements"
+  publisher: Microsoft Edge Dev Blog
+  published: 2016-09-20 00:00:00 +0000
+  url: https://blogs.windows.com/msedgedev/2016/09/20/10k-svelte-javascript-enhancements/
+  notes: "A behind-the-scenes look at how I used JavaScript in building the 2016 10k Apart website."
+
+- title: "Building in 10k: CSS Structure and Sandboxing"
+  publisher: Microsoft Edge Dev Blog
+  published: 2016-09-08 00:00:00 +0000
+  url: https://blogs.windows.com/msedgedev/2016/09/08/10k-css-structure-and-sandboxing/
+  notes: "A behind-the-scenes look at my CSS strategy for building the 2016 10k Apart website."
+
+- title: "Building in 10k: Designing for Optimization and Performance"
+  publisher: Microsoft Edge Dev Blog
+  published: 2016-09-06 00:00:00 +0000
+  url: https://blogs.windows.com/msedgedev/2016/09/06/10k-for-optimization-performance/
+  notes: "A behind-the-scenes look at the design decisions we made for the 2016 10k Apart website."
+
+- title: "Building in 10k: Markup for Accessibility, Clarity, and Affordance"
+  publisher: Microsoft Edge Dev Blog
+  published: 2016-09-02 00:00:00 +0000
+  url: https://blogs.windows.com/msedgedev/2016/09/02/building-in-10k-markup-for-accessibility-clarity-and-affordance/
+  notes: "A behind-the-scenes look at the markup decisions I made in building the 2016 10k Apart website."
+
+- title: "Building in 10k: Content and Strategy"
+  publisher: Microsoft Edge Dev Blog
+  published: 2016-08-30 00:00:00 +0000
+  url: https://blogs.windows.com/msedgedev/2016/08/30/building-in-10k-content-and-strategy/
+  notes: "A behind-the-scenes look at the strategy and copywriting behind the 2016 10k Apart website."
+
+- title: "Developing Dependency Awareness"
+  publisher: Smashing Magazine
+  published: 2016-05-23 00:00:00 +0000
+  url: https://www.smashingmagazine.com/2016/05/developing-dependency-awareness/
+  notes: "As web designers & developers, we take a lot for granted and it can get us into trouble."
+
+- title: "Interaction is an Enhancement"
+  publisher: A List Apart
+  published: 2015-12-15 00:00:00 +0000
+  url: http://alistapart.com/article/interaction-is-an-enhancement
+  notes: "This is an excerpt from Chapter 5 of <cite>Adaptive Web Design, Second Edition</cite>."
+
+- title: "Establishing Web Standards"
+  publisher: Net Magazine
+  published: 2015-08-01 00:00:00 +0000
+  url: https://medium.com/net-magazine/establishing-web-standards-12f7f4308982#.c6mvi7ijn
+  notes: "How an idea becomes a specification at the W3C."
+
+- title: "Bringing Sanity and Order to Device Testing"
+  publisher: SitePoint
+  published: 2015-06-16 00:00:00 +0000
+  url: http://www.sitepoint.com/bringing-sanity-order-device-testing/
+  notes: "Device testing is time consuming, but you can make it easier on yourself."
+
+- title: "15 Years of Dao"
+  publisher: A List Apart
+  published: 2015-04-07 00:00:00 +0000
+  url: http://alistapart.com/blog/post/15-years-of-dao
+  notes: Collected reflections on John Allsopp’s influential article from 7 April 2000.
+
+- title: "Create Simple, Accessible Forms"
+  publisher: Net Magazine
+  published: 2015-03-15 00:00:00 +0000
+  url: "https://medium.com/net-magazine/create-simple-accessible-web-forms-535cd253dee2#.m8qis9nee"
+  notes: A bit on how to author forms that work.
+
+- title: "Reflecting on the Revamped Sherpa"
+  publisher: Web Standards Sherpa
+  published: 2014-10-28 00:00:00 +0000
+  url: http://webstandardssherpa.com/reviews/reflecting-on-the-revamped-sherpa/
+  notes: I turn the spotlight on the Sherpa site and walks through some of the choices we made for the mobile-first overhaul of this site.
+
+- title: "Q&A: Cross-Browser Audio and Video"
+  publisher: Web Standards Sherpa
+  published: 2013-07-09 00:00:00 +0000
+  url: http://webstandardssherpa.com/ask-the-sherpas/cross-browser-audio-and-video
+  notes: Adding audio and video content to a web page is nowhere near as easy as we might like it to be.
+
+- title: "Q&A: Apple Products and Mobile Assumptions"
+  publisher: Web Standards Sherpa
+  published: 2013-01-10 00:00:00 +0000
+  url: http://webstandardssherpa.com/ask-the-sherpas/apple-products-and-mobile-assumptions
+  notes: I think there is a tendency in our industry to focus on the latest and greatest technology, which many would say includes Apple products.
+
+- title: "Q&A: Finding a Web Designer"
+  publisher: Web Standards Sherpa
+  published: 2012-11-27 00:00:00 +0000
+  url: http://webstandardssherpa.com/ask-the-sherpas/finding-a-web-designer
+  notes: "Finding talented, reliable people is probably one of the hardest tasks a business owner or manager must do. And, unfortunately, there’s no magic formula to find them."
+
+- title: "Q&A: Nested <code>div</code>s"
+  publisher: Web Standards Sherpa
+  published: 2012-10-16 00:00:00 +0000
+  url: http://webstandardssherpa.com/ask-the-sherpas/nested-divs
+  notes: I offer my thoughts on the use of nested <code>div</code>s in your HTML.
+
+- title: Master Mobile Navigation
+  publisher: Net Magazine
+  published: 2012-09-15 00:00:00 +0000
+  url: http://www.creativebloq.com/mobile/master-mobile-navigation-2135807
+  notes: "Users want content. But first you need to ensure they can locate it, whatever their device type. In this article, I discuss top strategies to adapt your navigation to smaller screens."
+
+- title: Build a Smart Mobile Navigation Without Hacks
+  publisher: Net Magazine
+  published: 2012-06-07 00:00:00 +0000
+  url: http://www.creativebloq.com/netmag/build-smart-mobile-navigation-without-hacks-6126265
+  notes: "In this article, I explore creating a progressively-enhanced, CSS-based dropdown navigation menu that works as part of a responsive design."
+
+- title: Cleaner Living Through Content Management
+  publisher: Web Standards Sherpa
+  published: 2011-09-01 00:00:00 +0000
+  url: http://webstandardssherpa.com/reviews/cleaner-living-through-content-management
+  notes: Half the battle with adopting any CMS or framework is to figure out how to best organize your content within it. In this article, I show how Norwin Alliance might approach a CMS migration.
+
+- title: Progressive Enhancement Demystified
+  publisher: Net Magazine
+  published: 2011-06-28 00:00:00 +0000
+  url: http://www.creativebloq.com/design/progressive-enhancement-demystified-6116940
+  notes: "In this excerpt from Chapter 1 of my book, <cite>Adaptive Web Design</cite>, I explain what progressive enhancement really means, how it works, and what it&#8217;s got to do with the Galapagos finches and peanut M&amp;Ms."
+
+- title: Getting up to Speed with Lighthouses
+  publisher: Web Standards Sherpa
+  published: 2011-06-28 00:00:00 +0000
+  url: http://webstandardssherpa.com/reviews/getting-up-to-speed-with-lighthouses
+  notes: "Responding to Worldwide Lighthouses’ request to help them speed up their gallery pages, I discuss file ‘munging’, compression, and organization to improve performance."
+
+- title: Now You See Me
+  publisher: A List Apart
+  published: 2011-06-28 00:00:00 +0000
+  url: http://www.alistapart.com/articles/now-you-see-me/
+  notes: "Showing and hiding content using JavaScript-based page manipulations for tabbed interfaces, collapsible elements, and accordion widgets is a common development pattern. Learn how your choice of hiding mechanism can influence content accessibility in assistive technologies like screen readers in an excerpt from <cite>Adaptive Web Design</cite>."
+
+- title: A Legendary Misunderstanding
+  publisher: Web Standards Sherpa
+  published: 2011-03-31 00:00:00 +0000
+  url: http://webstandardssherpa.com/reviews/a-legendary-misunderstanding
+  notes: "I unearthed code consistency issues at American Express, and shows how we can use <code>fieldset</code> and <code>legend</code> more effectively in the markup of web forms."
+
+- title: Improving the Tweet Box
+  publisher: Web Standards Sherpa
+  published: 2011-03-03 00:00:00 +0000
+  url: http://webstandardssherpa.com/reviews/improving-the-tweet-box
+  notes: "Twitter.com’s redesign was much welcomed and rightly so. I explored its most prominent feature: the tweet box, and looks at how it can be made more accessible with just a few minor adjustments."
+
+- title: Stop Forking with CSS3
+  publisher: A List Apart
+  published: 2010-06-22 00:00:00 +0000
+  url: http://alistapart.com/article/stop-forking-with-css3
+  notes: "We’ve un-forked our JavaScript, but now our CSS is a mess. eCSStender could help us address that bu letting us clean up our prefixes."
+
+- title: Adaptive Layouts with Media Queries
+  publisher: Net Magazine
+  published: 2010-04-01 00:00:00 +0000
+  url: http://www.creativebloq.com/design/adaptive-layouts-media-queries-3112920
+  notes: Create a beautiful website employing adaptive layouts and optimised for the latest mobile devices.
+
+- title: Getting up to Speed with Lighthouses
+  publisher: Web Standards Sherpa
+  published: 2011-06-28 00:00:00 +0000
+  url: http://webstandardssherpa.com/reviews/getting-up-to-speed-with-lighthouses
+  notes: "Responding to Worldwide Lighthouses’ request to help them speed up their gallery pages, I discuss file ‘munging’, compression, and organization to improve performance."
+
+- title: Progressive Enhancement with JavaScript
+  publisher: A List Apart
+  published: 2008-11-04 12:00:00 -0500
+  url: http://www.alistapart.com/articles/progressiveenhancementwithjavascript
+  notes: "Organize an execute JavaScript to streamline delivery and ensure no user is left with a bad experience. Part three of a series."
+
+- title: Progressive Enhancement with CSS
+  publisher: A List Apart
+  published: 2008-10-21 00:00:00 +0000
+  url: http://www.alistapart.com/articles/progressiveenhancementwithcss
+  notes: "Organize multiple style sheets to simplify the creation of environmentally appropriate visual experiences. Support older browsers while keeping your CSS hack-free. Use generated content to provide visual enhancements, and seize the power of advanced selectors to create wondrous (or amusing) effects. Part two of a series."
+
+- title: Understanding Progressive Enhancement
+  publisher: A List Apart
+  published: 2008-10-07 00:00:00 +0000
+  url: http://www.alistapart.com/articles/understandingprogressiveenhancement
+  notes: "Steven Champeon turned web development upside down, and created an instant best practice of standards-based design, when he introduced the notion of designing for content and experience instead of browsers. In part one of the series, I remind you of the principles of progressive enhancement."
+
+- title: Keeping the Hot Side Hot and the Cold Side Cold
+  publisher: Scroll Magazine
+  published: 2008-09-01 00:00:00 +0000
+  url: https://web.archive.org/web/20150910061902/http://scrollmagazine.com/number-1/keeping-the-hot-side-hot
+  notes: "Applying 1980s’ fast-food logic to JavaScript and CSS separation: techniques for keeping your presentation out of your scripts."
+
+- title: "Beyond DOCTYPE: Web Standards, Forward Compatibility, and IE8"
+  publisher: A List Apart
+  published: 2008-01-21 12:00:00 -0500
+  url: http://www.alistapart.com/articles/beyonddoctype
+  notes: "For seven years, the DOCTYPE switch has stood designers and developers in good stead as a toggle between standards mode and quirks mode. But when IE7, with its greatly improved support for standards, “broke the web,” it revealed the flaw in our toggle. The quest was on to find a more reliable ensurer of forward compatibility. Is version targeting the answer?"
+
+- title: Ruining the User Experience
+  publisher: A List Apart
+  published: 2007-03-27 00:00:00 +0000
+  url: http://www.alistapart.com/articles/ruininguserexperience
+  notes: "Anticipating your users’ needs is the key to making a good impression; it’s the little things that matter most. In this article, I explain why progressive enhancement is synonymous with good service."
+
+- title: Push my <code>button</code>
+  publisher: Digital Web Magazine
+  published: 2006-09-26 00:00:00 +0000
+  url: http://www.digital-web.com/articles/push_my_button
+  notes: "If there’s one element I think doesn’t get enough respect, it’s gotta be button. It’s played second fiddle to input in tutorials and form examples for as long as I can remember."
+
+- title: Getting Started with Ajax
+  publisher: A List Apart
+  published: 2006-03-07 12:00:00 -0500
+  url: http://www.alistapart.com/articles/gettingstartedwithajax
+  notes: "In this excerpt from O’Reilly’s <cite>Web Design in a Nutshell</cite>, I take you aside for a little chat about the birds and the bees. Or maybe about Ajax."
+
+- title: Jeremy Keith Interview
+  publisher: Digital Web Magazine
+  published: 2005-10-10 00:00:00 +0000
+  url: http://www.digital-web.com/articles/jeremy_keith
+  notes: "I interviewed Jeremy Keith for <cite>Digital Web Magazine</code> shortly after his book <cite>DOM Scripting: Web Design with JavaScript and the Document Object Model</cite> was published. We talk JavaScript, web standards, and more."
+
+- title: Improving Link Display for Print
+  publisher: A List Apart
+  published: 2005-09-20 00:00:00 +0000
+  url: http://www.alistapart.com/articles/improvingprint
+  notes: "Some time ago, Eric Meyer showed you how to add URIs to the printed version of your pages using print styles. Sometimes, though, too many inline URIs can make pages hard to read. I created a JavaScript add-on that’ll have you loving your linkage again."
+
+- title: More Usability Frosting for Your Accessibility Cake
+  publisher: Digital Web Magazine
+  published: 2005-04-20 00:00:00 +0000
+  url: http://www.alistapart.com/articles/eatcake/
+  notes: "Mac users are spoiled. It’s a fact we Windows folks have to live with—when it comes to usable interfaces, Mac applications are far ahead. Even Microsoft makes better products for OS X than for Windows."
+
+- title: Let Them Eat Cake
+  publisher: A List Apart
+  published: 2004-04-16 00:00:00 +0000
+  url: http://www.alistapart.com/articles/eatcake/
+  notes: "A growing debate pits accessibility against usability. From our point of view, it’s like pitting peanut butter against jelly. This article helps you create a page that is both usable and accessible, saving readers the trouble of scrolling with a little help from JavaScript and the Document Object Model."

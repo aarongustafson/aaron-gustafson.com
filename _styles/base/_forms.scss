@@ -1,0 +1,114 @@
+/*------------------------------------*\
+    Form Styles
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+
+	form {
+	    @include rem( margin, $margin-default );
+	    
+	    ul,
+	    ol {
+	        list-style: none;
+	    }
+	    
+	    li {
+	        margin-bottom: .5em;
+	    }
+	}
+
+	.fields {
+    
+	    @include breakup-placeholder( delist );
+    
+	    &__group {
+        
+	        @include rem( margin, $margin-default );
+        
+	        &:last-child {
+	            margin: 0;
+	        }
+        
+	        label {
+            
+	            @include rem( font-size, $font-size-small );
+	            font-weight: bold;
+            
+	            display: block;
+            
+	        }
+        
+	        input,
+	        select,
+	        textarea {
+            
+	            color: $color-border;
+            
+	            @include rem( font-size, $font-size-small );
+            
+	            box-sizing: border-box;
+	            border: 1px solid;
+	            @include rem( margin, 5 0 );
+	            @include rem( padding, 5 );
+            
+	            transition: background-color $default-transition, color $default-transition;
+            
+	        }
+        
+	        input,
+	        textarea {
+            
+	            background: $color-background;
+	            color: $color-text;
+                
+                display: block;
+	            width: 100%;
+            
+	        }
+        
+	        // Search display
+	        input[type=search] {
+	    		-webkit-appearance: textfield;
+	    	}
+        
+	        // don’t let selects overflow
+	        select {
+	            @include rem( font-size, $font-size-h3 );
+	            max-width: 100%;
+	        }
+        
+	        &__note {
+	            @include rem( font-size, $font-size-small );
+	        }
+        
+	    }
+    
+	    &__required {
+	        color: #f00;
+	        font-weight: normal;
+	    }
+    
+	    .validation-error input,
+	    .validation-error select,
+	    .validation-error textarea {
+	        color: #f00;
+	    }
+    
+	}
+
+	@include moz {
+	    .fields select {
+	        @include rem( font-size, $font-size-small );
+	    }
+	}
+}
+
+@include breakup-breakpoint( "medium" ) {
+	input,
+    textarea {
+		width: 80%;
+    }
+	.fields__note {
+        width: 80%;
+    }
+}

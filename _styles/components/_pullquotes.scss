@@ -1,0 +1,50 @@
+/*------------------------------------*\
+    Pullquotes
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+
+	.quotable {
+		// unhide
+		display: block;
+		font-size: 1.25em;
+
+		@include rem( margin, 33 0 $default-spacing );
+		@include rem( padding, $default-spacing 0 );
+		border: solid $color-grey-light;
+		border-width: 2px 0;
+
+		position: relative;
+		margin-right: -25%;
+
+		&:before,
+		&:after {
+			display: block;
+			position: absolute;
+			left: 0;
+			right:0;
+			text-align: center;
+			height: .9em;
+    		font-size: 2em;
+		}
+		&:before {
+			content: '\201C';
+			top: -.5em;
+		}
+		&:after {
+			content: '\201D';
+			bottom: -.5em;
+		}
+	}
+
+}
+
+@include breakup-breakpoint( "medium" ) {
+
+	.quotable {
+		float: right;
+		@include rem( margin-left, $default-spacing );
+		width: 50%;
+	}
+
+}

@@ -1,0 +1,62 @@
+/*------------------------------------*\
+    Text-level semantics
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+
+    // Abbreviations
+    abbr {
+        cursor: help;
+        border: 0;
+        &[title] {
+            border: 0;
+        }
+    }
+
+
+    // Mark
+    mark {
+        background: transparent;
+        color: $color-text;
+        color: inherit;
+        font-weight: normal;
+        font-weight: inherit;
+        font-style: normal;
+        font-style: inherit;
+    }
+    
+    // Pseudo-semantics
+    b {
+        font-weight: inherit;
+    }
+    i {
+        font-style: inherit;
+    }
+
+
+    // Superscript & subscript
+    sub, sup {
+    	@include rem( font-size, $font-size-tiny );
+    	font-style: inherit;
+    	font-weight: inherit;
+    	position: relative;
+    }
+    sub {
+    	bottom: -1em;
+    }
+    sup {
+    	bottom: 1em;
+    }
+
+
+    time {
+        white-space: nowrap;
+    }
+
+
+    // Hidden
+    .hidden {
+        @include breakup-placeholder( hidden );
+    }
+
+}

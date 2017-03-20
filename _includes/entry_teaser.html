@@ -1,0 +1,53 @@
+{% capture excerpted %}{{ post.content | has_excerpt }}{% endcapture %}
+
+{% unless post.no_header %}
+	<header class="entry__header">
+		<h1 class="entry__title entry-title">
+			{% if post.ref_url %}
+				<a rel="bookmark" href="{{ post.ref_url }}">{{ post.title | widont }}</a>
+			{% else %}
+				<a rel="bookmark" href="{{ root_url }}{{ post.url }}">{{ post.title | widont }}</a>
+			{% endif %}
+		</h1>
+		{% unless post.meta == false %}
+			<p class="entry__meta">
+				{% if post.ref_url %}        		
+					{{ site.data.microcopy.links.date_prefix }}
+				{% else %}
+					{{ site.data.microcopy.notebook.date_prefix }}
+				{% endif %}
+				{% include post/date.html %}
+				{% if post.via %}
+					<br><abbr title="via">↬</abbr> <a href="{{ post.via.url }}">{{ post.via.name }}</a>
+				{% endif %}
+      		</p>
+		{% endunless %}
+  	</header>
+{% endunless %}
+
+<div class="entry__content entry__content--excerpt entry-content">
+	{{ post.content | excerpt | markdownify }}
+</div>
+ 	
+{% if excerpted == 'true' and post.ref_source %}
+	<footer class="entry__footer">
+		<p>
+			You can <a rel="bookmark" href="{{ root_url }}{% if post.ref_source %}{{ post.url | replace:"notebook/","notebook/links/" }}{% else %}{{ post.url }}{% endif %}">finish reading
+			my thoughts in less than {{ post.content | reading_time_as_i }}</a> or your can
+			<a rel="original-article" href="{{ post.ref_url }}">read the original in {{ post.ref_source }}</a>
+		</p>
+	</footer>
+{% elsif excerpted == 'true' %}
+	<footer class="entry__footer">
+		<p>
+			<a rel="bookmark" href="{{ root_url }}{% if post.ref_source %}links/{% endif %}{{ post.url }}">You can finish reading
+			<cite>{{ post.title }}</cite> in less than {{ post.content | reading_time_as_i }}</a>
+		</p>
+	</footer>
+{% elsif post.ref_source %}
+	<footer class="entry__footer">
+		<p>
+			<a rel="original-article" href="{{ post.ref_url }}">Read in {{ post.ref_source }}</a>
+		</p>
+	</footer>
+{% endif %}

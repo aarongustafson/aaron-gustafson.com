@@ -1,0 +1,28 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title><![CDATA[{{ site.title | cdata_escape }} - Latest Links]]></title>
+	<link href="{{ site.url }}/atom-latest-links.xml" rel="self"/>
+	<link href="{{ site.url }}/"/>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<id>{{ site.url }}/</id>
+	<author>
+		<name><![CDATA[{{ site.author | strip_html }}]]></name>
+		{% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
+	</author>
+	<generator uri="http://octopress.org/">Octopress</generator>
+
+	{% for post in site.posts limit: 20 %}
+		{% if post.ref_url %}
+			<entry>
+				<title type="html"><![CDATA[{% if site.titlecase %}{{ post.title | titlecase | cdata_escape }}{% else %}{{ post.title | cdata_escape }}{% endif %}]]></title>
+				<link href="{{ site.url }}{{ post.url | replace:"notebook/","notebook/links/" }}"/>
+				<updated>{{ post.date | date_to_xmlschema }}</updated>
+				<id>{{ site.url }}{{ post.id | replace:"notebook/","notebook/links/" }}</id>
+				<content type="html"><![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}<p><a rel="full-article" href="{{ post.ref_url }}">Read on {{ post.ref_source }}&nbsp;&rarr;</a></p>]]></content>
+			</entry>
+		{% endif %}
+	{% endfor %}
+</feed>

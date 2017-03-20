@@ -1,0 +1,54 @@
+/*------------------------------------*\
+    Body-level settings
+\*------------------------------------*/
+@include breakup-breakpoint( "global" ) {
+
+	// CSS Device Adaptation
+	// http://dev.w3.org/csswg/css-device-adapt/
+	// ==========================================================================
+	@-moz-viewport{
+	    width: device-width;
+	    zoom: 1.0;
+	}
+	@-ms-viewport{
+	    width: device-width;
+	    zoom: 1.0;
+	}
+	@-o-viewport{
+	    width: device-width;
+	    zoom: 1.0;
+	}
+	@-webkit-viewport{
+	    width: device-width;
+	    zoom: 1.0;
+	}
+	@viewport{
+	    width: device-width;
+	    zoom: 1.0;
+	}
+
+
+	// Basline element definitions
+	// ==========================================================================
+	html {
+	    @include baseline-guide;
+
+	    body {
+	    	@include breakup-placeholder( text );
+	    	@include breakup-placeholder( font-smoothing );
+
+	    	background: $color-background;
+	    	color: $color-text;
+
+	        font-family: $font-stack-body;
+	        font-weight: $font-weight-sansserif;
+
+	        margin: 0 auto;
+			//@include rem( max-width, 960 );
+
+			word-wrap: break-word;
+			overflow-wrap: break-word;
+	    }
+
+	}	
+}

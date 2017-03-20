@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    Buttons
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+
+    .book {
+        
+        margin-top: 0;
+        
+        & + & {
+            @include rem( margin-top, $default-spacing );
+        }
+        
+        &__subtitle {
+            @include rem( font-size, $font-size-caption );
+        }
+        
+    }
+    
+}

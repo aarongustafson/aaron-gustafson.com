@@ -1,0 +1,124 @@
+/*------------------------------------*\
+    Search
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+
+    .form--search {
+
+        [type=search] {
+            @include rem( font-size, $font-size-nav );
+
+            appearance: none;
+            border: 1px solid;
+            border-radius: 3px;
+            @include rem( margin, 0 5 0 0 );
+        }
+
+        button {
+            font-weight: bold;
+            @include rem( font-size, $font-size-small );
+        }
+
+    }
+
+    // Better layout: Flexbox
+    @supports (display: flex) {
+        [role=search] {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+        }
+    }
+}
+
+@include breakup-breakpoint( "medium" ) {
+
+    .form--search {
+        background: rgba( $color-white,.9 );
+        
+        box-sizing: content-box;
+        margin: 0;
+        overflow: hidden;
+        width: 1px;
+        height: 1px;
+        
+        opacity: 0;
+        transition: opacity .5s;
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    
+        clip: rect(1px 1px 1px 1px);
+        clip-path: rect(1px 1px 1px 1px);
+        
+        &:target,
+        &.toggleable--open {
+            overflow: visible;
+            width: auto;
+            height: auto;
+    
+            bottom: 0;
+            right: 0;
+
+            opacity: 1;
+            
+            clip: initial;
+            clip-path: initial;
+            
+        }
+
+    }
+
+    .form-control--search {
+        
+        @include rem( margin, 0 5 0 0 );
+        width: 70%;
+        
+        input[type=search] {
+            width: 100%;
+            margin: 0;
+        }
+        
+    }
+
+    // Better layout: Flexbox
+    @supports (display: flex) {
+        
+        .form--search:target,
+        .form--search.toggleable--open {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        [role=search] {
+            flex-direction: column;
+            width: 70%;
+            
+            .form-control--search {
+                margin: 0;
+                width: auto;
+                
+                input[type=search] {
+                    @include rem( font-size, $font-size-h2 );
+                    
+                    box-sizing: border-box;
+                    @include rem( padding, 5 10 );
+                    width: 100%;
+                }
+            }
+            
+            button {
+                @include rem( font-size, $font-size-h2 );
+                @include rem( margin-top, $default-spacing );
+            }
+            
+        } 
+        
+    }
+
+}

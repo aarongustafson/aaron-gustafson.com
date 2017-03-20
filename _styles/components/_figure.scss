@@ -1,0 +1,11 @@
+/*------------------------------------*\
+    Media Elements
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+
+    .figure {
+        @include rem( margin, $default-spacing auto );
+    }
+
+}

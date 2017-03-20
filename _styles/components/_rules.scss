@@ -1,0 +1,15 @@
+/*------------------------------------*\
+    Rules
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+    .rule {
+        @include rem( max-width, 220 );
+    }
+}    
+
+@include breakup-breakpoint( "medium" ) {
+    .rule--optional {
+        display: none;
+    }
+}

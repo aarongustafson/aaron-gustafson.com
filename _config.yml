@@ -1,0 +1,174 @@
+# ----------------------- #
+#      Site Configs       #
+# ----------------------- #
+
+url: https://www.aaron-gustafson.com
+title: "Aaron Gustafson"
+subtitle: "Web Design Author, Evangelist, Practitioner, and Teacher"
+author: "Aaron Gustafson"
+simple_search: "https://www.google.com/search"
+description: "Hi there. My name is Aaron Gustafson and I work on the web."
+
+# Default date format is "ordinal" (resulting in "July 22nd 2007")
+# You can customize the format as defined in
+# http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
+# Additionally, %o will give you the ordinal representation of the day
+date_format: "%d %B %Y"
+
+# URLs
+root: /
+blog_index_dir: /notebook/
+permalink: /notebook/:title/
+code_dir: /downloads/code
+
+# RSS / Email (optional) subscription links (change if using something like Feedburner)
+subscribe_rss: "/atom.xml"
+subscribe_rss_posts: "/atom-latest-posts.xml"
+subscribe_rss_links: "/atom-latest-links.xml"
+subscribe_email:
+# RSS feeds can list your email address if you like
+email:
+
+# Navigation
+navigation:
+  - text: <b class="hidden">A Bit </b>About<b class="hidden"> Me</b>
+    url: /about/
+  - text: <b class="hidden">Entries in My </b>Notebook
+    url: /notebook/
+  - text: <b class="hidden">A List of My </b>Speaking<b class="hidden"> Engagements</b>
+    url: /speaking-engagements/
+  - text: <b class="hidden">A List of My </b>Publications
+    url: /publications/
+  - text: <b class="hidden">Links to </b>Interviews<b class="hidden"> I’ve Given</b>
+    url: /appearances/
+  - text: <b class="hidden">The Requisite </b>Contact<b class="hidden"> Form</b>
+    url: /contact/
+
+# Content Config
+category_title_prefix: "Browse by Tag: "
+excerpt_link: "Continue Reading"  # "Continue reading" link text at the bottom of excerpted articles
+excerpt_separator: "<!-- more -->"
+notebook_paginate: 10                       # Posts per page on the blog index
+notebook_pagination_dir: "notebook"
+notebook_paginate_path: "notebook/pg-:num/"    # Directory base for pagination URLs eg. /blog/page/2/
+linkblog_pagination_dir: "notebook/links"
+linkblog_paginate_path: "notebook/links/pg-:num/"    # Directory base for pagination URLs eg. /blog/page/2/
+permalink_label: "&infin;"
+permalink_label_feed: "&infin; Permalink"
+#linklog_marker: "&rarr;"
+#linklog_marker_position: after
+#linklog_marker_position_feed: after
+standard_post_marker:
+
+# Asides
+default_asides: [asides/recent_posts.html]
+blog_index_asides: [asides/about.html,asides/networks.html,asides/recent_links.html]
+post_asides: [asides/about.html,asides/events.html]
+page_asides: [asides/about.html,asides/networks.html,asides/events.html]
+
+# ----------------------- #
+#      Jekyll Configs     #
+# ----------------------- #
+titlecase: true
+markdown: kramdown
+encoding: utf-8
+rdiscount:
+  extensions:
+    - autolink
+    - footnotes
+    - smart
+highlighter: pygments
+gems:
+  - fastimage
+  - jekyll-crosspost-to-medium
+  - jekyll-redirect-from
+  - jekyll-related-posts
+  - jekyll-time-to-read
+  - jekyll-typogrify
+  - nokogiri
+  - octopress-date-format
+exclude:
+  # Ruby & Gems
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - vendor
+  # Gulp
+  - gulpfile.js
+  - package.json
+  # Content
+  - README.md
+  # Caches
+  - node_modules
+  - .cache
+  - .sass-cache
+  # Git
+  - .gitignore
+  # Docker
+  - docker-compose.yml
+
+# Project Structure
+destination: _site
+plugins_dir: _plugins
+category_dir: notebook/tags
+defaults:
+  - scope:
+      path: ""
+      type: links
+    values:
+      layout: link
+collections:
+  links:
+    output: true
+    permalink: /notebook/links/:title
+
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+
+# Open Graph
+og:
+  image: /i/og-logo.png
+  type: website
+
+# Disqus Comments
+disqus_short_name: aarongustafson
+disqus_show_comment_count: true
+
+# Google Analytics
+google_analytics_tracking_id: "UA-176472-5"
+
+# Google Tag Manager
+google_tag_manager_id: "GTM-P3MJZJ"
+
+# Github repo path
+repo_url: "https://github.com/aarongustafson/aarongustafson.github.io/tree/source/source/"
+
+# Gists
+gist_tag:
+  cache: .cache/gists
+
+# Crosspost to Medium
+jekyll-crosspost_to_medium:
+  enabled: true
+  cache: .cache
+  status: draft
+  license: cc-40-by-sa
+  text: '<p><i>This post originally appeared <a href=\"#{url}\" rel=\"canonical\">on my blog</a>.</i></p>'
+
+# Crossposts
+crosspost_caches:
+  Medium: ./.cache/medium_crossposted.yml
+
+# Adaptive Images Config
+adaptive_image:
+  cache: 2592000
+  srcset: 
+    - 1920
+    - 600
+    - 320
+  sizes:
+    - 100vw
+
+# AMP
+ampdir: amp

@@ -1,0 +1,46 @@
+/*------------------------------------*\
+    Page
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+
+    .page {
+        
+        &__title {
+            @include rem( margin-bottom, $default-spacing );
+        }
+        
+        &__footer {
+            border-top: 1px solid $color-rule;
+            @include rem( padding-top, $default-spacing );
+        }
+
+    }
+    
+}
+
+@include breakup-breakpoint( "medium" ) {
+
+    @supports (display:flex) {
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        .alert,
+        [role=banner] {
+            order: 1;
+        }
+        [role=navigation] {
+            order: 2;
+        }
+        [role=main] {
+            order: 3;
+        }
+        [role=contentinfo] {
+            order: 4;
+        }
+
+    }
+    
+}

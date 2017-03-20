@@ -1,0 +1,179 @@
+/*------------------------------------*\
+    Mixins
+\*------------------------------------*/
+
+// Baseline-guide for vertical rhythm
+@mixin baseline-guide() {
+    background: linear-gradient( #FF6BA6 1px, transparent 1px );
+    background-size: 100% .75; // 12px grid
+}
+
+// Better Underline
+// Based on the work of Gary Hepting
+// http://codepen.io/ghepting/pen/tLnHK/
+@mixin underline( $color: $color-foreground, $offset: 2px, $width: 1px, $background-color: $color-background )
+{
+    background-image: linear-gradient(
+        bottom,
+        transparent,
+        transparent $offset,
+        $color $offset,
+        $color ($offset + $width),
+        transparent ($offset + $width)
+    );
+    border-bottom-width: 0;
+    text-shadow: (0 - $width) (0 - $width) 0 $background-color,
+                 $width (0 - $width) 0 $background-color,
+                 (0 - $width) $width 0 $background-color,
+                 $width $width 0 $background-color;
+}
+
+// REM values
+// Adapted from http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
+@mixin rem( $property, $values )
+{
+    $px: ();
+    $rem: ();
+    
+    @each $value in $values
+    {
+        @if $value == 0 or $value == auto
+        {
+            $px : append( $px , $value );
+            $rem: append( $rem, $value );
+        }
+        @else
+        {
+            $unit: unit( $value );
+            $val: parseInt( $value );
+            
+            // enforce pixels on unitless measurements
+            @if $unit == ""
+            {
+                $value: $value + 0px;
+                $unit: "px";
+            }
+            
+            // assume pixels
+            @if $unit == "px"
+            {
+                $px : append( $px,  $value );
+                $rem: append( $rem, ( $val / $font-size-default + rem ) );
+            }
+            
+            @if $unit == "rem"
+            {
+                $px : append( $px,  ( $val * $font-size-default + px ) );
+                $rem: append( $rem, $value );
+            }
+        }
+    }
+    
+    @if $px == $rem
+    {
+        #{$property}: $px;
+    }
+    @else
+    {
+        #{$property}: $px;
+        #{$property}: $rem;
+    }
+}
+
+// Experimental Block Constructor
+@mixin experimental-block ( $pre: "", $post: "" )
+{
+	$pre: unquote( $pre );
+	$post: unquote( $post );
+	#{$pre}-webkit-#{$post} {
+	    @content;
+	}
+	#{$pre}-khtml-#{$post} {
+	    @content;
+	}
+	#{$pre}-moz-#{$post} {
+	    @content;
+	}
+	#{$pre}-ms-#{$post} {
+	    @content;
+	}
+	#{$pre}-o-#{$post} {
+	    @content;
+	}
+	#{$pre}#{$post} {
+		@content;
+	}
+}
+
+
+// Inline separator
+@mixin inline-separator( $char: "|" ) {
+	&::before {
+		content: "#{$char}";
+		padding: 0 .5em 0 .25em;
+	}
+}
+
+// Background-images
+@mixin background-image ( $img_base, $img_path, $hide_text: true ) {
+	
+    background: transparent url(#{$css_images}/#{$img_base}.png) center center no-repeat;
+    background-size: contain;
+	
+	@if $hide_text
+	{
+    	@include breakup-placeholder( overflow-hide );
+	}
+    
+	// SVG shim in JS for Android 2.3
+	html.with-svg & {
+	    background-image: url(#{$css_images}/#{$img_base}.svg);
+	}
+}
+
+// Triangle
+@mixin triangle( $size: ( "base": 10, "length": 10 ), $direction: right, $color: #000 )
+{
+    $base: map-get( $size, "base" ) / 2;
+    $length: map-get( $size, "length" );
+    
+    width: 0;
+    height: 0;
+    border: 0px solid transparent;
+    
+    // Right
+    @if $direction == right
+    {
+        border-width: ( 0px + $base ) 0 ( 0px + $base ) ( 0px + $length );
+        border-width: ( 0rem + $base / $font-size-default ) 0 ( 0rem + $base / $font-size-default ) ( 0rem + $length / $font-size-default );
+        border-left-color: $color;
+    }
+    // Left
+    @elseif $direction == left
+    {
+        border-width: ( 0px + $base ) ( 0px + $length ) ( 0px + $base ) 0;
+        border-width: ( 0rem + $base / $font-size-default ) ( 0rem + $length / $font-size-default ) ( 0rem + $base / $font-size-default ) 0;
+        border-right-color: $color;
+    }
+    // Up
+    @elseif $direction == up
+    {
+        border-width: 0 ( 0px + $base ) ( 0px + $length ) ( 0px + $base );
+        border-width: 0 ( 0rem + $base / $font-size-default ) ( 0rem + $length / $font-size-default ) ( 0rem + $base / $font-size-default );
+        border-bottom-color: $color;
+    }
+    // Down
+    @elseif $direction == down
+    {
+        border-width: ( 0px + $length ) ( 0px + $base ) 0 ( 0px + $base );
+        border-width: ( 0rem + $length / $font-size-default ) ( 0rem + $base / $font-size-default ) 0 ( 0rem + $base / $font-size-default ) ;
+        border-top-color: $color;
+    }
+}
+
+
+@mixin moz {
+    @-moz-document url-prefix() {
+        @content;
+    }
+}

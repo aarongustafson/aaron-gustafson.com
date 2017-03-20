@@ -1,0 +1,11 @@
+---
+layout: link
+title: "Dear Microsoft, I'm confused."
+date: 2015-10-30 10:36:28 -0400
+comments: false
+ref_url: http://go.sitepoint.com/t/ViewEmail/y/FC49DD479BFA7019/BB1C957ADE9DB90816B21F2806CB3AEB
+in_reply_to: http://go.sitepoint.com/t/ViewEmail/y/FC49DD479BFA7019/BB1C957ADE9DB90816B21F2806CB3AEB
+ref_source: SitePoint
+---
+
+A funny love letter (of sorts) to Microsoft from SitePoint’s Managing Editor.

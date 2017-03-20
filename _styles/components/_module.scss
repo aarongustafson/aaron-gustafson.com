@@ -1,0 +1,19 @@
+/*------------------------------------*\
+    Modules
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+    
+    .module {
+        
+        &__title {
+            @include rem( font-size, $font-size-h3 );
+        }
+        
+        * + * {
+            @include rem( margin-top, $default-spacing / 2 );
+        }
+        
+    }
+    
+}

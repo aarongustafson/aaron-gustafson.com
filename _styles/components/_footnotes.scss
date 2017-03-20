@@ -1,0 +1,40 @@
+/*------------------------------------*\
+    Footnotes
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+
+    a.footnote {
+        
+        display: inline-block;
+        padding: .5em 1em;
+        margin: -.5em -1em;
+
+        @supports (background-image:linear-gradient(black,white)) {
+            html.wf-active & {
+                background: transparent;
+                text-shadow: none;
+            }
+        }
+    }
+
+    .footnotes {
+        
+        ol {
+            @include rem( font-size, $font-size-small );
+            
+            margin-left: 0;
+            padding-left: 2em;
+        }
+        
+        a[rev=footnote] {
+            margin-left: .5em;
+        }
+
+        * + * {
+            margin-top: 0;
+        }
+        
+    }
+
+}

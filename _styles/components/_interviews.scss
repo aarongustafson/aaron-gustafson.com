@@ -1,0 +1,14 @@
+/*------------------------------------*\
+    Interviews
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+
+    .interview {
+
+        &__attribution {
+            font-weight: bold;
+        }
+    
+    }
+}

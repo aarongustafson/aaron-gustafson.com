@@ -1,0 +1,11 @@
+---
+layout: link
+title: "VS Code v0.10.1"
+date: 2015-11-18 14:25:14 -0500
+comments: false
+ref_url: https://code.visualstudio.com/Updates
+in_reply_to: https://code.visualstudio.com/Updates
+ref_source: Visual Studio Code
+---
+
+Looks like the [Visual Studio Code](https://code.visualstudio.com) team has been busy. There are a ton of new features in the latest update to the [Atom](https://atom.io/)-based text editor. Oh, and [it’s open source too](http://github.com/microsoft/vscode).

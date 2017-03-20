@@ -1,0 +1,13 @@
+---
+layout: link
+title: "Online regex tester and debugger"
+description: "If you struggle with regular expressions, you should check out this tool."
+twitter_text: "If you struggle with regular expressions, you should check out this tool."
+date: 2015-11-18 14:07:24 -0500
+comments: false
+ref_url: https://regex101.com/
+in_reply_to: https://regex101.com/
+ref_source: RegEx 101
+---
+
+If you struggle with regular expressions, you should check out this tool. It reminds me a lot of [RegEx Buddy](http://www.regexbuddy.com/), a Windows program that was an immense help in trying to wrap my head around writing regular expressions.

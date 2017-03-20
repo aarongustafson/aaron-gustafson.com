@@ -1,0 +1,790 @@
+/*------------------------------------*\
+    Navigation
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+
+    [role=navigation] {
+
+        @include rem( font-size, $font-size-small );
+        text-align: center;
+
+        @include rem( padding-bottom, $default-spacing );
+
+        p {
+            margin: 0;
+        }
+
+    }
+
+    .main__navigation {
+
+    	a:link,
+        a:visited,
+        a:hover,
+        a:focus {
+        	background: transparent;
+        	text-shadow: none;
+        }
+    }
+
+}
+
+@include breakup-breakpoint( "medium" ) {
+
+    .main-navigation {
+    	
+    	display: flex;
+    	flex-direction: row;
+
+    	&__item {
+			padding: .1em .5em;
+
+			&:first-child {
+				padding-left: 0;
+			}
+			&:last-child {
+				padding-right: 0;
+			}
+    	}
+
+    }
+
+}
+
+//.nav-jump {
+//    background: map-get( $nav-colors, "background" );
+//    color: #fff;
+//    
+//    @include breakup-placeholder( overflow-hide );
+//    display: none;
+//    width: 40px;
+//    height: 40px;
+//    
+//    position: absolute;
+//    right: 0;
+//    top: 0;
+//    @include rem( margin, 52 20 0 0 );
+//    
+//    &:hover,
+//    &:focus {
+//        background: darken( map-get( $nav-colors, "background" ), 10% );
+//        color: $color-white;
+//    }
+//    
+//    &:before {
+//        content: " ";
+//        
+//        border-top: 4px double $color-white;
+//        border-bottom: 1px solid $color-white;
+//        display: block;
+//        width: 12px;
+//        height: 2px;
+//        
+//        position: absolute;
+//        left: 14px;
+//        top: 10px;
+//    }
+//    
+//    &:after {
+//        content: "Menu";
+//        
+//        @include rem( font-size, 9 );
+//        text-align: center;
+//        text-indent: 0;
+//        text-transform: uppercase;
+//        
+//        position: absolute;
+//        left: 0;
+//        right: 0;
+//        bottom: 5px;
+//    }
+//    
+//    // < 280px
+//    @include breakup-media( "only screen and (min-width: 17.5em)" ) {
+//        display: block;
+//        @include rem( margin, 12 20 0 0 );
+//    }
+//
+//    @include breakup-breakpoint( "full" ) {
+//        @include breakup-placeholder( hidden );
+//    }
+//}
+//
+//.nav {
+//    
+//    background: map-get( $nav-colors, "background" );
+//    color: $color-white;
+//
+//    font-family: $font-stack-serif;
+//    @include rem( font-size, $font-size-h4 );
+//    
+//    .layout-container {
+//        padding: 0;
+//    }
+//    
+//    &__label {
+//        background: $color-white;
+//        @include box-shadow( 0px 2px 3px map-get( $nav-colors, "background" ) );
+//        color: $color-text-light;
+//        
+//        @include breakup-placeholder( small-caps );
+//        font-family: $font-stack-sansserif;
+//        font-weight: $font-weight-sansserif-semibold;
+//        
+//        display: block;
+//        margin: 0 0 -1px;
+//        @include rem( padding, ( $default-spacing / 4 ) $default-spacing );
+//        
+//        position: relative;
+//        z-index: 1;
+//    }
+//    
+//    &__list,
+//    &__subnav {
+//        @include breakup-placeholder( delist );
+//        margin: 0;
+//    }
+//    
+//    &__item {
+//        color: inherit;
+//
+//        border: 0;
+//        display: block;
+//        padding: 0;
+//        //@include rem( padding, 5 0 );
+//        
+//        &--get-started .button {
+//            
+//            .icon {
+//                display: none;
+//            }
+//            
+//            // < Full
+//            @include breakup-media( "only screen and (max-width: 59.9375em)" ) {
+//                
+//                @include box-shadow( none );
+//                background: transparent;
+//                color: $color-white;
+//                
+//                font-weight: normal;
+//                text-align: left;
+//                text-transform: none;
+//                
+//                border-width: 0;
+//                display: block;
+//                @include rem( padding, 5 $default-spacing 15 );
+//                
+//                &:hover,
+//                &:focus,
+//                &:active {
+//                    background: map-get( $nav-colors, "primary-open" );
+//                    border-color: map-get( $nav-colors, "border" );
+//                    color: $color-white;
+//                }
+//                
+//                .icon {
+//                    display: inline-block;
+//                }
+//                
+//                [class$=-alt] {
+//                    display: none;
+//                }
+//            }
+//            
+//        }
+//        
+//    }
+//
+//    &__link {
+//        background: map-get( $nav-colors, "primary" );
+//        color: $color-white;
+//        color: inherit;
+//
+//        border: 1px solid map-get( $nav-colors, "border" );
+//        border-width: 1px 0;
+//        display: block;
+//        @include rem( padding, 9 $default-spacing );
+//        
+//        &:hover,
+//        &:focus,
+//        &:active {
+//            background: map-get( $nav-colors, "primary-open" );
+//            border-color: map-get( $nav-colors, "border" );
+//            color: $color-white;
+//        }
+//    }
+//    
+//    &__subnav &__item {
+//        @include rem( font-size, $font-size-subtext );
+//        
+//        &--promo {
+//            display: none;
+//        }
+//    }
+//    &__subnav &__link {
+//       background: transparent;
+//
+//       font-family: $font-stack-sansserif;
+//
+//       border-width: 0;
+//       @include rem( padding, ( $default-spacing / 4 ) $default-spacing );
+//       
+//       &:hover,
+//       &:focus,
+//       &:active {
+//           background: map-get( $nav-colors, "primary-open" );
+//       }
+//    }
+//    &__subnav &__item--first &__link {
+//        @include rem( padding, 15 $default-spacing 5 );
+//    }
+//    &__subnav &__item--last &__link {
+//        @include rem( padding, 5 $default-spacing 15 );
+//    }
+//    
+//    
+//    &__primary &__item--back {
+//        display: none;
+//    }
+//    
+//    // Collapsible sections
+//    .collapsible {
+//        
+//        position: relative;
+//        
+//        // color
+//        & > .nav__link {
+//            background-color: map-get( $nav-colors, "primary-open" );
+//        }
+//        &--collapsed > .nav__link {
+//        
+//            background-color: map-get( $nav-colors, "primary" );
+//        
+//            &:hover,
+//            &:focus,
+//            &:active {
+//                background: map-get( $nav-colors, "primary-open" );
+//                border-color: map-get( $nav-colors, "border" );
+//                color: $color-white;
+//            }
+//        }
+//        
+//        // toggling the height of the subnav
+//        .nav__subnav {
+//            overflow-x: hidden;
+//            height: auto;
+//            margin-bottom: 0;
+//
+//            @include transition( height $default-transition, margin-bottom 0 $default-transition );
+//        }
+//        &--collapsed .nav__subnav {
+//            height: 1px !important; // keeps it available
+//            margin-bottom: -2px;
+//        }
+//        
+//        &__button {
+//            background: transparent;
+//
+//            border: 0;
+//            display: block;
+//            @include rem( height, 38 );
+//            @include rem( width, 60 );
+//            
+//            position: absolute;
+//            top: 1px;
+//            @include rem( right, 5 );
+//            z-index: 1;
+//            
+//            &:hover,
+//            &:focus,
+//            &:active {
+//                background: map-get( $nav-colors, "primary-open" );
+//            }
+//            
+//            .icon {
+//                height: 9px;
+//                width: 15px;
+//            }
+//            
+//            &__text {
+//                @include breakup-placeholder( hidden );
+//            }
+//        }
+//        
+//    }
+//    
+//    // < Full
+//    @include breakup-media( "only screen and (max-width: 59.9375em)" ) {
+//
+//        @include breakup-breakpoint( "small" ) {
+//        
+//            $grid-columns: map-get( $grid-breakpoints, "small" );
+//        
+//            // Grid [---]---
+//            &__list > &__item {
+//                @include span( ( $grid-columns / 2 ) of $grid-columns fluid );
+//                clear: left;
+//            }
+//
+//            // Grid ---[---]
+//            &__list > :nth-child( even ) {
+//                clear: none;
+//                margin-right: 0;
+//            }
+//        
+//            &__list > &__item--get-started {
+//                clear: both;
+//                float: none;
+//                width: 100%;
+//            }
+//        
+//        }
+//    
+//        @include breakup-breakpoint( "medium" ) {
+//
+//            $grid-columns: map-get( $grid-breakpoints, "medium" );
+//        
+//            // Grid [---]---
+//            &__list > &__item {
+//                @include span( ( $grid-columns / 2 ) of $grid-columns fluid );
+//                clear: left;
+//            }
+//
+//            // Grid ---[---]
+//            &__list > :nth-child( even ) {
+//                clear: none;
+//                margin-right: 0;
+//            }
+//        
+//            &__list > &__item--get-started {
+//                clear: both;
+//                float: none;
+//                width: 100%;
+//            }
+//        
+//        }
+//
+//    }
+//    
+//    // Full size
+//    @include breakup-breakpoint( "full" ) {
+//        
+//        &__list {
+//            display: table;
+//            border-collapse: collapse;
+//
+//            max-width: px-to-ems( 960 );
+//            margin: 0 auto;
+//        }
+//        
+//        // Main Nav
+//        &__primary {
+//            background: $color-black;
+//            
+//            position: absolute;
+//            @include rem( top, 250 );
+//            left: 0;
+//            right: 0;
+//            
+//            & > .nav__label {
+//                @include breakup-placeholder( hidden );
+//            }
+//        }
+//        &__list--main {
+//            width: 100%;
+//            max-width: 100%;
+//            position: relative;
+//        }
+//        &__list--main > &__item {
+//
+//            text-align: center;
+//
+//            border: 0;
+//            display: table-cell;
+//            margin: 0;
+//            
+//            &:first-child {
+//                padding-top: 0;
+//            }
+//            
+//            &--here > .nav__link,
+//            &--parent-here > .nav__link {
+//
+//                position: relative;
+//
+//                &::after {
+//                    content: "\00A0";
+//
+//                    border-top: 6px solid $color-yellow;
+//
+//                    display: block;
+//                    height: 0;
+//                    @include rem( width, 114 );
+//                    overflow: hidden;
+//                    
+//                    position: absolute;
+//                    left: 50%;
+//                    margin-left: -57px;
+//                    bottom: 0;
+//                }
+//            }
+//            
+//            &--back {
+//                display: none;
+//            }
+//
+//        }
+//        &__list--main > &__item > &__link,
+//        &__list--main &__label {
+//            background: $color-black;
+//            color: $color-white;
+//            @include box-shadow( none );
+//            
+//            @include rem( font-size, $font-size-nav );
+//            font-family: $font-stack-serif;
+//            font-weight: normal;
+//            letter-spacing: 0;
+//            text-transform: none;
+//            white-space: nowrap;
+//            
+//            border-width: 0;
+//            @include rem( padding, 10 20 );
+//			//line-height: 1;
+//            
+//            &:hover,
+//            &:focus {
+//                color: $color-yellow;
+//            }
+//        }
+//
+//        // Subnav
+//        &__subnav {
+//            
+//            @include box-shadow( 2px 2px 0 rgba( #000, .5 ) );
+//            background: $color-white;
+//            color: $color-text;
+//            
+//            text-align: left;
+//            
+//            display: block;
+//            @include rem( padding-right, 450 );
+//            @include opacity( 0 );
+//            min-height: 0;
+//            max-height: 0;
+//            overflow: hidden;
+//            
+//            position: absolute;
+//            top: 100%;
+//            left: 0;
+//            right: 0;
+//            z-index: 0;
+//			
+//			body.home & {
+//				margin-top: -1px;
+//            }
+//
+//            @include transition( max-height .6s ease, min-height .5s ease, opacity .5s linear );
+//            
+//            // For testing only
+//            // display: none;
+//            // .nav__item:nth-child( 7 ) & {
+//            //     display: block;
+//            // }
+//            
+//        }
+//        
+//        // Hover
+//        &__subnav--test,
+//        &__item:hover &__subnav,
+//        &__item--focused &__subnav {
+//            @include opacity( 1 );
+//            @include rem( max-height, 300 );
+//            @include rem( min-height, 220 );
+//            z-index: 10;
+//        }
+//        &__list--main &__item--here > &__link,
+//        &__list--main &__item--parent-here > &__link,
+//        &__list--main &__item--focused > &__link,
+//        &__list--main &__item--here > &__label,
+//        &__list--main &__item--parent-here > &__label,
+//        &__list--main &__item--focused > &__label {
+//            color: $color-yellow;
+//        }
+//        &__subnav &__item {
+//            
+//            border: 1px solid $color-rule;
+//            border-width: 0 1px 1px 0;
+//            display: block;
+//            margin: 0;
+//            width: 49.799%;
+//            
+//            float: left;
+//            
+//            // Promo = Ajax-loaded
+//            &--promo {
+//                
+//                @include box-sizing( border-box );
+//                border-width: 0;
+//                @include rem( padding, $default-spacing );
+//                @include rem( padding-left, ( $default-spacing * 2 ) + 166 );
+//                @include rem( width, 450 );
+//                
+//                position: absolute;
+//                top: 0;
+//                right: 0;
+//                bottom: 0;
+//                
+//                &__title {
+//                    color: $color-text-light;
+//                    
+//                    @include breakup-placeholder( small-caps );
+//                    @include rem( font-size, $font-size-teeny-tiny );
+//                    font-weight: $font-weight-sansserif-semibold;
+//                    
+//                    @include rem( margin-bottom, 10 );
+//                }
+//                
+//                img {
+//                    @include border-radius( 5px );
+//
+//                    display: block;
+//                    overflow: hidden;
+//                    @include rem( height, 160 );
+//                    @include rem( width, 166 );
+//                    
+//                    position: absolute;
+//                    @include rem( top, $default-spacing );
+//                    @include rem( left, $default-spacing );
+//                }
+//                
+//                &__text {
+//                    @include rem( font-size, $font-size-h4 );
+//                }
+//                
+//            }
+//
+//        }
+//        &__subnav &__link:first-child {
+//            @include rem( padding, $default-spacing );
+//        }
+//        &__subnav &__item--here &__link,
+//        &__subnav &__link:hover,
+//        &__subnav &__link:focus {
+//            background: map-get( $nav-colors, "primary" );
+//            color: $color-white;
+//            
+//            border-left: solid map-get( $nav-colors, "background" );
+//            @include rem( border-left-width, 5 );
+//            @include rem( padding-left, 15 );
+//        }
+//        
+//        // Get Started
+//        &__item--get-started &__subnav {
+//            background: map-get( $nav-colors, "background" );
+//            color: $color-white;
+//            
+//            // undo spacing
+//            padding: 0;
+//            // no min-height
+//            min-height: 0;
+//            // let it be a natural width
+//            left: auto;
+//            
+//            @include rem( width, 225 );
+//        }
+//        &__item--get-started &__item {
+//            // undo other item styles
+//            border: 0;
+//            width: auto;
+//            float: none;
+//            // collapse borders
+//            margin-top: -1px;
+//            
+//            &--last {
+//                margin-top: 0;
+//                @include rem( padding, $default-spacing );
+//            }
+//        }
+//        &__item--get-started &__subnav &__link {
+//            background: map-get( $nav-colors, "primary" );
+//            color: $color-white;
+//            color: inherit;
+//            
+//            @include breakup-placeholder( small-caps );
+//
+//            border: 1px solid map-get( $nav-colors, "border" );
+//            border-width: 1px 0;
+//            display: block;
+//            @include rem( padding, 15 $default-spacing );
+//
+//            &:hover,
+//            &:focus,
+//            &:active {
+//                background: map-get( $nav-colors, "primary-open" );
+//                border-color: map-get( $nav-colors, "border" );
+//                color: $color-white;
+//            }
+//        }
+//        &__item--get-started .button {
+//            @include box-sizing( border-box );
+//            width: 100%;
+//            @include rem( padding-left, 2 * $default-spacing );
+//        }
+//        
+//        // Util nav
+//        &__secondary {
+//            
+//            background: $color-white;
+//            
+//            letter-spacing: 1px;
+//            text-transform: uppercase;
+//            word-spacing: 1px;
+//            
+//            border-bottom: 1px solid $color-rule;
+//            @include rem( height, 35 );
+//            
+//            position: absolute;
+//            top: 0;
+//            left: 0;
+//            right: 0;
+//            
+//            .layout-container {
+//                position: relative;
+//            }
+//        
+//        }
+//        &__secondary &__label {
+//            @include breakup-placeholder( hidden );
+//        }
+//        &__secondary &__list {
+//            display: block;
+//            white-space: nowrap;
+//        }
+//        &__secondary &__item {
+//            
+//            // undo small styles
+//            display: inline;
+//            width: auto;
+//            float: none;
+//            margin-right: 0;
+//            
+//            &::before {
+//                content: "\00A0•\00A0";
+//                color: $color-text-light;
+//            }
+//            
+//            &:first-child::before {
+//                content: "";
+//            }
+//            
+//            &--back {
+//                display: none;
+//            }
+//            
+//        }
+//        &__secondary &__link {
+//            background: transparent;
+//            color: $color-link;
+//            
+//            border: 0;
+//            display: inline;
+//            // 35px high
+//            @include rem( line-height, 35 );
+//            padding: 0;
+//            
+//            // bring back the border
+//            &:hover,
+//            &:focus,
+//            &:active {
+//                color: $color-link-hover;
+//                border-bottom: 1px solid;
+//            }
+//        }
+//        &__list--audience {
+//            position: absolute;
+//            left: 0;
+//        }
+//        &__list--tools {
+//            position: absolute;
+//            right: 0;
+//        }
+//        
+//    }
+//
+//}
+//
+//$less-than-full: $bp-full-em - 0.001em;
+//@include breakup-media( "only screen and (max-width: #{$less-than-full})" ) {
+//	// Off-canvas Nav
+//	html.off-canvas--enabled {
+//
+//	    $nav-width: 275;
+//
+//	    // keep it hidden
+//	    //overflow: auto;
+//	    //overflow-y: hidden;
+//
+//	    // body is where the slide is
+//	    body {
+//	        width: 100%;
+//	        height: 100%;
+//	        position: relative;
+//	        left: 0;
+//			
+//			// We will slide left
+//	        @include transition( left $default-transition );
+//	
+//			// hardware accelerate
+//			@include transform( translate3d(0,0,0) );
+//	    }
+//
+//	    .nav {
+//	        margin-left: 0;
+//	        overflow: auto;
+//	        overflow-x: hidden;
+//	        width: 100%;
+//	        @include rem( max-width, $nav-width );
+//
+//	        // full frame
+//	        position: fixed;
+//	        top: 0;
+//	        bottom: 0;
+//	        left: 100%;
+//	        z-index: 3;
+//
+//	        // since we’re fixed, we need to transition the left margin to match the body
+//	        @include transition( margin-left $default-transition );
+//
+//	        // enforce single column in any layout
+//	        &__list > .nav__item {
+//	            clear: both;
+//	            float: none;
+//	            margin: 0;
+//	            width: 100%;
+//	        }
+//
+//	        &__item--back {
+//	            display: none;
+//	        }
+//	    }
+//
+//	    &.off-canvas--visible {
+//
+//	        // stop body from scrolling
+//	        overflow: hidden;
+//
+//	        // slide body over
+//	        body {
+//	            @include rem( left, 0 - $nav-width );
+//	        }
+//
+//	        // slide nav in
+//	        .nav {
+//	            @include rem( margin-left, 0 - $nav-width );
+//	        }
+//
+//	    }
+//
+//	}
+//}

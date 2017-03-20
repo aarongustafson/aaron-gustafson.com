@@ -1,0 +1,38 @@
+/*------------------------------------*\
+    Footer
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+
+    .footer {
+
+    	@include rem( font-size, $font-size-small );
+    	text-align: center;
+
+    	@include rem( padding-bottom, $default-spacing );
+
+        p {
+            margin: 0;
+        }
+
+        &::before {
+            content: "";
+
+            display: block;
+            border: 0;
+            border-top: 1px solid $color-rule;
+            height: 0;
+            @include rem( margin, $default-spacing auto );
+        }
+
+    }
+
+}
+
+@include breakup-breakpoint( "full" ) {
+
+    .footer .layout-container {
+    	max-width: 100%;
+	}
+
+}

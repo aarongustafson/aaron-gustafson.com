@@ -1,0 +1,26 @@
+about:
+  bio_promo: "Looking for [an official bio](/about/biography/)?"
+  headshot_promo: "Looking for [a headshot](/about/headshots/)?"
+appearances:
+  intro: "Traveling takes a lot out of me, so I jump at every opportunity to share what I know in other ways. Here’s a list of interviews and such I’ve given."
+  citations_intro: "My work has also been cited in"
+publications:
+  intro: "I love to write and have contributed to [a shelf’s-worth of books](#books). I’ve also written [dozens of articles](#articles) and helped shape dozens more when I was the technical editor for [<cite>A List Apart</cite>](//alistapart.com)."
+  contributions_intro: "I’m honored to have made contributions to these other amazing books as well."
+  editing_intro: "I’ve also tech edited and contributed in various other ways to"
+speaking_engagements:
+  description: "I love sharing what I know and I’ve been granted many opportunities to do this over the years."
+  intro_pre_count: "It’s hard to believe this list includes over"
+  intro_post_count: "talks and workshops! In addition to these public events, I’ve also been invited to give talks and workshops for companies and organizations around the world."
+  contact: "If you’d like me to come present at your company or event, [please drop me a line](/contact/)."
+  no_upcoming: "I am currently finalizing my schedule for the next few months. Please check back for dates or [contact me](/contact/) if you’d like me to come speak at your organization or event."
+contact:
+  intro: Interested in having me present at your organization or event? Want me to write an article or book for you? Just wanna say hey? Go for it!
+sidebar:
+  about: "Hi there, I’m Aaron and I am passionate about the web. I love to [write](/publications/), [speak](/speaking-engagements/), and [share](/appearances/) everything I know. I live & work in Chattanooga, <abbr title=\"Tennessee\">TN</abbr>. Want to know more? [Read on](/about/)."
+  events: "I often travel for conferences. If I’m coming to your city and you’d like to arrange a private training or consultation while I’m there, feel free to [reach out](/contact/)."
+notebook:
+  date_prefix: Posted on
+links:
+  date_prefix: Saved on
+  more_link: All links (with commentary)

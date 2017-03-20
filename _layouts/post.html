@@ -1,0 +1,113 @@
+---
+layout: default
+single: true
+javascripts:
+  body: ['post.min']
+---
+
+{% capture this_url %}{{ site.url }}{{ page.url }}{% endcapture %}
+
+<div class="layout-container layout-container--blog">
+	<article role="article" class="layout-container__primary h-entry">
+		<div class="entry">
+			<header class="entry__header">
+		     	<h1 class="entry__title p-name">{% if site.titlecase %}{{ page.title | titlecase | widont }}{% else %}{{ page.title | widont }}{% endif %}</h1>
+			
+				{% unless page.meta == false %}
+					<dl class="entry__meta">
+						
+						<dt>Published</dt>
+						<dd>{% include post/date.html %}<b class="hidden"> by <a class="p-author h-card" href="/about">Aaron Gustafson</a></b>{% if page.in_reply_to %} <b class="hidden">in reply to <a class="u-in-reply-to" href="{{ page.in_reply_to }}">{{ page.in_reply_to }}</a></b>{% endif %}</dd>
+						
+						<dt>Reading Time</dt>
+						<dd>{{ content | reading_time_as_i }}</dd>
+
+						{% if page.series %}
+							<dt>Series</dt>
+							<dd><a  href="/notebook/tags/{{ page.series.tag }}">{{ page.series.name }}</a></dd>
+						{% endif %}
+
+						<dt class="dont-read">Tagged</dt>
+						<dd class="dont-read">{% include post/categories.html %}</dd>
+
+		        		{% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
+							<dt class="dont-read">Reactions</dt>
+							<dd class="dont-read">
+								<ul class="entry__jump-links">
+									<li class="entry__jump entry__jump--comments"><a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ this_url }}{% endif %}">Comments</a></li>
+									<li class="entry__jump entry__jump--webmentions"><a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#webmentions">Webmentions</a></li>
+								</ul>
+							</dd>
+		        		{% endif %}
+		        		
+		        		{% if page.crossposted %}
+		        			<dt class="dont-read">Crossposted</dt>
+		        			{% for crosspost in page.crossposted  %}
+		        				<dd class="dont-read"><a class="u-syndication" href="{{ crosspost[1] }}">{{ crosspost[0] }}</a></dd>
+		        			{% endfor %}
+						{% endif %}
+				
+		      		</dl>
+		    	{% endunless %}
+		  	</header>
+	
+			{% if page.reply_to_url %}
+				<p class="entry__in-reply-to">You are reading a reply to <a class="u-in-reply-to" href="{{ page.reply_to_url }}">{{ page.reply_to_title }}</a>.
+				</p>
+	    	{% endif %}
+
+	    	{% if page.series %}
+	    		<p class="entry__series">This is the {{ page.series.ordinal }} entry in the series <a  href="/notebook/tags/{{ page.series.tag }}">{{ page.series.name }}</a>.
+				</p>
+			{% endif %}
+
+			<div class="entry__content e-content">
+				{{ content }}
+			</div>
+
+			<footer class="entry__footer">
+				{% unless page.sharing == false %}
+					{% include post/sharing.html %}
+			    {% endunless %}
+
+			    {% include asides/related_posts.html %}
+			</footer>
+
+			{% include post/promo.html %}
+
+			{% if site.disqus_short_name and page.comments == true %}
+				<hr>
+
+				<section id="disqus" class="entry__comments dont-read">
+					<h1>Comments</h1>
+					<div id="disqus_thread" aria-live="polite">
+						{% include post/disqus_thread.html %}
+					</div>
+				</section>
+			{% endif %}
+		
+			<hr>
+
+			<section id="webmentions" class="entry__comments dont-read">
+				<h1>Webmentions</h1>
+				{% include post/webmentions.html %}
+			</section>
+
+		</div>
+	</article>
+	
+	{% comment %}
+	{% unless page.sidebar == false %}
+		<hr class="rule rule--optional">
+
+		<aside class="layout-container__secondary">
+			{% if site.post_asides.size %}
+	    		{% include_array post_asides %}
+			{% else %}
+	   			{% include_array default_asides %}
+			{% endif %}
+		</aside>
+	{% endunless %}
+	{% endcomment %}
+
+</div>

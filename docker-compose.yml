@@ -1,0 +1,9 @@
+# To launch: docker-compose run jekyll bash
+jekyll:
+    image: jekyll/jekyll
+    command: bash -c "apk --update add alpine-sdk ruby-dev lapack@communityEdge imagemagick-dev && bundle install && bundle exec jekyll serve --watch --incremental"
+    #command: bash -c "apk --update add alpine-sdk ruby-dev lapack@communityEdge imagemagick-dev && bundle install"
+    ports:
+        - 4000:4000
+    volumes:
+        - .:/srv/jekyll
