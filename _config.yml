@@ -109,16 +109,32 @@ exclude:
 # Project Structure
 destination: _site
 plugins_dir: _plugins
+collections:
+  posts:
+    output: true
+    permalink: /notebook/:title/
+  links:
+    output: true
+    permalink: /notebook/:collection/:title/
 defaults:
-  - scope:
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  -
+    scope:
       path: ""
       type: links
     values:
       layout: link
-collections:
-  links:
-    output: true
-    permalink: /notebook/links/:title
 
 # ----------------------- #
 #   3rd Party Settings    #
