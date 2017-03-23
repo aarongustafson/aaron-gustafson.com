@@ -2,17 +2,40 @@
 layout: default
 ---
 
+{% capture the_title %}{% if page.display_title %}{{ page.display_title }}{% else %}{{ page.title }}{% endif %}{% endcapture %}
+
 <article role="article" class="page layout-container layout-container--blog">
 
-	{% if page.title or page.display_title %}
-  		{% capture the_title %}{% if page.show_title == false and page.display_title %}{{ page.display_title }}{% else %}{{ page.title }}{% endif %}{% endcapture %}
-		<h1 class="page__title subsection__header">{% if site.titlecase %}{{ the_title | titlecase | widont }}{% else %}{{ the_title | widont }}{% endif %}</h1>
-	{% endif %}
-
+	<h1 class="page__title subsection__header">{{ the_title | titlecase | widont }}</h1>
+	
 	<div class="layout-container__primary">
   	
-		{{ content }}
-		
+		{% for post in paginator.posts %}
+			<article class="entry entry--teaser">
+				{% include entry_teaser.html %}
+			</article>
+			{% unless forloop.last %}
+				<hr class="rule">
+			{% endunless %}
+		{% endfor %}
+
+		{% if paginator.total_pages > 1 %}
+			<div class="pagination">
+				{% if paginator.previous_page %}
+					<a class="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Prev</a>
+				{% endif %}
+				<span class="pagination__pages">
+					page
+					<span class="pagination__pages__current">{{ paginator.page }}</span>
+					of
+					<span class="pagination__pages__current">{{ paginator.total_pages }}</span>
+				</span>
+				{% if paginator.next_page %}
+					<a class="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &rarr;</a>
+				{% endif %}
+			</div>
+		{% endif %}
+
   	</div>
 
 	{% unless page.sidebar == false %}

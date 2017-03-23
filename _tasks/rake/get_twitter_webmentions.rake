@@ -2,10 +2,8 @@ require 'rubygems'
 require 'twitter'
 require 'kramdown'
 
-root_folder = '../../../'
-cache_folder = File.expand_path("#{root_folder}.cache", __FILE__)
-cache_file = File.join(cache_folder, 'webmentions_received.yml')
-config_file = File.expand_path("#{root_folder}_config.yml", __FILE__)
+cache_file = File.join(cache_folder, '.cache/webmentions_received.yml')
+config_file = File.join(Dir.pwd, '_config.yml')
 
 # usage rake get_twitter_webmentions
 desc "Import Twitter webmentions"

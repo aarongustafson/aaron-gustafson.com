@@ -1,9 +1,18 @@
 future:
 
+  - title: "Chadev"
+    url: "https://www.youtube.com/watch?feature=player_embedded&amp;v=2V0JU10H3Ro"
+    date: 2017-04-06 12:00:00 -0400
+    location: "Chattanooga, TN USA"
+    talks:
+      - title: Designing the Conversation
+  
   - title: Atlanta Web Design Group
     url: http://www.awdg.org/
     date: 2017-04-27 17:00:00 -0400
     location: "Atlanta, GA USA"
+    talks:
+      - title: Designing the Conversation
   
   - title: Microsoft Build
     url: https://build.microsoft.com/
@@ -27,12 +36,12 @@ future:
     date: 2017-09-14 09:00:00 -0400
     location: "Malmö, Sweden"
 
-  - title: Respond
+  - title: TBA # Respond
     # url: http://lanyrd.com/2017/respond-by-web-directions/
     date: 2018-05-04 09:00:00 -0400
     location: "Sydney, Australia"
 
-  - title: Respond
+  - title: TBA # Respond
     # url: http://lanyrd.com/2017/respond-by-web-directions-2/
     date: 2018-05-08 09:00:00 -0400
     location: "Melbourne, Australia"
@@ -226,7 +235,7 @@ past:
     talks:
       - title: Designing with Empathy
 
-  - title: "Chattanooga Developer’s Lunch"
+  - title: "Chadev"
     url: "https://www.youtube.com/watch?feature=player_embedded&amp;v=2V0JU10H3Ro"
     date: 2014-12-04 12:00:00 -0400
     location: "Chattanooga, TN USA"
@@ -319,7 +328,7 @@ past:
       - title: Responsive Design and Beyond
         with: Brad Frost
 
-  - title: "Chattanooga Developer’s Lunch"
+  - title: "Chadev"
     url: http://www.meetup.com/chadevs/events/174448232/
     date: 2014-04-10 09:00:00 -0400
     location: "Chattanooga, TN USA"

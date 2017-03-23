@@ -1,0 +1,16 @@
+---
+layout: link
+title: "Why Don’t You Code for Netscape?"
+description: "Still one of my favorite examples of reduced support improving usability."
+date: 2015-06-24 19:58:46 -0400
+comments: false
+ref_url: http://alistapart.com/article/netscape
+in_reply_to: http://alistapart.com/article/netscape
+ref_source: A List Apart
+---
+
+Still one of my favorite examples of reduced support improving usability (emphasis mine):
+
+> By contrast, the method used here at A List Apart (XHTML for structure, CSS for layout and design) ensures that every reader has access to the site’s text, but allows the design to “disappear” if the browser can’t handle it. No 4.0 browser can handle it.
+
+> We assume that those who choose to keep using 4.0 browsers have reasons for doing so; we also assume that most of those folks don’t really care about “design issues.” They just want information, and with this approach they can still get the information they seek. **In fact, since we began hiding the design from non–compliant browsers in February 2001, ALA’s Netscape 4 readership has increased, from about 6% to about 11%.**

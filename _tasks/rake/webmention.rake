@@ -1,5 +1,5 @@
 # Caches
-cache = File.expand_path('../../../.cache', __FILE__)
+cache = File.join(Dir.pwd, '.cache')
 FileUtils.mkdir_p( cache )
 cache_all_webmentions = "#{cache}/webmentions.yml"
 cache_sent_webmentions = "#{cache}/webmentions_sent.yml"

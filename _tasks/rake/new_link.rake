@@ -1,11 +1,10 @@
-source_dir   = File.expand_path('../../../source', __FILE__)
-links_dir    = "_links"
-new_post_ext = "markdown"
+links_dir   = File.join(Dir.pwd, 'links/_posts')
+file_ext = "markdown"
 
 require 'uri';
 
 # usage rake new_link[URL]
-desc "Creating a new link in #{source_dir}/#{links_dir}"
+desc "Creating a new link in #{links_dir}"
 task :new_link, :url do |t, args|
   if args.url
     url = args.url
@@ -38,17 +37,15 @@ task :new_link, :url do |t, args|
     link_title = temp.first.strip
     source = temp.last.strip
   end
-  raise "### You haven't set anything up yet. First run `rake install` to set up an Octopress theme." unless File.directory?(source_dir)
-  mkdir_p "#{source_dir}/#{links_dir}"
   if !URI(url).path.empty? and URI(url).path != '/'
     slug = URI(url).path.split('/').last.split('.').first
   else
     slug = URI(url).host.split('.').first
   end
-  if !Dir.glob("#{source_dir}/#{links_dir}/*-#{slug}*").empty?
+  if !Dir.glob("#{links_dir}/*-#{slug}*").empty?
       abort("rake aborted!") if ask("This link may already exist. Do you want to proceed?", ['y', 'n']) == 'n'
   end
-  filename = "#{source_dir}/#{links_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{slug}.#{new_post_ext}"
+  filename = "#{links_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{slug}.#{file_ext}"
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end

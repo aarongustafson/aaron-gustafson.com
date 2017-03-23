@@ -22,14 +22,14 @@ module Jekyll
         tags = {}
       end
       
-      site.posts.each do |post|
-        post.categories.each do |tag|
+      site.posts.docs.each do |post|
+        post.data['tags'].each do |tag|
           if !tags.has_key? tag
             tags[tag] = []
           end
           tags[tag] << post.path
         end
-        post.tags.each do |tag|
+        post.data['tags'].each do |tag|
           if !tags.has_key? tag
             tags[tag] = []
           end

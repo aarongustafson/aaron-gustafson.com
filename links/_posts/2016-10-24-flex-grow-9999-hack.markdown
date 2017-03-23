@@ -1,0 +1,14 @@
+---
+layout: link
+title: "Flex-grow 9999 Hack"
+twitter_text: "Very clever bit of flexbox here for laying out text optimally when you don’t know its length."
+date: 2016-10-24 13:39:15 -0400
+comments: false
+ref_url: http://joren.co/flex-grow-9999-hack/
+in_reply_to: http://joren.co/flex-grow-9999-hack/
+ref_source: Flex-grow 9999 Hack
+---
+
+Very clever bit of flexbox here for laying out text optimally when you don’t know its length.
+
+I don’t know that I would consider it a hack so much as pushing flexbox beyond what most people would even consider doing.

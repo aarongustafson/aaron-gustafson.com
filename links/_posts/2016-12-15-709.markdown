@@ -1,0 +1,11 @@
+---
+layout: link
+title: "The :focusring selector is coming to CSS"
+date: 2016-12-15 16:28:30 -0500
+comments: false
+ref_url: https://github.com/w3c/csswg-drafts/pull/709
+in_reply_to: https://github.com/w3c/csswg-drafts/pull/709
+ref_source: GitHub
+---
+
+This will be based on [the Mozilla feature](https://developer.mozilla.org/docs/Web/CSS/:-moz-focusring).

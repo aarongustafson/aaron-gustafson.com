@@ -1,5 +1,5 @@
 {% unless page.show_posts == false %}
-	{% for post in site.related_posts limit:3 %}
+	{% for related_post in site.related_posts limit:3 %}
 		{% if forloop.first == true %}
 			<section class="module module--promotional">
 				<p>Looking for something else to read? These entries may be related in some way:</p>
@@ -7,7 +7,7 @@
 		{% endif %}
 
 		<li class="listing_item listing__item--{{ forloop.index }}">
-			<a href="{{ post.url }}">{{ post.title }}</a>
+			<a href="{{ related_post.url }}">{{ related_post.title }}</a>
 		</li>
 			
 		{% if forloop.last == true %}

@@ -9,31 +9,10 @@ comments: false
 sharing: false
 is_index: true
 body_class: notebook
+pagination: 
+  enabled: true
+  category: notebook
+  per_page: 10
+  permalink: /pg-:num/
+  title: The Notebook of
 ---
-
-{% for post in paginator.posts reverse %}
-
-	<article class="entry entry--teaser">
- 		{% include entry_teaser.html %}
-	</article>
-
-	<hr class="rule">
-
-{% endfor %}
-
-{% if paginator.total_pages > 1 %}
-	<div class="pagination">
-		{% if paginator.previous_page %}
-			<a class="prev" href="/{{ site.notebook_pagination_dir }}/{% if paginator.previous_page != 1 %}pg-{{ paginator.previous_page }}/{% endif %}">&larr; Prev</a>
-		{% endif %}
-		<span class="pagination__pages">
-			page
-			<span class="pagination__pages__current">{{ paginator.page }}</span>
-			of
-			<span class="pagination__pages__current">{{ paginator.total_pages }}</span>
-		</span>
-		{% if paginator.next_page %}
-			<a class="prev" href="/{{ site.notebook_pagination_dir }}/pg-{{ paginator.next_page }}/">Next &rarr;</a>
-		{% endif %}
-	</div>
-{% endif %}

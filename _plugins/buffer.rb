@@ -37,6 +37,13 @@ module Jekyll
     priority :low
     
     def generate(site)
+      config =  site.config
+      
+      # don’t publish on serving locally    
+      serving = config['serving']
+      if serving
+        return
+      end
 
       twitter = ENV['BUFFER_TWITTER_PROFILE'] or false
       facebook = ENV['BUFFER_FACEBOOK_PROFILE'] or false
@@ -44,6 +51,7 @@ module Jekyll
       access_token = ENV['BUFFER_ACCESS_TOKEN'] or false
 
       if ! access_token
+        raise Error, "No Buffer access token found"
         return
       end
 
@@ -61,33 +69,44 @@ module Jekyll
           buffered = []
         end
         
-        site.posts.each do |post|
+        site.posts.docs.each do | post |
           
+          data = post.data
+          puts data.inspect
+
           # Unpublished
-          if ! post.published?
+          if data.has_key?('published') && data['published'] == false
             next
           end
 
           # Future posts
-          date = Date.parse(post.date.strftime("%Y-%m-%d %H:%M:%S"))
+          date = Date.parse(data['date'].strftime("%Y-%m-%d %H:%M:%S"))
           if date > today
             next
           end
 
           # link posts should be handled differently
-          if post.data.has_key?('ref_url')
-            url = post.data['ref_url']
+          if data.has_key?('ref_url')
+            url = data['ref_url']
           else  
-            url = "#{site.config['url']}#{post.url}"
+            url = "#{config['url']}#{post.url}"
           end
 
           if url and ! buffered.include? url
 
-            excerpt = post.data['description'] || post.excerpt
+            excerpt = data['description'] || data['excerpt'].to_s
             # Convert to HTML
-            excerpt = Kramdown::Document.new(excerpt).to_html
+            if defined? site.find_converter_instance
+              markdown_converter = @site.find_converter_instance(Jekyll::Converters::Markdown)
+            # Prior to Jekyll commit 0c0aea3
+            else
+              markdown_converter = @site.getConverterImpl(Jekyll::Converters::Markdown)
+            end
+            excerpt = markdown_converter.convert(excerpt)
+            # Render any plugins
+            excerpt = (Liquid::Template.parse excerpt).render @site.site_payload
             # Swap blockquotes
-            exceprt = excerpt.gsub( '<blockquote>', '"' ).gsub( '</blockquote>', '"' )
+            excerpt = excerpt.gsub( '<blockquote>', '"' ).gsub( '</blockquote>', '"' )
             # And back to plain text
             excerpt = Nokogiri::HTML(excerpt).text
             # Then encode ampersands
@@ -102,7 +121,7 @@ module Jekyll
 
             # Twitter is special
             if twitter
-              twitter_text = post.data['twitter_text'] || post.title
+              twitter_text = data['twitter_text'] || data['title']
               twitter_text = twitter_text[0,twitter_text_length]
               #twitter_text = URI::escape( twitter_text )
 
@@ -160,7 +179,8 @@ module Jekyll
     end
 
     def post_to_buffer( payload )
-
+      puts payload.inspect
+      return
       # Idea
       # puts "curl --data-urlencode 'text=#{twitter_text}' --data 'media[link]=#{url}' --data 'profile_ids[]=#{twitter}' #{buffer_url}"
       buffer_url = URI.parse('https://api.bufferapp.com/1/updates/create.json')
@@ -174,7 +194,7 @@ module Jekyll
       if response.code == '200'
         puts "Buffered '#{payload['text']}'"
       else
-        puts "Buffer responded #{response.body}"
+        Warn "Buffered '#{payload['text']}' & Buffer responded #{response.body}"
       end
 
     end

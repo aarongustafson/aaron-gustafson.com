@@ -9,33 +9,29 @@
 #   crosspost_caches:
 #     Medium: ./cache/medium_crossposted
 # 
-module Jekyll
-
-  class Document
+class Jekyll::Document
     
-    alias :orig_to_liquid :to_liquid
-    def to_liquid(attrs = nil)
-        crosspost_caches = site.config['crosspost_caches'] || {}
+  alias :orig_to_liquid :to_liquid
+  def to_liquid(*args)
+      crosspost_caches = site.config['crosspost_caches'] || {}
 
-        crossposted_to = {}
-        crosspost_caches.each do |source, file|
-          if File.exists?(file)
-            posts = open(file) { |f| YAML.load(f) }
-            if posts.has_key? self.url
-              crossposted_to[source] = posts[self.url]
-            end
+      crossposted_to = {}
+      crosspost_caches.each do |source, file|
+        if File.exists?(file)
+          posts = open(file) { |f| YAML.load(f) }
+          if posts.has_key? self.url
+            crossposted_to[source] = posts[self.url]
           end
         end
+      end
 
-        if crossposted_to == {}
-          crossposted_to = nil
-        end
+      if crossposted_to == {}
+        crossposted_to = nil
+      end
 
-        h = orig_to_liquid(attrs)
-        h['crossposted'] = crossposted_to
-        h
-    end
-
+      h = orig_to_liquid(*args)
+      h['crossposted'] = crossposted_to
+      h
   end
 
 end

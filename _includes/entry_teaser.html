@@ -1,4 +1,4 @@
-{% capture excerpted %}{{ post.content | has_excerpt }}{% endcapture %}
+{% capture excerpted %}{{ post.excerpt }}{% endcapture %}
 
 {% unless post.no_header %}
 	<header class="entry__header">
@@ -20,34 +20,25 @@
 				{% if post.via %}
 					<br><abbr title="via">↬</abbr> <a href="{{ post.via.url }}">{{ post.via.name }}</a>
 				{% endif %}
+				{% if post.tags %}
+					<br>{% include post/tags.html %}
+				{% endif %}
       		</p>
 		{% endunless %}
   	</header>
 {% endunless %}
 
 <div class="entry__content entry__content--excerpt entry-content">
-	{{ post.content | excerpt | markdownify }}
+	{{ post.excerpt | markdownify }}
 </div>
  	
-{% if excerpted == 'true' and post.ref_source %}
-	<footer class="entry__footer">
-		<p>
-			You can <a rel="bookmark" href="{{ root_url }}{% if post.ref_source %}{{ post.url | replace:"notebook/","notebook/links/" }}{% else %}{{ post.url }}{% endif %}">finish reading
-			my thoughts in less than {{ post.content | reading_time_as_i }}</a> or your can
-			<a rel="original-article" href="{{ post.ref_url }}">read the original in {{ post.ref_source }}</a>
-		</p>
-	</footer>
-{% elsif excerpted == 'true' %}
-	<footer class="entry__footer">
-		<p>
-			<a rel="bookmark" href="{{ root_url }}{% if post.ref_source %}links/{% endif %}{{ post.url }}">You can finish reading
+<footer class="entry__footer">
+	<p>
+		{% if post.content contains site.excerpt_separator %}
+			<a rel="bookmark" href="{{ root_url }}{{ post.url }}">You can finish reading
 			<cite>{{ post.title }}</cite> in less than {{ post.content | reading_time_as_i }}</a>
-		</p>
-	</footer>
-{% elsif post.ref_source %}
-	<footer class="entry__footer">
-		<p>
-			<a rel="original-article" href="{{ post.ref_url }}">Read in {{ post.ref_source }}</a>
-		</p>
-	</footer>
-{% endif %}
+		{% elsif post.ref_url %}
+			<a rel="original-article" href="{{ post.ref_url }}">Source: {{ post.ref_source }}</a>
+		{% endif %}
+	</p>
+</footer>

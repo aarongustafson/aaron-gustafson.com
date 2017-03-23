@@ -1,0 +1,13 @@
+---
+layout: link
+title: "Flash of Faux Text"
+date: 2015-01-27 08:56:47 -0500
+comments: false
+ref_url: http://www.zachleat.com/web/foft/
+in_reply_to: http://www.zachleat.com/web/foft/
+ref_source: Zach Leatherman’s Blog
+---
+
+In his continuing exploration of font loading optimization, Zach Leatherman proposes loading a Roman (i.e. normal weight, non-italic) font first and letting the browser synthesize (i.e. fake) the bold, italic, etc. variants to reduce the load time and reflow of the document and let users start reading as soon as possible. Then he lazy loads the additional font weights and styles so the browser can swap out the synthesized glyphs for the actual ones.
+
+Super clever stuff Zach!
