@@ -9,4 +9,4 @@
 	To add a new task, simply add a new task file to tasks/gulp/tasks.
 */
 
-require('require-dir')('./tasks/gulp');
+require('require-dir')('./_tasks/gulp');

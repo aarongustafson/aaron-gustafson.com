@@ -2,7 +2,7 @@ require 'rubygems'
 require 'twitter'
 require 'kramdown'
 
-cache_file = File.join(cache_folder, '.cache/webmentions_received.yml')
+cache_file = File.join(Dir.pwd, '.cache/webmentions_received.yml')
 config_file = File.join(Dir.pwd, '_config.yml')
 
 # usage rake get_twitter_webmentions

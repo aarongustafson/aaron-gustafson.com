@@ -2,8 +2,8 @@ var gulp = require('gulp'),
 	htmlmin = require('gulp-htmlmin');
 
 gulp.task('html', function() {
-	var source = './_deploy/**/*.html',
-		destination = './_deploy',
+	var source = './_site/**/*.html',
+		destination = './_site',
 		htmlmin_config = {
 			removeComments: true,
 			collapseWhitespace: true
