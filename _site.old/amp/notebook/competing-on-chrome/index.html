@@ -1,0 +1,76 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Competing on “Chrome”, From the Notebook of Aaron Gustafson</title>
+    <link rel="canonical" href="https://www.aaron-gustafson.com/notebook/competing-on-chrome/" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-custom>html{font-size:-webkit-calc(1em + .5vw);font-size:calc(1em + .5vw);line-height:1.4;max-width:70ch;margin:0 auto;word-wrap:break-word;overflow-wrap:break-word}body{padding:.5em}.post-meta,h1,h2,h3,h4,h5,h6{font-family:sans-serif;line-height:1.2;margin-bottom:0}header{background:#ebebeb;margin:0 -1em;padding:1em}header h1{margin:0}.post-meta,footer{color:#999}li{margin-bottom:.5em}li ol,li ul{margin-top:.5em}blockquote{font-style:italic}pre{background:#ebebeb;padding:1em;margin:1em -1em}sup{font-size:.65em;padding-left:.2em}.footnotes{border-top:1px solid #ccc;font-size:.8em}.footnotes li{margin-bottom:.25em}.footnotes p{margin:0}.promo--image{position:relative;background:#ebebeb;padding:1px 1em 1px 122px;margin:1.5em 0}.promo--image:after,.promo--image:before{content:"\00A0";border-top:1px solid #ebebeb;display:block;left:0;right:0;position:absolute}.promo--image:before{margin-top:-.5em}.promo--image:after{margin-top:.5em}.promo__image{max-width:100px;margin-top:-.2em;-webkit-transform:rotate(-10deg);-ms-transform:rotate(-10deg);transform:rotate(-10deg);position:absolute;left:0;top:0;z-index:1}footer small{display:block;font-size:-webkit-calc(.5em + .5vw);font-size:calc(.5em + .5vw);font-style:italic;text-align:center}hr{border:1px solid #ccc;border-width:1px 0 0;max-width:200px}figure{margin:1em -.5em}figure iframe,figure img{border:1px solid #ccc;max-width:100%;height:auto}</style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="post-title">Competing on “Chrome”</h1>
+      <p class="post-meta">by <a href="https://www.aaron-gustafson.com/about/">Aaron Gustafson</a> on 21 January 2015</p>
+    </header>
+    <main>
+      <p>Watching the <a href="http://news.microsoft.com/windows10story/">Windows 10 announcement</a> today and the “unveiling” of its new browser, codenamed “Project Spartan”, I was amazed… not by what was said so much as what wasn’t.</p>
+
+<!-- more -->
+
+<p>Let me back up a bit here. As many of you know, I’ve been working on the Web for a long time and, like many old codgers, lived through the first browser wars and remember not only the unveiling of Internet Explorer 6—which was pretty amazing for its time—but I also worked on the Web for the entire 5 years that browser sat on the shelf.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
+
+<p>By the time Internet Explorer 7 came out in late 2006, there had been a number of advancements on the Web. And there was more competition for user and developer mindshare. Safari popped up shortly after IE6’s launch and was gaining traction on the Mac with its port of Konqueror’s layout engine, KHTML, which they renamed WebKit. Netscape was in it’s death throes, but Firefox arose from the ashes<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> and was capturing an ever-growing share of the market with its improved security, extensibility through browser plug-ins, and tabbed browsing. Not only that, but the Mozilla core of Firefox had also been spun into several other browsers that were similarly taking off: Camino, Flock, SeaMonkey, Galeon, and Epiphany. And then, of course, the Opera browser was still going strong on the desktop and growing rapidly in the mobile space.<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup></p>
+
+<p>When IE7 finally made it out into the world, developers were at peak frustration when it came to dealing with standards-compatibility issues in IE. So it’s no surprise that the messaging focus for IE7 was, at least in terms of the Web designer/developer audience, focused on <a href="http://www.zdnet.com/article/ie7-and-standards-compliance-microsofts-chris-wilson-charts-progress/">apologizing for the past and promising that they cared about (and were supporting) interoperable Web standards</a>.</p>
+
+<p>And this was an earnest sentiment, it wasn’t bullshit. I remember <a href="https://twitter.com/cwilso">Chris Wilson</a>—then Platform Architect of Internet Explorer Platform team—telling me he had personally printed out <a href="http://www.w3.org/TR/CSS2/">the entire CSS 2.1 spec</a> and put it on the desk of each developer working on Trident, the browser’s rendering engine.</p>
+
+<p>And IE7, for all of its faults, was an improvement over IE6. A few years later, IE8 was an improvement over that. And, a little later, IE9 gave us a completely reborn Internet Explorer, largely free of the layout and rendering quirks we had earned so much grey hair fighting. And so on. And so on. But all the while, the drumbeat from the IE team was this: Now with more standards support!</p>
+
+<p>And it wasn’t just IE that was making this claim. Other browsers began to tout their support of one particular standard or another that the others didn’t in hopes of getting developers to pay more attention to them.</p>
+
+<p>Some time before the launch of IE8, I remember having a conversation with Chris Wilson over drinks at a conference. We talked at length about the state of Web standards, browsers, and the like. During the course of our chat, he offered up his dream:</p>
+
+<blockquote>
+  <p>I’ll be happy when browsers stop competing on standards support and start competing on chrome.<sup id="fnref:4"><a href="#fn:4" class="footnote">4</a></sup></p>
+</blockquote>
+
+<p>It stuck with me because what he was saying made a lot of sense: Standards-compliance should be a given; browsers should be competing on the extra stuff they offer.</p>
+
+<p>Which brings me back to today’s announcement. Standards-compliance wasn’t mentioned<sup id="fnref:5"><a href="#fn:5" class="footnote">5</a></sup> by <a href="https://twitter.com/joebelfiore">Joe Belfiore</a> in his walkthrough of “Project Spartan”. Instead, Joe focused on the value adds in the browser: in-app note taking, a focused reading mode, cross-device synchronization, and Cortana integration.</p>
+
+<p>This is a major milestone for IE in my opinion and it makes me wonder if we’ve finally reached the place that Chris dreamed about all those years ago. I certainly hope so.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>I was told that, internally, decision-makers felt the browser was “done” and there would be no more advancements on the Web that would require a new browser. <a href="#fnref:1" class="reversefootnote">↩</a></p>
+    </li>
+    <li id="fn:2">
+      <p>An apt metaphor, Firefox was originally Phoenix, then later Firebird, before eventually becoming Firefox. <a href="#fnref:2" class="reversefootnote">↩</a></p>
+    </li>
+    <li id="fn:3">
+      <p>You may not realize it, but Opera Mobile predated even IE6. And it’s Opera Mini variant touts big numbers too: In April 2014, there were over 267 million Opera mobile browser users (244 million of whom used Opera Mini) and Opera Mini users viewed over 177 billion pages in that same month. (<a href="http://www.operasoftware.com/smw/2014-04">Source</a>) <a href="#fnref:3" class="reversefootnote">↩</a></p>
+    </li>
+    <li id="fn:4">
+      <p>The Chrome browser, from Google, did not exist at this time. By “chrome” he meant the window around a webpage—it toolbars, buttons, menus, and other browser-based functionality. <a href="#fnref:4" class="reversefootnote">↩</a></p>
+    </li>
+    <li id="fn:5">
+      <p>The only phrases that even hint at standards compliance were “modern Web” and “a new rendering engine… that is compatible with how the Web is written today” (starting at around 59:05 in <a href="https://ll.ms-studiosmedia.com/events/2015/1501/Windows10CP/live/Windows10CP.html?title=Windows10CP-mscom">the video</a>). <a href="#fnref:5" class="reversefootnote">↩</a></p>
+    </li>
+  </ol>
+</div>
+
+    </main>
+    <aside class="promo promo--book promo--image">
+	    <img class="promo__image" src="https://adaptivewebdesign.info/2nd-edition/cover-320.jpg" alt="">
+	    <div class="promo__copy"><p>Like what you’re reading? You might dig my book <a href="https://adaptivewebdesign.info/2nd-edition/"><cite>Adaptive Web Design, Second Edition</cite></a>. You can grab a copy on <a href="http://www.amazon.com/gp/product/0134216148/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0134216148&amp;linkCode=as2&amp;tag=easydesign-20&amp;linkId=7EDENIS3P4XL7LIT">Amazon</a>, <a href="http://www.anrdoezrs.net/links/7941166/type/dlg/http://www.barnesandnoble.com/w/adaptive-web-design-aaron-gustafson/1102101792?ean=9780134216140">Barnes &amp; Noble</a>, <a href="http://click.linksynergy.com/link?id=ksYXFf8a/VY&amp;offerid=145244.2319719&amp;type=2&amp;murl=http%3A%2F%2Fwww.peachpit.com%2Ftitle%2F9780134216140">New Riders</a>, or anywhere web design books are sold.</p>
+</div>
+    </aside>
+    <footer>
+      <small>The content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a>.</small>
+    </footer>
+  </body>
+</html>

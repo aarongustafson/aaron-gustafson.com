@@ -72,7 +72,7 @@ module Jekyll
         site.posts.docs.each do | post |
           
           data = post.data
-          puts data.inspect
+          #puts data.inspect
 
           # Unpublished
           if data.has_key?('published') && data['published'] == false
@@ -96,15 +96,15 @@ module Jekyll
 
             excerpt = data['description'] || data['excerpt'].to_s
             # Convert to HTML
-            if defined? site.find_converter_instance
-              markdown_converter = @site.find_converter_instance(Jekyll::Converters::Markdown)
+            if defined?  site.find_converter_instance
+              markdown_converter = site.find_converter_instance(Jekyll::Converters::Markdown)
             # Prior to Jekyll commit 0c0aea3
             else
-              markdown_converter = @site.getConverterImpl(Jekyll::Converters::Markdown)
+              markdown_converter = site.getConverterImpl(Jekyll::Converters::Markdown)
             end
             excerpt = markdown_converter.convert(excerpt)
             # Render any plugins
-            excerpt = (Liquid::Template.parse excerpt).render @site.site_payload
+            excerpt = (Liquid::Template.parse excerpt).render site.site_payload
             # Swap blockquotes
             excerpt = excerpt.gsub( '<blockquote>', '"' ).gsub( '</blockquote>', '"' )
             # And back to plain text
@@ -179,8 +179,7 @@ module Jekyll
     end
 
     def post_to_buffer( payload )
-      puts payload.inspect
-      return
+      
       # Idea
       # puts "curl --data-urlencode 'text=#{twitter_text}' --data 'media[link]=#{url}' --data 'profile_ids[]=#{twitter}' #{buffer_url}"
       buffer_url = URI.parse('https://api.bufferapp.com/1/updates/create.json')

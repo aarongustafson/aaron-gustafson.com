@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title><![CDATA[Aaron Gustafson - Latest Links]]></title>
+	<link href="http://localhost:4000/atom-latest-links.xml" rel="self"/>
+	<link href="http://localhost:4000/"/>
+	<updated>2017-03-23T13:52:37-04:00</updated>
+	<id>http://localhost:4000/</id>
+	<author>
+		<name><![CDATA[Aaron Gustafson]]></name>
+		
+	</author>
+	<generator uri="http://octopress.org/">Octopress</generator>
+
+	
+		
+			<entry>
+				<title type="html"><![CDATA[Scrolling on the Web: A Primer]]></title>
+				<link href="http://localhost:4000/notebook/links/scrolling-on-the-web/"/>
+				<updated>2017-03-16T16:23:42-04:00</updated>
+				<id>http://localhost:4000/notebook/links/scrolling-on-the-web</id>
+				<content type="html"><![CDATA[<p>Everything you could possibly want to know about how browsers handle scrolling.</p>
+<p><a rel="full-article" href="https://blogs.windows.com/msedgedev/2017/03/08/scrolling-on-the-web/">Read on Microsoft Edge Developer Blog&nbsp;&rarr;</a></p>]]></content>
+			</entry>
+		
+	
+		
+			<entry>
+				<title type="html"><![CDATA[Keep Your Branch Clean With Fixup and Autosquash]]></title>
+				<link href="http://localhost:4000/notebook/links/git-tip-keep-your-branch-clean-with-fixup-and-autosquash/"/>
+				<updated>2017-03-15T15:49:57-04:00</updated>
+				<id>http://localhost:4000/notebook/links/git-tip-keep-your-branch-clean-with-fixup-and-autosquash</id>
+				<content type="html"><![CDATA[<p>A nice roll-up of how to declutter your Git commit history when  you notice a bug or typo right after committing it.</p>
+<p><a rel="full-article" href="http://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and-autosquash.html">Read on Florent Lebreton&nbsp;&rarr;</a></p>]]></content>
+			</entry>
+		
+	
+		
+			<entry>
+				<title type="html"><![CDATA[Hassle-free Full Bleed With `not()`]]></title>
+				<link href="http://localhost:4000/notebook/links/full-bleed-with-not/"/>
+				<updated>2017-03-14T16:34:32-04:00</updated>
+				<id>http://localhost:4000/notebook/links/full-bleed-with-not</id>
+				<content type="html"><![CDATA[<p>The <code class="highlighter-rouge">:not()</code> pseudo-class selector <a href="http://caniuse.com/css-sel3">has pretty solid support</a>. This could prove handy.</p>
+<p><a rel="full-article" href="http://daverupert.com/2017/03/full-bleed-with-not/">Read on Dave Rupert&nbsp;&rarr;</a></p>]]></content>
+			</entry>
+		
+	
+		
+			<entry>
+				<title type="html"><![CDATA[Digital Privacy at the U.S Border]]></title>
+				<link href="http://localhost:4000/notebook/links/digital-privacy-us-border-new-how-guide-eff/"/>
+				<updated>2017-03-14T16:31:56-04:00</updated>
+				<id>http://localhost:4000/notebook/links/digital-privacy-us-border-new-how-guide-eff</id>
+				<content type="html"><![CDATA[<p>Following on my earlier post, here’s a pocket guide to border crossing from the <a href="https://www.eff.org">Electronic Frontier Foundation</a>.</p>
+<p><a rel="full-article" href="https://www.eff.org/document/eff-border-search-pocket-guide">Read on Electronic Frontier Foundation&nbsp;&rarr;</a></p>]]></content>
+			</entry>
+		
+	
+		
+			<entry>
+				<title type="html"><![CDATA[How to Debug]]></title>
+				<link href="http://localhost:4000/notebook/links/How_to_debug/"/>
+				<updated>2017-03-14T16:28:30-04:00</updated>
+				<id>http://localhost:4000/notebook/links/How_to_debug</id>
+				<content type="html"><![CDATA[<p>While focused on debugging video games, the broader lessons of this post apply to debugging any form of interface.</p>
+<p><a rel="full-article" href="http://www.gamasutra.com/blogs/HermanTulleken/20170227/292463/How_to_debug.php">Read on Herman Tulleken's Blog&nbsp;&rarr;</a></p>]]></content>
+			</entry>
+		
+	
+		
+			<entry>
+				<title type="html"><![CDATA[Three Challenges for the Web, According to Its Inventor]]></title>
+				<link href="http://localhost:4000/notebook/links/web-turns-28-letter/"/>
+				<updated>2017-03-14T16:26:05-04:00</updated>
+				<id>http://localhost:4000/notebook/links/web-turns-28-letter</id>
+				<content type="html"><![CDATA[<ol>
+  <li>We’ve lost control of our personal data</li>
+  <li>It’s too easy for misinformation to spread on the web</li>
+  <li>Political advertising online needs transparency and understanding</li>
+</ol>
+
+<blockquote>
+  <p>These are complex problems, and the solutions will not be simple. But a few broad paths to progress are already clear. We must work together with web companies to strike a balance that puts a fair level of data control back in the hands of people</p>
+</blockquote>
+
+<p>I hope it happens.</p>
+<p><a rel="full-article" href="http://webfoundation.org/2017/03/web-turns-28-letter/">Read on World Wide Web Foundation&nbsp;&rarr;</a></p>]]></content>
+			</entry>
+		
+	
+		
+			<entry>
+				<title type="html"><![CDATA[Browser Logos]]></title>
+				<link href="http://localhost:4000/notebook/links/browser-logos/"/>
+				<updated>2017-03-14T16:24:00-04:00</updated>
+				<id>http://localhost:4000/notebook/links/browser-logos</id>
+				<content type="html"><![CDATA[<p>Need a browser logo for your next talk? Look no further. This collection is always up to date.</p>
+<p><a rel="full-article" href="https://github.com/alrra/browser-logos">Read on Cătălin Mariș on GitHub&nbsp;&rarr;</a></p>]]></content>
+			</entry>
+		
+	
+		
+			<entry>
+				<title type="html"><![CDATA[Tech Goes Home With Kelly McCarthy]]></title>
+				<link href="http://localhost:4000/notebook/links/62666-tech-goes-home-with-kelly-mccarthy/"/>
+				<updated>2017-03-14T16:19:25-04:00</updated>
+				<id>http://localhost:4000/notebook/links/62666-tech-goes-home-with-kelly-mccarthy</id>
+				<content type="html"><![CDATA[<p>Digital equity is something we should all be fighting for and Kelly McCarthy is on the front lines.</p>
+<p><a rel="full-article" href="https://thecamphouse.simplecast.fm/episodes/62666-tech-goes-home-with-kelly-mccarthy">Read on The Camp House Podcast&nbsp;&rarr;</a></p>]]></content>
+			</entry>
+		
+	
+		
+			<entry>
+				<title type="html"><![CDATA[Forget Welding. The Hottest New Vocational Schools Do Digital Design]]></title>
+				<link href="http://localhost:4000/notebook/links/forget-welding-hottest-new-vocational-schools-digital-design/"/>
+				<updated>2017-03-14T16:17:07-04:00</updated>
+				<id>http://localhost:4000/notebook/links/forget-welding-hottest-new-vocational-schools-digital-design</id>
+				<content type="html"><![CDATA[<p>My friends at Center Centre were just featured in <cite>Wired</cite>! Congrats!</p>
+<p><a rel="full-article" href="https://www.wired.com/2017/03/forget-welding-hottest-new-vocational-schools-digital-design/">Read on Wired&nbsp;&rarr;</a></p>]]></content>
+			</entry>
+		
+	
+		
+			<entry>
+				<title type="html"><![CDATA[Advertisers Look Forward to Buying Your Web Browsing History From ISPs]]></title>
+				<link href="http://localhost:4000/notebook/links/ad-industry-lobbyists-celebrate-impending-death-of-online-privacy-rules/"/>
+				<updated>2017-03-14T16:14:26-04:00</updated>
+				<id>http://localhost:4000/notebook/links/ad-industry-lobbyists-celebrate-impending-death-of-online-privacy-rules</id>
+				<content type="html"><![CDATA[<blockquote>
+  <p>If the FCC rules are eliminated, ISPs would not have to get consumers’ explicit consent before selling or sharing Web browsing data and other private information with advertisers and other third parties. The FCC issued the rules when it was led by a Democratic majority last year.</p>
+</blockquote>
+
+<p>Even HTTPS won’t be able to save us.</p>
+<p><a rel="full-article" href="https://arstechnica.com/tech-policy/2017/03/ad-industry-lobbyists-celebrate-impending-death-of-online-privacy-rules/">Read on Ars Technica&nbsp;&rarr;</a></p>]]></content>
+			</entry>
+		
+	
+		
+	
+		
+			<entry>
+				<title type="html"><![CDATA[HTTP/2 - a Real-World Performance Test and Analysis]]></title>
+				<link href="http://localhost:4000/notebook/links/http2-real-world-performance-test-analysis/"/>
+				<updated>2017-03-02T16:49:59-05:00</updated>
+				<id>http://localhost:4000/notebook/links/http2-real-world-performance-test-analysis</id>
+				<content type="html"><![CDATA[<p>Nice to see a detailed comparison like this!</p>
+<p><a rel="full-article" href="https://css-tricks.com/http2-real-world-performance-test-analysis/">Read on CSS Tricks&nbsp;&rarr;</a></p>]]></content>
+			</entry>
+		
+	
+		
+			<entry>
+				<title type="html"><![CDATA[Screencasts on a (Performance) Budget]]></title>
+				<link href="http://localhost:4000/notebook/links/screencasts-on-a-performance-budget/"/>
+				<updated>2017-03-02T16:46:13-05:00</updated>
+				<id>http://localhost:4000/notebook/links/screencasts-on-a-performance-budget</id>
+				<content type="html"><![CDATA[<p>I love this post from Dave on making screencast snippets smaller by choosing video files over GIFs.</p>
+<p><a rel="full-article" href="http://daverupert.com/2016/02/screencasts-on-a-performance-budget/">Read on Dave Rupert&nbsp;&rarr;</a></p>]]></content>
+			</entry>
+		
+	
+		
+			<entry>
+				<title type="html"><![CDATA[State of Responsive Images 2017]]></title>
+				<link href="http://localhost:4000/notebook/links/state-of-responsive-images-2017/"/>
+				<updated>2017-03-02T16:44:00-05:00</updated>
+				<id>http://localhost:4000/notebook/links/state-of-responsive-images-2017</id>
+				<content type="html"><![CDATA[<p>A useful update from Jason. In particular, this bit makes me happy but similarly sad as a lost opportunity:</p>
+
+<blockquote>
+  <p>The new responsive image standards makes it possible for us to experiment with different types of image formats without breaking the web. … Unfortunately, I haven’t seen much experimentation happening in this space.</p>
+</blockquote>
+<p><a rel="full-article" href="https://cloudfour.com/thinks/state-of-responsive-images-2017/">Read on Cloud Four&nbsp;&rarr;</a></p>]]></content>
+			</entry>
+		
+	
+		
+			<entry>
+				<title type="html"><![CDATA[Progressive Web App Libraries in Production]]></title>
+				<link href="http://localhost:4000/notebook/links/progressive-web-app-libraries-in-production-b52cad37d34/"/>
+				<updated>2017-03-02T16:39:07-05:00</updated>
+				<id>http://localhost:4000/notebook/links/progressive-web-app-libraries-in-production-b52cad37d34</id>
+				<content type="html"><![CDATA[<p>An excellent roll-up of PWA libraries out there, many of them from Google.</p>
+<p><a rel="full-article" href="https://medium.com/dev-channel/progressive-web-app-libraries-in-production-b52cad37d34">Read on Addy Osmani on Medium&nbsp;&rarr;</a></p>]]></content>
+			</entry>
+		
+	
+		
+			<entry>
+				<title type="html"><![CDATA[CSS Tip: Use `:not` to Save Time and Lines of Code]]></title>
+				<link href="http://localhost:4000/notebook/links/css-tip-use-not-to-save-time-and-lines-of-code/"/>
+				<updated>2017-03-02T16:35:00-05:00</updated>
+				<id>http://localhost:4000/notebook/links/css-tip-use-not-to-save-time-and-lines-of-code</id>
+				<content type="html"><![CDATA[<p>The <code class="highlighter-rouge">:not</code> selector has <a href="http://caniuse.com/#feat=css-sel3">pretty good support</a> in its most basic form. Just be sure to <a href="http://caniuse.com/#feat=css-not-sel-list">make sure the selector you’re <em>not</em> electing is supported</a>.</p>
+<p><a rel="full-article" href="https://theboldreport.net/2017/02/css-tip-use-not-to-save-time-and-lines-of-code/">Read on The Bold Report&nbsp;&rarr;</a></p>]]></content>
+			</entry>
+		
+	
+		
+			<entry>
+				<title type="html"><![CDATA[Your Login Form Posts to HTTPS, but You Blew It When You Loaded It Over HTTP]]></title>
+				<link href="http://localhost:4000/notebook/links/your-login-form-posts-to-https-but-you/"/>
+				<updated>2017-03-02T16:32:58-05:00</updated>
+				<id>http://localhost:4000/notebook/links/your-login-form-posts-to-https-but-you</id>
+				<content type="html"><![CDATA[<p>I shared this one with Marriott when <a href="https://twitter.com/aarongustafson/status/836681750776590336">I highlighted their login oversight</a> and <a href="https://twitter.com/marriott/status/836922588966359044">they pushed back</a>.</p>
+<p><a rel="full-article" href="https://www.troyhunt.com/your-login-form-posts-to-https-but-you/">Read on Troy Hunt&nbsp;&rarr;</a></p>]]></content>
+			</entry>
+		
+	
+		
+			<entry>
+				<title type="html"><![CDATA[HTML Prototyping 101 - Offline Mode]]></title>
+				<link href="http://localhost:4000/notebook/links/prototype-101-offline-mode/"/>
+				<updated>2017-03-02T16:24:25-05:00</updated>
+				<id>http://localhost:4000/notebook/links/prototype-101-offline-mode</id>
+				<content type="html"><![CDATA[<p>It’s so easy to get comfortable…</p>
+
+<blockquote>
+  <p>So it’s on the 07.12 London-bound train from Brighton that Rich, Jon and I find ourselves reviewing a prototype while deprived of the one office luxury we’ve grown so accustomed to: a stable and generous internet connection.</p>
+</blockquote>
+<p><a rel="full-article" href="http://benjamin.parry.is/collecting/thoughts/2017/02/prototype-101-offline-mode/">Read on Benjamin Parry&nbsp;&rarr;</a></p>]]></content>
+			</entry>
+		
+	
+		
+			<entry>
+				<title type="html"><![CDATA[Checking the Reading Order of a PowerPoint Slide]]></title>
+				<link href="http://localhost:4000/notebook/links/checking-the-reading-order-of-a-powerpoint-slide/"/>
+				<updated>2017-02-27T15:44:34-05:00</updated>
+				<id>http://localhost:4000/notebook/links/checking-the-reading-order-of-a-powerpoint-slide</id>
+				<content type="html"><![CDATA[<p>I’m starting to do the occasional PowerPoint presentation. I still favor Keynote, but it’s always good to bone up on other tools. And when I do so, I want to make sure my decks are also accessible.</p>
+<p><a rel="full-article" href="http://blog.247accessibledocuments.com/2017/02/15/checking-the-reading-order-of-a-powerpoint-slide/">Read on 247AccessibleDocuments.com&nbsp;&rarr;</a></p>]]></content>
+			</entry>
+		
+	
+		
+			<entry>
+				<title type="html"><![CDATA[ARIA Widget Checklist for Screen Reader Testing]]></title>
+				<link href="http://localhost:4000/notebook/links/aria-widget-checklist-screen-reader-testing/"/>
+				<updated>2017-02-27T15:41:34-05:00</updated>
+				<id>http://localhost:4000/notebook/links/aria-widget-checklist-screen-reader-testing</id>
+				<content type="html"><![CDATA[<p>An excellent test suite from the SSB Bart Group. It’s necessary because…</p>
+
+<blockquote>
+  <p>there are still significant discrepancies between valid ARIA usage and what is supported between specific screen readers and browser combinations, so there is immense benefit for such screen reader venders to get on the same page and test these assistive technologies more thoroughly and to also involve the public for crowd sourcing this feedback for entering more bugs related to these issues.</p>
+</blockquote>
+<p><a rel="full-article" href="http://www.ssbbartgroup.com/blog/aria-widget-checklist-screen-reader-testing/">Read on SSB Bart Group&nbsp;&rarr;</a></p>]]></content>
+			</entry>
+		
+	
+</feed>

@@ -5,7 +5,7 @@ task :go do
     system "git add ."
     message = "Site generated at #{Time.now.utc}"
     system "git commit -am \"#{message}\""
-    system "git push origin source"
+    system "git push origin HEAD:source"
     system "bundle exec jekyll build --incremental"
     Rake::Task[:publish].execute
     Rake::Task[:webmention].execute

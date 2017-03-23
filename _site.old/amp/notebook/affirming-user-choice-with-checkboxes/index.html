@@ -1,0 +1,116 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Affirming User Choice with Checkboxes, From the Notebook of Aaron Gustafson</title>
+    <link rel="canonical" href="https://www.aaron-gustafson.com/notebook/affirming-user-choice-with-checkboxes/" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-custom>html{font-size:-webkit-calc(1em + .5vw);font-size:calc(1em + .5vw);line-height:1.4;max-width:70ch;margin:0 auto;word-wrap:break-word;overflow-wrap:break-word}body{padding:.5em}.post-meta,h1,h2,h3,h4,h5,h6{font-family:sans-serif;line-height:1.2;margin-bottom:0}header{background:#ebebeb;margin:0 -1em;padding:1em}header h1{margin:0}.post-meta,footer{color:#999}li{margin-bottom:.5em}li ol,li ul{margin-top:.5em}blockquote{font-style:italic}pre{background:#ebebeb;padding:1em;margin:1em -1em}sup{font-size:.65em;padding-left:.2em}.footnotes{border-top:1px solid #ccc;font-size:.8em}.footnotes li{margin-bottom:.25em}.footnotes p{margin:0}.promo--image{position:relative;background:#ebebeb;padding:1px 1em 1px 122px;margin:1.5em 0}.promo--image:after,.promo--image:before{content:"\00A0";border-top:1px solid #ebebeb;display:block;left:0;right:0;position:absolute}.promo--image:before{margin-top:-.5em}.promo--image:after{margin-top:.5em}.promo__image{max-width:100px;margin-top:-.2em;-webkit-transform:rotate(-10deg);-ms-transform:rotate(-10deg);transform:rotate(-10deg);position:absolute;left:0;top:0;z-index:1}footer small{display:block;font-size:-webkit-calc(.5em + .5vw);font-size:calc(.5em + .5vw);font-style:italic;text-align:center}hr{border:1px solid #ccc;border-width:1px 0 0;max-width:200px}figure{margin:1em -.5em}figure iframe,figure img{border:1px solid #ccc;max-width:100%;height:auto}</style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="post-title">Affirming User Choice With Checkboxes</h1>
+      <p class="post-meta">by <a href="https://www.aaron-gustafson.com/about/">Aaron Gustafson</a> on 06 January 2016</p>
+    </header>
+    <main>
+      <p>“Checkbox” form controls have long been a part of software. They enable users to provide a simple binary response—yes or no. On the Web, we often see them in two scenarios: confirmations and multiple choice.</p>
+
+<!-- more -->
+
+<h2 id="confirmation-checkboxes">Confirmation Checkboxes</h2>
+
+<p>Standalone checkboxes are often employed to enable users to affirm a statement, as in <a href="#fig-2016-01-06-01">this example</a> from <a href="https://online.americanexpress.com/myca/logon/us/action/LogonHandler?request_type=LogonHandler&amp;Face=en_US#lilo_loginForm">the American Express login form</a> where a customer can indicate they’d like the site to remember them.</p>
+
+<figure id="fig-2016-01-06-01" class="media-container"><amp-img src="/i/posts/2016-01-06/01.png" width="980" height="346" layout="responsive"></amp-img><figcaption>American Express’ login form offers users the option of being remembered. As that is a binary choice (e.g. yes or no), the checkbox makes sense.</figcaption></figure>
+
+<p>Here’s a simplification of the markup they’re using:</p>
+
+<p>{% gist d281f889a11634b45280 american-express-login-simplified.html %}</p>
+
+<p>This works really well, though I generally prefer to <a href="https://www.aaron-gustafson.com/notebook/labeled-with-love/#an-alternate-approach">combine explicit and implicit labeling</a> to simplify my CSS selectors and broaden their applicability. Here’s how I would rewrite this control:</p>
+
+<p>{% gist d281f889a11634b45280 american-express-login-reimagined.html %}</p>
+
+<p>Regardless of the markup pattern itself, it’s important to note the explicit association of the form control and the <code class="highlighter-rouge">label</code> element (using the <code class="highlighter-rouge">for</code> attribute). You’ll also notice the input has a straightforward <code class="highlighter-rouge">name</code> value which will be submitted to the back end if the user ticks the box.</p>
+
+<p>It’s worth noting that some back-end systems may require a value be submitted for the given variable name (in this case, “REMEMBERME”) regardless of whether the user has ticked the checkbox. If that’s a requirement, you can alter the pattern to use a hidden <code class="highlighter-rouge">input</code> as well:</p>
+
+<p>{% gist d281f889a11634b45280 american-express-login-with-hidden.html %}</p>
+
+<p>The source order matters because with matching <code class="highlighter-rouge">name</code> values, the final submittable <code class="highlighter-rouge">value</code> will always be the one the back-end receives. With this setup, the <code class="highlighter-rouge">value</code> of “no” (from the hidden <code class="highlighter-rouge">input</code>) will be submitted by default. If the checkbox is ticked, its <code class="highlighter-rouge">value</code> is submitted instead, setting REMEMBERME to “yes”.</p>
+
+<h2 id="multiple-choice-checkboxes">Multiple Choice Checkboxes</h2>
+
+<p>The other way we often see checkboxes used is to enable users to choose zero or more items from a collection of options. Consider <a href="#fig-2016-01-06-02">this example</a> from <a href="http://chadevicelab.org/book-time">the Chattanooga Open Device Lab’s reservation form</a>. It allows users to choose the devices they’d like to include in their test matrix:</p>
+
+<figure id="fig-2016-01-06-02" class="media-container"><amp-img src="/i/posts/2016-01-06/02.png" width="950" height="206" layout="responsive"></amp-img><figcaption>In this excerpt from the reservation form on the Chattanooga Open Device Lab website, users can choose to include gaming system options.</figcaption></figure>
+
+<p>The markup they employ is pretty well-organized and straightforward: it’s a list of checkbox options.</p>
+
+<p>{% gist d281f889a11634b45280 chaodl-checkbox-list.html %}</p>
+
+<p>As this is an instance where a user could choose more than one option, the back end needs to be able to capture that information in what’s called an “array”. An array, if you’re unfamiliar, is a collection of values. You’ll notice that the <code class="highlighter-rouge">name</code> given to each of these checkbox <code class="highlighter-rouge">input</code> elements is the same: “reservation_requested_device[]”. The square brackets (“[]”) at the end of the <code class="highlighter-rouge">name</code> are the magic bit that allows the values of <em>each</em> chosen “reservation_requested_device” checkbox to be submitted as the value of “reservation_requested_device”.</p>
+
+<h2 id="applicable-attributes">Applicable Attributes</h2>
+
+<p>Checkbox controls only use a subset of the typical <code class="highlighter-rouge">input</code> attributes. In particular, you’ll need to include</p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">name</code> - This is the variable name you want to hold the user’s response. As mentioned in <a href="#multiple-choice-checkboxes">the previous section</a>, appending “[]” to the variable name will allow the variable to hold all of the user’s choices as opposed to only the final one.</li>
+  <li>
+<code class="highlighter-rouge">value</code> - This is the value that should be captured if the user ticks the checkbox.</li>
+  <li>
+<code class="highlighter-rouge">id</code> - The unique identifier you’re using for the control in order to explicitly associate it with a <code class="highlighter-rouge">label</code>.</li>
+</ul>
+
+<p>There are a few optional attributes you might consider including as well.</p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">checked</code> - Use this null attribute if you want the default state of the checkbox to be ticked. This attribute should be used with caution. <strong>Don’t</strong> use this attribute to automatically check confirmation boxes for things like mailing list opt-ins. <strong>Do</strong> use this attribute when you are displaying sensible default settings or displaying confirmations the user has already made (e.g. in the user’s profile or when re-displaying the form when it has a submission error).</li>
+  <li>
+<code class="highlighter-rouge">required</code> - Use this to indicate the checkbox must be ticked for the form to be valid. It’s important to note that this attribute is typically only useful in confirmation checkbox scenarios. If you need a user to choose at least one from a multiple choice checkbox collection, it’s useless unless you need them to pick a specific one. To require one (or more) of a multiple choice checkbox group, you currently need to use JavaScript, like <a href="https://github.com/easy-designs/easy-checkbox-required.js">the one the Chattanooga Open Device Lab uses</a>.</li>
+</ul>
+
+<h2 id="checkbox-vs-other-controls">Checkbox vs. Other Controls</h2>
+
+<p>Checkboxes excel at allowing users to indicate preference from a pre-defined set of options. But there are other form control types that allow for similar control over user responses. That can make it difficult to decide which element to use.</p>
+
+<h3 id="dropdown-list-select">Dropdown List (<code class="highlighter-rouge">select</code>)</h3>
+
+<p>The <code class="highlighter-rouge">select</code> element is another tried and true option for allowing users to indicate preference. A simple two-choice <code class="highlighter-rouge">select</code> could achieve the same goal as a confirmation checkbox, but it’s a little clunkier. In terms of user interface, <code class="highlighter-rouge">select</code> elements require more clicks of your users. They also obscure the complete list of choices from view because only one options is displayed at a time. Their appearance makes them more compact, but can make it difficult to get a complete picture of what choices are available when you can’t see them all.</p>
+
+<p>You can enable multiple choice in a  <code class="highlighter-rouge">select</code> element by adding the <code class="highlighter-rouge">multiple</code> attribute to it, but depending on the number of <code class="highlighter-rouge">option</code> elements, it could also be a little unwieldy. Depending on the size of the <code class="highlighter-rouge">select</code> and the number of options, you could also create an inner scroll that could be awkward on certain touch-based devices.</p>
+
+<p>The <code class="highlighter-rouge">select</code> element has its place, but should be used sparingly. I’ll go in-depth with <code class="highlighter-rouge">select</code> elements in a future post.</p>
+
+<h3 id="choose-one-inputtyperadio">Choose One (<code class="highlighter-rouge">input[type=radio]</code>)</h3>
+
+<p>For simple confirmation questions, it’s completely valid to use a radio form control in lieu of a single checkbox. In fact, in some cases, it may offer a more explicit choice for your users. Consider <a href="#fig-2016-01-06-03">this example</a> from <a href="https://order.subway.com">Subway’s online ordering tool</a>.</p>
+
+<figure id="fig-2016-01-06-03" class="media-container"><amp-img src="/i/posts/2016-01-06/03.png" width="1086" height="436" layout="responsive"></amp-img><figcaption>In this excerpt from Subway’s online ordering tool, they use a checkbox to confirm the user wants their sandwich toasted.</figcaption></figure>
+
+<p>A checkbox labelled “Fresh Toasted”, isn’t terribly clear. A better approach would be to ask something like “Would you like your sandwich toasted?” with radio controls for “yes” and “no”. Alternately, if they absolutely wanted to keep it as a checkbox, they could use a better label: “Please toast my sandwich”.</p>
+
+<figure id="fig-2016-01-06-04" class="media-container"><amp-img src="/i/posts/2016-01-06/04.png" width="1094" height="440" layout="responsive"></amp-img><figcaption>An alternate approach to the Subway interface, using radio controls.</figcaption></figure>
+
+<p>Radio controls have their place, but are not often a one-to-one replacement for checkboxes. I will discuss radio controls in greater depth in another post.</p>
+
+<h2 id="check-em-out">Check ’Em Out</h2>
+
+<p>Checkboxes are an invaluable tool in the form building tool chest. Understanding their purpose and capabilities is key to using them properly and ensuring your forms are usable to the broadest number of users.</p>
+
+    </main>
+    <aside class="promo promo--book promo--image">
+	    <img class="promo__image" src="https://adaptivewebdesign.info/2nd-edition/cover-320.jpg" alt="">
+	    <div class="promo__copy"><p>Like what you’re reading? You might dig my book <a href="https://adaptivewebdesign.info/2nd-edition/"><cite>Adaptive Web Design, Second Edition</cite></a>. You can grab a copy on <a href="http://www.amazon.com/gp/product/0134216148/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0134216148&amp;linkCode=as2&amp;tag=easydesign-20&amp;linkId=7EDENIS3P4XL7LIT">Amazon</a>, <a href="http://www.anrdoezrs.net/links/7941166/type/dlg/http://www.barnesandnoble.com/w/adaptive-web-design-aaron-gustafson/1102101792?ean=9780134216140">Barnes &amp; Noble</a>, <a href="http://click.linksynergy.com/link?id=ksYXFf8a/VY&amp;offerid=145244.2319719&amp;type=2&amp;murl=http%3A%2F%2Fwww.peachpit.com%2Ftitle%2F9780134216140">New Riders</a>, or anywhere web design books are sold.</p>
+</div>
+    </aside>
+    <footer>
+      <small>The content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a>.</small>
+    </footer>
+  </body>
+</html>

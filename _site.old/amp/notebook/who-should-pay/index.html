@@ -1,0 +1,62 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Who Should Pay?, From the Notebook of Aaron Gustafson</title>
+    <link rel="canonical" href="https://www.aaron-gustafson.com/notebook/who-should-pay/" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-custom>html{font-size:-webkit-calc(1em + .5vw);font-size:calc(1em + .5vw);line-height:1.4;max-width:70ch;margin:0 auto;word-wrap:break-word;overflow-wrap:break-word}body{padding:.5em}.post-meta,h1,h2,h3,h4,h5,h6{font-family:sans-serif;line-height:1.2;margin-bottom:0}header{background:#ebebeb;margin:0 -1em;padding:1em}header h1{margin:0}.post-meta,footer{color:#999}li{margin-bottom:.5em}li ol,li ul{margin-top:.5em}blockquote{font-style:italic}pre{background:#ebebeb;padding:1em;margin:1em -1em}sup{font-size:.65em;padding-left:.2em}.footnotes{border-top:1px solid #ccc;font-size:.8em}.footnotes li{margin-bottom:.25em}.footnotes p{margin:0}.promo--image{position:relative;background:#ebebeb;padding:1px 1em 1px 122px;margin:1.5em 0}.promo--image:after,.promo--image:before{content:"\00A0";border-top:1px solid #ebebeb;display:block;left:0;right:0;position:absolute}.promo--image:before{margin-top:-.5em}.promo--image:after{margin-top:.5em}.promo__image{max-width:100px;margin-top:-.2em;-webkit-transform:rotate(-10deg);-ms-transform:rotate(-10deg);transform:rotate(-10deg);position:absolute;left:0;top:0;z-index:1}footer small{display:block;font-size:-webkit-calc(.5em + .5vw);font-size:calc(.5em + .5vw);font-style:italic;text-align:center}hr{border:1px solid #ccc;border-width:1px 0 0;max-width:200px}figure{margin:1em -.5em}figure iframe,figure img{border:1px solid #ccc;max-width:100%;height:auto}</style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="post-title">Who Should Pay?</h1>
+      <p class="post-meta">by <a href="https://www.aaron-gustafson.com/about/">Aaron Gustafson</a> on 18 February 2015</p>
+    </header>
+    <main>
+      <p>In more than a handful of conversations lately, it’s become quite clear that we, the web development community, are prioritizing our own convenience and our own time over that of our users. With our industry’s focus on “user-centered design”, you might find that hard to believe, but it’s true.</p>
+
+<!-- more -->
+
+<p>Here’s one example. In reaction to <a href="/notebook/css-variables-are-a-bad-idea/">my post on why I think CSS variables are a bad idea</a>, <a href="http://sass-lang.com">SASS</a> core team member <a href="https://twitter.com/chriseppstein/">Chris Eppstein</a> had this to say:</p>
+
+<p>{% tweet https://twitter.com/chriseppstein/status/567756897105620992 %}</p>
+
+<p>Fundamentally, I agree with his sentiment: A preprocessor should <em>not</em> be a requirement for authoring CSS. Thankfully, <em>it never was</em>; you can build amazing things using only hand-authored CSS. And if you find a preprocessor helpful to your process for one reason or another, great. But using a preprocessor never has been (nor should it ever be) a requirement.</p>
+
+<p>But Chris was not railing against preprocessors. Instead, he is echoing a sentiment held by many people in the preprocessor community. He feels CSS is not as powerful as it could/should be and he hopes that one day soon preprocessors won’t need to exist because CSS will have all of the features they offer natively. Like variables.</p>
+
+<p>I used to feel that way. I used to want variables… and mixins… and functions… and loops… and declaration block-level inheritance. But I’ve changed my mind.</p>
+
+<p>Don’t get me wrong, I love these constructs. I use them nearly every day in the SASS I write and I am incredibly thankful for the hard work that has gone into their creation and maintenance.  Chris alone has probably saved me several weeks worth of work over the last four years through his contributions to SASS and <a href="http://compass-style.org/">Compass</a>. I definitely owe him a beer (or three).</p>
+
+<p>Ok, so if my issue is not with the idea of programmatically generating styles, why would I not want these to be part of CSS, the <i>lingua franca</i> for design on the Web? Well, it’s pretty simple: Converting all of these constructs into something that is actionable by the browser takes time and processing power. Someone has to pay that cost and I wouldn’t feel right passing that cost on to my end users if there are better options.</p>
+
+<p>This is a topic I bring up often in my conference talks and workshops: Every decision we make affects the user experience in some way.</p>
+
+<p>When we add another JavaScript library or plugin, it’s no big deal from our perspective. We tend to have fast connections and faster processors. For our users it’s another story: It’s one more thing to request. One more thing to download. One more script to parse. One more thing holding up page rendering. One more reason to leave our site and seek out a competitor who actually values their time.</p>
+
+<p>When we hide an <code class="highlighter-rouge">img</code> in the small screen version of our responsive design using <code class="highlighter-rouge">display: none</code>, the cost to us is quite minimal. It’s just one little declaration. What’s the harm? But the cost to our end users is quite significant: Longer load times, slower performance, and (in some cases) in real dollars if they are on a <a href="http://blog.kaspersky.com/cost-aware/">metered data connection</a>. And they don’t even get to see the image they paid for!</p>
+
+<p>When we decide to build a site using a front-end JavaScript MVC framework, it can make the development process go so much faster for us and we can reduce our need for a robust back-end infrastructure. I mean everyone has JavaScript these days… <a href="/notebook/a-fundamental-disconnect/">the browser is the new VM</a>. But when we do this, our users suffer because we don’t give their browsers real HTML. Instead we force them to download a hefty framework so we can move all of the processing we would normally handle on a much faster, dedicated server to their questionably-capable machine instead. Oh, and if the browser encounters an error while parsing or executing the JavaScript execution, they don’t get anything at all. Welcome to the Modern Web™!</p>
+
+<hr>
+
+<p>When I look around, I see our community spending a lot of time coming up with new tools and techniques to make our jobs easier. To ship faster. And it’s not that I’m against efficiency, but I think we need to consider the implications of our decisions. And if one of those implications is making our users suffer—or potentially suffer—in order to make our lives easier, I think we need to consider their needs above our own.</p>
+
+<p>So yes, I would love a world where preprocessors are unnecessary, but I would much rather spend a few seconds (or even a few minutes) transcompiling my SASS into CSS in order to save my users even a few milliseconds. It’s the same reason I optimize my images, minify my JavaScript, use Gzip, and lazy load design and experience enhancements only in contexts where they provide a real benefit.</p>
+
+<p>Our users should never foot the bill for our convenience. We need to put their needs above our own.</p>
+
+    </main>
+    <aside class="promo promo--book promo--image">
+	    <img class="promo__image" src="https://adaptivewebdesign.info/2nd-edition/cover-320.jpg" alt="">
+	    <div class="promo__copy"><p>Like what you’re reading? You might dig my book <a href="https://adaptivewebdesign.info/2nd-edition/"><cite>Adaptive Web Design, Second Edition</cite></a>. You can grab a copy on <a href="http://www.amazon.com/gp/product/0134216148/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0134216148&amp;linkCode=as2&amp;tag=easydesign-20&amp;linkId=7EDENIS3P4XL7LIT">Amazon</a>, <a href="http://www.anrdoezrs.net/links/7941166/type/dlg/http://www.barnesandnoble.com/w/adaptive-web-design-aaron-gustafson/1102101792?ean=9780134216140">Barnes &amp; Noble</a>, <a href="http://click.linksynergy.com/link?id=ksYXFf8a/VY&amp;offerid=145244.2319719&amp;type=2&amp;murl=http%3A%2F%2Fwww.peachpit.com%2Ftitle%2F9780134216140">New Riders</a>, or anywhere web design books are sold.</p>
+</div>
+    </aside>
+    <footer>
+      <small>The content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a>.</small>
+    </footer>
+  </body>
+</html>

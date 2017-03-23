@@ -1,0 +1,97 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Speeding Things Up with Service Worker, Resource Hints, and More, From the Notebook of Aaron Gustafson</title>
+    <link rel="canonical" href="https://www.aaron-gustafson.com/notebook/speeding-things-up-with-service-worker-resource-hints-and-more/" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-custom>html{font-size:-webkit-calc(1em + .5vw);font-size:calc(1em + .5vw);line-height:1.4;max-width:70ch;margin:0 auto;word-wrap:break-word;overflow-wrap:break-word}body{padding:.5em}.post-meta,h1,h2,h3,h4,h5,h6{font-family:sans-serif;line-height:1.2;margin-bottom:0}header{background:#ebebeb;margin:0 -1em;padding:1em}header h1{margin:0}.post-meta,footer{color:#999}li{margin-bottom:.5em}li ol,li ul{margin-top:.5em}blockquote{font-style:italic}pre{background:#ebebeb;padding:1em;margin:1em -1em}sup{font-size:.65em;padding-left:.2em}.footnotes{border-top:1px solid #ccc;font-size:.8em}.footnotes li{margin-bottom:.25em}.footnotes p{margin:0}.promo--image{position:relative;background:#ebebeb;padding:1px 1em 1px 122px;margin:1.5em 0}.promo--image:after,.promo--image:before{content:"\00A0";border-top:1px solid #ebebeb;display:block;left:0;right:0;position:absolute}.promo--image:before{margin-top:-.5em}.promo--image:after{margin-top:.5em}.promo__image{max-width:100px;margin-top:-.2em;-webkit-transform:rotate(-10deg);-ms-transform:rotate(-10deg);transform:rotate(-10deg);position:absolute;left:0;top:0;z-index:1}footer small{display:block;font-size:-webkit-calc(.5em + .5vw);font-size:calc(.5em + .5vw);font-style:italic;text-align:center}hr{border:1px solid #ccc;border-width:1px 0 0;max-width:200px}figure{margin:1em -.5em}figure iframe,figure img{border:1px solid #ccc;max-width:100%;height:auto}</style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="post-title">Speeding Things Up With Service Worker, Resource Hints, and More</h1>
+      <p class="post-meta">by <a href="https://www.aaron-gustafson.com/about/">Aaron Gustafson</a> on 20 November 2015</p>
+    </header>
+    <main>
+      <p>User experience encompasses more than just the interface. Download speed, render performance, and the cost of accessing a site are often overlooked areas when it comes to the practice of UX, but they all affect how users experience what we build on the Web.</p>
+
+<!-- more -->
+
+<p>I’m always looking for ways to improve these aspects of my own site. And, since it’s my own personal playground, I often use it as a test-bed for new technologies, ideas, and techniques. My latest adventure was inspired by a bunch of <a href="https://www.aaron-gustafson.com/notebook/links/">articles and posts I’ve linked to recently</a>, especially</p>
+
+<ul>
+  <li>
+<a href="https://adactio.com/journal/9775">Jeremy Keith’s “My First Service Worker”</a>,</li>
+  <li>
+<a href="https://css-tricks.com/serviceworker-for-offline/">Nicolas Bevacqua’s “Making a Simple Site Work Offline with ServiceWorker”</a>,</li>
+  <li>
+<a href="http://deanhume.com/Home/BlogPost/service-workers--dynamic-responsive-images-using-webp-images/10132/">Dean Hume’s “Service Workers: Dynamic Responsive Images Using Webp Images”</a>, and</li>
+  <li><a href="https://medium.com/@cramforce/not-so-micro-optimizations-f867c47b832d#.satdv0fap">Malte Ubl’s “Not so micro optimizations”</a></li>
+</ul>
+
+<p>After reading these pieces, I decided to see how much I could do to improve the performance of this site, especially on posts with a lot of images and embedded code samples, like <a href="https://www.aaron-gustafson.com/notebook/labeled-with-love/">my recent post on form labels</a>.</p>
+
+<h2 id="using-resource-hints">Using Resource Hints</h2>
+
+<p>To kick things off, I followed Malte’s advice and used <a href="https://w3c.github.io/resource-hints/">Resource Hints</a> to <em>prime the pump</em> for any third-party servers hosting assets I use frequently (e.g. Disqus, Twitter, etc.). I used the code Malte references in <a href="https://github.com/ampproject/amphtml">the AMP Project</a> as my starting point and <a href="https://github.com/aarongustafson/aarongustafson.github.io/blob/source/source/_javascript/main/resource-hints.js">added two new methods (<code class="highlighter-rouge">preconnect()</code> and <code class="highlighter-rouge">prefetch()</code>) to my global <code class="highlighter-rouge">AG</code> object</a>. With that library code in place, I can call those methods as necessary from within my other JavaScript files. Here’s a simplified extract from <a href="https://github.com/aarongustafson/aarongustafson.github.io/blob/source/source/_javascript/post/disqus.js">my Disqus integration script</a>:</p>
+
+<p>{% gist 7f05709cca9293e4efea resource-hints-sample.js embed %}</p>
+
+<p>While a minor addition, the speed improvement in <a href="http://caniuse.com/#search=resource%20hints">supporting browsers</a> was noticeable.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
+
+<h2 id="integrating-service-worker">Integrating Service Worker</h2>
+
+<p>With that in the bag, I set about making my first <a href="http://www.w3.org/TR/service-workers/">Service Worker</a>. I started off gently, using Dean’s piece as a guide. I added a WebP conversion bit to <a href="https://github.com/aarongustafson/aarongustafson.github.io/blob/source/tasks/gulp/images.js">my image processing Gulp task</a> to get the files in place and then I created the Service Worker. By default, <a href="https://gist.github.com/deanhume/c04478df744ce833925c#file-client-hints-service-worker-js">Dean’s code</a> converts <em>all</em> JPG and PNG requests to WebP responses, so I set it up to limit the requests to only those files being requested directly from my server. I have no way of knowing if WebP equivalents of every JPG and PNG exist on the open web (probably not), but I know they exist on my server. Here’s the updated code:</p>
+
+<p>{% gist ff6aef09a10038e1728a webp-service-worker.js embed %}</p>
+
+<p>When I began tucking to the caching possibilities of Service Workers, following Nicolas’ and Jeremy’s posts, I <a href="https://github.com/aarongustafson/aarongustafson.github.io/blob/source/source/_javascript/serviceworker/fetch-cached.js">opted to tweak Nicholas’ caching setup a bit</a>. I’m still not completely thrilled with it, but it’s a work in progress. I’m sure I will tweak as I get more familiar with the technology.</p>
+
+<p>To keep my Service Worker code modularized (like my other JavaScript code), I opted to <a href="https://github.com/aarongustafson/aarongustafson.github.io/tree/source/source/_javascript/serviceworker">break it up into separate files</a> and am using Gulp to merge them all together and move the combined file into the root of the site. If you’d like to follow a similar path, feel free to adapt this Gulp task (which builds all of my JavaScript):</p>
+
+<p>{% gist 7f05709cca9293e4efea gulp-scripts.js embed %}</p>
+
+<p>As most of the walkthroughs recommended that you version your Service Worker if you’re doing any caching, I set mine up to be auto-versioned by inserting a timestamp (lines 23-27, above) into my Service Worker header file (line 3, below):</p>
+
+<p>{% gist 7f05709cca9293e4efea _header.js embed %}</p>
+
+<p>Service Workers are still pretty new (and <a href="http://caniuse.com/#feat=serviceworkers">modestly supported</a>), but it’s definitely interesting to see what’s possible using them. <a href="https://adactio.com/journal/9844">Like Jeremy</a>, I want to do a bit more exploration into caching and how it may actually <em>increase</em> the monetary cost of accessing a website if not used properly. Like any powerful tool, we need to wield it wisely.</p>
+
+<figure id="fig-2015-11-20-01"><amp-img src="https://media.giphy.com/media/dlmcYrvalMmAw/giphy.gif" alt="Animated GIF of a guy accidentally launching a board into his helper while power sanding." width="255" height="192" layout="responsive"></amp-img></figure>
+
+<h2 id="making-gists-static">Making Gists Static</h2>
+
+<p>On particularly code-heavy posts (yes, like this one), I make liberal use of Gists. They’re quite useful, but <a href="https://gist.github.com/BinaryMuse/803483">the Gist plugin for Jekyll</a>, while good, still requests a script from Github in order to load the pretty printed version of the Gist. On some posts, that can mean 5 or more additional network requests, not to mention execution time for the JavaScript. It’s yet another dependency that could prohibit you from quickly getting to the content you’re looking for. Additionally, <a href="https://gds.blog.gov.uk/2013/10/21/how-many-people-are-missing-out-on-javascript-enhancement/">if JavaScript should be available, but isn’t</a>, you get nothing (since the <code class="highlighter-rouge">noscript</code> content is only evaluated if JavaScript support isn’t available or if a user turns it off).</p>
+
+<p>With all of this in mind, I decided to revise the plugin and make it capable of downloading the JavaScript code directly. It then extracts the HTML markup that the JavaScript would be writing into the page and just embeds it directly. It also caches the result, which is handy for speeding up the build process.</p>
+
+<p>You can grab <a href="https://gist.github.com/aarongustafson/b98add8f3580f6707cf5">my fork of the Gist Jekyll Plugin as, well, a Gist</a>. It’s also <a href="https://github.com/aarongustafson/aarongustafson.github.io/blob/source/plugins/gist_tag.rb">in the source of this site on Github</a>.</p>
+
+<h2 id="hopefully-a-little-faster">(Hopefully) A Little Faster</h2>
+
+<p>All told, these changes have gotten the render time of this site down significantly across the board.<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> Even more so on browsers that support Service Workers and Resource Hints. I’ll likely continue tweaking as I go, but I wanted to share my process, code, and thoughts in case any of it might be useful to you in your own work. In the end, it’s all about creating better experiences for our users. How our sites perform is a big part of that.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Sadly I forgot to run some speed tests prior to rolling out this change and I didn’t feel like rolling back the site, so I don’t have solid numbers for you. That said, it seemed to shave nearly 2 seconds off of the load time on heavy pages like the post I mentioned. <a href="#fnref:1" class="reversefootnote">↩</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Again, I don’t have the numbers, but I am routinely seeing <code class="highlighter-rouge">DOMContentLoaded</code> reached between 400-600ms with Service Worker caching in play. <a href="#fnref:2" class="reversefootnote">↩</a></p>
+    </li>
+  </ol>
+</div>
+
+    </main>
+    <aside class="promo promo--book promo--image">
+	    <img class="promo__image" src="https://adaptivewebdesign.info/2nd-edition/cover-320.jpg" alt="">
+	    <div class="promo__copy"><p>Like what you’re reading? You might dig my book <a href="https://adaptivewebdesign.info/2nd-edition/"><cite>Adaptive Web Design, Second Edition</cite></a>. You can grab a copy on <a href="http://www.amazon.com/gp/product/0134216148/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0134216148&amp;linkCode=as2&amp;tag=easydesign-20&amp;linkId=7EDENIS3P4XL7LIT">Amazon</a>, <a href="http://www.anrdoezrs.net/links/7941166/type/dlg/http://www.barnesandnoble.com/w/adaptive-web-design-aaron-gustafson/1102101792?ean=9780134216140">Barnes &amp; Noble</a>, <a href="http://click.linksynergy.com/link?id=ksYXFf8a/VY&amp;offerid=145244.2319719&amp;type=2&amp;murl=http%3A%2F%2Fwww.peachpit.com%2Ftitle%2F9780134216140">New Riders</a>, or anywhere web design books are sold.</p>
+</div>
+    </aside>
+    <footer>
+      <small>The content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a>.</small>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>On Adaptive Web Design’s Second Edition, From the Notebook of Aaron Gustafson</title>
+    <link rel="canonical" href="https://www.aaron-gustafson.com/notebook/on-adaptive-web-designs-second-edition/" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-custom>html{font-size:-webkit-calc(1em + .5vw);font-size:calc(1em + .5vw);line-height:1.4;max-width:70ch;margin:0 auto;word-wrap:break-word;overflow-wrap:break-word}body{padding:.5em}.post-meta,h1,h2,h3,h4,h5,h6{font-family:sans-serif;line-height:1.2;margin-bottom:0}header{background:#ebebeb;margin:0 -1em;padding:1em}header h1{margin:0}.post-meta,footer{color:#999}li{margin-bottom:.5em}li ol,li ul{margin-top:.5em}blockquote{font-style:italic}pre{background:#ebebeb;padding:1em;margin:1em -1em}sup{font-size:.65em;padding-left:.2em}.footnotes{border-top:1px solid #ccc;font-size:.8em}.footnotes li{margin-bottom:.25em}.footnotes p{margin:0}.promo--image{position:relative;background:#ebebeb;padding:1px 1em 1px 122px;margin:1.5em 0}.promo--image:after,.promo--image:before{content:"\00A0";border-top:1px solid #ebebeb;display:block;left:0;right:0;position:absolute}.promo--image:before{margin-top:-.5em}.promo--image:after{margin-top:.5em}.promo__image{max-width:100px;margin-top:-.2em;-webkit-transform:rotate(-10deg);-ms-transform:rotate(-10deg);transform:rotate(-10deg);position:absolute;left:0;top:0;z-index:1}footer small{display:block;font-size:-webkit-calc(.5em + .5vw);font-size:calc(.5em + .5vw);font-style:italic;text-align:center}hr{border:1px solid #ccc;border-width:1px 0 0;max-width:200px}figure{margin:1em -.5em}figure iframe,figure img{border:1px solid #ccc;max-width:100%;height:auto}</style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="post-title">On Adaptive Web Design’s Second Edition</h1>
+      <p class="post-meta">by <a href="https://www.aaron-gustafson.com/about/">Aaron Gustafson</a> on 20 October 2015</p>
+    </header>
+    <main>
+      <p>I wrote the bulk of <cite>Adaptive Web Design</cite> in early 2010 while taking a much-needed break from client projects. I had originally slated for it to be released just before the holidays that year, but life happened and the book did not make it out into the world until mid-2011. Six months is a long time in the technical world, and especially on the Web. A year is forever.</p>
+
+<!-- more -->
+
+<style media="only screen">.figure--cover img{width:50%;margin-left:auto;margin-right:auto;}@media (min-width:37.5em){.figure--cover img{float:right;width:250px;margin:0 0 1em 1em;}}</style>
+
+<figure id="fig-2015-10-20-01" class="figure figure--cover"><a href="https://adaptivewebdesign.info/2nd-edition/"><amp-img src="https://adaptivewebdesign.info/2nd-edition/cover-320.jpg" srcset="https://adaptivewebdesign.info/2nd-edition/cover-320.jpg 320w, https://adaptivewebdesign.info/2nd-edition/cover-600.jpg 600w, https://adaptivewebdesign.info/2nd-edition/cover-800.jpg 800w, https://adaptivewebdesign.info/2nd-edition/cover-1024.jpg 1024w" sizes="(min-width:37.5em) 250px, 50%" class="book__cover" alt="" width="320" height="495" layout="responsive"></amp-img></a></figure>
+
+<p>Thankfully, <cite>Adaptive Web Design</cite> was never meant to be a technique book. As web design books go, technique books have perhaps the shortest lifespan. Heck, some are even out of date before they come off the press. Rather than going down that road, I consciously positioned my book as a web design philosophy book—the code samples were merely there to demonstrate how the philosophy could be applied to your work. That simple choice is probably why <cite>Adaptive Web Design</cite> continued to have strong sales year-after-year and it’s the reason that book continues to rank highly on many recommended reading lists.</p>
+
+<p>Despite the accolades and the obvious longevity the First Edition has enjoyed, I’ve had the itch to update it for the last year and a half. It’s not that the content is stale, it’s more that I’ve adjusted how I frame certain ideas within the topic of progressive enhancement. For instance, I regret my decision to sequester accessibility within its own chapter in the First Edition; it made it too easy to skip, to consider an after thought, a bolt-on. I wish I had integrated it into every chapter. Because of when I wrote it, there was also a lot of stuff I didn’t get the chance to cover. For instance, HTML5 was also pretty new (and not yet a Recommendation) at the time and ARIA was still largely in flux, so I was only able to touch on bits and pieces of those. Ethan Marcotte’s seminal article “<a href="http://alistapart.com/article/responsive-web-design">Responsive Web Design</a>”—and <a href="http://abookapart.com/products/responsive-web-design">his follow-up book by the same name</a>—came out after I’d written my CSS chapter, so I didn’t have the opportunity to demonstrate how that approach aligned with progressive enhancement.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> Similarly, there were a lot Ajax-driven sites out there, but the “single-page app” movement hadn’t quite begun yet, so I hadn’t been able to square it with the progressive enhancement philosophy either. Similarly, the argument for progressive enhancement hadn’t yet been boiled down to “no JavaScript”, so I hadn’t even thought to address that.</p>
+
+<p>When I mused about the Second Edition, I knew I wanted it to be more comprehensive and thorough. I had skimmed over content strategy the first time round—another regret—so I opted to give content its own chapter this time. I integrated accessibility into each and every chapter, showing how considering the “special needs” of your users can be accomplished with the copy you author, HTML you write, CSS you apply, and JavaScript enhancements you make. (Accessibility is important and everyone needs to be exposed to its considerations, so I am very happy about that decision.) Finally, from an organizational standpoint, I knew I didn’t want to focus the lessons around a “project site”—I wanted to pull great examples of progressive enhancement from the wild and celebrate them.</p>
+
+<p>My target length for the Second Edition was a modest increase from 135 pages to around 160. When all is said and done, it’ll be closer to 250. It’s a lot of content, but I did my best to keep it approachable, like a really good conversation we might share over a few drinks.<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></p>
+
+<p>I finished writing the Second Edition about a month and a half ago and have read and re-read it several times since then. I’m quite happy with the end result and I hope you will be too. I plan to get some of the content out there for you to read before deciding whether to purchase it, but in the meantime you can <a href="http://adaptivewebdesign.info/2nd-edition/">read more about it on the updated book site</a>. I also encourage you to check out <a href="http://adaptivewebdesign.info/2nd-edition/read/foreword.html">Jeremy Keith’s amazing Foreword</a>—which, admittedly, made me a little misty—and <a href="http://adaptivewebdesign.info/2nd-edition/reviews/">the sweet things Ethan and Tim Kadlec had to say about the book</a> after reading it.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Interestingly enough, Ethan’s book came out around the same time as <cite>Adaptive Web Design</cite>, leading many people to think they were conflicting approaches, <a href="http://blog.easy-designs.net/archives/on-adaptive-vs-responsive-web-design/">which is hardly the case</a>. <a href="#fnref:1" class="reversefootnote">↩</a></p>
+    </li>
+    <li id="fn:2">
+      <p>I like boozy cocktails, in case you were wondering. <a href="#fnref:2" class="reversefootnote">↩</a></p>
+    </li>
+  </ol>
+</div>
+
+    </main>
+    <aside class="promo promo--book promo--image">
+	    <img class="promo__image" src="https://adaptivewebdesign.info/2nd-edition/cover-320.jpg" alt="">
+	    <div class="promo__copy"><p>Like what you’re reading? You might dig my book <a href="https://adaptivewebdesign.info/2nd-edition/"><cite>Adaptive Web Design, Second Edition</cite></a>. You can grab a copy on <a href="http://www.amazon.com/gp/product/0134216148/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0134216148&amp;linkCode=as2&amp;tag=easydesign-20&amp;linkId=7EDENIS3P4XL7LIT">Amazon</a>, <a href="http://www.anrdoezrs.net/links/7941166/type/dlg/http://www.barnesandnoble.com/w/adaptive-web-design-aaron-gustafson/1102101792?ean=9780134216140">Barnes &amp; Noble</a>, <a href="http://click.linksynergy.com/link?id=ksYXFf8a/VY&amp;offerid=145244.2319719&amp;type=2&amp;murl=http%3A%2F%2Fwww.peachpit.com%2Ftitle%2F9780134216140">New Riders</a>, or anywhere web design books are sold.</p>
+</div>
+    </aside>
+    <footer>
+      <small>The content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a>.</small>
+    </footer>
+  </body>
+</html>

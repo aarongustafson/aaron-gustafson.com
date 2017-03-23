@@ -1,0 +1,109 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Adaptive Images in ExpressionEngine with CE Image, From the Notebook of Aaron Gustafson</title>
+    <link rel="canonical" href="https://www.aaron-gustafson.com/notebook/adaptive-images-in-expressionengine-with-ce-image/" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-custom>html{font-size:-webkit-calc(1em + .5vw);font-size:calc(1em + .5vw);line-height:1.4;max-width:70ch;margin:0 auto;word-wrap:break-word;overflow-wrap:break-word}body{padding:.5em}.post-meta,h1,h2,h3,h4,h5,h6{font-family:sans-serif;line-height:1.2;margin-bottom:0}header{background:#ebebeb;margin:0 -1em;padding:1em}header h1{margin:0}.post-meta,footer{color:#999}li{margin-bottom:.5em}li ol,li ul{margin-top:.5em}blockquote{font-style:italic}pre{background:#ebebeb;padding:1em;margin:1em -1em}sup{font-size:.65em;padding-left:.2em}.footnotes{border-top:1px solid #ccc;font-size:.8em}.footnotes li{margin-bottom:.25em}.footnotes p{margin:0}.promo--image{position:relative;background:#ebebeb;padding:1px 1em 1px 122px;margin:1.5em 0}.promo--image:after,.promo--image:before{content:"\00A0";border-top:1px solid #ebebeb;display:block;left:0;right:0;position:absolute}.promo--image:before{margin-top:-.5em}.promo--image:after{margin-top:.5em}.promo__image{max-width:100px;margin-top:-.2em;-webkit-transform:rotate(-10deg);-ms-transform:rotate(-10deg);transform:rotate(-10deg);position:absolute;left:0;top:0;z-index:1}footer small{display:block;font-size:-webkit-calc(.5em + .5vw);font-size:calc(.5em + .5vw);font-style:italic;text-align:center}hr{border:1px solid #ccc;border-width:1px 0 0;max-width:200px}figure{margin:1em -.5em}figure iframe,figure img{border:1px solid #ccc;max-width:100%;height:auto}</style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="post-title">Adaptive Images in ExpressionEngine With CE Image</h1>
+      <p class="post-meta">by <a href="https://www.aaron-gustafson.com/about/">Aaron Gustafson</a> on 21 November 2014</p>
+    </header>
+    <main>
+      <p>One of the biggest headaches of responsive design has been dealing with images. Thankfully our work on the <a href="http://ricg.io">Responsive <del>Images</del> <ins>Issues</ins> Community Group</a> has resulted in a rock-solid set of elements and attributes to address all of your adaptive image needs. My company, <a href="http://easy-designs.net">Easy Designs</a>, recently redesigned <a href="http://www.nichols.edu">Nichols College’s website</a> and that project just happened to coincide adaptive images landing in <a href="http://www.chromium.org/blink">Blink</a> (the rendering engine that powers Chrome and Opera). Naturally, we jumped at the opportunity to use them.</p>
+
+<!-- more -->
+
+<p>Most Nichols College sites run on <a href="http://ellislabs.com/expressionengine">EllisLab’s ExpressionEngine</a>, a solid little workhorse of a CMS we’ve been using for years. We love it because it gives us complete control over the markup it generates. Now EE offers some pretty decent file management and image manipulation utilities out of the box, but the options it provides were not enough to handle our adaptive image needs; we needed backup. <a href="http://www.causingeffect.com/software/expressionengine/ce-image">Causing Effect’s CE Image</a> add-on is reasonably priced and offered exactly the functionality we needed to make our adaptive image dreams a reality.</p>
+
+<p>I won’t bore you with how to set up CE Image as there is <a href="http://www.causingeffect.com/software/expressionengine/ce-image/user-guide">documentation on that</a>, but I will walk you through two different responsive image use-cases we had and how we addressed them using this add-on.</p>
+
+<h2 id="header-images">Header images</h2>
+
+<p>The first use case we had was a series of large, focal images. You can find different examples of them on <a href="http://www.nichols.edu">the homepage</a> and landing pages (like <a href="http://www.nichols.edu/admissions/">this one for Admissions</a>). The first pass on making these images adaptive involved the <code class="highlighter-rouge">picture</code> element for which <a href="https://html.spec.whatwg.org/multipage/embedded-content.html#adaptive-images">the spec</a> is known. The markup we were generating was based on the pattern outlined for <a href="http://scottjehl.github.io/picturefill/">Picturefill</a>, a JavaScript polyfill that implements adaptive images in browsers that don’t do it natively:</p>
+
+<p>{% gist 96dd157a0206d59ac30a picture-result.html embed %}</p>
+
+<p>To get to that point, however, we needed to use CE Image to generate (and cache) the specific sizes we needed:</p>
+
+<p>{% gist 96dd157a0206d59ac30a picture-element.html embed %}</p>
+
+<p>Not what’s a lot of code, so let’s just look at one segment of that jumble:</p>
+
+<p>{% gist 96dd157a0206d59ac30a  picture-excerpt.html embed %}</p>
+
+<p>This is an example using CE Image’s tag pair option, which lets you control the markup output. In the opening tag, we set several properties:</p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">src</code> is the path to the original image uploaded by content authors;</li>
+  <li>
+<code class="highlighter-rouge">filename_suffix</code> is the suffix we want added to the cached file to differentiate it from others in the cache (and make the files more easily scannable);</li>
+  <li>
+<code class="highlighter-rouge">width</code> is our desired output width for the generated image;</li>
+  <li>
+<code class="highlighter-rouge">allow_scale_larger</code> does exactly what you’d expect: it dictates whether or not CE Image should scale the image to reach the desired width;</li>
+  <li>
+<code class="highlighter-rouge">crop</code> tells CE Image whether it’s okay to crop the image;</li>
+  <li>
+<code class="highlighter-rouge">interlace</code> tells CE Image to use image interlacing (which can speed load time); and</li>
+  <li>
+<code class="highlighter-rouge">cache_dir</code> tells CE Image where to store the cached image (in relation to our global configuration)</li>
+</ul>
+
+<p>Then, within the tag pair is the <code class="highlighter-rouge">source</code> element with the <code class="highlighter-rouge">srcset</code> value set to the path to the file CE Image generated (referenced by the <code class="highlighter-rouge">made</code> variable) and the associated media query.</p>
+
+<p>Multiply that a few times for the different sizes and you have the full <code class="highlighter-rouge">picture</code> element.</p>
+
+<p>Now that’s all well and good, but shortly after launch, <a href="http://ericportis.com/">Eric Portis</a> wrote <a href="http://ericportis.com/posts/2014/srcset-sizes/">an amazing post explaining how the <code class="highlighter-rouge">srcset</code> and <code class="highlighter-rouge">sizes</code> attributes operate</a> and it cleared up a lot of my confusion on the matter. He convinced me that the age-old <code class="highlighter-rouge">img</code> element, with these new attributes, would be far more maintainable. With a fire in my belly, I rewrote the markup:</p>
+
+<p>{% gist 96dd157a0206d59ac30a  simple-resize.html embed %}</p>
+
+<p>The CE Image behavior is exactly the same, but the resulting markup is much clearer:</p>
+
+<p>{% gist 96dd157a0206d59ac30a  srcset-result.html embed %}</p>
+
+<p>The added bonus of this approach is that I am not hard-coding any media queries and the browser gets to make the ultimate decision of which image to request. All I am doing is telling the browser the image options and their respective widths within the <code class="highlighter-rouge">srcset</code> attribute. As all of the images take up 100% of their containers, I didn’t even need to use the <code class="highlighter-rouge">sizes</code> attribute. Easy peasy.</p>
+
+<h2 id="nice-to-have-images">“Nice to Have” Images</h2>
+
+<p>Not every image adds something to the page. Some are purely optional, a visual enhancement. In order to reduce the size of pages on smaller screens, we often choose to “lazy load” certain image assets after page load, when we know there is enough room to display the image or when we feel it would be an enhancement to the design.</p>
+
+<p>Now some of you might be wondering: <em>Why not just <code class="highlighter-rouge">display:none</code> below a certain threshold?</em> Well, I’ll tell you: images that are hidden with CSS are still requested by the browser. That means users who don’t see the images are still paying to download them (whether in terms of time waiting for the page to render or actual money on a metered connection). That kinda sucks for them. We should show our users a bit more respect and only request the images when we need them.</p>
+
+<p>We wrote <a href="https://github.com/easy-designs/easy-lazy-images.js">a lazy-loading image script</a> a few years back and have battle tested it on numerous sites to great success. It’s all based on a simple markup pattern:</p>
+
+<p>{% gist 96dd157a0206d59ac30a lazy-loaded-markup.html embed %}</p>
+
+<p>The <code class="highlighter-rouge">data-img-src</code> attribute defines the path to the “nice to have” image and then the JavaScript adds the image element into the page when the appropriate conditions are met:</p>
+
+<p>{% gist 96dd157a0206d59ac30a lazy-loaded-result.html embed %}</p>
+
+<p>Pretty simple. It even supports <code class="highlighter-rouge">srcset</code>:</p>
+
+<p>{% gist 96dd157a0206d59ac30a lazy-loaded-srcset.html embed %}</p>
+
+<p>The <a href="https://github.com/easy-designs/easy-lazy-images.js#usage">full documentation is up on Github</a>.</p>
+
+<p>Implementing this in the context of CE Image was a breeze and builds on the <code class="highlighter-rouge">source</code> pattern I showed earlier:</p>
+
+<p>{% gist 96dd157a0206d59ac30a lazy-loading.html embed %}</p>
+
+<p>We are only just beginning to scratch the surface of what’s possible with adaptive images and I am sure we will come up with newer, better ways to do this stuff. Heck, there may even be an adaptive images add-on in the pipeline for ExpressionEngine. But, in the meantime, if you are trying to implement adaptive images with ExpressionEngine, CE Image is a good way to go.</p>
+
+    </main>
+    <aside class="promo promo--book promo--image">
+	    <img class="promo__image" src="https://adaptivewebdesign.info/2nd-edition/cover-320.jpg" alt="">
+	    <div class="promo__copy"><p>Like what you’re reading? You might dig my book <a href="https://adaptivewebdesign.info/2nd-edition/"><cite>Adaptive Web Design, Second Edition</cite></a>. You can grab a copy on <a href="http://www.amazon.com/gp/product/0134216148/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0134216148&amp;linkCode=as2&amp;tag=easydesign-20&amp;linkId=7EDENIS3P4XL7LIT">Amazon</a>, <a href="http://www.anrdoezrs.net/links/7941166/type/dlg/http://www.barnesandnoble.com/w/adaptive-web-design-aaron-gustafson/1102101792?ean=9780134216140">Barnes &amp; Noble</a>, <a href="http://click.linksynergy.com/link?id=ksYXFf8a/VY&amp;offerid=145244.2319719&amp;type=2&amp;murl=http%3A%2F%2Fwww.peachpit.com%2Ftitle%2F9780134216140">New Riders</a>, or anywhere web design books are sold.</p>
+</div>
+    </aside>
+    <footer>
+      <small>The content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a>.</small>
+    </footer>
+  </body>
+</html>

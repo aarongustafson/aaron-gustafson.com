@@ -1,0 +1,133 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Labeled with Love, From the Notebook of Aaron Gustafson</title>
+    <link rel="canonical" href="https://www.aaron-gustafson.com/notebook/labeled-with-love/" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-custom>html{font-size:-webkit-calc(1em + .5vw);font-size:calc(1em + .5vw);line-height:1.4;max-width:70ch;margin:0 auto;word-wrap:break-word;overflow-wrap:break-word}body{padding:.5em}.post-meta,h1,h2,h3,h4,h5,h6{font-family:sans-serif;line-height:1.2;margin-bottom:0}header{background:#ebebeb;margin:0 -1em;padding:1em}header h1{margin:0}.post-meta,footer{color:#999}li{margin-bottom:.5em}li ol,li ul{margin-top:.5em}blockquote{font-style:italic}pre{background:#ebebeb;padding:1em;margin:1em -1em}sup{font-size:.65em;padding-left:.2em}.footnotes{border-top:1px solid #ccc;font-size:.8em}.footnotes li{margin-bottom:.25em}.footnotes p{margin:0}.promo--image{position:relative;background:#ebebeb;padding:1px 1em 1px 122px;margin:1.5em 0}.promo--image:after,.promo--image:before{content:"\00A0";border-top:1px solid #ebebeb;display:block;left:0;right:0;position:absolute}.promo--image:before{margin-top:-.5em}.promo--image:after{margin-top:.5em}.promo__image{max-width:100px;margin-top:-.2em;-webkit-transform:rotate(-10deg);-ms-transform:rotate(-10deg);transform:rotate(-10deg);position:absolute;left:0;top:0;z-index:1}footer small{display:block;font-size:-webkit-calc(.5em + .5vw);font-size:calc(.5em + .5vw);font-style:italic;text-align:center}hr{border:1px solid #ccc;border-width:1px 0 0;max-width:200px}figure{margin:1em -.5em}figure iframe,figure img{border:1px solid #ccc;max-width:100%;height:auto}</style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="post-title">Labeled With Love</h1>
+      <p class="post-meta">by <a href="https://www.aaron-gustafson.com/about/">Aaron Gustafson</a> on 11 November 2015</p>
+    </header>
+    <main>
+      <p>Forms exist on pretty much every site on the web in one form or another. They are the primary mechanism by which we gather information from our users.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> Of course, before anyone can fill out a form, they need to know what it’s asking for. Labeling is key.</p>
+
+<!-- more -->
+
+<p>A few months back, I relayed <a href="https://www.aaron-gustafson.com/notebook/consider-how-your-forms-read/">a story from Facebook</a> about how important the wording of their questions was in getting accurate responses from their users. The words we choose are incredibly important—your interface is a conversation with your users. I highly recommend reading up on that (and <a href="http://www.radiolab.org/story/trust-engineers/">listening to the Radiolab episode</a> that spurred me to write it), but I’m going to spend the remainder of this post talking about the utilitarian aspects of labels and how to use them properly in your forms.</p>
+
+<h2 id="connecting-the-dots">Connecting the Dots</h2>
+
+<p>When you look at a basic form field, you have two bits of information: the field and the label.</p>
+
+<figure id="fig-2015-11-11-01" class="media-container"><amp-img src="/i/posts/2015-11-11/01.png" width="1156" height="168" layout="responsive"></amp-img><figcaption>A typical form control: a label and a field.</figcaption></figure>
+
+<p>You could achieve this with a minimum of markup:</p>
+
+<p>{% gist 3585c019108025b2f568 unlabeled-field.html embed %}</p>
+
+<p>The thing is, the text “Your Name” is not associated in any way with the <code class="highlighter-rouge">input</code>. Sure, a sighted person would likely be able to tell that that text is associated with the field, but no computer can tell that. And if a computer can’t tell the text and <code class="highlighter-rouge">input</code> are associated, your form control is inaccessible to anyone who uses assistive technology like a screen reader. It’s also going to pose a problem in the near-future of “headless UIs” like those hinted at by Cortana, Siri, and the Echo.</p>
+
+<p>Thankfully, establishing a relationship between the two is quite easy using the <code class="highlighter-rouge">label</code> element. The most common (and preferable) way to do this is to wrap the labeling text in a <code class="highlighter-rouge">label</code> element. Then you create an explicit association with the field using the <code class="highlighter-rouge">for</code> attribute, which is an <code class="highlighter-rouge">id</code> reference. In other words, the value of the <code class="highlighter-rouge">for</code> attribute needs to match the value of the <code class="highlighter-rouge">id</code> attribute on the field you want to associate with that <code class="highlighter-rouge">label</code>.</p>
+
+<p>{% gist 3585c019108025b2f568 labeled-field.html embed %}</p>
+
+<p>With that markup in place, the programmatic connection between the elements is made and the results speak for themselves: When you focus the field, the contents of the <code class="highlighter-rouge">label</code> are read out.</p>
+
+<p>{% youtube WR4_MAjalsU %}</p>
+
+<h2 id="an-alternate-approach">An Alternate Approach</h2>
+
+<p>Since I specifically referred to this approach as <em>explicit</em> association, you probably assumed that there’s another kind of association. And you were right: <em>implicit</em> association. Implicit association is created by wrapping a form control and its associated label text in a <code class="highlighter-rouge">label</code> element. I like to use this approach with radio and checkbox controls:</p>
+
+<p>{% gist 3585c019108025b2f568 implicitly-labeled-checkbox.html embed %}</p>
+
+<p>It’s worth noting that there’s nothing wrong with explicit association in this context either.</p>
+
+<p>{% gist 3585c019108025b2f568 explicitly-labeled-checkbox.html embed %}</p>
+
+<p>You can even combine the two approaches.</p>
+
+<p>{% gist 3585c019108025b2f568 combo-labeled-checkbox.html embed %}</p>
+
+<p>The reason I like to use implicit association with checkbox and radio controls has to do with ensuring the greatest breadth of support when it comes to styling inputs. For instance, if I set <code class="highlighter-rouge">width: 80%</code> on all <code class="highlighter-rouge">input</code> elements using a simple <a href="https://developer.mozilla.org/docs/Web/CSS/Type_selectors">type selector</a>, that width would be applied to <em>all</em> <code class="highlighter-rouge">input</code> elements, including radio and checkbox controls. In order to prevent radio and checkbox controls from getting rendered at that width, I would need to assign an override value of <code class="highlighter-rouge">width: auto</code> to them them specifically. I can do that using <a href="https://developer.mozilla.org/docs/Web/CSS/Attribute_selectors">attribute selectors</a>:</p>
+
+<p>{% gist 3585c019108025b2f568 modern-only.css embed %}</p>
+
+<p>While completely valid, that approach leaves out any browsers that don’t support attribute selection (e.g. IE 6). That may not seem like a deal-breaker in your book, but on the off chance some poor soul happens to be stuck using an out-of-date browser (as many are on mobile), I like to show them a little love. And, thankfully, using the implicit markup pattern for checkboxes and radio controls allows for this quite easily: I just use a <a href="https://developer.mozilla.org/docs/Web/CSS/Descendant_selectors">descendent selector</a> instead.</p>
+
+<p>{% gist 3585c019108025b2f568 universal.css embed %}</p>
+
+<p>This approach results in a greater amount of support and, incidentally, less CSS.</p>
+
+<h2 id="added-benefit-interactivity">Added Benefit: Interactivity</h2>
+
+<p>Obviously, associated labels are great for folks who use screen readers, but they have another benefit: tapping on a <code class="highlighter-rouge">label</code> will focus or activate the associated form control.</p>
+
+<figure id="fig-2015-11-11-02" class="media-container"><amp-img src="/i/posts/2015-11-11/02.gif" alt="" width="649" height="89" layout="responsive"></amp-img><figcaption>Animation showing how clicking a <code>label</code> will focus the associated form control.</figcaption></figure>
+
+<p>This isn’t a game-changer when it comes to standard text fields, but it’s an exceptional affordance when it comes to radio and checkbox controls, especially on mobile, as it vastly increases the tappable region used to activate the control.</p>
+
+<figure id="fig-2015-11-11-03" class="media-container"><amp-img src="/i/posts/2015-11-11/03.png" width="1318" height="336" layout="responsive"></amp-img><figcaption>A screenshot of a group of checkbox controls with their labels outlined.</figcaption></figure>
+
+<p>To create incredibly generous tap targets on mobile devices, we can take things a little further. Add padding to the top and bottom of the <code class="highlighter-rouge">label</code> to make it bigger and then use negative margins to counter that enlargement and keep the layout as it was before the padding was applied.</p>
+
+<p>{% gist 3585c019108025b2f568 larger-labels.css embed %}</p>
+
+<figure id="fig-2015-11-11-04" class="media-container"><amp-img src="/i/posts/2015-11-11/04.gif" alt="" width="472" height="305" layout="responsive"></amp-img><figcaption>An animation showing very generous tap targets on a narrow screen.</figcaption></figure>
+
+<p>It’s worth noting that older versions of Internet Explorer only provide the focus/interaction benefit when you use explicit label association. That’s why I like the combo approach of implicit <em>and</em> explicit association for checkbox and radio controls.</p>
+
+<p><ins datetime="2015-12-09" cite="#comment-2374683375">As Dennis Lembrée mentions in the comments below, Dragon’s Naturally Speaking also doesn’t recognize implicit association, which is why it’s incredibly important to use explicit association even if it seems implicit association should suffice.</ins></p>
+
+<h2 id="placeholders-arent-labels">Placeholders Aren’t Labels</h2>
+
+<p>HTML5 ushered in a new option for working with <code class="highlighter-rouge">input</code> elements: the <code class="highlighter-rouge">placeholder</code> attribute. This declarative attribute makes it possible to offer hint as to the sort of content you were looking for in a field. In <a href="http://caniuse.com/#feat=input-placeholder">supporting browsers</a>, it appears in the field, ghosted back a bit, and disappears when you start typing a response.<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></p>
+
+<figure id="fig-2015-11-11-05" class="media-container"><amp-img src="/i/posts/2015-11-11/05.gif" alt="" width="800" height="118" layout="responsive"></amp-img><figcaption>An animation showing a placeholder in action on <a href="http://webstandardssherpa.com"><cite>Web Standards Sherpa</cite></a>.</figcaption></figure>
+
+<p>Having this natively supported in the browser was a huge boon. For years we’d been using JavaScript to achieve this very effect—albeit typically for label text—in an effort to create more compact forms. Now we get the effect without having to include any additional files or libraries.</p>
+
+<p>Of course, since <code class="highlighter-rouge">placeholder</code> implements an existing pattern, it came with baggage. People commonly achieved this effect by (ab)using the <code class="highlighter-rouge">value</code> attribute as a fake label. As such, its introduction didn’t do much to increase the accessibility of forms. <em>Form controls need a label</em>. If you want to make your form more compact, you can do that using proper markup and a little clever CSS.</p>
+
+<p>{% gist 3585c019108025b2f568 fancy-example.html embed %}</p>
+
+<p>{% gist 3585c019108025b2f568 fancy-example.css embed %}</p>
+
+<figure id="fig-2015-11-11-06" class="media-container">{% codepen BoGgYM aarongustafson result 112 preview %}</figure>
+
+<p>Mary Lou assembled some beautiful examples of this approach in her <a href="http://tympanus.net/codrops/2015/01/08/inspiration-text-input-effects/">Inspiration for Text Input Effects</a>. I highly recommend you check those out, but here’s a teaser to whet your whistle:</p>
+
+<figure id="fig-2015-11-11-07" class="media-container"><amp-img src="/i/posts/2015-11-11/07.gif" alt="" width="367" height="160" layout="responsive"></amp-img><figcaption>A fancy, accessible form field and label from Mary Lou’s collection.</figcaption></figure>
+
+<hr>
+
+<p>We don’t have a ton of elements in HTML, which is why it’s important that we properly use the ones we do have. Hopefully this has provided a helpful overview of how to properly label form controls using HTML.</p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>When we’re not, you know, tracking them with a <a href="http://arstechnica.com/security/2015/10/verizons-zombie-cookie-gets-new-life/">super cookie</a> or something. <a href="#fnref:1" class="reversefootnote">↩</a></p>
+    </li>
+    <li id="fn:2">
+      <p>Browsers typically exhibit two different behaviors here. Some hide the placeholder text as soon as you focus the field, others hide it only when you start typing. Either one works although, admittedly, I favor the text disappearing when you type rather than when the field receives focus. I can see how that approach might confuse some users, I just prefer it because it ensures you see the placeholder. <a href="#fnref:2" class="reversefootnote">↩</a></p>
+    </li>
+  </ol>
+</div>
+
+    </main>
+    <aside class="promo promo--book promo--image">
+	    <img class="promo__image" src="https://adaptivewebdesign.info/2nd-edition/cover-320.jpg" alt="">
+	    <div class="promo__copy"><p>Like what you’re reading? You might dig my book <a href="https://adaptivewebdesign.info/2nd-edition/"><cite>Adaptive Web Design, Second Edition</cite></a>. You can grab a copy on <a href="http://www.amazon.com/gp/product/0134216148/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0134216148&amp;linkCode=as2&amp;tag=easydesign-20&amp;linkId=7EDENIS3P4XL7LIT">Amazon</a>, <a href="http://www.anrdoezrs.net/links/7941166/type/dlg/http://www.barnesandnoble.com/w/adaptive-web-design-aaron-gustafson/1102101792?ean=9780134216140">Barnes &amp; Noble</a>, <a href="http://click.linksynergy.com/link?id=ksYXFf8a/VY&amp;offerid=145244.2319719&amp;type=2&amp;murl=http%3A%2F%2Fwww.peachpit.com%2Ftitle%2F9780134216140">New Riders</a>, or anywhere web design books are sold.</p>
+</div>
+    </aside>
+    <footer>
+      <small>The content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a>.</small>
+    </footer>
+  </body>
+</html>

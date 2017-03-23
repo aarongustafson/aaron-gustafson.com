@@ -1,0 +1,151 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> Bringing Sanity and Order to Device Testing, From the Notebook of Aaron Gustafson</title>
+    <link rel="canonical" href="https://www.aaron-gustafson.com/notebook/bringing-sanity-and-order-to-device-testing/" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-custom>html{font-size:-webkit-calc(1em + .5vw);font-size:calc(1em + .5vw);line-height:1.4;max-width:70ch;margin:0 auto;word-wrap:break-word;overflow-wrap:break-word}body{padding:.5em}.post-meta,h1,h2,h3,h4,h5,h6{font-family:sans-serif;line-height:1.2;margin-bottom:0}header{background:#ebebeb;margin:0 -1em;padding:1em}header h1{margin:0}.post-meta,footer{color:#999}li{margin-bottom:.5em}li ol,li ul{margin-top:.5em}blockquote{font-style:italic}pre{background:#ebebeb;padding:1em;margin:1em -1em}sup{font-size:.65em;padding-left:.2em}.footnotes{border-top:1px solid #ccc;font-size:.8em}.footnotes li{margin-bottom:.25em}.footnotes p{margin:0}.promo--image{position:relative;background:#ebebeb;padding:1px 1em 1px 122px;margin:1.5em 0}.promo--image:after,.promo--image:before{content:"\00A0";border-top:1px solid #ebebeb;display:block;left:0;right:0;position:absolute}.promo--image:before{margin-top:-.5em}.promo--image:after{margin-top:.5em}.promo__image{max-width:100px;margin-top:-.2em;-webkit-transform:rotate(-10deg);-ms-transform:rotate(-10deg);transform:rotate(-10deg);position:absolute;left:0;top:0;z-index:1}footer small{display:block;font-size:-webkit-calc(.5em + .5vw);font-size:calc(.5em + .5vw);font-style:italic;text-align:center}hr{border:1px solid #ccc;border-width:1px 0 0;max-width:200px}figure{margin:1em -.5em}figure iframe,figure img{border:1px solid #ccc;max-width:100%;height:auto}</style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="post-title">Bringing Sanity and Order to Device Testing</h1>
+      <p class="post-meta">by <a href="https://www.aaron-gustafson.com/about/">Aaron Gustafson</a> on 05 June 2015</p>
+    </header>
+    <main>
+      <p>It seems like every other day the public is granted some new means of accessing the web. Some days it’s <a href="http://www.engadget.com/2015/04/29/microsoft-edge/">a new browser</a>. Others it’s <a href="http://www.pcadvisor.co.uk/reviews/mobile-phone/3504276/yotaphone-2-review-uk-dual-screen-smartphone/">a new smartphone</a>. Or <a href="http://www.engadget.com/products/microsoft/surface/3/">a tablet</a>. Or <a href="http://the-digital-reader.com/2014/10/22/voyage-vs-paperwhite-comparison-review-web-browser/">an e-reader</a>. Or <a href="https://www.nintendo.com/3ds/internetbrowser/specs/">a video game console</a>. Or <a href="http://www.phonearena.com/news/Surf-the-Internet-from-your-Android-Wear-smartwatch-Now-possible-via-this-new-app_id58580">a smartwatch</a>. Or <a href="https://html5test.com/compare/browser/samsungsmarttv-2013.html">a TV</a>. Or <a href="http://www.techradar.com/us/reviews/wearables/microsoft-hololens-1281834/review">a heads-up display</a>. Or <a href="http://www.popularmechanics.com/cars/a13191/the-future-of-car-connectivity-is-a-real-web-browser-in-the-dash-17416796/">a car</a>. Or <a href="http://www.lgblog.lt/2009/10/28/zvilgsnis-atgal-pirmasis-pasaulyje-saldytuvas-su-internetu-lg-internet-digital-dios/">a refrigerator</a>.</p>
+
+<!-- more -->
+
+<p>I worked on one project where the client provided me with a spreadsheet detailing 1,400 different user agents that accessed the login screen for the m-dot site. In two days!</p>
+
+<p>As further evidence, consider <a href="http://blog.jasonsamuels.net/post/21633531278/analytics-confirm-the-need-for-adaptive-web-design">the enlightening details of this post from Jason Samuels</a> of the National Council on Family relations, a non-profit organization:</p>
+
+<ul>
+  <li>In 2008, Internet Explorer dominated as the browser for 93.5% of their visitors. By 2014, that percentage had fallen to 19.7%, with Chrome bringing in the lion’s share of the traffic (37%). Firefox narrowly beat out IE with a 20% share of users.</li>
+  <li>In 2008, visits from “mobile” devices accounted for only about 0.1% of their traffic. In 2014, that number had skyrocketed to 14.4%.</li>
+  <li>In 2008, they detected 71 different screen resolutions, which is already a lot to consider. By 2014, however, they were seeing 1,000 unique screen resolutions each and every quarter (with over 200 of those recording 10+ visits per quarter).</li>
+</ul>
+
+<p>That last stat blows my mind every time I read it. You can’t design for 200 different screens, let alone 1,000. It’s a fools errand. And don’t even think of trying to test on that many devices.</p>
+
+<p>And yet, here we are designing websites that can (and will) go anywhere. We need to thoroughly test because we can’t make any assumptions about the browsers and devices being used to access our content.</p>
+
+<p>Testing can be tedious, time consuming, and costly. Surely there’s a way to make it easier. There sure is: Instead of getting hung up on creating one experience that needs to be nearly identical on every browser, we can be smarter about how we build things and treat experience as a continuum.</p>
+
+<p>We can build websites that are both nimble enough to work on low powered devices over slow networks <em>and</em> smart enough to take advantage of advanced features and sensors when opportunity knocks.</p>
+
+<p><em>Wha?! We can have our cake and eat it too</em>? Yes. Yes we can.</p>
+
+<h2 id="start-on-solid-footing">Start on Solid Footing</h2>
+
+<p>When dealing with the insane proliferation of web-enabled devices and the great unknown of where our websites will go, it pays to take a step back and focus on what’s important. We need to ask ourselves two simple questions:</p>
+
+<ol>
+  <li>What is the purpose of this page, this form, this interface?</li>
+  <li>What is the simplest way to realize that purpose?</li>
+</ol>
+
+<p>Then we need to build that <em>first</em>. Typically we’re talking text, some basic HTML, actual links to other pages, and forms that submit to a back-end of some sort. This is our minimum viable product and it will work anywhere.</p>
+
+<p>Then we can look for opportunities to enhance the experience, all while keeping that functional core at the center of the experience.</p>
+
+<p>We can use CSS to add visual hierarchy to the page, provide some visual interest, and adjust the layout to create a good reading experience on a wide range of screen sizes. We should start from the narrowest screen size we can imagine and <a href="https://twitter.com/brad_frost/status/191977076000161793">let the content guide our breakpoint decisions</a>.</p>
+
+<p>We’ll use JavaScript to give real-time feedback to our users. <a href="http://domscripting.com/presentations/xtech2006/">We’ll hijack forms and links</a> to <a href="http://www.filamentgroup.com/lab/ajax-includes-modular-content.html">lazy load additional content</a> or otherwise avoid full-page refreshes. Heck, we can even take over the entire page and <a href="http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/">convert it into a single page app</a>.</p>
+
+<p>But we should never sacrifice the functional core.</p>
+
+<p>This approach to designing for the web is called <a href="http://alistapart.com/article/understandingprogressiveenhancement">progressive enhancement</a> and it’s the number one tool for dealing with the one-two punch of older browsers and device proliferation.</p>
+
+<h2 id="be-conservative-in-your-delivery">Be Conservative in Your Delivery</h2>
+
+<p>What makes progressive enhancement so helpful when it comes to dealing with this swirling mass of devices and browsers is that the core experience will <em>always be</em> available. There is nothing precluding our users from accessing it, even on a crappy WAP browser or a text-based browser like Lynx or even some <a href="http://www.theubi.com/">no so far-future talking computer</a> that only “sees” the web as text.</p>
+
+<p>In order to ensure we don’t accidentally deliver advanced features to less capable browsers like these, we just need to be smart about how we load stuff like CSS and JavaScript.</p>
+
+<p>Some basic CSS—think typography, color, etc.—will be usable by just about anyone, so we can put all that stuff in one CSS file (e.g., <code class="highlighter-rouge">basic.css</code>) and include it with a standard <code class="highlighter-rouge">link</code>. Then we can tuck all of our layout rules and other advanced CSS into a separate CSS file (e.g., <code class="highlighter-rouge">advanced.css</code>) that we link to with an associated media query.</p>
+
+<p>{% gist 166b285a4fe3d854b97b css-linking.html embed %}</p>
+
+<p>Any <a href="http://www.slideshare.net/bryanrieger/rethinking-the-mobile-web-by-yiibu/106">browsers that don’t understand media queries will ignore the second CSS file entirely</a> and receive only the linear, mobile view. Easy peasy, and IE8 gets the mobile layout (a baseline level of support that is not likely to cause you any testing headaches).</p>
+
+<p>You can even take things a step further and use <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/@supports">the <code class="highlighter-rouge">@supports</code> block</a> within <code class="highlighter-rouge">advanced.css</code> to limit certain rule sets to only the browsers that support specific CSS features.</p>
+
+<p>Of course, CSS support issues are nothing compared to JavaScript, so sometimes it’s best not to deliver certain bits of JavaScript-based functionality to browsers that can’t handle it. This is where <a href="http://www.quirksmode.org/js/support.html">feature (and object) detection</a> becomes incredibly useful:</p>
+
+<p>{% gist 166b285a4fe3d854b97b feature-test.js embed %}</p>
+
+<p>You can also use <a href="http://en.wikipedia.org/wiki/Conditional_comment#Downlevel-revealed_conditional_comment">inverted conditional comments</a> to prohibit older versions of IE from getting JavaScript in the first place (which means you don’t even need to worry about debugging JavaScript there). Here’s an example that hides <code class="highlighter-rouge">main.js</code> from IE8 and below, but makes it available to IE9 on up and to every other non-IE browser.</p>
+
+<p>{% gist 166b285a4fe3d854b97b no-script-in-lte-ie8.html embed %}</p>
+
+<p>By being conservative in what we deliver to browsers we <a href="http://bradfrost.com/blog/mobile/support-vs-optimization/">ensure the greatest level of support, but can still optimize for more advanced ones</a>. This makes testing so much easier because we know older browsers will be okay with the basics and we aren’t trying to use JavaScript features unless we know they’re available.</p>
+
+<h2 id="test-test-test">Test, Test, Test</h2>
+
+<p>Progressive enhancement helps us avoid a lot of rendering and scripting issues before we even get to the testing phase of a project, but eventually we do need to sit down and run our projects through their paces.</p>
+
+<p>In order to keep testing manageable during development, it’s best to test in one browser we know to have good web standards support. It will provide a basic gut-check for our work. Once we are pretty confident things are working as they should be, we can begin more thorough testing on a variety of browsers and devices.</p>
+
+<p>I personally keep several versions of each major browser on my laptop at any given time. I work on a Mac, so I typically have a few versions of Chrome, Firefox, and Opera lying around. You can get older versions of these browsers here:</p>
+
+<ul>
+  <li><a href="http://commondatastorage.googleapis.com/chromium-browser-continuous/index.html">Chromium Archive</a></li>
+  <li><a href="http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/">Firefox Archive</a></li>
+  <li><a href="http://www.opera.com/download//?custom=yes">Opera Archive</a></li>
+</ul>
+
+<p>It’s near-impossible to get older versions of Safari running on modern versions of OS X, so I typically just have the latest version locally.</p>
+
+<p>For testing on Windows versions of said browsers, I typically have anywhere from 3-5 virtual machines running various Windows versions with their associated browser version and (typically) a copy of Chrome, Firefox, and Opera for good measure. The MS Edge Dev site offers <a href="http://dev.modern.ie/tools/vms/">free Windows VMs for download</a>. If you’re just looking to get a gut-check in the latest and greatest from Microsoft, there’s also <a href="https://remote.modern.ie/">the Remote.IE service</a>, which allows you to connect to a virtualized version of the browser.</p>
+
+<p>If you develop on Windows or Linux, you’ll need access to a Mac or you’ll have to rely on virtualization to test on that platform. I’ll discuss virtualization in a moment.</p>
+
+<p>Once you’ve thoroughly tested in the various desktop browsers, it’s time to take the deep dive into the world of devices. If you’re unsure where to begin, take a look at your analytics, but take them with a grain of salt. Analytics can lead you to make false assumptions. For example, if you see a low percentage of Blackberry users, could that be because your site just doesn’t work well in Blackberry so they don’t stick around (or come back)? Beware the self-fulfilling prophecy.</p>
+
+<p>If you have the budget, by all means pick up some devices to have on hand for testing. You can use tools like <a href="https://creative.adobe.com/products/inspect">Adobe’s Edge Inspect</a>, <a href="http://vanamco.com/ghostlab/">Vanamco’s Ghostlab</a>, or <a href="https://github.com/viljamis/Remote-Preview">Viljami Salminen’s Remote Preview</a> (or a combination of all of the above) to synchronize browsing on a handful of devices. Some of these tools also allow for remote inspection of the device to debug CSS and JavaScript. <a href="http://people.apache.org/~pmuellr/weinre-docs/latest/">Weinre</a> (which Adobe Edge Inspect uses) and <a href="http://vorlonjs.com/">Vorlon.js</a> also provide remote inspection functionality.</p>
+
+<p>If you are lucky enough to have one nearby, you should stop by your local <a href="http://opendevicelab.com/">open device lab (ODL)</a> to run your tests. ODLs are free community resources, typically offered by a web design studio or an individual who happens to be sitting on a ton of devices. Someone at the ODL should be able to help you pick out devices to test on and introduce you to the testing tools they have available in the lab.</p>
+
+<p>If you don’t have an ODL nearby, you can also do some guerrilla-style testing in your local mobile phone or electronics store. Just make sure they have real devices… you won’t get far on the fake plastic ones.</p>
+
+<p>If none of these are options for you, there’s always virtualization. You can download and install <a href="http://www.mobilexweb.com/emulators">emulators for a variety of mobile browsers and devices</a>. Additionally, services like <a href="https://www.browserstack.com/">Browserstack</a> and <a href="http://crossbrowsertesting.com/">CrossBrowserTesting</a> offer access to hundreds of virtual desktops and devices for a nominal fee.</p>
+
+<p>Virtualization will never give you the same experience as holding a real device in your hand. The performance is rarely the same and you don’t get any sort of feel for how the device responds to your input. I once stumbled on an Android 2.3 bug wherein generated content was being re-generated and re-inserted every time the device was rotated. I doubt I would have discovered that using an emulator. That said, emulators can help you get a rough idea of whether your interface works or not.</p>
+
+<p>Regardless of the means by which you procure your testing devices, try to cover a good cross-section. Pick some low-end ones, a couple older high-end devices, and handful of the latest flagships, and a wide variety of screen sizes and resolutions. Make sure you have good coverage in terms of operating systems too—the latest iOS and Android versions are a given, but make sure you have a Windows device or two, a few Blackberry options, and some older Android and iOS versions in the mix. Then throw in <a href="http://www.geekwire.com/2013/microsoft-kin-resurfaces-25-daily-deals-site/">an oddball</a> <a href="http://www.windowscentral.com/have-39-spare-then-pick-odd-sylvania-7-netbook-windows-ce">or two</a> to see if your interfaces hold up.</p>
+
+<p>It’s important to bear in mind that we will never be able to give each user on each device exactly the same experience. We need to be okay with that—experience is a continuum. As long as our users can accomplish what they need to on our sites, they will be well-served.</p>
+
+<h2 id="bonus-points-embrace-patterns">Bonus Points: Embrace Patterns</h2>
+
+<p>If we really want to make things easy on ourselves (and our team), we should consider building a <a href="http://alistapart.com/blog/post/getting-started-with-pattern-libraries">pattern library</a> before we build a single page of our website.</p>
+
+<p>Breaking our interfaces down into discrete, repeatable patterns (e.g., a label and form control, a tabbed interface, etc.) lets us look at each in isolation and test it that way too. Testing in isolation is far easier than trying to debug a page with a lot of moving parts.</p>
+
+<p>Gathering our patterns into a live, web-based pattern library  allows anyone on our team to collect the patterns they need to build a given interface as easily as they’d assemble a plate at a smörgåsbord. And if we really want to streamline the building and testing process, we can even <a href="http://ianfeather.co.uk/a-maintainable-style-guide/">make the patterns importable into the live site</a> so everything stays in sync.</p>
+
+<h2 id="dont-fear-the-zombie-apocalypse">Don’t Fear the Zombie Apocalypse</h2>
+
+<p>With the constant onslaught of new devices, form factors, and considerations, it’s tempting to throw up our hands and find another line of work. The pace of advancement is so brisk, it’s just hard to keep up, let alone feel like we’re on top of where things are headed.</p>
+
+<p>Thankfully, however, all is not lost. By taking a step back and focusing on what matters, embracing experience as a continuum, and being deliberate in how (and when) we deliver certain features and functionality to browsers, we’ll head most issues off at the pass.</p>
+
+<p>This relieves some of the pressure (and frustration) from the testing process and frees us up to test on a wider variety of devices and browsers, which means we’ll be able to provide a solid experience for more users, no matter what marvel of technological wizardry they happen to be using at the time.</p>
+
+<p>Everybody wins.</p>
+
+    </main>
+    <aside class="promo promo--book promo--image">
+	    <img class="promo__image" src="https://adaptivewebdesign.info/2nd-edition/cover-320.jpg" alt="">
+	    <div class="promo__copy"><p>Like what you’re reading? You might dig my book <a href="https://adaptivewebdesign.info/2nd-edition/"><cite>Adaptive Web Design, Second Edition</cite></a>. You can grab a copy on <a href="http://www.amazon.com/gp/product/0134216148/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0134216148&amp;linkCode=as2&amp;tag=easydesign-20&amp;linkId=7EDENIS3P4XL7LIT">Amazon</a>, <a href="http://www.anrdoezrs.net/links/7941166/type/dlg/http://www.barnesandnoble.com/w/adaptive-web-design-aaron-gustafson/1102101792?ean=9780134216140">Barnes &amp; Noble</a>, <a href="http://click.linksynergy.com/link?id=ksYXFf8a/VY&amp;offerid=145244.2319719&amp;type=2&amp;murl=http%3A%2F%2Fwww.peachpit.com%2Ftitle%2F9780134216140">New Riders</a>, or anywhere web design books are sold.</p>
+</div>
+    </aside>
+    <footer>
+      <small>The content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a>.</small>
+    </footer>
+  </body>
+</html>
