@@ -1,4 +1,78 @@
 # ----------------------- #
+#      Jekyll Configs     #
+# ----------------------- #
+titlecase: true
+markdown: kramdown
+encoding: utf-8
+rdiscount:
+  extensions:
+    - autolink
+    - footnotes
+    - smart
+gems:
+  - fastimage
+  - jekyll-archives
+  - jekyll-crosspost-to-medium
+  - jekyll-paginate-v2
+  - jekyll-redirect-from
+  - jekyll-time-to-read
+  - jekyll-seo-tag
+  - jekyll-typogrify
+  - jekyll/tagging
+  - jekyll-tagging-related_posts
+  - nokogiri
+  - octopress-date-format
+exclude:
+  # Ruby & Gems
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - vendor
+  # Gulp
+  - gulpfile.js
+  - package.json
+  # Content
+  - README.md
+  # Caches
+  - node_modules
+  - .cache
+  - .sass-cache
+  # Git
+  - .gitignore
+  # Docker
+  - docker-compose.yml
+
+# Project Structure
+destination: _site
+plugins_dir: _plugins
+collections:
+  posts:
+    output: true
+    permalink: /notebook/:title/
+  links:
+    output: true
+    permalink: /notebook/links/:title/
+defaults:
+  -
+    scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  -
+    scope:
+      path: ""
+      type: links
+    values:
+      layout: link
+
+# ----------------------- #
 #      Site Configs       #
 # ----------------------- #
 
@@ -42,12 +116,6 @@ navigation:
     url: /contact/
 
 # Pagination
-#notebook_paginate: 10
-#notebook_pagination_dir: "notebook"
-#notebook_paginate_path: "notebook/pg-:num/"
-#linkblog_paginate: 10
-#linkblog_pagination_dir: "notebook/links"
-#linkblog_paginate_path: "notebook/links/pg-:num/"
 pagination:
   enabled: true
   per_page: 10
@@ -57,6 +125,13 @@ pagination:
   sort_field: 'date'
   sort_reverse: true
 
+# Archives
+jekyll-archives:
+  enabled: tags
+  layout: 'tag.html'
+  permalinks:
+    tag: '/notebook/tags/:name/'
+
 # Asides
 default_asides: [asides/recent_posts.html]
 blog_index_asides: [asides/about.html,asides/networks.html,asides/recent_links.html]
@@ -64,85 +139,12 @@ post_asides: [asides/about.html,asides/events.html]
 page_asides: [asides/about.html,asides/networks.html,asides/events.html]
 
 # ----------------------- #
-#      Jekyll Configs     #
-# ----------------------- #
-titlecase: true
-markdown: kramdown
-encoding: utf-8
-rdiscount:
-  extensions:
-    - autolink
-    - footnotes
-    - smart
-gems:
-  - fastimage
-  - jekyll-crosspost-to-medium
-  - jekyll-paginate-v2
-  - jekyll-redirect-from
-  - jekyll-time-to-read
-  - jekyll-seo-tag
-  - jekyll-typogrify
-  - jekyll/tagging
-  - jekyll-tagging-related_posts
-  - nokogiri
-  - octopress-date-format
-exclude:
-  # Ruby & Gems
-  - Gemfile
-  - Gemfile.lock
-  - Rakefile
-  - vendor
-  # Gulp
-  - gulpfile.js
-  - package.json
-  # Content
-  - README.md
-  # Caches
-  - node_modules
-  - .cache
-  - .sass-cache
-  # Git
-  - .gitignore
-  # Docker
-  - docker-compose.yml
-
-# Project Structure
-destination: _site
-plugins_dir: _plugins
-collections:
-  notebook:
-    output: true
-    permalink: /notebook/:title/
-  links:
-    output: true
-    permalink: /notebook/links/:title/
-defaults:
-  -
-    scope:
-      path: ""
-      type: pages
-    values:
-      layout: page
-  -
-    scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-  -
-    scope:
-      path: ""
-      type: links
-    values:
-      layout: link
-
-# ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #
 
 # Tagging
 tag_page_layout: tag
-tag_page_dir: /notebook/tags
+tag_page_dir: /notebook/tags/
 
 # Open Graph
 og:

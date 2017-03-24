@@ -1,30 +1,17 @@
 {% unless page.show_links == false %}
-
-	{% assign max_links = "5" %}
-	{% assign counter = "0" %}
-	{% assign show_more = false %}
+	{% assign links = site.links | sort:'date' | reverse %}
 
 	<section class="module module--promotional">
 		<h1 class="module__title">Recommended Reading</h1>
 		<ul class="listing listing--links">
-			
-			{% for post in site.links %}
-				{% if post.ref_url and counter != max_links %}
-					{% capture counter %}{{ counter | plus:1 }}{% endcapture %}
-					<li class="listing__item listing__item--link listing__item--{{ counter }}">
-						<a href="{{ post.url }}">{{ post.title }}</a>
-					</li>
-				{% elsif counter == max_links %}
-					{% assign show_more = true %}
-				{% endif %}
-			{% endfor %}
-			
-			{% if show_more %}
-				<li class="listing__item listing__item--more">
-					<a href="/notebook/links/">{{ site.data.microcopy.links.more_link }}</a>
+			{% for link in site.links limit:5 %}
+				<li class="listing__item listing__item--link listing__item--{{ forloop.index }}">
+					<a href="{{ link.url }}">{{ link.title }}</a>
 				</li>
-			{% endif %}
-			
+			{% endfor %}
+			<li class="listing__item listing__item--more">
+				<a href="/notebook/links/">{{ site.data.microcopy.links.more_link }}</a>
+			</li>
 		</ul>
 	</section>
 
