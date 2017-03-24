@@ -13,7 +13,7 @@ require 'net/http'
 require 'uri'
 require 'openssl'
 
-WEBMENTION_CACHE_DIR = File.expand_path('../../.cache', __FILE__)
+WEBMENTION_CACHE_DIR = File.join(Dir.pwd, '.cache')
 FileUtils.mkdir_p(WEBMENTION_CACHE_DIR)
 
 module Jekyll
@@ -26,6 +26,10 @@ module Jekyll
       @api_endpoint = ''
       @api_suffix = ''
       @targets = []
+      @url_cache_file = File.join(WEBMENTION_CACHE_DIR, 'webmentions_bad_url_cache.yml')
+      if !File.exists?(@url_cache_file)
+        File.open(@url_cache_file, 'w') { |f| YAML.dump({}, f) }
+      end
     end
     
     def render(context)
@@ -110,12 +114,44 @@ module Jekyll
       end
       return false
     end
+
+    # checks a domain against a cached list of URLs with issues
+    def is_url_ok( uri )
+      now = Time.now
+      bad_urls = open(@url_cache_file) { |f| YAML.load(f) }
+      # puts "#{uri.host} in bad_urls? " + (bad_urls.key? uri.host).to_s
+      if bad_urls.key? uri.host
+        # puts "checking #{uri.host}"
+        last_checked = Time.parse( bad_urls[uri.host] )
+        # puts "last_checked " + last_checked.to_s
+        # puts "testing " + ( last_checked + ( 60 * 60 * 24 ) ).to_s
+        # puts last_checked + ( 60 * 60 * 24 ) < now
+        # wait at least a day before checking again
+        if last_checked + ( 60 * 60 * 24 ) > now
+          # puts "url is bad"
+          # URL is bad
+          return false
+        end
+      end
+      # puts "url is AOK"
+      return true
+    end
+
+    # Cache bad domains for a bit
+    def domain_is_not_ok( uri )
+      bad_urls = open(@url_cache_file) { |f| YAML.load(f) }
+      bad_urls[uri.host] = Time.now.to_s
+      File.open(@url_cache_file, 'w') { |f| YAML.dump(bad_urls, f) }
+    end
     
     def is_working_uri(uri, redirect_limit = 10, original_uri = false)
       # puts "checking URI #{uri}"
       original_uri = original_uri || uri
+      uri = URI.parse(URI.encode(uri))
+      if ! is_url_ok(uri)
+        return false
+      end
       if redirect_limit > 0
-        uri = URI.parse(URI.encode(uri))
         http = Net::HTTP.new(uri.host, uri.port)
         http.read_timeout = 10
         if uri.scheme == 'https'
@@ -137,10 +173,13 @@ module Jekyll
               # puts "redirecting to #{redirect_to}"
               return is_working_uri(redirect_to, redirect_limit - 1, original_uri)
             else
+              warn "Got an error checking #{uri}"
+              domain_is_not_ok(uri)
               return false
           end
         rescue SocketError, Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, Errno::ECONNREFUSED, EOFError, Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError => e
           warn "Got an error checking #{original_uri}: #{e}"
+          domain_is_not_ok(uri)
           return false
         rescue Exception => e
           warn "Got an error: #{e}"
@@ -156,8 +195,11 @@ module Jekyll
     def get_uri_source(uri, redirect_limit = 10, original_uri = false)
       # puts "Getting the source of #{uri}"
       original_uri = original_uri || uri
+      uri = URI.parse(URI.encode(uri))
+      if ! is_url_ok(uri)
+        return false
+      end
       if redirect_limit > 0
-        uri = URI.parse(URI.encode(uri))
         http = Net::HTTP.new(uri.host, uri.port)
         http.read_timeout = 10
         if uri.scheme == 'https'
@@ -171,7 +213,10 @@ module Jekyll
           response = http.request(request)
         rescue SocketError, Timeout::Error, Errno::EINVAL, Errno::ECONNRESET, Errno::ECONNREFUSED, EOFError, Net::HTTPBadResponse, Net::HTTPHeaderSyntaxError, Net::ProtocolError => e
           warn "Got an error checking #{original_uri}: #{e}"
+          domain_is_not_ok(uri)
           return false
+        rescue Exception => e
+          warn "Got an error: #{e}"
         end
         case response
           when Net::HTTPSuccess then
@@ -183,6 +228,8 @@ module Jekyll
             # puts "redirecting to #{redirect_to}"
             return get_uri_source(redirect_to, redirect_limit - 1, original_uri)
           else
+            warn "Got an error checking #{uri}"
+            domain_is_not_ok(uri)
             return false
         end
       else
@@ -385,14 +432,17 @@ module Jekyll
               url = link['source']
               
               # ping it first
-              if ! is_working_uri( url )
-                puts "#{url} is not returning a 200 HTTP status, skipping it"
-                next
-              end
+              #if ! is_working_uri( url )
+              #  puts "#{url} is not returning a 200 HTTP status, skipping it"
+              #  next
+              #end
               
               # Now get the content
               # print "checking #{url}\r\n"
               html_source = get_uri_source(url)
+              if ! html_source
+                next
+              end
               # print "#{html_source}\r\n"
               
               if ! html_source.valid_encoding?

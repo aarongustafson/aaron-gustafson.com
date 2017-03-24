@@ -51,7 +51,7 @@ navigation:
 pagination:
   enabled: true
   per_page: 10
-  permalink: 'pg-:num/'
+  permalink: '/pg-:num/'
   title: ', Page :num'
   limit: 0
   sort_field: 'date'
@@ -110,12 +110,12 @@ exclude:
 destination: _site
 plugins_dir: _plugins
 collections:
-  posts:
+  notebook:
     output: true
     permalink: /notebook/:title/
   links:
     output: true
-    permalink: /notebook/:collection/:title/
+    permalink: /notebook/links/:title/
 defaults:
   -
     scope:

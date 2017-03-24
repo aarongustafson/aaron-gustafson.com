@@ -1,4 +1,4 @@
-links_dir   = File.join(Dir.pwd, 'links/_posts')
+links_dir   = File.join(Dir.pwd, '_links')
 file_ext = "markdown"
 
 require 'uri';

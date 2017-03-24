@@ -1,4 +1,4 @@
-posts_dir   = File.join(Dir.pwd, 'notebook/_posts')
+posts_dir   = File.join(Dir.pwd, '_notebook')
 file_ext = "markdown"
 
 # usage rake new_post[my-new-post] or rake new_post['my new post'] or rake new_post (defaults to "new-post")

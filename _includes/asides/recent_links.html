@@ -8,7 +8,7 @@
 		<h1 class="module__title">Recommended Reading</h1>
 		<ul class="listing listing--links">
 			
-			{% for post in site.posts %}
+			{% for post in site.links %}
 				{% if post.ref_url and counter != max_links %}
 					{% capture counter %}{{ counter | plus:1 }}{% endcapture %}
 					<li class="listing__item listing__item--link listing__item--{{ counter }}">
