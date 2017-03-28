@@ -14,15 +14,14 @@ layout: null
 	</author>
 	<generator uri="http://octopress.org/">Octopress</generator>
 
-	{% for post in site.posts limit: 20 %}
-		{% if post.ref_url %}
-			<entry>
-				<title type="html"><![CDATA[{% if site.titlecase %}{{ post.title | titlecase | cdata_escape }}{% else %}{{ post.title | cdata_escape }}{% endif %}]]></title>
-				<link href="{{ site.url }}{{ post.url | replace:"notebook/","notebook/links/" }}"/>
-				<updated>{{ post.date | date_to_xmlschema }}</updated>
-				<id>{{ site.url }}{{ post.id | replace:"notebook/","notebook/links/" }}</id>
-				<content type="html"><![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}<p><a rel="full-article" href="{{ post.ref_url }}">Read on {{ post.ref_source }}&nbsp;&rarr;</a></p>]]></content>
-			</entry>
-		{% endif %}
+	{% assign links = (site.links | sort: 'date') | reverse %}
+	{% for link in links limit: 20 %}
+		<entry>
+			<title type="html"><![CDATA[{{ link.title | titlecase | cdata_escape }}]]></title>
+			<link href="{{ link.url | prepend:site.url }}"/>
+			<updated>{{ link.date | date_to_xmlschema }}</updated>
+			<id>{{ link.url | prepend:site.url }}</id>
+			<content type="html"><![CDATA[{{ link.content | expand_urls: site.url | cdata_escape }}<p><a rel="full-article" href="{{ link.ref_url }}">Read on {{ link.ref_source }}&nbsp;&rarr;</a></p>]]></content>
+		</entry>
 	{% endfor %}
 </feed>
