@@ -12,7 +12,7 @@ layout: null
 		<name><![CDATA[{{ site.author | strip_html }}]]></name>
 		{% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
 	</author>
-	<generator uri="http://octopress.org/">Octopress</generator>
+	<generator uri="https://jekyllrb.com/">Jekyll</generator>
 
 	{% assign links = (site.links | sort: 'date') | reverse %}
 	{% for link in links limit: 20 %}

@@ -12,23 +12,24 @@ layout: null
 		<name><![CDATA[{{ site.author | strip_html }}]]></name>
 		{% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
 	</author>
-	<generator uri="http://octopress.org/">Octopress</generator>
+	<generator uri="https://jekyllrb.com/">Jekyll</generator>
 
-	{% for post in site.posts limit: 20 %}
+	{% assign feed = site.documents | where:'feed',true | sort: 'date' | reverse %}
+	{% for post in feed limit:20 %}
 		{% if post.ref_url %}
 			<entry>
-				<title type="html"><![CDATA[Link: {% if site.titlecase %}{{ post.title | titlecase | cdata_escape }}{% else %}{{ post.title | cdata_escape }}{% endif %}]]></title>
-				<link href="{{ site.url }}{{ post.url | replace:"notebook/","notebook/links/" }}"/>
+				<title type="html"><![CDATA[Link: {{ post.title | titlecase | cdata_escape }}]]></title>
+				<link href="{{ post.url | prepend:site.url }}"/>
 				<updated>{{ post.date | date_to_xmlschema }}</updated>
-				<id>{{ site.url }}{{ post.id | replace:"notebook/","notebook/links/" }}</id>
+				<id>{{ post.url | prepend:site.url }}</id>
 				<content type="html"><![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}<p><a rel="full-article" href="{{ post.ref_url }}">Read on {{ post.ref_source }}&nbsp;&rarr;</a></p>]]></content>
 			</entry>
 		{% else %}
 			<entry>
-				<title type="html"><![CDATA[Post: {% if site.titlecase %}{{ post.title | titlecase | cdata_escape }}{% else %}{{ post.title | cdata_escape }}{% endif %}]]></title>
-				<link href="{{ site.url }}{{ post.url }}"/>
+				<title type="html"><![CDATA[Post: {{ post.title | titlecase | cdata_escape }}]]></title>
+				<link href="{{ post.url | prepend:site.url }}"/>
 				<updated>{{ post.date | date_to_xmlschema }}</updated>
-				<id>{{ site.url }}{{ post.id }}</id>
+				<id>{{ post.id | prepend:site.url }}</id>
 				<content type="html"><![CDATA[{{ post.content | expand_urls: site.url | cdata_escape }}]]></content>
 			</entry>
 		{% endif %}

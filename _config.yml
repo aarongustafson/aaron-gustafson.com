@@ -67,12 +67,14 @@ defaults:
     values:
       layout: post
       is_post: true
+      feed: true
   -
     scope:
       path: ""
       type: links
     values:
       layout: link
+      feed: true
 
 # ----------------------- #
 #      Site Configs       #
