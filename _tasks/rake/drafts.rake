@@ -1,5 +1,5 @@
 drafts_dir = File.join(Dir.pwd, '_drafts')
-posts_dir  = File.join(Dir.pwd, '_notebook')
+posts_dir  = File.join(Dir.pwd, '_posts')
 file_ext   = "markdown"
 
 # usage rake new_draft[my-new-post] or rake new_draft['my new post'] or rake new_draft (defaults to "new-post")
