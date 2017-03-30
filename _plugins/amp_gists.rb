@@ -8,6 +8,7 @@
 # Target markup:
 #
 # <amp-gist data-gistid="b9bb35bc68df68259af94430f012425f"
+#           data-file="for.bar"
 #           layout="responsive"
 #           width="480" height="270">
 # </amp-gist>
@@ -42,7 +43,7 @@ module Jekyll
         # Build the attributes
         attrs = []
         attrs << "data-gistid=\"#{gist}\""
-        attrs << "data-gistfile=\"#{file}\""
+        attrs << "data-file=\"#{file}\""
         @@defaults.each do |key, value|
           value = value || @defaults[key]
           attrs << "#{key}=\"#{value}\""
