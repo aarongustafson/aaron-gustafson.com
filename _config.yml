@@ -196,3 +196,7 @@ adaptive_image:
 
 # AMP
 ampdir: amp
+amp_gists:
+  layout: responsive
+  width: 320
+  height: 240

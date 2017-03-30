@@ -15,10 +15,10 @@
       <p class="post-meta">by <a href="https://www.aaron-gustafson.com/about/">{{ site.author }}</a> on {{ page.date | date:"%d %B %Y" }}</p>
     </header>
     <main>
-      {{ page.body | markdownify | amp_images }}
+      {{ page.body | markdownify | amp_images | amp_gists }}
     </main>
     <aside class="promo promo--book promo--image">
-	    <img class="promo__image" src="{{ site.data.promos.awd2e.image | replace:"https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?url=","" | replace:"&amp;container=focus&amp;refresh=2592000","" }}" alt="">
+	    <amp-img class="promo__image" src="{{ site.data.promos.awd2e.image | replace:"https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?url=","" | replace:"&amp;container=focus&amp;refresh=2592000","" }}" alt="">
 	    <div class="promo__copy">{{ site.data.promos.awd2e.text | markdownify }}</div>
     </aside>
     <footer>

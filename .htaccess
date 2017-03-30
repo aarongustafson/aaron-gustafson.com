@@ -1,0 +1,75 @@
+# Force www:
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^aaron-gustafson.com [NC]
+RewriteRule ^(.*)$ https://www.aaron-gustafson.com/$1 [L,R=301,NC]
+
+# GZip
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+<FilesMatch "\\.(js|css|html|htm|php|xml)$">
+  SetOutputFilter DEFLATE
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+        BrowserMatch ^Mozilla/4\.0[678] no-gzip
+        BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</FilesMatch>
+
+# ETags
+Header unset ETag
+FileETag None
+
+<FilesMatch "(?i)^.*\.(ico|flv|jpg|jpeg|png|gif|js|css)$">
+Header unset Last-Modified
+Header set Expires "Fri, 21 Dec 2012 00:00:00 GMT"
+Header set Cache-Control "public, no-transform"
+</FilesMatch>
+
+# Force the latest IE version
+# Use ChromeFrame if it's installed for a better experience for the poor IE folk
+<IfModule mod_setenvif.c>
+  <IfModule mod_headers.c>
+    BrowserMatch MSIE ie
+    Header set X-UA-Compatible "IE=Edge,chrome=1" env=ie
+  </IfModule>
+</IfModule>
+
+# Audio MIME Types
+AddType audio/mpeg mp3
+AddType audio/mp4 m4a
+AddType audio/ogg ogg
+AddType audio/ogg oga
+AddType audio/webm webma
+AddType audio/wav wav
+
+# Video MIME Types
+AddType video/ogg ogv
+AddType video/mp4 mp4 m4v
+AddType video/webm webm
+
+# SVG
+AddType image/svg+xml svg svgz
+<FilesMatch "^.*\.(svgz)$">
+Header set Content-Encoding "gzip"
+</FilesMatch>
+
+# Fonts
+AddType application/vnd.ms-fontobject eot
+
+# Lockdown
+Header set Content-Security-Policy "default-src * ; script-src * 'unsafe-inline' ; img-src * data: ; style-src * 'unsafe-inline' ; upgrade-insecure-requests; block-all-mixed-content; reflected-xss block;"
+Header always set X-Xss-Protection "1; mode=block"
+Header set Public-Key-Pins "pin-sha256='1AD97Iz6xlmMrlaim5bZoIhwUr2WAowsI+msDc0op2k='; pin-sha256='4SflGm7MUpml4PWSclDw7OGMJdRk+YcIfi6qJ2iG6zE='; pin-sha256='BFhqRqgHU+b7VQLsM1kZwBu6VVKnLx7QiO2PCLfG1m4='; max-age=10"
+
+# Redirect links
+RewriteBase /
+RewriteCond %{REQUEST_URI} ^/notebook/
+RewriteCond %{REQUEST_URI} !^/notebook/links/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^/notebook/(.*) notebook/links/$1 [L,R=301]
+
+# Service Worker
+<FilesMatch "serviceworker(?\.min)?\.js$">
+Header set Cache-Control "max-age=0"
+</FilesMatch>
