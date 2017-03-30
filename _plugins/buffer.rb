@@ -179,7 +179,7 @@ module Jekyll
     end
 
     def post_to_buffer( payload )
-      return
+      
       # Idea
       # puts "curl --data-urlencode 'text=#{twitter_text}' --data 'media[link]=#{url}' --data 'profile_ids[]=#{twitter}' #{buffer_url}"
       buffer_url = URI.parse('https://api.bufferapp.com/1/updates/create.json')
