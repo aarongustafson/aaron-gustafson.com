@@ -70,6 +70,6 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^/notebook/(.*) notebook/links/$1 [L,R=301]
 
 # Service Worker
-<FilesMatch "serviceworker(?\.min)?\.js$">
-Header set Cache-Control "max-age=0"
-</FilesMatch>
+#<FilesMatch "serviceworker(?\.min)?\.js$">
+#Header set Cache-Control "max-age=0"
+#</FilesMatch>
