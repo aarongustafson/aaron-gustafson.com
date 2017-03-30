@@ -1,20 +1,19 @@
-{% capture date %}{{ post.date }}{% endcapture %}
+{% capture date %}{% if post.date %}{{ post.date }}{% else %}{{ page.date }}{% endif %}{% endcapture %}
 {% capture has_date %}{{ date | size }}{% endcapture %}
-
-{% capture updated %}{{ post.updated }}{% endcapture %}
+{% capture updated %}{% if post.updated %}{{ post.updated }}{% else %}{{ page.updated }}{% endif %}{% endcapture %}
 {% capture was_updated %}{{ updated | size }}{% endcapture %}
 
-{% if has_date != '0' %}
+{% if date %}
 	{% capture time %}
-		<time class="dt-published" datetime="{{ date | datetime | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
+		<time class="dt-published" datetime="{{ date | datetime | date_to_xmlschema }}">{{ date | date_to_long_string }}</time>
 	{% endcapture %}
 {% endif %}
 
 {% if was_updated != '0' %}
-	{% capture updated %}
+	{% capture updated_time %}
 		(updated <b class="hidden">on</b>
-		<time class="dt-updated" datetime="{{ updated | datetime | date_to_xmlschema }}">{{ post.updated | date_to_long_string }}</time>)
+		<time class="dt-updated" datetime="{{ updated | datetime | date_to_xmlschema }}">{{ updated | date_to_long_string }}</time>)
 	{% endcapture %}
 {% endif %}
 
-{{ time }}{% if was_updated != '0' %}<br>{{ updated }}{% endif %}
+{{ time }}{% if was_updated != '0' %}<br>{{ updated_time }}{% endif %}
