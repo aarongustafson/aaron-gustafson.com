@@ -18,7 +18,12 @@
 	{% if page.canonical %}<link rel="canonical" href="{{ page.canonical }}">{% endif %}
 {% endcomment %}
 
-{% seo %}
+{% if page.tag %}
+	<title>{{ page.tag | prepend:" " | prepend:site.jekyll-archives.tag_title_prefix }}</title>
+	{% seo title="false" %}
+{% else %}
+	{% seo %}
+{% endif %}
 <meta property="og:locale" content="en_US">
 <link href="https://plus.google.com/+AaronGustafson?rel=author" rel="publisher">
 
