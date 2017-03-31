@@ -1,55 +1,37 @@
-{% capture title %}{% if page.tag %}Browse by Tag: {{ page.tag | titlecase }}, From the Notebook of{% elsif page.title %}{{ page.title | strip_html | titlecase | replace:" Of"," of" }}{% endif %}{% if page.url contains 'notebook/links' %}{% elsif page.url contains 'notebook/' and page.title != 'The Notebook of' %}, From the Notebook of{% endif %} {{ site.title }}{% if page.url contains 'notebook/pg-' or page.url contains 'notebook/links/pg-' %}, Page {{ page.url | remove:'/notebook/pg-' | remove:'/notebook/links/pg-' | remove:'/index.html' }}{% endif %}{% endcapture %}
-{% capture og_title %}{% if page.title %}{% if site.titlecase %}{{ page.title | strip_html | titlecase | replace:" Of"," of" }}{% else %}{{ page.title | strip_html }}{% endif %}{% endif %}{% if page.url contains 'notebook/' %}{% if page.title contains 'Notebook of' %} {{ site.title }}{% endif %}{% else %} {{ site.title }}{% endif %}{% if page.url contains 'notebook/pg-' or page.url contains 'notebook/links/pg-' %}, Page {{ page.url | remove:'/notebook/pg-' | remove:'/notebook/links/pg-' | remove:'/index.html' }}{% endif %}{% endcapture %}
-{% capture description %}{% if page.description %}{{ page.description | raw_content }}{% else %}{{ page.excerpt | markdownify | strip_html }}{% endif %}{% endcapture %}
-{% capture page_url %}{{ site.url }}{{ page.url | replace:'index.html','' }}{% endcapture %}
 
-<title>{{ title }}</title>
-<meta property="og:title" content="{{ title | titlecase | smartypants }}">
+{% comment %}
+	{% capture title %}{% if page.tag %}Browse by Tag: {{ page.tag | titlecase }}, From the Notebook of{% elsif page.title %}{{ page.title | strip_html | titlecase | replace:" Of"," of" }}{% endif %}{% if page.url contains 'notebook/links' %}{% elsif page.url contains 'notebook/' and page.title != 'The Notebook of' %}, From the Notebook of{% endif %} {{ site.title }}{% if page.url contains 'notebook/pg-' or page.url contains 'notebook/links/pg-' %}, Page {{ page.url | remove:'/notebook/pg-' | remove:'/notebook/links/pg-' | remove:'/index.html' }}{% endif %}{% endcapture %}
+	{% capture og_title %}{% if page.title %}{% if site.titlecase %}{{ page.title | strip_html | titlecase | replace:" Of"," of" }}{% else %}{{ page.title | strip_html }}{% endif %}{% endif %}{% if page.url contains 'notebook/' %}{% if page.title contains 'Notebook of' %} {{ site.title }}{% endif %}{% else %} {{ site.title }}{% endif %}{% if page.url contains 'notebook/pg-' or page.url contains 'notebook/links/pg-' %}, Page {{ page.url | remove:'/notebook/pg-' | remove:'/notebook/links/pg-' | remove:'/index.html' }}{% endif %}{% endcapture %}
+	<title>{{ title }}</title>
+	<meta property="og:title" content="{{ title | titlecase | smartypants }}">
+	<meta property="og:url" content="{{ page_url }}">
+	<meta property="og:type" content="{{ site.og.type }}">
+	<meta property="og:site_name" content="{{ site.title }}">
+	<meta property="og:image" content="{{ site.url }}{{ site.og.image }}">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:description" content="{{ description | strip_html | smartypants | condense_spaces | truncate:200 }}">
+	<meta name="description" content="{{ description | strip_html | smartypants | condense_spaces | truncate:200 }}">
+	<meta name="twitter:card" value="summary"/>
+	<meta name="twitter:site" value="@AaronGustafson"/>
+	{% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+	<meta property="fb:admins" content="100002880350996">
+	{% if page.canonical %}<link rel="canonical" href="{{ page.canonical }}">{% endif %}
+{% endcomment %}
 
-<meta property="og:url" content="{{ page_url }}">
-
-<meta name="author" content="{{ site.author }}">
-<meta property="og:type" content="{{ site.og.type }}">
-<meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:image" content="{{ site.url }}{{ site.og.image }}">
+{% seo %}
 <meta property="og:locale" content="en_US">
+<link href="https://plus.google.com/+AaronGustafson?rel=author" rel="publisher">
 
-<meta property="og:description" content="{{ description | strip_html | smartypants | condense_spaces | truncate:200 }}">
-<meta name="description" content="{{ description | strip_html | smartypants | condense_spaces | truncate:200 }}">
-
-<meta name="twitter:card" value="summary"/>
-<meta name="twitter:site" value="@AaronGustafson"/>
-
-{% if page.keywords %}
-	<meta name="keywords" content="{{ page.keywords }}">
-{% endif %}
+{% if page.feed == true %}<link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">{% endif %}
 
 <link href="{{ site.subscribe_rss }}" rel="alternate" title="Posts and Links From the Notebook of {{ site.title }}" type="application/atom+xml">
 <link href="{{ site.subscribe_rss_posts }}" rel="alternate" title="Posts From the Notebook of {{ site.title }}" type="application/atom+xml">
 <link href="{{ site.subscribe_rss_links }}" rel="alternate" title="Links From the Notebook of {{ site.title }}" type="application/atom+xml">
 
+<link rel="pingback" href="https://webmention.io/aaron-gustafson.com/xmlrpc" />
+<link rel="webmention" href="https://webmention.io/aaron-gustafson.com/webmention" />
+{% if page.redirect_from %}<meta property="webmention:redirected_from" content="{{ page.redirect_from | join: ',' }}">{% endif %}
+
 <meta name="revisit-after" content="7 days">
 <meta name="ROBOTS" content="index,follow">
 <meta name="robots" content="NOODP">
-
-<link href="https://plus.google.com/+AaronGustafson?rel=author" rel="publisher">
-<meta property="fb:admins" content="100002880350996">
-
-<link rel="pingback" href="https://webmention.io/aaron-gustafson.com/xmlrpc" />
-<link rel="webmention" href="https://webmention.io/aaron-gustafson.com/webmention" />
-
-{% if page.canonical %}
-	<link rel="canonical" href="{{ page.canonical }}">
-{% endif %}
-
-{% if page.redirect_from %}
-	<meta property="webmention:redirected_from" content="{{ page.redirect_from | join: ',' }}">
-{% endif %}
-
-{% if page.url contains "notebook" %}
-	{% if page.ref_source %}
-		<link rel="amphtml" href="{{ page.id | replace:'notebook/','notebook/links/' | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">
-	{% else %}
-		<link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">
-	{% endif %}
-{% endif %}

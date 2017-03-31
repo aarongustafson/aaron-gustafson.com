@@ -1,9 +1,10 @@
 ---
+title: Browse My Notebook By Tag
 layout: default
 footer: true
 ---
 
-{% capture the_title %}Browse by Tag: {{ page.tag }}{% endcapture %}
+{% capture the_title %}{{ site.jekyll-archives.tag_title_prefix }} {{ page.tag }}{% endcapture %}
 
 <article role="article" class="page layout-container layout-container--blog">
 

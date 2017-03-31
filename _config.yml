@@ -65,27 +65,51 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: post
-      is_post: true
       feed: true
+      is_post: true
+      layout: post
   -
     scope:
       path: ""
       type: links
     values:
-      layout: link
       feed: true
+      layout: link
 
 # ----------------------- #
 #      Site Configs       #
 # ----------------------- #
 
 url: https://www.aaron-gustafson.com
-title: "Aaron Gustafson"
-subtitle: "Web Design Author, Evangelist, Practitioner, and Teacher"
-author: "Aaron Gustafson"
 simple_search: "https://www.google.com/search"
-description: "Hi there. My name is Aaron Gustafson and I work on the web."
+
+# SEO
+locale: en_US
+title: Aaron Gustafson
+subtitle: Web Design Author, Evangelist, Practitioner, and Teacher
+author:
+  name: Aaron Gustafson
+  twitter: AaronGustafson
+description: Hi there. My name is Aaron Gustafson and I work on the web.
+twitter:
+  username: AaronGustafson
+facebook:
+  admins: 100002880350996
+logo: /i/og-logo.png
+social:
+  name: Aaron Gustafson
+  links:
+    - https://twitter.com/aarongustafson
+    - https://www.facebook.com/aaronmgustafson
+    - https://github.com/aarongustafson
+    - https://plus.google.com/+AaronGustafson
+    - https://www.linkedin.com/in/aarongustafson
+    - http://lanyrd.com/profile/aarongustafson
+    - http://www.slideshare.net/AaronGustafson/
+    - http://instagram.com/AaronGustafson
+    - http://speakerrate.com/speakers/266-aaron-gustafson
+    - https://www.flickr.com/photos/aarongustafson
+
 
 date_format: "%d %B %Y"
 excerpt_separator: "<!-- more -->"
@@ -135,6 +159,7 @@ jekyll-archives:
   layout: 'tag.html'
   permalinks:
     tag: '/notebook/tags/:name/'
+  tag_title_prefix: 'Browse By Tag:'
 
 # Asides
 default_asides: [asides/recent_posts.html]

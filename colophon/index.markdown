@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Colophon for the website of"
+title: How This Site Was Built
 description: "A bit about the underpinnings of this site."
 comments: false
 sharing: false

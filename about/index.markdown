@@ -1,6 +1,6 @@
 ---
 layout: page
-title: A Bit About
+title: A Bit About Me
 description: "My bio, headshots, etc."
 footer: true
 show_title: false

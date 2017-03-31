@@ -13982,3 +13982,98 @@ https://www.aaron-gustafson.com/notebook/trypod/:
     '847483640363663360': |-
       <li id="webmention-847483640363663360" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://stegrainer.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/4eb70eb03cc1d2c027a22b9ab354f3c8279cda7a2b3e9a42c48c622ce98ccef6.jpg" alt="" title="Ste Grainer"><b class="p-name">Ste Grainer</b></a></div><div class="webmention__content p-content"><p>Nice recommendations! I’ll have to make a list of my faves but here are a couple: Liftoff, Cortex, Do By Friday, Analog(ue)</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2017-03-30T12:20:20-04:00">30 March 2017</time> | <a class="webmention__source u-url" href="https://twitter.com/stegrainer/status/847483640363663360">Permalink</a></div></article></li>
+https://www.aaron-gustafson.com/notebook/pondering-fallback-content/:
+  '1490958190':
+    430857: <li id="webmention-430857" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/JoshARhoads"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/62539f5747ec896b0b1d6e523bb073f4f738804fbde96e8e91cf1fb58c62dbf1.jpg"
+      alt="" title="josh rhoads"><b class="p-name">josh rhoads</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/847764915314208768#favorited-by-281126525">josh
+      rhoads favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2017-03-31T11:03:10+00:00">31 March 2017</time></div></article></li>
+  '1490957923':
+    '847765093735690240': <li id="webmention-847765093735690240" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://jarhoads.github.io/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/62539f5747ec896b0b1d6e523bb073f4f738804fbde96e8e91cf1fb58c62dbf1.jpg"
+      alt="" title="josh rhoads"><b class="p-name">josh rhoads</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/JoshARhoads/status/847765093735690240">josh
+      rhoads retweeted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2017-03-31T06:58:43-04:00">31 March 2017</time></div></article></li>
+  '1490960171':
+    430859: <li id="webmention-430859" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/MattTGrant"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/ca28f56c09869c52d2a7b2ce0292d066d6d1f3f0e12681da88b9aad2437a1181.jpg"
+      alt="" title="Matthew T. Grant"><b class="p-name">Matthew T. Grant</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/847764915314208768#favorited-by-14773831">Matthew
+      T. Grant favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2017-03-31T11:36:11+00:00">31 March 2017</time></div></article></li>
+  '1490962243':
+    '847783210452832256': <li id="webmention-847783210452832256" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.lwndev.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/fbfe1de71f0a1a721e7eac47bc2de7d5873d254fdbb71197d01bb8beb3c38148.jpg"
+      alt="" title="Leif Nelson"><b class="p-name">Leif Nelson</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/lwndev/status/847783210452832256">Leif
+      Nelson retweeted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2017-03-31T08:10:43-04:00">31 March 2017</time></div></article></li>
+  '1490963915':
+    430861: <li id="webmention-430861" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/lwndev"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/pbs.twimg.com/fbfe1de71f0a1a721e7eac47bc2de7d5873d254fdbb71197d01bb8beb3c38148.jpg"
+      alt="" title="Leif Nelson"><b class="p-name">Leif Nelson</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/847764915314208768#favorited-by-59675250">Leif
+      Nelson favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2017-03-31T12:38:35+00:00">31 March 2017</time></div></article></li>
+  '1490963947':
+    430862: <li id="webmention-430862" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/Spellacy"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/pbs.twimg.com/e79835775e92169f2913c3f26a6c67c6052b3a0ff6f8d59d59e34f9b309641ee.jpg"
+      alt="" title="Michael Spellacy"><b class="p-name">Michael Spellacy</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/847764915314208768#favorited-by-132282117">Michael
+      Spellacy favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2017-03-31T12:39:07+00:00">31 March 2017</time></div></article></li>
+  '1490962265':
+    '847783305835663360': <li id="webmention-847783305835663360" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="http://www.spellacy.net/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/e79835775e92169f2913c3f26a6c67c6052b3a0ff6f8d59d59e34f9b309641ee.jpg"
+      alt="" title="Michael Spellacy"><b class="p-name">Michael Spellacy</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/Spellacy/status/847783305835663360">Michael
+      Spellacy retweeted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2017-03-31T08:11:05-04:00">31 March 2017</time></div></article></li>
+  '1490963976':
+    430864: <li id="webmention-430864" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/JulianNorton"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/e70fe35d02b1f626f616fe4c4671e1e9357d2d8cdea8d14baa3942a306aa0fbe.jpg"
+      alt="" title="Julian Norton"><b class="p-name">Julian Norton</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/847764915314208768#favorited-by-27059694">Julian
+      Norton favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2017-03-31T12:39:36+00:00">31 March 2017</time></div></article></li>
+  '1490970253':
+    430869: <li id="webmention-430869" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/fakebaldur"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/f2791c22ce91d5d90c1443c20b71720c6616f50207f8156207bc83c1332544ab.png"
+      alt="" title="Baldur Bjarnason"><b class="p-name">Baldur Bjarnason</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/847764915314208768#favorited-by-805850">Baldur
+      Bjarnason favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2017-03-31T14:24:13+00:00">31 March 2017</time></div></article></li>
+  '1490969332':
+    '847812946508034049': <li id="webmention-847812946508034049" class="webmentions__item"><article
+      class="h-cite webmention webmention--author-starts webmention--title-only"><div
+      class="webmention__author p-author h-card"><a class="u-url" href="https://www.baldurbjarnason.com/"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/f2791c22ce91d5d90c1443c20b71720c6616f50207f8156207bc83c1332544ab.png"
+      alt="" title="Baldur Bjarnason"><b class="p-name">Baldur Bjarnason</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/fakebaldur/status/847812946508034049">Baldur
+      Bjarnason retweeted this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2017-03-31T10:08:52-04:00">31 March 2017</time></div></article></li>
+  '1490957881':
+    847764915314208768: |-
+      <li id="webmention-847764915314208768" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/827215347799441409/nklH5-Hn_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Pondering fallback content <a href="https://t.co/hYJCqUDkHy">https://t.co/hYJCqUDkHy</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2017-03-31T10:58:01+00:00">31 March 2017</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/847764915314208768">Permalink</a></div></article></li>

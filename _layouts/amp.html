@@ -19,7 +19,7 @@
       {{ page.body | markdownify | amp_images | amp_gists }}
     </main>
     <aside class="promo promo--book promo--image">
-	    <amp-img class="promo__image" src="{{ site.data.promos.awd2e.image | replace:"https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?url=","" | replace:"&amp;container=focus&amp;refresh=2592000","" }}" alt="">
+	    <amp-img class="promo__image" src="{{ site.data.promos.awd2e.image | replace:"https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?url=","" | replace:"&amp;container=focus&amp;refresh=2592000","" }}" layout="fixed" height="170" width="125" alt=""></amp-img>
 	    <div class="promo__copy">{{ site.data.promos.awd2e.text | markdownify }}</div>
     </aside>
     <footer>

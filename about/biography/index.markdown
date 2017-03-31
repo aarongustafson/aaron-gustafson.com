@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Official Biographies for
+title: My Official Biographies
 description: "My official bio for conferences and the like."
 footer: true
 show_title: false

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Headshots for
+title: Headshots of Me
 description: "If you’re looking for photos of me, look no further."
 footer: true
 show_title: false
