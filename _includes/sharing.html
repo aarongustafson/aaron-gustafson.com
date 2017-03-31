@@ -20,7 +20,7 @@
 
 {% if page.tag %}
 	<title>{{ page.tag | prepend:" " | prepend:site.jekyll-archives.tag_title_prefix }}</title>
-	{% seo title="false" %}
+	{% seo title=false %}
 {% else %}
 	{% seo %}
 {% endif %}
