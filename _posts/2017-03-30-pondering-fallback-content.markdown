@@ -10,7 +10,7 @@ crosspost_to_medium: true
 
 I don’t remember what got it stuck in my craw, but I’ve been thinking a bit about HTML fallbacks of late. <!-- more -->If you’re unfamiliar, consider the following `picture` element:
 
-{% gist a42986eb7d542c03b65b3ef1308f91b1 %}
+{% gist a42986eb7d542c03b65b3ef1308f91b1 pic-webp.html embed %}
 
 This `picture` element has two children: one `source` referencing a WebP image and an `img` element referencing a JPG. This pattern demonstrates how `picture` elements must be built in order to validate, but it also reinforces a best practice that uses the fault tolerant nature of HTML parsers to guarantee every user gets something.
 
@@ -25,7 +25,7 @@ So why have I been thinking about fallback content? Well, I’ve been thinking a
 
 [^1]: Safari is the only possible exception here, and that’s only if QuickTime supports the particular CODEC that was used to create the AVI in the first place. Pretty slim odds.
 
-{% gist ec877910f2a22568776b10a32b7ce8a0 video-avi.html %}
+{% gist ec877910f2a22568776b10a32b7ce8a0 video-avi.html embed %}
 
 So what happens when most browsers encounter this markup? Nothing. Blank space. If you added a poster, that would be shown, but the user gets no video controls and receives no indication that it should even be video content.
 
@@ -39,7 +39,7 @@ It’s also a pretty crappy user experience if you ask me. Now it’s worth noti
 
 That would offer a much better experience. Of course, since it’s not a requirement for standards-compliance, it’s not guaranteed. In fact, I have yet to encounter a browser that provides that kind of affordance. So if we want our users to receive that kind of a fallback, we need to it using a tool we do control: HTML. Here’s a stab at what that might look like:
 
-{% gist ec877910f2a22568776b10a32b7ce8a0 video-avi-fallback.html %}
+{% gist ec877910f2a22568776b10a32b7ce8a0 video-avi-fallback.html embed %}
 
 Given how fallbacks work, you might expect a browser to offer up the inner paragraph and download link when it realizes there is no video data it can play. Sadly that’s not the case. They all still display either an empty space or the `poster` image.[^2]
 
