@@ -1,6 +1,6 @@
 {% capture date %}{% if post.date %}{{ post.date }}{% else %}{{ page.date }}{% endif %}{% endcapture %}
 {% capture has_date %}{{ date | size }}{% endcapture %}
-{% capture updated %}{% if post.updated %}{{ post.updated }}{% else %}{{ page.updated }}{% endif %}{% endcapture %}
+{% capture updated %}{% if post.last_updated_at %}{{ post.last_updated_at }}{% else %}{{ page.last_updated_at }}{% endif %}{% endcapture %}
 {% capture was_updated %}{{ updated | size }}{% endcapture %}
 
 {% if date %}

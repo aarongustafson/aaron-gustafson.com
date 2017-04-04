@@ -25,7 +25,6 @@ group :jekyll_plugins do
     gem 'jekyll-crosspost-to-medium'
     gem 'jekyll-paginate-v2'
     gem 'jekyll-redirect-from'
-    gem 'jekyll-archives'
     gem 'jekyll-seo-tag'
     gem 'jekyll-sitemap'
     gem 'jekyll-tagging'

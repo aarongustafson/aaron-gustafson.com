@@ -2,7 +2,7 @@
 layout: post
 title: "Excellent Speakers for Your Next Tech Event"
 date: 2015-10-28 09:28:09 -0400
-updated: 2015-10-30 12:05:09 -0400
+last_modified_at: 2015-10-30 12:05:09 -0400
 comments: true
 tags: [industry,business,equality]
 description: "Like many, I’m disappointed that gender—or ethnicity, etc., etc., etc.—should even have to play a role when it comes to selecting awesome speakers, but the reality is that the dais at most tech-related conferences is still occupied (largely) by white men. That needs to change."

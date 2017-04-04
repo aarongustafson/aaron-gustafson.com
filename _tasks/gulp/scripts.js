@@ -8,11 +8,9 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     rename = require('gulp-rename'),
     //handleErrors = require('handleErrors'),
-    source_folder = 'source/_javascript',
-    destination_root = 'source',
-    destination_folder = destination_root + '/j',
-    public_root = '_deploy'
-    public_folder = public_root + '/j',
+    source_folder = '_javascript',
+    destination_folder = 'j',
+    public_folder = '_site/j',
     rename_serviceworker = rename({
         dirname: "../"
     });

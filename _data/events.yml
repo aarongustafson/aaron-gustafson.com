@@ -19,11 +19,6 @@ future:
     date: 2017-05-10 09:00:00 -0400
     location: "Seattle, WA USA"
   
-  - title: Music City Code
-    # url: http://lanyrd.com/2017/generate/
-    date: 2017-06-01 09:00:00 -0400
-    location: "Nashville, TN USA"
-  
   - title: Generate
     url: http://lanyrd.com/2017/generate/
     date: 2017-06-09 09:00:00 -0400

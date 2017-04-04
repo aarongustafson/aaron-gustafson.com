@@ -1,5 +1,4 @@
 html {
-  font-size: -webkit-calc( 1em + .5vw );
   font-size: calc( 1em + .5vw );
   line-height: 1.4;
   max-width: 70ch;
@@ -90,8 +89,6 @@ sup {
 .promo__image {
   max-width: 100px;
   margin-top: -.2em;
-  -webkit-transform: rotate(-10deg);
-  -ms-transform: rotate(-10deg);
   transform: rotate(-10deg);
   position: absolute;
   left: 0;
@@ -101,7 +98,6 @@ sup {
 
 footer small {
   display: block;
-  font-size: -webkit-calc( .5em + .5vw );
   font-size: calc( .5em + .5vw );
   font-style: italic;
   text-align: center;

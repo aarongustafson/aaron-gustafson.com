@@ -89,8 +89,7 @@
         }
 
         a.footnote {
-            background: transparent;
-            box-shadow: none;
+            @include no-underline;
         }
 
         html.wf-active {
@@ -116,7 +115,7 @@
 		
 		// No underlines on image links
 		a[href$="jpg"],  a[href$=png],  a[href$=gif] {
-    		background: transparent !important;
+    		@include no-underline;
 		}
 
     }

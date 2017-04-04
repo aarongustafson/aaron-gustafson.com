@@ -236,10 +236,6 @@ table thead, .listing__item__meta {
   width: device-width;
   zoom: 1.0;
 }
-@-o-viewport {
-  width: device-width;
-  zoom: 1.0;
-}
 @-webkit-viewport {
   width: device-width;
   zoom: 1.0;
@@ -249,8 +245,6 @@ table thead, .listing__item__meta {
   zoom: 1.0;
 }
 html {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(1px, #FF6BA6), color-stop(1px, transparent));
-  background: -webkit-linear-gradient(#FF6BA6 1px, transparent 1px);
   background: linear-gradient(#FF6BA6 1px, transparent 1px);
   background-size: 100% .75;
 }
@@ -396,9 +390,8 @@ dl dd {
   margin-left: 0;
   margin-top: 0;
   padding-left: 0;
-  -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
-  break-inside: avoid;
+       break-inside: avoid;
 }
 
 /*------------------------------------*\
@@ -412,7 +405,6 @@ a:link, a:visited {
   border-bottom: 1px dotted;
   border-bottom-color: rgba(52, 173, 35, 0.25);
   cursor: pointer;
-  -webkit-transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
   transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
 }
 a:hover, a:focus, a:active {
@@ -440,87 +432,73 @@ footer a[rel="bookmark"]::after {
 a[rel="original-article"]::after {
   content: "\00A0\2192";
   display: inline-block;
-  -webkit-transform: translateX(-0.25em) rotate(-45deg) translateY(0.25em);
-  -ms-transform: translateX(-0.25em) rotate(-45deg) translateY(0.25em);
   transform: translateX(-0.25em) rotate(-45deg) translateY(0.25em);
 }
 
 @supports (background-image: linear-gradient(black, white)) {
   a:link,
   a:visited {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(1px, transparent), color-stop(1px, #34AD23), color-stop(2px, #34AD23), color-stop(2px, transparent));
-    background-image: -webkit-linear-gradient(bottom, transparent, transparent 1px, #34AD23 1px, #34AD23 2px, transparent 2px);
-    background-image: linear-gradient(bottom, transparent, transparent 1px, #34AD23 1px, #34AD23 2px, transparent 2px);
+    background-image: linear-gradient(to top, transparent, transparent 1px, #34AD23 1px, #34AD23 2px, transparent 2px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
   h1 a:link, h1
   a:visited {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(6px, transparent), color-stop(6px, #34AD23), color-stop(7px, #34AD23), color-stop(7px, transparent));
-    background-image: -webkit-linear-gradient(bottom, transparent, transparent 6px, #34AD23 6px, #34AD23 7px, transparent 7px);
-    background-image: linear-gradient(bottom, transparent, transparent 6px, #34AD23 6px, #34AD23 7px, transparent 7px);
+    background-image: linear-gradient(to top, transparent, transparent 6px, #34AD23 6px, #34AD23 7px, transparent 7px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
 
   a:hover,
   a:focus {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(1px, transparent), color-stop(1px, #27831a), color-stop(2px, #27831a), color-stop(2px, transparent));
-    background-image: -webkit-linear-gradient(bottom, transparent, transparent 1px, #27831a 1px, #27831a 2px, transparent 2px);
-    background-image: linear-gradient(bottom, transparent, transparent 1px, #27831a 1px, #27831a 2px, transparent 2px);
+    background-image: linear-gradient(to top, transparent, transparent 1px, #27831a 1px, #27831a 2px, transparent 2px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
   h1 a:hover, h1
   a:focus {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(6px, transparent), color-stop(6px, #27831a), color-stop(7px, #27831a), color-stop(7px, transparent));
-    background-image: -webkit-linear-gradient(bottom, transparent, transparent 6px, #27831a 6px, #27831a 7px, transparent 7px);
-    background-image: linear-gradient(bottom, transparent, transparent 6px, #27831a 6px, #27831a 7px, transparent 7px);
+    background-image: linear-gradient(to top, transparent, transparent 6px, #27831a 6px, #27831a 7px, transparent 7px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
 
-  a.footnote {
-    background: transparent;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+  @supports (background-image: linear-gradient(black, white)) {
+    a.footnote {
+      background-image: none;
+      text-shadow: none;
+    }
   }
 
   html.wf-active a:link,
   html.wf-active a:visited {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(2px, transparent), color-stop(2px, #34AD23), color-stop(3px, #34AD23), color-stop(3px, transparent));
-    background-image: -webkit-linear-gradient(bottom, transparent, transparent 2px, #34AD23 2px, #34AD23 3px, transparent 3px);
-    background-image: linear-gradient(bottom, transparent, transparent 2px, #34AD23 2px, #34AD23 3px, transparent 3px);
+    background-image: linear-gradient(to top, transparent, transparent 2px, #34AD23 2px, #34AD23 3px, transparent 3px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
   html.wf-active h1 a:link,
   html.wf-active h1 a:visited {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(8px, transparent), color-stop(8px, #34AD23), color-stop(9px, #34AD23), color-stop(9px, transparent));
-    background-image: -webkit-linear-gradient(bottom, transparent, transparent 8px, #34AD23 8px, #34AD23 9px, transparent 9px);
-    background-image: linear-gradient(bottom, transparent, transparent 8px, #34AD23 8px, #34AD23 9px, transparent 9px);
+    background-image: linear-gradient(to top, transparent, transparent 8px, #34AD23 8px, #34AD23 9px, transparent 9px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
   html.wf-active a:hover,
   html.wf-active a:focus {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(2px, transparent), color-stop(2px, #27831a), color-stop(3px, #27831a), color-stop(3px, transparent));
-    background-image: -webkit-linear-gradient(bottom, transparent, transparent 2px, #27831a 2px, #27831a 3px, transparent 3px);
-    background-image: linear-gradient(bottom, transparent, transparent 2px, #27831a 2px, #27831a 3px, transparent 3px);
+    background-image: linear-gradient(to top, transparent, transparent 2px, #27831a 2px, #27831a 3px, transparent 3px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
   html.wf-active h1 a:hover,
   html.wf-active h1 a:focus {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(8px, transparent), color-stop(8px, #27831a), color-stop(9px, #27831a), color-stop(9px, transparent));
-    background-image: -webkit-linear-gradient(bottom, transparent, transparent 8px, #27831a 8px, #27831a 9px, transparent 9px);
-    background-image: linear-gradient(bottom, transparent, transparent 8px, #27831a 8px, #27831a 9px, transparent 9px);
+    background-image: linear-gradient(to top, transparent, transparent 8px, #27831a 8px, #27831a 9px, transparent 9px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
 
-  a[href$="jpg"], a[href$=png], a[href$=gif] {
-    background: transparent !important;
+  @supports (background-image: linear-gradient(black, white)) {
+    a[href$="jpg"], a[href$=png], a[href$=gif] {
+      background-image: none;
+      text-shadow: none;
+    }
   }
 }
 /*------------------------------------*\
@@ -755,15 +733,12 @@ form li {
   color: #DDD;
   font-size: 14px;
   font-size: 0.875rem;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   border: 1px solid;
   margin: 5px 0;
   margin: 0.3125rem 0;
   padding: 5px;
   padding: 0.3125rem;
-  -webkit-transition: background-color 0.25s ease, color 0.25s ease;
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 .fields__group input,
@@ -827,8 +802,6 @@ form li {
 }
 .layout-container__primary, .layout-container__secondary {
   margin: 0 auto;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -892,15 +865,15 @@ form li {
 }
 
 @supports (background-image: linear-gradient(black, white)) {
-  #aaron-gustafson_com .site-title a {
-    background-image: none;
-    text-shadow: none;
+  @supports (background-image: linear-gradient(black, white)) {
+    #aaron-gustafson_com .site-title a {
+      background-image: none;
+      text-shadow: none;
+    }
   }
 
   #aaron-gustafson_com .alert a {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(2px, transparent), color-stop(2px, #fff), color-stop(3px, #fff), color-stop(3px, transparent));
-    background-image: -webkit-linear-gradient(bottom, transparent, transparent 2px, #fff 2px, #fff 3px, transparent 3px);
-    background-image: linear-gradient(bottom, transparent, transparent 2px, #fff 2px, #fff 3px, transparent 3px);
+    background-image: linear-gradient(to top, transparent, transparent 2px, #fff 2px, #fff 3px, transparent 3px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #2c2825, 1px -1px 0 #2c2825, -1px 1px 0 #2c2825, 1px 1px 0 #2c2825;
   }
@@ -941,7 +914,9 @@ form li {
 .form--search [type=search] {
   font-size: 18px;
   font-size: 1.125rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 1px solid;
   border-radius: 3px;
   margin: 0 5px 0 0;
@@ -955,19 +930,12 @@ form li {
 
 @supports (display: flex) {
   [role=search] {
-    display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
     -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
+        flex-direction: row;
     -ms-flex-pack: center;
-    justify-content: center;
+        justify-content: center;
     width: 100%;
   }
 }
@@ -1164,7 +1132,7 @@ a.footnote {
 }
 @supports (background-image: linear-gradient(black, white)) {
   html.wf-active a.footnote {
-    background: transparent;
+    background-image: none;
     text-shadow: none;
   }
 }
@@ -1232,17 +1200,14 @@ a.footnote {
   text-align: center;
 }
 
-@supports (column-count: 2) or (-webkit-column-count: 2) or (-moz-column-count: 2) {
+@supports ((-moz-column-count: 2) or (column-count: 2)) or (-moz-column-count: 2) {
   .entry__meta {
-    -webkit-column-count: 2;
     -moz-column-count: 2;
-    column-count: 2;
-    -webkit-column-gap: 22px;
+         column-count: 2;
     -moz-column-gap: 22px;
-    column-gap: 22px;
-    -webkit-column-gap: 1.375rem;
+         column-gap: 22px;
     -moz-column-gap: 1.375rem;
-    column-gap: 1.375rem;
+         column-gap: 1.375rem;
   }
   .entry__meta dd + dt {
     margin-top: 0;
@@ -1489,7 +1454,6 @@ html.wf-active div.gist a {
 }
 .share-link--facebook {
   background: #306199;
-  -webkit-transition: background .5s;
   transition: background .5s;
 }
 .share-link--facebook:hover, .share-link--facebook:focus, .share-link--facebook:active {
@@ -1505,7 +1469,6 @@ html.wf-active div.gist a {
 }
 .share-link--googleplus {
   background: #e93f2e;
-  -webkit-transition: background .5s;
   transition: background .5s;
 }
 .share-link--googleplus:hover, .share-link--googleplus:focus, .share-link--googleplus:active {
@@ -1521,7 +1484,6 @@ html.wf-active div.gist a {
 }
 .share-link--linkedin {
   background: #007bb6;
-  -webkit-transition: background .5s;
   transition: background .5s;
 }
 .share-link--linkedin:hover, .share-link--linkedin:focus, .share-link--linkedin:active {
@@ -1537,7 +1499,6 @@ html.wf-active div.gist a {
 }
 .share-link--pinterest {
   background: #b81621;
-  -webkit-transition: background .5s;
   transition: background .5s;
 }
 .share-link--pinterest:hover, .share-link--pinterest:focus, .share-link--pinterest:active {
@@ -1553,7 +1514,6 @@ html.wf-active div.gist a {
 }
 .share-link--twitter {
   background: #26c4f1;
-  -webkit-transition: background .5s;
   transition: background .5s;
 }
 .share-link--twitter:hover, .share-link--twitter:focus, .share-link--twitter:active {
@@ -1590,6 +1550,7 @@ html.wf-active div.gist a {
     text-shadow: none;
   }
 }
+
 /*------------------------------------*\
     Promo
 \*------------------------------------*/
@@ -1603,35 +1564,27 @@ html.wf-active div.gist a {
 }
 .promo a:link,
 .promo a:visited {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(1px, transparent), color-stop(1px, #34AD23), color-stop(2px, #34AD23), color-stop(2px, transparent));
-  background-image: -webkit-linear-gradient(bottom, transparent, transparent 1px, #34AD23 1px, #34AD23 2px, transparent 2px);
-  background-image: linear-gradient(bottom, transparent, transparent 1px, #34AD23 1px, #34AD23 2px, transparent 2px);
+  background-image: linear-gradient(to top, transparent, transparent 1px, #34AD23 1px, #34AD23 2px, transparent 2px);
   border-bottom-width: 0;
   text-shadow: -1px -1px 0 #f0f7e9, 1px -1px 0 #f0f7e9, -1px 1px 0 #f0f7e9, 1px 1px 0 #f0f7e9;
 }
 .promo a:hover,
 .promo a:focus,
 .promo a:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(1px, transparent), color-stop(1px, #27831a), color-stop(2px, #27831a), color-stop(2px, transparent));
-  background-image: -webkit-linear-gradient(bottom, transparent, transparent 1px, #27831a 1px, #27831a 2px, transparent 2px);
-  background-image: linear-gradient(bottom, transparent, transparent 1px, #27831a 1px, #27831a 2px, transparent 2px);
+  background-image: linear-gradient(to top, transparent, transparent 1px, #27831a 1px, #27831a 2px, transparent 2px);
   border-bottom-width: 0;
   text-shadow: -1px -1px 0 #f0f7e9, 1px -1px 0 #f0f7e9, -1px 1px 0 #f0f7e9, 1px 1px 0 #f0f7e9;
 }
 html.wf-active .promo a:link,
 html.wf-active .promo a:visited {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(2px, transparent), color-stop(2px, #34AD23), color-stop(3px, #34AD23), color-stop(3px, transparent));
-  background-image: -webkit-linear-gradient(bottom, transparent, transparent 2px, #34AD23 2px, #34AD23 3px, transparent 3px);
-  background-image: linear-gradient(bottom, transparent, transparent 2px, #34AD23 2px, #34AD23 3px, transparent 3px);
+  background-image: linear-gradient(to top, transparent, transparent 2px, #34AD23 2px, #34AD23 3px, transparent 3px);
   border-bottom-width: 0;
   text-shadow: -1px -1px 0 #f0f7e9, 1px -1px 0 #f0f7e9, -1px 1px 0 #f0f7e9, 1px 1px 0 #f0f7e9;
 }
 html.wf-active .promo a:hover,
 html.wf-active .promo a:focus,
 html.wf-active .promo a:active {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), color-stop(2px, transparent), color-stop(2px, #27831a), color-stop(3px, #27831a), color-stop(3px, transparent));
-  background-image: -webkit-linear-gradient(bottom, transparent, transparent 2px, #27831a 2px, #27831a 3px, transparent 3px);
-  background-image: linear-gradient(bottom, transparent, transparent 2px, #27831a 2px, #27831a 3px, transparent 3px);
+  background-image: linear-gradient(to top, transparent, transparent 2px, #27831a 2px, #27831a 3px, transparent 3px);
   border-bottom-width: 0;
   text-shadow: -1px -1px 0 #f0f7e9, 1px -1px 0 #f0f7e9, -1px 1px 0 #f0f7e9, 1px 1px 0 #f0f7e9;
 }
@@ -1644,8 +1597,6 @@ html.wf-active .promo a:active {
   display: block;
   width: 110px;
   height: auto;
-  -webkit-transform: rotate(5deg);
-  -ms-transform: rotate(5deg);
   transform: rotate(5deg);
   position: absolute;
   right: 22px;
@@ -1688,7 +1639,9 @@ html.wf-active .promo a:active {
 .form--search [type=search] {
   font-size: 18px;
   font-size: 1.125rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: 1px solid;
   border-radius: 3px;
   margin: 0 5px 0 0;
@@ -1702,19 +1655,12 @@ html.wf-active .promo a:active {
 
 @supports (display: flex) {
   [role=search] {
-    display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
     -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
+        flex-direction: row;
     -ms-flex-pack: center;
-    justify-content: center;
+        justify-content: center;
     width: 100%;
   }
 }
@@ -1762,14 +1708,6 @@ html.wf-active .promo a:active {
 /*------------------------------------*\
     Anchorable
 \*------------------------------------*/
-@-webkit-keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 @keyframes fade-out {
   0% {
     opacity: 1;
@@ -1794,7 +1732,6 @@ html.wf-active .promo a:active {
 }
 .anchorable__icon path {
   fill: #DDD;
-  -webkit-transition: fill .5s;
   transition: fill .5s;
 }
 .anchorable__anchor__text {
@@ -1815,12 +1752,10 @@ html.wf-active .promo a:active {
 }
 .anchorable__anchor:hover path, .anchorable__anchor:focus path {
   fill: #2c2825;
-  -webkit-transition: fill .5s;
   transition: fill .5s;
 }
 .anchorable:hover path, .anchorable:focus path {
   fill: #2c2825;
-  -webkit-transition: fill .5s;
   transition: fill .5s;
 }
 .anchorable__alert {
@@ -1834,7 +1769,6 @@ html.wf-active .promo a:active {
   margin: 0;
 }
 .anchorable__alert--fading {
-  -webkit-animation: 2.2s linear 0s 1 fade-out;
   animation: 2.2s linear 0s 1 fade-out;
 }
 
@@ -1858,8 +1792,6 @@ html.wf-active .promo a:active {
   margin-top: 0.375rem;
 }
 .media-controls__buttons, .media-controls__speed {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
@@ -1881,9 +1813,8 @@ html.wf-active .promo a:active {
 .media-controls__button:before {
   content: '';
   display: block;
-  -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
-  flex-shrink: 0;
+      flex-shrink: 0;
 }
 .media-controls__button--play:before {
   width: 0;
@@ -1905,6 +1836,30 @@ html.wf-active .promo a:active {
 }
 
 /*------------------------------------*\
+    Buttons
+\*------------------------------------*/
+#carbonads {
+  margin-top: 11px;
+  margin-top: 0.6875rem;
+  text-align: right;
+}
+#carbonads .carbon-wrap {
+  display: block;
+  text-align: left;
+}
+#carbonads .carbon-poweredby {
+  color: #666;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+@supports (background-image: linear-gradient(black, white)) {
+  #carbonads .carbon-poweredby {
+    background-image: none;
+    text-shadow: none;
+  }
+}
+
+/*------------------------------------*\
     $PAGES
 	Page-specific styles
 	(use sparingly)
@@ -1916,17 +1871,12 @@ html.wf-active .promo a:active {
     Speaking Engagements
 \*------------------------------------*/
 .speaking-engagements .listing--events {
-  display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
+      flex-wrap: wrap;
   -ms-flex-align: stretch;
-  align-items: stretch;
+      align-items: stretch;
   margin: 20px auto 0;
   margin: 1.25rem auto 0;
 }
@@ -1937,17 +1887,13 @@ html.wf-active .promo a:active {
   background: #1b5812;
   color: #F9F9F9;
   text-shadow: 1px 1px 1px #1b5812;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 20px;
   padding: 1.25rem;
   margin: 0 0 20px 0;
   margin: 0 0 1.25rem 0;
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 100%;
   -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
+      flex: 0 0 100%;
   position: relative;
   overflow: hidden;
 }
@@ -1975,10 +1921,8 @@ html.wf-active .promo a:active {
 .speaking-engagements .event__location-picture {
   background: transparent center center no-repeat;
   background-size: cover;
-  -webkit-box-shadow: inset 0 0 50px 7px #1b5812;
   box-shadow: inset 0 0 50px 7px #1b5812;
   opacity: .45;
-  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   margin: 0;
   position: absolute;
@@ -1987,19 +1931,15 @@ html.wf-active .promo a:active {
   right: 0;
   bottom: 0;
   z-index: 0;
-  -webkit-transition: opacity .5s ease-in-out, -webkit-transform .5s linear;
   transition: opacity .5s ease-in-out, transform .5s linear;
 }
 .speaking-engagements .event a:focus .event__location-picture, .speaking-engagements .event:hover .event__location-picture {
   opacity: .05;
-  -webkit-transform: scale(1.125);
-  -ms-transform: scale(1.125);
   transform: scale(1.125);
 }
 .speaking-engagements .event--future {
   border-color: #00799d;
   background: #00799d;
-  -webkit-box-shadow: inset 0 0 50px 7px #00799d;
   box-shadow: inset 0 0 50px 7px #00799d;
   text-shadow: 1px 1px 1px #00799d;
 }
@@ -2286,6 +2226,9 @@ html.wf-active .promo a:active {
 \*------------------------------------*/
 /*------------------------------------*\
     Listing
+\*------------------------------------*/
+/*------------------------------------*\
+    Buttons
 \*------------------------------------*/
 /*------------------------------------*\
     $PAGES

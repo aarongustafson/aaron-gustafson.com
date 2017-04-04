@@ -2,26 +2,13 @@
 layout: null
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-	<title><![CDATA[{{ site.title | cdata_escape }} - Latest Links]]></title>
-	<link href="{{ site.url }}/atom-latest-links.xml" rel="self"/>
-	<link href="{{ site.url }}/"/>
-	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>{{ site.url }}/</id>
-	<author>
-		<name><![CDATA[{{ site.author | strip_html }}]]></name>
-		{% if site.email %}<email><![CDATA[{{ site.email }}]]></email>{% endif %}
-	</author>
-	<generator uri="https://jekyllrb.com/">Jekyll</generator>
+<feed xmlns="http://www.w3.org/2005/Atom" {% if site.lang %}xml:lang="{{ site.lang }}"{% endif %}>
+	
+	{% include atom/preamble.xml append_title=": Latest Links" %}
 
 	{% assign links = (site.links | sort: 'date') | reverse %}
-	{% for link in links limit: 20 %}
-		<entry>
-			<title type="html"><![CDATA[{{ link.title | titlecase | cdata_escape }}]]></title>
-			<link href="{{ link.url | prepend:site.url }}"/>
-			<updated>{{ link.date | date_to_xmlschema }}</updated>
-			<id>{{ link.url | prepend:site.url }}</id>
-			<content type="html"><![CDATA[{{ link.content | expand_urls: site.url | cdata_escape }}<p><a rel="full-article" href="{{ link.ref_url }}">Read on {{ link.ref_source }}&nbsp;&rarr;</a></p>]]></content>
-		</entry>
+	{% for post in links limit: 20 %}
+		{% include atom/post.xml %}
 	{% endfor %}
+
 </feed>

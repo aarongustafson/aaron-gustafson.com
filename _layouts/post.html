@@ -44,7 +44,11 @@ single: true
 		        				<dd class="dont-read"><a class="u-syndication" href="{{ crosspost[1] }}">{{ crosspost[0] }}</a></dd>
 		        			{% endfor %}
 						{% endif %}
-				
+						
+						{% unless page.no_ads %}
+							<dt class="dont-read">Paying for Hosting</dt>
+							<dd class="dont-read">{% include ad.html %}</dd>
+						{% endunless %}
 		      		</dl>
 		    	{% endunless %}
 		  	</header>

@@ -57,6 +57,11 @@ defaults:
   -
     scope:
       path: ""
+    values:
+      image: /i/og-logo.png
+  -
+    scope:
+      path: ""
       type: pages
     values:
       layout: page
@@ -84,12 +89,13 @@ url: https://www.aaron-gustafson.com
 simple_search: "https://www.google.com/search"
 
 # SEO
-locale: en_US
+lang: en_US
 title: Aaron Gustafson
 subtitle: Web Design Author, Evangelist, Practitioner, and Teacher
 author:
   name: Aaron Gustafson
   twitter: AaronGustafson
+  googleplus: AaronGustafson
 description: Hi there. My name is Aaron Gustafson and I work on the web.
 twitter:
   username: AaronGustafson

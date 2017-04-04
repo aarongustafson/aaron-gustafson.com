@@ -10,11 +10,8 @@
         padding: .5em 1em;
         margin: -.5em -1em;
 
-        @supports (background-image:linear-gradient(black,white)) {
-            html.wf-active & {
-                background: transparent;
-                text-shadow: none;
-            }
+        html.wf-active & {
+            @include no-underline;
         }
     }
 
