@@ -3,6 +3,9 @@ layout: default
 single: true
 ---
 
+{% assign page.keywords = ( page.tags | join:", " ) %}
+{% assign this_url = "{{ site.url }}{{ page.url }}" %}
+
 <div class="layout-container layout-container--blog">
 	<article role="article" class="layout-container__primary h-entry">
 		<div class="entry">
@@ -47,3 +50,17 @@ single: true
 
 	<script src="/j/post.min.js" async></script>
 </div>
+
+<script type="application/ld+json">
+{%
+	include jsonld/post.html 
+		headline=page.title
+		genre=page.category
+		keywords=page.keywords
+		content=page.content
+		link=this_url
+		date=page.date
+		updated=page.last_updated_at
+		image=page.image
+%}
+</script>
