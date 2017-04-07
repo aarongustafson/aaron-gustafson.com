@@ -129,6 +129,7 @@ code_dir: /downloads/code
 subscribe_rss: "/atom.xml"
 subscribe_rss_posts: "/atom-latest-posts.xml"
 subscribe_rss_links: "/atom-latest-links.xml"
+subscribe_rss_css: "/c/rss.css"
 subscribe_email:
 # RSS feeds can list your email address if you like
 email:
