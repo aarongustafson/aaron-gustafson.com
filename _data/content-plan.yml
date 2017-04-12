@@ -1,0 +1,45 @@
+- title: home
+  purpose: introduce me
+  looking_for:
+    - photo
+    - brief bio
+    - a sample of what i’ve done
+    - a sample of what’s on the site
+  content:
+    - intro
+    - blog post teasers
+    - talk teasers
+    - contact promo
+- title: notebook
+  purpose: thought leadership
+  looking_for: a demonstration
+  content:
+    - blog posts
+    - links (reading)
+    - contact promo
+- title: talks
+  purpose: thought leadership
+  looking_for:
+    - talks & workshops I’ve given
+    - list of where I’ve spoken
+  content:
+    - talk teasers
+    - talk/workshop/keynote promo
+    - list of events
+- title: publications
+  purpose: thought leadership
+  looking_for: what I’ve written
+  content:
+    - book promos (1st party)
+    - book contributions
+    - citations
+    - articles
+- title: press
+  purpose: thought leadership
+  looking_for: interviews & the like
+  content:
+    - intro - how to get in touch
+    - podcasts
+    - interviews
+
+
