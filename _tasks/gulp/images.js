@@ -5,15 +5,15 @@ var gulp     = require('gulp'),
 	debug    = require('gulp-debug');
 
 gulp.task('images', function() {
-	var destination = './_deploy/i';
+	var destination = './i';
 
-	gulp.src('./source/i/**/*.{jpg,png,svg,gif}')
+	gulp.src('./_images/**/*.{jpg,png,svg,gif}')
 		.pipe(changed(destination)) // Ignore unchanged files
 		.pipe(imagemin()) // Optimize
 		// Publish
 		.pipe(gulp.dest(destination));
 
-	gulp.src('./source/i/**/*.{jpg,png}')
+	gulp.src('./_images/**/*.{jpg,png}')
 		.pipe(changed(destination)) // Ignore unchanged files
 		.pipe(webp())
 		// Publish
