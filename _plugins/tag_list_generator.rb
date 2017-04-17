@@ -27,13 +27,10 @@ module Jekyll
           if !tags.has_key? tag
             tags[tag] = []
           end
-          tags[tag] << post.path
-        end
-        post.data['tags'].each do |tag|
-          if !tags.has_key? tag
-            tags[tag] = []
+          file = File.basename post.path
+          if ! tags[tag].include? file
+            tags[tag] << file
           end
-          tags[tag] << post.path
         end
       end
 

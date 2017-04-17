@@ -15,7 +15,7 @@ javascripts:
 <h1 class="page__title">A Complete List of My Conferences &amp; Workshops</h1>
 
 <p>{{ site.data.microcopy.speaking_engagements.intro_pre_count }}
-{% for event in site.data.events.past %}
+{% for event in site.data.events %}
 	{% if forloop.index == 1 %}
 		{{ forloop.length }}
 	{% endif %}
@@ -24,21 +24,24 @@ javascripts:
 
 {{ site.data.microcopy.speaking_engagements.contact | markdownify }}
 
+{% assign future = site.data.events | sort: 'date' | only_future %}
+{% assign past = site.data.events | only_past  %}
+
 <section class="subsection">
 
 	<h2 id="future-events" class="subsection__header">In the Future</h2>
 
-	{% unless site.data.events.future %}
+	{% unless future %}
 		{{ site.data.microcopy.speaking_engagements.no_upcoming | markdownify }}
 	{% endunless %}
 
-	{% for event in site.data.events.future %}
+	{% for event in future %}
 		{% if forloop.first %}
 			<ol class="listing listing--events">
 		{% endif %}
 
 		<li class="listing__item listing__item--{{ forloop.index }} event event--future"
-			data-date="{{ event.date | date: "%Y-%m-%d" }}">
+			data-date="{{ event.date | date: '%Y-%m-%d' }}">
 			{% if event.url %}
 				<a href="{{ event.url }}">
 			{% endif %}
@@ -115,7 +118,7 @@ javascripts:
 	<h2 id="past-events" class="subsection__header">In the Past</h2>
 
 	<ol class="listing listing--events">
-		{% for event in site.data.events.past %}
+		{% for event in past %}
 			<li class="listing__item listing__item--{{ forloop.index }} event event--past"
 				data-date="{{ event.date | date: "%Y-%m-%d" }}">
 				
