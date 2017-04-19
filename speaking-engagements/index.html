@@ -25,7 +25,7 @@ javascripts:
 {{ site.data.microcopy.speaking_engagements.contact | markdownify }}
 
 {% assign future = site.data.events | sort: 'date' | only_future %}
-{% assign past = site.data.events | only_past  %}
+{% assign past = site.data.events | sort: 'date' | reverse | only_past  %}
 
 <section class="subsection">
 
