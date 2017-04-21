@@ -88,6 +88,11 @@
   credit_name: Namtrofk
   credit_url: https://commons.wikimedia.org/wiki/File:UniversityofDayton.jpg
 
+- name: "Denver, CO USA"
+  photo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Denver_Art_Museum_2.jpg/400px-Denver_Art_Museum_2.jpg
+  credit_name: J. Miers
+  credit_url: https://en.wikipedia.org/wiki/File:Denver_Art_Museum_2.jpg
+
 - name: "Düsseldorf, Germany"
   photo: https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/DUSSELDORF_CITY_TRAM_AT_THE_HAUPTBAHNHOF_DUSSELDORF_GERMANY_APRIL_2013_%288711697558%29.jpg/400px-DUSSELDORF_CITY_TRAM_AT_THE_HAUPTBAHNHOF_DUSSELDORF_GERMANY_APRIL_2013_%288711697558%29.jpg
   credit_name: calflier001

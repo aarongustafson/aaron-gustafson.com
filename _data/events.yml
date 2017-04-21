@@ -1,3 +1,9 @@
+- id: 121
+  title: An Event Apart
+  url: https://aneventapart.com/event/denver-2017
+  date: 2017-12-11 09:00:00 -0400
+  location: "Denver, CO USA"
+
 - id: 120
   title: TBA # Respond
   # url: http://lanyrd.com/2017/respond-by-web-directions-2/
