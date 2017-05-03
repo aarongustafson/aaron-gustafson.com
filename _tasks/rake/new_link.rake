@@ -1,7 +1,7 @@
 links_dir   = File.join(Dir.pwd, '_links')
 file_ext = "markdown"
 
-require 'uri';
+require 'uri'
 
 # usage rake new_link[URL]
 desc "Creating a new link in #{links_dir}"
@@ -43,11 +43,15 @@ task :new_link, :url do |t, args|
     slug = URI(url).host.split('.').first
   end
   if !Dir.glob("#{links_dir}/*-#{slug}*").empty?
-      abort("rake aborted!") if ask("This link may already exist. Do you want to proceed?", ['y', 'n']) == 'n'
+      puts " "
+      puts Dir.glob("#{links_dir}/*-#{slug}*")
+      puts " "
+      abort("rake aborted!") if get_stdin("This link may be a duplicate of one of these. Do you want to proceed? (y or n) ") == 'n'
+      #abort("rake aborted!") if ask("This link may already exist. Do you want to proceed?", ['y', 'n']) == 'n'
   end
   filename = "#{links_dir}/#{Time.now.strftime('%Y-%m-%d')}-#{slug}.#{file_ext}"
   if File.exist?(filename)
-    abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
+    abort("rake aborted!") if get_stdin("#{filename} already exists. Do you want to overwrite? (y or n) ") == 'n'
   end
   puts "Creating new link post: #{filename}"
   open(filename, 'w') do |post|
