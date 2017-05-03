@@ -150,6 +150,7 @@ progressive enhancement:
 - 2016-12-02-insert-clickbait-headline-about-progressive-enhancement-here.markdown
 - 2016-12-14-lessons-in-averaging.markdown
 - 2017-03-30-pondering-fallback-content.markdown
+- 2017-05-03-PWAs-and-desktop.markdown
 css:
 - 2014-11-04-css-variables-are-a-bad-idea.markdown
 - 2015-03-20-quantity-queries-where-have-you-been-all-my-life.markdown
@@ -421,3 +422,5 @@ podcasts:
 - 2017-03-29-trypod.markdown
 html:
 - 2017-03-30-pondering-fallback-content.markdown
+PWA:
+- 2017-05-03-PWAs-and-desktop.markdown

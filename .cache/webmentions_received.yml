@@ -10948,6 +10948,15 @@ https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
     859778058831712256: |-
       <li id="webmention-859778058831712256" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/827215347799441409/nklH5-Hn_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>@_developit @kyleshevlin @ken_wheeler See also: <a href="https://t.co/fMd7l9Uuq0">https://t.co/fMd7l9Uuq0</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2017-05-03T14:33:57+00:00">3 May 2017</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/859778058831712256">Permalink</a></div></article></li>
+  '1493824192':
+    433240: <li id="webmention-433240" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/ken_wheeler"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/1b6244960231ebf813073e5de48cd64d1c70ccde1e1ac539976f426fbd42a738.jpg"
+      alt="" title="Ken Wheeler"><b class="p-name">Ken Wheeler</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/859778058831712256#favorited-by-167193309">Ken
+      Wheeler favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2017-05-03T15:09:52+00:00">3 May 2017</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/ten-years-on-twitter/:
   '1478779084':
     796683337767223296: |-

@@ -11,7 +11,7 @@ Next week I’ll be giving a talk on [Progressive Web Apps (PWAs)](https://devel
 
 > As web developers we use the desktop browser different than an average user. We use the desktop to develop and we sometimes fall prey to assumptions about the platform from that experience. 
 
-I know for a fact that right here in my backyard—Chattanooga, TN, self-proclaimed ”Gig City“—connectivity is still a problem. Many of the folks who go through the digital literacy training programs offered by [Tech Goes Home Chattanooga](https://techgoeshomecha.org/)—which [Kelly](https://kelly-mccarthy.com/) runs—don’t have an Internet connection at home. Period.
+I know for a fact that right here in my backyard—Chattanooga, TN, self-proclaimed “Gig City”—connectivity is still a problem. Many of the folks who go through the digital literacy training programs offered by [Tech Goes Home Chattanooga](https://techgoeshomecha.org/)—which [Kelly](https://kelly-mccarthy.com/) runs—don’t have an Internet connection at home. Period.
 
 The adults and seniors taking TGH CHA classes may not know the value of or can’t afford Internet access. Students have an Internet connection at school, of course, but when they go home to complete their homework, they’re in the same boat. And even when folks have access, in many cases the connection is sub-optimal. Many access the Internet via a [mobile](https://www.freedompop.com/) or [throttled connection](https://www.xfinity.com/support/internet/comcast-broadband-opportunity-program/) tailored to low-income families.
 
