@@ -2,13 +2,13 @@
 layout: null
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/css" href="{{ site.subscribe_rss_css | absolute_url }}" ?>
+<?xml-stylesheet type="text/css" href="{{ '/c/feed.min.css' | absolute_url }}" ?>
 <feed xmlns="http://www.w3.org/2005/Atom" {% if site.lang %}xml:lang="{{ site.lang }}"{% endif %}>
 	
-	{% include atom/preamble.xml append_title=": Latest Posts" %}
+	{% include feeds/preamble.xml append_title=": Latest Posts" %}
 	
 	{% for post in site.posts limit: 20 %}
-		{% include atom/post.xml %}
+		{% include feeds/post.xml %}
 	{% endfor %}
 
 </feed>

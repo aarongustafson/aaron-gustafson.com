@@ -1,0 +1,18 @@
+---
+layout: null
+---
+{
+    {% include feeds/preamble.json append_title=": Latest Posts" %}
+    "items": [
+{% for post in site.posts limit: 20 %}
+        {
+            "id": "{{ post.id }}",
+            "title": {{ post.title | smartify | jsonify }},
+            "content_html": {{ post.content | jsonify }},
+            "url": "{{ site.url }}{{ post.url }}",
+			{% if post.excerpt and post.excerpt != empty %}"summary": {{ post.excerpt | smartify | jsonify }},{% endif %}
+            "date_published": "{{ post.date }}"
+        }{% unless forloop.last == true %},{% endunless %}
+{% endfor %}
+    ]
+}

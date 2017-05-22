@@ -29,9 +29,7 @@
 
 {% if page.feed == true %}<link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">{% endif %}
 
-<link href="{{ site.subscribe_rss }}" rel="alternate" title="Posts and Links From the Notebook of {{ site.title }}" type="application/atom+xml">
-<link href="{{ site.subscribe_rss_posts }}" rel="alternate" title="Posts From the Notebook of {{ site.title }}" type="application/atom+xml">
-<link href="{{ site.subscribe_rss_links }}" rel="alternate" title="Links From the Notebook of {{ site.title }}" type="application/atom+xml">
+{% include feeds/list.html %}
 
 <link rel="pingback" href="https://webmention.io/aaron-gustafson.com/xmlrpc" />
 <link rel="webmention" href="https://webmention.io/aaron-gustafson.com/webmention" />

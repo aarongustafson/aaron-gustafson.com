@@ -3,6 +3,9 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^aaron-gustafson.com [NC]
 RewriteRule ^(.*)$ https://www.aaron-gustafson.com/$1 [L,R=301,NC]
 
+# UTF-8
+AddDefaultCharset utf-8
+
 # GZip
 AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
 BrowserMatch ^Mozilla/4 gzip-only-text/html
@@ -53,6 +56,9 @@ AddType image/svg+xml svg svgz
 Header set Content-Encoding "gzip"
 </FilesMatch>
 
+# JSON
+AddType 'application/json; charset=UTF-8' .json
+
 # Fonts
 AddType application/vnd.ms-fontobject eot
 
@@ -68,11 +74,15 @@ RewriteBase /
 RewriteRule ^/amp/notebook/links/links/(.*) notebook/links/$1 [L,R=301]
 
 # Old Links in Notebook directory
-RewriteCond %{REQUEST_URI} ^/notebook/
-RewriteCond %{REQUEST_URI} !^/notebook/links/
+RewriteCond %{REQUEST_URI} ^notebook/
+RewriteCond %{REQUEST_URI} !^notebook/links/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^/notebook/(.*) notebook/links/$1 [L,R=301]
+RewriteRule ^notebook/(.*) notebook/links/$1 [L,R=301]
+
+# Redirect Atom feeds
+RewriteRule ^atom\.xml feeds/all.xml [L,R=301]
+RewriteRule ^atom-(.*)\.xml feeds/$1.xml [L,R=301]
 
 # Service Worker
 <FilesMatch "serviceworker(\.min)?\.js$">

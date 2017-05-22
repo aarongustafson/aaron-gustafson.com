@@ -94,6 +94,7 @@ title: Aaron Gustafson
 subtitle: Web Design Author, Evangelist, Practitioner, and Teacher
 author:
   name: Aaron Gustafson
+  uri: https://www.aaron-gustafson.com
   twitter: AaronGustafson
   googleplus: AaronGustafson
 description: Hi there. My name is Aaron Gustafson and I work on the web.
@@ -126,13 +127,16 @@ permalink: /notebook/:title/
 code_dir: /downloads/code
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: "/atom.xml"
-subscribe_rss_posts: "/atom-latest-posts.xml"
-subscribe_rss_links: "/atom-latest-links.xml"
-subscribe_rss_css: "/c/feed.min.css"
-subscribe_email:
-# RSS feeds can list your email address if you like
-email:
+feeds:
+  - title: "Posts and Links From the Notebook of "
+    atom: "/feeds/all.xml"
+    json: "/feeds/all.json"
+  - title: "Posts From the Notebook of "
+    atom: "/feeds/latest-posts.xml"
+    json: "/feeds/latest-posts.json"
+  - title: "Links From the Notebook of "
+    atom: "/feeds/latest-links.xml"
+    json: "/feeds/latest-links.json"
 
 # Navigation
 navigation:

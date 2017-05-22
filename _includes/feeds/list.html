@@ -1,0 +1,4 @@
+{% for feed in site.feeds %}
+	<link href="{{ feed.atom }}" rel="alternate" title="{{ site.title | prepend:feed.title }}" type="application/atom+xml">
+	<link href="{{ feed.json }}" rel="alternate" title="{{ site.title | prepend:feed.title }}" type="application/json">
+{% endfor %}

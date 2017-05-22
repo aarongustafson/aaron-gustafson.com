@@ -1,0 +1,17 @@
+---
+layout: null
+---
+{
+    {% include feeds/preamble.json append_title=": Latest Posts & Links" %}
+    "items": [
+{% assign feed = site.documents | where:'feed',true | sort: 'date' | reverse %}
+{% for post in feed %}
+    {% if post.ref_url %}
+        {% assign post_prepend_title = "Link: " %}
+    {% else %}
+        {% assign post_prepend_title = "Post: " %}
+    {% endif %}
+    {% include feeds/post.json post_prepend_title=post_prepend_title %}{% unless forloop.last == true %},{% endunless %}
+{% endfor %}
+    ]
+}

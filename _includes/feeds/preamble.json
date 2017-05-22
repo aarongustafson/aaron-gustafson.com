@@ -1,0 +1,27 @@
+"version": "https://jsonfeed.org/version/1",
+
+{% capture append_title %}{{ include.append_title }}{% endcapture %}
+{% if site.title %}
+"title": {{ site.title | append:append_title | smartify | jsonify }},
+{% elsif site.name %}
+"title": {{ site.name | append:append_title | smartify | jsonify }},
+{% endif %}
+
+{% if site.description %}
+"description": {{ site.description | jsonify }},
+{% endif %}
+
+"home_page_url": "{{ '/' | absolute_url }}",
+"feed_url": "{{ page.url | absolute_url }}",
+
+{% if site.author %}
+"author": {
+	"name": "{{ site.author.name | default: site.author }}",
+    "url": "{{ site.author.uri }}"
+},
+{% endif %}
+
+"icon": "{{ site.url }}/i/og-logo.png",
+"favicon": "{{ site.url }}/favicon.png",
+
+"expired": false,
