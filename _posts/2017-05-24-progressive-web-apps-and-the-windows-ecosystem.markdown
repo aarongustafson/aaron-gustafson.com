@@ -57,7 +57,7 @@ similar. In fact, if you’ve built an HWA, it shouldn’t be too difficult for 
 
 You’ll notice that from a quality, polish, and user experience perspective, they are nearly indistinguishable. And this is just the first iteration of Twitter Lite. It launched last month. The only real difference is that one was built using Web technologies and lives at a URL.
 
-Though [the "progressive web apps" moniker was coined by Frances Berriman in 2015](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/) and has quickly become a buzzword in our industry, it’s important to recognize that <strong data-quotable>this idea of the Web as native is not new</strong>. 
+Though [the "progressive web apps" moniker was coined by Frances Berriman in 2015](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/) and has quickly become a buzzword in our industry, it’s important to recognize that this idea of the Web as native is not new. 
 
 Back in 2007, [Adobe introduced Apollo](https://web.archive.org/web/20070322155954/http://www.adobe.com/aboutadobe/pressroom/pressreleases/200703/031907ApolloLabs.html), later renamed the Adobe Integrated Runtime (<abbr aria-title="also known as">a.k.a.</abbr> [Adobe AIR](http://www.adobe.com/products/air.html)). This technology enabled designers and developers to build native apps in Flash or using Web technologies—HTML, CSS and JavaScript. It was pretty revolutionary for the time, supporting drag & drop, menu bar integration, file management, and more.
 
@@ -141,8 +141,7 @@ Let me walk you through a very basic example of progressive enhancement in pract
 
 Here we have an email input field:
 
-	<input type="email" name="email" id="email"
-	       required aria-required="true">
+{% gist 4736993ee288156674c78d7e454146cf email-input.html embed %}
 
 The "email" field type was introduced in HTML5, so older browsers may not support it. Those that don’t will provide the default `input` type—a text field—to users. That’s totally fine—it’s all we had for more than a dozen years before HTML5 came along! But even if a user’s device does support email fields, it’s implementation may vary. Based on how a browser answers the following questions, users will end up with different experiences:
 
@@ -237,8 +236,7 @@ We are already using the Bing Crawler to identify PWAs on the Web for our PWA re
 We completely understand that some of you may not want your products automatically added to the Store and we respect that. 
 By adding these 2 lines to your site’s [`robots.txt` file](http://www.robotstxt.org/robotstxt.html), the Bing Crawler will ignore your Web App Manifest, opting your site out of this process:
 
-	User-agent: bingbot
-	Disallow: /manifest.json
+{% gist 4736993ee288156674c78d7e454146cf robots-opt-out.txt embed %}
 
 We are working on a set of criteria that will help us separate quality PWAs from sites that simply appear PWA-like. It’s still early days, but our consideration of what constitutes a "quality" PWA hinges on the following:
 

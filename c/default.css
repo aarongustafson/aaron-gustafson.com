@@ -1393,6 +1393,9 @@ html.wf-active div.gist a {
   position: relative;
   margin-right: -25%;
 }
+.quotable p::first-letter {
+  text-transform: capitalize;
+}
 .quotable:before, .quotable:after {
   display: block;
   position: absolute;

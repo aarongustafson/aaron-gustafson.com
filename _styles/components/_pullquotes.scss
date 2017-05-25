@@ -17,6 +17,10 @@
 		position: relative;
 		margin-right: -25%;
 
+		p::first-letter {
+			text-transform: capitalize;
+		}
+
 		&:before,
 		&:after {
 			display: block;
