@@ -257,15 +257,15 @@ PWAs will appear alongside native apps in the Store, with no differentiation. Fr
 
 Phew… that was a lot to take in. At this point, you might have some questions. Here are a few I imagine you’re wrestling with.
 
-### Should I forget everything I know and start building a Progressive Web App?
+**Should I forget everything I know and start building a Progressive Web App?**
 
 *No.* Progressive Web Apps are just one more way you can build a high-quality app experience. 
 
-### Will Microsoft drop support for my favorite programming language in favor of Progressive Web Apps?
+**Will Microsoft drop support for my favorite programming language in favor of Progressive Web Apps?**
 
 *No.* We are committed to supporting a breadth of language options when it comes to developing apps.
 
-### Are Progressive Web Apps the right choice for my project?
+**Are Progressive Web Apps the right choice for my project?**
 
 *Maybe.* When evaluating native app development in relation to Progressive Web Apps, here are some of the questions I recommend asking…
 
@@ -280,7 +280,7 @@ In other words, the choice between PWA and native should be evaluated on a case-
 * If you are maintaining a product on multiple native platforms in addition to the Web and they are all largely the same in terms of look & feel and capabilities, it may make more sense to focus all of your efforts on the Web version and go PWA.
 * If you are planning a brand new product and the Web provides all of the features you need (especially when you also consider the additional APIs provided via the host OS), building a PWA is probably going to be a faster, more cost-effective option. 
 
-### Should I consider Progressive Web Apps as a solid option when developing software for Windows?
+**Should I consider Progressive Web Apps as a solid option when developing software for Windows?**
 
 *Definitely.*
 
@@ -291,7 +291,7 @@ You probably have more questions. I’ll do my best to answer them in the commen
 [Slides from this talk](https://www.slideshare.net/AaronGustafson/progressive-web-apps-and-the-windows-ecosystem-build-2017) are available on [Slideshare](https://www.slideshare.net).
 
 <figure class="video-embed video-embed--16x9" id="figure-2017-05-24-13">  
-<iframe class="video-embed__video" src="//www.slideshare.net/slideshow/embed_code/key/InI5w0bH4JxCwW" frameborder="0"></iframe>  
+<iframe class="video-embed__video" src="//www.slideshare.net/slideshow/embed_code/key/InI5w0bH4JxCwW" frameborder="0"></iframe>
 </figure>
 
 ## Video
@@ -299,22 +299,5 @@ You probably have more questions. I’ll do my best to answer them in the commen
 [A video recording of this presentation](https://channel9.msdn.com/Events/Build/2017/B8075) (including Jeff’s demos) is available on [Channel 9](https://channel9.msdn.com).
 
 <figure class="video-embed video-embed--16x9" id="figure-2017-05-24-14">  
-<video class="video-embed__video" poster="//sec.ch9.ms/ch9/69d6/cde44404-854a-4c7a-aabd-e8d0af5d69d6/B8075_512.jpg" controls>
-<source src="//video.ch9.ms/ch9/69d6/cde44404-854a-4c7a-aabd-e8d0af5d69d6/B8075_high.mp4">
-<track src="//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=en" kind="captions" srclang="en" label="English">
-<track src="//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=cs" kind="subtitles" srclang="en" label="Česky">
-<track src="//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=de" kind="subtitles" srclang="en" label="Deutsch">
-<track src="//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=es" kind="subtitles" srclang="en" label="Español">
-<track src="//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=fr" kind="subtitles" srclang="en" label="Français">
-<track src="//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=it" kind="subtitles" srclang="en" label="Italiano">
-<track src="//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=ja" kind="subtitles" srclang="en" label="日本語">
-<track src="//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=ko" kind="subtitles" srclang="en" label="한국어">
-<track src="//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=pl" kind="subtitles" srclang="en" label="Polski">
-<track src="//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=pt" kind="subtitles" srclang="en" label="Português">
-<track src="//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=ru" kind="subtitles" srclang="en" label="Русский">
-<track src="//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=tr" kind="subtitles" srclang="en" label="Türkçe">
-<track src="//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=zh-cn" kind="subtitles" srclang="en" label="简体中文">
-<track src="//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=zh-tw" kind="subtitles" srclang="en" label="繁體中文">
-<p>Download it: <a href="//video.ch9.ms/ch9/69d6/cde44404-854a-4c7a-aabd-e8d0af5d69d6/B8075_high.mp4" download>High Quality MP4</a> or <a href="//video.ch9.ms/ch9/69d6/cde44404-854a-4c7a-aabd-e8d0af5d69d6/B8075.mp4" download>Low Quality MP4</a></p>
-</video>
+<iframe src="https://channel9.msdn.com/Events/Build/2017/B8075/player" allowFullScreen frameBorder="0"></iframe>
 </figure>
