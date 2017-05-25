@@ -24,6 +24,6 @@ I just came off stage from my talk at the [Microsoft Edge Web Summit](https://ch
 <figure class="video-embed video-embed--16x9" id="figure-2015-05-05-02">  
 <video class="video-embed__video" poster="//sec.ch9.ms/sessions/websummit/2015/GA05-LG.jpg" controls="">
 <source src="//video.ch9.ms/sessions/websummit/2015/GA05.mp4">
-<p>Download it: <a href="//video.ch9.ms/sessions/websummit/2015/GA05.mp4">High Quality MP4</a> or <a href="//video.ch9.ms/sessions/websummit/2015/GA05-mobile.mp4">Low Quality MP4</a></p>
+<p>Download it: <a href="//video.ch9.ms/sessions/websummit/2015/GA05.mp4" download>High Quality MP4</a> or <a href="//video.ch9.ms/sessions/websummit/2015/GA05-mobile.mp4" download>Low Quality MP4</a></p>
 </video>
 </figure>

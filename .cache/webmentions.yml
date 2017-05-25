@@ -1,31 +1,31 @@
 ---
-https://www.aaron-gustafson.com/notebook/a-grand-experiment/:
+http://localhost:4000/notebook/a-grand-experiment/:
 - http://octopress.org
 - https://github.com
 - https://pages.github.com/
 - https://github.com/aarongustafson/aarongustafson.github.io/
 - https://adaptivewebdesign.info
-https://www.aaron-gustafson.com/notebook/searching-for-the-right-size/:
+http://localhost:4000/notebook/searching-for-the-right-size/:
 - https://www.wired.com/2014/07/what-a-stalling-tablet-market-says-about-our-search-for-the-perfect-screen/
-https://www.aaron-gustafson.com/notebook/native-vs-stylable-tug-of-war/:
+http://localhost:4000/notebook/native-vs-stylable-tug-of-war/:
 - "//www.brucelawson.co.uk/2014/native-experience-vs-styling-select-boxes/"
 - http://d1b14unh5d6w7g.cloudfront.net/1590598563.01.S0ER.LXXXXXXX.jpg?Expires=1405686346&Signature=DCT4Z0l75JQESDNyP0PVGVonuJYwY9XYtaTI3grX/RhdlLcXGRAVADJCB/N/fAj7GxLhEVzuXqstMebJIJ9Ip5I6kE7IKYt2F20F5EGD+1ghua9zKwyjS1e4KBgumMKzQytbcfIVX4dMr7XFzj26mScFKz9bSKtZT5jU1LU6hWM=&Key-Pair-Id=APKAIUO27P366FGALUMQ
 - http://amzn.to/TaoffD
 - "//w3.org"
 - "//whatwg.org"
-https://www.aaron-gustafson.com/notebook/the-network-effect/:
+http://localhost:4000/notebook/the-network-effect/:
 - http://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/
 - https://www.youtube.com/watch?v=cBhZ6S0PFCY
 - http://en.wikipedia.org/wiki/Man-in-the-middle_attack
 - https://adactio.com/journal/6246
 - http://www.theguardian.com/technology/2014/jan/28/sky-broadband-blocks-jquery-web-critical-plugin
 - http://en.wikipedia.org/wiki/Demolition_derby
-https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/:
+http://localhost:4000/notebook/a-fundamental-disconnect/:
 - "//2014.blendconf.com/"
 - "//www.hanselman.com/"
 - "//dowebsitesneedtolookexactlythesameineverybrowser.com/"
 - "//aaron-gustafson.com/notebook/2014/the-network-effect/"
-https://www.aaron-gustafson.com/notebook/missed-connections/:
+http://localhost:4000/notebook/missed-connections/:
 - http://www.kryogenix.org/days/2014/09/19/fundamentally-connected
 - http://www.kryogenix.org
 - http://www.kryogenix.org/days/2014/09/19/fundamentally-connected/
@@ -35,12 +35,12 @@ https://www.aaron-gustafson.com/notebook/missed-connections/:
 - http://www.theguardian.com/technology/2014/jan/28/sky-broadband-blocks-jquery-web-critical-plugin
 - http://aaron-gustafson.com/notebook/2014/the-network-effect/
 - http://sealedabstract.com/rants/why-mobile-web-apps-are-slow/
-https://www.aaron-gustafson.com/notebook/responsive-typography/:
+http://localhost:4000/notebook/responsive-typography/:
 - https://twitter.com/jpamental
 - http://www.amazon.com/gp/product/1491907096/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1491907096&amp;linkCode=as2&amp;tag=easydesign-20&amp;linkId=JC6INFXF3DHODKEM
 - http://jasonsantamaria.com
 - http://www.abookapart.com/products/on-web-typography
-https://www.aaron-gustafson.com/notebook/google-embraces-progressive-enhancement/:
+http://localhost:4000/notebook/google-embraces-progressive-enhancement/:
 - http://googlewebmastercentral.blogspot.com/2014/10/updating-our-technical-webmaster.html
 - https://en.wikipedia.org/wiki/Progressive_enhancement
 - https://adaptivewebdesign.info
@@ -48,14 +48,14 @@ https://www.aaron-gustafson.com/notebook/google-embraces-progressive-enhancement
 - http://www.alistapart.com/articles/understandingprogressiveenhancement/
 - http://www.alistapart.com/articles/progressiveenhancementwithcss/
 - http://www.alistapart.com/articles/progressiveenhancementwithjavascript/
-https://www.aaron-gustafson.com/notebook/css-variables-are-a-bad-idea/:
+http://localhost:4000/notebook/css-variables-are-a-bad-idea/:
 - https://en.wikipedia.org/wiki/Don't_repeat_yourself
 - http://www.w3.org/TR/CSS21/intro.html
 - http://www.w3.org/TR/css-variables/
 - http://www.w3.org/TR/CSS21/syndata.html
 - http://caniuse.com/
 - https://en.wikipedia.org/wiki/Cascading_Style_Sheets
-https://www.aaron-gustafson.com/notebook/aria-quicktip-labelledby-vs-describedby/:
+http://localhost:4000/notebook/aria-quicktip-labelledby-vs-describedby/:
 - http://bdconf.com
 - http://adactio.com
 - http://www.slideshare.net/AaronGustafson/falling-in-love-with-forms-bdconf-2014
@@ -64,7 +64,7 @@ https://www.aaron-gustafson.com/notebook/aria-quicktip-labelledby-vs-describedby
 - https://twitter.com/stevefaulkner
 - http://rawgit.com/w3c/aria/master/html-aam/html-aam.html
 - https://code.google.com/p/google-axs-chrome/issues/detail?id=158&thanks=158&ts=1415202123
-https://www.aaron-gustafson.com/notebook/the-web-is-for-everyone/:
+http://localhost:4000/notebook/the-web-is-for-everyone/:
 - http://a11yqc.org/
 - http://www.InternetLiveStats.com
 - http://www.oecd.org/sti/broadband/oecdbroadbandportal.htm
@@ -82,7 +82,7 @@ https://www.aaron-gustafson.com/notebook/the-web-is-for-everyone/:
 - http://en.wikipedia.org/wiki/List_of_countries_by_English-speaking_population
 - https://en.wikipedia.org/wiki/Veil_of_ignorance
 - http://www.readspeaker.com/
-https://www.aaron-gustafson.com/notebook/what-do-we-own/:
+http://localhost:4000/notebook/what-do-we-own/:
 - http://adactio.com
 - https://adactio.com/journal/6801
 - http://indiewebcamp.com/
@@ -96,7 +96,7 @@ https://www.aaron-gustafson.com/notebook/what-do-we-own/:
 - http://www.danrichard.com/2014/03/30/p2lhosting-is-now-closed-thank-you-everyone/
 - http://webdesignfromscratch.com/blog/how-123reg-almost-crippled-my-business/
 - http://indiewebcamp.com/webmention
-https://www.aaron-gustafson.com/notebook/enabling-webmentions-in-jekyll/:
+http://localhost:4000/notebook/enabling-webmentions-in-jekyll/:
 - http://octopress.org/
 - https://github.com
 - https://disqus.com/websites/
@@ -115,7 +115,7 @@ https://www.aaron-gustafson.com/notebook/enabling-webmentions-in-jekyll/:
 - http://vanilla-js.com
 - http://www.w3.org/TR/websockets/
 - http://caniuse.com/
-https://www.aaron-gustafson.com/notebook/adaptive-images-in-expressionengine-with-ce-image/:
+http://localhost:4000/notebook/adaptive-images-in-expressionengine-with-ce-image/:
 - http://ricg.io
 - http://easy-designs.net
 - http://www.nichols.edu
@@ -129,7 +129,7 @@ https://www.aaron-gustafson.com/notebook/adaptive-images-in-expressionengine-wit
 - http://ericportis.com/
 - http://ericportis.com/posts/2014/srcset-sizes/
 - https://github.com/easy-designs/easy-lazy-images.js
-https://www.aaron-gustafson.com/notebook/indecisiveness-and-urls/:
+http://localhost:4000/notebook/indecisiveness-and-urls/:
 - https://twitter.com/shirleytemper
 - http://www.w3.org/Provider/Style/URI.html
 - https://en.wikipedia.org/wiki/HTTP_302
@@ -138,16 +138,16 @@ https://www.aaron-gustafson.com/notebook/indecisiveness-and-urls/:
 - https://github.com/aaronpk/webmention.io/issues/31
 - https://github.com/aarongustafson/jekyll-webmention_io
 - https://github.com/aarongustafson/jekyll-webmention_io/blob/master/webmention.Rakefile
-https://www.aaron-gustafson.com/notebook/visualizing-css3-transformations/:
+http://localhost:4000/notebook/visualizing-css3-transformations/:
 - http://dev.w3.org/csswg/css-transforms
 - http://codepen.io/aarongustafson/full/jEryLV/
 - http://caniuse.com/
-https://www.aaron-gustafson.com/notebook/autoplay-dont-do-it/:
+http://localhost:4000/notebook/autoplay-dont-do-it/:
 - https://gigaom.com/2014/09/04/facebooks-autoplay-has-led-to-a-60-boost-in-traffic-on-mobile-networks/
 - http://lanyrd.com/2013/uxlx/
 - https://www.facebook.com/help/633446180035470
 - http://www.w3.org/TR/netinfo-api/
-https://www.aaron-gustafson.com/notebook/we-need-more-empathy/:
+http://localhost:4000/notebook/we-need-more-empathy/:
 - http://www.zeldman.com/2014/12/28/unexamined-privilege-is-the-real-source-of-cruelty-in-facebooks-your-year-in-review/
 - http://www.slideshare.net/AaronGustafson/designing-with-empathy-breaking-development-nashville-2013
 - http://www.lukew.com/ff/entry.asp?1810
@@ -155,7 +155,7 @@ https://www.aaron-gustafson.com/notebook/we-need-more-empathy/:
 - http://arstechnica.com/business/2014/12/facebook-apologizes-for-morbid-results-with-its-year-in-review-nag/?comments=1&post=28196195
 - http://arstechnica.com/business/2014/12/facebook-apologizes-for-morbid-results-with-its-year-in-review-nag/?comments=1&post=28196709
 - http://www.deathanddigitallegacy.com/2010/08/05/twitter-recommends-dead-friends/
-https://www.aaron-gustafson.com/notebook/revisiting-and-releasing-adaptive-web-design/:
+http://localhost:4000/notebook/revisiting-and-releasing-adaptive-web-design/:
 - http://adaptivewebdesign.info
 - https://twitter.com/dirtystylus/status/530756679286423552
 - http://opengraphprotocol.org/
@@ -166,7 +166,7 @@ https://www.aaron-gustafson.com/notebook/revisiting-and-releasing-adaptive-web-d
 - http://www.w3.org/TR/components-intro/
 - https://adactio.com/journal/4956
 - http://adaptivewebdesign.info/1st-edition/
-https://www.aaron-gustafson.com/notebook/webos-is-back/:
+http://localhost:4000/notebook/webos-is-back/:
 - https://en.wikipedia.org/wiki/WebOS
 - http://msdn.microsoft.com/en-us/library/windows/apps/dn631758.aspx
 - https://marketplace.firefox.com/developers/
@@ -174,22 +174,22 @@ https://www.aaron-gustafson.com/notebook/webos-is-back/:
 - http://www.theverge.com/2013/2/25/4027814/hp-emerges-as-big-winner-in-webos-sale
 - http://www.lg.com/uk/smarttv/webos
 - http://gizmodo.com/lgs-new-smart-watch-is-powered-by-webos-1678191522
-https://www.aaron-gustafson.com/notebook/the-linkblog/: []
-https://www.aaron-gustafson.com/notebook/an-onslaught-of-low-cost-smartphones/:
+http://localhost:4000/notebook/the-linkblog/: []
+http://localhost:4000/notebook/an-onslaught-of-low-cost-smartphones/:
 - http://www.theverge.com/2015/1/14/7544107/microsoft-lumia-435-532-launch-specs-price-release-date
 - http://arstechnica.com/gadgets/2015/01/samsung-finally-puts-tizen-on-a-smartphone-launches-the-z1-in-india/
 - http://webfoundation.org/about/vision/
 - http://opendevicelab.com/
 - http://chadevicelab.org
 - http://lab-up.org/
-https://www.aaron-gustafson.com/notebook/spelling-errors-exclusions-and-packages-oh-my/:
+http://localhost:4000/notebook/spelling-errors-exclusions-and-packages-oh-my/:
 - http://www.w3.org/TR/2015/WD-css-pseudo-4-20150115
 - http://www.w3.org/TR/2015/WD-css3-exclusions-20150115/
 - https://www.w3.org/TR/2015/WD-css3-exclusions-20150115/images/exclusions-illustration.png
 - http://www.w3.org/TR/css-shapes-1/
 - http://www.w3.org/TR/2015/WD-web-packaging-20150115/
 - https://github.com/StartPolymer/polymer-single-page-app
-https://www.aaron-gustafson.com/notebook/egalitarianism/:
+http://localhost:4000/notebook/egalitarianism/:
 - http://www.merriam-webster.com/dictionary/egalitarianism
 - http://en.wikipedia.org/wiki/Golden_Rule
 - http://en.wikipedia.org/wiki/Dharavi
@@ -202,7 +202,7 @@ https://www.aaron-gustafson.com/notebook/egalitarianism/:
 - http://en.wikipedia.org/wiki/Game_theory
 - http://en.wikipedia.org/wiki/The_Communist_Manifesto
 - http://en.wikipedia.org/wiki/Typographical_error
-https://www.aaron-gustafson.com/notebook/competing-on-chrome/:
+http://localhost:4000/notebook/competing-on-chrome/:
 - http://news.microsoft.com/windows10story/
 - http://www.zdnet.com/article/ie7-and-standards-compliance-microsofts-chris-wilson-charts-progress/
 - https://twitter.com/cwilso
@@ -210,16 +210,16 @@ https://www.aaron-gustafson.com/notebook/competing-on-chrome/:
 - https://twitter.com/joebelfiore
 - http://www.operasoftware.com/smw/2014-04
 - https://ll.ms-studiosmedia.com/events/2015/1501/Windows10CP/live/Windows10CP.html?title=Windows10CP-mscom
-https://www.aaron-gustafson.com/notebook/creepy-namefellow/: []
-https://www.aaron-gustafson.com/notebook/sending-birthday-well-wishes-to-molly/:
+http://localhost:4000/notebook/creepy-namefellow/: []
+http://localhost:4000/notebook/sending-birthday-well-wishes-to-molly/:
 - http://molly.com
 - https://web.archive.org/web/20000229205046/http://www.molly.com/molly/news.html
 - http://webstandards.org
 - http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=books&keywords=molly%20holzschlag&linkCode=ur2&tag=easydesign-20&linkId=BDCVT2YGNT7BNCHR
 - http://www.gofundme.com/ThanksMols
-https://www.aaron-gustafson.com/notebook/the-one-weird-trick-that-takes-the-pain-out-of-cross-browser-testing/:
+http://localhost:4000/notebook/the-one-weird-trick-that-takes-the-pain-out-of-cross-browser-testing/:
 - https://twitter.com/decadecity/status/559693419808034816
-https://www.aaron-gustafson.com/notebook/ch-ch-ch-changes/:
+http://localhost:4000/notebook/ch-ch-ch-changes/:
 - http://easy-designs.net
 - http://techgoeshomecha.org/
 - http://adactio.com
@@ -229,7 +229,7 @@ https://www.aaron-gustafson.com/notebook/ch-ch-ch-changes/:
 - https://remote.modern.ie/
 - http://christianheilmann.com/2015/01/29/on-towards-my-next-challenge-2/
 - https://www.youtube.com/watch?v=YAIPCp_BOGU
-https://www.aaron-gustafson.com/notebook/three-worthwhile-posts-on-progressive-enhancement/:
+http://localhost:4000/notebook/three-worthwhile-posts-on-progressive-enhancement/:
 - http://sixtwothree.org/posts/designing-experience-layers
 - http://adaptivewebdesign.info/1st-edition/chapter-1.html
 - http://aaron-gustafson.com/notebook/a-fundamental-disconnect/
@@ -241,18 +241,18 @@ https://www.aaron-gustafson.com/notebook/three-worthwhile-posts-on-progressive-e
 - http://bradfrost.com/blog/mobile/support-vs-optimization/
 - http://blog.easy-designs.net/archives/the-true-cost-of-progressive-enhancement/
 - http://adaptivewebdesign.info/1st-edition/
-https://www.aaron-gustafson.com/notebook/i-dont-want-to-teach-the-world-to-code/:
+http://localhost:4000/notebook/i-dont-want-to-teach-the-world-to-code/:
 - http://blogs.hbr.org/2014/03/why-do-app-developers-still-live-with-their-moms/
-https://www.aaron-gustafson.com/notebook/who-should-pay/:
+http://localhost:4000/notebook/who-should-pay/:
 - http://sass-lang.com
 - https://twitter.com/chriseppstein/
 - https://twitter.com/chriseppstein/status/567756897105620992
 - http://compass-style.org/
 - http://blog.kaspersky.com/cost-aware/
-https://www.aaron-gustafson.com/notebook/consider-how-your-forms-read/:
+http://localhost:4000/notebook/consider-how-your-forms-read/:
 - http://www.radiolab.org/story/trust-engineers/
 - https://www.facebook.com/help/189722821075378
-https://www.aaron-gustafson.com/notebook/apple-business-and-standards/:
+http://localhost:4000/notebook/apple-business-and-standards/:
 - http://www.codeandcreativity.com/events/2015-02-24
 - https://twitter.com/lwelchman
 - http://en.wikipedia.org/wiki/Browser_wars
@@ -269,18 +269,18 @@ https://www.aaron-gustafson.com/notebook/apple-business-and-standards/:
 - http://caniuse.com/
 - https://html.spec.whatwg.org/multipage/forms.html
 - https://adactio.com/journal/5442/
-https://www.aaron-gustafson.com/notebook/who-should-pay-2-the-hosting/:
+http://localhost:4000/notebook/who-should-pay-2-the-hosting/:
 - http://aaron-gustafson.com/notebook/who-should-pay/
 - https://ellislab.com/blog/entry/save-thousands-of-dollars-by-paying-more-for-hosting
 - http://www.nytimes.com/2012/03/01/technology/impatient-web-users-flee-slow-loading-sites.html?pagewanted=all&_r=0
-https://www.aaron-gustafson.com/notebook/bidding-farewell-to-shirley-the-goat/:
+http://localhost:4000/notebook/bidding-farewell-to-shirley-the-goat/:
 - http://webstandardssherpa.com/
 - http://webstandardssherpa.com/about/
 - http://webstandardssherpa.com/reviews/
 - http://webstandardssherpa.com/ask-the-sherpas/
 - http://environmentsforhumans.com/
 - http://environmentsforhumans.com/2015/web-sherpa-summit/
-https://www.aaron-gustafson.com/notebook/lines-in-the-sand/:
+http://localhost:4000/notebook/lines-in-the-sand/:
 - http://breakupwithie8.com/
 - http://www.humaan.com/
 - http://www.networkworld.com/article/2224510/microsoft-subnet/some-windows-xp-users-just-can-t-afford-to-upgrade.html
@@ -291,12 +291,12 @@ https://www.aaron-gustafson.com/notebook/lines-in-the-sand/:
 - http://dowebsitesneedtolookexactlythesameineverybrowser.com/
 - http://www.slideshare.net/bryanrieger/rethinking-the-mobile-web-by-yiibu/79
 - http://www.quirksmode.org/css/condcom.html
-https://www.aaron-gustafson.com/notebook/quantity-queries-where-have-you-been-all-my-life/:
+http://localhost:4000/notebook/quantity-queries-where-have-you-been-all-my-life/:
 - http://twitter.com/heydonworks
 - http://alistapart.com/article/quantity-queries-for-css
 - https://twitter.com/danielguillan
 - https://github.com/danielguillan/quantity-queries
-https://www.aaron-gustafson.com/notebook/playing-with-flexbox-and-quantity-queries/:
+http://localhost:4000/notebook/playing-with-flexbox-and-quantity-queries/:
 - http://twitter.com/heydonworks
 - http://alistapart.com/article/quantity-queries-for-css
 - http://www.w3.org/TR/css-flexbox-1/
@@ -306,9 +306,9 @@ https://www.aaron-gustafson.com/notebook/playing-with-flexbox-and-quantity-queri
 - http://codepen.io/aarongustafson/pen/VYRZBP
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - http://caniuse.com/
-https://www.aaron-gustafson.com/notebook/how-to-apply-progressive-enhancement-when-javascript-seems-like-a-requirement/:
+http://localhost:4000/notebook/how-to-apply-progressive-enhancement-when-javascript-seems-like-a-requirement/:
 - http://stackoverflow.com/users/4719194/jamham
-https://www.aaron-gustafson.com/notebook/honoringwebfolk/:
+http://localhost:4000/notebook/honoringwebfolk/:
 - https://twitter.com/mollydotcom/status/586187780113309697
 - https://twitter.com/aarongustafson/status/586230733070589952
 - https://twitter.com/aarongustafson/status/586230809260118016
@@ -325,19 +325,19 @@ https://www.aaron-gustafson.com/notebook/honoringwebfolk/:
 - https://twitter.com/aarongustafson/status/586233486081662976
 - https://twitter.com/aarongustafson/status/586233939708276737
 - https://twitter.com/hashtag/HonoringWebFolk?src=hash
-https://www.aaron-gustafson.com/notebook/tips-for-surviving-googles-mobilegeddon/:
+http://localhost:4000/notebook/tips-for-surviving-googles-mobilegeddon/:
 - http://www.economist.com/news/business-and-finance/21648947-worlds-biggest-search-engine-shakes-up-its-algorithms-mobilegeddon
 - https://getpebble.com/
 - http://webstandardssherpa.com/reviews/responsive-retrofitting/
 - http://www.filamentgroup.com/lab/ajax-includes-modular-content.html
 - https://ericportis.com/posts/2014/srcset-sizes/
 - http://alistapart.com/article/understandingprogressiveenhancement
-https://www.aaron-gustafson.com/notebook/lies-damn-lies-and-javascript/:
+http://localhost:4000/notebook/lies-damn-lies-and-javascript/:
 - https://twitter.com/graemepyle
 - https://www.fnb.co.za/
 - http://search.cpan.org/~lgoddard/CGI-ProgressBar-0.05/lib/CGI/ProgressBar.pm
 - http://www.w3.org/TR/websockets/
-https://www.aaron-gustafson.com/notebook/collected-reactions-to-build/:
+http://localhost:4000/notebook/collected-reactions-to-build/:
 - "//build/](http://aka.ms/ktlsyd"
 - https://www.microsoft.com/en-us/windows/browser-for-doing
 - https://www.microsoft.com/microsoft-hololens/en-us
@@ -350,24 +350,24 @@ https://www.aaron-gustafson.com/notebook/collected-reactions-to-build/:
 - http://www.amazon.com/Cinemizer-1909-127-Multimedia-Video-Glasses/dp/B0091OI530/
 - http://techcrunch.com/2015/04/30/hololens-is-real/
 - http://www.wired.com/2015/05/microsofts-one-billion-device-vision-genius-next-impossible/
-https://www.aaron-gustafson.com/notebook/lessons-learned-from-atari/:
+http://localhost:4000/notebook/lessons-learned-from-atari/:
 - http://www.slashfilm.com/watch-atari-game-over/
 - https://twitter.com/seamusblackley
 - http://en.wikipedia.org/wiki/Howard_Scott_Warshaw
-https://www.aaron-gustafson.com/notebook/slides-from-my-talk-at-number-msedgesummit/:
+http://localhost:4000/notebook/slides-from-my-talk-at-number-msedgesummit/:
 - https://channel9.msdn.com/Events/WebPlatformSummit/2015
 - https://channel9.msdn.com/Events/WebPlatformSummit/2015/Falling-in-love-with-forms
 - "//www.slideshare.net/slideshow/embed_code/key/H1xKkpN0KIoXq3"
 - "//sec.ch9.ms/sessions/websummit/2015/GA05-LG.jpg"
 - "//video.ch9.ms/sessions/websummit/2015/GA05.mp4"
 - "//video.ch9.ms/sessions/websummit/2015/GA05-mobile.mp4"
-https://www.aaron-gustafson.com/notebook/url-inception/:
+http://localhost:4000/notebook/url-inception/:
 - https://m.facebook.com/ClydesOnMain?refsrc=https%3A%2F%2Fwww.facebook.com%2FClydesOnMain
-https://www.aaron-gustafson.com/notebook/interface-experience-maps/:
+http://localhost:4000/notebook/interface-experience-maps/:
 - https://web.archive.org/web/20070515221318/http://2007.sxsw.com/interactive/programming/panels/?action=show&id=IAP060214
 - https://twitter.com/sarahbeee
 - https://www.facebook.com/events/804756366246427/
-https://www.aaron-gustafson.com/notebook/bringing-sanity-and-order-to-device-testing/:
+http://localhost:4000/notebook/bringing-sanity-and-order-to-device-testing/:
 - http://www.engadget.com/2015/04/29/microsoft-edge/
 - http://www.pcadvisor.co.uk/reviews/mobile-phone/3504276/yotaphone-2-review-uk-dual-screen-smartphone/
 - http://www.engadget.com/products/microsoft/surface/3/
@@ -408,7 +408,7 @@ https://www.aaron-gustafson.com/notebook/bringing-sanity-and-order-to-device-tes
 - http://www.windowscentral.com/have-39-spare-then-pick-odd-sylvania-7-netbook-windows-ce
 - http://alistapart.com/blog/post/getting-started-with-pattern-libraries
 - http://ianfeather.co.uk/a-maintainable-style-guide/
-https://www.aaron-gustafson.com/notebook/where-do-we-go-from-here/:
+http://localhost:4000/notebook/where-do-we-go-from-here/:
 - https://huffduffer.com/adactio/243780
 - http://www.alistapart.com/articles/dao/
 - http://alistapart.com/article/understandingprogressiveenhancement
@@ -437,7 +437,7 @@ https://www.aaron-gustafson.com/notebook/where-do-we-go-from-here/:
 - http://www.theubi.com/
 - https://decadecity.net/blog/2015/06/19/aaron-gustafson-where-do-we-go-here
 - https://hiddedevries.nl/en/blog/2015-06-20-responsive-day-out-3-the-final-breakpoint/
-https://www.aaron-gustafson.com/notebook/harvard-and-mit-and-captioning/:
+http://localhost:4000/notebook/harvard-and-mit-and-captioning/:
 - http://www.ada.gov/briefs/harvard_soi.pdf
 - http://www.ada.gov/briefs/mit_soi.pdf
 - https://support.google.com/youtube/answer/3038280
@@ -449,11 +449,11 @@ https://www.aaron-gustafson.com/notebook/harvard-and-mit-and-captioning/:
 - http://caniuse.com/
 - https://support.google.com/youtube/answer/2734796
 - http://screenfont.ca/learn/
-https://www.aaron-gustafson.com/notebook/unum-releases-their-pattern-libraries/:
+http://localhost:4000/notebook/unum-releases-their-pattern-libraries/:
 - http://www.unum.com/
 - http://toolkit.unumux.com
 - http://toolkit.coloniallifeux.com
-https://www.aaron-gustafson.com/notebook/ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web/:
+http://localhost:4000/notebook/ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web/:
 - http://www.quirksmode.org/about/
 - http://www.quirksmode.org/blog/archives/2015/07/stop_pushing_th.html
 - https://jakearchibald.com/2015/if-we-stand-still-we-go-backwards/
@@ -485,15 +485,15 @@ https://www.aaron-gustafson.com/notebook/ramblings-on-new-browser-features-inter
 - http://www.yottaa.com/bid/277715/Why-Your-Website-Is-Slow-Poor-JavaScript-Performance
 - http://farukat.es/journal/2015/02/708-how-flipboard-chose-form-over-function-their-web-version
 - http://sighjavascript.tumblr.com/
-https://www.aaron-gustafson.com/notebook/web-design-101-100-percent-tappable/: []
-https://www.aaron-gustafson.com/notebook/my-trip-to-18f/:
+http://localhost:4000/notebook/web-design-101-100-percent-tappable/: []
+http://localhost:4000/notebook/my-trip-to-18f/:
 - https://18f.gsa.gov/2015/08/26/aaron-gustafson-beyond-responsive-design/
 - https://18f.gsa.gov/tags/speaker-series/
 - https://youtu.be/Fu1L34TLUHM
 - http://www.slideshare.net/AaronGustafson/beyond-responsive-18f-2015
 - "//www.slideshare.net/slideshow/embed_code/key/7jsUtSzGEqFyKj"
 - http://www.digitalgov.gov/2015/08/25/trends-on-tuesday-web-standards-advocate-advises-adaptive-web-design-for-government-sites/
-https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-pages/:
+http://localhost:4000/notebook/more-proof-we-dont-control-our-web-pages/:
 - http://www.aaron-gustafson.com/notebook/the-network-effect/
 - http://www.theguardian.com/technology/2014/jan/28/sky-broadband-blocks-jquery-web-critical-plugin
 - http://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/
@@ -503,7 +503,7 @@ https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-page
 - http://www.cnet.com/au/news/samsung-smart-tvs-forcing-ads-into-video-streaming-apps/
 - http://pleckey.me/blog/2013/09/11/sprint-mobile-broadband-injecting-3rd-party-javascript/
 - http://www.ecommercetimes.com/story/82117.html
-https://www.aaron-gustafson.com/notebook/moved-to-https/:
+http://localhost:4000/notebook/moved-to-https/:
 - https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-pages/
 - https://github.com/
 - https://pages.github.com/
@@ -518,7 +518,7 @@ https://www.aaron-gustafson.com/notebook/moved-to-https/:
 - https://adactio.com/articles/7435
 - https://github.com/aarongustafson/aarongustafson.github.io/tree/source
 - https://github.com/aarongustafson/aarongustafson.github.io/tree/master
-https://www.aaron-gustafson.com/notebook/strapless/:
+http://localhost:4000/notebook/strapless/:
 - https://twitter.com/ShirleyTemper
 - https://twitter.com/hellofisher
 - https://twitter.com/yeseniaa
@@ -532,7 +532,7 @@ https://www.aaron-gustafson.com/notebook/strapless/:
 - https://gist.github.com/aarongustafson/081d6e950c1f2cc57e22
 - https://chrome.google.com/webstore/detail/strapless/ninnlimehlghihnalgelhhafbmhlhojg
 - http://crossrider.com/download/ff/79799
-https://www.aaron-gustafson.com/notebook/on-adaptive-web-designs-second-edition/:
+http://localhost:4000/notebook/on-adaptive-web-designs-second-edition/:
 - https://adaptivewebdesign.info/2nd-edition/
 - https://adaptivewebdesign.info/2nd-edition/cover-320.jpg
 - https://adaptivewebdesign.info/2nd-edition/cover-600.jpg
@@ -544,7 +544,7 @@ https://www.aaron-gustafson.com/notebook/on-adaptive-web-designs-second-edition/
 - http://adaptivewebdesign.info/2nd-edition/read/foreword.html
 - http://adaptivewebdesign.info/2nd-edition/reviews/
 - http://blog.easy-designs.net/archives/on-adaptive-vs-responsive-web-design/
-https://www.aaron-gustafson.com/notebook/crossposting-to-medium-from-jekyll/:
+http://localhost:4000/notebook/crossposting-to-medium-from-jekyll/:
 - https://adactio.com/journal/9694
 - https://github.com/Medium/medium-api-docs
 - https://medium.com
@@ -552,7 +552,7 @@ https://www.aaron-gustafson.com/notebook/crossposting-to-medium-from-jekyll/:
 - http://octopress.org/
 - http://jekyllrb.com/docs/plugins/
 - https://github.com/aarongustafson/jekyll-crosspost_to_medium
-https://www.aaron-gustafson.com/notebook/excellent-speakers-for-your-next-tech-event/:
+http://localhost:4000/notebook/excellent-speakers-for-your-next-tech-event/:
 - http://thenextweb.com/insider/2015/10/27/the-100-tech-business-women-speakers-you-need-at-your-next-event/
 - http://codeandcreativity.com
 - http://www.codeandcreativity.com/events/
@@ -798,7 +798,7 @@ https://www.aaron-gustafson.com/notebook/excellent-speakers-for-your-next-tech-e
 - http://lanyrd.com/profile/cydharrell/
 - https://about.me/mollydotcom
 - http://articulate-network.lanyrd.com/speakers/
-https://www.aaron-gustafson.com/notebook/future-of-web-design-and-oredev/:
+http://localhost:4000/notebook/future-of-web-design-and-oredev/:
 - https://futureofwebdesign.com/nyc-2015/
 - http://lanyrd.com/2015/oredev/
 - http://www.slideshare.net/AaronGustafson/falling-in-love-with-forms-redev-2015
@@ -809,7 +809,7 @@ https://www.aaron-gustafson.com/notebook/future-of-web-design-and-oredev/:
 - http://cargocollective.com/mattsutter
 - http://www.slideshare.net/AaronGustafson/there-are-no-buts-in-progressive-enhancement-redev-2015
 - https://vimeo.com/144979022
-https://www.aaron-gustafson.com/notebook/labeled-with-love/:
+http://localhost:4000/notebook/labeled-with-love/:
 - https://www.aaron-gustafson.com/notebook/consider-how-your-forms-read/
 - http://www.radiolab.org/story/trust-engineers/
 - https://developer.mozilla.org/docs/Web/CSS/Type_selectors
@@ -819,10 +819,10 @@ https://www.aaron-gustafson.com/notebook/labeled-with-love/:
 - http://webstandardssherpa.com
 - http://tympanus.net/codrops/2015/01/08/inspiration-text-input-effects/
 - http://arstechnica.com/security/2015/10/verizons-zombie-cookie-gets-new-life/
-https://www.aaron-gustafson.com/notebook/adaptive-web-design-folded-and-gathered/:
+http://localhost:4000/notebook/adaptive-web-design-folded-and-gathered/:
 - https://www.linkedin.com/pub/tracey-croom/13/a6/985
 - http://adaptivewebdesign.info/2nd-edition/
-https://www.aaron-gustafson.com/notebook/speeding-things-up-with-service-worker-resource-hints-and-more/:
+http://localhost:4000/notebook/speeding-things-up-with-service-worker-resource-hints-and-more/:
 - https://www.aaron-gustafson.com/notebook/links/
 - https://adactio.com/journal/9775
 - https://css-tricks.com/serviceworker-for-offline/
@@ -845,7 +845,7 @@ https://www.aaron-gustafson.com/notebook/speeding-things-up-with-service-worker-
 - https://gds.blog.gov.uk/2013/10/21/how-many-people-are-missing-out-on-javascript-enhancement/
 - https://gist.github.com/aarongustafson/b98add8f3580f6707cf5
 - https://github.com/aarongustafson/aarongustafson.github.io/blob/source/plugins/gist_tag.rb
-https://www.aaron-gustafson.com/notebook/avoiding-linkrot-in-print-with-the-help-of-perma-dot-cc/:
+http://localhost:4000/notebook/avoiding-linkrot-in-print-with-the-help-of-perma-dot-cc/:
 - https://en.wikipedia.org/wiki/Link_rot
 - http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=9282809&fileId=S1472669614000255/
 - http://adaptivewebdesign.info/2nd-edition/
@@ -858,28 +858,28 @@ https://www.aaron-gustafson.com/notebook/avoiding-linkrot-in-print-with-the-help
 - http://mattphillips.info/
 - https://twitter.com/abziegler
 - http://jackcushman.org/
-https://www.aaron-gustafson.com/notebook/affirming-user-choice-with-checkboxes/:
+http://localhost:4000/notebook/affirming-user-choice-with-checkboxes/:
 - https://online.americanexpress.com/myca/logon/us/action/LogonHandler?request_type=LogonHandler&Face=en_US
 - https://www.aaron-gustafson.com/notebook/labeled-with-love/
 - http://chadevicelab.org/book-time
 - https://github.com/easy-designs/easy-checkbox-required.js
 - https://order.subway.com
-https://www.aaron-gustafson.com/notebook/apple-support-honeybadger/:
+http://localhost:4000/notebook/apple-support-honeybadger/:
 - http://www.imore.com/iphone-6-screen-replacement-how-to
 - https://www.etechparts.com/lcd-screen-and-digitizer-full-assembly-with-small-parts-black-for-iphone-6.html
-https://www.aaron-gustafson.com/notebook/progressive-enhancement-gets-a-conference/:
+http://localhost:4000/notebook/progressive-enhancement-gets-a-conference/:
 - http://enhanceconf.com/
 - https://twitter.com/simonmcmanus
 - http://www.thersa.org/
 - http://enhanceconf.com/tickets.html
 - http://enhanceconf.com/workshop.html
 - https://simonmcmanus.wordpress.com/2016/02/14/enhanceconf-scholarship/
-https://www.aaron-gustafson.com/notebook/planning-adaptive-interfaces-the-workshop/:
+http://localhost:4000/notebook/planning-adaptive-interfaces-the-workshop/:
 - http://alistapart.com/article/responsive-web-design
 - https://abookapart.com/products/responsive-web-design
 - http://enhanceconf.com/workshop.html
 - https://buildright.io/maker-series/2016/aaron-gustafson
-https://www.aaron-gustafson.com/notebook/learn-from-the-past-enhance-for-the-future/:
+http://localhost:4000/notebook/learn-from-the-past-enhance-for-the-future/:
 - http://www.dustindiaz.com/naked-day/
 - https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit
 - https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-voice-design-best-practices
@@ -888,7 +888,7 @@ https://www.aaron-gustafson.com/notebook/learn-from-the-past-enhance-for-the-fut
 - https://www.stmarys-ca.edu/sites/default/files/attachments/files/On_The_Method_of_Theoretical_Physics.pdf
 - https://books.google.com/books?id=prDfAFjet9cC&lpg=PR7&ots=PA9rRog4cr&dq=How%20a%20%E2%80%98Difficult%E2%80%99%20Composer%20Gets%20That%20Way&pg=PA230
 - https://gds.blog.gov.uk/2014/07/28/doing-the-hard-work-to-make-things-simple/
-https://www.aaron-gustafson.com/notebook/an-event-apart-nashville-2016-day-one/:
+http://localhost:4000/notebook/an-event-apart-nashville-2016-day-one/:
 - http://www.zeldman.com/
 - http://adaptivewebdesign.info/2nd-edition/
 - http://www.webstandards.org/about/members/
@@ -910,7 +910,7 @@ https://www.aaron-gustafson.com/notebook/an-event-apart-nashville-2016-day-one/:
 - http://cameronmoll.com/
 - https://twitter.com/search?q=%23aeansh&src=typd
 - https://storify.com/AaronGustafson/reactions-and-takeaways-from-my-aeansh-talk
-https://www.aaron-gustafson.com/notebook/offline-first-love-the-idea-hate-the-name/:
+http://localhost:4000/notebook/offline-first-love-the-idea-hate-the-name/:
 - https://twitter.com/misprintedtype
 - http://hood.ie/
 - https://vimeo.com/103221949
@@ -923,7 +923,7 @@ https://www.aaron-gustafson.com/notebook/offline-first-love-the-idea-hate-the-na
 - http://www.dynamicdrive.com/forums/showthread.php?62807-Run-Website-from-a-Flashdrive-or-CD
 - https://gds.blog.gov.uk/2013/10/21/how-many-people-are-missing-out-on-javascript-enhancement/
 - http://kryogenix.org/code/browser/everyonehasjs.html
-https://www.aaron-gustafson.com/notebook/my-top-takeaways-from-the-edge-web-summit-2016/:
+http://localhost:4000/notebook/my-top-takeaways-from-the-edge-web-summit-2016/:
 - http://lanyrd.com/2016/edgesummit/
 - https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/
 - https://developer.microsoft.com/en-us/microsoft-edge/platform/data/
@@ -953,7 +953,7 @@ https://www.aaron-gustafson.com/notebook/my-top-takeaways-from-the-edge-web-summ
 - https://www.microsoft.com/en-us/windows/Continuum
 - https://blogs.windows.com/windowsexperience/2016/03/30/windows-10-anniversary-update-brings-new-experiences-and-developer-opportunity/
 - https://insider.windows.com/
-https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/:
+http://localhost:4000/notebook/the-web-should-just-work-for-everyone/:
 - http://lanyrd.com/2016/edgesummit/
 - http://www.who.int/topics/disabilities/en/
 - https://en.wikipedia.org/wiki/John_Rawls
@@ -982,13 +982,13 @@ https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/:
 - http://www.inclusivedesigntoolkit.com/betterdesign2/whatis/whatis.html
 - https://blogs.windows.com/msedgedev/
 - https://channel9.msdn.com/Events/WebPlatformSummit/edgesummit2016/ES1612
-https://www.aaron-gustafson.com/notebook/what-are-keys-to-success/:
+http://localhost:4000/notebook/what-are-keys-to-success/:
 - http://www.imdb.com/title/tt0223897/
-https://www.aaron-gustafson.com/notebook/the-web-is-messy-and-beautiful/:
+http://localhost:4000/notebook/the-web-is-messy-and-beautiful/:
 - https://hueniverse.com
 - https://hueniverse.com/2016/06/08/the-fucking-open-web/
 - https://hueniverse.com/2016/06/20/the-open-web-fuck-yeah/
-https://www.aaron-gustafson.com/notebook/what-would-you-do-with-10kb/:
+http://localhost:4000/notebook/what-would-you-do-with-10kb/:
 - https://twitter.com/stewart
 - http://web.archive.org/web/20000510010054/http:/www.sylloge.com/5k/home.html
 - http://alistapart.com/article/5k
@@ -1010,7 +1010,7 @@ https://www.aaron-gustafson.com/notebook/what-would-you-do-with-10kb/:
 - https://twitter.com/SaraSoueidan
 - https://a-k-apart.com/legal
 - https://a-k-apart.com/hi
-https://www.aaron-gustafson.com/notebook/im-voting-for-oscar/:
+http://localhost:4000/notebook/im-voting-for-oscar/:
 - http://www.ibtimes.com/shopping-while-black-americas-retailers-know-they-have-racial-profiling-problem-now-2222778
 - http://blogs.edweek.org/teachers/teaching_now/2016/03/bias.html
 - http://www.nytimes.com/2016/08/11/us/heres-how-racial-bias-plays-out-in-policing.html
@@ -1023,7 +1023,7 @@ https://www.aaron-gustafson.com/notebook/im-voting-for-oscar/:
 - http://www.cbsnews.com/news/trump-paints-apocalyptic-picture-of-racial-tensions-in-u-s/
 - http://www.sacbee.com/opinion/editorials/article99304487.html
 - http://www.nytimes.com/2016/07/24/opinion/sunday/is-donald-trump-a-racist.html
-https://www.aaron-gustafson.com/notebook/progressive-misconceptions/:
+http://localhost:4000/notebook/progressive-misconceptions/:
 - https://nolanlawson.com/
 - https://nolanlawson.com/2016/10/13/progressive-enhancement-isnt-dead-but-it-smells-funny/
 - http://hesketh.com/publications/inclusive_web_design_for_the_future.html
@@ -1045,7 +1045,7 @@ https://www.aaron-gustafson.com/notebook/progressive-misconceptions/:
 - https://www.smashingmagazine.com/2016/05/developing-dependency-awareness/
 - https://www.baldurbjarnason.com/notes/debating-web-development/
 - http://gizmodo.com/website-opts-to-buy-customers-new-computers-rather-than-1513186669
-https://www.aaron-gustafson.com/notebook/one-persons-bloat-dot-dot-dot/:
+http://localhost:4000/notebook/one-persons-bloat-dot-dot-dot/:
 - http://www.webbloatscore.com/
 - https://www.webpagetest.org/
 - https://whatdoesmysitecost.com/
@@ -1057,7 +1057,7 @@ https://www.aaron-gustafson.com/notebook/one-persons-bloat-dot-dot-dot/:
 - http://slimerjs.org/
 - https://github.com/filamentgroup/loadCSS
 - https://github.com/filamentgroup/loadJS
-https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/:
+http://localhost:4000/notebook/mac-like-special-characters-in-windows/:
 - http://tools.oratory.com/altcodes.html
 - https://thejournal.com/articles/2016/01/26/how-to-create-keyboard-shortcuts-for-special-characters-in-windows-10.aspx
 - https://autohotkey.com/
@@ -1069,7 +1069,7 @@ https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
 - https://twitter.com/search?q=%23davegoeswindows
 - https://snook.ca/archives/other/running-into-windows
 - http://danielmall.com/articles/opening-windows/
-https://www.aaron-gustafson.com/notebook/ten-years-on-twitter/:
+http://localhost:4000/notebook/ten-years-on-twitter/:
 - https://twitter.com/AaronGustafson/statuses/61946
 - https://twitter.com/adactio
 - https://twitter.com/andybudd
@@ -1107,7 +1107,7 @@ https://www.aaron-gustafson.com/notebook/ten-years-on-twitter/:
 - http://tapbots.com/tweetbot/
 - https://tweetdeck.twitter.com/
 - https://adactio.com/journal/11436
-https://www.aaron-gustafson.com/notebook/insert-clickbait-headline-about-progressive-enhancement-here/:
+http://localhost:4000/notebook/insert-clickbait-headline-about-progressive-enhancement-here/:
 - https://www.viget.com/articles/the-case-against-progressive-enhancements-flimsy-moral-foundation
 - https://en.wikipedia.org/wiki/You're_either_with_us,_or_against_us
 - https://en.wikipedia.org/wiki/Law_School_Admission_Test
@@ -1149,20 +1149,20 @@ https://www.aaron-gustafson.com/notebook/insert-clickbait-headline-about-progres
 - https://www.baldurbjarnason.com/
 - https://sixtwothree.org/
 - https://timkadlec.com/
-https://www.aaron-gustafson.com/notebook/lessons-in-averaging/:
+http://localhost:4000/notebook/lessons-in-averaging/:
 - http://99percentinvisible.org/episode/on-average/
 - https://en.wikipedia.org/wiki/Platonic_idealism
 - https://developers.google.com/web/tools/lighthouse/audits/time-to-interactive
 - https://en.wikipedia.org/wiki/Factory_second
 - http://alistapart.com/article/understandingprogressiveenhancement
-https://www.aaron-gustafson.com/notebook/looking-for-a-mentor/:
+http://localhost:4000/notebook/looking-for-a-mentor/:
 - http://www.molly.com/
 - http://www.zeldman.com/
 - http://alistapart.com/
 - http://happycog.com/
 - https://adactio.com/
 - https://www.aaron-gustafson.com/contact/
-https://www.aaron-gustafson.com/notebook/any-advice-on-moving-from-octopress-to-jekyll/:
+http://localhost:4000/notebook/any-advice-on-moving-from-octopress-to-jekyll/:
 - http://octopress.org/
 - https://jekyllrb.com/
 - https://indieweb.org/Webmention
@@ -1171,7 +1171,7 @@ https://www.aaron-gustafson.com/notebook/any-advice-on-moving-from-octopress-to-
 - http://rake.rubyforge.org/
 - http://idratherbewriting.com/2015/11/04/jekyll-30-released-incremental-regeneration-rocks/
 - https://travis-ci.org/
-https://www.aaron-gustafson.com/notebook/crossing-a-border/:
+http://localhost:4000/notebook/crossing-a-border/:
 - https://www.theatlantic.com/technology/archive/2017/02/a-nasa-engineer-is-required-to-unlock-his-phone-at-the-border/516489/
 - https://www.cnet.com/news/border-patrol-agents-checking-facebook-profiles-trump-immigration-ban/
 - http://www.cnn.com/2017/01/29/politics/donald-trump-immigrant-policy-social-media-contacts/
@@ -1198,7 +1198,7 @@ https://www.aaron-gustafson.com/notebook/crossing-a-border/:
 - https://blog.shermanstravel.com/author/dmurph/
 - http://rachelnabors.com/
 - https://medium.com/@rachelnabors/wtfuk-73009d5623b4
-https://www.aaron-gustafson.com/notebook/why-do-you-love-the-web/:
+http://localhost:4000/notebook/why-do-you-love-the-web/:
 - https://www.aaron-gustafson.com/notebook/looking-for-a-mentor/
 - https://sufferingasaservice.com/growing-up-online-penpals-and-php-d55844944ee4
 - https://www.linkedin.com/pulse/web-why-do-i-like-rina-henderson
@@ -1214,14 +1214,14 @@ https://www.aaron-gustafson.com/notebook/why-do-you-love-the-web/:
 - http://tabassum.com/blog/day-16-career-goals
 - http://brianbell.me/2017/the-puddle-jumper/
 - http://six03.com/2017/mentoring/
-https://www.aaron-gustafson.com/notebook/moved-from-octopress-to-jekyll/:
+http://localhost:4000/notebook/moved-from-octopress-to-jekyll/:
 - http://octopress.org/
 - https://jekyllrb.com/
 - https://github.com/octopress/octopress
 - https://jekyllrb.com/docs/collections/
 - https://github.com/sverrirs/jekyll-paginate-v2
 - https://github.com/pattex/jekyll-tagging
-https://www.aaron-gustafson.com/notebook/trypod/:
+http://localhost:4000/notebook/trypod/:
 - https://twitter.com/search?q=%23trypod
 - http://www.wnyc.org/shows/notetoself
 - http://www.manoushz.com/
@@ -1259,12 +1259,12 @@ https://www.aaron-gustafson.com/notebook/trypod/:
 - http://5by5.tv/bigwebshow
 - http://www.radiolab.org/series/podcasts/
 - https://gimletmedia.com/crimetown/
-https://www.aaron-gustafson.com/notebook/pondering-fallback-content/:
+http://localhost:4000/notebook/pondering-fallback-content/:
 - https://developer.mozilla.org/docs/Web/HTML/Supported_media_formats
 - https://html.spec.whatwg.org/
 - https://twitter.com/aarongustafson/status/847475329065041921
 - http://codepen.io/aarongustafson/pen/BWVbLG
-https://www.aaron-gustafson.com/notebook/PWAs-and-desktop/:
+http://localhost:4000/notebook/PWAs-and-desktop/:
 - https://developers.google.com/web/progressive-web-apps/
 - https://channel9.msdn.com/Events/Build/2017
 - https://www.justinribeiro.com/chronicle/2016/09/10/desktop-pwa-bring-the-goodness/
@@ -1277,3 +1277,69 @@ https://www.aaron-gustafson.com/notebook/PWAs-and-desktop/:
 - https://blogs.windows.com/msedgedev/2016/07/08/the-progress-of-web-apps/
 - https://www.google.com/chromebook/about/
 - https://www.microsoft.com/en-us/windows/windows-10-s
+http://localhost:4000/notebook/progressive-web-apps-and-the-windows-ecosystem/:
+- https://build.microsoft.com
+- https://vaadin.com
+- https://demo.vaadin.com/expense-manager
+- https://developer.microsoft.com/en-us/windows/bridges/hosted-web-apps
+- https://lite.twitter.com/
+- https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/
+- https://web.archive.org/web/20070322155954/http://www.adobe.com/aboutadobe/pressroom/pressreleases/200703/031907ApolloLabs.html
+- http://www.adobe.com/products/air.html
+- https://en.wikipedia.org/wiki/WebOS
+- http://www.palminfocenter.com/news/9668/palm-announces-the-palm-pre-smartphone/
+- https://www.lgwebos.com/
+- https://en.wikipedia.org/wiki/Firefox_OS
+- https://www.chromium.org/chromium-os
+- https://facebook.github.io/react-native/
+- http://ionicframework.com/
+- https://electron.atom.io/
+- http://phonegap.com/
+- http://www.appcelerator.com/
+- https://infrequently.org/
+- https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker
+- https://developer.mozilla.org/en-US/docs/Web/Manifest
+- https://developer.mozilla.org/en-US/docs/Web/API/Push_API
+- https://whatwebcando.today/
+- https://cloudfour.com/thinks/progressive-web-apps-simply-make-sense/
+- https://cloudfour.com/thinks/why-does-the-washington-posts-progressive-web-app-increase-engagement-on-ios/
+- https://twitter.com/boyofgreen
+- https://msdn.microsoft.com/en-us/library/gg491738(v=vs.85
+- https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+- https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+- https://docs.microsoft.com/en-us/scripting/jswinrt/using-the-windows-runtime-in-javascript
+- https://developer.mozilla.org/en-US/docs/Web/API/Cache
+- http://www.windowscentral.com/understanding-aboutflags-microsoft-edge
+- http://www.pwabuilder.com/
+- http://www.robotstxt.org/robotstxt.html
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
+- https://serviceworke.rs/
+- http://www.alexa.com/topsites
+- https://www.quantcast.com/top-sites
+- https://developer.microsoft.com/en-us/microsoft-edge/tools/staticscan/
+- https://developers.google.com/web/tools/lighthouse/
+- https://www.deque.com/products/axe/
+- https://github.com/w3c/manifest/issues/569
+- https://github.com/w3c/manifest/issues/523
+- https://www.slideshare.net/AaronGustafson/progressive-web-apps-and-the-windows-ecosystem-build-2017
+- https://www.slideshare.net
+- "//www.slideshare.net/slideshow/embed_code/key/InI5w0bH4JxCwW"
+- https://channel9.msdn.com/Events/Build/2017/B8075
+- https://channel9.msdn.com
+- "//sec.ch9.ms/ch9/69d6/cde44404-854a-4c7a-aabd-e8d0af5d69d6/B8075_512.jpg"
+- "//video.ch9.ms/ch9/69d6/cde44404-854a-4c7a-aabd-e8d0af5d69d6/B8075_high.mp4"
+- "//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=en"
+- "//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=cs"
+- "//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=de"
+- "//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=es"
+- "//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=fr"
+- "//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=it"
+- "//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=ja"
+- "//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=ko"
+- "//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=pl"
+- "//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=pt"
+- "//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=ru"
+- "//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=tr"
+- "//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=zh-cn"
+- "//channel9.msdn.com/Events/Build/2017/B8075/captions?f=webvtt&amp;l=zh-tw"
+- "//video.ch9.ms/ch9/69d6/cde44404-854a-4c7a-aabd-e8d0af5d69d6/B8075.mp4"
