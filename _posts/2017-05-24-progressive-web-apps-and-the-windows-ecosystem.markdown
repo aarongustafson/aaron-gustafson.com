@@ -209,7 +209,7 @@ On Windows, Progressive Web Apps are essentially Hosted Web Apps, evolved. In fa
 Now that we’ve seen how PWAs operate within Windows, I want to take a few minutes to talk about how users will find your PWAs. As part of our initial move to support Progressive Web Apps, we will be enabling users to discover and install them from within the store and in Bing search results.
 
 <figure id="fig-2017-05-24-11" class="media-container">
-{% adaptive_image /i/posts/2017-05-24/11.png %}
+{% adaptive_image /i/posts/2017-05-24/11.jpg %}
 <figcaption>Screenshots of Bing search results and the Windows Store, highlighting how an app might appear in both contexts.</figcaption>
 </figure>
 
