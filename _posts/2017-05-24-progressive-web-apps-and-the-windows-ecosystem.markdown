@@ -299,5 +299,5 @@ You probably have more questions. I’ll do my best to answer them in the commen
 [A video recording of this presentation](https://channel9.msdn.com/Events/Build/2017/B8075) (including Jeff’s demos) is available on [Channel 9](https://channel9.msdn.com).
 
 <figure class="video-embed video-embed--16x9" id="figure-2017-05-24-14">  
-<iframe src="https://channel9.msdn.com/Events/Build/2017/B8075/player" allowFullScreen frameBorder="0"></iframe>
+<iframe src="https://channel9.msdn.com/Events/Build/2017/B8075/player" width="900" height="540" allowFullScreen frameBorder="0"></iframe>
 </figure>
