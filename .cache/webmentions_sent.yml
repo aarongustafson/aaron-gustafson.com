@@ -5344,6 +5344,9 @@ https://www.aaron-gustafson.com/notebook/native-vs-stylable-tug-of-war/:
 - http://www.brucelawson.co.uk/2014/native-experience-vs-styling-select-boxes/
 - http://w3.org
 - http://whatwg.org
+- http://www.brucelawson.co.uk/2014/native-experience-vs-styling-select-boxes/
+- http://w3.org
+- http://whatwg.org
 https://www.aaron-gustafson.com/notebook/fixed-and-inflexible/:
 - http://blog.cloudfour.com/fixed-and-inflexible/
 https://www.aaron-gustafson.com/notebook/the-network-effect/:
@@ -5354,6 +5357,10 @@ https://www.aaron-gustafson.com/notebook/the-network-effect/:
 - http://www.theguardian.com/technology/2014/jan/28/sky-broadband-blocks-jquery-web-critical-plugin
 - http://en.wikipedia.org/wiki/Demolition_derby
 https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/:
+- http://2014.blendconf.com/
+- http://www.hanselman.com/
+- http://dowebsitesneedtolookexactlythesameineverybrowser.com/
+- http://aaron-gustafson.com/notebook/2014/the-network-effect/
 - http://2014.blendconf.com/
 - http://www.hanselman.com/
 - http://dowebsitesneedtolookexactlythesameineverybrowser.com/
@@ -7819,6 +7826,7 @@ https://www.aaron-gustafson.com/notebook/collected-reactions-to-build/:
 - http://build/](http://aka.ms/ktlsyd
 - http://build/](http://aka.ms/ktlsyd
 - http://build/](http://aka.ms/ktlsyd
+- http://build/](http://aka.ms/ktlsyd
 https://www.aaron-gustafson.com/notebook/email-design/:
 - http://www.tedgoas.com/blog/email-design/
 - http://www.twitter.com/tedgoas
@@ -7836,6 +7844,10 @@ https://www.aaron-gustafson.com/notebook/lessons-learned-from-atari/:
 https://www.aaron-gustafson.com/notebook/slides-from-my-talk-at-number-msedgesummit/:
 - https://channel9.msdn.com/Events/WebPlatformSummit/2015
 - https://channel9.msdn.com/Events/WebPlatformSummit/2015/Falling-in-love-with-forms
+- http://www.slideshare.net/slideshow/embed_code/key/H1xKkpN0KIoXq3
+- http://sec.ch9.ms/sessions/websummit/2015/GA05-LG.jpg
+- http://video.ch9.ms/sessions/websummit/2015/GA05.mp4
+- http://video.ch9.ms/sessions/websummit/2015/GA05-mobile.mp4
 - http://www.slideshare.net/slideshow/embed_code/key/H1xKkpN0KIoXq3
 - http://sec.ch9.ms/sessions/websummit/2015/GA05-LG.jpg
 - http://video.ch9.ms/sessions/websummit/2015/GA05.mp4
@@ -9726,6 +9738,7 @@ https://www.aaron-gustafson.com/notebook/my-trip-to-18f/:
 - http://www.slideshare.net/slideshow/embed_code/key/7jsUtSzGEqFyKj
 - http://www.slideshare.net/slideshow/embed_code/key/7jsUtSzGEqFyKj
 - http://www.slideshare.net/slideshow/embed_code/key/7jsUtSzGEqFyKj
+- http://www.slideshare.net/slideshow/embed_code/key/7jsUtSzGEqFyKj
 https://www.aaron-gustafson.com/notebook/rat/:
 - http://jonathantneal.github.io/rat/
 https://www.aaron-gustafson.com/notebook/infinite-scrolling-and-accessibility/:
@@ -11286,3 +11299,53 @@ https://www.aaron-gustafson.com/notebook/PWAs-and-desktop/:
 - https://blogs.windows.com/msedgedev/2016/07/08/the-progress-of-web-apps/
 - https://www.google.com/chromebook/about/
 - https://www.microsoft.com/en-us/windows/windows-10-s
+https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/:
+- https://build.microsoft.com
+- https://vaadin.com
+- https://demo.vaadin.com/expense-manager
+- https://developer.microsoft.com/en-us/windows/bridges/hosted-web-apps
+- https://lite.twitter.com/
+- https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/
+- https://web.archive.org/web/20070322155954/http://www.adobe.com/aboutadobe/pressroom/pressreleases/200703/031907ApolloLabs.html
+- http://www.adobe.com/products/air.html
+- https://en.wikipedia.org/wiki/WebOS
+- http://www.palminfocenter.com/news/9668/palm-announces-the-palm-pre-smartphone/
+- https://www.lgwebos.com/
+- https://en.wikipedia.org/wiki/Firefox_OS
+- https://www.chromium.org/chromium-os
+- https://facebook.github.io/react-native/
+- http://ionicframework.com/
+- https://electron.atom.io/
+- http://phonegap.com/
+- http://www.appcelerator.com/
+- https://infrequently.org/
+- https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker
+- https://developer.mozilla.org/en-US/docs/Web/Manifest
+- https://developer.mozilla.org/en-US/docs/Web/API/Push_API
+- https://whatwebcando.today/
+- https://cloudfour.com/thinks/progressive-web-apps-simply-make-sense/
+- https://cloudfour.com/thinks/why-does-the-washington-posts-progressive-web-app-increase-engagement-on-ios/
+- https://twitter.com/boyofgreen
+- https://msdn.microsoft.com/en-us/library/gg491738(v=vs.85
+- https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+- https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+- https://docs.microsoft.com/en-us/scripting/jswinrt/using-the-windows-runtime-in-javascript
+- https://developer.mozilla.org/en-US/docs/Web/API/Cache
+- http://www.windowscentral.com/understanding-aboutflags-microsoft-edge
+- http://www.pwabuilder.com/
+- http://www.robotstxt.org/robotstxt.html
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
+- https://serviceworke.rs/
+- http://www.alexa.com/topsites
+- https://www.quantcast.com/top-sites
+- https://developer.microsoft.com/en-us/microsoft-edge/tools/staticscan/
+- https://developers.google.com/web/tools/lighthouse/
+- https://www.deque.com/products/axe/
+- https://github.com/w3c/manifest/issues/569
+- https://github.com/w3c/manifest/issues/523
+- https://www.slideshare.net/AaronGustafson/progressive-web-apps-and-the-windows-ecosystem-build-2017
+- https://www.slideshare.net
+- http://www.slideshare.net/slideshow/embed_code/key/InI5w0bH4JxCwW
+- https://channel9.msdn.com/Events/Build/2017/B8075
+- https://channel9.msdn.com
+- https://channel9.msdn.com/Events/Build/2017/B8075/player
