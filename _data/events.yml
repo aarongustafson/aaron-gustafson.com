@@ -3,6 +3,8 @@
   url: https://www.meetup.com/Oslo-Progressive-Web-Apps/events/239901869/
   date: 2017-06-07 10:30:00 -0400
   location: "Oslo, Norway"
+  talks:
+    - title: Progressive Web Apps and the Windows Ecosystem
 
 - id: 121
   title: An Event Apart
@@ -23,8 +25,8 @@
   location: "Sydney, Australia"
 
 - id: 118
-  title: TBA # Experience Code
-  # url: http://lanyrd.com/2017/respond-by-web-directions/
+  title: Experience Code
+  url: https://experiencecode.com/
   date: 2018-01-31 09:00:00 -0400
   location: "Vancouver, BC Canada"
 
@@ -36,9 +38,9 @@
 
 - id: 116
   title: Generate
-  url: http://lanyrd.com/2017/generate/
-  date: 2017-06-09 09:00:00 -0400
-  location: "San Francisco, CA USA"
+  url: http://lanyrd.com/2017/generate-september/
+  date: 2017-09-20 09:00:00 -0400
+  location: "London, England"
   keynotes:
     - titles: Exploring Adaptive Interfaces
 
@@ -47,6 +49,8 @@
   url: https://build.microsoft.com/
   date: 2017-05-10 09:00:00 -0400
   location: "Seattle, WA USA"
+  talks:
+    - title: Progressive Web Apps and the Windows Ecosystem
 
 - id: 114
   title: "Chadev"

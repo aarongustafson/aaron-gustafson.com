@@ -10749,6 +10749,16 @@ http://AARON-GUSTAFSON.COM:
     '791431201441492993': |-
       <li id="webmention-791431201441492993" class="webmentions__item"><article class="h-cite webmention webmention--no-photo webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://jden.us/"><b class="p-name">bad hambre</b></a></div><div class="webmention__content p-content"><p>.<a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> is Edge going to support the Surface Dial?</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2016-10-26T20:07:57-04:00">26 October 2016</time> | <a class="webmention__source u-url" href="https://twitter.com/jsdnxx/status/791431201441492993">Permalink</a></div></article></li>
+  '1496064884':
+    '869185241684094977': |-
+      <li id="webmention-869185241684094977" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.matuzo.at/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/bef8b2059829d0a46f469f0bc064f977f6be821d88dcedf0c01a27bb2f1109e9.jpeg" alt="" title="Manuel Matuzović"><b class="p-name">Manuel Matuzović</b></a></div><div class="webmention__content p-content"><p>Last year I thought that it’d be great to have a mentor. Now that I have <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> I know it for a fact! I’ve already learned so much.
+      <a class="u-mention" href="https://www.aaron-gustafson.com/notebook/my-2017-mentees/"></a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2017-05-29T09:34:44-04:00">29 May 2017</time> | <a class="webmention__source u-url" href="https://twitter.com/mmatuzo/status/869185241684094977">Permalink</a></div></article></li>
+  '1496082721':
+    '869260051986485250': |-
+      <li id="webmention-869260051986485250" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://vitamintalent.com/lilianohanessian"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/b4435ff4e89e57d49532327a8496da073b6f6e5a887b64249e3e16cc3dd03f93.jpg" alt="" title="Lilian Ohanessian"><b class="p-name">Lilian Ohanessian</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/search?q=%23CSS">#CSS</a>  <a href="http://buff.ly/2rvC8e1">buff.ly/2rvC8e1</a> Learn front-end web dev for free. Modern <a href="https://twitter.com/search?q=%23WebDesign">#WebDesign</a> w/ <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> <a href="https://twitter.com/Aquent">@Aquent</a> @GymnasiumTweets <a href="https://twitter.com/search?q=%23HTML">#HTML</a>
+      <a class="u-mention" href="https://thegymnasium.com/courses/GYM/107/0/about"></a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2017-05-29T14:32:01-04:00">29 May 2017</time> | <a class="webmention__source u-url" href="https://twitter.com/Yessayan2/status/869260051986485250">Permalink</a></div></article></li>
 https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/:
   '1478108857':
     391670: <li id="webmention-391670" class="webmentions__item"><article class="h-cite
@@ -13653,6 +13663,13 @@ https://www.aaron-gustafson.com/notebook/looking-for-a-mentor/:
       Gustafson</b></a></div> <div class="webmention__title p-name"><a href="https://www.aaron-gustafson.com/notebook/why-do-you-love-the-web/">Why
       Do You Love the Web?</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2017-03-08T10:20:23-05:00">8 March 2017</time></div></article></li>
+  '1495807052':
+    435774: <li id="webmention-435774" class="webmentions__item"><article class="h-cite
+      webmention webmention--title-only"><div class="webmention__author p-author h-card"><a
+      class="u-url" href="https://www.aaron-gustafson.com/about"><b class="p-name">Aaron
+      Gustafson</b></a></div> <div class="webmention__title p-name"><a href="https://www.aaron-gustafson.com/notebook/my-2017-mentees/">My
+      2017 Mentees</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2017-05-26T09:57:32-04:00">26 May 2017</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/any-advice-on-moving-from-octopress-to-jekyll/:
   '1485045076':
     822964816033828864: |-
@@ -13977,6 +13994,13 @@ https://www.aaron-gustafson.com/notebook/why-do-you-love-the-web/:
       p-name"><a href="https://twitter.com/AaronGustafson/status/839516075817598977#favorited-by-21994073">Tabs
       favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2017-03-10T23:53:47+00:00">10 March 2017</time></div></article></li>
+  '1495807052':
+    435775: <li id="webmention-435775" class="webmentions__item"><article class="h-cite
+      webmention webmention--title-only"><div class="webmention__author p-author h-card"><a
+      class="u-url" href="https://www.aaron-gustafson.com/about"><b class="p-name">Aaron
+      Gustafson</b></a></div> <div class="webmention__title p-name"><a href="https://www.aaron-gustafson.com/notebook/my-2017-mentees/">My
+      2017 Mentees</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2017-05-26T09:57:32-04:00">26 May 2017</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/links/ad-industry-lobbyists-celebrate-impending-death-of-online-privacy-rules/:
   '1489529031':
     841771885868290048: "<li id=\"webmention-841771885868290048\" class=\"webmentions__item\"><article
@@ -14519,3 +14543,43 @@ https://www.aaron-gustafson.com/notebook/my-2017-mentees/:
     869145796985466880: |-
       <li id="webmention-869145796985466880" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/AaronGustafson"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/827215347799441409/nklH5-Hn_normal.jpg" alt="" title="Aaron Gustafson"><b class="p-name">Aaron Gustafson</b></a></div><div class="webmention__content p-content"><p>Meet @amberleyjohanna and @mmatuzo, my 2017 mentees <a href="https://t.co/2ZE5YmWocg">https://t.co/2ZE5YmWocg</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2017-05-29T10:58:00+00:00">29 May 2017</time> | <a class="webmention__source u-url" href="https://twitter.com/AaronGustafson/status/869145796985466880">Permalink</a></div></article></li>
+  '1496056890':
+    '869151711780364288': |-
+      <li id="webmention-869151711780364288" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/_stephanmax"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/4d3e8bd3c069ef744f21c2296463bc4e75ca7a442b34d0a01bda3b6ebb376a55.jpg" alt="" title="Stephan Max"><b class="p-name">Stephan Max</b></a></div><div class="webmention__content p-content"><p>I’d love to read this since I am also looking for a mentor for 2017. But I get a NET::ERR_CERT_DATE_INVALID when visiting that link, Aaron.</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2017-05-29T07:21:30-04:00">29 May 2017</time> | <a class="webmention__source u-url" href="https://twitter.com/_stephanmax/status/869151711780364288">Permalink</a></div></article></li>
+  '1496059318':
+    435997: <li id="webmention-435997" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/devmittas"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/e3eed3ea72f2ae27458dc01cb365154dca12e5599540b633cc023d276f3785c5.jpg"
+      alt="" title="Saurav Mittal"><b class="p-name">Saurav Mittal</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/869145796985466880#favorited-by-3224494878">Saurav
+      Mittal favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2017-05-29T12:01:58+00:00">29 May 2017</time></div></article></li>
+  '1496060818':
+    435998: <li id="webmention-435998" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/toolness"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/pbs.twimg.com/edce3fb0d8bf5e79938dce3469e52953370d7ce62e15456672e27265cfc804de.jpeg"
+      alt="" title="Atul Varma"><b class="p-name">Atul Varma</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/AaronGustafson/status/869145796985466880#favorited-by-9717342">Atul
+      Varma favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2017-05-29T12:26:58+00:00">29 May 2017</time></div></article></li>
+  '1496066409':
+    436005: <li id="webmention-436005" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/mmatuzo"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/pbs.twimg.com/bef8b2059829d0a46f469f0bc064f977f6be821d88dcedf0c01a27bb2f1109e9.jpeg"
+      alt="" title="Manuel Matuzović"><b class="p-name">Manuel Matuzović</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/869145796985466880#favorited-by-22161724">Manuel
+      Matuzović favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2017-05-29T14:00:09+00:00">29 May 2017</time></div></article></li>
+  '1496068350':
+    436012: <li id="webmention-436012" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/hdanyo"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/pbs.twimg.com/c9622b1b940ed9d440b81f4b7109d1c486e60b98ba28965ee61db9b01fc66cc5.jpg"
+      alt="" title="Daniel H"><b class="p-name">Daniel H</b></a></div> <div class="webmention__title
+      p-name"><a href="https://twitter.com/AaronGustafson/status/869145796985466880#favorited-by-36616683">Daniel
+      H favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2017-05-29T14:32:30+00:00">29 May 2017</time></div></article></li>

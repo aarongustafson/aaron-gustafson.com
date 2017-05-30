@@ -183,6 +183,11 @@
   credit_name: The Floridian Boricua
   credit_url: "http://commons.wikimedia.org/wiki/File:Skyline_of_Orlando,_FL,_USA,_2012-03-28.JPG"
 
+- name: "Oslo, Norway"
+  photo: https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Astrup_Museum.jpg/400px-Astrup_Museum.jpg
+  credit_name: Astrup Fearnley Museum
+  credit_url: "https://commons.wikimedia.org/wiki/File:Astrup_Museum.jpg"
+
 - name: "Paris, France"
   photo: https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Paris_vue_d%27ensemble_tour_Eiffel.jpg/400px-Paris_vue_d%27ensemble_tour_Eiffel.jpg
   credit_name: Taxiarchos228
