@@ -22,7 +22,17 @@ task :new_talk, :title do |t, args|
     talk.puts "description: \"\""
     talk.puts "category: talks"
     talk.puts "tags: []"
-    talk.puts "conferences: []"
+    talk.puts "events: []"
+    talk.puts "slides:"
+    talk.puts " link: "
+    talk.puts " embed: "
+    talk.puts " download: "
+    talk.puts "video:"
+    talk.puts " event: "
+    talk.puts " link: "
+    talk.puts " embed: "
+    talk.puts " download: "
+    talk.puts "text: "
     talk.puts "---"
   end
   `open #{filename}`

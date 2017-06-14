@@ -3,7 +3,7 @@ layout: post
 title: "Progressive Web Apps and the Windows Ecosystem"
 date: 2017-05-24 11:13:24 -0400
 comments: true
-tags: ["progressive web apps","progressive enhancement",  presentations]
+tags: ["progressive web apps","progressive enhancement",windows,microsoft,presentations]
 description: "I had the great pleasure of delivering this talk about Microsoft’s strategy towards Progressive Web Apps at the Build conference."
 crosspost_to_medium: true
 ---

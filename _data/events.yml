@@ -1,11 +1,15 @@
+- id: 123
+  title: Chadev
+  url: https://www.meetup.com/chadevs/events/240504914/
+  date: 2017-07-06 11:30:00 -0600
+  location: "Chattanooga, TN USA"
+  
 - id: 122
   title: Oslo PWA Meetup
   url: https://www.meetup.com/Oslo-Progressive-Web-Apps/events/239901869/
   date: 2017-06-07 10:30:00 -0400
   location: "Oslo, Norway"
-  talks:
-    - title: Progressive Web Apps and the Windows Ecosystem
-
+  
 - id: 121
   title: An Event Apart
   url: https://aneventapart.com/event/denver-2017
@@ -41,245 +45,160 @@
   url: http://lanyrd.com/2017/generate-september/
   date: 2017-09-20 09:00:00 -0400
   location: "London, England"
-  keynotes:
-    - titles: Exploring Adaptive Interfaces
 
 - id: 115
   title: Microsoft Build
   url: https://build.microsoft.com/
   date: 2017-05-10 09:00:00 -0400
   location: "Seattle, WA USA"
-  talks:
-    - title: Progressive Web Apps and the Windows Ecosystem
 
 - id: 114
   title: "Chadev"
   url: "https://www.meetup.com/chadevs/events/238652824/"
   date: 2017-04-06 12:00:00 -0400
   location: "Chattanooga, TN USA"
-  talks:
-    - title: Designing the Conversation
-
+  
 - id: 113
   title: Web Platform Day
   date: 2016-12-08 09:00:00 -0400
   location: "Seattle, WA USA"
-  talks:
-    - title: Designing the Conversation
-
+  
 - id: 112
   title: Build Right Maker Series
   url: https://buildright.io/maker-series/2016/aaron-gustafson
   date: 2016-11-10 09:00:00 -0600
   location: "Dayton, OH USA"
-  workshops:
-    - title: Planning Adaptive Interfaces
 
 - id: 111
   title: SmashingConf Freiburg
   url: http://lanyrd.com/2016/smashingconf-freiburg/
   date: 2016-09-13 09:00:00 -0400
   location: "Freiburg, Germany"
-  talks:
-    - title: Designing the Conversation
-      slides: http://www.slideshare.net/AaronGustafson/designing-the-conversation-smashingconf-2016
-      video: https://vimeo.com/184234783
-
+  
 - id: 110
   title: TechReady 23
   url: http://lanyrd.com/2016/tr23/
   date: 2016-07-25 09:00:00 -0400
   location: "Seattle, WA USA"
-  talks:
-    - title: The Web Should Just Work for Everyone
 
 - id: 109
   title: SmashingConf New York
   url: http://lanyrd.com/2016/smashingconf-new-york/
   date: 2016-06-14 09:00:00 -0400
   location: "New York, NY USA"
-  talks:
-    - title: The Features of Highly Effective Forms
-      slides: http://www.slideshare.net/AaronGustafson/the-features-of-highly-effective-forms-smashingconf-nyc-2016
 
 - id: 108
   title: SpeechTEK
   url: http://lanyrd.com/2016/speechtek
   date: 2016-05-22 09:00:00 -0400
   location: "Washington, DC USA"
-  talks:
-    - title: Designing the Conversation
-      slides: http://www.slideshare.net/AaronGustafson/designing-the-conversation-speechtek-2016
 
 - id: 107
   title: Microsoft Edge Web Summit
   url: http://lanyrd.com/2016/edgesummit/
   date: 2016-04-04 09:00:00 -0400
   location: "San Francisco, CA USA"
-  talks:
-    - title: The Web Should Just Work for Everyone
-
+  
 - id: 106
   title: UIE Virtual Seminar
   url: https://aycl.uie.com/virtual_seminars/features_of_highly_effective_forms
   date: 2016-03-31 09:00:00 -0400
   location: Online
-  talks:
-    - title: The Features of Highly Effective Forms
 
 - id: 105
   title: RWD Summit
   url: http://environmentsforhumans.com/2016/responsive-web-design-summit/
   date: 2016-03-30 09:00:00 -0400
   location: Online
-  talks:
-    - title: Planning Adaptive Interfaces
-      slides: http://www.slideshare.net/AaronGustafson/planning-adaptive-interfaces-rwd-summit-2016
 
 - id: 104
   title: An Event Apart
   url: http://aneventapart.com/event/nashville-2016
   date: 2016-03-14 09:00:00 -0400
   location: "Nashville, TN USA"
-  talks:
-    - title: The Features of Highly Effective Forms
-      slides: http://www.slideshare.net/AaronGustafson/the-features-of-highly-effective-forms-an-event-apart-nashville-2016
 
 - id: 103
   title: EnhanceConf
   url: http://lanyrd.com/2016/enhanceconf/
   date: 2016-03-03 09:00:00 -0400
   location: "London, England"
-  keynotes:
-    - title: "Learn from the Past, Enhance for the Future"
-      text: /notebook/learn-from-the-past-enhance-for-the-future/
-  workshops:
-    - title: Planning Adaptive Interfaces
-
+  
 - id: 102
   title: Øredev
   url: http://lanyrd.com/2015/oredev/
   date: 2015-11-03 09:00:00 -0400
   location: "Malmö, Sweden"
-  talks:
-    - title: There Are No Buts in Progressive Enhancement
-      slides: http://www.slideshare.net/AaronGustafson/there-are-no-buts-in-progressive-enhancement-redev-2015
-    - title: Falling in Love with Forms
-      slides: http://www.slideshare.net/AaronGustafson/falling-in-love-with-forms-redev-2015
 
 - id: 101
   title: Future of Web Design
   url: http://lanyrd.com/2015/future-of-web-design-new-york/
   date: 2015-11-02 09:00:00 -0400
   location: "New York, NY USA"
-  talks:
-    - title: Falling in Love with Forms
-      slides: http://www.slideshare.net/AaronGustafson/falling-in-love-with-forms-f0wd-2015
-  workshops:
-    - title: Beyond Responsive
 
 - id: 100
   title: 18F Speaker Series
   url: https://www.eventbrite.com/e/18f-design-presents-aaron-gustafson-registration-17919708330
   date: 2015-08-12 09:00:00 -0400
   location: "Washington, DC USA"
-  talks:
-    - title: Beyond Responsive
-      slides: http://www.slideshare.net/AaronGustafson/beyond-responsive-18f-2015
-      video: https://www.youtube.com/watch?v=Fu1L34TLUHM
 
 - id: 99
   title: An Event Apart
   url: http://aneventapart.com/event/washington-dc-2015
   date: 2015-08-10 09:00:00 -0400
   location: "Washington, DC USA"
-  talks:
-    - title: Falling in Love with Forms
-      slides: http://www.slideshare.net/AaronGustafson/falling-in-love-with-forms-an-event-apart-dc-2015
 
 - id: 98
   title: Responsive Day Out
   url: http://lanyrd.com/2015/responsive-day-out-3/
   date: 2015-06-19 09:00:00 -0400
   location: "Brighton, England"
-  keynotes:
-    - title: Where Do We Go From Here?
-      text: /notebook/where-do-we-go-from-here/
 
 - id: 97
   title: Web Design Day
   url: http://www.webdesignday.com/
   date: 2015-06-11 09:00:00 -0400
   location: "Pittsburgh, PA USA"
-  talks:
-    - title: Falling in Love with Forms
-      slides: http://www.slideshare.net/AaronGustafson/falling-in-love-with-forms-web-design-day
-  workshops:
-    - title: Beyond Responsive
 
 - id: 96
   title: Breaking Development
   url: http://lanyrd.com/2015/bdconf/
   date: 2015-06-08 09:00:00 -0400
   location: "Nashville, TN USA"
-  talks:
-    - title: Falling in Love with Forms
-      slides: http://www.slideshare.net/AaronGustafson/falling-in-love-with-forms-bd-conf-nashville-2015
-  workshops:
-    - title: Beyond Responsive
 
 - id: 95
   title: Microsoft Edge Web Summit
   url: http://lanyrd.com/2015/project-spartan-web-summit/
   date: 2015-05-05 09:00:00 -0400
   location: "Mountain View, CA USA"
-  talks:
-    - title: Falling in Love with Forms
-      slides: http://www.slideshare.net/AaronGustafson/falling-in-love-with-forms-microsoft-edge-web-summit-2015
 
 - id: 94
   title: Web Sherpa Summit
   url: http://lanyrd.com/2015/web-sherpa-summit/
   date: 2015-04-23 09:00:00 -0400
   location: Online
-  talks:
-    - title: Falling in Love with Forms
 
 - id: 93
   title: Converge SE
   url: http://lanyrd.com/2015/convergese/
   date: 2015-04-15 09:00:00 -0400
   location: "Columbia, SC USA"
-  workshops:
-    - title: Beyond Responsive
 
 - id: 92
   title: UX Mobile Immersion
   url: http://uxim15.uie.com/
   date: 2015-04-13 09:00:00 -0400
   location: "Salt Lake City, UT USA"
-  talks:
-    - title: There Are No Buts in Progressive Enhancement
-      with: Jenn Lukas
-  workshops:
-    - title: Adaptive Designs Across Devices
-      with: Jenn Lukas
 
 - id: 91
   title: "Chattanooga City Employees Lunch &amp; Learn"
   date: 2014-12-10 12:00:00 -0400
   location: "Chattanooga, TN USA"
-  talks:
-    - title: Designing with Empathy
 
 - id: 90
   title: "Chadev"
   url: "https://www.youtube.com/watch?feature=player_embedded&amp;v=2V0JU10H3Ro"
   date: 2014-12-04 12:00:00 -0400
   location: "Chattanooga, TN USA"
-  talks:
-    - title: Falling in Love with Forms
-      slides: http://www.slideshare.net/AaronGustafson/falling-in-love-with-forms-bdconf-2014
 
 - id: 89
   title: Talk @ Google
@@ -296,9 +215,6 @@
   url: http://lanyrd.com/2014/bdconf-2/
   date: 2014-11-03 09:00:00 -0400
   location: "Orlando, FL USA"
-  talks:
-    - title: Falling in Love with Forms
-      slides: http://www.slideshare.net/AaronGustafson/falling-in-love-with-forms-bdconf-2014
 
 - id: 86
   title: "Private Workshop &amp; Consulting"
@@ -319,18 +235,12 @@
   url: http://lanyrd.com/2014/blendconf14/
   date: 2014-09-11 09:00:00 -0400
   location: "Charlotte, NC USA"
-  talks:
-    - title: Falling in Love with Forms
-      slides: http://www.slideshare.net/AaronGustafson/falling-in-love-with-forms-blendconf-2014
 
 - id: 83
   title: Accessibility Summit
   url: http://environmentsforhumans.com/2014/accessibility-summit/
   date: 2014-09-09 09:00:00 -0400
   location: Online
-  talks:
-    - title: Falling in Love with Forms
-      slides: http://www.slideshare.net/AaronGustafson/falling-in-love-with-forms-accessibility-summit-2014
 
 - id: 82
   title: DevLink
@@ -349,17 +259,12 @@
   url: http://codeandcreativity.com/events/2014-06-24/
   date: 2014-06-24 19:00:00 -0400
   location: "Chattanooga, TN USA"
-  talks:
-    - title: Designing with Empathy
-      slides: http://www.slideshare.net/AaronGustafson/designing-with-empathy-code-creativity-2014
 
 - id: 79
-  title: Beyond Tellerrand 2014
+  title: Beyond Tellerrand
   url: http://lanyrd.com/2014/btconf/
   date: 2014-05-21 09:00:00 +0100
   location: "Düsseldorf, Germany"
-  workshops:
-    - title: Beyond Responsive
 
 - id: 78
   title: Web Platform Doc Sprint + MeatUp™
@@ -390,19 +295,15 @@
 
 - id: 75
   title: Private Workshop
+  company: Marriott
   date: 2014-03-26 09:00:00 -0400
   location: "Bethesda, MD USA"
-  workshops:
-    - title: Planning Adaptive Interfaces
-
+  
 - id: 74
-  title: Awwwards - Love Days
+  title: Awwwards
   url: http://lanyrd.com/2014/awwwardsoffday/
   date: 2014-02-14 17:00:00 +0100
   location: "Paris, France"
-  talks:
-    - title: Designing with Empathy
-      slides: http://www.slideshare.net/AaronGustafson/designing-with-empathy-awwwards-2014-31340505
 
 - id: 73
   title: PechaKucha Chattanooga
@@ -443,8 +344,6 @@
   talks:
     - title: Designing with Empathy
       slides: http://www.slideshare.net/AaronGustafson/designing-with-empathy-breaking-development-nashville-2013
-  workshops:
-    - title: Planning Adaptive Interfaces
 
 - id: 68
   title: Responsive Design Studio
@@ -457,28 +356,18 @@
   url: http://lanyrd.com/2013/fromthefront/
   date: 2013-09-19 09:00:00 -0100
   location: "Bologna, Italy"
-  talks:
-    - title: Designing with Empathy
-      slides: http://www.slideshare.net/AaronGustafson/designing-with-empathy-from-the-front-2013
-  workshops:
-    - title: Planning Adaptive Interfaces
 
 - id: 66
   title: dConstruct
   url: http://lanyrd.com/2013/dconstruct/
   date: 2013-09-06 09:00:00 +0000
   location: "Brighton, England"
-  workshops:
-    - title: Planning Adaptive Interfaces
 
 - id: 65
   title: Reasons to be Creative
   url: http://lanyrd.com/2013/reasons-to-be-creative/
   date: 2013-09-04 09:00:00 +0000
   location: "Brighton, England"
-  talks:
-    - title: Designing with Empathy
-      slides: http://www.slideshare.net/AaronGustafson/designing-with-empathy-reasons-to-be-creative-2013
 
 - id: 64
   title: Private Workshop
@@ -492,17 +381,12 @@
   url: http://lanyrd.com/2013/btconf/
   date: 2013-05-27 09:00:00 +0100
   location: "Düsseldorf, Germany"
-  talks:
-    - title: Designing with Empathy
-      slides: http://www.slideshare.net/AaronGustafson/designing-with-empathy-beyond-tellerrand-2013
 
 - id: 62
-  title: User Experience Lisbon (UxLx)
+  title: UxLx
   url: http://lanyrd.com/2013/uxlx/
   date: 2013-05-15 09:00:00 +0000
   location: "Lisbon, Portugal"
-  workshops:
-    - title: Planning Adaptive Interfaces
 
 - id: 61
   title: Responsive Design Studio
@@ -527,9 +411,6 @@
   url: http://lanyrd.com/2013/bdconf-orlando/
   date: 2013-04-08 09:00:00 -0500
   location: "Orlando, FL USA"
-  talks:
-    - title: Designing with Empathy
-      slides: http://www.slideshare.net/AaronGustafson/designing-with-empathy-breaking-development-orlando-2013-18497481
 
 - id: 57
   title: SXSW Interactive
