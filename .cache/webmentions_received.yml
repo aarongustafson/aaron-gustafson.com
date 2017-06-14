@@ -627,6 +627,9 @@ https://www.aaron-gustafson.com/notebook/css-variables-are-a-bad-idea/:
     872268834345963521: |-
       <li id="webmention-872268834345963521" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/shaunrashid"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/477087841806069761/qfYGK0ey_normal.png" alt="" title="Shaun Rashid"><b class="p-name">Shaun Rashid</b></a></div><div class="webmention__content p-content"><p>@AaronGustafson Has your stance on CSS variables changed since: <a href="https://t.co/T7cuOk369z">https://t.co/T7cuOk369z</a> ?</p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2017-06-07T01:47:50+00:00">7 June 2017</time> | <a class="webmention__source u-url" href="https://twitter.com/shaunrashid/status/872268834345963521">Permalink</a></div></article></li>
+    '872268834345963521': |-
+      <li id="webmention-872268834345963521" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.shaunrashid.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/e199755a327b438ebf29c77aef449cb2b6230a6fbeb80e8199796d1e687c191e.png" alt="" title="Shaun Rashid"><b class="p-name">Shaun Rashid</b></a></div><div class="webmention__content p-content"><p><a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> Has your stance on CSS variables changed since: <a href="https://www.aaron-gustafson.com/notebook/css-variables-are-a-bad-idea/">aaron-gustafson.com/notebook/css-v…</a> ?</p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2017-06-06T21:47:50-04:00">6 June 2017</time> | <a class="webmention__source u-url" href="https://twitter.com/shaunrashid/status/872268834345963521">Permalink</a></div></article></li>
 http://aaron-gustafson.com/notebook/2014/aria-quicktip-labelledby-vs-describedby/:
   '1415217698':
     11803: <li id="webmention-11803" class="webmentions__item"><article class="h-cite
@@ -14542,6 +14545,28 @@ https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ec
       <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/867826857990860802#favorited-by-441171386">Alejandro
       Ledesma favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2017-05-26T14:19:02+00:00">26 May 2017</time></div></article></li>
+  '1496180625':
+    '869670690881814529': |-
+      <li id="webmention-869670690881814529" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://cloudfour.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/a850c61d3b4d6d8e13f90ecd09bf867c25e4ff826468dbbd7e3ec6c1420cef2e.jpeg" alt="" title="Jason Grigsby, ☁4"><b class="p-name">Jason Grigsby, ☁4</b></a></div><div class="webmention__content p-content"><p>Nice. <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> distilled his Progressive Web Apps and the Windows Ecosystem talk into an article <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">aaron-gustafson.com/notebook/progr…</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2017-05-30T17:43:45-04:00">30 May 2017</time> | <a class="webmention__source u-url" href="https://twitter.com/grigs/status/869670690881814529">Permalink</a></div></article></li>
+  '1496217323':
+    436268: <li id="webmention-436268" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/_JonathanRowley"><img
+      class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/4f22db10b7c1d8234e86f6475e1aa6d4d873fdca683b511708b5d37adb4621bb.jpg"
+      alt="" title="Jonathan Rowley"><b class="p-name">Jonathan Rowley</b></a></div>
+      <div class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/867826857990860802#favorited-by-590301058">Jonathan
+      Rowley favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2017-05-31T07:55:23+00:00">31 May 2017</time></div></article></li>
+  '1496217340':
+    436269: <li id="webmention-436269" class="webmentions__item"><article class="h-cite
+      webmention webmention--author-starts webmention--title-only"><div class="webmention__author
+      p-author h-card"><a class="u-url" href="https://twitter.com/Danilux"><img class="webmention__author__photo
+      u-photo" src="https://webmention.io/avatar/pbs.twimg.com/9ead51f585557e365d63a8c972c64c205e9ac4f049cc76b356a6f8888a1aa6b7.jpg"
+      alt="" title="Daᴎilo Vәga"><b class="p-name">Daᴎilo Vәga</b></a></div> <div
+      class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/867826857990860802#favorited-by-11583332">Daᴎilo
+      Vәga favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
+      dt-published" datetime="2017-05-31T07:55:40+00:00">31 May 2017</time></div></article></li>
 https://www.aaron-gustafson.com/notebook/my-2017-mentees/:
   '1496055480':
     869145796985466880: |-
@@ -14587,3 +14612,7 @@ https://www.aaron-gustafson.com/notebook/my-2017-mentees/:
       p-name"><a href="https://twitter.com/AaronGustafson/status/869145796985466880#favorited-by-36616683">Daniel
       H favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2017-05-29T14:32:30+00:00">29 May 2017</time></div></article></li>
+  '1496184359':
+    '869686352241082368': |-
+      <li id="webmention-869686352241082368" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="http://www.userdefenders.com/"><img class="webmention__author__photo u-photo" src="https://webmention.io/avatar/pbs.twimg.com/58bb94c1ea1f6e77fe8863c165fa930edf542fe0dc1fc53be19ecc5a675ef021.jpg" alt="" title="User Defenders"><b class="p-name">User Defenders</b></a></div><div class="webmention__content p-content"><p>.<a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> is a true superhero. <a href="https://www.aaron-gustafson.com/notebook/my-2017-mentees/">aaron-gustafson.com/notebook/my-20…</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2017-05-30T18:45:59-04:00">30 May 2017</time> | <a class="webmention__source u-url" href="https://twitter.com/UserDefenders/status/869686352241082368">Permalink</a></div></article></li>
