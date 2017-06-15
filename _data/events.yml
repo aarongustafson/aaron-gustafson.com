@@ -1,3 +1,9 @@
+- id: 124
+  title: Paris Web
+  url: http://lanyrd.com/2017/parisweb/
+  date: 2017-10-05 08:00:00 -0000
+  location: "Paris, France"
+  
 - id: 123
   title: Chadev
   url: https://www.meetup.com/chadevs/events/240504914/
@@ -7,13 +13,13 @@
 - id: 122
   title: Oslo PWA Meetup
   url: https://www.meetup.com/Oslo-Progressive-Web-Apps/events/239901869/
-  date: 2017-06-07 10:30:00 -0400
+  date: 2017-06-07 10:30:00 +0100
   location: "Oslo, Norway"
   
 - id: 121
   title: An Event Apart
   url: https://aneventapart.com/event/denver-2017
-  date: 2017-12-11 09:00:00 -0400
+  date: 2017-12-11 09:00:00 -0800
   location: "Denver, CO USA"
 
 - id: 120
@@ -31,13 +37,13 @@
 - id: 118
   title: Experience Code
   url: https://experiencecode.com/
-  date: 2018-01-31 09:00:00 -0400
+  date: 2018-01-31 09:00:00 -0900
   location: "Vancouver, BC Canada"
 
 - id: 117
   title: DevUX
-  # url: http://lanyrd.com/2017/respond-by-web-directions/
-  date: 2017-09-14 09:00:00 -0400
+  url: http://lanyrd.com/2017/devux/
+  date: 2017-09-14 09:00:00 +0100
   location: "Malmö, Sweden"
 
 - id: 116
