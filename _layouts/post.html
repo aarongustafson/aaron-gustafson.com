@@ -33,8 +33,8 @@ single: true
 							<dt class="dont-read">Reactions</dt>
 							<dd class="dont-read">
 								<ul class="entry__jump-links">
-									<li class="entry__jump entry__jump--comments"><a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ this_url }}{% endif %}">Comments</a></li>
-									<li class="entry__jump entry__jump--webmentions"><a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#webmentions">Webmentions</a></li>
+									<li class="entry__jump entry__jump--comments"><a href="{% if index %}{{ root_url }}{{ page.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ this_url }}{% endif %}">Comments</a></li>
+									<li class="entry__jump entry__jump--webmentions"><a href="{% if index %}{{ root_url }}{{ page.url }}{% endif %}#webmentions">{% webmention_count page.url %} Webmentions</a></li>
 								</ul>
 							</dd>
 		        		{% endif %}
@@ -93,7 +93,16 @@ single: true
 
 			<section id="webmentions" class="entry__comments dont-read">
 				<h1>Webmentions</h1>
-				{% include post/webmentions.html %}
+				{% webmentions page.url posts replies %}
+
+				<h2>Links</h2>
+				{% webmention_links page.url %}
+
+				<h2>Likes</h2>
+				{% webmention_likes page.url %}
+
+				<h2>Shares</h2>
+				{% webmention_reposts page.url %}
 			</section>
 
 		</div>

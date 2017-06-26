@@ -235,3 +235,10 @@ amp_gists:
   layout: responsive
   width: 320
   height: 240
+
+webmentions:
+  pause_lookups: true
+  cache_bad_uris_for: 7 # in days
+  legacy_domains:
+    - http://aaron-gustafson.com
+    - http://www.aaron-gustafson.com

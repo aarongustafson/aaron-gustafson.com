@@ -31,15 +31,14 @@ BUFFER_CACHE_DIR = File.expand_path('../../.cache', __FILE__)
 FileUtils.mkdir_p(BUFFER_CACHE_DIR)
 
 module Jekyll
-  
   class BufferCollectionGenerator < Generator
     safe true
     priority :low
-    
+
     def generate(site)
       config =  site.config
-      
-      # don’t publish on serving locally    
+
+      # don’t publish on serving locally
       serving = config['serving']
       if serving
         return
@@ -49,16 +48,14 @@ module Jekyll
       facebook = ENV['BUFFER_FACEBOOK_PROFILE'] or false
       linkedin = ENV['BUFFER_LINKEDIN_PROFILE'] or false
       access_token = ENV['BUFFER_ACCESS_TOKEN'] or false
-
-      if ! access_token
-        raise Error, "No Buffer access token found"
-        return
-      end
-
+      raise Error, 'No Buffer access token found' unless access_token
+      
       # tweet length = 140 - 22 url chars & a space
       twitter_text_length = 140 - 22 - 1
 
       today = Date.today
+
+      prefix = '🔖 '
 
       if defined?(BUFFER_CACHE_DIR)
         
@@ -114,16 +111,16 @@ module Jekyll
 
             payload = {
               'shorten' => 'false',
-              'text' => "#{excerpt} #{url}",
+              'text' => "#{prefix}#{excerpt} #{url}",
               'access_token' => access_token,
               'profile_ids[]' => []
             }
 
             # Twitter is special
             if twitter
-              twitter_text = data['twitter_text'] || data['title']
+              twitter_text = prefix + ( data['twitter_text'] || data['title'] )
               twitter_text = twitter_text[0,twitter_text_length]
-              #twitter_text = URI::escape( twitter_text )
+              # twitter_text = URI::escape( twitter_text )
 
               twitter_data = payload.dup
               twitter_data['text'] = "#{twitter_text} #{url}"
@@ -137,7 +134,7 @@ module Jekyll
             if facebook
               if post.data.has_key?('facebook_text')
                 facebook_data = payload.dup
-                facebook_data['text'] = post.data['facebook_text']
+                facebook_data['text'] = "#{prefix}#{post.data['facebook_text']}"
                 facebook_data['text'] << " #{url}"
                 facebook_data['profile_ids[]'] << facebook
 
@@ -150,7 +147,7 @@ module Jekyll
             if linkedin
               if post.data.has_key?('linkedin_text')
                 linkedin_data = payload.dup
-                linkedin_data['text'] = post.data['linkedin_text']
+                linkedin_data['text'] = "#{prefix}#{post.data['linkedin_text']}"
                 linkedin_data['text'] << " #{url}"
                 linkedin_data['profile_ids[]'] << linkedin
 
