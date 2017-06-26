@@ -1,7 +1,7 @@
 (function( window, document ){
     
     // Bail on older browsers
-    if ( ! ('querySelectorAll' in document) )
+    if ( ! 'querySelectorAll' in document )
     {
         return false;
     }
@@ -113,7 +113,7 @@
     if ( speech )
     {
         speak = function( msg ){
-            msg = new SpeechSynthesisUtterance( msg );
+            var msg = new SpeechSynthesisUtterance( msg );
             window.speechSynthesis.speak( msg );
         }; 
     }
@@ -159,7 +159,7 @@
         $active = $element;
         
         // copy the location (if possible )
-        url = ( $element.href.indexOf('#') === 0 ) ? location + $element.href : $element.href;
+        url = ( $element.href.indexOf('#') == 0 ) ? location + $element.href : $element.href;
         if ( copy( url ) )
         {
             event.preventDefault();
