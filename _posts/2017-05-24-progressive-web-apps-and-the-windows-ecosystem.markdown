@@ -194,14 +194,14 @@ Once PWAs are fully supported, they will use the same container technology curre
 
 * Standalone Window
 * Independent from browser process
-** Less overhead
-** Isolated cache
-** Nearly unlimited storage (indexed DB, localStorage, etc.)
+  * Less overhead
+  * Isolated cache
+  * Nearly unlimited storage (indexed DB, localStorage, etc.)
 * Offline & background processes
 * Access to Windows Runtime (WinRT) APIs via JavaScript
-** Calendar
-** Cortana
-** Address Book
+  * Calendar
+  * Cortana
+  * Address Book
 
 On Windows, Progressive Web Apps are essentially Hosted Web Apps, evolved. In fact, you could build your PWA and ship it as an HWA today and when the remainder of the PWA stack lands, it will automatically transform into a full-fledged PWA (another benefit of the Web for distribution).
 
