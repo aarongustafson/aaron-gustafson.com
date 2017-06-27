@@ -4,11 +4,10 @@
     if ( ! ( 'querySelectorAll' in document ) ) { return; }
 
     var s = document.createElement('script'),
-        $webmentions_link = document.querySelector( '.entry__jump--webmentions a' ),
-        webmentions_count = document.querySelectorAll( '.webmentions__item' ).length;
+        $webmentions_counter = document.querySelector( '.webmention-count' );
 
     // Add the webmentions count
-    $webmentions_link.innerHTML = webmentions_count + ' ' + $webmentions_link.innerHTML;
+    $webmentions_link.innerHTML = document.querySelectorAll( '.webmentions__item' ).length;
 
     // Preconnect to Disqus if possible
     if ( 'AG' in window &&
