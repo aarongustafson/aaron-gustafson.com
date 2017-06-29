@@ -6,7 +6,9 @@ gulp.task('html', function() {
 		destination = './_site',
 		htmlmin_config = {
 			removeComments: true,
-			collapseWhitespace: true
+			collapseWhitespace: true,
+			minifyJS: true,
+			ignoreCustomFragments: [ /{%[\s\S]*?%}/, /{{[\s\S]*?}}/ ]
 		};
 
 	return gulp.src(source)
