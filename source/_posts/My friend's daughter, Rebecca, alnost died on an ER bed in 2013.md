@@ -14,21 +14,19 @@ They did everything they could, but the treatments didn’t work.  Rebecca died 
 
 In those ten months, the total retail cost of her procedures and treatments was $1,691,627.45.  Nearly one point seven million US dollars.
 
-They had health insurance—really good insurance, thanks to COSE’s group plans and his wife’s and my combined incomes.  The insurance company’s negotiated rates meant they paid $991,537.29, or about 58% of the retail price.
+They had health insurance—really good insurance, thanks to COSE’s group plans and his wife’s and his combined incomes.  The insurance company’s negotiated rates meant they paid $991,537.29, or about 58% of the retail price.
 
-We paid very little, comparatively speaking, until you counted the monthly premiums.  All of it together, co-pays and premiums, was still in the low five figures.  Which we were, fortunately, able to pay.
+They paid very little, comparatively speaking, until you counted the monthly premiums.  All of it together, co-pays and premiums, was still in the low five figures.   Fortunately, they could afford to pay that.
 
-Without insurance, even if we’d been able to get the insurer’s rate, we’d have gone bankrupt.  All our investments, our house, everything gone.  If pre-existing conditions had prevented us from being covered, or if we’d been less fortunate and unable to afford premiums—bankrupted.
+Without insurance, even if they'd been able to get the insurer’s rate, they'd have gone bankrupt.  All their investments, their house, everything gone.  If pre-existing conditions had prevented them from being covered, or if they'd been less fortunate and unable to afford premiums—bankrupted.
 
 In which case, Rebecca’s brother and sister would have suffered her death, and the loss of their home and what precious little remained normal in their lives.
 
-How many families live through that double hell?  How many go completely broke trying to save their child?  How many could have saved their children, with coverage that paid for life-saving treatments?  How many never had any chance of saving their child, but ran out of money before treatment was complete and now believe their lack of insurance and money was what killed their child?
+Every family should have the chance to fight as hard as possible for their loved one’s life without going bankrupt in the process.  And for those who cannot be saved, no family should be denied the knowledge that they didn’t have a chance.  Because knowing that does provide some (small) measure of comfort.
 
-How many more will have to live with those unthinkable situations, if the House and Senate bills go forward?
+The Affordable Care Act isn't perfect, and it was severely and willfully undercut after it launched, but it was a huge step in the right direction.  The bill currently before Congress would be an enormous step back.
 
-The point, the essential point, is this: every family should have the chance to fight as hard as possible for their loved one’s life without going bankrupt in the process.  And for those who cannot be saved, no family should be denied the knowledge that they didn’t have a chance.  Because knowing that does provide some (small) measure of comfort.
-
-The Affordable Care Act wasn’t perfect, and it was severely and willfully undercut after it launched, but it was a huge step in the right direction.  The bill currently before Congress would be an enormous step back.  I doubt that I’ll benefit from the tax cuts that are part of the bill, but if I do, I’ll commit every cent I get from them and more to unseat anyone who votes yes on this bill.  I have let my senators know this.
+I doubt that I’ll benefit from the tax cuts that are part of the bill, but if I do, I’ll commit every cent I get from them and more to unseat anyone who votes yes on this bill.  I have let my senators know this.
 
 I would spare every family the pain we endured, if I could, but nobody has that power.  We do, together, have the power to help every family that must endure that pain, to give them access to the simple safety net they need, to concentrate everything they can on the struggle to heal.
 

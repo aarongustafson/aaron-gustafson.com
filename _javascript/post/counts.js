@@ -3,11 +3,7 @@
 
     if ( ! ( 'querySelectorAll' in document ) ) { return; }
 
-    var s = document.createElement('script'),
-        $webmentions_counter = document.querySelector( '.webmention-count' );
-
-    // Add the webmentions count
-    $webmentions_link.innerHTML = document.querySelectorAll( '.webmentions__item' ).length;
+    var s = document.createElement('script');
 
     // Preconnect to Disqus if possible
     if ( 'AG' in window &&

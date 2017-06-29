@@ -242,3 +242,6 @@ webmentions:
   legacy_domains:
     - http://aaron-gustafson.com
     - http://www.aaron-gustafson.com
+  js:
+    destination: _javascript/post
+    deploy: false

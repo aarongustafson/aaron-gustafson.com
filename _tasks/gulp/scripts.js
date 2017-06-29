@@ -4,9 +4,11 @@ var gulp = require('gulp'),
     gulpIf = require('gulp-if'),
     insert = require('gulp-insert'),
     concat = require('gulp-concat'),
-    uglify = require('gulp-uglify'),
     notify = require('gulp-notify'),
     rename = require('gulp-rename'),
+    uglifyjs = require('uglify-es'),
+    composer = require('gulp-uglify/composer'),
+    minify = composer(uglifyjs, console);
     //handleErrors = require('handleErrors'),
     source_folder = '_javascript',
     destination_folder = 'j',
@@ -26,7 +28,7 @@ gulp.task('scripts', folder(source_folder, function(folder){
         .pipe(gulp.dest(destination_folder))
         .pipe(gulp.dest(public_folder))
         .pipe(rename({suffix: '.min'}))
-        .pipe(uglify())
+        .pipe(minify({}))
         .pipe(gulpIf(folder=='serviceworker',rename_serviceworker))
         .pipe(gulp.dest(destination_folder))
         .pipe(gulp.dest(public_folder))
