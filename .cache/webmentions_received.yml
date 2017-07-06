@@ -10982,6 +10982,17 @@ https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
       class="webmention__title p-name"><a href="https://twitter.com/AaronGustafson/status/859778058831712256#favorited-by-167193309">Ken
       Wheeler favorited this.</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2017-05-03T15:09:52+00:00">3 May 2017</time></div></article></li>
+  '1498772370':
+    880541259814772736: "<li id=\"webmention-880541259814772736\" class=\"webmentions__item\"><article
+      class=\"h-cite webmention webmention--content-only\"><div class=\"webmention__author
+      p-author h-card\"><a class=\"u-url\" href=\"https://twitter.com/AaronGustafson\"><img
+      class=\"webmention__author__photo u-photo\" src=\"https://pbs.twimg.com/profile_images/827215347799441409/nklH5-Hn_normal.jpg\"
+      alt=\"\" title=\"Aaron Gustafson \U0001F680\U0001F578\"><b class=\"p-name\">Aaron
+      Gustafson \U0001F680\U0001F578</b></a></div><div class=\"webmention__content
+      p-content\"><p>@deanleigh @tkadlec <a href=\"https://t.co/fMd7lac5hy\">https://t.co/fMd7lac5hy</a></p>\n</div><div
+      class=\"webmention__meta\"><time class=\"webmention__pubdate dt-published\"
+      datetime=\"2017-06-29T21:39:30+00:00\">29 June 2017</time> | <a class=\"webmention__source
+      u-url\" href=\"https://twitter.com/AaronGustafson/status/880541259814772736\">Permalink</a></div></article></li>"
 https://www.aaron-gustafson.com/notebook/ten-years-on-twitter/:
   '1478779084':
     796683337767223296: |-
@@ -12759,6 +12770,10 @@ https://www.aaron-gustafson.com/notebook/insert-clickbait-headline-about-progres
       p-name"><a href="http://blog.grzegorzlaszczyk.pl/przydatne-linki/">Przydatne
       linki</a></div><div class="webmention__meta"><time class="webmention__pubdate
       dt-published" datetime="2017-03-21T00:00:00+00:00">21 March 2017</time></div></article></li>
+  '1499205910':
+    882359659474153472: |-
+      <li id="webmention-882359659474153472" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/chuckdowe"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/710872984458633216/ihYWEaDm_normal.jpg" alt="" title="Chuck Dowe"><b class="p-name">Chuck Dowe</b></a></div><div class="webmention__content p-content"><p>Why Progressive Enhancement isn’t a war against #JavaScript Aaron Gustafson ~ <a href="https://t.co/NTjUg018H2">https://t.co/NTjUg018H2</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2017-07-04T22:05:10+00:00">4 July 2017</time> | <a class="webmention__source u-url" href="https://twitter.com/chuckdowe/status/882359659474153472">Permalink</a></div></article></li>
 https://www.aaron-gustafson.com/notebook/missed-connections/:
   '1481053525':
     402103: <li id="webmention-402103" class="webmentions__item"><article class="h-cite
