@@ -68,11 +68,12 @@ module Jekyll
         end
         
         posts = []
-        site.collections.each do |collection|
-          posts << collection
+        site.collections.each do |name, collection|
+          collection.docs.each do |post|
+            posts << post
+          end
         end
         posts.each do | post |
-          
           data = post.data
           #puts data.inspect
 

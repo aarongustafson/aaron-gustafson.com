@@ -237,6 +237,7 @@ amp_gists:
   height: 240
 
 webmentions:
+  username: aaron-gustafson.com
   cache_bad_uris_for: 7 # in days
   legacy_domains:
     - http://aaron-gustafson.com
