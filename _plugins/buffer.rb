@@ -69,7 +69,7 @@ module Jekyll
         
         posts = []
         site.collections.each do |collection|
-          posts << collection.docs
+          posts << collection
         end
         posts.each do | post |
           
