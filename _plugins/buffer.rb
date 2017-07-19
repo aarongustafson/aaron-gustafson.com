@@ -41,6 +41,7 @@ module Jekyll
       # don’t publish on serving locally
       serving = config['serving']
       if serving
+        puts 'Currently serving locally, we won’t send anything to buffer'
         return
       end
 
