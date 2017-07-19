@@ -68,8 +68,9 @@ module Jekyll
         end
         
         posts = []
-        posts << site.posts.docs
-        posts << site.links.docs
+        site.collections.each do |collection|
+          posts << collection.docs
+        end
         posts.each do | post |
           
           data = post.data
