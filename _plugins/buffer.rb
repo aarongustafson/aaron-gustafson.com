@@ -67,7 +67,10 @@ module Jekyll
           buffered = []
         end
         
-        site.posts.docs.each do | post |
+        posts = []
+        posts << site.posts.docs
+        posts << site.links.docs
+        posts.each do | post |
           
           data = post.data
           #puts data.inspect
