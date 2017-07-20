@@ -5,6 +5,7 @@ date: 2017-07-06 10:03:04 -0400
 comments: true
 tags: ["progressive web apps", "web design", "web development", "user experience"]
 description: "While the name might imply that Progressive Web App tech is aimed at “apps”, every site can benefit from the tools they provide."
+crosspost_to_medium: true
 ---
 
 The other day, [Frances Berriman](https://fberriman.com/)—who coined the term “Progressive Web App”—[wrote a bit about how she came up with that name](https://fberriman.com/2017/06/26/naming-progressive-web-apps/). In it she clearly points out that the name has become a little problematic in dev circles<!-- more -->:
