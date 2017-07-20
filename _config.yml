@@ -213,7 +213,7 @@ jekyll-crosspost_to_medium:
   cache: .cache
   status: draft
   license: cc-40-by-sa
-  text: '<p><i>This post originally appeared <a href=\"#{url}\" rel=\"canonical\">on my blog</a>.</i></p>'
+  text: '<p><i>This post originally appeared <a href="{{ url }}" rel="canonical">on my blog</a>.</i></p>'
 
 # Crossposts
 crosspost_caches:
