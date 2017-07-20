@@ -218,6 +218,7 @@ jekyll-crosspost_to_medium:
 # Crossposts
 crosspost_caches:
   Medium: ./.cache/medium_crossposted.yml
+  Codementor: ./.cache/codementor_crossposted.yml
 
 # Adaptive Images Config
 adaptive_image:
