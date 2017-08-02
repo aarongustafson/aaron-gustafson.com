@@ -231,11 +231,11 @@ adaptive_image:
     - 100vw
 
 # AMP
-ampdir: amp
-amp_gists:
-  layout: responsive
-  width: 320
-  height: 240
+#ampdir: amp
+#amp_gists:
+#  layout: responsive
+#  width: 320
+#  height: 240
 
 webmentions:
   username: aaron-gustafson.com
