@@ -70,8 +70,8 @@ Header set Public-Key-Pins "pin-sha256='1AD97Iz6xlmMrlaim5bZoIhwUr2WAowsI+msDc0o
 # Redirect links
 RewriteBase /
 
-# AMP linkblog
-RewriteRule ^/amp/notebook/links/links/(.*) notebook/links/$1 [L,R=301]
+# Removing AMP
+RewriteRule ^amp/(.*)$ $1 [L,R=301]
 
 # Old Links in Notebook directory
 RewriteCond %{REQUEST_URI} ^notebook/
