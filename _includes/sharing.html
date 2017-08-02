@@ -27,7 +27,9 @@
 <meta property="og:locale" content="en_US">
 <link href="https://plus.google.com/+AaronGustafson?rel=author" rel="publisher">
 
+{% comment %}
 {% if page.feed == true %}<link rel="amphtml" href="{{ page.id | prepend: '/amp' | prepend: site.baseurl | prepend: site.url }}">{% endif %}
+{% endcomment %}
 
 {% include feeds/list.html %}
 
