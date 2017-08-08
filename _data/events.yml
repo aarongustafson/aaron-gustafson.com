@@ -41,10 +41,10 @@
   location: "Vancouver, BC Canada"
 
 - id: 117
-  title: DevUX
-  url: http://lanyrd.com/2017/devux/
-  date: 2017-09-14 09:00:00 +0100
-  location: "Malmö, Sweden"
+  title: Breaking Development
+  url: http://lanyrd.com/2017/bdconf/
+  date: 2017-10-25 09:00:00 +0500
+  location: "Nashville, TN USA"
 
 - id: 116
   title: Generate
