@@ -9441,6 +9441,18 @@ https://www.aaron-gustafson.com/notebook/interface-experience-maps/:
       Your Code Has To Work: Complying With Legal Mandates</a></div><div class="webmention__meta"><time
       class="webmention__pubdate dt-published" datetime="2017-03-09T23:42:06+00:00">9
       March 2017</time></div></article></li>'
+  '1502805500':
+    897457431931912192: "<li id=\"webmention-897457431931912192\" class=\"webmentions__item\"><article
+      class=\"h-cite webmention webmention--content-only\"><div class=\"webmention__author
+      p-author h-card\"><a class=\"u-url\" href=\"https://twitter.com/AaronGustafson\"><img
+      class=\"webmention__author__photo u-photo\" src=\"https://pbs.twimg.com/profile_images/827215347799441409/nklH5-Hn_normal.jpg\"
+      alt=\"\" title=\"Aaron Gustafson \U0001F680\U0001F578\"><b class=\"p-name\">Aaron
+      Gustafson \U0001F680\U0001F578</b></a></div><div class=\"webmention__content
+      p-content\"><p>@click2carney FWIW, QA testing of PE can be difficult, but tools
+      like IxMaps can make it much easier: <a href=\"https://t.co/qoXFPWsMza\">https://t.co/qoXFPWsMza</a></p>\n</div><div
+      class=\"webmention__meta\"><time class=\"webmention__pubdate dt-published\"
+      datetime=\"2017-08-15T13:58:20+00:00\">15 August 2017</time> | <a class=\"webmention__source
+      u-url\" href=\"https://twitter.com/AaronGustafson/status/897457431931912192\">Permalink</a></div></article></li>"
 https://www.aaron-gustafson.com/notebook/tags/progressive-enhancement/:
   '1475798400':
     784433018308063232: |-
@@ -14820,3 +14832,7 @@ https://www.aaron-gustafson.com/notebook/your-site-should-be-a-pwa/:
     889727006396399616: |-
       <li id="webmention-889727006396399616" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/Sampath_Lokuge"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/748467286118273024/QUSnSFtC_normal.jpg" alt="" title="sampath lokuge"><b class="p-name">sampath lokuge</b></a></div><div class="webmention__content p-content"><p><a href="https://t.co/Jpe5vLo4CN">https://t.co/Jpe5vLo4CN</a></p>
       </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2017-07-25T06:00:23+00:00">25 July 2017</time> | <a class="webmention__source u-url" href="https://twitter.com/Sampath_Lokuge/status/889727006396399616">Permalink</a></div></article></li>
+  '1502251380':
+    895133285512359936: |-
+      <li id="webmention-895133285512359936" class="webmentions__item"><article class="h-cite webmention webmention--content-only"><div class="webmention__author p-author h-card"><a class="u-url" href="https://twitter.com/SitePointJS"><img class="webmention__author__photo u-photo" src="https://pbs.twimg.com/profile_images/655409256544509952/DlfK0dJ9_normal.jpg" alt="" title="SitePoint JavaScript"><b class="p-name">SitePoint JavaScript</b></a></div><div class="webmention__content p-content"><p>Your Site—Any Site—Should be a PWA <a href="https://t.co/NKPuRKCHSJ">https://t.co/NKPuRKCHSJ</a></p>
+      </div><div class="webmention__meta"><time class="webmention__pubdate dt-published" datetime="2017-08-09T04:03:00+00:00">9 August 2017</time> | <a class="webmention__source u-url" href="https://twitter.com/SitePointJS/status/895133285512359936">Permalink</a></div></article></li>

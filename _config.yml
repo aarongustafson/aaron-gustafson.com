@@ -245,3 +245,8 @@ webmentions:
     - http://www.aaron-gustafson.com
   js:
     destination: _javascript/post
+  throttle_lookups:
+    last_week: daily
+    last_month: weekly
+    last_year: monthly
+    older: every 2 months

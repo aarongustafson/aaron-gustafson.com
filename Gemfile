@@ -32,6 +32,7 @@ group :jekyll_plugins do
   gem 'jekyll-time-to-read'
   gem 'jekyll-typogrify'
   gem 'jekyll-webmention_io'
+  #gem 'jekyll-webmention_io', :path => '/Users/aarongu/Dropbox/Code/jekyll-webmention_io'
   gem 'launchy'
   gem 'nokogiri'
   gem 'octopress-date-format'
