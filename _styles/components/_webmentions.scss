@@ -71,6 +71,34 @@
         &--activity &__title {
             display: inline;
         }
+
+        &--like,
+        &--repost {
+
+            border: 0;
+            display: inline;
+            margin: 0 5px 0 0;
+            padding: 0;
+
+            .webmention__author {
+                display: inline;
+
+                &__photo {
+                    border: 1px solid;
+                    border-radius: 50%;
+                    
+                    display: inline;
+                    max-width: 48px;
+                    margin: 0;
+                    
+                    position: static;
+                }
+
+                a {
+                    background-image: none !important;
+                }
+            }
+        }
     }
 
 }

@@ -245,6 +245,10 @@ webmentions:
     - http://www.aaron-gustafson.com
   js:
     destination: _javascript/post
+  templates:
+    likes: _includes/webmentions/likes.html
+    reposts: _includes/webmentions/reposts.html
+    webmentions: _includes/webmentions/webmentions.html
   throttle_lookups:
     last_week: daily
     last_month: weekly

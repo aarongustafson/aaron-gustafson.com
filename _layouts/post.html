@@ -93,10 +93,7 @@ single: true
 
 			<section id="webmentions" class="entry__comments dont-read">
 				<h1>Webmentions</h1>
-				{% webmentions page.url posts replies %}
-
-				<h2>Links</h2>
-				{% webmention_links page.url %}
+				{% webmentions page.url posts replies links %}
 
 				<h2>Likes</h2>
 				{% webmention_likes page.url %}

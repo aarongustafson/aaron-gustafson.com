@@ -190,8 +190,8 @@ html body {
 .wf-active html body, html .wf-active body {
   word-spacing: 2px;
 }
-nav ol, nav
-ul, .fields, .listing, .entry__jump-links {
+nav ol,
+nav ul, .fields, .listing, .entry__jump-links {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
@@ -354,19 +354,18 @@ hr {
 /*------------------------------------*\
     Lists
 \*------------------------------------*/
-ol,
-ul {
+ol, ul {
   line-height: 1.4;
   margin-left: 22px;
   margin-left: 1.375rem;
   padding-left: 0;
 }
-nav ol, nav
-ul {
+nav ol,
+nav ul {
   margin: 0;
 }
-nav ol li, nav
-ul li {
+nav ol li,
+nav ul li {
   margin: 0;
 }
 
@@ -436,27 +435,25 @@ a[rel="original-article"]::after {
 }
 
 @supports (background-image: linear-gradient(black, white)) {
-  a:link,
-  a:visited {
+  a:link, a:visited {
     background-image: linear-gradient(to top, transparent, transparent 1px, #34AD23 1px, #34AD23 2px, transparent 2px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
-  h1 a:link, h1
-  a:visited {
+  h1 a:link,
+  h1 a:visited {
     background-image: linear-gradient(to top, transparent, transparent 6px, #34AD23 6px, #34AD23 7px, transparent 7px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
 
-  a:hover,
-  a:focus {
+  a:hover, a:focus {
     background-image: linear-gradient(to top, transparent, transparent 1px, #27831a 1px, #27831a 2px, transparent 2px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
-  h1 a:hover, h1
-  a:focus {
+  h1 a:hover,
+  h1 a:focus {
     background-image: linear-gradient(to top, transparent, transparent 6px, #27831a 6px, #27831a 7px, transparent 7px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
@@ -1344,6 +1341,26 @@ html.wf-active div.gist a {
 }
 .webmention--activity .webmention__author, .webmention--activity .webmention__title {
   display: inline;
+}
+.webmention--like, .webmention--repost {
+  border: 0;
+  display: inline;
+  margin: 0 5px 0 0;
+  padding: 0;
+}
+.webmention--like .webmention__author, .webmention--repost .webmention__author {
+  display: inline;
+}
+.webmention--like .webmention__author__photo, .webmention--repost .webmention__author__photo {
+  border: 1px solid;
+  border-radius: 50%;
+  display: inline;
+  max-width: 48px;
+  margin: 0;
+  position: static;
+}
+.webmention--like .webmention__author a, .webmention--repost .webmention__author a {
+  background-image: none !important;
 }
 
 /*------------------------------------*\
