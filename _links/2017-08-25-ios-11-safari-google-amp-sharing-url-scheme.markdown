@@ -6,8 +6,8 @@ ref_url: https://www.theverge.com/2017/8/23/16193584/ios-11-safari-google-amp-sh
 in_reply_to: https://www.theverge.com/2017/8/23/16193584/ios-11-safari-google-amp-sharing-url-scheme
 ref_source: The Verge
 via:
-	name: Malte Ubl
-	url: https://twitter.com/cramforce/status/900478709215281152
+  name: Malte Ubl
+  url: https://twitter.com/cramforce/status/900478709215281152
 ---
 
 {% tweet 900478709215281152 %}
