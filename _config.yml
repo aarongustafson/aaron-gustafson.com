@@ -250,7 +250,6 @@ webmentions:
     reposts: _includes/webmentions/reposts.html
     webmentions: _includes/webmentions/webmentions.html
   throttle_lookups:
-    last_week: daily
-    last_month: weekly
-    last_year: monthly
+    last_month: daily
+    last_year: weekly
     older: every 2 months

@@ -59,6 +59,7 @@ task :new_link, :url do |t, args|
     post.puts "title: \"#{link_title}\""
     post.puts "twitter_text: \"\""
     post.puts "date: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
+    post.puts "tags: []"
     post.puts "ref_url: #{url}"
     post.puts "in_reply_to: #{url}"
     post.puts "ref_source: #{source}"
