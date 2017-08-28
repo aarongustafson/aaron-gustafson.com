@@ -10,6 +10,6 @@ via:
   url: https://twitter.com/cramforce/status/900478709215281152
 ---
 
-{% tweet 900478709215281152 %}
+{% tweet https://twitter.com/cramforce/status/900478709215281152 %}
 
 This is great to see! I think `link[rel="canonical"]` is not used often enough. I’d love to see all sharing protocols adopt this approach for things like cross-posts, m-dot sites, and more.
