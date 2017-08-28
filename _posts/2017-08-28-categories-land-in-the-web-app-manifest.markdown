@@ -25,7 +25,7 @@ Here’s quick example of a hypothetical manifest for a web version of the book 
 
 {% gist e4465b97349bd0707866772451dd7c3a category-manifest.json %}
 
-Here you can see 5 categories being assigned to the book. I chose to start with one of the top-level categories from the list and then get more specific, kinda like [how `class names` were originally conceived](https://adaptivewebdesign.info/1st-edition/read/chapter-2.html#ad-hoc-semantics). The genre "Kaiju" is a sub-classification of "science fiction & fantasy" novels, which are a sub-classification of "fiction", which is a sub-classification of "books".
+Here you can see 5 categories being assigned to the book. I chose to start with one of the top-level categories from the list and then get more specific, kinda like [how `class` names were originally conceived](https://adaptivewebdesign.info/1st-edition/read/chapter-2.html#ad-hoc-semantics). The genre "Kaiju" is a sub-classification of "science fiction & fantasy" novels, which are a sub-classification of "fiction", which is a sub-classification of "books".
 
 Though the W3C list is in English (as with most web specs), there is no requirement to have all of your categories in English. The final entry, "<i lang="jp">怪獣</i>", is "Kaiju" in Japanese.
 
