@@ -5,5 +5,5 @@
     "src": "images/icon.png",
     "sizes": "192x192"
   }],
-  "category": ["books", "fiction", "science fiction & fantasy", "kaiju", "怪獣"]
+  "categories": ["books", "fiction", "science fiction & fantasy", "kaiju", "怪獣"]
 }
