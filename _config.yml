@@ -244,7 +244,9 @@ webmentions:
     - http://aaron-gustafson.com
     - http://www.aaron-gustafson.com
   js:
+    uglify: false
     destination: _javascript/post
+    deploy: false
   templates:
     likes: _includes/webmentions/likes.html
     reposts: _includes/webmentions/reposts.html
