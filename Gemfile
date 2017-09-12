@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 ruby RUBY_VERSION
 
+# If you run into Bundler issues on OS X
+# sudo gem install bundler -n /usr/local/bin
+
 # Hello! This is where you manage which Jekyll version is used to run.
 # When you want to use a different version, change it below, save the
 # file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
@@ -31,8 +34,8 @@ group :jekyll_plugins do
   gem 'jekyll-tagging-related_posts'
   gem 'jekyll-time-to-read'
   gem 'jekyll-typogrify'
-  #gem 'jekyll-webmention_io'
-  gem 'jekyll-webmention_io', :path => '/Users/aarongu/Dropbox/Code/jekyll-webmention_io'
+  gem 'jekyll-webmention_io'
+  #gem 'jekyll-webmention_io', :path => '/Users/aarongu/Dropbox/Code/jekyll-webmention_io'
   gem 'launchy'
   gem 'nokogiri'
   gem 'octopress-date-format'
