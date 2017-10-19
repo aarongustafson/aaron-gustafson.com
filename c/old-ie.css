@@ -201,7 +201,7 @@ textarea {
     Navigation
 \*------------------------------------*/
 [role=navigation] {
-  background: #34AD23;
+  background: #27831B;
   color: #fff;
   padding-bottom: 0;
 }
@@ -235,7 +235,7 @@ textarea {
 }
 [role=navigation] .main-navigation__link::after {
   content: "";
-  background: #1b5812;
+  background: #0e2e0a;
   display: block;
   height: 3px;
   width: 100%;

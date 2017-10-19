@@ -75,7 +75,7 @@ class Vimeo < Liquid::Tag
 
     @style = "background-image:url(#{@poster})" 
     
-    @player = "//player.vimeo.com/video/#{@id}?autoplay=1"
+    @player = "https://player.vimeo.com/video/#{@id}?autoplay=1"
 
     # note: so special care is required to produce html code that will not be massage by the 
     #       markdown processor :
@@ -85,7 +85,7 @@ class Vimeo < Liquid::Tag
     #            should not be indented with tabs or spaces. '
     result = "<figure id=\"fig-#{@id}\" class=\"figure figure--video\">"
     result << '<div class="video-embed video-embed--vimeo video-embed--16x9">'
-    result << "<a class=\"video-embed__lazy-link\" style=\"#{@style}\" href=\"//vimeo.com/#{@id}\" data-lazy-video-src=\"#{@player}\">"
+    result << "<a class=\"video-embed__lazy-link\" style=\"#{@style}\" href=\"https://vimeo.com/#{@id}\" data-lazy-video-src=\"#{@player}\">"
     result << '<div class="video-embed__lazy-div"></div>'
     result << "<div class=\"video-embed__lazy-info\">#{@title}</div>"
     result << '</a></div></figure>'

@@ -15,6 +15,6 @@ They live-streamed the event and immediately [posted the video on YouTube](https
 
 {% youtube Fu1L34TLUHM %}
 
-<figure class="video-embed video-embed--16x9" id="figure-2015-08-26-01"><iframe class="video-embed__video" src="//www.slideshare.net/slideshow/embed_code/key/7jsUtSzGEqFyKj" frameborder="0"></iframe></figure>
+<figure class="video-embed video-embed--16x9" id="figure-2015-08-26-01"><iframe class="video-embed__video" src="https://www.slideshare.net/slideshow/embed_code/key/7jsUtSzGEqFyKj" frameborder="0"></iframe></figure>
 
 For a little more coverage, you can also check out [Will Sullivan’s takeaways from the talk](http://www.digitalgov.gov/2015/08/25/trends-on-tuesday-web-standards-advocate-advises-adaptive-web-design-for-government-sites/).

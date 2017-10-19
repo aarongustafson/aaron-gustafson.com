@@ -292,7 +292,7 @@ You probably have more questions. I’ll do my best to answer them in the commen
 [Slides from this talk](https://www.slideshare.net/AaronGustafson/progressive-web-apps-and-the-windows-ecosystem-build-2017) are available on [Slideshare](https://www.slideshare.net).
 
 <figure class="video-embed video-embed--16x9" id="figure-2017-05-24-13">  
-<iframe class="video-embed__video" src="//www.slideshare.net/slideshow/embed_code/key/InI5w0bH4JxCwW" frameborder="0"></iframe>
+<iframe class="video-embed__video" src="https://www.slideshare.net/slideshow/embed_code/key/InI5w0bH4JxCwW" frameborder="0"></iframe>
 </figure>
 
 ## Video

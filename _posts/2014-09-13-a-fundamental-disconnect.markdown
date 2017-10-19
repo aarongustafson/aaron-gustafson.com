@@ -8,7 +8,7 @@ description: "The Web is ubiquitous. The Web is messy. And, as much as we might 
 redirect_from: /notebook/2014/a-fundamental-disconnect/
 ---
 
-Yesterday at [BlendConf](//2014.blendconf.com/), [Scott Hanselman](//www.hanselman.com/) gave a fantastically-entertaining keynote entitled “JavaScript, The Cloud, and the rise of the New Virtual Machine.” In it, he chronicled all of the ways Web development and deployment has changed—for the better—over the years. He also boldly declared that JavaScript is now, effectively, a virtual machine in the browser.
+Yesterday at [BlendConf](https://2014.blendconf.com/), [Scott Hanselman](https://www.hanselman.com/) gave a fantastically-entertaining keynote entitled “JavaScript, The Cloud, and the rise of the New Virtual Machine.” In it, he chronicled all of the ways Web development and deployment has changed—for the better—over the years. He also boldly declared that JavaScript is now, effectively, a virtual machine in the browser.
 
 <!-- more -->
 
@@ -29,9 +29,9 @@ If we’re writing server-side software in Python or Rails or even PHP, one of t
 
 In the more traditional installed software world, we can similarly control the environment by placing certain restrictions on what operating systems our code can run on and what the dependencies for its use may be in terms of hard drive space and RAM required. We provide that information up front and users can choose to use our software or use a competing product based on what will work for them.
 
-On the Web, however, all bets are off. The Web is ubiquitous. The Web is messy. And, as much as we might like to control a user’s experience down to the very pixel, those of us who have been working on the Web for a while understand that it’s a fool’s errand and [have adjusted our expectations accordingly](//dowebsitesneedtolookexactlythesameineverybrowser.com/). Unfortunately, this new crop of Web developers doesn’t seem to have gotten that memo.
+On the Web, however, all bets are off. The Web is ubiquitous. The Web is messy. And, as much as we might like to control a user’s experience down to the very pixel, those of us who have been working on the Web for a while understand that it’s a fool’s errand and [have adjusted our expectations accordingly](https://dowebsitesneedtolookexactlythesameineverybrowser.com/). Unfortunately, this new crop of Web developers doesn’t seem to have gotten that memo.
 
-We do not control the environment executing our JavaScript code, interpreting our HTML, or applying our CSS. Our users control the device (and, thereby, its processor speed, RAM, etc.). Our users choose the operating system. Our users pick the browser and which version they use. Our users can decide which add-ons they put in the browser. Our users can shrink or enlarge the fonts used to display our Web pages and apps. And the Internet providers that sit between us and our users, dictating the network speed, latency, and ultimately [controlling how—and what part of—our content makes it to our users](//aaron-gustafson.com/notebook/2014/the-network-effect/).
+We do not control the environment executing our JavaScript code, interpreting our HTML, or applying our CSS. Our users control the device (and, thereby, its processor speed, RAM, etc.). Our users choose the operating system. Our users pick the browser and which version they use. Our users can decide which add-ons they put in the browser. Our users can shrink or enlarge the fonts used to display our Web pages and apps. And the Internet providers that sit between us and our users, dictating the network speed, latency, and ultimately [controlling how—and what part of—our content makes it to our users](https://aaron-gustafson.com/notebook/2014/the-network-effect/).
 
 All we can do is author a compelling, adaptive experience, cross our fingers, and hope for the best.
 

@@ -11,4 +11,4 @@ ref_source: The Tonight Show
 
 Hilarious!
 
-<figure id="fig-2015-03-20-01" class="figure figure--video"><div class="video-embed video-embed--vimeo video-embed--16x9"><iframe class="video-embed__video" frameborder="0" allowfullscreen="" src="//player.theplatform.com/p/NnzsPC/widget/select/media/Rq9eJUYppzJM"></iframe></div></figure>
+<figure id="fig-2015-03-20-01" class="figure figure--video"><div class="video-embed video-embed--vimeo video-embed--16x9"><iframe class="video-embed__video" frameborder="0" allowfullscreen="" src="https://player.theplatform.com/p/NnzsPC/widget/select/media/Rq9eJUYppzJM"></iframe></div></figure>

@@ -16,14 +16,14 @@ I just came off stage from my talk at the [Microsoft Edge Web Summit](https://ch
 ## Slides
 
 <figure class="video-embed video-embed--16x9" id="figure-2015-05-05-01">  
-<iframe class="video-embed__video" src="//www.slideshare.net/slideshow/embed_code/key/H1xKkpN0KIoXq3" frameborder="0"></iframe>  
+<iframe class="video-embed__video" src="https://www.slideshare.net/slideshow/embed_code/key/H1xKkpN0KIoXq3" frameborder="0"></iframe>  
 </figure>
 
 ## Video
 
 <figure class="video-embed video-embed--16x9" id="figure-2015-05-05-02">  
-<video class="video-embed__video" poster="//sec.ch9.ms/sessions/websummit/2015/GA05-LG.jpg" controls="">
-<source src="//video.ch9.ms/sessions/websummit/2015/GA05.mp4">
-<p>Download it: <a href="//video.ch9.ms/sessions/websummit/2015/GA05.mp4" download>High Quality MP4</a> or <a href="//video.ch9.ms/sessions/websummit/2015/GA05-mobile.mp4" download>Low Quality MP4</a></p>
+<video class="video-embed__video" poster="https://sec.ch9.ms/sessions/websummit/2015/GA05-LG.jpg" controls="">
+<source src="https://video.ch9.ms/sessions/websummit/2015/GA05.mp4">
+<p>Download it: <a href="https://video.ch9.ms/sessions/websummit/2015/GA05.mp4" download>High Quality MP4</a> or <a href="https://video.ch9.ms/sessions/websummit/2015/GA05-mobile.mp4" download>Low Quality MP4</a></p>
 </video>
 </figure>

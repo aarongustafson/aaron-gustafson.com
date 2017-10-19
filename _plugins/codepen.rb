@@ -75,14 +75,14 @@ module Jekyll
         end
         # build the text
         text = "See the Pen <a href=\"#{pen_url}\">#{result['title']}</a> "
-        text << "by #{result['author_name']} (<a href=\"//codepen.io/#{@user}\">#{@user}</a>) "
-        text << 'on <a href="//codepen.io">CodePen</a>.'
+        text << "by #{result['author_name']} (<a href=\"https://codepen.io/#{@user}\">#{@user}</a>) "
+        text << 'on <a href="https://codepen.io">CodePen</a>.'
         code = '<p'
         attrs.each do |key,value|
           code << " #{key}=\"#{value}\""
         end
         code << ">#{text}</p>"
-        code << '<script async src="//codepen.io/assets/embed/ei.js"></script>'
+        code << '<script async src="https://codepen.io/assets/embed/ei.js"></script>'
         
         # store it back in the cache
         Cache[cache_key] = code

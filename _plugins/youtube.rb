@@ -124,7 +124,7 @@ class YouTube < Liquid::Tag
 
     @style = "background-image:url(//i2.ytimg.com/vi/#{@id}/0.jpg);"
     
-    @player = "//www.youtube.com/embed/#{@id}?"
+    @player = "https://www.youtube.com/embed/#{@id}?"
     @player << 'autoplay=1' # start playing
     @player << @snippet # start and end
     @player << '&amp;modestbranding=1' # Turn off YouTube branding
@@ -138,7 +138,7 @@ class YouTube < Liquid::Tag
     #            should not be indented with tabs or spaces. '
     result = "<figure id=\"fig-#{@id}\" class=\"figure figure--video\">"
     result << "<div class=\"video-embed video-embed--youtube video-embed--#{@size}\">"
-    result << "<a class=\"video-embed__lazy-link\" style=\"#{@style}\" href=\"//www.youtube.com/watch?v=#{@id}#{@snippet}\" data-lazy-video-src=\"#{@player}\">"
+    result << "<a class=\"video-embed__lazy-link\" style=\"#{@style}\" href=\"https://www.youtube.com/watch?v=#{@id}#{@snippet}\" data-lazy-video-src=\"#{@player}\">"
     result << '<div class="video-embed__lazy-div"></div>'
     result << "<div class=\"video-embed__lazy-info\">#{@title}</div>"
     result << '</a></div></figure>'

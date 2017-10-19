@@ -10,7 +10,7 @@ canonical_site: The Easy Designs Blog
 redirect_from: /notebook/2014/the-native-vs-stylable-tug-of-war/
 ---
 
-In his astute post [“‘Native experience’ vs styling select boxes”](//www.brucelawson.co.uk/2014/native-experience-vs-styling-select-boxes/), Bruce Lawson correctly identified a common tension in the web world:
+In his astute post [“‘Native experience’ vs styling select boxes”](https://www.brucelawson.co.uk/2014/native-experience-vs-styling-select-boxes/), Bruce Lawson correctly identified a common tension in the web world:
 
 > But why this urge to re-style page elements that end-users are familiar with? … Or is it that we love native look and feel, except when we don’t?
 
@@ -56,7 +56,7 @@ First of all, there’s the possibility we could actually end up making the inte
 
 Assuming our tests go well, we will need to maintain this code and do all of the requisite browser testing. And potentially upgrade our code as new browsers and browser versions come out. Depending on the complexity of the code, this could become a large requirement, but if it is ultimately in the service of making the web a better, more usable interaction environment, it could be worth it.
 
-For what it’s worth, if we go this route and are successful, we should consider getting involved in the spec-writing process at the [W3C](//w3.org) or  [WhatWG](//whatwg.org). We should contribute our recommended changes back to the community and share what we learned. If we make a compelling argument, perhaps our idea will become part of some future standard and we can taper off our browser testing when the change goes native.
+For what it’s worth, if we go this route and are successful, we should consider getting involved in the spec-writing process at the [W3C](https://w3.org) or  [WhatWG](https://whatwg.org). We should contribute our recommended changes back to the community and share what we learned. If we make a compelling argument, perhaps our idea will become part of some future standard and we can taper off our browser testing when the change goes native.
 
 <hr>
 

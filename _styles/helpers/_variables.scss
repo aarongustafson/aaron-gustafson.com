@@ -9,8 +9,8 @@ $debug-grid: false; // true;
 
 /*	URLs
 	========================================================================== */
-$domain: "http://www.aaron-gustafson.com";
-$cdn_domain: ""; //"//e.ed-cdn.com";
+$domain: "https://www.aaron-gustafson.com";
+$cdn_domain: ""; //"https://e.ed-cdn.com";
 
 
 /*	Breakpoint Management
@@ -100,7 +100,7 @@ $color-white: #fff;
 $color-grey: #666;
 $color-grey-light: #DDD;
 $color-off-white: #F9F9F9;
-$color-green: #34AD23;
+$color-green: #27831B;
 $color-green-mid: darken( $color-green, 10% );
 $color-green-dark: darken( $color-green, 20% );
 $color-green-light: lighten( $color-green, 20% );
