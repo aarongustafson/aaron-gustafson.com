@@ -3,6 +3,10 @@ RewriteEngine on
 RewriteCond %{HTTP_HOST} ^aaron-gustafson.com [NC]
 RewriteRule ^(.*)$ https://www.aaron-gustafson.com/$1 [L,R=301,NC]
 
+# Errors
+ErrorDocument 400 /400.html
+ErrorDocument 404 /404.html
+
 # UTF-8
 AddDefaultCharset utf-8
 
