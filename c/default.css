@@ -226,7 +226,7 @@ table thead, .listing__item__meta {
 	Global element styles
 \*------------------------------------*/
 /*------------------------------------*\
-    Body-level settings
+Body-level settings
 \*------------------------------------*/
 @-moz-viewport {
   width: device-width;
@@ -243,10 +243,6 @@ table thead, .listing__item__meta {
 @viewport {
   width: device-width;
   zoom: 1.0;
-}
-html {
-  background: linear-gradient(#FF6BA6 1px, transparent 1px);
-  background-size: 100% .75;
 }
 html body {
   background: #fff;
@@ -1969,7 +1965,7 @@ html.wf-active .promo a:active {
 	Global element styles
 \*------------------------------------*/
 /*------------------------------------*\
-    Body-level settings
+Body-level settings
 \*------------------------------------*/
 /*------------------------------------*\
     Heading Levels
