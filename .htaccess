@@ -34,12 +34,7 @@ Header set Cache-Control "public, no-transform"
 
 # Force the latest IE version
 # Use ChromeFrame if it's installed for a better experience for the poor IE folk
-<IfModule mod_setenvif.c>
-  <IfModule mod_headers.c>
-    BrowserMatch MSIE ie
-    Header set X-UA-Compatible "IE=Edge,chrome=1" env=ie
-  </IfModule>
-</IfModule>
+Header set X-UA-Compatible "ie=edge,chrome=1"
 
 # Audio MIME Types
 AddType audio/mpeg mp3
@@ -61,18 +56,25 @@ Header set Content-Encoding "gzip"
 </FilesMatch>
 
 # JSON
-AddType 'application/json; charset=UTF-8' .json
+AddType 'application/json; charset=utf-8' .json
+
+# UTF-8
+AddType 'text/css; charset=utf-8' .css
+AddType 'text/javascript; charset=utf-8' .js
 
 # Fonts
 AddType application/vnd.ms-fontobject eot
 
 # Lockdown - only on the live serve though
+<FilesMatch "\.(html|htm)$">
+  SetEnv HTML
+</FilesMatch>
+Header set X-XSS-Protection "1; mode=block"
+Header set X-Content-Type-Options "nosniff"
 <IfDefine LIVE>
   Header set Content-Security-Policy "default-src * ; script-src * 'unsafe-inline' ; img-src * data: ; style-src * 'unsafe-inline' ; upgrade-insecure-requests; block-all-mixed-content; reflected-xss block;"
-  Header always set X-Xss-Protection "1; mode=block"
   Header set Public-Key-Pins "pin-sha256='1AD97Iz6xlmMrlaim5bZoIhwUr2WAowsI+msDc0op2k='; pin-sha256='4SflGm7MUpml4PWSclDw7OGMJdRk+YcIfi6qJ2iG6zE='; pin-sha256='BFhqRqgHU+b7VQLsM1kZwBu6VVKnLx7QiO2PCLfG1m4='; max-age=10"
   Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
-  Header set X-Content-Type-Options "nosniff"
 </IfDefine>
 
 # Redirect links
