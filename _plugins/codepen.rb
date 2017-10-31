@@ -61,11 +61,14 @@ module Jekyll
 
         # build it fresh
         pen_url = "https://codepen.io/#{@user}/pen/#{@pen}"
+        api_endpoint = URI("https://codepen.io/api/oembed?url=#{pen_url}")
 
         # extract video information using a REST command
-        response = Net::HTTP.get_response(
-          'codepen.io', "/api/oembed?url=#{pen_url}"
-        )
+        Net::HTTP.start(api_endpoint.host, api_endpoint.port,
+          :use_ssl => api_endpoint.scheme == 'https') do |http|
+          request = Net::HTTP::Get.new api_endpoint      
+          response = http.request request # Net::HTTPResponse object
+        end
         data = response.body
         result = JSON.parse(data)
         puts "CodePen Embed: Pen #{@id} not found" unless result['success']
