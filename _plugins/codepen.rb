@@ -66,40 +66,41 @@ module Jekyll
         # extract video information using a REST command
         Net::HTTP.start(api_endpoint.host, api_endpoint.port,
           :use_ssl => api_endpoint.scheme == 'https') do |http|
-          request = Net::HTTP::Get.new api_endpoint      
-          response = http.request request # Net::HTTPResponse object
+          request = Net::HTTP::Get.new api_endpoint
+          response = http.request request
+
+          data = response.body
+          result = JSON.parse(data)
+          puts "CodePen Embed: Pen #{@id} not found" unless result['success']
+  
+          attrs = {
+            'class'       => 'codepen',
+            'data-user'   => @user,
+            'data-href'   => @pen,
+            'data-height' => @height,
+            'data-type'   => @type
+          }
+          attrs['data-preview'] = true if @preview
+  
+          # build the text
+          text = "See the Pen <a href=\"#{pen_url}\">#{result['title']}</a> "
+          text << "by #{result['author_name']} "
+          text << "(<a href=\"https://codepen.io/#{@user}\">#{@user}</a>) "
+          text << 'on <a href="https://codepen.io">CodePen</a>.'
+          code = '<p'
+          attrs.each do |key, value|
+            code << " #{key}=\"#{value}\""
+          end
+          code << ">#{text}</p>"
+          code << '<script async src="https://codepen.io/assets/embed/ei.js">'
+          code << '</script>'
+
+          # store it back in the cache
+          CACHE[cache_key] = code
+          File.open(CACHE_FILE, 'w') { |f| YAML.dump(CACHE, f) }
+
+          code
         end
-        data = response.body
-        result = JSON.parse(data)
-        puts "CodePen Embed: Pen #{@id} not found" unless result['success']
-
-        attrs = {
-          'class'       => 'codepen',
-          'data-user'   => @user,
-          'data-href'   => @pen,
-          'data-height' => @height,
-          'data-type'   => @type
-        }
-        attrs['data-preview'] = true if @preview
-
-        # build the text
-        text = "See the Pen <a href=\"#{pen_url}\">#{result['title']}</a> "
-        text << "by #{result['author_name']} "
-        text << "(<a href=\"https://codepen.io/#{@user}\">#{@user}</a>) "
-        text << 'on <a href="https://codepen.io">CodePen</a>.'
-        code = '<p'
-        attrs.each do |key, value|
-          code << " #{key}=\"#{value}\""
-        end
-        code << ">#{text}</p>"
-        code << '<script async src="https://codepen.io/assets/embed/ei.js">'
-        code << '</script>'
-
-        # store it back in the cache
-        CACHE[cache_key] = code
-        File.open(CACHE_FILE, 'w') { |f| YAML.dump(CACHE, f) }
-
-        code
       else
         puts "CodePen Embed: Error processing input,
               expected syntax {% codepen href user [type] [height] [preview] %}"
