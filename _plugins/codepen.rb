@@ -41,11 +41,12 @@ module Jekyll
       syntax = /(?<pen>\w+)(?:\s(?<user>\w+))(?:\s(?<type>\w+))?(?:\s(?<height>\d+))?(?:\s(?<preview>\w+))?/
       # rubocop:enable LineLength
       return unless syntax =~ markup
-      @pen     = pen
-      @user    = user
-      @type    = type || 'result'
-      @height  = height || '300'
-      @preview = preview == 'preview'
+      m = syntax.match(markup)
+      @pen     = m['pen']
+      @user    = m['user']
+      @type    = m['type'] || 'result'
+      @height  = m['height'] || '300'
+      @preview = m['preview'] == 'preview'
     end
 
     def render(_context)
@@ -59,7 +60,7 @@ module Jekyll
         end
 
         # build it fresh
-        pen_url = "http://codepen.io/#{@user}/pen/#{@pen}"
+        pen_url = "https://codepen.io/#{@user}/pen/#{@pen}"
 
         # extract video information using a REST command
         response = Net::HTTP.get_response(

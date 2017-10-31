@@ -1398,3 +1398,7 @@ https://www.aaron-gustafson.com/notebook/a-different-kind-of-intolerance/:
   http://amzn.to/2jEF2tJ: false
   https://a2milk.com/: false
   https://www.youtube.com/watch?v=ErRHJlE4PGI: false
+https://www.aaron-gustafson.com/notebook/web-form-conundrum-disabled-or-read-only/:
+  https://www.w3.org/TR/html401/interact/forms.html: false
+  https://api.jquery.com/serialize/: false
+  https://www.npmjs.com/package/form-serialize: false
