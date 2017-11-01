@@ -72,7 +72,8 @@ AddType application/vnd.ms-fontobject eot
 Header set X-XSS-Protection "1; mode=block"
 Header set X-Content-Type-Options "nosniff"
 <IfDefine LIVE>
-  Header set Content-Security-Policy "default-src * ; script-src 'self' webmention.io platform.twitter.com syndication.twitter.com cdn.syndication.twimg.com 'unsafe-inline' ; img-src * data: ; style-src * 'unsafe-inline' ; upgrade-insecure-requests; block-all-mixed-content; reflected-xss block; child-src www.youtube.com ; connect-src ws://webmention.io:8080 https://links.services.disqus.com wss://realtime.services.disqus.com;"
+  # https://report-uri.io/home/generate
+  Header set Content-Security-Policy "default-src * *.vimeo.com; script-src 'self' 'unsafe-inline' https://webmention.io platform.twitter.com syndication.twitter.com cdn.syndication.twimg.com www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net *.vimeo.com *.vimeocdn.com *.newrelic.com *.nr-data.net aarongustafson.disqus.com a.disquscdn.com assets.codepen.io production-assets.codepen.io; style-src * 'unsafe-inline' *.vimeocdn.com; img-src * data: www.google-analytics.com stats.g.doubleclick.net https://stats.g.doubleclick.net; connect-src ws://webmention.io:8080 https://links.services.disqus.com wss://realtime.services.disqus.com; child-src 'self' www.youtube.com *.vimeo.com *.vimeocdn.com; upgrade-insecure-requests; block-all-mixed-content;"
   Header set Public-Key-Pins "pin-sha256='1AD97Iz6xlmMrlaim5bZoIhwUr2WAowsI+msDc0op2k='; pin-sha256='4SflGm7MUpml4PWSclDw7OGMJdRk+YcIfi6qJ2iG6zE='; pin-sha256='BFhqRqgHU+b7VQLsM1kZwBu6VVKnLx7QiO2PCLfG1m4='; max-age=10"
   Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
 </IfDefine>
