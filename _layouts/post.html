@@ -10,7 +10,7 @@ single: true
 	<article role="article" class="layout-container__primary h-entry">
 		<div class="entry">
 			<header class="entry__header">
-		     	<h1 class="entry__title p-name">{% if site.titlecase %}{{ page.title | titlecase | widont }}{% else %}{{ page.title | widont }}{% endif %}</h1>
+		     	<h1 class="entry__title p-name">{{ page.title | titlecase | widont | markdownify | remove:'<p>' | remove:'</p>' }}</h1>
 			
 				{% unless page.meta == false %}
 					<dl class="entry__meta">

@@ -1,12 +1,13 @@
 {% capture excerpted %}{{ post.excerpt }}{% endcapture %}
+{% capture title %}{{ post.title | titlecase | widont | markdownify | remove:'<p>' | remove:'</p>' }}{% endcapture %}
 
 {% unless post.no_header %}
 	<header class="entry__header">
 		<h1 class="entry__title entry-title">
 			{% if post.ref_url %}
-				<a rel="bookmark" href="{{ post.ref_url }}">{{ post.title | widont }}</a>
+				<a rel="bookmark" href="{{ post.ref_url }}">{{ title }}</a>
 			{% else %}
-				<a rel="bookmark" href="{{ root_url }}{{ post.url }}">{{ post.title | widont }}</a>
+				<a rel="bookmark" href="{{ root_url }}{{ post.url }}">{{ title }}</a>
 			{% endif %}
 		</h1>
 		{% unless post.meta == false %}
@@ -36,7 +37,7 @@
 	<p>
 		{% if post.content contains site.excerpt_separator %}
 			<a rel="bookmark" href="{{ root_url }}{{ post.url }}">You can finish reading
-			<cite>{{ post.title }}</cite> in less than {{ post.content | reading_time_as_i }}</a>
+			<cite>{{ title }}</cite> in less than {{ post.content | reading_time_as_i }}</a>
 		{% elsif post.ref_url %}
 			<a rel="original-article" href="{{ post.ref_url }}">Source: {{ post.ref_source }}</a>
 		{% endif %}
