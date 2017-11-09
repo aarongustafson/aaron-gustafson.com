@@ -183,6 +183,7 @@ accessibility:
 - 2016-08-17-what-would-you-do-with-10kb.markdown
 - 2016-10-17-progressive-misconceptions.markdown
 - 2016-12-14-lessons-in-averaging.markdown
+- 2017-11-09-we-can-truly-transform-peoples-lives.markdown
 wai-aria:
 - 2014-11-05-aria-quicktip-labelledby-vs-describedby.markdown
 ux:
@@ -448,3 +449,5 @@ html:
 - 2017-10-31-web-form-conundrum-disabled-or-read-only.markdown
 PWA:
 - 2017-05-03-PWAs-and-desktop.markdown
+technology:
+- 2017-11-09-we-can-truly-transform-peoples-lives.markdown
