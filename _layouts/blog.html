@@ -22,7 +22,7 @@ layout: default
 		{% if paginator.total_pages > 1 %}
 			<div class="pagination">
 				{% if paginator.previous_page %}
-					<a class="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Prev</a>
+					<a class="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | remove: 'index.html' }}">&larr; Prev</a>
 				{% endif %}
 				<span class="pagination__pages">
 					page
@@ -31,7 +31,7 @@ layout: default
 					<span class="pagination__pages__current">{{ paginator.total_pages }}</span>
 				</span>
 				{% if paginator.next_page %}
-					<a class="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &rarr;</a>
+					<a class="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' | remove: 'index.html' }}">Next &rarr;</a>
 				{% endif %}
 			</div>
 		{% endif %}
