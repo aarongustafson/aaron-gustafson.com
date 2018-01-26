@@ -41,10 +41,10 @@
   location: "Sydney, Australia"
 
 - id: 118
-  title: Experience Code
-  url: https://experiencecode.com/
-  date: 2018-01-31 09:00:00 -0900
-  location: "Vancouver, BC Canada"
+  title: An Event Apart
+  url: https://aneventapart.com/event/washington-dc-2018
+  date: 2018-07-30 09:00:00 -0500
+  location: "Washington, DC USA"
 
 #- id: 117
 #  title: Breaking Development
