@@ -1,3 +1,15 @@
+- title: "Native And PWA: Choices, Not Challengers!"
+  publisher: Smashing Magazine
+  published: 2018-02-09 00:00:00 +0000
+  url: https://www.smashingmagazine.com/2018/02/native-and-pwa-choices-not-challengers/
+  notes: "I get into the weeds discussing the pros and cons of native and PWA-based app development. TLDR; Your choice should depend on your project."
+
+- title: "Welcoming Progressive Web Apps to Microsoft Edge and Windows 10"
+  publisher: Microsoft Edge Developer Blog
+  published: 2018-02-06 00:00:00 +0000
+  url: https://blogs.windows.com/msedgedev/2018/02/06/welcoming-progressive-web-apps-edge-windows-10/
+  notes: "Some of my Microsoft colleagues and I did a run-down of how we are supporting Progressive Web Apps in Windows."
+
 - title: "The Story of CSS Grid, from Its Creators"
   publisher: A List Apart
   published: 2017-10-19 00:00:00 +0000
