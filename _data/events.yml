@@ -46,11 +46,11 @@
   date: 2018-07-30 09:00:00 -0500
   location: "Washington, DC USA"
 
-#- id: 117
-#  title: Breaking Development
-#  url: http://lanyrd.com/2017/bdconf/
-#  date: 2017-10-25 09:00:00 +0500
-#  location: "Nashville, TN USA"
+- id: 117
+  title: An Event Apart
+  url: https://aneventapart.com/event/san-francisco-2018
+  date: 2018-12-10 09:00:00 -0800
+  location: "San Francisco, CA USA"
 
 - id: 116
   title: Generate
