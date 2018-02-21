@@ -28,11 +28,11 @@
   date: 2017-12-11 09:00:00 -0800
   location: "Denver, CO USA"
 
-# - id: 120
-#   title: TBA # Respond
-#   # url: http://lanyrd.com/2017/respond-by-web-directions-2/
-#   date: 2018-05-08 09:00:00 -0400
-#   location: "Melbourne, Australia"
+- id: 120
+  title: An Event Apart
+  # url: https://aneventapart.com/event/seattle-2018
+  date: 2018-04-02 09:00:00 -0400
+  location: "Seattle, WA USA"
 
 - id: 119
   title: Microsoft Build
