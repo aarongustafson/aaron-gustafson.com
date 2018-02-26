@@ -257,3 +257,5 @@ webmentions:
     last_month: daily
     last_year: weekly
     older: every 2 months
+  collections:
+    - links
