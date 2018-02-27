@@ -4,6 +4,8 @@
 titlecase: true
 markdown: kramdown
 encoding: utf-8
+incremental: true
+# limit_posts: 0
 rdiscount:
   extensions:
     - autolink
@@ -202,7 +204,10 @@ google_analytics_tracking_id: "UA-176472-5"
 google_tag_manager_id: "GTM-P3MJZJ"
 
 # Github repo path
-repo_url: "https://github.com/aarongustafson/aarongustafson.github.io/tree/source/source/"
+github:
+  repo: aarongustafson/aarongustafson.github.io
+  branch: master
+repo_url: "https://github.com/aarongustafson/aarongustafson.github.io/tree/master/"
 
 # Gists
 gist_tag:
@@ -239,7 +244,8 @@ adaptive_image:
 #  height: 240
 
 webmentions:
-  debug: false
+  # debug: true
+  # pause_lookups: true
   username: aaron-gustafson.com
   cache_bad_uris_for: 7 # in days
   legacy_domains:
