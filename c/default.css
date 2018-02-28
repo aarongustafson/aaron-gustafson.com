@@ -693,7 +693,7 @@ table th[colspan] {
 }
 
 /*------------------------------------*\
-    Form Styles
+  Form Styles
 \*------------------------------------*/
 form {
   margin: 0 0 22px;
@@ -740,6 +740,9 @@ form li {
   color: #2c2825;
   display: block;
   width: 100%;
+}
+.fields__group textarea {
+  height: 200px;
 }
 .fields__group input[type=search] {
   -webkit-appearance: textfield;
@@ -2078,7 +2081,7 @@ Body-level settings
   }
 }
 /*------------------------------------*\
-    Form Styles
+  Form Styles
 \*------------------------------------*/
 /*------------------------------------*\
     Animations

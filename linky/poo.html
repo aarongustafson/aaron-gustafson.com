@@ -14,8 +14,17 @@ sitemap: false
     <link rel="stylesheet" href="/c/default.min.css" media="all">
     <link rel="stylesheet" href="/c/advanced.min.css" media="only screen">
     <style>
+      fieldset > legend + ul {
+        margin-top: 0;
+      }
       #p_tweet {
         height: 100px;
+      }
+      #go {
+        font-size: 1.5em;
+      }
+      #setup {
+        font-size: .75em;
       }
     </style>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -79,22 +88,22 @@ sitemap: false
               </li>
             </ul>
           </fieldset>
-          <p class="fields__group fields__group--buttons">
+          <p>
             <button class="button" id="go">Save It</button>
           </p>
-          <details>
+          <details id="setup">
             <summary>Setup</summary>
             <ul class="fields">
-              <li class="fields__group">
+              <li class="fields__group fields__group--text">
                 <label for="username">Username</label>
                 <input id="username" name="username">
               </li>
-              <li>
+              <li class="fields__group fields__group--password">
                 <label for="password">Token</label>
                 <input type="password" id="password" name="password">
               </li>
-              <li>
-                <input type="submit" value="Trick browser to save username/password">
+              <li class="fields__group fields__group--buttons">
+                <button type="submit">Save your credentials</button>
               </li>
             </ul>
             <p>Drag this link to your bookmarks, to post from any webpage: <a href="javascript:(function(){var title = document.getElementsByTagName('title')[0].innerHTML;title = encodeURIComponent(title);var selection = '';if (window.getSelection) {selection = window.getSelection().toString();} else if (document.selection &amp;&amp; document.selection.type != 'Control') {selection = document.selection.createRange().text;}selection = encodeURIComponent(selection);new_window=window.open('{{ "linky/poo/" | prepend: site.baseurl | prepend: site.url }}?title='+title+'&amp;selection='+selection+'&amp;url='+encodeURIComponent(document.location.href),'JekyllPopup','resizable,scrollbars,status=0,toolbar=0,menubar=0,titlebar=0,width=640,height=600,location=0');})();">Linky</a></p>
@@ -209,9 +218,9 @@ sitemap: false
       {
         $messages.innerHTML = '<p>Link successfully posted!</p>';
         $messages.focus();
-        setTimeout(500, function(){
+        setTimeout(function(){
           window.close();
-        });
+        }, 500);
       }
 
       function linkFailed(request, status, error)
