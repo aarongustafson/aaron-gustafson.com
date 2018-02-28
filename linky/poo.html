@@ -13,6 +13,11 @@ sitemap: false
     <link href="https://www.aaron-gustafson.com/favicon.png" rel="icon">
     <link rel="stylesheet" href="/c/default.min.css" media="all">
     <link rel="stylesheet" href="/c/advanced.min.css" media="only screen">
+    <style>
+      #p_tweet {
+        height: 100px;
+      }
+    </style>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="MobileOptimized" content="width">
     <meta name="HandheldFriendly" content="true">
@@ -22,9 +27,7 @@ sitemap: false
   <body class="linky-poo">
     <section id="linky-poo" class="section section--linky-poo">
       <div class="layout-container">
-        <h1>Wanna link?</h1>
-
-        <div id="messages">
+        <div id="messages" tabindex="-1">
         {% if site.github.repo == none %}
           <div class="alert alert-danger" role="alert"><code>github.repo</code> is not set.</div>
         {% endif %}
@@ -33,72 +36,70 @@ sitemap: false
         {% endif %}
         </div>
 
-        <form class="contact-form" accept-charset="UTF-8" method="get">
-          <ul class="fields">
-            <li class="fields__group fields__group--text">
-              <label for="p_title">Title</label>
-              <input id="p_title">
-            </li>
-            <li class="fields__group fields__group--url">
-              <label for="p_link">URL</label>
-              <input type="url" id="p_link">
-            </li>
-            <li class="fields__group fields__group--text">
-              <label for="p_source">Source</label>
-              <input id="p_source">
-            </li>
-            <li class="fields__group fields__group--textarea">
-              <label for="p_body">Want to tweet something specific?</label>
-              <textarea id="p_tweet" maxlength="200"></textarea>
-            </li>
-            <li class="fields__group fields__group--textarea">
-              <label for="p_body">What do you want to say?</label>
-              <textarea id="p_body"></textarea>
-            </li>
-            <li class="fields__group fields__group--text">
-              <label for="p_tags">How would you tag this?</label>
-              <input id="p_tags">
-            </li>
-            <li class="fields__group">
-              <fieldset>
-                <legend>Where’d you find this?</legend>
-                <ul class="fields">
-                  <li class="fields__group fields__group--text">
-                    <label for="p_via_name">Name</label>
-                    <input id="p_via_name">
-                  </li>
-                  <li class="fields__group fields__group--url">
-                    <label for="p_via_url">URL</label>
-                    <input type="url" id="p_via_url">
-                  </li>
-                </ul>
-              </fieldset>
-            </li>
-            <li class="fields__group fields__group--buttons">
-              <button class="button" id="go">Save It</button>
-            </li>
-            <li class="fields__group">
-              <details>
-                <summary>Github Credentials</summary>
-                <ul class="fields">
-                  <li class="fields__group">
-                    <label for="username">Username</label>
-                    <input id="username" name="username">
-                  </li>
-                  <li>
-                    <label for="password">Token</label>
-                    <input type="password" id="password" name="password">
-                  </li>
-                  <li>
-                    <input type="submit" value="Trick browser to save username/password">
-                  </li>
-                </ul>
-              </details>
-            </li>
-          </ul>
+        <form class="contact-form" accept-charset="UTF-8" method="post">
+          <fieldset>
+            <legend>Link Info</legend>
+            <ul class="fields">
+              <li class="fields__group fields__group--text">
+                <label for="p_title">Title</label>
+                <input id="p_title">
+              </li>
+              <li class="fields__group fields__group--url">
+                <label for="p_link">URL</label>
+                <input type="url" id="p_link">
+              </li>
+              <li class="fields__group fields__group--text">
+                <label for="p_source">Source</label>
+                <input id="p_source">
+              </li>
+              <li class="fields__group fields__group--textarea">
+                <label for="p_body">Want to tweet something specific?</label>
+                <textarea id="p_tweet" maxlength="200"></textarea>
+              </li>
+              <li class="fields__group fields__group--textarea">
+                <label for="p_body">What do you want to say?</label>
+                <textarea id="p_body"></textarea>
+              </li>
+              <li class="fields__group fields__group--text">
+                <label for="p_tags">How would you tag this?</label>
+                <input id="p_tags">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Did you find this link via someone?</legend>
+            <ul class="fields">
+              <li class="fields__group fields__group--text">
+                <label for="p_via_name">Name</label>
+                <input id="p_via_name">
+              </li>
+              <li class="fields__group fields__group--url">
+                <label for="p_via_url">URL</label>
+                <input type="url" id="p_via_url">
+              </li>
+            </ul>
+          </fieldset>
+          <p class="fields__group fields__group--buttons">
+            <button class="button" id="go">Save It</button>
+          </p>
+          <details>
+            <summary>Setup</summary>
+            <ul class="fields">
+              <li class="fields__group">
+                <label for="username">Username</label>
+                <input id="username" name="username">
+              </li>
+              <li>
+                <label for="password">Token</label>
+                <input type="password" id="password" name="password">
+              </li>
+              <li>
+                <input type="submit" value="Trick browser to save username/password">
+              </li>
+            </ul>
+            <p>Drag this link to your bookmarks, to post from any webpage: <a href="javascript:(function(){var title = document.getElementsByTagName('title')[0].innerHTML;title = encodeURIComponent(title);var selection = '';if (window.getSelection) {selection = window.getSelection().toString();} else if (document.selection &amp;&amp; document.selection.type != 'Control') {selection = document.selection.createRange().text;}selection = encodeURIComponent(selection);new_window=window.open('{{ "linky/poo/" | prepend: site.baseurl | prepend: site.url }}?title='+title+'&amp;selection='+selection+'&amp;url='+encodeURIComponent(document.location.href),'JekyllPopup','resizable,scrollbars,status=0,toolbar=0,menubar=0,titlebar=0,width=640,height=600,location=0');})();">Linky</a></p>
+          </details>
         </form>
-
-        <p>Drag this link to your bookmarks, to post from any webpage: <a href="javascript:(function(){var title = document.getElementsByTagName('title')[0].innerHTML;title = encodeURIComponent(title);var selection = '';if (window.getSelection) {selection = window.getSelection().toString();} else if (document.selection &amp;&amp; document.selection.type != 'Control') {selection = document.selection.createRange().text;}selection = encodeURIComponent(selection);new_window=window.open('{{ "linky/poo/" | prepend: site.baseurl | prepend: site.url }}?title='+title+'&amp;selection='+selection+'&amp;url='+encodeURIComponent(document.location.href),'JekyllPopup','resizable,scrollbars,status=0,toolbar=0,menubar=0,titlebar=0,width=640,height=600,location=0');})();">Linky</a></p>
       </div>
     </section>
     <script>
@@ -207,6 +208,10 @@ sitemap: false
       function linkComplete()
       {
         $messages.innerHTML = '<p>Link successfully posted!</p>';
+        $messages.focus();
+        setTimeout(500, function(){
+          window.close();
+        });
       }
 
       function linkFailed(request, status, error)
@@ -216,11 +221,13 @@ sitemap: false
                               '<br>If you are using two-factor-auth, you will have to create ' +
                               '<a href="https://github.com/settings/tokens">a personal access token</a> ' +
                               ' with “repo” permissions and use this instead of your password.</div>';
+        $messages.focus();
       }
 
       function linkCanceled()
       {
         $messages.innerHTML = '<p>Link canceled!</p>';
+        $messages.focus();
       }
 
       function submitLink(e)
@@ -237,7 +244,7 @@ sitemap: false
             XHR      = new XMLHttpRequest(),
             p_body;
         
-        yaml.title = $title.value;
+        yaml.title       = $title.value.replace('&nbsp;', ' ');
         yaml.date        = getDate();
         yaml.tags        = getTags();
         yaml.ref_url     = link;
