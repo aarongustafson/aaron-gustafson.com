@@ -2,3 +2,4 @@
 
 gem install jekyll
 bundle install
+npm install
