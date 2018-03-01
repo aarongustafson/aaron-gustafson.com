@@ -5,12 +5,15 @@ if [[ $TRAVIS_BRANCH == 'master' ]] ; then
   chmod 600 .travis/id_rsa # Allow read access to the private key
   ssh-add .travis/id_rsa # Add the private key to SSH
 
+  npm install -g gulp-cli
   gulp html # minify the HTML
 
   cd _site # move to the deploy folder
   git init
   git config user.name "Travis CI"
   git config user.email "aaron@easy-designs.net"
+  git remote add live "ssh://${do_git_user}@${do_git_target}"
+  git pull
   git add .
   git commit -m "Deploy"
 
