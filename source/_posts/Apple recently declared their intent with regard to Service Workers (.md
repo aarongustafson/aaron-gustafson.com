@@ -1,1 +1,0 @@
-Apple recently declared their intent to implement Service Workers (one of the technical underpinnings of PWAs), but time will tell as to whether they will support aspects like installation. No matter, Progressive Web Apps work really well in Safari anyway!
