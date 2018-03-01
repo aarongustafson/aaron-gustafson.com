@@ -22,4 +22,4 @@ deploy:
   provider: script
   script: .travis/deploy.sh
   on:
-    branch: gh-pages
+    branch: master

@@ -21,7 +21,7 @@ if [[ $TRAVIS_BRANCH == 'master' ]] ; then
   cd .. # go back up
   bundle exec jekyll webmention
   git commit -am "New webmentions"
-  git push --force --quiet "https://${github_user}:${github_token}@${git_target}" master:master > /dev/null 2>&1
+  git push --force --quiet "https://${github_user}:${github_token}@${github_target}" master:master > /dev/null 2>&1
 else
   echo 'Invalid branch. You can only deploy from master.'
   exit 1
