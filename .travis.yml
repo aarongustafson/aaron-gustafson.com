@@ -2,7 +2,9 @@ language: ruby
 rvm:
 - 2.3
 
-before_install: .travis/before-install.sh
+before_install: 
+  - chmod +x .travis/*.sh
+  - openssl aes-256-cbc -K $encrypted_bb5b178a0863_key -iv $encrypted_bb5b178a0863_iv -in .travis/id_rsa_travis.enc -out .travis/id_rsa -d
 install: .travis/install.sh
 script: .travis/build.sh
 
