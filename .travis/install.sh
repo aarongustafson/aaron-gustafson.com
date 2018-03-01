@@ -1,6 +1,7 @@
 #!/bin/bash
 
-gem cleanup
 gem install jekyll
 bundle install
+gem update
+gem cleanup
 npm install

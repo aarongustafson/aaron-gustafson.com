@@ -1,3 +1,9 @@
+# Local testing
+# $> docker run --name travis-debug -dit travisci/ci-garnet:packer-1512502276-986baf0 /sbin/init
+# $> docker exec -it travis-debug bash -l
+# $> su - travis
+# $> git clone --depth=50 --branch=master https://github.com/aarongustafson/aarongustafson.github.io.git
+# Manually run the commands to build this project
 language: ruby
 rvm:
   - 2.4
