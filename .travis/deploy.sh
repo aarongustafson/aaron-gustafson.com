@@ -1,14 +1,16 @@
 #!/bin/bash
 
 if [[ $TRAVIS_BRANCH == 'master' ]] ; then
-  gulp html
+  eval "$(ssh-agent -s)" # Start ssh-agent cache
+  chmod 600 .travis/id_rsa # Allow read access to the private key
+  ssh-add .travis/id_rsa # Add the private key to SSH
 
-  cd _site
+  gulp html # minify the HTML
+
+  cd _site # move to the deploy folder
   git init
-
   git config user.name "Travis CI"
   git config user.email "aaron@easy-designs.net"
-
   git add .
   git commit -m "Deploy"
 
@@ -16,7 +18,7 @@ if [[ $TRAVIS_BRANCH == 'master' ]] ; then
   # /dev/null to hide any sensitive credential data that might otherwise be exposed.
   git push --force --quiet "ssh://${do_git_user}@${do_git_target}" master:master > /dev/null 2>&1
 
-  cd ..
+  cd .. # go back up
   bundle exec jekyll webmention
   git commit -am "New webmentions"
   git push --force --quiet "https://${github_user}:${github_token}@${git_target}" master:master > /dev/null 2>&1
