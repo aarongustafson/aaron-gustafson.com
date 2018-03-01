@@ -1,3 +1,4 @@
+// @ts-check
 /**
  *  WebMentions.io JS
  *  A re-tooling of Aaron Parecki’s recommended JS for using the WebMention.io API
@@ -30,7 +31,8 @@
     return k;
   };
 
-}(this,this.document));(function(window, document){
+}(this,this.document));// @ts-check
+(function(window, document){
   
   // prerequisites
   if ( ! ( 'querySelectorAll' in document ) ||
@@ -52,7 +54,7 @@
     // console.log( 'incoming webmentions', data.links );
     if ( data && ! ( 'error' in data ) )
     {
-      webmentions = data.links.reverse();
+      var webmentions = data.links.reverse();
       
       webmentions = rationalizeIds( webmentions );
       
@@ -190,7 +192,11 @@
         webmention,
         incoming = {},
         queue_keys = Object.keys( webmention_receivers ),
-        plural_type;
+        plural_type,
+        typeFilter = function(key) {
+          return JekyllWebmentionIO.types[key] === this.type;
+        },
+        typeFilterLoop;
     
     // set up the queues
     i = queue_keys.length;
@@ -201,14 +207,14 @@
 
     // Assign the webmentions to their respective queues
     i = webmentions.length;
+    
     while ( i-- )
     {
       webmention = webmentions[i];
       // reverse lookup to get the plural from the singular
+      typeFilterLoop = typeFilter.bind(webmention);
       plural_type = Object.keys(JekyllWebmentionIO.types)
-                          .filter(function(key) {
-                            return JekyllWebmentionIO.types[key] === webmention.type;
-                          })[0];
+                          .filter(typeFilterLoop)[0];
       
       // Is there a specific queue requesting this?
       if ( queue_keys.indexOf( plural_type ) > -1 )
@@ -352,8 +358,21 @@
 
     var i = webmentions.length,
         webmention,
-        webmention_object;
-    
+        webmention_object,
+        uri,
+        source,
+        pubdate,
+        type,
+        title,
+        content,
+        read = function( html_source ){
+          if ( html_source )
+          {
+            updateTitle( this.id, this.uri, html_source );
+          }
+        },
+        loop_read;
+
     while ( i-- )
     {
       webmention = webmentions[i];
@@ -426,16 +445,15 @@
       title = false;
       if ( type == 'post' )
       {
-        readWebPage( uri, function( html_source ){
-          if ( html_source )
-          {
-            updateTitle( webmention_object.id, uri, html_source );
-          }
+        loop_read = read.bind({
+          id: webmention_object.id,
+          uri: uri
         });
+        readWebPage( uri, loop_read );
       }
 
       content = webmention.data.content;
-      if ( type != 'post' && type != 'reply' && type != 'link' )
+      if ( type != 'bookmark' && type != 'link' && type != 'post' && type != 'reply' )
       {
         content = webmention.activity.sentence_html;
       }
@@ -492,7 +510,7 @@
         // cleanup
         title = title.replace( /<\/?[^>]+?>}/, '' );
         $link_title = document.createElement('a');
-        $link_title.href = uri;
+        $link_title.href = url;
         $link_title.appendChild( document.createTextNode( title ) );
         // replace title contents
         $current_title.innerHTML = $link_title.outerHTML;
@@ -515,7 +533,7 @@
               callback( XHR.responseText );
             }
           };
-          xhr.onabort = function() {
+          XHR.onabort = function() {
             if ( ! done )
             {
               done = true;
@@ -674,7 +692,8 @@ lastLength=match[0].length;lastLastIndex=lastIndex;if(output.length>=limit){brea
 if(separator.lastIndex===match.index){separator.lastIndex++;}}
 if(lastLastIndex===str.length){if(lastLength||!separator.test("")){output.push("");}}else{output.push(str.slice(lastLastIndex));}
 return output.length>limit?output.slice(0,limit):output;};String.prototype.split=function(separator,limit){return self(this,separator,limit);};return self;}();if(typeof exports!=='undefined'){if(typeof module!=='undefined'&&module.exports){exports=module.exports=Liquid;}
-exports.Liquid=Liquid;};(function(window, document){
+exports.Liquid=Liquid;}// @ts-check
+;(function(window, document, JekyllWebmentionIO){
   'use strict';
   
   // prerequisites
@@ -721,7 +740,8 @@ exports.Liquid=Liquid;};(function(window, document){
     document.addEventListener(event_name, updateCounts, false);
   }
 
-}(this, this.document, this.JekyllWebmentionIO));(function(window, document){
+}(this, this.document, this.JekyllWebmentionIO));// @ts-check
+(function(window, document){
   
   // prerequisites
   if ( ! ( 'querySelectorAll' in document ) ){ return; }
@@ -756,5 +776,5 @@ exports.Liquid=Liquid;};(function(window, document){
   
 }(this, this.document));          ;(function(window,JekyllWebmentionIO){
             if ( ! ( 'JekyllWebmentionIO' in window ) ){ window.JekyllWebmentionIO = {}; }
-            JekyllWebmentionIO.types = { 'likes': 'like','links': 'link','posts': 'post','replies': 'reply','reposts': 'repost' };
+            JekyllWebmentionIO.types = { 'bookmarks': 'bookmark','likes': 'like','links': 'link','posts': 'post','replies': 'reply','reposts': 'repost','rsvps': 'rsvp' };
           }(this, this.JekyllWebmentionIO));
