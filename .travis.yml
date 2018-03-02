@@ -26,6 +26,8 @@ env:
 deploy:
   skip_cleanup: true
   provider: script
+  before_script:
+    - echo -e "Host ${do_git_host}\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   script: .travis/deploy.sh
   on:
     branch: master

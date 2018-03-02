@@ -14,7 +14,7 @@ if [[ $TRAVIS_BRANCH == 'master' ]] ; then
   git init
   git config user.name "Travis CI"
   git config user.email "aaron@easy-designs.net"
-  git remote add live "ssh://${do_git_user}@${do_git_target}"
+  git remote add live "ssh://${do_git_user}@${do_git_host}${do_git_repo}"
   git fetch live
   git checkout master
   rsync -a ../_site/ .
