@@ -8,7 +8,6 @@ if [[ $TRAVIS_BRANCH == 'master' ]] ; then
   npm install -g gulp-cli
   gulp html # minify the HTML
 
-  cd _site # move to the deploy folder
   mkdir _deploy
   cd _deploy
   git init
