@@ -9,6 +9,10 @@ rvm:
   - 2.4
 cache: bundler
 
+addons:
+  ssh_known_hosts:
+  - 45.55.195.184
+
 before_install: 
   - chmod +x .travis/*.sh
   - openssl aes-256-cbc -K $encrypted_bb5b178a0863_key -iv $encrypted_bb5b178a0863_iv -in .travis/id_rsa_travis.enc -out .travis/id_rsa -d
@@ -27,8 +31,6 @@ env:
 deploy:
   skip_cleanup: true
   provider: script
-  before_script:
-    - echo -e "Host ${do_git_host}\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
   script: .travis/deploy.sh
   on:
     branch: master
