@@ -26,6 +26,7 @@ if [[ $TRAVIS_BRANCH == 'master' ]] ; then
   git push --quiet live master > /dev/null 2>&1
 
   cd "${TRAVIS_BUILD_DIR}" # go back up
+  gem install jekyll
   bundle install
   bundle exec jekyll webmention
   git commit -am "New webmentions"
