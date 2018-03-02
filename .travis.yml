@@ -34,3 +34,4 @@ deploy:
   script: .travis/deploy.sh
   on:
     branch: master
+    rvm: 2.4
