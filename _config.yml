@@ -15,6 +15,7 @@ gems:
   - fastimage
   - jekyll-archives
   - jekyll-crosspost-to-medium
+  - jekyll-include-cache
   - jekyll-paginate-v2
   - jekyll-redirect-from
   - jekyll-time-to-read

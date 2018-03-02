@@ -19,6 +19,7 @@ group :jekyll_plugins do
   gem 'fastimage'
   gem 'jekyll-archives'
   gem 'jekyll-crosspost-to-medium'
+  gem 'jekyll-include-cache'
   gem 'jekyll-paginate-v2'
   gem 'jekyll-redirect-from'
   gem 'jekyll-seo-tag'
