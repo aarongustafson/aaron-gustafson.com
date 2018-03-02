@@ -1,0 +1,45 @@
+{
+  "dir": "ltr",
+  "lang": "en-US",
+  "name": "Aaron Gustafson",
+  "short_name": "AaronG",
+  "scope": "/",
+  "display": "browser",
+  "start_url": "https://www.aaron-gustafson.com/",
+  "theme_color": "transparent",
+  "description": "The online home and work of Aaron Gustafson.",
+  "orientation": "any",
+  "background_color": "transparent",
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/images/i/og-logo.webp",
+      "type": "image/webp",
+      "sizes": "800x600"
+    },
+    {
+      "src": "/images/i/og-logo.png",
+      "type": "image/png",
+      "sizes": "800x600"
+    },
+    {
+      "src": "/images/notification-icon.webp",
+      "type": "image/webp",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/images/notification-icon.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/images/favicon.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    }
+  ],
+  "share_target": {
+    "url_template": "linky/poo/?title={title}&body={text}&url={url}"
+  }
+}
