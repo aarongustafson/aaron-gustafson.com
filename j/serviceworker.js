@@ -1,6 +1,6 @@
 'use strict';
 
-var version = 'v1504886147253:',
+var version = 'v1520018085453:',
 	default_avatar = 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&f=y',
 	missing_image = 'https://i.imgur.com/oWLuFAa.gif';
 self.addEventListener( 'activate', function( event ){
