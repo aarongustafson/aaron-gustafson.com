@@ -9,17 +9,22 @@ if [[ $TRAVIS_BRANCH == 'master' ]] ; then
   gulp html # minify the HTML
 
   cd _site # move to the deploy folder
+  mkdir _deploy
+  cd _deploy
   git init
   git config user.name "Travis CI"
   git config user.email "aaron@easy-designs.net"
   git remote add live "ssh://${do_git_user}@${do_git_target}"
-  git pull
+  git fetch live
+  git checkout master
+  rsync -a ../_site/ .
   git add .
   git commit -m "Deploy"
-
+  git merge live/master -m "Automatically merging"
+  
   # We redirect any output to
   # /dev/null to hide any sensitive credential data that might otherwise be exposed.
-  git push --force --quiet "ssh://${do_git_user}@${do_git_target}" master:master > /dev/null 2>&1
+  git push --quiet live master > /dev/null 2>&1
 
   cd .. # go back up
   bundle exec jekyll webmention
