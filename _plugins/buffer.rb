@@ -52,7 +52,7 @@ module Jekyll
       raise Error, 'No Buffer access token found' unless access_token
       
       # tweet length = 140 - 22 url chars & a space
-      twitter_text_length = 140 - 22 - 1
+      twitter_text_length = 280 - 22 - 1
 
       today = Date.today
 
