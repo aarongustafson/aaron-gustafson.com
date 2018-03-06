@@ -13,8 +13,10 @@
       $link,
       $current_page_descriptor = false;
 
-  current_path.reverse(); // looping backwards is faster
-
+  // remove empties
+  current_path.shift();
+  current_path.pop();
+  
   while ( link_i-- )
   {
     $link = $navigation[link_i];
@@ -26,20 +28,29 @@
 
   function linkIsInPath( $link )
   {
-    var link_path = $link.href,
+    var link_href = $link.href,
+        link_path = $link.attributes.href.nodeValue,
         segment_i;
-    if ( link_path.indexOf( current_host ) > -1 )
+    if ( link_href.indexOf( current_host ) > -1 )
     {
-      link_path = link_path.replace( current_host, '' ).split( '/' );
-      link_path.reverse();
-      segment_i = link_path.length;
-      while ( segment_i-- )
+      if ( link_path.indexOf('#') === 0 )
       {
-        if ( segment_i in current_path &&
-             current_path[segment_i] != link_path[segment_i] )
+        return false;
+      }
+      link_path = link_path.split( '/' );
+      i = 0;
+      segment_i = link_path.length;
+      // remove first & last
+      link_path.shift();
+      link_path.pop();
+      while ( i < segment_i )
+      {
+        if ( link_path[i] &&
+             current_path[i] != link_path[i] )
         {
           return false;
         }
+        i++;
       }
       return true;
     }

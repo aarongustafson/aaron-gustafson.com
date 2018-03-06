@@ -36,9 +36,9 @@ require 'net/http'
 module Jekyll
   class SoundCloud < Liquid::Tag
     def initialize(tag_name, markup, tokens)
-      #check if an url is given as argument => if yes the new method is used
+      # check if an url is given as argument => if yes the new method is used
       if /^http/ =~ markup
-        #parsing the "new" way with only pasing the url of the ressource
+        # parsing the "new" way with only pasing the url of the ressource
         if /(?<url>[a-z0-9\/\-\:\.]+)(?:\s+(?<options>.*))?/ =~ markup
           info = retrieve_info(url)
           @type  = info['kind'] + 's'
@@ -47,7 +47,7 @@ module Jekyll
         end
       else
         puts "no match"
-        #parsing the "old" way with type and id
+        # parsing the "old" way with type and id
         if /(?<type>\w+)\s+(?<id>\d+)(?:\s+(?<options>.*))?/ =~ markup
           @type  = type
           @id    = id

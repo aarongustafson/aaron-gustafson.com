@@ -30,7 +30,7 @@ single: true
             <dt class="dont-read">Tagged</dt>
             <dd class="dont-read">
               {% include_cached post/tags.html
-                                tags=include.tags
+                                tags=page.tags
                                 dir=site.tag_page_dir
               %}
             </dd>

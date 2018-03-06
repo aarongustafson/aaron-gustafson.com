@@ -65,7 +65,7 @@ module Jekyll
 
         # extract video information using a REST command
         Net::HTTP.start(api_endpoint.host, api_endpoint.port,
-          :use_ssl => api_endpoint.scheme == 'https') do |http|
+                        :use_ssl => api_endpoint.scheme == 'https') do |http|
           request = Net::HTTP::Get.new api_endpoint
           response = http.request request
 
@@ -81,7 +81,7 @@ module Jekyll
             'data-type'   => @type
           }
           attrs['data-preview'] = true if @preview
-  
+
           # build the text
           text = "See the Pen <a href=\"#{pen_url}\">#{result['title']}</a> "
           text << "by #{result['author_name']} "

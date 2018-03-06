@@ -4,7 +4,8 @@
 titlecase: true
 markdown: kramdown
 encoding: utf-8
-incremental: true
+incremental: false
+# debug: true
 # limit_posts: 0
 rdiscount:
   extensions:
@@ -159,7 +160,7 @@ navigation:
 # Pagination
 pagination:
   enabled: true
-  debug: false
+  # debug: true
   per_page: 10
   permalink: '/pg-:num/'
   title: ', Page :num'
