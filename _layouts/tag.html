@@ -8,21 +8,35 @@ footer: true
 
 <article role="article" class="page layout-container layout-container--blog">
 
-	<h1 class="page__title subsection__header">{{ the_title | titlecase | widont }}</h1>
-	
-	<div class="layout-container__primary">
-  	
-		<div id="blog-archives">
-			{% for post in page.posts reverse %}
-				<article class="entry entry--teaser">
-					{% include entry_teaser.html %}
-				</article>
-				{% unless forloop.last %}
-					<hr class="rule">
-				{% endunless %}
-			{% endfor %}
-		</div>
-		
-  	</div>
+  <h1 class="page__title subsection__header">{{ the_title | titlecase | widont }}</h1>
+  
+  <div class="layout-container__primary">
+    
+    <div id="blog-archives">
+      {% for post in page.posts reverse %}
+        <article class="entry entry--teaser">
+          {% include_cached entry_teaser.html 
+                          title=post.title
+                          date=post.date
+                          last_updated_at=post.last_updated_at
+                          excerpt=post.excerpt
+                          content=post.content
+                          no_header=post.no_header
+                          ref_url=post.ref_url
+                          ref_source=post.ref_source
+                          url=post.url
+                          meta=post.meta
+                          tags=post.tags
+                          via=post.via
+                          separator=site.excerpt_separator
+          %}
+        </article>
+        {% unless forloop.last %}
+          <hr class="rule">
+        {% endunless %}
+      {% endfor %}
+    </div>
+    
+    </div>
 
 </article>

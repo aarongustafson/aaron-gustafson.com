@@ -18,7 +18,7 @@ module Jekyll
       @text           = text
       @cache_disabled = false
       @embed_code     = false
-      @config         = Jekyll.configuration({ 'quiet' => true })
+      @config         = Jekyll.configuration({})
       @cache_folder   = @config['gist_tag']['cache'] || File.expand_path( "../.gist-cache", File.dirname(__FILE__) )
       @encoding       = @config['encoding'] || 'UTF-8'
       FileUtils.mkdir_p @cache_folder

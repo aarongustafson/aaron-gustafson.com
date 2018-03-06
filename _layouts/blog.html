@@ -6,48 +6,62 @@ layout: default
 
 <article role="article" class="page layout-container layout-container--blog">
 
-	<h1 class="page__title subsection__header">{{ the_title | titlecase | widont }}</h1>
-	
-	<div class="layout-container__primary">
-  	
-		{% for post in paginator.posts %}
-			<article class="entry entry--teaser">
-				{% include entry_teaser.html %}
-			</article>
-			{% unless forloop.last %}
-				<hr class="rule">
-			{% endunless %}
-		{% endfor %}
+  <h1 class="page__title subsection__header">{{ the_title | titlecase | widont }}</h1>
+  
+  <div class="layout-container__primary">
+    
+    {% for post in paginator.posts %}
+      <article class="entry entry--teaser">
+        {% include_cached entry_teaser.html 
+                          title=post.title
+                          date=post.date
+                          last_updated_at=post.last_updated_at
+                          excerpt=post.excerpt
+                          content=post.content
+                          no_header=post.no_header
+                          ref_url=post.ref_url
+                          ref_source=post.ref_source
+                          url=post.url
+                          meta=post.meta
+                          tags=post.tags
+                          via=post.via
+                          separator=site.excerpt_separator
+        %}
+      </article>
+      {% unless forloop.last %}
+        <hr class="rule">
+      {% endunless %}
+    {% endfor %}
 
-		{% if paginator.total_pages > 1 %}
-			<div class="pagination">
-				{% if paginator.previous_page %}
-					<a class="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | remove: 'index.html' }}">&larr; Prev</a>
-				{% endif %}
-				<span class="pagination__pages">
-					page
-					<span class="pagination__pages__current">{{ paginator.page }}</span>
-					of
-					<span class="pagination__pages__current">{{ paginator.total_pages }}</span>
-				</span>
-				{% if paginator.next_page %}
-					<a class="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' | remove: 'index.html' }}">Next &rarr;</a>
-				{% endif %}
-			</div>
-		{% endif %}
+    {% if paginator.total_pages > 1 %}
+      <div class="pagination">
+        {% if paginator.previous_page %}
+          <a class="prev" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' | remove: 'index.html' }}">&larr; Prev</a>
+        {% endif %}
+        <span class="pagination__pages">
+          page
+          <span class="pagination__pages__current">{{ paginator.page }}</span>
+          of
+          <span class="pagination__pages__current">{{ paginator.total_pages }}</span>
+        </span>
+        {% if paginator.next_page %}
+          <a class="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' | remove: 'index.html' }}">Next &rarr;</a>
+        {% endif %}
+      </div>
+    {% endif %}
 
-  	</div>
+    </div>
 
-	{% unless page.sidebar == false %}
-		<hr class="rule rule--optional">
+  {% unless page.sidebar == false %}
+    <hr class="rule rule--optional">
 
-		<aside class="layout-container__secondary">
-	  		{% if site.blog_index_asides.size %}
-	    		{% include_array blog_index_asides %}
-	  		{% else %}
-	    		{% include_array default_asides %}
-	  		{% endif %}
-		</aside>
-	{% endunless %}
+    <aside class="layout-container__secondary">
+        {% if site.blog_index_asides.size %}
+          {% include_array blog_index_asides %}
+        {% else %}
+          {% include_array default_asides %}
+        {% endif %}
+    </aside>
+  {% endunless %}
 
 </article>

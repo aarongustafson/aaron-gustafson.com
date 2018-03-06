@@ -1,37 +1,32 @@
 <nav role="navigation">
-	<div class="layout-container">
+  <div class="layout-container">
 
-		<h1 class="hidden">Here’s what you can find on this site:</h1>
-		<ul class="main-navigation">
-			{% for link in site.navigation %}
-				<li class="main-navigation__item">
-					{% if page.url contains link.url %}<mark>{% endif %}
-					<a class="main-navigation__link main-navigation__link--{{ link.url | remove:"/" }}" href="{{ link.url }}">{{ link.text }}</a>
-					{% if page.url contains link.url %}</mark>{% endif %}
-				</li>
-			{% endfor %}
-			<li class="main-navigation__item">
-				<a class="main-navigation__link main-navigation__link--rss" href="{{ site.subscribe_rss }}" aria-label="subscribe via RSS">RSS</a>
-			</li>
-			<li class="main-navigation__item">
-				<a class="main-navigation__link main-navigation__link--search" href="#search" aria-label="Search This Site">Search</a>
-			</li>
-		</ul>
+    <h1 class="hidden">Here’s what you can find on this site:</h1>
+    <ul class="main-navigation">
+      {% for link in site.navigation %}
+        <li class="main-navigation__item">
+          <a class="main-navigation__link main-navigation__link--{{ link.url | remove:"/" }}" href="{{ link.url }}">{{ link.text }}</a>
+        </li>
+      {% endfor %}
+      <li class="main-navigation__item">
+        <a class="main-navigation__link main-navigation__link--search" href="#search" aria-label="Search This Site">Search</a>
+      </li>
+    </ul>
 
-		{% if site.simple_search %}
-			<form class="form form--search" action="{{ site.simple_search }}" method="get" id="search">
-				<ol role="search">
-					<li class="form-control form-control--search">
-						<label for="query" class="hidden">What are you looking for?</label>
-						<input name='q' type='hidden' value='site:www.aaron-gustafson.com'>
-						<input id="query" type="search" name="q">
-					</li>
-					<li class="form-control form-control--buttons">
-						<button type="submit" name="sa" value="Search"><b class="hidden">Let’s see if </b>Google <b class="hidden">Finds </b>it</button>
-					</li>
-				</ol>
-			</form>
-		{% endif %}
+    {% if site.simple_search %}
+      <form class="form form--search" action="{{ site.simple_search }}" method="get" id="search">
+        <ol role="search">
+          <li class="form-control form-control--search">
+            <label for="query" class="hidden">What are you looking for?</label>
+            <input name='q' type='hidden' value='site:www.aaron-gustafson.com'>
+            <input id="query" type="search" name="q">
+          </li>
+          <li class="form-control form-control--buttons">
+            <button type="submit" name="sa" value="Search"><b class="hidden">Let’s see if </b>Google <b class="hidden">Finds </b>it</button>
+          </li>
+        </ol>
+      </form>
+    {% endif %}
 
-	</div>
+  </div>
 </nav>

@@ -16,19 +16,14 @@
     {% include header.html %}
     
     <main role="main">
-      
-      {{ content | expand_urls: root_url }}
-      
-      </main>
+      {{ content | expand_urls: root_url }}      
+    </main>
       
     <hr class="rule rule--optional">
     
-    {% include navigation.html %}
-    
+    {% include_cached navigation.html %}
     {% include footer.html %}
-    
     {% include footer-after.html %}
-  
   </body>
 
 </html>

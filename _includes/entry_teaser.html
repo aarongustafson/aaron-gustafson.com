@@ -1,45 +1,50 @@
-{% capture excerpted %}{{ post.excerpt }}{% endcapture %}
-{% capture title %}{{ post.title | titlecase | widont | markdownify | remove:'<p>' | remove:'</p>' }}{% endcapture %}
+{% capture title %}{{ include.title | titlecase | widont | markdownify | remove:'<p>' | remove:'</p>' }}{% endcapture %}
 
-{% unless post.no_header %}
-	<header class="entry__header">
-		<h1 class="entry__title entry-title">
-			{% if post.ref_url %}
-				<a rel="bookmark" href="{{ post.ref_url }}">{{ title }}</a>
-			{% else %}
-				<a rel="bookmark" href="{{ root_url }}{{ post.url }}">{{ title }}</a>
-			{% endif %}
-		</h1>
-		{% unless post.meta == false %}
-			<p class="entry__meta">
-				{% if post.ref_url %}        		
-					{{ site.data.microcopy.links.date_prefix }}
-				{% else %}
-					{{ site.data.microcopy.notebook.date_prefix }}
-				{% endif %}
-				{% include post/date.html %}
-				{% if post.via %}
-					<br><abbr title="via">↬</abbr> <a href="{{ post.via.url }}">{{ post.via.name }}</a>
-				{% endif %}
-				{% if post.tags %}
-					<br>{% include post/tags.html %}
-				{% endif %}
-      		</p>
-		{% endunless %}
-  	</header>
+{% unless include.no_header %}
+  <header class="entry__header">
+    <h1 class="entry__title entry-title">
+      {% if include.ref_url %}
+        <a rel="bookmark" href="{{ include.ref_url }}">{{ title }}</a>
+      {% else %}
+        <a rel="bookmark" href="{{ include.url }}">{{ title }}</a>
+      {% endif %}
+    </h1>
+    {% unless include.meta == false %}
+      <p class="entry__meta">
+        {% if include.ref_url %}        		
+          {{ site.data.microcopy.links.date_prefix }}
+        {% else %}
+          {{ site.data.microcopy.notebook.date_prefix }}
+        {% endif %}
+
+        {% include_cached post/date.html
+                          date=include.date
+                          last_updated_at=include.last_updated_at
+        %}
+
+        {% if include.via %}
+          <br><abbr title="via">↬</abbr> <a href="{{ include.via.url }}">{{ include.via.name }}</a>
+        {% endif %}
+
+        {% if include.tags %}
+          <br>{% include_cached post/tags.html tags=include.tags dir=site.tag_page_dir %}
+        {% endif %}
+      </p>
+    {% endunless %}
+    </header>
 {% endunless %}
 
 <div class="entry__content entry__content--excerpt entry-content">
-	{{ post.excerpt | markdownify }}
+  {{ include.excerpt | markdownify }}
 </div>
- 	
+   
 <footer class="entry__footer">
-	<p>
-		{% if post.content contains site.excerpt_separator %}
-			<a rel="bookmark" href="{{ root_url }}{{ post.url }}">You can finish reading
-			<cite>{{ title }}</cite> in less than {{ post.content | reading_time_as_i }}</a>
-		{% elsif post.ref_url %}
-			<a rel="original-article" href="{{ post.ref_url }}">Source: {{ post.ref_source }}</a>
-		{% endif %}
-	</p>
+  <p>
+    {% if include.content contains include.separator %}
+      <a rel="bookmark" href="{{ include.url }}">You can finish reading
+      <cite>{{ title }}</cite> in less than {{ include.content | reading_time_as_i }}</a>
+    {% elsif include.ref_url %}
+      <a rel="original-article" href="{{ include.ref_url }}">Source: {{ include.ref_source }}</a>
+    {% endif %}
+  </p>
 </footer>

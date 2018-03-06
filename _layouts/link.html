@@ -7,60 +7,64 @@ single: true
 {% assign this_url = "{{ site.url }}{{ page.url }}" %}
 
 <div class="layout-container layout-container--blog">
-	<article role="article" class="layout-container__primary h-entry">
-		<div class="entry">
-			<header class="entry__header">
-		     	<h1 class="entry__title p-name"><a rel="external"{% if post.hreflang %} hreflang="{{ post.hreflang }}"{% endif %} href="{{ page.ref_url }}">{% if site.titlecase %}{{ page.title | titlecase | widont }}{% else %}{{ page.title | widont }}{% endif %}</a></h1>
-				<p class="entry__meta">
-					Published in {{ page.ref_source }}
-					<br>
-					{{ site.data.microcopy.links.date_prefix }} {% include post/date.html %} <b class="hidden">by <a class="p-author h-card" href="/about">Aaron Gustafson</a></b>
-					{% if page.via %}
-						<br>
-						<abbr title="via">↬</abbr> <a href="{{ post.via.url }}">{{ page.via.name }}</a>
-					{% endif %}
-				</p>
-		  	</header>
-	
-			<div class="entry__content e-content">
-				{{ content }}
-				<p class="read-on"><a rel="original-article"{% if post.hreflang %} hreflang="{{ post.hreflang }}"{% endif %} href="{{ page.ref_url }}">Read on {{ page.ref_source }}</a></p>
-			</div>
+  <article role="article" class="layout-container__primary h-entry">
+    <div class="entry">
+      <header class="entry__header">
+        <h1 class="entry__title p-name">
+          <a rel="external"
+             href="{{ page.ref_url }}"
+             {% if post.hreflang %} hreflang="{{ post.hreflang }}"{% endif %}
+             >{{ page.title | titlecase | widont }}</a>
+        </h1>
+        <p class="entry__meta">
+          Published in {{ page.ref_source }}
+          <br>
+          {{ site.data.microcopy.links.date_prefix }}
+          {% include_cached post/date.html
+                            date=page.date
+                            last_updated_at=page.last_updated_at
+          %}
+          <b class="hidden">by <a class="p-author h-card" href="/about">Aaron Gustafson</a></b>
+          {% if page.via %}
+            <br>
+            <abbr title="via">↬</abbr> <a href="{{ post.via.url }}">{{ page.via.name }}</a>
+          {% endif %}
+        </p>
+        </header>
 
-			<footer class="entry__footer">
-				{% unless page.sharing == false %}
-					{% include post/sharing.html %}
-			    {% endunless %}
-			</footer>
+      <div class="entry__content e-content">
+        {{ content }}
+        <p class="read-on">
+          <a rel="original-article"
+             {% if post.hreflang %} hreflang="{{ post.hreflang }}"{% endif %}
+             href="{{ page.ref_url }}">Read on {{ page.ref_source }}</a>
+        </p>
+      </div>
 
-		</div>
-	</article>
-	
-	{% unless page.sidebar == false %}
-		<hr class="rule rule--optional">
+      <footer class="entry__footer">
+        {% unless page.sharing == false %}
+          {% include_cached post/sharing.html
+                            url=this_url
+                            source=page.ref_source
+                            title=page.title
+          %}
+        {% endunless %}
+      </footer>
 
-		<aside class="layout-container__secondary">
-			{% if site.post_asides.size %}
-	    		{% include_array post_asides %}
-			{% else %}
-	   			{% include_array default_asides %}
-			{% endif %}
-		</aside>
-	{% endunless %}
-
-	<!--script src="/j/post.min.js" async></script-->
+    </div>
+  </article>
+  
 </div>
 
 <script type="application/ld+json">
-{%
-	include jsonld/post.html 
-		headline=page.title
-		genre=page.category
-		keywords=page.keywords
-		content=page.content
-		link=this_url
-		date=page.date
-		updated=page.last_updated_at
-		image=page.image
-%}
+  {% include_cached jsonld/post.html 
+                    headline=page.title
+                    genre=page.category
+                    keywords=page.keywords
+                    content=page.content
+                    link=this_url
+                    date=page.date
+                    updated=page.last_updated_at
+                    image=page.image
+  %}
 </script>

@@ -246,7 +246,7 @@ adaptive_image:
 
 webmentions:
   # debug: true
-  # pause_lookups: true
+  pause_lookups: true
   username: aaron-gustafson.com
   cache_bad_uris_for: 7 # in days
   legacy_domains:
