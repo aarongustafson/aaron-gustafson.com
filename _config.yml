@@ -173,7 +173,7 @@ jekyll-archives:
   enabled: tags
   layout: 'tag.html'
   permalinks:
-    tag: '/notebook/tags/:name/'
+    tag: '/tags/:name/'
   tag_title_prefix: 'Browse By Tag:'
 
 # Asides
@@ -188,7 +188,7 @@ page_asides: [asides/about.html,asides/networks.html,asides/events.html]
 
 # Tagging
 tag_page_layout: tag
-tag_page_dir: /notebook/tags/
+tag_page_dir: /tags/
 
 # Open Graph
 og:

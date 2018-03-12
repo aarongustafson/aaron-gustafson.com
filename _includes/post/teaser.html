@@ -40,7 +40,7 @@
    
 <footer class="entry__footer">
   <p>
-    {% if include.content contains include.separator %}
+    {% if include.content contains site.excerpt_separator %}
       <a rel="bookmark" href="{{ include.url }}">You can finish reading
       <cite>{{ title }}</cite> in less than {{ include.content | reading_time_as_i }}</a>
     {% elsif include.ref_url %}

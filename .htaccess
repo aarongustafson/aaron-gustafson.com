@@ -84,6 +84,9 @@ RewriteBase /
 # Removing AMP
 RewriteRule ^amp/(.*)$ $1 [L,R=301]
 
+# Moving Tags
+RewriteRule ^notebook/tags/(.*)$ tags/$1 [L,R=301]
+
 # Old Links in Notebook directory
 RewriteCond %{REQUEST_URI} ^notebook/
 RewriteCond %{REQUEST_URI} !^notebook/links/

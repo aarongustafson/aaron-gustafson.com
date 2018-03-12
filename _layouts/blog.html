@@ -12,7 +12,7 @@ layout: default
     
     {% for post in paginator.posts %}
       <article class="entry entry--teaser">
-        {% include_cached entry_teaser.html 
+        {% include_cached post/teaser.html 
                           title=post.title
                           date=post.date
                           last_updated_at=post.last_updated_at
@@ -25,7 +25,6 @@ layout: default
                           meta=post.meta
                           tags=post.tags
                           via=post.via
-                          separator=site.excerpt_separator
         %}
       </article>
       {% unless forloop.last %}
