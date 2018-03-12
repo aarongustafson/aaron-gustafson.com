@@ -28,10 +28,10 @@ env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
-deploy:
-  skip_cleanup: true
-  provider: script
-  script: .travis/deploy.sh
-  on:
-    branch: master
-    rvm: 2.4
+#deploy:
+#  skip_cleanup: true
+#  provider: script
+#  script: .travis/deploy.sh
+#  on:
+#    branch: master
+#    rvm: 2.4
