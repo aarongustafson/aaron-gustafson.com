@@ -12,19 +12,18 @@ require 'uri'
 
 module Jekyll
   class GistTag < Liquid::Tag
-
     def initialize(tag_name, text, token)
-      super
       @text           = text
       @cache_disabled = false
       @embed_code     = false
-      @config         = Jekyll.configuration({})
-      @cache_folder   = @config['gist_tag']['cache'] || File.expand_path( "../.gist-cache", File.dirname(__FILE__) )
-      @encoding       = @config['encoding'] || 'UTF-8'
-      FileUtils.mkdir_p @cache_folder
+      super
     end
 
     def render(context)
+      @config         = context.registers[:site].config
+      @cache_folder   = @config['gist_tag']['cache'] || File.expand_path( "../.gist-cache", File.dirname(__FILE__) )
+      @encoding       = @config['encoding'] || 'UTF-8'
+      FileUtils.mkdir_p @cache_folder
       if @text.match(/^[a-zA-Z\d]*\s.*?$/)
         string = @text.gsub(/\s+/, ' ').strip
         gist, file, @embed_code = string.split(' ')
@@ -53,8 +52,8 @@ module Jekyll
     def javascript_embed(script_url, code)
       code = CGI.escapeHTML code
       <<-HTML
-<div><script src="#{script_url}"></script>
-<noscript><pre><code>#{code}</code></pre></noscript></div>
+        <div><script src="#{script_url}"></script>
+        <noscript><pre><code>#{code}</code></pre></noscript></div>
       HTML
     end
 
@@ -141,8 +140,8 @@ module Jekyll
 
   class GistTagNoCache < GistTag
     def initialize(tag_name, text, token)
-      super
       @cache_disabled = true
+      super
     end
   end
 end

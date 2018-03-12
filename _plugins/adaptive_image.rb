@@ -31,9 +31,7 @@
 #
 
 module Jekyll
-
   class AdaptiveImageTag < Liquid::Tag
-    
     @url = nil
 
     def initialize(tag_name, tag_text, tokens)
@@ -85,7 +83,7 @@ module Jekyll
           the_src = @url % {url: original_source, width: size, cache: @settings['cache']}
           the_src << " #{size}w"
           srcset << the_src
-          unless smallest_src || smallest_src <= size
+          if !smallest_src || smallest_src > size
             smallest_src = size
             src = the_src
           end
