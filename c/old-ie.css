@@ -384,7 +384,7 @@ textarea {
     Events
 \*------------------------------------*/
 /*------------------------------------*\
-    Blog Entry
+Blog Entry
 \*------------------------------------*/
 .entry {
   position: relative;
@@ -472,6 +472,19 @@ textarea {
 /*------------------------------------*\
     Subsections
 \*------------------------------------*/
+.subsection__header::before, .subsection__header::after {
+  display: inline;
+  position: relative;
+  bottom: 0.125em;
+  margin: 0;
+}
+.subsection__header::before {
+  content: '\2726\00A0\2726\00A0\2726\00A0\00A0';
+}
+.subsection__header::after {
+  content: '\00A0\00A0\2726\00A0\2726\00A0\2726';
+}
+
 /*------------------------------------*\
     Pullquotes
 \*------------------------------------*/

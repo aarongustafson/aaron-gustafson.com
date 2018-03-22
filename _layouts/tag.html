@@ -4,7 +4,7 @@ layout: default
 footer: true
 ---
 
-{% capture the_title %}{{ site.jekyll-archives.tag_title_prefix }} {{ page.tag }}{% endcapture %}
+{% capture the_title %}<b>{{ site.jekyll-archives.tag_title_prefix }}</b> <b>{{ page.tag }}</b>{% endcapture %}
 {% capture svg_essay %}{% svg /i/icons/essay.svg width=24 %}{% endcapture %}
 {% capture svg_link %}{% svg /i/icons/pin.svg width=24 %}{% endcapture %}
 
@@ -31,9 +31,12 @@ footer: true
           {% else %}
             <p class="entry__type" title="Link" aria-label="Link">{{ svg_link }}</p>
           {% endif %}
-          <h2 class="entry__title entry-title">
-            <a rel="bookmark" href="{{ post.url }}">{{ post.title | titlecase | widont | markdownify | remove:'<p>' | remove:'</p>' }}</a>
-          </h2>
+          <div class="entry__details">
+            <h2 class="entry__title entry-title">
+              <a rel="bookmark" href="{{ post.url }}">{{ post.title | titlecase | widont | markdownify | remove:'<p>' | remove:'</p>' }}</a>
+            </h2>
+            <p class="entry__meta">{% if post.collection=="posts" %}Posted{% else %}Saved{% endif %} on <time class="dt-published" datetime="{{ post.date | datetime | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time></p>
+          </div>
         </article>
       {% endfor %}
     </div>

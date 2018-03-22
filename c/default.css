@@ -1172,7 +1172,7 @@ a.footnote {
 }
 
 /*------------------------------------*\
-    Blog Entry
+Blog Entry
 \*------------------------------------*/
 .entry {
   margin: 0 0 22px;
@@ -1214,6 +1214,10 @@ a.footnote {
   -ms-flex-align: center;
       align-items: center;
 }
+.entry--teaser + .entry--teaser {
+  margin-top: 44px;
+  margin-top: 2.75rem;
+}
 .entry--teaser .entry__type {
   background-color: #0e2e0a;
   border-radius: 100%;
@@ -1224,9 +1228,17 @@ a.footnote {
 .entry--teaser .entry__type path {
   fill: #fff;
 }
-.entry--teaser .entry__title {
+.entry--teaser .entry__details {
   margin: 0 0 0 15px;
   margin: 0 0 0 0.9375rem;
+}
+.entry--teaser .entry__meta {
+  font-size: 18px;
+  font-size: 1.125rem;
+  -moz-column-count: 1;
+       column-count: 1;
+  margin-top: 0;
+  position: absolute;
 }
 
 @supports ((-moz-column-count: 2) or (column-count: 2)) or (-moz-column-count: 2) {
@@ -1417,14 +1429,20 @@ html.wf-active div.gist a {
 }
 .subsection__header::before, .subsection__header::after {
   font-size: 0.75em;
-  position: relative;
-  bottom: 0.125em;
+  display: block;
 }
 .subsection__header::before {
-  content: '\2726\00A0\2726\00A0\2726\00A0\00A0';
+  content: '\2726\00A0\2726\00A0\2726';
+  margin: 0 0 15px;
+  margin: 0 0 0.9375rem;
 }
 .subsection__header::after {
-  content: '\00A0\00A0\2726\00A0\2726\00A0\2726';
+  content: '\2726\00A0\2726\00A0\2726';
+  margin: 15px 0 0;
+  margin: 0.9375rem 0 0;
+}
+.subsection__header b {
+  white-space: nowrap;
 }
 
 /*------------------------------------*\
@@ -2220,7 +2238,7 @@ Body-level settings
     Events
 \*------------------------------------*/
 /*------------------------------------*\
-    Blog Entry
+Blog Entry
 \*------------------------------------*/
 /*------------------------------------*\
     Gist

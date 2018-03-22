@@ -461,7 +461,7 @@ Body-level settings
     Events
 \*------------------------------------*/
 /*------------------------------------*\
-    Blog Entry
+Blog Entry
 \*------------------------------------*/
 @media (min-width: 43.125em) {
   .entry {
@@ -560,6 +560,21 @@ Body-level settings
 /*------------------------------------*\
     Subsections
 \*------------------------------------*/
+@media (min-width: 43.125em) {
+  .subsection__header::before, .subsection__header::after {
+    display: inline;
+    position: relative;
+    bottom: 0.125em;
+    margin: 0;
+  }
+  .subsection__header::before {
+    content: '\2726\00A0\2726\00A0\2726\00A0\00A0';
+  }
+  .subsection__header::after {
+    content: '\00A0\00A0\2726\00A0\2726\00A0\2726';
+  }
+}
+
 /*------------------------------------*\
     Pullquotes
 \*------------------------------------*/

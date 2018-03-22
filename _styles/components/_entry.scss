@@ -1,131 +1,144 @@
 /*------------------------------------*\
-    Blog Entry
+Blog Entry
 \*------------------------------------*/
 
 @include breakup-breakpoint( "global" ) {
-
-    .entry {
-
-        @include rem( margin, $margin-default );
-        
-        &__meta {
-            color: $color-grey;
-            padding: 0;
-        }
-
-        &__header &__meta {
-            @include rem( font-size, $font-size-small );
-        }
-
-        &__jump-links {
-            @include breakup-placeholder( delist );
-            margin-top: 0;
-        }
-
-        &__jump {
-            margin: 0;
-        }
-        
-        &__footer {
-            border-top: 1px solid $color-rule;
-            @include rem( padding-top, $default-spacing );
-        }
-        
-        &--teaser &__footer {
-            border-top: 0;
-            padding-top: 0;
-        }
-                
-        &__content hr {
-            @include rem( max-width, 220 );
-        }
-
-        &__sharing {
-            text-align: center;
-        }
-
-        &--teaser {
-            display: flex;
-            align-items: center;
-
-            .entry__type {
-                background-color: $color-green-dark;
-
-                border-radius: 100%;
-                width: 24px;
-                height: 24px;
-                padding: 10px;
-
-                path {
-                    fill: $color-white;
-                }
-            }
-
-            .entry__title {
-                @include rem( margin, 0 0 0 $table-spacing );
-            }
-        }
-
+  
+  .entry {
+    
+    @include rem( margin, $margin-default );
+    
+    &__meta {
+      color: $color-grey;
+      padding: 0;
     }
-
-    @supports (column-count:2) or (-webkit-column-count:2) or (-moz-column-count:2) {
-        .entry__meta {
-            column-count: 2;
-            @include rem( column-gap, $default-spacing );
-
-            dd + dt {
-                margin-top: 0;
-            }
-            dd {
-                @include rem( padding-bottom, $default-spacing );
-            }
-        }
+    
+    &__header &__meta {
+      @include rem( font-size, $font-size-small );
     }
+    
+    &__jump-links {
+      @include breakup-placeholder( delist );
+      margin-top: 0;
+    }
+    
+    &__jump {
+      margin: 0;
+    }
+    
+    &__footer {
+      border-top: 1px solid $color-rule;
+      @include rem( padding-top, $default-spacing );
+    }
+    
+    &--teaser &__footer {
+      border-top: 0;
+      padding-top: 0;
+    }
+    
+    &__content hr {
+      @include rem( max-width, 220 );
+    }
+    
+    &__sharing {
+      text-align: center;
+    }
+    
+    &--teaser {
+      display: flex;
+      align-items: center;
+      
+      & + & {
+        @include rem(margin-top, $default-spacing * 2);
+      }
 
+      .entry__type {
+        background-color: $color-green-dark;
+        
+        border-radius: 100%;
+        width: 24px;
+        height: 24px;
+        padding: 10px;
+        
+        path {
+          fill: $color-white;
+        }
+      }
+      
+      .entry__details {
+        @include rem( margin, 0 0 0 $table-spacing );
+      }
+
+      .entry__meta {
+        @include rem( font-size, $font-size-caption );
+
+        column-count: 1;
+        margin-top: 0;
+        
+        position: absolute;
+      }
+    }
+    
+  }
+  
+  @supports (column-count:2) or (-webkit-column-count:2) or (-moz-column-count:2) {
+    .entry__meta {
+      column-count: 2;
+      @include rem( column-gap, $default-spacing );
+      
+      dd + dt {
+        margin-top: 0;
+      }
+      dd {
+        @include rem( padding-bottom, $default-spacing );
+      }
+    }
+  }
+  
 }
 
 @include breakup-breakpoint( "medium" ) {
-
-    .entry {
-
-        position: relative;
-
-        &__header &__meta {
-
-            border-left: 1px solid $color-grey-light;
-            padding: .4em 1em;
-            margin-left: 1em;
-            @include rem( margin-top, $default-spacing );
-            width: 25%;
-            
-            position: absolute;
-            left: 100%;
-
-        }
-
-        &__title {
-            width: 134%;
-        }
-
-        & + .rule {
-            position: relative;
-            left: 68%;
-            margin-left: -110px;
-        }
-        
-    }
-
-    @supports (column-count:2) or (-webkit-column-count:2) or (-moz-column-count:2) {
-        .entry__meta {
-            column-count: 1;
-
-            dd + dt {
-                @include rem( margin-top, $default-spacing );
-            }
-            dd {
-                padding-bottom: 0;
-            }
-        }
+  
+  .entry {
+    
+    position: relative;
+    
+    &__header &__meta {
+      
+      border-left: 1px solid $color-grey-light;
+      padding: .4em 1em;
+      margin-left: 1em;
+      @include rem( margin-top, $default-spacing );
+      width: 25%;
+      
+      position: absolute;
+      left: 100%;
+      
     }
     
+    &__title {
+      width: 134%;
+    }
+    
+    & + .rule {
+      position: relative;
+      left: 68%;
+      margin-left: -110px;
+    }
+    
+  }
+  
+  @supports (column-count:2) or (-webkit-column-count:2) or (-moz-column-count:2) {
+    .entry__meta {
+      column-count: 1;
+      
+      dd + dt {
+        @include rem( margin-top, $default-spacing );
+      }
+      dd {
+        padding-bottom: 0;
+      }
+    }
+  }
+  
 }
