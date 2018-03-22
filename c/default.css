@@ -438,7 +438,7 @@ a[rel="original-article"]::after {
   }
   h1 a:link,
   h1 a:visited {
-    background-image: linear-gradient(to top, transparent, transparent 6px, #27831B 6px, #27831B 7px, transparent 7px);
+    background-image: linear-gradient(to top, transparent, transparent 2px, #27831B 2px, #27831B 3px, transparent 3px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
@@ -450,7 +450,7 @@ a[rel="original-article"]::after {
   }
   h1 a:hover,
   h1 a:focus {
-    background-image: linear-gradient(to top, transparent, transparent 6px, #1a5912 6px, #1a5912 7px, transparent 7px);
+    background-image: linear-gradient(to top, transparent, transparent 2px, #1a5912 2px, #1a5912 3px, transparent 3px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
@@ -468,21 +468,33 @@ a[rel="original-article"]::after {
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
+  html.wf-active a:hover,
+  html.wf-active a:focus {
+    background-image: linear-gradient(to top, transparent, transparent 2px, #27831B 2px, #27831B 3px, transparent 3px);
+    border-bottom-width: 0;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  }
   html.wf-active h1 a:link,
   html.wf-active h1 a:visited {
     background-image: linear-gradient(to top, transparent, transparent 8px, #27831B 8px, #27831B 9px, transparent 9px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
-  html.wf-active a:hover,
-  html.wf-active a:focus {
-    background-image: linear-gradient(to top, transparent, transparent 2px, #1a5912 2px, #1a5912 3px, transparent 3px);
+  html.wf-active h1 a:hover,
+  html.wf-active h1 a:focus {
+    background-image: linear-gradient(to top, transparent, transparent 8px, #27831B 8px, #27831B 9px, transparent 9px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
-  html.wf-active h1 a:hover,
-  html.wf-active h1 a:focus {
-    background-image: linear-gradient(to top, transparent, transparent 8px, #1a5912 8px, #1a5912 9px, transparent 9px);
+  html.wf-active h2 a:hover,
+  html.wf-active h2 a:focus {
+    background-image: linear-gradient(to top, transparent, transparent 5px, #1a5912 5px, #1a5912 6px, transparent 6px);
+    border-bottom-width: 0;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  }
+  html.wf-active h2 a:link,
+  html.wf-active h2 a:visited {
+    background-image: linear-gradient(to top, transparent, transparent 5px, #1a5912 5px, #1a5912 6px, transparent 6px);
     border-bottom-width: 0;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
@@ -549,6 +561,7 @@ time {
 code,
 kbd {
   background-color: #F9F9F9;
+  background-color: rgba(249, 249, 249, 0.6);
   border: 1px solid #DDD;
   border-radius: 3px;
   color: #2c2825;
@@ -1194,6 +1207,26 @@ a.footnote {
 }
 .entry__sharing {
   text-align: center;
+}
+.entry--teaser {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.entry--teaser .entry__type {
+  background-color: #0e2e0a;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  padding: 10px;
+}
+.entry--teaser .entry__type path {
+  fill: #fff;
+}
+.entry--teaser .entry__title {
+  margin: 0 0 0 15px;
+  margin: 0 0 0 0.9375rem;
 }
 
 @supports ((-moz-column-count: 2) or (column-count: 2)) or (-moz-column-count: 2) {

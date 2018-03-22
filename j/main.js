@@ -250,7 +250,7 @@
 (function( document, location ){
 
   // Bail on older browsers
-  if ( ! 'querySelectorAll' in document )
+  if ( ! ('querySelectorAll' in document) )
   {
     return false;
   }

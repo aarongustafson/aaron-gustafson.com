@@ -7,6 +7,7 @@
     code,
     kbd {
         background-color: $color-off-white;
+        background-color: rgba( $color-off-white, .6 );
         border: 1px solid $color-grey-light;
         border-radius: 3px;
         color: $color-black;

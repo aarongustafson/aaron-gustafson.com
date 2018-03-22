@@ -44,6 +44,28 @@
             text-align: center;
         }
 
+        &--teaser {
+            display: flex;
+            align-items: center;
+
+            .entry__type {
+                background-color: $color-green-dark;
+
+                border-radius: 100%;
+                width: 24px;
+                height: 24px;
+                padding: 10px;
+
+                path {
+                    fill: $color-white;
+                }
+            }
+
+            .entry__title {
+                @include rem( margin, 0 0 0 $table-spacing );
+            }
+        }
+
     }
 
     @supports (column-count:2) or (-webkit-column-count:2) or (-moz-column-count:2) {

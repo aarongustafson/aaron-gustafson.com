@@ -5,6 +5,8 @@ footer: true
 ---
 
 {% capture the_title %}{{ site.jekyll-archives.tag_title_prefix }} {{ page.tag }}{% endcapture %}
+{% capture svg_essay %}{% svg /i/icons/essay.svg width=24 %}{% endcapture %}
+{% capture svg_link %}{% svg /i/icons/pin.svg width=24 %}{% endcapture %}
 
 {% assign posts = "" | split,"" %}
 {% for collection in site.collections %}
@@ -23,20 +25,16 @@ footer: true
 
     <div id="blog-archives">
       {% for post in sorted_posts %}
-        {% if forloop.first %}
-          <ul>
-        {% endif %}
-        <li>
-          <article class="entry entry--teaser entery--{{ post.collection }}">
-            <h2 class="entry__title entry-title">
-              <a rel="bookmark" href="{{ post.url }}">{{ post.title | titlecase | widont | markdownify | remove:'<p>' | remove:'</p>' }}</a>
-            </h2>
-            <p class="entry__meta entry__meta--type">{{ post.collection | split: "" | reverse | join: "" | remove_first: "s" | split: "" | reverse | join: "" }}</p>
-          </article>
-        </li>
-        {% if forloop.last %}
-          </ul>
-        {% endif %}
+        <article class="entry entry--teaser entry--{{ post.collection }}">
+          {% if post.collection=="posts" %}
+            <p class="entry__type" title="Post" aria-label="Post">{{ svg_essay }}</p>
+          {% else %}
+            <p class="entry__type" title="Link" aria-label="Link">{{ svg_link }}</p>
+          {% endif %}
+          <h2 class="entry__title entry-title">
+            <a rel="bookmark" href="{{ post.url }}">{{ post.title | titlecase | widont | markdownify | remove:'<p>' | remove:'</p>' }}</a>
+          </h2>
+        </article>
       {% endfor %}
     </div>
 

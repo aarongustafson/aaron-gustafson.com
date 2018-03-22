@@ -11,7 +11,7 @@ layout: default
   <div class="layout-container__primary">
     
     {% for post in paginator.posts %}
-      <article class="entry entry--teaser">
+      <article class="entry entry--excerpt entry--{{ post.collection }}">
         {% include_cached post/teaser.html 
                           title=post.title
                           date=post.date

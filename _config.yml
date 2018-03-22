@@ -17,6 +17,7 @@ gems:
   - jekyll-archives
   - jekyll-crosspost-to-medium
   - jekyll-include-cache
+  - jekyll-inline-svg
   - jekyll-paginate-v2
   - jekyll-redirect-from
   - jekyll-time-to-read
@@ -185,6 +186,10 @@ page_asides: [asides/about.html,asides/networks.html,asides/events.html]
 # ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #
+
+# SVGs
+svg:
+  optimize: true
 
 # Tagging
 tag_page_layout: tag

@@ -97,7 +97,7 @@ class YouTube < Liquid::Tag
     result = JSON.parse(response.body)
 
     # if the hash has 'Error' as a key, we raise an error
-    if result['items'].length != 1
+    if result['items'].nil? || result['items'].length != 1
       puts 'No video found'
       return
     end

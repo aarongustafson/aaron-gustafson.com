@@ -45,6 +45,9 @@ GEM
       json (~> 2.0)
     jekyll-include-cache (0.1.0)
       jekyll (~> 3.3)
+    jekyll-inline-svg (1.0.1)
+      jekyll (~> 3.3)
+      svg_optimizer (= 0.1.0)
     jekyll-paginate-v2 (1.9.4)
       jekyll (~> 3.0)
     jekyll-redirect-from (0.13.0)
@@ -117,6 +120,8 @@ GEM
     simple_oauth (0.3.1)
     string_inflection (0.1.2)
     stringex (2.8.2)
+    svg_optimizer (0.1.0)
+      nokogiri
     thread_safe (0.3.6)
     titlecase (0.1.1)
     twitter (6.1.0)
@@ -151,6 +156,7 @@ DEPENDENCIES
   jekyll-archives
   jekyll-crosspost-to-medium
   jekyll-include-cache
+  jekyll-inline-svg
   jekyll-paginate-v2
   jekyll-redirect-from
   jekyll-seo-tag
