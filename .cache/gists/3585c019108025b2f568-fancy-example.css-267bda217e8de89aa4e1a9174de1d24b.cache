@@ -1,0 +1,108 @@
+<link rel="stylesheet" href="https://assets-cdn.github.com/assets/gist-embed-1baaff35daab552f019ad459494450f1.css">
+<div id="gist27925529" class="gist">
+    <div class="gist-file">
+      <div class="gist-data">
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-fancy-example-css" class="file">
+    
+
+  <div itemprop="text" class="blob-wrapper data type-css">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="file-fancy-example-css-L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="file-fancy-example-css-LC1" class="blob-code blob-code-inner js-file-line"><span class="pl-e">.form-control</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-fancy-example-css-L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="file-fancy-example-css-LC2" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">position</span></span>: <span class="pl-c1">relative</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-fancy-example-css-L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="file-fancy-example-css-LC3" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-fancy-example-css-L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="file-fancy-example-css-LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">label</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-fancy-example-css-L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="file-fancy-example-css-LC5" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">display</span></span>: <span class="pl-c1">block</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-fancy-example-css-L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="file-fancy-example-css-LC6" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">position</span></span>: <span class="pl-c1">absolute</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-fancy-example-css-L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="file-fancy-example-css-LC7" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">top</span></span>: <span class="pl-c1">50<span class="pl-k">%</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-fancy-example-css-L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="file-fancy-example-css-LC8" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">margin-top</span></span>: <span class="pl-c1">-.5<span class="pl-k">em</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-fancy-example-css-L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="file-fancy-example-css-LC9" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">left</span></span>: <span class="pl-c1">.25<span class="pl-k">em</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-fancy-example-css-L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="file-fancy-example-css-LC10" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">transition</span></span>: <span class="pl-c1">.25<span class="pl-k">s</span></span> transform;</td>
+      </tr>
+      <tr>
+        <td id="file-fancy-example-css-L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="file-fancy-example-css-LC11" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-fancy-example-css-L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="file-fancy-example-css-LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">input</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-fancy-example-css-L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="file-fancy-example-css-LC13" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">display</span></span>: <span class="pl-c1">block</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-fancy-example-css-L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="file-fancy-example-css-LC14" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">border</span></span>: <span class="pl-c1">1<span class="pl-k">px</span></span> <span class="pl-c1">solid</span>;</td>
+      </tr>
+      <tr>
+        <td id="file-fancy-example-css-L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="file-fancy-example-css-LC15" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">border-radius</span></span>: <span class="pl-c1">3<span class="pl-k">px</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-fancy-example-css-L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="file-fancy-example-css-LC16" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">padding</span></span>: <span class="pl-c1">.25<span class="pl-k">em</span></span>;</td>
+      </tr>
+      <tr>
+        <td id="file-fancy-example-css-L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="file-fancy-example-css-LC17" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+      <tr>
+        <td id="file-fancy-example-css-L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="file-fancy-example-css-LC18" class="blob-code blob-code-inner js-file-line"><span class="pl-ent">input</span><span class="pl-e">:focus</span> <span class="pl-k">+</span> <span class="pl-ent">label</span> {</td>
+      </tr>
+      <tr>
+        <td id="file-fancy-example-css-L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="file-fancy-example-css-LC19" class="blob-code blob-code-inner js-file-line">  <span class="pl-c1"><span class="pl-c1">transform</span></span>: <span class="pl-c1">translateY</span>(<span class="pl-c1">-1.5<span class="pl-k">em</span></span>);</td>
+      </tr>
+      <tr>
+        <td id="file-fancy-example-css-L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="file-fancy-example-css-LC20" class="blob-code blob-code-inner js-file-line">}</td>
+      </tr>
+</table>
+
+
+  </div>
+
+  </div>
+  
+</div>
+
+      </div>
+      <div class="gist-meta">
+        <a href="https://gist.github.com/aarongustafson/3585c019108025b2f568/raw/af7d34e88830a540478fcb49839be692d47248f2/fancy-example.css" style="float:right">view raw</a>
+        <a href="https://gist.github.com/aarongustafson/3585c019108025b2f568#file-fancy-example-css">fancy-example.css</a>
+        hosted with &#10084; by <a href="https://github.com">GitHub</a>
+      </div>
+    </div>
+</div>
+

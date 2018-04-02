@@ -1,0 +1,2 @@
+<input type="radio" name="agree" id="agree_yes" value="yes">
+<label for="agree_yes">Yes</label>
