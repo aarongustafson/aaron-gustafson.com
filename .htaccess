@@ -102,3 +102,6 @@ RewriteRule ^atom-(.*)\.xml feeds/$1.xml [L,R=301]
 <FilesMatch "serviceworker(\.min)?\.js$">
 Header set Cache-Control "max-age=0"
 </FilesMatch>
+
+# Additional headers
+Header set Timing-Allow-Origin: "*"

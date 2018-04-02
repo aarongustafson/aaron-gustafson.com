@@ -5,6 +5,8 @@ date: 2015-03-26 14:44:24 -0400
 comments: true
 tags: ["web design",experiments,css]
 description: "While flying across the U.S. this week, I decided to play around with Flexbox and quantity queries in hopes of coming up with something interesting."
+translations:
+  fr: https://la-cascade.io/jouons-avec-flexbox-et-les-quantity-queries/
 ---
 
 Ever since reading [Haydon Pickering](http://twitter.com/heydonworks)’s [piece on quantity queries](http://alistapart.com/article/quantity-queries-for-css), I’ve been musing over the possibilities for layout. I decided I to play around with them a bit on this site as it’s been a while since I’ve tweaked the design. Being that I wanted to experiment, I thought this would be a fun time to tuck into [Flexbox](http://www.w3.org/TR/css-flexbox-1/) a bit more as well.

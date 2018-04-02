@@ -52,6 +52,14 @@ single: true
               {% endfor %}
             {% endif %}
 
+            {% if page.translations %}
+              <dt class="dont-read">Translated</dt>
+              {% for translation in page.translations %}
+                {% assign lang = translation[0] %}
+                <dd class="dont-read"><a class="u-syndication" hreflang="{{ lang }}" href="{{ translation[1] }}">{{ site.data.langs[lang] }}</a></dd>
+              {% endfor %}
+            {% endif %}
+
             {% unless page.no_ads %}
               <dt class="dont-read">Paying for Hosting</dt>
               <dd class="dont-read">{% include_cached ad.html %}</dd>

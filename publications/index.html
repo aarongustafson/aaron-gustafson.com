@@ -10,118 +10,104 @@ sidebar: false
 body_class: publications
 ---
 
+{% capture svg_book %}{% svg /i/icons/book.svg width=24 %}{% endcapture %}
+{% capture svg_article %}{% svg /i/icons/article.svg width=24 %}{% endcapture %}
+
 <h1 class="page__title">Everything I’ve Written</h1>
 
 {{ site.data.microcopy.publications.intro | markdownify }}
 
 <section id="books" class="section">
-	<h1 class="section__title">Books</h1>
+  <h2 class="section__title">Books</h2>
 
-	<ul class="listing listing--books">
-		{% for book in site.data.books.authored %}
-			<li class="listing__item listing__item--{{ forloop.index }} book">
-				{% comment %}
-				<figure class="book__cover">
-					<img class="book__cover__image" src="/i/books/{{ book.cover }}@200h.jpg" height="200" width="{{ book.width }}" alt=""
-					 	 srcset="/i/books/{{ book.cover }}@200h.jpg {{ book.width }}w, /i/books/{{ book.cover }}@400h.jpg {{ book.width | times:2 }}w">
-				</figure>
-				{% endcomment %}
-				<h3 class="listing__item__title"><cite>
-					<b class="book__title">{{ book.title }}</b>
-					{% if book.subtitle %}
-						<br>
-                        <b class="book__subtitle">{{ book.subtitle }}</b>
-					{% endif %}
-				</cite></h3>
-                {% if book.author != "Aaron Gustafson" %}
-                    <p class="listing__item__meta">
-                        <b class="book__author">{{ book.author }}</b>
-                        {% if book.meta %}
-                            <br>
-                            <b class="book__meta">{{ book.meta }}</b>
-                        {% endif %}
-                    </p>
-                {% endif %}
-				<div class="listing__item__content book__notes">
-					{{ book.notes | markdownify }}
-				</div>
-                {% if book.sales_url %}
-				    <p class="listing__item__link book__link"><a href="{{ book.sales_url }}">Purchase on {{ book.sales_channel }}</a></p>
-                {% endif %}
-			</li>
-		{% endfor %}
-	</ul>
+  <ul class="listing listing--books">
+    {% for book in site.data.books.authored %}
+      <li class="listing__item listing__item--{{ forloop.index }} book">
+        {% comment %}
+        <figure class="book__cover">
+          <img class="book__cover__image" src="/i/books/{{ book.cover }}@200h.jpg" height="200" width="{{ book.width }}" alt=""
+              srcset="/i/books/{{ book.cover }}@200h.jpg {{ book.width }}w, /i/books/{{ book.cover }}@400h.jpg {{ book.width | times:2 }}w">
+        </figure>
+        {% endcomment %}
+        <details>
+          <summary>
+            <h3 class="listing__item__title book__title"><cite>{{ book.title }}</cite></h3>
+          </summary>
+          {% if book.subtitle %}
+            <h4 class="book__subtitle">{{ book.subtitle }}</h4>
+          {% endif %}
+
+          {% if book.author != "Aaron Gustafson" %}
+            <p class="listing__item__meta">
+              <b class="book__author">{{ book.author }}</b>
+              {% if book.meta %}
+                <br>
+                <b class="book__meta">{{ book.meta }}</b>
+              {% endif %}
+            </p>
+          {% endif %}
+          <div class="listing__item__content book__notes">
+            {{ book.notes | markdownify }}
+          </div>
+          {% if book.sales_url %}
+            <p class="listing__item__link book__link"><a href="{{ book.sales_url }}">Purchase on {{ book.sales_channel }}</a></p>
+          {% endif %}
+        </details>
+      </li>
+    {% endfor %}
+  </ul>
     
-    <p>{{ site.data.microcopy.publications.contributions_intro }}</p>
-    <ul class="listing listing--books">
-		{% for book in site.data.books.contributed %}
-			<li class="listing__item listing__item--{{ forloop.index }} book book--contributed">
-				{% comment %}
-				<figure class="book__cover">
-					<img class="book__cover__image" src="/i/books/{{ book.cover }}@200h.jpg" height="200" width="{{ book.width }}" alt=""
-					 	 srcset="/i/books/{{ book.cover }}@200h.jpg {{ book.width }}w, /i/books/{{ book.cover }}@400h.jpg {{ book.width | times:2 }}w">
-				</figure>
-				{% endcomment %}
-				<h3 class="listing__item__title"><cite>
-					<b class="book__title">{{ book.title }}</b>
-					{% if book.subtitle %}
-						<br>
-                        <b class="book__subtitle">{{ book.subtitle }}</b>
-					{% endif %}
-				</cite></h3>
-				<p class="listing__item__meta">
-					by <b class="book__author">{{ book.author }}</b>
-					{% if book.meta %}
-						<br>
-                        <b class="book__meta">{{ book.meta }}</b>
-					{% endif %}
-				</p>
-                {% comment %}
-				<div class="listing__item__content book__notes">
-					{{ book.notes | markdownify }}
-				</div>
-                {% endcomment %}
-                {% if book.sales_url %}
-				    <p class="listing__item__link book__link"><a href="{{ book.sales_url }}">Purchase on {{ book.sales_channel }}</a></p>
-                {% endif %}
-			</li>
-		{% endfor %}
-	</ul>
+  <p>{{ site.data.microcopy.publications.contributions_intro }}</p>
 
-	<p>{{ site.data.microcopy.publications.editing_intro }}
-		{% for book in site.data.books.edited %}
-			{% if forloop.index == forloop.length %}
-				and
-			{% endif %}
-			<a href="{{ book.url }}">{{ book.title }}</a> by
-			{{ book.author }}{% if forloop.index == forloop.length %}.{% else %},{% endif %}
-		{% endfor %}
-	</p>
+  <ul class="listing listing--books">
+    {% for book in site.data.books.contributed %}
+      <li class="listing__item listing__item--{{ forloop.index }} book book--contributed">
+        <p class="listing__item__type" title="Book" aria-label="Book">{{ svg_book }}</p>
+        <h3 class="listing__item__title">
+          {% if book.sales_url %}<a href="{{ book.sales_url }}">{% endif %}
+          <cite>
+            <b class="book__title">{{ book.title }}</b>{% if book.subtitle %}: <b class="book__subtitle">{{ book.subtitle }}</b>{% endif %}
+          </cite>
+        </h3>
+        <p class="listing__item__meta">by <b class="book__author">{{ book.author }}</b></p>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p>{{ site.data.microcopy.publications.editing_intro }}
+    {% for book in site.data.books.edited %}
+      {% if forloop.index == forloop.length %}
+        and
+      {% endif %}
+      <a href="{{ book.url }}"><cite>{{ book.title }}</cite></a> by
+      {{ book.author }}{% if forloop.index == forloop.length %}.{% else %},{% endif %}
+    {% endfor %}
+  </p>
 
 </section>
 
 <section id="articles" class="section">
-	<h1 class="section__title">Articles</h1>
-	
-	<ul class="listing listing--articles">
-		{% for article in site.data.articles %}
-			<li class="listing__item listing__item--{{ forloop.index }} article">
-				<h3 class="listing__item__title article__title">
-					{% if article.url %}
-						<a href="{{ article.url }}">{{ article.title }}</a>
-					{% else %}
-						{{ article.title }}
-					{% endif %}
-				</h3>
-				<p class="listing__item__meta article__publisher">
-					<cite>{{ article.publisher }}</cite>,
-					<time datetime="{{ article.published | date_to_xmlschema }}">{{ article.published | date: "%B %Y" }}</time>
-				</p>
-				<div class="listing__item__content article__notes">
-					{{ article.notes | markdownify }}
-				</div>
-			</li>
-		{% endfor %}
-	</ul>
-	
+  <h2 class="section__title">Articles</h2>
+  
+  <ul class="listing listing--articles">
+    {% for article in site.data.articles %}
+      <li class="listing__item listing__item--{{ forloop.index }} article">
+        <p class="listing__item__type" title="Article" aria-label="Article">{{ svg_article }}</p>
+        <div class="listing__item__details">
+          <h3 class="listing__item__title article__title">
+            {% if article.url %}
+              <a href="{{ article.url }}">{{ article.title }}</a>
+            {% else %}
+              {{ article.title }}
+            {% endif %}
+          </h3>
+          <p class="listing__item__meta article__publisher">
+            <cite>{{ article.publisher }}</cite>,
+            <time datetime="{{ article.published | date_to_xmlschema }}">{{ article.published | date: "%B %Y" }}</time>
+          </p>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+  
 </section>
