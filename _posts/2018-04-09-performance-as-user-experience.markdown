@@ -9,6 +9,8 @@ description: "Slides, notes, and resources from my Performance as User Experienc
 
 Last Tuesday, I gave a relatively new talk on web performance and optimization at An Event Apart in Seattle. The response to this talk has been tremendous both times I gave it, so I wanted to share the deck and relevant links here.
 
+<!-- more -->
+
 ## Slides
 
 <figure class="video-embed video-embed--16x9" id="figure-2015-05-05-01">  
