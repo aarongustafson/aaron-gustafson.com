@@ -196,6 +196,7 @@ presentations:
 - 2016-03-04-learn-from-the-past-enhance-for-the-future.markdown
 - 2017-05-22-progressive-web-apps-and-the-windows-ecosystem.markdown
 - 2017-05-24-progressive-web-apps-and-the-windows-ecosystem.markdown
+- 2018-04-09-performance-as-user-experience.markdown
 voice ux:
 - 2014-11-06-the-web-is-for-everyone.markdown
 - 2016-03-04-learn-from-the-past-enhance-for-the-future.markdown
@@ -287,6 +288,7 @@ performance:
 - 2015-03-06-who-should-pay-2-the-hosting.markdown
 - 2016-08-17-what-would-you-do-with-10kb.markdown
 - 2016-10-25-one-persons-bloat-dot-dot-dot.markdown
+- 2018-04-09-performance-as-user-experience.markdown
 forms:
 - 2015-02-23-consider-how-your-forms-read.markdown
 - 2015-11-09-future-of-web-design-and-oredev.markdown
@@ -318,6 +320,7 @@ user experience:
 - 2016-12-14-lessons-in-averaging.markdown
 - 2017-07-06-your-site-should-be-a-pwa.markdown
 - 2017-10-31-web-form-conundrum-disabled-or-read-only.markdown
+- 2018-04-09-performance-as-user-experience.markdown
 microsoft:
 - 2015-04-30-collected-reactions-to-build.markdown
 - 2016-08-17-what-would-you-do-with-10kb.markdown
@@ -451,3 +454,5 @@ PWA:
 - 2017-05-03-PWAs-and-desktop.markdown
 technology:
 - 2017-11-09-we-can-truly-transform-peoples-lives.markdown
+HTML:
+- 2018-04-09-performance-as-user-experience.markdown
