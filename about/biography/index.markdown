@@ -23,7 +23,7 @@ In his more than two decades working on the Web, Aaron has worked with a number 
 
 Aaron loves to share his knowledge and insights in written form. His [three-part series on progressive enhancement for *A List Apart*](http://alistapart.com/author/agustafson) is a perennial favorite and his seminal book on the subject, [*Adaptive Web Design*](http://adaptivewebdesign.com), has earned him numerous accolades and honors. When he’s not writing, Aaron is frequently on the road [presenting at conferences and running workshops](http://lanyrd.com/profile/aarongustafson/) across the globe.
 
-Back home in Chattanooga, TN, Aaron is the proprietor of the [Chattanooga Open Device Lab](http://chadevicelab.org). He is a longtime member of [Rosenfeld Media’s "experts" group](http://rosenfeldmedia.com/experts/aaron-gustafson/) and has been known to have some opinions, many of which you can read at [aaron-gustafson.com](https://www.aaron-gustafson.com/).
+Aaron also founded the [Chattanooga Open Device Lab](http://chadevicelab.org) and is a longtime member of [Rosenfeld Media’s "experts" group](http://rosenfeldmedia.com/experts/aaron-gustafson/) and has been known to have some opinions, many of which you can read at [aaron-gustafson.com](https://www.aaron-gustafson.com/).
 {% endcapture %}
 
 # Biographies
