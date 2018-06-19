@@ -29,30 +29,33 @@ body_class: publications
               srcset="/i/books/{{ book.cover }}@200h.jpg {{ book.width }}w, /i/books/{{ book.cover }}@400h.jpg {{ book.width | times:2 }}w">
         </figure>
         {% endcomment %}
-        <details>
-          <summary>
-            <h3 class="listing__item__title book__title"><cite>{{ book.title }}</cite></h3>
-          </summary>
-          {% if book.subtitle %}
-            <h4 class="book__subtitle">{{ book.subtitle }}</h4>
+        
+        {% capture book_title %}
+          <cite>{{ book.title }}{% if book.subtitle %}: <b class="book__subtitle">{{ book.subtitle }}</b>{% endif %}</cite>
+        {% endcapture %}
+        <h3 class="listing__item__title book__title">
+          {% if book.url %}
+            <a href="{{ book.url }}">{{ book_title }}</a>
+          {% else %}
+            {{ book.title }}
           {% endif %}
+        </h3>
 
-          {% if book.author != "Aaron Gustafson" %}
-            <p class="listing__item__meta">
-              <b class="book__author">{{ book.author }}</b>
-              {% if book.meta %}
-                <br>
-                <b class="book__meta">{{ book.meta }}</b>
-              {% endif %}
-            </p>
-          {% endif %}
-          <div class="listing__item__content book__notes">
-            {{ book.notes | markdownify }}
-          </div>
-          {% if book.sales_url %}
-            <p class="listing__item__link book__link"><a href="{{ book.sales_url }}">Purchase on {{ book.sales_channel }}</a></p>
-          {% endif %}
-        </details>
+        {% if book.author != "Aaron Gustafson" %}
+          <p class="listing__item__meta">
+            <b class="book__author">{{ book.author }}</b>
+            {% if book.meta %}
+              <br>
+              <b class="book__meta">{{ book.meta }}</b>
+            {% endif %}
+          </p>
+        {% endif %}
+
+        {% comment %}
+        <div class="listing__item__content book__notes">
+          {{ book.notes | markdownify }}
+        </div>
+        {% endcomment %}
       </li>
     {% endfor %}
   </ul>
@@ -63,27 +66,45 @@ body_class: publications
     {% for book in site.data.books.contributed %}
       <li class="listing__item listing__item--{{ forloop.index }} book book--contributed">
         <p class="listing__item__type" title="Book" aria-label="Book">{{ svg_book }}</p>
-        <h3 class="listing__item__title">
-          {% if book.sales_url %}<a href="{{ book.sales_url }}">{% endif %}
-          <cite>
-            <b class="book__title">{{ book.title }}</b>{% if book.subtitle %}: <b class="book__subtitle">{{ book.subtitle }}</b>{% endif %}
-          </cite>
+        
+        {% capture book_title %}
+          <cite>{{ book.title }}{% if book.subtitle %}: <b class="book__subtitle">{{ book.subtitle }}</b>{% endif %}</cite>
+        {% endcapture %}
+        <h3 class="listing__item__title book__title">
+          {% if book.url %}
+            <a href="{{ book.url }}">{{ book_title }}</a>
+          {% else %}
+            {{ book_title }}
+          {% endif %}
         </h3>
+
         <p class="listing__item__meta">by <b class="book__author">{{ book.author }}</b></p>
       </li>
     {% endfor %}
   </ul>
 
-  <p>{{ site.data.microcopy.publications.editing_intro }}
-    {% for book in site.data.books.edited %}
-      {% if forloop.index == forloop.length %}
-        and
-      {% endif %}
-      <a href="{{ book.url }}"><cite>{{ book.title }}</cite></a> by
-      {{ book.author }}{% if forloop.index == forloop.length %}.{% else %},{% endif %}
-    {% endfor %}
-  </p>
+  <p>{{ site.data.microcopy.publications.forewords_intro }}</p>
 
+  <ul class="listing listing--books">
+    {% for book in site.data.books.forewords %}
+      <li class="listing__item listing__item--{{ forloop.index }} book book--contributed">
+        <p class="listing__item__type" title="Book" aria-label="Book">{{ svg_book }}</p>
+        
+        {% capture book_title %}
+          <cite>{{ book.title }}{% if book.subtitle %}: <b class="book__subtitle">{{ book.subtitle }}</b>{% endif %}</cite>
+        {% endcapture %}
+        <h3 class="listing__item__title book__title">
+          {% if book.url %}
+            <a href="{{ book.url }}">{{ book_title }}</a>
+          {% else %}
+            {{ book_title }}
+          {% endif %}
+        </h3>
+
+        <p class="listing__item__meta">by <b class="book__author">{{ book.author }}</b></p>
+      </li>
+    {% endfor %}
+  </ul>
 </section>
 
 <section id="articles" class="section">
@@ -109,5 +130,18 @@ body_class: publications
       </li>
     {% endfor %}
   </ul>
+</section>
+
+<section id="contributions" class="section">
+  <h2 class="section__title">Additional Work</h2>
   
+  <p>{{ site.data.microcopy.publications.editing_intro }}
+    {% for book in site.data.books.edited %}
+      {% if forloop.index == forloop.length %}
+        and
+      {% endif %}
+      <a href="{{ book.url }}"><cite>{{ book.title }}</cite></a> by
+      {{ book.author }}{% if forloop.index == forloop.length %}.{% else %},{% endif %}
+    {% endfor %}
+  </p>
 </section>
