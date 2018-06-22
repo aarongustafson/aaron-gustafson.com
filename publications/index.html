@@ -10,6 +10,7 @@ sidebar: false
 body_class: publications
 ---
 
+{% capture base_url %}{{}}{% endcapture %}
 {% capture svg_book %}{% svg /i/icons/book.svg width=24 %}{% endcapture %}
 {% capture svg_article %}{% svg /i/icons/article.svg width=24 %}{% endcapture %}
 
@@ -23,21 +24,29 @@ body_class: publications
   <ul class="listing listing--books">
     {% for book in site.data.books.authored %}
       <li class="listing__item listing__item--{{ forloop.index }} book">
-        {% comment %}
-        <figure class="book__cover">
-          <img class="book__cover__image" src="/i/books/{{ book.cover }}@200h.jpg" height="200" width="{{ book.width }}" alt=""
-              srcset="/i/books/{{ book.cover }}@200h.jpg {{ book.width }}w, /i/books/{{ book.cover }}@400h.jpg {{ book.width | times:2 }}w">
-        </figure>
-        {% endcomment %}
-        
-        {% capture book_title %}
-          <cite>{{ book.title }}{% if book.subtitle %}: <b class="book__subtitle">{{ book.subtitle }}</b>{% endif %}</cite>
+        {% capture book_cover %}
+          {% if book.cover %}
+            <figure class="book__cover">
+              <img class="book__cover__image"
+                  src="https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,h_400/{{ site.url }}/i/books/{{ book.cover }}.jpg"
+                  height="200" width="{{ book.width }}" alt="">
+            </figure>
+          {% endif %}
         {% endcapture %}
-        <h3 class="listing__item__title book__title">
+
+        {% capture book_title %}
+          <cite class="book__title">{{ book.title }}{% if book.subtitle %}: <b class="book__subtitle">{{ book.subtitle }}</b>{% endif %}</cite>
+        {% endcapture %}
+        
+        <h3 class="listing__item__title">
           {% if book.url %}
-            <a href="{{ book.url }}">{{ book_title }}</a>
+            <a href="{{ book.url }}">
+              {{ book_cover }}
+              {{ book_title }}
+            </a>
           {% else %}
-            {{ book.title }}
+            {{ book_cover }}
+            {{ book_title }}
           {% endif %}
         </h3>
 
