@@ -3,6 +3,7 @@
 {% if page.is_post %}
 	{% include disqus.html %}
 	<script src="/j/post.min.js" async></script>
+	{% webmentions_js %}
 {% endif %}
 {% for script in page.javascripts.body %}
 	<script src="/j/{{ script }}.js" async></script>
@@ -30,5 +31,3 @@ j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
 <script>try{ clicky.init(101070683); }catch(e){}</script>
 <noscript><p><img alt="Clicky" width="1" height="1" src="https://in.getclicky.com/101070683ns.gif" /></p></noscript>
 <!--/Clicky-->
-
-{% webmentions_js %}
