@@ -1,21 +1,42 @@
 /*------------------------------------*\
-    Buttons
+  Buttons
 \*------------------------------------*/
 
 @include breakup-breakpoint( "global" ) {
+  
+  .book {
+    
+    margin-top: 0;
 
-    .book {
-        
-        margin-top: 0;
-        
-        & + & {
-            @include rem( margin-top, $default-spacing );
-        }
-        
-        &__subtitle {
-            @include rem( font-size, $font-size-caption );
-        }
-        
+    & + & {
+      @include rem( margin-top, $default-spacing );
     }
     
+    .listing--grid & {
+      margin: 0;
+
+      .listing__item__title {
+        height: 100%;
+        a {
+          background: transparent;
+          display: grid;
+          grid-template-areas: "picture" "title";
+          grid-template-rows: 200px 1fr;
+          height: 100%;
+        }
+      }
+    }
+    &__cover {
+      grid-area: picture;
+
+      &__image {
+        max-height: 200px;
+      }
+    }
+    &__title {
+      grid-area: title;
+    }
+    
+  }
+  
 }

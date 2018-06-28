@@ -412,7 +412,7 @@ Body-level settings
     Buttons
 \*------------------------------------*/
 /*------------------------------------*\
-    Listing
+  Listing
 \*------------------------------------*/
 @media (min-width: 43.125em) {
   .listing--gallery {
@@ -440,7 +440,8 @@ Body-level settings
   }
 }
 @media (min-width: 60em) {
-  .listing--gallery {
+  .listing--gallery,
+  .listing--grid {
     margin: 20px -80px 0;
     margin: 1.25rem -5rem 0;
   }
@@ -604,7 +605,7 @@ Blog Entry
     Interviews
 \*------------------------------------*/
 /*------------------------------------*\
-    Buttons
+  Buttons
 \*------------------------------------*/
 /*------------------------------------*\
     Search

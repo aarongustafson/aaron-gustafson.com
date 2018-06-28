@@ -1018,7 +1018,7 @@ button:hover, button:focus,
 }
 
 /*------------------------------------*\
-    Listing
+  Listing
 \*------------------------------------*/
 .listing__item__title {
   font-size: 20px;
@@ -1041,6 +1041,35 @@ button:hover, button:focus,
 .listing--links .listing__item--link {
   margin-bottom: 11px;
   margin-bottom: 0.6875rem;
+}
+.listing--grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 22px;
+  grid-gap: 1.375rem;
+}
+.listing--icon .listing__item {
+  display: -ms-grid;
+  display: grid;
+  grid-template-areas: "icon title" "icon meta";
+  -ms-grid-columns: 35px 1fr;
+      grid-template-columns: 35px 1fr;
+}
+.listing--icon .listing__item + .listing__item {
+  margin-top: 22px;
+  margin-top: 1.375rem;
+}
+.listing--icon .listing__item .listing__item__type {
+  grid-area: icon;
+}
+.listing--icon .listing__item .listing__item__title {
+  grid-area: title;
+  margin-top: 0;
+}
+.listing--icon .listing__item .listing__item__meta {
+  grid-area: meta;
 }
 
 /*------------------------------------*\
@@ -1689,7 +1718,7 @@ html.wf-active .promo a:active {
 }
 
 /*------------------------------------*\
-    Buttons
+  Buttons
 \*------------------------------------*/
 .book {
   margin-top: 0;
@@ -1698,9 +1727,29 @@ html.wf-active .promo a:active {
   margin-top: 22px;
   margin-top: 1.375rem;
 }
-.book__subtitle {
-  font-size: 18px;
-  font-size: 1.125rem;
+.listing--grid .book {
+  margin: 0;
+}
+.listing--grid .book .listing__item__title {
+  height: 100%;
+}
+.listing--grid .book .listing__item__title a {
+  background: transparent;
+  display: -ms-grid;
+  display: grid;
+  grid-template-areas: "picture" "title";
+  -ms-grid-rows: 200px 1fr;
+      grid-template-rows: 200px 1fr;
+  height: 100%;
+}
+.book__cover {
+  grid-area: picture;
+}
+.book__cover__image {
+  max-height: 200px;
+}
+.book__title {
+  grid-area: title;
 }
 
 /*------------------------------------*\
@@ -2220,7 +2269,7 @@ Body-level settings
     Buttons
 \*------------------------------------*/
 /*------------------------------------*\
-    Listing
+  Listing
 \*------------------------------------*/
 /*------------------------------------*\
     Media Elements
@@ -2280,7 +2329,7 @@ Blog Entry
     Interviews
 \*------------------------------------*/
 /*------------------------------------*\
-    Buttons
+  Buttons
 \*------------------------------------*/
 /*------------------------------------*\
     Search
