@@ -45,7 +45,7 @@
       @include rem( grid-gap, $default-spacing );
     }
 
-    &--icon &__item {
+    &--icons &__item {
       display: grid;
       grid-template-areas: "icon title" "icon meta";
       grid-template-columns: #{24 + $default-spacing/2}px 1fr;

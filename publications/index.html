@@ -70,9 +70,9 @@ body_class: publications
     
   <p>{{ site.data.microcopy.publications.contributions_intro }}</p>
 
-  <ul class="listing listing--books">
+  <ul class="listing listing--books listing--icons">
     {% for book in site.data.books.contributed %}
-      <li class="listing__item listing__item--{{ forloop.index }} listing__item--icon book book--contributed">
+      <li class="listing__item listing__item--{{ forloop.index }} book book--contributed">
         <p class="listing__item__type" title="Book" aria-label="Book">{{ svg_book }}</p>
         
         {% capture book_title %}
@@ -93,9 +93,9 @@ body_class: publications
 
   <p>{{ site.data.microcopy.publications.forewords_intro }}</p>
 
-  <ul class="listing listing--books">
+  <ul class="listing listing--books listing--icons">
     {% for book in site.data.books.forewords %}
-      <li class="listing__item listing__item--{{ forloop.index }} listing__item--icon book book--contributed">
+      <li class="listing__item listing__item--{{ forloop.index }} book book--contributed">
         <p class="listing__item__type" title="Book" aria-label="Book">{{ svg_book }}</p>
         
         {% capture book_title %}
@@ -118,7 +118,7 @@ body_class: publications
 <section id="articles" class="section">
   <h2 class="section__title">Articles</h2>
   
-  <ul class="listing listing--articles">
+  <ul class="listing listing--articles listing--icons">
     {% for article in site.data.articles %}
       <li class="listing__item listing__item--{{ forloop.index }} listing__item--icon article">
         <p class="listing__item__type" title="Article" aria-label="Article">{{ svg_article }}</p>
