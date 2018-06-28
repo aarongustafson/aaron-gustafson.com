@@ -45,6 +45,12 @@
       @include rem( grid-gap, $default-spacing );
     }
 
+    &--minigrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      @include rem( grid-gap, $default-spacing );
+    }
+    
     &--icons &__item {
       display: grid;
       grid-template-areas: "icon title" "icon meta";
@@ -105,7 +111,9 @@
 @include breakup-breakpoint( "full" ) {
   
   .listing--gallery,
-  .listing--grid {
+  .listing--grid,
+  .listing--minigrid,
+  .listing--icons {
     @include rem( margin, 20 -80 0 );
   }
 
