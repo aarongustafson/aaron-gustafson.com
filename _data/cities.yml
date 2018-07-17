@@ -118,6 +118,11 @@
   credit_name: Babytexcoco
   credit_url: "http://commons.wikimedia.org/wiki/File:Des_Plaines_River,_Joliet,_IL.JPG"
 
+- name: "Lagos, Nigeria"
+  photo: https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Lagos_%28Nigeria%29.jpg/400px-Lagos_%28Nigeria%29.jpg
+  credit_name: Anders Broberg
+  credit_url: "https://commons.wikimedia.org/wiki/Category:Buildings_in_Lagos,_Nigeria#/media/File:Lagos_(Nigeria).jpg"
+
 - name: "Las Vegas, NV USA"
   photo: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Las_Vegas_Boulevard_northbound%2C_Las_Vegas_NV.jpg/400px-Las_Vegas_Boulevard_northbound%2C_Las_Vegas_NV.jpg
   credit_name: John Phelan
