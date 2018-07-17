@@ -1,4 +1,10 @@
-- id: 126
+- id: 128
+  title: Microsoft Ignite
+  url: https://www.microsoft.com/en-us/ignite
+  date: 2018-09-24 00:09:00 -0600
+  location: "Orlando, FL USA"
+
+- id: 127
   title: Concatenate
   url: https://concatenate.io/
   date: 2018-08-10 00:00:01 -0600
