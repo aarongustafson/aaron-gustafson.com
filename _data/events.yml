@@ -1,3 +1,8 @@
+- id: 129
+  title: Automattic Speaker Series
+  date: 2018-09-18 00:09:00 -0600
+  location: Online
+
 - id: 128
   title: Microsoft Ignite
   url: https://www.microsoft.com/en-us/ignite
@@ -20,7 +25,7 @@
   title: Inclusive Design 24
   url: https://www.inclusivedesign24.org/
   date: 2017-11-16 00:00:01 -0000
-  location: "Online"
+  location: Online
   
 - id: 124
   title: Paris Web
