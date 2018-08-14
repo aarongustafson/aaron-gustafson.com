@@ -86,10 +86,10 @@ single: true
 
       <footer class="entry__footer">
         {% unless page.sharing == false %}
-          {% include_cached post/sharing.html
-                            url=this_url
-                            source=page.ref_source
-                            title=page.title
+          {% include post/sharing.html
+                     url=this_url
+                     source=page.ref_source
+                     title=page.title
           %}
         {% endunless %}
         
