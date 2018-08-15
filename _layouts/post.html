@@ -85,6 +85,21 @@ single: true
       </div>
 
       <footer class="entry__footer">
+        {% if page.thanks %}
+          <p>Many thanks to
+          {% for person in page.thanks %}
+            {% capture link %}<a href="{{ person.url }}">{{ person.name }}</a>{% endcapture %}
+            {% if page.thanks.size == 1 %}
+              {{ link }}
+            {% elseif forloop.last %}
+              and {{ link }}
+            {% else %}
+              {{ link }},
+            {% endif %}
+          {% endfor %}
+          for helping me with this piece.
+        {% endif %}
+
         {% unless page.sharing == false %}
           {% include post/sharing.html
                      url=this_url
