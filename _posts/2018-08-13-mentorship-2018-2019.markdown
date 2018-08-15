@@ -6,7 +6,7 @@ comments: true
 tags: [mentoring, career]
 description: "How can I help you develop or further your career on the web?"
 thanks:
-	- name: Ashley Bischoff
+  - name: Ashley Bischoff
     url: https://twitter.com/FriendlyAshley
   - name: Estelle Weyl  
     url: https://twitter.com/estellevw
@@ -16,7 +16,7 @@ If you follow my work, you may recall that [I started a formal mentorship progra
 
 I had hoped to kick off a new mentorship session in January, but (as often happens) life got in the way. Now that I’m settled into a new city and a new routine, I’m itching to get things going again. And so I ask: How can I help you develop or further your career on the web?
 
-<-- more -->
+<!-- more -->
 
 ## What am I looking for in a mentee?
 

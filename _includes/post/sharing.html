@@ -1,8 +1,4 @@
-{% comment %}
-{% capture the_url %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
-{% endcomment %}
-
-{% capture this_url %}{% if include.source %}{{ include.url | replace:"notebook/","notebook/links/" }}{% else %}{{ include.url }}{% endif %}{% endcapture %}
+{% capture this_url %}{% if include.source %}{{ include.url | replace:"notebook/","notebook/links/" }}{% else %}{{ include.site_url }}{{ include.page_url }}{% endif %}{% endcapture %}
 
 <p class="entry__sharing dont-read">If you liked this post, would you mind sharing it?
   <br>

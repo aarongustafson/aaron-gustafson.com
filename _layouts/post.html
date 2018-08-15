@@ -91,7 +91,7 @@ single: true
             {% capture link %}<a href="{{ person.url }}">{{ person.name }}</a>{% endcapture %}
             {% if page.thanks.size == 1 %}
               {{ link }}
-            {% elseif forloop.last %}
+            {% elsif forloop.last %}
               and {{ link }}
             {% else %}
               {{ link }},
@@ -102,7 +102,8 @@ single: true
 
         {% unless page.sharing == false %}
           {% include post/sharing.html
-                     url=this_url
+                     site_url=site.url
+                     page_url=page.url
                      source=page.ref_source
                      title=page.title
           %}
