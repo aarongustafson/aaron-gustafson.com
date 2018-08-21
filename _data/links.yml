@@ -4,11 +4,10 @@
   title: Follow on Twitter
   category: profile
 
-- site: Facebook
-  username: AaronMGustafson
-  url: https://www.facebook.com/aaronmgustafson
-  title: Follow me on Facebook
-  category: profile
+- site: Notist
+  url: http://noti.st/aarongustafson
+  title: See where I’ve been &amp; where I’m going next on Notist
+  category: speaking
 
 - site: Github
   username: AaronGustafson
@@ -16,25 +15,26 @@
   title: Follow my work on Github
   category: profile
 
-- site: Google+
-  url: https://plus.google.com/+AaronGustafson
-  title: Follow me on Google+
-  category: profile
-
 - site: LinkedIn
   url: https://www.linkedin.com/in/aarongustafson
   title: View my profile on LinkedIn
   category: profile
 
-- site: Lanyrd
-  url: http://lanyrd.com/profile/aarongustafson
-  title: See where I’ve been &amp; where I’m going next on Lanyrd
-  category: speaking
-
 - site: SlideShare
   url: http://www.slideshare.net/AaronGustafson/
   title: View and download presentatinos I’ve given on SlideShare
   category: speaking
+
+- site: Facebook
+  username: AaronMGustafson
+  url: https://www.facebook.com/aaronmgustafson
+  title: Follow me on Facebook
+  category: profile
+
+- site: Google+
+  url: https://plus.google.com/+AaronGustafson
+  title: Follow me on Google+
+  category: profile
 
 - site: SpeakerRate
   url: http://speakerrate.com/speakers/266-aaron-gustafson
