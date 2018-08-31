@@ -3,7 +3,7 @@ layout: post
 title: "Adding Paragraphs in Zillow Should Not be This Hard"
 date: 2017-06-14 20:20:07 -0400
 comments: true
-tags: [forms,"web forms","web development"]
+tags: [forms, "web development"]
 description: "Paragraphs serve as a distinct piece of writing. They generally encapsulate one idea or series of related ones. The space between them also gives your eyes a moment to rest and your brain a moment to process what you just read. Without them, text is just one big jumble."
 crosspost_to_medium: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Visualizing CSS3 Transformations"
 date: 2014-12-18 16:53:18 -0500
 comments: true
-tags: ["web design", CSS3, "web standards", tools]
+tags: ["web design", CSS, "web standards", tools]
 description: CSS transformations are amazing, but they can be confusing too. I put together a browser-based tool that should help you understand how the functions are applied and why it matters.
 crosspost_to_medium: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Affirming User Choice with Checkboxes"
 date: 2016-01-06 14:24:31 -0500
 comments: true
-tags: ["web design", forms, accessibility, "web forms"]
+tags: [forms, "web design", accessibility]
 description: "“Checkbox” form controls have long been a part of software, enabling users to provide a simple binary response—yes or no. Here are some best practices for using them on the Web."
 crosspost_to_medium: true
 series:

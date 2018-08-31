@@ -3,7 +3,7 @@ layout: post
 title: "Slides from my talk at #msEdgeSummit"
 date: 2015-05-05 17:14:00 -0700
 comments: true
-tags: ["web forms", presentations]
+tags: [forms, HTML, presentations]
 description: "I just came off stage from my talk at the Microsoft Edge Web Summit and I wanted to share the deck with you. The talk was live-streamed, but I will post a video link as soon as it is up."
 ---
 

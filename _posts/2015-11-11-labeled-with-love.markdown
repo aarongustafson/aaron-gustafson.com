@@ -3,7 +3,7 @@ layout: post
 title: "Labeled with Love"
 date: 2015-11-11 21:05:33 -0500
 comments: true
-tags: ["web design", forms, accessibility, "web forms"]
+tags: [accessibility, "web design", forms, HTML]
 description: "Proper labeling is key to ensuring your web forms are usable."
 crosspost_to_medium: true
 series:

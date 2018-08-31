@@ -3,7 +3,7 @@ layout: post
 title: "The Web is for Everyone"
 date: 2014-11-06 15:47:54 -0500
 comments: true
-tags: [accessibility, UX, "web design", presentations, "voice ux", "the future"]
+tags: [accessibility, "user experience", "web design", presentations, "voice UX", "the future"]
 description: "I gave this speech as the closing keynote at A11yQC, a conference on Web accessibility, on 14 October 2014 in Québec City, Canada."
 redirect_from: /notebook/2014/the-web-is-for-everyone/
 crosspost_to_medium: true

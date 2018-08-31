@@ -3,7 +3,7 @@ layout: post
 title: "Web Form Conundrum: `disabled` or `readonly`?"
 date: 2017-10-31 12:07:39 -0400
 comments: true
-tags: ["web forms", "web design 101", html, "html forms", "user experience"]
+tags: [forms, "web design 101", HTML, "user experience"]
 description: "It’s hard to know which is the right way to go, especially when presented with a choice between two seemingly similar options for disallowing a field to be edited."
 ---
 
