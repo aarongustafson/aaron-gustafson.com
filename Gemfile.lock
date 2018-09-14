@@ -1,3 +1,16 @@
+PATH
+  remote: ../../Code/jekyll-webmention_io
+  specs:
+    jekyll-webmention_io (3.0.0)
+      htmlbeautifier (~> 1.1)
+      http (~> 2.0)
+      jekyll (>= 2.0, < 4.0)
+      json (~> 2.0)
+      openssl (~> 2.0)
+      string_inflection (~> 0.1)
+      uglifier (~> 4.1)
+      webmention (~> 0.1.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -70,15 +83,6 @@ GEM
       typogruby
     jekyll-watch (1.5.1)
       listen (~> 3.0)
-    jekyll-webmention_io (3.0.0)
-      htmlbeautifier (~> 1.1)
-      http (~> 2.0)
-      jekyll (>= 2.0, < 4.0)
-      json (~> 2.0)
-      openssl (~> 2.0)
-      string_inflection (~> 0.1)
-      uglifier (~> 4.1)
-      webmention (~> 0.1.6)
     json (2.1.0)
     kramdown (1.17.0)
     launchy (2.4.3)
@@ -136,7 +140,7 @@ GEM
       simple_oauth (~> 0.3.1)
     typogruby (1.0.18)
       rubypants
-    uglifier (4.1.18)
+    uglifier (4.1.19)
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
@@ -165,7 +169,7 @@ DEPENDENCIES
   jekyll-tagging-related_posts
   jekyll-time-to-read
   jekyll-typogrify
-  jekyll-webmention_io
+  jekyll-webmention_io!
   launchy
   nokogiri
   octopress-date-format

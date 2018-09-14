@@ -3,13 +3,13 @@
 	{% capture prepend_title %}{{ include.post_prepend_title }}{% endcapture %}
 	<title type="html">{{ post.title | prepend:prepend_title | smartify | strip_html | normalize_whitespace | xml_escape }}</title>
 	
-	<link href="{% if post.ref_url %}{{ post.ref_url }}{% else %}{{ post.url | absolute_url }}{% endif %}" rel="alternate" type="text/html" title="{{ post.title | xml_escape }}" />
+	<link href="{{ post.url | absolute_url }}" rel="alternate" type="text/html" title="{{ post.title | xml_escape }}" />
 	
 	<published>{{ post.date | date_to_xmlschema }}</published>
 	<updated>{{ post.last_modified_at | default: post.updated | default: post.date | date_to_xmlschema }}</updated>
 	
 	<id>{{ post.url | prepend:site.url }}</id>
-	<content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}">{{ post.content | strip | xml_escape }}</content>
+	<content type="html" xml:base="{{ post.url | absolute_url | xml_escape }}">{{ post.content | strip | xml_escape }}{% if post.ref_url %}&lt;p&gt;Read it: &lt;a href="{{ post.ref_url }}"&gt;{{ post.title }}&lt;/a&gt;&lt;/p&gt;{% endif %}</content>
 
 	{% assign post_author = post.author | default: post.authors[0] | default: site.author %}
 	{% assign post_author = site.data.authors[post_author] | default: post_author %}
