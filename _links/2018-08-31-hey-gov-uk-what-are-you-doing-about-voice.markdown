@@ -9,7 +9,7 @@ via:
  name: Adrian Roselli
 ---
 
-Apropos of [my recent <cite>A List Apart</cote> article](https://alistapart.com/article/conversational-semantics), here’s some information about how GOV.UK is thinking about voice interfaces.
+Apropos of [my recent <cite>A List Apart</cite> article](https://alistapart.com/article/conversational-semantics), here’s some information about how GOV.UK is thinking about voice interfaces.
 
 They break down their approach in three areas:
 
