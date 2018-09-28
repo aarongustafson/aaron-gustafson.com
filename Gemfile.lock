@@ -165,6 +165,7 @@ DEPENDENCIES
   jekyll-time-to-read
   jekyll-typogrify
   jekyll-webmention_io
+  kramdown
   launchy
   nokogiri
   octopress-date-format
@@ -172,7 +173,7 @@ DEPENDENCIES
   twitter
 
 RUBY VERSION
-   ruby 2.4.0p0
+   ruby 2.5.1p57
 
 BUNDLED WITH
-   1.16.0
+   1.16.1

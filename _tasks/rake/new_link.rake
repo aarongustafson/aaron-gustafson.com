@@ -68,5 +68,6 @@ task :new_link, :url do |t, args|
     post.puts " url: "
     post.puts "---"
   end
-  `open #{filename}`
+  filename.slice! Dir.pwd.to_s
+  `open .#{filename}`
 end

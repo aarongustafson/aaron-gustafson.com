@@ -36,4 +36,5 @@ group :jekyll_plugins do
   gem 'octopress-date-format'
   gem 'stringex'
   gem 'twitter'
+  gem 'kramdown'
 end
