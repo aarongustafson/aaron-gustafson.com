@@ -3,11 +3,7 @@
 {% unless include.no_header %}
   <header class="entry__header">
     <h1 class="entry__title entry-title">
-      {% if include.ref_url %}
-        <a rel="bookmark" href="{{ include.ref_url }}">{{ title }}</a>
-      {% else %}
-        <a rel="bookmark" href="{{ include.url }}">{{ title }}</a>
-      {% endif %}
+      <a rel="bookmark" href="{{ include.url }}">{{ title }}</a>
     </h1>
     {% unless include.meta == false %}
       <p class="entry__meta">
