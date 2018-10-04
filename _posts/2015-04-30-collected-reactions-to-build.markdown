@@ -11,7 +11,7 @@ I may work for Microsoft, but I don’t know everything that’s going on across
 
 <!-- more -->
 
-Anyway [//build/](http://aka.ms/ktlsyd), the Microsoft conference, is going on right now and as you’d expect, there are a ton of new announcements. I’ve watched a few of the talks virtualy and am particularly excited about the new browser (whose name has finally been revealed): [Microsoft Edge](https://www.microsoft.com/en-us/windows/browser-for-doing). I’m also very interested to see where things go with [HoloLens](https://www.microsoft.com/microsoft-hololens/en-us).
+Anyway [Build](http://aka.ms/ktlsyd), the Microsoft conference, is going on right now and as you’d expect, there are a ton of new announcements. I’ve watched a few of the talks virtualy and am particularly excited about the new browser (whose name has finally been revealed): [Microsoft Edge](https://www.microsoft.com/en-us/windows/browser-for-doing). I’m also very interested to see where things go with [HoloLens](https://www.microsoft.com/microsoft-hololens/en-us).
 
 One graphic that cropped up that blew my mind was this one talking about where Windows 10 is going:
 
