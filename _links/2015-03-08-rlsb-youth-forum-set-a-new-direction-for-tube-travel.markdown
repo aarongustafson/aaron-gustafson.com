@@ -3,8 +3,8 @@ layout: link
 title: "RLSB Youth Forum Set a New Direction for Tube Travel"
 date: 2015-03-08 08:51:36 -0500
 comments: false
-ref_url: http://www.rlsb.org.uk/blogs/rlsb-youth-forum-set-a-new-direction-for-tube-travel
-in_reply_to: http://www.rlsb.org.uk/blogs/rlsb-youth-forum-set-a-new-direction-for-tube-travel
+ref_url: https://web.archive.org/web/20180119235810/http://www.rsbc.org.uk/blogs/rlsb-youth-forum-set-a-new-direction-for-tube-travel/
+in_reply_to: https://web.archive.org/web/20180119235810/http://www.rsbc.org.uk/blogs/rlsb-youth-forum-set-a-new-direction-for-tube-travel/
 ref_source: Royal London Society for Blind People
 ---
 
