@@ -13,4 +13,4 @@ video:
 text: /notebook/the-web-should-just-work-for-everyone/
 ---
 
-I had the great pleasure of delivering the following talk at the [Edge Web Summit](http://lanyrd.com/2016/edgesummit/) on April 4th. The talk is largely about accessibility with a push for thinking about the future of the interface and how considering accessibility now will help us prepare for a world of "headless UIs".
+I had the great pleasure of delivering the following talk at the [Edge Web Summit](https://web.archive.org/web/http://lanyrd.com/2016/edgesummit/) on April 4th. The talk is largely about accessibility with a push for thinking about the future of the interface and how considering accessibility now will help us prepare for a world of "headless UIs".

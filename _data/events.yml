@@ -41,7 +41,7 @@
   
 - id: 124
   title: Paris Web
-  url: http://lanyrd.com/2017/parisweb/
+  url: https://web.archive.org/web/http://lanyrd.com/2017/parisweb/
   date: 2017-10-05 08:00:00 -0000
   location: "Paris, France"
   
@@ -89,7 +89,7 @@
 
 - id: 116
   title: Generate
-  url: http://lanyrd.com/2017/generate-september/
+  url: https://web.archive.org/web/http://lanyrd.com/2017/generate-september/
   date: 2017-09-20 09:00:00 -0400
   location: "London, England"
 
@@ -118,31 +118,31 @@
 
 - id: 111
   title: SmashingConf Freiburg
-  url: http://lanyrd.com/2016/smashingconf-freiburg/
+  url: https://web.archive.org/web/http://lanyrd.com/2016/smashingconf-freiburg/
   date: 2016-09-13 09:00:00 -0400
   location: "Freiburg, Germany"
   
 - id: 110
   title: TechReady 23
-  url: http://lanyrd.com/2016/tr23/
+  url: https://web.archive.org/web/http://lanyrd.com/2016/tr23/
   date: 2016-07-25 09:00:00 -0400
   location: "Seattle, WA USA"
 
 - id: 109
   title: SmashingConf New York
-  url: http://lanyrd.com/2016/smashingconf-new-york/
+  url: https://web.archive.org/web/http://lanyrd.com/2016/smashingconf-new-york/
   date: 2016-06-14 09:00:00 -0400
   location: "New York, NY USA"
 
 - id: 108
   title: SpeechTEK
-  url: http://lanyrd.com/2016/speechtek
+  url: https://web.archive.org/web/http://lanyrd.com/2016/speechtek
   date: 2016-05-22 09:00:00 -0400
   location: "Washington, DC USA"
 
 - id: 107
   title: Microsoft Edge Web Summit
-  url: http://lanyrd.com/2016/edgesummit/
+  url: https://web.archive.org/web/http://lanyrd.com/2016/edgesummit/
   date: 2016-04-04 09:00:00 -0400
   location: "San Francisco, CA USA"
   
@@ -166,19 +166,19 @@
 
 - id: 103
   title: EnhanceConf
-  url: http://lanyrd.com/2016/enhanceconf/
+  url: https://web.archive.org/web/http://lanyrd.com/2016/enhanceconf/
   date: 2016-03-03 09:00:00 -0400
   location: "London, England"
   
 - id: 102
   title: Øredev
-  url: http://lanyrd.com/2015/oredev/
+  url: https://web.archive.org/web/http://lanyrd.com/2015/oredev/
   date: 2015-11-03 09:00:00 -0400
   location: "Malmö, Sweden"
 
 - id: 101
   title: Future of Web Design
-  url: http://lanyrd.com/2015/future-of-web-design-new-york/
+  url: https://web.archive.org/web/http://lanyrd.com/2015/future-of-web-design-new-york/
   date: 2015-11-02 09:00:00 -0400
   location: "New York, NY USA"
 
@@ -196,7 +196,7 @@
 
 - id: 98
   title: Responsive Day Out
-  url: http://lanyrd.com/2015/responsive-day-out-3/
+  url: https://web.archive.org/web/http://lanyrd.com/2015/responsive-day-out-3/
   date: 2015-06-19 09:00:00 -0400
   location: "Brighton, England"
 
@@ -208,25 +208,25 @@
 
 - id: 96
   title: Breaking Development
-  url: http://lanyrd.com/2015/bdconf/
+  url: https://web.archive.org/web/http://lanyrd.com/2015/bdconf/
   date: 2015-06-08 09:00:00 -0400
   location: "Nashville, TN USA"
 
 - id: 95
   title: Microsoft Edge Web Summit
-  url: http://lanyrd.com/2015/project-spartan-web-summit/
+  url: https://web.archive.org/web/http://lanyrd.com/2015/project-spartan-web-summit/
   date: 2015-05-05 09:00:00 -0400
   location: "Mountain View, CA USA"
 
 - id: 94
   title: Web Sherpa Summit
-  url: http://lanyrd.com/2015/web-sherpa-summit/
+  url: https://web.archive.org/web/http://lanyrd.com/2015/web-sherpa-summit/
   date: 2015-04-23 09:00:00 -0400
   location: Online
 
 - id: 93
   title: Converge SE
-  url: http://lanyrd.com/2015/convergese/
+  url: https://web.archive.org/web/http://lanyrd.com/2015/convergese/
   date: 2015-04-15 09:00:00 -0400
   location: "Columbia, SC USA"
 
@@ -259,7 +259,7 @@
 
 - id: 87
   title: Beyond The Desktop
-  url: http://lanyrd.com/2014/bdconf-2/
+  url: https://web.archive.org/web/http://lanyrd.com/2014/bdconf-2/
   date: 2014-11-03 09:00:00 -0400
   location: "Orlando, FL USA"
 
@@ -270,7 +270,7 @@
 
 - id: 85
   title: a11yqc
-  url: http://lanyrd.com/2014/a11yqc/
+  url: https://web.archive.org/web/http://lanyrd.com/2014/a11yqc/
   date: 2014-10-14 09:00:00 -0400
   location: "Québec City, QC Canada"
   keynotes:
@@ -279,7 +279,7 @@
 
 - id: 84
   title: BlendConf
-  url: http://lanyrd.com/2014/blendconf14/
+  url: https://web.archive.org/web/http://lanyrd.com/2014/blendconf14/
   date: 2014-09-11 09:00:00 -0400
   location: "Charlotte, NC USA"
 
@@ -291,7 +291,7 @@
 
 - id: 82
   title: DevLink
-  url: http://lanyrd.com/2014/devlink2014/
+  url: https://web.archive.org/web/http://lanyrd.com/2014/devlink2014/
   date: 2014-08-26 09:00:00 -0400
   location: "Chattanooga, TN USA"
 
@@ -309,13 +309,13 @@
 
 - id: 79
   title: Beyond Tellerrand
-  url: http://lanyrd.com/2014/btconf/
+  url: https://web.archive.org/web/http://lanyrd.com/2014/btconf/
   date: 2014-05-21 09:00:00 +0100
   location: "Düsseldorf, Germany"
 
 - id: 78
   title: Web Platform Doc Sprint + MeatUp™
-  url: http://lanyrd.com/2014/wpds-dusseldorf/
+  url: https://web.archive.org/web/http://lanyrd.com/2014/wpds-dusseldorf/
   date: 2014-05-18 12:00:00 +0100
   location: "Düsseldorf, Germany"
   talks:
@@ -348,7 +348,7 @@
   
 - id: 74
   title: Awwwards
-  url: http://lanyrd.com/2014/awwwardsoffday/
+  url: https://web.archive.org/web/http://lanyrd.com/2014/awwwardsoffday/
   date: 2014-02-14 17:00:00 +0100
   location: "Paris, France"
 
@@ -374,7 +374,7 @@
 
 - id: 70
   title: edUi
-  url: http://lanyrd.com/2013/edui2013/
+  url: https://web.archive.org/web/http://lanyrd.com/2013/edui2013/
   date: 2013-11-04 09:00:00 -0400
   location: "Richmond, VA USA"
   talks:
@@ -385,7 +385,7 @@
 
 - id: 69
   title: Breaking Development
-  url: http://lanyrd.com/2013/bdconf-nashville/
+  url: https://web.archive.org/web/http://lanyrd.com/2013/bdconf-nashville/
   date: 2013-10-21 09:00:00 -0500
   location: "Nashville, TN USA"
   talks:
@@ -394,25 +394,25 @@
 
 - id: 68
   title: Responsive Design Studio
-  url: http://lanyrd.com/2013/rds/
+  url: https://web.archive.org/web/http://lanyrd.com/2013/rds/
   date: 2013-10-15 09:00:00 -0800
   location: "Mountain View, CA USA"
 
 - id: 67
   title: From the Front
-  url: http://lanyrd.com/2013/fromthefront/
+  url: https://web.archive.org/web/http://lanyrd.com/2013/fromthefront/
   date: 2013-09-19 09:00:00 -0100
   location: "Bologna, Italy"
 
 - id: 66
   title: dConstruct
-  url: http://lanyrd.com/2013/dconstruct/
+  url: https://web.archive.org/web/http://lanyrd.com/2013/dconstruct/
   date: 2013-09-06 09:00:00 +0000
   location: "Brighton, England"
 
 - id: 65
   title: Reasons to be Creative
-  url: http://lanyrd.com/2013/reasons-to-be-creative/
+  url: https://web.archive.org/web/http://lanyrd.com/2013/reasons-to-be-creative/
   date: 2013-09-04 09:00:00 +0000
   location: "Brighton, England"
 
@@ -425,19 +425,19 @@
 
 - id: 63
   title: Beyond Tellerrand
-  url: http://lanyrd.com/2013/btconf/
+  url: https://web.archive.org/web/http://lanyrd.com/2013/btconf/
   date: 2013-05-27 09:00:00 +0100
   location: "Düsseldorf, Germany"
 
 - id: 62
   title: UxLx
-  url: http://lanyrd.com/2013/uxlx/
+  url: https://web.archive.org/web/http://lanyrd.com/2013/uxlx/
   date: 2013-05-15 09:00:00 +0000
   location: "Lisbon, Portugal"
 
 - id: 61
   title: Responsive Design Studio
-  url: http://lanyrd.com/2013/designstudio/
+  url: https://web.archive.org/web/http://lanyrd.com/2013/designstudio/
   date: 2013-04-29 09:00:00 -0400
   location: "New York, NY USA"
 
@@ -449,19 +449,19 @@
 
 - id: 59
   title: AAF North Dakota
-  url: http://lanyrd.com/2013/aafnd-april/
+  url: https://web.archive.org/web/http://lanyrd.com/2013/aafnd-april/
   date: 2013-04-16 12:00:00 -0500
   location: "Fargo, ND USA"
 
 - id: 58
   title: Breaking Development
-  url: http://lanyrd.com/2013/bdconf-orlando/
+  url: https://web.archive.org/web/http://lanyrd.com/2013/bdconf-orlando/
   date: 2013-04-08 09:00:00 -0500
   location: "Orlando, FL USA"
 
 - id: 57
   title: SXSW Interactive
-  url: http://lanyrd.com/2013/sxsw-interactive/
+  url: https://web.archive.org/web/http://lanyrd.com/2013/sxsw-interactive/
   date: 2013-03-08 09:00:00 -0600
   location: "Austin, TX USA"
 
@@ -472,7 +472,7 @@
 
 - id: 55
   title: User Interface
-  url: http://lanyrd.com/2012/uiconf17/
+  url: https://web.archive.org/web/http://lanyrd.com/2012/uiconf17/
   date: 2012-11-05 09:00:00 -0400
   location: "Boston, MA USA"
   talks:
@@ -483,7 +483,7 @@
 
 - id: 54
   title: HOW Interactive Design Conference
-  url: http://lanyrd.com/2012/how-interactive-san-francisco/
+  url: https://web.archive.org/web/http://lanyrd.com/2012/how-interactive-san-francisco/
   date: 2012-10-29 09:00:00 -0700
   location: "San Francisco, CA USA"
   talks:
@@ -508,7 +508,7 @@
 
 - id: 51
   title: WebVisions Portland
-  url: http://lanyrd.com/2012/webvisions-portland/
+  url: https://web.archive.org/web/http://lanyrd.com/2012/webvisions-portland/
   date: 2012-05-16 09:00:00 -0400
   location: "Portland, OR USA"
   talks:
@@ -517,7 +517,7 @@
 
 - id: 50
   title: "Funkas Tillgäng&shy;lighetsdagar"
-  url: http://lanyrd.com/2012/funkas-tillganglighetsdagar/
+  url: https://web.archive.org/web/http://lanyrd.com/2012/funkas-tillganglighetsdagar/
   date: 2012-04-18 09:00:00 +0000
   location: "Stockholm, Sweden"
   talks:
@@ -526,7 +526,7 @@
 
 - id: 49
   title: WebVisions NYC
-  url: http://lanyrd.com/2012/webvisions-nyc/
+  url: https://web.archive.org/web/http://lanyrd.com/2012/webvisions-nyc/
   date: 2012-01-18 09:00:00 -0400
   location: "New York, NY USA"
   workshops:
@@ -534,7 +534,7 @@
 
 - id: 48
   title: Iceweb Light
-  url: http://lanyrd.com/2011/iceweb-light/
+  url: https://web.archive.org/web/http://lanyrd.com/2011/iceweb-light/
   date: 2011-12-02 09:00:00 -0200
   location: "Reykjavík, Iceland"
   workshops:
@@ -542,7 +542,7 @@
 
 - id: 47
   title: "Ready to Inspire"
-  url: http://lanyrd.com/2011/ready-to-inspire-adaptive-web-design/
+  url: https://web.archive.org/web/http://lanyrd.com/2011/ready-to-inspire-adaptive-web-design/
   date: 2011-11-29 09:00:00 +0000
   location: "Amsterdam, Netherlands"
   workshops:
@@ -550,7 +550,7 @@
 
 - id: 46
   title: Beyond Tellerrand
-  url: http://lanyrd.com/2011/btconf/
+  url: https://web.archive.org/web/http://lanyrd.com/2011/btconf/
   date: 2011-11-20 09:00:00 +0100
   location: "Düsseldorf, Germany"
   talks:
@@ -559,7 +559,7 @@
 
 - id: 45
   title: Future of Web Design NYC
-  url: http://lanyrd.com/2011/future-of-web-design-new-york/
+  url: https://web.archive.org/web/http://lanyrd.com/2011/future-of-web-design-new-york/
   date: 2011-11-07 09:00:00 -0400
   location: "New York, NY USA"
   talks:
@@ -570,7 +570,7 @@
 
 - id: 44
   title: "The Expression&shy;Engine and CodeIgniter Conference"
-  url: http://lanyrd.com/2011/the-expressionengine-and-codeigniter-conference/
+  url: https://web.archive.org/web/http://lanyrd.com/2011/the-expressionengine-and-codeigniter-conference/
   date: 2011-10-19 09:00:00 -0400
   location: "Brooklyn, NY USA"
   talks:
@@ -579,7 +579,7 @@
 
 - id: 43
   title: CSS Summit
-  url: http://lanyrd.com/2011/css-summit/
+  url: https://web.archive.org/web/http://lanyrd.com/2011/css-summit/
   date: 2011-07-26 09:00:00 -0400
   location: Online
   talks:
@@ -588,7 +588,7 @@
 
 - id: 42
   title: Future of Web Apps Vegas
-  url: http://lanyrd.com/2011/fowa-vegas/
+  url: https://web.archive.org/web/http://lanyrd.com/2011/fowa-vegas/
   date: 2011-06-27 09:00:00 -0600
   location: "Las Vegas, NV USA"
   talks:
@@ -597,7 +597,7 @@
 
 - id: 41
   title: DevChatt
-  url: http://lanyrd.com/2011/devchatt/
+  url: https://web.archive.org/web/http://lanyrd.com/2011/devchatt/
   date: 2011-06-03 09:00:00 -0400
   location: "Chattanooga, TN USA"
   talks:
@@ -606,7 +606,7 @@
 
 - id: 40
   title: WebVisions
-  url: http://lanyrd.com/2011/webvisions/
+  url: https://web.archive.org/web/http://lanyrd.com/2011/webvisions/
   date: 2011-05-25 09:00:00 -0700
   location: "Portland, OR USA"
   talks:
@@ -617,7 +617,7 @@
 
 - id: 39
   title: MIX11
-  url: http://lanyrd.com/2011/mix11/
+  url: https://web.archive.org/web/http://lanyrd.com/2011/mix11/
   date: 2011-04-11 09:00:00 -0600
   location: "Las Vegas, NV USA"
   talks:
@@ -626,13 +626,13 @@
 
 - id: 38
   title: "Retreats 4 Geeks: HTML5 &amp; CSS3"
-  url: http://lanyrd.com/2011/retreats4geeks-html5-css3/
+  url: https://web.archive.org/web/http://lanyrd.com/2011/retreats4geeks-html5-css3/
   date: 2011-04-08 09:00:00 -0400
   location: "Gatlinburg, TN USA"
 
 - id: 37
   title: SXSW Interactive
-  url: http://lanyrd.com/2011/sxsw/
+  url: https://web.archive.org/web/http://lanyrd.com/2011/sxsw/
   date: 2011-03-11 09:00:00 -0500
   location: "Austin, TX USA"
   talks:
@@ -641,7 +641,7 @@
 
 - id: 36
   title: jQuery Summit
-  url: http://lanyrd.com/2010/jquery-summit/
+  url: https://web.archive.org/web/http://lanyrd.com/2010/jquery-summit/
   date: 2010-10-16 09:00:00 -0500
   location: Online
   talks:
@@ -650,7 +650,7 @@
 
 - id: 35
   title: "Think Vitamin: HTML5 Online Conference"
-  url: http://lanyrd.com/2010/html5-nov/
+  url: https://web.archive.org/web/http://lanyrd.com/2010/html5-nov/
   date: 2010-11-01 09:00:00 -0500
   location: Online
   talks:
@@ -659,7 +659,7 @@
 
 - id: 34
   title: Accessibility Summit
-  url: http://lanyrd.com/2010/accessibility-summit/
+  url: https://web.archive.org/web/http://lanyrd.com/2010/accessibility-summit/
   date: 2010-09-30 09:00:00 -0500
   location: Online
   talks:
@@ -668,7 +668,7 @@
 
 - id: 33
   title: "Think Vitamin: HTML and CSS"
-  url: http://lanyrd.com/2010/think-vitamin-html-and-css/
+  url: https://web.archive.org/web/http://lanyrd.com/2010/think-vitamin-html-and-css/
   date: 2010-08-31 09:00:00 -0500
   location: Online
   talks:
@@ -677,7 +677,7 @@
 
 - id: 32
   title: DevChatt
-  url: http://lanyrd.com/2010/devchatt/
+  url: https://web.archive.org/web/http://lanyrd.com/2010/devchatt/
   date: 2010-03-26 09:00:00 -0500
   location: "Chattanooga, TN USA"
   talks:
@@ -686,7 +686,7 @@
 
 - id: 31
   title: An Event Apart
-  url: http://lanyrd.com/2009/an-event-apart-chicago/
+  url: https://web.archive.org/web/http://lanyrd.com/2009/an-event-apart-chicago/
   date: 2009-10-12 09:00:00 -0500
   location: "Chicago, IL USA"
   talks:
@@ -695,13 +695,13 @@
 
 - id: 30
   title: BarCamp Chattanooga
-  url: http://lanyrd.com/2009/barcamp-chattanooga/
+  url: https://web.archive.org/web/http://lanyrd.com/2009/barcamp-chattanooga/
   date: 2009-07-25 09:00:00 -0500
   location: "Chattanooga, TN USA"
 
 - id: 29
   title: Web Design World
-  url: http://lanyrd.com/2009/web-design-world-seattle/
+  url: https://web.archive.org/web/http://lanyrd.com/2009/web-design-world-seattle/
   date: 2009-07-20 09:00:00 -0500
   location: "Seattle, WA USA"
   talks:
@@ -712,7 +712,7 @@
 
 - id: 28
   title: AIGA In Control Conference
-  url: http://lanyrd.com/2009/incontrol2009/
+  url: https://web.archive.org/web/http://lanyrd.com/2009/incontrol2009/
   date: 2009-06-11 09:00:00 -0500
   location: "Cincinnati, OH USA"
   talks:
@@ -721,7 +721,7 @@
 
 - id: 27
   title: SXSW Interactive
-  url: http://lanyrd.com/2009/sxsw/
+  url: https://web.archive.org/web/http://lanyrd.com/2009/sxsw/
   date: 2009-03-13 09:00:00 -0500
   location: "Austin, TX USA"
   talks:
@@ -730,7 +730,7 @@
 
 - id: 26
   title: Web Design World
-  url: http://lanyrd.com/2008/web-design-world-boston/
+  url: https://web.archive.org/web/http://lanyrd.com/2008/web-design-world-boston/
   date: 2008-12-08 09:00:00 -0500
   location: "Boston, MA USA"
   talks:
@@ -741,7 +741,7 @@
 
 - id: 25
   title: WEB Builder 2.0
-  url: http://lanyrd.com/2008/web-builder-20/
+  url: https://web.archive.org/web/http://lanyrd.com/2008/web-builder-20/
   date: 2008-10-13 09:00:00 -0500
   location: "Las Vegas, NV USA"
   talks:
@@ -752,7 +752,7 @@
 
 - id: 24
   title: WebVisions
-  url: http://lanyrd.com/2008/webvisions/
+  url: https://web.archive.org/web/http://lanyrd.com/2008/webvisions/
   date: 2008-05-22 09:00:00 -0500
   location: "Portland, OR USA"
   talks:
@@ -763,7 +763,7 @@
 
 - id: 23
   title: An Event Apart
-  url: http://lanyrd.com/2008/an-event-apart-new-orleans/
+  url: https://web.archive.org/web/http://lanyrd.com/2008/an-event-apart-new-orleans/
   date: 2008-04-24 09:00:00 -0500
   location: "New Orleans, LA USA"
   talks:
@@ -772,13 +772,13 @@
 
 - id: 22
   title: W3C TPAC
-  url: http://lanyrd.com/2007/w3c-tpac/
+  url: https://web.archive.org/web/http://lanyrd.com/2007/w3c-tpac/
   date: 2007-11-05 09:00:00 -0500
   location: "Cambridge, MA USA"
 
 - id: 21
   title: The Ajax Experience
-  url: http://lanyrd.com/2007/the-ajax-experience-east/
+  url: https://web.archive.org/web/http://lanyrd.com/2007/the-ajax-experience-east/
   date: 2007-10-24 09:00:00 -0500
   location: "Boston, MA USA"
   talks:
@@ -789,7 +789,7 @@
 
 - id: 20
   title: An Event Apart
-  url: http://lanyrd.com/2007/an-event-apart-san-francisco/
+  url: https://web.archive.org/web/http://lanyrd.com/2007/an-event-apart-san-francisco/
   date: 2007-10-04 09:00:00 -0500
   location: "San Francisco, CA USA"
   talks:
@@ -798,7 +798,7 @@
 
 - id: 19
   title: Webjam 7
-  url: http://lanyrd.com/2007/webjam-7/
+  url: https://web.archive.org/web/http://lanyrd.com/2007/webjam-7/
   date: 2007-09-29 09:00:00 -0500
   location: "Sydney, Australia"
   talks:
@@ -807,7 +807,7 @@
 
 - id: 18
   title: Web Directions South
-  url: http://lanyrd.com/2007/web-directions-south/
+  url: https://web.archive.org/web/http://lanyrd.com/2007/web-directions-south/
   date: 2007-09-26 09:00:00 -0500
   location: "Sydney, Australia"
   talks:
@@ -816,7 +816,7 @@
 
 - id: 17
   title: Rich Web Experience
-  url: http://lanyrd.com/2007/rich-web-experience/
+  url: https://web.archive.org/web/http://lanyrd.com/2007/rich-web-experience/
   date: 2007-09-06 09:00:00 -0500
   location: "San Jose, CA USA"
   talks:
@@ -825,7 +825,7 @@
 
 - id: 16
   title: The Ajax Experience
-  url: http://lanyrd.com/2007/the-ajax-experience-west/
+  url: https://web.archive.org/web/http://lanyrd.com/2007/the-ajax-experience-west/
   date: 2007-07-25 09:00:00 -0500
   location: "San Francisco, CA USA"
   talks:
@@ -836,7 +836,7 @@
 
 - id: 15
   title: WebVisions
-  url: http://lanyrd.com/2007/webvisions/
+  url: https://web.archive.org/web/http://lanyrd.com/2007/webvisions/
   date: 2007-05-03 09:00:00 -0500
   location: "Portland, OR USA"
   talks:
@@ -845,7 +845,7 @@
 
 - id: 14
   title: AjaxWorld
-  url: http://lanyrd.com/2007/ajaxworld/
+  url: https://web.archive.org/web/http://lanyrd.com/2007/ajaxworld/
   date: 2007-03-18 09:00:00 -0500
   location: "New York, NY USA"
   talks:
@@ -854,7 +854,7 @@
 
 - id: 13
   title: SXSW Interactive
-  url: http://lanyrd.com/2007/sxsw-interactive/
+  url: https://web.archive.org/web/http://lanyrd.com/2007/sxsw-interactive/
   date: 2007-03-09 09:00:00 -0500
   location: "Austin, TX USA"
   talks:
@@ -866,7 +866,7 @@
 
 - id: 12
   title: Web Directions North
-  url: http://lanyrd.com/2007/web-directions-north/
+  url: https://web.archive.org/web/http://lanyrd.com/2007/web-directions-north/
   date: 2007-02-07 09:00:00 -0500
   location: "Vancouver, BC Canada"
   talks:
@@ -879,7 +879,7 @@
 
 - id: 11
   title: The Ajax Experience
-  url: http://lanyrd.com/2006/the-ajax-experience-boston/
+  url: https://web.archive.org/web/http://lanyrd.com/2006/the-ajax-experience-boston/
   date: 2006-10-23 09:00:00 -0500
   location: "Boston, MA USA"
   talks:
@@ -888,13 +888,13 @@
 
 - id: 10
   title: EPA Webmaster Conference
-  url: http://lanyrd.com/2006/epa-webmaster-conference/
+  url: https://web.archive.org/web/http://lanyrd.com/2006/epa-webmaster-conference/
   date: 2006-09-14 09:00:00 -0500
   location: "Atlanta, GA USA"
 
 - id: 9
   title: An Event Apart
-  url: http://lanyrd.com/2006/an-event-apart-new-york-city/
+  url: https://web.archive.org/web/http://lanyrd.com/2006/an-event-apart-new-york-city/
   date: 2007-07-10 09:00:00 -0500
   location: "New York, NY USA"
   talks:
@@ -902,7 +902,7 @@
 
 - id: 8
   title: SXSW Interactive
-  url: http://lanyrd.com/2006/sxsw-interactive/
+  url: https://web.archive.org/web/http://lanyrd.com/2006/sxsw-interactive/
   date: 2006-03-10 09:00:00 -0500
   location: "Austin, TX USA"
   talks:
@@ -916,42 +916,42 @@
 
 - id: 7
   title: WOW Web Design and Project Management Conference
-  url: http://lanyrd.com/2005/wow-web-design-and-conference-cupertino/
+  url: https://web.archive.org/web/http://lanyrd.com/2005/wow-web-design-and-conference-cupertino/
   date: 2005-09-16 09:00:00 -0500
   location: "Cupertino, CA USA"
 
 - id: 6
   title: EPA Webmaster Conference
-  url: http://lanyrd.com/2006/epa-webmaster-conference/
+  url: https://web.archive.org/web/http://lanyrd.com/2006/epa-webmaster-conference/
   date: 2005-09-15 09:00:00 -0500
   location: "Research Triangle Park, NC USA"
 
 - id: 5
   title: WOW Web Design and Project Management Conference
-  url: http://lanyrd.com/2005/wow-web-design-conference-joliet/
+  url: https://web.archive.org/web/http://lanyrd.com/2005/wow-web-design-conference-joliet/
   date: 2005-05-17 09:00:00 -0500
   location: "Joliet, IL USA"
 
 - id: 4
   title: WOW Web Design and Project Management Conference
-  url: http://lanyrd.com/2005/wow-web-design-conference-pasadena/
+  url: https://web.archive.org/web/http://lanyrd.com/2005/wow-web-design-conference-pasadena/
   date: 2005-04-05 09:00:00 -0500
   location: "Pasadena, CA USA"
 
 - id: 3
   title: "New York State Forum Web Content Development &amp; Management Seminar"
-  url: http://lanyrd.com/2005/new-york-state-forum-web-content-development/
+  url: https://web.archive.org/web/http://lanyrd.com/2005/new-york-state-forum-web-content-development/
   date: 2005-02-24 09:00:00 -0500
   location: "Albany, NY USA"
 
 - id: 2
   title: "WOW CMS &amp; Web Services Workshop"
-  url: http://lanyrd.com/2004/wow-cms-web-services-workshop/
+  url: https://web.archive.org/web/http://lanyrd.com/2004/wow-cms-web-services-workshop/
   date: 2004-09-06 09:00:00 -0500
   location: "Las Vegas, NV USA"
 
 - id: 1
   title: COMDEX
-  url: http://lanyrd.com/2003/comdex/
+  url: https://web.archive.org/web/http://lanyrd.com/2003/comdex/
   date: 2003-11-17 09:00:00 -0500
   location: "Las Vegas, NV USA"
