@@ -251,7 +251,7 @@ adaptive_image:
 #  height: 240
 
 webmentions:
-  debug: true
+  # debug: true
   # pause_lookups: true
   username: aaron-gustafson.com
   cache_bad_uris_for: 7 # in days
@@ -262,6 +262,7 @@ webmentions:
     uglify: false
     destination: _javascript/post
     deploy: false
+  html_proofer: true
   templates:
     likes: _includes/webmentions/likes.html
     reposts: _includes/webmentions/reposts.html
