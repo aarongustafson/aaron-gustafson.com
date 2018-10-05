@@ -12,7 +12,7 @@ A good collection of design-related thinking. Here are some highlights:
 
 > Great design often disappears, leaving the user with no more than a simple and intuitive experience.
 
-From [Gentry Underwood](https://twitter.com/gentry) of Dropbox. [Jared Spool](https://twitter.com/jmspool) has been [beating this drum for ages](http://www.uie.com/articles/experiencedesign/):
+From [Gentry Underwood](https://twitter.com/gentry) of Dropbox. [Jared Spool](https://twitter.com/jmspool) has been [beating this drum for ages](https://articles.uie.com/experiencedesign/):
 
 > When things are going well in a design, we don't pay attention to them. We only pay attention to things that bother us.
 
