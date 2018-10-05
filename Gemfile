@@ -17,6 +17,7 @@ gem 'jekyll', '3.4.2'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem 'fastimage'
+  gem 'html-proofer'
   gem 'jekyll-archives'
   gem 'jekyll-crosspost-to-medium'
   gem 'jekyll-include-cache'
