@@ -1,7 +1,7 @@
 PATH
   remote: ../../Code/jekyll-webmention_io
   specs:
-    jekyll-webmention_io (3.3.0)
+    jekyll-webmention_io (3.3.1)
       htmlbeautifier (~> 1.1)
       jekyll (>= 3.2.0, < 4.0)
       json (~> 2.0)
