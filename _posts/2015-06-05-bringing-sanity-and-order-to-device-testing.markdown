@@ -86,7 +86,7 @@ I personally keep several versions of each major browser on my laptop at any giv
 
 It’s near-impossible to get older versions of Safari running on modern versions of OS X, so I typically just have the latest version locally.
 
-For testing on Windows versions of said browsers, I typically have anywhere from 3-5 virtual machines running various Windows versions with their associated browser version and (typically) a copy of Chrome, Firefox, and Opera for good measure. The MS Edge Dev site offers [free Windows VMs for download](http://dev.modern.ie/tools/vms/). If you’re just looking to get a gut-check in the latest and greatest from Microsoft, there’s also [the Remote.IE service](https://remote.modern.ie/), which allows you to connect to a virtualized version of the browser.
+For testing on Windows versions of said browsers, I typically have anywhere from 3-5 virtual machines running various Windows versions with their associated browser version and (typically) a copy of Chrome, Firefox, and Opera for good measure. The MS Edge Dev site offers [free Windows VMs for download](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/). If you’re just looking to get a gut-check in the latest and greatest from Microsoft, there’s also [the Remote.IE service](https://remote.modern.ie/), which allows you to connect to a virtualized version of the browser.
 
 If you develop on Windows or Linux, you’ll need access to a Mac or you’ll have to rely on virtualization to test on that platform. I’ll discuss virtualization in a moment.
 

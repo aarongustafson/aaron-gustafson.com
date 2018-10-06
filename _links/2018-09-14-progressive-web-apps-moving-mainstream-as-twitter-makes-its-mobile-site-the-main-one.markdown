@@ -2,7 +2,7 @@
 title: "Progressive Web Apps moving mainstream as Twitter makes its mobile site the main one"
 twitter_text: "In case you missed it, @twitter’s #PWA is replacing the “desktop” site!"
 date: 2018-09-14 13:35:32 -0700
-tags: [PWA]
+tags: ["progressive web apps"]
 ref_url: https://arstechnica.com/gadgets/2018/09/progressive-web-apps-moving-mainstream-as-twitter-makes-its-mobile-site-the-main-one/
 in_reply_to: https://arstechnica.com/gadgets/2018/09/progressive-web-apps-moving-mainstream-as-twitter-makes-its-mobile-site-the-main-one/
 ref_source: Ars Technica
