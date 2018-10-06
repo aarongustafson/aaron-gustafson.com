@@ -21,6 +21,12 @@
             {% endif %}
 
             <div class="webmention__content p-content">
+              {% if webmention.title %}
+                {{ webmention.title }}
+              {% else %}
+                {{ webmention.content }}
+              {% endif %}
+              {% comment %}
               {% capture webmention_title %}{% if webmention.title == '<p>false</p>' %}{{ webmention.raw.data.name }}{% else %}{{ webmention.title }}{% endif %}{% endcapture %}
               {% capture webmention_title_link %}{% if webmention.url %}<a class="webmention__source u-url" href="{{ webmention.url }}">{{ webmention_title }}</a>{% endif %}{% endcapture %}
               {% if webmention.type == 'post' %}
@@ -34,6 +40,7 @@
                   {{ webmention_title }}
                 {% endif %}
               {% endif %}
+              {% endcomment %}
             </div>
             
             <div class="webmention__meta">
