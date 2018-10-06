@@ -50,7 +50,7 @@ module Jekyll
       linkedin = ENV['BUFFER_LINKEDIN_PROFILE'] or false
       access_token = ENV['BUFFER_ACCESS_TOKEN'] or false
       raise Error, 'No Buffer access token found' unless access_token
-      
+
       # tweet length = 140 - 22 url chars & a space
       twitter_text_length = 280 - 22 - 1
 
@@ -59,14 +59,14 @@ module Jekyll
       prefix = '🔖 '
 
       if defined?(BUFFER_CACHE_DIR)
-        
+
         buffered_file = File.join(BUFFER_CACHE_DIR, "buffer-sent.yml")
         if File.exists?(buffered_file)
           buffered = open(buffered_file) { |f| YAML.load(f) }
         else
           buffered = []
         end
-        
+
         posts = []
         site.collections.each do |name, collection|
           collection.docs.each do |post|
@@ -75,7 +75,7 @@ module Jekyll
         end
         posts.each do | post |
           data = post.data
-          #puts data.inspect
+          # puts data.inspect
 
           # Unpublished
           if data.has_key?('published') && data['published'] == false
