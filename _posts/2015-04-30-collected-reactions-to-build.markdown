@@ -17,7 +17,7 @@ One graphic that cropped up that blew my mind was this one talking about where W
 
 <figure id="fig-2015-04-30-01" class="media-container">{% adaptive_image https://news.microsoft.com/build2015/assets/photos/build720150428_web.png alt="The Windows 10 continuum from an Internet of Things board up to a SurfaceHub and HoloLens" %}</figure>
 
-You’ve often heard me discuss [experience as a continuum](http://adaptivewebdesign.info/1st-edition/chapter-1.html). Microsoft is living it.
+You’ve often heard me discuss [experience as a continuum](http://adaptivewebdesign.info/1st-edition/read/chapter-1.html). Microsoft is living it.
 
 If you didn’t watch the streaming talks and want to hear about what was announced from some independent sources, I’d recommend reading these:
 

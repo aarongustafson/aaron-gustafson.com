@@ -21,10 +21,18 @@
             {% endif %}
 
             <div class="webmention__content p-content">
-              {% if webmention.content %}
-                {{ webmention.content }}
+              {% capture webmention_title %}{% if webmention.title == '<p>false</p>' %}{{ webmention.raw.data.name }}{% else %}{{ webmention.title }}{% endif %}{% endcapture %}
+              {% capture webmention_title_link %}{% if webmention.url %}<a class="webmention__source u-url" href="{{ webmention.url }}">{{ webmention_title }}</a>{% endif %}{% endcapture %}
+              {% if webmention.type == 'post' %}
+                {{ webmention_title_link }}
+              {% elsif webmention.type == 'link' and webmention.source != 'twitter' %}
+                {{ webmention_title_link }}
               {% else %}
-                {{ webmention.title }}
+                {% if webmention.content %}
+                  {{ webmention.content }}
+                {% else %}
+                  {{ webmention_title }}
+                {% endif %}
               {% endif %}
             </div>
             
@@ -33,10 +41,12 @@
                 <time class="webmention__pubdate dt-published"
                       datetime="{{ webmention.pubdate | date: '%FT%T%:z' }}">{{ webmention.pubdate | date: '%d %B %Y' }}</time>
               {% endif %}
-              {% if webmention.pubdate and webmention.url %}|{% endif %}
-              {% if webmention.url %}
-                <a class="webmention__source u-url" href="{{ webmention.url }}">Permalink</a>
-              {% endif %}
+              {% unless webmention_title_link %}
+                {% if webmention.pubdate and webmention.url %}|{% endif %}
+                {% if webmention.url %}
+                  <a class="webmention__source u-url" href="{{ webmention.url }}">Permalink</a>
+                {% endif %}
+              {% endunless %}
             </div>
           </article>
         </li>
