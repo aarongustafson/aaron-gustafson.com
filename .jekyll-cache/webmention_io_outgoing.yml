@@ -399,7 +399,7 @@ https://www.aaron-gustafson.com/notebook/bringing-sanity-and-order-to-device-tes
   http://commondatastorage.googleapis.com/chromium-browser-continuous/index.html: ''
   http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/: ''
   http://www.opera.com/download//?custom=yes: ''
-  http://dev.modern.ie/tools/vms/: ''
+  https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/: ''
   https://remote.modern.ie/: ''
   https://creative.adobe.com/products/inspect: ''
   http://vanamco.com/ghostlab/: ''
@@ -1870,7 +1870,7 @@ https://www.aaron-gustafson.com/notebook/links/the-new-york-times-wisely-blocks-
 https://www.aaron-gustafson.com/notebook/links/ios-9-older-devices-lose-support-apps/:
   http://9to5mac.com/2015/06/10/ios-9-older-devices-lose-support-apps/: false
 https://www.aaron-gustafson.com/notebook/links/how-can-i-debug-localhost/:
-  http://dev.modern.ie/platform/faq/how-can-i-debug-localhost/: false
+  https://developer.microsoft.com/en-us/microsoft-edge/platform/faq/how-can-i-debug-localhost/: false
 https://www.aaron-gustafson.com/notebook/links/safari-9-everything-web-designers-need-to-know-now/:
   http://www.webdesignerdepot.com/2015/06/safari-9-everything-web-designers-need-to-know-now/: false
   http://generatedcontent.org/post/66817675443/setting-native-like-scrolling-offsets-in-css-with: false
@@ -2050,7 +2050,7 @@ https://www.aaron-gustafson.com/notebook/links/css-selectors-inside-selectors-di
   http://drafts.csswg.org/selectors-4/: false
 https://www.aaron-gustafson.com/notebook/links/windows-10-virtual-machines-now-available-on-microsoft-edge-dev/:
   http://blogs.windows.com/msedgedev/2015/08/17/windows-10-virtual-machines-now-available-on-microsoft-edge-dev/: false
-  http://dev.modern.ie/: false
+  https://developer.microsoft.com/en-us/microsoft-edge/: false
 https://www.aaron-gustafson.com/notebook/links/designing-web-code-in-a-native-app/:
   http://www.thishereweb.com/designing-web-code-in-a-native-app/: false
   http://www.thishereweb.com/: false
@@ -2222,11 +2222,11 @@ https://www.aaron-gustafson.com/notebook/links/hints-for-successfully-managing-a
   http://blogs.msdn.com/b/eternalcoding/: false
 https://www.aaron-gustafson.com/notebook/links/introducing-edgehtml-13-our-first-platform-update-for-microsoft-edge/:
   http://blogs.windows.com/msedgedev/2015/11/16/introducing-edgehtml-13-our-first-platform-update-for-microsoft-edge/: false
-  http://dev.modern.ie/platform/status/pictureelement/: false
-  http://dev.modern.ie/platform/status/extendedsrcsetandsizessupport/: false
-  http://dev.modern.ie/platform/status/cssinitialvalue/: false
-  http://dev.modern.ie/platform/status/cssunsetvalue/: false
-  http://dev.modern.ie/platform/status/adownloadattribute/: false
+  https://developer.microsoft.com/en-us/microsoft-edge/platform/status/pictureelement/: false
+  https://developer.microsoft.com/en-us/microsoft-edge/platform/status/extendedsrcsetandsizessupport/: false
+  https://developer.microsoft.com/en-us/microsoft-edge/platform/status/cssinitialvalue/: false
+  https://developer.microsoft.com/en-us/microsoft-edge/platform/status/cssunsetvalue/: false
+  https://developer.microsoft.com/en-us/microsoft-edge/platform/status/adownloadattribute/: false
   https://dev.modern.ie/platform/status/cssmutabilitypseudoclasses/: false
   https://dev.modern.ie/platform/status/cssrangepseudoclasses/: false
 https://www.aaron-gustafson.com/notebook/links/the-cost-of-frameworks/:

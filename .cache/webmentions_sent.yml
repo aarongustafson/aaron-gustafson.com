@@ -819,7 +819,7 @@ https://www.aaron-gustafson.com/notebook/bringing-sanity-and-order-to-device-tes
 - http://commondatastorage.googleapis.com/chromium-browser-continuous/index.html
 - http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/
 - http://www.opera.com/download//?custom=yes
-- http://dev.modern.ie/tools/vms/
+- https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
 - https://remote.modern.ie/
 - https://creative.adobe.com/products/inspect
 - http://vanamco.com/ghostlab/
@@ -854,7 +854,7 @@ https://www.aaron-gustafson.com/notebook/the-new-york-times-wisely-blocks-staff-
 https://www.aaron-gustafson.com/notebook/ios-9-older-devices-lose-support-apps/:
 - http://9to5mac.com/2015/06/10/ios-9-older-devices-lose-support-apps/
 https://www.aaron-gustafson.com/notebook/how-can-i-debug-localhost/:
-- http://dev.modern.ie/platform/faq/how-can-i-debug-localhost/
+- https://developer.microsoft.com/en-us/microsoft-edge/platform/faq/how-can-i-debug-localhost/
 https://www.aaron-gustafson.com/notebook/safari-9-everything-web-designers-need-to-know-now/:
 - http://www.webdesignerdepot.com/2015/06/safari-9-everything-web-designers-need-to-know-now/
 - http://generatedcontent.org/post/66817675443/setting-native-like-scrolling-offsets-in-css-with
@@ -1095,7 +1095,7 @@ https://www.aaron-gustafson.com/notebook/css-selectors-inside-selectors-discover
 - http://drafts.csswg.org/selectors-4/
 https://www.aaron-gustafson.com/notebook/windows-10-virtual-machines-now-available-on-microsoft-edge-dev/:
 - http://blogs.windows.com/msedgedev/2015/08/17/windows-10-virtual-machines-now-available-on-microsoft-edge-dev/
-- http://dev.modern.ie/
+- https://developer.microsoft.com/en-us/microsoft-edge/
 https://www.aaron-gustafson.com/notebook/web-design-101-100-percent-tappable/: []
 https://www.aaron-gustafson.com/notebook/designing-web-code-in-a-native-app/:
 - http://www.thishereweb.com/designing-web-code-in-a-native-app/
@@ -1600,11 +1600,11 @@ https://www.aaron-gustafson.com/notebook/adaptive-web-design-folded-and-gathered
 - http://adaptivewebdesign.info/2nd-edition/
 https://www.aaron-gustafson.com/notebook/introducing-edgehtml-13-our-first-platform-update-for-microsoft-edge/:
 - http://blogs.windows.com/msedgedev/2015/11/16/introducing-edgehtml-13-our-first-platform-update-for-microsoft-edge/
-- http://dev.modern.ie/platform/status/pictureelement/
-- http://dev.modern.ie/platform/status/extendedsrcsetandsizessupport/
-- http://dev.modern.ie/platform/status/cssinitialvalue/
-- http://dev.modern.ie/platform/status/cssunsetvalue/
-- http://dev.modern.ie/platform/status/adownloadattribute/
+- https://developer.microsoft.com/en-us/microsoft-edge/platform/status/pictureelement/
+- https://developer.microsoft.com/en-us/microsoft-edge/platform/status/extendedsrcsetandsizessupport/
+- https://developer.microsoft.com/en-us/microsoft-edge/platform/status/cssinitialvalue/
+- https://developer.microsoft.com/en-us/microsoft-edge/platform/status/cssunsetvalue/
+- https://developer.microsoft.com/en-us/microsoft-edge/platform/status/adownloadattribute/
 - https://dev.modern.ie/platform/status/cssmutabilitypseudoclasses/
 - https://dev.modern.ie/platform/status/cssrangepseudoclasses/
 https://www.aaron-gustafson.com/notebook/the-cost-of-frameworks/:
