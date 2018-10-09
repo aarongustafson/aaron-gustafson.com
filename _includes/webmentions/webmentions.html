@@ -22,7 +22,11 @@
 
             <div class="webmention__content p-content">
               {% if webmention.title %}
-                {{ webmention.title }}
+                {% if webmention.uri %}
+                  <a class="webmention__source u-url" href="{{ webmention.uri }}">{{ webmention.title }}</a>
+                {% else %}
+                  {{ webmention.title }}
+                {% endif %}
               {% else %}
                 {{ webmention.content }}
               {% endif %}
@@ -48,12 +52,12 @@
                 <time class="webmention__pubdate dt-published"
                       datetime="{{ webmention.pubdate | date: '%FT%T%:z' }}">{{ webmention.pubdate | date: '%d %B %Y' }}</time>
               {% endif %}
-              {% unless webmention_title_link %}
-                {% if webmention.pubdate and webmention.url %}|{% endif %}
-                {% if webmention.url %}
-                  <a class="webmention__source u-url" href="{{ webmention.url }}">Permalink</a>
+              {% unless webmention.title %}
+                {% if webmention.pubdate and webmention.uri %}|{% endif %}
+                {% if webmention.uri %}
+                  <a class="webmention__source u-url" href="{{ webmention.uri }}">Permalink</a>
                 {% endif %}
-              {% endunless %}
+              {% unless %}
             </div>
           </article>
         </li>

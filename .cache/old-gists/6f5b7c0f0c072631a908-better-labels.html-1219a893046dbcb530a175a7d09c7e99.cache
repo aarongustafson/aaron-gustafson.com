@@ -1,2 +1,0 @@
-<label for="first_name">What’s your first name?</label>
-<input name="first_name" id="first_name">
