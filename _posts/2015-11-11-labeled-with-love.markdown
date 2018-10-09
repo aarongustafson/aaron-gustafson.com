@@ -8,7 +8,7 @@ description: "Proper labeling is key to ensuring your web forms are usable."
 crosspost_to_medium: true
 series:
   name: "Modern Web Form Best Practices"
-  tag: web-forms
+  tag: forms
   ordinal: first
 ---
 

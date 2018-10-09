@@ -8,7 +8,7 @@ description: "“Checkbox” form controls have long been a part of software, en
 crosspost_to_medium: true
 series:
   name: "Modern Web Form Best Practices"
-  tag: web-forms
+  tag: forms
   ordinal: second
 ---
 
