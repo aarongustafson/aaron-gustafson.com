@@ -548,8 +548,8 @@
   });
 
   preconnectAvailable.then(function(){
-    window.AG.preconnect( '//gist.github.com' );
-    window.AG.preconnect( '//assets-cdn.github.com' );
+    window.AG.preconnect( 'https://gist.github.com' );
+    window.AG.preconnect( 'https://assets-cdn.github.com' );
     window.AG.preconnect( 'https://images1-focus-opensocial.googleusercontent.com' );
   });
 
