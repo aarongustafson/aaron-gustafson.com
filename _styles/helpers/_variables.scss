@@ -56,9 +56,9 @@ $support-for-original-webkit-gradients: true;
 /*	Typography
 	========================================================================== */
 // Font Stacks
-$font-stack-sansserif: "prenton", "Helvetica Neue", Helvetica, sans-serif;
-$font-stack-serif: "quatro-slab", Georgia, serif;
-$font-stack-mono: "inconsolata", "Courier New", Courier, monospace;
+$font-stack-sansserif: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-stack-serif: Cambria, Georgia, serif;
+$font-stack-mono: Inconsolata, Consolas, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 $font-stack-headings: $font-stack-serif;
 $font-stack-body: $font-stack-sansserif;
 $font-stack-nav: $font-stack-serif;
@@ -67,6 +67,7 @@ $font-stack-nav: $font-stack-serif;
 $font-weight-sansserif: 400;
 $font-weight-sansserif-bold: 700;
 $font-weight-serif: 500;
+$font-weight-serif-bold: 700;
 $font-weight-mono: 500;
 
 // Font sizes

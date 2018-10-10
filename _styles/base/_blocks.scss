@@ -19,7 +19,7 @@ Block-level Semantics
   blockquote {
     
     @include rem( font-size, $font-size-body );
-    font-family: $font-stack-sansserif;
+    font-family: $font-stack-serif;
     font-style: italic; 
     
     margin-left: auto;

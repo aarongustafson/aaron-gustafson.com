@@ -1,152 +1,152 @@
 /*------------------------------------*\
-    Links
+Links
 \*------------------------------------*/
 
 @include breakup-breakpoint( "global" ) {
-
-    a {
-        text-decoration: none;
+  
+  a {
+    text-decoration: none;
     
-        &:link,
-        &:visited {
-            color: $color-link;
-
-            border-bottom: 1px dotted;
-            border-bottom-color: rgba( $color-link, .25 );
-
-            cursor: pointer;
-
-            transition: background-color $default-transition, border-color $default-transition, color $default-transition;
-        }
-
-        &:hover,
-        &:focus,
-        &:active {
-            color: $color-link-hover;
-            border-bottom-color: $color-link-hover;
-        }
-    
-        // don’t wrap phone #s or emails
-        &[href^=mailto],
-        &[href^=tel] {
-            white-space: nowrap;
-        }
-        &.email,
-        &.tel {
-            white-space: nowrap;
-        }
-        
-        // No underlines on image links
-        a[href$="jpg"],  a[href$=png],  a[href$=gif] {
-            border-bottom-width: 0;
-        }
-    
-        h1 &,
-        h2 &,
-        h3 &,
-        h4 &,
-        h5 &,
-        h6 & {
-            border-bottom-width: 0;
-        
-            &:hover,
-            &:focus,
-            &:active {
-                border-bottom-width: 1px;
-            }
-        }
-        
-        footer &[rel="bookmark"]::after {
-            content: "\00A0\2192";
-        }
-
-        &[rel="original-article"]::after {
-            content: "\00A0\2192";
-            display: inline-block;
-            transform: translateX(-.25em) rotate(-45deg) translateY(0.25em);
-        }
-    
+    &:link,
+    &:visited {
+      color: $color-link;
+      
+      border-bottom: 1px dotted;
+      border-bottom-color: rgba( $color-link, .25 );
+      
+      cursor: pointer;
+      
+      transition: background-color $default-transition, border-color $default-transition, color $default-transition;
     }
-
-    // better underlines
-    @supports (background-image:linear-gradient(black,white)) {
-        
-        a:link,
-        a:visited {
-            @include underline( $color-link, 1px );
-
-            h1 & {
-                @include underline( $color-link, 2px );
-            }
-        }
-        a:hover,
-        a:focus {
-            @include underline( $color-link-hover, 1px );
-
-            h1 & {
-                @include underline( $color-link-hover, 2px );
-            }
-        }
-
-        a.footnote {
-            @include no-underline;
-        }
-
-        html.wf-active {
-
-            a:link,
-            a:visited {
-                @include underline( $color-link );
-            }
-            a:hover,
-            a:focus {
-                @include underline( $color-link );
-            }
-            h1 a:link,
-            h1 a:visited  {
-                @include underline( $color-link, 8px );
-            }
-            h1 a:hover,
-            h1 a:focus  {
-                @include underline( $color-link, 8px );
-            }
-            h2 a:hover,
-            h2 a:focus {
-                @include underline( $color-link-hover, 5px );
-            }
-            h2 a:link,
-            h2 a:visited {
-                @include underline( $color-link-hover, 5px );
-            }
-            
-        }
-        
-        // No underlines on image links
-        a[href$="jpg"],  a[href$=png],  a[href$=gif] {
-            @include no-underline;
-        }
-
+    
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color-link-hover;
+      border-bottom-color: $color-link-hover;
     }
-
+    
+    // don’t wrap phone #s or emails
+    &[href^=mailto],
+    &[href^=tel] {
+      white-space: nowrap;
+    }
+    &.email,
+    &.tel {
+      white-space: nowrap;
+    }
+    
+    // No underlines on image links
+    a[href$="jpg"],  a[href$=png],  a[href$=gif] {
+      border-bottom-width: 0;
+    }
+    
+    h1 &,
+    h2 &,
+    h3 &,
+    h4 &,
+    h5 &,
+    h6 & {
+      border-bottom-width: 0;
+      
+      &:hover,
+      &:focus,
+      &:active {
+        border-bottom-width: 1px;
+      }
+    }
+    
+    footer &[rel="bookmark"]::after {
+      content: "\00A0\2192";
+    }
+    
+    &[rel="original-article"]::after {
+      content: "\00A0\2192";
+      display: inline-block;
+      transform: translateX(-.25em) rotate(-45deg) translateY(0.25em);
+    }
+    
+  }
+  
+  // better underlines
+  @supports (background-image:linear-gradient(black,white)) {
+    
+    a:link,
+    a:visited {
+      @include underline( $color-link, 1px );
+      
+      h1 & {
+        @include underline( $color-link, 2px );
+      }
+    }
+    a:hover,
+    a:focus {
+      @include underline( $color-link-hover, 1px );
+      
+      h1 & {
+        @include underline( $color-link-hover, 2px );
+      }
+    }
+    
+    a.footnote {
+      @include no-underline;
+    }
+    
+    // html.wf-active {
+      
+    //   a:link,
+    //   a:visited {
+    //     @include underline( $color-link );
+    //   }
+    //   a:hover,
+    //   a:focus {
+    //     @include underline( $color-link );
+    //   }
+    //   h1 a:link,
+    //   h1 a:visited  {
+    //     @include underline( $color-link, 8px );
+    //   }
+    //   h1 a:hover,
+    //   h1 a:focus  {
+    //     @include underline( $color-link, 8px );
+    //   }
+    //   h2 a:hover,
+    //   h2 a:focus {
+    //     @include underline( $color-link-hover, 5px );
+    //   }
+    //   h2 a:link,
+    //   h2 a:visited {
+    //     @include underline( $color-link-hover, 5px );
+    //   }
+      
+    // }
+    
+    // No underlines on image links
+    a[href$="jpg"],  a[href$=png],  a[href$=gif] {
+      @include no-underline;
+    }
+    
+  }
+  
 }
 
 @include breakup-breakpoint( "print" ) {
-    
-    a {
-        text-decoration: none;
-        &[href]:after {
-            content: "(" attr(href) ")";
-            font-size: 10pt;
-            margin-left: 9pt;
-        }
-        &[href^="/"]:after {
-            content: " (#{$domain}" attr(href) ")";
-        }
-        &[href^="#"]:after,
-        &[href^="mailto:"]:after,
-        &[href^="tel:"]:after {
-            display: none;
-        }
+  
+  a {
+    text-decoration: none;
+    &[href]:after {
+      content: "(" attr(href) ")";
+      font-size: 10pt;
+      margin-left: 9pt;
     }
-    
+    &[href^="/"]:after {
+      content: " (#{$domain}" attr(href) ")";
+    }
+    &[href^="#"]:after,
+    &[href^="mailto:"]:after,
+    &[href^="tel:"]:after {
+      display: none;
+    }
+  }
+  
 }

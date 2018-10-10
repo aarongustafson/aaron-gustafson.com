@@ -31,7 +31,7 @@
     return k;
   };
 
-}(this,this.document));// @ts-check
+}(this,this.document));// #@ts-check
 (function(window, document){
   
   // prerequisites
@@ -521,6 +521,7 @@
   // Synchromous XHR proxied through whateverorigin.org
   function readWebPage( uri, callback )
   {
+      // jshint -W021
       if ( 'XMLHttpRequest' in window )
       {
         var XHR = new XMLHttpRequest();
@@ -551,6 +552,7 @@
           callback( false );
         };
       }
+      // jshint +W021
       return readWebPage( uri, callback );
   }
 

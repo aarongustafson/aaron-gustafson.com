@@ -66,7 +66,7 @@ dl {
 }
 
 /*------------------------------------*\
-    Lists
+Lists
 \*------------------------------------*/
 ol,
 ul {
@@ -83,7 +83,7 @@ ul ul {
 }
 
 /*------------------------------------*\
-    Links
+Links
 \*------------------------------------*/
 /*------------------------------------*\
     Text-level semantics
@@ -198,7 +198,7 @@ textarea {
     Main
 \*------------------------------------*/
 /*------------------------------------*\
-    Navigation
+Navigation
 \*------------------------------------*/
 [role=navigation] {
   background: #27831B;
@@ -227,7 +227,7 @@ textarea {
   margin-right: -.5em;
 }
 [role=navigation] .main-navigation__link {
-  padding: .1em .5em;
+  padding: .2em .75em;
   position: relative;
 }
 [role=navigation] .main-navigation__link--search {
@@ -411,10 +411,9 @@ Blog Entry
   margin-left: -110px;
 }
 
-@supports ((-moz-column-count: 2) or (column-count: 2)) or (-moz-column-count: 2) {
+@supports (column-count: 2) or (-moz-column-count: 2) {
   .entry__meta {
-    -moz-column-count: 1;
-         column-count: 1;
+    column-count: 1;
   }
   .entry__meta dd + dt {
     margin-top: 22px;
