@@ -803,7 +803,7 @@ form li {
   text-transform: uppercase;
 }
 .site-title a {
-  background: #666;
+  background: #505050;
   color: #DDD;
   border: 0;
   padding: 8px 22px;
@@ -970,7 +970,7 @@ Navigation
 button,
 .button {
   cursor: pointer;
-  background: #666;
+  background: #505050;
   color: #fff;
   text-shadow: none;
   border: 1px solid #2c2825;
@@ -992,7 +992,7 @@ button:hover, button:focus,
   font-size: 1.25rem;
 }
 .listing__item__meta {
-  color: #666;
+  color: #505050;
   margin: 2px 0 0;
   margin: 0.125rem 0 0;
 }
@@ -1183,8 +1183,13 @@ Blog Entry
   margin: 0 0 1.375rem;
 }
 .entry__meta {
-  color: #666;
+  color: #505050;
   padding: 0;
+}
+.entry__meta dt {
+  font-family: Cambria, Georgia, serif;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 .entry__header .entry__meta {
   font-size: 14px;
@@ -1244,6 +1249,14 @@ Blog Entry
   position: absolute;
 }
 
+@supports (background-image: linear-gradient(black, white)) {
+  .entry__meta a:link,
+  .entry__meta a:visited {
+    background-image: linear-gradient(to top, transparent, transparent 0px, #27831B 0px, #27831B 1px, transparent 1px);
+    border-bottom-width: 0;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  }
+}
 @supports (column-count: 2) or (-moz-column-count: 2) {
   .entry__meta {
     column-count: 2;
@@ -1379,7 +1392,7 @@ html.wf-active div.gist a {
   margin: 0;
 }
 .webmention__meta {
-  color: #666;
+  color: #505050;
   font-size: 14px;
   font-size: 0.875rem;
 }
@@ -1494,7 +1507,7 @@ html.wf-active div.gist a {
   margin: 0 1.375rem;
 }
 #aaron-gustafson_com .pagination a {
-  background: #666;
+  background: #505050;
   color: #fff;
   text-shadow: none;
   border: 1px solid #2c2825;
@@ -1850,7 +1863,7 @@ html.wf-active .promo a:active {
 }
 .anchorable__alert {
   font-weight: normal;
-  color: #666;
+  color: #505050;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 15px;
@@ -1897,7 +1910,7 @@ html.wf-active .promo a:active {
 }
 .media-controls__button:disabled, .media-controls__button:disabled:hover, .media-controls__button:disabled:active {
   background: #DDD;
-  color: #666;
+  color: #505050;
   cursor: not-allowed;
 }
 .media-controls__button:before {
@@ -1938,7 +1951,7 @@ html.wf-active .promo a:active {
   text-align: left;
 }
 #carbonads .carbon-poweredby {
-  color: #666;
+  color: #505050;
   font-size: 12px;
   font-size: 0.75rem;
 }

@@ -11,10 +11,16 @@ Blog Entry
     &__meta {
       color: $color-grey;
       padding: 0;
+
+      dt {
+        font-family: $font-stack-serif;
+        @include rem( font-size, $font-size-nav );
+      }
     }
     
     &__header &__meta {
       @include rem( font-size, $font-size-small );
+
     }
     
     &__jump-links {
@@ -79,6 +85,14 @@ Blog Entry
       }
     }
     
+  }
+  
+  @supports (background-image:linear-gradient(black,white)) {
+    
+    .entry__meta a:link,
+    .entry__meta a:visited {
+      @include underline( $color-link, 0px );
+    }
   }
   
   @supports (column-count:2) or (-webkit-column-count:2) or (-moz-column-count:2) {
