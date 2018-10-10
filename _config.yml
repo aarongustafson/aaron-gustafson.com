@@ -203,10 +203,10 @@ disqus_short_name: aarongustafson
 disqus_show_comment_count: true
 
 # Google Analytics
-google_analytics_tracking_id: "UA-176472-5"
+# google_analytics_tracking_id: "UA-176472-5"
 
 # Google Tag Manager
-google_tag_manager_id: "GTM-P3MJZJ"
+# google_tag_manager_id: "GTM-P3MJZJ"
 
 # Github repo path
 github:
