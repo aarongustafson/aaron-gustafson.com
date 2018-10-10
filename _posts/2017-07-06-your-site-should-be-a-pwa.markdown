@@ -20,7 +20,7 @@ Jeremy Keith made [a really solid case for the broad usefulness of PWAs](https:/
 <p>Literally any website can be a progressive web app:</p>
 <ul>
 <li>switch over to HTTPS,</li>
-<li>add [a JSON manifest file](https://www.w3.org/TR/appmanifest/) with your [metacrap](https://www.well.com/~doctorow/metacrap.htm), and</li>
+<li>add <a href="https://www.w3.org/TR/appmanifest/">a JSON manifest file</a> with your <a href="https://www.well.com/~doctorow/metacrap.htm">metacrap</a>, and</li>
 <li>add a service worker.</li>
 </ul>
 </blockquote>
