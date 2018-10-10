@@ -2,8 +2,6 @@
 
 {% include typekit.html %}
 
-{% include analytics.html %}
-
 {% for script in page.javascripts.head %}
 	<script src="/j/{{ script }}.js" async></script>
 {% endfor %}
