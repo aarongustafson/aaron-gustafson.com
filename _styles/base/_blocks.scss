@@ -72,14 +72,14 @@ Block-level Semantics
 @include breakup-breakpoint( "medium" ) {
   blockquote,
   dl {
-    @include rem( padding, 0 ( 1 * $default-spacing ) );
+    @include rem( padding, 0 $default-spacing );
   }
 }
 
 @include breakup-breakpoint( "full" ) {
   blockquote,
   dl {
-    @include rem( padding, 0 ( 2 * $default-spacing ) );
+    @include rem( padding, 0 ( 3 * $default-spacing ) );
   }
 }
 
