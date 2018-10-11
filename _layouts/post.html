@@ -112,17 +112,18 @@ single: true
 
       {% include_cached post/promo.html %}
 
+      {% comment %}
       {% if site.disqus_short_name and page.comments == true %}
         <hr>
 
         <section id="disqus" class="entry__comments dont-read">
           <h1>Comments</h1>
           <div id="disqus_thread" aria-live="polite">
-            {% include_cached post/disqus_thread.html %}
           </div>
         </section>
       {% endif %}
-    
+      {% endcomment %}
+
       <hr>
 
       <section id="webmentions" class="entry__comments dont-read">

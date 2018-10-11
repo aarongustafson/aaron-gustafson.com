@@ -809,16 +809,6 @@ exports.Liquid=Liquid;}// @ts-check
     (document.head || document.body).appendChild(s);
 
 }( this, this.document ));
-(function( window, document ) {
-    'use strict';
-
-    var $s = document.createElement('script');
-    $s.src = '//' + window.AG.disqus.shortname + '.disqus.com/' + window.AG.disqus.script;
-    $s.setAttribute( 'data-timestamp', '' + new Date() );
-    (document.head || document.body).appendChild( $s );
-    $s = null;
-
-}( this, this.document ));
 // Add a comments message if offline
 (function(){
     'use strict';
