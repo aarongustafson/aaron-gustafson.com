@@ -35,15 +35,13 @@ single: true
               %}
             </dd>
 
-            {% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
-              <dt class="dont-read">Reactions</dt>
-              <dd class="dont-read">
-                <ul class="entry__jump-links">
-                  <li class="entry__jump entry__jump--comments"><a href="{% if index %}{{ root_url }}{{ page.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ this_url }}{% endif %}">Comments</a></li>
-                  <li class="entry__jump entry__jump--webmentions"><a href="{% if index %}{{ root_url }}{{ page.url }}{% endif %}#webmentions">{% webmention_count page.url %} Webmentions</a></li>
-                </ul>
-              </dd>
-            {% endif %}
+            <dt class="dont-read">Reactions</dt>
+            <dd class="dont-read">
+              <ul class="entry__jump-links">
+                {% comment %}<li class="entry__jump entry__jump--comments"><a href="{% if index %}{{ root_url }}{{ page.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ this_url }}{% endif %}">Comments</a></li>{% endcomment %}
+                <li class="entry__jump entry__jump--webmentions"><a href="{% if index %}{{ root_url }}{{ page.url }}{% endif %}#webmentions">{% webmention_count page.url %} Webmentions</a></li>
+              </ul>
+            </dd>
 
             {% if page.crossposted %}
               <dt class="dont-read">Crossposted</dt>
