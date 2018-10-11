@@ -30,5 +30,15 @@
     "require-dir": "^0.3.1",
     "gulp-minify-css": "^1.2.4",
     "uglify-es": "^3.0.21"
+  },
+  "scripts": {
+    "build": "npm gulp build",
+    "serve": "npm gulp",
+    "start": "npm install && npm run serve",
+    "check-lint": "prettier --list-different '**/*.js' && eslint '**/*.js'",
+    "lint": "prettier --write '**/*.js' && eslint --fix '**/*.js'"
+  },
+  "prettier": {
+    "singleQuote": true
   }
 }
