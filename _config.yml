@@ -201,7 +201,11 @@ og:
 # Disqus Comments
 disqus_short_name: aarongustafson
 disqus_show_comment_count: true
-
+comments:
+  disqus:
+    short_name: aarongustafson
+    api_key: mWnaJ0hRg2PFzVZ8SPGGlPAOVtq72VYoxj1prHe74NmokxW81KxfJc9gZTCEtgV5
+    
 # Google Analytics
 # google_analytics_tracking_id: "UA-176472-5"
 
