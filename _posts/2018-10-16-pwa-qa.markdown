@@ -195,8 +195,6 @@ If your website meets all of these criteria, we will use the information you pro
 
 ## Can I use web components when building PWAs?
 
-{% tweet https://twitter.com/WindowsDocs/status/1042111770528075776 %}
-
 Yes! (With caveats.)
 
 If you take a look at [the support tables on Can I Use](https://caniuse.com/#search=components), native support is pretty uneven across the browser scape. That said, there are polyfills that make web components cross-platform.
@@ -205,15 +203,11 @@ A lot of it comes down to how much JavaScript code you want to ship and whether 
 
 ## What's the Return on Investment (ROI) for building a PWA?
 
-{% tweet https://twitter.com/WindowsDocs/status/1042115390459895808 %}
-
 Like many things, it depends. Every project is different and every project defines success differently. That said, companies that have embraced PWAs have seen pretty impressive successes. The kind folks at [Cloud Four](https://cloudfour.com/) have an ongoing collection at [PWA Stats](https://www.pwastats.com/).
 
 If you're looking for ideas around how your site could benefit from becoming a PWA, check out this piece in <cite>A List Apart</cite>: [Yes, That Web Project Should Be a PWA](https://alistapart.com/article/yes-that-web-project-should-be-a-pwa).
 
 ## What are some interesting uses of `ServiceWorker` you've seen?
-
-{% tweet https://twitter.com/WindowsDocs/status/1042119162087145472 %}
 
 One of the more interesting uses of `ServiceWorker`, in my opinion, was [Dean Hume's dynamic WebP image-swapping](http://www.deanhume.com/service-workers-dynamic-responsive-images-using-webp-images/). Clever stuff!
 
@@ -223,8 +217,6 @@ There's also some [clever `ServiceWorker` code that will re-play failed pings to
 
 ## What are some common misconceptions about PWAs?
 
-{% tweet https://twitter.com/WindowsDocs/status/1042121988242669568 %}
-
 Oh, so many…
 
 1. That you need to use [insert framework de jour here] to build a PWA. (You don't.)
@@ -233,8 +225,6 @@ Oh, so many…
 
 ## What type of site or app is best suited for a PWA?
 
-{% tweet https://twitter.com/WindowsDocs/status/1042124623163285505 %}
-
 [Any site can (and probably should) be a PWA](https://alistapart.com/article/yes-that-web-project-should-be-a-pwa). Yours included.
 
 The way you choose to use PWA-related technologies is up to you. Not every site needs push notifications. (No, really, not every site needs push notifications.) Most sites can benefit from graceful offline handling. Every site can benefit from improved performance via caching.
@@ -242,8 +232,6 @@ The way you choose to use PWA-related technologies is up to you. Not every site 
 If your question is more around whether it makes sense to go PWA or native, [I've got some thoughts on that too](https://www.smashingmagazine.com/2018/02/native-and-pwa-choices-not-challengers/).
 
 ## Are there any Microsoft PWAs in the works?
-
-{% tweet https://twitter.com/WindowsDocs/status/1042125835883298816 %}
 
 I am aware of a number of Microsoft PWAs that are in the works. [Teams was announced at Build this year](https://www.windowscentral.com/microsoft-announces-teams-progressive-web-app-pwa-preview-windows-10-s). [Office.com](https://www.office.com/) is on a path to becoming a PWA now too.
 
