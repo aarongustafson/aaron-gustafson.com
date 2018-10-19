@@ -245,6 +245,9 @@ accessibility:
 - 2018-09-20-the-state-of-fieldset-interoperability.markdown
 - 2018-09-20-much-ado-about-aria.markdown
 - 2018-10-03-should-you-use-alt-text-or-a-caption-48311e259ded.markdown
+- 2018-10-19-the-dialog-element.markdown
+- 2018-10-19-all-technology-is-assistive.markdown
+- 2018-10-19-unbutton-buttons.markdown
 WAI-ARIA:
 - 2014-11-05-aria-quicktip-labelledby-vs-describedby.markdown
 user experience:
@@ -367,6 +370,7 @@ performance:
 - 2018-09-14-the-developer-experience-bait-and-switch.markdown
 - 2018-09-17-2018-09-06-chromes-noscript-intervention.markdown
 - 2018-10-03-how-to-build-a-lowtech-website.markdown
+- 2018-10-19-performance-budgets.markdown
 forms:
 - 2015-02-23-consider-how-your-forms-read.markdown
 - 2015-05-05-slides-from-my-talk-at-number-msedgesummit.markdown
@@ -378,6 +382,7 @@ forms:
 - 2017-10-31-web-form-conundrum-disabled-or-read-only.markdown
 - 2018-08-31-best-practices-for-mobile-form-design.markdown
 - 2018-10-03-designing-a-textbox-unabridged.markdown
+- 2018-10-19-unbutton-buttons.markdown
 content:
 - 2015-02-23-consider-how-your-forms-read.markdown
 - 2015-12-02-avoiding-linkrot-in-print-with-the-help-of-perma-dot-cc.markdown
@@ -418,6 +423,7 @@ HTML:
 - 2018-09-10-building-websites-for-safari-reader-mode-and-other-reading-apps-1562913c86c9.markdown
 - 2018-09-10-describing-aria-describedby.markdown
 - 2018-09-20-the-state-of-fieldset-interoperability.markdown
+- 2018-10-19-the-dialog-element.markdown
 URLs:
 - 2015-05-18-url-inception.markdown
 planning:
@@ -489,6 +495,7 @@ progressive web apps:
 - 2018-09-14-progressive-web-apps-moving-mainstream-as-twitter-makes-its-mobile-site-the-main-one.markdown
 - 2018-10-16-pwa-qa.markdown
 - 2017-05-03-PWAs-and-desktop.markdown
+- 2018-10-19-even-need-app-best-user-experience-asks-ajay-datta.markdown
 windows:
 - 2016-11-02-mac-like-special-characters-in-windows.markdown
 - 2017-05-24-progressive-web-apps-and-the-windows-ecosystem.markdown
@@ -517,6 +524,7 @@ microsoft:
 technology:
 - 2017-11-09-we-can-truly-transform-peoples-lives.markdown
 - 2018-10-03-how-to-build-a-lowtech-website.markdown
+- 2018-10-19-agents-of-automation.markdown
 chrome:
 - 2017-04-12-using-the-chrome-devtools-new-code-coverage-feature-ca96c3dddcaf.markdown
 AMP:
