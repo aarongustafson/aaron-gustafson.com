@@ -87,6 +87,11 @@ RewriteRule ^amp/(.*)$ $1 [L,R=301]
 # Moving Tags
 RewriteRule ^notebook/tags/(.*)$ tags/$1 [L,R=301]
 
+# Moved Tags
+RewriteRule ^tags/.*-forms/?$ tags/forms/ [L,R=301]
+RewriteRule ^tags/css3/?$ tags/css/ [L,R=301]
+RewriteRule ^tags/pwa/?$ tags/progressive-web-apps/ [L,R=301]
+
 # Old Links in Notebook directory
 RewriteCond %{REQUEST_URI} ^notebook/
 RewriteCond %{REQUEST_URI} !^notebook/links/

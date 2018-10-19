@@ -2,7 +2,7 @@
 title: "PWAs + Desktop = Equity, Opportunity, and Reliability"
 date: 2017-05-03 10:37:17 -0400
 comments: true
-tags: ["progressive enhancement","PWA"]
+tags: ["progressive enhancement", "progressive web apps"]
 description: "PWAs enable us to provide a consistent experience *and* give us the ability to mitigate network issues, making a big difference for a lot of people regardless of the device they’re using."
 crosspost_to_medium: true
 ---
