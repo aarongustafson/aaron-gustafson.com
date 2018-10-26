@@ -4,39 +4,39 @@
 
 @include breakup-breakpoint( "global" ) {
 
-	.pagination {
-		
-		@include rem( margin-bottom, $default-spacing );
-		
-		text-align: center;
+  .pagination {
+    
+    @include rem( margin-bottom, $default-spacing );
+    
+    text-align: center;
 
-		&__pages {
-			@include rem( margin, 0 $default-spacing );
-		}
+    &__pages {
+      @include rem( margin, 0 $default-spacing );
+    }
 
-		#aaron-gustafson_com & a {
-			background: $color-text-light;
-			color: $color-white;
-			text-shadow: none;
+    #aaron-gustafson_com & a {
+      background: $color-text-light;
+      color: $color-white;
+      text-shadow: none;
 
-			border: 1px solid $color-text;
-			border-radius: 3px;
-			@include rem( padding, 0 5 );
+      border: 1px solid $color-text;
+      border-radius: 3px;
+      @include rem( padding, 0 5 );
 
-			&:hover,
-			&:focus {
-				background: $color-green-dark;
-			}
-		}
+      &:hover,
+      &:focus {
+        background: $color-green-dark;
+      }
+    }
 
-	}
+  }
 
 }
 
 @include breakup-breakpoint( "medium" ) {
 
-	.pagination {
-		margin-left: 33%;
-	}
+  .pagination {
+    margin-left: 33%;
+  }
 
 }

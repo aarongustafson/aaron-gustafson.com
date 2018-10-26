@@ -250,10 +250,10 @@ $breakup-placeholders: () !default;
             }
         }
     }
-	// If placeholder already exists, just warn the user
-	@else
-	{
-		@warn "Placeholder `#{$name}` already exists.";
+  // If placeholder already exists, just warn the user
+  @else
+  {
+    @warn "Placeholder `#{$name}` already exists.";
     }
 }
 

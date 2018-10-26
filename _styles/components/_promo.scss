@@ -12,60 +12,60 @@ $promo-background-color: lighten( #7FB843, 45% );
         background: $promo-background-color;
         border: 1px solid darken( $promo-background-color, 5% );
         
-    	@include rem( margin, ( $default-spacing * 2 ) ( 0 - $default-spacing ) );
-    	@include rem( padding, $default-spacing );
+      @include rem( margin, ( $default-spacing * 2 ) ( 0 - $default-spacing ) );
+      @include rem( padding, $default-spacing );
 
-    	a:link,
-    	a:visited {
-			@include underline( $color-link, 1px, 1px, $promo-background-color );
-    	}
+      a:link,
+      a:visited {
+      @include underline( $color-link, 1px, 1px, $promo-background-color );
+      }
 
-    	a:hover,
-    	a:focus,
-    	a:active {
-    		@include underline( $color-link-hover, 1px, 1px, $promo-background-color );
-    	}
+      a:hover,
+      a:focus,
+      a:active {
+        @include underline( $color-link-hover, 1px, 1px, $promo-background-color );
+      }
 
-    	html.wf-active & {
-    		a:link,
-    		a:visited {
-				@include underline( $color-link, 2px, 1px, $promo-background-color );
-    		}
-			a:hover,
-    		a:focus,
-    		a:active {
-    			@include underline( $color-link-hover, 2px, 1px, $promo-background-color );
-    		}
-    	}
-		
-		// Image variant
-		&--image {
-			@include rem( padding-right, ( $default-spacing * 2 ) + $promo-image-width );
-			position: relative;
-		}
+      html.wf-active & {
+        a:link,
+        a:visited {
+        @include underline( $color-link, 2px, 1px, $promo-background-color );
+        }
+      a:hover,
+        a:focus,
+        a:active {
+          @include underline( $color-link-hover, 2px, 1px, $promo-background-color );
+        }
+      }
+    
+    // Image variant
+    &--image {
+      @include rem( padding-right, ( $default-spacing * 2 ) + $promo-image-width );
+      position: relative;
+    }
 
-    	&__image {
-		    
-		    display: block;
-		    width: 110px;
-		    height: auto;
-		    
-			transform: rotate(5deg);
-		    
-		    position: absolute;
-		    @include rem( right, $default-spacing );
-		    top: 50%;
-		    margin-top: #{ 0 - ( $promo-image-height / 2 ) }px;
-		    
-    	}
+      &__image {
+        
+        display: block;
+        width: 110px;
+        height: auto;
+        
+      transform: rotate(5deg);
+        
+        position: absolute;
+        @include rem( right, $default-spacing );
+        top: 50%;
+        margin-top: #{ 0 - ( $promo-image-height / 2 ) }px;
+        
+      }
 
-    	&__copy {
-    		margin: 0;
-    	}
+      &__copy {
+        margin: 0;
+      }
 
-    	& + hr {
-    		display: none;
-    	}
+      & + hr {
+        display: none;
+      }
 
     }
 

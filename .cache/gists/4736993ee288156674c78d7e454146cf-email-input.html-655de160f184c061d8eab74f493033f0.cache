@@ -14,7 +14,7 @@
       </tr>
       <tr>
         <td id="file-email-input-html-L2" class="blob-num js-line-number" data-line-number="2"></td>
-        <td id="file-email-input-html-LC2" class="blob-code blob-code-inner js-file-line">	     <span class="pl-e">required</span> <span class="pl-e">aria-required</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>true<span class="pl-pds">&quot;</span></span>&gt;</td>
+        <td id="file-email-input-html-LC2" class="blob-code blob-code-inner js-file-line">       <span class="pl-e">required</span> <span class="pl-e">aria-required</span>=<span class="pl-s"><span class="pl-pds">&quot;</span>true<span class="pl-pds">&quot;</span></span>&gt;</td>
       </tr>
 </table>
 

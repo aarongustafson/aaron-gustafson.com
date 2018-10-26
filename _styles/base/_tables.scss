@@ -10,7 +10,7 @@
     
         @include rem( margin, $margin-default );
         width: 100%;
-    	min-width: 100px;
+      min-width: 100px;
     
         thead {
 
@@ -23,12 +23,12 @@
             th {
                 font-weight: bold;
 
-    			// Fix for bad WYSIWYG
-    			p {
-    				font-weight: bold;
-    				display: inline;
-    				margin: 0;
-    			}
+          // Fix for bad WYSIWYG
+          p {
+            font-weight: bold;
+            display: inline;
+            margin: 0;
+          }
             }
         }
     
@@ -55,10 +55,10 @@
                 margin-bottom: 0;
             }
 
-    		// chances are, these were intended as headers
-    		&[colspan] {
-    			font-weight: bold;
-    		}
+        // chances are, these were intended as headers
+        &[colspan] {
+          font-weight: bold;
+        }
         }
     }
 }
@@ -68,48 +68,48 @@
 @include breakup-media( "only screen and (max-width: 770px)" ) {
         
     .layout-container__primary table {
-		border: 0;
-		padding-bottom: 0;
-		display: block;
-		width: 100%;
+    border: 0;
+    padding-bottom: 0;
+    display: block;
+    width: 100%;
 
-		caption {
-			display: block;
-		}
-
-		thead {
-			display: none;
-		}
-
-		tbody,
-		tr,
-		th,
-		td {
-			border: 0;
-			display: block;
-			padding: 0;
-			text-align: left;
-		}
-
-		tr {
-			@include rem( margin, $margin-default );
-		}
-
-		th[data-title]:before,
-		td[data-title]:before {
-			content: attr(data-title) ":\00A0";
-			font-weight: bold;
-		}
-
-		th:not([data-title]) {
-			font-weight: bold;
-		}
-
-		td:empty {
-		    display: none;
-		}
+    caption {
+      display: block;
     }
-	
+
+    thead {
+      display: none;
+    }
+
+    tbody,
+    tr,
+    th,
+    td {
+      border: 0;
+      display: block;
+      padding: 0;
+      text-align: left;
+    }
+
+    tr {
+      @include rem( margin, $margin-default );
+    }
+
+    th[data-title]:before,
+    td[data-title]:before {
+      content: attr(data-title) ":\00A0";
+      font-weight: bold;
+    }
+
+    th:not([data-title]) {
+      font-weight: bold;
+    }
+
+    td:empty {
+        display: none;
+    }
+    }
+  
 }
     
 @include breakup-breakpoint( "medium" ) {

@@ -11,7 +11,7 @@ layout: null
             "title": {{ post.title | smartify | jsonify }},
             "content_html": {{ post.content | jsonify }},
             "url": "{{ site.url }}{{ post.url }}",
-			{% if post.excerpt and post.excerpt != empty %}"summary": {{ post.excerpt | smartify | jsonify }},{% endif %}
+      {% if post.excerpt and post.excerpt != empty %}"summary": {{ post.excerpt | smartify | jsonify }},{% endif %}
             "date_published": "{{ post.date }}"
         }{% unless forloop.last == true %},{% endunless %}
 {% endfor %}

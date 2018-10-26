@@ -36,16 +36,16 @@
 
     // Superscript & subscript
     sub, sup {
-    	@include rem( font-size, $font-size-tiny );
-    	font-style: inherit;
-    	font-weight: inherit;
-    	position: relative;
+      @include rem( font-size, $font-size-tiny );
+      font-style: inherit;
+      font-weight: inherit;
+      position: relative;
     }
     sub {
-    	bottom: -1em;
+      bottom: -1em;
     }
     sup {
-    	bottom: 1em;
+      bottom: 1em;
     }
 
 

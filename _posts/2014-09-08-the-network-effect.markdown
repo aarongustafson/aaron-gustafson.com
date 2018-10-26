@@ -11,9 +11,9 @@ redirect_from: /notebook/2014/the-network-effect/
 <cite>Ars Technica</cite> revealed today that [Comcast is injecting self-promotional advertising into web pages delivered via it’s Wi-Fi hotspots](http://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/):
 
 <blockquote cite="http://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/">
-	<p>A Comcast spokesman told Ars the program began months ago. One facet of it is designed to alert consumers that they are connected to Comcast's Xfinity service. Other ads remind Web surfers to download Xfinity apps, Comcast spokesman Charlie Douglas told Ars in telephone interviews.</p>
+  <p>A Comcast spokesman told Ars the program began months ago. One facet of it is designed to alert consumers that they are connected to Comcast's Xfinity service. Other ads remind Web surfers to download Xfinity apps, Comcast spokesman Charlie Douglas told Ars in telephone interviews.</p>
 </blockquote>
-	
+  
 I wish I could say this is surprising, but it’s not: Any service that routes your content has the opportunity to modify the response being returned. Comcast is exploiting that opportunity and injecting JavaScript that, in turn, injects the ads.
 
 <!-- more -->
@@ -29,7 +29,7 @@ We need to develop [the 1964 Chrysler Imperial](http://en.wikipedia.org/wiki/Dem
 I’ll leave you with this scary quote from the <cite>Ars</cite> piece:
 
 <blockquote cite="http://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/">
-	<p>Security expert Dan Kaminsky said in an e-mail that JavaScript injection has the potential to break “all sorts of stuff, in that you no longer know as a website developer precisely what code is running in browsers out there. You didn't send it, but your customers received it.”</p>
+  <p>Security expert Dan Kaminsky said in an e-mail that JavaScript injection has the potential to break “all sorts of stuff, in that you no longer know as a website developer precisely what code is running in browsers out there. You didn't send it, but your customers received it.”</p>
 </blockquote>
-	
+  
 Hooray!

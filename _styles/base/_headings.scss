@@ -8,17 +8,17 @@
 
         clear: both;
 
-    	font-family: $font-stack-serif;
-    	font-weight: $font-weight-serif-bold;
-    	line-height: $line-height-headings;
-    	
-    	.wf-active & {
-        	word-spacing: 2px;
-    	}
-    	
-    	& + * {
-    	    @include rem( margin-top, $default-spacing / 2 );
-    	}
+      font-family: $font-stack-serif;
+      font-weight: $font-weight-serif-bold;
+      line-height: $line-height-headings;
+      
+      .wf-active & {
+          word-spacing: 2px;
+      }
+      
+      & + * {
+          @include rem( margin-top, $default-spacing / 2 );
+      }
 
     }
 
@@ -40,19 +40,19 @@
 @include breakup-breakpoint( "print" ) {
 
     h1, h2, h3, h4, h5, h6 {
-    	page-break-inside: avoid;
-    	page-break-after: avoid;
+      page-break-inside: avoid;
+      page-break-after: avoid;
 
-    	a[href]:after {
-    		display: block;
-    		margin-left: 0;
-    		margin-bottom: 10pt;
-    	}
-    	a[href^="#"]:after,
-    	a[href^="mailto:"]:after,
-    	a[href^="tel:"]:after {
-    		display: none;
-    	}
+      a[href]:after {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 10pt;
+      }
+      a[href^="#"]:after,
+      a[href^="mailto:"]:after,
+      a[href^="tel:"]:after {
+        display: none;
+      }
     }    
 
 }

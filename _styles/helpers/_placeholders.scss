@@ -18,20 +18,20 @@
 
 // Default Text
 @include breakup-create-placeholder( text ) {
-	@include rem( font-size, $font-size-body );
+  @include rem( font-size, $font-size-body );
     font-weight: normal;
-	line-height: $line-height-default;
+  line-height: $line-height-default;
 
-	.wf-active & {
-    	word-spacing: 2px;
-	}
+  .wf-active & {
+      word-spacing: 2px;
+  }
 }
 
 // Remove list formatting
 @include breakup-create-placeholder( delist ) {
-	list-style: none;
-	margin-left: 0;
-	padding-left: 0;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 // Hidden
@@ -60,28 +60,28 @@
 
 // Font Smoothing
 @include breakup-create-placeholder( font-smoothing ) {
-	-webkit-font-smoothing: antialiased;
-	-moz-font-smoothing: antialiased;
-	-ms-font-smoothing: antialiased;
-	-o-font-smoothing: antialiased;
-	font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
 }
 
 // Ligatures
 @include breakup-create-placeholder( ligatures ) {
-	-webkit-font-feature-settings: "liga";
-	-moz-font-feature-settings: "liga=1";
-	-moz-font-feature-settings: "liga";
-	-ms-font-feature-settings: "liga" 1;
-	-o-font-feature-settings: "liga";
-	font-feature-settings: "liga";
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
 }
 
 // Overflow hidden
 @include breakup-create-placeholder( overflow-hide ) {
-	overflow: hidden;
-	text-indent: -999em;
-	white-space: nowrap;
+  overflow: hidden;
+  text-indent: -999em;
+  white-space: nowrap;
 }
 
 // Small Caps
@@ -90,16 +90,16 @@
     @include rem( font-size, $font-size-small );
     font-family: $font-stack-sansserif;
     font-weight: $font-weight-sansserif-bold;
-	letter-spacing: 1px;
-	letter-spacing: ie8( 2px );
-	text-transform: uppercase;
-	word-spacing: 1px;
+  letter-spacing: 1px;
+  letter-spacing: ie8( 2px );
+  text-transform: uppercase;
+  word-spacing: 1px;
 
 }
 
 // Hardware Acceleration
 @include breakup-create-placeholder( hardware-accelerate ) {
-	transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 
 // Clearfix

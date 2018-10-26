@@ -6,10 +6,10 @@ category: talks
 tags: [accessibility,"progressive enhancement"]
 conferences: [110,107]
 video:
-	event: 107
-	link: https://channel9.msdn.com/events/WebPlatformSummit/edgesummit2016/ES1612
-	embed: https://channel9.msdn.com/Events/WebPlatformSummit/edgesummit2016/ES1612/player
-	download: http://video.ch9.ms/ch9/649d/8a8c2fc6-e450-4887-a767-f74948bb649d/ES1612InclusiveDesign_mid.mp4
+  event: 107
+  link: https://channel9.msdn.com/events/WebPlatformSummit/edgesummit2016/ES1612
+  embed: https://channel9.msdn.com/Events/WebPlatformSummit/edgesummit2016/ES1612/player
+  download: http://video.ch9.ms/ch9/649d/8a8c2fc6-e450-4887-a767-f74948bb649d/ES1612InclusiveDesign_mid.mp4
 text: /notebook/the-web-should-just-work-for-everyone/
 ---
 

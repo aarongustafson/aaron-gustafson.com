@@ -2,19 +2,19 @@
     Variables
 \*------------------------------------*/
 
-/*	Debug controls
-	========================================================================== */
+/*  Debug controls
+  ========================================================================== */
 $debug-grid: false; // true;
 
 
-/*	URLs
-	========================================================================== */
+/*  URLs
+  ========================================================================== */
 $domain: "https://www.aaron-gustafson.com";
 $cdn_domain: ""; //"https://e.ed-cdn.com";
 
 
-/*	Breakpoint Management
-	========================================================================== */
+/*  Breakpoint Management
+  ========================================================================== */
 $bp-tiny: 320;
 $bp-tiny-em: 20em;
 $bp-small: 460;
@@ -34,8 +34,8 @@ $breakup-breakpoints: (
 );
 
 
-/*	Grid Management
-	========================================================================== */
+/*  Grid Management
+  ========================================================================== */
 $grid-full-column-sizes: "( 60px 20px )";
 $grid-breakpoints: (
     "tiny":     3,
@@ -45,16 +45,16 @@ $grid-breakpoints: (
 );
 
 
-/*	Legacy support
-	========================================================================== */
+/*  Legacy support
+  ========================================================================== */
 $legacy-support-for-ie6: true;
 $legacy-support-for-ie7: true;
 $legacy-support-for-ie8: true;
 $support-for-original-webkit-gradients: true;
 
 
-/*	Typography
-	========================================================================== */
+/*  Typography
+  ========================================================================== */
 // Font Stacks
 $font-stack-sansserif: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $font-stack-serif: Cambria, Georgia, serif;
@@ -93,8 +93,8 @@ $margin-default: 0 0 $default-spacing;
 // table spacing
 $table-spacing: 15;
 
-/*	Colors
-	========================================================================== */
+/*  Colors
+  ========================================================================== */
 // Color Names
 $color-black: #2c2825;
 $color-white: #fff;
@@ -117,11 +117,11 @@ $color-link-hover: $color-green-mid;
 $color-border: $color-grey-light;
 $color-rule: $color-grey-light;
 
-/*	Images
-	========================================================================== */
+/*  Images
+  ========================================================================== */
 $css_images: "/c/i";
 
-/*	Defaults
-	========================================================================== */
+/*  Defaults
+  ========================================================================== */
 $default-box-shadow: 1px 1px 0 $color-rule;
 $default-transition: .25s ease;

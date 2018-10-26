@@ -60,7 +60,7 @@ task :disquscomments do
     api_key = site["comments"]["disqus"]["api_key"]
 
     uri = "http://disqus.com/api/3.0/threads/listPosts.json?forum=" \
-		    "#{siteid}&thread:ident=#{ident}&api_key=#{api_key}&limit=100"
+        "#{siteid}&thread:ident=#{ident}&api_key=#{api_key}&limit=100"
     url = URI.parse(uri)
     http = Net::HTTP.new(url.host, url.port)
     request = Net::HTTP::Get.new(url.request_uri)

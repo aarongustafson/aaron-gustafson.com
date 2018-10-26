@@ -14,23 +14,23 @@ Today is Martin Luther King Day in the United States, so I thought I’d take a 
 According to [<cite class="book">Merriam Webster</cite>](http://www.merriam-webster.com/dictionary/egalitarianism), egalitarianism is:
 
 <blockquote>
-	<ol>
-		<li>a belief in human equality especially with respect to social, political, and economic affairs;</li>
-		<li>a social philosophy advocating the removal of inequalities among people.</li>
-	</ol>
+  <ol>
+    <li>a belief in human equality especially with respect to social, political, and economic affairs;</li>
+    <li>a social philosophy advocating the removal of inequalities among people.</li>
+  </ol>
 </blockquote>
 
 It’s a simple philosophy inspired by [the Golden Rule](http://en.wikipedia.org/wiki/Golden_Rule), an ethical code which is central to most major religions:
 
 <dl>
-	<dt>Buddhism</dt>
-	<dd>Hurt not others in ways that you yourself would find harmful.</dd>
-	<dt>Christianity</dt>
-	<dd>Do unto others as you would have  them do unto you.</dd>
-	<dt>Islam</dt>
-	<dd>No one of you is a believer until he desires for his brother that which he desires for himself.</dd>
-	<dt>Judaism</dt>
-	<dd>What is hateful to you, do not to your fellow man. That is the entire law; all the rest is commentary.</dd>
+  <dt>Buddhism</dt>
+  <dd>Hurt not others in ways that you yourself would find harmful.</dd>
+  <dt>Christianity</dt>
+  <dd>Do unto others as you would have  them do unto you.</dd>
+  <dt>Islam</dt>
+  <dd>No one of you is a believer until he desires for his brother that which he desires for himself.</dd>
+  <dt>Judaism</dt>
+  <dd>What is hateful to you, do not to your fellow man. That is the entire law; all the rest is commentary.</dd>
 </dl>
 
 Heck, even Confucius said “Never impose on others what you would not choose for yourself”.

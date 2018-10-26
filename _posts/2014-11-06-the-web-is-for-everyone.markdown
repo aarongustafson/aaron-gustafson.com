@@ -53,7 +53,7 @@ Wired connectivity is a bit lower: 30 for every 100 in the U.S. and 33 for every
 
 <figure id="fig-2014-11-06-04" class="media-container">
 {% adaptive_image /i/posts/2014-11-06/04-lg.jpg alt="A bar chart depicting the cost range, per megabit per month, in the U.S. and Canada." %}
-		 >
+     >
 </figure>
 
 Connectivity is relatively cheap for you Canadians as well. You pay somewhere in the neighborhood of 39¢-$9.86 per megabyte per month. In the U.S., fees range widely from 53¢ to a whopping $41.70 per megabyte per month. <small>[(source)](http://www.oecd.org/sti/broadband/oecdbroadbandportal.htm)</small>

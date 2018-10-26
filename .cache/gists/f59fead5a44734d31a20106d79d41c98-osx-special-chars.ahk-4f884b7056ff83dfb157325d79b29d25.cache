@@ -14,11 +14,11 @@
       </tr>
       <tr>
         <td id="file-osx-special-chars-ahk-L2" class="blob-num js-line-number" data-line-number="2"></td>
-        <td id="file-osx-special-chars-ahk-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-en">!VKC0SC029</span>::<span class="pl-k">Return</span><span class="pl-c"><span class="pl-c"> 	;</span> grave -&gt; the grave ` accent gave some probs, used the virtualkey + scancode instead</span></td>
+        <td id="file-osx-special-chars-ahk-LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-en">!VKC0SC029</span>::<span class="pl-k">Return</span><span class="pl-c"><span class="pl-c">   ;</span> grave -&gt; the grave ` accent gave some probs, used the virtualkey + scancode instead</span></td>
       </tr>
       <tr>
         <td id="file-osx-special-chars-ahk-L3" class="blob-num js-line-number" data-line-number="3"></td>
-        <td id="file-osx-special-chars-ahk-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-en">!e</span>::<span class="pl-k">Return</span><span class="pl-c"><span class="pl-c">         	;</span> acute</span></td>
+        <td id="file-osx-special-chars-ahk-LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-en">!e</span>::<span class="pl-k">Return</span><span class="pl-c"><span class="pl-c">           ;</span> acute</span></td>
       </tr>
       <tr>
         <td id="file-osx-special-chars-ahk-L4" class="blob-num js-line-number" data-line-number="4"></td>
@@ -26,7 +26,7 @@
       </tr>
       <tr>
         <td id="file-osx-special-chars-ahk-L5" class="blob-num js-line-number" data-line-number="5"></td>
-        <td id="file-osx-special-chars-ahk-LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-en">!t</span>::<span class="pl-k">Return</span><span class="pl-c"><span class="pl-c">         	;</span> tilde</span></td>
+        <td id="file-osx-special-chars-ahk-LC5" class="blob-code blob-code-inner js-file-line"><span class="pl-en">!t</span>::<span class="pl-k">Return</span><span class="pl-c"><span class="pl-c">           ;</span> tilde</span></td>
       </tr>
       <tr>
         <td id="file-osx-special-chars-ahk-L6" class="blob-num js-line-number" data-line-number="6"></td>
@@ -204,7 +204,7 @@
       </tr>
       <tr>
         <td id="file-osx-special-chars-ahk-L49" class="blob-num js-line-number" data-line-number="49"></td>
-        <td id="file-osx-special-chars-ahk-LC49" class="blob-code blob-code-inner js-file-line">        }		</td>
+        <td id="file-osx-special-chars-ahk-LC49" class="blob-code blob-code-inner js-file-line">        }    </td>
       </tr>
       <tr>
         <td id="file-osx-special-chars-ahk-L50" class="blob-num js-line-number" data-line-number="50"></td>
@@ -495,7 +495,7 @@
       </tr>
       <tr>
         <td id="file-osx-special-chars-ahk-L121" class="blob-num js-line-number" data-line-number="121"></td>
-        <td id="file-osx-special-chars-ahk-LC121" class="blob-code blob-code-inner js-file-line"><span class="pl-en">*!/</span>::altShift(<span class="pl-s"><span class="pl-pds">&quot;</span>÷<span class="pl-pds">&quot;</span></span>,<span class="pl-s"><span class="pl-pds">&quot;</span>¿<span class="pl-pds">&quot;</span></span>)	</td>
+        <td id="file-osx-special-chars-ahk-LC121" class="blob-code blob-code-inner js-file-line"><span class="pl-en">*!/</span>::altShift(<span class="pl-s"><span class="pl-pds">&quot;</span>÷<span class="pl-pds">&quot;</span></span>,<span class="pl-s"><span class="pl-pds">&quot;</span>¿<span class="pl-pds">&quot;</span></span>)  </td>
       </tr>
       <tr>
         <td id="file-osx-special-chars-ahk-L122" class="blob-num js-line-number" data-line-number="122"></td>

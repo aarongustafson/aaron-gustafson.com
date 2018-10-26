@@ -1,28 +1,28 @@
 {
-	"id": "{{ post.id }}",
-	
-	{% capture prepend_title %}{{ include.post_prepend_title }}{% endcapture %}
-	"title": {{ post.title | prepend:prepend_title | smartify | strip_html | normalize_whitespace | jsonify }},
-	
-	{% if post.excerpt and post.excerpt != empty %}"summary": {{ post.excerpt | smartify | jsonify }},{% endif %}
-	"content_html": {{ post.content | jsonify }},
-	
-	"url": "{{ site.url }}{{ post.url }}",
-	{% if post.ref_url %}"external_url": "{{ post.ref_url }}",{% endif %}
-	
-	{% for tag in post.tags %}
-		{% if forloop.first %}"tags": [{% endif %}
-			"{{ tag }}"{% unless forloop.last == true %},{% endunless %}
-		{% if forloop.last %}],{% endif %}
-	{% endfor %}
-	
-	{% assign post_image = post.image.path | default: post.image %}
-	{% if post_image %}
-		{% unless post_image contains "://" %}
-			{% assign post_image = post_image | absolute_url  %}
-		{% endunless %}
-		"image": "{{ post_image }}",
-	{% endif %}
-	
-	"date_published": "{{ post.date | date_to_xmlschema }}"
+  "id": "{{ post.id }}",
+  
+  {% capture prepend_title %}{{ include.post_prepend_title }}{% endcapture %}
+  "title": {{ post.title | prepend:prepend_title | smartify | strip_html | normalize_whitespace | jsonify }},
+  
+  {% if post.excerpt and post.excerpt != empty %}"summary": {{ post.excerpt | smartify | jsonify }},{% endif %}
+  "content_html": {{ post.content | jsonify }},
+  
+  "url": "{{ site.url }}{{ post.url }}",
+  {% if post.ref_url %}"external_url": "{{ post.ref_url }}",{% endif %}
+  
+  {% for tag in post.tags %}
+    {% if forloop.first %}"tags": [{% endif %}
+      "{{ tag }}"{% unless forloop.last == true %},{% endunless %}
+    {% if forloop.last %}],{% endif %}
+  {% endfor %}
+  
+  {% assign post_image = post.image.path | default: post.image %}
+  {% if post_image %}
+    {% unless post_image contains "://" %}
+      {% assign post_image = post_image | absolute_url  %}
+    {% endunless %}
+    "image": "{{ post_image }}",
+  {% endif %}
+  
+  "date_published": "{{ post.date | date_to_xmlschema }}"
 }

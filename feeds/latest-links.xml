@@ -4,12 +4,12 @@ layout: null
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/css" href="{{ '/c/feed.min.css' | absolute_url }}" ?>
 <feed xmlns="http://www.w3.org/2005/Atom" {% if site.lang %}xml:lang="{{ site.lang }}"{% endif %}>
-	
-	{% include feeds/preamble.xml append_title=": Latest Links" %}
+  
+  {% include feeds/preamble.xml append_title=": Latest Links" %}
 
-	{% assign links = (site.links | sort: 'date') | reverse %}
-	{% for post in links limit: 20 %}
-		{% include feeds/post.xml %}
-	{% endfor %}
+  {% assign links = (site.links | sort: 'date') | reverse %}
+  {% for post in links limit: 20 %}
+    {% include feeds/post.xml %}
+  {% endfor %}
 
 </feed>

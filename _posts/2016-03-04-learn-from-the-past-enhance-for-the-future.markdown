@@ -98,11 +98,11 @@ Facebook’s engineers reached out to some of the users who had reported these p
 
 The existing photo reporting tool had not done a good job of accounting for these more personal reasons for wanting a photo removed, so the Facebook engineers went to work. They added a step that asked *How does this photo make you feel?* The options were simple:
 
-*	Embarrassing
-*	Upsetting
-*	Saddening
-*	Bad Photo
-*	Other
+* Embarrassing
+* Upsetting
+* Saddening
+* Bad Photo
+* Other
 
 The “other” option also provided a free-response text field to fill in.
 
@@ -110,9 +110,9 @@ With this system in place, they found that 50% of reporters who answered the new
 
 What the Facebook team realized was that people were not identifying with the “embarrassing” text (or may have even thought it was referring to them, rather than assuming an implied “It’s”). A subtle shift in language was needed, so they changed the label to *Please describe the photo* and they updated the options to mirror how people actually talk:
 
-*	It’s embarrassing
-*	It’s a bad photo of me
-*	It makes me sad
+* It’s embarrassing
+* It’s a bad photo of me
+* It makes me sad
 
 With this subtle change, they were able to increase the percentage of photo reporters who chose one of the options provided to a whopping 78%.
 

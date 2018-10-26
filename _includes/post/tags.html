@@ -1,9 +1,9 @@
 {% for tag in include.tags %}
-	{% if forloop.first %}
-		<span class="post__tags">
-	{% endif %}
-	<a class="post__tag" href="{{ site.tag_page_dir }}{{ tag | slugify }}">{{ tag }}</a>
-	{% if forloop.last %}
-		</span>
-	{% endif %}
+  {% if forloop.first %}
+    <span class="post__tags">
+  {% endif %}
+  <a class="post__tag" href="{{ site.tag_page_dir }}{{ tag | slugify }}">{{ tag }}</a>
+  {% if forloop.last %}
+    </span>
+  {% endif %}
 {% endfor %}

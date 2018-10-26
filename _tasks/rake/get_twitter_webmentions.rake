@@ -16,47 +16,47 @@ task :get_twitter_webmentions do |t, args|
   count = 0
 
   if File.exists?(cache_file)
-	  cached_webmentions = open(cache_file) { |f| YAML.load(f) }
-	else
-	  cached_webmentions = {}
-	end
+    cached_webmentions = open(cache_file) { |f| YAML.load(f) }
+  else
+    cached_webmentions = {}
+  end
 
   client = Twitter::REST::Client.new do |config|
-  	config.consumer_key        = ENV['TWITTER_CONSUMER_KEY']
-  	config.consumer_secret     = ENV['TWITTER_CONSUMER_SECRET']
-  	config.access_token        = ENV['TWITTER_ACCESS_TOKEN']
-  	config.access_token_secret = ENV['TWITTER_ACCESS_SECRET']
+    config.consumer_key        = ENV['TWITTER_CONSUMER_KEY']
+    config.consumer_secret     = ENV['TWITTER_CONSUMER_SECRET']
+    config.access_token        = ENV['TWITTER_ACCESS_TOKEN']
+    config.access_token_secret = ENV['TWITTER_ACCESS_SECRET']
   end
 
   client.search("aaron-gustafson.com -rt").collect do |tweet|
-  	
-  	target = false
-  	tweet.urls.each do |url|
+    
+    target = false
+    tweet.urls.each do |url|
       url = url.url.to_s
       url = `curl -w "%{url_effective}\n" -L -s -S $URL -o /dev/null #{url}`
-	  	if url.include? jekyll_config['url']
-	  		target = URI::parse( url.gsub("\n",'') )
+      if url.include? jekyll_config['url']
+        target = URI::parse( url.gsub("\n",'') )
         target.fragment = target.query = nil
         target = target.to_s
-	  		break
-	  	end
-  	end
+        break
+      end
+    end
 
-  	if ! target
-  		next
-  	end
-  	# puts target
+    if ! target
+      next
+    end
+    # puts target
 
-  	id = tweet.id
+    id = tweet.id
     # puts id
-  	content = tweet.text
+    content = tweet.text
 
-  	permalink = tweet.url.to_s
-  	# puts permalink
-  	
-  	pubdate = tweet.created_at
-  	the_date = pubdate.strftime("%s")
-  	# puts the_date
+    permalink = tweet.url.to_s
+    # puts permalink
+    
+    pubdate = tweet.created_at
+    the_date = pubdate.strftime("%s")
+    # puts the_date
 
     # Make sure we have the target
     if ! cached_webmentions.has_key? target
@@ -75,14 +75,14 @@ task :get_twitter_webmentions do |t, args|
       
       webmention = ""
       webmention_classes = "webmention"
-			      
+            
       author_block = ''
       # puts tweet.user
       a_name = tweet.user.name
       a_url = tweet.user.url
       a_photo = tweet.user.profile_image_url_https
       if a_photo
-      	author_block << "<img class=\"webmention__author__photo u-photo\" src=\"#{a_photo}\" alt=\"\" title=\"#{a_name}\">"
+        author_block << "<img class=\"webmention__author__photo u-photo\" src=\"#{a_photo}\" alt=\"\" title=\"#{a_name}\">"
       end
       name_block = "<b class=\"p-name\">#{a_name}</b>"
       author_block << name_block
@@ -97,8 +97,8 @@ task :get_twitter_webmentions do |t, args|
       pubdate_iso = pubdate.strftime("%FT%T%:z")
       pubdate_formatted = pubdate.strftime("%-d %B %Y")
       published_block = "<time class=\"webmention__pubdate dt-published\" datetime=\"#{pubdate_iso}\">#{pubdate_formatted}</time>"
-			
-			meta_block << published_block
+      
+      meta_block << published_block
       meta_block << " | "
       meta_block << "<a class=\"webmention__source u-url\" href=\"#{permalink}\">Permalink</a>"
 
@@ -133,7 +133,7 @@ task :get_twitter_webmentions do |t, args|
 
   # store it all back in the cache
   #puts cached_webmentions.inspect
-	File.open(cache_file, 'w') { |f| YAML.dump(cached_webmentions, f) }
+  File.open(cache_file, 'w') { |f| YAML.dump(cached_webmentions, f) }
 
   puts "Twitter Mebmentions Added: #{count}"
 end

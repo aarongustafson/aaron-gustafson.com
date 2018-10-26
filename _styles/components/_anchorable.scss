@@ -24,19 +24,19 @@
             display: inline-block;
             @include rem( padding, $default-spacing/2 );
             @include rem( width, 15 );
-        	@include rem( height, 15 );
+          @include rem( height, 15 );
             
             path {
-				fill: $color-grey-light;
+        fill: $color-grey-light;
                 transition: fill .5s;
-			}
+      }
         }
         
         &__anchor__text {
-    		@include breakup-placeholder( hidden );
+        @include breakup-placeholder( hidden );
             left: 0;
             bottom: 0;
-		}
+    }
         
         &__anchor {
             background: $color-white;

@@ -8,10 +8,10 @@ body_class: hi
 ---
 
 <section id="hi" class="section section--hi">
-	<div class="layout-container">
-		
-		{% capture about %}{% include about.markdown %}{% endcapture %}
-		{{ about | excerpt | markdownify }}
-		
-	</div>
+  <div class="layout-container">
+    
+    {% capture about %}{% include about.markdown %}{% endcapture %}
+    {{ about | excerpt | markdownify }}
+    
+  </div>
 </section>

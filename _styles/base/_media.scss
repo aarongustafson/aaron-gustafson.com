@@ -15,29 +15,29 @@
     img {
     
         display: block;
-    	max-width: 100%;
-    	height: auto;
+      max-width: 100%;
+      height: auto;
         margin-left: auto;
         margin-right: auto;
-	
-    	&[style] {
+  
+      &[style] {
             width: auto !important;
-        	max-width: 100% !important;
-        	height: auto !important;
-    	}
+          max-width: 100% !important;
+          height: auto !important;
+      }
         
         &[width] {
             width: auto;
         }
-	
+  
     }
     picture {
-    	display: block;
+      display: block;
     }
     // Noscript fallback for picture
     .noscript-picture {
-    	margin: 0;
-    	padding: 0;
+      margin: 0;
+      padding: 0;
     }
     
     // Audio
@@ -59,10 +59,10 @@
     
     figcaption {
         @include rem( font-size, $font-size-caption );
-	    font-family: $font-stack-sansserif;
-	    font-style: italic;
-	    text-align: center;
-	    
+      font-family: $font-stack-sansserif;
+      font-style: italic;
+      text-align: center;
+      
         @include rem( margin-top, $default-spacing / 2 );
     }
 

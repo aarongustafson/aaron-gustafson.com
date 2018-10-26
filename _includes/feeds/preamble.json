@@ -16,7 +16,7 @@
 
 {% if site.author %}
 "author": {
-	"name": "{{ site.author.name | default: site.author }}",
+  "name": "{{ site.author.name | default: site.author }}",
     "url": "{{ site.author.uri }}"
 },
 {% endif %}

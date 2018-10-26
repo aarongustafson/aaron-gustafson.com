@@ -1,5 +1,5 @@
 Hi there.
-	
+  
 My name is Aaron Gustafson and I work on the web.
 
 I am a web standards &amp; accessibility advocate at [Microsoft](https://www.microsoft.com/), where I work closely with the Edge browser team. I also help organizations elegantly tackle the challenges presented by all the crazy devices and screens you see everywhere using [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement) via [Easy Designs](http://easy-designs.net) and [Rosenfeld Media](http://rosenfeldmedia.com/experts/aaron-gustafson/). You’ll often find me on the road, [presenting at conferences and running workshops](http://noti.st/aarongustafson/) across the globe. 

@@ -14,18 +14,18 @@
       "@type": "Person",
       "name": "{{ site.social.name }}",
       "sameAs": [  
-	  	{% for url in site.social.links %}
+      {% for url in site.social.links %}
         "{{url}}"{% unless forloop.last %},{% endunless %}
-		  {% endfor %}
+      {% endfor %}
       ]
    },
    "publisher":{  
       "@type": "Organization",
       "name": "{{ site.social.name }}",
       "logo": {
-  		  "@type": "ImageObject",
-  		  "contentUrl": "{{ site.logo | absolute_url }}",
-  		  "url": "{{ site.url }}"
+        "@type": "ImageObject",
+        "contentUrl": "{{ site.logo | absolute_url }}",
+        "url": "{{ site.url }}"
       }
    },
    "image":{  
