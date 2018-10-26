@@ -1,6 +1,6 @@
 'use strict';
 
-var version = 'v1540592098394:',
+var version = 'v1540596396277:',
   default_avatar = 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&f=y',
   missing_image = 'https://i.imgur.com/oWLuFAa.gif';
 self.addEventListener( 'activate', function( event ){
@@ -201,25 +201,25 @@ self.addEventListener('fetch', function(event) {
 });
 self.addEventListener( 'install', function( event ){
 
-    // console.log( 'WORKER: install event in progress.' );
+  // console.log( 'WORKER: install event in progress.' );
 
-    var offline_assets = [
-        'favicon.png',
-        'c/default.css',
-        'c/advanced.css',
-        'j/main.js',
-        default_avatar,
-        missing_image
-    ];
+  var offline_assets = [
+    '/favicon.png',
+    '/c/default.css',
+    '/c/advanced.css',
+    '/j/main.js',
+    default_avatar,
+    missing_image
+  ];
 
-    event.waitUntil(
-        caches
-            .open(version + 'assets')
-            .then(function( cache ){
-                return cache.addAll( offline_assets );
-            })
-            // .then(function(){
-            //     console.log('WORKER: install completed');
-            // })
+  event.waitUntil(
+    caches
+    .open(version + 'assets')
+    .then(function( cache ){
+      return cache.addAll( offline_assets );
+    })
+    // .then(function(){
+    //     console.log('WORKER: install completed');
+    // })
     );
-});
+  });
