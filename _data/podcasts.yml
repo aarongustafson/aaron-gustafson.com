@@ -1,3 +1,17 @@
+- title: "Episode 68: Progressive Web Apps - Pale Wheat Ale"
+  outlet: "Front End Happy Hour"
+  date: 2018-10-14 00:00:00 +0000
+  url: http://frontendhappyhour.com/episodes/progressive-web-apps-pale-wheat-ale/
+  description: "Progressive Web Apps have been hailed as the next big leap forward in building web applications. In this episode we’re joined by Aaron Gustafson from Microsoft to talk all about PWAs and the future of the web."
+  embed: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/514458312&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+
+- title: "Episode 330: Aaron Gustafson on WASP and PWAs"
+  outlet: "Shop Talk Show"
+  date: 2018-09-24 00:00:00 +0000
+  url: https://shoptalkshow.com/episodes/330-aaron-gustafson-wasp-pwas/
+  description: "Dave, Chris, and I talked at length about the Web Standards Project (WaSP), the web, and progressive web apps (PWAs)."
+  embed: "https://audio.simplecast.com/b8aa843f.mp3"
+
 - title: "Progressive Enhancement With Aaron Gustafson"
   outlet: "Relative Paths Podcast"
   date: 2017-04-12 00:00:00 +0000
