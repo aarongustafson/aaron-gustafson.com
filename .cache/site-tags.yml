@@ -72,6 +72,7 @@ web design:
 - 2017-10-19-documenting-web-together-mdn-web-docs.markdown
 - 2018-03-01-shipping-system-fonts-to-github-com.markdown
 - 2018-03-02-your-interactive-makes-me-sick.markdown
+- 2018-10-29-font-style-matcher.markdown
 this site:
 - 2014-07-07-a-grand-experiment.markdown
 - 2014-12-16-indecisiveness-and-urls.markdown
@@ -125,6 +126,7 @@ JavaScript:
 - 2018-09-14-removing-jquery-from-github-frontend.markdown
 - 2018-09-17-2018-09-06-chromes-noscript-intervention.markdown
 - 2018-10-03-getting-started-with-the-prettier-plugin-for-eslint.markdown
+- 2018-10-29-smart-bundling-legacy-code-browsers.markdown
 web development:
 - 2014-09-13-a-fundamental-disconnect.markdown
 - 2014-09-19-missed-connections.markdown
@@ -248,6 +250,8 @@ accessibility:
 - 2018-10-19-the-dialog-element.markdown
 - 2018-10-19-all-technology-is-assistive.markdown
 - 2018-10-19-unbutton-buttons.markdown
+- 2018-10-29-the-importance-of-heading-levels-for-assistive-technology--cms-31753.markdown
+- 2018-10-29-website_accessibility_through_responsive_web_design.markdown
 WAI-ARIA:
 - 2014-11-05-aria-quicktip-labelledby-vs-describedby.markdown
 user experience:
@@ -371,6 +375,7 @@ performance:
 - 2018-09-17-2018-09-06-chromes-noscript-intervention.markdown
 - 2018-10-03-how-to-build-a-lowtech-website.markdown
 - 2018-10-19-performance-budgets.markdown
+- 2018-10-29-hard-costs-of-third-party-scripts.markdown
 forms:
 - 2015-02-23-consider-how-your-forms-read.markdown
 - 2015-05-05-slides-from-my-talk-at-number-msedgesummit.markdown
@@ -424,6 +429,7 @@ HTML:
 - 2018-09-10-describing-aria-describedby.markdown
 - 2018-09-20-the-state-of-fieldset-interoperability.markdown
 - 2018-10-19-the-dialog-element.markdown
+- 2018-10-29-the-importance-of-heading-levels-for-assistive-technology--cms-31753.markdown
 URLs:
 - 2015-05-18-url-inception.markdown
 planning:
