@@ -12,7 +12,7 @@ rdiscount:
     - autolink
     - footnotes
     - smart
-gems:
+plugins:
   - fastimage
   - jekyll-archives
   - jekyll-crosspost-to-medium
