@@ -7,7 +7,7 @@ layout: null
   
   {% include feeds/preamble.xml append_title=": Latest Posts & Links" %}
 
-  {% assign feed = site.documents | where:'feed',true | sort: 'date' | reverse %}
+  {% assign feed = "{{ site.documents | where:'feed',true | sort: 'date' | reverse }}" %}
   {% for post in feed limit:20 %}
     {% if post.ref_url %}
       {% assign post_prepend_title = "Link: " %}

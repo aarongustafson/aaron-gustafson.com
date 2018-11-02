@@ -3,7 +3,7 @@ layout: default
 single: true
 ---
 
-{% assign page.keywords = ( page.tags | join:", " ) %}
+{% assign page.keywords = "{{ page.tags | join:', ' }}" %}
 {% assign this_url = "{{ site.url }}{{ page.url }}" %}
 
 <div class="layout-container layout-container--blog">

@@ -4,7 +4,7 @@ layout: null
 {
     {% include feeds/preamble.json append_title=": Latest Links" %}
     "items": [
-{% assign links = (site.links | sort: 'date') | reverse %}
+{% assign links = "{{ (site.links | sort: 'date') | reverse }}" %}
 {% for post in links limit: 20 %}
         {
             "id": "{{ post.id }}",

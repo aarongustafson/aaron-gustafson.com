@@ -7,7 +7,7 @@ layout: null
   
   {% include feeds/preamble.xml append_title=": Latest Links" %}
 
-  {% assign links = (site.links | sort: 'date') | reverse %}
+  {% assign links = "{{ (site.links | sort: 'date') | reverse }}" %}
   {% for post in links limit: 20 %}
     {% include feeds/post.xml %}
   {% endfor %}

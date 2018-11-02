@@ -9,7 +9,7 @@ github_edit: _layouts/tag.html
 {% capture svg_essay %}{% svg /i/icons/essay.svg width=24 %}{% endcapture %}
 {% capture svg_link %}{% svg /i/icons/pin.svg width=24 %}{% endcapture %}
 
-{% assign posts = "" | split,"" %}
+{% assign posts = "{{ '' | split:',' }}" %}
 {% for collection in site.collections %}
   {% for post in collection.docs %}
     {% if post.tags contains page.tag %}
@@ -17,7 +17,7 @@ github_edit: _layouts/tag.html
     {% endif %}
   {% endfor %}
 {% endfor %}
-{% assign sorted_posts = posts | sort:"date" | reverse %}
+{% assign sorted_posts = "{{ posts | sort:'date' | reverse }}" %}
 
 <article role="article" class="page layout-container layout-container--blog">
 
