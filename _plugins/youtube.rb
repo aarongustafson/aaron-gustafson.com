@@ -41,15 +41,12 @@ module Jekyll
       # get the cached YouTube videos
       @cache_file = site.in_source_dir('.jekyll-cache/youtube.yml');
       @videos = SafeYAML.load_file(@cache_file) || {}
-      puts @videos.inspect
       @api_key = ENV['GOOGLE_API_KEY'] || nil
     end
 
     def self.cache_video(key, html)
-      puts @videos.length
-      puts "writing #{key}: #{html}"
+      puts "Caching YouTube video: #{key}"
       @videos[key] = html
-      puts @videos.length
       File.open(@cache_file, "wb") { |f| f.puts YAML.dump(@videos) }
     end
 
