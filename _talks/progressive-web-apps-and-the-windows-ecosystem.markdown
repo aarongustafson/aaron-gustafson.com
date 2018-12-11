@@ -4,16 +4,10 @@ title: "Progressive Web Apps and the Windows Ecosystem"
 description: "In this session, I discuss what PWAs are, how they can be integrated into the development process of modern websites, the advantages and disadvantages of PWAs vs. native development, and what opportunities they present when installed alongside native apps in Windows."
 category: talks
 tags: ["progressive web apps", "progressive enhancement", windows, microsoft]
-events: [122, 115]
-slides:
-  link: https://www.slideshare.net/AaronGustafson/progressive-web-apps-and-the-windows-ecosystem-build-2017
-  embed: https://www.slideshare.net/slideshow/embed_code/key/InI5w0bH4JxCwW
-  download: /speaking-engagements/2017/build/progressive-web-apps-and-the-windows-ecosystem.pdf
-video:
-  event: 115
-  link: https://channel9.msdn.com/Events/Build/2017/B8075
-  embed: https://channel9.msdn.com/Events/Build/2017/B8075/player
-  download: https://video.ch9.ms/ch9/69d6/cde44404-854a-4c7a-aabd-e8d0af5d69d6/B8075_mid.mp4
+events:
+  123: https://noti.st/aarongustafson/48kEkT/progressive-web-apps-and-the-windows-ecosystem
+  122: https://noti.st/aarongustafson/gST2cs/progressive-web-apps-and-the-windows-ecosystem
+  115: https://noti.st/aarongustafson/F2OfMd/progressive-web-apps-and-the-windows-ecosystem
 text: /notebook/progressive-web-apps-and-the-windows-ecosystem/
 ---
 

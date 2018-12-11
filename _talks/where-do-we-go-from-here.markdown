@@ -1,14 +1,12 @@
 ---
 layout: talk
 title: "Where Do We Go From Here?"
-description: "I had the great pleasure of delivering the closing keynote for the final Responsive Day Out. In it, I looked into the future of what it means for our designs to be responsive."
+description: "We’ve come a long way since Ethan’s article, fluid grids, flexible media, and media queries. What’s next?"
 category: keynotes
 tags: ["responsive web design","progressive enhancement"]
-events: [98]
-video:
- event: 98
- link: http://www.fivesimplesteps.com/products/where-do-we-go-from-here
+events:
+  98: https://noti.st/aarongustafson/3rAcab/where-do-we-go-from-here
 text: /notebook/where-do-we-go-from-here/
 ---
 
-I had the great pleasure of delivering the closing keynote for the final Responsive Day Out. In it, I looked into the future of what it means for our designs to be responsive.
+We’ve come a long way since Ethan’s article, fluid grids, flexible media, and media queries. What’s next?

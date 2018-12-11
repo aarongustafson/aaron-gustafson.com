@@ -4,11 +4,15 @@ title: "Planning Adaptive Interfaces"
 description: "How do you plan for the unknown? The answer is obvious—you can’t—but that’s not a bad thing. Unknowns can be scary, but they also create opportunity."
 categories: [talks, workshops]
 tags: ["progressive enhancement",html, css, javascript, "web standards"]
-events: [112, 105, 103, 75, 69, 67, 66, 62]
-slides:
-  link: https://www.slideshare.net/AaronGustafson/planning-adaptive-interfaces-rwd-summit-2016
-  embed: https://www.slideshare.net/slideshow/embed_code/key/xPT3oDHahDdXlk
-  download: /speaking-engagements/2016/rwd-summit/planning-adaptive-interfaces.pdf
+events:
+  112: https://noti.st/aarongustafson/9jMG8U/planning-adaptive-interfaces-workshop
+  105: https://noti.st/aarongustafson/r13tD8/planning-adaptive-interfaces
+  103: https://noti.st/aarongustafson/kvC75I/planning-adaptive-interfaces-workshop
+  75: ""
+  69: https://noti.st/aarongustafson/pVIczf/planning-adaptive-interfaces-workshop
+  67: https://noti.st/aarongustafson/r8RKf5/planning-adaptive-interfaces-workshop
+  66: https://noti.st/aarongustafson/PP3MIx/planning-adaptive-interfaces-workshop
+  62: https://noti.st/aarongustafson/YRswfk/planning-adaptive-interfaces-workshop
 ---
 
 How do you plan for the unknown? The answer is obvious—you can’t—but that’s not a bad thing. Unknowns can be scary, but they also create opportunity.
