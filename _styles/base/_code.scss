@@ -11,6 +11,7 @@
         border: 1px solid $color-grey-light;
         border-radius: 3px;
         color: $color-black;
+        font-family: $font-stack-mono;
         font-style: normal;
         padding: .05em .25em;
         white-space: nowrap;
@@ -21,19 +22,21 @@
         border: 1px solid $color-grey-light;
         border-radius: 3px;
         color: $color-black;
+        font-family: $font-stack-mono;
         font-style: normal;
-        white-space: prewrap;
-
-      margin-left: auto;
-      margin-right: auto;
+        
+        margin-left: auto;
+        margin-right: auto;
         padding: .05em .25em;
         @include rem( max-width, 700 );
+
+        overflow-x: auto;
         
         code {
             background: transparent;
             border: 0;
             padding: 0;
-            white-space: normal;
+            white-space: pre;
         }
     }
     

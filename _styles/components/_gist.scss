@@ -1,75 +1,35 @@
 /*------------------------------------*\
-    Gist
+Gist
 \*------------------------------------*/
 
 @include breakup-breakpoint( "global" ) {
+  
+  .gist {
+    border: 1px solid $color-border;
+    border-bottom: 0;
+    border-radius: 3px 3px 0 0;
 
-    div.gist {
-        
-        @include rem( font-size, $font-size-code );
-        @include rem( margin, $margin-default );
-        
-        table {
-            margin: 0;
-        
-            tr {
-                border: 0;
-                margin: 0;
-            }
-            
-            td {
-                margin: 0;
-            }
-
-            .line-numbers {
-                width: 3em;
-            }
-        
-        }
-        
-        a {
-            background: transparent;
-        }
-
-        .line-numbers,
-        .gist-meta {
-            speak: none;
-        }
-        
-        .line-number,
-        .line,
-        .gist-meta {
-            margin-top: 0;
-        }
-
-        table,
-        tbody,
-        div.file-data {
-            font-size: 100%;
-        }
-
-        .blob-wrapper {
-            padding: 4px 0;
-        }
-        .blob-code {
-            // Don’t want to use important, but Github’s stylesheet does
-            padding: 2px 10px !important;
-        }
-
-    }
-
-    html.wf-active div.gist a {
-        background: transparent;
-        text-shadow: none;
-    }
+    @include rem( font-size, $font-size-code );
+    margin: 0;
+    padding: .25em .5em;
+  }
+  .gist_link {
+    background: $color-text;
+    color: $color-background;
     
-}
+    border: 1px solid transparent;
+    border-radius: 0 0 3px 3px;
+    
+    @include rem( font-size, $font-size-small );
+    
+    margin-top: 0;
+    padding: .25em .5em;
+    text-align: right;
 
-// De-table on smaller screens
-// (using staff directory as a gauge)
-@include breakup-media( "(max-width: 770px)" ) {
-    div.gist .line-numbers,
-    div.gist .line-data {
-        display: table-cell;
+    a {
+      color: $color-background;
+      @include underline( $color-background, 0, 1px, $color-text );
     }
+  }
+
 }

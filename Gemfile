@@ -38,4 +38,5 @@ group :jekyll_plugins do
   gem 'stringex'
   gem 'twitter'
   gem 'kramdown'
+  gem 'rouge'
 end

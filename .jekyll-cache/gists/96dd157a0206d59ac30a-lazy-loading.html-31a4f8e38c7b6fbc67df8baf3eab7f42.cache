@@ -1,0 +1,13 @@
+{if testimonial_photo}
+    {exp:ce_img:pair
+        src="{testimonial_photo}"
+        width="223"
+        height="140"
+        allow_scale_larger="yes"
+        crop="yes"
+        interlace="yes"
+        cache_dir="/"
+        }
+        <div class="module__image image--lazy" data-image-src="{made}"></div>
+    {/exp:ce_img:pair}
+{/if}

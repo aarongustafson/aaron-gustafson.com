@@ -1,0 +1,4 @@
+<picture>
+  <source type="image/webp" srcset="/i/j/r.webp">
+  <img src="/i/j/r.jpg" alt="">
+</picture>

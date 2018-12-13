@@ -1,0 +1,20 @@
+.form-control {
+  position: relative;
+}
+label {
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -.5em;
+  left: .25em;
+  transition: .25s transform;
+}
+input {
+  display: block;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: .25em;
+}
+input:focus + label {
+  transform: translateY(-1.5em);
+}

@@ -3,15 +3,22 @@
 # ----------------------- #
 titlecase: true
 markdown: kramdown
+highlighter: rouge
 encoding: utf-8
 incremental: false
 # debug: true
 # limit_posts: 0
-rdiscount:
-  extensions:
-    - autolink
-    - footnotes
-    - smart
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'gist'
+#rdiscount:
+#  syntax_highlighter: none
+#  extensions:
+#    - autolink
+#    - footnotes
+#    - smart
 plugins:
   - fastimage
   - jekyll-archives
@@ -220,7 +227,8 @@ repo_url: "https://github.com/aarongustafson/aarongustafson.github.io/tree/maste
 
 # Gists
 gist_tag:
-  cache: .cache/gists
+  user: aarongustafson
+  cache: .jekyll-cache/gists
 
 # Crosspost to Medium
 jekyll-crosspost_to_medium:

@@ -1,0 +1,8 @@
+<picture class="page__image-header__photo">
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+    <source srcset="about_940_343_int_s_c1_full.jpg" media="(min-width: 40em)">
+    <source srcset="about_800_350_int_c1_medium.jpg" media="(min-width: 20em)">
+    <source srcset="about_480_350_int_c1_small.jpg">
+    <!--[if IE 9]></video><![endif]-->
+    <img src="{made}" alt="">
+</picture>

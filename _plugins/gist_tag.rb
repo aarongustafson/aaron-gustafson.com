@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 # A Liquid tag for Jekyll sites that allows embedding Gists and showing code for non-JavaScript enabled browsers and readers.
 # by: Brandon Tilly
 # Source URL: https://gist.github.com/1027674
 # Post http://brandontilley.com/2011/01/31/gist-tag-for-jekyll.html
 #
-# Example usage: {% gist 1027674 gist_tag.rb embed %} //embeds a gist for this plugin
+# Example usage: {% gist [guid] [filename]? [embed]? [username]? %} //embeds a gist for this plugin
 
 require 'cgi'
 require 'digest/md5'
@@ -20,76 +22,94 @@ module Jekyll
     end
 
     def render(context)
-      @config         = context.registers[:site].config
-      @cache_folder   = @config['gist_tag']['cache'] || File.expand_path( "../.gist-cache", File.dirname(__FILE__) )
+      site            = context.registers[:site]
+      @config         = site.config
       @encoding       = @config['encoding'] || 'UTF-8'
-      FileUtils.mkdir_p @cache_folder
+
+      @tag_config     = @config['gist_tag']
+      @user           = @tag_config['user'] || ''
+      @cache_disabled = @tag_config['cache'] == false
+
+      unless @cache_disabled
+        @cache_folder = site.in_source_dir(@tag_config['cache_folder'] || '.jekyll-cache')
+        @cache_folder = File.join @cache_folder, 'gists'
+        Dir.mkdir(@cache_folder) unless File.exist?(@cache_folder)
+      end
+
+      guid = ''
+      filename = ''
       if @text.match(/^[a-zA-Z\d]*\s.*?$/)
         string = @text.gsub(/\s+/, ' ').strip
-        gist, file, @embed_code = string.split(' ')
+        tag_data = string.split(' ')
+        guid        = tag_data[0] if tag_data[0]
+        filename    = tag_data[1] if tag_data[1]
+        @embed_code = tag_data[2] if tag_data[2]
+        @user       = tag_data[3] if tag_data[3]
       else
-        gist, file = @text.strip, ""
+        guid = @text.strip
       end
-      if gist.empty?
-        ""
+
+      if guid.empty?
+        ''
       else
-        script_url = script_url_for(gist, file)
-        if @embed_code
-          code = get_cached_gist(gist, file) || get_gist_from_web(gist, file, script_url)
-          html_embed code
-        else
-          gist_url = get_gist_url_for(gist, file)
-          code = get_cached_gist(gist, file) || get_gist_from_web(gist, file, gist_url)
-          javascript_embed script_url, code
-        end
+        code = get_gist_from_cache(guid, filename) || get_gist_from_web(guid, filename)
+        ext = File.extname(filename).sub '.', ''
+        link = get_gist_url(guid, filename)
+        html_embed(code, ext, link)
       end
     end
 
-    def html_embed(code)
-      "<div>#{code}</div>" 
-    end
-
-    def javascript_embed(script_url, code)
-      code = CGI.escapeHTML code
-      <<-HTML
-        <div><script src="#{script_url}"></script>
-        <noscript><pre><code>#{code}</code></pre></noscript></div>
+    def html_embed(code, ext, link)
+      <<~HTML
+        ```#{ext}
+        #{code}
+        ```
+        <p class="gist_link"><a href="#{link}">View as a GitHub Gist</a></p>
       HTML
     end
 
-    def script_url_for(gist_id, filename)
-      url = "https://gist.github.com/#{gist_id}.js"
+    def script_url_for(guid, filename)
+      url = "https://gist.github.com/#{guid}.js"
       url = "#{url}?file=#{filename}" unless filename.nil? or filename.empty?
       url
     end
 
-    def get_gist_url_for(gist, file)
-      "https://gist.githubusercontent.com/raw/#{gist}/#{file}"
+    def get_gist_url(guid, filename)
+      url = "https://gist.github.com/#{@user}/#{guid}"
+      unless filename.nil? or filename.empty?
+        file_id = filename.sub('.','-')
+        url = "#{url}#file-#{file_id}"
+      end
+      url
     end
 
-    def cache(gist, file, data)
-      cache_file = get_cache_file_for gist, file
-      File.open(cache_file, "w") do |io|
-        io.write data
+    def cache(guid, file, data)
+      unless @cache_disabled
+        cache_file = get_cache_file_for guid, file
+        File.open(cache_file, "w") do |io|
+          io.write data
+        end
       end
     end
 
-    def get_cached_gist(gist, file)
+    def get_gist_from_cache(guid, file)
       return nil if @cache_disabled
-      cache_file = get_cache_file_for gist, file
+      cache_file = get_cache_file_for guid, file
       File.read cache_file if File.exist? cache_file
     end
 
-    def get_cache_file_for(gist, file)
+    def get_cache_file_for(guid, filename)
       bad_chars = /[^a-zA-Z0-9\-_.]/
-      gist      = gist.gsub bad_chars, ''
-      file      = file.gsub bad_chars, ''
-      md5       = Digest::MD5.hexdigest "#{gist}-#{file}"
-      File.join @cache_folder, "#{gist}-#{file}-#{md5}.cache"
+      guid     = guid.gsub bad_chars, ''
+      filename = filename.gsub bad_chars, ''
+      md5      = Digest::MD5.hexdigest "#{guid}-#{filename}"
+      File.join @cache_folder, "#{guid}-#{filename}-#{md5}.cache"
     end
 
-    def get_gist_from_web(gist, file, gist_url)
-      data = get_web_content(gist_url)
+    def get_gist_from_web(guid, filename)
+      raw_gist_url = "https://gist.githubusercontent.com/#{@user}/#{guid}/raw/"
+      raw_gist_url = "#{raw_gist_url}#{filename}" unless filename.nil? or filename.empty?
+      data = get_web_content(raw_gist_url)
 
       locations = Array.new
       while (data.code.to_i == 301 || data.code.to_i == 302)
@@ -99,17 +119,17 @@ module Jekyll
       end
 
       if data.code.to_i != 200
-        raise RuntimeError, "Gist replied with #{data.code} for #{gist_url}"
+        raise RuntimeError, "Gist replied with #{data.code} for #{raw_gist_url}"
       end
 
       # Cleanup embed version
       code = data.body.force_encoding("UTF-8").encode(@encoding)
-      code = code.gsub( /document\.write\('/, '' ).gsub( /'\)/, '' ) # JS
-      code = code.gsub( /\\"/, '"' ).gsub( /\\\//, '/' ) # escaped stuff
-      code = code.gsub( /\\n/, "\n" ) # returns
-      code = code.encode(@encoding) # encode
+      # code = code.gsub( /document\.write\('/, '' ).gsub( /'\)/, '' ) # JS
+      # code = code.gsub( /\\"/, '"' ).gsub( /\\\//, '/' ) # escaped stuff
+      # code = code.gsub( /\\n/, "\n" ) # returns
+      # code = code.encode(@encoding) # encode
 
-      cache(gist, file, code) unless @cache_disabled
+      cache(guid, filename, code)
       code
     end
 

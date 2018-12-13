@@ -89,7 +89,8 @@ sup {
 .promo__image {
   max-width: 100px;
   margin-top: -.2em;
-  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
   position: absolute;
   left: 0;
   top: 0;
