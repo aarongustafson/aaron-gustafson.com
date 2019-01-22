@@ -178,6 +178,7 @@ https://www.aaron-gustafson.com/notebook/webos-is-back/:
   http://www.theverge.com/2013/2/25/4027814/hp-emerges-as-big-winner-in-webos-sale: ''
   http://www.lg.com/uk/smarttv/webos: ''
   http://gizmodo.com/lgs-new-smart-watch-is-powered-by-webos-1678191522: ''
+  https://www.google.com/search?q=build: false
 https://www.aaron-gustafson.com/notebook/the-linkblog/: {}
 https://www.aaron-gustafson.com/notebook/an-onslaught-of-low-cost-smartphones/:
   http://www.theverge.com/2015/1/14/7544107/microsoft-lumia-435-532-launch-specs-price-release-date: ''
@@ -222,6 +223,7 @@ https://www.aaron-gustafson.com/notebook/sending-birthday-well-wishes-to-molly/:
   ? http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=books&keywords=molly%20holzschlag&linkCode=ur2&tag=easydesign-20&linkId=BDCVT2YGNT7BNCHR
   : ''
   http://www.gofundme.com/ThanksMols: ''
+  http://www.amazon.com/gp/search?ie=UTF8&camp=1789&creative=9325&index=books&keywords=molly: false
 https://www.aaron-gustafson.com/notebook/the-one-weird-trick-that-takes-the-pain-out-of-cross-browser-testing/:
   https://twitter.com/decadecity/status/559693419808034816: ''
 https://www.aaron-gustafson.com/notebook/ch-ch-ch-changes/:
@@ -370,6 +372,7 @@ https://www.aaron-gustafson.com/notebook/slides-from-my-talk-at-number-msedgesum
   https://video.ch9.ms/sessions/websummit/2015/GA05-mobile.mp4: ''
 https://www.aaron-gustafson.com/notebook/url-inception/:
   https://m.facebook.com/ClydesOnMain?refsrc=https%3A%2F%2Fwww.facebook.com%2FClydesOnMain: ''
+  https://m.facebook.com/ClydesOnMain?refsrc=https: false
 https://www.aaron-gustafson.com/notebook/interface-experience-maps/:
   https://web.archive.org/web/20070515221318/http://2007.sxsw.com/interactive/programming/panels/?action=show&id=IAP060214: ''
   https://twitter.com/sarahbeee: ''
@@ -805,6 +808,7 @@ https://www.aaron-gustafson.com/notebook/excellent-speakers-for-your-next-tech-e
   https://web.archive.org/web/http://lanyrd.com/profile/cydharrell/: ''
   https://about.me/mollydotcom: ''
   http://articulate-network.lanyrd.com/speakers/: ''
+  https://www.linkedin.com/redir/redirect?url=http: false
 https://www.aaron-gustafson.com/notebook/future-of-web-design-and-oredev/:
   https://futureofwebdesign.com/nyc-2015/: ''
   https://web.archive.org/web/http://lanyrd.com/2015/oredev/: ''
@@ -897,6 +901,7 @@ https://www.aaron-gustafson.com/notebook/learn-from-the-past-enhance-for-the-fut
   ? https://books.google.com/books?id=prDfAFjet9cC&lpg=PR7&ots=PA9rRog4cr&dq=How%20a%20%E2%80%98Difficult%E2%80%99%20Composer%20Gets%20That%20Way&pg=PA230
   : ''
   https://gds.blog.gov.uk/2014/07/28/doing-the-hard-work-to-make-things-simple/: ''
+  https://books.google.com/books?id=prDfAFjet9cC&lpg=PR7&ots=PA9rRog4cr&dq=How: false
 https://www.aaron-gustafson.com/notebook/an-event-apart-nashville-2016-day-one/:
   http://www.zeldman.com/: ''
   http://adaptivewebdesign.info/2nd-edition/: ''
@@ -919,6 +924,7 @@ https://www.aaron-gustafson.com/notebook/an-event-apart-nashville-2016-day-one/:
   http://cameronmoll.com/: ''
   https://twitter.com/search?q=%23aeansh&src=typd: ''
   https://storify.com/AaronGustafson/reactions-and-takeaways-from-my-aeansh-talk: ''
+  https://twitter.com/search?q=: false
 https://www.aaron-gustafson.com/notebook/offline-first-love-the-idea-hate-the-name/:
   https://twitter.com/misprintedtype: ''
   http://hood.ie/: ''
@@ -993,6 +999,7 @@ https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/:
   http://www.inclusivedesigntoolkit.com/betterdesign2/whatis/whatis.html: ''
   https://blogs.windows.com/msedgedev/: ''
   https://channel9.msdn.com/Events/WebPlatformSummit/edgesummit2016/ES1612: ''
+  https://books.google.com/books?id=prDfAFjet9cC&lpg=PR7&ots=PA9rRog4cr&dq=How: false
 https://www.aaron-gustafson.com/notebook/what-are-keys-to-success/:
   http://www.imdb.com/title/tt0223897/: ''
 https://www.aaron-gustafson.com/notebook/the-web-is-messy-and-beautiful/:
@@ -1021,6 +1028,8 @@ https://www.aaron-gustafson.com/notebook/what-would-you-do-with-10kb/:
   https://twitter.com/SaraSoueidan: ''
   https://a-k-apart.com/legal: ''
   https://a-k-apart.com/hi: ''
+  http://www.zeldman.com/2010/07/29/10k-apart-: false
+  http://alistapart.com/search?keywords=progressive: false
 https://www.aaron-gustafson.com/notebook/im-voting-for-oscar/:
   http://www.ibtimes.com/shopping-while-black-americas-retailers-know-they-have-racial-profiling-problem-now-2222778: ''
   http://blogs.edweek.org/teachers/teaching_now/2016/03/bias.html: ''
@@ -1069,6 +1078,7 @@ https://www.aaron-gustafson.com/notebook/one-persons-bloat-dot-dot-dot/:
   http://slimerjs.org/: ''
   https://github.com/filamentgroup/loadCSS: ''
   https://github.com/filamentgroup/loadJS: ''
+  https://en.wikipedia.org/wiki/Duff: false
 https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/:
   http://tools.oratory.com/altcodes.html: ''
   https://thejournal.com/articles/2016/01/26/how-to-create-keyboard-shortcuts-for-special-characters-in-windows-10.aspx: ''
@@ -1081,6 +1091,7 @@ https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
   https://twitter.com/search?q=%23davegoeswindows: ''
   https://snook.ca/archives/other/running-into-windows: ''
   http://danielmall.com/articles/opening-windows/: ''
+  https://twitter.com/search?q=: false
 https://www.aaron-gustafson.com/notebook/ten-years-on-twitter/:
   https://twitter.com/AaronGustafson/statuses/61946: ''
   https://twitter.com/adactio: ''
@@ -1183,6 +1194,7 @@ https://www.aaron-gustafson.com/notebook/any-advice-on-moving-from-octopress-to-
   http://rake.rubyforge.org/: ''
   http://idratherbewriting.com/2015/11/04/jekyll-30-released-incremental-regeneration-rocks/: ''
   https://travis-ci.org/: ''
+  https://github.com/aarongustafson?utf8=: false
 https://www.aaron-gustafson.com/notebook/crossing-a-border/:
   https://www.theatlantic.com/technology/archive/2017/02/a-nasa-engineer-is-required-to-unlock-his-phone-at-the-border/516489/: ''
   https://www.cnet.com/news/border-patrol-agents-checking-facebook-profiles-trump-immigration-ban/: ''
@@ -1272,6 +1284,7 @@ https://www.aaron-gustafson.com/notebook/trypod/:
   http://5by5.tv/bigwebshow: ''
   http://www.radiolab.org/series/podcasts/: ''
   https://gimletmedia.com/crimetown/: ''
+  https://twitter.com/search?q=: false
 https://www.aaron-gustafson.com/notebook/pondering-fallback-content/:
   https://developer.mozilla.org/docs/Web/HTML/Supported_media_formats: ''
   https://html.spec.whatwg.org/: ''
@@ -1364,6 +1377,7 @@ https://www.aaron-gustafson.com/notebook/my-2017-mentees/:
   https://pitercss.com/: ''
   http://adaptivewebdesign.us1.list-manage.com/subscribe?u=ef3de4ba708a36120583e2267&id=f791ea5ce6: ''
   http://codepen.io/matuzo/: ''
+  http://2.bp.blogspot.com/-1_GLUmtuSzA/TpOMaUA39xI/AAAAAAAACvs/UX1VMBHjNJQ/s640/IMG_5776+: false
 https://www.aaron-gustafson.com/notebook/adding-paragraphs-in-zillow-should-not-be-this-hard/:
   https://www.zillow.com/homedetails/1115-Hanover-St-Chattanooga-TN-37405/41420955_zpid/?fullpage=true: ''
   https://www.zillow.com: ''
@@ -1957,6 +1971,7 @@ https://www.aaron-gustafson.com/notebook/links/microsoft-edge-and-web-components
 https://www.aaron-gustafson.com/notebook/links/winning-technology-social-purpose-bionic-arm/:
   http://www.theguardian.com/society/2015/jul/14/winning-technology-social-purpose-bionic-arm: false
   http://www.ons.gov.uk/ons/publications/re-reference-tables.html?edition=tcm%3A77-395602: false
+  http://www.ons.gov.uk/ons/publications/re-reference-tables.html?edition=tcm: false
 https://www.aaron-gustafson.com/notebook/links/the-full-stackoverflow-developer/:
   http://christianheilmann.com/2015/07/17/the-full-stackoverflow-developer/: false
 https://www.aaron-gustafson.com/notebook/links/building-accessible-windows-universal-apps-introduction/:
@@ -2821,7 +2836,12 @@ https://www.aaron-gustafson.com/notebook/links/your-login-form-posts-to-https-bu
   https://twitter.com/aarongustafson/status/836681750776590336: false
   https://twitter.com/marriott/status/836922588966359044: false
 https://www.aaron-gustafson.com/notebook/links/css-tip-use-not-to-save-time-and-lines-of-code/:
-  https://theboldreport.net/2017/02/css-tip-use-not-to-save-time-and-lines-of-code/: false
+  https://theboldreport.net/2017/02/css-tip-use-not-to-save-time-and-lines-of-code/:
+    status: queued
+    summary: Webmention was queued for processing
+    location: https://webmention.io/brightpixels.blog/webmention/9XGifLeiQ2t2tq3_KPp-
+    source: https://www.aaron-gustafson.com/notebook/links/css-tip-use-not-to-save-time-and-lines-of-code/
+    target: https://theboldreport.net/2017/02/css-tip-use-not-to-save-time-and-lines-of-code/
   http://caniuse.com/: false
 https://www.aaron-gustafson.com/notebook/links/progressive-web-app-libraries-in-production-b52cad37d34/:
   https://medium.com/dev-channel/progressive-web-app-libraries-in-production-b52cad37d34: false
@@ -2900,6 +2920,7 @@ https://www.aaron-gustafson.com/notebook/links/what-is-web-definition/:
   https://www.theverge.com/2017/5/24/15681958/what-is-web-definition: false
   https://www.theverge.com/users/Dieter%20Bohn: false
   https://adactio.com/journal/8245: ''
+  https://www.theverge.com/users/Dieter: false
 https://www.aaron-gustafson.com/notebook/links/how-to-make-your-website-accessible-to-people-who-use-a-screen-magnifier/:
   https://dev.to/_bigblind/how-to-make-your-website-accessible-to-people-who-use-a-screen-magnifier: false
 https://www.aaron-gustafson.com/notebook/links/reducing-image-file-size-at-etsy/:
@@ -3112,6 +3133,7 @@ https://www.aaron-gustafson.com/notebook/mentorship-2018-2019/:
   https://twitter.com/aarongustafson: false
   https://www.facebook.com/aaronmgustafson: false
   https://www.linkedin.com/in/aarongustafson: false
+  https://twitter.com/intent/tweet?text=Hey+@aarongustafson+I: false
 https://www.aaron-gustafson.com/notebook/links/google-go-read-out-loud/:
   https://www.engadget.com/2018/08/28/google-go-read-out-loud/: false
 https://www.aaron-gustafson.com/notebook/links/best-practices-for-mobile-form-design/:
