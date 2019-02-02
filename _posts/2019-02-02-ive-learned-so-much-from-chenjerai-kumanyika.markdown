@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I’ve learned so much from Chenjerai Kumanyika"
-date: 2019-02-02 10:21:28 -0800
+date: 2019-02-02 09:21:28 -0800
 comments: true
 tags: ["Black History", influences]
 description: "From Uncivil to “Seeing White” to his Twitter feed, Chenjerai drops thoughtful and matter-of-fact knowledge about race in America and I can’t thank him enough for this work."
