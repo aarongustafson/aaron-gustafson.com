@@ -21,7 +21,7 @@
 {% endcomment %}
 
 {% if page.tag %}
-  <title>{{ page.tag | prepend:" " | prepend:site.jekyll-archives.tag_title_prefix }}</title>
+  <title>{{ page.tag | prepend:" " | prepend:page.title_prefix }} | {{ site.title }}</title>
   {% seo title=false %}
 {% else %}
   {% seo %}

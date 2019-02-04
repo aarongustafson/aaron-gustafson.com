@@ -175,12 +175,12 @@ pagination:
   sort_reverse: true
 
 # Archives
-jekyll-archives:
-  enabled: tags
-  layout: 'tag.html'
-  permalinks:
-    tag: '/tags/:name/'
-  tag_title_prefix: 'Browse By Tag:'
+#jekyll-archives:
+#  enabled: tags
+#  layout: 'tag.html'
+#  permalinks:
+#    tag: '/tags/:name/'
+#  tag_title_prefix: 'Browse By Tag:'
 
 # Asides
 default_asides: [asides/recent_posts.html]
@@ -199,6 +199,9 @@ svg:
 # Tagging
 tag_page_layout: tag
 tag_page_dir: /tags/
+tag_page_data:
+  sitemap: false
+  title_prefix: 'Browse By Tag:'
 
 # Open Graph
 og:

@@ -1,23 +1,12 @@
 ---
-title: Browse My Notebook By Tag
 layout: default
 footer: true
 github_edit: _layouts/tag.html
 ---
 
-{% capture the_title %}<b>{{ site.jekyll-archives.tag_title_prefix }}</b> <b>{{ page.tag }}</b>{% endcapture %}
+{% capture the_title %}<b>{{ page.title_prefix }}</b> <b>{{ page.tag }}</b>{% endcapture %}
 {% capture svg_essay %}{% svg /i/icons/essay.svg width=24 %}{% endcapture %}
 {% capture svg_link %}{% svg /i/icons/pin.svg width=24 %}{% endcapture %}
-
-{% assign posts = "{{ '' | split:',' }}" %}
-{% for collection in site.collections %}
-  {% for post in collection.docs %}
-    {% if post.tags contains page.tag %}
-      {% assign posts = posts | push:post %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
-{% assign sorted_posts = "{{ posts | sort:'date' | reverse }}" %}
 
 <article role="article" class="page layout-container layout-container--blog">
 
@@ -25,7 +14,7 @@ github_edit: _layouts/tag.html
   <div class="layout-container__primary">
 
     <div id="blog-archives">
-      {% for post in sorted_posts %}
+      {% for post in page.posts %}
         <article class="entry entry--teaser entry--{{ post.collection }}">
           {% if post.collection=="posts" %}
             <p class="entry__type" title="Post" aria-label="Post">{{ svg_essay }}</p>
