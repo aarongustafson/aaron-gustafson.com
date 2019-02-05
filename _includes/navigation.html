@@ -14,18 +14,37 @@
     </ul>
 
     {% if site.simple_search %}
-      <form class="form form--search" action="{{ site.simple_search }}" method="get" id="search">
-        <ol role="search">
-          <li class="form-control form-control--search">
-            <label for="query" class="hidden">What are you looking for?</label>
-            <input name="q" type="hidden" value="site:www.aaron-gustafson.com">
-            <input id="query" type="search" name="q">
-          </li>
-          <li class="form-control form-control--buttons">
-            <button type="submit" name="sa" value="Search"><b class="hidden">Let’s see if </b>Google <b class="hidden">Finds </b>it</button>
-          </li>
-        </ol>
+      <form class="form form--search"
+            action="{{ site.simple_search }}"
+            method="get"
+            id="search">
+        <div role="search">
+          <ol>
+            <li class="form-control form-control--search">
+              <label id="query-label" for="query" class="hidden">What are you looking for?</label>
+              <input id="prepend" type="hidden" value="site:www.aaron-gustafson.com">
+              <input type="hidden" name="kaf" value="1">
+              <input type="hidden" name="kh" value="1">
+              <input id="query" type="search" name="q" aria-labelledby="query-label">
+            </li>
+            <li class="form-control form-control--buttons">
+              <button type="submit" name="sa" value="Search"><b class="hidden">Let’s search on </b>DuckDuckGo</button>
+            </li>
+          </ol>
+        </div>
       </form>
+      <script>
+        // Enable DuckDuckGo Site Search
+        (function(document){
+          document.getElementById('search')
+            .addEventListener('submit', function(){
+              var $query = document.getElementById('query'),
+                  prepend = document.getElementById('prepend').value;
+              $query.value = prepend + ' ' + $query.value;
+              return true;
+            }, false);
+        }(this.document));
+      </script>
     {% endif %}
 
   </div>

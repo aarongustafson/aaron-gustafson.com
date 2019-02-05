@@ -98,7 +98,7 @@ defaults:
 # ----------------------- #
 
 url: https://www.aaron-gustafson.com
-simple_search: "https://www.google.com/search"
+simple_search: "https://duckduckgo.com/"
 
 # SEO
 lang: en_US
