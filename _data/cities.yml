@@ -223,6 +223,11 @@
   credit_name: Bz3rk
   credit_url: "http://commons.wikimedia.org/wiki/File:Fayetteville_Street_in_downtown_Raleigh,_North_Carolina.jpg"
 
+- name: "Redmond, WA USA"
+  photo: https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Marymoor_Park_climbing_rock.jpg/400px-Marymoor_Park_climbing_rock.jpg
+  credit_name: Tradnor
+  credit_url: https://commons.wikimedia.org/wiki/File:Marymoor_Park_climbing_rock.jpg
+
 - name: "Research Triangle Park, NC USA"
   photo: https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/2008-07-25_I-85_from_Davis_Dr_in_RTP.jpg/400px-2008-07-25_I-85_from_Davis_Dr_in_RTP.jpg
   credit_name: Ildar Sagdejev
