@@ -1,3 +1,15 @@
+- id: 135
+  title: ImageCon
+  date: 2019-05-01 00:09:00 -0000
+  location: "San Francisco, CA USA"
+  url: https://www.imagecon.com/
+
+- id: 134
+  title: Microsoft MVP Global Summit
+  date: 2019-03-17 00:09:00 -0000
+  location: "Redmond, WA USA"
+  url: https://mvp.microsoft.com/en-us/Summit
+
 - id: 133
   title: Center Centre Workshop
   date: 2017-11-15 00:09:00 -0000
