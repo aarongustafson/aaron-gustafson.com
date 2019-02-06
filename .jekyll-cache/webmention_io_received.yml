@@ -1,0 +1,215 @@
+---
+"/notebook/why-oscars-middle-name-is-ellison/":
+  '585066':
+    id: '585066'
+    uri: https://twitter.com/AaronGustafson/status/1091426472449982465#favorited-by-23674788
+    source: twitter
+    pubdate: 2019-02-01 20:24:16.000000000 +00:00
+    raw:
+      source: https://brid-gy.appspot.com/like/twitter/AaronGustafson/1091426472449982465/23674788
+      verified: true
+      verified_date: '2019-02-01T20:24:16+00:00'
+      id: 585066
+      private: false
+      data:
+        author: &1
+          name: Cheryl Gledhill
+          url: https://twitter.com/cherylgledhill
+          photo: https://webmention.io/avatar/pbs.twimg.com/75ea8940874655b26ab20f60accde08d1e7557ccdf859aa685ec6ac2e3068924.jpg
+        url: https://twitter.com/AaronGustafson/status/1091426472449982465#favorited-by-23674788
+        name: 
+        content: 
+        published: 
+        published_ts: 
+      activity:
+        type: like
+        sentence: Cheryl Gledhill favorited a tweet https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/
+        sentence_html: <a href="https://twitter.com/cherylgledhill">Cheryl Gledhill</a>
+          favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/">https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/</a>
+      target: https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/
+    author: *1
+    type: like
+    content: <p><a href="https://twitter.com/cherylgledhill">Cheryl Gledhill</a> favorited
+      a tweet <a href="https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/">https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/</a></p>
+  '1091427211561717760':
+    id: '1091427211561717760'
+    uri: https://twitter.com/cherylgledhill/status/1091427211561717760
+    source: twitter
+    pubdate: 2019-02-01 12:04:59.000000000 -08:00
+    raw:
+      source: https://brid-gy.appspot.com/comment/twitter/AaronGustafson/1091426472449982465/1091427211561717760
+      verified: true
+      verified_date: '2019-02-01T20:24:18+00:00'
+      id: 585069
+      private: false
+      data:
+        author: &2
+          name: Cheryl Gledhill
+          url: https://twitter.com/cherylgledhill
+          photo: https://webmention.io/avatar/pbs.twimg.com/75ea8940874655b26ab20f60accde08d1e7557ccdf859aa685ec6ac2e3068924.jpg
+        url: https://twitter.com/cherylgledhill/status/1091427211561717760
+        name: 
+        content: I didn’t know you had a son! (Sorry I’m super out of the social media
+          loop). Congratulations, and I love the thought behind Ellison (Oscar is
+          a fab name too).
+        published: '2019-02-01T20:04:59+00:00'
+        published_ts: 1549051499
+      activity:
+        type: reply
+        sentence: Cheryl Gledhill replied 'I didn’t know you had a son! (Sorry I’m
+          super out of the social media loop). Con...' to a tweet https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/
+        sentence_html: <a href="https://twitter.com/cherylgledhill">Cheryl Gledhill</a>
+          replied 'I didn’t know you had a son! (Sorry I’m super out of the social
+          media loop). Con...' to a tweet <a href="https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/">https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/</a>
+      target: https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/
+    author: *2
+    type: reply
+    content: "<p>I didn’t know you had a son! (Sorry I’m super out of the social media
+      loop). Congratulations, and I love the thought behind Ellison (Oscar is a fab
+      name too).</p>"
+  '1091427700588240896':
+    id: '1091427700588240896'
+    uri: https://twitter.com/cherylgledhill/status/1091427700588240896
+    source: twitter
+    pubdate: 2019-02-01 12:06:56.000000000 -08:00
+    raw:
+      source: https://brid-gy.appspot.com/comment/twitter/AaronGustafson/1091426472449982465/1091427700588240896
+      verified: true
+      verified_date: '2019-02-01T20:24:18+00:00'
+      id: 585068
+      private: false
+      data:
+        author: &3
+          name: Cheryl Gledhill
+          url: https://twitter.com/cherylgledhill
+          photo: https://webmention.io/avatar/pbs.twimg.com/75ea8940874655b26ab20f60accde08d1e7557ccdf859aa685ec6ac2e3068924.jpg
+        url: https://twitter.com/cherylgledhill/status/1091427700588240896
+        name: 
+        content: Omg I just saw his picture. What a beautiful little boy!
+        published: '2019-02-01T20:06:56+00:00'
+        published_ts: 1549051616
+      activity:
+        type: reply
+        sentence: Cheryl Gledhill replied 'Omg I just saw his picture. What a beautiful
+          little boy!' to a tweet https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/
+        sentence_html: <a href="https://twitter.com/cherylgledhill">Cheryl Gledhill</a>
+          replied 'Omg I just saw his picture. What a beautiful little boy!' to a
+          tweet <a href="https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/">https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/</a>
+      target: https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/
+    author: *3
+    type: reply
+    content: "<p>Omg I just saw his picture. What a beautiful little boy!</p>"
+  '1091428283231551488':
+    id: '1091428283231551488'
+    uri: https://twitter.com/AaronGustafson/status/1091428283231551488
+    source: twitter
+    pubdate: 2019-02-01 12:09:15.000000000 -08:00
+    raw:
+      source: https://brid-gy.appspot.com/comment/twitter/AaronGustafson/1091426472449982465/1091428283231551488
+      verified: true
+      verified_date: '2019-02-01T20:24:17+00:00'
+      id: 585067
+      private: false
+      data:
+        author: &4
+          name: Aaron Gustafson
+          url: https://twitter.com/AaronGustafson
+          photo: https://webmention.io/avatar/pbs.twimg.com/9a465394ee7a970f4160951f103ad1a3ce855b4a6fdd8150fe733aa799863664.jpg
+        url: https://twitter.com/AaronGustafson/status/1091428283231551488
+        name: 
+        content: |-
+          No worries, it’s been AGES since we’ve seen each other :-)<br />
+          <br />
+          (And thanks!)<br />
+          <br />
+          We hope to make it down for a visit again soon. I’ve been talking to <a href="https://twitter.com/johnallsopp">@johnallsopp</a> but the dates haven’t lined up yet. Then you can meet him. One day!
+        published: '2019-02-01T20:09:15+00:00'
+        published_ts: 1549051755
+      activity:
+        type: reply
+        sentence: Aaron Gustafson replied 'No worries, it’s been AGES since we’ve
+          seen each other :-)    (And thanks!)    W...' to a tweet https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/
+        sentence_html: <a href="https://twitter.com/AaronGustafson">Aaron Gustafson</a>
+          replied 'No worries, it’s been AGES since we’ve seen each other :-)    (And
+          thanks!)    W...' to a tweet <a href="https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/">https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/</a>
+      target: https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/
+    author: *4
+    type: reply
+    content: |-
+      <p>No worries, it’s been AGES since we’ve seen each other :-)<br />
+      <br />
+      (And thanks!)<br />
+      <br />
+      We hope to make it down for a visit again soon. I’ve been talking to <a href="https://twitter.com/johnallsopp">@johnallsopp</a> but the dates haven’t lined up yet. Then you can meet him. One day!</p>
+  '1091432195791585280':
+    id: '1091432195791585280'
+    uri: https://twitter.com/cherylgledhill/status/1091432195791585280
+    source: twitter
+    pubdate: 2019-02-01 12:24:47.000000000 -08:00
+    raw:
+      source: https://brid-gy.appspot.com/comment/twitter/AaronGustafson/1091426472449982465/1091432195791585280
+      verified: true
+      verified_date: '2019-02-01T20:51:10+00:00'
+      id: 585084
+      private: false
+      data:
+        author: &5
+          name: Cheryl Gledhill
+          url: https://twitter.com/cherylgledhill
+          photo: https://webmention.io/avatar/pbs.twimg.com/75ea8940874655b26ab20f60accde08d1e7557ccdf859aa685ec6ac2e3068924.jpg
+        url: https://twitter.com/cherylgledhill/status/1091432195791585280
+        name: 
+        content: That would be awesome. How old is he now? Have you travelled much
+          with him yet?
+        published: '2019-02-01T20:24:47+00:00'
+        published_ts: 1549052687
+      activity:
+        type: reply
+        sentence: Cheryl Gledhill replied 'That would be awesome. How old is he now?
+          Have you travelled much with him yet?' to a tweet https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/
+        sentence_html: <a href="https://twitter.com/cherylgledhill">Cheryl Gledhill</a>
+          replied 'That would be awesome. How old is he now? Have you travelled much
+          with him yet?' to a tweet <a href="https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/">https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/</a>
+      target: https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/
+    author: *5
+    type: reply
+    content: "<p>That would be awesome. How old is he now? Have you travelled much
+      with him yet?</p>"
+  '1091470052929335296':
+    id: '1091470052929335296'
+    uri: https://twitter.com/AaronGustafson/status/1091470052929335296
+    source: twitter
+    pubdate: 2019-02-01 14:55:13.000000000 -08:00
+    raw:
+      source: https://brid-gy.appspot.com/comment/twitter/AaronGustafson/1091426472449982465/1091470052929335296
+      verified: true
+      verified_date: '2019-02-01T22:58:35+00:00'
+      id: 585116
+      private: false
+      data:
+        author: &6
+          name: Aaron Gustafson
+          url: https://twitter.com/AaronGustafson
+          photo: https://webmention.io/avatar/pbs.twimg.com/9a465394ee7a970f4160951f103ad1a3ce855b4a6fdd8150fe733aa799863664.jpg
+        url: https://twitter.com/AaronGustafson/status/1091470052929335296
+        name: 
+        content: He turned three in December. We’ve traveled a bit in the States &amp;
+          down to Mexico, but nothing super-far yet.
+        published: '2019-02-01T22:55:13+00:00'
+        published_ts: 1549061713
+      activity:
+        type: reply
+        sentence: Aaron Gustafson replied 'He turned three in December. We’ve traveled
+          a bit in the States &amp; down to Me...' to a tweet https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/
+        sentence_html: <a href="https://twitter.com/AaronGustafson">Aaron Gustafson</a>
+          replied 'He turned three in December. We’ve traveled a bit in the States
+          &amp; down to Me...' to a tweet <a href="https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/">https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/</a>
+      target: https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/
+    author: *6
+    type: reply
+    content: "<p>He turned three in December. We’ve traveled a bit in the States &amp;
+      down to Mexico, but nothing super-far yet.</p>"
+"/notebook/ive-learned-so-much-from-chenjerai-kumanyika/": {}
+"/notebook/unbought-and-unbossed/": {}
+"/notebook/god-was-a-complicated-man-who-did-some-amazing-things/": {}
+"/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/": {}
