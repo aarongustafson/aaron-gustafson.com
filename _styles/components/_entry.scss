@@ -33,6 +33,7 @@ Blog Entry
       margin: 0;
     }
     
+    &__content aside,
     &__footer {
       border-top: 1px solid $color-rule;
       @include rem( padding-top, $default-spacing );

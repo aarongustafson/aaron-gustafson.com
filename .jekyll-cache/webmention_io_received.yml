@@ -212,4 +212,99 @@
 "/notebook/ive-learned-so-much-from-chenjerai-kumanyika/": {}
 "/notebook/unbought-and-unbossed/": {}
 "/notebook/god-was-a-complicated-man-who-did-some-amazing-things/": {}
-"/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/": {}
+"/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/":
+  '586295':
+    id: '586295'
+    uri: https://twitter.com/AaronGustafson/status/1092953369478598657#favorited-by-235699018
+    source: twitter
+    pubdate: 2019-02-06 01:43:30.000000000 +00:00
+    raw:
+      source: https://brid-gy.appspot.com/like/twitter/AaronGustafson/1092953369478598657/235699018
+      verified: true
+      verified_date: '2019-02-06T01:43:30+00:00'
+      id: 586295
+      private: false
+      data:
+        author: &7
+          name: David Dzumba
+          url: https://twitter.com/ddzumba
+          photo: https://webmention.io/avatar/pbs.twimg.com/0159445a30aced25418e1a6f25e29d1a8a27e886d39cb0c7c591694fc91764c2.jpg
+        url: https://twitter.com/AaronGustafson/status/1092953369478598657#favorited-by-235699018
+        name: 
+        content: 
+        published: 
+        published_ts: 
+      activity:
+        type: like
+        sentence: David Dzumba favorited a tweet https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/
+        sentence_html: <a href="https://twitter.com/ddzumba">David Dzumba</a> favorited
+          a tweet <a href="https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/">https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/</a>
+      target: https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/
+    author: *7
+    type: like
+    content: <p><a href="https://twitter.com/ddzumba">David Dzumba</a> favorited a
+      tweet <a href="https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/">https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/</a></p>
+  '586514':
+    id: '586514'
+    uri: https://twitter.com/AaronGustafson/status/1092953369478598657#favorited-by-7801382
+    source: twitter
+    pubdate: 2019-02-06 17:34:53.000000000 +00:00
+    raw:
+      source: https://brid-gy.appspot.com/like/twitter/AaronGustafson/1092953369478598657/7801382
+      verified: true
+      verified_date: '2019-02-06T17:34:53+00:00'
+      id: 586514
+      private: false
+      data:
+        author: &8
+          name: John F Croston III
+          url: https://twitter.com/jfc3
+          photo: https://webmention.io/avatar/pbs.twimg.com/f1fc1ef20ea276a620f675238078672f57d00e9fe48dfb815e286c55737c153f.jpeg
+        url: https://twitter.com/AaronGustafson/status/1092953369478598657#favorited-by-7801382
+        name: 
+        content: 
+        published: 
+        published_ts: 
+      activity:
+        type: like
+        sentence: John F Croston III favorited a tweet https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/
+        sentence_html: <a href="https://twitter.com/jfc3">John F Croston III</a> favorited
+          a tweet <a href="https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/">https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/</a>
+      target: https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/
+    author: *8
+    type: like
+    content: <p><a href="https://twitter.com/jfc3">John F Croston III</a> favorited
+      a tweet <a href="https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/">https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/</a></p>
+  '1093065708433477632':
+    id: '1093065708433477632'
+    uri: https://twitter.com/codepo8/status/1093065708433477632
+    source: twitter
+    pubdate: 2019-02-06 00:35:47.000000000 -08:00
+    raw:
+      source: https://brid-gy.appspot.com/post/twitter/AaronGustafson/1093065708433477632
+      verified: true
+      verified_date: '2019-02-06T08:45:33+00:00'
+      id: 586381
+      private: false
+      data:
+        author: &9
+          name: Chris Heilmann
+          url: https://twitter.com/codepo8
+          photo: https://webmention.io/avatar/pbs.twimg.com/2cb539703b09adb2ef4818c0fa52e2d97c6b8365befe25ba741bbc98ca12fde9.png
+        url: https://twitter.com/codepo8/status/1093065708433477632
+        name: 
+        content: 'Post: LeVar Burton changes lives, one book at a time <a href="https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/">aaron-gustafson.com/notebook/LeVar…</a>'
+        published: '2019-02-06T08:35:47+00:00'
+        published_ts: 1549442147
+      activity:
+        type: link
+        sentence: 'Chris Heilmann posted ''Post: LeVar Burton changes lives, one book
+          at a time aaron-gustafson.com/noteboo...'' linking to https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/'
+        sentence_html: '<a href="https://twitter.com/codepo8">Chris Heilmann</a> posted
+          ''Post: LeVar Burton changes lives, one book at a time aaron-gustafson.com/noteboo...''
+          linking to <a href="https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/">https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/</a>'
+      target: https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/
+    author: *9
+    type: link
+    content: '<p>Post: LeVar Burton changes lives, one book at a time <a href="https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/">aaron-gustafson.com/notebook/LeVar…</a></p>'
+"/notebook/harriet-really-was-a-spy/": {}

@@ -1488,7 +1488,7 @@ Blog Entry
 .entry__jump {
   margin: 0;
 }
-.entry__footer {
+.entry__content aside, .entry__footer {
   border-top: 1px solid #DDD;
   padding-top: 22px;
   padding-top: 1.375rem;
