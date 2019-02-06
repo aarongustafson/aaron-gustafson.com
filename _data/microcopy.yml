@@ -18,7 +18,7 @@ speaking_engagements:
 contact:
   intro: Interested in having me present at your organization or event? Want me to write an article or book for you? Just wanna say hey? Go for it!
 sidebar:
-  about: "Hi there, I’m Aaron and I am passionate about the web. I love to [write](/publications/), [speak](/speaking-engagements/), and [share](/appearances/) everything I know. I live & work in Chattanooga, <abbr title=\"Tennessee\">TN</abbr>. Want to know more? [Read on](/about/)."
+  about: "Hi there, I’m Aaron and I am passionate about the web. I love to [write](/publications/), [speak](/speaking-engagements/), and [share](/appearances/) everything I know. I live & work in Seattle, <abbr aria-title=\"Washington\">WA</abbr>. Want to know more? [Read on](/about/)."
   events: "I often travel for conferences. If I’m coming to your city and you’d like to arrange a private training or consultation while I’m there, feel free to [reach out](/contact/)."
 notebook:
   date_prefix: Posted on
