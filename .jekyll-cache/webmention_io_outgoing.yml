@@ -3310,7 +3310,12 @@ https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-
 https://www.aaron-gustafson.com/notebook/harriet-really-was-a-spy/:
   https://wikipedia.org/wiki/Harriet_Tubman: false
   https://wikipedia.org/wiki/Underground_Railroad: false
-  https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/: false
+  https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/:
+    status: queued
+    summary: Webmention was queued for processing
+    location: https://webmention.io/aaron-gustafson.com/webmention/CVhkTlHoitvpucWgzBsV
+    source: https://www.aaron-gustafson.com/notebook/harriet-really-was-a-spy/
+    target: https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/
   http://harriettubman.com/tubman2.html: false
   http://harriettubman.com/senclintion.html: false
   http://www.harriet-tubman.org/women-rights-suffrage/: false
