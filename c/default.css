@@ -1507,8 +1507,8 @@ Blog Entry
 .entry__series {
   border: 1px solid #DDD;
   background-color: #F9F9F9;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   padding: .2em .4em;
 }
 .entry--teaser {
