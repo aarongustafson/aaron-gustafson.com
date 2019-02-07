@@ -209,6 +209,75 @@
     type: reply
     content: "<p>He turned three in December. We’ve traveled a bit in the States &amp;
       down to Mexico, but nothing super-far yet.</p>"
+  '586598':
+    id: '586598'
+    uri: https://www.aaron-gustafson.com/notebook/harriet-really-was-a-spy/
+    source: false
+    pubdate: 2019-02-06 10:14:21.000000000 -08:00
+    raw:
+      source: https://www.aaron-gustafson.com/notebook/harriet-really-was-a-spy/
+      verified: true
+      verified_date: '2019-02-06T19:51:55+00:00'
+      id: 586598
+      private: false
+      data:
+        author: &7
+          name: Aaron Gustafson
+          url: https://www.aaron-gustafson.com/about
+          photo: 
+        url: https://www.aaron-gustafson.com/notebook/harriet-really-was-a-spy/
+        name: Harriet Really Was a Spy
+        content: |-
+          <p>While the history of slavery in America was covered in my schooling, that education was largely superficial. I do have vivid memories of learning about <a href="https://wikipedia.org/wiki/Harriet_Tubman">Harriet Tubman</a> and <a href="https://wikipedia.org/wiki/Underground_Railroad">the “underground railroad” that helped smuggle slaves out of the slave-owning Confederacy into freedom</a> (such as it was) in the United States and Canada during the Civil War. What I didn’t know is that there is so much more to Harriet Tubman. She was the first woman to lead a U.S. military expedition <em>and</em> she was a spy (and recruiter) for the Union army!</p>
+
+
+
+          <p>During the Civil War, Secretary of State William Seward, whose house was a stop on the underground railroad, ran a spy ring that recruited former slaves. The key to the success of this endeavor was the <a href="https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/">invisibility of blacks</a> to white Confederates. They didn’t see them and they didn’t even consider that they might be intelligent enough to be working against them.</p>
+
+          <p>Their invisibility didn’t mean this work was without risk though. These former slaves were not legally free; they were still considered fugitives under the law. Moreover, Tubman was a well-known abolitionist, so her travels into enemy territory were exceptionally risky.</p>
+
+          <p>Harriet Tubman was incredibly brave, <a href="http://harriettubman.com/tubman2.html">leading raids on rice plantations along the Combahee River in South Carolina</a>, taking out Confederate infrastructure and freeing slaves along the way. She recruited many of them to join the Union army too. She also ventured into Confederate territory on her own, gathering information from local slaves about Confederate plans, troop movements, and where mines had been placed in the rivers.</p>
+
+          <p>Harriet Tubman was a badass!</p>
+
+          <p>Sadly—but unsurprisingly—she never got paid for her work as a spy during her lifetime. In 2003, however, then-Senator <a href="http://harriettubman.com/senclintion.html">Hillary Clinton did issue a payment to Harriet Tubman’s estate</a> as a way to posthumously repay her for her efforts and bravery (and the pension she never received).</p>
+
+          <p>After the war, <a href="http://www.harriet-tubman.org/women-rights-suffrage/">Harriet Tubman took up the cause of women’s suffrage</a> alongside Susan B. Anthony and Emily Howland. Sadly, <a href="https://www.nytimes.com/2019/02/02/opinion/sunday/women-voting-19th-amendment-white-supremacy.html">the role of black women in the suffragist movement has also been undermined and downplayed</a>. We need to <a href="https://wikipedia.org/wiki/African-American_women%27s_suffrage_movement">remember and celebrate their contributions</a> too.</p>
+
+          <p>For more about Harriet Tubman’s wartime history, check out the book <a href="https://www.goodreads.com/book/show/118134.Harriet_Tubman_Secret_Agent">Harriet Tubman, Secret Agent</a> and listen to <a href="https://www.gimletmedia.com/uncivil/the-raid">“The Raid” from Uncivil</a>.</p>
+
+          <p>I don’t think I’m alone in feeling like my education around my country’s history of slavery, the Civil War, and our prejudice against black people, is woefully inadequate. In order to confront the way our society systemically divides, degrades, and destroys black lives, we need to take a long hard look at where this oppression began. If we don’t recognize and own the atrocities of our past (and present), we can’t change them. Education is key. We need to do better.</p>
+        published: '2019-02-06T10:14:21-08:00'
+        published_ts: 1549476861
+      activity:
+        type: link
+        sentence: Aaron Gustafson posted 'While the history of slavery in America
+          was covered in my schooling, that educat...' linking to https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/
+        sentence_html: <a href="https://www.aaron-gustafson.com/about">Aaron Gustafson</a>
+          posted 'While the history of slavery in America was covered in my schooling,
+          that educat...' linking to <a href="https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/">https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/</a>
+      target: https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/
+    author: *7
+    type: link
+    title: Harriet Really Was a Spy
+    content: |-
+      <p>While the history of slavery in America was covered in my schooling, that education was largely superficial. I do have vivid memories of learning about <a href="https://wikipedia.org/wiki/Harriet_Tubman">Harriet Tubman</a> and <a href="https://wikipedia.org/wiki/Underground_Railroad">the “underground railroad” that helped smuggle slaves out of the slave-owning Confederacy into freedom</a> (such as it was) in the United States and Canada during the Civil War. What I didn’t know is that there is so much more to Harriet Tubman. She was the first woman to lead a U.S. military expedition <em>and</em> she was a spy (and recruiter) for the Union army!</p>
+
+      <p>During the Civil War, Secretary of State William Seward, whose house was a stop on the underground railroad, ran a spy ring that recruited former slaves. The key to the success of this endeavor was the <a href="https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/">invisibility of blacks</a> to white Confederates. They didn’t see them and they didn’t even consider that they might be intelligent enough to be working against them.</p>
+
+      <p>Their invisibility didn’t mean this work was without risk though. These former slaves were not legally free; they were still considered fugitives under the law. Moreover, Tubman was a well-known abolitionist, so her travels into enemy territory were exceptionally risky.</p>
+
+      <p>Harriet Tubman was incredibly brave, <a href="http://harriettubman.com/tubman2.html">leading raids on rice plantations along the Combahee River in South Carolina</a>, taking out Confederate infrastructure and freeing slaves along the way. She recruited many of them to join the Union army too. She also ventured into Confederate territory on her own, gathering information from local slaves about Confederate plans, troop movements, and where mines had been placed in the rivers.</p>
+
+      <p>Harriet Tubman was a badass!</p>
+
+      <p>Sadly—but unsurprisingly—she never got paid for her work as a spy during her lifetime. In 2003, however, then-Senator <a href="http://harriettubman.com/senclintion.html">Hillary Clinton did issue a payment to Harriet Tubman’s estate</a> as a way to posthumously repay her for her efforts and bravery (and the pension she never received).</p>
+
+      <p>After the war, <a href="http://www.harriet-tubman.org/women-rights-suffrage/">Harriet Tubman took up the cause of women’s suffrage</a> alongside Susan B. Anthony and Emily Howland. Sadly, <a href="https://www.nytimes.com/2019/02/02/opinion/sunday/women-voting-19th-amendment-white-supremacy.html">the role of black women in the suffragist movement has also been undermined and downplayed</a>. We need to <a href="https://wikipedia.org/wiki/African-American_women%27s_suffrage_movement">remember and celebrate their contributions</a> too.</p>
+
+      <p>For more about Harriet Tubman’s wartime history, check out the book <a href="https://www.goodreads.com/book/show/118134.Harriet_Tubman_Secret_Agent">Harriet Tubman, Secret Agent</a> and listen to <a href="https://www.gimletmedia.com/uncivil/the-raid">“The Raid” from Uncivil</a>.</p>
+
+      <p>I don’t think I’m alone in feeling like my education around my country’s history of slavery, the Civil War, and our prejudice against black people, is woefully inadequate. In order to confront the way our society systemically divides, degrades, and destroys black lives, we need to take a long hard look at where this oppression began. If we don’t recognize and own the atrocities of our past (and present), we can’t change them. Education is key. We need to do better.</p>
 "/notebook/ive-learned-so-much-from-chenjerai-kumanyika/": {}
 "/notebook/unbought-and-unbossed/": {}
 "/notebook/god-was-a-complicated-man-who-did-some-amazing-things/": {}
@@ -225,7 +294,7 @@
       id: 586295
       private: false
       data:
-        author: &7
+        author: &8
           name: David Dzumba
           url: https://twitter.com/ddzumba
           photo: https://webmention.io/avatar/pbs.twimg.com/0159445a30aced25418e1a6f25e29d1a8a27e886d39cb0c7c591694fc91764c2.jpg
@@ -240,7 +309,7 @@
         sentence_html: <a href="https://twitter.com/ddzumba">David Dzumba</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/">https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/</a>
       target: https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/
-    author: *7
+    author: *8
     type: like
     content: <p><a href="https://twitter.com/ddzumba">David Dzumba</a> favorited a
       tweet <a href="https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/">https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/</a></p>
@@ -256,7 +325,7 @@
       id: 586514
       private: false
       data:
-        author: &8
+        author: &9
           name: John F Croston III
           url: https://twitter.com/jfc3
           photo: https://webmention.io/avatar/pbs.twimg.com/f1fc1ef20ea276a620f675238078672f57d00e9fe48dfb815e286c55737c153f.jpeg
@@ -271,7 +340,7 @@
         sentence_html: <a href="https://twitter.com/jfc3">John F Croston III</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/">https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/</a>
       target: https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/
-    author: *8
+    author: *9
     type: like
     content: <p><a href="https://twitter.com/jfc3">John F Croston III</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/">https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/</a></p>
@@ -287,7 +356,7 @@
       id: 586381
       private: false
       data:
-        author: &9
+        author: &10
           name: Chris Heilmann
           url: https://twitter.com/codepo8
           photo: https://webmention.io/avatar/pbs.twimg.com/2cb539703b09adb2ef4818c0fa52e2d97c6b8365befe25ba741bbc98ca12fde9.png
@@ -304,7 +373,8 @@
           ''Post: LeVar Burton changes lives, one book at a time aaron-gustafson.com/noteboo...''
           linking to <a href="https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/">https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/</a>'
       target: https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/
-    author: *9
+    author: *10
     type: link
     content: '<p>Post: LeVar Burton changes lives, one book at a time <a href="https://www.aaron-gustafson.com/notebook/LeVar-Burton-changes-lives-one-book-at-a-time/">aaron-gustafson.com/notebook/LeVar…</a></p>'
 "/notebook/harriet-really-was-a-spy/": {}
+"/notebook/aretha-commanded-respect/": {}
