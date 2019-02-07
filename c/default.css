@@ -1504,6 +1504,13 @@ Blog Entry
 .entry__sharing {
   text-align: center;
 }
+.entry__series {
+  border: 1px solid #DDD;
+  background-color: #F9F9F9;
+  font-size: 18px;
+  font-size: 1.125rem;
+  padding: .2em .4em;
+}
 .entry--teaser {
   display: -webkit-box;
   display: -ms-flexbox;

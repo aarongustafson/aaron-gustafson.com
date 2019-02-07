@@ -51,6 +51,15 @@ Blog Entry
     &__sharing {
       text-align: center;
     }
+
+    &__series {
+      border: 1px solid $color-grey-light;
+      background-color: $color-off-white;
+
+      @include rem( font-size, $font-size-caption );
+
+      padding: .2em .4em;
+    }
     
     &--teaser {
       display: flex;
