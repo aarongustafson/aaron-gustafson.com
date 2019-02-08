@@ -1,4 +1,5 @@
 #!/bin/bash
+su aarongu
 
 # Conver the .plist
 plutil -p /Users/aarongu/.MacOSX/environment.plist > /tmp/$EUID.vars
@@ -18,4 +19,4 @@ rm /tmp/$EUID.vars
 
 cd /Users/aarongu/Dropbox/Sites/aaron-gustafson.com
 # printenv
-su aarongu rake go
+rake go
