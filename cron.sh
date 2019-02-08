@@ -23,4 +23,5 @@ rm /tmp/$EUID.vars
 cd /Users/aarongu/Dropbox/Sites/aaron-gustafson.com
 
 # Make sure the ENV persists
+bundle install
 sudo -E -u aarongu rake go
