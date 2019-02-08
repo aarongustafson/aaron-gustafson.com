@@ -11,7 +11,7 @@ ruby -p -i -e "gsub('\" => \"', '=')" /tmp/$EUID.vars
 ruby -p -i -e "gsub('\"', '')" /tmp/$EUID.vars
 
 # execute!
-. /tmp/$EUID.vars
+sudo -u aarongu /tmp/$EUID.vars
 
 # remove it
 rm /tmp/$EUID.vars
