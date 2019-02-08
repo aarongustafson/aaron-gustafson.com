@@ -1,3 +1,3 @@
 #!/bin/bash
 cd /Users/aarongu/Dropbox/Sites/aaron-gustafson.com
-rake go
+su aarongu rake go
