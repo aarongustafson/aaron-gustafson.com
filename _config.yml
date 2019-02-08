@@ -54,6 +54,8 @@ exclude:
   - .gitignore
   # Docker
   - docker-compose.yml
+  # Cron
+  - cron.sh
 
 # Project Structure
 destination: _site
