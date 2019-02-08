@@ -11,11 +11,11 @@ ruby -p -i -e "gsub('\" => \"', '=')" /tmp/$EUID.vars
 ruby -p -i -e "gsub('\"', '')" /tmp/$EUID.vars
 
 # execute!
-sudo -u aarongu /tmp/$EUID.vars
+source /tmp/$EUID.vars
 
 # remove it
-rm /tmp/$EUID.vars
+#rm /tmp/$EUID.vars
 
 cd /Users/aarongu/Dropbox/Sites/aaron-gustafson.com
-# printenv
-sudo -u aarongu rake go
+# sudo -E -u aarongu printenv
+sudo -E -u aarongu rake go
