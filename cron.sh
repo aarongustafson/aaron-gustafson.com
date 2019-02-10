@@ -17,11 +17,10 @@ source /tmp/$EUID.vars
 rm /tmp/$EUID.vars
 
 # Did we get the vars?
-# sudo -E -u aarongu printenv
+printenv
 
 # go into this folder
 cd /Users/aarongu/Dropbox/Sites/aaron-gustafson.com
 
 # Make sure the ENV persists
-bundle install
-sudo -E -u aarongu rake go
+rake go
