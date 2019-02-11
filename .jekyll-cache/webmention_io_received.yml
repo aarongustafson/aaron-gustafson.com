@@ -15961,7 +15961,69 @@
     type: like
     content: <p><a href="https://www.calumryan.com/">Calum Ryan</a> liked a post <a
       href="https://www.aaron-gustafson.com/notebook/pwa-qa/">https://www.aaron-gustafson.com/notebook/pwa-qa/</a></p>
-"/notebook/kimberly-bryant-is-tackling-tech-monocultures-head-on/": {}
+"/notebook/kimberly-bryant-is-tackling-tech-monocultures-head-on/":
+  '587487':
+    id: '587487'
+    uri: https://twitter.com/AaronGustafson/status/1094391123190124546#favorited-by-227117732
+    source: twitter
+    pubdate: 2019-02-10 01:02:18.000000000 +00:00
+    raw:
+      source: https://brid-gy.appspot.com/like/twitter/AaronGustafson/1094391123190124546/227117732
+      verified: true
+      verified_date: '2019-02-10T01:02:18+00:00'
+      id: 587487
+      private: false
+      data:
+        author: &492
+          name: Marcy Sutton
+          url: https://twitter.com/marcysutton
+          photo: https://webmention.io/avatar/pbs.twimg.com/179955270b270d4cd457b1541a62d13159fec8750641a591e288f17a94a06645.jpg
+        url: https://twitter.com/AaronGustafson/status/1094391123190124546#favorited-by-227117732
+        name: 
+        content: 
+        published: 
+        published_ts: 
+      activity:
+        type: like
+        sentence: Marcy Sutton favorited a tweet https://www.aaron-gustafson.com/notebook/kimberly-bryant-is-tackling-tech-monocultures-head-on/
+        sentence_html: <a href="https://twitter.com/marcysutton">Marcy Sutton</a>
+          favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/kimberly-bryant-is-tackling-tech-monocultures-head-on/">https://www.aaron-gustafson.com/notebook/kimberly-bryant-is-tackling-tech-monocultures-head-on/</a>
+      target: https://www.aaron-gustafson.com/notebook/kimberly-bryant-is-tackling-tech-monocultures-head-on/
+    author: *492
+    type: like
+    content: <p><a href="https://twitter.com/marcysutton">Marcy Sutton</a> favorited
+      a tweet <a href="https://www.aaron-gustafson.com/notebook/kimberly-bryant-is-tackling-tech-monocultures-head-on/">https://www.aaron-gustafson.com/notebook/kimberly-bryant-is-tackling-tech-monocultures-head-on/</a></p>
+  '587492':
+    id: '587492'
+    uri: https://twitter.com/AaronGustafson/status/1094391123190124546#favorited-by-218718767
+    source: twitter
+    pubdate: 2019-02-10 01:29:39.000000000 +00:00
+    raw:
+      source: https://brid-gy.appspot.com/like/twitter/AaronGustafson/1094391123190124546/218718767
+      verified: true
+      verified_date: '2019-02-10T01:29:39+00:00'
+      id: 587492
+      private: false
+      data:
+        author: &493
+          name: Carlos Vazquez
+          url: https://twitter.com/Pyflon
+          photo: https://webmention.io/avatar/pbs.twimg.com/17dae5e60e1cb11bdb7db1acaf5e175f0079e10afe2e59841ef97f6019a4a6a6.png
+        url: https://twitter.com/AaronGustafson/status/1094391123190124546#favorited-by-218718767
+        name: 
+        content: 
+        published: 
+        published_ts: 
+      activity:
+        type: like
+        sentence: Carlos Vazquez favorited a tweet https://www.aaron-gustafson.com/notebook/kimberly-bryant-is-tackling-tech-monocultures-head-on/
+        sentence_html: <a href="https://twitter.com/Pyflon">Carlos Vazquez</a> favorited
+          a tweet <a href="https://www.aaron-gustafson.com/notebook/kimberly-bryant-is-tackling-tech-monocultures-head-on/">https://www.aaron-gustafson.com/notebook/kimberly-bryant-is-tackling-tech-monocultures-head-on/</a>
+      target: https://www.aaron-gustafson.com/notebook/kimberly-bryant-is-tackling-tech-monocultures-head-on/
+    author: *493
+    type: like
+    content: <p><a href="https://twitter.com/Pyflon">Carlos Vazquez</a> favorited
+      a tweet <a href="https://www.aaron-gustafson.com/notebook/kimberly-bryant-is-tackling-tech-monocultures-head-on/">https://www.aaron-gustafson.com/notebook/kimberly-bryant-is-tackling-tech-monocultures-head-on/</a></p>
 "/notebook/links/working-towards-better-naming/": {}
 "/notebook/links/collecting-user-data-while-protecting-user-privacy/": {}
 "/notebook/links/the-internet-isn-t-forever/": {}
@@ -16026,7 +16088,7 @@
       id: 576411
       private: false
       data:
-        author: &492
+        author: &494
           name: Baz Ⓐⓔⓥ☭///
           url: https://twitter.com/baz_wtf
           photo: https://webmention.io/avatar/pbs.twimg.com/d720a26895e35819f4bf54cd521cd168e802d5ba7baa5914e6a44da8aec8c308.jpg
@@ -16044,9 +16106,10 @@
           'Web accessibility is fundamental and should be a priority in your design
           and dev...' linking to <a href="https://www.aaron-gustafson.com/notebook/links/website_accessibility_through_responsive_web_design/">https://www.aaron-gustafson.com/notebook/links/website_accessibility_through_responsive_web_design/</a>
       target: https://www.aaron-gustafson.com/notebook/links/website_accessibility_through_responsive_web_design/
-    author: *492
+    author: *494
     type: link
     content: <p>Web accessibility is fundamental and should be a priority in your
       design and development. <a href="https://www.aaron-gustafson.com/notebook/links/website_accessibility_through_responsive_web_design/">aaron-gustafson.com/notebook/links…</a></p>
 "/notebook/links/smart-bundling-legacy-code-browsers/": {}
 "/notebook/links/online-hate-is-a-deadly-threat-when-will-tech-companies-finally-take-it-seriously/": {}
+"/notebook/he-invented-the-search-engine/": {}
