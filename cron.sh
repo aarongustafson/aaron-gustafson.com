@@ -17,7 +17,7 @@ source /tmp/$EUID.vars
 rm /tmp/$EUID.vars
 
 # Did we get the vars?
-printenv
+# printenv
 
 # go into this folder
 cd /Users/aarongu/Dropbox/Sites/aaron-gustafson.com
