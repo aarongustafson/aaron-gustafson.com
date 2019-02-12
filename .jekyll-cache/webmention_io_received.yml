@@ -16112,4 +16112,79 @@
       design and development. <a href="https://www.aaron-gustafson.com/notebook/links/website_accessibility_through_responsive_web_design/">aaron-gustafson.com/notebook/links…</a></p>
 "/notebook/links/smart-bundling-legacy-code-browsers/": {}
 "/notebook/links/online-hate-is-a-deadly-threat-when-will-tech-companies-finally-take-it-seriously/": {}
-"/notebook/he-invented-the-search-engine/": {}
+"/notebook/he-invented-the-search-engine/":
+  '588120':
+    id: '588120'
+    uri: https://twitter.com/AaronGustafson/status/1095040271530819589#favorited-by-14867861
+    source: twitter
+    pubdate: 2019-02-11 19:47:38.000000000 +00:00
+    raw:
+      source: https://brid-gy.appspot.com/like/twitter/AaronGustafson/1095040271530819589/14867861
+      verified: true
+      verified_date: '2019-02-11T19:47:38+00:00'
+      id: 588120
+      private: false
+      data:
+        author: &495
+          name: Chris Taylor
+          url: https://twitter.com/mrwiblog
+          photo: https://webmention.io/avatar/pbs.twimg.com/e9614d0f3312c8764e9254813162fb47cc074474d362354df435a1cf09868a6d.jpeg
+        url: https://twitter.com/AaronGustafson/status/1095040271530819589#favorited-by-14867861
+        name: 
+        content: 
+        published: 
+        published_ts: 
+      activity:
+        type: like
+        sentence: Chris Taylor favorited a tweet https://www.aaron-gustafson.com/notebook/he-invented-the-search-engine/
+        sentence_html: <a href="https://twitter.com/mrwiblog">Chris Taylor</a> favorited
+          a tweet <a href="https://www.aaron-gustafson.com/notebook/he-invented-the-search-engine/">https://www.aaron-gustafson.com/notebook/he-invented-the-search-engine/</a>
+      target: https://www.aaron-gustafson.com/notebook/he-invented-the-search-engine/
+    author: *495
+    type: like
+    content: <p><a href="https://twitter.com/mrwiblog">Chris Taylor</a> favorited
+      a tweet <a href="https://www.aaron-gustafson.com/notebook/he-invented-the-search-engine/">https://www.aaron-gustafson.com/notebook/he-invented-the-search-engine/</a></p>
+  '1094973275829161984':
+    id: '1094973275829161984'
+    uri: https://twitter.com/jasondmoss/status/1094973275829161984
+    source: twitter
+    pubdate: 2019-02-11 06:55:47.000000000 -08:00
+    raw:
+      source: https://brid-gy.appspot.com/post/twitter/AaronGustafson/1094973275829161984
+      verified: true
+      verified_date: '2019-02-11T15:20:59+00:00'
+      id: 588075
+      private: false
+      data:
+        author: &496
+          name: "\U0001F1E8\U0001F1E6 ssoɯpuosɐɾ@"
+          url: https://twitter.com/jasondmoss
+          photo: https://webmention.io/avatar/pbs.twimg.com/136e4587f4650c63d076ed5b1214dd1793b7cf83ecdec4c6c74802411d387a99.jpg
+        url: https://twitter.com/jasondmoss/status/1094973275829161984
+        name: 
+        content: |-
+          <a href="https://twitter.com/alanemtage">@AlanEmtage</a> is a pretty fascinating guy... At a time in the tech industry with a lot of posturing, gloating, and one-upmanship, Alan's humility shines.<br />
+          <br />
+          <a href="https://twitter.com/search?q=%23History">#History</a> <a href="https://twitter.com/search?q=%23Origins">#Origins</a> <a href="https://twitter.com/search?q=%23Internet">#Internet</a> <a href="https://twitter.com/search?q=%23Search">#Search</a><br />
+          <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a><br />
+          <a href="https://www.aaron-gustafson.com/notebook/he-invented-the-search-engine/">aaron-gustafson.com/notebook/he-in…</a>
+        published: '2019-02-11T14:55:47+00:00'
+        published_ts: 1549896947
+      activity:
+        type: link
+        sentence: "\U0001F1E8\U0001F1E6 ssoɯpuosɐɾ@ posted '@AlanEmtage is a pretty
+          fascinating guy... At a time in the tech industry with a...' linking to
+          https://www.aaron-gustafson.com/notebook/he-invented-the-search-engine/"
+        sentence_html: "<a href=\"https://twitter.com/jasondmoss\">\U0001F1E8\U0001F1E6
+          ssoɯpuosɐɾ@</a> posted '@AlanEmtage is a pretty fascinating guy... At a
+          time in the tech industry with a...' linking to <a href=\"https://www.aaron-gustafson.com/notebook/he-invented-the-search-engine/\">https://www.aaron-gustafson.com/notebook/he-invented-the-search-engine/</a>"
+      target: https://www.aaron-gustafson.com/notebook/he-invented-the-search-engine/
+    author: *496
+    type: link
+    content: |-
+      <p><a href="https://twitter.com/alanemtage">@AlanEmtage</a> is a pretty fascinating guy… At a time in the tech industry with a lot of posturing, gloating, and one-upmanship, Alan’s humility shines.<br />
+      <br />
+      <a href="https://twitter.com/search?q=%23History">#History</a> <a href="https://twitter.com/search?q=%23Origins">#Origins</a> <a href="https://twitter.com/search?q=%23Internet">#Internet</a> <a href="https://twitter.com/search?q=%23Search">#Search</a><br />
+      <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a><br />
+      <a href="https://www.aaron-gustafson.com/notebook/he-invented-the-search-engine/">aaron-gustafson.com/notebook/he-in…</a></p>
+"/notebook/chuck-d-challenges-me-to-confront-myself/": {}
