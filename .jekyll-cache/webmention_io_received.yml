@@ -16261,6 +16261,37 @@
           </tr>
         </tbody>
       </table>
+  '588364':
+    id: '588364'
+    uri: https://twitter.com/AaronGustafson/status/1095131110785339393#favorited-by-22161724
+    source: twitter
+    pubdate: 2019-02-13 02:22:43.000000000 +00:00
+    raw:
+      source: https://brid-gy.appspot.com/like/twitter/AaronGustafson/1095131110785339393/22161724
+      verified: true
+      verified_date: '2019-02-13T02:22:43+00:00'
+      id: 588364
+      private: false
+      data:
+        author: &499
+          name: Manuel Matuzović
+          url: https://twitter.com/mmatuzo
+          photo: https://webmention.io/avatar/pbs.twimg.com/bef8b2059829d0a46f469f0bc064f977f6be821d88dcedf0c01a27bb2f1109e9.jpeg
+        url: https://twitter.com/AaronGustafson/status/1095131110785339393#favorited-by-22161724
+        name: 
+        content: 
+        published: 
+        published_ts: 
+      activity:
+        type: like
+        sentence: Manuel Matuzović favorited a tweet https://www.aaron-gustafson.com/notebook/chuck-d-challenges-me-to-confront-myself/
+        sentence_html: <a href="https://twitter.com/mmatuzo">Manuel Matuzović</a>
+          favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/chuck-d-challenges-me-to-confront-myself/">https://www.aaron-gustafson.com/notebook/chuck-d-challenges-me-to-confront-myself/</a>
+      target: https://www.aaron-gustafson.com/notebook/chuck-d-challenges-me-to-confront-myself/
+    author: *499
+    type: like
+    content: <p><a href="https://twitter.com/mmatuzo">Manuel Matuzović</a> favorited
+      a tweet <a href="https://www.aaron-gustafson.com/notebook/chuck-d-challenges-me-to-confront-myself/">https://www.aaron-gustafson.com/notebook/chuck-d-challenges-me-to-confront-myself/</a></p>
 "/notebook/a-fundamental-disconnect/":
   '557606097096564736':
     id: '557606097096564736'
@@ -16274,7 +16305,7 @@
       id: 14260
       private: false
       data:
-        author: &499
+        author: &500
           name: Sylvain Galineau
           url: https://twitter.com/sgalineau
           photo: https://webmention.io/avatar/twitter.com/9ded2a361f1c66649260fbbc7021be407c9026aa95e0b4ba648c8d3005372f7c.png
@@ -16289,7 +16320,7 @@
         sentence_html: <a href="https://twitter.com/sgalineau">Sylvain Galineau</a>
           favorited a tweet <a href="http://aaron-gustafson.com/notebook/a-fundamental-disconnect/">http://aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: http://aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *499
+    author: *500
     type: like
     content: <p><a href="https://twitter.com/sgalineau">Sylvain Galineau</a> favorited
       a tweet <a href="http://aaron-gustafson.com/notebook/a-fundamental-disconnect/">http://aaron-gustafson.com/notebook/a-fundamental-disconnect/</a></p>
@@ -16330,7 +16361,7 @@
       id: 15599
       private: false
       data:
-        author: &500
+        author: &501
           name: Aaron Gustafson
           url: http://aaron-gustafson.com/about
           photo: 
@@ -16344,7 +16375,7 @@
         sentence: 
         sentence_html: 
       target: http://aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *500
+    author: *501
     type: post
     title: Three Worthwhile Posts on Progressive Enhancement | Aaron Gustafson
     content: ''
@@ -16360,7 +16391,7 @@
       id: 16624
       private: false
       data:
-        author: &501
+        author: &502
           name: Aaron Gustafson
           url: http://www.aaron-gustafson.com/about
           photo: 
@@ -16374,7 +16405,7 @@
         sentence: 
         sentence_html: 
       target: http://aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *501
+    author: *502
     type: post
     title: Three Worthwhile Posts on Progressive Enhancement | Aaron Gustafson
     content: ''
@@ -16390,7 +16421,7 @@
       id: 58184
       private: false
       data:
-        author: &502
+        author: &503
           name: Tim Kadlec
           url: https://twitter.com/tkadlec
           photo: https://webmention.io/avatar/twitter.com/ef82f596d044f637c43ebb38059d99447745f5a9a7ad637b4da1f079c1afa9ec.jpeg
@@ -16405,7 +16436,7 @@
         sentence_html: <a href="https://twitter.com/tkadlec">Tim Kadlec</a> favorited
           a tweet <a href="http://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">http://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: http://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *502
+    author: *503
     type: like
     content: <p><a href="https://twitter.com/tkadlec">Tim Kadlec</a> favorited a tweet
       <a href="http://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">http://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a></p>
@@ -16421,7 +16452,7 @@
       id: 96843
       private: false
       data:
-        author: &503
+        author: &504
           name: Aaron Gustafson
           url: https://www.aaron-gustafson.com/about
           photo: 
@@ -16435,7 +16466,7 @@
         sentence: 
         sentence_html: 
       target: http://aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *503
+    author: *504
     type: post
     title: Three Worthwhile Posts on Progressive Enhancement | Aaron Gustafson
     content: ''
@@ -16451,7 +16482,7 @@
       id: 350114
       private: false
       data:
-        author: &504
+        author: &505
           name: Adam Spelbring
           url: https://twitter.com/adamspelbring
           photo: https://webmention.io/avatar/pbs.twimg.com/d2ef406a6984f9cd5dca68c9be9d0c40a2e382428bea68b41863515f46a65091.png
@@ -16467,7 +16498,7 @@
         sentence_html: <a href="https://twitter.com/adamspelbring">Adam Spelbring</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *504
+    author: *505
     type: like
     content: <p><a href="https://twitter.com/adamspelbring">Adam Spelbring</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a></p>
@@ -16483,7 +16514,7 @@
       id: 350115
       private: false
       data:
-        author: &505
+        author: &506
           name: Greg Smith
           url: https://twitter.com/elmnt
           photo: https://webmention.io/avatar/pbs.twimg.com/8d0fed69339657bfa4ab618c7de6f94ff835521fc473949dd17801305f98bdc8.jpeg
@@ -16499,7 +16530,7 @@
         sentence_html: <a href="https://twitter.com/elmnt">Greg Smith</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *505
+    author: *506
     type: like
     content: <p><a href="https://twitter.com/elmnt">Greg Smith</a> favorited a tweet
       <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a></p>
@@ -16515,7 +16546,7 @@
       id: 350116
       private: false
       data:
-        author: &506
+        author: &507
           name: Sander van Dragt
           url: https://twitter.com/svandragt
           photo: https://webmention.io/avatar/pbs.twimg.com/3acccc3052a08bedcb6c55d3088a78e0abb6bc34c3628885abeb77d5b81fc1a8.png
@@ -16531,7 +16562,7 @@
         sentence_html: <a href="https://twitter.com/svandragt">Sander van Dragt</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *506
+    author: *507
     type: like
     content: <p><a href="https://twitter.com/svandragt">Sander van Dragt</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a></p>
@@ -16547,7 +16578,7 @@
       id: 350136
       private: false
       data:
-        author: &507
+        author: &508
           name: Jeffrey Zeldman
           url: https://twitter.com/zeldman
           photo: https://webmention.io/avatar/pbs.twimg.com/a17462e8d22a2e20e85b9300bdd6d0c3fc79a691f4ae79c644f6997d76b09765.jpeg
@@ -16563,7 +16594,7 @@
         sentence_html: <a href="https://twitter.com/zeldman">Jeffrey Zeldman</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *507
+    author: *508
     type: like
     content: <p><a href="https://twitter.com/zeldman">Jeffrey Zeldman</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a></p>
@@ -16579,7 +16610,7 @@
       id: 353191
       private: false
       data:
-        author: &508
+        author: &509
           name: Michael Spellacy
           url: https://twitter.com/Spellacy
           photo: https://webmention.io/avatar/pbs.twimg.com/e6aeae98e12598f4e8ee44875a5b4aa07d6c01701c930cf296ad8ff9a0d5579b.jpeg
@@ -16595,7 +16626,7 @@
         sentence_html: <a href="https://twitter.com/Spellacy">Michael Spellacy</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *508
+    author: *509
     type: like
     content: <p><a href="https://twitter.com/Spellacy">Michael Spellacy</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a></p>
@@ -16611,7 +16642,7 @@
       id: 384630
       private: false
       data:
-        author: &509
+        author: &510
           name: aq
           url: https://twitter.com/assassinacc
           photo: https://webmention.io/avatar/pbs.twimg.com/fa95585512b1980141e9cbc9cf39ddfa32798cce6cb7a0607f6a84bb5081f1e5.png
@@ -16627,7 +16658,7 @@
         sentence_html: <a href="https://twitter.com/assassinacc">aq</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *509
+    author: *510
     type: like
     content: <p><a href="https://twitter.com/assassinacc">aq</a> favorited a tweet
       <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a></p>
@@ -16643,7 +16674,7 @@
       id: 477984
       private: false
       data:
-        author: &510
+        author: &511
           name: Morten Rand-Hendriksen
           url: https://twitter.com/mor10
           photo: https://webmention.io/avatar/pbs.twimg.com/1db606704b3ac1e4af2c6a660a1e3855a5f3f9e67a40ff13d8d42a889f787924.jpg
@@ -16660,7 +16691,7 @@
         sentence_html: <a href="https://twitter.com/mor10">Morten Rand-Hendriksen</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *510
+    author: *511
     type: like
     content: <p><a href="https://twitter.com/mor10">Morten Rand-Hendriksen</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a></p>
@@ -16676,7 +16707,7 @@
       id: 478114
       private: false
       data:
-        author: &511
+        author: &512
           name: negi4a
           url: https://twitter.com/negi4a
           photo: https://webmention.io/avatar/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png
@@ -16692,7 +16723,7 @@
         sentence_html: <a href="https://twitter.com/negi4a">negi4a</a> favorited a
           tweet <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *511
+    author: *512
     type: like
     content: <p><a href="https://twitter.com/negi4a">negi4a</a> favorited a tweet
       <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a></p>
@@ -17125,7 +17156,7 @@
       id: 553393
       private: false
       data:
-        author: &512
+        author: &513
           name: Aaron Gustafson
           url: https://www.aaron-gustafson.com/about
           photo: 
@@ -17157,7 +17188,7 @@
           posted ''PPK nails it as usual:        Back-enders work with only one environment,
           their ...'' linking to <a href="http://aaron-gustafson.com/notebook/a-fundamental-disconnect/">http://aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>'
       target: http://aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *512
+    author: *513
     type: link
     title: Front End and Back End
     content: |-
@@ -17189,7 +17220,7 @@
       id: 14255
       private: false
       data:
-        author: &513
+        author: &514
           name: Peter-Paul Koch
           url: http://quirksmode.org/
           photo: https://webmention.io/avatar/twitter.com/8869f818205f640211694397ed00258ff51f4a7ecdd691319afb3ac1db468597.jpeg
@@ -17206,7 +17237,7 @@
         sentence_html: <a href="http://quirksmode.org/">Peter-Paul Koch</a> replied
           '@AaronGustafson Yes. When did you write that?' to a tweet <a href="http://aaron-gustafson.com/notebook/a-fundamental-disconnect/">http://aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: http://aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *513
+    author: *514
     type: reply
     content: <p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a>
       Yes. When did you write that?</p>
@@ -17222,7 +17253,7 @@
       id: 14254
       private: false
       data:
-        author: &514
+        author: &515
           name: Aaron Gustafson
           url: http://aaron-gustafson.com/
           photo: https://twitter.com/AaronGustafson/profile_image?size=original
@@ -17237,7 +17268,7 @@
         sentence_html: <a href="http://aaron-gustafson.com/">Aaron Gustafson</a> replied
           '@ppk September.' to a tweet <a href="http://aaron-gustafson.com/notebook/a-fundamental-disconnect/">http://aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: http://aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *514
+    author: *515
     type: reply
     content: <p><a href="https://twitter.com/ppk" rel="nofollow">@ppk</a> September.</p>
   '557649890848047108':
@@ -17252,7 +17283,7 @@
       id: 14267
       private: false
       data:
-        author: &515
+        author: &516
           name: Markus Angermeier
           url: http://kosmar.de/
           photo: https://webmention.io/avatar/twitter.com/aedcf5503a6ac2a7e46ca0eb383d0218c162bfbf6c77894c7ac4f3db26dacf56.jpeg
@@ -17268,7 +17299,7 @@
         sentence_html: <a href="http://kosmar.de/">Markus Angermeier</a> retweeted
           a tweet <a href="http://aaron-gustafson.com/notebook/a-fundamental-disconnect/">http://aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: http://aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *515
+    author: *516
     type: repost
     content: <p><a href="http://kosmar.de/">Markus Angermeier</a> retweeted a tweet
       <a href="http://aaron-gustafson.com/notebook/a-fundamental-disconnect/">http://aaron-gustafson.com/notebook/a-fundamental-disconnect/</a></p>
@@ -17284,7 +17315,7 @@
       id: 14357
       private: false
       data:
-        author: &516
+        author: &517
           name: david kaye
           url: https://github.com/dfkaye
           photo: https://webmention.io/avatar/twitter.com/6a4ee150e93683ce5058ef87bb810bd7eba6173233a212e00d6ca7cbe5f7ec4b.jpeg
@@ -17300,7 +17331,7 @@
         sentence_html: <a href="https://github.com/dfkaye">david kaye</a> retweeted
           a tweet <a href="http://aaron-gustafson.com/notebook/a-fundamental-disconnect/">http://aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: http://aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *516
+    author: *517
     type: repost
     content: <p><a href="https://github.com/dfkaye">david kaye</a> retweeted a tweet
       <a href="http://aaron-gustafson.com/notebook/a-fundamental-disconnect/">http://aaron-gustafson.com/notebook/a-fundamental-disconnect/</a></p>
@@ -17316,7 +17347,7 @@
       id: 553400
       private: false
       data:
-        author: &517
+        author: &518
           name: Aaron Gustafson
           url: https://www.aaron-gustafson.com/about
           photo: 
@@ -17353,7 +17384,7 @@
           posted 'Another great post from Tim. The sooner we recognize how little
           we actually cont...' linking to <a href="http://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">http://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: http://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *517
+    author: *518
     type: link
     title: Thriving in Unpredictability
     content: |-
@@ -17390,7 +17421,7 @@
       id: 58225
       private: false
       data:
-        author: &518
+        author: &519
           name: Jason Garber
           url: http://sixtwothree.org/
           photo: https://webmention.io/avatar/twitter.com/a4d3035ef0dd73f46aad475755fe10c4d7f7ddae3e4f6e2b5ea4d3cba25c6eb7.jpeg
@@ -17414,7 +17445,7 @@
           ''@AaronGustafson @tkadlec @jaffathecake @scottjehl @adactio I’ve stepped
           into the fray as well: sixtwothree.org/posts/responsi…'' to a tweet <a href="http://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">http://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>'
       target: http://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *518
+    author: *519
     type: reply
     content: '<p><a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a>
       <a href="https://twitter.com/tkadlec" rel="nofollow">@tkadlec</a> <a href="https://twitter.com/jaffathecake"
@@ -17434,7 +17465,7 @@
       id: 189800
       private: false
       data:
-        author: &519
+        author: &520
           name: Adam Spelbring
           url: http://www.avsdesign.net/
           photo: https://webmention.io/avatar/twitter.com/d2ef406a6984f9cd5dca68c9be9d0c40a2e382428bea68b41863515f46a65091.png
@@ -17453,7 +17484,7 @@
           'A Fundamental Disconnect, by @AaronGustafson   aaron-gustafson.com/notebook/a-fu...'
           linking to <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *519
+    author: *520
     type: link
     content: |-
       <p>A Fundamental Disconnect, by <a href="https://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> <br />
@@ -17470,7 +17501,7 @@
       id: 350113
       private: false
       data:
-        author: &520
+        author: &521
           name: Adam Spelbring
           url: http://www.avsdesign.net
           photo: https://webmention.io/avatar/pbs.twimg.com/d2ef406a6984f9cd5dca68c9be9d0c40a2e382428bea68b41863515f46a65091.png
@@ -17487,7 +17518,7 @@
         sentence_html: <a href="http://www.avsdesign.net">Adam Spelbring</a> retweeted
           a tweet <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *520
+    author: *521
     type: repost
     content: <p><a href="http://www.avsdesign.net">Adam Spelbring</a> retweeted a
       tweet <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a></p>
@@ -17503,7 +17534,7 @@
       id: 350167
       private: false
       data:
-        author: &521
+        author: &522
           name: Sander van Dragt
           url: http://vandragt.com
           photo: https://webmention.io/avatar/pbs.twimg.com/3acccc3052a08bedcb6c55d3088a78e0abb6bc34c3628885abeb77d5b81fc1a8.png
@@ -17520,7 +17551,7 @@
         sentence_html: <a href="http://vandragt.com">Sander van Dragt</a> retweeted
           a tweet <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *521
+    author: *522
     type: repost
     content: <p><a href="http://vandragt.com">Sander van Dragt</a> retweeted a tweet
       <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a></p>
@@ -17536,7 +17567,7 @@
       id: 350166
       private: false
       data:
-        author: &522
+        author: &523
           name: Sander van Dragt
           url: http://vandragt.com
           photo: https://webmention.io/avatar/pbs.twimg.com/3acccc3052a08bedcb6c55d3088a78e0abb6bc34c3628885abeb77d5b81fc1a8.png
@@ -17553,7 +17584,7 @@
         sentence_html: <a href="http://vandragt.com">Sander van Dragt</a> replied
           '@AaronGustafson well said.' to a tweet <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *522
+    author: *523
     type: reply
     content: <p><a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> well
       said.</p>
@@ -17569,7 +17600,7 @@
       id: 350180
       private: false
       data:
-        author: &523
+        author: &524
           name: Drew Stephens
           url: http://www.thisisdrew.com
           photo: https://webmention.io/avatar/pbs.twimg.com/ce7d99a2efab5e480ba5e65a9657f606ca9d9b81433bb3aaa3e986829efdab7e.jpeg
@@ -17589,7 +17620,7 @@
           'The hard truth.  It's tough out there. aaron-gustafson.com/notebook/a-fun…
           @Aaro...' linking to <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *523
+    author: *524
     type: link
     content: |-
       <p>The hard truth.  It’s tough out there. <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">aaron-gustafson.com/notebook/a-fun…</a> <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a></p>
@@ -17609,7 +17640,7 @@
       id: 387458
       private: false
       data:
-        author: &524
+        author: &525
           name: Aaron Gustafson
           url: https://www.aaron-gustafson.com/about
           photo: 
@@ -17628,7 +17659,7 @@
           posted 'Last week, my colleague1Nolan Lawson wrote a lengthy post about
           his struggles wi...' linking to <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *524
+    author: *525
     type: link
     title: Progressive Misconceptions
     content: |-
@@ -17650,7 +17681,7 @@
       id: 402104
       private: false
       data:
-        author: &525
+        author: &526
           name: Aaron Gustafson
           url: https://www.aaron-gustafson.com/about
           photo: 
@@ -18056,7 +18087,7 @@
           posted 'Late last week, Josh Korr, a project manager at Viget, posted at
           length about wh...' linking to <a href="https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>
       target: https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *525
+    author: *526
     type: link
     title: "[Insert Clickbait Headline About Progressive Enhancement Here]"
     content: |-
@@ -18104,7 +18135,7 @@
       id: 477971
       private: false
       data:
-        author: &526
+        author: &527
           name: "Adrian Roselli \U0001F5EF"
           url: http://adrianroselli.com/
           photo: https://webmention.io/avatar/pbs.twimg.com/2802f5da6057132df9da7f04acee0dc3b93167f1f8b23230a15c6b138cf8acb1.jpeg
@@ -18120,7 +18151,7 @@
         sentence_html: "<a href=\"http://adrianroselli.com/\">Adrian Roselli \U0001F5EF</a>
           replied 'alistapart.com/article/intera…' to a tweet <a href=\"https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/\">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>"
       target: https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *526
+    author: *527
     type: reply
     content: <p><a href="https://alistapart.com/article/interaction-is-an-enhancement">alistapart.com/article/intera…</a></p>
   '937763617319063552':
@@ -18135,7 +18166,7 @@
       id: 477974
       private: false
       data:
-        author: &527
+        author: &528
           name: "Adrian Roselli \U0001F5EF"
           url: http://adrianroselli.com/
           photo: https://webmention.io/avatar/pbs.twimg.com/2802f5da6057132df9da7f04acee0dc3b93167f1f8b23230a15c6b138cf8acb1.jpeg
@@ -18151,7 +18182,7 @@
         sentence_html: "<a href=\"http://adrianroselli.com/\">Adrian Roselli \U0001F5EF</a>
           replied '' to a tweet <a href=\"https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/\">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>"
       target: https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *527
+    author: *528
     type: reply
     content: "<p>Also, I agree, but enjoyed the notion of tossing one of your articles
       back at you.</p>"
@@ -18167,7 +18198,7 @@
       id: 477973
       private: false
       data:
-        author: &528
+        author: &529
           name: "Aaron Gustafson \U0001F680\U0001F578"
           url: https://www.aaron-gustafson.com
           photo: https://webmention.io/avatar/pbs.twimg.com/87010abd9ce6533efe6465244b59e891ba8da6073390c1ccd2a22800d61537c6.jpg
@@ -18182,7 +18213,7 @@
         sentence_html: "<a href=\"https://www.aaron-gustafson.com\">Aaron Gustafson
           \U0001F680\U0001F578</a> replied '' to a tweet <a href=\"https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/\">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>"
       target: https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *528
+    author: *529
     type: reply
     content: "<p>That too ;-)</p>"
   '937763728732426241':
@@ -18197,7 +18228,7 @@
       id: 477972
       private: false
       data:
-        author: &529
+        author: &530
           name: "Aaron Gustafson \U0001F680\U0001F578"
           url: https://www.aaron-gustafson.com
           photo: https://webmention.io/avatar/pbs.twimg.com/87010abd9ce6533efe6465244b59e891ba8da6073390c1ccd2a22800d61537c6.jpg
@@ -18212,7 +18243,7 @@
         sentence_html: "<a href=\"https://www.aaron-gustafson.com\">Aaron Gustafson
           \U0001F680\U0001F578</a> replied '' to a tweet <a href=\"https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/\">https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/</a>"
       target: https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
-    author: *529
+    author: *530
     type: reply
     content: "<p>Yeah, I cribbed from the blog post for the book ;-)</p>"
 "/notebook/the-web-should-just-work-for-everyone/":
@@ -18228,7 +18259,7 @@
       id: 323303
       private: false
       data:
-        author: &530
+        author: &531
           name: MSFT Accessibility
           url: https://twitter.com/MSFTEnable
           photo: https://webmention.io/avatar/twitter.com/c4e960fc6efce8f016f1af222c281573e06e59c164f86c90c505a593ce409595.jpeg
@@ -18244,7 +18275,7 @@
         sentence_html: <a href="https://twitter.com/MSFTEnable">MSFT Accessibility</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *530
+    author: *531
     type: like
     content: <p><a href="https://twitter.com/MSFTEnable">MSFT Accessibility</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
@@ -18260,7 +18291,7 @@
       id: 323305
       private: false
       data:
-        author: &531
+        author: &532
           name: Brandon Edwards
           url: https://twitter.com/BRANDdonator
           photo: https://webmention.io/avatar/twitter.com/2d90383d587814adf919a5e260b3a41dfd2bc75da342f5fd108e3b1ccc8eba9c.png
@@ -18276,7 +18307,7 @@
         sentence_html: <a href="https://twitter.com/BRANDdonator">Brandon Edwards</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *531
+    author: *532
     type: like
     content: <p><a href="https://twitter.com/BRANDdonator">Brandon Edwards</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
@@ -18292,7 +18323,7 @@
       id: 323309
       private: false
       data:
-        author: &532
+        author: &533
           name: Kyle Pflug
           url: https://twitter.com/kylealden
           photo: https://webmention.io/avatar/twitter.com/9fa53f41c11141b82651a165e33d3dd840cee65493c1f61c705b690e49929992.jpeg
@@ -18308,7 +18339,7 @@
         sentence_html: <a href="https://twitter.com/kylealden">Kyle Pflug</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *532
+    author: *533
     type: like
     content: <p><a href="https://twitter.com/kylealden">Kyle Pflug</a> favorited a
       tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
@@ -18324,7 +18355,7 @@
       id: 323322
       private: false
       data:
-        author: &533
+        author: &534
           name: Shannon Hale
           url: https://twitter.com/shannonsans
           photo: https://webmention.io/avatar/twitter.com/18ce39510909f033809b78eb5ac502b439fd5c89813105847f8bf5e2a8b8e2f9.jpeg
@@ -18340,7 +18371,7 @@
         sentence_html: <a href="https://twitter.com/shannonsans">Shannon Hale</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *533
+    author: *534
     type: like
     content: <p><a href="https://twitter.com/shannonsans">Shannon Hale</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
@@ -18356,7 +18387,7 @@
       id: 323367
       private: false
       data:
-        author: &534
+        author: &535
           name: Art Silva
           url: https://twitter.com/artmsilva
           photo: https://webmention.io/avatar/twitter.com/97d9f5d7c523fdc65ffa6e13c57a4f65653718362e40acaa2422af5c58f99a0e.jpeg
@@ -18372,7 +18403,7 @@
         sentence_html: <a href="https://twitter.com/artmsilva">Art Silva</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *534
+    author: *535
     type: like
     content: <p><a href="https://twitter.com/artmsilva">Art Silva</a> favorited a
       tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
@@ -18388,7 +18419,7 @@
       id: 323434
       private: false
       data:
-        author: &535
+        author: &536
           name: Clive Portman
           url: https://twitter.com/cliveportman
           photo: https://webmention.io/avatar/twitter.com/95d75d9f9fb4efeeb2622833565c58f72e5c53f49f799d65a3add69943b60eb4.jpeg
@@ -18404,7 +18435,7 @@
         sentence_html: <a href="https://twitter.com/cliveportman">Clive Portman</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *535
+    author: *536
     type: like
     content: <p><a href="https://twitter.com/cliveportman">Clive Portman</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
@@ -18420,7 +18451,7 @@
       id: 323447
       private: false
       data:
-        author: &536
+        author: &537
           name: Jon Swainson
           url: https://twitter.com/jonswainson
           photo: https://webmention.io/avatar/twitter.com/8c8f4d0d3356a89193f90729b38e2f1e22a510ea75c7262e496bb805e6a2cc36.png
@@ -18436,7 +18467,7 @@
         sentence_html: <a href="https://twitter.com/jonswainson">Jon Swainson</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *536
+    author: *537
     type: like
     content: <p><a href="https://twitter.com/jonswainson">Jon Swainson</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
@@ -18452,7 +18483,7 @@
       id: 323540
       private: false
       data:
-        author: &537
+        author: &538
           name: Nicholas C. Zakas
           url: https://twitter.com/slicknet
           photo: https://webmention.io/avatar/twitter.com/49308577b52b295b8b08b5ebd93f8774abd9838321971bd96b9400259fece456.jpeg
@@ -18468,7 +18499,7 @@
         sentence_html: <a href="https://twitter.com/slicknet">Nicholas C. Zakas</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *537
+    author: *538
     type: like
     content: <p><a href="https://twitter.com/slicknet">Nicholas C. Zakas</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
@@ -18484,7 +18515,7 @@
       id: 323555
       private: false
       data:
-        author: &538
+        author: &539
           name: Giovanni Morelli
           url: https://twitter.com/gvnmrl
           photo: https://webmention.io/avatar/twitter.com/b6cabd5e630583f59a2bdf04ad6849339196e92c964c85c35e4c3dc9bed3a740.jpeg
@@ -18500,7 +18531,7 @@
         sentence_html: <a href="https://twitter.com/gvnmrl">Giovanni Morelli</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *538
+    author: *539
     type: like
     content: <p><a href="https://twitter.com/gvnmrl">Giovanni Morelli</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
@@ -18516,7 +18547,7 @@
       id: 323636
       private: false
       data:
-        author: &539
+        author: &540
           name: WP Performance Pro
           url: https://twitter.com/wpperfpro
           photo: https://webmention.io/avatar/twitter.com/afe9ff993cceeee6b2000287a8763e7f1794d5bc44815e598bbc741e4deda01e.png
@@ -18532,7 +18563,7 @@
         sentence_html: <a href="https://twitter.com/wpperfpro">WP Performance Pro</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *539
+    author: *540
     type: like
     content: <p><a href="https://twitter.com/wpperfpro">WP Performance Pro</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
@@ -18548,7 +18579,7 @@
       id: 323729
       private: false
       data:
-        author: &540
+        author: &541
           name: geertmelotte
           url: https://twitter.com/geertmelotte
           photo: https://webmention.io/avatar/twitter.com/592d72d173e26d7ff2619f023bc20e77dc839537e4616b5304b668cd95b1d9d4.jpeg
@@ -18564,7 +18595,7 @@
         sentence_html: <a href="https://twitter.com/geertmelotte">geertmelotte</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *540
+    author: *541
     type: like
     content: <p><a href="https://twitter.com/geertmelotte">geertmelotte</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
@@ -18580,7 +18611,7 @@
       id: 325240
       private: false
       data:
-        author: &541
+        author: &542
           name: MSFT Accessibility
           url: https://twitter.com/MSFTEnable
           photo: https://webmention.io/avatar/twitter.com/c4e960fc6efce8f016f1af222c281573e06e59c164f86c90c505a593ce409595.jpeg
@@ -18596,7 +18627,7 @@
         sentence_html: <a href="https://twitter.com/MSFTEnable">MSFT Accessibility</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *541
+    author: *542
     type: like
     content: <p><a href="https://twitter.com/MSFTEnable">MSFT Accessibility</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
@@ -18612,7 +18643,7 @@
       id: 325258
       private: false
       data:
-        author: &542
+        author: &543
           name: Miriam O'Connor
           url: https://twitter.com/_webkids
           photo: https://webmention.io/avatar/twitter.com/8ceef65b9b7a6df4b2a7d46e0d303f8bcf65a3a406da68cb60c37078f2ae2a4d.jpeg
@@ -18628,7 +18659,7 @@
         sentence_html: <a href="https://twitter.com/_webkids">Miriam O'Connor</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *542
+    author: *543
     type: like
     content: <p><a href="https://twitter.com/_webkids">Miriam O’Connor</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
@@ -18644,7 +18675,7 @@
       id: 323308
       private: false
       data:
-        author: &543
+        author: &544
           name: MSFT Accessibility
           url: https://www.microsoft.com/en-us/accessibility/home
           photo: https://webmention.io/avatar/twitter.com/c4e960fc6efce8f016f1af222c281573e06e59c164f86c90c505a593ce409595.jpeg
@@ -18660,7 +18691,7 @@
         sentence_html: <a href="https://www.microsoft.com/en-us/accessibility/home">MSFT
           Accessibility</a> retweeted a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *543
+    author: *544
     type: repost
     content: <p><a href="https://www.microsoft.com/en-us/accessibility/home">MSFT
       Accessibility</a> retweeted a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
@@ -18676,7 +18707,7 @@
       id: 323306
       private: false
       data:
-        author: &544
+        author: &545
           name: Mary Branscombe
           url: http://www.marybranscombe.com
           photo: https://webmention.io/avatar/twitter.com/8e0c29d7d3bf5e21316bd839b66f0f5729cc7585db91668f073647905b2c039b.jpeg
@@ -18692,7 +18723,7 @@
         sentence_html: <a href="http://www.marybranscombe.com">Mary Branscombe</a>
           retweeted a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *544
+    author: *545
     type: repost
     content: <p><a href="http://www.marybranscombe.com">Mary Branscombe</a> retweeted
       a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
@@ -18708,7 +18739,7 @@
       id: 323307
       private: false
       data:
-        author: &545
+        author: &546
           name: Alexandre BECKMAN
           url: http://www.alexandre-beckman.be
           photo: https://webmention.io/avatar/twitter.com/11b90a025a62d6a17decd0ea09e14f2d1faaa83d6c33731593b39f4e14a76de6.jpeg
@@ -18724,7 +18755,7 @@
         sentence_html: <a href="http://www.alexandre-beckman.be">Alexandre BECKMAN</a>
           retweeted a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *545
+    author: *546
     type: repost
     content: <p><a href="http://www.alexandre-beckman.be">Alexandre BECKMAN</a> retweeted
       a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
@@ -18740,7 +18771,7 @@
       id: 323304
       private: false
       data:
-        author: &546
+        author: &547
           name: Ryan Leisinger
           url: http://www.ryanleisinger.com
           photo: https://webmention.io/avatar/twitter.com/4d882c6946c9e946969d771e5a37d144586f3ae50412b676be6ca51189d69ca6.jpeg
@@ -18756,7 +18787,7 @@
         sentence_html: <a href="http://www.ryanleisinger.com">Ryan Leisinger</a> retweeted
           a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *546
+    author: *547
     type: repost
     content: <p><a href="http://www.ryanleisinger.com">Ryan Leisinger</a> retweeted
       a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
@@ -18772,7 +18803,7 @@
       id: 323316
       private: false
       data:
-        author: &547
+        author: &548
           name: Thomas Logan
           url: http://www.equalentry.com
           photo: https://webmention.io/avatar/twitter.com/3866a776cd43e64be0cdb14f2da446db750306bdbfef065252cec2db76c99e49.png
@@ -18791,7 +18822,7 @@
           'Nice illustrative examples including sound samples in this post "The Web
           Should ...' linking to <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *547
+    author: *548
     type: link
     content: |-
       <p>Nice illustrative examples including sound samples in this post “The Web Should Just Work for Everyone” <a href="https://twitter.com/AaronGustafson/status/719610291156336640">twitter.com/AaronGustafson…</a>
@@ -18808,7 +18839,7 @@
       id: 323331
       private: false
       data:
-        author: &548
+        author: &549
           name: computer guy
           url: https://twitter.com/computerguy1969
           photo: https://webmention.io/avatar/twitter.com/b6f238291472a5e7e061a4291200d92183edd565f9caa93094695415a8253152.jpeg
@@ -18824,7 +18855,7 @@
         sentence_html: <a href="https://twitter.com/computerguy1969">computer guy</a>
           retweeted a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *548
+    author: *549
     type: repost
     content: <p><a href="https://twitter.com/computerguy1969">computer guy</a> retweeted
       a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
@@ -18840,7 +18871,7 @@
       id: 323330
       private: false
       data:
-        author: &549
+        author: &550
           name: Christopher Janzen
           url: http://www.christopherjanzen.com
           photo: https://webmention.io/avatar/twitter.com/a2c2a7e9a5a4860f4743b9ca8f62cf147507264ea40dee451d9448d3bcc09c31.jpeg
@@ -18858,7 +18889,7 @@
           posted 'The Web Should Just Work for Everyone, From the Notebook of @AaronGustafson  aar...'
           linking to <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *549
+    author: *550
     type: link
     content: <p>The Web Should Just Work for Everyone, From the Notebook of <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a>  <a
       href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">aaron-gustafson.com/notebook/the-w…</a></p>
@@ -18874,7 +18905,7 @@
       id: 323334
       private: false
       data:
-        author: &550
+        author: &551
           name: Simon Le Gros Bisson
           url: http://www.sandm.co.uk
           photo: https://webmention.io/avatar/twitter.com/cfa7cf78636c44fad9bbd02ee25e9d55d49d3af1fd054eccfba7f059a9a3c9a5.png
@@ -18890,7 +18921,7 @@
         sentence_html: <a href="http://www.sandm.co.uk">Simon Le Gros Bisson</a> retweeted
           a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *550
+    author: *551
     type: repost
     content: <p><a href="http://www.sandm.co.uk">Simon Le Gros Bisson</a> retweeted
       a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
@@ -18906,7 +18937,7 @@
       id: 323358
       private: false
       data:
-        author: &551
+        author: &552
           name: Mocha Heather
           url: http://hmig.me
           photo: https://webmention.io/avatar/twitter.com/67a09de9863f8eca50a465df79166db575912a9b1ae024697e4b20356abb351d.jpeg
@@ -18922,7 +18953,7 @@
         sentence_html: <a href="http://hmig.me">Mocha Heather</a> retweeted a tweet
           <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *551
+    author: *552
     type: repost
     content: <p><a href="http://hmig.me">Mocha Heather</a> retweeted a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
   '719685738258960384':
@@ -18937,7 +18968,7 @@
       id: 323368
       private: false
       data:
-        author: &552
+        author: &553
           name: Art Silva
           url: http://about.me/art
           photo: https://webmention.io/avatar/twitter.com/97d9f5d7c523fdc65ffa6e13c57a4f65653718362e40acaa2422af5c58f99a0e.jpeg
@@ -18953,7 +18984,7 @@
         sentence_html: <a href="http://about.me/art">Art Silva</a> retweeted a tweet
           <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *552
+    author: *553
     type: repost
     content: <p><a href="http://about.me/art">Art Silva</a> retweeted a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
   '719722903953108994':
@@ -18968,7 +18999,7 @@
       id: 323397
       private: false
       data:
-        author: &553
+        author: &554
           name: CaptionPoint
           url: http://captionpoint.com
           photo: https://webmention.io/avatar/twitter.com/66cc7c2ec20e5661e5cfd67bb66a9dd063e0acab299cd0967039c540275cfd3d.jpeg
@@ -18984,7 +19015,7 @@
         sentence_html: <a href="http://captionpoint.com">CaptionPoint</a> retweeted
           a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *553
+    author: *554
     type: repost
     content: <p><a href="http://captionpoint.com">CaptionPoint</a> retweeted a tweet
       <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
@@ -19000,7 +19031,7 @@
       id: 323448
       private: false
       data:
-        author: &554
+        author: &555
           name: Jon Swainson
           url: http://www.jonswainson.co.uk
           photo: https://webmention.io/avatar/twitter.com/8c8f4d0d3356a89193f90729b38e2f1e22a510ea75c7262e496bb805e6a2cc36.png
@@ -19016,7 +19047,7 @@
         sentence_html: <a href="http://www.jonswainson.co.uk">Jon Swainson</a> retweeted
           a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *554
+    author: *555
     type: repost
     content: <p><a href="http://www.jonswainson.co.uk">Jon Swainson</a> retweeted
       a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a></p>
@@ -19032,7 +19063,7 @@
       id: 323760
       private: false
       data:
-        author: &555
+        author: &556
           name: Tommaso Baldovino
           url: http://www.tomstardust.com
           photo: https://webmention.io/avatar/twitter.com/25c9d77067d2909797d05f1905d0e69b24b62d95724c52c9ac42ccef5dd2e83d.jpeg
@@ -19054,7 +19085,7 @@
           posted ''The Web Should Just Work for Everyone: bit.ly/1RTgjue by @AaronGustafson
           #a11y #...'' linking to <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>'
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *555
+    author: *556
     type: link
     content: |-
       <p>The Web Should Just Work for Everyone: <a href="http://bit.ly/1RTgjue">bit.ly/1RTgjue</a> by <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> <a href="https://twitter.com/search?q=%23a11y">#a11y</a> <a href="https://twitter.com/search?q=%23accessibility">#accessibility</a></p>
@@ -19075,7 +19106,7 @@
       id: 325245
       private: false
       data:
-        author: &556
+        author: &557
           name: Antonio Santos⚙☘️
           url: http://www.axschat.com
           photo: https://webmention.io/avatar/twitter.com/63c6a6bb8000bfcaa3981cc6bc93362597a7e59024d8216c4216f8fe7dbf994f.jpeg
@@ -19096,7 +19127,7 @@
           ''TY @AaronGustafson @_webkids @MSFTEnable We followed #funka2016 last week...and
           ...'' to a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>'
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *556
+    author: *557
     type: reply
     content: <p>TY <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a>
       <a href="https://twitter.com/_webkids">@_webkids</a> <a href="https://twitter.com/MSFTEnable">@MSFTEnable</a>
@@ -19115,7 +19146,7 @@
       id: 325259
       private: false
       data:
-        author: &557
+        author: &558
           name: Miriam O'Connor
           url: http://www.webkids.ie
           photo: https://webmention.io/avatar/twitter.com/8ceef65b9b7a6df4b2a7d46e0d303f8bcf65a3a406da68cb60c37078f2ae2a4d.jpeg
@@ -19134,7 +19165,7 @@
           '@AaronGustafson @MSFTEnable @akwyz Excellent. .. thank you, much appreciated
           !! ...' to a tweet <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *557
+    author: *558
     type: reply
     content: <p><a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> <a
       href="https://twitter.com/MSFTEnable">@MSFTEnable</a> <a href="https://twitter.com/akwyz">@akwyz</a>
@@ -19151,7 +19182,7 @@
       id: 343226
       private: false
       data:
-        author: &558
+        author: &559
           name: NHDPH
           url: https://twitter.com/nhdph
           photo: https://webmention.io/avatar/pbs.twimg.com/5ea43714277427851deb45a4d791ee75f973648e1d2358db23e860c28d36c055.png
@@ -19170,7 +19201,7 @@
           Web Should Just Work for Everyone by @AaronGustafson | ow.ly/wqlu300R43q
           | #...'' linking to <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>'
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *558
+    author: *559
     type: link
     content: |-
       <p>The Web Should Just Work for Everyone by <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> | <a href="http://ow.ly/wqlu300R43q">ow.ly/wqlu300R43q</a> | <a href="https://twitter.com/search?q=%23DesignForAll">#DesignForAll</a> <a href="https://twitter.com/search?q=%23Accessibility">#Accessibility</a>
@@ -19187,7 +19218,7 @@
       id: 351102
       private: false
       data:
-        author: &559
+        author: &560
           name: Web Axe
           url: http://www.webaxe.org/
           photo: https://webmention.io/avatar/pbs.twimg.com/e5811440b2f391f31e10a524c9aec98580fd08d5c39d2213f6b228807dd048f3.jpeg
@@ -19206,7 +19237,7 @@
           Web Should Just Work for Everyone bit.ly/28T636t by @AaronGustafson #webdev
           ...'' linking to <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>'
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *559
+    author: *560
     type: link
     content: |-
       <p>The Web Should Just Work for Everyone <a href="http://bit.ly/28T636t">bit.ly/28T636t</a> by <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> <a href="https://twitter.com/search?q=%23webdev">#webdev</a> <a href="https://twitter.com/search?q=%23webdesign">#webdesign</a> <a href="https://twitter.com/search?q=%23a11y">#a11y</a>
@@ -19223,7 +19254,7 @@
       id: 359187
       private: false
       data:
-        author: &560
+        author: &561
           name: Easy Chirp
           url: http://www.EasyChirp.com/
           photo: https://webmention.io/avatar/pbs.twimg.com/53301e8a9533281db64852bce555ee8fc64d2a709c4c08df5ef437134aabeb01.jpeg
@@ -19242,7 +19273,7 @@
           ''The Web Should Just Work for Everyone bit.ly/28T636t by @AaronGustafson
           #webdev ...'' linking to <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>'
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *560
+    author: *561
     type: link
     content: |-
       <p>The Web Should Just Work for Everyone <a href="http://bit.ly/28T636t">bit.ly/28T636t</a> by <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> <a href="https://twitter.com/search?q=%23webdev">#webdev</a> <a href="https://twitter.com/search?q=%23webdesign">#webdesign</a> <a href="https://twitter.com/search?q=%23a11y">#a11y</a>
@@ -19259,7 +19290,7 @@
       id: 432954
       private: false
       data:
-        author: &561
+        author: &562
           name: SeanPatrickSullivan
           url: http://seanpatricksullivan.com
           photo: https://webmention.io/avatar/pbs.twimg.com/692e89b6ca1c3a8c983cf7e23d0e924ba3d86a683bfbd5a8f140a62faba08114.jpg
@@ -19281,7 +19312,7 @@
           posted ''Do you create content or design for the #web? Then you have to
           read this, by @Aa...'' linking to <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>'
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *561
+    author: *562
     type: link
     content: |-
       <p>Do you create content or design for the <a href="https://twitter.com/search?q=%23web">#web</a>? Then you have to read this, by <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> (h/t <a href="https://twitter.com/sarah_edo">@sarah_edo</a>) <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">aaron-gustafson.com/notebook/the-w…</a></p>
@@ -19301,7 +19332,7 @@
       id: 453226
       private: false
       data:
-        author: &562
+        author: &563
           name: Mark Wilcock
           url: http://markwilcock.com/
           photo: https://webmention.io/avatar/pbs.twimg.com/ac00739a3c91266ce9127580edfa816bdee577bf763ed8dd830100cea2858f92.jpg
@@ -19320,7 +19351,7 @@
           ''The Web Should Just Work for Everyone aaron-gustafson.com/notebook/the-w…
           #A11Y ...'' linking to <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>'
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *562
+    author: *563
     type: link
     content: <p>The Web Should Just Work for Everyone <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">aaron-gustafson.com/notebook/the-w…</a>
       <a href="https://twitter.com/search?q=%23A11Y">#A11Y</a> <a href="https://twitter.com/search?q=%23UX">#UX</a>
@@ -19337,7 +19368,7 @@
       id: 460189
       private: false
       data:
-        author: &563
+        author: &564
           name: Mark Wilcock
           url: http://markwilcock.com/
           photo: https://webmention.io/avatar/pbs.twimg.com/ac00739a3c91266ce9127580edfa816bdee577bf763ed8dd830100cea2858f92.jpg
@@ -19356,7 +19387,7 @@
           ''The Web Should Just Work for Everyone aaron-gustafson.com/notebook/the-w…
           #A11Y ...'' linking to <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>'
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *563
+    author: *564
     type: link
     content: <p>The Web Should Just Work for Everyone <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">aaron-gustafson.com/notebook/the-w…</a>
       <a href="https://twitter.com/search?q=%23A11Y">#A11Y</a> <a href="https://twitter.com/search?q=%23UX">#UX</a>
@@ -19373,7 +19404,7 @@
       id: 467377
       private: false
       data:
-        author: &564
+        author: &565
           name: Mark Wilcock
           url: http://markwilcock.com/
           photo: https://webmention.io/avatar/pbs.twimg.com/ac00739a3c91266ce9127580edfa816bdee577bf763ed8dd830100cea2858f92.jpg
@@ -19392,7 +19423,7 @@
           ''The Web Should Just Work for Everyone aaron-gustafson.com/notebook/the-w…
           #A11Y ...'' linking to <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>'
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *564
+    author: *565
     type: link
     content: <p>The Web Should Just Work for Everyone <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">aaron-gustafson.com/notebook/the-w…</a>
       <a href="https://twitter.com/search?q=%23A11Y">#A11Y</a> <a href="https://twitter.com/search?q=%23UX">#UX</a>
@@ -19409,7 +19440,7 @@
       id: 475495
       private: false
       data:
-        author: &565
+        author: &566
           name: Mark Wilcock
           url: http://markwilcock.com/
           photo: https://webmention.io/avatar/pbs.twimg.com/ac00739a3c91266ce9127580edfa816bdee577bf763ed8dd830100cea2858f92.jpg
@@ -19428,7 +19459,7 @@
           ''The Web Should Just Work for Everyone aaron-gustafson.com/notebook/the-w…
           #A11Y ...'' linking to <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>'
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *565
+    author: *566
     type: link
     content: <p>The Web Should Just Work for Everyone <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">aaron-gustafson.com/notebook/the-w…</a>
       <a href="https://twitter.com/search?q=%23A11Y">#A11Y</a> <a href="https://twitter.com/search?q=%23UX">#UX</a>
@@ -19445,7 +19476,7 @@
       id: 523412
       private: false
       data:
-        author: &566
+        author: &567
           name: Mark Wilcock
           url: http://markwilcock.com/
           photo: https://webmention.io/avatar/pbs.twimg.com/32606487b2713c3e651068b50e62956ed1f9279f652d9f8a63c9d1b682a8f8a5.jpg
@@ -19464,7 +19495,7 @@
           ''The Web Should Just Work for Everyone aaron-gustafson.com/notebook/the-w…
           #A11Y ...'' linking to <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>'
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *566
+    author: *567
     type: link
     content: <p>The Web Should Just Work for Everyone <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">aaron-gustafson.com/notebook/the-w…</a>
       <a href="https://twitter.com/search?q=%23A11Y">#A11Y</a> <a href="https://twitter.com/search?q=%23UX">#UX</a>
@@ -19481,7 +19512,7 @@
       id: 530376
       private: false
       data:
-        author: &567
+        author: &568
           name: Mark Wilcock
           url: http://markwilcock.com/
           photo: https://webmention.io/avatar/pbs.twimg.com/32606487b2713c3e651068b50e62956ed1f9279f652d9f8a63c9d1b682a8f8a5.jpg
@@ -19500,7 +19531,7 @@
           ''The Web Should Just Work for Everyone aaron-gustafson.com/notebook/the-w…
           #A11Y ...'' linking to <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>'
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *567
+    author: *568
     type: link
     content: <p>The Web Should Just Work for Everyone <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">aaron-gustafson.com/notebook/the-w…</a>
       <a href="https://twitter.com/search?q=%23A11Y">#A11Y</a> <a href="https://twitter.com/search?q=%23UX">#UX</a>
@@ -19517,7 +19548,7 @@
       id: 533824
       private: false
       data:
-        author: &568
+        author: &569
           name: NHDPH
           url: http://nhdisabilityhealth.org/
           photo: https://webmention.io/avatar/pbs.twimg.com/fb2239ae3717e32ef2a7676764906f7dab8d1915872be9559e9147bf10e5851e.jpg
@@ -19536,7 +19567,7 @@
           ''The web should just work for everyone. #Accessibility bit.ly/2KuD5gn @AaronGusta...''
           linking to <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>'
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *568
+    author: *569
     type: link
     content: |-
       <p>The web should just work for everyone. <a href="https://twitter.com/search?q=%23Accessibility">#Accessibility</a> <a href="https://bit.ly/2KuD5gn">bit.ly/2KuD5gn</a> <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a>
@@ -19553,7 +19584,7 @@
       id: 535642
       private: false
       data:
-        author: &569
+        author: &570
           name: Mark Wilcock
           url: http://markwilcock.com/
           photo: https://webmention.io/avatar/pbs.twimg.com/32606487b2713c3e651068b50e62956ed1f9279f652d9f8a63c9d1b682a8f8a5.jpg
@@ -19572,7 +19603,7 @@
           ''The Web Should Just Work for Everyone aaron-gustafson.com/notebook/the-w…
           #A11Y ...'' linking to <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>'
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *569
+    author: *570
     type: link
     content: <p>The Web Should Just Work for Everyone <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">aaron-gustafson.com/notebook/the-w…</a>
       <a href="https://twitter.com/search?q=%23A11Y">#A11Y</a> <a href="https://twitter.com/search?q=%23UX">#UX</a>
@@ -19589,7 +19620,7 @@
       id: 540882
       private: false
       data:
-        author: &570
+        author: &571
           name: Mark Wilcock
           url: http://markwilcock.com/
           photo: https://webmention.io/avatar/pbs.twimg.com/32606487b2713c3e651068b50e62956ed1f9279f652d9f8a63c9d1b682a8f8a5.jpg
@@ -19608,7 +19639,7 @@
           ''The Web Should Just Work for Everyone aaron-gustafson.com/notebook/the-w…
           #A11Y ...'' linking to <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>'
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *570
+    author: *571
     type: link
     content: <p>The Web Should Just Work for Everyone <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">aaron-gustafson.com/notebook/the-w…</a>
       <a href="https://twitter.com/search?q=%23A11Y">#A11Y</a> <a href="https://twitter.com/search?q=%23UX">#UX</a>
@@ -19625,7 +19656,7 @@
       id: 546773
       private: false
       data:
-        author: &571
+        author: &572
           name: Mark Wilcock
           url: http://markwilcock.com/
           photo: https://webmention.io/avatar/pbs.twimg.com/32606487b2713c3e651068b50e62956ed1f9279f652d9f8a63c9d1b682a8f8a5.jpg
@@ -19644,7 +19675,7 @@
           ''The Web Should Just Work for Everyone aaron-gustafson.com/notebook/the-w…
           #A11Y ...'' linking to <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>'
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *571
+    author: *572
     type: link
     content: <p>The Web Should Just Work for Everyone <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">aaron-gustafson.com/notebook/the-w…</a>
       <a href="https://twitter.com/search?q=%23A11Y">#A11Y</a> <a href="https://twitter.com/search?q=%23UX">#UX</a>
@@ -19661,7 +19692,7 @@
       id: 553418
       private: false
       data:
-        author: &572
+        author: &573
           name: Aaron Gustafson
           url: https://www.aaron-gustafson.com/about
           photo: 
@@ -19700,7 +19731,7 @@
           posted 'This piece is worth a thorough read. Then a re-read. It’s that important.       ...'
           linking to <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *572
+    author: *573
     type: link
     title: The “Developer Experience” Bait-and-Switch
     content: |-
@@ -19739,7 +19770,7 @@
       id: 553747
       private: false
       data:
-        author: &573
+        author: &574
           name: Mark Wilcock
           url: http://markwilcock.com/
           photo: https://webmention.io/avatar/pbs.twimg.com/32606487b2713c3e651068b50e62956ed1f9279f652d9f8a63c9d1b682a8f8a5.jpg
@@ -19758,7 +19789,7 @@
           ''The Web Should Just Work for Everyone aaron-gustafson.com/notebook/the-w…
           #A11Y ...'' linking to <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/</a>'
       target: https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/
-    author: *573
+    author: *574
     type: link
     content: <p>The Web Should Just Work for Everyone <a href="https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/">aaron-gustafson.com/notebook/the-w…</a>
       <a href="https://twitter.com/search?q=%23A11Y">#A11Y</a> <a href="https://twitter.com/search?q=%23UX">#UX</a>
@@ -19776,7 +19807,7 @@
       id: 391670
       private: false
       data:
-        author: &574
+        author: &575
           name: Dave Rupert
           url: https://twitter.com/davatron5000
           photo: https://webmention.io/avatar/pbs.twimg.com/2534ee87244ea43d21a993a02048189c4c829849df42adb4d298b5d51e4994fa.jpeg
@@ -19792,7 +19823,7 @@
         sentence_html: <a href="https://twitter.com/davatron5000">Dave Rupert</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *574
+    author: *575
     type: like
     content: <p><a href="https://twitter.com/davatron5000">Dave Rupert</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a></p>
@@ -19808,7 +19839,7 @@
       id: 391672
       private: false
       data:
-        author: &575
+        author: &576
           name: Jon Galloway
           url: https://twitter.com/jongalloway
           photo: https://webmention.io/avatar/pbs.twimg.com/0d797eaa4baf858c777c78dec54328cba4bedda9c754ec7d16c75a76198dc5fe.jpeg
@@ -19824,7 +19855,7 @@
         sentence_html: <a href="https://twitter.com/jongalloway">Jon Galloway</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *575
+    author: *576
     type: like
     content: <p><a href="https://twitter.com/jongalloway">Jon Galloway</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a></p>
@@ -19840,7 +19871,7 @@
       id: 391679
       private: false
       data:
-        author: &576
+        author: &577
           name: "Simo \U0001F983 \U0001F917"
           url: https://twitter.com/matthewsimo
           photo: https://webmention.io/avatar/pbs.twimg.com/69839ee1e27af183e759e065132ceea075c620fe1ca13ce4c6349404ef210470.jpeg
@@ -19856,7 +19887,7 @@
         sentence_html: "<a href=\"https://twitter.com/matthewsimo\">Simo \U0001F983
           \U0001F917</a> favorited a tweet <a href=\"https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/\">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>"
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *576
+    author: *577
     type: like
     content: "<p><a href=\"https://twitter.com/matthewsimo\">Simo \U0001F983 \U0001F917</a>
       favorited a tweet <a href=\"https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/\">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a></p>"
@@ -19872,7 +19903,7 @@
       id: 391680
       private: false
       data:
-        author: &577
+        author: &578
           name: Tyler Sticka
           url: https://twitter.com/tylersticka
           photo: https://webmention.io/avatar/pbs.twimg.com/4fc241681df1e19d6c65b280bb8abf933755e0f40ed8f3ca75a5f68bd64f2217.png
@@ -19888,7 +19919,7 @@
         sentence_html: <a href="https://twitter.com/tylersticka">Tyler Sticka</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *577
+    author: *578
     type: like
     content: <p><a href="https://twitter.com/tylersticka">Tyler Sticka</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a></p>
@@ -19904,7 +19935,7 @@
       id: 391682
       private: false
       data:
-        author: &578
+        author: &579
           name: Amelia Bellamy-Royds
           url: https://twitter.com/AmeliasBrain
           photo: https://webmention.io/avatar/pbs.twimg.com/343e5a6711634bf5e2ca1dccaf453134eabb4d6f86f73eabe1b96634fc315494.jpeg
@@ -19920,7 +19951,7 @@
         sentence_html: <a href="https://twitter.com/AmeliasBrain">Amelia Bellamy-Royds</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *578
+    author: *579
     type: like
     content: <p><a href="https://twitter.com/AmeliasBrain">Amelia Bellamy-Royds</a>
       favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a></p>
@@ -19936,7 +19967,7 @@
       id: 391739
       private: false
       data:
-        author: &579
+        author: &580
           name: Nizar
           url: https://twitter.com/nizarmah_
           photo: https://webmention.io/avatar/pbs.twimg.com/7beb7e6a51d43ff5d77892d7502261cc556c0bd74db69d5941d6e9d154257f4d.jpeg
@@ -19952,7 +19983,7 @@
         sentence_html: <a href="https://twitter.com/nizarmah_">Nizar</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *579
+    author: *580
     type: like
     content: <p><a href="https://twitter.com/nizarmah_">Nizar</a> favorited a tweet
       <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a></p>
@@ -19968,7 +19999,7 @@
       id: 391749
       private: false
       data:
-        author: &580
+        author: &581
           name: Joschi Kuphal 吉
           url: https://twitter.com/jkphl
           photo: https://webmention.io/avatar/pbs.twimg.com/8d61d6c8855385e10cd07b41e8d90960bf3accf39d5a0c2ac46ad85c432fdde6.jpeg
@@ -19984,7 +20015,7 @@
         sentence_html: <a href="https://twitter.com/jkphl">Joschi Kuphal 吉</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *580
+    author: *581
     type: like
     content: <p><a href="https://twitter.com/jkphl">Joschi Kuphal 吉</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a></p>
@@ -20000,7 +20031,7 @@
       id: 391798
       private: false
       data:
-        author: &581
+        author: &582
           name: John F Croston III
           url: https://twitter.com/jfc3
           photo: https://webmention.io/avatar/pbs.twimg.com/f1fc1ef20ea276a620f675238078672f57d00e9fe48dfb815e286c55737c153f.jpeg
@@ -20016,7 +20047,7 @@
         sentence_html: <a href="https://twitter.com/jfc3">John F Croston III</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *581
+    author: *582
     type: like
     content: <p><a href="https://twitter.com/jfc3">John F Croston III</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a></p>
@@ -20032,7 +20063,7 @@
       id: 391962
       private: false
       data:
-        author: &582
+        author: &583
           name: Dan Mall
           url: https://twitter.com/danielmall
           photo: https://webmention.io/avatar/pbs.twimg.com/0bd59f3a6edcfbab02704ed29aa40fde6924821a0f3050edb1d09ad4acfbd732.jpeg
@@ -20048,7 +20079,7 @@
         sentence_html: <a href="https://twitter.com/danielmall">Dan Mall</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *582
+    author: *583
     type: like
     content: <p><a href="https://twitter.com/danielmall">Dan Mall</a> favorited a
       tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a></p>
@@ -20064,7 +20095,7 @@
       id: 391990
       private: false
       data:
-        author: &583
+        author: &584
           name: Phil Coffman
           url: https://twitter.com/philcoffman
           photo: https://webmention.io/avatar/pbs.twimg.com/573822d54ae9d3ce2dbefa884237759d49cb0bd8ae4f724ed1d2ed9bfd363e5c.jpeg
@@ -20080,7 +20111,7 @@
         sentence_html: <a href="https://twitter.com/philcoffman">Phil Coffman</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *583
+    author: *584
     type: like
     content: <p><a href="https://twitter.com/philcoffman">Phil Coffman</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a></p>
@@ -20096,7 +20127,7 @@
       id: 391992
       private: false
       data:
-        author: &584
+        author: &585
           name: Phil Coffman
           url: https://twitter.com/philcoffman
           photo: https://webmention.io/avatar/pbs.twimg.com/573822d54ae9d3ce2dbefa884237759d49cb0bd8ae4f724ed1d2ed9bfd363e5c.jpeg
@@ -20112,7 +20143,7 @@
         sentence_html: <a href="https://twitter.com/philcoffman">Phil Coffman</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *584
+    author: *585
     type: like
     content: <p><a href="https://twitter.com/philcoffman">Phil Coffman</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a></p>
@@ -20128,7 +20159,7 @@
       id: 392433
       private: false
       data:
-        author: &585
+        author: &586
           name: Asbjørn Ulsberg
           url: https://twitter.com/asbjornu
           photo: https://webmention.io/avatar/pbs.twimg.com/1e05193774c68bba88c8cc73917e487e0e46b44a5c11c336e174f2d0a1a16b0b.png
@@ -20144,7 +20175,7 @@
         sentence_html: <a href="https://twitter.com/asbjornu">Asbjørn Ulsberg</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *585
+    author: *586
     type: like
     content: <p><a href="https://twitter.com/asbjornu">Asbjørn Ulsberg</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a></p>
@@ -20160,7 +20191,7 @@
       id: 418459
       private: false
       data:
-        author: &586
+        author: &587
           name: "Una Kravets \U0001F469\U0001F3FB‍\U0001F4BB"
           url: https://twitter.com/Una
           photo: https://webmention.io/avatar/pbs.twimg.com/9b317c7b7207bde7e3b3d6123b1803237adca0a4c0d12139d73b34d31f499a0e.jpg
@@ -20176,7 +20207,7 @@
         sentence_html: "<a href=\"https://twitter.com/Una\">Una Kravets \U0001F469\U0001F3FB‍\U0001F4BB</a>
           favorited a tweet <a href=\"https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/\">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>"
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *586
+    author: *587
     type: like
     content: "<p><a href=\"https://twitter.com/Una\">Una Kravets \U0001F469\U0001F3FB‍\U0001F4BB</a>
       favorited a tweet <a href=\"https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/\">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a></p>"
@@ -20192,7 +20223,7 @@
       id: 418487
       private: false
       data:
-        author: &587
+        author: &588
           name: Dean Leigh
           url: https://twitter.com/deanleigh
           photo: https://webmention.io/avatar/pbs.twimg.com/1aa1c3a430cb062caa24e57e162dc29c056c40acb5cbb92b493643cedcf8545e.jpg
@@ -20208,7 +20239,7 @@
         sentence_html: <a href="https://twitter.com/deanleigh">Dean Leigh</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *587
+    author: *588
     type: like
     content: <p><a href="https://twitter.com/deanleigh">Dean Leigh</a> favorited a
       tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a></p>
@@ -20224,7 +20255,7 @@
       id: 418596
       private: false
       data:
-        author: &588
+        author: &589
           name: Christopher Mallard
           url: https://twitter.com/_sMallard
           photo: https://webmention.io/avatar/pbs.twimg.com/17e921c70d3f12a614eac13358e520d3dcacecc427fe6ff3bb52edf141e9e948.jpg
@@ -20240,7 +20271,7 @@
         sentence_html: <a href="https://twitter.com/_sMallard">Christopher Mallard</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *588
+    author: *589
     type: like
     content: <p><a href="https://twitter.com/_sMallard">Christopher Mallard</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a></p>
@@ -20256,7 +20287,7 @@
       id: 433240
       private: false
       data:
-        author: &589
+        author: &590
           name: Ken Wheeler
           url: https://twitter.com/ken_wheeler
           photo: https://webmention.io/avatar/pbs.twimg.com/1b6244960231ebf813073e5de48cd64d1c70ccde1e1ac539976f426fbd42a738.jpg
@@ -20272,7 +20303,7 @@
         sentence_html: <a href="https://twitter.com/ken_wheeler">Ken Wheeler</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *589
+    author: *590
     type: like
     content: <p><a href="https://twitter.com/ken_wheeler">Ken Wheeler</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a></p>
@@ -20288,7 +20319,7 @@
       id: 440017
       private: false
       data:
-        author: &590
+        author: &591
           name: Dean Leigh
           url: https://twitter.com/deanleigh
           photo: https://webmention.io/avatar/pbs.twimg.com/1aa1c3a430cb062caa24e57e162dc29c056c40acb5cbb92b493643cedcf8545e.jpg
@@ -20304,7 +20335,7 @@
         sentence_html: <a href="https://twitter.com/deanleigh">Dean Leigh</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *590
+    author: *591
     type: like
     content: <p><a href="https://twitter.com/deanleigh">Dean Leigh</a> favorited a
       tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a></p>
@@ -20320,7 +20351,7 @@
       id: 540612
       private: false
       data:
-        author: &591
+        author: &592
           name: Amelia Bellamy-Royds
           url: https://twitter.com/AmeliasBrain
           photo: https://webmention.io/avatar/pbs.twimg.com/343e5a6711634bf5e2ca1dccaf453134eabb4d6f86f73eabe1b96634fc315494.jpeg
@@ -20335,7 +20366,7 @@
         sentence_html: <a href="https://twitter.com/AmeliasBrain">Amelia Bellamy-Royds</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *591
+    author: *592
     type: like
     content: <p><a href="https://twitter.com/AmeliasBrain">Amelia Bellamy-Royds</a>
       favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a></p>
@@ -20351,7 +20382,7 @@
       id: 540745
       private: false
       data:
-        author: &592
+        author: &593
           name: Gregory Warner
           url: https://twitter.com/smallreflection
           photo: https://webmention.io/avatar/pbs.twimg.com/46043569ba8e047b9ea06044ac1ff08c764d00dcf3458a3be4533a145f34d60e.jpg
@@ -20366,7 +20397,7 @@
         sentence_html: <a href="https://twitter.com/smallreflection">Gregory Warner</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *592
+    author: *593
     type: like
     content: <p><a href="https://twitter.com/smallreflection">Gregory Warner</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a></p>
@@ -20408,7 +20439,7 @@
       id: 391671
       private: false
       data:
-        author: &593
+        author: &594
           name: Snook
           url: http://snook.ca
           photo: https://webmention.io/avatar/pbs.twimg.com/441edafad9de5f6cb6de78425ae690d93b686b8ecacb249a43d96f80eb593d2a.jpeg
@@ -20423,7 +20454,7 @@
         sentence_html: <a href="http://snook.ca">Snook</a> replied '' to a tweet <a
           href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *593
+    author: *594
     type: reply
     content: "<p>I set up a shortcut for – already. :)</p>"
   '793872151170265088':
@@ -20438,7 +20469,7 @@
       id: 391681
       private: false
       data:
-        author: &594
+        author: &595
           name: Dave Rupert
           url: http://daverupert.com
           photo: https://webmention.io/avatar/pbs.twimg.com/2534ee87244ea43d21a993a02048189c4c829849df42adb4d298b5d51e4994fa.jpeg
@@ -20453,7 +20484,7 @@
         sentence_html: <a href="http://daverupert.com">Dave Rupert</a> replied ''
           to a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *594
+    author: *595
     type: reply
     content: "<p>Oh wow. Mac-bindings for special chars? This is a dream.</p>"
   '793880035367219200':
@@ -20468,7 +20499,7 @@
       id: 391687
       private: false
       data:
-        author: &595
+        author: &596
           name: Chris Heilmann
           url: http://christianheilmann.com/2013/02/11/hello-it-is-me-on-twitter/
           photo: https://webmention.io/avatar/pbs.twimg.com/2cb539703b09adb2ef4818c0fa52e2d97c6b8365befe25ba741bbc98ca12fde9.png
@@ -20487,7 +20518,7 @@
           Heilmann</a> posted 'Mac-like Special Characters in Windows aaron-gustafson.com/notebook/mac-l…
           - @aa...' linking to <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *595
+    author: *596
     type: link
     content: <p>Mac-like Special Characters in Windows <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">aaron-gustafson.com/notebook/mac-l…</a>
       - <a href="https://twitter.com/AaronGustafson">@aarongustafson</a>, I love ya.</p>
@@ -20503,7 +20534,7 @@
       id: 391991
       private: false
       data:
-        author: &596
+        author: &597
           name: Dave Rupert
           url: http://daverupert.com
           photo: https://webmention.io/avatar/pbs.twimg.com/2534ee87244ea43d21a993a02048189c4c829849df42adb4d298b5d51e4994fa.jpeg
@@ -20521,7 +20552,7 @@
           Må¢—style áutø–key $k®¡pt for Wïndows is wöndérfül! Thanks @AaronGustafson
           ...' linking to <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *596
+    author: *597
     type: link
     content: <p>Thîs Må¢—style áutø–key $k®¡pt for Wïndows is wöndérfül! Thanks <a
       href="https://twitter.com/AaronGustafson">@AaronGustafson</a> <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">aaron-gustafson.com/notebook/mac-l…</a></p>
@@ -20537,7 +20568,7 @@
       id: 393135
       private: false
       data:
-        author: &597
+        author: &598
           name: Dan Mall
           url: http://www.danielmall.com/
           photo: https://webmention.io/avatar/pbs.twimg.com/0bd59f3a6edcfbab02704ed29aa40fde6924821a0f3050edb1d09ad4acfbd732.jpeg
@@ -20553,7 +20584,7 @@
         sentence_html: <a href="http://www.danielmall.com/">Dan Mall</a> retweeted
           a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *597
+    author: *598
     type: repost
     content: <p><a href="http://www.danielmall.com/">Dan Mall</a> retweeted a tweet
       <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a></p>
@@ -20569,7 +20600,7 @@
       id: 418486
       private: false
       data:
-        author: &598
+        author: &599
           name: Dean Leigh
           url: http://www.wholething.co.uk
           photo: https://webmention.io/avatar/pbs.twimg.com/1aa1c3a430cb062caa24e57e162dc29c056c40acb5cbb92b493643cedcf8545e.jpg
@@ -20585,7 +20616,7 @@
         sentence_html: <a href="http://www.wholething.co.uk">Dean Leigh</a> replied
           '' to a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *598
+    author: *599
     type: reply
     content: "<p>This is great! As much as I hate Alt-3 for # on the Mac I hate Alt-0133
       for … on W10 more :-)</p>"
@@ -20601,7 +20632,7 @@
       id: 418538
       private: false
       data:
-        author: &599
+        author: &600
           name: Christopher Mallard
           url: http://pleasedelete.thisstupid.website
           photo: https://webmention.io/avatar/pbs.twimg.com/17e921c70d3f12a614eac13358e520d3dcacecc427fe6ff3bb52edf141e9e948.jpg
@@ -20616,7 +20647,7 @@
         sentence_html: <a href="http://pleasedelete.thisstupid.website">Christopher
           Mallard</a> replied '' to a tweet <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *599
+    author: *600
     type: reply
     content: "<p>Thank you for that!</p>"
   '1008305092603281408':
@@ -20631,7 +20662,7 @@
       id: 528004
       private: false
       data:
-        author: &600
+        author: &601
           name: Christof
           url: http://cthedot.de/
           photo: https://webmention.io/avatar/pbs.twimg.com/181b28c804b8d6dd5916112a88136bc805b6c51759adcbd0a626e092ccb86b4e.jpg
@@ -20650,7 +20681,7 @@
           tool but not "run shell:startup" - that is neat indeed, hard to find ...'
           linking to <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *600
+    author: *601
     type: link
     content: |-
       <p>I knew the tool but not “run shell:startup” - that is neat indeed, hard to find the folder these days<br />
@@ -20667,7 +20698,7 @@
       id: 581235
       private: false
       data:
-        author: &601
+        author: &602
           name: William
           url: https://twitter.com/WilliamWWorkman
           photo: https://webmention.io/avatar/pbs.twimg.com/144ff638485bf330550b6741ee2fdf420f045ed46bff84466a70d93a082dd6a4.jpg
@@ -20686,7 +20717,7 @@
           posted ''If you are a designer working in a Windows office, this will save
           your life: iOS...'' linking to <a href="https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/">https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/</a>'
       target: https://www.aaron-gustafson.com/notebook/mac-like-special-characters-in-windows/
-    author: *601
+    author: *602
     type: link
     content: |-
       <p>If you are a designer working in a Windows office, this will save your life: iOS’s typographic keyboard shortcuts with <a href="https://twitter.com/autohotkey_">@autohotkey_</a> <br />
@@ -20704,7 +20735,7 @@
       id: 435593
       private: false
       data:
-        author: &602
+        author: &603
           name: blinch
           url: https://twitter.com/blinch
           photo: https://webmention.io/avatar/pbs.twimg.com/2d57cbd6f4802b98161e004494a63d1e289007deec5ec6cc0ba62e859d9253c1.jpg
@@ -20720,7 +20751,7 @@
         sentence_html: <a href="https://twitter.com/blinch">blinch</a> favorited a
           tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *602
+    author: *603
     type: like
     content: <p><a href="https://twitter.com/blinch">blinch</a> favorited a tweet
       <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -20736,7 +20767,7 @@
       id: 435597
       private: false
       data:
-        author: &603
+        author: &604
           name: Tom Leadbetter
           url: https://twitter.com/leads
           photo: https://pbs.twimg.com/profile_images/479409593/twitterProfilePhoto.jpg
@@ -20752,7 +20783,7 @@
         sentence_html: <a href="https://twitter.com/leads">Tom Leadbetter</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *603
+    author: *604
     type: like
     content: <p><a href="https://twitter.com/leads">Tom Leadbetter</a> favorited a
       tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -20768,7 +20799,7 @@
       id: 435599
       private: false
       data:
-        author: &604
+        author: &605
           name: Francesco Rizzi
           url: https://twitter.com/FrancescoRizzi
           photo: https://webmention.io/avatar/pbs.twimg.com/50fe941f68faca5b11b6d34d00feee64f6b25ab942bb3c717584c543736d8ef8.png
@@ -20784,7 +20815,7 @@
         sentence_html: <a href="https://twitter.com/FrancescoRizzi">Francesco Rizzi</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *604
+    author: *605
     type: like
     content: <p><a href="https://twitter.com/FrancescoRizzi">Francesco Rizzi</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -20800,7 +20831,7 @@
       id: 435601
       private: false
       data:
-        author: &605
+        author: &606
           name: Kenneth Chr༼ つ ◕_◕ ༽
           url: https://twitter.com/kennethrohde
           photo: https://webmention.io/avatar/pbs.twimg.com/3c72296317e97ba74d08252ee7c51fe4aaa580fd699d0e2fbc63558d40c279e7.jpg
@@ -20816,7 +20847,7 @@
         sentence_html: <a href="https://twitter.com/kennethrohde">Kenneth Chr༼ つ ◕_◕
           ༽</a> favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *605
+    author: *606
     type: like
     content: <p><a href="https://twitter.com/kennethrohde">Kenneth Chr༼ つ ◕_◕ ༽</a>
       favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -20832,7 +20863,7 @@
       id: 435603
       private: false
       data:
-        author: &606
+        author: &607
           name: Harri Hälikkä
           url: https://twitter.com/harriha
           photo: https://webmention.io/avatar/pbs.twimg.com/48a9d7083441af0b714a17547ca74897c4230c7964b6cd83884641935c3a6097.jpeg
@@ -20848,7 +20879,7 @@
         sentence_html: <a href="https://twitter.com/harriha">Harri Hälikkä</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *606
+    author: *607
     type: like
     content: <p><a href="https://twitter.com/harriha">Harri Hälikkä</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -20864,7 +20895,7 @@
       id: 435606
       private: false
       data:
-        author: &607
+        author: &608
           name: Abdón Rodríguez
           url: https://twitter.com/abdonrd
           photo: https://webmention.io/avatar/pbs.twimg.com/76fa152dba35db1ff859548582b81999a33fc687a52d45633a53a9c29c0b0000.jpg
@@ -20880,7 +20911,7 @@
         sentence_html: <a href="https://twitter.com/abdonrd">Abdón Rodríguez</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *607
+    author: *608
     type: like
     content: <p><a href="https://twitter.com/abdonrd">Abdón Rodríguez</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -20896,7 +20927,7 @@
       id: 435607
       private: false
       data:
-        author: &608
+        author: &609
           name: Juanjo Pérez
           url: https://twitter.com/xuanxoo
           photo: https://webmention.io/avatar/pbs.twimg.com/13eeded8c3665488b94c30fd1f42135ff228ad876283bf9832753d5391082f2c.jpg
@@ -20912,7 +20943,7 @@
         sentence_html: <a href="https://twitter.com/xuanxoo">Juanjo Pérez</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *608
+    author: *609
     type: like
     content: <p><a href="https://twitter.com/xuanxoo">Juanjo Pérez</a> favorited a
       tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -20928,7 +20959,7 @@
       id: 435667
       private: false
       data:
-        author: &609
+        author: &610
           name: Mike Harrison
           url: https://twitter.com/meuon
           photo: https://webmention.io/avatar/pbs.twimg.com/186361e38314438c896fefa692ef54d1c39054c6ca53dc79d0c2eb19e07e859b.png
@@ -20944,7 +20975,7 @@
         sentence_html: <a href="https://twitter.com/meuon">Mike Harrison</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *609
+    author: *610
     type: like
     content: <p><a href="https://twitter.com/meuon">Mike Harrison</a> favorited a
       tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -20960,7 +20991,7 @@
       id: 435680
       private: false
       data:
-        author: &610
+        author: &611
           name: John Riviello
           url: https://twitter.com/JohnRiv
           photo: https://webmention.io/avatar/pbs.twimg.com/0d740c6bde9525360c7be354ed49082daa50157e24737fe49737a28df8661160.jpg
@@ -20976,7 +21007,7 @@
         sentence_html: <a href="https://twitter.com/JohnRiv">John Riviello</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *610
+    author: *611
     type: like
     content: <p><a href="https://twitter.com/JohnRiv">John Riviello</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -20992,7 +21023,7 @@
       id: 435682
       private: false
       data:
-        author: &611
+        author: &612
           name: Jasper Moelker
           url: https://twitter.com/jbmoelker
           photo: https://webmention.io/avatar/pbs.twimg.com/c23b7bc782d8d10ecf36c8fc60fe49b64adca28d78930ac58a7ca1e64ab5c532.jpg
@@ -21008,7 +21039,7 @@
         sentence_html: <a href="https://twitter.com/jbmoelker">Jasper Moelker</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *611
+    author: *612
     type: like
     content: <p><a href="https://twitter.com/jbmoelker">Jasper Moelker</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21024,7 +21055,7 @@
       id: 435691
       private: false
       data:
-        author: &612
+        author: &613
           name: Fabrício Oliveira
           url: https://twitter.com/fabloliv
           photo: https://webmention.io/avatar/pbs.twimg.com/b521c99899b14d77632c808617132145bbbcd6372fc452282416ab1453e031da.jpg
@@ -21040,7 +21071,7 @@
         sentence_html: <a href="https://twitter.com/fabloliv">Fabrício Oliveira</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *612
+    author: *613
     type: like
     content: <p><a href="https://twitter.com/fabloliv">Fabrício Oliveira</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21056,7 +21087,7 @@
       id: 435693
       private: false
       data:
-        author: &613
+        author: &614
           name: Jorge del Casar
           url: https://twitter.com/JorgeCasar
           photo: https://webmention.io/avatar/pbs.twimg.com/482c1592f083dff0f6f75531586b0fc3458eaa931c8beca9385ef1203c941e1c.png
@@ -21072,7 +21103,7 @@
         sentence_html: <a href="https://twitter.com/JorgeCasar">Jorge del Casar</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *613
+    author: *614
     type: like
     content: <p><a href="https://twitter.com/JorgeCasar">Jorge del Casar</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21088,7 +21119,7 @@
       id: 435694
       private: false
       data:
-        author: &614
+        author: &615
           name: Mánu Fosela
           url: https://twitter.com/manufosela
           photo: https://webmention.io/avatar/pbs.twimg.com/7bc00ffadc4667f97107434c76b2241e7777cd6dd7bdce90156d7ac6ee6bf3fb.jpg
@@ -21104,7 +21135,7 @@
         sentence_html: <a href="https://twitter.com/manufosela">Mánu Fosela</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *614
+    author: *615
     type: like
     content: <p><a href="https://twitter.com/manufosela">Mánu Fosela</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21120,7 +21151,7 @@
       id: 435696
       private: false
       data:
-        author: &615
+        author: &616
           name: Saurav Mittal
           url: https://twitter.com/devmittas
           photo: https://webmention.io/avatar/pbs.twimg.com/e3eed3ea72f2ae27458dc01cb365154dca12e5599540b633cc023d276f3785c5.jpg
@@ -21136,7 +21167,7 @@
         sentence_html: <a href="https://twitter.com/devmittas">Saurav Mittal</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *615
+    author: *616
     type: like
     content: <p><a href="https://twitter.com/devmittas">Saurav Mittal</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21152,7 +21183,7 @@
       id: 435703
       private: false
       data:
-        author: &616
+        author: &617
           name: "chrisEsplin \U0001F5A5️"
           url: https://twitter.com/ChrisEsplin
           photo: https://webmention.io/avatar/pbs.twimg.com/f8cf9a0191cb80f29fcfe0a95947305c8339dfe8f62b053635d83208a140f104.jpg
@@ -21168,7 +21199,7 @@
         sentence_html: "<a href=\"https://twitter.com/ChrisEsplin\">chrisEsplin \U0001F5A5️</a>
           favorited a tweet <a href=\"https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/\">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>"
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *616
+    author: *617
     type: like
     content: "<p><a href=\"https://twitter.com/ChrisEsplin\">chrisEsplin \U0001F5A5️</a>
       favorited a tweet <a href=\"https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/\">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>"
@@ -21184,7 +21215,7 @@
       id: 435710
       private: false
       data:
-        author: &617
+        author: &618
           name: Aaron K.
           url: https://twitter.com/networkaaron
           photo: https://webmention.io/avatar/pbs.twimg.com/2bbb2995aa967c9325e4aee713fa9aa148198abfce7d5ed9dd24e17865a0f59c.jpg
@@ -21200,7 +21231,7 @@
         sentence_html: <a href="https://twitter.com/networkaaron">Aaron K.</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *617
+    author: *618
     type: like
     content: <p><a href="https://twitter.com/networkaaron">Aaron K.</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21216,7 +21247,7 @@
       id: 435717
       private: false
       data:
-        author: &618
+        author: &619
           name: Alejandro Ledesma
           url: https://twitter.com/aljandroledesma
           photo: https://webmention.io/avatar/pbs.twimg.com/c069b54b48c8a7017745d7782a06dbb691e9a7232d033a28926fa8e3ea31e176.jpg
@@ -21232,7 +21263,7 @@
         sentence_html: <a href="https://twitter.com/aljandroledesma">Alejandro Ledesma</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *618
+    author: *619
     type: like
     content: <p><a href="https://twitter.com/aljandroledesma">Alejandro Ledesma</a>
       favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21248,7 +21279,7 @@
       id: 436268
       private: false
       data:
-        author: &619
+        author: &620
           name: Jonathan Rowley
           url: https://twitter.com/_JonathanRowley
           photo: https://webmention.io/avatar/pbs.twimg.com/4f22db10b7c1d8234e86f6475e1aa6d4d873fdca683b511708b5d37adb4621bb.jpg
@@ -21264,7 +21295,7 @@
         sentence_html: <a href="https://twitter.com/_JonathanRowley">Jonathan Rowley</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *619
+    author: *620
     type: like
     content: <p><a href="https://twitter.com/_JonathanRowley">Jonathan Rowley</a>
       favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21280,7 +21311,7 @@
       id: 436269
       private: false
       data:
-        author: &620
+        author: &621
           name: Daᴎilo Vәga
           url: https://twitter.com/Danilux
           photo: https://webmention.io/avatar/pbs.twimg.com/9ead51f585557e365d63a8c972c64c205e9ac4f049cc76b356a6f8888a1aa6b7.jpg
@@ -21296,7 +21327,7 @@
         sentence_html: <a href="https://twitter.com/Danilux">Daᴎilo Vәga</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *620
+    author: *621
     type: like
     content: <p><a href="https://twitter.com/Danilux">Daᴎilo Vәga</a> favorited a
       tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21312,7 +21343,7 @@
       id: 451356
       private: false
       data:
-        author: &621
+        author: &622
           name: Leslie Saunderlin
           url: https://www.facebook.com/10155623910653430
           photo: https://webmention.io/avatar/graph.facebook.com/fb30b82209e4cf14bc9744b92894400e95255920071cb8c85ca0fce3267e7de9.jpg
@@ -21328,7 +21359,7 @@
         sentence_html: <a href="https://www.facebook.com/10155623910653430">Leslie
           Saunderlin</a> liked a post <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *621
+    author: *622
     type: like
     content: <p><a href="https://www.facebook.com/10155623910653430">Leslie Saunderlin</a>
       liked a post <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21344,7 +21375,7 @@
       id: 451361
       private: false
       data:
-        author: &622
+        author: &623
           name: Marsha Gustafson
           url: https://www.facebook.com/791906884222869
           photo: https://graph.facebook.com/v2.6/791906884222869/picture?type=large
@@ -21360,7 +21391,7 @@
         sentence_html: <a href="https://www.facebook.com/791906884222869">Marsha Gustafson</a>
           liked a post <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *622
+    author: *623
     type: like
     content: <p><a href="https://www.facebook.com/791906884222869">Marsha Gustafson</a>
       liked a post <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21376,7 +21407,7 @@
       id: 451365
       private: false
       data:
-        author: &623
+        author: &624
           name: David Alf Castañeda
           url: https://www.facebook.com/10101513507895408
           photo: https://graph.facebook.com/v2.6/10101513507895408/picture?type=large
@@ -21392,7 +21423,7 @@
         sentence_html: <a href="https://www.facebook.com/10101513507895408">David
           Alf Castañeda</a> liked a post <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *623
+    author: *624
     type: like
     content: <p><a href="https://www.facebook.com/10101513507895408">David Alf Castañeda</a>
       liked a post <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21408,7 +21439,7 @@
       id: 451367
       private: false
       data:
-        author: &624
+        author: &625
           name: Elizabeth Wells
           url: https://www.facebook.com/10155150142775245
           photo: https://webmention.io/avatar/graph.facebook.com/bc7c24924e9f2fdd2230bbf832f7bac44f91b8bc1473c5d63475eef2bcf7fbb9.jpg
@@ -21424,7 +21455,7 @@
         sentence_html: <a href="https://www.facebook.com/10155150142775245">Elizabeth
           Wells</a> liked a post <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *624
+    author: *625
     type: like
     content: <p><a href="https://www.facebook.com/10155150142775245">Elizabeth Wells</a>
       liked a post <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21440,7 +21471,7 @@
       id: 451366
       private: false
       data:
-        author: &625
+        author: &626
           name: Simon St.Laurent
           url: https://www.facebook.com/10152625090308201
           photo: https://webmention.io/avatar/graph.facebook.com/2dc961a62f613facdff85a66eb8be71afe23eea690903ed17644d9388e307305.jpg
@@ -21456,7 +21487,7 @@
         sentence_html: <a href="https://www.facebook.com/10152625090308201">Simon
           St.Laurent</a> liked a post <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *625
+    author: *626
     type: like
     content: <p><a href="https://www.facebook.com/10152625090308201">Simon St.Laurent</a>
       liked a post <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21472,7 +21503,7 @@
       id: 451371
       private: false
       data:
-        author: &626
+        author: &627
           name: Derek Pennycuff
           url: https://www.facebook.com/10101114134173508
           photo: https://webmention.io/avatar/graph.facebook.com/4788aa241f783e1f3b654ff0d38cdb74e904c5b091ba60a05b9c8000c4b2f556.jpg
@@ -21488,7 +21519,7 @@
         sentence_html: <a href="https://www.facebook.com/10101114134173508">Derek
           Pennycuff</a> liked a post <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *626
+    author: *627
     type: like
     content: <p><a href="https://www.facebook.com/10101114134173508">Derek Pennycuff</a>
       liked a post <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21504,7 +21535,7 @@
       id: 451372
       private: false
       data:
-        author: &627
+        author: &628
           name: Jenny Noblit
           url: https://www.facebook.com/10213037061908728
           photo: https://graph.facebook.com/v2.6/10213037061908728/picture?type=large
@@ -21520,7 +21551,7 @@
         sentence_html: <a href="https://www.facebook.com/10213037061908728">Jenny
           Noblit</a> liked a post <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *627
+    author: *628
     type: like
     content: <p><a href="https://www.facebook.com/10213037061908728">Jenny Noblit</a>
       liked a post <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21536,7 +21567,7 @@
       id: 451375
       private: false
       data:
-        author: &628
+        author: &629
           name: Rebecca Hemstad
           url: https://www.facebook.com/10153366889040283
           photo: https://graph.facebook.com/v2.6/10153366889040283/picture?type=large
@@ -21552,7 +21583,7 @@
         sentence_html: <a href="https://www.facebook.com/10153366889040283">Rebecca
           Hemstad</a> liked a post <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *628
+    author: *629
     type: like
     content: <p><a href="https://www.facebook.com/10153366889040283">Rebecca Hemstad</a>
       liked a post <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21568,7 +21599,7 @@
       id: 451377
       private: false
       data:
-        author: &629
+        author: &630
           name: Yash Raj Singh
           url: https://www.facebook.com/10209988011438742
           photo: https://graph.facebook.com/v2.6/10209988011438742/picture?type=large
@@ -21584,7 +21615,7 @@
         sentence_html: <a href="https://www.facebook.com/10209988011438742">Yash Raj
           Singh</a> liked a post <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *629
+    author: *630
     type: like
     content: <p><a href="https://www.facebook.com/10209988011438742">Yash Raj Singh</a>
       liked a post <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21600,7 +21631,7 @@
       id: 451378
       private: false
       data:
-        author: &630
+        author: &631
           name: Lisa Adams
           url: https://www.facebook.com/10153060178197590
           photo: https://graph.facebook.com/v2.6/10153060178197590/picture?type=large
@@ -21616,7 +21647,7 @@
         sentence_html: <a href="https://www.facebook.com/10153060178197590">Lisa Adams</a>
           liked a post <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *630
+    author: *631
     type: like
     content: <p><a href="https://www.facebook.com/10153060178197590">Lisa Adams</a>
       liked a post <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21632,7 +21663,7 @@
       id: 507794
       private: false
       data:
-        author: &631
+        author: &632
           name: Charlie Croom
           url: https://twitter.com/CharlieCroom
           photo: https://webmention.io/avatar/pbs.twimg.com/b46bbc29f2bbc367784432f8734ae4586514985764280de6b0fcc0da5377f42a.jpg
@@ -21647,7 +21678,7 @@
         sentence_html: <a href="https://twitter.com/CharlieCroom">Charlie Croom</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *631
+    author: *632
     type: like
     content: <p><a href="https://twitter.com/CharlieCroom">Charlie Croom</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21663,7 +21694,7 @@
       id: 507808
       private: false
       data:
-        author: &632
+        author: &633
           name: DANIEL SU ♎️
           url: https://twitter.com/SuDanny123
           photo: https://webmention.io/avatar/pbs.twimg.com/a366e54ff4abb4f10be189b6bd18526aee2c9459c8c4c4666d0617d53a96b89f.jpg
@@ -21678,7 +21709,7 @@
         sentence_html: <a href="https://twitter.com/SuDanny123">DANIEL SU ♎️</a> favorited
           a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *632
+    author: *633
     type: like
     content: <p><a href="https://twitter.com/SuDanny123">DANIEL SU ♎️</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21694,7 +21725,7 @@
       id: 538087
       private: false
       data:
-        author: &633
+        author: &634
           name: Andrey Lipattsev
           url: https://twitter.com/andrey_l1nd3n
           photo: https://webmention.io/avatar/pbs.twimg.com/f5f49e5d628950951eb414a2680da85cd7dd0a29ad6c5b6f7a21b7403780ca79.jpg
@@ -21709,7 +21740,7 @@
         sentence_html: <a href="https://twitter.com/andrey_l1nd3n">Andrey Lipattsev</a>
           favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *633
+    author: *634
     type: like
     content: <p><a href="https://twitter.com/andrey_l1nd3n">Andrey Lipattsev</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21725,7 +21756,7 @@
       id: 435598
       private: false
       data:
-        author: &634
+        author: &635
           name: Francesco Rizzi
           url: http://blog.rizzif.com
           photo: https://pbs.twimg.com/profile_images/1766135131/frd-shield-135x135.png
@@ -21742,7 +21773,7 @@
         sentence_html: <a href="http://blog.rizzif.com">Francesco Rizzi</a> posted
           '#dev &gt;' linking to <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *634
+    author: *635
     type: link
     content: |-
       <p><a href="https://twitter.com/search?q=%23dev">#dev</a> &gt;
@@ -21759,7 +21790,7 @@
       id: 435600
       private: false
       data:
-        author: &635
+        author: &636
           name: Kenneth Chr༼ つ ◕_◕ ༽
           url: https://twitter.com/kennethrohde
           photo: https://webmention.io/avatar/pbs.twimg.com/3c72296317e97ba74d08252ee7c51fe4aaa580fd699d0e2fbc63558d40c279e7.jpg
@@ -21774,7 +21805,7 @@
         sentence_html: <a href="https://twitter.com/kennethrohde">Kenneth Chr༼ つ ◕_◕
           ༽</a> retweeted a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *635
+    author: *636
     type: repost
     content: <p><a href="https://twitter.com/kennethrohde">Kenneth Chr༼ つ ◕_◕ ༽</a>
       retweeted a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21790,7 +21821,7 @@
       id: 435605
       private: false
       data:
-        author: &636
+        author: &637
           name: Abdón Rodríguez
           url: https://abdonrd.com
           photo: https://webmention.io/avatar/pbs.twimg.com/76fa152dba35db1ff859548582b81999a33fc687a52d45633a53a9c29c0b0000.jpg
@@ -21805,7 +21836,7 @@
         sentence_html: <a href="https://abdonrd.com">Abdón Rodríguez</a> retweeted
           a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *636
+    author: *637
     type: repost
     content: <p><a href="https://abdonrd.com">Abdón Rodríguez</a> retweeted a tweet
       <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21821,7 +21852,7 @@
       id: 435668
       private: false
       data:
-        author: &637
+        author: &638
           name: Mike Harrison
           url: http://geeklabs.com
           photo: https://webmention.io/avatar/pbs.twimg.com/186361e38314438c896fefa692ef54d1c39054c6ca53dc79d0c2eb19e07e859b.png
@@ -21836,7 +21867,7 @@
         sentence_html: <a href="http://geeklabs.com">Mike Harrison</a> retweeted a
           tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *637
+    author: *638
     type: repost
     content: <p><a href="http://geeklabs.com">Mike Harrison</a> retweeted a tweet
       <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21852,7 +21883,7 @@
       id: 435687
       private: false
       data:
-        author: &638
+        author: &639
           name: Félix Zapata
           url: http://www.linkedin.com/in/felixzapata
           photo: https://webmention.io/avatar/pbs.twimg.com/a27b6d032b0df1fd3df17ae0f632d9c3a19d6c03a453015c678054bf4d8f4dfc.png
@@ -21867,7 +21898,7 @@
         sentence_html: <a href="http://www.linkedin.com/in/felixzapata">Félix Zapata</a>
           retweeted a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *638
+    author: *639
     type: repost
     content: <p><a href="http://www.linkedin.com/in/felixzapata">Félix Zapata</a>
       retweeted a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21883,7 +21914,7 @@
       id: 435690
       private: false
       data:
-        author: &639
+        author: &640
           name: Manuel Matuzović
           url: http://www.matuzo.at
           photo: https://webmention.io/avatar/pbs.twimg.com/bef8b2059829d0a46f469f0bc064f977f6be821d88dcedf0c01a27bb2f1109e9.jpeg
@@ -21902,7 +21933,7 @@
           'There's a lot of valuable info about PWAs in this post by @AaronGustafson
           Btw. w...' linking to <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *639
+    author: *640
     type: link
     content: |-
       <p>There’s a lot of valuable info about PWAs in this post by <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> Btw. watch the talk if you want to see Service Workers in Edge :)
@@ -21919,7 +21950,7 @@
       id: 435692
       private: false
       data:
-        author: &640
+        author: &641
           name: Jorge del Casar
           url: http://github.com/jorgecasar
           photo: https://webmention.io/avatar/pbs.twimg.com/482c1592f083dff0f6f75531586b0fc3458eaa931c8beca9385ef1203c941e1c.png
@@ -21934,7 +21965,7 @@
         sentence_html: <a href="http://github.com/jorgecasar">Jorge del Casar</a>
           retweeted a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *640
+    author: *641
     type: repost
     content: <p><a href="http://github.com/jorgecasar">Jorge del Casar</a> retweeted
       a tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21950,7 +21981,7 @@
       id: 435695
       private: false
       data:
-        author: &641
+        author: &642
           name: Mánu Fosela
           url: http://manufosela.es
           photo: https://webmention.io/avatar/pbs.twimg.com/7bc00ffadc4667f97107434c76b2241e7777cd6dd7bdce90156d7ac6ee6bf3fb.jpg
@@ -21965,7 +21996,7 @@
         sentence_html: <a href="http://manufosela.es">Mánu Fosela</a> retweeted a
           tweet <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *641
+    author: *642
     type: repost
     content: <p><a href="http://manufosela.es">Mánu Fosela</a> retweeted a tweet <a
       href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a></p>
@@ -21981,7 +22012,7 @@
       id: 436212
       private: false
       data:
-        author: &642
+        author: &643
           name: Jason Grigsby, ☁4
           url: https://cloudfour.com
           photo: https://webmention.io/avatar/pbs.twimg.com/a850c61d3b4d6d8e13f90ecd09bf867c25e4ff826468dbbd7e3ec6c1420cef2e.jpeg
@@ -22000,7 +22031,7 @@
           'Nice. @AaronGustafson distilled his Progressive Web Apps and the Windows
           Ecosyst...' linking to <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *642
+    author: *643
     type: link
     content: <p>Nice. <a href="https://twitter.com/AaronGustafson">@AaronGustafson</a>
       distilled his Progressive Web Apps and the Windows Ecosystem talk into an article
@@ -22017,7 +22048,7 @@
       id: 445315
       private: false
       data:
-        author: &643
+        author: &644
           name: Peter O'Shaughnessy
           url: https://peteroshaughnessy.com
           photo: https://webmention.io/avatar/pbs.twimg.com/778325539633d027f543c738a164de9e04d3b978de95a9ed87a22074b61db9fe.jpg
@@ -22039,7 +22070,7 @@
           posted '@AaronGustafson Hi! Pls may I use this image from aaron-gustafson.com/notebook/p...'
           linking to <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *643
+    author: *644
     type: link
     content: |-
       <p><a href="https://twitter.com/AaronGustafson">@AaronGustafson</a> Hi! Pls may I use this image from <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">aaron-gustafson.com/notebook/progr…</a> in a PWA blog post? (Credited of course!) Also: is it enabled yet?</p>
@@ -22059,7 +22090,7 @@
       id: 463968
       private: false
       data:
-        author: &644
+        author: &645
           name: Emily Grossman
           url: http://www.mobilemoxie.com
           photo: https://webmention.io/avatar/pbs.twimg.com/cae82dfc000f1f9b6f2c74262a03825832d8f51db8c92d379d20759c51db27a1.jpg
@@ -22082,7 +22113,7 @@
           'Bingbot is crawling the web for "quality PWAs" to ingest in the Windows
           Store (a...' linking to <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *644
+    author: *645
     type: link
     content: |-
       <p>Bingbot is crawling the web for “quality PWAs” to ingest in the Windows Store (<a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">aaron-gustafson.com/notebook/progr…</a>). Here’s what Microsoft looks for:</p>
@@ -22103,7 +22134,7 @@
       id: 480864
       private: false
       data:
-        author: &645
+        author: &646
           name: Piotr Karwatka
           url: http://divante.co
           photo: https://webmention.io/avatar/pbs.twimg.com/7e64742dd53a63a46acd315a7a4bef16483e120948bae755c162a8ff280bc191.jpg
@@ -22121,7 +22152,7 @@
           Web Apps are getting really well and widely supported. This is happe...'
           linking to <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *645
+    author: *646
     type: link
     content: <p>Progressive Web Apps are getting really well and widely supported.
       This is happening now. <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">aaron-gustafson.com/notebook/progr…</a></p>
@@ -22137,7 +22168,7 @@
       id: 481150
       private: false
       data:
-        author: &646
+        author: &647
           name: Blue Dolphin IT
           url: http://www.blue-dolphin-it.co.uk/
           photo: https://webmention.io/avatar/pbs.twimg.com/899e416656c628b81578f0934c94bce26aceafb31bc1f72fb2ef9e5f0f9ebe6e.jpg
@@ -22154,7 +22185,7 @@
           posted 'Progressive Web Apps and the Windows Ecosystem aaron-gustafson.com/notebook/prog...'
           linking to <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *646
+    author: *647
     type: link
     content: <p>Progressive Web Apps and the Windows Ecosystem <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">aaron-gustafson.com/notebook/progr…</a></p>
   '1023592514543120385':
@@ -22169,7 +22200,7 @@
       id: 538036
       private: false
       data:
-        author: &647
+        author: &648
           name: Scott Hughes
           url: http://www.dottedt.com
           photo: https://webmention.io/avatar/pbs.twimg.com/f65e5bc375d5d4c72a01c17323157a0593225334984b71a55bbf739b54a4c648.jpg
@@ -22185,7 +22216,70 @@
         sentence_html: <a href="http://www.dottedt.com">Scott Hughes</a> posted 'aaron-gustafson.com/notebook/progr…'
           linking to <a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/</a>
       target: https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/
-    author: *647
+    author: *648
     type: link
     content: <p><a href="https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/">aaron-gustafson.com/notebook/progr…</a></p>
-"/notebook/anna-arnold-hedgeman-was-the-glue-for-the-civil-rights-movement/": {}
+"/notebook/anna-arnold-hedgeman-was-the-glue-for-the-civil-rights-movement/":
+  '588352':
+    id: '588352'
+    uri: https://twitter.com/AaronGustafson/status/1095487052039274496#favorited-by-235699018
+    source: twitter
+    pubdate: 2019-02-13 01:14:27.000000000 +00:00
+    raw:
+      source: https://brid-gy.appspot.com/like/twitter/AaronGustafson/1095487052039274496/235699018
+      verified: true
+      verified_date: '2019-02-13T01:14:27+00:00'
+      id: 588352
+      private: false
+      data:
+        author: &649
+          name: David Dzumba
+          url: https://twitter.com/ddzumba
+          photo: https://webmention.io/avatar/pbs.twimg.com/0159445a30aced25418e1a6f25e29d1a8a27e886d39cb0c7c591694fc91764c2.jpg
+        url: https://twitter.com/AaronGustafson/status/1095487052039274496#favorited-by-235699018
+        name: 
+        content: 
+        published: 
+        published_ts: 
+      activity:
+        type: like
+        sentence: David Dzumba favorited a tweet https://www.aaron-gustafson.com/notebook/anna-arnold-hedgeman-was-the-glue-for-the-civil-rights-movement/
+        sentence_html: <a href="https://twitter.com/ddzumba">David Dzumba</a> favorited
+          a tweet <a href="https://www.aaron-gustafson.com/notebook/anna-arnold-hedgeman-was-the-glue-for-the-civil-rights-movement/">https://www.aaron-gustafson.com/notebook/anna-arnold-hedgeman-was-the-glue-for-the-civil-rights-movement/</a>
+      target: https://www.aaron-gustafson.com/notebook/anna-arnold-hedgeman-was-the-glue-for-the-civil-rights-movement/
+    author: *649
+    type: like
+    content: <p><a href="https://twitter.com/ddzumba">David Dzumba</a> favorited a
+      tweet <a href="https://www.aaron-gustafson.com/notebook/anna-arnold-hedgeman-was-the-glue-for-the-civil-rights-movement/">https://www.aaron-gustafson.com/notebook/anna-arnold-hedgeman-was-the-glue-for-the-civil-rights-movement/</a></p>
+  '588360':
+    id: '588360'
+    uri: https://twitter.com/AaronGustafson/status/1095487052039274496#favorited-by-410219569
+    source: twitter
+    pubdate: 2019-02-13 01:49:30.000000000 +00:00
+    raw:
+      source: https://brid-gy.appspot.com/like/twitter/AaronGustafson/1095487052039274496/410219569
+      verified: true
+      verified_date: '2019-02-13T01:49:30+00:00'
+      id: 588360
+      private: false
+      data:
+        author: &650
+          name: Christopher McMillan
+          url: https://twitter.com/CEEKTechnology
+          photo: https://webmention.io/avatar/pbs.twimg.com/79f117cb948e3991dc3d77b6a459cd72460e36c91d0d40f19b788763a86e8595.jpg
+        url: https://twitter.com/AaronGustafson/status/1095487052039274496#favorited-by-410219569
+        name: 
+        content: 
+        published: 
+        published_ts: 
+      activity:
+        type: like
+        sentence: Christopher McMillan favorited a tweet https://www.aaron-gustafson.com/notebook/anna-arnold-hedgeman-was-the-glue-for-the-civil-rights-movement/
+        sentence_html: <a href="https://twitter.com/CEEKTechnology">Christopher McMillan</a>
+          favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/anna-arnold-hedgeman-was-the-glue-for-the-civil-rights-movement/">https://www.aaron-gustafson.com/notebook/anna-arnold-hedgeman-was-the-glue-for-the-civil-rights-movement/</a>
+      target: https://www.aaron-gustafson.com/notebook/anna-arnold-hedgeman-was-the-glue-for-the-civil-rights-movement/
+    author: *650
+    type: like
+    content: <p><a href="https://twitter.com/CEEKTechnology">Christopher McMillan</a>
+      favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/anna-arnold-hedgeman-was-the-glue-for-the-civil-rights-movement/">https://www.aaron-gustafson.com/notebook/anna-arnold-hedgeman-was-the-glue-for-the-civil-rights-movement/</a></p>
+"/notebook/bayard-rustin-advocated-for-marginalized-people-everywhere/": {}
