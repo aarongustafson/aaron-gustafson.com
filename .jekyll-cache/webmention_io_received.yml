@@ -22428,4 +22428,36 @@
     type: like
     content: <p><a href="https://twitter.com/kimgoodwin">Kim Goodwin</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/lizzo-is-all-about-self-acceptance-and-empowerment/">https://www.aaron-gustafson.com/notebook/lizzo-is-all-about-self-acceptance-and-empowerment/</a></p>
-"/notebook/pauli-murray-dismantled-systems-of-oppression/": {}
+"/notebook/pauli-murray-dismantled-systems-of-oppression/":
+  '591764':
+    id: '591764'
+    uri: https://twitter.com/AaronGustafson/status/1098277748899004421#favorited-by-583036255
+    source: twitter
+    pubdate: 2019-02-20 19:07:35.000000000 +00:00
+    raw:
+      source: https://brid-gy.appspot.com/like/twitter/AaronGustafson/1098277748899004421/583036255
+      verified: true
+      verified_date: '2019-02-20T19:07:35+00:00'
+      id: 591764
+      private: false
+      data:
+        author: &655
+          name: Aaron Buchanan
+          url: https://twitter.com/chasingab
+          photo: https://webmention.io/avatar/pbs.twimg.com/c127cc6370014d5bb1e292435cccbc9ad945de492f62c74c1bceb00931388ce2.jpg
+        url: https://twitter.com/AaronGustafson/status/1098277748899004421#favorited-by-583036255
+        name: 
+        content: 
+        published: 
+        published_ts: 
+      activity:
+        type: like
+        sentence: Aaron Buchanan favorited a tweet https://www.aaron-gustafson.com/notebook/pauli-murray-dismantled-systems-of-oppression/
+        sentence_html: <a href="https://twitter.com/chasingab">Aaron Buchanan</a>
+          favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/pauli-murray-dismantled-systems-of-oppression/">https://www.aaron-gustafson.com/notebook/pauli-murray-dismantled-systems-of-oppression/</a>
+      target: https://www.aaron-gustafson.com/notebook/pauli-murray-dismantled-systems-of-oppression/
+    author: *655
+    type: like
+    content: <p><a href="https://twitter.com/chasingab">Aaron Buchanan</a> favorited
+      a tweet <a href="https://www.aaron-gustafson.com/notebook/pauli-murray-dismantled-systems-of-oppression/">https://www.aaron-gustafson.com/notebook/pauli-murray-dismantled-systems-of-oppression/</a></p>
+"/notebook/w-kamau-bell-is-all-about-dialogue/": {}
