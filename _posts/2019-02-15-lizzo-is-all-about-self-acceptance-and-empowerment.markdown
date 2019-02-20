@@ -33,7 +33,11 @@ My brown skin
 
 I hope Oscar feels the same way as he grows up. I hope I can help him realize how beautiful he is; he certainly hears it a lot from me and Kelly, but he’s only three. I‘m sure he’ll struggle with what it means to be the black child of two white parents, but I wish for him to never doubt his own worth, *especially* based on the color of his skin.
 
-In [an interview with <cite>Teen Vogue</cite>](https://www.teenvogue.com/story/lizzo-music-issue), Lizzo recalled “When I was in high school, I was a big girl with a cute face. So dudes liked me secretly, but they didn’t like me publicly. I never had a boyfriend because they didn’t want to claim me.” Now that she’s a "star," she doesn’t feel like much has changed. “So now in this industry, I’m a big girl with a cute face and some cute music and I’m still being liked secretly and not claimed publicly.”
+In [an interview with <cite>Teen Vogue</cite>](https://www.teenvogue.com/story/lizzo-music-issue), Lizzo
+
+{{TOC}}
+
+ recalled “When I was in high school, I was a big girl with a cute face. So dudes liked me secretly, but they didn’t like me publicly. I never had a boyfriend because they didn’t want to claim me.” Now that she’s a "star," she doesn’t feel like much has changed. “So now in this industry, I’m a big girl with a cute face and some cute music and I’m still being liked secretly and not claimed publicly.”
 
 That said, Lizzo does have a strong following and a lot of supporters. We appreciate her self-assured attitude. She exudes confidence and it’s infectious. "It's like, 'She's comfortable in her own skin. Can I just put on her music and sing along and pretend I'm like that for a second?' That's the story I get from a lot of girls," [Lizzo told <cite>Billboard</cite>](https://www.billboard.com/articles/news/6487576/lizzo-rapper-interview-sleater-kinney-tour). "They say, 'Thank you for making this body-positive music. Thank you for being a body-positive performer, and thank you for being you.' That helps me be comfortable. It's a journey but I'm getting there."
 
