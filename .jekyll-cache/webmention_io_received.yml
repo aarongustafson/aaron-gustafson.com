@@ -22460,4 +22460,36 @@
     type: like
     content: <p><a href="https://twitter.com/chasingab">Aaron Buchanan</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/pauli-murray-dismantled-systems-of-oppression/">https://www.aaron-gustafson.com/notebook/pauli-murray-dismantled-systems-of-oppression/</a></p>
-"/notebook/w-kamau-bell-is-all-about-dialogue/": {}
+"/notebook/w-kamau-bell-is-all-about-dialogue/":
+  '591872':
+    id: '591872'
+    uri: https://twitter.com/AaronGustafson/status/1098365938171346944#favorited-by-19119809
+    source: twitter
+    pubdate: 2019-02-21 00:20:16.000000000 +00:00
+    raw:
+      source: https://brid-gy.appspot.com/like/twitter/AaronGustafson/1098365938171346944/19119809
+      verified: true
+      verified_date: '2019-02-21T00:20:16+00:00'
+      id: 591872
+      private: false
+      data:
+        author: &656
+          name: W. Kamau Bell
+          url: https://twitter.com/wkamaubell
+          photo: https://webmention.io/avatar/pbs.twimg.com/9c63256aa2b97a63e756d6f7a3d16095650299189fd6c671293e17996a096e63.jpg
+        url: https://twitter.com/AaronGustafson/status/1098365938171346944#favorited-by-19119809
+        name: 
+        content: 
+        published: 
+        published_ts: 
+      activity:
+        type: like
+        sentence: W. Kamau Bell favorited a tweet https://www.aaron-gustafson.com/notebook/w-kamau-bell-is-all-about-dialogue/
+        sentence_html: <a href="https://twitter.com/wkamaubell">W. Kamau Bell</a>
+          favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/w-kamau-bell-is-all-about-dialogue/">https://www.aaron-gustafson.com/notebook/w-kamau-bell-is-all-about-dialogue/</a>
+      target: https://www.aaron-gustafson.com/notebook/w-kamau-bell-is-all-about-dialogue/
+    author: *656
+    type: like
+    content: <p><a href="https://twitter.com/wkamaubell">W. Kamau Bell</a> favorited
+      a tweet <a href="https://www.aaron-gustafson.com/notebook/w-kamau-bell-is-all-about-dialogue/">https://www.aaron-gustafson.com/notebook/w-kamau-bell-is-all-about-dialogue/</a></p>
+"/notebook/lebron-james-converts-power-into-promise/": {}
