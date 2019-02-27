@@ -22617,4 +22617,129 @@
     type: like
     content: <p><a href="https://twitter.com/ddzumba">David Dzumba</a> favorited a
       tweet <a href="https://www.aaron-gustafson.com/notebook/lebron-james-converts-power-into-promise/">https://www.aaron-gustafson.com/notebook/lebron-james-converts-power-into-promise/</a></p>
-"/notebook/ida-b-wells-shone-light-in-the-darkness/": {}
+  '592242':
+    id: '592242'
+    uri: https://twitter.com/AaronGustafson/status/1098668179948220416#favorited-by-191580230
+    source: twitter
+    pubdate: 2019-02-22 02:10:33.000000000 +00:00
+    raw:
+      source: https://brid-gy.appspot.com/like/twitter/AaronGustafson/1098668179948220416/191580230
+      verified: true
+      verified_date: '2019-02-22T02:10:33+00:00'
+      id: 592242
+      private: false
+      data:
+        author: &661
+          name: Jay Kid
+          url: https://twitter.com/J2theKay
+          photo: https://webmention.io/avatar/pbs.twimg.com/3833f1fe2f7c0a45e53ec5a9b7c4921204f2973e4ccf93a51c87656663ad1d68.jpg
+        url: https://twitter.com/AaronGustafson/status/1098668179948220416#favorited-by-191580230
+        name: 
+        content: 
+        published: 
+        published_ts: 
+      activity:
+        type: like
+        sentence: Jay Kid favorited a tweet https://www.aaron-gustafson.com/notebook/lebron-james-converts-power-into-promise/
+        sentence_html: <a href="https://twitter.com/J2theKay">Jay Kid</a> favorited
+          a tweet <a href="https://www.aaron-gustafson.com/notebook/lebron-james-converts-power-into-promise/">https://www.aaron-gustafson.com/notebook/lebron-james-converts-power-into-promise/</a>
+      target: https://www.aaron-gustafson.com/notebook/lebron-james-converts-power-into-promise/
+    author: *661
+    type: like
+    content: <p><a href="https://twitter.com/J2theKay">Jay Kid</a> favorited a tweet
+      <a href="https://www.aaron-gustafson.com/notebook/lebron-james-converts-power-into-promise/">https://www.aaron-gustafson.com/notebook/lebron-james-converts-power-into-promise/</a></p>
+"/notebook/ida-b-wells-shone-light-in-the-darkness/":
+  '592222':
+    id: '592222'
+    uri: https://twitter.com/AaronGustafson/status/1098732560652398602#favorited-by-20437262
+    source: twitter
+    pubdate: 2019-02-22 00:07:04.000000000 +00:00
+    raw:
+      source: https://brid-gy.appspot.com/like/twitter/AaronGustafson/1098732560652398602/20437262
+      verified: true
+      verified_date: '2019-02-22T00:07:04+00:00'
+      id: 592222
+      private: false
+      data:
+        author: &662
+          name: Derek Pennycuff
+          url: https://twitter.com/dap6000
+          photo: https://webmention.io/avatar/pbs.twimg.com/7a4ca634aa1ec419f710e3d480a108377fc48c2844d2ba81c9c2a2ead64988bb.jpeg
+        url: https://twitter.com/AaronGustafson/status/1098732560652398602#favorited-by-20437262
+        name: 
+        content: 
+        published: 
+        published_ts: 
+      activity:
+        type: like
+        sentence: Derek Pennycuff favorited a tweet https://www.aaron-gustafson.com/notebook/ida-b-wells-shone-light-in-the-darkness/
+        sentence_html: <a href="https://twitter.com/dap6000">Derek Pennycuff</a> favorited
+          a tweet <a href="https://www.aaron-gustafson.com/notebook/ida-b-wells-shone-light-in-the-darkness/">https://www.aaron-gustafson.com/notebook/ida-b-wells-shone-light-in-the-darkness/</a>
+      target: https://www.aaron-gustafson.com/notebook/ida-b-wells-shone-light-in-the-darkness/
+    author: *662
+    type: like
+    content: <p><a href="https://twitter.com/dap6000">Derek Pennycuff</a> favorited
+      a tweet <a href="https://www.aaron-gustafson.com/notebook/ida-b-wells-shone-light-in-the-darkness/">https://www.aaron-gustafson.com/notebook/ida-b-wells-shone-light-in-the-darkness/</a></p>
+  '592223':
+    id: '592223'
+    uri: https://twitter.com/AaronGustafson/status/1098732560652398602#favorited-by-49144047
+    source: twitter
+    pubdate: 2019-02-22 00:07:05.000000000 +00:00
+    raw:
+      source: https://brid-gy.appspot.com/like/twitter/AaronGustafson/1098732560652398602/49144047
+      verified: true
+      verified_date: '2019-02-22T00:07:05+00:00'
+      id: 592223
+      private: false
+      data:
+        author: &663
+          name: Amy Carney
+          url: https://twitter.com/click2carney
+          photo: https://webmention.io/avatar/pbs.twimg.com/5fe17a6c9043d424174a439873bae9347d549a19c7a4c1631784d5673fe7a0c3.jpg
+        url: https://twitter.com/AaronGustafson/status/1098732560652398602#favorited-by-49144047
+        name: 
+        content: 
+        published: 
+        published_ts: 
+      activity:
+        type: like
+        sentence: Amy Carney favorited a tweet https://www.aaron-gustafson.com/notebook/ida-b-wells-shone-light-in-the-darkness/
+        sentence_html: <a href="https://twitter.com/click2carney">Amy Carney</a> favorited
+          a tweet <a href="https://www.aaron-gustafson.com/notebook/ida-b-wells-shone-light-in-the-darkness/">https://www.aaron-gustafson.com/notebook/ida-b-wells-shone-light-in-the-darkness/</a>
+      target: https://www.aaron-gustafson.com/notebook/ida-b-wells-shone-light-in-the-darkness/
+    author: *663
+    type: like
+    content: <p><a href="https://twitter.com/click2carney">Amy Carney</a> favorited
+      a tweet <a href="https://www.aaron-gustafson.com/notebook/ida-b-wells-shone-light-in-the-darkness/">https://www.aaron-gustafson.com/notebook/ida-b-wells-shone-light-in-the-darkness/</a></p>
+  '592238':
+    id: '592238'
+    uri: https://twitter.com/AaronGustafson/status/1098732560652398602#favorited-by-1613581
+    source: twitter
+    pubdate: 2019-02-22 01:40:52.000000000 +00:00
+    raw:
+      source: https://brid-gy.appspot.com/like/twitter/AaronGustafson/1098732560652398602/1613581
+      verified: true
+      verified_date: '2019-02-22T01:40:52+00:00'
+      id: 592238
+      private: false
+      data:
+        author: &664
+          name: Scott Flodin
+          url: https://twitter.com/scottflodin
+          photo: https://webmention.io/avatar/pbs.twimg.com/110ce53085f6a19ef60de70075c30cea3e55f3cb6739193ca9b98de2c46dfa09.jpg
+        url: https://twitter.com/AaronGustafson/status/1098732560652398602#favorited-by-1613581
+        name: 
+        content: 
+        published: 
+        published_ts: 
+      activity:
+        type: like
+        sentence: Scott Flodin favorited a tweet https://www.aaron-gustafson.com/notebook/ida-b-wells-shone-light-in-the-darkness/
+        sentence_html: <a href="https://twitter.com/scottflodin">Scott Flodin</a>
+          favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/ida-b-wells-shone-light-in-the-darkness/">https://www.aaron-gustafson.com/notebook/ida-b-wells-shone-light-in-the-darkness/</a>
+      target: https://www.aaron-gustafson.com/notebook/ida-b-wells-shone-light-in-the-darkness/
+    author: *664
+    type: like
+    content: <p><a href="https://twitter.com/scottflodin">Scott Flodin</a> favorited
+      a tweet <a href="https://www.aaron-gustafson.com/notebook/ida-b-wells-shone-light-in-the-darkness/">https://www.aaron-gustafson.com/notebook/ida-b-wells-shone-light-in-the-darkness/</a></p>
+"/notebook/baratunde-thurston-tackles-tough-topics-with-deep-humor/": {}
