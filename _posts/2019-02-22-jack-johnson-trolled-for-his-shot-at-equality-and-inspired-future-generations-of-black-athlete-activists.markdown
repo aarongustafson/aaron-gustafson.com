@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Johnson Johnson “trolled” for his shot at equality and inspired future generations of black athlete activists"
+title: "Jack Johnson “trolled” for his shot at equality and inspired future generations of black athlete activists"
 date: 2019-02-22 09:33:30 -0800
 comments: true
 tags: ["Black History", influences]
