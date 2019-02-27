@@ -22743,4 +22743,73 @@
     content: <p><a href="https://twitter.com/scottflodin">Scott Flodin</a> favorited
       a tweet <a href="https://www.aaron-gustafson.com/notebook/ida-b-wells-shone-light-in-the-darkness/">https://www.aaron-gustafson.com/notebook/ida-b-wells-shone-light-in-the-darkness/</a></p>
 "/notebook/baratunde-thurston-tackles-tough-topics-with-deep-humor/": {}
-"/notebook/mae-jemison-never-gave-up-on-her-dream/": {}
+"/notebook/mae-jemison-never-gave-up-on-her-dream/":
+  '1100576350904217600':
+    id: '1100576350904217600'
+    uri: https://twitter.com/JasonNeel/status/1100576350904217600
+    source: twitter
+    pubdate: 2019-02-26 18:00:24.000000000 -08:00
+    raw:
+      source: https://brid-gy.appspot.com/comment/twitter/AaronGustafson/1100562635534336000/1100576350904217600
+      verified: true
+      verified_date: '2019-02-27T02:17:58+00:00'
+      id: 593706
+      private: false
+      data:
+        author: &665
+          name: Jason Neel
+          url: https://twitter.com/JasonNeel
+          photo: https://webmention.io/avatar/pbs.twimg.com/0bacdae9fadebf4f6acad717955039738fe4ec0cf91104df1f9cb42ad864247b.jpg
+        url: https://twitter.com/JasonNeel/status/1100576350904217600
+        name: 
+        content: 'Not sure if you’re a podcast listener, but I found this <a href="https://twitter.com/StarTalkRadio">@StarTalkRadio</a>
+          interview between <a href="https://twitter.com/maejemison">@maejemison</a>
+          and <a href="https://twitter.com/neiltyson">@neiltyson</a> to be really
+          good: <a href="https://www.startalkradio.net/show/a-conversation-with-dr-mae-jemison/">startalkradio.net/show/a-convers…</a>'
+        published: '2019-02-27T02:00:24+00:00'
+        published_ts: 1551232824
+      activity:
+        type: reply
+        sentence: Jason Neel replied 'Not sure if you’re a podcast listener, but I
+          found this @StarTalkRadio interview...' to a tweet https://www.aaron-gustafson.com/notebook/mae-jemison-never-gave-up-on-her-dream/
+        sentence_html: <a href="https://twitter.com/JasonNeel">Jason Neel</a> replied
+          'Not sure if you’re a podcast listener, but I found this @StarTalkRadio
+          interview...' to a tweet <a href="https://www.aaron-gustafson.com/notebook/mae-jemison-never-gave-up-on-her-dream/">https://www.aaron-gustafson.com/notebook/mae-jemison-never-gave-up-on-her-dream/</a>
+      target: https://www.aaron-gustafson.com/notebook/mae-jemison-never-gave-up-on-her-dream/
+    author: *665
+    type: reply
+    content: '<p>Not sure if you’re a podcast listener, but I found this <a href="https://twitter.com/StarTalkRadio">@StarTalkRadio</a>
+      interview between <a href="https://twitter.com/maejemison">@maejemison</a> and
+      <a href="https://twitter.com/neiltyson">@neiltyson</a> to be really good: <a
+      href="https://www.startalkradio.net/show/a-conversation-with-dr-mae-jemison/">startalkradio.net/show/a-convers…</a></p>'
+  '1100578425792737280':
+    id: '1100578425792737280'
+    uri: https://twitter.com/AaronGustafson/status/1100578425792737280
+    source: twitter
+    pubdate: 2019-02-26 18:08:39.000000000 -08:00
+    raw:
+      source: https://brid-gy.appspot.com/comment/twitter/AaronGustafson/1100562635534336000/1100578425792737280
+      verified: true
+      verified_date: '2019-02-27T02:18:00+00:00'
+      id: 593707
+      private: false
+      data:
+        author: &666
+          name: Aaron Gustafson
+          url: https://twitter.com/AaronGustafson
+          photo: https://webmention.io/avatar/pbs.twimg.com/9a465394ee7a970f4160951f103ad1a3ce855b4a6fdd8150fe733aa799863664.jpg
+        url: https://twitter.com/AaronGustafson/status/1100578425792737280
+        name: 
+        content: Adding it to the list!
+        published: '2019-02-27T02:08:39+00:00'
+        published_ts: 1551233319
+      activity:
+        type: reply
+        sentence: Aaron Gustafson replied 'Adding it to the list!' to a tweet https://www.aaron-gustafson.com/notebook/mae-jemison-never-gave-up-on-her-dream/
+        sentence_html: <a href="https://twitter.com/AaronGustafson">Aaron Gustafson</a>
+          replied 'Adding it to the list!' to a tweet <a href="https://www.aaron-gustafson.com/notebook/mae-jemison-never-gave-up-on-her-dream/">https://www.aaron-gustafson.com/notebook/mae-jemison-never-gave-up-on-her-dream/</a>
+      target: https://www.aaron-gustafson.com/notebook/mae-jemison-never-gave-up-on-her-dream/
+    author: *666
+    type: reply
+    content: "<p>Adding it to the list!</p>"
+"/notebook/johnson-johnson-trolled-for-his-shot-at-equality-and-inspired-future-generations-of-black-athlete-activists/": {}
