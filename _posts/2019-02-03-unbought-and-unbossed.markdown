@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Unbought and unbossed"
+title: "Shirley Chisholm was unbought and unbossed"
 date: 2019-02-03 12:49:42 -0800
 comments: true
 tags: ["Black History", influences]
