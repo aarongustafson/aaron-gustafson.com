@@ -22814,4 +22814,36 @@
     content: "<p>Adding it to the list!</p>"
 "/notebook/johnson-johnson-trolled-for-his-shot-at-equality-and-inspired-future-generations-of-black-athlete-activists/": {}
 "/notebook/jack-johnson-trolled-for-his-shot-at-equality-and-inspired-future-generations-of-black-athlete-activists/": {}
-"/notebook/mark-deans-work-on-the-pc-made-personal-computing-possible/": {}
+"/notebook/mark-deans-work-on-the-pc-made-personal-computing-possible/":
+  '594355':
+    id: '594355'
+    uri: https://twitter.com/AaronGustafson/status/1101270299578904576#favorited-by-21822852
+    source: twitter
+    pubdate: 2019-03-01 00:40:23.000000000 +00:00
+    raw:
+      source: https://brid-gy.appspot.com/like/twitter/AaronGustafson/1101270299578904576/21822852
+      verified: true
+      verified_date: '2019-03-01T00:40:23+00:00'
+      id: 594355
+      private: false
+      data:
+        author: &667
+          name: Jason Neel
+          url: https://twitter.com/JasonNeel
+          photo: https://webmention.io/avatar/pbs.twimg.com/0bacdae9fadebf4f6acad717955039738fe4ec0cf91104df1f9cb42ad864247b.jpg
+        url: https://twitter.com/AaronGustafson/status/1101270299578904576#favorited-by-21822852
+        name: 
+        content: 
+        published: 
+        published_ts: 
+      activity:
+        type: like
+        sentence: Jason Neel favorited a tweet https://www.aaron-gustafson.com/notebook/mark-deans-work-on-the-pc-made-personal-computing-possible/
+        sentence_html: <a href="https://twitter.com/JasonNeel">Jason Neel</a> favorited
+          a tweet <a href="https://www.aaron-gustafson.com/notebook/mark-deans-work-on-the-pc-made-personal-computing-possible/">https://www.aaron-gustafson.com/notebook/mark-deans-work-on-the-pc-made-personal-computing-possible/</a>
+      target: https://www.aaron-gustafson.com/notebook/mark-deans-work-on-the-pc-made-personal-computing-possible/
+    author: *667
+    type: like
+    content: <p><a href="https://twitter.com/JasonNeel">Jason Neel</a> favorited a
+      tweet <a href="https://www.aaron-gustafson.com/notebook/mark-deans-work-on-the-pc-made-personal-computing-possible/">https://www.aaron-gustafson.com/notebook/mark-deans-work-on-the-pc-made-personal-computing-possible/</a></p>
+"/notebook/amelia-boynton-robinson-agitated-for-the-vote/": {}
