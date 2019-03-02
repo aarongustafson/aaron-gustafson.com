@@ -5,7 +5,7 @@ date: 2019-02-27 16:53:12 -0800
 tags: ["Black History", influences]
 comments: true
 description: "What I truly appreciate about Margaret Collins is her focus and drive. She saw work that needed to be done and she stepped up and did it. Even when it terrified her."
-twitter_text: "Margaret Collins wasn’t just the "Termite Lady," she was also an advocate for civil rights who pushed for equality through scientific investigation"
+twitter_text: "Margaret Collins wasn’t just the “Termite Lady,” she was also an advocate for civil rights who pushed for equality through scientific investigation"
 series:
   name: "Honoring Black History"
   tag: black-history

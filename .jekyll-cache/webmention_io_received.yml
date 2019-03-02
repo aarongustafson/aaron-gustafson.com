@@ -22848,4 +22848,103 @@
       tweet <a href="https://www.aaron-gustafson.com/notebook/mark-deans-work-on-the-pc-made-personal-computing-possible/">https://www.aaron-gustafson.com/notebook/mark-deans-work-on-the-pc-made-personal-computing-possible/</a></p>
 "/notebook/amelia-boynton-robinson-agitated-for-the-vote/": {}
 "/notebook/without-frederick-mckinley-jones-where-would-your-food-be/": {}
-"/notebook/katherine-johnson-took-us-to-the-moon-and-back/": {}
+"/notebook/katherine-johnson-took-us-to-the-moon-and-back/":
+  '594683':
+    id: '594683'
+    uri: https://twitter.com/AaronGustafson/status/1101636078182846469#favorited-by-18047049
+    source: twitter
+    pubdate: 2019-03-02 03:14:13.000000000 +00:00
+    raw:
+      source: https://brid-gy.appspot.com/like/twitter/AaronGustafson/1101636078182846469/18047049
+      verified: true
+      verified_date: '2019-03-02T03:14:13+00:00'
+      id: 594683
+      private: false
+      data:
+        author: &668
+          name: Refresh Detroit
+          url: https://twitter.com/refreshdetroit
+          photo: https://webmention.io/avatar/pbs.twimg.com/f7eb93c8cf62ab6c9d803e25b20e4fd3c36202423c92ea1aa9c58817602e8613.gif
+        url: https://twitter.com/AaronGustafson/status/1101636078182846469#favorited-by-18047049
+        name: 
+        content: 
+        published: 
+        published_ts: 
+      activity:
+        type: like
+        sentence: Refresh Detroit favorited a tweet https://www.aaron-gustafson.com/notebook/katherine-johnson-took-us-to-the-moon-and-back/
+        sentence_html: <a href="https://twitter.com/refreshdetroit">Refresh Detroit</a>
+          favorited a tweet <a href="https://www.aaron-gustafson.com/notebook/katherine-johnson-took-us-to-the-moon-and-back/">https://www.aaron-gustafson.com/notebook/katherine-johnson-took-us-to-the-moon-and-back/</a>
+      target: https://www.aaron-gustafson.com/notebook/katherine-johnson-took-us-to-the-moon-and-back/
+    author: *668
+    type: like
+    content: <p><a href="https://twitter.com/refreshdetroit">Refresh Detroit</a> favorited
+      a tweet <a href="https://www.aaron-gustafson.com/notebook/katherine-johnson-took-us-to-the-moon-and-back/">https://www.aaron-gustafson.com/notebook/katherine-johnson-took-us-to-the-moon-and-back/</a></p>
+  '594682':
+    id: '594682'
+    uri: https://twitter.com/AaronGustafson/status/1101636078182846469#favorited-by-49144047
+    source: twitter
+    pubdate: 2019-03-02 03:14:13.000000000 +00:00
+    raw:
+      source: https://brid-gy.appspot.com/like/twitter/AaronGustafson/1101636078182846469/49144047
+      verified: true
+      verified_date: '2019-03-02T03:14:13+00:00'
+      id: 594682
+      private: false
+      data:
+        author: &669
+          name: Amy Carney
+          url: https://twitter.com/click2carney
+          photo: https://webmention.io/avatar/pbs.twimg.com/5fe17a6c9043d424174a439873bae9347d549a19c7a4c1631784d5673fe7a0c3.jpg
+        url: https://twitter.com/AaronGustafson/status/1101636078182846469#favorited-by-49144047
+        name: 
+        content: 
+        published: 
+        published_ts: 
+      activity:
+        type: like
+        sentence: Amy Carney favorited a tweet https://www.aaron-gustafson.com/notebook/katherine-johnson-took-us-to-the-moon-and-back/
+        sentence_html: <a href="https://twitter.com/click2carney">Amy Carney</a> favorited
+          a tweet <a href="https://www.aaron-gustafson.com/notebook/katherine-johnson-took-us-to-the-moon-and-back/">https://www.aaron-gustafson.com/notebook/katherine-johnson-took-us-to-the-moon-and-back/</a>
+      target: https://www.aaron-gustafson.com/notebook/katherine-johnson-took-us-to-the-moon-and-back/
+    author: *669
+    type: like
+    content: <p><a href="https://twitter.com/click2carney">Amy Carney</a> favorited
+      a tweet <a href="https://www.aaron-gustafson.com/notebook/katherine-johnson-took-us-to-the-moon-and-back/">https://www.aaron-gustafson.com/notebook/katherine-johnson-took-us-to-the-moon-and-back/</a></p>
+  '1101677763352768512':
+    id: '1101677763352768512'
+    uri: https://twitter.com/redcrew/status/1101677763352768512
+    source: twitter
+    pubdate: 2019-03-01 18:57:01.000000000 -08:00
+    raw:
+      source: https://brid-gy.appspot.com/post/twitter/AaronGustafson/1101677763352768512
+      verified: true
+      verified_date: '2019-03-02T03:14:13+00:00'
+      id: 594681
+      private: false
+      data:
+        author: &670
+          name: Deborah Edwards-Onoro
+          url: https://twitter.com/redcrew
+          photo: https://webmention.io/avatar/pbs.twimg.com/9bdb33b83d095b41186a642ba244b55e11bb3032ae1d49788c355bbf9a3f92b5.jpg
+        url: https://twitter.com/redcrew/status/1101677763352768512
+        name: 
+        content: |-
+          https://t.co/F0GbOUOfvo
+          <a class="u-mention" href="https://www.aaron-gustafson.com/notebook/katherine-johnson-took-us-to-the-moon-and-back/"></a>
+        published: '2019-03-02T02:57:01+00:00'
+        published_ts: 1551495421
+      activity:
+        type: link
+        sentence: Deborah Edwards-Onoro posted 'https://t.co/F0GbOUOfvo' linking to
+          https://www.aaron-gustafson.com/notebook/katherine-johnson-took-us-to-the-moon-and-back/
+        sentence_html: <a href="https://twitter.com/redcrew">Deborah Edwards-Onoro</a>
+          posted 'https://t.co/F0GbOUOfvo' linking to <a href="https://www.aaron-gustafson.com/notebook/katherine-johnson-took-us-to-the-moon-and-back/">https://www.aaron-gustafson.com/notebook/katherine-johnson-took-us-to-the-moon-and-back/</a>
+      target: https://www.aaron-gustafson.com/notebook/katherine-johnson-took-us-to-the-moon-and-back/
+    author: *670
+    type: link
+    content: |-
+      <p>https://t.co/F0GbOUOfvo
+      <a class="u-mention" href="https://www.aaron-gustafson.com/notebook/katherine-johnson-took-us-to-the-moon-and-back/"></a></p>
+"/notebook/angie-turner-king-invested-her-energy-in-others/": {}
+"/notebook/2019-03-01-margaret-collins-used-biology-to-push-for-equality/": {}
