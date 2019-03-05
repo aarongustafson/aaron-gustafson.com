@@ -69,6 +69,13 @@ AddType application/vnd.ms-fontobject eot
 <FilesMatch "\.(html|htm)$">
   SetEnv HTML
 </FilesMatch>
+# <If "%{DOCUMENT_URI} =~ /\.html$/">
+#   H2PushResource add c/default.min.css critical
+#   H2PushResource add c/advanced.min.css critical
+#   H2PushResource add serviceworker.min.js critical
+#   H2PushResource add j/main.min.js critical
+#   H2PushResource add j/post.min.js
+# </If>
 Header set X-XSS-Protection "1; mode=block"
 Header set X-Content-Type-Options "nosniff"
 <IfDefine LIVE>

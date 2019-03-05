@@ -22946,6 +22946,37 @@
     content: |-
       <p>https://t.co/F0GbOUOfvo
       <a class="u-mention" href="https://www.aaron-gustafson.com/notebook/katherine-johnson-took-us-to-the-moon-and-back/"></a></p>
-"/notebook/angie-turner-king-invested-her-energy-in-others/": {}
+"/notebook/angie-turner-king-invested-her-energy-in-others/":
+  '594709':
+    id: '594709'
+    uri: https://twitter.com/AaronGustafson/status/1101729350351761408#favorited-by-635543
+    source: twitter
+    pubdate: 2019-03-02 06:42:00.000000000 +00:00
+    raw:
+      source: https://brid-gy.appspot.com/like/twitter/AaronGustafson/1101729350351761408/635543
+      verified: true
+      verified_date: '2019-03-02T06:42:00+00:00'
+      id: 594709
+      private: false
+      data:
+        author: &671
+          name: Daniel Burka
+          url: https://twitter.com/dburka
+          photo: https://webmention.io/avatar/pbs.twimg.com/704067a020ea826da301bea6fd245fdde75bb31299be1c45aa43f29567c19a19.jpg
+        url: https://twitter.com/AaronGustafson/status/1101729350351761408#favorited-by-635543
+        name: 
+        content: 
+        published: 
+        published_ts: 
+      activity:
+        type: like
+        sentence: Daniel Burka favorited a tweet https://www.aaron-gustafson.com/notebook/angie-turner-king-invested-her-energy-in-others/
+        sentence_html: <a href="https://twitter.com/dburka">Daniel Burka</a> favorited
+          a tweet <a href="https://www.aaron-gustafson.com/notebook/angie-turner-king-invested-her-energy-in-others/">https://www.aaron-gustafson.com/notebook/angie-turner-king-invested-her-energy-in-others/</a>
+      target: https://www.aaron-gustafson.com/notebook/angie-turner-king-invested-her-energy-in-others/
+    author: *671
+    type: like
+    content: <p><a href="https://twitter.com/dburka">Daniel Burka</a> favorited a
+      tweet <a href="https://www.aaron-gustafson.com/notebook/angie-turner-king-invested-her-energy-in-others/">https://www.aaron-gustafson.com/notebook/angie-turner-king-invested-her-energy-in-others/</a></p>
 "/notebook/2019-03-01-margaret-collins-used-biology-to-push-for-equality/": {}
 "/notebook/margaret-collins-used-biology-to-push-for-equality/": {}
