@@ -68,14 +68,12 @@ AddType application/vnd.ms-fontobject eot
 # Lockdown - only on the live serve though
 <FilesMatch "\.(html|htm)$">
   SetEnv HTML
+  Header add Link "</c/default.min.css>;as=style;rel=preload"
+  Header add Link "</c/advanced.min.css>;as=style;rel=preload"
+  Header add Link "</serviceworker.min.js>;as=script;rel=preload"
+  Header add Link "</j/main.min.js>;as=script;rel=preload"
+  Header add Link "</j/post.min.js>;as=script;rel=preload"
 </FilesMatch>
-# <If "%{DOCUMENT_URI} =~ /\.html$/">
-#   H2PushResource add c/default.min.css critical
-#   H2PushResource add c/advanced.min.css critical
-#   H2PushResource add serviceworker.min.js critical
-#   H2PushResource add j/main.min.js critical
-#   H2PushResource add j/post.min.js
-# </If>
 Header set X-XSS-Protection "1; mode=block"
 Header set X-Content-Type-Options "nosniff"
 <IfDefine LIVE>
