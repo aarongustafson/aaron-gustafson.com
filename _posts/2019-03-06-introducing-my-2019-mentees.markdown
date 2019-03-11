@@ -29,7 +29,7 @@ Over the course of the next year, we’ll be working on his technical skills (es
 
 ## Olu Niyi-Awosusi
 
-Olu is based in London, works for the BBC, and is a champion for accessibility. I love their passion for the web and that they share a ton of what they learn. So far, we’ve focused much of our time discussing diversity & inclusion and their importance in building the web we want. Olu is focused on improving her JavaScript and accessibility chops and is an aspiring speaker (and a great writer). If you’re looking for a really awesome talk on the intersection of accessibility and social justice, hit them up!
+Olu is based in London, works for the BBC, and is a champion for accessibility. I love their passion for the web and that they share a ton of what they learn. So far, we’ve focused much of our time discussing diversity & inclusion and their importance in building the web we want. Olu is focused on improving their JavaScript and accessibility chops and is looking to become a better speaker (they are already a great writer). If you’re looking for a really awesome talk on the intersection of accessibility and social justice, hit them up!
 
 ### Follow Olu and check out their work
 
