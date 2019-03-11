@@ -3451,7 +3451,12 @@ https://www.aaron-gustafson.com/notebook/angie-turner-king-invested-her-energy-i
   ? https://books.google.com/books?id=75bnncOVqEIC&printsec=frontcover&dq=wini+warren+black+women&hl=en&sa=X&ved=0ahUKEwjz24X525rSAhVL_4MKHQp6C-gQ6AEIHDAA
   : false
 https://www.aaron-gustafson.com/notebook/introducing-my-2019-mentees/:
-  https://www.aaron-gustafson.com/notebook/mentorship-2018-2019/: false
+  https://www.aaron-gustafson.com/notebook/mentorship-2018-2019/:
+    status: queued
+    summary: Webmention was queued for processing
+    location: https://webmention.io/aaron-gustafson.com/webmention/ROHUtbP-CVP_lVn0k76R
+    source: https://www.aaron-gustafson.com/notebook/introducing-my-2019-mentees/
+    target: https://www.aaron-gustafson.com/notebook/mentorship-2018-2019/
   https://twitter.com/Ace_KYD: false
   https://twitter.com/oluoluoxenfree: false
   https://twitter.com/marcysutton: false
