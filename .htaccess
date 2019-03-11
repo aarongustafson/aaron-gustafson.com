@@ -18,8 +18,8 @@ BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 <FilesMatch "\\.(js|css|html|htm|php|xml)$">
   SetOutputFilter DEFLATE
   BrowserMatch ^Mozilla/4 gzip-only-text/html
-        BrowserMatch ^Mozilla/4\.0[678] no-gzip
-        BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 </FilesMatch>
 
 # ETags
@@ -82,6 +82,9 @@ Header set X-Content-Type-Options "nosniff"
   Header set Public-Key-Pins "pin-sha256='1AD97Iz6xlmMrlaim5bZoIhwUr2WAowsI+msDc0op2k='; pin-sha256='4SflGm7MUpml4PWSclDw7OGMJdRk+YcIfi6qJ2iG6zE='; pin-sha256='BFhqRqgHU+b7VQLsM1kZwBu6VVKnLx7QiO2PCLfG1m4='; max-age=10"
   Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
 </IfDefine>
+
+# No HTTPS or CSP?
+Header set Upgrade-Insecure-Requests "1"
 
 # Redirect links
 RewriteBase /
