@@ -35,8 +35,8 @@ Olu is based in London, works for the BBC, and is a champion for accessibility. 
 
 * Twitter: [@oluoluoxenfree](https://twitter.com/oluoluoxenfree)
 * Blog: [opentagclosetag.com](https://www.opentagclosetag.com/)
-* LinkedIn: [@oluniyiawosusi](http://linkedin.com/in/oluniyiawosusi)
-* Github: [@oluoluoxenfree](http://github.com/oluoluoxenfree)
+* LinkedIn: [@oluniyiawosusi](https://linkedin.com/in/oluniyiawosusi)
+* Github: [@oluoluoxenfree](https://github.com/oluoluoxenfree)
 
 ## Marcy Sutton
 
@@ -46,8 +46,8 @@ I was so honored when Marcy Sutton reached out to me and asked me to mentor her.
 
 * Twitter: [@marcysutton](https://twitter.com/marcysutton)
 * Blog: [marcysutton.com](https://marcysutton.com/)
-* LinkedIn: [@marcysutton](http://linkedin.com/in/marcysutton)
-* Github: [@marcysutton](http://github.com/marcysutton)
+* LinkedIn: [@marcysutton](https://linkedin.com/in/marcysutton)
+* Github: [@marcysutton](https://github.com/marcysutton)
 
 ## Sara Wegman
 
@@ -57,7 +57,7 @@ I have to admit I fell in love with Sara’s writing immediately. She’s got a 
 
 * Twitter: [@SaraLaughed](https://twitter.com/SaraLaughed)
 * Blog: [blog.sarawegman.com](https://blog.sarawegman.com/)
-* LinkedIn: [@saralaughed](http://linkedin.com/in/saralaughed)
+* LinkedIn: [@saralaughed](https://linkedin.com/in/saralaughed)
 
 ## Desirée Zamora García
 
@@ -67,4 +67,4 @@ I’ve the great pleasure of working with Dezzie for a while now on [<cite>A Lis
 
 * Twitter: [@thedezzie](https://twitter.com/thedezzie)
 * Blog: [dezz.ie](https://dezz.ie/)
-* LinkedIn: [@thedezzie](http://linkedin.com/in/thedezzie)
+* LinkedIn: [@thedezzie](https://linkedin.com/in/thedezzie)
