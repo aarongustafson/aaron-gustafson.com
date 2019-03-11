@@ -30,7 +30,7 @@ group :jekyll_plugins do
   gem 'jekyll-tagging-related_posts'
   gem 'jekyll-time-to-read'
   gem 'jekyll-typogrify'
-  gem 'jekyll-webmention_io'
+  gem 'jekyll-webmention_io', '3.3.5'
   # gem 'jekyll-webmention_io', :path => '~/Dropbox/Code/jekyll-webmention_io'
   gem 'launchy'
   gem 'nokogiri'
