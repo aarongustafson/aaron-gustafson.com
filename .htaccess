@@ -26,12 +26,6 @@ BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 Header unset ETag
 FileETag None
 
-<FilesMatch "(?i)^.*\.(ico|flv|jpg|jpeg|png|gif|js|css)$">
-Header unset Last-Modified
-Header set Expires "Fri, 21 Dec 2012 00:00:00 GMT"
-Header set Cache-Control "public, no-transform"
-</FilesMatch>
-
 # Force the latest IE version
 # Use ChromeFrame if it's installed for a better experience for the poor IE folk
 Header set X-UA-Compatible "ie=edge,chrome=1"
@@ -52,7 +46,7 @@ AddType video/webm webm
 # SVG
 AddType image/svg+xml svg svgz
 <FilesMatch "^.*\.(svgz)$">
-Header set Content-Encoding "gzip"
+  Header set Content-Encoding "gzip"
 </FilesMatch>
 
 # JSON
@@ -113,8 +107,8 @@ RewriteRule ^atom-(.*)\.xml feeds/$1.xml [L,R=301]
 
 # Service Worker
 <FilesMatch "serviceworker(\.min)?\.js$">
-Header set Cache-Control "max-age=0"
+  Header set Cache-Control "max-age=0"
 </FilesMatch>
 
 # Additional headers
-Header set Timing-Allow-Origin: "*"
+Header set Timing-Allow-Origin "*"
