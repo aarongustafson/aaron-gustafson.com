@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introducing my 2019 mentees"
-date: 2019-03-06 10:56:49 -0800
+date: 2019-03-11 10:56:49 -0800
 comments: true
 tags: [mentoring]
 description: "After considering a ton of amazing applicants, I finally selected my 2019 mentee cohort. They are Adewale Abati, Olu Niyi-Awosusi, Marcy Sutton, Sara Wegman, and Desirée Zamora García."
