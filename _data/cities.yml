@@ -18,6 +18,11 @@
   credit_name: Scott5114
   credit_url: http://commons.wikimedia.org/wiki/File:S_Congress_Ave_Austin_TX.jpeg
 
+- name: "Berlin, Germany"
+  photo: https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Bikinihaus_Berlin-1210760.jpg/400px-Bikinihaus_Berlin-1210760.jpg
+  credit_name: Harald Krichel
+  credit_url: https://commons.wikimedia.org/wiki/File:Bikinihaus_Berlin-1210760.jpg
+
 - name: "Bethesda, MD USA"
   photo: https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/US_Navy_030819-N-9593R-004_Entrance_to_the_administration_building_at_the_National_Naval_Medical_Center_in_Bethesda%2C_Md.jpg/400px-US_Navy_030819-N-9593R-004_Entrance_to_the_administration_building_at_the_National_Naval_Medical_Center_in_Bethesda%2C_Md.jpg
   credit_name: Chief Warrant Officer 4 Seth Rossman
