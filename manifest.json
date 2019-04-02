@@ -6,12 +6,10 @@
   "scope": "/",
   "display": "browser",
   "start_url": "https://www.aaron-gustafson.com/",
-  "theme_color": "transparent",
+  "theme_color": "#27831B",
   "description": "The online home and work of Aaron Gustafson.",
   "orientation": "any",
-  "background_color": "transparent",
-  "related_applications": [],
-  "prefer_related_applications": false,
+  "background_color": "#fffcf4",
   "icons": [
     {
       "src": "/images/i/og-logo.webp",
