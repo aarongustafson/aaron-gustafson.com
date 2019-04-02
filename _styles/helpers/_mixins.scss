@@ -1,11 +1,11 @@
 /*------------------------------------*\
-    Mixins
+Mixins
 \*------------------------------------*/
 
 // Baseline-guide for vertical rhythm
 @mixin baseline-guide() {
-    background: linear-gradient( #FF6BA6 1px, transparent 1px );
-    background-size: 100% .75; // 12px grid
+  background: linear-gradient( #FF6BA6 1px, transparent 1px );
+  background-size: 100% .75; // 12px grid
 }
 
 // Better Underline
@@ -13,77 +13,77 @@
 // http://codepen.io/ghepting/pen/tLnHK/
 @mixin underline( $color: $color-foreground, $offset: 2px, $width: 1px, $background-color: $color-background )
 {
-    background-image: linear-gradient(
-        to top,
-        transparent,
-        transparent $offset,
-        $color $offset,
-        $color ($offset + $width),
-        transparent ($offset + $width)
-    );
-    border-bottom-width: 0;
-    text-shadow: (0 - $width) (0 - $width) 0 $background-color,
-                 $width (0 - $width) 0 $background-color,
-                 (0 - $width) $width 0 $background-color,
-                 $width $width 0 $background-color;
+  background-image: linear-gradient(
+  to top,
+  transparent,
+  transparent $offset,
+  $color $offset,
+  $color ($offset + $width),
+  transparent ($offset + $width)
+  );
+  border-bottom-width: 0;
+  text-shadow: (0 - $width) (0 - $width) 0 $background-color,
+  $width (0 - $width) 0 $background-color,
+  (0 - $width) $width 0 $background-color,
+  $width $width 0 $background-color;
 }
 @mixin no-underline {
-    @supports (background-image:linear-gradient(black,white)) {
-        background-image: none;
-        text-shadow: none;
-    }
+  @supports (background-image:linear-gradient(black,white)) {
+    background-image: none;
+    text-shadow: none;
+  }
 }
 
 // REM values
 // Adapted from http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
 @mixin rem( $property, $values )
 {
-    $px: ();
-    $rem: ();
-    
-    @each $value in $values
+  $px: ();
+  $rem: ();
+  
+  @each $value in $values
+  {
+    @if $value == 0 or $value == auto
     {
-        @if $value == 0 or $value == auto
-        {
-            $px : append( $px , $value );
-            $rem: append( $rem, $value );
-        }
-        @else
-        {
-            $unit: unit( $value );
-            $val: parseInt( $value );
-            
-            // enforce pixels on unitless measurements
-            @if $unit == ""
-            {
-                $value: $value + 0px;
-                $unit: "px";
-            }
-            
-            // assume pixels
-            @if $unit == "px"
-            {
-                $px : append( $px,  $value );
-                $rem: append( $rem, ( $val / $font-size-default + rem ) );
-            }
-            
-            @if $unit == "rem"
-            {
-                $px : append( $px,  ( $val * $font-size-default + px ) );
-                $rem: append( $rem, $value );
-            }
-        }
-    }
-    
-    @if $px == $rem
-    {
-        #{$property}: $px;
+      $px : append( $px , $value );
+      $rem: append( $rem, $value );
     }
     @else
     {
-        #{$property}: $px;
-        #{$property}: $rem;
+      $unit: unit( $value );
+      $val: parseInt( $value );
+      
+      // enforce pixels on unitless measurements
+      @if $unit == ""
+      {
+        $value: $value + 0px;
+        $unit: "px";
+      }
+      
+      // assume pixels
+      @if $unit == "px"
+      {
+        $px : append( $px,  $value );
+        $rem: append( $rem, ( $val / $font-size-default + rem ) );
+      }
+      
+      @if $unit == "rem"
+      {
+        $px : append( $px,  ( $val * $font-size-default + px ) );
+        $rem: append( $rem, $value );
+      }
     }
+  }
+  
+  @if $px == $rem
+  {
+    #{$property}: $px;
+  }
+  @else
+  {
+    #{$property}: $px;
+    #{$property}: $rem;
+  }
 }
 
 // Experimental Block Constructor
@@ -92,19 +92,19 @@
   $pre: unquote( $pre );
   $post: unquote( $post );
   #{$pre}-webkit-#{$post} {
-      @content;
+    @content;
   }
   #{$pre}-khtml-#{$post} {
-      @content;
+    @content;
   }
   #{$pre}-moz-#{$post} {
-      @content;
+    @content;
   }
   #{$pre}-ms-#{$post} {
-      @content;
+    @content;
   }
   #{$pre}-o-#{$post} {
-      @content;
+    @content;
   }
   #{$pre}#{$post} {
     @content;
@@ -123,63 +123,56 @@
 // Background-images
 @mixin background-image ( $img_base, $img_path, $hide_text: true ) {
   
-    background: transparent url(#{$css_images}/#{$img_base}.png) center center no-repeat;
-    background-size: contain;
+  background: transparent url(#{$css_images}/#{$img_base}.png) center center no-repeat;
+  background-size: contain;
   
   @if $hide_text
   {
-      @include breakup-placeholder( overflow-hide );
+    @include breakup-placeholder( overflow-hide );
   }
-    
+  
   // SVG shim in JS for Android 2.3
   html.with-svg & {
-      background-image: url(#{$css_images}/#{$img_base}.svg);
+    background-image: url(#{$css_images}/#{$img_base}.svg);
   }
 }
 
 // Triangle
 @mixin triangle( $size: ( "base": 10, "length": 10 ), $direction: right, $color: #000 )
 {
-    $base: map-get( $size, "base" ) / 2;
-    $length: map-get( $size, "length" );
-    
-    width: 0;
-    height: 0;
-    border: 0px solid transparent;
-    
-    // Right
-    @if $direction == right
-    {
-        border-width: ( 0px + $base ) 0 ( 0px + $base ) ( 0px + $length );
-        border-width: ( 0rem + $base / $font-size-default ) 0 ( 0rem + $base / $font-size-default ) ( 0rem + $length / $font-size-default );
-        border-left-color: $color;
-    }
+  $base: map-get( $size, "base" ) / 2;
+  $length: map-get( $size, "length" );
+  
+  width: 0;
+  height: 0;
+  border: 0px solid transparent;
+  
+  // Right
+  @if $direction == right {
+    border-width: ( 0px + $base ) 0 ( 0px + $base ) ( 0px + $length );
+    border-width: ( 0rem + $base / $font-size-default ) 0 ( 0rem + $base / $font-size-default ) ( 0rem + $length / $font-size-default );
+    border-left-color: $color;
     // Left
-    @elseif $direction == left
-    {
-        border-width: ( 0px + $base ) ( 0px + $length ) ( 0px + $base ) 0;
-        border-width: ( 0rem + $base / $font-size-default ) ( 0rem + $length / $font-size-default ) ( 0rem + $base / $font-size-default ) 0;
-        border-right-color: $color;
-    }
+  } @elseif $direction == left {
+    border-width: ( 0px + $base ) ( 0px + $length ) ( 0px + $base ) 0;
+    border-width: ( 0rem + $base / $font-size-default ) ( 0rem + $length / $font-size-default ) ( 0rem + $base / $font-size-default ) 0;
+    border-right-color: $color;
     // Up
-    @elseif $direction == up
-    {
-        border-width: 0 ( 0px + $base ) ( 0px + $length ) ( 0px + $base );
-        border-width: 0 ( 0rem + $base / $font-size-default ) ( 0rem + $length / $font-size-default ) ( 0rem + $base / $font-size-default );
-        border-bottom-color: $color;
-    }
+  } @elseif $direction == up {
+    border-width: 0 ( 0px + $base ) ( 0px + $length ) ( 0px + $base );
+    border-width: 0 ( 0rem + $base / $font-size-default ) ( 0rem + $length / $font-size-default ) ( 0rem + $base / $font-size-default );
+    border-bottom-color: $color;
     // Down
-    @elseif $direction == down
-    {
-        border-width: ( 0px + $length ) ( 0px + $base ) 0 ( 0px + $base );
-        border-width: ( 0rem + $length / $font-size-default ) ( 0rem + $base / $font-size-default ) 0 ( 0rem + $base / $font-size-default ) ;
-        border-top-color: $color;
-    }
+  } @elseif $direction == down {
+    border-width: ( 0px + $length ) ( 0px + $base ) 0 ( 0px + $base );
+    border-width: ( 0rem + $length / $font-size-default ) ( 0rem + $base / $font-size-default ) 0 ( 0rem + $base / $font-size-default ) ;
+    border-top-color: $color;
+  }
 }
 
 
 @mixin moz {
-    @-moz-document url-prefix() {
-        @content;
-    }
+  @-moz-document url-prefix() {
+    @content;
+  }
 }
