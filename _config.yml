@@ -56,6 +56,8 @@ exclude:
   - docker-compose.yml
   # Cron
   - cron.sh
+  # sketch
+  - "*.sketch"
 include:
   # Netlify
   - _headers
