@@ -1,22 +1,20 @@
-self.addEventListener( 'activate', function( event ){
-
-    // console.log('WORKER: activate event in progress.');
-
-    event.waitUntil(
-        caches
-            .keys()
-            .then(function( keys ){
-                return Promise.all(
-                    keys.filter(function( key ){
-                        return !key.startsWith(version);
-                         })
-                        .map(function( key ){
-                            return caches.delete( key );
-                         })
-                );
+self.addEventListener( "activate", event => {
+  
+  // console.log('WORKER: activate event in progress.');
+  
+  // clean up stale caches
+  event.waitUntil(
+    caches.keys()
+      .then( keys => {
+        return Promise.all(
+          keys
+            .filter( key => {
+              return ! key.startsWith( version );
             })
-            //.then(function(){
-            //    console.log('WORKER: activate completed.');
-            //})
-    );
+            .map( key => {
+              return caches.delete( key );
+            })
+        ); // end promise
+      }) // end then
+  ); // end event
 });

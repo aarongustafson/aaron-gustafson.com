@@ -1,20 +1,15 @@
-(function( navigator ){
+(function( window, navigator ){
   // Register the service worker
-  if ( 'serviceWorker' in navigator )
+  if ( "serviceWorker" in navigator )
   {
-    navigator.serviceWorker
-      .register('/serviceworker.min.js')
-        //.then(function(registration) {
-        //  // Registration was successful
-        //  console.log(
-        //    'ServiceWorker registration successful with scope: ',
-        //    registration.scope
-        //  );
-        //})
-        //.catch(function(err) {
-        //    // registration failed :(
-        //    console.log( 'ServiceWorker registration failed: ', err );
-        //})
-        ;
+    navigator.serviceWorker.register( "/serviceworker.js" );
+
+    if ( navigator.serviceWorker.controller )
+    {
+      window.addEventListener( "load", function(){
+        navigator.serviceWorker.controller.postMessage( "clean up" );
+      });
+    }
+
   }
-}( this.navigator ));
+}( this, this.navigator ));
