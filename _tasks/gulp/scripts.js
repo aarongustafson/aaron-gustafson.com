@@ -3,7 +3,6 @@ var gulp = require("gulp"),
     path = require("path"),
     folder = require("gulp-folders"),
     gulpIf = require("gulp-if"),
-    insert = require("gulp-insert"),
     concat = require("gulp-concat"),
     notify = require("gulp-notify"),
     rename = require("gulp-rename"),
@@ -18,14 +17,9 @@ var gulp = require("gulp"),
         dirname: "../"
     });
 
-gulp.task("scripts", folder(source_folder, function(folder){
-    return gulp.src(path.join(source_folder, folder, "*.js"))
-        .pipe(concat(folder + ".js"))
-        .pipe(insert.transform(function(contents, file){
-            // insert a build time variable
-            var build_time = (new Date()).getTime() + "";
-            return contents.replace( "{{BUILD_TIME}}", build_time );
-         }))
+gulp.task("scripts", folder(source_folder, function(the_folder){
+    return gulp.src(path.join(source_folder, the_folder, "*.js"))
+        .pipe(concat(the_folder + ".js"))
         .pipe(gulpIf(folder=="serviceworker",rename_serviceworker))
         .pipe(gulp.dest(destination_folder))
         .pipe(gulp.dest(public_folder))

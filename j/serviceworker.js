@@ -1,13 +1,10 @@
-/* jshint -W097 */
-"use strict";
-
-const version = "v2:",
+const version = "v2:", // be sure to update ../post/save-offline.js too
 
       // Stuff to load on install
       fallback_avatar = "/i/fallbacks/avatar.svg",
       fallback_image = "/i/fallbacks/image.svg",
       offline_image = "/i/fallbacks/offline.svg",
-      offline_page = "/offline.html",
+      offline_page = "/offline/",
       preinstall = [
         // images
         "/favicon.png",
@@ -15,10 +12,10 @@ const version = "v2:",
         fallback_image,
         offline_image,
         // CSS
-        "/c/default.css",
-        "/c/advanced.css",
+        "/c/default.min.css",
+        "/c/advanced.min.css",
         // JavaScript
-        "/j/main.js",
+        "/j/main.min.js",
         // Offline
         offline_page
       ],
@@ -39,7 +36,7 @@ const version = "v2:",
         posts: {
           name: `${version}posts`,
           limit: 10,
-          path: /\/notebook\//
+          path: /\/notebook\/.+/
         },
         other: {
           name: `${version}other`,
@@ -49,13 +46,12 @@ const version = "v2:",
 
       // Never cache
       ignore = [
-        'p.typekit.net/p.gif',
         'www.google-analytics.com/r/collect',
-        'ogg',
-        'mp3',
-        'mp4',
-        'ogv',
-        'webm',
+        '.ogg',
+        '.mp3',
+        '.mp4',
+        '.ogv',
+        '.webm',
         'chrome-extension'
       ],
 
@@ -131,15 +127,55 @@ self.addEventListener( "fetch", event => {
   
   if ( request.method !== "GET" || shouldBeIgnored( url ) )
   {
+    // console.log( "ignoring " + url );
     return;
   }
+
+  // console.log(request.url, request.headers);
   
+  // JSON & such
+  if ( /\.json$/.test( url ) ||
+       /jsonp\=/.test( url ) )
+  {
+    event.respondWith(
+      caches.match( request )
+        .then( cached_result => {
+          // cached first
+          if ( cached_result )
+          {
+            // Update the cache in the background, but only if we’re not trying to save data
+            if ( ! save_data )
+            {
+              event.waitUntil(
+                refreshCachedCopy( request, sw_caches.other.name )
+              );
+            }
+            return cached_result;
+          }
+          // fallback to network
+          return fetch( request )
+              .then( response => {
+                const copy = response.clone();
+                event.waitUntil(
+                  saveToCache( "pages", request, copy )
+                );
+                return response;
+              })
+              // fallback to offline page
+              .catch(
+                respondWithServerOffline
+              );
+        })
+    );
+  }
+
   // HTML
-  if ( request.headers.get("Accept").includes("text/html") )
+  else if ( request.headers.get("Accept").includes("text/html") ||
+            requestIsLikelyForHTML( url ) )
   {
   
     // notebook entries - cache first, then network (posts will be saved for offline individually), offline fallback
-    if ( sw_caches.posts.path.test( url ))
+    if ( sw_caches.posts.path.test( url ) )
     {
       event.respondWith(
         caches.match( request )
@@ -151,7 +187,7 @@ self.addEventListener( "fetch", event => {
               if ( ! save_data )
               {
                 event.waitUntil(
-                  refreshCachedCopy( request, sw_caches.pages.name )
+                  refreshCachedCopy( request, sw_caches.posts.name )
                 );
               }
               return cached_result;
@@ -232,19 +268,29 @@ self.addEventListener( "fetch", event => {
           // all others
           else
           {
+            // console.log('other images', url);
             // save data?
             if ( save_data )
             {
-              return respondFallbackImage( url );
+              // console.log('saving data, responding with fallback');
+              return respondWithFallbackImage( url );
             }
 
             // normal operation
             else
             {
-              return fetch( request )
+              // console.log('fetching');
+              return fetch( request, fetch_config.images )
+                .then( response => {
+                  const copy = response.clone();
+                  event.waitUntil(
+                    saveToCache( "other", request, copy )
+                  );
+                  return response;
+                })
                 // fallback to offline image
                 .catch(function(){
-                  return respondFallbackImage( url, offline_image );
+                  return respondWithFallbackImage( url, offline_image );
                 });
             }
           }
@@ -279,18 +325,24 @@ self.addEventListener( "fetch", event => {
             return fetch( request )
               .then( response => {
                 const copy = response.clone();
-                event.waitUntil(
-                  saveToCache( "other", request, copy )
-                );
+                if ( isHighPriority( url ) )
+                {
+                  event.waitUntil(
+                    saveToCache( "static", request, copy )
+                  );
+                }
+                else
+                {
+                  event.waitUntil(
+                    saveToCache( "other", request, copy )
+                  );
+                }
                 return response;
               })
               // fallback to offline image
-              .catch(function(){
-                return new Response( "", {
-                  status: 408,
-                  statusText: "The server appears to be offline."
-                });
-              });
+              .catch(
+                respondWithServerOffline
+              );
           }
         })
     );
@@ -312,6 +364,7 @@ self.addEventListener( "install", function( event ){
 
 function saveToCache( cache, request, response )
 {
+  // console.log( 'saving a copy of', request.url );
   caches.open( sw_caches[cache].name )
     .then( cache => {
       return cache.put( request, response );
@@ -326,17 +379,20 @@ function refreshCachedCopy( the_request, cache_name )
         .then( the_cache => {
           return the_cache.put( the_request, the_response );
         });
-    });
+    })
+    .catch(
+      respondWithOfflinePage
+    );
 }
 
 function shouldBeIgnored( url )
 {
-  // console.log( 'WORKER: Checking ignore list', ignore );
   let i = ignore.length;
   while( i-- )
   {
     if ( url.indexOf( ignore[i] ) > -1 )
     {
+      // console.log( "found", ignore[i], 'in', url );
       return true;
     }
   }
@@ -348,7 +404,7 @@ function isHighPriority( url )
   let i = high_priority.length;
   while ( i-- )
   {
-    if ( url.test( high_priority[i] ) )
+    if ( high_priority[i].test( url ) )
     {
       return true;
     }
@@ -358,16 +414,34 @@ function isHighPriority( url )
 
 function respondWithOfflinePage()
 {
-  return caches.match( offline_page );
+  return caches.match( offline_page )
+           .catch(
+             respondWithServerOffline
+           );
 }
 
 function respondWithFallbackImage( url, fallback = fallback_image )
 {
   const image = avatars.test( url ) ? fallback_avatar : fallback;
-  return caches.match( image );
+  return caches.match( image )
+           .catch(
+             respondWithServerOffline
+           );
 }
 
 function respondWithOfflineImage()
 {
   return caches.match( offline_image );
+}
+
+function respondWithServerOffline(){
+  return new Response( "", {
+    status: 408,
+    statusText: "The server appears to be offline."
+  });
+}
+
+function requestIsLikelyForHTML( url )
+{
+  return /.+(\/|\.html)$/.test( url );
 }

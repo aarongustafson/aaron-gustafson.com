@@ -567,7 +567,7 @@
   if ( "serviceWorker" in navigator )
   {
     window.sw_version = "v2:";
-    navigator.serviceWorker.register( "/serviceworker.js" );
+    navigator.serviceWorker.register( "/serviceworker.min.js" );
 
     if ( navigator.serviceWorker.controller )
     {

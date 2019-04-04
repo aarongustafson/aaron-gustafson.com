@@ -423,7 +423,6 @@ function respondWithOfflinePage()
 function respondWithFallbackImage( url, fallback = fallback_image )
 {
   const image = avatars.test( url ) ? fallback_avatar : fallback;
-  console.log('responding with a fallback image', image );
   return caches.match( image )
            .catch(
              respondWithServerOffline
