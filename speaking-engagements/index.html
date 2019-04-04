@@ -12,6 +12,8 @@ javascripts:
   body: ['speaking-engagements.min']
 ---
 
+{% assign cloudinary = "https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,e_grayscale,w_400/" %}
+
 <h1 class="page__title">A Complete List of My Conferences &amp; Workshops</h1>
 
 <p>{{ site.data.microcopy.speaking_engagements.intro_pre_count }}
@@ -97,7 +99,7 @@ javascripts:
 
       {% for city in site.data.cities %}
         {% if city.name == event.location %}
-          <p class="event__location-picture" style="background-image:url(https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_400/{{ city.photo }})" title="Photo by {{ city.credit_name }}, {{ city.credit_url }}"></p>
+          <p class="event__location-picture" style="background-image:url({{ cloudinary }}{{ city.photo }})" title="Photo by {{ city.credit_name }}, {{ city.credit_url }}"></p>
         {% endif %}
       {% endfor %}
       
@@ -134,7 +136,7 @@ javascripts:
 
         {% for city in site.data.cities %}
           {% if city.name == event.location %}
-            <p class="event__location-picture" style="background-image:url(https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_400/{{ city.photo }})" title="Photo by {{ city.credit_name }}, {{ city.credit_url }}"></p>
+            <p class="event__location-picture" style="background-image:url({{ cloudinary }}{{ city.photo }})" title="Photo by {{ city.credit_name }}, {{ city.credit_url }}"></p>
           {% endif %}
         {% endfor %}
       
