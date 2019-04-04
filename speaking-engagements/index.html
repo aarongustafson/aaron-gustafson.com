@@ -134,7 +134,7 @@ javascripts:
 
         {% for city in site.data.cities %}
           {% if city.name == event.location %}
-            <p class="event__location-picture" style="background-image:url({{ city.photo }})" title="Photo by {{ city.credit_name }}, {{ city.credit_url }}"></p>
+            <p class="event__location-picture" style="background-image:url(https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_400/{{ city.photo }})" title="Photo by {{ city.credit_name }}, {{ city.credit_url }}"></p>
           {% endif %}
         {% endfor %}
       
