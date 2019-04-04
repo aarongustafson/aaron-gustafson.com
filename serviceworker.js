@@ -133,16 +133,45 @@ self.addEventListener( "fetch", event => {
 
   // console.log(request.url, request.headers);
   
-  // JSON
-  if ( /\.json$/.test( url ) )
+  // JSON & such
+  if ( /\.json$/.test( url ) ||
+       /jsonp\=/.test( url ) )
   {
     event.respondWith(
-      fetch( request )
+      caches.match( request )
+        .then( cached_result => {
+          // cached first
+          if ( cached_result )
+          {
+            // Update the cache in the background, but only if we’re not trying to save data
+            if ( ! save_data )
+            {
+              event.waitUntil(
+                refreshCachedCopy( request, sw_caches.other.name )
+              );
+            }
+            return cached_result;
+          }
+          // fallback to network
+          return fetch( request )
+              .then( response => {
+                const copy = response.clone();
+                event.waitUntil(
+                  saveToCache( "pages", request, copy )
+                );
+                return response;
+              })
+              // fallback to offline page
+              .catch(
+                respondWithServerOffline
+              );
+        })
     );
   }
 
   // HTML
-  else if ( request.headers.get("Accept").includes("text/html") )
+  else if ( request.headers.get("Accept").includes("text/html") ||
+            requestIsLikelyForHTML( url ) )
   {
   
     // notebook entries - cache first, then network (posts will be saved for offline individually), offline fallback
@@ -244,7 +273,7 @@ self.addEventListener( "fetch", event => {
             if ( save_data )
             {
               // console.log('saving data, responding with fallback');
-              return respondFallbackImage( url );
+              return respondWithFallbackImage( url );
             }
 
             // normal operation
@@ -261,7 +290,7 @@ self.addEventListener( "fetch", event => {
                 })
                 // fallback to offline image
                 .catch(function(){
-                  return respondFallbackImage( url, offline_image );
+                  return respondWithFallbackImage( url, offline_image );
                 });
             }
           }
@@ -311,12 +340,9 @@ self.addEventListener( "fetch", event => {
                 return response;
               })
               // fallback to offline image
-              .catch(function(){
-                return new Response( "", {
-                  status: 408,
-                  statusText: "The server appears to be offline."
-                });
-              });
+              .catch(
+                respondWithServerOffline
+              );
           }
         })
     );
@@ -353,7 +379,10 @@ function refreshCachedCopy( the_request, cache_name )
         .then( the_cache => {
           return the_cache.put( the_request, the_response );
         });
-    });
+    })
+    .catch(
+      respondWithOfflinePage
+    );
 }
 
 function shouldBeIgnored( url )
@@ -385,16 +414,35 @@ function isHighPriority( url )
 
 function respondWithOfflinePage()
 {
-  return caches.match( offline_page );
+  return caches.match( offline_page )
+           .catch(
+             respondWithServerOffline
+           );
 }
 
 function respondWithFallbackImage( url, fallback = fallback_image )
 {
   const image = avatars.test( url ) ? fallback_avatar : fallback;
-  return caches.match( image );
+  console.log('responding with a fallback image', image );
+  return caches.match( image )
+           .catch(
+             respondWithServerOffline
+           );
 }
 
 function respondWithOfflineImage()
 {
   return caches.match( offline_image );
+}
+
+function respondWithServerOffline(){
+  return new Response( "", {
+    status: 408,
+    statusText: "The server appears to be offline."
+  });
+}
+
+function requestIsLikelyForHTML( url )
+{
+  return /.+(\/|\.html)$/.test( url );
 }

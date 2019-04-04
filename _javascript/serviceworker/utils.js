@@ -15,7 +15,10 @@ function refreshCachedCopy( the_request, cache_name )
         .then( the_cache => {
           return the_cache.put( the_request, the_response );
         });
-    });
+    })
+    .catch(
+      respondWithOfflinePage
+    );
 }
 
 function shouldBeIgnored( url )
@@ -47,16 +50,34 @@ function isHighPriority( url )
 
 function respondWithOfflinePage()
 {
-  return caches.match( offline_page );
+  return caches.match( offline_page )
+           .catch(
+             respondWithServerOffline
+           );
 }
 
 function respondWithFallbackImage( url, fallback = fallback_image )
 {
   const image = avatars.test( url ) ? fallback_avatar : fallback;
-  return caches.match( image );
+  return caches.match( image )
+           .catch(
+             respondWithServerOffline
+           );
 }
 
 function respondWithOfflineImage()
 {
   return caches.match( offline_image );
+}
+
+function respondWithServerOffline(){
+  return new Response( "", {
+    status: 408,
+    statusText: "The server appears to be offline."
+  });
+}
+
+function requestIsLikelyForHTML( url )
+{
+  return /.+(\/|\.html)$/.test( url );
 }
