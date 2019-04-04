@@ -1,20 +1,26 @@
-(function( navigator ){
+(function( window, navigator, document ){
   // Register the service worker
-  if ( 'serviceWorker' in navigator )
+  if ( "serviceWorker" in navigator )
   {
-    navigator.serviceWorker
-      .register('/serviceworker.min.js')
-        //.then(function(registration) {
-        //  // Registration was successful
-        //  console.log(
-        //    'ServiceWorker registration successful with scope: ',
-        //    registration.scope
-        //  );
-        //})
-        //.catch(function(err) {
-        //    // registration failed :(
-        //    console.log( 'ServiceWorker registration failed: ', err );
-        //})
-        ;
+    window.sw_version = "v2:";
+    navigator.serviceWorker.register( "/serviceworker.js" );
+
+    if ( navigator.serviceWorker.controller )
+    {
+      window.addEventListener( "load", function(){
+        navigator.serviceWorker.controller.postMessage( "clean up" );
+      });
+    }
+
+    // Store page names & descriptions
+    if ( ! /\/notebook\/.+/.test( window.location ) )
+    {
+      var data = {
+        title: document.querySelector("[property='og:title']").getAttribute("content"),
+        description: document.querySelector( "meta[name='description']" ).getAttribute("content")
+      };
+      localStorage.setItem( location, JSON.stringify(data) );
+    }
+
   }
-}( this.navigator ));
+}( this, this.navigator, this.document ));

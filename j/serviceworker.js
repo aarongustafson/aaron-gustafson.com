@@ -1,225 +1,373 @@
-'use strict';
+/* jshint -W097 */
+"use strict";
 
-var version = 'v1540596396277:',
-  default_avatar = 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&f=y',
-  missing_image = 'https://i.imgur.com/oWLuFAa.gif';
-self.addEventListener( 'activate', function( event ){
+const version = "v2:",
 
-    // console.log('WORKER: activate event in progress.');
+      // Stuff to load on install
+      fallback_avatar = "/i/fallbacks/avatar.svg",
+      fallback_image = "/i/fallbacks/image.svg",
+      offline_image = "/i/fallbacks/offline.svg",
+      offline_page = "/offline.html",
+      preinstall = [
+        // images
+        "/favicon.png",
+        fallback_avatar,
+        fallback_image,
+        offline_image,
+        // CSS
+        "/c/default.css",
+        "/c/advanced.css",
+        // JavaScript
+        "/j/main.js",
+        // Offline
+        offline_page
+      ],
 
-    event.waitUntil(
-        caches
-            .keys()
-            .then(function( keys ){
-                return Promise.all(
-                    keys.filter(function( key ){
-                        return !key.startsWith(version);
-                         })
-                        .map(function( key ){
-                            return caches.delete( key );
-                         })
-                );
+      // caches
+      sw_caches = {
+        static: {
+          name: `${version}static`
+        },
+        images: {
+          name: `${version}images`,
+          limit: 75
+        },
+        pages: {
+          name: `${version}pages`,
+          limit: 5
+        },
+        posts: {
+          name: `${version}posts`,
+          limit: 10,
+          path: /\/notebook\//
+        },
+        other: {
+          name: `${version}other`,
+          limit: 50
+        }
+      },
+
+      // Never cache
+      ignore = [
+        'p.typekit.net/p.gif',
+        'www.google-analytics.com/r/collect',
+        'ogg',
+        'mp3',
+        'mp4',
+        'ogv',
+        'webm',
+        'chrome-extension'
+      ],
+
+      // How to decide what gets cached and
+      // what might not be left out
+      high_priority = [
+        /aaron\-gustafson\.com/,
+        /adaptivewebdesign\.info/
+      ],
+
+      avatars = /webmention\.io/,
+      
+      fetch_config = {
+        images: {
+          mode: 'no-cors'
+        }
+      };
+self.addEventListener( "activate", event => {
+  
+  // console.log('WORKER: activate event in progress.');
+  
+  // clean up stale caches
+  event.waitUntil(
+    caches.keys()
+      .then( keys => {
+        return Promise.all(
+          keys
+            .filter( key => {
+              return ! key.startsWith( version );
             })
-            //.then(function(){
-            //    console.log('WORKER: activate completed.');
-            //})
-    );
+            .map( key => {
+              return caches.delete( key );
+            })
+        ); // end promise
+      }) // end then
+  ); // end event
 });
-self.addEventListener( 'fetch', function( event ){
-    
-    // console.log( 'WORKER: fetch event in progress.' );
-
-    var request = event.request,
-        url = request.url,
-        // don’t bother caching these
-        ignore = [
-            'p.typekit.net/p.gif',
-            'www.google-analytics.com/r/collect',
-            'ogg',
-            'mp3',
-            'mp4',
-            'ogv',
-            'webm',
-            'chrome-extension'
-        ],
-        // only grab these once (they’re unlikely to need refreshing)
-        fetch_once = [
-            'https://pbs.twimg.com',
-            'https://webmention.io/avatar/',
-            'https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy',
-            'https://disqus.com',
-            'https://a.disquscdn.com',
-            'https://referrer.disqus.com',
-        ];
-
-    if ( request.method !== 'GET' || urlShouldBeIgnored() )
+addEventListener("message", messageEvent => {
+  if (messageEvent.data == "clean up")
+  {
+    for ( let key in sw_caches )
     {
-        // console.log( 'WORKER: fetch event ignored.', request.method, url );
-        return;
+      if ( sw_caches[key].limit != undefined )
+      {
+        trimCache( sw_caches[key].name, sw_caches[key].limit );
+      }
     }
-
-    event.respondWith(
-        caches
-            .match( request )
-            .then(function( cached ){
-
-                // If the URL should only be fetched once and it’s already cached
-                // don’t grab it again.
-                if ( cached && urlShouldBeFetchedOnce() )
-                {
-                    // console.log( 'WORKER: fetch event skipped', url, 'should only be cached once' );
-                    return cached;
-                }
-
-                // pull "eventually fresh" from the network
-                var networked = fetch( request )
-                                    .then( fetchFromNetwork, resolve )
-                                    .catch( resolve );
-
-                // console.log( 'WORKER: fetch event', cached ? '(cached)' : '(network)', url );
-                return cached || networked;
-            })
-    );
-
-    function urlShouldBeIgnored() {
-        // console.log( 'WORKER: Checking ignore list', ignore );
-        var i = ignore.length;
-        
-        while( i-- )
-        {
-            // console.log( 'WORKER: Testing', url, 'against', ignore[i] );
-            if ( url.indexOf( ignore[i] ) > -1 ) {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    function urlShouldBeFetchedOnce() {
-        // console.log( 'WORKER: Checking fetch_once list', fetch_once );
-        var i = fetch_once.length;
-        
-        while( i-- )
-        {
-            // console.log( 'WORKER: Testing', url, 'against', fetch_once[i] );
-            if ( url.indexOf( fetch_once[i] ) > -1 ) {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
-    function fetchFromNetwork( response ) {
-                    
-        var cache_copy = response.clone();
-        
-        // console.log( 'WORKER: fetch response from network.', url );
-
-        caches
-            .open( version + 'pages' )
-            .then(function add( cache ){
-                cache.put( request, cache_copy );
-             })
-            .then(function(){
-                // console.log( 'WORKER: fetch response stored in cache.', url );
-             });
-
-        // Return the response so that the promise is settled in fulfillment.
-        return response;
-
-    }
-
-    function resolve() {
-        // console.log( 'WORKER: fetch request failed in both cache and network.' );
-
-        var accepts = request.headers.get('Accept'),
-            requested_url = new URL( url );
-        
-        if ( accepts.indexOf('image') > -1 )
-        {
-            if ( requested_url.host === 'www.gravatar.com' ) {
-                return caches.match( default_avatar );
-            }
-            return caches.match( missing_image );
-        }
-
-        return generateOfflineResponse();
-    }
-
-    function generateOfflineResponse() {
-        return new Response(
-            '<h1>Service Unavailable</h1>',
-            {
-                status: 503,
-                statusText: 'Service Unavailable',
-                headers: new Headers({
-                    'Content-Type': 'text/html'
-                })
-            }
-        );
-    }
-
+  }
 });
-// Listen to fetch events
-self.addEventListener('fetch', function(event) {
 
-    var request = event.request,
+function trimCache( cache_name, limit )
+{
+  caches.open( cache_name )
+    .then( cache => {
+      cache.keys()
+        .then( items => {
+          if ( items.length > limit ) {
+            cache.delete( items[0] )
+              .then(
+                trimCache( cache_name, limit)
+              ); // end delete
+          } // end if
+        }); // end keys
+    }); // end open
+}
+self.addEventListener( "fetch", event => {
+  
+  // console.log( "WORKER: fetch event in progress." );
+  
+  const request = event.request,
         url = request.url,
-        url_object = new URL( url ),
-        re_jpg_or_png = /\.(?:jpg|png)$/,
-        supports_webp = false, // pessimism
-        webp_url;
-
-    // Check if the image is a local jpg or png
-    if ( re_jpg_or_png.test( request.url ) &&
-         url_object.origin == location.origin ) {
-
-        // console.log('WORKER: caught a request for a local PNG or JPG');
-
-        // Inspect the accept header for WebP support
-        if ( request.headers.has('accept') )
-        {
-            supports_webp = request.headers.get('accept').includes('webp');
-        }
-
-        // Browser supports WebP
-        if ( supports_webp )
-        {
-            // Make the new URL
-            webp_url = url.substr(0, url.lastIndexOf('.')) + '.webp';
-
-            event.respondWith(
-                fetch(
-                    webp_url,
-                    { mode: 'no-cors' }
-                )
-            );
-        }
+        save_data = request.headers.get("save-data");
+  
+  if ( request.method !== "GET" || shouldBeIgnored( url ) )
+  {
+    return;
+  }
+  
+  // HTML
+  if ( request.headers.get("Accept").includes("text/html") )
+  {
+  
+    // notebook entries - cache first, then network (posts will be saved for offline individually), offline fallback
+    if ( sw_caches.posts.path.test( url ))
+    {
+      event.respondWith(
+        caches.match( request )
+          .then( cached_result => {
+            // cached first
+            if ( cached_result )
+            {
+              // Update the cache in the background, but only if we’re not trying to save data
+              if ( ! save_data )
+              {
+                event.waitUntil(
+                  refreshCachedCopy( request, sw_caches.pages.name )
+                );
+              }
+              return cached_result;
+            }
+            // fallback to network
+            return fetch( request )
+              // fallback to offline page
+              .catch(
+                respondWithOfflinePage
+              );
+          })
+      );
     }
+
+    // all other pages - check the cache first, then network, cache reponse, offline fallback
+    else
+    {
+      event.respondWith(
+        // check the cache first
+        caches.match( request )
+          .then( cached_result => {
+            if ( cached_result )
+            {
+              // Update the cache in the background, but only if we’re not trying to save data
+              if ( ! save_data )
+              {
+                event.waitUntil(
+                  refreshCachedCopy( request, sw_caches.pages.name )
+                );
+              }
+              return cached_result;
+            }
+            // fallback to network, but cache the result
+            return fetch( request )
+              .then( response => {
+                const copy = response.clone();
+                event.waitUntil(
+                  saveToCache( "pages", request, copy )
+                ); // end waitUntil
+                return response;
+              })
+              // fallback to offline page
+              .catch(
+                respondWithOfflinePage
+              );
+          })
+      );
+    }
+  }
+
+  // images - cache first, then determine if we should request form the network & cache, fallbacks
+  else if ( request.headers.get("Accept").includes("image") )
+  {
+    event.respondWith(
+      // check the cache first
+      caches.match( request )
+        .then( cached_result => {
+          if ( cached_result )
+          {
+            return cached_result;
+          }
+
+          // high priority imagery
+          if ( isHighPriority( url ) )
+          {
+            return fetch( request, fetch_config.images )
+              .then( response => {
+                const copy = response.clone();
+                event.waitUntil(
+                  saveToCache( "images", request, copy )
+                ); // end waitUntil
+                return response;
+              })
+              .catch(
+                respondWithOfflineImage
+              );
+          }
+          // all others
+          else
+          {
+            // save data?
+            if ( save_data )
+            {
+              return respondFallbackImage( url );
+            }
+
+            // normal operation
+            else
+            {
+              return fetch( request )
+                // fallback to offline image
+                .catch(function(){
+                  return respondFallbackImage( url, offline_image );
+                });
+            }
+          }
+        })
+    );
+  }
+
+  // everything else - cache first, then network
+  else
+  {
+    event.respondWith(
+      // check the cache first
+      caches.match( request )
+        .then( cached_result => {
+          if ( cached_result )
+          {
+            return cached_result;
+          }
+
+          // save data?
+          if ( save_data )
+          {
+            return new Response( "", {
+              status: 408,
+              statusText: "This request was ignored to save data."
+            });
+          }
+          
+          // normal operation
+          else
+          {
+            return fetch( request )
+              .then( response => {
+                const copy = response.clone();
+                event.waitUntil(
+                  saveToCache( "other", request, copy )
+                );
+                return response;
+              })
+              // fallback to offline image
+              .catch(function(){
+                return new Response( "", {
+                  status: 408,
+                  statusText: "The server appears to be offline."
+                });
+              });
+          }
+        })
+    );
+  }
+
 });
-self.addEventListener( 'install', function( event ){
+self.addEventListener( "install", function( event ){
 
-  // console.log( 'WORKER: install event in progress.' );
-
-  var offline_assets = [
-    '/favicon.png',
-    '/c/default.css',
-    '/c/advanced.css',
-    '/j/main.js',
-    default_avatar,
-    missing_image
-  ];
+  // console.log( "WORKER: install event in progress." );
 
   event.waitUntil(
-    caches
-    .open(version + 'assets')
-    .then(function( cache ){
-      return cache.addAll( offline_assets );
-    })
-    // .then(function(){
-    //     console.log('WORKER: install completed');
-    // })
-    );
-  });
+    caches.open( sw_caches.static.name )
+      .then(function( cache ){
+        return cache.addAll( preinstall );
+      })
+  );
+
+});
+
+function saveToCache( cache, request, response )
+{
+  caches.open( sw_caches[cache].name )
+    .then( cache => {
+      return cache.put( request, response );
+    });
+}
+
+function refreshCachedCopy( the_request, cache_name )
+{
+  fetch( the_request )
+    .then( the_response => {
+      caches.open( cache_name )
+        .then( the_cache => {
+          return the_cache.put( the_request, the_response );
+        });
+    });
+}
+
+function shouldBeIgnored( url )
+{
+  // console.log( 'WORKER: Checking ignore list', ignore );
+  let i = ignore.length;
+  while( i-- )
+  {
+    if ( url.indexOf( ignore[i] ) > -1 )
+    {
+      return true;
+    }
+  }
+  return false;
+}
+
+function isHighPriority( url )
+{
+  let i = high_priority.length;
+  while ( i-- )
+  {
+    if ( url.test( high_priority[i] ) )
+    {
+      return true;
+    }
+  }
+  return false;
+}
+
+function respondWithOfflinePage()
+{
+  return caches.match( offline_page );
+}
+
+function respondWithFallbackImage( url, fallback = fallback_image )
+{
+  const image = avatars.test( url ) ? fallback_avatar : fallback;
+  return caches.match( image );
+}
+
+function respondWithOfflineImage()
+{
+  return caches.match( offline_image );
+}

@@ -7,7 +7,7 @@
   .media-controls {
 
     p {
-      @include rem( margin-top, 6 );      
+      @include rem( margin-top, 6 );
     }
 
     &__buttons,

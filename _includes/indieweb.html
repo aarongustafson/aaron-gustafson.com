@@ -3,3 +3,4 @@
 {% endfor %}
 
 {% webmentions_head %}
+{% if page.redirect_from %}<meta property="webmention:redirected_from" content="{{ page.redirect_from | join: ',' }}">{% endif %}

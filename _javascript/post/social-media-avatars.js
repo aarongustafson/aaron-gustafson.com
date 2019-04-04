@@ -15,7 +15,7 @@
         {
             if ( ! images[i].naturalWidth )
             {
-                images[i].style.visibility = 'hidden';
+                images[i].src = "/i/fallbacks/avatar.svg";
             }
         }
         // release the DOM reference

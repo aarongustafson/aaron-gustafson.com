@@ -1,24 +1,12 @@
-self.addEventListener( 'install', function( event ){
+self.addEventListener( "install", function( event ){
 
-  // console.log( 'WORKER: install event in progress.' );
-
-  var offline_assets = [
-    '/favicon.png',
-    '/c/default.css',
-    '/c/advanced.css',
-    '/j/main.js',
-    default_avatar,
-    missing_image
-  ];
+  // console.log( "WORKER: install event in progress." );
 
   event.waitUntil(
-    caches
-    .open(version + 'assets')
-    .then(function( cache ){
-      return cache.addAll( offline_assets );
-    })
-    // .then(function(){
-    //     console.log('WORKER: install completed');
-    // })
-    );
-  });
+    caches.open( sw_caches.static.name )
+      .then(function( cache ){
+        return cache.addAll( preinstall );
+      })
+  );
+
+});

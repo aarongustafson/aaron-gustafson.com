@@ -311,7 +311,7 @@
     Functions
 \*------------------------------------*/
 /*------------------------------------*\
-    Mixins
+Mixins
 \*------------------------------------*/
 /*------------------------------------*\
     Placeholders
@@ -382,7 +382,7 @@ Links
     Tables
 \*------------------------------------*/
 table.striped {
-  background: #fff;
+  background: #fffcf4;
 }
 table.striped thead {
   background: #DDD;
@@ -479,7 +479,7 @@ Navigation
 \*------------------------------------*/
 [role=navigation] {
   background: #27831B;
-  color: #fff;
+  color: #fffcf4;
   padding-bottom: 0;
 }
 [role=navigation] .layout-container {
@@ -622,7 +622,7 @@ Navigation
     Modules
 \*------------------------------------*/
 /*------------------------------------*\
-    Buttons
+Buttons
 \*------------------------------------*/
 /*------------------------------------*\
   Listing
@@ -926,7 +926,7 @@ h1 + .alternate {
 \*------------------------------------*/
 .anchorable__anchor {
   top: 0;
-  left: 100%;
+  left: auto;
   margin-left: 5px;
   margin-left: 0.3125rem;
 }

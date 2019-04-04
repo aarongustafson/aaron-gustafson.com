@@ -100,7 +100,7 @@ $color-black: #2c2825;
 $color-white: #fff;
 $color-grey: #505050;
 $color-grey-light: #DDD;
-$color-off-white: #F9F9F9;
+$color-off-white: #fffcf4;
 $color-green: #27831B;
 $color-green-mid: darken( $color-green, 10% );
 $color-green-dark: darken( $color-green, 20% );
@@ -109,7 +109,7 @@ $color-teal: #75CEED;
 $color-dark-teal: rgb(0,121,157);
 
 // Functional Colors
-$color-background: $color-white;
+$color-background: $color-off-white;
 $color-text: $color-black;
 $color-text-light: $color-grey;
 $color-link: $color-green;

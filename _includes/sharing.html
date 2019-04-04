@@ -35,10 +35,6 @@
 
 {% include feeds/list.html %}
 
-<link rel="pingback" href="https://webmention.io/aaron-gustafson.com/xmlrpc" />
-<link rel="webmention" href="https://webmention.io/aaron-gustafson.com/webmention" />
-{% if page.redirect_from %}<meta property="webmention:redirected_from" content="{{ page.redirect_from | join: ',' }}">{% endif %}
-
 <meta name="revisit-after" content="7 days">
 <meta name="ROBOTS" content="index,follow">
 <meta name="robots" content="NOODP">

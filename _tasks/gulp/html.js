@@ -1,9 +1,9 @@
-var gulp = require('gulp'),
-    htmlmin = require('gulp-htmlmin');
+var gulp = require("gulp"),
+    htmlmin = require("gulp-htmlmin");
 
-gulp.task('html', function() {
-  var source = './_site/**/*.html',
-      destination = './_site',
+gulp.task("html", function() {
+  var source = "./_site/**/*.html",
+      destination = "./_site",
       htmlmin_config = {
         removeComments: true,
         collapseWhitespace: true,

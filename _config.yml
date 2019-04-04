@@ -44,6 +44,7 @@ exclude:
   # Gulp
   - gulpfile.js
   - package.json
+  - package-lock.json
   # Content
   - README.md
   # Caches
@@ -56,6 +57,8 @@ exclude:
   - docker-compose.yml
   # Cron
   - cron.sh
+  # sketch
+  - "*.sketch"
 include:
   # Netlify
   - _headers
