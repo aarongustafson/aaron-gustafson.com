@@ -44,6 +44,7 @@ exclude:
   # Gulp
   - gulpfile.js
   - package.json
+  - package-lock.json
   # Content
   - README.md
   # Caches

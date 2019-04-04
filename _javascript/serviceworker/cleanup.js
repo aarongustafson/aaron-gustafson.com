@@ -1,7 +1,6 @@
 addEventListener("message", messageEvent => {
   if (messageEvent.data == "clean up")
   {
-    console.log("clean up!");
     for ( let key in sw_caches )
     {
       if ( sw_caches[key].limit != undefined )

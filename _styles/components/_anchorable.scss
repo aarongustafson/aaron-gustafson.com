@@ -101,7 +101,7 @@
 @include breakup-breakpoint( "medium" ) {
     .anchorable__anchor {
         top: 0;
-        left: 100%;
+        left: auto;
         @include rem( margin-left, 5 );
     }
 }

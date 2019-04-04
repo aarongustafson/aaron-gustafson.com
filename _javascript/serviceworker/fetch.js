@@ -8,15 +8,26 @@ self.addEventListener( "fetch", event => {
   
   if ( request.method !== "GET" || shouldBeIgnored( url ) )
   {
+    // console.log( "ignoring " + url );
     return;
   }
+
+  // console.log(request.url, request.headers);
   
+  // JSON
+  if ( /\.json$/.test( url ) )
+  {
+    event.respondWith(
+      fetch( request )
+    );
+  }
+
   // HTML
-  if ( request.headers.get("Accept").includes("text/html") )
+  else if ( request.headers.get("Accept").includes("text/html") )
   {
   
     // notebook entries - cache first, then network (posts will be saved for offline individually), offline fallback
-    if ( sw_caches.posts.path.test( url ))
+    if ( sw_caches.posts.path.test( url ) )
     {
       event.respondWith(
         caches.match( request )
@@ -109,20 +120,23 @@ self.addEventListener( "fetch", event => {
           // all others
           else
           {
+            // console.log('other images', url);
             // save data?
             if ( save_data )
             {
+              // console.log('saving data, responding with fallback');
               return respondFallbackImage( url );
             }
 
             // normal operation
             else
             {
-              return fetch( request )
+              // console.log('fetching');
+              return fetch( request, fetch_config.images )
                 .then( response => {
                   const copy = response.clone();
                   event.waitUntil(
-                    saveToCache( "images", request, copy )
+                    saveToCache( "other", request, copy )
                   );
                   return response;
                 })
@@ -163,9 +177,18 @@ self.addEventListener( "fetch", event => {
             return fetch( request )
               .then( response => {
                 const copy = response.clone();
-                event.waitUntil(
-                  saveToCache( "other", request, copy )
-                );
+                if ( isHighPriority( url ) )
+                {
+                  event.waitUntil(
+                    saveToCache( "static", request, copy )
+                  );
+                }
+                else
+                {
+                  event.waitUntil(
+                    saveToCache( "other", request, copy )
+                  );
+                }
                 return response;
               })
               // fallback to offline image

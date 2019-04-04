@@ -1,4 +1,4 @@
-const version = "v2:",
+const version = "v2:", // be sure to update ../post/save-offline.js too
 
       // Stuff to load on install
       fallback_avatar = "/i/fallbacks/avatar.svg",
@@ -36,7 +36,7 @@ const version = "v2:",
         posts: {
           name: `${version}posts`,
           limit: 10,
-          path: /\/notebook\//
+          path: /\/notebook\/.+/
         },
         other: {
           name: `${version}other`,
@@ -46,13 +46,12 @@ const version = "v2:",
 
       // Never cache
       ignore = [
-        'p.typekit.net/p.gif',
         'www.google-analytics.com/r/collect',
-        'ogg',
-        'mp3',
-        'mp4',
-        'ogv',
-        'webm',
+        '.ogg',
+        '.mp3',
+        '.mp4',
+        '.ogv',
+        '.webm',
         'chrome-extension'
       ],
 
@@ -93,7 +92,6 @@ self.addEventListener( "activate", event => {
 addEventListener("message", messageEvent => {
   if (messageEvent.data == "clean up")
   {
-    console.log("clean up!");
     for ( let key in sw_caches )
     {
       if ( sw_caches[key].limit != undefined )
@@ -129,15 +127,26 @@ self.addEventListener( "fetch", event => {
   
   if ( request.method !== "GET" || shouldBeIgnored( url ) )
   {
+    // console.log( "ignoring " + url );
     return;
   }
+
+  // console.log(request.url, request.headers);
   
+  // JSON
+  if ( /\.json$/.test( url ) )
+  {
+    event.respondWith(
+      fetch( request )
+    );
+  }
+
   // HTML
-  if ( request.headers.get("Accept").includes("text/html") )
+  else if ( request.headers.get("Accept").includes("text/html") )
   {
   
     // notebook entries - cache first, then network (posts will be saved for offline individually), offline fallback
-    if ( sw_caches.posts.path.test( url ))
+    if ( sw_caches.posts.path.test( url ) )
     {
       event.respondWith(
         caches.match( request )
@@ -230,20 +239,23 @@ self.addEventListener( "fetch", event => {
           // all others
           else
           {
+            // console.log('other images', url);
             // save data?
             if ( save_data )
             {
+              // console.log('saving data, responding with fallback');
               return respondFallbackImage( url );
             }
 
             // normal operation
             else
             {
-              return fetch( request )
+              // console.log('fetching');
+              return fetch( request, fetch_config.images )
                 .then( response => {
                   const copy = response.clone();
                   event.waitUntil(
-                    saveToCache( "images", request, copy )
+                    saveToCache( "other", request, copy )
                   );
                   return response;
                 })
@@ -284,9 +296,18 @@ self.addEventListener( "fetch", event => {
             return fetch( request )
               .then( response => {
                 const copy = response.clone();
-                event.waitUntil(
-                  saveToCache( "other", request, copy )
-                );
+                if ( isHighPriority( url ) )
+                {
+                  event.waitUntil(
+                    saveToCache( "static", request, copy )
+                  );
+                }
+                else
+                {
+                  event.waitUntil(
+                    saveToCache( "other", request, copy )
+                  );
+                }
                 return response;
               })
               // fallback to offline image
@@ -317,6 +338,7 @@ self.addEventListener( "install", function( event ){
 
 function saveToCache( cache, request, response )
 {
+  // console.log( 'saving a copy of', request.url );
   caches.open( sw_caches[cache].name )
     .then( cache => {
       return cache.put( request, response );
@@ -336,12 +358,12 @@ function refreshCachedCopy( the_request, cache_name )
 
 function shouldBeIgnored( url )
 {
-  // console.log( 'WORKER: Checking ignore list', ignore );
   let i = ignore.length;
   while( i-- )
   {
     if ( url.indexOf( ignore[i] ) > -1 )
     {
+      // console.log( "found", ignore[i], 'in', url );
       return true;
     }
   }

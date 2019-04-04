@@ -1,4 +1,4 @@
-const version = "v2:",
+const version = "v2:", // be sure to update ../post/save-offline.js too
 
       // Stuff to load on install
       fallback_avatar = "/i/fallbacks/avatar.svg",
@@ -36,7 +36,7 @@ const version = "v2:",
         posts: {
           name: `${version}posts`,
           limit: 10,
-          path: /\/notebook\//
+          path: /\/notebook\/.+/
         },
         other: {
           name: `${version}other`,
@@ -46,13 +46,12 @@ const version = "v2:",
 
       // Never cache
       ignore = [
-        'p.typekit.net/p.gif',
         'www.google-analytics.com/r/collect',
-        'ogg',
-        'mp3',
-        'mp4',
-        'ogv',
-        'webm',
+        '.ogg',
+        '.mp3',
+        '.mp4',
+        '.ogv',
+        '.webm',
         'chrome-extension'
       ],
 

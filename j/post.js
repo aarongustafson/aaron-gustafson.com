@@ -781,28 +781,6 @@ exports.Liquid=Liquid;}// @ts-check
             JekyllWebmentionIO.types = { 'bookmarks': 'bookmark','likes': 'like','links': 'link','posts': 'post','replies': 'reply','reposts': 'repost','rsvps': 'rsvp' };
           }(this, this.JekyllWebmentionIO));
 
-// Add a comments message if offline
-(function(){
-    'use strict';
-
-    if ( ! ( 'onLine' in window.navigator ) ){ return; }
-
-    var offline = !window.navigator.onLine,
-        $p,
-        $comments;
-
-    if ( offline )
-    {
-        $p = document.createElement('p');
-        $p.innerText = 'Your internet connection is currently offline, so I can’t load in the comment thread from Disqus.';
-        $comments = document.getElementById( 'disqus' );
-        $comments.appendChild($p);
-
-        $p = null;
-        $comments = null;
-    }
-
-}());
 (function(document){
     'use strict';
 
@@ -886,6 +864,63 @@ exports.Liquid=Liquid;}// @ts-check
 
 
 }(document));
+(function( window ){
+
+  if ( "serviceWorker" in navigator )
+  {
+    var $button = document.createElement('button'),
+        $intro = document.createElement('dt'),
+        $controls = document.createElement('dd'),
+        $df = document.createDocumentFragment(),
+        post_cache = window.sw_version + "posts",
+        caches = window.caches,
+        location = window.location.href;
+
+    $button.innerText = "Save offline";
+    caches.match( location )
+      .then( item => {
+        if ( item )
+        {
+          $button.innerText = "Already saved!";
+          $button.disabled = true;
+        }
+      });
+
+    $button.addEventListener( "click", function( e ){
+      e.preventDefault();
+
+      $button.innerText = "Saving…";
+
+      caches.open( post_cache )
+        .then( cache => {
+          cache.add( location )
+            .then(function(){
+              $button.innerText = "Saved!";
+              $button.disabled = true;
+
+              var data = {
+                title: document.querySelector("[property='og:title']").getAttribute("content"),
+                description: document.querySelector( "meta[name='description']" ).getAttribute("content")
+              };
+              localStorage.setItem( location, JSON.stringify(data) );
+            })
+            .catch(function(){
+              $button.innerText = "Save failed :-(";
+            })
+        });
+
+    }, false );
+
+    $intro.classList.add( "dont-read" );
+    $intro.innerText = "Want to read this offline?";
+    $df.appendChild( $intro );
+    $controls.appendChild( $button );
+    $controls.classList.add( "dont-read" );
+    $df.appendChild( $controls );
+    document.querySelector('.entry__meta').appendChild( $df );
+  }
+
+}( this ));
 /* ! Sharing popup */
 (function( window, document ){
     'use strict';
@@ -945,7 +980,7 @@ exports.Liquid=Liquid;}// @ts-check
         {
             if ( ! images[i].naturalWidth )
             {
-                images[i].style.visibility = 'hidden';
+                images[i].src = "/i/fallbacks/avatar.svg";
             }
         }
         // release the DOM reference

@@ -1,5 +1,6 @@
 function saveToCache( cache, request, response )
 {
+  // console.log( 'saving a copy of', request.url );
   caches.open( sw_caches[cache].name )
     .then( cache => {
       return cache.put( request, response );
@@ -19,12 +20,12 @@ function refreshCachedCopy( the_request, cache_name )
 
 function shouldBeIgnored( url )
 {
-  // console.log( 'WORKER: Checking ignore list', ignore );
   let i = ignore.length;
   while( i-- )
   {
     if ( url.indexOf( ignore[i] ) > -1 )
     {
+      // console.log( "found", ignore[i], 'in', url );
       return true;
     }
   }
