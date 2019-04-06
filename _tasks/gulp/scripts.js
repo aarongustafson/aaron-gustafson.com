@@ -20,7 +20,7 @@ var gulp = require("gulp"),
 gulp.task("scripts", folder(source_folder, function(the_folder){
     return gulp.src(path.join(source_folder, the_folder, "*.js"))
         .pipe(concat(the_folder + ".js"))
-        .pipe(gulpIf(folder=="serviceworker",rename_serviceworker))
+        .pipe(gulpIf(the_folder=="serviceworker",rename_serviceworker))
         .pipe(gulp.dest(destination_folder))
         .pipe(gulp.dest(public_folder))
         .pipe(rename({suffix: ".min"}))
