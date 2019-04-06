@@ -3,13 +3,17 @@ self.addEventListener( "fetch", event => {
   // console.log( "WORKER: fetch event in progress." );
   
   const request = event.request,
-        url = request.url,
-        save_data = request.headers.get("save-data");
+        url = request.url;
   
   if ( request.method !== "GET" || shouldBeIgnored( url ) )
   {
     // console.log( "ignoring " + url );
     return;
+  }
+
+  if ( save_data == undefined )
+  {
+    save_data = request.headers.get("save-data");
   }
 
   // console.log(request.url, request.headers);
@@ -38,7 +42,7 @@ self.addEventListener( "fetch", event => {
               .then( response => {
                 const copy = response.clone();
                 event.waitUntil(
-                  saveToCache( "pages", request, copy )
+                  saveToCache( sw_caches.pages.name, request, copy )
                 );
                 return response;
               })
@@ -106,7 +110,7 @@ self.addEventListener( "fetch", event => {
               .then( response => {
                 const copy = response.clone();
                 event.waitUntil(
-                  saveToCache( "pages", request, copy )
+                  saveToCache( sw_caches.pages.name, request, copy )
                 ); // end waitUntil
                 return response;
               })
@@ -138,7 +142,7 @@ self.addEventListener( "fetch", event => {
               .then( response => {
                 const copy = response.clone();
                 event.waitUntil(
-                  saveToCache( "images", request, copy )
+                  saveToCache( sw_caches.images.name, request, copy )
                 ); // end waitUntil
                 return response;
               })
@@ -165,7 +169,7 @@ self.addEventListener( "fetch", event => {
                 .then( response => {
                   const copy = response.clone();
                   event.waitUntil(
-                    saveToCache( "other", request, copy )
+                    saveToCache( sw_caches.other.name, request, copy )
                   );
                   return response;
                 })

@@ -69,3 +69,12 @@ const version = "v2:", // be sure to update ../post/save-offline.js too
           mode: 'no-cors'
         }
       };
+
+let slow_connection = false,
+save_data;
+
+if ( 'connection' in navigator )
+{
+  slow_connection = ( navigator.connection.downlink < .5 );
+  save_data = navigator.connection.saveData;
+}

@@ -69,6 +69,15 @@ const version = "v2:", // be sure to update ../post/save-offline.js too
           mode: 'no-cors'
         }
       };
+
+let slow_connection = false,
+save_data;
+
+if ( 'connection' in navigator )
+{
+  slow_connection = ( navigator.connection.downlink < .5 );
+  save_data = navigator.connection.saveData;
+}
 self.addEventListener( "activate", event => {
   
   // console.log('WORKER: activate event in progress.');
@@ -122,13 +131,17 @@ self.addEventListener( "fetch", event => {
   // console.log( "WORKER: fetch event in progress." );
   
   const request = event.request,
-        url = request.url,
-        save_data = request.headers.get("save-data");
+        url = request.url;
   
   if ( request.method !== "GET" || shouldBeIgnored( url ) )
   {
     // console.log( "ignoring " + url );
     return;
+  }
+
+  if ( save_data == undefined )
+  {
+    save_data = request.headers.get("save-data");
   }
 
   // console.log(request.url, request.headers);
@@ -157,7 +170,7 @@ self.addEventListener( "fetch", event => {
               .then( response => {
                 const copy = response.clone();
                 event.waitUntil(
-                  saveToCache( "pages", request, copy )
+                  saveToCache( sw_caches.pages.name, request, copy )
                 );
                 return response;
               })
@@ -225,7 +238,7 @@ self.addEventListener( "fetch", event => {
               .then( response => {
                 const copy = response.clone();
                 event.waitUntil(
-                  saveToCache( "pages", request, copy )
+                  saveToCache( sw_caches.pages.name, request, copy )
                 ); // end waitUntil
                 return response;
               })
@@ -257,7 +270,7 @@ self.addEventListener( "fetch", event => {
               .then( response => {
                 const copy = response.clone();
                 event.waitUntil(
-                  saveToCache( "images", request, copy )
+                  saveToCache( sw_caches.images.name, request, copy )
                 ); // end waitUntil
                 return response;
               })
@@ -284,7 +297,7 @@ self.addEventListener( "fetch", event => {
                 .then( response => {
                   const copy = response.clone();
                   event.waitUntil(
-                    saveToCache( "other", request, copy )
+                    saveToCache( sw_caches.other.name, request, copy )
                   );
                   return response;
                 })
@@ -353,6 +366,9 @@ self.addEventListener( "install", function( event ){
 
   // console.log( "WORKER: install event in progress." );
 
+  // immediately take over
+  self.skipWaiting();
+
   event.waitUntil(
     caches.open( sw_caches.static.name )
       .then(function( cache ){
@@ -362,10 +378,10 @@ self.addEventListener( "install", function( event ){
 
 });
 
-function saveToCache( cache, request, response )
+function saveToCache( cache_name, request, response )
 {
   // console.log( 'saving a copy of', request.url );
-  caches.open( sw_caches[cache].name )
+  caches.open( cache_name )
     .then( cache => {
       return cache.put( request, response );
     });
@@ -443,5 +459,13 @@ function respondWithServerOffline(){
 
 function requestIsLikelyForHTML( url )
 {
-  return /.+(\/|\.html)$/.test( url );
+  const final_segment = url.split("/").pop();
+  if ( final_segment == "" ||
+       /.+\.html$/.test( final_segment ) ||
+       ! (/\..+$/.test( final_segment ) ) )
+  {
+    console.log(url, 'looks like HTML');
+    return true;
+  }
+  return false;
 }

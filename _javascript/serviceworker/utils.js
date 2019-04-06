@@ -1,7 +1,7 @@
-function saveToCache( cache, request, response )
+function saveToCache( cache_name, request, response )
 {
   // console.log( 'saving a copy of', request.url );
-  caches.open( sw_caches[cache].name )
+  caches.open( cache_name )
     .then( cache => {
       return cache.put( request, response );
     });
@@ -79,5 +79,13 @@ function respondWithServerOffline(){
 
 function requestIsLikelyForHTML( url )
 {
-  return /.+(\/|\.html)$/.test( url );
+  const final_segment = url.split("/").pop();
+  if ( final_segment == "" ||
+       /.+\.html$/.test( final_segment ) ||
+       ! (/\..+$/.test( final_segment ) ) )
+  {
+    console.log(url, 'looks like HTML');
+    return true;
+  }
+  return false;
 }
