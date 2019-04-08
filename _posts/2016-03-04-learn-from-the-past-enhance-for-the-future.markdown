@@ -36,7 +36,7 @@ When I started out on the Web, I had a 28.8 <abbr aria-label="kilobits per secon
 When I started out on the Web, I had an 800x600 monitor, but still had to support 640x480 screen resolutions. I learned the importance of prioritizing content long before media queries and flexbox enabled us to adapt our layouts on the fly. And while our computer screens keep getting bigger, mobile devices and wearables present the very same challenges I was tackling with 640x480, but in even tighter confines.
 
 <figure id="figure-2016-03-04-01">
-<img src="/i/posts/2016-03-04/01.gif" alt="Screen sizes changing over time.">
+<img src="/i/posts/2016-03-04/01.gif" alt="Screen sizes changing over time." loading="lazy">
 </figure>
 
 When I started out on the Web, there was no JavaScript. All calculations, data processing, and dynamic functionality had to be handled by the server. I learned how to process web forms in Perl, later trading in my CGI scripts for PHP, Ruby, and Python. And while the vast majority of our users today have JavaScript baked into their browsers, I still rely on server-side fallbacks because I recognize that we don’t control the execution environment on the open Web.
@@ -52,7 +52,7 @@ Science fiction has often been a strong predictor of our technological future. H
 To function in the real world like they do on TV and in the movies, computers need two capabilities: Natural language processing (to understand what we say) and speech synthesis (to communicate, aurally, back to us).
 
 <figure id="figure-2016-03-04-02">
-<img src="/i/posts/2016-03-04/02.gif" alt="Visual of a human and a computer conversing.">
+<img src="/i/posts/2016-03-04/02.gif" alt="Visual of a human and a computer conversing." loading="lazy">
 </figure>
 
 Natural language processing has its roots in the 1950s, but many of these early speech models were limited because they were built around a series of hard-coded rules that the computers followed. In the 1980s, however, machine learning and real-time statistical analysis became possible.

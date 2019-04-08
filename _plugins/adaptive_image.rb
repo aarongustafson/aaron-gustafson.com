@@ -97,7 +97,7 @@ module Jekyll
         # Add alt if it doesn’t exist
         html_attr_string << ' alt=""' unless html_attr_string.include? 'alt='
 
-        "<img #{html_attr_string}>"
+        "<img #{html_attr_string} loading=\"lazy\">"
       end
     end
   end

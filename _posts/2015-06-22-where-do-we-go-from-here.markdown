@@ -62,7 +62,7 @@ On a touchscreen, I may need the experience to be slightly different, but I stil
 
 Embracing the reality that experience does’t need to be just one thing will help us reach more people with fewer headaches. Experience can—and should—be crafted as a continuum. This is progressive enhancement: We start with a baseline experience that works for everyone—content, real links, first generation form controls, and forms that actually submit to the server. Then we build up the experience from there.
 
-<figure id="figure-2015-06-22-02"><img src="/i/posts/2015-06-22/02.gif" alt=""></figure>
+<figure id="figure-2015-06-22-02"><img src="/i/posts/2015-06-22/02.gif" alt="" loading="lazy"></figure>
 
 Your browser supports HTML5 form controls? Great! You’ll get a better virtual keyboard when you go to type your email address. You can use CSS? Awesome, let me make that reading experience better for you. Oh, you can handle media queries! Let me adjust the layout so those line lengths are a little more comfortable. Wow, your browser supports Ajax?! Here let me load in some teasers for related content you might find interesting.
 

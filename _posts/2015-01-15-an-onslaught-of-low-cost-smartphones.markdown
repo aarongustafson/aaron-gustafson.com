@@ -16,7 +16,7 @@ The two Lumia devices are the cheapest Windows Phone offerings to date: The Lumi
 Now if you’ve read this far, you are probably wondering why this matters. Well, spec-wise, many of these lower-end devices are far from what we are used to. All of these devices are running a resolution of 800×480. And their processing speeds are slower than the device you likely have in your pocket. But they are all far cheaper too. And remember that people in China and India have [far less disposible income than we do](#fig-2015-01-15-01).
 
 <figure id="fig-2015-01-15-01" class="media-container">
-<img src="/i/posts/2014-11-06/05-sm.jpg" srcset="/i/posts/2014-11-06/05-lg.jpg 1920w, /i/posts/2014-11-06/05-md.jpg 600w, /i/posts/2014-11-06/05-sm.jpg 320w" alt="A bar chart comparing the average monthly incomes of people living in the U.S., Canada, China, and India.">
+<img src="/i/posts/2014-11-06/05-sm.jpg" srcset="/i/posts/2014-11-06/05-lg.jpg 1920w, /i/posts/2014-11-06/05-md.jpg 600w, /i/posts/2014-11-06/05-sm.jpg 320w" alt="A bar chart comparing the average monthly incomes of people living in the U.S., Canada, China, and India." loading="lazy">
 </figure>
 
 If you only earned US$295 a month, a US$799 smartphone would likely be out of the question.

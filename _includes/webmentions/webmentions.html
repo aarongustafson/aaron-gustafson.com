@@ -13,7 +13,7 @@
               <div class="webmention__author p-author h-card">
                 <a class="u-url" href="{{ webmention.author.url }}">
                   {% if webmention.author.photo %}
-                    <img class="webmention__author__photo u-photo" src="https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_48,h_48/{{ webmention.author.photo }}" alt="" title="{{ webmention.author.name }}">
+                    <img class="webmention__author__photo u-photo" src="https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_48,h_48/{{ webmention.author.photo }}" alt="" title="{{ webmention.author.name }}" loading="lazy">
                   {% endif %}
                   <b class="p-name">{{ webmention.author.name }}</b>
                 </a>

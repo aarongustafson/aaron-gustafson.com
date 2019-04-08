@@ -46,7 +46,7 @@ As most of the walkthroughs recommended that you version your Service Worker if 
 
 Service Workers are still pretty new (and [modestly supported](http://caniuse.com/#feat=serviceworkers)), but it’s definitely interesting to see what’s possible using them. [Like Jeremy](https://adactio.com/journal/9844), I want to do a bit more exploration into caching and how it may actually *increase* the monetary cost of accessing a website if not used properly. Like any powerful tool, we need to wield it wisely.
 
-<figure id="fig-2015-11-20-01"><img src="https://media.giphy.com/media/dlmcYrvalMmAw/giphy.gif" alt="Animated GIF of a guy accidentally launching a board into his helper while power sanding."></figure>
+<figure id="fig-2015-11-20-01"><img src="https://media.giphy.com/media/dlmcYrvalMmAw/giphy.gif" alt="Animated GIF of a guy accidentally launching a board into his helper while power sanding." loading="lazy"></figure>
 
 ## Making Gists Static
 

@@ -11,6 +11,6 @@ ref_source: The Paciello Group Blog
 
 Steve answers the question of whether
 
-	<img src="a.gif" alt="" title="some text">
+  <img src="a.gif" alt="" title="some text">
 
 results in the desired outcome.

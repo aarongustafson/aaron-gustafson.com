@@ -22,7 +22,7 @@ Obviously [this is a double edged sword](/notebook/native-vs-stylable-tug-of-war
 This has been a long time coming. The idea is pretty simple: Within a flow-type element (think `p`, `div`, etc.) you can apply [the `wrap-flow` property](http://www.w3.org/TR/2015/WD-css3-exclusions-20150115/#wrap-flow-property) to children in order to control where content can go in relation to them. Here’s an example from the spec:
 
 <figure id="fig-2015-01-16-1">
-<img src="https://www.w3.org/TR/2015/WD-css3-exclusions-20150115/images/exclusions-illustration.png" alt="Four boxes layed out roughly diagonally from the upper left to the lower right within a larger container. A flow of blue color shows where text is allowed to flow.">
+<img src="https://www.w3.org/TR/2015/WD-css3-exclusions-20150115/images/exclusions-illustration.png" alt="Four boxes layed out roughly diagonally from the upper left to the lower right within a larger container. A flow of blue color shows where text is allowed to flow." loading="lazy">
 </figure>
 
 In this example, child A is set to `wrap-flow: both`, allowing content to flow on both sides of it. Child B is set to `wrap-flow: start` meaning content should only be allowed on the starting side of the element (based on text direction, in this case left to right). Child C is set to `wrap-flow: end` meaning content can only appear after it in terms of text-direction. And child D is set to `wrap-flow: clear` which, as you might expect based on your existing CSS knowledge, ensures no content appears on either side of it.

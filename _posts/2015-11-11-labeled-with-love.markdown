@@ -66,7 +66,7 @@ This approach results in a greater amount of support and, incidentally, less CSS
 
 Obviously, associated labels are great for folks who use screen readers, but they have another benefit: tapping on a `label` will focus or activate the associated form control.
 
-<figure id="fig-2015-11-11-02" class="media-container"><img src="/i/posts/2015-11-11/02.gif" alt=""><figcaption>Animation showing how clicking a <code>label</code> will focus the associated form control.</figcaption></figure>
+<figure id="fig-2015-11-11-02" class="media-container"><img src="/i/posts/2015-11-11/02.gif" alt="" loading="lazy"><figcaption>Animation showing how clicking a <code>label</code> will focus the associated form control.</figcaption></figure>
 
 This isn’t a game-changer when it comes to standard text fields, but it’s an exceptional affordance when it comes to radio and checkbox controls, especially on mobile, as it vastly increases the tappable region used to activate the control.
 
@@ -76,7 +76,7 @@ To create incredibly generous tap targets on mobile devices, we can take things 
 
 {% gist 3585c019108025b2f568 larger-labels.css embed %}
 
-<figure id="fig-2015-11-11-04" class="media-container"><img src="/i/posts/2015-11-11/04.gif" alt=""><figcaption>An animation showing very generous tap targets on a narrow screen.</figcaption></figure>
+<figure id="fig-2015-11-11-04" class="media-container"><img src="/i/posts/2015-11-11/04.gif" alt="" loading="lazy"><figcaption>An animation showing very generous tap targets on a narrow screen.</figcaption></figure>
 
 It’s worth noting that older versions of Internet Explorer only provide the focus/interaction benefit when you use explicit label association. That’s why I like the combo approach of implicit *and* explicit association for checkbox and radio controls.
 
@@ -86,7 +86,7 @@ It’s worth noting that older versions of Internet Explorer only provide the fo
 
 HTML5 ushered in a new option for working with `input` elements: the `placeholder` attribute. This declarative attribute makes it possible to offer hint as to the sort of content you were looking for in a field. In [supporting browsers](http://caniuse.com/#feat=input-placeholder), it appears in the field, ghosted back a bit, and disappears when you start typing a response.[^2]
 
-<figure id="fig-2015-11-11-05" class="media-container"><img src="/i/posts/2015-11-11/05.gif" alt=""><figcaption>An animation showing a placeholder in action on <a href="http://webstandardssherpa.com"><cite>Web Standards Sherpa</cite></a>.</figcaption></figure>
+<figure id="fig-2015-11-11-05" class="media-container"><img src="/i/posts/2015-11-11/05.gif" alt="" loading="lazy"><figcaption>An animation showing a placeholder in action on <a href="http://webstandardssherpa.com"><cite>Web Standards Sherpa</cite></a>.</figcaption></figure>
 
 Having this natively supported in the browser was a huge boon. For years we’d been using JavaScript to achieve this very effect—albeit typically for label text—in an effort to create more compact forms. Now we get the effect without having to include any additional files or libraries.
 
@@ -100,7 +100,7 @@ Of course, since `placeholder` implements an existing pattern, it came with bagg
 
 Mary Lou assembled some beautiful examples of this approach in her [Inspiration for Text Input Effects](http://tympanus.net/codrops/2015/01/08/inspiration-text-input-effects/). I highly recommend you check those out, but here’s a teaser to whet your whistle:
 
-<figure id="fig-2015-11-11-07" class="media-container"><img src="/i/posts/2015-11-11/07.gif" alt=""><figcaption>A fancy, accessible form field and label from Mary Lou’s collection.</figcaption></figure>
+<figure id="fig-2015-11-11-07" class="media-container"><img src="/i/posts/2015-11-11/07.gif" alt="" loading="lazy"><figcaption>A fancy, accessible form field and label from Mary Lou’s collection.</figcaption></figure>
 
 <hr>
 
