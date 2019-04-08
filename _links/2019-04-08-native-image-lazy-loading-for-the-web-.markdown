@@ -7,4 +7,4 @@ in_reply_to: https://addyosmani.com/blog/lazy-loading/
 ref_source: "Addy Osmani"
 ---
 
-https://addyosmani.com/blog/lazy-loading/
+I'm incredibly excited that this feature is shipping in Chromium. It was one of my favorite IE features.
