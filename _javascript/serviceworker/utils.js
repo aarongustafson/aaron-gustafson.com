@@ -84,7 +84,6 @@ function requestIsLikelyForHTML( url )
        /.+\.html$/.test( final_segment ) ||
        ! (/\..+$/.test( final_segment ) ) )
   {
-    console.log(url, 'looks like HTML');
     return true;
   }
   return false;

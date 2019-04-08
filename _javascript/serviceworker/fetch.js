@@ -17,7 +17,7 @@ self.addEventListener( "fetch", event => {
   }
 
   // console.log(request.url, request.headers);
-  
+
   // JSON & such
   if ( /\.json$/.test( url ) ||
        /jsonp\=/.test( url ) )
@@ -29,7 +29,7 @@ self.addEventListener( "fetch", event => {
           if ( cached_result )
           {
             // Update the cache in the background, but only if we’re not trying to save data
-            if ( ! save_data )
+            if ( ! save_data && ! slow_connection )
             {
               event.waitUntil(
                 refreshCachedCopy( request, sw_caches.other.name )
@@ -54,6 +54,41 @@ self.addEventListener( "fetch", event => {
     );
   }
 
+  // JavaScript
+  else if ( /\.js$/.test( url ) && isHighPriority( url ) )
+  {
+    event.respondWith(
+      caches.match( request )
+      .then( cached_result => {
+        // cached first
+        if ( cached_result )
+        {
+          // Update the cache in the background, but only if we’re not trying to save data
+          if ( ! save_data && ! slow_connection )
+          {
+            event.waitUntil(
+              refreshCachedCopy( request, sw_caches.static.name )
+            );
+          }
+          return cached_result;
+        }
+        // fallback to network
+        return fetch( request )
+            .then( response => {
+              const copy = response.clone();
+              event.waitUntil(
+                saveToCache( sw_caches.pages.name, request, copy )
+              );
+              return response;
+            })
+            // fallback to offline page
+            .catch(
+              respondWithServerOffline
+            );
+      })
+    );
+  }
+
   // HTML
   else if ( request.headers.get("Accept").includes("text/html") ||
             requestIsLikelyForHTML( url ) )
@@ -69,7 +104,7 @@ self.addEventListener( "fetch", event => {
             if ( cached_result )
             {
               // Update the cache in the background, but only if we’re not trying to save data
-              if ( ! save_data )
+              if ( ! save_data && ! slow_connection )
               {
                 event.waitUntil(
                   refreshCachedCopy( request, sw_caches.posts.name )
@@ -97,7 +132,7 @@ self.addEventListener( "fetch", event => {
             if ( cached_result )
             {
               // Update the cache in the background, but only if we’re not trying to save data
-              if ( ! save_data )
+              if ( ! save_data && ! slow_connection )
               {
                 event.waitUntil(
                   refreshCachedCopy( request, sw_caches.pages.name )
@@ -155,7 +190,7 @@ self.addEventListener( "fetch", event => {
           {
             // console.log('other images', url);
             // save data?
-            if ( save_data )
+            if ( save_data || slow_connection )
             {
               // console.log('saving data, responding with fallback');
               return respondWithFallbackImage( url );
@@ -196,7 +231,7 @@ self.addEventListener( "fetch", event => {
           }
 
           // save data?
-          if ( save_data )
+          if ( save_data || slow_connection )
           {
             return new Response( "", {
               status: 408,
@@ -213,13 +248,13 @@ self.addEventListener( "fetch", event => {
                 if ( isHighPriority( url ) )
                 {
                   event.waitUntil(
-                    saveToCache( "static", request, copy )
+                    saveToCache( sw_caches.static.name, request, copy )
                   );
                 }
                 else
                 {
                   event.waitUntil(
-                    saveToCache( "other", request, copy )
+                    saveToCache( sw_caches.other.name, request, copy )
                   );
                 }
                 return response;
