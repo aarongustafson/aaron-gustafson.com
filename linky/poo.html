@@ -174,7 +174,8 @@ sitemap: false
           $messages = document.getElementById('messages'),
           $title = document.getElementById('p_title'),
           $link = document.getElementById('p_link'),
-          $content =  document.getElementById('p_body');
+          $content =  document.getElementById('p_body'),
+          $via_url = document.getElementById('p_via_url');
 
       function toYamlFrontmatter(yaml)
       {
@@ -300,26 +301,48 @@ sitemap: false
 
       };
 
-      $go.addEventListener('click', submitLink, false);
+      function isValidURL( str )
+      {
+        var a  = document.createElement('a');
+        a.href = str;
+        return (a.host && a.host != window.location.host);
+      }
       
-      query_params = get_query();
+      $go.addEventListener('click', submitLink, false);
+
+      var query_params = get_query()
+          body_param = query_params['body'],
+          src_body = '',
+          referrer = document.referrer;
+      
       if (query_params) {
-        src_body = '';
         if (query_params['title']) {
           var src_title = query_params['title'];
           $title.value = src_title;
         }
         if (query_params['selection']) {
-          var src_body = '> ' + query_params['selection'];
+          src_body += '> ' + query_params['selection'];
         }
-        if (query_params['body']) {
-          var src_body = query_params['body'];
+        if (body_param) {
+          if ( isValidURL( body_param ) )
+          {
+            $link.value = body_param;
+          }
+          else
+          {
+            src_body += body_param;
+          }
+          
         }
         if (query_params['url']) {
-          var src_url = query_params['url'];
-          $link.value = src_url;
+          $link.value = query_params['url'];
         }
         $content.value = src_body;
+      }
+
+      if ( referrer != "" )
+      {
+        $via_url = referrer;
       }
     </script>
   </body>
