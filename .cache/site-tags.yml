@@ -376,6 +376,7 @@ performance:
 - 2018-10-03-how-to-build-a-lowtech-website.markdown
 - 2018-10-19-performance-budgets.markdown
 - 2018-10-29-hard-costs-of-third-party-scripts.markdown
+- 2019-04-08-native-image-lazy-loading-for-the-web-.markdown
 forms:
 - 2015-02-23-consider-how-your-forms-read.markdown
 - 2015-05-05-slides-from-my-talk-at-number-msedgesummit.markdown
@@ -430,6 +431,7 @@ HTML:
 - 2018-09-20-the-state-of-fieldset-interoperability.markdown
 - 2018-10-19-the-dialog-element.markdown
 - 2018-10-29-the-importance-of-heading-levels-for-assistive-technology--cms-31753.markdown
+- 2019-04-08-native-image-lazy-loading-for-the-web-.markdown
 URLs:
 - 2015-05-18-url-inception.markdown
 planning:
