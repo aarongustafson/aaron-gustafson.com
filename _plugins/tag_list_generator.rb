@@ -15,7 +15,7 @@ module Jekyll
 
     def generate(site)
       tag_list_file = File.join(TAG_CACHE_DIR, 'site-tags.yml')
-      tag_list_data = File.join(TAG_CACHE_DIR, 'tags.yml')
+      tag_list_data = File.join(TAG_DATA_DIR, 'tags.yml')
       tags = if File.exist? tag_list_file
                open(tag_list_file) { |f| YAML.load(f) }
              else
