@@ -71,7 +71,12 @@ sitemap: false
               </li>
               <li class="fields__group fields__group--text">
                 <label for="p_tags">How would you tag this?</label>
-                <input id="p_tags">
+                <input id="p_tags" list="tags">
+                <datalist>
+                  {% for tag in site.data.tags %}
+                    <option>{{ tag }}</option>
+                  {% endfor %}
+                </datalist>
               </li>
             </ul>
           </fieldset>
@@ -343,6 +348,91 @@ sitemap: false
       if ( referrer != "" )
       {
         $via_url = referrer;
+      }
+
+      // Datalist stuff
+      var $inputs = document.querySelectorAll("input[list][data-multiple]"),
+          $input,
+          $option = document.createElement("option"),
+          count = $inputs.length,
+          separator = ',';
+      
+      while ( count-- )
+      {
+        $input = $inputs[count];
+        convertToMultiple( $input );
+        $input.addEventListener( "change", updateDatalist, false );
+        $input.addEventListener( "paste", updateDatalist, false );
+        $input.addEventListener( "keyup", updateDatalist, false );
+      }
+
+      function getCurrentCommas( $input )
+      {
+        return ($input.value.match(/,/g)||[]).length;
+      }
+
+      function updateDatalist( e )
+      {
+        var $input = e.target,
+            trimmed_value = $input.value.replace(/^\s+|\s+$/g, ""),
+            $datalist = $input.datalist,
+            o_commas = $input.comma_count,
+            c_commas = getCurrentCommas( $input ),
+            last_comma = trimmed_value.lastIndexOf( separator ),
+            str;
+        
+        if ( trimmed_value != $input.value )
+        {
+          if ( o_commas != c_commas)
+          {
+            prefix = ( last_comma != -1 ) ? trimmed_value.substr( 0, last_comma ) + ", " : "";
+            updateOptions( $input, prefix );
+            $input.comma_count = c_commas;
+          }
+          $input.value = trimmed_value;
+        }
+      }
+
+      function updateOptions( $input, prefix )
+      {
+        var $datalist = $input.datalist,
+            options_array = $input.options_array,
+            $opt;
+        
+        if ( $input.value.indexOf( separator ) > -1 &&
+             $input.options.length > 0 )
+        {
+          $datalist.innerHTML = "";
+          for ( var i=0; i < options_array.length; i++ )
+          {
+            if ( prefix.indexOf( options_array[i] ) < 0 )
+            {
+              $opt = $option.cloneNode(true);
+              $opt.value = prefix + options_array[i];
+              $datalist.appendChild( $opt );
+            }
+          }
+        }
+      }
+
+      function convertToMultiple( $input )
+      {
+        var $datalist = document.getElementById( $input.getAttribute("list") ),
+            $options = $datalist.options,
+            count = $options.length,
+            i = 0,
+            options_array = [];
+        
+        $input.datalist = $datalist;
+        $input.options = $options;
+
+        for ( i; i < count; i++ )
+        {
+          options_array.push( $options[i].value );
+        }
+        $input.options_array = options_array;
+
+        $input.comma_count = getCurrentCommas( $input );
       }
     </script>
   </body>

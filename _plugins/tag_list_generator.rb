@@ -5,6 +5,7 @@
 #  This generator creates a list of tags used on the site.
 
 TAG_CACHE_DIR = File.expand_path('../../.cache', __FILE__)
+TAG_DATA_DIR = File.expand_path('../../_data', __FILE__)
 FileUtils.mkdir_p(TAG_CACHE_DIR)
 
 module Jekyll
@@ -14,6 +15,7 @@ module Jekyll
 
     def generate(site)
       tag_list_file = File.join(TAG_CACHE_DIR, 'site-tags.yml')
+      tag_list_data = File.join(TAG_CACHE_DIR, 'tags.yml')
       tags = if File.exist? tag_list_file
                open(tag_list_file) { |f| YAML.load(f) }
              else
@@ -36,6 +38,7 @@ module Jekyll
 
       # Save it back as a sorted array
       File.open(tag_list_file, 'w') { |f| YAML.dump(tags, f) }
+      File.open(tag_list_data, 'w') { |f| YAML.dump(tags.keys, f) }
     end
   end
 end
