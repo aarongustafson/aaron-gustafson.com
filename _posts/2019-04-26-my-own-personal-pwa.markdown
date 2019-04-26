@@ -38,7 +38,7 @@ The first key is the `action` page. In this case, it points at my link posting f
 With this in place, I installed my site on my phone and could immediately share links directly to it:
 
 <figure id="fig-2019-04-26-01" class="media-container">
-{% adaptive_image /i/posts/2019-04-26/share-target.png [alt="Screenshot of my PWA as a share target in Android"] %}
+{% adaptive_image /i/posts/2019-04-26/share-target.png %}
   <figcaption>This screenshot shows my PWA as a share target available within Android.</figcaption>
 </figure>
 
