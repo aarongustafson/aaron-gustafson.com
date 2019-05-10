@@ -1,7 +1,8 @@
 ---
 layout: page
-title: My Interviews &amp; Appearances
+title: My Interviews &amp; More
 description: Strangely, some folks seem to want to pick my addled brain about the Web and such. Here’s a collection of those.
+body_class: appearances
 show_title: false
 comments: false
 sharing: false
@@ -9,40 +10,74 @@ footer: true
 sidebar: false
 ---
 
-<h1 class="page__title">Interviews &amp; Appearances</h1>
+<h1 class="page__title">Interviews &amp; More</h1>
 
 {{ site.data.microcopy.appearances.intro | markdownify }}
 
-<ul class="listing">
-  {% for appearance in site.data.appearances %}
-    {% capture display_title %}{% if appearance.title %}{{ appearance.title }}{% else %}{{ appearance.outlet }}{% endif %}{% endcapture %}
-    <li class="listing__item listing__item--{{ forloop.index }} appearance">
-      <h3 class="listing__item__title appearance__title">
-        {% if appearance.url %}
-          <a href="{{ appearance.url }}">{{ display_title }}</a>
-        {% else %}
-          {{ display_title }}
+<section id="podcasts" class="section">
+  <h2 class="section__title">Podcasts</h2>
+  <ul class="listing listing--podcasts listing--grid">
+    {% for podcast in site.data.podcasts %}
+      <li class="listing__item listing__item--{{ forloop.index }} podcast">
+        {% capture display_title %}{{ podcast.outlet }} {% if podcast.episode %}#{{ podcast.episode }}{% endif %}{% endcapture %}
+        <h3 class="listing__item__meta_title podcast__outlet">{{ display_title }}</h3>
+        {% if podcast.title %}
+          <h4 class="listing__item__title podcast__title"><a href="{{ podcast.url }}">{{ podcast.title }}</a></h4>
         {% endif %}
-      </h3>
-      <p class="listing__item__meta appearance__meta">
-        <b class="appearance__date">{{ appearance.date | date: "%B %Y" }}</b>
-        {% if display_title != appearance.outlet %}
-          <b class="appearance__venue">{{ appearance.outlet }}</b>
-        {% endif %}
-      </p>
-      <div class="listing__item__description appearance__description">
-        {{ appearance.description | markdownify }}
-      </div>
-    </li>
-  {% endfor %}
-</ul>
+        </a>
+        {% comment %}
+          {% if podcast.src %}
+            <audio class="podcast_player" src="{{ podcast.src }}" controls></audio>
+          {% elsif podcast.embed %}
+            <iframe class="podcast_embed" src="{{ podcast.embed }}" style="max-width:100%; height: 90px"></iframe>
+          {% else %}
+            <a class="cta cta--listen" href="{{ podcast.url }}">Listen to {{ display_title }}</a>
+          {% endif %}
+          <p class="listing__item__meta appearance__meta"><time class="podcast__date">{{ podcast.date | date: "%B %Y" }}</time></p>
+        {% endcomment %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
 
-<p>{{ site.data.microcopy.appearances.citations_intro }}
-  {% for book in site.data.book-citations %}
-    {% if forloop.index == forloop.length %}
-      and
-    {% endif %}
-    <a href="{{ book.url }}"><cite>{{ book.title }}</cite></a> by
-    {{ book.author }}{% if forloop.index == forloop.length %}.{% else %},{% endif %}
-  {% endfor %}
-</p>
+<section id="press" class="section">
+  <h2 class="section__title">Press</h2>
+  <ul class="listing listing--press">
+    {% for appearance in site.data.press %}
+      {% capture display_title %}{% if appearance.title %}{{ appearance.title }}{% else %}{{ appearance.outlet }}{% endif %}{% endcapture %}
+      <li class="listing__item listing__item--{{ forloop.index }} appearance">
+        <h3 class="listing__item__title appearance__title">
+          {% if appearance.url %}
+            <a href="{{ appearance.url }}">{{ display_title }}</a>
+          {% else %}
+            {{ display_title }}
+          {% endif %}
+        </h3>
+        <p class="listing__item__meta appearance__meta">
+          <time class="appearance__date">{{ appearance.date | date: "%B %Y" }}</time>{% if display_title != appearance.outlet %},{% endif %}
+          {% if display_title != appearance.outlet %}
+            <cite class="appearance__venue">{{ appearance.outlet }}</cite>
+          {% endif %}
+        </p>
+        {% comment %}
+          <div class="listing__item__description appearance__description">
+            {{ appearance.description | markdownify }}
+          </div>
+        {% endcomment %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section id="citations" class="section">
+  <h2 class="section__title">Citations</h2>
+  <p>{{ site.data.microcopy.appearances.citations_intro }}
+    {% for book in site.data.book-citations %}
+      {% if forloop.index == forloop.length %}
+        and
+      {% endif %}
+      <a href="{{ book.url }}"><cite>{{ book.title }}</cite></a> by
+      {{ book.author }}{% if forloop.index == forloop.length %}.{% else %},{% endif %}
+    {% endfor %}
+  </p>
+</section>

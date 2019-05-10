@@ -1,8 +1,62 @@
+- title: "Windows 10 + PWAs: A Progress Report"
+  outlet: Thurrott.com
+  date: 2018-05-09 00:00:00 +0000
+  url: https://www.thurrott.com/dev/206412/windows-10-pwas-a-progress-report
+  description: "I sat down with Paul Thurrott and a handful of my Edge colleagues to talk about PWAs and the new Edge."
+
+- title: "15+ Experts Share Their Web Performance Advice for 2018"
+  outlet: KeyCDN Blog
+  date: 2018-06-11 00:00:00 +0000
+  url: https://www.keycdn.com/blog/web-performance-advice-2018/
+  description: "Just like it says on the tin."
+
+- title: "Ask a UXpert: How Do You Design for Headless Interfaces?"
+  outlet: Adobe Blog
+  date: 2018-05-29 00:00:00 +0000
+  url: https://theblog.adobe.com/ask-uxpert-design-headless-interfaces/
+  description: "Oliver Lindberg interviewed a few of us to ask our thoughts on designing for aural experiences."
+
+- title: "This is What Microsoft Said About PWAs at Build 2018"
+  outlet: Thurrott.com
+  date: 2018-05-12 00:00:00 +0000
+  url: https://www.thurrott.com/windows/windows-10/159241/microsoft-said-pwas-build-2018
+  description: "Paul recaps Build’s PWA content with lots of attributions to me."
+
+- title: "Microsoft’s Bold Plan to Bring PWAs to Windows 10"
+  outlet: Thurrott.com
+  date: 2017-10-29 00:00:00 +0000
+  url: https://www.thurrott.com/windows/windows-10/142649/microsofts-bold-plan-bring-pwas-windows-10
+  description: "Jeff Burtoft & I sat down with Paul Thurrott to talk abotu PWAs and Windows 10."
+
+- title: "The Tools I Use"
+  outlet: An Event Apart
+  date: 2017-07-26 00:00:00 +0000
+  url: https://aneventapart.com/news/post/aaron-gustafson-the-tools-i-use
+  description: "I chatted a bit with Eric Meyer about the tools I’m currently using every day."
+
+- title: "How to make software decisions with everyone in mind"
+  outlet: "Skuid Blog"
+  date: 2017-05-20 00:00:00 +0000
+  url: https://www.skuid.com/blog/make-software-decisions-everyone-mind/
+  description: "I sat down with Charlie Moss of Skuid to talk about user experience, accessibility, progressive enhancement, and moving peoples’ cheese."
+
 - title: "How The Best Ecommerce Sites Win at Web Design"
   outlet: XCart
   date: 2017-05-31 00:00:00 +0000
   url: https://www.x-cart.com/blog/best-ecommerce-website-design.html
   description: "In a discussion about e-commerce, I talked a bit about the importance of the often overlooked checkout page."
+
+- title: "The future of adaptive user interfaces"
+  outlet: "Creative Bloq"
+  date: 2017-04-27 00:00:00 +0000
+  url: http://www.creativebloq.com/inspiration/the-future-of-adaptive-user-interfaces
+  description: "I answered a few questions about adaptive interfaces and my upcoming keynote at Generate Conf."
+
+- title: "A Funny Thing Happened To Me On The Way To 2016…"
+  outlet: An Event Apart
+  date: 2016-06-07 00:00:00 +0000
+  url: http://aneventapart.com/news/post/a-funny-thing-happened-to-me-on-the-way-to-2016
+  description: "I join an impressive list of AEA speakers in reflecting on where we were in our careers 10 years ago."
 
 - title: "Gone fishin': Patagonia bids farewell to mobile app"
   outlet: Digiday
@@ -62,6 +116,12 @@
   outlet: Net Magazine
   date: 2015-01-21 00:00:00 +0000
   description: "A handful of Web folks, myself included, were asked weigh in on what we think 2015 will bring. My bet: Isomorphic JavaScript."
+
+- title: "QuickPanel: Voice"
+  outlet: UX Magazine
+  date: 2014-06-12 00:00:00 +0000
+  url: http://uxmag.com/articles/quickpanel-voice
+  description: "I joined Steve Portigal and Whitney Quesenbery to talk about voice interfaces."
 
 - title: "Aaron Gustafson: The Interview"
   outlet: Net Magazine

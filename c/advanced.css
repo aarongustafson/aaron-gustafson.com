@@ -1121,3 +1121,21 @@ Gist
     font-size: 1.5rem;
   }
 }
+
+/*------------------------------------*\
+    Appearances
+\*------------------------------------*/
+.appearances .podcast__outlet {
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+.appearances .podcast__title {
+  margin-top: 0;
+}
+.appearances .podcast__player, .appearances .podcast__embed {
+  border: 0;
+  height: 90px;
+  max-width: 100%;
+  overflow: hidden;
+}

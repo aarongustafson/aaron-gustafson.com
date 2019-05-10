@@ -1,0 +1,27 @@
+/*------------------------------------*\
+    Appearances
+\*------------------------------------*/
+
+.appearances {
+
+  .podcast {
+
+    &__outlet {
+      @include rem( font-size, $font-size-small );
+      text-transform: uppercase;
+    }
+
+    &__title {
+      margin-top: 0;
+    }
+
+    &__player,
+    &__embed {
+      border: 0;
+      height: 90px;
+      max-width: 100%;
+      overflow: hidden;
+    }
+  }
+
+}

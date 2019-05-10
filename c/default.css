@@ -2353,6 +2353,24 @@ html.wf-active .promo a:active {
 }
 
 /*------------------------------------*\
+    Appearances
+\*------------------------------------*/
+.appearances .podcast__outlet {
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+.appearances .podcast__title {
+  margin-top: 0;
+}
+.appearances .podcast__player, .appearances .podcast__embed {
+  border: 0;
+  height: 90px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/*------------------------------------*\
     $BASE
   Global element styles
 \*------------------------------------*/
@@ -2643,3 +2661,20 @@ Gist
 /*------------------------------------*\
     Speaking Engagements
 \*------------------------------------*/
+/*------------------------------------*\
+    Appearances
+\*------------------------------------*/
+.appearances .podcast__outlet {
+  font-size: 14px;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+.appearances .podcast__title {
+  margin-top: 0;
+}
+.appearances .podcast__player, .appearances .podcast__embed {
+  border: 0;
+  height: 90px;
+  max-width: 100%;
+  overflow: hidden;
+}

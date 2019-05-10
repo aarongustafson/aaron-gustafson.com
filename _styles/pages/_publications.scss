@@ -30,7 +30,7 @@
 
       // 2 events per row, 20px gutter
       flex: 0 0 calc( 50% - 1.25rem / 2 );
-            margin-left: 1.25rem;
+      margin-left: 1.25rem;
       
       /* Remove left margin for row starters */
             &:nth-child(odd) {
