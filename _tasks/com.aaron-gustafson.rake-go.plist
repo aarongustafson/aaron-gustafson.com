@@ -6,7 +6,8 @@
     <string>com.aaron-gustafson.rake-go</string>
     <key>ProgramArguments</key>
     <array>
-      <string>/Users/aarongu/Dropbox/Sites/aaron-gustafson.com/_tasks/cron.sh</string>
+      <string>cd /Users/aarongu/Dropbox/Sites/aaron-gustafson.com/</string>
+      <string>rake go</string>
     </array>
     <key>StartCalendarInterval</key>
     <dict>
