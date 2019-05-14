@@ -6,8 +6,7 @@
     <string>com.aaron-gustafson.rake-go</string>
     <key>ProgramArguments</key>
     <array>
-      <string>cd /Users/aarongu/Dropbox/Sites/aaron-gustafson.com/</string>
-      <string>rake go</string>
+      <string>cd /Users/aarongu/Dropbox/Sites/aaron-gustafson.com/ &amp;&amp; rake go</string>
     </array>
     <key>StartCalendarInterval</key>
     <dict>
@@ -15,8 +14,8 @@
       <integer>03</integer>
     </dict>
     <key>StandardOutPath</key>
-    <string>/log/rake-go.aaron-gustafson.com.log</string>
+    <string>$HOME/log/rake-go.aaron-gustafson.com.log</string>
     <key>StandardErrorPath</key>
-    <string>/log/rake-go.aaron-gustafson.com.error.log</string>
+    <string>$HOME/log/rake-go.aaron-gustafson.com.error.log</string>
   </dict>
 </plist>
