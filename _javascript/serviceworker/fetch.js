@@ -42,7 +42,7 @@ self.addEventListener( "fetch", event => {
               .then( response => {
                 const copy = response.clone();
                 event.waitUntil(
-                  saveToCache( sw_caches.pages.name, request, copy )
+                  saveToCache( sw_caches.other.name, request, copy )
                 );
                 return response;
               })
@@ -77,7 +77,7 @@ self.addEventListener( "fetch", event => {
             .then( response => {
               const copy = response.clone();
               event.waitUntil(
-                saveToCache( sw_caches.pages.name, request, copy )
+                saveToCache( sw_caches.static.name, request, copy )
               );
               return response;
             })
