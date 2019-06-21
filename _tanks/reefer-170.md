@@ -31,58 +31,60 @@ description: This tank is an SPS-dominant mixed reef and I am trying out the Tri
 ### Soft Corals
 
 * Zoanthids & palythoas
-    * Cryogenic
-    * Devil’s Armor
-    * Ding Dang People Eater
-    * Eagle Eye
-    * Fruit Loop
-    * Nirvana
-    * Oxide
-    * Pink Zipper
-    * Rainbow Incinerator
-    * Rasta
-    * Red People Eater
-    * Tubb’s Blue
-    * Ultra Chaos
-    * Unnamed Green
-    * Unnamed Yellow & Green
-    * Vampire in Drag
-    * WWC Halle Berry
-    * WWC Now & Later Gator
+  * Cryogenic
+  * Devil’s Armor
+  * Ding Dang People Eater
+  * Eagle Eye
+  * Fruit Loop
+  * Nirvana
+  * Oxide
+  * Pink Zipper
+  * Rainbow Incinerator
+  * Rasta
+  * Red People Eater
+  * Tubb’s Blue
+  * Ultra Chaos
+  * Unnamed Green
+  * Unnamed Yellow & Green
+  * Vampire in Drag
+  * WWC Halle Berry
+  * WWC Now & Later Gator
 * Other
-    * Green & Yellow Clove Polyps
+  * Green & Yellow Clove Polyps
 
 ### Stony Corals
 
 * Acropora 
-    * ORA Cali <i>Acropora tortuosa</i>
-    * ORA Oregon <i>Acropora tortuosa</i>
-    * Tyree Red Dragon <i>Acropora carduus</i>
-    * Tyree Tierra del Fuego <i>Acropora anthocercis</i>
+  * ORA Cali <i class="binomial">Acropora tortuosa</i>
+  * ORA Oregon <i class="binomial">Acropora tortuosa</i>
+  * Tyree Pink Lemonade <i class="species">Acropora</i>
+  * Tyree Red Dragon <i class="binomial">Acropora wallindii</i>
+  * Tyree Tierra del Fuego <i class="binomial">Acropora anthocercis</i>
 * Blastomussa
-    * Red, yellow & violet <i>Blastomussa merletti</i>
-    * Superman <i>Blastomussa merletti</i>
-* * Favia
-    * Dragon Soul 
-    * GI Joe
+  * Red, yellow & violet <i class="binomial">Blastomussa merletti</i>
+  * Superman <i class="binomial">Blastomussa merletti</i>
+* Favia
+  * Dragon Soul
+  * GI Joe
 * Goniopora
-    * Short-tentacled red with yellow skirt
+  * Short-tentacled red with yellow skirt
 * Leptastrea
-    * Jason Fox John Deere 
-    * Purple Leptastrea
-    * WWC Burning Leptastrea
+  * Jason Fox John Deere 
+  * Purple Leptastrea
+  * WWC Burning Leptastrea
 * Micromussa
-    * WWC Ultron
-    * Lilac and purple with neon green mouth <i>Micromussa lordhowensis</i>
-    * Orange and white with hot pink mouth <i>Micromussa lordhowensis</i>
-    * Purple with lilac and green stripes, blue mouth <i>Micromussa lordhowensis</i>
-    * Dark purple/black with white and red stripes <i>Micromussa lordhowensis</i>
-    * Rainbow <i>Micromussa lordhowensis</i>
+  * WWC Ultron
+  * Lilac and purple with neon green mouth <i class="binomial">Micromussa lordhowensis</i>
+  * Orange and white with hot pink mouth <i class="binomial">Micromussa lordhowensis</i>
+  * Purple with lilac and green stripes, blue mouth <i class="binomial">Micromussa lordhowensis</i>
+  * Dark purple/black with white and red stripes <i class="binomial">Micromussa lordhowensis</i>
+  * Rainbow <i>Micromussa lordhowensis</i>
 * Montipora
-    * ORA German Blue <i>Montipora digitata</i>
-    * ORA Spongedes <i>Montipora spongedes</i>
+  * ORA German Blue <i class="binomial">Montipora digitata</i>
+  * ORA Spongedes <i class="binomial">Montipora spongedes</i>
+  * Bubblegum <i class="binomial">Montipora digitata</i>
 * Miscellaneous
-    * WWC Slimeball Anacropora
+  * WWC Slimeball Anacropora
 
 ## Life Support
 
