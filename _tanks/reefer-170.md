@@ -169,11 +169,10 @@ Connecting the COR to the Reefer is challenging. Here is how I ended up plumbing
 
 > COR ¾" slip + [¾" slip × ¾" FPT](https://www.homedepot.com/p/Everbilt-3-4-in-CPVC-CTS-Slip-x-FPT-Female-Adapter-C4703HD34/100116710) + [¾" NPT × ⅝" barbed](https://www.bulkreefsupply.com/3-4-npt-x-5-8-barbed-straight-reducing-fitting-indelco.html)
 
-## In the Tank
+## The Tank
 
 
 
-## In the Stand
+## The Stand
 
 We don’t have a huge place and Kelly was emphatic that I keep everything in or on the stand. Given that the 170 isn’t huge, I had to do quite a bit of planning and mapping to get everything in with ample room for ventilation, etc. I used assorted cable raceways and opted to attach the EB832 to the inside top of the stand.
-
