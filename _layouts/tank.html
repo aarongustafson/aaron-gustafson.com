@@ -5,7 +5,7 @@ single: true
 
 {% assign page.keywords = "{{ page.tags | join:', ' }}" %}
 {% assign this_url = "{{ site.url }}{{ page.url }}" %}
-{% assign fts = "{{ site.url }}{{ page.fts }}" %}
+{% capture fts %}{{ site.url }}{{ page.fts }}{% endcapture %}
 
 <div class="layout-container layout-container--tank">
   <article role="article" class="layout-container__primary">
@@ -30,7 +30,7 @@ single: true
         <div class="tank__gallery">
           {% for image in page.gallery %}
             <figure id="{{ image.url | slugify }}" class="anchorable__ignore">
-              {% assign image_src = "{{ site.url }}{{ image.url }}" %}
+              {% capture image_src %}{{ site.url }}{{ image.url }}{% endcapture %}
               <a href="{{ image_src }}">
                 <img src="https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_320/{{ image_src }}"
                      srcset="https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_320/{{ image_src }} 320w,
