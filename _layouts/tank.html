@@ -23,26 +23,26 @@ single: true
 
       <div class="tank__content">
         {{ content }}
-      </div>
 
-      {% if page.gallery %}
-        <h2>Gallery</h2>
-        <div class="tank__gallery">
-          {% for image in page.gallery %}
-            <figure id="{{ image.url | slugify }}" class="anchorable__ignore">
-              {% capture image_src %}{{ site.url }}{{ image.url }}{% endcapture %}
-              <a href="{{ image_src }}">
-                <img src="https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_320/{{ image_src }}"
-                     srcset="https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_320/{{ image_src }} 320w,
-                             https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_640/{{ image_src }} 640w,
-                             https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_900/{{ image_src }} 900w"
-                     alt="{{ image.title }}">
-              </a>
-              <figcaption>{{ image.title | markdownify }}</figcaption>
-            </figure>
-          {% endfor %}
-        </div>
-      {% endif %}
+        {% if page.gallery %}
+          <h2 class="subsection__header">Gallery</h2>
+          <div class="tank__gallery">
+            {% for image in page.gallery %}
+              <figure id="{{ image.url | slugify }}" class="anchorable__ignore">
+                {% capture image_src %}{{ site.url }}{{ image.url }}{% endcapture %}
+                <a href="{{ image_src }}">
+                  <img src="https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_320/{{ image_src }}"
+                      srcset="https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_320/{{ image_src }} 320w,
+                              https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_640/{{ image_src }} 640w,
+                              https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_900/{{ image_src }} 900w"
+                      alt="{{ image.title }}">
+                </a>
+                <figcaption>{{ image.title | markdownify }}</figcaption>
+              </figure>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
 
     </div>
   </article>

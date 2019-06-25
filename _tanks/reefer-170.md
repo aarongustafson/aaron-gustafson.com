@@ -11,7 +11,7 @@ gallery:
   title: Sunset Plate coral on the sand
 ---
 
-## Livestock
+<h2 class="subsection__header">Livestock</h2>
 
 ### Fish
 
@@ -122,7 +122,7 @@ gallery:
   </ul></dd>
 </dl>
 
-## Life Support
+<h2 class="subsection__header">Life Support</h2>
 
 <dl class="tank__specs">
   <dt>Tank</dt>
@@ -179,7 +179,7 @@ gallery:
   </ul></dd>  
 </dl>
 
-## Environment
+<h2 class="subsection__header">Environment</h2>
 
 <dl class="tank__specs">
   <dt>Salt</dt>
@@ -197,6 +197,6 @@ gallery:
   </ul></dd>
 </dl>
 
-## Notes
+<h2 class="subsection__header">Notes</h2>
 
 * Connecting the COR to the Reefer is challenging. Here is how I ended up plumbing it all together: COR ¾" slip + [¾" slip × ¾" FPT](https://www.homedepot.com/p/Everbilt-3-4-in-CPVC-CTS-Slip-x-FPT-Female-Adapter-C4703HD34/100116710) + [¾" NPT × ⅝" barbed](https://www.bulkreefsupply.com/3-4-npt-x-5-8-barbed-straight-reducing-fitting-indelco.html)
