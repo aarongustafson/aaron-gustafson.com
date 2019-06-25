@@ -1,0 +1,55 @@
+/*------------------------------------*\
+    Tanks
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+  
+  .binomial {
+    font-style: italic;
+  }
+
+  .tank {
+
+    ul {
+      list-style: none;
+    }
+    ul ul {
+      list-style: disc;
+    }
+
+    &__specs,
+    &__corals {
+      padding: 0;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    &__gallery {
+      display: grid;
+      @include rem( grid-gap, $default-spacing );
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr) ) ;
+    }
+
+    @supports (display: grid) {
+      figure + figure {
+        margin: 0;
+      }
+    }
+
+  }
+
+}
+
+@include breakup-breakpoint('medium') {
+
+  .layout-container--tank {
+    max-width: 47em;
+
+    .layout-container__primary {
+      width: auto;
+      float: none;
+    }
+  
+  }
+
+}

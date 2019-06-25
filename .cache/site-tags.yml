@@ -322,6 +322,7 @@ audio:
 - 2014-12-21-autoplay-dont-do-it.markdown
 software:
 - 2014-12-28-we-need-more-empathy.markdown
+- 2019-05-15-when-engineers-become-whistle-blowers.markdown
 empathy:
 - 2014-12-28-we-need-more-empathy.markdown
 - 2015-02-18-who-should-pay.markdown
@@ -428,6 +429,7 @@ industry:
 - 2015-05-05-lessons-learned-from-atari.markdown
 - 2015-10-28-excellent-speakers-for-your-next-tech-event.markdown
 - 2019-04-12-nothing-fails-like-success.markdown
+- 2019-05-15-when-engineers-become-whistle-blowers.markdown
 HTML:
 - 2015-05-05-slides-from-my-talk-at-number-msedgesummit.markdown
 - 2015-11-11-labeled-with-love.markdown
@@ -575,6 +577,7 @@ privacy:
 society:
 - 2018-02-28-the-internet-isn-t-forever-.markdown
 - 2018-11-01-online-hate-is-a-deadly-threat-when-will-tech-companies-finally-take-it-seriously-.markdown
+- 2019-05-15-when-engineers-become-whistle-blowers.markdown
 fonts:
 - 2018-03-01-shipping-system-fonts-to-github-com.markdown
 government:
@@ -657,3 +660,5 @@ influences:
 - 2019-02-26-katherine-johnson-took-us-to-the-moon-and-back.markdown
 - 2019-02-27-margaret-collins-used-biology-to-push-for-equality.markdown
 - 2019-02-28-angie-turner-king-invested-her-energy-in-others.markdown
+reef keeping:
+- reefer-170.md

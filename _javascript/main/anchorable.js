@@ -13,6 +13,7 @@
   location = window.location.href,
   $body = document.body,
   prefix = 'anchorable',
+  ignore = prefix + '__ignore',
   // Anchor
   $anchor,
   anchor_class = prefix + '__anchor',
@@ -185,6 +186,12 @@
       while ( length-- )
       {
         $element = $anchorable[length];
+
+        // Ignore it?
+        if ( $element.classList.contains( ignore ) )
+        {
+          continue;
+        }
 
         // Check to make sure the previous sibling is not also anchorable.
         // If it is, skip it

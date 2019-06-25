@@ -1038,6 +1038,18 @@ Gist
     Buttons
 \*------------------------------------*/
 /*------------------------------------*\
+    Tanks
+\*------------------------------------*/
+@media (min-width: 43.125em) {
+  .layout-container--tank {
+    max-width: 47em;
+  }
+  .layout-container--tank .layout-container__primary {
+    width: auto;
+    float: none;
+  }
+}
+/*------------------------------------*\
     $PAGES
   Page-specific styles
   (use sparingly)

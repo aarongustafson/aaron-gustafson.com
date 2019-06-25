@@ -937,3 +937,13 @@ h1 + .alternate {
 /*------------------------------------*\
     Buttons
 \*------------------------------------*/
+/*------------------------------------*\
+    Tanks
+\*------------------------------------*/
+.layout-container--tank {
+  max-width: 47em;
+}
+.layout-container--tank .layout-container__primary {
+  width: auto;
+  float: none;
+}

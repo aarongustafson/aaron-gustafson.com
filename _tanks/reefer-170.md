@@ -1,9 +1,14 @@
 ---
 layout: tank
-title: "Reefer 170"
+title: "Nano Mixed Reef"
 date: 2019-05-28 20:46:48 -0400
 tags: ["reef keeping"]
 description: This tank is an SPS-dominant mixed reef and I am trying out the Triton on this build.
+fts: /i/tanks/reefer-fts-2019-05-19.jpg
+tank: Red Sea Reefer 170
+gallery:
+- url: /i/tanks/sunset-plate.jpg
+  title: Sunset Plate coral on the sand
 ---
 
 ## Livestock
@@ -31,66 +36,95 @@ description: This tank is an SPS-dominant mixed reef and I am trying out the Tri
 
 ### Soft Corals
 
-* Zoanthids & Palythoas
-  * Cryogenic
-  * Devil’s Armor
-  * Ding Dang People Eater
-  * Eagle Eye
-  * Fruit Loop
-  * Nirvana
-  * Oxide
-  * Pink Zipper
-  * Rainbow Incinerator
-  * Rasta
-  * Red People Eater
-  * Tubb’s Blue
-  * Ultra Chaos
-  * Unnamed Green
-  * Unnamed Yellow & Green
-  * Vampire in Drag
-  * WWC Halle Berry
-  * WWC Now & Later Gator
-* Other
-  * Green & Yellow Clove Polyps
+<dl class="tank__corals">
+  <dt>Zoanthids & Palythoas</dt>
+  <dd><ul>
+  <li>Cryogenic</li>
+  <li>Devil’s Armor</li>
+  <li>Ding Dang People Eater</li>
+  <li>Eagle Eye</li>
+  <li>Fruit Loop</li>
+  <li>Nirvana</li>
+  <li>Oxide</li>
+  <li>Pink Zipper</li>
+  <li>Rainbow Incinerator</li>
+  <li>Rasta</li>
+  <li>Red People Eater</li>
+  <li>Tubb’s Blue</li>
+  <li>Ultra Chaos</li>
+  <li>Unnamed Green</li>
+  <li>Unnamed Yellow & Green</li>
+  <li>Vampire in Drag</li>
+  <li>WWC Halle Berry</li>
+  <li>WWC Now & Later Gator</li>
+  </ul></dd>
+  <dt>Other</dt>
+  <dd><ul>
+  <li>Lemon-lime Clove Polyps</li>
+  </ul></dd>
+</dl>
 
 ### Stony Corals
 
-* Acropora
-  * Bali Green Slimer (<i class="binomial">Acropora yongei</i>)
-  * ORA Cali Tort (<i class="binomial">Acropora tortuosa</i>)
-  * ORA Oregon Tort (<i class="binomial">Acropora tortuosa</i>)
-  * Tyree Pink Lemonade (<i class="species">Acropora spp.</i>)
-  * Tyree Red Dragon (<i class="binomial">Acropora wallindii</i>)
-  * Tyree Tierra del Fuego (<i class="binomial">Acropora anthocercis</i>)
-* Blastomussa
-  * Red, yellow & violet (<i class="binomial">Blastomussa merletti</i>)
-  * Superman (<i class="binomial">Blastomussa merletti</i>)
-* Favia
-  * Dragon Soul
-  * GI Joe
-* Goniopora
-  * Short-tentacled red with yellow skirt
-* Leptastrea
-  * Jason Fox John Deere 
-  * Purple Leptastrea
-  * WWC Burning Leptastrea
-* Micromussa
-  * WWC Ultron (<i class="binomial">Micromussa amakusensis</i>)
-  * Rainbow Lord - Lilac and purple with neon green mouth (<i class="binomial">Micromussa lordhowensis</i>)
-  * Rainbow Lord - Orange and white with hot pink mouth (<i class="binomial">Micromussa lordhowensis</i>)
-  * Rainbow Lord - Purple with lilac and green stripes, blue mouth (<i class="binomial">Micromussa lordhowensis</i>)
-  * Rainbow Lord - Dark purple/black with white and red stripes (<i class="binomial">Micromussa lordhowensis</i>)
-  * Rainbow Lord - Rainbow stripes (<i>Micromussa lordhowensis</i>)
-* Montipora
-  * ORA German Blue Digitata (<i class="binomial">Montipora digitata</i>)
-  * ORA Spongedes (<i class="binomial">Montipora spongedes</i>)
-  * Bubblegum Digitata (<i class="binomial">Montipora digitata</i>)
-* Miscellaneous
-  * WWC Slimeball Anacropora
+<dl class="tank__corals">
+  <dt>Acropora</dt>
+  <dd><ul>
+  <li>Bali Green Slimer (<i class="binomial">Acropora yongei</i>)</li>
+  <li>ORA Cali Tort (<i class="binomial">Acropora tortuosa</i>)</li>
+  <li>ORA Oregon Tort (<i class="binomial">Acropora tortuosa</i>)</li>
+  <li>Tyree Pink Lemonade (<i class="species">Acropora spp.</i>)</li>
+  <li>Tyree Red Dragon (<i class="binomial">Acropora wallindii</i>)</li>
+  <li>Tyree Tierra del Fuego (<i class="binomial">Acropora anthocercis</i>)</li>
+  </ul></dd>
+  <dt>Blastomussa</dt>
+  <dd><ul>
+  <li>Red, yellow & violet (<i class="binomial">Blastomussa merletti</i>)</li>
+  <li>Superman (<i class="binomial">Blastomussa merletti</i>)</li>
+  </ul></dd>
+  <dt>Favia</dt>
+  <dd><ul>
+  <li>Dragon Soul</li>
+  <li>GI Joe</li>
+  </ul></dd>
+  <dt>Fungia</dt>
+  <dd><ul>
+  <li>Sunset Plate (<i class="binomial">Fungia repanda</i>)</li>
+  <li>GI Joe</li>
+  </ul></dd>
+  <dt>Goniopora</dt>
+  <dd><ul>
+  <li>Short-tentacled red with yellow skirt</li>
+  </ul></dd>
+  <dt>Leptastrea</dt>
+  <dd><ul>
+  <li>Jason Fox John Deere Leptastrea</li>
+  <li>Purple Leptastrea</li>
+  <li>WWC Burning Leptastrea</li>
+  </ul></dd>
+  <dt>Micromussa</dt>
+  <dd><ul>
+  <li>WWC Ultron (<i class="binomial">Micromussa amakusensis</i>)</li>
+  <li>Rainbow Lord - Lilac and purple with neon green mouth (<i class="binomial">Micromussa lordhowensis</i>)</li>
+  <li>Rainbow Lord - Orange and white with hot pink mouth (<i class="binomial">Micromussa lordhowensis</i>)</li>
+  <li>Rainbow Lord - Purple with lilac and green stripes, blue mouth (<i class="binomial">Micromussa lordhowensis</i>)</li>
+  <li>Rainbow Lord - Dark purple/black with white and red stripes (<i class="binomial">Micromussa lordhowensis</i>)</li>
+  <li>Rainbow Lord - Rainbow stripes (<i class="binomial">Micromussa lordhowensis</i>)</li>
+  </ul></dd>
+  <dt>Montipora</dt>
+  <dd><ul>
+  <li>ORA German Blue Digitata (<i class="binomial">Montipora digitata</i>)</li>
+  <li>ORA Spongedes (<i class="binomial">Montipora spongedes</i>)</li>
+  <li>Bubblegum Digitata (<i class="binomial">Montipora digitata</i>)</li>
+  </ul></dd>
+  <dt>Miscellaneous</dt>
+  <dd><ul>
+  <li>WWC Slimeball Anacropora</li>
+  </ul></dd>
+</dl>
 
 ## Life Support
 
-<dl>
+<dl class="tank__specs">
   <dt>Tank</dt>
   <dd><ul>
   <li>Red Sea Reefer 170 (white)</li>
@@ -147,7 +181,7 @@ description: This tank is an SPS-dominant mixed reef and I am trying out the Tri
 
 ## Environment
 
-<dl>
+<dl class="tank__specs">
   <dt>Salt</dt>
   <dd>Red Sea Blue Bucket</dd>
   <dt>Tank</dt>
@@ -163,16 +197,6 @@ description: This tank is an SPS-dominant mixed reef and I am trying out the Tri
   </ul></dd>
 </dl>
 
-## Plumbing
+## Notes
 
-Connecting the COR to the Reefer is challenging. Here is how I ended up plumbing it all together:
-
-> COR ¾" slip + [¾" slip × ¾" FPT](https://www.homedepot.com/p/Everbilt-3-4-in-CPVC-CTS-Slip-x-FPT-Female-Adapter-C4703HD34/100116710) + [¾" NPT × ⅝" barbed](https://www.bulkreefsupply.com/3-4-npt-x-5-8-barbed-straight-reducing-fitting-indelco.html)
-
-## The Tank
-
-
-
-## The Stand
-
-We don’t have a huge place and Kelly was emphatic that I keep everything in or on the stand. Given that the 170 isn’t huge, I had to do quite a bit of planning and mapping to get everything in with ample room for ventilation, etc. I used assorted cable raceways and opted to attach the EB832 to the inside top of the stand.
+* Connecting the COR to the Reefer is challenging. Here is how I ended up plumbing it all together: COR ¾" slip + [¾" slip × ¾" FPT](https://www.homedepot.com/p/Everbilt-3-4-in-CPVC-CTS-Slip-x-FPT-Female-Adapter-C4703HD34/100116710) + [¾" NPT × ⅝" barbed](https://www.bulkreefsupply.com/3-4-npt-x-5-8-barbed-straight-reducing-fitting-indelco.html)

@@ -73,6 +73,9 @@ collections:
   links:
     output: true
     permalink: /notebook/links/:title/
+  tanks:
+    output: true
+    permalink: /tanks/:title/
 defaults:
   -
     scope:

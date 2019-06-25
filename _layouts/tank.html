@@ -1,0 +1,50 @@
+---
+layout: default
+single: true
+---
+
+{% assign page.keywords = "{{ page.tags | join:', ' }}" %}
+{% assign this_url = "{{ site.url }}{{ page.url }}" %}
+{% assign fts = "{{ site.url }}{{ page.fts }}" %}
+
+<div class="layout-container layout-container--tank">
+  <article role="article" class="layout-container__primary">
+    <div class="tank">
+      <header class="tank__header">
+        <h1 class="entry__title">{{ page.title | titlecase | widont | markdownify | remove:'<p>' | remove:'</p>' }}</h1>
+        <p class="tank__type">{{ page.tank }}</p>
+        <img class="tank__fts"
+             src="https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_320/{{ fts }}"
+             srcset="https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_320/{{ fts }} 320w,
+                     https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_640/{{ fts }} 640w,
+                     https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_900/{{ fts }} 900w"
+             alt="{{ image.title }}">
+      </header>
+
+      <div class="tank__content">
+        {{ content }}
+      </div>
+
+      {% if page.gallery %}
+        <h2>Gallery</h2>
+        <div class="tank__gallery">
+          {% for image in page.gallery %}
+            <figure id="{{ image.url | slugify }}" class="anchorable__ignore">
+              {% assign image_src = "{{ site.url }}{{ image.url }}" %}
+              <a href="{{ image_src }}">
+                <img src="https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_320/{{ image_src }}"
+                     srcset="https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_320/{{ image_src }} 320w,
+                             https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_640/{{ image_src }} 640w,
+                             https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_900/{{ image_src }} 900w"
+                     alt="{{ image.title }}">
+              </a>
+              <figcaption>{{ image.title | markdownify }}</figcaption>
+            </figure>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+    </div>
+  </article>
+  
+</div>
