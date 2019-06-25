@@ -1577,7 +1577,12 @@ https://www.aaron-gustafson.com/notebook/links/meet-vivaldi-a-new-browser-from-t
 https://www.aaron-gustafson.com/notebook/links/all-of-this-has-happened-before-and-will-happen-again/:
   http://blog.adrianroselli.com/2015/01/all-of-this-has-happened-before-and.html: false
 https://www.aaron-gustafson.com/notebook/links/flash-of-faux-text/:
-  http://www.zachleat.com/web/foft/: false
+  http://www.zachleat.com/web/foft/:
+    status: queued
+    summary: Webmention was queued for processing
+    location: https://webmention.io/www.zachleat.com/webmention/kk_Pf3hFIiVQwkUJcG42
+    source: https://www.aaron-gustafson.com/notebook/links/flash-of-faux-text/
+    target: http://www.zachleat.com/web/foft/
 https://www.aaron-gustafson.com/notebook/links/inside-microsofts-new-rendering-engine-for-the-project-spartan-smashing-magazine/:
   http://www.smashingmagazine.com/2015/01/26/inside-microsofts-new-rendering-engine-project-spartan/: false
 https://www.aaron-gustafson.com/notebook/links/whatsapp-doesnt-understand-the-web/:
@@ -2498,7 +2503,12 @@ https://www.aaron-gustafson.com/notebook/links/top-us-undergraduate-computer-sci
   ? http://www.darkreading.com/vulnerabilities---threats/top-us-undergraduate-computer-science-programs-skip-cybersecurity-classes/d/d-id/1325024
   : false
 https://www.aaron-gustafson.com/notebook/links/a-debugging-thought-process/:
-  https://remysharp.com/2016/04/04/a-debugging-thought-process: false
+  https://remysharp.com/2016/04/04/a-debugging-thought-process:
+    status: queued
+    summary: Webmention was queued for processing
+    location: https://webmention.io/remysharp.com/webmention/zvmZswwC26JLtqyhDNh8
+    source: https://www.aaron-gustafson.com/notebook/links/a-debugging-thought-process/
+    target: https://remysharp.com/2016/04/04/a-debugging-thought-process
 https://www.aaron-gustafson.com/notebook/links/the-open-web-is-not-going-away/:
   http://techcrunch.com/2016/04/10/1301496/: false
 https://www.aaron-gustafson.com/notebook/links/scrollmagazine/:
@@ -3127,7 +3137,12 @@ https://www.aaron-gustafson.com/notebook/mentorship-2018-2019/:
     source: https://www.aaron-gustafson.com/notebook/mentorship-2018-2019/
     target: https://www.aaron-gustafson.com/notebook/my-2017-mentees/
   https://amberley.blog/: false
-  http://www.matuzo.at/: false
+  http://www.matuzo.at/:
+    status: queued
+    summary: Webmention was queued for processing
+    location: https://webmention.io/www.matuzo.at/webmention/74nzkiO8wSMQwife1QXM
+    source: https://www.aaron-gustafson.com/notebook/mentorship-2018-2019/
+    target: http://www.matuzo.at/
   https://www.theguardian.com/commentisfree/2017/dec/27/check-your-privilege-racism-sexism-education-income: false
   https://twitter.com/intent/tweet?text=Hey+@aarongustafson+I%27d+like+to+nominate+YOUR_FRIENDS_HANDLE+for+your+mentorship: false
   https://twitter.com/aarongustafson: false
