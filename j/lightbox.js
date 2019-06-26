@@ -17,7 +17,8 @@
       current_position = 0,
       item_selector = "[data-lightbox-item]",
       fade_class = "lightbox--fade",
-      fade_duration = 500;
+      fade_duration = 500,
+      img_prefix = "https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_1080/";
 
 
   setupGallery();
@@ -60,7 +61,7 @@
   function updateLightbox()
   {
     fadeIn(function(){
-      $img.style.backgroundImage = "url(" + gallery[current_position].img + ")";
+      $img.style.backgroundImage = "url(" + img_prefix + gallery[current_position].img + ")";
       $title.innerHTML = gallery[i].title;
     });
   }

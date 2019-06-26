@@ -2278,6 +2278,7 @@ html.wf-active .promo a:active {
 
 .tank ul {
   list-style: none;
+  padding-left: 0;
 }
 .tank ul ul {
   list-style: disc;
