@@ -51,15 +51,15 @@ gallery:
 * Yellow Coris Wrasse (<i class="binomial">Halichoeres chrysus</i>)
 * Tail Spot Blenny (<i class="binomial">Ecsenius stigmatura</i>)
 * Royal Gramma Basslet (<i class="binomial">Gramma loreto</i>)
-* Carpenter’s Flasher Wrasse (male, <i class="binomial">Paracheilinus carpenteri</i>)
-* Yasha White Ray Shrimp Goby (male, <i class="binomial">Stonogobiops yasha</i>)
+* Carpenter’s Flasher Wrasse (<i class="binomial">Paracheilinus carpenteri</i>, male)
+* Yasha White Ray Shrimp Goby (<i class="binomial">Stonogobiops yasha</i>, male)
 
 ### Inverts
 
 * Blood Red Fire Shrimp (<i class="binomial">Lysmata debelius</i>)
 * Tiger Snapping Shrimp (<i class="binomial">Alpheus bellulus</i>)
-* Tiger Fighting Conch (<i class="binomial">Strombus spp.)</i>)
-* Florida Fighting Conch (in the refugium, <i class="binomial">Strombus spp.)</i>)
+* Tiger Fighting Conch (<i class="binomial">Strombus spp.</i>)
+* Florida Fighting Conch (<i class="binomial">Strombus spp.</i>)
 * Halloween Hermit Crab (<i class="binomial">Ciliopagurus strigatus</i>)
 * Electric Blue Hermit Crab (<i class="binomial">Calcinus elegans</i>)
 * Porcelain Crab (<i class="binomial">Petrolisthes galathinus</i>)
