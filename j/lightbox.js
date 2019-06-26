@@ -82,19 +82,6 @@
       $lightbox.classList.remove( fade_class );
     }, fade_duration );
   }
-  function updateNav()
-  {
-    $prev.disabled = false;
-    $next.disabled = false;
-    if ( current_position < 1 )
-    {
-      $prev.disabled = true;
-    }
-    else if ( current_position == final_item )
-    {
-      $next.disabled = true;
-    }
-  }
   function open( e )
   {
     e.preventDefault();
@@ -102,7 +89,6 @@
     current_position = $triggering_element.closest( item_selector ).dataset.lightboxIndex;
     fadeOut(function(){
       updateLightbox();
-      updateNav();
       $lightbox.showModal();
       fadeIn(function(){
         $lightbox.focus();
@@ -131,7 +117,6 @@
   {
     fadeOut(function(){
       updateLightbox();
-      updateNav();
     });
   }
   function close()
@@ -151,7 +136,7 @@
 
     var $dialog = document.createElement("dialog"),
         $polyfill_js = document.createElement("script"),
-        $polyfill_css = document.createElement("link"),;
+        $polyfill_css = document.createElement("link");
     
         if( {}.toString.call($dialog) === '[object HTMLUnknownElement]' )
     {

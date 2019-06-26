@@ -1096,8 +1096,8 @@ Gist
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100vw;
-    height: 100vh;
+    width: 90vw;
+    height: 90vh;
     min-width: 300px;
     min-height: 300px;
     max-width: 1080px;
@@ -1119,7 +1119,7 @@ Gist
     position: absolute;
     top: 40%;
     border-color: #fff;
-    padding: .5rem 2rem;
+    padding: .5rem 1rem;
   }
   .lightbox__control--prev {
     left: 0;
@@ -1135,7 +1135,7 @@ Gist
     background: #fff;
     color: #2c2825;
     border: 0;
-    border-radius: 0;
+    border-radius: 0 0 0 20px;
     margin: 0;
     padding: .25em .5em;
     top: 0;

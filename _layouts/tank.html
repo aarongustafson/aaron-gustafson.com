@@ -26,7 +26,7 @@ single: true
 
         {% if page.gallery %}
           <h2 class="subsection__header">Gallery</h2>
-          <div class="tank__gallery" data-lightbox-item>
+          <div class="tank__gallery">
             {% for image in page.gallery %}
               <figure id="{{ image.url | slugify }}" class="anchorable__ignore" data-lightbox-item>
                 {% capture image_src %}{{ site.url }}{{ image.url }}{% endcapture %}
