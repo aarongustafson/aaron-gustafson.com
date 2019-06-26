@@ -44,7 +44,7 @@
   }
   function addToGallery( $item )
   {
-    gallery.push({
+    gallery.unshift({
       img: $item.querySelector("a").href,
       title: $item.querySelector("figcaption").innerHTML
     });
@@ -88,6 +88,7 @@
     e.preventDefault();
     $triggering_element = e.target;
     current_position = $triggering_element.closest( item_selector ).dataset.lightboxIndex;
+    console.log(current_position);
     fadeOut(function(){
       updateLightbox();
       $lightbox.showModal();

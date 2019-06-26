@@ -43,7 +43,8 @@ gallery:
   title: Rastas are one of my favorite zoas. Just look at that green!
 ---
 
-<h2 class="subsection__header">Livestock</h2>
+## Livestock
+{: .subsection__header}
 
 ### Fish
 
@@ -98,7 +99,7 @@ gallery:
 
 ### Stony Corals
 
-<dl class="tank__corals">
+<dl class="tank__corals" id="corals">
   <dt>Acropora</dt>
   <dd><ul>
   <li>Bali Green Slimer (<i class="binomial">Acropora yongei</i>)</li>
@@ -154,7 +155,8 @@ gallery:
   </ul></dd>
 </dl>
 
-<h2 class="subsection__header">Life Support</h2>
+## Life Support
+{: .subsection__header}
 
 <dl class="tank__specs">
   <dt>Tank</dt>
@@ -196,7 +198,7 @@ gallery:
   <dt>Dosing</dt>
   <dd><ul>
   <li>GHL Doser 2.1</li>
-  <li>Coral Box Dosing 3Room Liquid Reservoir</li>
+  <li>Coral Box Dosing 3-Room Liquid Reservoir</li>
   </ul></dd>
   <dt>Auto Top-Off</dt>
   <dd><ul>
@@ -211,7 +213,8 @@ gallery:
   </ul></dd>  
 </dl>
 
-<h2 class="subsection__header">Environment</h2>
+## Environment
+{: .subsection__header}
 
 <dl class="tank__specs">
   <dt>Salt</dt>
@@ -229,6 +232,7 @@ gallery:
   </ul></dd>
 </dl>
 
-<h2 class="subsection__header">Notes</h2>
+## Notes
+{: .subsection__header}
 
 * Connecting the COR to the Reefer is challenging. Here is how I ended up plumbing it all together: COR ¾" slip + [¾" slip × ¾" FPT](https://www.homedepot.com/p/Everbilt-3-4-in-CPVC-CTS-Slip-x-FPT-Female-Adapter-C4703HD34/100116710) + [¾" NPT × ⅝" barbed](https://www.bulkreefsupply.com/3-4-npt-x-5-8-barbed-straight-reducing-fitting-indelco.html)
