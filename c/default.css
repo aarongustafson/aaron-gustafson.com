@@ -632,6 +632,19 @@ section + section {
   margin-top: 2.75rem;
 }
 
+dialog::-webkit-backdrop {
+  background: rgba(44, 40, 37, 0.4);
+}
+
+dialog::backdrop {
+  background: rgba(44, 40, 37, 0.4);
+}
+
+/* polyfill */
+dialog + .backdrop {
+  background: rgba(44, 40, 37, 0.4);
+}
+
 /*------------------------------------*\
 Lists
 \*------------------------------------*/
@@ -2287,6 +2300,13 @@ html.wf-active .promo a:active {
 }
 
 /*------------------------------------*\
+    Lightbox
+\*------------------------------------*/
+.lightbox {
+  display: none;
+}
+
+/*------------------------------------*\
     $PAGES
   Page-specific styles
   (use sparingly)
@@ -2439,6 +2459,18 @@ Body-level settings
 /*------------------------------------*\
 Block-level Semantics
 \*------------------------------------*/
+dialog::-webkit-backdrop {
+  background: rgba(44, 40, 37, 0.4);
+}
+dialog::backdrop {
+  background: rgba(44, 40, 37, 0.4);
+}
+
+/* polyfill */
+dialog + .backdrop {
+  background: rgba(44, 40, 37, 0.4);
+}
+
 @media print {
   p, ol, ol, dl {
     orphans: 3;
@@ -2682,6 +2714,9 @@ Gist
 \*------------------------------------*/
 /*------------------------------------*\
     Tanks
+\*------------------------------------*/
+/*------------------------------------*\
+    Lightbox
 \*------------------------------------*/
 /*------------------------------------*\
     $PAGES

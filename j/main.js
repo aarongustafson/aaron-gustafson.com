@@ -240,10 +240,13 @@
       while ( length-- )
       {
         $a = $anchorable[length].querySelector( 'a.' + anchor_class );
-        // remove events
-        $a.removeEventListener( 'touchdown', clickHandler, false );
-        $a.removeEventListener( 'click', clickHandler, false );
-        $a.removeEventListener( 'keypress', keypressHandler, false );
+        if ( $a )
+        {
+          // remove events
+          $a.removeEventListener( 'touchdown', clickHandler, false );
+          $a.removeEventListener( 'click', clickHandler, false );
+          $a.removeEventListener( 'keypress', keypressHandler, false );
+        }
       }
 
       // release DOM references

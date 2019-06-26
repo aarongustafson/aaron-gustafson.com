@@ -69,6 +69,14 @@ Block-level Semantics
   
 }
 
+dialog::backdrop {
+  background: rgba( $color-black, .4 );
+}
+/* polyfill */
+dialog + .backdrop {
+  background: rgba( $color-black, .4 );
+}
+
 @include breakup-breakpoint( "medium" ) {
   blockquote,
   dl {

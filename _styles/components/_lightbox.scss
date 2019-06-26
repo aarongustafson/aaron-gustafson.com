@@ -1,0 +1,106 @@
+/*------------------------------------*\
+    Lightbox
+\*------------------------------------*/
+
+@include breakup-breakpoint( "global" ) {
+  
+  .lightbox {
+    display: none;
+  }
+
+}
+
+@include breakup-breakpoint('medium') {
+
+  .lightbox {
+    
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1024;
+    
+    background: $color-white;
+    border: 0;
+    border:  3px solid;
+    padding: 0;
+    border-radius:  20px;
+    overflow: hidden;
+
+    display: none;
+    transition: opacity .5s;
+
+    &[open] {
+      display: block;
+      opacity: 1; 
+    }
+
+    &--fade,
+    &--fade[open] {
+      opacity: 0;
+    }
+
+    &__media {
+      @include rem( padding, $default-spacing );
+    }
+
+    &__image {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100vw;
+      height: 100vh;
+      min-width: 300px;
+      min-height: 300px;
+      max-width: 1080px;
+      max-height: 80vh;
+    }
+
+    &__caption {
+      background-color: rgba( $color-black, .9 );
+      color: $color-white;
+
+      @include rem( padding, $default-spacing ); 
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    &__control {
+      @include rem( font-size, $font-size-h2 );
+      
+      position: absolute;
+      top: 40%;
+
+      border-color: $color-white;
+      padding: .5rem 2rem;
+
+      &--prev {
+        left: 0;
+        border-radius: 0 20px 20px 0;
+        border-left-width: 0;
+      }
+      &--next {
+        right: 0;
+        border-radius: 20px 0 0 20px;
+        border-right-width: 0;
+      }
+      &--close,
+      &--close:hover,
+      &--close:focus {
+        background: $color-white;
+        color: $color-black;
+        border: 0;
+        border-radius: 0;
+        margin: 0;
+        padding: .25em .5em;
+
+        top: 0;
+        right: 0;
+      }
+    }
+
+  }
+
+}

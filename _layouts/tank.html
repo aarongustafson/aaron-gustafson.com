@@ -26,9 +26,9 @@ single: true
 
         {% if page.gallery %}
           <h2 class="subsection__header">Gallery</h2>
-          <div class="tank__gallery">
+          <div class="tank__gallery" data-lightbox-item>
             {% for image in page.gallery %}
-              <figure id="{{ image.url | slugify }}" class="anchorable__ignore">
+              <figure id="{{ image.url | slugify }}" class="anchorable__ignore" data-lightbox-item>
                 {% capture image_src %}{{ site.url }}{{ image.url }}{% endcapture %}
                 <a href="{{ image_src }}">
                   <img src="https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_320/{{ image_src }}"
@@ -48,3 +48,5 @@ single: true
   </article>
   
 </div>
+
+{% include lightbox.html %}
