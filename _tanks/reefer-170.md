@@ -7,8 +7,40 @@ description: This tank is an SPS-dominant mixed reef and I am trying out the Tri
 fts: /i/tanks/reefer-fts-2019-05-19.jpg
 tank: Red Sea Reefer 170
 gallery:
+- url: /i/tanks/blastomussa-merletti.jpg
+  title: Red, yellow & violet Blastomussa merletti
+- url: /i/tanks/burning-leptastrea.jpg
+  title: WWC Burning Leptastrea
+- url: /i/tanks/devils-armor-zoas.jpg
+  title: These Devil’s Armor zoanthids have always beena  great grower for me. These came from my old tank.
+- url: /i/tanks/dragon-soul-favia.jpg
+  title: A small piece of my old Dragon Soul Favia from Cultivated Reef.
+- url: /i/tanks/fruit-loop-zoas.jpg
+  title: Originally sold to me as Emeralds on Fire, these are actually Fruit Loop zoanthids.
+- url: /i/tanks/german-blue-digitata.jpg
+  title: I love branching montipora and this German Blue Digitata has a particularly nice branching pattern.
+- url: /i/tanks/hallie-berry-zoas.jpg
+  title: These WWC Hallie Berry zoas were among the first residents of this tank and they’ve really taken off.
+- url: /i/tanks/john-deere-leptastrea.jpg
+  title: I originally got this colony from World Wide Corals on a trip to Orlando back in 2014.
+- url: /i/tanks/lemon-lime-clove.jpg
+  title: I go back & forth on clove polyps, but I’m a sucker for yellow corals and these have awesome yellow tips.
 - url: /i/tanks/sunset-plate.jpg
-  title: Sunset Plate coral on the sand
+  title: I cannot tell you how amazing this Sunset Plate coral is. It’s easily the brightest thing in the tank. Gorgeous!
+- url: /i/tanks/micromussa-lord-blue.jpg
+  title: It may not look like much amid the purple coraline algae, but the purples and blues in this Micromussa lord are just stunning.
+- url: /i/tanks/micromussa-lord-lavender.jpg
+  title: I love this Micromussa lord because it is pretty conservative on the surface (tan and lavender), but underneath it has a glowing green mouth. Some of the polyps even have bi-color mouths (neon purple and green).
+- url: /i/tanks/micromussa-lord-rainbow.jpg
+  title: This photo doesn’t really capture all the colors that come out when this Micromussa lord is feeding. Greens, yellows, oranges, and reds… it’s beautiful.
+- url: /i/tanks/oxide-zoas.jpg
+  title: Another descendent from my old tank, Oxide zoanthids originally from Cultivated Reef.
+- url: /i/tanks/pink-zipper-zoas.jpg
+  title: I’m a sucker for pretty pink corals, so naturally I had to buy this mini-colony of Pink Zipper zoanthids.
+- url: /i/tanks/rainbow-incinerator-zoas.jpg
+  title: These Rainbow Incinerator zoas blew me away at the Zoanthids.com booth at a reefing tradeshow, so naturally they had to come home with me. They’re growing strong too.
+- url: /i/tanks/rasta-zoas.jpg
+  title: Rastas are one of my favorite zoas. Just look at that green!
 ---
 
 <h2 class="subsection__header">Livestock</h2>
