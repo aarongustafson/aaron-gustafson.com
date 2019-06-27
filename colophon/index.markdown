@@ -19,7 +19,7 @@ In terms of Jekyll/Octopress plug-ins, I use [Category Generator](https://github
 
 Typography-wise, I am using [Prenton](https://typekit.com/fonts/prenton) by [BluHead Studio](http://new.myfonts.com/foundry/BluHead_Studio/) for body copy. Headlines are set in [Quatro Slab](https://typekit.com/fonts/quatro-slab) by [p.s.type](http://cargocollective.com/pstype). Inline code is set in [Inconsolata](https://typekit.com/fonts/inconsolata) by [Raph Levien](http://www.levien.com/). Custom fonts are served by [Typekit](https://typekit.com).
 
-Most of the icons used on the site are from [the Noun Project]():
+Most of the icons used on the site are from [the Noun Project](https://thenounproject.com/):
 
 <ul class="grid">
 <li>{% svg /i/icons/essay.svg width=16 %} by <a href="https://thenounproject.com/krivoydesigner">Sergey Krivoy</a></li>
