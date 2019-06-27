@@ -5,7 +5,9 @@
   
   polyfill();
 
-  var $triggering_element,
+  var built = false,
+      enabled = false,
+      $triggering_element,
       $lightbox = document.getElementById("lightbox"),
       $img = $lightbox.querySelector(".lightbox__image"),
       $title = $lightbox.querySelector(".lightbox__caption"),
@@ -21,12 +23,34 @@
       img_prefix = "https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_1080/";
 
 
-  setupGallery();
+  window.watchResize(function(){
+    var MQ = window.getActiveMQ(),
+        show = ( MQ == "medium" || MQ == "full" );
+    if ( show ) {
+      if ( ! built )
+      {
+        setupGallery();
+        built = true;
+      }
 
-  // event listeners
-  $prev.addEventListener("click", prev, false);
-  $next.addEventListener("click", next, false);
-  $close.addEventListener("click", close, false);
+      // event listeners
+      $prev.addEventListener("click", prev, false);
+      $next.addEventListener("click", next, false);
+      $close.addEventListener("click", close, false);
+
+      enabled = true;
+    }
+    else if ( ! show && enabled )
+    {
+      // event listeners
+      $prev.removeEventListener("click", prev, false);
+      $next.removeEventListener("click", next, false);
+      $close.removeEventListener("click", close, false);
+
+      enabled = false;
+    }
+  });
+  
 
   function setupGallery()
   {
@@ -85,10 +109,12 @@
   }
   function open( e )
   {
+    if ( ! enabled ) { return; }
+
     e.preventDefault();
     $triggering_element = e.target;
     current_position = $triggering_element.closest( item_selector ).dataset.lightboxIndex;
-    console.log(current_position);
+    
     fadeOut(function(){
       updateLightbox();
       $lightbox.showModal();
