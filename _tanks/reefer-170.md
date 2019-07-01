@@ -109,6 +109,7 @@ gallery:
   <li>Bali Green Slimer (<i class="binomial">Acropora yongei</i>)</li>
   <li>ORA Cali Tort (<i class="binomial">Acropora tortuosa</i>)</li>
   <li>ORA Oregon Tort (<i class="binomial">Acropora tortuosa</i>)</li>
+  <li>Pro Corals (PC) Rainbow (<i class="binomial">Acropora convexa</i>)</li>
   <li>Tyree Pink Lemonade (<i class="species">Acropora spp.</i>)</li>
   <li>Tyree Red Dragon (<i class="binomial">Acropora wallindii</i>)</li>
   <li>Tyree Tierra del Fuego (<i class="binomial">Acropora anthocercis</i>)</li>
