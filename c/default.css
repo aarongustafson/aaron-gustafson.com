@@ -684,6 +684,7 @@ dl dd {
   margin-top: 0;
   padding-left: 0;
   -webkit-column-break-inside: avoid;
+     -moz-column-break-inside: avoid;
           break-inside: avoid;
 }
 
@@ -1563,6 +1564,7 @@ Blog Entry
   font-size: 18px;
   font-size: 1.125rem;
   -webkit-column-count: 1;
+     -moz-column-count: 1;
           column-count: 1;
   margin-top: 0;
   position: absolute;
@@ -1576,13 +1578,16 @@ Blog Entry
     text-shadow: -1px -1px 0 #fffcf4, 1px -1px 0 #fffcf4, -1px 1px 0 #fffcf4, 1px 1px 0 #fffcf4;
   }
 }
-@supports ((-webkit-column-count: 2) or (column-count: 2)) or (-moz-column-count: 2) {
+@supports ((-moz-column-count: 2) or (column-count: 2)) or (-moz-column-count: 2) {
   .entry__meta {
     -webkit-column-count: 2;
+       -moz-column-count: 2;
             column-count: 2;
     -webkit-column-gap: 22px;
+       -moz-column-gap: 22px;
             column-gap: 22px;
     -webkit-column-gap: 1.375rem;
+       -moz-column-gap: 1.375rem;
             column-gap: 1.375rem;
   }
   .entry__meta dd + dt {

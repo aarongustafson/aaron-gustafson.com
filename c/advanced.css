@@ -792,9 +792,10 @@ Blog Entry
     margin-left: -110px;
   }
 
-  @supports ((-webkit-column-count: 2) or (column-count: 2)) or (-moz-column-count: 2) {
+  @supports ((-moz-column-count: 2) or (column-count: 2)) or (-moz-column-count: 2) {
     .entry__meta {
       -webkit-column-count: 1;
+         -moz-column-count: 1;
               column-count: 1;
     }
     .entry__meta dd + dt {
