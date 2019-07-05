@@ -14,7 +14,7 @@ gallery:
 - url: /i/tanks/devils-armor-zoas.jpg
   title: These Devil’s Armor zoanthids have always beena  great grower for me. These came from my old tank.
 - url: /i/tanks/dragon-soul-favia.jpg
-  title: A small piece of my old Dragon Soul Favia from Cultivated Reef.
+  title: A small piece of my old Dragon Soul Goniastrea from Cultivated Reef.
 - url: /i/tanks/fruit-loop-zoas.jpg
   title: Originally sold to me as Emeralds on Fire, these are actually Fruit Loop zoanthids.
 - url: /i/tanks/german-blue-digitata.jpg
@@ -121,12 +121,15 @@ gallery:
   </ul></dd>
   <dt>Favia</dt>
   <dd><ul>
-  <li><a href="#i-tanks-dragon-soul-favia-jpg">Dragon Soul</a></li>
   <li>GI Joe</li>
   </ul></dd>
   <dt>Fungia</dt>
   <dd><ul>
   <li><a href="#i-tanks-sunset-plate-jpg">Sunset Plate (<i class="binomial">Fungia repanda</i>)</a></li>
+  </ul></dd>
+  <dt>Goniastrea</dt>
+  <dd><ul>
+  <li><a href="#i-tanks-dragon-soul-favia-jpg">Dragon Soul (<i class="binomial">Goniastrea palauensis</i>)</a></li>
   </ul></dd>
   <dt>Goniopora</dt>
   <dd><ul>
