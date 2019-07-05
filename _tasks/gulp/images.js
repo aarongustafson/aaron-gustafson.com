@@ -13,11 +13,10 @@ gulp.task("images", function() {
     // Publish
     .pipe(gulp.dest(destination));
 
-  gulp.src("./_images/**/*.{jpg,png}")
-    .pipe(changed(destination)) // Ignore unchanged files
-    .pipe(webp())
-    // Publish
-    .pipe(gulp.dest(destination));
+  return gulp.src("./_images/**/*.{jpg,png}")
+          .pipe(changed(destination)) // Ignore unchanged files
+          .pipe(webp())
+          // Publish
+          .pipe(gulp.dest(destination));
 
-  return true;
 });
