@@ -72,7 +72,7 @@ sitemap: false
               <li class="fields__group fields__group--text">
                 <label for="p_tags">How would you tag this?</label>
                 <input id="p_tags" list="tags">
-                <datalist>
+                <datalist id="tags">
                   {% for tag in site.data.tags %}
                     <option>{{ tag }}</option>
                   {% endfor %}
