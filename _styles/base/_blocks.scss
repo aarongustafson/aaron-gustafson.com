@@ -97,3 +97,8 @@ dialog + .backdrop {
     widows: 3;
   }
 }
+
+// remove junk added by extensions
+body > script:last-of-type ~ * {
+  margin: 0;
+}

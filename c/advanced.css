@@ -367,6 +367,10 @@ dialog + .backdrop {
     padding: 0 4.125rem;
   }
 }
+body > script:last-of-type ~ * {
+  margin: 0;
+}
+
 /*------------------------------------*\
 Lists
 \*------------------------------------*/

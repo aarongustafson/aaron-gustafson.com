@@ -59,4 +59,9 @@
         @include breakup-placeholder( hidden );
     }
 
+    // :target
+    :target {
+      background-color: yellow;
+      color: black;
+    }
 }

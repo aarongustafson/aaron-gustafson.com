@@ -645,6 +645,10 @@ dialog + .backdrop {
   background: rgba(44, 40, 37, 0.4);
 }
 
+body > script:last-of-type ~ * {
+  margin: 0;
+}
+
 /*------------------------------------*\
 Lists
 \*------------------------------------*/
@@ -817,6 +821,11 @@ sup {
 
 time {
   white-space: nowrap;
+}
+
+:target {
+  background-color: yellow;
+  color: black;
 }
 
 /*------------------------------------*\
@@ -2483,6 +2492,10 @@ dialog + .backdrop {
     widows: 3;
   }
 }
+body > script:last-of-type ~ * {
+  margin: 0;
+}
+
 /*------------------------------------*\
 Lists
 \*------------------------------------*/
