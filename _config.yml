@@ -62,6 +62,7 @@ exclude:
 include:
   # Netlify
   - _headers
+  - .htaccess
 
 # Project Structure
 destination: _site
