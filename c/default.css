@@ -2033,8 +2033,14 @@ html.wf-active .promo a:active {
   grid-template-rows: 200px 1fr;
   height: 100%;
 }
+.listing--grid .book .listing__item__title a:hover, .listing--grid .book .listing__item__title a:focus {
+  border-bottom: 0;
+}
 .book__cover {
   grid-area: picture;
+  align-self: center;
+  justify-self: center;
+  margin: 0;
 }
 .book__cover__image {
   max-height: 200px;
