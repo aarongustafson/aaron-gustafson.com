@@ -566,7 +566,7 @@
   // Register the service worker
   if ( "serviceWorker" in navigator )
   {
-    window.sw_version = "v2:";
+    window.sw_version = "v3:";
     navigator.serviceWorker.register( "/serviceworker.min.js" );
 
     if ( navigator.serviceWorker.controller )
