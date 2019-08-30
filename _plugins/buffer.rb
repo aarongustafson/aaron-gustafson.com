@@ -97,6 +97,8 @@ module Jekyll
 
           if url and ! buffered.include? url
 
+            success = false
+
             excerpt = data['description'] || data['excerpt'].to_s
             # Convert to HTML
             if defined?  site.find_converter_instance
@@ -132,7 +134,7 @@ module Jekyll
               twitter_data['text'] = "#{twitter_text} #{url}"
               twitter_data['profile_ids[]'] << twitter
 
-              post_to_buffer( twitter_data )
+              success = post_to_buffer( twitter_data )
             end
 
             # Facebook & LinkedIn
@@ -144,7 +146,7 @@ module Jekyll
                 facebook_data['text'] << " #{url}"
                 facebook_data['profile_ids[]'] << facebook
 
-                post_to_buffer( facebook_data )
+                success = post_to_buffer( facebook_data )
               else
                 profile_ids << facebook
               end
@@ -157,7 +159,7 @@ module Jekyll
                 linkedin_data['text'] << " #{url}"
                 linkedin_data['profile_ids[]'] << linkedin
 
-                post_to_buffer( linkedin_data )
+                success = post_to_buffer( linkedin_data )
               else
                 profile_ids << linkedin
               end
@@ -166,15 +168,15 @@ module Jekyll
             # Both Facebook & LinkedIn
             if profile_ids.length > 0
               payload['profile_ids[]'] = profile_ids
-              post_to_buffer( payload )
+              success = post_to_buffer( payload )
             end
 
-            buffered << url
+            buffered << url if success
 
           end
 
         end
-        
+
         # Save it back
         File.open(buffered_file, 'w') { |f| YAML.dump(buffered, f) }
 
@@ -182,7 +184,7 @@ module Jekyll
     end
 
     def post_to_buffer( payload )
-      
+
       # Idea
       # puts "curl --data-urlencode 'text=#{twitter_text}' --data 'media[link]=#{url}' --data 'profile_ids[]=#{twitter}' #{buffer_url}"
       buffer_url = URI.parse('https://api.bufferapp.com/1/updates/create.json')
@@ -195,8 +197,10 @@ module Jekyll
 
       if response.code == '200'
         puts "Buffered '#{payload['text']}'"
+        true
       else
         warn("Buffered '#{payload['text']}' & Buffer responded #{response.body}")
+        false
       end
 
     end
@@ -215,11 +219,11 @@ module Jekyll
       }.join(sep)
       request.content_type = 'application/x-www-form-urlencoded'
     end
-    
+
     def urlencode(str)
       URI::encode(str, '&')
     end
 
   end
-  
+
 end
