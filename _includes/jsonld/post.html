@@ -42,5 +42,5 @@
       "@id": "{{ include.link }}",
       "dateModified": "{{ site.time | date:'%Y-%m-%d' }}"
    },
-   "articleBody": "{{ include.content | strip_html | xml_escape | normalize_whitepace | strip_newlines | strip }}"
+   "articleBody": "{{ include.content | json }}"
 }
