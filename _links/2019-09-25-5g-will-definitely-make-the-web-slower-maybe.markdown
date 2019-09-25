@@ -1,7 +1,7 @@
 ---
 title: "5G Will Definitely Make the Web Slower, Maybe"
 date: 2019-09-25T21:56:56.957Z
-tags: ["perform"]
+tags: ["performance", "JavaScript", "web development"]
 ref_url: https://www.filamentgroup.com/lab/5g/
 in_reply_to: https://www.filamentgroup.com/lab/5g/
 twitter_text: "The bigger the pipe, the more we’ll shove into it."
