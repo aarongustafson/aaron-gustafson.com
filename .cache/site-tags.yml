@@ -130,6 +130,8 @@ JavaScript:
 - 2018-10-03-getting-started-with-the-prettier-plugin-for-eslint.markdown
 - 2018-10-29-smart-bundling-legacy-code-browsers.markdown
 - 2019-08-01-the-web-without-the-web.markdown
+- 2019-09-25-an-html-attribute-potentially-worth-4-4m-to-chipotle.markdown
+- 2019-09-25-5g-will-definitely-make-the-web-slower-maybe.markdown
 web development:
 - 2014-09-13-a-fundamental-disconnect.markdown
 - 2014-09-19-missed-connections.markdown
@@ -147,6 +149,8 @@ web development:
 - 2018-02-27-working-towards-better-naming.markdown
 - 2018-02-27-collecting-user-data-while-protecting-user-privacy.markdown
 - 2019-08-29-the-weight-of-the-wwworld-is-up-to-us-by-patty-toland.markdown
+- 2019-09-25-an-html-attribute-potentially-worth-4-4m-to-chipotle.markdown
+- 2019-09-25-5g-will-definitely-make-the-web-slower-maybe.markdown
 software development:
 - 2014-09-13-a-fundamental-disconnect.markdown
 - 2014-09-19-missed-connections.markdown
@@ -262,6 +266,7 @@ accessibility:
 - 2018-10-29-website_accessibility_through_responsive_web_design.markdown
 - 2019-04-27-why-everyone-is-watching-tv-with-closed-captioning-on-these-days.markdown
 - 2019-08-30-sometimes-inclusion-is-going-to-be-a-bit-embarrassing.markdown
+- 2019-09-25-an-html-element-potentially-worth-18m-to-indiegogo-campaigns-adrian-roselli.markdown
 WAI-ARIA:
 - 2014-11-05-aria-quicktip-labelledby-vs-describedby.markdown
 user experience:
@@ -391,6 +396,7 @@ performance:
 - 2019-04-08-native-image-lazy-loading-for-the-web-.markdown
 - 2019-08-29--how-web-content-can-affect-power-usage.markdown
 - 2019-08-29-the-weight-of-the-wwworld-is-up-to-us-by-patty-toland.markdown
+- 2019-09-25-5g-will-definitely-make-the-web-slower-maybe.markdown
 forms:
 - 2015-02-23-consider-how-your-forms-read.markdown
 - 2015-05-05-slides-from-my-talk-at-number-msedgesummit.markdown
@@ -448,6 +454,8 @@ HTML:
 - 2018-10-19-the-dialog-element.markdown
 - 2018-10-29-the-importance-of-heading-levels-for-assistive-technology--cms-31753.markdown
 - 2019-04-08-native-image-lazy-loading-for-the-web-.markdown
+- 2019-09-25-an-html-attribute-potentially-worth-4-4m-to-chipotle.markdown
+- 2019-09-25-an-html-element-potentially-worth-18m-to-indiegogo-campaigns-adrian-roselli.markdown
 URLs:
 - 2015-05-18-url-inception.markdown
 planning:
@@ -562,6 +570,8 @@ android:
 - 2017-08-25-android-oreo-takes-a-bite-out-of-progressive-web-apps-30b7e854648f.markdown
 web forms:
 - 2017-08-25-offline-posts-with-progressive-web-apps-fc2dc4ad895.markdown
+- 2019-09-25-an-html-attribute-potentially-worth-4-4m-to-chipotle.markdown
+- 2019-09-25-an-html-element-potentially-worth-18m-to-indiegogo-campaigns-adrian-roselli.markdown
 animation:
 - 2017-08-25-integrating-animation-into-a-design-system.markdown
 - 2017-08-25-svg-can-do-that.markdown
