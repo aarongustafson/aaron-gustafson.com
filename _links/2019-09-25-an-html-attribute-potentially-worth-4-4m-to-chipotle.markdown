@@ -1,7 +1,7 @@
 ---
 title: "An HTML attribute potentially worth $4.4M to Chipotle"
 date: 2019-09-25T21:48:57.571Z
-tags: ["HTML", "JavaScript", "web development"]
+tags: ["HTML", "JavaScript", "web development", "web forms"]
 ref_url: https://cloudfour.com/thinks/an-html-attribute-potentially-worth-4-4m-to-chipotle/
 in_reply_to: https://cloudfour.com/thinks/an-html-attribute-potentially-worth-4-4m-to-chipotle/
 twitter_text: "Excellent forensic investigation from Jason. Reminds me of the kind of stuff we used to do over on @StandardsSherpa."
