@@ -42,5 +42,5 @@
       "@id": "{{ include.link }}",
       "dateModified": "{{ site.time | date:'%Y-%m-%d' }}"
    },
-   "articleBody": "{{ include.content | json }}"
+   "articleBody": "{{ include.content | xml_escape | json }}"
 }
