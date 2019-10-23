@@ -13,14 +13,16 @@ gallery:
   title: WWC Burning Leptastrea
 - url: /i/tanks/devils-armor-zoas.jpg
   title: These Devil’s Armor zoanthids have always beena  great grower for me. These came from my old tank.
-- url: /i/tanks/dragon-soul-favia.jpg
+- url: /i/tanks/dragon-soul-goniastrea.jpg
   title: A small piece of my old Dragon Soul Goniastrea from Cultivated Reef.
 - url: /i/tanks/fruit-loop-zoas.jpg
   title: Originally sold to me as Emeralds on Fire, these are actually Fruit Loop zoanthids.
 - url: /i/tanks/german-blue-digitata.jpg
   title: I love branching montipora and this German Blue Digitata has a particularly nice branching pattern.
-- url: /i/tanks/hallie-berry-zoas.jpg
-  title: These WWC Hallie Berry zoas were among the first residents of this tank and they’ve really taken off.
+- url: /i/tanks/german-blue-digitata-2.jpg
+  title: Here’s a look at the whole colony of German Blue Digitata.
+- url: /i/tanks/halle-berry-zoas.jpg
+  title: These WWC Halle Berry zoas were among the first residents of this tank and they’ve really taken off.
 - url: /i/tanks/john-deere-leptastrea.jpg
   title: I originally got this colony from World Wide Corals on a trip to Orlando back in 2014.
 - url: /i/tanks/lemon-lime-clove.jpg
@@ -33,6 +35,8 @@ gallery:
   title: I love this Micromussa lord because it is pretty conservative on the surface (tan and lavender), but underneath it has a glowing green mouth. Some of the polyps even have bi-color mouths (neon purple and green).
 - url: /i/tanks/micromussa-lord-rainbow.jpg
   title: This photo doesn’t really capture all the colors that come out when this Micromussa lord is feeding. Greens, yellows, oranges, and reds… it’s beautiful.
+- url: /i/tanks/micromussa-lord-red.jpg
+  title: This Micromussa lord is predominantly a rusty orange red with a steel blue rim and it’s mounths are hot pink. This particular colony has massive polyp extension. It’s like nothing ive seen in other colonies.
 - url: /i/tanks/oxide-zoas.jpg
   title: Another descendent from my old tank, Oxide zoanthids originally from Cultivated Reef.
 - url: /i/tanks/pink-zipper-zoas.jpg
@@ -41,6 +45,8 @@ gallery:
   title: These Rainbow Incinerator zoas blew me away at the Zoanthids.com booth at a reefing tradeshow, so naturally they had to come home with me. They’re growing strong too.
 - url: /i/tanks/rasta-zoas.jpg
   title: Rastas are one of my favorite zoas. Just look at that green!
+- url: /i/tanks/coco-worm.jpg
+  title: I’m fascinated by tube worms. This red & white coco worm is particularly beautiful.
 ---
 
 ## Livestock
@@ -48,24 +54,30 @@ gallery:
 
 ### Fish
 
-* Yellow Coris Wrasse (<i class="binomial">Halichoeres chrysus</i>)
+* Bluespotted Watchman Goby (<i class="binomial">Cryptocentrus pavoninoides</i>)
 * Tail Spot Blenny (<i class="binomial">Ecsenius stigmatura</i>)
+<!--
+* Yellow Coris Wrasse (<i class="binomial">Halichoeres chrysus</i>)
 * Royal Gramma Basslet (<i class="binomial">Gramma loreto</i>)
 * Carpenter’s Flasher Wrasse (<i class="binomial">Paracheilinus carpenteri</i>, male)
 * Yasha White Ray Shrimp Goby (<i class="binomial">Stonogobiops yasha</i>, male)
+-->
 
 ### Inverts
 
 * Blood Red Fire Shrimp (<i class="binomial">Lysmata debelius</i>)
-* Tiger Snapping Shrimp (<i class="binomial">Alpheus bellulus</i>)
-* Tiger Fighting Conch (<i class="binomial">Strombus spp.</i>)
-* Florida Fighting Conch (<i class="binomial">Strombus spp.</i>)
+* Tiger Pistol Shrimp (<i class="binomial">Alpheus bellulus</i>)
 * Halloween Hermit Crab (<i class="binomial">Ciliopagurus strigatus</i>)
 * Electric Blue Hermit Crab (<i class="binomial">Calcinus elegans</i>)
-* Porcelain Crab (<i class="binomial">Petrolisthes galathinus</i>)
+* Hard Tube Coco Worm (<i class="binomial">Protula bispiralis</i>)
 * Assorted worms, pods, hermits, snails & such from [Indo-Pacific Sea Farms](https://ipsf.com/)
 * Assorted snails (trochus, nassarius, strombus)
 * Additional Clean-up Crew (zigzag periwinkles, dwarf planaxis, etc.) from [ReefCleaners](https://www.reefcleaners.org/)
+<!--
+* Tiger Fighting Conch (<i class="binomial">Strombus spp.</i>)
+* Florida Fighting Conch (<i class="binomial">Strombus spp.</i>)
+* Porcelain Crab (<i class="binomial">Petrolisthes galathinus</i>)
+-->
 
 ### Soft Corals
 
@@ -84,14 +96,12 @@ gallery:
   <li><a href="#i-tanks-pink-zipper-zoas-jpg">Pink Zipper</a></li>
   <li><a href="#i-tanks-rainbow-incinerator-zoas-jpg">Rainbow Incinerator</a></li>
   <li><a href="#i-tanks-rasta-zoas-jpg">Rasta</a></li>
-  <li>Red People Eater</li>
-  <li>Sakura Sunrise</li>
   <li>Tubb’s Blue</li>
   <li>Ultra Chaos</li>
   <li>Unnamed Green</li>
-  <li>Unnamed Yellow & Green</li>
+  <li>King Midas</li>
   <li>Vampire in Drag</li>
-  <li><a href="#i-tanks-hallie-berry-zoas-jpg">WWC Hallie Berry</a></li>
+  <li><a href="#i-tanks-halle-berry-zoas-jpg">WWC Halle Berry</a></li>
   <li>WWC Now & Later Gator</li>
   </ul></dd>
   <dt>Other</dt>
@@ -106,6 +116,7 @@ gallery:
 <dl class="tank__corals" id="corals">
   <dt>Acropora</dt>
   <dd><ul>
+  <li>ASD Rainbow Millepora (<i class="binomial">Acropora millepora</i>)</li>
   <li>Bali Green Slimer (<i class="binomial">Acropora yongei</i>)</li>
   <li>ORA Cali Tort (<i class="binomial">Acropora tortuosa</i>)</li>
   <li>ORA Oregon Tort (<i class="binomial">Acropora tortuosa</i>)</li>
@@ -113,15 +124,12 @@ gallery:
   <li>Tyree Pink Lemonade (<i class="species">Acropora spp.</i>)</li>
   <li>Tyree Red Dragon (<i class="binomial">Acropora wallindii</i>)</li>
   <li>Tyree Tierra del Fuego (<i class="binomial">Acropora anthocercis</i>)</li>
+  <li>Walt Disney (<i class="binomial">Acropora tenuis</i>)</li>
   </ul></dd>
   <dt>Blastomussa</dt>
   <dd><ul>
   <li><a href="#i-tanks-blastomussa-merletti-jpg">Red, yellow & violet (<i class="binomial">Blastomussa merletti</i>)</a></li>
   <li>Superman (<i class="binomial">Blastomussa merletti</i>)</li>
-  </ul></dd>
-  <dt>Favia</dt>
-  <dd><ul>
-  <li>GI Joe</li>
   </ul></dd>
   <dt>Fungia</dt>
   <dd><ul>
@@ -129,12 +137,12 @@ gallery:
   </ul></dd>
   <dt>Goniastrea</dt>
   <dd><ul>
-  <li><a href="#i-tanks-dragon-soul-favia-jpg">Dragon Soul (<i class="binomial">Goniastrea palauensis</i>)</a></li>
+  <li><a href="#i-tanks-dragon-soul-goniastrea-jpg">Dragon Soul (<i class="binomial">Goniastrea palauensis</i>)</a></li>
   </ul></dd>
-  <dt>Goniopora</dt>
+  <!--dt>Goniopora</dt>
   <dd><ul>
   <li>Short-tentacled red with yellow skirt</li>
-  </ul></dd>
+  </ul></dd-->
   <dt>Leptastrea</dt>
   <dd><ul>
   <li><a href="#i-tanks-john-deere-leptastrea-jpg">Jason Fox John Deere Leptastrea</a></li>
