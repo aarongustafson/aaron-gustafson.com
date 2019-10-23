@@ -1,7 +1,7 @@
 ---
 title: "An Introductory Guide to Understanding Cognitive Disabilities"
 date: 2019-10-23T17:28:42.664Z
-tags: ["access"]
+tags: ["accessibility"]
 ref_url: https://www.deque.com/blog/an-introductory-guide-to-understanding-cognitive-disabilities/
 in_reply_to: https://www.deque.com/blog/an-introductory-guide-to-understanding-cognitive-disabilities/
 ref_source: "Deque"
