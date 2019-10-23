@@ -74,6 +74,7 @@ web design:
 - 2018-03-02-your-interactive-makes-me-sick.markdown
 - 2018-10-29-font-style-matcher.markdown
 - 2019-04-12-nothing-fails-like-success.markdown
+- 2019-10-23-the-world-wide-work.markdown
 this site:
 - 2014-07-07-a-grand-experiment.markdown
 - 2014-12-16-indecisiveness-and-urls.markdown
@@ -111,6 +112,7 @@ design:
 - 2018-07-03-css-grid-responsive-layouts-and-components-eee1badd5a2f.markdown
 native:
 - 2014-07-17-native-vs-stylable-tug-of-war.markdown
+- 2019-10-23-myth-busting-pwas.markdown
 JavaScript:
 - 2014-09-08-the-network-effect.markdown
 - 2014-09-13-a-fundamental-disconnect.markdown
@@ -217,6 +219,7 @@ CSS:
 - 2018-09-10-links-list-for-print-styles.markdown
 - 2018-09-10-css-shapes.markdown
 - 2018-09-14-introducing-trashy-css.markdown
+- 2019-10-23-the-wondrous-world-of-css-counters.markdown
 W3C:
 - 2014-11-04-css-variables-are-a-bad-idea.markdown
 - 2019-05-06-im-running-for-the-w3c-advisory-board.markdown
@@ -269,6 +272,7 @@ accessibility:
 - 2019-04-27-why-everyone-is-watching-tv-with-closed-captioning-on-these-days.markdown
 - 2019-08-30-sometimes-inclusion-is-going-to-be-a-bit-embarrassing.markdown
 - 2019-09-25-an-html-element-potentially-worth-18m-to-indiegogo-campaigns-adrian-roselli.markdown
+- 2019-10-23-an-introductory-guide-to-understanding-cognitive-disabilities.markdown
 WAI-ARIA:
 - 2014-11-05-aria-quicktip-labelledby-vs-describedby.markdown
 user experience:
@@ -445,6 +449,7 @@ industry:
 - 2015-10-28-excellent-speakers-for-your-next-tech-event.markdown
 - 2019-04-12-nothing-fails-like-success.markdown
 - 2019-05-15-when-engineers-become-whistle-blowers.markdown
+- 2019-10-23-the-world-wide-work.markdown
 HTML:
 - 2015-05-05-slides-from-my-talk-at-number-msedgesummit.markdown
 - 2015-11-11-labeled-with-love.markdown
@@ -531,6 +536,7 @@ progressive web apps:
 - 2017-05-03-PWAs-and-desktop.markdown
 - 2018-10-19-even-need-app-best-user-experience-asks-ajay-datta.markdown
 - 2019-04-26-my-own-personal-pwa.markdown
+- 2019-10-23-myth-busting-pwas.markdown
 windows:
 - 2016-11-02-mac-like-special-characters-in-windows.markdown
 - 2017-05-24-progressive-web-apps-and-the-windows-ecosystem.markdown
@@ -682,3 +688,5 @@ influences:
 - 2019-02-28-angie-turner-king-invested-her-energy-in-others.markdown
 reef keeping:
 - reefer-170.md
+social justice:
+- 2019-10-23-the-world-wide-work.markdown

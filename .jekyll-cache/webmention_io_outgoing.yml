@@ -3552,3 +3552,16 @@ https://www.aaron-gustafson.com/notebook/links/my-talk-at-microsoft/:
     location: https://webmention.io/aaron-gustafson.com/webmention/27jUj3O9L_nFX3v_fvVa
     source: https://www.aaron-gustafson.com/notebook/links/my-talk-at-microsoft/
     target: https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/
+https://www.aaron-gustafson.com/notebook/links/myth-busting-pwas/:
+  https://www.davrous.com/2019/10/18/myth-busting-pwas-the-new-edge-edition/: false
+https://www.aaron-gustafson.com/notebook/links/the-world-wide-work/:
+  https://ethanmarcotte.com/wrote/the-world-wide-work/:
+    status: queued
+    summary: Webmention was queued for processing
+    location: https://webmention.io/ethanmarcotte.com/webmention/JInDp7ZVw4O1JsKTdQHW
+    source: https://www.aaron-gustafson.com/notebook/links/the-world-wide-work/
+    target: https://ethanmarcotte.com/wrote/the-world-wide-work/
+https://www.aaron-gustafson.com/notebook/links/an-introductory-guide-to-understanding-cognitive-disabilities/:
+  https://www.deque.com/blog/an-introductory-guide-to-understanding-cognitive-disabilities/: false
+https://www.aaron-gustafson.com/notebook/links/the-wondrous-world-of-css-counters/:
+  https://www.chenhuijing.com/blog/the-wondrous-world-of-css-counters/#%F0%9F%91%BE: false
