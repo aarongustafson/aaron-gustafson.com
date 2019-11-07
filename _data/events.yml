@@ -1,3 +1,21 @@
+- id: 141
+  title: An Event Apart
+  date: 2019-10-05 00:09:00 -0000
+  location: "Orlando, FL USA"
+  url: https://aneventapart.com/event/orlando-2020
+
+- id: 140
+  title: An Event Apart
+  date: 2019-05-11 00:09:00 -0000
+  location: "Seattle, WA USA"
+  url: https://aneventapart.com/event/seattle-2020
+
+- id: 139
+  title: An Event Apart
+  date: 2020-04-13 00:09:00 -0000
+  location: "Washington, DC USA"
+  url: https://aneventapart.com/event/washington-dc-2020
+
 - id: 138
   title: Microsoft Build
   date: 2019-05-06 00:09:00 -0000
@@ -12,7 +30,7 @@
 
 - id: 136
   title: Beyond Tellerrand
-  date: 2019-11-04 00:09:00 -0000
+  date: 2019-11-14 00:09:00 -0000
   location: "Berlin, Germany"
   url: https://beyondtellerrand.com/events/berlin-2019
 
