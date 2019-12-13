@@ -56,28 +56,20 @@ gallery:
 
 * Bluespotted Watchman Goby (<i class="binomial">Cryptocentrus pavoninoides</i>)
 * Tail Spot Blenny (<i class="binomial">Ecsenius stigmatura</i>)
-<!--
-* Yellow Coris Wrasse (<i class="binomial">Halichoeres chrysus</i>)
-* Royal Gramma Basslet (<i class="binomial">Gramma loreto</i>)
-* Carpenter’s Flasher Wrasse (<i class="binomial">Paracheilinus carpenteri</i>, male)
-* Yasha White Ray Shrimp Goby (<i class="binomial">Stonogobiops yasha</i>, male)
--->
 
 ### Inverts
 
 * Blood Red Fire Shrimp (<i class="binomial">Lysmata debelius</i>)
-* Tiger Pistol Shrimp (<i class="binomial">Alpheus bellulus</i>)
+* Emerald Crab (<i class="binomial">Mithraculus sculptus</i>)
 * Halloween Hermit Crab (<i class="binomial">Ciliopagurus strigatus</i>)
 * Electric Blue Hermit Crab (<i class="binomial">Calcinus elegans</i>)
-* Hard Tube Coco Worm (<i class="binomial">Protula bispiralis</i>)
-* Assorted worms, pods, hermits, snails & such from [Indo-Pacific Sea Farms](https://ipsf.com/)
+* Scarlet Hermit Crab (<i class="binomial">Paguristes cadenati</i>)
+* Polka Dot Hermit Crab (<i class="binomial">Phimochirus operculatus</i>)
+* Fighting Conch (<i class="binomial">Strombus spp.</i>)
+* Money Cowrie (<i class="binomial">Monetaria moneta</i>)
 * Assorted snails (trochus, nassarius, strombus)
+* Assorted worms, pods, hermits, snails & such from [Indo-Pacific Sea Farms](https://ipsf.com/)
 * Additional Clean-up Crew (zigzag periwinkles, dwarf planaxis, etc.) from [ReefCleaners](https://www.reefcleaners.org/)
-<!--
-* Tiger Fighting Conch (<i class="binomial">Strombus spp.</i>)
-* Florida Fighting Conch (<i class="binomial">Strombus spp.</i>)
-* Porcelain Crab (<i class="binomial">Petrolisthes galathinus</i>)
--->
 
 ### Soft Corals
 
@@ -85,12 +77,15 @@ gallery:
   <dt>Zoanthids & Palythoas</dt>
   <dd><ul>
   <li>Belladonna</li>
+  <li>Buttmuncher</li>
   <li>Cryogenic</li>
   <li><a href="#i-tanks-devils-armor-zoas-jpg">Devil’s Armor</a></li>
   <li>Ding Dang People Eater</li>
   <li>Eagle Eye</li>
   <li><a href="#i-tanks-fruit-loop-zoas-jpg">Fruit Loop</a></li>
   <li>Nirvana</li>
+  <li>Mary Jane</li>
+  <li>Miami Vice</li>
   <li><a href="#i-tanks-oxide-zoas-jpg">Oxide</a></li>
   <li>Pink Krakatoa</li>
   <li><a href="#i-tanks-pink-zipper-zoas-jpg">Pink Zipper</a></li>
@@ -108,6 +103,7 @@ gallery:
   <dd><ul>
   <li><a href="#i-tanks-lemon-lime-clove-jpg">Lemon-lime Clove Polyps</a></li>
   <li>Golden <i class="binomial">Ricordea yuma</i></li>
+  <li>Rainbow <i class="binomial">Ricordea yuma</i></li>
   </ul></dd>
 </dl>
 
@@ -121,8 +117,8 @@ gallery:
   <li>ORA Cali Tort (<i class="binomial">Acropora tortuosa</i>)</li>
   <li>ORA Oregon Tort (<i class="binomial">Acropora tortuosa</i>)</li>
   <li>Pro Corals (PC) Rainbow (<i class="binomial">Acropora convexa</i>)</li>
+  <li>Reef Raft (RR) Orange Passion (<i class="binomial">Acropora tenuis</i>)</li>
   <li>Tyree Pink Lemonade (<i class="species">Acropora spp.</i>)</li>
-  <li>Tyree Red Dragon (<i class="binomial">Acropora wallindii</i>)</li>
   <li>Tyree Tierra del Fuego (<i class="binomial">Acropora anthocercis</i>)</li>
   <li>Walt Disney (<i class="binomial">Acropora tenuis</i>)</li>
   </ul></dd>
@@ -139,15 +135,16 @@ gallery:
   <dd><ul>
   <li><a href="#i-tanks-dragon-soul-goniastrea-jpg">Dragon Soul (<i class="binomial">Goniastrea palauensis</i>)</a></li>
   </ul></dd>
-  <!--dt>Goniopora</dt>
+  <dt>Goniopora</dt>
   <dd><ul>
-  <li>Short-tentacled red with yellow skirt</li>
-  </ul></dd-->
+  <li>Short-tentacled, green with purple mouths</li>
+  </ul></dd>
   <dt>Leptastrea</dt>
   <dd><ul>
   <li><a href="#i-tanks-john-deere-leptastrea-jpg">Jason Fox John Deere Leptastrea</a></li>
   <li>Purple Leptastrea</li>
   <li><a href="#i-tanks-blastomussa-merletti-jpg">WWC Burning Leptastrea</a></li>
+  <li>WWC Kermit The Frog Leptastrea</li>
   </ul></dd>
   <dt>Micromussa</dt>
   <dd><ul>
@@ -163,6 +160,7 @@ gallery:
   <li><a href="#i-tanks-german-blue-digitata-jpg">ORA German Blue Digitata (<i class="binomial">Montipora digitata</i>)</a></li>
   <li>ORA Spongedes (<i class="binomial">Montipora spongedes</i>)</li>
   <li>Bubblegum Digitata (<i class="binomial">Montipora digitata</i>)</li>
+  <li>Silver-Blue Digitata (<i class="binomial">Montipora digitata</i>)</li>
   </ul></dd>
   <dt>Miscellaneous</dt>
   <dd><ul>
