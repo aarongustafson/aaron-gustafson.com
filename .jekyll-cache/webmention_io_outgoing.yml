@@ -1672,7 +1672,12 @@ https://www.aaron-gustafson.com/notebook/links/ice-cream-sandwich-support-deprec
 https://www.aaron-gustafson.com/notebook/links/sans-bullshit-sans/:
   http://www.sansbullshitsans.com/: false
 https://www.aaron-gustafson.com/notebook/links/we-can-marry-you-off-wholesale/:
-  https://shkspr.mobi/blog/2015/03/we-can-marry-you-off-wholesale/: false
+  https://shkspr.mobi/blog/2015/03/we-can-marry-you-off-wholesale/:
+    link: https://shkspr.mobi/blog/2015/03/we-can-marry-you-off-wholesale/#comment-138089
+    source: https://www.aaron-gustafson.com/notebook/links/we-can-marry-you-off-wholesale/
+    target: https://shkspr.mobi/blog/2015/03/we-can-marry-you-off-wholesale/
+    code: success
+    message: Webmention was successful
 https://www.aaron-gustafson.com/notebook/links/rlsb-youth-forum-set-a-new-direction-for-tube-travel/:
   https://web.archive.org/web/20180119235810/http://www.rsbc.org.uk/blogs/rlsb-youth-forum-set-a-new-direction-for-tube-travel/: false
 https://www.aaron-gustafson.com/notebook/links/advancing-javascript-without-breaking-the-web/:
@@ -2996,7 +3001,12 @@ https://www.aaron-gustafson.com/notebook/links/i-decided-to-disable-amp-on-my-si
 https://www.aaron-gustafson.com/notebook/links/a-progressive-roadmap-for-your-progressive-web-app/:
   https://cloudfour.com/thinks/a-progressive-roadmap-for-your-progressive-web-app: false
 https://www.aaron-gustafson.com/notebook/links/mapping-in-html-a-proposal-for-a-new-element/:
-  https://shkspr.mobi/blog/2017/08/mapping-in-html-a-proposal-for-a-new-element/: false
+  https://shkspr.mobi/blog/2017/08/mapping-in-html-a-proposal-for-a-new-element/:
+    link: https://shkspr.mobi/blog/2017/08/mapping-in-html-a-proposal-for-a-new-element/#comment-138090
+    source: https://www.aaron-gustafson.com/notebook/links/mapping-in-html-a-proposal-for-a-new-element/
+    target: https://shkspr.mobi/blog/2017/08/mapping-in-html-a-proposal-for-a-new-element/
+    code: success
+    message: Webmention was successful
 https://www.aaron-gustafson.com/notebook/links/ios-11-safari-google-amp-sharing-url-scheme/:
   https://www.theverge.com/2017/8/23/16193584/ios-11-safari-google-amp-sharing-url-scheme: false
   https://twitter.com/cramforce/status/900478709215281152: false
@@ -3567,3 +3577,16 @@ https://www.aaron-gustafson.com/notebook/links/the-wondrous-world-of-css-counter
   https://www.chenhuijing.com/blog/the-wondrous-world-of-css-counters/#%F0%9F%91%BE: false
 https://www.aaron-gustafson.com/notebook/links/inclusive-design-spectrum/:
   https://spectrum.adobe.com/page/inclusive-design/: false
+https://www.aaron-gustafson.com/notebook/apply-for-a-spot-in-my-2020-2021-mentorship/:
+  https://twitter.com/Ace_KYD: false
+  https://twitter.com/thedezzie: false
+  https://twitter.com/marcysutton: false
+  https://twitter.com/oluoluoxenfree: false
+  https://twitter.com/SaraLaughed: false
+  ? https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR5kNztOQ9SxKtJ2cBThcWiFUN1FRVU1FNUpOT0QxMVg3Q09YNVRKV0IzWC4u
+  : false
+  https://www.theguardian.com/commentisfree/2017/dec/27/check-your-privilege-racism-sexism-education-income: false
+  https://twitter.com/intent/tweet?text=Hey+@aarongustafson+I: false
+  https://twitter.com/aarongustafson: false
+  https://www.facebook.com/aaronmgustafson: false
+  https://www.linkedin.com/in/aarongustafson: false
