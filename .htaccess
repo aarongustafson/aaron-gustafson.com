@@ -72,7 +72,7 @@ Header set X-XSS-Protection "1; mode=block"
 Header set X-Content-Type-Options "nosniff"
 <IfDefine LIVE>
   # https://report-uri.io/home/generate
-  Header set Content-Security-Policy "default-src *; script-src 'self' 'unsafe-inline' *.webmention.io platform.twitter.com *.vimeo.com *.vimeocdn.com *.codepen.io *.carbonads.com *.carbonads.net adn.fusionads.net *.typekit.net gist.github.com; style-src * 'unsafe-inline' *.vimeocdn.com; img-src * data: res.cloudinary.com; connect-src 'self' *.imgur.com *.gravatar.com res.cloudinary.com ws://webmention.io:8080 https://api.github.com; child-src 'self' www.youtube.com *.twitter.com *.vimeo.com *.vimeocdn.com codepen.io *.slideshare.net; upgrade-insecure-requests; block-all-mixed-content;"
+  Header set Content-Security-Policy "default-src *; script-src 'self' 'unsafe-inline' webmention.io platform.twitter.com *.vimeo.com *.vimeocdn.com *.codepen.io *.typekit.net gist.github.com; style-src * 'unsafe-inline' *.vimeocdn.com; img-src * data: res.cloudinary.com; connect-src 'self' *.imgur.com *.gravatar.com res.cloudinary.com ws://webmention.io:8080 https://api.github.com; child-src 'self' www.youtube.com *.twitter.com *.vimeo.com *.vimeocdn.com codepen.io *.slideshare.net; upgrade-insecure-requests; block-all-mixed-content;"
   Header set Public-Key-Pins "pin-sha256='1AD97Iz6xlmMrlaim5bZoIhwUr2WAowsI+msDc0op2k='; pin-sha256='4SflGm7MUpml4PWSclDw7OGMJdRk+YcIfi6qJ2iG6zE='; pin-sha256='BFhqRqgHU+b7VQLsM1kZwBu6VVKnLx7QiO2PCLfG1m4='; max-age=10"
   Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
 </IfDefine>
