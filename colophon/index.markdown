@@ -23,7 +23,6 @@ Most of the icons used on the site are from [the Noun Project](https://thenounpr
 
 <ul class="grid">
 <li>{% svg /i/icons/essay.svg width=16 %} by <a href="https://thenounproject.com/krivoydesigner">Sergey Krivoy</a></li>
-<li>{% svg /i/icons/pin.svg width=16 %} by <a href="https://thenounproject.com/krivoydesigner">Sergey Krivoy</a></li>
 </ul>
 
 The full source of this site is [available on Github](https://github.com/aarongustafson/aarongustafson.github.io/tree/source).
