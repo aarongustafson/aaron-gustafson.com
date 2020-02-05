@@ -30,8 +30,6 @@ In addition to Lion Man, <cite>All-Negro Comics</cite> #1 featured, among other 
 
 Comics are still pretty damn white, but I am hopeful things are changing for the better. Incredibly successful franchises like <cite>Black Panther</cite> and <cite>Luke Cage</cite> (a.k.a. Power Man) play a part, as does Miles Morales’ Spiderman. I loved Dwayne McDuffie’s <cite>Damage Control</cite> back in the ’80s and Aaron McGruder’s <cite>Boondocks</cite> in the late ’90s/early ’00s. I’m really excited for the future of the genre though, especially with folks like Eve Ewing (<cite>Champions</cite>, <cite>Ironheart</cite>) getting involved in the medium.
 
-<hr>
-
 ## Further reading
 
 1. ["Orrin C Evans and the story of All Negro Comics" (archived)](https://web.archive.org/web/20090307212906/http://www.tomchristopher.com/?op=home%2FComic+History%2FOrrin+C.+Evans+and+The+Story+of+All+Negro+Comics), <cite>tomchristopher.com</cite>, 2002; first published in <cite>Comic Buyer’s Guide</cite>
