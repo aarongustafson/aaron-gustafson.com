@@ -29,3 +29,11 @@ There is some speculation that, in addition prejudice on the part of the paper s
 In addition to Lion Man, <cite>All-Negro Comics</cite> #1 featured, among other characters, another black protagonist, detective Ace Harlem. And, while there were other comic books aimed at the black community, there were no memorable black heroes in comics until the introduction of Black Panther in <cite>Fantastic Four</cite> #52 (July 1966). In fact, black people in general were pretty much non-existent, even in street scenes in comic books until the 1960s. Spiderman #18, published in November of 1964, was notable for depicting a black policeman!
 
 Comics are still pretty damn white, but I am hopeful things are changing for the better. Incredibly successful franchises like <cite>Black Panther</cite> and <cite>Luke Cage</cite> (a.k.a. Power Man) play a part, as does Miles Morales’ Spiderman. I loved Dwayne McDuffie’s <cite>Damage Control</cite> back in the ’80s and Aaron McGruder’s <cite>Boondocks</cite> in the late ’90s/early ’00s. I’m really excited for the future of the genre though, especially with folks like Eve Ewing (<cite>Champions</cite>, <cite>Ironheart</cite>) getting involved in the medium.
+
+<hr>
+
+## Further reading
+
+1. ["Orrin C Evans and the story of All Negro Comics" (archived)](https://web.archive.org/web/20090307212906/http://www.tomchristopher.com/?op=home%2FComic+History%2FOrrin+C.+Evans+and+The+Story+of+All+Negro+Comics), <cite>tomchristopher.com</cite>, 2002; first published in <cite>Comic Buyer’s Guide</cite>
+2. ["Orrin C Evans: The First Black Comic Book Publisher" (archived)](https://web.archive.org/web/20160306045620/http://www.firstcomicsnews.com/?p=98138), <cite>First Comic News</cite>, 2016
+3. ["The Press: Ace Harlem to the Rescue" (archived)](https://web.archive.org/web/20100424121454/http://www.time.com/time/magazine/article/0%2C9171%2C779181%2C00.html), <cite>Time Magazine</cite>, 1947
