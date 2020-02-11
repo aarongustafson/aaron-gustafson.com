@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jerry Varnado and James Garrett started the first Black Student Union"
-date: 2020-02-10 15:42:07 -0800
+date: 2020-02-09 15:42:07 -0800
 comments: true
 tags: ["Black History", influences]
 description: "Together, they created the first Black Student Union and kicked off a campus movement that demanded schools of higher learning make themselves more welcoming and supportive of their black students."
