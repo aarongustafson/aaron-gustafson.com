@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Black women received patents in 1884 and 1885"
+title: "Two black women received patents… in 1884 and 1885!"
 date: 2020-02-09 16:27:18 -0800
 comments: true
 tags: ["Black History", influences]
