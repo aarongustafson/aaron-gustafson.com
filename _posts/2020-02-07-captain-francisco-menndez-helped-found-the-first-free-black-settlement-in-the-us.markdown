@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Captain Francisco Menéndez helped found the first free black settlement in the U.S."
-date: 2020-02-08 12:58:16 -0800
+date: 2020-02-07 12:58:16 -0800
 comments: true
 tags: ["Black History", influences]
 description: "In 1724, the man who came to be known as Francisco Menéndez escaped his enslavement in South Carolina and sought refuge in Spanish-controlled Florida."
