@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Jane Bolin didn’t let anyone tell her what she couldn’t do"
-date: 2020-02-07 15:38:18 -0800
+date: 2020-02-06 15:38:18 -0800
 comments: true
 tags: ["Black History", influences]
 description: "In so many ways, Jane Bolin was a pioneer. I can’t even begin to imagine what it must have been like to be the “first” so many times."
