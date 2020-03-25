@@ -1,3 +1,15 @@
+- title: "Request with Intent: Caching Strategies in the Age of PWAs"
+  publisher: A List Apart
+  published: 2019-11-21 00:00:00 +0000
+  url: https://alistapart.com/article/request-with-intent-caching-strategies-in-the-age-of-pwas/
+  notes: "Caching media files, especially images, seems like an obvious way to improve performance, but should we? To provide a more performant UX without abusing users’ network connections or hard drives, I put a spin on classic best practices, experiment with media caching strategies, and share smart Cache API tricks."
+
+- title: "From URL to Interactive"
+  publisher: A List Apart
+  published: 2018-10-25 00:00:00 +0000
+  url: https://alistapart.com/article/from-url-to-interactive/
+  notes: "When we think about it, our whole industry depends on our faith in a handful of “black boxes” few of us fully understand: browsers. We hand over our HTML, CSS, JavaScript, cross our fingers, and hope they render the experience we have in our heads."
+
 - title: "Conversational Semantics"
   publisher: A List Apart
   published: 2018-08-30 00:00:00 +0000
@@ -56,7 +68,7 @@
   publisher: Microsoft Edge Dev Blog
   published: 2016-09-23 00:00:00 +0000
   url: https://blogs.windows.com/msedgedev/2016/09/23/10k-compilation-optimization-compression
-  notes: "A behind-the-scenes look at how we compressed & optmized the crap out of the 2016 10k Apart website."
+  notes: "A behind-the-scenes look at how we compressed & optimized the crap out of the 2016 10k Apart website."
 
 - title: "Building in 10k: Svelte JavaScript Enhancements"
   publisher: Microsoft Edge Dev Blog
@@ -218,7 +230,7 @@
   publisher: Net Magazine
   published: 2010-04-01 00:00:00 +0000
   url: http://www.creativebloq.com/design/adaptive-layouts-media-queries-3112920
-  notes: Create a beautiful website employing adaptive layouts and optimised for the latest mobile devices.
+  notes: Create a beautiful website employing adaptive layouts and optimized for the latest mobile devices.
 
 - title: Getting up to Speed with Lighthouses
   publisher: Web Standards Sherpa
