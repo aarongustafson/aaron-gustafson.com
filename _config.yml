@@ -260,6 +260,7 @@ crosspost_caches:
 
 # Adaptive Images Config
 adaptive_image:
+  cloud_name: aarongustafson
   cache: 2592000
   srcset: 
     - 1920

@@ -1,9 +1,8 @@
 #
 # Author: Aaron Gustafson
-# Adaptive Images with the Google Image Resizer
-# For more, see https://carlo.zottmann.org/2013/04/14/google-image-resizer/
+# Adaptive Images with Cloudinary
 #
-# An implementation of Adaptive Images with `srcset` and `sizes` using [Google’s open image resizing service](https://carlo.zottmann.org/2013/04/14/google-image-resizer/).
+# An implementation of Adaptive Images with `srcset` and `sizes` using [Cloudinary](https://cloudinary.com/).
 #
 # The tag is simple:
 #
@@ -16,6 +15,7 @@
 # To keep things simple and consistant, you can set up the standard sizes of your adaptive images in variables in `_config.yml`:
 #
 #   adaptive_image:
+#     cloud_name: YOURNAMEHERE
 #     cache: 2592000
 #     srcset: 
 #       - 1920
@@ -32,10 +32,10 @@
 
 module Jekyll
   class AdaptiveImageTag < Liquid::Tag
-    @url = nil
+    @url = nil 
 
     def initialize(tag_name, tag_text, tokens)
-      @url = 'https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?url=%{url}&amp;resize_w=%{width}&amp;container=focus&amp;refresh=%{cache}'
+      @url = 'https://res.cloudinary.com/%{cloud_name}/image/fetch/f_auto,q_auto,w_%{width}/%{url}'
       @tag_text = tag_text
       super
     end
@@ -80,7 +80,7 @@ module Jekyll
         # Add the src & srcset
         srcset = []
         @settings['srcset'].each do |size|
-          the_src = @url % {url: original_source, width: size, cache: @settings['cache']}
+          the_src = @url % {url: original_source, width: size, cache: @settings['cache'], cloud_name: @settings['cloud_name']}
           the_src << " #{size}w"
           srcset << the_src
           if !smallest_src || smallest_src > size
