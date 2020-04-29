@@ -3670,3 +3670,20 @@ https://www.aaron-gustafson.com/notebook/links/blind-users-struggle-with-state-c
 : ? https://www.publictechnology.net/articles/features/%E2%80%98-stakes-feel-higher-good-practice-it-need-not-be-scary%E2%80%99-%E2%80%93-nhsuk-design-lead
   : false
   https://twitter.com/DeanVipond: false
+https://www.aaron-gustafson.com/notebook/progressive-enhancement-just-works/:
+  https://www.matuzo.at/blog/beauty-of-progressive-enhancement/:
+    status: queued
+    summary: Webmention was queued for processing
+    location: https://webmention.io/www.matuzo.at/webmention/6_7Q69CkFXR82ZDoPMgh
+    source: https://www.aaron-gustafson.com/notebook/progressive-enhancement-just-works/
+    target: https://www.matuzo.at/blog/beauty-of-progressive-enhancement/
+  https://www.frontendbookmarks.com/: false
+  https://blog.easy-designs.net/archives/the-true-cost-of-progressive-enhancement/: false
+https://www.aaron-gustafson.com/notebook/links/front-end-bookmarks/:
+  https://www.frontendbookmarks.com/: false
+  https://www.matuzo.at/:
+    status: queued
+    summary: Webmention was queued for processing
+    location: https://webmention.io/www.matuzo.at/webmention/URclE7ALyqd_8ZOdd1FD
+    source: https://www.aaron-gustafson.com/notebook/links/front-end-bookmarks/
+    target: https://www.matuzo.at/
