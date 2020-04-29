@@ -55,21 +55,27 @@ gallery:
 ### Fish
 
 * Bluespotted Watchman Goby (<i class="binomial">Cryptocentrus pavoninoides</i>)
+* Melanarus Wrasse (<i class="binomial">Hailichoeres melanurus</i>)
+* Orchid Dottyback (<i class="binomial">Pseudochromis fridmani</i>)
 * Tail Spot Blenny (<i class="binomial">Ecsenius stigmatura</i>)
 
 ### Inverts
 
 * Blood Red Fire Shrimp (<i class="binomial">Lysmata debelius</i>)
 * Emerald Crab (<i class="binomial">Mithraculus sculptus</i>)
-* Halloween Hermit Crab (<i class="binomial">Ciliopagurus strigatus</i>)
 * Electric Blue Hermit Crab (<i class="binomial">Calcinus elegans</i>)
-* Scarlet Hermit Crab (<i class="binomial">Paguristes cadenati</i>)
-* Polka Dot Hermit Crab (<i class="binomial">Phimochirus operculatus</i>)
 * Fighting Conch (<i class="binomial">Strombus spp.</i>)
+* Fuzzy Chiton (<i class="binomial">Acanthopleura granulata</i>)
 * Money Cowrie (<i class="binomial">Monetaria moneta</i>)
 * Assorted snails (trochus, nassarius, strombus)
 * Assorted worms, pods, hermits, snails & such from [Indo-Pacific Sea Farms](https://ipsf.com/)
 * Additional Clean-up Crew (zigzag periwinkles, dwarf planaxis, etc.) from [ReefCleaners](https://www.reefcleaners.org/)
+
+<!--
+* Halloween Hermit Crab (<i class="binomial">Ciliopagurus strigatus</i>)
+* Scarlet Hermit Crab (<i class="binomial">Paguristes cadenati</i>)
+* Polka Dot Hermit Crab (<i class="binomial">Phimochirus operculatus</i>)
+-->
 
 ### Soft Corals
 
@@ -77,19 +83,21 @@ gallery:
   <dt>Zoanthids & Palythoas</dt>
   <dd><ul>
   <li>Belladonna</li>
-  <li>Buttmuncher</li>
+  <!--li>Buttmuncher</li-->
   <li>Cryogenic</li>
   <li><a href="#i-tanks-devils-armor-zoas-jpg">Devil’s Armor</a></li>
   <li>Ding Dang People Eater</li>
   <li>Eagle Eye</li>
   <li><a href="#i-tanks-fruit-loop-zoas-jpg">Fruit Loop</a></li>
   <li>Nirvana</li>
-  <li>Mary Jane</li>
+  <!--li>Mary Jane</li-->
   <li>Miami Vice</li>
   <li><a href="#i-tanks-oxide-zoas-jpg">Oxide</a></li>
+  <li>Pink Diamond</li>
   <li>Pink Krakatoa</li>
   <li><a href="#i-tanks-pink-zipper-zoas-jpg">Pink Zipper</a></li>
   <li><a href="#i-tanks-rainbow-incinerator-zoas-jpg">Rainbow Incinerator</a></li>
+  <li>Rainbow Hornet</li>
   <li><a href="#i-tanks-rasta-zoas-jpg">Rasta</a></li>
   <li>Tubb’s Blue</li>
   <li>Ultra Chaos</li>
@@ -114,13 +122,15 @@ gallery:
   <dd><ul>
   <li>ASD Rainbow Millepora (<i class="binomial">Acropora millepora</i>)</li>
   <li>Bali Green Slimer (<i class="binomial">Acropora yongei</i>)</li>
+  <li>Big R Corals Walt Disney (<i class="binomial">Acropora tenuis</i>)</li>
+  <li>Golden Basket Diva (<i class="binomial">Acropora spathulata</i>)</li>
+  <li>Golden Basket Inferno (<i class="binomial">Acropora spathulata</i>)</li>
   <li>ORA Cali Tort (<i class="binomial">Acropora tortuosa</i>)</li>
   <li>ORA Oregon Tort (<i class="binomial">Acropora tortuosa</i>)</li>
   <li>Pro Corals (PC) Rainbow (<i class="binomial">Acropora convexa</i>)</li>
   <li>Reef Raft (RR) Orange Passion (<i class="binomial">Acropora tenuis</i>)</li>
   <li>Tyree Pink Lemonade (<i class="species">Acropora spp.</i>)</li>
   <li>Tyree Tierra del Fuego (<i class="binomial">Acropora anthocercis</i>)</li>
-  <li>Walt Disney (<i class="binomial">Acropora tenuis</i>)</li>
   </ul></dd>
   <dt>Blastomussa</dt>
   <dd><ul>
@@ -130,6 +140,7 @@ gallery:
   <dt>Fungia</dt>
   <dd><ul>
   <li><a href="#i-tanks-sunset-plate-jpg">Sunset Plate (<i class="binomial">Fungia repanda</i>)</a></li>
+  <li>Rainbow Plate (<i class="binomial">Fungia repanda</i>)</li>
   </ul></dd>
   <dt>Goniastrea</dt>
   <dd><ul>
@@ -138,6 +149,7 @@ gallery:
   <dt>Goniopora</dt>
   <dd><ul>
   <li>Short-tentacled, green with purple mouths</li>
+  <li>Long-tentacled, hot pink</li>
   </ul></dd>
   <dt>Leptastrea</dt>
   <dd><ul>
@@ -152,6 +164,7 @@ gallery:
   <li><a href="#i-tanks-micromussa-lord-lavender-jpg">Rainbow Lord - Lilac and purple with neon green mouth (<i class="binomial">Micromussa lordhowensis</i>)</a></li>
   <li>Rainbow Lord - Orange and white with hot pink mouth (<i class="binomial">Micromussa lordhowensis</i>)</li>
   <li><a href="#i-tanks-micromussa-lord-blue-jpg">Rainbow Lord - Purple with lilac and green stripes, blue mouth (<i class="binomial">Micromussa lordhowensis</i>)</a></li>
+  <li>Rainbow Lord - Yellow, purple & green (<i class="binomial">Micromussa lordhowensis</i>)</li>
   <li>Rainbow Lord - Dark purple/black with white and red stripes (<i class="binomial">Micromussa lordhowensis</i>)</li>
   <li><a href="#i-tanks-micromussa-lord-rainbow-jpg">Rainbow Lord - Rainbow stripes (<i class="binomial">Micromussa lordhowensis</i>)</a></li>
   </ul></dd>
