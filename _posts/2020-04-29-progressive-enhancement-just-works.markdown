@@ -8,9 +8,11 @@ tags: [ "progressive enhancement" ]
 in_reply_to: https://www.matuzo.at/blog/beauty-of-progressive-enhancement/
 ---
 
-In his most recent blog post, Manuel Matuzović offered a great case study covering how he built [Front-end Bookmarks](https://www.frontendbookmarks.com/).   In the course of developing it, Manuel found that following the progressive enhancement philosophy in his development made it easy to support older/less feature rich browsers and devices:
+In a recent blog post, [Manuel Matuzović offered a great case study](https://www.matuzo.at/blog/beauty-of-progressive-enhancement/) covering how he built [Front-end Bookmarks](https://www.frontendbookmarks.com/).   In the course of developing it, Manuel found that following the progressive enhancement philosophy in his development made it easy to support older/less feature rich browsers and devices:
 
 > To my surprise, I only had to reduce some paddings and font sizes to make it look nice. I didn’t have to change much because I follow the Progressive Enhancement principle when I build websites.
+
+<!-- more -->
 
 We saw [this same benefit back in 2013](https://blog.easy-designs.net/archives/the-true-cost-of-progressive-enhancement/). When adding support for 1,400 new mobile browser/device combos to a project built for iOS and Android, we exceeded even our own expectations and were able to cut the timeline and budget in half!
 
