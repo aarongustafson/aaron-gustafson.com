@@ -10,8 +10,7 @@
   "description": "The online home and work of Aaron Gustafson.",
   "orientation": "any",
   "background_color": "#fffcf4",
-  "icons": [
-    {
+  "icons": [{
       "src": "/i/og-logo.webp",
       "type": "image/webp",
       "sizes": "800x600"
@@ -46,5 +45,22 @@
       "text": "body",
       "url": "url"
     }
-  }
+  },
+  "shortcuts": [{
+      "name": "Notebook",
+      "url": "/notebook/"
+    },
+    {
+      "name": "Speaking",
+      "url": "/speaking-engagements/"
+    },
+    {
+      "name": "Publications",
+      "url": "/publications/"
+    },
+    {
+      "name": "Interviews",
+      "url": "/interviews/"
+    }
+  ]
 }
