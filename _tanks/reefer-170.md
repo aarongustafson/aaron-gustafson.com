@@ -67,13 +67,13 @@ gallery:
 * Fighting Conch (<i class="binomial">Strombus spp.</i>)
 * Fuzzy Chiton (<i class="binomial">Acanthopleura granulata</i>)
 * Money Cowrie (<i class="binomial">Monetaria moneta</i>)
+* Scarlet Hermit Crab (<i class="binomial">Paguristes cadenati</i>)
 * Assorted snails (trochus, nassarius, strombus)
 * Assorted worms, pods, hermits, snails & such from [Indo-Pacific Sea Farms](https://ipsf.com/)
 * Additional Clean-up Crew (zigzag periwinkles, dwarf planaxis, etc.) from [ReefCleaners](https://www.reefcleaners.org/)
 
 <!--
 * Halloween Hermit Crab (<i class="binomial">Ciliopagurus strigatus</i>)
-* Scarlet Hermit Crab (<i class="binomial">Paguristes cadenati</i>)
 * Polka Dot Hermit Crab (<i class="binomial">Phimochirus operculatus</i>)
 -->
 
