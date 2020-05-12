@@ -248,6 +248,11 @@ gallery:
 <dl class="tank__specs">
   <dt>Salt</dt>
   <dd>Red Sea Blue Bucket</dd>
+  <dt>Dosing</dt>
+  <dd><ul>
+  <li>Triton Core7</li>
+  <li>Acropower</li>
+  </ul></dd>
   <dt>Tank</dt>
   <dd><ul>
   <li>Life Rock Shapes Aquarium Rock (40lbs)</li>
