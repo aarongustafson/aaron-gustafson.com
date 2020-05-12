@@ -61,18 +61,21 @@ gallery:
 
 ### Inverts
 
-* Blood Red Fire Shrimp (<i class="binomial">Lysmata debelius</i>)
 * Emerald Crab (<i class="binomial">Mithraculus sculptus</i>)
 * Electric Blue Hermit Crab (<i class="binomial">Calcinus elegans</i>)
 * Fighting Conch (<i class="binomial">Strombus spp.</i>)
 * Fuzzy Chiton (<i class="binomial">Acanthopleura granulata</i>)
+* Marginella Snail (<i class="binomial">Marginella spp.</i>)
 * Money Cowrie (<i class="binomial">Monetaria moneta</i>)
+* Ninja Star Snail (<i class="binomial">Astaea spp.</i>)
+* Peppermint Shrimp (<i class="binomial">Lysmata wurdemanni</i>)
 * Scarlet Hermit Crab (<i class="binomial">Paguristes cadenati</i>)
 * Assorted snails (trochus, nassarius, strombus)
 * Assorted worms, pods, hermits, snails & such from [Indo-Pacific Sea Farms](https://ipsf.com/)
 * Additional Clean-up Crew (zigzag periwinkles, dwarf planaxis, etc.) from [ReefCleaners](https://www.reefcleaners.org/)
 
 <!--
+* Blood Red Fire Shrimp (<i class="binomial">Lysmata debelius</i>)
 * Halloween Hermit Crab (<i class="binomial">Ciliopagurus strigatus</i>)
 * Polka Dot Hermit Crab (<i class="binomial">Phimochirus operculatus</i>)
 -->
