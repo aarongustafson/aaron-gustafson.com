@@ -86,7 +86,7 @@
   {
     fadeIn(function(){
       $img.style.backgroundImage = "url(" + img_prefix + gallery[current_position].img + ")";
-      $title.innerHTML = gallery[i].title;
+      $title.innerHTML = gallery[current_position].title;
     });
   }
   function fadeOut( callback )
