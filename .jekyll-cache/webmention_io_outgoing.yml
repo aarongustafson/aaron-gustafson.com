@@ -1530,7 +1530,12 @@ https://www.aaron-gustafson.com/notebook/links/front-end-and-back-end/:
     source: https://www.aaron-gustafson.com/notebook/links/front-end-and-back-end/
     target: http://aaron-gustafson.com/notebook/a-fundamental-disconnect/
 https://www.aaron-gustafson.com/notebook/links/why-we-cant-do-real-responsive-images-with-css-or-javascript/:
-  http://www.brucelawson.co.uk/2015/why-we-cant-do-real-responsive-images-with-css-or-javascript/: false
+  http://www.brucelawson.co.uk/2015/why-we-cant-do-real-responsive-images-with-css-or-javascript/:
+    link: "/2015/why-we-cant-do-real-responsive-images-with-css-or-javascript/#comment-3850948"
+    source: https://www.aaron-gustafson.com/notebook/links/why-we-cant-do-real-responsive-images-with-css-or-javascript/
+    target: http://www.brucelawson.co.uk/2015/why-we-cant-do-real-responsive-images-with-css-or-javascript/
+    code: success
+    message: Webmention was successful
   https://html.spec.whatwg.org/multipage/embedded-content.html: false
 https://www.aaron-gustafson.com/notebook/links/timeline-of-web-browsers-wikipedia-the-free-encyclopedia/:
   http://en.wikipedia.org/wiki/Timeline_of_web_browsers: false
@@ -1767,7 +1772,12 @@ https://www.aaron-gustafson.com/notebook/links/weight-wait/:
   http://www.filamentgroup.com/lab/weight-wait.html: false
   https://twitter.com/scottjehl: false
 https://www.aaron-gustafson.com/notebook/links/web-components-accessibility-and-the-priority-of-constituencies/:
-  http://www.brucelawson.co.uk/2015/web-components-accessibility-and-the-priority-of-constituencies/: false
+  http://www.brucelawson.co.uk/2015/web-components-accessibility-and-the-priority-of-constituencies/:
+    link: "/2015/web-components-accessibility-and-the-priority-of-constituencies/#comment-3850949"
+    source: https://www.aaron-gustafson.com/notebook/links/web-components-accessibility-and-the-priority-of-constituencies/
+    target: http://www.brucelawson.co.uk/2015/web-components-accessibility-and-the-priority-of-constituencies/
+    code: success
+    message: Webmention was successful
   https://lists.w3.org/Archives/Public/public-webapps/2015AprJun/0225.html: false
   http://www.aaron-gustafson.com/notebook/who-should-pay/:
     status: queued
@@ -1927,7 +1937,12 @@ https://www.aaron-gustafson.com/notebook/links/availability/:
     pending: true
     message: WebMention accepted
 https://www.aaron-gustafson.com/notebook/links/edge-conf-notes-on-user-queries/:
-  http://www.brucelawson.co.uk/2015/edge-conf-notes-on-user-queries/: false
+  http://www.brucelawson.co.uk/2015/edge-conf-notes-on-user-queries/:
+    link: "/2015/edge-conf-notes-on-user-queries/#comment-3850950"
+    source: https://www.aaron-gustafson.com/notebook/links/edge-conf-notes-on-user-queries/
+    target: http://www.brucelawson.co.uk/2015/edge-conf-notes-on-user-queries/
+    code: success
+    message: Webmention was successful
   http://www.brucelawson.co.uk/: false
 https://www.aaron-gustafson.com/notebook/links/thriving-in-unpredictability/:
   http://timkadlec.com/2015/06/thriving-in-unpredictability/: false
@@ -3701,14 +3716,24 @@ https://www.aaron-gustafson.com/notebook/reefer-170/:
   : false
   ? https://instagram.fsjc1-3.fna.fbcdn.net/v/t50.2886-16/61121034_145127509977895_8222951243715077990_n.mp4?efg=eyJ2ZW5jb2RlX3RhZyI6InZ0c192b2RfdXJsZ2VuLjcyMC5mZWVkIiwicWVfZ3JvdXBzIjoiW1wiaWdfd2ViX2RlbGl2ZXJ5X3Z0c19vdGZcIl0ifQ&amp;_nc_ht=instagram.fsjc1-3.fna.fbcdn.net&amp;_nc_cat=107&amp;_nc_ohc=50HtIohkG9gAX-_P-Do&amp;vs=17844979267459684_1733323906&amp;_nc_vs=HBkcFQAYJEdBcWlwQU1uNjYwaC1vTUFBR1puLXM2V3loMXlia1lMQUFBRhUAAsgBACgAGAAbAYgHdXNlX29pbAEwFQAAGAAWyM7yxLr6sj8VAigCQzMsF0BNQAAAAAAAGBJkYXNoX2Jhc2VsaW5lXzFfdjERAHXqBwA
   : false
-  http://localhost/tanks/reefer-170/: false
+  http://localhost/tanks/reefer-170/:
+    status: queued
+    summary: Webmention was queued for processing
+    location: https://webmention.io/aaron-gustafson.com/webmention/DpoYyNQQvveLJkDdssbF
+    source: https://www.aaron-gustafson.com/notebook/reefer-170/
+    target: http://localhost/tanks/reefer-170/
   https://www.triton.de/en/method: false
   https://www.bulkreefsupply.com/acropower-amino-acid-formula-for-sps-corals.html: false
   https://www.polyplab.com/products/reef-primer: false
 https://www.aaron-gustafson.com/notebook/reefer-170-year-two/:
   https://www.instagram.com/p/Bx5iKe5AVT9/: false
   https://www.instagram.com/p/CA0_9A-AHnn/: false
-  http://localhost/tanks/reefer-170/: false
+  http://localhost/tanks/reefer-170/:
+    status: queued
+    summary: Webmention was queued for processing
+    location: https://webmention.io/aaron-gustafson.com/webmention/XqwWyqTR-9CWknxafL1D
+    source: https://www.aaron-gustafson.com/notebook/reefer-170-year-two/
+    target: http://localhost/tanks/reefer-170/
   https://www.triton.de/en/method: false
   https://www.bulkreefsupply.com/acropower-amino-acid-formula-for-sps-corals.html: false
   https://www.polyplab.com/products/reef-primer: false
