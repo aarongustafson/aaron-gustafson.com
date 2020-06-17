@@ -11,7 +11,7 @@ You may or may not be aware, but [the Shortcuts feature](https://www.w3.org/TR/a
 
 <!-- more -->
 
-If you are unfamiliar with Shortcuts, this feature lets you declare a handful of links that will appear as part of the context menu of your PWA’s icon within the host OS. On most desktop operating systems, these actions are accessed by right clicking on the app icon. In iOS, you "force touch" the icon and on Android they appear when you "long press" the icon. You can [learn more about Shortcuts in the Explainer](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/Shortcuts/explainer.md).
+If you are unfamiliar with Shortcuts, this feature lets you declare a handful of links that will appear as part of the context menu of your PWA’s icon within the host OS. On most desktop operating systems, these actions are accessed by right clicking on the app icon. In iOS, you "force touch" or "long touch" (depending on your device generation) the icon, and on Android they appear when you "long press" the icon. You can [learn more about Shortcuts in the Explainer](https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/Shortcuts/explainer.md).
 
 In Shortcuts v2, we are looking at enabling JavaScript to add to or modify Shortcuts menu items. When I originally thought about this, I had assumed all of the Shortcuts defined in the Manifest would be able to be removed or adjusted via the JavaScript API. So, for example, a shortcut to "Now Playing" in a music app could be updated to "Now Playing: Phone by Lizzo" when that track is playing. In this case, the URL might remain exactly the same, but the label would be updated.
 
