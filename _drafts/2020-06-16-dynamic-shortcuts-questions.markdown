@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Dynamic shortcuts questions"
-date: 2020-06-16 14:57:19 -0700
+date: 2020-06-17 14:57:19 -0700
 comments: true
 tags: ["progressive web apps"]
-description: ""
+description: "Rayan Kanso and I are currently working on a proposal for Shortcuts v2, which will introduce a JavaScript API for managing Shortcuts and we’d love your input."
 ---
 
 You may or may not be aware, but [the Shortcuts feature](https://www.w3.org/TR/appmanifest/#shortcuts-member) for PWAs [has begun rolling out in Chromium-based browsers](https://www.windowslatest.com/2020/01/20/microsoft-is-adding-shortcuts-menu-to-chrome-pwas/) and implementation is underway in other browsers as well. The first version of Shortcuts provides you with the ability to define a small set of links in your Manifest. Rayan Kanso and I are currently working on [a proposal for Shortcuts v2](https://github.com/rayankans/app-shortcuts) which will introduce a JavaScript API for managing these links and we’d love your input too.
@@ -21,12 +21,18 @@ Further complicating things, iOS draws a distinction between "static" and "dynam
 
 In order to set expectations properly and spec out the API, we need to decide on a direction to go in. That’s where you come in. I’ve created a Twitter Poll (below) that will allow you to vote for your preference. This will help us get a better sense of what you (folks who make websites) want and expect from a Shortcuts JavaScript API. If it means we need to come up with creative ways to manage the implementation under the hood in order to provide the right user experience and developer ergonomics, we’ll figure that out.
 
+<!--
 Poll (to be created on Twitter)
 
-How would you prefer to manage PWA Shortcuts?
+How would you prefer to manage PWA Shortcuts in JavaScript?
 
-Separate: I want immutable static shortcuts and separate dynamic shortcuts accessible from JavaScript.
-Combined: I want JavaScript access to all shortcuts, regardless of how they are defined.
+Read/write dynamic: I want immutable "static" Shortcuts and separate "dynamic" Shortcuts I can add/update/remove via JavaScript.
 
-() Separate
-() Combined
+Read all/write dynamic: I want JavaScript read access to all shortcuts, regardless of how they are defined and I want to be able to add/update/remove new app shortcuts dynamically. Static ones would persist as defined by the Manifest.
+
+Read/write all: I want JavaScript access to all shortcuts, regardless of how they are defined. This means I can update/remove Shortcuts defined in the Manifest too.
+
+- () Read/write dynamic
+- () Read all/write dynamic
+- () Read/write all
+-->
