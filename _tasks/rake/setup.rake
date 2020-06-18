@@ -15,9 +15,9 @@ task :setup do
   cd deploy_dir do 
     system 'git init'
     system 'git remote add origin https://github.com/aarongustafson/aarongustafson.github.io'
-    system 'git fetch origin'
-    system 'git checkout master'
     system 'git remote add live ssh://root@45.55.195.184/var/git_repositories/aaron-gustafson.com.git'
+    system 'git fetch live'
+    system 'git checkout master'
   end
   puts "## Git setup complete\n"
 end

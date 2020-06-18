@@ -1,7 +1,7 @@
 desc 'Publish task'
 task :publish do
   time = Time.now.utc
-  puts "\n## Minifying HTML"
+  # puts "\n## Minifying HTML"
   # system 'gulp html'
   cd '_site' do
     message = "Site updated at #{time}"
