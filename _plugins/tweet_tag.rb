@@ -48,6 +48,7 @@ module Jekyll
       if response = cached_response(api_params) || live_response(api_params)
         body = response['html'] || response['error'] || body
       end
+      body = body.gsub 'class="twitter-tweet"', 'class="twitter-tweet" data-conversation="none"'
       "<div class='embed tweet'>#{body}</div>"
     end
 
