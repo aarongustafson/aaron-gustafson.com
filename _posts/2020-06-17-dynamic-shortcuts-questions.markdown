@@ -21,18 +21,12 @@ Further complicating things, iOS draws a distinction between "static" and "dynam
 
 In order to set expectations properly and spec out the API, we need to decide on a direction to go in. That’s where you come in. I’ve created a Twitter Poll (below) that will allow you to vote for your preference. This will help us get a better sense of what you (folks who make websites) want and expect from a Shortcuts JavaScript API. If it means we need to come up with creative ways to manage the implementation under the hood in order to provide the right user experience and developer ergonomics, we’ll figure that out.
 
-<!--
-Poll (to be created on Twitter)
+{% tweet https://twitter.com/AaronGustafson/status/1273767950185451522 %}
 
-How would you prefer to manage PWA Shortcuts in JavaScript?
+{% tweet https://twitter.com/AaronGustafson/status/1273767950982377472 %}
 
-Read/write dynamic: I want immutable "static" Shortcuts and separate "dynamic" Shortcuts I can add/update/remove via JavaScript.
+{% tweet https://twitter.com/AaronGustafson/status/1273767951636680704 %}
 
-Read all/write dynamic: I want JavaScript read access to all shortcuts, regardless of how they are defined and I want to be able to add/update/remove new app shortcuts dynamically. Static ones would persist as defined by the Manifest.
+{% tweet https://twitter.com/AaronGustafson/status/1273767952270028800 %}
 
-Read/write all: I want JavaScript access to all shortcuts, regardless of how they are defined. This means I can update/remove Shortcuts defined in the Manifest too.
-
-- () Read/write dynamic
-- () Read all/write dynamic
-- () Read/write all
--->
+{% tweet https://twitter.com/AaronGustafson/status/1273767954048376832 %}
