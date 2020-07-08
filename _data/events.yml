@@ -1,20 +1,14 @@
-- id: 141
+- id: 140
   title: An Event Apart
-  date: 2020-10-05 00:09:00 -0000
+  date: 2020-10-05 00:09:00 -0400
   location: "Orlando, FL USA"
   url: https://aneventapart.com/event/orlando-2020
 
-- id: 140
-  title: An Event Apart
-  date: 2020-05-11 00:09:00 -0000
-  location: "Seattle, WA USA"
-  url: https://aneventapart.com/event/seattle-2020
-
 - id: 139
-  title: An Event Apart
-  date: 2020-04-13 00:09:00 -0000
-  location: "Washington, DC USA"
-  url: https://aneventapart.com/event/washington-dc-2020
+  title: "An Event Apart, Online Together: Front-End Focus"
+  date: 2020-08-17 00:09:00 -0500
+  location: "Online"
+  url: https://aneventapart.com/event/online-0820
 
 - id: 138
   title: Microsoft Build
