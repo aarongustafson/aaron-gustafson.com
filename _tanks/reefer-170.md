@@ -8,7 +8,7 @@ fts: /i/tanks/reefer-fts-2019-05-19.jpg
 tank: Red Sea Reefer 170
 gallery:
 - url: /i/tanks/blastomussa-merletti.jpg
-  title: Red, yellow & violet Blastomussa merletti
+  title: Ultra Corals Blue Raven Blastomussa merletti
 - url: /i/tanks/burning-leptastrea.jpg
   title: WWC Burning Leptastrea
 - url: /i/tanks/devils-armor-zoas.jpg
@@ -20,7 +20,7 @@ gallery:
 - url: /i/tanks/german-blue-digitata.jpg
   title: I love branching montipora and this German Blue Digitata has a particularly nice branching pattern.
 - url: /i/tanks/german-blue-digitata-2.jpg
-  title: Here’s a look at the whole colony of German Blue Digitata.
+  title: Here’s a look at my old (sold) colony of German Blue Digitata.
 - url: /i/tanks/halle-berry-zoas.jpg
   title: These WWC Halle Berry zoas were among the first residents of this tank and they’ve really taken off.
 - url: /i/tanks/john-deere-leptastrea.jpg
@@ -54,22 +54,25 @@ gallery:
 
 ### Fish
 
+<!--
 * Bluespotted Watchman Goby (<i class="binomial">Cryptocentrus pavoninoides</i>)
+-->
 * Melanarus Wrasse (<i class="binomial">Hailichoeres melanurus</i>)
 * Orchid Dottyback (<i class="binomial">Pseudochromis fridmani</i>)
 * Tail Spot Blenny (<i class="binomial">Ecsenius stigmatura</i>)
 
 ### Inverts
 
-* Emerald Crab (<i class="binomial">Mithraculus sculptus</i>)
+* Emerald Crabs (<i class="binomial">Mithraculus sculptus</i>) × 4
 * Electric Blue Hermit Crab (<i class="binomial">Calcinus elegans</i>)
 * Fighting Conch (<i class="binomial">Strombus spp.</i>)
-* Fuzzy Chiton (<i class="binomial">Acanthopleura granulata</i>)
+* Fuzzy Chiton (<i class="binomial">Acanthopleura granulata</i>) × 2
 * Marginella Snail (<i class="binomial">Marginella spp.</i>)
 * Money Cowrie (<i class="binomial">Monetaria moneta</i>)
 * Ninja Star Snail (<i class="binomial">Astaea spp.</i>)
 * Peppermint Shrimp (<i class="binomial">Lysmata wurdemanni</i>)
-* Scarlet Hermit Crab (<i class="binomial">Paguristes cadenati</i>)
+* Scarlet Hermit Crab (<i class="binomial">Paguristes cadenati</i>) × 3
+* Tuxedo Urchins (red) (<i class="binomial">Mespilia globulus</i>) × 2
 * Assorted snails (trochus, nassarius, strombus)
 * Assorted worms, pods, hermits, snails & such from [Indo-Pacific Sea Farms](https://ipsf.com/)
 * Additional Clean-up Crew (zigzag periwinkles, dwarf planaxis, etc.) from [ReefCleaners](https://www.reefcleaners.org/)
@@ -87,7 +90,7 @@ gallery:
   <dd><ul>
   <li>Belladonna</li>
   <!--li>Buttmuncher</li-->
-  <li>Cryogenic</li>
+  <li>Citrus Cooler</li>
   <li><a href="#i-tanks-devils-armor-zoas-jpg">Devil’s Armor</a></li>
   <li>Ding Dang People Eater</li>
   <li>Eagle Eye</li>
@@ -134,10 +137,11 @@ gallery:
   <li>Reef Raft (RR) Orange Passion (<i class="binomial">Acropora tenuis</i>)</li>
   <li>Tyree Pink Lemonade (<i class="species">Acropora spp.</i>)</li>
   <li>Tyree Tierra del Fuego (<i class="binomial">Acropora anthocercis</i>)</li>
+  <li>Unnamed Millepora (<i class="binomial">Acropora millepora</i>)</li>
   </ul></dd>
   <dt>Blastomussa</dt>
   <dd><ul>
-  <li><a href="#i-tanks-blastomussa-merletti-jpg">Red, yellow & violet (<i class="binomial">Blastomussa merletti</i>)</a></li>
+  <li><a href="#i-tanks-blastomussa-merletti-jpg">Ultra Corals (UC) Blue Raven (<i class="binomial">Blastomussa merletti</i>)</a></li>
   <li>Superman (<i class="binomial">Blastomussa merletti</i>)</li>
   </ul></dd>
   <dt>Fungia</dt>
@@ -151,8 +155,9 @@ gallery:
   </ul></dd>
   <dt>Goniopora</dt>
   <dd><ul>
-  <li>Short-tentacled, green with purple mouths</li>
+  <li>Long-tentacled, green with blue mouths</li>
   <li>Long-tentacled, hot pink</li>
+  <li>Short-tentacled, rainbow</li>
   </ul></dd>
   <dt>Leptastrea</dt>
   <dd><ul>
@@ -173,10 +178,8 @@ gallery:
   </ul></dd>
   <dt>Montipora</dt>
   <dd><ul>
-  <li><a href="#i-tanks-german-blue-digitata-jpg">ORA German Blue Digitata (<i class="binomial">Montipora digitata</i>)</a></li>
   <li>ORA Spongedes (<i class="binomial">Montipora spongedes</i>)</li>
   <li>Bubblegum Digitata (<i class="binomial">Montipora digitata</i>)</li>
-  <li>Silver-Blue Digitata (<i class="binomial">Montipora digitata</i>)</li>
   </ul></dd>
   <dt>Miscellaneous</dt>
   <dd><ul>
@@ -195,8 +198,9 @@ gallery:
   </ul></dd>
   <dt>Tank Lighting</dt>
   <dd><ul>
-  <li>Radion XR 15 Pro, 4th Gen</li>
+  <li>[ReeFi Duo Extreme](https://www.reefi-lab.com/product/reefi-led-duo-extreme/)</li>
   <li>RMS mount</li>
+  <li>Custom adapter for RMS mount</li>
   </ul></dd>
   <dt>Sump</dt>
   <dd><ul>
@@ -215,8 +219,11 @@ gallery:
   <dd>Neptune Systems WAV</dd>
   <dt>Refugium Light</dt>
   <dd>Tunze 8821 6500K LED</dd>
-  <dt>Heater</dt>
-  <dd>Cobalt Aquatics Neotherm 150w</dd>
+  <dt>Heaters</dt>
+  <dd><ul>
+  <li>Bulk Reef Supply Titanium 200W</li>
+  <li>Cobalt Aquatics Neotherm 150W</li>
+  </ul></dd>
   <dt>Controller</dt>
   <dd><ul>
   <li>Neptune Apex 2016 w/ temp, salinity, pH, and ORP</li>
@@ -237,6 +244,7 @@ gallery:
   <dt>Safety</dt>
   <dd><ul>
   <li>GFCI + Arc Fault protected outlet</li>
+  <li>Ink Bird Heater Controller</li>
   <li>Neptune Systems FMM + 2 hard surface water sensors</li>
   <li>Neptune Systems Solenoid Valve between the PMUP and the sump (since the ATO Reservoir is on top)</li>
   </ul></dd>  
@@ -262,6 +270,7 @@ gallery:
   <dt>Refugium</dt>
   <dd><ul>
   <li>Walt Smith Fiji Mud</li>
+  <li>CaribSea Arag Alive Fiji Pink Sand</li>
   <li>Medium Marine Pure Ceramic Biofilter Media Rock</li>
   </ul></dd>
 </dl>
