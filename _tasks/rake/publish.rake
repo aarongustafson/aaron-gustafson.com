@@ -7,7 +7,7 @@ task :publish do
     message = "Site updated at #{time}"
     system 'git add .'
     system "git commit -a -m '#{message}'"
-    system 'git merge -s recursive -X ours live/master -m "Merging with live"'
+    system 'git merge -s recursive -X ours live/main -m "Merging with live"'
     system 'git push live'
     puts "\n## Pushing Live @ #{time}"
   end
