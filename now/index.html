@@ -2,15 +2,18 @@
 layout: page
 title: What’s Keeping Me Busy
 description: "Stuff I’m doing at the moment—both at work and personally."
+last_updated_at: 2020-12-16 11:18:00 -0800
 show_title: false
 comments: false
-footer: true
+footer: false
 sharing: false
 sidebar: false
 ---
 
+<h1>{{ page.title }}</h1>
+
 <section id="projects">
-  <h2>Currently…</h2>
+  <h2 class="subsection__header">Currently…</h2>
   <ul>
     <li>editing <a href="https://www.w3.org/TR/appmanifest/">Web App Manifest</a>, <a href="https://w3c.github.io/manifest-app-info/">Manifest App Info</a>, and <a href="https://www.w3.org/TR/image-resource/">ImageResource</a> at the <a href="">W3C</a>.</li>
     <li>writing up PWA and privacy-related ideas on the <a href="https://github.com/MicrosoftEdge/MSEdgeExplainers">Microsoft Edge Explainers</a> repo.</li>
@@ -24,7 +27,7 @@ sidebar: false
 </section>
 
 <section>
-  <h2>Open to…</h2>
+  <h2 class="subsection__header">Open to…</h2>
   <ul>
     <li>doing podcast interviews and remote talks/workshops on PWAs, inclusive design, progressive enhancement, and more.</li>
     <li>writing articles on any of the aforementioned topics.</li>
@@ -33,4 +36,6 @@ sidebar: false
   </ul>
 </section>
 
-<p>Updated <time class="dt-updated" datetime="{{ page.date | datetime | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time></p>
+<footer>
+  <p>Updated <time class="dt-updated" datetime="{{ page.last_updated_at | datetime | date_to_xmlschema }}">{{ page.last_updated_at | date_to_long_string }}</time></p>
+</footer>
