@@ -1,3 +1,11 @@
+- title: "A Progressive View of the Web"
+  outlet: Presentable
+  episode: 101
+  date: 2021-01-31 00:00:00 +0000
+  url: https://www.relay.fm/presentable/101
+  description: "I joined Jeff Veen to talk about PWAs, the importance of diversity & inclusion, and more."
+  embed: https://www.podtrac.com/pts/redirect.mp3/traffic.libsyn.com/secure/presentable/101_Presentable_-_A_Progressive_View_of_the_Web_with_Aaron_Gustafson.mp3
+
 - title: "From Progressive Enhancement to Progressive Web Apps"
   outlet: Mobile Matters
   episode: 17
