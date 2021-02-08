@@ -387,9 +387,9 @@ self.addEventListener( "fetch", event => {
                 }
                 return response;
               })
-              // fallback to offline image
+              // fallback to offline page
               .catch(
-                respondWithServerOffline
+                respondWithOfflinePage
               );
           }
         })
