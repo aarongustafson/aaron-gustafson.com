@@ -30,12 +30,12 @@
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
     "jshint": "^2.10.2",
-    "lodash": "^4.17.13",
+    "lodash": "^4.17.21",
     "lodash.template": ">=4.5.0",
     "minimatch": "^3.0.4",
-    "tunnel-agent": "^0.6.0",
     "node.extend": ">=2.0.2",
     "require-dir": "^1.2.0",
+    "tunnel-agent": "^0.6.0",
     "uglify-es": "^3.3.9"
   }
 }
