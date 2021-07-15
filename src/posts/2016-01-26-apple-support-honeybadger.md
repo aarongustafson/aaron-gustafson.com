@@ -4,7 +4,8 @@ date: 2016-01-26 17:34:17 -05:00
 comments: true
 tags: [personal,industry,empathy]
 description: "My iPhone fell clumsily out of my pocket when I was sitting down in the kitchen the other day. I was crestfallen."
-crosspost_to_medium: true
+crossposted:
+  Medium: https://medium.com/@AaronGustafson/apple-support-honeybadger-ae98d16e9f11
 ---
 
 My iPhone fell clumsily out of my pocket when I was sitting down in the kitchen the other day. *Thwack!* It fell face-first onto the tile from my seated position a mere 18 inches up. Of course the screen cracked. Protective case be damned, the cracks spread across the screen like a spider web cast from razor blades.

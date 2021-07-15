@@ -4,7 +4,8 @@ date: 2017-03-30 20:00:50 -04:00
 comments: true
 tags: [HTML,"web standards","progressive enhancement"]
 description: " I’ve been thinking a lot about media formats and what happens when a user’s browser encounters a `video`, `audio`, or `picture` element that only includes formats it doesn’t support."
-crosspost_to_medium: true
+crossposted:
+  Medium: https://medium.com/@AaronGustafson/a02bfa999bdc
 ---
 
 I don’t remember what got it stuck in my craw, but I’ve been thinking a bit about HTML fallbacks of late. <!-- more -->If you’re unfamiliar, consider the following `picture` element:

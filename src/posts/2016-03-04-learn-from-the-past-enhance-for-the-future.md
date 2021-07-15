@@ -3,7 +3,8 @@ title: "Learn from the Past, Enhance for the Future"
 date: 2016-03-04 17:33:57 -05:00
 comments: true
 tags: ["the future",presentations,accessibility,"voice UX"]
-crosspost_to_medium: true
+crossposted:
+  Medium: https://medium.com/@AaronGustafson/8ab94d4f7e92
 twitter_text: "In case you missed it, here’s a written version of my #EnhanceConf talk:"
 description: "I had the great pleasure of delivering the closing keynote for the first EnhanceConf. I wanted to talk about voice and the future of “headless” user interfaces. Here’s what I had to say."
 ---

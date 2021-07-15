@@ -4,7 +4,8 @@ date: 2017-05-24 11:13:24 -04:00
 comments: true
 tags: ["progressive web apps","progressive enhancement",Windows,Microsoft,presentations]
 description: "I had the great pleasure of delivering this talk about Microsoft’s strategy towards Progressive Web Apps at the Build conference."
-crosspost_to_medium: true
+crossposted:
+  Medium: https://medium.com/@AaronGustafson/b2b2aa2f1521
 ---
 
 *I had the great pleasure of delivering a talk about Microsoft’s strategy towards Progressive Web Apps at [Build](https://build.microsoft.com). You can [view the slides](#slides) or [watch the recording](#video) of this talk, but what follows is a distillation of my talk, taken from my notes and slides.*

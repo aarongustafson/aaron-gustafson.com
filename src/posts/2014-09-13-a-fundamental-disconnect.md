@@ -5,6 +5,8 @@ comments: true
 tags: ["web design", "web development", JavaScript, hazards]
 description: "The Web is ubiquitous. The Web is messy. And, as much as we might like to control a user’s experience down to the very pixel, those of us who have been working on the Web for a while understand that it’s a fool’s errand and have adjusted our expectations accordingly. Unfortunately, this new crop of Web developers doesn’t seem to have gotten that memo."
 redirect_from: /notebook/2014/a-fundamental-disconnect/
+crossposted:
+  Medium: https://medium.com/@AaronGustafson/a-fundamental-disconnect-e0a238ed232a
 ---
 
 Yesterday at [BlendConf](https://2014.blendconf.com/), [Scott Hanselman](https://www.hanselman.com/) gave a fantastically-entertaining keynote entitled “JavaScript, The Cloud, and the rise of the New Virtual Machine.” In it, he chronicled all of the ways Web development and deployment has changed—for the better—over the years. He also boldly declared that JavaScript is now, effectively, a virtual machine in the browser.

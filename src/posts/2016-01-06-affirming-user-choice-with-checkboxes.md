@@ -4,7 +4,8 @@ date: 2016-01-06 14:24:31 -05:00
 comments: true
 tags: [forms, "web design", accessibility]
 description: "“Checkbox” form controls have long been a part of software, enabling users to provide a simple binary response—yes or no. Here are some best practices for using them on the Web."
-crosspost_to_medium: true
+crossposted:
+  Medium: https://medium.com/@AaronGustafson/affirming-user-choice-with-checkboxes-9043ca3c09a7
 series:
   name: "Modern Web Form Best Practices"
   tag: forms

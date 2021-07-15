@@ -4,7 +4,8 @@ date: 2016-11-02 11:59:42 -04:00
 comments: true
 tags: [Windows,writing]
 description: "I love the way OS X/macOS handles special characters and was looking to implement something similar on Windows. Here’s how I did it."
-crosspost_to_medium: true
+crossposted:
+  Medium: https://medium.com/@AaronGustafson/7afadd617c85
 ---
 
 I am a bit of a geek for proper punctuation: Em dashes… en dashes… curly quotes… ellipses… I love them all! Prior to 2007, I was a long-time Windows user and was a master of the <kbd>Alt + <var>numeric code</var></kbd> system of entering special characters on that operating system.[^1] For nearly a decade, however, I’ve been writing and developing on a Mac and I absolutely love how much easier it is to use special characters.  When I started setting up my new Surface Book, I began searching for a way to bring Mac-like special character entry to Windows 10.

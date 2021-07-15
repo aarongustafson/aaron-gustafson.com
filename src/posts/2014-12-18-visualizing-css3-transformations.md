@@ -4,7 +4,8 @@ date: 2014-12-18 16:53:18 -05:00
 comments: true
 tags: ["web design", CSS, "web standards"]
 description: CSS transformations are amazing, but they can be confusing too. I put together a browser-based tool that should help you understand how the functions are applied and why it matters.
-crosspost_to_medium: true
+crossposted:
+  Medium: https://medium.com/@AaronGustafson/cf9b0b5aab47
 ---
 
 It’s pretty amazing what you can do with [CSS3 transforms](http://dev.w3.org/csswg/css-transforms) these days, but I often struggle with explaining the importance of function order when I am training people on how to use them. Transformation functions are a visual thing, so they require a visual tool to fully understand them and the implications of your function order decisions.

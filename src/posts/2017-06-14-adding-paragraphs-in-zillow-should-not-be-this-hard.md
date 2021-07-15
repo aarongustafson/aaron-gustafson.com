@@ -4,7 +4,8 @@ date: 2017-06-14 20:20:07 -04:00
 comments: true
 tags: [forms, "web development"]
 description: "Paragraphs serve as a distinct piece of writing. They generally encapsulate one idea or series of related ones. The space between them also gives your eyes a moment to rest and your brain a moment to process what you just read. Without them, text is just one big jumble."
-crosspost_to_medium: true
+crossposted:
+  Medium: https://medium.com/@AaronGustafson/ab16f1434f8b
 ---
 
 Kelly and I are in the process of [selling our (beautiful) home](https://www.zillow.com/homedetails/1115-Hanover-St-Chattanooga-TN-37405/41420955_zpid/?fullpage=true) and I have been amazed at how difficult it’s been for our agents to break up the listing description into paragraphs, especially on [Zillow](https://www.zillow.com). After a ton of trial and error—after all, I wasn’t gonna let poor software design trump readability—I found a solution.

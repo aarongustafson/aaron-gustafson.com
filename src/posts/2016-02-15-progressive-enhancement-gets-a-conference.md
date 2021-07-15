@@ -4,7 +4,8 @@ date: 2016-02-15 10:00:51 -05:00
 comments: true
 tags: ["progressive enhancement",conferences]
 description: "I interviewed EnhanceConf’s organizer, Simon McMcanus."
-crosspost_to_medium: true
+crossposted:
+  Medium: https://medium.com/@AaronGustafson/e65398c7b085
 ---
 
 On March 4th, I’ll be in London to give the closing talk at [EnhanceConf](http://enhanceconf.com/), the first conference dedicated progressive enhancement. Over the last few months, I’ve been talking to the conference’s organizer, [Simon McManus](https://twitter.com/simonmcmanus), quite a lot. He’s put a lot of thought into the conference and I thought it might be interesting to  interview him so he could share his motivations and hopes for the event.

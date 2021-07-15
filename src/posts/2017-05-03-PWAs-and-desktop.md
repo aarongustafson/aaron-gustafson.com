@@ -4,7 +4,8 @@ date: 2017-05-03 10:37:17 -04:00
 comments: true
 tags: ["progressive enhancement", "progressive web apps"]
 description: "PWAs enable us to provide a consistent experience *and* give us the ability to mitigate network issues, making a big difference for a lot of people regardless of the device they’re using."
-crosspost_to_medium: true
+crossposted:
+  Medium: https://medium.com/@AaronGustafson/a782304b9cf9
 ---
 
 Next week I’ll be giving a talk on [Progressive Web Apps (PWAs)](https://developers.google.com/web/progressive-web-apps/) on Windows (and desktop) at [Microsoft Build](https://channel9.msdn.com/Events/Build/2017). While researching folks perspectives on PWAs for the desktop, I stumbled on [this post from Justin Ribeiro](https://www.justinribeiro.com/chronicle/2016/09/10/desktop-pwa-bring-the-goodness/). In it, he makes a solid case for why discussions of PWAs should not be limited to mobile contexts:

@@ -2,7 +2,8 @@
 title: "Ten Years on Twitter"
 date: 2016-11-10 00:22:07 -05:00
 comments: true
-crosspost_to_medium: true
+crossposted:
+  Medium: https://medium.com/@AaronGustafson/95d3c8d15d8
 tags: [personal]
 description: "A bit of a reflection on my now decade-long relationship with Twitter."
 ---

@@ -4,7 +4,8 @@ date: 2016-10-11 08:06:49 -04:00
 comments: true
 tags: [personal,society,"the future"]
 description: "My son Oscar is black and I fear for his future in Trump’s America."
-crosspost_to_medium: true
+crossposted:
+  Medium: https://medium.com/@AaronGustafson/im-voting-for-oscar-e91a8fa544b4#.gw3bhcpah
 ---
 
 <figure id="fig-2016-10-11-1" class="media-container">

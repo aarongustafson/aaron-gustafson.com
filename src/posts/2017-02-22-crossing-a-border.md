@@ -4,7 +4,8 @@ date: 2017-02-23 11:32:41 -05:00
 comments: true
 tags: [travel,business,conferences]
 description: "If you travel abroad for work, you may have some concerns based on recent news coverage. I know I do. I’m not a lawyer, but I’ve been researching quite a bit and asking for  opinions and recommendations. Below is a summary of the advice I’ve been given or that I’ve gathered from my own experiences."
-crosspost_to_medium: true
+crossposted:
+  Medium: https://medium.com/@AaronGustafson/b71e4fcabfb6
 ---
 
 If you travel abroad for work, you may have some concerns about border crossings, based on [recent](https://www.theatlantic.com/technology/archive/2017/02/a-nasa-engineer-is-required-to-unlock-his-phone-at-the-border/516489/) [news](https://www.cnet.com/news/border-patrol-agents-checking-facebook-profiles-trump-immigration-ban/) [coverage](http://www.cnn.com/2017/01/29/politics/donald-trump-immigrant-policy-social-media-contacts/). I know I do. **I’m not a lawyer**, but I’ve been researching quite a bit and asking for  opinions and recommendations. Below is a summary of the advice I’ve been given. I’m providing it here in case it might be of use to you.

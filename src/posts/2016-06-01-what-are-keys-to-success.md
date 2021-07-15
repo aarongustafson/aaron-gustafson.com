@@ -4,7 +4,8 @@ date: 2016-06-01 11:18:31 -04:00
 comments: true
 tags: [society,personal,philosophy]
 description: "What makes me feel successful? The Golden Rule."
-crosspost_to_medium: true
+crossposted:
+  Medium: https://medium.com/@AaronGustafson/dde3eeb32aa5
 ---
 
 The other day I got a message from someone I’ve been mentoring via email. His question was one I think a lot of folks in our industry struggle with:
