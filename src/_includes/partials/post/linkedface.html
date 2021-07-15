@@ -1,0 +1,8 @@
+<div class="webmention__author p-author h-card">
+  <a class="u-url" href="{{ webmention.author.url }}">
+    <img class="webmention__author__photo u-photo" src="{{ webmention.author.photo }}" width="48" height="48" alt="" title="{{ webmention.author.name }}" loading="lazy">
+  </a>
+  {% if show_name %}
+    <b class="p-name">{{ webmention.author.name }}</b>
+  {% endif %}
+</div>

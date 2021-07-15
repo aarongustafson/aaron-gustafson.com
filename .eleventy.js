@@ -1,5 +1,4 @@
 const pluginSEO = require("eleventy-plugin-seo");
-const widont = require("widont");
 const { DateTime } = require("luxon");
 const markdownIt = require("markdown-it");
 const markdown_options = {
@@ -75,69 +74,12 @@ module.exports = config => {
   config.addFilter("absoluteUrl", pluginRss.absoluteUrl);
   config.addFilter("htmlToAbsoluteUrls", pluginRss.htmlToAbsoluteUrls);
   config.addFilter("dateToRfc3339", pluginRss.dateToRfc3339);
-  function parse_date( date ){
-    if ( ! date ) {
-      return DateTime.now();
-    }
-    // try JS
-    var the_date = DateTime.fromJSDate(date);
-    // then try ISO
-    if ( the_date.invalid ) {
-      the_date = DateTime.fromISO(date);
-    }
-    // fallback to SQL
-    if ( the_date.invalid ) {
-      the_date = DateTime.fromSQL(date);
-    }
-    return the_date;
-  }
-  config.addFilter("readable_date", date => {
-    return parse_date( date ).toFormat("dd LLL yyyy");
-  });
-  config.addFilter("machine_date", date => {
-    return parse_date( date ).toISO();
-  });
   config.addFilter("markdownify", text => {
     return md.renderInline( text );
   });
-  config.addFilter("widont", function(text) {
-    return `${widont( text )}`;
-  });
-  config.addFilter("limit", function(array, limit) {
-    return array.slice(0, limit);
-  });
-  config.addFilter("past", function(array) {
-    const now = DateTime.now();
-    return array
-             .filter( el => DateTime.fromSQL( el.date ) <= now )
-             .sort( (a,b) => {
-               a = DateTime.fromSQL( a.date );
-               b = DateTime.fromSQL( b.date );
-               return a < b ? -1 : a > b ? 1 : 0;
-             })
-             .reverse();
-  });
-  config.addFilter("future", function(array) {
-    const now = DateTime.now();
-    return array
-             .filter( el=> DateTime.fromSQL( el.date ) > now )
-             .sort( (a,b) => {
-               a = DateTime.fromSQL( a.date );
-               b = DateTime.fromSQL( b.date );
-               return a < b ? -1 : a > b ? 1 : 0;
-             });
-  });
-  config.addFilter("minus", ( a, b ) => parseInt(a,10) - parseInt(b,10) );
-  config.addFilter("content_type", path => {
-    let type = "post";
-    if ( path && path.indexOf("/links/") > -1 )
-    {
-      type = "link";
-    }
-    return type;
-  });
-  config.addFilter("path_in_scope", ( path, scope ) => {
-    return path.indexOf( scope ) > -1;
+  const filters = require('./_11ty/filters');
+  Object.keys(filters).forEach(filterName => {
+    config.addFilter(filterName, filters[filterName]);
   });
   
   // Collections

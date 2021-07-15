@@ -1,0 +1,13 @@
+[[redirects]]
+  from = "/*"
+  to = "/error/404/?url=:splat"
+  status = 404
+
+[build]
+  command = "npm run production"
+
+[dev]
+  framework = "eleventy"
+
+[[plugins]]
+  package = "netlify-plugin-cache-folder"

@@ -8,6 +8,7 @@ single: "true"
 
   {% set keywords %}{% if tags.length > 0 %}{{ tags | join(", ") }}{% endif %}{% endset %}
   {% set this_url = site.url + page.url %}
+  {% set all_mentions = webmentions | getWebmentionsForUrl(this_url) %}
 
   <div class="layout-container layout-container--blog">
     <article role="article" class="layout-container__primary h-entry">
@@ -29,15 +30,15 @@ single: "true"
             <dt class="dont-read">Tagged</dt>
             <dd class="dont-read">{{ tag_list( tags ) }}</dd>
 
-            {#
-            <dt class="dont-read">Reactions</dt>
-            <dd class="dont-read">
-              <ul class="entry__jump-links">
-                <li class="entry__jump entry__jump--comments"><a href="{% if index %}{{ root_url }}{{ page.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ this_url }}{% endif %}">Comments</a></li>
-                <li class="entry__jump entry__jump--webmentions"><a href="{% if index %}{{ root_url }}{{ page.url }}{% endif %}#webmentions">{% webmention_count page.url %} Webmentions</a></li>
-              </ul>
-            </dd>
-            #}
+            {% if all_mentions.length > 0 %}
+              <dt class="dont-read">Reactions</dt>
+              <dd class="dont-read">
+                <ul class="entry__jump-links">
+                  {#<li class="entry__jump entry__jump--comments"><a href="{% if index %}{{ root_url }}{{ page.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ this_url }}{% endif %}">Comments</a></li>#}
+                  <li class="entry__jump entry__jump--webmentions"><a href="#webmentions">{{ all_mentions.length }} Webmentions</a></li>
+                </ul>
+              </dd>
+            {% endif %}
 
             {% if crossposted %}
               <dt class="dont-read">Crossposted</dt>
@@ -111,20 +112,7 @@ single: "true"
         {% endif %}
         #}
 
-        {#
-        <hr>
-
-        <section id="webmentions" class="entry__comments dont-read">
-          <h1>Webmentions</h1>
-          {% webmentions page.url posts replies links %}
-
-          <h2>Likes</h2>
-          {% webmention_likes page.url %}
-
-          <h2>Shares</h2>
-          {% webmention_reposts page.url %}
-        </section>
-        #}
+        {% include "partials/post/webmentions.html" %}
 
       </div>
     </article>

@@ -1,4 +1,0 @@
-[[redirects]]
-  from = "/*"
-  to = "/error/404/?url=:splat"
-  status = 404

@@ -5,7 +5,7 @@
   "main": ".eleventy.js",
   "scripts": {
     "start": "npx gulp && concurrently 'npx gulp watch' 'npx eleventy --serve --quiet'",
-    "production": "NODE_ENV=production npx gulp prebuild && NODE_ENV=production eleventy && NODE_ENV=production gulp postbuild"
+    "production": "NODE_ENV=production npx gulp prebuild && NODE_ENV=production eleventy --quiet && NODE_ENV=production gulp postbuild"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
     "concurrently": "^6.2.0",
-    "susy": "^3.0.7"
+    "netlify-cli": "^4.4.2"
   },
   "devDependencies": {
     "@11ty/eleventy-plugin-rss": "^1.1.1",
@@ -45,10 +45,13 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.2",
+    "lodash": "^4.17.21",
     "luxon": "^1.27.0",
     "markdown-it-attrs": "^4.0.0",
     "markdown-it-footnote": "^3.0.3",
     "merge-stream": "^2.0.0",
+    "netlify-plugin-cache-folder": "0.0.8",
+    "node-fetch": "^2.6.1",
     "sass": "^1.35.2",
     "uglify-es": "^3.3.9",
     "widont": "^0.3.3"

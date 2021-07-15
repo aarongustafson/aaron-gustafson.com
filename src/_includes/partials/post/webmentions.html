@@ -1,9 +1,104 @@
+{% set domain_test = r/^http\:\/\/([^\/]+)/g %}
+{% if all_mentions.length > 0 %}
 
-{% capture this_url %}{{ site.url }}{{ page.url }}{% endcapture %}
-{% capture redirect %}{{ site.url }}{{ page.redirect_from }}{% endcapture %}
+  <hr>
 
-{% webmentions page.url %}
+  <section id="webmentions" class="entry__comments dont-read">
+    <h1>Webmentions</h1>
+    
+    {% set replies = all_mentions | webmentionsByType(['mention-of', 'in-reply-to', 'bookmark-of']) | required('name || summary || content') %}
+    {% set twitter = r/twitter\.com/ %}
+    {% set show_name = true %}
+    <div class="webmentions">
+      {% if replies.length > 0 %}
+        <ol class="webmentions__list">
+          {% for webmention in replies %}
+            {% set long_name = webmention.name.length > 200 %}
+            {% if not long_name %}
+              <li id="webmention-{{ webmention['wm-id'] }}" class="webmentions__item">
+                {% if site.debug %}
+                  <pre><code>{{ webmention | dump(2) }}</code></pre>
+                {% endif %}
+                <article class="h-cite webmention webmention--{{ webmention.wm-property }}
+                  {% if not webmention.author %}webmention--no-author{% endif %}
+                  {% if not webmention.author.photo %}webmention--no-photo{% endif %}
+                  ">
+                  {% if webmention.author %}
+                    {% include "partials/post/linkedface.html" %}
+                  {% endif %}
+                  
+                  {% set title_link = false %}
+                  {% set webmention_content %}{% filter trim %}
+                    {% if twitter.test(webmention.url) %}
+                      {% if webmention.content.html %}
+                        {{ webmention.content.html | safe }}
+                      {% else %}
+                        {{ webmention.content.text | markdownify | safe }}
+                      {% endif %}
+                    {% elif webmention.name and webmention.url and not long_name %}
+                      {% set title_link = true %}
+                      <a class="webmention__source u-url" href="{{ webmention.url }}">{{ webmention.name }}</a>
+                    {% elif webmention.name and not long_name %}
+                      {{ webmention.name }}
+                    {% elif webmention.summary %}
+                      {{ webmention.summary.html | safe }}
+                    {% endif %}
+                  {% endfilter %}{% endset %}
 
-{% comment %}
-<p>I’m running into some issues with character encoding with Webmentions, so I’m disabling their display while I try to sort it out.</p>
-{% endcomment %}
+                  {% if webmention_content %}
+                    <div class="webmention__content p-content">
+                      {{ webmention_content | unescape | safe }}
+                    </div>
+                  {% endif %}
+
+                  <div class="webmention__meta">
+                    {% if webmention.published %}
+                      <time class="webmention__pubdate dt-published"
+                            datetime="{{ webmention.published | machine_date }}">{{ webmention.published | readable_date }}</time>
+                    {% endif %}
+                    {% if webmention.url and not title_link %}|
+                      <a class="webmention__source u-url" href="{{ webmention.url }}">Permalink</a>
+                    {% endif %}
+                  </div>
+                </article>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      {% else %}
+        <p class="webmentions__not-found">No webmentions were found.</p>
+      {% endif %}
+    </div>
+
+    {% set show_name = false %}
+    {% set likes = all_mentions | webmentionsByType('like-of') | required('author') %}
+    {% if likes.length > 0 %}
+      <div class="webmentions webmentions--likes">
+        <h2>Likes</h2>
+        <ol class="webmentions__list">
+          {% for webmention in likes %}
+            <li id="webmention-{{ webmention['wm-id'] }}" class="webmentions__item webmention webmention--like">
+              {% include "partials/post/linkedface.html" %}
+            </li>
+          {% endfor %}
+        </ol>
+      </div>
+    {% endif %}
+
+    {% set shares = all_mentions | webmentionsByType([ 'repost-of' ]) %}
+    {% if shares.length > 0 %}
+      <div class="webmentions webmentions--reposts">
+        <h2>Shares</h2>
+        <ol class="webmentions__list">
+          {% for webmention in shares %}
+            <li id="webmention-{{ webmention['wm-id'] }}" class="webmentions__item webmention webmention--repost">
+              {% include "partials/post/linkedface.html" %}
+            </li>
+          {% endfor %}
+        </ol>
+      </div>
+    {% endif %}
+
+  </section>
+
+{% endif %}

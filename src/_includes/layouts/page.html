@@ -10,11 +10,6 @@
           {% if show_title != false %}
             <header>
               <h1 class="entry-title">{{ title | title | widont }}</h1>
-              {% if page.date %}
-                <p class="meta">
-                  {{ post_date( page.date, last_updated_at) }}
-                </p>
-              {% endif %}
             </header>
           {% endif %}
         {% endif %}
