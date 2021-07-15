@@ -1,0 +1,59 @@
+<nav role="navigation">
+  <div class="layout-container">
+
+    <h1 class="hidden">Here’s what you can find on this site:</h1>
+    <ul class="main-navigation">
+      {% for link in site.navigation %}
+        {% set mark = page.url | path_in_scope( link.url ) %}
+        <li class="main-navigation__item">
+          {% if mark %}<mark>{% endif %}
+            <a class="main-navigation__link main-navigation__link--{{ link.url | replace('/','') }}"
+              href="{{ link.url }}"
+              {% if link.url == page.url %}aria-current="true"{% endif %}
+              {% if mark %}aria-describedby="current-page-descriptor"{% endif %}
+              >{{ link.text | safe }}</a>
+          {% if mark %}</mark>{% endif %}
+        </li>
+      {% endfor %}
+      <li class="main-navigation__item">
+        <a class="main-navigation__link main-navigation__link--search" href="#search" aria-label="Search This Site">Search</a>
+      </li>
+    </ul>
+
+    {% if site.simple_search %}
+      <form class="form form--search"
+            action="{{ site.simple_search }}"
+            method="get"
+            id="search">
+        <div role="search">
+          <ol>
+            <li class="form-control form-control--search">
+              <label id="query-label" for="query" class="hidden">What are you looking for?</label>
+              <input id="prepend" type="hidden" value="site:www.aaron-gustafson.com">
+              <input type="hidden" name="kaf" value="1">
+              <input type="hidden" name="kh" value="1">
+              <input id="query" type="search" name="q" aria-labelledby="query-label">
+            </li>
+            <li class="form-control form-control--buttons">
+              <button type="submit" name="sa" value="Search"><b class="hidden">Let’s search on </b>DuckDuckGo</button>
+            </li>
+          </ol>
+        </div>
+      </form>
+      <script>
+        // Enable DuckDuckGo Site Search
+        (function(document){
+          document.getElementById('search')
+            .addEventListener('submit', function(){
+              var $query = document.getElementById('query'),
+                  prepend = document.getElementById('prepend').value;
+              $query.value = prepend + ' ' + $query.value;
+              return true;
+            }, false);
+        }(this.document));
+      </script>
+    {% endif %}
+
+  </div>
+</nav>
+<small id="current-page-descriptor" style="display: none;">(You are on this page or in this section)</small>

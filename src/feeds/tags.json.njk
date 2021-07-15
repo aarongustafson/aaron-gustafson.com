@@ -1,0 +1,22 @@
+---
+pagination:
+  data: collections.tags
+  size: 1
+  alias: tag
+permalink: "/feeds/{{ tag | lower | slug }}.json"
+eleventyComputed:
+  title: "Tagged {{ tag }}"
+  description: "The latest 20 posts and links tagged {{ tag }}."
+---
+{
+  {% set feed_title = "Posts & Links" %}
+  {% include "feeds/preamble.json.njk" %}
+  "items": [
+    {% for post in collections[tag] | reverse | limit(20) %}
+      {% set post_url %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
+      {% set prepend_title %}{% if post.data.ref_url %}Link: {% else %}Post: {% endif %}{% endset %}
+      {% include "feeds/post.json.njk" %}
+      {% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}

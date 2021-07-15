@@ -1,0 +1,20 @@
+---
+pagination:
+  data: collections.tags
+  size: 1
+  alias: tag
+permalink: "/feeds/{{ tag | lower | slug }}.xml"
+eleventyComputed:
+  title: "{{ tag }}"
+  description: "The latest 20 posts and links tagged {{ tag }}."
+---
+{% include "feeds/preamble.xml.njk" %}
+{% for post in collections[ tag ] | reverse | limit(20) %}
+  {% set post_url %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
+  {% set prepend_title %}{% if post.data.ref_url %}Link: {% else %}Post: {% endif %}{% endset %}
+  {% if loop.first %}
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
+  {% endif %}
+  {% include "feeds/post.xml.njk" %}
+{% endfor %}
+</feed>

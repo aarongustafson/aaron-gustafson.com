@@ -1,0 +1,17 @@
+---
+title: "Links Worth Your Time"
+display_title: "The Best of the Internets"
+description: "This is a collection of recommended reading (with a bit of commentary) about a variety of topics from the Web and technology to social justice to marine biology and reef keeping."
+show_links: false
+show_footer: true
+show_title: false
+sharing: false
+is_index: true
+body_class: "notebook notebook--links"
+permalink: "/notebook/links/{% if pagination.pageNumber > 0 %}pg-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+pagination: 
+  data: collections.links
+  alias: posts
+  size: 10
+---
+{% extends "layouts/blog.html" %}

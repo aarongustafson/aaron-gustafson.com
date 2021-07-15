@@ -1,0 +1,9 @@
+
+{% capture this_url %}{{ site.url }}{{ page.url }}{% endcapture %}
+{% capture redirect %}{{ site.url }}{{ page.redirect_from }}{% endcapture %}
+
+{% webmentions page.url %}
+
+{% comment %}
+<p>I’m running into some issues with character encoding with Webmentions, so I’m disabling their display while I try to sort it out.</p>
+{% endcomment %}

@@ -1,0 +1,12 @@
+{% unless page.show_networks == false %}
+  <section class="module module--social">
+    <h1 class="module__title">You can stalk me on the following networks:</h1>
+    <ul class="listing listing--links">
+      {% for link in site.data.links %}
+        <li class="listing__item listing__item--{{ link.site | downcase }}">
+          <a rel="me" href="{{ link.url }}" title="{{ link.title }}"><b class="icon icon-{{ link.site | downcase }}"></b>{{ link.site }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endunless %}

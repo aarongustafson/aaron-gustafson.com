@@ -1,0 +1,66 @@
+{
+  "dir": "ltr",
+  "lang": "en-US",
+  "name": "Aaron Gustafson",
+  "short_name": "AaronG",
+  "scope": "/",
+  "display": "minimal-ui",
+  "start_url": "/",
+  "theme_color": "#27831B",
+  "description": "The online home and work of Aaron Gustafson.",
+  "orientation": "any",
+  "background_color": "#fffcf4",
+  "icons": [{
+      "src": "/i/notification-icon.webp",
+      "type": "image/webp",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/i/notification-icon.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/i/og-logo.webp",
+      "type": "image/webp",
+      "sizes": "800x600"
+    },
+    {
+      "src": "/i/og-logo.png",
+      "type": "image/png",
+      "sizes": "800x600"
+    },
+    {
+      "src": "/favicon.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    }
+  ],
+  "share_target": {
+    "action": "linky/poo/",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "title",
+      "text": "body",
+      "url": "url"
+    }
+  },
+  "shortcuts": [{
+      "name": "Notebook",
+      "url": "/notebook/"
+    },
+    {
+      "name": "Speaking",
+      "url": "/speaking-engagements/"
+    },
+    {
+      "name": "Publications",
+      "url": "/publications/"
+    },
+    {
+      "name": "Interviews",
+      "url": "/interviews/"
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+[
+  {
+    "title": "Windows 10 + PWAs: A Progress Report",
+    "outlet": "Thurrott.com",
+    "date": "2019-05-09 00:00:00 +0000",
+    "url": "https://www.thurrott.com/dev/206412/windows-10-pwas-a-progress-report",
+    "description": "I sat down with Paul Thurrott and a handful of my Edge colleagues to talk about PWAs and the new Edge."
+  },
+  {
+    "title": "15+ Experts Share Their Web Performance Advice for 2018",
+    "outlet": "KeyCDN Blog",
+    "date": "2018-06-11 00:00:00 +0000",
+    "url": "https://www.keycdn.com/blog/web-performance-advice-2018/",
+    "description": "Just like it says on the tin."
+  },
+  {
+    "title": "Ask a UXpert: How Do You Design for Headless Interfaces?",
+    "outlet": "Adobe Blog",
+    "date": "2018-05-29 00:00:00 +0000",
+    "url": "https://theblog.adobe.com/ask-uxpert-design-headless-interfaces/",
+    "description": "Oliver Lindberg interviewed a few of us to ask our thoughts on designing for aural experiences."
+  },
+  {
+    "title": "This is What Microsoft Said About PWAs at Build 2018",
+    "outlet": "Thurrott.com",
+    "date": "2018-05-12 00:00:00 +0000",
+    "url": "https://www.thurrott.com/windows/windows-10/159241/microsoft-said-pwas-build-2018",
+    "description": "Paul recaps Build’s PWA content with lots of attributions to me."
+  },
+  {
+    "title": "Microsoft’s Bold Plan to Bring PWAs to Windows 10",
+    "outlet": "Thurrott.com",
+    "date": "2017-10-29 00:00:00 +0000",
+    "url": "https://www.thurrott.com/windows/windows-10/142649/microsofts-bold-plan-bring-pwas-windows-10",
+    "description": "Jeff Burtoft & I sat down with Paul Thurrott to talk abotu PWAs and Windows 10."
+  },
+  {
+    "title": "The Tools I Use",
+    "outlet": "An Event Apart",
+    "date": "2017-07-26 00:00:00 +0000",
+    "url": "https://aneventapart.com/news/post/aaron-gustafson-the-tools-i-use",
+    "description": "I chatted a bit with Eric Meyer about the tools I’m currently using every day."
+  },
+  {
+    "title": "How to make software decisions with everyone in mind",
+    "outlet": "Skuid Blog",
+    "date": "2017-05-20 00:00:00 +0000",
+    "url": "https://www.skuid.com/blog/make-software-decisions-everyone-mind/",
+    "description": "I sat down with Charlie Moss of Skuid to talk about user experience, accessibility, progressive enhancement, and moving peoples’ cheese."
+  },
+  {
+    "title": "How The Best Ecommerce Sites Win at Web Design",
+    "outlet": "XCart",
+    "date": "2017-05-31 00:00:00 +0000",
+    "url": "https://www.x-cart.com/blog/best-ecommerce-website-design.html",
+    "description": "In a discussion about e-commerce, I talked a bit about the importance of the often overlooked checkout page."
+  },
+  {
+    "title": "The future of adaptive user interfaces",
+    "outlet": "Creative Bloq",
+    "date": "2017-04-27 00:00:00 +0000",
+    "url": "http://www.creativebloq.com/inspiration/the-future-of-adaptive-user-interfaces",
+    "description": "I answered a few questions about adaptive interfaces and my upcoming keynote at Generate Conf."
+  },
+  {
+    "title": "A Funny Thing Happened To Me On The Way To 2016…",
+    "outlet": "An Event Apart",
+    "date": "2016-06-07 00:00:00 +0000",
+    "url": "http://aneventapart.com/news/post/a-funny-thing-happened-to-me-on-the-way-to-2016",
+    "description": "I join an impressive list of AEA speakers in reflecting on where we were in our careers 10 years ago."
+  },
+  {
+    "title": "Gone fishin': Patagonia bids farewell to mobile app",
+    "outlet": "Digiday",
+    "date": "2016-06-01 00:00:00 +0000",
+    "url": "http://digiday.com/brands/gone-fishin-patagonia-bids-farewell-mobile-app/",
+    "description": "Quoted again on Progressive Web Apps."
+  },
+  {
+    "title": "WTF are Progressive Web Apps?",
+    "outlet": "Digiday",
+    "date": "2016-05-23 00:00:00 +0000",
+    "url": "http://digiday.com/platforms/wtf-progressive-web-apps/",
+    "description": "Digiday’s coverage of Progressive Web Apps includes a bit of commentary from me."
+  },
+  {
+    "title": "Software developers keep outdated tech relevant thanks to Chattanooga's Open Device Lab",
+    "outlet": "Chattanooga Times Free Press",
+    "date": "2016-04-22 00:00:00 +0000",
+    "url": "http://www.timesfreepress.com/news/life/entertainment/story/2016/apr/22/chattanoogas-open-device-lab-helps-software-d/361237/",
+    "description": "A bit about the CHA Open Device Lab which Kelly & I co-founded."
+  },
+  {
+    "title": "An Interview with Aaron Gustafson on Crafting Rich Experiences with Progressive Enhancement",
+    "outlet": "Peachpit",
+    "date": "2016-01-28 00:00:00 +0000",
+    "url": "http://www.peachpit.com/articles/article.aspx?p=2479524",
+    "description": "Peachpit interviews me about progressive enhancement, the Second Edition of <cite>Adaptive Web Design</cite>, and what I love about Chattanooga."
+  },
+  {
+    "title": "Web Performance: 20+ Experts Share Their Advice and Mistakes",
+    "outlet": "CDN News & Insights",
+    "date": "2016-01-14 00:00:00 +0000",
+    "url": "https://www.keycdn.com/blog/web-performance-advice/",
+    "description": "Mine not withstanding, there is some truly great advice in this post."
+  },
+  {
+    "title": "60 Web Performance Experts to Follow Online",
+    "outlet": "CDN News & Insights",
+    "date": "2015-12-10 00:00:00 +0000",
+    "url": "https://www.keycdn.com/blog/web-performance-experts/",
+    "description": "I’m honored to have been included on this list!"
+  },
+  {
+    "title": "Chattanooga Chew",
+    "outlet": "An Event Apart",
+    "date": "2015-08-20 00:00:00 +0000",
+    "url": "http://aneventapart.com/news/post/chattanooga-chew",
+    "description": "Eric Meyer asked me about my new digs at Microsoft, living in Chattanooga, and how I found my way onto the Web."
+  },
+  {
+    "title": "Microsoft Hires Two Open Standards Warriors (And Ex-Foes) For Its Developer Evangelism Unit",
+    "outlet": "CRN",
+    "date": "2015-01-30 00:00:00 +0000",
+    "url": "http://www.crn.com/news/applications-os/300075586/microsoft-hires-two-open-standards-warriors-and-ex-foes-for-its-developer-evangelism-unit.htm",
+    "description": "It’s strange to have a new job make the news."
+  },
+  {
+    "title": "10 web design trends that will change everything in 2015",
+    "outlet": "Creative Bloq",
+    "date": "2015-01-21 00:00:00 +0000",
+    "url": "http://www.creativebloq.com/web-design/hottest-trends-2015-11513980",
+    "description": "A distillation of the Net Magazine piece (below) into 10 picks."
+  },
+  {
+    "title": "Top 20 Web Design Trends for 2015",
+    "outlet": "Net Magazine",
+    "date": "2015-01-21 00:00:00 +0000",
+    "description": "A handful of Web folks, myself included, were asked weigh in on what we think 2015 will bring. My bet: Isomorphic JavaScript."
+  },
+  {
+    "title": "QuickPanel: Voice",
+    "outlet": "UX Magazine",
+    "date": "2014-06-12 00:00:00 +0000",
+    "url": "http://uxmag.com/articles/quickpanel-voice",
+    "description": "I joined Steve Portigal and Whitney Quesenbery to talk about voice interfaces."
+  },
+  {
+    "title": "Aaron Gustafson: The Interview",
+    "outlet": "Net Magazine",
+    "date": "2014-06-17 00:00:00 +0000",
+    "url": "http://www.creativebloq.com/netmag/aaron-gustafson-creating-accessible-mobile-web-81412687",
+    "description": "To say I was floored that the venerable <cite>Net Magazine</cite> asked if I’be be the subject of their Interview spread would be the understatement of the century. I mean holy crap! It was an honor to be asked and I loved getting to wax philosophical about progressive enhancement, web standards, and the future of web design."
+  },
+  {
+    "title": "15 Pro Techniques for Beating Creative Block",
+    "outlet": "Creative Bloq",
+    "date": "2014-03-28 00:00:00 +0000",
+    "url": "http://www.creativebloq.com/creativity/15-pro-techniques-beating-creative-block-3145683",
+    "description": "Dan Rubin, Trent Walton, Derek Featherstone, Rachel Shillcock, and I discussed creative block and what we do to move past it."
+  },
+  {
+    "title": "Defining and Understanding Adaptive Content",
+    "outlet": "CMSWire",
+    "date": "2013-12-12 00:00:00 +0000",
+    "url": "http://www.cmswire.com/cms/customer-experience/defining-and-understanding-adaptive-content-023433.php",
+    "description": "Wherein I talk a bit about content strategy in the era of responsive design."
+  },
+  {
+    "outlet": "The Top 50 Books for Web Designers",
+    "date": "2013-11-27 00:00:00 +0000",
+    "url": "http://www.creativebloq.com/inspiration/books-web-designers-11122782",
+    "description": "My book made the top of the web designer’s Christmas reading list!"
+  },
+  {
+    "title": "Responsive Web Design: 6 Experts, 4 Questions",
+    "outlet": "Net Magazine",
+    "date": "2013-07-31 00:00:00 +0000",
+    "url": "http://www.creativebloq.com/responsive-web-design-6-experts-4-questions-7133876",
+    "description": "Helen Bailey cornered Brad Frost, Tim Kadlec, Ben Callahan, Dan Mall, David Rupert, and me to get our thoughts on responsive design."
+  },
+  {
+    "title": "Big Question: What Was the Last Thing You Built for Fun?",
+    "outlet": "Net Magazine",
+    "date": "2013-06-18 00:00:00 +0000",
+    "url": "http://www.creativebloq.com/design/big-question-what-was-last-thing-you-built-fun-6135581",
+    "description": "I got to talk a little about my pet project, [tipr.mobi](http://tipr.mobi)."
+  },
+  {
+    "title": "Big Question: What Skills Does a Digital Designer Need In 2013?",
+    "outlet": "Creative Bloq",
+    "date": "2012-12-10 00:00:00 +0000",
+    "url": "http://www.creativebloq.com/design/big-question-what-skills-does-digital-designer-need-2013-12125914",
+    "description": "In a nutshell: I think it’s imprtant to be familiar with the technologies that drive the web, but I think it’s unrealistic to expect every designer to be able to code the websites they help shape."
+  },
+  {
+    "title": "Big Question: How Do You Handle Project Management?",
+    "outlet": "Net Magazine",
+    "date": "2012-11-08 00:00:00 +0000",
+    "url": "http://www.creativebloq.com/netmag/big-question-how-do-you-handle-project-management-11125976",
+    "description": "I weigh in regarding the dust-up Andy Rutledge created with his tirade against project mamangers. Simply: Good project managers are a godsend."
+  },
+  {
+    "title": "Devs Respond to the Adobe Edge Suite",
+    "outlet": "Net Magazine",
+    "date": "2012-10-05 00:00:00 +0000",
+    "url": "http://www.creativebloq.com/design/devs-respond-adobe-edge-suite-10126049",
+    "description": "As part of a feature on Adobe’s release of its Edge Suite, I offered some of my thoughts."
+  },
+  {
+    "title": "Big Question: Should We Drop Social Media Buttons?",
+    "outlet": "Net Magazine",
+    "date": "2012-07-18 00:00:00 +0000",
+    "url": "http://www.creativebloq.com/netmag/big-question-should-we-drop-social-media-buttons-7126198",
+    "description": "While I do think social media buttons are often overused with little to know thought, I don’t despise them and believe they can be used smartly."
+  },
+  {
+    "title": "Coding the Future: HTML5 Takes the Internet by Storm",
+    "outlet": "BBC News",
+    "date": "2012-05-07 00:00:00 +0000",
+    "url": "http://www.bbc.com/news/business-17931814",
+    "description": "The BBC was doing a story on the rise of HTML5 and asked if I would agree to be interviewed. Are you friggin’ kidding me?"
+  },
+  {
+    "title": "Webkit Scuppers Skip-To-Content Links",
+    "outlet": "Net Magazine",
+    "date": "2012-02-02 00:00:00 +0000",
+    "url": "http://www.creativebloq.com/netmag/webkit-scuppers-skip-content-links-2126494",
+    "description": "I weigh in on Webkit’s issue with moving focus to targeted elements. Thankfully, the issue has been resolved now."
+  },
+  {
+    "title": "15 Top Web Design and Development Trends For 2012",
+    "outlet": "Creative Bloq",
+    "date": "2012-01-09 00:00:00 +0000",
+    "url": "http://www.creativebloq.com/industry-trends/15-top-web-design-and-development-trends-2012-1123018",
+    "description": "I call on responsive designers to consider smaller, “low-end” tablets and phones."
+  },
+  {
+    "title": "Firefox 6 out Today",
+    "outlet": "Net Magazine",
+    "date": "2011-08-16 00:00:00 +0000",
+    "url": "http://www.creativebloq.com/netmag/firefox-6-out-today-8116834",
+    "description": "I had a few things to say about Firefox’s move to a rapid release cycle."
+  },
+  {
+    "title": "Google Apps Ditches Support for IE7",
+    "outlet": "Net Magazine",
+    "date": "2011-06-03 00:00:00 +0000",
+    "url": "http://www.creativebloq.com/netmag/google-apps-ditches-support-ie7-6116978",
+    "description": "I made a few comments about Google’s retirement of IE7."
+  },
+  {
+    "title": "Big Question: Fair Play",
+    "outlet": "Net Magazine",
+    "date": "2011-03-11 00:00:00 +0000",
+    "url": "http://www.creativebloq.com/netmag/big-question-fair-play-3117079",
+    "description": "My thoughts on web conferences."
+  }
+]

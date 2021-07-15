@@ -1,0 +1,13 @@
+{
+  "title": "Aaron Gustafson",
+  "description": "Hi there. My name is Aaron Gustafson and I work on the web.",
+  "url": "https://www.aaron-gustafson.com",
+  "author": "Aaron Gustafson",
+  "twitter": "AaronGustafson",
+  "image": "/i/og-logo.png",
+  "options": {
+    "titleDivider": " :: ",
+    "imageWithBaseUrl": true,
+    "twitterCardType": "summary_large_image"
+  }
+}

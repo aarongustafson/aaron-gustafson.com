@@ -1,0 +1,37 @@
+---
+footer: "true"
+github_edit: "_layouts/tag.html"
+---
+{% extends "layouts/base.html" %}
+
+{% block content %}
+  {% set the_title %}<b>Browse by Tag:</b> <b>{{ tag }}</b>{% endset %}
+  {% set posts = collections[ tag ] %}
+  {% set svg_essay %}{{ "/src/static/i/icons/essay.svg" | svgContents | replace('"100"','"24"') | replace('"87"','"20"') | safe }}{% endset %}
+  {% set svg_link %}{{ "/src/static/i/icons/pin.svg" | svgContents  | replace('"100"','"24"') | safe }}{% endset %}
+
+  <article role="article" class="page layout-container layout-container--blog">
+    <h1 class="page__title subsection__header">{{ the_title | title | widont | safe }}</h1>
+    <div class="layout-container__primary">
+
+      <div id="blog-archives">
+        {% for post in posts | reverse %}
+          {% set type = post.inputPath | content_type %}
+          <article class="entry entry--teaser entry--{{ type }}">
+            {% if type=="post" %}
+              <p class="entry__type" title="Post" aria-label="Post">{{ svg_essay | safe }}</p>
+            {% elif type=="link" %}
+              <p class="entry__type" title="Link" aria-label="Link">{{ svg_link | safe }}</p>
+            {% endif %}
+            <div class="entry__details">
+              <h2 class="entry__title entry-title">
+                <a rel="bookmark" href="{{ post.url }}">{{ post.data.title | widont }}</a>
+              </h2>
+              <p class="entry__meta">{% if post.collection=="posts" %}Posted{% else %}Saved{% endif %} on <time class="dt-published" datetime="{{ post.data.date | machine_date }}">{{ post.data.date | readable_date }}</time></p>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </article>
+{% endblock %}

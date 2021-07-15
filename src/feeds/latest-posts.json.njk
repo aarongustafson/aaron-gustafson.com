@@ -1,0 +1,17 @@
+---
+title: Posts
+description: "The latest 20 posts."
+permalink: "/feeds/latest-posts.json"
+eleventyExcludeFromCollections: true
+---
+{
+  {% include "feeds/preamble.json.njk" %}
+  "items": [
+    {% for post in collections.posts | limit(20) %}
+      {% set post_url %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
+      {% set prepend_title = "" %}
+      {% include "feeds/post.json.njk" %}
+      {% if not loop.last %},{% endif %}
+    {% endfor %}
+  ]
+}

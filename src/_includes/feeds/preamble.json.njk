@@ -1,0 +1,17 @@
+"version": "https://jsonfeed.org/version/1",
+"title": "{{ site.title }}: {{ feed_title }}",
+"description": "{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}",
+"home_page_url": "{{ site.url }}",
+"feed_url": "{{ site.url + page.url }}",
+"author": {
+  "name": "{{ site.author.name }}",
+  {% if site.author.email %}
+    "email": "{{ site.author.email }}",
+  {% endif %}
+  {% if site.author.uri %}
+    "url": "{{ site.author.uri }}"
+  {% endif %}
+},
+"icon": "{{ site.url + site.logo }}",
+"favicon": "{{ site.url }}/favicon.png",
+"expired": false,

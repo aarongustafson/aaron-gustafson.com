@@ -1,0 +1,14 @@
+{% unless page.show_networks == false %}
+  <section class="module module--social">
+    <p>If you’re interested in following my presentations:</p>
+    <ul class="listing listing--links">
+      {% for link in site.data.links %}
+        {% if link.category == 'speaking' %}
+          <li class="listing__item listing__item--{{ link.site | downcase }}">
+            <a href="{{ link.url }}" title="{{ link.title }}">{{ link.site }}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+{% endunless %}

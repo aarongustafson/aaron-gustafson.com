@@ -1,0 +1,94 @@
+---
+layout: "page"
+title: "Interviews &amp; More"
+description: "I love getting the time to talk to people about the web. Here’s a collection of podcasts, TV programs, and more that I’ve appeared in."
+body_class: "appearances"
+show_title: false
+show_sidebar: false
+show_footer: false
+sharing: false
+sitemap: true
+---
+
+<h1 class="page__title">Interviews &amp; More</h1>
+
+<p>I’ve had the great pleasure of being interviewed on numerous podcasts, in digital and print publications, and even <a href="http://www.bbc.com/news/business-17931814">on the BBC</a>!</p>
+
+<section id="podcasts" class="section">
+  <h2 class="section__title">Podcasts</h2>
+  <ul class="listing listing--podcasts listing--grid">
+    {% for podcast in podcasts %}
+      <li class="listing__item listing__item--{{ loop.index }} podcast">
+        {% set display_title %}{{ podcast.outlet }} {% if podcast.episode %}#{{ podcast.episode }}{% endif %}{% endset %}
+        <h3 class="listing__item__meta_title podcast__outlet">{{ display_title | safe }}</h3>
+        {% if podcast.title %}
+          <h4 class="listing__item__title podcast__title"><a href="{{ podcast.url }}">{{ podcast.title }}</a></h4>
+        {% endif %}
+        </a>
+        {#
+        {% comment %}
+          {% if podcast.src %}
+            <audio class="podcast_player" src="{{ podcast.src }}" controls></audio>
+          {% elsif podcast.embed %}
+            <iframe class="podcast_embed" src="{{ podcast.embed }}" style="max-width:100%; height: 90px"></iframe>
+          {% else %}
+            <a class="cta cta--listen" href="{{ podcast.url }}">Listen to {{ display_title }}</a>
+          {% endif %}
+          <p class="listing__item__meta appearance__meta"><time class="podcast__date">{{ podcast.date | date: "%B %Y" }}</time></p>
+        {% endcomment %}
+        #}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section id="press" class="section">
+  <h2 class="section__title">Press</h2>
+  <ul class="listing listing--press">
+    {% for appearance in press %}
+      {% set display_title %}{% if appearance.title %}{{ appearance.title }}{% else %}{{ appearance.outlet }}{% endif %}{% endset %}
+      <li class="listing__item listing__item--{{ loop.index }} appearance">
+        <h3 class="listing__item__title appearance__title">
+          {% if appearance.url %}
+            <a href="{{ appearance.url }}">{{ display_title | safe }}</a>
+          {% else %}
+            {{ display_title | safe }}
+          {% endif %}
+        </h3>
+        <p class="listing__item__meta appearance__meta">
+          <time class="appearance__date">{{ appearance.date | readable_date }}</time>{% if display_title != appearance.outlet %},{% endif %}
+          {% if display_title != appearance.outlet %}
+            <cite class="appearance__venue">{{ appearance.outlet }}</cite>
+          {% endif %}
+        </p>
+        {#
+          <div class="listing__item__description appearance__description">
+            {{ appearance.description | markdownify }}
+          </div>
+        #}
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section id="citations" class="section">
+  <h2 class="section__title">Citations</h2>
+  <p>Oh my gosh y’all, it’s such an honor to be referenced in your books, articles, and talks.
+  Whenever someone mentions one, I add it to
+  <a href="{{ site.repo_url | replace('/tree/', '/edit/') }}src/_data/citations.json">the list</a>.
+  I can’t even tell you how much it means for my work to have been a small part of over
+  {% for key, value in citations %}
+    {% if key != "code" %}
+      {% if loop.last %} and {% endif %}{{ value | length }} {{ key }}{% if not loop.last %},{% endif %}
+    {% endif %}
+  {% endfor %}
+  by so many people I’m inspired by, including
+  <a href="https://zeldman.com">Jeffrey Zeldman</a>, 
+  <a href="https://chenhuijing.com">Chen Hui Jing</a>, 
+  <a href="https://zomigi.com">Zoe Mickley Gillenwater,
+  <a href="https://preston.so/">Preston So</a>,
+  <a href="https://blog.natbat.net/">Natalie Downe</a>,
+  <a href="https://chriscoyier.net/">Chris Coyier</a>,
+  and <a href="https://rwt.io">Jason Pamental</a>.
+  </ul>
+</section>

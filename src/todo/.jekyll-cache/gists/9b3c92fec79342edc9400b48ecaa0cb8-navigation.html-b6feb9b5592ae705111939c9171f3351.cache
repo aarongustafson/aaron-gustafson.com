@@ -1,0 +1,8 @@
+<nav class="navigation" role="navigation" id="menu">
+  <h1 class="hidden">Browse 24 ways</h1>
+  <ul class="nav nav-topics">
+    <li class="nav_item"><a href="/topics/business/" data-icon="&#x2655;">Business</a></li>
+    …
+  </ul>
+  …
+</nav>

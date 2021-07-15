@@ -1,0 +1,323 @@
+{% macro label( text, name ) %}
+  <label class="question__label" for="field-{{ name }}">{{ text | widont }}</label>
+{% endmacro %}
+
+{% macro field( type, name, data ) %}
+  <br>
+  <input class="question__field"
+        type="{{ type }}"
+        name="{{ name }}"
+        id="field-{{ name }}"
+        {% if data.autofocus %}autofocus{% endif %}
+        {% if data.disabled %}disabled{% endif %}
+        {% if data.autocapitalize %}autocapitalize="{{ data.autocapitalize }}"{% endif %}
+        {% if data.autocomplete %}autocomplete="{{ data.autocomplete }}"{% endif %}
+        {% if data.autocorrect %}autocorrect="{{ data.autocorrect }}"{% endif %}
+        {% if data.description %}aria-describedby="description-{{ name }}"{% endif %}
+        {% if data.inputmode %}inputmode="{{ data.inputmode }}"{% endif %}
+        {% if data.list %}list="{{ data.list }}"{% endif %}
+        {% if data.max %}max="{{ data.max }}"{% endif %}
+        {% if data.maxlength %}maxlength="{{ data.maxlength }}"{% endif %}
+        {% if data.min %}min="{{ data.min }}"{% endif %}
+        {% if data.minlength %}minlength="{{ data.minlength }}"{% endif %}
+        {% if data.multiple %}multiple{% endif %}
+        {% if data.pattern %}pattern="{{ data.pattern }}"{% endif %}
+        {% if data.placeholder %}placeholder="{{ data.placeholder }}"{% endif %}
+        {% if data.readonly %}readonly{% endif %}
+        {% if data.required %}required aria-required="true"{% endif %}
+        {% if data.size %}size="{{ data.size }}"{% endif %}
+        {% if data.spellcheck %}spellcheck="{{ data.spellcheck }}"{% endif %}
+        {% if data.step %}step="{{ data.step }}"{% endif %}
+        >
+  {% if data.description %}
+    <br>
+    {{ description( name, data.description ) }}
+  {% endif %}
+{% endmacro %}
+
+{% macro confirm( text, name, data ) %}
+  <label for="field-{{ name }}" class="question--confirm">
+    <input class="question__field question__field--confirm"
+          type="checkbox"
+          name="{{ name }}"
+          id="field-{{ name }}"
+          value="{% if data.value %}{{ data.value }}{% else %}1{% endif %}"
+          {% if data.required %}required aria-required="true"{% endif %}
+          {% if data.description %}aria-describedby="description-{{ name }}"{% endif %}
+          >
+    {{ text }}
+  </label>
+  {% if data.description %}
+    <br>
+    {{ description( name, data.description ) }}
+  {% endif %}
+{% endmacro %}
+
+{% macro select( name, options, data ) %}
+  <br>
+  <select id="field-{{ name }}"
+          name="{{ name }}"
+          {% if data.required %}required aria-required="true"{% endif %}
+          {% if data.multiple %}multiple{% endif %}
+          {% if data.description %}aria-describedby="description-{{ name }}"{% endif %}
+          {% if data.attributes %}
+            {% for attribute in data.attributes %}
+              {{ attribute }}
+            {% endfor %}
+          {% endif %}
+          >
+    {% for opt in data.options_before %}
+      {{ option( opt ) }}
+    {% endfor %}
+    {% for opt in options %}
+      {{ option( opt ) }}
+    {% endfor %}
+    {% for opt in data.options_after %}
+      {{ option( opt ) }}
+    {% endfor %}
+  </select>
+  {% if data.description %}
+    <br>
+    {{ description( name, data.description ) }}
+  {% endif %}
+{% endmacro %}
+
+{% macro option( data ) %}
+  {% if data.label %}
+    <option value="{{ data.value }}">{{ data.label }}</option>
+  {% else %}
+    <option>{{ data }}</option>
+  {% endif %}
+{% endmacro %}
+
+{% macro textarea( name, data ) %}
+  <br>
+  <textarea id="field-{{ name }}"
+            name="{{ name }}"
+            {% if data.rows %}rows="{{ data.rows }}"{% else %}rows="10"{% endif %}
+            cols="100"
+            {% if data.required %}required aria-required="true"{% endif %}
+            {% if data.autocorrect %}autocorrect="{{ data.autocorrect }}"{% endif %}
+            {% if data.spellcheck %}spellcheck="{{ data.spellcheck }}"{% endif %}
+            {% if data.autocapitalize %}autocapitalize="{{ data.autocapitalize }}"{% endif %}
+            {% if data.description %}aria-describedby="description-{{ name }}"{% endif %}
+            ></textarea>
+  {% if data.description %}
+    {{ description( name, data.description ) }}
+  {% endif %}
+{% endmacro %}
+
+{% macro radios( label, name, options, data ) %}
+  <fieldset>
+    <legend
+      {% if data.description %}aria-describedby="description-{{ name }}"{% endif %}
+      >{{ label }}</legend>
+    <ul class="question__list">
+      {% for option in options %}
+        <li>
+          {% if option.value %}
+            <label for="field-{{ name }}-{{ option.value }}">
+              <input type="radio"
+                    name="{{ name }}"
+                    id="field-{{ name }}-{{ option.value }}"
+                    value="{{ option.value }}"
+                    {% if data.required %}required aria-required="true"{% endif %}
+                    {% if option.note %}aria-describedby="description-{{ name }}-{{ option.value }}"{% endif %}
+                    >{{ option.label }}</label>
+          {% else %}
+            <label for="field-{{ name }}-{{ option }}">
+              <input type="radio"
+                    name="{{ name }}"
+                    id="field-{{ name }}-{{ option }}"
+                    value="{{ option }}"
+                    {% if data.required %}required aria-required="true"{% endif %}
+                    >{{ option }}</label>
+          {% endif %}
+          {% if option.note %}
+            <br>
+            {{ description( ( name + '-' + option.value ), option.note ) }}
+          {% endif %}
+        </li>
+      {% endfor %}
+      {% if data.other %}
+        <li>
+          <label for="field-{{ name }}-other">
+            <input type="radio"
+                   name="{{ name }}"
+                   id="field-{{ name }}-other"
+                   >
+            Other
+            <input type="text"
+                   name="{{ name }}"
+                   id="field-{{ name }}-other-value"
+                   aria-label="Other value"
+                   >
+          </label>
+          <script>
+            (function(window, document){
+              var $other_radio = document.getElementById("field-{{ name }}-other"),
+                  $other_radios = document.querySelectorAll("[name='{{ name }}']"),
+                  $other_field = document.getElementById("field-{{ name }}-other-value"),
+                  other_value = '';
+              $other_field.disabled = true;
+              $other_field.setAttribute( 'aria-hidden', 'true' );
+              $other_radios.forEach(function($radio){
+                $radio.addEventListener('change', updateOther);
+              });
+              function updateOther()
+              {
+                if ( $other_radio.checked )
+                {
+                  $other_field.value = other_value;
+                  $other_field.disabled = false;
+                  $other_field.required = true;
+                  $other_field.setAttribute( 'aria-hidden', 'false' );
+                  $other_field.setAttribute( 'aria-required', 'true' );
+                  $other_field.focus();
+                }
+                else
+                {
+                  other_value = $other_field.value;
+                  $other_field.disabled = true;
+                  $other_field.required = false;
+                  $other_field.setAttribute( 'aria-hidden', 'true' );
+                  $other_field.removeAttribute('aria-required');
+                  $other_field.value = '';
+                }
+              }
+              updateOther();
+            }(window, document))
+          </script>
+        </li>
+      {% endif %}
+    </ul>
+    {% if data.description %}
+      {{ description( name, data.description ) }}
+    {% endif %}
+  </fieldset>
+{% endmacro %}
+
+{% macro checkboxes( label, name, options, data ) %}
+  <fieldset>
+    <legend
+      {% if data.description %}aria-describedby="description-{{ name }}"{% endif %}
+      >{{ label }}</legend>
+    <ul class="question__list">
+      {% for option in options %}
+        <li>
+          {% if option.value %}
+            <label for="field-{{ name }}-{{ option.value }}">
+              <input type="checkbox"
+                    name="{{ name }}[]"
+                    id="field-{{ name }}-{{ option.value }}"
+                    value="{{ option.value }}"
+                    {% if option.note %}aria-describedby="description-{{ name }}-{{ option.value }}"{% endif %}
+                    >{{ option.label }}</label>
+          {% else %}
+            <label for="field-{{ name }}-{{ option }}">
+              <input type="checkbox"
+                    name="{{ name }}[]"
+                    id="field-{{ name }}-{{ option }}"
+                    value="{{ option }}"
+                    >{{ option }}</label>
+          {% endif %}
+          {% if option.note %}
+            <br>
+            {{ description( ( name + '-' + option.value ), option.note ) }}
+          {% endif %}
+        </li>
+      {% endfor %}
+      {% if data.other %}
+        <li>
+          <label for="field-{{ name }}-other">
+            <input type="checkbox"
+                   id="field-{{ name }}-other"
+                   >
+            Other
+            <input type="text"
+                   name="{{ name }}[]"
+                   id="field-{{ name }}-other-value"
+                   aria-label="Other value"
+                   >
+          </label>
+          <script>
+            (function(){
+              var $other_checkbox = document.getElementById("field-{{ name }}-other"),
+                  $other_field = document.getElementById("field-{{ name }}-other-value"),
+                  other_value = '';
+              $other_field.disabled = true;
+              $other_field.setAttribute( 'aria-hidden', 'true' );
+              $other_checkbox.addEventListener('change', updateOther);
+              function updateOther()
+              {
+                if ( $other_checkbox.checked )
+                {
+                  $other_field.value = other_value;
+                  $other_field.disabled = false;
+                  $other_field.required = true;
+                  $other_field.setAttribute( 'aria-hidden', 'false' );
+                  $other_field.setAttribute( 'aria-required', 'true' );
+                  $other_field.focus();
+                }
+                else
+                {
+                  other_value = $other_field.value;
+                  $other_field.disabled = true;
+                  $other_field.required = false;
+                  $other_field.setAttribute( 'aria-hidden', 'true' );
+                  $other_field.removeAttribute('aria-required');
+                  $other_field.value = '';
+                }
+              }
+            }(window, document))
+          </script>
+        </li>
+      {% endif %}
+    </ul>
+    {% if data.description %}
+      {{ description( name, data.description ) }}
+    {% endif %}
+  </fieldset>
+{% endmacro %}
+
+{% macro description( id, html ) %}
+  <em class="question__description" id="description-{{ id }}">{{ html | widont | safe }}</em>
+{% endmacro %}
+
+{% macro hidden_field( name, value ) %}
+  <input type="hidden" name="{{ name }}" id="field-{{ name }}" value="{{ value }}">
+{% endmacro %}
+
+{% macro button( text ) %}
+  <button type="submit" class="button">{{ text }}</button>
+{% endmacro %}
+
+{% macro paginate( what, pagination ) %}
+  <nav class="pagination" aria-label="Pages">
+    {% if pagination.previousPageHref %}<a href="{{ pagination.previousPageHref }}" class="prev" rel="prev">← Previous<b class="hidden"> {{ what }}</b></a>{% endif %}
+    <span class="pagination__pages">{{ what }}
+      <span class="pagination__pages__current">{{ pagination.pageNumber + 1 }}</span>&nbsp;of&nbsp;<span class="pagination__pages__total">{{ pagination.hrefs.length }}</span>
+    </span>
+    {% if pagination.nextPageHref %}<a href="{{ pagination.nextPageHref }}" class="next" rel="next">Next<b class="hidden"> {{ what }}</b> →</a>{% endif %}
+  </nav>
+{% endmacro %}
+
+{% macro post_date( date, updated ) %}
+  <time class="dt-published" datetime="{{ date | machine_date }}">{{ date | readable_date }}</time>
+  {% if updated %}
+    <br>(updated <b class="hidden">on</b>
+    <time class="dt-updated" datetime="{{ updated | machine_date }}">{{ updated | readable_date }}</time>)
+  {% endif %}
+{% endmacro %}
+
+{% macro tag_list( tags ) %}
+  {% for tag in tags %}
+    {% if forloop.first %}
+      <span class="post__tags">
+    {% endif %}
+    <a class="post__tag" href="/tags/{{ tag | lower | slug }}/">{{ tag | widont }}</a>
+    {% if forloop.last %}
+      </span>
+    {% endif %}
+  {% endfor %}
+{% endmacro %}

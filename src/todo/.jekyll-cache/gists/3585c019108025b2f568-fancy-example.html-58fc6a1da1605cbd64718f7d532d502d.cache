@@ -1,0 +1,4 @@
+<p class="form-control">
+  <input id="full_name" name="full_name">
+  <label for="full_name">Your Name</label>
+</p>

@@ -1,0 +1,18 @@
+{% unless page.show_links == false %}
+  {% assign links = (site.links | sort: 'date') | reverse %}
+
+  <section class="module module--promotional">
+    <h1 class="module__title">Recommended Reading</h1>
+    <ul class="listing listing--links">
+      {% for link in links limit:5 %}
+        <li class="listing__item listing__item--link listing__item--{{ forloop.index }}">
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+      <li class="listing__item listing__item--more">
+        <a href="/notebook/links/">{{ site.data.microcopy.links.more_link }}</a>
+      </li>
+    </ul>
+  </section>
+
+{% endunless %}

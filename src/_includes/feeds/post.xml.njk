@@ -1,0 +1,24 @@
+<entry>
+  <id>{{ post_url }}</id>
+  <title type="html">{{ prepend_title + post.data.title | markdownify }}</title>
+  <link href="{{ post_url }}" rel="alternate" type="text/html" />
+
+  <published>{{ post.date | dateToRfc3339 }}</published>
+  {% if post.data.last_modified_at %}
+    <updated>{{ post.data.last_modified_at | dateToRfc3339 }}</updated>
+  {% endif %}
+
+  <content type="html" xml:base="{{ site.url }}"><![CDATA[{{ post.templateContent | safe }}]]></content>
+  {% if post.data.page.excerpt %}
+    <summary type="html"><![CDATA[{{ post.data.page.excerpt | markdownify | safe }}]]></summary>
+  {% endif %}
+
+  {% for tag in post.data.tags %}
+    <category term="{{ tag }}" />
+  {% endfor %}
+
+  {% if post.data.image %}
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{{ post.data.image }}" />
+  {% endif %}
+
+</entry>

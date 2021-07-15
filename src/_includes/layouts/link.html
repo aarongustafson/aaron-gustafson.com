@@ -1,0 +1,64 @@
+---
+single: "true"
+---
+{% extends "layouts/base.html" %}
+{% from "macros.njk" import post_date, tag_list %}
+{% block content %}
+
+  {% set keywords %}{% if page.tags.length > 0 %}{{ tags | join(", ") }}{% endif %}{% endset %}
+  {% set this_url = site.url + page.url %}
+
+  <div class="layout-container layout-container--blog">
+    <article role="article" class="layout-container__primary h-entry">
+      <div class="entry">
+        <header class="entry__header">
+          <h1 class="entry__title p-name">
+            <a rel="external"
+              href="{{ page.ref_url }}"
+              {% if hreflang %} hreflang="{{ hreflang }}"{% endif %}
+              >{{ title | widont | markdownify | safe }}</a>
+          </h1>
+          <dl class="entry__meta">
+            <dt>Published by</dt>
+            <dd>{{ ref_source }}</dd>
+
+            <dt>Saved on</dt>
+            <dd>{{ post_date( page.date, last_updated_at) }}</dd>
+
+            <dt class="hidden">by</dt>
+            <dd class="hidden"><a class="p-author h-card" href="/about">Aaron Gustafson</a></dd>
+            
+            {% if via %}
+              <dt><abbr title="via">↬</abbr></dt>
+              <dd><a href="{{ via.url }}">{{ via.name }}</a></dd>
+            {% endif %}
+
+            {% if tags.length %}
+              <dt class="dont-read">Tagged</dt>
+              <dd class="dont-read">{{ tag_list( tags ) }}</dd>
+            {% endif %}
+          </dl>
+        </header>
+
+        <div class="entry__content e-content">
+          {{ content | safe }}
+          <p class="read-on">
+            <a rel="original-article"
+              {% if hreflang %} hreflang="{{ hreflang }}"{% endif %}
+              href="{{ ref_url }}">Read on {{ ref_source }}</a>
+          </p>
+        </div>
+
+        <footer class="entry__footer">
+          {% include "partials/post/sharing.html" %}
+        </footer>
+
+      </div>
+    </article>
+    
+  </div>
+
+  <script type="application/ld+json">
+    {#{% include "partials/post/jsonld.html %}#}
+  </script>
+{% endblock %}

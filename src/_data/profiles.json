@@ -1,0 +1,69 @@
+[
+  {
+    "site": "Twitter",
+    "username": "@AaronGustafson",
+    "url": "https://twitter.com/aarongustafson",
+    "title": "Follow on Twitter",
+    "category": "profile",
+    "active": true
+  },
+  {
+    "site": "Notist",
+    "url": "http://noti.st/aarongustafson",
+    "title": "See where I’ve been &amp; where I’m going next on Notist",
+    "category": "speaking",
+    "active": true
+  },
+  {
+    "site": "GitHub",
+    "username": "AaronGustafson",
+    "url": "https://github.com/aarongustafson",
+    "title": "Follow my work on Github",
+    "category": "profile",
+    "active": true
+  },
+  {
+    "site": "LinkedIn",
+    "url": "https://www.linkedin.com/in/aarongustafson",
+    "title": "View my profile on LinkedIn",
+    "category": "profile",
+    "active": true
+  },
+  {
+    "site": "SlideShare",
+    "url": "http://www.slideshare.net/AaronGustafson/",
+    "title": "View and download presentatinos I’ve given on SlideShare",
+    "category": "speaking",
+    "active": false
+  },
+  {
+    "site": "Facebook",
+    "username": "AaronMGustafson",
+    "url": "https://www.facebook.com/aaronmgustafson",
+    "title": "Follow me on Facebook",
+    "category": "profile",
+    "active": true
+  },
+  {
+    "site": "SpeakerRate",
+    "url": "http://speakerrate.com/speakers/266-aaron-gustafson",
+    "title": "See how people like my presentations on SpeakerRate",
+    "category": "speaking",
+    "active": false
+  },
+  {
+    "site": "Instagram",
+    "username": "AaronGustafson",
+    "url": "http://instagram.com/AaronGustafson",
+    "title": "View my square photos on Instagram",
+    "category": "photos",
+    "active": true
+  },
+  {
+    "site": "Flickr",
+    "url": "https://www.flickr.com/photos/aarongustafson",
+    "title": "View my photos on Flickr",
+    "category": "photos",
+    "active": false
+  }
+]

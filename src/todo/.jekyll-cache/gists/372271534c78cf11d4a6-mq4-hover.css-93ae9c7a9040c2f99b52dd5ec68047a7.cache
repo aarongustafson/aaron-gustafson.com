@@ -1,0 +1,10 @@
+@media (hover:hover) {
+  /* hover-related interactions are A-OK */
+}
+@media (hover:on-demand) {
+  /* hover-related interactions are potentially difficult,
+     maybe do something else instead */
+}
+@media (hover:none) {
+  /* No hover possible :-( */
+}

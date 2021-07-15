@@ -1,0 +1,16 @@
+---
+title: "Links"
+description: "The latest 20 links."
+permalink: "/feeds/latest-links.xml"
+eleventyExcludeFromCollections: true
+---
+{% include "feeds/preamble.xml.njk" %}
+{% for post in collections.links | limit(20) %}
+  {% set post_url %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
+  {% set prepend_title = "" %}
+  {% if loop.first %}
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
+  {% endif %}
+  {% include "feeds/post.xml.njk" %}
+{% endfor %}
+</feed>

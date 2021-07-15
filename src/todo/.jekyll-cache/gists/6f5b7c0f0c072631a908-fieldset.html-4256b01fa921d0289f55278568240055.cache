@@ -1,0 +1,9 @@
+<fieldset>
+  <legend tabindex="0">Do you agree to the terms of service for this site?</legend>
+  
+  <input type="radio" name="agree" id="agree_yes" value="yes">
+  <label for="agree_yes">Yes</label>
+  
+  <input type="radio" name="agree" id="agree_no" value="no">
+  <label for="agree_no">No</label>
+</fieldset>

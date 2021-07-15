@@ -1,0 +1,25 @@
+<ul>
+  <li>
+    <label for="nintendo-ds-lite">
+      <input type="checkbox"
+             name="reservation_requested_device[]"
+             id="nintendo-ds-lite"
+             value="Nintendo DS Lite (Upper Cabinet #13)"
+             data-checkbox-required=""
+             >
+      Nintendo DS Lite
+    </label>
+  </li>
+  <li>
+    <label for="nintendo-wii">
+      <input type="checkbox"
+             name="reservation_requested_device[]"
+             id="nintendo-wii"
+             value="Nintendo Wii (TV Area)"
+             data-checkbox-required=""
+             >
+      Nintendo Wii
+    </label>
+  </li>
+  <!-- list continues -->
+</ul>

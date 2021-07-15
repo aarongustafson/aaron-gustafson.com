@@ -1,0 +1,154 @@
+---
+single: "true"
+---
+{% extends "layouts/base.html" %}
+{% from "macros.njk" import post_date, tag_list %}
+
+{% block content %}
+
+  {% set keywords %}{% if tags.length > 0 %}{{ tags | join(", ") }}{% endif %}{% endset %}
+  {% set this_url = site.url + page.url %}
+
+  <div class="layout-container layout-container--blog">
+    <article role="article" class="layout-container__primary h-entry">
+      <div class="entry">
+        <header class="entry__header">
+          <h1 class="entry__title p-name">{{ title | widont | markdownify | safe }}</h1>
+          
+          <dl class="entry__meta">
+            <dt>Published</dt>
+            <dd>
+              {{ post_date( page.date, last_updated_at) }}
+              <b class="hidden">by <a class="p-author h-card" href="/about">Aaron Gustafson</a></b>
+              {% if in_reply_to %} <b class="hidden">in reply to <a class="u-in-reply-to" href="{{ in_reply_to }}">{{ in_reply_to }}</a></b>{% endif %}
+            </dd>
+            
+            <dt>Reading Time</dt>
+            <dd>{{ content | readingTime }}</dd>
+
+            <dt class="dont-read">Tagged</dt>
+            <dd class="dont-read">{{ tag_list( tags ) }}</dd>
+
+            {#
+            <dt class="dont-read">Reactions</dt>
+            <dd class="dont-read">
+              <ul class="entry__jump-links">
+                <li class="entry__jump entry__jump--comments"><a href="{% if index %}{{ root_url }}{{ page.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ this_url }}{% endif %}">Comments</a></li>
+                <li class="entry__jump entry__jump--webmentions"><a href="{% if index %}{{ root_url }}{{ page.url }}{% endif %}#webmentions">{% webmention_count page.url %} Webmentions</a></li>
+              </ul>
+            </dd>
+            #}
+
+            {% if crossposted %}
+              <dt class="dont-read">Crossposted</dt>
+              {% for venue, link in crossposted %}
+                <dd class="dont-read"><a class="u-syndication" href="{{ link }}">{{ venue }}</a></dd>
+              {% endfor %}
+            {% endif %}
+
+            {% if translations %}
+              <dt class="dont-read">Translated</dt>
+              {% for lang, link in translations %}
+                <dd class="dont-read"><a class="u-syndication" hreflang="{{ lang }}" href="{{ link }}">{{ langs[lang] }}</a></dd>
+              {% endfor %}
+            {% endif %}
+          </dl>
+        </header>
+
+        {% if reply_to_url %}
+          <p class="entry__in-reply-to">You are reading a reply to 
+            <a class="u-in-reply-to" href="{{ reply_to_url }}">{{ reply_to_title }}</a>.
+          </p>
+        {% endif %}
+
+        {% if series %}
+          <p class="entry__series">This is the {{ series.ordinal }} entry in the series 
+            <a href="/tags/{{ series.tag }}">{{ series.name }}</a>.
+          </p>
+        {% endif %}
+
+        <div class="entry__content e-content">
+          {{ content | safe }}
+        </div>
+
+        <footer class="entry__footer">
+          {% if thanks %}
+            <p>Many thanks to
+            {% for person in thanks %}
+              {% set link %}<a href="{{ person.url }}">{{ person.name }}</a>{% endset %}
+              {% if thanks.size == 1 %}
+                {{ link }}
+              {% elif forloop.last %}
+                and {{ link }}
+              {% else %}
+                {{ link }},
+              {% endif %}
+            {% endfor %}
+            for helping me with this piece.
+          {% endif %}
+
+          {% if not sharing == false %}
+            {% include "partials/post/sharing.html" %}
+          {% endif %}
+          
+          {#
+          {% include "partials/asides/related.html %}
+          #}
+        </footer>
+
+        {#{% include "partials/global/promo.html" %}#}
+
+        {#
+        {% if site.disqus_short_name and page.comments == true %}
+          <hr>
+
+          <section id="disqus" class="entry__comments dont-read">
+            <h1>Comments</h1>
+            <div id="disqus_thread" aria-live="polite">
+            </div>
+          </section>
+        {% endif %}
+        #}
+
+        {#
+        <hr>
+
+        <section id="webmentions" class="entry__comments dont-read">
+          <h1>Webmentions</h1>
+          {% webmentions page.url posts replies links %}
+
+          <h2>Likes</h2>
+          {% webmention_likes page.url %}
+
+          <h2>Shares</h2>
+          {% webmention_reposts page.url %}
+        </section>
+        #}
+
+      </div>
+    </article>
+    
+    {#
+    {% if not page.sidebar == false %}
+      <hr class="rule rule--optional">
+
+      <aside class="layout-container__secondary">
+        {% if site.asides.post %}
+          {% for sidebar in site.asides.post %}
+            {% include sidebar %}
+          {% endfor %}
+        {% else %}
+          {% for sidebar in site.asides.default %}
+            {% include sidebar %}
+          {% endfor %}
+        {% endif %}
+      </aside>
+    {% endif %}
+    #}
+
+  </div>
+
+  {#<script type="application/ld+json" class="dont-read">
+    {% include "partials/post/jsonld.html %}
+  </script>#}
+{% endblock %}

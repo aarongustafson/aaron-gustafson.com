@@ -1,0 +1,55 @@
+{% extends "layouts/base.html" %}
+
+{% from "macros.njk" import post_date %}
+
+{% block content %}
+  <div class="layout-container">
+    <article role="article" class="h-entry">
+
+        {% if title %}
+          {% if show_title != false %}
+            <header>
+              <h1 class="entry-title">{{ title | title | widont }}</h1>
+              {% if page.date %}
+                <p class="meta">
+                  {{ post_date( page.date, last_updated_at) }}
+                </p>
+              {% endif %}
+            </header>
+          {% endif %}
+        {% endif %}
+      
+      {{ content | safe }}
+      
+      {% if show_footer %}
+        <footer>
+          {% if sharing %}
+            {% include "partials/post/sharing.html" %}
+          {% endif %}
+        </footer>
+      {% endif %}
+
+    </article>
+
+    {% if show_sidebar %}
+      <hr class="rule rule--optional">
+
+      <aside>
+        {% if sidebars %}
+          {% for sidebar in sidebars %}
+            {% include sidebar %}
+          {% endfor %}
+        {% elif site.asides.page %}
+          {% for sidebar in site.asides.page %}
+            {% include sidebar %}
+          {% endfor %}
+        {% else %}
+          {% for sidebar in site.asides.default %}
+            {% include sidebar %}
+          {% endfor %}
+        {% endif %}
+      </aside>
+    {% endif %}
+
+  </div>
+{% endblock %}

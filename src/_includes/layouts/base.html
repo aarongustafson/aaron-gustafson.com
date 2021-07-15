@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html id="aaron-gustafson_com" lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta http-equiv="cleartype" content="on">
+
+    {% seo "" %}
+    <link rel="apple-touch-icon" href="{{ site.logo }}">
+    <meta property="og:locale" content="{{ site.lang }}">
+    <meta name="revisit-after" content="7 days">
+    <meta name="ROBOTS" content="index,follow">
+    <meta name="robots" content="NOODP">
+    
+    <link href="/favicon.png" rel="icon">
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="stylesheet" href="/c/default{% if site.minify %}.min{% endif %}.css" media="all">
+    <link rel="stylesheet" href="/c/advanced{% if site.minify %}.min{% endif %}.css" media="only screen">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+
+    {% for feed in site.feeds %}
+      <link href="{{ feed.atom }}" rel="alternate" title="{{ feed.title }}{{ site.title }}" type="application/atom+xml">
+      <link href="{{ feed.json }}" rel="alternate" title="{{ feed.title }}{{ site.title }}" type="application/json">
+    {% endfor %}
+    
+    {% for script in page.javascripts.head %}
+      <script src="/j/{{ script }}{% if site.minify %}.min{% endif %}.js" async></script>
+    {% endfor %}
+    <meta name="twitter:widgets:csp" content="on">
+    
+    {% for link in profiles %}{% if link.active == true %}
+      <link rel="me" href="{{ link.url }}" title="Me on {{ link.site }}">
+    {% endif %}{% endfor %}
+
+    {#
+    {% webmentions_head %}
+    {% if page.redirect_from %}<meta property="webmention:redirected_from" content="{{ page.redirect_from | join: ',' }}">{% endif %}
+    #}
+
+    <meta name="monetization" content="$ilp.uphold.com/bQeAXrfee6wW">
+  </head>
+
+  <body {% if body_class %} class="{{ body_class }}" {% endif %} >
+
+    {% set alert %}
+      <div class="alert">
+        <strong>This site is <a href="/notebook/a-grand-experiment/">undergoing an open redesign</a>, so if it looks strange, that’s why.</strong>
+      </div>
+    {% endset %}
+    
+    {% if page.url == '/index.html' %}{{ alert | safe }}{% endif %}
+    <header role="banner" class="banner">
+      <div class="layout-container">
+        <h1 class="site-title"><a href="{{ site_url }}/">{{ site.title }}</a></h1>
+        {% if page.url == '/index.html' %}
+          <h2 class="site-subtitle">{{ site.subtitle }}</h2>
+        {% endif %}
+      </div>
+    </header>
+    {% if page.url != '/index.html' %}{{ alert | safe }}{% endif %}
+
+    <main role="main">
+      {% block content %}{% endblock %}
+    </main>
+
+    <hr class="rule rule--optional">
+
+    {% include "partials/global/navigation.html" %}
+    
+    <footer role="contentinfo" class="footer">
+      <div class="layout-container">
+        {% if page.path != '.html' %}
+          <p class="footer__fork-me">Did you spot a typo or error? Eesh, I’m sorry. Would you mind <a href="{{ site.repo_url | replace('/tree/', '/edit/') }}{% if page.tag %}_layouts/tag.html{% elif page.blog %}_layouts/blog.html{% else %}{{ page.inputPath }}{% endif %}">fixing it</a> for me? You’re so awesome.</p>
+        {% endif %}
+        <p class="footer__copyright">
+          <b id="license">The content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a>.</b>
+          {% if page.fileSlug != "colophon" %}
+            Interested in how this site was made? <a href="/colophon/">Check this out</a>.
+          {% endif %}
+        </p>
+      </div>
+    </footer>
+
+    <script src="/j/main{% if site.minify %}.min{% endif %}.js"></script>
+    {% if page.is_post %}
+      <script src="/j/post{% if site.minify %}.min{% endif %}.js" async></script>
+    {% endif %}
+    {% for script in javascripts.body %}
+      <script src="/j/{{ script }}{% if site.minify %}.min{% endif %}.js" async></script>
+    {% endfor %}
+
+  </body>
+
+</html>

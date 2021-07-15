@@ -1,0 +1,104 @@
+{
+  "url": "https://www.aaron-gustafson.com",
+  "repo_url": "https://github.com/aarongustafson/aaron-gustafson.com/tree/main/",
+  "simple_search": "https://duckduckgo.com/",
+  "lang": "en_US",
+  "title": "Aaron Gustafson",
+  "subtitle": "Web Design Author, Evangelist, Practitioner, and Teacher",
+  "description": "Hi there. My name is Aaron Gustafson and I work on the web.",
+  "logo": "/i/og-logo.png",
+  "minify": false,
+  "sw_version": "v4",
+  "tag_page_dir": "/tags/",
+  "author": {
+    "name": "Aaron Gustafson",
+    "uri": "https://www.aaron-gustafson.com",
+    "twitter": "AaronGustafson"
+  },
+  "social": {
+    "name": "Aaron Gustafson",
+    "links": [
+      "https://twitter.com/aarongustafson",
+      "https://www.facebook.com/aaronmgustafson",
+      "https://github.com/aarongustafson",
+      "https://www.linkedin.com/in/aarongustafson",
+      "https://noti.st/aarongustafson",
+      "https://www.slideshare.net/AaronGustafson/",
+      "https://instagram.com/AaronGustafson",
+      "https://speakerrate.com/speakers/266-aaron-gustafson",
+      "https://www.flickr.com/photos/aarongustafson"
+    ]
+  },
+  "twitter": {
+    "username": "AaronGustafson"
+  },
+  "facebook": {
+    "admins": "100002880350996"
+  },
+  "navigation": [
+    {
+      "text": "<b class=\"hidden\">A Bit </b>About<b class=\"hidden\"> Me</b>",
+      "url": "/about/"
+    },
+    {
+      "text": "<b class=\"hidden\">Entries in My </b>Notebook",
+      "url": "/notebook/"
+    },
+    {
+      "text": "<b class=\"hidden\">A List of My </b>Speaking<b class=\"hidden\"> Engagements</b>",
+      "url": "/speaking-engagements/"
+    },
+    {
+      "text": "<b class=\"hidden\">A List of My </b>Publications",
+      "url": "/publications/"
+    },
+    {
+      "text": "<b class=\"hidden\">Links to </b>Interviews<b class=\"hidden\"> I’ve Given</b>",
+      "url": "/appearances/"
+    },
+    {
+      "text": "<b class=\"hidden\">The Requisite </b>Contact<b class=\"hidden\"> Form</b>",
+      "url": "/contact/"
+    }
+  ],
+  "feeds": [
+    {
+      "title": "Posts and Links From the Notebook of ",
+      "atom": "/feeds/all.xml",
+      "json": "/feeds/all.json"
+    },
+    {
+      "title": "Posts From the Notebook of ",
+      "atom": "/feeds/latest-posts.xml",
+      "json": "/feeds/latest-posts.json"
+    },
+    {
+      "title": "Links From the Notebook of ",
+      "atom": "/feeds/latest-links.xml",
+      "json": "/feeds/latest-links.json"
+    }
+  ],
+  "github": {
+    "repo": "aarongustafson/aaron-gustafson.com",
+    "branch": "main"
+  },
+  "sidebars": {
+    "default": [
+      "partials/asides/recent_posts.html"
+    ],
+    "blog": [
+      "partials/asides/about.html",
+      "partials/asides/networks.html",
+      "partials/asides/recent_links.html"
+    ],
+    "post": [
+      "partials/asides/about.html",
+      "partials/asides/events.html"
+    ],
+    "page": [
+      "partials/asides/about.html",
+      "partials/asides/networks.html",
+      "partials/asides/events.html"
+    ]
+  }
+}

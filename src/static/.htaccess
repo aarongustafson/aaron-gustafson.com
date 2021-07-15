@@ -1,0 +1,118 @@
+# Force www:
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^aaron-gustafson.com [NC]
+RewriteRule ^(.*)$ https://www.aaron-gustafson.com/$1 [L,R=301,NC]
+
+# Errors
+ErrorDocument 400 /400.html
+ErrorDocument 404 /404.html
+
+# UTF-8
+AddDefaultCharset utf-8
+
+# GZip
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+<FilesMatch "\\.(js|css|html|htm|php|xml)$">
+  SetOutputFilter DEFLATE
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</FilesMatch>
+
+# ETags
+Header unset ETag
+FileETag None
+
+# Force the latest IE version
+# Use ChromeFrame if it's installed for a better experience for the poor IE folk
+Header set X-UA-Compatible "ie=edge,chrome=1"
+
+# Audio MIME Types
+AddType audio/mpeg mp3
+AddType audio/mp4 m4a
+AddType audio/ogg ogg
+AddType audio/ogg oga
+AddType audio/webm webma
+AddType audio/wav wav
+
+# Video MIME Types
+AddType video/ogg ogv
+AddType video/mp4 mp4 m4v
+AddType video/webm webm
+
+# SVG
+AddType image/svg+xml svg svgz
+<FilesMatch "^.*\.(svgz)$">
+  Header set Content-Encoding "gzip"
+</FilesMatch>
+
+# JSON
+AddType 'application/json; charset=utf-8' .json
+
+# UTF-8
+AddType 'text/css; charset=utf-8' .css
+AddType 'text/javascript; charset=utf-8' .js
+
+# Fonts
+AddType application/vnd.ms-fontobject eot
+
+# Lockdown - only on the live serve though
+<FilesMatch "\.(html|htm)$">
+  SetEnv HTML
+  Header add Link "</c/default.min.css>;as=style;rel=preload"
+  Header add Link "</c/advanced.min.css>;as=style;rel=preload"
+  Header add Link "</serviceworker.min.js>;as=script;rel=preload"
+  Header add Link "</j/main.min.js>;as=script;rel=preload"
+  Header add Link "</j/post.min.js>;as=script;rel=preload"
+</FilesMatch>
+Header set X-XSS-Protection "1; mode=block"
+Header set X-Content-Type-Options "nosniff"
+<IfDefine LIVE>
+  # https://report-uri.io/home/generate
+  Header set Content-Security-Policy "default-src *; script-src 'self' 'unsafe-inline' webmention.io platform.twitter.com cdn.syndication.twimg.com *.vimeo.com *.vimeocdn.com *.codepen.io *.typekit.net gist.github.com; style-src * 'unsafe-inline' *.vimeocdn.com; img-src * data: res.cloudinary.com; connect-src 'self' *.imgur.com *.gravatar.com res.cloudinary.com webmention.io api.github.com platform.twitter.com; child-src 'self' www.youtube.com *.twitter.com *.vimeo.com *.vimeocdn.com codepen.io *.slideshare.net; upgrade-insecure-requests; block-all-mixed-content;"
+  Header set Public-Key-Pins "pin-sha256='1AD97Iz6xlmMrlaim5bZoIhwUr2WAowsI+msDc0op2k='; pin-sha256='4SflGm7MUpml4PWSclDw7OGMJdRk+YcIfi6qJ2iG6zE='; pin-sha256='BFhqRqgHU+b7VQLsM1kZwBu6VVKnLx7QiO2PCLfG1m4='; max-age=10"
+  Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfDefine>
+
+# Origin Trials
+# -- Scroll to text fragment
+Header set Origin-Trial "Aj7rWID0Gt1qlI7juO/CyAsXoo6Tp2B2YWOIHRiEYKBquRjDieUF6ETXpO+ZrnmCQvM5dJi/J0vphY3K1O2n5Q8AAABoeyJvcmlnaW4iOiJodHRwczovL3d3dy5hYXJvbi1ndXN0YWZzb24uY29tOjQ0MyIsImZlYXR1cmUiOiJUZXh0RnJhZ21lbnRJZGVudGlmaWVycyIsImV4cGlyeSI6MTU2ODE0MTM0M30="
+
+# No HTTPS or CSP?
+Header set Upgrade-Insecure-Requests "1"
+
+# Redirect links
+RewriteBase /
+
+# Removing AMP
+RewriteRule ^amp/(.*)$ $1 [L,R=301]
+
+# Moving Tags
+RewriteRule ^notebook/tags/(.*)$ tags/$1 [L,R=301]
+
+# Moved Tags
+RewriteRule ^tags/.*-forms/?$ tags/forms/ [L,R=301]
+RewriteRule ^tags/css3/?$ tags/css/ [L,R=301]
+RewriteRule ^tags/pwa/?$ tags/progressive-web-apps/ [L,R=301]
+
+# Old Links in Notebook directory
+RewriteCond %{REQUEST_URI} ^notebook/
+RewriteCond %{REQUEST_URI} !^notebook/links/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^notebook/(.*) notebook/links/$1 [L,R=301]
+
+# Redirect Atom feeds
+RewriteRule ^atom\.xml feeds/all.xml [L,R=301]
+RewriteRule ^atom-(.*)\.xml feeds/$1.xml [L,R=301]
+
+# Service Worker
+<FilesMatch "serviceworker(\.min)?\.js$">
+  Header set Cache-Control "max-age=0"
+</FilesMatch>
+
+# Additional headers
+Header set Timing-Allow-Origin "*"

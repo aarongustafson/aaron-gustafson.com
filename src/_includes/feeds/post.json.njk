@@ -1,0 +1,21 @@
+{
+  "id": "{{ post.url }}",
+  "title": "{{ prepend_title + post.data.title | replace('"', '\\"') | safe }}",
+  
+  "content_html": "{{ post.templateContent | replace('\n','') | replace('\r', '') | replace('"', '\\"') | safe }}",
+  
+  "url": "{{ post_url }}",
+  {% if post.data.ref_url %}
+    "external_url": "{{ post.data.ref_url }}",
+  {% endif %}
+  
+  {% if post.data.tags %}
+    "tags": {{ post.data.tags | dump | safe }},
+  {% endif %}
+  
+  {% if post.data.image %}
+    "image": "{{ post.data.image }}",
+  {% endif %}
+  
+  "date_published": "{{ post.date | dateToRfc3339 }}"
+}

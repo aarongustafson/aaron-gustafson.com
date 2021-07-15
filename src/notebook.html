@@ -1,0 +1,15 @@
+---
+title: "My Notebook"
+display_title: "Dispatches from the Internets"
+description: "My notebook is a collection of posts, essays, presentations, videos, and recommended reading about a variety of topics from the Web and technology to social justice to marine biology and reef keeping."
+show_title: false
+sharing: false
+is_index: true
+body_class: notebook
+permalink: "/notebook/{% if pagination.pageNumber > 0 %}pg-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+pagination: 
+  data: collections.posts
+  alias: posts
+  size: 10
+---
+{% extends "layouts/blog.html" %}

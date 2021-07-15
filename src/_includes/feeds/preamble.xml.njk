@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="{{ '/c/feed.min.css' | absoluteUrl(site.url) }}" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.title }}: {{ title }}</title>
+  {% if site.description %}
+  <subtitle>{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}</subtitle>
+  {% endif %}
+  <id>{{ site.url }}</id>
+  <link href="{{ site.url + page.url }}" rel="self"/>
+  <link href="{{ site.url }}"/>
+  <author>
+    <name>{{ site.author.name }}</name>
+    {% if site.author.email %}
+      <email>{{ site.author.email }}</email>
+    {% endif %}
+    {% if site.author.uri %}
+      <uri>{{ site.author.uri }}</uri>
+    {% endif %}
+  </author>
