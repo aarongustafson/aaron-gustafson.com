@@ -7,7 +7,7 @@ description: "I appreciate the irony of using an establishment of white privileg
 twitter_text: "I can’t help but appreciate the irony of Thomas Jennings’ use of an establishment of white privilege (patents) to undermine the very foundations of white supremacy."
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: eighth
 ---
 

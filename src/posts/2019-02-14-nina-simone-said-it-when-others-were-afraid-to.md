@@ -7,7 +7,7 @@ description: "Her career in America doubtless suffered because of that, but she 
 twitter_text: "Nina Simone wasn’t afraid to say what others wouldn’t… or couldn’t"
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: fourteenth
 ---
 

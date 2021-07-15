@@ -7,7 +7,7 @@ description: "Chances are you’ve never heard the name Angie Turner King, and t
 twitter_text: "Chances are you’ve never heard the name Angie Turner King, and that’s because—like so many black women—she invested her time and energy in other people"
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: twenty-eighth
 ---
 

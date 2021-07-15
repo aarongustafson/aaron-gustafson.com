@@ -7,7 +7,7 @@ description: "Throughout her life, Pauli Murray was told she couldn’t do thing
 twitter_text: "Pauli Murray was fearless, outspoken, and committed to removing barriers and dismantling the systems of oppression in the United States"
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: sixteenth
 ---
 

@@ -7,7 +7,7 @@ description: "Jack Johnson’s unwillingness to settle for what he was given as 
 twitter_text: "Jack Johnson’s unwillingness to settle for what he was given as a black man in early 20th Century America became an example for future athletes to agitate for change"
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: twenty-second
 ---
 

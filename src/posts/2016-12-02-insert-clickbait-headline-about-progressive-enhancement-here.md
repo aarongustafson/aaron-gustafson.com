@@ -6,6 +6,11 @@ tags: ["progressive enhancement","web design",JavaScript]
 description: "Late last week, Josh Korr, a project manager at Viget, posted at length about what he sees as a fundamental flaw with the argument for progressive enhancement. In reading the post, it became clear to me that Josh really doesn’t have a good grasp on progressive enhancement or the reasons its proponents think it’s a good philosophy to follow."
 crossposted:
   Medium: https://medium.com/@AaronGustafson/8255218a37d6
+thanks:
+  "Sara Soueidan": "https://sarasoueidan.com/"
+  "Baldur Bjarnasun": "https://www.baldurbjarnason.com/"
+  "Jason Garber": https://sixtwothree.org/
+  "Tim Kadlec": "https://timkadlec.com/"
 ---
 
 Late last week, Josh Korr, a project manager at Viget, posted at length about [what he sees as a fundamental flaw with the argument for progressive enhancement](https://www.viget.com/articles/the-case-against-progressive-enhancements-flimsy-moral-foundation). In reading the post, it became clear to me that Josh really doesn’t have a good grasp on progressive enhancement or the reasons its proponents think it’s a good philosophy to follow. Despite claiming to be “an expert at spotting fuzzy rhetoric and teasing out what’s really being said”, Josh makes a lot of false assumptions and inferences. My response would not have fit in a comment, so here it is…
@@ -245,7 +250,3 @@ Would users benefit from progressive enhancement if it was followed on more site
 Is progressive enhancement right for your project?
 
 *It depends.*
-
-----
-
-_My sincere thanks to [Sara Soueidan](https://sarasoueidan.com/), [Baldur Bjarnasun](https://www.baldurbjarnason.com/), [Jason Garber](https://sixtwothree.org/), and [Tim Kadlec](https://timkadlec.com/) for taking the time give me feedback on this piece._

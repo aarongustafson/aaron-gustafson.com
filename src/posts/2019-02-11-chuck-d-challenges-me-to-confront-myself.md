@@ -7,7 +7,7 @@ description: "Growing up, I vividly remember my first introduction to Chuck D in
 twitter_text: "@MrChuckD challenges me to confront myself and my privilege"
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: eleventh
 ---
 

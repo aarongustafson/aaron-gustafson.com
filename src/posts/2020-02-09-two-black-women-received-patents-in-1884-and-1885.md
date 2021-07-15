@@ -6,7 +6,7 @@ tags: ["Black History", influences]
 description: "Regardless of who you consider “first,” the fact is that this is just yet another example of black women excelling at something often considered the domain of men."
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: thirty-seventh
 ---
 

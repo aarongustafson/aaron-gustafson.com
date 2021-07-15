@@ -6,7 +6,7 @@ tags: ["Black History", influences]
 description: "From Uncivil to “Seeing White” to his Twitter feed, Chenjerai drops thoughtful and matter-of-fact knowledge about race in America and I can’t thank him enough for this work."
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: second
 ---
 

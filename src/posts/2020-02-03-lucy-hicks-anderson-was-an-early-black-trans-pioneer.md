@@ -7,7 +7,7 @@ description: "I am awestruck by the bravery of Lucy Hicks Anderson, a black tran
 twitter_text: "I am awestruck by the bravery of Lucy Hicks Anderson, a black trans woman born in Kentucky in 1886, who became a renown socialite and hostess in 1940s California."
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: thirty-first
 ---
 

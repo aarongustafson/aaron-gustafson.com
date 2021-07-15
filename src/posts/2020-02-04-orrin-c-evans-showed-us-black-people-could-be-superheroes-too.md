@@ -7,7 +7,7 @@ description: "Did you know that the first black comic book hero debuted in 1947?
 twitter_text: "Did you know that the first black comic book hero debuted in 1947?"
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: thirty-second
 ---
 

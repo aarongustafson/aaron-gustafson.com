@@ -6,7 +6,7 @@ tags: ["Black History", influences]
 description: "Together, they created the first Black Student Union and kicked off a campus movement that demanded schools of higher learning make themselves more welcoming and supportive of their black students."
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: thirty-sixth
 ---
 

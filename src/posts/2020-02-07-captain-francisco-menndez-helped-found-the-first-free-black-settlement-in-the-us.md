@@ -6,7 +6,7 @@ tags: ["Black History", influences]
 description: "In 1724, the man who came to be known as Francisco Menéndez escaped his enslavement in South Carolina and sought refuge in Spanish-controlled Florida."
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: thirty-fifth
 ---
 

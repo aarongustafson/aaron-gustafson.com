@@ -6,7 +6,7 @@ tags: ["Black History", influences]
 description: "Charles V. Bush’s work highlighting inequity was instrumental in helping to improve representation within the U.S. military’s officer corps."
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: thirty-ninth
 ---
 

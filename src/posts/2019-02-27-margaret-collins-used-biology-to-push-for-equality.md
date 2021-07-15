@@ -7,7 +7,7 @@ description: "What I truly appreciate about Margaret Collins is her focus and dr
 twitter_text: "Margaret Collins wasn’t just the “Termite Lady,” she was also an advocate for civil rights who pushed for equality through scientific investigation"
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: twenty-seventh
 ---
 

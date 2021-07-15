@@ -7,7 +7,7 @@ description: "Ida B. Wells left an incredible legacy when she died in 1931, the 
 twitter_text: "Ida B. Wells was a black former slave (and woman) reporting on lynchings throughout the South after Emancipation. Brave doesn’t even begin to describe her."
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: nineteenth
 ---
 

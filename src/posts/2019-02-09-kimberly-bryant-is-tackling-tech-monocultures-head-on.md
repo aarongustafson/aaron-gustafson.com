@@ -7,7 +7,7 @@ description: "What I really like about Kimberly Bryant’s approach is that it i
 twitter_text: "@6gems risked everything to improve the lives of young black women everywhere"
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: ninth
 ---
 

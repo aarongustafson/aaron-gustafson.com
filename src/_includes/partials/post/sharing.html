@@ -1,4 +1,4 @@
-{% set this_url %}{{ site.url }}{% if source %}{{ page.url | replace("notebook/","notebook/links/") }}{% else %}{{ page.url }}{% endif %}{% endset %}
+{% set this_url %}{{ site.url }}{% if ref_url %}{{ page.url | replace("notebook/","notebook/links/") }}{% else %}{{ page.url }}{% endif %}{% endset %}
 
 <p class="entry__sharing dont-read">If you liked this post, would you mind sharing it?
   <br>

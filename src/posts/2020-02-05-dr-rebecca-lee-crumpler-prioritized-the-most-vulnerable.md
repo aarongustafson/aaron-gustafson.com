@@ -6,7 +6,7 @@ tags: ["Black History", influences]
 description: "Throughout her career, Dr. Crumpled worked to improve the health (and lives) of poor black women and children."
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: thirty-third
 ---
 

@@ -7,7 +7,7 @@ description: "I would have had a very different childhood had it not been for Je
 twitter_text: "I would have had a very different childhood had it not been for Jerry Lawson’s invention of the video game cartridge."
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: twenty-ninth
 ---
 

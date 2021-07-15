@@ -7,7 +7,7 @@ description: "Without Mark Dean’s pioneering work at IBM, the web-based giants
 twitter_text: "Without Mark Dean’s pioneering work at IBM, the web-based giants we know today might never have existed"
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: twenty-third
 ---
 

@@ -7,7 +7,7 @@ description: "In so many ways, Jane Bolin was a pioneer. I can’t even begin to
 tweet_text: "In so many ways, Jane Bolin was a pioneer. I can’t even begin to imagine what it must have been like to be the “first” so many times."
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: thirty-fourth
 ---
 

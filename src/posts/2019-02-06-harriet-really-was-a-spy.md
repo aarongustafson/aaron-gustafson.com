@@ -6,7 +6,7 @@ tags: ["Black History", influences]
 description: "Harriet Tubman was a badass!"
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: sixth
 ---
 

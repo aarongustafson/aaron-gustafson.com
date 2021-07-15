@@ -8,7 +8,7 @@ crossposted:
   Medium: https://medium.com/@AaronGustafson/labeled-with-love-bda2592250b
 series:
   name: "Modern Web Form Best Practices"
-  tag: forms
+  tag: series-forms
   ordinal: first
 ---
 

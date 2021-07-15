@@ -6,7 +6,7 @@ tags: ["Black History", influences]
 description: "With her incredible voice, Sissieretta Jones became the highest-paid black performer of her time, but she died in poverty."
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: thirty-eighth
 ---
 

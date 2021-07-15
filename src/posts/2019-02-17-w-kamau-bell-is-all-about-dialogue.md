@@ -7,7 +7,7 @@ description: "Throughout his career, W. Kamau Bell has never shied away from con
 twitter_text: "@wkamaubell has used his bully pulpit to gently nudge us into some important, but difficult conversations"
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: seventeenth
 ---
 

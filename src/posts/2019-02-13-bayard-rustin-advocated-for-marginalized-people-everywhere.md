@@ -7,7 +7,7 @@ description: "Bayard Rustin was an extraordinary man whose influence on the civi
 twitter_text: "Bayard Rustin was an extraordinary man whose influence on the civil rights movement was profound, both in its impact and in its pacifism"
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: thirteenth
 ---
 

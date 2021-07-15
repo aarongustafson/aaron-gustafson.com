@@ -7,7 +7,7 @@ description: "LeBron James is likely to go down in basketball history as one of 
 twitter_text: "@KingJames greatest legacy will be as a champion for education and the future promise of kids in Akron"
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: eighteenth
 ---
 

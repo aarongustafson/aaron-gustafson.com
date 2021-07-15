@@ -6,7 +6,7 @@ tags: ["Black History", influences]
 description: "LeVar Burton has done tons of other notable things during his career, but his literacy work and advocacy is inspiring."
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: fifth
 ---
 

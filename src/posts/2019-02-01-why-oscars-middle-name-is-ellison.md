@@ -6,7 +6,7 @@ tags: ["Black History", influences]
 description: "Ralph Ellison’s acclaimed Invisible Man has been hugely influential in my life."
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: first
 ---
 

@@ -7,7 +7,7 @@ description: "Katherine Johnson’s story is yet another in a long line of stori
 twitter_text: "I can’t even begin to comprehend the brilliance of Katherine Johnson’s mind. And I am in awe of her, but not just for that… for her perseverance."
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: twenty-sixth
 ---
 

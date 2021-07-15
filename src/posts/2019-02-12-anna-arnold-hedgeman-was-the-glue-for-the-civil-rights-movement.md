@@ -7,7 +7,7 @@ description: "Throughout her careers as a civil rights leader, politician, write
 twitter_text: "Anna Arnold Hedgeman was the glue for several civil rights movements and her efforts have had a lasting impact on this country"
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: twelfth
 ---
 

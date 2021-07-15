@@ -61,11 +61,14 @@ single: "true"
           </p>
         {% endif %}
 
+        {#
+        Todo: Create a series collection & page
         {% if series %}
           <p class="entry__series">This is the {{ series.ordinal }} entry in the series 
-            <a href="/tags/{{ series.tag }}">{{ series.name }}</a>.
+            <a href="/series/{{ series.tag | replace('series-') }}">{{ series.name }}</a>.
           </p>
         {% endif %}
+        #}
 
         <div class="entry__content e-content">
           {{ content | safe }}
@@ -74,29 +77,27 @@ single: "true"
         <footer class="entry__footer">
           {% if thanks %}
             <p>Many thanks to
-            {% for person in thanks %}
-              {% set link %}<a href="{{ person.url }}">{{ person.name }}</a>{% endset %}
+            {% for person, url in thanks %}
+              {% set link %}<a href="{{ url }}">{{ person }}</a>{% endset %}
               {% if thanks.size == 1 %}
-                {{ link }}
-              {% elif forloop.last %}
-                and {{ link }}
+                {{ link | safe }}
+              {% elif loop.last %}
+                and {{ link | safe }}
               {% else %}
-                {{ link }},
+                {{ link | safe }},
               {% endif %}
             {% endfor %}
             for helping me with this piece.
           {% endif %}
 
-          {% if not sharing == false %}
-            {% include "partials/post/sharing.html" %}
-          {% endif %}
+          {% include "partials/post/sharing.html" %}
           
           {#
           {% include "partials/asides/related.html %}
           #}
         </footer>
 
-        {#{% include "partials/global/promo.html" %}#}
+        {% include "partials/global/promo.html" %}
 
         {#
         {% if site.disqus_short_name and page.comments == true %}

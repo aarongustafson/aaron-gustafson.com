@@ -6,7 +6,7 @@ tags: ["Black History", influences]
 description: "By the time he died, Frederick McKinley Jones has been awarded over 60 patents."
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: twenty-fifth
 ---
 

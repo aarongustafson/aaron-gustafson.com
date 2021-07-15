@@ -7,7 +7,7 @@ description: "Mae Jemison’s accomplishments have no doubt paved the way for th
 twitter_text: "@maejemison’s accomplishments have no doubt paved the way for the next generation of women of color who want to claim their rightful place in the world of STEM"
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: twenty-first
 ---
 

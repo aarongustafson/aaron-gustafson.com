@@ -7,7 +7,7 @@ description: "The thing is, he doesn’t brag about this accomplishment."
 twitter_text: "In a time with a lot of posturing, gloating, and one-upmanship, Alan Emtage’s humility shines."
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: tenth
 ---
 

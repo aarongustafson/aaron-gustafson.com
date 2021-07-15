@@ -7,7 +7,7 @@ description: "Did you know that Maya Angelou was San Francisco’s first black w
 twitter_text: "Remember when Maya Angelou became San Francisco’s first black woman cable car conductor?"
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: thirtieth
 ---
 

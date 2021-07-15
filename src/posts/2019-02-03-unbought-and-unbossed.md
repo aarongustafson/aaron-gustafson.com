@@ -6,7 +6,7 @@ tags: ["Black History", influences]
 description: "Shirley Chisholm was not a woman I had much familiarity with growing up, but I am glad to have learned of her guts and conviction in the face of many obstacles."
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: third
 ---
 

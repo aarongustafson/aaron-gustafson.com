@@ -7,7 +7,7 @@ description: "As someone who has struggled with my own body image issues—inclu
 twitter_text: "As someone who’s dealt with his own body issues, I am inspired not only by @lizzo’s self-acceptance, but also her ability to see everyone as beautiful"
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: fifteenth
 ---
 

@@ -7,7 +7,7 @@ description: "Amelia Boynton Robinson’s courage and commitment to getting (and
 twitter_text: "Amelia Boynton Robinson’s courage and commitment to getting (and keeping) the vote for all black Americans is truly awe-inspiring"
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: twenty-fourth
 ---
 

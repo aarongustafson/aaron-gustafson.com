@@ -6,7 +6,7 @@ tags: ["Black History", influences]
 description: "Apart from her amazing voice and presence, the thing I will remember most about Aretha is her purse."
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: seventh
 ---
 

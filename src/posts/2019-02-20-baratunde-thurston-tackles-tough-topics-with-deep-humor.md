@@ -7,7 +7,7 @@ description: "Baratunde Thurston deftly weaves important lessons and difficult c
 twitter_text: "@Baratunde deftly weaves important lessons and difficult conversations with humor, which is an incredibly difficult thing to do well"
 series:
   name: "Honoring Black History"
-  tag: black-history
+  tag: series-black-history
   ordinal: twentieth
 ---
 

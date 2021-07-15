@@ -8,7 +8,7 @@ crossposted:
   Medium: https://medium.com/@AaronGustafson/affirming-user-choice-with-checkboxes-9043ca3c09a7
 series:
   name: "Modern Web Form Best Practices"
-  tag: forms
+  tag: series-forms
   ordinal: second
 ---
 
