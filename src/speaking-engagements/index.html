@@ -1,0 +1,217 @@
+---
+layout: "page"
+title: "My Speaking Engagements (Past &amp; Present)"
+description: "I love sharing what I know and I’ve been granted many opportunities to do this over the years. Here’s a collection of the conferences I’ve spoken at and workshops I’ve given."
+body_class: "speaking-engagements"
+show_title: false
+show_events: false
+show_footer: false
+show_sidebars: false
+sharing: false
+sitemap: true
+javascripts:
+  body: ["speaking-engagements"]
+---
+
+{% set cloudinary = "https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,e_grayscale,w_400/" %}
+
+<h1 class="page__title">A Complete List of My Conferences &amp; Workshops</h1>
+
+<p>It’s hard to believe it, but I’ve delivered over {{ speaking_engagements | length }} talks
+and workshops over the last {{ helpers.currentYear() - 2003 }} years! In addition to the 
+public events I can tell you about, I’ve also given private talks and workshops 
+for <a rel="nofollow noindex" href="/clients/">organizations around the world</a>.</p>
+
+<p>If you’d like me to come present at your company or event, <a href="/contact/">please drop me a line</a>.</p>
+
+<p><em>One important note: I am only interested in speaking at conferences showcasing a <strong>diverse</strong> line-up of speakers. I am also happy to be part of a panel, but it can’t be all-male or all-white. If you’re looking for recommendations of awesome, diverse speakers, <a href="/contact/">reach out and I will happily provide you with a list of names</a>.</em><p>
+
+{% set future_events = speaking_engagements | future %}
+{% set past_events = speaking_engagements | past %}
+
+<section class="subsection">
+
+  <h2 id="future-events" class="subsection__header">In the Future</h2>
+
+  {% for event in future_events %}
+    {% if forloop.first %}
+      <ol class="listing listing--events">
+    {% endif %}
+
+    <li class="listing__item listing__item--{{ forloop.index }} event event--future"
+      data-date="{{ event.date | readable_date }}">
+      {% if event.url %}
+        <a href="{{ event.url }}">
+      {% endif %}
+      
+      <h3 class="listing__item__title event__title">{{ event.title }}</h3>
+      <p class="listing__item__meta">
+        <b class="event__date">{{ event.date | readable_date  }}</b>
+        <b class="event__location">{{ event.location }}</b>
+      </p>
+
+      {#
+      <div class="event__details">
+        {% if event.keynotes %}
+          <h4>Keynote{% if event.keynotes.length != 1 %}s{% endif %}</h4>
+          <ul class="event__talks">
+            {% for keynote in event.keynotes %}
+              <li class="event__talk">{{ keynote.title }}
+                {% if keynote.slides %}<a class="event__talk__slides" href="{{ keynote.slides }}">Slides</a>{% endif %}
+                {% if keynote.text %}<a class="event__talk__transcript" href="{{ keynote.text }}">Transcript</a>{% endif %}
+                {% if keynote.video %}<a class="event__talk__video" href="{{ keynote.video }}">Video</a>{% endif %}
+                {% if keynote.audio %}<a class="event__talk__audio" href="{{ keynote.audio }}">Audio</a>{% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        {% if event.talks %}
+          <h4>Talk{% if event.talks.length != 1 %}s{% endif %}</h4>
+          <ul class="event__talks">
+            {% for talk in event.talks %}
+              <li class="event__talk">{{ talk.title }}
+                {% if talk.slides %}<a class="event__talk__slides" href="{{ talk.slides }}">Slides</a>{% endif %}
+                {% if talk.text %}<a class="event__talk__transcript" href="{{ talk.text }}">Transcript</a>{% endif %}
+                {% if talk.video %}<a class="event__talk__video" href="{{ talk.video }}">Video</a>{% endif %}
+                {% if talk.audio %}<a class="event__talk__audio" href="{{ talk.audio }}">Audio</a>{% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        {% if event.workshops %}
+          <h4>Workshop{% if event.workshops.length != 1 %}s{% endif %}</h4>
+          <ul class="event__talks">
+            {% for workshop in event.workshops %}
+              <li class="event__talk">{{ workshop.title }}
+                {% if workshop.slides %}<a class="event__talk__slides" href="{{ workshop.slides }}">Slides</a>{% endif %}
+                {% if workshop.text %}<a class="event__talk__transcript" href="{{ workshop.text }}">Transcript</a>{% endif %}
+                {% if workshop.video %}<a class="event__talk__video" href="{{ workshop.video }}">Video</a>{% endif %}
+                {% if workshop.audio %}<a class="event__talk__audio" href="{{ workshop.audio }}">Audio</a>{% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+      #}
+
+      {% for city in cities %}
+        {% if city.name == event.location %}
+          <p class="event__location-picture" style="background-image:url({{ cloudinary }}{{ city.photo }})" title="Photo by {{ city.credit_name }}, {{ city.credit_url }}"></p>
+        {% endif %}
+      {% endfor %}
+      
+      {% if event.url %}
+        </a>
+      {% endif %}
+    </li>
+
+    {% if forloop.last %}
+      </ol>
+    {% endif %}
+
+  {% else %}
+    <p>I am currently finalizing my schedule for the next few months. Please check back for dates or <a href="/contact/">contact me</a> if you’d like me to come speak at your organization or event.</p>
+  {% endfor %}
+
+</section>
+
+<section class="subsection">
+
+  <h2 id="past-events" class="subsection__header">In the Past</h2>
+
+  <ol class="listing listing--events">
+    {% for event in past_events %}
+      <li class="listing__item listing__item--{{ forloop.index }} event event--past"
+        data-date="{{ event.date | readable_date }}">
+        
+        {% if event.url %}
+          <a href="{{ event.url }}">
+        {% endif %}
+
+        <h3 class="listing__item__title event__title">{{ event.title }}</h3>
+        <p class="listing__item__meta">
+          <b class="event__date">{{ event.date | readable_date }}</b>
+          <b class="event__location">{{ event.location }}</b>
+        </p>
+
+        {% for city in cities %}
+          {% if city.name == event.location %}
+            <p class="event__location-picture" style="background-image:url({{ cloudinary }}{{ city.photo }})" title="Photo by {{ city.credit_name }}, {{ city.credit_url }}"></p>
+          {% endif %}
+        {% endfor %}
+      
+        {% if event.url %}
+          </a>
+        {% endif %}
+        
+        {#
+
+          {% if event.keynotes or event.talks or event.panels or event.workshops %}
+            <details class="listing__extra">
+              <summary class="listing__extra__title">Details</summary>
+              {% if event.keynotes %}
+                <p class="event__content">
+                  {% for keynote in event.keynotes %}
+                    {% if forloop.index == 1 %}
+                      <b class="event__presentation-type">Keynote{% if forloop.length > 1 %}s{% endif %}</b>:
+                    {% endif %}
+                    {% if forloop.length > 1 and forloop.index == forloop.length %}
+                      and
+                    {% endif %}
+                    {% if keynote.slides %}<a class="event__presentation-title" href="{{ keynote.slides }}">{{ keynote.title }}</a>{% else %}
+                    <b class="event__presentation-title">{{ keynote.title }}</b>{% endif %}{% if forloop.length > 2 and forloop.index != forloop.length %},{% endif %}
+                  {% endfor %}
+                </p>
+              {% endif %}
+              {% if event.talks %}
+                <p class="event__content">
+                  {% for talk in event.talks %}
+                    {% if forloop.index == 1 %}
+                      <b class="event__presentation-type">Talk{% if forloop.length > 1 %}s{% endif %}</b>:
+                    {% endif %}
+                    {% if forloop.length > 1 and forloop.index == forloop.length %}
+                      and
+                    {% endif %}
+                    {% if talk.slides %}<a class="event__presentation-title" href="{{ talk.slides }}">{{ talk.title }}</a>{% else %}
+                    <b class="event__presentation-title">{{ talk.title }}</b>{% endif %}{% if talk.with %}
+                    <b class="event__presentation-with">(with {{ talk.with }})</b>{% endif %}{% if forloop.length > 2 and forloop.index != forloop.length %},
+                    {% endif %}
+                  {% endfor %}
+                </p>
+              {% endif %}
+              {% if event.panels %}
+                <p class="event__content">
+                  {% for panel in event.panels %}
+                    {% if forloop.index == 1 %}
+                      <b class="event__presentation-type">Panel{% if forloop.length > 1 %}s{% endif %}</b>:
+                    {% endif %}
+                    {% if forloop.length > 1 and forloop.index == forloop.length %}
+                      and
+                    {% endif %}
+                    {% if panel.slides %}<a class="event__presentation-title" href="{{ panel.slides }}">{{ panel.title }}</a>{% else %}
+                    <b class="event__presentation-title">{{ panel.title }}</b>{% endif %}{% if forloop.length > 2 and forloop.index != forloop.length %},{% endif %}
+                  {% endfor %}
+                </p>
+              {% endif %}
+              {% if event.workshops %}
+                <p class="event__content">
+                  {% for workshop in event.workshops %}
+                    {% if forloop.index == 1 %}
+                      <b class="event__presentation-type">Workshop{% if forloop.length > 1 %}s{% endif %}</b>:
+                    {% endif %}
+                    {% if forloop.length > 1 and forloop.index == forloop.length %}
+                      and
+                    {% endif %}
+                    <b class="event__presentation-title">{{ workshop.title }}</b>{% if workshop.with %} <b class="event__presentation-with">(with {{ workshop.with }})</b>{% endif %}{% if forloop.length > 2 and forloop.index != forloop.length %},
+                    {% endif %}
+                  {% endfor %}
+                </p>
+              {% endif %}
+            </details>
+          {% endif %}
+        #}
+      </li>
+    {% endfor %}
+  </ol>
+
+</section>

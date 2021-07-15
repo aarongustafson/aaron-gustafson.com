@@ -1,4 +1,0 @@
-li:nth-last-child(n+6),
-li:nth-last-child(n+6) ~ li {
-  /* properties here */
-}

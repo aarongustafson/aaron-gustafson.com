@@ -1,0 +1,59 @@
+/*------------------------------------*\
+    Heading Levels
+\*------------------------------------*/
+@use 'sass:math';
+
+@include breakup-breakpoint( "global" ) {
+
+    h1, h2, h3, h4, h5, h6 {
+
+        clear: both;
+
+      font-family: $font-stack-serif;
+      font-weight: $font-weight-serif-bold;
+      line-height: $line-height-headings;
+      
+      .wf-active & {
+          word-spacing: 2px;
+      }
+      
+      & + * {
+          @include rem( margin-top, math.div( $default-spacing, 2 ) );
+      }
+
+    }
+
+    h1 {
+        @include rem( font-size, $font-size-h1 );
+    }
+
+    section > h1,
+    h2 {
+        @include rem( font-size, $font-size-h2 );
+    }
+
+    h3 {
+        @include rem( font-size, $font-size-h3 );
+    }
+
+}
+
+@include breakup-breakpoint( "print" ) {
+
+    h1, h2, h3, h4, h5, h6 {
+      page-break-inside: avoid;
+      page-break-after: avoid;
+
+      a[href]:after {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 10pt;
+      }
+      a[href^="#"]:after,
+      a[href^="mailto:"]:after,
+      a[href^="tel:"]:after {
+        display: none;
+      }
+    }    
+
+}

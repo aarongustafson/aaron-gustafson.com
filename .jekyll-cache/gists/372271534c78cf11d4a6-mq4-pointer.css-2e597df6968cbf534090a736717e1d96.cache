@@ -1,6 +1,0 @@
-@media (pointer:fine) {
-  /* Smaller links and buttons are ok */
-}
-@media (pointer:coarse) {
-  /* Larger links and buttons are probably a good idea */
-}

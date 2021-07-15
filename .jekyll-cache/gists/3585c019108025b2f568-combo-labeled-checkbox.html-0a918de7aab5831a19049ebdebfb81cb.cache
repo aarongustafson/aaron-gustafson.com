@@ -1,4 +1,0 @@
-<label for="asus-nexus-7">
-  <input type="checkbox" name="devices[]" id="asus-nexus-7" value="Asus Nexus 7">
-  Asus Nexus 7
-</label>

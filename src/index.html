@@ -1,0 +1,42 @@
+---
+layout: "home"
+title: "Hi!"
+description: "Hi there, I’m Aaron and I work on the Web."
+body_class: "home"
+ogtype: "website"
+image: "/i/"
+sitemap: true
+---
+
+<h1>Hi there, I’m Aaron and I work on the web.</h1>
+
+<p>Every day I strive to make the web more accessible, open,
+and equitable place for people to live and work.</p>
+
+<p>
+Over the last {{ helpers.currentYear() - 1996 }} years, I’ve written
+<a href="/publications/#books">{{ books_authored | length }} books</a> (contributing to 
+{{ ( books_contributed | length ) + ( books_forewords | length ) + ( books_edited | length ) }}
+more) and <a href="/publications/#articles">{{ articles | length }} articles</a> with that focus.
+
+I’ve also presented on these and related topics at
+<a href="/speaking-engagements/">over {{ speaking_engagements | length }} events</a> in
+{{ ( cities | length ) - 1 }} cities across the globe. 
+</p>
+
+<p>
+I’m a Principal Program Manager on the Microsoft Edge team,
+where I oversee our investments in Progressive Web Apps and developer UX.
+
+I’m also deeply involved in culture work within Microsoft, 
+leading a team providing allyship training.
+
+I’m also a former manager of the <a href="https://webstandards.org">Web Standards Project</a>,
+Editor-in-chief of <a href="https://alistapart.com"><cite>A List Apart</cite></a>, 
+and the founder of <a href="https://webwewant.fyi">the Web We Want</a>.
+</p>
+
+<p>
+If you’re interested in learning more about what I’m up to, 
+you can <a href="/now/">check out what I’m working on right now</a>.
+</p>

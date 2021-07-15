@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    Grid
+\*-------
+-----------------------------*/
+
+.layout-container {
+    
+    @include breakup-breakpoint( "global" ) {
+      max-width: 100%;
+
+      height: ie8( 1% );
+
+      // padding on a small screen
+      @include rem( padding, 0 20 );
+      margin: 0 auto;
+
+      position: relative;
+    }
+    
+    // @include breakup-breakpoint( "small" ) {
+    //
+    // }
+
+    @include breakup-breakpoint( "medium" ) {
+
+      @include rem( padding, 0 );
+      max-width: $bp-medium-em;
+      
+      &--blog {
+          max-width: 47em;
+      }
+        
+    }
+
+}

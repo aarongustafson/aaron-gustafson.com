@@ -1,0 +1,24 @@
+---
+layout: "page"
+title: "Whoops, I can’t find anything like that from"
+description: "I can’t seem to find what you are looking for."
+show_title: false
+body_class: "error-404"
+permalink: "/errors/404/"
+noindex: true
+---
+
+<h1>These Are Not the Droids You Seek</h1>
+
+<p>Unfortunately, what you’re looking for doesn’t appear to be here. Please double check the link you followed. If I screwed something up and moved a document you were looking for, I apologize for that. <a href="/contact">Please let me know</a>.</p>
+
+<p>If the content you are looking for existed at this address at some point in the past, perhaps the <a id="ia" href="https://web.archive.org/web/*/{{ site.url }}">Internet Archive</a> can help you out.</p>
+
+<div id="wb404"></div>
+<script src="https://archive.org/web/wb404.js"></script>
+<script>(function(query){
+  if ( query != "" ) {
+    var link = document.getElementById("ia");
+    link.href = link.href + query.replace(/\?url=/, "");
+  }
+})(this.location.search)</script>
