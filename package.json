@@ -4,8 +4,8 @@
   "description": "Aaron Gustafson’s website.",
   "main": ".eleventy.js",
   "scripts": {
-    "start": "npx gulp && concurrently 'npx gulp watch' 'npx eleventy --serve --quiet'",
-    "production": "NODE_ENV=production npx gulp prebuild && NODE_ENV=production eleventy --quiet && NODE_ENV=production gulp postbuild"
+    "start": "gulp && concurrently 'gulp watch' 'npx eleventy --serve --quiet'",
+    "production": "gulp prebuild && npx eleventy --quiet && gulp postbuild"
   },
   "repository": {
     "type": "git",
