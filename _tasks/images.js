@@ -2,7 +2,7 @@
 const {dest, src} = require('gulp');
 const config = require("./config.js");
 const imagemin = require('gulp-imagemin');
-const changed  = require("gulp-changed");
+const newer  = require("gulp-newer");
 // const webp  = require("gulp-webp");
 
 const destination = `${config.static}/i`;
@@ -12,8 +12,8 @@ const destination = `${config.static}/i`;
 const images = cb => {
 
   return src(`${config.source}/_images/**/*.{jpg,png,svg,gif}`)
-    // Ignore unchanged files
-    .pipe( changed( destination ) )
+    // Only take new files
+    .pipe( newer( destination ) )
     // Optimize
     .pipe(
       imagemin(
