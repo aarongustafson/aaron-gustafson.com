@@ -10,20 +10,11 @@
   "description": "The online home and work of Aaron Gustafson.",
   "orientation": "any",
   "background_color": "#fffcf4",
-  "icons": [{
-      "src": "/i/notification-icon.webp",
-      "type": "image/webp",
-      "sizes": "256x256"
-    },
+  "icons": [
     {
       "src": "/i/notification-icon.png",
       "type": "image/png",
       "sizes": "256x256"
-    },
-    {
-      "src": "/i/og-logo.webp",
-      "type": "image/webp",
-      "sizes": "800x600"
     },
     {
       "src": "/i/og-logo.png",
