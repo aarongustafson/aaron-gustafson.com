@@ -18,6 +18,7 @@ src/_includes/css
 src/static/i
 src/static/j
 src/static/c
+src/static/serviceworker*
 
 # Local Netlify folder
 .netlify
