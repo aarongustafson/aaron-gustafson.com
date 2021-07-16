@@ -21,7 +21,8 @@
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
     "concurrently": "^6.2.0",
-    "netlify-cli": "^4.4.2"
+    "netlify-cli": "^4.4.2",
+    "netlify-plugin-cache-folder": "0.0.8"
   },
   "devDependencies": {
     "@11ty/eleventy-plugin-rss": "^1.1.1",
@@ -50,7 +51,6 @@
     "markdown-it-attrs": "^4.0.0",
     "markdown-it-footnote": "^3.0.3",
     "merge-stream": "^2.0.0",
-    "netlify-plugin-cache-folder": "0.0.8",
     "node-fetch": "^2.6.1",
     "sass": "^1.35.2",
     "uglify-es": "^3.3.9",
