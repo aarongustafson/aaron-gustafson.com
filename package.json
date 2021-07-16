@@ -21,6 +21,7 @@
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
     "concurrently": "^6.2.0",
+    "gulp": "^4.0.2",
     "netlify-cli": "^4.4.2",
     "netlify-plugin-cache-folder": "0.0.8"
   },
@@ -35,7 +36,6 @@
     "eleventy-plugin-reading-time": "0.0.1",
     "eleventy-plugin-seo": "git://github.com/aarongustafson/eleventy-plugin-seo.git#making-pagenumbers-optional",
     "eleventy-plugin-svg-contents": "^0.7.0",
-    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-changed": "^4.0.3",
     "gulp-concat": "^2.6.1",
