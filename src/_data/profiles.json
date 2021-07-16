@@ -9,7 +9,7 @@
   },
   {
     "site": "Notist",
-    "url": "http://noti.st/aarongustafson",
+    "url": "https://noti.st/aarongustafson",
     "title": "See where I’ve been &amp; where I’m going next on Notist",
     "category": "speaking",
     "active": true
@@ -31,7 +31,7 @@
   },
   {
     "site": "SlideShare",
-    "url": "http://www.slideshare.net/AaronGustafson/",
+    "url": "https://www.slideshare.net/AaronGustafson/",
     "title": "View and download presentatinos I’ve given on SlideShare",
     "category": "speaking",
     "active": false
@@ -54,7 +54,7 @@
   {
     "site": "Instagram",
     "username": "AaronGustafson",
-    "url": "http://instagram.com/AaronGustafson",
+    "url": "https://instagram.com/AaronGustafson",
     "title": "View my square photos on Instagram",
     "category": "photos",
     "active": true
