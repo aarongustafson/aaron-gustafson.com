@@ -13,7 +13,7 @@ const images = cb => {
 
   return src(`${config.source}/_images/**/*.{jpg,png,svg,gif}`)
     // Ignore unchanged files
-    //.pipe( changed( destination ) )
+    .pipe( changed( destination ) )
     // Optimize
     .pipe(
       imagemin(
