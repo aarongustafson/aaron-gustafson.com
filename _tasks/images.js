@@ -12,8 +12,8 @@ const destination = `${config.source}/static/i`;
 const images = cb => {
 
   return src(`${config.source}/_images/**/*.{jpg,png,svg,gif}`)
-     // Ignore unchanged files
-    .pipe( changed( destination ) )
+    // Ignore unchanged files
+    //.pipe( changed( destination ) )
     // Optimize
     .pipe(
       imagemin(
