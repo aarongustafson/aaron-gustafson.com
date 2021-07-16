@@ -31,7 +31,7 @@
     "eleventy-plugin-embed-everything": "^1.13.2",
     "eleventy-plugin-images-responsiver": "^1.9.1",
     "eleventy-plugin-reading-time": "0.0.1",
-    "eleventy-plugin-seo": "git://github.com/aarongustafson/eleventy-plugin-seo.git#making-pagenumbers-optional",
+    "eleventy-plugin-seo": "^0.5.2",
     "eleventy-plugin-svg-contents": "^0.7.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
