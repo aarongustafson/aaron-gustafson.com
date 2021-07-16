@@ -27,7 +27,12 @@
       max-width: $bp-medium-em;
       
       &--blog {
-          max-width: 47em;
+        max-width: 47em;
+      }
+
+      &--primary {
+        width: 74%;
+        float: left;
       }
         
     }
