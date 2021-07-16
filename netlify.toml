@@ -4,7 +4,7 @@
   status = 404
 
 [build]
-  command = "npm run production"
+  command = "npm run build"
 
 [dev]
   framework = "eleventy"
