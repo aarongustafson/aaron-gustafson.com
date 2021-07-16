@@ -11,3 +11,4 @@
 
 [[plugins]]
   package = "netlify-plugin-cache-folder"
+  package = "./plugins/persist-static-directory"
