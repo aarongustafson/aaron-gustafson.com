@@ -18,5 +18,6 @@ src/_includes/css
 src/static/i
 src/static/j
 src/static/c
+
 # Local Netlify folder
 .netlify

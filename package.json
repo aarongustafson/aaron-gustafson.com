@@ -5,7 +5,9 @@
   "main": ".eleventy.js",
   "scripts": {
     "start": "gulp && concurrently 'gulp watch' 'npx eleventy --serve --quiet'",
-    "production": "gulp prebuild && npx eleventy --quiet && gulp postbuild"
+    "prebuild": "gulp prebuild",
+    "build": "npx eleventy --quiet",
+    "postbuild": "gulp postbuild"
   },
   "repository": {
     "type": "git",
