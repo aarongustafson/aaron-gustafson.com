@@ -20,15 +20,10 @@
   "homepage": "https://aaron-gustafson.com",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "concurrently": "^6.2.0",
-    "gulp": "^4.0.2",
-    "netlify-cli": "^4.4.2",
-    "netlify-plugin-cache-folder": "0.0.8"
-  },
-  "devDependencies": {
     "@11ty/eleventy-plugin-rss": "^1.1.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.2",
     "@manustays/eleventy-plugin-codepen-iframe": "^2.0.1",
+    "concurrently": "^6.2.0",
     "css-what": "^5.0.1",
     "dotenv": "^10.0.0",
     "eleventy-plugin-embed-everything": "^1.13.2",
@@ -36,6 +31,7 @@
     "eleventy-plugin-reading-time": "0.0.1",
     "eleventy-plugin-seo": "git://github.com/aarongustafson/eleventy-plugin-seo.git#making-pagenumbers-optional",
     "eleventy-plugin-svg-contents": "^0.7.0",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-changed": "^4.0.3",
     "gulp-concat": "^2.6.1",
@@ -46,14 +42,18 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.2",
+    "merge-stream": "^2.0.0",
     "lodash": "^4.17.21",
     "luxon": "^1.27.0",
     "markdown-it-attrs": "^4.0.0",
     "markdown-it-footnote": "^3.0.3",
-    "merge-stream": "^2.0.0",
+    "netlify-cli": "^4.4.2",
     "node-fetch": "^2.6.1",
+    "netlify-plugin-cache-folder": "0.0.8",
     "sass": "^1.35.2",
     "uglify-es": "^3.3.9",
     "widont": "^0.3.3"
+  },
+  "devDependencies": {
   }
 }
