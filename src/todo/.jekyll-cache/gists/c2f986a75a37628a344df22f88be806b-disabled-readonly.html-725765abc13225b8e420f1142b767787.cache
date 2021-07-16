@@ -1,5 +1,0 @@
-<label for="username-1">Disabled Username</label>
-<input id="username-1" name="username-1" disabled value="AaronGustafson">
-                                                                        
-<label for="username-2">Readonly Username</label>
-<input id="username-2" name="username-2" readonly value="AaronGustafson">

@@ -20,5 +20,8 @@ src/static/j
 src/static/c
 src/static/serviceworker*
 
+# old jekyll stuff
+todo
+
 # Local Netlify folder
 .netlify

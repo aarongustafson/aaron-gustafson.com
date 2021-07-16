@@ -1,8 +1,0 @@
-$foreground-color: #333;
-$background-color: #fff;
- 
- 
-body {
-  background: $background-color;
-  color: $foreground-color;
-}

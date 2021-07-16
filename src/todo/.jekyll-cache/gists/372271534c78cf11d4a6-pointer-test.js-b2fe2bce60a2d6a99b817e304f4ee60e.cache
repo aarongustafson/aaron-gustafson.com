@@ -1,3 +1,0 @@
-if ( window.PointerEvent ) {
-  window.addEventListener( "pointerdown", detectType, false );
-}

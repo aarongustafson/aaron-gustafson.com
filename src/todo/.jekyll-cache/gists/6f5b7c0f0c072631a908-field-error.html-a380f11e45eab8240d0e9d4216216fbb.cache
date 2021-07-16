@@ -1,8 +1,0 @@
-<label for="first_name">What’s your first name?</label>
-<input name="first_name" id="first_name"
-       aria-describedby="first_name-error"
-       >
-<em id="first_name-error">
-  Without your first name, I won’t know how to address you.
-  Could you please provide it?
-</em>

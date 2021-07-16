@@ -1,4 +1,0 @@
-li:nth-last-child(6):first-child, 
-li:nth-last-child(6):first-child ~ li {
-  color: green;
-}

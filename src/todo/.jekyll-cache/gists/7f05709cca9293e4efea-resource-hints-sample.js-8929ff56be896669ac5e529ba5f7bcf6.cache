@@ -1,4 +1,0 @@
-if ( 'AG' in window && 'preconnect' in window.AG ) {
-  window.AG.preconnect( '//disqus.com/' );
-  window.AG.prefetch( '//' + disqus_shortname + '.disqus.com/count.js' );
-}

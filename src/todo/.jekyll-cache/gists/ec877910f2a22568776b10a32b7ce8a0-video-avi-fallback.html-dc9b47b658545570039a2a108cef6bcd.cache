@@ -1,5 +1,0 @@
-<video>
-  <source src="my.avi" type="video/avi">
-  <p>Your browser doesn’t support AVI, but you can 
-    <a href="my.avi" download>download this movie</a></p>
-</video>
