@@ -28,6 +28,7 @@ const images = cb => {
     //.pipe( gulpIf( /.*?\.(jpg|png)$/, webp() ) )
     //.pipe( dest(`${config.source}/static/i`) )
     .on('done', cb);
+    
 };
 
 module.exports = images;
