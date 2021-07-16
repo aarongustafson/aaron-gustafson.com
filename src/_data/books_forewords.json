@@ -4,7 +4,7 @@
     "url": "https://abookapart.com/products/going-offline",
     "author": "Jeremy Keith",
     "published": "2018-04-24 12:00:00 -0500",
-    "cover": "going-offline",
+    "cover": "going-offline.png",
     "width": 152
   },
   {
@@ -13,7 +13,7 @@
     "url": "http://shop.oreilly.com/product/0636920034063.do",
     "author": "Jason Pamental",
     "published": "2014-10-06 12:00:00 -0500",
-    "cover": "responsive-typography",
+    "cover": "responsive-typography.jpg",
     "width": 152
   },
   {
@@ -22,7 +22,7 @@
     "url": "https://rosenfeldmedia.com/books/a-web-for-everyone/",
     "author": "Sarah Horton and Whitney Quesenbery",
     "published": "2014-01-16 12:00:00 -0500",
-    "cover": "a-web-for-everyone",
+    "cover": "a-web-for-everyone.jpg",
     "width": 134
   },
   {
@@ -30,7 +30,7 @@
     "url": "http://implementingresponsivedesign.com/",
     "author": "Tim Kadlec",
     "published": "2012-08-10 13:00:00 -0400",
-    "cover": "implementing-responsive-design",
+    "cover": "implementing-responsive-design.jpg",
     "width": 156
   }
 ]

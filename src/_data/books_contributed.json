@@ -5,7 +5,7 @@
     "url": "https://rosenfeldmedia.com/books/web-form-design/",
     "author": "Luke Wroblewski",
     "published": "2008-05-02 13:00:00 -0400",
-    "cover": "web-form-design",
+    "cover": "web-form-design.jpg",
     "width": 134,
     "notes": "Luke asked me to contribute a perspective on developing web forms in HTML to his seminal exploration of form design. This is a must-read book if you don’t have a copy."
   },
@@ -15,7 +15,7 @@
     "url": "https://www.apress.com/us/book/9781590597644",
     "author": "Jonathan Snook with Aaron Gustafson, Stuart Langridge, Dan Webb",
     "published": "2007-09-25 13:00:00 -0400",
-    "cover": "accelerated-dom-scripting",
+    "cover": "accelerated-dom-scripting.jpg",
     "width": 152,
     "notes": "When I was asked to contribute a chapter to Jonathan Snook’s book on JavaScript, I was floored. I got to pick the topic, so I wrote about upgrading FAQ pages with JavaScript."
   },
@@ -25,7 +25,7 @@
     "url": "https://www.apress.com/us/book/9781590598566",
     "author": "Jeffrey Sambells with Aaron Gustafson",
     "published": "2007-08-03 13:00:00 -0400",
-    "cover": "advanced-dom-scripting",
+    "cover": "advanced-dom-scripting.jpg",
     "width": 167,
     "notes": "I contributed a chapter exploring the creation of a custom-designed, accessible `select` element to Jeffrey Sambells’ advanced JavaScript technique book."
   },
@@ -34,7 +34,7 @@
     "url": "http://shop.oreilly.com/product/9780596009878.do",
     "author": "Jennifer Robbins",
     "published": "2006-03-06 12:00:00 -0500",
-    "cover": "web-design-in-a-nutshell",
+    "cover": "web-design-in-a-nutshell.jpg",
     "width": 134,
     "notes": "Jen Robbins’s <cite>Web Design in a Nutshell</cite> is the prefect desktop reference for all things web design-related. I contributed three chapters to the 3rd edition, covering CSS, JavaScript, and the DOM."
   }
