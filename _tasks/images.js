@@ -5,7 +5,7 @@ const imagemin = require('gulp-imagemin');
 const changed  = require("gulp-changed");
 // const webp  = require("gulp-webp");
 
-const destination = `${config.source}/static/i`;
+const destination = `${config.static}/i`;
 
 // Grabs all images, runs them through imagemin
 // and plops them in the dist folder

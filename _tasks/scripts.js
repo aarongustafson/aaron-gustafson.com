@@ -11,7 +11,7 @@ const composer = require("gulp-uglify/composer");
 const minify = composer(require("uglify-es"), console);
 
 const source_folder = `${config.source}/_javascript`;
-const destination_folder = `${config.source}/static/j`;
+const destination_folder = `${config.static}/j`;
 
 function getFolders( dir ) {
   return fs.readdirSync(dir)

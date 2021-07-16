@@ -1,6 +1,7 @@
 const config = {
   source: './src',
-  destination: './dist'
+  destination: './dist',
+  static: './src/static'
 };
 
 module.exports = config;

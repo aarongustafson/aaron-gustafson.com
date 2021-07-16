@@ -2,10 +2,10 @@ const {dest, src} = require('gulp');
 const config = require("./config.js");
 const sassProcessor = require('gulp-sass')(require('sass'));
 const autoprefixer = require('gulp-autoprefixer');
-const minifycss = require('gulp-minify-css');
+const minify = require('gulp-minify-css');
 const rename = require("gulp-rename");
 
-const destination = `${config.destination}/static/c`;
+const destination = `${config.static}/c`;
 
 const styles = cb => {
   return src(`${config.source}/_styles/**/*.scss`)
@@ -25,7 +25,7 @@ const styles = cb => {
     )
     .pipe( dest(destination) )
     .pipe( rename({suffix: '.min'}) )
-    .pipe( minifycss() )
+    .pipe( minify() )
     .pipe( dest( destination ) )
     .on('done', cb);
 };
