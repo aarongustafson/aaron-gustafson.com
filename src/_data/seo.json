@@ -4,10 +4,10 @@
   "url": "https://www.aaron-gustafson.com",
   "author": "Aaron Gustafson",
   "twitter": "AaronGustafson",
-  "image": "/i/og-logo.png",
+  "image": "https://www.aaron-gustafson.com/i/og-logo.png",
   "options": {
+    "imageWithBaseUrl": false,
     "titleDivider": " :: ",
-    "imageWithBaseUrl": true,
     "twitterCardType": "summary_large_image"
   }
 }

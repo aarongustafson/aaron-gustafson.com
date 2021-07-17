@@ -1,4 +1,0 @@
-{
-  "layout": "layouts/post.html",
-  "permalink": "/notebook/{{ page.fileSlug }}/"
-}
