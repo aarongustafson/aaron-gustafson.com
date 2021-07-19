@@ -13,22 +13,19 @@ github_edit: "_layouts/series.html"
     
     <p>{{ description | markdownify | safe }}</p>
     
-    <div class="layout-container__primary">
-
-      <div id="blog-archives">
-        {% for post in posts %}
-          {% set type = post.inputPath | content_type %}
-          <article class="entry entry--teaser entry--post">
-            <p class="entry__type" title="Post" aria-label="Post">{{ svg_essay | safe }}</p>
-            <div class="entry__details">
-              <h2 class="entry__title entry-title">
-                <a rel="bookmark" href="{{ post.url }}">{{ post.data.title | widont }}</a>
-              </h2>
-              <p class="entry__meta">Posted on <time class="dt-published" datetime="{{ post.data.date | machine_date }}">{{ post.data.date | readable_date }}</time></p>
-            </div>
-          </article>
-        {% endfor %}
-      </div>
+    <div id="blog-archives">
+      {% for post in posts %}
+        {% set type = post.inputPath | content_type %}
+        <article class="entry entry--teaser entry--post">
+          <p class="entry__type" title="Post" aria-label="Post">{{ svg_essay | safe }}</p>
+          <div class="entry__details">
+            <h2 class="entry__title entry-title">
+              <a rel="bookmark" href="{{ post.url }}">{{ post.data.title | widont }}</a>
+            </h2>
+            <p class="entry__meta">Posted on <time class="dt-published" datetime="{{ post.data.date | machine_date }}">{{ post.data.date | readable_date }}</time></p>
+          </div>
+        </article>
+      {% endfor %}
     </div>
   </article>
 {% endblock %}

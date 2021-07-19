@@ -32,6 +32,7 @@ Body-level settings
   // ==========================================================================
   html {
     //@include baseline-guide;
+    height: 100%;
     
     body {
       @include breakup-placeholder( text );
@@ -45,7 +46,8 @@ Body-level settings
       
       margin: 0 auto;
       //@include rem( max-width, 960 );
-      
+      height: 100%;
+    
       word-wrap: break-word;
       overflow-wrap: break-word;
     }
