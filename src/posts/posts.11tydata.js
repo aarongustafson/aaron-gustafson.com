@@ -1,5 +1,17 @@
 const getShareImage = require("@jlengstorf/get-share-image").default;
 
+// Markdown
+const markdownIt = require("markdown-it");
+const markdown_options = {
+  html: true,
+  linkify: true,
+  typographer: true,
+  breaks: false
+};
+const md = markdownIt(markdown_options)
+            .use(require("markdown-it-attrs"))
+            .use(require('markdown-it-footnote'));
+
 function tagsToString( tags )
 {
   var non_alpha_numeric = /[^a-zA-z0-9]/g
@@ -10,10 +22,21 @@ function tagsToString( tags )
   return tags.join(" ");
 }
 
+
 module.exports = {
   layout: "layouts/post.html",
   permalink: "/notebook/{{ page.fileSlug }}/",
   eleventyComputed: {
+    excerpt: (data) => {
+      let excerpt = "";
+      if ( "excerpt" in data.page )
+      {
+        excerpt = md.renderInline( data.page.excerpt )
+                    .replace(/(<([^>]+)>)/gi, "")
+                    .trim();
+      }
+      return excerpt;
+    },
     image: (data) => {
       return getShareImage({
         cloudName: "aarongustafson",
