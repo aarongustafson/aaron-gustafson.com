@@ -1,6 +1,6 @@
 <div class="webmention__author p-author h-card">
   <a class="u-url" href="{{ webmention.author.url }}">
-    <img class="webmention__author__photo u-photo" src="{{ webmention.author.photo }}" width="48" height="48" alt="" title="{{ webmention.author.name }}" loading="lazy">
+    <img class="webmention__author__photo u-photo" src="https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_48,h_48/{{ webmention.author.photo | replace('http://pbs.twimg.com', 'https://pbs.twimg.com') }}" width="48" height="48" alt="" title="{{ webmention.author.name }}" loading="lazy">
   </a>
   {% if show_name %}
     <b class="p-name">{{ webmention.author.name }}</b>
