@@ -1,28 +1,28 @@
 ---
-title: "Two black women received patents… in 1884 and 1885!"
+title: "Two Black women received patents… in 1884 and 1885!"
 date: 2020-02-09 16:27:18 -08:00
 comments: true
 tags: ["Black History", influences]
-description: "Regardless of who you consider “first,” the fact is that this is just yet another example of black women excelling at something often considered the domain of men."
+description: "Regardless of who you consider “first,” the fact is that this is just yet another example of Black women excelling at something often considered the domain of men."
 series:
   name: "Honoring Black History"
   tag: series-black-history
   ordinal: thirty-seventh
 ---
 
-I have to admit that I was a little surprised when I learned that the first black woman to receive a patent was granted it in 1884. To be clear, I wasn’t surprised because I didn’t think black women were capable of inventing things—not at all. I was surprised because the process of obtaining a patent is pretty arduous on its own, even without factoring in the very overt racism I’m sure these inventors were dealing with at every step of the way.
+I have to admit that I was a little surprised when I learned that the first Black woman to receive a patent was granted it in 1884. To be clear, I wasn’t surprised because I didn’t think Black women were capable of inventing things—not at all. I was surprised because the process of obtaining a patent is pretty arduous on its own, even without factoring in the very overt racism I’m sure these inventors were dealing with at every step of the way.
 
 <!-- more -->
 
-On 23 September 1884, Judy W. Reed received [patent number 305,474](https://pdfpiw.uspto.gov/.piw?Docid=00305474) for her "dough kneader and roller." She is considered to be the first black woman to receive a patent. We know don’t know much, but it’s believed she lived in Washington, D.C. or somewhere close by. She signed her patent application with an "X," so it’s unclear if she was literate (slaves often risked their lives when they learned to read and write).
+On 23 September 1884, Judy W. Reed received [patent number 305,474](https://pdfpiw.uspto.gov/.piw?Docid=00305474) for her "dough kneader and roller." She is considered to be the first Black woman to receive a patent. We know don’t know much, but it’s believed she lived in Washington, D.C. or somewhere close by. She signed her patent application with an "X," so it’s unclear if she was literate (slaves often risked their lives when they learned to read and write).
 
 Judy’s invention improved on the design of existing dough kneaders by allowing the dough to mix more evenly. The dough moved between two rollers carved with corrugated slats that would knead it before moving it into a covered container that kept the dough clean.
 
-The next year, on 14 July 1885, Sarah E. Goode received [patent 322,177](https://pdfpiw.uspto.gov/.piw?Docid=00322177) for a piece of furniture that could hide a folded up mattress. In many ways, it was the precursor to the sleeper sofa, though her original design had it tucked away in a secretary desk. Unlike Judy, Sarah did sign her application with her name, so some consider her to be the first black woman to be granted a patent in the United States.
+The next year, on 14 July 1885, Sarah E. Goode received [patent 322,177](https://pdfpiw.uspto.gov/.piw?Docid=00322177) for a piece of furniture that could hide a folded up mattress. In many ways, it was the precursor to the sleeper sofa, though her original design had it tucked away in a secretary desk. Unlike Judy, Sarah did sign her application with her name, so some consider her to be the first Black woman to be granted a patent in the United States.
 
-Regardless of who you consider "first," the fact is that this is just yet another example of black women excelling at something often considered the domain of men (specifically white men, if we’re being honest). Black women have long struggled (and indeed continue to) for the recognition they deserve as inventors, entrepreneurs, and technologists. That needs to end.
+Regardless of who you consider "first," the fact is that this is just yet another example of Black women excelling at something often considered the domain of men (specifically white men, if we’re being honest). Black women have long struggled (and indeed continue to) for the recognition they deserve as inventors, entrepreneurs, and technologists. That needs to end.
 
-Don’t stand idly by and let people erase black women from technical conversations taking place in meeting rooms, at conferences, or on Twitter. Highlight them and their accomplishments when someone asks you who you}re inspired by. Look for opportunities to showcase their tremendous talent; that’s the only way we’re gonna make things better.
+Don’t stand idly by and let people erase Black women from technical conversations taking place in meeting rooms, at conferences, or on Twitter. Highlight them and their accomplishments when someone asks you who you}re inspired by. Look for opportunities to showcase their tremendous talent; that’s the only way we’re gonna make things better.
 
 ## Further Reading
 

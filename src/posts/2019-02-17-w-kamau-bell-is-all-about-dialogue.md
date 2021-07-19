@@ -3,7 +3,7 @@ title: "W. Kamau Bell is all about dialogue"
 date: 2019-02-17 10:49:06 -08:00
 comments: true
 tags: ["Black History", influences]
-description: "Throughout his career, W. Kamau Bell has never shied away from confronting issues of race, racism, and the systemic oppression of blacks in America, but he’s also used his bully pulpit to start some important, but difficult conversations."
+description: "Throughout his career, W. Kamau Bell has never shied away from confronting issues of race, racism, and the systemic oppression of Black people in America, but he’s also used his bully pulpit to start some important, but difficult conversations."
 twitter_text: "@wkamaubell has used his bully pulpit to gently nudge us into some important, but difficult conversations"
 series:
   name: "Honoring Black History"
@@ -11,7 +11,7 @@ series:
   ordinal: seventeenth
 ---
 
-I don’t recall the first time I heard [W. Kamau Bell](https://twitter.com/wkamaubell) speak. Perhaps it was one of his stand-up specials or maybe it was an interview on <cite>the Daily Show</cite> or an appearance on <cite>Premium Blend</cite>, but he immediately made an impression. Throughout his career, he’s never shied away from confronting issues of race, racism, and the systemic oppression of blacks in America, but he’s also used his bully pulpit to start some important, but difficult conversations.
+I don’t recall the first time I heard [W. Kamau Bell](https://twitter.com/wkamaubell) speak. Perhaps it was one of his stand-up specials or maybe it was an interview on <cite>the Daily Show</cite> or an appearance on <cite>Premium Blend</cite>, but he immediately made an impression. Throughout his career, he’s never shied away from confronting issues of race, racism, and the systemic oppression of Black people in America, but he’s also used his bully pulpit to start some important, but difficult conversations.
 
 <!-- more -->
 

@@ -19,7 +19,7 @@ Lizzo was born Melissa Jefferson in Detroit and grew up in Texas. Growing up, sh
 
 Sometimes things happen in unexpected ways. Such was the case when, in the midst of a bout of writer’s block, she discovered Lazerbeak’s album <cite>Lava Bangers</cite>. Inspired, she began writing lyrics over his music and [decided to tweet at him, saying she’d love to work with him](https://twitter.com/lizzo/status/234421861998555137). Fast forward a tad and she released <cite>Lizzobangers</cite> with Lazerbeak on beats and Bon Iver's Justin Vernon producing (no word if she paid him in Mike's Hard Strawberry Lemonade though).
 
-In her solo career, especially, Lizzo has spent a good deal of time at the intersection of gender, race, and politics. Skipping the obvious societal disadvantages of being black, people dismissed her for being a female rapper and people ignored her because she’s not skinny. Rather than letting it hold her back, however, Lizzo seems to harness that oppression as fuel. It seems to have become a source of her power and inspiration for her work. Consider her raw testament that introduces "[My Skin](https://www.youtube.com/watch?v=WfEhyi8N__Q)":
+In her solo career, especially, Lizzo has spent a good deal of time at the intersection of gender, race, and politics. Skipping the obvious societal disadvantages of being Black, people dismissed her for being a female rapper and people ignored her because she’s not skinny. Rather than letting it hold her back, however, Lizzo seems to harness that oppression as fuel. It seems to have become a source of her power and inspiration for her work. Consider her raw testament that introduces "[My Skin](https://www.youtube.com/watch?v=WfEhyi8N__Q)":
 
 > Learning to love yourself and like learning to love your body is like a whole journey that I feel like every person, but more specifically, women, have to go through so I feel like doing this is a good way to kinda break through and kinda seal the last chapter of the "learning to love" and just loving.
 
@@ -30,7 +30,7 @@ In my skin<br>
 I can't wash it away, so you can't take it from me<br>
 My brown skin
 
-I hope Oscar feels the same way as he grows up. I hope I can help him realize how beautiful he is; he certainly hears it a lot from me and Kelly, but he’s only three. I‘m sure he’ll struggle with what it means to be the black child of two white parents, but I wish for him to never doubt his own worth, *especially* based on the color of his skin.
+I hope Oscar feels the same way as he grows up. I hope I can help him realize how beautiful he is; he certainly hears it a lot from me and Kelly, but he’s only three. I‘m sure he’ll struggle with what it means to be the Black child of two white parents, but I wish for him to never doubt his own worth, *especially* based on the color of his skin.
 
 In [an interview with <cite>Teen Vogue</cite>](https://www.teenvogue.com/story/lizzo-music-issue), Lizzo
 

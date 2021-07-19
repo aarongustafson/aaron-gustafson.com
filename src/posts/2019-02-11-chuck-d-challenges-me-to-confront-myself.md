@@ -19,7 +19,7 @@ Growing up, I vividly remember my first introduction to Chuck D in the guise of 
 
 My musical tastes did broaden a bit over the next few years, however, and I began to gravitate toward more overtly political punk and rap. And when I did, Public Enemy was there for me. Growing up a middle class white boy in suburban Orlando, their music was… challenging to say the least. Not only was it aggressive, but the content challenged my worldview.
 
-Unlike many people who reacted negatively when confronted with the themes of Public Enemy’s records—black radicalism, white supremacy, institutional racism—I felt driven to reflect on my own existence, my own privilege. In many ways, I didn’t feel like Chuck D’s lyrics were confronting me, but rather challenging me to confront myself.
+Unlike many people who reacted negatively when confronted with the themes of Public Enemy’s records—Black radicalism, white supremacy, institutional racism—I felt driven to reflect on my own existence, my own privilege. In many ways, I didn’t feel like Chuck D’s lyrics were confronting me, but rather challenging me to confront myself.
 
 As an adult, I experienced Chuck D in a new way as one of the hosts of <cite>Unfiltered</cite> on [Air America Radio](https://www.nytimes.com/2004/03/31/arts/liberal-voices-some-sharp-get-new-home-on-radio-dial.html). I found a lot of solace in his wisdom and politics—and those of his co-hosts Lizz Winstead and Rachel Maddow—at the start of George W. Bush’s second term.[^1] And, as I’d come to expect by that point, he continued to challenge my comfortable life and made me question what I was doing to help others less fortunate than myself.
 

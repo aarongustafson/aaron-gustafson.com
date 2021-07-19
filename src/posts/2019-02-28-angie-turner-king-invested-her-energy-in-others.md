@@ -3,15 +3,15 @@ title: "Angie Turner King invested her energy in others"
 date: 2019-02-28 16:16:04 -08:00
 comments: true
 tags: ["Black History", influences]
-description: "Chances are you’ve never heard the name Angie Turner King, and that’s because—like so many black women—she invested her time and energy in other people."
-twitter_text: "Chances are you’ve never heard the name Angie Turner King, and that’s because—like so many black women—she invested her time and energy in other people"
+description: "Chances are you’ve never heard the name Angie Turner King, and that’s because—like so many Black women—she invested her time and energy in other people."
+twitter_text: "Chances are you’ve never heard the name Angie Turner King, and that’s because—like so many Black women—she invested her time and energy in other people"
 series:
   name: "Honoring Black History"
   tag: series-black-history
   ordinal: twenty-eighth
 ---
 
-Chances are you’ve never heard the name Angie Turner King, and that’s because, like so many black women, she invested her time and energy in other people. In King’s case, students.
+Chances are you’ve never heard the name Angie Turner King, and that’s because, like so many Black women, she invested her time and energy in other people. In King’s case, students.
 
 <!-- more -->
 
@@ -25,4 +25,4 @@ King went on to earn her PhD, even after getting married and birthing five daugh
 
 To the best of our knowledge, Angie Turner King only every published two works (her dissertations). She didn’t invent some groundbreaking technology we can’t live without. She didn’t cure a horrible disease. She didn’t do one specific thing we should recognize her for. She did many things. She taught. She mentored. She nurtured. She put her energy into her students and gave them the tools they needed to be successful. She put others before herself and that’s damn admirable.
 
-For this reason, I think Angie Turner King is the perfect person on whom to close out [this series](/tags/black-history/). So many incredibly important figures have been wiped from history by people who find them threatening. We need to share their stories. And even more never stepped into the limelight (or searchlight) to begin with. We need to discover them and share them too. We need to acknowledge and thank them enough for their activism, their sacrifice, and their commitment to improving this world of ours. We need to remember their names.
+For this reason, I think Angie Turner King is the perfect person on whom to close out [this series](/series/black-history/). So many incredibly important figures have been wiped from history by people who find them threatening. We need to share their stories. And even more never stepped into the limelight (or searchlight) to begin with. We need to discover them and share them too. We need to acknowledge and thank them enough for their activism, their sacrifice, and their commitment to improving this world of ours. We need to remember their names.

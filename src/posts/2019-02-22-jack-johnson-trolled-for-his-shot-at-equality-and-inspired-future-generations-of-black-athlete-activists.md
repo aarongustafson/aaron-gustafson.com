@@ -1,10 +1,10 @@
 ---
-title: "Jack Johnson “trolled” for his shot at equality and inspired future generations of black athlete activists"
+title: "Jack Johnson “trolled” for his shot at equality and inspired future generations of Black athlete activists"
 date: 2019-02-22 09:33:30 -08:00
 comments: true
 tags: ["Black History", influences]
-description: "Jack Johnson’s unwillingness to settle for what he was given as a black man in early 20th Century America became an example for future athletes to use their visibility to agitate for change"
-twitter_text: "Jack Johnson’s unwillingness to settle for what he was given as a black man in early 20th Century America became an example for future athletes to agitate for change"
+description: "Jack Johnson’s unwillingness to settle for what he was given as a Black man in early 20th Century America became an example for future athletes to use their visibility to agitate for change"
+twitter_text: "Jack Johnson’s unwillingness to settle for what he was given as a Black man in early 20th Century America became an example for future athletes to agitate for change"
 series:
   name: "Honoring Black History"
   tag: series-black-history
@@ -19,9 +19,9 @@ Jack Johnson was born in Galveston, Texas in 1878. His parents were former slave
 
 After moving around a bit, Johnson took an apprenticeship with a carriage painter named Walter Lewis, who instilled in him a love of boxing. After moving briefly to Manhattan, where he lived with [West Indian boxer Joe Walcott](https://wikipedia.org/wiki/Barbados_Joe_Walcott), Johnson lost his job exercising horses and returned to Galveston and took a job as janitor at a gym owned by German-born heavyweight fighter Herman Bernau. He saved up the money to buy a pair of gloves sparred whenever he could.
 
-Jack Johnson made his professional boxing debut in 1898 in Galveston. By 1903, Johnson had won at least 50 fights against both white and black contenders. It was that year that he took the title of [World Colored Heavyweight Champion](https://wikipedia.org/wiki/World_Colored_Heavyweight_Championship) from Denver Ed Martin.
+Jack Johnson made his professional boxing debut in 1898 in Galveston. By 1903, Johnson had won at least 50 fights against both white and Black contenders. It was that year that he took the title of [World Colored Heavyweight Champion](https://wikipedia.org/wiki/World_Colored_Heavyweight_Championship) from Denver Ed Martin.
 
-Even though Johnson had tussled with white boxers previously—most notably Joe Choynski, who became somewhat of a mentor—there was a gentlemen’s agreement that black boxers would not be allowed to challenge white boxers for titles like Heavyweight Champion of the World. Not willing to accept that, Johnson began spending his own time and money traveling the world to take a ringside seat wherever the current champ was fighting. From the seats, he would troll them mercilessly.
+Even though Johnson had tussled with white boxers previously—most notably Joe Choynski, who became somewhat of a mentor—there was a gentlemen’s agreement that Black boxers would not be allowed to challenge white boxers for titles like Heavyweight Champion of the World. Not willing to accept that, Johnson began spending his own time and money traveling the world to take a ringside seat wherever the current champ was fighting. From the seats, he would troll them mercilessly.
 
 James J. Jeffries refused to fight him, even when Johnson reportedly KO’d Jeffries’ brother Jack and taunted him about it. When [Tommy Burns](https://wikipedia.org/wiki/Tommy_Burns_(boxer)) took the title, Johnson set his sights on him, daring him to put his title on the line and step into the ring with him.
 
@@ -31,15 +31,15 @@ If you’ve heard the term "Great White Hope" before, it actually originated in 
 
 [^1]: They apparently offered him $120,000, which in today’s dollars would be well over $3 million.
 
-Oddly, as World Heavyweight Champion, Johnson stuck to the script and refused to fight fellow black boxers. Allegedly he did so because he could make more money fighting white boxers, but, regardless of the reason, this decision was incredibly offensive to the black community. And when he did finally agree to fight another black boxer in 1913, he didn’t give the title shot to the then-current World Colored Heavyweight Champion[ Sam Langford](https://wikipedia.org/wiki/Sam_Langford). Instead, he agreed to fight [Battling Jim Johnson](https://wikipedia.org/wiki/Jim_Johnson_(boxer)), a lesser boxer who had lost repeatedly to the various black heavyweights who had reigned from the time Jack Johnson earned the world heavyweight title.
+Oddly, as World Heavyweight Champion, Johnson stuck to the script and refused to fight fellow Black boxers. Allegedly he did so because he could make more money fighting white boxers, but, regardless of the reason, this decision was incredibly offensive to the Black community. And when he did finally agree to fight another Black boxer in 1913, he didn’t give the title shot to the then-current World Colored Heavyweight Champion[ Sam Langford](https://wikipedia.org/wiki/Sam_Langford). Instead, he agreed to fight [Battling Jim Johnson](https://wikipedia.org/wiki/Jim_Johnson_(boxer)), a lesser boxer who had lost repeatedly to the various Black heavyweights who had reigned from the time Jack Johnson earned the world heavyweight title.
 
-Despite his holding of the "color line" when it came to boxing, Johnson had no issues crossing it in his private life. [Having had his heart broken by two black women, he switched to dating white women](https://www.pbs.org/kenburns/unforgivable-blackness/women) and married a few of them too. This was hugely irritating to the white institutions of power that just couldn’t seem to keep him down. Add this to the fact that he was also earning a ton of money from his fights, endorsement, etc. and the white establishment became convinced they needed to take him down by any means necessary.
+Despite his holding of the "color line" when it came to boxing, Johnson had no issues crossing it in his private life. [Having had his heart broken by two Black women, he switched to dating white women](https://www.pbs.org/kenburns/unforgivable-Blackness/women) and married a few of them too. This was hugely irritating to the white institutions of power that just couldn’t seem to keep him down. Add this to the fact that he was also earning a ton of money from his fights, endorsement, etc. and the white establishment became convinced they needed to take him down by any means necessary.
 
 They decided to use the Mann Act—which was written to counter white slavery—against him. There was a clause in the law that prohibited "transporting women across state lines for immoral purposes". Since interracial relationships were considered "immoral," Johnson was arrested in 1912 while traveling with his then-girlfriend (and future second wife) Lucille Cameron. When that case fell apart, they arrested him a second time and convinced Belle Schreiber, another woman who he had been involved with for several years, to testify against him. He was convicted by an all-white jury in 1913, despite the fact that the incidents used to convict him predated passage of the Mann Act.
 
-Aware of the motivations behind this move, Johnson skipped bail and fled to Canada by posing as a black baseball player. There, he reunited with Cameron and the two of them set off for France. For the next seven years, they lived in exile in Europe, Mexico, and South America. In 1920, he returned to the U.S. and turned himself in to authorities. He served about 9 months of his sentence in Leavenworth before being released. He was posthumously pardoned for his obviously racially-motivated conviction by President Trump in 2018.
+Aware of the motivations behind this move, Johnson skipped bail and fled to Canada by posing as a Black baseball player. There, he reunited with Cameron and the two of them set off for France. For the next seven years, they lived in exile in Europe, Mexico, and South America. In 1920, he returned to the U.S. and turned himself in to authorities. He served about 9 months of his sentence in Leavenworth before being released. He was posthumously pardoned for his obviously racially-motivated conviction by President Trump in 2018.
 
-It’s doubtful that Johnson would consider himself part of the resistance or an activist, but his unwillingness to settle for what he was given as a black man in early 20th Century America became an example for future athletes to use their visibility to agitate for change.
+It’s doubtful that Johnson would consider himself part of the resistance or an activist, but his unwillingness to settle for what he was given as a Black man in early 20th Century America became an example for future athletes to use their visibility to agitate for change.
 
 <hr>
 

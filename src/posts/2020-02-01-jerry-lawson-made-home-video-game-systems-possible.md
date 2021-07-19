@@ -13,7 +13,7 @@ series:
 
 One of my fondest childhood memories was getting a Nintendo Entertainment System for my birthday. It wasn’t the expensive set with the robot and the gun (we were poor), but my mom somehow managed to scrape together the $199 (over $470 in today’s dollars) for the system. It opened up a whole new world for me.
 
-I only recently discovered that this fixture of my childhood was made possible by a black engineer named Jerry Lawson.
+I only recently discovered that this fixture of my childhood was made possible by a Black engineer named Jerry Lawson.
 
 <!-- more -->
 

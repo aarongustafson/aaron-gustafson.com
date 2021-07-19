@@ -3,15 +3,15 @@ title: "Maya Angelou persevered, but many don’t"
 date: 2020-02-02 14:58:47 -08:00
 comments: true
 tags: ["Black History", influences]
-description: "Did you know that Maya Angelou was San Francisco’s first black woman cable car conductor?"
-twitter_text: "Remember when Maya Angelou became San Francisco’s first black woman cable car conductor?"
+description: "Did you know that Maya Angelou was San Francisco’s first Black woman cable car conductor?"
+twitter_text: "Remember when Maya Angelou became San Francisco’s first Black woman cable car conductor?"
 series:
   name: "Honoring Black History"
   tag: series-black-history
   ordinal: thirtieth
 ---
 
-There are so many reasons to love and admire Maya Angelou. Most of these stem from her novels, poetry, and civil rights work, but I’m going to pick an unusual one: she was determined to be the first black woman to conduct a cable car in San Francisco. And she succeeded at 16.
+There are so many reasons to love and admire Maya Angelou. Most of these stem from her novels, poetry, and civil rights work, but I’m going to pick an unusual one: she was determined to be the first Black woman to conduct a cable car in San Francisco. And she succeeded at 16.
 
 <!-- more -->
 
@@ -21,7 +21,7 @@ Her mom, Vivian Baxter, encouraged her to apply, but Market Street Railway Compa
 
 Her mom knew how much she wanted the job and told her to “go get it,” advising her to “Go down everyday and be there before the secretaries get there and read your big Russian books” (she was reading Dostoevsky). “And sit there until they leave.” After sitting there for two weeks, Angelou’s ambition and determination finally paid off and she was invited to apply and got the job.
 
-While this is an interesting tidbit from Angelou’s life—which has been chronicled in several of her books, including <cite>I Know Why the Caged Bird Sings</cite> and <cite>Mom & Me & Mom</cite>—it still resonates today. Here we are, 76 years later, and black people—especially black women—are still disadvantaged when it comes to applying for jobs.
+While this is an interesting tidbit from Angelou’s life—which has been chronicled in several of her books, including <cite>I Know Why the Caged Bird Sings</cite> and <cite>Mom & Me & Mom</cite>—it still resonates today. Here we are, 76 years later, and Black people—especially Black women—are still disadvantaged when it comes to applying for jobs.
 
 Angelou’s perseverance in the face of bigotry is laudable, but it’s incredibly sad that she and so many others have needed to go to such lengths just to get their feet in the door. We must work to change this.
 

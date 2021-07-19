@@ -14,7 +14,7 @@ While the history of slavery in America was covered in my schooling, that educat
 
 <!-- more -->
 
-During the Civil War, Secretary of State William Seward, whose house was a stop on the underground railroad, ran a spy ring that recruited former slaves. The key to the success of this endeavor was the [invisibility of blacks](https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/) to white Confederates. They didn’t see them and they didn’t even consider that they might be intelligent enough to be working against them.
+During the Civil War, Secretary of State William Seward, whose house was a stop on the underground railroad, ran a spy ring that recruited former slaves. The key to the success of this endeavor was the [invisibility of Black people](https://www.aaron-gustafson.com/notebook/why-oscars-middle-name-is-ellison/) to white Confederates. They didn’t see them and they didn’t even consider that they might be intelligent enough to be working against them.
 
 Their invisibility didn’t mean this work was without risk though. These former slaves were not legally free; they were still considered fugitives under the law. Moreover, Tubman was a well-known abolitionist, so her travels into enemy territory were exceptionally risky.
 
@@ -24,8 +24,8 @@ Harriet Tubman was a badass!
 
 Sadly—but unsurprisingly—she never got paid for her work as a spy during her lifetime. In 2003, however, then-Senator [Hillary Clinton did issue a payment to Harriet Tubman’s estate](http://harriettubman.com/senclintion.html) as a way to posthumously repay her for her efforts and bravery (and the pension she never received).
 
-After the war, [Harriet Tubman took up the cause of women’s suffrage](http://www.harriet-tubman.org/women-rights-suffrage/) alongside Susan B. Anthony and Emily Howland. Sadly, [the role of black women in the suffragist movement has also been undermined and downplayed](https://www.nytimes.com/2019/02/02/opinion/sunday/women-voting-19th-amendment-white-supremacy.html). We need to [remember and celebrate their contributions](https://wikipedia.org/wiki/African-American_women%27s_suffrage_movement) too.
+After the war, [Harriet Tubman took up the cause of women’s suffrage](http://www.harriet-tubman.org/women-rights-suffrage/) alongside Susan B. Anthony and Emily Howland. Sadly, [the role of Black women in the suffragist movement has also been undermined and downplayed](https://www.nytimes.com/2019/02/02/opinion/sunday/women-voting-19th-amendment-white-supremacy.html). We need to [remember and celebrate their contributions](https://wikipedia.org/wiki/African-American_women%27s_suffrage_movement) too.
 
 For more about Harriet Tubman’s wartime history, check out the book [<cite>Harriet Tubman, Secret Agent</cite>](https://www.goodreads.com/book/show/118134.Harriet_Tubman_Secret_Agent) and listen to [“The Raid” from Uncivil](https://www.gimletmedia.com/uncivil/the-raid).
 
-<aside><p>I don’t think I’m alone in feeling like my education around my country’s history of slavery, the Civil War, and our prejudice against black people, is woefully inadequate. In order to confront the way our society systemically divides, degrades, and destroys black lives, we need to take a long hard look at where this oppression began. If we don’t recognize and own the atrocities of our past (and present), we can’t change them. Education is key. We need to do better.</p></aside>
+<aside><p>I don’t think I’m alone in feeling like my education around my country’s history of slavery, the Civil War, and our prejudice against Black people, is woefully inadequate. In order to confront the way our society systemically divides, degrades, and destroys Black lives, we need to take a long hard look at where this oppression began. If we don’t recognize and own the atrocities of our past (and present), we can’t change them. Education is key. We need to do better.</p></aside>

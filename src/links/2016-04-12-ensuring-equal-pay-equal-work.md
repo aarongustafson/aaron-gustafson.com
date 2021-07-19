@@ -13,6 +13,6 @@ Here are the stats for U.S. employees, assuming the same job title and level:
 
 * **Women earn 99.8¢ for every $1** earned by a man;
 * **Racial/ethnic minorities earn $1.004 for every $1** earned by a Caucasian employee;
-* **African American/black employees earn $1.003 for every $1** earned by Caucasian employees;
+* **African American/Black employees earn $1.003 for every $1** earned by Caucasian employees;
 * **Hispanic/Latin employees earn 99.9¢ for every $1** earned by Caucasian employees; and
 * **Asian employees earn $1.006 for every $1** earned by Caucasian employees.
