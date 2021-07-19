@@ -21,7 +21,7 @@ github_edit: "_layouts/blog.html"
           <header class="entry__header">
             <h1 class="entry__title entry-title">
               {% if is_excerpted %}
-                <a rel="bookmark" href="{{ post.url }}">{{ post.data.title | widont | markdownify | safe }}</a>
+                <a rel="bookmark" href="{{ post.url }}">{{ post.data.title | title | widont | markdownify | safe }}</a>
               {% elif post.data.ref_url %}
                 <a rel="external original-article" href="{{ post.data.ref_url }}">{{ post.data.title | widont }}</a>
               {% else %}

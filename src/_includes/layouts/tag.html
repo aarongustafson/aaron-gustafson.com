@@ -5,13 +5,12 @@ github_edit: "_layouts/tag.html"
 {% extends "layouts/base.html" %}
 
 {% block content %}
-  {% set the_title %}<b>Browse by Tag:</b> <b>{{ tag }}</b>{% endset %}
   {% set posts = collections[ tag ] %}
-  {% set svg_essay %}{{ "/src/static/i/icons/essay.svg" | svgContents | replace('"100"','"24"') | replace('"87"','"20"') | safe }}{% endset %}
-  {% set svg_link %}{{ "/src/static/i/icons/pin.svg" | svgContents  | replace('"100"','"24"') | safe }}{% endset %}
+  {% set svg_essay %}{{ "/src/static/i/icons/essay.svg" | svgContents | safe }}{% endset %}
+  {% set svg_link %}{{ "/src/static/i/icons/pin.svg" | svgContents | safe }}{% endset %}
 
   <article role="article" class="page layout-container layout-container--blog">
-    <h1 class="page__title subsection__header">{{ the_title | title | widont | safe }}</h1>
+    <h1 class="page__title">Content Tagged “{{ title | title | widont | safe }}”</h1>
     <div class="layout-container__primary">
 
       <div id="blog-archives">
