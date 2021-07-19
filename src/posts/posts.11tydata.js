@@ -17,23 +17,23 @@ module.exports = {
     image: (data) => {
       return getShareImage({
         cloudName: "aarongustafson",
-        imagePublicID: "share-card_xvdf2w",
+        imagePublicID: "share-card",
         tagline: tagsToString(data.tags),
         taglineColor: "505050",
         taglineFont: "Open Sans",
-        // light, 760px wide
-        taglineExtraConfig: "_light_w_760",
+        // light, -5 line spacing
+        taglineExtraConfig: "_light_line_spacing_-5",
         taglineFontSize: 36,
         taglineGravity: "north_west",
         taglineLeftOffset: 480,
-        taglineTopOffset: 495,
-        textAreaWidth: 600,
+        taglineTopOffset: 505,
+        textAreaWidth: 760,
         title: data.title,
         titleFont: "Source Serif Pro",
-        titleFontSize: 64,
+        titleFontSize: 72,
         titleGravity: "south_west",
-        // 600 weight, 760px wide, -10 line spacing
-        titleExtraConfig: "_600_w_760_line_spacing_-15",
+        // 700 weight, -18 line spacing
+        titleExtraConfig: "_700_line_spacing_-18",
         titleLeftOffset: 480,
         titleBottomOffset: 205,
         textColor: "2C2825",
