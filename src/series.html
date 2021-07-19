@@ -1,0 +1,22 @@
+---
+title: "Notebook Series"
+permalink: "/notebook/series/index.html"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block content %}
+  <div class="layout-container">
+    <article role="article" class="h-entry">
+      <header>
+        <h1 class="entry-title">{{ title | title | widont }}</h1>
+      </header>
+
+      <ul class="listing">
+        {% for tag, name in collections.series %}
+          <li class="listing__item"><a href="/notebook/series/{{ tag | replace('series-', '') }}">{{ name }}</a>
+        {% endfor %}
+      </ul>
+    </article>
+  </div>
+{% endblock %}

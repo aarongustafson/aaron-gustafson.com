@@ -14,7 +14,7 @@ single: "true"
     <article role="article" class="layout-container__primary h-entry">
       <div class="entry">
         <header class="entry__header">
-          <h1 class="entry__title p-name">{{ title | widont | markdownify | safe }}</h1>
+          <h1 class="entry__title p-name">{{ title | title | widont | markdownify | safe }}</h1>
           
           <dl class="entry__meta">
             <dt>Published</dt>
@@ -62,15 +62,12 @@ single: "true"
           </p>
         {% endif %}
 
-        {#
-        Todo: Create a series collection & page
         {% if series %}
           <p class="entry__series">This is the {{ series.ordinal }} entry in the series 
-            <a href="/series/{{ series.tag | replace('series-') }}">{{ series.name }}</a>.
+            <a href="/notebook/series/{{ series.tag | replace('series-','') }}">{{ series.name }}</a>.
           </p>
         {% endif %}
-        #}
-
+        
         <div class="entry__content e-content">
           {{ content | safe }}
         </div>

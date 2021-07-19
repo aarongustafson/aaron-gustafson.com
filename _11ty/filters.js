@@ -60,6 +60,13 @@ module.exports = {
              });
   },
 
+  bySeriesTag: ( array, tag ) => {
+    return array.filter( item => {
+      return "series" in item.data &&
+             item.data.series.tag == tag;
+    });
+  },
+
   unescape: html => {
     html = html || "";
     return html.replace(/&gt;/g, ">")

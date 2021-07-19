@@ -14,6 +14,7 @@ const embedCodePen = require("@manustays/eleventy-plugin-codepen-iframe");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const imagesResponsiver = require("eleventy-plugin-images-responsiver");
 const readingTime = require('eleventy-plugin-reading-time');
+const { series } = require("gulp");
 
 module.exports = config => {
 
@@ -115,13 +116,25 @@ module.exports = config => {
   function filterTagList(tags) {
     return (tags || []).filter(tag => ["all", "nav", "post", "posts"].indexOf(tag) === -1);
   }
-  config.addCollection("tags", function(collection) {
+  config.addCollection("tags", function(collectionApi) {
     let tagSet = new Set();
-    collection.getAll()
+    collectionApi.getAll()
       .forEach(item => {
         (item.data.tags || []).forEach(tag => tagSet.add(tag));
       });
     return filterTagList([...tagSet]);
+  });
+  config.addCollection("series", function(collectionApi) {
+    let series = {};
+    collectionApi.getAll()
+      .forEach(item => {
+        if ( "series" in item.data &&
+             ! ( item.data.series.tag in series ) )
+        {
+          series[item.data.series.tag] = item.data.series.name;
+        }
+      });
+    return series;
   });
 
   // Front Matter
