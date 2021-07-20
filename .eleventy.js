@@ -69,6 +69,7 @@ module.exports = config => {
       closingSingleTag: "slash"
     }
   });
+  config.addPlugin(syntaxHighlight);
   
   // Filters
   config.addFilter("getNewestCollectionItemDate", pluginRss.getNewestCollectionItemDate);

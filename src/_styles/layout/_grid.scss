@@ -21,7 +21,7 @@
     //
     // }
 
-    @include breakup-breakpoint( "medium" ) {
+    @include breakup-breakpoint( "full" ) {
 
       @include rem( padding, 0 );
       max-width: $bp-medium-em;
