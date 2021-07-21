@@ -1,46 +1,45 @@
-{% assign wordcount = include.content | number_of_words %}
+{% set wordcount %}{{ content | wordcount }}{% endset %}
 {  
-   "@context": "http://schema.org",
-   "@type": "BlogPosting",
-   "headline": "{{ include.headline }}",
-   {% if include.category %}"genre": "{{ include.category }}",{% endif %}
-   "keywords": "{{ include.keywords }}",
-   "wordCount": "{{ wordcount }}",
-   "url": "{{ include.link }}",
-   "dateCreated": "{{ include.date | date:'%Y-%m-%d' }}",
-   "datePublished": "{{ include.date | date:'%Y-%m-%d' }}",
-   "dateModified": "{{ include.updated | default:include.date | date:'%Y-%m-%d' }}",
-   "author":{  
-      "@type": "Person",
-      "name": "{{ site.social.name }}",
-      "sameAs": [  
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{{ title }}",
+  "keywords": "{% if tags.length > 0 }}{{ tags | join(", ") }}{% endif %}",
+  "wordCount": "{{ wordcount }}",
+  "url": "{{ this_url }}",
+  "dateCreated": "{{ page.date | ymd_date }}",
+  "datePublished": "{{ page.date | ymd_date }}",
+  "dateModified": "{{ last_updated_at | default( page.date, true ) | ymd_date }}",
+  "author":{  
+    "@type": "Person",
+    "name": "{{ site.social.name }}",
+    "sameAs": [  
       {% for url in site.social.links %}
-        "{{url}}"{% unless forloop.last %},{% endunless %}
+        "{{ url }}"{% if not loop.last %},{% endif %}
       {% endfor %}
-      ]
-   },
-   "publisher":{  
-      "@type": "Organization",
-      "name": "{{ site.social.name }}",
-      "logo": {
-        "@type": "ImageObject",
-        "contentUrl": "{{ site.logo | absolute_url }}",
-        "url": "{{ site.url }}"
-      }
-   },
-   "image":{  
-      {% if include.image != "" %}
-        "@type": "ImageObject",
-        "contentUrl": "{{ include.image | absolute_url }}",
-        "url": "{{ include.image | absolute_url }}",
-        "height": "{% if site.banner_height %}{{ site.banner_height }}{% else %}600{% endif %}",
-        "width": "{% if site.banner_width %}{{ site.banner_width }}{% else %}800{% endif %}"
-      {% endif %}
-   },
-   "mainEntityOfPage":{  
-      "@type": "WebPage",
-      "@id": "{{ include.link }}",
-      "dateModified": "{{ site.time | date:'%Y-%m-%d' }}"
-   },
-   "articleBody": "{{ include.content | xml_escape | json }}"
+    ]
+  },
+  "publisher":{  
+    "@type": "Organization",
+    "name": "{{ site.social.name }}",
+    "logo": {
+      "@type": "ImageObject",
+      "contentUrl": "{{ site.url + site.logo }}",
+      "url": "{{ site.url }}"
+    }
+  },
+  {% if image != "" %}
+    "image":{  
+      "@type": "ImageObject",
+      "contentUrl": "{{ image }}",
+      "url": "{{ image }}",
+      "height": "669",
+      "width": "1280"
+    },
+  {% endif %}
+  "mainEntityOfPage":{  
+    "@type": "WebPage",
+    "@id": "{{ this_url }}",
+    "dateModified": "{{ last_updated_at | default( page.date, true ) | ymd_date }}"
+  },
+  "articleBody": "{{ content | escape }}"
 }
