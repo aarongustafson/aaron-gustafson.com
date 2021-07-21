@@ -3,7 +3,7 @@
   "@context": "http://schema.org",
   "@type": "BlogPosting",
   "headline": "{{ title }}",
-  "keywords": "{% if tags.length > 0 }}{{ tags | join(", ") }}{% endif %}",
+  "keywords": "{% if tags.length > 0 %}{{ tags | join(", ") }}{% endif %}",
   "wordCount": "{{ wordcount }}",
   "url": "{{ this_url }}",
   "dateCreated": "{{ page.date | ymd_date }}",
