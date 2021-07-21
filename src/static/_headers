@@ -2,7 +2,7 @@
 	X-UA-Compatible: ie=edge,chrome=1
 	X-XSS-Protection: 1; mode=block
 	X-Content-Type-Options: nosniff
-	Content-Security-Policy: default-src *; script-src 'self' 'unsafe-inline' webmention.io platform.twitter.com cdn.syndication.twimg.com *.vimeo.com *.vimeocdn.com *.codepen.io *.typekit.net gist.github.com; style-src * 'unsafe-inline' *.vimeocdn.com; img-src * data: res.cloudinary.com; connect-src 'self' *.imgur.com *.gravatar.com res.cloudinary.com webmention.io api.github.com platform.twitter.com; child-src 'self' www.youtube.com *.twitter.com *.vimeo.com *.vimeocdn.com codepen.io *.slideshare.net *.msdn.com; upgrade-insecure-requests; block-all-mixed-content;
+	Content-Security-Policy: default-src *; script-src 'self' 'unsafe-inline' webmention.io platform.twitter.com cdn.syndication.twimg.com *.vimeo.com *.vimeocdn.com *.codepen.io *.typekit.net gist.github.com; style-src * 'unsafe-inline' *.vimeocdn.com; img-src * data: res.cloudinary.com; connect-src 'self' *.imgur.com *.gravatar.com res.cloudinary.com webmention.io api.github.com *.twitter.com; child-src 'self' www.youtube.com *.twitter.com *.vimeo.com *.vimeocdn.com codepen.io *.slideshare.net *.msdn.com; upgrade-insecure-requests; block-all-mixed-content;
 	Public-Key-Pins: pin-sha256='1AD97Iz6xlmMrlaim5bZoIhwUr2WAowsI+msDc0op2k='; pin-sha256='4SflGm7MUpml4PWSclDw7OGMJdRk+YcIfi6qJ2iG6zE='; pin-sha256='BFhqRqgHU+b7VQLsM1kZwBu6VVKnLx7QiO2PCLfG1m4='; max-age=10
 	Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 	Upgrade-Insecure-Requests: 1
