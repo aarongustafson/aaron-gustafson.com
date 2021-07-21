@@ -24,7 +24,7 @@ module.exports = {
     return parse_date( date ).toFormat("dd LLL yyyy");
   },
   ymd_date: date => {
-    return parse_date( date ).toFormat("yyyy-mm-dd");
+    return parse_date( date ).toISODate();
   },
   machine_date: date => {
     return parse_date( date ).toISO();
