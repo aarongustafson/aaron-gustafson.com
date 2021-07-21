@@ -23,7 +23,7 @@
                   {% if not webmention.author %}webmention--no-author{% endif %}
                   {% if not webmention.author.photo %}webmention--no-photo{% endif %}
                   ">
-                  {% if webmention.author %}
+                  {% if webmention.author.photo %}
                     {% include "partials/post/linkedface.html" %}
                   {% endif %}
                   
