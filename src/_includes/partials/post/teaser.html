@@ -1,38 +1,17 @@
-{% from "macros.njk" import post_date, tags %}
+{% set svg_essay %}{{ "/src/static/i/icons/essay.svg" | svgContents | safe }}{% endset %}
+{% set svg_link %}{{ "/src/static/i/icons/pin.svg" | svgContents | safe }}{% endset %}
+{% set type = post.inputPath | content_type %}
 
-<header class="entry__header">
-  <h1 class="entry__title entry-title">
-    <a rel="bookmark" href="{{ post.url }}">{{ post.data.title | widont }}</a>
-  </h1>
-  {% if not (post.data.meta == false) %}
-    <dl class="entry__meta">
-      <dt>{% if .ref_url %}Saved on{% else %}Posted on{% endif %}</dt>
-      <dd>{{ post.date }}, {{ post.data.date }}, {{ post.data.last_updated_at }}</dd>
-      <dd>{{ post_date( page.date, last_updated_at) }}</dd>
-      {% if via %}
-        <dt><abbr title="via">↬</abbr></dt>
-        <dd><a href="{{ via.url }}">{{ via.name }}</a></dd>
-      {% endif %}
-      {% if post.data.tags %}
-        <dt class="dont-read">Tagged</dt>
-        <dd class="dont-read">{{ tags( post.data.tags ) }}</dd>
-      {% endif %}
-    </dl>
+<article class="entry entry--teaser entry--{{ type }}">
+  {% if type=="post" %}
+    <p class="entry__type" title="Post" aria-label="Post">{{ svg_essay | safe }}</p>
+  {% elif type=="link" %}
+    <p class="entry__type" title="Link" aria-label="Link">{{ svg_link | safe }}</p>
   {% endif %}
-</header>
-
-{% set content %}{% if post.data.page.excerpt %}{{ post.data.page.excerpt | safe | markdownify }}{% else %}{{ post.templateContent | safe }}{% endif %}{% endset %}
-<div class="entry__content entry__content--excerpt entry-content">
-  {{ content | safe }}
-</div>
-
-<footer class="entry__footer">
-  <p>
-    {% if post.templateContent != content %}
-      <a rel="bookmark" href="{{ post.url }}">You can finish reading
-      <cite>{{ post.data.title }}</cite> in less than {{ post.templateContent | readingTime }}</a>
-    {% elif post.data.ref_url %}
-      <a rel="original-article" href="{{ post.data.ref_url }}">Source: {{ post.data.ref_source }}</a>
-    {% endif %}
-  </p>
-</footer>
+  <div class="entry__details">
+    <{{ teaser_heading_level }} class="entry__title entry-title">
+      <a rel="bookmark" href="{{ post.url }}">{{ post.data.title | widont }}</a>
+    </{{ teaser_heading_level }}>
+    <p class="entry__meta">{% if post.collection=="posts" %}Posted{% else %}Saved{% endif %} on <time class="dt-published" datetime="{{ post.data.date | machine_date }}">{{ post.data.date | readable_date }}</time></p>
+  </div>
+</article>

@@ -136,7 +136,11 @@ module.exports = {
   },
 
   getWebmentionsForUrl: (webmentions, url) => {
-    return webmentions.children.filter(entry => entry['wm-target'] === url);
+    return webmentions.children
+             .filter(entry => entry['wm-target'] === url)
+             .sort( (a,b) => {
+               return a["wm-id"] - b["wm-id"];
+             });
   },
   webmentionsByType: (mentions, mentionType) => {
     return mentions.filter(entry => {
@@ -157,7 +161,14 @@ module.exports = {
         return !!entry[mentionType];
       }
     });
+  },
+
+  // use with collections.feedAll
+  related: ( collection, url, tag ) => {
+    return collection
+            // make sure it has the same tags
+            .filter( item => "tags" in item.data && item.data.tags.indexOf( tag ) > -1 )
+            // only if not this page
+            .filter( item => url.indexOf( item.fileSlug ) == -1 );
   }
-
-
 };

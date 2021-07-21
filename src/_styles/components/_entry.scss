@@ -57,6 +57,10 @@ Blog Entry
       text-align: center;
     }
 
+    &__related &:first-of-type {
+      @include rem( margin-top, $default-spacing );
+    }
+
     &__series {
       border: 1px solid $color-grey-light;
       background-color: $color-off-white;
@@ -68,7 +72,7 @@ Blog Entry
     
     &--teaser {
       display: flex;
-      align-items: center;
+      align-items: top;
       
       & + & {
         @include rem(margin-top, $default-spacing * 2);

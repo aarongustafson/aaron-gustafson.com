@@ -90,24 +90,21 @@ single: "true"
 
           {% include "partials/post/sharing.html" %}
           
-          {#
-          {% include "partials/asides/related.html %}
-          #}
+          {% if tags.length > 0 %}
+            {% set related = collections.feedAll | related( this_url, tags[0] ) | limit(3) %}
+            {% if related.length > 0 %}
+              <div class="entry__related">
+                <h2>You might also like</h2>
+                {% set teaser_heading_level = "h3" %}
+                {% for post in related %}
+                  {% include "partials/post/teaser.html" %}
+                {% endfor %}
+              </div>
+            {% endif %}
+          {% endif %}
         </footer>
 
         {% include "partials/global/promo.html" %}
-
-        {#
-        {% if site.disqus_short_name and page.comments == true %}
-          <hr>
-
-          <section id="disqus" class="entry__comments dont-read">
-            <h1>Comments</h1>
-            <div id="disqus_thread" aria-live="polite">
-            </div>
-          </section>
-        {% endif %}
-        #}
 
         {% include "partials/post/webmentions.html" %}
 

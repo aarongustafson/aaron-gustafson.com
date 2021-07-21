@@ -56,10 +56,6 @@ Links
       }
     }
     
-    footer &[rel="bookmark"]::after {
-      content: "\00A0\2192";
-    }
-    
     &[rel="original-article"]::after {
       content: "\00A0\2192";
       display: inline-block;
