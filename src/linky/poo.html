@@ -281,7 +281,7 @@ sitemap: false
           };
         }
 
-        p_body = toYamlFrontmatter(yaml) + '\n\n' + $content.value
+        p_body = toYamlFrontmatter(yaml) + '\n\n' + $content.value + '\n';
 
         XHR.open(
           'put',
