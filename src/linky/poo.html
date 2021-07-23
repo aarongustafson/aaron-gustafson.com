@@ -74,7 +74,7 @@ sitemap: false
                 <label for="p_tags">How would you tag this?</label>
                 <input id="p_tags" list="tags" data-multiple>
                 <datalist id="tags">
-                  {% for tag in tags | sort %}
+                  {% for tag in collections.tags %}
                     <option>{{ tag }}</option>
                   {% endfor %}
                 </datalist>
@@ -160,7 +160,7 @@ sitemap: false
         return filename
       }
       
-      function getDate() {
+      function getDate() { 
         var d = new Date()
         return d.toISOString()
       }
@@ -175,7 +175,7 @@ sitemap: false
         return '["' + tags.join('", "') + '"]';
       }
       
-      var API_NEW_POST = 'https://api.github.com/repos/{{ site.github.repo }}/contents/_links/',
+      var API_NEW_POST = 'https://api.github.com/repos/{{ site.github.repo }}/contents/src/links/',
           $go = document.getElementById('go'),
           $messages = document.getElementById('messages'),
           $title = document.getElementById('p_title'),
@@ -285,7 +285,7 @@ sitemap: false
 
         XHR.open(
           'put',
-          API_NEW_POST + postFile(yaml.title) + '.markdown',
+          API_NEW_POST + postFile(yaml.title) + '.md',
           true
         );
         XHR.responseType = 'json';
@@ -297,7 +297,7 @@ sitemap: false
         XHR.send(
           JSON.stringify({
             content: btoa(unescape(encodeURIComponent(p_body))),
-            message: 'Posted from the Web',
+            message: 'Link posted from the web',
             committer: {
               name: "Aaron Gustafson",
               email: "aaron@easy-designs.net"
