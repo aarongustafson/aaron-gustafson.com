@@ -3,9 +3,65 @@
 
 [dev]
   framework = "eleventy"
+  publish = "dist"
 
 [[plugins]]
   package = "netlify-plugin-cache-folder"
-
 [[plugins]]
   package = "./plugins/persist-static-directory"
+
+
+[[redirects]]
+  from = "/articles/"
+  to = "/publications/#articles"
+  status = 301
+  force = false
+[[redirects]]
+  from = "/books/"
+  to = "/publications/#books"
+  status = 301
+  force = false
+[[redirects]]
+  from = "/events/"
+  to = "/speaking-engagements/"
+  status = 301
+  force = false
+[[redirects]]
+  from = "/*"
+  to = "/404.html?url=:splat"
+  status = 404
+  force = false
+
+
+
+[[headers]]
+  for = "*"
+  [headers.values]
+  Content-Security-Policy = "default-src *; script-src 'self' 'unsafe-inline' webmention.io platform.twitter.com cdn.syndication.twimg.com *.vimeo.com *.vimeocdn.com *.codepen.io *.typekit.net gist.github.com; style-src * 'unsafe-inline' *.vimeocdn.com; img-src * data: res.cloudinary.com; connect-src 'self' *.imgur.com *.gravatar.com res.cloudinary.com webmention.io api.github.com *.twitter.com; child-src 'self' www.youtube.com *.twitter.com *.vimeo.com *.vimeocdn.com codepen.io *.slideshare.net *.msdn.com; upgrade-insecure-requests; block-all-mixed-content;"
+  Public-Key-Pins = "pin-sha256='1AD97Iz6xlmMrlaim5bZoIhwUr2WAowsI+msDc0op2k='; pin-sha256='4SflGm7MUpml4PWSclDw7OGMJdRk+YcIfi6qJ2iG6zE='; pin-sha256='BFhqRqgHU+b7VQLsM1kZwBu6VVKnLx7QiO2PCLfG1m4='; max-age=10"
+  Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+  Timing-Allow-Origin = "*"
+  Upgrade-Insecure-Requests = "1"
+  X-Content-Type-Options = "nosniff"
+  X-UA-Compatible = "ie=edge,chrome=1"
+  X-XSS-Protection = "1; mode=block"
+[[headers]]
+  for = "/*.svgz"
+  [headers.values]
+  Content-Encoding = "gzip"
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+  Link = [
+  "</c/default.min.css>;as=style;rel=preload",
+  "</c/advanced.min.css>;as=style;rel=preload",
+  "</serviceworker.min.js>;as=script;rel=preload",
+  "</j/main.min.js>;as=script;rel=preload",
+  "</j/post.min.js>;as=script;rel=preload"
+  ]
+  Origin-Trial = "Aj7rWID0Gt1qlI7juO/CyAsXoo6Tp2B2YWOIHRiEYKBquRjDieUF6ETXpO+ZrnmCQvM5dJi/J0vphY3K1O2n5Q8AAABoeyJvcmlnaW4iOiJodHRwczovL3d3dy5hYXJvbi1ndXN0YWZzb24uY29tOjQ0MyIsImZlYXR1cmUiOiJUZXh0RnJhZ21lbnRJZGVudGlmaWVycyIsImV4cGlyeSI6MTU2ODE0MTM0M30="
+[[headers]]
+  for = "/serviceworker.min.js"
+  [headers.values]
+  Cache-Control = "max-age=0"
+
