@@ -10,7 +10,6 @@ eleventyComputed:
 ---
 {% include "feeds/preamble.xml.njk" %}
 {% for post in collections[ tag ] | reverse | limit(20) %}
-  {% set post_url %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
   {% set prepend_title %}{% if post.data.ref_url %}Link: {% else %}Post: {% endif %}{% endset %}
   {% if loop.first %}
     <updated>{{ post.date | dateToRfc3339 }}</updated>

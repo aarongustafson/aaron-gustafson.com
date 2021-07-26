@@ -8,7 +8,6 @@ eleventyExcludeFromCollections: true
   {% include "feeds/preamble.json.njk" %}
   "items": [
     {% for post in collections.links | limit(20) %}
-      {% set post_url %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
       {% set prepend_title = "" %}
       {% include "feeds/post.json.njk" %}
       {% if not loop.last %},{% endif %}

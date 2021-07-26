@@ -1,16 +1,21 @@
+{% set post_url %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
+{% set summary %}{% if post.data.page.excerpt %}{{ post.data.page.excerpt }}{% elif post.data.twitter_text %}{{ post.data.twitter_text }}{% endif %}{% endset %}
 <entry>
   <id>{{ post_url }}</id>
   <title type="html">{{ prepend_title + post.data.title | markdownify }}</title>
   <link href="{{ post_url }}" rel="alternate" type="text/html" />
-
+  {% if post.data.ref_url %}
+    <link href="{{ post.data.ref_url }}" rel="related" type="text/html" />
+  {% endif %}
+  
   <published>{{ post.date | dateToRfc3339 }}</published>
   {% if post.data.last_modified_at %}
     <updated>{{ post.data.last_modified_at | dateToRfc3339 }}</updated>
   {% endif %}
 
   <content type="html" xml:base="{{ site.url }}"><![CDATA[{{ post.templateContent | safe }}]]></content>
-  {% if post.data.page.excerpt %}
-    <summary type="html"><![CDATA[{{ post.data.page.excerpt | markdownify | safe }}]]></summary>
+  {% if summary %}
+    <summary type="html"><![CDATA[{{ summary | markdownify | safe }}]]></summary>
   {% endif %}
 
   {% for tag in post.data.tags %}

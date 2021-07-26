@@ -6,7 +6,6 @@ eleventyExcludeFromCollections: true
 ---
 {% include "feeds/preamble.xml.njk" %}
 {% for post in collections.posts | limit(20) %}
-  {% set post_url %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
   {% set prepend_title = "" %}
   {% if loop.first %}
     <updated>{{ post.date | dateToRfc3339 }}</updated>
