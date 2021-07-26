@@ -86,11 +86,12 @@
     </footer>
 
     <script src="/j/main{% if site.minify %}.min{% endif %}.js"></script>
-    {% if page.is_post %}
+    {% if is_post %}
       <script src="/j/post{% if site.minify %}.min{% endif %}.js" async></script>
+      <script id="twitter-wjs" type="text/javascript" async defer src="https://platform.twitter.com/widgets.js"></script>
     {% endif %}
     {% for script in javascripts.body %}
-      <script src="/j/{{ script }}{% if site.minify %}.min{% endif %}.js" async></script>
+      <script src="/j/{{ script }}{% if site.minify %}.min{% endif %}.js" async defer></script>
     {% endfor %}
 
   </body>
