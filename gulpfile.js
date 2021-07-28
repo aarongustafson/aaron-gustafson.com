@@ -7,6 +7,7 @@ const html = require(`${tasks_folder}/html.js`);
 const scripts = require(`${tasks_folder}/scripts.js`);
 const images = require(`${tasks_folder}/images.js`);
 const styles = require(`${tasks_folder}/styles.js`);
+const data = require(`${tasks_folder}/data.js`);
 
 // Set each directory and contents that we want to watch and
 // assign the relevant task. `ignoreInitial` set to true will
@@ -17,10 +18,11 @@ const watcher = () => {
   watch(`${config.source}/_javascripts/**/*.js`, {ignoreInitial: true}, scripts);
   watch(`${config.source}/_images/**/*`, {ignoreInitial: true}, images);
   watch(`${config.source}/_styles/**/*.scss`, {ignoreInitial: true}, styles);
+  watch(`${config.source}/**.{json,xml}`, {ignoreInitial: true}, data)
 };
 
 // The default (if someone just runs `gulp`) is to run each task in parallel
-exports.default = parallel( html, scripts, images, styles );
+exports.default = parallel( html, scripts, images, styles, data );
 
 // This is our watcher task that instructs gulp to watch directories and
 // act accordingly
@@ -30,4 +32,4 @@ exports.watch = watcher;
 exports.prebuild = parallel( scripts, images, styles );
 
 // post-build
-exports.postbuild = html;
+exports.postbuild = parallel( html, data );
