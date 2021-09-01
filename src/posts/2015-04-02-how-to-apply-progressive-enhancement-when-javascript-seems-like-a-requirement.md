@@ -17,7 +17,7 @@ On Stack Overflow last week, [JamHam](http://stackoverflow.com/users/4719194/jam
 > For instance:
 >
 > * I have a form submission page where you change certain settings, and the form changes accordingly.This is alright, I can apply query strings in the url and have some logic in my layout so that certain fields are shown/hidden according to the query string. The thing is, I also need to update a "price" dynamically, according to what fields are filled in, how they are filled in, and some other factors, and I don't honestly see how I could do that without JavaScript.
-* I have a messaging section where I'm using WebSockets (with the help of Socket.io). The UI of the messaging (and of course, the
+> * I have a messaging section where I'm using WebSockets (with the help of Socket.io). The UI of the messaging (and of course, the
 WebSockets) stuff pretty much depends on JavaScript, with 'messages' being created as they arrive and appended into DOM and also a form that allows you to quickly look up an user via AJAX so you can send a message easily, among many other things.
 >
 > I mean, I could probably come up with very complicated solutions for each situation, and obviously the functionality wouldn't be the same. I'm thinking I might as well just require JavaScript for the whole thing
@@ -38,7 +38,9 @@ My response (which I was drafting when he deleted the question):
 >
 > **Your Messaging App** - This can seem like a daunting challenge, but before we had web sockets and even Ajax, we relied on a small form which posts messages to the back end and a running feed of messages being sent from the back-end. One of the most common way to handle this involved frames and a "meta refresh" like this one:
 >
->     <meta http-equiv="refresh" content="30">
+> ```html
+> <meta http-equiv="refresh" content="30">
+> ```
 >
 > That simple `meta` tag will make any browser refresh the page every 30 seconds. Now if you put that in an `iframe` to keep it from causing a refresh of the entire interface, any new messages would be picked up and displayed automatically at that interval (which you should tune to be appropriate for your app).
 >
