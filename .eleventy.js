@@ -24,6 +24,7 @@ module.exports = config => {
 
   // Markdown
   let md = markdownIt(markdown_options)
+             .use(require("markdown-it-anchor"),{permalink: true})
              .use(require("markdown-it-attrs"))
              .use(require('markdown-it-footnote'));
   config.setLibrary( "md", md );
