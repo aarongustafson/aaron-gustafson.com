@@ -3,14 +3,14 @@ title: "A single platform"
 twitter_text: "The brilliant @CommitStrip on single platforms"
 date: 2016-06-08 10:28:58 -04:00
 comments: false
-ref_url: http://www.commitstrip.com/en/2016/06/01/a-single-platform/
-in_reply_to: http://www.commitstrip.com/en/2016/06/01/a-single-platform/
+ref_url: https://www.commitstrip.com/en/2016/06/01/a-single-platform/
+in_reply_to: https://www.commitstrip.com/en/2016/06/01/a-single-platform/
 ref_source: CommitStrip
 ---
 
 Another brilliant CommitStrip. <a href="#comic-strip-uncharted-4-translated">My transcription follows</a>.
 
-![Commit Strip: A single platform](http://www.commitstrip.com/wp-content/uploads/2016/06/Strip-Uncharted-4-english650-final.jpg) { style="border:1px solid" }
+![Commit Strip: A single platform](https://www.commitstrip.com/wp-content/uploads/2016/06/Strip-Uncharted-4-english650-final.jpg) { style="border:1px solid" }
 
 <article id="comic-strip-uncharted-4-transcribed" class="script">
 
