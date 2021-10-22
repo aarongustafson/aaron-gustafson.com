@@ -10,6 +10,8 @@
     
     text-align: center;
 
+    user-select: none;
+
     &__pages {
       @include rem( margin, 0 $default-spacing );
     }
