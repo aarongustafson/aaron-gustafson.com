@@ -14,7 +14,7 @@ const md = markdownIt(markdown_options)
 
 function tagsToString( tags )
 {
-  var non_alpha_numeric = /[^a-zA-z0-9]/g
+  var non_alpha_numeric = /[^a-zA-z0-9]/g;
   tags = tags || [];
   tags = tags.map( tag => {
     return "#" + tag.toLowerCase().replace( non_alpha_numeric, "-" );
