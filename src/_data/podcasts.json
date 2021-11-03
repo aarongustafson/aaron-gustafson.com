@@ -1,5 +1,13 @@
 [
   {
+    "title": "Progressive web apps with Aaron Gustafson",
+    "outlet": "PodRocket",
+    "date": "2021-11-02 00:00:00 +0000",
+    "url": "https://podrocket.logrocket.com/pwas",
+    "description": "I joined Ben and Kaelan to talk about all things PWA.",
+    "embed": "https://aphid.fireside.fm/d/1437767933/3911462c-bca2-48c2-9103-610ba304c673/c60d23d4-0896-47e0-9b2b-b5da2642651b.mp3"
+  },
+  {
     "title": "Perspectives with Aaron Gustafson",
     "outlet": "Crossword",
     "date": "2021-10-15 00:00:00 +0000",
