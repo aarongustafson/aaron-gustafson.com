@@ -6,7 +6,7 @@
   "scripts": {
     "start": "gulp && concurrently 'gulp watch' 'npx eleventy --serve --quiet'",
     "prebuild": "gulp prebuild",
-    "build": "npx eleventy --quiet",
+    "build": "NODE_ENV=production npx eleventy --quiet",
     "postbuild": "gulp postbuild"
   },
   "repository": {
