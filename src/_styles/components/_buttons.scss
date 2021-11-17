@@ -10,17 +10,22 @@ Buttons
     cursor: pointer;
     user-select: none;
     
-    background: $color-text-light;
+    background: $color-dark-teal;
     color: $color-white;
     text-shadow: none;
     
     border: 1px solid $color-text;
     border-radius: 3px;
-    @include rem( padding, 5 10 );
+    @include rem( padding, 10 15 );
+    
+    @include rem( font-size, $font-size-default );
+    font-weight: bold;
+
+    transition: background-color $default-transition, color $default-transition;
     
     &:hover,
     &:focus {
-      background: $color-green-dark;
+      background: darken( $color-dark-teal, 10 );
     }
 
     &[disabled] {

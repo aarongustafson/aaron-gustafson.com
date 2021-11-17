@@ -50,6 +50,11 @@ Body-level settings
     
       word-wrap: break-word;
       overflow-wrap: break-word;
+
+      @media (prefers-color-scheme: dark) {
+        background: $color-background-dark;
+        color: $color-text-dark;
+      }
     }
     
   }  

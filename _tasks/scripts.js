@@ -12,6 +12,7 @@ const minify = composer(require("uglify-es"), console);
 
 const source_folder = `${config.source}/_javascript`;
 const destination_folder = `${config.static}/j`;
+const dist = `${config.destination}/i`;
 
 function getFolders( dir ) {
   return fs.readdirSync(dir)
@@ -36,10 +37,12 @@ const scripts = cb => {
     )
     // write expanded version
     .pipe( dest(destination_folder) )
+    .pipe( dest(dist) )
     // make & write minified version
     .pipe( rename({suffix: ".min"} ) )
     .pipe( minify() )
-    .pipe( dest(destination_folder) );
+    .pipe( dest(destination_folder) )
+    .pipe( dest(dist) );
   });
 
   return merge(tasks);

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="24" height="20" viewBox="0 0 100 87" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <title>Essay</title>
+    <style>
+        #noun_16320_cc { fill: black; }
+        @media (prefers-color-scheme: dark) { #noun_16320_cc { fill: #fffcf4; } }
+    </style>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="noun_16320_cc" sketch:type="MSLayerGroup" fill="#000000">
             <path d="M81,6 C81,9.3 77.85,12 74,12 L7,12 C3.15,12 0,9.3 0,6 C0,2.7 3.15,0 7,0 L74,0 C77.85,0 81,2.7 81,6 L81,6 Z" id="Shape" sketch:type="MSShapeGroup"></path>

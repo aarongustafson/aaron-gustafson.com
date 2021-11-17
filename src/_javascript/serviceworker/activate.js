@@ -16,5 +16,7 @@ self.addEventListener( "activate", event => {
             })
         ); // end promise
       }) // end then
+      .then( () => clients.claim() )
   ); // end event
+
 });

@@ -10,10 +10,9 @@ $promo-background-color: lighten( #7FB843, 45% );
 
 @include breakup-breakpoint( "global" ) {
 
-    .promo {
-        background: $promo-background-color;
-        border: 1px solid darken( $promo-background-color, 5% );
-        
+  .promo {
+      background: $promo-background-color;
+      border: 1px solid darken( $promo-background-color, 5% );
       @include rem( margin, ( $default-spacing * 2 ) ( 0 - $default-spacing ) );
       @include rem( padding, $default-spacing );
 
@@ -27,6 +26,23 @@ $promo-background-color: lighten( #7FB843, 45% );
       a:active {
         @include underline( $color-link-hover, 1px, 1px, $promo-background-color );
       }
+
+      @media (prefers-color-scheme: dark) {
+        background: $color-green-dark;
+        border-color: darken( $color-green-dark, 5% );
+
+        a:link,
+        a:visited {
+        @include underline( $color-link, 1px, 1px, $color-green-dark );
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+          @include underline( $color-link-hover, 1px, 1px, $color-green-dark );
+        }
+      }
+        
 
       html.wf-active & {
         a:link,

@@ -55,6 +55,10 @@
         clip: rect(1px 1px 1px 1px);
         clip-path: rect(1px 1px 1px 1px);
         
+        @media (prefers-color-scheme: dark) {
+          background: rgba( $color-background-dark, .9 );
+        }
+
         &:target,
         &.toggleable--open {
             overflow: visible;

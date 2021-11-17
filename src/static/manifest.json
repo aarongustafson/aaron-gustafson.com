@@ -37,57 +37,99 @@
       "url": "url"
     }
   },
-  "shortcuts": [{
+  "policies": {
+    "license": "/#license",
+    "support": "/contact/"
+  },
+  "publisher": {
+    "name": "Aaron Gustafson",
+    "url": "https://www.aaron-gustafson.com/"
+  },
+  "user_preferences": [
+    {
+      "color_scheme_dark": {
+        "background_color": "#5b5b5b",
+        "icons": [
+          {
+            "src": "/i/notification-icon-reverse.png",
+            "type": "image/png",
+            "sizes": "256x256"
+          }
+        ]
+      }
+    }
+  ],
+  "translations": {
+    "no": {
+      "description": "Aaron Gustafsons hjem og arbeid på nettet.",
+      "shortcuts": [
+        { "name": "Notisbok" },
+        { "name": "Snakker" },
+        { "name": "Publikasjoner" },
+        { "name": "Intervjuer" }
+      ]
+    }
+  },
+  "shortcuts": [
+    {
       "name": "Notebook",
       "url": "/notebook/",
-      "icons": [{
-        "src": "/i/icons/notebook.svg",
-        "type": "image/svg+xml"
-      },
-      {
-        "src": "/i/icons/notebook.png",
-        "type": "image/png",
-        "sizes": "120x120"
-      }]
+      "icons": [
+        {
+          "src": "/i/icons/notebook.svg",
+          "type": "image/svg+xml"
+        },
+        {
+          "src": "/i/icons/notebook.png",
+          "type": "image/png",
+          "sizes": "120x120"
+        }
+      ]
     },
     {
       "name": "Speaking",
       "url": "/speaking-engagements/",
-      "icons": [{
-        "src": "/i/icons/mic.svg",
-        "type": "image/svg+xml"
-      },
-      {
-        "src": "/i/icons/mic.png",
-        "type": "image/png",
-        "sizes": "120x120"
-      }]
+      "icons": [
+        {
+          "src": "/i/icons/mic.svg",
+          "type": "image/svg+xml"
+        },
+        {
+          "src": "/i/icons/mic.png",
+          "type": "image/png",
+          "sizes": "120x120"
+        }
+      ]
     },
     {
       "name": "Publications",
       "url": "/publications/",
-      "icons": [{
-        "src": "/i/icons/books.svg",
-        "type": "image/svg+xml"
-      },
-      {
-        "src": "/i/icons/books.png",
-        "type": "image/png",
-        "sizes": "120x120"
-      }]
+      "icons": [
+        {
+          "src": "/i/icons/books.svg",
+          "type": "image/svg+xml"
+        },
+        {
+          "src": "/i/icons/books.png",
+          "type": "image/png",
+          "sizes": "120x120"
+        }
+      ]
     },
     {
       "name": "Interviews",
       "url": "/interviews/",
-      "icons": [{
-        "src": "/i/icons/chat.svg",
-        "type": "image/svg+xml"
-      },
-      {
-        "src": "/i/icons/chat.png",
-        "type": "image/png",
-        "sizes": "120x120"
-      }]
+      "icons": [
+        {
+          "src": "/i/icons/chat.svg",
+          "type": "image/svg+xml"
+        },
+        {
+          "src": "/i/icons/chat.png",
+          "type": "image/png",
+          "sizes": "120x120"
+        }
+      ]
     }
   ]
 }

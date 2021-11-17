@@ -20,6 +20,10 @@
         color: $color-text-light;
         @include breakup-placeholder( small-caps );
         @include rem( margin, 2 0 0 );
+
+        @media (prefers-color-scheme: dark) {
+          color: $color-text-dark-light;
+        }
       }
       
       &__description {

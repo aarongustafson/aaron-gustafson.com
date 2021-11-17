@@ -6,6 +6,7 @@ const minify = require('gulp-minify-css');
 const rename = require("gulp-rename");
 
 const destination = `${config.static}/c`;
+const dist = `${config.destination}/c`;
 
 const styles = cb => {
   return src(`${config.source}/_styles/**/*.scss`)
@@ -24,9 +25,11 @@ const styles = cb => {
       )
     )
     .pipe( dest(destination) )
+    .pipe( dest(dist) )
     .pipe( rename({suffix: '.min'}) )
     .pipe( minify() )
     .pipe( dest( destination ) )
+    .pipe( dest(dist) )
     .on('done', cb);
 };
 

@@ -17,6 +17,11 @@ Links
       cursor: pointer;
       
       transition: background-color $default-transition, border-color $default-transition, color $default-transition;
+
+      @media (prefers-color-scheme: dark) {
+        color: $color-link-dark;
+        border-bottom-color: rgba( $color-link-dark, .25 );
+      }
     }
     
     &:hover,
@@ -24,6 +29,11 @@ Links
     &:active {
       color: $color-link-hover;
       border-bottom-color: $color-link-hover;
+
+      @media (prefers-color-scheme: dark) {
+        color: $color-link-dark-hover;
+        border-bottom-color: rgba( $color-link-dark-hover, .25 );
+      }
     }
     
     // don’t wrap phone #s or emails
@@ -81,6 +91,25 @@ Links
       
       h1 & {
         @include underline( $color-link-hover, 2px );
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body a:link,
+      body a:visited {
+        @include underline( $color-link-dark, 1px, 1px, $color-background-dark );
+        
+        h1 & {
+          @include underline( $color-link-dark, 2px, 1px, $color-background-dark );
+        }
+      }
+      body a:hover,
+      body a:focus {
+        @include underline( $color-link-dark-hover, 1px, 1px, $color-background-dark );
+        
+        h1 & {
+          @include underline( $color-link-dark-hover, 2px, 1px, $color-background-dark );
+        }
       }
     }
     

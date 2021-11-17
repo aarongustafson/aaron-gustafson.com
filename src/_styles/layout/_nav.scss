@@ -16,6 +16,7 @@ Navigation
     
     a {
       @include rem( font-size, $font-size-nav );
+      font-weight: bold;
       display: block;
       padding: .5em 1em;
     }
@@ -35,6 +36,11 @@ Navigation
     mark &__link {
       background-color: $color-link-hover;
       color: $color-white;
+
+      @media (prefers-color-scheme: dark) {
+        background-color: $color-dark-teal;
+        color: $color-white;
+      }
     }
     
     // no search needed on small screens
@@ -91,6 +97,19 @@ Navigation
     a:active {
       color: $color-white;
       color: inherit;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      background: $color-teal;
+      color: $color-background-dark;
+
+      a:hover,
+      a:focus,
+      a:active,
+      mark a:link,
+      mark a:visited {
+        color: $color-white;
+      }
     }
     
   }

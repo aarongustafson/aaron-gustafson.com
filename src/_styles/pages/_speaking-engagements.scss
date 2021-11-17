@@ -31,6 +31,12 @@
       color: $color-off-white;
     }
 
+    @media (prefers-color-scheme: dark) {
+      body .listing__item__meta {
+        color: $color-background-dark;
+      }
+    }
+    
     //.listing__extra {
     //
     //  border-top: 1px solid;
@@ -79,7 +85,7 @@
       position: relative;
       overflow: hidden;
 
-      #aaron-gustafson_com & a {
+      html & a {
         color: $color-white;
         border-bottom: none;
         text-shadow: none;
@@ -95,11 +101,11 @@
 
         @include rem( font-size, 18 );
         line-height: 1.1;
-          @include rem( margin-bottom, 12 );
+        @include rem( margin-bottom, 12 );
 
-          &--future .listing__item__title {
+        &--future .listing__item__title {
           @include rem( font-size, 24 );
-          }
+        }
 
       }
 
@@ -156,6 +162,22 @@
 
     }
 
+    @media (prefers-color-scheme: dark) {
+      
+      html & {
+        background: darken( $color-green-light, 10 );
+        
+        a {
+          text-shadow: 1px 1px 1px darken( $color-green-light, 50 );
+        }
+
+        &--future {
+          border-color: $color-teal;
+          background: $color-teal;
+        }
+      }
+    }
+
     @include breakup-breakpoint('small') {
 
       // 2 events per row, 20px gutter
@@ -183,7 +205,7 @@
           .listing__item__title {
           @include rem( font-size, 36 );
         }
-        }
+      }
 
     }
 

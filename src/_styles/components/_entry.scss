@@ -12,6 +12,10 @@ Blog Entry
       color: $color-grey;
       padding: 0;
 
+      @media (prefers-color-scheme: dark) {
+        color: $color-grey-light;
+      }
+
       dt {
         font-family: $font-stack-serif;
         @include rem( font-size, $font-size-nav );
@@ -112,7 +116,12 @@ Blog Entry
     .entry__meta a:link,
     .entry__meta a:visited {
       @include underline( $color-link, 0px );
+
+      @media (prefers-color-scheme: dark) {
+        @include underline( $color-link-dark, 0px, 1px, $color-background-dark );
+      }
     }
+    
   }
   
   @supports (column-count:2) or (-webkit-column-count:2) or (-moz-column-count:2) {

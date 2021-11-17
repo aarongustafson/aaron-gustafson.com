@@ -5,7 +5,6 @@
 @include breakup-breakpoint( "global" ) {
   
   form {
-    @include rem( margin, $margin-default );
     
     ul,
     ol {
@@ -31,7 +30,6 @@
       
       label {
         
-        @include rem( font-size, $font-size-small );
         font-weight: bold;
         
         display: block;
@@ -44,12 +42,12 @@
         
         color: $color-border;
         
-        @include rem( font-size, $font-size-small );
+        @include rem( font-size, $font-size-default );
         
         box-sizing: border-box;
         border: 1px solid;
         @include rem( margin, 5 0 );
-        @include rem( padding, 5 );
+        @include rem( padding, 10 );
         
         transition: background-color $default-transition, color $default-transition;
         
@@ -63,6 +61,14 @@
         
         display: block;
         width: 100%;
+
+        &:focus {
+          background: $color-text-dark;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          background: $color-text-dark-light;
+        }
         
       }
       
@@ -100,11 +106,6 @@
     
   }
   
-  @include moz {
-    .fields select {
-      @include rem( font-size, $font-size-small );
-    }
-  }
 }
 
 @include breakup-breakpoint( "medium" ) {

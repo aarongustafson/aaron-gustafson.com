@@ -6,6 +6,7 @@ const newer  = require("gulp-newer");
 // const webp  = require("gulp-webp");
 
 const destination = `${config.static}/i`;
+const dist = `${config.destination}/i`;
 
 // Grabs all images, runs them through imagemin
 // and plops them in the dist folder
@@ -25,6 +26,7 @@ const images = cb => {
       )
     )
     .pipe( dest( destination ) )
+    .pipe( dest( dist ) )
     //.pipe( gulpIf( /.*?\.(jpg|png)$/, webp() ) )
     //.pipe( dest(`${config.source}/static/i`) )
     .on('done', cb);
