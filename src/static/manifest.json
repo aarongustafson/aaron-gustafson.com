@@ -5,6 +5,7 @@
   "short_name": "AaronG",
   "scope": "/",
   "display": "minimal-ui",
+  "display_override": ["tabbed", "minimal-ui", "standalone"],
   "start_url": "/",
   "theme_color": "#27831B",
   "description": "The online home and work of Aaron Gustafson.",
@@ -14,7 +15,8 @@
     {
       "src": "/i/notification-icon.png",
       "type": "image/png",
-      "sizes": "256x256"
+      "sizes": "256x256",
+      "purpose": "any monochrome maskable"
     },
     {
       "src": "/i/og-logo.png",
@@ -53,7 +55,8 @@
           {
             "src": "/i/notification-icon-reverse.png",
             "type": "image/png",
-            "sizes": "256x256"
+            "sizes": "256x256",
+            "purpose": "any monochrome maskable"
           }
         ]
       }
