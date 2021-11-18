@@ -1,6 +1,7 @@
 {
   "dir": "ltr",
   "lang": "en-US",
+  "id": "/",
   "name": "Aaron Gustafson",
   "short_name": "AaronG",
   "description": "The online home and work of Aaron Gustafson.",
@@ -12,6 +13,7 @@
     "license": "/#license",
     "support": "/contact/"
   },
+  "permissions": ["persistent-storage", "background-fetch"],
   "changelog": {
     "version": "4",
     "history": [
@@ -88,12 +90,14 @@
       "icons": [
         {
           "src": "/i/icons/notebook.svg",
-          "type": "image/svg+xml"
+          "type": "image/svg+xml",
+          "purpose": "any monochrome"
         },
         {
           "src": "/i/icons/notebook.png",
           "type": "image/png",
-          "sizes": "120x120"
+          "sizes": "120x120",
+          "purpose": "any monochrome"
         }
       ]
     },
@@ -103,12 +107,14 @@
       "icons": [
         {
           "src": "/i/icons/mic.svg",
-          "type": "image/svg+xml"
+          "type": "image/svg+xml",
+          "purpose": "any monochrome"
         },
         {
           "src": "/i/icons/mic.png",
           "type": "image/png",
-          "sizes": "120x120"
+          "sizes": "120x120",
+          "purpose": "any monochrome"
         }
       ]
     },
@@ -118,12 +124,14 @@
       "icons": [
         {
           "src": "/i/icons/books.svg",
-          "type": "image/svg+xml"
+          "type": "image/svg+xml",
+          "purpose": "any monochrome"
         },
         {
           "src": "/i/icons/books.png",
           "type": "image/png",
-          "sizes": "120x120"
+          "sizes": "120x120",
+          "purpose": "any monochrome"
         }
       ]
     },
@@ -133,12 +141,14 @@
       "icons": [
         {
           "src": "/i/icons/chat.svg",
-          "type": "image/svg+xml"
+          "type": "image/svg+xml",
+          "purpose": "any monochrome"
         },
         {
           "src": "/i/icons/chat.png",
           "type": "image/png",
-          "sizes": "120x120"
+          "sizes": "120x120",
+          "purpose": "any monochrome"
         }
       ]
     }
