@@ -12,6 +12,15 @@
     "license": "/#license",
     "support": "/contact/"
   },
+  "changelog": {
+    "version": "4",
+    "history": [
+      {
+        "url": "https://github.com/aarongustafson/aaron-gustafson.com/commits/main",
+        "type": "text/html"
+      }
+    ]
+  },
   "display": "minimal-ui",
   "display_override": ["tabbed", "minimal-ui", "standalone"],
   "orientation": "any",
