@@ -3,13 +3,19 @@
   "lang": "en-US",
   "name": "Aaron Gustafson",
   "short_name": "AaronG",
-  "scope": "/",
+  "description": "The online home and work of Aaron Gustafson.",
+  "publisher": {
+    "name": "Aaron Gustafson",
+    "url": "https://www.aaron-gustafson.com/"
+  },
+  "policies": {
+    "license": "/#license",
+    "support": "/contact/"
+  },
   "display": "minimal-ui",
   "display_override": ["tabbed", "minimal-ui", "standalone"],
-  "start_url": "/",
-  "theme_color": "#27831B",
-  "description": "The online home and work of Aaron Gustafson.",
   "orientation": "any",
+  "theme_color": "#27831B",
   "background_color": "#fffcf4",
   "icons": [
     {
@@ -29,24 +35,6 @@
       "sizes": "16x16"
     }
   ],
-  "share_target": {
-    "action": "linky/poo/",
-    "method": "GET",
-    "enctype": "application/x-www-form-urlencoded",
-    "params": {
-      "title": "title",
-      "text": "body",
-      "url": "url"
-    }
-  },
-  "policies": {
-    "license": "/#license",
-    "support": "/contact/"
-  },
-  "publisher": {
-    "name": "Aaron Gustafson",
-    "url": "https://www.aaron-gustafson.com/"
-  },
   "user_preferences": [
     {
       "color_scheme_dark": {
@@ -62,15 +50,26 @@
       }
     }
   ],
-  "translations": {
-    "no": {
-      "description": "Aaron Gustafsons hjem og arbeid på nettet.",
-      "shortcuts": [
-        { "name": "Notisbok" },
-        { "name": "Snakker" },
-        { "name": "Publikasjoner" },
-        { "name": "Intervjuer" }
-      ]
+  "scope": "/",
+  "scope_extensions": [{ "origin": "*.aaron-gustafson.com" }],
+  "handle_links": "all",
+  "launch_handler": {
+    "route_to": "existing-client",
+    "navigate_existing_client": "always"
+  },
+  "start_url": "/",
+  "serviceworker": {
+    "src": "/serviceworker.min.js",
+    "scope": "/"
+  },
+  "share_target": {
+    "action": "linky/poo/",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "title",
+      "text": "body",
+      "url": "url"
     }
   },
   "shortcuts": [
@@ -134,5 +133,16 @@
         }
       ]
     }
-  ]
+  ],
+  "translations": {
+    "no": {
+      "description": "Aaron Gustafsons hjem og arbeid på nettet.",
+      "shortcuts": [
+        { "name": "Notisbok" },
+        { "name": "Snakker" },
+        { "name": "Publikasjoner" },
+        { "name": "Intervjuer" }
+      ]
+    }
+  }
 }

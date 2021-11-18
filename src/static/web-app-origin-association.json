@@ -1,0 +1,8 @@
+{
+  "web_apps": {
+    "https://www.aaron-gustafson.com/": {
+      "include_paths": ["/*"],
+      "authorize": ["intercept-links"]
+    }
+  }
+}
