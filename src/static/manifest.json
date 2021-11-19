@@ -30,6 +30,18 @@
   "background_color": "#fffcf4",
   "icons": [
     {
+      "src": "/i/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "any monochrome maskable"
+    },
+    {
+      "src": "/i/icon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any monochrome maskable"
+    },
+    {
       "src": "/i/notification-icon.png",
       "type": "image/png",
       "sizes": "256x256",
@@ -51,6 +63,18 @@
       "color_scheme_dark": {
         "background_color": "#5b5b5b",
         "icons": [
+          {
+            "src": "/i/icon.svg",
+            "type": "image/svg+xml",
+            "sizes": "512x512",
+            "purpose": "any monochrome maskable"
+          },
+          {
+            "src": "/i/icon-reverse.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any monochrome maskable"
+          },
           {
             "src": "/i/notification-icon-reverse.png",
             "type": "image/png",
