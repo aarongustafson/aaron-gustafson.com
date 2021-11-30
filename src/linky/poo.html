@@ -291,7 +291,7 @@ sitemap: false
         XHR.responseType = 'json';
         XHR.setRequestHeader('Accept', 'application/vnd.github.v3+json');
         XHR.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
-        XHR.setRequestHeader('Authorization', 'token ' + btoa(document.getElementById('password').value))
+        XHR.setRequestHeader('Authorization', 'token ' + document.getElementById('password').value );
         XHR.addEventListener('load', linkComplete);
         XHR.addEventListener('error', linkFailed);
         XHR.addEventListener('abort', linkCanceled);
