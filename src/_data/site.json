@@ -84,18 +84,13 @@
     "branch": "main"
   },
   "sidebars": {
-    "default": [
-      "partials/asides/recent_posts.html"
-    ],
+    "default": ["partials/asides/recent_posts.html"],
     "blog": [
       "partials/asides/about.html",
       "partials/asides/networks.html",
       "partials/asides/recent_links.html"
     ],
-    "post": [
-      "partials/asides/about.html",
-      "partials/asides/events.html"
-    ],
+    "post": ["partials/asides/about.html", "partials/asides/events.html"],
     "page": [
       "partials/asides/about.html",
       "partials/asides/networks.html",
