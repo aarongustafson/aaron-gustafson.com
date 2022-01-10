@@ -58,6 +58,7 @@
     "netlify-plugin-cache-folder": "0.0.8",
     "node-fetch": "^2.6.1",
     "sass": "^1.35.2",
+    "trim-newlines": "^4.0.2",
     "uglify-es": "^3.3.9",
     "widont": "^0.3.3"
   },
