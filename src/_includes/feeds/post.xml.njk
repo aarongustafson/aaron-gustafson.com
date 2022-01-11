@@ -1,5 +1,5 @@
 {% set post_url %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
-{% set summary %}{% if post.data.page.excerpt %}{{ post.data.page.excerpt }}{% elif post.data.twitter_text %}{{ post.data.twitter_text }}{% endif %}{% endset %}
+{% set summary %}{% if post.data.twitter_text %}{{ post.data.twitter_text }}{% elif post.data.page.excerpt %}{{ post.data.page.excerpt }}{% endif %}{% endset %}
 <entry>
   <id>{{ post_url }}</id>
   <title type="html">{{ prepend_title + post.data.title | markdownify }}</title>
