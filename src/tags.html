@@ -31,7 +31,7 @@ showPageNumbers: false
             {% endif %}
             <div class="entry__details">
               <h2 class="entry__title entry-title">
-                <a rel="bookmark" href="{{ post.url }}">{{ post.data.title | widont }}</a>
+                <a rel="bookmark" href="{{ post.url }}">{{ post.data.title | widont | safe }}</a>
               </h2>
               <p class="entry__meta">{% if post.collection=="posts" %}Posted{% else %}Saved{% endif %} on <time class="dt-published" datetime="{{ post.data.date | machine_date }}">{{ post.data.date | readable_date }}</time></p>
             </div>
