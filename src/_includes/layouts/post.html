@@ -9,6 +9,11 @@ is_post: true
   {% set keywords %}{% if tags.length > 0 %}{{ tags | join(", ") }}{% endif %}{% endset %}
   {% set this_url = site.url + page.url %}
   {% set all_mentions = webmentions | getWebmentionsForUrl(this_url) %}
+  {% set replies = all_mentions | webmentionsByType(['mention-of', 'in-reply-to', 'bookmark-of']) | required('name || summary || content') %}
+  {% set likes = all_mentions | webmentionsByType('like-of') | required('author') %}
+  {% set shares = all_mentions | webmentionsByType([ 'repost-of' ]) %}
+  {% set total_webmentions = replies.length + likes.length + shares.length %}
+  {% set has_webmentions = total_webmentions > 0 %}
 
   <div class="layout-container layout-container--blog">
     <article role="article" class="layout-container__primary h-entry">
@@ -30,12 +35,12 @@ is_post: true
             <dt class="dont-read">Tagged</dt>
             <dd class="dont-read">{{ tag_list( tags ) }}</dd>
 
-            {% if all_mentions.length > 0 %}
+            {% if total_webmentions > 0 %}
               <dt class="dont-read">Reactions</dt>
               <dd class="dont-read">
                 <ul class="entry__jump-links">
                   {#<li class="entry__jump entry__jump--comments"><a href="{% if index %}{{ root_url }}{{ page.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ this_url }}{% endif %}">Comments</a></li>#}
-                  <li class="entry__jump entry__jump--webmentions"><a href="#webmentions">{{ all_mentions.length }} Webmentions</a></li>
+                  <li class="entry__jump entry__jump--webmentions"><a href="#webmentions">{{ total_webmentions }} Webmentions</a></li>
                 </ul>
               </dd>
             {% endif %}
