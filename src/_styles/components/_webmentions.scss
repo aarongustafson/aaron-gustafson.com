@@ -11,7 +11,12 @@
     .webmentions {
         @include rem( font-size, $font-size-default );
         @include rem( margin-top, math.div( $default-spacing, 2 ) );
-        
+
+        h2 {
+          @include rem( margin-top, $default-spacing );
+          @include rem( margin-bottom, math.div( $default-spacing, 2 ) );
+        }
+
         &__list {
             list-style: none;
             margin: 0;
@@ -67,6 +72,10 @@
         &__meta {
             color: $color-grey;
             @include rem( font-size, $font-size-small );
+
+            @media (prefers-color-scheme: dark) {
+              color: $color-grey-light;
+            }
         }
 
         &--activity &__author,

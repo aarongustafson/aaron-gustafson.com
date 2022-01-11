@@ -2,6 +2,8 @@
     Text-level semantics
 \*------------------------------------*/
 
+@use 'sass:math';
+
 @include breakup-breakpoint( "global" ) {
 
     // Abbreviations
@@ -61,7 +63,7 @@
 
     // :target
     :target {
-      background-color: yellow;
-      color: black;
+      outline: 2px solid yellow;
+      @include rem( outline-offset, math.div( $default-spacing, 2 ) );
     }
 }
