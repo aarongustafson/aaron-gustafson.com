@@ -145,6 +145,11 @@ module.exports = config => {
     excerpt_separator: "<!-- more -->"
   });
 
+  // Events
+  // const afterBuild = require('./_11ty/afterBuild');
+  // config.on("eleventy.after", afterBuild);
+  // config.on("afterBuild", afterBuild);
+
   // Config
   return {
     markdownTemplateEngine: "njk",
