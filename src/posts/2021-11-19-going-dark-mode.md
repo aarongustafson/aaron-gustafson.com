@@ -4,6 +4,12 @@ date: 2021-10-26 11:57:19 -07:00
 comments: true
 tags: ["CSS","progressive web apps"]
 description: "I finally got around to playing with the CSS user color-scheme preference and enabled a “dark mode” for this site."
+hero:
+  src: https://images.unsplash.com/photo-1431440869543-efaf3388c585
+  credit: Breno Machado
+  url: https://unsplash.com/photos/in9-n0JwgZ0
+crossposted:
+  dev.to: https://dev.to/aarongustafson/going-dark-mode-4d39
 ---
 
 While working on tooling to analyze Web App Manifest usage in relation to some new feature proposals, it became clear we needed a test Manifest that included the proposed syntax for dark/light mode support. I decided to make this site the guinea pig and spent an hour or so tweaking things to make it happen. Here’s a run-down of what I did:
