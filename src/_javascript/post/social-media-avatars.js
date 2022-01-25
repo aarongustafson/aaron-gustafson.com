@@ -3,7 +3,8 @@
 (function( window ){
     'use strict';
 
-    if ( 'addEventListener' in window )
+    if ( 'addEventListener' in window &&
+         document.getElementById('webmentions') )
     {
         window.addEventListener( 'load', checkImages, false );
     }

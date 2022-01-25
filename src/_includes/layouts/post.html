@@ -14,12 +14,23 @@ is_post: true
   {% set shares = all_mentions | webmentionsByType([ 'repost-of' ]) %}
   {% set total_webmentions = replies.length + likes.length + shares.length %}
   {% set has_webmentions = total_webmentions > 0 %}
+  {% set heading %}<h1 class="entry__title p-name">{{ title | widont | markdownify | safe }}</h1>{% endset %}
 
   <div class="layout-container layout-container--blog">
     <article role="article" class="layout-container__primary h-entry">
       <div class="entry">
         <header class="entry__header">
-          <h1 class="entry__title p-name">{{ title | widont | markdownify | safe }}</h1>
+          {% if hero %}
+            <div class="entry__hero">
+              {{ heading | safe }}
+              <figure>
+                <img class="entry__hero__image" src="https://res.cloudinary.com/aarongustafson/image/fetch/e_vectorize:3:0.5/e_tint:100:green:50p/{{ hero.src }}" alt="">
+                <figcaption class="entry__hero__credit">Credit: <a href="{{ hero.url }}">{{ hero.credit }}</a></figcaption>
+              </figure>
+            </div>
+          {% else %}
+            {{ heading | safe }}
+          {% endif %}
           
           <dl class="entry__meta">
             <dt>Published</dt>

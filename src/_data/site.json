@@ -8,7 +8,7 @@
   "subtitle": "Web Design Author, Evangelist, Practitioner, and Teacher",
   "description": "Hi there. My name is Aaron Gustafson and I work on the web.",
   "logo": "/i/og-logo.png",
-  "minify": true,
+  "minify": false,
   "sw_version": "v4",
   "tag_page_dir": "/tags/",
   "author": {

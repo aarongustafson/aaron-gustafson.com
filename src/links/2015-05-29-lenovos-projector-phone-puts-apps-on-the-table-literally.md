@@ -7,7 +7,8 @@ ref_url: http://thenextweb.com/gadgets/2015/05/28/lenovos-projector-phone-puts-a
 in_reply_to: http://thenextweb.com/gadgets/2015/05/28/lenovos-projector-phone-puts-apps-on-the-table-literally/
 ref_source: The Next Web
 ---
+{% from "macros.njk" import youtube %}
 
 The future of interface is getting pretty interesting.
 
-https://www.youtube.com/watch?v=JwBem1Ul8dk
+{{ youtube( "JwBem1Ul8dk" ) }}
