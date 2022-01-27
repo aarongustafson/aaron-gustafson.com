@@ -7,7 +7,7 @@ lite-youtube {
   background-size: cover;
   cursor: pointer;
   max-width: 720px;
-  outline: 1px solid;
+  border: 1px solid;
 }
 
 /* gradient */
@@ -45,7 +45,7 @@ lite-youtube > iframe {
 
 /* play button */
 lite-youtube > .lty-playbtn {
-  display: inline-block;
+  display: block;
   width: 68px;
   height: 48px;
   position: absolute;

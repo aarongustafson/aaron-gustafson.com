@@ -22,6 +22,24 @@ function tagsToString( tags )
   return tags.join(" ");
 }
 
+function tagsToColor( tags )
+{
+  const colors = {
+    "abcdef": "82acd9",
+    "ghijkl": "22c655",
+    "mnopqrs": "f17ee8",
+    "tuvwxyz": "de973c"
+  };
+  tags = tags || ["a"];
+  const letter = tags[0].split("").shift().toLowerCase();
+  for ( let letters in colors )
+  {
+    if ( letters.indexOf(letter) > -1 )
+    {
+      return colors[letters];
+    }
+  }
+}
 
 module.exports = {
   layout: "layouts/post.html",
@@ -36,6 +54,9 @@ module.exports = {
                     .trim();
       }
       return excerpt;
+    },
+    hue: (data) => {
+      return tagsToColor(data.tags);
     },
     image: (data) => {
       return getShareImage({
