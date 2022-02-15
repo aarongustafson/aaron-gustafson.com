@@ -1,8 +1,10 @@
 {% set post_url %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
-{% set summary %}{% if post.data.twitter_text %}{{ post.data.twitter_text }}{% elif post.data.description %}{{ post.data.description }}{% elif post.data.page.excerpt %}{{ post.data.page.excerpt }}{% endif %}{% endset %}
+{% set summary %}{% if post.data.description %}{{ post.data.description }}{% elif post.data.page.excerpt %}{{ post.data.page.excerpt }}{% endif %}{% endset %}
 {
   "id": "{{ post_url }}",
   "title": "{{ prepend_title + post.data.title | replace('"', '\\"') | safe }}",
+  
+  "summary": "{{ summary | markdownify | replace('\n','') | replace('\r', '') | replace('"', '\\"') | safe }}",
   
   "content_html": "{{ post.templateContent | replace('\n','') | replace('\r', '') | replace('"', '\\"') | safe }}",
   
