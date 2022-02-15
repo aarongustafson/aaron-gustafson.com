@@ -48,6 +48,10 @@ Blog Entry
       @include rem( padding-top, $default-spacing );
     }
     
+    &--teaser &__title {
+      width: auto;
+    }
+    
     &--teaser &__footer {
       border-top: 0;
       padding-top: 0;
