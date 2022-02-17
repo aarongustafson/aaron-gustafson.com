@@ -2,7 +2,7 @@
   // Register the service worker
   if ( "serviceWorker" in navigator )
   {
-    window.sw_version = "v7:";
+    window.sw_version = "v8:";
 
     window.addEventListener('load', function() {
       navigator.serviceWorker.register( "/serviceworker.min.js" );

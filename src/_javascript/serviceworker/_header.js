@@ -1,4 +1,4 @@
-const version = "v7:", // be sure to update ../main/register-serviceworker.js too
+const version = "v8:", // be sure to update ../main/register-serviceworker.js too
 
       // Stuff to load on install
       fallback_avatar = "/i/fallbacks/avatar.svg",
