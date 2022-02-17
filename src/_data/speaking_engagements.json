@@ -1,5 +1,18 @@
 [
   {
+    "id": 145,
+    "title": "Amsterdam University Of Applied Sciences",
+    "date": "2022-03-24 00:09:00 -0800",
+    "location": "Amsterdam, Netherlands"
+  },
+  {
+    "id": 144,
+    "title": "An Event Apart: Spring Summit",
+    "date": "2022-04-18 00:09:00 -0800",
+    "location": "Online",
+    "url": "https://aneventapart.com/event/spring-summit-2022"
+  },
+  {
     "id": 143,
     "title": "PWA Summit",
     "date": "2021-10-06 00:09:00 -0800",
@@ -16,7 +29,7 @@
     "id": 140,
     "title": "Amsterdam University Of Applied Sciences",
     "date": "2021-03-11 00:08:00 -0400",
-    "location": "Online"
+    "location": "Amsterdam, Netherlands"
   },
   {
     "id": 141,
