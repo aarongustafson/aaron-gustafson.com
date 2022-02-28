@@ -1,5 +1,19 @@
 [
   {
+    "title": "#30DaysOfPWA: Caching Your App Data",
+    "publisher": "#30DaysOfPWA",
+    "published": "2022-02-25 00:00:00 +0000",
+    "url": "https://dev.to/azure/12-caching-your-app-data-3f0j",
+    "notes": "This brief article will walk you through how to be more effective and organized when it comes to caching."
+  },
+  {
+    "title": "#30DaysOfPWA: Creating Application Shortcuts",
+    "publisher": "#30DaysOfPWA",
+    "published": "2022-02-22 00:00:00 +0000",
+    "url": "https://dev.to/azure/09-creating-application-shortcuts-m0i",
+    "notes": "This brief article will walk you through how to make it easy for your users to jump immediately to common task pages within your app using Shortcuts."
+  },
+  {
     "title": "Request with Intent: Caching Strategies in the Age of PWAs",
     "publisher": "A List Apart",
     "published": "2019-11-21 00:00:00 +0000",
