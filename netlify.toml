@@ -10,22 +10,26 @@
 [[plugins]]
   package = "./plugins/persist-static-directory"
 
-
+[[redirects]]
+  from = "/notebook/:year/:slug"
+  to = "/notebook/:slug"
+  status = 301
+  force = true
 [[redirects]]
   from = "/articles/"
   to = "/publications/#articles"
   status = 301
-  force = false
+  force = true
 [[redirects]]
   from = "/books/"
   to = "/publications/#books"
   status = 301
-  force = false
+  force = true
 [[redirects]]
   from = "/events/"
   to = "/speaking-engagements/"
   status = 301
-  force = false
+  force = true
 [[redirects]]
   from = "/*"
   to = "/404.html?url=:splat"
