@@ -14,6 +14,9 @@
   {% endif %}
 
   <content type="html" xml:base="{{ site.url }}"><![CDATA[{{ post.templateContent | safe }}]]></content>
+  {% if post.data.twitter_text %}
+    <amg:twitter><![CDATA[{{ post.data.twitter_text | markdownify | safe }}]]></amg:twitter>
+  {% endif %}
   {% if summary %}
     <summary type="html"><![CDATA[{{ summary | markdownify | safe }}]]></summary>
   {% endif %}

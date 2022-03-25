@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/css" href="{{ '/c/feed.min.css' | absoluteUrl(site.url) }}" ?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xmlns:amg="https://www.aaron-gustafson.com.com/amg-dtd/">
   <title>{{ site.title }}: {{ title }}</title>
   {% if site.description %}
   <subtitle>{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}</subtitle>
