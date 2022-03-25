@@ -60,7 +60,7 @@ Given how fallbacks work, you might expect a browser to offer up the inner parag
 
 ## A better way?
 
-Obviously the native fallback would be best, but I have no concept of how difficult that would be to do. So what if browsers did expose *our* fallback content when the only media types on offer are ones they don’t support?
+Obviously the paragraph fallback would be best, but I have no concept of how difficult that would be to do. So what if browsers did expose *our* fallback content when the only media types on offer are ones they don’t support?
 
 It seems like this would offer a number of benefits:
 

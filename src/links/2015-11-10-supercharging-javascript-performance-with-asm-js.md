@@ -9,4 +9,4 @@ ref_source: Microsoft Edge Dev Blog
 
 I’m intrigued by the power of [asm.js](http://asmjs.org/spec/latest/), but have not found a use for it…yet. I hope to resolve that in the future.
 
-Regardless, it’s native in [Microsoft Edge](https://www.microsoft.com/en-us/windows/microsoft-edge) now, so that’s pretty badass.
+Regardless, it’s in [Microsoft Edge](https://www.microsoft.com/en-us/windows/microsoft-edge) now, so that’s pretty badass.

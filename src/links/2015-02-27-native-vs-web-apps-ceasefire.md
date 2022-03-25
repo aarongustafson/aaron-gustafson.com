@@ -7,4 +7,6 @@ in_reply_to: http://readwrite.com/2015/02/27/native-vs-web-apps-ceasefire
 ref_source: ReadWrite
 ---
 
-Matt Asay does a great job dispelling some of the myths frequently spouted in the Web vs. native debate. It’s definitely worth a read.
+Matt Asay does a great job dispelling some of the myths frequently spouted in the Web vs. platform-specific debate. It’s definitely worth a read.
+
+_Note: I no longer use “native” in this context, but it remains in quoted material._

@@ -44,15 +44,15 @@ So, here’s what I’d love to see browser vendors do:
 2. Put a ban on vendor-prefixes. They are not generally understood to be experimental. If you feel you must use a vendor prefix, ensure it’s only enabled by a corresponding feature flag.
 2. Use feature flags (or some similar opt-in) to enable developers to test experimental features in their own browsers, but also to ensure they aren’t available on the "open web" before they’re ready.
 
-## The Web vs. Native
+## The Web vs. Platform-Specific Development
 
-PPK has harped on this a few times. There is currently a palpable tension between "native" and "the web". It’s driving most of the new features in the web "platform"[^1] and it’s giving many of us old-timers a touch of angina.
+PPK has harped on this a few times. There is currently a palpable tension between platform-specific development and the web. It’s driving most of the new features in the web "platform"[^1] and it’s giving many of us old-timers a touch of angina.
 
 [^1]: I think I just threw up in my mouth a little. I hate using that word when speaking about the web, but there it is.
 
 The reason is simple: The web was created as a massively interconnected document repository. A wealth of knowledge dependent on the hyperlink and the URL. The web was (and indeed still is) stateless by default, meaning it has no idea who you are or what you’ve done from request to request. This is very egalitarian: everyone has access and anyone can contribute.
 
-As more businesses moved online, the web became necessarily transactional. Suddenly websites needed to know information about your "state" so they could sell you things and track your movements around their site and the rest of the web. With the advent of cookies and the Common Gateway Interface (CGI), a web server could adjust the content it sent in response to a request, based on what it knew about you and what you were doing. 
+As more businesses moved online, the web became necessarily transactional. Suddenly websites needed to know information about your "state" so they could sell you things and track your movements around their site and the rest of the web. With the advent of cookies and the Common Gateway Interface (CGI), a web server could adjust the content it sent in response to a request, based on what it knew about you and what you were doing.
 
 Taking this simple capacity a step further, it became possible to write actual software on the web. Content management systems were probably the first big chunk of software to move online, but more soon followed. JavaScript came along and allowed us to add a bit of logic to the client side, reducing our reliance on round-trips to the server. Then we got Ajax and the whole JavaScript world exploded. We now have web-based photo editors, integrated development environments (IDEs), games, and more, all reliant on JavaScript’s ability to interact with the browser and manipulate what the user sees in real-time.
 
@@ -60,15 +60,15 @@ There were earlier machinations certainly, but the last ten years have seen the 
 
 <span data-quotable>If you don’t take the time to understand how the web works, you’ll spend half your time cursing it and the other half trying to work around the things that frustrate you (which you will probably write off as "poorly designed" or "ill-conceived").</span> If you don’t understand how the web works, you’ll build fragile experiences that collapse like a house of cards when any one of your many dependencies—the network, JavaScript, some particular element or browser API—isn’t available. If you don’t understand how the web works, what you build will simply be [on the web, not of it](https://adactio.com/journal/8245).
 
-I don’t particularly care much about bringing "native like" "60fps" experiences to the web. It’s not that I don’t write software (I do), I just don’t really care if something I make for the web feels like a piece of installed software. I’ll do everything in my power to ensure my users have a great experience, but I know that each person’s experience will be a little bit different and I no longer feel the need to enforce my will on their experience. I’d rather create many ways for someone to interact with the things I build and hope one or more of those work well for whoever happens by and whatever device they happen to be using.
+I don’t particularly care much about bringing "native like" experiences to the web. It’s not that I don’t write software (I do), I just don’t really care if something I make for the web feels like a piece of installed software. I’ll do everything in my power to ensure my users have a great experience, but I know that each person’s experience will be a little bit different and I no longer feel the need to enforce my will on their experience. I’d rather create many ways for someone to interact with the things I build and hope one or more of those work well for whoever happens by and whatever device they happen to be using.
 
-Native software and the web have always co-existed. We had installed software on computers long before the web even existed and we will continue to have installed software for as long as there are computers. Some software will move to the web if it makes sense for it to do so. Other software will remain native. Either option could be right or wrong depending on what you are trying to do. For instance, I would never personally write a photo editor in the browser because image processing requires a lot of memory and CPU cycles. Putting it in a browser moves it one more level away from the hardware. Abstraction eases development, but it invariably increases overhead and reduces performance.
+Platform-specific software and the web have always co-existed. We had installed software on computers long before the web even existed and we will continue to have installed software for as long as there are computers. Some software will move to the web if it makes sense for it to do so. Other software will remain platform-specific. Either option could be right or wrong depending on what you are trying to do. For instance, I would never personally write a photo editor in the browser because image processing requires a lot of memory and CPU cycles. Putting it in a browser moves it one more level away from the hardware. Abstraction eases development, but it invariably increases overhead and reduces performance.
 
 Traditional software and the web can and should co-exist. They also can and should continue to inform one another. Ultimately, that will help us better serve the needs of our users, however they use our creations.
 
 ## Change vs. Stagnation
 
-Underpinning this whole "native vs. web" thing is, I think, a feeling many of us old-timers have that our web—the web we grew up building—is slipping away from us. We cling to the idea of the web as an open platform[^2] for people to share their thoughts, passions, and cat photos. We like the web as it was originally. We like the web as we made it.
+Underpinning this whole "platform-specific vs. web" thing is, I think, a feeling many of us old-timers have that our web—the web we grew up building—is slipping away from us. We cling to the idea of the web as an open platform[^2] for people to share their thoughts, passions, and cat photos. We like the web as it was originally. We like the web as we made it.
 
 [^2]: In the other sense of the word.
 
@@ -101,3 +101,5 @@ As an industry, we are doing an awful lot of navel gazing. <span data-quotable>W
 ## All is not lost
 
 We are designers. Design is about solving problems for our users, not creating new ones for them. Whether we are writing code, sketching interfaces, authoring copy, curating content, or building servers, we should make each and every decision based on what will benefit our users. If it means we can’t use some shiny new technology, so be it. We can still play with the new stuff in our own browser, on our personal sites, and on CodePen. We can learn about them in our own experimentation and share that knowledge with the rest of our industry. We can improve our craft. The web can get better.
+
+_Note: I no longer use “native” in this context, but it remains in quoted material._

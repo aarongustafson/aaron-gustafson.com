@@ -147,7 +147,7 @@ HTML5 ushered in a new option for working with `input` elements: the `placeholde
 
 <figcaption>An animation showing a placeholder in action on <a href="http://webstandardssherpa.com"><cite>Web Standards Sherpa</cite></a>.</figcaption></figure>
 
-Having this natively supported in the browser was a huge boon. For years we’d been using JavaScript to achieve this very effect—albeit typically for label text—in an effort to create more compact forms. Now we get the effect without having to include any additional files or libraries.
+Having this supported in the browser was a huge boon. For years we’d been using JavaScript to achieve this very effect—albeit typically for label text—in an effort to create more compact forms. Now we get the effect without having to include any additional files or libraries.
 
 Of course, since `placeholder` implements an existing pattern, it came with baggage. People commonly achieved this effect by (ab)using the `value` attribute as a fake label. As such, its introduction didn’t do much to increase the accessibility of forms. *Form controls need a label*. If you want to make your form more compact, you can do that using proper markup and a little clever CSS.
 

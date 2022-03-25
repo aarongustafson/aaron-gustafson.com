@@ -8,3 +8,5 @@ ref_source: "Addy Osmani"
 ---
 
 I'm incredibly excited that this feature is shipping in Chromium. It was one of my favorite IE features.
+
+_Note: I no longer use “native” in this context, but it remains in quoted material._

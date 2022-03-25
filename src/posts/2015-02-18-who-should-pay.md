@@ -20,7 +20,7 @@ https://twitter.com/chriseppstein/status/567756897105620992
 
 Fundamentally, I agree with his sentiment: A preprocessor should *not* be a requirement for authoring CSS. Thankfully, *it never was*; you can build amazing things using only hand-authored CSS. And if you find a preprocessor helpful to your process for one reason or another, great. But using a preprocessor never has been (nor should it ever be) a requirement.
 
-But Chris was not railing against preprocessors. Instead, he is echoing a sentiment held by many people in the preprocessor community. He feels CSS is not as powerful as it could/should be and he hopes that one day soon preprocessors won’t need to exist because CSS will have all of the features they offer natively. Like variables.
+But Chris was not railing against preprocessors. Instead, he is echoing a sentiment held by many people in the preprocessor community. He feels CSS is not as powerful as it could/should be and he hopes that one day soon preprocessors won’t need to exist because CSS will have all of the features they offer. Like variables.
 
 I used to feel that way. I used to want variables… and mixins… and functions… and loops… and declaration block-level inheritance. But I’ve changed my mind.
 

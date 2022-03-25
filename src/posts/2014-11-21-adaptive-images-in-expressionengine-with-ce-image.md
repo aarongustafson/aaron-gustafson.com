@@ -3,7 +3,7 @@ title: "Adaptive Images in ExpressionEngine with CE Image"
 date: 2014-11-21 18:18:23 -05:00
 comments: true
 tags: [ "web design", "responsive web design", "ExpressionEngine", "progressive enhancement" ]
-description: "With native browser implementations now available and a rock-solid set of implementation choices, we’ve begun implementing responsive images in every new project. Here’s how we did it for a recent ExpressionEngine build using the CE Image add-on."
+description: "With browser implementations now available and a rock-solid set of implementation choices, we’ve begun implementing responsive images in every new project. Here’s how we did it for a recent ExpressionEngine build using the CE Image add-on."
 redirect_from: /notebook/2014/adaptive-images-in-expressionengine-with-ce-image/
 ---
 
@@ -17,7 +17,7 @@ I won’t bore you with how to set up CE Image as there is [documentation on tha
 
 ## Header images
 
-The first use case we had was a series of large, focal images. You can find different examples of them on [the homepage](http://www.nichols.edu) and landing pages (like [this one for Admissions](http://www.nichols.edu/admissions/)). The first pass on making these images adaptive involved the `picture` element for which [the spec](https://html.spec.whatwg.org/multipage/embedded-content.html#adaptive-images) is known. The markup we were generating was based on the pattern outlined for [Picturefill](http://scottjehl.github.io/picturefill/), a JavaScript polyfill that implements adaptive images in browsers that don’t do it natively:
+The first use case we had was a series of large, focal images. You can find different examples of them on [the homepage](http://www.nichols.edu) and landing pages (like [this one for Admissions](http://www.nichols.edu/admissions/)). The first pass on making these images adaptive involved the `picture` element for which [the spec](https://html.spec.whatwg.org/multipage/embedded-content.html#adaptive-images) is known. The markup we were generating was based on the pattern outlined for [Picturefill](http://scottjehl.github.io/picturefill/), a JavaScript polyfill that implements adaptive images in browsers that don’t:
 
 ```html
 <picture class="page__image-header__photo">

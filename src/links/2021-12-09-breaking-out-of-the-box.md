@@ -4,7 +4,7 @@ date: 2021-12-09T16:29:28.664Z
 tags: ["progressive web apps", "JavaScript", "CSS"]
 ref_url: https://alistapart.com/article/breaking-out-of-the-box/
 in_reply_to: https://alistapart.com/article/breaking-out-of-the-box/
-twitter_text: "Make your PWA look more native by building your own titlebar. @patrickbrosset shows you how."
+twitter_text: "Make your PWA look more like an app by building your own titlebar. @patrickbrosset shows you how."
 ref_source: "A List Apart"
 ---
 

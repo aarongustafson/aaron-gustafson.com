@@ -268,7 +268,7 @@ When we start to consider how our websites will be experienced in a voice contex
 
 Content strategist Steph Hay views interface as an opportunity to have a conversation with our users. Soon it literally will be.
 
-Interestingly, Microsoft has given us a peek at what it might be like to design custom voice commands for our websites beyond what the OS natively supports with Cortana. In other words, they let us teach their assistant.
+Interestingly, Microsoft has given us a peek at what it might be like to design custom voice commands for our websites beyond what the OS supports with Cortana. In other words, they let us teach their assistant.
 
 In Windows 10, installable web apps can include a [Voice Command Definition (VCD) file](https://msdn.microsoft.com/en-us/library/windows/apps/dn722331.aspx) in the `head` of the page to enable custom commands:
 

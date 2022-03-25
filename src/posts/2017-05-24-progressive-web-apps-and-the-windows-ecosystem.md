@@ -48,27 +48,27 @@ And so it is with Progressive Web Apps too.
 
 “Web apps” in this context can be any website type—a newspapers, games, books, shopping sites—it really doesn’t matter what the content or purpose of the website is, the “web app” moniker is applicable to all of them. <span data-quotable>The term could just have easily been progressive web *site* and it may be helpful to think of it as such</span>. It doesn’t need to be a single page app. You don’t need to be running everything client side. There are no particular requirements for the type of PWA you are developing.
 
-Essentially, a PWA is a website that is capable of being promoted to being *native-ish*. It gets many of the benefits of being a native app (some of which I will cover shortly), but also has all of the benefits of being a website too. If you’ve looked at or developed a [Hosted Web App](https://developer.microsoft.com/en-us/windows/bridges/hosted-web-apps)(HWA), which Microsoft introduced with Windows 10, PWAs are very 
+Essentially, a PWA is a website that is capable of being promoted to being an installed app. It gets many of the benefits of being an app (some of which I will cover shortly), but also has all of the benefits of being a website too. If you’ve looked at or developed a [Hosted Web App](https://developer.microsoft.com/en-us/windows/bridges/hosted-web-apps)(HWA), which Microsoft introduced with Windows 10, PWAs are very 
 similar. In fact, if you’ve built an HWA, it shouldn’t be too difficult for you to convert it into a PWA and, in doing so, you’ll get a ton of extra goodies for free… but I’m getting ahead of myself.
 
-[Here’s a quick comparison](#figure-2017-05-24-05) of the native Twitter app and [Twitter Lite](https://lite.twitter.com/), as seen on an Android device:
+[Here’s a quick comparison](#figure-2017-05-24-05) of the Twitter app and [Twitter Lite](https://lite.twitter.com/), as seen on an Android device:
 
 <figure class="video-embed video-embed--16x9" id="figure-2017-05-24-05">  
 <video class="video-embed__video" src="/i/posts/2017-05-24/05.mp4" controls loop muted></video>
-<figcaption>A video showing the native Twitter Android app and Twitter Lite, side-by-side to demonstrate how similar they are.</figcaption>
+<figcaption>A video showing the Twitter Android app and Twitter Lite, side-by-side to demonstrate how similar they are.</figcaption>
 </figure>
 
 You’ll notice that from a quality, polish, and user experience perspective, they are nearly indistinguishable. And this is just the first iteration of Twitter Lite. It launched last month. The only real difference is that one was built using Web technologies and lives at a URL.
 
-Though [the "progressive web apps" moniker was coined by Frances Berriman in 2015](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/) and has quickly become a buzzword in our industry, it’s important to recognize that this idea of the Web as native is not new. 
+Though [the "progressive web apps" moniker was coined by Frances Berriman in 2015](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/) and has quickly become a buzzword in our industry, it’s important to recognize that this idea of the Web as app is not new. 
 
-Back in 2007, [Adobe introduced Apollo](https://web.archive.org/web/20070322155954/http://www.adobe.com/aboutadobe/pressroom/pressreleases/200703/031907ApolloLabs.html), later renamed the Adobe Integrated Runtime (<abbr aria-title="also known as">a.k.a.</abbr> [Adobe AIR](http://www.adobe.com/products/air.html)). This technology enabled designers and developers to build native apps in Flash or using Web technologies—HTML, CSS and JavaScript. It was pretty revolutionary for the time, supporting drag & drop, menu bar integration, file management, and more.
+Back in 2007, [Adobe introduced Apollo](https://web.archive.org/web/20070322155954/http://www.adobe.com/aboutadobe/pressroom/pressreleases/200703/031907ApolloLabs.html), later renamed the Adobe Integrated Runtime (<abbr aria-title="also known as">a.k.a.</abbr> [Adobe AIR](http://www.adobe.com/products/air.html)). This technology enabled designers and developers to build apps in Flash or using Web technologies—HTML, CSS and JavaScript. It was pretty revolutionary for the time, supporting drag & drop, menu bar integration, file management, and more.
 
 In 2009, Palm debuted [webOS](https://en.wikipedia.org/wiki/WebOS) [with the Palm Pre](http://www.palminfocenter.com/news/9668/palm-announces-the-palm-pre-smartphone/). All software for webOS was built using web technologies. Sadly, as an operating system in the handset space, it failed to catch on, but [LG has licensed webOS](https://www.lgwebos.com/) for use in smart TVs and is experimenting with it for <abbr aria-title="Internet of Things">IoT</abbr> devices and smartwatches.
 
 Since that time, more OSes have begun embracing Web technologies as a means of building applications. Windows 8 allowed Windows Store apps to be written in HTML, CSS, and JavaScript. And [Firefox OS](https://en.wikipedia.org/wiki/Firefox_OS) and [Chromium/Chrome OS](https://www.chromium.org/chromium-os) are fundamentally tied to to the Web stack.
 
-Countless tools have followed Adobe’s lead as well, enabling designers and developers to use their Web skills to build native applications for the vast majority of operating systems out there. [React Native](https://facebook.github.io/react-native/), [Ionic](http://ionicframework.com/), [Electron](https://electron.atom.io/), [PhoneGap](http://phonegap.com/), [Appcelerator](http://www.appcelerator.com/)… the list goes on and on. Obviously there’s something to the idea of building native software using Web technologies. Progressive Web Apps are a brilliant way of accomplishing this in a standardized, consistent, way.
+Countless tools have followed Adobe’s lead as well, enabling designers and developers to use their Web skills to build applications for the vast majority of operating systems out there. [React Native](https://facebook.github.io/react-native/), [Ionic](http://ionicframework.com/), [Electron](https://electron.atom.io/), [PhoneGap](http://phonegap.com/), [Appcelerator](http://www.appcelerator.com/)… the list goes on and on. Obviously there’s something to the idea of building software using Web technologies. Progressive Web Apps are a brilliant way of accomplishing this in a standardized, consistent, way.
 
 ## What makes a PWA a PWA?
 
@@ -85,19 +85,19 @@ Google’s [Alex Russell](https://infrequently.org/) defined 10 characteristics 
 9. **Installable:** It can be installed by users if they find it useful. This could be done independently of—but is not necessarily exclusive of—app stores.
 10. **Linkable:** It is easily accessed (and shared) via a URL. 
 
-Let’s tuck into the installable piece first since this is the bit that really sets a PWA apart from a standard website. Now many might view this as a continuation of the competition between Web and native development. I don’t think of the two as being competitive, so much as being choices. We should choose our development approach based on the needs of our project, team, budget, etc. It’s good to have options and both approaches have their strengths. 
+Let’s tuck into the installable piece first since this is the bit that really sets a PWA apart from a standard website. Now many might view this as a continuation of the competition between Web and traditional app development. I don’t think of the two as being competitive, so much as being choices. We should choose our development approach based on the needs of our project, team, budget, etc. It’s good to have options and both approaches have their strengths. 
 
 <blockquote>
-<p><del>Web vs. Native</del><br>
-<ins>Web *or* Native?<br>
+<p><del>Web vs. Platform-specific</del><br>
+<ins>Web *or* Platform-specific?<br>
 It depends.</ins></p>
 </blockquote>
 
-Often Web tech gets dismissed for not having the capabilities of native apps. That’s changing rather rapidly. A visit to [whatwebcando.today](https://whatwebcando.today/) will give you a run-down of what your browser supports; you might be surprised with what you’ll learn about your browser’s capabilities. And if the end user experience is really good, does it matter what the underlying technology is?
+Often Web tech gets dismissed for not having the capabilities of apps. That’s changing rather rapidly. A visit to [whatwebcando.today](https://whatwebcando.today/) will give you a run-down of what your browser supports; you might be surprised with what you’ll learn about your browser’s capabilities. And if the end user experience is really good, does it matter what the underlying technology is?
 
 Well, it might…
 
-In the Web vs. native discussion, time to market is an aspect that isn’t often discussed. With a traditional web and native approach, each platform is typically built atop a core API. The apps are designed and developed independently, using different toolsets and languages and requiring different skills from the development team. And even in instances where they are all created using a single tool, the timeline needs to be padded in order to account for submission to each app store. That can cause delays in getting your product in front of users. It can also delay your delivery of critical updates.
+In the Web vs. apps discussion, time to market is an aspect that isn’t often discussed. With a traditional web and app approach, each platform is typically built atop a core API. The apps are designed and developed independently, using different toolsets and languages and requiring different skills from the development team. And even in instances where they are all created using a single tool, the timeline needs to be padded in order to account for submission to each app store. That can cause delays in getting your product in front of users. It can also delay your delivery of critical updates.
 
 <figure id="fig-2017-05-24-06" class="media-container">
 
@@ -181,7 +181,7 @@ In terms of experience of this field, it improves incrementally along a path lik
 
 Now think about that for a second—this incredible variety of experience is created by one HTML element when you add three specific attributes to it. And the experienced is enhanced—*progressively*—as the browser’s and operating system’s capabilities increase. Amazing!
 
-As I mentioned, <span data-quotable>progressive enhancement ensures people can use your product, no matter what</span>. You could just as easily swap in "PWA" for "progressive enhancement" in that statement. After all, PWAs give you network awareness and independence, they can be used to lower the overall cost of using your product for your for users through smart caching, they enable access to native APIs on certain platforms, and they provide more ways for your product to get discovered (e.g., search, store, links). Those are some impressive progressive enhancement bona fides.
+As I mentioned, <span data-quotable>progressive enhancement ensures people can use your product, no matter what</span>. You could just as easily swap in "PWA" for "progressive enhancement" in that statement. After all, PWAs give you network awareness and independence, they can be used to lower the overall cost of using your product for your for users through smart caching, they enable access to platform APIs on certain platforms, and they provide more ways for your product to get discovered (e.g., search, store, links). Those are some impressive progressive enhancement bona fides.
 
 Additionally, the two technical lynchpins of PWA—Web App Manifest and Service Worker—are ignored if they aren’t supported. Products you build using them [will continue to work really well, even in their absence](https://cloudfour.com/thinks/why-does-the-washington-posts-progressive-web-app-increase-engagement-on-ios/). They are, by definition, progressive enhancements too.
 
@@ -231,13 +231,13 @@ Now that we’ve seen how PWAs operate within Windows, I want to take a few minu
 
 Now you may be wondering, with all of the awesomeness the Web has to offer, why does it make sense for PWAs to reside in app stores? There are numerous reasons:
 
-1. It puts PWAs on equal footing with native apps.
+1. It puts PWAs on equal footing with traditional apps.
 2. Stores provide an alternate means of discovery for PWAs.
 3. Users are generally more comfortable trusting software that has been reviewed for quality and safety.
 4. Developers can get more insight into their users through reviews and ratings as well as analytics concerning installs, uninstalls, shares, and performance.
 5. Having a store where users download software also reduces the cognitive overhead of tracking multiple sources for installing apps.
 
-PWAs can get into the Windows Store in one of two ways. The first is through active submission. Using a tool like the open source utility [PWA Builder](http://www.pwabuilder.com/), you can generate the necessary native wrappers used by the various app stores and manually submit your PWA.
+PWAs can get into the Windows Store in one of two ways. The first is through active submission. Using a tool like the open source utility [PWA Builder](http://www.pwabuilder.com/), you can generate the necessary app wrappers used by the various app stores and manually submit your PWA.
 
 *Note: I invited Jeff back up on stage to walk through building a PWA and submitting it to the Windows Store using PWA Builder.*
 
@@ -272,7 +272,7 @@ We are working on a set of criteria that will help us separate quality PWAs from
 
 Once in the Store, we’ll notify developers of their draft Store entry and they will be able to claim their apps to take complete control of their Store presence. Regardless, whether they got their by passive ingestion or my manual submission, the Web App Manifest will provide the basic set of information used for the app in the Store: name, description, icons, and screenshots. We’re also actively working with others in the W3C to introduce support for [app categories](https://github.com/w3c/manifest/issues/569) and [IARC ratings](https://github.com/w3c/manifest/issues/523).
 
-PWAs will appear alongside native apps in the Store, with no differentiation. From a users’ perspective, a PWA will just be another app. They will install just like any other app. They will have settings just like any other app. They will uninstall just like any other app. They will also be shareable via URL or the Store. PWAs will be first-class apps on Windows.
+PWAs will appear alongside other apps in the Store, with no differentiation. From a users’ perspective, a PWA will just be another app. They will install just like any other app. They will have settings just like any other app. They will uninstall just like any other app. They will also be shareable via URL or the Store. PWAs will be first-class apps on Windows.
 
 <hr>
 
@@ -288,17 +288,17 @@ Phew… that was a lot to take in. At this point, you might have some questions.
 
 **Are Progressive Web Apps the right choice for my project?**
 
-*Maybe.* When evaluating native app development in relation to Progressive Web Apps, here are some of the questions I recommend asking…
+*Maybe.* When evaluating app development in relation to Progressive Web Apps, here are some of the questions I recommend asking…
 
-* Are there native features the Web can’t offer that are critical to the success of this product? 
-* What is the total cost (time and money) of building and maintaining each platform-specific native app? 
-* What are the strengths of my dev team? *or* How easy will it be to assemble a new team with the necessary skills to build each native app as opposed to a PWA?
+* Are there features the Web can’t offer that are critical to the success of this product? 
+* What is the total cost (time and money) of building and maintaining each platform-specific app? 
+* What are the strengths of my dev team? *or* How easy will it be to assemble a new team with the necessary skills to build each app as opposed to a PWA?
 * How critical will immediate app updates (e.g., adding new security features) be?
 
-In other words, the choice between PWA and native should be evaluated on a case-by-case basis. For example…
+In other words, the choice between PWA and a platform-specific app should be evaluated on a case-by-case basis. For example…
 
-* If you are looking to craft an experience that takes full advantage of each platform you release it on and you want to agonize over every UX detail in order to differentiate your product… native *might* be the best choice for you.
-* If you are maintaining a product on multiple native platforms in addition to the Web and they are all largely the same in terms of look & feel and capabilities, it may make more sense to focus all of your efforts on the Web version and go PWA.
+* If you are looking to craft an experience that takes full advantage of each platform you release it on and you want to agonize over every UX detail in order to differentiate your product… an app *might* be the best choice for you.
+* If you are maintaining a product on multiple platforms in addition to the Web and they are all largely the same in terms of look & feel and capabilities, it may make more sense to focus all of your efforts on the Web version and go PWA.
 * If you are planning a brand new product and the Web provides all of the features you need (especially when you also consider the additional APIs provided via the host OS), building a PWA is probably going to be a faster, more cost-effective option. 
 
 **Should I consider Progressive Web Apps as a solid option when developing software for Windows?**
@@ -322,3 +322,5 @@ You probably have more questions. I’ll do my best to answer them in the commen
 <figure class="video-embed video-embed--16x9" id="figure-2017-05-24-14">  
 <iframe src="https://channel9.msdn.com/Events/Build/2017/B8075/player" width="900" height="540" allowFullScreen frameBorder="0"></iframe>
 </figure>
+
+_Note: I no longer use “native” in the context of apps and platforms, but it remains in quoted material._

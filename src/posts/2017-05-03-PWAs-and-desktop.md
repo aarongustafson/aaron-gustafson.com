@@ -24,10 +24,12 @@ Justin again:
 
 Every improvement we can make with flakey mobile networks in mind pays dividends for folks who are using laptops and other devices without a reliable connection. PWAs excel at this.
 
-Ultimately, the quality of the experience is what matters, but it’s not all about the network. As [Alex Russell points out](https://infrequently.org/2016/05/service-workers-and-pwas-its-about-reliable-performance-not-offline/), reliability is also key (and it’s why native software has traditionally had an edge over the Web):
+Ultimately, the quality of the experience is what matters, but it’s not all about the network. As [Alex Russell points out](https://infrequently.org/2016/05/service-workers-and-pwas-its-about-reliable-performance-not-offline/), reliability is also key (and it’s why platform-specific software has traditionally had an edge over the Web):
 
 > Think of it this way: the first load of a native app sucks. It’s gated by an app store and a huge download, but once you get to a point where the app is installed, that up-front cost is amortized across all app starts and none of those starts have a variable delay. Each application start is as fast as the last, no variance. What native apps deliver is reliable performance.
 
 PWAs enable us to provide a consistent experience *and* give us the ability to mitigate network issues, making a big difference for a lot of people regardless of the device they’re using. And once we’ve got that, we can make our products even more useful by tying them in to core system components such as address books, calendar applications, and notifications—many desktop operating systems provide JavaScript hooks for those, some standardized, some proprietary.
 
 I’m quite excited to see where all of this goes. PWAs on the desktop could be a revolution in the software development space, especially given that both [Google](https://developers.google.com/web/updates/2017/02/improved-add-to-home-screen) and [Microsoft](https://blogs.windows.com/msedgedev/2016/07/08/the-progress-of-web-apps/#rzqMVRgqClKq1PxZ.97) are already looking at ways to surface PWAs within their respective app stores. That means that PWAs will not only be viable on Android, but likely also [Chrome OS](https://www.google.com/chromebook/about/) and Windows 10 (including the newly-announced [Windows 10 S](https://www.microsoft.com/en-us/windows/windows-10-s)).
+
+_Note: I no longer use “native” in this context, but it remains in quoted material._

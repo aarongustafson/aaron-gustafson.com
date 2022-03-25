@@ -18,3 +18,5 @@ Another beautifully-eloquent post about the potential perils of [Web Components]
 > Is it just me, or are new web UI technologies continuing to try to solve the wrong problems?
 
 Now, the [Shadow DOM](http://glazkov.com/2011/01/14/what-the-heck-is-shadow-dom/) (and [associated pseudo-elements](https://gist.github.com/webtobesocial/aefd6e25064c08e0cc9a)) should allow us to control the style of these elements. The deeper problem is functionality. Take [the `datalist` for predictive typing](https://html.spec.whatwg.org/multipage/forms.html#the-datalist-element). What if you want fuzzy search instead of initial search when someone types. That’s not supported. This is where Web Components get interesting.
+
+_Note: I no longer use “native” in this context, but it remains in quoted material._
