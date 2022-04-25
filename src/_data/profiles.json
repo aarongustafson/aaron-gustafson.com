@@ -65,5 +65,12 @@
     "title": "View my photos on Flickr",
     "category": "photos",
     "active": false
+  },
+  {
+    "site": "Mastodon",
+    "url": "https://toot.cafe/@aarongustafson",
+    "title": "Follow on Mastodon",
+    "category": "profile",
+    "active": true
   }
 ]
