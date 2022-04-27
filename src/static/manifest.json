@@ -185,5 +185,49 @@
         { "name": "Intervjuer" }
       ]
     }
-  }
+  },
+  "widgets": [
+    {
+      "name": "Latest Posts",
+      "tag": "feed-posts",
+      "template": "feed",
+      "data": "/feeds/latest-posts.json",
+      "type": "application/json",
+      "update": 21600,
+      "actions": [
+        {
+          "action": "refresh",
+          "title": "Refresh"
+        }
+      ],
+      "icons": [
+        {
+          "src": "/i/icons/webicon-rss.svg",
+          "type": "image/svg+xml",
+          "sizes": "48x48"
+        }
+      ]
+    },
+    {
+      "name": "Latest Links",
+      "tag": "feed-links",
+      "template": "feed",
+      "data": "/feeds/latest-links.json",
+      "type": "application/json",
+      "update": 21600,
+      "actions": [
+        {
+          "action": "refresh",
+          "title": "Refresh"
+        }
+      ],
+      "icons": [
+        {
+          "src": "/i/icons/webicon-rss.svg",
+          "type": "image/svg+xml",
+          "sizes": "48x48"
+        }
+      ]
+    }
+  ]
 }
