@@ -74,7 +74,7 @@ Blog Entry
       background-color: $color-off-white;
 
       @media (prefers-color-scheme: dark) {
-        border-color: $color-black
+        border-color: $color-black;
         background-color: $color-grey-dark;
       }
 
