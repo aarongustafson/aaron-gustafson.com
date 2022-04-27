@@ -73,6 +73,11 @@ Blog Entry
       border: 1px solid $color-grey-light;
       background-color: $color-off-white;
 
+      @media (prefers-color-scheme: dark) {
+        border-color: $color-black
+        background-color: $color-grey-dark;
+      }
+
       @include rem( font-size, $font-size-small );
 
       padding: .2em .4em;
