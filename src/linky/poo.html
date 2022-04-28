@@ -109,7 +109,7 @@ sitemap: false
                 <input type="password" id="password" name="password">
               </li>
               <li class="fields__group fields__group--buttons">
-                <button type="submit">Save your credentials</button>
+                <button id="save">Save your credentials</button>
               </li>
             </ul>
             <p>Drag this link to your bookmarks, to post from any webpage: <a href="javascript:(function(){var title = document.getElementsByTagName('title')[0].innerHTML;title = encodeURIComponent(title);var selection = '';if (window.getSelection) {selection = window.getSelection().toString();} else if (document.selection &amp;&amp; document.selection.type != 'Control') {selection = document.selection.createRange().text;}selection = encodeURIComponent(selection);new_window=window.open('{{ site.url }}/linky/poo/?title='+title+'&amp;selection='+selection+'&amp;url='+encodeURIComponent(document.location.href),'LinkyPooPopup','resizable,scrollbars,status=0,toolbar=0,menubar=0,titlebar=0,width=640,height=600,location=0');})();">Linky</a></p>
@@ -181,7 +181,11 @@ sitemap: false
           $title = document.getElementById('p_title'),
           $link = document.getElementById('p_link'),
           $content =  document.getElementById('p_body'),
-          $via_url = document.getElementById('p_via_url');
+          $via_url = document.getElementById('p_via_url'),
+          $username = document.getElementById('username'),
+          $password = document.getElementById('password'),
+          $save = document.getElementById('save'),
+          credentials = window.localStorage.getItem('credentials');
 
       function toYamlFrontmatter(yaml)
       {
@@ -291,7 +295,7 @@ sitemap: false
         XHR.responseType = 'json';
         XHR.setRequestHeader('Accept', 'application/vnd.github.v3+json');
         XHR.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
-        XHR.setRequestHeader('Authorization', 'token ' + document.getElementById('password').value );
+        XHR.setRequestHeader('Authorization', 'token ' + $password.value );
         XHR.addEventListener('load', linkComplete);
         XHR.addEventListener('error', linkFailed);
         XHR.addEventListener('abort', linkCanceled);
@@ -350,6 +354,23 @@ sitemap: false
       if ( referrer != "" )
       {
         $via_url = referrer;
+      }
+
+      // Credentials
+      $save.addEventListener('click',function(e){
+        e.preventDefault();
+        window.localStorage.setItem('credentials', JSON.stringify({
+          'username': document.getElementById('username').value,
+          'password': document.getElementById('password').value
+        }));
+        $messages.innerHTML = '<p>Credentials saved!</p>';
+        $messages.focus();
+      }, false);
+      if ( credentials )
+      {
+        credentials = JSON.parse( credentials );
+        $username.value = credentials.username;
+        $password.value = credentials.password;
       }
 
       // Datalist stuff
