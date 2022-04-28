@@ -206,7 +206,8 @@
           "type": "image/svg+xml",
           "sizes": "48x48"
         }
-      ]
+      ],
+      "ms_ac-template": "/w/feed.ac.json"
     },
     {
       "name": "Latest Links",
@@ -227,7 +228,8 @@
           "type": "image/svg+xml",
           "sizes": "48x48"
         }
-      ]
+      ],
+      "ms_ac-template": "/w/feed.ac.json"
     }
   ]
 }
