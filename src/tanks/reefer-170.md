@@ -51,12 +51,13 @@ gallery:
 
 ### Fish
 
+* Orchid Dottyback (<i class="binomial">Pseudochromis fridmani</i>)
+
 <!--
 * Bluespotted Watchman Goby (<i class="binomial">Cryptocentrus pavoninoides</i>)
--->
 * Melanarus Wrasse (<i class="binomial">Hailichoeres melanurus</i>)
-* Orchid Dottyback (<i class="binomial">Pseudochromis fridmani</i>)
 * Tail Spot Blenny (<i class="binomial">Ecsenius stigmatura</i>)
+-->
 
 ### Inverts
 
@@ -67,14 +68,15 @@ gallery:
 * Marginella Snail (<i class="binomial">Marginella spp.</i>)
 * Money Cowrie (<i class="binomial">Monetaria moneta</i>)
 * Ninja Star Snail (<i class="binomial">Astaea spp.</i>)
-* Peppermint Shrimp (<i class="binomial">Lysmata wurdemanni</i>)
-* Scarlet Hermit Crab (<i class="binomial">Paguristes cadenati</i>) × 3
+* Scarlet Hermit Crabs (<i class="binomial">Paguristes cadenati</i>)
 * Tuxedo Urchins (red) (<i class="binomial">Mespilia globulus</i>) × 2
+* Limpets
 * Assorted snails (trochus, nassarius, strombus)
 * Assorted worms, pods, hermits, snails & such from [Indo-Pacific Sea Farms](https://ipsf.com/)
 * Additional Clean-up Crew (zigzag periwinkles, dwarf planaxis, etc.) from [ReefCleaners](https://www.reefcleaners.org/)
 
 <!--
+* Peppermint Shrimp (<i class="binomial">Lysmata wurdemanni</i>)
 * Blood Red Fire Shrimp (<i class="binomial">Lysmata debelius</i>)
 * Halloween Hermit Crab (<i class="binomial">Ciliopagurus strigatus</i>)
 * Polka Dot Hermit Crab (<i class="binomial">Phimochirus operculatus</i>)
@@ -85,36 +87,36 @@ gallery:
 <dl class="tank__corals">
   <dt>Zoanthids & Palythoas</dt>
   <dd><ul>
-  <li>Belladonna</li>
-  <!--li>Buttmuncher</li-->
+  <!--li>Belladonna</li>
+  <li>Buttmuncher</li-->
   <li>Citrus Cooler</li>
   <li><a href="#i-tanks-devils-armor-zoas-jpg">Devil’s Armor</a></li>
-  <li>Ding Dang People Eater</li>
-  <li>Eagle Eye</li>
+  <!--li>Ding Dang People Eater</li-->
+  <!--li>Eagle Eye</li-->
   <li><a href="#i-tanks-fruit-loop-zoas-jpg">Fruit Loop</a></li>
-  <li>Nirvana</li>
+  <!--li>Nirvana</li-->
   <!--li>Mary Jane</li-->
-  <li>Miami Vice</li>
+  <!--li>Miami Vice</li-->
   <li><a href="#i-tanks-oxide-zoas-jpg">Oxide</a></li>
   <li>Pink Diamond</li>
   <li>Pink Krakatoa</li>
   <li><a href="#i-tanks-pink-zipper-zoas-jpg">Pink Zipper</a></li>
-  <li><a href="#i-tanks-rainbow-incinerator-zoas-jpg">Rainbow Incinerator</a></li>
-  <li>Rainbow Hornet</li>
+  <!--li><a href="#i-tanks-rainbow-incinerator-zoas-jpg">Rainbow Incinerator</a></li-->
+  <!--li>Rainbow Hornet</li-->
   <li><a href="#i-tanks-rasta-zoas-jpg">Rasta</a></li>
   <li>Tubb’s Blue</li>
-  <li>Ultra Chaos</li>
-  <li>Unnamed Green</li>
-  <li>King Midas</li>
+  <!--li>Ultra Chaos</li-->
+  <!--li>Unnamed Green</li-->
+  <!--li>King Midas</li-->
   <li>Vampire in Drag</li>
-  <li><a href="#i-tanks-halle-berry-zoas-jpg">WWC Halle Berry</a></li>
+  <!--li><a href="#i-tanks-halle-berry-zoas-jpg">WWC Halle Berry</a></li-->
   <li>WWC Now & Later Gator</li>
   </ul></dd>
   <dt>Other</dt>
   <dd><ul>
-  <li><a href="#i-tanks-lemon-lime-clove-jpg">Lemon-lime Clove Polyps</a></li>
+  <!--li><a href="#i-tanks-lemon-lime-clove-jpg">Lemon-lime Clove Polyps</a></li-->
   <li>Golden <i class="binomial">Ricordea yuma</i></li>
-  <li>Rainbow <i class="binomial">Ricordea yuma</i></li>
+  <!--li>Rainbow <i class="binomial">Ricordea yuma</i></li-->
   </ul></dd>
 </dl>
 
@@ -123,23 +125,24 @@ gallery:
 <dl class="tank__corals" id="corals">
   <dt>Acropora</dt>
   <dd><ul>
-  <li>ASD Rainbow Millepora (<i class="binomial">Acropora millepora</i>)</li>
-  <li>Bali Green Slimer (<i class="binomial">Acropora yongei</i>)</li>
+  <!--li>ASD Rainbow Millepora (<i class="binomial">Acropora millepora</i>)</li-->
+  <!--li>Bali Green Slimer (<i class="binomial">Acropora yongei</i>)</li-->
   <li>Big R Corals Walt Disney (<i class="binomial">Acropora tenuis</i>)</li>
   <li>Golden Basket Diva (<i class="binomial">Acropora spathulata</i>)</li>
   <li>Golden Basket Inferno (<i class="binomial">Acropora spathulata</i>)</li>
   <li>ORA Cali Tort (<i class="binomial">Acropora tortuosa</i>)</li>
-  <li>ORA Oregon Tort (<i class="binomial">Acropora tortuosa</i>)</li>
+  <!--li>ORA Oregon Tort (<i class="binomial">Acropora tortuosa</i>)</li-->
   <li>Pro Corals (PC) Rainbow (<i class="binomial">Acropora convexa</i>)</li>
-  <li>Reef Raft (RR) Orange Passion (<i class="binomial">Acropora tenuis</i>)</li>
-  <li>Tyree Pink Lemonade (<i class="species">Acropora spp.</i>)</li>
+  <!--li>Reef Raft (RR) Orange Passion (<i class="binomial">Acropora tenuis</i>)</li-->
+  <!--li>Tyree Pink Lemonade (<i class="species">Acropora spp.</i>)</li-->
   <li>Tyree Tierra del Fuego (<i class="binomial">Acropora anthocercis</i>)</li>
-  <li>Unnamed Millepora (<i class="binomial">Acropora millepora</i>)</li>
+  <!--li>Unnamed Millepora (<i class="binomial">Acropora millepora</i>)</li-->
   </ul></dd>
   <dt>Blastomussa</dt>
   <dd><ul>
   <li><a href="#i-tanks-blastomussa-merletti-jpg">Ultra Corals (UC) Blue Raven (<i class="binomial">Blastomussa merletti</i>)</a></li>
   <li>Superman (<i class="binomial">Blastomussa merletti</i>)</li>
+  <li>Unnamed rainbow (<i class="binomial">Blastomussa merletti</i>)</li>
   </ul></dd>
   <dt>Fungia</dt>
   <dd><ul>
@@ -176,7 +179,7 @@ gallery:
   <dt>Montipora</dt>
   <dd><ul>
   <li>ORA Spongedes (<i class="binomial">Montipora spongedes</i>)</li>
-  <li>Bubblegum Digitata (<i class="binomial">Montipora digitata</i>)</li>
+  <!--li>Bubblegum Digitata (<i class="binomial">Montipora digitata</i>)</li-->
   </ul></dd>
   <dt>Miscellaneous</dt>
   <dd><ul>
