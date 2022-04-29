@@ -315,7 +315,7 @@
     {% if forloop.first %}
       <span class="post__tags">
     {% endif %}
-    <a class="post__tag" href="/tags/{{ tag | lower | slug }}/">{{ tag | widont }}</a>
+    <a class="post__tag" href="/tags/{{ tag | lower | slugify }}/">{{ tag | widont }}</a>
     {% if forloop.last %}
       </span>
     {% endif %}

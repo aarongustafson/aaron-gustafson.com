@@ -3,7 +3,7 @@ pagination:
   data: collections.tags
   size: 1
   alias: tag
-permalink: "/feeds/{{ tag | lower | slug }}.xml"
+permalink: "/feeds/{{ tag | lower | slugify }}.xml"
 eleventyComputed:
   title: "{{ tag }}"
   description: "The latest 20 posts and links tagged {{ tag }}."

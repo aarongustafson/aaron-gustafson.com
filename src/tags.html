@@ -3,7 +3,7 @@ pagination:
   data: collections.tags
   size: 1
   alias: tag
-permalink: "/tags/{{ tag | lower | slug }}/"
+permalink: "/tags/{{ tag | lower | slugify }}/"
 eleventyComputed:
   title: "Browse by Tag: {{ tag }}"
 showPageNumbers: false
