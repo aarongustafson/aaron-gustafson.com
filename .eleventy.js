@@ -16,7 +16,6 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const imagesResponsiver = require("eleventy-plugin-images-responsiver");
 const readingTime = require('eleventy-plugin-reading-time');
 const { series } = require("gulp");
-const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 module.exports = config => {
 
@@ -48,8 +47,11 @@ module.exports = config => {
   // Passthru
   config.addPassthroughCopy({ "src/static": "/" });
 
+  // Upgrade Helper
+  //const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
+  //config.addPlugin(UpgradeHelper);
+  
   // Plugins
-  config.addPlugin(UpgradeHelper);
   config.addPlugin(pluginSEO, require("./src/_data/seo.json"));
   config.addPlugin(svgContents);
   config.addPlugin(embedEverything, {
