@@ -7,6 +7,7 @@ const markdown_options = {
   typographer: true,
   breaks: false
 };
+const anchor = require('markdown-it-anchor');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const svgContents = require("eleventy-plugin-svg-contents");
 const embedEverything = require("eleventy-plugin-embed-everything");
@@ -25,7 +26,11 @@ module.exports = config => {
 
   // Markdown
   let md = markdownIt(markdown_options)
-             .use(require("markdown-it-anchor"),{permalink: true})
+             .use( anchor, {
+               permalink: anchor.permalink.ariaHidden({
+                 placement: 'before'
+               })
+              })
              .use(require("markdown-it-attrs"))
              .use(require('markdown-it-footnote'));
   config.setLibrary( "md", md );

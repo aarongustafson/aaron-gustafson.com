@@ -7,7 +7,7 @@
 
     h1, h2, h3, h4, h5, h6 {
 
-        clear: both;
+      clear: both;
 
       font-family: $font-stack-serif;
       font-weight: $font-weight-serif-bold;
@@ -19,6 +19,17 @@
       
       & + * {
           @include rem( margin-top, math.div( $default-spacing, 2 ) );
+      }
+
+      & > a.header-anchor {
+        position: absolute;
+        margin-left: -2rem;
+        width: 100%;
+        text-decoration: none !important;
+        background: transparent !important;
+      }
+      &:hover > a.header-anchor {
+        display: inline-block;
       }
 
     }
@@ -39,6 +50,10 @@
 }
 
 @include breakup-breakpoint( "print" ) {
+
+    a.header-anchor {
+      display: none;
+    }
 
     h1, h2, h3, h4, h5, h6 {
       page-break-inside: avoid;
