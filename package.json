@@ -58,7 +58,6 @@
     "markdown-it-attrs": "^4.1.3",
     "markdown-it-footnote": "^3.0.3",
     "merge-stream": "^2.0.0",
-    "netlify-cli": "^10.1.0",
     "netlify-plugin-cache-folder": "0.0.8",
     "node-fetch": "^2.6.7",
     "sass": "^1.51.0",
@@ -66,5 +65,7 @@
     "uglify-es": "^3.3.9",
     "widont": "^0.3.3"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "netlify-cli": "^10.1.0"
+  }
 }
