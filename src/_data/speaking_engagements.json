@@ -1,5 +1,12 @@
 [
   {
+    "id": 146,
+    "title": "Microsoft Build",
+    "date": "2022-05-24 00:09:00 -0800",
+    "location": "Online",
+    "url": "https://mybuild.microsoft.com/en-US/home"
+  },
+  {
     "id": 145,
     "title": "Amsterdam University Of Applied Sciences",
     "date": "2022-03-24 00:09:00 -0800",
