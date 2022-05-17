@@ -70,6 +70,16 @@
   ],
   "articles": [
     {
+      "title": "Almost (Standards) Doesn’t Count",
+      "author": "History of the Web",
+      "url": "https://thehistoryoftheweb.com/almost-standards-doesnt-count/"
+    },
+    {
+      "title": "A Short History of WaSP and Why Web Standards Matter",
+      "author": "Jay Hoffman, History of the Web",
+      "url": "https://thehistoryoftheweb.com/a-short-history-of-wasp-and-why-web-standards-matter/"
+    },
+    {
       "title": "Styling buttons to look like links",
       "author": "Natalie Downe",
       "url": "https://blog.natbat.net/post/46614475051/styling-buttons-as-links"
