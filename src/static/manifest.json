@@ -207,7 +207,7 @@
           "sizes": "48x48"
         }
       ],
-      "ms_ac-template": "/w/feed.ac.json"
+      "ms_ac_template": "/w/feed.ac.json"
     },
     {
       "name": "Latest Links",
@@ -229,7 +229,7 @@
           "sizes": "48x48"
         }
       ],
-      "ms_ac-template": "/w/feed.ac.json"
+      "ms_ac_template": "/w/feed.ac.json"
     }
   ]
 }
