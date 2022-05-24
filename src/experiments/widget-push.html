@@ -1,0 +1,94 @@
+---
+layout: "page"
+title: "Experiments with Push and Widgets"
+description: "This is just a personal experiment."
+body_class: "experiment"
+show_title: false
+show_sidebar: false
+show_footer: false
+sharing: false
+sitemap: false
+---
+
+<h1>Push Experiment</h1>
+
+<div id="controls"></div>
+
+<output id="results"></output>
+
+<script>
+
+var $button   = document.createElement('button'),
+    $request  = $button.cloneNode(),
+    $test     = $button.cloneNode(),
+    $testsw   = $button.cloneNode(),
+    $controls = document.getElementById('controls'), 
+    $results  = document.getElementById('results');
+
+$request.innerText = 'Request Notification Permission';
+$request.addEventListener('click',function(){
+  if ( ! $request.disabled )
+  {
+    Notification.requestPermission(checkStatus);
+  }
+});
+$controls.appendChild($request);
+
+$test.innerText = 'Test Notification';
+$test.addEventListener('click',function(){
+  console.log('click');
+  var notice = new Notification('Hello from in-page notification');
+});
+$controls.appendChild($test);
+
+$testsw.innerText = 'Test SW Notification';
+$testsw.addEventListener('click',function(){
+  console.log('click');
+  if ( ! $test.disabled )
+  {
+    navigator.serviceWorker.getRegistration().then(function(reg) {
+      console.log('found the registration');
+      var options = {
+        body: 'Here is a notification body!',
+        icon: '/i/notification-icon.png',
+        vibrate: [100, 50, 100],
+        data: {
+          dateOfArrival: Date.now(),
+          primaryKey: 1
+        }
+      };
+      console.log('notifying');
+      reg.showNotification('Hello world!', options);
+    });
+  }
+});
+$controls.appendChild($testsw);
+
+function checkStatus( status ){
+  var message = 'Notification permission status: ';
+  if ( ! status )
+  {
+    status = Notification.permission;
+    message += status + ' previously';
+  }
+  else
+  {
+    message += status + ' by user';
+  }
+  $results.innerText += message + "\r";
+  if ( status == 'granted' )
+  {
+    $request.disabled = true;
+    $test.disabled = false;
+    $testsw.disabled = false;
+  }
+  else
+  {
+    $request.disabled = false;
+    $test.disabled = true;
+    $testsw.disabled = true;
+  }
+}
+
+checkStatus();
+</script>
