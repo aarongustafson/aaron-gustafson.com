@@ -7,7 +7,8 @@
     "start": "gulp && concurrently 'gulp watch' 'npx eleventy --serve --quiet'",
     "prebuild": "gulp prebuild",
     "build": "NODE_ENV=production npx eleventy --quiet",
-    "postbuild": "gulp postbuild"
+    "postbuild": "gulp postbuild",
+    "start-netlify": "netlify dev"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,7 @@
     "eleventy-plugin-reading-time": "0.0.1",
     "eleventy-plugin-seo": "^0.5.2",
     "eleventy-plugin-svg-contents": "^0.7.0",
+    "faunadb": "^4.5.4",
     "front-matter": "^4.0.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -58,6 +60,7 @@
     "markdown-it-attrs": "^4.1.3",
     "markdown-it-footnote": "^3.0.3",
     "merge-stream": "^2.0.0",
+    "netlify-lambda": "^2.0.15",
     "netlify-plugin-cache-folder": "0.0.8",
     "node-fetch": "^2.6.7",
     "sass": "^1.51.0",
