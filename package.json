@@ -66,6 +66,7 @@
     "sass": "^1.51.0",
     "trim-newlines": "^4.0.2",
     "uglify-es": "^3.3.9",
+    "web-push": "^3.5.0",
     "widont": "^0.3.3"
   },
   "devDependencies": {
