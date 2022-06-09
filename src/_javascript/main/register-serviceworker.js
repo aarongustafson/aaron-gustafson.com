@@ -2,10 +2,10 @@
   // Register the service worker
   if ( "serviceWorker" in navigator )
   {
-    window.sw_version = "v8:";
+    window.sw_version = "v9:";
 
     window.addEventListener('load', function() {
-      navigator.serviceWorker.register( "/serviceworker.min.js" );
+      navigator.serviceWorker.register( "/serviceworker.js" );
 
       // Store page names & descriptions
       if ( ! /\/notebook\/.+/.test( window.location ) )

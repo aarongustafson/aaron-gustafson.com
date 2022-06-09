@@ -3,6 +3,18 @@
 
 const periodicSync = self.registration.periodicSync;
 
+function updateWidgets( host_id )
+{
+  const config = host ? { hostId: host_id }
+                      : { installed: true };
+  widgets.matchAll( config )
+    .then(widgetList => {
+      for (let i = 0; i < widgetList.length; i++) {
+        updateWidget( widgetList[i] );
+      }
+    });
+}
+
 function updateWidget( widget )
 {
   // Widgets with settings should be updated on a per-instance level
@@ -111,12 +123,7 @@ self.addEventListener("widgetclick", function(event) {
       console.log("resuming all widgets");
       event.waitUntil(
         // refresh the data on each widget
-        widgets.matchAll({ host: host_id })
-          .then(function(widgetList) {
-            for (let i = 0; i < widgetList.length; i++) {
-              updateWidget( widgetList[i] );
-            }
-          })
+        updateWidgets( host_id )
       );
       break;
 
