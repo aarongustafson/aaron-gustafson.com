@@ -23,5 +23,5 @@ src/static/serviceworker*
 # old jekyll stuff
 todo
 
-# Local Netlify folder
-.netlify
+# Local Netlify cache folder
+.netlify/cache
