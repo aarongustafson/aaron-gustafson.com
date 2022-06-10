@@ -16,9 +16,8 @@ noindex: true
 
 <div id="wb404"></div>
 <script src="https://archive.org/web/wb404.js"></script>
-<script>(function(query){
-  if ( query != "" ) {
-    var link = document.getElementById("ia");
-    link.href = link.href + query.replace(/\?url=/, "");
+<script>(function(location){
+  var link = document.getElementById("ia");
+  link.href = link.href + location.pathname;
   }
-})(this.location.search)</script>
+})(this.location)</script>
