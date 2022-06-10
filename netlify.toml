@@ -16,11 +16,7 @@
   to = "/.netlify/functions/:splat"
   status = 200
 [[redirects]]
-  from = "/notebook/links/:slug"
-  to = "/notebook/links/:slug"
-  status = 200
-[[redirects]]
-  from = "/notebook/:year/:slug"
+  from = "/notebook/20*/:slug"
   to = "/notebook/:slug"
   status = 301
   force = true
