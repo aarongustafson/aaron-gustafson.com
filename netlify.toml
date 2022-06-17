@@ -6,15 +6,13 @@
   framework = "eleventy"
   publish = "dist"
 
+
 [[plugins]]
   package = "netlify-plugin-cache-folder"
 [[plugins]]
   package = "./plugins/persist-static-directory"
 
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
+
 [[redirects]]
   from = "/notebook/20*/:slug"
   to = "/notebook/:slug"
@@ -40,7 +38,6 @@
   to = "/404.html?url=:splat"
   status = 404
   force = false
-
 
 
 [[headers]]
@@ -74,3 +71,7 @@
   [headers.values]
   Cache-Control = "max-age=0"
 
+
+[[edge_functions]]
+  path = "/api/latest-links"
+  function = "latest-links"

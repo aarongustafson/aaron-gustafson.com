@@ -1,5 +1,5 @@
 // Server Event: Deploy Successful
-const deployedEvent = new EventSource('/.netlify/functions/deploy-succeeded');
+const deployedEvent = new EventSource('/api/latest-links');
 deployedEvent.addEventListener('message', function (event) {
 
   var message = JSON.parse(event.data);

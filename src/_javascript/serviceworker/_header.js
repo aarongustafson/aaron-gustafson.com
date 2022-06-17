@@ -71,7 +71,7 @@ const version = "v9:", // be sure to update ../main/register-serviceworker.js to
       };
 
 let slow_connection = false,
-save_data;
+    save_data;
 
 if ( 'connection' in navigator )
 {
