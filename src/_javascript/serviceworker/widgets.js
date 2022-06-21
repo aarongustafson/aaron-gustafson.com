@@ -8,32 +8,32 @@ self.widgets = function() {
   var _widgets = [{
     definition: {
       tag: "foo",
-      data: "https://aaron-gustafson.com/feeds/all.json",
+      data: "https://aaron-gustafson.com/feeds/all.json"
     },
     installable: true,
     instances: [{
       id: "foo-instance-1",
-      hostId: "host-1",
-    }],
+      hostId: "host-1"
+    }]
   },
   {
     definition: {
       tag: "bar",
-      data: "https://aaron-gustafson.com/feeds/latest-links.json",
+      data: "https://aaron-gustafson.com/feeds/latest-links.json"
     },
     installable: true,
     instances: [{
       id: "bar-instance-1",
-      hostId: "host-1",
-    }],
+      hostId: "host-1"
+    }]
   },
   {
     definition: {
       tag: "baz",
-      data: "https://aaron-gustafson.com/feeds/latest-posts.json",
+      data: "https://aaron-gustafson.com/feeds/latest-posts.json"
     },
     installable: false,
-    instances: [],
+    instances: []
   }];
   
   async function matchAll( obj )
@@ -62,31 +62,32 @@ self.widgets = function() {
       }
       return result;
     });
-  };
+  }
   async function getByHostId( host_id ) 
   {
     const result = await matchAll({ hostId: host_id });
     console.log("getByHostId",result);
     return result;
-  };
+  }
   async function getByInstanceId( instance_id )
   {
     const result = await matchAll({ instanceId: instance_id });
     console.log("getByInstanceId", result, result[0]);
     return result[0];
-  };
+  }
   async function getByTag( tag )
   {
     const result = await matchAll({ tag: tag });
     console.log("getByTag", result, result[0]);
     return result[0];
-  };
+  }
 
-  const updateInstance = ( instance, payload ) => {
+  function updateInstance( instance, payload )
+  {
     instance.updated = Date.now();
     instance.payload = payload;
     return;
-  };
+  }
   async function updateByInstanceId( instance_id, payload )
   {
     getByInstanceId( instance_id )
@@ -96,7 +97,7 @@ self.widgets = function() {
         updateInstance( instance, payload );
         return;
       });
-  };
+  }
   async function updateByTag( tag, payload )
   {
     getByTag( tag )
@@ -107,7 +108,7 @@ self.widgets = function() {
           return;
         });
       });
-  };
+  }
 
   async function removeByInstanceId( instance_id )
   {
@@ -117,7 +118,7 @@ self.widgets = function() {
         widget.instances = widget.instances.filter( i => i.id !== instance_id );
         return;
       });
-  };
+  }
 
   return {
     matchAll: matchAll,
@@ -229,7 +230,10 @@ async function updateInstance( instance, widget )
   {
     opts = {
       method: "POST",
-      body: settings_data
+      body: settings_data,
+      headers: {
+        contentType: "multipart/form-data"
+      }
     }
   }
   fetch( widget.definition.data, opts )
@@ -240,7 +244,7 @@ async function updateInstance( instance, widget )
         settings: instance.settings
       };
       console.log( payload, instance );
-      await widgets.updateByInstanceId( instance.id, payload );
+      widgets.updateByInstanceId( instance.id, payload );
     });
   return;
 }

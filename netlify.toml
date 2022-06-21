@@ -71,7 +71,7 @@
   [headers.values]
   Cache-Control = "max-age=0"
 [[headers]]
-  for = "/feeds/*"
+  for = "/feeds/*.json"
   [headers.values]
   Access-Control-Allow-Origin = "*"
 
