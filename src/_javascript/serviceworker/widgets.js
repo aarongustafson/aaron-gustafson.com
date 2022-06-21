@@ -1,15 +1,14 @@
 // Widgets are still experimental
 // More: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PWAWidgets/README.md
 
-const { result } = require("lodash");
-
 const periodicSync = self.registration.periodicSync;
 
 // mocking widgets
 self.widgets = function() {
   var _widgets = [{
     definition: {
-      tag: "foo"
+      tag: "foo",
+      data: "https://aaron-gustafson.com/feeds/all.json",
     },
     installable: true,
     instances: [{
@@ -19,7 +18,8 @@ self.widgets = function() {
   },
   {
     definition: {
-      tag: "bar"
+      tag: "bar",
+      data: "https://aaron-gustafson.com/feeds/latest-links.json",
     },
     installable: true,
     instances: [{
@@ -29,7 +29,8 @@ self.widgets = function() {
   },
   {
     definition: {
-      tag: "baz"
+      tag: "baz",
+      data: "https://aaron-gustafson.com/feeds/latest-posts.json",
     },
     installable: false,
     instances: [],
@@ -129,10 +130,11 @@ self.widgets = function() {
   };
 };
 
-const registerPeriodicSync = async ( widget ) => {
+async function registerPeriodicSync( widget )
+{
   // if the widget is set up to auto-update…
   if ( "update" in widget.definition ) {
-    return registration.periodicSync.getTags()
+    registration.periodicSync.getTags()
       .then( tags => {
         // only one registration per tag
         if ( ! tags.includes( widget.definition.tag ) ) {
@@ -143,9 +145,10 @@ const registerPeriodicSync = async ( widget ) => {
       });
   }
   return;
-};
+}
 
-const unregisterPeriodicSync = async ( widget ) => {
+async function  unregisterPeriodicSync( widget )
+{
   // clean up periodic sync?
   if ( widget.instances.length === 1 &&
        "update" in widget.definition )
@@ -153,37 +156,44 @@ const unregisterPeriodicSync = async ( widget ) => {
     periodicSync.unregister( widget.definition.tag );
   }
   return;
-};
+}
 
-const createInstance = async ( instance_id, widget ) => {
-  // get the data needed
-  return updateInstance( instance_id, widget )
-    .then( registerPeriodicSync( widget ) );
-};
+async function createInstance( instance_id, widget )
+{
+  updateInstance( instance_id, widget )
+    .then(() => {
+      registerPeriodicSync( widget );
+    });
+  return;
+}
 
-const updateWidgets = async ( host_id ) => {
+async function updateWidgets( host_id )
+{
   const config = host ? { hostId: host_id }
                       : { installed: true };
-  return widgets.matchAll( config )
+  widgets.matchAll( config )
     .then(async widgetList => {
       for (let i = 0; i < widgetList.length; i++) {
         updateWidget( widgetList[i] );
       }
     });
-};
+  return;
+}
 
-const updateWidget = async ( widget ) => {
+async function updateWidget( widget )
+{
   // Widgets with settings should be updated on a per-instance level
   if ( widget.hasSettings )
   {
-    return widget.instances.map( async (instance) => {
+    widget.instances.map( async (instance) => {
       updateInstance( instance, widget );
     });
+    return;
   }
   // other widgets can be updated en masse via their tags
   else
   {
-    return fetch( widget.definition.data )
+    fetch( widget.definition.data )
       .then( response => {
         let payload = {
           template: widget.definition.template,
@@ -191,42 +201,59 @@ const updateWidget = async ( widget ) => {
         };
         widgets.updateByTag( widget.definition.tag, payload );
       });
+    return;
   }
-};
+}
 
-const updateInstance = async ( instance, widget ) => {
+async function updateInstance( instance, widget )
+{
   // If we only get an instance id, get the instance itself
   if ( typeof instance === "string" ) {
+    let instance_id = instance;
     instance = widget.instances.find( i => i.id === instance );
+    if ( instance ) {
+      instance = { id: instance_id };
+      widget.instances.push( instance );
+    }
+    console.log(instance, widget);
   }
-  if ( ! "settings" in instance ) {
+  if ( !instance.settings ) {
     instance.settings = {};
   }
   let settings_data = new FormData();
   for ( let key in instance.settings ) {
     settings_data.append(key, instance.settings[key]);
   }
-  return fetch( widget.data, {
+  let opts = {};
+  if (  settings_data.length > 0 )
+  {
+    opts = {
       method: "POST",
       body: settings_data
-    })
+    }
+  }
+  fetch( widget.definition.data, opts )
     .then( response => {
       let payload = {
         template: widget.definition.template,
         data: response.body,
         settings: instance.settings
       };
-      widgets.updateByInstanceId( instance.id, payload );
+      console.log( payload, instance );
+      await widgets.updateByInstanceId( instance.id, payload );
     });
-};
+  return;
+}
 
-const removeInstance = async ( instance_id, widget ) => {
+async function removeInstance( instance_id, widget )
+{
   console.log( `uninstalling ${widget.definition.name} instance ${instance_id}` );
-  return unregisterPeriodicSync( widget )
+  unregisterPeriodicSync( widget )
     .then(() => {
       widgets.removeByInstanceId( instance_id );
     });
-};
+  return;
+}
 
 self.addEventListener("widgetclick", function(event) {
 
