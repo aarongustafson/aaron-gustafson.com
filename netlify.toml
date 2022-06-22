@@ -75,7 +75,7 @@
   [headers.values]
   Access-Control-Allow-Origin = "*"
   Access-Control-Allow-Methods = "GET,HEAD,OPTIONS,POST"
-  Access-Control-Allow-Headers = "Accept,X-Requested-With,Content-Type,Cache-Control"
+  Access-Control-Allow-Headers = "Accept,X-Requested-With,Content-Type,Cache-Control,mode"
 
 [[edge_functions]]
   path = "/api/latest-links"
