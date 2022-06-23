@@ -4,11 +4,13 @@
 const periodicSync = self.registration.periodicSync;
 
 // mocking widgets
-self.widgets = function() {
+const WidgetsInterface = function() {
   var _widgets = [{
     definition: {
       tag: "foo",
-      data: "https://aaron-gustafson.com/feeds/all.json"
+      template: "feed",
+      data: "https://www.aaron-gustafson.com/feeds/all.json",
+      type: "application/json"
     },
     installable: true,
     instances: [{
@@ -19,7 +21,9 @@ self.widgets = function() {
   {
     definition: {
       tag: "bar",
-      data: "https://aaron-gustafson.com/feeds/latest-links.json"
+      template: "feed",
+      data: "https://www.aaron-gustafson.com/feeds/latest-links.json",
+      type: "application/json"
     },
     installable: true,
     instances: [{
@@ -30,7 +34,9 @@ self.widgets = function() {
   {
     definition: {
       tag: "baz",
-      data: "https://aaron-gustafson.com/feeds/latest-posts.json"
+      template: "feed",
+      data: "https://www.aaron-gustafson.com/feeds/latest-posts.json",
+      type: "application/json"
     },
     installable: false,
     instances: []
@@ -65,58 +71,63 @@ self.widgets = function() {
   }
   async function getByHostId( host_id ) 
   {
-    const result = await matchAll({ hostId: host_id });
-    console.log("getByHostId",result);
-    return result;
+    return matchAll({ hostId: host_id });
   }
   async function getByInstanceId( instance_id )
   {
     const result = await matchAll({ instanceId: instance_id });
-    console.log("getByInstanceId", result, result[0]);
-    return result[0];
+    return Promise.resolve( result[0] );
   }
   async function getByTag( tag )
   {
     const result = await matchAll({ tag: tag });
-    console.log("getByTag", result, result[0]);
-    return result[0];
+    return Promise.resolve( result[0] );
   }
 
-  function updateInstance( instance, payload )
-  {
+  // This takes the place of internal logic in the browser
+  const _updateInstance = ( instance, payload ) => {
     instance.updated = Date.now();
     instance.payload = payload;
+    _widgets.forEach( (_widget, w) => {
+      _widget.instances.forEach( (_instance, i) => {
+        if ( _instance.id === instance.id )
+        {
+          _widgets[w].instances[i] = instance;
+        }
+      });
+    });
     return;
-  }
+  };
   async function updateByInstanceId( instance_id, payload )
   {
-    getByInstanceId( instance_id )
+    await getByInstanceId( instance_id )
       .then( widget => {
-        console.log("widget", widget);
         let instance = widget.instances.find( i => i.id === instance_id );
-        updateInstance( instance, payload );
-        return;
+        _updateInstance( instance, payload );
       });
   }
   async function updateByTag( tag, payload )
   {
-    getByTag( tag )
+    await getByTag( tag )
       .then( widget => {
-        console.log("widget", widget);
-        widget.instances.forEach( instance => {
-          updateInstance( instance, payload );
-          return;
-        });
+        widget.instances.forEach(
+          instance => _updateInstance( instance, payload )
+        );
       });
   }
 
   async function removeByInstanceId( instance_id )
   {
-    getByInstanceId( instance_id )
+    await getByInstanceId( instance_id )
       .then( widget => {
-        console.log("widget", widget);
         widget.instances = widget.instances.filter( i => i.id !== instance_id );
-        return;
+      });
+  }
+  async function removeByTag( tag )
+  {
+    await getByTag( tag )
+      .then( widget => {
+        widget.instances = [];
       });
   }
 
@@ -128,8 +139,10 @@ self.widgets = function() {
     updateByInstanceId: updateByInstanceId,
     updateByTag: updateByTag,
     removeByInstanceId: removeByInstanceId,
+    removeByTag: removeByTag
   };
 };
+const widgets = new WidgetsInterface();
 
 async function registerPeriodicSync( widget )
 {
@@ -161,7 +174,7 @@ async function  unregisterPeriodicSync( widget )
 
 async function createInstance( instance_id, widget )
 {
-  updateInstance( instance_id, widget )
+  await updateInstance( instance_id, widget )
     .then(() => {
       registerPeriodicSync( widget );
     });
@@ -170,14 +183,17 @@ async function createInstance( instance_id, widget )
 
 async function updateWidgets( host_id )
 {
-  const config = host ? { hostId: host_id }
-                      : { installed: true };
-  widgets.matchAll( config )
+  const config = host_id ? { hostId: host_id }
+                         : { installed: true };
+  
+  let queue = [];
+  await widgets.matchAll( config )
     .then(async widgetList => {
       for (let i = 0; i < widgetList.length; i++) {
-        updateWidget( widgetList[i] );
+        queue.push(updateWidget( widgetList[i] ));
       }
     });
+  await Promise.all(queue);
   return;
 }
 
@@ -186,21 +202,29 @@ async function updateWidget( widget )
   // Widgets with settings should be updated on a per-instance level
   if ( widget.hasSettings )
   {
+    let queue = [];
     widget.instances.map( async (instance) => {
-      updateInstance( instance, widget );
+      queue.push(updateInstance( instance, widget ));
     });
+    await Promise.all(queue);
     return;
   }
   // other widgets can be updated en masse via their tags
   else
   {
-    fetch( widget.definition.data )
-      .then( response => {
+    let opts = { headers: {} };
+    if ( "type" in widget.definition )
+    {
+      opts.headers.accept = widget.definition.type;
+    }
+    await fetch( widget.definition.data, opts )
+      .then( response => response.text() )
+      .then( data => {
         let payload = {
           template: widget.definition.template,
-          data: response.body
+          data: data
         };
-        widgets.updateByTag( widget.definition.tag, payload );
+        self.widgets.updateByTag( widget.definition.tag, payload );
       });
     return;
   }
@@ -234,16 +258,20 @@ async function updateInstance( instance, widget )
       headers: {
         contentType: "multipart/form-data"
       }
-    }
+    };
   }
-  fetch( widget.definition.data, opts )
-    .then( response => {
+  if ( "type" in widget.definition )
+  {
+    opts.headers.accept = widget.definition.type;
+  }
+  await fetch( widget.definition.data, opts )
+    .then( response => response.text() )
+    .then( data => {
       let payload = {
         template: widget.definition.template,
-        data: response.body,
+        data: data,
         settings: instance.settings
       };
-      console.log( payload, instance );
       widgets.updateByInstanceId( instance.id, payload );
     });
   return;
