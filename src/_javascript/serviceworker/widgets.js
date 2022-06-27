@@ -224,7 +224,7 @@ async function updateWidget( widget )
           template: widget.definition.template,
           data: data
         };
-        self.widgets.updateByTag( widget.definition.tag, payload );
+        widgets.updateByTag( widget.definition.tag, payload );
       });
     return;
   }
@@ -297,7 +297,7 @@ self.addEventListener("widgetclick", function(event) {
   switch ( action ) {
     
     // If a widget is being installed
-    case "WidgetInstall":
+    case "widget-install":
       console.log("installing", widget, instance_id);
       event.waitUntil(
         createInstance( instance_id, widget )
@@ -305,14 +305,14 @@ self.addEventListener("widgetclick", function(event) {
       break;
     
     // If a widget is being uninstalled
-    case "WidgetUninstall":
+    case "widget-uninstall":
       event.waitUntil(
         removeInstance( instance_id, widget )
       );
       break;
 
     // If a widget host is requesting all its widgets update
-    case "WidgetResume":
+    case "widget-resume":
       console.log("resuming all widgets");
       event.waitUntil(
         // refresh the data on each widget
