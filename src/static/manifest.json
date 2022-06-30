@@ -58,31 +58,6 @@
       "sizes": "16x16"
     }
   ],
-  "user_preferences": {
-    "color_scheme_dark": {
-      "background_color": "#5b5b5b",
-      "icons": [
-        {
-          "src": "/i/icon.svg",
-          "type": "image/svg+xml",
-          "sizes": "512x512",
-          "purpose": "any monochrome maskable"
-        },
-        {
-          "src": "/i/icon-reverse.png",
-          "type": "image/png",
-          "sizes": "512x512",
-          "purpose": "any monochrome maskable"
-        },
-        {
-          "src": "/i/notification-icon-reverse.png",
-          "type": "image/png",
-          "sizes": "256x256",
-          "purpose": "any monochrome maskable"
-        }
-      ]
-    }
-  },
   "scope": "/",
   "scope_extensions": [{ "origin": "*.aaron-gustafson.com" }],
   "handle_links": "all",
@@ -175,17 +150,6 @@
       ]
     }
   ],
-  "translations": {
-    "no": {
-      "description": "Aaron Gustafsons hjem og arbeid på nettet.",
-      "shortcuts": [
-        { "name": "Notisbok" },
-        { "name": "Snakker" },
-        { "name": "Publikasjoner" },
-        { "name": "Intervjuer" }
-      ]
-    }
-  },
   "widgets": [
     {
       "name": "Latest Posts",
@@ -231,5 +195,24 @@
       ],
       "ms_ac_template": "/w/feed.ac.json"
     }
-  ]
+  ],
+  "overrides": {
+    "(prefers-color-scheme: dark)": {
+      "background_color": "#5b5b5b",
+      "icons": [
+        { "src": "/i/icon.svg" },
+        { "src": "/i/icon-reverse.png" },
+        { "src": "/i/notification-icon-reverse.png" }
+      ]
+    },
+    "(prefers-language: no)": {
+      "description": "Aaron Gustafsons hjem og arbeid på nettet.",
+      "shortcuts": [
+        { "name": "Notisbok" },
+        { "name": "Snakker" },
+        { "name": "Publikasjoner" },
+        { "name": "Intervjuer" }
+      ]
+    }
+  }
 }
