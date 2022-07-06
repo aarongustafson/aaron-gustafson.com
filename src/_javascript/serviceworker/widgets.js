@@ -144,7 +144,7 @@ if ( ! "widgets" in self )
       removeByTag: removeByTag
     };
   };
-  const self.widgets = new WidgetsInterface();
+  self.widgets = new WidgetsInterface();
 }
 
 async function registerPeriodicSync( widget )
