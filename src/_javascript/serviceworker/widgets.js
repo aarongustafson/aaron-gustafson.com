@@ -4,145 +4,148 @@
 const periodicSync = self.registration.periodicSync;
 
 // mocking widgets
-const WidgetsInterface = function() {
-  var _widgets = [{
-    definition: {
-      tag: "foo",
-      template: "feed",
-      data: "https://www.aaron-gustafson.com/feeds/all.json",
-      type: "application/json"
+if ( ! "widgets" in self )
+{
+  const WidgetsInterface = function() {
+    var _widgets = [{
+      definition: {
+        tag: "foo",
+        template: "feed",
+        data: "https://www.aaron-gustafson.com/feeds/all.json",
+        type: "application/json"
+      },
+      installable: true,
+      instances: [{
+        id: "foo-instance-1",
+        hostId: "host-1"
+      }]
     },
-    installable: true,
-    instances: [{
-      id: "foo-instance-1",
-      hostId: "host-1"
-    }]
-  },
-  {
-    definition: {
-      tag: "bar",
-      template: "feed",
-      data: "https://www.aaron-gustafson.com/feeds/latest-links.json",
-      type: "application/json"
+    {
+      definition: {
+        tag: "bar",
+        template: "feed",
+        data: "https://www.aaron-gustafson.com/feeds/latest-links.json",
+        type: "application/json"
+      },
+      installable: true,
+      instances: [{
+        id: "bar-instance-1",
+        hostId: "host-1"
+      }]
     },
-    installable: true,
-    instances: [{
-      id: "bar-instance-1",
-      hostId: "host-1"
-    }]
-  },
-  {
-    definition: {
-      tag: "baz",
-      template: "feed",
-      data: "https://www.aaron-gustafson.com/feeds/latest-posts.json",
-      type: "application/json"
-    },
-    installable: false,
-    instances: []
-  }];
+    {
+      definition: {
+        tag: "baz",
+        template: "feed",
+        data: "https://www.aaron-gustafson.com/feeds/latest-posts.json",
+        type: "application/json"
+      },
+      installable: false,
+      instances: []
+    }];
+    
+    async function matchAll( obj )
+    {
+      return _widgets.filter( widget => {
+        let result = true;
+        if ( result && "installable" in obj ) {
+          result = obj.installable === widget.installable;
+        }
+        if ( result && "installed" in obj ) {
+          result = obj.installed ? widget.instances.length > 0
+                                  : widget.instances.length === 0;
+        }
+        if ( result && "tag" in obj ) {
+          result = widget.definition.tag === obj.tag;
+        }
+        if ( result && ( "hostId" in obj || "instanceId" in obj ) ) {
+          result = widget.instances.find( instance => {
+            if ( "hostId" in obj ) {
+              return instance.hostId === obj.hostId;
+            }
+            else if ( "instanceId" in obj ) {
+              return instance.id === obj.instanceId;
+            }
+          });
+        }
+        return result;
+      });
+    }
+    async function getByHostId( host_id ) 
+    {
+      return matchAll({ hostId: host_id });
+    }
+    async function getByInstanceId( instance_id )
+    {
+      const result = await matchAll({ instanceId: instance_id });
+      return Promise.resolve( result[0] );
+    }
+    async function getByTag( tag )
+    {
+      const result = await matchAll({ tag: tag });
+      return Promise.resolve( result[0] );
+    }
   
-  async function matchAll( obj )
-  {
-    return _widgets.filter( widget => {
-      let result = true;
-      if ( result && "installable" in obj ) {
-        result = obj.installable === widget.installable;
-      }
-      if ( result && "installed" in obj ) {
-        result = obj.installed ? widget.instances.length > 0
-                                : widget.instances.length === 0;
-      }
-      if ( result && "tag" in obj ) {
-        result = widget.definition.tag === obj.tag;
-      }
-      if ( result && ( "hostId" in obj || "instanceId" in obj ) ) {
-        result = widget.instances.find( instance => {
-          if ( "hostId" in obj ) {
-            return instance.hostId === obj.hostId;
-          }
-          else if ( "instanceId" in obj ) {
-            return instance.id === obj.instanceId;
+    // This takes the place of internal logic in the browser
+    const _updateInstance = ( instance, payload ) => {
+      instance.updated = Date.now();
+      instance.payload = payload;
+      _widgets.forEach( (_widget, w) => {
+        _widget.instances.forEach( (_instance, i) => {
+          if ( _instance.id === instance.id )
+          {
+            _widgets[w].instances[i] = instance;
           }
         });
-      }
-      return result;
-    });
-  }
-  async function getByHostId( host_id ) 
-  {
-    return matchAll({ hostId: host_id });
-  }
-  async function getByInstanceId( instance_id )
-  {
-    const result = await matchAll({ instanceId: instance_id });
-    return Promise.resolve( result[0] );
-  }
-  async function getByTag( tag )
-  {
-    const result = await matchAll({ tag: tag });
-    return Promise.resolve( result[0] );
-  }
-
-  // This takes the place of internal logic in the browser
-  const _updateInstance = ( instance, payload ) => {
-    instance.updated = Date.now();
-    instance.payload = payload;
-    _widgets.forEach( (_widget, w) => {
-      _widget.instances.forEach( (_instance, i) => {
-        if ( _instance.id === instance.id )
-        {
-          _widgets[w].instances[i] = instance;
-        }
       });
-    });
-    return;
+      return;
+    };
+    async function updateByInstanceId( instance_id, payload )
+    {
+      await getByInstanceId( instance_id )
+        .then( widget => {
+          let instance = widget.instances.find( i => i.id === instance_id );
+          _updateInstance( instance, payload );
+        });
+    }
+    async function updateByTag( tag, payload )
+    {
+      await getByTag( tag )
+        .then( widget => {
+          widget.instances.forEach(
+            instance => _updateInstance( instance, payload )
+          );
+        });
+    }
+  
+    async function removeByInstanceId( instance_id )
+    {
+      await getByInstanceId( instance_id )
+        .then( widget => {
+          widget.instances = widget.instances.filter( i => i.id !== instance_id );
+        });
+    }
+    async function removeByTag( tag )
+    {
+      await getByTag( tag )
+        .then( widget => {
+          widget.instances = [];
+        });
+    }
+  
+    return {
+      matchAll: matchAll,
+      getByHostId: getByHostId,
+      getByInstanceId: getByInstanceId,
+      getByTag: getByTag,
+      updateByInstanceId: updateByInstanceId,
+      updateByTag: updateByTag,
+      removeByInstanceId: removeByInstanceId,
+      removeByTag: removeByTag
+    };
   };
-  async function updateByInstanceId( instance_id, payload )
-  {
-    await getByInstanceId( instance_id )
-      .then( widget => {
-        let instance = widget.instances.find( i => i.id === instance_id );
-        _updateInstance( instance, payload );
-      });
-  }
-  async function updateByTag( tag, payload )
-  {
-    await getByTag( tag )
-      .then( widget => {
-        widget.instances.forEach(
-          instance => _updateInstance( instance, payload )
-        );
-      });
-  }
-
-  async function removeByInstanceId( instance_id )
-  {
-    await getByInstanceId( instance_id )
-      .then( widget => {
-        widget.instances = widget.instances.filter( i => i.id !== instance_id );
-      });
-  }
-  async function removeByTag( tag )
-  {
-    await getByTag( tag )
-      .then( widget => {
-        widget.instances = [];
-      });
-  }
-
-  return {
-    matchAll: matchAll,
-    getByHostId: getByHostId,
-    getByInstanceId: getByInstanceId,
-    getByTag: getByTag,
-    updateByInstanceId: updateByInstanceId,
-    updateByTag: updateByTag,
-    removeByInstanceId: removeByInstanceId,
-    removeByTag: removeByTag
-  };
-};
-const widgets = new WidgetsInterface();
+  const self.widgets = new WidgetsInterface();
+}
 
 async function registerPeriodicSync( widget )
 {
