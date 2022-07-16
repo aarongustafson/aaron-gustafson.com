@@ -1,5 +1,5 @@
 ---
-title: "A Bittersweet Goodbye"
+title: "A Bitter&shy;sweet Good&shy;bye"
 date: 2022-06-10 16:15:48 -06:00
 comments: true
 tags: ["career"]
