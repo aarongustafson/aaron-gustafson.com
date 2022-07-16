@@ -52,7 +52,7 @@ github_edit: "_layouts/blog.html"
             <p>
               {% if is_excerpted %}
                 <a rel="bookmark" href="{{ post.url }}">You can finish reading
-                <cite>{{ post.data.title }}</cite> in less than {{ post.templateContent | readingTime }}</a>
+                <cite>{{ post.data.title | safe }}</cite> in less than {{ post.templateContent | readingTime }}</a>
               {% elif post.data.ref_url %}
                 <a rel="external original-article" href="{{ post.data.ref_url }}">Source: {{ post.data.ref_source }}</a>
               {% endif %}
