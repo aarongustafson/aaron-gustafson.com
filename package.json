@@ -8,7 +8,9 @@
     "prebuild": "gulp prebuild",
     "build": "NODE_ENV=production npx eleventy --quiet",
     "postbuild": "gulp postbuild",
-    "start-netlify": "netlify dev"
+    "start-netlify": "netlify dev",
+    "post": "hygen post with-prompt",
+    "link": "hygen link with-prompt"
   },
   "repository": {
     "type": "git",

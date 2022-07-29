@@ -5,7 +5,7 @@ module.exports = [
   {
     type: 'input',
     name: 'title',
-    message: "Title?",
+    message: "Title",
     validate: (value) => !value ? "Title cannot be empty" : true
   },
   {

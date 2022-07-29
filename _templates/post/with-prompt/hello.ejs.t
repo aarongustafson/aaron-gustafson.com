@@ -3,12 +3,12 @@ to: src/posts/<%= h.getFilename(locals) %>.md
 sh: "open 'src/posts/<%= h.getFilename(locals) %>.md'"
 ---
 ---
-title: "<%= title %>"
+title: "<%= h.escapeQuotes(title) %>"
 date: <%= h.getTimestamp() %>
 comments: true
 tags: ["<%- tags.join('\", \"') %>"]
-description: "<%= description %>"
-twitter_text: <%= twitter_text %>
+description: "<%= h.escapeQuotes(description) %>"
+twitter_text: "<%= h.escapeQuotes(twitter_text) %>"
 <% if (locals.in_reply_to) { -%>
 in_reply_to: <%= in_reply_to %>
 <% } -%>

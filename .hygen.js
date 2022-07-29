@@ -6,6 +6,9 @@ const iso				= dateLocal.toISOString().slice(0, 19);
 
 module.exports = {
 	helpers: {
+    escapeQuotes: function(str) {
+      return str.replace('"', '\\"');
+    },
 		getTimestamp: () => {
 			return `${iso.replace('T', ' ')} -07:00`;
 		},

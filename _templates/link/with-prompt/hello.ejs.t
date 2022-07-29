@@ -1,15 +1,28 @@
 ---
-to: app/hello.js
+to: src/links/<%= h.getFilename(locals) %>.md
+sh: "open 'src/links/<%= h.getFilename(locals) %>.md'"
 ---
-const hello = ```
-Hello!
-This is your first prompt based hygen template.
+---
+title: "<%= h.escapeQuotes(title) %>"
+ref_source: "<%= h.escapeQuotes(source) %>"
+date: <%= h.getTimestamp() %>
+comments: true
+tags: ["<%- tags.join('\", \"') %>"]
+description: "<%= h.escapeQuotes(description) %>"
+twitter_text: "<%= h.escapeQuotes(twitter_text) %>"
+ref_url: <%= url %>
+in_reply_to: <%= url %>
+<% if (locals.via_name) { -%>
+via:
+  name: "<%= h.escapeQuotes(locals.via_name) %>"
+  url: <%= locals.via_url %>
+<% } -%>
+---
 
-Learn what it can do here:
+Text
 
-https://github.com/jondot/hygen
-```
+<% if (locals.quote) { -%>
+> <%= quote %>
+<% } -%>
 
-console.log(hello)
-
-
+Note: Twitter, CodePen, and YouTube links will automatically be embedded.
