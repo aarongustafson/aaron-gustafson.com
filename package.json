@@ -70,6 +70,7 @@
     "widont": "^0.3.3"
   },
   "devDependencies": {
+    "hygen": "^6.2.8",
     "netlify-cli": "^10.5.1"
   }
 }

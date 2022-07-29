@@ -22,6 +22,8 @@ Block-level Semantics
     font-family: $font-stack-serif;
     font-style: italic; 
     
+    hyphens: auto;
+
     margin-left: auto;
     margin-right: auto;
     @include rem( padding, 0 $default-spacing );
@@ -44,6 +46,7 @@ Block-level Semantics
   
   p {
     font-weight: normal;
+    hyphens: auto;
     line-height: $line-height-default;
     
     .wf-active & {
@@ -93,6 +96,7 @@ dialog + .backdrop {
 
 @include breakup-breakpoint( "print" ) {
   p, ol, ol, dl {
+    hyphens: auto;
     orphans: 3;
     widows: 3;
   }
