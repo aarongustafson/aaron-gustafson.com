@@ -2,7 +2,7 @@
 title: "Egalitarianism"
 date: 2015-01-19 10:32:20 -05:00
 comments: true
-tags: [philosophy,accessibility,"web design"]
+tags: [philosophy,accessibility,"web design","inclusion"]
 description: "Today is Martin Luther King Day in the United States, so I thought I’d take a moment to reflect on one aspect of equality I think is incredibly important: egalitarianism."
 ---
 
