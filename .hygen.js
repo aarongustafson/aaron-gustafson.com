@@ -4,6 +4,8 @@ const msLocal		= today.getTime() - offsetMs;
 const dateLocal	= new Date(msLocal);
 const iso				= dateLocal.toISOString().slice(0, 19);
 
+const events		= require('./src/_data/speaking_engagements.json');
+
 module.exports = {
 	helpers: {
     escapeQuotes: function(str) {
@@ -37,6 +39,25 @@ module.exports = {
 			.replace(/-+/g, '-'); 
 			
 			return `${date}-${text}`;
+		},
+		addEvent: (locals) => {
+			var new_events = events.sort((a, b) => {
+				return a.id > b.id ? 1 : -1
+			});
+			new_events.reverse();
+			
+			var event = {
+				id: new_events[0].id + 1,
+				title: locals.title,
+				date: `${locals.date} 00:09:00 -0800`,
+				location: locals.location || 'Online'
+			};
+			if (locals.url) {
+				event.url = locals.url;
+			}
+			
+			new_events.unshift(event)
+			return JSON.stringify(new_events, null, 2);
 		}
 	}
 };

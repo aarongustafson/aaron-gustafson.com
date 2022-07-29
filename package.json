@@ -10,7 +10,8 @@
     "postbuild": "gulp postbuild",
     "start-netlify": "netlify dev",
     "post": "hygen post with-prompt",
-    "link": "hygen link with-prompt"
+    "link": "hygen link with-prompt",
+    "event": "hygen event with-prompt"
   },
   "repository": {
     "type": "git",
