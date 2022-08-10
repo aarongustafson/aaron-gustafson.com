@@ -1,5 +1,5 @@
 const pluginSEO = require("eleventy-plugin-seo");
-const { DateTime } = require("luxon");
+//const { DateTime } = require("luxon");
 const markdownIt = require("markdown-it");
 const markdown_options = {
   html: true,
@@ -15,7 +15,8 @@ const embedCodePen = require("@manustays/eleventy-plugin-codepen-iframe");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const imagesResponsiver = require("eleventy-plugin-images-responsiver");
 const readingTime = require('eleventy-plugin-reading-time');
-const { series } = require("gulp");
+//const { series } = require("gulp");
+const fs = require('fs');
 
 module.exports = config => {
 
@@ -133,18 +134,40 @@ module.exports = config => {
       .forEach(item => {
         (item.data.tags || []).forEach(tag => tagSet.add(tag));
       });
-    return filterTagList([...tagSet]);
+    tagSet = filterTagList([...tagSet]);
+    // Generate a series JSON
+    fs.writeFile("./_cache/tags.json", JSON.stringify(tagSet,false, 2), err => {
+      if (err) throw err;
+    });
+    return tagSet;
   });
   config.addCollection("series", function(collectionApi) {
     let series = {};
     collectionApi.getAll()
       .forEach(item => {
         if ( "series" in item.data &&
+             "tag" in item.data.series &&
              ! ( item.data.series.tag in series ) )
         {
           series[item.data.series.tag] = item.data.series.name;
         }
       });
+    // Generate a series JSON
+    fs.writeFile("./_cache/series.json", JSON.stringify(series, false, 2), err => {
+      if (err) throw err;
+    });
+    // Build series files
+    for ( let tag in series ) {
+      let tagName = tag.replace("series-", "");
+      let filename = `./src/series/${tagName}.md`;
+      if (!fs.existsSync(filename)) {
+        let content = `---\ntitle: "${series[tag]}"\ndescription: ""\ntag: ${tag}\n---`;
+        fs.writeFile(filename, content, err => {
+          if (err) throw err;
+          console.log(`New series file created: ${filename}`);
+        });
+      }
+    }
     return series;
   });
 
@@ -153,11 +176,6 @@ module.exports = config => {
     excerpt: true,
     excerpt_separator: "<!-- more -->"
   });
-
-  // Events
-  // const afterBuild = require('./_11ty/afterBuild');
-  // config.on("eleventy.after", afterBuild);
-  // config.on("afterBuild", afterBuild);
 
   // Config
   return {
