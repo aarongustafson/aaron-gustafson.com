@@ -12,6 +12,12 @@ twitter_text: "<%= h.escapeQuotes(twitter_text) %>"
 <% if (locals.in_reply_to) { -%>
 in_reply_to: <%= in_reply_to %>
 <% } -%>
+<% if (locals.series) { -%>
+series:
+  name: "<%= h.getSeriesName(series) %>"
+  tag: "<%= series %>"
+  ordinal: ""
+<% } -%>
 ---
 
 Intro paragraph.

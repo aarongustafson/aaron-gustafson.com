@@ -5,16 +5,26 @@ const dateLocal	= new Date(msLocal);
 const iso				= dateLocal.toISOString().slice(0, 19);
 
 const events		= require('./src/_data/speaking_engagements.json');
+const series    = require('./_cache/series.json');
+const tags      = require('./_cache/tags.json');
 
 module.exports = {
 	helpers: {
-    escapeQuotes: function(str) {
+    escapeQuotes: (str) => {
       return str.replace('"', '\\"');
     },
 		getTimestamp: () => {
 			return `${iso.replace('T', ' ')} -07:00`;
 		},
-		getFilename: (locals) => {
+    getTags: () => {
+      return tags;
+    },
+		getSeriesName: (tag) => {
+      return series[tag];
+    },
+		getFilename: (locals, include_date) => {
+      include_date = include_date !== false ? true : false;
+
 			const date = iso.substring(0, 10);
 			
 			// Slugify the title
@@ -38,7 +48,7 @@ module.exports = {
 			// Collapse dashes
 			.replace(/-+/g, '-'); 
 			
-			return `${date}-${text}`;
+			return include_date ? `${date}-${text}` : text;
 		},
 		addEvent: (locals) => {
 			var new_events = events.sort((a, b) => {

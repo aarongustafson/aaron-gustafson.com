@@ -1,6 +1,10 @@
 // see types of prompts:
 // https://github.com/enquirer/enquirer/tree/master/examples
 //
+
+const fs   = require('fs');
+const tags = JSON.parse( fs.readFileSync('./_cache/tags.json') );
+
 module.exports = [
   {
     type: 'input',
@@ -31,9 +35,12 @@ module.exports = [
     message: "Text for Twitter"
   },
   {
-    type: 'list',
+    type: 'multiselect',
     name: 'tags',
-    message: "Enter tags, separated by commas"
+    message: "Choose tags (you can add new ones later)",
+    choices: tags,
+    multiple: true,
+    limit: 10
   },
   {
     type: 'input',
