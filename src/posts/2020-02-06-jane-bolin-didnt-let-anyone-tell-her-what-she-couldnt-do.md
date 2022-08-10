@@ -2,7 +2,7 @@
 title: "Jane Bolin didn’t let anyone tell her what she couldn’t do"
 date: 2020-02-06 15:38:18 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "In so many ways, Jane Bolin was a pioneer. I can’t even begin to imagine what it must have been like to be the “first” so many times."
 tweet_text: "In so many ways, Jane Bolin was a pioneer. I can’t even begin to imagine what it must have been like to be the “first” so many times."
 series:

@@ -2,7 +2,7 @@
 title: "Chuck D challenges me to confront myself"
 date: 2019-02-11 16:01:23 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Growing up, I vividly remember my first introduction to Chuck D in the guise of Public Enemy."
 twitter_text: "@MrChuckD challenges me to confront myself and my privilege"
 series:

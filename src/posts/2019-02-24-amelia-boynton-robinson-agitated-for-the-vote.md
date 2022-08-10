@@ -2,7 +2,7 @@
 title: "Amelia Boynton Robinson agitated for the vote"
 date: 2019-02-24 16:23:19 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Amelia Boynton Robinson’s courage and commitment to getting (and keeping) the vote for all Black Americans is truly awe-inspiring"
 twitter_text: "Amelia Boynton Robinson’s courage and commitment to getting (and keeping) the vote for all Black Americans is truly awe-inspiring"
 series:

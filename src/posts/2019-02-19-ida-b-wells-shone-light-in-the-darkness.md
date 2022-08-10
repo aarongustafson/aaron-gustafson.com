@@ -2,7 +2,7 @@
 title: "Ida B. Wells shone light in the darkness"
 date: 2019-02-19 16:31:02 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Ida B. Wells left an incredible legacy when she died in 1931, the ripples of which have touched pretty much every push for civil rights in America."
 twitter_text: "Ida B. Wells was a Black former slave (and woman) reporting on lynchings throughout the South after Emancipation. Brave doesn’t even begin to describe her."
 series:

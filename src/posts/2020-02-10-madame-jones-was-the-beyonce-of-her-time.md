@@ -2,7 +2,7 @@
 title: "Madame Jones was the Beyoncé of her time"
 date: 2020-02-10 16:16:23 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "With her incredible voice, Sissieretta Jones became the highest-paid Black performer of her time, but she died in poverty."
 series:
   name: "Honoring Black History"

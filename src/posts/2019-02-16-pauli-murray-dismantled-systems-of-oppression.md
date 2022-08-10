@@ -2,7 +2,7 @@
 title: "Pauli Murray dismantled systems of oppression"
 date: 2019-02-16 11:43:27 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Throughout her life, Pauli Murray was told she couldn’t do things, often because she was Black or a woman (or both). In pretty much every instance, she pushed back, challenging the cultural norms of her time and notions of what was acceptable."
 twitter_text: "Pauli Murray was fearless, outspoken, and committed to removing barriers and dismantling the systems of oppression in the United States"
 series:

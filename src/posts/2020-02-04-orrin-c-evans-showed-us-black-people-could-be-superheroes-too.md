@@ -2,7 +2,7 @@
 title: "Orrin C. Evans showed us Black people could be (super)heroes too"
 date: 2020-02-04 17:01:32 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Did you know that the first Black comic book hero debuted in 1947?"
 twitter_text: "Did you know that the first Black comic book hero debuted in 1947?"
 series:

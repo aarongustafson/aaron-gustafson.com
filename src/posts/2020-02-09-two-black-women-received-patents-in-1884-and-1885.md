@@ -2,7 +2,7 @@
 title: "Two Black women received patents… in 1884 and 1885!"
 date: 2020-02-09 16:27:18 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Regardless of who you consider “first,” the fact is that this is just yet another example of Black women excelling at something often considered the domain of men."
 series:
   name: "Honoring Black History"

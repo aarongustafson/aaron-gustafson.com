@@ -2,7 +2,7 @@
 title: "Harriet really was a spy"
 date: 2019-02-06 10:14:21 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Harriet Tubman was a badass!"
 series:
   name: "Honoring Black History"

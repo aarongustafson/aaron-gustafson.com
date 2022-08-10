@@ -2,7 +2,7 @@
 title: "Jerry Lawson made home video game systems possible"
 date: 2020-02-01 14:04:27 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "I would have had a very different childhood had it not been for Jerry Lawson’s invention of the video game cartridge."
 twitter_text: "I would have had a very different childhood had it not been for Jerry Lawson’s invention of the video game cartridge."
 series:

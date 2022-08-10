@@ -2,7 +2,7 @@
 title: "Aretha commanded respect"
 date: 2019-02-07 11:41:09 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Apart from her amazing voice and presence, the thing I will remember most about Aretha is her purse."
 series:
   name: "Honoring Black History"

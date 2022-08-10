@@ -2,7 +2,7 @@
 title: "Lucy Hicks Anderson was an early Black trans pioneer"
 date: 2020-02-03 09:00:50 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "I am awestruck by the bravery of Lucy Hicks Anderson, a Black trans woman born in Kentucky in 1886, who became a renown socialite and hostess in 1940s California."
 twitter_text: "I am awestruck by the bravery of Lucy Hicks Anderson, a Black trans woman born in Kentucky in 1886, who became a renown socialite and hostess in 1940s California."
 series:

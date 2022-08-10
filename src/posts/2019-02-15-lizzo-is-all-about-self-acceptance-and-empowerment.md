@@ -2,7 +2,7 @@
 title: "Lizzo is all about self-acceptance and empowerment"
 date: 2019-02-15 14:11:41 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "As someone who has struggled with my own body image issues—including dealing with a decent amount of body shaming—I’ve found her ability to find beauty in everyone—including herself—inspirational."
 twitter_text: "As someone who’s dealt with his own body issues, I am inspired not only by @lizzo’s self-acceptance, but also her ability to see everyone as beautiful"
 series:

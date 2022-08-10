@@ -2,7 +2,7 @@
 title: "Angie Turner King invested her energy in others"
 date: 2019-02-28 16:16:04 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Chances are you’ve never heard the name Angie Turner King, and that’s because—like so many Black women—she invested her time and energy in other people."
 twitter_text: "Chances are you’ve never heard the name Angie Turner King, and that’s because—like so many Black women—she invested her time and energy in other people"
 series:

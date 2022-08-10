@@ -2,7 +2,7 @@
 title: "Bayard Rustin advocated for marginalized people everywhere"
 date: 2019-02-13 10:54:52 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Bayard Rustin was an extraordinary man whose influence on the civil rights movement was profound, both in its impact and in its pacifism."
 twitter_text: "Bayard Rustin was an extraordinary man whose influence on the civil rights movement was profound, both in its impact and in its pacifism"
 series:

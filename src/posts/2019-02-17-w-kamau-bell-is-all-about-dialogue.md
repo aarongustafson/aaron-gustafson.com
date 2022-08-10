@@ -2,7 +2,7 @@
 title: "W. Kamau Bell is all about dialogue"
 date: 2019-02-17 10:49:06 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Throughout his career, W. Kamau Bell has never shied away from confronting issues of race, racism, and the systemic oppression of Black people in America, but he’s also used his bully pulpit to start some important, but difficult conversations."
 twitter_text: "@wkamaubell has used his bully pulpit to gently nudge us into some important, but difficult conversations"
 series:

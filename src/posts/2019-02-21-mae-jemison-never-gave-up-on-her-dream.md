@@ -2,7 +2,7 @@
 title: "Mae Jemison never gave up on her dream"
 date: 2019-02-21 16:17:45 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Mae Jemison’s accomplishments have no doubt paved the way for the next generation of women of color who want to claim their rightful place in the world of STEM"
 twitter_text: "@maejemison’s accomplishments have no doubt paved the way for the next generation of women of color who want to claim their rightful place in the world of STEM"
 series:

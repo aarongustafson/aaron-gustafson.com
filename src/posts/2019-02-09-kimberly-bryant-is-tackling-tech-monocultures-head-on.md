@@ -2,7 +2,7 @@
 title: "Kimberly Bryant is tackling tech monocultures head-on"
 date: 2019-02-09 11:53:55 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "What I really like about Kimberly Bryant’s approach is that it isn’t just about tackling the underrepresentation of women, especially women of color, in tech."
 twitter_text: "@6gems risked everything to improve the lives of young Black women everywhere"
 series:

@@ -2,7 +2,7 @@
 title: "Charles V. Bush agitated for equity in the officer corps"
 date: 2020-02-11 13:04:02 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Charles V. Bush’s work highlighting inequity was instrumental in helping to improve representation within the U.S. military’s officer corps."
 series:
   name: "Honoring Black History"

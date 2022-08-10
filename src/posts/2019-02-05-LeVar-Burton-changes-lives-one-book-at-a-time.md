@@ -2,7 +2,7 @@
 title: "LeVar Burton changes lives, one book at a time"
 date: 2019-02-05 15:41:15 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "LeVar Burton has done tons of other notable things during his career, but his literacy work and advocacy is inspiring."
 series:
   name: "Honoring Black History"

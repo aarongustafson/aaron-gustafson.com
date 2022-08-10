@@ -2,7 +2,7 @@
 title: "Anna Arnold Hedgeman was the glue for the civil rights movement"
 date: 2019-02-12 15:57:12 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Throughout her careers as a civil rights leader, politician, writer, and educator, Anna Arnold Hedgeman found ways to bring people together for a common cause."
 twitter_text: "Anna Arnold Hedgeman was the glue for several civil rights movements and her efforts have had a lasting impact on this country"
 series:

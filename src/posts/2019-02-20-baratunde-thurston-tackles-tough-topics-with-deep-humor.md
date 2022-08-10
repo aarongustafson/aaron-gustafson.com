@@ -2,7 +2,7 @@
 title: "Baratunde Thurston tackles tough topics with “deep humor”"
 date: 2019-02-20 16:14:13 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Baratunde Thurston deftly weaves important lessons and difficult conversations with humor, which is an incredibly difficult thing to do well."
 twitter_text: "@Baratunde deftly weaves important lessons and difficult conversations with humor, which is an incredibly difficult thing to do well"
 series:

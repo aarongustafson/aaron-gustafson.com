@@ -2,7 +2,7 @@
 title: "Mark Dean’s work on the PC made personal computing possible"
 date: 2019-02-23 13:39:27 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Without Mark Dean’s pioneering work at IBM, the web-based giants we know today might never have existed"
 twitter_text: "Without Mark Dean’s pioneering work at IBM, the web-based giants we know today might never have existed"
 series:

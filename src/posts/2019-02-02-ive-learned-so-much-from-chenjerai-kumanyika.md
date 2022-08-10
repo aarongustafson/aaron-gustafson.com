@@ -2,7 +2,7 @@
 title: "I’ve learned so much from Chenjerai Kumanyika"
 date: 2019-02-02 09:21:28 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "From Uncivil to “Seeing White” to his Twitter feed, Chenjerai drops thoughtful and matter-of-fact knowledge about race in America and I can’t thank him enough for this work."
 series:
   name: "Honoring Black History"

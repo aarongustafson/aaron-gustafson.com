@@ -2,7 +2,7 @@
 title: "“God” was a complicated man who did some revolutionary things"
 date: 2019-02-04 14:28:10 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "While there is certainly a lot of bizarre, suspect, and downright deplorable history surrounding Father Divine, I have to admit I’m inspired by his ability to see an opportunity to use his power to further the agenda of equality."
 series:
   name: "Honoring Black History"

@@ -2,7 +2,7 @@
 title: "Maya Angelou persevered, but many don’t"
 date: 2020-02-02 14:58:47 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Did you know that Maya Angelou was San Francisco’s first Black woman cable car conductor?"
 twitter_text: "Remember when Maya Angelou became San Francisco’s first Black woman cable car conductor?"
 series:

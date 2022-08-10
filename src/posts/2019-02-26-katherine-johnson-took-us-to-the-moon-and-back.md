@@ -2,7 +2,7 @@
 title: "Katherine Johnson took us to the moon (and back)"
 date: 2019-02-26 12:22:58 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Katherine Johnson’s story is yet another in a long line of stories that prove how important it is to give people the opportunity to do their best work. And how important it is to believe in them and encourage them to believe in themselves."
 twitter_text: "I can’t even begin to comprehend the brilliance of Katherine Johnson’s mind. And I am in awe of her, but not just for that… for her perseverance."
 series:

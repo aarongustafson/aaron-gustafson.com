@@ -2,7 +2,7 @@
 title: "Dr. Rebecca Lee Crumpler prioritized the most vulnerable"
 date: 2020-02-05 14:50:11 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Throughout her career, Dr. Crumpled worked to improve the health (and lives) of poor Black women and children."
 series:
   name: "Honoring Black History"

@@ -2,7 +2,7 @@
 title: "LeBron James converts power into promise"
 date: 2019-02-18 14:27:10 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "LeBron James is likely to go down in basketball history as one of the greats… I don’t think that’s up for debate. But to me, James’ greatest legacy will be as a champion for education and the future promise of kids in Akron."
 twitter_text: "@KingJames greatest legacy will be as a champion for education and the future promise of kids in Akron"
 series:

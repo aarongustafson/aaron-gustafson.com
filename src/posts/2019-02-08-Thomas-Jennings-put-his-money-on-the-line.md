@@ -2,7 +2,7 @@
 title: "Thomas Jennings put his money on the line"
 date: 2019-02-08 11:36:35 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "I appreciate the irony of using an establishment of white privilege (patents) to undermine the very foundations of white supremacy."
 twitter_text: "I can’t help but appreciate the irony of Thomas Jennings’ use of an establishment of white privilege (patents) to undermine the very foundations of white supremacy."
 series:

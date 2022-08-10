@@ -2,7 +2,7 @@
 title: "Jack Johnson “trolled” for his shot at equality and inspired future generations of Black athlete activists"
 date: 2019-02-22 09:33:30 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Jack Johnson’s unwillingness to settle for what he was given as a Black man in early 20th Century America became an example for future athletes to use their visibility to agitate for change"
 twitter_text: "Jack Johnson’s unwillingness to settle for what he was given as a Black man in early 20th Century America became an example for future athletes to agitate for change"
 series:

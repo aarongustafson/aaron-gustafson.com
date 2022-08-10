@@ -2,7 +2,7 @@
 title: "He invented the search engine, but you don’t know his name"
 date: 2019-02-10 09:46:44 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "The thing is, he doesn’t brag about this accomplishment."
 twitter_text: "In a time with a lot of posturing, gloating, and one-upmanship, Alan Emtage’s humility shines."
 series:

@@ -2,7 +2,7 @@
 title: "Without Frederick McKinley Jones, where would your food be?"
 date: 2019-02-25 17:01:20 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "By the time he died, Frederick McKinley Jones has been awarded over 60 patents."
 series:
   name: "Honoring Black History"

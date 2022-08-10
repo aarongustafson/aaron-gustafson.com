@@ -2,7 +2,7 @@
 title: "Why Oscar’s middle name is “Ellison”"
 date: 2019-02-01 11:20:34 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Ralph Ellison’s acclaimed Invisible Man has been hugely influential in my life."
 series:
   name: "Honoring Black History"

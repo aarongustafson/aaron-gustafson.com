@@ -2,7 +2,7 @@
 title: "Shirley Chisholm was unbought and unbossed"
 date: 2019-02-03 12:49:42 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Shirley Chisholm was not a woman I had much familiarity with growing up, but I am glad to have learned of her guts and conviction in the face of many obstacles."
 series:
   name: "Honoring Black History"

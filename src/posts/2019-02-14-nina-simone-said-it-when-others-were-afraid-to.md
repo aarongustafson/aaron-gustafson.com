@@ -2,7 +2,7 @@
 title: "Nina Simone “said it” when others couldn’t"
 date: 2019-02-14 15:16:02 -08:00
 comments: true
-tags: ["Black History", influences]
+tags: [influences]
 description: "Her career in America doubtless suffered because of that, but she did it anyway and I can’t help but respect that."
 twitter_text: "Nina Simone wasn’t afraid to say what others wouldn’t… or couldn’t"
 series:
