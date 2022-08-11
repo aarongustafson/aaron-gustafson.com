@@ -11,7 +11,8 @@
     "start-netlify": "netlify dev",
     "post": "hygen post with-prompt",
     "link": "hygen link with-prompt",
-    "event": "hygen event with-prompt"
+    "event": "hygen event with-prompt",
+    "talk": "hygen talk with-prompt"
   },
   "repository": {
     "type": "git",
