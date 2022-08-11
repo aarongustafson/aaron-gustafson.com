@@ -20,10 +20,10 @@ series:
 <% } -%>
 ---
 
-Intro paragraph.
+<%= description %>
 
 <!-- more -->
 
 Other stuff.
 
-Note: Twitter, CodePen, and YouTube links will automatically be embedded.
+<!-- Note: Twitter, CodePen, and YouTube links will automatically be embedded. -->

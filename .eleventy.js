@@ -135,6 +135,7 @@ module.exports = config => {
         (item.data.tags || []).forEach(tag => tagSet.add(tag));
       });
     tagSet = filterTagList([...tagSet]);
+    tagSet.sort();
     // Generate a series JSON
     fs.writeFile("./_cache/tags.json", JSON.stringify(tagSet,false, 2), err => {
       if (err) throw err;

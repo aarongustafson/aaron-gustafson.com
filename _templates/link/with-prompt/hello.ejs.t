@@ -19,10 +19,10 @@ via:
 <% } -%>
 ---
 
-Text
+<%= description %>
 
 <% if (locals.quote) { -%>
 > <%= quote %>
 <% } -%>
 
-Note: Twitter, CodePen, and YouTube links will automatically be embedded.
+<!-- Note: Twitter, CodePen, and YouTube links will automatically be embedded. -->
