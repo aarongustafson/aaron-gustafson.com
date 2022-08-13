@@ -46,7 +46,7 @@ Block-level Semantics
   
   p {
     font-weight: normal;
-    hyphens: auto;
+    /*hyphens: auto;*/
     line-height: $line-height-default;
     
     .wf-active & {
