@@ -2,7 +2,7 @@
 date: 2014-07-17 08:21:47 -04:00
 title: "The “Native” vs. “Stylable” Tug of War"
 description: "In his astute post “‘Native experience’ vs styling select boxes”, Bruce Lawson correctly identified a common tension in the web world: wanting better form controls vs. wanting to throw away what the browser does. Here are my thoughts."
-tags: [ "web design", browsers, design, mobile, native ]
+tags: [ "web design", browsers, design, mobile ]
 comments: true
 canonical: http://blog.easy-designs.net/archives/the-native-vs-stylable-tug-of-war/
 canonical_site: The Easy Designs Blog

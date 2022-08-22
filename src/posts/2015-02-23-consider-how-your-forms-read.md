@@ -2,7 +2,7 @@
 title: "Consider How Your Forms Read"
 date: 2015-02-23 11:21:24 -05:00
 comments: true
-tags: ["web design",accessibility,"web forms","inclusive design"]
+tags: ["web design",accessibility, forms,"inclusive design"]
 description: "We need to remember that we are authoring interfaces that will be used by actual people. When we are creating forms that don’t require that kind of scientific rigor, we can (and should) do whatever we can to make the interaction more human."
 ---
 
