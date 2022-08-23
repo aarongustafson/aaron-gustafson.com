@@ -83,6 +83,12 @@ if ( ! input.validity.valid ){
 
 With that, we get the same result with far looser coupling between individual fields and the JavaScript handling validation.
 
+<figure id="fig-2022-08-22-01" class="media-container">
+
+![This custom validation string as rendered in the error tooltip in Safari 15.6]({{ site.url }}/i/posts/2022-08-22/01.jpg)
+
+</figure>
+
 You can even extend the approach to handle different kinds of errors:
 
 ```html
