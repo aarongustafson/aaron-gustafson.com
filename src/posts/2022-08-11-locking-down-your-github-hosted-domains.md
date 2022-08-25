@@ -5,6 +5,12 @@ comments: true
 tags: ["hazards", "URLs", "the web"]
 description: "The other day someone claimed a hostname on a domain I own and it took me a while to track down how. Turns out it was via GitHub pages."
 twitter_text: "If you use GitHub Pages and don’t have your DNS properly configured, anyone can add a hostname to your domain"
+hero:
+  src: /i/posts/2022-08-11/hero.jpg
+  credit: Aaron Gustafson × DALL·E
+  alt: "Photo of a black tentacle holding a padlock that is open"
+  url: https://labs.openai.com/s/1AdsanuXOheOnpD3WAdvhuNo
+  offset: "230"
 ---
 
 The other day someone claimed a hostname on a domain I own and it took me a while to track down how. After a lot of digging around, trying to figure out how the hijack was accomplished, it turns out it was via GitHub Pages.

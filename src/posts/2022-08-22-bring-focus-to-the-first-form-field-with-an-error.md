@@ -5,6 +5,12 @@ comments: true
 tags: ["accessibility", "forms", "HTML", "inclusive design", "JavaScript", "progressive enhancement", "WAI-ARIA", "web design"]
 description: "While filling out a long form the other day, I couldn’t figure out why it wasn’t submitting. Turns out I’d forgotten to fill in a field, but I didn’t know that because it had scrolled out of the viewport."
 twitter_text: "When highlighting form errors, moving focus to the first error encountered will ensure the error is seen and remedied."
+hero:
+  src: /i/posts/2022-08-22/hero.jpg
+  credit: Aaron Gustafson × DALL·E
+  alt: "In a green field filled with only yellow flowers, a cute robot has found a single red flower, digital art"
+  url: https://labs.openai.com/s/VE3r9ViDjS0aBzK6NDrGYrru
+  offset: "100"
 series:
   name: "Modern Web Form Best Practices"
   tag: "series-forms"

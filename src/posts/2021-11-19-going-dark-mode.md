@@ -5,9 +5,11 @@ comments: true
 tags: ["CSS","progressive web apps"]
 description: "I finally got around to playing with the CSS user color-scheme preference and enabled a “dark mode” for this site."
 hero:
-  src: https://images.unsplash.com/photo-1431440869543-efaf3388c585
-  credit: Breno Machado
-  url: https://unsplash.com/photos/in9-n0JwgZ0
+  src: /i/posts/2021-11-19/hero.jpg
+  credit: Aaron Gustafson × DALL·E
+  alt: "A plush viking in a dark room"
+  url: https://labs.openai.com/s/QjPor79EFuThl7uSXrnxqnw3
+  offset: "105"
 crossposted:
   dev.to: https://dev.to/aarongustafson/going-dark-mode-4d39
 ---

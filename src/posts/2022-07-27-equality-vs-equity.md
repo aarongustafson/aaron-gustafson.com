@@ -4,6 +4,11 @@ date: 2022-07-27 16:24:39 -06:00
 comments: true
 tags: ["inclusion"]
 description: Understanding the difference between equality and equity is key to designing inclusive spaces and teams.
+hero:
+  src: /i/posts/2022-07-27/hero.jpg
+  credit: Aaron Gustafson × DALL·E
+  alt: "Pencil and watercolor illustration of an Indian man stepping off a city bus with a bag of groceries"
+  url: https://labs.openai.com/s/Zz46PbVpdjeKFAs5AB3DgUCQ
 ---
 
 Over the last few years, I’ve been quietly leading training efforts within Microsoft focused on leveling up folks’ allyship skills. There are a ton of really important lessons to be learned form the curriculum my team and I developed, but one folks ofter struggle with is the concept of “equality” as compared to “equity.”
