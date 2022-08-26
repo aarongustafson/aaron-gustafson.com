@@ -70,7 +70,18 @@ module.exports = config => {
       resizedImageUrl: (src, width) => `https://res.cloudinary.com/aarongustafson/image/fetch/q_auto,f_auto,w_${width}/${src}`,
       attributes: {
         loading: 'lazy',
-      }
+      },
+    },
+    hero: {
+      sizes: '100vw',
+      resizedImageUrl: (src, width) => `https://res.cloudinary.com/aarongustafson/image/fetch/q_auto,f_auto,w_${width}/${src}`,
+    },
+    thumbnail: {
+      sizes: '100px',
+      resizedImageUrl: (src) => `https://res.cloudinary.com/aarongustafson/image/fetch/q_auto,f_auto,w_100/${src}`,
+      attributes: {
+        loading: 'lazy',
+      },
     }
   });
   config.addPlugin(embedCodePen);
@@ -184,7 +195,7 @@ module.exports = config => {
   return {
     markdownTemplateEngine: "njk",
     dataTemplateEngine: "njk",
-    htmlTemplateEngine: "njk",
+    htmlTemplateEngine: "md,njk",
     dir: {
       input: "src",
       output: "dist"

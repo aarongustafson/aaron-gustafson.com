@@ -17,7 +17,7 @@ github_edit: "_layouts/blog.html"
         {% set content %}{% if post.data.page.excerpt %}{{ post.data.page.excerpt | markdownify | safe }}{% else %}{{ post.templateContent | safe }}{% endif %}{% endset %}
         {% set is_excerpted = ( post.templateContent != content ) %}
         
-        <article class="entry entry--excerpt entry--{{ post.collection }}">
+        <article class="entry entry--excerpt entry--{{ post.data.collection }}{% if post.data.hero %} entry--with-hero{% endif %}">
           <header class="entry__header">
             <h1 class="entry__title entry-title">
               {% if is_excerpted %}
@@ -45,7 +45,10 @@ github_edit: "_layouts/blog.html"
           </header>
 
           <div class="entry__content entry__content--excerpt entry-content">
-            {{ content | safe }}
+            {% if post.data.hero %}
+              <img src="{{ site.url }}{{ post.data.hero.src }}" alt="{{ post.data.hero.alt }}" class="entry__thumbnail" width="100" height="100" data-responsiver="thumbnail">
+            {% endif %}
+            <p>{{ content | safe }}</p>
           </div>
 
           <footer class="entry__footer">

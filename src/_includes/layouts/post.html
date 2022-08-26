@@ -80,7 +80,7 @@ is_post: true
 
           {% if hero %}
             <figure class="entry__hero">
-              <img class="entry__hero__image" src="{{ hero.src }}" alt="{{ hero.alt }}" {% if hero.offset %}style="margin-top: -{{ hero.offset }}px;"{% endif %}>
+              <img class="entry__hero__image" data-responsiver="hero" src="{{ site.url }}{{ hero.src }}" alt="{{ hero.alt }}" {% if hero.offset %}style="margin-top: -{{ hero.offset }}px;"{% endif %}>
               <figcaption class="entry__hero__credit">Credit: <a href="{{ hero.url }}">{{ hero.credit }}</a></figcaption>
             </figure>
           {% endif %}

@@ -8,12 +8,20 @@
         @include rem( margin, $default-spacing auto );
     }
 
+    .entry__thumbnail {
+      float: left;
+      margin-right: 2rem;
+      width: 100px;
+      height: 100px;
+    }
+
     .entry__hero {
       display: block;
       position: relative;
       overflow: hidden;
       width: 100%;
       max-height: 391px;
+      min-height: 391px;
       transition: max-height .5s linear;
 
       &:hover {
