@@ -39,7 +39,10 @@ entry > updated,
 entry > id,
 entry > author,
 entry > content,
-entry > summary,
+entry > summary {
+  display: none;
+}
+
 entry > amg:twitter {
   display: none;
 }
