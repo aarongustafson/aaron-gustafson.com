@@ -41,3 +41,10 @@
     }
     
 }
+
+@include breakup-media("screen and (max-width: #{$bp-full-em})") {
+  pre[class*="language-"] {
+    @include rem( margin-left, -19 );
+    @include rem( margin-right, -19 );
+  }
+}

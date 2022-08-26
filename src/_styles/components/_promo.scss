@@ -13,7 +13,7 @@ $promo-background-color: lighten( #7FB843, 45% );
   .promo {
       background: $promo-background-color;
       border: 1px solid darken( $promo-background-color, 5% );
-      @include rem( margin, ( $default-spacing * 2 ) ( 0 - $default-spacing ) );
+      @include rem( margin, ( $default-spacing * 2 ) -19 );
       @include rem( padding, $default-spacing );
 
       a:link,
@@ -87,4 +87,10 @@ $promo-background-color: lighten( #7FB843, 45% );
 
     }
 
+}
+
+@include breakup-breakpoint("full") {
+  .promo {
+    @include rem( margin, ( $default-spacing * 2 ) ( 0 - $default-spacing ) );
+  }
 }
