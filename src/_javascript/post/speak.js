@@ -81,10 +81,12 @@ if ( 'speechSynthesis' in window )
     paused = false,
     text,
     progress_index = 0,
+    $meta = document.querySelector('.entry__meta'),
     $content = document.querySelector('main').cloneNode(true),
     $space = $content.querySelectorAll('pre'),
     $pause_before = $content.querySelectorAll('h2, h3, h4, h5, h6, p, li, dt, blockquote, pre, figure, footer'),
     $skip = $content.querySelectorAll('.anchorable__anchor, aside, .dont-read'),
+    $fragment = document.createDocumentFragment(),
     $intro = document.createElement('dt'),
     $controls = document.createElement('dd'),
     $button = document.createElement('button'),
@@ -133,8 +135,9 @@ if ( 'speechSynthesis' in window )
   // ---------------------
   
   $intro.innerHTML = 'Would you prefer to have this post read to you?';
+  $intro.classList.add('dont-read');
   
-  $controls.classList.add('media-controls');
+  $controls.classList.add('dont-read', 'media-controls');
   
   // Buttons
   $buttons.classList.add('media-controls__buttons');
@@ -181,6 +184,7 @@ if ( 'speechSynthesis' in window )
   $caveat.innerHTML = '<small>SpeechSynthesis is still experimental. This could be buggy</small>';
   $controls.appendChild($caveat);
 
-  document.querySelector('.entry__meta').appendChild($intro);
-  document.querySelector('.entry__meta').appendChild($controls);
+  $fragment.appendChild($intro);
+  $fragment.appendChild($controls);
+  $meta.appendChild($fragment);
 }
