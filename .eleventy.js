@@ -65,16 +65,10 @@ module.exports = config => {
   config.addPlugin(syntaxHighlight);
   config.addPlugin(readingTime);
   config.addPlugin(imagesResponsiver, {
-    default: {
-      sizes: '100vw',
-      resizedImageUrl: (src, width) => `https://res.cloudinary.com/aarongustafson/image/fetch/q_auto,f_auto,w_${width}/${src}`,
-      attributes: {
-        loading: 'lazy',
-      },
-    },
     hero: {
       sizes: '100vw',
       resizedImageUrl: (src, width) => `https://res.cloudinary.com/aarongustafson/image/fetch/q_auto,f_auto,w_${width}/${src}`,
+      attributes: {},
     },
     thumbnail: {
       sizes: '100px',
@@ -82,7 +76,14 @@ module.exports = config => {
       attributes: {
         loading: 'lazy',
       },
-    }
+    },
+    default: {
+      sizes: '100vw',
+      resizedImageUrl: (src, width) => `https://res.cloudinary.com/aarongustafson/image/fetch/q_auto,f_auto,w_${width}/${src}`,
+      attributes: {
+        loading: 'lazy',
+      },
+    },
   });
   config.addPlugin(embedCodePen);
   config.addPlugin(pluginRss, {
@@ -195,7 +196,7 @@ module.exports = config => {
   return {
     markdownTemplateEngine: "njk",
     dataTemplateEngine: "njk",
-    htmlTemplateEngine: "md,njk",
+    htmlTemplateEngine: "njk",
     dir: {
       input: "src",
       output: "dist"

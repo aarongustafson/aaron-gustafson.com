@@ -46,7 +46,7 @@ github_edit: "_layouts/blog.html"
 
           <div class="entry__content entry__content--excerpt entry-content">
             {% if post.data.hero %}
-              <img src="{{ site.url }}{{ post.data.hero.src }}" alt="{{ post.data.hero.alt }}" class="entry__thumbnail" width="100" height="100" data-responsiver="thumbnail">
+              <img src="{{ post.data.hero.src | absoluteUrl(site.url) }}" alt="{{ post.data.hero.alt }}" class="entry__thumbnail" width="100" height="100" data-responsiver="thumbnail">
             {% endif %}
             <p>{{ content | safe }}</p>
           </div>
