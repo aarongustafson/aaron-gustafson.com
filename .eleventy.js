@@ -68,7 +68,7 @@ module.exports = config => {
     hero: {
       sizes: '100vw',
       resizedImageUrl: (src, width) => `https://res.cloudinary.com/aarongustafson/image/fetch/q_auto,f_auto,w_${width}/${src}`,
-      attributes: {},
+      attributes: false,
     },
     thumbnail: {
       sizes: '100px',

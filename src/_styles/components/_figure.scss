@@ -17,17 +17,19 @@
 
     .entry__hero {
       display: block;
+      cursor: ns-resize;
       position: relative;
       overflow: hidden;
       width: 100%;
       max-height: 391px;
       min-height: 391px;
-      transition: max-height .5s linear;
+      transition: max-height .5s ease-in;
+      will-change: max-height transition;
 
       &:hover {
         max-height: 695px;
         height: 100%;
-        transition: max-height .5s linear;
+        transition: max-height .5s ease-in;
 
         .entry__hero__image {
           transition: margin-top .5s;
