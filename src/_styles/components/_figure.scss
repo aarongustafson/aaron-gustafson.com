@@ -39,6 +39,7 @@
     }
 
     .entry__hero__image {
+      will-change: margin-top;
       transition: margin-top .5s;
     }
 
