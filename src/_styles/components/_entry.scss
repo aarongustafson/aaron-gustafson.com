@@ -9,6 +9,7 @@ Blog Entry
     @include rem( margin, $margin-default );
     
     &__meta {
+      @include rem( font-size, $font-size-small );
       color: $color-grey;
       padding: 0;
 
@@ -30,11 +31,6 @@ Blog Entry
       button {
         @include rem( margin-top, 6 );
       }
-    }
-    
-    &__header &__meta {
-      @include rem( font-size, $font-size-small );
-
     }
     
     &__jump-links {
@@ -79,6 +75,29 @@ Blog Entry
     
     &--excerpt &__meta {
       display: none;
+    }
+
+    &--page {
+      display: flex;
+      flex-direction: column;
+
+      .entry__header {
+        order: 1;
+      }
+      .entry__content {
+        order: 2;
+      }
+      & > .entry__meta {
+        order: 3;
+        border-top: 1px solid $color-rule;
+        @include rem( padding-top, $default-spacing );
+      }
+      .entry__footer {
+        order: 4;
+      }
+      aside {
+        order: 5;
+      }
     }
 
     &--teaser {
@@ -152,24 +171,28 @@ Blog Entry
   .entry {
     
     position: relative;
+
+    &--page {
+      display: block;
+
+      & > .entry__meta {
+        border-top: 0;
+
+        border-left: 1px solid $color-grey-light;
+        padding: .2em 1em;
+        margin-left: 1em;
+        @include rem( margin-top, $default-spacing );
+        width: 25%;
+        
+        position: absolute;
+        left: 106%;
+      }
+    }
     
     &--excerpt &__meta {
       display: block;
     }
 
-    &__header &__meta {
-      
-      border-left: 1px solid $color-grey-light;
-      padding: .2em 1em;
-      margin-left: 1em;
-      @include rem( margin-top, $default-spacing );
-      width: 25%;
-      
-      position: absolute;
-      left: 106%;
-      
-    }
-    
     &__title {
       width: 134%;
     }

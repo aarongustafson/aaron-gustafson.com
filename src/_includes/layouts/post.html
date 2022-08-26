@@ -18,63 +18,63 @@ is_post: true
 
   <div class="layout-container layout-container--blog">
     <article role="article" class="layout-container__primary h-entry">
-      <div class="entry">
+      <div class="entry entry--page">
         <header class="entry__header">
           {{ heading | safe }}
-
-          <div class="entry__meta">
-            {% if reply_to_url %}
-              <p class="entry__in-reply-to">You are reading a reply to 
-                <a class="u-in-reply-to" href="{{ reply_to_url }}">{{ reply_to_title }}</a>.
-              </p>
-            {% endif %}
-
-            {% if series %}
-              <p class="entry__series">This is the {{ series.ordinal }} entry in the series 
-                <a href="/notebook/series/{{ series.tag | replace('series-','') }}">{{ series.name }}</a>.
-              </p>
-            {% endif %}
-
-            <dl>
-              <dt>Published</dt>
-              <dd>
-                {{ post_date( page.date, last_updated_at) }}
-                <b class="hidden">by <a class="p-author h-card" href="/about">Aaron Gustafson</a></b>
-                {% if in_reply_to %} <b class="hidden">in reply to <a class="u-in-reply-to" href="{{ in_reply_to }}">{{ in_reply_to }}</a></b>{% endif %}
-              </dd>
-              
-              <dt>Reading Time</dt>
-              <dd>{{ content | readingTime }}</dd>
-
-              <dt class="dont-read">Tagged</dt>
-              <dd class="dont-read">{{ tag_list( tags ) }}</dd>
-
-              {% if total_webmentions > 0 %}
-                <dt class="dont-read">Reactions</dt>
-                <dd class="dont-read">
-                  <ul class="entry__jump-links">
-                    {#<li class="entry__jump entry__jump--comments"><a href="{% if index %}{{ root_url }}{{ page.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ this_url }}{% endif %}">Comments</a></li>#}
-                    <li class="entry__jump entry__jump--webmentions"><a href="#webmentions">{{ total_webmentions }} Webmentions</a></li>
-                  </ul>
-                </dd>
-              {% endif %}
-
-              {% if crossposted %}
-                <dt class="dont-read">Crossposted</dt>
-                {% for venue, link in crossposted %}
-                  <dd class="dont-read"><a class="u-syndication" href="{{ link }}">{{ venue }}</a></dd>
-                {% endfor %}
-              {% endif %}
-
-              {% if translations %}
-                <dt class="dont-read">Translated</dt>
-                {% for lang, link in translations %}
-                  <dd class="dont-read"><a class="u-syndication" hreflang="{{ lang }}" href="{{ link }}">{{ langs[lang] }}</a></dd>
-                {% endfor %}
-              {% endif %}
-            </dl>
-          </div>
         </header>
+
+        <div class="entry__meta">
+          {% if reply_to_url %}
+            <p class="entry__in-reply-to">You are reading a reply to 
+              <a class="u-in-reply-to" href="{{ reply_to_url }}">{{ reply_to_title }}</a>.
+            </p>
+          {% endif %}
+
+          {% if series %}
+            <p class="entry__series">This is the {{ series.ordinal }} entry in the series 
+              <a href="/notebook/series/{{ series.tag | replace('series-','') }}">{{ series.name }}</a>.
+            </p>
+          {% endif %}
+
+          <dl>
+            <dt>Published</dt>
+            <dd>
+              {{ post_date( page.date, last_updated_at) }}
+              <b class="hidden">by <a class="p-author h-card" href="/about">Aaron Gustafson</a></b>
+              {% if in_reply_to %} <b class="hidden">in reply to <a class="u-in-reply-to" href="{{ in_reply_to }}">{{ in_reply_to }}</a></b>{% endif %}
+            </dd>
+            
+            <dt>Reading Time</dt>
+            <dd>{{ content | readingTime }}</dd>
+
+            <dt class="dont-read">Tagged</dt>
+            <dd class="dont-read">{{ tag_list( tags ) }}</dd>
+
+            {% if total_webmentions > 0 %}
+              <dt class="dont-read">Reactions</dt>
+              <dd class="dont-read">
+                <ul class="entry__jump-links">
+                  {#<li class="entry__jump entry__jump--comments"><a href="{% if index %}{{ root_url }}{{ page.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ this_url }}{% endif %}">Comments</a></li>#}
+                  <li class="entry__jump entry__jump--webmentions"><a href="#webmentions">{{ total_webmentions }} Webmentions</a></li>
+                </ul>
+              </dd>
+            {% endif %}
+
+            {% if crossposted %}
+              <dt class="dont-read">Crossposted</dt>
+              {% for venue, link in crossposted %}
+                <dd class="dont-read"><a class="u-syndication" href="{{ link }}">{{ venue }}</a></dd>
+              {% endfor %}
+            {% endif %}
+
+            {% if translations %}
+              <dt class="dont-read">Translated</dt>
+              {% for lang, link in translations %}
+                <dd class="dont-read"><a class="u-syndication" hreflang="{{ lang }}" href="{{ link }}">{{ langs[lang] }}</a></dd>
+              {% endfor %}
+            {% endif %}
+          </dl>
+        </div>
 
         <div class="entry__content e-content">
 

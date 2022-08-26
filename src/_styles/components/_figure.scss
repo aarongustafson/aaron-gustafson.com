@@ -4,65 +4,75 @@
 
 @include breakup-breakpoint( "global" ) {
 
-    .figure {
-        @include rem( margin, $default-spacing auto );
-    }
-
-    .entry__thumbnail {
-      float: left;
-      margin-right: 2rem;
-      width: 100px;
-      height: 100px;
-    }
-
-    .entry__hero {
-      display: block;
-      cursor: ns-resize;
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      max-height: 391px;
-      min-height: 391px;
-      transition: max-height .5s ease-in;
-      will-change: max-height transition;
-
-      &:hover {
-        max-height: 695px;
-        height: 100%;
-        transition: max-height .5s ease-in;
-
-        .entry__hero__image {
-          transition: margin-top .5s;
-          margin-top: 0 !important;
-        }
-      }
-    }
-
-    .entry__hero__image {
-      will-change: margin-top;
-      transition: margin-top .5s;
-    }
-
-    .entry__hero__credit {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background: black;
-      color: white;
-      font-size: x-small;
-      padding: .25rem .5rem;
-      font-weight: bold;
-      font-style: normal;
-
-      a,
-      a:hover,
-      a:focus,
-      a:visited { 
-        background-image: none;
-        color: inherit;
-        text-shadow: none;
-        text-decoration: underline;
-      }
-    }
-
+  .figure {
+      @include rem( margin, $default-spacing auto );
   }
+
+  .entry__thumbnail {
+    float: left;
+    margin-right: 2rem;
+    width: 100px;
+    height: 100px;
+  }
+
+  .entry__hero {
+    display: block;
+    position: relative;
+  }
+
+  .entry__hero__credit {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: black;
+    color: white;
+    font-size: x-small;
+    padding: .25rem .5rem;
+    font-weight: bold;
+    font-style: normal;
+
+    a,
+    a:hover,
+    a:focus,
+    a:visited { 
+      background-image: none;
+      color: inherit;
+      text-shadow: none;
+      text-decoration: underline;
+    }
+  }
+
+}
+
+@include breakup-media("screen and (max-width: #{$bp-full-em})") {
+  .entry__hero__image {
+    margin-top: 0 !important;
+  }
+}
+
+@include breakup-breakpoint( "full" ) {
+  .entry__hero {
+    cursor: ns-resize;
+    overflow: hidden;
+    max-height: 391px;
+    min-height: 391px;
+    transition: max-height .5s ease-in;
+    will-change: max-height transition;
+
+    &:hover {
+      max-height: 695px;
+      height: 100%;
+      transition: max-height .5s ease-in;
+
+      .entry__hero__image {
+        transition: margin-top .5s;
+        margin-top: 0 !important;
+      }
+    }
+  }
+
+  .entry__hero__image {
+    will-change: margin-top;
+    transition: margin-top .5s;
+  }
+}
