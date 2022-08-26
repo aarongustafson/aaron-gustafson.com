@@ -25,8 +25,8 @@
     <category term="{{ tag }}" />
   {% endfor %}
 
-  {% if post.data.image %}
-    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{{ post.data.image }}" />
+  {% if post.data.hero %}
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{{ site.url }}{{ post.data.hero.src }}" />
   {% endif %}
 
 </entry>

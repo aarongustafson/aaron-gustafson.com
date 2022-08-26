@@ -17,8 +17,8 @@
     "tags": {{ post.data.tags | dump | safe }},
   {% endif %}
   
-  {% if post.data.image %}
-    "image": "{{ post.data.image }}",
+  {% if post.data.hero %}
+    "image": "{{ site.url }}{{ post.data.hero.src }}",
   {% endif %}
   
   "date_published": "{{ post.date | dateToRfc3339 }}"
