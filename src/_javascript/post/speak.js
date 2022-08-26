@@ -81,7 +81,7 @@ if ( 'speechSynthesis' in window )
     paused = false,
     text,
     progress_index = 0,
-    $meta = document.querySelector('.entry__meta'),
+    $meta = document.querySelector('.entry__meta > dl'),
     $content = document.querySelector('main').cloneNode(true),
     $space = $content.querySelectorAll('pre'),
     $pause_before = $content.querySelectorAll('h2, h3, h4, h5, h6, p, li, dt, blockquote, pre, figure, footer'),
@@ -97,7 +97,7 @@ if ( 'speechSynthesis' in window )
     //$speed = $buttons.cloneNode(true),
     //$speed_label = document.createElement('label'),
     //$speed_value = document.createElement('input'),
-    $caveat = $buttons.cloneNode(true);
+    $caveat = document.createElement('small');
   
   // Don’t read
   Array.prototype.forEach.call( $skip, function( $el ){
@@ -165,6 +165,7 @@ if ( 'speechSynthesis' in window )
   //$speed_label.innerText = 'Speed';
   //$speed_label.htmlFor = 'speed_value';
   //$speed.appendChild( $speed_label );
+
   //$speed_value.type = 'number';
   //$speed_value.id = 'speed_value';
   ////$speed_value.disabled = true;
@@ -181,7 +182,7 @@ if ( 'speechSynthesis' in window )
   //$controls.appendChild($speed);
 
   // Caveat
-  $caveat.innerHTML = '<small>SpeechSynthesis is still experimental. This could be buggy</small>';
+  $caveat.innerHTML = 'SpeechSynthesis is still experimental. This could be buggy.';
   $controls.appendChild($caveat);
 
   $fragment.appendChild($intro);

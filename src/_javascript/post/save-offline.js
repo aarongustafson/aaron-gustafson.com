@@ -51,7 +51,7 @@
     $controls.appendChild( $button );
     $controls.classList.add( "dont-read" );
     $df.appendChild( $controls );
-    document.querySelector('.entry__meta').appendChild( $df );
+    document.querySelector('.entry__meta > dl').appendChild( $df );
   }
 
 }( this ));
