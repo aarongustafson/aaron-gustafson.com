@@ -38,6 +38,8 @@ entry > published,
 entry > updated,
 entry > id,
 entry > author,
-entry > content {
+entry > content,
+entry > summary,
+entry > amg:twitter {
   display: none;
 }
