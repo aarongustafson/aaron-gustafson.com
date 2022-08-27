@@ -81,22 +81,17 @@ Blog Entry
       display: flex;
       flex-direction: column;
 
-      .entry__header {
+      .entry__header,
+      .entry__content {
         order: 1;
       }
-      .entry__content {
-        order: 2;
-      }
       & > .entry__meta {
-        order: 3;
+        order: 2;
         border-top: 1px solid $color-rule;
         @include rem( padding-top, $default-spacing );
       }
-      .entry__footer {
-        order: 4;
-      }
-      aside {
-        order: 5;
+      & > * {
+        order: 3;
       }
     }
 
