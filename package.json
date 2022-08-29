@@ -58,6 +58,7 @@
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
     "imagetracerjs": "^1.2.6",
+    "js-yaml": "^4.1.0",
     "lodash": "^4.17.21",
     "luxon": "^1.27.0",
     "markdown-it-anchor": "^8.6.2",

@@ -14,15 +14,15 @@ github_edit: "_layouts/blog.html"
     <div class="layout-container__primary">
       
       {% for post in posts %}
-        {% set content %}{% if post.data.page.excerpt %}{{ post.data.page.excerpt | markdownify | safe }}{% else %}{{ post.templateContent | safe }}{% endif %}{% endset %}
+        {% set content %}{% if post.data.page.excerpt %}<p>{{ post.data.page.excerpt | markdownify | safe }}</p>{% else %}{{ post.templateContent | safe }}{% endif %}{% endset %}
         {% set is_excerpted = ( post.templateContent != content ) %}
         
-        <article class="entry entry--excerpt entry--{{ post.data.collection }}{% if post.data.hero %} entry--with-hero{% endif %}">
+        <article class="entry entry--excerpt entry--{{ post.data.collection }}{% if post.data.hero or post.data.og_image %} entry--with-hero{% endif %}">
           <header class="entry__header">
             <h1 class="entry__title entry-title">
               {% if is_excerpted %}
                 <a rel="bookmark" href="{{ post.url }}">{{ post.data.title | widont | markdownify | safe }}</a>
-              {% elif post.data.ref_url %}
+              {% elif post.data.ref_url and not post.data.is_404 %}
                 <a rel="external original-article" href="{{ post.data.ref_url }}">{{ post.data.title | widont | markdownify | safe }}</a>
               {% else %}
                 {{ post.data.title | widont | markdownify | safe }}
@@ -36,6 +36,16 @@ github_edit: "_layouts/blog.html"
                   <dt class="hidden">Via</dt>
                   <dd>↬ <a href="{{ via.url }}">{{ via.name }}</a></dd>
                 {% endif %}
+                {% if post.data.ref_url %}
+                <dt class="hidden">Source</dt>
+                <dd>
+                  {% if post.data.is_404 %}
+                    {{ post.data.ref_source }}
+                  {% else %}
+                    <a rel="external original-article" href="{{ post.data.ref_url }}">{{ post.data.ref_source }}</a>
+                  {% endif %}
+                </dd>
+                {% endif %}
                 {% if post.data.tags %}
                   <dt class="dont-read hidden">Tagged</dt>
                   <dd class="dont-read">{{ tag_list( post.data.tags ) }}</dd>
@@ -48,19 +58,24 @@ github_edit: "_layouts/blog.html"
             {% if post.data.hero %}
               <img data-responsiver="thumbnail" src="{{ post.data.hero.src | absoluteUrl(site.url) }}" alt="{{ post.data.hero.alt }}" class="entry__thumbnail" width="100" height="100">
             {% endif %}
-            <p>{{ content | safe }}</p>
+            {% if post.data.og_image %}
+              <img data-responsiver="thumbnail" src="{{ post.data.og_image }}" alt="" class="entry__thumbnail" width="100" height="100">
+            {% endif %}
+            {{ content | safe }}
           </div>
 
-          <footer class="entry__footer">
-            <p>
-              {% if is_excerpted %}
-                <a rel="bookmark" href="{{ post.url }}">You can finish reading
-                <cite>{{ post.data.title | safe }}</cite> in less than {{ post.templateContent | readingTime }}</a>
-              {% elif post.data.ref_url %}
-                <a rel="external original-article" href="{{ post.data.ref_url }}">Source: {{ post.data.ref_source }}</a>
-              {% endif %}
-            </p>
-          </footer>
+          {% if is_excerpted or post.data.is_404 %}
+            <footer class="entry__footer">
+              <p>
+                {% if is_excerpted %}
+                  <a rel="bookmark" href="{{ post.url }}">You can finish reading
+                  <cite>{{ post.data.title | safe }}</cite> in less than {{ post.templateContent | readingTime }}</a>
+                {% elif post.data.is_404 %}
+                  This original link is 404-ing, but <a rel="bookmark" href="{{ post.archived }}">you can view it on the Wayback Machine</a>.
+                {% endif %}
+              </p>
+            </footer>
+          {% endif %}
         </article>
         {% if not forloop.last %}
           <hr class="rule">

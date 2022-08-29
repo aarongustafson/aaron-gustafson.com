@@ -1,4 +1,0 @@
-{
-  "layout": "layouts/link.html",
-  "permalink": "/notebook/{{ page.filePathStem }}/"
-}
