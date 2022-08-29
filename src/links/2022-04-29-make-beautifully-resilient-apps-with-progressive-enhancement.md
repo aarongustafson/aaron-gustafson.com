@@ -12,7 +12,7 @@ A good walkthrough on how to build a form that hooks into an API and works eithe
 
 One note however: Austin in incorrect in that you absolutely can define nested objects in your forms. I’ve done it many times. Your field names just need to use bracket notation like this:
 
-```
+```html
 <input name="foo['bar']['baz']">
 ```
 

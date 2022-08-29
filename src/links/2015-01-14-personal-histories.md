@@ -5,8 +5,10 @@ comments: false
 ref_url: http://www.sarawb.com/2015/01/13/personal-histories/
 in_reply_to: http://www.sarawb.com/2015/01/13/personal-histories/
 ref_source: Sara Wachter-Boettcher
+is_404: true
+archived: https://web.archive.org/web/20190427094359/http://www.sarawb.com/2015/01/13/personal-histories/
 ---
 
-This is a bautiful post from Sara that takes a deep dive into the impersonal nature of forms. I could not put it more bautifully and succinctly than her introductory tweet:
+This is a beautiful post from Sara that takes a deep dive into the impersonal nature of forms. I could not put it more beautifully and succinctly than her introductory tweet:
 
 https://twitter.com/sara_ann_marie/status/555007063873818624
