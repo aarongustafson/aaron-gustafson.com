@@ -13,11 +13,10 @@ with:
 <% } -%>
 category: <%= category %>
 tags: [ "<%- tags.join('\", \"') %>" ]
-events: [ <%- events.join('\", \"') %> ]
+events: [ <%- events.join(', ') %> ]
 <% if (locals.has_slides) { -%>
 slides:
-  link: <%= slides.slidesurl %>
-  embed: <%= slides.slidesembed %>
+  notist_id: <%= slides.notist_id %>
   download: <%= slides.slidesdownload %>
 <% } -%>
 <% if (locals.has_video) { -%>

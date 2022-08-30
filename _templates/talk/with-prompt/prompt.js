@@ -86,8 +86,7 @@ module.exports = {
               return !this.state.answers.has_slides;
             },
             choices: [
-              { name: 'slidesurl', message: 'Link URL' },
-              { name: 'slidesembed', message: 'Embed URL' },
+              { name: 'notist_id', message: 'Noti.st ID' },
               { name: 'slidesdownload', message: 'Download URL' }
             ]
           },
