@@ -72,7 +72,7 @@ module.exports = config => {
     },
     thumbnail: {
       sizes: '100px',
-      resizedImageUrl: (src) => `https://res.cloudinary.com/aarongustafson/image/fetch/q_auto,f_auto,w_100/${src}`,
+      resizedImageUrl: (src) => `https://res.cloudinary.com/aarongustafson/image/fetch/q_100,f_auto,w_100,h_100,c_fill/${src}`,
       attributes: {
         loading: 'lazy',
       },

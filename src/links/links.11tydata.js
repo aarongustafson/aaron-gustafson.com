@@ -8,6 +8,7 @@ let og_images = yaml.load(fs.readFileSync(CACHE_FILE_PATH));
 const fetch = require('node-fetch');
 const current_month = new Date().getMonth() + 1;
 const CACHE_API_LIMITS_PATH =  '_cache/api_limits_reached.json';
+const CACHE_404_PATH =  '_cache/404s.yml';
 let api_limits = JSON.parse(fs.readFileSync(CACHE_API_LIMITS_PATH));
 
 async function readOpenGraphr(url) {
@@ -72,26 +73,35 @@ async function readOpenGraphIo(url) {
 
   // error
   let json = await response.json();
-  if ( json.error.message.indexOf("limit") > -1 )
-  {
-    logAPILimitReached('OpenGraph_io');
-    console.log(`>>> OpenGraph.io limit reached`);
+  if ( "error" in json && "message" in json.error) {
+    if ( json.error.message.indexOf("limit") > -1 )
+    {
+      logAPILimitReached('OpenGraph_io');
+      console.log(`>>> OpenGraph.io limit reached`);
+    }
+    else if ( json.error.message.indexOf("404") > -1 ||
+              json.error.message.indexOf("could not be found") > -1 ) {
+      console.log(`>>> OpenGraph.io got a 404 on ${url}`);
+      writeToCache( url, true, CACHE_404_PATH );
+      return "404";
+    }
+    else{
+      console.log(`>>> unable to check OpenGraph.io: ${json.error.message}`);
+    }
   }
-  else if ( json.error.message.indexOf("404") > -1 ) {
-    console.log(`>>> OpenGraph.io got a 404 on ${url}`);
-  }
-  else{
-    console.log(`>>> unable to check OpenGraph.io: ${json.error.message}`);
+  else {
+    console.log(`>>> unknown error checking OpenGraph.io: ${response}`);
   }
   return false;
 }
 
-function writeToCache( url, value ) {
+function writeToCache( url, value, cache ) {
+  cache = cache || CACHE_FILE_PATH;
   // make sure we don’t write more than once
-  const data = yaml.load(fs.readFileSync(CACHE_FILE_PATH));
+  const data = yaml.load(fs.readFileSync(cache));
   if ( ! (url in data) )
   {
-    fs.appendFile(CACHE_FILE_PATH, `${url}: ${value}\n`, err => {
+    fs.appendFile(cache, `${url}: "${value}"\n`, err => {
       if (err) throw err;
       console.log(`>>> Opengraph images for ${url} cached`);
     });
@@ -129,7 +139,7 @@ module.exports = {
       const url = data.ref_url;
       if ( url in og_images )
       {
-        return og_images[url] === true ? false : og_images[url];
+        return ( og_images[url] === true || og_images[url] === "404" ) ? false : og_images[url];
       }
       else
       {
@@ -152,16 +162,17 @@ module.exports = {
           return false;
         }
         let og_image = false;
-        // Try OpenGraphr
-        og_image = await readOpenGraphr(url);
-        // Backup: OpenGraph.io
+        // Try OpenGraph.io
+        og_image = await readOpenGraphIo(url);
+        // Backup: OpenGraphr
         if ( og_image === false ) {
-          og_image = await readOpenGraphIo(url);
+          og_image = await readOpenGraphr(url);
         }
-        console.log(url, og_image);
-        if ( og_image !== false ) {
-          writeToCache(url, og_image);
+        //console.log(url, og_image);
+        if ( og_image === false ) {
+          og_image = true;
         }
+        writeToCache(url, og_image);
         return og_image;
       }
     }
