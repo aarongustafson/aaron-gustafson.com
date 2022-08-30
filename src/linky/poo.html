@@ -35,7 +35,7 @@ sitemap: false
     <link rel="preconnect" href="https://api.github.com" crossorigin>
   </head>
   <body class="linky-poo">
-    <section id="linky-poo" class="section section--linky-poo">
+    <main id="linky-poo" class="section section--linky-poo">
       <div class="layout-container">
         <div id="messages" tabindex="-1">
         {% if site.github.repo == none %}
@@ -52,27 +52,27 @@ sitemap: false
             <ul class="fields">
               <li class="fields__group fields__group--text">
                 <label for="p_title">Title</label>
-                <input id="p_title">
+                <input id="p_title" name="p_title">
               </li>
               <li class="fields__group fields__group--url">
                 <label for="p_link">URL</label>
-                <input type="url" id="p_link">
+                <input type="url" id="p_link" name="p_link">
               </li>
               <li class="fields__group fields__group--text">
                 <label for="p_source">Source</label>
-                <input id="p_source">
+                <input id="p_source" name="p_source">
               </li>
               <li class="fields__group fields__group--textarea">
                 <label for="p_body">Want to tweet something specific?</label>
-                <textarea id="p_tweet" maxlength="200"></textarea>
+                <textarea id="p_tweet" name="p_tweet" maxlength="200"></textarea>
               </li>
               <li class="fields__group fields__group--textarea">
                 <label for="p_body">What do you want to say?</label>
-                <textarea id="p_body"></textarea>
+                <textarea id="p_body" name="p_body"></textarea>
               </li>
               <li class="fields__group fields__group--text">
                 <label for="p_tags">How would you tag this?</label>
-                <input id="p_tags" list="tags" data-multiple>
+                <input id="p_tags" name="p_tags" list="tags" data-multiple>
                 <datalist id="tags">
                   {% for tag in collections.tags %}
                     <option>{{ tag }}</option>
@@ -86,11 +86,11 @@ sitemap: false
             <ul class="fields">
               <li class="fields__group fields__group--text">
                 <label for="p_via_name">Name</label>
-                <input id="p_via_name">
+                <input id="p_via_name" name="p_via_name">
               </li>
               <li class="fields__group fields__group--url">
                 <label for="p_via_url">URL</label>
-                <input type="url" id="p_via_url">
+                <input type="url" id="p_via_url" name="p_via_url">
               </li>
             </ul>
           </fieldset>
@@ -116,7 +116,8 @@ sitemap: false
           </details>
         </form>
       </div>
-    </section>
+    </main>
+    <script src="/j/form-saver{% if site.minify %}.min{% endif %}.js" async defer></script>
     <script>
       function get_query(){
         var url = document.location.href;
