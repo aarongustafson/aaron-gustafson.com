@@ -1,5 +1,12 @@
 [
   {
+    "id": 147,
+    "title": "PWA Summit",
+    "date": "2022-10-05 00:09:00 -0800",
+    "location": "Online",
+    "url": "https://pwasummit.org"
+  },
+  {
     "id": 146,
     "title": "Microsoft Build",
     "date": "2022-05-24 00:09:00 -0800",
