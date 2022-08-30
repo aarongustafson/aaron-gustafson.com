@@ -2,8 +2,8 @@
 title: "Make Beautifully Resilient Apps With Progressive Enhancement"
 date: 2022-04-29T16:14:04.855Z
 tags: ["progressive enhancement", "JavaScript"]
-ref_url: https://blog.pwabuilder.com/posts/announcing-pwa-studio-the-vs-code-extension-for-building-progressive-web-apps!/
-in_reply_to: https://blog.pwabuilder.com/posts/announcing-pwa-studio-the-vs-code-extension-for-building-progressive-web-apps!/
+ref_url: https://austingil.com/resilient-applications-progressive-enhancement/
+in_reply_to: https://austingil.com/resilient-applications-progressive-enhancement/
 twitter_text: "A good walkthrough on how to build a form that hooks into an API and works either with or without JavaScript."
 ref_source: "Austin Gil"
 ---
