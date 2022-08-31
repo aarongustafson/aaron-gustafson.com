@@ -71,7 +71,7 @@ github_edit: "_layouts/blog.html"
                   <a rel="bookmark" href="{{ post.url }}">You can finish reading
                   <cite>{{ post.data.title | safe }}</cite> in less than {{ post.templateContent | readingTime }}</a>
                 {% elif post.data.is_404 %}
-                  This original link is 404-ing, but <a rel="bookmark" href="{{ post.archived }}">you can view it on the Wayback Machine</a>.
+                  This link is 404-ing{% if post.data.archived %}, but <a rel="bookmark" href="{{ post.data.archived }}">you can view an archived version on the Wayback Machine</a>{% endif %}.
                 {% endif %}
               </p>
             </footer>

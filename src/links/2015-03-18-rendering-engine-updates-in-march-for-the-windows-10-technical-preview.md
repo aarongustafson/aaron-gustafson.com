@@ -3,8 +3,8 @@ title: "Rendering engine updates in March for the Windows 10 Technical Preview"
 description: "The new browser codenamed “Project Spartan” won’t be in it, but the March build of the public Windows 10 preview has a bunch of new features."
 date: 2015-03-18 15:20:46 -04:00
 comments: false
-ref_url: http://blogs.msdn.com/b/ie/archive/2015/03/18/rendering-engine-updates-in-march-for-the-windows-10-technical-preview.aspx
-in_reply_to: http://blogs.msdn.com/b/ie/archive/2015/03/18/rendering-engine-updates-in-march-for-the-windows-10-technical-preview.aspx
+ref_url: https://blogs.windows.com/msedgedev/2015/03/18/rendering-engine-updates-in-march-for-the-windows-10-technical-preview/
+in_reply_to: https://blogs.windows.com/msedgedev/2015/03/18/rendering-engine-updates-in-march-for-the-windows-10-technical-preview/
 ref_source: IEBlog
 ---
 

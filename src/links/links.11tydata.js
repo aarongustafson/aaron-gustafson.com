@@ -42,6 +42,12 @@ async function readOpenGraphr(url) {
   {
     logAPILimitReached('OpenGraphr');
   }
+  else if ( json.error.indexOf("404") > -1 ||
+            json.error.indexOf("could not be found") > -1 ) {
+    console.log(`>>> OpenGraphr got a 404 on ${url}`);
+    writeToCache( url, true, CACHE_404_PATH );
+    return 404;
+  }
   console.log(`>>> unable to check OpenGraphr: ${json.error}`);
   return false;
 }
@@ -83,7 +89,7 @@ async function readOpenGraphIo(url) {
               json.error.message.indexOf("could not be found") > -1 ) {
       console.log(`>>> OpenGraph.io got a 404 on ${url}`);
       writeToCache( url, true, CACHE_404_PATH );
-      return "404";
+      return 404;
     }
     else{
       console.log(`>>> unable to check OpenGraph.io: ${json.error.message}`);
@@ -101,7 +107,7 @@ function writeToCache( url, value, cache ) {
   const data = yaml.load(fs.readFileSync(cache));
   if ( ! (url in data) )
   {
-    value = ( $value === true || $value == 404 ) ? value : `"${value}"`;
+    value = ( value === true || value == 404 ) ? value : `"${value}"`;
     fs.appendFile(cache, `${url}: ${value}\n`, err => {
       if (err) throw err;
       console.log(`>>> Opengraph images for ${url} cached`);
@@ -132,10 +138,32 @@ function wasAPILimitReached(which){
   return true;
 }
 
+function is404ing(url) {
+  const cached404s = yaml.load(fs.readFileSync(CACHE_404_PATH));
+  return ( url in cached404s );
+}
+
+function archived(data) {
+  let archive_url = 'https://web.archive.org/web/{{ DATE }}/{{ URL }}';
+  let month = data.date.getUTCMonth()+1;
+  month = month < 10 ? "0" + month : month;
+  let day = data.date.getDay();
+  day = day < 10 ? "0" + day : day;
+  archive_url = archive_url.replace('{{ DATE }}', `${data.date.getUTCFullYear()}${month}${day}`)
+                           .replace('{{ URL }}', data.ref_url );
+  return archive_url;
+}
+
 module.exports = {
   "layout": "layouts/link.html",
   "permalink": "/notebook/{{ page.filePathStem }}/",
   eleventyComputed: {
+    is_404: (data) => {
+      return is404ing(data.ref_url);
+    },
+    archived: (data) => {
+      return is404ing(data.ref_url) ? archived(data) : false;
+    },
     og_image: async (data) => {
       const url = data.ref_url;
       if ( url in og_images )

@@ -2,9 +2,9 @@
 title: "Living on the Edge – Our Next Step in Helping the Web Just Work"
 date: 2015-01-07 08:42:43 -05:00
 comments: false
-ref_url: http://blogs.msdn.com/b/ie/archive/2014/11/11/living-on-the-edge-our-next-step-in-interoperability.aspx
-in_reply_to: http://blogs.msdn.com/b/ie/archive/2014/11/11/living-on-the-edge-our-next-step-in-interoperability.aspx
-ref_source: IE Blog
+ref_url: https://blogs.windows.com/msedgedev/2014/11/11/living-on-the-edge-our-next-step-in-helping-the-web-just-work/
+in_reply_to: https://blogs.windows.com/msedgedev/2014/11/11/living-on-the-edge-our-next-step-in-helping-the-web-just-work/
+ref_source: Microsoft Edge Blog
 ---
 
 With the holidays, I completely missed this announcement from IE team. In IE for Windows 10, we’re getting:
