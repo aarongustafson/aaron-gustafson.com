@@ -101,7 +101,8 @@ function writeToCache( url, value, cache ) {
   const data = yaml.load(fs.readFileSync(cache));
   if ( ! (url in data) )
   {
-    fs.appendFile(cache, `${url}: "${value}"\n`, err => {
+    value = ( $value === true || $value == 404 ) ? value : `"${value}"`;
+    fs.appendFile(cache, `${url}: ${value}\n`, err => {
       if (err) throw err;
       console.log(`>>> Opengraph images for ${url} cached`);
     });
