@@ -9,8 +9,8 @@ is_post: true
   {% set this_url = site.url + page.url %}
 
   <div class="layout-container layout-container--blog">
-    <article role="article" class="layout-container__primary h-entry">
-      <div class="entry">
+    <main role="article" class="layout-container__primary h-entry">
+      <div class="entry entry--page{% if og_image %} entry--with-hero{% endif %}">
         <header class="entry__header">
           <h1 class="entry__title p-name">
             <a rel="external"
@@ -33,7 +33,7 @@ is_post: true
               <dd><a href="{{ via.url }}">{{ via.name }}</a></dd>
             {% endif %}
 
-            {% if tags.length %}
+            {% if tags.length %} 
               <dt class="dont-read">Tagged</dt>
               <dd class="dont-read">{{ tag_list( tags ) }}</dd>
             {% endif %}
@@ -41,20 +41,32 @@ is_post: true
         </header>
 
         <div class="entry__content e-content">
+          {% if og_image %}
+            <img data-responsiver="thumbnail" src="{{ og_image }}" alt="" class="entry__thumbnail" width="100" height="100">
+          {% endif %}
           {{ content | safe }}
-          <p class="read-on">
-            <a rel="original-article"
-              {% if hreflang %} hreflang="{{ hreflang }}"{% endif %}
-              href="{{ ref_url }}">Read on {{ ref_source }}</a>
-          </p>
         </div>
 
         <footer class="entry__footer">
+          {% if is_404 %}
+            <p>
+              This link is 404-ing{% if archived %}, but 
+              <a rel="bookmark" href="{{ archived }}">you can view an archived version 
+              on the Wayback Machine</a>{% endif %}.
+            </p>
+          {% else %}
+            <p class="read-on">
+              <a rel="original-article"
+                {% if hreflang %} hreflang="{{ hreflang }}"{% endif %}
+                href="{{ ref_url }}">Read on {{ ref_source }}</a>
+            </p>
+          {% endif %}
+
           {% include "partials/post/sharing.html" %}
         </footer>
 
       </div>
-    </article>
+    </main>
     
   </div>
 

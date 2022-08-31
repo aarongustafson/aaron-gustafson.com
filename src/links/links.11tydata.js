@@ -9,6 +9,7 @@ const fetch = require('node-fetch');
 const current_month = new Date().getMonth() + 1;
 const CACHE_API_LIMITS_PATH =  '_cache/api_limits_reached.json';
 const CACHE_404_PATH =  '_cache/404s.yml';
+const cached404s = yaml.load(fs.readFileSync(CACHE_404_PATH));
 let api_limits = JSON.parse(fs.readFileSync(CACHE_API_LIMITS_PATH));
 
 async function readOpenGraphr(url) {
@@ -139,7 +140,6 @@ function wasAPILimitReached(which){
 }
 
 function is404ing(url) {
-  const cached404s = yaml.load(fs.readFileSync(CACHE_404_PATH));
   return ( url in cached404s );
 }
 
@@ -155,8 +155,8 @@ function archived(data) {
 }
 
 module.exports = {
-  "layout": "layouts/link.html",
-  "permalink": "/notebook/{{ page.filePathStem }}/",
+  layout: "layouts/link.html",
+  permalink: "/notebook/{{ page.filePathStem }}/",
   eleventyComputed: {
     is_404: (data) => {
       return is404ing(data.ref_url);
