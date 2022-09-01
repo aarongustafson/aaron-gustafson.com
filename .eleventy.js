@@ -66,7 +66,7 @@ module.exports = config => {
   config.addPlugin(readingTime);
   config.addPlugin(imagesResponsiver, {
     hero: {
-      sizes: '100vw',
+      sizes: '700px, (max-width: 60em) 100vw',
       resizedImageUrl: (src, width) => `https://res.cloudinary.com/aarongustafson/image/fetch/q_auto,f_auto,w_${width}/${src}`,
       attributes: false,
     },
@@ -78,7 +78,7 @@ module.exports = config => {
       },
     },
     default: {
-      sizes: '100vw',
+      sizes: '700px, (max-width: 60em) 100vw',
       resizedImageUrl: (src, width) => `https://res.cloudinary.com/aarongustafson/image/fetch/q_auto,f_auto,w_${width}/${src}`,
       attributes: {
         loading: 'lazy',
