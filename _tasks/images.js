@@ -1,9 +1,8 @@
 /* jshint node: true */
 const {dest, src} = require('gulp');
 const config = require("./config.js");
-const imagemin = require('gulp-imagemin');
+const squoosh = require("gulp-squoosh");
 const newer  = require("gulp-newer");
-// const webp  = require("gulp-webp");
 
 const destination = `${config.static}/i`;
 const dist = `${config.destination}/i`;
@@ -16,21 +15,13 @@ const images = cb => {
     // Only take new files
     .pipe( newer( destination ) )
     // Optimize
-    .pipe(
-      imagemin(
-        [
-          imagemin.mozjpeg({quality: 60, progressive: true}),
-          imagemin.optipng({optimizationLevel: 5, interlaced: null})
-        ],
-        { silent: true }
-      )
-    )
+    .pipe( squoosh() )
     .pipe( dest( destination ) )
     .pipe( dest( dist ) )
     //.pipe( gulpIf( /.*?\.(jpg|png)$/, webp() ) )
     //.pipe( dest(`${config.source}/static/i`) )
-    .on('done', cb);
-    
+    //.on('done', cb);
+
 };
 
 module.exports = images;
