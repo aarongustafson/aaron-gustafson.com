@@ -27,8 +27,7 @@
   "homepage": "https://aaron-gustafson.com",
   "dependencyComments": {
     "gulp": "gulp 5.x requires ESM and will require major work to overhaul",
-    "gulp-imagemin": "gulp-imagemin 3.x requires ESM and will require major work to overhaul",
-    "node-fetch": "node-fetch 3.x requires ESM and will require major work to overhaul"
+    "gulp-imagemin": "gulp-imagemin 3.x requires ESM and will require major work to overhaul"
   },
   "dependencies": {
     "@11ty/eleventy": "^1.0.2",
@@ -74,7 +73,7 @@
     "merge-stream": "^2.0.0",
     "netlify-lambda": "^2.0.15",
     "netlify-plugin-cache-folder": "0.0.8",
-    "node-fetch": "^2.6.7",
+    "node-fetch": "^3.2.10",
     "nth-check": "^2.1.1",
     "sass": "^1.54.8",
     "semver-regex": "^4.0.5",

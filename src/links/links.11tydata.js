@@ -5,7 +5,7 @@ const fs = require('fs');
 const CACHE_FILE_PATH = '_cache/og_images.yml';
 const yaml = require('js-yaml');
 let og_images = yaml.load(fs.readFileSync(CACHE_FILE_PATH));
-const fetch = require('node-fetch');
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 const current_month = new Date().getMonth() + 1;
 const CACHE_API_LIMITS_PATH =  '_cache/api_limits_reached.json';
 const CACHE_404_PATH =  '_cache/404s.yml';

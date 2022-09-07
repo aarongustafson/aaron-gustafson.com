@@ -1,5 +1,5 @@
 const fs = require('fs');
-const fetch = require('node-fetch');
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 const unionBy = require('lodash/unionBy');
 const domain = require('./site.json').domain;
 const spammers = require('./webmention_spammers.json');
