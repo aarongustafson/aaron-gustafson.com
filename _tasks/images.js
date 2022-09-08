@@ -20,7 +20,10 @@ const cacheFiles = () => {
     objectMode: true,
     transform: (file, encoding, next) => {
       const file_path = path.relative(file.cwd, file.path);
-      optimized_images.push(file_path);
+      // skip the client images
+      if ( file_path.indexOf( "_images/c/" ) < 0 ) {
+        optimized_images.push(file_path);
+      }
       return next(null, file);
     }
   });
