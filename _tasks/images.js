@@ -21,7 +21,7 @@ const cacheFiles = () => {
     transform: (file, encoding, next) => {
       const file_path = path.relative(file.cwd, file.path);
       // skip the client images
-      if ( file_path.indexOf( "_images/c/" ) < 0 ) {
+      if ( file_path.indexOf( ".svg" ) < 0 ) {
         optimized_images.push(file_path);
       }
       return next(null, file);
