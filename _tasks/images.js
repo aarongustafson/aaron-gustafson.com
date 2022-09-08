@@ -43,6 +43,12 @@ const writeCache = () => {
   return stream;
 };
 
+const svgo_opts = {
+  plugins: [
+      { removeViewBox: false }
+  ]
+};
+
 // Grabs all images, runs them through imagemin
 // and plops them in the dist folder
 const images = () => {
@@ -55,7 +61,7 @@ const images = () => {
     // Save the list of new files
     .pipe( cacheFiles() )
     // Optimize
-    .pipe( gulpif( "*.svg", svgo(), squoosh() ) )
+    .pipe( gulpif( "*.svg", svgo( svgo_opts ), squoosh() ) )
     // Save
     .pipe( dest( destination ) )
     .pipe( dest( dist ) )

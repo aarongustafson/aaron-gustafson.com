@@ -58,6 +58,7 @@
     small {
       @include rem( font-size, $font-size-tiny );
       font-style: italic;
+      display: block;
     }
 
 
