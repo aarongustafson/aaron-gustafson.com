@@ -36,6 +36,7 @@ github_edit: "_layouts/blog.html"
                   <dt class="hidden">Via</dt>
                   <dd>↬ <a href="{{ via.url }}">{{ via.name }}</a></dd>
                 {% endif %}
+                {# Commenting out for now
                 {% if post.data.ref_url %}
                 <dt class="hidden">Source</dt>
                 <dd>
@@ -46,8 +47,9 @@ github_edit: "_layouts/blog.html"
                   {% endif %}
                 </dd>
                 {% endif %}
+                end comment #}
                 {% if post.data.tags %}
-                  <dt class="dont-read hidden">Tagged</dt>
+                  <dt class="dont-read hidden">Filed Under</dt>
                   <dd class="dont-read">{{ tag_list( post.data.tags ) }}</dd>
                 {% endif %}
               </dl>
