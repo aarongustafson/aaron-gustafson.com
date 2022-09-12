@@ -43,13 +43,10 @@ const writeCache = () => {
   return stream;
 };
 
-const squoosh_opts = ({ width, height, size, filePath }) => ({
-  encodeOptions: {
-    ...(path.extname(filePath) === ".png"
-      ? { oxipng: {} }
-      : { mozjpeg: {} }),
-  },
-});
+const squoosh_opts = {
+  oxipng: {},
+  mozjpeg: {}
+};
 const svgo_opts = {
   plugins: [
       { removeViewBox: false }
