@@ -43,6 +43,13 @@ const writeCache = () => {
   return stream;
 };
 
+const squoosh_opts = ({ width, height, size, filePath }) => ({
+  encodeOptions: {
+    ...(path.extname(filePath) === ".png"
+      ? { oxipng: {} }
+      : { mozjpeg: {} }),
+  },
+});
 const svgo_opts = {
   plugins: [
       { removeViewBox: false }
@@ -61,7 +68,7 @@ const images = () => {
     // Save the list of new files
     .pipe( cacheFiles() )
     // Optimize
-    .pipe( gulpif( "*.svg", svgo( svgo_opts ), squoosh() ) )
+    .pipe( gulpif( "*.svg", svgo( svgo_opts ), squoosh( squoosh_opts ) ) )
     // Save
     .pipe( dest( destination ) )
     .pipe( dest( dist ) )

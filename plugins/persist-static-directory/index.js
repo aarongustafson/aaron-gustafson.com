@@ -6,6 +6,8 @@ module.exports = {
   //  - the directory has never been cached
   async onPreBuild({ utils }) {
     await utils.cache.restore('./.cache');
+    await utils.cache.restore('./_cache');
+    await utils.cache.restore('./dist/i');
   },
   // After the build is done,
   // cache directory for future builds.
@@ -13,5 +15,7 @@ module.exports = {
   //  - the directory does not exist
   async onPostBuild({ utils }) {
     await utils.cache.save('./.cache');
+    await utils.cache.save('./_cache');
+    await utils.cache.save('./dist/i');
   }
 }
