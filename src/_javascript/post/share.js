@@ -13,15 +13,23 @@
     {
         var target = e.target;
 
+        while ( ! target.matches('.entry__sharing') )
+        {
+          if ( target.matches('a') ) {
+            break;
+          }
+          target = target.parentNode;
+        }
+
         // target must be an anchor and the inner width threshold must be met
-        if ( e.target.nodeName.toLowerCase() == 'a' &&
+        if ( target.nodeName.toLowerCase() == 'a' &&
              window.innerWidth >= threshold )
         {
             // prevent the default link click
             e.preventDefault();
 
             // open the link in a popup
-            window.open( target.href, 'share-this', 'height=300,width=500,status=no,toolbar=no' );
+            window.open( target.href, 'share-this', 'height=400,width=600,status=no,toolbar=no' );
 
             // return
             return false;
