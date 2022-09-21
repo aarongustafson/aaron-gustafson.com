@@ -2,7 +2,7 @@
 title: "Spellcheckers exfiltrating PII… not so fast"
 date: 2022-09-19 14:34:51 -07:00
 comments: true
-tags: ["browsers", "forms", "HTML", "security"]
+tags: ["browsers", "forms", "HTML", "security", "privacy"]
 description: "A recent post from the Otto JS research team highlighted how spellcheck services can inadvertently exfiltrate sensitive user data, including passwords, from your site. To be honest, I found the post a tad alarmist and lacking when it came to recommending solid protections. Consider this your no-nonsense guide to protecting your users’ sensitive information."
 twitter_text: "A collection of ways you can keep sensitive user data protected from accidental exfiltration."
 in_reply_to: https://www.otto-js.com/news/article/chrome-and-edge-enhanced-spellcheck-features-expose-pii-even-your-passwords
@@ -27,7 +27,9 @@ In both Chrome and Edge, the information sent to their services is the text valu
 ## Password fields are safe
 
 ```html
-<input type="password" id="password" name="password">
+<input type="password"
+       id="password" 
+       name="password">
 ```
 
 Browsers do a lot to protect the contents of password fields already, so I wasn’t surprised to see that the contents of password fields are **not** passed to a spellcheck service.
@@ -40,10 +42,12 @@ As you’d hope, neither read-only fields nor disabled fields are exposed ot the
 
 I should note, however, that `readonly` fields *are* send to the server when the form is submitted and their contents are editable via JavaScript and DevTools, so you should always assume `readonly` fields are informational for the user only and never trust their contents on the server side. Fields that are marked `disabled`, in contrast, are never sent to the server.
 
-## You can protect interactive fields with `spellcheck="false"`
+## You can protect interactive fields with the `spellcheck` attribute
 
 ```html
-<input id="no-spellcheck" name="no-spellcheck" spellcheck="false">
+<input id="no-spellcheck"
+       name="no-spellcheck" 
+       spellcheck="false">
 ```
 
 The `spellcheck` attribute can be applied to any element and setting it to "false" instructs browsers to turn off spellchecking services for its contents. The post from Otto JS showed this being used globally on the `body` element, but that is overkill. It would be better to use the attribute on specific fields you want to protect, as shown above.
@@ -76,7 +80,10 @@ The problem with this approach, when it comes to the spellchecker, is that the t
 Protecting the field’s contents are fairly easy, however: turn off the spellchecker for that field, even in its "password" state.
 
 ```html
-<input type="password" id="password-show-nospellcheck" name="password-show-nospellcheck" spellcheck="false">
+<input type="password"
+       id="password-show-nospellcheck" 
+       name="password-show-nospellcheck" 
+       spellcheck="false">
 ```
 
 With `spellcheck="false"` in place, you can turn the field into a text field safely, without the contents being exposed to the spellcheck service.
