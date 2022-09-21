@@ -10,6 +10,12 @@ series:
   name: "Modern Web Form Best Practices"
   tag: "series-forms"
   ordinal: "fourth"
+hero:
+  src: /i/posts/2022-09-19/hero.jpg
+  credit: Aaron Gustafson × DALL·E
+  alt: "Photograph of a cute robot taking an apple from a pile of apples."
+  url: https://labs.openai.com/s/g3OYztBs9RivExIYbZBrSaZ8
+  offset: "0"
 ---
 
 A recent post from the [Otto JS](https://www.otto-js.com) research team highlighted [how spellcheck services can inadvertently exfiltrate sensitive user data, including passwords](https://www.otto-js.com/news/article/chrome-and-edge-enhanced-spellcheck-features-expose-pii-even-your-passwords), from your site. To be honest, I found the post a tad alarmist and lacking when it came to recommending solid protections. Consider this your no-nonsense guide to protecting your users’ sensitive information.
