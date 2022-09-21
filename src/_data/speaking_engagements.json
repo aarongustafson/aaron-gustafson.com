@@ -1,5 +1,11 @@
 [
   {
+    "id": 148,
+    "title": "MITRE Accessibility Technical Exchange Meeting",
+    "date": "2022-10-27 00:09:00 -0800",
+    "location": "Online"
+  },
+  {
     "id": 147,
     "title": "PWA Summit",
     "date": "2022-10-05 00:09:00 -0800",
@@ -40,17 +46,17 @@
     "location": "Online"
   },
   {
-    "id": 140,
-    "title": "Amsterdam University Of Applied Sciences",
-    "date": "2021-03-11 00:08:00 -0400",
-    "location": "Amsterdam, Netherlands"
-  },
-  {
     "id": 141,
     "title": "JavaScript & Friends",
     "date": "2021-05-11 00:18:00 -0400",
     "location": "Online",
     "url": "https://www.eventbrite.com/e/javascript-and-friends-online-meetup-tickets-147179655311"
+  },
+  {
+    "id": 140,
+    "title": "Amsterdam University Of Applied Sciences",
+    "date": "2021-03-11 00:08:00 -0400",
+    "location": "Amsterdam, Netherlands"
   },
   {
     "id": 139,
