@@ -59,9 +59,11 @@ If you know someone who you think would benefit from my mentorship, *please nomi
 I am honored to have played a small role in the careers of some truly amazing people:
 
 * [Adewale Abati](https://www.adewaleabati.com/)
+* [Mateo Chávez](http://teochavez.com)
 * [Manuel Matuzović](https://www.matuzo.at/)
 * [Olu Niyi-Awosusi](https://olu.online/)
 * [Amberley Romo](https://amberley.dev/)
+* [Stephanie Stimac](https://seaotta.dev/)
 * [Marcy Sutton](https://marcysutton.com/)
 * [Sara Wegman](https://sarasportfol.io/)
-* [Desirée Zamora García](https://alistapart.com/author/dezziegarcia/)
+* [Desirée Zamora García](https://www.linkedin.com/in/dzg123/)
