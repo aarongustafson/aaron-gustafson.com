@@ -69,7 +69,6 @@
 
     // :target
     :target {
-      outline: 2px solid yellow;
-      @include rem( outline-offset, math.div( $default-spacing, 2 ) );
+      background: yellow;
     }
 }
