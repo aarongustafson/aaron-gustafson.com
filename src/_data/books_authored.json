@@ -10,16 +10,6 @@
     "notes": "The definitive guide to progressive enhancement, completely revised and rewritten. In this brief book, I chronicle the origins of progressive enhancement—its philosophy and mechanisms—and reveal the countless practical ways you can apply progressive enhancement principles in HTML, CSS, and JavaScript. By understanding progressive enhancement and how to apply it properly, you can craft experiences that serve users (rather than browsers), giving them access to your content from anywhere."
   },
   {
-    "title": "Smashing Book 4",
-    "subtitle": "New Perspectives on Web Design",
-    "url": "http://www.smashingmagazine.com/smashing-book-4-new-perspectives/",
-    "author": "Aaron Gustafson, et al",
-    "published": "2013-11-25 12:00:00 -0500",
-    "cover": "smashing-book-4.jpg",
-    "width": 144,
-    "notes": "Smashing Magazine’s books are legendarily epic and, clocking in at 498 pages, this is no light read. That said, it is chock full of some of the best and most important writing about the world of web design out there. I contributed a chapter on planning adaptive interfaces."
-  },
-  {
     "title": "Adaptive Web Design",
     "subtitle": "Crafting Rich Experiences with Progressive Enhancement",
     "url": "https://adaptivewebdesign.info/1st-edition/",
