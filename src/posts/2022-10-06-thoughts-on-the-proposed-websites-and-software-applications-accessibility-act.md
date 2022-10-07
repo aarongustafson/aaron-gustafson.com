@@ -11,7 +11,7 @@ hero:
   credit: Aaron Gustafson × DALL·E
   alt: "A photograph of a sledgehammer leaning against a pile of bricks and rubble."
   url: https://labs.openai.com/s/5TVrwg4U549xQrE7rMtoWoO6
-  offset: "400"
+  offset: "300"
 ---
 
 Last month, Senator Tammy Duckworth (D-Ill.) and Representative John P. Sarbanes (D-Md.) introduced the Websites and Software Applications Accessibility Act—I’m gonna call it the WS3A for short—simultaneously in the U.S. Senate ([S. 4998](https://www.congress.gov/bill/117th-congress/senate-bill/4998)) and House of Representatives ([H.R. 9021](https://www.congress.gov/bill/117th-congress/house-bill/9021)) to explicitly bring websites—and other forms of digital media that didn’t exist when the ADA was signed into law—into the purview of the Americans with Disabilities Act (ADA). I am definitely in favor of this effort as it removes the ambiguity that currently exists in U.S. law as to whether websites are governed by the ADA. The WS3A is a reasonable framework, but there is still a lot of work to be done when it (hopefully) passes.
@@ -28,7 +28,7 @@ On reading [the text of the WS3A](https://www.duckworth.senate.gov/imo/media/doc
 
 There’s more to it than that, but it’s a reasonable summary. I suggest reading [Senator Duckworth’s summary doc](https://www.duckworth.senate.gov/imo/media/doc/22.09.27%20SxS%20-%20Websites%20and%20Software%20Applications%20Accessibility%20Act%20FINAL.pdf) for more detail as well.
 
-## We shouldn’t strive for same-ness
+## We don’t all need "the same" experience
 
 In Section 3 of the WS3A, a part of the definition for "accessibility" is the requirement for people with disabilities to be able “to engage in the same interactions as” people without disabilities. This sounds good on first blush, but I think "the same" could be misleading.
 
