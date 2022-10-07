@@ -1,10 +1,11 @@
 ---
-title: "Will Serving Real HTML Content Make A Website Faster? Let's Experiment! - WebPageTest Blog"
+title: "Will Serving Real HTML Content Make A Website Faster? Let's Experiment!"
 date: 2022-10-07T17:31:05.016Z
 tags: ["JavaScript", "performance"]
 ref_url: https://blog.webpagetest.org/posts/will-html-content-make-site-faster/
 in_reply_to: https://blog.webpagetest.org/posts/will-html-content-make-site-faster/
 twitter_text: "Loving @scottjehl’s in-depth performance comparison between serving HTML and JavaScript that builds HTML. No surprise: HTML wins every time."
+source: "WebPageTest Blog"
 ---
 
 When you’ve worked on the web for as long as I have, you see trends come and go. I’ve witnessed at least three different eras where folks began to put all their eggs in the JavaScript basket, only to realize the massive hits they were taking to performance.
