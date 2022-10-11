@@ -33,19 +33,19 @@
       "src": "/i/icon.svg",
       "type": "image/svg+xml",
       "sizes": "512x512",
-      "purpose": "any monochrome maskable"
+      "purpose": "any"
     },
     {
       "src": "/i/icon.png",
       "type": "image/png",
       "sizes": "512x512",
-      "purpose": "any monochrome maskable"
+      "purpose": "any"
     },
     {
       "src": "/i/notification-icon.png",
       "type": "image/png",
       "sizes": "256x256",
-      "purpose": "any monochrome maskable"
+      "purpose": "monochrome"
     },
     {
       "src": "/i/og-logo.png",
@@ -87,14 +87,12 @@
       "icons": [
         {
           "src": "/i/icons/notebook.svg",
-          "type": "image/svg+xml",
-          "purpose": "any monochrome"
+          "type": "image/svg+xml"
         },
         {
           "src": "/i/icons/notebook.png",
           "type": "image/png",
-          "sizes": "120x120",
-          "purpose": "any monochrome"
+          "sizes": "120x120"
         }
       ]
     },
@@ -104,14 +102,12 @@
       "icons": [
         {
           "src": "/i/icons/mic.svg",
-          "type": "image/svg+xml",
-          "purpose": "any monochrome"
+          "type": "image/svg+xml"
         },
         {
           "src": "/i/icons/mic.png",
           "type": "image/png",
-          "sizes": "120x120",
-          "purpose": "any monochrome"
+          "sizes": "120x120"
         }
       ]
     },
@@ -121,14 +117,12 @@
       "icons": [
         {
           "src": "/i/icons/books.svg",
-          "type": "image/svg+xml",
-          "purpose": "any monochrome"
+          "type": "image/svg+xml"
         },
         {
           "src": "/i/icons/books.png",
           "type": "image/png",
-          "sizes": "120x120",
-          "purpose": "any monochrome"
+          "sizes": "120x120"
         }
       ]
     },
@@ -138,14 +132,12 @@
       "icons": [
         {
           "src": "/i/icons/chat.svg",
-          "type": "image/svg+xml",
-          "purpose": "any monochrome"
+          "type": "image/svg+xml"
         },
         {
           "src": "/i/icons/chat.png",
           "type": "image/png",
-          "sizes": "120x120",
-          "purpose": "any monochrome"
+          "sizes": "120x120"
         }
       ]
     }
