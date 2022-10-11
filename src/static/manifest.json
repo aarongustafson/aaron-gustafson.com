@@ -50,14 +50,13 @@
       "icons": [
         {
           "src": "/i/icons/notebook.svg",
-          "type": "image/svg+xml",
-          "purpose": "any monochrome"
+          "type": "image/svg+xml"
         },
         {
           "src": "/i/icons/notebook.png",
           "type": "image/png",
           "sizes": "120x120",
-          "purpose": "any monochrome"
+          "purpose": "monochrome"
         }
       ]
     },
@@ -67,14 +66,13 @@
       "icons": [
         {
           "src": "/i/icons/mic.svg",
-          "type": "image/svg+xml",
-          "purpose": "any monochrome"
+          "type": "image/svg+xml"
         },
         {
           "src": "/i/icons/mic.png",
           "type": "image/png",
           "sizes": "120x120",
-          "purpose": "any monochrome"
+          "purpose": "monochrome"
         }
       ]
     },
@@ -84,14 +82,13 @@
       "icons": [
         {
           "src": "/i/icons/books.svg",
-          "type": "image/svg+xml",
-          "purpose": "any monochrome"
+          "type": "image/svg+xml"
         },
         {
           "src": "/i/icons/books.png",
           "type": "image/png",
           "sizes": "120x120",
-          "purpose": "any monochrome"
+          "purpose": "monochrome"
         }
       ]
     },
@@ -101,14 +98,13 @@
       "icons": [
         {
           "src": "/i/icons/chat.svg",
-          "type": "image/svg+xml",
-          "purpose": "any monochrome"
+          "type": "image/svg+xml"
         },
         {
           "src": "/i/icons/chat.png",
           "type": "image/png",
           "sizes": "120x120",
-          "purpose": "any monochrome"
+          "purpose": "monochrome"
         }
       ]
     }
