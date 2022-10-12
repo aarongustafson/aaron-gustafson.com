@@ -17,6 +17,8 @@ const imagesResponsiver = require("eleventy-plugin-images-responsiver");
 const readingTime = require('eleventy-plugin-reading-time');
 //const { series } = require("gulp");
 const fs = require('fs');
+require('dotenv').config();
+const PRODUCTION = process.env.NODE_ENV === "production";
 
 module.exports = config => {
 
@@ -76,19 +78,25 @@ module.exports = config => {
   config.addPlugin(imagesResponsiver, {
     hero: {
       sizes: '700px, (max-width: 60em) 100vw',
-      resizedImageUrl: (src, width) => `https://res.cloudinary.com/aarongustafson/image/fetch/q_auto,f_auto,w_${width}/${src}`,
+      resizedImageUrl: (src, width) => {
+        return PRODUCTION ? `https://res.cloudinary.com/aarongustafson/image/fetch/q_auto,f_auto,w_${width}/${src}` : src.replace(config.hostname,"");
+      },
       attributes: false,
     },
     thumbnail: {
       sizes: '100px',
-      resizedImageUrl: (src) => `https://res.cloudinary.com/aarongustafson/image/fetch/q_100,f_auto,w_100,h_100,c_fill/${src}`,
+      resizedImageUrl: (src) => {
+        return PRODUCTION ? `https://res.cloudinary.com/aarongustafson/image/fetch/q_100,f_auto,w_100,h_100,c_fill/${src}` : src.replace(config.hostname,"");
+      },
       attributes: {
         loading: 'lazy',
       },
     },
     default: {
       sizes: '700px, (max-width: 60em) 100vw',
-      resizedImageUrl: (src, width) => `https://res.cloudinary.com/aarongustafson/image/fetch/q_auto,f_auto,w_${width}/${src}`,
+      resizedImageUrl: (src, width) => {
+        return PRODUCTION ? `https://res.cloudinary.com/aarongustafson/image/fetch/q_auto,f_auto,w_${width}/${src}` : src.replace(config.hostname,"");
+      },
       attributes: {
         loading: 'lazy',
       },
