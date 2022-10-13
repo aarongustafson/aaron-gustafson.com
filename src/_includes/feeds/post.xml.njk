@@ -2,7 +2,7 @@
 {% set summary %}{% if post.data.description %}{{ post.data.description }}{% elif post.data.page.excerpt %}{{ post.data.page.excerpt }}{% endif %}{% endset %}
 <entry>
   <id>{{ post_url }}</id>
-  <title type="html">{{ prepend_title + post.data.title | markdownify }}</title>
+  <title type="html"><![CDATA[{{ prepend_title + post.data.title | markdownify | safe }}]]></title>
   <link href="{{ post_url }}" rel="alternate" type="text/html" />
   {% if post.data.ref_url %}
     <link href="{{ post.data.ref_url }}" rel="related" type="text/html" />
@@ -19,7 +19,7 @@
   {% endif %}
   {% if summary %}
     <summary type="html"><![CDATA[<p>{{ summary | markdownify | safe }}</p>]]></summary>
-    <amg:summary>{{ summary | markdownify | safe }}</amg:summary>
+    <amg:summary><![CDATA[{{ summary | markdownify | safe }}]]></amg:summary>
   {% endif %}
 
   {% for tag in post.data.tags %}
