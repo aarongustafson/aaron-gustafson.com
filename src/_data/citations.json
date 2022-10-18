@@ -18,6 +18,21 @@
       "url": "https://abookapart.com/products/voice-content-and-usability"
     },
     {
+      "title": "Studies in Conversational UX Design",
+      "author": "Robert J. Moore, Margaret H. Szymanski, Raphael Arar & Guang-Jie Ren, Editors",
+      "url": "https://link.springer.com/book/10.1007/978-3-319-95579-7"
+    },
+    {
+      "title": "Conversational UX Design: A Practitioner's Guide to the Natural Conversation Framework",
+      "author": "Robert J. Moore and Raphael Arar",
+      "url": "https://books.acm.org/titles#tab2004"
+    },
+    {
+      "title": "Web Accessibility: A Foundation for Research",
+      "author": "Yeliz Yesilada & Simon Harper, Editors",
+      "url": "https://link.springer.com/book/10.1007/978-1-4471-7440-0"
+    },
+    {
       "title": "Adaptive User-Device Interface Generation for Websites",
       "author": "O. D. Alao, J. V. Joshua, A. O. Adebayo, M. O. Agbaje, G. A. Onanuga, O. Abereowo",
       "url": "https://pdfs.semanticscholar.org/1087/5bd2fb48a1a0bab277ef9485d12cb1128a6a.pdf"
@@ -70,6 +85,42 @@
   ],
   "articles": [
     {
+      "title": "Ανάπτυξη εφαρμογής κινητού για την ενδυνάμωση ατόμων με σακχαρώδη διαβήτη τύπου 2",
+      "author": "Γαβαλας Χριστοφορος",
+      "lang": "gr",
+      "url": "https://dspace.lib.ntua.gr/xmlui/bitstream/handle/123456789/55236/%CE%94%CE%B9%CF%80%CE%BB%CF%89%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CE%B7_%CE%95%CF%81%CE%B3%CE%B1%CF%83%CE%B9%CE%B1_%CE%93%CE%B1%CE%B2%CE%B1%CE%BB%CE%B1%CF%82_%CE%A7%CF%81%CE%B9%CF%83%CF%84%CE%BF%CF%86%CE%BF%CF%81%CE%BF%CF%82.pdf"
+    },
+    {
+      "title": "Improving Device-to-Device Connectivity with Responsive Web Technology",
+      "author": "Minsoo Park",
+      "url": "https://koreascience.kr/article/JAKO202209156911998.page"
+    },
+    {
+      "title": "MobileVisFixer: Tailoring Web Visualizations for Mobile Phones Leveraging an Explainable Reinforcement Learning Framework",
+      "author": "Aoyu Wu, Wai Tong, Tim Dwyer, Bongshin Lee, Petra Isenberg & Huamin Qu",
+      "url": "https://ieeexplore.ieee.org/abstract/document/9229072"
+    },
+    {
+      "title": "Automatic Detection of Visibility Faults by Layout Changes in HTML5 Web Pages",
+      "author": "Yeonhee Ryou & Sukyoung Ryu",
+      "url": "https://ieeexplore.ieee.org/abstract/document/8367047"
+    },
+    {
+      "title": "Evaluation of an Adapted Design in a Multi-device Online Panel: A DemoSCOPE Case Study",
+      "author": "Birgit Arn, Stefan Klug & Janusz Kołodziejski",
+      "url": "https://mda.gesis.org/index.php/mda/article/view/2015.011"
+    },
+    {
+      "title": "Approaches and Principles for UX Web Experiences: A Case Study Approach",
+      "author": "Fernando Almeida and José Augusto Monteiro",
+      "url": "https://www.igi-global.com/article/approaches-and-principles-for-ux-web-experiences/176908"
+    },
+    {
+      "title": "Strategies for Mobile Web Design",
+      "author": "Alex Cazañas & Esther Parra",
+      "url": "http://scielo.senescyt.gob.ec/scielo.php?pid=S1390-65422017000100344&script=sci_arttext"
+    },
+    {
       "title": "Almost (Standards) Doesn’t Count",
       "author": "History of the Web",
       "url": "https://thehistoryoftheweb.com/almost-standards-doesnt-count/"
@@ -78,6 +129,11 @@
       "title": "A Short History of WaSP and Why Web Standards Matter",
       "author": "Jay Hoffman, History of the Web",
       "url": "https://thehistoryoftheweb.com/a-short-history-of-wasp-and-why-web-standards-matter/"
+    },
+    {
+      "title": "Automatic detection of potential layout faults following changes to responsive web pages",
+      "author": "Thomas A. Walsh, Phil McMinn & Gregory M. Kapfhammer",
+      "url": "https://ieeexplore.ieee.org/abstract/document/7372059/"
     },
     {
       "title": "Styling buttons to look like links",
