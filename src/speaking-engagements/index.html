@@ -17,8 +17,8 @@ javascripts:
 
 <h1 class="page__title">A Complete List of My Conferences &amp; Workshops</h1>
 
-<p>It’s hard to believe it, but I’ve delivered over {{ speaking_engagements | length }} talks
-and workshops over the last {{ helpers.currentYear() - 2003 }} years! In addition to the 
+<p>It’s hard to believe it, but I’ve delivered <a href="https://presentations.aaron-gustafson.com">over {{ speaking_engagements | length }} talks
+and workshops</a> over the last {{ helpers.currentYear() - 2003 }} years! In addition to the 
 public events I can tell you about, I’ve also given private talks and workshops 
 for <a rel="nofollow noindex" href="/clients/">organizations around the world</a>.</p>
 
@@ -33,85 +33,86 @@ for <a rel="nofollow noindex" href="/clients/">organizations around the world</a
 
   <h2 id="future-events" class="subsection__header">In the Future</h2>
 
-  {% for event in future_events %}
-    {% if loop.first %}
-      <ol class="listing listing--events">
-    {% endif %}
-
-    <li class="listing__item listing__item--{{ loop.index }} event event--future"
-      data-date="{{ event.date | ymd_date }}">
-      {% if event.url %}
-        <a href="{{ event.url }}">
+  {% if future_events.length > 0 %}
+    {% for event in future_events %}
+      {% if loop.first %}
+        <ol class="listing listing--events">
       {% endif %}
-      
-      <h3 class="listing__item__title event__title">{{ event.title }}</h3>
-      <p class="listing__item__meta">
-        <b class="event__date">{{ event.date | readable_date  }}</b>
-        <b class="event__location">{{ event.location }}</b>
-      </p>
 
-      {#
-      <div class="event__details">
-        {% if event.keynotes %}
-          <h4>Keynote{% if event.keynotes.length != 1 %}s{% endif %}</h4>
-          <ul class="event__talks">
-            {% for keynote in event.keynotes %}
-              <li class="event__talk">{{ keynote.title }}
-                {% if keynote.slides %}<a class="event__talk__slides" href="{{ keynote.slides }}">Slides</a>{% endif %}
-                {% if keynote.text %}<a class="event__talk__transcript" href="{{ keynote.text }}">Transcript</a>{% endif %}
-                {% if keynote.video %}<a class="event__talk__video" href="{{ keynote.video }}">Video</a>{% endif %}
-                {% if keynote.audio %}<a class="event__talk__audio" href="{{ keynote.audio }}">Audio</a>{% endif %}
-              </li>
-            {% endfor %}
-          </ul>
+      <li class="listing__item listing__item--{{ loop.index }} event event--future"
+        data-date="{{ event.date | ymd_date }}">
+        {% if event.url %}
+          <a href="{{ event.url }}">
         {% endif %}
-        {% if event.talks %}
-          <h4>Talk{% if event.talks.length != 1 %}s{% endif %}</h4>
-          <ul class="event__talks">
-            {% for talk in event.talks %}
-              <li class="event__talk">{{ talk.title }}
-                {% if talk.slides %}<a class="event__talk__slides" href="{{ talk.slides }}">Slides</a>{% endif %}
-                {% if talk.text %}<a class="event__talk__transcript" href="{{ talk.text }}">Transcript</a>{% endif %}
-                {% if talk.video %}<a class="event__talk__video" href="{{ talk.video }}">Video</a>{% endif %}
-                {% if talk.audio %}<a class="event__talk__audio" href="{{ talk.audio }}">Audio</a>{% endif %}
-              </li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-        {% if event.workshops %}
-          <h4>Workshop{% if event.workshops.length != 1 %}s{% endif %}</h4>
-          <ul class="event__talks">
-            {% for workshop in event.workshops %}
-              <li class="event__talk">{{ workshop.title }}
-                {% if workshop.slides %}<a class="event__talk__slides" href="{{ workshop.slides }}">Slides</a>{% endif %}
-                {% if workshop.text %}<a class="event__talk__transcript" href="{{ workshop.text }}">Transcript</a>{% endif %}
-                {% if workshop.video %}<a class="event__talk__video" href="{{ workshop.video }}">Video</a>{% endif %}
-                {% if workshop.audio %}<a class="event__talk__audio" href="{{ workshop.audio }}">Audio</a>{% endif %}
-              </li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-      </div>
-      #}
+        
+        <h3 class="listing__item__title event__title">{{ event.title }}</h3>
+        <p class="listing__item__meta">
+          <b class="event__date">{{ event.date | readable_date  }}</b>
+          <b class="event__location">{{ event.location }}</b>
+        </p>
 
-      {% for city in cities %}
-        {% if city.name == event.location %}
-          <p class="event__location-picture" style="background-image:url({{ cloudinary }}{{ city.photo }})" title="Photo by {{ city.credit_name }}, {{ city.credit_url }}"></p>
+        {#
+        <div class="event__details">
+          {% if event.keynotes %}
+            <h4>Keynote{% if event.keynotes.length != 1 %}s{% endif %}</h4>
+            <ul class="event__talks">
+              {% for keynote in event.keynotes %}
+                <li class="event__talk">{{ keynote.title }}
+                  {% if keynote.slides %}<a class="event__talk__slides" href="{{ keynote.slides }}">Slides</a>{% endif %}
+                  {% if keynote.text %}<a class="event__talk__transcript" href="{{ keynote.text }}">Transcript</a>{% endif %}
+                  {% if keynote.video %}<a class="event__talk__video" href="{{ keynote.video }}">Video</a>{% endif %}
+                  {% if keynote.audio %}<a class="event__talk__audio" href="{{ keynote.audio }}">Audio</a>{% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+          {% if event.talks %}
+            <h4>Talk{% if event.talks.length != 1 %}s{% endif %}</h4>
+            <ul class="event__talks">
+              {% for talk in event.talks %}
+                <li class="event__talk">{{ talk.title }}
+                  {% if talk.slides %}<a class="event__talk__slides" href="{{ talk.slides }}">Slides</a>{% endif %}
+                  {% if talk.text %}<a class="event__talk__transcript" href="{{ talk.text }}">Transcript</a>{% endif %}
+                  {% if talk.video %}<a class="event__talk__video" href="{{ talk.video }}">Video</a>{% endif %}
+                  {% if talk.audio %}<a class="event__talk__audio" href="{{ talk.audio }}">Audio</a>{% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+          {% if event.workshops %}
+            <h4>Workshop{% if event.workshops.length != 1 %}s{% endif %}</h4>
+            <ul class="event__talks">
+              {% for workshop in event.workshops %}
+                <li class="event__talk">{{ workshop.title }}
+                  {% if workshop.slides %}<a class="event__talk__slides" href="{{ workshop.slides }}">Slides</a>{% endif %}
+                  {% if workshop.text %}<a class="event__talk__transcript" href="{{ workshop.text }}">Transcript</a>{% endif %}
+                  {% if workshop.video %}<a class="event__talk__video" href="{{ workshop.video }}">Video</a>{% endif %}
+                  {% if workshop.audio %}<a class="event__talk__audio" href="{{ workshop.audio }}">Audio</a>{% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+        #}
+
+        {% for city in cities %}
+          {% if city.name == event.location %}
+            <p class="event__location-picture" style="background-image:url({{ cloudinary }}{{ city.photo }})" title="Photo by {{ city.credit_name }}, {{ city.credit_url }}"></p>
+          {% endif %}
+        {% endfor %}
+        
+        {% if event.url %}
+          </a>
         {% endif %}
-      {% endfor %}
-      
-      {% if event.url %}
-        </a>
+      </li>
+
+      {% if loop.last %}
+        </ol>
       {% endif %}
-    </li>
-
-    {% if loop.last %}
-      </ol>
-    {% endif %}
-
+    {% endfor %}
   {% else %}
-    <p>I am currently finalizing my schedule for the next few months. Please check back for dates or <a href="/contact/">contact me</a> if you’d like me to come speak at your organization or event.</p>
-  {% endfor %}
+    <p>I am currently finalizing my schedule for the next few months. Please check back for dates or <a href="/contact/">contact me</a> if you’d like me to speak at your organization or event. You can see <a href="https://presentations.aaron-gustafson.com/">some of my recent talks</a> to get a sense of what I’ve been speaking about lately.</p>
+  {% endif %}
 
 </section>
 
