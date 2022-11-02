@@ -57,10 +57,18 @@ Blog Entry
       padding-top: 0;
     }
     
-    &__content hr {
-      @include rem( max-width, 220 );
+    &__content {
+      & > ul {
+        margin-left: 1.2rem;
+      }
+      & > blockquote {
+        padding: 0 1.5rem;
+      }
+      hr {
+        @include rem( max-width, 220 );
+      }
     }
-    
+
     &__sharing {
       text-align: center;
     }
