@@ -112,7 +112,7 @@ sitemap: false
                 <button id="save">Save your credentials</button>
               </li>
             </ul>
-            <p>Drag this link to your bookmarks, to post from any webpage: <a href="javascript:(function(){var title = document.getElementsByTagName('title')[0].innerHTML;title = encodeURIComponent(title);var selection = '';if (window.getSelection) {selection = window.getSelection().toString();} else if (document.selection &amp;&amp; document.selection.type != 'Control') {selection = document.selection.createRange().text;}selection = encodeURIComponent(selection);new_window=window.open('{{ site.url }}/linky/poo/?title='+title+'&amp;selection='+selection+'&amp;url='+encodeURIComponent(document.location.href),'LinkyPooPopup','resizable,scrollbars,status=0,toolbar=0,menubar=0,titlebar=0,width=640,height=600,location=0');})();">Linky</a></p>
+            <p>Drag this link to your bookmarks, to post from any webpage: <a href="javascript:(function(){var title = document.getElementsByTagName('title')[0].innerHTML;title = encodeURIComponent(title);var selection = '';if (window.getSelection) {selection = window.getSelection().toString();} else if (document.selection &amp;&amp; document.selection.type != 'Control') {selection = document.selection.createRange().text;}selection = encodeURIComponent(selection);new_window=window.open(`{{ site.url }}/linky/poo/?title=${title}&amp;selection=${selection}&amp;url=${encodeURIComponent(document.location.href)}`,`LinkyPooPopup`,`resizable,scrollbars,status=0,toolbar=0,menubar=0,titlebar=0,width=640,height=600,location=0`);})();">Linky</a></p>
           </details>
         </form>
       </div>
