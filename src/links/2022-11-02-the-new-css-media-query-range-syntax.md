@@ -15,9 +15,9 @@ Cool to see more efficient range-based media queries are beginning to roll out.
 > The big change in the Media Queries Level 4 specification is that we have new operators that compare values rather than combining them:
 > 
 > * < evaluates if a value is less than another value
-> * > evaluates if a value is greater than another value
+> * &gt; evaluates if a value is greater than another value
 > * = evaluates if a value is equal to another value
 > * <= evaluates if a value is less than or equal to another value
-> * >= evaluates if a value is greater than or equal to another value
+> * &gt;= evaluates if a value is greater than or equal to another value
 
 🤞🏻 we get them in Safari soon!
