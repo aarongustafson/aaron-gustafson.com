@@ -14,6 +14,7 @@ is_post: true
         <header class="entry__header">
           <h1 class="entry__title p-name">
             <a rel="external"
+              class="u-bookmark-of h-cite" 
               href="{{ page.ref_url }}"
               {% if hreflang %} hreflang="{{ hreflang }}"{% endif %}
               >{{ title | widont | markdownify | safe }}</a>

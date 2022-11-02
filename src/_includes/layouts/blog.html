@@ -17,13 +17,18 @@ github_edit: "_layouts/blog.html"
         {% set content %}{% if post.data.page.excerpt %}<p>{{ post.data.page.excerpt | markdownify | safe }}</p>{% else %}{{ post.templateContent | safe }}{% endif %}{% endset %}
         {% set is_excerpted = ( post.templateContent != content ) %}
         
-        <article class="entry entry--excerpt entry--{{ post.data.collection }}{% if post.data.hero or post.data.og_image %} entry--with-hero{% endif %}">
+        <article class="h-entry entry entry--excerpt entry--{{ post.data.collection }}{% if post.data.hero or post.data.og_image %} entry--with-hero{% endif %}">
           <header class="entry__header">
             <h1 class="entry__title entry-title">
               {% if is_excerpted %}
-                <a rel="bookmark" href="{{ post.url }}">{{ post.data.title | widont | markdownify | safe }}</a>
+                <a rel="bookmark"
+                   href="{{ post.url }}"
+                   >{{ post.data.title | widont | markdownify | safe }}</a>
               {% elif post.data.ref_url and not post.data.is_404 %}
-                <a rel="external original-article" href="{{ post.data.ref_url }}">{{ post.data.title | widont | markdownify | safe }}</a>
+                <a rel="external original-article"
+                   class="u-bookmark-of h-cite"
+                   href="{{ post.data.ref_url }}"
+                   >{{ post.data.title | widont | markdownify | safe }}</a>
               {% else %}
                 {{ post.data.title | widont | markdownify | safe }}
               {% endif %}
