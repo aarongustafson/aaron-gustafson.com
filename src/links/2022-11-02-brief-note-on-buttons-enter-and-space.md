@@ -11,6 +11,3 @@ in_reply_to: https://adrianroselli.com/2022/04/brief-note-on-buttons-enter-and-s
 ---
 
 I talk a lot about the default behaviors of HTML buttons, but don’t tend to get into the weeds when it comes to keyboard interactions. Grab a machete and head on over to Adrian’s blog because he’s ready to take you there.
-
-
-<!-- Note: Twitter, CodePen, and YouTube links will automatically be embedded. -->
