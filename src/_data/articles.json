@@ -287,11 +287,18 @@
     "notes": "Create a beautiful website employing adaptive layouts and optimized for the latest mobile devices."
   },
   {
-    "title": "Getting up to Speed with Lighthouses",
-    "publisher": "Web Standards Sherpa",
-    "published": "2011-06-28 00:00:00 +0000",
-    "url": "http://webstandardssherpa.com/reviews/getting-up-to-speed-with-lighthouses",
-    "notes": "Responding to Worldwide Lighthouses’ request to help them speed up their gallery pages, I discuss file ‘munging’, compression, and organization to improve performance."
+    "title": "Create a Tabbed Interface, Part 2",
+    "publisher": ".net Magazine",
+    "published": "2009-11-01 00:00:00 +0000",
+    "url": "https://www.slideshare.net/AaronGustafson/create-a-tabbed-interface-part-2",
+    "notes": "Building on the first article, in this piece I focus on making the JavaScript more flexible and accessible."
+  },
+  {
+    "title": "Create a Tabbed Interface, Part 1",
+    "publisher": ".net Magazine",
+    "published": "2009-10-01 00:00:00 +0000",
+    "url": "https://www.slideshare.net/AaronGustafson/create-a-tabbed-interface-part-1",
+    "notes": "In the first of a two-part tutorial, I demonstrate how to create a script for a lightweight yet powerful tabbed interface using CSS and basic JavaScript."
   },
   {
     "title": "Progressive Enhancement with JavaScript",
