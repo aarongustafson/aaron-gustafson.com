@@ -12,7 +12,7 @@ sitemap: true
 
 <figure class="media-container media-container--right">
 
-![Aaron Gustafson]({{ site.url }}/i/headshots/2014.jpg){ width=310 height=310 }
+![Aaron Gustafson]({{ site.url }}/i/headshots/2014.jpg){ width=250 height=250 }
 
 </figure>
 

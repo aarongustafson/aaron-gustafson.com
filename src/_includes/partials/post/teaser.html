@@ -4,9 +4,9 @@
 
 <article class="entry entry--teaser entry--{{ type }}">
   {% if type=="post" %}
-    <p class="entry__type" title="Post" aria-label="Post">{{ svg_essay | safe }}</p>
+    <p class="entry__type" title="Post" role="img" aria-label="Post">{{ svg_essay | safe }}</p>
   {% elif type=="link" %}
-    <p class="entry__type" title="Link" aria-label="Link">{{ svg_link | safe }}</p>
+    <p class="entry__type" title="Link" role="img" aria-label="Link">{{ svg_link | safe }}</p>
   {% endif %}
   <div class="entry__details">
     <{{ teaser_heading_level }} class="entry__title entry-title">

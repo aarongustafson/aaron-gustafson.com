@@ -77,7 +77,7 @@ at least {{ citations.code | length }} coding projects I’m aware of, including
   <ul class="listing listing--books listing--icons">
     {% for book in books_contributed %}
       <li class="listing__item listing__item--{{ loop.index }} book book--contributed">
-        <p class="listing__item__type" title="Book" aria-label="Book">{{ svg_book | safe }}</p>
+        <p class="listing__item__type" title="Book" role="img" aria-label="Book">{{ svg_book | safe }}</p>
         
         {% set book_title %}
           <cite>{{ book.title }}{% if book.subtitle %}: <b class="book__subtitle">{{ book.subtitle }}</b>{% endif %}</cite>
@@ -100,7 +100,7 @@ at least {{ citations.code | length }} coding projects I’m aware of, including
   <ul class="listing listing--books listing--icons">
     {% for book in books_forewords %}
       <li class="listing__item listing__item--{{ loop.index }} book book--contributed">
-        <p class="listing__item__type" title="Book" aria-label="Book">{{ svg_book | safe }}</p>
+        <p class="listing__item__type" title="Book" role="img" aria-label="Book">{{ svg_book | safe }}</p>
         
         {% set book_title %}
           <cite>{{ book.title }}{% if book.subtitle %}: <b class="book__subtitle">{{ book.subtitle }}</b>{% endif %}</cite>
@@ -137,7 +137,7 @@ at least {{ citations.code | length }} coding projects I’m aware of, including
   <ul class="listing listing--articles listing--icons">
     {% for article in articles %}
       <li class="listing__item listing__item--{{ loop.index }} listing__item--icon article">
-        <p class="listing__item__type" title="Article" aria-label="Article">{{ svg_article | safe }}</p>
+        <p class="listing__item__type" title="Article" role="img" aria-label="Article">{{ svg_article | safe }}</p>
         <h3 class="listing__item__title article__title">
           {% if article.url %}
             <a href="{{ article.url }}">{{ article.title }}</a>
