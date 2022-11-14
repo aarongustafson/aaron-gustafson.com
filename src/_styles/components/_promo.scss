@@ -20,6 +20,11 @@ $promo-background-color: lighten( #7FB843, 45% );
         background: $color-green-dark;
         border-color: darken( $color-green-dark, 5% );
       }
+
+      a:link,
+      a:visited {
+        color: #14440E;
+      }
     
       // Image variant
       &--image {

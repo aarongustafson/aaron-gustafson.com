@@ -2,16 +2,16 @@
 <svg width="24" height="20" viewBox="0 0 100 87" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <title>Essay</title>
     <style>
-        #noun_16320_cc { fill: black; }
-        @media (prefers-color-scheme: dark) { #noun_16320_cc { fill: #fffcf4; } }
+        .noun_16320_cc { fill: black; }
+        @media (prefers-color-scheme: dark) { .noun_16320_cc { fill: #fffcf4; } }
     </style>
-    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="noun_16320_cc" sketch:type="MSLayerGroup" fill="#000000">
-            <path d="M81,6 C81,9.3 77.85,12 74,12 L7,12 C3.15,12 0,9.3 0,6 C0,2.7 3.15,0 7,0 L74,0 C77.85,0 81,2.7 81,6 L81,6 Z" id="Shape" sketch:type="MSShapeGroup"></path>
-            <path d="M56,81 C56,84.3 52.85,87 49,87 L7,87 C3.15,87 0,84.3 0,81 C0,77.7 3.15,75 7,75 L49,75 C52.85,75 56,77.7 56,81 L56,81 Z" id="Shape" sketch:type="MSShapeGroup"></path>
-            <path d="M100,24.5 C100,28.075 96.85,31 93,31 L7,31 C3.15,31 0,28.075 0,24.5 C0,20.925 3.15,18 7,18 L93,18 C96.85,18 100,20.925 100,24.5 L100,24.5 Z" id="Shape" sketch:type="MSShapeGroup"></path>
-            <path d="M100,43.5 C100,47.075 96.85,50 93,50 L7,50 C3.15,50 0,47.075 0,43.5 C0,39.925 3.15,37 7,37 L93,37 C96.85,37 100,39.925 100,43.5 L100,43.5 Z" id="Shape" sketch:type="MSShapeGroup"></path>
-            <path d="M100,62 C100,65.3 96.85,68 93,68 L7,68 C3.15,68 0,65.3 0,62 C0,58.7 3.15,56 7,56 L93,56 C96.85,56 100,58.7 100,62 L100,62 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g class="noun_16320_cc" fill="#000000">
+            <path d="M81,6 C81,9.3 77.85,12 74,12 L7,12 C3.15,12 0,9.3 0,6 C0,2.7 3.15,0 7,0 L74,0 C77.85,0 81,2.7 81,6 L81,6 Z" ></path>
+            <path d="M56,81 C56,84.3 52.85,87 49,87 L7,87 C3.15,87 0,84.3 0,81 C0,77.7 3.15,75 7,75 L49,75 C52.85,75 56,77.7 56,81 L56,81 Z" ></path>
+            <path d="M100,24.5 C100,28.075 96.85,31 93,31 L7,31 C3.15,31 0,28.075 0,24.5 C0,20.925 3.15,18 7,18 L93,18 C96.85,18 100,20.925 100,24.5 L100,24.5 Z" ></path>
+            <path d="M100,43.5 C100,47.075 96.85,50 93,50 L7,50 C3.15,50 0,47.075 0,43.5 C0,39.925 3.15,37 7,37 L93,37 C96.85,37 100,39.925 100,43.5 L100,43.5 Z" ></path>
+            <path d="M100,62 C100,65.3 96.85,68 93,68 L7,68 C3.15,68 0,65.3 0,62 C0,58.7 3.15,56 7,56 L93,56 C96.85,56 100,58.7 100,62 L100,62 Z" ></path>
         </g>
     </g>
 </svg>

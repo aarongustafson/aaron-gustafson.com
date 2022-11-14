@@ -4,7 +4,8 @@
     <ol class="webmentions__list">
       {% for webmention in webmentions %}
         <li id="webmention-{{ webmention.id }}" class="webmentions__item">
-          <article class="h-cite webmention webmention--{{ webmention.type }}
+          <article class="h-cite webmention
+            {% if webmention.type!='' %}webmention--{{ webmention.type }}{% endif %}
             {% unless webmention.author %}webmention--no-author{% endunless %}
             {% unless webmention.author.photo %}webmention--no-photo{% endunless %}
             {% if webmention.source=='twitter' %}{% if webmention.type=='like' or webmention.type=='repost' %}webmention--author-starts{% endif %}{% endif %}

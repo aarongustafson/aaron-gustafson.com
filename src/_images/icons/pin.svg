@@ -2,12 +2,12 @@
 <svg width="24" height="24" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <title>Pin</title>
     <style>
-        #noun_229587_cc { fill: black; }
-        @media (prefers-color-scheme: dark) { #noun_229587_cc { fill: #fffcf4; } }
+        .noun_229587_cc { fill: black; }
+        @media (prefers-color-scheme: dark) { .noun_229587_cc { fill: #fffcf4; } }
     </style>
-    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="noun_229587_cc" sketch:type="MSLayerGroup" transform="translate(0.000000, 1.000000)" fill="#000000">
-            <path d="M99.5,34.2 L64.8,-0.5 C60.5,3.8 60.1,10.7 62.8,17.7 L42.4,38.1 C30.5,31.3 17.7,30.9 10.4,38.2 L34.2,62 L1.1,95.1 C0.3,95.9 0.3,97.1 1.1,97.9 C1.5,98.3 2,98.5 2.5,98.5 C3,98.5 3.5,98.3 3.9,97.9 L37,64.8 L60.8,88.6 C68.1,81.3 67.8,68.4 60.9,56.6 L81.3,36.2 C88.3,39 95.2,38.5 99.5,34.2 L99.5,34.2 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g class="noun_229587_cc" transform="translate(0.000000, 1.000000)" fill="#000000">
+            <path d="M99.5,34.2 L64.8,-0.5 C60.5,3.8 60.1,10.7 62.8,17.7 L42.4,38.1 C30.5,31.3 17.7,30.9 10.4,38.2 L34.2,62 L1.1,95.1 C0.3,95.9 0.3,97.1 1.1,97.9 C1.5,98.3 2,98.5 2.5,98.5 C3,98.5 3.5,98.3 3.9,97.9 L37,64.8 L60.8,88.6 C68.1,81.3 67.8,68.4 60.9,56.6 L81.3,36.2 C88.3,39 95.2,38.5 99.5,34.2 L99.5,34.2 Z"></path>
         </g>
     </g>
 </svg>

@@ -18,7 +18,8 @@
                 {% if site.debug %}
                   <pre><code>{{ webmention | dump(2) }}</code></pre>
                 {% endif %}
-                <article class="h-cite webmention webmention--{{ webmention.wm-property }}
+                <article class="h-cite webmention 
+                  {% if webmention.wm-property %}webmention--{{ webmention.wm-property }}{% endif %}
                   {% if not webmention.author %}webmention--no-author{% endif %}
                   {% if not webmention.author.photo %}webmention--no-photo{% endif %}
                   ">
@@ -56,7 +57,7 @@
                             datetime="{{ webmention.published | machine_date }}">{{ webmention.published | readable_date }}</time>
                     {% endif %}
                     {% if webmention.url and not title_link %}|
-                      <a class="webmention__source u-url" href="{{ webmention.url }}">Permalink</a>
+                      <a class="webmention__source u-url" href="{{ webmention.url }}">Permalink<b class="hidden">: {{ webmention.url }}</b></a>
                     {% endif %}
                   </div>
                 </article>

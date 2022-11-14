@@ -48,7 +48,7 @@
   <body {% if body_class %} class="{{ body_class }}" {% endif %} >
 
     {% set alert %}
-      <div class="alert" role="complementary">
+      <div class="alert" role="complementary" aria-label="Site Notice">
         <strong>This site is <a href="/notebook/a-grand-experiment/">undergoing an open redesign</a>, so if it looks strange, that’s why.</strong>
       </div>
     {% endset %}
@@ -56,7 +56,7 @@
     {% if page.url == '/index.html' %}{{ alert | safe }}{% endif %}
     <header role="banner" class="banner">
       <div class="layout-container">
-        <h1 class="site-title"><a href="{{ site_url }}/">{{ site.title }}</a></h1>
+        <h1 class="site-title"><a href="{{ site_url }}/" aria-label="Return to the homepage">{{ site.title }}</a></h1>
         {% if page.url == '/index.html' %}
           <h2 class="site-subtitle">{{ site.subtitle }}</h2>
         {% endif %}
