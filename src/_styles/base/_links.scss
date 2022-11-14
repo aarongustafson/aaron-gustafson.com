@@ -5,22 +5,23 @@ Links
 @include breakup-breakpoint( "global" ) {
   
   a {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
     
     &:link,
     &:visited {
       color: $color-link;
-      
-      border-bottom: 1px dotted;
-      border-bottom-color: rgba( $color-link, .25 );
+      text-decoration-color: rgba( $color-link, .25 );
       
       cursor: pointer;
       
-      transition: background-color $default-transition, border-color $default-transition, color $default-transition;
+      transition: text-decoration-color $default-transition, color $default-transition;
 
       @media (prefers-color-scheme: dark) {
         color: $color-link-dark;
-        border-bottom-color: rgba( $color-link-dark, .25 );
+        text-decoration-color: rgba( $color-link-dark, .25 );
       }
     }
     
@@ -28,11 +29,11 @@ Links
     &:focus,
     &:active {
       color: $color-link-hover;
-      border-bottom-color: $color-link-hover;
+      text-decoration-color: $color-link-hover;
 
       @media (prefers-color-scheme: dark) {
         color: $color-link-dark-hover;
-        border-bottom-color: rgba( $color-link-dark-hover, .25 );
+        text-decoration-color: rgba( $color-link-dark-hover, .25 );
       }
     }
     
@@ -48,7 +49,7 @@ Links
     
     // No underlines on image links
     a[href$="jpg"],  a[href$=png],  a[href$=gif] {
-      border-bottom-width: 0;
+      text-decoration: none;
     }
     
     h1 &,
@@ -57,12 +58,12 @@ Links
     h4 &,
     h5 &,
     h6 & {
-      border-bottom-width: 0;
+      text-decoration-style: none;
       
       &:hover,
       &:focus,
       &:active {
-        border-bottom-width: 1px;
+        text-decoration-style: underline;
       }
     }
     
@@ -70,85 +71,6 @@ Links
       content: "\00A0\2192";
       display: inline-block;
       transform: translateX(-.25em) rotate(-45deg) translateY(0.25em);
-    }
-    
-  }
-  
-  // better underlines
-  @supports (background-image:linear-gradient(black,white)) {
-    
-    a:link,
-    a:visited {
-      @include underline( $color-link, 1px );
-      
-      h1 & {
-        @include underline( $color-link, 2px );
-      }
-    }
-    a:hover,
-    a:focus {
-      @include underline( $color-link-hover, 1px );
-      
-      h1 & {
-        @include underline( $color-link-hover, 2px );
-      }
-    }
-
-    @media (prefers-color-scheme: dark) {
-      body a:link,
-      body a:visited {
-        @include underline( $color-link-dark, 1px, 1px, $color-background-dark );
-        
-        h1 & {
-          @include underline( $color-link-dark, 2px, 1px, $color-background-dark );
-        }
-      }
-      body a:hover,
-      body a:focus {
-        @include underline( $color-link-dark-hover, 1px, 1px, $color-background-dark );
-        
-        h1 & {
-          @include underline( $color-link-dark-hover, 2px, 1px, $color-background-dark );
-        }
-      }
-    }
-    
-    a.footnote {
-      @include no-underline;
-    }
-    
-    // html.wf-active {
-      
-    //   a:link,
-    //   a:visited {
-    //     @include underline( $color-link );
-    //   }
-    //   a:hover,
-    //   a:focus {
-    //     @include underline( $color-link );
-    //   }
-    //   h1 a:link,
-    //   h1 a:visited  {
-    //     @include underline( $color-link, 8px );
-    //   }
-    //   h1 a:hover,
-    //   h1 a:focus  {
-    //     @include underline( $color-link, 8px );
-    //   }
-    //   h2 a:hover,
-    //   h2 a:focus {
-    //     @include underline( $color-link-hover, 5px );
-    //   }
-    //   h2 a:link,
-    //   h2 a:visited {
-    //     @include underline( $color-link-hover, 5px );
-    //   }
-      
-    // }
-    
-    // No underlines on image links
-    a[href$="jpg"],  a[href$=png],  a[href$=gif] {
-      @include no-underline;
     }
     
   }

@@ -16,51 +16,16 @@ $promo-background-color: lighten( #7FB843, 45% );
       @include rem( margin, ( $default-spacing * 2 ) -19 );
       @include rem( padding, $default-spacing );
 
-      a:link,
-      a:visited {
-      @include underline( $color-link, 1px, 1px, $promo-background-color );
-      }
-
-      a:hover,
-      a:focus,
-      a:active {
-        @include underline( $color-link-hover, 1px, 1px, $promo-background-color );
-      }
-
       @media (prefers-color-scheme: dark) {
         background: $color-green-dark;
         border-color: darken( $color-green-dark, 5% );
-
-        a:link,
-        a:visited {
-        @include underline( $color-link, 1px, 1px, $color-green-dark );
-        }
-
-        a:hover,
-        a:focus,
-        a:active {
-          @include underline( $color-link-hover, 1px, 1px, $color-green-dark );
-        }
-      }
-        
-
-      html.wf-active & {
-        a:link,
-        a:visited {
-        @include underline( $color-link, 2px, 1px, $promo-background-color );
-        }
-      a:hover,
-        a:focus,
-        a:active {
-          @include underline( $color-link-hover, 2px, 1px, $promo-background-color );
-        }
       }
     
-    // Image variant
-    &--image {
-      @include rem( padding-right, ( $default-spacing * 2 ) + $promo-image-width );
-      position: relative;
-    }
+      // Image variant
+      &--image {
+        @include rem( padding-right, ( $default-spacing * 2 ) + $promo-image-width );
+        position: relative;
+      }
 
       &__image {
         
@@ -68,8 +33,7 @@ $promo-background-color: lighten( #7FB843, 45% );
         width: 110px;
         height: 170px;
         
-      transform: rotate(5deg);
-        
+        transform: rotate(5deg);
         position: absolute;
         @include rem( right, $default-spacing );
         top: 50%;

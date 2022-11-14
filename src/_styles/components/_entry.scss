@@ -81,6 +81,10 @@ Blog Entry
       @include rem( font-size, $font-size-small );
     }
     
+    &--excerpt &__title {
+      @include rem( font-size, $font-size-h1 );
+      text-decoration: none;
+    }
     &--excerpt &__meta {
       display: none;
     }
@@ -135,19 +139,6 @@ Blog Entry
         margin-top: 0;
         
         position: absolute;
-      }
-    }
-    
-  }
-  
-  @supports (background-image:linear-gradient(black,white)) {
-    
-    .entry__meta a:link,
-    .entry__meta a:visited {
-      @include underline( $color-link, 0px );
-
-      @media (prefers-color-scheme: dark) {
-        @include underline( $color-link-dark, 0px, 1px, $color-background-dark );
       }
     }
     

@@ -19,7 +19,7 @@ github_edit: "_layouts/blog.html"
         
         <article class="h-entry entry entry--excerpt entry--{{ post.data.collection }}{% if post.data.hero or post.data.og_image %} entry--with-hero{% endif %}">
           <header class="entry__header">
-            <h1 class="entry__title entry-title">
+            <h2 class="entry__title entry-title">
               {% if is_excerpted %}
                 <a rel="bookmark"
                    href="{{ post.url }}"
@@ -32,7 +32,7 @@ github_edit: "_layouts/blog.html"
               {% else %}
                 {{ post.data.title | widont | markdownify | safe }}
               {% endif %}
-            </h1>
+            </h2>
             {% if not (post.data.meta == false) %}
               <dl class="entry__meta">
                 <dt class="hidden">{% if post.data.ref_url %}Saved on{% else %}Posted on{% endif %}</dt>
@@ -94,9 +94,7 @@ github_edit: "_layouts/blog.html"
       </div>
 
     {% if sidebar != false %}
-      <hr class="rule rule--optional">
-
-      <aside class="layout-container__secondary">
+      {%- set page_sidebars %}
         {% if site.asides.blog %}
           {% for sidebar in site.asides.blog %}
             {% include sidebar %}
@@ -110,7 +108,12 @@ github_edit: "_layouts/blog.html"
             {% include sidebar %}
           {% endfor %}
         {% endif %}
-      </aside>
+      {% endset -%}
+      {% if page_sidebars | trim | length > 0 %}
+        <aside class="layout-container__secondary" >
+          {{ page_sidebars | safe }}
+        </aside>
+      {% endif %}
     {% endif %}
 
   </article>

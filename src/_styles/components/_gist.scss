@@ -28,7 +28,7 @@ Gist
 
     a {
       color: $color-background;
-      @include underline( $color-background, 0, 1px, $color-text );
+      text-decoration-color: $color-background;
     }
   }
 
