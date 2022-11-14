@@ -25,9 +25,8 @@ Navigation
   
   .main-navigation {
     
-    #aaron-gustafson_com &__link {
-      background-image: none;
-      text-shadow: none;
+    &__link {
+      text-decoration: none;
     }
     
     &__link:hover,
