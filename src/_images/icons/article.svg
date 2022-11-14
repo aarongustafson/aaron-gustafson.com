@@ -6,7 +6,7 @@
         @media (prefers-color-scheme: dark) { #noun_1091930_cc { fill: #fffcf4; } }
     </style>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
         <g id="noun_1091930_cc" sketch:type="MSLayerGroup" transform="translate(1.000000, 0.000000)">
             <g id="Group" sketch:type="MSShapeGroup">
                 <path d="M33.4,0 L2.6,0 C0.9,0 -0.4,1.3 -0.4,3 L-0.4,45 C-0.4,46.7 0.9,48 2.6,48 L33.4,48 C35.1,48 36.4,46.7 36.4,45 L36.4,3 C36.4,1.3 35.1,0 33.4,0 L33.4,0 Z M33.7,45 L2.3,45 L2.3,3 L33.6,3 L33.6,45 L33.7,45 Z" id="Shape"></path>
