@@ -8,6 +8,14 @@
     "active": true
   },
   {
+    "site": "Mastodon",
+    "username": "@Aaron",
+    "url": "https://front-end.social/@Aaron",
+    "title": "Follow on Mastodon",
+    "category": "profile",
+    "active": true
+  },
+  {
     "site": "Notist",
     "url": "https://noti.st/aarongustafson",
     "title": "See where I’ve been &amp; where I’m going next on Notist",
@@ -65,12 +73,5 @@
     "title": "View my photos on Flickr",
     "category": "photos",
     "active": false
-  },
-  {
-    "site": "Mastodon",
-    "url": "https://toot.cafe/@aarongustafson",
-    "title": "Follow on Mastodon",
-    "category": "profile",
-    "active": true
   }
 ]
