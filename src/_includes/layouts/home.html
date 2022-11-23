@@ -1,9 +1,23 @@
 {% extends "layouts/base.html" %}
+{% from "macros.njk" import social_icon %}
 
 {% block content %}
   <article class="page page--home layout-container">
     <div class="layout-container__primary">
       {{ content | safe }}
+
+      <h2 class="subsection__header"><b class="hidden">Me, </b>Elsewhere<b> on the Web</b></h2>
+      <ul class="social-links">
+        {% for profile in profiles | selectattr("active") %}
+          {% set profile_slug = profile.site | slug | replace(".","") %}
+          <li class="social-links__item">
+            <a class="social-link social-link--{{ profile_slug }}" href="{{ profile.url }}">
+              {{ social_icon( profile_slug ) | replace('<svg ','<svg class="social-link__icon" ') | safe }}
+              <b class="social-link__text">{{ profile.title }}</b>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
     </div>
   </article>
 {% endblock %}

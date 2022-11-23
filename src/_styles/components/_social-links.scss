@@ -12,29 +12,83 @@ $social-buttons: (
   ),
   linkedin: (
     color: #007bb6,
-    size: 23,
+    size: 21,
     offset: 3
   ),
   pinterest: (
     color: #b81621,
-    size: 25,
+    size: 24,
     offset: 1
   ),
   twitter: (
     color: #26c4f1,
-    size: 22,
-    offset: 3
+    size: 20,
+    offset: 4
   ),
   hacker-news: (
     color: #f60,
-    size: 25,
+    size: 23,
     offset: 2
-  )
+  ),
+  notist: (
+    color: #000,
+    size: 20,
+    offset: 4
+  ),
+  discogs: (
+    color: #333,
+    size: 20,
+    offset: 4
+  ),
+  github: (
+    color: #24292f,
+    size: 20,
+    offset: 3
+  ),
+  instagram: (
+    color: #FA383E,
+    size: 20,
+    offset: 4
+  ),
+  mastodon: (
+    color: #5C4EE4,
+    size: 20,
+    offset: 4
+  ),
+  lastfm: (
+    color: #b90000,
+    size: 20,
+    offset: 4
+  ),
+  youtube: (
+    color: #FE0002,
+    size: 20,
+    offset: 4
+  ),
+  bandcamp: (
+    color: #1DA0C3,
+    size: 20,
+    offset: 4
+  ),
 );
 
 @include breakup-breakpoint( "global" ) {
 
-  .share-link {
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: .5rem 0 0;
+    padding: 0;
+    list-style: none;
+    gap: .5rem;
+    
+    &__item {
+      margin: 0;
+    }
+  }
+
+  .social-link {
 
         background: $color-green;
     @include rem( border-radius, 6 );
@@ -45,12 +99,12 @@ $social-buttons: (
     padding: 4px 8px;
 
     &:link,
-      &:visited,
-      &:hover,
-      &:focus,
-      &:active {
-      color: $color-white;
-      }
+    &:visited,
+    &:hover,
+    &:focus,
+    &:active {
+    color: $color-white;
+    }
 
     @each $site, $config in $social-buttons {
       
@@ -62,7 +116,7 @@ $social-buttons: (
             &:hover,
             &:focus,
             &:active {
-          background: darken( map-get( $config, 'color' ), 20% );
+              background: darken( map-get( $config, 'color' ), 20% );
             }
 
           }
@@ -80,7 +134,8 @@ $social-buttons: (
       vertical-align: top;
       display: inline-block;
 
-      path {
+      path,
+      circle {
         fill: $color-white;
       }
 
@@ -93,16 +148,16 @@ $social-buttons: (
     }
 
     // better underlines
-  .share-link:link,
-  .share-link:visited,
-  .share-link:hover,
-  .share-link:focus,
-  .share-link:active,
-  html.wf-active .share-link:link,
-  html.wf-active .share-link:visited,
-  html.wf-active .share-link:hover,
-  html.wf-active .share-link:focus,
-  html.wf-active .share-link:active {
+  .social-link:link,
+  .social-link:visited,
+  .social-link:hover,
+  .social-link:focus,
+  .social-link:active,
+  html.wf-active .social-link:link,
+  html.wf-active .social-link:visited,
+  html.wf-active .social-link:hover,
+  html.wf-active .social-link:focus,
+  html.wf-active .social-link:active {
     @include no-underline;
   }
 

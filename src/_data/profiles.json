@@ -16,13 +16,6 @@
     "active": true
   },
   {
-    "site": "Notist",
-    "url": "https://noti.st/aarongustafson",
-    "title": "See where I’ve been &amp; where I’m going next on Notist",
-    "category": "speaking",
-    "active": true
-  },
-  {
     "site": "GitHub",
     "username": "AaronGustafson",
     "url": "https://github.com/aarongustafson",
@@ -40,9 +33,16 @@
   {
     "site": "SlideShare",
     "url": "https://www.slideshare.net/AaronGustafson/",
-    "title": "View and download presentatinos I’ve given on SlideShare",
+    "title": "View and download presentations I’ve given on SlideShare",
     "category": "speaking",
     "active": false
+  },
+  {
+    "site": "Notist",
+    "url": "https://noti.st/aarongustafson",
+    "title": "See where I’ve been &amp; where I’m going next on Notist",
+    "category": "speaking",
+    "active": true
   },
   {
     "site": "Facebook",
@@ -73,5 +73,33 @@
     "title": "View my photos on Flickr",
     "category": "photos",
     "active": false
+  },
+  {
+    "site": "YouTube",
+    "url": "https://www.youtube.com/@AaronGustafson",
+    "title": "See my videos on YouTube",
+    "category": "videos",
+    "active": true
+  },
+  {
+    "site": "Discogs",
+    "url": "https://www.discogs.com/user/AaronGustafson",
+    "title": "Vinyl head? Check out my collection",
+    "category": "music",
+    "active": true
+  },
+  {
+    "site": "Bandcamp",
+    "url": "https://bandcamp.com/AaronGustafson/",
+    "title": "Check out the artists I support on Bandcamp",
+    "category": "music",
+    "active": true
+  },
+  {
+    "site": "Last.fm",
+    "url": "https://www.last.fm/user/AaronGustafson",
+    "title": "See what I’ve been listening to",
+    "category": "music",
+    "active": true
   }
 ]

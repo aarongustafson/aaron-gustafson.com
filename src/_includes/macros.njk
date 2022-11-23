@@ -329,3 +329,7 @@
     </a>
   </lite-youtube>
 {% endmacro %}
+
+{% macro social_icon( slug ) %}
+  {{ ( "/src/static/i/icons/" + slug + ".svg" ) | svgContents | safe }}
+{% endmacro %}
