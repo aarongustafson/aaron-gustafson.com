@@ -31,6 +31,13 @@
     "active": true
   },
   {
+    "site": "Polywork",
+    "url": "https://poly.me/aarongustafson",
+    "title": "View my profile on Polywork",
+    "category": "profile",
+    "active": true
+  },
+  {
     "site": "SlideShare",
     "url": "https://www.slideshare.net/AaronGustafson/",
     "title": "View and download presentations I’ve given on SlideShare",
