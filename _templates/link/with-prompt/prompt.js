@@ -55,6 +55,9 @@ module.exports = [
   {
     type: 'input',
     name: 'via_url',
-    message: "What's the URL?"
+    message: "What's the URL?",
+    skip(){
+      return !this.state.answers.via_url;
+    }
   }
 ]
