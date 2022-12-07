@@ -39,17 +39,22 @@ async function readOpenGraphr(url) {
 
   // error
   let json = await response.json();
-  if ( json.error.indexOf("limit") > -1 )
-  {
-    logAPILimitReached('OpenGraphr');
+  try {
+    if ( json.error.indexOf("limit") > -1 )
+    {
+      logAPILimitReached('OpenGraphr');
+    }
+    else if ( json.error.indexOf("404") > -1 ||
+              json.error.indexOf("could not be found") > -1 ) {
+      console.log(`>>> OpenGraphr got a 404 on ${url}`);
+      writeToCache( url, true, CACHE_404_PATH );
+      return 404;
+    }
+    console.log(`>>> unable to check OpenGraphr: ${json.error}`);
   }
-  else if ( json.error.indexOf("404") > -1 ||
-            json.error.indexOf("could not be found") > -1 ) {
-    console.log(`>>> OpenGraphr got a 404 on ${url}`);
-    writeToCache( url, true, CACHE_404_PATH );
-    return 404;
+  catch(e) {
+    console.log(`>>> unable to check OpenGraphr for some unknown reason`);
   }
-  console.log(`>>> unable to check OpenGraphr: ${json.error}`);
   return false;
 }
 
