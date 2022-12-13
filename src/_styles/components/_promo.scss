@@ -24,6 +24,10 @@ $promo-background-color: lighten( #7FB843, 45% );
       a:link,
       a:visited {
         color: #14440E;
+
+				@media (prefers-color-scheme: dark) {
+					color: $color-green-light;
+				}
       }
     
       // Image variant
