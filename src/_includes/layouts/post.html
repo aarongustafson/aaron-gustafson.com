@@ -92,7 +92,7 @@ is_post: true
           {% if thanks %}
             <p>Many thanks to
             {% for person, url in thanks %}
-              {% set link %}<a href="{{ url }}">{{ person }}</a>{% endset %}
+              {% set link %}{%- if url %}<a href="{{ url }}">{{ person }}</a>{% else %}{{ person }}{% endif -%}{% endset %}
               {% if thanks.size == 1 %}
                 {{ link | safe }}
               {% elif loop.last %}
@@ -101,7 +101,7 @@ is_post: true
                 {{ link | safe }},
               {% endif %}
             {% endfor %}
-            for helping me with this piece.
+            for helping me with the development of this piece.
           {% endif %}
 
           {% include "partials/post/sharing.html" %}
