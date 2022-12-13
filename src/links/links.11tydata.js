@@ -113,7 +113,7 @@ function writeToCache( url, value, cache ) {
   const data = yaml.load(fs.readFileSync(cache));
   if ( ! (url in data) )
   {
-    value = ( value === true || value == 404 ) ? value : `"${value}"`;
+    value = ( value === true || value == 404 ) ? value : `"${encodeURI(value)}"`;
     fs.appendFile(cache, `${url}: ${value}\n`, err => {
       if (err) throw err;
       console.log(`>>> Opengraph images for ${url} cached`);
@@ -173,7 +173,7 @@ module.exports = {
       const url = data.ref_url;
       if ( url in og_images )
       {
-        return ( og_images[url] === true || og_images[url] === "404" ) ? false : og_images[url];
+        return ( og_images[url] === true || og_images[url] === "404" ) ? false : decodeURI(og_images[url]);
       }
       else
       {
