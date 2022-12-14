@@ -7,6 +7,12 @@ description: "The myriad reasons I don’t think this case should be before the 
 twitter_text: "A longer essay on 303 Creative v. Elenis and why it should not be before the court in the first place as well as the potential it has to undermine other public accommodations laws."
 thanks:
   "Ebele Okoli": ""
+hero:
+  src: /i/posts/2022-12-13/hero.jpg
+  credit: Aaron Gustafson × DALL·E
+  alt: "Pop art style illustration of a white woman holding her hand up to say stop."
+  url: https://labs.openai.com/s/kleV0rfm9jTQfd9GQpWV6Cw2
+  offset: "0"
 ---
 
 Before I get into this, let me start with this preface: I am not a legal expert by any means. I never even watched <cite>Law & Order</cite>. That said, I am keenly interested in the law and how it relates to bias and discrimination, particularly if that intersects with technology, especially the web.
