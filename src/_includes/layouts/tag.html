@@ -5,18 +5,21 @@ github_edit: "_layouts/tag.html"
 {% extends "layouts/base.html" %}
 
 {% block content %}
-  {% set posts = collections[ tag ] %}
-  
-  <article role="article" class="page layout-container layout-container--blog">
-    <h1 class="page__title">Content Filed Under “{{ title | title | widont | safe }}”</h1>
-    <div class="layout-container__primary">
+	{% set posts = collections[ tag ] %}
+	
+	<article role="article" class="page layout-container layout-container--blog">
+		<h1 class="page__title">Content Filed Under “{{ title | title | widont | safe }}”</h1>
 
-      <div id="blog-archives">
-        {% set teaser_heading_level = "h2" %}
-        {% for post in posts | reverse %}
-          {% include "partials/post/teaser.html" %}
-        {% endfor %}
-      </div>
-    </div>
-  </article>
+		<p>You can subscribe to a feed of all content filed under “{{ title | title | widont | safe }}” as <a type="text/xml" href="/feeds/{{ tag | lower | slugify }}.xml">XML (RSS)</a> or <a type="application/json" href="/feeds/{{ tag | lower | slug }}.json">JSON</a>.</p>
+
+		<div class="layout-container__primary">
+
+			<div id="blog-archives">
+				{% set teaser_heading_level = "h2" %}
+				{% for post in posts | reverse %}
+					{% include "partials/post/teaser.html" %}
+				{% endfor %}
+			</div>
+		</div>
+	</article>
 {% endblock %}

@@ -1,106 +1,107 @@
 <!DOCTYPE html>
 <html id="aaron-gustafson_com" lang="en" dir="ltr">
 
-  <head>
-    <meta charset="utf-8">
+	<head>
+		<meta charset="utf-8">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta http-equiv="cleartype" content="on">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta http-equiv="cleartype" content="on">
 
-    {% seo "" %}
-    <link rel="apple-touch-icon" href="{{ site.logo }}">
-    <meta property="og:locale" content="{{ site.lang }}">
-    <meta name="revisit-after" content="7 days">
-    <meta name="ROBOTS" content="index,follow">
-    <meta name="robots" content="NOODP">
-    
-    <link href="/favicon.png" rel="icon">
-    <link rel="manifest" href="/manifest.json">
+		{% seo "" %}
+		<link rel="apple-touch-icon" href="{{ site.logo }}">
+		<meta property="og:locale" content="{{ site.lang }}">
+		<meta name="revisit-after" content="7 days">
+		<meta name="ROBOTS" content="index,follow">
+		<meta name="robots" content="NOODP">
+		
+		<link href="/favicon.png" rel="icon">
+		<link rel="manifest" href="/manifest.json">
 
-    <link rel="stylesheet" href="/c/default{% if site.minify %}.min{% endif %}.css" media="all">
-    <link rel="stylesheet" href="/c/advanced{% if site.minify %}.min{% endif %}.css" media="only screen">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#27831B">
-    <meta name="MobileOptimized" content="width">
-    <meta name="HandheldFriendly" content="true">
+		<link rel="stylesheet" href="/c/default{% if site.minify %}.min{% endif %}.css" media="all">
+		<link rel="stylesheet" href="/c/advanced{% if site.minify %}.min{% endif %}.css" media="only screen">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#27831B">
+		<meta name="MobileOptimized" content="width">
+		<meta name="HandheldFriendly" content="true">
 
-    {% for feed in site.feeds %}
-      <link href="{{ feed.atom }}" rel="alternate" title="{{ feed.title }}{{ site.title }}" type="application/atom+xml">
-      <link href="{{ feed.json }}" rel="alternate" title="{{ feed.title }}{{ site.title }}" type="application/json">
-    {% endfor %}
-    
-    {% for script in page.javascripts.head %}
-      <script src="/j/{{ script }}{% if site.minify %}.min{% endif %}.js" async></script>
-    {% endfor %}
-    <meta name="twitter:widgets:csp" content="on">
-    
-    {% for link in profiles %}{% if link.active == true %}
-      <link rel="me" href="{{ link.url }}" title="Me on {{ link.site }}">
-    {% endif %}{% endfor %}
+		{% for feed in site.feeds %}
+			<link href="{{ feed.atom }}" rel="alternate" title="{{ feed.title }}{{ site.title }}" type="application/atom+xml">
+			<link href="{{ feed.json }}" rel="alternate" title="{{ feed.title }}{{ site.title }}" type="application/json">
+		{% endfor %}
+		
+		{% for script in page.javascripts.head %}
+			<script src="/j/{{ script }}{% if site.minify %}.min{% endif %}.js" async></script>
+		{% endfor %}
+		<meta name="twitter:widgets:csp" content="on">
+		
+		{% for link in profiles %}{% if link.active == true %}
+			<link rel="me" href="{{ link.url }}" title="Me on {{ link.site }}">
+		{% endif %}{% endfor %}
 
-    <link rel="webmention" href="https://webmention.io/www.aaron-gustafson.com/webmention" />
-    <link rel="pingback" href="https://webmention.io/www.aaron-gustafson.com/xmlrpc" />
+		<link rel="webmention" href="https://webmention.io/www.aaron-gustafson.com/webmention" />
+		<link rel="pingback" href="https://webmention.io/www.aaron-gustafson.com/xmlrpc" />
 
-    <meta name="monetization" content="$ilp.uphold.com/bQeAXrfee6wW">
-  </head>
+		<meta name="monetization" content="$ilp.uphold.com/bQeAXrfee6wW">
+	</head>
 
-  {% set svg_essay %}{{ "/src/static/i/icons/essay.svg" | svgContents | safe }}{% endset %}
-  {% set svg_link %}{{ "/src/static/i/icons/pin.svg" | svgContents | safe }}{% endset %}
-  {% set svg_book %}{{ "/src/static/i/icons/book.svg" | svgContents | replace("82px","24px") | replace("65px","19px") | safe }}{% endset %}
-  {% set svg_article %}{{ "/src/static/i/icons/article.svg" | svgContents  | replace("38px","24px") | replace("48px","30px") | safe }}{% endset %}
-  
-  <body {% if body_class %} class="{{ body_class }}" {% endif %} >
+	{% set svg_essay %}{{ "/src/static/i/icons/essay.svg" | svgContents | safe }}{% endset %}
+	{% set svg_link %}{{ "/src/static/i/icons/pin.svg" | svgContents | safe }}{% endset %}
+	{% set svg_book %}{{ "/src/static/i/icons/book.svg" | svgContents | replace("82px","24px") | replace("65px","19px") | safe }}{% endset %}
+	{% set svg_article %}{{ "/src/static/i/icons/article.svg" | svgContents  | replace("38px","24px") | replace("48px","30px") | safe }}{% endset %}
+	
+	<body {% if body_class %} class="{{ body_class }}" {% endif %} >
 
-    {% set alert %}
-      <div class="alert" role="complementary" aria-label="Site Notice">
-        <strong>This site is <a href="/notebook/a-grand-experiment/">undergoing an open redesign</a>, so if it looks strange, that’s why.</strong>
-      </div>
-    {% endset %}
-    
-    {% if page.url == '/index.html' %}{{ alert | safe }}{% endif %}
-    <header role="banner" class="banner">
-      <div class="layout-container">
-        <h1 class="site-title"><a href="{{ site_url }}/" aria-label="Return to the homepage">{{ site.title }}</a></h1>
-        {% if page.url == '/index.html' %}
-          <h2 class="site-subtitle">{{ site.subtitle }}</h2>
-        {% endif %}
-      </div>
-    </header>
-    {% if page.url != '/index.html' %}{{ alert | safe }}{% endif %}
+		{% set alert %}
+			<div class="alert" role="complementary" aria-label="Site Notice">
+				<strong>This site is <a href="/notebook/a-grand-experiment/">undergoing an open redesign</a>, so if it looks strange, that’s why.</strong>
+			</div>
+		{% endset %}
+		
+		{% if page.url == '/index.html' %}{{ alert | safe }}{% endif %}
+		<header role="banner" class="banner">
+			<div class="layout-container">
+				<h1 class="site-title"><a href="{{ site_url }}/" aria-label="Return to the homepage">{{ site.title }}</a></h1>
+				{% if page.url == '/index.html' %}
+					<h2 class="site-subtitle">{{ site.subtitle }}</h2>
+				{% endif %}
+			</div>
+		</header>
+		{% if page.url != '/index.html' %}{{ alert | safe }}{% endif %}
 
-    <main role="main">
-      {% block content %}{% endblock %}
-    </main>
+		<main role="main">
+			{% block content %}{% endblock %}
+		</main>
 
-    <hr class="rule rule--optional">
+		<hr class="rule rule--optional">
 
-    {% include "partials/global/navigation.html" %}
-    
-    <footer role="contentinfo" class="footer">
-      <div class="layout-container">
-        {% if page.path != '.html' %}
-          <p class="footer__fork-me">Did you spot a typo or error? Eesh, I’m sorry. Would you mind <a href="{{ site.repo_url | replace('/tree/', '/edit/') }}{% if page.tag %}_layouts/tag.html{% elif page.blog %}_layouts/blog.html{% else %}{{ page.inputPath }}{% endif %}">fixing it</a> for me? You’re so awesome.</p>
-        {% endif %}
-        <p class="footer__copyright">
-          <b id="license">The content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a>.</b>
-          {% if page.fileSlug != "colophon" %}
-            Interested in how this site was made? <a href="/colophon/">Check this out</a>.
-          {% endif %}
-        </p>
-      </div>
-    </footer>
+		{% include "partials/global/navigation.html" %}
+		
+		<footer role="contentinfo" class="footer">
+			<div class="layout-container">
+				<p class="footer__feeds">This site offers <a href="/feeds/">multiple feeds in XML (RSS) and JSONFeed formats</a>.</p>
+				{% if page.path != '.html' %}
+					<p class="footer__fork-me">Did you spot a typo or error? Eesh, I’m sorry. Would you mind <a href="{{ site.repo_url | replace('/tree/', '/edit/') }}{% if page.tag %}_layouts/tag.html{% elif page.blog %}_layouts/blog.html{% else %}{{ page.inputPath }}{% endif %}">fixing it</a> for me? You’re so awesome.</p>
+				{% endif %}
+				<p class="footer__copyright">
+					<b id="license">The content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a>.</b>
+					{% if page.fileSlug != "colophon" %}
+						Interested in how this site was made? <a href="/colophon/">Check this out</a>.
+					{% endif %}
+				</p>
+			</div>
+		</footer>
 
-    <script src="/j/main{% if site.minify %}.min{% endif %}.js"></script>
-    {% if is_post %}
-      <script src="/j/post{% if site.minify %}.min{% endif %}.js" async></script>
-      <script src="/j/lite-youtube-embed{% if site.minify %}.min{% endif %}.js" async></script>
-      <script id="twitter-wjs" type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
-    {% endif %}
-    {% for script in javascripts.body %}
-      <script src="/j/{{ script }}{% if site.minify %}.min{% endif %}.js" async></script>
-    {% endfor %}
+		<script src="/j/main{% if site.minify %}.min{% endif %}.js"></script>
+		{% if is_post %}
+			<script src="/j/post{% if site.minify %}.min{% endif %}.js" async></script>
+			<script src="/j/lite-youtube-embed{% if site.minify %}.min{% endif %}.js" async></script>
+			<script id="twitter-wjs" type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+		{% endif %}
+		{% for script in javascripts.body %}
+			<script src="/j/{{ script }}{% if site.minify %}.min{% endif %}.js" async></script>
+		{% endfor %}
 
-  </body>
+	</body>
 
 </html>
