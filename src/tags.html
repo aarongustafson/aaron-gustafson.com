@@ -7,11 +7,13 @@ permalink: "/tags/{{ tag | lower | slugify }}/"
 eleventyComputed:
   title: "Browse by Tag: {{ tag }}"
 showPageNumbers: false
+body_class: "tag-page"
 ---
 {% extends "layouts/base.html" %}
 
 {% block content %}
   {% set the_title %}<b>Browse by Tag:</b> <b>{{ tag }}</b>{% endset %}
+  {% set tag_slug %}{{ tag | lower | slugify }}{% endset %}
   {% set posts = collections[ tag ] %}
   {% set svg_essay %}{{ "/src/static/i/icons/essay.svg" | svgContents | replace('"100"','"24"') | replace('"87"','"20"') | safe }}{% endset %}
   {% set svg_link %}{{ "/src/static/i/icons/pin.svg" | svgContents  | replace('"100"','"24"') | safe }}{% endset %}
@@ -19,6 +21,7 @@ showPageNumbers: false
   <article role="article" class="page layout-container layout-container--blog">
     <h1 class="page__title subsection__header">{{ the_title | title | widont | safe }}</h1>
     <div class="layout-container__primary">
+      <p class="promo">You can subscribe to a feed of all content filed under “{{ tag }}” as <a type="text/xml" href="/feeds/{{ tag_slug }}.xml">XML (RSS)</a> or <a type="application/json" href="/feeds/{{ tag_slug }}.json">JSON</a>.</p>
 
       <div id="blog-archives">
         {% for post in posts | reverse %}
