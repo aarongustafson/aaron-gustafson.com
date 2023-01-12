@@ -1,7 +1,8 @@
 /* jshint node: true */
 const {dest, src} = require('gulp');
 const config = require("./config.js");
-const squoosh = require("gulp-squoosh");
+const through2 = require("through2");
+const sharp = require("sharp");
 const svgo = require("gulp-svgo");
 const filter = require("gulp-filter");
 const gulpif = require("gulp-if");
@@ -43,10 +44,6 @@ const writeCache = () => {
   return stream;
 };
 
-const squoosh_opts = {
-  oxipng: {},
-  mozjpeg: {}
-};
 const svgo_opts = {
   plugins: [
       { removeViewBox: false }
@@ -65,7 +62,26 @@ const images = () => {
     // Save the list of new files
     .pipe( cacheFiles() )
     // Optimize
-    .pipe( gulpif( "*.svg", svgo( svgo_opts ), squoosh( squoosh_opts ) ) )
+    .pipe(
+			gulpif(
+				"*.svg",
+				svgo( svgo_opts ),
+				through2.obj(function(file, _, cb){
+					return sharp(file.contents)
+									.jpeg({ progressive: true, force: false })
+									.png({ progressive: true, force: false })
+									.toBuffer()
+									.then(function(buffer) {
+										file.contents = buffer;
+										return cb(null, file);
+									})
+									.catch(function(err) {
+										console.error(err);
+										return cb(null, file);
+									});
+				})
+			) // gulpif
+		) // pipe
     // Save
     .pipe( dest( destination ) )
     .pipe( dest( dist ) )
