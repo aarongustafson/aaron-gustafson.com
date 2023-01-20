@@ -52,15 +52,15 @@ sitemap: false
             <ul class="fields">
               <li class="fields__group fields__group--text">
                 <label for="p_title">Title</label>
-                <input id="p_title" name="p_title">
+                <input id="p_title" name="p_title" required>
               </li>
               <li class="fields__group fields__group--url">
                 <label for="p_link">URL</label>
-                <input type="url" id="p_link" name="p_link">
+                <input type="url" id="p_link" name="p_link" required>
               </li>
               <li class="fields__group fields__group--text">
                 <label for="p_source">Source</label>
-                <input id="p_source" name="p_source">
+                <input id="p_source" name="p_source" required>
               </li>
               <li class="fields__group fields__group--textarea">
                 <label for="p_body">Want to tweet something specific?</label>
@@ -68,11 +68,11 @@ sitemap: false
               </li>
               <li class="fields__group fields__group--textarea">
                 <label for="p_body">What do you want to say?</label>
-                <textarea id="p_body" name="p_body"></textarea>
+                <textarea id="p_body" name="p_body" required></textarea>
               </li>
               <li class="fields__group fields__group--text">
                 <label for="p_tags">How would you tag this?</label>
-                <input id="p_tags" name="p_tags" list="tags" data-multiple>
+                <input id="p_tags" name="p_tags" list="tags" data-multiple required>
                 <datalist id="tags">
                   {% for tag in collections.tags %}
                     <option>{{ tag }}</option>
@@ -102,11 +102,11 @@ sitemap: false
             <ul class="fields">
               <li class="fields__group fields__group--text">
                 <label for="username">Username</label>
-                <input id="username" name="username">
+                <input id="username" name="username" required>
               </li>
               <li class="fields__group fields__group--password">
                 <label for="password">Token</label>
-                <input type="password" id="password" name="password">
+                <input type="password" id="password" name="password" required>
               </li>
               <li class="fields__group fields__group--buttons">
                 <button id="save">Save your credentials</button>
