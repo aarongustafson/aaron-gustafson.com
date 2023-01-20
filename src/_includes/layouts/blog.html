@@ -24,14 +24,14 @@ github_edit: "_layouts/blog.html"
               {% if is_excerpted %}
                 <a rel="bookmark"
                    href="{{ post.url }}"
-                   >{{ post_title }}</a>
+                   >{{ post_title | safe }}</a>
               {% elif post.data.ref_url and not post.data.is_404 %}
                 <a rel="external original-article"
                    class="u-bookmark-of h-cite"
                    href="{{ post.data.ref_url }}"
-                   >{{ post_title }}</a>
+                   >{{ post_title | safe }}</a>
               {% else %}
-                {{ post_title }}
+                {{ post_title | safe }}
               {% endif %}
             </h2>
             {% if not (post.data.meta == false) %}

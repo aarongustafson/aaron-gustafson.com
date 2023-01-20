@@ -31,7 +31,7 @@ module.exports = {
 	},
 
 	strip_links: text => {
-		return text.replace(/(<\/?a[^>]*>)/gi, "");
+		return text.replace(/<\/?a[^>]*>/gi, "");
 	},
 
 	widont: text => {
