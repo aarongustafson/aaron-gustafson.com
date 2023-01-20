@@ -16,6 +16,7 @@ github_edit: "_layouts/blog.html"
       {% for post in posts %}
         {% set content %}{% if post.data.page.excerpt %}<p>{{ post.data.page.excerpt | markdownify | safe }}</p>{% else %}{{ post.templateContent | safe }}{% endif %}{% endset %}
         {% set is_excerpted = ( post.templateContent != content ) %}
+				{% set post_title %}{{ post.data.title | widont | markdownify | strip_links | safe }}{% endset %}
         
         <article class="h-entry entry entry--excerpt entry--{{ post.data.collection }}{% if post.data.hero or post.data.og_image %} entry--with-hero{% endif %}">
           <header class="entry__header">
@@ -23,14 +24,14 @@ github_edit: "_layouts/blog.html"
               {% if is_excerpted %}
                 <a rel="bookmark"
                    href="{{ post.url }}"
-                   >{{ post.data.title | widont | markdownify | safe }}</a>
+                   >{{ post_title }}</a>
               {% elif post.data.ref_url and not post.data.is_404 %}
                 <a rel="external original-article"
                    class="u-bookmark-of h-cite"
                    href="{{ post.data.ref_url }}"
-                   >{{ post.data.title | widont | markdownify | safe }}</a>
+                   >{{ post_title }}</a>
               {% else %}
-                {{ post.data.title | widont | markdownify | safe }}
+                {{ post_title }}
               {% endif %}
             </h2>
             {% if not (post.data.meta == false) %}

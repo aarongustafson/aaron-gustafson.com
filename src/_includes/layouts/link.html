@@ -17,7 +17,7 @@ is_post: true
               class="u-bookmark-of h-cite" 
               href="{{ page.ref_url }}"
               {% if hreflang %} hreflang="{{ hreflang }}"{% endif %}
-              >{{ title | widont | markdownify | safe }}</a>
+              >{{ title | widont | markdownify | strip_links | safe }}</a>
           </h1>
           <dl class="entry__meta">
             <dt>Published by</dt>

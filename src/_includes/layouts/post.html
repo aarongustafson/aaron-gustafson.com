@@ -20,7 +20,7 @@ is_post: true
     <article role="article" class="layout-container__primary h-entry">
       <div class="entry entry--page">
         <header class="entry__header">
-          {{ heading | safe }}
+          {{ heading | strip_links | safe }}
         </header>
 
         <div class="entry__meta">
