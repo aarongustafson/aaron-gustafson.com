@@ -1,7 +1,7 @@
 ---
 title: "Inclusion is Innovation"
 date: 2023-01-20T00:05:20.519Z
-tags: [""]
+tags: ["inclusion"]
 ref_url: https://news.microsoft.com/inclusionisinnovation/
 in_reply_to: https://news.microsoft.com/inclusionisinnovation/
 twitter_text: "Having worked in the D&I space within Microsoft for a few years now, it’s great to see the things we’ve been discussing internally making it out into the world. #InclusionIsInnovation"
