@@ -13,7 +13,7 @@ Changes: 2020.08.23 v2.0 - Updated to catch alternate stylesheets & added ignore
       attrs;
 
   // For testing:
-  // month = 3; day = 9;
+  month = 3; day = 9;
 
   if (document.querySelectorAll && month === 3 && day === 9) {
 

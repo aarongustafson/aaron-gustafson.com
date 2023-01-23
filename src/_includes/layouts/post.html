@@ -6,148 +6,156 @@ is_post: true
 
 {% block content %}
 
-  {% set keywords %}{% if tags.length > 0 %}{{ tags | join(", ") }}{% endif %}{% endset %}
-  {% set this_url = site.url + page.url %}
-  {% set all_mentions = webmentions | getWebmentionsForUrl(this_url) %}
-  {% set replies = all_mentions | webmentionsByType(['mention-of', 'in-reply-to', 'bookmark-of']) | required('name || summary || content') %}
-  {% set likes = all_mentions | webmentionsByType('like-of') | required('author') %}
-  {% set shares = all_mentions | webmentionsByType([ 'repost-of' ]) %}
-  {% set total_webmentions = replies.length + likes.length + shares.length %}
-  {% set has_webmentions = total_webmentions > 0 %}
-  {% set heading %}<h1 class="entry__title p-name">{{ title | widont | markdownify | strip_links | safe }}</h1>{% endset %}
+	{% set keywords %}{% if tags.length > 0 %}{{ tags | join(", ") }}{% endif %}{% endset %}
+	{% set this_url = site.url + page.url %}
+	{% set all_mentions = webmentions | getWebmentionsForUrl(this_url) %}
+	{% set replies = all_mentions | webmentionsByType(['mention-of', 'in-reply-to', 'bookmark-of']) | required('name || summary || content') %}
+	{% set likes = all_mentions | webmentionsByType('like-of') | required('author') %}
+	{% set shares = all_mentions | webmentionsByType([ 'repost-of' ]) %}
+	{% set total_webmentions = replies.length + likes.length + shares.length %}
+	{% set has_webmentions = total_webmentions > 0 %}
+	{% set heading %}<h1 class="entry__title p-name">{{ title | widont | markdownify | strip_links | safe }}</h1>{% endset %}
 
-  <div class="layout-container layout-container--blog">
-    <article role="article" class="layout-container__primary h-entry">
-      <div class="entry entry--page">
-        <header class="entry__header">
-          {{ heading | safe }}
-        </header>
+	<div class="layout-container layout-container--blog">
+		<article role="article" class="layout-container__primary h-entry">
+			<div class="entry entry--page">
+				<header class="entry__header">
+					{{ heading | safe }}
+				</header>
 
-        <div class="entry__meta">
-          {% if reply_to_url %}
-            <p class="entry__in-reply-to">You are reading a reply to 
-              <a class="u-in-reply-to" href="{{ reply_to_url }}">{{ reply_to_title }}</a>.
-            </p>
-          {% endif %}
+				<div class="entry__meta">
+					{% if reply_to_url %}
+						<p class="entry__in-reply-to">You are reading a reply to 
+							<a class="u-in-reply-to" href="{{ reply_to_url }}">{{ reply_to_title }}</a>.
+						</p>
+					{% endif %}
 
-          {% if series %}
-            <p class="entry__series">This is the {{ series.ordinal }} entry in the series 
-              <a href="/notebook/series/{{ series.tag | replace('series-','') }}">{{ series.name }}</a>.
-            </p>
-          {% endif %}
+					{% if series %}
+						<p class="entry__series">This is the {{ series.ordinal }} entry in the series 
+							<a href="/notebook/series/{{ series.tag | replace('series-','') }}">{{ series.name }}</a>.
+						</p>
+					{% endif %}
 
-          <dl>
-            <dt>Published</dt>
-            <dd>
-              {{ post_date( page.date, last_updated_at) }}
-              <b class="hidden">by <a class="p-author h-card" href="/about">Aaron Gustafson</a></b>
-              {% if in_reply_to %} <b class="hidden">in reply to <a class="u-in-reply-to" href="{{ in_reply_to }}">{{ in_reply_to }}</a></b>{% endif %}
-            </dd>
-            
-            <dt>Reading Time</dt>
-            <dd>{{ content | readingTime }}</dd>
+					<dl>
+						<dt>Published</dt>
+						<dd>
+							{{ post_date( page.date, last_updated_at) }}
+							<b class="hidden">by <a class="p-author h-card" href="/about">Aaron Gustafson</a></b>
+							{% if in_reply_to %} <b class="hidden">in reply to <a class="u-in-reply-to" href="{{ in_reply_to }}">{{ in_reply_to }}</a></b>{% endif %}
+						</dd>
+						
+						<dt>Reading Time</dt>
+						<dd>{{ content | readingTime }}</dd>
 
-            <dt class="dont-read">Filed Under</dt>
-            <dd class="dont-read">{{ tag_list( tags ) }}</dd>
+						<dt class="dont-read">Filed Under</dt>
+						<dd class="dont-read">{{ tag_list( tags ) }}</dd>
 
-            {% if total_webmentions > 0 %}
-              <dt class="dont-read">Reactions</dt>
-              <dd class="dont-read">
-                <ul class="entry__jump-links">
-                  {#<li class="entry__jump entry__jump--comments"><a href="{% if index %}{{ root_url }}{{ page.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ this_url }}{% endif %}">Comments</a></li>#}
-                  <li class="entry__jump entry__jump--webmentions"><a href="#webmentions">{{ total_webmentions }} Webmentions</a></li>
-                </ul>
-              </dd>
-            {% endif %}
+						{% if total_webmentions > 0 %}
+							<dt class="dont-read">Reactions</dt>
+							<dd class="dont-read">
+								<ul class="entry__jump-links">
+									{#<li class="entry__jump entry__jump--comments"><a href="{% if index %}{{ root_url }}{{ page.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ this_url }}{% endif %}">Comments</a></li>#}
+									<li class="entry__jump entry__jump--webmentions"><a href="#webmentions">{{ total_webmentions }} Webmentions</a></li>
+								</ul>
+							</dd>
+						{% endif %}
 
-            {% if crossposted %}
-              <dt class="dont-read">Crossposted</dt>
-              {% for venue, link in crossposted %}
-                <dd class="dont-read"><a class="u-syndication" href="{{ link }}">{{ venue }}</a></dd>
-              {% endfor %}
-            {% endif %}
+						{% if crossposted %}
+							<dt class="dont-read">Crossposted</dt>
+							{% for venue, link in crossposted %}
+								<dd class="dont-read"><a class="u-syndication" href="{{ link }}">{{ venue }}</a></dd>
+							{% endfor %}
+						{% endif %}
 
-            {% if translations %}
-              <dt class="dont-read">Translated</dt>
-              {% for lang, link in translations %}
-                <dd class="dont-read"><a class="u-syndication" hreflang="{{ lang }}" href="{{ link }}">{{ langs[lang] }}</a></dd>
-              {% endfor %}
-            {% endif %}
-          </dl>
-        </div>
+						{% if translations %}
+							<dt class="dont-read">Translated</dt>
+							{% for lang, link in translations %}
+								<dd class="dont-read"><a class="u-syndication" hreflang="{{ lang }}" href="{{ link }}">{{ langs[lang] }}</a></dd>
+							{% endfor %}
+						{% endif %}
+					</dl>
+				</div>
 
-        <div class="entry__content e-content">
+				<div class="entry__content e-content">
 
-          {% if hero %}
-            <figure class="entry__hero">
-              <img data-responsiver="hero" class="entry__hero__image" src="{{ hero.src | absoluteUrl(site.url) }}" alt="{{ hero.alt }}" {% if hero.offset %}style="margin-top: -{{ hero.offset }}px;"{% endif %}>
-              <figcaption class="entry__hero__credit">Credit: <a href="{{ hero.url }}">{{ hero.credit }}</a></figcaption>
-            </figure>
-          {% endif %}
+					{% if hero %}
+						<figure class="entry__hero">
+							<img data-responsiver="hero" class="entry__hero__image" src="{{ hero.src | absoluteUrl(site.url) }}" alt="{{ hero.alt }}" {% if hero.offset %}style="margin-top: -{{ hero.offset }}px;"{% endif %}>
+							<figcaption class="entry__hero__credit">Credit: <a href="{{ hero.url }}">{{ hero.credit }}</a></figcaption>
+						</figure>
+					{% endif %}
 
-          {{ content | safe }}
-        </div>
+					{{ content | safe }}
+				</div>
 
-        <footer class="entry__footer">
-          {% if thanks %}
-            <p>Many thanks to
-            {% for person, url in thanks %}
-              {% set link %}{%- if url %}<a href="{{ url }}">{{ person }}</a>{% else %}{{ person }}{% endif -%}{% endset %}
-              {% if thanks.size == 1 %}
-                {{ link | safe }}
-              {% elif loop.last %}
-                and {{ link | safe }}
-              {% else %}
-                {{ link | safe }},
-              {% endif %}
-            {% endfor %}
-            for helping me with the development of this piece.
-          {% endif %}
+				<footer class="entry__footer">
+					<hr/>
 
-          {% include "partials/post/sharing.html" %}
-          
-          {% if tags.length > 0 %}
-            {% set related = collections.feedAll | related( this_url, tags[0] ) | limit(3) %}
-            {% if related.length > 0 %}
-              <div class="entry__related">
-                <h2>You might also like</h2>
-                {% set teaser_heading_level = "h3" %}
-                {% for post in related %}
-                  {% include "partials/post/teaser.html" %}
-                {% endfor %}
-              </div>
-            {% endif %}
-          {% endif %}
-        </footer>
+					{% if thanks %}
+						<p>Many thanks to
+						{% for person, url in thanks %}
+							{% set link %}{%- if url %}<a href="{{ url }}">{{ person }}</a>{% else %}{{ person }}{% endif -%}{% endset %}
+							{% if thanks.size == 1 %}
+								{{ link | safe }}
+							{% elif loop.last %}
+								and {{ link | safe }}
+							{% else %}
+								{{ link | safe }},
+							{% endif %}
+						{% endfor %}
+						for helping me with the development of this piece.
+					{% endif %}
 
-        {% include "partials/global/promo.html" %}
+					<hr/>
 
-        {% include "partials/post/webmentions.html" %}
+					{% include "partials/post/sharing.html" %}
+					
+					<hr/>
+					
+					{% if tags.length > 0 %}
+						{% set related = collections.feedAll | related( this_url, tags[0] ) | limit(3) %}
+						{% if related.length > 0 %}
+							<div class="entry__related">
+								<h2>You might also like</h2>
+								{% set teaser_heading_level = "h3" %}
+								{% for post in related %}
+									{% include "partials/post/teaser.html" %}
+								{% endfor %}
+							</div>
+						{% endif %}
+					{% endif %}
+				</footer>
 
-      </div>
-    </article>
-    
-    {#
-    {% if not page.sidebar == false %}
-      <hr class="rule rule--optional">
+				<hr/>
+				
+				{% include "partials/global/promo.html" %}
+				
+				{% include "partials/post/webmentions.html" %}
 
-      <aside class="layout-container__secondary">
-        {% if site.asides.post %}
-          {% for sidebar in site.asides.post %}
-            {% include sidebar %}
-          {% endfor %}
-        {% else %}
-          {% for sidebar in site.asides.default %}
-            {% include sidebar %}
-          {% endfor %}
-        {% endif %}
-      </aside>
-    {% endif %}
-    #}
+			</div>
+		</article>
+		
+		{#
+		{% if not page.sidebar == false %}
+			<hr class="rule rule--optional">
 
-  </div>
+			<aside class="layout-container__secondary">
+				{% if site.asides.post %}
+					{% for sidebar in site.asides.post %}
+						{% include sidebar %}
+					{% endfor %}
+				{% else %}
+					{% for sidebar in site.asides.default %}
+						{% include sidebar %}
+					{% endfor %}
+				{% endif %}
+			</aside>
+		{% endif %}
+		#}
 
-  <script type="application/ld+json" class="dont-read">
-    {% include "partials/post/jsonld.html" %}
-  </script>
+	</div>
+
+	<script type="application/ld+json" class="dont-read">
+		{% include "partials/post/jsonld.html" %}
+	</script>
 {% endblock %}

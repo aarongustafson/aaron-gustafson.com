@@ -7,7 +7,7 @@
     {% endif %}
 
     <li class="listing_item listing__item--{{ forloop.index }}">
-      <a href="{{ related_post.url }}">{{ related_post.title }}</a>
+      <a href="{{ related_post.url }}">{{ related_post.title | strip_links }}</a>
     </li>
       
     {% if forloop.last == true %}

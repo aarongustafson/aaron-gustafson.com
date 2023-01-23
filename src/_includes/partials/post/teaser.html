@@ -8,7 +8,7 @@
   {% endif %}
   <div class="entry__details">
     <{{ teaser_heading_level }} class="entry__title entry-title">
-      <a rel="bookmark" href="{{ post.url }}">{{ post.data.title | widont | markdownify | safe }}</a>
+      <a rel="bookmark" href="{{ post.url }}">{{ post.data.title | widont | markdownify | strip_links | safe }}</a>
     </{{ teaser_heading_level }}>
     <p class="entry__meta">{% if post.collection=="posts" %}Posted{% else %}Saved{% endif %} on <time class="dt-published" datetime="{{ post.data.date | machine_date }}">{{ post.data.date | readable_date }}</time></p>
   </div>
