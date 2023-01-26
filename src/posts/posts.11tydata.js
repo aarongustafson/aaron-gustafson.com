@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const getShareImage = require("@jlengstorf/get-share-image").default;
 
 // Markdown
@@ -11,6 +13,15 @@ const markdown_options = {
 const md = markdownIt(markdown_options)
             .use(require("markdown-it-attrs"))
             .use(require('markdown-it-footnote'));
+
+const isDevEnv = process.env.ELEVENTY_ENV === 'development';
+const todaysDate = new Date();
+
+function showDraft(data) {
+	const isDraft = 'draft' in data && data.draft !== false;
+	const isFutureDate = data.page.date > todaysDate;
+	return isDevEnv || (!isDraft && !isFutureDate);
+}
 
 function tagsToString( tags )
 {
@@ -44,7 +55,8 @@ function tagsToColor( tags )
 
 module.exports = {
   layout: "layouts/post.html",
-  permalink: "/notebook/{{ page.fileSlug }}/",
+  eleventyExcludeFromCollections: data => showDraft(data) ? data.eleventyExcludeFromCollections : true,
+	permalink: data => showDraft(data) ? `/notebook/${ data.page.fileSlug }/` : false,
   eleventyComputed: {
     excerpt: (data) => {
       let excerpt = "";
