@@ -36,6 +36,7 @@
 		"@11ty/eleventy-upgrade-help": "^1.0.1",
 		"@jlengstorf/get-share-image": "^0.8.0",
 		"@manustays/eleventy-plugin-codepen-iframe": "^2.0.1",
+		"@sherby/eleventy-plugin-files-minifier": "^1.1.1",
 		"@types/markdown-it": "^12.2.3",
 		"ansi-regex": ">=6.0.1",
 		"ansi2html": "^0.0.1",
@@ -86,7 +87,6 @@
 		"widont": "^0.3.3"
 	},
 	"devDependencies": {
-		"@sherby/eleventy-plugin-files-minifier": "^1.1.1",
 		"hygen": "^6.2.11",
 		"netlify-cli": "^11.5.1"
 	}
