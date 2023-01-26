@@ -4,9 +4,9 @@
   "id": "{{ post_url }}",
   "title": "{{ prepend_title + post.data.title | replace('"', '\\"') | safe }}",
   
-  "summary": "{{ summary | markdownify | replace('\n','') | replace('\r', '') | replace('"', '\\"') | safe }}",
+  "summary": "{{ summary | markdownify | trim_newlines | replace('"', '\\"') | safe }}",
   
-  "content_html": "{{ post.templateContent | replace('\n','') | replace('\r', '') | replace('"', '\\"') | safe }}",
+  "content_html": "{{ post.templateContent | trim_newlines | replace('"', '\\"') | safe }}",
   
   "url": "{{ post_url }}",
   {% if post.data.ref_url %}

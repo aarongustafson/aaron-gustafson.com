@@ -1,8 +1,8 @@
 {% set post_url %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
-{% set summary %}{% if post.data.description %}{{ post.data.description }}{% elif post.data.page.excerpt %}{{ post.data.page.excerpt }}{% endif %}{% endset %}
+{%- set summary %}{% if post.data.description %}{{ post.data.description }}{% elif post.data.page.excerpt %}{{ post.data.page.excerpt }}{% endif %}{% endset -%}
 <entry>
   <id>{{ post_url }}</id>
-  <title type="html"><![CDATA[{{ prepend_title + post.data.title | markdownify | strip_links | safe }}]]></title>
+  <title type="html"><![CDATA[{{ prepend_title + post.data.title | unescape | safe }}]]></title>
   <link href="{{ post_url }}" rel="alternate" type="text/html" />
   {% if post.data.ref_url %}
     <link href="{{ post.data.ref_url }}" rel="related" type="text/html" />
@@ -13,13 +13,13 @@
     <updated>{{ post.data.last_modified_at | dateToRfc3339 }}</updated>
   {% endif %}
 
-  <content type="html" xml:base="{{ site.url }}"><![CDATA[{{ post.templateContent | safe }}]]></content>
+  <content type="html" xml:base="{{ site.url }}"><![CDATA[{{ post.templateContent | markdownify | trim_newlines | safe }}]]></content>
   {% if post.data.twitter_text %}
-    <amg:twitter><![CDATA[{{ post.data.twitter_text | markdownify | safe }}]]></amg:twitter>
+    <amg:twitter><![CDATA[{{ post.data.twitter_text | safe }}]]></amg:twitter>
   {% endif %}
   {% if summary %}
-    <summary type="html"><![CDATA[<p>{{ summary | markdownify | safe }}</p>]]></summary>
-    <amg:summary><![CDATA[{{ summary | markdownify | safe }}]]></amg:summary>
+    <summary type="html"><![CDATA[<p>{{ summary | markdownify | trim_newlines | safe }}</p>]]></summary>
+    <amg:summary><![CDATA[{{ summary | markdownify | trim_newlines | safe }}]]></amg:summary>
   {% endif %}
 
   {% for tag in post.data.tags %}

@@ -34,6 +34,10 @@ module.exports = {
 		return text.replace(/<\/?a[^>]*>/gi, "");
 	},
 
+	trim_newlines: text => {
+		return text.replace(/[\r\n]+/g, "");
+	},
+
 	widont: text => {
 		return `${widont( text )}`;
 	},

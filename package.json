@@ -86,6 +86,7 @@
 		"widont": "^0.3.3"
 	},
 	"devDependencies": {
+		"@sherby/eleventy-plugin-files-minifier": "^1.1.1",
 		"hygen": "^6.2.11",
 		"netlify-cli": "^11.5.1"
 	}
