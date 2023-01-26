@@ -1,4 +1,5 @@
 ---
+layout: "page"
 title: "Feeds Available From This Site"
 description: "Subscribe however you like."
 sharing: false
@@ -6,33 +7,30 @@ show_footer: false
 show_sidebar: false
 sitemap: true
 ---
-{% extends "layouts/base.html" %}
 
-{% block content %}
-  <div class="layout-container">
-    <article role="article" class="h-entry">
-      <h1 class="entry-title">{{ title | title | widont }}</h1>
-      <p>The following general feeds are available:</p>
+<div class="layout-container">
+	<article role="article" class="h-entry">
+		<h1 class="entry-title">{{ title | title | widont }}</h1>
+		<p>The following general feeds are available:</p>
 
-      <ul>
-        <li>Latest Posts & Links: <a href="all.xml">XML</a> | <a href="all.json">JSON</a></li>
-        <li>Latest Posts: <a href="latest-posts.xml">XML</a> | <a href="latest-posts.json">JSON</a></li>
-        <li>Latest Links: <a href="latest-links.xml">XML</a> | <a href="latest-links.json">JSON</a></li>
-      </ul>
+		<ul>
+			<li>Latest Posts & Links: <a href="all.xml">XML</a> | <a href="all.json">JSON</a></li>
+			<li>Latest Posts: <a href="latest-posts.xml">XML</a> | <a href="latest-posts.json">JSON</a></li>
+			<li>Latest Links: <a href="latest-links.xml">XML</a> | <a href="latest-links.json">JSON</a></li>
+		</ul>
 
-      <p>You can also subscribe by individual tag too:</p>
+		<p>You can also subscribe by individual tag too:</p>
 
-      <ul>
-      {% for tag in collections.tags | sort %}
-        {% if tag != "links" %}
-      <li>
-        {#({{ collections[tag].length }})#}
-        {{ tag }}:
-        <a href="{{ tag | lower | slugify }}.xml">XML</a> | <a href="{{ tag | lower | slug }}.json">JSON</a>
-      </li>
-        {% endif %}
-      {% endfor %}
-      </ul>
-    </article>
-  </div>
-{% endblock %}
+		<ul>
+		{% for tag in collections.tags | sort %}
+			{% if tag != "links" %}
+		<li>
+			{#({{ collections[tag].length }})#}
+			{{ tag }}:
+			<a href="{{ tag | lower | slugify }}.xml">XML</a> | <a href="{{ tag | lower | slug }}.json">JSON</a>
+		</li>
+			{% endif %}
+		{% endfor %}
+		</ul>
+	</article>
+</div>
