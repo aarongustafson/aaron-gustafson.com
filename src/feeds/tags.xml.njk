@@ -5,7 +5,7 @@ pagination:
   alias: tag
 permalink: "/feeds/{{ tag | lower | slugify }}.xml"
 eleventyComputed:
-  title: "{{ tag }}"
+  title: "Content tagged {{ tag }}"
   description: "The latest 20 posts and links tagged {{ tag }}."
 ---
 {% include "feeds/preamble.xml.njk" %}

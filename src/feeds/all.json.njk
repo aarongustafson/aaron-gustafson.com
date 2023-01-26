@@ -3,7 +3,7 @@ permalink: "/feeds/all.json"
 eleventyExcludeFromCollections: true
 ---
 {
-  {% set feed_title = "Posts & Links" %}
+  {% set feed_title = "Latest Posts & Links" %}
   {% include "feeds/preamble.json.njk" %}
   "items": [
     {% for post in collections.feedAll | limit(20) %}
