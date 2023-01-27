@@ -17,7 +17,7 @@ const md = markdownIt(markdown_options)
 const isDevEnv = process.env.ELEVENTY_ENV === 'development';
 const todaysDate = new Date();
 
-function showDraft(data) {
+function showPost(data) {
 	const isDraft = 'draft' in data && data.draft !== false;
 	const isFutureDate = data.page.date > todaysDate;
 	return isDevEnv || (!isDraft && !isFutureDate);
@@ -55,10 +55,10 @@ function tagsToColor( tags )
 
 module.exports = {
   layout: "layouts/post.html",
-  eleventyExcludeFromCollections: data => showDraft(data) ? data.eleventyExcludeFromCollections : true,
-	permalink: data => showDraft(data) ? `/notebook/${ data.page.fileSlug }/` : false,
   eleventyComputed: {
-    excerpt: (data) => {
+		eleventyExcludeFromCollections: data => showPost(data) ? false : true,
+		permalink: data => showPost(data) ? `/notebook/${ data.page.fileSlug }/` : false,
+		excerpt: (data) => {
       let excerpt = "";
       if ( "excerpt" in data.page )
       {
