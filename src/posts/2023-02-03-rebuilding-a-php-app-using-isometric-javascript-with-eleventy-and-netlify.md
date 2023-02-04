@@ -23,7 +23,7 @@ The previous iteration of Tipr was built in my hotel room while I was on site do
 
 <figure id="2023-02-02-02">
 
-![](/i/posts/2023-02-03/iphone.jpg)
+![](https://www.aaron-gustafson.com/i/posts/2023-02-03/iphone.jpg)
 
 <figcaption>Tipr on the 1st generation iPhone, in the hands of Micah Alpern, June 2007.</figcaption>
 </figure>
@@ -39,7 +39,7 @@ At the time, most of these approaches were very new. As an industry, we weren’
 
 <figure id="2023-02-02-03">
 
-![](/i/posts/2023-02-03/app-store.png)
+![](https://www.aaron-gustafson.com/i/posts/2023-02-03/app-store.png)
 
 <figcaption>Tipr in the original Apple App Store, back when web apps were first class citizens on iPhone OS.</figcaption>
 </figure>
