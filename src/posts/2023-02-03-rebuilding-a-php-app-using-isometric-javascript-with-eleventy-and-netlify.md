@@ -10,7 +10,7 @@ hero:
   credit: Aaron Gustafson × DALL·E
   alt: "Painting of a cute red robot looking at itself in a full-body mirror."
   url: https://labs.openai.com/s/nvIjXSOq3ZcoaLFMNacLUlJD
-  offset: "0"
+  offset: "75"
 ---
 
 Back in the early days of the iPhone, I created [Tipr](https://tipr.mobi), a tip calculator that always produces a palindrome total.[^1] This is an overview of the minimal work I did to make it a modern web app that can run without a traditional back-end.
@@ -21,6 +21,13 @@ Back in the early days of the iPhone, I created [Tipr](https://tipr.mobi), a tip
 
 The previous iteration of Tipr was built in my hotel room while I was on site doing some consulting for a certain Silicon Valley company. I was rocking a [Palm Treo 650](https://wikipedia.org/wiki/Treo_650) at the time and that day a few of my colleagues had lined up to wait for the release of [the very first iPhone](https://wikipedia.org/wiki/IPhone_(1st_generation)). At the time, web apps were the only way to get an "app" on the iPhone as there was no SDK or even an App Store.
 
+<figure id="2023-02-02-02">
+
+![](/i/posts/2023-02-03/iphone.jpg)
+
+<figcaption>Tipr on the 1st generation iPhone, in the hands of Micah Alpern, June 2007.</figcaption>
+</figure>
+
 I did a lot of PHP development back in the day, so armed with all of the mobile web development best practices of the day, I set about building the site and making it speedy. Some of the notable features of Tipr included:
 
 * Inlining CSS & JS file contents into the HTML.
@@ -29,6 +36,13 @@ I did a lot of PHP development back in the day, so armed with all of the mobile 
 * Client side processing via <abbr aria-label="XMLHttpRequest" title="XMLHttpRequest">XHR</abbr> to a PHP-driven API.
 
 At the time, most of these approaches were very new. As an industry, we weren’t doing a whole lot to ensure peak performance on mobile because most people’s mobile browsers were pretty crappy. This was the heyday of Usablenet’s "mobile friendly" bolt-on and WAP. Then came Mobile Safari.
+
+<figure id="2023-02-02-03">
+
+![](/i/posts/2023-02-03/app-store.png)
+
+<figcaption>Tipr in the original Apple App Store, back when web apps were first class citizens on iPhone OS.</figcaption>
+</figure>
 
 ## A lot has changed since 2007
 
@@ -94,6 +108,7 @@ This file contains the central logic of the tip calculator. It’s written in va
 
 The homepage of the site is also home to the tip calculation form. Below the form is an embedded `script` element containing the logic for interacting with the DOM for the client-side version of the tip calculator. I include the logic at the top of that `script`:
 
+{% raw %}
 ```njk
 <script>
   {% include "js/tipr.js" %}
@@ -101,11 +116,13 @@ The homepage of the site is also home to the tip calculation form. Below the for
   // The rest of the JavaScript logic
 </script>
 ```
+{% endraw %}
 
 ### `src/j/process.njk`
 
 This file exists solely to export the JavaScript logic from the include in a way that it can be consumed by the Edge Function. It will render a new JavaScript file called "process.js" and turns the central processing logic into a JavaScript module that [Deno](https://deno.land/) can use (Deno powers Netlify’s Edge Functions):
 
+{% raw %}
 ```njk
 ---
 layout: false
@@ -116,11 +133,13 @@ permalink: /j/process.js
 
 export { process };
 ```
+{% endraw %}
 
 ### `netlify/edge-functions/tipr.js`
 
 We define Edge Functions for use with Netlify in the `netlify/edge-functions` folder. To make use of the core JavaScript logic in the Edge Function, I can import it from the module created above before using it in the function itself:
 
+{% raw %}
 ```js
 import { process } from "./../../_site/j/process.js";
 
@@ -155,7 +174,7 @@ export default async (request, context) => {
 			return new Response(null, {
 				status: 302,
 				headers: {
-					location: "/results/?" + JSON.stringify(result) + JSON.stringify(postData),
+					location: "/results/",
 				}
 			});
 		}
@@ -164,11 +183,13 @@ export default async (request, context) => {
 	return context.next();
 };
 ```
+{% endraw %}
 
 What’s happening here is that when a request comes in to this Edge Function, the default export will be executed. Most of this code is directly lifted from [Netlify’s Edge Functions demo site](https://edge-functions-examples.netlify.app/). I grab the form data, pass it into the `process` function, and then set browser cookies for each of the returned values before redirecting the request to [the result page](https://github.com/aarongustafson/tipr.mobi/blob/main/src/results.html).
 
 On that page, I use Eleventy’s Edge plugin to render the check, tip, and total amounts:
 
+{% raw %}
 ```njk
 {% edge %}
 	{% set check = eleventy.edge.cookies.check %}
@@ -188,6 +209,7 @@ On that page, I use Eleventy’s Edge plugin to render the check, tip, and total
 	</tr>
 {% endedge %}
 ```
+{% endraw %}
 
 Side note: The cookies get reset using [a separate Edge Function](https://github.com/aarongustafson/tipr.mobi/blob/main/netlify/edge-functions/reset.js).
 
@@ -211,7 +233,7 @@ This tells Netlify to route requests to `/process/` through `netlify/edge-functi
 
 ### Isometric Edges
 
-It took a fair bit of time to figure this all out, but I’m pretty excited by the possibilities of this approach for building more static isomorphic apps.
+It took a fair bit of time to figure this all out, but I’m pretty excited by the possibilities of this approach for building more static isomorphic apps. Oh, and the new site… [is fast](https://speedlify.aaron-gustafson.com/apps/).
 
 
 [^1]: Why a palindrome? Well, it makes it pretty easy to detect tip fraud because all restaurant totals will always be the same forwards & backwards. It’s a little easier than a checksum.
