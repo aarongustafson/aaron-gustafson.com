@@ -48,7 +48,7 @@ I also want to call out that I am very interested in working with folks whose li
 
 ## What can mentees expect?
 
-My mentorships last for a full year. Mentees have the option of talking to me for an hour a month, either all at once or in two 30-minute blocks. They are also invited to join my mentorship Slack group, where they can chat with me asynchronously or in real-time (depending on where they live), network and chat with other folks in their cohort (and my past mentees), and share their work.
+My mentorships last for a full year. Mentees have the option of talking to me for an hour a month, either all at once or in two 30-minute blocks. They are also invited to join my mentorship Discord server, where they can chat with me asynchronously or in real-time (depending on where they live), network and chat with other folks in their cohort (and my past mentees), and share their work.
 
 ## Can I nominate someone?
 
