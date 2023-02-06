@@ -69,7 +69,7 @@ github_edit: "_layouts/blog.html"
             {% if post.data.og_image %}
               <img data-responsiver="thumbnail" src="{{ post.data.og_image }}" alt="" class="entry__thumbnail" width="100" height="100">
             {% endif %}
-            {{ content | safe }}
+            {{ content | replace( r/\[\^\d\]/, "") | safe }}
           </div>
 
           {% if is_excerpted or post.data.is_404 %}
