@@ -1,5 +1,5 @@
 ---
-title: "Rebuilding a PHP App using Isometric JavaScript with Eleventy & Netlify"
+title: "Rebuilding a PHP App using Isomorphic JavaScript with Eleventy & Netlify"
 date: 2023-02-03 13:40:59 -07:00
 comments: true
 tags: ["mobile", "progressive enhancement", "progressive web apps", "web development"]
