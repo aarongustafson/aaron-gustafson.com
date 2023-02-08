@@ -79,7 +79,8 @@ module.exports = {
 		html = html || "";
 		return html.replace(/&gt;/g, ">")
 						.replace(/&lt;/g, "<")
-						.replace(/&quot;/g, '"');
+						.replace(/&quot;/g, '"')
+						.replace(/&amp;amp;/g, "&amp;");
 	},
 
 	minus: ( a, b ) => parseInt(a,10) - parseInt(b,10),
@@ -143,12 +144,18 @@ module.exports = {
 		return path.indexOf( scope ) > -1;
 	},
 
-	getWebmentionsForUrl: (webmentions, url) => {
+	getWebmentionsForUrl: (webmentions, url, old_url) => {
 		return webmentions.children
-						 .filter(entry => entry['wm-target'] === url)
-						 .sort( (a,b) => {
-							 return a["wm-id"] - b["wm-id"];
-						 });
+						.filter(entry => {
+							//console.log( entry['wm-target'], url, old_url );
+							let current = ( entry['wm-target'] === url );
+							let old = ( old_url !== "false" && entry['wm-target'] === old_url );
+							//console.log( current, old );
+							return ( current || old );
+						})
+						.sort( (a,b) => {
+							return a["wm-id"] - b["wm-id"];
+						});
 	},
 	webmentionsByType: (mentions, mentionType) => {
 		return mentions.filter(entry => {

@@ -7,6 +7,7 @@
   <h1>Webmentions</h1>
 
     {% set twitter = r/twitter\.com/ %}
+		{% set mastodon = r/mastodon/ %}
     {% set show_name = true %}
     <div class="webmentions">
       {% if replies.length > 0 %}
@@ -29,9 +30,9 @@
                   
                   {% set title_link = false %}
                   {% set webmention_content %}{% filter trim %}
-                    {% if twitter.test(webmention.url) %}
+                    {% if twitter.test(webmention.url) or mastodon.test(webmention['wm-source']) %}
                       {% if webmention.content.html %}
-                        {{ webmention.content.html | safe }}
+                        {{ webmention.content.html | unescape | safe }}
                       {% else %}
                         {{ webmention.content.text | markdownify | safe }}
                       {% endif %}
