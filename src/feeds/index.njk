@@ -27,7 +27,7 @@ sitemap: true
 		<li>
 			{#({{ collections[tag].length }})#}
 			{{ tag }}:
-			<a href="{{ tag | lower | slugify }}.xml">XML</a> | <a href="{{ tag | lower | slug }}.json">JSON</a>
+			<a href="{{ tag | lower | slugify }}.xml">XML</a> | <a href="{{ tag | lower | slugify }}.json">JSON</a>
 		</li>
 			{% endif %}
 		{% endfor %}

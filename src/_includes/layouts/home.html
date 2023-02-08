@@ -9,7 +9,7 @@
       <h2 class="subsection__header"><b class="hidden">Me, </b>Elsewhere<b> on the Web</b></h2>
       <ul class="social-links">
         {% for profile in profiles | selectattr("active") %}
-          {% set profile_slug = profile.site | slug | replace(".","") %}
+          {% set profile_slug = profile.site | replace(".","") | slugify %}
           <li class="social-links__item">
             <a class="social-link social-link--{{ profile_slug }}" href="{{ profile.url }}">
               {{ social_icon( profile_slug ) | replace('<svg ','<svg class="social-link__icon" ') | safe }}

@@ -28,7 +28,7 @@ is_post: false
             <h2 class="subsection__header" id="gallery">Gallery</h2>
             <div class="tank__gallery">
               {% for image in gallery %}
-                <figure id="{{ image.url | slugify }}" class="anchorable__ignore" data-lightbox-item>
+                <figure id="{{ image.url | replace('/i/tanks/','') | replace('.jpg','') | slugify }}" class="anchorable__ignore" data-lightbox-item>
                   {% set image_src = site.url + image.url  %}
                   <a href="{{ image_src }}">
                     <img src="https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_320/{{ image_src }}"

@@ -60,10 +60,6 @@ module.exports = config => {
 	// Passthru
 	config.addPassthroughCopy({ "src/static": "/" });
 
-	// Upgrade Helper
-	//const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
-	//config.addPlugin(UpgradeHelper);
-	
 	// Plugins
 	config.addPlugin(pluginSEO, require("./src/_data/seo.json"));
 	config.addPlugin(svgContents);
@@ -217,6 +213,9 @@ module.exports = config => {
 		trimBlocks: true,
 		lstripBlocks: true
 	});
+
+	// Upgrade Helper
+	// config.addPlugin(require("@11ty/eleventy-upgrade-help"));
 
 	// Config
 	return {
