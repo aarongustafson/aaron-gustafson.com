@@ -4,7 +4,7 @@ date: 2023-02-07T23:27:07.561Z
 tags: ["web development", "JavaScript"]
 ref_url: https://infrequently.org/2023/02/the-market-for-lemons/
 in_reply_to: https://infrequently.org/2023/02/the-market-for-lemons/
-twitter_text: "Yep. "JavaScript all the things" was a mistake."
+twitter_text: 'Yep. "JavaScript all the things" was a mistake.'
 ref_source: "Infrequently Noted"
 ---
 
