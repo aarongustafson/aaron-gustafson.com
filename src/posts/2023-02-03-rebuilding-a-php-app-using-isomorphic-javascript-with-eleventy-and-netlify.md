@@ -5,6 +5,7 @@ comments: true
 tags: ["mobile", "progressive enhancement", "progressive web apps", "web development"]
 description: "Back in the early days of the iPhone, I created tipr.mobi, a tip calculator that always produces a palindrome total. This is an overview of the minimal work I did to make it a modern web app that can run without a traditional back-end."
 twitter_text: "Wherein I migrate @tipr from a #PHP-based mobile web app to a #serverless #PWA."
+redirect_from: "/notebook/rebuilding-a-php-app-using-isometric-javascript-with-eleventy-and-netlify/"
 hero:
   src: /i/posts/2023-02-03/hero.jpg
   credit: Aaron Gustafson × DALL·E
