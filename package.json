@@ -29,11 +29,10 @@
 		"gulp-imagemin": "gulp-imagemin 3.x requires ESM and will require major work to overhaul"
 	},
 	"dependencies": {
-		"@11ty/eleventy": "^1.0.2",
-		"@11ty/eleventy-img": "^2.0.1",
+		"@11ty/eleventy": "^2.0.0",
+		"@11ty/eleventy-img": "^3.0.0",
 		"@11ty/eleventy-plugin-rss": "^1.2.0",
-		"@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
-		"@11ty/eleventy-upgrade-help": "^2.0.5",
+		"@11ty/eleventy-plugin-syntaxhighlight": "^4.2.0",
 		"@jlengstorf/get-share-image": "^0.8.0",
 		"@manustays/eleventy-plugin-codepen-iframe": "^2.0.1",
 		"@sherby/eleventy-plugin-files-minifier": "^1.1.1",
