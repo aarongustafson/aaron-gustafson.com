@@ -1,0 +1,178 @@
+{
+	"disqus": {
+		"path": "/notebook/insert-clickbait-headline-about-progressive-enhancement-here/",
+		"commentCount": 18,
+		"comments": [
+			{
+				"postId": "3039540478",
+				"parentPostId": null,
+				"date": "2016-12-06T23:19:49Z",
+				"author": "Amanda Rush",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>This is an excellent post, and it really did take me about twenty minutes to read, even with a screen reader. Also, I see you're supporting webmentions and that's excellent. I haven't had time to read the post you're responding to, but I saw the link making the rounds on Twitter and was wondering why someone would take issue with PE. After all, if we say that PE is essentially without foundation, what then do we offer as an alternative that does all the things PE is supposed to do?</p>",
+				"replies": [
+					{
+						"postId": "3041431007",
+						"parentPostId": "3039540478",
+						"date": "2016-12-08T00:18:36Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Thank you! I agree. It’s quite perplexing and I don}t think the JS community and the progressive enhancement community should be at odds. We can do such much good together.</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "3040165807",
+				"parentPostId": null,
+				"date": "2016-12-07T09:54:20Z",
+				"author": "Mark",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>One of the most thoughtful pieces on this that I've ever read. I'd love to have you on our podcast to talk about this!</p>",
+				"replies": [
+					{
+						"postId": "3041377544",
+						"parentPostId": "3040165807",
+						"date": "2016-12-07T23:37:15Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Thank you! I'd love to. Drop me a line on the contact form.</p>",
+						"replies": [
+							{
+								"postId": "3042431005",
+								"parentPostId": "3041377544",
+								"date": "2016-12-08T16:41:56Z",
+								"author": "Mark",
+								"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+								"message": "<p>Thanks! I certainly will!</p>",
+								"replies": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"postId": "3040941992",
+				"parentPostId": null,
+				"date": "2016-12-07T19:11:20Z",
+				"author": "bencallahan",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>So good. Thanks for taking the time to write it out, Aaron.</p>",
+				"replies": [
+					{
+						"postId": "3041376354",
+						"parentPostId": "3040941992",
+						"date": "2016-12-07T23:36:18Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Thanks Ben!</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "3042198032",
+				"parentPostId": null,
+				"date": "2016-12-08T14:02:34Z",
+				"author": "Max1128",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>An excellent rebuttal to the other piece. I'm still bouncing back and  forth between many of the arguments, but so far these definitely seem more well thought-out than the ones from the piece you're responding to. Long but very good read!</p>",
+				"replies": []
+			},
+			{
+				"postId": "3043965462",
+				"parentPostId": null,
+				"date": "2016-12-09T14:33:29Z",
+				"author": "Craig Buckler",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Well said, Aaron. It's an eloquent comment I wish I could have written.</p><p>I'm sure Josh wasn't being controversial for the sake of it but PE is (primarily) a pragmatic and defensive development approach. As a non developer, would he demand that others use a specific language, database, OS, framework or editor? I hope not.</p><p>Unfortunately, the biggest opponents of PE are those who have never tried it.</p>",
+				"replies": []
+			},
+			{
+				"postId": "3044167617",
+				"parentPostId": null,
+				"date": "2016-12-09T16:37:29Z",
+				"author": "Graham Hulbert",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Very well balanced and fair response Aaron. I read Josh's article a few days ago and the central premise of trying to pull the rug out from under PE based on the fact he believes it to be purely moral philosophy was somewhat bewildering! I mean it just isn't about that for the most part! Your response sums up everything I thought so thanks for taking the time to write it!</p>",
+				"replies": [
+					{
+						"postId": "3048814804",
+						"parentPostId": "3044167617",
+						"date": "2016-12-12T19:50:40Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Thanks!</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "3044305186",
+				"parentPostId": null,
+				"date": "2016-12-09T17:44:35Z",
+				"author": "krkn",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>This was good, especially since I had happened to read Josh's article a couple days ago, and while he had a few good points, I think he was surprisingly (given his declaration at being a master logician) over-superlative and had too narrow a focus. What I saw is that he set up a straw man (\"All hardline-PEers think everything on the web should be accessible to everyone\") and then proceeded to attack that straw man. If that statement did indeed describe the position of you and others who support PE, then I would say he did a good job of rebutting that argument. But since it is just a straw man, his arguments aren't really valid or useful to the conversation of PE.</p>",
+				"replies": [
+					{
+						"postId": "3048815863",
+						"parentPostId": "3044305186",
+						"date": "2016-12-12T19:51:15Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Agreed.</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "3044569764",
+				"parentPostId": null,
+				"date": "2016-12-09T20:30:08Z",
+				"author": "Adam M",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Very good article. I found it particularly convincing on the practical case. The only thing I'd say is that the article it responds to makes clear that if you're not a hardliner he's not talking to you. I do know some hardliners. I asked one of them \"what if it's just a few days on a toy javascript project like a restaurant bill calculator with a twist?\". The reply was \"Use it yourself but if you put that online you are actively discriminating against people and it's not what a decent person would do.\"</p><p>To take things out of reductio ad absurdum, I think a lot of this comes from the huge difference between working for a major player like Microsoft or CNN and a small company. Institutions like these are parts of the social fabric and people rely on them. On the other hand, a startup with 2 or 3 developers often needs to enter a crowded market and distinguish itself by doing something particularly beautifully that is already serviced perfectly reasonably elsewhere. <br>They hope to use rapidly running out money to delight a small enough proportion of the world's internet users in time to make their business viable. They will likely fail. In the meantime they've provided something hopefully positive for a small number of people and were simply ignored by a much smaller number of lucky others who went elsewhere because of technical issues.</p><p>If for a comparable cost they could have taken a PE approach they should have done. Perhaps their business is doing a lot of server intensive data scraping and surfacing the knowledge. This is what HTML and CSS is for. Hard to render the graphs without javascript but do some and no need for a single page app.</p><p>But probably a majority of these startups *are* software as a service and attempting to build compelling software without a real, client programming language is really hard. In many cases unfeasible because you'd have to make HTML fallback for all of it for the software to be at all usable. i.e. a separate, second architecture which is user unfriendly enough to rob the company of any selling point. Ironically, the main reason these companies are using javascript rather than writing a windows or mac app as they once would have done is for the sake of inclusiveness!<br>They'll think about their Honda buyers with old blackberries when they've sold their first Honda. And it better be damn shiny for that to happen.</p><p>I guess the main thing I'd note is that yes, big, important websites who have serious leverage and therefore responsibilities and the resources to meet them. <br>A huge majority of internet traffic goes to these players but not it's not where all the developers work. </p>",
+				"replies": []
+			},
+			{
+				"postId": "3046603452",
+				"parentPostId": null,
+				"date": "2016-12-11T09:21:27Z",
+				"author": "ThreeDoorsUp",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Hey Aaron, I got a few questions, but first. When clicking your anchor links for the headings, my computer suddenly starts to speak. Is this a bug? In my 15 years on the internet I have never experienced something like that. If it is not a bug, what is the logic behind that feature? I am not blind nor unable to see the \"Copied\" text that flashes.</p><p>Second, you wrote:<br>\"How many Single Page Apps have you see out there that really didn’t need to be built that way? \"<br>Does that really matter? Saying this basically means \"you should not do it that way\". Single Page Apps is a technique that works fine within the frames of HTML, CSS and JavaScript. In what situations is Single Page Apps not okey? Of course they did not NEED to be, but why not? They have every \"right\" to create their application this way.</p><p>While Josh's article takes one extreme side of the story, your take the other. There is a fine middle ground here that noone of you mentions. I know that websites for the government in the country where I live are developed in typical JavaScript first solutions (like React with no fallback). I live in a country where Internet access is available everywhere, and the mobile nets are fast and reliable. Turning off js or having a corrupt bundle download will simply result in the webpage asking you to enable js and/or refreshing your site, and I think this is perfectly reasonable. Why should they bother having to develop solutions for people where this is an issue? Of course, if they had to develop a similar solution for people in countries where there is terrible mobile nets and internet is slow/expensive, perhaps they would do things different, but that is not the case. Does it make sense to use PE only where it is relevant, and fully relay on the web stack where PE is not necessary, or is this \"wrong\" interpretation of how PE works?</p>",
+				"replies": [
+					{
+						"postId": "3048814468",
+						"parentPostId": "3046603452",
+						"date": "2016-12-12T19:50:29Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Re the voice: Yes. I have been playing around with the speechSynthesis API :-) This whole site is a bit of a Work in Progress, so some things may come and go as I toy with ideas.</p><p>In terms of SPAs: I’m not trying to imply there’s only one way to build a site; there isn’t. What I’m saying is that we often choose tech based on *our* needs/desires (as developers) as opposed to the project’s needs or the end users’ needs. It something I’ve seen over and over for the last 20 years and it happens in small teams all the way up to large orgs. It’s also not a problem unique to JS frameworks. The number of large companies that have bought into a CMS because of a good sales pitch only to discover they had to fight to get it to meet the actual needs of the project… well, I’d need at least as many arms as Shiva to count them with my fingers :-)</p><p>Also, FWIW, I don’t agree that I have taken an extreme position here. I mentioned numerous times that PE isn’t for everyone nor is it right for every project. \"It depends.\" But since you asked about your situation, I’ll address that. You said \" I live in a country where Internet access is available everywhere, and the mobile nets are fast and reliable. Turning off js or having a corrupt bundle download will simply result in the webpage asking you to enable js and/or refreshing your site, and I think this is perfectly reasonable.\" Assuming all of this is true, are you 100% sure there are not \"dead zones\" of mobile coverage? No tunnels to speak of? No subways or \"urban canyons\"? Even if that were the case, if JS fails in a non-obvious way—for instance handling form submission of a contact form, to take a simple example—your users could get pretty annoyed. In fact, this was an issue I ran into earlier.</p><p>I’m on the latest Chrome version on my high-end MacBook Pro, connected to 200 MB/s fiber and I hit a page with a form I needed to fill out. I did so and hit submit and the form took me to an error screen. I had typed an extremely long message. Thankfully, I have gotten in the habit of copying messages before I hit submit… I had to return to the form, refresh the page and re-fill the whole thing just to send my message. It wasn’t clear to me that some bit of invisible JS (probably used to determine my \"humanity\") hadn’t run properly and if I had not taken steps to back-up my message, I would have had to re-write the whole thing. Or I might have just given up. That dependency failing caused me to have a bad customer experience. Wouldn’t it have been better for the form to still submit properly without the JS and my message simply get flagged for a human to check on the back-end before determining if it’s spam?</p><p>To me, it all comes down to customer service and wanting to provide the best experience I can, even if it isn’t the ideal one.</p><p>To answer your final question: \"Does it make sense to use PE only where it is relevant, and fully relay on the web stack where PE is not necessary, or is this \"wrong\" interpretation of how PE works?\"</p><p>If your \"where\" is geographically-speaking, I think that’s a risky decision as people routinely move around the world and their situation changes, For instance, you may work on a government site for France, but a French citizen may need access from Morocco where the network situation is different. They may even be using an Internet Cafe in which case the browser &amp; OS may be older.</p><p>If your \"where\" is developmentally-speaking, it depends. You can draw lines like \"support vs. optimization\" where you have a very low-fi experience (no JS, basic CSS) for older devices across the board and then only spend your time optimizing for a modern subset of browsers/devices. This limits the \"long tail\" of progressive enhancement and is a much more pragmatic approach. That’s how I tend to operate. You could even take it further and opt to include certain UI enhancements to only the most cutting edge devices (as you heard with my speechSynthesis experiment). As long as you have that basic fallback, you’re still good to go.</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "3052090311",
+				"parentPostId": null,
+				"date": "2016-12-14T17:52:30Z",
+				"author": "MurphyBrown00",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>If anyone makes a moral argument for progressive enhancement they're wrong.  Progressive enhancement for the wrong features or project is a waste of productivity, time and money.  Blanketly doing progressive enhancement on every feature is pretty silly.  Logically some features need progressive enhancement and making them so has a relatively high return to cost.  If you have a lead form that doesn't work without javascript, you're doing it wrong.  But if you're potentially making decisions for progressive enhancement which ultimately cost the site in total revenue, you're doing it wrong too.</p>",
+				"replies": [
+					{
+						"postId": "3052228061",
+						"parentPostId": "3052090311",
+						"date": "2016-12-14T19:11:20Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>You’re spot-on. Like I (and many others) have said repeatedly, it depends. It always depends and some of the factors you bring up are good things to keep in mind. You can easily undermine the primary purpose of your page by adding unnecessary dependencies that may go unmet. Similarly, you can spend days progressively enhancing a feature like drag and drop so it works all the way back to IE6 and you’re most likely wasting effort that could be better focused on features and browsers that actually matter.</p>",
+						"replies": []
+					}
+				]
+			}
+		]
+	}
+}

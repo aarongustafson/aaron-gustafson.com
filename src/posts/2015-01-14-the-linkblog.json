@@ -1,0 +1,37 @@
+{
+	"disqus": {
+		"path": "/notebook/the-linkblog/",
+		"commentCount": 3,
+		"comments": [
+			{
+				"postId": "1793020554",
+				"parentPostId": null,
+				"date": "2015-01-14T22:57:46Z",
+				"author": "Georg Portenkirchner",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>I like that you separated the links from your posts, but would like to have the link in the RSS feed to point to the link post on your site instead of the linked site.</p>",
+				"replies": [
+					{
+						"postId": "1794254824",
+						"parentPostId": "1793020554",
+						"date": "2015-01-15T17:46:15Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Thanks. It took a little work, but I got the links set up. The pagination stuff was a bit of a beast and I also had to write a Rake task to move the links into the subfolder. But now we’re good.</p>",
+						"replies": [
+							{
+								"postId": "1796878434",
+								"parentPostId": "1794254824",
+								"date": "2015-01-16T23:44:58Z",
+								"author": "Georg Portenkirchner",
+								"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+								"message": "<p>I already feared that it would not be easy.<br>Great that it works now. Thanks, Aaron.</p>",
+								"replies": []
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

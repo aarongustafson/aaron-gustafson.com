@@ -1,0 +1,27 @@
+{
+	"disqus": {
+		"path": "/notebook/planning-adaptive-interfaces-the-workshop/",
+		"commentCount": 2,
+		"comments": [
+			{
+				"postId": "2536896873",
+				"parentPostId": null,
+				"date": "2016-02-26T14:58:26Z",
+				"author": "Austin",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Hi,<br>Do you offer certificate of attendance?...or Attestation?...</p>",
+				"replies": [
+					{
+						"postId": "2539033154",
+						"parentPostId": "2536896873",
+						"date": "2016-02-26T21:29:33Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>I can write a letter certifying your completion if you need that for work.</p>",
+						"replies": []
+					}
+				]
+			}
+		]
+	}
+}

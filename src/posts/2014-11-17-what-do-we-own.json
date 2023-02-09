@@ -1,0 +1,45 @@
+{
+	"disqus": {
+		"path": "/notebook/what-do-we-own/",
+		"commentCount": 4,
+		"comments": [
+			{
+				"postId": "1698355029",
+				"parentPostId": null,
+				"date": "2014-11-18T00:46:12Z",
+				"author": "Joschi Kuphal 吉",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>These are some very valid points that you are making, Aaron. I believe, however, that the most important thing is the content itself, not all the technical details involved in publishing. I mean, the very domain name I'm using for my stuff doesn't really matter, nor does the registrar. Both are pretty much interchangeable, while the content itself is not. The same goes for the webspace (sure, proper backup blah blah ...). In the end, I think there are two vitally important principles to stick to:</p><p>1.) If a piece of content is really important to you, don't rely on others to take care of it. Keep the original as close to you as you can (which — for me — implies the opposite as well: If something is not too important for me, I may be permitted to be \"careless\" and just dump it wherever I like withouth being worried about it's future).</p><p>2.) Try to keep the format of your content as simple and accessible as possible. Don't wrap it into technologies that are unnecessarily complex and might cease working anytime soon. This will also reduce dependency from others.</p>",
+				"replies": []
+			},
+			{
+				"postId": "1722659628",
+				"parentPostId": null,
+				"date": "2014-12-02T21:34:03Z",
+				"author": "Carnes",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>An onion url doesn't require any payment to maintain.  You can generate a human readable url too (not just random garbage).  If your nice .com url goes un-paid because you died it wouldn't affect your onion.  Keeping a server up after you're dead would be difficult.  A solar powered raspberry pi near public wifi?  Bonus points if it replies to social media mentions of you with something appropriate.</p>",
+				"replies": [
+					{
+						"postId": "1724010706",
+						"parentPostId": "1722659628",
+						"date": "2014-12-03T18:26:47Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Interesting…</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "1728035827",
+				"parentPostId": null,
+				"date": "2014-12-06T00:06:31Z",
+				"author": "collinmanderson",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>If you want web content to last (outside of relying on another site like <a href=\"http://archive.org\" rel=\"nofollow noopener\" title=\"archive.org\">archive.org</a> or <a href=\"http://github.io\" rel=\"nofollow noopener\" title=\"github.io\">github.io</a>), it helps to have it live in a single static html file with all resources inlined. That way it can be easily copied and archived by your family and other people. Future generations won't need to worry about matching up relative or absolute paths between files. In fact, all of your content could live in a data url if you wanted.</p><p>If you're worried about a registrar _and_ hosting, you may want to consider owning(leasing) an ip address and AS number and contracting with some isp to keep your server on the internet. You still need to remember that ultimately all identifiers (domains and ip addresses) on the internet are owed by ICANN and leased to everyone else. (hence the creation of .onion)</p><p>I for one believe that if you want content to last, it needs to live on big sites such as <a href=\"http://archive.org\" rel=\"nofollow noopener\" title=\"archive.org\">archive.org</a>, github, facebook, twitter, or wikipedia: places where you don't need to keep paying rent to the lower-level services to keep your content alive. Keep it in more than one place so you don't run into the geocities problem. I'm glad though that there's an indie web community around to hedge my bet.</p>",
+				"replies": []
+			}
+		]
+	}
+}

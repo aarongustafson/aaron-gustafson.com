@@ -1,0 +1,17 @@
+{
+	"disqus": {
+		"path": "/notebook/interface-experience-maps/",
+		"commentCount": 1,
+		"comments": [
+			{
+				"postId": "2051002380",
+				"parentPostId": null,
+				"date": "2015-05-29T04:46:39Z",
+				"author": "Joseph R. B. Taylor",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Aaron, thanks for the reminder about these simple diagrams. I frequently have to take return requirements back to their author to explain they need to augment them to consider things like screen size etc.</p><p>They often forget that the sites we work on are responsive, let alone whether the interface would break without javascript running.</p><p>These examples would replace a lot of repetitive typing on my end. </p>",
+				"replies": []
+			}
+		]
+	}
+}

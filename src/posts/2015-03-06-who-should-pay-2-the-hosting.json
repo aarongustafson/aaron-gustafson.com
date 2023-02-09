@@ -1,0 +1,27 @@
+{
+	"disqus": {
+		"path": "/notebook/who-should-pay-2-the-hosting/",
+		"commentCount": 2,
+		"comments": [
+			{
+				"postId": "1892051084",
+				"parentPostId": null,
+				"date": "2015-03-06T17:28:04Z",
+				"author": "Jeff Bridgforth",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Do you have any suggestions for hosting services that would fit this criterion?</p>",
+				"replies": [
+					{
+						"postId": "1892181415",
+						"parentPostId": "1892051084",
+						"date": "2015-03-06T18:34:49Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>I don’t have experience with Nexcess (their comparison), but I have been pleasantly surprised by Digital Ocean.</p>",
+						"replies": []
+					}
+				]
+			}
+		]
+	}
+}

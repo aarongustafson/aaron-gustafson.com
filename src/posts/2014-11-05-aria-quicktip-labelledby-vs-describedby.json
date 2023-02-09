@@ -1,0 +1,36 @@
+{
+	"disqus": {
+		"path": "/notebook/aria-quicktip-labelledby-vs-describedby/",
+		"commentCount": 3,
+		"comments": [
+			{
+				"postId": "2653065125",
+				"parentPostId": null,
+				"date": "2016-05-02T01:12:22Z",
+				"author": "Paul",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Been trying to work out why ChromeVox doesn't read my describedby when I tab with the keyboard, then I found this post! Looks like the bug is still not fixed just yet.</p><p>Thanks for the insightful post.</p>",
+				"replies": []
+			},
+			{
+				"postId": "2883973886",
+				"parentPostId": null,
+				"date": "2016-09-09T08:25:06Z",
+				"author": "vishwakant",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Do we have any fix now for aria-descriedby issue? I am facing same issue, screen reader Chrome Vox does not read aria-describedby value while focus on textbox by Tab.</p>",
+				"replies": [
+					{
+						"postId": "3144820538",
+						"parentPostId": "2883973886",
+						"date": "2017-02-08T21:24:31Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>It looks like this bug got archived when Google Code closed, but I think ChromeVox Next fixed it.</p>",
+						"replies": []
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,27 @@
+{
+	"disqus": {
+		"path": "/notebook/web-design-101-100-percent-tappable/",
+		"commentCount": 2,
+		"comments": [
+			{
+				"postId": "2201874309",
+				"parentPostId": null,
+				"date": "2015-08-19T00:38:51Z",
+				"author": "Alfonso Gómez-Arzola",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Just the other day I saw something related to this.</p><p>I was perusing a marketing firm’s website and saw that they broke down their process into four main steps. Each step is represented by a simplistic illustration, a title, a short summary, and a generic “Read More” link below (which in itself could be improved, but I digress). Here’s the thing: the entire containing element reacts to the cursor hovering over it by slightly darkening the background, but only the Read More text is actually clickable.</p><p>Somebody actively set a <code>:hover</code> selector on the container element because they could. No other reason for it. They just could.</p>",
+				"replies": [
+					{
+						"postId": "2201898551",
+						"parentPostId": "2201874309",
+						"date": "2015-08-19T00:58:40Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>This is exactly why we will always have a job…</p>",
+						"replies": []
+					}
+				]
+			}
+		]
+	}
+}

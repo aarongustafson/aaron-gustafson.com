@@ -1,0 +1,118 @@
+{
+	"disqus": {
+		"path": "/notebook/ch-ch-ch-changes/",
+		"commentCount": 12,
+		"comments": [
+			{
+				"postId": "1825721012",
+				"parentPostId": null,
+				"date": "2015-01-30T16:22:33Z",
+				"author": "welcomebrand",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Congrats, this can only be a good thing for the web :)</p><p>J.</p>",
+				"replies": []
+			},
+			{
+				"postId": "1825826421",
+				"parentPostId": null,
+				"date": "2015-01-30T17:15:34Z",
+				"author": "Chris Love",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>This is awesome, I and the other User Agents eagerly await our formal introductions!</p>",
+				"replies": []
+			},
+			{
+				"postId": "1826217607",
+				"parentPostId": null,
+				"date": "2015-01-30T20:48:56Z",
+				"author": "JonFMoss",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>They're fortunate to have you on board. I look forward to being convinced.</p>",
+				"replies": []
+			},
+			{
+				"postId": "1826235255",
+				"parentPostId": null,
+				"date": "2015-01-30T20:56:05Z",
+				"author": "Greg Storey",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Congratulations Aaron!</p>",
+				"replies": []
+			},
+			{
+				"postId": "1826258412",
+				"parentPostId": null,
+				"date": "2015-01-30T21:09:56Z",
+				"author": "Aaron Gustafson",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Thank you!</p>",
+				"replies": []
+			},
+			{
+				"postId": "1826588553",
+				"parentPostId": null,
+				"date": "2015-01-31T01:00:27Z",
+				"author": "Chris",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Enjoy the day at NEO Monday. </p>",
+				"replies": []
+			},
+			{
+				"postId": "1826821187",
+				"parentPostId": null,
+				"date": "2015-01-31T04:58:02Z",
+				"author": "Steve Chovanec",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Very cool, best of luck at Microsoft. Are you going to be working remotely like Scott Hanselman does?</p>",
+				"replies": []
+			},
+			{
+				"postId": "1827413276",
+				"parentPostId": null,
+				"date": "2015-01-31T15:31:33Z",
+				"author": "lydiamann",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>fantastic! this is great news for all of us, but particularly for you and Kelly. Congratulations to you both for fighting the good fight and living the life you want. You inspire me.</p>",
+				"replies": [
+					{
+						"postId": "1830402268",
+						"parentPostId": "1827413276",
+						"date": "2015-02-02T12:55:18Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Thank you Lydia!</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "1827423912",
+				"parentPostId": null,
+				"date": "2015-01-31T15:39:47Z",
+				"author": "zeldman",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>You and Kelly are wonderful people. You deserve to be happy. You've earned some stability and financial security. I have no doubt that you will continue to make meaningful and important contributions to the standards awareness of our community, the reasonableness and utility of web standards, and the standards compliance and interoperability of IE and other products. Congratulations and thank you for sharing. I send you a great big virtual hug, which I hope to turn into a real one soon! :)</p>",
+				"replies": [
+					{
+						"postId": "1830402807",
+						"parentPostId": "1827423912",
+						"date": "2015-02-02T12:55:36Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>You are too kind Jeffrey. Let’s talk (and hug) soon!</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "1829677070",
+				"parentPostId": null,
+				"date": "2015-02-01T23:07:29Z",
+				"author": "Georg Portenkirchner",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Congrats, Aaron!</p>",
+				"replies": []
+			}
+		]
+	}
+}

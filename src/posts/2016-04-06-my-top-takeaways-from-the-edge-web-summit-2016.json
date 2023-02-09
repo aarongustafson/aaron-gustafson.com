@@ -1,0 +1,27 @@
+{
+	"disqus": {
+		"path": "/notebook/my-top-takeaways-from-the-edge-web-summit-2016/",
+		"commentCount": 2,
+		"comments": [
+			{
+				"postId": "2610278311",
+				"parentPostId": null,
+				"date": "2016-04-06T23:42:07Z",
+				"author": "Šime Vidas",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<blockquote>Microsoft’s Narrator screen reader now supports a “Developer Mode” that blanks out the current app (such as your browser window) in order to enable you to more easily debug accessibility issues.</blockquote><p></p><p>Is the idea here to force the developer to use the app only through the screen reader’s speech output, which helps identify accessibility issues?</p>",
+				"replies": [
+					{
+						"postId": "2611507261",
+						"parentPostId": "2610278311",
+						"date": "2016-04-07T17:26:00Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>I think \"force\" might be a bit strong, but yes. It enables us to have a focused accessibility testing experience (yes, using only the speech from Narrator or the displayed text, which is like a position-aware subtitle) without annoying interruptions like having Narrator read the F12 tools when you go to debug an element or view the accessibility tree or switch over to read your email in Outlook.</p>",
+						"replies": []
+					}
+				]
+			}
+		]
+	}
+}

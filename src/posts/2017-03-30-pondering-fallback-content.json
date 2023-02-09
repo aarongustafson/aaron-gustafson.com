@@ -1,0 +1,27 @@
+{
+	"disqus": {
+		"path": "/notebook/pondering-fallback-content/",
+		"commentCount": 2,
+		"comments": [
+			{
+				"postId": "3232679919",
+				"parentPostId": null,
+				"date": "2017-03-31T02:50:50Z",
+				"author": "Šime Vidas",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<blockquote>…newer media formats could be rolled out easily without sacrificing a page’s usability in non-supporting browsers.</blockquote><p></p><p>Not being able to play the video in the browser <em>does</em> sound like a usability issue though.</p>",
+				"replies": [
+					{
+						"postId": "3233063916",
+						"parentPostId": "3232679919",
+						"date": "2017-03-31T11:33:33Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Of course! It's not ideal, but at least it’s not a total blocker. A usable interface (even if it's more complicated) is better than none. It’s more true to the author’s intent and it doesn't prohibit the user from accessing the content. Plus: most OSes will suggest a player you have installed (or several from their Store) when you go to play the file.</p>",
+						"replies": []
+					}
+				]
+			}
+		]
+	}
+}

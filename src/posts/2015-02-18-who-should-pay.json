@@ -1,0 +1,125 @@
+{
+	"disqus": {
+		"path": "/notebook/who-should-pay/",
+		"commentCount": 12,
+		"comments": [
+			{
+				"postId": "1864088064",
+				"parentPostId": null,
+				"date": "2015-02-19T17:25:01Z",
+				"author": "vvtim",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>While I agree with the premise of the article, I don't agree with the example of CSS variables / mixins / etc. It's likely to be very minimal overhead on first download and the browsers could store the processed version of the CSS in their cache the same way they do now -- you wouldn't be adding processing to every page load. If you're not passing proper cache headers on your CSS, then you've got bigger issues.</p>",
+				"replies": [
+					{
+						"postId": "1864113682",
+						"parentPostId": "1864088064",
+						"date": "2015-02-19T17:38:03Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>I would have to defer to people implementing the spec on the caching side of things. I don’t know that things like <code>calc()</code> and variables would be cached since they are dynamic (which is the whole point).</p>",
+						"replies": [
+							{
+								"postId": "1864134605",
+								"parentPostId": "1864113682",
+								"date": "2015-02-19T17:48:40Z",
+								"author": "vvtim",
+								"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+								"message": "<p>I'm not sure why variables would be dynamic -- CSS doesn't have logic constructs or a program loop. It would essentially just be moving the preprocessor to the browser instead of the development stack.</p><p>As far as calc(), yes, that's dynamic but would most likely IMPROVE user experience. All the current JavaScript implementations of calculating and resetting of widths would be replaced with a native implementation. It presents real value, not replacing something a developer can already do with a preprocessor.</p>",
+								"replies": [
+									{
+										"postId": "1864159793",
+										"parentPostId": "1864134605",
+										"date": "2015-02-19T18:01:13Z",
+										"author": "Aaron Gustafson",
+										"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+										"message": "<p>Variables are not just runtime. They are dynamic and can be updated via JavaScript. Also they can be reinterpreted when class names change.</p>",
+										"replies": [
+											{
+												"postId": "1864170778",
+												"parentPostId": "1864159793",
+												"date": "2015-02-19T18:06:21Z",
+												"author": "vvtim",
+												"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+												"message": "<p>So you're swapping a cached token's value rather than having to do a lot of DOM manipulation in JavaScript in today's reality. DOM manipulation is incredibly expensive, good chance the browser's CSS implementation will be leagues faster.</p>",
+												"replies": [
+													{
+														"postId": "1864191160",
+														"parentPostId": "1864170778",
+														"date": "2015-02-19T18:16:39Z",
+														"author": "Aaron Gustafson",
+														"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+														"message": "<p>I’m sure it will be faster, but the fundamental questions still stands: even if the cost is only a few milliseconds, if I don’t really need it and I am simply saving myself time—by essentially only doing the same thing I do in a preprocessor today, not taking advantage of the dynamic stuff—it’s not a tradeoff I think we should be making.</p>",
+														"replies": [
+															{
+																"postId": "1864198642",
+																"parentPostId": "1864191160",
+																"date": "2015-02-19T18:20:25Z",
+																"author": "vvtim",
+																"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+																"message": "<p>I agree completely, if there is a way to enhance end user performance MEANINGFULLY, by all means do so, but don't hold back standards that can improve performance for other use cases simply because it won't improve yours.</p><p>If you're really arguing over a few milliseconds the first time someone ever visits your website, I think you're missing a lot of existing low hanging fruit in your performance-for-users crusade.</p>",
+																"replies": [
+																	{
+																		"postId": "1864206117",
+																		"parentPostId": "1864198642",
+																		"date": "2015-02-19T18:24:12Z",
+																		"author": "Aaron Gustafson",
+																		"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+																		"message": "<blockquote><p>If you're really arguing over a few milliseconds the first time someone ever visits your website, I think you're missing a lot of existing low hanging fruit in your performance-for-users crusade.</p></blockquote><p></p><p>Certainly, which is why I mentioned minification and such. But it all adds up. A few hundred milliseconds here or there…</p><p>As Ovid said: “dripping hollows out the rock”.</p>",
+																		"replies": []
+																	}
+																]
+															}
+														]
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"postId": "1864181109",
+				"parentPostId": null,
+				"date": "2015-02-19T18:11:44Z",
+				"author": "Ivan Wilson",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Ironically, referring to the initial point of the argument, your current employer (Microsoft) went down that road a couple of years (last decade ?) ago. Apart from the \"dislike\" of Microsoft, no one wanted it due to the high performance hit.</p><p>Go figure.</p>",
+				"replies": [
+					{
+						"postId": "1864191750",
+						"parentPostId": "1864181109",
+						"date": "2015-02-19T18:16:57Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Everything goes in cycles.</p>",
+						"replies": [
+							{
+								"postId": "1864238276",
+								"parentPostId": "1864191750",
+								"date": "2015-02-19T18:40:39Z",
+								"author": "Ivan Wilson",
+								"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+								"message": "<p>True.</p><p>After months ago, I tweeted the following:<br><a href=\"https://twitter.com/iwilsonjr/status/522038042807136256\" rel=\"nofollow noopener\" title=\"https://twitter.com/iwilsonjr/status/522038042807136256\">https://twitter.com/iwilson...</a></p><p>Why does it seem like we're committed on making those same mistakes again?</p>",
+								"replies": []
+							},
+							{
+								"postId": "1864531079",
+								"parentPostId": "1864191750",
+								"date": "2015-02-19T21:12:37Z",
+								"author": "Ivan Wilson",
+								"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+								"message": "<p>True. A few months ago, I tweeted the following:<br><a href=\"https://twitter.com/iwilsonjr/status/522038042807136256\" rel=\"nofollow noopener\" title=\"https://twitter.com/iwilsonjr/status/522038042807136256\">https://twitter.com/iwilson...</a></p><p>Why does it seem like we're committed in making the same mistakes all over again?</p>",
+								"replies": []
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

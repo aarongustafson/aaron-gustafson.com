@@ -1,0 +1,26 @@
+{
+	"disqus": {
+		"path": "/notebook/progressive-web-apps-and-the-windows-ecosystem/",
+		"commentCount": 2,
+		"comments": [
+			{
+				"postId": "3529797235",
+				"parentPostId": null,
+				"date": "2017-09-22T12:06:59Z",
+				"author": "Elita Barteaux",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>This is a very detailed blog on Progressive web apps and very well explained what the term “Progressive” means in Progressive web apps. PWAs basically provide you with the convenience of a web app and the intuitiveness of a native app. In case you want to build one for your business, here is a list of tools and resources that you would find helpful. <a href=\"https://goo.gl/C8JT63\" rel=\"nofollow noopener\" title=\"https://goo.gl/C8JT63\">https://goo.gl/C8JT63</a></p>",
+				"replies": []
+			},
+			{
+				"postId": "3567957942",
+				"parentPostId": null,
+				"date": "2017-10-15T04:56:06Z",
+				"author": "tomByrer",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Great overview &amp; engineering checklist!</p><p>I would not say the jump from web (app) to all the different device platform stores cost is 'free'.  It takes extra engineering to plug in all the service worker libs &amp; extra programming, AppCache, browser compatabilities,  Though personally, I'd say the extra work is worth it, since not only it improves mobile performance &amp; usage, but likely help desktop performance.</p>",
+				"replies": []
+			}
+		]
+	}
+}

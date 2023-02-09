@@ -50,12 +50,16 @@ is_post: true
 						<dt class="dont-read">Filed Under</dt>
 						<dd class="dont-read">{{ tag_list( tags ) }}</dd>
 
-						{% if total_webmentions > 0 %}
+						{% if total_webmentions > 0 or disqus.commentCount %}
 							<dt class="dont-read">Reactions</dt>
 							<dd class="dont-read">
 								<ul class="entry__jump-links">
-									{#<li class="entry__jump entry__jump--comments"><a href="{% if index %}{{ root_url }}{{ page.url }}{% endif %}#disqus_thread" data-disqus-identifier="{% if post.meta.disqus_id %}{{ post.meta.disqus_id }}{% else %}{{ this_url }}{% endif %}">Comments</a></li>#}
-									<li class="entry__jump entry__jump--webmentions"><a href="#webmentions">{{ total_webmentions }} Webmentions</a></li>
+									{% if total_webmentions > 0 %}
+										<li class="entry__jump entry__jump--webmentions"><a href="#webmentions">{{ total_webmentions }} Webmentions</a></li>
+									{% endif %}
+									{% if disqus.commentCount %}
+										<li class="entry__jump entry__jump--comments"><a href="#comments">{{ disqus.commentCount }} Comments</a></li>
+									{% endif %}
 								</ul>
 							</dd>
 						{% endif %}
@@ -133,6 +137,7 @@ is_post: true
 				{% include "partials/global/promo.html" %}
 				
 				{% include "partials/post/webmentions.html" %}
+				{% include "partials/post/comments.html" %}
 
 			</div>
 		</article>

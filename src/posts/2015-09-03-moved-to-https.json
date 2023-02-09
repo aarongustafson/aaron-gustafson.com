@@ -1,0 +1,27 @@
+{
+	"disqus": {
+		"path": "/notebook/moved-to-https/",
+		"commentCount": 2,
+		"comments": [
+			{
+				"postId": "2236038414",
+				"parentPostId": null,
+				"date": "2015-09-04T15:45:40Z",
+				"author": "Philip Tellis",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>I use StartSSL and my certs last for 1 year, not 30 days.  Not sure what's different in your case.</p><p>Also, you could front your site with CloudFlare to go full SSL for free.</p>",
+				"replies": [
+					{
+						"postId": "2278227872",
+						"parentPostId": "2236038414",
+						"date": "2015-09-28T15:28:07Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>I went for the freebee SSL cert through StartSSL and it seemed to indicate I would need to revalidate every 30 days. We'll see :-)</p><p>CloudFlare was certainly an option, but the problem there was one problem in that CloudFlare's connection to GitHub would not be over SSL unless I made it to the <a href=\"http://github.io\" rel=\"nofollow noopener\" title=\"github.io\">github.io</a> address. There were some issues with that approach, based on my research. I don't recall the links offhand, but that's why I opted to go right into setting up my own SSL.</p>",
+						"replies": []
+					}
+				]
+			}
+		]
+	}
+}

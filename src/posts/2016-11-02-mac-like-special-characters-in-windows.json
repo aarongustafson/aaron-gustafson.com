@@ -1,0 +1,133 @@
+{
+	"disqus": {
+		"path": "/notebook/mac-like-special-characters-in-windows/",
+		"commentCount": 13,
+		"comments": [
+			{
+				"postId": "2989306453",
+				"parentPostId": null,
+				"date": "2016-11-07T15:26:28Z",
+				"author": "Craig Patik",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>This is great and I've been wanting something like this for years.</p><p>If you run across a problem where this override some control-key shortcuts (e.g. control-A writes an 'a' character instead of performing \"Select All\"), be sure to open the gist, click the Raw button, and copy that script. Don't just copy the script straight from this page; the loss of formatting seems to affect it.</p>",
+				"replies": [
+					{
+						"postId": "2989312879",
+						"parentPostId": "2989306453",
+						"date": "2016-11-07T15:30:27Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>I actually updated the Gist last week when Dave Rupert ran into the same issue. I fixed Ctrl+A &amp; Ctrl+O. As I find more, I'll continue to update the Gist. </p>",
+						"replies": [
+							{
+								"postId": "2989324017",
+								"parentPostId": "2989312879",
+								"date": "2016-11-07T15:37:15Z",
+								"author": "Craig Patik",
+								"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+								"message": "<p>I just updated my post. The problem was that I copied the text directly from this blog post rather than opening the gist and viewing the raw code. The gist itself works great. Apologies for the confusion.</p>",
+								"replies": [
+									{
+										"postId": "2989536496",
+										"parentPostId": "2989324017",
+										"date": "2016-11-07T17:41:34Z",
+										"author": "Aaron Gustafson",
+										"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+										"message": "<p>Yay! I will get the code in the post updated too. I think the ServiceWorker is in the way :-)</p>",
+										"replies": [
+											{
+												"postId": "2989706777",
+												"parentPostId": "2989536496",
+												"date": "2016-11-07T19:23:25Z",
+												"author": "Craig Patik",
+												"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+												"message": "<p>I created a fork of your gist with real characters in place of words like \"omega\", \"integral\", \"approximately equal\", etc. Only the word \"Apple\" remains since AFAIK that logo doesn't render in Windows without a special font.</p><p>I also made the control shortcuts work a little better, e.g. Ctrl-A in Chrome wouldn't select an entire (read-only) page's contents. I added support for Ctrl-N (new window) and Ctrl-Y (redo).</p><p><a href=\"https://gist.github.com/patik/672d81b94195c418d855360529fe8008\" rel=\"nofollow noopener\" title=\"https://gist.github.com/patik/672d81b94195c418d855360529fe8008\">https://gist.github.com/pat...</a></p>",
+												"replies": []
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"postId": "3824792480",
+				"parentPostId": null,
+				"date": "2018-03-26T12:10:18Z",
+				"author": "Shaz De Jav",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Absolutely great work Aaron, A big thank you.<br>I just have one question before installing...Does the script over-ride the shortcuts already in play on programs like Adobe Premiere?  For instance while editing i have ALT+SHIFT+V setup for \"Paste Attributes\". But when im in the Text Tool i would like to write possible alt character like \"^\" using the same keystrokes.</p>",
+				"replies": [
+					{
+						"postId": "4030165569",
+						"parentPostId": "3824792480",
+						"date": "2018-08-09T06:03:17Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>I have not tested that, so I can’t say for sure. My guess would be that it might interfere. But you can test and re-map if necessary.</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "4030145922",
+				"parentPostId": null,
+				"date": "2018-08-09T05:41:41Z",
+				"author": "Cat Matteson",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>This is the happiest-making thing on the internet for me right now.</p>",
+				"replies": [
+					{
+						"postId": "4030165628",
+						"parentPostId": "4030145922",
+						"date": "2018-08-09T06:03:21Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Thanks!</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "4058392905",
+				"parentPostId": null,
+				"date": "2018-08-24T19:57:25Z",
+				"author": "Daniel Wilson",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Hi! I'm having an issue where this script results in â€” being outputted for the en and em dashes. â€° for alt+shift+e. Any idea what I'm doing wrong?</p>",
+				"replies": [
+					{
+						"postId": "4058678317",
+						"parentPostId": "4058392905",
+						"date": "2018-08-24T23:09:05Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>My first thought is that your document may not be UTF-8. It sounds like a character encoding issue.</p>",
+						"replies": [
+							{
+								"postId": "4077341896",
+								"parentPostId": "4058678317",
+								"date": "2018-09-04T17:44:23Z",
+								"author": "Daniel Wilson",
+								"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+								"message": "<p>I thought so as well but the document shows as UTF-8 encoded in vscode—for whatever reason, it's definitely not registering as such in AutoHotkey. Strange.</p>",
+								"replies": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"postId": "4117777998",
+				"parentPostId": null,
+				"date": "2018-09-27T20:42:48Z",
+				"author": "Kevin Kelly",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>When I run the script I get an error message for \"invalid hotkey\" because of VKC0SC029. Anyone else have that problem? It's got something to do with how the grave key works. I have an American keyboard.</p>",
+				"replies": []
+			}
+		]
+	}
+}

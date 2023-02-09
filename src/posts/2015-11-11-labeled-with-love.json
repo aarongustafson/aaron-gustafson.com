@@ -1,0 +1,111 @@
+{
+	"disqus": {
+		"path": "/notebook/labeled-with-love/",
+		"commentCount": 11,
+		"comments": [
+			{
+				"postId": "2354751098",
+				"parentPostId": null,
+				"date": "2015-11-12T05:52:09Z",
+				"author": "Šime Vidas",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Those inline <code>&lt;sup&gt;</code> numbers are fairly small click targets. Maybe the padding + negative margin technique could be used on them?</p>",
+				"replies": [
+					{
+						"postId": "2355137248",
+						"parentPostId": "2354751098",
+						"date": "2015-11-12T13:42:31Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>I love that idea! Done. Pushing it now.</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "2355970679",
+				"parentPostId": null,
+				"date": "2015-11-12T17:08:38Z",
+				"author": "BatJan",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Hmm, but the effect in the last example will make it hard to enter a value if one is using an older browser that does not support the transition or transform properties since the initial placement without those properties will be on top of the input field, right? I like the effect and all but I'm just concerned about the UX when one visits using a browser that does not support the transform property :) - When there is no support for transforms ideally the label should be placed on top of the input field instead,..I'll see if I can wrap my head around it unless someone else beats me to it :D</p>",
+				"replies": [
+					{
+						"postId": "2356293602",
+						"parentPostId": "2355970679",
+						"date": "2015-11-12T18:10:36Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>You could accomplish the same thing with positioning rather than transforms, but if you wanted to use transforms, you could place the whole thing inside an @supports block (e.g. @supports(transform:translateY(0)){ /* code for the transform version */ }).</p>",
+						"replies": [
+							{
+								"postId": "2356310140",
+								"parentPostId": "2356293602",
+								"date": "2015-11-12T18:20:36Z",
+								"author": "BatJan",
+								"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+								"message": "<p>Hi Aaron aaah yes of course and then one could enhance the moving using transition, which would then only be used by browsers that understand it :)</p>",
+								"replies": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"postId": "2355986567",
+				"parentPostId": null,
+				"date": "2015-11-12T17:10:42Z",
+				"author": "BatJan",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>...one could of course make use of modernizr but wondering if there is another approach too?</p>",
+				"replies": [
+					{
+						"postId": "2356293920",
+						"parentPostId": "2355986567",
+						"date": "2015-11-12T18:10:48Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>No need (see my response above).</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "2374683375",
+				"parentPostId": null,
+				"date": "2015-11-23T15:34:56Z",
+				"author": "Dennis Lembrée",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Note that implicit labels don't work with Dragon.</p><p>Also, my response to examples like Mary Lou's above: if you're going to place the label above the input after focus, why not just put it there in the first place? (And ensure the text is adequately sized.) Moving labels can cause confusion for the user, and creates more code complexity. But I must admit it's a doable compromise with designers.</p>",
+				"replies": []
+			},
+			{
+				"postId": "2412291763",
+				"parentPostId": null,
+				"date": "2015-12-16T10:48:35Z",
+				"author": "Formisimo",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Brilliant article, thanks for writing this. I feel like it's dead easy to understand a topic that could be quite technical in nature. Also, really happy to see an example of an accessible form that also has wow factor - *Hazel Bolton (Content Manager)</p>",
+				"replies": []
+			},
+			{
+				"postId": "2862348627",
+				"parentPostId": null,
+				"date": "2016-08-27T14:56:31Z",
+				"author": "Michael Akinlaby",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Now, I fully understand what a label is. Thanks for sharing, Aaron.</p>",
+				"replies": []
+			},
+			{
+				"postId": "3882162413",
+				"parentPostId": null,
+				"date": "2018-05-02T10:55:13Z",
+				"author": "Rasmus Schultz",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>&gt; To create incredibly generous tap targets on mobile devices, we can take things a little further. Add padding to the top and bottom of the label to make it bigger and then use negative margins to counter that enlargement and keep the layout as it was before the padding was applied.</p><p>This doesn't make sense? Using more padding to make the targets easier to hit is always good practice, especially for small controls like checkboxes - but if you use negative margin to make those regions overlap, the top-most of two overlapping regions will simply \"win\", so all you've managed to do is unfairly favorize the items that end up rendered on top. The regions should be equal - all you need is some padding in the &lt;label&gt; and zero margins to make sure there's no space in between them.</p>",
+				"replies": []
+			}
+		]
+	}
+}

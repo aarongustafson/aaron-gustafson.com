@@ -1,0 +1,85 @@
+{
+	"disqus": {
+		"path": "/notebook/a-fundamental-disconnect/",
+		"commentCount": 8,
+		"comments": [
+			{
+				"postId": "1590530402",
+				"parentPostId": null,
+				"date": "2014-09-15T21:31:45Z",
+				"author": "Ivan Wilson",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>I have been thinking about the same thing also and I can give you my own answer: The new crop of developers are great at programming but not necessarily great at making content.</p><p>The \"making content\" point is really important because this is were we create the experience. HTML is not an application language but used well can give more information than just the visual. Using CSS well and do more than just make a page/screen pretty. Those of us that have been working at this more than 5yrs(?) have adjusted and really now how to work this. And in some ways, developers are (again) slowly learning those lessons.</p>",
+				"replies": []
+			},
+			{
+				"postId": "1591880359",
+				"parentPostId": null,
+				"date": "2014-09-16T18:34:18Z",
+				"author": "Grant Swertfeger",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>It makes me long for the days of wondering if the user had the latest version of Flash player but I agree that it's all for the better. The more we think about how the content \"might\" be delivered the more we realize all that we need to do in order to write better code. Of course the injection of Comcast's javascript might just kill the application altogether.</p>",
+				"replies": [
+					{
+						"postId": "1591909511",
+						"parentPostId": "1591880359",
+						"date": "2014-09-16T18:53:38Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Absolutely! In fact, I noticed that the free wifi at the Atlanta Airport completely hosed this site. I am working on some ideas for how to harden web pages against injection. I welcome input.</p>",
+						"replies": [
+							{
+								"postId": "1591962690",
+								"parentPostId": "1591909511",
+								"date": "2014-09-16T19:28:12Z",
+								"author": "Grant Swertfeger",
+								"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+								"message": "<p>You mean short of breaking the javascript engine on purpose?</p>",
+								"replies": [
+									{
+										"postId": "1591998387",
+										"parentPostId": "1591962690",
+										"date": "2014-09-16T19:49:55Z",
+										"author": "Aaron Gustafson",
+										"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+										"message": "<p>Of course. I don’t think there’s much we can do about that, but my thinking is this: look for injected CSS files and then remove any nodes that match their selectors. That *should* kill most of the content injection stuff and may sideline most event handling. Anything they directly screw up via JavaScript is tougher to fix.</p>",
+										"replies": [
+											{
+												"postId": "1592003857",
+												"parentPostId": "1591998387",
+												"date": "2014-09-16T19:53:33Z",
+												"author": "Grant Swertfeger",
+												"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+												"message": "<p>I'd love to explore this further. I think some simple listeners for scripts and stylesheets added to the DOM would go a long way. I can see this being quite useful.</p>",
+												"replies": []
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"postId": "1593372324",
+				"parentPostId": null,
+				"date": "2014-09-17T17:50:39Z",
+				"author": "Ashley Chapokas",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>How do Frameworks fit into the conversation? I am trying to steer away from them for now, as I'd like to focus on raw JS. Thoughts?</p>",
+				"replies": [
+					{
+						"postId": "1593565860",
+						"parentPostId": "1593372324",
+						"date": "2014-09-17T19:51:58Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Goodonya for focusing on “vanilla JS”!</p><p>Frameworks and libraries can be great, provided you understand how they fit into your process and how their guiding philosophy aligns with yours or your team’s. jQuery, for instance, can be used to progressively enhance pages with relative ease, so it aligns pretty well with what we do at Easy. AngularJS, however, tries to control everything on the page and most people who work with it (or similar frameworks) assume JavaScript is available (and functional) and, consequently, their pages will not load without it. That doesn’t align with progressive enhancement, so it doesn’t work for us.</p><p>It is possible to make a JavaScript framework play well with progressive enhancement. This can be done by having the framework take over a page after it has been loaded from the server (classic ”Hijax“). Some folks have gone so far as to run the same (or nearly the same) JavaScript on the back-end via Node.js on the off-chance JavaScript is not available on the client. Both of these approaches make for a more robust website or application than simply using AngularJS, etc. right out of the box. But it requires more work because you are running counter to the philosophy of the framework.</p>",
+						"replies": []
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,450 @@
+{
+	"disqus": {
+		"path": "/notebook/css-variables-are-a-bad-idea/",
+		"commentCount": 71,
+		"comments": [
+			{
+				"postId": "2241719124",
+				"parentPostId": null,
+				"date": "2015-09-08T01:32:28Z",
+				"author": "Sean Hansford",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Good stuff :).</p>",
+				"replies": []
+			},
+			{
+				"postId": "2339516307",
+				"parentPostId": null,
+				"date": "2015-11-02T20:48:04Z",
+				"author": "Albin Larsson",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Your code examples doesn't illustrate any of the practical reasons of css variables. Your backward compatibility argument can be applied to any web standards change, and your performance argument is purely speculative.</p><p>Backward compatibility issues are temporary. Just because the transition period happens to be now doesn't mean we won't get there. You could have started using the spec 2 years ago with <a href=\"http://myth.io\" rel=\"nofollow noopener\" title=\"myth.io\">myth.io</a> or <a href=\"http://pleeease.io\" rel=\"nofollow noopener\" title=\"pleeease.io\">pleeease.io</a> (more recent) without having to maintain manual fallbacks. Use a pre/postprocessor or just wait. This one seems to be taking it's time.</p><p>\"Now I’m sure browser makers can find ways to optimize this process, but it’s bound to affect the rendering time.\"</p><p>I don't think that would be noticeable. It's all parsing and memory, which is incredibly fast. i/o and screen rendering is the performance critical part, along with network load. What could happen is that providing a method for users to write better abstractions for their css would make it more terse, improving network speed and parse time, but probably not noticeable anyway. It all depends on the developer, browser implementation and end user hardware performance. More preprocessor-like features making it into the css spec seems like a good idea to me, because devs would be less inclined to use preprocessors trying to be smarter than css, by producing unnecessarily complex and hard to debug code.</p><p>I agree that the real problems with css isn't going to be solved with variables though.</p>",
+				"replies": []
+			},
+			{
+				"postId": "2343855662",
+				"parentPostId": null,
+				"date": "2015-11-05T10:08:41Z",
+				"author": "0x80",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>This post doesn't make any sense to me. CSS variables are not a bad idea. We need to move forward in lots of ways. Transpiling is a solution. CSS is no different from javascript in this regard. I write my css using the new standard and use post-css plugins like cssnext to transpile for older browsers. In a few years time when you only develop for evergreen browsers you can omit the transpiling step, but you're still writing the same css. With proper build tools transpiling and debugging transpiled code is not a problem.</p>",
+				"replies": [
+					{
+						"postId": "2409320104",
+						"parentPostId": "2343855662",
+						"date": "2015-12-14T16:56:18Z",
+						"author": "Nicholas Johnson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>As web developers we don't target a point, we target a moving smear. As long as we stay aware of this, we are fine.</p>",
+						"replies": []
+					},
+					{
+						"postId": "2509673495",
+						"parentPostId": "2343855662",
+						"date": "2016-02-12T11:16:53Z",
+						"author": "Chris",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Completely agree.</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "2344424741",
+				"parentPostId": null,
+				"date": "2015-11-05T17:21:36Z",
+				"author": "Никита Гаврилов",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>You might take a look at cssnext, which is a preprocessor for CSS4 (or higher if you're reading this from future) which will solve your browser compatibility issues</p>",
+				"replies": []
+			},
+			{
+				"postId": "2359206119",
+				"parentPostId": null,
+				"date": "2015-11-14T09:09:30Z",
+				"author": "Jakob E",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>CSS variables works at run time and can't be compared with compile time variables in SCSS.<br>To illustrate the difference (and why CSS variables are awesome) try this in FireFox:</p><p>// Define color<br>:root { --color: tomato; }</p><p>// Assign the color variable<br>body { background-color: var(--color); }</p><p>// Re-define color in different media queries. <br>// Note how we do NOT reference body!    <br>@media (max-width: 960px){ :root { --color: gold;    } }<br>@media (max-width: 640px){ :root { --color: olive;   } }<br>@media (max-width: 420px){ :root { --color: skyblue; } }</p><p>Example: <a href=\"http://codepen.io/jakob-e/pen/vNvPEm\" rel=\"nofollow noopener\" title=\"http://codepen.io/jakob-e/pen/vNvPEm\">http://codepen.io/jakob-e/p...</a></p>",
+				"replies": []
+			},
+			{
+				"postId": "2401968734",
+				"parentPostId": null,
+				"date": "2015-12-09T20:27:21Z",
+				"author": "John Slegers",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>I'm suit sceptical of CSS variables myself, but Philip Walton does make an interesting case in his recent article \"Why I'm Excited About Native CSS Variables\" (<a href=\"http://philipwalton.com/articles/why-im-excited-about-native-css-variables/)\" rel=\"nofollow noopener\" title=\"http://philipwalton.com/articles/why-im-excited-about-native-css-variables/)\">http://philipwalton.com/art...</a>. Especially the two use cases he mentions intrigue me.</p>",
+				"replies": []
+			},
+			{
+				"postId": "2409315775",
+				"parentPostId": null,
+				"date": "2015-12-14T16:53:40Z",
+				"author": "Nicholas Johnson",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>We can get backwards compatibility by providing a plain fallback, like we used to do for NetScape. The older browsers see a boring looking page. The newer ones use the real stylesheet.</p><p>As web designers we are used to hacks, polyfills and fallbacks, it's just par for the course. Once CSS variables achieve 90% penetration we can start shipping them with fallbacks. Once they reach 98% adoption, we can cut the polyfills. It's no different from gradients, border-radius, border-box, and so on all the way back to floats.</p><p>Here's a working (boring) fallback:</p><p>:root { --foreground-color: #333; --background-color: #fff; }</p><p>body { background: white; color: black; background: var(--background-color); color: var(--foreground-color); }</p>",
+				"replies": []
+			},
+			{
+				"postId": "2419721788",
+				"parentPostId": null,
+				"date": "2015-12-21T13:22:19Z",
+				"author": "Jsilvermist",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Following the logic from this post technology would never move on, and we would be stuck in 2010 for eternity. It may not be flawless, but when is updating and changing syntax ever flawless?<br>Should ES6(ES2015) never be natively implemented in any browsers because of tools like Babel?</p>",
+				"replies": [
+					{
+						"postId": "2601344876",
+						"parentPostId": "2419721788",
+						"date": "2016-04-01T21:40:26Z",
+						"author": "Joe Shelby",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Other way around: if you already have a build-plan that involves a CSS pre-processor, why can't that processor, like Babel for ES6, implement the current standard and back-port it for distribution to older browsers?</p><p>You can have a pre-processor be its own language, or you can learn and keep up with the standards and allow it to bridge. i'd rather stick to the standards unless they actually suck.</p>",
+						"replies": [
+							{
+								"postId": "3335276519",
+								"parentPostId": "2601344876",
+								"date": "2017-06-01T15:07:43Z",
+								"author": "Mark",
+								"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+								"message": "<p>There is a CSS pre-processor for CSS variables, it's called Polymer.js and Web Components.</p>",
+								"replies": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"postId": "2497861828",
+				"parentPostId": null,
+				"date": "2016-02-05T16:56:05Z",
+				"author": "Thierry Koblentz",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>But values of \"CSS variables\" can change inside browsers... And that's a big deal to me.</p><p>Also, providing fallback is what we've been doing for **years** so why should that become so bad because of custom properties? I agree that it would be a huge headache if the values of these variables were meant to change in the browser, but since the comparison here is with pre-processors there is no reason to think it'd be that bad to supply fallbacks. After all, it is just a matter of writing a declaration before the one containing a variable. To me, that's an easy fix to implement compared to the hoops we're used to go through for other properties. We all remember `*display:inline;zoom:1`...</p>",
+				"replies": [
+					{
+						"postId": "2680685483",
+						"parentPostId": "2497861828",
+						"date": "2016-05-17T19:06:21Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>I’m all for the \"changing in the browser\" scenario. I had a long discussion with Sara Soueidan about it in fact. I’ve been meaning to write about the usefulness in SVG and such where you may want to \"theme\" an object. Having a default theme, however, is also desirable. Fallbacks :-)</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "2509615074",
+				"parentPostId": null,
+				"date": "2016-02-12T10:06:17Z",
+				"author": "Hedley Smith",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>I see the logic behind keeping a simpler standard for CSS and pre-processing, but I think a better way would be to standardise on the things that pretty much everyone is doing, like variables in CSS. It's easier for everyone to work on each other's code then. And if we have a standard, it makes sense to implement direct in browsers, I don't have any figures but I would bet the performance overheads will become negligible - the amount of processing browsers already do for JS and DOM is comparatively huge already.</p><p>We can write future CSS syntax and transpile for older browsers using tools like Post-CSS, then we can stop using some of these transpiling features in the future and not have to worry about changing the way we write anything.</p>",
+				"replies": []
+			},
+			{
+				"postId": "2518456658",
+				"parentPostId": null,
+				"date": "2016-02-17T09:29:42Z",
+				"author": "Mark Stickling",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>*Most* of the browsers (and all of the browsers that people are being migrated to) are going evergreen. It's short term pain point for a long term gain and I think the pros outweigh the cons. I can see development and potential rendering efficiency benefits from variables.</p><p>(I think the syntax for CSS variables could use an overhaul. No \"var\" to declare and \"var\" to use seems to be the opposite of every other language I know.)</p>",
+				"replies": []
+			},
+			{
+				"postId": "2549541170",
+				"parentPostId": null,
+				"date": "2016-03-03T16:50:45Z",
+				"author": "Ajedi32",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>It's worth pointing out that CSS \"variables\" are nothing like the variables you're used to in SASS and LESS.  Declaring variables at `:root` isn't the only thing you can do. You can also override those variables at specific subsections of the page. E.g. `.sidebar { --foreground-color: blue; }`.</p><p>Furthermore, CSS variables can transverse Shadow DOM, which is important to allow styling of custom elements and isn't something that can be implemented using a preprocessor.</p>",
+				"replies": [
+					{
+						"postId": "2680690371",
+						"parentPostId": "2549541170",
+						"date": "2016-05-17T19:09:09Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>I think you make an important distinction. The name has changed to Custom Properties, but most of the early examples of this approach (which I was addressing almost 2 years ago) were treating them as an alternative to variables folks were used to using in pre-processors. I plan on writing up my current thinking on CSS Custom Properties in the not too distant future. A bit’s changed, but some still hasn’t.</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "2616346919",
+				"parentPostId": null,
+				"date": "2016-04-10T17:23:21Z",
+				"author": "Jundar",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>I don't think that it makes since to say that a needed feature is bad because it will break old browsers. There are so many new features in every area of computer science that must break old ones! Once the feature is implemented it will eventually become mainstream in all browsers. The ultimate goal would be for browsers to natively understand the more programmatic syntax of a language like LESS.</p>",
+				"replies": []
+			},
+			{
+				"postId": "2647992354",
+				"parentPostId": null,
+				"date": "2016-04-28T20:22:24Z",
+				"author": "Loweded Wookie",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>I think the backwards compatibility issue is crap.</p><p>There would be more browsers supporting newer standards (not specifically variables but later standards in general) than there would be not supporting them.</p><p>If you are still designing web pages specifically for browsers such as IE3-8 then frankly you need to have your hands cut off and be prevented from be allowed to develop anymore websites.</p><p>It costs NOTHING to upgrade your browser to whatever the newer version is unless of course you're still running Windows XP or worse. True there are sites that are badly designed and specific to one type of browser but that's the developer's fault for either not coding according to proper standards or for using \"easy\" tools that create code for you but end up being specific to one browser (I'm looking at all you developers who ever used FrontPage EVER).</p><p>Given that Windows 10 and OS X can run on most machines today, they are constantly being updated, and have such high uptakes and given that most other machines are running Windows 7 with IE11 I do not see any legitimate reason to support browsers such as IE9 and below and by forcing that change we can finally move forward.</p><p>Stop developing with backwards compatibility in mind because you're pandering to the few these days and the few should never be allowed to control the masses (although in reality they do).</p>",
+				"replies": [
+					{
+						"postId": "2680693906",
+						"parentPostId": "2647992354",
+						"date": "2016-05-17T19:11:09Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>I think you’re trapped in a bubble. IT’s easy to fall into the mindset that everyone has the latest and greatest devices, the most RAM, and the newest browser features. That would be a wonderful world to live in, but it’s not reality. The reality on the web is a lot messier. Backwards compatibility *is* forward compatibility. It’s also part of being a good citizen of the Web.</p>",
+						"replies": [
+							{
+								"postId": "2682762662",
+								"parentPostId": "2680693906",
+								"date": "2016-05-18T19:58:38Z",
+								"author": "Loweded Wookie",
+								"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+								"message": "<p>The numbers however are not agreeing with you.</p><p>There are very few machines that are using Windows XP these days and even less with Vista. That means the MAJORITY of machines are running at least Windows 7. Given that IE11 is pushed through as an important update and given that many IT departments are starting to push out IE11 because it's a much more secure browser the idea that you NEED to support IE9 and below is bollocks.</p><p>But there's also the fact that Chrome has now overtaken IE as the browser of choice, Firefox is also supporting many of the new standards, and most Mac users are using Safari it seems like the 3 to 1 ratio of all machines that CAN support modern standards belies the need to develop for older browsers.</p><p>If a developer develops for the lowest common denominator then they will never do anything special because they are pandering to those who don't care. If they try to push new standards and show what CAN be done then people start to take notice and things change.</p><p>Backwards compatibility simply panders to those who don't care about the future. It is NOT - as you say - forward compatibility when ALL the modern browsers support many of the modern standards.</p><p>There are websites that I'm forced to use IE for because they've not stuck to modern standards and these sites are ALWAYS pieces of crap to use.</p><p>I can assure you I'm not the one stuck in the bubble. Your's needs to be burst so that you can move forward and do amazing things not selling yourself short by pandering to lazy people.</p>",
+								"replies": [
+									{
+										"postId": "2684509866",
+										"parentPostId": "2682762662",
+										"date": "2016-05-19T16:47:50Z",
+										"author": "Aaron Gustafson",
+										"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+										"message": "<p>Wow: “Backwards compatibility simply panders to those who don't care about the future.”</p><p>As I mentioned in my response to @ws_ubi, below, “I wrote this post nearly 2 years ago and today browser support is still shy of 60% globally, which means as many as 1.35 billion people (of the 3.3 billion currently online) may not be able to use your CSS Custom Property.” Apparently over 1.35 billion people are lazy and don’t care about their future or being able to use sites to, say, check their bank balance or find a polling location during an election. And yes, if used improperly, CSS Custom Properties could, in fact, preclude folks from doing those very things. Chances are, the folks most affected would be unable to afford the modern devices you can.</p><p>Food for thought: in the last Pew research study of mobile device usage, people who owned a smartphone, but fell into the &lt; $30k/year income bracket experienced app errors over 50% of the time (I believe it was abut 54%). They had a smartphone, but something was precluding them from using an app they had downloaded and installed (note: in most OSes, an app would not have installed if it was not compatible). We’re not even talking a website here. And yet more than half of the time the apps didn’t work. The likely culprit: vastly different specs for their device vs. the ones the developers were using/used to. This stuff happens all the time (and more often on the web), but because it happens in a sphere most of us do not live in, we don’t see it happening.</p><p>That’s the bubble I’m talking about. We’re all surrounded by the latest and greatest technologies and get lulled into a false sense of security that this is how the world is and how everyone experiences the web, mobile, etc. Have you ever gone to a library to use the Internet? Most aren’t running the latest and greatest version of Windows. Have you ever gone to an Internet cafe in a \"developing\" nation? Have you ever looked into purchasing a mobile phone in India?</p><p>When we develop with only ourselves as our intended audience, we miss out on the opportunity of reaching a lot of people who are not like us. I highly recommend you check out the transcript of a talk I gave a few weeks ago. Perhaps it will help you understand where I am coming from a bit better. <a href=\"https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/\" rel=\"nofollow noopener\" title=\"https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/\">https://www.aaron-gustafson...</a></p>",
+										"replies": []
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"postId": "2673716153",
+				"parentPostId": null,
+				"date": "2016-05-13T14:19:09Z",
+				"author": "nicholasbg",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Do you also think calc or rgba is a bad idea? Because we fall back the exact same way.</p><p>No reason why css variables can't follow the same principles of graceful degradation devs have been implementing forever.</p>",
+				"replies": [
+					{
+						"postId": "2680700073",
+						"parentPostId": "2673716153",
+						"date": "2016-05-17T19:14:38Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>I use both. But I also do so in a way that sequesters them such that I am pretty confident I am not delivering a bad experience to folks who can’t use them. For example, if I define an RGBa value, I have a non-RGBa fallback in there first. That way fault tolerance will ensure text is still readable against a solid background if RGBa is not supported. Similarly, I will sequester more advanced stuff like `calc()` within feature queries (`@supports`) or inside media queries that give me a high level of confidence that `calc()` will be supported. That’s how you create a robust website that will work no matter what.</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "2679230446",
+				"parentPostId": null,
+				"date": "2016-05-16T22:58:55Z",
+				"author": "Yordis Prieto",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Will all the respect, you are missing the needs of the modern web completely! This is just wrong</p>",
+				"replies": [
+					{
+						"postId": "2680714016",
+						"parentPostId": "2679230446",
+						"date": "2016-05-17T19:22:27Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Your enlightened argument has convinced me! What was I thinking?! I’ve only been in this industry for nearly two decades; obviously I’ve learned nothing. Thank you!</p><p>But seriously, if you understand how the Web works and how fault tolerance in CSS works *and* you care about delivering a high-quality product to your customers, you need to be selective about when and how you use CSS Custom Properties. Don’t just use them because you can. Don’t just use them because they are the new hotness. Just don’t use them as a replacement for variables in a pre-processor. Use them when and how they add value to a project. And have a plan for when a browser doesn’t support them. I wrote this post nearly 2 years ago and today browser support is still shy of 60% globally, which means as many as 1.35 billion people (of the 3.3 billion currently online) may not be able to use your CSS Custom Property.</p>",
+						"replies": [
+							{
+								"postId": "3601801963",
+								"parentPostId": "2680714016",
+								"date": "2017-11-05T21:49:02Z",
+								"author": "rolfen",
+								"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+								"message": "<p>This applies pretty much to everything in software dev. People get entangled in all sorts of hotness. Soon your HTML is littered with long, repetitive class names full of dashes and underscores, and heaps of CSS framework 'visual classes', and you have to go through all of the elements and change the classes. Its almost like back to HTML 1 with inline styling attributes, before CSS was invented, and only looking at this will make your brain shut off.<br>So now you need a \"build stack\" to manage that. Gulp, grunt, burp, fart, it doesnt matter, as long as it takes 200 megs for every project, makes you wait 20 seconds to review any change, and makes you spend a few days installing and debugging the stack.<br>Also, bonus points when a team member commits node_modules to your git repo!<br>Who cares. At least you can put some buzzwords on your CV, now.</p>",
+								"replies": []
+							}
+						]
+					}
+				]
+			},
+			{
+				"postId": "2780389095",
+				"parentPostId": null,
+				"date": "2016-07-13T08:11:39Z",
+				"author": "Mohammad from Iran",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>If there were no user for old browsers, CSS variables (not less or SASS) was really great</p>",
+				"replies": []
+			},
+			{
+				"postId": "2814695236",
+				"parentPostId": null,
+				"date": "2016-08-01T10:59:44Z",
+				"author": "René",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>So often I find myself in a situation where I only want to change one thing inside a pseudo-class or media query and the preprocessors just can't do it conveniently.</p><p>How cool would it be to just change a variable for this context? Too bad that the preprocessor has already translated the @variables – And making a mixin like .helper(@args) everytime a situation like this comes... hm..</p><p>A css var would save lots in the following snippet:</p><p></p><pre><code><br>.foo {<br>border: 1px solid @color;<br>background: @color;<br>color: @secondcolor;<br>&amp;:before, &amp;:after {<br>...<br>content: \"\";<br>background: @secondcolor;<br>}<br><br>&amp;:hover {<br>border-color: @secondcolor;<br>background: @secondcolor;<br>color: @color;<br>&amp;:before, &amp;:after {<br>background: @color;<br>}<br>}<br><br>&amp;.inactive {<br>// the whole damn thing again?<br>}<br><br>&amp;.superspecial {  ..}<br>}<br></code></pre>",
+				"replies": []
+			},
+			{
+				"postId": "2904477026",
+				"parentPostId": null,
+				"date": "2016-09-19T10:16:33Z",
+				"author": "Björn Hjorth",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Suggesting SASS and Less and all the other pre-processors instead of standard CSS makes no sense. We should try and move away from tools and use the vanilla way and use pre-processors only when needed.</p><p>I would suggest to write code in vanilla way and add polyfills when needed to make better browser support. As in that case you learn the real way of doing things and one can just remove polyfills in the future when the browsers have all catched up.</p>",
+				"replies": []
+			},
+			{
+				"postId": "2957077325",
+				"parentPostId": null,
+				"date": "2016-10-18T19:52:25Z",
+				"author": "Mestèche",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Yeah hmmm...no.<br>Beside the keeping retro-compatibility being a false problem (we've been using fallback for a lot of other things and guess what, your so loved pre-processor can probably handle this with a mixin), there is something that custom properties offer that pre-processors don't : runtime changes. And that alone is enough to make me chose custom properties over pre-processor variables.</p>",
+				"replies": [
+					{
+						"postId": "3593351601",
+						"parentPostId": "2957077325",
+						"date": "2017-10-31T14:09:44Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>If runtime changes are a requirement, by all means use custom properties, just provide a fallback for your default state.</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "3018055964",
+				"parentPostId": null,
+				"date": "2016-11-24T12:46:57Z",
+				"author": "Michael Rasoahaingo",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Almost fully supported <a href=\"http://caniuse.com/#feat=css-variables\" rel=\"nofollow noopener\" title=\"http://caniuse.com/#feat=css-variables\">http://caniuse.com/#feat=cs...</a> ;)</p>",
+				"replies": []
+			},
+			{
+				"postId": "3136277653",
+				"parentPostId": null,
+				"date": "2017-02-03T20:16:28Z",
+				"author": "Guru Quest",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Hi,<br>This is a very nice tutorial about variables.<br>To use a variable within .css file without a usage of sass or less. Please click on below link:<br><a href=\"http://guruquest.net/question/how-to-create-a-variable-and-use-within-css-file-to-avoid-duplicate-values/\" rel=\"nofollow noopener\" title=\"http://guruquest.net/question/how-to-create-a-variable-and-use-within-css-file-to-avoid-duplicate-values/\">http://guruquest.net/questi...</a></p>",
+				"replies": []
+			},
+			{
+				"postId": "3182322866",
+				"parentPostId": null,
+				"date": "2017-03-02T09:14:08Z",
+				"author": "icruces",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>With a preprocessor you cannot change variables in runtime. CSS variables are ideal for theme customization.</p>",
+				"replies": [
+					{
+						"postId": "3496126997",
+						"parentPostId": "3182322866",
+						"date": "2017-08-31T17:52:14Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Yes!</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "3495056661",
+				"parentPostId": null,
+				"date": "2017-08-31T01:12:54Z",
+				"author": "Neil Moore",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Everything you think is wrong.</p>",
+				"replies": [
+					{
+						"postId": "3496126577",
+						"parentPostId": "3495056661",
+						"date": "2017-08-31T17:51:59Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>I can’t thank you enough for setting me straight!</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "3565640621",
+				"parentPostId": null,
+				"date": "2017-10-13T14:57:47Z",
+				"author": "BradySterling",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>this crap is a top hit on search. upsetting.</p>",
+				"replies": [
+					{
+						"postId": "3593350271",
+						"parentPostId": "3565640621",
+						"date": "2017-10-31T14:08:52Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>K.</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "3593113751",
+				"parentPostId": null,
+				"date": "2017-10-31T10:52:10Z",
+				"author": "rolfen",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>How is this any different than any new CSS features that older browser will not understand?<br>Following this logic we should all have stuck to CSS1 because adding any new features will \"build a wall between older browsers and new ones\".<br>I really don't understand how this is a new issue to you. If anything variables might encourage using variables and yes they will not be interpreted by older browsers but maybe that's because they are a very useful feature and devs will use them a lot. By the way, they are now supported by all major browsers (even mobile) except... take a guess!<br>So anyway backwards compatibility is not really broken - old CSS will still work on new browsers, something that cannot be said about many programming frameworks.</p><p>If anything I agree that CSS should not be adding more high-level features, but instead offer more low-level control and let the clients build framework to abstract concerns and build high-level tools in the ways they find suitable. Same thing for javascript. It should be like some kind of common low-level, machine-optimized, assembly-like interface, then we can code in javascript, C, or whatever language we fancy, and have it compile down to that. Free the browser!</p>",
+				"replies": [
+					{
+						"postId": "3593349818",
+						"parentPostId": "3593113751",
+						"date": "2017-10-31T14:08:35Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>To clarify: I’m not at all against using new CSS features. In fact, most are designed to be both forward and backward compatible. For instance, flexbox and grid, when used, cause a browser to ignore any float-related declarations which makes progressive enhancement of layouts easy. Similarly, RGBa can be used as a value with an RGB (or hex or other color value) fallback. The issue is not using the new feature, it’s assuming it is available and doing things like declaring all of your colors in Custom Properties (formerly CSS Variables). If a browser does not support the Custom Property syntax and you have not provided a fallback, you may inadvertently render your site unusable.</p><p>I’m not throwing the baby out with the bathwater—in fact, I think there are some very good uses for Custom Properties—but I am concerned designers &amp; developers will consider them equal to variables in a pre-processor context when they really aren’t.</p>",
+						"replies": [
+							{
+								"postId": "3601760174",
+								"parentPostId": "3593349818",
+								"date": "2017-11-05T21:21:14Z",
+								"author": "rolfen",
+								"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+								"message": "<p>You seem to single out custom properties in your article, however I'm sorry for still not seing how they are more problematic than any of the other new CSS feature. They are quite easy to polyfill with a pre-procesor, as long as you keep in mind the subtle differences in scope and inheritance. I learned this on my own by making this oversight - no big deal, it only took a minute to correct.</p>",
+								"replies": [
+									{
+										"postId": "3602018591",
+										"parentPostId": "3601760174",
+										"date": "2017-11-06T00:30:57Z",
+										"author": "Aaron Gustafson",
+										"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+										"message": "<p>I don't think custom properties are inherently bad, I just think we need to be aware of how we use them. The absence of support for most new CSS features seldom renders a page unusable. This is especially problematic with colors. Imagine you have a background image on an element and set the foreground color to be legible against it with a custom property. If the browser doesn't support custom properties, the text will remain illegible.</p><p>Situations like that are my main worry. They're totally avoidable if you think before you code, but if you approach custom properties as being a standardized version of preprocessor variables, you could absolutely create this scenario.</p>",
+										"replies": [
+											{
+												"postId": "3602078574",
+												"parentPostId": "3602018591",
+												"date": "2017-11-06T01:19:42Z",
+												"author": "Thierry Koblentz",
+												"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+												"message": "<p>I think the easiest way to prevent this kind of issues is to simply use custom properties inside @supports at rules. According to <a href=\"http://caniuse.com\" rel=\"nofollow noopener\" title=\"caniuse.com\">caniuse.com</a>, the support for both is pretty much the same so it should be pretty safe to go this route.</p>",
+												"replies": []
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"postId": "3990700174",
+				"parentPostId": null,
+				"date": "2018-07-16T10:52:40Z",
+				"author": "criozone",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>\"Preprocessors already give us this access to variables today ...\"<br>Nope. Preprocessors variables and css vars are not the same. With prepocessor all the magic ends wen you compilled the document. CSS variables, instead, can change at any time.<br>Bad Post.</p>",
+				"replies": []
+			}
+		]
+	}
+}

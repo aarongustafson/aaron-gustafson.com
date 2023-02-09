@@ -333,3 +333,34 @@
 {% macro social_icon( slug ) %}
   {{ ( "/src/static/i/icons/" + slug + ".svg" ) | svgContents | safe }}
 {% endmacro %}
+
+{% macro comment( c ) %}
+	<li id="comment-{{ c.postId }}" class="webmentions__item">
+		<article class="h-cite webmention 
+			{% if not c.author %}webmention--no-author{% endif %}
+			{% if not c.avatar %}webmention--no-photo{% endif %}
+			">
+			<div class="webmention__author p-author h-card">
+				{% if c.avatar %}
+					<img class="webmention__author__photo u-photo" src="https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_48,h_48/{{ c.avatar }}" width="48" height="48" alt="" title="{{ c.author }}" loading="lazy">
+				{% endif %}
+				<b class="p-name">{{ c.author }}</b>
+			</div>
+			<div class="webmention__content p-content">
+				{{ c.message | unescape | safe }}
+			</div>
+			<div class="webmention__meta">
+				<time class="webmention__pubdate dt-published"
+							datetime="{{ c.date | machine_date }}">{{ c.date | readable_date }}</time>
+				<a class="webmention__source u-url" href="#comment-{{ c.postId }}">Permalink<b class="hidden"> to comment {{ c.postId }}</b></a>
+			</div>
+			{% if c.replies.length > 0 %}
+				<ol class="webmentions__list webmentions__list--replies">
+					{% for reply in c.replies %}
+						{{ comment( reply ) | safe }}
+					{% endfor %}
+				</ol>
+			{% endif %}
+		</article>
+	</li>
+{% endmacro %}

@@ -1,0 +1,22 @@
+{% from "macros.njk" import comment %}
+
+{% if disqus %}
+	<hr>
+
+	<section id="comments" class="entry__comments dont-read">
+		<h1>Comments</h1>
+		<small>Note: These are comments exported from my old blog. Going forward, replies to my posts are only possible via webmentions.</small>
+
+		<div class="webmentions">
+			{% if disqus.comments.length > 0 %}
+				<ol class="webmentions__list">
+					{% for c in disqus.comments %}
+						{% if c.message %}
+							{{ comment( c ) | safe }}
+						{% endif %}
+					{% endfor %}
+				</ol>
+			{% endif %}
+		</div>
+	</section>
+{% endif %}

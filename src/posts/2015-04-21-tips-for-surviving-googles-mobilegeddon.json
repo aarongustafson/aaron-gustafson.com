@@ -1,0 +1,27 @@
+{
+	"disqus": {
+		"path": "/notebook/tips-for-surviving-googles-mobilegeddon/",
+		"commentCount": 4,
+		"comments": [
+			{
+				"postId": "1987896743",
+				"parentPostId": null,
+				"date": "2015-04-26T05:43:11Z",
+				"author": "AmbroseChapel",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>&gt; @media (min-width:60em) for a 960px max width</p><p>Any reason why you used ems to specify the width? That took me by surprise, especially when you refer to pixels in the same sentence.</p>",
+				"replies": [
+					{
+						"postId": "1989150760",
+						"parentPostId": "1987896743",
+						"date": "2015-04-27T00:25:59Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>If you use relative sizes in media queries, when users enlarge the text you can apply the most appropriate layout. For example, if the text gets bumped up enough, they might get the mobile layout which provides a better reading experience.</p>",
+						"replies": []
+					}
+				]
+			}
+		]
+	}
+}

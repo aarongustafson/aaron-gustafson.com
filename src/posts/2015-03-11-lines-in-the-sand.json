@@ -1,0 +1,36 @@
+{
+	"disqus": {
+		"path": "/notebook/lines-in-the-sand/",
+		"commentCount": 3,
+		"comments": [
+			{
+				"postId": "1901600123",
+				"parentPostId": null,
+				"date": "2015-03-11T17:32:22Z",
+				"author": "Alfonso Gómez-Arzola",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>The point you make re: embracing variety in how a website behaves or is displayed in each browser is very important. That print design mentality of controlling every aspect of a communication piece is incredibly persistent. I think it’s probably due to a design process that has yet to embrace a progressive enhancement approach. In my experience, mobile-first and progressive enhancement are viewed by many teams as implementation concerns and not really design concerns, so you end up with mock-ups and prototypes that are all about the higher-end devices. This inevitably leads to a compromise-focused approach to supporting less-capable devices, so even if designs are implemented using mobile-first and progressive enhancement, they end up being a limping cousin of the original mock-ups, and not a direct result of designing bottom-up.</p><p>I do have one question: Considering that browsers ignore what they don’t understand in our HTML &amp; CSS, and that this is by design, why wasn’t JavaScript, which has its origins in the web, built this way too?</p>",
+				"replies": [
+					{
+						"postId": "1901690398",
+						"parentPostId": "1901600123",
+						"date": "2015-03-11T18:16:32Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Great points Alphonso!</p><p>To answer your JS question: Since every JavaScript we write is technically a program, the code must be downloaded, interpreted, and executed as such. When you write a program in any language with the expectation that a particular method or function will be available and it’s not, the program will throw an error. HTML and CSS are not programing languages and were designed to be more forgiving, unbound by the same constraints. XML on the other hand (and HTML served as XML) will throw an error if your markup is malformed. See also: <a href=\"http://htmlcssjavascript.com/web/youre-so-smart-you-turned-javascript-into-xhtml/\" rel=\"nofollow noopener\" title=\"http://htmlcssjavascript.com/web/youre-so-smart-you-turned-javascript-into-xhtml/\">http://htmlcssjavascript.co...</a></p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "1903966827",
+				"parentPostId": null,
+				"date": "2015-03-12T20:29:47Z",
+				"author": "Ade Bateman",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>My reply: <a href=\"http://adrianba.net/archive/2015/03/12/itrsquos-time-to-move-on-from-ie8.aspx\" rel=\"nofollow noopener\" title=\"http://adrianba.net/archive/2015/03/12/itrsquos-time-to-move-on-from-ie8.aspx\">http://adrianba.net/archive...</a></p>",
+				"replies": []
+			}
+		]
+	}
+}

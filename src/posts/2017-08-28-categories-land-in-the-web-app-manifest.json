@@ -1,0 +1,27 @@
+{
+	"disqus": {
+		"path": "/notebook/categories-land-in-the-web-app-manifest/",
+		"commentCount": 2,
+		"comments": [
+			{
+				"postId": "3708888732",
+				"parentPostId": null,
+				"date": "2018-01-15T14:29:26Z",
+				"author": "Gerard Tyedmers",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>The link to the manifest-example is wrong. Instead of linking to a manifest.json its just a link to the wikipedia-page of the book.</p>",
+				"replies": [
+					{
+						"postId": "3720577005",
+						"parentPostId": "3708888732",
+						"date": "2018-01-22T17:02:22Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Actually, I screwed up my Content Security Policy and the Gist was blocked. My apologies and thanks for the heads up!</p>",
+						"replies": []
+					}
+				]
+			}
+		]
+	}
+}

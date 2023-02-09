@@ -1,0 +1,26 @@
+{
+	"disqus": {
+		"path": "/notebook/more-proof-we-dont-control-our-web-pages/",
+		"commentCount": 2,
+		"comments": [
+			{
+				"postId": "2235771382",
+				"parentPostId": null,
+				"date": "2015-09-04T13:29:21Z",
+				"author": "Nicolas Hoffmann",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>You may be interested in CSP : Content Security Policy. <a href=\"http://www.w3.org/TR/CSP/\" rel=\"nofollow noopener\" title=\"http://www.w3.org/TR/CSP/\">http://www.w3.org/TR/CSP/</a> ;)</p>",
+				"replies": []
+			},
+			{
+				"postId": "3098534749",
+				"parentPostId": null,
+				"date": "2017-01-14T04:14:02Z",
+				"author": "Nick Stone",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Thank you, Aaron! Kudos, also, to Nicolas Hoffmann and Smashing Magazine for explaining how a Content Security Policy can thwart these corporate hijackers.</p>",
+				"replies": []
+			}
+		]
+	}
+}

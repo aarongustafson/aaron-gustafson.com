@@ -1,0 +1,36 @@
+{
+	"disqus": {
+		"path": "/notebook/adaptive-images-in-expressionengine-with-ce-image/",
+		"commentCount": 3,
+		"comments": [
+			{
+				"postId": "1826028262",
+				"parentPostId": null,
+				"date": "2015-01-30T19:08:42Z",
+				"author": "parscale",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>I am a fan of CE Image and support it with our DevDemon modules. But if you used Channel Images with this approach you would do all the \"sizing\" on upload and save yourself coding and server usage. Channel Images has the option to make all of these sizes, as well as more actions when you actually upload the images.</p>",
+				"replies": [
+					{
+						"postId": "1826257457",
+						"parentPostId": "1826028262",
+						"date": "2015-01-30T21:09:22Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>True enough. But sometimes its difficult to know what you need when you are building out the CMS itself. When you do, Channel Images is perfect, but if not (or if the templating people are not the CMS admin people) CE Image caches, so the processing should only happen once.</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "1896561384",
+				"parentPostId": null,
+				"date": "2015-03-09T13:24:57Z",
+				"author": "Sean",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>THanks for posting, will be using this on my next build.</p>",
+				"replies": []
+			}
+		]
+	}
+}

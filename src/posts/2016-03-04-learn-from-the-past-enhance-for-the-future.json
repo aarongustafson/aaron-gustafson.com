@@ -1,0 +1,17 @@
+{
+	"disqus": {
+		"path": "/notebook/learn-from-the-past-enhance-for-the-future/",
+		"commentCount": 1,
+		"comments": [
+			{
+				"postId": "2552767230",
+				"parentPostId": null,
+				"date": "2016-03-05T09:49:49Z",
+				"author": "Simon R Jones",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Nice talk, wasn't there but two of my colleagues were at the conference. I like the idea of voice and conversational language being a good example of the future of progressive enhancement. Who's to tell what the future brings, if you build it well sites will continue to work for users. </p>",
+				"replies": []
+			}
+		]
+	}
+}

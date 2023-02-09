@@ -1,0 +1,47 @@
+{
+	"disqus": {
+		"path": "/notebook/ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web/",
+		"commentCount": 4,
+		"comments": [
+			{
+				"postId": "2188027893",
+				"parentPostId": null,
+				"date": "2015-08-12T04:58:38Z",
+				"author": "Albert Nikanorov",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Are you really a designer? It's a hell to read when some guy is quoting yourself on his own article, it's a hell, literally!</p>",
+				"replies": [
+					{
+						"postId": "2189170029",
+						"parentPostId": "2188027893",
+						"date": "2015-08-12T18:49:35Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>I’m not sure I understand what you’re asking or implying, but thanks for reading!</p>",
+						"replies": [
+							{
+								"postId": "2214567083",
+								"parentPostId": "2189170029",
+								"date": "2015-08-25T14:45:08Z",
+								"author": "Shane Bailey",
+								"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+								"message": "<p>Yeah, I'm not getting what he is referencing either unless he is talking about the pull quotes (which I thought were fine) or maybe he thought that you were PPK (which I thought was clear)? I thought it was a good read and I agree with a lot of your points. I'm really glad we are having this discussion online as I believe a lot of people have had this on their mind for quite some time. Thanks for posting.</p>",
+								"replies": [
+									{
+										"postId": "2214602041",
+										"parentPostId": "2214567083",
+										"date": "2015-08-25T14:51:44Z",
+										"author": "Aaron Gustafson",
+										"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+										"message": "<p>Glad I’m not the only one who didn’t understand what he was saying :-)</p><p>Thanks for reading!</p>",
+										"replies": []
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+}

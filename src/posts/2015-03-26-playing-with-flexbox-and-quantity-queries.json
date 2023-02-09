@@ -1,0 +1,27 @@
+{
+	"disqus": {
+		"path": "/notebook/playing-with-flexbox-and-quantity-queries/",
+		"commentCount": 2,
+		"comments": [
+			{
+				"postId": "2501349111",
+				"parentPostId": null,
+				"date": "2016-02-07T18:59:19Z",
+				"author": "jkinley",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Aaron, great article. Thanks for sharing. I am building a similar grid as you for a portfolio. I want essentially the same thing as you have in that the items in the last row don't automattically fill the available space. I don't really need the special class items like you have for future events. However, I'd like the first child of the list to expand to 100 in a two column layout and the first-two children expand to 50% in a 3 col layout. I tried doing this and it breaks the layout. Any ideas?</p>",
+				"replies": [
+					{
+						"postId": "3144770685",
+						"parentPostId": "2501349111",
+						"date": "2017-02-08T20:56:02Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>I apologize for the delayed response here. My inbox is a disaster.</p><p>My guess is you may need to trap the rules for each scenario in min and max media queries (at least for the 2-column layout).</p>",
+						"replies": []
+					}
+				]
+			}
+		]
+	}
+}

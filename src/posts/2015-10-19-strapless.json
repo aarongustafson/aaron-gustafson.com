@@ -1,0 +1,197 @@
+{
+	"disqus": {
+		"path": "/notebook/strapless/",
+		"commentCount": 20,
+		"comments": [
+			{
+				"postId": "2315446275",
+				"parentPostId": null,
+				"date": "2015-10-19T18:30:11Z",
+				"author": "Mike",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>hehe, great! Just today had a discussion with a new co-worker who wants to use it (we currently don't). I think like with all frameworks you keep running at walls sooner or later. Happened with Foundation which we used for a few projects some years ago, Bootstrap would be the same I reckon. Maybe it is my old age but I still like to write vanilla CSS and even JS (although still relying on jQuery for most projects but for some not even that anymore). Not saying I start from scratch and have my tried and tested \"starter kit\" stuff but nothing like a \"framework\".</p>",
+				"replies": [
+					{
+						"postId": "2321196681",
+						"parentPostId": "2315446275",
+						"date": "2015-10-22T17:09:43Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>I think we all end up with a set of patterns we use repeatedly on project after project. It doesn’t make sense to reinvent the wheel if the wheel is what you need. But if what you need is a frisbee and you look at the wheel and say “well, they’re both round”, you’re probably gonna hurt a small child :-)</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "2319320145",
+				"parentPostId": null,
+				"date": "2015-10-21T16:46:24Z",
+				"author": "Kit Sunde",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>#2 is solvable with an intelligent build pipeline and is a problem with pretty much anything that has a year or two under the belt because frontend code rots too easily. I don't think #3 is a problem unless you're **designing** of bootstrap. We still get a lot of benefits from common patterns even when we don't use common widgets as much.</p><p>The main reason (#4) why we will at some point stop using bootstrap as heavily we have in the past is that it's pretty awkward to use with components. The awkwardness will get even larger once CSS modules becomes more common place.</p>",
+				"replies": [
+					{
+						"postId": "2321201772",
+						"parentPostId": "2319320145",
+						"date": "2015-10-22T17:12:34Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Completely agree on #2, though you’d be surprised how many sites just include it all. In terms of #3, in my experience, one of the most common uses is to throw together a site using Bootstrap as the foundation for the design (or the entire design in most cases). The \"designer\" might apply some colors using the themer, but that’s usually about it. And yes, I agree on extensibility.</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "2319353076",
+				"parentPostId": null,
+				"date": "2015-10-21T17:03:23Z",
+				"author": "Luiz Paulo \"Bills\"",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>use basscss and be happy</p>",
+				"replies": [
+					{
+						"postId": "2321203480",
+						"parentPostId": "2319353076",
+						"date": "2015-10-22T17:13:33Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Never heard of it. Looks simple enough. Or you could just roll your own :-)</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "2319550991",
+				"parentPostId": null,
+				"date": "2015-10-21T18:43:12Z",
+				"author": "Barney Carroll",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>The extra point to make is that, if you're intending to do anything other than light theming, Bootstrap quickly becomes a confusing hindrance. Like many frameworks, Bootstrap makes common idioms easier, but ends up making anything more ambitious more difficult. Extending Bootstrap components is extremely confusing.</p>",
+				"replies": [
+					{
+						"postId": "2321187650",
+						"parentPostId": "2319550991",
+						"date": "2015-10-22T17:04:35Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Amen to that. It’s true of any system or framework or programming language. Great ones are malleable, but all have a perspective. Some are more rigid than others. Rigidity can be a godsend in certain situations, but if you need to do something that doesn’t fit with the system, you’re gonna fight it every step of the way. In times like those, it’s sometimes best to look for a system that can do what you want rather than frustrating yourself by trying to force the one you’re using to do something it wasn’t designed to.</p>",
+						"replies": []
+					}
+				]
+			},
+			{
+				"postId": "2319638368",
+				"parentPostId": null,
+				"date": "2015-10-21T19:31:49Z",
+				"author": "phillipadsmith",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>Good points, and I agree with the essence of the argument ... and yet this conversation pre-dates Bootstrap and I still don't feel there's a good answer to the tooling and upkeep question: <a href=\"http://phillipadsmith.com/2009/04/semantically-speaking-why-css-frameworks-make-sense.html\" rel=\"nofollow noopener\" title=\"http://phillipadsmith.com/2009/04/semantically-speaking-why-css-frameworks-make-sense.html\">http://phillipadsmith.com/2...</a></p><p>Or put another way, how can smaller publishers be expected to meet the needs of their users -- across a dizzying array of devices -- when using their own custom-built CSS/JS framework?</p><p>Using the jQuery argument: by using jQuery, those publishers get the benefits of the whole jQuery open-source community's efforts to make the library fast, small, and widely compatible.</p><p>How will they reach that speed, depth of compatibility, or future proofing if they roll their own?</p><p>Three cents.</p>",
+				"replies": []
+			},
+			{
+				"postId": "2319658315",
+				"parentPostId": null,
+				"date": "2015-10-21T19:42:34Z",
+				"author": "jpolacek",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>I wrote some thoughts about this very thing in “The Bootstrap Trap” <a href=\"http://johnpolacek.com/2013/08/26/the-bootstrap-trap/\" rel=\"nofollow noopener\" title=\"http://johnpolacek.com/2013/08/26/the-bootstrap-trap/\">http://johnpolacek.com/2013...</a></p><p>At the time (2 years ago) it was pretty controversial, but it seems like more and more people are coming around to this way of thinking about front end frameworks.</p>",
+				"replies": []
+			},
+			{
+				"postId": "2320639449",
+				"parentPostId": null,
+				"date": "2015-10-22T11:27:45Z",
+				"author": "LeoB",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>All fine, heard this argument before, nothing new here.</p><p>So tell me, what is your alternative? A practical alternative, that is. What do you recommend apart from writing the whole thing from scratch?</p><p>That would make for far more interesting reading than \"Bootstrap makes everything look the same if you don't customize it\". Yeah, I knew that already.</p>",
+				"replies": [
+					{
+						"postId": "2321180276",
+						"parentPostId": "2320639449",
+						"date": "2015-10-22T17:00:45Z",
+						"author": "Aaron Gustafson",
+						"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+						"message": "<p>Since when is “writing the whole thing from scratch” not a practical alternative? We’ve been doing it for decades and it’s the approach I’ve personally used on every project I’ve ever done—dozens upon dozens of sites, big and small. It’s really not a big deal.</p>",
+						"replies": [
+							{
+								"postId": "2321226507",
+								"parentPostId": "2321180276",
+								"date": "2015-10-22T17:26:01Z",
+								"author": "LeoB",
+								"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+								"message": "<p>Decades ago websites were simple, no need for responsive or whatever. Stuff is getting more complicated every day. Yes I also don't like the size of Bootstrap and its uniform look. Okay fine, give me alternatives then, more lightweight frameworks which are easier to customize (yeah they exist). Reinventing the wheel and writing everything from scratch every time doesn't make sense and is a waste of time and money especially for the smaller company or solo dev.</p>",
+								"replies": [
+									{
+										"postId": "2321298103",
+										"parentPostId": "2321226507",
+										"date": "2015-10-22T18:04:30Z",
+										"author": "Aaron Gustafson",
+										"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+										"message": "<p>With a “team” of one (that’s me), I put together a fully-responsive framework, pattern library, and 35 representative screens using it for a major client—you’ve heard of them, but I can’t name them—in about three weeks, spending about 4-5 hours a day, five days a week on it. It used a lot of advanced HTML5 stuff, included JavaScript validation, and had a bunch of other “hi fi” features. Two of us later tested it against 1,400 different devices and, with a few tweaks here and there for older devices like Blackberry 4 and Openwave, we were good to go. It’s not hard to build from scratch, even as a solo person.</p><p>For prototyping, internal tools, and the like I have no problems with cutting corners and saving time by going with Bootstrap, but when building a public-facing site, I think a custom pattern library is worth the investment.</p><p>I’m also not saying that you shouldn’t re-use code. Go for it. I do it all the time. Heck, take some of the bits you like from Bootstrap. Take others from jQuery. As long as the license allows it, go nuts! But use those as part of your unique design that is tailored to brand and (more importantly) the project’s needs.</p>",
+										"replies": [
+											{
+												"postId": "2321399609",
+												"parentPostId": "2321298103",
+												"date": "2015-10-22T19:00:27Z",
+												"author": "LeoB",
+												"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+												"message": "<p>Fair enough, point taken, I do believe it's feasible to assemble your own solution if you have some time and skills and use a few good tools like Sass, Compass or Bourbon/Neat, a CSS reset and a responsive grid system. It's more that people lack the knowledge to do so.</p>",
+												"replies": [
+													{
+														"postId": "2321490749",
+														"parentPostId": "2321399609",
+														"date": "2015-10-22T19:46:42Z",
+														"author": "Aaron Gustafson",
+														"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+														"message": "<p>:-)</p>",
+														"replies": []
+													}
+												]
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"postId": "2322651038",
+				"parentPostId": null,
+				"date": "2015-10-23T11:30:58Z",
+				"author": "Karen Menezes",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>What about migrations, from Bootstrap 2 to 3 to 4? I assume that could be pretty painful. And grids! Sometimes, you need floats, other times, inline-block, or flexbox. There's seldom a one-size fits all grid, or even approach. Every project has different needs and solutions.<br>For a mid-large sized project, a styleguide (preferably living and linking to production CSS) will solve most issues and help maintenance in the long run. Many of us may also have boilerplate that evolves with each project we work on.<br>I personally avoid Bootstrap because I find it gets in the way and the overriding is counter-intuitive, beyond a point. But then again, I love working with CSS and know many folks really don't. Having said that, I know many people who find Bootstrap indispensable to their workflow.</p>",
+				"replies": []
+			},
+			{
+				"postId": "2334040172",
+				"parentPostId": null,
+				"date": "2015-10-30T00:44:34Z",
+				"author": "Christian Aphects Franco",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>I've used bootstrap/foundation/similar frameworks  and the topic of this article was my initial thought when working with all of them. \"Dam there's alot here I dont need\", \"I mean it sorta solves my problems, but I'm overriding much of the default styles\". It ended up being that i spent more time tweaking bootstrap than actually working. I switch to PostCSS and Gulp and use them as a tool to make my own little system. I work faster and get solve all my problems without having to deal with any of the extra stuff that comes with bootstrap.</p>",
+				"replies": []
+			},
+			{
+				"postId": "2338207147",
+				"parentPostId": null,
+				"date": "2015-11-01T22:50:59Z",
+				"author": "Tomislav Car",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>We ran into this problem and wrote about it here: <a href=\"https://infinum.co/the-capsized-eight/articles/redesigning-an-agency-website-trying-to-outsmart-your-older-self\" rel=\"nofollow noopener\" title=\"https://infinum.co/the-capsized-eight/articles/redesigning-an-agency-website-trying-to-outsmart-your-older-self\">https://infinum.co/the-caps...</a></p><p>Our old website was in bootstrap, and over time turned out to be a problem. For custom websites, the only aspect of bootstrap that works is the grid system. Everything else is usually, well, custom.</p><p>Bootstrap is still a solid solution for:<br> - prototypes - where it's more important what the thing actually does, and to get it out fast<br> - an administrative interface for your backend, where it's not so important to be unique and utility is key</p>",
+				"replies": []
+			},
+			{
+				"postId": "2391693403",
+				"parentPostId": null,
+				"date": "2015-12-03T20:48:52Z",
+				"author": "Jonathan",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>so how do you feel about Polymer and Google's idea to make all websites look the same? <a href=\"https://elements.polymer-project.org/\" rel=\"nofollow noopener\" title=\"https://elements.polymer-project.org/\">https://elements.polymer-pr...</a></p>",
+				"replies": []
+			}
+		]
+	}
+}

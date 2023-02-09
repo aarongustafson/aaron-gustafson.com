@@ -1,0 +1,26 @@
+{
+	"disqus": {
+		"path": "/notebook/offline-first-love-the-idea-hate-the-name/",
+		"commentCount": 2,
+		"comments": [
+			{
+				"postId": "2594408503",
+				"parentPostId": null,
+				"date": "2016-03-29T07:00:04Z",
+				"author": "jaffathecake",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>\"Offline first\" means you code in a way that gives priority to local cached content, then use the network as an enhancement or a fallback. Sure, in the very first load, and for browsers without service worker support, you have to fall back to the network for everything, but your prioritisation is still offline-first, hence the name.</p><p>My reaction to your hatred of the term is pretty much \"get over it\", but do you have an alternative term in mind? \"Offline too\" makes the offline part sound like a secondary effort, it doesn't differentiate between offline vs online prioritisation, so it doesn't work.</p>",
+				"replies": []
+			},
+			{
+				"postId": "2865913486",
+				"parentPostId": null,
+				"date": "2016-08-29T20:23:40Z",
+				"author": "Meera Chari",
+				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
+				"message": "<p>How about \"Offline matters!\"</p>",
+				"replies": []
+			}
+		]
+	}
+}
