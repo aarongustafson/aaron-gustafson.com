@@ -1,7 +1,7 @@
 ---
 title: "ChatGPT Is a Blurry JPEG of the Web"
 date: 2023-02-09T22:07:22.379Z
-tags: ["AI"]
+tags: ["AI/ML"]
 ref_url: https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web
 in_reply_to: https://www.newyorker.com/tech/annals-of-technology/chatgpt-is-a-blurry-jpeg-of-the-web
 twitter_text: "There is so much to unpack in this piece, but it offers a really helpful metaphor for understanding Large Language Models."
