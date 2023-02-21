@@ -85,6 +85,11 @@
 	],
 	"articles": [
 		{
+			"title": "Progressive",
+			"author": "Matthias Ott",
+			"url": "https://matthiasott.com/notes/progressive"
+		},
+		{
 			"title": "Evaluating Visual Consistency of Icon Usage in Across-Devices",
 			"author": "Xiaojiao Chen, Xiaoteng Tang, Ying Zhao, Tengyu Huang, Ran Qian, Jiayi Zhang, Wei Chen & Xiaosong Wang",
 			"url": "https://www.tandfonline.com/doi/abs/10.1080/10447318.2022.2162275"
