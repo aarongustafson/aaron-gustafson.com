@@ -3,101 +3,112 @@ Links
 \*------------------------------------*/
 
 @include breakup-breakpoint( "global" ) {
-  
-  a {
-    text-decoration: underline;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: auto;
-    
-    &:empty {
-      display: none;
-    }
+	
+	a {
+		text-decoration: underline;
+		text-decoration-line: underline;
+		text-decoration-style: solid;
+		text-decoration-skip-ink: auto;
+		
+		&:empty {
+			display: none;
+		}
 
-    &:link,
-    &:visited {
-      color: $color-link;
-      text-decoration-color: rgba( $color-link, .25 );
-      
-      cursor: pointer;
-      
-      transition: text-decoration-color $default-transition, color $default-transition;
+		&:link,
+		&:visited {
+			color: $color-link;
+			text-decoration-color: rgba( $color-link, .25 );
+			
+			cursor: pointer;
+			
+			transition: text-decoration-color $default-transition, color $default-transition;
 
-      @media (prefers-color-scheme: dark) {
-        color: $color-link-dark;
-        text-decoration-color: rgba( $color-link-dark, .25 );
-      }
-    }
-    
-    &:hover,
-    &:focus,
-    &:active {
-      color: $color-link-hover;
-      text-decoration-color: $color-link-hover;
+			@media (prefers-color-scheme: dark) {
+				color: $color-link-dark;
+				text-decoration-color: rgba( $color-link-dark, .25 );
+			}
+		}
+		
+		&:hover,
+		&:focus,
+		&:active {
+			color: $color-link-hover;
+			text-decoration-color: $color-link-hover;
 
-      @media (prefers-color-scheme: dark) {
-        color: $color-link-dark-hover;
-        text-decoration-color: rgba( $color-link-dark-hover, .25 );
-      }
-    }
-    
-    // don’t wrap phone #s or emails
-    &[href^=mailto],
-    &[href^=tel] {
-      white-space: nowrap;
-    }
-    &.email,
-    &.tel {
-      white-space: nowrap;
-    }
-    
-    // No underlines on image links
-    a[href$="jpg"],  a[href$=png],  a[href$=gif] {
-      text-decoration: none;
-    }
-    
-    h1 &,
-    h2 &,
-    h3 &,
-    h4 &,
-    h5 &,
-    h6 & {
-      text-decoration-style: none;
-      
-      &:hover,
-      &:focus,
-      &:active {
-        text-decoration-style: underline;
-      }
-    }
-    
-    &[rel="original-article"]::after {
-      content: "\00A0\2192";
-      display: inline-block;
-      transform: translateX(-.25em) rotate(-45deg) translateY(0.25em);
-    }
-    
-  }
-  
+			@media (prefers-color-scheme: dark) {
+				color: $color-link-dark-hover;
+				text-decoration-color: rgba( $color-link-dark-hover, .25 );
+			}
+		}
+
+		&[rel=tag] {
+			background: $color-link-hover;
+			border-radius: 5px;
+			color: $color-white;
+			leading-trim: both;
+			line-height: 2;
+			padding: 3px 7px;
+			text-edge: text;
+			white-space: nowrap;
+		}
+		
+		// don’t wrap phone #s or emails
+		&[href^=mailto],
+		&[href^=tel] {
+			white-space: nowrap;
+		}
+		&.email,
+		&.tel {
+			white-space: nowrap;
+		}
+		
+		// No underlines on image links
+		a[href$="jpg"],  a[href$=png],  a[href$=gif] {
+			text-decoration: none;
+		}
+		
+		h1 &,
+		h2 &,
+		h3 &,
+		h4 &,
+		h5 &,
+		h6 & {
+			text-decoration-style: none;
+			
+			&:hover,
+			&:focus,
+			&:active {
+				text-decoration-style: underline;
+			}
+		}
+		
+		&[rel="original-article"]::after {
+			content: "\00A0\2192";
+			display: inline-block;
+			transform: translateX(-.25em) rotate(-45deg) translateY(0.25em);
+		}
+		
+	}
+	
 }
 
 @include breakup-breakpoint( "print" ) {
-  
-  a {
-    text-decoration: none;
-    &[href]:after {
-      content: "(" attr(href) ")";
-      font-size: 10pt;
-      margin-left: 9pt;
-    }
-    &[href^="/"]:after {
-      content: " (#{$domain}" attr(href) ")";
-    }
-    &[href^="#"]:after,
-    &[href^="mailto:"]:after,
-    &[href^="tel:"]:after {
-      display: none;
-    }
-  }
-  
+	
+	a {
+		text-decoration: none;
+		&[href]:after {
+			content: "(" attr(href) ")";
+			font-size: 10pt;
+			margin-left: 9pt;
+		}
+		&[href^="/"]:after {
+			content: " (#{$domain}" attr(href) ")";
+		}
+		&[href^="#"]:after,
+		&[href^="mailto:"]:after,
+		&[href^="tel:"]:after {
+			display: none;
+		}
+	}
+	
 }
