@@ -1,213 +1,231 @@
 {
-  "dir": "ltr",
-  "lang": "en-US",
-  "id": "/",
-  "name": "Aaron Gustafson",
-  "short_name": "AaronG",
-  "description": "The online home and work of Aaron Gustafson.",
-  "publisher": {
-    "name": "Aaron Gustafson",
-    "url": "https://www.aaron-gustafson.com/"
-  },
-  "display": "minimal-ui",
-  "orientation": "any",
-  "theme_color": "#27831B",
-  "background_color": "#fffcf4",
-  "icons": [
-    {
-      "src": "/i/icon.png",
-      "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "maskable"
-    },
-    {
-      "src": "/i/notification-icon.png",
-      "type": "image/png",
-      "sizes": "256x256",
-      "purpose": "monochrome"
-    },
-    {
-      "src": "/i/icon.svg",
-      "type": "image/svg+xml",
-      "sizes": "512x512"
-    },
-    {
-      "src": "/i/og-logo.png",
-      "type": "image/png",
-      "sizes": "800x600"
-    },
-    {
-      "src": "/favicon.png",
-      "type": "image/png",
-      "sizes": "16x16"
-    }
-  ],
-  "scope": "/",
-  "shortcuts": [
-    {
-      "name": "Notebook",
-      "url": "/notebook/",
-      "icons": [
-        {
-          "src": "/i/icons/notebook.svg",
-          "type": "image/svg+xml"
-        },
-        {
-          "src": "/i/icons/notebook.png",
-          "type": "image/png",
-          "sizes": "120x120",
-          "purpose": "monochrome"
-        }
-      ]
-    },
-    {
-      "name": "Speaking",
-      "url": "/speaking-engagements/",
-      "icons": [
-        {
-          "src": "/i/icons/mic.svg",
-          "type": "image/svg+xml"
-        },
-        {
-          "src": "/i/icons/mic.png",
-          "type": "image/png",
-          "sizes": "120x120",
-          "purpose": "monochrome"
-        }
-      ]
-    },
-    {
-      "name": "Publications",
-      "url": "/publications/",
-      "icons": [
-        {
-          "src": "/i/icons/books.svg",
-          "type": "image/svg+xml"
-        },
-        {
-          "src": "/i/icons/books.png",
-          "type": "image/png",
-          "sizes": "120x120",
-          "purpose": "monochrome"
-        }
-      ]
-    },
-    {
-      "name": "Interviews",
-      "url": "/interviews/",
-      "icons": [
-        {
-          "src": "/i/icons/chat.svg",
-          "type": "image/svg+xml"
-        },
-        {
-          "src": "/i/icons/chat.png",
-          "type": "image/png",
-          "sizes": "120x120",
-          "purpose": "monochrome"
-        }
-      ]
-    }
-  ],
-  "permissions": ["persistent-storage", "background-fetch"],
-  "changelog": {
-    "version": "4",
-    "history": [
-      {
-        "url": "https://github.com/aarongustafson/aaron-gustafson.com/commits/main",
-        "type": "text/html"
-      }
-    ]
-  },
-  "policies": {
-    "license": "/#license",
-    "support": "/contact/"
-  },
-  "display_override": ["tabbed", "minimal-ui", "standalone"],
-  "scope_extensions": [{ "origin": "*.aaron-gustafson.com" }],
-  "handle_links": "all",
-  "launch_handler": {
-    "route_to": "existing-client",
-    "navigate_existing_client": "always"
-  },
-  "start_url": "/",
-  "serviceworker": {
-    "src": "/serviceworker.min.js",
-    "scope": "/"
-  },
-  "share_target": {
-    "action": "linky/poo/",
-    "method": "GET",
-    "enctype": "application/x-www-form-urlencoded",
-    "params": {
-      "title": "title",
-      "text": "body",
-      "url": "url"
-    }
-  },
-  "widgets": [
-    {
-      "name": "Latest Posts",
-      "tag": "feed-posts",
-      "template": "feed",
-      "data": "/feeds/latest-posts.json",
-      "type": "application/json",
-      "update": 21600,
-      "actions": [
-        {
-          "action": "refresh",
-          "title": "Refresh"
-        }
-      ],
-      "icons": [
-        {
-          "src": "/i/icons/webicon-rss.svg",
-          "type": "image/svg+xml",
-          "sizes": "48x48"
-        }
-      ],
-      "ms_ac_template": "/w/feed.ac.json"
-    },
-    {
-      "name": "Latest Links",
-      "tag": "feed-links",
-      "template": "feed",
-      "data": "/feeds/latest-links.json",
-      "type": "application/json",
-      "update": 21600,
-      "actions": [
-        {
-          "action": "refresh",
-          "title": "Refresh"
-        }
-      ],
-      "icons": [
-        {
-          "src": "/i/icons/webicon-rss.svg",
-          "type": "image/svg+xml",
-          "sizes": "48x48"
-        }
-      ],
-      "ms_ac_template": "/w/feed.ac.json"
-    }
-  ],
-  "overrides": {
-    "(prefers-color-scheme: dark)": {
-      "background_color": "#5b5b5b",
-      "icons": [
-        { "src": "/i/icon.svg" },
-        { "src": "/i/icon-reverse.png" },
-        { "src": "/i/notification-icon-reverse.png" }
-      ]
-    },
-    "(prefers-language: no)": {
-      "description": "Aaron Gustafsons hjem og arbeid på nettet.",
-      "shortcuts": [
-        { "name": "Notisbok" },
-        { "name": "Snakker" },
-        { "name": "Publikasjoner" },
-        { "name": "Intervjuer" }
-      ]
-    }
-  }
+	"dir": "ltr",
+	"lang": "en-US",
+	"id": "/",
+	"name": "Aaron Gustafson",
+	"short_name": "AaronG",
+	"description": "The online home and work of Aaron Gustafson.",
+	"publisher": {
+		"name": "Aaron Gustafson",
+		"url": "https://www.aaron-gustafson.com/"
+	},
+	"display": "minimal-ui",
+	"orientation": "any",
+	"theme_color": "#27831B",
+	"background_color": "#fffcf4",
+	"icons": [
+		{
+			"src": "/i/icon.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "maskable"
+		},
+		{
+			"src": "/i/notification-icon.png",
+			"type": "image/png",
+			"sizes": "256x256",
+			"purpose": "monochrome"
+		},
+		{
+			"src": "/i/icon.svg",
+			"type": "image/svg+xml",
+			"sizes": "512x512"
+		},
+		{
+			"src": "/i/og-logo.png",
+			"type": "image/png",
+			"sizes": "800x600"
+		},
+		{
+			"src": "/favicon.png",
+			"type": "image/png",
+			"sizes": "16x16"
+		}
+	],
+	"scope": "/",
+	"shortcuts": [
+		{
+			"name": "Notebook",
+			"url": "/notebook/",
+			"icons": [
+				{
+					"src": "/i/icons/notebook.svg",
+					"type": "image/svg+xml"
+				},
+				{
+					"src": "/i/icons/notebook.png",
+					"type": "image/png",
+					"sizes": "120x120",
+					"purpose": "monochrome"
+				}
+			]
+		},
+		{
+			"name": "Speaking",
+			"url": "/speaking-engagements/",
+			"icons": [
+				{
+					"src": "/i/icons/mic.svg",
+					"type": "image/svg+xml"
+				},
+				{
+					"src": "/i/icons/mic.png",
+					"type": "image/png",
+					"sizes": "120x120",
+					"purpose": "monochrome"
+				}
+			]
+		},
+		{
+			"name": "Publications",
+			"url": "/publications/",
+			"icons": [
+				{
+					"src": "/i/icons/books.svg",
+					"type": "image/svg+xml"
+				},
+				{
+					"src": "/i/icons/books.png",
+					"type": "image/png",
+					"sizes": "120x120",
+					"purpose": "monochrome"
+				}
+			]
+		},
+		{
+			"name": "Interviews",
+			"url": "/interviews/",
+			"icons": [
+				{
+					"src": "/i/icons/chat.svg",
+					"type": "image/svg+xml"
+				},
+				{
+					"src": "/i/icons/chat.png",
+					"type": "image/png",
+					"sizes": "120x120",
+					"purpose": "monochrome"
+				}
+			]
+		}
+	],
+	"permissions": ["persistent-storage", "background-fetch"],
+	"changelog": {
+		"version": "4",
+		"history": [
+			{
+				"url": "https://github.com/aarongustafson/aaron-gustafson.com/commits/main",
+				"type": "text/html"
+			}
+		]
+	},
+	"policies": {
+		"license": "/#license",
+		"support": "/contact/"
+	},
+	"display_override": ["tabbed", "minimal-ui", "standalone"],
+	"scope_extensions": [{ "origin": "*.aaron-gustafson.com" }],
+	"handle_links": "all",
+	"launch_handler": {
+		"route_to": "existing-client",
+		"navigate_existing_client": "always"
+	},
+	"start_url": "/",
+	"serviceworker": {
+		"src": "/serviceworker.min.js",
+		"scope": "/"
+	},
+	"share_target": {
+		"action": "linky/poo/",
+		"method": "GET",
+		"enctype": "application/x-www-form-urlencoded",
+		"params": {
+			"title": "title",
+			"text": "body",
+			"url": "url"
+		}
+	},
+	"widgets": [
+		{
+			"name": "Latest Posts",
+			"description": "The latest posts from Aaron Gustafson's blog",
+			"tag": "feed-posts",
+			"template": "feed",
+			"data": "/feeds/latest-posts.json",
+			"type": "application/json",
+			"auth": false,
+			"update": 21600,
+			"actions": [
+				{
+					"action": "refresh",
+					"title": "Refresh"
+				}
+			],
+			"icons": [
+				{
+					"src": "/i/icons/webicon-rss.svg",
+					"type": "image/svg+xml",
+					"sizes": "48x48"
+				}
+			],
+			"screenshots": [
+				{
+					"src": "./i/screenshots/widget-posts.png",
+					"sizes": "600x400",
+					"label": "The latest posts widget"
+				}
+			],
+			"ms_ac_template": "/w/feed.ac.json"
+		},
+		{
+			"name": "Latest Links",
+			"description": "The latest links from Aaron Gustafson's blog",
+			"tag": "feed-links",
+			"template": "feed",
+			"data": "/feeds/latest-links.json",
+			"type": "application/json",
+			"auth": false,
+			"update": 21600,
+			"actions": [
+				{
+					"action": "refresh",
+					"title": "Refresh"
+				}
+			],
+			"icons": [
+				{
+					"src": "/i/icons/webicon-rss.svg",
+					"type": "image/svg+xml",
+					"sizes": "48x48"
+				}
+			],
+			"screenshots": [
+				{
+					"src": "./i/screenshots/widget-links.png",
+					"sizes": "600x400",
+					"label": "The latest links widget"
+				}
+			],
+			"ms_ac_template": "/w/feed.ac.json"
+		}
+	],
+	"overrides": {
+		"(prefers-color-scheme: dark)": {
+			"background_color": "#5b5b5b",
+			"icons": [
+				{ "src": "/i/icon.svg" },
+				{ "src": "/i/icon-reverse.png" },
+				{ "src": "/i/notification-icon-reverse.png" }
+			]
+		},
+		"(prefers-language: no)": {
+			"description": "Aaron Gustafsons hjem og arbeid på nettet.",
+			"shortcuts": [
+				{ "name": "Notisbok" },
+				{ "name": "Snakker" },
+				{ "name": "Publikasjoner" },
+				{ "name": "Intervjuer" }
+			]
+		}
+	}
 }
