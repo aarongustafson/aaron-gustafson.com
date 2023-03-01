@@ -70,7 +70,9 @@ module.exports = config => {
 			}
 		}
 	});
-	config.addPlugin(syntaxHighlight);
+	config.addPlugin(syntaxHighlight, {
+    preAttributes: { tabindex: 0 }
+  });
 	config.addPlugin(readingTime);
 	config.addPlugin(imagesResponsiver, {
 		hero: {
