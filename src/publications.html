@@ -29,7 +29,7 @@ at least {{ citations.code | length }} coding projects I’m aware of, including
         {% set book_cover %}
           {% if book.cover %}
             <figure class="book__cover">
-              ![{{ book.title}} front cover]({{ site.url }}/i/books/{{ book.cover }}){ height=200 width=book.width .book__cover__image }
+              ![{{ book.title}} front cover]({{ site.url }}/i/books/{{ book.cover }}){ height=200 width={{ book.width }} .book__cover__image }
             </figure>
           {% endif %}
         {% endset %}

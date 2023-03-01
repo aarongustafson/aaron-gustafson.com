@@ -18,7 +18,10 @@
 		<link rel="manifest" href="/manifest.json">
 
 		<link rel="stylesheet" href="/c/default{% if site.minify %}.min{% endif %}.css" media="all">
-		<link rel="stylesheet" href="/c/advanced{% if site.minify %}.min{% endif %}.css" media="only screen">
+		<link rel="preload" href="/c/advanced{% if site.minify %}.min{% endif %}.css" as="style" media="only screen" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="/c/advanced{% if site.minify %}.min{% endif %}.css" media="only screen">
+		</noscript>
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="theme-color" content="#27831B">
@@ -30,6 +33,7 @@
 			<link href="{{ feed.json }}" rel="alternate" title="{{ feed.title }}{{ site.title }}" type="application/json">
 		{% endfor %}
 		
+		<link rel="preload" as="script" src="/j/main{% if site.minify %}.min{% endif %}.js">
 		{% for script in page.javascripts.head %}
 			<script src="/j/{{ script }}{% if site.minify %}.min{% endif %}.js" async></script>
 		{% endfor %}
