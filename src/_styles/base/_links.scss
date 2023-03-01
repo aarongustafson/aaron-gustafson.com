@@ -21,7 +21,7 @@ Links
 			
 			cursor: pointer;
 			
-			transition: text-decoration-color $default-transition, color $default-transition;
+			transition: text-decoration-color $default-transition, color $default-transition, background-color $default-transition;
 
 			@media (prefers-color-scheme: dark) {
 				color: $color-link-dark;
@@ -48,8 +48,24 @@ Links
 			leading-trim: both;
 			line-height: 2;
 			padding: 3px 7px;
+			text-decoration: none;
 			text-edge: text;
 			white-space: nowrap;
+
+			&:hover,
+			&:focus {
+				background-color: $color-link;
+			}
+
+			@media (prefers-color-scheme: dark) {
+				background-color: $color-link-dark-hover;
+
+				&:hover,
+				&:focus {
+					background-color: $color-link-dark;
+				}
+			}
+
 		}
 		
 		// don’t wrap phone #s or emails
