@@ -20,12 +20,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  
   * {
     scrollbar-color: $color-black transparent;
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: $color-black;
   }
 }
