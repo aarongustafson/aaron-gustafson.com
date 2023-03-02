@@ -68,7 +68,7 @@
 
       width: 80vw;
   
-      @media (prefers-color-scheme: dark) {
+      html.dark-mode & {
         background: rgba( $color-background-dark, .9 );
       }
 

@@ -33,29 +33,29 @@ Body-level settings
   html {
     //@include baseline-guide;
     height: 100%;
-    
-    body {
-      @include breakup-placeholder( text );
-      @include breakup-placeholder( font-smoothing );
-      
-      background: $color-background;
-      color: $color-text;
-      
-      font-family: $font-stack-body;
-      font-weight: $font-weight-sansserif;
-      
-      margin: 0 auto;
-      //@include rem( max-width, 960 );
-      height: 100%;
-    
-      word-wrap: break-word;
-      overflow-wrap: break-word;
+	}
+	
+	body {
+		@include breakup-placeholder( text );
+		@include breakup-placeholder( font-smoothing );
+		
+		background: $color-background;
+		color: $color-text;
+		
+		font-family: $font-stack-body;
+		font-weight: $font-weight-sansserif;
+		
+		margin: 0 auto;
+		//@include rem( max-width, 960 );
+		height: 100%;
+	
+		word-wrap: break-word;
+		overflow-wrap: break-word;
 
-      @media (prefers-color-scheme: dark) {
-        background: $color-background-dark;
-        color: $color-text-dark;
-      }
-    }
-    
-  }  
+		html.dark-mode & {
+			background: $color-background-dark;
+			color: $color-text-dark;
+		}
+	}
+
 }

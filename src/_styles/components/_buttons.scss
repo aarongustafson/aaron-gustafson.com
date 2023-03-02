@@ -5,14 +5,16 @@ Buttons
 @include breakup-breakpoint( "global" ) {
 	
 	button,
-	.button {
+	.button,
+	.button:link,
+	.button:visited {
 		
 		cursor: pointer;
 		user-select: none;
 		
 		background: $color-dark-teal;
 		color: $color-white;
-		text-shadow: none;
+		text-decoration: none;
 		
 		border: 1px solid $color-text;
 		border-radius: 3px;
@@ -33,7 +35,7 @@ Buttons
 			cursor: default;
 		}
 
-		@media (prefers-color-scheme: dark) {
+		html.dark-mode & {
 			background-color: $color-link-dark-hover;
 			color: $color-background-dark;
 

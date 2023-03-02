@@ -19,8 +19,6 @@
   border: 0px solid transparent;
 }
 
-@media (prefers-color-scheme: dark) {
-  * {
-    scrollbar-color: $color-black transparent;
-  }
+html.dark-mode * {
+  scrollbar-color: $color-black transparent;
 }

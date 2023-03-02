@@ -36,7 +36,7 @@
 					outline: 3px double $color-black;
 					overflow-x: scroll;
 
-					@media (prefers-color-scheme: dark) {
+					html.dark-mode & {
 						outline-color: $color-off-white;
 					}
 				}

@@ -36,7 +36,7 @@ Navigation
       background-color: $color-link-hover;
       color: $color-white;
 
-      @media (prefers-color-scheme: dark) {
+      html.dark-mode & {
         background-color: $color-dark-teal;
         color: $color-white;
       }
@@ -98,10 +98,15 @@ Navigation
       color: inherit;
     }
 
-    @media (prefers-color-scheme: dark) {
+    html.dark-mode & {
       background: $color-teal;
       color: $color-background-dark;
-
+			
+			a:link,
+    	a:visited {
+				color: $color-background-dark;
+			}
+			
       a:hover,
       a:focus,
       a:active,

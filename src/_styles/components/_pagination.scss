@@ -16,21 +16,6 @@
       @include rem( margin, 0 $default-spacing );
     }
 
-    #aaron-gustafson_com & a {
-      background: $color-text-light;
-      color: $color-white;
-      text-shadow: none;
-
-      border: 1px solid $color-text;
-      border-radius: 3px;
-      @include rem( padding, 0 5 );
-
-      &:hover,
-      &:focus {
-        background: $color-green-dark;
-      }
-    }
-
   }
 
 }

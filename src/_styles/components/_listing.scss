@@ -21,7 +21,7 @@
         @include breakup-placeholder( small-caps );
         @include rem( margin, 2 0 0 );
 
-        @media (prefers-color-scheme: dark) {
+        html.dark-mode & {
           color: $color-text-dark-light;
         }
       }

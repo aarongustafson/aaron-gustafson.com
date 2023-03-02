@@ -1,0 +1,26 @@
+#theme-switcher {
+	position: fixed;
+	top: 5px;
+	right: 5px;
+	line-height: .5;
+	padding: 8px;
+	border: 1px solid $color-white;
+
+	html.dark-mode & {
+		border-color: transparent;
+	}
+
+	svg {
+		width: 20px;
+		height: 20px;
+	}
+
+	path {
+		fill: $color-white;
+
+		html.dark-mode & {
+			fill: $color-black;
+		}
+	}
+	
+}

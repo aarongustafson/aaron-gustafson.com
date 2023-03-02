@@ -75,7 +75,7 @@
 						text-align: right;
 						text-align: end;
 
-            @media (prefers-color-scheme: dark) {
+            html.dark-mode & {
               color: $color-grey-light;
             }
         }

@@ -23,7 +23,7 @@ Links
 			
 			transition: text-decoration-color $default-transition, color $default-transition, background-color $default-transition;
 
-			@media (prefers-color-scheme: dark) {
+			html.dark-mode & {
 				color: $color-link-dark;
 				text-decoration-color: rgba( $color-link-dark, .25 );
 			}
@@ -35,7 +35,7 @@ Links
 			color: $color-link-hover;
 			text-decoration-color: $color-link-hover;
 
-			@media (prefers-color-scheme: dark) {
+			html.dark-mode & {
 				color: $color-link-dark-hover;
 				text-decoration-color: rgba( $color-link-dark-hover, .25 );
 			}
@@ -57,7 +57,7 @@ Links
 				background-color: $color-link;
 			}
 
-			@media (prefers-color-scheme: dark) {
+			html.dark-mode & {
 				background-color: $color-link-dark-hover;
 				color: $color-background-dark;
 

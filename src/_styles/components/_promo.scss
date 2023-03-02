@@ -16,7 +16,7 @@ $promo-background-color: lighten( #7FB843, 45% );
       @include rem( margin, ( $default-spacing * 2 ) -19 );
       @include rem( padding, $default-spacing );
 
-      @media (prefers-color-scheme: dark) {
+      html.dark-mode & {
         background: $color-green-dark;
         border-color: darken( $color-green-dark, 5% );
       }
@@ -25,7 +25,7 @@ $promo-background-color: lighten( #7FB843, 45% );
       a:visited {
         color: #14440E;
 
-				@media (prefers-color-scheme: dark) {
+				html.dark-mode & {
 					color: $color-green-light;
 				}
       }

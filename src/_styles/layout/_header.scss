@@ -1,81 +1,81 @@
 /*------------------------------------*\
-    Header
+		Header
 \*------------------------------------*/
 
 @use 'sass:math';
 
 @include breakup-breakpoint( "global" ) {
 
-    .banner {
+		.banner {
 
-        text-align: center;
-        margin: 0;
+			text-align: center;
+			margin: 0;
 
-        * + * {
-            margin: 0;
-        }
+			* + * {
+					margin: 0;
+			}
 
-        .layout-container {
-            max-width: 100%;
-            padding: 0;
-        }
+			.layout-container {
+				max-width: 100%;
+				padding: 0;
+			}
 
-    }
+			.site-title {
 
-    .site-title {
+				font-family: $font-stack-body;
+				font-weight: normal;
+				letter-spacing: 0.1em;
+				word-spacing: 0.25em;
+				text-transform: uppercase;
+				
+				a {
+					background: $color-grey;
+					color: $color-grey-light;
+					
+					border: 0;
+					@include rem( padding, 8 $default-spacing );
+					display: block;
+					
+					&:hover,
+					&:focus {
+						background: $color-green;
+						color: $color-white;
+					}
+				}
+			}
 
-        font-family: $font-stack-body;
-        font-weight: normal;
-        letter-spacing: 0.1em;
-        word-spacing: 0.25em;
-        text-transform: uppercase;
-        
-        a {
-            background: $color-grey;
-            color: $color-grey-light;
-            
-            border: 0;
-            @include rem( padding, 8 $default-spacing );
-            display: block;
-            
-            &:hover,
-            &:focus {
-                background: $color-green;
-                color: $color-white;
-            }
-        }
-    }
+		}
 
-    .alert {
+		.alert {
 
-        background: $color-black;
-        color: $color-white;
-    
-        @include rem( margin, $margin-default );
-        @include rem( padding, 7 5 );
-        text-align: center;
-    
-        a {
-            text-decoration-color: inherit;
-            color: inherit;
-        }
-        strong {
-            font-weight: normal;
-        }
+				background: $color-black;
+				color: $color-white;
+		
+				@include rem( margin, $margin-default );
+				@include rem( padding, 7 5 );
+				text-align: center;
+		
+				a {
+						text-decoration-color: inherit;
+						color: inherit;
+				}
+				strong {
+						font-weight: normal;
+				}
 
-        & + header {
-            margin-top: 0;
+				& + header {
+						margin-top: 0;
 
-            .site-title,
-            .site-subtitle {
-                @include rem( margin-bottom, math.div( $default-spacing, 2 ) );
-            }
-        }
-    }
+						.site-title,
+						.site-subtitle {
+								@include rem( margin-bottom, math.div( $default-spacing, 2 ) );
+						}
+				}
+		}
 
-    // better underlines
-    .site-title a {
-      text-decoration: none;
-    }
+		// better underlines
+		.site-title a {
+			text-decoration: none;
+		}
 
 }

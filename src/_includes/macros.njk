@@ -294,11 +294,11 @@
 
 {% macro paginate( what, pagination ) %}
   <nav class="pagination" aria-label="Pages">
-    {% if pagination.previousPageHref %}<a href="{{ pagination.previousPageHref }}" class="prev" rel="prev">← Previous<b class="hidden"> {{ what }}</b></a>{% endif %}
+    {% if pagination.previousPageHref %}<a href="{{ pagination.previousPageHref }}" class="prev button" rel="prev">← Previous<b class="hidden"> {{ what }}</b></a>{% endif %}
     <span class="pagination__pages">{{ what }}
       <span class="pagination__pages__current">{{ pagination.pageNumber + 1 }}</span>&nbsp;of&nbsp;<span class="pagination__pages__total">{{ pagination.hrefs.length }}</span>
     </span>
-    {% if pagination.nextPageHref %}<a href="{{ pagination.nextPageHref }}" class="next" rel="next">Next<b class="hidden"> {{ what }}</b> →</a>{% endif %}
+    {% if pagination.nextPageHref %}<a href="{{ pagination.nextPageHref }}" class="next button" rel="next">Next<b class="hidden"> {{ what }}</b> →</a>{% endif %}
   </nav>
 {% endmacro %}
 

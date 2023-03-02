@@ -13,7 +13,7 @@ Blog Entry
 			color: $color-grey;
 			padding: 0;
 
-			@media (prefers-color-scheme: dark) {
+			html.dark-mode & {
 				color: $color-grey-light;
 			}
 
