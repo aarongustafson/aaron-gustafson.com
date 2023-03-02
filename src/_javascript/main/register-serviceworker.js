@@ -2,7 +2,7 @@
   // Register the service worker
   if ( "serviceWorker" in navigator )
   {
-    window.sw_version = "v16:";
+    window.sw_version = "v17:";
 
     window.addEventListener('load', function() {
       navigator.serviceWorker.register( "/serviceworker.js" );
