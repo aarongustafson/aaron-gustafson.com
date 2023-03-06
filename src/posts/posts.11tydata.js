@@ -55,7 +55,8 @@ function tagsToColor( tags )
 
 module.exports = {
 	layout: "layouts/post.html",
-	eleventyComputed: {
+	body_class: "post",
+  eleventyComputed: {
 		eleventyExcludeFromCollections: data => showPost(data) ? false : true,
 		permalink: data => showPost(data) ? `/notebook/${ data.page.fileSlug }/` : false,
 		excerpt: (data) => {

@@ -330,6 +330,22 @@
   </lite-youtube>
 {% endmacro %}
 
+{% macro social_links( profile_set ) %}
+	{% if profile_set %}
+  	<ul class="social-links">
+			{% for profile in profile_set %}
+				{% set profile_slug = profile.site | replace(".","") | slugify %}
+				<li class="social-links__item">
+					<a class="social-link social-link--{{ profile_slug }}" href="{{ profile.url }}">
+						{{ social_icon( profile_slug ) | replace('<svg ','<svg class="social-link__icon" ') | safe }}
+						<b class="social-link__text">{{ profile.title }}</b>
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+	{% endif %}
+{% endmacro %}
+
 {% macro social_icon( slug ) %}
   {{ ( "/src/static/i/icons/" + slug + ".svg" ) | svgContents | safe }}
 {% endmacro %}

@@ -1,19 +1,21 @@
 [
   {
-    "site": "Twitter",
-    "username": "@AaronGustafson",
-    "url": "https://twitter.com/aarongustafson",
-    "title": "Follow on Twitter",
-    "category": "profile",
-    "active": true
-  },
-  {
     "site": "Mastodon",
     "username": "@Aaron",
     "url": "https://front-end.social/@Aaron",
     "title": "Follow on Mastodon",
     "category": "profile",
-    "active": true
+    "active": true,
+		"promote": true
+  },
+  {
+    "site": "Twitter",
+    "username": "@AaronGustafson",
+    "url": "https://twitter.com/aarongustafson",
+    "title": "Follow on Twitter",
+    "category": "profile",
+    "active": true,
+		"promote": true
   },
   {
     "site": "GitHub",
@@ -28,7 +30,8 @@
     "url": "https://www.linkedin.com/in/aarongustafson",
     "title": "View my profile on LinkedIn",
     "category": "profile",
-    "active": true
+    "active": true,
+		"promote": true
   },
   {
     "site": "Polywork",
@@ -49,7 +52,8 @@
     "url": "https://noti.st/aarongustafson",
     "title": "See where I’ve been &amp; where I’m going next on Notist",
     "category": "speaking",
-    "active": true
+    "active": true,
+		"promote": true
   },
   {
     "site": "Facebook",

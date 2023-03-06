@@ -1,0 +1,6 @@
+{% from "macros.njk" import social_links %}
+
+<aside id="follow" class="promo">
+	<p>For more content like this, follow me on</p>
+	{{ social_links( profiles | selectattr("promote") ) | safe }}
+</aside>

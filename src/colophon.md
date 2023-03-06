@@ -26,6 +26,7 @@ Many icons used on the site are from [the Noun Project](https://thenounproject.c
 * ["Keynote" by romzicon](https://thenounproject.com/term/keynote/195243/)
 * ["Notebook" by Xela Ub](https://thenounproject.com/term/notebook/176860)
 * ["Pin" by alix](https://thenounproject.com/term/pin/4256408/)
+* ["Share" by Brickclay](https://thenounproject.com/term/share/4560615/)
 
 The full source of this site is [available on Github]({{ site.repo_url }}).
 

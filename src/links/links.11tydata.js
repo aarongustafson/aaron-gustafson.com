@@ -162,6 +162,7 @@ function archived(data) {
 module.exports = {
   layout: "layouts/link.html",
   permalink: "/notebook/{{ page.filePathStem }}/",
+	body_class: "link",
   eleventyComputed: {
     is_404: (data) => {
       return is404ing(data.ref_url);

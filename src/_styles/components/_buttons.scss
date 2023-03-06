@@ -30,14 +30,31 @@ Buttons
 			background: darken( $color-dark-teal, 10 );
 		}
 
+		svg {
+			display: inline-block;
+			height: 1em;
+			margin-left: .15em;
+			fill: $color-white;
+		}
+
 		&[disabled] {
-			background: $color-text-light;
+			background: $color-grey-light;
+			border-color: darken( $color-grey-light, 30 );
+			color: darken( $color-grey-light, 30 );
 			cursor: default;
+
+			svg {
+				fill: darken( $color-grey-light, 30 );
+			}
 		}
 
 		html.dark-mode & {
 			background-color: $color-link-dark-hover;
 			color: $color-background-dark;
+
+			svg {
+				fill: $color-background-dark;
+			}
 
 			&:hover,
 			&:focus {

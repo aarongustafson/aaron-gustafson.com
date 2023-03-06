@@ -42,11 +42,11 @@ Blog Entry
 			margin: 0;
 		}
 		
-		&__content aside,
+		/*&__content aside,
 		&__footer {
 			border-top: 1px solid $color-rule;
 			@include rem( padding-top, $default-spacing );
-		}
+		}*/
 
 		&__footer hr {
 			display: none;
@@ -71,10 +71,6 @@ Blog Entry
 			hr {
 				@include rem( max-width, 220 );
 			}
-		}
-
-		&__sharing {
-			text-align: center;
 		}
 
 		&__related &:first-of-type {
@@ -104,6 +100,7 @@ Blog Entry
 			& > .entry__meta {
 				order: 2;
 				border-top: 1px solid $color-rule;
+				@include rem( margin-top, $default-spacing );
 				@include rem( padding-top, $default-spacing );
 			}
 			& > * {
@@ -143,6 +140,10 @@ Blog Entry
 				margin-top: 0;
 				
 				position: absolute;
+
+				.entry__related & {
+					position: static;
+				}
 			}
 		}
 		
@@ -186,6 +187,18 @@ Blog Entry
 				
 				position: absolute;
 				left: 106%;
+			}
+
+		}
+
+		&--page > .entry__meta {
+			margin-top: 0;
+			top: 0;
+			bottom: 0;
+
+			dl {
+				position: sticky;
+				top: 5px;
 			}
 		}
 		

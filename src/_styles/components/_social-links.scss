@@ -1,169 +1,168 @@
 /*------------------------------------*\
-    Share Links
+		Share Links
 \*------------------------------------*/
 
 @use 'sass:math';
 
 $social-buttons: (
-  facebook: (
-    color: #306199,
-    size: 20,
-    offset: 4
-  ),
-  linkedin: (
-    color: #007bb6,
-    size: 21,
-    offset: 3
-  ),
-  pinterest: (
-    color: #b81621,
-    size: 24,
-    offset: 1
-  ),
-  twitter: (
-    color: #26c4f1,
-    size: 20,
-    offset: 4
-  ),
-  hacker-news: (
-    color: #f60,
-    size: 23,
-    offset: 2
-  ),
-  notist: (
-    color: #000,
-    size: 20,
-    offset: 4
-  ),
-  discogs: (
-    color: #333,
-    size: 20,
-    offset: 4
-  ),
-  github: (
-    color: #24292f,
-    size: 20,
-    offset: 3
-  ),
-  instagram: (
-    color: #FA383E,
-    size: 20,
-    offset: 4
-  ),
-  mastodon: (
-    color: #5C4EE4,
-    size: 20,
-    offset: 4
-  ),
-  lastfm: (
-    color: #b90000,
-    size: 20,
-    offset: 4
-  ),
-  youtube: (
-    color: #FE0002,
-    size: 20,
-    offset: 4
-  ),
-  bandcamp: (
-    color: #1DA0C3,
-    size: 20,
-    offset: 4
-  ),
-  polywork: (
-    color: #2F1193,
-    size: 20,
-    offset: 4
-  ),
+	facebook: (
+		color: #306199,
+		size: 21,
+		offset: 3
+	),
+	linkedin: (
+		color: #007bb6,
+		size: 22,
+		offset: 3
+	),
+	pinterest: (
+		color: #b81621,
+		size: 22,
+		offset: 2
+	),
+	twitter: (
+		color: #26c4f1,
+		size: 21,
+		offset: 4
+	),
+	hacker-news: (
+		color: #f60,
+		size: 23,
+		offset: 2
+	),
+	notist: (
+		color: #000,
+		size: 20,
+		offset: 4
+	),
+	discogs: (
+		color: #333,
+		size: 20,
+		offset: 4
+	),
+	github: (
+		color: #24292f,
+		size: 20,
+		offset: 3
+	),
+	instagram: (
+		color: #FA383E,
+		size: 20,
+		offset: 4
+	),
+	mastodon: (
+		color: #5C4EE4,
+		size: 20,
+		offset: 4
+	),
+	lastfm: (
+		color: #b90000,
+		size: 20,
+		offset: 4
+	),
+	youtube: (
+		color: #FE0002,
+		size: 20,
+		offset: 4
+	),
+	bandcamp: (
+		color: #1DA0C3,
+		size: 20,
+		offset: 4
+	),
+	polywork: (
+		color: #2F1193,
+		size: 20,
+		offset: 4
+	),
 );
 
 @include breakup-breakpoint( "global" ) {
 
-  .social-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: .5rem 0 0;
-    padding: 0;
-    list-style: none;
-    gap: .5rem;
-    
-    &__item {
-      margin: 0;
-    }
-  }
+	.social-links {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: .5rem 0 0;
+		padding: 0;
+		list-style: none;
+		gap: .5rem;
+		
+		&--share {
+			justify-content: flex-start;
+			gap: 0;
+		}
 
-  .social-link {
+		&__item {
+			margin: 0;
+		}
+	}
 
-        background: $color-green;
-    @include rem( border-radius, 6 );
+	.social-link {
 
-    display: inline-block;
-    margin: 0 .25em;
-    @include rem( margin-top, math.div( $default-spacing, 2 ) );
-    padding: 4px 8px;
+		background: $color-green;
+		@include rem( border-radius, 6 );
 
-    &:link,
-    &:visited,
-    &:hover,
-    &:focus,
-    &:active {
-    color: $color-white;
-    }
+		display: inline-block;
+		margin: 0 .25em;
+		@include rem( margin-top, math.div( $default-spacing, 2 ) );
+		padding: 4px 8px;
 
-    @each $site, $config in $social-buttons {
-      
-      &--#{$site} {
+		&:link,
+		&:visited,
+		&:hover,
+		&:focus,
+		&:active {
+		color: $color-white;
+		}
 
-            background: map-get( $config, 'color' );
-            transition: background .5s;
+		@each $site, $config in $social-buttons {
+			
+			&--#{$site} {
 
-            &:hover,
-            &:focus,
-            &:active {
-              background: darken( map-get( $config, 'color' ), 20% );
-            }
+				background: map-get( $config, 'color' );
+				transition: background .5s;
 
-          }
+				&:hover,
+				&:focus,
+				&:active {
+					background: darken( map-get( $config, 'color' ), 20% );
+				}
 
-          &--#{$site} &__icon {
-            @include rem( width, map-get( $config, 'size' ) );
-            @include rem( height, map-get( $config, 'size' ) );
-            @include rem( margin-top, map-get( $config, 'offset' ) );
-          }
+			}
 
-    }
+			&--#{$site} &__icon {
+				@include rem( width, map-get( $config, 'size' ) );
+				@include rem( height, map-get( $config, 'size' ) );
+				@include rem( margin-top, map-get( $config, 'offset' ) );
+			}
 
-    &__icon  {
+		}
 
-      vertical-align: top;
-      display: inline-block;
+		.entry__meta & {
+			display: inline-block;
+			height: 80%;
+			margin: 0;
+			padding: 4px 6px;
+			transform: scale(.75);
+		}
 
-      path,
-      circle {
-        fill: $color-white;
-      }
+		&__icon  {
 
-    }
+			vertical-align: top;
+			display: inline-block;
 
-    &__text {
-        @include breakup-placeholder( hidden );
-    }
+			path,
+			circle {
+				fill: $color-white;
+			}
 
-    }
+		}
 
-    // better underlines
-  .social-link:link,
-  .social-link:visited,
-  .social-link:hover,
-  .social-link:focus,
-  .social-link:active,
-  html.wf-active .social-link:link,
-  html.wf-active .social-link:visited,
-  html.wf-active .social-link:hover,
-  html.wf-active .social-link:focus,
-  html.wf-active .social-link:active {
-    @include no-underline;
-  }
+		&__text {
+				@include breakup-placeholder( hidden );
+		}
+
+	}
 
 }

@@ -1,73 +1,71 @@
 /*------------------------------------*\
-    Listing
+		Listing
 \*------------------------------------*/
 
 @include breakup-breakpoint( "global" ) {
 
-  .media-controls {
+	.media-controls {
 
-    p {
-      @include rem( margin-top, 6 );
-    }
+		p {
+			@include rem( margin-top, 6 );
+		}
 
-    &__buttons,
-    &__speed {
-      display: flex;
-    }
+		&__buttons,
+		&__speed {
+			display: flex;
+		}
 
-    &__button {
+		&__button {
 
-      background: $color-grey-light;
-      border-color: inherit;
-      color: $color-black;
-      cursor: pointer;
-      margin: 0 .25em 0 0;
-      
-      &:hover,
-      &:active,
-      &:focus {
-        color: $color-white;
-      }
+			border-color: inherit;
+			cursor: pointer;
+			margin: 0 .25em 0 0;
+			
+			&:hover,
+			&:active,
+			&:focus {
+				color: $color-white;
+			}
 
-      &:disabled,
-      &:disabled:hover,
-      &:disabled:active {
-        background: $color-grey-light;
-        color: $color-grey;
-        cursor: not-allowed;
-      }
+			&:disabled,
+			&:disabled:hover,
+			&:disabled:active {
+				background: $color-grey-light;
+				color: $color-grey;
+				cursor: not-allowed;
+			}
 
-      &:before {
-          content: '';
-          display: block;
-        flex-shrink: 0;
-      }
+			&:before {
+				content: '';
+				display: block;
+				flex-shrink: 0;
+			}
 
-      &--play:before {
-        width: 0;
-          border: .5em solid transparent;
-          border-left: .75em solid;
-        border-right: 0;
-      }
+			&--play:before {
+				width: 0;
+				border: .5em solid transparent;
+				border-left: .75em solid;
+				border-right: 0;
+			}
 
-      &--pause:before {
-        width: 2px;
-        border: 2px solid;
-        height: 0.9em;
-        line-height: 0;
-        border-top-width: 0;
-        border-bottom-width: 0;
-      }
+			&--pause:before {
+				width: 2px;
+				border: 2px solid;
+				height: 0.9em;
+				line-height: 0;
+				border-top-width: 0;
+				border-bottom-width: 0;
+			}
 
-      }
+			}
 
-    &__speed input {
-      width: auto;
-        margin: 0 0 0 .5em;
-    }
+		&__speed input {
+			width: auto;
+			margin: 0 0 0 .5em;
+		}
 
-  }
+	}
 
-    
+		
 }
 

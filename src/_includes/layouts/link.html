@@ -9,17 +9,19 @@ is_post: true
   {% set this_url = site.url + page.url %}
 
   <div class="layout-container layout-container--blog">
-    <main role="article" class="layout-container__primary h-entry">
-      <div class="entry entry--page{% if og_image %} entry--with-hero{% endif %}">
-        <header class="entry__header">
-          <h1 class="entry__title p-name">
-            <a rel="external"
-              class="u-bookmark-of h-cite" 
-              href="{{ page.ref_url }}"
-              {% if hreflang %} hreflang="{{ hreflang }}"{% endif %}
-              >{{ title | widont | markdownify | strip_links | safe }}</a>
-          </h1>
-          <dl class="entry__meta">
+    <article role="article" class="layout-container__primary h-entry">
+      <header class="entry__header">
+				<h1 class="entry__title p-name">
+					<a rel="external"
+						class="u-bookmark-of h-cite" 
+						href="{{ page.ref_url }}"
+						{% if hreflang %} hreflang="{{ hreflang }}"{% endif %}
+						>{{ title | widont | markdownify | strip_links | safe }}</a>
+				</h1>
+			</header>
+			<div class="entry entry--page{% if og_image %} entry--with-hero{% endif %}">
+				<div class="entry__meta">
+          <dl>
             <dt>Published by</dt>
             <dd>{{ ref_source }}</dd>
 
@@ -30,7 +32,7 @@ is_post: true
             <dd class="hidden"><a class="p-author h-card" href="/about">Aaron Gustafson</a></dd>
             
             {% if via %}
-              <dt><abbr title="via">↬</abbr></dt>
+              <dt>Discovered <abbr title="via" aria-label="via">↬</abbr></dt>
               <dd><a href="{{ via.url }}">{{ via.name }}</a></dd>
             {% endif %}
 
@@ -38,8 +40,13 @@ is_post: true
               <dt class="dont-read">Filed Under</dt>
               <dd class="dont-read">{{ tag_list( tags ) }}</dd>
             {% endif %}
+
+						<dt class="dont-read">Like this?</dt>
+						<dd class="dont-read">
+							{% include "partials/post/sharing.html" %}
+						</dd>
           </dl>
-        </header>
+        </div>
 
         <div class="entry__content e-content">
           {% if og_image %}
@@ -62,8 +69,6 @@ is_post: true
                 href="{{ ref_url }}">Read on {{ ref_source }}</a>
             </p>
           {% endif %}
-
-          {% include "partials/post/sharing.html" %}
         </footer>
 
       </div>
@@ -72,6 +77,6 @@ is_post: true
   </div>
 
   <script type="application/ld+json">
-    {#{% include "partials/post/jsonld.html %}#}
+    {% include "partials/post/jsonld.html" %}
   </script>
 {% endblock %}

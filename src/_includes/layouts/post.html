@@ -18,10 +18,10 @@ is_post: true
 
 	<div class="layout-container layout-container--blog">
 		<article role="article" class="layout-container__primary h-entry">
+			<header class="entry__header">
+				{{ heading | safe }}
+			</header>
 			<div class="entry entry--page">
-				<header class="entry__header">
-					{{ heading | safe }}
-				</header>
 
 				<div class="entry__meta">
 					{% if reply_to_url %}
@@ -77,6 +77,12 @@ is_post: true
 								<dd class="dont-read"><a class="u-syndication" hreflang="{{ lang }}" href="{{ link }}">{{ langs[lang] }}</a></dd>
 							{% endfor %}
 						{% endif %}
+
+						<dt class="dont-read">Like this?</dt>
+						<dd class="dont-read">
+							{% include "partials/post/sharing.html" %}
+						</dd>
+
 					</dl>
 				</div>
 
@@ -93,9 +99,9 @@ is_post: true
 				</div>
 
 				<footer class="entry__footer">
-					<hr/>
-
 					{% if thanks %}
+						<hr>
+
 						<p>Many thanks to
 						{% for person, url in thanks %}
 							{% set link %}{%- if url %}<a href="{{ url }}">{{ person }}</a>{% else %}{{ person }}{% endif -%}{% endset %}
@@ -107,14 +113,14 @@ is_post: true
 								{{ link | safe }},
 							{% endif %}
 						{% endfor %}
-						for helping me with the development of this piece.
+						for helping me with the development of this piece.</p>
 					{% endif %}
 
-					<hr/>
+					<hr>
 
-					{% include "partials/post/sharing.html" %}
+					{% include "partials/post/follow.html" %}
 					
-					<hr/>
+					<hr>
 					
 					{% if tags.length > 0 %}
 						{% set related = collections.feedAll | related( this_url, tags[0] ) | limit(3) %}
@@ -129,7 +135,7 @@ is_post: true
 						{% endif %}
 					{% endif %}
 
-					<hr/>
+					<hr>
 
 				</footer>
 
@@ -137,6 +143,7 @@ is_post: true
 				{% include "partials/global/promo.html" %}
 				
 				{% include "partials/post/webmentions.html" %}
+
 				{% include "partials/post/comments.html" %}
 
 			</div>
