@@ -2,111 +2,112 @@
 Block-level Semantics
 \*------------------------------------*/
 @include breakup-breakpoint( "global" ) {
-  
-  * {
-    @include rem( margin-top, 0 );
-    @include rem( margin-bottom, 0 );
-  }
-  
-  * + * {
-    @include rem( margin-top, $default-spacing );
-  }
-  
-  noscript {
-    display: none;
-  }
+	
+	* {
+		@include rem( margin-top, 0 );
+		@include rem( margin-bottom, 0 );
+	}
+	
+	* + * {
+		@include rem( margin-top, $default-spacing );
+	}
+	
+	noscript {
+		display: none;
+	}
 
-  p:empty {
-    display: none;
-  }
-  
-  blockquote {
-    
-    @include rem( font-size, $font-size-body );
-    font-family: $font-stack-serif;
-    font-style: italic; 
-    
-    hyphens: none;
+	p:empty {
+		display: none;
+	}
+	
+	blockquote {
+		
+		@include rem( font-size, $font-size-body );
+		font-family: $font-stack-serif;
+		font-style: italic; 
+		
+		hanging-punctuation: first;
+		hyphens: none;
 
-    margin-left: auto;
-    margin-right: auto;
-    @include rem( padding, 0 $default-spacing );
-    @include rem( max-width, 700 );
-    
-  }
-  
-  .blockquote__attribution {
-    
-    font-family: $font-stack-sansserif;
-    
-    margin: 0;
-    @include rem( padding-left, 2 * $default-spacing );
-    
-    cite {
-      font-style: normal;
-    }
-    
-  }
-  
-  p {
-    font-weight: normal;
-    /*hyphens: auto;*/
-    line-height: $line-height-default;
-    
-    .wf-active & {
-      word-spacing: 2px;
-    }
-  }
-  
-  [aria-hidden="true"] {
-    display: none;
-  }
-  
-  hr {
-    border: 0;
-    border-top: 1px solid $color-rule;
-    
-    height: 0;
-    @include rem( margin, $default-spacing auto );
-  }
-  
-  section + section {
-    @include rem( margin-top, $default-spacing * 2 );
-  }
-  
+		margin-left: auto;
+		margin-right: auto;
+		@include rem( padding, 0 $default-spacing );
+		@include rem( max-width, 700 );
+		
+	}
+	
+	.blockquote__attribution {
+		
+		font-family: $font-stack-sansserif;
+		
+		margin: 0;
+		@include rem( padding-left, 2 * $default-spacing );
+		
+		cite {
+			font-style: normal;
+		}
+		
+	}
+	
+	p {
+		font-weight: normal;
+		/*hyphens: auto;*/
+		line-height: $line-height-default;
+		
+		.wf-active & {
+			word-spacing: 2px;
+		}
+	}
+	
+	[aria-hidden="true"] {
+		display: none;
+	}
+	
+	hr {
+		border: 0;
+		border-top: 1px solid $color-rule;
+		
+		height: 0;
+		@include rem( margin, $default-spacing auto );
+	}
+	
+	section + section {
+		@include rem( margin-top, $default-spacing * 2 );
+	}
+	
 }
 
 dialog::backdrop {
-  background: rgba( $color-black, .4 );
+	background: rgba( $color-black, .4 );
 }
 /* polyfill */
 dialog + .backdrop {
-  background: rgba( $color-black, .4 );
+	background: rgba( $color-black, .4 );
 }
 
 @include breakup-breakpoint( "medium" ) {
-  blockquote,
-  dl {
-    @include rem( padding, 0 $default-spacing );
-  }
+	blockquote,
+	dl {
+		@include rem( padding, 0 $default-spacing );
+	}
 }
 
 @include breakup-breakpoint( "full" ) {
-  blockquote,
-  dl {
-    @include rem( padding, 0 ( 3 * $default-spacing ) );
-  }
+	blockquote,
+	dl {
+		@include rem( padding, 0 ( 3 * $default-spacing ) );
+	}
 }
 
 @include breakup-breakpoint( "print" ) {
-  p, ol, ol, dl {
-    hyphens: auto;
-    orphans: 3;
-    widows: 3;
-  }
+	p, ol, ol, dl {
+		hyphens: auto;
+		orphans: 3;
+		widows: 3;
+	}
 }
 
 // remove junk added by extensions
 body > script:last-of-type ~ * {
-  margin: 0;
+	margin: 0;
 }
