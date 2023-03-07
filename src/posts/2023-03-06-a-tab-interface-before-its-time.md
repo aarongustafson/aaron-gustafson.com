@@ -22,7 +22,7 @@ Back in 2007, I built [a little standalone JavaScript called `TabInterface.js`](
 
 ```html
 <div id="recipe" class="tabbed">
-  <h2>Overview</h2>\
+  <h2>Overview</h2>
   …
   <h2>Ingredients</h2>
   …
@@ -33,7 +33,7 @@ Back in 2007, I built [a little standalone JavaScript called `TabInterface.js`](
 </div>
 ```
 
-You would use JavaScript to update the cone to turn it into a tabbed interface:
+You would use JavaScript to update the code to turn it into a tabbed interface:
 
 ```js
 window.addEventListener('domready',function(){
