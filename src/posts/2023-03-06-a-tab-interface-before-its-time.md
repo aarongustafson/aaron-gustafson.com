@@ -14,7 +14,7 @@ hero:
   offset: "0"
 ---
 
-I finally got around to reading the CSS Tricks piece on "Spicy Sections" and it’s cool how closely what they are talking about aligns with work I was doing in the mid-to-late oughts.
+I finally got around to reading [the CSS Tricks piece on "Spicy Sections"](https://css-tricks.com/spicy-sections/) and it’s cool how closely what the [OpenUI folks](https://open-ui.org/) are talking about aligns with work I was doing in the mid-to-late oughts.
 
 <!-- more -->
 
