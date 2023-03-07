@@ -78,6 +78,23 @@ Links
 		&.tel {
 			white-space: nowrap;
 		}
+
+		// file annotations
+		a[href$=".pdf"]::after {
+			content: " (PDF)";
+			font-size: 0.8em;
+		}
+		a[href$=".doc"]::after,
+		a[href$=".docx"]::after {
+			content: " (DOC)";
+			font-size: 0.8em;
+		}
+		a[href$=".ppt"]::after,
+		a[href$=".pptx"]::after {
+			content: " (PPT)";
+			font-size: 0.8em;
+		}
+		
 		
 		// No underlines on image links
 		a[href$="jpg"],  a[href$=png],  a[href$=gif] {
