@@ -22,10 +22,13 @@ module.exports = {
 		getSeriesName: (tag) => {
       return series[tag];
     },
+		getDate: () => {
+			return iso.substring(0, 10);
+		},
 		getFilename: (locals, include_date) => {
       include_date = include_date !== false ? true : false;
 
-			const date = iso.substring(0, 10);
+			const date = getDate();
 			
 			// Slugify the title
 			var text = locals.title;

@@ -18,6 +18,12 @@ series:
   tag: "<%= series %>"
   ordinal: ""
 <% } -%>
+hero:
+  src: /i/posts/<%= h.getDate() %>/hero.jpg
+  credit: "Aaron Gustafson × DALL·E"
+  alt: ""
+  url: 
+  offset: ""
 ---
 
 <%= description %>
