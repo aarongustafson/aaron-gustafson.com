@@ -9,8 +9,8 @@
     {% set twitter = r/twitter\.com/ %}
 		{% set mastodon = r/mastodon/ %}
     {% set show_name = true %}
-    <div class="webmentions">
-      {% if replies.length > 0 %}
+    {% if replies.length > 0 %}
+    	<div class="webmentions webmentions--replies">
         <ol class="webmentions__list">
           {% for webmention in replies %}
             {% set long_name = webmention.name.length > 200 %}
@@ -66,10 +66,8 @@
             {% endif %}
           {% endfor %}
         </ol>
-      {% else %}
-        <p class="webmentions__not-found">No webmentions were found.</p>
-      {% endif %}
-    </div>
+      </div>
+    {% endif %}
 
     {% set show_name = false %}
     {% if likes.length > 0 %}

@@ -50,11 +50,11 @@ is_post: true
 						<dt class="dont-read">Filed Under</dt>
 						<dd class="dont-read">{{ tag_list( tags ) }}</dd>
 
-						{% if total_webmentions > 0 or disqus.commentCount %}
+						{% if has_webmentions or disqus.commentCount %}
 							<dt class="dont-read">Reactions</dt>
 							<dd class="dont-read">
 								<ul class="entry__jump-links">
-									{% if total_webmentions > 0 %}
+									{% if has_webmentions %}
 										<li class="entry__jump entry__jump--webmentions"><a href="#webmentions">{{ total_webmentions }} Webmentions</a></li>
 									{% endif %}
 									{% if disqus.commentCount %}
