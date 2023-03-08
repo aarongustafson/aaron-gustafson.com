@@ -28,7 +28,7 @@ module.exports = {
 		getFilename: (locals, include_date) => {
       include_date = include_date !== false ? true : false;
 
-			const date = getDate();
+			const date = iso.substring(0, 10);
 			
 			// Slugify the title
 			var text = locals.title;
