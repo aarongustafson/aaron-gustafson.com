@@ -98,6 +98,7 @@
 		</footer>
 
 		<script src="/j/main{% if site.minify %}.min{% endif %}.js"></script>
+		<script>{% include "partials/global/register-serviceworker.js" %}</script>
 		{% if is_post %}
 			<script src="/j/post{% if site.minify %}.min{% endif %}.js" async></script>
 			<script src="/j/lite-youtube-embed{% if site.minify %}.min{% endif %}.js" async></script>

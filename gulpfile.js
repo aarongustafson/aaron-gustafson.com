@@ -5,6 +5,7 @@ const config = require(`${tasks_folder}/config.js`);
 // Pull in each task
 const html = require(`${tasks_folder}/html.js`);
 const scripts = require(`${tasks_folder}/scripts.js`);
+const sw = require(`${tasks_folder}/serviceworker.js`);
 const images = require(`${tasks_folder}/images.js`);
 const styles = require(`${tasks_folder}/styles.js`);
 const data = require(`${tasks_folder}/data.js`);
@@ -16,6 +17,7 @@ const data = require(`${tasks_folder}/data.js`);
 const watcher = () => {
   watch(`${config.source}/**/*.html`, {ignoreInitial: true}, html);
   watch(`${config.source}/_javascripts/**/*.js`, {ignoreInitial: true}, scripts);
+  watch(`${config.source}/_data/sw.json`, {ignoreInitial: true}, sw);
   watch(`${config.source}/_images/**/*`, {ignoreInitial: true}, images);
   watch(`${config.source}/_styles/**/*.scss`, {ignoreInitial: true}, styles);
   watch(`${config.source}/**.{json,xml}`, {ignoreInitial: true}, data)

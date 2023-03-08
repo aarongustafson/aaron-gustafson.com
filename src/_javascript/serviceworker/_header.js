@@ -1,4 +1,4 @@
-const version = "v19:", // be sure to update ../main/register-serviceworker.js too
+const version = "v{{ VERSION }}:",
 
       // Stuff to load on install
       fallback_avatar = "/i/fallbacks/avatar.svg",
