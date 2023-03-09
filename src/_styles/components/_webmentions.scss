@@ -118,14 +118,6 @@
 			.webmention--like,
 			.webmention--repost {
 				margin-right: -.5em;
-				transition: margin-right .5s ease-in-out;
-			}
-
-			&:hover .webmention--like,
-			&:hover .webmention--repost,
-			&:focus-within .webmention--like,
-			&:focus-within .webmention--repost {
-				margin-right: 5px;
 			}
 		}
 

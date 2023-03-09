@@ -118,15 +118,15 @@ is_post: true
 
 					<hr>
 
-					{% include "partials/post/follow.html" %}
-					
+					{% include "partials/global/promo.html" %}
+
 					<hr>
 					
 					{% if tags.length > 0 %}
 						{% set related = collections.feedAll | related( this_url, tags[0] ) | limit(3) %}
 						{% if related.length > 0 %}
 							<div class="entry__related">
-								<h2>You might also like</h2>
+								<h2 class="subsection__header">You might also like</h2>
 								{% set teaser_heading_level = "h3" %}
 								{% for post in related %}
 									{% include "partials/post/teaser.html" %}
@@ -136,37 +136,19 @@ is_post: true
 					{% endif %}
 
 					<hr>
+					
+					{% include "partials/post/follow.html" %}
 
 				</footer>
 
-				
-				{% include "partials/global/promo.html" %}
-				
 				{% include "partials/post/webmentions.html" %}
 
 				{% include "partials/post/comments.html" %}
 
+
 			</div>
 		</article>
 		
-		{#
-		{% if not page.sidebar == false %}
-			<hr class="rule rule--optional">
-
-			<aside class="layout-container__secondary">
-				{% if site.asides.post %}
-					{% for sidebar in site.asides.post %}
-						{% include sidebar %}
-					{% endfor %}
-				{% else %}
-					{% for sidebar in site.asides.default %}
-						{% include sidebar %}
-					{% endfor %}
-				{% endif %}
-			</aside>
-		{% endif %}
-		#}
-
 	</div>
 
 	<script type="application/ld+json" class="dont-read">
