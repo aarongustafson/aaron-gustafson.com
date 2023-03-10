@@ -45,7 +45,7 @@ Block-level Semantics
 		@include rem( max-width, 700 );
 
 		@supports (margin-inline-start: 1em) {
-			@include unset( [margin-left, margin-right, padding, max-width] );
+			@include unset( margin-left margin-right padding max-width );
 			margin-inline: auto;
 			padding-block: 0;
 			@include rem( padding-inline, $default-spacing, false );
@@ -62,7 +62,7 @@ Block-level Semantics
 		@include rem( padding-left, 2 * $default-spacing );
 
 		@supports (margin-inline-start: 1em) {
-			@include unset( [margin, padding-left] );
+			@include unset( margin padding-left );
 			margin-block: 0;
 			margin-inline: 0;
 			@include rem( padding-inline-start, 2 * $default-spacing, false );
@@ -96,7 +96,7 @@ Block-level Semantics
 		@include rem( margin, $default-spacing auto );
 
 		@supports (margin-inline-start: 1em) {
-			@include unset( [border-top, height, margin] );
+			@include unset( border-top height margin );
 			border-block-start: 1px solid $color-rule;
 			block-size: 0;
 			margin-inline: auto;
