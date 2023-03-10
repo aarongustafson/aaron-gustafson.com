@@ -16,6 +16,14 @@
 				padding: .05em .25em;
 				text-shadow: none;
 				white-space: nowrap;
+
+				@supports (margin-inline-start: 1em) {
+					@include unset( border padding );
+					border-inline: 1px solid $color-off-white;
+					border-block: 1px solid $color-off-white;
+					padding-inline: .25em;
+					padding-block: .05em;
+				}
 		}
 		
 		pre {
@@ -32,9 +40,24 @@
 				
 				overflow-x: auto;
 
+				@supports (margin-inline-start: 1em) {
+					@include unset( border margin-left margin-right padding overflow-x );
+					border-inline: 1px solid $color-grey-light;
+					border-block: 1px solid $color-grey-light;
+					margin-inline: auto;
+					padding-inline: .25em;
+					padding-block: .05em;
+					overflow-inline: auto;
+				}
+
 				&:focus {
 					outline: 3px double $color-black;
 					overflow-x: scroll;
+
+					@supports (margin-inline-start: 1em) {
+						@include unset( overflow-x );
+						overflow-inline: scroll;
+					}
 
 					html.dark-mode & {
 						outline-color: $color-off-white;
@@ -42,10 +65,10 @@
 				}
 
 				code {
-						background: transparent;
-						border: 0;
-						padding: 0;
-						white-space: pre;
+					background: transparent;
+					border: 0;
+					padding: 0;
+					white-space: pre;
 				}
 		}
 		
@@ -55,5 +78,10 @@
 	pre[class*="language-"] {
 		@include rem( margin-left, -19 );
 		@include rem( margin-right, -19 );
+
+		@supports (margin-inline-start: 1em) {
+			@include unset( margin-left margin-right );
+			margin-inline: -19px;
+		}
 	}
 }

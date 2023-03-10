@@ -1,119 +1,160 @@
 /*------------------------------------*\
-  Form Styles
+	Form Styles
 \*------------------------------------*/
 
 @include breakup-breakpoint( "global" ) {
-  
-  form {
-    
-    ul,
-    ol {
-      list-style: none;
-    }
-    
-    li {
-      margin-bottom: .5em;
-    }
-  }
-  
-  .fields {
-    
-    @include breakup-placeholder( delist );
-    
-    &__group {
-      
-      @include rem( margin, $margin-default );
-      
-      &:last-child {
-        margin: 0;
-      }
-      
-      label {
-        
-        font-weight: bold;
-        
-        display: block;
-        
-      }
-      
-      input,
-      select,
-      textarea {
-        
-        color: $color-border;
-        
-        @include rem( font-size, $font-size-default );
-        
-        box-sizing: border-box;
-        border: 1px solid;
-        @include rem( margin, 5 0 );
-        @include rem( padding, 10 );
-        
-        transition: background-color $default-transition, color $default-transition;
-        
-      }
-      
-      input,
-      textarea {
-        
-        background: $color-background;
-        color: $color-text;
-        
-        display: block;
-        width: 100%;
+	
+	form {
+		
+		ul,
+		ol {
+			list-style: none;
+		}
+		
+		li {
+			margin-bottom: .5em;
 
-        &:focus {
-          background: $color-text-dark;
-        }
+			@supports (margin-inline-start: 1em) {
+				margin-bottom: unset;
+				margin-block-end: .5em;
+			}
+		}
+	}
+	
+	.fields {
+		
+		@include breakup-placeholder( delist );
+		
+		&__group {
+			
+			@include rem( margin, $margin-default );
 
-        html.dark-mode & {
-          background: $color-text-dark-light;
-        }
-        
-      }
-      
-      textarea {        
-        height: 200px;
-      }
-      
-      // Search display
-      input[type=search] {
-        -webkit-appearance: textfield;
-      }
-      
-      // don’t let selects overflow
-      select {
-        @include rem( font-size, $font-size-h3 );
-        max-width: 100%;
-      }
-      
-      &__note {
-        @include rem( font-size, $font-size-small );
-      }
-      
-    }
-    
-    &__required {
-      color: #f00;
-      font-weight: normal;
-    }
-    
-    .validation-error input,
-    .validation-error select,
-    .validation-error textarea {
-      color: #f00;
-    }
-    
-  }
-  
+			@supports (margin-inline-start: 1em) {
+				margin: unset;
+				@include rem( margin-block, $margin-default, false );
+				@include rem( margin-inline, $margin-default, false );
+			}
+			
+			&:last-child {
+				margin: 0;
+			}
+			
+			label {
+				font-weight: bold;
+				display: block;
+			}
+			
+			input,
+			select,
+			textarea {
+				
+				color: $color-border;
+				
+				@include rem( font-size, $font-size-default );
+				
+				box-sizing: border-box;
+				border: 1px solid;
+				@include rem( margin, 5 0 );
+				@include rem( padding, 10 );
+				
+				transition: background-color $default-transition, color $default-transition;
+
+				@supports (margin-inline-start: 1em) {
+					@include unset( margin padding );
+					@include rem( margin-block, 5, false );
+					@include rem( margin-inline, 0, false );
+					@include rem( padding-block, 10, false );
+					@include rem( padding-inline, 10, false );
+				}
+				
+			}
+			
+			input,
+			textarea {
+				
+				background: $color-background;
+				color: $color-text;
+				
+				display: block;
+				width: 100%;
+
+				@supports (margin-inline-start: 1em) {
+					width: unset;
+					inline-size: 100%;
+				}
+
+				&:focus {
+					background: $color-text-dark;
+				}
+
+				html.dark-mode & {
+					background: $color-text-dark-light;
+				}
+				
+			}
+			
+			textarea {
+				height: 200px;
+
+				@supports (margin-inline-start: 1em) {
+					height: unset;
+					block-size: 200px;
+				}
+			}
+			
+			// Search display
+			input[type=search] {
+				-webkit-appearance: textfield;
+			}
+			
+			// don’t let selects overflow
+			select {
+				@include rem( font-size, $font-size-h3 );
+				max-width: 100%;
+
+				@supports (margin-inline-start: 1em) {
+					max-width: unset;
+					max-inline-size: 100%;
+				}
+			}
+			
+			&__note {
+				@include rem( font-size, $font-size-small );
+			}
+			
+		}
+		
+		&__required {
+			color: #f00;
+			font-weight: normal;
+		}
+		
+		.validation-error input,
+		.validation-error select,
+		.validation-error textarea {
+			color: #f00;
+		}
+		
+	}
+	
 }
 
 @include breakup-breakpoint( "medium" ) {
-  input,
-  textarea {
-    width: 80%;
-  }
-  .fields__note {
-    width: 80%;
-  }
+	input,
+	textarea {
+		width: 80%;
+
+		@supports (margin-inline-start: 1em) {
+			width: unset;
+			inline-size: 80%;
+		}
+	}
+	.fields__note {
+		width: 80%;
+
+		@supports (margin-inline-start: 1em) {
+			width: unset;
+			inline-size: 80%;
+		}
+	}
 }

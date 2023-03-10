@@ -46,11 +46,16 @@ Body-level settings
 		font-weight: $font-weight-sansserif;
 		
 		margin: 0 auto;
-		//@include rem( max-width, 960 );
 		height: 100%;
 	
 		word-wrap: break-word;
 		overflow-wrap: break-word;
+
+		@supports (margin-inline-start: 1em) {
+			@include unset( margin height );
+			margin-inline: auto;
+			block-size: 100%;
+		}
 
 		html.dark-mode & {
 			background: $color-background-dark;
