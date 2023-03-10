@@ -4,12 +4,22 @@ Block-level Semantics
 @include breakup-breakpoint( "global" ) {
 	
 	* {
-		@include rem( margin-top, 0 );
-		@include rem( margin-bottom, 0 );
+		margin-top: 0;
+		margin-bottom: 0;
+		
+		@supports (margin-inline-start: 1em) {
+			margin: unset;
+			margin-block: 0;
+		}
 	}
 	
 	* + * {
 		@include rem( margin-top, $default-spacing );
+
+		@supports (margin-inline-start: 1em) {
+			margin-top: unset;
+			@include rem( margin-block-start, $default-spacing, false );
+		}
 	}
 	
 	noscript {
@@ -33,6 +43,17 @@ Block-level Semantics
 		margin-right: auto;
 		@include rem( padding, 0 $default-spacing );
 		@include rem( max-width, 700 );
+
+		@supports (margin-inline-start: 1em) {
+			margin-left: unset;
+			margin-right: unset;
+			margin-inline: auto;
+			padding: unset;
+			padding-block: 0;
+			@include rem( padding-inline, $default-spacing, false );
+			max-width: unset;
+			@include rem( max-inline-size, 700, false );
+		}
 		
 	}
 	
@@ -42,6 +63,14 @@ Block-level Semantics
 		
 		margin: 0;
 		@include rem( padding-left, 2 * $default-spacing );
+
+		@supports (margin-inline-start: 1em) {
+			margin: unset;
+			margin-block: 0;
+			margin-inline: 0;
+			padding-left: unset;
+			@include rem( padding-inline-start, 2 * $default-spacing, false );
+		}
 		
 		cite {
 			font-style: normal;
@@ -69,10 +98,25 @@ Block-level Semantics
 		
 		height: 0;
 		@include rem( margin, $default-spacing auto );
+
+		@supports (margin-inline-start: 1em) {
+			border-top: unset;
+			border-block-start: 1px solid $color-rule;
+			height: unset;
+			block-size: 0;
+			margin: unset;
+			margin-inline: auto;
+			@include rem( margin-block, $default-spacing, false );
+		}
 	}
 	
 	section + section {
 		@include rem( margin-top, $default-spacing * 2 );
+
+		@supports (margin-inline-start: 1em) {
+			margin-top: unset;
+			@include rem( margin-block-start, $default-spacing * 2, false );
+		}
 	}
 	
 }
@@ -89,6 +133,12 @@ dialog + .backdrop {
 	blockquote,
 	dl {
 		@include rem( padding, 0 $default-spacing );
+
+		@supports (margin-inline-start: 1em) {
+			padding: unset;
+			padding-block: 0;
+			@include rem( padding-inline, $default-spacing, false );
+		}
 	}
 }
 
@@ -96,6 +146,12 @@ dialog + .backdrop {
 	blockquote,
 	dl {
 		@include rem( padding, 0 ( 3 * $default-spacing ) );
+
+		@supports (margin-inline-start: 1em) {
+			padding: unset;
+			padding-block: 0;
+			@include rem( padding-inline, ( 3 * $default-spacing ), false );
+		}
 	}
 }
 
@@ -110,4 +166,10 @@ dialog + .backdrop {
 // remove junk added by extensions
 body > script:last-of-type ~ * {
 	margin: 0;
+
+	@supports (margin-inline-start: 1em) {
+		margin: unset;
+		margin-block: 0;
+		margin-inline: 0;
+	}
 }

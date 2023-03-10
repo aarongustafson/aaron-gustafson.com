@@ -38,7 +38,7 @@ Mixins
 
 // REM values
 // Adapted from http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
-@mixin rem( $property, $values )
+@mixin rem( $property, $values, $fallback: true )
 {
   $px: ();
   $rem: ();
@@ -77,11 +77,15 @@ Mixins
     }
   }
   
-  @if $px == $rem
+  @if $fallback == false
+	{
+		#{$property}: $rem;
+	}
+	@else if $px == $rem
   {
     #{$property}: $px;
   }
-  @else
+	@else
   {
     #{$property}: $px;
     #{$property}: $rem;
