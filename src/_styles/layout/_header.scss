@@ -68,8 +68,8 @@
 
 				@supports (margin-block: 1em) {
 					@include unset( margin padding );
-					@include rem( margin-block, $margin-default, false );
-					@include rem( margin-inline, $margin-default, false );
+					@include rem( margin-block-end, $default-spacing, false );
+					margin-inline: 0;
 					@include rem( padding-block, 7, false );
 					@include rem( padding-inline, 5, false );
 				}

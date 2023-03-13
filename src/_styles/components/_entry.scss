@@ -7,6 +7,12 @@ Blog Entry
 	.entry {
 		
 		@include rem( margin, $margin-default );
+
+		@supports (margin-block: 1em) {
+			margin: unset;
+			@include rem( margin-block-end, $default-spacing, false );
+			margin-inline: 0;
+		}
 		
 		&__meta {
 			@include rem( font-size, $font-size-small );

@@ -31,8 +31,8 @@
 
 			@supports (margin-block: 1em) {
 				margin: unset;
-				@include rem( margin-block, $margin-default, false );
-				@include rem( margin-inline, $margin-default, false );
+				@include rem( margin-block-end, $default-spacing, false );
+				margin-inline: 0;
 			}
 			
 			&:last-child {

@@ -14,8 +14,8 @@
 
 			@supports (margin-block: 1em) {
 				@include unset( margin width min-width );
-				margin-block: $margin-default;
-				margin-inline: $margin-default;
+				@include rem( margin-block-end, $default-spacing, false );
+				margin-inline: 0;
 				block-size: 100%;
 				min-inline-size: 100px;
 			}
@@ -137,8 +137,8 @@
 
 			@supports (margin-block: 1em) {
 				margin: unset;
-				margin-block: $margin-default;
-				margin-inline: $margin-default;
+				@include rem( margin-block-end, $default-spacing, false );
+				margin-inline: 0;
 			}
 		}
 
