@@ -1,40 +1,65 @@
 /*------------------------------------*\
-    Grid
+		Grid
 \*-------
 -----------------------------*/
 
 .layout-container {
-    
-    @include breakup-breakpoint( "global" ) {
-      max-width: 100%;
+		
+		@include breakup-breakpoint( "global" ) {
+			max-width: 100%;
 
-      height: ie8( 1% );
+			height: ie8( 1% );
 
-      // padding on a small screen
-      @include rem( padding, 0 20 );
-      margin: 0 auto;
+			// padding on a small screen
+			@include rem( padding, 0 20 );
+			margin: 0 auto;
 
-      position: relative;
-    }
-    
-    // @include breakup-breakpoint( "small" ) {
-    //
-    // }
+			position: relative;
 
-    @include breakup-breakpoint( "full" ) {
+			@supports (margin-block: 1em) {
+				@include unset( max-width padding margin );
+				@include rem( padding-inline, 20, false );
+				padding-block: 0;
+				margin-block: 0;
+				margin-inline: auto;
+				max-inline-size: 100%;
+			}
+		}
+		
+		// @include breakup-breakpoint( "small" ) {
+		//
+		// }
 
-      @include rem( padding, 0 );
-      max-width: $bp-medium-em;
-      
-      &--blog {
-        max-width: 47em;
-      }
+		@include breakup-breakpoint( "full" ) {
 
-      &__primary {
-        width: 74%;
-        float: left;
-      }
-        
-    }
+			padding: 0;
+			max-width: $bp-medium-em;
+
+			@supports (margin-block: 1em) {
+				max-width: unset;
+				max-inline-size: $bp-medium-em;
+			}
+			
+			&--blog {
+				max-width: 47em;
+
+				@supports (margin-block: 1em) {
+					max-width: unset;
+					max-inline-size: 47em;
+				}
+			}
+
+			&__primary {
+				width: 74%;
+				float: left;
+
+				@supports (margin-block: 1em) {
+					width: unset;
+					inline-size: 74%;
+					float: inline-start;
+				}
+			}
+				
+		}
 
 }

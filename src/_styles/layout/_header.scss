@@ -12,12 +12,17 @@
 			margin: 0;
 
 			* + * {
-					margin: 0;
+				margin: 0;
 			}
 
 			.layout-container {
 				max-width: 100%;
 				padding: 0;
+
+				@supports (margin-block: 1em) {
+					max-width: unset;
+					max-inline-size: 100%;
+				}
 			}
 
 			.site-title {
@@ -35,6 +40,12 @@
 					border: 0;
 					@include rem( padding, 8 $default-spacing );
 					display: block;
+
+					@supports (margin-block: 1em) {
+						@include unset( padding );
+						@include rem( padding-block, 8, false );
+						@include rem( padding-inline, $default-spacing, false );
+					}
 					
 					&:hover,
 					&:focus {
@@ -54,22 +65,40 @@
 				@include rem( margin, $margin-default );
 				@include rem( padding, 7 5 );
 				text-align: center;
+
+				@supports (margin-block: 1em) {
+					@include unset( margin padding );
+					@include rem( margin-block, $margin-default, false );
+					@include rem( margin-inline, $margin-default, false );
+					@include rem( padding-block, 7, false );
+					@include rem( padding-inline, 5, false );
+				}
 		
 				a {
-						text-decoration-color: inherit;
-						color: inherit;
+					text-decoration-color: inherit;
+					color: inherit;
 				}
 				strong {
-						font-weight: normal;
+					font-weight: normal;
 				}
 
 				& + header {
-						margin-top: 0;
+					margin-top: 0;
 
-						.site-title,
-						.site-subtitle {
-								@include rem( margin-bottom, math.div( $default-spacing, 2 ) );
+					@supports (margin-block: 1em) {
+						margin-top: unset;
+						margin-block-start: 0;
+					}
+
+					.site-title,
+					.site-subtitle {
+						@include rem( margin-bottom, math.div( $default-spacing, 2 ) );
+
+						@supports (margin-block: 1em) {
+							margin-bottom: unset;
+							@include rem( margin-block-end, math.div( $default-spacing, 2 ), false );
 						}
+					}
 				}
 		}
 
