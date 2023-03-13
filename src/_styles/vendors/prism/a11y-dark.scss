@@ -1,3 +1,10 @@
+@mixin unset( $properties )
+{
+	@each $property in $properties {
+		#{$property}: unset;
+	}
+}
+
 /**
  * a11y-dark theme for JavaScript, CSS, and HTML
  * Based on the okaidia theme: https://github.com/PrismJS/prism/blob/gh-pages/themes/prism-okaidia.css
@@ -32,6 +39,11 @@
    margin-left: -2em;
    margin-right: -2em;
    overflow: auto;
+
+	 @supports (margin-block: 1em) {
+		 @include unset( margin-left margin-right );
+		 margin-inline: -2em;
+	 }
  }
  
  :not(pre) > code[class*="language-"],

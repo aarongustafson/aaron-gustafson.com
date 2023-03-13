@@ -1,3 +1,10 @@
+@mixin unset( $properties )
+{
+	@each $property in $properties {
+		#{$property}: unset;
+	}
+}
+
 lite-youtube {
   background-color: #000;
   position: relative;
@@ -8,6 +15,11 @@ lite-youtube {
   cursor: pointer;
   max-width: 720px;
   border: 1px solid;
+
+	@supports (margin-block: 1em) {
+		max-width: unset;
+		max-inline-size: 720px;
+	}
 }
 
 /* gradient */
@@ -23,6 +35,14 @@ lite-youtube::before {
   padding-bottom: 50px;
   width: 100%;
   transition: all 0.2s cubic-bezier(0, 0, 0.2, 1);
+
+	@supports (margin-block: 1em) {
+		@include unset( top height padding-bottom width );
+		block-size: 60px;
+		inline-size: 100%;
+		inset-block-start: 0;
+		padding-block-end: 50px;
+	}
 }
 
 /* responsive iframe with a 16:9 aspect ratio
@@ -32,6 +52,11 @@ lite-youtube::after {
   content: "";
   display: block;
   padding-bottom: calc(100% / (16 / 9));
+
+	@supports (margin-block: 1em) {
+		padding-bottom: unset;
+		padding-block-end: calc(100% / (16 / 9));
+	}
 }
 lite-youtube > iframe {
   width: 100%;
@@ -41,6 +66,14 @@ lite-youtube > iframe {
   top: 0;
   left: 0;
   border: 0;
+
+	@supports (margin-block: 1em) {
+		@include unset( width height top left );
+		block-size: 100%;
+		inline-size: 100%;
+		inset-block-start: 0;
+		inset-inline-start: 0;
+	}
 }
 
 /* play button */
@@ -60,6 +93,15 @@ lite-youtube > .lty-playbtn {
   filter: grayscale(100%);
   transition: filter .1s cubic-bezier(0, 0, 0.2, 1);
   border: none;
+
+	@supports (margin-block: 1em) {
+		@include unset( width height top left );
+		block-size: 48px;
+		inline-size: 68px;
+		inset-block-start: 50%;
+		inset-inline-start: 50%;
+		transform: unset;
+	}
 }
 
 lite-youtube:hover > .lty-playbtn,
@@ -85,4 +127,10 @@ lite-youtube.lyt-activated > .lty-playbtn {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+
+	@supports (margin-block: 1em) {
+		@include unset( height width );
+		block-size: 1px;
+		inline-size: 1px;
+	}
 }

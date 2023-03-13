@@ -6,82 +6,82 @@
 
 @include breakup-breakpoint( "global" ) {
 
-		// Abbreviations
-		abbr {
-				cursor: help;
-				text-decoration: inherit;
+	// Abbreviations
+	abbr {
+			cursor: help;
+			text-decoration: inherit;
+			border: 0;
+			&[title] {
 				border: 0;
-				&[title] {
-					border: 0;
-				}
-		}
-
-
-		// Mark
-		mark {
-			background: transparent;
-			color: $color-text;
-			color: inherit;
-			font-weight: normal;
-			font-weight: inherit;
-			font-style: normal;
-			font-style: inherit;
-		}
-		
-		// Pseudo-semantics
-		b {
-			font-weight: inherit;
-		}
-		i {
-			font-style: inherit;
-		}
-
-
-		// Superscript & subscript
-		sub, sup {
-			@include rem( font-size, $font-size-tiny );
-			font-style: inherit;
-			font-weight: inherit;
-			position: relative;
-		}
-		sub {
-			bottom: -1em;
-
-			@supports (margin-block: 1em) {
-				bottom: unset;
-				inset-block-end: -1em;
 			}
+	}
+
+
+	// Mark
+	mark {
+		background: transparent;
+		color: $color-text;
+		color: inherit;
+		font-weight: normal;
+		font-weight: inherit;
+		font-style: normal;
+		font-style: inherit;
+	}
+	
+	// Pseudo-semantics
+	b {
+		font-weight: inherit;
+	}
+	i {
+		font-style: inherit;
+	}
+
+
+	// Superscript & subscript
+	sub, sup {
+		@include rem( font-size, $font-size-tiny );
+		font-style: inherit;
+		font-weight: inherit;
+		position: relative;
+	}
+	sub {
+		bottom: -1em;
+
+		@supports (margin-block: 1em) {
+			bottom: unset;
+			inset-block-end: -1em;
 		}
-		sup {
-			bottom: 1em;
+	}
+	sup {
+		bottom: 1em;
 
-			@supports (margin-block: 1em) {
-				bottom: unset;
-				inset-block-end: 1em;
-			}
+		@supports (margin-block: 1em) {
+			bottom: unset;
+			inset-block-end: 1em;
 		}
+	}
 
 
-		time {
-				white-space: nowrap;
-		}
+	time {
+			white-space: nowrap;
+	}
 
-		small {
-			@include rem( font-size, $font-size-tiny );
-			font-style: italic;
-			display: block;
-		}
+	small {
+		@include rem( font-size, $font-size-tiny );
+		font-style: italic;
+		display: block;
+	}
 
 
-		// Hidden
-		.hidden {
-			@include breakup-placeholder( hidden );
-		}
+	// Hidden
+	.hidden {
+		@include breakup-placeholder( hidden );
+	}
 
-		// :target
-		:target {
-			background: yellow;
-			outline: 25px solid yellow;
-			color: #000;
-		}
+	// :target
+	:target {
+		background: yellow;
+		outline: 25px solid yellow;
+		color: #000;
+	}
 }
