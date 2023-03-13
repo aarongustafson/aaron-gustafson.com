@@ -7,7 +7,7 @@ Block-level Semantics
 		margin-top: 0;
 		margin-bottom: 0;
 		
-		@supports (margin-inline-start: 1em) {
+		@supports (margin-block: 1em) {
 			margin: unset;
 			margin-block: 0;
 		}
@@ -16,7 +16,7 @@ Block-level Semantics
 	* + * {
 		@include rem( margin-top, $default-spacing );
 
-		@supports (margin-inline-start: 1em) {
+		@supports (margin-block: 1em) {
 			margin-top: unset;
 			@include rem( margin-block-start, $default-spacing, false );
 		}
@@ -44,7 +44,7 @@ Block-level Semantics
 		@include rem( padding, 0 $default-spacing );
 		@include rem( max-width, 700 );
 
-		@supports (margin-inline-start: 1em) {
+		@supports (margin-block: 1em) {
 			@include unset( margin-left margin-right padding max-width );
 			margin-inline: auto;
 			padding-block: 0;
@@ -61,7 +61,7 @@ Block-level Semantics
 		margin: 0;
 		@include rem( padding-left, 2 * $default-spacing );
 
-		@supports (margin-inline-start: 1em) {
+		@supports (margin-block: 1em) {
 			@include unset( margin padding-left );
 			margin-block: 0;
 			margin-inline: 0;
@@ -95,7 +95,7 @@ Block-level Semantics
 		height: 0;
 		@include rem( margin, $default-spacing auto );
 
-		@supports (margin-inline-start: 1em) {
+		@supports (margin-block: 1em) {
 			@include unset( border-top height margin );
 			border-block-start: 1px solid $color-rule;
 			block-size: 0;
@@ -107,7 +107,7 @@ Block-level Semantics
 	section + section {
 		@include rem( margin-top, $default-spacing * 2 );
 
-		@supports (margin-inline-start: 1em) {
+		@supports (margin-block: 1em) {
 			margin-top: unset;
 			@include rem( margin-block-start, $default-spacing * 2, false );
 		}
@@ -128,7 +128,7 @@ dialog + .backdrop {
 	dl {
 		@include rem( padding, 0 $default-spacing );
 
-		@supports (margin-inline-start: 1em) {
+		@supports (margin-block: 1em) {
 			padding: unset;
 			padding-block: 0;
 			@include rem( padding-inline, $default-spacing, false );
@@ -141,7 +141,7 @@ dialog + .backdrop {
 	dl {
 		@include rem( padding, 0 ( 3 * $default-spacing ) );
 
-		@supports (margin-inline-start: 1em) {
+		@supports (margin-block: 1em) {
 			padding: unset;
 			padding-block: 0;
 			@include rem( padding-inline, ( 3 * $default-spacing ), false );
@@ -161,7 +161,7 @@ dialog + .backdrop {
 body > script:last-of-type ~ * {
 	margin: 0;
 
-	@supports (margin-inline-start: 1em) {
+	@supports (margin-block: 1em) {
 		margin: unset;
 		margin-block: 0;
 		margin-inline: 0;

@@ -12,28 +12,28 @@
 				text-decoration: inherit;
 				border: 0;
 				&[title] {
-						border: 0;
+					border: 0;
 				}
 		}
 
 
 		// Mark
 		mark {
-				background: transparent;
-				color: $color-text;
-				color: inherit;
-				font-weight: normal;
-				font-weight: inherit;
-				font-style: normal;
-				font-style: inherit;
+			background: transparent;
+			color: $color-text;
+			color: inherit;
+			font-weight: normal;
+			font-weight: inherit;
+			font-style: normal;
+			font-style: inherit;
 		}
 		
 		// Pseudo-semantics
 		b {
-				font-weight: inherit;
+			font-weight: inherit;
 		}
 		i {
-				font-style: inherit;
+			font-style: inherit;
 		}
 
 
@@ -46,9 +46,19 @@
 		}
 		sub {
 			bottom: -1em;
+
+			@supports (margin-block: 1em) {
+				bottom: unset;
+				inset-block-end: -1em;
+			}
 		}
 		sup {
 			bottom: 1em;
+
+			@supports (margin-block: 1em) {
+				bottom: unset;
+				inset-block-end: 1em;
+			}
 		}
 
 
@@ -65,7 +75,7 @@
 
 		// Hidden
 		.hidden {
-				@include breakup-placeholder( hidden );
+			@include breakup-placeholder( hidden );
 		}
 
 		// :target

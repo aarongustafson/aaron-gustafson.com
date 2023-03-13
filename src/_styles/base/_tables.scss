@@ -1,149 +1,207 @@
 /*------------------------------------*\
-    Tables
+		Tables
 \*------------------------------------*/
 
 @include breakup-breakpoint( "global" ) {
 
-    table {
-    
-        border-collapse: collapse;
-    
-        @include rem( margin, $margin-default );
-        width: 100%;
-      min-width: 100px;
-    
-        thead {
+		table {
+		
+			border-collapse: collapse;
+		
+			@include rem( margin, $margin-default );
+			width: 100%;
+			min-width: 100px;
 
-            border-bottom: 3px solid $color-rule;
+			@supports (margin-block: 1em) {
+				@include unset( margin width min-width );
+				margin-block: $margin-default;
+				margin-inline: $margin-default;
+				block-size: 100%;
+				min-inline-size: 100px;
+			}
+		
+			thead {
 
-            @include breakup-placeholder( small-caps );
-            @include rem( font-size, $font-size-small );
-            text-transform: uppercase;
+				border-bottom: 3px solid $color-rule;
 
-            th {
-                font-weight: bold;
+				@include breakup-placeholder( small-caps );
+				@include rem( font-size, $font-size-small );
+				text-transform: uppercase;
 
-          // Fix for bad WYSIWYG
-          p {
-            font-weight: bold;
-            display: inline;
-            margin: 0;
-          }
-            }
-        }
-    
-        tbody {
-            @include rem( font-size, $font-size-h3 );
-        }
-    
-        tr {
-            border-top: 1px solid $color-rule;
-        }
-    
-        td,
-        th {
-            font-weight: normal;
-            text-align: left;
-            @include rem( padding, $table-spacing );
-            padding-left: 0;
-        
-            &:last-child {
-                padding-right: 0;
-            }
-        
-            :last-child {
-                margin-bottom: 0;
-            }
+				@supports (margin-block: 1em) {
+					@include unset( border-bottom-width );
+					border-block-end-width: 3px;
+				}
 
-        // chances are, these were intended as headers
-        &[colspan] {
-          font-weight: bold;
-        }
-        }
-    }
+				th {
+					font-weight: bold;
+
+					// Fix for bad WYSIWYG
+					p {
+						font-weight: bold;
+						display: inline;
+						margin: 0;
+					}
+				}
+			}
+	
+			tbody {
+				@include rem( font-size, $font-size-h3 );
+			}
+	
+			tr {
+				border-top: 1px solid $color-rule;
+
+				@supports (margin-block: 1em) {
+					@include unset( border-top-width );
+					border-block-start-width: 1px;
+				}
+			}
+	
+			td,
+			th {
+				font-weight: normal;
+				text-align: left;
+				@include rem( padding, $table-spacing );
+				padding-left: 0;
+
+				@supports (margin-block: 1em) {
+					@include unset( padding );
+					padding-block: $table-spacing;
+					padding-inline: $table-spacing;
+					padding-inline-start: 0;
+				}
+		
+				&:last-child {
+					padding-right: 0;
+					
+					@supports (margin-block: 1em) {
+						padding-right: unset;
+						padding-inline-end: 0;
+					}
+				}
+		
+				:last-child {
+					margin-bottom: 0;
+
+					@supports (margin-block: 1em) {
+						margin-bottom: unset;
+						margin-block-end: 0;
+					}
+				}
+
+				// chances are, these were intended as headers
+				&[colspan] {
+					font-weight: bold;
+				}
+			}
+		}
 }
 
 // De-table on smaller screens
 // (using staff directory as a gauge)
 @include breakup-media( "only screen and (max-width: 770px)" ) {
-        
-    .layout-container__primary table {
-    border: 0;
-    padding-bottom: 0;
-    display: block;
-    width: 100%;
 
-    caption {
-      display: block;
-    }
+	.layout-container__primary table {
+		border: 0;
+		padding-bottom: 0;
+		display: block;
+		width: 100%;
 
-    thead {
-      display: none;
-    }
+		@supports (margin-block: 1em) {
+			@include unset( padding-bottom width );
+			inline-size: 100%;
+			padding-block-end: 0;
+		}
 
-    tbody,
-    tr,
-    th,
-    td {
-      border: 0;
-      display: block;
-      padding: 0;
-      text-align: left;
-    }
+		caption {
+			display: block;
+		}
 
-    tr {
-      @include rem( margin, $margin-default );
-    }
+		thead {
+			display: none;
+		}
 
-    th[data-title]:before,
-    td[data-title]:before {
-      content: attr(data-title) ":\00A0";
-      font-weight: bold;
-    }
+		tbody,
+		tr,
+		th,
+		td {
+			border: 0;
+			display: block;
+			padding: 0;
+			text-align: left;
+		}
 
-    th:not([data-title]) {
-      font-weight: bold;
-    }
+		tr {
+			@include rem( margin, $margin-default );
 
-    td:empty {
-        display: none;
-    }
-    }
-  
+			@supports (margin-block: 1em) {
+				margin: unset;
+				margin-block: $margin-default;
+				margin-inline: $margin-default;
+			}
+		}
+
+		th[data-title]:before,
+		td[data-title]:before {
+			content: attr(data-title) ":\00A0";
+			font-weight: bold;
+		}
+
+		th:not([data-title]) {
+			font-weight: bold;
+		}
+
+		td:empty {
+			display: none;
+		}
+	}
+
 }
-    
+		
 @include breakup-breakpoint( "medium" ) {
-    
-    table.striped {
-        background: $color-background;
-        
-        thead {
-            background: $color-grey-light;
-            border-bottom: 0;
-        }
-        
-        tbody tr {
-            
-            background: $color-white;
-            transition: background-color $default-transition;
-            
-            &:nth-child(even) {
-                background: mix( $color-white, $color-black, 10% );
-            }
-            
-            &:hover {
-                background: $color-white;
-            }
-            
-        }
 
-        th,
-        td {
-            border: 1px solid $color-rule;
-            @include rem( padding, $table-spacing );
-        }
+	table.striped {
+			background: $color-background;
 
-    }
-    
+			thead {
+				background: $color-grey-light;
+				border-bottom: 0;
+
+				@supports (margin-block: 1em) {
+					border-bottom-width: unset;
+					border-block-end-width: 0;
+				}
+			}
+
+			tbody tr {
+
+				background: $color-white;
+				transition: background-color $default-transition;
+
+				&:nth-child(even) {
+					background: mix( $color-white, $color-black, 10% );
+				}
+
+				&:hover {
+					background: $color-white;
+				}
+
+			}
+
+			th,
+			td {
+					border: 1px solid $color-rule;
+					@include rem( padding, $table-spacing );
+
+					@supports (margin-block: 1em) {
+						padding: unset;
+						padding-block: $table-spacing;
+						padding-inline: $table-spacing;
+					}
+			}
+
+	}
+
 }
 

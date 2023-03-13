@@ -14,7 +14,7 @@
 		li {
 			margin-bottom: .5em;
 
-			@supports (margin-inline-start: 1em) {
+			@supports (margin-block: 1em) {
 				margin-bottom: unset;
 				margin-block-end: .5em;
 			}
@@ -29,7 +29,7 @@
 			
 			@include rem( margin, $margin-default );
 
-			@supports (margin-inline-start: 1em) {
+			@supports (margin-block: 1em) {
 				margin: unset;
 				@include rem( margin-block, $margin-default, false );
 				@include rem( margin-inline, $margin-default, false );
@@ -59,7 +59,7 @@
 				
 				transition: background-color $default-transition, color $default-transition;
 
-				@supports (margin-inline-start: 1em) {
+				@supports (margin-block: 1em) {
 					@include unset( margin padding );
 					@include rem( margin-block, 5, false );
 					@include rem( margin-inline, 0, false );
@@ -78,7 +78,7 @@
 				display: block;
 				width: 100%;
 
-				@supports (margin-inline-start: 1em) {
+				@supports (margin-block: 1em) {
 					width: unset;
 					inline-size: 100%;
 				}
@@ -96,7 +96,7 @@
 			textarea {
 				height: 200px;
 
-				@supports (margin-inline-start: 1em) {
+				@supports (margin-block: 1em) {
 					height: unset;
 					block-size: 200px;
 				}
@@ -112,7 +112,7 @@
 				@include rem( font-size, $font-size-h3 );
 				max-width: 100%;
 
-				@supports (margin-inline-start: 1em) {
+				@supports (margin-block: 1em) {
 					max-width: unset;
 					max-inline-size: 100%;
 				}
@@ -144,7 +144,7 @@
 	textarea {
 		width: 80%;
 
-		@supports (margin-inline-start: 1em) {
+		@supports (margin-block: 1em) {
 			width: unset;
 			inline-size: 80%;
 		}
@@ -152,7 +152,7 @@
 	.fields__note {
 		width: 80%;
 
-		@supports (margin-inline-start: 1em) {
+		@supports (margin-block: 1em) {
 			width: unset;
 			inline-size: 80%;
 		}

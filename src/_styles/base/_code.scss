@@ -17,7 +17,7 @@
 				text-shadow: none;
 				white-space: nowrap;
 
-				@supports (margin-inline-start: 1em) {
+				@supports (margin-block: 1em) {
 					@include unset( border padding );
 					border-inline: 1px solid $color-off-white;
 					border-block: 1px solid $color-off-white;
@@ -40,7 +40,7 @@
 				
 				overflow-x: auto;
 
-				@supports (margin-inline-start: 1em) {
+				@supports (margin-block: 1em) {
 					@include unset( border margin-left margin-right padding overflow-x );
 					border-inline: 1px solid $color-grey-light;
 					border-block: 1px solid $color-grey-light;
@@ -54,7 +54,7 @@
 					outline: 3px double $color-black;
 					overflow-x: scroll;
 
-					@supports (margin-inline-start: 1em) {
+					@supports (margin-block: 1em) {
 						@include unset( overflow-x );
 						overflow-inline: scroll;
 					}
@@ -79,7 +79,7 @@
 		@include rem( margin-left, -19 );
 		@include rem( margin-right, -19 );
 
-		@supports (margin-inline-start: 1em) {
+		@supports (margin-block: 1em) {
 			@include unset( margin-left margin-right );
 			margin-inline: -19px;
 		}

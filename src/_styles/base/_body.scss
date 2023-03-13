@@ -51,7 +51,7 @@ Body-level settings
 		word-wrap: break-word;
 		overflow-wrap: break-word;
 
-		@supports (margin-inline-start: 1em) {
+		@supports (margin-block: 1em) {
 			@include unset( margin height );
 			margin-inline: auto;
 			block-size: 100%;

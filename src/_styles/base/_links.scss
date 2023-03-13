@@ -134,6 +134,11 @@ Links
 			content: "(" attr(href) ")";
 			font-size: 10pt;
 			margin-left: 9pt;
+
+			@supports (margin-block: 1em) {
+				margin-left: unset;
+				margin-inline-start: 9pt;
+			}
 		}
 		&[href^="/"]:after {
 			content: " (#{$domain}" attr(href) ")";

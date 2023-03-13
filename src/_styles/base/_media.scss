@@ -1,86 +1,140 @@
 /*------------------------------------*\
-    Media Elements
+		Media Elements
 \*------------------------------------*/
 
 @use 'sass:math';
 
 @include breakup-breakpoint( "global" ) {
 
-    object[data*="svg"] {
-        pointer-events: none;
-    }
-    object[data^="#"] {
-        @include breakup-placeholder( hidden );
-    }
+		object[data*="svg"] {
+				pointer-events: none;
+		}
+		object[data^="#"] {
+				@include breakup-placeholder( hidden );
+		}
 
-    // Responsive images
-    img {
-    
-        display: block;
-      max-width: 100%;
-      height: auto;
-        margin-left: auto;
-        margin-right: auto;
-  
-      &[style] {
-            width: auto !important;
-          max-width: 100% !important;
-          height: auto !important;
-      }
-        
-        &[width] {
-            width: auto;
-        }
-  
-    }
-    picture {
-      display: block;
-    }
-    // Noscript fallback for picture
-    .noscript-picture {
-      margin: 0;
-      padding: 0;
-    }
-    
-    // Audio
-    audio {
-        width: 100%;
-    }
-    
-    .media-container {
-        max-width: 600px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    figure {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    figcaption {
-        @include rem( font-size, $font-size-caption );
-      font-family: $font-stack-sansserif;
-      font-style: italic;
-      text-align: center;
-      
-        @include rem( margin-top, math.div( $default-spacing, 2 ) );
-    }
+		// Responsive images
+		img {
+		
+			display: block;
+			max-width: 100%;
+			height: auto;
+			margin-left: auto;
+			margin-right: auto;
 
-    footer ~ noscript img {
-        width:1px;
-        height:1px;
-    }
+			@supports (margin-block: 1em) {
+				@include unset( margin-left margin-right max-width height );
+				margin-inline: auto;
+				block-size: auto;
+				max-inline-size: 100%;
+			}
+	
+			&[style] {
+					width: auto !important;
+					max-width: 100% !important;
+					height: auto !important;
+
+					@supports (margin-block: 1em) {
+						@include unset( width max-width height );
+						inline-size: auto !important;
+						max-inline-size: 100% !important;
+						block-size: auto !important;
+					}
+			}
+				
+				&[width] {
+					width: auto;
+
+					@supports (margin-block: 1em) {
+						@include unset( width );
+						inline-size: auto;
+					}
+				}
+	
+		}
+		picture {
+			display: block;
+		}
+		// Noscript fallback for picture
+		.noscript-picture {
+			margin: 0;
+			padding: 0;
+		}
+		
+		// Audio
+		audio {
+			width: 100%;
+
+			@supports (margin-block: 1em) {
+				@include unset( width );
+				inline-size: 100%;
+			}
+		}
+		
+		.media-container {
+			max-width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+
+			@supports (margin-block: 1em) {
+				@include unset( max-width margin-left margin-right );
+				max-inline-size: 600px;
+				margin-inline: auto;
+			}
+		}
+		
+		figure {
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+
+			@supports (margin-block: 1em) {
+				@include unset( margin-left margin-right );
+				margin-inline: auto;
+			}
+		}
+		
+		figcaption {
+			@include rem( font-size, $font-size-caption );
+			font-family: $font-stack-sansserif;
+			font-style: italic;
+			text-align: center;
+			
+			@include rem( margin-top, math.div( $default-spacing, 2 ) );
+
+			@supports (margin-block: 1em) {
+				@include unset( margin-top );
+				@include rem( margin-block-start, math.div( $default-spacing, 2 ), false );
+			}
+		}
+
+		footer ~ noscript img {
+			width: 1px;
+			height: 1px;
+
+			@supports (margin-block: 1em) {
+				@include unset( width height );
+				inline-size: 1px;
+				block-size: 1px;
+			}
+		}
 }
 
 @include breakup-breakpoint( "medium" ) {
 
-    .media-container--right {
-        float: right;
-        max-width: 250px;
-        @include rem( margin-left, $default-spacing );
-        margin-right: 0;
-    }
+		.media-container--right {
+			float: right;
+			max-width: 250px;
+			@include rem( margin-left, $default-spacing );
+			margin-right: 0;
+
+			@supports (margin-block: 1em) {
+				@include unset( float max-width margin-left margin-right );
+				float: inline-end;
+				max-inline-size: 250px;
+				margin-inline-start: $default-spacing;
+				margin-inline-end: 0;
+			}
+		}
 
 }
