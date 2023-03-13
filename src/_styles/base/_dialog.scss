@@ -39,8 +39,7 @@ dialog + .backdrop {
 
 	@supports (margin-block: 1em) {
 		@include unset( top right bottom left );
-		inset-block: 0;
-		inset-inline: 0;
+		inset: 0;
 	}
 }
 
@@ -50,8 +49,7 @@ dialog + .backdrop {
 
 	@supports (margin-block: 1em) {
 		@include unset( top right bottom left );
-		inset-block: 0;
-		inset-inline: 0;
+		inset: 0;
 	}
 }
 

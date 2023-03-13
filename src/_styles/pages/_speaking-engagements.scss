@@ -16,10 +16,22 @@
 			
 			@include rem( margin, 20 auto 0 );
 
+			@supports (margin-block: 1em) {
+				margin: unset;
+				@include rem( margin-block, 20 0, false );
+				margin-inline: auto;
+			}
+
 		}
 
 		@include breakup-breakpoint('full') {
 			@include rem( margin, 20 -80 0 );
+
+			@supports (margin-block: 1em) {
+				margin: unset;
+				@include rem( margin-block, 20 0, false );
+				@include rem( margin-inline, -80, false );
+			}
 		}
 
 	}
@@ -83,6 +95,11 @@
 			position: relative;
 			overflow: hidden;
 
+			@supports (margin-block: 1em) {
+				margin: unset;
+				@include rem( margin-block, 0 20, false );
+			}
+
 			html & a {
 				color: $color-white;
 				text-decoration: none;
@@ -99,6 +116,11 @@
 				@include rem( font-size, 18 );
 				line-height: 1.1;
 				@include rem( margin-bottom, 12 );
+
+				@supports (margin-block: 1em) {
+					margin-bottom: unset;
+					@include rem( margin-block-end, 12, false );
+				}
 
 				&--future .listing__item__title {
 					@include rem( font-size, 24 );
@@ -126,6 +148,11 @@
 
 				transition: opacity .35s ease-in-out, transform .35s linear;
 
+				@supports (margin-block: 1em) {
+					@include unset( top right bottom left );
+					inset: 0;
+				}
+
 			}
 
 			& a:focus .event__location-picture,
@@ -148,11 +175,11 @@
 			//&__presentation-type {
 			//  font-weight: bold;
 			//}
-//
+			//
 			//&__presentation-title {
 			//  font-style: italic;
 			//}
-//
+			//
 			//&__presentation-with {
 			//  font-size: .8em;
 			//  white-space: nowrap;
@@ -179,24 +206,49 @@
 			// 2 events per row, 20px gutter
 			flex: 0 0 calc( 50% - 1.25rem / 2 );
 			margin-left: 1.25rem;
+
+			@supports (margin-block: 1em) {
+				margin-left: unset;
+				margin-inline-start: 1.25rem;
+			}
 			
 			/* Remove left margin for row starters */
 			&:nth-child(odd) {
 				margin-left: 0;
+
+				@supports (margin-block: 1em) {
+					margin-left: unset;
+					margin-inline-start: 0;
+				}
 			}
 			
 			// Reset margins on "future" events & remove the correct one
 			&--future:nth-child(odd) {
-					margin-left: 1.25rem;
+				margin-left: 1.25rem;
+
+				@supports (margin-block: 1em) {
+					margin-left: unset;
+					margin-inline-start: 1.25rem;
+				}
 			}
 			&--future:nth-child(even) {
-					margin-left: 0;
+				margin-left: 0;
+
+				@supports (margin-block: 1em) {
+					margin-left: unset;
+					margin-inline-start: 0;
+				}
 			}
 			
 			// first if more >= 1
 			&--future:nth-last-child(n+1):first-child {
 				flex: 0 0 100%;
 				margin-left: 0;
+
+				@supports (margin-block: 1em) {
+					margin-left: unset;
+					margin-inline-start: 0;
+				}
 
 				.listing__item__title {
 					@include rem( font-size, 36 );
@@ -214,11 +266,21 @@
 			&:nth-child(even),
 			&:nth-child(odd) {
 				margin-left: 1.25rem;
+
+				@supports (margin-block: 1em) {
+					margin-left: unset;
+					margin-inline-start: 1.25rem;
+				}
 			}
 			
 			// Normal Grid margin removal
 			&:nth-child(3n+1) {
 				margin-left: 0;
+
+				@supports (margin-block: 1em) {
+					margin-left: unset;
+					margin-inline-start: 0;
+				}
 			}
 			
 			&--future {
@@ -228,6 +290,11 @@
 						flex: 0 0 100%;
 						margin-left: 0;
 
+						@supports (margin-block: 1em) {
+							margin-left: unset;
+							margin-inline-start: 0;
+						}
+
 					.listing__item__title {
 						@include rem( font-size, 36 );
 					}
@@ -236,11 +303,21 @@
 				// Margin reset
 				&:nth-child(3n+1) {
 					margin-left: 1.25rem;
+
+					@supports (margin-block: 1em) {
+						margin-left: unset;
+						margin-inline-start: 1.25rem;
+					}
 				}
 
 				// Quantity + nth
 				&:nth-last-child(n+2):first-child ~ .event--future:nth-child(3n) {
 					margin-left: 0;
+
+					@supports (margin-block: 1em) {
+						margin-left: unset;
+						margin-inline-start: 0;
+					}
 				}
 
 				// first two if more >= 2

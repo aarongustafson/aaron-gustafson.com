@@ -16,6 +16,13 @@ title {
 
 entry {
   margin: 25px 0 20px 0;
+
+	@supports (margin-block: 1em) {
+		margin: unset;
+		margin-block-start: 25px;
+		margin-block-end: 20px;
+		margin-inline: 0;
+	}
 }
 
 entry > title {
@@ -28,6 +35,11 @@ entry > link::after {
   font-size: small;
   margin-top: 6px;
   margin-bottom: 6px;
+
+	@supports (margin-block: 1em) {
+		margin: unset;
+		margin-block: 6px;
+	}
 }
 
 generator,

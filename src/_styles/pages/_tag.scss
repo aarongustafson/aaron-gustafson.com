@@ -6,6 +6,11 @@ body.tag-page {
 	.layout-container__primary {
 		float: none;
 		width: auto;
+
+		@supports (margin-block: 1em) {
+			width: unset;
+			inline-size: auto;
+		}
 	}
 
 }
