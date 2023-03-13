@@ -15,6 +15,17 @@ dialog {
   background: white;
   color: black;
   display: block;
+
+	@supports (margin-block: 1em) {
+		@include unset( left right width height margin );
+		block-size: fit-content;
+		inline-size: fit-content;
+		inset-inline: 0;
+		margin-block: auto;
+		margin-inline: auto;
+		padding-block: 1em;
+		padding-inline: 1em;
+	}
 }
 
 dialog:not([open]) {
@@ -25,15 +36,32 @@ dialog + .backdrop {
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
   background: rgba(0,0,0,0.1);
+
+	@supports (margin-block: 1em) {
+		@include unset( top right bottom left );
+		inset-block: 0;
+		inset-inline: 0;
+	}
 }
 
 ._dialog_overlay {
   position: fixed;
   top: 0; right: 0; bottom: 0; left: 0;
+
+	@supports (margin-block: 1em) {
+		@include unset( top right bottom left );
+		inset-block: 0;
+		inset-inline: 0;
+	}
 }
 
 dialog.fixed {
   position: fixed;
   top: 50%;
   transform: translate(0, -50%);
+
+	@supports (margin-block: 1em) {
+		top: unset;
+		inset-block-start: 50%;
+	}
 }
