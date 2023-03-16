@@ -87,6 +87,12 @@ $social-buttons: (
 		padding: 0;
 		list-style: none;
 		gap: .5rem;
+
+		@supports (margin-block: 1em) {
+			margin: unset;
+			margin-block: .5rem 0;
+			margin-inline: 0;
+		}
 		
 		&--share {
 			justify-content: flex-start;
@@ -100,7 +106,7 @@ $social-buttons: (
 
 	.social-link {
 
-		background: $color-green;
+		background-color: $color-green;
 		@include rem( border-radius, 6 );
 
 		display: inline-block;
@@ -108,20 +114,28 @@ $social-buttons: (
 		@include rem( margin-top, math.div( $default-spacing, 2 ) );
 		padding: 4px 8px;
 
+		@supports (margin-block: 1em) {
+			@include unset( margin margin-top padding );
+			@include rem( margin-block, math.div( $default-spacing, 2 ) 0, false );
+			margin-inline: .25em;
+			padding-block: 4px;
+			padding-inline: 8px;
+		}
+
 		&:link,
 		&:visited,
 		&:hover,
 		&:focus,
 		&:active {
-		color: $color-white;
+			color: $color-white;
 		}
 
 		@each $site, $config in $social-buttons {
 			
 			&--#{$site} {
 
-				background: map-get( $config, 'color' );
-				transition: background .5s;
+				background-color: map-get( $config, 'color' );
+				transition: background-color .5s;
 
 				&:hover,
 				&:focus,
@@ -135,6 +149,13 @@ $social-buttons: (
 				@include rem( width, map-get( $config, 'size' ) );
 				@include rem( height, map-get( $config, 'size' ) );
 				@include rem( margin-top, map-get( $config, 'offset' ) );
+
+				@supports (margin-block: 1em) {
+					@include unset( width height margin-top );
+					@include rem( inline-size, map-get( $config, 'size' ), false );
+					@include rem( block-size, map-get( $config, 'size' ), false );
+					@include rem( margin-block, map-get( $config, 'offset' ), false );
+				}
 			}
 
 		}
@@ -145,6 +166,12 @@ $social-buttons: (
 			margin: 0;
 			padding: 4px 6px;
 			transform: scale(.75);
+
+			@supports (margin-block: 1em) {
+				padding: unset;
+				padding-block: 4px;
+				padding-inline: 6px;
+			}
 		}
 
 		&__icon  {
@@ -156,11 +183,10 @@ $social-buttons: (
 			circle {
 				fill: $color-white;
 			}
-
 		}
 
 		&__text {
-				@include breakup-placeholder( hidden );
+			@include breakup-placeholder( hidden );
 		}
 
 	}

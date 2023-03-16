@@ -1,15 +1,20 @@
 /*------------------------------------*\
-    Rules
+		Rules
 \*------------------------------------*/
 
 @include breakup-breakpoint( "global" ) {
-    .rule {
-        @include rem( max-width, 220 );
-    }
-}    
+	.rule {
+		@include rem( max-width, 220 );
+
+		@supports (max-inline-size: 1em) {
+			max-width: unset;
+			@include rem( max-inline-size, 220 );
+		}
+	}
+}
 
 @include breakup-breakpoint( "medium" ) {
-    .rule--optional {
-        display: none;
-    }
+	.rule--optional {
+		display: none;
+	}
 }

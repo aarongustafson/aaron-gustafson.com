@@ -1,124 +1,170 @@
 /*------------------------------------*\
-    Webmentions
+		Webmentions
 \*------------------------------------*/
 
 @use 'sass:math';
 
 @include breakup-breakpoint( "global" ) {
-    
-    $avatar-width: 48;
-    
-    .webmentions {
-        @include rem( font-size, $font-size-default );
-        @include rem( margin-top, math.div( $default-spacing, 2 ) );
+	
+	$avatar-width: 48;
+	
+	.webmentions {
+		@include rem( font-size, $font-size-default );
+		@include rem( margin-top, math.div( $default-spacing, 2 ) );
 
-        h2 {
-          @include rem( margin-top, $default-spacing );
-          @include rem( margin-bottom, math.div( $default-spacing, 2 ) );
-        }
+		@supports (margin-block: 1em) {
+			margin-top: unset;
+			@include rem( margin-block-start, math.div( $default-spacing, 2 ), false );
+		}
 
-        &__list {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        
-        &__item {
-            clear: both;
+		h2 {
+			@include rem( margin-top, $default-spacing );
+			@include rem( margin-bottom, math.div( $default-spacing, 2 ) );
 
-            border-top: 1px solid $color-border;
-            margin: 0;
-            @include rem( padding, $default-spacing 0 $default-spacing ( $avatar-width + $default-spacing ) );
-            @include rem( min-height, $avatar-width );
-
-            position: relative;
-
-            &:first-child {
-                border-top: 0;
-            }
-        }
-    }
-    
-    .webmention {
-
-        &__author {
-            @include rem( font-size, $font-size-small );
-            font-weight: $font-weight-sansserif-bold;
-        }
-        
-        &--author-starts .h-card .p-name {
-            @include breakup-placeholder( hidden );
-        }
-        
-        &__author__photo {
-            border-radius: 3px;
-
-            display: block;
-            @include rem( width, $avatar-width );
-            @include rem( height, $avatar-width );
-
-            position: absolute;
-            @include rem( top, $default-spacing );
-            
-            left: 0;
-        }
-        
-        &__title,
-        &__content,
-        &__meta {
-            margin: 0;
-        }
-        
-        &__meta {
-            color: $color-grey;
-            @include rem( font-size, $font-size-small );
-						text-align: right;
-						text-align: end;
-
-            html.dark-mode & {
-              color: $color-grey-light;
-            }
-        }
-
-        &--activity &__author,
-        &--activity &__title {
-            display: inline;
-        }
-
-        &--like,
-        &--repost {
-
-            border: 0;
-            display: inline;
-            margin: 0 5px 0 0;
-            padding: 0;
-
-            .webmention__author {
-                display: inline;
-
-                &__photo {
-                    border: 1px solid;
-                    border-radius: 50%;
-                    
-                    display: inline;
-                    max-width: 48px;
-                    margin: 0;
-                    
-                    position: static;
-                }
-
-                a {
-                    background-image: none !important;
-                }
-            }
-        }
-    }
-
-		.webmentions__list {
-			.webmention--like,
-			.webmention--repost {
-				margin-right: -.5em;
+			@supports (margin-block: 1em) {
+				@include unset( margin-top margin-bottom );
+				@include rem( margin-block, $default-spacing math.div( $default-spacing, 2 ), false );
 			}
 		}
+
+		&__list {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		&__item {
+			clear: both;
+
+			border-top: 1px solid $color-border;
+			margin: 0;
+			@include rem( padding, $default-spacing 0 $default-spacing ( $avatar-width + $default-spacing ) );
+			@include rem( min-height, $avatar-width );
+
+			position: relative;
+
+			@supports (margin-block: 1em) {
+				@include unset( border-top padding min-height );
+				border-block-start: 1px solid $color-border;
+				@include rem( padding-block, $default-spacing, false );
+				padding-inline: 0;
+				@include rem( padding-inline, ( $avatar-width + $default-spacing ) 0, false );
+				min-block-size: $avatar-width;
+			}
+
+			&:first-child {
+				border-top: 0;
+
+				@supports (margin-block: 1em) {
+					border-top: unset;
+					border-block-start: 0;
+				}
+			}
+		}
+	}
+	
+	.webmention {
+
+		&__author {
+			@include rem( font-size, $font-size-small );
+			font-weight: $font-weight-sansserif-bold;
+		}
+		
+		&--author-starts .h-card .p-name {
+			@include breakup-placeholder( hidden );
+		}
+		
+		&__author__photo {
+			border-radius: 3px;
+
+			display: block;
+			@include rem( width, $avatar-width );
+			@include rem( height, $avatar-width );
+
+			position: absolute;
+			@include rem( top, $default-spacing );
+			left: 0;
+
+			@supports (margin-block: 1em) {
+				@include unset( width height top left );
+				@include rem( inline-size, $avatar-width );
+				@include rem( block-size, $avatar-width );
+				inset-block-start: $default-spacing;
+				inset-inline-start: 0;
+			}
+		}
+		
+		&__title,
+		&__content,
+		&__meta {
+			margin: 0;
+		}
+		
+		&__meta {
+			color: $color-grey;
+			@include rem( font-size, $font-size-small );
+			text-align: right;
+			text-align: end;
+
+			html.dark-mode & {
+				color: $color-grey-light;
+			}
+		}
+
+		&--activity &__author,
+		&--activity &__title {
+			display: inline;
+		}
+
+		&--like,
+		&--repost {
+
+			border: 0;
+			display: inline;
+			margin: 0 5px 0 0;
+			padding: 0;
+
+			@supports (margin-block: 1em) {
+				margin: 0;
+				margin-inline-end: 5px;
+			}
+
+			.webmention__author {
+				display: inline;
+
+				&__photo {
+					border: 1px solid;
+					border-radius: 50%;
+					
+					display: inline;
+					max-width: 48px;
+					margin: 0;
+					
+					position: static;
+
+					@supports (margin-block: 1em) {
+						max-width: unset;
+						max-inline-size: 48px;
+					}
+				}
+
+				a {
+						background-image: none !important;
+				}
+			}
+		}
+	}
+
+	.webmentions__list {
+		.webmention--like,
+		.webmention--repost {
+			margin-right: -.5em;
+
+			@supports (margin-block: 1em) {
+				margin-right: unset;
+				margin-inline-end: -.5em;
+			}
+		}
+	}
 
 }

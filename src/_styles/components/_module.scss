@@ -5,17 +5,22 @@
 @use 'sass:math';
 
 @include breakup-breakpoint( "global" ) {
-    
-    .module {
-        
-        &__title {
-            @include rem( font-size, $font-size-h3 );
-        }
-        
-        * + * {
-            @include rem( margin-top, math.div( $default-spacing, 2 ) );
-        }
-        
-    }
-    
+
+	.module {
+
+		&__title {
+			@include rem( font-size, $font-size-h3 );
+		}
+
+		* + * {
+			@include rem( margin-top, math.div( $default-spacing, 2 ) );
+
+			@supports (margin-block: 1em) {
+				margin-top: unset;
+				@include rem( margin-block-start, math.div( $default-spacing, 2 ), false );
+			}
+		}
+			
+	}
+
 }

@@ -3,50 +3,70 @@ Navigation
 \*------------------------------------*/
 
 @include breakup-breakpoint( "global" ) {
-  
-  [role=navigation] {
-    
-    @include rem( font-size, $font-size-small );
-    text-align: center;
-    
-    @include rem( padding-bottom, $default-spacing );
-    
-    p {
-      margin: 0;
-    }
-    
-  }
-  
-  .main__navigation {
-    
-    a:link,
-    a:visited,
-    a:hover,
-    a:focus {
-      text-decoration: none;
-    }
-  }
-  
+	
+	[role=navigation] {
+		
+		@include rem( font-size, $font-size-small );
+		text-align: center;
+		
+		@include rem( padding-bottom, $default-spacing );
+
+		@supports (margin-block: 1em) {
+			@include unset( padding-bottom );
+			padding-block-end: $default-spacing;
+		}
+		
+		p {
+			margin: 0;
+		}
+		
+	}
+	
+	.main__navigation {
+		
+		a:link,
+		a:visited,
+		a:hover,
+		a:focus {
+			text-decoration: none;
+		}
+	}
+	
 }
 
 @include breakup-breakpoint( "medium" ) {
-  
-  .main-navigation {
-    
-    display: flex;
-    flex-direction: row;
-    
-    &__item {
-      padding: .1em .5em;
-      
-      &:first-child {
-        padding-left: 0;
-      }
-      &:last-child {
-        padding-right: 0;
-      }
-    }
-    
-  }
-  
+	
+	.main-navigation {
+		
+		display: flex;
+		flex-direction: row;
+		
+		&__item {
+			padding: .1em .5em;
+			
+			&:first-child {
+				padding-left: 0;
+			}
+			&:last-child {
+				padding-right: 0;
+			}
+
+			@supports (margin-block: 1em) {
+				padding: unset;
+				padding-block: .1em;
+				padding-inline: .5em;
+
+				&:first-child {
+					padding-left: unset;
+					padding-inline-start: 0;
+				}
+				&:last-child {
+					padding-right: unset;
+					padding-inline-end: 0;
+				}
+			}
+		}
+		
+	}
+	
 }

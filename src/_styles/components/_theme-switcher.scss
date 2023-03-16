@@ -7,6 +7,14 @@
 	padding: 8px;
 	border: 1px solid $color-white;
 
+	@supports (margin-block: 1em) {
+		@include unset( top right padding  );
+		@include rem( inset-block-start, 5px, false );
+		@include rem( inset-inline-end, 5px, false );
+		@include rem( padding-block, 8px, false );
+		@include rem( padding-inline, 8px, false );
+	}
+
 	html.dark-mode & {
 		border-color: transparent;
 	}
@@ -14,6 +22,12 @@
 	svg {
 		width: 20px;
 		height: 20px;
+
+		@supports (inline-size: 1em) {
+			@include unset( width height );
+			inline-size: 20px;
+			block-size: 20px;
+		}
 	}
 
 	path {

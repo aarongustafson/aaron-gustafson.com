@@ -1,47 +1,58 @@
 /*------------------------------------*\
-    Page
+		Page
 \*------------------------------------*/
 
 @include breakup-breakpoint( "global" ) {
 
-    .page {
-        
-        &__title {
-            @include rem( margin-bottom, $default-spacing );
-        }
-        
-        &__footer {
-            border-top: 1px solid $color-rule;
-            @include rem( padding-top, $default-spacing );
-        }
+	.page {
 
-    }
-    
+		&__title {
+			@include rem( margin-bottom, $default-spacing );
+
+			@supports (margin-block: 1em) {
+				margin-bottom: unset;
+				@include rem( margin-block-end, $default-spacing, false );
+			}
+		}
+		
+		&__footer {
+			border-top: 1px solid $color-rule;
+			@include rem( padding-top, $default-spacing );
+
+			@supports (margin-block: 1em) {
+				@include unset( border-top padding-top );
+				border-block-start: 1px solid $color-rule;
+				@include rem( padding-block-start, $default-spacing, false );
+			}
+		}
+
+	}
+	
 }
 
 @include breakup-breakpoint( "medium" ) {
 
-    @supports (display:flex) {
+	@supports (display:flex) {
 
-        body {
-            display: flex;
-            flex-direction: column;
-        }
-        .alert,
-        [role=banner] {
-            order: 1;
-        }
-        [role=navigation] {
-            order: 2;
-        }
-        [role=main] {
-            order: 3;
-            flex: 2;
-        }
-        [role=contentinfo] {
-            order: 4;
-        }
+		body {
+			display: flex;
+			flex-direction: column;
+		}
+		.alert,
+		[role=banner] {
+				order: 1;
+		}
+		[role=navigation] {
+				order: 2;
+		}
+		[role=main] {
+				order: 3;
+				flex: 2;
+		}
+		[role=contentinfo] {
+				order: 4;
+		}
 
-    }
-    
+	}
+
 }

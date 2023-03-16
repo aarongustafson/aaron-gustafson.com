@@ -4,52 +4,71 @@
 
 @include breakup-breakpoint( "global" ) {
 
-    .script {
-        
-        &__stage-direction {
-            font-style: italic;
-            
-            &::before {
-                content: "[";
-            }
-            &::after {
-                content: "]";
-            }
-            
-        }
-        
-        &__dialog {
-            list-style: none;
-            margin-left: 0;
-        }
-        
-        &__item {
-            margin-left: 0;
-        }
-        
-        &__statement {
-            font-style: normal;
-            
-            margin-top: 0;
-            margin-left: 0;
-            padding-left: 0;
-            
-            * + * {
-                margin-top: 0;
-            }
-        }
-        
-        &__speaker {
-            display: inline;
-            font-style: normal;
-            font-weight: bold;
-            
-            &__description {
-                font-style: normal;
-                font-weight: normal;
-            }
-            
-        }
-    
-    }
+	.script {
+		
+		&__stage-direction {
+			font-style: italic;
+			
+			&::before {
+					content: "[";
+			}
+			&::after {
+					content: "]";
+			}	
+		}
+		
+		&__dialog {
+			list-style: none;
+			margin-left: 0;
+
+			@supports (margin-inline: 1em) {
+				margin-left: unset;
+				margin-inline-start: 0;
+			}
+		}
+		
+		&__item {
+			margin-left: 0;
+
+			@supports (margin-inline: 1em) {
+				margin-left: unset;
+				margin-inline-start: 0;
+			}
+		}
+		
+		&__statement {
+			font-style: normal;
+			
+			margin-top: 0;
+			margin-left: 0;
+			padding-left: 0;
+			
+			@supports (margin-inline: 1em) {
+				@include unset( margin-top margin-left padding-left );
+				margin-block-start: 0;
+				margin-inline-start: 0;
+				padding-inline-start: 0;
+			}
+
+			* + * {
+				margin-top: 0;
+
+				@supports (margin-inline: 1em) {
+					margin-top: unset;
+					margin-block-start: 0;
+				}
+			}
+		}
+		
+		&__speaker {
+			display: inline;
+			font-style: normal;
+			font-weight: bold;
+
+			&__description {
+				font-style: normal;
+				font-weight: normal;
+			}
+		}
+	}
 }

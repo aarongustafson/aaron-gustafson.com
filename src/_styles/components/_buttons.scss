@@ -24,6 +24,12 @@ Buttons
 		font-weight: bold;
 
 		transition: background-color $default-transition, color $default-transition;
+
+		@supports (margin-block: 1em) {
+			@include unset( padding );
+			padding-block: 10px;
+			padding-inline: 15px;
+		}
 		
 		&:hover,
 		&:focus {
@@ -35,6 +41,12 @@ Buttons
 			height: 1em;
 			margin-left: .15em;
 			fill: $color-white;
+
+			@supports (margin-block: 1em) {
+				@include unset( height margin-left );
+				margin-inline-start: .15em;
+				block-size: 1em;
+			}
 		}
 
 		&[disabled] {

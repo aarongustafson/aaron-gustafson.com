@@ -21,6 +21,12 @@
         @include breakup-placeholder( small-caps );
         @include rem( margin, 2 0 0 );
 
+				@supports (margin-block: 1em) {
+					margin: unset;
+					@include rem( margin-block, 2 0, false );
+					margin-inline: 0;
+				}
+
         html.dark-mode & {
           color: $color-text-dark-light;
         }
@@ -33,6 +39,11 @@
       &__content,
       &__link {
         margin-top: 0;
+
+				@supports (margin-block: 1em) {
+					margin-top: unset;
+					margin-block-start: 0;
+				}
       }
       
     }
@@ -43,6 +54,11 @@
     
     &--links &__item--link {
       @include rem( margin-bottom, math.div( $default-spacing, 2 ) );
+
+			@supports (margin-block: 1em) {
+				margin-bottom: unset;
+				@include rem( margin-block-end, math.div( $default-spacing, 2 ), false );
+			}
     }
 
     &--grid {
@@ -64,17 +80,33 @@
 
       & + .listing__item {
         @include rem( margin-top, $default-spacing );
+
+				@supports (margin-block: 1em) {
+					margin-top: unset;
+					@include rem( margin-block-start, $default-spacing, false );
+				}
       }
       .listing__item__type {
         grid-area: icon;
         svg { 
           width: 24px;
           height: auto;
+
+					@supports (margin-block: 1em) {
+						@include unset( width height );
+						inline-size: 24px;
+						block-size: auto;
+					}
         }
       }
       .listing__item__title {
         grid-area: title;
         margin-top: 0;
+
+				@supports (margin-block: 1em) {
+					margin-top: unset;
+					margin-block-start: 0;
+				}
       }
       .listing__item__meta {
         grid-area: meta;
@@ -99,6 +131,11 @@
       
       figcaption {
         margin-top: 0;
+
+				@supports (margin-block: 1em) {
+					margin-top: unset;
+					margin-block-start: 0;
+				}
       }
     }
     
@@ -112,6 +149,16 @@
       &:nth-child(2n+1) {
         @include rem( margin-right, $default-spacing );
       }
+
+			@supports (margin-block: 1em) {
+				@include unset( margin-bottom margin-top );
+				@include rem( margin-block, $default-spacing 0, false );
+
+				&:nth-child(2n+1) {
+					margin-right: unset;
+					@include rem( margin-inline-end, $default-spacing, false );
+				}
+			}
     }
     
   }
@@ -125,6 +172,12 @@
   .listing--minigrid,
   .listing--icons {
     @include rem( margin, 20 -80 0 );
+
+		@supports (margin-block: 1em) {
+			@include unset( margin );
+			@include rem( margin-block, 20 0, false );
+			@include rem( margin-inline, -80, false );
+		}
   }
 
 }

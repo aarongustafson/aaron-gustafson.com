@@ -10,24 +10,48 @@
 				padding: .5em 1em;
 				margin: -.5em -1em;
 
+				@supports (margin-block: 1em) {
+					@include unset( padding margin );
+					padding-block: .5em;
+					padding-inline: 1em;
+					margin-block: -.5em;
+					margin-inline: -1em;
+				}
+
 			}
 
 		.footnotes {
 				
-				ol {
-						@include rem( font-size, $font-size-small );
-						
-						margin-left: 0;
-						padding-left: 2em;
-				}
+			ol {
+				@include rem( font-size, $font-size-small );
 				
-				a[rev=footnote] {
-						margin-left: .5em;
-				}
+				margin-left: 0;
+				padding-left: 2em;
 
-				* + * {
-						margin-top: 0;
+				@supports (margin-block: 1em) {
+					@include unset( margin-left padding-left );
+					margin-inline-start: 0;
+					padding-inline-start: 2em;
 				}
+			}
+			
+			a[rev=footnote] {
+				margin-left: .5em;
+
+				@supports (margin-block: 1em) {
+					margin-left: unset;
+					margin-inline-start: .5em;
+				}
+			}
+
+			* + * {
+				margin-top: 0;
+
+				@supports (margin-block: 1em) {
+					margin-top: unset;
+					margin-block-start: 0;
+				}
+			}
 				
 		}
 

@@ -4,11 +4,11 @@
 
 @include breakup-breakpoint( "global" ) {
 
-    .interview {
+	.interview {
 
-        &__attribution {
-            font-weight: bold;
-        }
-    
-    }
+		&__attribution {
+				font-weight: bold;
+		}
+	
+	}
 }

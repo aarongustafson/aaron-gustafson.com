@@ -1,19 +1,29 @@
 /*------------------------------------*\
-    Events
+		Events
 \*------------------------------------*/
 
 @include breakup-breakpoint( "global" ) {
 
-    .event {
-        
-        &__content {
-            @include rem( margin-top, 2 );
-        }
+	.event {
 
-        &__location {
-          display: block;
-          margin-top: 0;
-        }
-        
-    }
+		&__content {
+			@include rem( margin-top, 2 );
+
+			@supports (margin-block: 1em) {
+				margin-top: unset;
+				@include rem( margin-block-start, 2, false );
+			}
+		}
+
+		&__location {
+			display: block;
+			margin-top: 0;
+
+			@supports (margin-block: 1em) {
+				margin-top: unset;
+				margin-block-start: 0;
+			}
+		}
+
+	}
 }

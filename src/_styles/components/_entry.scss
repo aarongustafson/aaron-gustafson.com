@@ -36,12 +36,22 @@ Blog Entry
 
 			button {
 				@include rem( margin-top, 6 );
+
+				@supports (margin-block: 1em) {
+					margin-top: unset;
+					@include rem( margin-block-start, 6, false );
+				}
 			}
 		}
 		
 		&__jump-links {
 			@include breakup-placeholder( delist );
 			margin-top: 0;
+
+			@supports (margin-block: 1em) {
+				margin-top: unset;
+				margin-block-start: 0;
+			}
 		}
 		
 		&__jump {
@@ -60,27 +70,59 @@ Blog Entry
 		
 		&--teaser &__title {
 			width: auto;
+
+			@supports (margin-block: 1em) {
+				width: unset;
+				inline-size: auto;
+			}
 		}
 		
 		&--teaser &__footer {
 			border-top: 0;
 			padding-top: 0;
+
+			@supports (margin-block: 1em) {
+				@include unset( border-top padding-top );
+				border-block-start: 0;
+				padding-block-start: 0;
+			}
 		}
 		
 		&__content {
 			& > ul {
 				margin-left: 1.2rem;
+
+				@supports (margin-inline: 1em) {
+					margin-left: unset;
+					margin-inline-start: 1.2rem;
+				}
 			}
 			& > blockquote {
 				padding: 0 1.5rem;
+
+				@supports (padding-block: 1em) {
+					padding: unset;
+					padding-block: 0;
+					padding-inline: 1.5rem;
+				}
 			}
 			hr {
 				@include rem( max-width, 220 );
+
+				@supports (max-inline-size: 1em) {
+					max-width: unset;
+					@include rem( max-inline-size, 220, false );
+				}
 			}
 		}
 
 		&__related &:first-of-type {
 			@include rem( margin-top, $default-spacing );
+
+			@supports (margin-block: 1em) {
+				margin-top: unset;
+				@include rem( margin-block-start, $default-spacing, false );
+			}
 		}
 
 		&__series {
@@ -108,6 +150,13 @@ Blog Entry
 				border-top: 1px solid $color-rule;
 				@include rem( margin-top, $default-spacing );
 				@include rem( padding-top, $default-spacing );
+
+				@supports (margin-block: 1em) {
+					@include unset( border-top margin-top padding-top );
+					border-block-start: 1px solid $color-rule;
+					@include rem( margin-block-start, $default-spacing, false );
+					@include rem( padding-block-start, $default-spacing, false );
+				}
 			}
 			& > * {
 				order: 3;
@@ -120,6 +169,11 @@ Blog Entry
 			
 			& + & {
 				@include rem(margin-top, $default-spacing * 2);
+
+				@supports (margin-block: 1em) {
+					margin-top: unset;
+					@include rem( margin-block-start, $default-spacing * 2, false );
+				}
 			}
 
 			.entry__type {
@@ -129,7 +183,15 @@ Blog Entry
 				width: 24px;
 				height: 24px;
 				padding: 10px;
-				
+
+				@supports (margin-block: 1em) {
+					@include unset( width height padding );
+					block-size: 24px;
+					inline-size: 24px;
+					padding-block: 10px;
+					padding-inline: 10px;
+				}
+
 				path {
 					fill: $color-white;
 				}
@@ -137,6 +199,11 @@ Blog Entry
 			
 			.entry__details {
 				@include rem( margin, 0 0 0 $table-spacing );
+
+				@supports (margin-block: 1em) {
+					margin: 0;
+					@include rem( margin-inline-start, $table-spacing, false );
+				}
 			}
 
 			.entry__meta {
@@ -146,6 +213,11 @@ Blog Entry
 				margin-top: 0;
 				
 				position: absolute;
+
+				@supports (margin-block: 1em) {
+					margin-top: unset;
+					margin-block-start: 0;
+				}
 
 				.entry__related & {
 					position: static;
@@ -162,9 +234,19 @@ Blog Entry
 			
 			dd + dt {
 				margin-top: 0;
+
+				@supports (margin-block: 1em) {
+					margin-top: unset;
+					margin-block-start: 0;
+				}
 			}
 			dd {
 				@include rem( padding-bottom, $default-spacing );
+
+				@supports (margin-block: 1em) {
+					padding-bottom: unset;
+					@include rem( padding-block-end, $default-spacing, false );
+				}
 			}
 		}
 	}
@@ -193,6 +275,18 @@ Blog Entry
 				
 				position: absolute;
 				left: 106%;
+
+				@supports (margin-block: 1em) {
+					@include unset( border-top border-left padding margin-left margin-top width left );
+					border-block-start: 0;
+					border-inline-start: 1px solid $color-grey-light;
+					padding-block: .2em;
+					padding-inline: 1em;
+					@include rem( margin-block-start, $default-spacing, false );
+					margin-inline-start: 1em;
+					inline-size: 25%;
+					inset-inline-start: 106%;
+				}
 			}
 
 		}
@@ -202,9 +296,20 @@ Blog Entry
 			top: 0;
 			bottom: 0;
 
+			@supports (margin-block: 1em) {
+				@include unset( margin-top top bottom );
+				margin-block-start: 0;
+				inset-block: 0;
+			}
+
 			dl {
 				position: sticky;
 				top: 5px;
+
+				@supports (margin-block: 1em) {
+					top: unset;
+					inset-block-start: 5px;
+				}
 			}
 		}
 		
@@ -214,12 +319,23 @@ Blog Entry
 
 		&__title {
 			width: 134%;
+
+			@supports (margin-block: 1em) {
+				width: unset;
+				inline-size: 134%;
+			}
 		}
 		
 		& + .rule {
 			position: relative;
 			left: 68%;
 			margin-left: -110px;
+
+			@supports (margin-block: 1em) {
+				@include unset( left margin-left );
+				inset-inline-start: 68%;
+				margin-inline-start: -110px;
+			}
 		}
 
 		&--with-hero &__content {
@@ -227,6 +343,12 @@ Blog Entry
 			padding-left: 120px;
 			padding-left: calc(100px + 1rem);
 			min-height: 120px;
+
+			@supports (margin-block: 1em) {
+				@include unset( padding-left min-height );
+				padding-inline-start: calc(100px + 1rem);
+				min-block-size: 120px;
+			}
 
 			.entry__thumbnail {
 				margin: 0;
@@ -236,6 +358,14 @@ Blog Entry
 				position: absolute;
 				top: 0;
 				left: 0;
+
+				@supports (margin-block: 1em) {
+					@include unset( width height top left );
+					inline-size: 100px;
+					block-size: 100px;
+					inset-block-start: 0;
+					inset-inline-start: 0;
+				}
 			}
 		}
 		
@@ -248,9 +378,19 @@ Blog Entry
 			
 			dd + dt {
 				@include rem( margin-top, $default-spacing );
+
+				@supports (margin-block: 1em) {
+					margin-top: unset;
+					@include rem( margin-block-start, $default-spacing, false );
+				}
 			}
 			dd {
 				padding-bottom: 0;
+
+				@supports (margin-block: 1em) {
+					padding-bottom: unset;
+					@include rem( padding-block-end, 0, false );
+				}
 			}
 		}
 	}

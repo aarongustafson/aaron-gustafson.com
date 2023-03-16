@@ -1,19 +1,19 @@
 /*------------------------------------*\
-    More
+		More
 \*------------------------------------*/
 
 @include breakup-breakpoint( "global" ) {
 
-    .more {
-    
-        @include breakup-placeholder( small-caps );
-        font-weight: bold;
-        white-space: nowrap;
-    
-        a {
-            border: 0;
-        }
-    
-    }
+	.more {
+
+		@include breakup-placeholder( small-caps );
+		font-weight: bold;
+		white-space: nowrap;
+
+		a {
+			border: 0;
+		}
+
+	}
 
 }

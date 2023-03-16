@@ -1,131 +1,190 @@
 /*------------------------------------*\
-    Search
+		Search
 \*------------------------------------*/
 
 @include breakup-breakpoint( "global" ) {
 
-  .form--search {
+	.form--search {
 
-    width: 95vw;
-    
-    [type=search] {
-      @include rem( font-size, $font-size-nav );
+		width: 95vw;
 
-      appearance: none;
-      border: 1px solid;
-      border-radius: 3px;
-      @include rem( margin, 0 5 0 0 );
-      @include rem( padding, 5 10 );
-      width: 100%;
-    }
+		@supports (margin-block: 1em) {
+			width: unset;
+			inline-size: 95vw;
+		}
+		
+		[type=search] {
+			@include rem( font-size, $font-size-nav );
 
-    button {
-      font-weight: bold;
-      @include rem( font-size, $font-size-small );
-      @include rem( padding, 7 15 );
-    }
+			appearance: none;
+			border: 1px solid;
+			border-radius: 3px;
+			@include rem( margin, 0 5 0 0 );
+			@include rem( padding, 5 10 );
+			width: 100%;
 
-  }
+			@supports (margin-block: 1em) {
+				@include unset( padding width );
+				margin: 0;
+				@include rem( margin-inline-end, 5, false );
+				@include rem( padding-block, 5, false );
+				@include rem( padding-inline, 10, false );
+				inline-size: 100%;
+			}
+		}
 
-  .form-control--search {
-    width: 70%;
-  }
+		button {
+			font-weight: bold;
+			@include rem( font-size, $font-size-small );
+			@include rem( padding, 7 15 );
 
-  // Better layout: Flexbox
-  @supports (display: flex) {
-    [role=search] {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      width: 100%;
-      @include rem( gap, $default-spacing );
-    } 
-  }
-  
+			@supports (margin-block: 1em) {
+				padding: unset;
+				@include rem( padding-block, 7, false );
+				@include rem( padding-inline, 15, false );
+			}
+		}
+
+	}
+
+	.form-control--search {
+		width: 70%;
+
+		@supports (margin-block: 1em) {
+			width: unset;
+			inline-size: 70%;
+		}
+	}
+
+	// Better layout: Flexbox
+	@supports (display: flex) {
+		[role=search] {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			width: 100%;
+			@include rem( gap, $default-spacing );
+
+			@supports (margin-block: 1em) {
+				width: unset;
+				inline-size: 100%;
+			}
+		} 
+	}
+	
 }
 
 @include breakup-media("screen and (max-width: #{$bp-medium-em})") {
-  #search {
-    display: block;
-    background: none;
-    border-width: 0;
-    position: relative;
-    width: auto;
-    height: auto;
-    padding: 0;
-  }
+	#search {
+		display: block;
+		background: none;
+		border-width: 0;
+		position: relative;
+		width: auto;
+		height: auto;
+		padding: 0;
+
+		@supports (margin-block: 1em) {
+			@include unset( width height );
+			inline-size: auto;
+			block-size: auto;
+		}
+	}
 }
 
 @include breakup-breakpoint( "medium" ) {
 
-    .form--search {
-      background: rgba( $color-white,.9 );
-      
-      box-sizing: content-box;
-      margin: 0;
-      
-      z-index: 1;
+		.form--search {
+			background: rgba( $color-white,.9 );
+			
+			box-sizing: content-box;
+			margin: 0;
+			
+			z-index: 1;
 
-      width: 80vw;
-  
-      html.dark-mode & {
-        background: rgba( $color-background-dark, .9 );
-      }
+			width: 80vw;
 
-      button {
-        @include rem( font-size, 22 );
-        @include rem( padding, 10 15 );
-      }
-    }
+			@supports (margin-block: 1em) {
+				width: unset;
+				inline-size: 80vw;
+			}
+	
+			html.dark-mode & {
+				background: rgba( $color-background-dark, .9 );
+			}
 
-    .form-control--search {
-        
-      @include rem( margin, 0 5 0 0 );
-      width: 100%;
-      
-      input[type=search] {
-        @include rem( font-size, $font-size-h2 );
-        box-sizing: border-box;
-        width: 100%;
-        margin: 0;
-      }
+			button {
+				@include rem( font-size, 22 );
+				@include rem( padding, 10 15 );
 
-    }
+				@supports (margin-block: 1em) {
+					padding: unset;
+					@include rem( padding-block, 10, false );
+					@include rem( padding-inline, 15, false );
+				}
+			}
+		}
 
-    /*
-    // Better layout: Flexbox
-    @supports (display: flex) {
-        
-        .form--search {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
-        
-        [role=search] {
-            flex-direction: column;
-            width: 70%;
-            
-            .form-control--search {
-                margin: 0;
-                width: auto;
-                
-                input[type=search] {
-                    @include rem( font-size, $font-size-h2 );
-                    
-                    box-sizing: border-box;
-                    @include rem( padding, 5 10 );
-                    width: 100%;
-                }
-            }
-            
-            button {
-                @include rem( font-size, $font-size-h2 );
-                @include rem( margin-top, $default-spacing );
-            }
-            
-        } 
-        
-    }
-    */
+		.form-control--search {
+				
+			@include rem( margin, 0 5 0 0 );
+			width: 100%;
+			
+			input[type=search] {
+				@include rem( font-size, $font-size-h2 );
+				box-sizing: border-box;
+				width: 100%;
+				margin: 0;
+			}
+
+			@supports (margin-block: 1em) {
+				@include unset( margin width );
+				margin: 0;
+				@include rem( margin-inline-end, 5, false );
+				inline-size: 100%;
+
+				input[type=search] {
+					width: unset;
+					inline-size: 100%;
+				}
+			}
+
+		}
+
+		/*
+		// Better layout: Flexbox
+		@supports (display: flex) {
+				
+				.form--search {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+				
+				[role=search] {
+						flex-direction: column;
+						width: 70%;
+						
+						.form-control--search {
+								margin: 0;
+								width: auto;
+								
+								input[type=search] {
+										@include rem( font-size, $font-size-h2 );
+										
+										box-sizing: border-box;
+										@include rem( padding, 5 10 );
+										width: 100%;
+								}
+						}
+						
+						button {
+								@include rem( font-size, $font-size-h2 );
+								@include rem( margin-top, $default-spacing );
+						}
+						
+				} 
+				
+		}
+		*/
 }

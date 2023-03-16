@@ -7,14 +7,22 @@
   .pagination {
     
     @include rem( margin-bottom, $default-spacing );
-    
     text-align: center;
-
     user-select: none;
 
     &__pages {
       @include rem( margin, 0 $default-spacing );
     }
+
+		@supports (margin-block: 1em) {
+			margin-bottom: unset;
+			@include rem( margin-block-end, $default-spacing, false );
+
+			&__pages {
+				margin: unset;
+				@include rem( margin-inline, $default-spacing, false );
+			}
+		}
 
   }
 
@@ -24,6 +32,11 @@
 
   .pagination {
     margin-left: 33%;
+
+		@supports (margin-block: 1em) {
+			margin-left: unset;
+			margin-inline-start: 33%;
+		}
   }
 
 }
