@@ -257,7 +257,7 @@ sitemap: false
         e.preventDefault();
 
         var link     = $link.value,
-            tweet    = document.getElementById('p_tweet').value,
+            tweet    = document.getElementById('p_tweet').value.replace('"','\"'),
             source   = document.getElementById('p_source').value,
             via_name = document.getElementById('p_via_name').value,
             via_url  = document.getElementById('p_via_url').value,
