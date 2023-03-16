@@ -67,7 +67,7 @@ These are by no means your only options and, as I mentioned, if you’re happy w
 
 Also: I want to make it clear that I am not advocating that you take on any of these responsibilities in addition to your current work. Far too often, organizations ask those of us with accessibility skills to do things beyond our job description without any additional compensation for that work. Please don’t fall into that trap as it will lead to burnout.
 
-## Codify coding best practices (Design Systems & Strategies)
+## Design Systems & Strategies: Codify coding best practices
 
 If you’re really interested in software development, an area that keeps you in that area is working on design systems.
 
@@ -94,7 +94,7 @@ If you’re in a larger organization that already has a design system, you could
 
 As an accessibility dev, your unique perspective and skills will help build greater alignment on accessibility among teams and improve morale by speeding up development & reducing bugs!
 
-## Shape what you build (Product Design)
+## Product Design: Shape what you build
 
 As I mentioned, the role in larger orgs can be more strategic. Another strategic role is shaping the products that we build, as a product designer, product owner, product manager, or similar. (Different companies have different titles for this kind of work.)
 
@@ -117,7 +117,7 @@ By considering accessibility in the same way as WhatsApp considered OS support, 
 
 As an accessibility dev, your unique perspective and skills will ensure your company ships higher quality products, with fewer bugs, for less money!
 
-## Measure the right things (Data Science)
+## Data Science: Measure the right things
 
 Moving a bit further afield, I want to talk about how much we need your skills in the world of data science. As part of a data science team, you could bring attention to accessibility in our product metrics by
 
@@ -147,7 +147,7 @@ This is incredibly necessary work as we often neglect the accessibility of our o
 
 As an accessibility dev, your unique perspective and skills can help your company make decisions that result in more inclusive and accessible products that provide a better user experience (and may even increase revenue).
 
-## Protect us from ”the machines” (AI Research & Ethics)
+## AI Research & Ethics: Protect us from ”the machines”
 
 The fourth area desperately in need of your skills and perspective is AI research and ethics. AI is a hot topic right now, for sure, and it absolutely has the potential to meaningfully improve people’s lives, including those of people with disabilities, but to get there, organizations need your help!
 
@@ -203,7 +203,7 @@ You would bring a lot to an AI team in this regard:
 
 As an accessibility dev, your unique perspective and skills can help can ensure advancements in AI/ML are beneficial (and not harmful) to people with disabilities!
 
-## Build & grow inclusive teams (Diversity & Inclusion)
+## Diversity & Inclusion: Build & grow inclusive teams
 
 The last role I’ll talk about is probably the furthest afield from development, but it also has the most profound impact on the teams that do the work and that’s D&I. I don’t imagine I need to spend a ton of time making a case to this audience for why diversity matters, but here’s a quick run-down just in case:
 
@@ -253,9 +253,7 @@ Many companies have formal D&I teams (some in HR, some not) for whom this is the
 
 <hr>
 
-> If there is no room for diverse talent to grow in their careers, many will leave
-
-As I mentioned, churn is expensive. And just as not feeling respected & valued will likely result in a diverse employee leaving, the same goes for not having the same career advancement opportunities enjoyed by people from more privileged groups. Depending on where you are in your organization, you can help address this problem in different ways:
+If there is no room for diverse talent to grow in their careers, many will leave. As I mentioned, churn is expensive. And just as not feeling respected & valued will likely result in a diverse employee leaving, the same goes for not having the same career advancement opportunities enjoyed by people from more privileged groups. Depending on where you are in your organization, you can help address this problem in different ways:
 
 1. Write recommendations for colleagues, prioritizing them for colleagues whose diversity needs to be seen as an asset.
 2. Observe promotions and ask questions of management if you don’t see diverse representation.
