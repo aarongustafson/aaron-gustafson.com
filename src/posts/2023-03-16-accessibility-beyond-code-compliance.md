@@ -147,7 +147,7 @@ This is incredibly necessary work as we often neglect the accessibility of our o
 
 As an accessibility dev, your unique perspective and skills can help your company make decisions that result in more inclusive and accessible products that provide a better user experience (and may even increase revenue).
 
-## AI Research & Ethics: Protect us from ”the machines”
+## AI Research & Ethics: Protect us from “the machines”
 
 The fourth area desperately in need of your skills and perspective is AI research and ethics. AI is a hot topic right now, for sure, and it absolutely has the potential to meaningfully improve people’s lives, including those of people with disabilities, but to get there, organizations need your help!
 
