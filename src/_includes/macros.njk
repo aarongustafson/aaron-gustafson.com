@@ -1,5 +1,5 @@
 {% macro label( text, name ) %}
-  <label class="question__label" for="field-{{ name }}">{{ text | widont }}</label>
+  <label class="question__label" for="field-{{ name }}">{{ text  }}</label>
 {% endmacro %}
 
 {% macro field( type, name, data ) %}
@@ -281,7 +281,7 @@
 {% endmacro %}
 
 {% macro description( id, html ) %}
-  <em class="question__description" id="description-{{ id }}">{{ html | widont | safe }}</em>
+  <em class="question__description" id="description-{{ id }}">{{ html  | safe }}</em>
 {% endmacro %}
 
 {% macro hidden_field( name, value ) %}
@@ -315,7 +315,7 @@
     {% if forloop.first %}
       <span class="post__tags">
     {% endif %}
-    <a class="post__tag" rel="tag" href="/tags/{{ tag | lower | slugify }}/" aria-label="See all posts and links tagged “{{ tag }}”">{{ tag | widont }}</a>
+    <a class="post__tag" rel="tag" href="/tags/{{ tag | lower | slugify }}/" aria-label="See all posts and links tagged “{{ tag }}”">{{ tag  }}</a>
     {% if forloop.last %}
       </span>
     {% endif %}

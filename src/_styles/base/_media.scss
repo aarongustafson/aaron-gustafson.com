@@ -129,7 +129,7 @@
 			margin-right: 0;
 
 			@supports (margin-block: 1em) {
-				@include unset( float max-width margin-left margin-right );
+				@include unset( max-width margin-left margin-right );
 				float: inline-end;
 				max-inline-size: 250px;
 				margin-inline-start: $default-spacing;

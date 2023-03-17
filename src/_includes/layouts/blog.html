@@ -9,14 +9,14 @@ github_edit: "_layouts/blog.html"
   {% set the_title %}{% if display_title %}{{ display_title }}{% else %}{{ title }}{% endif %}{% endset %}
   <article role="article" class="page layout-container layout-container--blog">
 
-    <h1 class="page__title subsection__header">{{ the_title | title | widont }}</h1>
+    <h1 class="page__title subsection__header">{{ the_title | title }}</h1>
     
     <div class="layout-container__primary">
       
       {% for post in posts %}
         {% set content %}{% if post.data.page.excerpt %}<p>{{ post.data.page.excerpt | markdownify | safe }}</p>{% else %}{{ post.templateContent | safe }}{% endif %}{% endset %}
         {% set is_excerpted = ( post.templateContent != content ) %}
-				{% set post_title %}{{ post.data.title | widont | markdownify | strip_links | safe }}{% endset %}
+				{% set post_title %}{{ post.data.title | markdownify | strip_links | safe }}{% endset %}
         
         <article class="h-entry entry entry--excerpt entry--{{ post.data.collection }}{% if post.data.hero or post.data.og_image %} entry--with-hero{% endif %}">
           <header class="entry__header">
