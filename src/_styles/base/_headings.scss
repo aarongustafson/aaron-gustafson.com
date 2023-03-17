@@ -15,6 +15,8 @@
 			font-weight: $font-weight-serif-bold;
 			line-height: $line-height-headings;
 			
+			text-wrap: balance;
+			
 			.wf-active & {
 					word-spacing: 2px;
 			}
