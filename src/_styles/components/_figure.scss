@@ -21,7 +21,7 @@
 		height: 100px;
 
 		@supports (margin-block: 1em) {
-			@include unset( float margin-right width height );
+			@include unset( margin-right width height );
 			float: inline-start;
 			margin-inline-end: 2rem;
 			inline-size: 100px;

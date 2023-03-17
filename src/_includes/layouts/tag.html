@@ -8,9 +8,9 @@ github_edit: "_layouts/tag.html"
 	{% set posts = collections[ tag ] %}
 	
 	<article role="article" class="page layout-container layout-container--blog">
-		<h1 class="page__title">Content Filed Under “{{ title | title | widont | safe }}”</h1>
+		<h1 class="page__title">Content Filed Under “{{ title | title  | safe }}”</h1>
 
-		<p>You can subscribe to a feed of all content filed under “{{ title | title | widont | safe }}” as <a type="text/xml" href="/feeds/{{ tag | lower | slugify }}.xml">XML (RSS)</a> or <a type="application/json" href="/feeds/{{ tag | lower | slugify }}.json">JSON</a>.</p>
+		<p>You can subscribe to a feed of all content filed under “{{ title | title  | safe }}” as <a type="text/xml" href="/feeds/{{ tag | lower | slugify }}.xml">XML (RSS)</a> or <a type="application/json" href="/feeds/{{ tag | lower | slugify }}.json">JSON</a>.</p>
 
 		<div class="layout-container__primary">
 

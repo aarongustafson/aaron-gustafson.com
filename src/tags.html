@@ -19,7 +19,7 @@ body_class: "tag-page"
   {% set svg_link %}{{ "/src/static/i/icons/pin.svg" | svgContents  | replace('"100"','"24"') | safe }}{% endset %}
 
   <article role="article" class="page layout-container layout-container--blog">
-    <h1 class="page__title subsection__header">{{ the_title | title | widont | safe }}</h1>
+    <h1 class="page__title subsection__header">{{ the_title | title | safe }}</h1>
     <div class="layout-container__primary">
       <p class="promo">You can subscribe to a feed of all content filed under “{{ tag }}” as <a type="text/xml" href="/feeds/{{ tag_slug }}.xml">XML (RSS)</a> or <a type="application/json" href="/feeds/{{ tag_slug }}.json">JSON</a>.</p>
 
@@ -34,7 +34,7 @@ body_class: "tag-page"
             {% endif %}
             <div class="entry__details">
               <h2 class="entry__title entry-title">
-                <a rel="bookmark" href="{{ post.url }}">{{ post.data.title | widont | safe }}</a>
+                <a rel="bookmark" href="{{ post.url }}">{{ post.data.title | safe }}</a>
               </h2>
               <p class="entry__meta">{% if post.collection=="posts" %}Posted{% else %}Saved{% endif %} on <time class="dt-published" datetime="{{ post.data.date | machine_date }}">{{ post.data.date | readable_date }}</time></p>
             </div>

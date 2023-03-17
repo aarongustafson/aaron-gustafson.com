@@ -76,6 +76,26 @@ Blog Entry
 				inline-size: auto;
 			}
 		}
+
+		&__thumbnail {
+			margin: 0;
+			margin-right: 1em;
+			width: 100px;
+			height: 100px;
+			max-width: 100px;
+			object-fit: cover;
+			position: relative;
+			top: .25em;
+
+			@supports (margin-block: 1em) {
+				@include unset( width height margin-right top );
+				inline-size: 100px;
+				block-size: 100px;
+				max-inline-size: 100px;
+				margin-inline-end: 1em;
+				inset-block-start: .25em;
+			}
+		}
 		
 		&--teaser &__footer {
 			border-top: 0;
@@ -352,18 +372,13 @@ Blog Entry
 
 			.entry__thumbnail {
 				margin: 0;
-				width: 100px;
-				height: 100px;
-				object-fit: cover;
 				position: absolute;
-				top: 0;
+				top: .25em;
 				left: 0;
 
 				@supports (margin-block: 1em) {
-					@include unset( width height top left );
-					inline-size: 100px;
-					block-size: 100px;
-					inset-block-start: 0;
+					@include unset( top left );
+					inset-block-start: .25em;
 					inset-inline-start: 0;
 				}
 			}

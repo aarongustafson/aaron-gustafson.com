@@ -7,7 +7,7 @@ github_edit: "_layouts/series.html"
   {% set posts = collections.posts | bySeriesTag( tag ) | reverse %}
   
   <article role="article" class="page layout-container layout-container--blog">
-    <h1 class="page__title">{{ title | title | widont | safe }}</h1>
+    <h1 class="page__title">{{ title | title  | safe }}</h1>
     
     <p>{{ description | markdownify | safe }}</p>
     
