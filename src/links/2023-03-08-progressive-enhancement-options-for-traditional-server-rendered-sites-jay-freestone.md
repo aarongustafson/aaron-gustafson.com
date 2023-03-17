@@ -1,5 +1,5 @@
 ---
-title: "Progressive enhancement options for traditional server-rendered sites | Jay Freestone"
+title: "Progressive enhancement options for traditional server-rendered sites"
 date: 2023-03-08T17:32:44.846Z
 tags: ["progressive enhancement", "web components"]
 ref_url: https://www.jayfreestone.com/writing/web-component-libraries/
