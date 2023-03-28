@@ -15,7 +15,7 @@
   	</a>
 	</li>
 	<li class="social-links__item">
-   <a class="social-link social-link--hacker-news" href="https://news.ycombinator.com/submitlink?u={{ this_url }}&t={{ title | escape }}">
+   <a class="social-link social-link--hacker-news" href="https://news.ycombinator.com/submitlink?u={{ this_url }}&t={{ title | escape | replace(' ', '+' ) }}">
 			{{ svg_hackernews | replace('<svg ','<svg class="social-link__icon" ') | safe }}
 			<b class="social-link__text">Share on Hacker News</b>
 		</a>
@@ -33,7 +33,7 @@
 		</a>
 	</li>
 	<li class="social-links__item">
-		<a class="social-link social-link--pinterest" href="http://pinterest.com/pin/create/button/?url={{ this_url }}&amp;media={{ this_hero }}&amp;description={{ title | escape }}">
+		<a class="social-link social-link--pinterest" href="http://pinterest.com/pin/create/button/?url={{ this_url }}&amp;media={{ this_hero }}&amp;description={{ title | escape | replace(' ', '+' ) }}">
 			{{ svg_pinterest | replace('<svg ','<svg class="social-link__icon" ') | safe }}
 			<b class="social-link__text">Share on Pinterest</b>
 		</a>
