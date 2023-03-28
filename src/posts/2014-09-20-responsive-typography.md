@@ -4,14 +4,14 @@ date: 2014-09-20 16:43:22 -04:00
 comments: true
 tags: ["web design", "writing", "responsive web design"]
 description: "I think Responsive Typography is such an invaluable book, I offered to write the Foreword and Jason Pamental (and O’Reilly) have been kind enough to let me reprint it here."
-canonical: "http://blog.easy-designs.net/archives/responsive-typography/"
+canonical: "https://blog.easy-designs.net/archives/responsive-typography/"
 redirect_from: /notebook/2014/responsive-typography/
 translations:
   hi: https://dealsdaddy.co.uk/translations/responsive-typography/
   pa: https://www.bydiscountcodes.co.uk/translations/responsive-typography/
 ---
 
-I’m incredibly excited to see that [Jason Pamental](https://twitter.com/jpamental)’s fantastic [<cite>Responsive Typography</cite>](http://www.amazon.com/gp/product/1491907096/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1491907096&amp;linkCode=as2&amp;tag=easydesign-20&amp;linkId=JC6INFXF3DHODKEM) is finally available. I had the great pleasure of reviewing an early galley and I can honestly say that it’s a book well worth reading. Jason’s natural and friendly style makes for an easy read and it’s chock-full of actionable recommendations and tips you’ll want to start using right away.
+I’m incredibly excited to see that [Jason Pamental](https://twitter.com/jpamental)’s fantastic [<cite>Responsive Typography</cite>](https://www.amazon.com/gp/product/1491907096/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1491907096&amp;linkCode=as2&amp;tag=easydesign-20&amp;linkId=JC6INFXF3DHODKEM) is finally available. I had the great pleasure of reviewing an early galley and I can honestly say that it’s a book well worth reading. Jason’s natural and friendly style makes for an easy read and it’s chock-full of actionable recommendations and tips you’ll want to start using right away.
 
 <!-- more -->
 
@@ -38,4 +38,4 @@ In fact, I think <cite>Responsive Typography</cite> is such an invaluable book, 
 > — Aaron Gustafson<br/>
 &nbsp;&nbsp;&nbsp;Author, <cite>Adaptive Web Design</cite>
 
-By the way, if you’re on a typography kick I’ll also recommend an second new book by another Jason I respect greatly: [Jason Santa Maria](http://jasonsantamaria.com)’s [<cite>On Web Typography</cite>](http://www.abookapart.com/products/on-web-typography). The two books books compliment each other perfectly, with very little overlap. They’d make an awesome bundle.
+By the way, if you’re on a typography kick I’ll also recommend an second new book by another Jason I respect greatly: [Jason Santa Maria](https://jasonsantamaria.com)’s [<cite>On Web Typography</cite>](https://www.abookapart.com/products/on-web-typography). The two books books compliment each other perfectly, with very little overlap. They’d make an awesome bundle.

@@ -9,7 +9,7 @@ crossposted:
   Medium: https://medium.com/@AaronGustafson/856e6cbc89ac
 ---
 
-_I gave this speech as the closing keynote at [A11yQC](http://a11yqc.org/), a conference on Web accessibility, on 14 October 2014 in Québec City, Canada. I have published my script here as the slides can’t really convey its message on their own._
+_I gave this speech as the closing keynote at [A11yQC](https://a11yqc.org/), a conference on Web accessibility, on 14 October 2014 in Québec City, Canada. I have published my script here as the slides can’t really convey its message on their own._
 
 We, as an industry, tend to have a pretty myopic view of experience. Those of us who work day-to-day in accessibility probably have a broader perspective than most, but I would argue that even we all fall short now and again when it comes to seeing the Web as others do.
 
@@ -39,7 +39,7 @@ And of course there’s the coolness factor of being able to turn on your heat w
 
 </figure>
 
-Of course, what enables all of these things to be as amazing as they are is our ubiquitous connectivity. According to [Internet Live Stats](http://www.InternetLiveStats.com), roughly 86% of Americans use the Internet. You Canadians are a wee bit more “online” at 93%.
+Of course, what enables all of these things to be as amazing as they are is our ubiquitous connectivity. According to [Internet Live Stats](https://www.InternetLiveStats.com), roughly 86% of Americans use the Internet. You Canadians are a wee bit more “online” at 93%.
 
 <figure id="fig-2014-11-06-02" class="media-container">
 
@@ -47,7 +47,7 @@ Of course, what enables all of these things to be as amazing as they are is our 
 
 </figure>
 
-America does have you beat when it comes to mobile connectivity: there are over 100 mobile data subscriptions per 100 individuals in the U.S. (probably because of the whole multi-device thing). Mobile connections in Canada are around 53 per 100 people. <small>[(source)](http://www.oecd.org/sti/broadband/oecdbroadbandportal.htm)</small>
+America does have you beat when it comes to mobile connectivity: there are over 100 mobile data subscriptions per 100 individuals in the U.S. (probably because of the whole multi-device thing). Mobile connections in Canada are around 53 per 100 people. <small>[(source)](https://www.oecd.org/sti/broadband/oecdbroadbandportal.htm)</small>
 
 <figure id="fig-2014-11-06-03" class="media-container">
 
@@ -55,7 +55,7 @@ America does have you beat when it comes to mobile connectivity: there are over 
 
 </figure>
 
-Wired connectivity is a bit lower: 30 for every 100 in the U.S. and 33 for every 100 in Canada. <small>[(source)](http://www.oecd.org/sti/broadband/oecdbroadbandportal.htm)</small>
+Wired connectivity is a bit lower: 30 for every 100 in the U.S. and 33 for every 100 in Canada. <small>[(source)](https://www.oecd.org/sti/broadband/oecdbroadbandportal.htm)</small>
 
 <figure id="fig-2014-11-06-04" class="media-container">
 
@@ -63,7 +63,7 @@ Wired connectivity is a bit lower: 30 for every 100 in the U.S. and 33 for every
 
 </figure>
 
-Connectivity is relatively cheap for you Canadians as well. You pay somewhere in the neighborhood of 39¢-$9.86 per megabyte per month. In the U.S., fees range widely from 53¢ to a whopping $41.70 per megabyte per month. <small>[(source)](http://www.oecd.org/sti/broadband/oecdbroadbandportal.htm)</small>
+Connectivity is relatively cheap for you Canadians as well. You pay somewhere in the neighborhood of 39¢-$9.86 per megabyte per month. In the U.S., fees range widely from 53¢ to a whopping $41.70 per megabyte per month. <small>[(source)](https://www.oecd.org/sti/broadband/oecdbroadbandportal.htm)</small>
 
 Comcast and Rogers may be equally hated on our respective sides of the 49th parallel, but Comcast clearly sucks just a little bit more. (America!)
 
@@ -75,7 +75,7 @@ This technology and access makes it possible for us to live richer lives and pos
 
 </figure>
 
-The average American takes home $3,263 a month. For the average Canadian, that figure is $2,724. By comparison, the average worker in China makes $656 a month. But that is a fortune compared to folks in India, who only take home $295 for a month of hard work. <small>[(source)](http://en.wikipedia.org/wiki/List_of_countries_by_average_wage)</small>
+The average American takes home $3,263 a month. For the average Canadian, that figure is $2,724. By comparison, the average worker in China makes $656 a month. But that is a fortune compared to folks in India, who only take home $295 for a month of hard work. <small>[(source)](https://en.wikipedia.org/wiki/List_of_countries_by_average_wage)</small>
 
 How much is an unlocked iPhone 6 again? It starts around $649. That’s more than two months salary for the average Indian. The Galaxy S5? $799 or nearly three months of hard work. In places like India, feature phones are still quite prevalent. And even when a smartphone is introduced for their market, it pales in comparison to the sort of tech we are used to seeing.
 
@@ -85,9 +85,9 @@ How much is an unlocked iPhone 6 again? It starts around $649. That’s more tha
 
 </figure>
 
-Here we have [Samsung’s flagship Galaxy S5](http://www.samsung.com/gr/microsite/galaxys5/) with an amazing set of specs. A 16GB camera?! A quad-core processor?! This is the stuff of dreams for anyone who has been working with computers for more than 10 years. My first desktop was a 5150.
+Here we have [Samsung’s flagship Galaxy S5](https://www.samsung.com/gr/microsite/galaxys5/) with an amazing set of specs. A 16GB camera?! A quad-core processor?! This is the stuff of dreams for anyone who has been working with computers for more than 10 years. My first desktop was a 5150.
 
-No not [that awesome Van Halen record](https://en.wikipedia.org/wiki/5150_(album)), [this beast from IBM](http://www-03.ibm.com/ibm/history/exhibits/pc25/pc25_intro.html):
+No not [that awesome Van Halen record](https://en.wikipedia.org/wiki/5150_(album)), [this beast from IBM](https://www.ibm.com/ibm/history/exhibits/pc25/pc25_intro.html):
 
 <figure id="fig-2014-11-06-08" class="media-container">
 
@@ -105,7 +105,7 @@ And here, this pocket-sized computer just blows all of that out of the water.
 
 </figure>
 
-By contrast, here we have [Intex’s Cloud FX](http://www.intexmobile.in/product_detail.aspx?PID=191&PCatID=3), a new phone with specs that read like the state of the art in 2007. A crappy camera, no front camera, a slow 1 GHz processor, a paltry 128 MB of RAM and barely double that in internal storage. It’s a crappy phone by our standards.
+By contrast, here we have [Intex’s Cloud FX](https://arstechnica.com/gadgets/2014/09/weve-got-a-35-firefox-os-phone-what-do-you-want-to-know/), a new phone with specs that read like the state of the art in 2007. A crappy camera, no front camera, a slow 1 GHz processor, a paltry 128 MB of RAM and barely double that in internal storage. It’s a crappy phone by our standards.
 
 But that’s a Firefox OS phone aimed at the Indian market vs. an Android one aimed at the “developed” world. Perhaps you’d like to look at a more apples-to-apples comparison:
 
@@ -115,7 +115,7 @@ But that’s a Firefox OS phone aimed at the Indian market vs. an Android one ai
 
 </figure>
 
-Here we have the [BLU Dash Jr K](http://www.gsmarena.com/blu_dash_jr-5662.php).
+Here we have the [BLU Dash Jr K](https://www.gsmarena.com/blu_dash_jr-5662.php).
 
 Both it and the Galaxy S5 run Android 4.4 (Kitkat), but that’s where their similarities end. Look at the resolution of the Dash Jr K: 320×480 versus the 1920×1080 of the S5. Look at the processor speed. Look at the RAM.
 
@@ -125,7 +125,7 @@ Now I don’t know your salary, but I’m willing to bet you make more money and
 
 In the U.S., we see stats like “Smartphone sales accounted for nearly 85% of all mobile phone sales” and “Smartphones have reached 50% penetration” with relative frequency. But those headlines often lead us to draw incorrect conclusions about what devices people actually use to access the Web.
 
-The dirty little secret behind that 50% penetration number is that the penetration in question was concentrated in a scant 30% of U.S. households. Kinda burying the lead if you ask me. <small>[(source)](http://www.chetansharma.com/usmarketupdateq12013.htm)</small>
+The dirty little secret behind that 50% penetration number is that the penetration in question was concentrated in a scant 30% of U.S. households. Kinda burying the lead if you ask me. <small>[(source)](https://web.archive.org/web/20160416014757/https://www.chetansharma.com/usmarketupdateq12013.htm)</small>
 
 <figure id="fig-2014-11-06-12" class="media-container">
 
@@ -135,7 +135,7 @@ The dirty little secret behind that 50% penetration number is that the penetrati
 
 The Pew Research Center released a study earlier this year that showed smartphone penetration in the US, broken down by income bracket. As expected, the higher the household income, the more likely you were to find someone with a smartphone.
 
-In the < $30,000 income bracket, smartphones were found in 47% of households. But it starts to get really interesting when you cross-reference that data with how many people fall into those income brackets. <small>[(source)](http://www.pewinternet.org/2014/02/27/part-1-how-the-internet-has-woven-itself-into-american-life/)</small>
+In the < $30,000 income bracket, smartphones were found in 47% of households. But it starts to get really interesting when you cross-reference that data with how many people fall into those income brackets. <small>[(source)](https://www.pewinternet.org/2014/02/27/part-1-how-the-internet-has-woven-itself-into-american-life/)</small>
 
 <figure id="fig-2014-11-06-13" class="media-container">
 
@@ -143,7 +143,7 @@ In the < $30,000 income bracket, smartphones were found in 47% of households. Bu
 
 </figure>
 
-$30,000 was the average income in the U.S. in 2013. And, according to the 2010 census, the overwhelming majority of American households earn less than that. <small>[(source)](http://www.census.gov/2010census/data/)</small>
+$30,000 was the average income in the U.S. in 2013. And, according to the 2010 census, the overwhelming majority of American households earn less than that. <small>[(source)](https://www.census.gov/2010census/data/)</small>
 
 Now both the Samsung Galaxy S5 and the BLU Dash are technically smartphones, but one costs $43 and the other costs $799. On a limited budget, which do you think you’d be more likely to get?
 
@@ -173,7 +173,7 @@ These are just a few of the concerns we’re having to deal with today, and only
 
 </figure>
 
-Consider this: [About 11.7% of the world speaks English as its first or second language](http://en.wikipedia.org/wiki/List_of_languages_by_total_number_of_speakers) yet [55.7% of the Web is in English](http://en.wikipedia.org/wiki/Languages_used_on_the_Internet). (French is spoken by roughly 1.4% of the world and 4% of the Web is in French.)
+Consider this: [About 11.7% of the world speaks English as its first or second language](https://en.wikipedia.org/wiki/List_of_languages_by_total_number_of_speakers) yet [55.7% of the Web is in English](https://en.wikipedia.org/wiki/Languages_used_on_the_Internet). (French is spoken by roughly 1.4% of the world and 4% of the Web is in French.)
 
 <figure id="fig-2014-11-06-16" class="media-container">
 
@@ -181,7 +181,7 @@ Consider this: [About 11.7% of the world speaks English as its first or second l
 
 </figure>
 
-This presents some significant challenges as the Web expands into places like India and China. Only 18.61% of India’s 1.2 billion people speak English as a first, second, or even third language. In China, only about 0.73% of their 1.2 billion people speak English. Network availability is only the first of many hurdles to accessing the Web for much of the planet. <small>[(source)](http://en.wikipedia.org/wiki/List_of_countries_by_English-speaking_population)</small>
+This presents some significant challenges as the Web expands into places like India and China. Only 18.61% of India’s 1.2 billion people speak English as a first, second, or even third language. In China, only about 0.73% of their 1.2 billion people speak English. Network availability is only the first of many hurdles to accessing the Web for much of the planet. <small>[(source)](https://en.wikipedia.org/wiki/List_of_countries_by_English-speaking_population)</small>
 
 We need to look beyond our technological and cultural bubble and consider how others experience the Web. As an industry, we must figure out how we can make their experiences better.
 
@@ -255,7 +255,7 @@ We can and should be advising our companies and clients on why and how to be mor
 
 We already know that strong content guidelines pay dividends by creating opportunities for our content to work harder for us. Not only do they improve the readability of content on the sites we build, but they facilitate social sharing through more engaging summaries and headlines.
 
-The clear, well-written, jargon-free content we advocate for is easier to translate into other languages. It also makes the content easier to follow via screen readers and other vocalization tools like [Readspeaker](http://www.readspeaker.com/), which in turn makes it possible to offer novel ways of accessing our content, like automated podcasts.
+The clear, well-written, jargon-free content we advocate for is easier to translate into other languages. It also makes the content easier to follow via screen readers and other vocalization tools like [Readspeaker](https://www.readspeaker.com/), which in turn makes it possible to offer novel ways of accessing our content, like automated podcasts.
 
 Our focus on semantic, meaningful, markup allows our content to be pulled into other contexts including focused reading apps like Pocket, Readability, and Instapaper.
 

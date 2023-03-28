@@ -4,7 +4,7 @@ title: "The “Native” vs. “Stylable” Tug of War"
 description: "In his astute post “‘Native experience’ vs styling select boxes”, Bruce Lawson correctly identified a common tension in the web world: wanting better form controls vs. wanting to throw away what the browser does. Here are my thoughts."
 tags: [ "web design", browsers, design, mobile ]
 comments: true
-canonical: http://blog.easy-designs.net/archives/the-native-vs-stylable-tug-of-war/
+canonical: https://blog.easy-designs.net/archives/the-native-vs-stylable-tug-of-war/
 canonical_site: The Easy Designs Blog
 redirect_from: /notebook/2014/the-native-vs-stylable-tug-of-war/
 ---
@@ -13,7 +13,7 @@ In his astute post [“‘Native experience’ vs styling select boxes”](https
 
 > But why this urge to re-style page elements that end-users are familiar with? … Or is it that we love native look and feel, except when we don’t?
 
-Speaking as the guy who not only wrote JavaScript to help me create an accessible `select` element alternative, but who also made it [the focus of a case study (image)](http://d1b14unh5d6w7g.cloudfront.net/1590598563.01.S0ER.LXXXXXXX.jpg?Expires=1405686346&Signature=DCT4Z0l75JQESDNyP0PVGVonuJYwY9XYtaTI3grX/RhdlLcXGRAVADJCB/N/fAj7GxLhEVzuXqstMebJIJ9Ip5I6kE7IKYt2F20F5EGD+1ghua9zKwyjS1e4KBgumMKzQytbcfIVX4dMr7XFzj26mScFKz9bSKtZT5jU1LU6hWM=&Key-Pair-Id=APKAIUO27P366FGALUMQ) in [AdvancED DOM Scripting](http://amzn.to/TaoffD), I am fully aware of the desire to have it both ways. I have not often seen the desire for both in a single individual, but it does happen in one particular instance occasionally.
+Speaking as the guy who not only wrote JavaScript to help me create an accessible `select` element alternative, but who also made it [the focus of a case study (PNG, 128kB)](https://books.google.com/books/content?id=Wmg6dkBJd50C&pg=PA507&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U2DB7JkEBRWEjSwZLHwIJnpGqgq9w&w=1280) in [AdvancED DOM Scripting](https://amzn.to/TaoffD), I am fully aware of the desire to have it both ways. I have not often seen the desire for both in a single individual, but it does happen in one particular instance occasionally.
 
 <!-- more -->
 

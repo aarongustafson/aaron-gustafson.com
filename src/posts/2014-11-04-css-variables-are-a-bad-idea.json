@@ -18,7 +18,7 @@
 				"date": "2015-11-02T20:48:04Z",
 				"author": "Albin Larsson",
 				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
-				"message": "<p>Your code examples doesn't illustrate any of the practical reasons of css variables. Your backward compatibility argument can be applied to any web standards change, and your performance argument is purely speculative.</p><p>Backward compatibility issues are temporary. Just because the transition period happens to be now doesn't mean we won't get there. You could have started using the spec 2 years ago with <a href=\"http://myth.io\" rel=\"nofollow noopener\" title=\"myth.io\">myth.io</a> or <a href=\"http://pleeease.io\" rel=\"nofollow noopener\" title=\"pleeease.io\">pleeease.io</a> (more recent) without having to maintain manual fallbacks. Use a pre/postprocessor or just wait. This one seems to be taking it's time.</p><p>\"Now I’m sure browser makers can find ways to optimize this process, but it’s bound to affect the rendering time.\"</p><p>I don't think that would be noticeable. It's all parsing and memory, which is incredibly fast. i/o and screen rendering is the performance critical part, along with network load. What could happen is that providing a method for users to write better abstractions for their css would make it more terse, improving network speed and parse time, but probably not noticeable anyway. It all depends on the developer, browser implementation and end user hardware performance. More preprocessor-like features making it into the css spec seems like a good idea to me, because devs would be less inclined to use preprocessors trying to be smarter than css, by producing unnecessarily complex and hard to debug code.</p><p>I agree that the real problems with css isn't going to be solved with variables though.</p>",
+				"message": "<p>Your code examples doesn't illustrate any of the practical reasons of css variables. Your backward compatibility argument can be applied to any web standards change, and your performance argument is purely speculative.</p><p>Backward compatibility issues are temporary. Just because the transition period happens to be now doesn't mean we won't get there. You could have started using the spec 2 years ago with myth.io or pleeease.io (more recent) without having to maintain manual fallbacks. Use a pre/postprocessor or just wait. This one seems to be taking it's time.</p><p>\"Now I’m sure browser makers can find ways to optimize this process, but it’s bound to affect the rendering time.\"</p><p>I don't think that would be noticeable. It's all parsing and memory, which is incredibly fast. i/o and screen rendering is the performance critical part, along with network load. What could happen is that providing a method for users to write better abstractions for their css would make it more terse, improving network speed and parse time, but probably not noticeable anyway. It all depends on the developer, browser implementation and end user hardware performance. More preprocessor-like features making it into the css spec seems like a good idea to me, because devs would be less inclined to use preprocessors trying to be smarter than css, by producing unnecessarily complex and hard to debug code.</p><p>I agree that the real problems with css isn't going to be solved with variables though.</p>",
 				"replies": []
 			},
 			{
@@ -64,7 +64,7 @@
 				"date": "2015-11-14T09:09:30Z",
 				"author": "Jakob E",
 				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
-				"message": "<p>CSS variables works at run time and can't be compared with compile time variables in SCSS.<br>To illustrate the difference (and why CSS variables are awesome) try this in FireFox:</p><p>// Define color<br>:root { --color: tomato; }</p><p>// Assign the color variable<br>body { background-color: var(--color); }</p><p>// Re-define color in different media queries. <br>// Note how we do NOT reference body!    <br>@media (max-width: 960px){ :root { --color: gold;    } }<br>@media (max-width: 640px){ :root { --color: olive;   } }<br>@media (max-width: 420px){ :root { --color: skyblue; } }</p><p>Example: <a href=\"http://codepen.io/jakob-e/pen/vNvPEm\" rel=\"nofollow noopener\" title=\"http://codepen.io/jakob-e/pen/vNvPEm\">http://codepen.io/jakob-e/p...</a></p>",
+				"message": "<p>CSS variables works at run time and can't be compared with compile time variables in SCSS.<br>To illustrate the difference (and why CSS variables are awesome) try this in FireFox:</p><p>// Define color<br>:root { --color: tomato; }</p><p>// Assign the color variable<br>body { background-color: var(--color); }</p><p>// Re-define color in different media queries. <br>// Note how we do NOT reference body!    <br>@media (max-width: 960px){ :root { --color: gold;    } }<br>@media (max-width: 640px){ :root { --color: olive;   } }<br>@media (max-width: 420px){ :root { --color: skyblue; } }</p><p>Example: <a href=\"https://codepen.io/jakob-e/pen/vNvPEm\" rel=\"nofollow noopener\" title=\"https://codepen.io/jakob-e/pen/vNvPEm\">https://codepen.io/jakob-e/p...</a></p>",
 				"replies": []
 			},
 			{
@@ -73,7 +73,7 @@
 				"date": "2015-12-09T20:27:21Z",
 				"author": "John Slegers",
 				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
-				"message": "<p>I'm suit sceptical of CSS variables myself, but Philip Walton does make an interesting case in his recent article \"Why I'm Excited About Native CSS Variables\" (<a href=\"http://philipwalton.com/articles/why-im-excited-about-native-css-variables/)\" rel=\"nofollow noopener\" title=\"http://philipwalton.com/articles/why-im-excited-about-native-css-variables/)\">http://philipwalton.com/art...</a>. Especially the two use cases he mentions intrigue me.</p>",
+				"message": "<p>I'm suit sceptical of CSS variables myself, but Philip Walton does make an interesting case in his recent article \"Why I'm Excited About Native CSS Variables\" (<a href=\"https://philipwalton.com/articles/why-im-excited-about-native-css-variables/)\" rel=\"nofollow noopener\" title=\"https://philipwalton.com/articles/why-im-excited-about-native-css-variables/)\">https://philipwalton.com/art...</a>. Especially the two use cases he mentions intrigue me.</p>",
 				"replies": []
 			},
 			{
@@ -318,16 +318,7 @@
 				"date": "2016-11-24T12:46:57Z",
 				"author": "Michael Rasoahaingo",
 				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
-				"message": "<p>Almost fully supported <a href=\"http://caniuse.com/#feat=css-variables\" rel=\"nofollow noopener\" title=\"http://caniuse.com/#feat=css-variables\">http://caniuse.com/#feat=cs...</a> ;)</p>",
-				"replies": []
-			},
-			{
-				"postId": "3136277653",
-				"parentPostId": null,
-				"date": "2017-02-03T20:16:28Z",
-				"author": "Guru Quest",
-				"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
-				"message": "<p>Hi,<br>This is a very nice tutorial about variables.<br>To use a variable within .css file without a usage of sass or less. Please click on below link:<br><a href=\"http://guruquest.net/question/how-to-create-a-variable-and-use-within-css-file-to-avoid-duplicate-values/\" rel=\"nofollow noopener\" title=\"http://guruquest.net/question/how-to-create-a-variable-and-use-within-css-file-to-avoid-duplicate-values/\">http://guruquest.net/questi...</a></p>",
+				"message": "<p>Almost fully supported <a href=\"https://caniuse.com/#feat=css-variables\" rel=\"nofollow noopener\" title=\"https://caniuse.com/#feat=css-variables\">https://caniuse.com/#feat=cs...</a> ;)</p>",
 				"replies": []
 			},
 			{
@@ -425,7 +416,7 @@
 												"date": "2017-11-06T01:19:42Z",
 												"author": "Thierry Koblentz",
 												"avatar": "https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=mm&s=60",
-												"message": "<p>I think the easiest way to prevent this kind of issues is to simply use custom properties inside @supports at rules. According to <a href=\"http://caniuse.com\" rel=\"nofollow noopener\" title=\"caniuse.com\">caniuse.com</a>, the support for both is pretty much the same so it should be pretty safe to go this route.</p>",
+												"message": "<p>I think the easiest way to prevent this kind of issues is to simply use custom properties inside @supports at rules. According to <a href=\"https://caniuse.com\" rel=\"nofollow noopener\" title=\"caniuse.com\">caniuse.com</a>, the support for both is pretty much the same so it should be pretty safe to go this route.</p>",
 												"replies": []
 											}
 										]
