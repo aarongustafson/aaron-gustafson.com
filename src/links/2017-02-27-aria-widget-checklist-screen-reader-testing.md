@@ -2,8 +2,8 @@
 title: "ARIA Widget Checklist For Screen Reader Testing"
 date: 2017-02-27 15:41:34 -05:00
 comments: false
-ref_url: http://www.ssbbartgroup.com/blog/aria-widget-checklist-screen-reader-testing/
-in_reply_to: http://www.ssbbartgroup.com/blog/aria-widget-checklist-screen-reader-testing/
+ref_url: https://www.ssbbartgroup.com/blog/aria-widget-checklist-screen-reader-testing/
+in_reply_to: https://www.ssbbartgroup.com/blog/aria-widget-checklist-screen-reader-testing/
 ref_source: SSB Bart Group
 ---
 

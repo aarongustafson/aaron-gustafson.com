@@ -2,8 +2,8 @@
 title: "Want to become an expert? Study (web) history"
 date: 2015-05-26 13:07:31 -04:00
 comments: false
-ref_url: http://www.obiwankimberly.com/2013/09/17/want-to-become-an-expert-study-web-history/
-in_reply_to: http://www.obiwankimberly.com/2013/09/17/want-to-become-an-expert-study-web-history/
+ref_url: https://www.obiwankimberly.com/2013/09/17/want-to-become-an-expert-study-web-history/
+in_reply_to: https://www.obiwankimberly.com/2013/09/17/want-to-become-an-expert-study-web-history/
 ref_source: Obi-Wan Kimberly Blessing
 ---
 

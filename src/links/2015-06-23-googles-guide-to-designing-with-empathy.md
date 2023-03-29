@@ -2,8 +2,8 @@
 title: "Google’s Guide To Designing With Empathy"
 date: 2015-06-23 10:23:21 -04:00
 comments: false
-ref_url: http://www.fastcodesign.com/3047545/googles-guide-to-designing-with-empathy
-in_reply_to: http://www.fastcodesign.com/3047545/googles-guide-to-designing-with-empathy
+ref_url: https://www.fastcodesign.com/3047545/googles-guide-to-designing-with-empathy
+in_reply_to: https://www.fastcodesign.com/3047545/googles-guide-to-designing-with-empathy
 ref_source: FastCompany
 via:
  name: MadPow

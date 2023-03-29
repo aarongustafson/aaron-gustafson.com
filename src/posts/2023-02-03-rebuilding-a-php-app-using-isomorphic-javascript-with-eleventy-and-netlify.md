@@ -12,6 +12,8 @@ hero:
   alt: "Painting of a cute red robot looking at itself in a full-body mirror."
   url: https://labs.openai.com/s/nvIjXSOq3ZcoaLFMNacLUlJD
   offset: "75"
+crossposted:
+  Codementor: https://www.codementor.io/@aarongustafson/rebuilding-a-php-app-using-isomorphic-javascript-with-eleventy-netlify-23cfltqu1v/
 ---
 
 Back in the early days of the iPhone, I created [Tipr](https://tipr.mobi), a tip calculator that always produces a palindrome total.[^1] This is an overview of the minimal work I did to make it a modern web app that can run without a traditional back-end.

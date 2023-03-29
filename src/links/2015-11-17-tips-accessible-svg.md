@@ -2,8 +2,8 @@
 title: "Tips for Creating Accessible SVG"
 date: 2015-11-17 13:37:36 -05:00
 comments: false
-ref_url: http://www.sitepoint.com/tips-accessible-svg/
-in_reply_to: http://www.sitepoint.com/tips-accessible-svg/
+ref_url: https://www.sitepoint.com/tips-accessible-svg/
+in_reply_to: https://www.sitepoint.com/tips-accessible-svg/
 ref_source: SitePoint
 ---
 

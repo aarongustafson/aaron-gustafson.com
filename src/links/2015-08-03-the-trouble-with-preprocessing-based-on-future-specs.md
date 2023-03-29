@@ -8,7 +8,7 @@ in_reply_to: https://css-tricks.com/the-trouble-with-preprocessing-based-on-futu
 ref_source: CSS-Tricks
 ---
 
-Lots of gold in this post from [Chris Coyier](http://chriscoyier.net/). I agree with a lot of what he’s saying, but this passage really resonated with me:
+Lots of gold in this post from [Chris Coyier](https://chriscoyier.net/). I agree with a lot of what he’s saying, but this passage really resonated with me:
 
 > [T]here are concepts that I think belong in an abstraction of a language and not the language itself. Variables could be an example here again. Preprocessor variables and native variables could co-exist and be useful in their own ways. If native CSS could do everything ever dreamed up in a preprocessor, it would be slow, complicated, and likely wouldn't have seen the success that CSS has had as a language.
 

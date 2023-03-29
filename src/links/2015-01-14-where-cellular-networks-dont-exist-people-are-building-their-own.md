@@ -2,8 +2,8 @@
 title: "Where Cellular Networks Don&#039;t Exist, People Are Building Their Own"
 date: 2015-01-14 09:35:30 -05:00
 comments: false
-ref_url: http://www.wired.com/2015/01/diy-cellular-phone-networks-mexico/
-in_reply_to: http://www.wired.com/2015/01/diy-cellular-phone-networks-mexico/
+ref_url: https://www.wired.com/2015/01/diy-cellular-phone-networks-mexico/
+in_reply_to: https://www.wired.com/2015/01/diy-cellular-phone-networks-mexico/
 ref_source: Wired
 ---
 

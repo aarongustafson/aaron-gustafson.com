@@ -2,8 +2,8 @@
 title: "Testing with the NVDA Screen Reader"
 date: 2016-04-12 13:39:32 -04:00
 comments: false
-ref_url: http://webaim.org/blog/testing-with-the-nvda-screen-reader/
-in_reply_to: http://webaim.org/blog/testing-with-the-nvda-screen-reader/
+ref_url: https://webaim.org/blog/testing-with-the-nvda-screen-reader/
+in_reply_to: https://webaim.org/blog/testing-with-the-nvda-screen-reader/
 ref_source: WebAIM
 ---
 

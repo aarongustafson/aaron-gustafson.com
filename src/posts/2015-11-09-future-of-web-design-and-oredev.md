@@ -5,7 +5,7 @@ comments: true
 tags: [forms,"progressive enhancement",presentations,"web design"]
 ---
 
-Between [Future of Web Design](https://futureofwebdesign.com/nyc-2015/) in New York City and [Øredev](https://web.archive.org/web/http://lanyrd.com/2015/oredev/) in Malmö, Sweden, I was a busy boy last week. I delivered three talks and a workshop in total and am a bit exhausted.
+Between [Future of Web Design](hhttps://web.archive.org/web/20150821084438/https://futureofwebdesign.com/nyc-2015/) in New York City and [Øredev](https://web.archive.org/web/http://lanyrd.com/2015/oredev/) in Malmö, Sweden, I was a busy boy last week. I delivered three talks and a workshop in total and am a bit exhausted.
 
 <!-- more -->
 

@@ -3,8 +3,8 @@ title: "Creating an accessible breakout game using Web Audio & SVG"
 twitter_txt: "Who says video games can’t be accessible?"
 date: 2015-08-28 10:06:53 -04:00
 comments: false
-ref_url: http://blogs.msdn.com/b/davrous/archive/2015/08/27/creating-an-accessible-breakout-game-using-web-audio-amp-svg.aspx
-in_reply_to: http://blogs.msdn.com/b/davrous/archive/2015/08/27/creating-an-accessible-breakout-game-using-web-audio-amp-svg.aspx
+ref_url: https://blogs.msdn.com/b/davrous/archive/2015/08/27/creating-an-accessible-breakout-game-using-web-audio-amp-svg.aspx
+in_reply_to: https://blogs.msdn.com/b/davrous/archive/2015/08/27/creating-an-accessible-breakout-game-using-web-audio-amp-svg.aspx
 ref_source: David Rousset
 ---
 

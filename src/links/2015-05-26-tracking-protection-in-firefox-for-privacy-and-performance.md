@@ -3,8 +3,8 @@ title: "Tracking Protection in Firefox For Privacy and Performance (PDF)"
 description: "New research from Columbia University and Mozilla reveals that Firefox’s “Tracking Protection” privacy tech has an added benefit of speeding up the web"
 date: 2015-05-26 12:24:11 -04:00
 comments: false
-ref_url: http://ieee-security.org/TC/SPW2015/W2SP/papers/W2SP_2015_submission_32.pdf
-in_reply_to: http://ieee-security.org/TC/SPW2015/W2SP/papers/W2SP_2015_submission_32.pdf
+ref_url: https://ieee-security.org/TC/SPW2015/W2SP/papers/W2SP_2015_submission_32.pdf
+in_reply_to: https://ieee-security.org/TC/SPW2015/W2SP/papers/W2SP_2015_submission_32.pdf
 ref_source: IEEE Security
 ---
 

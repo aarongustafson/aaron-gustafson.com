@@ -2,8 +2,8 @@
 title: "Strategies for Website Accessibility, for Ecommerce"
 date: 2015-12-21 15:51:29 -06:00
 comments: false
-ref_url: http://www.practicalecommerce.com/articles/95177-Strategies-for-Website-Accessibility-for-Ecommerce
-in_reply_to: http://www.practicalecommerce.com/articles/95177-Strategies-for-Website-Accessibility-for-Ecommerce
+ref_url: https://www.practicalecommerce.com/articles/95177-Strategies-for-Website-Accessibility-for-Ecommerce
+in_reply_to: https://www.practicalecommerce.com/articles/95177-Strategies-for-Website-Accessibility-for-Ecommerce
 ref_source: Practical Ecommerce
 ---
 

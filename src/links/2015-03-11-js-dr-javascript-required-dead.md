@@ -3,8 +3,8 @@ title: "js;dr = JavaScript required; Didn’t Read."
 description: "It’s a tough pill to swallow, but it’s true."
 date: 2015-03-11 14:11:51 -04:00
 comments: false
-ref_url: http://tantek.com/2015/069/t1/js-dr-javascript-required-dead
-in_reply_to: http://tantek.com/2015/069/t1/js-dr-javascript-required-dead
+ref_url: https://tantek.com/2015/069/t1/js-dr-javascript-required-dead
+in_reply_to: https://tantek.com/2015/069/t1/js-dr-javascript-required-dead
 ref_source: Tantek Çelik
 ---
 

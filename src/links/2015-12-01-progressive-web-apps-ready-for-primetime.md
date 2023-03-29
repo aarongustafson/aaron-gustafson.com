@@ -2,8 +2,8 @@
 title: "Progressive Web Apps: ready for primetime"
 date: 2015-12-01 17:31:02 -05:00
 comments: false
-ref_url: http://www.brucelawson.co.uk/2015/progressive-web-apps-ready-for-primetime/
-in_reply_to: http://www.brucelawson.co.uk/2015/progressive-web-apps-ready-for-primetime/
+ref_url: https://www.brucelawson.co.uk/2015/progressive-web-apps-ready-for-primetime/
+in_reply_to: https://www.brucelawson.co.uk/2015/progressive-web-apps-ready-for-primetime/
 ref_source: "Bruce Lawson"
 ---
 

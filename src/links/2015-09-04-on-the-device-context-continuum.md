@@ -2,8 +2,8 @@
 title: "On the Device Context Continuum"
 date: 2015-09-04 16:23:53 -04:00
 comments: false
-ref_url: http://blog.cloudfour.com/on-the-device-context-continuum/
-in_reply_to: http://blog.cloudfour.com/on-the-device-context-continuum/
+ref_url: https://blog.cloudfour.com/on-the-device-context-continuum/
+in_reply_to: https://blog.cloudfour.com/on-the-device-context-continuum/
 ref_source: "The Cloud Four Blog"
 ---
 

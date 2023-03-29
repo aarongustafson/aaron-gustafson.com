@@ -3,8 +3,8 @@ title: "The Problem with Progressive Enhancement"
 twitter_text: "Why progressive enhancement matters (eloquently put)."
 date: 2016-01-06 14:44:42 -05:00
 comments: false
-ref_url: http://www.alexlande.com/articles/the-problem-with-progressive-enhancement/
-in_reply_to: http://www.alexlande.com/articles/the-problem-with-progressive-enhancement/
+ref_url: https://www.alexlande.com/articles/the-problem-with-progressive-enhancement/
+in_reply_to: https://www.alexlande.com/articles/the-problem-with-progressive-enhancement/
 ref_source: Alex Lande
 ---
 

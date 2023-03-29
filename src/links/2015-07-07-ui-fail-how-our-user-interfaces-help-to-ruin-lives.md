@@ -4,8 +4,8 @@ description: "This post is full of gold!"
 twitter_text: "Many people feel they’re “being left behind by Web designers who simply don't seem to care about them at all.”"
 date: 2015-07-07 13:58:14 -04:00
 comments: false
-ref_url: http://lauren.vortex.com/archive/001112.html
-in_reply_to: http://lauren.vortex.com/archive/001112.html
+ref_url: https://lauren.vortex.com/archive/001112.html
+in_reply_to: https://lauren.vortex.com/archive/001112.html
 ref_source: "Lauren Weinstein’s Blog"
 ---
 

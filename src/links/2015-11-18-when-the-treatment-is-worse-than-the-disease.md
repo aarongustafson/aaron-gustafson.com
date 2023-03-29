@@ -2,8 +2,8 @@
 title: "When the treatment is worse than the disease"
 date: 2015-11-18 14:07:55 -05:00
 comments: false
-ref_url: http://www.karlgroves.com/2015/11/13/when-the-treatment-is-worse-than-the-disease/
-in_reply_to: http://www.karlgroves.com/2015/11/13/when-the-treatment-is-worse-than-the-disease/
+ref_url: https://www.karlgroves.com/2015/11/13/when-the-treatment-is-worse-than-the-disease/
+in_reply_to: https://www.karlgroves.com/2015/11/13/when-the-treatment-is-worse-than-the-disease/
 ref_source: Karl Groves
 ---
 

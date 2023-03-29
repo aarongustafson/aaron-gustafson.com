@@ -2,8 +2,8 @@
 title: "Continuum"
 date: 2014-02-26 17:57:02 -05:00
 comments: false
-ref_url: http://adactio.com/journal/6692/
-in_reply_to: http://adactio.com/journal/6692/
+ref_url: https://adactio.com/journal/6692/
+in_reply_to: https://adactio.com/journal/6692/
 ref_source: Adactio’s Journal
 ---
 

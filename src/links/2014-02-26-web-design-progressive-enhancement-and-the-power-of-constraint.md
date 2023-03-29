@@ -5,6 +5,7 @@ comments: false
 ref_url: http://www.clickthrough-marketing.com/web-design-progressive-enhancement-the-power-of-constraint/
 in_reply_to: http://www.clickthrough-marketing.com/web-design-progressive-enhancement-the-power-of-constraint/
 ref_source: ClickThrough Marketing
+archived: https://web.archive.org/web/20201128141526/http://www.clickthrough-marketing.com/blog/web-design-progressive-enhancement-the-power-of-constraint
 ---
 
 > [L]et’s stop thinking of the constraints of progressive enhancement as a creativity killer. We too can use the constraints to come up with genuinely creative ways to get round problems and become better designers.

@@ -4,8 +4,8 @@ description: "An overview of solid strategies for accessible web design from the
 twitter_text: "Solid strategies for accessible web design from the UX team at Unum:"
 date: 2015-08-04 14:00:22 -04:00
 comments: false
-ref_url: http://www.unumux.com/ux-insights/design-with-accessibility-in-mind
-in_reply_to: http://www.unumux.com/ux-insights/design-with-accessibility-in-mind
+ref_url: https://www.unumux.com/ux-insights/design-with-accessibility-in-mind
+in_reply_to: https://www.unumux.com/ux-insights/design-with-accessibility-in-mind
 ref_source: Unum UX
 ---
 

@@ -3,8 +3,8 @@ title: "Testing The 12-inch MacBook’s Performance with Windows 10"
 description: "TI have Windows 10 running in a VM. I haven’t tried it as a Bootcamp partition yet, but Alex’s finding are intriguing."
 date: 2015-05-18 00:01:53 -04:00
 comments: false
-ref_url: http://www.alexvking.com/12_inch_macbook_and_windows_10.html
-in_reply_to: http://www.alexvking.com/12_inch_macbook_and_windows_10.html
+ref_url: https://www.alexvking.com/12_inch_macbook_and_windows_10.html
+in_reply_to: https://www.alexvking.com/12_inch_macbook_and_windows_10.html
 ref_source: "Alex King’s Personal Blog"
 ---
 

@@ -3,8 +3,8 @@ title: "More Weight Doesn’t Mean More Wait"
 description: "This is a brilliant post from Scott Jehl about optimizing page render by getting particular about how (and when) certain assets load."
 date: 2015-04-22 09:52:08 -04:00
 comments: false
-ref_url: http://www.filamentgroup.com/lab/weight-wait.html
-in_reply_to: http://www.filamentgroup.com/lab/weight-wait.html
+ref_url: https://www.filamentgroup.com/lab/weight-wait.html
+in_reply_to: https://www.filamentgroup.com/lab/weight-wait.html
 ref_source: Filament Group
 ---
 

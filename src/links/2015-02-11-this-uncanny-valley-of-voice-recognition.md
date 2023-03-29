@@ -2,8 +2,8 @@
 title: "This Uncanny Valley of Voice Recognition"
 date: 2015-02-11 10:09:17 -05:00
 comments: false
-ref_url: http://zachholman.com/posts/uncanny-valley/
-in_reply_to: http://zachholman.com/posts/uncanny-valley/
+ref_url: https://zachholman.com/posts/uncanny-valley/
+in_reply_to: https://zachholman.com/posts/uncanny-valley/
 ref_source: Zach Holman’s Blog
 ---
 

@@ -2,8 +2,8 @@
 title: "A Cautionary Tale: DOJ Intervenes in Another Web Accessibility Lawsuit"
 date: 2017-01-03 14:34:34 -05:00
 comments: false
-ref_url: http://www.jdsupra.com/legalnews/a-cautionary-tale-doj-intervenes-in-35737/
-in_reply_to: http://www.jdsupra.com/legalnews/a-cautionary-tale-doj-intervenes-in-35737/
+ref_url: https://www.jdsupra.com/legalnews/a-cautionary-tale-doj-intervenes-in-35737/
+in_reply_to: https://www.jdsupra.com/legalnews/a-cautionary-tale-doj-intervenes-in-35737/
 ref_source: Seyfarth Shaw LLP
 ---
 

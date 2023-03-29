@@ -7,7 +7,7 @@ in_reply_to: https://blogs.windows.com/msedgedev/2015/01/22/project-spartan-and-
 ref_source: Microsoft Edge Blog
 ---
 
-[Jason Weber](http://www.jasonweber.com/), Group Program Manager of Internet Explorer, provides a little more insight into “Project Spartan” and how Microsoft plans to balance consumer and enterprise needs.
+[Jason Weber](https://www.jasonweber.com/), Group Program Manager of Internet Explorer, provides a little more insight into “Project Spartan” and how Microsoft plans to balance consumer and enterprise needs.
 
 Because a picture is worth a thousand words:
 

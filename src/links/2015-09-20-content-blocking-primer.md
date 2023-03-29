@@ -3,8 +3,8 @@ title: "Content Blocking Primer"
 description: "Fantastic post from Eric on how the mass appeal of content blockers has given the web a mulligan."
 date: 2015-09-20 14:52:34 -04:00
 comments: false
-ref_url: http://meyerweb.com/eric/thoughts/2015/09/19/content-blocking-primer/
-in_reply_to: http://meyerweb.com/eric/thoughts/2015/09/19/content-blocking-primer/
+ref_url: https://meyerweb.com/eric/thoughts/2015/09/19/content-blocking-primer/
+in_reply_to: https://meyerweb.com/eric/thoughts/2015/09/19/content-blocking-primer/
 ref_source: Eric Meyer
 ---
 

@@ -3,8 +3,8 @@ title: "Why America’s obsession with STEM education is dangerous"
 description: "A fantastic op-Ed by Fareed Zakaria on why a well-rounded populace is a good thing."
 date: 2015-04-02 17:51:36 -05:00
 comments: false
-ref_url: http://www.washingtonpost.com/opinions/why-stem-wont-make-us-successful/2015/03/26/5f4604f2-d2a5-11e4-ab77-9646eea6a4c7_story.html
-in_reply_to: http://www.washingtonpost.com/opinions/why-stem-wont-make-us-successful/2015/03/26/5f4604f2-d2a5-11e4-ab77-9646eea6a4c7_story.html
+ref_url: https://www.washingtonpost.com/opinions/why-stem-wont-make-us-successful/2015/03/26/5f4604f2-d2a5-11e4-ab77-9646eea6a4c7_story.html
+in_reply_to: https://www.washingtonpost.com/opinions/why-stem-wont-make-us-successful/2015/03/26/5f4604f2-d2a5-11e4-ab77-9646eea6a4c7_story.html
 ref_source: The Washington Post
 ---
 

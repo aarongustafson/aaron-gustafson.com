@@ -11,6 +11,8 @@ hero:
   alt: "A photograph of an anchor chain rusting and rotting away on a beach"
   url: https://labs.openai.com/s/zZJVuhOrUOcyEs6mGV4EMWIp
   offset: "100"
+crossposted:
+  Codementor: https://www.codementor.io/@aarongustafson/salvaging-linkrot-with-the-wayback-machine-23chvlw7mu/
 ---
 
 While making some updates to the site, I did a 404 scan of [my link blog](/notebook/links/) and the results were… less than awesome. So I decided to work some Eleventy magic to recover from them.

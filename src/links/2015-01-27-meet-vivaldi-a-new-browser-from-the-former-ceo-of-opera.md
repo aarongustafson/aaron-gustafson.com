@@ -2,8 +2,8 @@
 title: "Meet Vivaldi, A New Browser From the Former CEO of Opera"
 date: 2015-01-27 08:45:00 -05:00
 comments: false
-ref_url: http://thenextweb.com/apps/2015/01/27/meet-vivaldi-new-browser-former-ceo-opera/
-in_reply_to: http://thenextweb.com/apps/2015/01/27/meet-vivaldi-new-browser-former-ceo-opera/
+ref_url: https://thenextweb.com/apps/2015/01/27/meet-vivaldi-new-browser-former-ceo-opera/
+in_reply_to: https://thenextweb.com/apps/2015/01/27/meet-vivaldi-new-browser-former-ceo-opera/
 ref_source: The Next Web
 ---
 

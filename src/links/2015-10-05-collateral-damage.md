@@ -2,8 +2,8 @@
 title: "Collateral Damage"
 date: 2015-10-05 10:59:56 -04:00
 comments: false
-ref_url: http://miranj.in/blog/2015/collateral-damage
-in_reply_to: http://miranj.in/blog/2015/collateral-damage
+ref_url: https://miranj.in/blog/2015/collateral-damage
+in_reply_to: https://miranj.in/blog/2015/collateral-damage
 ref_source: Miranj
 ---
 

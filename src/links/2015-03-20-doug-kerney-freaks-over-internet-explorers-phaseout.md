@@ -3,8 +3,8 @@ title: "Doug Kerney Freaks over Internet Explorer’s Phaseout"
 description: "Hilarious!"
 date: 2015-03-20 12:10:47 -04:00
 comments: false
-ref_url: http://www.nbc.com/fallon-tonight/segments/115651
-in_reply_to: http://www.nbc.com/fallon-tonight/segments/115651
+ref_url: https://www.nbc.com/fallon-tonight/segments/115651
+in_reply_to: https://www.nbc.com/fallon-tonight/segments/115651
 ref_source: The Tonight Show
 ---
 

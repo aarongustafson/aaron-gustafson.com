@@ -2,8 +2,8 @@
 title: "How to improve your website’s accessibility without going crazy"
 date: 2015-11-18 14:07:32 -05:00
 comments: false
-ref_url: http://www.slideshare.net/yatil/how-to-improve-your-websites-accessibility-without-going-crazy
-in_reply_to: http://www.slideshare.net/yatil/how-to-improve-your-websites-accessibility-without-going-crazy
+ref_url: https://www.slideshare.net/yatil/how-to-improve-your-websites-accessibility-without-going-crazy
+in_reply_to: https://www.slideshare.net/yatil/how-to-improve-your-websites-accessibility-without-going-crazy
 ref_source: Eric Eggert (on SlideShare)
 ---
 

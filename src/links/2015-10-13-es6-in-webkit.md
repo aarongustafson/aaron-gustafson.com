@@ -8,7 +8,7 @@ in_reply_to: https://www.webkit.org/blog/4054/es6-in-webkit/
 ref_source: "Surfin’ Safari"
 ---
 
-This is an update on where things stand with the [ECMAScript 6/2015 spec](http://www.ecma-international.org/ecma-262/6.0/index.html) in WebKit. Currently in Safari for El Capitan & iOS9:
+This is an update on where things stand with the [ECMAScript 6/2015 spec](https://www.ecma-international.org/ecma-262/6.0/index.html) in WebKit. Currently in Safari for El Capitan & iOS9:
 
 * Classes
 * Promises

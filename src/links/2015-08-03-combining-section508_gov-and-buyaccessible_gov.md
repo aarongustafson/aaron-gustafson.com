@@ -2,8 +2,8 @@
 title: "Combining Section508.gov and BuyAccessible.gov"
 date: 2015-08-03 15:16:00 -04:00
 comments: false
-ref_url: http://section508.gov/home
-in_reply_to: http://section508.gov/home
+ref_url: https://section508.gov/home
+in_reply_to: https://section508.gov/home
 ref_source: Section508.gov
 ---
 

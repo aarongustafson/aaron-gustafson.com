@@ -2,8 +2,8 @@
 title: "Flash of Faux Text"
 date: 2015-01-27 08:56:47 -05:00
 comments: false
-ref_url: http://www.zachleat.com/web/foft/
-in_reply_to: http://www.zachleat.com/web/foft/
+ref_url: https://www.zachleat.com/web/foft/
+in_reply_to: https://www.zachleat.com/web/foft/
 ref_source: Zach Leatherman’s Blog
 ---
 

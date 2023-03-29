@@ -2,8 +2,8 @@
 title: "Accessible timeout notifications"
 date: 2015-02-01 13:23:17 -05:00
 comments: false
-ref_url: http://tink.uk/accessible-timeout-notifications/
-in_reply_to: http://tink.uk/accessible-timeout-notifications/
+ref_url: https://tink.uk/accessible-timeout-notifications/
+in_reply_to: https://tink.uk/accessible-timeout-notifications/
 ref_source: Tink
 ---
 

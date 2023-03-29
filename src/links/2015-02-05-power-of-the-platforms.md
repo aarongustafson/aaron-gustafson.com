@@ -2,8 +2,8 @@
 title: "Power of the Platforms"
 date: 2015-02-05 13:11:05 -05:00
 comments: false
-ref_url: http://radar.oreilly.com/2015/02/power-of-the-platforms.html
-in_reply_to: http://radar.oreilly.com/2015/02/power-of-the-platforms.html
+ref_url: https://radar.oreilly.com/2015/02/power-of-the-platforms.html
+in_reply_to: https://radar.oreilly.com/2015/02/power-of-the-platforms.html
 ref_source: O’Reilly Radar
 ---
 

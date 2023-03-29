@@ -3,8 +3,8 @@ title: "The ethics of modern web ad-blocking"
 description: "An excellent overview of where web advertising is and what lines it has crossed."
 date: 2015-08-17 11:57:49 -04:00
 comments: false
-ref_url: http://www.marco.org/2015/08/11/ad-blocking-ethics
-in_reply_to: http://www.marco.org/2015/08/11/ad-blocking-ethics
+ref_url: https://www.marco.org/2015/08/11/ad-blocking-ethics
+in_reply_to: https://www.marco.org/2015/08/11/ad-blocking-ethics
 ref_source: Marco.org
 ---
 

@@ -2,8 +2,8 @@
 title: "Infinite Scrolling and Accessibility (It’s Usually Bad)"
 date: 2015-08-27 14:47:38 -04:00
 comments: false
-ref_url: http://www.webaxe.org/infinite-scrolling-and-accessibility/
-in_reply_to: http://www.webaxe.org/infinite-scrolling-and-accessibility/
+ref_url: https://www.webaxe.org/infinite-scrolling-and-accessibility/
+in_reply_to: https://www.webaxe.org/infinite-scrolling-and-accessibility/
 ref_source: Web Axe
 ---
 

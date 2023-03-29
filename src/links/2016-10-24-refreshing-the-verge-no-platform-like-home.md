@@ -3,8 +3,8 @@ title: "Refreshing The Verge"
 twitter_text: "I love how Mandy deftly wove progressive enhancement into her content strategy and publishing discussion"
 date: 2016-10-24 13:29:55 -04:00
 comments: false
-ref_url: http://www.theverge.com/2016/10/21/13331208/refreshing-the-verge-no-platform-like-home
-in_reply_to: http://www.theverge.com/2016/10/21/13331208/refreshing-the-verge-no-platform-like-home
+ref_url: https://www.theverge.com/2016/10/21/13331208/refreshing-the-verge-no-platform-like-home
+in_reply_to: https://www.theverge.com/2016/10/21/13331208/refreshing-the-verge-no-platform-like-home
 ref_source: The Verge
 ---
 

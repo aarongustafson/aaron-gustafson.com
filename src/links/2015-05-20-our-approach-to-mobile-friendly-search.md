@@ -3,12 +3,12 @@ title: "Our Approach to Mobile-friendly Search"
 description: "Bing cares about mobile-friendliness now too."
 date: 2015-05-20 14:09:40 -04:00
 comments: false
-ref_url: http://blogs.bing.com/webmaster/2015/05/14/our-approach-to-mobile-friendly-search/
-in_reply_to: http://blogs.bing.com/webmaster/2015/05/14/our-approach-to-mobile-friendly-search/
+ref_url: https://blogs.bing.com/webmaster/2015/05/14/our-approach-to-mobile-friendly-search/
+in_reply_to: https://blogs.bing.com/webmaster/2015/05/14/our-approach-to-mobile-friendly-search/
 ref_source: Bing Webmaster Blog
 via:
  name: Engadget
- url: http://www.engadget.com/2015/05/14/microsoft-bing-mobile-friendly-results/
+ url: https://www.engadget.com/2015/05/14/microsoft-bing-mobile-friendly-results/
 ---
 
 Bing cares about mobile-friendliness now too:

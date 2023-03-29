@@ -3,8 +3,8 @@ title: "Anachronistic Beard: a new methodology to make sites work anywhere"
 description: "Thank you Bruce!"
 date: 2015-09-17 15:24:42 -04:00
 comments: false
-ref_url: http://www.brucelawson.co.uk/2015/anachronistic-beard-a-new-methodology-to-make-sites-work-anywhere/
-in_reply_to: http://www.brucelawson.co.uk/2015/anachronistic-beard-a-new-methodology-to-make-sites-work-anywhere/
+ref_url: https://www.brucelawson.co.uk/2015/anachronistic-beard-a-new-methodology-to-make-sites-work-anywhere/
+in_reply_to: https://www.brucelawson.co.uk/2015/anachronistic-beard-a-new-methodology-to-make-sites-work-anywhere/
 ref_source: Bruce Lawson
 ---
 

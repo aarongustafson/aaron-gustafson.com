@@ -1,8 +1,8 @@
 ---
 title: "How to use -ms-high-contrast"
 date: 2017-04-26 16:52:49 -04:00
-ref_url: http://www.gwhitworth.com/blog/2017/04/how-to-use-ms-high-contrast
-in_reply_to: http://www.gwhitworth.com/blog/2017/04/how-to-use-ms-high-contrast
+ref_url: https://www.gwhitworth.com/blog/2017/04/how-to-use-ms-high-contrast
+in_reply_to: https://www.gwhitworth.com/blog/2017/04/how-to-use-ms-high-contrast
 ref_source: Greg Whitworth
 ---
 

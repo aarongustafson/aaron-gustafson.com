@@ -8,4 +8,4 @@ in_reply_to: https://www.paciellogroup.com/blog/2015/12/does-svg-text-pass-wcag-
 ref_source: The Paciello Group
 ---
 
-[Léonie Watson](http://tink.uk/) investigates and says… yes.
+[Léonie Watson](https://tink.uk/) investigates and says… yes.

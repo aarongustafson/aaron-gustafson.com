@@ -2,8 +2,8 @@
 title: "Timeline of Web Browsers"
 date: 2015-01-21 18:22:31 -05:00
 comments: false
-ref_url: http://en.wikipedia.org/wiki/Timeline_of_web_browsers
-in_reply_to: http://en.wikipedia.org/wiki/Timeline_of_web_browsers
+ref_url: https://en.wikipedia.org/wiki/Timeline_of_web_browsers
+in_reply_to: https://en.wikipedia.org/wiki/Timeline_of_web_browsers
 ref_source: Wikipedia
 ---
 

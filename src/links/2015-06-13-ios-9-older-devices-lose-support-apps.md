@@ -3,8 +3,8 @@ title: "With iOS 9, Apple lets developers cutoff support for older iOS devices w
 description: "I wonder how many app developers will needlessly flip this switch and cut off every iOS device that doesn’t have a 64 bit processor."
 date: 2015-06-13 17:44:53 -04:00
 comments: false
-ref_url: http://9to5mac.com/2015/06/10/ios-9-older-devices-lose-support-apps/
-in_reply_to: http://9to5mac.com/2015/06/10/ios-9-older-devices-lose-support-apps/
+ref_url: https://9to5mac.com/2015/06/10/ios-9-older-devices-lose-support-apps/
+in_reply_to: https://9to5mac.com/2015/06/10/ios-9-older-devices-lose-support-apps/
 ref_source: 9to5Mac
 ---
 

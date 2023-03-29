@@ -3,8 +3,8 @@ title: "Will your toaster become WCAG compliant?"
 description: "This is a really interesting look at the Internet of Things from the perspective of accessibility and how web standards may fit into it all."
 date: 2015-08-03 15:12:54 -04:00
 comments: false
-ref_url: http://www.accessiq.org/news/w3c-column/2015/07/will-your-toaster-become-wcag-compliant
-in_reply_to: http://www.accessiq.org/news/w3c-column/2015/07/will-your-toaster-become-wcag-compliant
+ref_url: https://www.accessiq.org/news/w3c-column/2015/07/will-your-toaster-become-wcag-compliant
+in_reply_to: https://www.accessiq.org/news/w3c-column/2015/07/will-your-toaster-become-wcag-compliant
 ref_source: Access iQ
 ---
 

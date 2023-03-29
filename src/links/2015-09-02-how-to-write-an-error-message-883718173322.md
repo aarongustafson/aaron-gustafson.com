@@ -7,4 +7,4 @@ in_reply_to: https://medium.com/@thomasfuchs/how-to-write-an-error-message-88371
 ref_source: Medium
 ---
 
-This is a fantastic rant from [Thomas Fuchs](http://mir.aculo.us/) on error messages and how to do them well (with lots of examples of how *not* to write error messages).
+This is a fantastic rant from [Thomas Fuchs](https://mir.aculo.us/) on error messages and how to do them well (with lots of examples of how *not* to write error messages).

@@ -3,14 +3,14 @@ title: "Safari 9: Everything web designers need to know now"
 description: "’Nuff said."
 date: 2015-06-17 10:48:51 -04:00
 comments: false
-ref_url: http://www.webdesignerdepot.com/2015/06/safari-9-everything-web-designers-need-to-know-now/
-in_reply_to: http://www.webdesignerdepot.com/2015/06/safari-9-everything-web-designers-need-to-know-now/
+ref_url: https://www.webdesignerdepot.com/2015/06/safari-9-everything-web-designers-need-to-know-now/
+in_reply_to: https://www.webdesignerdepot.com/2015/06/safari-9-everything-web-designers-need-to-know-now/
 ref_source: Webdesigner Depot
 ---
 
 The highlights:
 
-* Scroll snapping (see also [David Storey’s write-up](http://generatedcontent.org/post/66817675443/setting-native-like-scrolling-offsets-in-css-with) on this)
+* Scroll snapping (see also [David Storey’s write-up](https://generatedcontent.org/post/66817675443/setting-native-like-scrolling-offsets-in-css-with) on this)
 * Some ECMAScript 6
 * CSS Filters
 * Removing some vendor prefixes

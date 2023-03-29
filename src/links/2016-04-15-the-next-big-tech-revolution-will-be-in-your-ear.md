@@ -2,8 +2,8 @@
 title: "The Next Big Tech Revolution Will Be In Your Ear"
 date: 2016-04-15 14:14:13 -04:00
 comments: false
-ref_url: http://www.fastcodesign.com/3057483/the-next-big-tech-revolution-will-be-in-your-ear
-in_reply_to: http://www.fastcodesign.com/3057483/the-next-big-tech-revolution-will-be-in-your-ear
+ref_url: https://www.fastcodesign.com/3057483/the-next-big-tech-revolution-will-be-in-your-ear
+in_reply_to: https://www.fastcodesign.com/3057483/the-next-big-tech-revolution-will-be-in-your-ear
 ref_source: Fast Company Design
 ---
 

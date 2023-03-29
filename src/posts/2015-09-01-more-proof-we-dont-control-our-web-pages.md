@@ -17,7 +17,7 @@ Here’s a roundup of some of my "favorite" network issue related headlines from
 * [United was recently called out for blocking access to the <cite>New York Times</cite>](http://arstechnica.com/business/2015/08/united-in-flight-wi-fi-reportedly-blocks-ars-technica-and-new-york-times/) on their in-flight Wi-Fi.
 * [Someone discovered AT&T was injecting CSS, images, and JavaScript into pages](http://webpolicy.org/2015/08/25/att-hotspots-now-with-advertising-injection/) served via their airport hotspots.
 * [Samsung smart TVs were found to be injecting video ads](http://www.cnet.com/au/news/samsung-smart-tvs-forcing-ads-into-video-streaming-apps/) into video streaming apps.
-* [Sprint injects JavaScript into pages](http://pleckey.me/blog/2013/09/11/sprint-mobile-broadband-injecting-3rd-party-javascript/) served via its data connections.
+* [Sprint injects JavaScript into pages](https://web.archive.org/web/20161023191954/http://pleckey.me/blog/2013/09/11/sprint-mobile-broadband-injecting-3rd-party-javascript/) served via its data connections.
 * [Browser add-ins can inject their own advertisements](http://www.ecommercetimes.com/story/82117.html). They can also alter the DOM, load conflicting versions of JavaScript libraries, and more. Awesome, I know. (This is being addressed, but is a persistent issue when add-ins have the ability to manipulate the DOM.)
 
 Some of these issues can be avoided by serving content over HTTPS, but that still won’t enable you to bypass things like firewall blacklists (which led to the jQuery outage on Sky). Your best bet is to design defensively and make sure your users can still accomplish their goals on your site when some resources are missing or markup is altered.

@@ -7,4 +7,4 @@ in_reply_to: https://www.webkit.org/blog/3615/css-selectors-inside-selectors-dis
 ref_source: "Surfin’ Safari"
 ---
 
-More selectors from [Selectors Level 4](http://drafts.csswg.org/selectors-4/) have landed in WebKit. This is a handy overview of some of them.
+More selectors from [Selectors Level 4](https://drafts.csswg.org/selectors-4/) have landed in WebKit. This is a handy overview of some of them.

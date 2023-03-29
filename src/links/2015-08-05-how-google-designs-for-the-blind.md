@@ -2,8 +2,8 @@
 title: "How Google designs for the blind"
 date: 2015-08-05 14:48:29 -04:00
 comments: false
-ref_url: http://money.cnn.com/2015/08/04/technology/google-accessability/index.html
-in_reply_to: http://money.cnn.com/2015/08/04/technology/google-accessability/index.html
+ref_url: https://money.cnn.com/2015/08/04/technology/google-accessability/index.html
+in_reply_to: https://money.cnn.com/2015/08/04/technology/google-accessability/index.html
 ref_source: CNN Money
 ---
 

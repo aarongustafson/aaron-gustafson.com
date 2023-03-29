@@ -2,8 +2,8 @@
 title: "Making Time for Side Projects"
 date: 2014-07-09 09:21:08 -04:00
 comments: false
-in_reply_to: http://alistapart.com/column/making-time-for-side-projects
-ref_url: http://alistapart.com/column/making-time-for-side-projects
+in_reply_to: https://alistapart.com/column/making-time-for-side-projects
+ref_url: https://alistapart.com/column/making-time-for-side-projects
 ref_source: A List Apart
 ---
 

@@ -2,8 +2,8 @@
 title: "Ensuring equal pay for equal work"
 date: 2016-04-12 13:10:35 -04:00
 comments: false
-ref_url: http://blogs.microsoft.com/blog/2016/04/11/ensuring-equal-pay-equal-work/#sm.001oh58x8usfddx11gd2e9bpq28if
-in_reply_to: http://blogs.microsoft.com/blog/2016/04/11/ensuring-equal-pay-equal-work/#sm.001oh58x8usfddx11gd2e9bpq28if
+ref_url: https://blogs.microsoft.com/blog/2016/04/11/ensuring-equal-pay-equal-work/#sm.001oh58x8usfddx11gd2e9bpq28if
+in_reply_to: https://blogs.microsoft.com/blog/2016/04/11/ensuring-equal-pay-equal-work/#sm.001oh58x8usfddx11gd2e9bpq28if
 ref_source: The Official Microsoft Blog
 ---
 

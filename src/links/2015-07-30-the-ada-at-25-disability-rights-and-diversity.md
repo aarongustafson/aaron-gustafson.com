@@ -3,8 +3,8 @@ title: "The ADA at 25: Disability rights and diversity"
 description: "This is a beautiful piece from Microsoft’s General Counsel on the importance of considering special needs within the umbrella of diversity."
 date: 2015-07-30 12:35:11 -04:00
 comments: false
-ref_url: http://blogs.microsoft.com/on-the-issues/2015/07/23/the-ada-at-25-disability-rights-and-diversity/
-in_reply_to: http://blogs.microsoft.com/on-the-issues/2015/07/23/the-ada-at-25-disability-rights-and-diversity/
+ref_url: https://blogs.microsoft.com/on-the-issues/2015/07/23/the-ada-at-25-disability-rights-and-diversity/
+in_reply_to: https://blogs.microsoft.com/on-the-issues/2015/07/23/the-ada-at-25-disability-rights-and-diversity/
 ref_source: Microsoft on the Issues
 ---
 

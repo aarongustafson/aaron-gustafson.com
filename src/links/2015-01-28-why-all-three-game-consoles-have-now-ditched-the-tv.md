@@ -2,8 +2,8 @@
 title: "Why All Three Game Consoles Have Now Ditched the TV"
 date: 2015-01-28 17:48:16 -05:00
 comments: false
-ref_url: http://www.wired.com/2015/01/xbox-streaming-windows-10/
-in_reply_to: http://www.wired.com/2015/01/xbox-streaming-windows-10/
+ref_url: https://www.wired.com/2015/01/xbox-streaming-windows-10/
+in_reply_to: https://www.wired.com/2015/01/xbox-streaming-windows-10/
 ref_source: Wired
 ---
 

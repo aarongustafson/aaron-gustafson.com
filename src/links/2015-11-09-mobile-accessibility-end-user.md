@@ -3,8 +3,8 @@ title: "Accessibility Requires App Developers To Consider Every End User"
 description: "We should do everything in our power to deliver *positive experiences* to our users while simultaneously recognizing that it is impossible to deliver *the same experience* to each of them."
 date: 2015-11-09 15:01:45 -05:00
 comments: false
-ref_url: http://arc.applause.com/2015/11/02/mobile-accessibility-end-user/
-in_reply_to: http://arc.applause.com/2015/11/02/mobile-accessibility-end-user/
+ref_url: https://arc.applause.com/2015/11/02/mobile-accessibility-end-user/
+in_reply_to: https://arc.applause.com/2015/11/02/mobile-accessibility-end-user/
 ref_source: Arc
 ---
 

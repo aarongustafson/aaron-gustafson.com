@@ -2,8 +2,8 @@
 title: "Remember Palm’s WebOS? Maybe not, but Apple and Google definitely do"
 date: 2017-09-12 11:48:04 -04:00
 tags: [ "user experience", mobile ]
-ref_url: http://www.salon.com/2017/09/03/remember-palms-webos-maybe-not-but-apple-and-google-definitely-do/
-in_reply_to: http://www.salon.com/2017/09/03/remember-palms-webos-maybe-not-but-apple-and-google-definitely-do/
+ref_url: https://www.salon.com/2017/09/03/remember-palms-webos-maybe-not-but-apple-and-google-definitely-do/
+in_reply_to: https://www.salon.com/2017/09/03/remember-palms-webos-maybe-not-but-apple-and-google-definitely-do/
 ref_source: Salon.com
 via:
  name: Slashdot

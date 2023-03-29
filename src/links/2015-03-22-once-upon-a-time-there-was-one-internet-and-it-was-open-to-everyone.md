@@ -3,7 +3,7 @@ title: "Once Upon a Time, There Was One Internet and It Was Open to Everyone…"
 description: "A  great discussion of the implications of Internet censorship on businesses and the economy."
 date: 2015-03-22 22:51:36 -05:00
 comments: false
-ref_url: http://www.wired.com/2015/03/once-upon-a-time-there-was-one-internet-and-it-was-open-to-everyone/
+ref_url: https://www.wired.com/2015/03/once-upon-a-time-there-was-one-internet-and-it-was-open-to-everyone/
 ref_source: Wired
 ---
 

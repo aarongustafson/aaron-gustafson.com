@@ -2,8 +2,8 @@
 title: "Can We Please Stop Fighting The Native vs. Web App Wars?"
 date: 2015-02-27 12:27:14 -05:00
 comments: false
-ref_url: http://readwrite.com/2015/02/27/native-vs-web-apps-ceasefire
-in_reply_to: http://readwrite.com/2015/02/27/native-vs-web-apps-ceasefire
+ref_url: https://readwrite.com/2015/02/27/native-vs-web-apps-ceasefire
+in_reply_to: https://readwrite.com/2015/02/27/native-vs-web-apps-ceasefire
 ref_source: ReadWrite
 ---
 

@@ -2,8 +2,8 @@
 title: "What Does My Site Cost?"
 date: 2015-03-12 07:28:49 -07:00
 comments: false
-ref_url: http://whatdoesmysitecost.com/
-in_reply_to: http://whatdoesmysitecost.com/
+ref_url: https://whatdoesmysitecost.com/
+in_reply_to: https://whatdoesmysitecost.com/
 ref_source: Tim Kadlec
 ---
 

@@ -2,8 +2,8 @@
 title: "Text justification and accessibility"
 date: 2015-08-06 13:53:28 -04:00
 comments: false
-ref_url: http://www.accessiq.org/news/news-features/2015/08/text-justification-and-accessibility
-in_reply_to: http://www.accessiq.org/news/news-features/2015/08/text-justification-and-accessibility
+ref_url: https://www.accessiq.org/news/news-features/2015/08/text-justification-and-accessibility
+in_reply_to: https://www.accessiq.org/news/news-features/2015/08/text-justification-and-accessibility
 ref_source: Access iQ
 ---
 

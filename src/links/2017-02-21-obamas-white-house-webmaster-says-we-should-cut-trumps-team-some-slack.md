@@ -2,8 +2,8 @@
 title: "Obama’s White House webmaster says we should cut Trump’s team some slack"
 date: 2017-02-21 10:36:01 -05:00
 comments: false
-ref_url: http://www.notey.com/@qz_unofficial/external/13839193/obama%E2%80%99s-white-house-webmaster-says-we-should-cut-trump%E2%80%99s-team-some-slack.html
-in_reply_to: http://www.notey.com/@qz_unofficial/external/13839193/obama%E2%80%99s-white-house-webmaster-says-we-should-cut-trump%E2%80%99s-team-some-slack.html
+ref_url: https://www.notey.com/@qz_unofficial/external/13839193/obama%E2%80%99s-white-house-webmaster-says-we-should-cut-trump%E2%80%99s-team-some-slack.html
+in_reply_to: https://www.notey.com/@qz_unofficial/external/13839193/obama%E2%80%99s-white-house-webmaster-says-we-should-cut-trump%E2%80%99s-team-some-slack.html
 ref_source: Quartz
 ---
 

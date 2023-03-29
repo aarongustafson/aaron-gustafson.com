@@ -2,8 +2,8 @@
 title: "10 pro tips for managing the performance of your third-party scripts"
 date: 2016-02-11 16:58:28 -05:00
 comments: false
-ref_url: http://www.soasta.com/blog/10-pro-tips-for-managing-the-performance-of-your-third-party-scripts/
-in_reply_to: http://www.soasta.com/blog/10-pro-tips-for-managing-the-performance-of-your-third-party-scripts/
+ref_url: https://www.soasta.com/blog/10-pro-tips-for-managing-the-performance-of-your-third-party-scripts/
+in_reply_to: https://www.soasta.com/blog/10-pro-tips-for-managing-the-performance-of-your-third-party-scripts/
 ref_source: SOASTA
 ---
 

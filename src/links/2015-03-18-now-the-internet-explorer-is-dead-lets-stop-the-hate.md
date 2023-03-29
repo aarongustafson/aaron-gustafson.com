@@ -3,8 +3,8 @@ title: "Now the Internet Explorer is Dead. Let’s Stop the Hate"
 description: "A great post from Taylor Feliz on why outdated browsers, in general, are more of a problem than Internet Explorer, specifically."
 date: 2015-03-18 15:02:03 -04:00
 comments: false
-ref_url: http://admixweb.com/now-the-internet-explorer-is-dead-let-stop-the-hate/
-in_reply_to: http://admixweb.com/now-the-internet-explorer-is-dead-let-stop-the-hate/
+ref_url: https://www.admixweb.com/now-the-internet-explorer-is-dead-let-stop-the-hate/
+in_reply_to: https://www.admixweb.com/now-the-internet-explorer-is-dead-let-stop-the-hate/
 ref_source: Admix Web Magazine
 ---
 

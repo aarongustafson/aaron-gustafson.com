@@ -4,8 +4,8 @@ description: "DAISY and ARIA, sitting in a tree…"
 twitter_text: "DAISY and ARIA, sitting in a tree… #a11y #epub"
 date: 2015-07-08 14:25:54 -04:00
 comments: false
-ref_url: http://www.w3.org/blog/2015/07/aria-and-dpub-publish-fpwd/
-in_reply_to: http://www.w3.org/blog/2015/07/aria-and-dpub-publish-fpwd/
+ref_url: https://www.w3.org/blog/2015/07/aria-and-dpub-publish-fpwd/
+in_reply_to: https://www.w3.org/blog/2015/07/aria-and-dpub-publish-fpwd/
 ref_source: W3C Blog
 ---
 

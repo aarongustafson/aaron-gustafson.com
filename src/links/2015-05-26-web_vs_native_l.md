@@ -3,8 +3,8 @@ title: "Web vs. native: let’s concede defeat"
 description: "I could not agree more with PPK on this: Platform-specific apps and websites shouldn’t be in competition. Each has its pros and cons."
 date: 2015-05-26 13:38:20 -04:00
 comments: false
-ref_url: http://www.quirksmode.org/blog/archives/2015/05/web_vs_native_l.html
-in_reply_to: http://www.quirksmode.org/blog/archives/2015/05/web_vs_native_l.html
+ref_url: https://www.quirksmode.org/blog/archives/2015/05/web_vs_native_l.html
+in_reply_to: https://www.quirksmode.org/blog/archives/2015/05/web_vs_native_l.html
 ref_source: QuirksBlog
 twitter_text: "Native apps and websites shouldn’t be in competition. Each has its pros and cons."
 ---

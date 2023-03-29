@@ -3,8 +3,8 @@ title: "Duplicate IDs in responsive webpage"
 twitter_text: "The problem with duplicate `id` attributes"
 date: 2017-01-03 15:29:42 -05:00
 comments: false
-ref_url: http://a11yideas.com/testcode/mwp/duplicate-ids.html
-in_reply_to: http://a11yideas.com/testcode/mwp/duplicate-ids.html
+ref_url: https://a11yideas.com/testcode/mwp/duplicate-ids.html
+in_reply_to: https://a11yideas.com/testcode/mwp/duplicate-ids.html
 ref_source: A11y Ideas
 ---
 

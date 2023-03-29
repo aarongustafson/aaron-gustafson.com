@@ -2,8 +2,8 @@
 title: "DOJ Delays ADA Regulations For The Accessibility Of Private Websites To 2018"
 date: 2015-12-10 12:10:23 -05:00
 comments: false
-ref_url: http://www.jdsupra.com/legalnews/doj-delays-ada-regulations-for-the-48095/
-in_reply_to: http://www.jdsupra.com/legalnews/doj-delays-ada-regulations-for-the-48095/
+ref_url: https://www.jdsupra.com/legalnews/doj-delays-ada-regulations-for-the-48095/
+in_reply_to: https://www.jdsupra.com/legalnews/doj-delays-ada-regulations-for-the-48095/
 ref_source: JDSupra Business Advisor
 ---
 

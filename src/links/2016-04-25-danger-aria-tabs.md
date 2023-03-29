@@ -3,8 +3,8 @@ title: "Danger! ARIA tabs"
 Twitter_text: "Interesting: ARIA found harmful to the assistive experience."
 date: 2016-04-25 11:27:20 -04:00
 comments: false
-ref_url: http://simplyaccessible.com/article/danger-aria-tabs/
-in_reply_to: http://simplyaccessible.com/article/danger-aria-tabs/
+ref_url: https://simplyaccessible.com/article/danger-aria-tabs/
+in_reply_to: https://simplyaccessible.com/article/danger-aria-tabs/
 ref_source: Simply Accessible
 ---
 

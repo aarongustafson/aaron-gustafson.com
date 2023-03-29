@@ -2,8 +2,8 @@
 title: "Does anyone actually use (or even know about) Microsoft's Edge browser?"
 twitter_text: "You really should be testing on Edge"
 date: 2017-04-25 13:27:43 -04:00
-ref_url: http://www.zdnet.com/article/does-anyone-actually-use-or-even-know-about-microsofts-edge-browser/
-in_reply_to: http://www.zdnet.com/article/does-anyone-actually-use-or-even-know-about-microsofts-edge-browser/
+ref_url: https://www.zdnet.com/article/does-anyone-actually-use-or-even-know-about-microsofts-edge-browser/
+in_reply_to: https://www.zdnet.com/article/does-anyone-actually-use-or-even-know-about-microsofts-edge-browser/
 ref_source: ZDNet
 ---
 

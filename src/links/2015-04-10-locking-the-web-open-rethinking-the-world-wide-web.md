@@ -2,8 +2,8 @@
 title: "Locking the Web Open: Rethinking the World Wide Web"
 date: 2015-04-10 14:51:46 -04:00
 comments: false
-ref_url: http://thenextweb.com/insider/2015/04/10/locking-the-web-open-why-we-need-to-rethink-the-world-wide-web/
-in_reply_to: http://thenextweb.com/insider/2015/04/10/locking-the-web-open-why-we-need-to-rethink-the-world-wide-web/
+ref_url: https://thenextweb.com/insider/2015/04/10/locking-the-web-open-why-we-need-to-rethink-the-world-wide-web/
+in_reply_to: https://thenextweb.com/insider/2015/04/10/locking-the-web-open-why-we-need-to-rethink-the-world-wide-web/
 ref_source: The Next Web
 ---
 

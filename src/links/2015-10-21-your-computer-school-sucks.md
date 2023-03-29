@@ -4,8 +4,8 @@ description: "Accessibility shouldn’t be an afterthought, especially when it c
 twitter_text: "Accessibility shouldn’t be an afterthought, especially when it comes to web design education."
 date: 2015-10-21 11:11:37 -04:00
 comments: false
-ref_url: http://www.karlgroves.com/2015/10/18/your-computer-school-sucks/
-in_reply_to: http://www.karlgroves.com/2015/10/18/your-computer-school-sucks/
+ref_url: https://www.karlgroves.com/2015/10/18/your-computer-school-sucks/
+in_reply_to: https://www.karlgroves.com/2015/10/18/your-computer-school-sucks/
 ref_source: Karl Groves
 ---
 

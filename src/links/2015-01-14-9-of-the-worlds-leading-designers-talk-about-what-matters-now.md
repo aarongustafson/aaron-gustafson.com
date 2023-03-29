@@ -2,8 +2,8 @@
 title: "9 of the World&#039;s Leading Designers Talk About What Matters Now"
 date: 2015-01-14 09:35:19 -05:00
 comments: false
-ref_url: http://www.wired.com/2015/01/what-matters-to-the-worlds-most-important-designers/
-in_reply_to: http://www.wired.com/2015/01/what-matters-to-the-worlds-most-important-designers/
+ref_url: https://www.wired.com/2015/01/what-matters-to-the-worlds-most-important-designers/
+in_reply_to: https://www.wired.com/2015/01/what-matters-to-the-worlds-most-important-designers/
 ref_source: Wired
 ---
 

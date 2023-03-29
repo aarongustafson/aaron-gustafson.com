@@ -2,8 +2,8 @@
 title: "Microsoft wants to keep your online data secure while you’re using it"
 date: 2015-05-20 15:11:08 -04:00
 comments: false
-ref_url: http://www.engadget.com/2015/05/18/microsoft-vc3/
-in_reply_to: http://www.engadget.com/2015/05/18/microsoft-vc3/
+ref_url: https://www.engadget.com/2015/05/18/microsoft-vc3/
+in_reply_to: https://www.engadget.com/2015/05/18/microsoft-vc3/
 ref_source: Engadget
 ---
 

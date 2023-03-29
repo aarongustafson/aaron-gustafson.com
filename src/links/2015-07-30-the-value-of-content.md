@@ -7,4 +7,4 @@ in_reply_to: https://medium.com/i-m-h-o/the-value-of-content-a30bbe8b54a5
 ref_source: Medium
 ---
 
-This is a great post from [Andy Beaumont](http://blog.andybeaumont.com/) regarding the sad state of affairs when it comes to content vs. conversions on the web. I look forward to the talk!
+This is a great post from [Andy Beaumont](https://blog.andybeaumont.com/) regarding the sad state of affairs when it comes to content vs. conversions on the web. I look forward to the talk!

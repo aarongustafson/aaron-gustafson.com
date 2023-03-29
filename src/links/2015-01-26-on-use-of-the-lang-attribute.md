@@ -2,8 +2,8 @@
 title: "On Use of the `lang` Attribute"
 date: 2015-01-26 11:32:05 -05:00
 comments: false
-ref_url: http://blog.adrianroselli.com/2015/01/on-use-of-lang-attribute.html
-in_reply_to: http://blog.adrianroselli.com/2015/01/on-use-of-lang-attribute.html
+ref_url: https://blog.adrianroselli.com/2015/01/on-use-of-lang-attribute.html
+in_reply_to: https://blog.adrianroselli.com/2015/01/on-use-of-lang-attribute.html
 ref_source: Adrian Roselli’s Blog
 ---
 

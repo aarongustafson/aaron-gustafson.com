@@ -2,8 +2,8 @@
 title: "Accessible toggle-style checkbox"
 date: 2015-02-12 08:41:36 -05:00
 comments: false
-ref_url: http://codepen.io/personable/pen/stpwD
-in_reply_to: http://codepen.io/personable/pen/stpwD
+ref_url: https://codepen.io/personable/pen/stpwD
+in_reply_to: https://codepen.io/personable/pen/stpwD
 ref_source: Codepen
 ---
 

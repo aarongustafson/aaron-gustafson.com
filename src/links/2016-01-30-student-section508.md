@@ -2,8 +2,8 @@
 title: "The Ultimate Section 508 Guide for Students: Content for Everyone"
 date: 2016-01-30 18:32:29 -05:00
 comments: false
-ref_url: http://www.whoishostingthis.com/resources/student-section508/
-in_reply_to: http://www.whoishostingthis.com/resources/student-section508/
+ref_url: https://www.whoishostingthis.com/resources/student-section508/
+in_reply_to: https://www.whoishostingthis.com/resources/student-section508/
 ref_source: WhoIsHostingThis?
 ---
 

@@ -2,8 +2,8 @@
 title: "Five Easy Ways to Be a Better Web Professional"
 date: 2015-02-12 21:05:36 -05:00
 comments: false
-ref_url: http://sixtwothree.org/posts/five-easy-ways-to-be-a-better-web-professional
-in_reply_to: http://sixtwothree.org/posts/five-easy-ways-to-be-a-better-web-professional
+ref_url: https://sixtwothree.org/posts/five-easy-ways-to-be-a-better-web-professional
+in_reply_to: https://sixtwothree.org/posts/five-easy-ways-to-be-a-better-web-professional
 ref_source: Jason Garber’s Blog
 ---
 

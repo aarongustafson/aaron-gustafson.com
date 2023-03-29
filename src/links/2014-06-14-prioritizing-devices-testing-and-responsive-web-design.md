@@ -2,8 +2,8 @@
 title: "Prioritizing Devices: Testing And Responsive Web Design"
 date: 2014-06-14 18:04:26 -05:00
 comments: false
-ref_url: http://www.smashingmagazine.com/2014/07/14/testing-and-responsive-web-design/
-in_reply_to: http://www.smashingmagazine.com/2014/07/14/testing-and-responsive-web-design/
+ref_url: https://www.smashingmagazine.com/2014/07/14/testing-and-responsive-web-design/
+in_reply_to: https://www.smashingmagazine.com/2014/07/14/testing-and-responsive-web-design/
 ref_source: Smashing Magazine
 ---
 

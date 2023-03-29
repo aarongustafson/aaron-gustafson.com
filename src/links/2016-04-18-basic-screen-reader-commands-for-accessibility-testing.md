@@ -7,4 +7,4 @@ in_reply_to: https://www.paciellogroup.com/blog/2015/01/basic-screen-reader-comm
 ref_source: The Paciello Group
 ---
 
-This is a handy cheet sheet from [Léonie Watson](http://tink.uk).
+This is a handy cheet sheet from [Léonie Watson](https://tink.uk).

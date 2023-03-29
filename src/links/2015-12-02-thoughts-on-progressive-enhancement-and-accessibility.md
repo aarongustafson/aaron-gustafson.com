@@ -8,7 +8,7 @@ in_reply_to: https://mikelittle.org/thoughts-on-progressive-enhancement-and-acce
 ref_source: Mike Little
 ---
 
-A lovely post from WordPress co-founding developer [Mike Little](https://mikelittle.org) on progressive enhancement and JavaScript dependence. It’s an excellent retort to [Joe Hoyle’s response](https://gist.github.com/joehoyle/e2bbb4a07403afb08e27) to [Andrey “Rarst” Savchenko’s reaction](http://www.rarst.net/wordpress/progressive-enhancement/) to [WordPress’ announcement of Calypso](https://developer.wordpress.com/2015/11/23/the-story-behind-the-new-wordpress-com/) and their mode to Node and a Single Page App architecture for Wordpress.com administration.
+A lovely post from WordPress co-founding developer [Mike Little](https://mikelittle.org) on progressive enhancement and JavaScript dependence. It’s an excellent retort to [Joe Hoyle’s response](https://gist.github.com/joehoyle/e2bbb4a07403afb08e27) to [Andrey “Rarst” Savchenko’s reaction](https://www.rarst.net/wordpress/progressive-enhancement/) to [WordPress’ announcement of Calypso](https://developer.wordpress.com/2015/11/23/the-story-behind-the-new-wordpress-com/) and their mode to Node and a Single Page App architecture for Wordpress.com administration.
 
 Here’s a nugget of gold:
 

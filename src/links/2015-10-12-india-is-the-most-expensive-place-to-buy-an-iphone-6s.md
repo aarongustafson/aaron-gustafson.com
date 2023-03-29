@@ -2,8 +2,8 @@
 title: "India is the most expensive place to buy an iPhone 6S"
 date: 2015-10-12 12:25:56 -04:00
 comments: false
-ref_url: http://www.cnet.com/news/india-is-the-most-expensive-place-to-buy-an-iphone-6s/
-in_reply_to: http://www.cnet.com/news/india-is-the-most-expensive-place-to-buy-an-iphone-6s/
+ref_url: https://www.cnet.com/news/india-is-the-most-expensive-place-to-buy-an-iphone-6s/
+in_reply_to: https://www.cnet.com/news/india-is-the-most-expensive-place-to-buy-an-iphone-6s/
 ref_source: CNET
 ---
 

@@ -21,7 +21,7 @@ His frustration is completely understandable:
 
 > We have an unambiguous, cross-platform way to represent “PILE OF POO” (💩), while we’re still debating which of the 1.2 billion native Chinese speakers deserve to spell their own names correctly.
 
-And since the subject of [diversity in emoji](http://money.cnn.com/2015/02/23/technology/apple-diverse-emoji/) has been a hot button issue of late, here's a bit on that:
+And since the subject of [diversity in emoji](https://money.cnn.com/2015/02/23/technology/apple-diverse-emoji/) has been a hot button issue of late, here's a bit on that:
 
 > Perhaps I wouldn’t mind that the emoji world now literally has “colored” people, if it weren’t for the timing. Instead, what could have been a meaningless, empty gesture becomes an outright insult. *You can’t write your name in your native language, but at least you can tweet your frustration with an emoji face that’s the same shade of brown as yours!*
 

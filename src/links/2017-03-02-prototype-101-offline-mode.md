@@ -2,8 +2,8 @@
 title: "HTML Prototyping 101 - Offline Mode"
 date: 2017-03-02 16:24:25 -05:00
 comments: false
-ref_url: http://benjamin.parry.is/collecting/thoughts/2017/02/prototype-101-offline-mode/
-in_reply_to: http://benjamin.parry.is/collecting/thoughts/2017/02/prototype-101-offline-mode/
+ref_url: https://benjamin.parry.is/collecting/thoughts/2017/02/prototype-101-offline-mode/
+in_reply_to: https://benjamin.parry.is/collecting/thoughts/2017/02/prototype-101-offline-mode/
 ref_source: Benjamin Parry
 ---
 

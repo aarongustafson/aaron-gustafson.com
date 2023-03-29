@@ -2,8 +2,8 @@
 title: "Shipping system fonts to GitHub.com"
 date: 2018-03-01T15:24:44.007Z
 tags: ["web design", CSS, performance]
-ref_url: http://markdotto.com/2018/02/07/github-system-fonts/
-in_reply_to: http://markdotto.com/2018/02/07/github-system-fonts/
+ref_url: https://markdotto.com/2018/02/07/github-system-fonts/
+in_reply_to: https://markdotto.com/2018/02/07/github-system-fonts/
 twitter_text: "Interesting background on Github’s updated CSS font stack"
 ref_source: "@mdo"
 via:

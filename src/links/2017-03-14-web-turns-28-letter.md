@@ -2,8 +2,8 @@
 title: "Three challenges for the web, according to its inventor"
 date: 2017-03-14 16:26:05 -04:00
 comments: false
-ref_url: http://webfoundation.org/2017/03/web-turns-28-letter/
-in_reply_to: http://webfoundation.org/2017/03/web-turns-28-letter/
+ref_url: https://webfoundation.org/2017/03/web-turns-28-letter/
+in_reply_to: https://webfoundation.org/2017/03/web-turns-28-letter/
 ref_source: World Wide Web Foundation
 via:
  name: Slashdot

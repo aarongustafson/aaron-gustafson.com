@@ -2,8 +2,8 @@
 title: "Inside Microsoft’s New Rendering Engine For The &quot;Project Spartan&quot;"
 date: 2015-01-27 11:32:05 -05:00
 comments: false
-ref_url: http://www.smashingmagazine.com/2015/01/26/inside-microsofts-new-rendering-engine-project-spartan/
-in_reply_to: http://www.smashingmagazine.com/2015/01/26/inside-microsofts-new-rendering-engine-project-spartan/
+ref_url: https://www.smashingmagazine.com/2015/01/26/inside-microsofts-new-rendering-engine-project-spartan/
+in_reply_to: https://www.smashingmagazine.com/2015/01/26/inside-microsofts-new-rendering-engine-project-spartan/
 ref_source: Smashing Magazine
 ---
 

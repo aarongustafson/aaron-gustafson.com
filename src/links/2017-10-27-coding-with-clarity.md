@@ -8,4 +8,4 @@ in_reply_to: https://alistapart.com/article/coding-with-clarity
 ref_source: A List Apart
 ---
 
-This is an excellent roll-up of coding best practices from [Brandon Gregory](http://twitter.com/authorbrandong).
+This is an excellent roll-up of coding best practices from [Brandon Gregory](https://twitter.com/authorbrandong).

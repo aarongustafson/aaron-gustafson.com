@@ -9,7 +9,7 @@ ref_source: Microsoft Edge Blog
 
 With the holidays, I completely missed this announcement from IE team. In IE for Windows 10, we’re getting:
 
-1. All public (i.e. non-intranet) sites will render in "Edge mode" meaning they get the latest standards implementation. _Note: It will ignore [X-UA-Compatible version targeting](http://alistapart.com/article/beyonddoctype)._
+1. All public (i.e. non-intranet) sites will render in "Edge mode" meaning they get the latest standards implementation. _Note: It will ignore [X-UA-Compatible version targeting](https://alistapart.com/article/beyonddoctype)._
 2. [CSS Preserve-3D](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/?q=csstransformspreserve3d)
 3. [Content Security Policy 1.0](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/?q=contentsecuritypolicy) sandboxing
 4. [CSS Interaction Media Queries (Level 4)](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/?q=mediaquerieslevel4interactionmediafeaturespointerandhover) - pointer type & hover testing!
@@ -19,4 +19,4 @@ With the holidays, I completely missed this announcement from IE team. In IE for
 
 Pretty awesome stuff! What do you want to see in future versions of IE? You can [post your thoughts and votes on UserVoice](https://wpdev.uservoice.com/forums/257854-internet-explorer-platform).
 
-If—like me—you’re on a Mac, you can run the latest version of IE via [RemoteIE](https://remote.modern.ie/). Haven’t heard of it? Rey Bango has [a great write-up of how to set up RemoteIE on Macs, iOS, and even Android](http://blog.reybango.com/2014/11/03/a-new-way-to-test-internet-explorer-on-os-x-ios-and-android/).
+If—like me—you’re on a Mac, you can run the latest version of IE via [RemoteIE](https://remote.modern.ie/). Haven’t heard of it? Rey Bango has [a great write-up of how to set up RemoteIE on Macs, iOS, and even Android](https://blog.reybango.com/2014/11/03/a-new-way-to-test-internet-explorer-on-os-x-ios-and-android/).

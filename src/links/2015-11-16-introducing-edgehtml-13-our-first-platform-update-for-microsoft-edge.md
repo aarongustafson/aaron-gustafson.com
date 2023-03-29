@@ -2,8 +2,8 @@
 title: "Introducing EdgeHTML 13, our first platform update for Microsoft Edge"
 date: 2015-11-16 14:22:59 -05:00
 comments: false
-ref_url: http://blogs.windows.com/msedgedev/2015/11/16/introducing-edgehtml-13-our-first-platform-update-for-microsoft-edge/
-in_reply_to: http://blogs.windows.com/msedgedev/2015/11/16/introducing-edgehtml-13-our-first-platform-update-for-microsoft-edge/
+ref_url: https://blogs.windows.com/msedgedev/2015/11/16/introducing-edgehtml-13-our-first-platform-update-for-microsoft-edge/
+in_reply_to: https://blogs.windows.com/msedgedev/2015/11/16/introducing-edgehtml-13-our-first-platform-update-for-microsoft-edge/
 ref_source: Microsoft Edge Dev Blog
 ---
 

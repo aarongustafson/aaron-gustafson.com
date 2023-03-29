@@ -8,4 +8,4 @@ in_reply_to: https://theboldreport.net/2017/02/css-tip-use-not-to-save-time-and-
 ref_source: The Bold Report
 ---
 
-The `:not` selector has [pretty good support](http://caniuse.com/#feat=css-sel3) in its most basic form. Just be sure to [make sure the selector you’re *not* electing is supported](http://caniuse.com/#feat=css-not-sel-list).
+The `:not` selector has [pretty good support](https://caniuse.com/#feat=css-sel3) in its most basic form. Just be sure to [make sure the selector you’re *not* electing is supported](https://caniuse.com/#feat=css-not-sel-list).

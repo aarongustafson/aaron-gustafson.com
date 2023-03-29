@@ -4,12 +4,12 @@ description: "A brief but inspiring profile of Greg Smith, a quadriplegic progra
 twitter_text: "Not all programmers use a keyboard."
 date: 2015-07-02 12:03:16 -04:00
 comments: false
-ref_url: http://www.bizjournals.com/seattle/blog/techflash/2015/06/one-letter-at-a-time-quadriplegic-coder-looks-back.html
-in_reply_to: http://www.bizjournals.com/seattle/blog/techflash/2015/06/one-letter-at-a-time-quadriplegic-coder-looks-back.html
+ref_url: https://www.bizjournals.com/seattle/blog/techflash/2015/06/one-letter-at-a-time-quadriplegic-coder-looks-back.html
+in_reply_to: https://www.bizjournals.com/seattle/blog/techflash/2015/06/one-letter-at-a-time-quadriplegic-coder-looks-back.html
 ref_source: Puget Sound Business Journal
 ---
 
-A brief but inspiring profile of [Greg Smith](http://research.microsoft.com/en-us/people/gregsmi/), a quadriplegic programmer and principal software engineer in Microsoft Research.
+A brief but inspiring profile of [Greg Smith](https://research.microsoft.com/en-us/people/gregsmi/), a quadriplegic programmer and principal software engineer in Microsoft Research.
 
 This bit was pretty incredible:
 

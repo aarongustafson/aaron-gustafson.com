@@ -2,8 +2,8 @@
 title: Personal Histories
 date: 2015-01-14 09:34:56 -05:00
 comments: false
-ref_url: http://www.sarawb.com/2015/01/13/personal-histories/
-in_reply_to: http://www.sarawb.com/2015/01/13/personal-histories/
+ref_url: https://www.sarawb.com/2015/01/13/personal-histories/
+in_reply_to: https://www.sarawb.com/2015/01/13/personal-histories/
 ref_source: Sara Wachter-Boettcher
 is_404: true
 archived: https://web.archive.org/web/20190427094359/http://www.sarawb.com/2015/01/13/personal-histories/

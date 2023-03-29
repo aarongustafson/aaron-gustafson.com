@@ -6,6 +6,7 @@ tags: [accessibility, "web design", forms, HTML]
 description: "Proper labeling is key to ensuring your web forms are usable."
 crossposted:
   Medium: https://medium.com/@AaronGustafson/labeled-with-love-bda2592250b
+  Codementor: https://www.codementor.io/@aarongustafson/labeled-with-love-23cfez4fq9/
 series:
   name: "Modern Web Form Best Practices"
   tag: series-forms

@@ -2,8 +2,8 @@
 title: "Does responsive web design make you more money?"
 date: 2015-04-24 11:24:44 -04:00
 comments: false
-ref_url: http://www.webdesignerdepot.com/2015/04/does-responsive-web-design-make-you-more-money/
-in_reply_to: http://www.webdesignerdepot.com/2015/04/does-responsive-web-design-make-you-more-money/
+ref_url: https://www.webdesignerdepot.com/2015/04/does-responsive-web-design-make-you-more-money/
+in_reply_to: https://www.webdesignerdepot.com/2015/04/does-responsive-web-design-make-you-more-money/
 ref_source: Webdesigner Depot
 via:
  name: Jeremy Keith

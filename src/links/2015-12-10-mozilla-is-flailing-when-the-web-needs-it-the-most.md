@@ -3,8 +3,8 @@ title: "Mozilla Is Flailing When the Internet Needs It the Most"
 description: "I care deeply for Mozilla and hope they can make it through this seemingly rough patch."
 date: 2015-12-10 11:56:35 -05:00
 comments: false
-ref_url: http://www.wired.com/2015/12/mozilla-is-flailing-when-the-web-needs-it-the-most/
-in_reply_to: http://www.wired.com/2015/12/mozilla-is-flailing-when-the-web-needs-it-the-most/
+ref_url: https://www.wired.com/2015/12/mozilla-is-flailing-when-the-web-needs-it-the-most/
+in_reply_to: https://www.wired.com/2015/12/mozilla-is-flailing-when-the-web-needs-it-the-most/
 ref_source: Wired
 ---
 

@@ -13,7 +13,7 @@ And then it was revealed:
 Windows["Microsoft Edge"] = new Browser();
 ```
 
-I gotta believe the origins of the name go back to [IE8’s "version targeting" scheme](http://alistapart.com/article/beyondDOCTYPE#section7). Remember this?
+I gotta believe the origins of the name go back to [IE8’s "version targeting" scheme](https://alistapart.com/article/beyondDOCTYPE#section7). Remember this?
 
 ```html
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />

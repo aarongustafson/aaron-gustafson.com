@@ -8,4 +8,4 @@ in_reply_to: https://medium.com/@LampPostGroup/there-s-a-free-template-for-that-
 ref_source: Laura Patti on Medium
 ---
 
-An excellent piece from [Laura Patti](http://laurapatti.com/), pondering the value of design in the age of so many “good enough” templates and frameworks.
+An excellent piece from [Laura Patti](https://laurapatti.com/), pondering the value of design in the age of so many “good enough” templates and frameworks.

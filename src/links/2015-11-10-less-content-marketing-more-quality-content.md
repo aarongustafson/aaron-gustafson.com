@@ -2,12 +2,12 @@
 title: "Less content marketing, more quality content"
 date: 2015-11-10 14:05:53 -05:00
 comments: false
-ref_url: http://www.gerrymcgovern.com/new-thinking/less-content-marketing-more-quality-content
-in_reply_to: http://www.gerrymcgovern.com/new-thinking/less-content-marketing-more-quality-content
+ref_url: https://www.gerrymcgovern.com/new-thinking/less-content-marketing-more-quality-content
+in_reply_to: https://www.gerrymcgovern.com/new-thinking/less-content-marketing-more-quality-content
 ref_source: Gerry McGovern
 ---
 
-I’ll just let [Gerry](http://www.gerrymcgovern.com/) say it:
+I’ll just let [Gerry](https://www.gerrymcgovern.com/) say it:
 
 > If there has been a constant in my 20+ years of consulting with websites it is that most websites produce far too much low quality ego content. This is true for both commercial, government and non-profit websites.
 

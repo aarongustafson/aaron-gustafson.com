@@ -2,8 +2,8 @@
 title: "requestAutocomplete - Take My Money, Not My Time"
 date: 2014-02-16 17:27:11 -05:00
 comments: false
-in_reply_to: http://www.html5rocks.com/en/tutorials/forms/requestautocomplete/
-ref_url: http://www.html5rocks.com/en/tutorials/forms/requestautocomplete/
+in_reply_to: https://www.html5rocks.com/en/tutorials/forms/requestautocomplete/
+ref_url: https://www.html5rocks.com/en/tutorials/forms/requestautocomplete/
 ref_source: HTML5 Rocks
 ---
 

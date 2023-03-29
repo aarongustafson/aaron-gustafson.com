@@ -2,8 +2,8 @@
 title: "Why Is Text to Speech Only an Afterthought?"
 date: 2016-04-27 13:48:48 -04:00
 comments: false
-ref_url: http://www.digitalbookworld.com/2016/why-is-text-to-speech-only-an-afterthought/
-in_reply_to: http://www.digitalbookworld.com/2016/why-is-text-to-speech-only-an-afterthought/
+ref_url: https://www.digitalbookworld.com/2016/why-is-text-to-speech-only-an-afterthought/
+in_reply_to: https://www.digitalbookworld.com/2016/why-is-text-to-speech-only-an-afterthought/
 ref_source: Digital Book World
 ---
 

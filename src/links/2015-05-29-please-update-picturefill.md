@@ -8,4 +8,4 @@ in_reply_to: https://css-tricks.com/please-update-picturefill
 ref_source: CSS Tricks
 ---
 
-[Mat Marquis](https://twitter.com/wilto) on why you really need to upgrade [Picturefill](http://scottjehl.github.io/picturefill/) if you’re using it. Really. Like now.
+[Mat Marquis](https://twitter.com/wilto) on why you really need to upgrade [Picturefill](https://scottjehl.github.io/picturefill/) if you’re using it. Really. Like now.

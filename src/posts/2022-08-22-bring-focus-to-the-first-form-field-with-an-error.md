@@ -15,6 +15,8 @@ series:
   name: "Modern Web Form Best Practices"
   tag: "series-forms"
   ordinal: "third"
+crossposted:
+  Codementor: https://www.codementor.io/@aarongustafson/bring-focus-to-the-first-form-field-with-an-error-23ckq7nj58/
 ---
 
 While filling out a long form the other day, I couldn’t figure out why it wasn’t submitting. Turns out I’d forgotten to fill in a field, but I didn’t know that because it had scrolled out of the viewport. This is a common problem on the web, but easily remedied with a little bit of JavaScript.

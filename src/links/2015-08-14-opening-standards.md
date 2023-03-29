@@ -4,8 +4,8 @@ description: "For the first time, all of W3C’s active Working Groups now opera
 tweet_text: "For the first time, all of W3C’s active Working Groups now operate in public"
 date: 2015-08-14 15:06:42 -04:00
 comments: false
-ref_url: http://schepers.cc/opening-standards
-in_reply_to: http://schepers.cc/opening-standards
+ref_url: https://schepers.cc/opening-standards
+in_reply_to: https://schepers.cc/opening-standards
 ref_source: Reinventing Fire
 ---
 

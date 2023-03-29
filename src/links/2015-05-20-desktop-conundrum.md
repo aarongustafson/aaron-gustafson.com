@@ -3,8 +3,8 @@ title: "The Desktop Conundrum"
 description: "In this brief post, Dave Rupert muses about the future of “desktop”."
 date: 2015-05-20 14:52:10 -04:00
 comments: false
-ref_url: http://daverupert.com/2015/05/desktop-conundrum/
-in_reply_to: http://daverupert.com/2015/05/desktop-conundrum/
+ref_url: https://daverupert.com/2015/05/desktop-conundrum/
+in_reply_to: https://daverupert.com/2015/05/desktop-conundrum/
 ref_source: daverupert.com
 via:
  name: Jeremy Keith

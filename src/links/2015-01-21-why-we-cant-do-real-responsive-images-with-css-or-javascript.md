@@ -2,8 +2,8 @@
 title: "Why we can’t do real responsive images with CSS or JavaScript"
 date: 2015-01-21 18:15:06 -05:00
 comments: false
-ref_url: http://www.brucelawson.co.uk/2015/why-we-cant-do-real-responsive-images-with-css-or-javascript/
-in_reply_to: http://www.brucelawson.co.uk/2015/why-we-cant-do-real-responsive-images-with-css-or-javascript/
+ref_url: https://www.brucelawson.co.uk/2015/why-we-cant-do-real-responsive-images-with-css-or-javascript/
+in_reply_to: https://www.brucelawson.co.uk/2015/why-we-cant-do-real-responsive-images-with-css-or-javascript/
 ref_source: "Bruce Lawson’s  personal site"
 ---
 

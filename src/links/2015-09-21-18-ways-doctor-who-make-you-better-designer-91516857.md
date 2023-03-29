@@ -2,8 +2,8 @@
 title: "18 ways Doctor Who can make you a better designer"
 date: 2015-09-21 11:54:31 -07:00
 comments: false
-ref_url: http://www.creativebloq.com/web-design/18-ways-doctor-who-make-you-better-designer-91516857
-in_reply_to: http://www.creativebloq.com/web-design/18-ways-doctor-who-make-you-better-designer-91516857
+ref_url: https://www.creativebloq.com/web-design/18-ways-doctor-who-make-you-better-designer-91516857
+in_reply_to: https://www.creativebloq.com/web-design/18-ways-doctor-who-make-you-better-designer-91516857
 ref_source: Creative Bloq
 ---
 

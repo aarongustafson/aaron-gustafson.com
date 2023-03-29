@@ -2,8 +2,8 @@
 title: "Inclusive Design Tips: Presenting Information in Multiple Ways"
 date: 2017-01-05 13:46:39 -05:00
 comments: false
-ref_url: http://www.deque.com/blog/inclusive-design-tips-presenting-information-multiple-ways/
-in_reply_to: http://www.deque.com/blog/inclusive-design-tips-presenting-information-multiple-ways/
+ref_url: https://www.deque.com/blog/inclusive-design-tips-presenting-information-multiple-ways/
+in_reply_to: https://www.deque.com/blog/inclusive-design-tips-presenting-information-multiple-ways/
 ref_source: Deque
 ---
 

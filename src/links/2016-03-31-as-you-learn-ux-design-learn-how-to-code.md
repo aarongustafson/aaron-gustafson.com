@@ -2,8 +2,8 @@
 title: "Learning to Code Gives You Advantages as a UX Designer"
 date: 2016-03-31 17:01:34 -04:00
 comments: false
-ref_url: http://jessicaivins.net/as-you-learn-ux-design-learn-how-to-code/
-in_reply_to: http://jessicaivins.net/as-you-learn-ux-design-learn-how-to-code/
+ref_url: https://jessicaivins.net/as-you-learn-ux-design-learn-how-to-code/
+in_reply_to: https://jessicaivins.net/as-you-learn-ux-design-learn-how-to-code/
 ref_source: Jessica Ivins
 ---
 

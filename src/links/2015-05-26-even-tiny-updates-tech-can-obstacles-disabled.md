@@ -3,8 +3,8 @@ title: "Even Tiny Updates to Tech Can Be Obstacles for the Disabled"
 description: "Paul Kotler shares some of his struggles as a device user with autism and apraxia, including those you may not have considered."
 date: 2015-05-26 13:33:43 -04:00
 comments: false
-ref_url: http://www.wired.com/2015/05/even-tiny-updates-tech-can-obstacles-disabled/
-in_reply_to: http://www.wired.com/2015/05/even-tiny-updates-tech-can-obstacles-disabled/
+ref_url: https://www.wired.com/2015/05/even-tiny-updates-tech-can-obstacles-disabled/
+in_reply_to: https://www.wired.com/2015/05/even-tiny-updates-tech-can-obstacles-disabled/
 ref_source: Wired
 ---
 

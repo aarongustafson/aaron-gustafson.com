@@ -24,4 +24,4 @@ All in all, it was a relatively painless migration. Admittedly, the initial re-b
 
 Anyway, so now this site is running under HTTPS. If you encounter any issues, please let me know. And if you want to read a really good account of migrating a site to HTTPS, you should definitely [read Jeremy Keith’s step-by-step guide](https://adactio.com/articles/7435).
 
-[^1]: It’s worth noting that [the source of the site](https://github.com/aarongustafson/aarongustafson.github.io/tree/source) (and even [a back-up build](https://github.com/aarongustafson/aarongustafson.github.io/tree/master)) will remain on Github for the forseeable future.
+[^1]: It’s worth noting that [the source of the site](https://github.com/aarongustafson/aaron-gustafson.com/tree/main/) will remain on Github for the forseeable future.

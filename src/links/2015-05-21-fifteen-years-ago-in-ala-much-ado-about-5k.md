@@ -3,8 +3,8 @@ title: "15 Years Ago in ALA: Much Ado About 5"
 description: "In this brief post, Jeffrey Zeldman reminds us of the importance of simplicity by deftly showing us where we’ve gotten ourselves."
 date: 2015-05-21 14:56:10 -04:00
 comments: false
-ref_url: http://alistapart.com/blog/post/fifteen-years-ago-in-ala-much-ado-about-5k
-in_reply_to: http://alistapart.com/blog/post/fifteen-years-ago-in-ala-much-ado-about-5k
+ref_url: https://alistapart.com/blog/post/fifteen-years-ago-in-ala-much-ado-about-5k
+in_reply_to: https://alistapart.com/blog/post/fifteen-years-ago-in-ala-much-ado-about-5k
 ref_source: A List Apart
 ---
 

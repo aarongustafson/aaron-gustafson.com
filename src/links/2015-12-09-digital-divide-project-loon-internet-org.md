@@ -4,8 +4,8 @@ description: "An excellent call to arms for reaching the underserved."
 twitter_text: "An excellent call to arms for reaching the underserved."
 date: 2015-12-09 11:26:49 -05:00
 comments: false
-ref_url: http://readwrite.com/2015/12/04/digital-divide-project-loon-internet-org
-in_reply_to: http://readwrite.com/2015/12/04/digital-divide-project-loon-internet-org
+ref_url: https://readwrite.com/2015/12/04/digital-divide-project-loon-internet-org
+in_reply_to: https://readwrite.com/2015/12/04/digital-divide-project-loon-internet-org
 ref_source: ReadWrite
 ---
 

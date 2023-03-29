@@ -3,12 +3,12 @@ title: "This conspiracy theory says ad tech companies deliberately keep web page
 twitter_text: "Ad companies profit, users suffer. This is ridiculous."
 date: 2015-08-04 15:09:51 -04:00
 comments: false
-ref_url: http://www.businessinsider.com/conspiracy-web-pages-load-slowly-because-they-make-more-money-that-way-2015-7
-in_reply_to: http://www.businessinsider.com/conspiracy-web-pages-load-slowly-because-they-make-more-money-that-way-2015-7
+ref_url: https://www.businessinsider.com/conspiracy-web-pages-load-slowly-because-they-make-more-money-that-way-2015-7
+in_reply_to: https://www.businessinsider.com/conspiracy-web-pages-load-slowly-because-they-make-more-money-that-way-2015-7
 ref_source: Business Insider
 via:
   name: Slashdot
-  url: http://news.slashdot.org/story/15/07/28/2229259/advertising-companies-accused-of-deliberately-slowing-page-load-times-for-profit
+  url: https://news.slashdot.org/story/15/07/28/2229259/advertising-companies-accused-of-deliberately-slowing-page-load-times-for-profit
 ---
 
 Ad companies profit, users suffer. This is ridiculous.

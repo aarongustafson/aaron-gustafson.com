@@ -2,8 +2,8 @@
 title: "Reframing Accessibility for the Web"
 date: 2015-02-05 21:05:36 -05:00
 comments: false
-ref_url: http://alistapart.com/article/reframing-accessibility-for-the-web
-in_reply_to: http://alistapart.com/article/reframing-accessibility-for-the-web
+ref_url: https://alistapart.com/article/reframing-accessibility-for-the-web
+in_reply_to: https://alistapart.com/article/reframing-accessibility-for-the-web
 ref_source: A List Apart
 ---
 

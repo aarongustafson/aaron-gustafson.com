@@ -6,7 +6,7 @@ tags: ["progressive web apps", "web design", "web development", "user experience
 description: "While the name might imply that Progressive Web App tech is aimed at “apps”, every site can benefit from the tools they provide."
 crossposted:
   Medium: https://medium.com/@AaronGustafson/97ddcc21c2cb
-  Codementor: https://www.codementor.io/aarongustafson/your-site-any-site-should-be-a-pwa-a69pe17og
+  Codementor: https://www.codementor.io/@aarongustafson/your-site-any-site-should-be-a-pwa-a69pe17og/
 ---
 
 The other day, [Frances Berriman](https://fberriman.com/)—who coined the term “Progressive Web App”—[wrote a bit about how she came up with that name](https://fberriman.com/2017/06/26/naming-progressive-web-apps/). In it she clearly points out that the name has become a little problematic in dev circles<!-- more -->:

@@ -7,4 +7,4 @@ in_reply_to: https://medium.com/goodux-badux/towards-a-new-information-architect
 ref_source: Medium
 ---
 
-Fantastic history of "Information Architecture" as a practice, with an eye for where it’s heading. Great work [Christina Wodtke](http://www.cwodtke.com)!
+Fantastic history of "Information Architecture" as a practice, with an eye for where it’s heading. Great work [Christina Wodtke](https://www.cwodtke.com)!

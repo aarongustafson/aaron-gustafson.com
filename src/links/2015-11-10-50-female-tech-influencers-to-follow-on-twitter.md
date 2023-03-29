@@ -2,8 +2,8 @@
 title: "50 Female Tech Influencers You Need To Follow on Twitter"
 date: 2015-11-10 15:12:39 -05:00
 comments: false
-ref_url: http://skillcrush.com/2015/11/04/50-female-tech-influencers-to-follow-on-twitter/
-in_reply_to: http://skillcrush.com/2015/11/04/50-female-tech-influencers-to-follow-on-twitter/
+ref_url: https://skillcrush.com/2015/11/04/50-female-tech-influencers-to-follow-on-twitter/
+in_reply_to: https://skillcrush.com/2015/11/04/50-female-tech-influencers-to-follow-on-twitter/
 ref_source: Skillcrush
 via:
  name: Ben Callahan

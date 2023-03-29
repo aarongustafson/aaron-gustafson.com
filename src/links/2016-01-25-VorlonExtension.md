@@ -8,4 +8,4 @@ in_reply_to: https://github.com/MicrosoftDX/VorlonExtension
 ref_source: Microsoft DX on GitHub
 ---
 
-[Vorlon.js](http://vorlonjs.com/) is a pretty neat nodejs-based remote debugging tool from some of my colleagues at Microsoft. And now it’s available as a browser extension!
+[Vorlon.js](https://vorlonjs.com/) is a pretty neat nodejs-based remote debugging tool from some of my colleagues at Microsoft. And now it’s available as a browser extension!

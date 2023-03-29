@@ -2,8 +2,8 @@
 title: "WAI-ARIA - Screen Reader Compatibility"
 date: 2015-09-17 15:15:06 -04:00
 comments: false
-ref_url: http://www.powermapper.com/tests/screen-readers/aria/index.html
-in_reply_to: http://www.powermapper.com/tests/screen-readers/aria/index.html
+ref_url: https://www.powermapper.com/tests/screen-readers/aria/index.html
+in_reply_to: https://www.powermapper.com/tests/screen-readers/aria/index.html
 ref_source: PowerMapper Software
 ---
 

@@ -2,8 +2,8 @@
 title: "Making News Websites Accessible to All"
 date: 2016-04-15 14:06:02 -04:00
 comments: false
-ref_url: http://niemanreports.org/articles/making-news-websites-accessible-to-all/
-in_reply_to: http://niemanreports.org/articles/making-news-websites-accessible-to-all/
+ref_url: https://niemanreports.org/articles/making-news-websites-accessible-to-all/
+in_reply_to: https://niemanreports.org/articles/making-news-websites-accessible-to-all/
 ref_source: Nieman Reports
 ---
 

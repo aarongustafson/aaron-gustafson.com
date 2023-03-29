@@ -2,8 +2,8 @@
 title: "All of This Has Happened Before and Will Happen Again"
 date: 2015-01-27 08:49:25 -05:00
 comments: false
-ref_url: http://blog.adrianroselli.com/2015/01/all-of-this-has-happened-before-and.html
-in_reply_to: http://blog.adrianroselli.com/2015/01/all-of-this-has-happened-before-and.html
+ref_url: https://blog.adrianroselli.com/2015/01/all-of-this-has-happened-before-and.html
+in_reply_to: https://blog.adrianroselli.com/2015/01/all-of-this-has-happened-before-and.html
 ref_source: Adrian Roselli’s Blog
 ---
 

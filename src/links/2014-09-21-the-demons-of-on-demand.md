@@ -2,8 +2,8 @@
 title: "The Demons Of On-Demand"
 date: 2014-09-21 18:08:27 -05:00
 comments: false
-ref_url: http://techcrunch.com/2014/09/20/the-demons-of-on-demand/
-in_reply_to: http://techcrunch.com/2014/09/20/the-demons-of-on-demand/
+ref_url: https://techcrunch.com/2014/09/20/the-demons-of-on-demand/
+in_reply_to: https://techcrunch.com/2014/09/20/the-demons-of-on-demand/
 ref_source: TechCrunch
 ---
 

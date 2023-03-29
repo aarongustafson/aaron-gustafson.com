@@ -2,8 +2,8 @@
 title: "The problem with Angular"
 date: 2015-01-16 15:37:16 -05:00
 comments: false
-ref_url: http://www.quirksmode.org/blog/archives/2015/01/the_problem_wit.html
-in_reply_to: http://www.quirksmode.org/blog/archives/2015/01/the_problem_wit.html
+ref_url: https://www.quirksmode.org/blog/archives/2015/01/the_problem_wit.html
+in_reply_to: https://www.quirksmode.org/blog/archives/2015/01/the_problem_wit.html
 ref_source: "PPK’s QuirksBlog"
 ---
 

@@ -2,8 +2,8 @@
 title: "In the Future, How Will We Talk to Our Technology?"
 date: 2015-10-02 14:06:02 -04:00
 comments: false
-ref_url: http://www.wired.com/2015/09/future-will-talk-technology/
-in_reply_to: http://www.wired.com/2015/09/future-will-talk-technology/
+ref_url: https://www.wired.com/2015/09/future-will-talk-technology/
+in_reply_to: https://www.wired.com/2015/09/future-will-talk-technology/
 ref_source: Wired
 ---
 

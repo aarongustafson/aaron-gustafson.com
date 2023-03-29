@@ -3,8 +3,8 @@ title: "The JavaScript Framework Bandwagonism"
 description: "Pure gold from Teylor Feliz."
 date: 2015-05-18 16:29:06 -04:00
 comments: false
-ref_url: http://admixweb.com/the-javascript-framework-bangwagonism/
-in_reply_to: http://admixweb.com/the-javascript-framework-bangwagonism/
+ref_url: https://admixweb.com/the-javascript-framework-bangwagonism/
+in_reply_to: https://admixweb.com/the-javascript-framework-bangwagonism/
 ref_source: admixweb
 ---
 

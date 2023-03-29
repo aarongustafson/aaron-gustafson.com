@@ -2,8 +2,8 @@
 title: "Building a more interoperable Web with Microsoft Edge"
 date: 2015-06-17 13:49:30 -04:00
 comments: false
-ref_url: http://blogs.windows.com/msedgedev/2015/06/17/building-a-more-interoperable-web-with-microsoft-edge/
-in_reply_to: http://blogs.windows.com/msedgedev/2015/06/17/building-a-more-interoperable-web-with-microsoft-edge/
+ref_url: https://blogs.windows.com/msedgedev/2015/06/17/building-a-more-interoperable-web-with-microsoft-edge/
+in_reply_to: https://blogs.windows.com/msedgedev/2015/06/17/building-a-more-interoperable-web-with-microsoft-edge/
 ref_source: Microsoft Edge Dev Blog
 ---
 

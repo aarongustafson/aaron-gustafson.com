@@ -2,8 +2,8 @@
 title: "PSA: Don't Use Gradient Generators!"
 date: 2015-11-18 14:34:03 -05:00
 comments: false
-ref_url: http://codepen.io/thebabydino/full/pjxVWp/
-in_reply_to: http://codepen.io/thebabydino/full/pjxVWp/
+ref_url: https://codepen.io/thebabydino/full/pjxVWp/
+in_reply_to: https://codepen.io/thebabydino/full/pjxVWp/
 ref_source: CodePen
 ---
 

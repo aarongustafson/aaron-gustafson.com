@@ -8,7 +8,7 @@ in_reply_to: https://www.eff.org/document/eff-border-search-pocket-guide
 ref_source: Electronic Frontier Foundation
 via:
  name: Lifehacker
- url: http://lifehacker.com/print-out-the-effs-border-search-pocket-guide-before-yo-1793160126
+ url: https://lifehacker.com/print-out-the-effs-border-search-pocket-guide-before-yo-1793160126
 ---
 
 Following on my earlier post, here’s a pocket guide to border crossing from the [Electronic Frontier Foundation](https://www.eff.org).

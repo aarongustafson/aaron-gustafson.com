@@ -2,8 +2,8 @@
 title: "Fixed and inflexible"
 date: 2014-07-25 18:06:07 -05:00
 comments: false
-ref_url: http://blog.cloudfour.com/fixed-and-inflexible/
-in_reply_to: http://blog.cloudfour.com/fixed-and-inflexible/
+ref_url: https://blog.cloudfour.com/fixed-and-inflexible/
+in_reply_to: https://blog.cloudfour.com/fixed-and-inflexible/
 ref_source: Cloud Four Blog
 ---
 

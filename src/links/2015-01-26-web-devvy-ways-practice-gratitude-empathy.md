@@ -2,8 +2,8 @@
 title: "Web Devvy Ways to Practice Gratitude and Empathy"
 date: 2015-01-26 12:43:01 -05:00
 comments: false
-ref_url: http://css-tricks.com/web-devvy-ways-practice-gratitude-empathy/
-in_reply_to: http://css-tricks.com/web-devvy-ways-practice-gratitude-empathy/
+ref_url: https://css-tricks.com/web-devvy-ways-practice-gratitude-empathy/
+in_reply_to: https://css-tricks.com/web-devvy-ways-practice-gratitude-empathy/
 ref_source: CSS Tricks
 ---
 

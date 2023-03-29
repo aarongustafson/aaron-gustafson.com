@@ -21,7 +21,7 @@ After reading these pieces, I decided to see how much I could do to improve the 
 
 ## Using Resource Hints
 
-To kick things off, I followed Malte’s advice and used [Resource Hints](https://w3c.github.io/resource-hints/) to *prime the pump* for any third-party servers hosting assets I use frequently (e.g. Disqus, Twitter, etc.). I used the code Malte references in [the AMP Project](https://github.com/ampproject/amphtml) as my starting point and [added two new methods (`preconnect()` and `prefetch()`) to my global `AG` object](https://github.com/aarongustafson/aarongustafson.github.io/blob/source/source/_javascript/main/resource-hints.js). With that library code in place, I can call those methods as necessary from within my other JavaScript files. Here’s a simplified extract from [my Disqus integration script](https://github.com/aarongustafson/aarongustafson.github.io/blob/source/source/_javascript/post/disqus.js):
+To kick things off, I followed Malte’s advice and used [Resource Hints](https://w3c.github.io/resource-hints/) to *prime the pump* for any third-party servers hosting assets I use frequently (e.g. Disqus, Twitter, etc.). I used the code Malte references in [the AMP Project](https://github.com/ampproject/amphtml) as my starting point and [added two new methods (`preconnect()` and `prefetch()`) to my global `AG` object](https://github.com/aarongustafson/aaron-gustafson.com/blob/main/src/_javascript/main/resource-hints.js). With that library code in place, I can call those methods as necessary from within my other JavaScript files. Here’s a simplified extract from [my Disqus integration script](https://github.com/aarongustafson/aaron-gustafson.com/blob/old-jekyll/_javascript/post/disqus.js.removed):
 
 ```js
 if ( 'AG' in window && 'preconnect' in window.AG ) {
@@ -77,7 +77,7 @@ self.addEventListener('fetch', function(event) {
 });
 ```
 
-When I began tucking to the caching possibilities of Service Workers, following Nicolas’ and Jeremy’s posts, I [opted to tweak Nicholas’ caching setup a bit](https://github.com/aarongustafson/aarongustafson.github.io/blob/source/source/_javascript/serviceworker/fetch-cached.js). I’m still not completely thrilled with it, but it’s a work in progress. I’m sure I will tweak as I get more familiar with the technology.
+When I began tucking to the caching possibilities of Service Workers, following Nicolas’ and Jeremy’s posts, I [opted to tweak Nicholas’ caching setup a bit](https://github.com/aarongustafson/aaron-gustafson.com/blob/old-jekyll/_javascript/serviceworker/fetch.js). I’m still not completely thrilled with it, but it’s a work in progress. I’m sure I will tweak as I get more familiar with the technology.
 
 To keep my Service Worker code modularized (like my other JavaScript code), I opted to [break it up into separate files](https://github.com/aarongustafson/aarongustafson.github.io/tree/source/source/_javascript/serviceworker) and am using Gulp to merge them all together and move the combined file into the root of the site. If you’d like to follow a similar path, feel free to adapt this Gulp task (which builds all of my JavaScript):
 

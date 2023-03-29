@@ -2,8 +2,8 @@
 title: "Progressive enhancement needs better advocacy"
 date: 2015-12-02 15:30:52 -05:00
 comments: false
-ref_url: http://zetafleet.com/blog/2015/11/progressive-enhancement-needs-better-advocacy.html
-in_reply_to: http://zetafleet.com/blog/2015/11/progressive-enhancement-needs-better-advocacy.html
+ref_url: https://zetafleet.com/blog/2015/11/progressive-enhancement-needs-better-advocacy.html
+in_reply_to: https://zetafleet.com/blog/2015/11/progressive-enhancement-needs-better-advocacy.html
 ref_source: Zetafleet
 ---
 

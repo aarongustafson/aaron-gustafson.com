@@ -2,8 +2,8 @@
 title: "Apple Blows Up The Concept Of A Privacy Policy"
 date: 2015-10-02 14:10:11 -04:00
 comments: false
-ref_url: http://techcrunch.com/2015/09/29/apple-blows-up-the-concept-of-a-privacy-policy/
-in_reply_to: http://techcrunch.com/2015/09/29/apple-blows-up-the-concept-of-a-privacy-policy/
+ref_url: https://techcrunch.com/2015/09/29/apple-blows-up-the-concept-of-a-privacy-policy/
+in_reply_to: https://techcrunch.com/2015/09/29/apple-blows-up-the-concept-of-a-privacy-policy/
 ref_source: TechCrunch
 ---
 

@@ -7,4 +7,4 @@ in_reply_to: https://blogs.windows.com/msedgedev/2016/08/04/introducing-edgehtml
 ref_source: Microsoft Edge Developer Blog
 ---
 
-Edge 14 is out. I’m so proud of my colleagues working on this browser. My favorite bit? The focus on accessibility (and the 100% score on [HTML5Accessibility’s browser benchmark](http://html5accessibility.com/) to back it up).
+Edge 14 is out. I’m so proud of my colleagues working on this browser. My favorite bit? The focus on accessibility (and the 100% score on [HTML5Accessibility’s browser benchmark](https://html5accessibility.com/) to back it up).

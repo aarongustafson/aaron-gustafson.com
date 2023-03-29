@@ -7,7 +7,7 @@ in_reply_to: https://code.facebook.com/posts/1152362248125846/hike-our-quick-sim
 ref_source: Facebook
 via:
  name: Access iQ
- url: http://www.accessiq.org/news/news/2015/11/facebook-publicly-releases-accessibility-primer
+ url: https://www.accessiq.org/news/news/2015/11/facebook-publicly-releases-accessibility-primer
 ---
 
 Learn accessibility from the Facebook dev team via focused tutorials.

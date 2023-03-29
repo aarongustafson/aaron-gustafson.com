@@ -2,8 +2,8 @@
 title: "I Am Not Broken: The Language of Disability"
 date: 2014-12-23 12:49:09 -05:00
 comments: false
-ref_url: http://www.bookwormblues.net/2014/09/10/i-am-not-broken-the-language-of-disability/
-in_reply_to: http://www.bookwormblues.net/2014/09/10/i-am-not-broken-the-language-of-disability/
+ref_url: https://www.bookwormblues.net/2014/09/10/i-am-not-broken-the-language-of-disability/
+in_reply_to: https://www.bookwormblues.net/2014/09/10/i-am-not-broken-the-language-of-disability/
 ref_source: Bookworm Blues
 ---
 

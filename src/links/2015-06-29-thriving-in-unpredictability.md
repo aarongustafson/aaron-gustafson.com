@@ -4,8 +4,8 @@ description: "The sooner we recognize how little we actually control when it com
 twitter_text: "The sooner we recognize how little we control when it comes to our websites, the better we’ll be able to serve our users."
 date: 2015-06-29 15:53:39 -04:00
 comments: false
-ref_url: http://timkadlec.com/2015/06/thriving-in-unpredictability/
-in_reply_to: http://timkadlec.com/2015/06/thriving-in-unpredictability/
+ref_url: https://timkadlec.com/2015/06/thriving-in-unpredictability/
+in_reply_to: https://timkadlec.com/2015/06/thriving-in-unpredictability/
 ref_source: Tim Kadlec
 tags: ["web design", hazards]
 ---
@@ -18,5 +18,5 @@ Another great post from Tim. The sooner we recognize how little we actually cont
 
 See also (from this site):
 
-* [A Fundamental Disconnect](http://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/)
-* [The Network Effect](http://www.aaron-gustafson.com/notebook/the-network-effect/)
+* [A Fundamental Disconnect](https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/)
+* [The Network Effect](https://www.aaron-gustafson.com/notebook/the-network-effect/)

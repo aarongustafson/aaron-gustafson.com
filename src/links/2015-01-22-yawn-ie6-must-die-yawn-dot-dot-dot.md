@@ -5,6 +5,7 @@ comments: false
 ref_url: http://blog.getify.com/yawn-ie6-must-die-yawn/
 in_reply_to: http://blog.getify.com/yawn-ie6-must-die-yawn/
 ref_source: getiblog
+archived: https://web.archive.org/web/20160320042343/http://blog.getify.com/yawn-ie6-must-die-yawn/
 ---
 
 Way back in 2010, [Kyle Simpson](https://twitter.com/getify) proposed that a new version of IE should live beside an older version to allow the new IE to prosper while the old one remains stable for enterprises that require its proprietary features:

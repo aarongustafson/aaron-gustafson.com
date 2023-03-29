@@ -2,8 +2,8 @@
 title: "EE proposes restrictions on mobile adverts"
 date: 2015-12-02 12:10:48 -05:00
 comments: false
-ref_url: http://www.telegraph.co.uk/finance/newsbysector/mediatechnologyandtelecoms/telecoms/12008197/EE-proposes-restrictions-on-mobile-adverts.html
-in_reply_to: http://www.telegraph.co.uk/finance/newsbysector/mediatechnologyandtelecoms/telecoms/12008197/EE-proposes-restrictions-on-mobile-adverts.html
+ref_url: https://www.telegraph.co.uk/finance/newsbysector/mediatechnologyandtelecoms/telecoms/12008197/EE-proposes-restrictions-on-mobile-adverts.html
+in_reply_to: https://www.telegraph.co.uk/finance/newsbysector/mediatechnologyandtelecoms/telecoms/12008197/EE-proposes-restrictions-on-mobile-adverts.html
 ref_source: Telegraph
 ---
 
