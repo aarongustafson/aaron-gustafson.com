@@ -23,7 +23,8 @@ const siteChecker = new SiteChecker(
 			filterLevel: 0,
 			acceptedSchemes: ["http", "https"],
 			excludedKeywords: [],
-			//retryHeadCodes: [403],
+			cacheResponses: true,
+			retryHeadCodes: [403],
 			retryHeadFail: false,
 			userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
 		},
@@ -41,6 +42,7 @@ const siteChecker = new SiteChecker(
 						console.log(`${result.http.response.statusCode} => ${result.url.original}`);
 						if ( response.statusCode == 404 &&
 								 !( result.url.original in cached404s ) ) {
+							console.log(`>>> Adding ${result.url.original} to the 404 cache`);
 							new404s.push( result.url.original );
 						}
 					}
