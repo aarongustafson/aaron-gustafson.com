@@ -54,6 +54,10 @@ const svgo_opts = {
 // and plops them in the dist folder
 const images = () => {
   
+	src([`${config.source}/_images/**/*.{mp4,mov}`])
+		.pipe( dest( destination ) )
+		.pipe( dest( dist ) );
+
   return src([`${config.source}/_images/**/*.{jpg,png,gif,svg}`, `!${config.source}/**/*.sketch/**`])
     // Only take new files
     .pipe(filter(function(file){

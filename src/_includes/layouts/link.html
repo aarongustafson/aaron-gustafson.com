@@ -7,19 +7,24 @@ is_post: true
 
   {% set keywords %}{% if page.tags.length > 0 %}{{ tags | join(", ") }}{% endif %}{% endset %}
   {% set this_url = site.url + page.url %}
+	{% set the_title %}{{ title  | markdownify | strip_links | safe }}{% endset %}
 
   <div class="layout-container layout-container--blog">
     <article role="article" class="layout-container__primary h-entry">
       <header class="entry__header">
 				<h1 class="entry__title p-name">
-					<a rel="external"
-						class="u-bookmark-of h-cite" 
-						href="{{ page.ref_url }}"
-						{% if hreflang %} hreflang="{{ hreflang }}"{% endif %}
-						>{{ title  | markdownify | strip_links | safe }}</a>
+					{% if is_404 %}
+						{{ the_title | safe }}
+					{% else %}
+						<a rel="external"
+							class="u-bookmark-of h-cite" 
+							href="{{ ref_url }}"
+							{% if hreflang %} hreflang="{{ hreflang }}"{% endif %}
+							>{{ the_title | safe }}</a>
+					{% endif %}
 				</h1>
 			</header>
-			<div class="entry entry--page{% if og_image %} entry--with-hero{% endif %}">
+			<div class="entry entry--page{% if og_image and og_image != '404' %} entry--with-hero{% endif %}">
 				<div class="entry__meta">
           <dl>
             <dt>Published by</dt>
@@ -49,13 +54,15 @@ is_post: true
         </div>
 
         <div class="entry__content e-content">
-          {% if og_image %}
+          {% if og_image and og_image != "404" %}
             <img data-responsiver="thumbnail" src="{{ og_image }}" alt="" class="entry__thumbnail" width="100" height="100">
           {% endif %}
           {{ content | safe }}
         </div>
-
-        <footer class="entry__footer">
+				
+				<hr class="rule">
+        
+				<footer class="entry__footer">
           {% if is_404 %}
             <p>
               This link is 404-ing{% if archived %}, but 

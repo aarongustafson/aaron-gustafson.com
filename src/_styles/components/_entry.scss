@@ -161,6 +161,12 @@ Blog Entry
 			display: flex;
 			flex-direction: column;
 
+			min-height: 400px;
+			@supports (margin-block: 1em) {
+				min-height: unset;
+				min-block-size: 400px;
+			}
+
 			.entry__header,
 			.entry__content {
 				order: 1;

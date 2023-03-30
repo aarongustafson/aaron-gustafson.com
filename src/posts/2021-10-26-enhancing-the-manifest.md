@@ -43,7 +43,7 @@ From the developer side of things, [my proposed implementation](https://github.c
 }
 ```
 
-The problem is that I could put anything in there, declaring my publisher to be any company or individual. In order to substantiate my app’s claim, the listed publisher needs to claim the app too. The publisher could do this by enumerating the apps it owns in a text file located at https://organization.tld/.well-known/published-web-apps:
+The problem is that I could put anything in there, declaring my publisher to be any company or individual. In order to substantiate my app’s claim, the listed publisher needs to claim the app too. The publisher could do this by enumerating the apps it owns in a text file located at `https://organization.tld/.well-known/published-web-apps`:
 
 ```txt
 https://origin1.tld/manifest.json

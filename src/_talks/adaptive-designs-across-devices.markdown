@@ -4,7 +4,7 @@ title: "Adaptive Designs Across Devices"
 description: "Progressive Enhancement, the heart of Adaptive Design, makes the life of a design less complicated. Aaron and Jenn will show you how to create a solid core and build out to craft amazing user experiences that work regardless of devices capabilities or deficiencies."
 with:
   - name: "Jenn Lukas"
-    url: http://jennlukas.com/
+    url: https://www.linkedin.com/in/jennlukas/
 category: workshops
 tags: ["progressive enhancement"]
 events: [92]

@@ -6,7 +6,7 @@ tags: ["progressive enhancement","the web","progressive web apps"]
 description: "As with everything, the decision to go Web or platform-specific often depends on a variety of factors, many of which are likely to change."
 ---
 
-In two back-to-back, potentially <abbr aria-label="Not Safe for Work">NSFW</abbr> posts discussing web development vs. platform-specific development, [Eran Hammer](https://hueniverse.com) covered a lot of the pain points encountered in each. For instance, on the Web, you’ve got rendering and user interface inconsistencies between browsers. On the other hand, retention for apps is notoriously crappy.
+In two back-to-back, potentially <abbr aria-label="Not Safe for Work">NSFW</abbr> posts discussing web development vs. platform-specific development, Eran Hammer covered a lot of the pain points encountered in each. For instance, on the Web, you’ve got rendering and user interface inconsistencies between browsers. On the other hand, retention for apps is notoriously crappy.
 
 <!-- more -->
 
@@ -20,7 +20,7 @@ In the end, I typically fall down on the side of the Web because I find its "mes
 
 Anyway, both posts are well worth a read:
 
-* [The Fucking Open Web](https://hueniverse.com/2016/06/08/the-fucking-open-web/)
-* [The Open Web, Fuck Yeah!](https://hueniverse.com/2016/06/20/the-open-web-fuck-yeah/) (the rebuttal)
+* [The Fucking Open Web](https://web.archive.org/web/20160610075155/https://hueniverse.com/2016/06/08/the-fucking-open-web/)
+* [The Open Web, Fuck Yeah!](https://web.archive.org/web/20160703011716/https://hueniverse.com/2016/06/20/the-open-web-fuck-yeah/) (the rebuttal)
 
 _Note: I no longer use “native” in this context, but it remains in quoted material._

@@ -34,7 +34,7 @@ While a minor addition, the speed improvement in [supporting browsers](http://ca
 
 ## Integrating Service Worker
 
-With that in the bag, I set about making my first [Service Worker](http://www.w3.org/TR/service-workers/). I started off gently, using Dean’s piece as a guide. I added a WebP conversion bit to [my image processing Gulp task](https://github.com/aarongustafson/aarongustafson.github.io/blob/source/tasks/gulp/images.js) to get the files in place and then I created the Service Worker. By default, [Dean’s code](https://gist.github.com/deanhume/c04478df744ce833925c#file-client-hints-service-worker-js) converts *all* JPG and PNG requests to WebP responses, so I set it up to limit the requests to only those files being requested directly from my server. I have no way of knowing if WebP equivalents of every JPG and PNG exist on the open web (probably not), but I know they exist on my server. Here’s the updated code:
+With that in the bag, I set about making my first [Service Worker](http://www.w3.org/TR/service-workers/). I started off gently, using Dean’s piece as a guide. I added a WebP conversion bit to [my image processing Gulp task](https://github.com/aarongustafson/aaron-gustafson.com/blob/old-jekyll/_tasks/gulp/images.js) to get the files in place and then I created the Service Worker. By default, [Dean’s code](https://gist.github.com/deanhume/c04478df744ce833925c#file-client-hints-service-worker-js) converts *all* JPG and PNG requests to WebP responses, so I set it up to limit the requests to only those files being requested directly from my server. I have no way of knowing if WebP equivalents of every JPG and PNG exist on the open web (probably not), but I know they exist on my server. Here’s the updated code:
 
 ```js
 "use strict";
@@ -79,7 +79,7 @@ self.addEventListener('fetch', function(event) {
 
 When I began tucking to the caching possibilities of Service Workers, following Nicolas’ and Jeremy’s posts, I [opted to tweak Nicholas’ caching setup a bit](https://github.com/aarongustafson/aaron-gustafson.com/blob/old-jekyll/_javascript/serviceworker/fetch.js). I’m still not completely thrilled with it, but it’s a work in progress. I’m sure I will tweak as I get more familiar with the technology.
 
-To keep my Service Worker code modularized (like my other JavaScript code), I opted to [break it up into separate files](https://github.com/aarongustafson/aarongustafson.github.io/tree/source/source/_javascript/serviceworker) and am using Gulp to merge them all together and move the combined file into the root of the site. If you’d like to follow a similar path, feel free to adapt this Gulp task (which builds all of my JavaScript):
+To keep my Service Worker code modularized (like my other JavaScript code), I opted to [break it up into separate files](https://github.com/aarongustafson/aaron-gustafson.com/tree/main/src/_javascript/serviceworker) and am using Gulp to merge them all together and move the combined file into the root of the site. If you’d like to follow a similar path, feel free to adapt this Gulp task (which builds all of my JavaScript):
 
 ```js
 var gulp = require('gulp'),
@@ -145,7 +145,7 @@ On particularly code-heavy posts (yes, like this one), I make liberal use of Gis
 
 With all of this in mind, I decided to revise the plugin and make it capable of downloading the JavaScript code directly. It then extracts the HTML markup that the JavaScript would be writing into the page and just embeds it directly. It also caches the result, which is handy for speeding up the build process.
 
-You can grab [my fork of the Gist Jekyll Plugin as, well, a Gist](https://gist.github.com/aarongustafson/b98add8f3580f6707cf5). It’s also [in the source of this site on Github](https://github.com/aarongustafson/aarongustafson.github.io/blob/source/plugins/gist_tag.rb).
+You can grab [my fork of the Gist Jekyll Plugin as, well, a Gist](https://gist.github.com/aarongustafson/b98add8f3580f6707cf5). It’s also [in the source of this site on Github](https://github.com/aarongustafson/aaron-gustafson.com/blob/old-jekyll/_plugins/gist_tag.rb).
 
 ## (Hopefully) A Little Faster
 

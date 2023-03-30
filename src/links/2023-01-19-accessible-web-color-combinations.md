@@ -2,8 +2,8 @@
 title: "Accessible web color combinations"
 date: 2023-01-20T00:11:57.510Z
 tags: ["accessibility", "web design"]
-ref_url: https://colorsafe.co/
-in_reply_to: https://colorsafe.co/
+ref_url: http://colorsafe.co/
+in_reply_to: http://colorsafe.co/
 twitter_text: "Love this tool for creating accessible color combinations.
 
 ↬ @DanMall"

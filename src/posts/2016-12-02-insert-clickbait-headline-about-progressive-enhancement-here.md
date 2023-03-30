@@ -149,7 +149,7 @@ In my talk [*Designing with Empathy*](https://vimeo.com/70018634) ([slides](http
 
 ![]({{ site.url }}/i/posts/2016-12-06/02.png)
 
-<figcaption><a href="http://www.northkingdom.com/cases/i-huvudet-pa-toyota/">On Toyota’s Mind</a> is a classic example of mystery meat navigation. It’s a Flash site and you can navigate when you happen to mouse over "hotspots" in the design. I’m pointing to one with a big red arrow here.</figcaption>
+<figcaption><a href="https://web.archive.org/web/20150222123910/http://www.northkingdom.com/cases/i-huvudet-pa-toyota/">On Toyota’s Mind</a> is a classic example of mystery meat navigation. It’s a Flash site and you can navigate when you happen to mouse over "hotspots" in the design. I’m pointing to one with a big red arrow here.</figcaption>
 </figure>
 
 Though probably not directly influenced by On Toyota’s Mind, [Yeshiva of Flatbush](https://www.flatbush.org/) was certainly influenced by the concept of "experiential" (which is a polite way of saying "mystery meat") navigation.

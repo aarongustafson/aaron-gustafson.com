@@ -27,4 +27,4 @@ The deck, [which I’ve posted to SlideShare](http://www.slideshare.net/AaronGus
 
 All in all, day one was a blast. As always, Jeffrey, Eric, [Toby](https://www.linkedin.com/in/toby-malina-6247a028), and [Marci](http://www.escapadeproductions.com/) do an awesome job programming their events. I’m really bummed I could not stick around to see [Val](http://valhead.com/), [Jason](https://twitter.com/grigs), [Krystal](http://www.kryshiggins.com/), [Eric](http://meyerweb.com/), [Kristina](http://braintraffic.com/), and [Cameron](http://cameronmoll.com/) rock it out though. I’m sure it was amazing.
 
-You can check out attendees thoughts from the event by [searching Twitter using the #aeansh hashtag](https://twitter.com/search?q=%23aeansh&src=typd). I’ve [collected reactions to my talk on Storify](https://storify.com/AaronGustafson/reactions-and-takeaways-from-my-aeansh-talk) for posterity as well.
+You can check out attendees thoughts from the event by [searching Twitter using the #aeansh hashtag](https://twitter.com/search?q=%23aeansh&src=typd).

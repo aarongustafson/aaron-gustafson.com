@@ -26,7 +26,7 @@ https://vimeo.com/144979022
 
 Wherein I dispel the myth that progressive enhancement has no place in news, healthcare, education, financial, commerce, and single-page app websites. Lots of goodies in here.
 
-This version is an updated 40-minute distillation of the hour and a half talk [Jenn Lukas](http://jennlukas.com/) and I gave at [UX Immersion Mobile](https://uxim15.uie.com/) back in April. The video of that one is available from [UIE’s All You Can Learn](https://aycl.uie.com/). Jenn designed the slides and [Matt Sutter](http://cargocollective.com/mattsutter) did the wonderful illustrations.
+This version is an updated 40-minute distillation of the hour and a half talk [Jenn Lukas](https://www.linkedin.com/in/jennlukas/) and I gave at [UX Immersion Mobile](https://uxim15.uie.com/) back in April. The video of that one is available from [UIE’s All You Can Learn](https://aycl.uie.com/). Jenn designed the slides and [Matt Sutter](http://cargocollective.com/mattsutter) did the wonderful illustrations.
 
 * **Slides**: http://www.slideshare.net/AaronGustafson/there-are-no-buts-in-progressive-enhancement-redev-2015
 * **Video**: https://vimeo.com/144979022

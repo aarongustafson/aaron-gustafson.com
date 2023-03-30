@@ -2,8 +2,8 @@
 title: "Color Safe: Accessible web color combinations"
 date: 2016-04-18 13:47:39 -04:00
 comments: false
-ref_url: https://colorsafe.co/
-in_reply_to: https://colorsafe.co/
+ref_url: http://colorsafe.co/
+in_reply_to: http://colorsafe.co/
 ref_source: Donielle Berg & Adrian Rapp
 via:
  name: WP Tavern

@@ -123,7 +123,7 @@ The `select` element has its place, but should be used sparingly. I’ll go in-d
 
 ### Choose One (`input[type=radio]`)
 
-For simple confirmation questions, it’s completely valid to use a radio form control in lieu of a single checkbox. In fact, in some cases, it may offer a more explicit choice for your users. Consider [this example](#fig-2016-01-06-03) from [Subway’s online ordering tool](https://order.subway.com).
+For simple confirmation questions, it’s completely valid to use a radio form control in lieu of a single checkbox. In fact, in some cases, it may offer a more explicit choice for your users. Consider [this example](#fig-2016-01-06-03) from [Subway](https://subway.com)’s online ordering tool.
 
 <figure id="fig-2016-01-06-03" class="media-container">
 

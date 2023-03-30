@@ -48,7 +48,7 @@
 
                   {% if webmention_content %}
                     <div class="webmention__content p-content">
-                      {{ webmention_content | unescape | safe }}
+                      {{ webmention_content | unescape | replace("<a href=", '<a rel="nofollow" href=') | safe }}
                     </div>
                   {% endif %}
 

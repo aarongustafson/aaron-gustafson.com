@@ -2,18 +2,13 @@ var { SiteChecker } = require("broken-link-checker");
 const fs = require('fs');
 const yaml = require('js-yaml');
 const CACHE_404_PATH =  './_cache/404s.yml';
-const cached404s = yaml.load(fs.readFileSync(CACHE_404_PATH));
-var new404s = [];
+var cached404s = yaml.load(fs.readFileSync(CACHE_404_PATH));
 
-function writeToCache() {
-  let appendString = '';
-	new404s.forEach( url => {
-		appendString += `${url}: true\n`;
-	});
-  fs.appendFile(CACHE_404_PATH, appendString, err => {
+function writeToCache( url ) {
+  fs.appendFile(CACHE_404_PATH, `${url}: true\n`, err => {
     if (err) throw err;
-    console.log(`>>> ${new404s.length} 404s cached`);
   });
+	cached404s[url] = true;
 }
 
 const siteChecker = new SiteChecker(
@@ -22,7 +17,7 @@ const siteChecker = new SiteChecker(
 			excludeExternalLinks: false, 
 			filterLevel: 0,
 			acceptedSchemes: ["http", "https"],
-			excludedKeywords: [],
+			excludedKeywords: ["linkedin.com","barnesandnoble.com","codementor.io","codepen.io"],
 			cacheResponses: true,
 			retryHeadCodes: [403],
 			retryHeadFail: false,
@@ -33,24 +28,23 @@ const siteChecker = new SiteChecker(
 				console.error(error);
 			},
 			"link": (result, customData) => {
-				console.log(`Checking ${result.url.original}`);
-				if(result.broken) {
-					const response = result.http.response;
-					if ( response &&
-							 response.statusCode != undefined &&
-							 response.statusCode.toString().indexOf('40') > -1 ) {
-						console.log(`${result.http.response.statusCode} => ${result.url.original}`);
-						if ( response.statusCode == 404 &&
-								 !( result.url.original in cached404s ) ) {
+				if ( result.broken &&
+						 result.http.response )
+				{
+					const status_code = result.http.response.statusCode;
+					if ( status_code != undefined && status_code.toString().indexOf('40') > -1 )
+					{
+						console.log(`${status_code} => ${result.url.original}`);
+						if ( status_code == 404 && !( result.url.original in cached404s ) )
+						{
 							console.log(`>>> Adding ${result.url.original} to the 404 cache`);
-							new404s.push( result.url.original );
+							writeToCache( result.url.original );
 						}
 					}
 				}
 			},
 			"end": () => {
 				console.log("COMPLETED!");
-				writeToCache();
 			}
 		}
 );
