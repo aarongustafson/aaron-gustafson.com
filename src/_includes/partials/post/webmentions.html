@@ -38,7 +38,7 @@
                       {% endif %}
                     {% elif webmention.name and webmention.url and not long_name %}
                       {% set title_link = true %}
-                      <a class="webmention__source u-url" href="{{ webmention.url }}">{{ webmention.name }}</a>
+                      <a rel="nofollow" class="webmention__source u-url" href="{{ webmention.url }}">{{ webmention.name }}</a>
                     {% elif webmention.name and not long_name %}
                       {{ webmention.name }}
                     {% elif webmention.summary %}
@@ -58,7 +58,7 @@
                             datetime="{{ webmention.published | machine_date }}">{{ webmention.published | readable_date }}</time>
                     {% endif %}
                     {% if webmention.url and not title_link %}|
-                      <a class="webmention__source u-url" href="{{ webmention.url }}">Permalink<b class="hidden">: {{ webmention.url }}</b></a>
+                      <a rel="nofollow" class="webmention__source u-url" href="{{ webmention.url }}">Permalink<b class="hidden">: {{ webmention.url }}</b></a>
                     {% endif %}
                   </div>
                 </article>

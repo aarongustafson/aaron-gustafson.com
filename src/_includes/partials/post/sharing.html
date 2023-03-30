@@ -9,31 +9,31 @@
   
 <ul class="social-links social-links--share">
 	<li class="social-links__item">
-  	<a class="social-link social-link--twitter" href="https://twitter.com/intent/tweet?original_referer={{ this_url }}&amp;source=tweetbutton&amp;url={{ this_url }}">
+  	<a rel="nofollow" class="social-link social-link--twitter" href="https://twitter.com/intent/tweet?original_referer={{ this_url }}&amp;source=tweetbutton&amp;url={{ this_url }}">
     	{{ svg_twitter | replace('<svg ','<svg class="social-link__icon" ') | safe }}
     	<b class="social-link__text">Share on Twitter</b>
   	</a>
 	</li>
 	<li class="social-links__item">
-   <a class="social-link social-link--hacker-news" href="https://news.ycombinator.com/submitlink?u={{ this_url }}&t={{ title | escape | replace(' ', '+' ) }}">
+   <a rel="nofollow" class="social-link social-link--hacker-news" href="https://news.ycombinator.com/submitlink?u={{ this_url }}&t={{ title | escape | replace(' ', '+' ) }}">
 			{{ svg_hackernews | replace('<svg ','<svg class="social-link__icon" ') | safe }}
 			<b class="social-link__text">Share on Hacker News</b>
 		</a>
   </li>
 	<li class="social-links__item">
-		<a class="social-link social-link--facebook" href="http://www.facebook.com/sharer.php?u={{ this_url }}">
+		<a rel="nofollow" class="social-link social-link--facebook" href="http://www.facebook.com/sharer.php?u={{ this_url }}">
 			{{ svg_facebook | replace('<svg ','<svg class="social-link__icon" ') | safe }}
 			<b class="social-link__text">Post on Facebook</b>
 		</a>
 	</li>
 	<li class="social-links__item">
-		<a class="social-link social-link--linkedin" href="https://www.linkedin.com/cws/share?url={{ this_url }}&amp;original_referer={{ this_url }}">
+		<a rel="nofollow" class="social-link social-link--linkedin" href="https://www.linkedin.com/cws/share?url={{ this_url }}&amp;original_referer={{ this_url }}">
 			{{ svg_linkedin | replace('<svg ','<svg class="social-link__icon" ') | safe }}
 			<b class="social-link__text">Share on LinkedIn</b>
 		</a>
 	</li>
 	<li class="social-links__item">
-		<a class="social-link social-link--pinterest" href="http://pinterest.com/pin/create/button/?url={{ this_url }}&amp;media={{ this_hero }}&amp;description={{ title | escape | replace(' ', '+' ) }}">
+		<a rel="nofollow" class="social-link social-link--pinterest" href="http://pinterest.com/pin/create/button/?url={{ this_url }}&amp;media={{ this_hero }}&amp;description={{ title | escape | replace(' ', '+' ) }}">
 			{{ svg_pinterest | replace('<svg ','<svg class="social-link__icon" ') | safe }}
 			<b class="social-link__text">Share on Pinterest</b>
 		</a>
