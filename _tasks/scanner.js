@@ -22,7 +22,7 @@ const siteChecker = new SiteChecker(
 			excludeExternalLinks: false, 
 			filterLevel: 0,
 			acceptedSchemes: ["http", "https"],
-			excludedKeywords: ["linkedin","ycombinator"],
+			excludedKeywords: [],
 			//retryHeadCodes: [403],
 			retryHeadFail: false,
 			userAgent: "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36"
@@ -32,6 +32,7 @@ const siteChecker = new SiteChecker(
 				console.error(error);
 			},
 			"link": (result, customData) => {
+				console.log(`Checking ${result.url.original}`);
 				if(result.broken) {
 					const response = result.http.response;
 					if ( response &&
