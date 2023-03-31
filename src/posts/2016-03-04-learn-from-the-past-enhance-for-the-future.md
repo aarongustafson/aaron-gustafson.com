@@ -128,7 +128,7 @@ The more time and consideration we put into how our interfaces read, the better-
 
 <hr>
 
-Back in 2006, [Dustin Diaz proposed CSS Naked Day](http://www.dustindiaz.com/naked-day/)—a day when sites could be stripped of their visual design to showcase their content, semantics, and organization.
+Back in 2006, [Dustin Diaz proposed CSS Naked Day](https://css-naked-day.github.io/)—a day when sites could be stripped of their visual design to showcase their content, semantics, and organization.
 
 > It will be a test case to see how usable your website is to others without a "design".<br> —Dustin Diaz
 

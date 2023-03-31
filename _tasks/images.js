@@ -54,7 +54,7 @@ const svgo_opts = {
 // and plops them in the dist folder
 const images = () => {
   
-	src([`${config.source}/_images/**/*.{mp4,mov}`])
+	src([`${config.source}/_images/**/*.{mp4,mov,mp3,ogg}`])
 		.pipe( dest( destination ) )
 		.pipe( dest( dist ) );
 

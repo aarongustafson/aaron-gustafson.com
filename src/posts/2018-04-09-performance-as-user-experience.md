@@ -16,7 +16,7 @@ Last Tuesday, I gave a relatively new talk on web performance and optimization a
 <iframe class="video-embed__video" src="https://www.slideshare.net/slideshow/embed_code/key/7AYV7gZuYKa4G5" frameborder="0"></iframe>  
 </figure>
 
-[Download (PDF, 16.6MB)](/speaking-engagements/2018/aea-sea/performance-as-user-experience.pdf)
+[Download (PDF, 16.6MB)](https://github.com/aarongustafson/talks-and-workshops/blob/main/2018/aea-sea/performance-as-user-experience.pdf)
 
 ## Liveblogs/Notes
 

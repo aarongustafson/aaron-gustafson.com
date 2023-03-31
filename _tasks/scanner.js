@@ -3,6 +3,7 @@ const fs = require('fs');
 const yaml = require('js-yaml');
 const CACHE_404_PATH =  './_cache/404s.yml';
 var cached404s = yaml.load(fs.readFileSync(CACHE_404_PATH));
+let timeout;
 
 function writeToCache( url ) {
   fs.appendFile(CACHE_404_PATH, `${url}: true\n`, err => {
@@ -42,9 +43,19 @@ const siteChecker = new SiteChecker(
 						}
 					}
 				}
+				//clearTimeout(timeout);
+    		//timeout = setTimeout(() => {
+					// broken-link-checker may not finish -- refer:
+					// * https://github.com/stevenvachon/broken-link-checker/issues/90
+					// It does however seem to always get stuck almost at the end.
+					// After waiting 30 seconds for the next link to be processed,
+					// we'll exit.
+				//	finish();
+				//}, 30000) // 30 seconds
 			},
 			"end": () => {
 				console.log("COMPLETED!");
+				//finish();
 			}
 		}
 );

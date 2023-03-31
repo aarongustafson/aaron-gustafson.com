@@ -47,7 +47,7 @@ Of course, what enables all of these things to be as amazing as they are is our 
 
 </figure>
 
-America does have you beat when it comes to mobile connectivity: there are over 100 mobile data subscriptions per 100 individuals in the U.S. (probably because of the whole multi-device thing). Mobile connections in Canada are around 53 per 100 people. <small>[(source)](https://www.oecd.org/sti/broadband/oecdbroadbandportal.htm)</small>
+America does have you beat when it comes to mobile connectivity: there are over 100 mobile data subscriptions per 100 individuals in the U.S. (probably because of the whole multi-device thing). Mobile connections in Canada are around 53 per 100 people. <small>[(source)](https://web.archive.org/web/20130303014538/https://www.oecd.org/sti/broadband/oecdbroadbandportal.htm)</small>
 
 <figure id="fig-2014-11-06-03" class="media-container">
 
@@ -55,7 +55,7 @@ America does have you beat when it comes to mobile connectivity: there are over 
 
 </figure>
 
-Wired connectivity is a bit lower: 30 for every 100 in the U.S. and 33 for every 100 in Canada. <small>[(source)](https://www.oecd.org/sti/broadband/oecdbroadbandportal.htm)</small>
+Wired connectivity is a bit lower: 30 for every 100 in the U.S. and 33 for every 100 in Canada. <small>[(source)](https://web.archive.org/web/20130303014538/https://www.oecd.org/sti/broadband/oecdbroadbandportal.htm)</small>
 
 <figure id="fig-2014-11-06-04" class="media-container">
 
@@ -63,7 +63,7 @@ Wired connectivity is a bit lower: 30 for every 100 in the U.S. and 33 for every
 
 </figure>
 
-Connectivity is relatively cheap for you Canadians as well. You pay somewhere in the neighborhood of 39¢-$9.86 per megabyte per month. In the U.S., fees range widely from 53¢ to a whopping $41.70 per megabyte per month. <small>[(source)](https://www.oecd.org/sti/broadband/oecdbroadbandportal.htm)</small>
+Connectivity is relatively cheap for you Canadians as well. You pay somewhere in the neighborhood of 39¢-$9.86 per megabyte per month. In the U.S., fees range widely from 53¢ to a whopping $41.70 per megabyte per month. <small>[(source)](https://web.archive.org/web/20130303014538/https://www.oecd.org/sti/broadband/oecdbroadbandportal.htm)</small>
 
 Comcast and Rogers may be equally hated on our respective sides of the 49th parallel, but Comcast clearly sucks just a little bit more. (America!)
 
@@ -143,7 +143,7 @@ In the < $30,000 income bracket, smartphones were found in 47% of households. Bu
 
 </figure>
 
-$30,000 was the average income in the U.S. in 2013. And, according to the 2010 census, the overwhelming majority of American households earn less than that. <small>[(source)](https://www.census.gov/2010census/data/)</small>
+$30,000 was the average income in the U.S. in 2013. And, according to the 2010 census, the overwhelming majority of American households earn less than that. <small>[(source)](https://web.archive.org/web/20130928173531/http://www.census.gov/2010census/data/)</small>
 
 Now both the Samsung Galaxy S5 and the BLU Dash are technically smartphones, but one costs $43 and the other costs $799. On a limited budget, which do you think you’d be more likely to get?
 
