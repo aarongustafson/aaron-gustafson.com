@@ -1,7 +1,7 @@
 ---
 title: "Save Our World"
 date: 2023-04-05T22:03:37.238Z
-tags: ["acc"]
+tags: ["accessibility", "progressive enhancement", "performance"]
 ref_url: https://github.com/jenstrickland/CSUN2023/tree/main
 in_reply_to: https://github.com/jenstrickland/CSUN2023/tree/main
 twitter_text: "I wish I could have been at #CSUN to see @jenstrickland deliver this talk: “Save Our World.”
