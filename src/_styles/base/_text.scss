@@ -80,8 +80,14 @@
 
 	// :target
 	:target {
-		background: yellow;
-		outline: 25px solid yellow;
+		background: #ffff93;
+		outline: 25px solid #ffff93;
 		color: #000;
+
+		html.dark-mode & {
+			background: #21210d
+			outline: 25px solid #21210d;
+			color: #ddd;
+		}
 	}
 }
