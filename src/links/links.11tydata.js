@@ -110,11 +110,11 @@ async function readOpenGraphIo(url) {
 function writeToCache( url, value, cache ) {
   cache = cache || CACHE_FILE_PATH;
   // make sure we don’t write more than once
-  const data = yaml.load(fs.readFileSync(cache));
-  if ( ! (url in data) )
+  if ( ! (url in og_images) )
   {
     value = ( value === true || value == 404 ) ? value : `"${encodeURI(value)}"`;
-    fs.appendFile(cache, `${url}: ${value}\n`, err => {
+    og_images[url] = value;
+		fs.appendFile(cache, `${url}: ${value}\n`, err => {
       if (err) throw err;
       console.log(`>>> Opengraph images for ${url} cached`);
     });
@@ -193,7 +193,7 @@ module.exports = {
           return false;
         }
         // no point checking 404s
-        if ( '404' in data ) {
+        if ( 'is_404' in data ) {
           return false;
         }
         let og_image = false;
@@ -208,7 +208,7 @@ module.exports = {
           og_image = true;
         }
         writeToCache(url, og_image);
-        return og_image;
+				return og_image;
       }
     }
   }
