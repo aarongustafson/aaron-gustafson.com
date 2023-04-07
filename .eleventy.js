@@ -64,9 +64,9 @@ module.exports = config => {
 	// Plugins
 	config.addPlugin(pluginSEO, require("./src/_data/seo.json"));
 	config.addPlugin(svgContents);
-	config.addPlugin(EleventyHtmlBasePlugin, {
-		baseHref: PRODUCTION ? "https://www.aaron-gustafson.com" : ""
-	});
+	// config.addPlugin(EleventyHtmlBasePlugin, {
+	// 	baseHref: PRODUCTION ? "https://www.aaron-gustafson.com" : ""
+	// });
 	config.addPlugin(embedEverything, {
 		twitter: {
 			options: {
