@@ -48,7 +48,7 @@
 		"eleventy-plugin-embed-everything": "^1.14.1",
 		"eleventy-plugin-images-responsiver": "^2.0.0",
 		"eleventy-plugin-reading-time": "0.0.1",
-		"eleventy-plugin-seo": "^0.5.2",
+		"eleventy-plugin-seo": "aarongustafson/eleventy-plugin-seo#develop",
 		"eleventy-plugin-svg-contents": "^0.7.0",
 		"faunadb": "^4.6.0",
 		"front-matter": "^4.0.2",

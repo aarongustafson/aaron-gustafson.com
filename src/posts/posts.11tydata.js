@@ -61,9 +61,15 @@ module.exports = {
 		permalink: data => showPost(data) ? `/notebook/${ data.page.fileSlug }/` : false,
 		excerpt: (data) => {
 			let excerpt = "";
-			if ( "excerpt" in data.page )
-			{
+			if ( "excerpt" in data.page ) {
 				excerpt = md.renderInline( data.page.excerpt )
+										.replace(/\[\^\d+\]/gi, "") // remove footnotes
+										.replace(/(<([^>]+)>)/gi, "") // remove HTML
+										.trim();
+			}
+			else if ( data.description )
+			{
+				excerpt = md.renderInline( data.description )
 										.replace(/\[\^\d+\]/gi, "") // remove footnotes
 										.replace(/(<([^>]+)>)/gi, "") // remove HTML
 										.trim();

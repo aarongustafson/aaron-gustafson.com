@@ -1,5 +1,5 @@
 ---
-title: "Adaptive Web Design: Folded &amp; Gathered"
+title: "<cite>Adaptive Web Design</cite>: Folded &amp; Gathered"
 date: 2015-11-12 13:16:27 -05:00
 comments: true
 tags: ["Adaptive Web Design",writing]

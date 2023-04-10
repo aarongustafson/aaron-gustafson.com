@@ -1,5 +1,5 @@
 ---
-title: "On Adaptive Web Design’s Second Edition"
+title: "On <cite>Adaptive Web Design</cite>’s Second Edition"
 date: 2015-10-20 11:43:16 -04:00
 comments: true
 tags: ["Adaptive Web Design","progressive enhancement"]
