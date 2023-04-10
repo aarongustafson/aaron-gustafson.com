@@ -50,16 +50,16 @@
 		}
 
 		h1 {
-				@include rem( font-size, $font-size-h1 );
+			@include rem( font-size, $font-size-h1 );
 		}
 
 		section > h1,
 		h2 {
-				@include rem( font-size, $font-size-h2 );
+			@include rem( font-size, $font-size-h2 );
 		}
 
 		h3 {
-				@include rem( font-size, $font-size-h3 );
+			@include rem( font-size, $font-size-h3 );
 		}
 
 }

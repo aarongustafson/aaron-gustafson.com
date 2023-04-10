@@ -7,7 +7,7 @@ ogtype: "website"
 sitemap: true
 ---
 
-# Hi there, I’m Aaron and I work on the web.
+## Hi there, I’m Aaron and I work on the web.
 
 Every day I strive to make the web more accessible, open,
 and equitable place for people to live and work.

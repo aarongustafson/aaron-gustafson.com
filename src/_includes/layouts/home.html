@@ -3,11 +3,9 @@
 
 {% block content %}
   <article class="page page--home layout-container">
-    <div class="layout-container__primary">
-      {{ content | safe }}
+    {{ content | safe }}
 
-      <h2 class="subsection__header"><b class="hidden">Me, </b>Elsewhere<b> on the Web</b></h2>
-      {{ social_links( profiles | selectattr("active") ) | safe }}
-    </div>
+    <h2 class="subsection__header"><b class="hidden">Me, </b>Elsewhere</h2>
+    {{ social_links( profiles | selectattr("active") ) | safe }}
   </article>
 {% endblock %}

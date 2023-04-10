@@ -28,8 +28,10 @@
 			.site-title {
 
 				font-family: $font-stack-body;
+				@include rem( font-size, $font-size-h1 );
 				font-weight: normal;
 				letter-spacing: 0.1em;
+				line-height: 1.1;
 				word-spacing: 0.25em;
 				text-transform: uppercase;
 				
@@ -53,6 +55,11 @@
 						color: $color-white;
 					}
 				}
+			}
+
+			.site-subtitle {
+				font-family: $font-stack-body;
+				@include rem( font-size, $font-size-h3 );
 			}
 
 		}
