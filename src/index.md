@@ -9,8 +9,8 @@ sitemap: true
 
 ## Hi there, I’m Aaron and I work on the web.
 
-Every day I strive to make the web more accessible, open,
-and equitable place for people to live and work.
+Every day I strive to make the web (and world) more accessible, open,
+and equitable place for people to live, play, and work.
 
 Over the last {{ helpers.currentYear() - 1996 }} years, I’ve written
 <a href="/publications/#books">{{ books_authored | length }} books</a> (contributing to 
