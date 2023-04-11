@@ -75,6 +75,12 @@ $social-buttons: (
 		size: 20,
 		offset: 4
 	),
+	imdb: (
+		color: #f6c700,
+		icon: #000,
+		size: 20,
+		offset: 4
+	),
 );
 
 @include breakup-breakpoint( "global" ) {
@@ -155,6 +161,13 @@ $social-buttons: (
 					@include rem( inline-size, map-get( $config, 'size' ), false );
 					@include rem( block-size, map-get( $config, 'size' ), false );
 					@include rem( margin-block, map-get( $config, 'offset' ), false );
+				}
+
+				@if (map-get( $config, 'icon' )) {
+					path,
+					circle {
+						fill: map-get( $config, 'icon' );
+					}
 				}
 			}
 

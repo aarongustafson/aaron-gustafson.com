@@ -112,5 +112,12 @@
     "title": "See what I’ve been listening to",
     "category": "music",
     "active": true
-  }
+  },
+	{
+		"site": "IMDb",
+		"url": "https://imdb.me/AaronGustafson",
+		"title": "See my profile on IMDb",
+		"category": "videos",
+		"active": true
+	}
 ]
