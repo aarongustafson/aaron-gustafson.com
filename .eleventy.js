@@ -84,7 +84,10 @@ module.exports = config => {
 			resizedImageUrl: (src, width) => {
 				return PRODUCTION ? `https://res.cloudinary.com/aarongustafson/image/fetch/q_auto,f_auto,w_${width}/${src}` : src.replace(config.hostname,"");
 			},
-			attributes: false,
+			attributes: {
+				width: "960",
+				height: "960"
+			},
 		},
 		thumbnail: {
 			sizes: '100px',
@@ -93,6 +96,8 @@ module.exports = config => {
 			},
 			attributes: {
 				loading: 'lazy',
+				width: "100",
+				height: "100"
 			},
 		},
 		default: {
