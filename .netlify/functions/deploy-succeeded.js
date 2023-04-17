@@ -19,7 +19,8 @@ exports.handler = async (event, context) => {
 	await Promise.all(FILES.map(async (file) => {
 		let local_path = `${__dirname}/../../${CACHE_FOLDER}/${file}`;
 		let path = `${CACHE_FOLDER}/${file}`;
-		let content = Buffer.from(fs.readFileSync(local_path), 'utf-8').toString('base64');
+		let local_content = fs.readFileSync(local_path);
+		let content = Buffer.from(local_content, 'utf-8').toString('base64');
 		return octokit.request(
 				'GET /repos/{owner}/{repo}/contents/{path}',
 				{
@@ -31,8 +32,9 @@ exports.handler = async (event, context) => {
 			)
 			.then(res => {
 				let sha = res.data.sha;
+				const github_content = Buffer.from(res.data.content, 'base64').toString('utf-8');
 				// Don’t push if it’s the same
-				if ( content == res.data.content )
+				if ( local_content == github_content )
 				{
 					return {
 						statusCode: 200,
