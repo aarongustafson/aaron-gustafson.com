@@ -31,6 +31,15 @@ exports.handler = async (event, context) => {
 			)
 			.then(res => {
 				let sha = res.data.sha;
+				// Don’t push if it’s the same
+				if ( content == res.data.content )
+				{
+					return {
+						statusCode: 200,
+						body: '{"success":"true"}'
+					};
+				}
+				// else
 				return octokit.request(
 					'PUT /repos/{owner}/{repo}/contents/{path}',
 					{
@@ -42,7 +51,7 @@ exports.handler = async (event, context) => {
 						sha
 					}
 				)
-				.then((res) => {
+				.then(() => {
 					return {
 						statusCode: 200,
 						body: '{"success":"true"}'
