@@ -1,3 +1,5 @@
+// Inspiration: https://www.stackbit.com/blog/jamstack-api-zapier-webhooks-2
+
 const fs = require('fs');
 const { Octokit } = require('@octokit/rest');
 const octokit = new Octokit({
@@ -9,8 +11,7 @@ const FILES = ["404s.yml","og_images.yml","tags.json","webmentions.json"];
 // GitHub Config
 const owner = "aarongustafson";
 const	repo = "aaron-gustafson.com";
-const date = new Date();
-const message = `Netlify Build ${date.toUTCString()} [skip netlify]`;
+const message = `Updated as part of Netlify build [skip netlify]`;
 const headers = {
 	'X-GitHub-Api-Version': '2022-11-28'
 };
