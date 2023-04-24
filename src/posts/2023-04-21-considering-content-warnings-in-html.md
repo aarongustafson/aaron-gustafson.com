@@ -1,6 +1,7 @@
 ---
 title: "Considering content warnings in HTML"
 date: 2023-04-21 15:15:48 -07:00
+updated: 2023-04-24 14:39:48 -07:00
 comments: true
 tags: ["HTML", "inclusive design"]
 description: "Prompted by a recent suggestion in the Web We Want inbox, I gave some thought to the potential for allowing authors to provide content warnings in their markup."
@@ -60,7 +61,7 @@ There’s also an interesting opportunity for browsers to offer user preferences
 
 I threw together [a quick & dirty demo of what the experience could be like](https://codepen.io/aarongustafson/pen/rNqjeqj) on Codepen if you’d like to take a look:
 
-<figure>
+<figure id="2023-04-21-01">
 
 {% CodePen "https://codepen.io/aarongustafson/pen/rNqjeqj", "result", "500" %}
 
@@ -71,3 +72,22 @@ It’s still a work-in-progress, but it’s a starting point. Ideally the browse
 ## Thoughts?
 
 What do you think? Is this something you’d like to see on the web? I’d love to hear your thoughts, which you can share by Webmention-ing this post or referencing it on Mastodon.
+
+## Update 2023-04-24
+
+[James Edwards mentioned the potential interplay issues with Reader Mode (and similar)](https://mastodon.world/@siblingpastry/110254145981433059) so I started playing around with an alternate approach. I landed on a version that physically swaps out the elements in the DOM for a custom element `content-warning` that acts as a placeholder. Here’s how it works:
+
+1. Author uses `content-warning` attribute as described above.
+1. The runtime script swaps that element for the custom `content-warning` element, which contains a wrapper element (`span`) that is sized to occupy the same space as the original element (including margins).
+1. The content warning text is used to label a `button` inside that wrapper.
+1. Clicking the `button` swaps the original element back into position and announces it to screen reader users (using `role="alert"`).
+
+I tested this approach with VoiceOver and JAWS and it works a treat. I also confirmed the Edge’s Reader Mode does not deliver the hidden content.
+
+<figure id="2023-04-21-02">
+
+{% CodePen "https://codepen.io/aarongustafson/pen/QWZpqPe", "result", "500" %}
+
+</figure>
+
+Note: The browser doing the work of my demo would be much faster as it could do all the size calculations prior to rendering. I am having to fake that in JavaScript, so I have to peg it to the window’s `onload` event to ensure all CSS is applied to get the size calculations right.
