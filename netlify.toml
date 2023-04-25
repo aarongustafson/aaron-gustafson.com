@@ -9,8 +9,8 @@
 
 [[plugins]]
 	package = "netlify-plugin-cache-folder"
-[[plugins]]
-	package = "./plugins/persist-static-directory"
+#[[plugins]]
+#	package = "./plugins/persist-static-directory"
 
 
 [[redirects]]
