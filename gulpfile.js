@@ -24,7 +24,7 @@ const watcher = () => {
 };
 
 // The default (if someone just runs `gulp`) is to run each task in parallel
-exports.default = parallel( html, scripts, images, styles, data );
+exports.default = parallel( html, scripts, images, styles, data, sw );
 
 // This is our watcher task that instructs gulp to watch directories and
 // act accordingly
@@ -34,4 +34,4 @@ exports.watch = watcher;
 exports.prebuild = parallel( scripts, images, styles );
 
 // post-build
-exports.postbuild = parallel( html, data );
+exports.postbuild = parallel( html, data, sw );
