@@ -1,0 +1,169 @@
+---
+is_post: true
+---
+{% extends "layouts/base.html" %}
+{% from "macros.njk" import post_date, tag_list, datetime, youtube %}
+
+{% block content %}
+	{% set keywords %}{% if tags.length > 0 %}{{ tags | join(", ") }}{% endif %}{% endset %}
+	{%- set categories -%}
+		{%- if category -%}
+			{%- if category | isArray -%}
+				{%- for cat in category -%}
+					{% if loop.last %} & {% elseif not loop.first %}, {% endif %}
+					{{ cat | capitalize }}
+				{%- endfor -%}
+			{% else %}
+				{{ category | capitalize }}
+			{%- endif -%}
+		{%- endif -%}
+	{%- endset -%}
+	{% set this_url = site.url + page.url %}
+
+	<div class="layout-container layout-container--blog">
+		<article role="article" class="layout-container__primary h-entry">
+			<header class="entry__header">
+				<h1 class="entry__title p-name">{{ title | markdownify | safe }}</h1>
+			</header>
+			<div class="entry entry--page">
+
+				<div class="entry__meta">
+					<dl>
+						<dt>Format</dt>
+						<dd>{{ categories }}</dd>
+						
+						<dt>Presented At</dt>
+						{% for num in events | sort %}
+							{%- set evt = speaking_engagements | pluck( 'id', num )  -%}
+							<dd class="talk__event">
+								{% if evt.url %}
+									<a class="talk__event__title" href="{{ evt.url }}">{{ evt.title }}</a>
+								{% else %}
+									<b class="talk__event__title">{{ evt.title }}</b>
+								{% endif %}
+								on {{ datetime( evt.date, "talk__event__date" ) }}
+								{% if with %}
+									{%- set w = with | pluck( 'event', num )  -%}
+									{% if w %}
+										<span class="talk__event__with">with {{ w | toSentenceList | safe }}</span>
+									{% endif %}
+								{% endif %}
+							</dd>
+						{%- endfor -%}
+						
+						<dt class="dont-read">Filed Under</dt>
+						<dd class="dont-read">{{ tag_list( tags ) }}</dd>
+
+						{% if slides.download or text %}
+							<dt class="dont-read">Resources</dt>
+							{% if slides.download %}
+								<dd class="dont-read"><a href="https://github.com/aarongustafson/talks-and-workshops/raw/main/{{ slides.download }}" download>Slides (PDF{% if slides.size %}, {{ slides.size }}{% endif %})</a>
+							{% endif %}
+							{% if audio %}
+								<dd class="dont-read"><a href="{{ file }}" download>Audio (MP3)</a>
+							{% endif %}
+							{% if text %}
+								<dd class="dont-read"><a href="{{ text }}">Text Version</a>
+							{% endif %}
+						{% endif %}
+
+						<dt class="dont-read">Like this?</dt>
+						<dd class="dont-read">
+							{% include "partials/post/sharing.html" %}
+						</dd>
+
+					</dl>
+				</div>
+
+				<div class="entry__content e-content">
+
+					{% if slides.embed %}
+						{%- set evt = speaking_engagements | pluck( 'id', slides.event ) -%}
+						<figure class="talk__slides">
+							<div class="video-embed video-embed--16x9">
+								<iframe class="talk__slides__embed video-embed__video" src="{{ slides.embed }}" frameborder="0" allowfullscreen></iframe>
+							</div> 
+							<figcaption>This deck was delivered at <a href="{{ slides.link }}">{{ evt.title }} on {{ datetime( evt.date, "talk__event__date" ) }}</a></figcaption>
+						</figure>
+					{% elseif hero %}
+						{% set hero_image %}/i/talks/{{ hero }}{% endset %}
+						<figure class="talk__hero">
+							<img data-responsiver="hero" class="entry__hero__image" src="{{ hero_image | absoluteUrl(site.url) }}" alt="Title slide for my talk “{{ title }}”">
+						</figure>
+					{% endif %}
+
+					{{ content | safe }}
+
+					{% if audio %}
+						{%- set evt = speaking_engagements | pluck( 'id', video.event ) -%}
+						<h2 class="subsection__header">Listen to This 
+							{% if category | isArray %} as a {% endif %}
+							{% if category == "keynote" %}Keynote{% else %}Talk{% endif %}
+						</h2>
+						<figure class="talk__audio">
+						  <div class="audio-embed">
+								<audio class="talk__audio__embed audio-embed__audio" src="{{ audio.file }}" controls></audio>
+							</div>
+							<figcaption>Audio recorded at <a href="{{ evt.url }}">{{ evt.title }} on {{ datetime( evt.date, "talk__event__date" ) }}</a></figcaption>
+						</figure>
+					{% endif %}
+
+					{% if video %}
+						{%- set evt = speaking_engagements | pluck( 'id', video.event ) -%}
+						<h2 class="subsection__header">Watch This 
+							{% if category | isArray %} as a {% endif %}
+							{% if category == "keynote" %}Keynote{% else %}Talk{% endif %}
+						</h2>
+						<figure class="talk__video">
+						  <div class="video-embed video-embed--16x9">
+								{% if video.link.indexOf('youtube') > -1 %}
+									{% set video_id %}{{ video.link | replace("https://www.youtube.com/watch?v=","") }}{% endset %}
+									{{ youtube( video_id, title ) }}
+								{% elseif video.file %}
+									<video poster="/i/talks/{{ hero }}" class="talk__video__embed video-embed__video" src="{{ video.file }}" controls></video>
+								{% else %}
+									<iframe class="talk__video__embed video-embed__video" src="{{ video.embed }}" frameborder="0" allowfullscreen></iframe>
+								{% endif %}
+							</div>
+							<figcaption>Video recorded at <a href="{{ video.link }}">{{ evt.title }} on {{ datetime( evt.date, "talk__event__date" ) }}</a></figcaption>
+						</figure>
+					{% endif %}
+				</div>
+
+				<footer class="entry__footer">
+
+					<aside class="promo promo--event">
+  					<p class="promo__copy">If you’d like to have me speak at your oganization or event, please <a href="/contact">get in touch</a>.</p>
+					</aside>
+
+					<hr>
+					
+					{% if tags.length > 0 %}
+						{% set random_tag = tags | random %}
+						{% set related = collections.feedAll | related( this_url, random_tag ) | limit(3) %}
+						{% if related.length > 0 %}
+							<div class="entry__related">
+								<h2 class="subsection__header">You might also like</h2>
+								{% set teaser_heading_level = "h3" %}
+								{% for post in related %}
+									{% include "partials/post/teaser.html" %}
+								{% endfor %}
+							</div>
+						{% endif %}
+					{% endif %}
+
+					<hr>
+					
+					{% include "partials/post/follow.html" %}
+
+				</footer>
+
+			</div>
+		</article>
+		
+	</div>
+
+	<script type="application/ld+json" class="dont-read">
+		{% include "partials/post/jsonld.html" %}
+	</script>
+{% endblock %}

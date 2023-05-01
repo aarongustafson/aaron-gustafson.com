@@ -18,6 +18,19 @@ function parse_date( date ){
 	return the_date;
 }
 
+function objectToString( obj ){
+	if ( obj instanceof String )
+	{
+		return obj;
+	}
+	let str = obj.title || obj.name || "";
+	if ( obj.url )
+	{
+		return `<a href="${obj.url}">${str}</a>`;
+	}
+	return str;
+}
+
 module.exports = {
 	
 	readable_date: date => {
@@ -42,8 +55,27 @@ module.exports = {
 		return `${widont( text )}`;
 	},
 
+	isArray: obj => (obj instanceof Array),
+	isString: obj => (obj instanceof String),
+	isObject: obj => (obj instanceof Object),
 	limit: (array, limit) => {
 		return array.slice(0, limit);
+	},
+
+	toSentenceList: arr => {
+		if ( ! ( arr instanceof Array ) ){
+			arr = [ arr ];
+		}
+		let i = arr.length;
+		if ( i === 1 ) {
+			return objectToString(arr[0]);
+		}
+		if ( i === 2 ) {
+			return `${objectToString(arr[0])} and ${objectToString(arr[1])}`;
+		}
+		let last = objectToString(arr.pop());
+		let list = arr.map(item => objectToString(item));
+		return `${list.join(", ")}, and ${last}`;
 	},
 	
 	past: array => {
@@ -66,6 +98,9 @@ module.exports = {
 							 b = DateTime.fromSQL( b.date );
 							 return a < b ? -1 : a > b ? 1 : 0;
 						 });
+	},
+	pluck( obj, prop, value) {
+		return obj.find( el => el[prop] == value );
 	},
 
 	bySeriesTag: ( array, tag ) => {
@@ -137,6 +172,10 @@ module.exports = {
 		if ( path && path.indexOf("/links/") > -1 )
 		{
 			type = "link";
+		}
+		if ( path && path.indexOf("/talks/") > -1 )
+		{
+			type = "talk";
 		}
 		return type;
 	},

@@ -1,0 +1,50 @@
+/*------------------------------------*\
+		Anchorable
+\*------------------------------------*/
+
+@use 'sass:math';
+
+@include breakup-breakpoint( "global" ) {
+	.talk {
+		&__event {
+			
+			& + & {
+				@include rem(margin-top, math.div($default-spacing, 2));
+
+				@supports(margin-block:1em){
+					margin-top: unset;
+					@include rem(margin-block-start, math.div($default-spacing, 2));
+				}
+			}
+
+			&__title {
+				display: block;
+				font-weight: bold;
+			}
+
+			&__with {
+				display: block;
+				margin: 0;
+			}
+
+		}
+
+		.subsection__header {
+			@include rem(margin-top, ($default-spacing * 3));
+
+				@supports(margin-block:1em){
+					margin-top: unset;
+					@include rem(margin-block-start, ($default-spacing * 3));
+				}
+		}
+
+		&__slides {
+			@include rem(margin-bottom, ($default-spacing * 3));
+
+				@supports(margin-block:1em){
+					margin-bottom: unset;
+					@include rem(margin-block-end, ($default-spacing * 3));
+				}
+		}
+	}
+}

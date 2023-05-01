@@ -15,7 +15,7 @@
 	{
 		"id": 148,
 		"title": "MITRE Accessibility Technical Exchange Meeting",
-		"date": "2022-10-27 00:09:00 -0800",
+		"date": "2022-10-27 09:00:00 -0800",
 		"location": "Online",
 		"url": "https://accessibility.mitre.org/2022-session-schedule/"
 	},
@@ -55,16 +55,16 @@
 	},
 	{
 		"id": 142,
-		"title": "Microsoft Web Community Conference",
-		"date": "2020-12-09 00:18:00 -0400",
-		"location": "Online"
-	},
-	{
-		"id": 141,
 		"title": "JavaScript & Friends",
 		"date": "2021-05-11 00:18:00 -0400",
 		"location": "Online",
 		"url": "https://www.eventbrite.com/e/javascript-and-friends-online-meetup-tickets-147179655311"
+	},
+	{
+		"id": 141,
+		"title": "Microsoft Web Community Conference",
+		"date": "2020-12-09 00:18:00 -0400",
+		"location": "Online"
 	},
 	{
 		"id": 140,
@@ -106,6 +106,13 @@
 		"date": "2019-05-01 00:09:00 -0000",
 		"location": "San Francisco, CA USA",
 		"url": "https://www.imagecon.com/"
+	},
+	{
+		"id": 151,
+		"title": "Starbucks Lunch & Learn",
+		"date": "2019-03-27 00:09:00 -0000",
+		"location": "Seattle, WA USA",
+		"url": "https://noti.st/events/iRk4e9/starbucks-lunch-learn/"
 	},
 	{
 		"id": 134,
@@ -416,7 +423,7 @@
 	},
 	{
 		"id": 92,
-		"title": "UX Mobile Immersion",
+		"title": "UX Immersion Mobile",
 		"url": "http://uxim15.uie.com/",
 		"date": "2015-04-13 09:00:00 -0400",
 		"location": "Salt Lake City, UT USA"

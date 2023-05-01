@@ -1,15 +1,27 @@
 {% set type = post.inputPath | content_type %}
 
 <article class="entry entry--teaser entry--{{ type }}">
-  {% if type=="post" %}
-    <p class="entry__type" title="Post" role="img" aria-label="Post">{{ svg_essay | safe }}</p>
-  {% elif type=="link" %}
-    <p class="entry__type" title="Link" role="img" aria-label="Link">{{ svg_link | safe }}</p>
-  {% endif %}
-  <div class="entry__details">
-    <{{ teaser_heading_level }} class="entry__title entry-title">
-      <a rel="bookmark" href="{{ post.url }}">{{ post.data.title  | markdownify | strip_links | safe }}</a>
-    </{{ teaser_heading_level }}>
-    <p class="entry__meta">{% if post.collection=="posts" %}Posted{% else %}Saved{% endif %} on <time class="dt-published" datetime="{{ post.data.date | machine_date }}">{{ post.data.date | readable_date }}</time></p>
-  </div>
+	{% if type=="post" %}
+		<p class="entry__type" title="Post" role="img" aria-label="Post">{{ svg_essay | safe }}</p>
+	{% elif type=="link" %}
+		<p class="entry__type" title="Link" role="img" aria-label="Link">{{ svg_link | safe }}</p>
+	{% elif type=="talk" %}
+		<p class="entry__type" title="Talk" role="img" aria-label="Talk">{{ svg_talk | safe }}</p>
+	{% endif %}
+	<div class="entry__details">
+		<{{ teaser_heading_level }} class="entry__title entry-title">
+			<a rel="bookmark" href="{{ post.url }}">{{ post.data.title  | markdownify | strip_links | safe }}</a>
+		</{{ teaser_heading_level }}>
+		<p class="entry__meta">
+			{% set teaser_date = post.data.date %}
+			{% if type=="post" %}Posted
+			{% elif type=="link" %}Saved
+			{% elif type=="talk" %}
+				{%- set evt = speaking_engagements | pluck("id", post.data.events[0]) -%}
+				{% set teaser_date = evt.date %}
+				First presented at {{ evt.title }}
+			{% endif %}
+			on <time class="dt-published" datetime="{{ teaser_date | machine_date }}">{{ teaser_date | readable_date }}</time>
+			</p>
+	</div>
 </article>

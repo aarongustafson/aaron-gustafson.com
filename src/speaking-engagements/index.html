@@ -216,3 +216,18 @@ for <a rel="nofollow noindex" href="/clients/">organizations around the world</a
   </ol>
 
 </section>
+
+<section class="subsection" id="talks">
+
+	<h2 class="subsection__header">Talks I’ve Given</h2>
+	<p>Here are some of the talks I’ve given. If you’d like me to speak at your organization or event, <a href="/contact/">please get in touch</a>.</p>
+
+	<ol class="listing listing--talks">
+		{% for talk in collections.talks %}
+			<li class="listing__item listing__item--{{ loop.index }} talk">
+				<a class="listing__item__title talk__title" href="{{ talk.url }}">{{ talk.title }}</a>
+			</li>
+		{% endfor %}
+	</ol>
+
+</section>

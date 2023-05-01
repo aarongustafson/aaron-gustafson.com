@@ -310,6 +310,10 @@
   {% endif %}
 {% endmacro %}
 
+{% macro datetime( date, class ) %}
+  <time {% if class %}class="{{ class }}"{% endif %} datetime="{{ date | machine_date }}">{{ date | readable_date }}</time>
+{% endmacro %}
+
 {% macro tag_list( tags ) %}
   {% for tag in tags %}
     {% if forloop.first %}

@@ -22,6 +22,11 @@ const fs = require('fs');
 require('dotenv').config();
 const PRODUCTION = process.env.NODE_ENV === "production";
 
+const EVENTS = JSON.parse(fs.readFileSync("./src/_data/speaking_engagements.json"));
+function getEventDate(id){
+	return EVENTS.filter(event=>event.id.toString()===id.toString())[0].date;
+}
+
 module.exports = config => {
 
 	// Cloudinary
@@ -55,7 +60,8 @@ module.exports = config => {
 	config.addLayoutAlias("link", "layouts/link.html");
 	config.addLayoutAlias("page", "layouts/page.html");
 	config.addLayoutAlias("post", "layouts/post.html");
-	config.addLayoutAlias("tag", "layouts/tag.html");
+	config.addLayoutAlias("tag",  "layouts/tag.html");
+	config.addLayoutAlias("talk", "layouts/talk.html");
 	config.addLayoutAlias("tank", "layouts/tank.html");
 
 	// Passthru
@@ -144,12 +150,19 @@ module.exports = config => {
 						 .getFilteredByGlob("**/links/*.md")
 						 .reverse();
 	});
+	config.addCollection("talks", collectionApi => {
+		return collectionApi
+						 .getFilteredByGlob("**/talks/*.md")
+						 .sort(function(a, b) {
+							return b.date - a.date;
+						 });
+	});
 	config.addCollection("feedAll", collectionApi => {
 		return collectionApi
-						 .getFilteredByGlob(["**/posts/*.md", "**/links/*.md"])
+						 .getFilteredByGlob(["**/posts/*.md", "**/links/*.md", "**/talks/*.md"])
 						 // sort by date - descending
 						 .sort(function(a, b) {
-							 return b.date - a.date;
+							return b.date - a.date;
 						 });
 	});
 	config.addCollection("sitemap", function(collectionApi) {
