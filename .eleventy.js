@@ -153,6 +153,7 @@ module.exports = config => {
 	config.addCollection("talks", collectionApi => {
 		return collectionApi
 						 .getFilteredByGlob("**/talks/*.md")
+						 // sort by date - descending
 						 .sort(function(a, b) {
 							return b.date - a.date;
 						 });

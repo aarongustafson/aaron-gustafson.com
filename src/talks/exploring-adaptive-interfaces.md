@@ -7,14 +7,14 @@ events: [116]
 date: 2017-09-20T09:00:00-0400
 hero: exploring-adaptive-interfaces.png
 slides:
- event: 116
- link: https://presentations.aaron-gustafson.com/TfqH7R/exploring-adaptive-interfaces
- embed: https://www.slideshare.net/slideshow/embed_code/key/9iQKIdwhHitL4N
- download: 2017/generate/Exploring%20Adaptive%20Interfaces.pdf
- size: 16.7 MB
+  event: 116
+  link: https://presentations.aaron-gustafson.com/TfqH7R/exploring-adaptive-interfaces
+  embed: https://www.slideshare.net/slideshow/embed_code/key/9iQKIdwhHitL4N
+  download: 2017/generate/Exploring%20Adaptive%20Interfaces.pdf
+  size: 16.7 MB
 video:
- event: 116
- link: https://www.youtube.com/watch?v=Bo_uruYwhdQ
+  event: 116
+  link: https://www.youtube.com/watch?v=Bo_uruYwhdQ
 ---
 
 After enjoying more than a decade of relative stability in designing for the 'desktop' web, smartphones had to come along and throw a wrench in the works. It seemed that in an instant, everything changed and nothing was certain any more. The truth is, though, nothing was ever certain.

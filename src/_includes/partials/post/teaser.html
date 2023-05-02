@@ -19,7 +19,7 @@
 			{% elif type=="talk" %}
 				{%- set evt = speaking_engagements | pluck("id", post.data.events[0]) -%}
 				{% set teaser_date = evt.date %}
-				First presented at {{ evt.title }}
+				First presented at {{ evt.title | safe }}
 			{% endif %}
 			on <time class="dt-published" datetime="{{ teaser_date | machine_date }}">{{ teaser_date | readable_date }}</time>
 			</p>

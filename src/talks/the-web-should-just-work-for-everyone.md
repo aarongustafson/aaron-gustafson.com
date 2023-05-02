@@ -3,7 +3,7 @@ title: "The Web Should Just Work for Everyone"
 description: "This talk is largely about accessibility with a push for thinking about the future of the interface and how considering accessibility now will help us prepare for a world of “headless UIs”."
 category: talk
 tags: [accessibility,"progressive enhancement"]
-events: [129,110,107]
+events: [107,110,129]
 date: 2016-04-04T09:00:00-0400
 hero: the-web-should-just-work-for-everyone.png
 slides:
