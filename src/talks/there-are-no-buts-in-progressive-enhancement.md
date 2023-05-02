@@ -1,7 +1,7 @@
 ---
 title: "There Are No Buts in Progressive Enhancement"
 description: "Progressive enhancement sounds practical, but not for your current project, right? Good news: you’re wrong!"
-category: talks
+category: talk
 tags: ["progressive enhancement"]
 date: 2015-11-03T09:00:00-0400
 events: [92,102]

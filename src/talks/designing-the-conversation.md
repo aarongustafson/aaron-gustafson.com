@@ -1,7 +1,7 @@
 ---
 title: "Designing the Conversation"
 description: "Users are gradually becoming more accustomed to and reliant on voice-based interactions, so enabling users to complete critical tasks without a visual user interface is crucial for the long-term success of websites."
-category: talks
+category: talk
 date: 2019-11-14T00:09:00-0000
 tags: ["voice UX","web design",accessibility]
 events: [136,127,126,125,124,114,113,111,108]
