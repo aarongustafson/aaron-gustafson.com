@@ -9,9 +9,9 @@ eleventyComputed:
   description: "The latest 20 posts and links tagged {{ tag }}."
 ---
 {% include "feeds/preamble.xml.njk" %}
+{% set prepend_title = true %}
 {% for post in collections[ tag ] | reverse | limit(20) %}
-  {% set prepend_title %}{% if post.data.ref_url %}Link: {% else %}Post: {% endif %}{% endset %}
-  {% if loop.first %}
+	{% if loop.first %}
     <updated>{{ post.date | dateToRfc3339 }}</updated>
   {% endif %}
   {% include "feeds/post.xml.njk" %}

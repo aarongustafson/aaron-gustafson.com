@@ -4,10 +4,10 @@ eleventyExcludeFromCollections: true
 ---
 {
   {% set feed_title = "Latest Posts & Links" %}
+  {% set prepend_title=true %}
   {% include "feeds/preamble.json.njk" %}
   "items": [
     {% for post in collections.feedAll | limit(20) %}
-      {% set prepend_title %}{% if post.data.ref_url %}Link: {% else %}Post: {% endif %}{% endset %}
       {% include "feeds/post.json.njk" %}
       {% if not loop.last %},{% endif %}
     {% endfor %}

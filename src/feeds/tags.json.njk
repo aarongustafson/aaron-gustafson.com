@@ -9,11 +9,11 @@ eleventyComputed:
   description: "The latest 20 posts and links tagged {{ tag }}."
 ---
 {
-  {% set feed_title = "Posts & Links" %}
+  {% set feed_title %}Content tagged {{ tag }}{% endset %}
+	{% set prepend_title = true %}
   {% include "feeds/preamble.json.njk" %}
   "items": [
     {% for post in collections[tag] | reverse | limit(20) %}
-      {% set prepend_title %}{% if post.data.ref_url %}Link: {% else %}Post: {% endif %}{% endset %}
       {% include "feeds/post.json.njk" %}
       {% if not loop.last %},{% endif %}
     {% endfor %}

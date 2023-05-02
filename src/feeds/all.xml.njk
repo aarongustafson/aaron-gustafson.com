@@ -4,8 +4,8 @@ permalink: "/feeds/all.xml"
 eleventyExcludeFromCollections: true
 ---
 {% include "feeds/preamble.xml.njk" %}
+{% set prepend_title=true %}
 {% for post in collections.feedAll | limit(20) %}
-  {% set prepend_title %}{% if post.data.ref_url %}Link: {% else %}Post: {% endif %}{% endset %}
   {% if loop.first %}
     <updated>{{ post.date | dateToRfc3339 }}</updated>
   {% endif %}
