@@ -36,6 +36,9 @@ module.exports = {
 	permalink: "/speaking-engagements/{{ page.fileSlug }}/",
 	body_class: "talk",
   eleventyComputed: {
+		twitter_text: (data) => {
+			return data.description;
+		},
 		excerpt: (data) => {
 			return md.renderInline( data.description )
 							.replace(/\[\^\d+\]/gi, "") // remove footnotes

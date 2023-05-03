@@ -17,6 +17,20 @@ Mixins
 	}
 }
 
+// Big focus
+@mixin big-focus() {
+	background: #ffff93;
+	outline: 15px solid #ffff93;
+	color: #000;
+
+	html.dark-mode & {
+		background: #21210d;
+		outline: 15px solid #21210d;
+		color: #ddd;
+	}
+}
+
+
 // REM values
 // Adapted from http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
 @mixin rem( $property, $values, $fallback: true )

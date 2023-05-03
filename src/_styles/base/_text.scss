@@ -80,14 +80,16 @@
 
 	// :target
 	:target {
-		background: #ffff93;
-		outline: 25px solid #ffff93;
-		color: #000;
+		@include big-focus();
+	}
 
-		html.dark-mode & {
-			background: #21210d;
-			outline: 25px solid #21210d;
-			color: #ddd;
-		}
+	.footnote-ref > a:target,
+	html.dark-mode .footnote-ref > a:target {
+		background-color: inherit;
+		outline: 0;
+	}
+
+	*:has(> .footnote-ref > a:target) {
+    @include big-focus();
 	}
 }

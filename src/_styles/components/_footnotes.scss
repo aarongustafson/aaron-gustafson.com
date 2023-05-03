@@ -18,6 +18,10 @@
 					margin-inline: -1em;
 				}
 
+				&-ref:target {
+					outline: 0;
+				}
+
 			}
 
 		.footnotes {
@@ -44,12 +48,11 @@
 				}
 			}
 
-			* + * {
-				margin-top: 0;
+			.footnote-item + .footnote-item {
+				@include rem(margin-top, $default-spacing);
 
 				@supports (margin-block: 1em) {
-					margin-top: unset;
-					margin-block-start: 0;
+					@include rem(margin-block-start, $default-spacing);
 				}
 			}
 				

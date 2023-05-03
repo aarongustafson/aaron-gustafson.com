@@ -18,8 +18,8 @@
     <amg:twitter><![CDATA[{{ post.data.twitter_text | safe }}]]></amg:twitter>
   {% endif %}
   {% if summary %}
-    <summary type="html"><![CDATA[<p>{{ summary | markdownify | trim_newlines | safe }}</p>]]></summary>
     <amg:summary><![CDATA[{{ summary | markdownify | trim_newlines | safe }}]]></amg:summary>
+    <summary type="html"><![CDATA[<p>{{ summary | markdownify | trim_newlines | safe }}</p>]]></summary>
   {% endif %}
 
   {% for tag in post.data.tags %}
