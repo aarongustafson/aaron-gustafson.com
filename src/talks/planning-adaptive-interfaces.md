@@ -3,7 +3,7 @@ title: "Planning Adaptive Interfaces"
 description: "How do you plan for the unknown? The answer is obvious—you can’t—but that’s not a bad thing. Unknowns can be scary, but they also create opportunity."
 category: [talk, workshop]
 tags: ["progressive enhancement",HTML, CSS, JavaScript, "web standards"]
-events: [112,105,103,75,69,67,66,62]
+events: [62,112,105,103,75,69,67,66]
 date: 2016-03-03T09:00:00-0400
 hero: planning-adaptive-interfaces.png
 slides:

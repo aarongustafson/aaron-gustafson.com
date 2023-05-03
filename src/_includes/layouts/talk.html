@@ -57,7 +57,7 @@ is_post: true
 						{% if slides.download or text %}
 							<dt class="dont-read">Resources</dt>
 							{% if slides.download %}
-								<dd class="dont-read"><a href="https://github.com/aarongustafson/talks-and-workshops/raw/main/{{ slides.download }}" download>Slides (PDF{% if slides.size %}, {{ slides.size }}{% endif %})</a>
+								<dd class="dont-read"><a href="https://github.com/aarongustafson/talks-and-workshops/raw/main/{{ slides.download }}"{% if slides.size %} download{% endif %}>Slides{% if slides.size %} (PDF{% if slides.size %}, {{ slides.size }}{% endif %}){% endif %}</a>
 							{% endif %}
 							{% if audio %}
 								<dd class="dont-read"><a href="{{ file }}" download>Audio (MP3)</a>

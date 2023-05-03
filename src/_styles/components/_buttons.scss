@@ -40,7 +40,10 @@ Buttons
 			display: inline-block;
 			height: 1em;
 			margin-left: .15em;
-			fill: $color-white;
+			
+			path {
+				fill: $color-white;
+			}
 
 			@supports (margin-block: 1em) {
 				@include unset( height margin-left );
@@ -55,7 +58,7 @@ Buttons
 			color: darken( $color-grey-light, 30 );
 			cursor: default;
 
-			svg {
+			svg path {
 				fill: darken( $color-grey-light, 30 );
 			}
 		}
@@ -64,7 +67,7 @@ Buttons
 			background-color: $color-link-dark-hover;
 			color: $color-background-dark;
 
-			svg {
+			svg path {
 				fill: $color-background-dark;
 			}
 

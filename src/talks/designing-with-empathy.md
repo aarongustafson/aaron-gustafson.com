@@ -4,7 +4,7 @@ description: "In this session, I explore why empathy is a good thing, how empath
 category: talk
 tags: [empathy,equality,design,"user experience"]
 date: 2013-04-08T09:00:00-0500
-events: [91,82,81,80,74,69,67,63,58]
+events: [58,91,82,81,80,74,69,67,63]
 hero: designing-with-empathy.png
 slides:
   event: 58

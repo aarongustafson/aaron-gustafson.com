@@ -3,13 +3,12 @@ title: "Beyond Responsive"
 description: "Responsive design is not an end in itself… it’s just the beginning."
 category: [talk, workshop]
 tags: ["responsive web design","progressive enhancement","web design"]
-events: [101,100,97,96,93,79,62]
+events: [62,64,101,100,97,96,93,79]
 date: 2015-08-12T09:00:00-0400
 hero: beyond-responsive.png
 slides:
-  event: 100
-  notist_id: gAtQT0
-  link: https://www.slideshare.net/AaronGustafson/beyond-responsive-18f-2015
+  event: 79
+  link: https://presentations.aaron-gustafson.com/3KAsul/beyond-responsive-workshop
   embed: https://www.slideshare.net/slideshow/embed_code/key/7jsUtSzGEqFyKj
   download: 2015/18f/beyond-responsive.pdf
   size: 16.3 MB
