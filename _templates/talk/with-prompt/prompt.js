@@ -24,7 +24,7 @@ function getEventDate( selected_events ) {
 	selected_events.sort();
 	var id = selected_events[0];
 	var event = events.find(evt=>evt.id == id);
-	return event.date;
+	return event.date.replace(/(\d) ([+-]\d)/,"$1$2").replace(" ","T");
 }
 
 module.exports = {
