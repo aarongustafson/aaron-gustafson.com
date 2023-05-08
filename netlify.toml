@@ -34,6 +34,11 @@
 	status = 301
 	force = true
 [[redirects]]
+	from = "/speaking-engagements/:year/:event/:file"
+	to = "https://github.com/aarongustafson/talks-and-workshops/raw/main/:year/:event/:file"
+	status = 301
+	force = true
+[[redirects]]
 	from = "/*"
 	to = "/404.html?url=:splat"
 	status = 404
