@@ -3,7 +3,7 @@ title: "Progressive Web Apps: Where Do I Begin?"
 description: "In this session, you’ll learn how to grow a project from a core, universally-accessible experience to a sophisticated Progressive Web App that ensures users will be able to access your product, no matter what."
 category: talk
 tags: [ "progressive web apps" ]
-events: [ 132 ]
+events: [ 128, 132 ]
 date: 2019-07-29T00:09:00-0000
 hero: "progressive-web-apps-where-do-i-begin.png"
 slides:
