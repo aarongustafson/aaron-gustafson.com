@@ -108,6 +108,7 @@ for <a rel="nofollow noindex" href="/clients/">organizations around the world</a
 
 	{% set talks = collections.talks %}
 	{% set teaser_heading_level = "h3" %}
+	{% set show_summary = true %}
 	<ol class="listing listing--talks">
 		{% for post in talks %}
 			{% include "partials/post/teaser.html" %}

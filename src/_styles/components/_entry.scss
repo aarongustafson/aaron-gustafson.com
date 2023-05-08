@@ -2,6 +2,8 @@
 Blog Entry
 \*------------------------------------*/
 
+@use 'sass:math';
+
 @include breakup-breakpoint( "global" ) {
 	
 	.entry {
@@ -224,6 +226,7 @@ Blog Entry
 			}
 			
 			.entry__details {
+				flex-grow: 1;
 				@include rem( margin, 0 0 0 $table-spacing );
 
 				@supports (margin-block: 1em) {
@@ -247,6 +250,22 @@ Blog Entry
 
 				.entry__related & {
 					position: static;
+				}
+
+			}
+
+			.entry__summary + .entry__meta {
+				border-top: 1px solid $color-rule;
+				@include rem( margin-top, math.div($default-spacing, 2) );
+				@include rem( padding-top, math.div($default-spacing, 2) );
+				@include rem( font-size, $font-size-caption * .75 );
+				text-align: right;
+
+				@supports(margin-block:1em) {
+					@include unset(border-top padding-top margin-top);
+					border-block-start: 1px solid $color-rule;
+					@include rem( margin-block-start, math.div($default-spacing, 2), false );
+					@include rem( padding-block-start, math.div($default-spacing, 2), false );
 				}
 			}
 		}

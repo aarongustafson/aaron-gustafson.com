@@ -1,4 +1,5 @@
 {% set type = post.inputPath | content_type %}
+{% set summary %}{% if post.summary %}{{ post.summary | safe }}{% else %}{{ post.data.description | safe }}{% endif %}{% endset %}
 
 <article class="entry entry--teaser entry--{{ type }}">
 	{% if type=="post" %}
@@ -12,6 +13,11 @@
 		<{{ teaser_heading_level }} class="entry__title entry-title">
 			<a rel="bookmark" href="{{ post.url }}">{{ post.data.title  | markdownify | strip_links | safe }}</a>
 		</{{ teaser_heading_level }}>
+		{% if show_summary and summary %}
+			<div class="entry__summary">
+				{{ summary | markdownify | safe }}
+			</div>
+		{% endif %}
 		<p class="entry__meta">
 			{% set teaser_date = post.data.date %}
 			{% if type=="post" %}Posted
