@@ -1,5 +1,6 @@
 {% set type = post.inputPath | content_type %}
 {% set summary %}{% if post.summary %}{{ post.summary | safe }}{% else %}{{ post.data.description | safe }}{% endif %}{% endset %}
+{% set trasition_root %}{{ type }}-{{ post.fileSlug }}{% endset %}
 
 <article class="entry entry--teaser entry--{{ type }}">
 	{% if type=="post" %}
@@ -10,7 +11,7 @@
 		<p class="entry__type" title="Talk" role="img" aria-label="Talk">{{ svg_talk | safe }}</p>
 	{% endif %}
 	<div class="entry__details">
-		<{{ teaser_heading_level }} class="entry__title entry-title">
+		<{{ teaser_heading_level }} class="entry__title entry-title" style="view-transition-name: {{ trasition_root }}-title">
 			<a rel="bookmark" href="{{ post.url }}">{{ post.data.title  | markdownify | strip_links | safe }}</a>
 		</{{ teaser_heading_level }}>
 		{% if show_summary and summary %}

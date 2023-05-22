@@ -3,13 +3,13 @@ Navigation
 \*------------------------------------*/
 
 @include breakup-breakpoint( "global" ) {
-	
+
 	[role=navigation] {
 		
 		text-align: center;
-		
+
 		@include rem( padding-bottom, $default-spacing );
-		
+
 		p {
 			margin: 0;
 		}

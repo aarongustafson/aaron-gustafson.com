@@ -58,7 +58,7 @@
 
 	// Better layout: Flexbox
 	@supports (display: flex) {
-		[role=search] {
+		.form--search {
 			display: flex;
 			flex-direction: row;
 			justify-content: center;

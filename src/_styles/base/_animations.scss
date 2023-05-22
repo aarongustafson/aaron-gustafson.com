@@ -1,3 +1,31 @@
 /*------------------------------------*\
     Animations
 \*------------------------------------*/
+
+@media not (prefers-reduced-motion: reduce) {
+
+	.banner {
+		view-transition-name: banner;
+	}
+	::view-transition-old(banner),
+	::view-transition-new(banner) {
+		animation: none;
+	}
+
+	[role=navigation] {
+		view-transition-name: nav;
+	}
+	::view-transition-old(nav),
+	::view-transition-new(nav) {
+		animation: none;
+	}
+
+	.footer {
+		view-transition-name: footer;
+	}
+	::view-transition-old(footer),
+	::view-transition-new(footer) {
+		animation: none;
+	}
+
+}

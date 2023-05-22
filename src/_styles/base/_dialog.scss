@@ -10,11 +10,20 @@ dialog {
   height: -webkit-fit-content;
   height: fit-content;
   margin: auto;
-  border: solid;
+  border: 1px solid $color-background;
   padding: 1em;
-  background: white;
-  color: black;
+  background: $color-background;
+  color: $color-text;
   display: block;
+
+	&::backdrop {
+		background: rgba(0,0,0,0.6);
+	}
+
+	html.dark-mode & {
+		background: $color-background-dark;
+		color: $color-text-dark;
+	}
 
 	@supports (margin-block: 1em) {
 		@include unset( left right width height margin );

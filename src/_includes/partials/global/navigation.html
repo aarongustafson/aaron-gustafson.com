@@ -22,11 +22,11 @@
 
     {% if site.simple_search %}
       <dialog id="search">
-        <form class="form form--search"
-              action="{{ site.simple_search }}"
-              method="get">
-          <div role="search">
-            <p class="form-control form-control--search">
+        <search role="search">
+        	<form class="form form--search"
+          	    action="{{ site.simple_search }}"
+            	  method="get">
+            <p class="fields__group form-control--search field-group">
               <label id="query-label" for="query" class="hidden">What are you looking for?</label>
               <input id="prepend" type="hidden" value="site:www.aaron-gustafson.com">
               <input type="hidden" name="kaf" value="1">
@@ -36,8 +36,8 @@
             <p class="form-control form-control--buttons">
               <button type="submit" name="sa" value="Search"><b class="hidden">Let’s  </b>search<b class="hidden"> on DuckDuckGo</b></button>
             </p>
-          </div>
-        </form>
+        	</form>
+        </search>
       </dialog>
       <script>
         // Enable DuckDuckGo Site Search

@@ -5,13 +5,14 @@ is_post: true
 {% from "macros.njk" import post_date, tag_list %}
 {% block content %}
 
-  {% set keywords %}{% if page.tags.length > 0 %}{{ tags | join(", ") }}{% endif %}{% endset %}
-  {% set this_url = site.url + page.url %}
+	{% set keywords %}{% if page.tags.length > 0 %}{{ tags | join(", ") }}{% endif %}{% endset %}
+	{% set this_url = site.url + page.url %}
 	{% set the_title %}{{ title  | markdownify | strip_links | safe }}{% endset %}
+	{% set trasition_root %}link-{{ page.fileSlug }}{% endset %}
 
-  <div class="layout-container layout-container--blog">
-    <article role="article" class="layout-container__primary h-entry">
-      <header class="entry__header">
+	<div class="layout-container layout-container--blog">
+		<article role="article" class="layout-container__primary h-entry">
+			<header class="entry__header" style="view-transition-name: {{ trasition_root }}-title">
 				<h1 class="entry__title p-name">
 					{% if is_404 %}
 						{{ the_title | safe }}
@@ -26,64 +27,70 @@ is_post: true
 			</header>
 			<div class="entry entry--page{% if og_image and og_image != '404' %} entry--with-hero{% endif %}">
 				<div class="entry__meta">
-          <dl>
-            <dt>Published by</dt>
-            <dd>{{ ref_source }}</dd>
+					<dl>
+						<dt>Published by</dt>
+						<dd>{{ ref_source }}</dd>
 
-            <dt>Saved on</dt>
-            <dd>{{ post_date( page.date, last_updated_at) }}</dd>
+						<dt>Saved on</dt>
+						<dd>{{ post_date( page.date, last_updated_at) }}</dd>
 
-            <dt class="hidden">by</dt>
-            <dd class="hidden"><a class="p-author h-card" href="/about">Aaron Gustafson</a></dd>
-            
-            {% if via %}
-              <dt>Discovered <abbr title="via" aria-label="via">↬</abbr></dt>
-              <dd><a href="{{ via.url }}">{{ via.name }}</a></dd>
-            {% endif %}
+						<dt class="hidden">by</dt>
+						<dd class="hidden"><a class="p-author h-card" href="/about">Aaron Gustafson</a></dd>
+						
+						{% if via %}
+							<dt>Discovered <abbr title="via" aria-label="via">↬</abbr></dt>
+							<dd><a href="{{ via.url }}">{{ via.name }}</a></dd>
+						{% endif %}
 
-            {% if tags.length %} 
-              <dt class="dont-read">Filed Under</dt>
-              <dd class="dont-read">{{ tag_list( tags ) }}</dd>
-            {% endif %}
+						{% if tags.length %} 
+							<dt class="dont-read">Filed Under</dt>
+							<dd class="dont-read"
+									style="view-transition-name: {{ trasition_root }}-tags">{{ tag_list( tags ) }}</dd>
+						{% endif %}
 
 						<dt class="dont-read">Like this?</dt>
 						<dd class="dont-read">
 							{% include "partials/post/sharing.html" %}
 						</dd>
-          </dl>
-        </div>
+					</dl>
+				</div>
 
-        <div class="entry__content e-content">
-          {% if og_image and og_image != "404" %}
-            <img data-responsiver="thumbnail" src="{{ og_image }}" alt="" class="entry__thumbnail" width="100" height="100">
-          {% endif %}
-          {{ content | safe }}
-        </div>
+				<div class="entry__content e-content">
+					{% if og_image and og_image != "404" %}
+						<img data-responsiver="thumbnail"
+								 src="{{ og_image }}"
+								 alt=""
+								 class="entry__thumbnail"
+								 width="100" height="100"
+								 style="view-transition-name: {{ trasition_root }}-thumbnail">
+					{% endif %}
+					{{ content | safe }}
+				</div>
 				
 				<hr class="rule">
-        
+				
 				<footer class="entry__footer">
-          {% if is_404 %}
-            <p>
-              This link is 404-ing{% if archived %}, but 
-              <a rel="bookmark" href="{{ archived }}">you can view an archived version 
-              on the Wayback Machine</a>{% endif %}.
-            </p>
-          {% else %}
-            <p class="read-on">
-              <a rel="original-article"
-                {% if hreflang %} hreflang="{{ hreflang }}"{% endif %}
-                href="{{ ref_url }}">Read on {{ ref_source }}</a>
-            </p>
-          {% endif %}
-        </footer>
+					{% if is_404 %}
+						<p>
+							This link is 404-ing{% if archived %}, but 
+							<a rel="bookmark" href="{{ archived }}">you can view an archived version 
+							on the Wayback Machine</a>{% endif %}.
+						</p>
+					{% else %}
+						<p class="read-on">
+							<a rel="original-article"
+								{% if hreflang %} hreflang="{{ hreflang }}"{% endif %}
+								href="{{ ref_url }}">Read on {{ ref_source }}</a>
+						</p>
+					{% endif %}
+				</footer>
 
-      </div>
-    </main>
-    
-  </div>
+			</div>
+		</main>
+		
+	</div>
 
-  <script type="application/ld+json">
-    {% include "partials/post/jsonld.html" %}
-  </script>
+	<script type="application/ld+json">
+		{% include "partials/post/jsonld.html" %}
+	</script>
 {% endblock %}

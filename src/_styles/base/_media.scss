@@ -29,27 +29,27 @@
 				max-inline-size: 100%;
 			}
 	
-			&[style] {
-					width: auto !important;
-					max-width: 100% !important;
-					height: auto !important;
+			&[style]:not([style*="view-transition"]) {
+				width: auto !important;
+				max-width: 100% !important;
+				height: auto !important;
 
-					@supports (margin-block: 1em) {
-						@include unset( width max-width height );
-						inline-size: auto !important;
-						max-inline-size: 100% !important;
-						block-size: auto !important;
-					}
+				@supports (margin-block: 1em) {
+					@include unset( width max-width height );
+					inline-size: auto !important;
+					max-inline-size: 100% !important;
+					block-size: auto !important;
+				}
 			}
 				
-				&[width] {
-					width: auto;
+			&[width] {
+				width: auto;
 
-					@supports (margin-block: 1em) {
-						@include unset( width );
-						inline-size: auto;
-					}
+				@supports (margin-block: 1em) {
+					@include unset( width );
+					inline-size: auto;
 				}
+			}
 	
 		}
 		picture {

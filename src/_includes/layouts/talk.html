@@ -6,6 +6,7 @@ is_post: true
 
 {% block content %}
 	{% set keywords %}{% if tags.length > 0 %}{{ tags | join(", ") }}{% endif %}{% endset %}
+	{% set trasition_root %}talk-{{ page.fileSlug }}{% endset %}
 	{%- set categories -%}
 		{%- if category -%}
 			{%- if category | isArray -%}
@@ -22,7 +23,7 @@ is_post: true
 
 	<div class="layout-container layout-container--blog">
 		<article role="article" class="layout-container__primary h-entry">
-			<header class="entry__header">
+			<header class="entry__header" style="view-transition-name: {{ trasition_root }}-title">
 				<h1 class="entry__title p-name">{{ title | markdownify | safe }}</h1>
 			</header>
 			<div class="entry entry--page">
@@ -52,7 +53,9 @@ is_post: true
 						{%- endfor -%}
 						
 						<dt class="dont-read">Filed Under</dt>
-						<dd class="dont-read">{{ tag_list( tags ) }}</dd>
+						<dd class="dont-read"
+								style="view-transition-name: {{ trasition_root }}-tags"
+								>{{ tag_list( tags ) }}</dd>
 
 						{% if slides.download or text %}
 							<dt class="dont-read">Resources</dt>
@@ -79,7 +82,7 @@ is_post: true
 
 					{% if slides.embed %}
 						{%- set evt = speaking_engagements | pluck( 'id', slides.event ) -%}
-						<figure class="talk__slides">
+						<figure class="talk__slides" style="view-transition-name: {{ trasition_root }}-hero">
 							<div class="video-embed video-embed--16x9">
 								<iframe class="talk__slides__embed video-embed__video" src="{{ slides.embed }}" frameborder="0" allowfullscreen></iframe>
 							</div> 
@@ -87,7 +90,7 @@ is_post: true
 						</figure>
 					{% elseif hero %}
 						{% set hero_image %}/i/talks/{{ hero }}{% endset %}
-						<figure class="talk__hero">
+						<figure class="talk__hero" style="view-transition-name: {{ trasition_root }}-hero">
 							<img data-responsiver="hero" class="entry__hero__image" src="{{ hero_image | absoluteUrl(site.url) }}" alt="Title slide for my talk “{{ title }}”">
 						</figure>
 					{% endif %}

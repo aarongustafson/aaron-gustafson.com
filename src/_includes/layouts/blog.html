@@ -6,116 +6,129 @@ github_edit: "_layouts/blog.html"
 
 {% block content %}
 
-  {% set the_title %}{% if display_title %}{{ display_title }}{% else %}{{ title }}{% endif %}{% endset %}
-  <article role="article" class="page layout-container layout-container--blog">
+	{% set the_title %}{% if display_title %}{{ display_title }}{% else %}{{ title }}{% endif %}{% endset %}
+	<article role="article" class="page layout-container layout-container--blog">
 
-    <h1 class="page__title subsection__header">{{ the_title | title }}</h1>
-    
-    <div class="layout-container__primary">
-      
-      {% for post in posts %}
-        {% set content %}{% if post.data.page.excerpt %}<p>{{ post.data.page.excerpt | markdownify | safe }}</p>{% else %}{{ post.templateContent | safe }}{% endif %}{% endset %}
-        {% set is_excerpted = ( post.templateContent != content ) %}
+		<h1 class="page__title subsection__header">{{ the_title | title }}</h1>
+		
+		<div class="layout-container__primary">
+			
+			{% for post in posts %}
+				{% set content %}{% if post.data.page.excerpt %}<p>{{ post.data.page.excerpt | markdownify | safe }}</p>{% else %}{{ post.templateContent | safe }}{% endif %}{% endset %}
+				{% set is_excerpted = ( post.templateContent != content ) %}
 				{% set post_title %}{{ post.data.title | markdownify | strip_links | safe }}{% endset %}
-        
-        <article class="h-entry entry entry--excerpt entry--{{ post.data.collection }}{% if post.data.hero or post.data.og_image %} entry--with-hero{% endif %}">
-          <header class="entry__header">
-            <h2 class="entry__title entry-title">
-              {% if is_excerpted %}
-                <a rel="bookmark"
-                   href="{{ post.url }}"
-                   >{{ post_title | safe }}</a>
-              {% elif post.data.ref_url and not post.data.is_404 %}
-                <a rel="external original-article"
-                   class="u-bookmark-of h-cite"
-                   href="{{ post.data.ref_url }}"
-                   >{{ post_title | safe }}</a>
-              {% else %}
-                {{ post_title | safe }}
-              {% endif %}
-            </h2>
-            {% if not (post.data.meta == false) %}
-              <dl class="entry__meta">
-                <dt class="hidden">{% if post.data.ref_url %}Saved on{% else %}Posted on{% endif %}</dt>
-                <dd>{{ post_date( post.date, post.data.last_updated_at) }}</dd>
-                {% if via %}
-                  <dt class="hidden">Via</dt>
-                  <dd>↬ <a href="{{ via.url }}">{{ via.name }}</a></dd>
-                {% endif %}
-                {# Commenting out for now
-                {% if post.data.ref_url %}
-                <dt class="hidden">Source</dt>
-                <dd>
-                  {% if post.data.is_404 %}
-                    {{ post.data.ref_source }}
-                  {% else %}
-                    <a rel="external original-article" href="{{ post.data.ref_url }}">{{ post.data.ref_source }}</a>
-                  {% endif %}
-                </dd>
-                {% endif %}
-                end comment #}
-                {% if post.data.tags %}
-                  <dt class="dont-read hidden">Filed Under</dt>
-                  <dd class="dont-read">{{ tag_list( post.data.tags ) }}</dd>
-                {% endif %}
-              </dl>
-            {% endif %}
-          </header>
+				{% set trasition_root %}post-{{ post.fileSlug }}{% endset %}
 
-          <div class="entry__content entry__content--excerpt entry-content">
-            {% if post.data.hero %}
-              <img data-responsiver="thumbnail" src="{{ post.data.hero.src | absoluteUrl(site.url) }}" alt="{{ post.data.hero.alt }}" class="entry__thumbnail" width="100" height="100">
-            {% endif %}
-            {% if post.data.og_image and post.data.og_image != 404 %}
-              <img data-responsiver="thumbnail" src="{{ post.data.og_image }}" alt="" class="entry__thumbnail" width="100" height="100">
-            {% endif %}
-            {{ content | replace( r/\[\^\d\]/, "") | safe }}
-          </div>
+				<article class="h-entry entry entry--excerpt entry--{{ post.data.collection }}{% if post.data.hero or post.data.og_image %} entry--with-hero{% endif %}">
+					<header class="entry__header" style="view-transition-name: {{ trasition_root }}-title">
+						<h2 class="entry__title entry-title">
+							{% if is_excerpted %}
+								<a rel="bookmark"
+									 href="{{ post.url }}"
+									 >{{ post_title | safe }}</a>
+							{% elif post.data.ref_url and not post.data.is_404 %}
+								<a rel="external original-article"
+									 class="u-bookmark-of h-cite"
+									 href="{{ post.data.ref_url }}"
+									 >{{ post_title | safe }}</a>
+							{% else %}
+								{{ post_title | safe }}
+							{% endif %}
+						</h2>
+						{% if not (post.data.meta == false) %}
+							<dl class="entry__meta">
+								<dt class="hidden">{% if post.data.ref_url %}Saved on{% else %}Posted on{% endif %}</dt>
+								<dd>{{ post_date( post.date, post.data.last_updated_at) }}</dd>
+								{% if via %}
+									<dt class="hidden">Via</dt>
+									<dd>↬ <a href="{{ via.url }}">{{ via.name }}</a></dd>
+								{% endif %}
+								{# Commenting out for now
+								{% if post.data.ref_url %}
+								<dt class="hidden">Source</dt>
+								<dd>
+									{% if post.data.is_404 %}
+										{{ post.data.ref_source }}
+									{% else %}
+										<a rel="external original-article" href="{{ post.data.ref_url }}">{{ post.data.ref_source }}</a>
+									{% endif %}
+								</dd>
+								{% endif %}
+								end comment #}
+								{% if post.data.tags %}
+									<dt class="dont-read hidden">Filed Under</dt>
+									<dd class="dont-read"
+											style="view-transition-name: {{ trasition_root }}-tags"
+											>{{ tag_list( post.data.tags ) }}</dd>
+								{% endif %}
+							</dl>
+						{% endif %}
+					</header>
 
-          {% if is_excerpted or post.data.is_404 %}
-            <footer class="entry__footer">
-              <p>
-                {% if is_excerpted %}
-                  <a rel="bookmark" href="{{ post.url }}">You can finish reading
-                  <cite>{{ post.data.title | safe }}</cite> in less than {{ post.templateContent | readingTime }}</a>
-                {% elif post.data.is_404 %}
-                  This link is 404-ing{% if post.data.archived %}, but <a rel="bookmark" href="{{ post.data.archived }}">you can view an archived version on the Wayback Machine</a>{% endif %}.
-                {% endif %}
-              </p>
-            </footer>
-          {% endif %}
-        </article>
-        {% if not forloop.last %}
-          <hr class="rule">
-        {% endif %}
-      {% endfor %}
+					<div class="entry__content entry__content--excerpt entry-content">
+						{% if post.data.hero %}
+							<img data-responsiver="thumbnail"
+									 src="{{ post.data.hero.src | absoluteUrl(site.url) }}"
+									 alt="{{ post.data.hero.alt }}" class="entry__thumbnail"
+									 width="100" height="100"
+									 style="view-transition-name: {{ trasition_root }}-hero"
+									 >
+						{% endif %}
+						{% if post.data.og_image and post.data.og_image != 404 %}
+							<img data-responsiver="thumbnail"
+									 src="{{ post.data.og_image }}"
+									 alt="" class="entry__thumbnail"
+									 width="100" height="100"
+									 style="view-transition-name: {{ trasition_root }}-thumbnail"
+									 >
+						{% endif %}
+						{{ content | replace( r/\[\^\d\]/, "") | safe }}
+					</div>
 
-      {{ paginate( "Page", pagination ) }}
+					{% if is_excerpted or post.data.is_404 %}
+						<footer class="entry__footer">
+							<p>
+								{% if is_excerpted %}
+									<a rel="bookmark" href="{{ post.url }}">You can finish reading
+									<cite>{{ post.data.title | safe }}</cite> in less than {{ post.templateContent | readingTime }}</a>
+								{% elif post.data.is_404 %}
+									This link is 404-ing{% if post.data.archived %}, but <a rel="bookmark" href="{{ post.data.archived }}">you can view an archived version on the Wayback Machine</a>{% endif %}.
+								{% endif %}
+							</p>
+						</footer>
+					{% endif %}
+				</article>
+				{% if not forloop.last %}
+					<hr class="rule">
+				{% endif %}
+			{% endfor %}
 
-      </div>
+			{{ paginate( "Page", pagination ) }}
 
-    {% if sidebar != false %}
-      {%- set page_sidebars %}
-        {% if site.asides.blog %}
-          {% for sidebar in site.asides.blog %}
-            {% include sidebar %}
-          {% endfor %}
-        {% elif site.asides.page %}
-          {% for sidebar in site.asides.page %}
-            {% include sidebar %}
-          {% endfor %}
-        {% else %}
-          {% for sidebar in site.asides.default %}
-            {% include sidebar %}
-          {% endfor %}
-        {% endif %}
-      {% endset -%}
-      {% if page_sidebars | trim | length > 0 %}
-        <aside class="layout-container__secondary" >
-          {{ page_sidebars | safe }}
-        </aside>
-      {% endif %}
-    {% endif %}
+			</div>
 
-  </article>
+		{% if sidebar != false %}
+			{%- set page_sidebars %}
+				{% if site.asides.blog %}
+					{% for sidebar in site.asides.blog %}
+						{% include sidebar %}
+					{% endfor %}
+				{% elif site.asides.page %}
+					{% for sidebar in site.asides.page %}
+						{% include sidebar %}
+					{% endfor %}
+				{% else %}
+					{% for sidebar in site.asides.default %}
+						{% include sidebar %}
+					{% endfor %}
+				{% endif %}
+			{% endset -%}
+			{% if page_sidebars | trim | length > 0 %}
+				<aside class="layout-container__secondary" >
+					{{ page_sidebars | safe }}
+				</aside>
+			{% endif %}
+		{% endif %}
+
+	</article>
 {% endblock %}
