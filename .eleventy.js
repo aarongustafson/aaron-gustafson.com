@@ -92,7 +92,8 @@ module.exports = config => {
 			},
 			attributes: {
 				width: "960",
-				height: "960"
+				height: "960",
+				decoding: "async"
 			},
 		},
 		thumbnail: {
@@ -103,7 +104,8 @@ module.exports = config => {
 			attributes: {
 				loading: 'lazy',
 				width: "100",
-				height: "100"
+				height: "100",
+				decoding: "async"
 			},
 		},
 		default: {
@@ -113,6 +115,7 @@ module.exports = config => {
 			},
 			attributes: {
 				loading: 'lazy',
+				decoding: "async"
 			},
 		},
 	});
