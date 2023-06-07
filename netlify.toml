@@ -77,6 +77,10 @@
 	[headers.values]
 	Cache-Control = "max-age=0"
 [[headers]]
+	for = "/*.json"
+	[headers.values]
+	X-Content-Type-Options = "nosniff"
+[[headers]]
 	for = "/feeds/*.json"
 	[headers.values]
 	Access-Control-Allow-Origin = "*"
