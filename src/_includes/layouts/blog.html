@@ -17,10 +17,10 @@ github_edit: "_layouts/blog.html"
 				{% set content %}{% if post.data.page.excerpt %}<p>{{ post.data.page.excerpt | markdownify | safe }}</p>{% else %}{{ post.templateContent | safe }}{% endif %}{% endset %}
 				{% set is_excerpted = ( post.templateContent != content ) %}
 				{% set post_title %}{{ post.data.title | markdownify | strip_links | safe }}{% endset %}
-				{% set trasition_root %}post-{{ post.fileSlug }}{% endset %}
+				{% set transition_root %}post-{{ post.fileSlug }}{% endset %}
 
 				<article class="h-entry entry entry--excerpt entry--{{ post.data.collection }}{% if post.data.hero or post.data.og_image %} entry--with-hero{% endif %}">
-					<header class="entry__header" style="view-transition-name: {{ trasition_root }}-title">
+					<header class="entry__header" style="view-transition-name: {{ transition_root }}-title">
 						<h2 class="entry__title entry-title">
 							{% if is_excerpted %}
 								<a rel="bookmark"
@@ -58,7 +58,7 @@ github_edit: "_layouts/blog.html"
 								{% if post.data.tags %}
 									<dt class="dont-read hidden">Filed Under</dt>
 									<dd class="dont-read"
-											style="view-transition-name: {{ trasition_root }}-tags"
+											style="view-transition-name: {{ transition_root }}-tags"
 											>{{ tag_list( post.data.tags ) }}</dd>
 								{% endif %}
 							</dl>
@@ -71,7 +71,7 @@ github_edit: "_layouts/blog.html"
 									 src="{{ post.data.hero.src | absoluteUrl(site.url) }}"
 									 alt="{{ post.data.hero.alt }}" class="entry__thumbnail"
 									 width="100" height="100"
-									 style="view-transition-name: {{ trasition_root }}-hero"
+									 style="view-transition-name: {{ transition_root }}-hero"
 									 >
 						{% endif %}
 						{% if post.data.og_image and post.data.og_image != 404 %}
@@ -79,7 +79,7 @@ github_edit: "_layouts/blog.html"
 									 src="{{ post.data.og_image }}"
 									 alt="" class="entry__thumbnail"
 									 width="100" height="100"
-									 style="view-transition-name: {{ trasition_root }}-thumbnail"
+									 style="view-transition-name: {{ transition_root }}-thumbnail"
 									 >
 						{% endif %}
 						{{ content | replace( r/\[\^\d\]/, "") | safe }}

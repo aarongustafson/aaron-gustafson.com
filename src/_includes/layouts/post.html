@@ -15,11 +15,11 @@ is_post: true
 	{% set total_webmentions = replies.length + likes.length + shares.length %}
 	{% set has_webmentions = total_webmentions > 0 %}
 	{% set heading %}<h1 class="entry__title p-name">{{ title  | markdownify | strip_links | safe }}</h1>{% endset %}
-	{% set trasition_root %}post-{{ page.fileSlug }}{% endset %}
+	{% set transition_root %}post-{{ page.fileSlug }}{% endset %}
 
 	<div class="layout-container layout-container--blog">
 		<article role="article" class="layout-container__primary h-entry">
-			<header class="entry__header" style="view-transition-name: {{ trasition_root }}-title">
+			<header class="entry__header" style="view-transition-name: {{ transition_root }}-title">
 				{{ heading | safe }}
 			</header>
 			<div class="entry entry--page">
@@ -50,7 +50,7 @@ is_post: true
 
 						<dt class="dont-read">Filed Under</dt>
 						<dd class="dont-read"
-								style="view-transition-name: {{ trasition_root }}-tags"
+								style="view-transition-name: {{ transition_root }}-tags"
 								>{{ tag_list( tags ) }}</dd>
 
 						{% if has_webmentions or disqus.commentCount %}
@@ -95,7 +95,7 @@ is_post: true
 						<figure class="entry__hero">
 							<img data-responsiver="hero" class="entry__hero__image"
 									 src="{{ hero.src | absoluteUrl(site.url) }}" alt="{{ hero.alt }}"
-									 style="view-transition-name: {{ trasition_root }}-hero;{% if hero.offset %} margin-top: -{{ hero.offset }}px;{% endif %}">
+									 style="view-transition-name: {{ transition_root }}-hero;{% if hero.offset %} margin-top: -{{ hero.offset }}px;{% endif %}">
 							<figcaption class="entry__hero__credit">Credit:
 								{% if hero.url %}
 									<a href="{{ hero.url }}">{{ hero.credit }}</a>

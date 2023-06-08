@@ -8,11 +8,11 @@ is_post: true
 	{% set keywords %}{% if page.tags.length > 0 %}{{ tags | join(", ") }}{% endif %}{% endset %}
 	{% set this_url = site.url + page.url %}
 	{% set the_title %}{{ title  | markdownify | strip_links | safe }}{% endset %}
-	{% set trasition_root %}link-{{ page.fileSlug }}{% endset %}
+	{% set transition_root %}link-{{ page.fileSlug }}{% endset %}
 
 	<div class="layout-container layout-container--blog">
 		<article role="article" class="layout-container__primary h-entry">
-			<header class="entry__header" style="view-transition-name: {{ trasition_root }}-title">
+			<header class="entry__header" style="view-transition-name: {{ transition_root }}-title">
 				<h1 class="entry__title p-name">
 					{% if is_404 %}
 						{{ the_title | safe }}
@@ -45,7 +45,7 @@ is_post: true
 						{% if tags.length %} 
 							<dt class="dont-read">Filed Under</dt>
 							<dd class="dont-read"
-									style="view-transition-name: {{ trasition_root }}-tags">{{ tag_list( tags ) }}</dd>
+									style="view-transition-name: {{ transition_root }}-tags">{{ tag_list( tags ) }}</dd>
 						{% endif %}
 
 						<dt class="dont-read">Like this?</dt>
@@ -62,7 +62,7 @@ is_post: true
 								 alt=""
 								 class="entry__thumbnail"
 								 width="100" height="100"
-								 style="view-transition-name: {{ trasition_root }}-thumbnail">
+								 style="view-transition-name: {{ transition_root }}-thumbnail">
 					{% endif %}
 					{{ content | safe }}
 				</div>
