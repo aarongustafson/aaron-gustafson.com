@@ -94,7 +94,6 @@ module.exports = config => {
 				width: "960",
 				height: "960",
 				decoding: "async",
-				crossorigin: "anonymous",
 				fetchpriority: "high"
 			},
 		},
@@ -108,7 +107,6 @@ module.exports = config => {
 				width: "100",
 				height: "100",
 				decoding: "async",
-				crossorigin: "anonymous",
 				fetchpriority: "low"
 			},
 		},
@@ -120,7 +118,6 @@ module.exports = config => {
 			attributes: {
 				loading: 'lazy',
 				decoding: "async",
-				crossorigin: "anonymous",
 				fetchpriority: "high"
 			},
 		},
