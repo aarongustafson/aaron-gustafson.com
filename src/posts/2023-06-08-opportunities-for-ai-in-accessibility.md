@@ -11,6 +11,7 @@ hero:
   credit: "Aaron Gustafson × DALL·E"
   alt: "A child’s drawing of a cute red robot whose hands are hammers. The robot is centered."
   url: https://labs.openai.com/s/FxVDwMouozWRdhBp7OVP8nY0
+  offset: "50"
 thanks:
   "Kartik Sawhney": "https://twitter.com/kartiks22"
 ---
