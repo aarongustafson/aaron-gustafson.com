@@ -36,7 +36,7 @@ const version = "v{{ VERSION }}:",
         posts: {
           name: `${version}posts`,
           limit: 10,
-          path: /\/(notebook|speaking-engagements)\/.+/
+          path: /\/(notebook|speaking-engagements)\/(?!pg-\d\/).+/
         },
         other: {
           name: `${version}other`,
