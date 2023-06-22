@@ -94,7 +94,8 @@ module.exports = config => {
 				width: "960",
 				height: "960",
 				decoding: "async",
-				fetchpriority: "high"
+				fetchpriority: "high",
+				loading: "eager"
 			},
 		},
 		thumbnail: {
