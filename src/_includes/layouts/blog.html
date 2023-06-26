@@ -5,7 +5,7 @@ github_edit: "_layouts/blog.html"
 {% from "macros.njk" import paginate, post_date, tag_list %}
 
 {% block content %}
-
+	
 	{% set the_title %}{% if display_title %}{{ display_title }}{% else %}{{ title }}{% endif %}{% endset %}
 	<article role="article" class="page layout-container layout-container--blog">
 
@@ -18,8 +18,9 @@ github_edit: "_layouts/blog.html"
 				{% set is_excerpted = ( post.templateContent != content ) %}
 				{% set post_title %}{{ post.data.title | markdownify | strip_links | safe }}{% endset %}
 				{% set transition_root %}post-{{ post.fileSlug }}{% endset %}
+				{% set type = post.inputPath | content_type %}
 
-				<article class="h-entry entry entry--excerpt entry--{{ post.data.collection }}{% if post.data.hero or post.data.og_image %} entry--with-hero{% endif %}">
+				<article class="h-entry entry entry--excerpt entry--{{ type }}{% if post.data.hero or post.data.og_image %} entry--with-hero{% endif %}">
 					<header class="entry__header" style="view-transition-name: {{ transition_root }}-title">
 						<h2 class="entry__title entry-title">
 							{% if is_excerpted %}

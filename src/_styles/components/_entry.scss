@@ -151,6 +151,10 @@ Blog Entry
 			@include rem( font-size, $font-size-small );
 		}
 		
+		&--excerpt {
+			content-visibility: auto;
+			contain-intrinsic-height: auto 300px;
+		}
 		&--excerpt &__title {
 			@include rem( font-size, $font-size-h1 );
 			text-decoration: none;
