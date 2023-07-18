@@ -311,6 +311,7 @@ Blog Entry
 		&--page,
 		&--excerpt {
 			display: block;
+			content-visibility: unset;
 
 			& > .entry__meta,
 			header > .entry__meta {
