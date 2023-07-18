@@ -1,4 +1,4 @@
-export default () => new Response("Hello world");
+exports.handler = () => new Response("Hello world");
 
 /* export default async function latestLinks(request: Request) {
   let timerId: number | undefined;
