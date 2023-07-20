@@ -1,5 +1,14 @@
 [
 	{
+		"title": "(De)coding Conventions",
+		"outlet": "ReadME Podcast",
+		"episode": 32,
+		"date": "2023-07-11 00:00:00 +0000",
+		"url": "https://github.com/readme/podcast/decoding-conventions",
+		"description": "I spoke to hosts Neha Batra and Martin Woodward about AI’s potential to enhance accessibility and the projects leading the charge.",
+		"embed": "https://downloads.ctfassets.net/s5uo95nf6njh/59aAijI25DwOmbu4qWArAQ/14daa253cbc087756301768e4f380be2/GitHub_ReadME_Episode_32_FINAL.SS.mp3"
+	},
+	{
 		"title": "Microsoft AI for Accessibility",
 		"outlet": "Assembling Inclusion",
 		"episode": 25,
