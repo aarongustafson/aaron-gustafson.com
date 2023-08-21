@@ -23,7 +23,7 @@ Not to pick on anyone in particular, but consider [this example from a recent ta
 
 <figure id="2023-08-21-01">
 
-![](/i/posts/2023-08-21/01.png){width=696}{height=481}
+![](https://www.aaron-gustafson.com/i/posts/2023-08-21/01.png){width=696}{height=481}
 
 <figcaption>The U.S. Transportation Safety Administration’s TSA PreCheck® landing page, with CSS applied.</figcaption>
 </figure>
@@ -32,7 +32,7 @@ When CSS fails to load, however, check out what happens:
 
 <figure id="2023-08-21-02">
 
-![](/i/posts/2023-08-21/02.png){width=696}{height=481}
+![](https://www.aaron-gustafson.com/i/posts/2023-08-21/02.png){width=696}{height=481}
 
 <figcaption>The U.S. Transportation Safety Administration’s TSA PreCheck® landing page, without CSS applied. Note the **huge** SVG.</figcaption>
 </figure>
