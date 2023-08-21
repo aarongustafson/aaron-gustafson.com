@@ -3,7 +3,7 @@ title: "Design for Developers"
 author: "Stephanie Stimac"
 date: 2023-05-30 12:00:00 -05:00
 type: "foreword"
-tags: ["web design", "web development"]
+tags: ["web design", "web development", CSS]
 publisher: "Manning"
 url: "http://mng.bz/zXqB"
 cover: "design-for-developers.png"

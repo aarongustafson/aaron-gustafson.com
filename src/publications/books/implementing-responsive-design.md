@@ -1,11 +1,11 @@
 ---
 title: "Implementing Responsive Design"
-subtitle: ""
+subtitle: "Building Sites for an Anywhere, Everywhere Web"
 author: "Tim Kadlec"
 date: 2012-08-10 13:00:00 -04:00
 type: "foreword"
-tags: []
-publisher: ""
+tags: ["responsive web design", "web design", CSS]
+publisher: "New Riders"
 url: "https://www.librarything.com/work/12921330"
 cover: "implementing-responsive-design.jpg"
 width: "156"
