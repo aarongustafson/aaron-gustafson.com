@@ -1,7 +1,7 @@
 ---
 title: "Building in 10k: CSS Structure and Sandboxing"
 date: 2016-09-08 00:00:00 +00:00
-tags: []
+tags: [CSS, performance, "progressive enhancement"]
 publisher: "Microsoft Edge Dev Blog"
 url: https://blogs.windows.com/msedgedev/2016/09/08/10k-css-structure-and-sandboxing/
 ---

@@ -1,7 +1,7 @@
 ---
 title: "The State of Web Design"
 date: 2014-03-27 00:00:00 +00:00
-tags: []
+tags: ["progressive enhancement", "web design"]
 publisher: "modern.IE Podcast"
 url: "https://web.archive.org/web/20140401121308/https://www.modern.ie/en-us/podcast/modernie-podcast-with-aaron-gustafson"
 ---

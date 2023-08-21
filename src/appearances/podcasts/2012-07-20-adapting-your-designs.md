@@ -1,7 +1,7 @@
 ---
 title: "Adapting Your Designs"
 date: 2012-07-20 00:00:00 +00:00
-tags: []
+tags: ["progressive enhancement", "responsive web design"]
 publisher: "UIE Brainsparks Podcast"
 url: "http://archive.uie.com/brainsparks/2012/07/20/aaron-gustafson-adapting-your-designs-with-progressive-enhancement/"
 ---

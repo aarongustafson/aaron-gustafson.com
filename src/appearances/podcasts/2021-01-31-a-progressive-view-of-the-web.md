@@ -1,7 +1,7 @@
 ---
 title: "A Progressive View of the Web"
 date: 2021-01-31 00:00:00 +00:00
-tags: []
+tags: ["progressive enhancement", "progressive web apps", inclusion]
 publisher: "Presentable"
 url: "https://www.relay.fm/presentable/101"
 episode: 101

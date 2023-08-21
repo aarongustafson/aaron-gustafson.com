@@ -1,7 +1,7 @@
 ---
 title: "WaSP and PWAs"
 date: 2018-09-24 00:00:00 +00:00
-tags: []
+tags: ["progressive web apps", "web standards", industry]
 publisher: "Shop Talk Show"
 url: "https://shoptalkshow.com/episodes/330-aaron-gustafson-wasp-pwas/"
 episode: 330

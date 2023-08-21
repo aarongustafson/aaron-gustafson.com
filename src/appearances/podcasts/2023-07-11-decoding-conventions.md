@@ -1,7 +1,7 @@
 ---
 title: "(De)coding Conventions"
 date: 2023-07-11 00:00:00 +00:00
-tags: []
+tags: ["AI/ML", accessibility]
 publisher: "ReadME Podcast"
 url: "https://github.com/readme/podcast/decoding-conventions"
 episode: 32

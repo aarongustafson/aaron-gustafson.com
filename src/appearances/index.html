@@ -10,21 +10,25 @@ sharing: false
 sitemap: true
 ---
 
+{% set svg_article %}{{ "/src/static/i/icons/article.svg" | svgContents  | replace("38px","24px") | replace("48px","30px") | safe }}{% endset %}
+{% set svg_podcast %}{{ "/src/static/i/icons/mic.svg" | svgContents | safe }}{% endset %}
+
 <h1 class="page__title">Interviews &amp; More</h1>
 
 <p>I’ve had the great pleasure of being interviewed on numerous podcasts, in digital and print publications, and even <a href="http://www.bbc.com/news/business-17931814">on the BBC</a>!</p>
 
 <section id="podcasts" class="section">
-  <h2 class="section__title">Podcasts</h2>
-  <ul class="listing listing--podcasts listing--grid">
-    {% for podcast in podcasts %}
-      <li class="listing__item listing__item--{{ loop.index }} podcast">
-        {% set display_title %}{{ podcast.outlet }} {% if podcast.episode %}#{{ podcast.episode }}{% endif %}{% endset %}
-        <h3 class="listing__item__meta_title podcast__outlet">{{ display_title | safe }}</h3>
-        {% if podcast.title %}
-          <h4 class="listing__item__title podcast__title"><a href="{{ podcast.url }}">{{ podcast.title }}</a></h4>
-        {% endif %}
-        </a>
+  <h2 class="section__title">I’ve been a guest on {{ collections.podcasts.length }} podcasts</h2>
+  <ul class="listing listing--podcasts listing--icons">
+    {% for podcast in collections.podcasts %}
+      <li class="listing__item listing__item--{{ loop.index }} podcast entry--teaser">
+				<p class="entry__type listing__item__type" title="Podcast" role="img" aria-label="Podcast">{{ svg_podcast | safe }}</p>
+        <h4 class="listing__item__title podcast__title"><a href="{{ podcast.data.url }}">{{ podcast.data.title }}</a></h4>
+				<p class="listing__item__meta appearance__meta">
+					{{ podcast.data.publisher }},
+					{% if podcast.data.episode %}Episode {{ podcast.data.episode }},{% endif %}
+          <time class="appearance__date">{{ podcast.date | readable_date }}</time>
+        </p>
         {#
         {% comment %}
           {% if podcast.src %}
@@ -43,22 +47,23 @@ sitemap: true
 </section>
 
 <section id="press" class="section">
-  <h2 class="section__title">Press</h2>
-  <ul class="listing listing--press">
-    {% for appearance in press %}
-      {% set display_title %}{% if appearance.title %}{{ appearance.title }}{% else %}{{ appearance.outlet }}{% endif %}{% endset %}
-      <li class="listing__item listing__item--{{ loop.index }} appearance">
-        <h3 class="listing__item__title appearance__title">
-          {% if appearance.url %}
-            <a href="{{ appearance.url }}">{{ display_title | safe }}</a>
+  <h2 class="section__title">I’ve been quoted in {{ collections.press.length }} press items</h2>
+  <ul class="listing listing--press listing--icons">
+    {% for appearance in collections.press %}
+      {% set display_title %}{% if appearance.data.title %}{{ appearance.data.title }}{% else %}{{ appearance.outlet }}{% endif %}{% endset %}
+      <li class="listing__item listing__item--{{ loop.index }} appearance entry--teaser">
+        <p class="entry__type listing__item__type" title="Article" role="img" aria-label="Article">{{ svg_article | safe }}</p>
+				<h3 class="listing__item__title appearance__title">
+          {% if appearance.data.url %}
+            <a href="{{ appearance.data.url }}">{{ display_title | safe }}</a>
           {% else %}
             {{ display_title | safe }}
           {% endif %}
         </h3>
         <p class="listing__item__meta appearance__meta">
-          <time class="appearance__date">{{ appearance.date | readable_date }}</time>{% if display_title != appearance.outlet %},{% endif %}
-          {% if display_title != appearance.outlet %}
-            <cite class="appearance__venue">{{ appearance.outlet }}</cite>
+          <time class="appearance__date">{{ appearance.date | readable_date }}</time>{% if display_title != appearance.data.publisher %},{% endif %}
+          {% if display_title != appearance.data.publisher %}
+            <cite class="appearance__venue">{{ appearance.data.publisher }}</cite>
           {% endif %}
         </p>
         {#
@@ -72,20 +77,20 @@ sitemap: true
 </section>
 
 <section id="citations" class="section">
-  <h2 class="section__title">Citations</h2>
+  <h2 class="section__title">My work has also been cited numerous times</h2>
   <p>Oh my gosh y’all, it’s such an honor to be referenced in your books, articles, and talks.
   Whenever someone mentions one, I add it to
   <a href="{{ site.repo_url | replace('/tree/', '/edit/') }}src/_data/citations.json">the list</a>.
   I can’t even tell you how much it means for my work to have been a small part of over
   {% for key, value in citations %}
     {% if key != "code" %}
-      {% if loop.last %} and {% endif %}{{ value | length }} {{ key }}{% if not loop.last %},{% endif %}
+      {% if loop.last %} and {% endif %}{{ value | length }} {{ key }}{% if not loop.last %}, {% endif %}
     {% endif %}
   {% endfor %}
-  by so many people I’m inspired by, including
+  by so many people who inspire me, including
   <a href="https://zeldman.com">Jeffrey Zeldman</a>, 
   <a href="https://chenhuijing.com">Chen Hui Jing</a>, 
-  <a href="https://zomigi.com">Zoe Mickley Gillenwater,
+  <a href="https://zomigi.com">Zoe Mickley Gillenwater</a>,
   <a href="https://preston.so/">Preston So</a>,
   <a href="https://blog.natbat.net/">Natalie Downe</a>,
   <a href="https://chriscoyier.net/">Chris Coyier</a>,

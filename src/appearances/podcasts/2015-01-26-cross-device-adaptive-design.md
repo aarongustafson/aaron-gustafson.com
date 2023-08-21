@@ -1,7 +1,7 @@
 ---
 title: "Cross-device Adaptive Design"
 date: 2015-01-26 00:00:00 +00:00
-tags: []
+tags: ["responsive web design", "progressive enhancement", mobile]
 publisher: "UIE Brainsparks Podcast"
 url: "http://archive.uie.com/brainsparks/2015/01/26/aaron-gustafson-jenn-lukas-cross-device-adaptive-design/"
 ---

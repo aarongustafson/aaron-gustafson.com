@@ -224,6 +224,17 @@ Blog Entry
 					padding-inline: 10px;
 				}
 
+				svg {
+					width: 24px;
+    			max-height: 24px;
+
+					@supports (margin-block: 1em) {
+						@include unset( width max-height );
+						max-block-size: 24px;
+						inline-size: 24px;
+					}
+				}
+
 				path {
 					fill: $color-white;
 				}

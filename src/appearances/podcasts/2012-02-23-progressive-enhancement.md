@@ -1,7 +1,7 @@
 ---
 title: "Progressive Enhancement"
 date: 2012-02-23 00:00:00 +00:00
-tags: []
+tags: ["progressive enhancement", ExpressionEngine]
 publisher: "ExpressionEngine Podcast"
 url: "http://ctrlclickcast.com/episodes/progressive-enhancement"
 ---

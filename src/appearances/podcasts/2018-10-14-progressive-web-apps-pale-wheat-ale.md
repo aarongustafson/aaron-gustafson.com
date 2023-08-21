@@ -1,7 +1,7 @@
 ---
 title: "Progressive Web Apps - Pale Wheat Ale"
 date: 2018-10-14 00:00:00 +00:00
-tags: []
+tags: ["progressive web apps", "web development"]
 publisher: "Front End Happy Hour"
 url: "http://frontendhappyhour.com/episodes/progressive-web-apps-pale-wheat-ale/"
 episode: 68

@@ -1,7 +1,7 @@
 ---
 title: "The Accessibility of Web Forms"
 date: 2014-09-09 00:00:00 +00:00
-tags: []
+tags: [accessibility, "web forms", "progressive enhancement"]
 publisher: "Unmatched Style Podcast"
 url: "http://unmatchedstyle.com/news/aaron-gustafson-interview-the-accessibility-of-web-forms.php"
 episode: 82

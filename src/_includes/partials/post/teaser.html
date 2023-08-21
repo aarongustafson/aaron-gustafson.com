@@ -34,7 +34,7 @@
 			{% set teaser_date = post.data.date %}
 			{% if type=="post" %}Notebook entry posted
 			{% elif type=="link" %}Link saved
-			{% elif type=="artice" %}Article published by <cite>{{ post.data.publisher }}</cite>
+			{% elif type=="article" %}Article published in <cite>{{ post.data.publisher }}</cite>
 			{% elif type=="book" %}Book 
 				{% if post.data.type == 'foreword' %}
 					foreword

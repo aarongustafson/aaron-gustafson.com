@@ -1,7 +1,7 @@
 ---
 title: "Microsoft AI for Accessibility"
 date: 2023-01-01 00:00:00 +00:00
-tags: []
+tags: [accessibility, Microsoft, "inclusive design", "AI/ML", inclusion]
 publisher: "Assembling Inclusion"
 url: "https://anchor.fm/assemblinginclusion/episodes/025-Microsoft-AI-for-Accessibility-e1suib4"
 episode: 25

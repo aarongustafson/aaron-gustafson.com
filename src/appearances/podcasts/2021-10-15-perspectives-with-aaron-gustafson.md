@@ -1,7 +1,7 @@
 ---
 title: "Perspectives with Aaron Gustafson"
 date: 2021-10-15 00:00:00 +00:00
-tags: []
+tags: ["progressive enhancement", "web standards", industry]
 publisher: "Crossword"
 url: "https://crossword.fm/podcast/perspectives-with-aaron-gustafson/"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Progressive Enhancement FTW"
 date: 2015-03-20 00:00:00 +00:00
-tags: []
+tags: ["progressive enhancement", "web design", industry]
 publisher: "The Big Web Show"
 url: "http://5by5.tv/bigwebshow/130"
 episode: 130

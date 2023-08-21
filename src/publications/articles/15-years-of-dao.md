@@ -1,7 +1,7 @@
 ---
 title: "15 Years of Dao"
 date: 2015-04-07 00:00:00 +00:00
-tags: []
+tags: ["web design", "progressive enhancement"]
 publisher: "A List Apart"
 url: http://alistapart.com/blog/post/15-years-of-dao
 ---

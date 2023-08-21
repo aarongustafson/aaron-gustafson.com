@@ -1,7 +1,7 @@
 ---
 title: "Content For All"
 date: 2016-12-26 00:00:00 +00:00
-tags: []
+tags: [accessibility, career, "user experience"]
 publisher: "User Defenders Podcast"
 url: "http://userdefenders.com/podcast/030-content-for-all-with-aaron-gustafson/"
 episode: 30

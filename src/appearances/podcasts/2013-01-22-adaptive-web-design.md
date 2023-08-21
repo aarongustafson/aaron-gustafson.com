@@ -1,7 +1,7 @@
 ---
 title: "Adaptive Web Design"
 date: 2013-01-22 00:00:00 +00:00
-tags: []
+tags: ["progressive enhancement", "web standards"]
 publisher: "Breaking Development Podcast"
 url: "https://web.archive.org/web/20160805173545/http://shoutengine.com/BeyondTheDesktop/adaptive-web-design-with-aaron-gustafson-1643"
 ---

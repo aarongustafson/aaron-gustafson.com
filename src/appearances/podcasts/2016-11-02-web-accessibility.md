@@ -1,7 +1,7 @@
 ---
 title: "Web Accessibility"
 date: 2016-11-02 00:00:00 +00:00
-tags: []
+tags: [accessibility]
 publisher: ".Net Rocks"
 url: "http://dotnetrocks.com/?show=1369"
 episode: 1369

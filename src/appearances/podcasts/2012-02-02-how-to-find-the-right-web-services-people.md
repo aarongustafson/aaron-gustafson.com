@@ -1,7 +1,7 @@
 ---
 title: "How to find the Right Web Services People"
 date: 2012-02-02 00:00:00 +00:00
-tags: []
+tags: ["web design", business, "web standards"]
 publisher: "Small Business Roundtable"
 url: "http://www.blogtalkradio.com/sbr/2012/02/02/how-to-find-the-right-web-services-people"
 ---

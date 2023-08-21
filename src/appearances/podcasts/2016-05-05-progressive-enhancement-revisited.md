@@ -1,7 +1,7 @@
 ---
 title: "Progressive Enhancement Revisited"
 date: 2016-05-05 00:00:00 +00:00
-tags: []
+tags: ["progressive enhancement", "web design"]
 publisher: "Ctrl+Click Cast"
 url: "http://ctrlclickcast.com/episodes/progressive-enhancement-revisited"
 episode: 67
