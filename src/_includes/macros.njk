@@ -384,3 +384,11 @@
 		</article>
 	</li>
 {% endmacro %}
+
+{% macro book_title( title, subtitle, edition ) %}
+	<cite class="book__title">
+		{{ title }}
+		{%- if subtitle -%}: <b class="book__subtitle">{{ subtitle }}</b>{%- endif -%}
+		{% if edition %} ({{ edition }} Edition){% endif %}
+	</cite>
+{% endmacro %}

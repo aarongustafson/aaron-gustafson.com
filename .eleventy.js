@@ -165,9 +165,41 @@ module.exports = config => {
 							return b.date - a.date;
 						 });
 	});
+	config.addCollection("articles", collectionApi => {
+		return collectionApi
+						 .getFilteredByGlob("**/articles/*.md")
+						 // sort by date - descending
+						 .sort(function(a, b) {
+							return b.date - a.date;
+						 });
+	});
+	config.addCollection("books", collectionApi => {
+		return collectionApi
+						 .getFilteredByGlob("**/books/*.md")
+						 // sort by date - descending
+						 .sort(function(a, b) {
+							return b.date - a.date;
+						 });
+	});
+	config.addCollection("press", collectionApi => {
+		return collectionApi
+						 .getFilteredByGlob("**/press/*.md")
+						 // sort by date - descending
+						 .sort(function(a, b) {
+							return b.date - a.date;
+						 });
+	});
+	config.addCollection("podcasts", collectionApi => {
+		return collectionApi
+						 .getFilteredByGlob("**/podcasts/*.md")
+						 // sort by date - descending
+						 .sort(function(a, b) {
+							return b.date - a.date;
+						 });
+	});
 	config.addCollection("feedAll", collectionApi => {
 		return collectionApi
-						 .getFilteredByGlob(["**/posts/*.md", "**/links/*.md", "**/talks/*.md"])
+						 .getFilteredByGlob(["**/posts/*.md", "**/links/*.md", "**/talks/*.md", "**/articles/*.md", "**/books/*.md", "**/podcasts/*.md", "**/press/*.md"])
 						 // sort by date - descending
 						 .sort(function(a, b) {
 							return b.date - a.date;

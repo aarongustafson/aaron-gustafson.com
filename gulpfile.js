@@ -15,12 +15,12 @@ const data = require(`${tasks_folder}/data.js`);
 // prevent the task being run when we run `gulp watch`, but it
 // will run when a file changes.
 const watcher = () => {
-  watch(`${config.source}/**/*.html`, {ignoreInitial: true}, html);
+  //watch(`${config.destination}/**/*.html`, {ignoreInitial: true}, html);
   watch(`${config.source}/_javascripts/**/*.js`, {ignoreInitial: true}, scripts);
-  watch(`${config.source}/_data/sw.json`, {ignoreInitial: true}, sw);
+  //watch(`${config.source}/_data/sw.json`, {ignoreInitial: true}, sw);
   watch(`${config.source}/_images/**/*`, {ignoreInitial: true}, images);
   watch(`${config.source}/_styles/**/*.scss`, {ignoreInitial: true}, styles);
-  watch(`${config.source}/**.{json,xml}`, {ignoreInitial: true}, data)
+  //watch(`${config.source}/**.{json,xml}`, {ignoreInitial: true}, data)
 };
 
 // The default (if someone just runs `gulp`) is to run each task in parallel

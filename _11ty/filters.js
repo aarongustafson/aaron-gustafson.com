@@ -31,6 +31,35 @@ function objectToString( obj ){
 	return str;
 }
 
+function getContentTypeByPath( path ) {
+	let type = "post";
+	if ( path && path.indexOf("/links/") > -1 )
+	{
+		type = "link";
+	}
+	if ( path && path.indexOf("/talks/") > -1 )
+	{
+		type = "talk";
+	}
+	if ( path && path.indexOf("/podcasts/") > -1 )
+	{
+		type = "podcast";
+	}
+	if ( path && path.indexOf("/press/") > -1 )
+	{
+		type = "press";
+	}
+	if ( path && path.indexOf("/articles/") > -1 )
+	{
+		type = "article";
+	}
+	if ( path && path.indexOf("/books/") > -1 )
+	{
+		type = "book";
+	}
+	return type;
+}
+
 module.exports = {
 	
 	readable_date: date => {
@@ -102,6 +131,9 @@ module.exports = {
 	pluck( obj, prop, value) {
 		return obj.find( el => el[prop] == value );
 	},
+	filterTo( obj, prop, value) {
+		return obj.filter( el => ( el[prop] == value || el.data[prop] == value ) );
+	},
 
 	bySeriesTag: ( array, tag ) => {
 		return array.filter( item => {
@@ -168,19 +200,25 @@ module.exports = {
 	},
 
 	content_type: path => {
-		let type = "post";
-		if ( path && path.indexOf("/links/") > -1 )
-		{
-			type = "link";
-		}
-		if ( path && path.indexOf("/talks/") > -1 )
-		{
-			type = "talk";
-		}
-		return type;
+		return getContentTypeByPath( path );
 	},
 	path_in_scope: ( path, scope ) => {
 		return path.indexOf( scope ) > -1;
+	},
+
+	getCountsByType: posts => {
+		let results = {};
+		posts.forEach( post => {
+			let type = getContentTypeByPath( post.inputPath );
+			if ( results[type] == undefined ) {
+				results[type] = 1;
+			}
+			else
+			{
+				results[type]++;
+			}
+		});
+		return results;
 	},
 
 	getWebmentionsForUrl: (webmentions, url, old_url) => {

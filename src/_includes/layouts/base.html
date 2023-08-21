@@ -53,9 +53,11 @@
 
 	{% set svg_essay %}{{ "/src/static/i/icons/essay.svg" | svgContents | safe }}{% endset %}
 	{% set svg_link %}{{ "/src/static/i/icons/pin.svg" | svgContents | safe }}{% endset %}
-	{% set svg_book %}{{ "/src/static/i/icons/book.svg" | svgContents | replace("82px","24px") | replace("65px","19px") | safe }}{% endset %}
-	{% set svg_talk %}{{ "/src/static/i/icons/keynote.svg" | svgContents | replace("82px","24px") | replace("65px","19px") | safe }}{% endset %}
-	{% set svg_article %}{{ "/src/static/i/icons/article.svg" | svgContents  | replace("38px","24px") | replace("48px","30px") | safe }}{% endset %}
+	{% set svg_book %}{{ "/src/static/i/icons/book.svg" | svgContents | replace('"82"','"24"') | replace('"65"','"19"') | safe }}{% endset %}
+	{% set svg_talk %}{{ "/src/static/i/icons/keynote.svg" | svgContents | safe }}{% endset %}
+	{% set svg_article %}{{ "/src/static/i/icons/article.svg" | svgContents | replace('"38"','"24"') | replace('"48"','"30"') | safe }}{% endset %}
+	{% set svg_podcast %}{{ "/src/static/i/icons/mic.svg" | svgContents | safe }}{% endset %}
+	{% set svg_press %}{{ "/src/static/i/icons/chat.svg" | svgContents | safe }}{% endset %}
 	
 	<body {% if body_class %} class="{{ body_class }}" {% endif %} >
 

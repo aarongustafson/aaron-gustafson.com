@@ -1,0 +1,150 @@
+---
+layout: "page"
+title: "Stuff I’ve Written"
+description: "I love to write and over the years I’ve contributed to a shelf-worth of books and dozens of articles."
+show_title: false
+show_footer: true
+show_sidebar: false
+sharing: false
+body_class: "publications"
+sitemap: true
+permalink: /publications/
+---
+{% from "macros.njk" import book_title %}
+{% set svg_book %}{{ "/src/static/i/icons/book.svg" | svgContents | replace("82px","24px") | replace("65px","19px") | safe }}{% endset %}
+{% set svg_article %}{{ "/src/static/i/icons/article.svg" | svgContents  | replace("38px","24px") | replace("48px","30px") | safe }}{% endset %}
+
+<h1 class="page__title">Everything I’ve Written</h1>
+
+<p>I love to write and have contributed to <a href="#books">a shelf’s-worth of books</a>.
+I’ve also written <a href="#articles">dozens of articles</a> and helped shape dozens more as an
+editor for <a href="https://alistapart.com"><cite>A List Apart</cite></a>. My work has also
+been <a href="/appearances/#citations">cited in {{ citations.books | length }} books,
+{{ citations.articles | length }} articles, and more</a>. My published works have also influenced
+at least {{ citations.code | length }} coding projects I’m aware of, including
+<a href="http://blog.apps.npr.org/2014/05/09/responsive-data-tables.html">the work of NPR</a>.</p>
+
+<section id="books" class="section">
+	<h2 class="section__title">Books</h2>
+
+	<ul class="listing listing--books listing--grid">
+		{% set authored = collections.books | filterTo("type", "authored") %}
+		{% for book in authored %}
+			<li class="listing__item listing__item--{{ loop.index }} book">
+				{%- set book_details -%}
+					{% if book.data.cover %}
+						<figure class="book__cover">
+							<img alt="{{ book.data.title}} front cover"
+									 class="book__cover__image"
+									 height="200" width="{{ book.data.width }}"
+									 src="/i/books/{{ book.data.cover }}">
+						</figure>
+					{% endif %}
+					{{ book_title( book.data.title, book.data.subtitle, book.data.edition ) }}
+				{%- endset -%}
+				<h3 class="listing__item__title">
+					{% if book.data.url %}
+						<a href="{{ book.data.url }}">
+							{{ book_details | safe }}
+						</a>
+					{% else %}
+						{{ book_details | safe }}
+					{% endif %}
+				</h3>
+
+				{#
+				{% if book.author != "Aaron Gustafson" %}
+					<p class="listing__item__meta">
+						<b class="book__author">{{ book.author }}</b>
+						{% if book.meta %}
+							<br>
+							<b class="book__meta">{{ book.meta }}</b>
+						{% endif %}
+					</p>
+				{% endif %}
+
+				<div class="listing__item__content book__notes">
+					{{ book.notes | markdownify }}
+				</div>
+				#}
+			</li>
+		{% endfor %}
+	</ul>
+		
+	<h3 class="section__title" id="contributions">Contributions</h3>
+	
+	<ul class="listing listing--books listing--icons">
+		{% set contributed = collections.books | filterTo('type','contributed') %}
+		{% for book in contributed %}
+			<li class="listing__item listing__item--{{ loop.index }} book book--contributed entry--teaser">
+				<p class="entry__type listing__item__type" title="Book" role="img" aria-label="Book">{{ svg_book | safe }}</p>
+				
+				<h3 class="listing__item__title book__title">
+					{% if book.data.url %}
+						<a href="{{ book.data.url }}">{{ book_title( book.data.title, book.data.subtitle, book.data.edition ) }}</a>
+					{% else %}
+						{{ book_title( book.data.title, book.data.subtitle, book.data.edition ) }}
+					{% endif %}
+				</h3>
+
+				<p class="listing__item__meta">by <b class="book__author">{{ book.data.author }}</b></p>
+			</li>
+		{% endfor %}
+	</ul>
+
+	<h3 class="section__title" id="forewords">Forewords</h3>
+
+	<ul class="listing listing--books listing--icons">
+		{% set forewords = collections.books | filterTo('type','foreword') %}
+		{% for book in forewords %}
+			<li class="listing__item listing__item--{{ loop.index }} book book--contributed entry--teaser">
+				<p class="entry__type listing__item__type" title="Book" role="img" aria-label="Book">{{ svg_book | safe }}</p>
+				
+				<h3 class="listing__item__title book__title">
+					{% if book.data.url %}
+						<a href="{{ book.data.url }}">{{ book_title( book.data.title, book.data.subtitle, book.data.edition ) }}</a>
+					{% else %}
+						{{ book_title( book.data.title, book.data.subtitle, book.data.edition ) }}
+					{% endif %}
+				</h3>
+
+				<p class="listing__item__meta">by <b class="book__author">{{ book.data.author }}</b></p>
+			</li>
+		{% endfor %}
+	</ul>
+
+	<h3 class="section__title" id="editing">Editing</h3>
+	
+	<p>Over the years, I’ve tech edited and contributed in various other ways to
+		{% for book in books_edited %}
+			{% if loop.index == loop.length %}
+				and
+			{% endif %}
+			<a href="{{ book.url }}"><cite>{{ book.title }}</cite></a> by
+			{{ book.author }}{% if loop.index == loop.length %}.{% else %},{% endif %}
+		{% endfor %}
+	</p>
+</section>
+
+<section id="articles" class="section">
+	<h2 class="section__title">Articles</h2>
+	
+	<ul class="listing listing--articles listing--icons">
+		{% for article in collections.articles %}
+			<li class="listing__item listing__item--{{ loop.index }} listing__item--icon article entry--teaser">
+				<p class="entry__type listing__item__type" title="Article" role="img" aria-label="Article">{{ svg_article | safe }}</p>
+				<h3 class="listing__item__title article__title">
+					{% if article.data.url %}
+						<a href="{{ article.data.url }}">{{ article.data.title }}</a>
+					{% else %}
+						{{ article.data.title }}
+					{% endif %}
+				</h3>
+				<p class="listing__item__meta article__publisher">
+					<cite>{{ article.data.publisher }}</cite>,
+					<time datetime="{{ article.data.published | machine_date }}">{{ article.data.published | readable_date }}</time>
+				</p>
+			</li>
+		{% endfor %}
+	</ul>
+</section>

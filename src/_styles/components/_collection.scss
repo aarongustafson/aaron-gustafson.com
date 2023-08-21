@@ -1,0 +1,21 @@
+.collection__summary {
+	@include rem( margin-bottom, $default-spacing );
+
+	p, ul, li {
+		display: inline;
+		margin: 0;
+		padding: 0;
+	}
+	li:first-child::before {
+		content: ' ';
+	}
+	li::after {
+		content: ', ';
+	}
+	li:last-child::after {
+		content: '';
+	}
+	li:last-child::before {
+		content: 'and ';
+	}
+}

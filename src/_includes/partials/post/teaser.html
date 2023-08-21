@@ -9,10 +9,21 @@
 		<p class="entry__type" title="Link" role="img" aria-label="Link">{{ svg_link | safe }}</p>
 	{% elif type=="talk" %}
 		<p class="entry__type" title="Talk" role="img" aria-label="Talk">{{ svg_talk | safe }}</p>
+	{% elif type=="podcast" %}
+		<p class="entry__type" title="Podcast" role="img" aria-label="Podcast">{{ svg_podcast | safe }}</p>
+	{% elif type=="press" %}
+		<p class="entry__type" title="Press" role="img" aria-label="Press">{{ svg_press | safe }}</p>
+	{% elif type=="article" %}
+		<p class="entry__type" title="Article" role="img" aria-label="Article">{{ svg_article | safe }}</p>
+	{% elif type=="book" %}
+		<p class="entry__type" title="Book" role="img" aria-label="Book">{{ svg_book | safe }}</p>
 	{% endif %}
 	<div class="entry__details">
 		<{{ teaser_heading_level }} class="entry__title entry-title" style="view-transition-name: {{ transition_root }}-title">
-			<a rel="bookmark" href="{{ post.url }}">{{ post.data.title  | markdownify | strip_links | safe }}</a>
+			<a rel="bookmark" href="{{ post.url }}">{{ post.data.title  | markdownify | strip_links | safe }}
+				{%- if post.data.subtitle -%}: {{ post.data.subtitle | markdownify | safe }}{%- endif -%}
+				{% if post.data.edition %} ({{ post.data.edition | markdownify | safe }} Edition){% endif %}
+			</a>
 		</{{ teaser_heading_level }}>
 		{% if show_summary and summary %}
 			<div class="entry__summary">
@@ -21,8 +32,18 @@
 		{% endif %}
 		<p class="entry__meta">
 			{% set teaser_date = post.data.date %}
-			{% if type=="post" %}Posted
-			{% elif type=="link" %}Saved
+			{% if type=="post" %}Notebook entry posted
+			{% elif type=="link" %}Link saved
+			{% elif type=="artice" %}Article published by <cite>{{ post.data.publisher }}</cite>
+			{% elif type=="book" %}Book 
+				{% if post.data.type != 'foreword' %}
+					foreword
+				{% elif post.data.type != 'authored' %}
+					contribution
+				{% endif %}
+				published
+			{% elif type=="press" %}Appeared in <cite>{{ post.data.publisher }}</cite>
+			{% elif type=="podcast" %}Joined {{ post.data.publisher }} podcast
 			{% elif type=="talk" %}
 				{%- set evt = speaking_engagements | pluck("id", post.data.events[0]) -%}
 				{% set teaser_date = evt.date %}

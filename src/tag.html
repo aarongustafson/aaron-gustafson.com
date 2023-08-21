@@ -12,14 +12,38 @@ body_class: "tag-page"
 {% extends "layouts/base.html" %}
 
 {% block content %}
-	{% set the_title %}<b>Browse by Tag:</b> <b>{{ tag }}</b>{% endset %}
+	{% set the_title %}<b>Browse by Tag:</b> <b>{{ tag | title }}</b>{% endset %}
 	{% set tag_slug %}{{ tag | lower | slugify }}{% endset %}
 	{% set posts = collections[ tag ] %}
 	
 	<article role="article" class="page layout-container layout-container--blog">
-		<h1 class="page__title subsection__header">{{ the_title | title | safe }}</h1>
+		
+		<h1 class="page__title subsection__header">{{ the_title | safe }}</h1>
+		
 		<div class="layout-container__primary">
-			<p class="promo">You can subscribe to a feed of all content filed under “{{ tag }}” as <a type="text/xml" href="/feeds/{{ tag_slug }}.xml">XML (RSS)</a> or <a type="application/json" href="/feeds/{{ tag_slug }}.json">JSON</a>.</p>
+
+			<div class="promo">
+
+				{% set item_counts = posts | getCountsByType %}
+				<div class="collection__summary" data-filters="blog-archives">
+					<p>This collection includes </p>
+					<ul>
+						{% for item_type, item_count in item_counts %}
+							<li><b>{{ item_count }}</b> 
+								{% if item_type != "press" %}
+									{{ item_type }}{% if item_count > 1 %}s{% endif %}
+								{% else %}
+									press appearance{% if item_count > 1 %}s{% endif %}
+								{% endif %}
+								{%- if loop.last %}.{% endif -%}
+							</li>
+						{% endfor %}
+					</ul>
+				</div>
+
+				<p>You can subscribe to a feed of all content filed under “{{ tag }}” as <a type="text/xml" href="/feeds/{{ tag_slug }}.xml">XML (RSS)</a> or <a type="application/json" href="/feeds/{{ tag_slug }}.json">JSON</a>.</p>
+			</div>
+
 
 			<div id="blog-archives">
 				{% set teaser_heading_level = "h2" %}
@@ -27,6 +51,7 @@ body_class: "tag-page"
 					{% include "partials/post/teaser.html" %}
 				{% endfor %}
 			</div>
+
 		</div>
 	</article>
 {% endblock %}

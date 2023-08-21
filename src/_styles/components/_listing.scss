@@ -76,7 +76,7 @@
     &--icons &__item {
       display: grid;
       grid-template-areas: "icon title" "icon meta";
-      grid-template-columns: #{24 + math.div( $default-spacing, 2) }px 1fr;
+      grid-template-columns: 3.5rem 1fr;
 
       & + .listing__item {
         @include rem( margin-top, $default-spacing );
@@ -91,11 +91,13 @@
         svg { 
           width: 24px;
           height: auto;
+					max-height: 24px;
 
 					@supports (margin-block: 1em) {
-						@include unset( width height );
+						@include unset( width height max-height );
 						inline-size: 24px;
 						block-size: auto;
+						max-block-size: 24px;
 					}
         }
       }
@@ -171,12 +173,12 @@
   .listing--grid,
   .listing--minigrid,
   .listing--icons {
-    @include rem( margin, 20 -80 0 );
+    @include rem( margin, 20 -56 0 );
 
 		@supports (margin-block: 1em) {
 			@include unset( margin );
 			@include rem( margin-block, 20 0, false );
-			@include rem( margin-inline, -80, false );
+			@include rem( margin-inline, -56, false );
 		}
   }
 
