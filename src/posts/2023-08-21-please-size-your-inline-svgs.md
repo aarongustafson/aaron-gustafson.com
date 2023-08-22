@@ -76,3 +76,7 @@ I’ve thrown together a quick comparison over on CodePen so you can see the thr
 </figure>
 
 And now that you know, please, please, _please_ take a few minutes to make this small, simple change to your websites. While not a catastrophic issue, taking care to control how your sites render in the worst of circumstances goes a long way to demonstrating thoughtful consideration of your users.
+
+<hr>
+
+**Update:** For more in-depth info on this topic (and scenarios where CSS isn’t applied to your SVGs), be sure to check out [this piece from Sara Souiedan](https://www.sarasoueidan.com/blog/svg-style-inheritance-and-fousvg/).
