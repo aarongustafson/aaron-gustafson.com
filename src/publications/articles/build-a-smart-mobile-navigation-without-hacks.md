@@ -1,7 +1,7 @@
 ---
 title: "Build a Smart Mobile Navigation Without Hacks"
 date: 2012-06-07 00:00:00 +00:00
-tags: []
+tags: [mobile, "progressive enhancement", "responsive web design"]
 publisher: "Net Magazine"
 url: http://www.creativebloq.com/netmag/build-smart-mobile-navigation-without-hacks-6126265
 ---

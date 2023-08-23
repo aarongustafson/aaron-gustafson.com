@@ -1,7 +1,7 @@
 ---
 title: "Getting Started with Ajax"
 date: 2006-03-07 12:00:00 -05:00
-tags: []
+tags: [JavaScript, writing]
 publisher: "A List Apart"
 url: http://www.alistapart.com/articles/gettingstartedwithajax
 ---

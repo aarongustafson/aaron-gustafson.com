@@ -1,7 +1,7 @@
 ---
 title: "Getting up to Speed with Lighthouses"
 date: 2011-06-28 00:00:00 +00:00
-tags: []
+tags: [performance]
 publisher: "Web Standards Sherpa"
 url: http://webstandardssherpa.com/reviews/getting-up-to-speed-with-lighthouses
 ---

@@ -1,7 +1,7 @@
 ---
 title: "The Story of CSS Grid, from Its Creators"
 date: 2017-10-19 00:00:00 +00:00
-tags: []
+tags: [CSS, "web standards"]
 publisher: "A List Apart"
 url: https://alistapart.com/article/the-story-of-css-grid-from-its-creators
 ---

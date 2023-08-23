@@ -1,7 +1,7 @@
 ---
 title: "From URL to Interactive"
 date: 2018-10-25 00:00:00 +00:00
-tags: []
+tags: [browsers]
 publisher: "A List Apart"
 url: https://alistapart.com/article/from-url-to-interactive/
 ---

@@ -1,7 +1,7 @@
 ---
 title: "A Legendary Misunderstanding"
 date: 2011-03-31 00:00:00 +00:00
-tags: []
+tags: ["web forms", HTML, accessibility]
 publisher: "Web Standards Sherpa"
 url: http://webstandardssherpa.com/reviews/a-legendary-misunderstanding
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Conversational Semantics"
 date: 2018-08-30 00:00:00 +00:00
-tags: []
+tags: [HTML, accessibility, "voice UX"]
 publisher: "A List Apart"
 url: https://alistapart.com/article/conversational-semantics
 ---

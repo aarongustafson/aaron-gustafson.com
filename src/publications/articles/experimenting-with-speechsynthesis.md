@@ -1,7 +1,7 @@
 ---
 title: "Experimenting With speechSynthesis"
 date: 2017-02-14 00:00:00 +00:00
-tags: []
+tags: ["voice UX", "progressive enhancement", HTML, JavaScript]
 publisher: "Smashing Magazine"
 url: https://www.smashingmagazine.com/2017/02/experimenting-with-speechsynthesis/
 ---

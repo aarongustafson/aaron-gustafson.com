@@ -1,7 +1,7 @@
 ---
 title: "Q&A: Finding a Web Designer"
 date: 2012-11-27 00:00:00 +00:00
-tags: []
+tags: [industry, career]
 publisher: "Web Standards Sherpa"
 url: http://webstandardssherpa.com/ask-the-sherpas/finding-a-web-designer
 ---

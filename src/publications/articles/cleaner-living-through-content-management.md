@@ -1,7 +1,7 @@
 ---
 title: "Cleaner Living Through Content Management"
 date: 2011-09-01 00:00:00 +00:00
-tags: []
+tags: ["web development"]
 publisher: "Web Standards Sherpa"
 url: http://webstandardssherpa.com/reviews/cleaner-living-through-content-management
 ---

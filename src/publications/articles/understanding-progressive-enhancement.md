@@ -1,7 +1,7 @@
 ---
 title: "Understanding Progressive Enhancement"
 date: 2008-10-07 00:00:00 +00:00
-tags: []
+tags: ["progressive enhancement", "web design", "web development"]
 publisher: "A List Apart"
 url: http://www.alistapart.com/articles/understandingprogressiveenhancement
 ---

@@ -1,7 +1,7 @@
 ---
-title: "Push my <code>button</code>"
+title: "Push my `button`"
 date: 2006-09-26 00:00:00 +00:00
-tags: []
+tags: ["web forms", CSS, HTML]
 publisher: "Digital Web Magazine"
 url: http://www.digital-web.com/articles/push_my_button
 ---

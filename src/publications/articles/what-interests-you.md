@@ -1,7 +1,7 @@
 ---
 title: "What interests you?"
 date: 2017-04-15 00:00:00 +00:00
-tags: []
+tags: [empathy, inclusion]
 publisher: "Human in the Machine"
 url: https://superyesmore.com/what-interests-you-eb06c12d5ecd6475e6db7ebbeda0ce12
 ---

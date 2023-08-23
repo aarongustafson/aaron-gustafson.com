@@ -1,7 +1,7 @@
 ---
 title: "Now You See Me"
 date: 2011-06-28 00:00:00 +00:00
-tags: []
+tags: ["progressive enhancement", "JavaScript"]
 publisher: "A List Apart"
 url: http://www.alistapart.com/articles/now-you-see-me/
 ---

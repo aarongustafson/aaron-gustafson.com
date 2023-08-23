@@ -1,7 +1,7 @@
 ---
 title: "Keeping the Hot Side Hot and the Cold Side Cold"
 date: 2008-09-01 00:00:00 +00:00
-tags: []
+tags: [JavaScript, CSS]
 publisher: "Scroll Magazine"
 url: https://web.archive.org/web/20150910061902/http://scrollmagazine.com/number-1/keeping-the-hot-side-hot
 ---

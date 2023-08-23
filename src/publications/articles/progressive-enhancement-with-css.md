@@ -1,7 +1,7 @@
 ---
 title: "Progressive Enhancement with CSS"
 date: 2008-10-21 00:00:00 +00:00
-tags: []
+tags: ["progressive enhancement", CSS]
 publisher: "A List Apart"
 url: http://www.alistapart.com/articles/progressiveenhancementwithcss
 ---

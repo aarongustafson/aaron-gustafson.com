@@ -1,7 +1,7 @@
 ---
 title: "Native And PWA: Choices, Not Challengers!"
 date: 2018-02-09 00:00:00 +00:00
-tags: []
+tags: ["progressive web apps", "web development"]
 publisher: "Smashing Magazine"
 url: https://www.smashingmagazine.com/2018/02/native-and-pwa-choices-not-challengers/
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Improving Link Display for Print"
 date: 2005-09-20 00:00:00 +00:00
-tags: []
+tags: [CSS, JavaScript, "progressive enhancement"]
 publisher: "A List Apart"
 url: http://www.alistapart.com/articles/improvingprint
 ---

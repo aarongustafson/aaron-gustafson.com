@@ -1,7 +1,7 @@
 ---
 title: "#30DaysOfPWA: Creating Application Shortcuts"
 date: 2022-02-22 00:00:00 +00:00
-tags: []
+tags: ["progressive web apps"]
 publisher: "#30DaysOfPWA"
 url: https://dev.to/azure/09-creating-application-shortcuts-m0i
 ---

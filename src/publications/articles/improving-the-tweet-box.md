@@ -1,7 +1,7 @@
 ---
 title: "Improving the Tweet Box"
 date: 2011-03-03 00:00:00 +00:00
-tags: []
+tags: ["web development", JavaScript, "WAI-ARIA", HTML]
 publisher: "Web Standards Sherpa"
 url: http://webstandardssherpa.com/reviews/improving-the-tweet-box
 ---

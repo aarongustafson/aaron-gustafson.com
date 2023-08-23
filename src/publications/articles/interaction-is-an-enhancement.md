@@ -1,7 +1,7 @@
 ---
 title: "Interaction is an Enhancement"
 date: 2015-12-15 00:00:00 +00:00
-tags: []
+tags: ["progressive enhancement", JavaScript]
 publisher: "A List Apart"
 url: http://alistapart.com/article/interaction-is-an-enhancement
 ---

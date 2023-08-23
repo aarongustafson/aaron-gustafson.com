@@ -1,7 +1,7 @@
 ---
 title: "Ruining the User Experience"
 date: 2007-03-27 00:00:00 +00:00
-tags: []
+tags: [JavaScript, "progressive enhancement", "user experience"]
 publisher: "A List Apart"
 url: http://www.alistapart.com/articles/ruininguserexperience
 ---

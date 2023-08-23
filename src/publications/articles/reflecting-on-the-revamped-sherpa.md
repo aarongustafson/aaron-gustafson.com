@@ -1,7 +1,7 @@
 ---
 title: "Reflecting on the Revamped Sherpa"
 date: 2014-10-28 00:00:00 +00:00
-tags: []
+tags: [mobile, "web design"]
 publisher: "Web Standards Sherpa"
 url: http://webstandardssherpa.com/reviews/reflecting-on-the-revamped-sherpa/
 ---

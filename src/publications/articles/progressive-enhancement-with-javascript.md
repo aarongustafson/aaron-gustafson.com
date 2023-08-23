@@ -1,7 +1,7 @@
 ---
 title: "Progressive Enhancement with JavaScript"
 date: 2008-11-04 12:00:00 -05:00
-tags: []
+tags: ["progressive enhancement", JavaScript]
 publisher: "A List Apart"
 url: http://www.alistapart.com/articles/progressiveenhancementwithjavascript
 ---

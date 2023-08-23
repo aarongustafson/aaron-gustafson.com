@@ -1,7 +1,7 @@
 ---
 title: "Request with Intent: Caching Strategies in the Age of PWAs"
 date: 2019-11-21 00:00:00 +00:00
-tags: []
+tags: ["progressive web apps", "responsive web design", performance]
 publisher: "A List Apart"
 url: https://alistapart.com/article/request-with-intent-caching-strategies-in-the-age-of-pwas/
 ---

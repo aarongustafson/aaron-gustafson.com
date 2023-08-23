@@ -1,7 +1,7 @@
 ---
 title: "Building in 10k: Content and Strategy"
 date: 2016-08-30 00:00:00 +00:00
-tags: []
+tags: [performance, accessibility]
 publisher: "Microsoft Edge Dev Blog"
 url: https://blogs.windows.com/msedgedev/2016/08/30/building-in-10k-content-and-strategy/
 ---

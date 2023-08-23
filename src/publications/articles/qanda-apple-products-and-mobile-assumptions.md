@@ -1,7 +1,7 @@
 ---
 title: "Q&A: Apple Products and Mobile Assumptions"
 date: 2013-01-10 00:00:00 +00:00
-tags: []
+tags: [mobile, industry, "web design", "web development"]
 publisher: "Web Standards Sherpa"
 url: http://webstandardssherpa.com/ask-the-sherpas/apple-products-and-mobile-assumptions
 ---

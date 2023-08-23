@@ -1,7 +1,7 @@
 ---
 title: "Adaptive Layouts with Media Queries"
 date: 2010-04-01 00:00:00 +00:00
-tags: []
+tags: ["responsive web design", HTML, CSS]
 publisher: "Net Magazine"
 url: http://www.creativebloq.com/design/adaptive-layouts-media-queries-3112920
 ---

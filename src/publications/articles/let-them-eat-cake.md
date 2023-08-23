@@ -1,7 +1,7 @@
 ---
 title: "Let Them Eat Cake"
 date: 2004-04-16 00:00:00 +00:00
-tags: []
+tags: [JavaScript, "progressive enhancement", accessibility]
 publisher: "A List Apart"
 url: http://www.alistapart.com/articles/eatcake/
 ---

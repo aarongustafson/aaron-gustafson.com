@@ -1,7 +1,7 @@
 ---
 title: "Building in 10k: Designing for Optimization and Performance"
 date: 2016-09-06 00:00:00 +00:00
-tags: []
+tags: [performance, "web design", "web development"]
 publisher: "Microsoft Edge Dev Blog"
 url: https://blogs.windows.com/msedgedev/2016/09/06/10k-for-optimization-performance/
 ---

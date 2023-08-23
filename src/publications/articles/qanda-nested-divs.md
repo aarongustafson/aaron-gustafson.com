@@ -1,7 +1,7 @@
 ---
-title: "Q&A: Nested <code>div</code>s"
+title: "Q&A: Nested `div`s"
 date: 2012-10-16 00:00:00 +00:00
-tags: []
+tags: [HTML]
 publisher: "Web Standards Sherpa"
 url: http://webstandardssherpa.com/ask-the-sherpas/nested-divs
 ---

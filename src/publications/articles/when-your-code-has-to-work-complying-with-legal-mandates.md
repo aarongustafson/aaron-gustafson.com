@@ -1,7 +1,7 @@
 ---
 title: "When Your Code Has To Work: Complying With Legal Mandates"
 date: 2017-03-02 00:00:00 +00:00
-tags: []
+tags: [JavaScript, "progressive enhancement"]
 publisher: "Smashing Magazine"
 url: https://www.smashingmagazine.com/2017/03/code-complying-with-legal-mandates/
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Beyond DOCTYPE: Web Standards, Forward Compatibility, and IE8"
 date: 2008-01-21 12:00:00 -05:00
-tags: []
+tags: ["web standards", browsers, HTML]
 publisher: "A List Apart"
 url: http://www.alistapart.com/articles/beyonddoctype
 ---

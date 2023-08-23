@@ -1,7 +1,7 @@
 ---
 title: "A Funny Thing Happened To Me On The Way To 2016…"
 date: 2016-06-07 00:00:00 +00:00
-tags: []
+tags: [career, industry]
 publisher: "An Event Apart"
 url: http://aneventapart.com/news/post/a-funny-thing-happened-to-me-on-the-way-to-20:16
 ---

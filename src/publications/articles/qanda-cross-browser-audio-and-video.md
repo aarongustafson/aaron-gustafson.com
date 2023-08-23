@@ -1,7 +1,7 @@
 ---
 title: "Q&A: Cross-Browser Audio and Video"
 date: 2013-07-09 00:00:00 +00:00
-tags: []
+tags: [multimedia, "web design", "web development"]
 publisher: "Web Standards Sherpa"
 url: http://webstandardssherpa.com/ask-the-sherpas/cross-browser-audio-and-video
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Progressive Enhancement Demystified"
 date: 2011-06-28 00:00:00 +00:00
-tags: []
+tags: ["progressive enhancement"]
 publisher: "Net Magazine"
 url: http://www.creativebloq.com/design/progressive-enhancement-demystified-6116940
 ---

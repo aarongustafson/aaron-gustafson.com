@@ -1,7 +1,7 @@
 ---
 title: "Create Simple, Accessible Forms"
 date: 2015-03-15 00:00:00 +00:00
-tags: []
+tags: ["web forms", HTML, accessibility]
 publisher: "Net Magazine"
 url: https://medium.com/net-magazine/create-simple-accessible-web-forms-535cd253dee2#.m8qis9nee
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Create a Tabbed Interface, Part 1"
 date: 2009-10-01 00:00:00 +00:00
-tags: []
+tags: ["progressive enhancement", JavaScript, HTML, "WAI-ARIA"]
 publisher: ".net Magazine"
 url: https://www.slideshare.net/AaronGustafson/create-a-tabbed-interface-part-1
 ---

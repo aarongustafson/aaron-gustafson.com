@@ -1,7 +1,7 @@
 ---
 title: "Jeremy Keith Interview"
 date: 2005-10-10 00:00:00 +00:00
-tags: []
+tags: [industry, JavaScript, "web standards"]
 publisher: "Digital Web Magazine"
 url: http://www.digital-web.com/articles/jeremy_keith
 ---
