@@ -15,6 +15,11 @@
 		"link": "hygen link with-prompt",
 		"event": "hygen event with-prompt",
 		"talk": "hygen talk with-prompt",
+		"article": "hygen article with-prompt",
+		"book": "hygen book with-prompt",
+		"podcast": "hygen podcast with-prompt",
+		"press": "hygen press with-prompt",
+		"citation": "hygen citation with-prompt",
 		"404s": "node ./_tasks/scanner.js"
 	},
 	"repository": {

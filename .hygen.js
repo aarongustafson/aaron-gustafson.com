@@ -7,6 +7,7 @@ const iso				= dateLocal.toISOString().slice(0, 19);
 const events		= require('./src/_data/speaking_engagements.json');
 const series    = require('./_cache/series.json');
 const tags      = require('./_cache/tags.json');
+const citations	= require('./src/_data/citations.json');
 
 module.exports = {
 	helpers: {
@@ -71,6 +72,23 @@ module.exports = {
 			
 			new_events.unshift(event)
 			return JSON.stringify(new_events, null, 2);
+		},
+		addCitation: (locals) => {
+			var citation = {
+				title: locals.title,
+				author: locals.author,
+				url: locals.url
+			};
+			if (locals.lang) {
+				citation.lang = locals.lang;
+				citation.dir = locals.dir;
+			}
+			if (locals.dir) {
+				citation.dir = locals.dir;
+			}
+			
+			citations[locals.type].push(citation);
+			return JSON.stringify(citations, null, 2);
 		}
 	}
 };
