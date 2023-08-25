@@ -55,7 +55,7 @@ module.exports = {
 				type: "multiselect",
 				name: "category",
 				message: "What kind of talk was this?",
-				choices: ['talk', 'keynote', 'workshop', 'guest lecture', 'panel', 'lightning-talk']
+				choices: ['talk', 'keynote', 'workshop', 'guest lecture', 'panel', 'lightning-talk', 'webinar']
 			},
 			{
 				type: 'multiselect',
