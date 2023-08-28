@@ -35,21 +35,26 @@ is_post: true
 						
 						<dt>Presented At</dt>
 						{% for num in events | sort %}
-							{%- set evt = speaking_engagements | pluck( 'id', num )  -%}
-							<dd class="talk__event">
-								{% if evt.url %}
-									<a class="talk__event__title" href="{{ evt.url }}">{{ evt.title }}</a>
-								{% else %}
-									<b class="talk__event__title">{{ evt.title }}</b>
-								{% endif %}
-								on {{ datetime( evt.date, "talk__event__date" ) }}
-								{% if with %}
-									{%- set w = with | pluck( 'event', num )  -%}
-									{% if w %}
-										<span class="talk__event__with">with {{ w | toSentenceList | safe }}</span>
+							{%- set evt = speaking_engagements | pluck( 'id', num ) -%}
+							{%- if evt -%}
+								<dd class="talk__event">
+									{% if evt.url %}
+										<a class="talk__event__title" href="{{ evt.url }}">{{ evt.title | safe }}</a>
+									{% else %}
+										<b class="talk__event__title">{{ evt.title | safe }}</b>
 									{% endif %}
-								{% endif %}
-							</dd>
+									on {{ datetime( evt.date, "talk__event__date" ) }}
+									{% if with %}
+										{%- set w = with | gather( 'event', num ) -%}
+										{%- set w_count = w | length -%}
+										{% if w_count %}
+											<span class="talk__event__with">with {{ w | toSentenceList | safe }}</span>
+										{% endif %}
+									{% endif %}
+								</dd>
+							{% else %}
+								<dd>{{ evt | dump }}</dd>
+							{%- endif -%}
 						{%- endfor -%}
 						
 						<dt class="dont-read">Filed Under</dt>
@@ -83,7 +88,7 @@ is_post: true
 					{% if slides.embed %}
 						{%- set evt = speaking_engagements | pluck( 'id', slides.event ) -%}
 						<figure class="talk__slides" style="view-transition-name: {{ transition_root }}-hero">
-							<div class="video-embed video-embed--16x9">
+							<div class="video-embed video-embed--{% if ratio %}{{ ratio }}{% else %}16x9{% endif %}">
 								<iframe class="talk__slides__embed video-embed__video" src="{{ slides.embed }}" frameborder="0" allowfullscreen></iframe>
 							</div> 
 							<figcaption>This deck was delivered at <a href="{{ slides.link }}">{{ evt.title }} on {{ datetime( evt.date, "talk__event__date" ) }}</a></figcaption>

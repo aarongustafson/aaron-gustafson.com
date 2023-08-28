@@ -129,7 +129,26 @@ module.exports = {
 						 });
 	},
 	pluck( obj, prop, value) {
-		return obj.find( el => el[prop] == value );
+		let found = obj.find( el => el[prop] == value );
+		// if ( prop == "id" ){
+		// 	console.log( "searching", obj, `for ${prop} = ${value}` );
+		// 	console.log( "found", found );
+		// }
+		return found;
+	},
+	gather( obj, prop, value) {
+		let found = obj.filter( el => { 
+			if ( el[prop] instanceof Array ) {
+				return el[prop].indexOf( value ) > -1;
+			} else {
+				return el[prop] == value;
+			}
+		});
+		// if ( prop == "id" ){
+		// 	console.log( "searching", obj, `for ${prop} = ${value}` );
+		// 	console.log( "found", found );
+		// }
+		return found;
 	},
 	filterTo( obj, prop, value) {
 		return obj.filter( el => ( el[prop] == value || el.data[prop] == value ) );

@@ -2,11 +2,11 @@
 title: "There Are No Buts in Progressive Enhancement"
 description: "Progressive enhancement sounds practical, but not for your current project, right? Good news: you’re wrong!"
 category: talk
-tags: ["progressive enhancement"]
+tags: ["progressive enhancement", HTML, CSS, JavaScript]
 date: 2015-11-03T09:00:00-0400
-events: [92,102]
+events: [ 92, 102 ]
 with:
-  - name: Jenn Lukas
+  - name: "Jenn Lukas"
     event: 92
     url: https://www.linkedin.com/in/jennlukas/
 hero: there-are-no-buts-in-progressive-enhancement.png
@@ -14,7 +14,7 @@ slides:
   event: 92
   link: https://presentations.aaron-gustafson.com/4KgOOP/there-are-no-buts-in-progressive-enhancement
   embed: https://www.slideshare.net/slideshow/embed_code/key/fdZJ5PouQGbspD
-  download: 2015/uxim/there-are-no-buts-in-progressive-enhancement.pdf
+  download: "2015/uxim/there-are-no-buts-in-progressive-enhancement.pdf"
   size: 77.4 MB
 video:
   event: 102

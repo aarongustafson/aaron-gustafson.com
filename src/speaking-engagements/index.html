@@ -45,7 +45,7 @@ for <a rel="nofollow noindex" href="/clients/">organizations around the world</a
 					<a href="{{ event.url }}">
 				{% endif %}
 				
-				<h3 class="listing__item__title event__title">{{ event.title }}</h3>
+				<h3 class="listing__item__title event__title">{{ event.title | safe }}</h3>
 				<p class="listing__item__meta">
 					<b class="event__date">{{ event.date | readable_date  }}</b>
 					<b class="event__location">{{ event.location }}</b>
@@ -82,7 +82,7 @@ for <a rel="nofollow noindex" href="/clients/">organizations around the world</a
 					<a href="{{ event.url }}">
 				{% endif %}
 
-				<h3 class="listing__item__title event__title">{{ event.title }}</h3>
+				<h3 class="listing__item__title event__title">{{ event.title | safe }}</h3>
 				<p class="listing__item__meta">
 					<b class="event__date">{{ event.date | readable_date }}</b>
 					<b class="event__location">{{ event.location }}</b>

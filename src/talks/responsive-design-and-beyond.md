@@ -4,6 +4,7 @@ description: "Responsive design is not an end in itself… it’s just the begin
 with:
   - name: "Brad Frost"
     url: https://bradfrost.com/
+    event: 77
 category: workshop
 tags: [ "progressive enhancement", "responsive web design", "user experience", "web design", "web development" ]
 events: [ 77 ]
