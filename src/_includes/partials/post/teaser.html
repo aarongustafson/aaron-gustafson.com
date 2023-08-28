@@ -3,6 +3,13 @@
 {% set transition_root %}{{ type }}-{{ post.fileSlug }}{% endset %}
 
 <article class="entry entry--teaser entry--{{ type }}">
+	{%- set teaser_url -%}
+		{%- if type=="post" or  type=="link" or type=="talk" -%}
+			{{ post.url }}
+		{%- else -%}
+			{{ post.data.url }}
+		{%- endif -%}
+	{%- endset -%}
 	{% if type=="post" %}
 		<p class="entry__type" title="Post" role="img" aria-label="Post">{{ svg_essay | safe }}</p>
 	{% elif type=="link" %}
@@ -20,7 +27,7 @@
 	{% endif %}
 	<div class="entry__details">
 		<{{ teaser_heading_level }} class="entry__title entry-title" style="view-transition-name: {{ transition_root }}-title">
-			<a rel="bookmark" href="{{ post.url }}">{{ post.data.title  | markdownify | strip_links | safe }}
+			<a rel="bookmark" href="{{ teaser_url }}">{{ post.data.title  | markdownify | strip_links | safe }}
 				{%- if post.data.subtitle -%}: {{ post.data.subtitle | markdownify | safe }}{%- endif -%}
 				{% if post.data.edition %} ({{ post.data.edition | markdownify | safe }} Edition){% endif %}
 			</a>
