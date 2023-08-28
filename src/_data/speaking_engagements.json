@@ -144,8 +144,7 @@
 		"id": 133,
 		"title": "Center Centre Workshop",
 		"date": "2017-11-15 00:09:00 -0000",
-		"location": "Chattanooga, TN USA",
-		"notist": "https://noti.st/aarongustafson/NEuuxh/advanced-web-development-techniques-workshop"
+		"location": "Chattanooga, TN USA"
 	},
 	{
 		"id": 132,
@@ -172,48 +171,42 @@
 		"id": 129,
 		"title": "Automattic Speaker Series",
 		"date": "2018-07-18 00:09:00 -0600",
-		"location": "Online",
-		"notist": "https://noti.st/aarongustafson/XxhwFs/the-web-should-just-work-for-everyone"
+		"location": "Online"
 	},
 	{
 		"id": 128,
 		"title": "Microsoft Ignite",
 		"url": "https://www.microsoft.com/en-us/ignite",
 		"date": "2018-09-24 00:09:00 -0600",
-		"location": "Orlando, FL USA",
-		"notist": "https://noti.st/events/Y6pMdq/microsoft-ignite"
+		"location": "Orlando, FL USA"
 	},
 	{
 		"id": 127,
 		"title": "Concatenate",
 		"url": "https://concatenate.io/",
 		"date": "2018-08-10 00:00:01 -0600",
-		"location": "Lagos, Nigeria",
-		"notist": "https://noti.st/aarongustafson/vdz8NT/designing-the-conversation"
+		"location": "Lagos, Nigeria"
 	},
 	{
 		"id": 126,
 		"title": "Accessibility DC",
 		"url": "https://www.meetup.com/Accessibility-DC/",
 		"date": "2018-08-02 00:00:01 -0600",
-		"location": "Washington, DC USA",
-		"notist": "https://noti.st/aarongustafson/719KnR/designing-the-conversation"
+		"location": "Washington, DC USA"
 	},
 	{
 		"id": 125,
 		"title": "Inclusive Design 24",
 		"url": "https://www.inclusivedesign24.org/",
 		"date": "2017-11-16 00:00:01 -0000",
-		"location": "Online",
-		"notist": "https://noti.st/aarongustafson/TKmh5X/designing-the-conversation"
+		"location": "Online"
 	},
 	{
 		"id": 124,
 		"title": "Paris Web",
 		"url": "https://web.archive.org/web/http://lanyrd.com/2017/parisweb/",
 		"date": "2017-10-05 08:00:00 -0000",
-		"location": "Paris, France",
-		"notist": "https://noti.st/aarongustafson/5zZ4zq/designing-the-conversation"
+		"location": "Paris, France"
 	},
 	{
 		"id": 123,
@@ -234,47 +227,41 @@
 		"title": "An Event Apart",
 		"url": "https://aneventapart.com/event/denver-2017",
 		"date": "2017-12-11 09:00:00 -0800",
-		"location": "Denver, CO USA",
-		"notist": "https://noti.st/aarongustafson/Kd0gke/performance-as-user-experience"
+		"location": "Denver, CO USA"
 	},
 	{
 		"id": 120,
 		"title": "An Event Apart",
 		"url": "https://aneventapart.com/event/seattle-2018",
 		"date": "2018-04-02 09:00:00 -0400",
-		"location": "Seattle, WA USA",
-		"notist": "https://noti.st/aarongustafson/m4p2wu/performance-as-user-experience"
+		"location": "Seattle, WA USA"
 	},
 	{
 		"id": 119,
 		"title": "Microsoft Build",
 		"date": "2018-05-07 09:00:00 -0400",
-		"location": "Seattle, WA USA",
-		"notist": "https://noti.st/aarongustafson/9l6F4V/designing-for-everyone-building-great-web-experiences-for-any-device"
+		"location": "Seattle, WA USA"
 	},
 	{
 		"id": 118,
 		"title": "An Event Apart",
 		"url": "https://aneventapart.com/event/washington-dc-2018",
 		"date": "2018-07-30 09:00:00 -0500",
-		"location": "Washington, DC USA",
-		"notist": "https://noti.st/aarongustafson/8I9i70/performance-as-user-experience"
+		"location": "Washington, DC USA"
 	},
 	{
 		"id": 117,
 		"title": "An Event Apart",
 		"url": "https://aneventapart.com/event/san-francisco-2018",
 		"date": "2018-12-10 09:00:00 -0800",
-		"location": "San Francisco, CA USA",
-		"notist": "https://noti.st/aarongustafson/kbsVzP/performance-as-user-experience"
+		"location": "San Francisco, CA USA"
 	},
 	{
 		"id": 116,
 		"title": "Generate",
 		"url": "https://web.archive.org/web/http://lanyrd.com/2017/generate-september/",
 		"date": "2017-09-20 09:00:00 -0400",
-		"location": "London, England",
-		"notist": "https://noti.st/aarongustafson/TfqH7R/exploring-adaptive-interfaces"
+		"location": "London, England"
 	},
 	{
 		"id": 115,
@@ -288,8 +275,7 @@
 		"title": "Chadev",
 		"url": "https://www.meetup.com/chadevs/events/238652824/",
 		"date": "2017-04-06 12:00:00 -0400",
-		"location": "Chattanooga, TN USA",
-		"notist": "https://noti.st/aarongustafson/ImBqVH/designing-the-conversation"
+		"location": "Chattanooga, TN USA"
 	},
 	{
 		"id": 113,
@@ -309,8 +295,7 @@
 		"title": "Smashing Conference",
 		"url": "https://web.archive.org/web/http://lanyrd.com/2016/smashingconf-freiburg/",
 		"date": "2016-09-13 09:00:00 -0400",
-		"location": "Freiburg, Germany",
-		"notist": "https://noti.st/aarongustafson/0Ox3bp/designing-the-conversation"
+		"location": "Freiburg, Germany"
 	},
 	{
 		"id": 110,
@@ -331,8 +316,7 @@
 		"title": "SpeechTEK",
 		"url": "https://web.archive.org/web/http://lanyrd.com/2016/speechtek",
 		"date": "2016-05-22 09:00:00 -0400",
-		"location": "Washington, DC USA",
-		"notist": "https://noti.st/aarongustafson/llVRr1/designing-the-conversation"
+		"location": "Washington, DC USA"
 	},
 	{
 		"id": 107,
@@ -367,8 +351,7 @@
 		"title": "EnhanceConf",
 		"url": "https://web.archive.org/web/http://lanyrd.com/2016/enhanceconf/",
 		"date": "2016-03-03 09:00:00 -0400",
-		"location": "London, England",
-		"notist": "https://noti.st/aarongustafson/X83q6D/learn-from-the-past-enhance-for-the-future"
+		"location": "London, England"
 	},
 	{
 		"id": 102,
