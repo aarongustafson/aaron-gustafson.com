@@ -50,7 +50,7 @@ sitemap: true
   <h2 class="section__title">I’ve been quoted in {{ collections.press.length }} press items</h2>
   <ul class="listing listing--press listing--icons">
     {% for appearance in collections.press %}
-      {% set display_title %}{% if appearance.data.title %}{{ appearance.data.title }}{% else %}{{ appearance.outlet }}{% endif %}{% endset %}
+      {% set display_title %}{% if appearance.data.title %}{{ appearance.data.title | safe }}{% else %}{{ appearance.outlet | safe }}{% endif %}{% endset %}
       <li class="listing__item listing__item--{{ loop.index }} appearance entry--teaser">
         <p class="entry__type listing__item__type" title="Article" role="img" aria-label="Article">{{ svg_article | safe }}</p>
 				<h3 class="listing__item__title appearance__title">
@@ -63,7 +63,7 @@ sitemap: true
         <p class="listing__item__meta appearance__meta">
           <time class="appearance__date">{{ appearance.date | readable_date }}</time>{% if display_title != appearance.data.publisher %},{% endif %}
           {% if display_title != appearance.data.publisher %}
-            <cite class="appearance__venue">{{ appearance.data.publisher }}</cite>
+            <cite class="appearance__venue">{{ appearance.data.publisher | safe }}</cite>
           {% endif %}
         </p>
         {#
