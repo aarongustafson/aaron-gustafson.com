@@ -79,4 +79,4 @@ And now that you know, please, please, _please_ take a few minutes to make this 
 
 <hr>
 
-**Update:** For more in-depth info on this topic (and scenarios where CSS isn’t applied to your SVGs), be sure to check out [this piece from Sara Souiedan](https://www.sarasoueidan.com/blog/svg-style-inheritance-and-fousvg/).
+**Update:** For more in-depth info on this topic (and scenarios where CSS isn’t applied to your SVGs), be sure to check out [this piece from Sara Soueidan](https://www.sarasoueidan.com/blog/svg-style-inheritance-and-fousvg/).
