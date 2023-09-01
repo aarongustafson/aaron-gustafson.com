@@ -12,10 +12,13 @@ sitemap: true
 
 {% set svg_article %}{{ "/src/static/i/icons/article.svg" | svgContents  | replace("38px","24px") | replace("48px","30px") | safe }}{% endset %}
 {% set svg_podcast %}{{ "/src/static/i/icons/mic.svg" | svgContents | safe }}{% endset %}
+{% set contactReason = "I%E2%80%99d+like+to+set+up+an+interview." %}
 
 <h1 class="page__title">Interviews &amp; More</h1>
 
-<p>I’ve had the great pleasure of being interviewed on numerous podcasts, in digital and print publications, and even <a href="http://www.bbc.com/news/business-17931814">on the BBC</a>!</p>
+<p>I’ve had the great pleasure of being interviewed on numerous podcasts, in digital and print 
+publications, and even <a href="http://www.bbc.com/news/business-17931814">on the BBC</a>! If 
+you’d like to interview me, <a href="/contact/?reason={{ contactReason }}">please get in touch</a>.</p>
 
 <section id="podcasts" class="section">
   <h2 class="section__title">I’ve been a guest on {{ collections.podcasts.length }} podcasts</h2>

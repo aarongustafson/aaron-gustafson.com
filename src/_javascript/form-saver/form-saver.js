@@ -9,8 +9,7 @@
 		{
 			return;
 		}
-		console.log('setting up the form');
-
+		
 		var page_key = window.location.toString(),
 			$fields = $form.querySelectorAll('input:not([disabled]),select:not([disabled]),textarea:not([disabled])'),
 			count,
@@ -21,7 +20,6 @@
 		// Field functions
 		function getValue( $field )
 		{
-			console.log('getting a value for',$field);
 			var type = $field.type,
 				value,
 				$related_fields,
@@ -52,7 +50,7 @@
 		function setValue( $field, value )
 		{
 			var type = $field.type,
-				len;
+					len;
 			switch ( type )
 			{
 				case 'radio':
@@ -76,7 +74,7 @@
 		
 		// Form actions
 		function save() {
-			console.log('saving');
+			//console.log('saving');
 			count = $fields.length;
 			while ( count-- )
 			{
@@ -86,7 +84,7 @@
 			window.localStorage.setItem( page_key, JSON.stringify( data ) );
 		}
 		function reload() {
-			console.log('reloading');
+			//console.log('reloading');
 			count = $fields.length;
 			data = window.localStorage.getItem( page_key );
 			if ( data )
@@ -95,7 +93,10 @@
 				while ( count-- )
 				{
 					$field = $fields[count];
-					setValue( $field, data[$field.name] );
+					if ( data[$field.name] != undefined )
+					{
+						setValue( $field, data[$field.name] );
+					}
 				}
 			}
 			else
@@ -109,14 +110,14 @@
 		{
 			if ( typing )
 			{
-				console.log('typing');
+				//console.log('typing');
 				clearTimeout( typing );
 				resizing = null;
 			}
 			typing = setTimeout( doneTyping, 300 );
 		}
 		function doneTyping() {
-			console.log('done typing');
+			//console.log('done typing');
 			clearTimeout( typing );
 			typing = null;
 			save();
@@ -124,7 +125,7 @@
 		$form.addEventListener( 'keydown', throttleKeydownSave, false );
 		$form.addEventListener( 'change', save, false );
 		$form.addEventListener( 'blur', save, false );
-		console.log('events set');
+		//console.log('events set');
 		
 		// init
 		reload();

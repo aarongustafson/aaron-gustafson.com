@@ -14,17 +14,23 @@ javascripts:
 ---
 
 {% set cloudinary = "https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,e_grayscale,w_400/" %}
+{% set contactReason = "I%E2%80%99d+like+you+to+speak+at+an+event." %}
 
 <h1 class="page__title">A Complete List of My Conferences &amp; Workshops</h1>
 
-<p>It’s hard to believe it, but I’ve delivered <a href="https://presentations.aaron-gustafson.com">over {{ speaking_engagements | length }} talks
-and workshops</a> over the last {{ helpers.currentYear() - 2003 }} years! In addition to the 
-public events I can tell you about, I’ve also given private talks and workshops 
+<p>It’s hard to believe it, but I’ve delivered <a href="https://presentations.aaron-gustafson.com">over
+{{ speaking_engagements | length }} talks and workshops</a> over the last {{ helpers.currentYear() - 2003 }} 
+years! In addition to the public events I can tell you about, I’ve also given private talks and workshops 
 for <a rel="nofollow noindex" href="/clients/">organizations around the world</a>.</p>
 
-<p>If you’d like me to come present at your company or event, <a href="/contact/">please drop me a line</a>.</p>
+<p>If you’d like me to come present at your company or event, 
+	<a href="/contact/?reason={{ contactReason }}">please drop me a line</a>.</p>
 
-<p><em>One important note: I am only interested in speaking at conferences showcasing a <strong>diverse</strong> line-up of speakers. I am also happy to be part of a panel, but it can’t be all-male or all-white. If you’re looking for recommendations of awesome, diverse speakers, <a href="/contact/">reach out and I will happily provide you with a list of names</a>.</em><p>
+<p><em>One important note: I am only interested in speaking at conferences showcasing a 
+<strong>diverse</strong> line-up of speakers. I am also happy to be part of a panel, but it can’t be 
+all-male or all-white. If you’re looking for recommendations of awesome, diverse speakers, 
+<a href="/contact/?reason=I+need+speaker+recommendations.">reach out and I will happily provide 
+you with a list of names</a>.</em><p>
 
 {% set future_events = speaking_engagements | future %}
 {% set past_events = speaking_engagements | past %}
@@ -64,7 +70,11 @@ for <a rel="nofollow noindex" href="/clients/">organizations around the world</a
 			{% endif %}
 		{% endfor %}
 	{% else %}
-		<p>I am currently finalizing my schedule for the next few months. Please check back for dates or <a href="/contact/">contact me</a> if you’d like me to speak at your organization or event. You can see <a href="https://presentations.aaron-gustafson.com/">some of my recent talks</a> to get a sense of what I’ve been speaking about lately.</p>
+		<p>I am currently finalizing my schedule for the next few months. Please check back for dates or
+			<a href="/contact/?reason={{ contactReason }}">contact me</a> if you’d 
+			like me to speak at your organization or event. You can see
+			 <a href="https://presentations.aaron-gustafson.com/">some of my recent talks</a> to get a sense 
+			 of what I’ve been speaking about lately.</p>
 	{% endif %}
 
 </section>
@@ -104,7 +114,8 @@ for <a rel="nofollow noindex" href="/clients/">organizations around the world</a
 <section class="subsection" id="talks">
 
 	<h2 class="subsection__header">Talks I’ve Given</h2>
-	<p>Here are some of the talks I’ve given. If you’d like me to speak at your organization or event, <a href="/contact/">please get in touch</a>.</p>
+	<p>Here are some of the talks I’ve given. If you’d like me to speak at your organization or event,
+		<a href="/contact/?reason={{ contactReason }}">please get in touch</a>.</p>
 
 	{% set talks = collections.talks %}
 	{% set teaser_heading_level = "h3" %}
