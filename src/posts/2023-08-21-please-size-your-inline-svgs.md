@@ -11,6 +11,8 @@ hero:
   alt: "Digital art. A blueberry with arms and legs like a person. It’s sitting on the ground with its back to the viewer and is clearly crying. The tears are pooling around it on the ground."
   url: https://labs.openai.com/s/tqvw9pF4pLS0MlnZAF3wLG6c
   offset: "100"
+crossposted:
+  Medium: https://medium.com/@AaronGustafson/please-size-your-inline-svgs-4f915f59e48c
 ---
 
 While it is a bit of an edge case, every now and then I’ll hit a site—yes, even a high profile one—and the CSS will fail to load for some reason. When this happens, inevitably every inline SVG resource on the page will grow to fill the entire width of my viewport, making for a _really_ awkward experience.
