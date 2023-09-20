@@ -1,5 +1,5 @@
 ---
-title: "  News from WWDC23: WebKit Features in Safari 17 beta"
+title: "News from WWDC23: WebKit Features in Safari 17 beta"
 date: 2023-06-07T20:35:53.250Z
 tags: ["progressive web apps", "web development"]
 ref_url: https://webkit.org/blog/14205/news-from-wwdc23-webkit-features-in-safari-17-beta/

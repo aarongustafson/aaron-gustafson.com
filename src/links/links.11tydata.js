@@ -3,7 +3,6 @@ const fs = require('fs');
 const CACHE_FILE_PATH = '_cache/og_images.yml';
 const yaml = require('js-yaml');
 let og_images = yaml.load(fs.readFileSync(CACHE_FILE_PATH));
-const current_month = new Date().getMonth() + 1;
 const CACHE_404_PATH =  '_cache/404s.yml';
 const cached404s = yaml.load(fs.readFileSync(CACHE_404_PATH));
 const ogs = require('open-graph-scraper');
@@ -19,8 +18,8 @@ async function getOpenGraphImage(url) {
 	});
 	
 	// happy path
-	if ( data.success ) {
-		return data.ogImage.url;
+	if ( ! data.error && data.result.ogImage.length > 0) {
+		return data.result.ogImage[0].url;
 	}
 
 	console.log(`>>> Could not gather OpenGraph image`);
