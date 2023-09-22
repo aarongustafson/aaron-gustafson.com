@@ -117,3 +117,21 @@ Goodnight Mols. I love you.
 
 <figcaption>Molly was also a talented songwriter, singer, and musician. This is a recording of “Love’s Immortal Fountain,” which she also wrote.</figcaption>
 </figure>
+
+<hr>
+
+## Other folks’ memories of Molly
+
+* [Faruk Ateş](https://www.linkedin.com/posts/farukates_im-deeply-saddened-by-the-news-that-my-dear-activity-7105772524147277824-ndgC)
+* [Deborah Edwards-Oñoro](https://www.lireo.com/remembering-molly-holzschlag/)
+* [Meryl Evans](https://meryl.net/in-memory-of-molly-e-holzschlag-the-fairy-godmother-of-the-web/)
+* [Jason Grigsby](https://gri.gs/844/remembering-molly/)
+* [Stephen Hay](https://www.linkedin.com/posts/stephenhay_remembering-molly-aaron-gustafson-activity-7110154519165956096--rGY/)
+* [Jay Hoffman](https://thehistoryoftheweb.com/remembering-molly-one-of-the-greats/)
+* [Bruce Lawson](https://brucelawson.co.uk/2023/goodbye-molly-holzschlag/)
+* [Matt May](https://www.linkedin.com/posts/maymatt_cn-death-my-first-paid-speaking-gig-in-activity-7105036507572310016-Z55E)
+* [Eric Meyer](https://meyerweb.com/eric/thoughts/2023/09/06/memories-of-molly/)
+
+More [on front-end.social by following #MollyHolzschlag](https://front-end.social/tags/mollyholzschlag).
+
+Know of others? Please [share them](/contact/?reason=Another+rememberence+post+about+Molly).
