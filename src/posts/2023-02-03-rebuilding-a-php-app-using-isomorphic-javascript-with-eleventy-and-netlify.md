@@ -147,43 +147,43 @@ We define Edge Functions for use with Netlify in the `netlify/edge-functions` fo
 import { process } from "./../../_site/j/process.js";
 
 function setCookie(context, name, value) {
-	context.cookies.set({
-		name,
-		value,
-		path: "/",
-		httpOnly: true,
-		secure: true,
-		sameSite: "Lax",
-	});
+  context.cookies.set({
+    name,
+    value,
+    path: "/",
+    httpOnly: true,
+    secure: true,
+    sameSite: "Lax",
+  });
 }
 
 export default async (request, context) => {
-	let url = new URL(request.url);
+  let url = new URL(request.url);
 
-	// Save to cookie, redirect back to form
-	if (url.pathname === "/process/" && request.method === "POST")
-	{
-		if ( request.headers.get("content-type") === "application/x-www-form-urlencoded" )
-		{
-			let body = await request.clone().formData();
-			let postData = Object.fromEntries(body);
+  // Save to cookie, redirect back to form
+  if (url.pathname === "/process/" && request.method === "POST")
+  {
+    if ( request.headers.get("content-type") === "application/x-www-form-urlencoded" )
+    {
+      let body = await request.clone().formData();
+      let postData = Object.fromEntries(body);
 
-			let result = process( postData.check, postData.percent );
+      let result = process( postData.check, postData.percent );
 
-			setCookie( context, "check", result.check );
-			setCookie( context, "tip", result.tip );
-			setCookie( context, "total", result.total );
+      setCookie( context, "check", result.check );
+      setCookie( context, "tip", result.tip );
+      setCookie( context, "total", result.total );
 
-			return new Response(null, {
-				status: 302,
-				headers: {
-					location: "/results/",
-				}
-			});
-		}
-	}
+      return new Response(null, {
+        status: 302,
+        headers: {
+          location: "/results/",
+        }
+      });
+    }
+  }
 
-	return context.next();
+  return context.next();
 };
 ```
 {% endraw %}
@@ -195,21 +195,21 @@ On that page, I use Eleventy’s Edge plugin to render the check, tip, and total
 {% raw %}
 ```njk
 {% edge %}
-	{% set check = eleventy.edge.cookies.check %}
-	{% set tip = eleventy.edge.cookies.tip %}
-	{% set total = eleventy.edge.cookies.total %}
-	<tr id="check">
-		<th scope="row">Check&nbsp;</th>
-		<td>${{ check }}</td>
-	</tr>
-	<tr id="tip">
-		<th scope="row">Tip&nbsp;</th>
-		<td>${{ tip }}</td>
-	</tr>
-	<tr id="total">
-		<th scope="row">Total&nbsp;</th>
-		<td>${{ total }}</td>
-	</tr>
+  {% set check = eleventy.edge.cookies.check %}
+  {% set tip = eleventy.edge.cookies.tip %}
+  {% set total = eleventy.edge.cookies.total %}
+  <tr id="check">
+    <th scope="row">Check&nbsp;</th>
+    <td>${{ check }}</td>
+  </tr>
+  <tr id="tip">
+    <th scope="row">Tip&nbsp;</th>
+    <td>${{ tip }}</td>
+  </tr>
+  <tr id="total">
+    <th scope="row">Total&nbsp;</th>
+    <td>${{ total }}</td>
+  </tr>
 {% endedge %}
 ```
 {% endraw %}
