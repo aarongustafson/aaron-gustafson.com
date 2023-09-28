@@ -55,8 +55,8 @@ async function initializeWidget( widget )
 
 async function updateWidget( widget )
 {
-	const template = await ( await fetch( widget.definition.msAcTemplate ) ).text();
-  const data = await ( await fetch( widget.definition.data ) ).text();
+	const template = await ( await fetch( widget.definition.msAcTemplate ) ).json();
+  const data = await ( await fetch( widget.definition.data ) ).json();
 	
 	await self.widgets.updateByTag(widget.definition.tag, {template, data});
 }
