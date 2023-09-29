@@ -81,8 +81,8 @@ module.exports = config => {
 		}
 	});
 	config.addPlugin(syntaxHighlight, {
-    preAttributes: { tabindex: 0 }
-  });
+		preAttributes: { tabindex: 0 }
+	});
 	config.addPlugin(readingTime);
 	config.addPlugin(imagesResponsiver, {
 		hero: {
