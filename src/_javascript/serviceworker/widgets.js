@@ -2,6 +2,7 @@
 // More: https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/PWAWidgets/README.md
 
 const periodicSync = self.registration.periodicSync;
+var widget_templates = {};
 
 async function registerPeriodicSync( widget )
 {
@@ -47,52 +48,99 @@ async function updateWidgets( host_id )
   return;
 }
 
+async function getTemplate( template_url )
+{
+  let template = "";
+  if ( template_url in widget_templates )
+  {
+    template = widget_templates[ template_url ];
+  }
+  else
+  {
+    template = await ( await fetch( template_url ) ).text();
+    widget_templates[ template_url ] = template;
+  }
+
+  return template;
+}
+
+async function initAllWidgets( widget )
+{
+  if ( ! self.widgets )
+  {
+    return;
+  }
+
+  const template_url = "/w/waiting.ac.json";
+  const template = await getTemplate( template_url );
+  const data = "{}";
+  const all_widgets = await self.widgets.matchAll();
+  
+  for ( widget of all_widgets ) {
+    await self.widgets.updateByTag( widget.definition.tag, {
+      template,
+      data
+    });
+  }
+}
+
 async function initializeWidget( widget )
 {
   await updateWidget( widget );
-	await registerPeriodicSync( widget );
+  await registerPeriodicSync( widget );
 }
 
 async function updateWidget( widget )
 {
-	const template = await ( await fetch( widget.definition.msAcTemplate ) ).json();
-  const data = await ( await fetch( widget.definition.data ) ).json();
-	
-	await self.widgets.updateByTag(widget.definition.tag, {template, data});
+  const template = await getTemplate( widget.definition.msAcTemplate );
+  const data = await ( await fetch( widget.definition.data ) ).text();
+  console.log( template, data );
+
+  await self.widgets.updateByTag(widget.definition.tag, {
+    template,
+    data
+  });
 }
 
 async function uninstallWidget( widget )
 {
-	if ( widget.instances.length === 1 && "update" in widget.definition )
-	{
+  if ( widget.instances.length === 1 && "update" in widget.definition )
+  {
     await self.registration.periodicSync.unregister( widget.definition.tag );
   }
 }
 
+self.addEventListener("activate", (event) => {
+  console.log("initializing all widgets");
+  event.waitUntil(
+    initAllWidgets()
+  );
+});
+
 self.addEventListener("widgetinstall", function(event) {
-	console.log("installing", event.widget);
-	event.waitUntil(
-		initializeWidget( event.widget )
-	);
+  console.log("installing", event.widget);
+  event.waitUntil(
+    initializeWidget( event.widget )
+  );
 });
 
 self.addEventListener("widgetuninstall", function(event) {
-	console.log("uninstalling", event.widget);
-	event.waitUntil(
-		uninstallWidget( event.widget )
-	);
+  console.log("uninstalling", event.widget);
+  event.waitUntil(
+    uninstallWidget( event.widget )
+  );
 });
 
 self.addEventListener("widgetresume", function(event) {
-	console.log("resuming widget", event.widget);
-	event.waitUntil(
-		updateWidget( event.widget )
-	);
+  console.log("resuming widget", event.widget);
+  event.waitUntil(
+    updateWidget( event.widget )
+  );
 });
 
 self.addEventListener("widgetclick", function(event) {
 
-	const widget = event.widget;
+  const widget = event.widget;
   const action = event.action;
     
   switch ( action ) {
