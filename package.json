@@ -103,5 +103,16 @@
 		"broken-link-checker": "^0.7.8",
 		"hygen": "^6.2.11",
 		"netlify-cli": "^14.1.0"
+	},
+	"prettier": {
+		"useTabs": true,
+		"overrides": [
+			{
+				"files": "*.md",
+				"options": {
+					"useTabs": false
+				}
+			}
+		]
 	}
 }
