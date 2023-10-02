@@ -57,6 +57,7 @@
 	X-Content-Type-Options = "nosniff"
 	X-UA-Compatible = "ie=edge,chrome=1"
 	X-XSS-Protection = "1; mode=block"
+  Cache-Control = "public"
 [[headers]]
 	for = "/*.svgz"
 	[headers.values]
@@ -72,6 +73,14 @@
 	"</j/post.min.js>;as=script;rel=preload"
 	]
 [[headers]]
+	for = "/*.css"
+	[headers.values]
+	Cache-Control = "max-age=86400"
+[[headers]]
+	for = "/*.js"
+	[headers.values]
+	Cache-Control = "max-age=86400"
+[[headers]]
 	for = "/serviceworker.min.js"
 	[headers.values]
 	Cache-Control = "max-age=0"
@@ -86,6 +95,7 @@
 	Access-Control-Allow-Origin = "*"
 	Access-Control-Allow-Methods = "GET,HEAD,OPTIONS,POST"
 	Access-Control-Allow-Headers = "Accept,X-Requested-With,Content-Type,Cache-Control,mode"
+  Cache-Control = "no-cache"
 
 [functions."deploy-succeeded"]
 	included_files = ["_cache/*.*"]
