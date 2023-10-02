@@ -2,7 +2,7 @@
 {% set summary %}{% if post.data.description %}{{ post.data.description }}{% elif post.data.page.excerpt %}{{ post.data.page.excerpt }}{% endif %}{% endset %}
 {
   "id": "{{ post_url }}",
-  "title": "{% if prepend_title %}[{{ post.inputPath | content_type | capitalize }}] {% endif %}{{ post.data.title | replace('"', '\\"') | safe }}",
+  "title": "{{ post.data.title | replace('"', '\\"') | striptags | safe }} {% if prepend_title %} [{{ post.inputPath | content_type | capitalize }}]{% endif %}",
   
   "summary": "{{ summary | markdownify | trim_newlines | replace('"', '\\"') | safe }}",
   

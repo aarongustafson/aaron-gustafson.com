@@ -2,7 +2,7 @@
 {%- set summary %}{% if post.data.description %}{{ post.data.description }}{% elif post.data.page.excerpt %}{{ post.data.page.excerpt }}{% endif %}{% endset -%}
 <entry>
   <id>{{ post_url }}</id>
-  <title type="html"><![CDATA[{% if prepend_title %}[{{ post.inputPath | content_type | capitalize }}] {% endif %}{{ post.data.title | unescape | safe }}]]></title>
+  <title type="html"><![CDATA[{{ post.data.title | unescape | safe }}{% if prepend_title %} [{{ post.inputPath | content_type | capitalize }}]{% endif %}]]></title>
   <link href="{{ post_url }}" rel="alternate" type="text/html" />
   {% if post.data.ref_url %}
     <link href="{{ post.data.ref_url }}" rel="related" type="text/html" />

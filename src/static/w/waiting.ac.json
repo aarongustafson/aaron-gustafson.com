@@ -1,18 +1,18 @@
 {
-  "type": "AdaptiveCard",
-  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-  "version": "1.6",
-  "body": [
-    {
-      "type": "Image",
-      "url": "https://www.aaron-gustafson.com/i/og-logo.png"
-    },
-    {
-      "type": "TextBlock",
-      "text": "Waiting on data…",
-      "horizontalAlignment": "Center",
-      "spacing": "Small",
-      "weight": "Bolder"
-    }
-  ]
+	"type": "AdaptiveCard",
+	"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+	"version": "1.6",
+	"body": [
+		{
+			"type": "Image",
+			"url": "https://www.aaron-gustafson.com/i/og-logo.png"
+		},
+		{
+			"type": "TextBlock",
+			"text": "Waiting on data…",
+			"horizontalAlignment": "Center",
+			"spacing": "Small",
+			"weight": "Bolder"
+		}
+	]
 }

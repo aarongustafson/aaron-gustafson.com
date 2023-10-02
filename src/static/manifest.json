@@ -50,7 +50,7 @@
 			"icons": [
 				{
 					"src": "/i/icons/notebook.svg",
-					"sizes": "120x120",
+					"sizes": "68x100",
 					"type": "image/svg+xml"
 				},
 				{
@@ -67,7 +67,7 @@
 			"icons": [
 				{
 					"src": "/i/icons/mic.svg",
-					"sizes": "120x120",
+					"sizes": "50x42",
 					"type": "image/svg+xml"
 				},
 				{
@@ -84,7 +84,7 @@
 			"icons": [
 				{
 					"src": "/i/icons/books.svg",
-					"sizes": "120x120",
+					"sizes": "65x82",
 					"type": "image/svg+xml"
 				},
 				{
@@ -101,7 +101,7 @@
 			"icons": [
 				{
 					"src": "/i/icons/chat.svg",
-					"sizes": "120x120",
+					"sizes": "48x48",
 					"type": "image/svg+xml"
 				},
 				{
@@ -175,10 +175,11 @@
 			"screenshots": [
 				{
 					"src": "/i/screenshots/widget-posts.png",
-					"sizes": "600x400",
+					"sizes": "387x387",
 					"label": "The latest posts widget"
 				}
 			],
+			"background": "/i/background-logo.png",
 			"ms_ac_template": "/w/feed.ac.json"
 		},
 		{
@@ -205,11 +206,12 @@
 			],
 			"screenshots": [
 				{
-					"src": "./i/screenshots/widget-links.png",
-					"sizes": "600x400",
+					"src": "/i/screenshots/widget-links.png",
+					"sizes": "387x387",
 					"label": "The latest links widget"
 				}
 			],
+			"background": "/i/background-logo.png",
 			"ms_ac_template": "/w/feed.ac.json"
 		}
 	],
