@@ -18,7 +18,7 @@
 			"src": "/i/icon.png",
 			"type": "image/png",
 			"sizes": "512x512",
-			"purpose": "maskable"
+			"purpose": "any maskable"
 		},
 		{
 			"src": "/i/notification-icon.png",
@@ -50,7 +50,7 @@
 			"icons": [
 				{
 					"src": "/i/icons/notebook.svg",
-					"sizes": "68x100",
+					"sizes": "102x150",
 					"type": "image/svg+xml"
 				},
 				{
@@ -67,7 +67,7 @@
 			"icons": [
 				{
 					"src": "/i/icons/mic.svg",
-					"sizes": "50x42",
+					"sizes": "24x24",
 					"type": "image/svg+xml"
 				},
 				{
@@ -84,7 +84,7 @@
 			"icons": [
 				{
 					"src": "/i/icons/books.svg",
-					"sizes": "65x82",
+					"sizes": "114x150",
 					"type": "image/svg+xml"
 				},
 				{
@@ -101,7 +101,7 @@
 			"icons": [
 				{
 					"src": "/i/icons/chat.svg",
-					"sizes": "48x48",
+					"sizes": "24x24",
 					"type": "image/svg+xml"
 				},
 				{
