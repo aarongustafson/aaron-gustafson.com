@@ -79,6 +79,7 @@
 	for = "/*.json"
 	[headers.values]
 	X-Content-Type-Options = "nosniff"
+  Content-Type = "application/json; charset=utf-8"
 [[headers]]
 	for = "/feeds/*.json"
 	[headers.values]
