@@ -29,7 +29,7 @@
 		{
 			"src": "/i/icon.svg",
 			"type": "image/svg+xml",
-			"sizes": "512x512"
+			"sizes": "124x150"
 		},
 		{
 			"src": "/i/og-logo.png",
@@ -127,7 +127,7 @@
 		"license": "/#license",
 		"support": "/contact/"
 	},
-	"display_override": ["tabbed", "minimal-ui", "standalone"],
+	"display_override": ["minimal-ui", "standalone"],
 	"scope_extensions": [{ "origin": "*.aaron-gustafson.com" }],
 	"handle_links": "all",
 	"launch_handler": {
@@ -135,6 +135,32 @@
 		"navigate_existing_client": "always"
 	},
 	"start_url": "/",
+	"screenshots": [
+		{
+			"src": "/i/screenshots/home.png",
+			"sizes": "1000x1073",
+			"label": "The homepage of my site",
+			"form_factor": "wide"
+		},
+		{
+			"src": "/i/screenshots/post.png",
+			"sizes": "1000x1040",
+			"label": "A sample blog post",
+			"form_factor": "wide"
+		},
+		{
+			"src": "/i/screenshots/about-mobile.jpg",
+			"sizes": "369x800",
+			"label": "About me (mobile view)",
+			"form_factor": "narrow"
+		},
+		{
+			"src": "/i/screenshots/post-mobile.png",
+			"sizes": "369x800",
+			"label": "A sample blog post (mobile view)",
+			"form_factor": "narrow"
+		}
+	],
 	"serviceworker": {
 		"src": "/serviceworker.min.js",
 		"scope": "/"
