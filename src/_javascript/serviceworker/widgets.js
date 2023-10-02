@@ -74,7 +74,9 @@ async function initAllWidgets( widget )
   const template_url = "/w/waiting.ac.json";
   const template = await getTemplate( template_url );
   const data = "{}";
-  const all_widgets = await self.widgets.matchAll();
+  const all_widgets = await self.widgets.matchAll({
+    installable: true
+  });
   
   for ( widget of all_widgets ) {
     await self.widgets.updateByTag( widget.definition.tag, {
