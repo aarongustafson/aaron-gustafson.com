@@ -1,12 +1,12 @@
-exports.handler = () => new Response("Hello world");
-
-/* export default async function latestLinks(request: Request) {
-  let timerId: number | undefined;
+export default async function latestLinks() {
+  let timerId;
   const body = new ReadableStream({
     start(controller) {
       timerId = setInterval(() => {
+        const date = new Date().toUTCString();
+        const message = "deployed";
         const msg = new TextEncoder().encode(
-          `data: hello at ${new Date().toUTCString()}\r\n\r\n`,
+          `data: ${JSON.stringify( { date, message } )}\r\n\r\n`
         );
         controller.enqueue(msg);
       }, 1000);
@@ -22,4 +22,4 @@ exports.handler = () => new Response("Hello world");
       "Content-Type": "text/event-stream",
     },
   });
-} */
+}

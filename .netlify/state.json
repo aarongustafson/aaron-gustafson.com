@@ -1,3 +1,20 @@
 {
-	"promptVSCodeSettings": true
+	"promptVSCodeSettings": true,
+	"geolocation": {
+		"data": {
+			"city": "Seattle",
+			"country": {
+				"code": "US",
+				"name": "United States"
+			},
+			"subdivision": {
+				"code": "WA",
+				"name": "Washington"
+			},
+			"timezone": "America/Los_Angeles",
+			"latitude": 47.6109,
+			"longitude": -122.3303
+		},
+		"timestamp": 1696449421278
+	}
 }

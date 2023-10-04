@@ -1,17 +1,16 @@
 [build]
 	command = "npm run build"
 	functions = ".netlify/functions"
+  edge_functions = ".netlify/edge-functions"
 
 [dev]
 	framework = "eleventy"
 	publish = "dist"
 
-
 [[plugins]]
 	package = "netlify-plugin-cache-folder"
 #[[plugins]]
 #	package = "./plugins/persist-static-directory"
-
 
 [[redirects]]
 	from = "/notebook/20*/:slug"

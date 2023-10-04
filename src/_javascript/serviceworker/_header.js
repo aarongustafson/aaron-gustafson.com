@@ -46,7 +46,7 @@ const version = "v{{ VERSION }}:",
 
       // Never cache
       ignore = [
-        'www.google-analytics.com/r/collect',
+        '/api/',
         '.ogg',
         '.mp3',
         '.mp4',
