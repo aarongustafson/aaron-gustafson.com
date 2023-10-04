@@ -118,7 +118,7 @@
 	"screenshots": [
 		{
 			"src": "/i/screenshots/home.png",
-			"sizes": "1000x1073",
+			"sizes": "1000x1040",
 			"label": "The homepage of my site",
 			"form_factor": "wide"
 		},
