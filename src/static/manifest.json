@@ -18,7 +18,7 @@
 			"src": "/i/icon.png",
 			"type": "image/png",
 			"sizes": "512x512",
-			"purpose": "any maskable"
+			"purpose": "any"
 		},
 		{
 			"src": "/i/notification-icon.png",
