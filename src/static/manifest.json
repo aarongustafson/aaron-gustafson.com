@@ -174,7 +174,7 @@
 			],
 			"icons": [
 				{
-					"src": "/i/icons/webicon-rss.ong",
+					"src": "/i/icons/webicon-rss.png",
 					"type": "image/png",
 					"sizes": "120x120"
 				}
@@ -214,7 +214,7 @@
 			],
 			"icons": [
 				{
-					"src": "/i/icons/webicon-rss.ong",
+					"src": "/i/icons/webicon-rss.png",
 					"type": "image/png",
 					"sizes": "120x120"
 				}
