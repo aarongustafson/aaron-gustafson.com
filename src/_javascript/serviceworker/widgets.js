@@ -87,17 +87,17 @@ async function initAllWidgets( widget )
 	
 	for ( widget of all_widgets ) {
 		console.log( `Updating ${widget.definition.tag} with payload`, { template, data } );
-		await self.widgets.updateByTag( widget.definition.tag, {
-			template,
-			data
-		});
+		await pushWidgetPayload( widget.definition.tag, template, data );
 	}
+
+	return;
 }
 
 async function initializeWidget( widget )
 {
 	await updateWidget( widget );
 	await registerPeriodicSync( widget );
+	return;
 }
 
 async function updateWidget( widget )
@@ -106,10 +106,21 @@ async function updateWidget( widget )
 	const data = await ( await fetch( widget.definition.data ) ).text();
 	
 	console.log( `Updating ${widget.definition.tag} with payload`, { template, data } );
-	await self.widgets.updateByTag(widget.definition.tag, {
-		template,
-		data
-	});
+	await pushWidgetPayload( widget.definition.tag, template, data );
+	return;
+}
+
+async function pushWidgetPayload( tag, template, data ) {
+	try {
+		await self.widgets.updateByTag(tag, {
+			template,
+			data
+		});
+	}
+	catch (e) {
+		console.log( `Couldn’t update the widget ${tag}`, e );
+	}
+	return;
 }
 
 async function uninstallWidget( widget )
@@ -118,43 +129,41 @@ async function uninstallWidget( widget )
 	{
 		await self.registration.periodicSync.unregister( widget.definition.tag );
 	}
+	return;
 }
 
-self.addEventListener("activate", (event) => {
+self.addEventListener("activate", event => {
 	console.log("Initializing all widgets");
 	event.waitUntil(
 		initAllWidgets()
 	);
 });
 
-self.addEventListener("widgetinstall", function(event) {
+self.addEventListener("widgetinstall", event => {
 	console.log( `Installing ${event.widget.tag}` );
 	event.waitUntil(
 		initializeWidget( event.widget )
 	);
 });
 
-self.addEventListener("widgetuninstall", function(event) {
+self.addEventListener("widgetuninstall", event => {
 	console.log( `Uninstalling ${event.widget.tag}` );
 	event.waitUntil(
 		uninstallWidget( event.widget )
 	);
 });
 
-self.addEventListener("widgetresume", function(event) {
+self.addEventListener("widgetresume", event => {
 	console.log( `Resuming ${event.widget.tag}` );
 	event.waitUntil(
 		updateWidget( event.widget )
 	);
 });
 
-self.addEventListener("widgetclick", function(event) {
-
+self.addEventListener("widgetclick", event => {
 	const widget = event.widget;
 	const action = event.action;
-		
 	switch ( action ) {
-		
 		// Custom Actions
 		case "refresh":
 			console.log("Asking a widget to refresh itself");
@@ -163,13 +172,11 @@ self.addEventListener("widgetclick", function(event) {
 			);
 			break;
 	}
-
 });
 
 self.addEventListener("periodicsync", event => {
-
+	console.log( "periodic sync happening" );
 	const tag = event.tag;
-	
 	if ( "widgets" in self )
 	{
 		const widget = widgets.getByTag( tag );
@@ -177,5 +184,4 @@ self.addEventListener("periodicsync", event => {
 			event.waitUntil( updateWidget( widget ) );
 		}
 	}
-
 });
