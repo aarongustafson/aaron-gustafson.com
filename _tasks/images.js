@@ -72,7 +72,7 @@ const images = () => {
 				svgo( svgo_opts ),
 				through2.obj(function(file, _, cb){
 					return sharp(file.contents)
-									.jpeg({ progressive: true, force: false })
+									.jpeg({ progressive: true, force: false, mozjpeg: true })
 									.png({ progressive: true, force: false })
 									.toBuffer()
 									.then(function(buffer) {
