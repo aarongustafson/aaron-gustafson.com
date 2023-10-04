@@ -174,9 +174,9 @@
 			],
 			"icons": [
 				{
-					"src": "/i/icons/webicon-rss.svg",
-					"type": "image/svg+xml",
-					"sizes": "48x48"
+					"src": "/i/icons/webicon-rss.ong",
+					"type": "image/png",
+					"sizes": "120x120"
 				}
 			],
 			"screenshots": [
@@ -214,9 +214,9 @@
 			],
 			"icons": [
 				{
-					"src": "/i/icons/webicon-rss.svg",
-					"type": "image/svg+xml",
-					"sizes": "48x48"
+					"src": "/i/icons/webicon-rss.ong",
+					"type": "image/png",
+					"sizes": "120x120"
 				}
 			],
 			"screenshots": [
