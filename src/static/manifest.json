@@ -49,11 +49,6 @@
 			"url": "/notebook/",
 			"icons": [
 				{
-					"src": "/i/icons/notebook.svg",
-					"sizes": "102x150",
-					"type": "image/svg+xml"
-				},
-				{
 					"src": "/i/icons/notebook.png",
 					"type": "image/png",
 					"sizes": "120x120",
@@ -65,11 +60,6 @@
 			"name": "Speaking",
 			"url": "/speaking-engagements/",
 			"icons": [
-				{
-					"src": "/i/icons/mic.svg",
-					"sizes": "24x24",
-					"type": "image/svg+xml"
-				},
 				{
 					"src": "/i/icons/mic.png",
 					"type": "image/png",
@@ -83,11 +73,6 @@
 			"url": "/publications/",
 			"icons": [
 				{
-					"src": "/i/icons/books.svg",
-					"sizes": "114x150",
-					"type": "image/svg+xml"
-				},
-				{
 					"src": "/i/icons/books.png",
 					"type": "image/png",
 					"sizes": "120x120",
@@ -99,11 +84,6 @@
 			"name": "Interviews",
 			"url": "/interviews/",
 			"icons": [
-				{
-					"src": "/i/icons/chat.svg",
-					"sizes": "24x24",
-					"type": "image/svg+xml"
-				},
 				{
 					"src": "/i/icons/chat.png",
 					"type": "image/png",
