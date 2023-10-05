@@ -137,14 +137,15 @@ you’d like to hire me to write for you, <a href="/contact/?reason={{ contactRe
 				<p class="entry__type listing__item__type" title="Article" role="img" aria-label="Article">{{ svg_article | safe }}</p>
 				<h3 class="listing__item__title article__title">
 					{% if article.data.url %}
-						<a href="{{ article.data.url }}">{{ article.data.title }}</a>
+						{% set the_url %}{% if article.data.archived %}{{ article.data.archived }}{% else %}{{ article.data.url }}{% endif %}{% endset %}
+						<a href="{{ the_url }}">{{ article.data.title }}</a>
 					{% else %}
 						{{ article.data.title }}
 					{% endif %}
 				</h3>
 				<p class="listing__item__meta article__publisher">
 					<cite>{{ article.data.publisher }}</cite>,
-					<time datetime="{{ article.data.published | machine_date }}">{{ article.data.published | readable_date }}</time>
+					<time datetime="{{ article.data.date | machine_date }}">{{ article.data.date | readable_date }}</time>
 				</p>
 			</li>
 		{% endfor %}
