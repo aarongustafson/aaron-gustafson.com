@@ -122,6 +122,7 @@ Goodnight Mols. I love you.
 
 ## Other folks’ memories of Molly
 
+* [John Allsopp](https://webdirections.org/blog/vale-molly-holzschlag/)
 * [Faruk Ateş](https://www.linkedin.com/posts/farukates_im-deeply-saddened-by-the-news-that-my-dear-activity-7105772524147277824-ndgC)
 * [Deborah Edwards-Oñoro](https://www.lireo.com/remembering-molly-holzschlag/)
 * [Meryl Evans](https://meryl.net/in-memory-of-molly-e-holzschlag-the-fairy-godmother-of-the-web/)
