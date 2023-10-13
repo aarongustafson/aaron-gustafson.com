@@ -1,99 +1,152 @@
 {% set domain_test = r/^http\:\/\/([^\/]+)/g %}
 
-{% if has_webmentions %}
-  <hr>
+<hr {% if not has_webmentions %}hidden{% endif %}>
 
-  <section id="webmentions" class="entry__comments dont-read" {% if not has_webmentions %}aria-hidden="true"{% endif %}>
-  	
-    {% set twitter = r/twitter\.com/ %}
-		{% set mastodon = r/mastodon/ %}
-    {% set show_name = true %}
-    {% if replies.length > 0 %}
-    	<div class="webmentions webmentions--replies">
-        <h2 class="subsection__header">Webmentions</h2>
-				<ol class="webmentions__list">
-          {% for webmention in replies %}
-            {% set long_name = webmention.name.length > 200 %}
-            {% if not long_name %}
-              <li id="webmention-{{ webmention['wm-id'] }}" class="webmentions__item">
-                {% if site.debug %}
-                  <pre><code>{{ webmention | dump(2) }}</code></pre>
+<section id="webmentions" class="entry__comments dont-read" {% if not has_webmentions %}hidden{% endif %}>
+  
+  {% set twitter = r/twitter\.com/ %}
+  {% set mastodon = r/mastodon/ %}
+  {% set show_name = true %}
+  <div class="webmentions webmentions--replies" {% if likes.length === 0 %}hidden{% endif %}>
+    <h2 class="subsection__header">Webmentions</h2>
+    <ol class="webmentions__list"
+        data-webmention-collection="replies"
+        data-webmention-types="posts, mentions, replies, bookmarks"
+        data-webmention-template="webmention-comment"
+        >
+      {% if replies.length > 0 %}
+        {% for webmention in replies %}
+          {% set long_name = webmention.name.length > 200 %}
+          {% if not long_name %}
+            <li id="webmention-{{ webmention['wm-id'] }}" class="webmentions__item">
+              {% if site.debug %}
+                <pre><code>{{ webmention | dump(2) }}</code></pre>
+              {% endif %}
+              <article class="h-cite webmention webmention--reply
+                {% if webmention.wm-property %}webmention--{{ webmention.wm-property }}{% endif %}
+                {% if not webmention.author %}webmention--no-author{% endif %}
+                {% if not webmention.author.photo %}webmention--no-photo{% endif %}
+                ">
+                {% if webmention.author.photo %}
+                  {% include "partials/post/linkedface.html" %}
                 {% endif %}
-                <article class="h-cite webmention 
-                  {% if webmention.wm-property %}webmention--{{ webmention.wm-property }}{% endif %}
-                  {% if not webmention.author %}webmention--no-author{% endif %}
-                  {% if not webmention.author.photo %}webmention--no-photo{% endif %}
-                  ">
-                  {% if webmention.author.photo %}
-                    {% include "partials/post/linkedface.html" %}
+                
+                {% set title_link = false %}
+                {% set webmention_content %}{% filter trim %}
+                  {% if twitter.test(webmention.url) or mastodon.test(webmention['wm-source']) %}
+                    {% if webmention.content.html %}
+                      {{ webmention.content.html | unescape | safe }}
+                    {% else %}
+                      {{ webmention.content.text | markdownify | safe }}
+                    {% endif %}
+                  {% elif webmention.name and webmention.url and not long_name %}
+                    {% set title_link = true %}
+                    <a rel="nofollow" class="webmention__source u-url" href="{{ webmention.url }}">{{ webmention.name }}</a>
+                  {% elif webmention.name and not long_name %}
+                    {{ webmention.name }}
+                  {% elif webmention.summary %}
+                    {{ webmention.summary.html | safe }}
                   {% endif %}
-                  
-                  {% set title_link = false %}
-                  {% set webmention_content %}{% filter trim %}
-                    {% if twitter.test(webmention.url) or mastodon.test(webmention['wm-source']) %}
-                      {% if webmention.content.html %}
-                        {{ webmention.content.html | unescape | safe }}
-                      {% else %}
-                        {{ webmention.content.text | markdownify | safe }}
-                      {% endif %}
-                    {% elif webmention.name and webmention.url and not long_name %}
-                      {% set title_link = true %}
-                      <a rel="nofollow" class="webmention__source u-url" href="{{ webmention.url }}">{{ webmention.name }}</a>
-                    {% elif webmention.name and not long_name %}
-                      {{ webmention.name }}
-                    {% elif webmention.summary %}
-                      {{ webmention.summary.html | safe }}
-                    {% endif %}
-                  {% endfilter %}{% endset %}
+                {% endfilter %}{% endset %}
 
-                  {% if webmention_content %}
-                    <div class="webmention__content p-content">
-                      {{ webmention_content | unescape | replace("<a href=", '<a rel="nofollow" href=') | safe }}
-                    </div>
-                  {% endif %}
-
-                  <div class="webmention__meta">
-                    {% if webmention.published %}
-                      <time class="webmention__pubdate dt-published"
-                            datetime="{{ webmention.published | machine_date }}">{{ webmention.published | readable_date }}</time>
-                    {% endif %}
-                    {% if webmention.url and not title_link %}|
-                      <a rel="nofollow" class="webmention__source u-url" href="{{ webmention.url }}">Permalink<b class="hidden">: {{ webmention.url }}</b></a>
-                    {% endif %}
+                {% if webmention_content %}
+                  <div class="webmention__content p-content">
+                    {{ webmention_content | unescape | replace("<a href=", '<a rel="nofollow" href=') | safe }}
                   </div>
-                </article>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ol>
-      </div>
-    {% endif %}
+                {% endif %}
 
-    {% set show_name = false %}
-    {% if likes.length > 0 %}
-      <div class="webmentions webmentions--likes">
-        <h2 class="subsection__header">Likes</h2>
-        <ol class="webmentions__list">
-          {% for webmention in likes %}
-            <li id="webmention-{{ webmention['wm-id'] }}" class="webmentions__item webmention webmention--like">
-              {% include "partials/post/linkedface.html" %}
+                <div class="webmention__meta">
+                  {% if webmention.published %}
+                    <time class="webmention__pubdate dt-published"
+                          datetime="{{ webmention.published | machine_date }}">{{ webmention.published | readable_date }}</time>
+                  {% endif %}
+                  {% if webmention.url and not title_link %}|
+                    <a rel="nofollow" class="webmention__source u-url" href="{{ webmention.url }}">Permalink<b class="hidden">: {{ webmention.url }}</b></a>
+                  {% endif %}
+                </div>
+              </article>
             </li>
-          {% endfor %}
-        </ol>
-      </div>
-    {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+    </ol>
+  </div>
 
-    {% if shares.length > 0 %}
-      <div class="webmentions webmentions--reposts">
-        <h2 class="subsection__header">Shares</h2>
-        <ol class="webmentions__list">
-          {% for webmention in shares %}
-            <li id="webmention-{{ webmention['wm-id'] }}" class="webmentions__item webmention webmention--repost">
-              {% include "partials/post/linkedface.html" %}
-            </li>
-          {% endfor %}
-        </ol>
+  {% set show_name = false %}
+
+  <div class="webmentions webmentions--likes" {% if likes.length === 0 %}hidden{% endif %}>
+    <h2 class="subsection__header">Likes</h2>
+    <ol class="webmentions__list"
+        data-webmention-collection="likes"
+        data-webmention-types="likes"
+        data-webmention-data-required="author"
+        data-webmention-template="webmention-face"
+        data-webmention-template-class="webmention--like"
+        >
+      {% if likes.length > 0 %}
+        {% for webmention in likes %}
+          <li id="webmention-{{ webmention['wm-id'] }}" class="webmentions__item webmention webmention--like">
+            {% include "partials/post/linkedface.html" %}
+          </li>
+        {% endfor %}
+      {% endif %}
+    </ol>
+    
+  </div>
+
+  <div class="webmentions webmentions--reposts" {% if shares.length === 0 %}hidden{% endif %}>
+    <h2 class="subsection__header">Shares</h2>
+    <ol class="webmentions__list"
+        data-webmention-collection="reposts"
+        data-webmention-types="reposts"
+        data-webmention-template="webmention-face"
+        data-webmention-template-class="webmention--repost"
+        >
+      {% if shares.length > 0 %}
+        {% for webmention in shares %}
+          <li id="webmention-{{ webmention['wm-id'] }}" class="webmentions__item webmention webmention--repost">
+            {% include "partials/post/linkedface.html" %}
+          </li>
+        {% endfor %}
+      {% endif %}
+    </ol>
+  </div>
+
+  {% raw %}
+  <template style="display: none" hidden id="webmention-comment">
+    {% for mention in webmentions %}
+    <li class="webmentions__item">
+      <article class="h-cite webmention webmention--reply">
+        {% if mention.author %}
+        <div class="webmention__author p-author h-card">
+          <a class="u-url" href="{{ mention.author.url }}" rel="nofollow">
+            <img class="webmention__author__photo u-photo" width="48" height="48" alt="" loading="lazy" src="{{ mention.author.photo }}">
+            <b class="p-name">{{ mention.author.name }}</b>
+          </a>
+        </div>
+        {% endif %}
+        <div class="webmention__content p-content">{{ mention.content | safe }}</div>
+        <div class="webmention__meta">
+          <time class="webmention__pubdate dt-published" datetime="{{ mention.published_machine }}">{{ mention.published_human }}</time>
+          <a rel="nofollow" class="webmention__source u-url" href="{{ mention.url }}">Permalink<b class="hidden">: {{ mention.url }}</b></a>
+        </div>
+      </article>
+    </li>
+    {% endfor %}
+  </template>
+  <template style="display: none" hidden id="webmention-face">
+    {% for mention in webmentions %}
+    <li class="webmentions__item webmention TEMPLATE_CLASS">
+      <div class="webmention__author p-author h-card">
+        <a class="u-url" rel="nofollow" href="{{ mention.url }}">
+          {% if mention.author.photo %}
+          <img class="webmention__author__photo u-photo" width="48" height="48" alt="{{ mention.author.name }}" title="{{ mention.author.name }}" loading="lazy" src="{{ mention.author.photo }}">
+          {% endif %}
+        </a>
       </div>
-    {% endif %}
-  </section>
-{% endif %}
+    </li>
+    {% endfor %}
+  </template>
+</section>
+{% endraw %}
+

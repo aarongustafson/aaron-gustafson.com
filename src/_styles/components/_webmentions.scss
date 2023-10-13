@@ -147,9 +147,12 @@
 						max-inline-size: 48px;
 					}
 				}
-
-				a {
-						background-image: none !important;
+				
+				.u-url {
+					background-image: none !important;
+					display: inline-block;
+					width: 48px;
+					height: 48px;
 				}
 			}
 		}

@@ -53,19 +53,14 @@ is_post: true
 								style="view-transition-name: {{ transition_root }}-tags"
 								>{{ tag_list( tags ) }}</dd>
 
-						{% if has_webmentions or disqus.commentCount %}
-							<dt class="dont-read">Reactions</dt>
-							<dd class="dont-read">
-								<ul class="entry__jump-links">
-									{% if has_webmentions %}
-										<li class="entry__jump entry__jump--webmentions"><a href="#webmentions">{{ total_webmentions }} Webmentions</a></li>
-									{% endif %}
-									{% if disqus.commentCount %}
-										<li class="entry__jump entry__jump--comments"><a href="#comments">{{ disqus.commentCount }} Comments</a></li>
-									{% endif %}
-								</ul>
-							</dd>
-						{% endif %}
+						{% set hide_reactions = not has_webmentions and not disqus.commentCount %}
+            <dt class="dont-read" {% if hide_reactions %}hidden{% endif %}>Reactions</dt>
+            <dd class="dont-read" {% if hide_reactions %}hidden{% endif %}>
+              <ul class="entry__jump-links">
+                <li class="entry__jump entry__jump--webmentions" {% if not has_webmentions %}hidden{% endif %}><a href="#webmentions">{{ total_webmentions }} Webmentions</a></li>
+                <li class="entry__jump entry__jump--comments" {% if not disqus.commentCount %}hidden{% endif %}><a href="#comments">{{ disqus.commentCount }} Comments</a></li>
+              </ul>
+            </dd>
 
 						{% if crossposted %}
 							<dt class="dont-read">Crossposted</dt>
