@@ -159,13 +159,20 @@
 	}
 
 	.webmentions__list {
+
+		&[data-webmention-collection="likes"],
+		&[data-webmention-collection="reposts"] {
+			text-align: center;
+		}
+
 		.webmention--like,
 		.webmention--repost {
+			margin-left: -.5em;
 			margin-right: -.5em;
 
 			@supports (margin-block: 1em) {
-				margin-right: unset;
-				margin-inline-end: -.5em;
+				@include unset( margin-right margin-left );
+				margin-inline: -.25em;
 			}
 		}
 	}
