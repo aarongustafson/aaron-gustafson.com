@@ -111,6 +111,7 @@ module.exports = config => {
 				fetchpriority: "low"
 			},
 		},
+    ignore: {},
 		default: {
 			sizes: '700px, (max-width: 60em) 100vw',
 			resizedImageUrl: (src, width) => {
