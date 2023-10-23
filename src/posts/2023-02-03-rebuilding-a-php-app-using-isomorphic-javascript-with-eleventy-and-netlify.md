@@ -234,9 +234,8 @@ This tells Netlify to route requests to `/process/` through `netlify/edge-functi
 <form id="calc" method="post" action="/process/">
 ```
 
-### Isometric Edges
+### Isomorphic Edges
 
 It took a fair bit of time to figure this all out, but I’m pretty excited by the possibilities of this approach for building more static isomorphic apps. Oh, and the new site… [is fast](https://speedlify.aaron-gustafson.com/apps/).
-
 
 [^1]: Why a palindrome? Well, it makes it pretty easy to detect tip fraud because all restaurant totals will always be the same forwards & backwards. It’s a little easier than a checksum.
