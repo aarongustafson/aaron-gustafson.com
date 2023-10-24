@@ -392,3 +392,9 @@
 		{% if edition %} ({{ edition }} Edition){% endif %}
 	</cite>
 {% endmacro %}
+
+{% macro html_template( name, html ) %}
+  <template style="display: none" hidden id="{{ name }}">
+{{ html | replace( r/\w+/, " " ) | replace( r/> </, "><" ) | safe }}
+  </template>
+{% endmacro %}
