@@ -70,6 +70,41 @@
         {% endfor %}
       {% endif %}
     </ol>
+
+    <template style="display: none" hidden id="webmention-comment">
+      {% raw %}
+      {% for mention in webmentions %}
+        <li class="webmentions__item">
+          <div class="h-cite webmention webmention--reply">
+            {% if mention.author %}
+            <div class="webmention__author p-author h-card">
+              <a class="u-url" href="{{ mention.author.url }}" rel="nofollow">
+                <img class="webmention__author__photo u-photo"
+                      width="48" height="48" alt="" loading="lazy"
+                      src="{{ mention.author.photo }}"
+                      data-responsiver="ignore">
+                <b class="p-name">{{ mention.author.name }}</b>
+              </a>
+            </div>
+            {% endif %}
+            <div class="webmention__content p-content">
+              {{ mention.content | safe }}
+            </div>
+            <div class="webmention__meta">
+              <time class="webmention__pubdate dt-published"
+                    datetime="{{ mention.published_machine }}"
+                    >{{ mention.published_human }}</time>
+              <a rel="nofollow" class="webmention__source u-url"
+                  href="{{ mention.url }}"
+                  >Permalink<b class="hidden">: 
+                  {{ mention.url }}</b>
+              </a>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+      {% endraw %}
+    </template>
   </div>
 
   {% set show_name = false %}
@@ -111,55 +146,22 @@
       {% endif %}
     </ol>
   </div>
+
+  <template style="display: none" hidden id="webmention-face">
+    {% raw %}{% for mention in webmentions %}
+      <li class="webmentions__item webmention TEMPLATE_CLASS">
+        <div class="webmention__author p-author h-card">
+          <a class="u-url" rel="nofollow" href="{{ mention.url }}">
+            {% if mention.author.photo %}
+            <img class="webmention__author__photo u-photo" 
+                  width="48" height="48" alt="{{ mention.author.name }}" 
+                  title="{{ mention.author.name }}" loading="lazy"
+                  src="{{ mention.author.photo }}"
+                  data-responsiver="ignore">
+            {% endif %}
+          </a>
+        </div>
+      </li>
+    {% endfor %}{% endraw %}
+  </template>
 </section>
-
-<template style="display: none" hidden id="webmention-comment">
-{% raw %}{% for mention in webmentions %}
-  <li class="webmentions__item">
-    <div class="h-cite webmention webmention--reply">
-      {% if mention.author %}
-      <div class="webmention__author p-author h-card">
-        <a class="u-url" href="{{ mention.author.url }}" rel="nofollow">
-          <img class="webmention__author__photo u-photo"
-                width="48" height="48" alt="" loading="lazy"
-                src="{{ mention.author.photo }}"
-                data-responsiver="ignore">
-          <b class="p-name">{{ mention.author.name }}</b>
-        </a>
-      </div>
-      {% endif %}
-      <div class="webmention__content p-content">
-        {{ mention.content | safe }}
-      </div>
-      <div class="webmention__meta">
-        <time class="webmention__pubdate dt-published"
-              datetime="{{ mention.published_machine }}"
-              >{{ mention.published_human }}</time>
-        <a rel="nofollow" class="webmention__source u-url"
-            href="{{ mention.url }}"
-            >Permalink<b class="hidden">: 
-            {{ mention.url }}</b>
-        </a>
-      </div>
-    </div>
-  </li>
-{% endfor %}{% endraw %}
-</template>
-
-<template style="display: none" hidden id="webmention-face">
-{% raw %}{% for mention in webmentions %}
-  <li class="webmentions__item webmention TEMPLATE_CLASS">
-    <div class="webmention__author p-author h-card">
-      <a class="u-url" rel="nofollow" href="{{ mention.url }}">
-        {% if mention.author.photo %}
-        <img class="webmention__author__photo u-photo" 
-              width="48" height="48" alt="{{ mention.author.name }}" 
-              title="{{ mention.author.name }}" loading="lazy"
-              src="{{ mention.author.photo }}"
-              data-responsiver="ignore">
-        {% endif %}
-      </a>
-    </div>
-  </li>
-{% endfor %}{% endraw %}
-</template>
