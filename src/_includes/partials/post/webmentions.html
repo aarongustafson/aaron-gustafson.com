@@ -22,7 +22,7 @@
               {% if site.debug %}
                 <pre><code>{{ webmention | dump(2) }}</code></pre>
               {% endif %}
-              <article class="h-cite webmention webmention--reply
+              <div class="h-cite webmention webmention--reply
                 {% if webmention.wm-property %}webmention--{{ webmention.wm-property }}{% endif %}
                 {% if not webmention.author %}webmention--no-author{% endif %}
                 {% if not webmention.author.photo %}webmention--no-photo{% endif %}
@@ -64,7 +64,7 @@
                     <a rel="nofollow" class="webmention__source u-url" href="{{ webmention.url }}">Permalink<b class="hidden">: {{ webmention.url }}</b></a>
                   {% endif %}
                 </div>
-              </article>
+              </div>
             </li>
           {% endif %}
         {% endfor %}
@@ -116,7 +116,7 @@
 <template style="display: none" hidden id="webmention-comment">
 {% raw %}{% for mention in webmentions %}
   <li class="webmentions__item">
-    <article class="h-cite webmention webmention--reply">
+    <div class="h-cite webmention webmention--reply">
       {% if mention.author %}
       <div class="webmention__author p-author h-card">
         <a class="u-url" href="{{ mention.author.url }}" rel="nofollow">
@@ -141,7 +141,7 @@
             {{ mention.url }}</b>
         </a>
       </div>
-    </article>
+    </div>
   </li>
 {% endfor %}{% endraw %}
 </template>

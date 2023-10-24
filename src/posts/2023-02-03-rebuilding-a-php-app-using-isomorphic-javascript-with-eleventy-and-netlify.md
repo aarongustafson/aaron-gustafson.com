@@ -111,22 +111,22 @@ This file contains the central logic of the tip calculator. It’s written in va
 
 The homepage of the site is also home to the tip calculation form. Below the form is an embedded `script` element containing the logic for interacting with the DOM for the client-side version of the tip calculator. I include the logic at the top of that `script`:
 
-{% raw %}
 ```njk
+{% raw %}
 <script>
   {% include "js/tipr.js" %}
   
   // The rest of the JavaScript logic
 </script>
-```
 {% endraw %}
+```
 
 ### `src/j/process.njk`
 
 This file exists solely to export the JavaScript logic from the include in a way that it can be consumed by the Edge Function. It will render a new JavaScript file called "process.js" and turns the central processing logic into a JavaScript module that [Deno](https://deno.land/) can use (Deno powers Netlify’s Edge Functions):
 
-{% raw %}
 ```njk
+{% raw %}
 ---
 layout: false
 permalink: /j/process.js
@@ -135,15 +135,15 @@ permalink: /j/process.js
 {% include "js/tipr.js" %}
 
 export { process };
-```
 {% endraw %}
+```
 
 ### `netlify/edge-functions/tipr.js`
 
 We define Edge Functions for use with Netlify in the `netlify/edge-functions` folder. To make use of the core JavaScript logic in the Edge Function, I can import it from the module created above before using it in the function itself:
 
-{% raw %}
 ```js
+{% raw %}
 import { process } from "./../../_site/j/process.js";
 
 function setCookie(context, name, value) {
@@ -185,15 +185,15 @@ export default async (request, context) => {
 
   return context.next();
 };
-```
 {% endraw %}
+```
 
 What’s happening here is that when a request comes in to this Edge Function, the default export will be executed. Most of this code is directly lifted from [Netlify’s Edge Functions demo site](https://edge-functions-examples.netlify.app/). I grab the form data, pass it into the `process` function, and then set browser cookies for each of the returned values before redirecting the request to [the result page](https://github.com/aarongustafson/tipr.mobi/blob/main/src/results.html).
 
 On that page, I use Eleventy’s Edge plugin to render the check, tip, and total amounts:
 
-{% raw %}
 ```njk
+{% raw %}
 {% edge %}
   {% set check = eleventy.edge.cookies.check %}
   {% set tip = eleventy.edge.cookies.tip %}
@@ -211,8 +211,8 @@ On that page, I use Eleventy’s Edge plugin to render the check, tip, and total
     <td>${{ total }}</td>
   </tr>
 {% endedge %}
-```
 {% endraw %}
+```
 
 Side note: The cookies get reset using [a separate Edge Function](https://github.com/aarongustafson/tipr.mobi/blob/main/netlify/edge-functions/reset.js).
 

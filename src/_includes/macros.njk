@@ -342,7 +342,7 @@
 				<li class="social-links__item">
 					<a class="social-link social-link--{{ profile_slug }}" href="{{ profile.url }}">
 						{{ social_icon( profile_slug ) | replace('<svg ','<svg class="social-link__icon" ') | safe }}
-						<b class="social-link__text">{{ profile.title }}</b>
+						<b class="social-link__text">{{ profile.title | safe }}</b>
 					</a>
 				</li>
 			{% endfor %}

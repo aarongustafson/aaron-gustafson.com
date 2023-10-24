@@ -42,6 +42,12 @@ module.exports = config => {
 							})
 						 .use(require("markdown-it-attrs"))
 						 .use(require('markdown-it-footnote'));
+	md.renderer.rules.footnote_block_open = () => (
+		'<hr class="footnotes-sep">\n' +
+		'<section class="footnotes">\n' +
+		'<h4 class="hidden">Footnotes</h4>\n' +
+		'<ol class="footnotes-list">\n'
+	);
 	md.renderer.rules.footnote_caption = (tokens, idx/*, options, env, slf*/) => {
 		var n = Number(tokens[idx].meta.id + 1).toString();
 
@@ -86,7 +92,7 @@ module.exports = config => {
 	config.addPlugin(readingTime);
 	config.addPlugin(imagesResponsiver, {
 		hero: {
-			sizes: '700px, (max-width: 60em) 100vw',
+			sizes: '(min-width:60em) 700px, (max-width: 60em) 100vw',
 			resizedImageUrl: (src, width) => {
 				return PRODUCTION ? `https://res.cloudinary.com/aarongustafson/image/fetch/q_auto,f_auto,w_${width}/${src}` : src.replace(config.hostname,"");
 			},
@@ -111,9 +117,9 @@ module.exports = config => {
 				fetchpriority: "low"
 			},
 		},
-    ignore: {},
+		ignore: {},
 		default: {
-			sizes: '700px, (max-width: 60em) 100vw',
+			sizes: '(min-width:60em) 700px, (max-width: 60em) 100vw',
 			resizedImageUrl: (src, width) => {
 				return PRODUCTION ? `https://res.cloudinary.com/aarongustafson/image/fetch/q_auto,f_auto,w_${width}/${src}` : src.replace(config.hostname,"");
 			},

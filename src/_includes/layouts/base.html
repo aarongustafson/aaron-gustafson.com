@@ -4,8 +4,8 @@
 	<head>
 		<meta charset="utf-8">
 
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta http-equiv="cleartype" content="on">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--[if IEMobile]><meta http-equiv="cleartype" content="on"><![endif]-->
 		<meta name="view-transition" content="same-origin">
 
 		{% seo "" %}
@@ -35,7 +35,7 @@
 			<link href="{{ feed.json }}" rel="alternate" title="{{ feed.title }}{{ site.title }}" type="application/json">
 		{% endfor %}
 		
-		<link rel="preload" as="script" src="/j/main{% if site.minify %}.min{% endif %}.js">
+		<link rel="preload" as="script" href="/j/main{% if site.minify %}.min{% endif %}.js">
 		{% for script in page.javascripts.head %}
 			<script src="/j/{{ script }}{% if site.minify %}.min{% endif %}.js" async></script>
 		{% endfor %}
