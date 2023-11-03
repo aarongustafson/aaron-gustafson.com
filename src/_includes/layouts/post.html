@@ -161,3 +161,7 @@ is_post: true
 		{% include "partials/post/jsonld.html" %}
 	</script>
 {% endblock %}
+
+{% block template_end %}
+  {% include "partials/post/webmentions-templates.html" %}
+{% endblock %}

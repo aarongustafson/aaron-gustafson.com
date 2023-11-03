@@ -113,6 +113,8 @@
 			<script src="/j/{{ script }}{% if site.minify %}.min{% endif %}.js" async></script>
 		{% endfor %}
 
+    {% block template_end %}{% endblock %}
+
 	</body>
 
 </html>

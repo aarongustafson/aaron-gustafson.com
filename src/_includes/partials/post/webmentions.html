@@ -168,7 +168,9 @@
       {% endfor %}
     {% endraw %}
   {%- endset -%}
-  {{ html_template( "webmention-comment", tpl_comment ) }}
-  {{ html_template( "webmention-face", tpl_face ) }}
+  {%- set template_end -%}
+    {{ html_template( "webmention-comment", tpl_comment ) }}
+    {{ html_template( "webmention-face", tpl_face ) }}
+  {%- endset -%}
 
 </section>
