@@ -2,7 +2,7 @@
 	"promptVSCodeSettings": true,
 	"geolocation": {
 		"data": {
-			"city": "Seattle",
+			"city": "Redmond",
 			"country": {
 				"code": "US",
 				"name": "United States"
@@ -12,9 +12,9 @@
 				"name": "Washington"
 			},
 			"timezone": "America/Los_Angeles",
-			"latitude": 47.6008,
-			"longitude": -122.3248
+			"latitude": 47.6711,
+			"longitude": -122.1253
 		},
-		"timestamp": 1698006584284
+		"timestamp": 1699293949450
 	}
 }
