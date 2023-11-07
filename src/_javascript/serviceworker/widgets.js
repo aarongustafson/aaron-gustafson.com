@@ -100,6 +100,13 @@ async function initializeWidget( widget )
 	return;
 }
 
+async function updateWidgetByTag( tag )
+{
+  var widget = await self.widgets.matchAll({ tag });
+  console.log( "updating", widget, "from serverEvent" );
+  await updateWidget( widget );
+}
+
 async function updateWidget( widget )
 {
 	const template = await getTemplate( widget.definition.msAcTemplate );
