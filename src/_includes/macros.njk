@@ -314,14 +314,18 @@
   <time {% if class %}class="{{ class }}"{% endif %} datetime="{{ date | machine_date }}">{{ date | readable_date }}</time>
 {% endmacro %}
 
-{% macro tag_list( tags ) %}
+{% macro tag_list( tags, limit=false ) %}
   {% for tag in tags %}
-    {% if forloop.first %}
-      <span class="post__tags">
-    {% endif %}
-    <a class="post__tag" rel="tag" href="/tags/{{ tag | lower | slugify }}/" aria-label="See all posts and links tagged “{{ tag }}”">{{ tag  }}</a>
-    {% if forloop.last %}
-      </span>
+    {% if limit and loop.index > limit %}
+      {# Do nothing #}
+    {% else %}
+      {% if forloop.first %}
+        <span class="post__tags">
+      {% endif %}
+      <a class="post__tag" rel="tag" href="/tags/{{ tag | lower | slugify }}/" aria-label="See all posts and links tagged “{{ tag }}”">{{ tag  }}</a>
+      {% if forloop.last %}
+        </span>
+      {% endif %}
     {% endif %}
   {% endfor %}
 {% endmacro %}
