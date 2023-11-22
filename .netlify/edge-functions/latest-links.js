@@ -1,4 +1,4 @@
-const INTERVAL_MINUTES = 15 * 60 * 1000;
+const INTERVAL_MINUTES = 60 * 60 * 1000;
 import JSONFeedStream from "./JSONFeedStream.js"
 
 export default async function latestLinks() {
