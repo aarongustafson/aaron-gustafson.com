@@ -64,7 +64,7 @@ module.exports = {
 				let og_image = false;
 				// Try to parse the open graph data
 				let response = await EleventyFetch(
-          `/api/og-image/?key=${process.env.WEBMENTION_APP_TOKEN}&url=${url}`,
+          `https://www.aaron-gustafson.com/api/og-image/?key=${process.env.WEBMENTION_APP_TOKEN}&url=${url}`,
           {
             duration: "1y",
             type: "json"
