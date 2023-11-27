@@ -5,26 +5,6 @@ const yaml = require('js-yaml');
 let og_images = yaml.load(fs.readFileSync(CACHE_FILE_PATH));
 const CACHE_404_PATH =  '_cache/404s.yml';
 const cached404s = yaml.load(fs.readFileSync(CACHE_404_PATH));
-const ogs = require('open-graph-scraper');
-
-async function getOpenGraphImage(url) {
-	const data = await ogs({
-		url,
-		fetchOptions: {
-			headers: {
-				'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36'
-			}
-		}
-	});
-	
-	// happy path
-	if ( ! data.error && data.result.ogImage.length > 0) {
-		return data.result.ogImage[0].url;
-	}
-
-	console.log(`>>> Could not gather OpenGraph image`);
-	return false;
-}
 
 function writeToCache( url, value, cache ) {
 	cache = cache || CACHE_FILE_PATH;
@@ -79,14 +59,12 @@ module.exports = {
 				if ( 'is_404' in data ) {
 					return false;
 				}
+
 				let og_image = false;
 				// Try to parse the open graph data
-				og_image = await getOpenGraphImage(url);
-
-				// Backup: Personal screenshot service
-				//if ( og_image === false ) {
-				//	og_image = `https://screenshots.aaron-gustafson.com/${encodeURI(url)}/`;
-				//}
+				let response = await fetch( `/api/og-image/?key=${process.env.WEBMENTION_APP_TOKEN}&url=${url}` );
+        response = await response.json();
+        og_image = response.image;
 
 				writeToCache(url, og_image);
 				return og_image;

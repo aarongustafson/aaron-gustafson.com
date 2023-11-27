@@ -98,6 +98,13 @@
 [functions."deploy-succeeded"]
 	included_files = ["_cache/*.*"]
 
+[functions]
+	deno_import_map = "./.netlify/edge-functions/import_map.json"
+
 [[edge_functions]]
 	path = "/api/latest-links"
 	function = "latest-links"
+
+[[edge_functions]]
+	path = "/api/og-image"
+	function = "og-image"
