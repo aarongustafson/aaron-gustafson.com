@@ -1,5 +1,6 @@
 require('dotenv').config();
 const fs = require('fs');
+const EleventyFetch = require("@11ty/eleventy-fetch");
 const CACHE_FILE_PATH = '_cache/og_images.yml';
 const yaml = require('js-yaml');
 let og_images = yaml.load(fs.readFileSync(CACHE_FILE_PATH));
@@ -62,8 +63,13 @@ module.exports = {
 
 				let og_image = false;
 				// Try to parse the open graph data
-				let response = await fetch( `/api/og-image/?key=${process.env.WEBMENTION_APP_TOKEN}&url=${url}` );
-        response = await response.json();
+				let response = await EleventyFetch(
+          `/api/og-image/?key=${process.env.WEBMENTION_APP_TOKEN}&url=${url}`,
+          {
+            duration: "1y",
+            type: "json"
+          }
+        );
         og_image = response.image;
 
 				writeToCache(url, og_image);
