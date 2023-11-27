@@ -107,7 +107,10 @@ module.exports = config => {
 		thumbnail: {
 			sizes: '100px',
 			resizedImageUrl: (src) => {
-				return PRODUCTION ? `https://res.cloudinary.com/aarongustafson/image/fetch/q_100,f_auto,w_100,h_100,c_fill/${src}` : src.replace(config.hostname,"");
+				return PRODUCTION ?
+					`https://res.cloudinary.com/aarongustafson/image/fetch/q_100,f_auto,w_100,h_100,c_fill/${encodeURIComponent(src)}`
+					:
+					src.replace(config.hostname,"");
 			},
 			attributes: {
 				loading: 'lazy',

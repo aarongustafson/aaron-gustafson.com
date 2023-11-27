@@ -54,7 +54,7 @@
 		"css-what": "^6.1.0",
 		"dotenv": "^16.0.2",
 		"eleventy-plugin-embed-everything": "^1.14.1",
-		"eleventy-plugin-images-responsiver": "^2.0.0",
+		"eleventy-plugin-images-responsiver": "^2.2.0",
 		"eleventy-plugin-reading-time": "0.0.1",
 		"eleventy-plugin-seo": "aarongustafson/eleventy-plugin-seo#develop",
 		"eleventy-plugin-svg-contents": "^0.7.0",
