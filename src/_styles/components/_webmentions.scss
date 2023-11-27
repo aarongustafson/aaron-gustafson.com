@@ -177,6 +177,7 @@
 
       a.u-url img {
         transition: transform 0.2s ease-in-out, border-width 0.2s ease-in-out;
+        position: absolute;
       }
       a.u-url:hover,
       a.u-url:focus {
@@ -187,7 +188,6 @@
           transform: scale(1.25);
           border-width: 3px;
           z-index: 1;
-          position: absolute;
         }
       }
 		}
