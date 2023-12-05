@@ -15,7 +15,7 @@ github_edit: "_layouts/blog.html"
 			
 			{% for post in posts %}
 				{% set content %}{% if post.data.page.excerpt %}<p>{{ post.data.page.excerpt | markdownify | safe }}</p>{% else %}{{ post.templateContent | safe }}{% endif %}{% endset %}
-				{% set is_excerpted = ( post.templateContent != content ) %}
+				{% set is_excerpted = ( "templateContent" in post and post.templateContent != content ) %}
 				{% set post_title %}{{ post.data.title | markdownify | strip_links | safe }}{% endset %}
 				{% set transition_root %}post-{{ post.fileSlug }}{% endset %}
 				{% set type = post.inputPath | content_type %}

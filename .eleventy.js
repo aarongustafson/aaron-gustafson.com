@@ -157,6 +157,11 @@ module.exports = config => {
 	});
 	
 	// Collections
+	config.addCollection("notebook", collectionApi => {
+		return collectionApi
+						 .getFilteredByGlob(["**/posts/*.md", "**/links/*.md"])
+						 .reverse();
+	});
 	config.addCollection("posts", collectionApi => {
 		return collectionApi
 						 .getFilteredByGlob("**/posts/*.md")

@@ -18,8 +18,9 @@ const isDevEnv = process.env.ELEVENTY_ENV === 'development';
 const todaysDate = new Date();
 
 function showPost(data) {
-	const isDraft = 'draft' in data && data.draft !== false;
+  const isDraft = 'draft' in data && data.draft !== false;
 	const isFutureDate = data.page.date > todaysDate;
+	//console.log('slug', data.page.fileSlug, 'draft', isDraft, 'future', isFutureDate);
 	return isDevEnv || (!isDraft && !isFutureDate);
 }
 
