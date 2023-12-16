@@ -8,7 +8,7 @@ twitter_text: "Are you still relying on third party share widgets? You should re
 hero:
   src: /i/posts/2023-12-15/hero.jpg
   credit: "Aaron Gustafson × Designer"
-  alt: "Isolated picture of two humanoid robots. One is very large, the other one is small. The smaller one is handing the other a piece of paper with the word "share" on it to the larger robot. Style of a pulp science fiction novel cover."
+  alt: "Isolated picture of two humanoid robots. One is very large, the other one is small. The smaller one is handing the other a piece of paper with the word “share” on it to the larger robot. Style of a pulp science fiction novel cover."
   url: https://www.bing.com/images/create/isolated-picture-of-two-humanoid-robots-one-is-ve/1-657cb1bf085f4f57a3e271f6c22c9ba1?id=lweqQyJHIsCUx%2bCZPkiFfQ%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&mode=overlay
   offset: "0"
 ---
