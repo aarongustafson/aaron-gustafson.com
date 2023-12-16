@@ -46,7 +46,7 @@
 			}
 	
 			tbody {
-				@include rem( font-size, $font-size-h3 );
+				@include rem( font-size, $font-size-small );
 			}
 	
 			tr {
@@ -66,9 +66,7 @@
 				padding-left: 0;
 
 				@supports (margin-block: 1em) {
-					@include unset( padding );
-					padding-block: $table-spacing;
-					padding-inline: $table-spacing;
+					padding-left: unset;
 					padding-inline-start: 0;
 				}
 		
