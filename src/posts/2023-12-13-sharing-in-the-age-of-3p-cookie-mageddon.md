@@ -31,21 +31,22 @@ Each service is a little different, but all function similarly. I support the fo
 <tr>
 <th scope="col">Site</th>
 <th scope="col">Destination</th>
-<th scope="col">Send URL As</th>
-<th scope="col">Optional Parameters</th>
+<th scope="col">URL</th>
+<th scope="col">Optional Params</th>
 </tr>
 </thead>
 <tbody>
-<tr><th scope="row">Twitter / X</th><td>`https://twitter.com/intent/tweet`</td><td>`url`</td><td></td></tr>
-<tr><th scope="row">Hacker News</th><td>`https://news.ycombinator.com/submitlink`</td><td>`u`</td><td>`t` = the title you want to share </td></tr>
-<tr><th scope="row">Facebook</th><td>`http://www.facebook.com/sharer.php`</td><td>`u`</td><td></td></tr>
-<tr><th scope="row">LinkedIn</th><td>`https://www.linkedin.com/cws/share`</td><td>`url`</td><td></td></tr>
-<tr><th scope="row">Pinterest</th><td>`http://pinterest.com/pin/create/button/`</td><td>`url`</td><td>`media` = an image to share<br>`description` = the text you want to share</td></tr>
+<tr><th scope="row">Twitter / X</th><td>https://twitter.com/intent/tweet</td><td><code>url</code></td><td></td></tr>
+<tr><th scope="row">Hacker News</th><td>https://news.ycombinator.com/submitlink</td><td><code>u</code></td><td><code>t</code> = the title you want to share </td></tr>
+<tr><th scope="row">Facebook</th><td>http://www.facebook.com/sharer.php</td><td><code>u</code></td><td></td></tr>
+<tr><th scope="row">LinkedIn</th><td>https://www.linkedin.com/cws/share</td><td><code>url</code></td><td></td></tr>
+<tr><th scope="row">Pinterest</th><td>http://pinterest.com/pin/create/button/</td><td><code>url</code></td><td><code>media</code> = an image to share<br><code>description</code> = the text you want to share</td></tr>
 </tbody>
 </table>
 
 Using this information, I created [a partial template for use on any page in this site](https://github.com/aarongustafson/aaron-gustafson.com/blob/main/src/_includes/partials/post/sharing.html) (though I mainly use it on blog posts right now). Each link includes useful text content (e.g., “Share on ______”) and a local SVG of the service’s icon. Here’s a simplified overview of the markup I use:
 
+{% raw %}
 ```html
 <ul class="social-links social-links--share">
   <li class="social-links__item">
@@ -56,12 +57,13 @@ Using this information, I created [a partial template for use on any page in thi
   </li>
 </ul>
 ```
+{% endraw %}
 
 You can check out the baseline experience on this very page by disabling JavaScript.
 
 <figure id="2023-12-14-01">
 
-![](https://www.aaron-gustafson.com/i/posts/2023-12-15/01.png)
+![](https://www.aaron-gustafson.com/i/posts/2023-12-15/1.png)
 
 <figcaption>My baseline sharing component is a list of icon links.</figcaption>
 </figure>
