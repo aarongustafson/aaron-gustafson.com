@@ -19,7 +19,7 @@ Over a decade ago, I wrote up [detailed instructions on how to enable users to s
 
 ## Sharing, the Old-fashioned Way
 
-When it comes to sharing, there are myriad ways to do it. If you’re at all familiar with my work, it should come as no surprise that I always start with a universally-useable and accessible baseline and then [progressively enhance](/tags/progressive-enhancement) things from there. Thankfully, every social media site I commonly use (with the exception of the Fediverse) makes this pretty easy by providing a form that accepts inbound content via the query string.[^1] For example, here is LinkedIn’s: `https://www.linkedin.com/cws/share`. Adding a `url` to the query string lets you share that link in automatically. You can [try it by clicking this link](https://www.linkedin.com/cws/share?url=https://www.aaron-gustafson.com/notebook/rebuilding-a-php-app-using-isomorphic-javascript-with-eleventy-and-netlify/).
+When it comes to sharing, there are myriad ways to do it. If you’re at all familiar with my work, it should come as no surprise that I always start with a universally-useable and accessible baseline and then [progressively enhance](/tags/progressive-enhancement) things from there. Thankfully, every social media site I commonly use (with the exception of the Fediverse) makes this pretty easy by providing a form that accepts inbound content via the query string.[^1] For example, here is LinkedIn’s: `https://www.linkedin.com/<wbr>cws/share`. Adding a `url` to the query string lets you share that link in automatically. You can [try it by clicking this link](https://www.linkedin.com/cws/share?url=https://www.aaron-gustafson.com/notebook/rebuilding-a-php-app-using-isomorphic-javascript-with-eleventy-and-netlify/).
 
 [^1]: Interesting side-note: If you own a form like this on your site, [it makes a great share target](/notebook/my-own-personal-pwa/).
 
@@ -36,11 +36,11 @@ Each service is a little different, but all function similarly. I support the fo
 </tr>
 </thead>
 <tbody>
-<tr><th scope="row">Twitter / X</th><td>https://twitter.com/intent/tweet</td><td><code>url</code></td><td></td></tr>
-<tr><th scope="row">Hacker News</th><td>https://news.ycombinator.com/submitlink</td><td><code>u</code></td><td><code>t</code> = the title you want to share </td></tr>
-<tr><th scope="row">Facebook</th><td>http://www.facebook.com/sharer.php</td><td><code>u</code></td><td></td></tr>
+<tr><th scope="row">Twitter / X</th><td>https://twitter.com/<wbr>intent/tweet</td><td><code>url</code></td><td></td></tr>
+<tr><th scope="row">Hacker News</th><td>https://news.ycombinator.com/<wbr>submitlink</td><td><code>u</code></td><td><code>t</code> = the title you want to share </td></tr>
+<tr><th scope="row">Facebook</th><td>http://www.facebook.com/<wbr>sharer.php</td><td><code>u</code></td><td></td></tr>
 <tr><th scope="row">LinkedIn</th><td>https://www.linkedin.com/cws/share</td><td><code>url</code></td><td></td></tr>
-<tr><th scope="row">Pinterest</th><td>http://pinterest.com/pin/create/button/</td><td><code>url</code></td><td><code>media</code> = an image to share<br><code>description</code> = the text you want to share</td></tr>
+<tr><th scope="row">Pinterest</th><td>http://pinterest.com/<wbr>pin/create/button/</td><td><code>url</code></td><td><code>media</code> = an image to share<br><code>description</code> = the text you want to share</td></tr>
 </tbody>
 </table>
 
