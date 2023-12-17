@@ -38,9 +38,9 @@ Each service is a little different, but all function similarly. I support the fo
 <tbody>
 <tr><th scope="row">Twitter / X</th><td>https://twitter.com/<wbr>intent/tweet</td><td><code>url</code></td><td></td></tr>
 <tr><th scope="row">Hacker News</th><td>https://news.ycombinator.com/<wbr>submitlink</td><td><code>u</code></td><td><code>t</code> = the title you want to share </td></tr>
-<tr><th scope="row">Facebook</th><td>http://www.facebook.com/<wbr>sharer.php</td><td><code>u</code></td><td></td></tr>
+<tr><th scope="row">Facebook</th><td>https://www.facebook.com/<wbr>sharer.php</td><td><code>u</code></td><td></td></tr>
 <tr><th scope="row">LinkedIn</th><td>https://www.linkedin.com/cws/share</td><td><code>url</code></td><td></td></tr>
-<tr><th scope="row">Pinterest</th><td>http://pinterest.com/<wbr>pin/create/button/</td><td><code>url</code></td><td><code>media</code> = an image to share<br><code>description</code> = the text you want to share</td></tr>
+<tr><th scope="row">Pinterest</th><td>https://pinterest.com/<wbr>pin/create/button/</td><td><code>url</code></td><td><code>media</code> = an image to share<br><code>description</code> = the text you want to share</td></tr>
 </tbody>
 </table>
 
