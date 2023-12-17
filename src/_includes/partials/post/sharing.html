@@ -42,6 +42,12 @@
 
 <script>
 	!(function(window, document, navigator){
+
+		// Filter older browsers
+		if ( ! ( 'querySelectorAll' in document ) {
+			return;
+		}
+		
 		function prepForPopup() {
 			var screen_width = "visualViewport" in window ?
 						window.visualViewport.width : window.innerWidth,
