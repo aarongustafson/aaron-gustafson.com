@@ -5,6 +5,7 @@
 	"main": ".eleventy.js",
 	"scripts": {
 		"start": "gulp && concurrently 'gulp watch' 'npx eleventy --serve --quiet --incremental --ignore-initial'",
+		"serve": "cd dist && npx http-server -p 8888 -a 127.0.0.1",
 		"clean": "rm -Rf ./dist/* && rm -Rf ./dist/.*",
 		"debug": "DEBUG=Eleventy* npx eleventy --dryrun",
 		"prebuild": "gulp prebuild",
