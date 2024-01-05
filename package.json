@@ -101,6 +101,7 @@
 		"widont": "^0.3.3"
 	},
 	"devDependencies": {
+		"@zachleat/announcement-banner": "^1.0.8",
 		"broken-link-checker": "^0.7.8",
 		"hygen": "^6.2.11",
 		"netlify-cli": "^14.1.0"

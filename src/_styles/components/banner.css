@@ -1,0 +1,15 @@
+.banner--hide announcement-banner,
+announcement-banner[hidden] {
+  display: none;
+}
+/* The close button will not be visible until the component is registered,
+ * preventing ghost clicks on the button before the event listener is added.
+ */
+button[data-banner-close] {
+  margin-top: 0;
+  margin-block: 0;
+}
+announcement-banner:not(:defined) [data-banner-close] {
+  opacity: 0;
+  pointer-events: none;
+}

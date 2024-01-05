@@ -24,6 +24,7 @@
 			<link rel="stylesheet" href="/c/advanced{% if site.minify %}.min{% endif %}.css" media="only screen">
 		</noscript>
 		<script>{% include "partials/global/dark-mode.js" %}</script>
+		<script>{% include "partials/global/banner.js" %}</script>
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="theme-color" content="#27831B">
@@ -62,9 +63,12 @@
 	<body {% if body_class %} class="{{ body_class }}" {% endif %} >
 
 		{% set alert %}
-			<div class="alert" role="complementary" aria-label="Site Notice">
-				<strong>This site is <a href="/notebook/a-grand-experiment/">undergoing an open redesign</a>, so if it looks strange, that’s why.</strong>
-			</div>
+			<announcement-banner>
+				<div class="alert" role="complementary" aria-label="Site Notice">
+					<strong>This site is <a href="/notebook/a-grand-experiment/">undergoing an open redesign</a>, so if it looks strange, that’s why.</strong>
+					<button type="button" data-banner-close>Close</button>
+				</div>
+			</announcement-banner>
 		{% endset %}
 		
 		{% if body_class == "home" %}{{ alert | safe }}{% endif %}
@@ -104,6 +108,7 @@
 
 		<script src="/j/main{% if site.minify %}.min{% endif %}.js"></script>
 		<script>{% include "partials/global/register-serviceworker.js" %}</script>
+		<script src="/j/web-components{% if site.minify %}.min{% endif %}.js"></script>
 		{% if is_post %}
 			<script src="/j/post{% if site.minify %}.min{% endif %}.js" async></script>
 			<script src="/j/lite-youtube-embed{% if site.minify %}.min{% endif %}.js" async></script>
@@ -113,7 +118,7 @@
 			<script src="/j/{{ script }}{% if site.minify %}.min{% endif %}.js" async></script>
 		{% endfor %}
 
-    {% block template_end %}{% endblock %}
+		{% block template_end %}{% endblock %}
 
 	</body>
 
