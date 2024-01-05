@@ -1,7 +1,7 @@
 class Banner extends HTMLElement {
   
   connectedCallback() {
-    Banner.storageKey = "banner--cta-url";
+    this.storageKey = "banner--cta-url";
     let button = this.querySelector("[data-banner-close]");
     if(button) {
       button.addEventListener("click", () => {
@@ -29,7 +29,7 @@ class Banner extends HTMLElement {
         store = localStorage;
       }
 
-      store.setItem(Banner.storageKey, storageValue);
+      store.setItem(this.storageKey, storageValue);
     }
   }
 
