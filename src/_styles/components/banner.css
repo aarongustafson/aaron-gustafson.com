@@ -1,3 +1,6 @@
+announcement-banner {
+  margin: 0;
+}
 .banner--hide announcement-banner,
 announcement-banner[hidden] {
   display: none;
