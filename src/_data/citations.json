@@ -85,6 +85,11 @@
 	],
 	"articles": [
 		{
+			"title": "Engineering Adaptive Information Graphics for Disabled Communities: A Case Study with Public Space Indoor Maps",
+			"author": "Anuradha Madugalla; Yutan Huang; John Grundy; Min Hee Cho; Lasith Koswatta Gamage; Tristan Leao; Sam Thiele",
+			"url": "https://arxiv.org/abs/2401.05659"
+		},
+		{
 			"title": "Progressive",
 			"author": "Matthias Ott",
 			"url": "https://matthiasott.com/notes/progressive"
