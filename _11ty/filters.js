@@ -71,7 +71,10 @@ module.exports = {
 	machine_date: date => {
 		return parse_date( date ).toISO();
 	},
-
+  year: date => {
+		return parse_date( date ).toFormat("yyyy");
+	},
+	
 	strip_links: text => {
 		return text.replace(/<\/?a[^>]*>/gi, "");
 	},

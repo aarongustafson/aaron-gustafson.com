@@ -1,0 +1,65 @@
+---
+layout: null
+permalink: "/aaron-gustafson.bib"
+---
+
+{% for item in collections.books %}
+  {% if item.data.type == "authored" or item.data.type == "contributed" %}
+    {% set itemslug = item.data.author + " " + item.data.title %}
+    {% if item.data.edition %}{% set itemslug = itemslug + " " + item.data.edition +" Edition" %}{% endif %}
+{% raw %}@book{{% endraw %}{{ itemslug | slugify }},
+ author    = "{{ item.data.author }}",
+ title     = "{{ item.data.title | replace("&amp;", "&") | safe }}",
+ {% if item.data.edition %}
+ edition   = "{{ item.data.edition }}",
+ {% endif %}
+ publisher = "{{ item.data.publisher | replace("&amp;", "&") | safe }}",
+ year      =  {{ item.date | year }},
+ url       = "{{ item.data.url }}",
+{% raw %}}{% endraw %}
+  {% endif %}
+{% endfor %}
+
+{% for item in collections.articles %}
+  {% set itemslug = "Aaron Gustafson " + item.data.title %}
+{% raw %}@article{{% endraw %}{{ itemslug | slugify }},
+ author    = "Aaron Gustafson",
+ title     = "{{ item.data.title | replace("&amp;", "&") | safe }}",
+ journal   = "{{ item.data.publisher | replace("&amp;", "&") | safe }}",
+ year      =  {{ item.date | year }},
+ url       = "{{ item.data.url }}",
+{% raw %}}{% endraw %}
+{% endfor %}
+
+{% set past_events = speaking_engagements | past %}
+{% for item in collections.talks %}
+  {% set itemslug_base = "Aaron Gustafson " + item.data.title %}
+  {% for event in item.data.events %}
+    {% set itemslug = itemslug_base + " " + event %}
+    {% set author = ["Aaron Gustafson"] %}
+    {% if item.data.with %}
+      {% set w = item.data.with | gather( 'event', event ) %}
+      {% set w_length = w | length %}
+      {% for person in w %}
+        {% set author = author.concat( person.name ) %}
+      {% endfor %}
+      {% set w_last = author | last %}
+      {% if w_length > 1 %}
+        {% set w_last = ", and " + w_last %}
+      {% else %}
+        {% set w_last = " and " + w_last %}
+      {% endif %}
+      {% set author = ( author.pop(), author.join(', ') ) + w_last %}
+    {% endif %}
+    {% set p_event = speaking_engagements | pluck("id", event) %}
+    {% set event_series = p_event.title %}
+    {% set event_year = p_event.date | year %}
+{% raw %}@booklet{{% endraw %}{{ itemslug | slugify }},
+ author       = "{{ author }}",
+ title        = "{{ item.data.title | replace("&amp;", "&") | safe }}",
+ howpublished = "{{ event_series | replace("&amp;", "&") | safe }}",
+ year         =  {{ event_year }},
+ url          = "{{ site.url + item.url }}",
+{% raw %}}{% endraw %}
+  {% endfor %}
+{% endfor %}
