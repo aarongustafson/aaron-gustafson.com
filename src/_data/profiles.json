@@ -56,6 +56,14 @@
 		"promote": true
   },
   {
+    "site": "Academia.edu",
+    "username": "GustafsonAaron",
+    "url": "https://independent.academia.edu/GustafsonAaron",
+    "title": "Follow me on Academia.edu",
+    "category": "profile",
+    "active": true
+  },
+  {
     "site": "Facebook",
     "username": "AaronMGustafson",
     "url": "https://www.facebook.com/aaronmgustafson",

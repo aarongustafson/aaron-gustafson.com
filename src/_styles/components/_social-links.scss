@@ -81,6 +81,11 @@ $social-buttons: (
 		size: 20,
 		offset: 4
 	),
+  academiaedu: (
+		color: #000,
+		size: 20,
+		offset: 4
+	),
 );
 
 @include breakup-breakpoint( "global" ) {
