@@ -111,7 +111,7 @@ is_post: true
 						<p>Many thanks to
 						{% for person, url in thanks %}
 							{% set link %}{%- if url %}<a href="{{ url }}">{{ person }}</a>{% else %}{{ person }}{% endif -%}{% endset %}
-							{% if thanks.size == 1 %}
+							{% if loop.last and loop.first %}
 								{{ link | safe }}
 							{% elif loop.last %}
 								and {{ link | safe }}
