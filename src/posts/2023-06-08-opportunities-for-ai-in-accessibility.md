@@ -16,11 +16,11 @@ thanks:
   "Kartik Sawhney": "https://twitter.com/kartiks22"
 ---
 
-In reading through [Joe Dolson’s recent piece on the intersection of AI and accessibility](https://www.joedolson.com/2023/06/accessibility-and-artificial-intelligence/), I absolutely appreciated the skepticism he has for AI in general as well as the ways in which many have been using it. In fact, I am very skeptical of AI myself, despite my role at Microsoft being that of an Accessibility Innovation Strategist helping run the AI for Accessibility grant program. As with any tool, AI can be used in very constructive, inclusive, and accessible ways _and_ it can used in destructive, exclusive, and harmful ones. And there are a ton of uses somewhere in the mediocre middle as well.
+In reading through [Joe Dolson’s recent piece on the intersection of AI and accessibility](https://www.joedolson.com/2023/06/accessibility-and-artificial-intelligence/), I absolutely appreciated the skepticism he has for AI in general as well as the ways in which many have been using it. In fact, I am very skeptical of AI myself, despite my role at Microsoft being that of an Accessibility Innovation Strategist helping run the AI for Accessibility grant program. As with any tool, AI can be used in very constructive, inclusive, and accessible ways _and_ it can be used in destructive, exclusive, and harmful ones. And there are a ton of uses somewhere in the mediocre middle as well.
 
 <!-- more -->
 
-I’d like you to consider this a “yes… and” piece to compliment Joe’s post. I don’t seek to refute any of what he’s saying, but rather provide some visibility to projects and opportunities where AI can make a meaningful difference for people with disabilities (PwD) across the globe. To be clear, I am not saying there aren’t real risks and pressing issues with AI that need to be addressed—there are, and we needed to address them like yesterday—but I want to take a little time to talk about what’s possible, in hopes we’ll get there one day.
+I’d like you to consider this a “yes… and” piece to complement Joe’s post. I don’t seek to refute any of what he’s saying, but rather provide some visibility to projects and opportunities where AI can make a meaningful difference for people with disabilities (PwD) across the globe. To be clear, I am not saying there aren’t real risks and pressing issues with AI that need to be addressed—there are, and we needed to address them like yesterday—but I want to take a little time to talk about what’s possible, in hopes we’ll get there one day.
 
 ## Alternative text
 
