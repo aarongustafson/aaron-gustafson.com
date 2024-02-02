@@ -62,17 +62,21 @@ module.exports = {
 				}
 
 				let og_image = false;
-				// Try to parse the open graph data
-				let response = await EleventyFetch(
-          `https://www.aaron-gustafson.com/api/og-image/?key=${process.env.WEBMENTION_APP_TOKEN}&url=${url}`,
-          {
-            duration: "1y",
-            type: "json"
-          }
-        );
-        og_image = response.image;
-
-				writeToCache(url, og_image);
+        // Try to parse the open graph data
+        try {
+          let response = await EleventyFetch(
+            `https://www.aaron-gustafson.com/api/og-image/?key=${process.env.WEBMENTION_APP_TOKEN}&url=${url}`,
+            {
+              duration: "1y",
+              type: "json"
+            }
+          );
+          og_image = response.image;
+          writeToCache(url, og_image);
+        } catch(e) {
+          console.log("Error with the OG Image service", e);
+        }
+        
 				return og_image;
 			}
 		}
