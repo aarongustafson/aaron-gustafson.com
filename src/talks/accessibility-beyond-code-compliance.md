@@ -6,6 +6,7 @@ date: 2023-03-15T00:09:00-0800
 tags: [ "accessibility", "AI/ML" ]
 events: [ 149 ]
 hero: "accessibility-beyond-code-compliance.png"
+text: /notebook/accessibility-beyond-code-compliance/
 slides:
   event: 149
   link: https://presentations.aaron-gustafson.com/SE8HHb/accessibility-beyond-code-compliance
