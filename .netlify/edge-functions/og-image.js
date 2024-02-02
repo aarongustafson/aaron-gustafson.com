@@ -1,4 +1,4 @@
-import ogs from "https://esm.sh/open-graph-scraper@6.2.2/";
+import ogs from "https://esm.sh/open-graph-scraper@6.3.3/";
 
 export default async function ogImage( req ) {
 	
@@ -11,24 +11,26 @@ export default async function ogImage( req ) {
 	}
 
 	url = url.searchParams.get( 'url' );
-	const response = await fetch( url, {
-		redirect: 'follow',
-		headers: {
-			'Accept': 'text/html',
-			'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36'
-		}
-	});
-	const html = await response.text();
+  const fetchOptions = {
+    redirect: 'follow',
+    headers: {
+      'Accept': 'text/html',
+      'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36'
+    }
+  };
 	
-	let image = false;
-	const opengraph_data = await ogs({ html });
-  console.log( "Response", JSON.stringify( opengraph_data ) );
-	if ( ! ( "error" in opengraph_data ) &&
-       "result" in opengraph_data &&
-       "ogImage" in opengraph_data.result &&
-       opengraph_data.result.ogImage.length > 0 ) {
-    image = opengraph_data.result.ogImage[0].url;
-  }
+  let image = false;
+	ogs( { url, fetchOptions } )
+    .then( data => {
+      const { error, result, response } = data;
+      if ( !error && result.success ) {
+        image = result.ogImage[0].url;
+      }
+      else
+      {
+        console.log( 'Failed Response:', response );
+      }
+    });
 	console.log( image );
 	
 	return new Response( JSON.stringify( { image } ) );
