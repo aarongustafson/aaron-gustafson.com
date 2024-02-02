@@ -22,7 +22,11 @@ export default async function ogImage( req ) {
 	
 	let image = false;
 	const opengraph_data = await ogs({ html });
-	if ( ! opengraph_data.error && opengraph_data.result.ogImage.length > 0) {
+  console.log( "Response", JSON.stringify( opengraph_data ) );
+	if ( ! ( "error" in opengraph_data ) &&
+       "result" in opengraph_data &&
+       "ogImage" in opengraph_data.result &&
+       opengraph_data.result.ogImage.length > 0 ) {
     image = opengraph_data.result.ogImage[0].url;
   }
 	console.log( image );
