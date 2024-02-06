@@ -1,5 +1,8 @@
 ;(function(){
 
+	// Edit this to match your image container
+	var container_selector = "figure";
+
 	function toggle($figure) {
 		$figure.classList.toggle('show-alt');
 	
@@ -20,7 +23,7 @@
 
 	var $alt_button = document.createElement('button'),
 			$alt_panel = document.createElement('div'),
-			$imgs = document.querySelectorAll('figure img[alt]:not([alt=""])'),
+			$imgs = document.querySelectorAll( container_selector + ' img[alt]:not([alt=""])' ),
 			$style = document.createElement('style');
 
 	$style.innerText = 'button.alt { margin: 0; position: absolute; inset: 10px 10px auto auto; z-index: 1; } \
@@ -39,14 +42,14 @@
 				$panel = $alt_panel.cloneNode(true),
 				$fragment = document.createDocumentFragment();
 
-		while ( $figure.nodeName.toLowerCase() != 'figure' ) {
+		while ( ! $figure.matches( container_selector ) ) {
 			$figure = $figure.parentNode;
 		}
 		establishPositioningContext( $figure );
 		$btn.figure = $figure;
 
 		$btn.addEventListener( 'click', function(e){
-			console.log( 'toggling', e.target.figure );
+			// console.log( 'toggling', e.target.figure );
 			toggle( e.target.figure );
 		});
 
