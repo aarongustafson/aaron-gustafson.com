@@ -35,6 +35,10 @@ Buttons
 		&:focus {
 			background: darken( $color-dark-teal, 10 );
 		}
+		
+		&:focus-visible {
+			outline: 5px solid #062909
+		}
 
 		svg {
 			display: inline-block;

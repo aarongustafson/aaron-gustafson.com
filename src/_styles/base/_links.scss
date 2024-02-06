@@ -41,6 +41,10 @@ Links
 			}
 		}
 
+		&:focus-visible {
+			outline: 5px solid #062909
+		}
+
 		&[rel=tag] {
 			background: $color-link-hover;
 			border-radius: 5px;
