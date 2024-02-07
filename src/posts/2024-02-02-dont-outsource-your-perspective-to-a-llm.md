@@ -13,7 +13,7 @@ hero:
   offset: "60"
 ---
 
-At [<cite>A List Apart</cite>](https://alistapart.com/), I’m seeing a lot of article pitches that were clearly written by a Large Language Model (LLM) rather than a human being. In many cases, the people making the submission clearly put a lot of through into the prompts they used to get the output they desired, but had zero follow though when it came to taking ownership of the output they were handed. To be clear, the issue I have here is not that they used an LLM as part of their process, but rather how they failed to wield such powerful tool effectively.
+At [<cite>A List Apart</cite>](https://alistapart.com/), I’m seeing a lot of article pitches that were clearly written by a Large Language Model (LLM) rather than a human being. In many cases, the people making the submission clearly put a lot of thought into the prompts they used to get the output they desired, but had zero follow though when it came to taking ownership of the output they were handed. To be clear, the issue I have here is not that they used an LLM as part of their process, but rather how they failed to wield such powerful tool effectively.
 
 <!-- more -->
 
