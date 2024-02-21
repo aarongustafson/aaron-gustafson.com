@@ -20,7 +20,7 @@ github_edit: "_layouts/blog.html"
 				{% set transition_root %}post-{{ post.fileSlug }}{% endset %}
 				{% set type = post.inputPath | content_type %}
 
-				<article class="h-entry entry entry--excerpt entry--{{ type }}{% if post.data.hero or post.data.og_image %} entry--with-hero{% endif %}">
+				<article class="h-entry entry entry--excerpt entry--{{ type }}{% if post.data.hero or ( post.data.og_image and post.data.og_image != '404' ) %} entry--with-hero{% endif %}">
 					<header class="entry__header" style="view-transition-name: {{ transition_root }}-title">
 						<h2 class="entry__title entry-title">
 							{% if is_excerpted %}
@@ -75,7 +75,7 @@ github_edit: "_layouts/blog.html"
 									 style="view-transition-name: {{ transition_root }}-hero"
 									 >
 						{% endif %}
-						{% if post.data.og_image and post.data.og_image != 404 %}
+						{% if post.data.og_image and post.data.og_image != "404" %}
               {% set og_image %}{% if post.data.og_image.indexOf("?") > -1 %}{{ post.data.og_image | replace('"','') | urlencode }}{% else %}{{ post.data.og_image | replace('"','') }}{% endif %}{% endset %}
 							<img data-responsiver="thumbnail"
 									 src="{{ post.data.og_image | replace('"','') }}"

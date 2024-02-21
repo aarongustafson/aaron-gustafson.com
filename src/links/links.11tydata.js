@@ -72,6 +72,10 @@ module.exports = {
             }
           );
           og_image = response.image;
+          if ( og_image === "false" )
+          {
+            og_image = false;
+          }
           writeToCache(url, og_image);
         } catch(e) {
           console.log("Error with the OG Image service", e);
