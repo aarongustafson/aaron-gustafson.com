@@ -51,7 +51,7 @@ module.exports = {
 			const url = data.ref_url;
 			if ( url in og_images )
 			{
-				return ( og_images[url] === true || og_images[url] === "404" ) ? false : decodeURI(og_images[url]);
+				return ( og_images[url] === true || og_images[url] === "false" || og_images[url] === "404" ) ? false : decodeURI(og_images[url]);
 			}
 			else
 			{
