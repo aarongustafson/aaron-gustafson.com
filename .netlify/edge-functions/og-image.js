@@ -28,7 +28,7 @@ export default async function ogImage( req ) {
       }
       else
       {
-        console.log( 'Failed Response:', response );
+        console.log( 'Failed Response:', JSON.stringify({ error }) );
       }
     });
 	console.log( image );
