@@ -1,14 +1,19 @@
 {% set post_url %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
 {% set summary %}{% if post.data.description %}{{ post.data.description }}{% elif post.data.page.excerpt %}{{ post.data.page.excerpt }}{% endif %}{% endset %}
+{%- set type %}{{ post.inputPath | content_type }}{% endset -%}
 {
   "id": "{{ post_url }}",
-  "title": "{{ post.data.title | replace('"', '\\"') | striptags | safe }} {% if prepend_title %} [{{ post.inputPath | content_type | capitalize }}]{% endif %}",
+  "title": "{{ post.data.title | replace('"', '\\"') | striptags | safe }} {% if prepend_title %} [{{ type | capitalize }}]{% endif %}",
   
   "summary": "{{ summary | markdownify | trim_newlines | replace('"', '\\"') | safe }}",
   
   "content_html": "{{ post.templateContent | trim_newlines | replace('"', '\\"') | safe }}",
   
-  "url": "{{ post_url }}",
+  {% if type == "post" or type == "link" %}
+    "url": "{{ post_url }}",
+  {% else %}
+    "url": "{{ post.data.url }}",
+  {% endif %}
   {% if post.data.ref_url %}
     "external_url": "{{ post.data.ref_url }}",
   {% endif %}
@@ -19,6 +24,8 @@
   
   {% if post.data.hero %}
     "image": "{{ post.data.hero.src | absoluteUrl(site.url) }}",
+  {% elif post.data.og_image %}
+    "image": "{{ post.data.og_image }}",
   {% endif %}
   
   "date_published": "{{ post.date | dateToRfc3339 }}"
