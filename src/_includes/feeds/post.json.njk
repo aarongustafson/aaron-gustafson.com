@@ -15,8 +15,10 @@
   "id": "{{ post_url }}",
   "title": "{% if prepend_title and icon %}{{ icon }} {% endif %}{{ post.data.title | replace('"', '\\"') | striptags | safe }}",
   
+  {% if summary %}
   "summary": "{{ summary | markdownify | trim_newlines | replace('"', '\\"') | safe }}",
-  
+  {% endif %}
+
   "content_html": "{{ post.templateContent | trim_newlines | replace('"', '\\"') | safe }}",
   
   {% if type == "post" or type == "link" %}
