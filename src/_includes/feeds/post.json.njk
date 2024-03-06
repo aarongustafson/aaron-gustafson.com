@@ -1,9 +1,19 @@
 {% set post_url %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
 {% set summary %}{% if post.data.description %}{{ post.data.description }}{% elif post.data.page.excerpt %}{{ post.data.page.excerpt }}{% endif %}{% endset %}
 {%- set type %}{{ post.inputPath | content_type }}{% endset -%}
+{%- set icon -%}
+  {%- if type == "post" -%}✍🏻
+  {%- elif type == "link" -%}🔗
+  {%- elif type == "article" -%}📄
+  {%- elif type == "book" -%}📗
+  {%- elif type == "talk" -%}📢
+  {%- elif type == "podcast" -%}🎧
+  {%- elif type == "press" -%}🎤
+  {%- endif -%}
+{% endset -%}
 {
   "id": "{{ post_url }}",
-  "title": "{{ post.data.title | replace('"', '\\"') | striptags | safe }} {% if prepend_title %} [{{ type | capitalize }}]{% endif %}",
+  "title": "{% if prepend_title and icon %}{{ icon }} {% endif %}{{ post.data.title | replace('"', '\\"') | striptags | safe }}",
   
   "summary": "{{ summary | markdownify | trim_newlines | replace('"', '\\"') | safe }}",
   

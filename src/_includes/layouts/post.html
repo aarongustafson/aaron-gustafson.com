@@ -102,6 +102,12 @@ is_post: true
 					{% endif %}
 
 					{{ content | safe }}
+
+          {% if url %}
+            <p class="entry__source">
+              <a href="{{ url }}" class="u-syndication">Read {% if publisher %}on {{ publisher }}{% else %}more{% endif %}</a>
+            </p>
+          {% endif %}
 				</div>
 
 				<footer class="entry__footer">

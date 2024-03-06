@@ -27,6 +27,7 @@ entry {
 
 entry > title {
   font-size: medium;
+  font-weight: bold;
 }
 
 entry > link::after {
@@ -40,6 +41,11 @@ entry > link::after {
 		margin: unset;
 		margin-block: 6px;
 	}
+}
+
+// two links? hide the first one
+entry > link:has(+ link)::after {
+  display: none;
 }
 
 generator,
