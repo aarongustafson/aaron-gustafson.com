@@ -1,4 +1,10 @@
 /* Website Carbon Badge */
-#wcb.wcb-d #wcb_2 {
-  color: inherit !important;
+@include breakup-breakpoint( "global" ) {
+  #wcb.wcb-d #wcb_2 {
+    color: unset !important;
+  }
+  #wcb #wcb_g {
+    color: #000;
+    color: var(--b1);
+  }
 }
