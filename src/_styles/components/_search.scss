@@ -83,11 +83,13 @@
 		width: auto;
 		height: auto;
 		padding: 0;
+    margin-top: 1rem;
 
 		@supports (margin-block: 1em) {
-			@include unset( width height );
+			@include unset( width height margin-top );
 			inline-size: auto;
 			block-size: auto;
+      margin-block-start: 1rem;
 		}
 	}
 }
