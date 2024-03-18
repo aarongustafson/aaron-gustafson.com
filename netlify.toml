@@ -73,11 +73,11 @@
 [[headers]]
 	for = "/*.css"
 	[headers.values]
-	Cache-Control = "max-age=86400"
+	Cache-Control = "max-age=604800"
 [[headers]]
 	for = "/*.js"
 	[headers.values]
-	Cache-Control = "max-age=86400"
+	Cache-Control = "max-age=604800"
 [[headers]]
 	for = "/serviceworker.min.js"
 	[headers.values]
