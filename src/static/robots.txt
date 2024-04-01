@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /clients/
-Disallow: /i/c/
+Disallow: /i/
+Disallow: /m/
 
 Sitemap: https://www.aaron-gustafson.com/sitemap.xml 
