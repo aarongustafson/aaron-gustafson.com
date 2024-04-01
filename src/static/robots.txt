@@ -1,5 +1,22 @@
-User-agent: *
+User-Agent: *
+Disallow: /i/c/
+
+User-Agent: Applebot
+User-agent: Bingbot
+User-Agent: Baiduspider
+User-Agent: DuckDuckBot
+User-agent: Googlebot
+User-Agent: Slurp
+User-Agent: Yandexbot
 Disallow: /clients/
+
+User-Agent: Amazonbot
+User-Agent: anthropic-ai
+User-Agent: CCBot
+User-Agent: Claude-Web
+User-Agent: FacebookBot
+User-agent: Google-Extended
+User-agent: GPTBot
 Disallow: /i/
 Disallow: /m/
 
