@@ -12,6 +12,7 @@ function writeToCache( url, value, cache ) {
 	// make sure we don’t write more than once
 	if ( ! (url in og_images) )
 	{
+    value = ( value === false ) ? true : value;
 		value = ( value === true || value == 404 ) ? value : `"${encodeURI(value)}"`;
 		og_images[url] = value;
 		fs.appendFile(cache, `${url}: ${value}\n`, err => {
