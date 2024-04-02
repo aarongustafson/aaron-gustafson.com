@@ -10,7 +10,7 @@ ref_source: "Electronic Frontier Foundation"
 
 The Electronic Frontier Foundation (EFF) has you covered if you’d like to opt out of being indexed into tools like Open AI’s ChatGPT and Google’s Gemini. Just add these to your robots.txt file:
 
-```
+```txt
 User-agent: GPTBot
 Disallow: /
 
@@ -20,7 +20,7 @@ Disallow: /
 
 Building on this, you could exclude specific directories (e.g., where you keep your images):
 
-```
+```txt
 User-agent: GPTBot
 Disallow: /i/
 
