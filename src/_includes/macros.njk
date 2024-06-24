@@ -330,8 +330,9 @@
   {% endfor %}
 {% endmacro %}
 
-{% macro youtube( id, title="" ) %}
-  <lite-youtube videoid="{{ id }}" style="background-image: url('https://i.ytimg.com/vi/{{ id }}/hqdefault.jpg');">
+{% macro youtube( id, title="", start=false, end=false ) %}
+  {% set params %}{%if start %}start={{ start }}{% if end %}&end={{ end }}{% endif %}{% endif %}{% endset %}
+  <lite-youtube videoid="{{ id }}" style="background-image: url('https://i.ytimg.com/vi/{{ id }}/hqdefault.jpg');" params="{{ params }}">
     <a href="https://www.youtube.com/watch?v={{ id }}" class="lty-playbtn" title="Play Video">
       <span class="lyt-visually-hidden">Play Video{% if title %}: {{ title }}{% endif %}</span>
     </a>

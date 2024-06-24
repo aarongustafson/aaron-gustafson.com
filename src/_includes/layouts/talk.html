@@ -126,7 +126,7 @@ is_post: true
 						  <div class="video-embed video-embed--16x9">
 								{% if video.link.indexOf('youtube') > -1 %}
 									{% set video_id %}{{ video.link | replace("https://www.youtube.com/watch?v=","") }}{% endset %}
-									{{ youtube( video_id, title ) }}
+                  {{ youtube( video_id, title, video.start, video.end ) }}
 								{% elseif video.file %}
 									<video poster="/i/talks/{{ hero }}" class="talk__video__embed video-embed__video" src="{{ video.file }}" controls></video>
 								{% else %}
