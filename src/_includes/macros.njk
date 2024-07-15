@@ -400,6 +400,6 @@
 
 {% macro html_template( name, html ) %}
   <template style="display: none" hidden id="{{ name }}">
-{{ html | replace( r/\w+/, " " ) | replace( r/> </, "><" ) | safe }}
+{{ html | safe }}
   </template>
 {% endmacro %}
