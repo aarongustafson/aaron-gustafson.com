@@ -33,7 +33,7 @@ WebmentionIO.types = { 'bookmarks': 'bookmark','likes': 'like','links': 'link','
 			{
 				webmentions = addMetadata( webmentions );
 
-				// hande them out
+				// hand them out
 				doleOutWebmentions( webmentions );
 
 				// reset the counters
@@ -413,7 +413,7 @@ WebmentionIO.types = { 'bookmarks': 'bookmark','likes': 'like','links': 'link','
 			webmention_object.content = content;
 
 			// replace the existing webmention
-			webmentions[i] = webmention_object;
+      webmentions[i] = webmention_object;
 		}
 
 		// console.log( 'added metadata to', webmentions.length, 'webmentions' );
