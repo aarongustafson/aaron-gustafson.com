@@ -56,6 +56,14 @@
 		"promote": true
   },
   {
+    "site": "Dev.to",
+    "url": "https://dev.to/aarongustafson",
+    "title": "I crosspost my content to Dev.to",
+    "category": "writing",
+    "active": true,
+		"promote": true
+  },
+  {
     "site": "Academia.edu",
     "username": "GustafsonAaron",
     "url": "https://independent.academia.edu/GustafsonAaron",
