@@ -21,8 +21,8 @@
     </ul>
 
     {% if site.simple_search %}
-      <dialog id="search">
-        <search role="search">
+      <search role="search">
+        <dialog id="search">
         	<form class="form form--search"
           	    action="{{ site.simple_search }}"
             	  method="get">
@@ -37,8 +37,8 @@
               <button type="submit" name="sa" value="Search"><b class="hidden">Let’s  </b>search<b class="hidden"> on DuckDuckGo</b></button>
             </p>
         	</form>
-        </search>
-      </dialog>
+        </dialog>
+      </search>
       <script>
         // Enable DuckDuckGo Site Search
         (function(document){
