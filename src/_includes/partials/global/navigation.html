@@ -1,7 +1,7 @@
-<nav role="navigation">
+<nav role="navigation" aria-label="Main navigation">
   <div class="layout-container">
 
-    <h1 class="hidden">Here’s what you can find on this site:</h1>
+    <p class="hidden">Here’s what you can find on this site:</p>
     <ul class="main-navigation">
       {% for link in site.navigation %}
         {% set mark = page.url | path_in_scope( link.url ) %}
