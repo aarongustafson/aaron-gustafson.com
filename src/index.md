@@ -19,7 +19,7 @@ more) and <a href="/publications/#articles">{{ collections.articles | length }} 
 <a href="/speaking-engagements/">over {{ speaking_engagements | length }} events</a> in
 {{ ( cities | length ) - 1 }} cities across the globe.
 
-I’m a Principal Accessibility Innovation Strategist at Microsoft, where I run the $25<abbr title="million">M</abbr> [AI for Accessibility grant program](https://www.microsoft.com/ai/ai-for-accessibility) and lead the charge on accessibility innovation. In my prior role on the Edge browser team, I steered our investments in [Progressive Web Apps (PWAs)](/tags/progressive-web-apps/).
+I’m a Principal Accessibility Innovation Strategist at Microsoft, where I run the $25<abbr title="million">M</abbr> [Accessibility Innovation grant program](https://www.microsoft.com/en-us/accessibility/innovation) and lead the charge on accessibility innovation across the company. In my prior role on the Edge browser team, I steered our investments in [Progressive Web Apps (PWAs)](/tags/progressive-web-apps/).
 
 I’m also deeply involved in culture work within Microsoft, providing [allyship and related training](/tags/inclusion/) across a broad swath of Microsoft product teams.
 
