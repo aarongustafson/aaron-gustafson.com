@@ -1,1116 +1,1123 @@
 [
-	{
-		"id": 156,
-		"title": "Cascadia JS",
-		"date": "2024-06-20 00:08:00 -0800",
-		"location": "Seattle, WA USA",
+  {
+    "id": 157,
+    "title": "Microsoft AI Skills",
+    "date": "2024-12-11 00:09:00 -0800",
+    "location": "Online",
+    "url": "https://www.youtube.com/watch?list=PL0g5FWk3FEqgXeTa9YC0EVvDvQtIceZt3"
+  },
+  {
+    "id": 156,
+    "title": "Cascadia JS",
+    "date": "2024-06-20 00:08:00 -0800",
+    "location": "Seattle, WA USA",
     "url": "https://cascadiajs.com/2024/"
-	},
-	{
-		"id": 155,
-		"title": "Private talk at a Fortune 25 company",
-		"date": "2024-01-19 00:08:00 -0800",
-		"location": "Online"
-	},
-	{
-		"id": 154,
-		"title": "Accessibility Africa",
-		"date": "2024-08-13 00:09:00 +0100",
-		"location": "Online",
-		"url": "https://twitter.com/a11yafrica"
-	},
-	{
-		"id": 153,
-		"title": "Better By Design",
-		"date": "2025-03-06 00:09:00 -0800",
-		"location": "Washington, DC USA",
-		"url": "https://betterbydesign.events/"
-	},
-	{
-		"id": 152,
-		"title": "GigTank 2015",
-		"date": "2015-06-03 00:09:00 -0800",
-		"location": "Chattanooga, TN USA"
-	},
-	{
-		"id": 151,
-		"title": "TechReady 22",
-		"date": "2016-01-31 00:09:00 -0800",
-		"location": "Seattle, WA USA"
-	},
-	{
-		"id": 150,
-		"title": "Amsterdam University Of Applied Sciences",
-		"date": "2023-03-30 00:09:00 -0800",
-		"location": "Amsterdam, Netherlands"
-	},
-	{
-		"id": 149,
-		"title": "axe-con",
-		"date": "2023-03-15 00:09:00 -0800",
-		"location": "Online",
-		"url": "https://www.deque.com/axe-con/"
-	},
-	{
-		"id": 148,
-		"title": "MITRE Accessibility Technical Exchange Meeting",
-		"date": "2022-10-27 09:00:00 -0800",
-		"location": "Online",
-		"url": "https://accessibility.mitre.org/2022-session-schedule/"
-	},
-	{
-		"id": 147,
-		"title": "PWA Summit",
-		"date": "2022-10-05 00:09:00 -0800",
-		"location": "Online",
-		"url": "https://pwasummit.org"
-	},
-	{
-		"id": 146,
-		"title": "Microsoft Build",
-		"date": "2022-05-24 00:09:00 -0800",
-		"location": "Online",
-		"url": "https://mybuild.microsoft.com/en-US/home"
-	},
-	{
-		"id": 145,
-		"title": "Amsterdam University Of Applied Sciences",
-		"date": "2022-03-24 00:09:00 -0800",
-		"location": "Amsterdam, Netherlands"
-	},
-	{
-		"id": 144,
-		"title": "An Event Apart: Spring Summit",
-		"date": "2022-04-18 00:09:00 -0800",
-		"location": "Online",
-		"url": "https://aneventapart.com/event/spring-summit-2022"
-	},
-	{
-		"id": 143,
-		"title": "PWA Summit",
-		"date": "2021-10-06 00:09:00 -0800",
-		"location": "Online",
-		"url": "https://pwasummit.org/"
-	},
-	{
-		"id": 142,
-		"title": "JavaScript & Friends",
-		"date": "2021-05-11 00:18:00 -0400",
-		"location": "Online",
-		"url": "https://www.eventbrite.com/e/javascript-and-friends-online-meetup-tickets-147179655311"
-	},
-	{
-		"id": 141,
-		"title": "Microsoft Web Community Conference",
-		"date": "2020-12-09 00:18:00 -0400",
-		"location": "Online"
-	},
-	{
-		"id": 140,
-		"title": "Amsterdam University Of Applied Sciences",
-		"date": "2021-03-11 00:08:00 -0400",
-		"location": "Amsterdam, Netherlands"
-	},
-	{
-		"id": 139,
-		"title": "An Event Apart, Online Together: Front-End Focus",
-		"date": "2020-08-17 00:09:00 -0500",
-		"location": "Online",
-		"url": "https://aneventapart.com/event/online-0820"
-	},
-	{
-		"id": 138,
-		"title": "Microsoft Build",
-		"date": "2019-05-06 00:09:00 -0000",
-		"location": "Seattle, WA USA",
-		"url": "https://www.microsoft.com/en-us/build"
-	},
-	{
-		"id": 137,
-		"title": "This.JavaScript - State of Browsers",
-		"date": "2019-05-14 00:09:00 -0000",
-		"location": "Online",
-		"url": "https://www.thisdot.co/events/this-javascript-state-of-browsers-may-2019"
-	},
-	{
-		"id": 136,
-		"title": "Beyond Tellerrand",
-		"date": "2019-11-14 00:09:00 -0000",
-		"location": "Berlin, Germany",
-		"url": "https://beyondtellerrand.com/events/berlin-2019"
-	},
-	{
-		"id": 135,
-		"title": "ImageCon",
-		"date": "2019-05-01 00:09:00 -0000",
-		"location": "San Francisco, CA USA",
-		"url": "https://www.imagecon.com/"
-	},
-	{
-		"id": 151,
-		"title": "Starbucks Lunch & Learn",
-		"date": "2019-03-27 00:09:00 -0000",
-		"location": "Seattle, WA USA",
-		"url": "https://noti.st/events/iRk4e9/starbucks-lunch-learn/"
-	},
-	{
-		"id": 134,
-		"title": "Microsoft MVP Global Summit",
-		"date": "2019-03-17 00:09:00 -0000",
-		"location": "Redmond, WA USA",
-		"url": "https://mvp.microsoft.com/en-us/Summit"
-	},
-	{
-		"id": 133,
-		"title": "Center Centre Workshop",
-		"date": "2017-11-15 00:09:00 -0000",
-		"location": "Chattanooga, TN USA"
-	},
-	{
-		"id": 132,
-		"title": "An Event Apart",
-		"url": "https://aneventapart.com/event/washington-dc-2019",
-		"date": "2019-07-29 00:09:00 -0000",
-		"location": "Washington, DC USA"
-	},
-	{
-		"id": 131,
-		"title": "CascadiaJS",
-		"url": "https://2018.cascadiajs.com/",
-		"date": "2018-11-15 00:09:00 -0000",
-		"location": "Seattle, WA USA"
-	},
-	{
-		"id": 130,
-		"title": "Inclusive Design 24",
-		"url": "https://www.inclusivedesign24.org/",
-		"date": "2018-10-11 00:09:00 -0000",
-		"location": "Online"
-	},
-	{
-		"id": 129,
-		"title": "Automattic Speaker Series",
-		"date": "2018-07-18 00:09:00 -0600",
-		"location": "Online"
-	},
-	{
-		"id": 128,
-		"title": "Microsoft Ignite",
-		"url": "https://www.microsoft.com/en-us/ignite",
-		"date": "2018-09-24 00:09:00 -0600",
-		"location": "Orlando, FL USA"
-	},
-	{
-		"id": 127,
-		"title": "Concatenate",
-		"url": "https://concatenate.io/",
-		"date": "2018-08-10 00:00:01 -0600",
-		"location": "Lagos, Nigeria"
-	},
-	{
-		"id": 126,
-		"title": "Accessibility DC",
-		"url": "https://www.meetup.com/Accessibility-DC/",
-		"date": "2018-08-02 00:00:01 -0600",
-		"location": "Washington, DC USA"
-	},
-	{
-		"id": 125,
-		"title": "Inclusive Design 24",
-		"url": "https://www.inclusivedesign24.org/",
-		"date": "2017-11-16 00:00:01 -0000",
-		"location": "Online"
-	},
-	{
-		"id": 124,
-		"title": "Paris Web",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2017/parisweb/",
-		"date": "2017-10-05 08:00:00 -0000",
-		"location": "Paris, France"
-	},
-	{
-		"id": 123,
-		"title": "Chadev",
-		"url": "https://www.meetup.com/chadevs/events/240504914/",
-		"date": "2017-07-06 11:30:00 -0600",
-		"location": "Chattanooga, TN USA"
-	},
-	{
-		"id": 122,
-		"title": "Oslo PWA Meetup",
-		"url": "https://www.meetup.com/Oslo-Progressive-Web-Apps/events/239901869/",
-		"date": "2017-06-07 10:30:00 +0100",
-		"location": "Oslo, Norway"
-	},
-	{
-		"id": 121,
-		"title": "An Event Apart",
-		"url": "https://aneventapart.com/event/denver-2017",
-		"date": "2017-12-11 09:00:00 -0800",
-		"location": "Denver, CO USA"
-	},
-	{
-		"id": 120,
-		"title": "An Event Apart",
-		"url": "https://aneventapart.com/event/seattle-2018",
-		"date": "2018-04-02 09:00:00 -0400",
-		"location": "Seattle, WA USA"
-	},
-	{
-		"id": 119,
-		"title": "Microsoft Build",
-		"date": "2018-05-07 09:00:00 -0400",
-		"location": "Seattle, WA USA"
-	},
-	{
-		"id": 118,
-		"title": "An Event Apart",
-		"url": "https://aneventapart.com/event/washington-dc-2018",
-		"date": "2018-07-30 09:00:00 -0500",
-		"location": "Washington, DC USA"
-	},
-	{
-		"id": 117,
-		"title": "An Event Apart",
-		"url": "https://aneventapart.com/event/san-francisco-2018",
-		"date": "2018-12-10 09:00:00 -0800",
-		"location": "San Francisco, CA USA"
-	},
-	{
-		"id": 116,
-		"title": "Generate",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2017/generate-september/",
-		"date": "2017-09-20 09:00:00 -0400",
-		"location": "London, England"
-	},
-	{
-		"id": 115,
-		"title": "Microsoft Build",
-		"url": "https://build.microsoft.com/",
-		"date": "2017-05-10 09:00:00 -0400",
-		"location": "Seattle, WA USA"
-	},
-	{
-		"id": 114,
-		"title": "Chadev",
-		"url": "https://www.meetup.com/chadevs/events/238652824/",
-		"date": "2017-04-06 12:00:00 -0400",
-		"location": "Chattanooga, TN USA"
-	},
-	{
-		"id": 113,
-		"title": "Web Platform Day",
-		"date": "2016-12-08 09:00:00 -0400",
-		"location": "Seattle, WA USA"
-	},
-	{
-		"id": 112,
-		"title": "Build Right Maker Series",
-		"url": "https://buildright.io/maker-series/2016/aaron-gustafson",
-		"date": "2016-11-10 09:00:00 -0600",
-		"location": "Dayton, OH USA"
-	},
-	{
-		"id": 111,
-		"title": "Smashing Conference",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2016/smashingconf-freiburg/",
-		"date": "2016-09-13 09:00:00 -0400",
-		"location": "Freiburg, Germany"
-	},
-	{
-		"id": 110,
-		"title": "TechReady 23",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2016/tr23/",
-		"date": "2016-07-25 09:00:00 -0400",
-		"location": "Seattle, WA USA"
-	},
-	{
-		"id": 109,
-		"title": "Smashing Conference",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2016/smashingconf-new-york/",
-		"date": "2016-06-14 09:00:00 -0400",
-		"location": "New York, NY USA"
-	},
-	{
-		"id": 108,
-		"title": "SpeechTEK",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2016/speechtek",
-		"date": "2016-05-22 09:00:00 -0400",
-		"location": "Washington, DC USA"
-	},
-	{
-		"id": 107,
-		"title": "Microsoft Edge Web Summit",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2016/edgesummit/",
-		"date": "2016-04-04 09:00:00 -0400",
-		"location": "San Francisco, CA USA"
-	},
-	{
-		"id": 106,
-		"title": "UIE Virtual Seminar",
-		"url": "https://aycl.uie.com/virtual_seminars/features_of_highly_effective_forms",
-		"date": "2016-03-31 09:00:00 -0400",
-		"location": "Online"
-	},
-	{
-		"id": 105,
-		"title": "RWD Summit",
-		"url": "http://environmentsforhumans.com/2016/responsive-web-design-summit/",
-		"date": "2016-03-30 09:00:00 -0400",
-		"location": "Online"
-	},
-	{
-		"id": 104,
-		"title": "An Event Apart",
-		"url": "http://aneventapart.com/event/nashville-2016",
-		"date": "2016-03-14 09:00:00 -0400",
-		"location": "Nashville, TN USA"
-	},
-	{
-		"id": 103,
-		"title": "EnhanceConf",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2016/enhanceconf/",
-		"date": "2016-03-03 09:00:00 -0400",
-		"location": "London, England"
-	},
-	{
-		"id": 102,
-		"title": "Øredev",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2015/oredev/",
-		"date": "2015-11-03 09:00:00 -0400",
-		"location": "Malmö, Sweden"
-	},
-	{
-		"id": 101,
-		"title": "Future of Web Design",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2015/future-of-web-design-new-york/",
-		"date": "2015-11-02 09:00:00 -0400",
-		"location": "New York, NY USA"
-	},
-	{
-		"id": 100,
-		"title": "18F Speaker Series",
-		"url": "https://www.eventbrite.com/e/18f-design-presents-aaron-gustafson-registration-17919708330",
-		"date": "2015-08-12 09:00:00 -0400",
-		"location": "Washington, DC USA"
-	},
-	{
-		"id": 99,
-		"title": "An Event Apart",
-		"url": "http://aneventapart.com/event/washington-dc-2015",
-		"date": "2015-08-10 09:00:00 -0400",
-		"location": "Washington, DC USA"
-	},
-	{
-		"id": 98,
-		"title": "Responsive Day Out",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2015/responsive-day-out-3/",
-		"date": "2015-06-19 09:00:00 -0400",
-		"location": "Brighton, England"
-	},
-	{
-		"id": 97,
-		"title": "Web Design Day",
-		"url": "http://www.webdesignday.com/",
-		"date": "2015-06-11 09:00:00 -0400",
-		"location": "Pittsburgh, PA USA"
-	},
-	{
-		"id": 96,
-		"title": "Breaking Development",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2015/bdconf/",
-		"date": "2015-06-08 09:00:00 -0400",
-		"location": "Nashville, TN USA"
-	},
-	{
-		"id": 95,
-		"title": "Microsoft Edge Web Summit",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2015/project-spartan-web-summit/",
-		"date": "2015-05-05 09:00:00 -0400",
-		"location": "Mountain View, CA USA"
-	},
-	{
-		"id": 94,
-		"title": "Web Sherpa Summit",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2015/web-sherpa-summit/",
-		"date": "2015-04-23 09:00:00 -0400",
-		"location": "Online"
-	},
-	{
-		"id": 93,
-		"title": "Converge SE",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2015/convergese/",
-		"date": "2015-04-15 09:00:00 -0400",
-		"location": "Columbia, SC USA"
-	},
-	{
-		"id": 92,
-		"title": "UX Immersion Mobile",
-		"url": "http://uxim15.uie.com/",
-		"date": "2015-04-13 09:00:00 -0400",
-		"location": "Salt Lake City, UT USA"
-	},
-	{
-		"id": 91,
-		"title": "Chattanooga City Employees Lunch &amp; Learn",
-		"date": "2014-12-10 12:00:00 -0400",
-		"location": "Chattanooga, TN USA"
-	},
-	{
-		"id": 90,
-		"title": "Chadev",
-		"url": "https://www.youtube.com/watch?feature=player_embedded&amp;v=2V0JU10H3Ro",
-		"date": "2014-12-04 12:00:00 -0400",
-		"location": "Chattanooga, TN USA"
-	},
-	{
-		"id": 89,
-		"title": "Talk @ Google",
-		"date": "2014-11-13 12:00:00 -0400",
-		"location": "Cambridge, MA USA"
-	},
-	{
-		"id": 88,
-		"title": "Mullen Smart Stop",
-		"date": "2014-11-12 12:00:00 -0400",
-		"location": "Boston, MA USA"
-	},
-	{
-		"id": 87,
-		"title": "Beyond The Desktop",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2014/bdconf-2/",
-		"date": "2014-11-03 09:00:00 -0400",
-		"location": "Orlando, FL USA"
-	},
-	{
-		"id": 86,
-		"title": "Private Workshop &amp; Consulting",
-		"date": "2014-10-27 09:00:00 -0400",
-		"location": "Raleigh, NC USA"
-	},
-	{
-		"id": 85,
-		"title": "a11yqc",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2014/a11yqc/",
-		"date": "2014-10-14 09:00:00 -0400",
-		"location": "Québec City, QC Canada"
-	},
-	{
-		"id": 84,
-		"title": "BlendConf",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2014/blendconf14/",
-		"date": "2014-09-11 09:00:00 -0400",
-		"location": "Charlotte, NC USA"
-	},
-	{
-		"id": 83,
-		"title": "Accessibility Summit",
-		"url": "http://environmentsforhumans.com/2014/accessibility-summit/",
-		"date": "2014-09-09 09:00:00 -0400",
-		"location": "Online"
-	},
-	{
-		"id": 82,
-		"title": "DevLink",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2014/devlink2014/",
-		"date": "2014-08-26 09:00:00 -0400",
-		"location": "Chattanooga, TN USA"
-	},
-	{
-		"id": 81,
-		"title": "DevDev",
-		"url": "https://web.archive.org/web/20140707065345/http://www.devdev.is/summer-of-code",
-		"date": "2014-07-14 12:00:00 -0400",
-		"location": "Chattanooga, TN USA"
-	},
-	{
-		"id": 80,
-		"title": "Code & Creativity",
-		"url": "http://codeandcreativity.com/events/2014-06-24/",
-		"date": "2014-06-24 19:00:00 -0400",
-		"location": "Chattanooga, TN USA"
-	},
-	{
-		"id": 79,
-		"title": "Beyond Tellerrand",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2014/btconf/",
-		"date": "2014-05-21 09:00:00 +0100",
-		"location": "Düsseldorf, Germany"
-	},
-	{
-		"id": 78,
-		"title": "Web Platform Doc Sprint + MeatUp™",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2014/wpds-dusseldorf/",
-		"date": "2014-05-18 12:00:00 +0100",
-		"location": "Düsseldorf, Germany"
-	},
-	{
-		"id": 77,
-		"title": "Code & Creativity",
-		"url": "http://codeandcreativity.com/workshops/responsive-design-and-beyond/",
-		"date": "2014-05-02 09:00:00 -0400",
-		"location": "Chattanooga, TN USA"
-	},
-	{
-		"id": 76,
-		"title": "Chadev",
-		"url": "http://www.meetup.com/chadevs/events/174448232/",
-		"date": "2014-04-10 09:00:00 -0400",
-		"location": "Chattanooga, TN USA"
-	},
-	{
-		"id": 75,
-		"title": "Private Workshop",
-		"company": "Marriott",
-		"date": "2014-03-26 09:00:00 -0400",
-		"location": "Bethesda, MD USA"
-	},
-	{
-		"id": 74,
-		"title": "Awwwards",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2014/awwwardsoffday/",
-		"date": "2014-02-14 17:00:00 +0100",
-		"location": "Paris, France"
-	},
-	{
-		"id": 73,
-		"title": "PechaKucha Chattanooga",
-		"url": "http://www.pechakucha.org/cities/chattanooga/events/526e68fc4f5c29f968000004",
-		"date": "2013-12-13 19:00:00 -0400",
-		"location": "Chattanooga, TN USA"
-	},
-	{
-		"id": 72,
-		"title": "Private Workshop",
-		"date": "2013-12-05 19:00:00 -0400",
-		"location": "Malvern, PA USA"
-	},
-	{
-		"id": 71,
-		"title": "UIE Virtual Seminar",
-		"url": "http://aycl.uie.com/virtual_seminars/designing_across_devices_with_progressive_enhancement",
-		"date": "2013-11-21 13:30:00 -0400",
-		"location": "Online"
-	},
-	{
-		"id": 70,
-		"title": "edUi",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2013/edui2013/",
-		"date": "2013-11-04 09:00:00 -0400",
-		"location": "Richmond, VA USA"
-	},
-	{
-		"id": 69,
-		"title": "Breaking Development",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2013/bdconf-nashville/",
-		"date": "2013-10-21 09:00:00 -0500",
-		"location": "Nashville, TN USA"
-	},
-	{
-		"id": 68,
-		"title": "Responsive Design Studio",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2013/rds/",
-		"date": "2013-10-15 09:00:00 -0800",
-		"location": "Mountain View, CA USA"
-	},
-	{
-		"id": 67,
-		"title": "From the Front",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2013/fromthefront/",
-		"date": "2013-09-19 09:00:00 -0100",
-		"location": "Bologna, Italy"
-	},
-	{
-		"id": 66,
-		"title": "dConstruct",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2013/dconstruct/",
-		"date": "2013-09-06 09:00:00 +0000",
-		"location": "Brighton, England"
-	},
-	{
-		"id": 65,
-		"title": "Reasons to be Creative",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2013/reasons-to-be-creative/",
-		"date": "2013-09-04 09:00:00 +0000",
-		"location": "Brighton, England"
-	},
-	{
-		"id": 64,
-		"title": "Private Workshop",
-		"date": "2013-08-07 09:00:00 +0100",
-		"location": "Chicago, IL USA"
-	},
-	{
-		"id": 63,
-		"title": "Beyond Tellerrand",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2013/btconf/",
-		"date": "2013-05-27 09:00:00 +0100",
-		"location": "Düsseldorf, Germany"
-	},
-	{
-		"id": 62,
-		"title": "UxLx",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2013/uxlx/",
-		"date": "2013-05-15 09:00:00 +0000",
-		"location": "Lisbon, Portugal"
-	},
-	{
-		"id": 61,
-		"title": "Responsive Design Studio",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2013/designstudio/",
-		"date": "2013-04-29 09:00:00 -0400",
-		"location": "New York, NY USA"
-	},
-	{
-		"id": 60,
-		"title": "UserTesting.com Webinar",
-		"url": "http://info.usertesting.com/OnDemandWebinarApril2013.html",
-		"date": "2013-04-24 11:00:00 -0500",
-		"location": "Online"
-	},
-	{
-		"id": 59,
-		"title": "AAF North Dakota",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2013/aafnd-april/",
-		"date": "2013-04-16 12:00:00 -0500",
-		"location": "Fargo, ND USA"
-	},
-	{
-		"id": 58,
-		"title": "Breaking Development",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2013/bdconf-orlando/",
-		"date": "2013-04-08 09:00:00 -0500",
-		"location": "Orlando, FL USA"
-	},
-	{
-		"id": 57,
-		"title": "SXSW Interactive",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2013/sxsw-interactive/",
-		"date": "2013-03-08 09:00:00 -0600",
-		"location": "Austin, TX USA"
-	},
-	{
-		"id": 56,
-		"title": "Private Workshop",
-		"date": "2012-12-02 09:00:00 -0400",
-		"location": "Santa Clara, CA USA"
-	},
-	{
-		"id": 55,
-		"title": "User Interface",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2012/uiconf17/",
-		"date": "2012-11-05 09:00:00 -0400",
-		"location": "Boston, MA USA"
-	},
-	{
-		"id": 54,
-		"title": "HOW Interactive Design Conference",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2012/how-interactive-san-francisco/",
-		"date": "2012-10-29 09:00:00 -0700",
-		"location": "San Francisco, CA USA"
-	},
-	{
-		"id": 53,
-		"title": "Private Workshop",
-		"date": "2012-10-15 09:00:00 -0400",
-		"location": "Madison, WI USA"
-	},
-	{
-		"id": 52,
-		"title": "Private Workshop",
-		"date": "2012-06-12 09:00:00 -0400",
-		"location": "Raleigh, NC USA"
-	},
-	{
-		"id": 51,
-		"title": "WebVisions Portland",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2012/webvisions-portland/",
-		"date": "2012-05-16 09:00:00 -0400",
-		"location": "Portland, OR USA"
-	},
-	{
-		"id": 50,
-		"title": "Funkas Tillgäng&shy;lighetsdagar",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2012/funkas-tillganglighetsdagar/",
-		"date": "2012-04-18 09:00:00 +0000",
-		"location": "Stockholm, Sweden"
-	},
-	{
-		"id": 49,
-		"title": "WebVisions NYC",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2012/webvisions-nyc/",
-		"date": "2012-01-18 09:00:00 -0400",
-		"location": "New York, NY USA"
-	},
-	{
-		"id": 48,
-		"title": "Iceweb Light",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2011/iceweb-light/",
-		"date": "2011-12-02 09:00:00 -0200",
-		"location": "Reykjavík, Iceland"
-	},
-	{
-		"id": 47,
-		"title": "Ready to Inspire",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2011/ready-to-inspire-adaptive-web-design/",
-		"date": "2011-11-29 09:00:00 +0000",
-		"location": "Amsterdam, Netherlands"
-	},
-	{
-		"id": 46,
-		"title": "Beyond Tellerrand",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2011/btconf/",
-		"date": "2011-11-20 09:00:00 +0100",
-		"location": "Düsseldorf, Germany"
-	},
-	{
-		"id": 45,
-		"title": "Future of Web Design NYC",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2011/future-of-web-design-new-york/",
-		"date": "2011-11-07 09:00:00 -0400",
-		"location": "New York, NY USA"
-	},
-	{
-		"id": 44,
-		"title": "The Expression&shy;Engine and CodeIgniter Conference",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2011/the-expressionengine-and-codeigniter-conference/",
-		"date": "2011-10-19 09:00:00 -0400",
-		"location": "Brooklyn, NY USA"
-	},
-	{
-		"id": 43,
-		"title": "CSS Summit",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2011/css-summit/",
-		"date": "2011-07-26 09:00:00 -0400",
-		"location": "Online"
-	},
-	{
-		"id": 42,
-		"title": "Future of Web Apps Vegas",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2011/fowa-vegas/",
-		"date": "2011-06-27 09:00:00 -0600",
-		"location": "Las Vegas, NV USA"
-	},
-	{
-		"id": 41,
-		"title": "DevChatt",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2011/devchatt/",
-		"date": "2011-06-03 09:00:00 -0400",
-		"location": "Chattanooga, TN USA"
-	},
-	{
-		"id": 40,
-		"title": "WebVisions",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2011/webvisions/",
-		"date": "2011-05-25 09:00:00 -0700",
-		"location": "Portland, OR USA"
-	},
-	{
-		"id": 39,
-		"title": "MIX11",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2011/mix11/",
-		"date": "2011-04-11 09:00:00 -0600",
-		"location": "Las Vegas, NV USA"
-	},
-	{
-		"id": 38,
-		"title": "Retreats 4 Geeks: HTML5 &amp; CSS3",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2011/retreats4geeks-html5-css3/",
-		"date": "2011-04-08 09:00:00 -0400",
-		"location": "Gatlinburg, TN USA"
-	},
-	{
-		"id": 37,
-		"title": "SXSW Interactive",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2011/sxsw/",
-		"date": "2011-03-11 09:00:00 -0500",
-		"location": "Austin, TX USA",
-		"talks": [
-			{
-				"title": "Web Standards Project 2011 Open Meeting",
-				"slides": "http://www.slideshare.net/AaronGustafson/web-standards-project-2011-open-meeting-sxswi-2011"
-			}
-		]
-	},
-	{
-		"id": 36,
-		"title": "jQuery Summit",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2010/jquery-summit/",
-		"date": "2010-10-16 09:00:00 -0500",
-		"location": "Online"
-	},
-	{
-		"id": 35,
-		"title": "Think Vitamin: HTML5 Online Conference",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2010/html5-nov/",
-		"date": "2010-11-01 09:00:00 -0500",
-		"location": "Online"
-	},
-	{
-		"id": 34,
-		"title": "Accessibility Summit",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2010/accessibility-summit/",
-		"date": "2010-09-30 09:00:00 -0500",
-		"location": "Online"
-	},
-	{
-		"id": 33,
-		"title": "Think Vitamin: HTML and CSS",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2010/think-vitamin-html-and-css/",
-		"date": "2010-08-31 09:00:00 -0500",
-		"location": "Online"
-	},
-	{
-		"id": 32,
-		"title": "DevChatt",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2010/devchatt/",
-		"date": "2010-03-26 09:00:00 -0500",
-		"location": "Chattanooga, TN USA"
-	},
-	{
-		"id": 31,
-		"title": "An Event Apart",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2009/an-event-apart-chicago/",
-		"date": "2009-10-12 09:00:00 -0500",
-		"location": "Chicago, IL USA"
-	},
-	{
-		"id": 30,
-		"title": "BarCamp Chattanooga",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2009/barcamp-chattanooga/",
-		"date": "2009-07-25 09:00:00 -0500",
-		"location": "Chattanooga, TN USA"
-	},
-	{
-		"id": 29,
-		"title": "Web Design World",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2009/web-design-world-seattle/",
-		"date": "2009-07-20 09:00:00 -0500",
-		"location": "Seattle, WA USA"
-	},
-	{
-		"id": 28,
-		"title": "AIGA In Control Conference",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2009/incontrol2009/",
-		"date": "2009-06-11 09:00:00 -0500",
-		"location": "Cincinnati, OH USA"
-	},
-	{
-		"id": 27,
-		"title": "SXSW Interactive",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2009/sxsw/",
-		"date": "2009-03-13 09:00:00 -0500",
-		"location": "Austin, TX USA"
-	},
-	{
-		"id": 26,
-		"title": "Web Design World",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2008/web-design-world-boston/",
-		"date": "2008-12-08 09:00:00 -0500",
-		"location": "Boston, MA USA"
-	},
-	{
-		"id": 25,
-		"title": "WEB Builder 2.0",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2008/web-builder-20/",
-		"date": "2008-10-13 09:00:00 -0500",
-		"location": "Las Vegas, NV USA"
-	},
-	{
-		"id": 24,
-		"title": "WebVisions",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2008/webvisions/",
-		"date": "2008-05-22 09:00:00 -0500",
-		"location": "Portland, OR USA"
-	},
-	{
-		"id": 23,
-		"title": "An Event Apart",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2008/an-event-apart-new-orleans/",
-		"date": "2008-04-24 09:00:00 -0500",
-		"location": "New Orleans, LA USA"
-	},
-	{
-		"id": 22,
-		"title": "W3C TPAC",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2007/w3c-tpac/",
-		"date": "2007-11-05 09:00:00 -0500",
-		"location": "Cambridge, MA USA"
-	},
-	{
-		"id": 21,
-		"title": "The Ajax Experience",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2007/the-ajax-experience-east/",
-		"date": "2007-10-24 09:00:00 -0500",
-		"location": "Boston, MA USA"
-	},
-	{
-		"id": 20,
-		"title": "An Event Apart",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2007/an-event-apart-san-francisco/",
-		"date": "2007-10-04 09:00:00 -0500",
-		"location": "San Francisco, CA USA"
-	},
-	{
-		"id": 19,
-		"title": "Webjam 7",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2007/webjam-7/",
-		"date": "2007-09-29 09:00:00 -0500",
-		"location": "Sydney, Australia"
-	},
-	{
-		"id": 18,
-		"title": "Web Directions South",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2007/web-directions-south/",
-		"date": "2007-09-26 09:00:00 -0500",
-		"location": "Sydney, Australia"
-	},
-	{
-		"id": 17,
-		"title": "Rich Web Experience",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2007/rich-web-experience/",
-		"date": "2007-09-06 09:00:00 -0500",
-		"location": "San Jose, CA USA"
-	},
-	{
-		"id": 16,
-		"title": "The Ajax Experience",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2007/the-ajax-experience-west/",
-		"date": "2007-07-25 09:00:00 -0500",
-		"location": "San Francisco, CA USA"
-	},
-	{
-		"id": 15,
-		"title": "WebVisions",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2007/webvisions/",
-		"date": "2007-05-03 09:00:00 -0500",
-		"location": "Portland, OR USA"
-	},
-	{
-		"id": 14,
-		"title": "AjaxWorld",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2007/ajaxworld/",
-		"date": "2007-03-18 09:00:00 -0500",
-		"location": "New York, NY USA"
-	},
-	{
-		"id": 13,
-		"title": "SXSW Interactive",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2007/sxsw-interactive/",
-		"date": "2007-03-09 09:00:00 -0500",
-		"location": "Austin, TX USA"
-	},
-	{
-		"id": 12,
-		"title": "Web Directions North",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2007/web-directions-north/",
-		"date": "2007-02-07 09:00:00 -0500",
-		"location": "Vancouver, BC Canada",
-		"talks": [
-			{
-				"title": "Transcendent Design with CSS &amp; JavaScript",
-				"slides": "http://www.slideshare.net/AaronGustafson/transcendent-design-with-css-javascript-web-directions-north-07",
-				"with": "Andy Clark"
-			}
-		],
-		"workshops": [
-			{
-				"title": "CSS + DOM = Magic",
-				"with": "Andy Clarke"
-			}
-		]
-	},
-	{
-		"id": 11,
-		"title": "The Ajax Experience",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2006/the-ajax-experience-boston/",
-		"date": "2006-10-23 09:00:00 -0500",
-		"location": "Boston, MA USA"
-	},
-	{
-		"id": 10,
-		"title": "EPA Webmaster Conference",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2006/epa-webmaster-conference/",
-		"date": "2006-09-14 09:00:00 -0500",
-		"location": "Atlanta, GA USA"
-	},
-	{
-		"id": 9,
-		"title": "An Event Apart",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2006/an-event-apart-new-york-city/",
-		"date": "2007-07-10 09:00:00 -0500",
-		"location": "New York, NY USA"
-	},
-	{
-		"id": 8,
-		"title": "SXSW Interactive",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2006/sxsw-interactive/",
-		"date": "2006-03-10 09:00:00 -0500",
-		"location": "Austin, TX USA",
-		"talks": [
-			{
-				"title": "How to Bluff Your Way in DOM Scripting",
-				"with": "Jeremy Keith"
-			}
-		],
-		"panels": [
-			{
-				"title": "Web Standards &amp; Search Engines: Searching for Common Ground, Part 1",
-				"slides": "http://www.slideshare.net/AaronGustafson/web-standards-and-search-engines-searching-for-common-ground-part-1-sxsw-06"
-			},
-			{
-				"title": "Web Standards &amp; SEO: Searching for Common Ground, Part 2",
-				"slides": "http://www.slideshare.net/AaronGustafson/web-standards-and-seo-searching-for-common-ground-part-2-sxsw-06"
-			}
-		]
-	},
-	{
-		"id": 7,
-		"title": "WOW Web Design and Project Management Conference",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2005/wow-web-design-and-conference-cupertino/",
-		"date": "2005-09-16 09:00:00 -0500",
-		"location": "Cupertino, CA USA"
-	},
-	{
-		"id": 6,
-		"title": "EPA Webmaster Conference",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2006/epa-webmaster-conference/",
-		"date": "2005-09-15 09:00:00 -0500",
-		"location": "Research Triangle Park, NC USA"
-	},
-	{
-		"id": 5,
-		"title": "WOW Web Design and Project Management Conference",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2005/wow-web-design-conference-joliet/",
-		"date": "2005-05-17 09:00:00 -0500",
-		"location": "Joliet, IL USA"
-	},
-	{
-		"id": 4,
-		"title": "WOW Web Design and Project Management Conference",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2005/wow-web-design-conference-pasadena/",
-		"date": "2005-04-05 09:00:00 -0500",
-		"location": "Pasadena, CA USA"
-	},
-	{
-		"id": 3,
-		"title": "New York State Forum Web Content Development &amp; Management Seminar",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2005/new-york-state-forum-web-content-development/",
-		"date": "2005-02-24 09:00:00 -0500",
-		"location": "Albany, NY USA"
-	},
-	{
-		"id": 2,
-		"title": "WOW CMS &amp; Web Services Workshop",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2004/wow-cms-web-services-workshop/",
-		"date": "2004-09-06 09:00:00 -0500",
-		"location": "Las Vegas, NV USA"
-	},
-	{
-		"id": 1,
-		"title": "COMDEX",
-		"url": "https://web.archive.org/web/http://lanyrd.com/2003/comdex/",
-		"date": "2003-11-17 09:00:00 -0500",
-		"location": "Las Vegas, NV USA"
-	}
+  },
+  {
+    "id": 155,
+    "title": "Private talk at a Fortune 25 company",
+    "date": "2024-01-19 00:08:00 -0800",
+    "location": "Online"
+  },
+  {
+    "id": 154,
+    "title": "Accessibility Africa",
+    "date": "2024-08-13 00:09:00 +0100",
+    "location": "Online",
+    "url": "https://twitter.com/a11yafrica"
+  },
+  {
+    "id": 153,
+    "title": "Better By Design",
+    "date": "2025-03-06 00:09:00 -0800",
+    "location": "Washington, DC USA",
+    "url": "https://betterbydesign.events/"
+  },
+  {
+    "id": 152,
+    "title": "GigTank 2015",
+    "date": "2015-06-03 00:09:00 -0800",
+    "location": "Chattanooga, TN USA"
+  },
+  {
+    "id": 151,
+    "title": "TechReady 22",
+    "date": "2016-01-31 00:09:00 -0800",
+    "location": "Seattle, WA USA"
+  },
+  {
+    "id": 151,
+    "title": "Starbucks Lunch & Learn",
+    "date": "2019-03-27 00:09:00 -0000",
+    "location": "Seattle, WA USA",
+    "url": "https://noti.st/events/iRk4e9/starbucks-lunch-learn/"
+  },
+  {
+    "id": 150,
+    "title": "Amsterdam University Of Applied Sciences",
+    "date": "2023-03-30 00:09:00 -0800",
+    "location": "Amsterdam, Netherlands"
+  },
+  {
+    "id": 149,
+    "title": "axe-con",
+    "date": "2023-03-15 00:09:00 -0800",
+    "location": "Online",
+    "url": "https://www.deque.com/axe-con/"
+  },
+  {
+    "id": 148,
+    "title": "MITRE Accessibility Technical Exchange Meeting",
+    "date": "2022-10-27 09:00:00 -0800",
+    "location": "Online",
+    "url": "https://accessibility.mitre.org/2022-session-schedule/"
+  },
+  {
+    "id": 147,
+    "title": "PWA Summit",
+    "date": "2022-10-05 00:09:00 -0800",
+    "location": "Online",
+    "url": "https://pwasummit.org"
+  },
+  {
+    "id": 146,
+    "title": "Microsoft Build",
+    "date": "2022-05-24 00:09:00 -0800",
+    "location": "Online",
+    "url": "https://mybuild.microsoft.com/en-US/home"
+  },
+  {
+    "id": 145,
+    "title": "Amsterdam University Of Applied Sciences",
+    "date": "2022-03-24 00:09:00 -0800",
+    "location": "Amsterdam, Netherlands"
+  },
+  {
+    "id": 144,
+    "title": "An Event Apart: Spring Summit",
+    "date": "2022-04-18 00:09:00 -0800",
+    "location": "Online",
+    "url": "https://aneventapart.com/event/spring-summit-2022"
+  },
+  {
+    "id": 143,
+    "title": "PWA Summit",
+    "date": "2021-10-06 00:09:00 -0800",
+    "location": "Online",
+    "url": "https://pwasummit.org/"
+  },
+  {
+    "id": 142,
+    "title": "JavaScript & Friends",
+    "date": "2021-05-11 00:18:00 -0400",
+    "location": "Online",
+    "url": "https://www.eventbrite.com/e/javascript-and-friends-online-meetup-tickets-147179655311"
+  },
+  {
+    "id": 141,
+    "title": "Microsoft Web Community Conference",
+    "date": "2020-12-09 00:18:00 -0400",
+    "location": "Online"
+  },
+  {
+    "id": 140,
+    "title": "Amsterdam University Of Applied Sciences",
+    "date": "2021-03-11 00:08:00 -0400",
+    "location": "Amsterdam, Netherlands"
+  },
+  {
+    "id": 139,
+    "title": "An Event Apart, Online Together: Front-End Focus",
+    "date": "2020-08-17 00:09:00 -0500",
+    "location": "Online",
+    "url": "https://aneventapart.com/event/online-0820"
+  },
+  {
+    "id": 138,
+    "title": "Microsoft Build",
+    "date": "2019-05-06 00:09:00 -0000",
+    "location": "Seattle, WA USA",
+    "url": "https://www.microsoft.com/en-us/build"
+  },
+  {
+    "id": 137,
+    "title": "This.JavaScript - State of Browsers",
+    "date": "2019-05-14 00:09:00 -0000",
+    "location": "Online",
+    "url": "https://www.thisdot.co/events/this-javascript-state-of-browsers-may-2019"
+  },
+  {
+    "id": 136,
+    "title": "Beyond Tellerrand",
+    "date": "2019-11-14 00:09:00 -0000",
+    "location": "Berlin, Germany",
+    "url": "https://beyondtellerrand.com/events/berlin-2019"
+  },
+  {
+    "id": 135,
+    "title": "ImageCon",
+    "date": "2019-05-01 00:09:00 -0000",
+    "location": "San Francisco, CA USA",
+    "url": "https://www.imagecon.com/"
+  },
+  {
+    "id": 134,
+    "title": "Microsoft MVP Global Summit",
+    "date": "2019-03-17 00:09:00 -0000",
+    "location": "Redmond, WA USA",
+    "url": "https://mvp.microsoft.com/en-us/Summit"
+  },
+  {
+    "id": 133,
+    "title": "Center Centre Workshop",
+    "date": "2017-11-15 00:09:00 -0000",
+    "location": "Chattanooga, TN USA"
+  },
+  {
+    "id": 132,
+    "title": "An Event Apart",
+    "url": "https://aneventapart.com/event/washington-dc-2019",
+    "date": "2019-07-29 00:09:00 -0000",
+    "location": "Washington, DC USA"
+  },
+  {
+    "id": 131,
+    "title": "CascadiaJS",
+    "url": "https://2018.cascadiajs.com/",
+    "date": "2018-11-15 00:09:00 -0000",
+    "location": "Seattle, WA USA"
+  },
+  {
+    "id": 130,
+    "title": "Inclusive Design 24",
+    "url": "https://www.inclusivedesign24.org/",
+    "date": "2018-10-11 00:09:00 -0000",
+    "location": "Online"
+  },
+  {
+    "id": 129,
+    "title": "Automattic Speaker Series",
+    "date": "2018-07-18 00:09:00 -0600",
+    "location": "Online"
+  },
+  {
+    "id": 128,
+    "title": "Microsoft Ignite",
+    "url": "https://www.microsoft.com/en-us/ignite",
+    "date": "2018-09-24 00:09:00 -0600",
+    "location": "Orlando, FL USA"
+  },
+  {
+    "id": 127,
+    "title": "Concatenate",
+    "url": "https://concatenate.io/",
+    "date": "2018-08-10 00:00:01 -0600",
+    "location": "Lagos, Nigeria"
+  },
+  {
+    "id": 126,
+    "title": "Accessibility DC",
+    "url": "https://www.meetup.com/Accessibility-DC/",
+    "date": "2018-08-02 00:00:01 -0600",
+    "location": "Washington, DC USA"
+  },
+  {
+    "id": 125,
+    "title": "Inclusive Design 24",
+    "url": "https://www.inclusivedesign24.org/",
+    "date": "2017-11-16 00:00:01 -0000",
+    "location": "Online"
+  },
+  {
+    "id": 124,
+    "title": "Paris Web",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2017/parisweb/",
+    "date": "2017-10-05 08:00:00 -0000",
+    "location": "Paris, France"
+  },
+  {
+    "id": 123,
+    "title": "Chadev",
+    "url": "https://www.meetup.com/chadevs/events/240504914/",
+    "date": "2017-07-06 11:30:00 -0600",
+    "location": "Chattanooga, TN USA"
+  },
+  {
+    "id": 122,
+    "title": "Oslo PWA Meetup",
+    "url": "https://www.meetup.com/Oslo-Progressive-Web-Apps/events/239901869/",
+    "date": "2017-06-07 10:30:00 +0100",
+    "location": "Oslo, Norway"
+  },
+  {
+    "id": 121,
+    "title": "An Event Apart",
+    "url": "https://aneventapart.com/event/denver-2017",
+    "date": "2017-12-11 09:00:00 -0800",
+    "location": "Denver, CO USA"
+  },
+  {
+    "id": 120,
+    "title": "An Event Apart",
+    "url": "https://aneventapart.com/event/seattle-2018",
+    "date": "2018-04-02 09:00:00 -0400",
+    "location": "Seattle, WA USA"
+  },
+  {
+    "id": 119,
+    "title": "Microsoft Build",
+    "date": "2018-05-07 09:00:00 -0400",
+    "location": "Seattle, WA USA"
+  },
+  {
+    "id": 118,
+    "title": "An Event Apart",
+    "url": "https://aneventapart.com/event/washington-dc-2018",
+    "date": "2018-07-30 09:00:00 -0500",
+    "location": "Washington, DC USA"
+  },
+  {
+    "id": 117,
+    "title": "An Event Apart",
+    "url": "https://aneventapart.com/event/san-francisco-2018",
+    "date": "2018-12-10 09:00:00 -0800",
+    "location": "San Francisco, CA USA"
+  },
+  {
+    "id": 116,
+    "title": "Generate",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2017/generate-september/",
+    "date": "2017-09-20 09:00:00 -0400",
+    "location": "London, England"
+  },
+  {
+    "id": 115,
+    "title": "Microsoft Build",
+    "url": "https://build.microsoft.com/",
+    "date": "2017-05-10 09:00:00 -0400",
+    "location": "Seattle, WA USA"
+  },
+  {
+    "id": 114,
+    "title": "Chadev",
+    "url": "https://www.meetup.com/chadevs/events/238652824/",
+    "date": "2017-04-06 12:00:00 -0400",
+    "location": "Chattanooga, TN USA"
+  },
+  {
+    "id": 113,
+    "title": "Web Platform Day",
+    "date": "2016-12-08 09:00:00 -0400",
+    "location": "Seattle, WA USA"
+  },
+  {
+    "id": 112,
+    "title": "Build Right Maker Series",
+    "url": "https://buildright.io/maker-series/2016/aaron-gustafson",
+    "date": "2016-11-10 09:00:00 -0600",
+    "location": "Dayton, OH USA"
+  },
+  {
+    "id": 111,
+    "title": "Smashing Conference",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2016/smashingconf-freiburg/",
+    "date": "2016-09-13 09:00:00 -0400",
+    "location": "Freiburg, Germany"
+  },
+  {
+    "id": 110,
+    "title": "TechReady 23",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2016/tr23/",
+    "date": "2016-07-25 09:00:00 -0400",
+    "location": "Seattle, WA USA"
+  },
+  {
+    "id": 109,
+    "title": "Smashing Conference",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2016/smashingconf-new-york/",
+    "date": "2016-06-14 09:00:00 -0400",
+    "location": "New York, NY USA"
+  },
+  {
+    "id": 108,
+    "title": "SpeechTEK",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2016/speechtek",
+    "date": "2016-05-22 09:00:00 -0400",
+    "location": "Washington, DC USA"
+  },
+  {
+    "id": 107,
+    "title": "Microsoft Edge Web Summit",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2016/edgesummit/",
+    "date": "2016-04-04 09:00:00 -0400",
+    "location": "San Francisco, CA USA"
+  },
+  {
+    "id": 106,
+    "title": "UIE Virtual Seminar",
+    "url": "https://aycl.uie.com/virtual_seminars/features_of_highly_effective_forms",
+    "date": "2016-03-31 09:00:00 -0400",
+    "location": "Online"
+  },
+  {
+    "id": 105,
+    "title": "RWD Summit",
+    "url": "http://environmentsforhumans.com/2016/responsive-web-design-summit/",
+    "date": "2016-03-30 09:00:00 -0400",
+    "location": "Online"
+  },
+  {
+    "id": 104,
+    "title": "An Event Apart",
+    "url": "http://aneventapart.com/event/nashville-2016",
+    "date": "2016-03-14 09:00:00 -0400",
+    "location": "Nashville, TN USA"
+  },
+  {
+    "id": 103,
+    "title": "EnhanceConf",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2016/enhanceconf/",
+    "date": "2016-03-03 09:00:00 -0400",
+    "location": "London, England"
+  },
+  {
+    "id": 102,
+    "title": "Øredev",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2015/oredev/",
+    "date": "2015-11-03 09:00:00 -0400",
+    "location": "Malmö, Sweden"
+  },
+  {
+    "id": 101,
+    "title": "Future of Web Design",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2015/future-of-web-design-new-york/",
+    "date": "2015-11-02 09:00:00 -0400",
+    "location": "New York, NY USA"
+  },
+  {
+    "id": 100,
+    "title": "18F Speaker Series",
+    "url": "https://www.eventbrite.com/e/18f-design-presents-aaron-gustafson-registration-17919708330",
+    "date": "2015-08-12 09:00:00 -0400",
+    "location": "Washington, DC USA"
+  },
+  {
+    "id": 99,
+    "title": "An Event Apart",
+    "url": "http://aneventapart.com/event/washington-dc-2015",
+    "date": "2015-08-10 09:00:00 -0400",
+    "location": "Washington, DC USA"
+  },
+  {
+    "id": 98,
+    "title": "Responsive Day Out",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2015/responsive-day-out-3/",
+    "date": "2015-06-19 09:00:00 -0400",
+    "location": "Brighton, England"
+  },
+  {
+    "id": 97,
+    "title": "Web Design Day",
+    "url": "http://www.webdesignday.com/",
+    "date": "2015-06-11 09:00:00 -0400",
+    "location": "Pittsburgh, PA USA"
+  },
+  {
+    "id": 96,
+    "title": "Breaking Development",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2015/bdconf/",
+    "date": "2015-06-08 09:00:00 -0400",
+    "location": "Nashville, TN USA"
+  },
+  {
+    "id": 95,
+    "title": "Microsoft Edge Web Summit",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2015/project-spartan-web-summit/",
+    "date": "2015-05-05 09:00:00 -0400",
+    "location": "Mountain View, CA USA"
+  },
+  {
+    "id": 94,
+    "title": "Web Sherpa Summit",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2015/web-sherpa-summit/",
+    "date": "2015-04-23 09:00:00 -0400",
+    "location": "Online"
+  },
+  {
+    "id": 93,
+    "title": "Converge SE",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2015/convergese/",
+    "date": "2015-04-15 09:00:00 -0400",
+    "location": "Columbia, SC USA"
+  },
+  {
+    "id": 92,
+    "title": "UX Immersion Mobile",
+    "url": "http://uxim15.uie.com/",
+    "date": "2015-04-13 09:00:00 -0400",
+    "location": "Salt Lake City, UT USA"
+  },
+  {
+    "id": 91,
+    "title": "Chattanooga City Employees Lunch &amp; Learn",
+    "date": "2014-12-10 12:00:00 -0400",
+    "location": "Chattanooga, TN USA"
+  },
+  {
+    "id": 90,
+    "title": "Chadev",
+    "url": "https://www.youtube.com/watch?feature=player_embedded&amp;v=2V0JU10H3Ro",
+    "date": "2014-12-04 12:00:00 -0400",
+    "location": "Chattanooga, TN USA"
+  },
+  {
+    "id": 89,
+    "title": "Talk @ Google",
+    "date": "2014-11-13 12:00:00 -0400",
+    "location": "Cambridge, MA USA"
+  },
+  {
+    "id": 88,
+    "title": "Mullen Smart Stop",
+    "date": "2014-11-12 12:00:00 -0400",
+    "location": "Boston, MA USA"
+  },
+  {
+    "id": 87,
+    "title": "Beyond The Desktop",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2014/bdconf-2/",
+    "date": "2014-11-03 09:00:00 -0400",
+    "location": "Orlando, FL USA"
+  },
+  {
+    "id": 86,
+    "title": "Private Workshop &amp; Consulting",
+    "date": "2014-10-27 09:00:00 -0400",
+    "location": "Raleigh, NC USA"
+  },
+  {
+    "id": 85,
+    "title": "a11yqc",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2014/a11yqc/",
+    "date": "2014-10-14 09:00:00 -0400",
+    "location": "Québec City, QC Canada"
+  },
+  {
+    "id": 84,
+    "title": "BlendConf",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2014/blendconf14/",
+    "date": "2014-09-11 09:00:00 -0400",
+    "location": "Charlotte, NC USA"
+  },
+  {
+    "id": 83,
+    "title": "Accessibility Summit",
+    "url": "http://environmentsforhumans.com/2014/accessibility-summit/",
+    "date": "2014-09-09 09:00:00 -0400",
+    "location": "Online"
+  },
+  {
+    "id": 82,
+    "title": "DevLink",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2014/devlink2014/",
+    "date": "2014-08-26 09:00:00 -0400",
+    "location": "Chattanooga, TN USA"
+  },
+  {
+    "id": 81,
+    "title": "DevDev",
+    "url": "https://web.archive.org/web/20140707065345/http://www.devdev.is/summer-of-code",
+    "date": "2014-07-14 12:00:00 -0400",
+    "location": "Chattanooga, TN USA"
+  },
+  {
+    "id": 80,
+    "title": "Code & Creativity",
+    "url": "http://codeandcreativity.com/events/2014-06-24/",
+    "date": "2014-06-24 19:00:00 -0400",
+    "location": "Chattanooga, TN USA"
+  },
+  {
+    "id": 79,
+    "title": "Beyond Tellerrand",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2014/btconf/",
+    "date": "2014-05-21 09:00:00 +0100",
+    "location": "Düsseldorf, Germany"
+  },
+  {
+    "id": 78,
+    "title": "Web Platform Doc Sprint + MeatUp™",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2014/wpds-dusseldorf/",
+    "date": "2014-05-18 12:00:00 +0100",
+    "location": "Düsseldorf, Germany"
+  },
+  {
+    "id": 77,
+    "title": "Code & Creativity",
+    "url": "http://codeandcreativity.com/workshops/responsive-design-and-beyond/",
+    "date": "2014-05-02 09:00:00 -0400",
+    "location": "Chattanooga, TN USA"
+  },
+  {
+    "id": 76,
+    "title": "Chadev",
+    "url": "http://www.meetup.com/chadevs/events/174448232/",
+    "date": "2014-04-10 09:00:00 -0400",
+    "location": "Chattanooga, TN USA"
+  },
+  {
+    "id": 75,
+    "title": "Private Workshop",
+    "company": "Marriott",
+    "date": "2014-03-26 09:00:00 -0400",
+    "location": "Bethesda, MD USA"
+  },
+  {
+    "id": 74,
+    "title": "Awwwards",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2014/awwwardsoffday/",
+    "date": "2014-02-14 17:00:00 +0100",
+    "location": "Paris, France"
+  },
+  {
+    "id": 73,
+    "title": "PechaKucha Chattanooga",
+    "url": "http://www.pechakucha.org/cities/chattanooga/events/526e68fc4f5c29f968000004",
+    "date": "2013-12-13 19:00:00 -0400",
+    "location": "Chattanooga, TN USA"
+  },
+  {
+    "id": 72,
+    "title": "Private Workshop",
+    "date": "2013-12-05 19:00:00 -0400",
+    "location": "Malvern, PA USA"
+  },
+  {
+    "id": 71,
+    "title": "UIE Virtual Seminar",
+    "url": "http://aycl.uie.com/virtual_seminars/designing_across_devices_with_progressive_enhancement",
+    "date": "2013-11-21 13:30:00 -0400",
+    "location": "Online"
+  },
+  {
+    "id": 70,
+    "title": "edUi",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2013/edui2013/",
+    "date": "2013-11-04 09:00:00 -0400",
+    "location": "Richmond, VA USA"
+  },
+  {
+    "id": 69,
+    "title": "Breaking Development",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2013/bdconf-nashville/",
+    "date": "2013-10-21 09:00:00 -0500",
+    "location": "Nashville, TN USA"
+  },
+  {
+    "id": 68,
+    "title": "Responsive Design Studio",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2013/rds/",
+    "date": "2013-10-15 09:00:00 -0800",
+    "location": "Mountain View, CA USA"
+  },
+  {
+    "id": 67,
+    "title": "From the Front",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2013/fromthefront/",
+    "date": "2013-09-19 09:00:00 -0100",
+    "location": "Bologna, Italy"
+  },
+  {
+    "id": 66,
+    "title": "dConstruct",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2013/dconstruct/",
+    "date": "2013-09-06 09:00:00 +0000",
+    "location": "Brighton, England"
+  },
+  {
+    "id": 65,
+    "title": "Reasons to be Creative",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2013/reasons-to-be-creative/",
+    "date": "2013-09-04 09:00:00 +0000",
+    "location": "Brighton, England"
+  },
+  {
+    "id": 64,
+    "title": "Private Workshop",
+    "date": "2013-08-07 09:00:00 +0100",
+    "location": "Chicago, IL USA"
+  },
+  {
+    "id": 63,
+    "title": "Beyond Tellerrand",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2013/btconf/",
+    "date": "2013-05-27 09:00:00 +0100",
+    "location": "Düsseldorf, Germany"
+  },
+  {
+    "id": 62,
+    "title": "UxLx",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2013/uxlx/",
+    "date": "2013-05-15 09:00:00 +0000",
+    "location": "Lisbon, Portugal"
+  },
+  {
+    "id": 61,
+    "title": "Responsive Design Studio",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2013/designstudio/",
+    "date": "2013-04-29 09:00:00 -0400",
+    "location": "New York, NY USA"
+  },
+  {
+    "id": 60,
+    "title": "UserTesting.com Webinar",
+    "url": "http://info.usertesting.com/OnDemandWebinarApril2013.html",
+    "date": "2013-04-24 11:00:00 -0500",
+    "location": "Online"
+  },
+  {
+    "id": 59,
+    "title": "AAF North Dakota",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2013/aafnd-april/",
+    "date": "2013-04-16 12:00:00 -0500",
+    "location": "Fargo, ND USA"
+  },
+  {
+    "id": 58,
+    "title": "Breaking Development",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2013/bdconf-orlando/",
+    "date": "2013-04-08 09:00:00 -0500",
+    "location": "Orlando, FL USA"
+  },
+  {
+    "id": 57,
+    "title": "SXSW Interactive",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2013/sxsw-interactive/",
+    "date": "2013-03-08 09:00:00 -0600",
+    "location": "Austin, TX USA"
+  },
+  {
+    "id": 56,
+    "title": "Private Workshop",
+    "date": "2012-12-02 09:00:00 -0400",
+    "location": "Santa Clara, CA USA"
+  },
+  {
+    "id": 55,
+    "title": "User Interface",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2012/uiconf17/",
+    "date": "2012-11-05 09:00:00 -0400",
+    "location": "Boston, MA USA"
+  },
+  {
+    "id": 54,
+    "title": "HOW Interactive Design Conference",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2012/how-interactive-san-francisco/",
+    "date": "2012-10-29 09:00:00 -0700",
+    "location": "San Francisco, CA USA"
+  },
+  {
+    "id": 53,
+    "title": "Private Workshop",
+    "date": "2012-10-15 09:00:00 -0400",
+    "location": "Madison, WI USA"
+  },
+  {
+    "id": 52,
+    "title": "Private Workshop",
+    "date": "2012-06-12 09:00:00 -0400",
+    "location": "Raleigh, NC USA"
+  },
+  {
+    "id": 51,
+    "title": "WebVisions Portland",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2012/webvisions-portland/",
+    "date": "2012-05-16 09:00:00 -0400",
+    "location": "Portland, OR USA"
+  },
+  {
+    "id": 50,
+    "title": "Funkas Tillgäng&shy;lighetsdagar",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2012/funkas-tillganglighetsdagar/",
+    "date": "2012-04-18 09:00:00 +0000",
+    "location": "Stockholm, Sweden"
+  },
+  {
+    "id": 49,
+    "title": "WebVisions NYC",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2012/webvisions-nyc/",
+    "date": "2012-01-18 09:00:00 -0400",
+    "location": "New York, NY USA"
+  },
+  {
+    "id": 48,
+    "title": "Iceweb Light",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2011/iceweb-light/",
+    "date": "2011-12-02 09:00:00 -0200",
+    "location": "Reykjavík, Iceland"
+  },
+  {
+    "id": 47,
+    "title": "Ready to Inspire",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2011/ready-to-inspire-adaptive-web-design/",
+    "date": "2011-11-29 09:00:00 +0000",
+    "location": "Amsterdam, Netherlands"
+  },
+  {
+    "id": 46,
+    "title": "Beyond Tellerrand",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2011/btconf/",
+    "date": "2011-11-20 09:00:00 +0100",
+    "location": "Düsseldorf, Germany"
+  },
+  {
+    "id": 45,
+    "title": "Future of Web Design NYC",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2011/future-of-web-design-new-york/",
+    "date": "2011-11-07 09:00:00 -0400",
+    "location": "New York, NY USA"
+  },
+  {
+    "id": 44,
+    "title": "The Expression&shy;Engine and CodeIgniter Conference",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2011/the-expressionengine-and-codeigniter-conference/",
+    "date": "2011-10-19 09:00:00 -0400",
+    "location": "Brooklyn, NY USA"
+  },
+  {
+    "id": 43,
+    "title": "CSS Summit",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2011/css-summit/",
+    "date": "2011-07-26 09:00:00 -0400",
+    "location": "Online"
+  },
+  {
+    "id": 42,
+    "title": "Future of Web Apps Vegas",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2011/fowa-vegas/",
+    "date": "2011-06-27 09:00:00 -0600",
+    "location": "Las Vegas, NV USA"
+  },
+  {
+    "id": 41,
+    "title": "DevChatt",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2011/devchatt/",
+    "date": "2011-06-03 09:00:00 -0400",
+    "location": "Chattanooga, TN USA"
+  },
+  {
+    "id": 40,
+    "title": "WebVisions",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2011/webvisions/",
+    "date": "2011-05-25 09:00:00 -0700",
+    "location": "Portland, OR USA"
+  },
+  {
+    "id": 39,
+    "title": "MIX11",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2011/mix11/",
+    "date": "2011-04-11 09:00:00 -0600",
+    "location": "Las Vegas, NV USA"
+  },
+  {
+    "id": 38,
+    "title": "Retreats 4 Geeks: HTML5 &amp; CSS3",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2011/retreats4geeks-html5-css3/",
+    "date": "2011-04-08 09:00:00 -0400",
+    "location": "Gatlinburg, TN USA"
+  },
+  {
+    "id": 37,
+    "title": "SXSW Interactive",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2011/sxsw/",
+    "date": "2011-03-11 09:00:00 -0500",
+    "location": "Austin, TX USA",
+    "talks": [
+      {
+        "title": "Web Standards Project 2011 Open Meeting",
+        "slides": "http://www.slideshare.net/AaronGustafson/web-standards-project-2011-open-meeting-sxswi-2011"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "title": "jQuery Summit",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2010/jquery-summit/",
+    "date": "2010-10-16 09:00:00 -0500",
+    "location": "Online"
+  },
+  {
+    "id": 35,
+    "title": "Think Vitamin: HTML5 Online Conference",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2010/html5-nov/",
+    "date": "2010-11-01 09:00:00 -0500",
+    "location": "Online"
+  },
+  {
+    "id": 34,
+    "title": "Accessibility Summit",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2010/accessibility-summit/",
+    "date": "2010-09-30 09:00:00 -0500",
+    "location": "Online"
+  },
+  {
+    "id": 33,
+    "title": "Think Vitamin: HTML and CSS",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2010/think-vitamin-html-and-css/",
+    "date": "2010-08-31 09:00:00 -0500",
+    "location": "Online"
+  },
+  {
+    "id": 32,
+    "title": "DevChatt",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2010/devchatt/",
+    "date": "2010-03-26 09:00:00 -0500",
+    "location": "Chattanooga, TN USA"
+  },
+  {
+    "id": 31,
+    "title": "An Event Apart",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2009/an-event-apart-chicago/",
+    "date": "2009-10-12 09:00:00 -0500",
+    "location": "Chicago, IL USA"
+  },
+  {
+    "id": 30,
+    "title": "BarCamp Chattanooga",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2009/barcamp-chattanooga/",
+    "date": "2009-07-25 09:00:00 -0500",
+    "location": "Chattanooga, TN USA"
+  },
+  {
+    "id": 29,
+    "title": "Web Design World",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2009/web-design-world-seattle/",
+    "date": "2009-07-20 09:00:00 -0500",
+    "location": "Seattle, WA USA"
+  },
+  {
+    "id": 28,
+    "title": "AIGA In Control Conference",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2009/incontrol2009/",
+    "date": "2009-06-11 09:00:00 -0500",
+    "location": "Cincinnati, OH USA"
+  },
+  {
+    "id": 27,
+    "title": "SXSW Interactive",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2009/sxsw/",
+    "date": "2009-03-13 09:00:00 -0500",
+    "location": "Austin, TX USA"
+  },
+  {
+    "id": 26,
+    "title": "Web Design World",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2008/web-design-world-boston/",
+    "date": "2008-12-08 09:00:00 -0500",
+    "location": "Boston, MA USA"
+  },
+  {
+    "id": 25,
+    "title": "WEB Builder 2.0",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2008/web-builder-20/",
+    "date": "2008-10-13 09:00:00 -0500",
+    "location": "Las Vegas, NV USA"
+  },
+  {
+    "id": 24,
+    "title": "WebVisions",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2008/webvisions/",
+    "date": "2008-05-22 09:00:00 -0500",
+    "location": "Portland, OR USA"
+  },
+  {
+    "id": 23,
+    "title": "An Event Apart",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2008/an-event-apart-new-orleans/",
+    "date": "2008-04-24 09:00:00 -0500",
+    "location": "New Orleans, LA USA"
+  },
+  {
+    "id": 22,
+    "title": "W3C TPAC",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2007/w3c-tpac/",
+    "date": "2007-11-05 09:00:00 -0500",
+    "location": "Cambridge, MA USA"
+  },
+  {
+    "id": 21,
+    "title": "The Ajax Experience",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2007/the-ajax-experience-east/",
+    "date": "2007-10-24 09:00:00 -0500",
+    "location": "Boston, MA USA"
+  },
+  {
+    "id": 20,
+    "title": "An Event Apart",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2007/an-event-apart-san-francisco/",
+    "date": "2007-10-04 09:00:00 -0500",
+    "location": "San Francisco, CA USA"
+  },
+  {
+    "id": 19,
+    "title": "Webjam 7",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2007/webjam-7/",
+    "date": "2007-09-29 09:00:00 -0500",
+    "location": "Sydney, Australia"
+  },
+  {
+    "id": 18,
+    "title": "Web Directions South",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2007/web-directions-south/",
+    "date": "2007-09-26 09:00:00 -0500",
+    "location": "Sydney, Australia"
+  },
+  {
+    "id": 17,
+    "title": "Rich Web Experience",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2007/rich-web-experience/",
+    "date": "2007-09-06 09:00:00 -0500",
+    "location": "San Jose, CA USA"
+  },
+  {
+    "id": 16,
+    "title": "The Ajax Experience",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2007/the-ajax-experience-west/",
+    "date": "2007-07-25 09:00:00 -0500",
+    "location": "San Francisco, CA USA"
+  },
+  {
+    "id": 15,
+    "title": "WebVisions",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2007/webvisions/",
+    "date": "2007-05-03 09:00:00 -0500",
+    "location": "Portland, OR USA"
+  },
+  {
+    "id": 14,
+    "title": "AjaxWorld",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2007/ajaxworld/",
+    "date": "2007-03-18 09:00:00 -0500",
+    "location": "New York, NY USA"
+  },
+  {
+    "id": 13,
+    "title": "SXSW Interactive",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2007/sxsw-interactive/",
+    "date": "2007-03-09 09:00:00 -0500",
+    "location": "Austin, TX USA"
+  },
+  {
+    "id": 12,
+    "title": "Web Directions North",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2007/web-directions-north/",
+    "date": "2007-02-07 09:00:00 -0500",
+    "location": "Vancouver, BC Canada",
+    "talks": [
+      {
+        "title": "Transcendent Design with CSS &amp; JavaScript",
+        "slides": "http://www.slideshare.net/AaronGustafson/transcendent-design-with-css-javascript-web-directions-north-07",
+        "with": "Andy Clark"
+      }
+    ],
+    "workshops": [
+      {
+        "title": "CSS + DOM = Magic",
+        "with": "Andy Clarke"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "The Ajax Experience",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2006/the-ajax-experience-boston/",
+    "date": "2006-10-23 09:00:00 -0500",
+    "location": "Boston, MA USA"
+  },
+  {
+    "id": 10,
+    "title": "EPA Webmaster Conference",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2006/epa-webmaster-conference/",
+    "date": "2006-09-14 09:00:00 -0500",
+    "location": "Atlanta, GA USA"
+  },
+  {
+    "id": 9,
+    "title": "An Event Apart",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2006/an-event-apart-new-york-city/",
+    "date": "2007-07-10 09:00:00 -0500",
+    "location": "New York, NY USA"
+  },
+  {
+    "id": 8,
+    "title": "SXSW Interactive",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2006/sxsw-interactive/",
+    "date": "2006-03-10 09:00:00 -0500",
+    "location": "Austin, TX USA",
+    "talks": [
+      {
+        "title": "How to Bluff Your Way in DOM Scripting",
+        "with": "Jeremy Keith"
+      }
+    ],
+    "panels": [
+      {
+        "title": "Web Standards &amp; Search Engines: Searching for Common Ground, Part 1",
+        "slides": "http://www.slideshare.net/AaronGustafson/web-standards-and-search-engines-searching-for-common-ground-part-1-sxsw-06"
+      },
+      {
+        "title": "Web Standards &amp; SEO: Searching for Common Ground, Part 2",
+        "slides": "http://www.slideshare.net/AaronGustafson/web-standards-and-seo-searching-for-common-ground-part-2-sxsw-06"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "WOW Web Design and Project Management Conference",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2005/wow-web-design-and-conference-cupertino/",
+    "date": "2005-09-16 09:00:00 -0500",
+    "location": "Cupertino, CA USA"
+  },
+  {
+    "id": 6,
+    "title": "EPA Webmaster Conference",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2006/epa-webmaster-conference/",
+    "date": "2005-09-15 09:00:00 -0500",
+    "location": "Research Triangle Park, NC USA"
+  },
+  {
+    "id": 5,
+    "title": "WOW Web Design and Project Management Conference",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2005/wow-web-design-conference-joliet/",
+    "date": "2005-05-17 09:00:00 -0500",
+    "location": "Joliet, IL USA"
+  },
+  {
+    "id": 4,
+    "title": "WOW Web Design and Project Management Conference",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2005/wow-web-design-conference-pasadena/",
+    "date": "2005-04-05 09:00:00 -0500",
+    "location": "Pasadena, CA USA"
+  },
+  {
+    "id": 3,
+    "title": "New York State Forum Web Content Development &amp; Management Seminar",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2005/new-york-state-forum-web-content-development/",
+    "date": "2005-02-24 09:00:00 -0500",
+    "location": "Albany, NY USA"
+  },
+  {
+    "id": 2,
+    "title": "WOW CMS &amp; Web Services Workshop",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2004/wow-cms-web-services-workshop/",
+    "date": "2004-09-06 09:00:00 -0500",
+    "location": "Las Vegas, NV USA"
+  },
+  {
+    "id": 1,
+    "title": "COMDEX",
+    "url": "https://web.archive.org/web/http://lanyrd.com/2003/comdex/",
+    "date": "2003-11-17 09:00:00 -0500",
+    "location": "Las Vegas, NV USA"
+  }
 ]
