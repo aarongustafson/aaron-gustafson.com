@@ -17,7 +17,7 @@ slides:
   size: 32 MB
 video:
   event: 157
-  link: https://www.youtube.com/watch?v=ojKemNviUQg&amp;list=PL0g5FWk3FEqgXeTa9YC0EVvDvQtIceZt3
+  link: https://www.youtube.com/watch?v=ojKemNviUQg
 ---
 
 This session, hosted by Aaron Gustafson and Ioana Tanase explores the transformative role of AI in enhancing accessibility. Together, you will uncover the pivotal role AI plays in crafting cutting-edge accessible technologies, learn about innovative AI tools that empower individuals with disabilities, and dive into best practices for creating inclusive AI solutions. Together, we will also explore the exciting future of AI in pushing the boundaries of accessibility.
