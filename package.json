@@ -94,7 +94,7 @@
 		"open-graph-scraper": "^6.2.2",
 		"sass": "^1.54.8",
 		"semver-regex": "^4.0.5",
-		"sharp": "^0.32.6",
+		"sharp": "^0.33.5",
 		"simplecrawler": "^1.1.9",
 		"through2": "^4.0.2",
 		"trim-newlines": "^4.0.2",
