@@ -106,7 +106,7 @@
 		"@zachleat/announcement-banner": "^1.0.8",
 		"broken-link-checker": "^0.7.8",
 		"hygen": "^6.2.11",
-		"netlify-cli": "^17.37.0"
+		"netlify-cli": "^17.38.1"
 	},
 	"prettier": {
 		"useTabs": true,
