@@ -21,6 +21,8 @@ gallery:
   title: Here’s a look at my old (sold) colony of German Blue Digitata.
 - url: /i/tanks/halle-berry-zoas.jpg
   title: These WWC Halle Berry zoas were among the first residents of this tank and they’ve really taken off.
+- url: /i/tanks/rainbow-symphilia-wilsoni.jpg
+  title: A very cool orange-dominant Symphilia with hints of teal and green. Becomes more yellow in mid-day. Good eater. Can’t wait to see it grow!
 - url: /i/tanks/john-deere-leptastrea.jpg
   title: I originally got this colony from World Wide Corals on a trip to Orlando back in 2014.
 - url: /i/tanks/lemon-lime-clove.jpg
@@ -51,31 +53,29 @@ gallery:
 
 ### Fish
 
-* Orchid Dottyback (<i class="binomial">Pseudochromis fridmani</i>)
+* Firefish Goby (<i class="binomial">Nemateleotris magnifica</i>)
+* Green Mandarin (<i class="binomial">Synchiropus splendidus</i>)
+* Springer’s Damsel (<i class="binomial">Chrysiptera springeri</i>)
+* Starry Blenny (<i class="binomial">Salarias ramosus</i>)
 
-<!--
-* Bluespotted Watchman Goby (<i class="binomial">Cryptocentrus pavoninoides</i>)
-* Melanarus Wrasse (<i class="binomial">Hailichoeres melanurus</i>)
-* Tail Spot Blenny (<i class="binomial">Ecsenius stigmatura</i>)
--->
 
 ### Inverts
 
-* Emerald Crabs (<i class="binomial">Mithraculus sculptus</i>) × 4
-* Electric Blue Hermit Crab (<i class="binomial">Calcinus elegans</i>)
+* Emerald Crabs (<i class="binomial">Mithraculus sculptus</i>) × 3
 * Fighting Conch (<i class="binomial">Strombus spp.</i>)
 * Fuzzy Chiton (<i class="binomial">Acanthopleura granulata</i>) × 2
 * Marginella Snail (<i class="binomial">Marginella spp.</i>)
 * Money Cowrie (<i class="binomial">Monetaria moneta</i>)
-* Ninja Star Snail (<i class="binomial">Astaea spp.</i>)
 * Scarlet Hermit Crabs (<i class="binomial">Paguristes cadenati</i>)
-* Tuxedo Urchins (red) (<i class="binomial">Mespilia globulus</i>) × 2
-* Limpets
 * Assorted snails (trochus, nassarius, strombus)
 * Assorted worms, pods, hermits, snails & such from [Indo-Pacific Sea Farms](https://ipsf.com/)
 * Additional Clean-up Crew (zigzag periwinkles, dwarf planaxis, etc.) from [ReefCleaners](https://www.reefcleaners.org/)
 
 <!--
+* Limpets
+* Tuxedo Urchins (red) (<i class="binomial">Mespilia globulus</i>) × 2
+* Electric Blue Hermit Crab (<i class="binomial">Calcinus elegans</i>)
+* Ninja Star Snail (<i class="binomial">Astaea spp.</i>)
 * Peppermint Shrimp (<i class="binomial">Lysmata wurdemanni</i>)
 * Blood Red Fire Shrimp (<i class="binomial">Lysmata debelius</i>)
 * Halloween Hermit Crab (<i class="binomial">Ciliopagurus strigatus</i>)
@@ -87,31 +87,32 @@ gallery:
 <dl class="tank__corals">
   <dt>Zoanthids & Palythoas</dt>
   <dd><ul>
-  <!--li>Belladonna</li>
-  <li>Buttmuncher</li-->
+  <!--li>Belladonna</li-->
+  <li>Blue Agave</li>
   <li>Citrus Cooler</li>
   <li><a href="#i-tanks-devils-armor-zoas-jpg">Devil’s Armor</a></li>
-  <!--li>Ding Dang People Eater</li-->
-  <!--li>Eagle Eye</li-->
+  <li>Ding Dang People Eater</li>
+  <li>Eagle Eye</li>
   <li><a href="#i-tanks-fruit-loop-zoas-jpg">Fruit Loop</a></li>
   <!--li>Nirvana</li-->
   <!--li>Mary Jane</li-->
   <!--li>Miami Vice</li-->
   <li><a href="#i-tanks-oxide-zoas-jpg">Oxide</a></li>
-  <li>Pink Diamond</li>
-  <li>Pink Krakatoa</li>
-  <li><a href="#i-tanks-pink-zipper-zoas-jpg">Pink Zipper</a></li>
+  <!--li>Pink Diamond</li>
+  <li>Pink Krakatoa</li-->
+  <!--li><a href="#i-tanks-pink-zipper-zoas-jpg">Pink Zipper</a></li-->
   <!--li><a href="#i-tanks-rainbow-incinerator-zoas-jpg">Rainbow Incinerator</a></li-->
   <!--li>Rainbow Hornet</li-->
   <li><a href="#i-tanks-rasta-zoas-jpg">Rasta</a></li>
   <li>Tubb’s Blue</li>
-  <!--li>Ultra Chaos</li-->
+  <li>Utter Chaos</li>
   <!--li>Unnamed Green</li-->
   <!--li>King Midas</li-->
-  <li>Vampire in Drag</li>
-  <!--li><a href="#i-tanks-halle-berry-zoas-jpg">WWC Halle Berry</a></li-->
-  <li>WWC Now & Later Gator</li>
+  <li>Vampires in Drag</li>
+  <!--li><a href="#i-tanks-halle-berry-zoas-jpg">WWC Halle Berry</a></li>
+  <li>WWC Now & Later Gator</li-->
   </ul></dd>
+
   <dt>Other</dt>
   <dd><ul>
   <!--li><a href="#i-tanks-lemon-lime-clove-jpg">Lemon-lime Clove Polyps</a></li-->
@@ -125,30 +126,32 @@ gallery:
 <dl class="tank__corals" id="corals">
   <dt>Acropora</dt>
   <dd><ul>
-  <!--li>ASD Rainbow Millepora (<i class="binomial">Acropora millepora</i>)</li-->
-  <!--li>Bali Green Slimer (<i class="binomial">Acropora yongei</i>)</li-->
+  <!--li>ASD Rainbow Millepora (<i class="binomial">Acropora millepora</i>)</li>
+  <li>Bali Green Slimer (<i class="binomial">Acropora yongei</i>)</li>
   <li>Big R Corals Walt Disney (<i class="binomial">Acropora tenuis</i>)</li>
   <li>Golden Basket Diva (<i class="binomial">Acropora spathulata</i>)</li>
   <li>Golden Basket Inferno (<i class="binomial">Acropora spathulata</i>)</li>
   <li>ORA Cali Tort (<i class="binomial">Acropora tortuosa</i>)</li>
-  <!--li>ORA Oregon Tort (<i class="binomial">Acropora tortuosa</i>)</li-->
+  <li>ORA Oregon Tort (<i class="binomial">Acropora tortuosa</i>)</li>
   <li>Pro Corals (PC) Rainbow (<i class="binomial">Acropora convexa</i>)</li>
-  <!--li>Reef Raft (RR) Orange Passion (<i class="binomial">Acropora tenuis</i>)</li-->
-  <!--li>Tyree Pink Lemonade (<i class="species">Acropora spp.</i>)</li-->
+  <li>Reef Raft (RR) Orange Passion (<i class="binomial">Acropora tenuis</i>)</li>
+  <li>Tyree Pink Lemonade (<i class="species">Acropora spp.</i>)</li>
   <li>Tyree Tierra del Fuego (<i class="binomial">Acropora anthocercis</i>)</li>
-  <!--li>Unnamed Millepora (<i class="binomial">Acropora millepora</i>)</li-->
+  <li>Unnamed Millepora (<i class="binomial">Acropora millepora</i>)</li-->
+  <li>Greg Hiller’s Aqua Delight</li>
   </ul></dd>
   <dt>Blastomussa</dt>
   <dd><ul>
   <li><a href="#i-tanks-blastomussa-merletti-jpg">Ultra Corals (UC) Blue Raven (<i class="binomial">Blastomussa merletti</i>)</a></li>
   <li>Superman (<i class="binomial">Blastomussa merletti</i>)</li>
-  <li>Unnamed rainbow (<i class="binomial">Blastomussa merletti</i>)</li>
+  <li>Rainbow (<i class="binomial">Blastomussa wellsi</i>)</li>
+  <li>Ironman (<i class="binomial">Blastomussa wellsi</i>)</li>
   </ul></dd>
-  <dt>Fungia</dt>
+  <!--dt>Fungia</dt>
   <dd><ul>
   <li><a href="#i-tanks-sunset-plate-jpg">Sunset Plate (<i class="binomial">Fungia repanda</i>)</a></li>
   <li>Rainbow Plate (<i class="binomial">Fungia repanda</i>)</li>
-  </ul></dd>
+  </ul></dd-->
   <dt>Goniastrea</dt>
   <dd><ul>
   <li><a href="#i-tanks-dragon-soul-goniastrea-jpg">Dragon Soul (<i class="binomial">Goniastrea palauensis</i>)</a></li>
@@ -157,7 +160,7 @@ gallery:
   <dd><ul>
   <li>Long-tentacled, green with blue mouths</li>
   <li>Long-tentacled, hot pink</li>
-  <li>Short-tentacled, rainbow</li>
+  <li>Long-tentacled, highlighter green</li>
   </ul></dd>
   <dt>Leptastrea</dt>
   <dd><ul>
@@ -169,21 +172,25 @@ gallery:
   <dt>Micromussa</dt>
   <dd><ul>
   <li>WWC Ultron (<i class="binomial">Micromussa amakusensis</i>)</li>
-  <li><a href="#i-tanks-micromussa-lord-lavender-jpg">Rainbow Lord - Lilac and purple with neon green mouth (<i class="binomial">Micromussa lordhowensis</i>)</a></li>
+  <li>Rainbow Lord - Yellow, purple & green (<i class="binomial">Micromussa lordhowensis</i>)</li>
+  <li>Gold Dust Lord - Gold, white & green (<i class="binomial">Micromussa lordhowensis</i>)</li>
+  <!--li><a href="#i-tanks-micromussa-lord-lavender-jpg">Rainbow Lord - Lilac and purple with neon green mouth (<i class="binomial">Micromussa lordhowensis</i>)</a></li>
   <li>Rainbow Lord - Orange and white with hot pink mouth (<i class="binomial">Micromussa lordhowensis</i>)</li>
   <li><a href="#i-tanks-micromussa-lord-blue-jpg">Rainbow Lord - Purple with lilac and green stripes, blue mouth (<i class="binomial">Micromussa lordhowensis</i>)</a></li>
   <li>Rainbow Lord - Yellow, purple & green (<i class="binomial">Micromussa lordhowensis</i>)</li>
   <li>Rainbow Lord - Dark purple/black with white and red stripes (<i class="binomial">Micromussa lordhowensis</i>)</li>
-  <li><a href="#i-tanks-micromussa-lord-rainbow-jpg">Rainbow Lord - Rainbow stripes (<i class="binomial">Micromussa lordhowensis</i>)</a></li>
+  <li><a href="#i-tanks-micromussa-lord-rainbow-jpg">Rainbow Lord - Rainbow stripes (<i class="binomial">Micromussa lordhowensis</i>)</a></li-->
   </ul></dd>
   <dt>Montipora</dt>
   <dd><ul>
-  <li>ORA Spongedes (<i class="binomial">Montipora spongedes</i>)</li>
+  <li>Beach Bum</li>
+  <li>Rainbow</li>
   <!--li>Bubblegum Digitata (<i class="binomial">Montipora digitata</i>)</li-->
   </ul></dd>
   <dt>Miscellaneous</dt>
   <dd><ul>
-  <li>WWC Slimeball Anacropora</li>
+  <li>Blueberry Duncan</li>
+  <li><a href="#i-tanks-rainbow-symphilia-wilsoni-jpg">Rainbow Symphilia  (<i class="binomial">Symphilia wilsoni</i>)</a></li>
   </ul></dd>
 </dl>
 
@@ -205,7 +212,7 @@ gallery:
   <dd><ul>
   <li>Stock Reefer 170 sump with additional baffles for the refugium</li>
   <li>Custom lid from Octo Aquatics</li>
-  <li>Red Sea Reefer Filter Media Cup</li>
+  <li>Red Sea Nano Filter Mat</li>
   </ul></dd>
   <dt>Skimmer</dt>
   <dd>Tunze Comline DOC Skimmer 9004 DC</dd>
@@ -215,9 +222,9 @@ gallery:
   <li>VCA Random Flow Generator</li>
   </ul></dd>
   <dt>Wavemaker</dt>
-  <dd>Neptune Systems WAV</dd>
+  <dd>Red Sea ReefWave 25</dd>
   <dt>Refugium Light</dt>
-  <dd>Tunze 8821 6500K LED</dd>
+  <dd>Tunze Refugium LED 8831.00</dd>
   <dt>Heaters</dt>
   <dd><ul>
   <li>Bulk Reef Supply Titanium 200W</li>
@@ -227,8 +234,7 @@ gallery:
   <dd><ul>
   <li>Neptune Apex 2016 w/ temp, salinity, pH, and ORP</li>
   <li>EB832</li>
-  <li>WXM</li>
-  <li>1LINK</li>
+  <li>FMM × 2</li>
   </ul></dd>
   <dt>Dosing</dt>
   <dd><ul>
@@ -268,8 +274,7 @@ gallery:
   <dt>Refugium</dt>
   <dd><ul>
   <li>Walt Smith Fiji Mud</li>
-  <li>CaribSea Arag Alive Fiji Pink Sand</li>
-  <li>Medium Marine Pure Ceramic Biofilter Media Rock</li>
+  <li>Assorted Macroalgae</li>
   </ul></dd>
 </dl>
 
