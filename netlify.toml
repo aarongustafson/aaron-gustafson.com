@@ -1,7 +1,7 @@
 [build]
 	command = "npm run build"
 	functions = ".netlify/functions"
-  edge_functions = ".netlify/edge-functions"
+	edge_functions = ".netlify/edge-functions"
 
 [dev]
 	framework = "eleventy"
@@ -48,7 +48,7 @@
 	for = "*"
 	[headers.values]
 	X-Content-Type-Options = "nosniff"
-  Cache-Control = "public"
+	Cache-Control = "public"
 [[headers]]
 	for = "/*.svgz"
 	[headers.values]
@@ -86,14 +86,14 @@
 	for = "/*.json"
 	[headers.values]
 	X-Content-Type-Options = "nosniff"
-  Content-Type = "application/json; charset=utf-8"
+	Content-Type = "application/json; charset=utf-8"
 [[headers]]
 	for = "/feeds/*.json"
 	[headers.values]
 	Access-Control-Allow-Origin = "*"
 	Access-Control-Allow-Methods = "GET,HEAD,OPTIONS,POST"
 	Access-Control-Allow-Headers = "Accept,X-Requested-With,Content-Type,Cache-Control,mode"
-  Cache-Control = "no-cache"
+	Cache-Control = "no-cache"
 
 [functions."deploy-succeeded"]
 	included_files = ["_cache/*.*"]
