@@ -9,8 +9,16 @@
 
 [[plugins]]
 	package = "netlify-plugin-cache-folder"
+
 #[[plugins]]
 #	package = "./plugins/persist-static-directory"
+
+[[plugins]]
+  package = "netlify-plugin-webmentions"
+	[plugins.inputs]
+	baseUrl = "https://www.aaron-gustafson.com"
+	feedPath = "/feeds/all.xml"
+	limit = 5
 
 [[redirects]]
 	from = "/notebook/20*/:slug"
