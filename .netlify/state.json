@@ -13,8 +13,9 @@
 			},
 			"timezone": "America/Los_Angeles",
 			"latitude": 47.5364,
-			"longitude": -122.278
+			"longitude": -122.278,
+			"postalCode": "98118"
 		},
-		"timestamp": 1706911820293
+		"timestamp": 1738873392730
 	}
 }
