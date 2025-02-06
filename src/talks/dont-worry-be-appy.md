@@ -11,7 +11,7 @@ slides:
   link: https://presentations.aaron-gustafson.com/NDzxRS/dont-worry-be-appy
   embed: https://presentations.aaron-gustafson.com/NDzxRS/embed
   download: 2022/an-event-apart/Don’t%20Worry%20Be%20Appy.pdf
-	size: 16.9 MB
+  size: 16.9 MB
 ---
 
 When it comes delivering software that deeply integrates with operating systems, the web has historically struggled to compete with compiled apps. Many frameworks have sought to bridge this chasm over the years, but they have become less necessary as the web continues to evolve deeper connections with operating systems.

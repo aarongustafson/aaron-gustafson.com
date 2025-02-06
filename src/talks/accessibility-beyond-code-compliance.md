@@ -12,7 +12,7 @@ slides:
   link: https://presentations.aaron-gustafson.com/SE8HHb/accessibility-beyond-code-compliance
   embed: https://presentations.aaron-gustafson.com/SE8HHb/embed
   download: 2023/axe-con/accessibility-beyond-code-compliance.pdf
-	size: 751 KB
+  size: 751 KB
 ---
 
 In a cruel bit of irony, our industry’s approach to accessibility has long faced its own barriers. Companies, if they have even broached the subject of accessibility at all, restricted discussion of the practice to addressing their legal exposure. While this work has been critical for removing barriers for people with disabilities and has kept a good many of us gainfully employed finding and fixing bugs, it can also be frustrating and sometimes demoralizing work.
