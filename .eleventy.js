@@ -1,25 +1,38 @@
-const pluginSEO = require("eleventy-plugin-seo");
+import pluginSEO from "eleventy-plugin-seo";
 //const { DateTime } = require("luxon");
-const markdownIt = require("markdown-it");
+import markdownIt from "markdown-it";
 const markdown_options = {
 	html: true,
 	linkify: true,
 	typographer: true,
 	breaks: false
 };
-const anchor = require('markdown-it-anchor');
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const svgContents = require("eleventy-plugin-svg-contents");
-const embedEverything = require("eleventy-plugin-embed-everything");
-const embedCodePen = require("@manustays/eleventy-plugin-codepen-iframe");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const imagesResponsiver = require("eleventy-plugin-images-responsiver");
-const readingTime = require('eleventy-plugin-reading-time');
-const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
-const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
+import markdownit_attrs from "markdown-it-attrs";
+import markdownit_footnote from "markdown-it-footnote";
+import anchor from "markdown-it-anchor";
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import svgContents from "eleventy-plugin-svg-contents";
+import embedEverything from "eleventy-plugin-embed-everything";
+import embedCodePen from "@manustays/eleventy-plugin-codepen-iframe";
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import imagesResponsiver from "eleventy-plugin-images-responsiver";
+import readingTime from "eleventy-plugin-reading-time";
+import eleventyPluginFilesMinifier from "@sherby/eleventy-plugin-files-minifier";
+import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
+import filters from "./_11ty/filters.js";
+
 //const { series } = require("gulp");
-const fs = require('fs');
-require('dotenv').config();
+import fs from "fs";
+
+import { readFile } from "fs/promises";
+const seo_conf = JSON.parse(
+  await readFile(
+    new URL("./src/_data/seo.json", import.meta.url)
+  )
+);
+
+import dotenv from "dotenv";
+dotenv.config();
 const PRODUCTION = process.env.NODE_ENV === "production";
 
 const EVENTS = JSON.parse(fs.readFileSync("./src/_data/speaking_engagements.json"));
@@ -27,7 +40,7 @@ function getEventDate(id){
 	return EVENTS.filter(event=>event.id.toString()===id.toString())[0].date;
 }
 
-module.exports = config => {
+export default async (config) => {
 
 	// Cloudinary
 	config.cloudinaryCloudName = "aarongustafson";
@@ -40,8 +53,8 @@ module.exports = config => {
 								 placement: 'before'
 							 })
 							})
-						 .use(require("markdown-it-attrs"))
-						 .use(require('markdown-it-footnote'));
+						 .use(markdownit_attrs)
+						 .use(markdownit_footnote);
 	md.renderer.rules.footnote_block_open = () => (
 		'<hr class="footnotes-sep">\n' +
 		'<section class="footnotes">\n' +
@@ -74,11 +87,11 @@ module.exports = config => {
 	config.addPassthroughCopy({ "src/static": "/" });
 
 	// Plugins
-	config.addPlugin(pluginSEO, require("./src/_data/seo.json"));
+	config.addPlugin(pluginSEO, seo_conf);
 	config.addPlugin(svgContents);
-	// config.addPlugin(EleventyHtmlBasePlugin, {
-	// 	baseHref: PRODUCTION ? "https://www.aaron-gustafson.com" : ""
-	// });
+	config.addPlugin(EleventyHtmlBasePlugin, {
+		baseHref: PRODUCTION ? "https://www.aaron-gustafson.com" : ""
+	});
 	config.addPlugin(embedEverything, {
 		twitter: {
 			options: {
@@ -146,12 +159,11 @@ module.exports = config => {
 	// Filters
 	config.addFilter("getNewestCollectionItemDate", pluginRss.getNewestCollectionItemDate);
 	config.addFilter("absoluteUrl", pluginRss.absoluteUrl);
-	config.addFilter("htmlToAbsoluteUrls", pluginRss.htmlToAbsoluteUrls);
+	//config.addFilter("htmlToAbsoluteUrls", pluginRss.htmlToAbsoluteUrls);
 	config.addFilter("dateToRfc3339", pluginRss.dateToRfc3339);
 	config.addFilter("markdownify", text => {
 		return md.renderInline( text );
 	});
-	const filters = require('./_11ty/filters');
 	Object.keys(filters).forEach(filterName => {
 		config.addFilter(filterName, filters[filterName]);
 	});
