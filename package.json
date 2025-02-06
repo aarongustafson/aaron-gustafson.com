@@ -51,7 +51,6 @@
 		"@types/markdown-it": "^12.2.3",
 		"ansi-regex": ">=6.0.1",
 		"ansi2html": "^0.0.1",
-		"caniuse-lite": "^1.0.30001642",
 		"concurrently": "^7.6.0",
 		"css-what": "^6.1.0",
 		"dotenv": "^16.0.2",
@@ -103,8 +102,8 @@
 	},
 	"devDependencies": {
 		"@zachleat/announcement-banner": "^1.0.8",
-		"eleventy-plugin-images-responsiver": "^3.0.0",
 		"broken-link-checker": "^0.7.8",
+		"eleventy-plugin-images-responsiver": "^3.0.0",
 		"hygen": "^6.2.11",
 		"netlify-cli": "^18.0.3x",
 		"netlify-plugin-webmentions": "^1.1.1"
