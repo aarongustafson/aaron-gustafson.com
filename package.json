@@ -10,7 +10,7 @@
 		"debug": "DEBUG=Eleventy* npx eleventy --dryrun",
 		"prebuild": "gulp prebuild",
 		"build": "NODE_ENV=production npx eleventy --quiet",
-		"postbuild": "gulp postbuild && webmention dist/feeds/all.xml --limit 5 --send",
+		"postbuild": "gulp postbuild",
 		"start-netlify": "NODE_ENV=production netlify dev && netlify functions:serve",
 		"post": "hygen post with-prompt",
 		"link": "hygen link with-prompt",
@@ -106,7 +106,8 @@
 		"@zachleat/announcement-banner": "^1.0.8",
 		"broken-link-checker": "^0.7.8",
 		"hygen": "^6.2.11",
-		"netlify-cli": "^17.37.0"
+		"netlify-cli": "^17.37.0",
+		"netlify-plugin-webmentions": "^1.1.1"
 	},
 	"prettier": {
 		"useTabs": true,
