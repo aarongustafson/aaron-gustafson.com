@@ -1,5 +1,0 @@
-{
-	"imports": {
-		"open-graph-scraper": "https://raw.githubusercontent.com/jshemas/openGraphScraper/master/dist/index.d.ts"
-	}
-}
