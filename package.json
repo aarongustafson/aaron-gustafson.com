@@ -4,7 +4,7 @@
 	"description": "Aaron Gustafson’s website.",
 	"main": ".eleventy.js",
 	"type": "module",
-  "scripts": {
+	"scripts": {
 		"start": "gulp && concurrently 'gulp watch' 'npx eleventy --serve --quiet --incremental --ignore-initial'",
 		"serve": "cd dist && npx http-server -p 8888 -a 127.0.0.1",
 		"clean": "rm -Rf ./dist/* && rm -Rf ./dist/.*",
@@ -57,6 +57,7 @@
 		"dotenv": "^16.0.2",
 		"eleventy-plugin-embed-everything": "^1.19.0",
 		"eleventy-plugin-reading-time": "0.0.1",
+		"eleventy-plugin-images-responsiver": "^3.0.0",
 		"eleventy-plugin-seo": "aarongustafson/eleventy-plugin-seo#develop",
 		"eleventy-plugin-svg-contents": "^0.7.0",
 		"faunadb": "^4.6.0",
@@ -104,7 +105,6 @@
 	"devDependencies": {
 		"@zachleat/announcement-banner": "^1.0.8",
 		"broken-link-checker": "^0.7.8",
-		"eleventy-plugin-images-responsiver": "^3.0.0",
 		"hygen": "^6.2.11",
 		"netlify-cli": "^18.0.3x",
 		"netlify-plugin-webmentions": "^1.1.1"
