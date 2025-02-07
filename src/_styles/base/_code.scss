@@ -1,37 +1,41 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Code styles
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 
 		code,
 		kbd {
-				background-color: $color-black;
-				background-color: rgba( $color-black, .9 );
-				border: 1px solid $color-off-white;
+				background-color: variables.$color-black;
+				background-color: rgba( variables.$color-black, .9 );
+				border: 1px solid variables.$color-off-white;
 				border-radius: 3px;
-				color: $color-off-white;
-				font-family: $font-stack-mono;
+				color: variables.$color-off-white;
+				font-family: variables.$font-stack-mono;
 				font-style: normal;
 				padding: .05em .25em;
 				text-shadow: none;
 				white-space: nowrap;
 
 				@supports (margin-block: 1em) {
-					@include unset( border padding );
-					border-inline: 1px solid $color-off-white;
-					border-block: 1px solid $color-off-white;
+					@include mixins.unset( border padding );
+					border-inline: 1px solid variables.$color-off-white;
+					border-block: 1px solid variables.$color-off-white;
 					padding-inline: .25em;
 					padding-block: .05em;
 				}
 		}
 		
 		pre {
-				background-color: $color-black;
-				border: 1px solid $color-grey-light;
+				background-color: variables.$color-black;
+				border: 1px solid variables.$color-grey-light;
 				border-radius: 3px;
-				color: $color-black;
-				font-family: $font-stack-mono;
+				color: variables.$color-black;
+				font-family: variables.$font-stack-mono;
 				font-style: normal;
 				
 				margin-left: auto;
@@ -41,9 +45,9 @@
 				overflow-x: auto;
 
 				@supports (margin-block: 1em) {
-					@include unset( border margin-left margin-right padding overflow-x );
-					border-inline: 1px solid $color-grey-light;
-					border-block: 1px solid $color-grey-light;
+					@include mixins.unset( border margin-left margin-right padding overflow-x );
+					border-inline: 1px solid variables.$color-grey-light;
+					border-block: 1px solid variables.$color-grey-light;
 					margin-inline: auto;
 					padding-inline: .25em;
 					padding-block: .05em;
@@ -51,16 +55,16 @@
 				}
 
 				&:focus {
-					outline: 3px double $color-black;
+					outline: 3px double variables.$color-black;
 					overflow-x: scroll;
 
 					@supports (margin-block: 1em) {
-						@include unset( overflow-x );
+						@include mixins.unset( overflow-x );
 						overflow-inline: scroll;
 					}
 
 					html.dark-mode & {
-						outline-color: $color-off-white;
+						outline-color: variables.$color-off-white;
 					}
 				}
 
@@ -74,13 +78,13 @@
 		
 }
 
-@include breakup-media("screen and (max-width: #{$bp-full-em})") {
+@include breakup.breakup-media("screen and (max-width: #{variables.$bp-full-em})") {
 	pre[class*="language-"] {
-		@include rem( margin-left, -19 );
-		@include rem( margin-right, -19 );
+		@include mixins.rem( margin-left, -19 );
+		@include mixins.rem( margin-right, -19 );
 
 		@supports (margin-block: 1em) {
-			@include unset( margin-left margin-right );
+			@include mixins.unset( margin-left margin-right );
 			margin-inline: -19px;
 		}
 	}

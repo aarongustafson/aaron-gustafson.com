@@ -1,5 +1,8 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+
 .collection__summary {
-	@include rem( margin-bottom, $default-spacing );
+	@include mixins.rem( margin-bottom, variables.$default-spacing );
 
 	p, ul, li {
 		display: inline;

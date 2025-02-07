@@ -1,7 +1,11 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 Body-level settings
 \*------------------------------------*/
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
   
   // CSS Device Adaptation
   // http://dev.w3.org/csswg/css-device-adapt/
@@ -36,14 +40,14 @@ Body-level settings
 	}
 	
 	body {
-		@include breakup-placeholder( text );
-		@include breakup-placeholder( font-smoothing );
+		@include breakup.breakup-placeholder( text );
+		@include breakup.breakup-placeholder( font-smoothing );
 		
-		background: $color-background;
-		color: $color-text;
+		background: variables.$color-background;
+		color: variables.$color-text;
 		
-		font-family: $font-stack-body;
-		font-weight: $font-weight-sansserif;
+		font-family: variables.$font-stack-body;
+		font-weight: variables.$font-weight-sansserif;
 		
 		margin: 0 auto;
 		height: 100%;
@@ -52,14 +56,14 @@ Body-level settings
 		overflow-wrap: break-word;
 
 		@supports (margin-block: 1em) {
-			@include unset( margin height );
+			@include mixins.unset( margin height );
 			margin-inline: auto;
 			block-size: 100%;
 		}
 
 		html.dark-mode & {
-			background: $color-background-dark;
-			color: $color-text-dark;
+			background: variables.$color-background-dark;
+			color: variables.$color-text-dark;
 		}
 	}
 

@@ -1,29 +1,33 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Webmentions
 \*------------------------------------*/
 
 @use 'sass:math';
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 	
 	$avatar-width: 48;
 	
 	.webmentions {
-		@include rem( font-size, $font-size-default );
-		@include rem( margin-top, math.div( $default-spacing, 2 ) );
+		@include mixins.rem( font-size, variables.$font-size-default );
+		@include mixins.rem( margin-top, math.div( variables.$default-spacing, 2 ) );
 
 		@supports (margin-block: 1em) {
 			margin-top: unset;
-			@include rem( margin-block-start, math.div( $default-spacing, 2 ), false );
+			@include mixins.rem( margin-block-start, math.div( variables.$default-spacing, 2 ), false );
 		}
 
 		h2 {
-			@include rem( margin-top, $default-spacing );
-			@include rem( margin-bottom, math.div( $default-spacing, 2 ) );
+			@include mixins.rem( margin-top, variables.$default-spacing );
+			@include mixins.rem( margin-bottom, math.div( variables.$default-spacing, 2 ) );
 
 			@supports (margin-block: 1em) {
-				@include unset( margin-top margin-bottom );
-				@include rem( margin-block, $default-spacing math.div( $default-spacing, 2 ), false );
+				@include mixins.unset( margin-top margin-bottom );
+				@include mixins.rem( margin-block, variables.$default-spacing math.div( variables.$default-spacing, 2 ), false );
 			}
 		}
 
@@ -36,19 +40,19 @@
 		&__item {
 			clear: both;
 
-			border-top: 1px solid $color-border;
+			border-top: 1px solid variables.$color-border;
 			margin: 0;
-			@include rem( padding, $default-spacing 0 $default-spacing ( $avatar-width + $default-spacing ) );
-			@include rem( min-height, $avatar-width );
+			@include mixins.rem( padding, variables.$default-spacing 0 variables.$default-spacing ( $avatar-width + variables.$default-spacing ) );
+			@include mixins.rem( min-height, $avatar-width );
 
 			position: relative;
 
 			@supports (margin-block: 1em) {
-				@include unset( border-top padding min-height );
-				border-block-start: 1px solid $color-border;
-				@include rem( padding-block, $default-spacing, false );
+				@include mixins.unset( border-top padding min-height );
+				border-block-start: 1px solid variables.$color-border;
+				@include mixins.rem( padding-block, variables.$default-spacing, false );
 				padding-inline: 0;
-				@include rem( padding-inline, ( $avatar-width + $default-spacing ) 0, false );
+				@include mixins.rem( padding-inline, ( $avatar-width + variables.$default-spacing ) 0, false );
 				min-block-size: $avatar-width;
 			}
 
@@ -66,31 +70,31 @@
 	.webmention {
 
 		&__author {
-			@include rem( font-size, $font-size-small );
-			font-weight: $font-weight-sansserif-bold;
+			@include mixins.rem( font-size, variables.$font-size-small );
+			font-weight: variables.$font-weight-sansserif-bold;
 		}
 		
 		&--author-starts .h-card .p-name {
-			@include breakup-placeholder( hidden );
+			@include breakup.breakup-placeholder( hidden );
 		}
 		
 		&__author__photo {
-      background-color: $color-grey-light;
+      background-color: variables.$color-grey-light;
 			border-radius: 3px;
 
 			display: block;
-			@include rem( width, $avatar-width );
-			@include rem( height, $avatar-width );
+			@include mixins.rem( width, $avatar-width );
+			@include mixins.rem( height, $avatar-width );
 
 			position: absolute;
-			@include rem( top, $default-spacing );
+			@include mixins.rem( top, variables.$default-spacing );
 			left: 0;
 
 			@supports (margin-block: 1em) {
-				@include unset( width height top left );
-				@include rem( inline-size, $avatar-width );
-				@include rem( block-size, $avatar-width );
-				inset-block-start: $default-spacing;
+				@include mixins.unset( width height top left );
+				@include mixins.rem( inline-size, $avatar-width );
+				@include mixins.rem( block-size, $avatar-width );
+				inset-block-start: variables.$default-spacing;
 				inset-inline-start: 0;
 			}
 		}
@@ -102,13 +106,13 @@
 		}
 		
 		&__meta {
-			color: $color-grey;
-			@include rem( font-size, $font-size-small );
+			color: variables.$color-grey;
+			@include mixins.rem( font-size, variables.$font-size-small );
 			text-align: right;
 			text-align: end;
 
 			html.dark-mode & {
-				color: $color-grey-light;
+				color: variables.$color-grey-light;
 			}
 		}
 
@@ -172,7 +176,7 @@
 			margin-right: -.5em;
 
 			@supports (margin-block: 1em) {
-				@include unset( margin-right margin-left );
+				@include mixins.unset( margin-right margin-left );
 				margin-inline: -.25em;
 			}
 

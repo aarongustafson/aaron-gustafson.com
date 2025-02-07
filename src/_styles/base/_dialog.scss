@@ -1,3 +1,6 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+
 // https://raw.githubusercontent.com/GoogleChrome/dialog-polyfill/master/dist/dialog-polyfill.css
 
 dialog {
@@ -10,10 +13,10 @@ dialog {
   height: -webkit-fit-content;
   height: fit-content;
   margin: auto;
-  border: 1px solid $color-background;
+  border: 1px solid variables.$color-background;
   padding: 1em;
-  background: $color-background;
-  color: $color-text;
+  background: variables.$color-background;
+  color: variables.$color-text;
   display: block;
 
 	&::backdrop {
@@ -21,12 +24,12 @@ dialog {
 	}
 
 	html.dark-mode & {
-		background: $color-background-dark;
-		color: $color-text-dark;
+		background: variables.$color-background-dark;
+		color: variables.$color-text-dark;
 	}
 
 	@supports (margin-block: 1em) {
-		@include unset( left right width height margin );
+		@include mixins.unset( left right width height margin );
 		block-size: fit-content;
 		inline-size: fit-content;
 		inset-inline: 0;
@@ -47,7 +50,7 @@ dialog + .backdrop {
   background: rgba(0,0,0,0.1);
 
 	@supports (margin-block: 1em) {
-		@include unset( top right bottom left );
+		@include mixins.unset( top right bottom left );
 		inset: 0;
 	}
 }
@@ -57,7 +60,7 @@ dialog + .backdrop {
   top: 0; right: 0; bottom: 0; left: 0;
 
 	@supports (margin-block: 1em) {
-		@include unset( top right bottom left );
+		@include mixins.unset( top right bottom left );
 		inset: 0;
 	}
 }

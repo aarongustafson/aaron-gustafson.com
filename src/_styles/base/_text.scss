@@ -1,10 +1,14 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Text-level semantics
 \*------------------------------------*/
 
 @use 'sass:math';
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 
 	// Abbreviations
 	abbr {
@@ -20,7 +24,7 @@
 	// Mark
 	mark {
 		background: transparent;
-		color: $color-text;
+		color: variables.$color-text;
 		color: inherit;
 		font-weight: normal;
 		font-weight: inherit;
@@ -39,7 +43,7 @@
 
 	// Superscript & subscript
 	sub, sup {
-		@include rem( font-size, $font-size-tiny );
+		@include mixins.rem( font-size, variables.$font-size-tiny );
 		font-style: inherit;
 		font-weight: inherit;
 		position: relative;
@@ -67,7 +71,7 @@
 	}
 
 	small {
-		@include rem( font-size, $font-size-tiny );
+		@include mixins.rem( font-size, variables.$font-size-tiny );
 		font-style: italic;
 		display: block;
 	}
@@ -75,12 +79,12 @@
 
 	// Hidden
 	.hidden {
-		@include breakup-placeholder( hidden );
+		@include breakup.breakup-placeholder( hidden );
 	}
 
 	// :target
 	:target {
-		@include big-focus();
+		@include mixins.big-focus();
 	}
 
 	.footnote-ref > a:target,
@@ -90,6 +94,6 @@
 	}
 
 	*:has(> .footnote-ref > a:target) {
-    @include big-focus();
+    @include mixins.big-focus();
 	}
 }

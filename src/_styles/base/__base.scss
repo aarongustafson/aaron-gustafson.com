@@ -4,26 +4,26 @@
 \*------------------------------------*/
 
 // Body element (global fonts & such)
-@import "body";
+@forward "body";
 
 // Flow-level semantics
-@import "headings";
-@import "blocks";
-@import "lists";
+@forward "headings";
+@forward "blocks";
+@forward "lists";
 
 // Text-level semantics
-@import "links";
-@import "text";
+@forward "links";
+@forward "text";
 
 // Specifics
-@import "code";
-@import "media";
-@import "tables";
-@import "forms";
-@import "dialog";
+@forward "code";
+@forward "media";
+@forward "tables";
+@forward "forms";
+@forward "dialog";
 
 // Animations
-@import "animations";
+@forward "animations";
 
 // Scrollbars
-@import "scrollbars";
+@forward "scrollbars";

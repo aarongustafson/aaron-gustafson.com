@@ -1,28 +1,32 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 Blog Entry
 \*------------------------------------*/
 
 @use 'sass:math';
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 	
 	.entry {
 		
-		@include rem( margin, $margin-default );
+		@include mixins.rem( margin, variables.$margin-default );
 
 		@supports (margin-block: 1em) {
 			margin: unset;
-			@include rem( margin-block-end, $default-spacing, false );
+			@include mixins.rem( margin-block-end, variables.$default-spacing, false );
 			margin-inline: 0;
 		}
 		
 		&__meta {
-			@include rem( font-size, $font-size-small );
-			color: $color-grey;
+			@include mixins.rem( font-size, variables.$font-size-small );
+			color: variables.$color-grey;
 			padding: 0;
 
 			html.dark-mode & {
-				color: $color-grey-light;
+				color: variables.$color-grey-light;
 			}
 
 			dl {
@@ -30,24 +34,24 @@ Blog Entry
 			}
 
 			dt {
-				font-family: $font-stack-serif;
-				@include rem( font-size, $font-size-nav );
+				font-family: variables.$font-stack-serif;
+				@include mixins.rem( font-size, variables.$font-size-nav );
 				line-height: 1.3;
 				break-inside: avoid-column;
 			}
 
 			button {
-				@include rem( margin-top, 6 );
+				@include mixins.rem( margin-top, 6 );
 
 				@supports (margin-block: 1em) {
 					margin-top: unset;
-					@include rem( margin-block-start, 6, false );
+					@include mixins.rem( margin-block-start, 6, false );
 				}
 			}
 		}
 		
 		&__jump-links {
-			@include breakup-placeholder( delist );
+			@include breakup.breakup-placeholder( delist );
 			margin-top: 0;
 
 			@supports (margin-block: 1em) {
@@ -90,7 +94,7 @@ Blog Entry
 			top: .25em;
 
 			@supports (margin-block: 1em) {
-				@include unset( width height margin-right top );
+				@include mixins.unset( width height margin-right top );
 				inline-size: 100px;
 				block-size: 100px;
 				max-inline-size: 100px;
@@ -104,7 +108,7 @@ Blog Entry
 			padding-top: 0;
 
 			@supports (margin-block: 1em) {
-				@include unset( border-top padding-top );
+				@include mixins.unset( border-top padding-top );
 				border-block-start: 0;
 				padding-block-start: 0;
 			}
@@ -129,26 +133,26 @@ Blog Entry
 				}
 			}
 			hr {
-				@include rem( max-width, 220 );
+				@include mixins.rem( max-width, 220 );
 
 				@supports (max-inline-size: 1em) {
 					max-width: unset;
-					@include rem( max-inline-size, 220, false );
+					@include mixins.rem( max-inline-size, 220, false );
 				}
 			}
 		}
 
 		&__related &:first-of-type {
-			@include rem( margin-top, $default-spacing );
+			@include mixins.rem( margin-top, variables.$default-spacing );
 
 			@supports (margin-block: 1em) {
 				margin-top: unset;
-				@include rem( margin-block-start, $default-spacing, false );
+				@include mixins.rem( margin-block-start, variables.$default-spacing, false );
 			}
 		}
 
 		&__series {
-			@include rem( font-size, $font-size-small );
+			@include mixins.rem( font-size, variables.$font-size-small );
 		}
 		
 		&--excerpt {
@@ -156,7 +160,7 @@ Blog Entry
 			contain-intrinsic-height: auto 300px;
 		}
 		&--excerpt &__title {
-			@include rem( font-size, $font-size-h1 );
+			@include mixins.rem( font-size, variables.$font-size-h1 );
 			text-decoration: none;
 		}
 		&--excerpt &__meta {
@@ -179,15 +183,15 @@ Blog Entry
 			}
 			& > .entry__meta {
 				order: 2;
-				border-top: 1px solid $color-rule;
-				@include rem( margin-top, $default-spacing );
-				@include rem( padding-top, $default-spacing );
+				border-top: 1px solid variables.$color-rule;
+				@include mixins.rem( margin-top, variables.$default-spacing );
+				@include mixins.rem( padding-top, variables.$default-spacing );
 
 				@supports (margin-block: 1em) {
-					@include unset( border-top margin-top padding-top );
-					border-block-start: 1px solid $color-rule;
-					@include rem( margin-block-start, $default-spacing, false );
-					@include rem( padding-block-start, $default-spacing, false );
+					@include mixins.unset( border-top margin-top padding-top );
+					border-block-start: 1px solid variables.$color-rule;
+					@include mixins.rem( margin-block-start, variables.$default-spacing, false );
+					@include mixins.rem( padding-block-start, variables.$default-spacing, false );
 				}
 			}
 			& > * {
@@ -200,16 +204,16 @@ Blog Entry
 			align-items: top;
 			
 			& + & {
-				@include rem(margin-top, $default-spacing * 2);
+				@include mixins.rem(margin-top, variables.$default-spacing * 2);
 
 				@supports (margin-block: 1em) {
 					margin-top: unset;
-					@include rem( margin-block-start, $default-spacing * 2, false );
+					@include mixins.rem( margin-block-start, variables.$default-spacing * 2, false );
 				}
 			}
 
 			.entry__type {
-				background-color: $color-green-dark;
+				background-color: variables.$color-green-dark;
 				
 				border-radius: 100%;
 				width: 24px;
@@ -217,7 +221,7 @@ Blog Entry
 				padding: 10px;
 
 				@supports (margin-block: 1em) {
-					@include unset( width height padding );
+					@include mixins.unset( width height padding );
 					block-size: 24px;
 					inline-size: 24px;
 					padding-block: 10px;
@@ -229,29 +233,29 @@ Blog Entry
     			max-height: 24px;
 
 					@supports (margin-block: 1em) {
-						@include unset( width max-height );
+						@include mixins.unset( width max-height );
 						max-block-size: 24px;
 						inline-size: 24px;
 					}
 				}
 
 				path {
-					fill: $color-white;
+					fill: variables.$color-white;
 				}
 			}
 			
 			.entry__details {
 				flex-grow: 1;
-				@include rem( margin, 0 0 0 $table-spacing );
+				@include mixins.rem( margin, 0 0 0 variables.$table-spacing );
 
 				@supports (margin-block: 1em) {
 					margin: 0;
-					@include rem( margin-inline-start, $table-spacing, false );
+					@include mixins.rem( margin-inline-start, variables.$table-spacing, false );
 				}
 			}
 
 			.entry__meta {
-				@include rem( font-size, $font-size-caption );
+				@include mixins.rem( font-size, variables.$font-size-caption );
 
 				column-count: 1;
 				margin-top: 0;
@@ -270,17 +274,17 @@ Blog Entry
 			}
 
 			.entry__summary + .entry__meta {
-				border-top: 1px solid $color-rule;
-				@include rem( margin-top, math.div($default-spacing, 2) );
-				@include rem( padding-top, math.div($default-spacing, 2) );
-				@include rem( font-size, $font-size-caption * .75 );
+				border-top: 1px solid variables.$color-rule;
+				@include mixins.rem( margin-top, math.div(variables.$default-spacing, 2) );
+				@include mixins.rem( padding-top, math.div(variables.$default-spacing, 2) );
+				@include mixins.rem( font-size, variables.$font-size-caption * .75 );
 				text-align: right;
 
 				@supports(margin-block:1em) {
-					@include unset(border-top padding-top margin-top);
-					border-block-start: 1px solid $color-rule;
-					@include rem( margin-block-start, math.div($default-spacing, 2), false );
-					@include rem( padding-block-start, math.div($default-spacing, 2), false );
+					@include mixins.unset(border-top padding-top margin-top);
+					border-block-start: 1px solid variables.$color-rule;
+					@include mixins.rem( margin-block-start, math.div(variables.$default-spacing, 2), false );
+					@include mixins.rem( padding-block-start, math.div(variables.$default-spacing, 2), false );
 				}
 			}
 		}
@@ -290,7 +294,7 @@ Blog Entry
 	@supports (column-count:2) or (-webkit-column-count:2) or (-moz-column-count:2) {
 		.entry__meta {
 			column-count: 2;
-			@include rem( column-gap, $default-spacing );
+			@include mixins.rem( column-gap, variables.$default-spacing );
 			
 			dd + dt {
 				margin-top: 0;
@@ -301,11 +305,11 @@ Blog Entry
 				}
 			}
 			dd {
-				@include rem( padding-bottom, $default-spacing );
+				@include mixins.rem( padding-bottom, variables.$default-spacing );
 
 				@supports (margin-block: 1em) {
 					padding-bottom: unset;
-					@include rem( padding-block-end, $default-spacing, false );
+					@include mixins.rem( padding-block-end, variables.$default-spacing, false );
 				}
 			}
 		}
@@ -313,7 +317,7 @@ Blog Entry
 	
 }
 
-@include breakup-breakpoint( "full" ) {
+@include breakup.breakup-breakpoint( "full" ) {
 	
 	.entry {
 		
@@ -328,22 +332,22 @@ Blog Entry
 			header > .entry__meta {
 				border-top: 0;
 
-				border-left: 1px solid $color-grey-light;
+				border-left: 1px solid variables.$color-grey-light;
 				padding: .2em 1em;
 				margin-left: 1em;
-				@include rem( margin-top, $default-spacing );
+				@include mixins.rem( margin-top, variables.$default-spacing );
 				width: 25%;
 				
 				position: absolute;
 				left: 106%;
 
 				@supports (margin-block: 1em) {
-					@include unset( border-top border-left padding margin-left margin-top width left );
+					@include mixins.unset( border-top border-left padding margin-left margin-top width left );
 					border-block-start: 0;
-					border-inline-start: 1px solid $color-grey-light;
+					border-inline-start: 1px solid variables.$color-grey-light;
 					padding-block: .2em;
 					padding-inline: 1em;
-					@include rem( margin-block-start, $default-spacing, false );
+					@include mixins.rem( margin-block-start, variables.$default-spacing, false );
 					margin-inline-start: 1em;
 					inline-size: 25%;
 					inset-inline-start: 106%;
@@ -358,7 +362,7 @@ Blog Entry
 			bottom: 0;
 
 			@supports (margin-block: 1em) {
-				@include unset( margin-top top bottom );
+				@include mixins.unset( margin-top top bottom );
 				margin-block-start: 0;
 				inset-block: 0;
 			}
@@ -393,7 +397,7 @@ Blog Entry
 			margin-left: -110px;
 
 			@supports (margin-block: 1em) {
-				@include unset( left margin-left );
+				@include mixins.unset( left margin-left );
 				inset-inline-start: 68%;
 				margin-inline-start: -110px;
 			}
@@ -406,7 +410,7 @@ Blog Entry
 			min-height: 120px;
 
 			@supports (margin-block: 1em) {
-				@include unset( padding-left min-height );
+				@include mixins.unset( padding-left min-height );
 				padding-inline-start: calc(100px + 1rem);
 				min-block-size: 120px;
 			}
@@ -418,7 +422,7 @@ Blog Entry
 				left: 0;
 
 				@supports (margin-block: 1em) {
-					@include unset( top left );
+					@include mixins.unset( top left );
 					inset-block-start: .25em;
 					inset-inline-start: 0;
 				}
@@ -433,11 +437,11 @@ Blog Entry
 			column-count: 1;
 			
 			dd + dt {
-				@include rem( margin-top, $default-spacing );
+				@include mixins.rem( margin-top, variables.$default-spacing );
 
 				@supports (margin-block: 1em) {
 					margin-top: unset;
-					@include rem( margin-block-start, $default-spacing, false );
+					@include mixins.rem( margin-block-start, variables.$default-spacing, false );
 				}
 			}
 			dd {
@@ -445,7 +449,7 @@ Blog Entry
 
 				@supports (margin-block: 1em) {
 					padding-bottom: unset;
-					@include rem( padding-block-end, 0, false );
+					@include mixins.rem( padding-block-end, 0, false );
 				}
 			}
 		}

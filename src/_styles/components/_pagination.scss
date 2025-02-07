@@ -1,26 +1,30 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
     Pagination
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 
   .pagination {
     
-    @include rem( margin-bottom, $default-spacing );
+    @include mixins.rem( margin-bottom, variables.$default-spacing );
     text-align: center;
     user-select: none;
 
     &__pages {
-      @include rem( margin, 0 $default-spacing );
+      @include mixins.rem( margin, 0 variables.$default-spacing );
     }
 
 		@supports (margin-block: 1em) {
 			margin-bottom: unset;
-			@include rem( margin-block-end, $default-spacing, false );
+			@include mixins.rem( margin-block-end, variables.$default-spacing, false );
 
 			&__pages {
 				margin: unset;
-				@include rem( margin-inline, $default-spacing, false );
+				@include mixins.rem( margin-inline, variables.$default-spacing, false );
 			}
 		}
 
@@ -28,7 +32,7 @@
 
 }
 
-@include breakup-breakpoint( "medium" ) {
+@include breakup.breakup-breakpoint( "medium" ) {
 
   .pagination {
     margin-left: 33%;

@@ -1,8 +1,12 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 	Form Styles
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 	
 	form {
 		
@@ -23,15 +27,15 @@
 	
 	.fields {
 		
-		@include breakup-placeholder( delist );
+		@include breakup.breakup-placeholder( delist );
 		
 		&__group {
 			
-			@include rem( margin, $margin-default );
+			@include mixins.rem( margin, variables.$margin-default );
 
 			@supports (margin-block: 1em) {
 				margin: unset;
-				@include rem( margin-block-end, $default-spacing, false );
+				@include mixins.rem( margin-block-end, variables.$default-spacing, false );
 				margin-inline: 0;
 			}
 			
@@ -48,23 +52,23 @@
 			select,
 			textarea {
 				
-				color: $color-border;
+				color: variables.$color-border;
 				
-				@include rem( font-size, $font-size-default );
+				@include mixins.rem( font-size, variables.$font-size-default );
 				
 				box-sizing: border-box;
 				border: 1px solid;
-				@include rem( margin, 5 0 );
-				@include rem( padding, 10 );
+				@include mixins.rem( margin, 5 0 );
+				@include mixins.rem( padding, 10 );
 				
-				transition: background-color $default-transition, color $default-transition;
+				transition: background-color variables.$default-transition, color variables.$default-transition;
 
 				@supports (margin-block: 1em) {
-					@include unset( margin padding );
-					@include rem( margin-block, 5, false );
-					@include rem( margin-inline, 0, false );
-					@include rem( padding-block, 10, false );
-					@include rem( padding-inline, 10, false );
+					@include mixins.unset( margin padding );
+					@include mixins.rem( margin-block, 5, false );
+					@include mixins.rem( margin-inline, 0, false );
+					@include mixins.rem( padding-block, 10, false );
+					@include mixins.rem( padding-inline, 10, false );
 				}
 				
 			}
@@ -72,8 +76,8 @@
 			input,
 			textarea {
 				
-				background: $color-background;
-				color: $color-text;
+				background: variables.$color-background;
+				color: variables.$color-text;
 				
 				display: block;
 				width: 100%;
@@ -84,11 +88,11 @@
 				}
 
 				&:focus {
-					background: $color-text-dark;
+					background: variables.$color-text-dark;
 				}
 
 				html.dark-mode & {
-					background: $color-text-dark-light;
+					background: variables.$color-text-dark-light;
 				}
 				
 			}
@@ -109,7 +113,7 @@
 			
 			// don’t let selects overflow
 			select {
-				@include rem( font-size, $font-size-h3 );
+				@include mixins.rem( font-size, variables.$font-size-h3 );
 				max-width: 100%;
 
 				@supports (margin-block: 1em) {
@@ -119,7 +123,7 @@
 			}
 			
 			&__note {
-				@include rem( font-size, $font-size-small );
+				@include mixins.rem( font-size, variables.$font-size-small );
 			}
 			
 		}
@@ -139,7 +143,7 @@
 	
 }
 
-@include breakup-breakpoint( "medium" ) {
+@include breakup.breakup-breakpoint( "medium" ) {
 	input,
 	textarea {
 		width: 80%;

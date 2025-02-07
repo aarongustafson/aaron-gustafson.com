@@ -1,19 +1,22 @@
+@use "../helpers/mixins";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Rules
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 	.rule {
-		@include rem( max-width, 220 );
+		@include mixins.rem( max-width, 220 );
 
 		@supports (max-inline-size: 1em) {
 			max-width: unset;
-			@include rem( max-inline-size, 220 );
+			@include mixins.rem( max-inline-size, 220 );
 		}
 	}
 }
 
-@include breakup-breakpoint( "medium" ) {
+@include breakup.breakup-breakpoint( "medium" ) {
 	.rule--optional {
 		display: none;
 	}

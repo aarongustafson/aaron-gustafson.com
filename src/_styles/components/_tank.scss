@@ -1,8 +1,12 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Tanks
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 
 	.binomial {
 		font-style: italic;
@@ -31,7 +35,7 @@
 			max-width: 100%;
 
 			@supports (margin-block: 1em) {
-				@include unset( max-width width );
+				@include mixins.unset( max-width width );
 				inline-size: 100%;
 				max-inline-size: 100%;
 			}
@@ -39,7 +43,7 @@
 
 		&__gallery {
 			display: grid;
-			@include rem( grid-gap, $default-spacing );
+			@include mixins.rem( grid-gap, variables.$default-spacing );
 			grid-template-columns: repeat(auto-fill, minmax(150px, 1fr) ) ;
 		}
 
@@ -53,7 +57,7 @@
 
 }
 
-@include breakup-breakpoint('medium') {
+@include breakup.breakup-breakpoint('medium') {
 
 	.layout-container--tank {
 		max-width: 47em;
@@ -64,7 +68,7 @@
 		}
 
 		@supports (margin-block: 1em) {
-			@include unset( max-width );
+			@include mixins.unset( max-width );
 			max-inline-size: 47em;
 
 			.layout-container__primary {

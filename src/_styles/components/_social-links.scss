@@ -1,3 +1,9 @@
+@use "sass:color";
+@use "sass:map";
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Share Links
 \*------------------------------------*/
@@ -93,7 +99,7 @@ $social-buttons: (
 	),
 );
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 
 	.social-links {
 		display: flex;
@@ -122,17 +128,17 @@ $social-buttons: (
 
 	.social-link {
 
-		background-color: $color-green;
-		@include rem( border-radius, 6 );
+		background-color: variables.$color-green;
+		@include mixins.rem( border-radius, 6 );
 
 		display: inline-block;
 		margin: 0 .25em;
-		@include rem( margin-top, math.div( $default-spacing, 2 ) );
+		@include mixins.rem( margin-top, math.div( variables.$default-spacing, 2 ) );
 		padding: 4px 8px;
 
 		@supports (margin-block: 1em) {
-			@include unset( margin margin-top padding );
-			@include rem( margin-block, math.div( $default-spacing, 2 ) 0, false );
+			@include mixins.unset( margin margin-top padding );
+			@include mixins.rem( margin-block, math.div( variables.$default-spacing, 2 ) 0, false );
 			margin-inline: .25em;
 			padding-block: 4px;
 			padding-inline: 8px;
@@ -143,40 +149,40 @@ $social-buttons: (
 		&:hover,
 		&:focus,
 		&:active {
-			color: $color-white;
+			color: variables.$color-white;
 		}
 
 		@each $site, $config in $social-buttons {
 			
 			&--#{$site} {
 
-				background-color: map-get( $config, 'color' );
+				background-color: map.get( $config, 'color' );
 				transition: background-color .5s;
 
 				&:hover,
 				&:focus,
 				&:active {
-					background: darken( map-get( $config, 'color' ), 20% );
+					background: color.adjust( map.get( $config, 'color' ), $lightness: -20% );
 				}
 
 			}
 
 			&--#{$site} &__icon {
-				@include rem( width, map-get( $config, 'size' ) );
-				@include rem( height, map-get( $config, 'size' ) );
-				@include rem( margin-top, map-get( $config, 'offset' ) );
+				@include mixins.rem( width, map.get( $config, 'size' ) );
+				@include mixins.rem( height, map.get( $config, 'size' ) );
+				@include mixins.rem( margin-top, map.get( $config, 'offset' ) );
 
 				@supports (margin-block: 1em) {
-					@include unset( width height margin-top );
-					@include rem( inline-size, map-get( $config, 'size' ), false );
-					@include rem( block-size, map-get( $config, 'size' ), false );
-					@include rem( margin-block, map-get( $config, 'offset' ), false );
+					@include mixins.unset( width height margin-top );
+					@include mixins.rem( inline-size, map.get( $config, 'size' ), false );
+					@include mixins.rem( block-size, map.get( $config, 'size' ), false );
+					@include mixins.rem( margin-block, map.get( $config, 'offset' ), false );
 				}
 
-				@if (map-get( $config, 'icon' )) {
+				@if (map.get( $config, 'icon' )) {
 					path,
 					circle {
-						fill: map-get( $config, 'icon' );
+						fill: map.get( $config, 'icon' );
 					}
 				}
 			}
@@ -204,12 +210,12 @@ $social-buttons: (
 
 			path,
 			circle {
-				fill: $color-white;
+				fill: variables.$color-white;
 			}
 		}
 
 		&__text {
-			@include breakup-placeholder( hidden );
+			@include breakup.breakup-placeholder( hidden );
 		}
 
 	}

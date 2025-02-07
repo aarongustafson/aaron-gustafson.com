@@ -1,8 +1,12 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Footnotes
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 
 		a.footnote {
 				
@@ -11,7 +15,7 @@
 				margin: -.5em -1em;
 
 				@supports (margin-block: 1em) {
-					@include unset( padding margin );
+					@include mixins.unset( padding margin );
 					padding-block: .5em;
 					padding-inline: 1em;
 					margin-block: -.5em;
@@ -27,13 +31,13 @@
 		.footnotes {
 				
 			ol {
-				@include rem( font-size, $font-size-small );
+				@include mixins.rem( font-size, variables.$font-size-small );
 				
 				margin-left: 0;
 				padding-left: 2em;
 
 				@supports (margin-block: 1em) {
-					@include unset( margin-left padding-left );
+					@include mixins.unset( margin-left padding-left );
 					margin-inline-start: 0;
 					padding-inline-start: 2em;
 				}
@@ -49,10 +53,10 @@
 			}
 
 			.footnote-item + .footnote-item {
-				@include rem(margin-top, $default-spacing);
+				@include mixins.rem(margin-top, variables.$default-spacing);
 
 				@supports (margin-block: 1em) {
-					@include rem(margin-block-start, $default-spacing);
+					@include mixins.rem(margin-block-start, variables.$default-spacing);
 				}
 			}
 				

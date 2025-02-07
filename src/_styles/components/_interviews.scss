@@ -1,8 +1,10 @@
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
     Interviews
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 
 	.interview {
 

@@ -1,3 +1,20 @@
+@use "functions";
+@use "mixins";
+@use "variables";
+
+@use "vendors/breakup/breakup" with (
+  $breakup-breakpoints: (
+    "global":       "screen",
+    "tiny":         "(min-width: #{variables.$bp-tiny-em})",
+    "small":        "(min-width: #{variables.$bp-small-em})",
+    "medium":       "(min-width: #{variables.$bp-medium-em})",
+    "full":         "(min-width: #{variables.$bp-full-em})",
+    "print":        "print",
+    "old-ie":       "screen"
+  ),
+  $breakup-included-blocks: ("tiny" "small" "medium" "full")
+);
+
 /*------------------------------------*\
 		Placeholders
 \*------------------------------------*/
@@ -10,17 +27,17 @@
 //
 // They can then be used in any scope via
 //
-// @include breakup-placeholder( placeholder-name );
+// @include breakup.breakup-placeholder( placeholder-name );
 // 
 // Based on a combination of Breakup and the work of
 // Hugo Giraudel
 // http://www.sitepoint.com/cross-media-query-extend-sass/
 
 // Default Text
-@include breakup-create-placeholder( text ) {
-	@include rem( font-size, $font-size-body );
+@include breakup.breakup-create-placeholder( text ) {
+	@include mixins.rem( font-size, variables.$font-size-body );
 	font-weight: normal;
-	line-height: $line-height-default;
+	line-height: variables.$line-height-default;
 
 	.wf-active & {
 		word-spacing: 2px;
@@ -28,7 +45,7 @@
 }
 
 // Remove list formatting
-@include breakup-create-placeholder( delist ) {
+@include breakup.breakup-create-placeholder( delist ) {
 	list-style: none;
 	margin-left: 0;
 	padding-left: 0;
@@ -36,19 +53,19 @@
 
 // Hidden
 // http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
-@include breakup-create-placeholder( hidden ) {
+@include breakup.breakup-create-placeholder( hidden ) {
 		position: absolute !important;
 		height: 1px;
 		width: 1px;
 		overflow: hidden;
-		@if $legacy-support-for-ie6 or $legacy-support-for-ie7
+		@if variables.$legacy-support-for-ie6 or variables.$legacy-support-for-ie7
 		{
 				clip: rect(1px 1px 1px 1px); // IE6 and IE7 use the wrong syntax.
 		}
 		clip: rect(1px, 1px, 1px, 1px);
 
 		@supports (margin-block: 1em) {
-			@include unset ( height width );
+			@include mixins.unset ( height width );
 			block-size: 1px;
 			inline-size: 1px;
 		}
@@ -56,7 +73,7 @@
 
 // Un-hidden
 // Turns off the hidden effect
-@include breakup-create-placeholder( unhidden ) {
+@include breakup.breakup-create-placeholder( unhidden ) {
 		position: static !important;
 		clip: auto;
 		height: auto;
@@ -65,7 +82,7 @@
 }
 
 // Font Smoothing
-@include breakup-create-placeholder( font-smoothing ) {
+@include breakup.breakup-create-placeholder( font-smoothing ) {
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 	-ms-font-smoothing: antialiased;
@@ -74,7 +91,7 @@
 }
 
 // Ligatures
-@include breakup-create-placeholder( ligatures ) {
+@include breakup.breakup-create-placeholder( ligatures ) {
 	-webkit-font-feature-settings: "liga";
 	-moz-font-feature-settings: "liga=1";
 	-moz-font-feature-settings: "liga";
@@ -84,36 +101,36 @@
 }
 
 // Overflow hidden
-@include breakup-create-placeholder( overflow-hide ) {
+@include breakup.breakup-create-placeholder( overflow-hide ) {
 	overflow: hidden;
 	text-indent: -999em;
 	white-space: nowrap;
 }
 
 // Small Caps
-@include breakup-create-placeholder( small-caps ) {
+@include breakup.breakup-create-placeholder( small-caps ) {
 
-	@include rem( font-size, $font-size-small );
-	font-family: $font-stack-sansserif;
-	font-weight: $font-weight-sansserif-bold;
+	@include mixins.rem( font-size, variables.$font-size-small );
+	font-family: variables.$font-stack-sansserif;
+	font-weight: variables.$font-weight-sansserif-bold;
 	letter-spacing: 1px;
-	letter-spacing: ie8( 2px );
+	letter-spacing: functions.ie8( 2px );
 	text-transform: uppercase;
 	word-spacing: 1px;
 
 }
 
 // Hardware Acceleration
-@include breakup-create-placeholder( hardware-accelerate ) {
+@include breakup.breakup-create-placeholder( hardware-accelerate ) {
 	transform: translate3d(0,0,0);
 }
 
 // Clearfix
 // http://nicolasgallagher.com/micro-clearfix-hack/
-@include breakup-create-placeholder( clearfix ) {
+@include breakup.breakup-create-placeholder( clearfix ) {
 
 	// IE6 and IE7
-	@if $legacy-support-for-ie6 or $legacy-support-for-ie7
+	@if variables.$legacy-support-for-ie6 or variables.$legacy-support-for-ie7
 	{
 			*zoom: 1;
 	}
@@ -131,7 +148,7 @@
 }
 
 // Focus indicator
-@include breakup-create-placeholder( focus-ring ) {
+@include breakup.breakup-create-placeholder( focus-ring ) {
 
 	&:focus {
 		outline-color: #5B9DD9;

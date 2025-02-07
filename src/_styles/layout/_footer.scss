@@ -1,19 +1,23 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Footer
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 
 	.footer {
 
-		@include rem( font-size, $font-size-small );
+		@include mixins.rem( font-size, variables.$font-size-small );
 		text-align: center;
 
-		@include rem( padding-bottom, $default-spacing );
+		@include mixins.rem( padding-bottom, variables.$default-spacing );
 
 		@supports (margin-block: 1em) {
 			padding-bottom: unset;
-			@include rem( padding-block-end, $default-spacing, false );
+			@include mixins.rem( padding-block-end, variables.$default-spacing, false );
 		}
 
 		p {
@@ -25,15 +29,15 @@
 
 			display: block;
 			border: 0;
-			border-top: 1px solid $color-rule;
+			border-top: 1px solid variables.$color-rule;
 			height: 0;
-			@include rem( margin, $default-spacing auto );
+			@include mixins.rem( margin, variables.$default-spacing auto );
 
 			@supports (margin-block: 1em) {
-				@include unset( margin border-top height );
-				@include rem( margin-block, $default-spacing, false );
+				@include mixins.unset( margin border-top height );
+				@include mixins.rem( margin-block, variables.$default-spacing, false );
 				margin-inline: auto;
-				border-block-start: 1px solid $color-rule;
+				border-block-start: 1px solid variables.$color-rule;
 				block-size: 0;
 			}
 		}
@@ -42,7 +46,7 @@
 
 }
 
-@include breakup-breakpoint( "full" ) {
+@include breakup.breakup-breakpoint( "full" ) {
 
 	.footer .layout-container {
 		max-width: 100%;

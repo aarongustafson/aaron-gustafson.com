@@ -1,0 +1,27 @@
+{
+    "useTabs": true,
+    "tabWidth": 2,
+    "overrides": [
+        {
+            "files": "*.css",
+            "options": {
+                "useTabs": true,
+                "tabWidth": 2
+            }
+        },
+        {
+            "files": "*.json",
+            "options": {
+                "useTabs": true,
+                "tabWidth": 2
+            }
+        },
+        {
+            "files": ["*.md", "*.mdx"],
+            "options": {
+                "useTabs": false,
+                "tabWidth": 2
+            }
+        }
+    ]
+}

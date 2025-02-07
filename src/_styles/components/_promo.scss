@@ -1,3 +1,8 @@
+@use "sass:color";
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Promo
 \*------------------------------------*/
@@ -6,27 +11,27 @@
 
 $promo-image-width: 110;
 $promo-image-height: 170;
-$promo-background-color: lighten( #7FB843, 45% );
+$promo-background-color: color.adjust( #7FB843, $lightness: 45% );
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 
 	.promo {
 		background: $promo-background-color;
-		border: 1px solid darken( $promo-background-color, 5% );
-		@include rem( margin, ( $default-spacing * 2 ) -19 );
-		@include rem( padding, $default-spacing );
+		border: 1px solid color.adjust( $promo-background-color, $lightness: -5% );
+		@include mixins.rem( margin, ( variables.$default-spacing * 2 ) -19 );
+		@include mixins.rem( padding, variables.$default-spacing );
 
 		@supports (margin-block: 1em) {
-			@include unset( margin padding );
-			@include rem( margin-block, $default-spacing * 2, false );
-			@include rem( margin-inline, -19, false );
-			@include rem( padding-block, $default-spacing, false );
-			@include rem( padding-inline, $default-spacing, false );
+			@include mixins.unset( margin padding );
+			@include mixins.rem( margin-block, variables.$default-spacing * 2, false );
+			@include mixins.rem( margin-inline, -19, false );
+			@include mixins.rem( padding-block, variables.$default-spacing, false );
+			@include mixins.rem( padding-inline, variables.$default-spacing, false );
 		}
 
 		html.dark-mode & {
-			background: $color-green-dark;
-			border-color: darken( $color-green-dark, 5% );
+			background: variables.$color-green-dark;
+			border-color: color.adjust( variables.$color-green-dark, $lightness: -5% );
 		}
 
 		a:link,
@@ -34,7 +39,7 @@ $promo-background-color: lighten( #7FB843, 45% );
 			color: #14440E;
 
 			html.dark-mode & {
-				color: $color-green-light;
+				color: variables.$color-green-light;
 			}
 		}
 
@@ -44,12 +49,12 @@ $promo-background-color: lighten( #7FB843, 45% );
 	
 		// Image variant
 		&--image {
-			@include rem( padding-right, ( $default-spacing * 2 ) + $promo-image-width );
+			@include mixins.rem( padding-right, ( variables.$default-spacing * 2 ) + $promo-image-width );
 			position: relative;
 
 			@supports (margin-block: 1em) {
 				padding-right: unset;
-				@include rem( padding-inline-end, ( $default-spacing * 2 ) + $promo-image-width, false );
+				@include mixins.rem( padding-inline-end, ( variables.$default-spacing * 2 ) + $promo-image-width, false );
 			}
 		}
 
@@ -61,15 +66,15 @@ $promo-background-color: lighten( #7FB843, 45% );
 			
 			transform: rotate(5deg);
 			position: absolute;
-			@include rem( right, $default-spacing );
+			@include mixins.rem( right, variables.$default-spacing );
 			top: 50%;
 			margin-top: #{ 0 - ( math.div( $promo-image-height, 2 ) ) }px;
 			
 			@supports (margin-block: 1em) {
-				@include unset( margin-top right top width height );
+				@include mixins.unset( margin-top right top width height );
 				block-size: 170px;
 				inline-size: 110px;
-				@include rem( inset-inline-end, $default-spacing, false );
+				@include mixins.rem( inset-inline-end, variables.$default-spacing, false );
 				inset-block-start: 50%;
 				margin-block-start: #{ 0 - ( math.div( $promo-image-height, 2 ) ) }px;
 			}
@@ -88,14 +93,14 @@ $promo-background-color: lighten( #7FB843, 45% );
 
 }
 
-@include breakup-breakpoint("full") {
+@include breakup.breakup-breakpoint("full") {
 	.promo {
-		@include rem( margin, ( $default-spacing * 2 ) ( 0 - $default-spacing ) );
+		@include mixins.rem( margin, ( variables.$default-spacing * 2 ) ( 0 - variables.$default-spacing ) );
 
 		@supports (margin-block: 1em) {
-			@include unset( margin );
-			@include rem( margin-block, $default-spacing * 2, false );
-			@include rem( margin-inline, ( 0 - $default-spacing ), false );
+			@include mixins.unset( margin );
+			@include mixins.rem( margin-block, variables.$default-spacing * 2, false );
+			@include mixins.rem( margin-inline, ( 0 - variables.$default-spacing ), false );
 		}
 	}
 }

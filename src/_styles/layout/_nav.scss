@@ -1,27 +1,31 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 Navigation
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 
 	[role=navigation] {
 		
 		text-align: center;
 
-		@include rem( padding-bottom, $default-spacing );
+		@include mixins.rem( padding-bottom, variables.$default-spacing );
 
 		p {
 			margin: 0;
 		}
 		
 		a {
-			@include rem( font-size, $font-size-nav );
+			@include mixins.rem( font-size, variables.$font-size-nav );
 			font-weight: bold;
 			display: block;
 			padding: .5em 1em;
 
 			@supports (margin-block: 1em) {
-				@include unset( padding );
+				@include mixins.unset( padding );
 				padding-block: .5em;
 				padding-inline: 1em;
 			}
@@ -39,12 +43,12 @@ Navigation
 		&__link:focus,
 		&__link:active,
 		mark &__link {
-			background-color: $color-link-hover;
-			color: $color-white;
+			background-color: variables.$color-link-hover;
+			color: variables.$color-white;
 
 			html.dark-mode & {
-				background-color: $color-dark-teal;
-				color: $color-white;
+				background-color: variables.$color-dark-teal;
+				color: variables.$color-white;
 			}
 		}
 		
@@ -57,12 +61,12 @@ Navigation
 	.form--search {
 		
 		[type=search] {
-			@include rem( font-size, $font-size-nav );
+			@include mixins.rem( font-size, variables.$font-size-nav );
 			
 			appearance: none;
 			border: 1px solid;
 			border-radius: 3px;
-			@include rem( margin, 0 5 0 0 );
+			@include mixins.rem( margin, 0 5 0 0 );
 
 			@supports (margin-block: 1em) {
 				margin: 0;
@@ -72,7 +76,7 @@ Navigation
 		
 		button {
 			font-weight: bold;
-			@include rem( font-size, $font-size-small );
+			@include mixins.rem( font-size, variables.$font-size-small );
 		}
 		
 	}
@@ -93,11 +97,11 @@ Navigation
 	}
 }
 
-@include breakup-breakpoint( "medium" ) {
+@include breakup.breakup-breakpoint( "medium" ) {
 	
 	[role=navigation] {
-		background: $color-green;
-		color: $color-background;
+		background: variables.$color-green;
+		color: variables.$color-background;
 		
 		padding-bottom: 0;
 
@@ -115,17 +119,17 @@ Navigation
 		a:hover,
 		a:focus,
 		a:active {
-			color: $color-white;
+			color: variables.$color-white;
 			color: inherit;
 		}
 
 		html.dark-mode & {
-			background: $color-teal;
-			color: $color-background-dark;
+			background: variables.$color-teal;
+			color: variables.$color-background-dark;
 			
 			a:link,
 			a:visited {
-				color: $color-background-dark;
+				color: variables.$color-background-dark;
 			}
 			
 			a:hover,
@@ -133,14 +137,14 @@ Navigation
 			a:active,
 			mark a:link,
 			mark a:visited {
-				color: $color-white;
+				color: variables.$color-white;
 			}
 		}
 		
 	}
 	
 	.main-navigation {
-		@include breakup-placeholder( clearfix );
+		@include breakup.breakup-placeholder( clearfix );
 		
 		&__item {
 			float: left;
@@ -185,7 +189,7 @@ Navigation
 			&::after {
 				content: "";
 				
-				background: $color-green-dark;
+				background: variables.$color-green-dark;
 				
 				display: block;
 				height: 3px;
@@ -199,7 +203,7 @@ Navigation
 				left: 0;
 
 				@supports (margin-block: 1em) {
-					@include unset( height width top left );
+					@include mixins.unset( height width top left );
 					block-size: 2px;
 					inline-size: 100%;
 					inset-block-start: 100%;
@@ -233,7 +237,7 @@ Navigation
 	}
 	
 	[role=search] {
-		@include breakup-placeholder( clearfix );
+		@include breakup.breakup-placeholder( clearfix );
 	}
 	.form-control--search {
 		@include rem( margin, 0 5 0 0 );

@@ -1,27 +1,31 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Pullquotes
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 
 	.quotable {
 		// unhide
 		display: block;
 		font-size: 1.25em;
 
-		@include rem( margin, 33 0 $default-spacing );
-		@include rem( padding, $default-spacing 0 );
-		border: solid $color-grey-light;
+		@include mixins.rem( margin, 33 0 variables.$default-spacing );
+		@include mixins.rem( padding, variables.$default-spacing 0 );
+		border: solid variables.$color-grey-light;
 		border-width: 2px 0;
 
 		position: relative;
 		margin-right: -25%;
 
 		@supports (margin-block: 1em) {
-			@include unset( margin padding border-width margin-right );
-			@include rem( margin-block, 33 $default-spacing, false );
+			@include mixins.unset( margin padding border-width margin-right );
+			@include mixins.rem( margin-block, 33 variables.$default-spacing, false );
 			margin-inline: 0 -25%;
-			@include rem( padding-block, $default-spacing, false );
+			@include mixins.rem( padding-block, variables.$default-spacing, false );
 			padding-inline: 0;
 			border-block-width: 2px;
 			border-inline-width: 0;
@@ -42,7 +46,7 @@
 			font-size: 2em;
 
 			@supports (margin-block: 1em) {
-				@include unset( left right height );
+				@include mixins.unset( left right height );
 				inset-inline: 0;
 				inset-block-start: -.5em;
 				block-size: .9em;
@@ -58,17 +62,17 @@
 
 }
 
-@include breakup-breakpoint( "medium" ) {
+@include breakup.breakup-breakpoint( "medium" ) {
 
 	.quotable {
 		float: right;
-		@include rem( margin-left, $default-spacing );
+		@include mixins.rem( margin-left, variables.$default-spacing );
 		width: 50%;
 
 		@supports (margin-block: 1em) {
-			@include unset( margin-left width );
+			@include mixins.unset( margin-left width );
 			float: inline-end;
-			margin-inline-start: $default-spacing;
+			margin-inline-start: variables.$default-spacing;
 			inline-size: 50%;
 		}
 	}

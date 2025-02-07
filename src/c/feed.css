@@ -1,0 +1,61 @@
+* {
+	display: block;
+}
+feed {
+	margin: 2em;
+	background: #fff;
+	border: 1px solid #ddd;
+	padding: 1em;
+	font-family: "Lucida Grande", helvetica, arial, sans-serif;
+}
+title {
+	font-size: x-large;
+}
+entry {
+	margin: 25px 0 20px 0;
+}
+@supports (margin-block: 1em) {
+	entry {
+		margin: unset;
+		-webkit-margin-before: 25px;
+		margin-block-start: 25px;
+		-webkit-margin-after: 20px;
+		margin-block-end: 20px;
+		margin-inline: 0;
+	}
+}
+entry > title {
+	font-size: medium;
+	font-weight: bold;
+}
+entry > link::after {
+	content: attr(href);
+	color: gray;
+	font-size: small;
+	margin-top: 6px;
+	margin-bottom: 6px;
+}
+@supports (margin-block: 1em) {
+	entry > link::after {
+		margin: unset;
+		margin-block: 6px;
+	}
+}
+entry > link:has(+ link)::after {
+	display: none;
+}
+generator,
+updated,
+id,
+author,
+entry > published,
+entry > updated,
+entry > id,
+entry > author,
+entry > content,
+entry > summary {
+	display: none;
+}
+entry > amg:twitter {
+	display: none;
+}

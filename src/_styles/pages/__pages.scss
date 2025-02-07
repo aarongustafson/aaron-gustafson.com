@@ -1,11 +1,11 @@
 /*------------------------------------*\
     $PAGES
   Page-specific styles
-  (use sparingly)
+  (forward sparingly)
 \*------------------------------------*/
 
-@import "home";
-@import "notebook";
-@import "speaking-engagements";
-@import "appearances";
-@import "tag";
+@forward "home";
+@forward "notebook";
+@forward "speaking-engagements";
+@forward "appearances";
+@forward "tag";

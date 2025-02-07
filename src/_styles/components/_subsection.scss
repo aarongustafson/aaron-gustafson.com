@@ -1,14 +1,18 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Subsections
 \*------------------------------------*/
 
 .subsection {
 
-	@include breakup-breakpoint( "global" ) {
+	@include breakup.breakup-breakpoint( "global" ) {
 
 		&__header {
 
-			@include rem( font-size, 18 );
+			@include mixins.rem( font-size, 18 );
 			text-align: center;
 			text-transform: uppercase;
 
@@ -20,21 +24,21 @@
 
 			&::before {
 				content: '\2726\00A0\2726\00A0\2726';
-				@include rem( margin, 0 0 $table-spacing );
+				@include mixins.rem( margin, 0 0 variables.$table-spacing );
 
 				@supports (margin-block: 1em) {
 					margin: 0;
-					@include rem( margin-block-end, $table-spacing, false );
+					@include mixins.rem( margin-block-end, variables.$table-spacing, false );
 				}
 			}
 
 			&::after {
 				content: '\2726\00A0\2726\00A0\2726';
-				@include rem( margin, $table-spacing 0 0 );
+				@include mixins.rem( margin, variables.$table-spacing 0 0 );
 
 				@supports (margin-block: 1em) {
 					margin: 0;
-					@include rem( margin-block-start, $table-spacing, false );
+					@include mixins.rem( margin-block-start, variables.$table-spacing, false );
 				}
 			}
 
@@ -46,7 +50,7 @@
 
 	}
 
-	@include breakup-breakpoint( "medium" ) {
+	@include breakup.breakup-breakpoint( "medium" ) {
 		&__header::before,
 		&__header::after {
 			display: inline;

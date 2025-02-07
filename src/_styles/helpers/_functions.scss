@@ -1,3 +1,5 @@
+@use "variables";
+
 /*------------------------------------*\
     Functions
 \*------------------------------------*/
@@ -8,7 +10,7 @@
 // ---
 // @param [literal] $size: the size
 // @param [literal] $context: the context size
-@function px-to-ems( $size, $context: $font-size-default )
+@function px-to-ems( $size, $context: variables.$font-size-default )
 {
     $size: 0px + $size;
     $context: 0px + $context;

@@ -1,24 +1,27 @@
+@use "../helpers/mixins";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Embeds
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 		
 		.embed {
 				margin-left: auto;
 				margin-right: auto;
 
 				@supports (margin-block: 1em) {
-					@include unset( margin-left margin-right );
+					@include mixins.unset( margin-left margin-right );
 					margin-inline: auto;
 				}
 				
 				&.tweet {
-						@include rem( max-width, 502 );
+						@include mixins.rem( max-width, 502 );
 
 						@supports (margin-block: 1em) {
 							max-width: unset;
-							@include rem( max-inline-size, 502, false );
+							@include mixins.rem( max-inline-size, 502, false );
 						}
 				}        
 		}

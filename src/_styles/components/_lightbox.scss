@@ -1,9 +1,13 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Lightbox
 		TODO: swap for <dialog>
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 	
 	.lightbox {
 		display: none;
@@ -11,7 +15,7 @@
 
 }
 
-@include breakup-breakpoint('medium') {
+@include breakup.breakup-breakpoint('medium') {
 
 	.lightbox {
 		
@@ -20,7 +24,7 @@
 		transform: translateY(-50%);
 		z-index: 1024;
 		
-		background: $color-white;
+		background: variables.$color-white;
 		border: 0;
 		border:  3px solid;
 		padding: 0;
@@ -41,7 +45,7 @@
 		}
 
 		&__media {
-			@include rem( padding, $default-spacing );
+			@include mixins.rem( padding, variables.$default-spacing );
 		}
 
 		&__image {
@@ -57,10 +61,10 @@
 		}
 
 		&__caption {
-			background-color: rgba( $color-black, .9 );
-			color: $color-white;
+			background-color: rgba( variables.$color-black, .9 );
+			color: variables.$color-white;
 
-			@include rem( padding, $default-spacing ); 
+			@include mixins.rem( padding, variables.$default-spacing ); 
 
 			position: absolute;
 			bottom: 0;
@@ -69,12 +73,12 @@
 		}
 
 		&__control {
-			@include rem( font-size, $font-size-h2 );
+			@include mixins.rem( font-size, variables.$font-size-h2 );
 			
 			position: absolute;
 			top: 40%;
 
-			border-color: $color-white;
+			border-color: variables.$color-white;
 			padding: .5rem 1rem;
 
 			&--prev {
@@ -90,8 +94,8 @@
 			&--close,
 			&--close:hover,
 			&--close:focus {
-				background: $color-white;
-				color: $color-black;
+				background: variables.$color-white;
+				color: variables.$color-black;
 				border: 0;
 				border-radius: 0 0 0 20px;
 				margin: 0;

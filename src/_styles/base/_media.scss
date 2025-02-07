@@ -1,16 +1,20 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Media Elements
 \*------------------------------------*/
 
 @use 'sass:math';
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 
 		object[data*="svg"] {
 				pointer-events: none;
 		}
 		object[data^="#"] {
-				@include breakup-placeholder( hidden );
+				@include breakup.breakup-placeholder( hidden );
 		}
 
 		// Responsive images
@@ -23,7 +27,7 @@
 			margin-right: auto;
 
 			@supports (margin-block: 1em) {
-				@include unset( margin-left margin-right max-width height );
+				@include mixins.unset( margin-left margin-right max-width height );
 				margin-inline: auto;
 				block-size: auto;
 				max-inline-size: 100%;
@@ -35,7 +39,7 @@
 				height: auto !important;
 
 				@supports (margin-block: 1em) {
-					@include unset( width max-width height );
+					@include mixins.unset( width max-width height );
 					inline-size: auto !important;
 					max-inline-size: 100% !important;
 					block-size: auto !important;
@@ -46,7 +50,7 @@
 				width: auto;
 
 				@supports (margin-block: 1em) {
-					@include unset( width );
+					@include mixins.unset( width );
 					inline-size: auto;
 				}
 			}
@@ -66,7 +70,7 @@
 			width: 100%;
 
 			@supports (margin-block: 1em) {
-				@include unset( width );
+				@include mixins.unset( width );
 				inline-size: 100%;
 			}
 		}
@@ -77,7 +81,7 @@
 			margin-right: auto;
 
 			@supports (margin-block: 1em) {
-				@include unset( max-width margin-left margin-right );
+				@include mixins.unset( max-width margin-left margin-right );
 				max-inline-size: 600px;
 				margin-inline: auto;
 			}
@@ -89,22 +93,22 @@
 			margin-right: auto;
 
 			@supports (margin-block: 1em) {
-				@include unset( margin-left margin-right );
+				@include mixins.unset( margin-left margin-right );
 				margin-inline: auto;
 			}
 		}
 		
 		figcaption {
-			@include rem( font-size, $font-size-caption );
-			font-family: $font-stack-sansserif;
+			@include mixins.rem( font-size, variables.$font-size-caption );
+			font-family: variables.$font-stack-sansserif;
 			font-style: italic;
 			text-align: center;
 			
-			@include rem( margin-top, math.div( $default-spacing, 2 ) );
+			@include mixins.rem( margin-top, math.div( variables.$default-spacing, 2 ) );
 
 			@supports (margin-block: 1em) {
-				@include unset( margin-top );
-				@include rem( margin-block-start, math.div( $default-spacing, 2 ), false );
+				@include mixins.unset( margin-top );
+				@include mixins.rem( margin-block-start, math.div( variables.$default-spacing, 2 ), false );
 			}
 		}
 
@@ -113,26 +117,26 @@
 			height: 1px;
 
 			@supports (margin-block: 1em) {
-				@include unset( width height );
+				@include mixins.unset( width height );
 				inline-size: 1px;
 				block-size: 1px;
 			}
 		}
 }
 
-@include breakup-breakpoint( "medium" ) {
+@include breakup.breakup-breakpoint( "medium" ) {
 
 		.media-container--right {
 			float: right;
 			max-width: 250px;
-			@include rem( margin-left, $default-spacing );
+			@include mixins.rem( margin-left, variables.$default-spacing );
 			margin-right: 0;
 
 			@supports (margin-block: 1em) {
-				@include unset( max-width margin-left margin-right );
+				@include mixins.unset( max-width margin-left margin-right );
 				float: inline-end;
 				max-inline-size: 250px;
-				margin-inline-start: $default-spacing;
+				margin-inline-start: variables.$default-spacing;
 				margin-inline-end: 0;
 			}
 		}

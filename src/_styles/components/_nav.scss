@@ -2,7 +2,7 @@
 Navigation
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 	
 	[role=navigation] {
 		
@@ -34,7 +34,7 @@ Navigation
 	
 }
 
-@include breakup-breakpoint( "medium" ) {
+@include breakup.breakup-breakpoint( "medium" ) {
 	
 	.main-navigation {
 		

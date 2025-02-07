@@ -1,3 +1,8 @@
+@use "../helpers/functions";
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Grid
 \*-------
@@ -5,20 +10,20 @@
 
 .layout-container {
 		
-		@include breakup-breakpoint( "global" ) {
+		@include breakup.breakup-breakpoint( "global" ) {
 			max-width: 100%;
 
-			height: ie8( 1% );
+			height: functions.ie8( 1% );
 
 			// padding on a small screen
-			@include rem( padding, 0 20 );
+			@include mixins.rem( padding, 0 20 );
 			margin: 0 auto;
 
 			position: relative;
 
 			@supports (margin-block: 1em) {
-				@include unset( max-width padding margin );
-				@include rem( padding-inline, 20, false );
+				@include mixins.unset( max-width padding margin );
+				@include mixins.rem( padding-inline, 20, false );
 				padding-block: 0;
 				margin-block: 0;
 				margin-inline: auto;
@@ -26,18 +31,18 @@
 			}
 		}
 		
-		// @include breakup-breakpoint( "small" ) {
+		// @include breakup.breakup-breakpoint( "small" ) {
 		//
 		// }
 
-		@include breakup-breakpoint( "full" ) {
+		@include breakup.breakup-breakpoint( "full" ) {
 
 			padding: 0;
-			max-width: $bp-medium-em;
+			max-width: variables.$bp-medium-em;
 
 			@supports (margin-block: 1em) {
 				max-width: unset;
-				max-inline-size: $bp-medium-em;
+				max-inline-size: variables.$bp-medium-em;
 			}
 			
 			&--blog {

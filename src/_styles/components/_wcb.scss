@@ -1,5 +1,7 @@
+@use "../vendors/breakup/breakup";
+
 /* Website Carbon Badge */
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
   #wcb.wcb-d #wcb_2 {
     color: unset !important;
   }

@@ -1,7 +1,11 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 Block-level Semantics
 \*------------------------------------*/
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 	
 	* {
 		margin-top: 0;
@@ -14,11 +18,11 @@ Block-level Semantics
 	}
 	
 	* + * {
-		@include rem( margin-top, $default-spacing );
+		@include mixins.rem( margin-top, variables.$default-spacing );
 
 		@supports (margin-block: 1em) {
 			margin-top: unset;
-			@include rem( margin-block-start, $default-spacing, false );
+			@include mixins.rem( margin-block-start, variables.$default-spacing, false );
 		}
 	}
 	
@@ -32,8 +36,8 @@ Block-level Semantics
 	
 	blockquote {
 		
-		@include rem( font-size, $font-size-body );
-		font-family: $font-stack-serif;
+		@include mixins.rem( font-size, variables.$font-size-body );
+		font-family: variables.$font-stack-serif;
 		font-style: italic; 
 		
 		hanging-punctuation: first;
@@ -41,31 +45,31 @@ Block-level Semantics
 
 		margin-left: auto;
 		margin-right: auto;
-		@include rem( padding, 0 $default-spacing );
-		@include rem( max-width, 700 );
+		@include mixins.rem( padding, 0 variables.$default-spacing );
+		@include mixins.rem( max-width, 700 );
 
 		@supports (margin-block: 1em) {
-			@include unset( margin-left margin-right padding max-width );
+			@include mixins.unset( margin-left margin-right padding max-width );
 			margin-inline: auto;
 			padding-block: 0;
-			@include rem( padding-inline, $default-spacing, false );
-			@include rem( max-inline-size, 700, false );
+			@include mixins.rem( padding-inline, variables.$default-spacing, false );
+			@include mixins.rem( max-inline-size, 700, false );
 		}
 		
 	}
 	
 	.blockquote__attribution {
 		
-		font-family: $font-stack-sansserif;
+		font-family: variables.$font-stack-sansserif;
 		
 		margin: 0;
-		@include rem( padding-left, 2 * $default-spacing );
+		@include mixins.rem( padding-left, 2 * variables.$default-spacing );
 
 		@supports (margin-block: 1em) {
-			@include unset( margin padding-left );
+			@include mixins.unset( margin padding-left );
 			margin-block: 0;
 			margin-inline: 0;
-			@include rem( padding-inline-start, 2 * $default-spacing, false );
+			@include mixins.rem( padding-inline-start, 2 * variables.$default-spacing, false );
 		}
 		
 		cite {
@@ -77,7 +81,7 @@ Block-level Semantics
 	p {
 		font-weight: normal;
 		/*hyphens: auto;*/
-		line-height: $line-height-default;
+		line-height: variables.$line-height-default;
 		
 		.wf-active & {
 			word-spacing: 2px;
@@ -90,66 +94,66 @@ Block-level Semantics
 	
 	hr {
 		border: 0;
-		border-top: 1px solid $color-rule;
+		border-top: 1px solid variables.$color-rule;
 		
 		height: 0;
-		@include rem( margin, $default-spacing auto );
+		@include mixins.rem( margin, variables.$default-spacing auto );
 
 		@supports (margin-block: 1em) {
-			@include unset( border-top height margin );
-			border-block-start: 1px solid $color-rule;
+			@include mixins.unset( border-top height margin );
+			border-block-start: 1px solid variables.$color-rule;
 			block-size: 0;
 			margin-inline: auto;
-			@include rem( margin-block, $default-spacing, false );
+			@include mixins.rem( margin-block, variables.$default-spacing, false );
 		}
 	}
 	
 	section + section {
-		@include rem( margin-top, $default-spacing * 2 );
+		@include mixins.rem( margin-top, variables.$default-spacing * 2 );
 
 		@supports (margin-block: 1em) {
 			margin-top: unset;
-			@include rem( margin-block-start, $default-spacing * 2, false );
+			@include mixins.rem( margin-block-start, variables.$default-spacing * 2, false );
 		}
 	}
 	
 }
 
 dialog::backdrop {
-	background: rgba( $color-black, .4 );
+	background: rgba( variables.$color-black, .4 );
 }
 /* polyfill */
 dialog + .backdrop {
-	background: rgba( $color-black, .4 );
+	background: rgba( variables.$color-black, .4 );
 }
 
-@include breakup-breakpoint( "medium" ) {
+@include breakup.breakup-breakpoint( "medium" ) {
 	blockquote,
 	dl {
-		@include rem( padding, 0 $default-spacing );
+		@include mixins.rem( padding, 0 variables.$default-spacing );
 
 		@supports (margin-block: 1em) {
 			padding: unset;
 			padding-block: 0;
-			@include rem( padding-inline, $default-spacing, false );
+			@include mixins.rem( padding-inline, variables.$default-spacing, false );
 		}
 	}
 }
 
-@include breakup-breakpoint( "full" ) {
+@include breakup.breakup-breakpoint( "full" ) {
 	blockquote,
 	dl {
-		@include rem( padding, 0 ( 3 * $default-spacing ) );
+		@include mixins.rem( padding, 0 ( 3 * variables.$default-spacing ) );
 
 		@supports (margin-block: 1em) {
 			padding: unset;
 			padding-block: 0;
-			@include rem( padding-inline, ( 3 * $default-spacing ), false );
+			@include mixins.rem( padding-inline, ( 3 * variables.$default-spacing ), false );
 		}
 	}
 }
 
-@include breakup-breakpoint( "print" ) {
+@include breakup.breakup-breakpoint( "print" ) {
 	p, ol, ol, dl {
 		hyphens: auto;
 		orphans: 3;

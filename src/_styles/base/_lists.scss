@@ -1,25 +1,29 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 Lists
 \*------------------------------------*/
 
 @use 'sass:math';
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 	
 	ol,
 	ul {
-		line-height: $line-height-default;
-		@include rem( margin-left, $default-spacing);
+		line-height: variables.$line-height-default;
+		@include mixins.rem( margin-left, variables.$default-spacing);
 		padding-left: 0;
 
 		@supports (margin-block: 1em) {
-			@include unset( margin-left padding-left );
-			@include rem( margin-inline-start, $default-spacing, false );
+			@include mixins.unset( margin-left padding-left );
+			@include mixins.rem( margin-inline-start, variables.$default-spacing, false );
 			padding-inline-start: 0;
 		}
 		
 		nav & {
-			@include breakup-placeholder( delist );
+			@include breakup.breakup-placeholder( delist );
 			margin: 0;
 			
 			li {
@@ -29,11 +33,11 @@ Lists
 	}
 	
 	li + li {
-		@include rem( margin-top, math.div( $default-spacing, 4 ) );
+		@include mixins.rem( margin-top, math.div( variables.$default-spacing, 4 ) );
 
 		@supports (margin-block: 1em) {
 			margin-top: unset;
-			@include rem( margin-block-start, math.div( $default-spacing, 4 ), false );
+			@include mixins.rem( margin-block-start, math.div( variables.$default-spacing, 4 ), false );
 		}
 	}
 	
@@ -41,15 +45,15 @@ Lists
 		
 		margin-left: auto;
 		margin-right: auto;
-		@include rem( padding, 0 $default-spacing );
-		@include rem( max-width, 700 );
+		@include mixins.rem( padding, 0 variables.$default-spacing );
+		@include mixins.rem( max-width, 700 );
 
 		@supports (margin-block: 1em) {
-			@include unset( margin-left margin-right padding max-width );
+			@include mixins.unset( margin-left margin-right padding max-width );
 			margin-inline: auto;
 			padding-block: 0;
-			@include rem( padding-inline, $default-spacing, false );
-			@include rem( max-width, 700, false );
+			@include mixins.rem( padding-inline, variables.$default-spacing, false );
+			@include mixins.rem( max-width, 700, false );
 		}
 		
 		dt {
@@ -64,7 +68,7 @@ Lists
 			break-inside: avoid;
 
 			@supports (margin-block: 1em) {
-				@include unset( margin-left margin-top padding-left );
+				@include mixins.unset( margin-left margin-top padding-left );
 				margin-block-start: 0;
 				margin-inline-start: 0;
 				padding-inline-start: 0;
@@ -75,7 +79,7 @@ Lists
 	
 }
 
-@include breakup-breakpoint( "full" ) {
+@include breakup.breakup-breakpoint( "full" ) {
 	
 	// Hanging!
 	ol,
@@ -83,19 +87,19 @@ Lists
 		margin-left: 0;
 
 		@supports (margin-block: 1em) {
-			@include unset( margin-left );
+			@include mixins.unset( margin-left );
 			margin-inline-start: 0;
 		}
 		
 		ol,
 		ul {
-			@include rem( margin-left, $default-spacing);
-			@include rem( margin-top, math.div( $default-spacing, 2) );
+			@include mixins.rem( margin-left, variables.$default-spacing);
+			@include mixins.rem( margin-top, math.div( variables.$default-spacing, 2) );
 
 			@supports (margin-block: 1em) {
-				@include unset( margin-left margin-top );
-				@include rem( margin-inline-start, $default-spacing, false );
-				@include rem( margin-block-start, math.div( $default-spacing, 2), false );
+				@include mixins.unset( margin-left margin-top );
+				@include mixins.rem( margin-inline-start, variables.$default-spacing, false );
+				@include mixins.rem( margin-block-start, math.div( variables.$default-spacing, 2), false );
 			}
 		}
 		

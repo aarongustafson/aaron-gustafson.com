@@ -1,10 +1,14 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Anchorable
 \*------------------------------------*/
 
 @use 'sass:math';
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 	
 	@keyframes fade-out {
 		0% {
@@ -16,46 +20,46 @@
 	}
 
 	.anchorable {
-		font-family: $font-stack-body;
+		font-family: variables.$font-stack-body;
 		position: relative;
 		
 		&__icon {
 			vertical-align: top;
 			
 			display: inline-block;
-			@include rem( padding, math.div( $default-spacing, 2 ) );
-			@include rem( width, 15 );
-			@include rem( height, 15 );
+			@include mixins.rem( padding, math.div( variables.$default-spacing, 2 ) );
+			@include mixins.rem( width, 15 );
+			@include mixins.rem( height, 15 );
 
 			@supports (margin-block: 1em) {
-				@include unset( width height );
-				@include rem( inline-size, 15 );
-				@include rem( block-size, 15 );
+				@include mixins.unset( width height );
+				@include mixins.rem( inline-size, 15 );
+				@include mixins.rem( block-size, 15 );
 			}
 			
 			path {
-				fill: $color-background;
+				fill: variables.$color-background;
 				transition: fill .5s;
 			}
 		}
 		
 		&__anchor__text {
-			@include breakup-placeholder( hidden );
+			@include breakup.breakup-placeholder( hidden );
 			left: 0;
 			bottom: 0;
 
 			@supports (margin-block: 1em) {
-				@include unset( left bottom );
-				@include rem( inline-start, 0 );
-				@include rem( inset-block-end, 0 );
+				@include mixins.unset( left bottom );
+				@include mixins.rem( inline-start, 0 );
+				@include mixins.rem( inset-block-end, 0 );
 			}
 		}
 		
 		&__anchor {
-				background: $color-white;
+				background: variables.$color-white;
 				
 				text-decoration: none;
-				@include rem( line-height, 15 );
+				@include mixins.rem( line-height, 15 );
 
 				border: 0;
 				display: inline-block;
@@ -73,7 +77,7 @@
 				
 				&:hover path,
 				&:focus path {
-					fill: $color-black;
+					fill: variables.$color-black;
 					transition: fill .5s;
 				}
 				
@@ -81,15 +85,15 @@
 		
 		&:hover path,
 		&:focus path {
-				fill: $color-black;
+				fill: variables.$color-black;
 				transition: fill .5s;
 		}
 		
 		&__alert {
 			font-weight: normal;
-			color: $color-grey;
-			@include rem( font-size, $font-size-tiny );
-			@include rem( line-height, 15 );
+			color: variables.$color-grey;
+			@include mixins.rem( font-size, variables.$font-size-tiny );
+			@include mixins.rem( line-height, 15 );
 			
 			display: block;
 			margin: 0;
@@ -110,40 +114,40 @@
 		html.wf-active .anchorable__anchor:visited,
 		html.wf-active .anchorable__anchor:hover,
 		html.wf-active .anchorable__anchor:focus {
-			background: $color-background;
+			background: variables.$color-background;
 		}
 
 	}
 }
 
-@include breakup-breakpoint( "medium" ) {
+@include breakup.breakup-breakpoint( "medium" ) {
 	.anchorable__anchor {
 		top: 0;
 		left: auto;
-		@include rem( margin-left, 5 );
+		@include mixins.rem( margin-left, 5 );
 
 		@supports (margin-block: 1em) {
-			@include unset( top left margin-left );
+			@include mixins.unset( top left margin-left );
 			inset-block-start: 0;
 			inset-inline-start: auto;
-			@include rem( margin-inline-start, 5 );
+			@include mixins.rem( margin-inline-start, 5 );
 		}
 	}
 }
 
-@include breakup-tweakpoint( '(min-width: 64em)', 'full' ) {
+@include breakup.breakup-tweakpoint( '(min-width: 64em)', 'full' ) {
 	.anchorable__anchor {
 		left: auto;
 		right: 100%;
 		margin-left: 0;
-		@include rem( margin-right, 5 );
+		@include mixins.rem( margin-right, 5 );
 
 		@supports (margin-block: 1em) {
-			@include unset( left right margin-left margin-right );
+			@include mixins.unset( left right margin-left margin-right );
 			inset-inline-start: auto;
 			inset-inline-end: 100%;
 			margin-inline-start: 0;
-			@include rem( margin-inline-end, 5 );
+			@include mixins.rem( margin-inline-end, 5 );
 		}
 	}
 }

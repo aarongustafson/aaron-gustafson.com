@@ -1,20 +1,24 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 Gist
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 	
 	.gist {
-		border: 1px solid $color-border;
+		border: 1px solid variables.$color-border;
 		border-bottom: 0;
 		border-radius: 3px 3px 0 0;
 
-		@include rem( font-size, $font-size-code );
+		@include mixins.rem( font-size, variables.$font-size-code );
 		margin: 0;
 		padding: .25em .5em;
 
 		@supports (margin-block: 1em) {
-			@include unset( border-bottom padding border-radius );
+			@include mixins.unset( border-bottom padding border-radius );
 			border-block-end: 0;
 			border-start-start-radius: 3px;
 			border-start-end-radius: 3px;
@@ -23,20 +27,20 @@ Gist
 		}
 	}
 	.gist_link {
-		background: $color-text;
-		color: $color-background;
+		background: variables.$color-text;
+		color: variables.$color-background;
 		
 		border: 1px solid transparent;
 		border-radius: 0 0 3px 3px;
 		
-		@include rem( font-size, $font-size-small );
+		@include mixins.rem( font-size, variables.$font-size-small );
 		
 		margin-top: 0;
 		padding: .25em .5em;
 		text-align: right;
 
 		@supports (margin-block: 1em) {
-			@include unset( border-radius padding margin-top );
+			@include mixins.unset( border-radius padding margin-top );
 			border-end-start-radius: 3px;
 			border-end-end-radius: 3px;
 			margin-block-start: 0;
@@ -45,8 +49,8 @@ Gist
 		}
 
 		a {
-			color: $color-background;
-			text-decoration-color: $color-background;
+			color: variables.$color-background;
+			text-decoration-color: variables.$color-background;
 		}
 	}
 

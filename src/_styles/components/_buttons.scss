@@ -1,8 +1,13 @@
+@use "sass:color";
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 Buttons
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 	
 	button,
 	.button,
@@ -12,28 +17,28 @@ Buttons
 		cursor: pointer;
 		user-select: none;
 		
-		background: $color-dark-teal;
-		color: $color-white;
+		background: variables.$color-dark-teal;
+		color: variables.$color-white;
 		text-decoration: none;
 		
-		border: 1px solid $color-text;
+		border: 1px solid variables.$color-text;
 		border-radius: 3px;
-		@include rem( padding, 10 15 );
+		@include mixins.rem( padding, 10 15 );
 		
-		@include rem( font-size, $font-size-default );
+		@include mixins.rem( font-size, variables.$font-size-default );
 		font-weight: bold;
 
-		transition: background-color $default-transition, color $default-transition;
+		transition: background-color variables.$default-transition, color variables.$default-transition;
 
 		@supports (margin-block: 1em) {
-			@include unset( padding );
+			@include mixins.unset( padding );
 			padding-block: 10px;
 			padding-inline: 15px;
 		}
 		
 		&:hover,
 		&:focus {
-			background: darken( $color-dark-teal, 10 );
+			background: color.adjust( variables.$color-dark-teal, $lightness: -10 );
 		}
 		
 		&:focus-visible {
@@ -46,38 +51,38 @@ Buttons
 			margin-left: .15em;
 			
 			path {
-				fill: $color-white;
+				fill: variables.$color-white;
 			}
 
 			@supports (margin-block: 1em) {
-				@include unset( height margin-left );
+				@include mixins.unset( height margin-left );
 				margin-inline-start: .15em;
 				block-size: 1em;
 			}
 		}
 
 		&[disabled] {
-			background: $color-grey-light;
-			border-color: darken( $color-grey-light, 30 );
-			color: darken( $color-grey-light, 30 );
+			background: variables.$color-grey-light;
+			border-color: color.adjust( variables.$color-grey-light, $lightness: -30 );
+			color: color.adjust( variables.$color-grey-light, $lightness: -30 );
 			cursor: default;
 
 			svg path {
-				fill: darken( $color-grey-light, 30 );
+				fill: color.adjust( variables.$color-grey-light, $lightness: -30 );
 			}
 		}
 
 		html.dark-mode & {
-			background-color: $color-link-dark-hover;
-			color: $color-background-dark;
+			background-color: variables.$color-link-dark-hover;
+			color: variables.$color-background-dark;
 
 			svg path {
-				fill: $color-background-dark;
+				fill: variables.$color-background-dark;
 			}
 
 			&:hover,
 			&:focus {
-				background-color: $color-link-dark;
+				background-color: variables.$color-link-dark;
 			}
 		}
 		

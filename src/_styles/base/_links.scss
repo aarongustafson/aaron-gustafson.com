@@ -1,8 +1,11 @@
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 Links
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 	
 	a {
 		text-decoration: underline;
@@ -16,28 +19,28 @@ Links
 
 		&:link,
 		&:visited {
-			color: $color-link;
-			text-decoration-color: rgba( $color-link, .25 );
+			color: variables.$color-link;
+			text-decoration-color: rgba( variables.$color-link, .25 );
 			
 			cursor: pointer;
 			
-			transition: text-decoration-color $default-transition, color $default-transition, background-color $default-transition;
+			transition: text-decoration-color variables.$default-transition, color variables.$default-transition, background-color variables.$default-transition;
 
 			html.dark-mode & {
-				color: $color-link-dark;
-				text-decoration-color: rgba( $color-link-dark, .25 );
+				color: variables.$color-link-dark;
+				text-decoration-color: rgba( variables.$color-link-dark, .25 );
 			}
 		}
 		
 		&:hover,
 		&:focus,
 		&:active {
-			color: $color-link-hover;
-			text-decoration-color: $color-link-hover;
+			color: variables.$color-link-hover;
+			text-decoration-color: variables.$color-link-hover;
 
 			html.dark-mode & {
-				color: $color-link-dark-hover;
-				text-decoration-color: rgba( $color-link-dark-hover, .25 );
+				color: variables.$color-link-dark-hover;
+				text-decoration-color: rgba( variables.$color-link-dark-hover, .25 );
 			}
 		}
 
@@ -46,9 +49,9 @@ Links
 		}
 
 		&[rel=tag] {
-			background: $color-link-hover;
+			background: variables.$color-link-hover;
 			border-radius: 5px;
-			color: $color-white;
+			color: variables.$color-white;
 			leading-trim: both;
 			line-height: 2;
 			padding: 3px 7px;
@@ -58,16 +61,16 @@ Links
 
 			&:hover,
 			&:focus {
-				background-color: $color-link;
+				background-color: variables.$color-link;
 			}
 
 			html.dark-mode & {
-				background-color: $color-link-dark-hover;
-				color: $color-background-dark;
+				background-color: variables.$color-link-dark-hover;
+				color: variables.$color-background-dark;
 
 				&:hover,
 				&:focus {
-					background-color: $color-link-dark;
+					background-color: variables.$color-link-dark;
 				}
 			}
 
@@ -130,7 +133,7 @@ Links
 	
 }
 
-@include breakup-breakpoint( "print" ) {
+@include breakup.breakup-breakpoint( "print" ) {
 	
 	a {
 		text-decoration: none;
@@ -145,7 +148,7 @@ Links
 			}
 		}
 		&[href^="/"]:after {
-			content: " (#{$domain}" attr(href) ")";
+			content: " (#{variables.$domain}" attr(href) ")";
 		}
 		&[href^="#"]:after,
 		&[href^="mailto:"]:after,

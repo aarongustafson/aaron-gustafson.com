@@ -1,3 +1,6 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+
 #theme-switcher {
 	position: fixed;
 	top: 5px;
@@ -5,14 +8,14 @@
 	z-index: 100;
 	line-height: .5;
 	padding: 8px;
-	border: 1px solid $color-white;
+	border: 1px solid variables.$color-white;
 
 	@supports (margin-block: 1em) {
-		@include unset( top right padding  );
-		@include rem( inset-block-start, 5px, false );
-		@include rem( inset-inline-end, 5px, false );
-		@include rem( padding-block, 8px, false );
-		@include rem( padding-inline, 8px, false );
+		@include mixins.unset( top right padding  );
+		@include mixins.rem( inset-block-start, 5px, false );
+		@include mixins.rem( inset-inline-end, 5px, false );
+		@include mixins.rem( padding-block, 8px, false );
+		@include mixins.rem( padding-inline, 8px, false );
 	}
 
 	html.dark-mode & {
@@ -24,17 +27,17 @@
 		height: 20px;
 
 		@supports (inline-size: 1em) {
-			@include unset( width height );
+			@include mixins.unset( width height );
 			inline-size: 20px;
 			block-size: 20px;
 		}
 	}
 
 	path {
-		fill: $color-white;
+		fill: variables.$color-white;
 
 		html.dark-mode & {
-			fill: $color-black;
+			fill: variables.$color-black;
 		}
 	}
 	

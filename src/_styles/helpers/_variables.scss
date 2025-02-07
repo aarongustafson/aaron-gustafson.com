@@ -1,3 +1,5 @@
+@use "sass:color";
+
 /*------------------------------------*\
     Variables
 \*------------------------------------*/
@@ -23,15 +25,6 @@ $bp-medium: 690;
 $bp-medium-em: 43.125em;
 $bp-full: 960;
 $bp-full-em: 60em;
-$breakup-breakpoints: (
-    "global":       "screen",
-    "tiny":         "(min-width: #{$bp-tiny-em})",
-    "small":        "(min-width: #{$bp-small-em})",
-    "medium":       "(min-width: #{$bp-medium-em})",
-    "full":         "(min-width: #{$bp-full-em})",
-    "print":        "print",
-    "old-ie":       "screen"
-);
 
 
 /*  Grid Management
@@ -103,8 +96,8 @@ $color-grey-dark: #454545;
 $color-grey-light: #DDD;
 $color-off-white: #fffcf4;
 $color-green: #27831B;
-$color-green-mid: darken( $color-green, 10% );
-$color-green-dark: darken( $color-green, 20% );
+$color-green-mid: color.adjust( $color-green, $lightness: -10% );
+$color-green-dark: color.adjust( $color-green, $lightness: -20% );
 $color-green-light: #23FE06;
 $color-teal: #9EE6FF;
 $color-dark-teal: rgb(0,121,157);

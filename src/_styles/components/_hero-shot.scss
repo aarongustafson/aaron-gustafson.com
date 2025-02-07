@@ -1,8 +1,11 @@
+@use "../helpers/mixins";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Hero Shot
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 		
 	.hero-shot {
 		position: fixed;
@@ -12,7 +15,7 @@
 		right: 0;
 
 		@supports (margin-block: 1em) {
-			@include unset( top left bottom right );
+			@include mixins.unset( top left bottom right );
 			inset-block: 0;
 			inset-inline: 0;
 		}

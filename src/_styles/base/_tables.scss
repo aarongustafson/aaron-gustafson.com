@@ -1,20 +1,25 @@
+@use "sass:color";
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Tables
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 
 		table {
 		
 			border-collapse: collapse;
 		
-			@include rem( margin, $margin-default );
+			@include mixins.rem( margin, variables.$margin-default );
 			width: 100%;
 			min-width: 100px;
 
 			@supports (margin-block: 1em) {
-				@include unset( margin width min-width );
-				@include rem( margin-block-end, $default-spacing, false );
+				@include mixins.unset( margin width min-width );
+				@include mixins.rem( margin-block-end, variables.$default-spacing, false );
 				margin-inline: 0;
 				block-size: 100%;
 				min-inline-size: 100px;
@@ -22,14 +27,14 @@
 		
 			thead {
 
-				border-bottom: 3px solid $color-rule;
+				border-bottom: 3px solid variables.$color-rule;
 
-				@include breakup-placeholder( small-caps );
-				@include rem( font-size, $font-size-small );
+				@include breakup.breakup-placeholder( small-caps );
+				@include mixins.rem( font-size, variables.$font-size-small );
 				text-transform: uppercase;
 
 				@supports (margin-block: 1em) {
-					@include unset( border-bottom-width );
+					@include mixins.unset( border-bottom-width );
 					border-block-end-width: 3px;
 				}
 
@@ -46,14 +51,14 @@
 			}
 	
 			tbody {
-				@include rem( font-size, $font-size-small );
+				@include mixins.rem( font-size, variables.$font-size-small );
 			}
 	
 			tr {
-				border-top: 1px solid $color-rule;
+				border-top: 1px solid variables.$color-rule;
 
 				@supports (margin-block: 1em) {
-					@include unset( border-top-width );
+					@include mixins.unset( border-top-width );
 					border-block-start-width: 1px;
 				}
 			}
@@ -62,7 +67,7 @@
 			th {
 				font-weight: normal;
 				text-align: left;
-				@include rem( padding, $table-spacing );
+				@include mixins.rem( padding, variables.$table-spacing );
 				padding-left: 0;
 
 				@supports (margin-block: 1em) {
@@ -98,7 +103,7 @@
 
 // De-table on smaller screens
 // (using staff directory as a gauge)
-@include breakup-media( "only screen and (max-width: 770px)" ) {
+@include breakup.breakup-media( "only screen and (max-width: 770px)" ) {
 
 	.layout-container__primary table {
 		border: 0;
@@ -107,7 +112,7 @@
 		width: 100%;
 
 		@supports (margin-block: 1em) {
-			@include unset( padding-bottom width );
+			@include mixins.unset( padding-bottom width );
 			inline-size: 100%;
 			padding-block-end: 0;
 		}
@@ -131,11 +136,11 @@
 		}
 
 		tr {
-			@include rem( margin, $margin-default );
+			@include mixins.rem( margin, variables.$margin-default );
 
 			@supports (margin-block: 1em) {
 				margin: unset;
-				@include rem( margin-block-end, $default-spacing, false );
+				@include mixins.rem( margin-block-end, variables.$default-spacing, false );
 				margin-inline: 0;
 			}
 		}
@@ -157,13 +162,13 @@
 
 }
 		
-@include breakup-breakpoint( "medium" ) {
+@include breakup.breakup-breakpoint( "medium" ) {
 
 	table.striped {
-			background: $color-background;
+			background: variables.$color-background;
 
 			thead {
-				background: $color-grey-light;
+				background: variables.$color-grey-light;
 				border-bottom: 0;
 
 				@supports (margin-block: 1em) {
@@ -174,28 +179,28 @@
 
 			tbody tr {
 
-				background: $color-white;
-				transition: background-color $default-transition;
+				background: variables.$color-white;
+				transition: background-color variables.$default-transition;
 
 				&:nth-child(even) {
-					background: mix( $color-white, $color-black, 10% );
+					background: color.mix( variables.$color-white, variables.$color-black, 10% );
 				}
 
 				&:hover {
-					background: $color-white;
+					background: variables.$color-white;
 				}
 
 			}
 
 			th,
 			td {
-					border: 1px solid $color-rule;
-					@include rem( padding, $table-spacing );
+					border: 1px solid variables.$color-rule;
+					@include mixins.rem( padding, variables.$table-spacing );
 
 					@supports (margin-block: 1em) {
 						padding: unset;
-						padding-block: $table-spacing;
-						padding-inline: $table-spacing;
+						padding-block: variables.$table-spacing;
+						padding-inline: variables.$table-spacing;
 					}
 			}
 

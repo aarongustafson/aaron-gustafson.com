@@ -1,7 +1,10 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+
 /* Firefox */
 * {
 	scrollbar-width: auto;
-	scrollbar-color: $color-grey-light transparent;
+	scrollbar-color: variables.$color-grey-light transparent;
 }
 
 /* Chrome, Edge, and Safari */
@@ -9,7 +12,7 @@
 	width: 6px;
 
 	@supports (margin-block: 1em) {
-		@include unset( width );
+		@include mixins.unset( width );
 		inline-size: 6px;
 	}
 }
@@ -19,11 +22,11 @@
 }
 
 *::-webkit-scrollbar-thumb {
-	background-color: $color-grey-light;
+	background-color: variables.$color-grey-light;
 	border-radius: 6px;
 	border: 0px solid transparent;
 }
 
 html.dark-mode * {
-	scrollbar-color: $color-black transparent;
+	scrollbar-color: variables.$color-black transparent;
 }

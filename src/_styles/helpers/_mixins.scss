@@ -1,3 +1,9 @@
+@use "sass:list";
+@use "sass:map";
+@use "sass:string";
+@use "functions";
+@use "variables";
+
 /*------------------------------------*\
 Mixins
 \*------------------------------------*/
@@ -42,13 +48,13 @@ Mixins
 	{
 		@if $value == 0 or $value == auto
 		{
-			$px : append( $px , $value );
-			$rem: append( $rem, $value );
+			$px : list.append( $px , $value );
+			$rem: list.append( $rem, $value );
 		}
 		@else
 		{
-			$unit: unit( $value );
-			$val: parseInt( $value );
+			$unit: math.unit( $value );
+			$val: functions.parseInt( $value );
 			
 			// enforce pixels on unitless measurements
 			@if $unit == ""
@@ -60,14 +66,14 @@ Mixins
 			// assume pixels
 			@if $unit == "px"
 			{
-				$px : append( $px,  $value );
-				$rem: append( $rem, math.div( $val, $font-size-default ) + rem );
+				$px : list.append( $px,  $value );
+				$rem: list.append( $rem, math.div( $val, variables.$font-size-default ) + rem );
 			}
 			
 			@if $unit == "rem"
 			{
-				$px : append( $px,  ( $val * $font-size-default + px ) );
-				$rem: append( $rem, $value );
+				$px : list.append( $px,  ( $val * variables.$font-size-default + px ) );
+				$rem: list.append( $rem, $value );
 			}
 		}
 	}
@@ -90,8 +96,8 @@ Mixins
 // Experimental Block Constructor
 @mixin experimental-block ( $pre: "", $post: "" )
 {
-	$pre: unquote( $pre );
-	$post: unquote( $post );
+	$pre: string.unquote( $pre );
+	$post: string.unquote( $post );
 	#{$pre}-webkit-#{$post} {
 		@content;
 	}
@@ -130,25 +136,25 @@ Mixins
 // Background-images
 @mixin background-image ( $img_base, $img_path, $hide_text: true ) {
 	
-	background: transparent url(#{$css_images}/#{$img_base}.png) center center no-repeat;
+	background: transparent url(#{variables.$css_images}/#{$img_base}.png) center center no-repeat;
 	background-size: contain;
 	
 	@if $hide_text
 	{
-		@include breakup-placeholder( overflow-hide );
+		@include breakup.breakup-placeholder( overflow-hide );
 	}
 	
 	// SVG shim in JS for Android 2.3
 	html.with-svg & {
-		background-image: url(#{$css_images}/#{$img_base}.svg);
+		background-image: url(#{variables.$css_images}/#{$img_base}.svg);
 	}
 }
 
 // Triangle
 @mixin triangle( $size: ( "base": 10, "length": 10 ), $direction: right, $color: #000 )
 {
-	$base: math.div( map-get( $size, "base" ), 2 );
-	$length: map-get( $size, "length" );
+	$base: math.div( map.get( $size, "base" ), 2 );
+	$length: map.get( $size, "length" );
 	
 	width: 0;
 	height: 0;
@@ -157,22 +163,22 @@ Mixins
 	// Right
 	@if $direction == right {
 		border-width: ( 0px + $base ) 0 ( 0px + $base ) ( 0px + $length );
-		border-width: ( 0rem + math.div( $base, $font-size-default ) ) 0 ( 0rem + math.div( $base, $font-size-default ) ) ( 0rem + math.div( $length, $font-size-default ) );
+		border-width: ( 0rem + math.div( $base, variables.$font-size-default ) ) 0 ( 0rem + math.div( $base, variables.$font-size-default ) ) ( 0rem + math.div( $length, variables.$font-size-default ) );
 		border-left-color: $color;
 		// Left
 	} @else if $direction == left {
 		border-width: ( 0px + $base ) ( 0px + $length ) ( 0px + $base ) 0;
-		border-width: ( 0rem + math.div( $base, $font-size-default ) ) ( 0rem + math.div( $length, $font-size-default ) ) ( 0rem + math.div( $base, $font-size-default ) ) 0;
+		border-width: ( 0rem + math.div( $base, variables.$font-size-default ) ) ( 0rem + math.div( $length, variables.$font-size-default ) ) ( 0rem + math.div( $base, variables.$font-size-default ) ) 0;
 		border-right-color: $color;
 		// Up
 	} @else if $direction == up {
 		border-width: 0 ( 0px + $base ) ( 0px + $length ) ( 0px + $base );
-		border-width: 0 ( 0rem + math.div( $base, $font-size-default ) ) ( 0rem + math.div( $length, $font-size-default ) ) ( 0rem + math.div( $base, $font-size-default ) );
+		border-width: 0 ( 0rem + math.div( $base, variables.$font-size-default ) ) ( 0rem + math.div( $length, variables.$font-size-default ) ) ( 0rem + math.div( $base, variables.$font-size-default ) );
 		border-bottom-color: $color;
 		// Down
 	} @else if $direction == down {
 		border-width: ( 0px + $length ) ( 0px + $base ) 0 ( 0px + $base );
-		border-width: ( 0rem + math.div( $length, $font-size-default ) ) ( 0rem + math.div( $base, $font-size-default ) ) 0 ( 0rem + math.div( $base, $font-size-default ) ) ;
+		border-width: ( 0rem + math.div( $length, variables.$font-size-default ) ) ( 0rem + math.div( $base, variables.$font-size-default ) ) 0 ( 0rem + math.div( $base, variables.$font-size-default ) ) ;
 		border-top-color: $color;
 	}
 }

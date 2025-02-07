@@ -1,17 +1,20 @@
+@use "../helpers/mixins";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Events
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 
 	.event {
 
 		&__content {
-			@include rem( margin-top, 2 );
+			@include mixins.rem( margin-top, 2 );
 
 			@supports (margin-block: 1em) {
 				margin-top: unset;
-				@include rem( margin-block-start, 2, false );
+				@include mixins.rem( margin-block-start, 2, false );
 			}
 		}
 

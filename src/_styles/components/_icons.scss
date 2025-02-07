@@ -2,11 +2,11 @@
 		Icons
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 
 	.icon {
 	
-		@include breakup-placeholder( overflow-hide );
+		@include breakup.breakup-placeholder( overflow-hide );
 
 		background-size: contain;
 

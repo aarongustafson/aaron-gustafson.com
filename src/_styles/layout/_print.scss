@@ -1,7 +1,10 @@
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Print Layout stuff
 \*------------------------------------*/
-@include breakup-breakpoint( "print" ) {
+@include breakup.breakup-breakpoint( "print" ) {
 		
 		@page {
 			margin: .75in;
@@ -11,8 +14,8 @@
 				background: transparent;
 		}
 		body {
-				background: $color-background;
-				color: $color-text;
+				background: variables.$color-background;
+				color: variables.$color-text;
 			font-size: 12pt;
 			margin: 0;
 			position: relative;

@@ -1,23 +1,27 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
     Modules
 \*------------------------------------*/
 
 @use 'sass:math';
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 
 	.module {
 
 		&__title {
-			@include rem( font-size, $font-size-h3 );
+			@include mixins.rem( font-size, variables.$font-size-h3 );
 		}
 
 		* + * {
-			@include rem( margin-top, math.div( $default-spacing, 2 ) );
+			@include mixins.rem( margin-top, math.div( variables.$default-spacing, 2 ) );
 
 			@supports (margin-block: 1em) {
 				margin-top: unset;
-				@include rem( margin-block-start, math.div( $default-spacing, 2 ), false );
+				@include mixins.rem( margin-block-start, math.div( variables.$default-spacing, 2 ), false );
 			}
 		}
 			

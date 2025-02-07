@@ -1,8 +1,12 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Search
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 
   search {
     height: 0;
@@ -20,34 +24,34 @@
 		}
 		
 		[type=search] {
-			@include rem( font-size, $font-size-nav );
+			@include mixins.rem( font-size, variables.$font-size-nav );
 
 			appearance: none;
 			border: 1px solid;
 			border-radius: 3px;
-			@include rem( margin, 0 5 0 0 );
-			@include rem( padding, 5 10 );
+			@include mixins.rem( margin, 0 5 0 0 );
+			@include mixins.rem( padding, 5 10 );
 			width: 100%;
 
 			@supports (margin-block: 1em) {
-				@include unset( padding width );
+				@include mixins.unset( padding width );
 				margin: 0;
-				@include rem( margin-inline-end, 5, false );
-				@include rem( padding-block, 5, false );
-				@include rem( padding-inline, 10, false );
+				@include mixins.rem( margin-inline-end, 5, false );
+				@include mixins.rem( padding-block, 5, false );
+				@include mixins.rem( padding-inline, 10, false );
 				inline-size: 100%;
 			}
 		}
 
 		button {
 			font-weight: bold;
-			@include rem( font-size, $font-size-small );
-			@include rem( padding, 7 15 );
+			@include mixins.rem( font-size, variables.$font-size-small );
+			@include mixins.rem( padding, 7 15 );
 
 			@supports (margin-block: 1em) {
 				padding: unset;
-				@include rem( padding-block, 7, false );
-				@include rem( padding-inline, 15, false );
+				@include mixins.rem( padding-block, 7, false );
+				@include mixins.rem( padding-inline, 15, false );
 			}
 		}
 
@@ -69,7 +73,7 @@
 			flex-direction: row;
 			justify-content: center;
 			width: 100%;
-			@include rem( gap, $default-spacing );
+			@include mixins.rem( gap, variables.$default-spacing );
 
 			@supports (margin-block: 1em) {
 				width: unset;
@@ -80,7 +84,7 @@
 	
 }
 
-@include breakup-media("screen and (max-width: #{$bp-medium-em})") {
+@include breakup.breakup-media("screen and (max-width: #{variables.$bp-medium-em})") {
 	#search {
 		display: block;
 		background: none;
@@ -92,7 +96,7 @@
     margin-top: 1rem;
 
 		@supports (margin-block: 1em) {
-			@include unset( width height margin-top );
+			@include mixins.unset( width height margin-top );
 			inline-size: auto;
 			block-size: auto;
       margin-block-start: 1rem;
@@ -100,10 +104,10 @@
 	}
 }
 
-@include breakup-breakpoint( "medium" ) {
+@include breakup.breakup-breakpoint( "medium" ) {
 
 		.form--search {
-			background: rgba( $color-white,.9 );
+			background: rgba( variables.$color-white,.9 );
 			
 			box-sizing: content-box;
 			margin: 0;
@@ -118,37 +122,37 @@
 			}
 	
 			html.dark-mode & {
-				background: rgba( $color-background-dark, .9 );
+				background: rgba( variables.$color-background-dark, .9 );
 			}
 
 			button {
-				@include rem( font-size, 22 );
-				@include rem( padding, 10 15 );
+				@include mixins.rem( font-size, 22 );
+				@include mixins.rem( padding, 10 15 );
 
 				@supports (margin-block: 1em) {
 					padding: unset;
-					@include rem( padding-block, 10, false );
-					@include rem( padding-inline, 15, false );
+					@include mixins.rem( padding-block, 10, false );
+					@include mixins.rem( padding-inline, 15, false );
 				}
 			}
 		}
 
 		.form-control--search {
 				
-			@include rem( margin, 0 5 0 0 );
+			@include mixins.rem( margin, 0 5 0 0 );
 			width: 100%;
 			
 			input[type=search] {
-				@include rem( font-size, $font-size-h2 );
+				@include mixins.rem( font-size, variables.$font-size-h2 );
 				box-sizing: border-box;
 				width: 100%;
 				margin: 0;
 			}
 
 			@supports (margin-block: 1em) {
-				@include unset( margin width );
+				@include mixins.unset( margin width );
 				margin: 0;
-				@include rem( margin-inline-end, 5, false );
+				@include mixins.rem( margin-inline-end, 5, false );
 				inline-size: 100%;
 
 				input[type=search] {

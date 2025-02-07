@@ -1,8 +1,11 @@
+@use "../helpers/mixins";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
     Scripts
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 
 	.script {
 		
@@ -44,7 +47,7 @@
 			padding-left: 0;
 			
 			@supports (margin-inline: 1em) {
-				@include unset( margin-top margin-left padding-left );
+				@include mixins.unset( margin-top margin-left padding-left );
 				margin-block-start: 0;
 				margin-inline-start: 0;
 				padding-inline-start: 0;

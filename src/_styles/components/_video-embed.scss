@@ -1,13 +1,17 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
     Webmentions
 \*------------------------------------*/
 
 @use 'sass:math';
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 
 	.video-embed {
-		border: 1px solid $color-grey-light;
+		border: 1px solid variables.$color-grey-light;
 
 		height: 0;
 		overflow: hidden;
@@ -27,7 +31,7 @@
 			height: 100%;
 			
 			@supports (margin-block: 1em) {
-				@include unset( top left width height );
+				@include mixins.unset( top left width height );
 				inset-block-start: 0;
 				inset-inline-start: 0;
 				inline-size: 100%;
@@ -39,7 +43,7 @@
 			padding-bottom:56.25%; /* 9/16*100 */
 
 			@supports (margin-block: 1em) {
-				@include unset( padding-bottom );
+				@include mixins.unset( padding-bottom );
 				padding-block-end: 56.25%;
 			}
 		}
@@ -48,7 +52,7 @@
 			padding-bottom: 75%; /* 3/4*100 */
 
 			@supports (margin-block: 1em) {
-				@include unset( padding-bottom );
+				@include mixins.unset( padding-bottom );
 				padding-block-end: 75%;
 			}
 		}
@@ -57,7 +61,7 @@
 			padding-bottom:100%;
 
 			@supports (margin-block: 1em) {
-				@include unset( padding-bottom );
+				@include mixins.unset( padding-bottom );
 				padding-block-end: 100%;
 			}
 		}
@@ -65,7 +69,7 @@
 		&__lazy-link:link,
 		&__lazy-link:visited {
 
-			background: $color-black center center no-repeat;
+			background: variables.$color-black center center no-repeat;
 			background-size: cover;
 			color: #DDD;
 
@@ -81,7 +85,7 @@
 			position: absolute;
 
 			@supports (margin-block: 1em) {
-				@include unset( width height );
+				@include mixins.unset( width height );
 				inline-size: 100%;
 				block-size: 100%;
 			}
@@ -102,7 +106,7 @@
 			left: 0;
 
 			@supports (margin-block: 1em) {
-				@include unset( width height top left );
+				@include mixins.unset( width height top left );
 				inline-size: 100%;
 				block-size: 100%;
 				inset-block-start: 0;
@@ -116,11 +120,11 @@
 
 		&__lazy-info {
 
-			background: $color-black;
-			background-color: rgba( $color-black, .9 );
+			background: variables.$color-black;
+			background-color: rgba( variables.$color-black, .9 );
 			
 			margin: 0;
-			@include rem( padding, math.div( $default-spacing, 2 ) );
+			@include mixins.rem( padding, math.div( variables.$default-spacing, 2 ) );
 
 			text-shadow: none;
 
@@ -130,9 +134,9 @@
 			right: -1px;
 
 			@supports (margin-block: 1em) {
-				@include unset( padding top left right );
-				@include rem( padding-block, math.div( $default-spacing, 2 ), false );
-				@include rem( padding-inline, math.div( $default-spacing, 2 ), false );
+				@include mixins.unset( padding top left right );
+				@include mixins.rem( padding-block, math.div( variables.$default-spacing, 2 ), false );
+				@include mixins.rem( padding-inline, math.div( variables.$default-spacing, 2 ), false );
 				inset-block-start: -1px;
 				inset-inline: -1px;
 			}

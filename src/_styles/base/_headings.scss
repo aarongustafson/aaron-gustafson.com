@@ -1,9 +1,13 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Heading Levels
 \*------------------------------------*/
 @use 'sass:math';
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 
 		h1, h2, h3, h4, h5, h6 {
 
@@ -11,9 +15,9 @@
 
 			hyphens: auto;
 
-			font-family: $font-stack-serif;
-			font-weight: $font-weight-serif-bold;
-			line-height: $line-height-headings;
+			font-family: variables.$font-stack-serif;
+			font-weight: variables.$font-weight-serif-bold;
+			line-height: variables.$line-height-headings;
 			
 			text-wrap: balance;
 			
@@ -22,11 +26,11 @@
 			}
 			
 			& + * {
-					@include rem( margin-top, math.div( $default-spacing, 2 ) );
+					@include mixins.rem( margin-top, math.div( variables.$default-spacing, 2 ) );
 
 					@supports (margin-block: 1em) {
 						margin-top: unset;
-						@include rem( margin-block-start, math.div( $default-spacing, 2 ), false );
+						@include mixins.rem( margin-block-start, math.div( variables.$default-spacing, 2 ), false );
 					}
 			}
 
@@ -39,7 +43,7 @@
 
 				@supports (margin-block: 1em) {
 					margin-left: unset;
-					@include rem( margin-inline-start, -2rem, false );
+					@include mixins.rem( margin-inline-start, -2rem, false );
 				}
 			}
 
@@ -50,21 +54,21 @@
 		}
 
 		h1 {
-			@include rem( font-size, $font-size-h1 );
+			@include mixins.rem( font-size, variables.$font-size-h1 );
 		}
 
 		section > h1,
 		h2 {
-			@include rem( font-size, $font-size-h2 );
+			@include mixins.rem( font-size, variables.$font-size-h2 );
 		}
 
 		h3 {
-			@include rem( font-size, $font-size-h3 );
+			@include mixins.rem( font-size, variables.$font-size-h3 );
 		}
 
 }
 
-@include breakup-breakpoint( "print" ) {
+@include breakup.breakup-breakpoint( "print" ) {
 
 		a.header-anchor {
 			display: none;
@@ -80,7 +84,7 @@
 				margin-bottom: 10pt;
 
 				@supports (margin-block: 1em) {
-					@include unset( margin-left margin-bottom );
+					@include mixins.unset( margin-left margin-bottom );
 					margin-inline-start: 0;
 					margin-block-end: 10pt;
 				}

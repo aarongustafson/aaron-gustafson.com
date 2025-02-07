@@ -1,30 +1,34 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
  /*------------------------------------*\
 		Buttons
 \*------------------------------------*/
 
-@include breakup-breakpoint( "medium" ) {
+@include breakup.breakup-breakpoint( "medium" ) {
 
 		h1 + .alternate {
 				
-				@include rem( font-size, $font-size-nav );
+				@include mixins.rem( font-size, variables.$font-size-nav );
 
 				margin: 0;
 
 				position: absolute;
-				@include rem( top, 24 );
-				@include rem( right, $default-spacing );
+				@include mixins.rem( top, 24 );
+				@include mixins.rem( right, variables.$default-spacing );
 
 				@supports (margin-block: 1em) {
-					@include unset( top right );
-					@include rem( inset-block-start, 24, false );
-					@include rem( inset-inline-end, $default-spacing, false );
+					@include mixins.unset( top right );
+					@include mixins.rem( inset-block-start, 24, false );
+					@include mixins.rem( inset-inline-end, variables.$default-spacing, false );
 				}
 
 		}
 		
 }
 
-@include breakup-breakpoint( "full" ) {
+@include breakup.breakup-breakpoint( "full" ) {
 
 		h1 + .alternate {
 				right: 0;

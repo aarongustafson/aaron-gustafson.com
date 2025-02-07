@@ -1,34 +1,38 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
   Listing
 \*------------------------------------*/
 
 @use 'sass:math';
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
   
   .listing {
     
-    @include breakup-placeholder( delist );
+    @include breakup.breakup-placeholder( delist );
     
     &__item {
       
       &__title {
-        @include rem( font-size, $font-size-body );
+        @include mixins.rem( font-size, variables.$font-size-body );
       }
       
       &__meta {
-        color: $color-text-light;
-        @include breakup-placeholder( small-caps );
-        @include rem( margin, 2 0 0 );
+        color: variables.$color-text-light;
+        @include breakup.breakup-placeholder( small-caps );
+        @include mixins.rem( margin, 2 0 0 );
 
 				@supports (margin-block: 1em) {
 					margin: unset;
-					@include rem( margin-block, 2 0, false );
+					@include mixins.rem( margin-block, 2 0, false );
 					margin-inline: 0;
 				}
 
         html.dark-mode & {
-          color: $color-text-dark-light;
+          color: variables.$color-text-dark-light;
         }
       }
       
@@ -53,24 +57,24 @@
     }
     
     &--links &__item--link {
-      @include rem( margin-bottom, math.div( $default-spacing, 2 ) );
+      @include mixins.rem( margin-bottom, math.div( variables.$default-spacing, 2 ) );
 
 			@supports (margin-block: 1em) {
 				margin-bottom: unset;
-				@include rem( margin-block-end, math.div( $default-spacing, 2 ), false );
+				@include mixins.rem( margin-block-end, math.div( variables.$default-spacing, 2 ), false );
 			}
     }
 
     &--grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      @include rem( grid-gap, $default-spacing );
+      @include mixins.rem( grid-gap, variables.$default-spacing );
     }
 
     &--minigrid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-      @include rem( grid-gap, $default-spacing );
+      @include mixins.rem( grid-gap, variables.$default-spacing );
     }
     
     &--icons &__item {
@@ -79,11 +83,11 @@
       grid-template-columns: 3.5rem 1fr;
 
       & + .listing__item {
-        @include rem( margin-top, $default-spacing );
+        @include mixins.rem( margin-top, variables.$default-spacing );
 
 				@supports (margin-block: 1em) {
 					margin-top: unset;
-					@include rem( margin-block-start, $default-spacing, false );
+					@include mixins.rem( margin-block-start, variables.$default-spacing, false );
 				}
       }
       .listing__item__type {
@@ -94,7 +98,7 @@
 					max-height: 24px;
 
 					@supports (margin-block: 1em) {
-						@include unset( width height max-height );
+						@include mixins.unset( width height max-height );
 						inline-size: 24px;
 						block-size: auto;
 						max-block-size: 24px;
@@ -120,7 +124,7 @@
 }
 
 // photo comes in at medium
-@include breakup-breakpoint( "medium" ) {
+@include breakup.breakup-breakpoint( "medium" ) {
   
   .listing {
     
@@ -145,20 +149,20 @@
       /* 1/3 width with a 20px gap (fudged) */
       flex: 0 0 calc( 100% / 2 - 0.875rem );
       
-      @include rem( margin-bottom, $default-spacing );
+      @include mixins.rem( margin-bottom, variables.$default-spacing );
       margin-top: 0;
       
       &:nth-child(2n+1) {
-        @include rem( margin-right, $default-spacing );
+        @include mixins.rem( margin-right, variables.$default-spacing );
       }
 
 			@supports (margin-block: 1em) {
-				@include unset( margin-bottom margin-top );
-				@include rem( margin-block, $default-spacing 0, false );
+				@include mixins.unset( margin-bottom margin-top );
+				@include mixins.rem( margin-block, variables.$default-spacing 0, false );
 
 				&:nth-child(2n+1) {
 					margin-right: unset;
-					@include rem( margin-inline-end, $default-spacing, false );
+					@include mixins.rem( margin-inline-end, variables.$default-spacing, false );
 				}
 			}
     }
@@ -167,18 +171,18 @@
 }
 
 // photo comes in at medium
-@include breakup-breakpoint( "full" ) {
+@include breakup.breakup-breakpoint( "full" ) {
   
   .listing--gallery,
   .listing--grid,
   .listing--minigrid,
   .listing--icons {
-    @include rem( margin, 20 -56 0 );
+    @include mixins.rem( margin, 20 -56 0 );
 
 		@supports (margin-block: 1em) {
-			@include unset( margin );
-			@include rem( margin-block, 20 0, false );
-			@include rem( margin-inline, -56, false );
+			@include mixins.unset( margin );
+			@include mixins.rem( margin-block, 20 0, false );
+			@include mixins.rem( margin-inline, -56, false );
 		}
   }
 

@@ -1,28 +1,32 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Page
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 
 	.page {
 
 		&__title {
-			@include rem( margin-bottom, $default-spacing );
+			@include mixins.rem( margin-bottom, variables.$default-spacing );
 
 			@supports (margin-block: 1em) {
 				margin-bottom: unset;
-				@include rem( margin-block-end, $default-spacing, false );
+				@include mixins.rem( margin-block-end, variables.$default-spacing, false );
 			}
 		}
 		
 		&__footer {
-			border-top: 1px solid $color-rule;
-			@include rem( padding-top, $default-spacing );
+			border-top: 1px solid variables.$color-rule;
+			@include mixins.rem( padding-top, variables.$default-spacing );
 
 			@supports (margin-block: 1em) {
-				@include unset( border-top padding-top );
-				border-block-start: 1px solid $color-rule;
-				@include rem( padding-block-start, $default-spacing, false );
+				@include mixins.unset( border-top padding-top );
+				border-block-start: 1px solid variables.$color-rule;
+				@include mixins.rem( padding-block-start, variables.$default-spacing, false );
 			}
 		}
 
@@ -30,7 +34,7 @@
 	
 }
 
-@include breakup-breakpoint( "medium" ) {
+@include breakup.breakup-breakpoint( "medium" ) {
 
 	@supports (display:flex) {
 

@@ -1,11 +1,13 @@
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 		Media Query Watcher (for JS)
 \*------------------------------------*/
 
-@each $breakpoint, $declaration in $breakup-breakpoints
+@each $breakpoint, $declaration in breakup.$breakup-breakpoints
 {
-	@include breakup-block( $breakpoint ) {
-		@include breakup-media( $declaration, true ) {
+	@include breakup.breakup-block( $breakpoint ) {
+		@include breakup.breakup-media( $declaration, true ) {
 			#getActiveMQ-watcher {
 					font-family: "#{$breakpoint}";
 			}

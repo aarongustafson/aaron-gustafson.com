@@ -4,16 +4,24 @@
 
 @charset "UTF-8";
 
-@import "vendors/_vendors";
+@use "vendors/_vendors";
 
-// Breakup Configuration
-// https://github.com/BPScott/breakup
-$breakup-included-blocks: ( "tiny" "small" "medium" "full" "old-ie" );
-$breakup-naked: true;
-$breakup-breakpoints-allow-naked: ( "tiny" "small" "medium" "full" "old-ie" );
+@use "helpers/_helpers";
+@use "base/_base";
+@use "layout/_layout";
+@use "components/_components";
+@use "vendors/breakup/breakup" with (
+  $breakup-included-blocks: ( "tiny" "small" "medium" "full" "old-ie" ),
+  $breakup-naked: true,
+  $breakup-breakpoints-allow-naked: ( "tiny" "small" "medium" "full" "old-ie" )
+);
 
-@import "helpers/_helpers";
-@import "base/_base";
-@import "layout/_layout";
-@import "components/_components";
+@forward "components/promo";
+@forward "components/social-links";
+@forward "helpers/functions";
+@forward "helpers/mixins";
+@forward "helpers/variables";
+@forward "vendors/breakup/breakup";
+@forward "vendors/danielguillan/quantity-queries";
+
 //@import "pages/_pages";

@@ -1,10 +1,14 @@
+@use "../helpers/mixins";
+@use "../helpers/variables";
+@use "../vendors/breakup/breakup";
+
 /*------------------------------------*\
 Header
 \*------------------------------------*/
 
 @use 'sass:math';
 
-@include breakup-breakpoint( "global" ) {
+@include breakup.breakup-breakpoint( "global" ) {
 	
 	.banner {
 		
@@ -29,8 +33,8 @@ Header
 		
 		.site-title {
 			
-			font-family: $font-stack-body;
-			@include rem( font-size, $font-size-h1 );
+			font-family: variables.$font-stack-body;
+			@include mixins.rem( font-size, variables.$font-size-h1 );
 			font-weight: normal;
 			letter-spacing: 0.1em;
 			line-height: 1.1;
@@ -38,36 +42,36 @@ Header
 			text-transform: uppercase;
 			
 			a {
-				background: $color-grey;
-				color: $color-grey-light;
+				background: variables.$color-grey;
+				color: variables.$color-grey-light;
 				
 				border: 0;
-				@include rem( padding, 8 $default-spacing );
+				@include mixins.rem( padding, 8 variables.$default-spacing );
 				display: block;
 				
 				@supports (margin-block: 1em) {
-					@include unset( padding );
-					@include rem( padding-block, 8, false );
-					@include rem( padding-inline, $default-spacing, false );
+					@include mixins.unset( padding );
+					@include mixins.rem( padding-block, 8, false );
+					@include mixins.rem( padding-inline, variables.$default-spacing, false );
 				}
 				
 				&:hover,
 				&:focus {
-					background: $color-green;
-					color: $color-white;
+					background: variables.$color-green;
+					color: variables.$color-white;
 				}
 			}
 		}
 		
 		.site-subtitle {
-			font-family: $font-stack-body;
-			@include rem( font-size, $font-size-h3 );
-			@include rem( padding, 7 5 );
+			font-family: variables.$font-stack-body;
+			@include mixins.rem( font-size, variables.$font-size-h3 );
+			@include mixins.rem( padding, 7 5 );
 			
 			@supports (margin-block: 1em) {
 				padding: unset;
-				@include rem( padding-block, 7 );
-				@include rem( padding-inline, 5 );
+				@include mixins.rem( padding-block, 7 );
+				@include mixins.rem( padding-inline, 5 );
 			}
 		}
 		
@@ -75,19 +79,19 @@ Header
 	
 	.alert {
 		
-		background: $color-black;
-		color: $color-white;
+		background: variables.$color-black;
+		color: variables.$color-white;
 		
-		@include rem( margin, $margin-default );
-		@include rem( padding, 7 5 );
+		@include mixins.rem( margin, variables.$margin-default );
+		@include mixins.rem( padding, 7 5 );
 		text-align: center;
 		
 		@supports (margin-block: 1em) {
-			@include unset( margin padding );
-			@include rem( margin-block-end, $default-spacing, false );
+			@include mixins.unset( margin padding );
+			@include mixins.rem( margin-block-end, variables.$default-spacing, false );
 			margin-inline: 0;
-			@include rem( padding-block, 7, false );
-			@include rem( padding-inline, 5, false );
+			@include mixins.rem( padding-block, 7, false );
+			@include mixins.rem( padding-inline, 5, false );
 		}
 		
 		a {
@@ -108,11 +112,11 @@ Header
 			
 			.site-title,
 			.site-subtitle {
-				@include rem( margin-bottom, math.div( $default-spacing, 2 ) );
+				@include mixins.rem( margin-bottom, math.div( variables.$default-spacing, 2 ) );
 				
 				@supports (margin-block: 1em) {
 					margin-bottom: unset;
-					@include rem( margin-block-end, math.div( $default-spacing, 2 ), false );
+					@include mixins.rem( margin-block-end, math.div( variables.$default-spacing, 2 ), false );
 				}
 			}
 		}
