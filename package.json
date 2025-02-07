@@ -3,6 +3,7 @@
 	"version": "2.0.0",
 	"description": "Aaron Gustafson’s website.",
 	"main": ".eleventy.js",
+	"type": "module",
   "scripts": {
 		"start": "gulp && concurrently 'gulp watch' 'npx eleventy --serve --quiet --incremental --ignore-initial'",
 		"serve": "cd dist && npx http-server -p 8888 -a 127.0.0.1",
