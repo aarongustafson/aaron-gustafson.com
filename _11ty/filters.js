@@ -1,5 +1,5 @@
-const { DateTime } = require("luxon");
-const widont = require("widont");
+import { DateTime } from "luxon";
+import widont from "widont";
 
 function parse_date( date ){
 	if ( ! date ) {
@@ -60,7 +60,7 @@ function getContentTypeByPath( path ) {
 	return type;
 }
 
-module.exports = {
+export default {
 	
 	readable_date: date => {
 		return parse_date( date ).toFormat("dd LLL yyyy");

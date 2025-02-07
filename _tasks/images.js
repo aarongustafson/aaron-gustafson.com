@@ -1,14 +1,16 @@
 /* jshint node: true */
-const {dest, src} = require('gulp');
-const config = require("./config.js");
-const through2 = require("through2");
-const sharp = require("sharp");
-const svgo = require("gulp-svgo");
-const filter = require("gulp-filter");
-const gulpif = require("gulp-if");
-const { Transform } = require("stream");
-var path = require("path");
-const fs = require("fs");
+import gulp from "gulp";
+const {dest, src} = gulp;
+import config from "./config.js";
+import through2 from "through2";
+import sharp from "sharp";
+import svgo from "gulp-svgo";
+import filter from "gulp-filter";
+import gulpif from "gulp-if";
+import stream from "stream";
+const { Transform } = stream;
+import path from "path";
+import fs from "fs";
 
 const destination = `${config.static}/i`;
 const dist = `${config.destination}/i`;
@@ -97,4 +99,4 @@ const images = () => {
 
 };
 
-module.exports = images;
+export default images;

@@ -1,16 +1,19 @@
 /* jshint node: true */
-const {dest, src} = require('gulp');
-const config = require("./config.js");
-const fs = require('fs');
-const path = require("path");
-const merge = require("merge-stream");
-const gulpIf = require("gulp-if");
-const concat = require("gulp-concat");
-const rename = require("gulp-rename");
-const composer = require("gulp-uglify/composer");
-const minify = composer(require("uglify-es"), console);
-const through2 = require("through2");
-const { Transform } = require("stream");
+import gulp from "gulp";
+const {dest, src} = gulp;
+import config from "./config.js";
+import fs from "fs";
+import path from "path";
+import merge from "merge-stream";
+import gulpIf from "gulp-if";
+import concat from "gulp-concat";
+import rename from "gulp-rename";
+import composer from "gulp-uglify/composer.js";
+import uglify from "uglify-es";
+let minify = composer(uglify, console);
+import through2 from "through2";
+import stream from "stream";
+const { Transform } = stream;
 
 const source_folder = `${config.source}/_javascript`;
 const destination_folder = `${config.static}/j`;
@@ -77,4 +80,4 @@ const scripts = cb => {
 
 };
 
-module.exports = scripts;
+export default scripts;

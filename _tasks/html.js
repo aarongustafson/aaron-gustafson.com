@@ -1,8 +1,9 @@
-const {dest, src} = require('gulp');
-const config = require("./config.js");
-const htmlmin = require("gulp-htmlmin");
+import gulp from "gulp";
+const {dest, src} = gulp;
+import config from "./config.js";
+import htmlmin from "gulp-htmlmin";
 
-const html = cb => {
+const html = ( cb ) => {
 
   return src(`${config.destination}/**/*.html`)
           .pipe(htmlmin({
@@ -16,4 +17,4 @@ const html = cb => {
 
 };
 
-module.exports = html;
+export default html;

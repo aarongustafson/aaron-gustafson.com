@@ -1,6 +1,8 @@
-const {dest, src} = require('gulp');
-const { destination } = require("./config.js");
-const prettyData = require('gulp-pretty-data');
+import gulp from "gulp";
+const {dest, src} = gulp;
+import config from "./config.js";
+const { destination } = config;
+import prettyData from "gulp-pretty-data";
 
 const data = cb => {
 
@@ -14,4 +16,4 @@ const data = cb => {
 
 };
 
-module.exports = data;
+export default data;

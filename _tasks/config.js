@@ -5,4 +5,4 @@ const config = {
   cache: './_cache'
 };
 
-module.exports = config;
+export default config;

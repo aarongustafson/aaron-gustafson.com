@@ -1,11 +1,15 @@
-const {dest, src} = require('gulp');
-const config = require("./config.js");
-const sassProcessor = require('gulp-sass')(require('sass'));
-const autoprefixer = require('gulp-autoprefixer');
-const clean = require('gulp-clean-css');
-const rename = require("gulp-rename");
-const { Transform } = require("stream");
-const fs = require("fs");
+import gulp from "gulp";
+const {dest, src} = gulp;
+import config from "./config.js";
+import gulpSass from 'gulp-sass';
+import sass from "sass";
+const sassProcessor = gulpSass(sass);
+import autoprefixer from "gulp-autoprefixer";
+import clean from "gulp-clean-css";
+import rename from "gulp-rename";
+import stream from "stream"
+const { Transform } = stream;
+import fs from "fs";
 
 const destination = `${config.static}/c`;
 const dist = `${config.destination}/c`;
@@ -57,4 +61,4 @@ const styles = cb => {
     .on('done', cb);
 };
 
-module.exports = styles;
+export default styles;
