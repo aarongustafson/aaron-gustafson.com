@@ -100,6 +100,7 @@ export default async (config) => {
 		twitter: {
 			options: {
 				cacheText: true,
+        cacheDuration: "100y",
 			},
 		},
 	});

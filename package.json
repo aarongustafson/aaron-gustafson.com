@@ -55,7 +55,7 @@
 		"concurrently": "^7.6.0",
 		"css-what": "^6.1.0",
 		"dotenv": "^16.0.2",
-		"eleventy-plugin-embed-everything": "^1.19.0",
+		"eleventy-plugin-embed-everything": "^1.20.0",
 		"eleventy-plugin-reading-time": "0.0.1",
 		"eleventy-plugin-images-responsiver": "^3.0.0",
 		"eleventy-plugin-seo": "aarongustafson/eleventy-plugin-seo#develop",
