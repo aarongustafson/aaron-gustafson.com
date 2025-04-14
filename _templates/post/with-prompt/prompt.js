@@ -2,9 +2,8 @@
 // https://github.com/enquirer/enquirer/tree/master/examples
 //
 
-import fs from "fs";
-const tags = JSON.parse(fs.readFileSync("./_cache/tags.json"));
-const series = JSON.parse(fs.readFileSync("./_cache/series.json"));
+import series from "../../../_cache/series.json" with { type: "json" };
+import tags from "../../../_cache/tags.json" with { type: "json" };
 
 function getSeries() {
 	var choices = [
@@ -13,16 +12,16 @@ function getSeries() {
 			value: "",
 		},
 	];
-	for (tag in series) {
-		choices.push({
-			message: series[tag],
-			value: tag,
+  Object.keys(series).forEach((key) => {
+    choices.push({
+			message: series[key],
+			value: key,
 		});
-	}
+  })
 	return choices;
 }
 
-module.exports = [
+export default [
 	{
 		type: "input",
 		name: "title",

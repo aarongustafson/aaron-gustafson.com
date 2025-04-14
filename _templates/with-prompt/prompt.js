@@ -2,11 +2,8 @@
 // https://github.com/enquirer/enquirer/tree/master/examples
 //
 
-import fs from "fs";
-const events = JSON.parse(
-	fs.readFileSync("./src/_data/speaking_engagements.json")
-);
-const tags = JSON.parse(fs.readFileSync("./_cache/tags.json"));
+import tags from "../../_cache/tags.json" with { type: "json" };
+import events from "../../src/_data/speaking_engagements.json" with { type: "json" };
 
 function getEvents(subset) {
 	var choices = [];

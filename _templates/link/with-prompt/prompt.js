@@ -2,10 +2,9 @@
 // https://github.com/enquirer/enquirer/tree/master/examples
 //
 
-import fs from "fs";
-const tags = JSON.parse(fs.readFileSync("./_cache/tags.json"));
+import tags from "../../../_cache/tags.json" with { type: "json" };
 
-module.exports = [
+export default [
 	{
 		type: "input",
 		name: "title",
