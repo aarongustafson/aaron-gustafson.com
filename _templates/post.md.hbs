@@ -1,0 +1,32 @@
+---
+title: "{{ title }}"
+date: {{ getTimestamp }}
+comments: true
+tags: [{{#each tags}}"{{this}}"{{#unless @last}}, {{/unless}}{{/each}}]
+description: "{{ description }}"
+twitter_text: "{{ twitter_text }}"
+{{#if in_reply_to}}
+in_reply_to: {{ in_reply_to }}
+{{/if}}
+series: "{{series}}"
+{{#if series}}
+series:
+  name: "{{ getSeriesName series }}"
+  tag: {{ series }}
+  ordinal: ""
+{{/if}}
+hero:
+  src: /i/posts/{{ getDate }}/hero.jpg
+  credit: "Aaron Gustafson × Designer"
+  alt: ""
+  url: 
+  offset: ""
+---
+
+{{ description }}
+
+<!-- more -->
+
+Other stuff.
+
+<!-- Note: Twitter, CodePen, and YouTube links will automatically be embedded. -->

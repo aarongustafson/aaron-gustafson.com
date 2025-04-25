@@ -13,7 +13,6 @@ const iso = dateLocal.toISOString().slice(0, 19);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const series = JSON.parse(readFileSync(path.join(__dirname, '_cache/series.json'), 'utf8'));
 const tags = JSON.parse(readFileSync(path.join(__dirname, '_cache/tags.json'), 'utf8'));
-const citations = JSON.parse(readFileSync(path.join(__dirname, 'src/_data/citations.json'), 'utf8'));
 const events = JSON.parse(readFileSync(path.join(__dirname, 'src/_data/speaking_engagements.json'), 'utf8'));
 
 // Helper functions
@@ -59,7 +58,13 @@ const helpers = {
       .replace(/-+/g, "-");
 
     return include_date ? `${date}-${text}` : text;
-  }
+  },
+  ifEquals: ( value_A, value_B, options ) => {
+    return (value_A === value_B) ? options.fn(this) : options.inverse(this);
+  },
+  ifNotEquals: ( value_A, value_B, options ) => {
+    return (value_A !== value_B) ? options.fn(this) : options.inverse(this);
+  },
 };
 
 // Plop configuration
@@ -97,25 +102,41 @@ export default function (plop) {
       {
         type: 'input',
         name: 'title',
-        message: 'Post title:'
+        message: 'Title'
       },
       {
         type: 'input',
         name: 'description',
-        message: 'Post description:'
+        message: 'Description'
+      },
+      {
+        type: "input",
+        name: "twitter_text",
+        message: "Text for Twitter",
       },
       {
         type: 'checkbox',
         name: 'tags',
-        message: 'Select tags:',
-        choices: Object.keys(tags).map(tag => ({ name: tag, value: tag }))
-      }
+        message: 'Choose tags (you can add new ones later)',
+        choices: tags.map(tag => ({ name: tag, value: tag }))
+      },
+      {
+        type: "list",
+        name: "series",
+        message: "Is this part of an existing series?",
+        choices: Object.keys({ None: "", ...series}).map(tag => ({ name: series[tag], value: tag })),
+      },
+      {
+        type: "input",
+        name: "in_reply_to",
+        message: "URL of the post to reply to",
+      },
     ],
     actions: [
       {
         type: 'add',
         path: 'src/posts/{{getFilename title}}.md',
-        templateFile: 'plop-templates/post.md.hbs'
+        templateFile: '_templates/post.md.hbs'
       }
     ]
   });
@@ -233,36 +254,58 @@ export default function (plop) {
       {
         type: 'input',
         name: 'title',
-        message: 'Link title:'
+        message: 'Title'
+      },
+      {
+        type: 'input',
+        name: 'source',
+        message: 'Source'
       },
       {
         type: 'input',
         name: 'url',
-        message: 'URL:'
+        message: 'URL'
       },
       {
         type: 'input',
         name: 'description',
-        message: 'Description:'
+        message: 'Description'
+      },
+      {
+        type: "input",
+        name: "twitter_text",
+        message: "Text for Twitter",
       },
       {
         type: 'checkbox',
         name: 'tags',
-        message: 'Select tags:',
-        choices: Object.keys(tags).map(tag => ({ name: tag, value: tag }))
+        message: 'Choose tags (you can add new ones later)',
+        choices: tags.map(tag => ({ name: tag, value: tag }))
       },
       {
-        type: 'confirm',
-        name: 'syndicate',
-        message: 'Syndicate to Twitter/Mastodon?',
-        default: true
-      }
+        type: "input",
+        name: "quote",
+        message: "Anything you want to quote?",
+      },
+      {
+        type: "input",
+        name: "via_name",
+        message: "Did someone else post this?",
+      },
+      {
+        type: "input",
+        name: "via_url",
+        message: "What's the URL?",
+        when: function(answers) {
+          return answers.via_name !== "";
+        },
+      },
     ],
     actions: [
       {
         type: 'add',
         path: 'src/links/{{getFilename title}}.md',
-        templateFile: 'plop-templates/link.md.hbs'
+        templateFile: '_templates/link.md.hbs'
       }
     ]
   });
