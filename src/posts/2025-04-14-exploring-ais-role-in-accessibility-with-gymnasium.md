@@ -13,7 +13,7 @@ Earlier this month I joined Jeremy Osborne and Andrew Miller to talk about the b
 
 <figure>
 
-https://www.youtube.com/live/7ObB4jM-QXU
+https://www.youtube.com/watch?v=7ObB4jM-QXU
 
 </figure>
 
