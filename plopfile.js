@@ -94,8 +94,9 @@ export default function (plop) {
   });
 
   // Custom actions
-  plop.setActionType('openFile', async function (answers, _config, _plop) {
-    const filename = `./src/posts/${helpers.getFilename(answers.title)}.md`;
+  plop.setActionType('openFile', async function (answers, config, _plop) {
+    const use_date = config.date !== undefined ? config.date : true;
+    const filename = `./src/${config.directory}/${helpers.getFilename(answers.title, use_date)}.md`;
     setTimeout(()=>{
       execFile("code", [filename], {shell: true}, (error, stdout, _stderr) => {
         if (error) {
@@ -103,7 +104,7 @@ export default function (plop) {
         }
         console.log(stdout);
       });
-    }, 1500);
+    }, 3000);
     return;
   });
 
@@ -122,6 +123,7 @@ export default function (plop) {
         name: 'date',
         message: 'When did it publish? (YYYY-MM-DD)',
         validate: (value) => !value.match(/\d{4}-\d{2}-\d{2}/) ? "Date must be in the format YYY-MM-DD" : true,
+        default: helpers.getDate(),
       },
       {
         type: 'checkbox',
@@ -153,7 +155,9 @@ export default function (plop) {
         templateFile: '_templates/article.md.hbs'
       },
       {
-        type: 'openFile'
+        type: 'openFile',
+        date: false,
+        directory: 'publications/articles',
       }
     ]
   });
@@ -178,6 +182,7 @@ export default function (plop) {
         name: 'date',
         message: 'When did it publish? (YYYY-MM-DD)',
         validate: (value) => !value.match(/\d{4}-\d{2}-\d{2}/) ? "Date must be in the format YYY-MM-DD" : true,
+        default: helpers.getDate(),
       },
       {
         type: "input",
@@ -228,7 +233,9 @@ export default function (plop) {
         templateFile: '_templates/book.md.hbs'
       },
       {
-        type: 'openFile'
+        type: 'openFile',
+        date: false,
+        directory: 'publications/books',
       }
     ]
   });
@@ -416,7 +423,68 @@ export default function (plop) {
         templateFile: '_templates/link.md.hbs'
       },
       {
-        type: 'openFile'
+        type: 'openFile',
+        directory: 'links',
+      }
+    ]
+  });
+
+  // Podcast generator
+  plop.setGenerator('podcast', {
+    description: 'Add a new podcast appearance',
+    prompts: [
+      {
+        type: 'input',
+        name: 'title',
+        message: 'What’s the podcast episode title?',
+        validate: (value) => !value ? "Title cannot be empty" : true,
+      },
+      {
+        type: 'input',
+        name: 'date',
+        message: 'When did it publish? (YYYY-MM-DD)',
+        validate: (value) => !value.match(/\d{4}-\d{2}-\d{2}/) ? "Date must be in the format YYY-MM-DD" : true,
+        default: helpers.getDate(),
+      },
+      {
+        type: 'checkbox',
+        name: 'tags',
+        message: 'Tag this podcast (you can add new ones later)',
+        choices: tags.map(tag => ({ name: tag, value: tag }))
+      },
+      {
+        type: "input",
+        name: "publisher",
+        message: "What podcast were you on?",
+        validate: (value) => !value ? "Publisher cannot be empty" : true,
+      },
+      {
+        type: "input",
+        name: "episode",
+        message: "If there is an episode number associated with it, enter that here",
+      },
+      {
+        type: "input",
+        name: "url",
+        message: "What’s the link?",
+        validate: (value) => !value ? "URL cannot be empty" : true,
+      },
+      {
+        type: 'input',
+        name: 'description',
+        message: 'Describe the episode'
+      },
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: 'src/appearances/podcasts/{{getFilename title false}}.md',
+        templateFile: '_templates/podcast.md.hbs'
+      },
+      {
+        type: 'openFile',
+        date: false,
+        directory: 'appearances/podcasts',
       }
     ]
   });
@@ -466,11 +534,67 @@ export default function (plop) {
       },
       {
         type: 'openFile',
+        directory: 'posts',
       }
     ]
   });
 
-  // Post generator
+  // Press appearance generator
+  plop.setGenerator('press', {
+    description: 'Add a new press appearance',
+    prompts: [
+      {
+        type: 'input',
+        name: 'title',
+        message: 'What’s the press item’s title?',
+        validate: (value) => !value ? "Title cannot be empty" : true,
+      },
+      {
+        type: 'input',
+        name: 'date',
+        message: 'When did it publish? (YYYY-MM-DD)',
+        default: helpers.getDate(),
+        validate: (value) => !value.match(/\d{4}-\d{2}-\d{2}/) ? "Date must be in the format YYY-MM-DD" : true,
+      },
+      {
+        type: 'checkbox',
+        name: 'tags',
+        message: 'What did you talk about?',
+        choices: tags.map(tag => ({ name: tag, value: tag }))
+      },
+      {
+        type: "input",
+        name: "publisher",
+        message: "Where was it published?",
+        validate: (value) => !value ? "Publisher cannot be empty" : true,
+      },
+      {
+        type: "input",
+        name: "url",
+        message: "What’s the link?",
+        validate: (value) => !value ? "URL cannot be empty" : true,
+      },
+      {
+        type: 'input',
+        name: 'description',
+        message: 'Describe or excerpt the press item'
+      },
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: 'src/appearances/podcast/{{getFilename title false}}.md',
+        templateFile: '_templates/podcast.md.hbs'
+      },
+      {
+        type: 'openFile',
+        date: false,
+        directory: 'appearances/press',
+      }
+    ]
+  });
+
+  // Talk generator
   plop.setGenerator('talk', {
     description: 'Create a new talk post',
     prompts: [
@@ -635,6 +759,8 @@ export default function (plop) {
       },
       {
         type: 'openFile',
+        date: false,
+        directory: 'talks',
       }
     ]
   });
