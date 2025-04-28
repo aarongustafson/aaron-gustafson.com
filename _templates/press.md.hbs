@@ -1,0 +1,11 @@
+---
+title: "{{ title }}"
+date: {{ date }} 00:00:00 +00:00
+tags: [{{#each tags}}"{{this}}"{{#unless @last}}, {{/unless}}{{/each}}]
+publisher: "{{ publisher }}"
+{{#if url}}
+url: {{ url }}
+{{/if}}
+---
+
+{{ description }}

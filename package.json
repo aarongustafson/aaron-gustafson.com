@@ -13,15 +13,15 @@
 		"build": "NODE_ENV=production npx eleventy",
 		"postbuild": "gulp postbuild",
 		"start-netlify": "NODE_ENV=production netlify dev && netlify functions:serve",
-		"post": "hygen post with-prompt",
-		"link": "hygen link with-prompt",
-		"event": "hygen event with-prompt",
-		"talk": "hygen talk with-prompt",
-		"article": "hygen article with-prompt",
-		"book": "hygen book with-prompt",
-		"podcast": "hygen podcast with-prompt",
-		"press": "hygen press with-prompt",
-		"citation": "hygen citation with-prompt",
+		"new:post": "plop post",
+		"new:link": "plop link",
+		"new:event": "plop event",
+		"new:talk": "plop talk",
+		"new:article": "plop article",
+		"new:book": "plop book",
+		"new:podcast": "plop podcast",
+		"new:press": "plop press",
+		"new:citation": "plop citation",
 		"404s": "node ./_tasks/scanner.js"
 	},
 	"repository": {
@@ -56,8 +56,8 @@
 		"css-what": "^6.1.0",
 		"dotenv": "^16.0.2",
 		"eleventy-plugin-embed-everything": "^1.20.0",
-		"eleventy-plugin-reading-time": "0.0.1",
 		"eleventy-plugin-images-responsiver": "^3.0.0",
+		"eleventy-plugin-reading-time": "0.0.1",
 		"eleventy-plugin-seo": "aarongustafson/eleventy-plugin-seo#develop",
 		"eleventy-plugin-svg-contents": "^0.7.0",
 		"faunadb": "^4.6.0",
@@ -105,9 +105,9 @@
 	"devDependencies": {
 		"@zachleat/announcement-banner": "^1.0.8",
 		"broken-link-checker": "^0.7.8",
-		"hygen": "^6.2.11",
 		"netlify-cli": "^18.1.0",
-		"netlify-plugin-webmentions": "^1.1.1"
+		"netlify-plugin-webmentions": "^1.1.1",
+		"plop": "^4.0.1"
 	},
 	"prettier": {
 		"useTabs": true,

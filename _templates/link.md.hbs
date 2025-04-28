@@ -1,0 +1,24 @@
+---
+title: "{{ title }}"
+ref_source: "{{ source }}"
+date: {{ getTimestamp }}
+comments: true
+tags: [{{#each tags}}"{{this}}"{{#unless @last}}, {{/unless}}{{/each}}]
+description: "{{ description }}"
+twitter_text: "{{ twitter_text }}"
+ref_url: {{ url }}
+in_reply_to: {{ url }}
+{{#if via_name}}
+via:
+  name: "{{ via_name }}"
+  url: {{ via_url }}
+{{/if}}
+---
+
+{{ description }}
+
+{{#if quote}}
+> {{ quote }}
+{{/if}}
+
+<!-- Note: Twitter, CodePen, and YouTube links will automatically be embedded. -->
