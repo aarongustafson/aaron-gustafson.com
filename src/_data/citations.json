@@ -306,6 +306,23 @@
       "author": "Слободенюк Іван Федорович",
       "url": "https://openarchive.nure.ua/server/api/core/bitstreams/e2e39a59-3a81-4908-a190-021eefa783f7/content",
       "lang": "uk"
+    },
+    {
+      "title": "Overview of Web Application Performance Optimization Techniques",
+      "author": "Juho Vepsäläinen, Arto Hellas, and Petri Vuorimaa",
+      "url": "https://arxiv.org/pdf/2412.07892"
+    },
+    {
+      "title": "Дизайн вебсайтів електронної комерції: еволюція, естетичні аспекти",
+      "author": "Васильєв Олександр Сергійович",
+      "url": "https://er.knutd.edu.ua/bitstream/123456789/26918/1/Vasyliev_disertation.pdf",
+      "lang": "uk"
+    },
+    {
+      "title": "Дизайн веб сервісу з пошуку загублених тварин",
+      "author": "Коркосенко Анна Сергіївна",
+      "url": "https://elib.nakkkim.edu.ua/bitstream/handle/123456789/5322/korkosenko.pdf",
+      "lang": "uk"
     }
   ],
   "talks": [
