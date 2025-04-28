@@ -105,7 +105,6 @@
 	"devDependencies": {
 		"@zachleat/announcement-banner": "^1.0.8",
 		"broken-link-checker": "^0.7.8",
-		"hygen": "^6.2.11",
 		"netlify-cli": "^18.1.0",
 		"netlify-plugin-webmentions": "^1.1.1",
 		"plop": "^4.0.1"
