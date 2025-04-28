@@ -96,13 +96,141 @@ export default function (plop) {
   // Custom actions
   plop.setActionType('openFile', async function (answers, _config, _plop) {
     const filename = `./src/posts/${helpers.getFilename(answers.title)}.md`;
-    execFile("code", [filename], {shell: true}, (error, stdout, _stderr) => {
-      if (error) {
-        throw error;
-      }
-      console.log(stdout);
-    });
+    setTimeout(()=>{
+      execFile("code", [filename], {shell: true}, (error, stdout, _stderr) => {
+        if (error) {
+          throw error;
+        }
+        console.log(stdout);
+      });
+    }, 1500);
     return;
+  });
+
+  // Article generator
+  plop.setGenerator('article', {
+    description: 'Add a new article',
+    prompts: [
+      {
+        type: 'input',
+        name: 'title',
+        message: 'What’s the article’s title?',
+        validate: (value) => !value ? "Title cannot be empty" : true,
+      },
+      {
+        type: 'input',
+        name: 'date',
+        message: 'When did it publish? (YYYY-MM-DD)',
+        validate: (value) => !value.match(/\d{4}-\d{2}-\d{2}/) ? "Date must be in the format YYY-MM-DD" : true,
+      },
+      {
+        type: 'checkbox',
+        name: 'tags',
+        message: 'Tag this article (you can add new ones later)',
+        choices: tags.map(tag => ({ name: tag, value: tag }))
+      },
+      {
+        type: "input",
+        name: "publisher",
+        message: "Where was it published?",
+        validate: (value) => !value ? "Publisher cannot be empty" : true,
+      },
+      {
+        type: 'input',
+        name: 'url',
+        message: 'What’s the link?'
+      },
+      {
+        type: 'input',
+        name: 'description',
+        message: 'Describe or excerpt the article'
+      },
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: 'src/publications/articles/{{getFilename title false}}.md',
+        templateFile: '_templates/article.md.hbs'
+      },
+      {
+        type: 'openFile'
+      }
+    ]
+  });
+
+  // Book generator
+  plop.setGenerator('book', {
+    description: 'Add a new book',
+    prompts: [
+      {
+        type: 'input',
+        name: 'title',
+        message: 'What’s the book’s title?',
+        validate: (value) => !value ? "Title cannot be empty" : true,
+      },
+      {
+        type: "input",
+        name: "subtitle",
+        message: "If it has a subtitle, enter that here",
+      },
+      {
+        type: 'input',
+        name: 'date',
+        message: 'When did it publish? (YYYY-MM-DD)',
+        validate: (value) => !value.match(/\d{4}-\d{2}-\d{2}/) ? "Date must be in the format YYY-MM-DD" : true,
+      },
+      {
+        type: "input",
+        name: "author",
+        message: "Who is on the book’s byline?",
+        validate: (value) => (!value ? "Author cannot be empty" : true),
+      },
+      {
+        type: "list",
+        name: "type",
+        message: "What kind of contribution did you make?",
+        choices: ["authored", "foreword", "contributed"],
+      },
+      {
+        type: 'checkbox',
+        name: 'tags',
+        message: 'Tag this book (you can add new ones later)',
+        choices: tags.map(tag => ({ name: tag, value: tag }))
+      },
+      {
+        type: "input",
+        name: "publisher",
+        message: "Who published it?",
+        validate: (value) => !value ? "Publisher cannot be empty" : true,
+      },
+      {
+        type: 'input',
+        name: 'url',
+        message: 'What’s the link?',
+        validate: (value) => !value ? "URL cannot be empty" : true,
+      },
+      {
+        type: "input",
+        name: "full_text",
+        message: "If the full text of the contribution is available at a URL, enter that here",
+        when: ( answers ) => answers.type !== "authored",
+      },
+      {
+        type: 'input',
+        name: 'description',
+        message: 'Describe the book'
+      },
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: 'src/publications/books/{{getFilename title false}}.md',
+        templateFile: '_templates/book.md.hbs'
+      },
+      {
+        type: 'openFile'
+      }
+    ]
   });
 
   // Citation generator
@@ -278,9 +406,7 @@ export default function (plop) {
         type: "input",
         name: "via_url",
         message: "What's the URL?",
-        when: function(answers) {
-          return answers.via_name !== "";
-        },
+        when: ( answers ) => answers.via_name !== "",
       },
     ],
     actions: [
