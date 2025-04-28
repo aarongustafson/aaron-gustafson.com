@@ -1,4 +1,5 @@
 import { readFileSync } from 'fs';
+import { execFile } from 'node:child_process';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
@@ -65,6 +66,24 @@ const helpers = {
   ifNotEquals: ( value_A, value_B, options ) => {
     return (value_A !== value_B) ? options.fn(this) : options.inverse(this);
   },
+  getEvents: (subset) => {
+    var choices = [];
+    events.map((event) => {
+      if (!subset || (subset instanceof Array && subset.indexOf(event.id) > -1)) {
+        choices.push({
+          name: `${event.title} (${event.date})`,
+          value: event.id,
+        });
+      }
+    });
+    return choices;
+  },
+  getEventDate: (selected_events) => {
+    selected_events.sort();
+    var id = selected_events[0];
+    var event = events.find((evt) => evt.id == id);
+    return event.date.replace(/(\d) ([+-]\d)/, "$1$2").replace(" ", "T");
+  },
 };
 
 // Plop configuration
@@ -73,109 +92,17 @@ export default function (plop) {
   Object.keys(helpers).forEach(helperName => {
     plop.setHelper(helperName, helpers[helperName]);
   });
-  plop.setHelper('addEvent', function() {
-    const locals = this;
-    const new_events = [...events].sort((a, b) => {
-      return a.id > b.id ? 1 : -1;
+
+  // Custom actions
+  plop.setActionType('openFile', async function (answers, _config, _plop) {
+    const filename = `./src/posts/${helpers.getFilename(answers.title)}.md`;
+    execFile("code", [filename], {shell: true}, (error, stdout, _stderr) => {
+      if (error) {
+        throw error;
+      }
+      console.log(stdout);
     });
-    new_events.reverse();
-  
-    const event = {
-      id: new_events[0].id + 1,
-      title: locals.title,
-      date: `${locals.date} 00:09:00 -0800`,
-      location: locals.location || "Online",
-    };
-    
-    if (locals.url) {
-      event.url = locals.url;
-    }
-  
-    new_events.unshift(event);
-    return JSON.stringify(new_events, null, 2);
-  });
-
-  // Post generator
-  plop.setGenerator('post', {
-    description: 'Create a new blog post',
-    prompts: [
-      {
-        type: 'input',
-        name: 'title',
-        message: 'Title'
-      },
-      {
-        type: 'input',
-        name: 'description',
-        message: 'Description'
-      },
-      {
-        type: "input",
-        name: "twitter_text",
-        message: "Text for Twitter",
-      },
-      {
-        type: 'checkbox',
-        name: 'tags',
-        message: 'Choose tags (you can add new ones later)',
-        choices: tags.map(tag => ({ name: tag, value: tag }))
-      },
-      {
-        type: "list",
-        name: "series",
-        message: "Is this part of an existing series?",
-        choices: Object.keys({ None: "", ...series}).map(tag => ({ name: series[tag], value: tag })),
-      },
-      {
-        type: "input",
-        name: "in_reply_to",
-        message: "URL of the post to reply to",
-      },
-    ],
-    actions: [
-      {
-        type: 'add',
-        path: 'src/posts/{{getFilename title}}.md',
-        templateFile: '_templates/post.md.hbs'
-      }
-    ]
-  });
-
-  // Event generator (you can add other generators similarly)
-  plop.setGenerator('event', {
-    description: 'Add a new speaking engagement',
-    prompts: [
-      {
-        type: 'input',
-        name: 'title',
-        message: 'Event title:'
-      },
-      {
-        type: 'input',
-        name: 'date',
-        message: 'Event date (YYYY-MM-DD):',
-        default: helpers.getDate()
-      },
-      {
-        type: 'input',
-        name: 'location',
-        message: 'Event location:',
-        default: 'Online'
-      },
-      {
-        type: 'input',
-        name: 'url',
-        message: 'Event URL (optional):'
-      }
-    ],
-    actions: [
-      {
-        type: 'modify',
-        path: 'src/_data/speaking_engagements.json',
-        pattern: /(\[)/,
-        template: '[{{#with this}}{{addEvent}}{{/with}}'
-      }
-    ]
+    return;
   });
 
   // Citation generator
@@ -246,6 +173,61 @@ export default function (plop) {
       }
     ]
   });
+
+  // Event generator (you can add other generators similarly)
+  plop.setGenerator('event', {
+    description: 'Add a new speaking engagement',
+    prompts: [
+      {
+        type: 'input',
+        name: 'title',
+        message: 'What’s the event?'
+      },
+      {
+        type: 'input',
+        name: 'date',
+        message: 'What’s the date? (YYY-MM-DD)',
+        default: helpers.getDate()
+      },
+      {
+        type: 'input',
+        name: 'location',
+        message: 'Where is it?',
+        default: 'Online'
+      },
+      {
+        type: 'input',
+        name: 'url',
+        message: 'Is there a link to the event?'
+      }
+    ],
+    actions: [
+      {
+        type: 'modify',
+        path: 'src/_data/speaking_engagements.json',
+        transform( original, data ){
+          let original_events = JSON.parse(original);
+          const new_events = [...original_events].sort((a, b) => {
+            return a.id > b.id ? 1 : -1;
+          });
+          new_events.reverse();
+
+          const event = {
+            id: new_events[0].id + 1,
+            title: data.title,
+            date: `${data.date} 00:09:00 -0800`,
+            location: data.location || "Online",
+          };
+          if (data.url) {
+            event.url = data.url;
+          }
+
+          new_events.unshift(event);
+          return JSON.stringify(new_events, null, 2);
+        }
+      }
+    ]
+  });
   
   // Link generator
   plop.setGenerator('link', {
@@ -306,108 +288,229 @@ export default function (plop) {
         type: 'add',
         path: 'src/links/{{getFilename title}}.md',
         templateFile: '_templates/link.md.hbs'
+      },
+      {
+        type: 'openFile'
       }
     ]
   });
-  
-  // Note generator
-  plop.setGenerator('note', {
-    description: 'Create a new note',
+
+  // Post generator
+  plop.setGenerator('post', {
+    description: 'Create a new blog post',
     prompts: [
       {
         type: 'input',
         name: 'title',
-        message: 'Note title/content:'
+        message: 'Title'
+      },
+      {
+        type: 'input',
+        name: 'description',
+        message: 'Description'
+      },
+      {
+        type: "input",
+        name: "twitter_text",
+        message: "Text for Twitter",
       },
       {
         type: 'checkbox',
         name: 'tags',
-        message: 'Select tags:',
-        choices: Object.keys(tags).map(tag => ({ name: tag, value: tag }))
+        message: 'Choose tags (you can add new ones later)',
+        choices: tags.map(tag => ({ name: tag, value: tag }))
       },
       {
-        type: 'confirm',
-        name: 'syndicate',
-        message: 'Syndicate to Twitter/Mastodon?',
-        default: true
-      }
+        type: "list",
+        name: "series",
+        message: "Is this part of an existing series?",
+        choices: Object.keys({ None: "", ...series}).map(tag => ({ name: series[tag], value: tag })),
+      },
+      {
+        type: "input",
+        name: "in_reply_to",
+        message: "URL of the post to reply to",
+      },
     ],
     actions: [
       {
         type: 'add',
-        path: 'src/notes/{{getFilename title}}.md',
-        templateFile: 'plop-templates/note.md.hbs'
-      }
-    ]
-  });
-  
-  // Collection generator
-  plop.setGenerator('collection', {
-    description: 'Create a new collection',
-    prompts: [
-      {
-        type: 'input',
-        name: 'name',
-        message: 'Collection name:'
+        path: 'src/posts/{{getFilename title}}.md',
+        templateFile: '_templates/post.md.hbs'
       },
       {
-        type: 'input',
-        name: 'description',
-        message: 'Collection description:'
-      }
-    ],
-    actions: [
-      {
-        type: 'add',
-        path: 'src/{{name}}/index.md',
-        templateFile: 'plop-templates/collection.md.hbs'
+        type: 'openFile',
       }
     ]
   });
-  
-  // Page generator
-  plop.setGenerator('page', {
-    description: 'Create a new page',
+
+  // Post generator
+  plop.setGenerator('talk', {
+    description: 'Create a new talk post',
     prompts: [
       {
         type: 'input',
         name: 'title',
-        message: 'Page title:'
+        message: 'Title'
       },
       {
         type: 'input',
         name: 'description',
-        message: 'Page description:'
+        message: 'Description'
       },
       {
-        type: 'confirm',
-        name: 'collection',
-        message: 'Add to a collection?',
-        default: false
+        type: "confirm",
+        name: "has_copresenter",
+        message: "Did you have a co-presenter?",
       },
       {
-        type: 'input',
-        name: 'collection_name',
-        message: 'Collection name:',
-        when: answers => answers.collection
+				type: "input",
+				name: "copresenter.name",
+				message: "What’s their name?",
+				when: ( answers ) => answers.has_copresenter,
+			},
+      {
+				type: "input",
+				name: "copresenter.url",
+				message: "What’s a good URL for them?",
+				when: ( answers ) => answers.has_copresenter,
+			},
+
+			{
+        type: 'list',
+        name: 'category',
+        message: 'What kind of talk was this?',
+        choices: [
+					"talk",
+					"keynote",
+					"workshop",
+					"guest lecture",
+					"panel",
+					"lightning-talk",
+					"webinar",
+				]
       },
       {
-        type: 'input',
-        name: 'permalink',
-        message: 'Custom permalink (leave blank for default):'
-      }
+        type: 'checkbox',
+        name: 'tags',
+        message: 'Choose tags (you can add new ones later)',
+        choices: tags.map(tag => ({ name: tag, value: tag }))
+      },
+      {
+        type: "checkbox",
+        name: "events",
+        message: "Which event(s) did you present this at?",
+        choices: helpers.getEvents(),
+      },
+      {
+        type: "input",
+        name: "date",
+        message: "When was this first given?",
+        default: (answers) => helpers.getEventDate(answers.events),
+      },
+      {
+        type: "confirm",
+        name: "has_slides",
+        message: "Do you have slides to share?",
+      },
+      {
+        type: "list",
+        name: "slides.event",
+        message: "What event is this slide deck from?",
+        choices: ( answers ) => helpers.getEvents(answers.events),
+        when: ( answers ) => answers.has_slides,
+      },
+      {
+        type: "input",
+        name: "slides.link",
+        message: "Link to talk on Noti.st",
+        when: ( answers ) => answers.has_slides,
+      },
+      {
+        type: "input",
+        name: "slides.embed",
+        message: "Embed URL",
+        when: ( answers ) => answers.has_slides,
+        default: (answers) => answers.slides.link.replace(/^(https:\/\/presentations.aaron-gustafson.com\/.+?)\/.+$/, "$1/embed")
+      },
+      {
+        type: "input",
+        name: "slides.download",
+        message: "Download URL (start with the year folder on GitHub)",
+        when: ( answers ) => answers.has_slides,
+        default: `${iso.replace(/^(\d{4}).+$/, "$1")}/`
+      },
+      {
+        type: "input",
+        name: "slides.size",
+        message: "Size of the download",
+        when: ( answers ) => answers.has_slides,
+        default: "83.5 MB"
+      },
+      {
+        type: "confirm",
+        name: "has_video",
+        message: "Is there a video?",
+      },
+      {
+        type: "list",
+        name: "video.event",
+        message: "What event is the video from?",
+        choices: ( answers ) => helpers.getEvents(answers.events),
+        when: ( answers ) => answers.has_video,
+      },
+      {
+        type: "input",
+        name: "video.link",
+        message: "Link URL",
+        when: ( answers ) => answers.has_video,
+      },
+      {
+        type: "input",
+        name: "video.embed",
+        message: "Embed URL",
+        when: ( answers ) => answers.has_video,
+      },
+      {
+        type: "input",
+        name: "video.file",
+        message: "Video File",
+        when: ( answers ) => answers.has_video,
+      },
+      {
+        type: "confirm",
+        name: "has_audio",
+        message: "Is there an audio recording?",
+      },
+      {
+        type: "list",
+        name: "audio.event",
+        message: "What event is the audio from?",
+        choices: ( answers ) => helpers.getEvents(answers.events),
+        when: ( answers ) => answers.has_audio,
+      },
+      {
+        type: "input",
+        name: "audio.file",
+        message: "Audio File",
+        when: ( answers ) => answers.has_audio,
+      },
+      {
+        type: "input",
+        name: "text_url",
+        message: "If this exists as a text version, what’s the URL?",
+      },
     ],
-    actions: data => {
-      const actions = [
-        {
-          type: 'add',
-          path: data.collection 
-            ? `src/${data.collection_name}/${helpers.getFilename(data.title, false)}.md`
-            : `src/pages/${helpers.getFilename(data.title, false)}.md`,
-          templateFile: 'plop-templates/page.md.hbs'
-        }
-      ];
-      return actions;
-    }
+    actions: [
+      {
+        type: 'add',
+        path: 'src/talks/{{getFilename title}}.md',
+        templateFile: '_templates/talk.md.hbs'
+      },
+      {
+        type: 'openFile',
+      }
+    ]
   });
+
 }

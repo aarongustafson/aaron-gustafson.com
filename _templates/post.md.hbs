@@ -8,13 +8,12 @@ twitter_text: "{{ twitter_text }}"
 {{#if in_reply_to}}
 in_reply_to: {{ in_reply_to }}
 {{/if}}
-series: "{{series}}"
-{{#if series}}
+{{#ifNotEquals series "None"}}
 series:
   name: "{{ getSeriesName series }}"
   tag: {{ series }}
   ordinal: ""
-{{/if}}
+{{/ifNotEquals}}
 hero:
   src: /i/posts/{{ getDate }}/hero.jpg
   credit: "Aaron Gustafson × Designer"

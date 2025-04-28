@@ -1,0 +1,38 @@
+---
+title: "{{ title }}"
+date: {{ getTimestamp }}
+{{#if has_copresenter}}
+with:
+  - name: "{{ copresenter.name }}"
+    url: {{ copresenter.url }}
+{{/if}}
+category: {{ category }}
+tags: [{{#each tags}}"{{this}}"{{#unless @last}}, {{/unless}}{{/each}}]
+events: [{{#each events}}"{{this}}"{{#unless @last}}, {{/unless}}{{/each}}]
+date: {{ date }}
+hero: "{{ getFilename title false }}.png"
+{{#if has_slides}}
+slides:
+  event: {{ slides.event }}
+  link: {{ slides.link }}
+  embed: {{ slides.embed }}
+  download: {{ slides.download }}
+  size: {{ slides.size }}
+{{/if}}
+{{#if has_video}}
+video:
+  event: {{ video.event }}
+  link: {{ video.url }}
+  embed: {{ video.embed }}
+{{/if}}
+{{#if has_audio}}
+audio:
+  event: {{ audio.event }}
+  file: {{ audio.file }}
+{{/if}}
+{{#if text_url}}
+text: {{ text_url }}
+{{/if}}
+---
+
+Full talk description, etc. goes here.
