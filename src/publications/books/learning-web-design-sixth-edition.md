@@ -9,7 +9,7 @@ type: "authored"
 tags: ["accessibility", "CSS", "HTML", "JavaScript", "progressive enhancement", "responsive web design", "web design", "web development", "web standards"]
 publisher: "O’Reilly"
 url: https://www.oreilly.com/library/view/learning-web-design/9781098137670/
-cover: "learning-web-design.jpg"
+cover: "learning-web-design-6th.png"
 width: "134"
 ---
 
