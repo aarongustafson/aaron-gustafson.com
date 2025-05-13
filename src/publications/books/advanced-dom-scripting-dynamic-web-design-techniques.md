@@ -3,7 +3,7 @@ title: "AdvancED DOM Scripting"
 subtitle: "Dynamic Web Design Techniques"
 author: "Jeffrey Sambells with Aaron Gustafson"
 date: 2007-08-03 13:00:00 -04:00
-type: "contributed"
+type: "authored"
 tags: [JavaScript, "progressive enhancement", accessibility]
 publisher: "Friends of ED"
 url: "https://www.apress.com/us/book/9781590598566"

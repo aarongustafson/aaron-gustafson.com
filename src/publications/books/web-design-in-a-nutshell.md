@@ -3,7 +3,7 @@ title: "Web Design in a Nutshell"
 edition: "Third"
 author: "Jennifer Robbins"
 date: 2006-03-06 12:00:00 -05:00
-type: "contributed"
+type: "authored"
 tags: [CSS, JavaScript, browsers]
 publisher: "O’Reilly"
 url: "https://www.oreilly.com/library/view/web-design-in/0596009879/"

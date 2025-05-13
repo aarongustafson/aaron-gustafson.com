@@ -1,9 +1,8 @@
-
 ---
 title: "Learning Web Design"
 subtitle: "A Beginners Guide to HTML, CSS, JavaScript, and Web Graphics"
 edition: "Sixth"
-date: 2025-06-01 00:00:00 +00:00
+date: 2025-05-01 00:00:00 +00:00
 author: "Jennifer Niederst Robbins &amp; Aaron Gustafson"
 type: "authored"
 tags: ["accessibility", "CSS", "HTML", "JavaScript", "progressive enhancement", "responsive web design", "web design", "web development", "web standards"]
