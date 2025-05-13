@@ -1,34 +1,32 @@
+@use "../helpers/_helpers" as *;
+
 /*------------------------------------*\
     Pagination
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+.pagination {
+  
+  @include rem( margin-bottom, $default-spacing );
+  text-align: center;
+  user-select: none;
 
-  .pagination {
-    
-    @include rem( margin-bottom, $default-spacing );
-    text-align: center;
-    user-select: none;
+  &__pages {
+    @include rem( margin, 0 $default-spacing );
+  }
+
+  @supports (margin-block: 1em) {
+    margin-bottom: unset;
+    @include rem( margin-block-end, $default-spacing, false );
 
     &__pages {
-      @include rem( margin, 0 $default-spacing );
+      margin: unset;
+      @include rem( margin-inline, $default-spacing, false );
     }
-
-		@supports (margin-block: 1em) {
-			margin-bottom: unset;
-			@include rem( margin-block-end, $default-spacing, false );
-
-			&__pages {
-				margin: unset;
-				@include rem( margin-inline, $default-spacing, false );
-			}
-		}
-
   }
 
 }
 
-@include breakup-breakpoint( "medium" ) {
+@media screen and (min-width: #{$bp-medium-em}) {
 
   .pagination {
     margin-left: 33%;

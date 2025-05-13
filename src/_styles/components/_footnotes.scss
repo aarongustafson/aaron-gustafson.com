@@ -1,61 +1,59 @@
+@use "../helpers/_helpers" as *;
+
 /*------------------------------------*\
 		Footnotes
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+a.footnote {
+    
+    display: inline-block;
+    padding: .5em 1em;
+    margin: -.5em -1em;
 
-		a.footnote {
-				
-				display: inline-block;
-				padding: .5em 1em;
-				margin: -.5em -1em;
+    @supports (margin-block: 1em) {
+      @include unset( padding margin );
+      padding-block: .5em;
+      padding-inline: 1em;
+      margin-block: -.5em;
+      margin-inline: -1em;
+    }
 
-				@supports (margin-block: 1em) {
-					@include unset( padding margin );
-					padding-block: .5em;
-					padding-inline: 1em;
-					margin-block: -.5em;
-					margin-inline: -1em;
-				}
+    &-ref:target {
+      outline: 0;
+    }
 
-				&-ref:target {
-					outline: 0;
-				}
+  }
 
-			}
+.footnotes {
+    
+  ol {
+    @include rem( font-size, $font-size-small );
+    
+    margin-left: 0;
+    padding-left: 2em;
 
-		.footnotes {
-				
-			ol {
-				@include rem( font-size, $font-size-small );
-				
-				margin-left: 0;
-				padding-left: 2em;
+    @supports (margin-block: 1em) {
+      @include unset( margin-left padding-left );
+      margin-inline-start: 0;
+      padding-inline-start: 2em;
+    }
+  }
+  
+  a[rev=footnote] {
+    margin-left: .5em;
 
-				@supports (margin-block: 1em) {
-					@include unset( margin-left padding-left );
-					margin-inline-start: 0;
-					padding-inline-start: 2em;
-				}
-			}
-			
-			a[rev=footnote] {
-				margin-left: .5em;
+    @supports (margin-block: 1em) {
+      margin-left: unset;
+      margin-inline-start: .5em;
+    }
+  }
 
-				@supports (margin-block: 1em) {
-					margin-left: unset;
-					margin-inline-start: .5em;
-				}
-			}
+  .footnote-item + .footnote-item {
+    @include rem(margin-top, $default-spacing);
 
-			.footnote-item + .footnote-item {
-				@include rem(margin-top, $default-spacing);
-
-				@supports (margin-block: 1em) {
-					@include rem(margin-block-start, $default-spacing);
-				}
-			}
-				
-		}
-
+    @supports (margin-block: 1em) {
+      @include rem(margin-block-start, $default-spacing);
+    }
+  }
+    
 }

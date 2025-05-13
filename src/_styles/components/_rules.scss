@@ -1,19 +1,19 @@
+@use "../helpers/_helpers" as *;
+
 /*------------------------------------*\
 		Rules
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
-	.rule {
-		@include rem( max-width, 220 );
+.rule {
+  @include rem( max-width, 220 );
 
-		@supports (max-inline-size: 1em) {
-			max-width: unset;
-			@include rem( max-inline-size, 220 );
-		}
-	}
+  @supports (max-inline-size: 1em) {
+    max-width: unset;
+    @include rem( max-inline-size, 220 );
+  }
 }
 
-@include breakup-breakpoint( "medium" ) {
+@media screen and (min-width: #{$bp-medium-em}) {
 	.rule--optional {
 		display: none;
 	}

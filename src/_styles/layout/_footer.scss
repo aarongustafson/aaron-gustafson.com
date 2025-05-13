@@ -1,48 +1,46 @@
+@use "../helpers/_helpers" as *;
+
 /*------------------------------------*\
 		Footer
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+.footer {
 
-	.footer {
+  @include rem( font-size, $font-size-small );
+  text-align: center;
 
-		@include rem( font-size, $font-size-small );
-		text-align: center;
+  @include rem( padding-bottom, $default-spacing );
 
-		@include rem( padding-bottom, $default-spacing );
+  @supports (margin-block: 1em) {
+    padding-bottom: unset;
+    @include rem( padding-block-end, $default-spacing, false );
+  }
 
-		@supports (margin-block: 1em) {
-			padding-bottom: unset;
-			@include rem( padding-block-end, $default-spacing, false );
-		}
+  p {
+      margin: 0;
+  }
 
-		p {
-				margin: 0;
-		}
+  &::before {
+    content: "";
 
-		&::before {
-			content: "";
+    display: block;
+    border: 0;
+    border-top: 1px solid $color-rule;
+    height: 0;
+    @include rem( margin, $default-spacing auto );
 
-			display: block;
-			border: 0;
-			border-top: 1px solid $color-rule;
-			height: 0;
-			@include rem( margin, $default-spacing auto );
-
-			@supports (margin-block: 1em) {
-				@include unset( margin border-top height );
-				@include rem( margin-block, $default-spacing, false );
-				margin-inline: auto;
-				border-block-start: 1px solid $color-rule;
-				block-size: 0;
-			}
-		}
-
-	}
+    @supports (margin-block: 1em) {
+      @include unset( margin border-top height );
+      @include rem( margin-block, $default-spacing, false );
+      margin-inline: auto;
+      border-block-start: 1px solid $color-rule;
+      block-size: 0;
+    }
+  }
 
 }
 
-@include breakup-breakpoint( "full" ) {
+@media screen and (min-width: #{$bp-full-em}) {
 
 	.footer .layout-container {
 		max-width: 100%;

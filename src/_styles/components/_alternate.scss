@@ -1,8 +1,10 @@
+@use "../helpers/_helpers" as *;
+
  /*------------------------------------*\
 		Buttons
 \*------------------------------------*/
 
-@include breakup-breakpoint( "medium" ) {
+@media screen and (min-width: #{$bp-medium-em}) {
 
 		h1 + .alternate {
 				
@@ -24,7 +26,7 @@
 		
 }
 
-@include breakup-breakpoint( "full" ) {
+@media screen and (min-width: #{$bp-full-em}) {
 
 		h1 + .alternate {
 				right: 0;

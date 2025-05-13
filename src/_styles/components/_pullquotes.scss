@@ -1,64 +1,62 @@
+@use "../helpers/_helpers" as *;
+
 /*------------------------------------*\
 		Pullquotes
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+.quotable {
+  // unhide
+  display: block;
+  font-size: 1.25em;
 
-	.quotable {
-		// unhide
-		display: block;
-		font-size: 1.25em;
+  @include rem( margin, 33 0 $default-spacing );
+  @include rem( padding, $default-spacing 0 );
+  border: solid $color-grey-light;
+  border-width: 2px 0;
 
-		@include rem( margin, 33 0 $default-spacing );
-		@include rem( padding, $default-spacing 0 );
-		border: solid $color-grey-light;
-		border-width: 2px 0;
+  position: relative;
+  margin-right: -25%;
 
-		position: relative;
-		margin-right: -25%;
+  @supports (margin-block: 1em) {
+    @include unset( margin padding border-width margin-right );
+    @include rem( margin-block, 33 $default-spacing, false );
+    margin-inline: 0 -25%;
+    @include rem( padding-block, $default-spacing, false );
+    padding-inline: 0;
+    border-block-width: 2px;
+    border-inline-width: 0;
+  }
 
-		@supports (margin-block: 1em) {
-			@include unset( margin padding border-width margin-right );
-			@include rem( margin-block, 33 $default-spacing, false );
-			margin-inline: 0 -25%;
-			@include rem( padding-block, $default-spacing, false );
-			padding-inline: 0;
-			border-block-width: 2px;
-			border-inline-width: 0;
-		}
+  p::first-letter {
+    text-transform: capitalize;
+  }
 
-		p::first-letter {
-			text-transform: capitalize;
-		}
+  &::before,
+  &::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    right:0;
+    text-align: center;
+    height: .9em;
+    font-size: 2em;
 
-		&::before,
-		&::after {
-			display: block;
-			position: absolute;
-			left: 0;
-			right:0;
-			text-align: center;
-			height: .9em;
-			font-size: 2em;
-
-			@supports (margin-block: 1em) {
-				@include unset( left right height );
-				inset-inline: 0;
-				inset-block-start: -.5em;
-				block-size: .9em;
-			}
-		}
-		&::before {
-			content: '\201C';
-		}
-		&::after {
-			content: '\201D';
-		}
-	}
-
+    @supports (margin-block: 1em) {
+      @include unset( left right height );
+      inset-inline: 0;
+      inset-block-start: -.5em;
+      block-size: .9em;
+    }
+  }
+  &::before {
+    content: '\201C';
+  }
+  &::after {
+    content: '\201D';
+  }
 }
 
-@include breakup-breakpoint( "medium" ) {
+@media screen and (min-width: #{$bp-medium-em}) {
 
 	.quotable {
 		float: right;

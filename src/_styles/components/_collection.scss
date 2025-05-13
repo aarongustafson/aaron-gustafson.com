@@ -1,3 +1,5 @@
+@use "../helpers/_helpers" as *;
+
 .collection__summary {
 	@include rem( margin-bottom, $default-spacing );
 

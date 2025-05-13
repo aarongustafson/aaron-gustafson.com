@@ -1,7 +1,9 @@
+@use "../helpers/_helpers" as *;
+
 /*------------------------------------*\
 		Print Layout stuff
 \*------------------------------------*/
-@include breakup-breakpoint( "print" ) {
+@media print {
 		
 		@page {
 			margin: .75in;

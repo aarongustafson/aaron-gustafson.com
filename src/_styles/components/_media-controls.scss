@@ -1,101 +1,98 @@
+@use "../helpers/_helpers" as *;
+
 /*------------------------------------*\
 		Listing
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+.media-controls {
 
-	.media-controls {
+  p {
+    @include rem( margin-top, 6 );
 
-		p {
-			@include rem( margin-top, 6 );
+    @supports (margin-block: 1em) {
+      margin-top: unset;
+      @include rem( margin-block-start, 6, false );
+    }
+  }
 
-			@supports (margin-block: 1em) {
-				margin-top: unset;
-				@include rem( margin-block-start, 6, false );
-			}
-		}
+  &__buttons,
+  &__speed {
+    display: flex;
+  }
 
-		&__buttons,
-		&__speed {
-			display: flex;
-		}
+  &__button {
 
-		&__button {
+    border-color: inherit;
+    cursor: pointer;
+    margin: 0 .25em 0 0;
 
-			border-color: inherit;
-			cursor: pointer;
-			margin: 0 .25em 0 0;
+    @supports (margin-block: 1em) {
+      margin: 0;
+      margin-inline-end: .25em;
+    }
+    
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-white;
+    }
 
-			@supports (margin-block: 1em) {
-				margin: 0;
-				margin-inline-end: .25em;
-			}
-			
-			&:hover,
-			&:active,
-			&:focus {
-				color: $color-white;
-			}
+    &:disabled,
+    &:disabled:hover,
+    &:disabled:active {
+      background: $color-grey-light;
+      color: $color-grey;
+      cursor: not-allowed;
+    }
 
-			&:disabled,
-			&:disabled:hover,
-			&:disabled:active {
-				background: $color-grey-light;
-				color: $color-grey;
-				cursor: not-allowed;
-			}
+    &:before {
+      content: '';
+      display: block;
+      flex-shrink: 0;
+    }
 
-			&:before {
-				content: '';
-				display: block;
-				flex-shrink: 0;
-			}
+    &--play:before {
+      width: 0;
+      border: .5em solid transparent;
+      border-left: .75em solid;
+      border-right: 0;
 
-			&--play:before {
-				width: 0;
-				border: .5em solid transparent;
-				border-left: .75em solid;
-				border-right: 0;
+      @supports (margin-block: 1em) {
+        @include unset( border-left border-right width );
+        border-inline-start: .75em solid;
+        border-inline-end: 0;
+        inline-size: 0;
+      }
+    }
 
-				@supports (margin-block: 1em) {
-					@include unset( border-left border-right width );
-					border-inline-start: .75em solid;
-					border-inline-end: 0;
-					inline-size: 0;
-				}
-			}
+    &--pause:before {
+      width: 2px;
+      border: 2px solid;
+      height: 0.9em;
+      line-height: 0;
+      border-top-width: 0;
+      border-bottom-width: 0;
 
-			&--pause:before {
-				width: 2px;
-				border: 2px solid;
-				height: 0.9em;
-				line-height: 0;
-				border-top-width: 0;
-				border-bottom-width: 0;
+      @supports (margin-block: 1em) {
+        @include unset( border-top-width border-bottom-width width height );
+        border-block-width: 0;
+        inline-size: 2px;
+        block-size: 0.9em;
+      }
+    }
 
-				@supports (margin-block: 1em) {
-					@include unset( border-top-width border-bottom-width width height );
-					border-block-width: 0;
-					inline-size: 2px;
-					block-size: 0.9em;
-				}
-			}
+  }
 
-		}
+  &__speed input {
+    width: auto;
+    margin: 0 0 0 .5em;
 
-		&__speed input {
-			width: auto;
-			margin: 0 0 0 .5em;
-
-			@supports (margin-block: 1em) {
-				margin: 0;
-				margin-inline-start: .5em;
-				width: unset;
-				inline-size: auto;
-			}
-		}
-
-	}
+    @supports (margin-block: 1em) {
+      margin: 0;
+      margin-inline-start: .5em;
+      width: unset;
+      inline-size: auto;
+    }
+  }
 
 }
-

@@ -1,17 +1,15 @@
+@use "../helpers/_helpers" as *;
+
 /*------------------------------------*\
 		Lightbox
 		TODO: swap for <dialog>
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
-	
-	.lightbox {
-		display: none;
-	}
-
+.lightbox {
+  display: none;
 }
 
-@include breakup-breakpoint('medium') {
+@media screen and (min-width: #{$bp-medium-em}) {
 
 	.lightbox {
 		

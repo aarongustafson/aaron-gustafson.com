@@ -1,30 +1,31 @@
+@use "../helpers/_helpers" as *;
+@use "../vendors/danielguillan/quantity-queries";
+
 /*------------------------------------*\
 		Speaking Engagements
 \*------------------------------------*/
+@use 'sass:color';
 
 .speaking-engagements {
 
 	// Flexbox!
 	.listing--events {
 
-		@include breakup-breakpoint('global') {
+    // Flexbox!
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    
+    @include rem( margin, 20 auto 0 );
 
-			// Flexbox!
-			display: flex;
-			flex-wrap: wrap;
-			align-items: stretch;
-			
-			@include rem( margin, 20 auto 0 );
+    @supports (margin-block: 1em) {
+      margin: unset;
+      @include rem( margin-block, 20 0, false );
+      margin-inline: auto;
+    }
 
-			@supports (margin-block: 1em) {
-				margin: unset;
-				@include rem( margin-block, 20 0, false );
-				margin-inline: auto;
-			}
 
-		}
-
-		@include breakup-breakpoint('full') {
+		@media screen and (min-width: #{$bp-full-em}) {
 			@include rem( margin, 20 -80 0 );
 
 			@supports (margin-block: 1em) {
@@ -37,96 +38,89 @@
 	}
 
 
-	@include breakup-breakpoint('global') {
+  .listing__item__meta {
+    color: $color-off-white;
 
-		.listing__item__meta {
-			color: $color-off-white;
-
-			html.dark-mode & {
-				color: $color-white;
-			}
-		}
-		
-		//.listing__extra {
-		//
-		//  border-top: 1px solid;
-		//  margin: 20px -20px -20px;
-		//
-		//  &__title {
-		//    padding: 10px 20px;
-		//    transition: background-color .25s ease-in-out;
-		//
-		//    &:hover,
-		//    &:focus {
-		//      background-color: lighten($color-dark-teal,10%);
-		//    }
-		//  }
-		//
-		//  &[open] {
-		//    padding: 0 20px 20px;
-		//  }
-		//
-		//  &[open] .listing__extra__title {
-		//    background-color: lighten($color-dark-teal,10%);
-		//    margin: 0 -20px 20px;
-		//  }
-		//}
-
-	}
+    html.dark-mode & {
+      color: $color-white;
+    }
+  }
+  
+  //.listing__extra {
+  //
+  //  border-top: 1px solid;
+  //  margin: 20px -20px -20px;
+  //
+  //  &__title {
+  //    padding: 10px 20px;
+  //    transition: background-color .25s ease-in-out;
+  //
+  //    &:hover,
+  //    &:focus {
+  //      background-color: color.scale($color-dark-teal, $lightness: 10%);
+  //    }
+  //  }
+  //
+  //  &[open] {
+  //    padding: 0 20px 20px;
+  //  }
+  //
+  //  &[open] .listing__extra__title {
+  //    background-color: color.scale($color-dark-teal, $lightness: 10%);
+  //    margin: 0 -20px 20px;
+  //  }
+  //}
 
 	.event {
 
-		@include breakup-breakpoint('global') {
+    background: $color-green-dark;
+    color: $color-off-white;
+    text-shadow: 1px 1px 1px $color-green-dark;
 
-			background: $color-green-dark;
-			color: $color-off-white;
-			text-shadow: 1px 1px 1px $color-green-dark;
+    box-sizing: border-box;
+    @include rem( padding, 20 );
+    @include rem( margin, 0 0 20 0 );
+    flex: 0 0 100%;
 
-			box-sizing: border-box;
-			@include rem( padding, 20 );
-			@include rem( margin, 0 0 20 0 );
-			flex: 0 0 100%;
+    // not needed without <details>
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: space-between;
 
-			// not needed without <details>
-			//display: flex;
-			//flex-direction: column;
-			//justify-content: space-between;
+    position: relative;
+    overflow: hidden;
 
-			position: relative;
-			overflow: hidden;
+    @supports (margin-block: 1em) {
+      margin: unset;
+      @include rem( margin-block, 0 20, false );
+    }
 
-			@supports (margin-block: 1em) {
-				margin: unset;
-				@include rem( margin-block, 0 20, false );
-			}
+    html & a {
+      color: $color-white;
+      text-decoration: none;
+    }
 
-			html & a {
-				color: $color-white;
-				text-decoration: none;
-			}
+    .listing__item__title,
+    .listing__item__meta {
+      position: relative;
+      z-index: 1;
+    }
 
-			.listing__item__title,
-			.listing__item__meta {
-				position: relative;
-				z-index: 1;
-			}
+    .listing__item__title {
 
-			.listing__item__title {
+      @include rem( font-size, 18 );
+      line-height: 1.1;
+      @include rem( margin-bottom, 12 );
 
-				@include rem( font-size, 18 );
-				line-height: 1.1;
-				@include rem( margin-bottom, 12 );
+      @supports (margin-block: 1em) {
+        margin-bottom: unset;
+        @include rem( margin-block-end, 12, false );
+      }
 
-				@supports (margin-block: 1em) {
-					margin-bottom: unset;
-					@include rem( margin-block-end, 12, false );
-				}
+      &--future .listing__item__title {
+        @include rem( font-size, 24 );
+      }
 
-				&--future .listing__item__title {
-					@include rem( font-size, 24 );
-				}
-
-			}
 
 			&__location-picture {
 
@@ -188,20 +182,20 @@
 		}
 
 		html.dark-mode & {
-			background: darken( $color-green-light, 20 );
+			background: color.scale( $color-green-light, $lightness: -20% );
 			
 			a {
-				text-shadow: 1px 1px 1px darken( $color-green-light, 50 );
+				text-shadow: 1px 1px 1px color.scale( $color-green-light, $lightness: -50% );
 			}
 
 			&--future {
 				border-color: $color-teal;
-				background: darken( $color-teal, 20 );
+				background: color.scale( $color-teal, $lightness: -20% );
 			}
 		}
 
 
-		@include breakup-breakpoint('small') {
+		@media screen and (min-width: #{$bp-small-em}) {
 
 			// 2 events per row, 20px gutter
 			flex: 0 0 calc( 50% - 1.25rem / 2 );
@@ -257,7 +251,7 @@
 
 		}
 
-		@include breakup-breakpoint('medium') {
+		@media screen and (min-width: #{$bp-medium-em}) {
 
 			/* 1/3 width with a 20px gap (fudged) */
 			flex: 0 0 calc( 100% / 3 - 0.875rem );
@@ -286,7 +280,7 @@
 			&--future {
 
 				// Only the lonely
-				@include exactly(1) {
+				@include quantity-queries.exactly(1) {
 						flex: 0 0 100%;
 						margin-left: 0;
 

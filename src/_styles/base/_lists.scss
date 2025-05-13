@@ -1,81 +1,80 @@
+@use "../helpers/_helpers" as *;
+
 /*------------------------------------*\
 Lists
 \*------------------------------------*/
 
 @use 'sass:math';
 
-@include breakup-breakpoint( "global" ) {
-	
-	ol,
-	ul {
-		line-height: $line-height-default;
-		@include rem( margin-left, $default-spacing);
-		padding-left: 0;
+ol,
+ul {
+  line-height: $line-height-default;
+  @include rem( margin-left, $default-spacing);
+  padding-left: 0;
 
-		@supports (margin-block: 1em) {
-			@include unset( margin-left padding-left );
-			@include rem( margin-inline-start, $default-spacing, false );
-			padding-inline-start: 0;
-		}
-		
-		nav & {
-			@include breakup-placeholder( delist );
-			margin: 0;
-			
-			li {
-				margin: 0;
-			}
-		}
-	}
-	
-	li + li {
-		@include rem( margin-top, math.div( $default-spacing, 4 ) );
-
-		@supports (margin-block: 1em) {
-			margin-top: unset;
-			@include rem( margin-block-start, math.div( $default-spacing, 4 ), false );
-		}
-	}
-	
-	dl {
-		
-		margin-left: auto;
-		margin-right: auto;
-		@include rem( padding, 0 $default-spacing );
-		@include rem( max-width, 700 );
-
-		@supports (margin-block: 1em) {
-			@include unset( margin-left margin-right padding max-width );
-			margin-inline: auto;
-			padding-block: 0;
-			@include rem( padding-inline, $default-spacing, false );
-			@include rem( max-width, 700, false );
-		}
-		
-		dt {
-			font-weight: bold;
-		}
-		
-		dd {
-			margin-left: 0;
-			margin-top: 0;
-			padding-left: 0;
-			
-			break-inside: avoid;
-
-			@supports (margin-block: 1em) {
-				@include unset( margin-left margin-top padding-left );
-				margin-block-start: 0;
-				margin-inline-start: 0;
-				padding-inline-start: 0;
-			}
-		}
-		
-	}
-	
+  @supports (margin-block: 1em) {
+    @include unset( margin-left padding-left );
+    @include rem( margin-inline-start, $default-spacing, false );
+    padding-inline-start: 0;
+  }
+  
+  nav & {
+    @extend %delist;
+    margin: 0;
+    
+    li {
+      margin: 0;
+    }
+  }
 }
 
-@include breakup-breakpoint( "full" ) {
+li + li {
+  @include rem( margin-top, math.div( $default-spacing, 4 ) );
+
+  @supports (margin-block: 1em) {
+    margin-top: unset;
+    @include rem( margin-block-start, math.div( $default-spacing, 4 ), false );
+  }
+}
+
+dl {
+  
+  margin-left: auto;
+  margin-right: auto;
+  @include rem( padding, 0 $default-spacing );
+  @include rem( max-width, 700 );
+
+  @supports (margin-block: 1em) {
+    @include unset( margin-left margin-right padding max-width );
+    margin-inline: auto;
+    padding-block: 0;
+    @include rem( padding-inline, $default-spacing, false );
+    @include rem( max-width, 700, false );
+  }
+  
+  dt {
+    font-weight: bold;
+  }
+  
+  dd {
+    margin-left: 0;
+    margin-top: 0;
+    padding-left: 0;
+    
+    break-inside: avoid;
+
+    @supports (margin-block: 1em) {
+      @include unset( margin-left margin-top padding-left );
+      margin-block-start: 0;
+      margin-inline-start: 0;
+      padding-inline-start: 0;
+    }
+  }
+  
+}
+
+
+@media screen and (min-width: #{$bp-full-em}) {
 	
 	// Hanging!
 	ol,

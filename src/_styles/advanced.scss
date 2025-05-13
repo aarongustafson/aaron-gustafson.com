@@ -4,14 +4,8 @@
 
 @charset "UTF-8";
 
-@import "vendors/_vendors";
-
-// Breakup Configuration
-// https://github.com/BPScott/breakup
-$breakup-included-blocks: ("tiny" "small" "medium" "full");
-
-@import "helpers/_helpers";
-@import "base/_base";
-@import "layout/_layout";
-@import "components/_components";
-@import "pages/_pages";
+@use "vendors/_vendors";
+@use "base/_base";
+@use "layout/_layout";
+@use "components/_components";
+@use "pages/_pages";

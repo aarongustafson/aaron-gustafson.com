@@ -4,8 +4,8 @@
   (use sparingly)
 \*------------------------------------*/
 
-@import "home";
-@import "notebook";
-@import "speaking-engagements";
-@import "appearances";
-@import "tag";
+@use "home";
+@use "notebook";
+@use "speaking-engagements";
+@use "appearances";
+@use "tag";

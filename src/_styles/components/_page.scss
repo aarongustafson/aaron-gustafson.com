@@ -1,36 +1,35 @@
+@use "../helpers/_helpers" as *;
+
 /*------------------------------------*\
 		Page
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+.page {
 
-	.page {
+  &__title {
+    @include rem( margin-bottom, $default-spacing );
 
-		&__title {
-			@include rem( margin-bottom, $default-spacing );
+    @supports (margin-block: 1em) {
+      margin-bottom: unset;
+      @include rem( margin-block-end, $default-spacing, false );
+    }
+  }
+  
+  &__footer {
+    border-top: 1px solid $color-rule;
+    @include rem( padding-top, $default-spacing );
 
-			@supports (margin-block: 1em) {
-				margin-bottom: unset;
-				@include rem( margin-block-end, $default-spacing, false );
-			}
-		}
-		
-		&__footer {
-			border-top: 1px solid $color-rule;
-			@include rem( padding-top, $default-spacing );
+    @supports (margin-block: 1em) {
+      @include unset( border-top padding-top );
+      border-block-start: 1px solid $color-rule;
+      @include rem( padding-block-start, $default-spacing, false );
+    }
+  }
 
-			@supports (margin-block: 1em) {
-				@include unset( border-top padding-top );
-				border-block-start: 1px solid $color-rule;
-				@include rem( padding-block-start, $default-spacing, false );
-			}
-		}
-
-	}
-	
 }
+	
 
-@include breakup-breakpoint( "medium" ) {
+@media screen and (min-width: #{$bp-medium-em}) {
 
 	@supports (display:flex) {
 

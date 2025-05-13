@@ -4,6 +4,10 @@
 
 .publications {
 
+  .subsection__header {
+    @include rem( margin-block-start, 40 );
+  }
+
 	// Flexbox!
 	.listing--books {
 

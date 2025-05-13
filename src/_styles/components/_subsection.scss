@@ -1,52 +1,51 @@
+@use "../helpers/_helpers" as *;
+
 /*------------------------------------*\
 		Subsections
 \*------------------------------------*/
 
 .subsection {
 
-	@include breakup-breakpoint( "global" ) {
+  &__header {
 
-		&__header {
+    @include rem( font-size, 18 );
+    text-align: center;
+    text-transform: uppercase;
 
-			@include rem( font-size, 18 );
-			text-align: center;
-			text-transform: uppercase;
+    &::before,
+    &::after {
+      font-size: 0.75em;
+      display: block;
+    }
 
-			&::before,
-			&::after {
-				font-size: 0.75em;
-				display: block;
-			}
+    &::before {
+      content: '\2726\00A0\2726\00A0\2726';
+      @include rem( margin, 0 0 $table-spacing );
 
-			&::before {
-				content: '\2726\00A0\2726\00A0\2726';
-				@include rem( margin, 0 0 $table-spacing );
+      @supports (margin-block: 1em) {
+        margin: 0;
+        @include rem( margin-block-end, $table-spacing, false );
+      }
+    }
 
-				@supports (margin-block: 1em) {
-					margin: 0;
-					@include rem( margin-block-end, $table-spacing, false );
-				}
-			}
+    &::after {
+      content: '\2726\00A0\2726\00A0\2726';
+      @include rem( margin, $table-spacing 0 0 );
 
-			&::after {
-				content: '\2726\00A0\2726\00A0\2726';
-				@include rem( margin, $table-spacing 0 0 );
+      @supports (margin-block: 1em) {
+        margin: 0;
+        @include rem( margin-block-start, $table-spacing, false );
+      }
+    }
 
-				@supports (margin-block: 1em) {
-					margin: 0;
-					@include rem( margin-block-start, $table-spacing, false );
-				}
-			}
+    b {
+      white-space: nowrap;
+    }
 
-			b {
-				white-space: nowrap;
-			}
+  }
 
-		}
 
-	}
-
-	@include breakup-breakpoint( "medium" ) {
+	@media screen and (min-width: #{$bp-medium-em}) {
 		&__header::before,
 		&__header::after {
 			display: inline;

@@ -3,7 +3,8 @@
 //
 // A tool for defining breakpoints and conditionally loading them.
 //////////////////////////////////////////////////////////////////
-
+@use 'sass:list';
+@use "../helpers/_helpers" as *;
 
 // Global Variables
 //
@@ -38,7 +39,7 @@ $breakup-naked: false !default;
 $breakup-breakpoints-allow-naked: () !default;
 $breakup-default-breakpoint: "global";
 $breakup-current-breakpoint: $breakup-default-breakpoint;
-$breakup-placeholders: () !default;
+$breakup- () !default;
 
 
 
@@ -52,7 +53,7 @@ $breakup-placeholders: () !default;
 //  ), 'key1', 1) => (key1 value1)
 @function breakup-list-key-search($haystack, $needle, $offset: 1) {
     @each $haystack-item in $haystack {
-        @if $needle == nth($haystack-item, $offset) {
+        @if $needle == list.nth($haystack-item, $offset) {
             @return $haystack-item;
         }
     }
@@ -86,7 +87,7 @@ $breakup-placeholders: () !default;
 // $list: The list to search through
 // $value: The value to search for
 @function breakup-index($list, $value) {
-    $index-result: index($list, $value);
+    $index-result: list.index($list, $value);
     @if $index-result {
         @return $index-result;
     }
@@ -110,7 +111,7 @@ $breakup-placeholders: () !default;
         @return null;
     }
 
-    $breakup-breakpoints: append($breakup-breakpoints, ($breakpoint-name $value));
+    $breakup-breakpoints: list.append($breakup-breakpoints, ($breakpoint-name $value));
     @return null;
 }
 
@@ -166,11 +167,11 @@ $breakup-placeholders: () !default;
         // overwrite the global variable
         $breakup-current-breakpoint: $breakpoint-name !global;
         
-        $declaration: nth($breakpoint, 2);
+        $declaration: list.nth($breakpoint, 2);
 
         // Handle Sass treating a list containing a single item as a single item
         $allow-naked-list: $breakup-breakpoints-allow-naked;
-        @if length($allow-naked-list) == 1 {
+        @if list.length($allow-naked-list) == 1 {
             $allow-naked-list: $breakup-breakpoints-allow-naked, null;
         }
 
@@ -209,7 +210,7 @@ $breakup-placeholders: () !default;
 
 
 
-// Generate scoped placeholders if they do not exist.
+// Generate scoped if they do not exist.
 //
 // $name:    The placeholder name to reserve (or use)
 @mixin breakup-create-placeholder( $name )
@@ -217,11 +218,11 @@ $breakup-placeholders: () !default;
     // Ensure the breakpoints contain the default
     $create-default: true;
 
-    // If placeholder doesn't exist yet in `$breakup-placeholders` list
-    @if not index( $breakup-placeholders, $name )
+    // If placeholder doesn't exist yet in `$breakup- list
+    @if not list.index( $breakup- $name )
     {
         // Store its name
-        $breakup-placeholders: append( $breakup-placeholders, $name ) !global;
+        $breakup- list.append( $breakup- $name ) !global;
         
         // At root level
         @at-root

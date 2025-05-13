@@ -4,13 +4,13 @@
 \*------------------------------------*/
 
 // Breakup
-@import "breakup/breakup";
+// @use "breakup/breakup";
 
 // Quantity Queries
-@import "danielguillan/quantity-queries";
+@use "danielguillan/quantity-queries";
 
 // Prism
-@import "prism/a11y-dark";
+@use "prism/a11y-dark";
 
 // YouTube
-@import "lite-youtube-embed/lite-youtube-embed";
+@use "lite-youtube-embed/lite-youtube-embed";

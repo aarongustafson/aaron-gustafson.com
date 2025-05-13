@@ -1,95 +1,94 @@
+@use "../helpers/_helpers" as *;
+
 /*------------------------------------*\
 		Text-level semantics
 \*------------------------------------*/
 
 @use 'sass:math';
 
-@include breakup-breakpoint( "global" ) {
-
-	// Abbreviations
-	abbr {
-		cursor: help;
-		text-decoration: inherit;
-		border: 0;
-		&[title] {
-			border: 0;
-		}
-	}
+// Abbreviations
+abbr {
+  cursor: help;
+  text-decoration: inherit;
+  border: 0;
+  &[title] {
+    border: 0;
+  }
+}
 
 
-	// Mark
-	mark {
-		background: transparent;
-		color: $color-text;
-		color: inherit;
-		font-weight: normal;
-		font-weight: inherit;
-		font-style: normal;
-		font-style: inherit;
-	}
-	
-	// Pseudo-semantics
-	b {
-		font-weight: inherit;
-	}
-	i {
-		font-style: inherit;
-	}
+// Mark
+mark {
+  background: transparent;
+  color: $color-text;
+  color: inherit;
+  font-weight: normal;
+  font-weight: inherit;
+  font-style: normal;
+  font-style: inherit;
+}
+
+// Pseudo-semantics
+b {
+  font-weight: inherit;
+}
+i {
+  font-style: inherit;
+}
 
 
-	// Superscript & subscript
-	sub, sup {
-		@include rem( font-size, $font-size-tiny );
-		font-style: inherit;
-		font-weight: inherit;
-		position: relative;
-	}
-	sub {
-		bottom: -1em;
+// Superscript & subscript
+sub, sup {
+  @include rem( font-size, $font-size-tiny );
+  font-style: inherit;
+  font-weight: inherit;
+  position: relative;
+}
+sub {
+  bottom: -1em;
 
-		@supports (margin-block: 1em) {
-			bottom: unset;
-			inset-block-end: -1em;
-		}
-	}
-	sup {
-		bottom: 1em;
+  @supports (margin-block: 1em) {
+    bottom: unset;
+    inset-block-end: -1em;
+  }
+}
+sup {
+  bottom: 1em;
 
-		@supports (margin-block: 1em) {
-			bottom: unset;
-			inset-block-end: 1em;
-		}
-	}
-
-
-	time {
-			white-space: nowrap;
-	}
-
-	small {
-		@include rem( font-size, $font-size-tiny );
-		font-style: italic;
-		display: block;
-	}
+  @supports (margin-block: 1em) {
+    bottom: unset;
+    inset-block-end: 1em;
+  }
+}
 
 
-	// Hidden
-	.hidden {
-		@include breakup-placeholder( hidden );
-	}
+time {
+    white-space: nowrap;
+}
 
-	// :target
-	:target {
-		@include big-focus();
-	}
+small {
+  @include rem( font-size, $font-size-tiny );
+  font-style: italic;
+  display: block;
+}
 
-	.footnote-ref > a:target,
-	html.dark-mode .footnote-ref > a:target {
-		background-color: inherit;
-		outline: 0;
-	}
 
-	*:has(> .footnote-ref > a:target) {
-    @include big-focus();
-	}
+// Hidden
+.hidden {
+  @extend %hidden;
+}
+
+// :target
+:target {
+  @include big-focus();
+}
+
+.footnote-ref > a:target,
+html.dark-mode .footnote-ref > a:target {
+  background-color: inherit;
+  outline: 0;
+}
+
+*:has(> .footnote-ref > a:target) {
+  @include big-focus();
 }
