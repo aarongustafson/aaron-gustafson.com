@@ -1,15 +1,15 @@
+import fs from "fs";
 import gulp from "gulp";
-const {dest, src} = gulp;
-import config from "./config.js";
-import gulpSass from 'gulp-sass';
-import sass from "sass";
-const sassProcessor = gulpSass(sass);
 import autoprefixer from "gulp-autoprefixer";
 import clean from "gulp-clean-css";
 import rename from "gulp-rename";
-import stream from "stream"
+import gulpSass from 'gulp-sass';
+import * as sass from "sass";
+import stream from "stream";
+import config from "./config.js";
+const {dest, src} = gulp;
+const sassProcessor = gulpSass(sass);
 const { Transform } = stream;
-import fs from "fs";
 
 const destination = `${config.static}/c`;
 const dist = `${config.destination}/c`;
