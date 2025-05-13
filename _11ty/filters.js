@@ -154,7 +154,14 @@ export default {
 		return found;
 	},
 	filterTo( obj, prop, value) {
-		return obj.filter( el => ( el[prop] == value || el.data[prop] == value ) );
+		return obj.filter( el => {
+      if ( !el[prop] && !el.data[prop] ) return false;
+      if ( value instanceof Array ) {
+        return (value.includes(el[prop]) || value.includes(el.data[prop]) );
+      } else {
+        return (el[prop] === value || el.data[prop] === value);
+      }
+    });
 	},
 
 	bySeriesTag: ( array, tag ) => {
