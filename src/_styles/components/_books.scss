@@ -56,6 +56,9 @@
         }
       }
     }
+    .book__title {
+      text-align: center;
+    }
   }
   &__cover {
     grid-area: picture;
