@@ -93,14 +93,14 @@ hr {
   border-top: 1px solid $color-rule;
   
   height: 0;
-  @include rem( margin, $default-spacing auto );
+  @include rem( margin, ($default-spacing * 2) auto );
 
   @supports (margin-block: 1em) {
     @include unset( border-top height margin );
     border-block-start: 1px solid $color-rule;
     block-size: 0;
     margin-inline: auto;
-    @include rem( margin-block, $default-spacing, false );
+    @include rem( margin-block, $default-spacing * 2, false );
   }
 }
 

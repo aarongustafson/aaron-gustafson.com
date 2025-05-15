@@ -121,42 +121,6 @@
         @include rem( font-size, 24 );
       }
 
-
-			&__location-picture {
-
-				background: transparent center center no-repeat;
-				background-size: cover;
-				box-shadow: inset 0 0 50px 7px $color-green-dark;
-
-				display: block;
-				opacity: .35;
-				filter: grayscale(100%);
-
-				margin: 0;
-				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				z-index: 0;
-
-				transition: opacity .35s ease-in-out, transform .35s linear;
-
-				@supports (margin-block: 1em) {
-					@include unset( top right bottom left );
-					inset: 0;
-				}
-
-			}
-
-			& a:focus .event__location-picture,
-			&:hover .event__location-picture {
-
-				opacity: .05;
-				transform: scale(1.125);
-
-			}
-
 			&--future {
 
 				border-color: $color-dark-teal;
@@ -180,6 +144,41 @@
 			//}
 
 		}
+
+    &__location-picture {
+
+      background: transparent center center no-repeat;
+      background-size: cover;
+      box-shadow: inset 0 0 50px 7px $color-green-dark;
+
+      display: block;
+      opacity: .35;
+      filter: grayscale(100%);
+
+      margin: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+
+      transition: opacity .35s ease-in-out, transform .35s linear;
+
+      @supports (margin-block: 1em) {
+        @include unset( top right bottom left );
+        inset: 0;
+      }
+
+    }
+
+    & a:focus .event__location-picture,
+    & a:hover .event__location-picture {
+
+      opacity: .05;
+      transform: scale(1.125);
+
+    }
 
 		html.dark-mode & {
 			background: color.scale( $color-green-light, $lightness: -20% );
