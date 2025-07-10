@@ -232,7 +232,7 @@ export default {
 		return getContentTypeByPath( path );
 	},
 	path_in_scope: ( path, scope ) => {
-		return path.indexOf( scope ) > -1;
+		return scope ? path.indexOf( scope ) > -1 : false;
 	},
 
 	getCountsByType: posts => {

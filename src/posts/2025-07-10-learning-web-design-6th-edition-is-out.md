@@ -9,7 +9,6 @@ hero:
   src: /i/posts/2025-07-10/lwd-6e.jpg
   credit: "Aaron Gustafson"
   alt: "Perspective shot of the physical book"
-  url: 
   offset: "0"
 ---
 
