@@ -2,7 +2,7 @@
 title: "Learning Web Design, 6th Edition is out!"
 date: 2025-07-10 17:25:40 -07:00
 comments: true
-tags: ["accessibility", "JavaScript", "progressive enhancement", "progressive web apps", "user experience", "WAI-ARIA", "web design", "web development", "writing"]
+tags: ["web design", "web development", "writing", "JavaScript", "accessibility", "progressive enhancement", "progressive web apps"]
 description: "It’s here! Nearly 900 pages of guidance on how to build web pages, to which I contributed a little over 100 pages: Learning Web Design, 6th Edition."
 twitter_text: "It’s here! Nearly 900 pages of guidance on how to build web pages, to which I contributed a little over 100 pages: Learning Web Design, 6th Edition."
 hero:
