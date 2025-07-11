@@ -3,6 +3,9 @@ dotenv.config();
 
 import getShareImage from "@jlengstorf/get-share-image";
 
+// Cache for generated share images to avoid regeneration
+const shareImageCache = new Map();
+
 // Markdown
 import markdownIt from "markdown-it";
 import markdownit_attrs from "markdown-it-attrs";
@@ -16,6 +19,9 @@ const markdown_options = {
 const md = markdownIt(markdown_options)
 	.use(markdownit_attrs)
 	.use(markdownit_footnote);
+
+// Cache for processed excerpts to avoid re-processing markdown
+const excerptCache = new Map();
 
 const isDevEnv = process.env.ELEVENTY_ENV === "development";
 const todaysDate = new Date();
@@ -62,19 +68,30 @@ export default {
 			showPost(data) ? `/notebook/${data.page.fileSlug}/` : false,
 		excerpt: (data) => {
 			let excerpt = "";
+			let sourceText = "";
+			
 			if ("excerpt" in data.page) {
-				excerpt = md
-					.renderInline(data.page.excerpt)
-					.replace(/\[\^\d+\]/gi, "") // remove footnotes
-					.replace(/(<([^>]+)>)/gi, "") // remove HTML
-					.trim();
+				sourceText = data.page.excerpt;
 			} else if (data.description) {
+				sourceText = data.description;
+			}
+			
+			if (sourceText) {
+				// Check cache first
+				if (excerptCache.has(sourceText)) {
+					return excerptCache.get(sourceText);
+				}
+				
 				excerpt = md
-					.renderInline(data.description)
+					.renderInline(sourceText)
 					.replace(/\[\^\d+\]/gi, "") // remove footnotes
 					.replace(/(<([^>]+)>)/gi, "") // remove HTML
 					.trim();
+				
+				// Cache the processed excerpt
+				excerptCache.set(sourceText, excerpt);
 			}
+			
 			return excerpt;
 		},
 		hue: (data) => {
@@ -84,7 +101,14 @@ export default {
 			if (data.hero) {
 				return `${data.site.url}${data.hero.src}`;
 			} else {
-				return getShareImage({
+				// Create cache key from title + tags to avoid regenerating identical images
+				const cacheKey = `${data.title}-${tagsToString(data.tags)}`;
+				
+				if (shareImageCache.has(cacheKey)) {
+					return shareImageCache.get(cacheKey);
+				}
+				
+				const shareImage = getShareImage({
 					cloudName: "aarongustafson",
 					imagePublicID: "share-card",
 					tagline: tagsToString(data.tags),
@@ -107,6 +131,9 @@ export default {
 					titleBottomOffset: 205,
 					textColor: "2C2825",
 				});
+				
+				shareImageCache.set(cacheKey, shareImage);
+				return shareImage;
 			}
 		},
 	},
