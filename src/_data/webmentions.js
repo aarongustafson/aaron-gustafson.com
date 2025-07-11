@@ -18,6 +18,65 @@ const domain = site.domain;
 const spammers_file = "src/_data/webmention_spammers.json";
 const spammers = JSON.parse(fs.readFileSync(spammers_file));
 
+// Configuration constants for optimization
+const MAX_NAME_LENGTH = 200; // Reasonable limit for webmention names to avoid storing extremely long titles
+
+// Optimize webmention data to reduce memory usage
+function optimizeWebmention(mention) {
+	const optimized = {
+		"wm-id": mention["wm-id"],
+		"wm-target": mention["wm-target"],
+		"wm-property": mention["wm-property"],
+		url: mention.url,
+		published: mention.published
+	};
+
+	// Only include author data if it exists and has useful info
+	if (mention.author && (mention.author.name || mention.author.photo || mention.author.url)) {
+		optimized.author = {};
+		if (mention.author.name) optimized.author.name = mention.author.name;
+		if (mention.author.photo) optimized.author.photo = mention.author.photo;
+		if (mention.author.url) optimized.author.url = mention.author.url;
+	}
+
+	// Only include content if it exists and is meaningful
+	if (mention.content) {
+		const hasContent = mention.content.html || mention.content.text;
+		if (hasContent) {
+			optimized.content = {};
+			if (mention.content.html) optimized.content.html = mention.content.html;
+			if (mention.content.text) optimized.content.text = mention.content.text;
+			// Include 'value' as fallback only if no other content is present
+		} else if (mention.content.value) {
+			optimized.content = { value: mention.content.value };
+		}
+	}
+
+	// Include name only if it's reasonably short and useful
+	if (mention.name && mention.name.length <= MAX_NAME_LENGTH) {
+		optimized.name = mention.name;
+	}
+
+	// Include summary as fallback content
+	if (mention.summary && !optimized.content) {
+		optimized.summary = mention.summary;
+	}
+
+	// Include webmention type properties
+	['like-of', 'repost-of', 'in-reply-to', 'mention-of', 'bookmark-of'].forEach(prop => {
+		if (mention[prop]) {
+			optimized[prop] = mention[prop];
+		}
+	});
+
+	// Include wm-source for Twitter/Mastodon detection
+	if (mention["wm-source"]) {
+		optimized["wm-source"] = mention["wm-source"];
+	}
+
+	return optimized;
+}
+
 async function fetchWebmentions(since, perPage = 10000) {
 	// If we dont have a domain name or token, abort
 	if (!domain || !TOKEN) {
@@ -92,8 +151,20 @@ export default async function () {
 	console.log(">>> Reading webmentions from cache...");
 
 	const cache = readFromCache();
+	let optimizedChildren = [];
+	
 	if (cache.children.length) {
 		console.log(`>>> ${cache.children.length} webmentions loaded from cache`);
+		
+		// Optimize webmentions data in memory to reduce build-time memory usage
+		console.log(">>> Optimizing webmentions data for memory efficiency...");
+		const startData = JSON.stringify(cache.children);
+		const startSize = Buffer.byteLength(startData, 'utf8');
+		optimizedChildren = cache.children.map(optimizeWebmention);
+		const endData = JSON.stringify(optimizedChildren);
+		const endSize = Buffer.byteLength(endData, 'utf8');
+		const savings = ((startSize - endSize) / startSize * 100).toFixed(1);
+		console.log(`>>> Memory optimization: ${savings}% reduction (${(startSize/1024/1024).toFixed(1)}MB -> ${(endSize/1024/1024).toFixed(1)}MB)`);
 	}
 
 	// Only fetch new mentions in production
@@ -102,14 +173,30 @@ export default async function () {
 		const feed = await fetchWebmentions(cache.lastFetched);
 
 		if (feed) {
+			const mergedChildren = mergeWebmentions(cache, feed);
+			
+			// Save unoptimized version to cache for future fetches
 			const webmentions = {
 				lastFetched: new Date().toISOString(),
-				children: mergeWebmentions(cache, feed),
+				children: mergedChildren,
 			};
 			writeToCache(webmentions);
-			return excludeSpammers(webmentions);
+			
+			// Return optimized version for build
+			const optimizedWebmentions = {
+				lastFetched: webmentions.lastFetched,
+				children: mergedChildren.map(optimizeWebmention)
+			};
+			
+			return excludeSpammers(optimizedWebmentions);
 		}
 	}
 
-	return excludeSpammers(cache);
+	// Return optimized cache data
+	const optimizedCache = {
+		lastFetched: cache.lastFetched,
+		children: optimizedChildren
+	};
+	
+	return excludeSpammers(optimizedCache);
 }
