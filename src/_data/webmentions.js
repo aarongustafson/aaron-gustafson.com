@@ -18,6 +18,9 @@ const domain = site.domain;
 const spammers_file = "src/_data/webmention_spammers.json";
 const spammers = JSON.parse(fs.readFileSync(spammers_file));
 
+// Configuration constants for optimization
+const MAX_NAME_LENGTH = 200; // Reasonable limit for webmention names to avoid storing extremely long titles
+
 // Optimize webmention data to reduce memory usage
 function optimizeWebmention(mention) {
 	const optimized = {
@@ -38,17 +41,19 @@ function optimizeWebmention(mention) {
 
 	// Only include content if it exists and is meaningful
 	if (mention.content) {
-		const hasContent = mention.content.html || mention.content.text || mention.content.value;
+		const hasContent = mention.content.html || mention.content.text;
 		if (hasContent) {
 			optimized.content = {};
 			if (mention.content.html) optimized.content.html = mention.content.html;
 			if (mention.content.text) optimized.content.text = mention.content.text;
-			// Skip 'value' field as it's usually a duplicate
+			// Include 'value' as fallback only if no other content is present
+		} else if (mention.content.value) {
+			optimized.content = { value: mention.content.value };
 		}
 	}
 
 	// Include name only if it's reasonably short and useful
-	if (mention.name && mention.name.length <= 200) {
+	if (mention.name && mention.name.length <= MAX_NAME_LENGTH) {
 		optimized.name = mention.name;
 	}
 
@@ -153,9 +158,11 @@ export default async function () {
 		
 		// Optimize webmentions data in memory to reduce build-time memory usage
 		console.log(">>> Optimizing webmentions data for memory efficiency...");
-		const startSize = JSON.stringify(cache.children).length;
+		const startData = JSON.stringify(cache.children);
+		const startSize = Buffer.byteLength(startData, 'utf8');
 		optimizedChildren = cache.children.map(optimizeWebmention);
-		const endSize = JSON.stringify(optimizedChildren).length;
+		const endData = JSON.stringify(optimizedChildren);
+		const endSize = Buffer.byteLength(endData, 'utf8');
 		const savings = ((startSize - endSize) / startSize * 100).toFixed(1);
 		console.log(`>>> Memory optimization: ${savings}% reduction (${(startSize/1024/1024).toFixed(1)}MB -> ${(endSize/1024/1024).toFixed(1)}MB)`);
 	}
