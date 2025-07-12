@@ -203,17 +203,23 @@ export default async function () {
 				children: mergedChildren.map(optimizeWebmention)
 			};
 			
-			return excludeSpammers(optimizedWebmentions);
+			// Filter spammers first, then create URL index
+			const cleanWebmentions = excludeSpammers(optimizedWebmentions);
+			cleanWebmentions.urlIndex = createWebmentionIndex(cleanWebmentions.children);
+			
+			return cleanWebmentions;
 		}
 	}
 
 	// Return optimized cache data with URL index for faster template lookups
 	const optimizedCache = {
 		lastFetched: cache.lastFetched,
-		children: optimizedChildren,
-		// Add URL index to speed up getWebmentionsForUrl filter
-		urlIndex: createWebmentionIndex(optimizedChildren)
+		children: optimizedChildren
 	};
 	
-	return excludeSpammers(optimizedCache);
+	// Filter out spammers first, then create URL index with clean data
+	const cleanCache = excludeSpammers(optimizedCache);
+	cleanCache.urlIndex = createWebmentionIndex(cleanCache.children);
+	
+	return cleanCache;
 }

@@ -5,6 +5,7 @@ import getShareImage from "@jlengstorf/get-share-image";
 
 // Cache for generated share images to avoid regeneration
 const shareImageCache = new Map();
+const MAX_SHARE_IMAGE_CACHE_SIZE = 500; // More than enough for current site
 
 // Markdown
 import markdownIt from "markdown-it";
@@ -22,6 +23,7 @@ const md = markdownIt(markdown_options)
 
 // Cache for processed excerpts to avoid re-processing markdown
 const excerptCache = new Map();
+const MAX_EXCERPT_CACHE_SIZE = 1000; // More than enough for current site
 
 const isDevEnv = process.env.ELEVENTY_ENV === "development";
 const todaysDate = new Date();
@@ -88,7 +90,11 @@ export default {
 					.replace(/(<([^>]+)>)/gi, "") // remove HTML
 					.trim();
 				
-				// Cache the processed excerpt
+				// Cache the processed excerpt with size limit
+				if (excerptCache.size >= MAX_EXCERPT_CACHE_SIZE) {
+					const firstKey = excerptCache.keys().next().value;
+					excerptCache.delete(firstKey);
+				}
 				excerptCache.set(sourceText, excerpt);
 			}
 			
@@ -132,6 +138,11 @@ export default {
 					textColor: "2C2825",
 				});
 				
+				// Cache with size limit
+				if (shareImageCache.size >= MAX_SHARE_IMAGE_CACHE_SIZE) {
+					const firstKey = shareImageCache.keys().next().value;
+					shareImageCache.delete(firstKey);
+				}
 				shareImageCache.set(cacheKey, shareImage);
 				return shareImage;
 			}
