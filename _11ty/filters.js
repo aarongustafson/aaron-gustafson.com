@@ -251,6 +251,27 @@ export default {
 	},
 
 	getWebmentionsForUrl: (webmentions, url, old_url) => {
+		// Use URL index if available for O(1) lookup instead of O(n) filtering
+		if (webmentions.urlIndex) {
+			const mentions = [];
+			const currentMentions = webmentions.urlIndex.get(url) || [];
+			mentions.push(...currentMentions);
+			
+			// Check old URL if provided
+			if (old_url !== "false") {
+				const oldMentions = webmentions.urlIndex.get(old_url) || [];
+				mentions.push(...oldMentions);
+			}
+			
+			// Sort by wm-id and remove duplicates
+			return mentions
+				.filter((mention, index, self) => 
+					self.findIndex(m => m["wm-id"] === mention["wm-id"]) === index
+				)
+				.sort((a, b) => a["wm-id"] - b["wm-id"]);
+		}
+		
+		// Fallback to original filtering method
 		return webmentions.children
 						.filter(entry => {
 							//console.log( entry['wm-target'], url, old_url );

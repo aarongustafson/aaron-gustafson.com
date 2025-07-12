@@ -193,73 +193,47 @@ export default async (config) => {
 	config.addCollection("links", (collectionApi) => {
 		return collectionApi.getFilteredByGlob("**/links/*.md").reverse();
 	});
+	
+	// Optimize: Use a shared sorting function to avoid duplicate sort operations
+	const sortByDateDesc = (a, b) => b.date - a.date;
+	
 	config.addCollection("talks", (collectionApi) => {
-		return (
-			collectionApi
-				.getFilteredByGlob("**/talks/*.md")
-				// sort by date - descending
-				.sort(function (a, b) {
-					return b.date - a.date;
-				})
-		);
+		return collectionApi
+			.getFilteredByGlob("**/talks/*.md")
+			.sort(sortByDateDesc);
 	});
 	config.addCollection("articles", (collectionApi) => {
-		return (
-			collectionApi
-				.getFilteredByGlob("**/articles/*.md")
-				// sort by date - descending
-				.sort(function (a, b) {
-					return b.date - a.date;
-				})
-		);
+		return collectionApi
+			.getFilteredByGlob("**/articles/*.md")
+			.sort(sortByDateDesc);
 	});
 	config.addCollection("books", (collectionApi) => {
-		return (
-			collectionApi
-				.getFilteredByGlob("**/books/*.md")
-				// sort by date - descending
-				.sort(function (a, b) {
-					return b.date - a.date;
-				})
-		);
+		return collectionApi
+			.getFilteredByGlob("**/books/*.md")
+			.sort(sortByDateDesc);
 	});
 	config.addCollection("press", (collectionApi) => {
-		return (
-			collectionApi
-				.getFilteredByGlob("**/press/*.md")
-				// sort by date - descending
-				.sort(function (a, b) {
-					return b.date - a.date;
-				})
-		);
+		return collectionApi
+			.getFilteredByGlob("**/press/*.md")
+			.sort(sortByDateDesc);
 	});
 	config.addCollection("podcasts", (collectionApi) => {
-		return (
-			collectionApi
-				.getFilteredByGlob("**/podcasts/*.md")
-				// sort by date - descending
-				.sort(function (a, b) {
-					return b.date - a.date;
-				})
-		);
+		return collectionApi
+			.getFilteredByGlob("**/podcasts/*.md")
+			.sort(sortByDateDesc);
 	});
 	config.addCollection("feedAll", (collectionApi) => {
-		return (
-			collectionApi
-				.getFilteredByGlob([
-					"**/posts/*.md",
-					"**/links/*.md",
-					"**/talks/*.md",
-					"**/articles/*.md",
-					"**/books/*.md",
-					"**/podcasts/*.md",
-					"**/press/*.md",
-				])
-				// sort by date - descending
-				.sort(function (a, b) {
-					return b.date - a.date;
-				})
-		);
+		return collectionApi
+			.getFilteredByGlob([
+				"**/posts/*.md",
+				"**/links/*.md",
+				"**/talks/*.md",
+				"**/articles/*.md",
+				"**/books/*.md",
+				"**/podcasts/*.md",
+				"**/press/*.md",
+			])
+			.sort(sortByDateDesc);
 	});
 	config.addCollection("sitemap", function (collectionApi) {
 		// get unsorted items

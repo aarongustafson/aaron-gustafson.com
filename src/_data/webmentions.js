@@ -21,6 +21,21 @@ const spammers = JSON.parse(fs.readFileSync(spammers_file));
 // Configuration constants for optimization
 const MAX_NAME_LENGTH = 200; // Reasonable limit for webmention names to avoid storing extremely long titles
 
+// Create URL-indexed webmentions for faster template lookups
+function createWebmentionIndex(webmentions) {
+	const index = new Map();
+	
+	webmentions.forEach(mention => {
+		const target = mention["wm-target"];
+		if (!index.has(target)) {
+			index.set(target, []);
+		}
+		index.get(target).push(mention);
+	});
+	
+	return index;
+}
+
 // Optimize webmention data to reduce memory usage
 function optimizeWebmention(mention) {
 	const optimized = {
@@ -188,15 +203,23 @@ export default async function () {
 				children: mergedChildren.map(optimizeWebmention)
 			};
 			
-			return excludeSpammers(optimizedWebmentions);
+			// Filter spammers first, then create URL index
+			const cleanWebmentions = excludeSpammers(optimizedWebmentions);
+			cleanWebmentions.urlIndex = createWebmentionIndex(cleanWebmentions.children);
+			
+			return cleanWebmentions;
 		}
 	}
 
-	// Return optimized cache data
+	// Return optimized cache data with URL index for faster template lookups
 	const optimizedCache = {
 		lastFetched: cache.lastFetched,
 		children: optimizedChildren
 	};
 	
-	return excludeSpammers(optimizedCache);
+	// Filter out spammers first, then create URL index with clean data
+	const cleanCache = excludeSpammers(optimizedCache);
+	cleanCache.urlIndex = createWebmentionIndex(cleanCache.children);
+	
+	return cleanCache;
 }
