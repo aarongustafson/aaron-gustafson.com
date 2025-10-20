@@ -3,12 +3,9 @@ import { execFile } from 'node:child_process';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-// Get current date information
+// Get current date information in UTC
 const today = new Date();
-const offsetMs = today.getTimezoneOffset() * 60 * 1000;
-const msLocal = today.getTime() - offsetMs;
-const dateLocal = new Date(msLocal);
-const iso = dateLocal.toISOString().slice(0, 19);
+const iso = today.toISOString().slice(0, 19);
 
 // Import JSON data with dynamic imports
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -22,7 +19,7 @@ const helpers = {
     return str.replace('"', '\\"');
   },
   getTimestamp: () => {
-    return `${iso.replace("T", " ")} -07:00`;
+    return `${iso.replace("T", " ")} +00:00`;
   },
   getTags: () => {
     return tags;
@@ -350,7 +347,7 @@ export default function (plop) {
           const event = {
             id: new_events[0].id + 1,
             title: data.title,
-            date: `${data.date} 00:09:00 -0800`,
+            date: `${data.date} 00:09:00 +0000`,
             location: data.location || "Online",
           };
           if (data.url) {
