@@ -1,6 +1,6 @@
 ---
 title: "A Web Component for Conditionally Displaying Fields"
-date: 2025-10-20 16:05:50 -07:00
+date: 2025-10-20 10:05:50 -07:00
 comments: true
 tags: ["web components", "web forms", "progressive enhancement", "HTML"]
 description: "Sometimes you only want a field to show when certain other fields have a (particular) value. The `form-show-if` web component enables that."
