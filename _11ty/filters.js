@@ -265,12 +265,19 @@ export default {
 				// When using processed cache, get from compactData by ID
 				allMentionIds.forEach(id => {
 					const mention = webmentions.compactData[id];
-					if (mention) mentions.push(mention);
+					if (mention) {
+						// Add the wm-id back as a property for consistency
+						mention["wm-id"] = parseInt(id, 10);
+						mentions.push(mention);
+					}
 				});
 			} else {
-				// When using regular cache, get from children array
+				// When using regular cache, build a map for O(1) lookups
+				const mentionMap = new Map();
+				webmentions.children.forEach(m => mentionMap.set(m["wm-id"], m));
+				
 				allMentionIds.forEach(id => {
-					const mention = webmentions.children.find(m => m["wm-id"] === id);
+					const mention = mentionMap.get(id);
 					if (mention) mentions.push(mention);
 				});
 			}

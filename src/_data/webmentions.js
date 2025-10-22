@@ -25,6 +25,17 @@ const spammers = JSON.parse(fs.readFileSync(spammers_file));
 const MAX_NAME_LENGTH = 200; // Reasonable limit for webmention names to avoid storing extremely long titles
 const COMPRESSION_THRESHOLD = 1024 * 1024; // Use compression for files > 1MB
 
+// Helper function to determine if cache needs reprocessing
+function shouldReprocessCache(processedData, cache, cacheHasData) {
+	if (!processedData) return true;
+	if (!cacheHasData) return false;
+	if (!processedData.lastProcessed) return true;
+	
+	const cacheDate = new Date(cache.lastFetched || 0);
+	const processedDate = new Date(processedData.lastProcessed);
+	return cacheDate > processedDate;
+}
+
 // Create optimized data structure for fast template access
 function createOptimizedWebmentionData(webmentions) {
 	const data = {
@@ -42,7 +53,6 @@ function createOptimizedWebmentionData(webmentions) {
 		
 		// Store compact version of webmention
 		data.compactData[wmId] = {
-			id: wmId,
 			target: target,
 			type: type,
 			url: mention.url,
@@ -254,9 +264,7 @@ export default async function () {
 	const cacheHasData = cache.children && cache.children.length > 0;
 	
 	// Check if we need to regenerate processed cache
-	const needsReprocessing = !processedData || 
-		(cacheHasData && (!processedData.lastProcessed || 
-		new Date(cache.lastFetched || 0) > new Date(processedData.lastProcessed || 0)));
+	const needsReprocessing = shouldReprocessCache(processedData, cache, cacheHasData);
 	
 	if (needsReprocessing && cacheHasData) {
 		console.log(`>>> ${cache.children.length} webmentions loaded from cache`);
@@ -270,18 +278,21 @@ export default async function () {
 		
 		// Create optimized data structure
 		processedData = createOptimizedWebmentionData(optimizedChildren);
-		processedData.lastFetched = cache.lastFetched;
+		processedData.lastFetched = cache.lastFetched || new Date().toISOString();
 		
 		// Save for future builds
 		saveProcessedCache(processedData);
 		
 		const processingTime = Date.now() - startTime;
-		const originalSize = JSON.stringify(cache.children).length;
-		const optimizedSize = JSON.stringify(processedData.compactData).length;
-		const savings = ((originalSize - optimizedSize) / originalSize * 100).toFixed(1);
-		
 		console.log(`>>> Processing completed in ${processingTime}ms`);
-		console.log(`>>> Memory optimization: ${savings}% reduction (${(originalSize/1024/1024).toFixed(1)}MB -> ${(optimizedSize/1024/1024).toFixed(1)}MB)`);
+		
+		// Only calculate expensive size metrics in debug mode
+		if (process.env.VERBOSE === "true" || process.env.DEBUG === "true") {
+			const originalSize = JSON.stringify(cache.children).length;
+			const optimizedSize = JSON.stringify(processedData.compactData).length;
+			const savings = ((originalSize - optimizedSize) / originalSize * 100).toFixed(1);
+			console.log(`>>> Memory optimization: ${savings}% reduction (${(originalSize/1024/1024).toFixed(1)}MB -> ${(optimizedSize/1024/1024).toFixed(1)}MB)`);
+		}
 	} else if (processedData) {
 		console.log(`>>> Using preprocessed webmentions cache (${processedData.totalCount} webmentions)`);
 	}
