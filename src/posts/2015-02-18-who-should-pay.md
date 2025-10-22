@@ -14,9 +14,9 @@ In more than a handful of conversations lately, it’s become quite clear that w
 
 <!-- more -->
 
-Here’s one example. In reaction to [my post on why I think CSS variables are a bad idea](/notebook/css-variables-are-a-bad-idea/), [SASS](http://sass-lang.com) core team member [Chris Eppstein](https://twitter.com/chriseppstein/) had this to say:
+Here’s one example. In reaction to [my post on why I think CSS variables are a bad idea](/notebook/css-variables-are-a-bad-idea/), [SASS](http://sass-lang.com) core team member [Chris Eppstein](https://github.com/chriseppstein/) had this to say:
 
-https://twitter.com/chriseppstein/status/567756897105620992
+> Authoring CSS shouldn’t be so onerous as to require the use of a preprocessor.
 
 Fundamentally, I agree with his sentiment: A preprocessor should *not* be a requirement for authoring CSS. Thankfully, *it never was*; you can build amazing things using only hand-authored CSS. And if you find a preprocessor helpful to your process for one reason or another, great. But using a preprocessor never has been (nor should it ever be) a requirement.
 
