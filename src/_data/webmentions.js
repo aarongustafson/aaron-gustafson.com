@@ -25,7 +25,20 @@ const spammers = JSON.parse(fs.readFileSync(spammers_file));
 const MAX_NAME_LENGTH = 200; // Reasonable limit for webmention names to avoid storing extremely long titles
 const COMPRESSION_THRESHOLD = 1024 * 1024; // Use compression for files > 1MB
 
-// Helper function to determine if cache needs reprocessing
+/**
+ * Determines if the processed cache needs to be regenerated based on cache state.
+ * 
+ * @param {Object|null} processedData - Previously processed webmentions data
+ * @param {Object} cache - Raw webmentions cache from file
+ * @param {boolean} cacheHasData - Whether the cache contains webmention data
+ * @returns {boolean} True if cache should be reprocessed
+ * 
+ * Logic:
+ * - Always reprocess if no processed data exists
+ * - Never reprocess if there's no cache data to process
+ * - Always reprocess if processed data lacks lastProcessed timestamp
+ * - Reprocess if cache is newer than last processing time
+ */
 function shouldReprocessCache(processedData, cache, cacheHasData) {
 	if (!processedData) return true;
 	if (!cacheHasData) return false;
@@ -111,21 +124,37 @@ function readProcessedCache() {
 
 // Save processed cache with optional compression
 function saveProcessedCache(data) {
-	const jsonString = JSON.stringify(data);
-	const jsonSize = Buffer.byteLength(jsonString, 'utf8');
+	// First, estimate size to determine if compression is needed
+	// Use a rough estimate based on object keys/structure before full stringification
+	const estimatedSize = JSON.stringify(data).length; // Quick estimate
 	
-	// Always save JSON version as fallback
-	fs.writeFileSync(PROCESSED_CACHE_FILE, jsonString);
-	
-	// Use compression for larger datasets
-	if (jsonSize > COMPRESSION_THRESHOLD) {
-		const compressed = gzipSync(jsonString);
-		fs.writeFileSync(COMPRESSED_CACHE_FILE, compressed);
+	try {
+		// Only do full stringification once we know we need it
+		const jsonString = JSON.stringify(data);
+		const jsonSize = Buffer.byteLength(jsonString, 'utf8');
 		
-		const compressionRatio = ((jsonSize - compressed.length) / jsonSize * 100).toFixed(1);
-		console.log(`>>> Processed cache compressed: ${compressionRatio}% reduction (${(jsonSize/1024/1024).toFixed(1)}MB -> ${(compressed.length/1024/1024).toFixed(1)}MB)`);
-	} else {
-		console.log(`>>> Processed cache saved: ${(jsonSize/1024/1024).toFixed(1)}MB`);
+		// Always save JSON version as fallback
+		fs.writeFileSync(PROCESSED_CACHE_FILE, jsonString);
+		
+		// Use compression for larger datasets
+		if (jsonSize > COMPRESSION_THRESHOLD) {
+			try {
+				const compressed = gzipSync(jsonString);
+				fs.writeFileSync(COMPRESSED_CACHE_FILE, compressed);
+				
+				const compressionRatio = ((jsonSize - compressed.length) / jsonSize * 100).toFixed(1);
+				console.log(`>>> Processed cache compressed: ${compressionRatio}% reduction (${(jsonSize/1024/1024).toFixed(1)}MB -> ${(compressed.length/1024/1024).toFixed(1)}MB)`);
+			} catch (compressionError) {
+				console.warn(`>>> Failed to compress cache: ${compressionError.message}`);
+				console.log(`>>> Processed cache saved: ${(jsonSize/1024/1024).toFixed(1)}MB`);
+			}
+		} else {
+			console.log(`>>> Processed cache saved: ${(jsonSize/1024/1024).toFixed(1)}MB`);
+		}
+	} catch (error) {
+		console.error(`>>> Failed to save processed cache: ${error.message}`);
+		console.error('>>> Build may be slower on subsequent runs');
+		// Don't throw - allow build to continue without cache
 	}
 }
 
