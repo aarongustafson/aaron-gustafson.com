@@ -242,11 +242,58 @@ WebmentionIO.types = { 'bookmarks': 'bookmark','likes': 'like','links': 'link','
 			//template = nunjucks.compile( template );
 			nunjucks.configure({ autoescape: false });
 			html = nunjucks.renderString( template, { webmentions: mentions });
+			
+			// Process the rendered HTML to fix data attributes
+			html = processWebmentionDataAttributes( html );
 		}
 
 		template_class = template_class || "";
 		// console.log( "incoming HTML: %s", html );
 		return html.replace( /TEMPLATE_CLASS/g, template_class );
+	}
+	
+	/**
+	 * Process rendered webmention HTML to convert data attributes to proper href/src attributes
+	 * This prevents Eleventy from incorrectly processing template variables as URLs during build
+	 * @param {string} html - The rendered HTML string
+	 * @returns {string} - HTML with data attributes converted to proper attributes
+	 */
+	function processWebmentionDataAttributes( html ) {
+		// Create a temporary container to manipulate the HTML
+		var temp = document.createElement('div');
+		temp.innerHTML = html;
+		
+		// Process author URLs
+		var authorLinks = temp.querySelectorAll('[data-mention-author-url]');
+		for (var i = 0; i < authorLinks.length; i++) {
+			var url = authorLinks[i].getAttribute('data-mention-author-url');
+			if (url) {
+				authorLinks[i].setAttribute('href', url);
+				authorLinks[i].removeAttribute('data-mention-author-url');
+			}
+		}
+		
+		// Process mention URLs
+		var mentionLinks = temp.querySelectorAll('[data-mention-url]');
+		for (var j = 0; j < mentionLinks.length; j++) {
+			var mentionUrl = mentionLinks[j].getAttribute('data-mention-url');
+			if (mentionUrl) {
+				mentionLinks[j].setAttribute('href', mentionUrl);
+				mentionLinks[j].removeAttribute('data-mention-url');
+			}
+		}
+		
+		// Process author photos
+		var authorPhotos = temp.querySelectorAll('[data-mention-author-photo]');
+		for (var k = 0; k < authorPhotos.length; k++) {
+			var photoUrl = authorPhotos[k].getAttribute('data-mention-author-photo');
+			if (photoUrl) {
+				authorPhotos[k].setAttribute('src', photoUrl);
+				authorPhotos[k].removeAttribute('data-mention-author-photo');
+			}
+		}
+		
+		return temp.innerHTML;
 	}
 		
 	// Uses the ID attribute for everything except tweets
