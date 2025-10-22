@@ -1,299 +1,1482 @@
-[
-  "src/_images/share-card.jpg",
-  "src/_images/icon-reverse.png",
-  "src/_images/icon.png",
-  "src/_images/notification-icon-reverse.png",
-  "src/_images/notification-icon.png",
-  "src/_images/og-logo.png",
-  "src/_images/books/a-web-for-everyone.jpg",
-  "src/_images/books/accelerated-dom-scripting.jpg",
-  "src/_images/books/adaptive-web-design-2nd.jpg",
-  "src/_images/books/adaptive-web-design.jpg",
-  "src/_images/books/advanced-dom-scripting.jpg",
-  "src/_images/books/implementing-responsive-design.jpg",
-  "src/_images/books/responsive-typography.jpg",
-  "src/_images/books/smashing-book-4.jpg",
-  "src/_images/books/web-design-in-a-nutshell.jpg",
-  "src/_images/books/web-form-design.jpg",
-  "src/_images/books/going-offline.png",
-  "src/_images/headshots/2007-sm.jpg",
-  "src/_images/headshots/2007.jpg",
-  "src/_images/headshots/2013-sm.jpg",
-  "src/_images/headshots/2013.jpg",
-  "src/_images/headshots/2014-sm.jpg",
-  "src/_images/headshots/2014.jpg",
-  "src/_images/headshots/doll-sm.jpg",
-  "src/_images/headshots/doll.jpg",
-  "src/_images/headshots/avatar-cornell-sm.png",
-  "src/_images/headshots/avatar-cornell.png",
-  "src/_images/tanks/blastomussa-merletti.jpg",
-  "src/_images/tanks/burning-leptastrea.jpg",
-  "src/_images/tanks/coco-worm.jpg",
-  "src/_images/tanks/devils-armor-zoas.jpg",
-  "src/_images/tanks/dragon-soul-goniastrea.jpg",
-  "src/_images/tanks/fruit-loop-zoas.jpg",
-  "src/_images/tanks/german-blue-digitata-2.jpg",
-  "src/_images/tanks/german-blue-digitata.jpg",
-  "src/_images/tanks/halle-berry-zoas.jpg",
-  "src/_images/tanks/john-deere-leptastrea.jpg",
-  "src/_images/tanks/lemon-lime-clove.jpg",
-  "src/_images/tanks/micromussa-lord-blue.jpg",
-  "src/_images/tanks/micromussa-lord-lavender.jpg",
-  "src/_images/tanks/micromussa-lord-rainbow-2.jpg",
-  "src/_images/tanks/micromussa-lord-rainbow.jpg",
-  "src/_images/tanks/micromussa-lord-red.jpg",
-  "src/_images/tanks/nirvana-zoas.jpg",
-  "src/_images/tanks/oregon-tort.jpg",
-  "src/_images/tanks/oxide-zoas.jpg",
-  "src/_images/tanks/pc-rainbow.jpg",
-  "src/_images/tanks/pink-zipper-zoas.jpg",
-  "src/_images/tanks/rainbow-incinerator-zoas.jpg",
-  "src/_images/tanks/rasta-zoas.jpg",
-  "src/_images/tanks/reefer-fts-2019-05-19.jpg",
-  "src/_images/tanks/slimeball-anacropora-and-cali-tort.jpg",
-  "src/_images/tanks/sunset-plate.jpg",
-  "src/_images/tanks/unnamed-green-zoas.jpg",
-  "src/_images/tanks/walt-disney.jpg",
-  "src/_images/tanks/watchman-goby.jpg",
-  "src/_images/tanks/zoa-garden.jpg",
-  "src/_images/icons/books.png",
-  "src/_images/icons/chat.png",
-  "src/_images/icons/keynote.png",
-  "src/_images/icons/link-intact.png",
-  "src/_images/icons/mic.png",
-  "src/_images/icons/notebook.png",
-  "src/_images/posts/2014-11-06/01-lg.jpg",
-  "src/_images/posts/2014-11-06/01-md.jpg",
-  "src/_images/posts/2014-11-06/01-sm.jpg",
-  "src/_images/posts/2014-11-06/02-lg.jpg",
-  "src/_images/posts/2014-11-06/02-md.jpg",
-  "src/_images/posts/2014-11-06/02-sm.jpg",
-  "src/_images/posts/2014-11-06/03-lg.jpg",
-  "src/_images/posts/2014-11-06/03-md.jpg",
-  "src/_images/posts/2014-11-06/03-sm.jpg",
-  "src/_images/posts/2014-11-06/04-lg.jpg",
-  "src/_images/posts/2014-11-06/04-md.jpg",
-  "src/_images/posts/2014-11-06/04-sm.jpg",
-  "src/_images/posts/2014-11-06/05-lg.jpg",
-  "src/_images/posts/2014-11-06/05-md.jpg",
-  "src/_images/posts/2014-11-06/05-sm.jpg",
-  "src/_images/posts/2014-11-06/06-lg.jpg",
-  "src/_images/posts/2014-11-06/06-md.jpg",
-  "src/_images/posts/2014-11-06/06-sm.jpg",
-  "src/_images/posts/2014-11-06/07-lg.jpg",
-  "src/_images/posts/2014-11-06/07-md.jpg",
-  "src/_images/posts/2014-11-06/07-sm.jpg",
-  "src/_images/posts/2014-11-06/08-lg.jpg",
-  "src/_images/posts/2014-11-06/08-md.jpg",
-  "src/_images/posts/2014-11-06/08-sm.jpg",
-  "src/_images/posts/2014-11-06/09-lg.jpg",
-  "src/_images/posts/2014-11-06/09-md.jpg",
-  "src/_images/posts/2014-11-06/09-sm.jpg",
-  "src/_images/posts/2014-11-06/10-lg.jpg",
-  "src/_images/posts/2014-11-06/10-md.jpg",
-  "src/_images/posts/2014-11-06/10-sm.jpg",
-  "src/_images/posts/2014-11-06/11-lg.jpg",
-  "src/_images/posts/2014-11-06/11-md.jpg",
-  "src/_images/posts/2014-11-06/11-sm.jpg",
-  "src/_images/posts/2014-11-06/12-lg.jpg",
-  "src/_images/posts/2014-11-06/12-md.jpg",
-  "src/_images/posts/2014-11-06/12-sm.jpg",
-  "src/_images/posts/2014-11-06/13-lg.jpg",
-  "src/_images/posts/2014-11-06/13-md.jpg",
-  "src/_images/posts/2014-11-06/13-sm.jpg",
-  "src/_images/posts/2014-11-06/14-lg.jpg",
-  "src/_images/posts/2014-11-06/14-md.jpg",
-  "src/_images/posts/2014-11-06/14-sm.jpg",
-  "src/_images/posts/2014-11-06/15-lg.jpg",
-  "src/_images/posts/2014-11-06/15-md.jpg",
-  "src/_images/posts/2014-11-06/15-sm.jpg",
-  "src/_images/posts/2014-11-06/16-lg.jpg",
-  "src/_images/posts/2014-11-06/16-md.jpg",
-  "src/_images/posts/2014-11-06/16-sm.jpg",
-  "src/_images/posts/2014-11-06/17-lg.jpg",
-  "src/_images/posts/2014-11-06/17-md.jpg",
-  "src/_images/posts/2014-11-06/17-sm.jpg",
-  "src/_images/posts/2014-11-06/18-lg.jpg",
-  "src/_images/posts/2014-11-06/18-md.jpg",
-  "src/_images/posts/2014-11-06/18-sm.jpg",
-  "src/_images/posts/2014-11-06/19-lg.jpg",
-  "src/_images/posts/2014-11-06/19-md.jpg",
-  "src/_images/posts/2014-11-06/19-sm.jpg",
-  "src/_images/posts/2014-11-06/20-lg.jpg",
-  "src/_images/posts/2014-11-06/20-md.jpg",
-  "src/_images/posts/2014-11-06/20-sm.jpg",
-  "src/_images/posts/2015-01-22/creepy-lg.png",
-  "src/_images/posts/2015-01-22/creepy-md.png",
-  "src/_images/posts/2015-01-22/creepy-sm.png",
-  "src/_images/posts/2015-03-26/first-pass-lg.jpg",
-  "src/_images/posts/2015-03-26/first-pass-md.jpg",
-  "src/_images/posts/2015-03-26/first-pass-sm.jpg",
-  "src/_images/posts/2015-03-26/second-pass-lg.jpg",
-  "src/_images/posts/2015-03-26/second-pass-md.jpg",
-  "src/_images/posts/2015-03-26/second-pass-sm.jpg",
-  "src/_images/posts/2015-03-26/the-idea-lg.jpg",
-  "src/_images/posts/2015-03-26/the-idea-md.jpg",
-  "src/_images/posts/2015-03-26/the-idea-sm.jpg",
-  "src/_images/posts/2015-03-26/third-pass-lg.jpg",
-  "src/_images/posts/2015-03-26/third-pass-md.jpg",
-  "src/_images/posts/2015-03-26/third-pass-sm.jpg",
-  "src/_images/posts/2015-02-26/atom-lg.jpg",
-  "src/_images/posts/2015-02-26/atom-sm.jpg",
-  "src/_images/posts/2015-05-28/01.png",
-  "src/_images/posts/2015-05-28/02.png",
-  "src/_images/posts/2015-05-28/03.png",
-  "src/_images/posts/2015-05-28/04.png",
-  "src/_images/posts/2015-05-28/05.png",
-  "src/_images/posts/2015-06-22/01.jpg",
-  "src/_images/posts/2015-06-22/03.jpg",
-  "src/_images/posts/2015-06-22/04.jpg",
-  "src/_images/posts/2015-06-22/05.jpg",
-  "src/_images/posts/2015-06-22/06.jpg",
-  "src/_images/posts/2015-06-22/02.gif",
-  "src/_images/posts/2015-08-17/01.png",
-  "src/_images/posts/2015-08-17/02.png",
-  "src/_images/posts/2015-11-11/01.png",
-  "src/_images/posts/2015-11-11/03.png",
-  "src/_images/posts/2015-11-11/02.gif",
-  "src/_images/posts/2015-11-11/04.gif",
-  "src/_images/posts/2015-11-11/05.gif",
-  "src/_images/posts/2015-11-11/06.gif",
-  "src/_images/posts/2015-11-11/07.gif",
-  "src/_images/posts/2015-11-12/01.jpg",
-  "src/_images/posts/2016-01-06/01.png",
-  "src/_images/posts/2016-01-06/02.png",
-  "src/_images/posts/2016-01-06/03.png",
-  "src/_images/posts/2016-01-06/04.png",
-  "src/_images/posts/2016-03-04/11.jpg",
-  "src/_images/posts/2016-03-04/12.jpg",
-  "src/_images/posts/2016-03-04/03.png",
-  "src/_images/posts/2016-03-04/04.png",
-  "src/_images/posts/2016-03-04/09.png",
-  "src/_images/posts/2016-03-04/10.png",
-  "src/_images/posts/2016-03-04/13.png",
-  "src/_images/posts/2016-03-04/01.gif",
-  "src/_images/posts/2016-03-04/02.gif",
-  "src/_images/posts/2016-04-11/03.jpg",
-  "src/_images/posts/2016-04-11/08.jpg",
-  "src/_images/posts/2016-04-11/02.png",
-  "src/_images/posts/2016-04-11/04.png",
-  "src/_images/posts/2016-04-11/05.png",
-  "src/_images/posts/2016-04-11/06.png",
-  "src/_images/posts/2016-04-11/07.png",
-  "src/_images/posts/2016-04-11/01.gif",
-  "src/_images/posts/2016-10-11/oscar.jpg",
-  "src/_images/posts/2016-10-17/kodak-roadblock.png",
-  "src/_images/posts/2016-10-25/webbloatscore.png",
-  "src/_images/posts/2016-12-06/01.png",
-  "src/_images/posts/2016-12-06/02.png",
-  "src/_images/posts/2016-12-06/03.png",
-  "src/_images/posts/2017-03-31/video-avi-poster.jpg",
-  "src/_images/posts/2019-04-26/share-target.png",
-  "src/_images/posts/2021-11-19/hero.jpg",
-  "src/_images/posts/2021-11-19/hero.png",
-  "src/_images/posts/2017-05-24/11.jpg",
-  "src/_images/posts/2017-05-24/04.png",
-  "src/_images/posts/2017-05-24/06.png",
-  "src/_images/posts/2017-05-24/07.png",
-  "src/_images/posts/2017-05-24/09.png",
-  "src/_images/posts/2017-05-24/10.png",
-  "src/_images/posts/2017-05-24/12.png",
-  "src/_images/posts/2022-07-27/hero.jpg",
-  "src/_images/posts/2022-07-27/hero.png",
-  "src/_images/posts/2022-06-10/hero.jpg",
-  "src/_images/posts/2022-06-10/hero.png",
-  "src/_images/posts/2022-02-15/hero.jpg",
-  "src/_images/posts/2022-02-15/hero.png",
-  "src/_images/posts/2022-08-11/hero.jpg",
-  "src/_images/posts/2022-08-11/hero.png",
-  "src/_images/posts/2022-08-22/01.jpg",
-  "src/_images/posts/2022-08-22/hero.jpg",
-  "src/_images/posts/2022-08-22/hero.png",
-  "src/_images/posts/2022-08-31/hero.jpg",
-  "src/_images/posts/2022-08-31/hero.png",
-  "src/_images/posts/2022-09-19/hero.jpg",
-  "src/_images/posts/2022-10-03/DALL·E 2022-10-03 11.51.23 - A forest clearing in the fall. In front of you are 2 paths leading in different directions. In the center is an old signpost, but it is dilapidated..png",
-  "src/_images/posts/2022-10-03/hero.png",
-  "src/_images/posts/2022-10-03/hero.jpg",
-  "src/_images/posts/2022-10-07/hero.jpg",
-  "src/_images/posts/2022-10-12/hero.jpg",
-  "src/_images/headshots/2022-sm.jpg",
-  "src/_images/headshots/2022.jpg",
-  "src/_images/posts/2022-12-13/hero.png",
-  "src/_images/posts/2023-02-03/hero.jpg",
-  "src/_images/posts/2023-02-03/iphone.jpg",
-  "src/_images/posts/2023-02-03/app-store.png",
-  "src/_images/posts/2023-03-06/hero.jpg",
-  "src/_images/posts/2023-03-16/hero.png",
-  "src/_images/posts/2023-04-21/hero.jpg",
-  "src/_images/talks/beyond-responsive.png",
-  "src/_images/talks/adaptive-designs-across-devices.png",
-  "src/_images/talks/better-performance-greater-accessibility.png",
-  "src/_images/talks/conversational-semantics-for-the-web.png",
-  "src/_images/talks/exploring-adaptive-interfaces.png",
-  "src/_images/talks/falling-in-love-with-forms.png",
-  "src/_images/talks/getting-started-with-pwas-workshop.png",
-  "src/_images/talks/designing-with-empathy.png",
-  "src/_images/talks/designing-the-conversation.png",
-  "src/_images/talks/learn-from-the-past-enhance-for-the-future.png",
-  "src/_images/talks/planning-adaptive-interfaces.png",
-  "src/_images/talks/progressive-enhancement-where-do-i-begin.png",
-  "src/_images/talks/progressive-web-apps-and-the-windows-ecosystem.png",
-  "src/_images/talks/the-features-of-highly-effective-forms.png",
-  "src/_images/talks/the-web-should-just-work-for-everyone.png",
-  "src/_images/talks/there-are-no-buts-in-progressive-enhancement.png",
-  "src/_images/talks/accessibility-beyond-code-compliance.png",
-  "src/_images/talks/dont-worry-be-appy.png",
-  "src/_images/talks/adapting-to-reality.png",
-  "src/_images/talks/delivering-critical-information-services.png",
-  "src/_images/talks/progressive-web-apps-where-do-i-begin.png",
-  "src/_images/talks/media-in-the-age-of-pwas.png",
-  "src/_images/talks/performance-as-user-experience.png",
-  "src/_images/talks/writing-for-engagement.jpg",
-  "src/_images/talks/advanced-design-methods.png",
-  "src/_images/talks/designing-for-everyone.png",
-  "src/_images/talks/intro-to-adaptive-web-design.png",
-  "src/_images/talks/responsive-design-and-beyond.png",
-  "src/_images/talks/the-web-is-for-everyone.png",
-  "src/_images/talks/your-brand-is-not-a-logo.png",
-  "src/_images/posts/2023-06-09/hero.jpg",
-  "src/_images/books/design-for-developers.jpg",
-  "src/_images/posts/2023-08-21/hero.jpg",
-  "src/_images/posts/2023-08-21/01.png",
-  "src/_images/posts/2023-08-21/02.png",
-  "src/_images/talks/adaptive-web-design-layer-by-layer.png",
-  "src/_images/talks/adaptive-web-design.png",
-  "src/_images/talks/designing-across-devices-with-progressive-enhancement.png",
-  "src/_images/talks/finding-empathy-and-the-golden-rule.png",
-  "src/_images/talks/responsive-design-studio.png",
-  "src/_images/posts/2023-09-08/aaron-and-molly.jpg",
-  "src/_images/posts/2023-09-08/breakfast-at-sxsw.jpg",
-  "src/_images/posts/2023-09-08/molly-and-bill.jpg",
-  "src/_images/posts/2023-09-08/molly-and-patrick-at-tpac.jpg",
-  "src/_images/posts/2023-09-08/molly-presenting.jpg",
-  "src/_images/posts/2023-09-08/molly-relaxing.jpg",
-  "src/_images/posts/2023-09-08/molly-taking-pictures.jpg",
-  "src/_images/posts/2023-09-08/molly-training.jpg",
-  "src/_images/posts/2023-09-08/working-on-slides.jpg",
-  "src/_images/background-logo.png",
-  "src/_images/screenshots/about-mobile.jpg",
-  "src/_images/screenshots/post-mobile.png",
-  "src/_images/screenshots/post.png",
-  "src/_images/screenshots/widget-links.png",
-  "src/_images/screenshots/widget-posts.png",
-  "src/_images/icons/webicon-rss.png",
-  "src/_images/screenshots/home.png",
-  "src/_images/posts/2023-10-09/hero.jpg",
-  "src/_images/posts/2023-10-09/widgets-in-windows.jpg",
-  "src/_images/posts/2023-10-09/widgets-promotion.gif",
-  "src/_images/posts/2023-12-15/hero.jpg",
-  "src/_images/posts/2023-12-15/1.png",
-  "src/_images/posts/2023-10-09/hero1.jpg",
-  "src/_images/posts/2024-01-25/hero.jpg",
-  "src/_images/posts/2024-02-02/hero.jpg",
-  "src/_images/tanks/rainbow-symphilia-wilsoni.jpg",
-  "src/_images/books/learning-web-design-6th.png",
-  "src/_images/posts/2025-07-10/lwd-6e.jpg",
-  "src/_images/posts/2025-10-15/hero.png",
-  "src/_images/posts/2025-10-21/hero.jpg"
-]
+{
+  "src/_images/share-card.jpg": {
+    "hash": "28badeabae4b034cb0b9f893bb004470",
+    "mtime": 1676583910080,
+    "processed": 1761158860417
+  },
+  "src/_images/icon-reverse.png": {
+    "hash": "c7a045eb91b77f181ff7f1bb9dd0dafd",
+    "mtime": 1712089958801,
+    "processed": 1761158860419
+  },
+  "src/_images/icon.png": {
+    "hash": "a1dedd44d37cf372ca03e853dbb2477e",
+    "mtime": 1676583909288,
+    "processed": 1761158860421
+  },
+  "src/_images/notification-icon-reverse.png": {
+    "hash": "ecb77440a2e4cf6a79c0f7d017d59175",
+    "mtime": 1676583910304,
+    "processed": 1761158860421
+  },
+  "src/_images/notification-icon.png": {
+    "hash": "920bccac9248abc07c0f69651f88ef20",
+    "mtime": 1676583909286,
+    "processed": 1761158860422
+  },
+  "src/_images/og-logo.png": {
+    "hash": "defbe630970ff888741721b6fb607064",
+    "mtime": 1696269361483,
+    "processed": 1761158860423
+  },
+  "src/_images/books/a-web-for-everyone.jpg": {
+    "hash": "2ef3f68a5efe6c33b6b3423a06c80f8e",
+    "mtime": 1676583909888,
+    "processed": 1761158868476
+  },
+  "src/_images/books/accelerated-dom-scripting.jpg": {
+    "hash": "c9b9512697e5898ea84550c470678c86",
+    "mtime": 1676583909878,
+    "processed": 1761158868506
+  },
+  "src/_images/books/adaptive-web-design-2nd.jpg": {
+    "hash": "74daf18cadc932d327e899113e340355",
+    "mtime": 1676583909883,
+    "processed": 1761158868516
+  },
+  "src/_images/books/adaptive-web-design.jpg": {
+    "hash": "c6698d96bb155d8b284c4f87ab563be7",
+    "mtime": 1676583909885,
+    "processed": 1761158868525
+  },
+  "src/_images/books/advanced-dom-scripting.jpg": {
+    "hash": "76293c12043b45d260c9e6c49f6e81ca",
+    "mtime": 1676583909881,
+    "processed": 1761158868532
+  },
+  "src/_images/books/implementing-responsive-design.jpg": {
+    "hash": "1c39a70e74848e59e39535598257d548",
+    "mtime": 1676583909893,
+    "processed": 1761158868548
+  },
+  "src/_images/books/responsive-typography.jpg": {
+    "hash": "8b2eab3d2890de4c16c20c0be2641d41",
+    "mtime": 1676583909886,
+    "processed": 1761158868554
+  },
+  "src/_images/books/smashing-book-4.jpg": {
+    "hash": "8497bb6f1648bbd413ffa63190c8c4d8",
+    "mtime": 1676583909879,
+    "processed": 1761158868559
+  },
+  "src/_images/books/web-design-in-a-nutshell.jpg": {
+    "hash": "7042e71cfa6b9caf7896e8a616292404",
+    "mtime": 1676583909891,
+    "processed": 1761158868562
+  },
+  "src/_images/books/web-form-design.jpg": {
+    "hash": "4bbd6dc9abae5ce27b18b2a1f835d87b",
+    "mtime": 1676583909890,
+    "processed": 1761158868566
+  },
+  "src/_images/books/going-offline.png": {
+    "hash": "95fc215f40a55a5b63aeacd4cef8e8f5",
+    "mtime": 1676583909876,
+    "processed": 1761158868571
+  },
+  "src/_images/headshots/2007-sm.jpg": {
+    "hash": "e8f40335e8d1300bbcd77d7cbb17bc61",
+    "mtime": 1676583909841,
+    "processed": 1761158869038
+  },
+  "src/_images/headshots/2007.jpg": {
+    "hash": "42f370655a520fc83ee40fa3f256b79b",
+    "mtime": 1676583909833,
+    "processed": 1761158869041
+  },
+  "src/_images/headshots/2013-sm.jpg": {
+    "hash": "c223ba7ade58e063de9ae3dd249f6e0b",
+    "mtime": 1676583909843,
+    "processed": 1761158869045
+  },
+  "src/_images/headshots/2013.jpg": {
+    "hash": "f1c59e182bbedb8f22d7b56d1f4009df",
+    "mtime": 1676583909834,
+    "processed": 1761158869051
+  },
+  "src/_images/headshots/2014-sm.jpg": {
+    "hash": "adba6cef2c4edd4652be8235ae022e48",
+    "mtime": 1676583909803,
+    "processed": 1761158869057
+  },
+  "src/_images/headshots/2014.jpg": {
+    "hash": "9669ccb35dd211cf40e1fa6943c4a2e8",
+    "mtime": 1676583909831,
+    "processed": 1761158869059
+  },
+  "src/_images/headshots/doll-sm.jpg": {
+    "hash": "8ab9592d654a1dc159c47973786c2c5f",
+    "mtime": 1676583909851,
+    "processed": 1761158869078
+  },
+  "src/_images/headshots/doll.jpg": {
+    "hash": "706994768020bad72df3b90a03b95bbd",
+    "mtime": 1676583909839,
+    "processed": 1761158869082
+  },
+  "src/_images/headshots/avatar-cornell-sm.png": {
+    "hash": "738979877193906bdc60ab921a61b074",
+    "mtime": 1676583909847,
+    "processed": 1761158869086
+  },
+  "src/_images/headshots/avatar-cornell.png": {
+    "hash": "02a46e091cd74ed95a221d555db933fd",
+    "mtime": 1676583909828,
+    "processed": 1761158869089
+  },
+  "src/_images/tanks/blastomussa-merletti.jpg": {
+    "hash": "c048df1e59c73a36c3a232cd74f1d003",
+    "mtime": 1676583910152,
+    "processed": 1761158869322
+  },
+  "src/_images/tanks/burning-leptastrea.jpg": {
+    "hash": "789269d78e71fa9398c791d192a14a12",
+    "mtime": 1676583910281,
+    "processed": 1761158869330
+  },
+  "src/_images/tanks/coco-worm.jpg": {
+    "hash": "77e4c6d3e2e37f05e4ca5e3781a58578",
+    "mtime": 1676583910298,
+    "processed": 1761158869355
+  },
+  "src/_images/tanks/devils-armor-zoas.jpg": {
+    "hash": "3495a2ea88df13fe4bfcc1f642374489",
+    "mtime": 1676583910295,
+    "processed": 1761158869359
+  },
+  "src/_images/tanks/dragon-soul-goniastrea.jpg": {
+    "hash": "ec1a2a7a781425ad1f0ede2b1f4a7df0",
+    "mtime": 1676583910192,
+    "processed": 1761158869369
+  },
+  "src/_images/tanks/fruit-loop-zoas.jpg": {
+    "hash": "07c96590ad9b1238d08bca9734a739fb",
+    "mtime": 1676583910150,
+    "processed": 1761158869384
+  },
+  "src/_images/tanks/german-blue-digitata-2.jpg": {
+    "hash": "143d24c70f1904d5e0188a1ce6398ee0",
+    "mtime": 1676583910240,
+    "processed": 1761158869459
+  },
+  "src/_images/tanks/german-blue-digitata.jpg": {
+    "hash": "0f8bc426f55410c573417be641cb0840",
+    "mtime": 1676583910250,
+    "processed": 1761158869475
+  },
+  "src/_images/tanks/halle-berry-zoas.jpg": {
+    "hash": "ad58b072910f4cf8a63aa40aa4105c31",
+    "mtime": 1676583910140,
+    "processed": 1761158870263
+  },
+  "src/_images/tanks/john-deere-leptastrea.jpg": {
+    "hash": "b82c95afb1cf5794d4ac8b15b41cccde",
+    "mtime": 1676583910275,
+    "processed": 1761158870265
+  },
+  "src/_images/tanks/lemon-lime-clove.jpg": {
+    "hash": "5f0ba847038086ab129c8de70c17ed6c",
+    "mtime": 1676583910141,
+    "processed": 1761158870267
+  },
+  "src/_images/tanks/micromussa-lord-blue.jpg": {
+    "hash": "2229ed3ac114dc83fa89c9cee862d24f",
+    "mtime": 1676583910143,
+    "processed": 1761158870269
+  },
+  "src/_images/tanks/micromussa-lord-lavender.jpg": {
+    "hash": "97e1fbe0c91fe034e8a13b35aa4bc49c",
+    "mtime": 1676583910279,
+    "processed": 1761158870271
+  },
+  "src/_images/tanks/micromussa-lord-rainbow-2.jpg": {
+    "hash": "34650e428fc6b9687aa5408b9f790a4e",
+    "mtime": 1676583910293,
+    "processed": 1761158870278
+  },
+  "src/_images/tanks/micromussa-lord-rainbow.jpg": {
+    "hash": "9136393993d84931b1df1e95e900055f",
+    "mtime": 1676583910195,
+    "processed": 1761158870280
+  },
+  "src/_images/tanks/micromussa-lord-red.jpg": {
+    "hash": "8eeaa18232371fc9f164de5f8432f2b8",
+    "mtime": 1676583910178,
+    "processed": 1761158870294
+  },
+  "src/_images/tanks/nirvana-zoas.jpg": {
+    "hash": "ebbf1c717c3755dbe2bda76be6119d34",
+    "mtime": 1676583910247,
+    "processed": 1761158870305
+  },
+  "src/_images/tanks/oregon-tort.jpg": {
+    "hash": "e4b52944f80ed56c5cbca9de29195157",
+    "mtime": 1676583910155,
+    "processed": 1761158870312
+  },
+  "src/_images/tanks/oxide-zoas.jpg": {
+    "hash": "2a7fe28e8877b4a425df50468e0ba195",
+    "mtime": 1676583910229,
+    "processed": 1761158870314
+  },
+  "src/_images/tanks/pc-rainbow.jpg": {
+    "hash": "34aeaf0b062136819ae7ecf1aae6d27d",
+    "mtime": 1676583910288,
+    "processed": 1761158870326
+  },
+  "src/_images/tanks/pink-zipper-zoas.jpg": {
+    "hash": "eda71ea041b0df23772e925621511a0f",
+    "mtime": 1676583910277,
+    "processed": 1761158870331
+  },
+  "src/_images/tanks/rainbow-incinerator-zoas.jpg": {
+    "hash": "149fe26efdb285e42321c5b9d1110066",
+    "mtime": 1676583910182,
+    "processed": 1761158870334
+  },
+  "src/_images/tanks/rasta-zoas.jpg": {
+    "hash": "aa01c76af352f5b9af9a9d247c41ed36",
+    "mtime": 1676583910197,
+    "processed": 1761158870348
+  },
+  "src/_images/tanks/reefer-fts-2019-05-19.jpg": {
+    "hash": "601bd30f1b8bc05e5185ab6e6eae107f",
+    "mtime": 1676583910283,
+    "processed": 1761158871015
+  },
+  "src/_images/tanks/slimeball-anacropora-and-cali-tort.jpg": {
+    "hash": "4f4eb380dcc42db9f4fe5570ff34b9a0",
+    "mtime": 1676583910255,
+    "processed": 1761158871026
+  },
+  "src/_images/tanks/sunset-plate.jpg": {
+    "hash": "1c76d63e4aaf9d221f50c321169736da",
+    "mtime": 1676583910205,
+    "processed": 1761158871029
+  },
+  "src/_images/tanks/unnamed-green-zoas.jpg": {
+    "hash": "b2b4adb8cfccb1888c2fa04248a72592",
+    "mtime": 1676583910147,
+    "processed": 1761158871032
+  },
+  "src/_images/tanks/walt-disney.jpg": {
+    "hash": "80f4c553771e6a866a05fd3c06540db7",
+    "mtime": 1676583910202,
+    "processed": 1761158871038
+  },
+  "src/_images/tanks/watchman-goby.jpg": {
+    "hash": "7e7371b8fccca5961e3c519c5e84546c",
+    "mtime": 1676583910226,
+    "processed": 1761158871043
+  },
+  "src/_images/tanks/zoa-garden.jpg": {
+    "hash": "e8a2cd092305ab368a4b09cb0d72e08d",
+    "mtime": 1676583910188,
+    "processed": 1761158871059
+  },
+  "src/_images/icons/books.png": {
+    "hash": "393a5b496ad6923cdb163e13765f001b",
+    "mtime": 1676583909939,
+    "processed": 1761158869090
+  },
+  "src/_images/icons/chat.png": {
+    "hash": "beebb58bcc569e8b3ebddfe20ae68b35",
+    "mtime": 1676583909996,
+    "processed": 1761158869092
+  },
+  "src/_images/icons/keynote.png": {
+    "hash": "9b14032b534b117aa52c44fdfaaf9b8a",
+    "mtime": 1676583909988,
+    "processed": 1761158869093
+  },
+  "src/_images/icons/link-intact.png": {
+    "hash": "e5af33946387a80f85769a69e862cefa",
+    "mtime": 1676583909931,
+    "processed": 1761158869094
+  },
+  "src/_images/icons/mic.png": {
+    "hash": "999c07841fea28c5b9b6c9061bcb91f9",
+    "mtime": 1676583910004,
+    "processed": 1761158869095
+  },
+  "src/_images/icons/notebook.png": {
+    "hash": "73216d036600f19c58534a1ec0edacb3",
+    "mtime": 1676583909946,
+    "processed": 1761158869096
+  },
+  "src/_images/posts/2014-11-06/01-lg.jpg": {
+    "hash": "275a4b487e4f7d2c6c77a11f86a948fa",
+    "mtime": 1676583909474,
+    "processed": 1761158871064
+  },
+  "src/_images/posts/2014-11-06/01-md.jpg": {
+    "hash": "e4bb24cf3ff30fcee01796b66d59ae90",
+    "mtime": 1676583909445,
+    "processed": 1761158871064
+  },
+  "src/_images/posts/2014-11-06/01-sm.jpg": {
+    "hash": "806bf74c308ae22d257ccee8d462c0e8",
+    "mtime": 1676583909530,
+    "processed": 1761158871065
+  },
+  "src/_images/posts/2014-11-06/02-lg.jpg": {
+    "hash": "3c5cf0877a443cf5e8b6817cd466c32a",
+    "mtime": 1676583909504,
+    "processed": 1761158871065
+  },
+  "src/_images/posts/2014-11-06/02-md.jpg": {
+    "hash": "49e1ae434377778e35284001c47a41c5",
+    "mtime": 1676583909527,
+    "processed": 1761158871065
+  },
+  "src/_images/posts/2014-11-06/02-sm.jpg": {
+    "hash": "ac13411d3fdf077dc98ce3f046c4feb3",
+    "mtime": 1676583909453,
+    "processed": 1761158871067
+  },
+  "src/_images/posts/2014-11-06/03-lg.jpg": {
+    "hash": "f14dac5e9174088a3eb342442e9c34ab",
+    "mtime": 1676583909448,
+    "processed": 1761158871993
+  },
+  "src/_images/posts/2014-11-06/03-md.jpg": {
+    "hash": "31ed585d174946010743e06e393a24d5",
+    "mtime": 1676583909477,
+    "processed": 1761158871994
+  },
+  "src/_images/posts/2014-11-06/03-sm.jpg": {
+    "hash": "2c50aca7cb4452ca2d12373abb456bf4",
+    "mtime": 1676583909505,
+    "processed": 1761158871994
+  },
+  "src/_images/posts/2014-11-06/04-lg.jpg": {
+    "hash": "6ae2451386e0c5715eedc434358dcc40",
+    "mtime": 1676583909482,
+    "processed": 1761158871994
+  },
+  "src/_images/posts/2014-11-06/04-md.jpg": {
+    "hash": "8326dbd24ed35c1f4de883f9c36b06d8",
+    "mtime": 1676583909501,
+    "processed": 1761158871995
+  },
+  "src/_images/posts/2014-11-06/04-sm.jpg": {
+    "hash": "c1941983756b588f0bf302f6e90bbb9d",
+    "mtime": 1676583909430,
+    "processed": 1761158871995
+  },
+  "src/_images/posts/2014-11-06/05-lg.jpg": {
+    "hash": "39fb2a1ca873e02f18dd1cf820489633",
+    "mtime": 1676583909427,
+    "processed": 1761158871996
+  },
+  "src/_images/posts/2014-11-06/05-md.jpg": {
+    "hash": "bf95e2b6ee1ca48431e6b2d71096f3fc",
+    "mtime": 1676583909437,
+    "processed": 1761158871996
+  },
+  "src/_images/posts/2014-11-06/05-sm.jpg": {
+    "hash": "c4708774727792b7f0b2a76d4f8fec39",
+    "mtime": 1676583909486,
+    "processed": 1761158871997
+  },
+  "src/_images/posts/2014-11-06/06-lg.jpg": {
+    "hash": "c0524f478d28d158a07aac43e653dd04",
+    "mtime": 1676583909494,
+    "processed": 1761158871997
+  },
+  "src/_images/posts/2014-11-06/06-md.jpg": {
+    "hash": "b5aa1b8a13a110afae1df8736071d3a0",
+    "mtime": 1676583909478,
+    "processed": 1761158871997
+  },
+  "src/_images/posts/2014-11-06/06-sm.jpg": {
+    "hash": "9b10a6323ab7655433d540d9cffef077",
+    "mtime": 1676583909440,
+    "processed": 1761158871998
+  },
+  "src/_images/posts/2014-11-06/07-lg.jpg": {
+    "hash": "79b5d98b15800c5c4cc3d89dff8a804b",
+    "mtime": 1676583909441,
+    "processed": 1761158871999
+  },
+  "src/_images/posts/2014-11-06/07-md.jpg": {
+    "hash": "cee35122d7b57cebf06a6fcaecccb776",
+    "mtime": 1676583909433,
+    "processed": 1761158871999
+  },
+  "src/_images/posts/2014-11-06/07-sm.jpg": {
+    "hash": "677c746f889fe08a837a823f50809a6c",
+    "mtime": 1676583909489,
+    "processed": 1761158871999
+  },
+  "src/_images/posts/2014-11-06/08-lg.jpg": {
+    "hash": "03c36f17090781aa657625dd37a5350f",
+    "mtime": 1676583909485,
+    "processed": 1761158872000
+  },
+  "src/_images/posts/2014-11-06/08-md.jpg": {
+    "hash": "213688d38a4f26a7c6a23e20f830befb",
+    "mtime": 1676583909497,
+    "processed": 1761158872801
+  },
+  "src/_images/posts/2014-11-06/08-sm.jpg": {
+    "hash": "a475afc3357ef909c3fa694805e60a80",
+    "mtime": 1676583909426,
+    "processed": 1761158872801
+  },
+  "src/_images/posts/2014-11-06/09-lg.jpg": {
+    "hash": "8aa41d10c5186d57f8d7ff1246800819",
+    "mtime": 1676583909429,
+    "processed": 1761158872802
+  },
+  "src/_images/posts/2014-11-06/09-md.jpg": {
+    "hash": "f18526c491a4d02898ae75ba3179938a",
+    "mtime": 1676583909436,
+    "processed": 1761158872802
+  },
+  "src/_images/posts/2014-11-06/09-sm.jpg": {
+    "hash": "8c79c68908778e67744df87ce5e4f892",
+    "mtime": 1676583909481,
+    "processed": 1761158872803
+  },
+  "src/_images/posts/2014-11-06/10-lg.jpg": {
+    "hash": "66c39f7eaaa7c0915fce9e5c3a5ab4bf",
+    "mtime": 1676583909523,
+    "processed": 1761158872804
+  },
+  "src/_images/posts/2014-11-06/10-md.jpg": {
+    "hash": "93527291a3bafcbfe24d5a4b57e9ee1f",
+    "mtime": 1676583909526,
+    "processed": 1761158872805
+  },
+  "src/_images/posts/2014-11-06/10-sm.jpg": {
+    "hash": "4ff350ab2b691233a7cfd56fee596a94",
+    "mtime": 1676583909450,
+    "processed": 1761158872805
+  },
+  "src/_images/posts/2014-11-06/11-lg.jpg": {
+    "hash": "a6042d8eba7e409c835279e93cfe04bc",
+    "mtime": 1676583909452,
+    "processed": 1761158872806
+  },
+  "src/_images/posts/2014-11-06/11-md.jpg": {
+    "hash": "df8a7eecfc2c06b4a4b9ec72b0bec777",
+    "mtime": 1676583909476,
+    "processed": 1761158872806
+  },
+  "src/_images/posts/2014-11-06/11-sm.jpg": {
+    "hash": "d5b4ea60b9c94f9aba20c023173574a7",
+    "mtime": 1676583909502,
+    "processed": 1761158872806
+  },
+  "src/_images/posts/2014-11-06/12-lg.jpg": {
+    "hash": "5a8fbc611667bb17b999fdfb4829785c",
+    "mtime": 1676583909529,
+    "processed": 1761158872807
+  },
+  "src/_images/posts/2014-11-06/12-md.jpg": {
+    "hash": "819af9cb14c976f94a017ffac36f8132",
+    "mtime": 1676583909525,
+    "processed": 1761158872807
+  },
+  "src/_images/posts/2014-11-06/12-sm.jpg": {
+    "hash": "0160448a41b1d85bef384d6e21bd2121",
+    "mtime": 1676583909473,
+    "processed": 1761158872808
+  },
+  "src/_images/posts/2014-11-06/13-lg.jpg": {
+    "hash": "2e53e4606c7c53a5635bb7dbc4838eec",
+    "mtime": 1676583909455,
+    "processed": 1761158872808
+  },
+  "src/_images/posts/2014-11-06/13-md.jpg": {
+    "hash": "c37c7bb0d0ddc5a0458011b5fd77944d",
+    "mtime": 1676583909447,
+    "processed": 1761158872809
+  },
+  "src/_images/posts/2014-11-06/13-sm.jpg": {
+    "hash": "7dbacf3c60e623bc2043024bd5ebf4f8",
+    "mtime": 1676583909531,
+    "processed": 1761158875780
+  },
+  "src/_images/posts/2014-11-06/14-lg.jpg": {
+    "hash": "443ccc226791a72569169e4197951b4d",
+    "mtime": 1676583909490,
+    "processed": 1761158875781
+  },
+  "src/_images/posts/2014-11-06/14-md.jpg": {
+    "hash": "738038e89670ed7ee6c44a1412e111ca",
+    "mtime": 1676583909480,
+    "processed": 1761158875782
+  },
+  "src/_images/posts/2014-11-06/14-sm.jpg": {
+    "hash": "9eeb6579dc4b2778ba4ccf4edcde7b13",
+    "mtime": 1676583909442,
+    "processed": 1761158875784
+  },
+  "src/_images/posts/2014-11-06/15-lg.jpg": {
+    "hash": "e2306ee2e462cb4ef2ab704d6cf7b6fd",
+    "mtime": 1676583909438,
+    "processed": 1761158875785
+  },
+  "src/_images/posts/2014-11-06/15-md.jpg": {
+    "hash": "e04cf53aacf0951290058d1fe3f9c41e",
+    "mtime": 1676583909434,
+    "processed": 1761158875786
+  },
+  "src/_images/posts/2014-11-06/15-sm.jpg": {
+    "hash": "f86ebd403bbe096faf299878b039d00e",
+    "mtime": 1676583909491,
+    "processed": 1761158875808
+  },
+  "src/_images/posts/2014-11-06/16-lg.jpg": {
+    "hash": "2b61d6340cfb804b8ccbf3adcb69897c",
+    "mtime": 1676583909484,
+    "processed": 1761158875809
+  },
+  "src/_images/posts/2014-11-06/16-md.jpg": {
+    "hash": "acc1e68098e496543c041faaacc177b1",
+    "mtime": 1676583909499,
+    "processed": 1761158875810
+  },
+  "src/_images/posts/2014-11-06/16-sm.jpg": {
+    "hash": "d6373f5be9ce81c7bf837679a587c844",
+    "mtime": 1676583909424,
+    "processed": 1761158875811
+  },
+  "src/_images/posts/2014-11-06/17-lg.jpg": {
+    "hash": "64055279044eb4f267f67cef42c7b6ab",
+    "mtime": 1676583909431,
+    "processed": 1761158875825
+  },
+  "src/_images/posts/2014-11-06/17-md.jpg": {
+    "hash": "023c0855703fa894454d8cedb9b8d0b5",
+    "mtime": 1676583909435,
+    "processed": 1761158875827
+  },
+  "src/_images/posts/2014-11-06/17-sm.jpg": {
+    "hash": "df8d9da4105bd6c3711eed8341699063",
+    "mtime": 1676583909483,
+    "processed": 1761158875828
+  },
+  "src/_images/posts/2014-11-06/18-lg.jpg": {
+    "hash": "9d26aeb842d9791794680a7f4510bb91",
+    "mtime": 1676583909493,
+    "processed": 1761158875828
+  },
+  "src/_images/posts/2014-11-06/18-md.jpg": {
+    "hash": "c3b1ee367b2b370e30ab90e533f4d3c2",
+    "mtime": 1676583909479,
+    "processed": 1761158875830
+  },
+  "src/_images/posts/2014-11-06/18-sm.jpg": {
+    "hash": "5ed025507be75e9555793f672dd1a9cc",
+    "mtime": 1676583909439,
+    "processed": 1761158875833
+  },
+  "src/_images/posts/2014-11-06/19-lg.jpg": {
+    "hash": "0547b84d0ccdd49d45c5bb59a486657e",
+    "mtime": 1676583909443,
+    "processed": 1761158881466
+  },
+  "src/_images/posts/2014-11-06/19-md.jpg": {
+    "hash": "063814b0917ece80a967386d47ecf3d0",
+    "mtime": 1676583909432,
+    "processed": 1761158881469
+  },
+  "src/_images/posts/2014-11-06/19-sm.jpg": {
+    "hash": "4562bd66464cccf9fe684142d39d6430",
+    "mtime": 1676583909491,
+    "processed": 1761158881471
+  },
+  "src/_images/posts/2014-11-06/20-lg.jpg": {
+    "hash": "eac55c15d5223fc68f7e27001c7742d3",
+    "mtime": 1676583909487,
+    "processed": 1761158881473
+  },
+  "src/_images/posts/2014-11-06/20-md.jpg": {
+    "hash": "736300a896866eb1d0e825119346b9a3",
+    "mtime": 1676583909496,
+    "processed": 1761158881475
+  },
+  "src/_images/posts/2014-11-06/20-sm.jpg": {
+    "hash": "418bdb3763fcaeab94dc33aaac22fa2b",
+    "mtime": 1676583909406,
+    "processed": 1761158881476
+  },
+  "src/_images/posts/2015-01-22/creepy-lg.png": {
+    "hash": "718001e55ec27922f5ebe9cd93d7cb5d",
+    "mtime": 1676583909539,
+    "processed": 1761158871062
+  },
+  "src/_images/posts/2015-01-22/creepy-md.png": {
+    "hash": "12a77fe4772634ad3c580bb35c913d7e",
+    "mtime": 1676583909540,
+    "processed": 1761158871063
+  },
+  "src/_images/posts/2015-01-22/creepy-sm.png": {
+    "hash": "347a172c1b232831544ff5d71a9acdf8",
+    "mtime": 1676583909541,
+    "processed": 1761158871064
+  },
+  "src/_images/posts/2015-03-26/first-pass-lg.jpg": {
+    "hash": "4d3709a539f930bfcd2a1d9c9ca8fd43",
+    "mtime": 1676583909381,
+    "processed": 1761158881483
+  },
+  "src/_images/posts/2015-03-26/first-pass-md.jpg": {
+    "hash": "0ebf1429c4262fdba4df9a56c819e619",
+    "mtime": 1676583909377,
+    "processed": 1761158881485
+  },
+  "src/_images/posts/2015-03-26/first-pass-sm.jpg": {
+    "hash": "3922642b7a9f50818bc01c0d246044a5",
+    "mtime": 1676583909354,
+    "processed": 1761158881486
+  },
+  "src/_images/posts/2015-03-26/second-pass-lg.jpg": {
+    "hash": "d1e2c5f90d8dcb33f5b9e19064f4658e",
+    "mtime": 1676583909351,
+    "processed": 1761158881486
+  },
+  "src/_images/posts/2015-03-26/second-pass-md.jpg": {
+    "hash": "1ec303f97ab6617d8003da17c8e1c560",
+    "mtime": 1676583909349,
+    "processed": 1761158881487
+  },
+  "src/_images/posts/2015-03-26/second-pass-sm.jpg": {
+    "hash": "02d97758b45417a8f321185a26475ceb",
+    "mtime": 1676583909373,
+    "processed": 1761158881487
+  },
+  "src/_images/posts/2015-03-26/the-idea-lg.jpg": {
+    "hash": "32fd4e6e96c2fe0f088acabd483ca2ee",
+    "mtime": 1676583909375,
+    "processed": 1761158881488
+  },
+  "src/_images/posts/2015-03-26/the-idea-md.jpg": {
+    "hash": "f437e080ebf81da2a8b1bff8ea204f4e",
+    "mtime": 1676583909379,
+    "processed": 1761158881489
+  },
+  "src/_images/posts/2015-03-26/the-idea-sm.jpg": {
+    "hash": "ab7157d256e9e1bb7e54cab46db19af1",
+    "mtime": 1676583909352,
+    "processed": 1761158884395
+  },
+  "src/_images/posts/2015-03-26/third-pass-lg.jpg": {
+    "hash": "aa0997a1a0fcaa0896c54bf8d1e8d0b9",
+    "mtime": 1676583909378,
+    "processed": 1761158884396
+  },
+  "src/_images/posts/2015-03-26/third-pass-md.jpg": {
+    "hash": "e6d0de472ba32f784169da9547108cb2",
+    "mtime": 1676583909376,
+    "processed": 1761158884396
+  },
+  "src/_images/posts/2015-03-26/third-pass-sm.jpg": {
+    "hash": "5d00de0da4398ee8d02bb55a4fa1dd98",
+    "mtime": 1676583909355,
+    "processed": 1761158884397
+  },
+  "src/_images/posts/2015-02-26/atom-lg.jpg": {
+    "hash": "ca546fbe5fc4f3604de792cd1707c507",
+    "mtime": 1676583909336,
+    "processed": 1761158881480
+  },
+  "src/_images/posts/2015-02-26/atom-sm.jpg": {
+    "hash": "1872e3b2fe7d2245f562e50d406f1479",
+    "mtime": 1676583909335,
+    "processed": 1761158881481
+  },
+  "src/_images/posts/2015-05-28/01.png": {
+    "hash": "c767229dfb832aa037f1c83c98da7652",
+    "mtime": 1676583909749,
+    "processed": 1761158884397
+  },
+  "src/_images/posts/2015-05-28/02.png": {
+    "hash": "e2344151f72b187091677febaacb4088",
+    "mtime": 1676583909754,
+    "processed": 1761158884399
+  },
+  "src/_images/posts/2015-05-28/03.png": {
+    "hash": "fd8b7ffa1113057afaad54773f77ec63",
+    "mtime": 1676583909752,
+    "processed": 1761158884399
+  },
+  "src/_images/posts/2015-05-28/04.png": {
+    "hash": "f350e5c3dc81c530840f51a24d548c58",
+    "mtime": 1676583909776,
+    "processed": 1761158884400
+  },
+  "src/_images/posts/2015-05-28/05.png": {
+    "hash": "bd994ecd88eeae4ab4a480c091a25103",
+    "mtime": 1676583909773,
+    "processed": 1761158884401
+  },
+  "src/_images/posts/2015-06-22/01.jpg": {
+    "hash": "6a7f03c3f69ed5906fae5b93502268c3",
+    "mtime": 1676583909635,
+    "processed": 1761158884402
+  },
+  "src/_images/posts/2015-06-22/03.jpg": {
+    "hash": "7fa041272e0eefd0d1e10b4eb0553e8c",
+    "mtime": 1676583909637,
+    "processed": 1761158884406
+  },
+  "src/_images/posts/2015-06-22/04.jpg": {
+    "hash": "a3c2650843679aeb0bc6dcc33b4a8318",
+    "mtime": 1676583909645,
+    "processed": 1761158884412
+  },
+  "src/_images/posts/2015-06-22/05.jpg": {
+    "hash": "059c3badc5d91c6f577e237285250db5",
+    "mtime": 1676583909641,
+    "processed": 1761158884415
+  },
+  "src/_images/posts/2015-06-22/06.jpg": {
+    "hash": "e8bb6ba46836bfa66a0612e955f61365",
+    "mtime": 1676583909639,
+    "processed": 1761158884421
+  },
+  "src/_images/posts/2015-06-22/02.gif": {
+    "hash": "6d92f4427d454d43e8eba9f07364f146",
+    "mtime": 1676583909648,
+    "processed": 1761158884422
+  },
+  "src/_images/posts/2015-08-17/01.png": {
+    "hash": "099ca65d7880d460e8c25a734ea2fd14",
+    "mtime": 1676583909390,
+    "processed": 1761158884423
+  },
+  "src/_images/posts/2015-08-17/02.png": {
+    "hash": "6e0d93630471a42089bb8243639f6621",
+    "mtime": 1676583909392,
+    "processed": 1761158885082
+  },
+  "src/_images/posts/2015-11-11/01.png": {
+    "hash": "94827c82e96f67dd73aa141e3ba38977",
+    "mtime": 1676583909784,
+    "processed": 1761158885083
+  },
+  "src/_images/posts/2015-11-11/03.png": {
+    "hash": "24d969b5bffa6d66c54bfab733d65bf3",
+    "mtime": 1676583909785,
+    "processed": 1761158885084
+  },
+  "src/_images/posts/2015-11-11/02.gif": {
+    "hash": "bf31241cab95fbc883e7ef39c579c92e",
+    "mtime": 1676583909787,
+    "processed": 1761158885085
+  },
+  "src/_images/posts/2015-11-11/04.gif": {
+    "hash": "22d5f05d6c878aed74d73b379ccbbdaa",
+    "mtime": 1676583909793,
+    "processed": 1761158885086
+  },
+  "src/_images/posts/2015-11-11/05.gif": {
+    "hash": "16dbc05faeb018477104de459d3e0d1f",
+    "mtime": 1676583909791,
+    "processed": 1761158885086
+  },
+  "src/_images/posts/2015-11-11/06.gif": {
+    "hash": "7ec9805afbe8af10474ba56a600bda6e",
+    "mtime": 1676583909788,
+    "processed": 1761158885087
+  },
+  "src/_images/posts/2015-11-11/07.gif": {
+    "hash": "85fd9305017a622658dad01e31b30aa8",
+    "mtime": 1676583909790,
+    "processed": 1761158885087
+  },
+  "src/_images/posts/2015-11-12/01.jpg": {
+    "hash": "6caf4e5356fb55f44dda98cd7e59e8f0",
+    "mtime": 1676583909543,
+    "processed": 1761158885087
+  },
+  "src/_images/posts/2016-01-06/01.png": {
+    "hash": "b507b07e348284d4eb7d0f99751edd97",
+    "mtime": 1676583909394,
+    "processed": 1761158885088
+  },
+  "src/_images/posts/2016-01-06/02.png": {
+    "hash": "e671f6cbf20f1cf0e08a1a8c181543d9",
+    "mtime": 1676583909397,
+    "processed": 1761158885088
+  },
+  "src/_images/posts/2016-01-06/03.png": {
+    "hash": "1574b6a1f2072e042a6146767e4b21a1",
+    "mtime": 1676583909395,
+    "processed": 1761158885089
+  },
+  "src/_images/posts/2016-01-06/04.png": {
+    "hash": "428d4b8aa29b5cd0246bd39ba4811b5a",
+    "mtime": 1676583909398,
+    "processed": 1761158885089
+  },
+  "src/_images/posts/2016-03-04/11.jpg": {
+    "hash": "11763e038b5d2053ef06d9dadf047844",
+    "mtime": 1676583909305,
+    "processed": 1761158885090
+  },
+  "src/_images/posts/2016-03-04/12.jpg": {
+    "hash": "765aad6784f06c6f7f68c494d21f7835",
+    "mtime": 1676583909302,
+    "processed": 1761158885091
+  },
+  "src/_images/posts/2016-03-04/03.png": {
+    "hash": "d89359eae5fcb49d1688713c9b8ef53d",
+    "mtime": 1676583909299,
+    "processed": 1761158885092
+  },
+  "src/_images/posts/2016-03-04/04.png": {
+    "hash": "12f3b072a07acc9a05cdf56a1a961d89",
+    "mtime": 1676583909306,
+    "processed": 1761158886030
+  },
+  "src/_images/posts/2016-03-04/09.png": {
+    "hash": "6ecdeb9b2020d764c10a6d42b081c0f4",
+    "mtime": 1676583909325,
+    "processed": 1761158886031
+  },
+  "src/_images/posts/2016-03-04/10.png": {
+    "hash": "51e1cc2b0fd3138410d6e5f5b6b72cff",
+    "mtime": 1676583909324,
+    "processed": 1761158886031
+  },
+  "src/_images/posts/2016-03-04/13.png": {
+    "hash": "ed1e864f8892a7e5976ed296f4b92437",
+    "mtime": 1676583909303,
+    "processed": 1761158886032
+  },
+  "src/_images/posts/2016-03-04/01.gif": {
+    "hash": "aae4995bd53531a58d5489997c7a6925",
+    "mtime": 1676583909330,
+    "processed": 1761158886032
+  },
+  "src/_images/posts/2016-03-04/02.gif": {
+    "hash": "f041d5eb503f5f85352cdcf51779acaa",
+    "mtime": 1676583909331,
+    "processed": 1761158886032
+  },
+  "src/_images/posts/2016-04-11/03.jpg": {
+    "hash": "fbbdc357e3269dee6cd318b980ce523a",
+    "mtime": 1676583909653,
+    "processed": 1761158886036
+  },
+  "src/_images/posts/2016-04-11/08.jpg": {
+    "hash": "e47bea32a8869cb0c1921bb009195c51",
+    "mtime": 1676583909682,
+    "processed": 1761158886037
+  },
+  "src/_images/posts/2016-04-11/02.png": {
+    "hash": "cf0b47e4302155c870ecf336ea4eef82",
+    "mtime": 1676583909656,
+    "processed": 1761158886039
+  },
+  "src/_images/posts/2016-04-11/04.png": {
+    "hash": "5b93a5ec2a8664a287ed209faab2d8e6",
+    "mtime": 1676583909681,
+    "processed": 1761158886039
+  },
+  "src/_images/posts/2016-04-11/05.png": {
+    "hash": "b09ed9ec522bb9dd289d705970321bd8",
+    "mtime": 1676583909679,
+    "processed": 1761158886040
+  },
+  "src/_images/posts/2016-04-11/06.png": {
+    "hash": "8d3a843abecd59b327b85ef9c9ed8321",
+    "mtime": 1676583909675,
+    "processed": 1761158886040
+  },
+  "src/_images/posts/2016-04-11/07.png": {
+    "hash": "1157d6ba923871ca31f9ef6eca086395",
+    "mtime": 1676583909677,
+    "processed": 1761158886041
+  },
+  "src/_images/posts/2016-04-11/01.gif": {
+    "hash": "cccfbd229156bc84401d9c48cadb03f3",
+    "mtime": 1676583909684,
+    "processed": 1761158886042
+  },
+  "src/_images/posts/2016-10-11/oscar.jpg": {
+    "hash": "af8931fafcd6a5371e6e8dbc0344998b",
+    "mtime": 1676583909603,
+    "processed": 1761158886035
+  },
+  "src/_images/posts/2016-10-17/kodak-roadblock.png": {
+    "hash": "d3e08daf82b57aba8b43a0d40a90408f",
+    "mtime": 1676583909632,
+    "processed": 1761158886043
+  },
+  "src/_images/posts/2016-10-25/webbloatscore.png": {
+    "hash": "f46dd6250938a6987004be243f640c2b",
+    "mtime": 1676583909344,
+    "processed": 1761158886795
+  },
+  "src/_images/posts/2016-12-06/01.png": {
+    "hash": "1a059e78e41fc1c48179ffa562ae9a1e",
+    "mtime": 1676583909691,
+    "processed": 1761158886796
+  },
+  "src/_images/posts/2016-12-06/02.png": {
+    "hash": "96fd2c752b2fb49cb760261d6d5640fa",
+    "mtime": 1676583909697,
+    "processed": 1761158886798
+  },
+  "src/_images/posts/2016-12-06/03.png": {
+    "hash": "6ebb46153eef08e5e62aa2961026cc50",
+    "mtime": 1676583909694,
+    "processed": 1761158886801
+  },
+  "src/_images/posts/2017-03-31/video-avi-poster.jpg": {
+    "hash": "72986bde46a4771b0cdd0c54e053c6e4",
+    "mtime": 1676583909727,
+    "processed": 1761158886795
+  },
+  "src/_images/posts/2019-04-26/share-target.png": {
+    "hash": "120dd4df34de3d9e36b1d3c2a3783985",
+    "mtime": 1676583909383,
+    "processed": 1761158886806
+  },
+  "src/_images/posts/2021-11-19/hero.jpg": {
+    "hash": "db666fc6c051efe619495f2c7df6bc63",
+    "mtime": 1676583909598,
+    "processed": 1761158886807
+  },
+  "src/_images/posts/2021-11-19/hero.png": {
+    "hash": "11936eb02f0d79a0fcd9550e535002cf",
+    "mtime": 1676583909595,
+    "processed": 1761158886811
+  },
+  "src/_images/posts/2017-05-24/11.jpg": {
+    "hash": "8c4bd948680ecd2ef091ac0d0ae41cad",
+    "mtime": 1676583909555,
+    "processed": 1761158886802
+  },
+  "src/_images/posts/2017-05-24/04.png": {
+    "hash": "d71bc270ff86efdd51747f2bbde8720e",
+    "mtime": 1676583909556,
+    "processed": 1761158886803
+  },
+  "src/_images/posts/2017-05-24/06.png": {
+    "hash": "821de922b5e871d9d7d9c3160dc29c32",
+    "mtime": 1676583909550,
+    "processed": 1761158886803
+  },
+  "src/_images/posts/2017-05-24/07.png": {
+    "hash": "bc7e961657fe3e35a360a74a1bf9ca89",
+    "mtime": 1676583909553,
+    "processed": 1761158886804
+  },
+  "src/_images/posts/2017-05-24/09.png": {
+    "hash": "75d6b508484cc7ac683126885b3403e3",
+    "mtime": 1676583909576,
+    "processed": 1761158886804
+  },
+  "src/_images/posts/2017-05-24/10.png": {
+    "hash": "8cb5f773ee34a753fa806502c369bad8",
+    "mtime": 1676583909574,
+    "processed": 1761158886805
+  },
+  "src/_images/posts/2017-05-24/12.png": {
+    "hash": "3daa82598ebef86183ef5c3fb6986f28",
+    "mtime": 1676583909552,
+    "processed": 1761158886805
+  },
+  "src/_images/posts/2022-07-27/hero.jpg": {
+    "hash": "c866f0e046465e43be71fb9fdf82bf4c",
+    "mtime": 1676583909734,
+    "processed": 1761158887275
+  },
+  "src/_images/posts/2022-07-27/hero.png": {
+    "hash": "0bd6f1c1d1d3522306d96c18db4b1404",
+    "mtime": 1676583909732,
+    "processed": 1761158887279
+  },
+  "src/_images/posts/2022-06-10/hero.jpg": {
+    "hash": "2684191c9bc7361c0e5c41a5117c3661",
+    "mtime": 1676583909707,
+    "processed": 1761158887271
+  },
+  "src/_images/posts/2022-06-10/hero.png": {
+    "hash": "5b0342b2b2ea437e30748ad1e9588a37",
+    "mtime": 1676583909704,
+    "processed": 1761158887274
+  },
+  "src/_images/posts/2022-02-15/hero.jpg": {
+    "hash": "597271faf4c45035e15e2f9aae1f990c",
+    "mtime": 1676583909388,
+    "processed": 1761158886818
+  },
+  "src/_images/posts/2022-02-15/hero.png": {
+    "hash": "1e500a8ad6907f6e40edbdd40d8b8db8",
+    "mtime": 1676583909386,
+    "processed": 1761158887270
+  },
+  "src/_images/posts/2022-08-11/hero.jpg": {
+    "hash": "897ebb979eab74c3b61f4a8087c31dc6",
+    "mtime": 1676583909628,
+    "processed": 1761158887280
+  },
+  "src/_images/posts/2022-08-11/hero.png": {
+    "hash": "e1b407248e0794fb9e673018951fb695",
+    "mtime": 1676583909626,
+    "processed": 1761158887283
+  },
+  "src/_images/posts/2022-08-22/01.jpg": {
+    "hash": "c8e40e0815f1c5afbf3480f0ef3d401d",
+    "mtime": 1676583909342,
+    "processed": 1761158887284
+  },
+  "src/_images/posts/2022-08-22/hero.jpg": {
+    "hash": "55ddebf701bc4114a40c5800c4e90018",
+    "mtime": 1676583909341,
+    "processed": 1761158887285
+  },
+  "src/_images/posts/2022-08-22/hero.png": {
+    "hash": "8b9029db528af951d4b3f6052de9e9f2",
+    "mtime": 1676583909340,
+    "processed": 1761158887288
+  },
+  "src/_images/posts/2022-08-31/hero.jpg": {
+    "hash": "c8bf44e20a0d647052feaf84cbd37161",
+    "mtime": 1676583909536,
+    "processed": 1761158887289
+  },
+  "src/_images/posts/2022-08-31/hero.png": {
+    "hash": "e1c8c786bd0a29985f12e85fd33874db",
+    "mtime": 1676583909535,
+    "processed": 1761158887294
+  },
+  "src/_images/posts/2022-09-19/hero.jpg": {
+    "hash": "bc9a6dd7cbf70e6998083ea263e228fa",
+    "mtime": 1676583909701,
+    "processed": 1761158887295
+  },
+  "src/_images/posts/2022-10-03/hero.png": {
+    "hash": "80b6f96aeb89b01a91ddfa93e863e666",
+    "mtime": 1676583909589,
+    "processed": 1761158887312
+  },
+  "src/_images/posts/2022-10-03/hero.jpg": {
+    "hash": "531f89bef2ddae0a91824cd819ebe71c",
+    "mtime": 1676583909591,
+    "processed": 1761158887300
+  },
+  "src/_images/posts/2022-10-07/hero.jpg": {
+    "hash": "fa056bc7f7fae569b7c9d10b87c57c44",
+    "mtime": 1676583909781,
+    "processed": 1761158887298
+  },
+  "src/_images/posts/2022-10-12/hero.jpg": {
+    "hash": "2d9649873214a3b8e0e94d886f5b9e75",
+    "mtime": 1676583909688,
+    "processed": 1761158889748
+  },
+  "src/_images/headshots/2022-sm.jpg": {
+    "hash": "d2849781d93ddf4034960c34b637dcef",
+    "mtime": 1676583909825,
+    "processed": 1761158869065
+  },
+  "src/_images/headshots/2022.jpg": {
+    "hash": "2ef98f0ed415887048b69195de1ab7d5",
+    "mtime": 1676583909837,
+    "processed": 1761158869073
+  },
+  "src/_images/posts/2022-12-13/hero.png": {
+    "hash": "1a3c0e06cc5175da860541a155906de4",
+    "mtime": 1676583909402,
+    "processed": 1761158889753
+  },
+  "src/_images/posts/2023-02-03/hero.jpg": {
+    "hash": "f1e5c228226a6f1562ee3b86e3cfbe03",
+    "mtime": 1676583909739,
+    "processed": 1761158889755
+  },
+  "src/_images/posts/2023-02-03/iphone.jpg": {
+    "hash": "83ef3e7bf0a2bfe3a57cea80c8efd871",
+    "mtime": 1676583909741,
+    "processed": 1761158889757
+  },
+  "src/_images/posts/2023-02-03/app-store.png": {
+    "hash": "79f86da24cb6c79cbce451a1edf41045",
+    "mtime": 1676583909743,
+    "processed": 1761158889758
+  },
+  "src/_images/posts/2023-03-06/hero.jpg": {
+    "hash": "81172d07e4ddac40e743c5c0690fa72a",
+    "mtime": 1678153286067,
+    "processed": 1761158889759
+  },
+  "src/_images/posts/2023-03-16/hero.png": {
+    "hash": "cef1e9dfc36e57c26b005d1a20ec8c8f",
+    "mtime": 1679000530551,
+    "processed": 1761158889760
+  },
+  "src/_images/posts/2023-04-21/hero.jpg": {
+    "hash": "c628d444b47077a9d6aa8f6cb592ac88",
+    "mtime": 1695755738853,
+    "processed": 1761158889760
+  },
+  "src/_images/talks/beyond-responsive.png": {
+    "hash": "cfcb713da478494b596695bc6d07158e",
+    "mtime": 1695755738947,
+    "processed": 1761158869259
+  },
+  "src/_images/talks/adaptive-designs-across-devices.png": {
+    "hash": "c1fa0ee63ccac78ec986d2bcb6fad844",
+    "mtime": 1695755738939,
+    "processed": 1761158869249
+  },
+  "src/_images/talks/better-performance-greater-accessibility.png": {
+    "hash": "1cb2068b2e97ee70528dd009889ef7dc",
+    "mtime": 1695755738946,
+    "processed": 1761158869258
+  },
+  "src/_images/talks/conversational-semantics-for-the-web.png": {
+    "hash": "cae851611ace569012735e5f44902df6",
+    "mtime": 1695755738948,
+    "processed": 1761158869261
+  },
+  "src/_images/talks/exploring-adaptive-interfaces.png": {
+    "hash": "a998f15196a5c190d64801d53eab9a80",
+    "mtime": 1695755738956,
+    "processed": 1761158869274
+  },
+  "src/_images/talks/falling-in-love-with-forms.png": {
+    "hash": "809f6ed827708474469a0c29ccd10e50",
+    "mtime": 1695755738957,
+    "processed": 1761158869277
+  },
+  "src/_images/talks/getting-started-with-pwas-workshop.png": {
+    "hash": "18a3ec1366579ed70b875d9056d64ac8",
+    "mtime": 1695755738962,
+    "processed": 1761158869283
+  },
+  "src/_images/talks/designing-with-empathy.png": {
+    "hash": "a0a3c74d8340ac29a34b73d8b86ea633",
+    "mtime": 1695755738955,
+    "processed": 1761158869271
+  },
+  "src/_images/talks/designing-the-conversation.png": {
+    "hash": "6e28fab956c5bf48cf911aa78f3a7a95",
+    "mtime": 1695755738954,
+    "processed": 1761158869269
+  },
+  "src/_images/talks/learn-from-the-past-enhance-for-the-future.png": {
+    "hash": "d6fe3cb46d97bf647be4680438aae8b7",
+    "mtime": 1695755738964,
+    "processed": 1761158869288
+  },
+  "src/_images/talks/planning-adaptive-interfaces.png": {
+    "hash": "b8e9fb052ed4961645972a8d4331d4e0",
+    "mtime": 1695755738966,
+    "processed": 1761158869298
+  },
+  "src/_images/talks/progressive-enhancement-where-do-i-begin.png": {
+    "hash": "7e17aeaab5b31b66a83a4a15528a4fa1",
+    "mtime": 1695755738967,
+    "processed": 1761158869299
+  },
+  "src/_images/talks/progressive-web-apps-and-the-windows-ecosystem.png": {
+    "hash": "12e7f31be020ca1de9221843a0ba3df1",
+    "mtime": 1695755738969,
+    "processed": 1761158869301
+  },
+  "src/_images/talks/the-features-of-highly-effective-forms.png": {
+    "hash": "6523bd426afdc71648853c6634c5c2d6",
+    "mtime": 1695755738974,
+    "processed": 1761158869310
+  },
+  "src/_images/talks/the-web-should-just-work-for-everyone.png": {
+    "hash": "3f520e2c6e269864b59fda3530ae94c8",
+    "mtime": 1695755738976,
+    "processed": 1761158869313
+  },
+  "src/_images/talks/there-are-no-buts-in-progressive-enhancement.png": {
+    "hash": "f238c3088b6d4ee9e68cbc8e779f2abb",
+    "mtime": 1695755738978,
+    "processed": 1761158869316
+  },
+  "src/_images/talks/accessibility-beyond-code-compliance.png": {
+    "hash": "c78c9fb4609d896b2d98b4a86c380107",
+    "mtime": 1695755738937,
+    "processed": 1761158869246
+  },
+  "src/_images/talks/dont-worry-be-appy.png": {
+    "hash": "703068e2e87f7e2bf1a1f85e167cf1e3",
+    "mtime": 1695755738955,
+    "processed": 1761158869272
+  },
+  "src/_images/talks/adapting-to-reality.png": {
+    "hash": "46b6a6996cf948fd320c0f5ba0338b91",
+    "mtime": 1695755738938,
+    "processed": 1761158869248
+  },
+  "src/_images/talks/delivering-critical-information-services.png": {
+    "hash": "91e4e09dd2c4d16fbdbc996ba18aea0e",
+    "mtime": 1695755738949,
+    "processed": 1761158869262
+  },
+  "src/_images/talks/progressive-web-apps-where-do-i-begin.png": {
+    "hash": "833eaf818f5c3a87a1cde25065359d87",
+    "mtime": 1695755738969,
+    "processed": 1761158869304
+  },
+  "src/_images/talks/media-in-the-age-of-pwas.png": {
+    "hash": "b4bf451fdecda376b1110f168451e66f",
+    "mtime": 1695755738965,
+    "processed": 1761158869290
+  },
+  "src/_images/talks/performance-as-user-experience.png": {
+    "hash": "2554c0e889ea3cacbe72908948649585",
+    "mtime": 1695755738966,
+    "processed": 1761158869292
+  },
+  "src/_images/talks/writing-for-engagement.jpg": {
+    "hash": "2fbe8e2d9a5ede18cf42c70534d98693",
+    "mtime": 1695755738980,
+    "processed": 1761158869242
+  },
+  "src/_images/talks/advanced-design-methods.png": {
+    "hash": "b7242d6c61add7424a9c955abff6e69e",
+    "mtime": 1695755738945,
+    "processed": 1761158869256
+  },
+  "src/_images/talks/designing-for-everyone.png": {
+    "hash": "c947328bba8a4111cc8cd257111a9990",
+    "mtime": 1695755738953,
+    "processed": 1761158869267
+  },
+  "src/_images/talks/intro-to-adaptive-web-design.png": {
+    "hash": "456767da9f003294c074d5f50bc3a82b",
+    "mtime": 1695755738963,
+    "processed": 1761158869284
+  },
+  "src/_images/talks/responsive-design-and-beyond.png": {
+    "hash": "442c101a9b0dbee4fa233acf6d83f487",
+    "mtime": 1695755738971,
+    "processed": 1761158869306
+  },
+  "src/_images/talks/the-web-is-for-everyone.png": {
+    "hash": "010997d48447aff2dc2e2ce6c1b436d8",
+    "mtime": 1695755738975,
+    "processed": 1761158869312
+  },
+  "src/_images/talks/your-brand-is-not-a-logo.png": {
+    "hash": "bed09b5e64629b8d87958496996e4cd6",
+    "mtime": 1695755738981,
+    "processed": 1761158869317
+  },
+  "src/_images/posts/2023-06-09/hero.jpg": {
+    "hash": "98c7d4def550ca24a54513151cbb1e53",
+    "mtime": 1695755738863,
+    "processed": 1761158889763
+  },
+  "src/_images/books/design-for-developers.jpg": {
+    "hash": "963bacb05ac9898e23b0a8a2a8aa63e3",
+    "mtime": 1695755738833,
+    "processed": 1761158868537
+  },
+  "src/_images/posts/2023-08-21/hero.jpg": {
+    "hash": "2423ad87c1ab6aa57e51041dbf6bb03c",
+    "mtime": 1695755738882,
+    "processed": 1761158889767
+  },
+  "src/_images/posts/2023-08-21/01.png": {
+    "hash": "f61d94783ce2097c843fc17dd4a67e7d",
+    "mtime": 1695755738867,
+    "processed": 1761158889772
+  },
+  "src/_images/posts/2023-08-21/02.png": {
+    "hash": "c3e00c8e73d3db7d1ed5747f1e780761",
+    "mtime": 1695755738869,
+    "processed": 1761158889773
+  },
+  "src/_images/talks/adaptive-web-design-layer-by-layer.png": {
+    "hash": "72475f3ff448599ae612cde0af53fda9",
+    "mtime": 1695755738942,
+    "processed": 1761158869253
+  },
+  "src/_images/talks/adaptive-web-design.png": {
+    "hash": "edf8209e2c75e7fbf375b0449dd4476f",
+    "mtime": 1695755738944,
+    "processed": 1761158869255
+  },
+  "src/_images/talks/designing-across-devices-with-progressive-enhancement.png": {
+    "hash": "8b5007f920abc29909edaea698a16dac",
+    "mtime": 1695755738952,
+    "processed": 1761158869266
+  },
+  "src/_images/talks/finding-empathy-and-the-golden-rule.png": {
+    "hash": "aef2d8b406466b234fd4131fc2529270",
+    "mtime": 1695755738961,
+    "processed": 1761158869281
+  },
+  "src/_images/talks/responsive-design-studio.png": {
+    "hash": "081ee8084cc0f9713ae66662294bc26f",
+    "mtime": 1695755738973,
+    "processed": 1761158869309
+  },
+  "src/_images/posts/2023-09-08/aaron-and-molly.jpg": {
+    "hash": "d202c1a657f63b48bdee7d5e6c9c10bd",
+    "mtime": 1695755738886,
+    "processed": 1761158889774
+  },
+  "src/_images/posts/2023-09-08/breakfast-at-sxsw.jpg": {
+    "hash": "77207f788e1a0064528f44d62a139455",
+    "mtime": 1695755738888,
+    "processed": 1761158889775
+  },
+  "src/_images/posts/2023-09-08/molly-and-bill.jpg": {
+    "hash": "cd1e713236cf8161bd7976a6fe839401",
+    "mtime": 1695755738889,
+    "processed": 1761158889775
+  },
+  "src/_images/posts/2023-09-08/molly-and-patrick-at-tpac.jpg": {
+    "hash": "7c3426aecb62c8ca73f9addfff8770db",
+    "mtime": 1695755738912,
+    "processed": 1761158889791
+  },
+  "src/_images/posts/2023-09-08/molly-presenting.jpg": {
+    "hash": "46407a7b0be1bf57c8594991a40e6a3f",
+    "mtime": 1695755738914,
+    "processed": 1761158890586
+  },
+  "src/_images/posts/2023-09-08/molly-relaxing.jpg": {
+    "hash": "d894b8dafb63e4e4b099891d89dd1f9a",
+    "mtime": 1695755738916,
+    "processed": 1761158890587
+  },
+  "src/_images/posts/2023-09-08/molly-taking-pictures.jpg": {
+    "hash": "11d85a0cedd44b628239b089da8d7c46",
+    "mtime": 1695755738933,
+    "processed": 1761158890592
+  },
+  "src/_images/posts/2023-09-08/molly-training.jpg": {
+    "hash": "839aeeaa89ec4d7e813c6a0a47a1bfcf",
+    "mtime": 1695755738935,
+    "processed": 1761158890593
+  },
+  "src/_images/posts/2023-09-08/working-on-slides.jpg": {
+    "hash": "b5f84c337db81cbc0e9409d142a244de",
+    "mtime": 1695755738936,
+    "processed": 1761158890593
+  },
+  "src/_images/background-logo.png": {
+    "hash": "9965f4e234f78ceb3bf55f0e29a93fc9",
+    "mtime": 1696268949885,
+    "processed": 1761158861009
+  },
+  "src/_images/screenshots/about-mobile.jpg": {
+    "hash": "a5453669879cd7103673f9a5cc63b05f",
+    "mtime": 1696270500038,
+    "processed": 1761158869222
+  },
+  "src/_images/screenshots/post-mobile.png": {
+    "hash": "9bf7f0cd0cb9c8390460b37396e04dee",
+    "mtime": 1696270500048,
+    "processed": 1761158869226
+  },
+  "src/_images/screenshots/post.png": {
+    "hash": "85efdf5a4a8856601a3e10c952e58033",
+    "mtime": 1696270500054,
+    "processed": 1761158869229
+  },
+  "src/_images/screenshots/widget-links.png": {
+    "hash": "045f03dab1d6adaa5773e9df65372445",
+    "mtime": 1696268926668,
+    "processed": 1761158869231
+  },
+  "src/_images/screenshots/widget-posts.png": {
+    "hash": "a7cb07d9dc688d1a69c32fb920e8190e",
+    "mtime": 1696268946078,
+    "processed": 1761158869238
+  },
+  "src/_images/icons/webicon-rss.png": {
+    "hash": "39d442579d8c10ed6dd5b5e9eb0acac8",
+    "mtime": 1696378978603,
+    "processed": 1761158869097
+  },
+  "src/_images/screenshots/home.png": {
+    "hash": "cede73120462fd26e6cf0fe5b2808750",
+    "mtime": 1696379110180,
+    "processed": 1761158869225
+  },
+  "src/_images/posts/2023-10-09/hero.jpg": {
+    "hash": "88cd92140cb23fa969ae0afc133358cb",
+    "mtime": 1696892646358,
+    "processed": 1761158890594
+  },
+  "src/_images/posts/2023-10-09/widgets-in-windows.jpg": {
+    "hash": "6d122073e4dd798c110f84859de02f99",
+    "mtime": 1696892646379,
+    "processed": 1761158890596
+  },
+  "src/_images/posts/2023-10-09/widgets-promotion.gif": {
+    "hash": "1f317ea4cf9e2511d60ceb3c5486d8c3",
+    "mtime": 1696892646395,
+    "processed": 1761158890597
+  },
+  "src/_images/posts/2023-12-15/hero.jpg": {
+    "hash": "fe6a19cc15b533981d6ab266583e0b4d",
+    "mtime": 1702672264495,
+    "processed": 1761158890598
+  },
+  "src/_images/posts/2023-12-15/1.png": {
+    "hash": "7513a9061cb7efa5f2d09bbeb3bb707b",
+    "mtime": 1702672264490,
+    "processed": 1761158890598
+  },
+  "src/_images/posts/2023-10-09/hero1.jpg": {
+    "hash": "88a19497ee5d655daa165fd926e20ea6",
+    "mtime": 1702703936486,
+    "processed": 1761158890595
+  },
+  "src/_images/posts/2024-01-25/hero.jpg": {
+    "hash": "d45cbcb529c3fc957e3def74030a5da7",
+    "mtime": 1706217235210,
+    "processed": 1761158890599
+  },
+  "src/_images/posts/2024-02-02/hero.jpg": {
+    "hash": "cec9ec5da6e63be8960ebb0f66cf69b5",
+    "mtime": 1706909472679,
+    "processed": 1761158890600
+  },
+  "src/_images/tanks/rainbow-symphilia-wilsoni.jpg": {
+    "hash": "4ab925a0f948c9bae8abfedc5223a0a8",
+    "mtime": 1736296374332,
+    "processed": 1761158870344
+  },
+  "src/_images/books/learning-web-design-6th.png": {
+    "hash": "86a0d9df6824370f53950a3fd600eb99",
+    "mtime": 1747093635425,
+    "processed": 1761158868575
+  },
+  "src/_images/posts/2025-07-10/lwd-6e.jpg": {
+    "hash": "6b838077e22f76a2a73e6b08f0244668",
+    "mtime": 1752168648848,
+    "processed": 1761158890606
+  },
+  "src/_images/posts/2025-10-15/hero.png": {
+    "hash": "282ec5b1ced26d9c4ada78e6d7edb8aa",
+    "mtime": 1760648118332,
+    "processed": 1761158890615
+  },
+  "src/_images/posts/2025-10-21/hero.jpg": {
+    "hash": "d3073cdfa588735bf8bb81cc54e9be3c",
+    "mtime": 1761088220463,
+    "processed": 1761158890618
+  }
+}
