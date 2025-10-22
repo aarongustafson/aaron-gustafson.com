@@ -5,7 +5,7 @@
 	"main": ".eleventy.js",
 	"type": "module",
 	"scripts": {
-		"start": "gulp && concurrently 'gulp watch' 'NODE_OPTIONS=\"--max-old-space-size=4096\" npx @11ty/eleventy --serve --quiet'",
+		"start": "gulp && concurrently 'gulp watch' 'NODE_OPTIONS=\"--max-old-space-size=8192\" npx @11ty/eleventy --incremental --serve --quiet'",
 		"serve": "cd dist && npx http-server -p 8888 -a 127.0.0.1",
 		"clean": "rm -Rf ./dist/* && rm -Rf ./dist/.*",
 		"clean:cache": "rm -f _cache/webmentions_processed.json _cache/webmentions_processed.gz",

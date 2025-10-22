@@ -325,8 +325,10 @@ export default async function () {
 		processedData = createOptimizedWebmentionData(optimizedChildren);
 		processedData.lastFetched = cache.lastFetched || new Date().toISOString();
 		
-		// Save for future builds
-		saveProcessedCache(processedData);
+		// Save for future builds (only if significant changes)
+		if (!processedData || optimizedChildren.length !== processedData.totalCount) {
+			saveProcessedCache(processedData);
+		}
 		
 		const processingTime = Date.now() - startTime;
 		console.log(`>>> Processing completed in ${processingTime}ms`);
@@ -339,7 +341,7 @@ export default async function () {
 			console.log(`>>> Memory optimization: ${savings}% reduction (${(originalSize/1024/1024).toFixed(1)}MB -> ${(optimizedSize/1024/1024).toFixed(1)}MB)`);
 		}
 	} else if (processedData) {
-		console.log(`>>> Using preprocessed webmentions cache (${processedData.totalCount} webmentions)`);
+		console.log(`>>> Using preprocessed webmentions cache (${processedData.totalCount} webmentions) - no processing needed`);
 	}
 
 	// Handle production updates

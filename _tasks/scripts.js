@@ -2,14 +2,12 @@
 import fs from "fs";
 import gulp from "gulp";
 import concat from "gulp-concat";
-import gulpIf from "gulp-if";
 import newer from "gulp-newer";
 import rename from "gulp-rename";
 import composer from "gulp-uglify/composer.js";
 import merge from "merge-stream";
 import path from "path";
 import stream from "stream";
-import through2 from "through2";
 import uglify from "uglify-es";
 import config from "./config.js";
 const {dest, src} = gulp;
@@ -59,47 +57,39 @@ const updateServiceWorker = () => {
 const scripts = cb => {
   const folders = getFolders(source_folder);
 
-  const tasks = folders.map(folder => {
-    const folderPath = path.join(source_folder, folder);
-    const outputFile = folder + ".js";
-    const outputMin = folder + ".min.js";
-    
-    // Check if any source files are newer than output
-    const destPath = path.join(destination_folder, outputFile);
-    
-    return src(path.join(folderPath, "*.js"))
-      // Only process if source files are newer than destination
-      .pipe(newer(destPath))
+  const tasks = folders
+    // Exclude serviceworker folder as it has its own dedicated task
+    .filter(folder => folder !== "serviceworker")
+    .map(folder => {
+      const folderPath = path.join(source_folder, folder);
+      const outputFile = folder + ".js";
+      const outputMin = folder + ".min.js";
       
-      // Concatenate files
-      .pipe(concat(outputFile))
+      // Check if any source files are newer than output
+      const destPath = path.join(destination_folder, outputFile);
       
-      // Skip service worker for regular output
-      .pipe(
-        gulpIf(
-          folder === "serviceworker",
-          through2.obj((file, _, cb) => {
-            cb(); // Skip this file
-            return;
-          })
-        )
-      )
-      
-      // Write expanded version
-      .pipe(dest(destination_folder))
-      .pipe(dest(dist))
-      
-      // Create minified version
-      .pipe(rename({ suffix: ".min" }))
-      .pipe(minify({
-        compress: {
-          drop_console: !isWatch // Remove console.log in production
-        }
-      }))
-      .pipe(dest(destination_folder))
-      .pipe(dest(dist))
-      .pipe(updateServiceWorker());
-  });
+      return src(path.join(folderPath, "*.js"))
+        // Only process if source files are newer than destination
+        .pipe(newer(destPath))
+        
+        // Concatenate files
+        .pipe(concat(outputFile))
+        
+        // Write expanded version
+        .pipe(dest(destination_folder))
+        .pipe(dest(dist))
+        
+        // Create minified version
+        .pipe(rename({ suffix: ".min" }))
+        .pipe(minify({
+          compress: {
+            drop_console: !isWatch // Remove console.log in production
+          }
+        }))
+        .pipe(dest(destination_folder))
+        .pipe(dest(dist))
+        .pipe(updateServiceWorker());
+    });
 
   const mergedTasks = merge(tasks);
   

@@ -206,8 +206,23 @@ export default {
 			{
 				while ( i-- )
 				{
-					if ( ! item[requirements[i]] )
-					{ 
+					const fieldName = requirements[i];
+					let hasField = false;
+					
+					// Special handling for webmention content structure
+					if (fieldName === 'content') {
+						hasField = item.content && (item.content.html || item.content.text || item.content.value);
+					} else if (fieldName === 'name') {
+						hasField = item.name && item.name !== null && item.name.trim() !== '';
+					} else if (fieldName === 'summary') {
+						hasField = item.summary && item.summary !== null && 
+							(typeof item.summary === 'string' ? item.summary.trim() !== '' : 
+							 item.summary.html || item.summary.text);
+					} else {
+						hasField = !!item[fieldName];
+					}
+					
+					if (!hasField) { 
 						return false;
 					}
 				}
@@ -218,8 +233,23 @@ export default {
 			{
 				while ( i-- )
 				{
-					if ( item[requirements[i]] )
-					{ 
+					const fieldName = requirements[i];
+					let hasField = false;
+					
+					// Special handling for webmention content structure
+					if (fieldName === 'content') {
+						hasField = item.content && (item.content.html || item.content.text || item.content.value);
+					} else if (fieldName === 'name') {
+						hasField = item.name && item.name !== null && item.name.trim() !== '';
+					} else if (fieldName === 'summary') {
+						hasField = item.summary && item.summary !== null && 
+							(typeof item.summary === 'string' ? item.summary.trim() !== '' : 
+							 item.summary.html || item.summary.text);
+					} else {
+						hasField = !!item[fieldName];
+					}
+					
+					if (hasField) { 
 						return true;
 					}
 				}
@@ -266,20 +296,8 @@ export default {
 				allMentionIds.forEach(id => {
 					const mention = webmentions.compactData[id];
 					if (mention) {
-						// Map back to original field names expected by templates
-						const mentionCopy = {
-							"wm-id": id,  // Use the array index as the ID
-							"wm-target": mention.target,
-							"wm-property": mention.type,
-							"wm-source": mention.source,
-							url: mention.url,
-							published: mention.published,
-							author: mention.author,
-							content: mention.content,
-							name: mention.name,
-							summary: mention.summary
-						};
-						mentions.push(mentionCopy);
+						// The mention object already has the correct field names
+						mentions.push(mention);
 					}
 				});
 			} else {
@@ -317,7 +335,7 @@ export default {
 				let count = mentionType.length;
 				while( count-- )
 				{
-					if ( !!entry[mentionType[count]] )
+					if ( entry['wm-property'] === mentionType[count] )
 					{
 						return true;
 					}
@@ -326,7 +344,7 @@ export default {
 			}
 			else
 			{
-				return !!entry[mentionType];
+				return entry['wm-property'] === mentionType;
 			}
 		});
 	},
