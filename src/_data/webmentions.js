@@ -64,17 +64,35 @@ function createOptimizedWebmentionData(webmentions) {
 		const target = mention["wm-target"];
 		const type = mention["wm-property"];
 		
-		// Store compact version of webmention
+		// Store webmention in format compatible with both server and client templates
+		// This maintains compatibility with the client-side WebmentionIO.js expectations
 		data.compactData[wmId] = {
-			target: target,
-			type: type,
+			// Server-side template fields
+			"wm-id": wmId,
+			"wm-target": target,
+			"wm-property": type,
+			"wm-source": mention["wm-source"] || null,
 			url: mention.url,
 			published: mention.published,
 			author: mention.author || null,
 			content: mention.content || null,
 			name: mention.name || null,
 			summary: mention.summary || null,
-			source: mention["wm-source"] || null
+			
+			// Client-side WebmentionIO.js compatibility fields
+			id: wmId,
+			source: mention.url,
+			verified_date: mention.published,
+			data: {
+				url: mention.url,
+				author: mention.author || null,
+				content: mention.content && mention.content.text || mention.content && mention.content.html || mention.content && mention.content.value || null,
+				published_ts: mention.published
+			},
+			activity: {
+				type: type,
+				sentence_html: mention.content && mention.content.html || null
+			}
 		};
 		
 		// Index by target URL for O(1) lookups
@@ -176,17 +194,15 @@ function optimizeWebmention(mention) {
 		if (mention.author.url) optimized.author.url = mention.author.url;
 	}
 
-	// Only include content if it exists and is meaningful
+	// Include content if it exists - be more inclusive to avoid missing content
 	if (mention.content) {
-		const hasContent = mention.content.html || mention.content.text;
-		if (hasContent) {
-			optimized.content = {};
-			if (mention.content.html) optimized.content.html = mention.content.html;
-			if (mention.content.text) optimized.content.text = mention.content.text;
-			// Include 'value' as fallback only if no other content is present
-		} else if (mention.content.value) {
-			optimized.content = { value: mention.content.value };
-		}
+		optimized.content = {};
+		// Always include all available content fields
+		if (mention.content.html) optimized.content.html = mention.content.html;
+		if (mention.content.text) optimized.content.text = mention.content.text;
+		if (mention.content.value) optimized.content.value = mention.content.value;
+		// Include content-type if available
+		if (mention.content["content-type"]) optimized.content["content-type"] = mention.content["content-type"];
 	}
 
 	// Include name only if it's reasonably short and useful
@@ -195,7 +211,7 @@ function optimizeWebmention(mention) {
 	}
 
 	// Include summary as fallback content
-	if (mention.summary && !optimized.content) {
+	if (mention.summary) {
 		optimized.summary = mention.summary;
 	}
 
