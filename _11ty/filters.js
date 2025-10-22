@@ -266,9 +266,20 @@ export default {
 				allMentionIds.forEach(id => {
 					const mention = webmentions.compactData[id];
 					if (mention) {
-						// Add the wm-id back as a property for consistency
-						mention["wm-id"] = parseInt(id, 10);
-						mentions.push(mention);
+						// Map back to original field names expected by templates
+						const mentionCopy = {
+							"wm-id": id,  // Use the array index as the ID
+							"wm-target": mention.target,
+							"wm-property": mention.type,
+							"wm-source": mention.source,
+							url: mention.url,
+							published: mention.published,
+							author: mention.author,
+							content: mention.content,
+							name: mention.name,
+							summary: mention.summary
+						};
+						mentions.push(mentionCopy);
 					}
 				});
 			} else {

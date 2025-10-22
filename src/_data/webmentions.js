@@ -342,6 +342,7 @@ export default async function () {
 		children: children,
 		urlIndex: processedData.urlIndex,
 		typeIndex: processedData.typeIndex,
+		compactData: processedData.compactData,
 		totalCount: processedData.totalCount
 	};
 }
