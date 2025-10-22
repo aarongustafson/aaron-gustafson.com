@@ -1,17 +1,17 @@
 /* jshint node: true */
+import crypto from "crypto";
+import fs from "fs";
 import gulp from "gulp";
-const {dest, src} = gulp;
-import config from "./config.js";
-import through2 from "through2";
-import sharp from "sharp";
-import svgo from "gulp-svgo";
 import filter from "gulp-filter";
 import gulpif from "gulp-if";
-import stream from "stream";
-const { Transform } = stream;
+import svgo from "gulp-svgo";
 import path from "path";
-import fs from "fs";
-import crypto from "crypto";
+import sharp from "sharp";
+import stream from "stream";
+import through2 from "through2";
+import config from "./config.js";
+const {dest, src} = gulp;
+const { Transform } = stream;
 
 const destination = `${config.static}/i`;
 const dist = `${config.destination}/i`;
