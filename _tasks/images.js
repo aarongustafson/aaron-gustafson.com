@@ -1,5 +1,4 @@
 /* jshint node: true */
-import crypto from "crypto";
 import fs from "fs";
 import gulp from "gulp";
 import filter from "gulp-filter";
@@ -23,40 +22,55 @@ let imageCache = {};
 // Load existing cache
 try {
   imageCache = JSON.parse(fs.readFileSync(cache_file));
+  console.log(`>>> Image cache loaded: ${Object.keys(imageCache).length} entries`);
+  
+  // Clean up orphaned cache entries for better performance
+  const originalCount = Object.keys(imageCache).length;
+  Object.keys(imageCache).forEach(filePath => {
+    // The cache stores paths like "src/_images/share-card.jpg"
+    if (!fs.existsSync(filePath)) {
+      delete imageCache[filePath];
+    }
+  });
+  const cleanedCount = Object.keys(imageCache).length;
+  if (originalCount !== cleanedCount) {
+    console.log(`>>> Cleaned ${originalCount - cleanedCount} orphaned cache entries`);
+  }
 } catch (err) {
+  console.log(`>>> No existing image cache found, starting fresh`);
   imageCache = {};
 }
 
-// Generate file hash for change detection
-function getFileHash(filePath) {
-  try {
-    const content = fs.readFileSync(filePath);
-    return crypto.createHash('md5').update(content).digest('hex');
-  } catch (err) {
-    return null;
-  }
-}
+// Global cache statistics
+let cacheHits = 0;
+let cacheMisses = 0;
 
-// Check if file needs processing
+// Check if file needs processing (optimized for performance)
 function needsProcessing(file) {
   const filePath = path.relative(file.cwd, file.path);
-  const currentHash = getFileHash(file.path);
+  const stats = fs.statSync(file.path);
+  const currentMtime = stats.mtime.getTime();
   
   const cached = imageCache[filePath];
   
-  // Convert source path to destination path
-  const relativePath = path.relative(`${config.source}/_images`, file.path);
-  const destFile = path.join(destination, relativePath);
-  const distFile = path.join(dist, relativePath);
-  
   // Process if:
   // - File not in cache
-  // - File hash changed
-  // - Cached file doesn't exist in destination
-  return !cached || 
-         cached.hash !== currentHash || 
-         !fs.existsSync(destFile) ||
-         !fs.existsSync(distFile);
+  // - File modification time changed
+  const needsWork = !cached || cached.mtime !== currentMtime;
+  
+  if (needsWork) {
+    cacheMisses++;
+    // Update cache immediately for files being processed
+    imageCache[filePath] = {
+      mtime: currentMtime,
+      size: stats.size,
+      processed: Date.now()
+    };
+  } else {
+    cacheHits++;
+  }
+  
+  return needsWork;
 }
 
 // Update cache with file info
@@ -66,15 +80,13 @@ const updateCache = () => {
     transform: (file, encoding, next) => {
       const filePath = path.relative(file.cwd, file.path);
       
-      // Skip SVG files from cache (they're handled differently)
-      if (path.extname(filePath) !== '.svg') {
-        const stats = fs.statSync(file.path);
-        imageCache[filePath] = {
-          hash: getFileHash(file.path),
-          mtime: stats.mtime.getTime(),
-          processed: Date.now()
-        };
-      }
+      // Store only essential data for faster caching
+      const stats = fs.statSync(file.path);
+      imageCache[filePath] = {
+        mtime: stats.mtime.getTime(),
+        size: stats.size,
+        processed: Date.now()
+      };
       
       return next(null, file);
     }
@@ -135,8 +147,16 @@ const processImages = () => {
   });
 };
 
-// Optimized images function
+// Optimized images function with performance tracking
 const images = () => {
+  const startTime = Date.now();
+  let processedCount = 0;
+  let skippedCount = 0;
+  
+  // Reset cache counters
+  cacheHits = 0;
+  cacheMisses = 0;
+  
   // Handle media files separately (no processing needed)
   src([`${config.source}/_images/**/*.{mp4,mov,mp3,ogg}`])
     .pipe(dest(destination))
@@ -146,11 +166,17 @@ const images = () => {
     `${config.source}/_images/**/*.{jpg,png,gif,svg}`, 
     `!${config.source}/**/*.sketch/**`
   ])
-    // Only process files that need it
-    .pipe(filter(file => needsProcessing(file)))
-    
-    // Update cache for processed files
-    .pipe(updateCache())
+    // Use filter to skip unchanged files
+    .pipe(filter(file => {
+      const needs = needsProcessing(file);
+      if (needs) {
+        processedCount++;
+        return true;
+      } else {
+        skippedCount++;
+        return false;
+      }
+    }))
     
     // Optimize based on file type
     .pipe(
@@ -165,8 +191,13 @@ const images = () => {
     .pipe(dest(destination))
     .pipe(dest(dist))
     
-    // Write updated cache
-    .pipe(writeCache());
+    // Write updated cache and log performance
+    .pipe(writeCache())
+    .on('end', () => {
+      const duration = Date.now() - startTime;
+      const hitRate = cacheHits + cacheMisses > 0 ? ((cacheHits/(cacheHits+cacheMisses))*100).toFixed(1) : '0.0';
+      console.log(`>>> Images: ${processedCount} processed, ${skippedCount} skipped (${duration}ms, ${hitRate}% cache hit rate)`);
+    });
 };
 
 export default images;
