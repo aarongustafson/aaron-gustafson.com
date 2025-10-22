@@ -254,21 +254,29 @@ export default {
 		// Use URL index if available for O(1) lookup instead of O(n) filtering
 		if (webmentions.urlIndex) {
 			const mentions = [];
-			const currentMentions = webmentions.urlIndex.get(url) || [];
-			mentions.push(...currentMentions);
+			const currentMentionIds = webmentions.urlIndex[url] || [];
+			const oldMentionIds = old_url !== "false" ? (webmentions.urlIndex[old_url] || []) : [];
 			
-			// Check old URL if provided
-			if (old_url !== "false") {
-				const oldMentions = webmentions.urlIndex.get(old_url) || [];
-				mentions.push(...oldMentions);
+			// Combine all mention IDs and remove duplicates
+			const allMentionIds = [...new Set([...currentMentionIds, ...oldMentionIds])];
+			
+			// Get the actual mention objects from compactData (if available) or children
+			if (webmentions.compactData) {
+				// When using processed cache, get from compactData by ID
+				allMentionIds.forEach(id => {
+					const mention = webmentions.compactData[id];
+					if (mention) mentions.push(mention);
+				});
+			} else {
+				// When using regular cache, get from children array
+				allMentionIds.forEach(id => {
+					const mention = webmentions.children.find(m => m["wm-id"] === id);
+					if (mention) mentions.push(mention);
+				});
 			}
 			
-			// Sort by wm-id and remove duplicates
-			return mentions
-				.filter((mention, index, self) => 
-					self.findIndex(m => m["wm-id"] === mention["wm-id"]) === index
-				)
-				.sort((a, b) => a["wm-id"] - b["wm-id"]);
+			// Sort by wm-id
+			return mentions.sort((a, b) => a["wm-id"] - b["wm-id"]);
 		}
 		
 		// Fallback to original filtering method
