@@ -1,18 +1,18 @@
 /* jshint node: true */
-import gulp from "gulp";
-const {dest, src} = gulp;
-import config from "./config.js";
 import fs from "fs";
-import path from "path";
-import merge from "merge-stream";
-import gulpIf from "gulp-if";
+import gulp from "gulp";
 import concat from "gulp-concat";
+import gulpIf from "gulp-if";
 import rename from "gulp-rename";
 import composer from "gulp-uglify/composer.js";
-import uglify from "uglify-es";
-let minify = composer(uglify, console);
-import through2 from "through2";
+import merge from "merge-stream";
+import path from "path";
 import stream from "stream";
+import through2 from "through2";
+import uglify from "uglify-es";
+import config from "./config.js";
+const {dest, src} = gulp;
+let minify = composer(uglify, console);
 const { Transform } = stream;
 
 const source_folder = `${config.source}/_javascript`;
@@ -59,7 +59,7 @@ const scripts = cb => {
       gulpIf(
         folder == "serviceworker",
         through2.obj((file, _, cb) => {
-					cb();
+					cb(null, file);
 					return;
 				})
       )
