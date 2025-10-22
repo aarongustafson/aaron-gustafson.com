@@ -108,7 +108,7 @@ const processImages = () => {
     try {
       // Skip if already processed
       if (!needsProcessing(file)) {
-        return cb();
+        return cb(null, file);
       }
 
       const result = await sharp(file.contents)

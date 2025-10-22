@@ -60,7 +60,7 @@ const styles = cb => {
     )
     
     .pipe(autoprefixer({
-      browsers: [
+      overrideBrowserslist: [
         'last 2 versions',
         'safari >= 5',
         'ie >= 8',
