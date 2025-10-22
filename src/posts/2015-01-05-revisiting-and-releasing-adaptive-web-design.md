@@ -10,7 +10,7 @@ As you probably know, back in 2011 Easy Readers published my first solo book: [<
 
 <!-- more -->
 
-https://twitter.com/dirtystylus/status/530756679286423552
+> Time and again, I return to @AaronGustafson’s “Adaptive Web Design”. Like a North Star for user-focused web design.
 
 I think one of the main reasons the book has remained relevant for so long is because at its core, <cite>Adaptive Web Design</cite> is a *philosophy* book. Sure, there are some code examples here and there, but they only serve to demonstrate how you can apply progressive enhancement in your work. The philosophy of progressive enhancement works and only continues to demonstrate its brilliance with each new Web-enabled screen that debuts in the ever-expanding global marketplace. In fact, I’ll go out on a limb and declare that progressive enhancement is probably even more relevant today than it was when I wrote <cite>Adaptive Web Design</cite> in 2010.
 
