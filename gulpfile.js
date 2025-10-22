@@ -1,15 +1,15 @@
 import gulp from 'gulp';
+import config from "./_tasks/config.js";
 const { parallel, series } = gulp;
 const gulpWatch = gulp.watch;
-import config from "./_tasks/config.js";
 
 // Pull in each task
+import data from "./_tasks/data.js";
 import html from "./_tasks/html.js";
+import images from "./_tasks/images.js";
 import scripts from "./_tasks/scripts.js";
 import sw from "./_tasks/serviceworker.js";
-import images from "./_tasks/images.js";
 import styles from "./_tasks/styles.js";
-import data from "./_tasks/data.js";
 
 // Debounced task runner to prevent multiple rapid executions
 let taskTimeouts = {};
