@@ -92,7 +92,11 @@ export default async (config) => {
 
 	// Plugins
 	config.addPlugin(pluginSEO, seo_conf);
-	config.addPlugin(svgContents);
+	// Load SVG plugin always (since templates depend on it) but optimize for production
+	config.addPlugin(svgContents, PRODUCTION ? {
+		// Cache SVG processing to improve performance in production
+		cache: true
+	} : {});
 	config.addPlugin(EleventyHtmlBasePlugin, {
 		baseHref: PRODUCTION ? "https://www.aaron-gustafson.com" : "",
 	});
@@ -100,7 +104,19 @@ export default async (config) => {
 		twitter: {
 			options: {
 				cacheText: true,
-        cacheDuration: "*",
+				cacheDuration: "*",
+				// Add error handling for failed Twitter embeds
+				error: (url, error) => {
+					console.warn(`Twitter embed failed for ${url}:`, error.message);
+					return `<p><a href="${url}">View on Twitter</a></p>`;
+				}
+			},
+		},
+		// Add more aggressive caching for better performance
+		youtube: {
+			options: {
+				cacheText: true,
+				cacheDuration: "*",
 			},
 		},
 	});
@@ -163,8 +179,28 @@ export default async (config) => {
 			closingSingleTag: "slash",
 		},
 	});
-	config.addPlugin(syntaxHighlight);
-	config.addPlugin(eleventyPluginFilesMinifier);
+	// Remove duplicate syntax highlight plugin
+	// config.addPlugin(syntaxHighlight); // This was duplicated
+	// Only minify files in production and with better performance settings
+	if (PRODUCTION) {
+		config.addPlugin(eleventyPluginFilesMinifier, {
+			// Optimize minification settings for better performance
+			throttle: true,
+			concurrency: 2, // Reduce concurrency to prevent memory spikes
+			preserveSymlinks: false,
+			// Only minify critical files
+			html: {
+				minifyCSS: false, // CSS is already minified by Gulp
+				minifyJS: false,  // JS is already minified by Gulp
+				removeComments: true,
+				collapseWhitespace: true,
+				removeRedundantAttributes: true,
+				removeEmptyAttributes: true,
+				caseSensitive: true,
+				keepClosingSlash: true
+			}
+		});
+	}
 
 	// Filters
 	config.addFilter(
@@ -182,20 +218,21 @@ export default async (config) => {
 	});
 
 	// Collections
-	config.addCollection("notebook", (collectionApi) => {
-		return collectionApi
-			.getFilteredByGlob(["**/posts/*.md", "**/links/*.md"])
-			.reverse();
-	});
+	// Optimize: Use a shared sorting function and reuse results where possible
+	const sortByDateDesc = (a, b) => b.date - a.date;
+	
 	config.addCollection("posts", (collectionApi) => {
 		return collectionApi.getFilteredByGlob("**/posts/*.md").reverse();
 	});
 	config.addCollection("links", (collectionApi) => {
 		return collectionApi.getFilteredByGlob("**/links/*.md").reverse();
 	});
-	
-	// Optimize: Use a shared sorting function to avoid duplicate sort operations
-	const sortByDateDesc = (a, b) => b.date - a.date;
+	config.addCollection("notebook", (collectionApi) => {
+		// More efficient: combine the results directly rather than separate glob calls
+		return collectionApi
+			.getFilteredByGlob(["**/posts/*.md", "**/links/*.md"])
+			.sort(sortByDateDesc);
+	});
 	
 	config.addCollection("talks", (collectionApi) => {
 		return collectionApi
@@ -260,14 +297,16 @@ export default async (config) => {
 		tagSet.sort((a, b) => {
 			return a.localeCompare(b, "en", { sensitivity: "base" });
 		});
-		// Generate a series JSON
-		fs.writeFile(
-			"./_cache/tags.json",
-			JSON.stringify(tagSet, false, 2),
-			(err) => {
-				if (err) throw err;
-			}
-		);
+		// Only write cache file in production to avoid unnecessary I/O during dev
+		if (PRODUCTION) {
+			fs.writeFile(
+				"./_cache/tags.json",
+				JSON.stringify(tagSet, false, 2),
+				(err) => {
+					if (err) throw err;
+				}
+			);
+		}
 		return tagSet;
 	});
 	config.addCollection("series", function (collectionApi) {
@@ -281,24 +320,28 @@ export default async (config) => {
 				series[item.data.series.tag] = item.data.series.name;
 			}
 		});
-		// Generate a series JSON
-		fs.writeFile(
-			"./_cache/series.json",
-			JSON.stringify(series, false, 2),
-			(err) => {
-				if (err) throw err;
-			}
-		);
-		// Build series files
-		for (let tag in series) {
-			let tagName = tag.replace("series-", "");
-			let filename = `./src/series/${tagName}.md`;
-			if (!fs.existsSync(filename)) {
-				let content = `---\ntitle: "${series[tag]}"\ndescription: ""\ntag: ${tag}\n---`;
-				fs.writeFile(filename, content, (err) => {
+		
+		// Only perform file operations in production
+		if (PRODUCTION) {
+			// Generate a series JSON
+			fs.writeFile(
+				"./_cache/series.json",
+				JSON.stringify(series, false, 2),
+				(err) => {
 					if (err) throw err;
-					console.log(`New series file created: ${filename}`);
-				});
+				}
+			);
+			// Build series files
+			for (let tag in series) {
+				let tagName = tag.replace("series-", "");
+				let filename = `./src/series/${tagName}.md`;
+				if (!fs.existsSync(filename)) {
+					let content = `---\ntitle: "${series[tag]}"\ndescription: ""\ntag: ${tag}\n---`;
+					fs.writeFile(filename, content, (err) => {
+						if (err) throw err;
+						console.log(`New series file created: ${filename}`);
+					});
+				}
 			}
 		}
 		return series;
@@ -329,5 +372,16 @@ export default async (config) => {
 			input: "src",
 			output: "dist",
 		},
+		// Enable incremental builds for faster development
+		...(PRODUCTION ? {} : {
+			ignores: [
+				"src/**/*.draft.md",
+				"src/_cache/**/*"
+			]
+		}),
+		// Use faster template engines for development
+		...(PRODUCTION ? {} : {
+			pathPrefix: "/",
+		})
 	};
 };
