@@ -74,6 +74,6 @@ So if you’re working with AI coding agents — or planning to — invest in yo
 
 Your future self, your teammates, and the bots will thank you.
 
-# Afterword
+## Afterword
 
 Interestingly, an AI agent was a particularly useful partner in finding and addressing the technical debt we’d been living with. Sometimes you need a pedantic robot to point out that your house is a mess.
