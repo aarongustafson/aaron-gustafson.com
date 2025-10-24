@@ -8,7 +8,13 @@ self.addEventListener( "install", function( event ){
   event.waitUntil(
     caches.open( sw_caches.static.name )
       .then(function( cache ){
-        return cache.addAll( preinstall );
+        return Promise.all(
+          preinstall.map(asset => {
+            return cache.add(asset).catch(err => {
+              console.error(`Failed to cache ${asset}:`, err);
+            });
+          })
+        );
       })
   );
 
