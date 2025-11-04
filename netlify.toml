@@ -20,6 +20,15 @@
 	feedPath = "/feeds/all.xml"
 	limit = 5
 
+# Deploy notifications for syndication
+[build.environment]
+  # This helps with function execution
+  NODE_VERSION = "20"
+
+# Post-deploy hook for social media syndication
+[[build.processing]]
+  skip_processing = false
+
 [[redirects]]
 	from = "/notebook/20*/:slug"
 	to = "/notebook/:slug"
