@@ -84,7 +84,7 @@
 		"gulp-svgo": "^2.2.1",
 		"gulp-uglify": "^3.0.2",
 		"imagetracerjs": "^1.2.6",
-		"js-yaml": "^4.1.0",
+		"js-yaml": "^4.1.1",
 		"lodash": "^4.17.21",
 		"luxon": "^3.6.1",
 		"markdown-it-anchor": "^9.2.0",
