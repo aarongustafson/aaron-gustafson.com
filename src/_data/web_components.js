@@ -50,9 +50,9 @@ async function fetchGitHubInfo(repo) {
 }
 
 /**
- * Check if cache is valid
+ * Check if cache is valid and get cached API data
  */
-function getCachedData() {
+function getCachedApiData() {
   try {
     if (!fs.existsSync(CACHE_FILE_PATH)) {
       return null;
@@ -63,8 +63,8 @@ function getCachedData() {
     
     const cacheAge = Date.now() - new Date(cache.timestamp).getTime();
     if (cacheAge < CACHE_DURATION) {
-      console.log("Using cached web components data");
-      return cache.data;
+      console.log("Using cached API data for web components");
+      return cache.apiData;
     }
     
     return null;
@@ -75,13 +75,13 @@ function getCachedData() {
 }
 
 /**
- * Save data to cache
+ * Save API data to cache
  */
-function saveCache(data) {
+function saveCache(apiData) {
   try {
     const cache = {
       timestamp: new Date().toISOString(),
-      data: data
+      apiData: apiData
     };
     fs.writeFileSync(CACHE_FILE_PATH, JSON.stringify(cache, null, 2));
   } catch (error) {
@@ -93,28 +93,41 @@ function saveCache(data) {
  * Main function to build web components data
  */
 async function buildWebComponentsData() {
-  // Check cache first
-  const cachedData = getCachedData();
-  if (cachedData) {
-    return cachedData;
-  }
-  
-  // Read YAML file
+  // Always read the YAML file (source of truth)
   const yamlContent = fs.readFileSync(YAML_FILE_PATH, "utf8");
   const components = yaml.load(yamlContent);
   
-  console.log("Fetching version info for web components...");
+  // Check if we have cached API data
+  const cachedApiData = getCachedApiData();
+  
+  if (cachedApiData) {
+    // Merge YAML data with cached API data
+    return components.map(component => {
+      const cached = cachedApiData[component.name];
+      if (cached) {
+        return { ...component, ...cached };
+      }
+      return component;
+    });
+  }
+  
+  console.log("Fetching fresh API data for web components...");
+  
+  // Build API data cache object
+  const apiDataCache = {};
   
   // Enhance each component with version and GitHub info
   const enhancedComponents = await Promise.all(
     components.map(async (component) => {
       const enhanced = { ...component };
+      const apiData = {};
       
       // Fetch npm version if package name is provided
       if (component.npm_package) {
         const version = await fetchNpmVersion(component.npm_package);
         if (version) {
           enhanced.version = version;
+          apiData.version = version;
         }
       }
       
@@ -126,19 +139,27 @@ async function buildWebComponentsData() {
           enhanced.github_url = githubInfo.html_url;
           enhanced.github_updated = githubInfo.updated_at;
           
+          apiData.github_stars = githubInfo.stars;
+          apiData.github_url = githubInfo.html_url;
+          apiData.github_updated = githubInfo.updated_at;
+          
           // Use GitHub description as fallback if not provided
           if (!enhanced.description && githubInfo.description) {
             enhanced.description = githubInfo.description;
+            apiData.description = githubInfo.description;
           }
         }
       }
+      
+      // Store API data for this component
+      apiDataCache[component.name] = apiData;
       
       return enhanced;
     })
   );
   
-  // Save to cache
-  saveCache(enhancedComponents);
+  // Save API data to cache
+  saveCache(apiDataCache);
   
   return enhancedComponents;
 }
