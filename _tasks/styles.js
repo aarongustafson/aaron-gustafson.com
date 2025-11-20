@@ -5,12 +5,12 @@ import clean from "gulp-clean-css";
 import newer from "gulp-newer";
 import rename from "gulp-rename";
 import gulpSass from 'gulp-sass';
-import * as sass from "sass";
+import dartSass from "sass";
 import stream from "stream";
 import config from "./config.js";
 
 const {dest, src} = gulp;
-const sassProcessor = gulpSass(sass);
+const sassProcessor = gulpSass(dartSass);
 const { Transform } = stream;
 
 const destination = `${config.static}/c`;
