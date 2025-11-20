@@ -1,0 +1,23 @@
+- name: "form-required-checkboxes"
+  github: "aarongustafson/form-required-checkboxes"
+  description: "Enables you to create requirement rules for checkbox groups"
+  demo_url: "https://aarongustafson.github.io/form-required-checkboxes/demo.html"
+  npm_package: "@aarongustafson/form-required-checkboxes"
+
+- name: "form-show-if"
+  github: "aarongustafson/form-show-if"
+  description: "Enables you to make one HTML form field show (or not) based on the value(s) of another field"
+  demo_url: "https://aarongustafson.github.io/form-show-if/demo.html"
+  npm_package: "@aarongustafson/form-show-if"
+
+- name: "form-required-if"
+  github: "aarongustafson/form-required-if"
+  description: "Enables you to make one HTML form field required (or not) based on the value(s) of another field"
+  demo_url: "https://aarongustafson.github.io/form-required-if/demo.html"
+  npm_package: "@aarongustafson/form-required-if"
+
+# - name: "form-obfuscator"
+#   github: "aarongustafson/form-obfuscator"
+#   description: "Makes any field legible on focus and obfuscated on blur"
+#   demo_url: "https://aarongustafson.github.io/form-obfuscator/demo.html"
+#   npm_package: "@aarongustafson/form-obfuscator"
