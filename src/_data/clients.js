@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-const clients = process.env.MY_CLIENTS.split("::");
+const clients = process.env.MY_CLIENTS ? process.env.MY_CLIENTS.split("::") : [];
 
 function objectify(client_list) {
 	return client_list.sort().map((client) => {
