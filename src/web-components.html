@@ -1,7 +1,7 @@
 ---
 layout: "page"
 title: "Web Components I've Created"
-description: "A collection of web components I've built and published to help make the web faster and more accessible."
+description: "A collection of web components I've built and published to help progressively enhance the web."
 show_title: false
 show_footer: true
 show_sidebar: false
@@ -13,26 +13,17 @@ permalink: /web-components/
 
 <h1 class="page__title">Web Components</h1>
 
-<p>I've created and contributed to several web components that help make websites faster, more accessible, and easier to
-  build. These components are available on npm and GitHub for anyone to use.</p>
+<p>A collection of web components I've built and published to help progressively enhance the web.</p>
 
 {% if web_components.length > 0 %}
 <ul class="listing listing--web-components">
   {% for component in web_components %}
   <li class="listing__item listing__item--{{ loop.index }} web-component" id="{{ component.name }}">
     <h2 class="listing__item__title">
-      {% if component.github_url %}
-      <a href="{{ component.github_url }}">{{ component.name }}</a>
+      {% if component.github %}
+      <a href="https://github.com/{{ component.github }}">{{ component.name }}</a>
       {% else %}
       {{ component.name }}
-      {% endif %}
-      {% if component.version %}
-      <span class="web-component__version">v{{ component.version }}</span>
-      {% endif %}
-      {% if component.github_stars %}
-      <span class="web-component__stars" title="{{ component.github_stars }} stars on GitHub">
-        ⭐ {{ component.github_stars }}
-      </span>
       {% endif %}
     </h2>
 
@@ -40,35 +31,28 @@ permalink: /web-components/
     <p class="listing__item__description">{{ component.description }}</p>
     {% endif %}
 
-    <div class="web-component__actions">
-      {% if component.npm_package %}
-      <div class="web-component__install">
-        <strong>Install:</strong>
-        <code class="web-component__install__code">npm install {{ component.npm_package }}</code>
-        <button class="web-component__copy-btn" data-copy="npm install {{ component.npm_package }}"
-          aria-label="Copy npm install command">
-          📋
-        </button>
-      </div>
-      {% endif %}
+    {% if component.npm_package %}
+    <p class="web-component__install">
+      <code class="web-component__install__code">npm install {{ component.npm_package }}</code>
+    </p>
+    {% endif %}
 
-      <div class="web-component__links">
-        {% if component.github_url %}
-        <a href="{{ component.github_url }}" class="web-component__link">
-          GitHub
-        </a>
-        {% endif %}
-        {% if component.demo_url %}
-        <a href="{{ component.demo_url }}" class="web-component__link">
-          Demo
-        </a>
-        {% endif %}
-        {% if component.npm_package %}
-        <a href="https://www.npmjs.com/package/{{ component.npm_package }}" class="web-component__link">
-          npm
-        </a>
-        {% endif %}
-      </div>
+    <div class="web-component__links">
+      {% if component.github %}
+      <a href="https://github.com/{{ component.github }}" class="web-component__link">
+        GitHub
+      </a>
+      {% endif %}
+      {% if component.demo_url %}
+      <a href="{{ component.demo_url }}" class="web-component__link">
+        Demo
+      </a>
+      {% endif %}
+      {% if component.npm_package %}
+      <a href="https://www.npmjs.com/package/{{ component.npm_package }}" class="web-component__link">
+        npm
+      </a>
+      {% endif %}
     </div>
   </li>
   {% endfor %}
@@ -78,172 +62,31 @@ permalink: /web-components/
 {% endif %}
 
 <style>
-  .listing--web-components {
-    list-style: none;
-    padding: 0;
-  }
-
-  .web-component {
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background: #f9f9f9;
-  }
-
-  .web-component .listing__item__title {
-    margin-top: 0;
+  .listing {
     display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2rem;
   }
 
-  .web-component__version {
-    font-size: 0.875rem;
-    font-weight: normal;
-    color: #666;
-    background: #e0e0e0;
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
+  .listing__item+.listing__item::before {
+    content: "";
+    inline-size: 4rem;
+    border-top: 1px solid;
+    display: block;
+    margin-block: 0 2rem;
+    margin-inline: auto;
   }
 
-  .web-component__stars {
-    font-size: 0.875rem;
-    font-weight: normal;
-    color: #666;
-  }
-
-  .listing__item__description {
-    margin: 0.75rem 0;
-    color: #333;
-  }
-
-  .web-component__actions {
-    margin-top: 1rem;
-  }
-
-  .web-component__install {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .web-component__install__code {
-    background: #2d2d2d;
-    color: #f8f8f2;
-    padding: 0.5rem 0.75rem;
-    border-radius: 4px;
-    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
-    font-size: 0.875rem;
-    display: inline-block;
-    user-select: all;
-  }
-
-  .web-component__copy-btn {
-    background: #4CAF50;
-    color: white;
-    border: none;
-    padding: 0.5rem 0.75rem;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background 0.2s;
-  }
-
-  .web-component__copy-btn:hover {
-    background: #45a049;
-  }
-
-  .web-component__copy-btn:active {
-    background: #3d8b40;
+  .listing__item__title {
+    font-size: 2rem;
   }
 
   .web-component__links {
     display: flex;
     gap: 1rem;
-    flex-wrap: wrap;
   }
 
-  .web-component__link {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background: #007acc;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: 500;
-    transition: background 0.2s;
-  }
-
-  .web-component__link:hover {
-    background: #005a9e;
-    color: white;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .web-component {
-      background: #1e1e1e;
-      border-color: #444;
-    }
-
-    .listing__item__description {
-      color: #ddd;
-    }
-
-    .web-component__version {
-      background: #333;
-      color: #ddd;
-    }
-
-    .web-component__stars {
-      color: #aaa;
-    }
+  .web-component__links a {
+    margin: 0;
   }
 </style>
-
-<script>
-  // Add copy functionality to copy buttons
-  document.addEventListener('DOMContentLoaded', function () {
-    const copyButtons = document.querySelectorAll('.web-component__copy-btn');
-
-    copyButtons.forEach(button => {
-      button.addEventListener('click', async function () {
-        const textToCopy = this.getAttribute('data-copy');
-
-        try {
-          await navigator.clipboard.writeText(textToCopy);
-
-          // Visual feedback
-          const originalText = this.textContent;
-          this.textContent = '✓';
-          this.style.background = '#4CAF50';
-
-          setTimeout(() => {
-            this.textContent = originalText;
-            this.style.background = '';
-          }, 2000);
-        } catch (err) {
-          console.error('Failed to copy:', err);
-
-          // Fallback for older browsers
-          const textarea = document.createElement('textarea');
-          textarea.value = textToCopy;
-          textarea.style.position = 'fixed';
-          textarea.style.opacity = '0';
-          document.body.appendChild(textarea);
-          textarea.select();
-          document.execCommand('copy');
-          document.body.removeChild(textarea);
-
-          this.textContent = '✓';
-          setTimeout(() => {
-            this.textContent = '📋';
-          }, 2000);
-        }
-      });
-    });
-  });
-</script>
