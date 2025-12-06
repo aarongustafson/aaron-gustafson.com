@@ -26,6 +26,7 @@
 		"new:podcast": "plop podcast",
 		"new:press": "plop press",
 		"new:citation": "plop citation",
+		"publish:draft": "plop publish",
 		"404s": "node ./_tasks/scanner.js"
 	},
 	"repository": {

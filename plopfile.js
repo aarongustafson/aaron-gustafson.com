@@ -1,4 +1,4 @@
-import { readFileSync } from 'fs';
+import { readFileSync, readdirSync, renameSync, writeFileSync } from 'fs';
 import { execFile } from 'node:child_process';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -81,6 +81,14 @@ const helpers = {
     var event = events.find((evt) => evt.id == id);
     return event.date.replace(/(\d) ([+-]\d)/, "$1$2").replace(" ", "T");
   },
+  getDrafts: () => {
+    const draftsDir = path.join(__dirname, 'src/_drafts');
+    const files = readdirSync(draftsDir).filter(f => f.endsWith('.md'));
+    return files.map(file => ({
+      name: file.replace('.md', ''),
+      value: file
+    }));
+  },
 };
 
 // Plop configuration
@@ -103,6 +111,46 @@ export default function (plop) {
       });
     }, 3000);
     return;
+  });
+
+  // Custom action to publish a draft
+  plop.setActionType('publishDraft', async function (answers, _config, _plop) {
+    const draftPath = path.join(__dirname, 'src/_drafts', answers.draft);
+    const timestamp = helpers.getTimestamp();
+    const datePrefix = helpers.getDate();
+    
+    // Read the draft file
+    const content = readFileSync(draftPath, 'utf8');
+    
+    // Update the date in frontmatter
+    const updatedContent = content.replace(
+      /^date:.*$/m,
+      `date: ${timestamp}`
+    );
+    
+    // Create new filename with date prefix
+    const newFilename = `${datePrefix}-${answers.draft}`;
+    const publishPath = path.join(__dirname, 'src/posts', newFilename);
+    
+    // Write to posts directory
+    writeFileSync(publishPath, updatedContent, 'utf8');
+    
+    // Delete the draft
+    const fs = await import('fs/promises');
+    await fs.unlink(draftPath);
+    
+    console.log(`✓ Published ${answers.draft} to posts/${newFilename}`);
+    
+    // Open the published file
+    setTimeout(() => {
+      execFile("code", [publishPath], {shell: true}, (error, stdout, _stderr) => {
+        if (error) {
+          console.error('Could not open file:', error);
+        }
+      });
+    }, 1000);
+    
+    return `Published ${newFilename}`;
   });
 
   // Article generator
@@ -758,6 +806,24 @@ export default function (plop) {
         type: 'openFile',
         date: false,
         directory: 'talks',
+      }
+    ]
+  });
+
+  // Publish draft generator
+  plop.setGenerator('publish', {
+    description: 'Publish a draft post',
+    prompts: [
+      {
+        type: 'list',
+        name: 'draft',
+        message: 'Which draft would you like to publish?',
+        choices: helpers.getDrafts(),
+      }
+    ],
+    actions: [
+      {
+        type: 'publishDraft'
       }
     ]
   });
