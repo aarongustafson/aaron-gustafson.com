@@ -1,6 +1,6 @@
 ---
 title: "A Web Component for Obfuscating Form Fields"
-date: 2025-12-06 10:00:00 -07:00
+date: 2025-12-06 20:03:47 +00:00
 comments: true
 tags: ["forms", "HTML", "JavaScript", "progressive enhancement", "web components", "web forms", "security"]
 description: "There’s no standard way to make a field readable while editing but obfuscated at rest. The `form-obfuscator` web component fills that gap, giving you control over how sensitive data appears when fields aren't focused."
@@ -54,8 +54,8 @@ Sometimes you want to show part of the value while hiding the rest. The `pattern
 
 ```html
 <form-obfuscator pattern="\d{4}$">
-  <label for="ssn">SSN (shows last 4 digits)</label>
-  <input type="text" id="ssn" name="ssn" placeholder="123-45-6789">
+  <label for="ssn">Social Security Number</label>
+  <input type="text" id="ssn" name="ssn">
 </form-obfuscator>
 ```
 
@@ -67,7 +67,7 @@ Use the `maxlength` attribute to cap how many characters appear when obfuscated:
 
 ```html
 <form-obfuscator maxlength="4">
-  <label for="password">Password (max 4 chars shown)</label>
+  <label for="password">Password</label>
   <input type="text" id="password" name="password">
 </form-obfuscator>
 ```
