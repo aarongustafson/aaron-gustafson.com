@@ -160,21 +160,8 @@ export default function (plop) {
 
 		console.log(`✓ Published ${answers.draft} to posts/${newFilename}`);
 
-		// Open the published file
-		setTimeout(() => {
-			execFile(
-				"code",
-				[publishPath],
-				{ shell: true },
-				(error, stdout, _stderr) => {
-					if (error) {
-						console.error("Could not open file:", error);
-					}
-				}
-			);
-		}, 1000);
-
-		return `Published ${newFilename}`;
+		// Return the path so it can be opened
+		return publishPath;
 	});
 
 	// Article generator
