@@ -23,9 +23,10 @@ limit = 5
 [[plugins]]
 package = "netlify-plugin-github-dispatch"
 [plugins.inputs]
-repo = "aarongustafson/aaron-gustafson.com"
+owner = "aarongustafson"
+repo = "aaron-gustafson.com"
+workflow = "syndicate-content.yml"
 token = "${GITHUB_ACCESS_TOKEN}"
-event = "netlify-deploy-succeeded"
 
 # Deploy notifications for syndication
 [build.environment]
