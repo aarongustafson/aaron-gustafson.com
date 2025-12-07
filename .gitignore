@@ -24,3 +24,6 @@ todo
 
 # Local Netlify cache folder
 .netlify/cache
+
+# GitHub Actions syndication cache
+.github/cache/*.json

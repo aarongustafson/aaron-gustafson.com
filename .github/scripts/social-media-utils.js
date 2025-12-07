@@ -141,77 +141,9 @@ class SocialMediaAPI {
 		}
 	}
 
-	async postToLinkedIn(content, imageUrl = null, isCompany = false) {
-		const accessToken = process.env.LINKEDIN_ACCESS_TOKEN;
-		if (!accessToken && !this.testMode) {
-			throw new Error("LinkedIn access token not provided");
-		}
-
-		const authorId = isCompany
-			? `urn:li:organization:${process.env.LINKEDIN_COMPANY_ID}`
-			: "urn:li:person:me";
-
-		const postData = {
-			author: authorId,
-			lifecycleState: "PUBLISHED",
-			specificContent: {
-				"com.linkedin.ugc.ShareContent": {
-					shareCommentary: {
-						text: content.text,
-					},
-					shareMediaCategory: imageUrl ? "IMAGE" : "NONE",
-				},
-			},
-			visibility: {
-				"com.linkedin.ugc.MemberNetworkVisibility": "PUBLIC",
-			},
-		};
-
-		if (content.url) {
-			postData.specificContent["com.linkedin.ugc.ShareContent"].media = [
-				{
-					status: "READY",
-					originalUrl: content.url,
-					title: {
-						text: content.title,
-					},
-				},
-			];
-		}
-
-		if (imageUrl) {
-			// LinkedIn image upload is complex, using URL preview instead
-			postData.specificContent[
-				"com.linkedin.ugc.ShareContent"
-			].shareMediaCategory = "ARTICLE";
-		}
-
-		if (this.testMode) {
-			console.log(
-				"🧪 TEST: LinkedIn post data:",
-				JSON.stringify(postData, null, 2)
-			);
-			return {
-				id: "test-linkedin-post-" + Date.now(),
-				status: "PUBLISHED",
-				testMode: true,
-			};
-		}
-
-		const response = await axios.post(
-			"https://api.linkedin.com/v2/ugcPosts",
-			postData,
-			{
-				headers: {
-					Authorization: `Bearer ${accessToken}`,
-					"Content-Type": "application/json",
-					"X-Restli-Protocol-Version": "2.0.0",
-				},
-			}
-		);
-
-		return response.data;
-	}
+	// NOTE: LinkedIn and Pinterest now use IFTTT webhooks instead of direct API calls
+	// The methods below are kept for reference but are not actively used
+	// To use direct API integration, update syndicate-posts.js and syndicate-links.js
 
 	async postToMastodon(status, mediaUrls = []) {
 		const accessToken = process.env.MASTODON_ACCESS_TOKEN;
@@ -336,54 +268,6 @@ class SocialMediaAPI {
 		}
 
 		return results;
-	}
-
-	async postToPinterest(pin) {
-		const accessToken = process.env.PINTEREST_ACCESS_TOKEN;
-		const boardId = process.env.PINTEREST_BOARD_ID;
-
-		if ((!accessToken || !boardId) && !this.testMode) {
-			throw new Error("Pinterest credentials not provided");
-		}
-
-		const postData = {
-			link: pin.url,
-			title: pin.title,
-			description: pin.description,
-			board_id: boardId || "test-board",
-		};
-
-		if (pin.imageUrl) {
-			postData.media_source = {
-				source_type: "image_url",
-				url: pin.imageUrl,
-			};
-		}
-
-		if (this.testMode) {
-			console.log(
-				"🧪 TEST: Pinterest pin data:",
-				JSON.stringify(postData, null, 2)
-			);
-			return {
-				id: "test-pinterest-pin-" + Date.now(),
-				url: "https://pinterest.com/pin/test123456789",
-				testMode: true,
-			};
-		}
-
-		const response = await axios.post(
-			"https://api.pinterest.com/v5/pins",
-			postData,
-			{
-				headers: {
-					Authorization: `Bearer ${accessToken}`,
-					"Content-Type": "application/json",
-				},
-			}
-		);
-
-		return response.data;
 	}
 
 	async sendToIFTTT(event, data) {
