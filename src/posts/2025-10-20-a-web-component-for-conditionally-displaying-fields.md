@@ -117,7 +117,7 @@ The component is lightweight, has no dependencies, and works in all modern brows
 
 ## Demo
 
-I’ve put together [a comprehensive demo showing various use cases and configurations](https://aarongustafson.github.io/form-show-if/demo.html) over on GitHub.
+I’ve put together [a comprehensive demo showing various use cases and configurations](https://aarongustafson.github.io/form-show-if/demo/) over on GitHub.
 
 The demo includes examples of:
 
