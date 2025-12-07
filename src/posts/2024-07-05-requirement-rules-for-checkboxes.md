@@ -94,7 +94,7 @@ You can also register custom translations or override existing ones using the `F
 I put together a relatively simple demo of the web component over on GitHub:
 
 <figure class="video-embed video-embed--4x3">
-<iframe src="https://aarongustafson.github.io/form-required-checkboxes/demo.html" class="talk__slides__embed video-embed__video" frameborder="0"></iframe>
+<iframe src="https://aarongustafson.github.io/form-required-checkboxes/demo/" class="talk__slides__embed video-embed__video" frameborder="0"></iframe>
 </figure>
 
 ## Grab It
