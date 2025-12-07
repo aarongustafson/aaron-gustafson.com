@@ -146,7 +146,7 @@ Configure Netlify to trigger the GitHub workflow after successful deployments:
        event = "netlify-deploy-succeeded"
    ```
 
-**Note**: Use `GITHUB_ACCESS_TOKEN` if you already have that configured in Netlify, or `GITHUB_TOKEN` if creating a new variable.
+**Note**: The Netlify environment variable should be named `GITHUB_ACCESS_TOKEN`.
 
 ### Option 2: Custom Function
 
@@ -165,7 +165,7 @@ exports.handler = async (event, context) => {
       {
         method: 'POST',
         headers: {
-          'Authorization': `token ${process.env.GITHUB_TOKEN}`,
+          'Authorization': `token ${process.env.GITHUB_ACCESS_TOKEN}`,
           'Content-Type': 'application/json',
           'User-Agent': 'Netlify-Function'
         },

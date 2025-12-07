@@ -107,7 +107,7 @@ IFTTT_WEBHOOK_KEY (optional fallback)
 
 ### Phase 4: Enable Webhook
 ```bash
-# 1. Add GITHUB_TOKEN to Netlify environment
+# 1. Add GITHUB_ACCESS_TOKEN to Netlify environment
 # 2. Configure Netlify deploy notification
 # 3. Test with a new blog post
 ```

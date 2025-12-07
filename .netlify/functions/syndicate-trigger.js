@@ -40,7 +40,7 @@ exports.handler = async (event, context) => {
       {
         method: 'POST',
         headers: {
-          'Authorization': `token ${process.env.GITHUB_TOKEN}`,
+          'Authorization': `token ${process.env.GITHUB_ACCESS_TOKEN}`,
           'Content-Type': 'application/json',
           'User-Agent': 'Netlify-Function/1.0'
         },
