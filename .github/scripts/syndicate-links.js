@@ -1,5 +1,6 @@
-const axios = require("axios");
-const { ContentProcessor, SocialMediaAPI } = require("./social-media-utils.js");
+import axios from "axios";
+import { fileURLToPath } from "url";
+import { ContentProcessor, SocialMediaAPI } from "./social-media-utils.js";
 
 class LinkSyndicator extends SocialMediaAPI {
 	constructor() {
@@ -194,9 +195,11 @@ class LinkSyndicator extends SocialMediaAPI {
 }
 
 // Run the syndication if this file is executed directly
-if (require.main === module) {
+const isMainModule = process.argv[1] === fileURLToPath(import.meta.url);
+
+if (isMainModule) {
 	const syndicator = new LinkSyndicator();
 	syndicator.run();
 }
 
-module.exports = LinkSyndicator;
+export default LinkSyndicator;

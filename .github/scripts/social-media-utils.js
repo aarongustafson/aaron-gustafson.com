@@ -1,8 +1,7 @@
-const axios = require("axios");
-const fs = require("fs").promises;
-const path = require("path");
-const { htmlToText } = require("html-to-text");
-const cheerio = require("cheerio");
+import axios from "axios";
+import fs from "fs/promises";
+import path from "path";
+import { htmlToText } from "html-to-text";
 
 class ContentProcessor {
 	static stripHtml(content) {
@@ -303,8 +302,4 @@ class SocialMediaAPI {
 	}
 }
 
-module.exports = {
-	ContentProcessor,
-	CacheManager,
-	SocialMediaAPI,
-};
+export { ContentProcessor, CacheManager, SocialMediaAPI };
