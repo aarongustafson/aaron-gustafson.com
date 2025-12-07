@@ -142,9 +142,11 @@ Configure Netlify to trigger the GitHub workflow after successful deployments:
      package = "netlify-plugin-github-dispatch"
      [plugins.inputs]
        repo = "aarongustafson/aaron-gustafson.com"
-       token = "YOUR_GITHUB_TOKEN"
+       token = "${GITHUB_ACCESS_TOKEN}"
        event = "netlify-deploy-succeeded"
    ```
+
+**Note**: Use `GITHUB_ACCESS_TOKEN` if you already have that configured in Netlify, or `GITHUB_TOKEN` if creating a new variable.
 
 ### Option 2: Custom Function
 
