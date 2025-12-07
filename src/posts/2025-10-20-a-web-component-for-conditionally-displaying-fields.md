@@ -127,6 +127,10 @@ The demo includes examples of:
 - Complex form scenarios with radio buttons and checkboxes
 - Different field grouping approaches
 
+<figure class="video-embed video-embed--4x3">
+<iframe src="https://aarongustafson.github.io/form-show-if/demo/" class="talk__slides__embed video-embed__video" frameborder="0"></iframe>
+</figure>
+
 ## Grab it
 
 You can view the entire project (and suggest enhancements) over on [the form-show-if component’s GitHub repo](https://github.com/aarongustafson/form-show-if). The component is available as both a standard script and an ES module, so you can integrate it however works best for your project.
