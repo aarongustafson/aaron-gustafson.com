@@ -1,86 +1,85 @@
+@use "../helpers/_helpers" as *;
+
 /*------------------------------------*\
 Buttons
 \*------------------------------------*/
+@use 'sass:color';
 
-@include breakup-breakpoint( "global" ) {
-	
-	button,
-	.button,
-	.button:link,
-	.button:visited {
-		
-		cursor: pointer;
-		user-select: none;
-		
-		background: $color-dark-teal;
-		color: $color-white;
-		text-decoration: none;
-		
-		border: 1px solid $color-text;
-		border-radius: 3px;
-		@include rem( padding, 10 15 );
-		
-		@include rem( font-size, $font-size-default );
-		font-weight: bold;
+button,
+.button,
+.button:link,
+.button:visited {
+  
+  cursor: pointer;
+  user-select: none;
+  
+  background: $color-dark-teal;
+  color: $color-white;
+  text-decoration: none;
+  
+  border: 1px solid $color-text;
+  border-radius: 3px;
+  @include rem( padding, 10 15 );
+  
+  @include rem( font-size, $font-size-default );
+  font-weight: bold;
 
-		transition: background-color $default-transition, color $default-transition;
+  transition: background-color $default-transition, color $default-transition;
 
-		@supports (margin-block: 1em) {
-			@include unset( padding );
-			padding-block: 10px;
-			padding-inline: 15px;
-		}
-		
-		&:hover,
-		&:focus {
-			background: darken( $color-dark-teal, 10 );
-		}
-		
-		&:focus-visible {
-			outline: 5px solid #062909
-		}
+  @supports (margin-block: 1em) {
+    @include unset( padding );
+    padding-block: 10px;
+    padding-inline: 15px;
+  }
+  
+  &:hover,
+  &:focus {
+    background: color.scale( $color-dark-teal, $lightness: -10% );
+  }
+  
+  &:focus-visible {
+    outline: 5px solid #062909
+  }
 
-		svg {
-			display: inline-block;
-			height: 1em;
-			margin-left: .15em;
-			
-			path {
-				fill: $color-white;
-			}
+  svg {
+    display: inline-block;
+    height: 1em;
+    margin-left: .15em;
+    
+    path {
+      fill: $color-white;
+    }
 
-			@supports (margin-block: 1em) {
-				@include unset( height margin-left );
-				margin-inline-start: .15em;
-				block-size: 1em;
-			}
-		}
+    @supports (margin-block: 1em) {
+      @include unset( height margin-left );
+      margin-inline-start: .15em;
+      block-size: 1em;
+    }
+  }
 
-		&[disabled] {
-			background: $color-grey-light;
-			border-color: darken( $color-grey-light, 30 );
-			color: darken( $color-grey-light, 30 );
-			cursor: default;
+  &[disabled] {
+    background: $color-grey-light;
+    border-color: color.scale( $color-grey-light, $lightness: -30% );
+    color: color.scale( $color-grey-light, $lightness: -30% );
+    cursor: default;
 
-			svg path {
-				fill: darken( $color-grey-light, 30 );
-			}
-		}
+    svg path {
+      fill: color.scale( $color-grey-light,  $lightness: -30% );
+    }
+  }
 
-		html.dark-mode & {
-			background-color: $color-link-dark-hover;
-			color: $color-background-dark;
+  html.dark-mode & {
+    background-color: $color-link-dark-hover;
+    color: $color-background-dark;
 
-			svg path {
-				fill: $color-background-dark;
-			}
+    svg path {
+      fill: $color-background-dark;
+    }
 
-			&:hover,
-			&:focus {
-				background-color: $color-link-dark;
-			}
-		}
-		
-	}
-	
+    &:hover,
+    &:focus {
+      background-color: $color-link-dark;
+    }
+  }
+  
 }

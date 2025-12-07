@@ -10,6 +10,7 @@
   
   {% set twitter = r/twitter\.com/ %}
   {% set mastodon = r/mastodon/ %}
+  {% set bluesky = r/bsky\.app/ %}
   {% set show_name = true %}
   <div class="webmentions webmentions--replies" {% if replies.length === 0 %}hidden{% endif %}>
     <h2 class="subsection__header">Webmentions</h2>
@@ -37,7 +38,7 @@
                 
                 {% set title_link = false %}
                 {% set webmention_content %}{% filter trim %}
-                  {% if twitter.test(webmention.url) or mastodon.test(webmention['wm-source']) %}
+                  {% if twitter.test(webmention.url) or mastodon.test(webmention['wm-source']) or bluesky.test(webmention.url) %}
                     {% if webmention.content.html %}
                       {{ webmention.content.html | unescape | safe }}
                     {% else %}

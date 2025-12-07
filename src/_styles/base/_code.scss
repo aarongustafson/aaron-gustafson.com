@@ -1,87 +1,87 @@
+@use "../helpers/_helpers" as *;
+
 /*------------------------------------*\
 		Code styles
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+code,
+kbd {
+  background-color: $color-black;
+  background-color: rgba($color-black, .9);
+  border: 1px solid $color-off-white;
+  border-radius: 3px;
+  color: $color-off-white;
+  font-family: $font-stack-mono;
+  font-style: normal;
+  font-size: .9em;
+  padding: .05em .25em;
+  text-shadow: none;
+  white-space: nowrap;
 
-		code,
-		kbd {
-				background-color: $color-black;
-				background-color: rgba( $color-black, .9 );
-				border: 1px solid $color-off-white;
-				border-radius: 3px;
-				color: $color-off-white;
-				font-family: $font-stack-mono;
-				font-style: normal;
-				padding: .05em .25em;
-				text-shadow: none;
-				white-space: nowrap;
-
-				@supports (margin-block: 1em) {
-					@include unset( border padding );
-					border-inline: 1px solid $color-off-white;
-					border-block: 1px solid $color-off-white;
-					padding-inline: .25em;
-					padding-block: .05em;
-				}
-		}
-		
-		pre {
-				background-color: $color-black;
-				border: 1px solid $color-grey-light;
-				border-radius: 3px;
-				color: $color-black;
-				font-family: $font-stack-mono;
-				font-style: normal;
-				
-				margin-left: auto;
-				margin-right: auto;
-				padding: .05em .25em;
-				
-				overflow-x: auto;
-
-				@supports (margin-block: 1em) {
-					@include unset( border margin-left margin-right padding overflow-x );
-					border-inline: 1px solid $color-grey-light;
-					border-block: 1px solid $color-grey-light;
-					margin-inline: auto;
-					padding-inline: .25em;
-					padding-block: .05em;
-					overflow-inline: auto;
-				}
-
-				&:focus {
-					outline: 3px double $color-black;
-					overflow-x: scroll;
-
-					@supports (margin-block: 1em) {
-						@include unset( overflow-x );
-						overflow-inline: scroll;
-					}
-
-					html.dark-mode & {
-						outline-color: $color-off-white;
-					}
-				}
-
-				code {
-					background: transparent;
-					border: 0;
-					padding: 0;
-					white-space: pre;
-				}
-		}
-		
+  @supports (margin-block: 1em) {
+    @include unset(border padding);
+    border-inline: 1px solid $color-off-white;
+    border-block: 1px solid $color-off-white;
+    padding-inline: .25em;
+    padding-block: .05em;
+  }
 }
 
-@include breakup-media("screen and (max-width: #{$bp-full-em})") {
-	pre[class*="language-"] {
-		@include rem( margin-left, -19 );
-		@include rem( margin-right, -19 );
+pre {
+  background-color: $color-black;
+  border: 1px solid $color-grey-light;
+  border-radius: 3px;
+  color: $color-black;
+  font-family: $font-stack-mono;
+  font-style: normal;
 
-		@supports (margin-block: 1em) {
-			@include unset( margin-left margin-right );
-			margin-inline: -19px;
-		}
-	}
+  margin-left: auto;
+  margin-right: auto;
+  padding: .05em .25em;
+
+  overflow-x: auto;
+
+  @supports (margin-block: 1em) {
+    @include unset(border margin-left margin-right padding overflow-x);
+    border-inline: 1px solid $color-grey-light;
+    border-block: 1px solid $color-grey-light;
+    margin-inline: auto;
+    padding-inline: .25em;
+    padding-block: .05em;
+    overflow-inline: auto;
+  }
+
+  &:focus {
+    outline: 3px double $color-black;
+    overflow-x: scroll;
+
+    @supports (margin-block: 1em) {
+      @include unset(overflow-x);
+      overflow-inline: scroll;
+    }
+
+    html.dark-mode & {
+      outline-color: $color-off-white;
+    }
+  }
+
+  code {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    white-space: pre;
+  }
+}
+
+
+@media screen and (max-width: #{$bp-full-em}) {
+  pre[class*="language-"] {
+    @include rem(margin-left, -19);
+    @include rem(margin-right, -19);
+
+    @supports (margin-block: 1em) {
+      @include unset(margin-left margin-right);
+      margin-inline: -19px;
+    }
+  }
 }

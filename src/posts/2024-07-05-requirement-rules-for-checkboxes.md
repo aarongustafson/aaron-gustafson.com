@@ -1,6 +1,7 @@
 ---
 title: "Requirement Rules for Checkboxes"
 date: 2024-07-05 14:08:34 -07:00
+last_updated_at: 2025-12-06 10:00:00 -07:00
 comments: true
 tags: ["accessibility", "forms", "HTML", "JavaScript", "progressive enhancement", "web components", "web forms"]
 description: "Currently, we can only make checkboxes required or not, individually. In some cases you need to be able to set a specific number of checkboxes that need to be checked. My `form-required-checkboxes` web component enables that."
@@ -65,8 +66,28 @@ The `form-required-checkboxes` element requires at least one attribute to functi
   * Single number (e.g., 3) requires exactly that number of choices.
   * Range (e.g., 3-5) requires a minimum of the first number and a max of the second number be chosen.
   * Max (e.g., 0-3) requires a minimum of zero and a max of the second number to be chosen.
-* `notice` (optional) - This is a string description that explains details of the required value in plan language. If you don’t supply one, the component will create one for you. This description will be added as a `small` element within the component (as a sibling to the `fieldset`).
-* `error` (optional) - This is a string validation error you’d like to be shown when the validation criteria is not met. By default the component will use the notice text, but this gives you more flexibility.
+* `notice` (optional) - This is a string description that explains details of the required value in plain language. If you don't supply one, the component will create one for you based on the current language (if supported). This description will be added as a `small` element within the component (as a sibling to the `fieldset`).
+* `error` (optional) - This is a string validation error you'd like to be shown when the validation criteria is not met. If not provided, an appropriate error message will be generated based on the current language (if supported).
+* `lang` (optional) - Language code for localized messages (e.g., “en,” “es,” “fr,” “de”). Falls back to the nearest ancestor’s `lang` attribute or the document language.
+
+## Localization
+
+The component now includes built-in translations for 16 languages: English, Chinese (Mandarin), Hindi, Spanish, French, Arabic, Bengali, Portuguese, Russian, Japanese, German, Punjabi, Javanese, Korean, Vietnamese, and Italian. Messages are automatically generated based on the `lang` attribute.
+
+You can use it like this:
+
+```html
+<form-required-checkboxes required="3" lang="es">
+  <fieldset>
+    <legend>Opciones</legend>
+    <!-- Will display: "Elija 3 de la lista" -->
+  </fieldset>
+</form-required-checkboxes>
+```
+
+The component automatically detects the language from the `lang` attribute on the element itself, the nearest ancestor element, or the document's `lang` attribute, falling back to English if none is found.
+
+You can also register custom translations or override existing ones using the `FormRequiredCheckboxesElement.registerTranslations()` static method. Regional language codes (e.g., `en-US`, `es-MX`) automatically fall back to their base language.
 
 ## Demo
 

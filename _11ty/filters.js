@@ -154,7 +154,14 @@ export default {
 		return found;
 	},
 	filterTo( obj, prop, value) {
-		return obj.filter( el => ( el[prop] == value || el.data[prop] == value ) );
+		return obj.filter( el => {
+      if ( !el[prop] && !el.data[prop] ) return false;
+      if ( value instanceof Array ) {
+        return (value.includes(el[prop]) || value.includes(el.data[prop]) );
+      } else {
+        return (el[prop] === value || el.data[prop] === value);
+      }
+    });
 	},
 
 	bySeriesTag: ( array, tag ) => {
@@ -199,8 +206,23 @@ export default {
 			{
 				while ( i-- )
 				{
-					if ( ! item[requirements[i]] )
-					{ 
+					const fieldName = requirements[i];
+					let hasField = false;
+					
+					// Special handling for webmention content structure
+					if (fieldName === 'content') {
+						hasField = item.content && (item.content.html || item.content.text || item.content.value);
+					} else if (fieldName === 'name') {
+						hasField = item.name && item.name !== null && item.name.trim() !== '';
+					} else if (fieldName === 'summary') {
+						hasField = item.summary && item.summary !== null && 
+							(typeof item.summary === 'string' ? item.summary.trim() !== '' : 
+							 item.summary.html || item.summary.text);
+					} else {
+						hasField = !!item[fieldName];
+					}
+					
+					if (!hasField) { 
 						return false;
 					}
 				}
@@ -211,8 +233,23 @@ export default {
 			{
 				while ( i-- )
 				{
-					if ( item[requirements[i]] )
-					{ 
+					const fieldName = requirements[i];
+					let hasField = false;
+					
+					// Special handling for webmention content structure
+					if (fieldName === 'content') {
+						hasField = item.content && (item.content.html || item.content.text || item.content.value);
+					} else if (fieldName === 'name') {
+						hasField = item.name && item.name !== null && item.name.trim() !== '';
+					} else if (fieldName === 'summary') {
+						hasField = item.summary && item.summary !== null && 
+							(typeof item.summary === 'string' ? item.summary.trim() !== '' : 
+							 item.summary.html || item.summary.text);
+					} else {
+						hasField = !!item[fieldName];
+					}
+					
+					if (hasField) { 
 						return true;
 					}
 				}
@@ -225,7 +262,7 @@ export default {
 		return getContentTypeByPath( path );
 	},
 	path_in_scope: ( path, scope ) => {
-		return path.indexOf( scope ) > -1;
+		return scope ? path.indexOf( scope ) > -1 : false;
 	},
 
 	getCountsByType: posts => {
@@ -244,6 +281,41 @@ export default {
 	},
 
 	getWebmentionsForUrl: (webmentions, url, old_url) => {
+		// Use URL index if available for O(1) lookup instead of O(n) filtering
+		if (webmentions.urlIndex) {
+			const mentions = [];
+			const currentMentionIds = webmentions.urlIndex[url] || [];
+			const oldMentionIds = old_url !== "false" ? (webmentions.urlIndex[old_url] || []) : [];
+			
+			// Combine all mention IDs and remove duplicates
+			const allMentionIds = [...new Set([...currentMentionIds, ...oldMentionIds])];
+			
+			// Get the actual mention objects from compactData (if available) or children
+			if (webmentions.compactData) {
+				// When using processed cache, get from compactData by ID
+				allMentionIds.forEach(id => {
+					const mention = webmentions.compactData[id];
+					if (mention) {
+						// The mention object already has the correct field names
+						mentions.push(mention);
+					}
+				});
+			} else {
+				// When using regular cache, build a map for O(1) lookups
+				const mentionMap = new Map();
+				webmentions.children.forEach(m => mentionMap.set(m["wm-id"], m));
+				
+				allMentionIds.forEach(id => {
+					const mention = mentionMap.get(id);
+					if (mention) mentions.push(mention);
+				});
+			}
+			
+			// Sort by wm-id
+			return mentions.sort((a, b) => a["wm-id"] - b["wm-id"]);
+		}
+		
+		// Fallback to original filtering method
 		return webmentions.children
 						.filter(entry => {
 							//console.log( entry['wm-target'], url, old_url );
@@ -263,7 +335,7 @@ export default {
 				let count = mentionType.length;
 				while( count-- )
 				{
-					if ( !!entry[mentionType[count]] )
+					if ( entry['wm-property'] === mentionType[count] )
 					{
 						return true;
 					}
@@ -272,7 +344,7 @@ export default {
 			}
 			else
 			{
-				return !!entry[mentionType];
+				return entry['wm-property'] === mentionType;
 			}
 		});
 	},

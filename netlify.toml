@@ -118,8 +118,9 @@ Access-Control-Allow-Methods = "GET,HEAD,OPTIONS,POST"
 Access-Control-Allow-Headers = "Accept,X-Requested-With,Content-Type,Cache-Control,mode"
 Cache-Control = "no-cache"
 
-[functions."deploy-succeeded"]
-included_files = ["_cache/*.*"]
+# Temporarily disabled due to timeout issues
+# [functions."deploy-succeeded"]
+#	included_files = ["_cache/*.*"]
 
 [functions]
 deno_import_map = "./.netlify/edge-functions/import_map.json"

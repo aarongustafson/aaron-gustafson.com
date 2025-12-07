@@ -3,7 +3,7 @@ title: "Smashing Book 4"
 subtitle: "New Perspectives on Web Design"
 author: "Aaron Gustafson, et al"
 date: 2013-11-25 12:00:00 -05:00
-type: "contributed"
+type: "authored"
 tags: ["progressive enhancement", "user experience"]
 publisher: "Smashing Magazine"
 url: "http://www.smashingmagazine.com/smashing-book-4-new-perspectives/"

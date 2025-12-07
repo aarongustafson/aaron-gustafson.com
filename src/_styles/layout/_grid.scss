@@ -1,3 +1,5 @@
+@use "../helpers/_helpers" as *;
+
 /*------------------------------------*\
 		Grid
 \*-------
@@ -5,32 +7,30 @@
 
 .layout-container {
 		
-		@include breakup-breakpoint( "global" ) {
-			max-width: 100%;
+    max-width: 100%;
 
-			height: ie8( 1% );
+    height: ie8( 1% );
 
-			// padding on a small screen
-			@include rem( padding, 0 20 );
-			margin: 0 auto;
+    // padding on a small screen
+    @include rem( padding, 0 20 );
+    margin: 0 auto;
 
-			position: relative;
+    position: relative;
 
-			@supports (margin-block: 1em) {
-				@include unset( max-width padding margin );
-				@include rem( padding-inline, 20, false );
-				padding-block: 0;
-				margin-block: 0;
-				margin-inline: auto;
-				max-inline-size: 100%;
-			}
-		}
+    @supports (margin-block: 1em) {
+      @include unset( max-width padding margin );
+      @include rem( padding-inline, 20, false );
+      padding-block: 0;
+      margin-block: 0;
+      margin-inline: auto;
+      max-inline-size: 100%;
+    }
 		
 		// @include breakup-breakpoint( "small" ) {
 		//
 		// }
 
-		@include breakup-breakpoint( "full" ) {
+		@media screen and (min-width: #{$bp-full-em}) {
 
 			padding: 0;
 			max-width: $bp-medium-em;

@@ -12,7 +12,6 @@ const version = "v{{ VERSION }}:",
         fallback_image,
         offline_image,
         // CSS
-        "/c/default.min.css",
         "/c/advanced.min.css",
         // JavaScript
         "/j/main.min.js",

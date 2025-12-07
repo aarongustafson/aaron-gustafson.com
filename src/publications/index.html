@@ -44,7 +44,7 @@ you’d like to hire me to write for you, <a href="/contact/?reason={{ contactRe
 					{% endif %}
 					{{ book_title( book.data.title, book.data.subtitle, book.data.edition ) }}
 				{%- endset -%}
-				<h3 class="listing__item__title">
+				<h4 class="listing__item__title">
 					{% if book.data.url %}
 						<a href="{{ book.data.url }}">
 							{{ book_details | safe }}
@@ -52,7 +52,7 @@ you’d like to hire me to write for you, <a href="/contact/?reason={{ contactRe
 					{% else %}
 						{{ book_details | safe }}
 					{% endif %}
-				</h3>
+				</h4>
 
 				{#
 				{% if book.author != "Aaron Gustafson" %}
@@ -72,11 +72,11 @@ you’d like to hire me to write for you, <a href="/contact/?reason={{ contactRe
 			</li>
 		{% endfor %}
 	</ul>
-		
-	<h3 class="section__title" id="contributions">Contributions</h3>
+
+  <h3 class="subsection__header" id="contributions">Contributions &amp; Forewords</h3>
 	
 	<ul class="listing listing--books listing--icons">
-		{% set contributed = collections.books | filterTo('type','contributed') %}
+		{% set contributed = collections.books | filterTo('type',['contributed', 'foreword']) %}
 		{% for book in contributed %}
 			<li class="listing__item listing__item--{{ loop.index }} book book--contributed entry--teaser">
 				<p class="entry__type listing__item__type" title="Book" role="img" aria-label="Book">{{ svg_book | safe }}</p>
@@ -94,7 +94,7 @@ you’d like to hire me to write for you, <a href="/contact/?reason={{ contactRe
 		{% endfor %}
 	</ul>
 
-	<h3 class="section__title" id="forewords">Forewords</h3>
+	<!--h3 class="subsection__header" id="forewords">Forewords</h3>
 
 	<ul class="listing listing--books listing--icons">
 		{% set forewords = collections.books | filterTo('type','foreword') %}
@@ -113,9 +113,9 @@ you’d like to hire me to write for you, <a href="/contact/?reason={{ contactRe
 				<p class="listing__item__meta">by <b class="book__author">{{ book.data.author }}</b></p>
 			</li>
 		{% endfor %}
-	</ul>
+	</ul-->
 
-	<h3 class="section__title" id="editing">Editing</h3>
+  <h3 class="subsection__header" id="editing">Editing</h3>
 	
 	<p>Over the years, I’ve tech edited and contributed in various other ways to
 		{% for book in books_edited %}

@@ -2,7 +2,7 @@
 {% set summary %}{% if post.summary %}{{ post.summary | safe }}{% else %}{{ post.data.description | safe }}{% endif %}{% endset %}
 {% set transition_root %}{{ type }}-{{ post.fileSlug }}{% endset %}
 
-<article class="entry entry--teaser entry--{{ type }}">
+<div class="entry entry--teaser entry--{{ type }}">
 	{%- set teaser_url -%}
 		{%- if type=="post" or type=="link" or type=="talk" -%}
 			{{ post.url }}
@@ -59,4 +59,4 @@
 			on <time class="dt-published" datetime="{{ teaser_date | machine_date }}">{{ teaser_date | readable_date }}</time>
 			</p>
 	</div>
-</article>
+</div>

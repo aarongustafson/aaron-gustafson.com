@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Unrecognized CSS Media Demo</title>
+		<style>
+			.test {
+				background-color: red;
+				color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 200px;
+				height: 100px;
+			}
+			.test::before {
+				content: "It’s Red";
+			}
+		</style>
+		<link
+			rel="stylesheet"
+			href="styles.css"
+			media="screen, only screen"
+		/>
+	</head>
+	<body>
+		<h1>Main Container</h1>
+		<p>All browsers should show green.</p>
+		<div class="test"></div>
+	</body>
+</html>

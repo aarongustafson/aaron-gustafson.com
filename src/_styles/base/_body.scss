@@ -1,66 +1,65 @@
+@use "../helpers/_helpers" as *;
+
 /*------------------------------------*\
 Body-level settings
 \*------------------------------------*/
-@include breakup-breakpoint( "global" ) {
-  
-  // CSS Device Adaptation
-  // http://dev.w3.org/csswg/css-device-adapt/
-  // ==========================================================================
-  @-moz-viewport{
-    width: device-width;
-    zoom: 1.0;
-  }
-  @-ms-viewport{
-    width: device-width;
-    zoom: 1.0;
-  }
-  @-o-viewport{
-    width: device-width;
-    zoom: 1.0;
-  }
-  @-webkit-viewport{
-    width: device-width;
-    zoom: 1.0;
-  }
-  @viewport{
-    width: device-width;
-    zoom: 1.0;
-  }
-  
-  
-  // Basline element definitions
-  // ==========================================================================
-  html {
-    //@include baseline-guide;
-    height: 100%;
-	}
-	
-	body {
-		@include breakup-placeholder( text );
-		@include breakup-placeholder( font-smoothing );
-		
-		background: $color-background;
-		color: $color-text;
-		
-		font-family: $font-stack-body;
-		font-weight: $font-weight-sansserif;
-		
-		margin: 0 auto;
-		height: 100%;
-	
-		word-wrap: break-word;
-		overflow-wrap: break-word;
 
-		@supports (margin-block: 1em) {
-			@include unset( margin height );
-			margin-inline: auto;
-			block-size: 100%;
-		}
+// CSS Device Adaptation
+// http://dev.w3.org/csswg/css-device-adapt/
+// ==========================================================================
+@-moz-viewport{
+  width: device-width;
+  zoom: 1.0;
+}
+@-ms-viewport{
+  width: device-width;
+  zoom: 1.0;
+}
+@-o-viewport{
+  width: device-width;
+  zoom: 1.0;
+}
+@-webkit-viewport{
+  width: device-width;
+  zoom: 1.0;
+}
+@viewport{
+  width: device-width;
+  zoom: 1.0;
+}
 
-		html.dark-mode & {
-			background: $color-background-dark;
-			color: $color-text-dark;
-		}
-	}
 
+// Basline element definitions
+// ==========================================================================
+html {
+  //@include baseline-guide;
+  height: 100%;
+}
+
+body {
+  @extend %text;
+  @extend %font-smoothing;
+  
+  background: $color-background;
+  color: $color-text;
+  
+  font-family: $font-stack-body;
+  font-weight: $font-weight-sansserif;
+  
+  margin: 0 auto;
+  height: 100%;
+
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+
+  @supports (margin-block: 1em) {
+    @include unset( margin height );
+    margin-inline: auto;
+    block-size: 100%;
+  }
+
+  html.dark-mode & {
+    background: $color-background-dark;
+    color: $color-text-dark;
+  }
 }

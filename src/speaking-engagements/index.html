@@ -58,7 +58,7 @@ you with a list of names</a>.</em><p>
 				</p>
 
 				{% set city = cities | pluck("name", event.location) %}
-				<p class="event__location-picture" style="background-image:url({{ cloudinary }}{{ city.photo }})" title="Photo by {{ city.credit_name }}, {{ city.credit_url }}"></p>
+				<p class="event__location-picture" aria-hidden="true" style="background-image:url({{ cloudinary }}{{ city.photo }})" title="Photo by {{ city.credit_name }}, {{ city.credit_url }}"></p>
 				
 				{% if event.url %}
 					</a>

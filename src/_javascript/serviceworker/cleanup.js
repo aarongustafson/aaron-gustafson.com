@@ -3,7 +3,7 @@ addEventListener("message", messageEvent => {
   {
     for ( let key in sw_caches )
     {
-      if ( sw_caches[key].limit != undefined )
+      if ( sw_caches[key].limit !== undefined )
       {
         trimCache( sw_caches[key].name, sw_caches[key].limit );
       }

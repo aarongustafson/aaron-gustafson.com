@@ -3,9 +3,9 @@
   Page layout
 \*------------------------------------*/
 
-@import "grid";
-@import "header";
-@import "main";
-@import "nav";
-@import "footer";
-@import "print";
+@use "grid";
+@use "header";
+@use "main";
+@use "nav";
+@use "footer";
+@use "print";

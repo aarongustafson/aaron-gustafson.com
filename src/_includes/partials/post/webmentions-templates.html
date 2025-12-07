@@ -2,36 +2,37 @@
 
 {%- set tpl_comment -%}
   {% raw %}
-  {% for mention in webmentions %}
-    <li class="webmentions__item">
-      <div class="h-cite webmention webmention--reply">
-        {% if mention.author %}
-        <div class="webmention__author p-author h-card">
-          <a class="u-url" href="{{ mention.author.url }}" rel="nofollow">
-            <img class="webmention__author__photo u-photo"
+    {% for mention in webmentions %}
+      <li class="webmentions__item">
+        <div class="h-cite webmention webmention--reply">
+          {% if mention.author %}
+          <div class="webmention__author p-author h-card">
+            <a class="u-url" rel="nofollow" data-mention-author-url="{{ mention.author.url }}">
+              <img class="webmention__author__photo u-photo"
                   width="48" height="48" alt="" loading="lazy"
-                  data-responsiver="ignore" src="{{ mention.author.photo }}"
+                  data-responsiver="ignore"
+                  data-mention-author-photo="{{ mention.author.photo }}"
                   >
-            <b class="p-name">{{ mention.author.name }}</b>
-          </a>
+              <b class="p-name">{{ mention.author.name }}</b>
+            </a>
+          </div>
+          {% endif %}
+          <div class="webmention__content p-content">
+            {{ mention.content | safe }}
+          </div>
+          <div class="webmention__meta">
+            <time class="webmention__pubdate dt-published"
+                  datetime="{{ mention.published_machine }}"
+                  >{{ mention.published_human }}</time>
+            <a rel="nofollow" class="webmention__source u-url"
+              data-mention-url="{{ mention.url }}"
+              >Permalink<b class="hidden">:
+                {{ mention.url }}</b>
+            </a>
+          </div>
         </div>
-        {% endif %}
-        <div class="webmention__content p-content">
-          {{ mention.content | safe }}
-        </div>
-        <div class="webmention__meta">
-          <time class="webmention__pubdate dt-published"
-                datetime="{{ mention.published_machine }}"
-                >{{ mention.published_human }}</time>
-          <a rel="nofollow" class="webmention__source u-url"
-              href="{{ mention.url }}"
-              >Permalink<b class="hidden">: 
-              {{ mention.url }}</b>
-          </a>
-        </div>
-      </div>
-    </li>
-  {% endfor %}
+      </li>
+    {% endfor %}
   {% endraw %}
 {%- endset -%}
 
@@ -40,15 +41,15 @@
     {% for mention in webmentions %}
       <li class="webmentions__item webmention TEMPLATE_CLASS">
         <div class="webmention__author p-author h-card">
-          <a class="u-url" rel="nofollow" href="{{ mention.url }}">
+          <a class="u-url" rel="nofollow" data-mention-url="{{ mention.url }}">
             {% if mention.author.photo %}
               <img class="webmention__author__photo u-photo"
-                    width="48" height="48"
-                    alt="{{ mention.author.name }}"
-                    title="{{ mention.author.name }}"
-                    loading="lazy"
-                    data-responsiver="ignore" src="{{ mention.author.photo }}"
-                    >
+                   width="48" height="48" loading="lazy"
+                   alt="{{ mention.author.name }}"
+                   title="{{ mention.author.name }}"
+                   data-responsiver="ignore"
+                   data-mention-author-photo="{{ mention.author.photo }}"
+                   >
             {% endif %}
           </a>
         </div>

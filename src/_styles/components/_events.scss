@@ -1,29 +1,28 @@
+@use "../helpers/_helpers" as *;
+
 /*------------------------------------*\
 		Events
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+.event {
 
-	.event {
+  &__content {
+    @include rem( margin-top, 2 );
 
-		&__content {
-			@include rem( margin-top, 2 );
+    @supports (margin-block: 1em) {
+      margin-top: unset;
+      @include rem( margin-block-start, 2, false );
+    }
+  }
 
-			@supports (margin-block: 1em) {
-				margin-top: unset;
-				@include rem( margin-block-start, 2, false );
-			}
-		}
+  &__location {
+    display: block;
+    margin-top: 0;
 
-		&__location {
-			display: block;
-			margin-top: 0;
+    @supports (margin-block: 1em) {
+      margin-top: unset;
+      margin-block-start: 0;
+    }
+  }
 
-			@supports (margin-block: 1em) {
-				margin-top: unset;
-				margin-block-start: 0;
-			}
-		}
-
-	}
 }

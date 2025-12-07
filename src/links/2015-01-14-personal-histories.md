@@ -11,4 +11,4 @@ archived: https://web.archive.org/web/20190427094359/http://www.sarawb.com/2015/
 
 This is a beautiful post from Sara that takes a deep dive into the impersonal nature of forms. I could not put it more beautifully and succinctly than her introductory tweet:
 
-https://twitter.com/sara_ann_marie/status/555007063873818624
+> Every question we ask is part of a personal history—and lives are so much messier than a form field.

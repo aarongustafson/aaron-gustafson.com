@@ -1,1 +1,1 @@
-{"imports":{"open-graph-scraper":"https://raw.githubusercontent.com/jshemas/openGraphScraper/master/dist/index.d.ts","netlify:edge":"https://edge.netlify.com/v1/index.ts"},"scopes":{}}
+{"imports":{"netlify:edge":"https://edge.netlify.com/v1/index.ts"},"scopes":{}}

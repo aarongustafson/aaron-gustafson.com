@@ -1,99 +1,98 @@
+@use "../helpers/_helpers" as *;
+
 /*------------------------------------*\
 Navigation
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
+[role=navigation] {
+  
+  text-align: center;
 
-	[role=navigation] {
-		
-		text-align: center;
+  @include rem( padding-bottom, $default-spacing );
 
-		@include rem( padding-bottom, $default-spacing );
+  p {
+    margin: 0;
+  }
+  
+  a {
+    @include rem( font-size, $font-size-nav );
+    font-weight: bold;
+    display: block;
+    padding: .5em 1em;
 
-		p {
-			margin: 0;
-		}
-		
-		a {
-			@include rem( font-size, $font-size-nav );
-			font-weight: bold;
-			display: block;
-			padding: .5em 1em;
-
-			@supports (margin-block: 1em) {
-				@include unset( padding );
-				padding-block: .5em;
-				padding-inline: 1em;
-			}
-		}
-		
-	}
-	
-	.main-navigation {
-		
-		&__link {
-			text-decoration: none;
-		}
-		
-		&__link:hover,
-		&__link:focus,
-		&__link:active,
-		mark &__link {
-			background-color: $color-link-hover;
-			color: $color-white;
-
-			html.dark-mode & {
-				background-color: $color-dark-teal;
-				color: $color-white;
-			}
-		}
-		
-		// no search needed on small screens
-		[role=navigation] &__link--search {
-			display: none;
-		}
-	}
-	
-	.form--search {
-		
-		[type=search] {
-			@include rem( font-size, $font-size-nav );
-			
-			appearance: none;
-			border: 1px solid;
-			border-radius: 3px;
-			@include rem( margin, 0 5 0 0 );
-
-			@supports (margin-block: 1em) {
-				margin: 0;
-				margin-inline-end: 5px;
-			}
-		}
-		
-		button {
-			font-weight: bold;
-			@include rem( font-size, $font-size-small );
-		}
-		
-	}
-	
-	// Better layout: Flexbox
-	@supports (display: flex) {
-		[role=search] {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			width: 100%;
-
-			@supports (margin-block: 1em) {
-				width: unset;
-				inline-size: 100%;
-			}
-		}
-	}
+    @supports (margin-block: 1em) {
+      @include unset( padding );
+      padding-block: .5em;
+      padding-inline: 1em;
+    }
+  }
+  
 }
 
-@include breakup-breakpoint( "medium" ) {
+.main-navigation {
+  
+  &__link {
+    text-decoration: none;
+  }
+  
+  &__link:hover,
+  &__link:focus,
+  &__link:active,
+  mark &__link {
+    background-color: $color-link-hover;
+    color: $color-white;
+
+    html.dark-mode & {
+      background-color: $color-dark-teal;
+      color: $color-white;
+    }
+  }
+  
+  // no search needed on small screens
+  [role=navigation] &__link--search {
+    display: none;
+  }
+}
+
+.form--search {
+  
+  [type=search] {
+    @include rem( font-size, $font-size-nav );
+    
+    appearance: none;
+    border: 1px solid;
+    border-radius: 3px;
+    @include rem( margin, 0 5 0 0 );
+
+    @supports (margin-block: 1em) {
+      margin: 0;
+      margin-inline-end: 5px;
+    }
+  }
+  
+  button {
+    font-weight: bold;
+    @include rem( font-size, $font-size-small );
+  }
+  
+}
+
+// Better layout: Flexbox
+@supports (display: flex) {
+  [role=search] {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+    @supports (margin-block: 1em) {
+      width: unset;
+      inline-size: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: #{$bp-medium-em}) {
 	
 	[role=navigation] {
 		background: $color-green;
@@ -140,7 +139,7 @@ Navigation
 	}
 	
 	.main-navigation {
-		@include breakup-placeholder( clearfix );
+		@include clearfix;
 		
 		&__item {
 			float: left;

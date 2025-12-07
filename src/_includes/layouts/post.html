@@ -87,7 +87,7 @@ is_post: true
 				<div class="entry__content e-content">
 
 					{% if hero %}
-						<figure class="entry__hero">
+						<figure class="entry__hero {{ 'entry__hero--' + hero.orientation if hero.orientation else '' }}">
 							<img data-responsiver="hero" class="entry__hero__image"
 									 src="{{ hero.src | absoluteUrl(site.url) }}" alt="{{ hero.alt }}"
 									 style="view-transition-name: {{ transition_root }}-hero;{% if hero.offset %} margin-top: -{{ hero.offset }}px;{% endif %}">

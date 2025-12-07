@@ -1,126 +1,124 @@
+@use "../helpers/_helpers" as *;
+
 /*------------------------------------*\
   Listing
 \*------------------------------------*/
 
 @use 'sass:math';
 
-@include breakup-breakpoint( "global" ) {
+.listing {
   
-  .listing {
+  @extend %delist;
+  
+  &__item {
     
-    @include breakup-placeholder( delist );
-    
-    &__item {
-      
-      &__title {
-        @include rem( font-size, $font-size-body );
-      }
-      
-      &__meta {
-        color: $color-text-light;
-        @include breakup-placeholder( small-caps );
-        @include rem( margin, 2 0 0 );
-
-				@supports (margin-block: 1em) {
-					margin: unset;
-					@include rem( margin-block, 2 0, false );
-					margin-inline: 0;
-				}
-
-        html.dark-mode & {
-          color: $color-text-dark-light;
-        }
-      }
-      
-      &__description {
-        margin: 0;
-      }
-      
-      &__content,
-      &__link {
-        margin-top: 0;
-
-				@supports (margin-block: 1em) {
-					margin-top: unset;
-					margin-block-start: 0;
-				}
-      }
-      
+    &__title {
+      @include rem( font-size, $font-size-body );
     }
     
-    &--links &__item {
+    &__meta {
+      color: $color-text-light;
+      @extend %small-caps;
+      @include rem( margin, 2 0 0 );
+
+      @supports (margin-block: 1em) {
+        margin: unset;
+        @include rem( margin-block, 2 0, false );
+        margin-inline: 0;
+      }
+
+      html.dark-mode & {
+        color: $color-text-dark-light;
+      }
+    }
+    
+    &__description {
       margin: 0;
     }
     
-    &--links &__item--link {
-      @include rem( margin-bottom, math.div( $default-spacing, 2 ) );
+    &__content,
+    &__link {
+      margin-top: 0;
 
-			@supports (margin-block: 1em) {
-				margin-bottom: unset;
-				@include rem( margin-block-end, math.div( $default-spacing, 2 ), false );
-			}
-    }
-
-    &--grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      @include rem( grid-gap, $default-spacing );
-    }
-
-    &--minigrid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-      @include rem( grid-gap, $default-spacing );
-    }
-    
-    &--icons &__item {
-      display: grid;
-      grid-template-areas: "icon title" "icon meta";
-      grid-template-columns: 3.5rem 1fr;
-
-      & + .listing__item {
-        @include rem( margin-top, $default-spacing );
-
-				@supports (margin-block: 1em) {
-					margin-top: unset;
-					@include rem( margin-block-start, $default-spacing, false );
-				}
-      }
-      .listing__item__type {
-        grid-area: icon;
-        svg { 
-          width: 24px;
-          height: auto;
-					max-height: 24px;
-
-					@supports (margin-block: 1em) {
-						@include unset( width height max-height );
-						inline-size: 24px;
-						block-size: auto;
-						max-block-size: 24px;
-					}
-        }
-      }
-      .listing__item__title {
-        grid-area: title;
-        margin-top: 0;
-
-				@supports (margin-block: 1em) {
-					margin-top: unset;
-					margin-block-start: 0;
-				}
-      }
-      .listing__item__meta {
-        grid-area: meta;
+      @supports (margin-block: 1em) {
+        margin-top: unset;
+        margin-block-start: 0;
       }
     }
     
   }
   
+  &--links &__item {
+    margin: 0;
+  }
+  
+  &--links &__item--link {
+    @include rem( margin-bottom, math.div( $default-spacing, 2 ) );
+
+    @supports (margin-block: 1em) {
+      margin-bottom: unset;
+      @include rem( margin-block-end, math.div( $default-spacing, 2 ), false );
+    }
+  }
+
+  &--grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    @include rem( grid-gap, $default-spacing );
+  }
+
+  &--minigrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    @include rem( grid-gap, $default-spacing );
+  }
+  
+  &--icons &__item {
+    display: grid;
+    grid-template-areas: "icon title" "icon meta";
+    grid-template-columns: 3.5rem 1fr;
+
+    & + .listing__item {
+      @include rem( margin-top, $default-spacing );
+
+      @supports (margin-block: 1em) {
+        margin-top: unset;
+        @include rem( margin-block-start, $default-spacing, false );
+      }
+    }
+    .listing__item__type {
+      grid-area: icon;
+      svg { 
+        width: 24px;
+        height: auto;
+        max-height: 24px;
+
+        @supports (margin-block: 1em) {
+          @include unset( width height max-height );
+          inline-size: 24px;
+          block-size: auto;
+          max-block-size: 24px;
+        }
+      }
+    }
+    .listing__item__title {
+      grid-area: title;
+      margin-top: 0;
+
+      @supports (margin-block: 1em) {
+        margin-top: unset;
+        margin-block-start: 0;
+      }
+    }
+    .listing__item__meta {
+      grid-area: meta;
+    }
+  }
+  
 }
 
 // photo comes in at medium
-@include breakup-breakpoint( "medium" ) {
+@media screen and (min-width: #{$bp-medium-em}) {
   
   .listing {
     
@@ -167,7 +165,7 @@
 }
 
 // photo comes in at medium
-@include breakup-breakpoint( "full" ) {
+@media screen and (min-width: #{$bp-full-em}) {
   
   .listing--gallery,
   .listing--grid,
