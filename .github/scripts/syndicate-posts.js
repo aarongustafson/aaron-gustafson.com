@@ -1,5 +1,5 @@
-const axios = require("axios");
-const { ContentProcessor, SocialMediaAPI } = require("./social-media-utils.js");
+import axios from "axios";
+import { ContentProcessor, SocialMediaAPI } from "./social-media-utils.js";
 
 class PostSyndicator extends SocialMediaAPI {
 	constructor() {
@@ -171,9 +171,7 @@ class PostSyndicator extends SocialMediaAPI {
 }
 
 // Run the syndication if this file is executed directly
-if (require.main === module) {
-	const syndicator = new PostSyndicator();
-	syndicator.run();
-}
+const syndicator = new PostSyndicator();
+syndicator.run();
 
-module.exports = PostSyndicator;
+export default PostSyndicator;
