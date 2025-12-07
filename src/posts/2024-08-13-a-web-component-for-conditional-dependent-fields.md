@@ -76,10 +76,10 @@ If you don’t include markup in your indicator, it will be automatically wrappe
 
 ## Demo
 
-I put together a relatively simple demo of the web component over on GitHub:
+I put together [a comprehensive demo of the web component](https://aarongustafson.github.io/form-required-if/demo/) over on GitHub:
 
 <figure class="video-embed video-embed--4x3">
-<iframe src="https://aarongustafson.github.io/form-required-if/demo.html" class="talk__slides__embed video-embed__video" frameborder="0"></iframe>
+<iframe src="https://aarongustafson.github.io/form-required-if/demo/" class="talk__slides__embed video-embed__video" frameborder="0"></iframe>
 </figure>
 
 ## Grab It
