@@ -1,0 +1,112 @@
+name: Syndicate Content to Social Media
+
+on:
+  # Webhook trigger from Netlify after successful deploy
+  repository_dispatch:
+    types: [netlify-deploy-succeeded]
+
+  # Manual trigger for testing
+  workflow_dispatch:
+    inputs:
+      content_type:
+        description: "Content type to syndicate"
+        required: false
+        default: "both"
+        type: choice
+        options:
+          - posts
+          - links
+          - both
+      test_mode:
+        description: "Run in test mode (no actual posts)"
+        required: false
+        default: false
+        type: boolean
+
+  # Scheduled backup check (runs every 30 minutes)
+  schedule:
+    - cron: "*/30 * * * *"
+
+jobs:
+  syndicate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: |
+          npm install
+          # Install additional syndication dependencies
+          npm install axios cheerio html-to-text dotenv
+
+      - name: Setup environment
+        run: |
+          echo "SITE_URL=https://www.aaron-gustafson.com" >> $GITHUB_ENV
+          echo "POSTS_FEED_URL=https://www.aaron-gustafson.com/feeds/latest-posts.json" >> $GITHUB_ENV
+          echo "LINKS_FEED_URL=https://www.aaron-gustafson.com/feeds/latest-links.json" >> $GITHUB_ENV
+          echo "TEST_MODE=${{ github.event.inputs.test_mode || 'false' }}" >> $GITHUB_ENV
+
+      # Restore cache before processing to avoid duplicates
+      - name: Restore processed items cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .github/cache
+          key: syndication-cache-${{ github.run_id }}
+          restore-keys: |
+            syndication-cache-
+
+      # Check for new posts
+      - name: Syndicate Posts
+        if: github.event.inputs.content_type != 'links'
+        run: node .github/scripts/syndicate-posts.js
+        env:
+          # Mastodon API
+          MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+          MASTODON_SERVER_URL: ${{ secrets.MASTODON_SERVER_URL }}
+
+          # Buffer API for Twitter/Bluesky
+          BUFFER_ACCESS_TOKEN: ${{ secrets.BUFFER_ACCESS_TOKEN }}
+          BUFFER_TWITTER_PROFILE_ID: ${{ secrets.BUFFER_TWITTER_PROFILE_ID }}
+          BUFFER_BLUESKY_PROFILE_ID: ${{ secrets.BUFFER_BLUESKY_PROFILE_ID }}
+
+          # IFTTT Webhook (fallback)
+          IFTTT_KEY: ${{ secrets.IFTTT_KEY }}
+
+          # Screenshot service
+          SCREENSHOT_API_KEY: ${{ secrets.SCREENSHOT_API_KEY }}
+
+      # Check for new links
+      - name: Syndicate Links
+        if: github.event.inputs.content_type != 'posts'
+        run: node .github/scripts/syndicate-links.js
+        env:
+          # Mastodon API
+          MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+          MASTODON_SERVER_URL: ${{ secrets.MASTODON_SERVER_URL }}
+
+          # Buffer API for Twitter/Bluesky
+          BUFFER_ACCESS_TOKEN: ${{ secrets.BUFFER_ACCESS_TOKEN }}
+          BUFFER_TWITTER_PROFILE_ID: ${{ secrets.BUFFER_TWITTER_PROFILE_ID }}
+          BUFFER_BLUESKY_PROFILE_ID: ${{ secrets.BUFFER_BLUESKY_PROFILE_ID }}
+
+          # IFTTT Webhook (fallback)
+          IFTTT_KEY: ${{ secrets.IFTTT_KEY }}
+
+          # Screenshot service
+          SCREENSHOT_API_KEY: ${{ secrets.SCREENSHOT_API_KEY }}
+
+      # Save updated cache after processing
+      - name: Save processed items cache
+        uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: .github/cache
+          key: syndication-cache-${{ github.run_id }}

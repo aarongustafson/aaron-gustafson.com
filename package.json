@@ -57,6 +57,8 @@
 		"@types/markdown-it": "^14.1.2",
 		"ansi-regex": ">=6.1.0",
 		"ansi2html": "^0.0.1",
+		"axios": "^1.12.2",
+		"cheerio": "^1.1.2",
 		"concurrently": "^9.1.2",
 		"css-what": "^6.1.0",
 		"dotenv": "^16.5.0",
@@ -84,6 +86,7 @@
 		"gulp-sass": "^6.0.1",
 		"gulp-svgo": "^2.2.1",
 		"gulp-uglify": "^3.0.2",
+		"html-to-text": "^9.0.5",
 		"imagetracerjs": "^1.2.6",
 		"js-yaml": "^4.1.1",
 		"lodash": "^4.17.21",
@@ -94,6 +97,7 @@
 		"merge-stream": "^2.0.0",
 		"netlify-lambda": "^2.0.16",
 		"netlify-plugin-cache-folder": "0.0.8",
+		"netlify-plugin-github-dispatch": "^1.1.0",
 		"node-fetch": "^3.3.2",
 		"nth-check": "^2.1.1",
 		"open-graph-scraper": "^6.10.0",
@@ -112,15 +116,28 @@
 		"broken-link-checker": "^0.7.8",
 		"netlify-cli": "^23.0.0",
 		"netlify-plugin-webmentions": "^1.1.1",
-		"plop": "^4.0.1"
+		"plop": "^4.0.1",
+		"prettier": "^3.7.4",
+		"prettier-plugin-toml": "^2.0.6"
 	},
 	"prettier": {
 		"useTabs": true,
+		"plugins": [
+			"prettier-plugin-toml"
+		],
 		"overrides": [
 			{
 				"files": "*.md",
 				"options": {
 					"useTabs": false
+				}
+			},
+			{
+				"files": "*.toml",
+				"options": {
+					"printWidth": 80,
+					"tabWidth": 2,
+					"useTabs": true
 				}
 			}
 		]

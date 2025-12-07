@@ -21,6 +21,10 @@
 
   "content_html": "{{ post.templateContent | trim_newlines | replace('"', '\\"') | safe }}",
   
+  {% if post.data.twitter_text %}
+  "social_text": "{{ post.data.twitter_text | replace('"', '\\"') | safe }}",
+  {% endif %}
+  
   {% if type == "post" or type == "link" %}
     "url": "{{ post_url }}",
   {% else %}
