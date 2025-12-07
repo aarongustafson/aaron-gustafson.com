@@ -117,7 +117,7 @@ The component is lightweight, has no dependencies, and works in all modern brows
 
 ## Demo
 
-I’ve put together [a comprehensive demo showing various use cases and configurations](https://aarongustafson.github.io/form-show-if/demo.html) over on GitHub.
+I’ve put together [a comprehensive demo showing various use cases and configurations](https://aarongustafson.github.io/form-show-if/demo/) over on GitHub.
 
 The demo includes examples of:
 
@@ -126,6 +126,10 @@ The demo includes examples of:
 - Custom CSS class integration
 - Complex form scenarios with radio buttons and checkboxes
 - Different field grouping approaches
+
+<figure class="video-embed video-embed--4x3">
+<iframe src="https://aarongustafson.github.io/form-show-if/demo/" class="talk__slides__embed video-embed__video" frameborder="0"></iframe>
+</figure>
 
 ## Grab it
 

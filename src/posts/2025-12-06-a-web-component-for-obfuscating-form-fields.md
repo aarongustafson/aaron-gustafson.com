@@ -175,10 +175,10 @@ The component makes no assumptions about your markup—it works with any text-st
 
 ## Demo
 
-I’ve created [a comprehensive demo page showing the various configuration options](https://aarongustafson.github.io/form-obfuscator/demo/), but here’s a quick CodePen demo too:
+I’ve created [a comprehensive demo page showing the various configuration options](https://aarongustafson.github.io/form-obfuscator/demo/) over on GitHub:
 
-<figure id="fig-2025-12-06-02" class="media-container">
-  {% CodePen "https://codepen.io/aarongustafson/pen/gbrQddg", "result", "400" %}
+<figure class="video-embed video-embed--4x3">
+<iframe src="https://aarongustafson.github.io/form-obfuscator/demo/" class="talk__slides__embed video-embed__video" frameborder="0"></iframe>
 </figure>
 
 ## Grab it
