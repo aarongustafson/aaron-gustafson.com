@@ -26,7 +26,7 @@ package = "netlify-plugin-github-dispatch"
 owner = "aarongustafson"
 repo = "aaron-gustafson.com"
 workflow = "syndicate-content.yml"
-token = "${GITHUB_ACCESS_TOKEN}"
+branch = "main"
 
 # Deploy notifications for syndication
 [build.environment]
