@@ -1,4 +1,5 @@
 import axios from "axios";
+import { fileURLToPath } from "url";
 import { ContentProcessor, SocialMediaAPI } from "./social-media-utils.js";
 
 class LinkSyndicator extends SocialMediaAPI {
@@ -194,7 +195,11 @@ class LinkSyndicator extends SocialMediaAPI {
 }
 
 // Run the syndication if this file is executed directly
-const syndicator = new LinkSyndicator();
-syndicator.run();
+const isMainModule = process.argv[1] === fileURLToPath(import.meta.url);
+
+if (isMainModule) {
+	const syndicator = new LinkSyndicator();
+	syndicator.run();
+}
 
 export default LinkSyndicator;
