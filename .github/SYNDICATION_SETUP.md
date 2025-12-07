@@ -8,12 +8,6 @@ Add these secrets to your GitHub repository settings (Settings → Secrets and v
 
 ### Required Secrets
 
-#### LinkedIn API
-```
-LINKEDIN_ACCESS_TOKEN=your_linkedin_access_token
-LINKEDIN_COMPANY_ID=your_company_page_id  # For Easy Designs company posts
-```
-
 #### Mastodon API
 ```
 MASTODON_ACCESS_TOKEN=your_mastodon_access_token
@@ -45,20 +39,11 @@ SCREENSHOT_API_KEY=your_screenshotmachine_api_key
 IFTTT_WEBHOOK_KEY=your_ifttt_webhook_key
 ```
 
+**Note**: LinkedIn requires IFTTT due to API limitations. See IFTTT setup section below.
+
 ## API Setup Instructions
 
-### 1. LinkedIn API Setup
-
-1. Go to [LinkedIn Developer Portal](https://developer.linkedin.com/)
-2. Create a new app or use existing one
-3. Request access to these permissions:
-   - `r_liteprofile` - Read profile info
-   - `w_member_social` - Post to personal profile
-   - `w_organization_social` - Post to company page (if applicable)
-4. Generate access token
-5. For company posts, get your company ID from LinkedIn Company Pages
-
-### 2. Mastodon API Setup
+### 1. Mastodon API Setup
 
 1. Go to your Mastodon instance settings (e.g., https://front-end.social/settings/applications)
 2. Create new application with these scopes:
@@ -67,7 +52,7 @@ IFTTT_WEBHOOK_KEY=your_ifttt_webhook_key
    - `write:media` - Upload media
 3. Copy the access token
 
-### 3. Buffer API Setup
+### 2. Buffer API Setup
 
 1. Go to [Buffer Developers](https://buffer.com/developers/api)
 2. Create an application and get access token
@@ -77,7 +62,7 @@ IFTTT_WEBHOOK_KEY=your_ifttt_webhook_key
    ```
 4. Find the IDs for your Twitter and Bluesky profiles
 
-### 4. Pinterest API Setup
+### 3. Pinterest API Setup
 
 1. Go to [Pinterest Developer Portal](https://developers.pinterest.com/)
 2. Create an app and generate access token
@@ -87,7 +72,7 @@ IFTTT_WEBHOOK_KEY=your_ifttt_webhook_key
      -H "Authorization: Bearer YOUR_TOKEN"
    ```
 
-### 5. Screenshot Service (Optional)
+### 4. Screenshot Service (Optional)
 
 1. Sign up at [Screenshot Machine](https://www.screenshotmachine.com/)
 2. Get your API key from the dashboard
@@ -96,21 +81,33 @@ IFTTT_WEBHOOK_KEY=your_ifttt_webhook_key
    - [Bannerbear](https://www.bannerbear.com/)
    - [Htmlcsstoimage](https://htmlcsstoimage.com/)
 
-### 6. IFTTT Fallback Setup (Optional)
+### 5. IFTTT Setup (Required for LinkedIn)
 
 1. Create IFTTT account and go to [Webhooks service](https://ifttt.com/maker_webhooks)
 2. Get your webhook key
-3. Create applets for each social platform as fallback:
-   - `linkedin_post` → LinkedIn post
-   - `linkedin_link` → LinkedIn link post  
-   - `linkedin_company_link` → LinkedIn company post
-   - `mastodon_post` → Mastodon toot
-   - `mastodon_link` → Mastodon link toot
-   - `twitter_post` → Twitter post
-   - `twitter_link` → Twitter link post
-   - `bluesky_post` → Bluesky post
-   - `bluesky_link` → Bluesky link post
-   - `pinterest_pin` → Pinterest pin
+3. Create applets for each social platform:
+   - **`linkedin_post`** → LinkedIn post (blog articles)
+   - **`linkedin_link`** → LinkedIn link post (shared links)
+   - `mastodon_post` → Mastodon toot (optional fallback)
+   - `mastodon_link` → Mastodon link toot (optional fallback)
+   - `twitter_post` → Twitter post (optional fallback)
+   - `twitter_link` → Twitter link post (optional fallback)
+   - `bluesky_post` → Bluesky post (optional fallback)
+   - `bluesky_link` → Bluesky link post (optional fallback)
+   - `pinterest_pin` → Pinterest pin (optional fallback)
+
+**LinkedIn IFTTT Webhook Payload Example:**
+```json
+{
+  "value1": "Article Title",
+  "value2": "https://www.aaron-gustafson.com/notebook/article-slug/",
+  "value3": "Brief excerpt or tags"
+}
+```
+
+In the IFTTT LinkedIn action (Share a link):
+- **Link URL**: `{{Value2}}`
+- **Comment**: `{{Value1}}\n\n{{Value3}}`
 
 ## Netlify Webhook Setup
 
