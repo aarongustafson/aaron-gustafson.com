@@ -174,7 +174,7 @@ class SocialMediaAPI {
 								headers: {
 									Authorization: `Bearer ${accessToken}`,
 								},
-							}
+							},
 						);
 						mediaIds.push(mediaResponse.data.id);
 					} catch (error) {
@@ -190,7 +190,7 @@ class SocialMediaAPI {
 		if (this.testMode) {
 			console.log(
 				"🧪 TEST: Mastodon post data:",
-				JSON.stringify(postData, null, 2)
+				JSON.stringify(postData, null, 2),
 			);
 			return {
 				id: "test-mastodon-post-" + Date.now(),
@@ -207,7 +207,7 @@ class SocialMediaAPI {
 					Authorization: `Bearer ${accessToken}`,
 					"Content-Type": "application/json",
 				},
-			}
+			},
 		);
 
 		return response.data;
@@ -236,7 +236,7 @@ class SocialMediaAPI {
 			if (this.testMode) {
 				console.log(
 					`🧪 TEST: Buffer post data for profile ${profileId}:`,
-					JSON.stringify(postData, null, 2)
+					JSON.stringify(postData, null, 2),
 				);
 				results.push({
 					id: `test-buffer-${profileId}-${Date.now()}`,
@@ -255,13 +255,13 @@ class SocialMediaAPI {
 							Authorization: `Bearer ${accessToken}`,
 							"Content-Type": "application/json",
 						},
-					}
+					},
 				);
 				results.push(response.data);
 			} catch (error) {
 				console.log(
 					`Failed to post to Buffer profile ${profileId}:`,
-					error.message
+					error.message,
 				);
 				results.push({ error: error.message, profileId });
 			}
@@ -280,7 +280,7 @@ class SocialMediaAPI {
 		if (this.testMode) {
 			console.log(
 				`🧪 TEST: IFTTT webhook "${event}":`,
-				JSON.stringify(data, null, 2)
+				JSON.stringify(data, null, 2),
 			);
 			return {
 				event: event,
@@ -296,7 +296,7 @@ class SocialMediaAPI {
 				headers: {
 					"Content-Type": "application/json",
 				},
-			}
+			},
 		);
 
 		return response.data;
