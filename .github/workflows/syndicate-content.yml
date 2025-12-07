@@ -54,6 +54,15 @@ jobs:
           echo "LINKS_FEED_URL=https://www.aaron-gustafson.com/feeds/latest-links.json" >> $GITHUB_ENV
           echo "TEST_MODE=${{ github.event.inputs.test_mode || 'false' }}" >> $GITHUB_ENV
 
+      # Restore cache before processing to avoid duplicates
+      - name: Restore processed items cache
+        uses: actions/cache/restore@v4
+        with:
+          path: .github/cache
+          key: syndication-cache-${{ github.run_id }}
+          restore-keys: |
+            syndication-cache-
+
       # Check for new posts
       - name: Syndicate Posts
         if: github.event.inputs.content_type != 'links'
@@ -69,7 +78,7 @@ jobs:
           BUFFER_BLUESKY_PROFILE_ID: ${{ secrets.BUFFER_BLUESKY_PROFILE_ID }}
 
           # IFTTT Webhook (fallback)
-          IFTTT_WEBHOOK_KEY: ${{ secrets.IFTTT_WEBHOOK_KEY }}
+          IFTTT_KEY: ${{ secrets.IFTTT_KEY }}
 
           # Screenshot service
           SCREENSHOT_API_KEY: ${{ secrets.SCREENSHOT_API_KEY }}
@@ -79,10 +88,6 @@ jobs:
         if: github.event.inputs.content_type != 'posts'
         run: node .github/scripts/syndicate-links.js
         env:
-          # Pinterest API
-          PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
-          PINTEREST_BOARD_ID: ${{ secrets.PINTEREST_BOARD_ID }}
-
           # Mastodon API
           MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
           MASTODON_SERVER_URL: ${{ secrets.MASTODON_SERVER_URL }}
@@ -93,16 +98,15 @@ jobs:
           BUFFER_BLUESKY_PROFILE_ID: ${{ secrets.BUFFER_BLUESKY_PROFILE_ID }}
 
           # IFTTT Webhook (fallback)
-          IFTTT_WEBHOOK_KEY: ${{ secrets.IFTTT_WEBHOOK_KEY }}
+          IFTTT_KEY: ${{ secrets.IFTTT_KEY }}
 
           # Screenshot service
           SCREENSHOT_API_KEY: ${{ secrets.SCREENSHOT_API_KEY }}
 
-      # Cache processed items to avoid duplicates
-      - name: Cache processed items
-        uses: actions/cache@v4
+      # Save updated cache after processing
+      - name: Save processed items cache
+        uses: actions/cache/save@v4
+        if: always()
         with:
           path: .github/cache
           key: syndication-cache-${{ github.run_id }}
-          restore-keys: |
-            syndication-cache-

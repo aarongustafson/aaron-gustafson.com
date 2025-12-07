@@ -89,37 +89,22 @@ class LinkSyndicator extends SocialMediaAPI {
 			});
 		}
 
-		// Pinterest
+		// Pinterest via IFTTT
 		try {
-			console.log("📌 Posting to Pinterest...");
-			const pinterestResult = await this.postToPinterest({
-				title: link.title,
-				description: link.content_html
-					? ContentProcessor.stripHtml(link.content_html)
-					: link.title,
-				url: relatedUrl,
-				imageUrl: screenshotUrl,
+			console.log("📌 Posting to Pinterest via IFTTT...");
+			await this.sendToIFTTT("pinterest_pin", {
+				value1: link.title,
+				value2: relatedUrl,
+				value3: ContentProcessor.stripHtml(link.content_html || link.title),
 			});
-			results.push({
-				platform: "Pinterest",
-				success: true,
-				data: pinterestResult,
-			});
-			console.log("✅ Pinterest post successful");
+			results.push({ platform: "Pinterest (IFTTT)", success: true });
+			console.log("✅ Pinterest IFTTT webhook sent");
 		} catch (error) {
-			console.log("❌ Pinterest post failed:", error.message);
+			console.log("❌ Pinterest IFTTT webhook failed:", error.message);
 			results.push({
-				platform: "Pinterest",
+				platform: "Pinterest (IFTTT)",
 				success: false,
 				error: error.message,
-			});
-
-			// Fallback to IFTTT
-			await this.sendToIFTTT("pinterest_pin", {
-				title: link.title,
-				content: link.content_html,
-				url: relatedUrl,
-				image: screenshotUrl,
 			});
 		}
 

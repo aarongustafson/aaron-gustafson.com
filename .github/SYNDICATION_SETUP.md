@@ -8,6 +8,13 @@ Add these secrets to your GitHub repository settings (Settings → Secrets and v
 
 ### Required Secrets
 
+#### IFTTT (Required for LinkedIn & Pinterest)
+```
+IFTTT_KEY=your_ifttt_webhook_key
+```
+
+**Note**: LinkedIn and Pinterest use IFTTT webhooks due to API limitations.
+
 #### Mastodon API
 ```
 MASTODON_ACCESS_TOKEN=your_mastodon_access_token
@@ -21,12 +28,6 @@ BUFFER_TWITTER_PROFILE_ID=your_twitter_profile_id
 BUFFER_BLUESKY_PROFILE_ID=your_bluesky_profile_id
 ```
 
-#### Pinterest API
-```
-PINTEREST_ACCESS_TOKEN=your_pinterest_access_token
-PINTEREST_BOARD_ID=your_reading_list_board_id
-```
-
 ### Optional Secrets
 
 #### Screenshot Service
@@ -34,12 +35,24 @@ PINTEREST_BOARD_ID=your_reading_list_board_id
 SCREENSHOT_API_KEY=your_screenshotmachine_api_key
 ```
 
-#### IFTTT Fallback (for services without direct API)
-```
-IFTTT_WEBHOOK_KEY=your_ifttt_webhook_key
-```
+## Syndication Platform Summary
 
-**Note**: LinkedIn requires IFTTT due to API limitations. See IFTTT setup section below.
+The workflow syndicates content to the following platforms:
+
+**Blog Posts:**
+- ✅ LinkedIn (via IFTTT)
+- ✅ Mastodon (via Mastodon API)
+- ✅ Twitter (via Buffer API)
+- ✅ Bluesky (via Buffer API)
+
+**Link Shares:**
+- ✅ LinkedIn (via IFTTT)
+- ✅ Pinterest (via IFTTT)
+- ✅ Mastodon (via Mastodon API)
+- ✅ Twitter (via Buffer API)
+- ✅ Bluesky (via Buffer API)
+
+**Important**: The workflow only syndicates items published today to prevent re-posting old content.
 
 ## API Setup Instructions
 
@@ -62,17 +75,7 @@ IFTTT_WEBHOOK_KEY=your_ifttt_webhook_key
    ```
 4. Find the IDs for your Twitter and Bluesky profiles
 
-### 3. Pinterest API Setup
-
-1. Go to [Pinterest Developer Portal](https://developers.pinterest.com/)
-2. Create an app and generate access token
-3. Get your board ID:
-   ```bash
-   curl -X GET "https://api.pinterest.com/v5/boards" \
-     -H "Authorization: Bearer YOUR_TOKEN"
-   ```
-
-### 4. Screenshot Service (Optional)
+### 3. Screenshot Service (Optional)
 
 1. Sign up at [Screenshot Machine](https://www.screenshotmachine.com/)
 2. Get your API key from the dashboard
@@ -81,20 +84,18 @@ IFTTT_WEBHOOK_KEY=your_ifttt_webhook_key
    - [Bannerbear](https://www.bannerbear.com/)
    - [Htmlcsstoimage](https://htmlcsstoimage.com/)
 
-### 5. IFTTT Setup (Required for LinkedIn)
+### 4. IFTTT Setup (Required for LinkedIn & Pinterest)
 
 1. Create IFTTT account and go to [Webhooks service](https://ifttt.com/maker_webhooks)
 2. Get your webhook key
 3. Create applets for each social platform:
    - **`linkedin_post`** → LinkedIn post (blog articles)
    - **`linkedin_link`** → LinkedIn link post (shared links)
-   - `mastodon_post` → Mastodon toot (optional fallback)
-   - `mastodon_link` → Mastodon link toot (optional fallback)
-   - `twitter_post` → Twitter post (optional fallback)
-   - `twitter_link` → Twitter link post (optional fallback)
-   - `bluesky_post` → Bluesky post (optional fallback)
-   - `bluesky_link` → Bluesky link post (optional fallback)
-   - `pinterest_pin` → Pinterest pin (optional fallback)
+   - **`pinterest_pin`** → Pinterest pin (link shares)
+   - `twitter_post` → Twitter/X post (optional fallback for posts)
+   - `twitter_link` → Twitter/X link post (optional fallback for links)
+
+**Note**: Bluesky and Mastodon do not have IFTTT integrations, so they rely entirely on their respective APIs.
 
 **LinkedIn IFTTT Webhook Payload Example:**
 ```json
@@ -108,6 +109,21 @@ IFTTT_WEBHOOK_KEY=your_ifttt_webhook_key
 In the IFTTT LinkedIn action (Share a link):
 - **Link URL**: `{{Value2}}`
 - **Comment**: `{{Value1}}\n\n{{Value3}}`
+
+**Pinterest IFTTT Webhook Payload Example:**
+```json
+{
+  "value1": "Link Title",
+  "value2": "https://external-url.com/article",
+  "value3": "Your commentary or description"
+}
+```
+
+In the IFTTT Pinterest action (Create a pin):
+- **Image URL**: `https://api.screenshotmachine.com?key=YOUR_KEY&dimension=1000x1500&url={{Value2}}`
+- **Link**: `{{Value2}}`
+- **Description**: `{{Value1}}\n\n{{Value3}}`
+- **Board**: Select your Reading List board
 
 ## Netlify Webhook Setup
 
@@ -208,6 +224,7 @@ The workflow will:
 - 🔄 Use IFTTT as fallback for failed API calls
 - 💾 Cache processed items to prevent duplicates
 - ⏰ Run backup checks every 30 minutes
+- 📅 Only syndicate items published today (prevents re-posting old content)
 
 ## Migration from Zapier
 
@@ -233,7 +250,9 @@ The workflow will:
 
 ### Platform-Specific Notes
 
-- **LinkedIn**: Company posts require special permissions
-- **Mastodon**: Instance-specific rate limits may vary
+- **LinkedIn**: Requires IFTTT (API limitations for most developers)
+- **Pinterest**: Requires IFTTT (simpler integration with screenshot generation)
+- **Mastodon**: Direct API only (no IFTTT integration available)
+- **Bluesky**: Via Buffer API only (no IFTTT integration available)
+- **Twitter/X**: Via Buffer API with IFTTT fallback option
 - **Buffer**: Profile IDs change if you reconnect accounts
-- **Pinterest**: Board IDs are required, not board names
