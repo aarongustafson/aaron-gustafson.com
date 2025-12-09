@@ -10,6 +10,8 @@ via:
   url: https://twitter.com/cramforce/status/900478709215281152
 ---
 
-https://twitter.com/cramforce/status/900478709215281152
+> Nice one Safari team! https://t.co/YTO6rZR3dd
+>
+> —[Malte Ubl (@cramforce)](https://twitter.com/cramforce/status/900478709215281152)
 
 This is great to see! I think `link[rel="canonical"]` is not used often enough. I’d love to see all sharing protocols adopt this approach for things like cross-posts, m-dot sites, and more.

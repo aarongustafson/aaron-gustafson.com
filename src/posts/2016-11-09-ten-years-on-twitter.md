@@ -34,13 +34,21 @@ https://twitter.com/stefsull/statuses/765930175 conversation='none'
 
 In the past decade, Twitter has changed dramatically. Most of us, with the exception of [Brian](https://twitter.com/briansuda), moved away from tweeting in the third person. Here’s my transition (circa 2012… I tweeted for nearly 6 years in the third person!):
 
-https://twitter.com/AaronGustafson/status/258639664947273729
+> has decided, after much internal debate & consideration of your thoughts, to abandon 3rd person tweeting style. #3pT will be the transition.
+>
+> —[Aaron Gustafson (@AaronGustafson)](https://twitter.com/AaronGustafson/status/258639664947273729)
 
-https://twitter.com/AaronGustafson/status/258639921940688896
+> You are confused and confounded by this move and wonder why @aarongustafson did it. Perplexed, you scratch your head.
+>
+> —[Aaron Gustafson (@AaronGustafson)](https://twitter.com/AaronGustafson/status/258639921940688896)
 
-https://twitter.com/AaronGustafson/status/258640188631310336
+> When it came down to it, I decided it was about you, my readers, more so than my enjoyment of the mental exercise of writing 3rd person.
+>
+> —[Aaron Gustafson (@AaronGustafson)](https://twitter.com/AaronGustafson/status/258640188631310336)
 
-https://twitter.com/AaronGustafson/status/258640798663454720
+> The truth is that while I love writing and 3rd person was fun, this change will let me play with other authoring styles.
+>
+> —[Aaron Gustafson (@AaronGustafson)](https://twitter.com/AaronGustafson/status/258640798663454720)
 
 Ideas we played with, like [Chris’ suggestion that we add tagging to our tweets](https://twitter.com/chrismessina/status/223115412), ["d" messages](http://microformats.org/wiki/twitter-syntax#Messages), [at-mentions](https://twitter.com/rsa/status/55281), and [Retweets](https://twitter.com/ericrice/status/31669791) (later, [RTs](https://twitter.com/TDavid/status/641334922)) changed from things we did as a matter of necessity while using the service to integral pieces of "Twitter the Platform".
 

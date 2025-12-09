@@ -101,17 +101,6 @@ export default async (config) => {
 		baseHref: PRODUCTION ? "https://www.aaron-gustafson.com" : "",
 	});
 	config.addPlugin(embedEverything, {
-		twitter: {
-			options: {
-				cacheText: true,
-				cacheDuration: "*",
-				// Add error handling for failed Twitter embeds
-				error: (url, error) => {
-					console.warn(`Twitter embed failed for ${url}:`, error.message);
-					return `<p><a href="${url}">View on Twitter</a></p>`;
-				}
-			},
-		},
 		// Add more aggressive caching for better performance
 		youtube: {
 			options: {

@@ -128,7 +128,9 @@ The demo includes examples of:
 - Different field grouping approaches
 
 <figure class="video-embed video-embed--4x3">
+<fullscreen-control class="talk__slides__embed video-embed__video">
 <iframe src="https://aarongustafson.github.io/form-show-if/demo/" class="talk__slides__embed video-embed__video" frameborder="0"></iframe>
+</fullscreen-control>
 </figure>
 
 ## Grab it

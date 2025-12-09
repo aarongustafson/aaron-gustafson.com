@@ -178,7 +178,9 @@ The component makes no assumptions about your markup—it works with any text-st
 I’ve created [a comprehensive demo page showing the various configuration options](https://aarongustafson.github.io/form-obfuscator/demo/) over on GitHub:
 
 <figure class="video-embed video-embed--4x3">
+<fullscreen-control class="talk__slides__embed video-embed__video">
 <iframe src="https://aarongustafson.github.io/form-obfuscator/demo/" class="talk__slides__embed video-embed__video" frameborder="0"></iframe>
+</fullscreen-control>
 </figure>
 
 ## Grab it

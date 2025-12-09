@@ -12,6 +12,7 @@ This is an excellent summary of print style recommendations from [Manuel Matuzov
 
 See also:
 
-https://twitter.com/chriscoyier/status/799294264446287872
-
-https://twitter.com/aardrian/status/799297274375380992
+> Hey @Indiegogo, here’s a 3½-year-old primer on print styles: https://t.co/NPtrFBurBy
+> Context: https://t.co/oLLxt9jIaR
+>
+> —[Adrian Roselli](https://twitter.com/aardrian/status/799297274375380992)

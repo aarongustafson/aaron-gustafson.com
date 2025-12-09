@@ -8,4 +8,6 @@ description: "Orde Saunders nails it!"
 
 Love this!
 
-https://twitter.com/decadecity/status/559693419808034816
+> You&#39;ll never believe this one weird trick that takes the pain out of cross browser testing: Progressive enhancement.
+>
+> —[Orde Saunders 🔟 (@decadecity)](https://twitter.com/decadecity/status/559693419808034816)

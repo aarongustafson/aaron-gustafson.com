@@ -94,7 +94,9 @@ You can also register custom translations or override existing ones using the `F
 I put together [a comprehensive demo of the web component](https://aarongustafson.github.io/form-required-checkboxes/demo/) over on GitHub:
 
 <figure class="video-embed video-embed--4x3">
+<fullscreen-control class="talk__slides__embed video-embed__video">
 <iframe src="https://aarongustafson.github.io/form-required-checkboxes/demo/" class="talk__slides__embed video-embed__video" frameborder="0"></iframe>
+</fullscreen-control>
 </figure>
 
 ## Grab It
