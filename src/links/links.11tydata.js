@@ -68,21 +68,26 @@ export default {
 
 				let og_image = false;
 				// Try to parse the open graph data
-				try {
-					let response = await EleventyFetch(
-						`https://www.aaron-gustafson.com/api/og-image/?key=${process.env.WEBMENTION_APP_TOKEN}&url=${url}`,
-						{
-							duration: "1y",
-							type: "json",
+				if (process.env.WEBMENTION_APP_TOKEN) {
+					try {
+						let response = await EleventyFetch(
+							`https://www.aaron-gustafson.com/api/og-image/?key=${process.env.WEBMENTION_APP_TOKEN}&url=${url}`,
+							{
+								duration: "1y",
+								type: "json",
+							}
+						);
+						og_image = response.image;
+						if (og_image === "false") {
+							og_image = false;
 						}
-					);
-					og_image = response.image;
-					if (og_image === "false") {
-						og_image = false;
+						writeToCache(url, og_image);
+					} catch (e) {
+						console.log("Error with the OG Image service", e);
 					}
-					writeToCache(url, og_image);
-				} catch (e) {
-					console.log("Error with the OG Image service", e);
+				} else {
+					// Skip OG image fetching if token is not available (local dev)
+					console.log(`Skipping OG image fetch for ${url} (no WEBMENTION_APP_TOKEN)`);
 				}
 
 				return og_image;
