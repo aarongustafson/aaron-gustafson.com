@@ -46,7 +46,7 @@ const styles = cb => {
   const mainScss = `${config.source}/_styles/advanced.scss`;
   const outputCss = `${destination}/advanced.css`;
   
-  return src(`${config.source}/_styles/**/*.scss`)
+  const stream = src(`${config.source}/_styles/**/*.scss`)
     // Only process if SCSS files are newer than CSS output
     .pipe(newer(outputCss))
     
@@ -83,8 +83,13 @@ const styles = cb => {
     }))
     .pipe(dest(destination))
     .pipe(dest(dist))
-    .pipe(updateServiceWorker())
-    .on('end', cb);
+    .pipe(updateServiceWorker());
+  
+  if (cb && typeof cb === 'function') {
+    stream.on('end', cb);
+  }
+  
+  return stream;
 };
 
 export default styles;
