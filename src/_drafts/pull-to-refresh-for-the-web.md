@@ -225,7 +225,9 @@ If JavaScript fails to load, the content displays normally—users just don't ge
 Check out [the demo](https://aarongustafson.github.io/pull-to-refresh/demo/) with various configurations:
 
 <figure id="fig-2025-12-06-05" class="media-container">
-  {% CodePen "https://codepen.io/aarongustafson/pen/PENDING", "result", "400" %}
+<fullscreen-control class="talk__slides__embed video-embed__video">
+<iframe src="https://aarongustafson.github.io/pull-to-refresh/demo/" class="talk__slides__embed video-embed__video" frameborder="0"></iframe>
+</fullscreen-control>
 </figure>
 
 ## Grab it

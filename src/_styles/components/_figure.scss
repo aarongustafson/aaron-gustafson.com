@@ -5,13 +5,18 @@
 \*------------------------------------*/
 
 .figure {
-  @include rem( margin, $default-spacing auto );
+  @include rem(margin, $default-spacing auto);
 
   @supports (margin-block: 1em) {
-    @include unset( margin );
-    @include rem( margin-block, $default-spacing, false );
+    @include unset(margin);
+    @include rem(margin-block, $default-spacing, false);
     margin-inline: auto;
   }
+}
+
+fullscreen-control > button {
+  inset-block-start: -23px;
+  inset-inline-end: -1px;
 }
 
 .entry__thumbnail {
@@ -21,7 +26,7 @@
   height: 100px;
 
   @supports (margin-block: 1em) {
-    @include unset( margin-right width height );
+    @include unset(margin-right width height);
     float: inline-start;
     margin-inline-end: 2rem;
     inline-size: 100px;
@@ -46,7 +51,7 @@
   font-style: normal;
 
   @supports (margin-block: 1em) {
-    @include unset( bottom left padding );
+    @include unset(bottom left padding);
     padding-inline: .5rem;
     padding-block: .25rem;
     inset-block-end: 0;
@@ -56,7 +61,7 @@
   a,
   a:hover,
   a:focus,
-  a:visited { 
+  a:visited {
     background-image: none;
     color: inherit;
     text-shadow: none;
@@ -65,56 +70,56 @@
 }
 
 @media screen and (max-width: #{$bp-full-em}) {
-	.entry__hero__image {
-		margin-top: 0 !important;
+  .entry__hero__image {
+    margin-top: 0 !important;
 
-		@supports (margin-block: 1em) {
-			margin-top: unset !important;
-			margin-block-start: 0;
-		}
-	}
+    @supports (margin-block: 1em) {
+      margin-top: unset !important;
+      margin-block-start: 0;
+    }
+  }
 }
 
 @media screen and (min-width: #{$bp-full-em}) {
-	.entry__hero:not(.entry__hero--landscape) {
-		cursor: ns-resize;
-		overflow: hidden;
-		max-height: 391px;
-		min-height: 391px;
-		transition: max-height .5s ease-in, max-block-size .5s ease-in;
-		will-change: max-height max-block-size transition;
+  .entry__hero:not(.entry__hero--landscape) {
+    cursor: ns-resize;
+    overflow: hidden;
+    max-height: 391px;
+    min-height: 391px;
+    transition: max-height .5s ease-in, max-block-size .5s ease-in;
+    will-change: max-height max-block-size transition;
 
-		@supports (margin-block: 1em) {
-			@include unset( max-height min-height );
-			max-block-size: 391px;
-			min-block-size: 391px;
-		}
+    @supports (margin-block: 1em) {
+      @include unset(max-height min-height);
+      max-block-size: 391px;
+      min-block-size: 391px;
+    }
 
-		&:hover {
-			max-height: 695px;
-			height: 100%;
-			transition: max-height .5s ease-in, max-block-size .5s ease-in;
+    &:hover {
+      max-height: 695px;
+      height: 100%;
+      transition: max-height .5s ease-in, max-block-size .5s ease-in;
 
-			@supports (margin-block: 1em) {
-				@include unset( max-height height );
-				max-block-size: 695px;
-				block-size: 100%;
-			}
+      @supports (margin-block: 1em) {
+        @include unset(max-height height);
+        max-block-size: 695px;
+        block-size: 100%;
+      }
 
-			.entry__hero__image {
-				transition: margin-top .5s, max-block-size .5s;
-				margin-top: 0 !important;
+      .entry__hero__image {
+        transition: margin-top .5s, max-block-size .5s;
+        margin-top: 0 !important;
 
-				@supports (margin-block: 1em) {
-					margin-top: unset !important;
-					margin-block-start: 0;
-				}
-			}
-		}
-	}
+        @supports (margin-block: 1em) {
+          margin-top: unset !important;
+          margin-block-start: 0;
+        }
+      }
+    }
+  }
 
-	.entry__hero__image {
-		will-change: margin-top max-block-size;
-		transition: margin-top .5s, max-block-size .5s;
-	}
+  .entry__hero__image {
+    will-change: margin-top max-block-size;
+    transition: margin-top .5s, max-block-size .5s;
+  }
 }

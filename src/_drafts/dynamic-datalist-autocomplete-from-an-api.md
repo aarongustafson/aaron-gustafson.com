@@ -189,7 +189,9 @@ If JavaScript fails to load or the browser doesn't support custom elements, the 
 Check out [the demo](https://aarongustafson.github.io/dynamic-datalist/demo/) for live examples:
 
 <figure id="fig-2025-12-06-03" class="media-container">
-  {% CodePen "https://codepen.io/aarongustafson/pen/PENDING", "result", "400" %}
+<fullscreen-control class="talk__slides__embed video-embed__video">
+<iframe src="https://aarongustafson.github.io/dynamic-datalist/demo/" class="talk__slides__embed video-embed__video" frameborder="0"></iframe>
+</fullscreen-control>
 </figure>
 
 ## Grab it

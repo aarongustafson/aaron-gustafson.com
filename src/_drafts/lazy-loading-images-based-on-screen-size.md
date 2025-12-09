@@ -238,7 +238,9 @@ For critical images that are part of your content, use standard `img` tags. Use 
 Explore [the demo](https://aarongustafson.github.io/lazy-img/demo/) to see container queries, media queries, scroll-based loading, and more in action:
 
 <figure id="fig-2025-12-06-04" class="media-container">
-  {% CodePen "https://codepen.io/aarongustafson/pen/PENDING", "result", "400" %}
+<fullscreen-control class="talk__slides__embed video-embed__video">
+<iframe src="https://aarongustafson.github.io/lazy-img/demo/" class="talk__slides__embed video-embed__video" frameborder="0"></iframe>
+</fullscreen-control>
 </figure>
 
 ## Grab it

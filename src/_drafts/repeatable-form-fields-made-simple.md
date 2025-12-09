@@ -273,7 +273,9 @@ If JavaScript fails, users see the initial field group(s) and can fill them in. 
 Explore [the demo](https://aarongustafson.github.io/form-repeatable/demo/) with various examples:
 
 <figure id="fig-2025-12-06-07" class="media-container">
-  {% CodePen "https://codepen.io/aarongustafson/pen/PENDING", "result", "400" %}
+<fullscreen-control class="talk__slides__embed video-embed__video">
+<iframe src="https://aarongustafson.github.io/form-repeatable/demo/" class="talk__slides__embed video-embed__video" frameborder="0"></iframe>
+</fullscreen-control>
 </figure>
 
 ## Grab it
