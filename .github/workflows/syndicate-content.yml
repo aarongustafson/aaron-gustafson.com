@@ -80,9 +80,6 @@ jobs:
           # IFTTT Webhook (fallback)
           IFTTT_KEY: ${{ secrets.IFTTT_KEY }}
 
-          # Screenshot service
-          SCREENSHOT_API_KEY: ${{ secrets.SCREENSHOT_API_KEY }}
-
       # Check for new links
       - name: Syndicate Links
         if: github.event.inputs.content_type != 'posts'
@@ -99,9 +96,6 @@ jobs:
 
           # IFTTT Webhook (fallback)
           IFTTT_KEY: ${{ secrets.IFTTT_KEY }}
-
-          # Screenshot service
-          SCREENSHOT_API_KEY: ${{ secrets.SCREENSHOT_API_KEY }}
 
       # Save updated cache after processing
       - name: Save processed items cache
