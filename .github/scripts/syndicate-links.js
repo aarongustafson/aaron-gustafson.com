@@ -21,14 +21,32 @@ class LinkSyndicator extends SocialMediaAPI {
 				headers: {
 					"Cache-Control": "no-cache",
 					Pragma: "no-cache",
+					Accept: "application/json",
 				},
+				responseType: "json",
 			});
+
+			console.log("Feed URL:", cacheBustedUrl);
+			console.log("Response status:", response.status);
+			console.log("Response content-type:", response.headers["content-type"]);
+
 			const feed = response.data;
+
+			// Debug logging
+			console.log("Feed type:", typeof feed);
+			console.log("Feed is object:", typeof feed === "object" && feed !== null);
+			if (feed && typeof feed === "object") {
+				console.log("Feed keys:", Object.keys(feed).join(", "));
+				console.log("Has items property:", "items" in feed);
+				if ("items" in feed) {
+					console.log("Items is array:", Array.isArray(feed.items));
+					console.log("Items length:", feed.items?.length || 0);
+				}
+			}
 
 			if (!feed.items || feed.items.length === 0) {
 				console.log("📭 No links found in feed");
-				console.log("Feed URL:", cacheBustedUrl);
-				console.log("Response status:", response.status);
+				console.log("Raw feed data (first 1000 chars):", JSON.stringify(feed).substring(0, 1000));
 				return;
 			}
 
