@@ -18,10 +18,7 @@
 		<link href="/favicon.png" rel="icon">
 		<link rel="manifest" href="/manifest.json">
 
-		<link rel="preload" href="/c/advanced{% if site.minify %}.min{% endif %}.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-		<noscript>
-			<link rel="stylesheet" href="/c/advanced{% if site.minify %}.min{% endif %}.css">
-		</noscript>
+		<link rel="stylesheet" href="/c/advanced{% if site.minify %}.min{% endif %}.css">
 		<script>{% include "partials/global/dark-mode.js" %}</script>
 		<script>{% include "partials/global/banner.js" %}</script>
 		
