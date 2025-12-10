@@ -69,7 +69,7 @@ class ContentProcessor {
 class CacheManager {
 	constructor() {
 		this.cacheDir = ".github/cache";
-		this.cacheFile = path.join(this.cacheDir, "last-syndicated.json");
+		this.cacheFile = path.join(this.cacheDir, "syndication-status.json");
 	}
 
 	async ensureCacheDir() {
@@ -80,53 +80,97 @@ class CacheManager {
 		}
 	}
 
-	async getLastSyndicatedTimes() {
+	async getSyndicationStatus() {
 		try {
 			await this.ensureCacheDir();
 			const data = await fs.readFile(this.cacheFile, "utf8");
 			return JSON.parse(data);
 		} catch (error) {
-			// If no cache exists, initialize to start of today (midnight)
-			// This pre-primes the cache to ignore everything before today
-			const today = new Date();
-			today.setHours(0, 0, 0, 0);
-			const todayISO = today.toISOString();
-
+			// If no cache exists, initialize with empty status
 			return {
-				posts: todayISO,
-				links: todayISO,
+				posts: {},
+				links: {},
 				initialized: new Date().toISOString(),
 			};
 		}
 	}
 
-	async updateLastSyndicatedTime(type) {
-		const cache = await this.getLastSyndicatedTimes();
-		cache[type] = new Date().toISOString();
+	async markPlatformSuccess(type, itemId, platform) {
+		const cache = await this.getSyndicationStatus();
+
+		if (!cache[type][itemId]) {
+			cache[type][itemId] = {
+				platforms: {},
+				firstAttempt: new Date().toISOString(),
+			};
+		}
+
+		cache[type][itemId].platforms[platform] = {
+			success: true,
+			timestamp: new Date().toISOString(),
+		};
+
+		cache[type][itemId].lastUpdated = new Date().toISOString();
 
 		await fs.writeFile(this.cacheFile, JSON.stringify(cache, null, 2));
 	}
 
+	async markPlatformFailure(type, itemId, platform, error) {
+		const cache = await this.getSyndicationStatus();
+
+		if (!cache[type][itemId]) {
+			cache[type][itemId] = {
+				platforms: {},
+				firstAttempt: new Date().toISOString(),
+			};
+		}
+
+		cache[type][itemId].platforms[platform] = {
+			success: false,
+			error: error,
+			timestamp: new Date().toISOString(),
+		};
+
+		cache[type][itemId].lastUpdated = new Date().toISOString();
+
+		await fs.writeFile(this.cacheFile, JSON.stringify(cache, null, 2));
+	}
+
+	async isPlatformSuccessful(type, itemId, platform) {
+		const cache = await this.getSyndicationStatus();
+		return cache[type][itemId]?.platforms[platform]?.success === true;
+	}
+
 	async getItemsNewerThan(items, type) {
-		const cache = await this.getLastSyndicatedTimes();
-		const lastSyncTime = new Date(cache[type]);
 		const today = new Date();
 		today.setHours(0, 0, 0, 0);
 
 		return items.filter((item) => {
 			const itemDate = new Date(item.date_published);
-			// Only include items published today or later AND after last sync
-			return itemDate >= today && itemDate > lastSyncTime;
+			// Only include items published today or later
+			return itemDate >= today;
 		});
 	}
 
-	// Legacy method for backwards compatibility - now checks by date
-	async isProcessed(type, item) {
-		const cache = await this.getLastSyndicatedTimes();
-		const lastSyncTime = new Date(cache[type]);
-		const itemDate = new Date(item.date_published);
+	// For backwards compatibility - this method is deprecated
+	async updateLastSyndicatedTime(type) {
+		// No-op: we now track per-post, per-platform
+		console.log(
+			"⚠️  updateLastSyndicatedTime is deprecated - using granular tracking",
+		);
+	}
 
-		return itemDate <= lastSyncTime;
+	// Legacy method for backwards compatibility
+	async isProcessed(type, item) {
+		// Consider an item processed only if ALL platforms succeeded
+		const cache = await this.getSyndicationStatus();
+		const itemStatus = cache[type][item.id];
+
+		if (!itemStatus) return false;
+
+		// Check if all platforms succeeded
+		const platforms = Object.values(itemStatus.platforms);
+		return platforms.length > 0 && platforms.every((p) => p.success === true);
 	}
 }
 
@@ -258,11 +302,28 @@ class SocialMediaAPI {
 				);
 				results.push(response.data);
 			} catch (error) {
+				const errorDetails = error.response?.data || error.message;
 				console.log(
 					`Failed to post to Buffer profile ${profileId}:`,
 					error.message,
 				);
-				results.push({ error: error.message, profileId });
+				if (error.response?.data) {
+					console.log(
+						"Buffer API error details:",
+						JSON.stringify(error.response.data, null, 2),
+					);
+				}
+				if (error.response?.status === 400) {
+					console.log(
+						"Post data that was rejected:",
+						JSON.stringify(postData, null, 2),
+					);
+				}
+				results.push({
+					error: error.message,
+					profileId,
+					details: errorDetails,
+				});
 			}
 		}
 

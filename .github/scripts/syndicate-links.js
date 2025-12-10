@@ -121,120 +121,264 @@ class LinkSyndicator extends SocialMediaAPI {
 		const screenshotUrl = ContentProcessor.createScreenshotUrl(relatedUrl);
 
 		// LinkedIn via IFTTT
-		try {
-			console.log("📊 Posting to LinkedIn via IFTTT...");
-			await this.sendToIFTTT("linkedin_link", {
-				value1: link.title,
-				value2: relatedUrl,
-				value3: ContentProcessor.truncateText(linkedInContent, 200),
-			});
-			results.push({ platform: "LinkedIn (IFTTT)", success: true });
-			console.log("✅ LinkedIn IFTTT webhook sent");
-		} catch (error) {
-			console.log("❌ LinkedIn IFTTT webhook failed:", error.message);
+		const linkedInPlatform = "linkedin";
+		if (
+			await this.cache.isPlatformSuccessful("links", link.id, linkedInPlatform)
+		) {
+			console.log("⏭️  Skipping LinkedIn - already posted successfully");
 			results.push({
 				platform: "LinkedIn (IFTTT)",
-				success: false,
-				error: error.message,
+				success: true,
+				skipped: true,
 			});
+		} else {
+			try {
+				console.log("📊 Posting to LinkedIn via IFTTT...");
+				await this.sendToIFTTT("linkedin_link", {
+					value1: link.title,
+					value2: relatedUrl,
+					value3: ContentProcessor.truncateText(linkedInContent, 200),
+				});
+				await this.cache.markPlatformSuccess(
+					"links",
+					link.id,
+					linkedInPlatform,
+				);
+				results.push({ platform: "LinkedIn (IFTTT)", success: true });
+				console.log("✅ LinkedIn IFTTT webhook sent");
+			} catch (error) {
+				console.log("❌ LinkedIn IFTTT webhook failed:", error.message);
+				await this.cache.markPlatformFailure(
+					"links",
+					link.id,
+					linkedInPlatform,
+					error.message,
+				);
+				results.push({
+					platform: "LinkedIn (IFTTT)",
+					success: false,
+					error: error.message,
+				});
+			}
 		}
 
 		// Pinterest via IFTTT
-		try {
-			console.log("📌 Posting to Pinterest via IFTTT...");
-			await this.sendToIFTTT("pinterest_pin", {
-				value1: link.title,
-				value2: relatedUrl,
-				value3: ContentProcessor.stripHtml(link.content_html || link.title),
-			});
-			results.push({ platform: "Pinterest (IFTTT)", success: true });
-			console.log("✅ Pinterest IFTTT webhook sent");
-		} catch (error) {
-			console.log("❌ Pinterest IFTTT webhook failed:", error.message);
+		const pinterestPlatform = "pinterest";
+		if (
+			await this.cache.isPlatformSuccessful("links", link.id, pinterestPlatform)
+		) {
+			console.log("⏭️  Skipping Pinterest - already posted successfully");
 			results.push({
 				platform: "Pinterest (IFTTT)",
-				success: false,
-				error: error.message,
+				success: true,
+				skipped: true,
 			});
+		} else {
+			try {
+				console.log("📌 Posting to Pinterest via IFTTT...");
+				await this.sendToIFTTT("pinterest_pin", {
+					value1: link.title,
+					value2: relatedUrl,
+					value3: ContentProcessor.stripHtml(link.content_html || link.title),
+				});
+				await this.cache.markPlatformSuccess(
+					"links",
+					link.id,
+					pinterestPlatform,
+				);
+				results.push({ platform: "Pinterest (IFTTT)", success: true });
+				console.log("✅ Pinterest IFTTT webhook sent");
+			} catch (error) {
+				console.log("❌ Pinterest IFTTT webhook failed:", error.message);
+				await this.cache.markPlatformFailure(
+					"links",
+					link.id,
+					pinterestPlatform,
+					error.message,
+				);
+				results.push({
+					platform: "Pinterest (IFTTT)",
+					success: false,
+					error: error.message,
+				});
+			}
 		}
 
 		// Mastodon
-		try {
-			console.log("🐘 Posting to Mastodon...");
-			const mastodonText = ContentProcessor.truncateText(
-				`${socialText} ${relatedUrl}`,
-				450,
-			);
-			const mastodonResult = await this.postToMastodon(mastodonText);
-			results.push({
-				platform: "Mastodon",
-				success: true,
-				data: mastodonResult,
-			});
-			console.log("✅ Mastodon post successful");
-		} catch (error) {
-			console.log("❌ Mastodon post failed:", error.message);
-			results.push({
-				platform: "Mastodon",
-				success: false,
-				error: error.message,
-			});
+		const mastodonPlatform = "mastodon";
+		if (
+			await this.cache.isPlatformSuccessful("links", link.id, mastodonPlatform)
+		) {
+			console.log("⏭️  Skipping Mastodon - already posted successfully");
+			results.push({ platform: "Mastodon", success: true, skipped: true });
+		} else {
+			try {
+				console.log("🐘 Posting to Mastodon...");
+				const mastodonText = ContentProcessor.truncateText(
+					`${socialText} ${relatedUrl}`,
+					450,
+				);
+				const mastodonResult = await this.postToMastodon(mastodonText);
+				await this.cache.markPlatformSuccess(
+					"links",
+					link.id,
+					mastodonPlatform,
+				);
+				results.push({
+					platform: "Mastodon",
+					success: true,
+					data: mastodonResult,
+				});
+				console.log("✅ Mastodon post successful");
+			} catch (error) {
+				console.log("❌ Mastodon post failed:", error.message);
+				await this.cache.markPlatformFailure(
+					"links",
+					link.id,
+					mastodonPlatform,
+					error.message,
+				);
+				results.push({
+					platform: "Mastodon",
+					success: false,
+					error: error.message,
+				});
 
-			// Fallback to IFTTT
-			await this.sendToIFTTT("mastodon_link", {
-				status: `${socialText} ${relatedUrl}`,
-				guid: link.id,
-			});
+				// Fallback to IFTTT
+				await this.sendToIFTTT("mastodon_link", {
+					status: `${socialText} ${relatedUrl}`,
+					guid: link.id,
+				});
+			}
 		}
 
 		// Buffer for Twitter and Bluesky
-		try {
-			console.log("🐦 Posting to Buffer (Twitter & Bluesky)...");
-			const bufferText = ContentProcessor.truncateText(
-				`${socialText} ${relatedUrl}`,
-				260,
+		const twitterPlatform = "twitter";
+		const blueskyPlatform = "bluesky";
+
+		const twitterDone = await this.cache.isPlatformSuccessful(
+			"links",
+			link.id,
+			twitterPlatform,
+		);
+		const blueskyDone = await this.cache.isPlatformSuccessful(
+			"links",
+			link.id,
+			blueskyPlatform,
+		);
+
+		if (twitterDone && blueskyDone) {
+			console.log(
+				"⏭️  Skipping Buffer - Twitter and Bluesky already posted successfully",
 			);
-
-			const profileIds = [
-				process.env.BUFFER_TWITTER_PROFILE_ID,
-				process.env.BUFFER_BLUESKY_PROFILE_ID,
-			].filter(Boolean);
-
-			if (profileIds.length > 0) {
-				const bufferResults = await this.postToBuffer(bufferText, profileIds);
-				results.push({
-					platform: "Buffer (Twitter/Bluesky)",
-					success: true,
-					data: bufferResults,
-				});
-				console.log("✅ Buffer posts successful");
-			} else {
-				console.log("⚠️ No Buffer profile IDs configured");
-			}
-		} catch (error) {
-			console.log("❌ Buffer posts failed:", error.message);
 			results.push({
-				platform: "Buffer",
-				success: false,
-				error: error.message,
+				platform: "Buffer (Twitter/Bluesky)",
+				success: true,
+				skipped: true,
 			});
+		} else {
+			try {
+				console.log("🐦 Posting to Buffer (Twitter & Bluesky)...");
+				const bufferText = ContentProcessor.truncateText(
+					`${socialText} ${relatedUrl}`,
+					260,
+				);
 
-			// Fallback to IFTTT for both platforms
-			await this.sendToIFTTT("twitter_link", {
-				text: `${socialText} ${relatedUrl}`,
-			});
+				const profileIds = [];
+				const profileMap = {};
 
-			await this.sendToIFTTT("bluesky_link", {
-				text: `${socialText} ${relatedUrl}`,
-			});
+				if (!twitterDone && process.env.BUFFER_TWITTER_PROFILE_ID) {
+					profileIds.push(process.env.BUFFER_TWITTER_PROFILE_ID);
+					profileMap[process.env.BUFFER_TWITTER_PROFILE_ID] = twitterPlatform;
+				}
+
+				if (!blueskyDone && process.env.BUFFER_BLUESKY_PROFILE_ID) {
+					profileIds.push(process.env.BUFFER_BLUESKY_PROFILE_ID);
+					profileMap[process.env.BUFFER_BLUESKY_PROFILE_ID] = blueskyPlatform;
+				}
+
+				if (profileIds.length > 0) {
+					const bufferResults = await this.postToBuffer(bufferText, profileIds);
+
+					// Track success/failure per profile
+					for (const result of bufferResults) {
+						const platform = profileMap[result.profileId];
+						if (platform) {
+							if (result.error) {
+								await this.cache.markPlatformFailure(
+									"links",
+									link.id,
+									platform,
+									result.error,
+								);
+							} else {
+								await this.cache.markPlatformSuccess(
+									"links",
+									link.id,
+									platform,
+								);
+							}
+						}
+					}
+
+					const allSucceeded = bufferResults.every((r) => !r.error);
+					results.push({
+						platform: "Buffer (Twitter/Bluesky)",
+						success: allSucceeded,
+						data: bufferResults,
+					});
+					console.log(
+						allSucceeded
+							? "✅ Buffer posts successful"
+							: "⚠️  Some Buffer posts failed",
+					);
+				} else {
+					console.log(
+						"⚠️ No Buffer profile IDs configured or all already posted",
+					);
+				}
+			} catch (error) {
+				console.log("❌ Buffer posts failed:", error.message);
+				if (!twitterDone) {
+					await this.cache.markPlatformFailure(
+						"links",
+						link.id,
+						twitterPlatform,
+						error.message,
+					);
+				}
+				if (!blueskyDone) {
+					await this.cache.markPlatformFailure(
+						"links",
+						link.id,
+						blueskyPlatform,
+						error.message,
+					);
+				}
+				results.push({
+					platform: "Buffer",
+					success: false,
+					error: error.message,
+				});
+
+				// Fallback to IFTTT for both platforms
+				await this.sendToIFTTT("twitter_link", {
+					text: `${socialText} ${relatedUrl}`,
+				});
+
+				await this.sendToIFTTT("bluesky_link", {
+					text: `${socialText} ${relatedUrl}`,
+				});
+			}
 		}
 
 		// Log results summary
 		console.log("\n📊 Syndication Results:");
 		results.forEach((result) => {
 			const status = result.success ? "✅" : "❌";
-			console.log(`${status} ${result.platform}`);
-			if (!result.success) {
+			const skipped = result.skipped ? " (skipped - already successful)" : "";
+			console.log(`${status} ${result.platform}${skipped}`);
+			if (!result.success && result.error) {
 				console.log(`   Error: ${result.error}`);
 			}
 		});

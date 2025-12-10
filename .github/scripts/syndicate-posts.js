@@ -117,101 +117,222 @@ class PostSyndicator extends SocialMediaAPI {
 		);
 
 		// LinkedIn via IFTTT
-		try {
-			console.log("📊 Posting to LinkedIn via IFTTT...");
-			await this.sendToIFTTT("linkedin_post", {
-				value1: post.title,
-				value2: post.url,
-				value3: ContentProcessor.truncateText(linkedInContent, 200),
-			});
-			results.push({ platform: "LinkedIn (IFTTT)", success: true });
-			console.log("✅ LinkedIn IFTTT webhook sent");
-		} catch (error) {
-			console.log("❌ LinkedIn IFTTT webhook failed:", error.message);
+		const linkedInPlatform = "linkedin";
+		if (
+			await this.cache.isPlatformSuccessful("posts", post.id, linkedInPlatform)
+		) {
+			console.log("⏭️  Skipping LinkedIn - already posted successfully");
 			results.push({
 				platform: "LinkedIn (IFTTT)",
-				success: false,
-				error: error.message,
+				success: true,
+				skipped: true,
 			});
+		} else {
+			try {
+				console.log("📊 Posting to LinkedIn via IFTTT...");
+				await this.sendToIFTTT("linkedin_post", {
+					value1: post.title,
+					value2: post.url,
+					value3: ContentProcessor.truncateText(linkedInContent, 200),
+				});
+				await this.cache.markPlatformSuccess(
+					"posts",
+					post.id,
+					linkedInPlatform,
+				);
+				results.push({ platform: "LinkedIn (IFTTT)", success: true });
+				console.log("✅ LinkedIn IFTTT webhook sent");
+			} catch (error) {
+				console.log("❌ LinkedIn IFTTT webhook failed:", error.message);
+				await this.cache.markPlatformFailure(
+					"posts",
+					post.id,
+					linkedInPlatform,
+					error.message,
+				);
+				results.push({
+					platform: "LinkedIn (IFTTT)",
+					success: false,
+					error: error.message,
+				});
+			}
 		}
 
 		// Mastodon
-		try {
-			console.log("🐘 Posting to Mastodon...");
-			const mastodonText = ContentProcessor.truncateText(
-				`${socialText} ${post.url}`,
-				450,
-			);
-			const mastodonResult = await this.postToMastodon(mastodonText);
-			results.push({
-				platform: "Mastodon",
-				success: true,
-				data: mastodonResult,
-			});
-			console.log("✅ Mastodon post successful");
-		} catch (error) {
-			console.log("❌ Mastodon post failed:", error.message);
-			results.push({
-				platform: "Mastodon",
-				success: false,
-				error: error.message,
-			});
+		const mastodonPlatform = "mastodon";
+		if (
+			await this.cache.isPlatformSuccessful("posts", post.id, mastodonPlatform)
+		) {
+			console.log("⏭️  Skipping Mastodon - already posted successfully");
+			results.push({ platform: "Mastodon", success: true, skipped: true });
+		} else {
+			try {
+				console.log("🐘 Posting to Mastodon...");
+				const mastodonText = ContentProcessor.truncateText(
+					`${socialText} ${post.url}`,
+					450,
+				);
+				const mastodonResult = await this.postToMastodon(mastodonText);
+				await this.cache.markPlatformSuccess(
+					"posts",
+					post.id,
+					mastodonPlatform,
+				);
+				results.push({
+					platform: "Mastodon",
+					success: true,
+					data: mastodonResult,
+				});
+				console.log("✅ Mastodon post successful");
+			} catch (error) {
+				console.log("❌ Mastodon post failed:", error.message);
+				await this.cache.markPlatformFailure(
+					"posts",
+					post.id,
+					mastodonPlatform,
+					error.message,
+				);
+				results.push({
+					platform: "Mastodon",
+					success: false,
+					error: error.message,
+				});
 
-			// Fallback to IFTTT
-			await this.sendToIFTTT("mastodon_post", {
-				status: `${socialText} ${post.url}`,
-				guid: post.id,
-			});
+				// Fallback to IFTTT
+				await this.sendToIFTTT("mastodon_post", {
+					status: `${socialText} ${post.url}`,
+					guid: post.id,
+				});
+			}
 		}
 
 		// Buffer for Twitter and Bluesky
-		try {
-			console.log("🐦 Posting to Buffer (Twitter & Bluesky)...");
-			const bufferText = ContentProcessor.truncateText(
-				`${socialText} ${post.url}`,
-				260,
+		const twitterPlatform = "twitter";
+		const blueskyPlatform = "bluesky";
+
+		const twitterDone = await this.cache.isPlatformSuccessful(
+			"posts",
+			post.id,
+			twitterPlatform,
+		);
+		const blueskyDone = await this.cache.isPlatformSuccessful(
+			"posts",
+			post.id,
+			blueskyPlatform,
+		);
+
+		if (twitterDone && blueskyDone) {
+			console.log(
+				"⏭️  Skipping Buffer - Twitter and Bluesky already posted successfully",
 			);
-
-			const profileIds = [
-				process.env.BUFFER_TWITTER_PROFILE_ID,
-				process.env.BUFFER_BLUESKY_PROFILE_ID,
-			].filter(Boolean);
-
-			if (profileIds.length > 0) {
-				const bufferResults = await this.postToBuffer(bufferText, profileIds);
-				results.push({
-					platform: "Buffer (Twitter/Bluesky)",
-					success: true,
-					data: bufferResults,
-				});
-				console.log("✅ Buffer posts successful");
-			} else {
-				console.log("⚠️ No Buffer profile IDs configured");
-			}
-		} catch (error) {
-			console.log("❌ Buffer posts failed:", error.message);
 			results.push({
-				platform: "Buffer",
-				success: false,
-				error: error.message,
+				platform: "Buffer (Twitter/Bluesky)",
+				success: true,
+				skipped: true,
 			});
+		} else {
+			try {
+				console.log("🐦 Posting to Buffer (Twitter & Bluesky)...");
+				const bufferText = ContentProcessor.truncateText(
+					`${socialText} ${post.url}`,
+					260,
+				);
 
-			// Fallback to IFTTT for both platforms
-			await this.sendToIFTTT("twitter_post", {
-				text: `${socialText} ${post.url}`,
-			});
+				const profileIds = [];
+				const profileMap = {};
 
-			await this.sendToIFTTT("bluesky_post", {
-				text: `${socialText} ${post.url}`,
-			});
+				if (!twitterDone && process.env.BUFFER_TWITTER_PROFILE_ID) {
+					profileIds.push(process.env.BUFFER_TWITTER_PROFILE_ID);
+					profileMap[process.env.BUFFER_TWITTER_PROFILE_ID] = twitterPlatform;
+				}
+
+				if (!blueskyDone && process.env.BUFFER_BLUESKY_PROFILE_ID) {
+					profileIds.push(process.env.BUFFER_BLUESKY_PROFILE_ID);
+					profileMap[process.env.BUFFER_BLUESKY_PROFILE_ID] = blueskyPlatform;
+				}
+
+				if (profileIds.length > 0) {
+					const bufferResults = await this.postToBuffer(bufferText, profileIds);
+
+					// Track success/failure per profile
+					for (const result of bufferResults) {
+						const platform = profileMap[result.profileId];
+						if (platform) {
+							if (result.error) {
+								await this.cache.markPlatformFailure(
+									"posts",
+									post.id,
+									platform,
+									result.error,
+								);
+							} else {
+								await this.cache.markPlatformSuccess(
+									"posts",
+									post.id,
+									platform,
+								);
+							}
+						}
+					}
+
+					const allSucceeded = bufferResults.every((r) => !r.error);
+					results.push({
+						platform: "Buffer (Twitter/Bluesky)",
+						success: allSucceeded,
+						data: bufferResults,
+					});
+					console.log(
+						allSucceeded
+							? "✅ Buffer posts successful"
+							: "⚠️  Some Buffer posts failed",
+					);
+				} else {
+					console.log(
+						"⚠️ No Buffer profile IDs configured or all already posted",
+					);
+				}
+			} catch (error) {
+				console.log("❌ Buffer posts failed:", error.message);
+				if (!twitterDone) {
+					await this.cache.markPlatformFailure(
+						"posts",
+						post.id,
+						twitterPlatform,
+						error.message,
+					);
+				}
+				if (!blueskyDone) {
+					await this.cache.markPlatformFailure(
+						"posts",
+						post.id,
+						blueskyPlatform,
+						error.message,
+					);
+				}
+				results.push({
+					platform: "Buffer",
+					success: false,
+					error: error.message,
+				});
+
+				// Fallback to IFTTT for both platforms
+				await this.sendToIFTTT("twitter_post", {
+					text: `${socialText} ${post.url}`,
+				});
+
+				await this.sendToIFTTT("bluesky_post", {
+					text: `${socialText} ${post.url}`,
+				});
+			}
 		}
 
 		// Log results summary
 		console.log("\n📊 Syndication Results:");
 		results.forEach((result) => {
 			const status = result.success ? "✅" : "❌";
-			console.log(`${status} ${result.platform}`);
-			if (!result.success) {
+			const skipped = result.skipped ? " (skipped - already successful)" : "";
+			console.log(`${status} ${result.platform}${skipped}`);
+			if (!result.success && result.error) {
 				console.log(`   Error: ${result.error}`);
 			}
 		});
