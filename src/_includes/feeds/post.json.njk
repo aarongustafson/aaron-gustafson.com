@@ -16,10 +16,10 @@
   "title": "{% if prepend_title and icon %}{{ icon }} {% endif %}{{ post.data.title | replace('"', '\\"') | striptags | safe }}",
   
   {% if summary %}
-  "summary": "{{ summary | markdownify | trim_newlines | replace('"', '\\"') | safe }}",
+  "summary": "{{ summary | markdownify | trim_newlines | replace('\\', '\\\\') | replace('"', '\\"') | safe }}",
   {% endif %}
 
-  "content_html": "{{ post.templateContent | trim_newlines | replace('\\', '\\\\') | replace('"', '\\"') | safe }}",
+  "content_html": "{{ post.templateContent | replace('\\', '\\\\') | replace('\t', '\\t') | replace('\n', '\\n') | replace('\r', '\\r') | replace('"', '\\"') | safe }}",
   
   {% if post.data.twitter_text %}
   "social_text": "{{ post.data.twitter_text | replace('"', '\\"') | safe }}",
