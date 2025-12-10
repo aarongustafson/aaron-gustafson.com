@@ -34,7 +34,21 @@ class LinkSyndicator extends SocialMediaAPI {
 			let feed = response.data;
 			if (typeof feed === "string") {
 				console.log("Feed is string, parsing JSON...");
-				feed = JSON.parse(feed);
+				try {
+					feed = JSON.parse(feed);
+				} catch (parseError) {
+					console.error("❌ JSON parsing failed:", parseError.message);
+					// Try to identify the problematic area
+					const errorPosition = parseError.message.match(/position (\d+)/);
+					if (errorPosition) {
+						const pos = parseInt(errorPosition[1]);
+						const start = Math.max(0, pos - 100);
+						const end = Math.min(feed.length, pos + 100);
+						console.log(`Context around position ${pos}:`);
+						console.log(feed.substring(start, end));
+					}
+					throw parseError;
+				}
 			}
 
 			// Debug logging
