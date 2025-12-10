@@ -15,11 +15,20 @@ class LinkSyndicator extends SocialMediaAPI {
 			const feedUrl = process.env.LINKS_FEED_URL;
 			console.log(`📡 Fetching links from: ${feedUrl}`);
 
-			const response = await axios.get(feedUrl);
+			// Add cache-busting parameter to ensure we get fresh content
+			const cacheBustedUrl = `${feedUrl}?t=${Date.now()}`;
+			const response = await axios.get(cacheBustedUrl, {
+				headers: {
+					"Cache-Control": "no-cache",
+					Pragma: "no-cache",
+				},
+			});
 			const feed = response.data;
 
 			if (!feed.items || feed.items.length === 0) {
 				console.log("📭 No links found in feed");
+				console.log("Feed URL:", cacheBustedUrl);
+				console.log("Response status:", response.status);
 				return;
 			}
 
@@ -64,7 +73,7 @@ class LinkSyndicator extends SocialMediaAPI {
 		const socialText =
 			link.social_text || ContentProcessor.stripHtml(link.content_html);
 		const linkedInContent = ContentProcessor.processContentForLinkedIn(
-			link.content_html
+			link.content_html,
 		);
 		const relatedUrl = link.external_url || link.url;
 
@@ -114,7 +123,7 @@ class LinkSyndicator extends SocialMediaAPI {
 			console.log("🐘 Posting to Mastodon...");
 			const mastodonText = ContentProcessor.truncateText(
 				`${socialText} ${relatedUrl}`,
-				450
+				450,
 			);
 			const mastodonResult = await this.postToMastodon(mastodonText);
 			results.push({
@@ -143,7 +152,7 @@ class LinkSyndicator extends SocialMediaAPI {
 			console.log("🐦 Posting to Buffer (Twitter & Bluesky)...");
 			const bufferText = ContentProcessor.truncateText(
 				`${socialText} ${relatedUrl}`,
-				260
+				260,
 			);
 
 			const profileIds = [

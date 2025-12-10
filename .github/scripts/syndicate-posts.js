@@ -15,11 +15,20 @@ class PostSyndicator extends SocialMediaAPI {
 			const feedUrl = process.env.POSTS_FEED_URL;
 			console.log(`📡 Fetching posts from: ${feedUrl}`);
 
-			const response = await axios.get(feedUrl);
+			// Add cache-busting parameter to ensure we get fresh content
+			const cacheBustedUrl = `${feedUrl}?t=${Date.now()}`;
+			const response = await axios.get(cacheBustedUrl, {
+				headers: {
+					"Cache-Control": "no-cache",
+					Pragma: "no-cache",
+				},
+			});
 			const feed = response.data;
 
 			if (!feed.items || feed.items.length === 0) {
 				console.log("📭 No posts found in feed");
+				console.log("Feed URL:", cacheBustedUrl);
+				console.log("Response status:", response.status);
 				return;
 			}
 
@@ -64,7 +73,7 @@ class PostSyndicator extends SocialMediaAPI {
 		const socialText =
 			post.social_text || ContentProcessor.stripHtml(post.content_html);
 		const linkedInContent = ContentProcessor.processContentForLinkedIn(
-			post.content_html
+			post.content_html,
 		);
 
 		// LinkedIn via IFTTT
@@ -91,7 +100,7 @@ class PostSyndicator extends SocialMediaAPI {
 			console.log("🐘 Posting to Mastodon...");
 			const mastodonText = ContentProcessor.truncateText(
 				`${socialText} ${post.url}`,
-				450
+				450,
 			);
 			const mastodonResult = await this.postToMastodon(mastodonText);
 			results.push({
@@ -120,7 +129,7 @@ class PostSyndicator extends SocialMediaAPI {
 			console.log("🐦 Posting to Buffer (Twitter & Bluesky)...");
 			const bufferText = ContentProcessor.truncateText(
 				`${socialText} ${post.url}`,
-				260
+				260,
 			);
 
 			const profileIds = [
