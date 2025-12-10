@@ -72,13 +72,13 @@ audio {
 }
 
 .media-container {
-  max-width: 600px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 
   @supports (margin-block: 1em) {
     @include unset( max-width margin-left margin-right );
-    max-inline-size: 600px;
+    max-inline-size: 100%;
     margin-inline: auto;
   }
 }
@@ -136,4 +136,12 @@ footer ~ noscript img {
 			}
 		}
 
+}
+
+fullscreen-control {
+    overflow: scroll;
+    position: relative;
+    inline-size: 100%;
+    aspect-ratio: 16 / 9;
+    display: block;
 }
