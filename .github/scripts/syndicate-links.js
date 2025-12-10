@@ -30,7 +30,12 @@ class LinkSyndicator extends SocialMediaAPI {
 			console.log("Response status:", response.status);
 			console.log("Response content-type:", response.headers["content-type"]);
 
-			const feed = response.data;
+			// Parse JSON if it's a string (sometimes axios doesn't auto-parse)
+			let feed = response.data;
+			if (typeof feed === "string") {
+				console.log("Feed is string, parsing JSON...");
+				feed = JSON.parse(feed);
+			}
 
 			// Debug logging
 			console.log("Feed type:", typeof feed);
