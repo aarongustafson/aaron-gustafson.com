@@ -77,17 +77,17 @@
 		"npm_package": "@aarongustafson/tabbed-interface"
 	},
 	{
-		"name": "table-sortable",
-		"github": "aarongustafson/table-sortable",
-		"description": "A web component to enable users to sort the data in a table based on table cell values.",
-		"demo_url": "https://aarongustafson.github.io/table-sortable/demo/",
-		"npm_package": "@aarongustafson/table-sortable"
-	},
-	{
 		"name": "table-modifiable",
 		"github": "aarongustafson/table-modifiable",
 		"description": "A web component that enables users to hide & show columns on an HTML table.",
 		"demo_url": "https://aarongustafson.github.io/table-modifiable/demo/",
 		"npm_package": "@aarongustafson/table-modifiable"
+	},
+	{
+		"name": "table-sortable",
+		"github": "aarongustafson/table-sortable",
+		"description": "A web component to enable users to sort the data in a table based on table cell values.",
+		"demo_url": "https://aarongustafson.github.io/table-sortable/demo/",
+		"npm_package": "@aarongustafson/table-sortable"
 	}
 ]
