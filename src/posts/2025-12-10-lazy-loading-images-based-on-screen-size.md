@@ -1,6 +1,6 @@
 ---
 title: "Lazy Loading Images Based on Screen Size"
-date: 2025-12-06 10:00:00 -07:00
+date: 2025-12-10 17:15:54 +00:00
 comments: true
 tags: ["web components", "progressive enhancement", "HTML", "performance", "images", "responsive design"]
 description: "The lazy-img web component goes beyond native lazy loading and srcset—it can completely skip loading images on small screens, saving bandwidth where it matters most."
@@ -9,19 +9,19 @@ twitter_text: "Want to skip loading images entirely on mobile? Here's a web comp
 
 Native lazy loading and `srcset` are great, but they have a limitation: they always load *some* variant of the image. The `lazy-img` web component takes a different approach—it can completely skip loading images when they don't meet your criteria, whether that's screen size, container size, or visibility in the viewport.
 
-<!-- more -->
-
 This is particularly valuable for mobile users on slow connections or limited data plans. If an image is only meaningful on larger screens, why waste their bandwidth loading it at all?
+
+<!-- more -->
 
 ## The performance benefit
 
-Unlike `picture` or `srcset`, which always load some image variant, `lazy-img` can **completely skip loading images** on screens or containers below your specified threshold. Set `min-inline-size="768"` and mobile users will never download that image at all—saving data and speeding up page loads.
+Unlike `picture` or `srcset`, which always load some image variant, `lazy-img` can **completely skip loading images** on screens or containers below your specified threshold. Set `min-inline-size="768px"` and mobile users will never download that image at all—saving data and speeding up page loads.
 
-Once an image is loaded, it remains loaded even if the viewport or container is resized below the threshold. This is intentional—the component prevents unnecessary downloads but doesn't unload images already in memory. You can control visibility with CSS if needed using the `loaded` and `qualifies` attributes.
+Once an image is loaded, however, it remains loaded even if the viewport or container is resized below the threshold. This is intentional—the component prevents unnecessary downloads but doesn't unload images already in memory. You can control visibility with CSS if needed using the `loaded` and `qualifies` attributes (which we’ll get to shortly).
 
 ## Basic usage
 
-At its simplest, you use it just like a regular `img` element:
+The `lazy-img` works pretty much identically to a regular `img` element, with all the attributes you know and love:
 
 ```html
 <lazy-img
@@ -30,7 +30,7 @@ At its simplest, you use it just like a regular `img` element:
 </lazy-img>
 ```
 
-But that's not very interesting. The real power comes from conditional loading.
+But that’s not very interesting. The real power comes from conditional loading.
 
 ## Container queries (default)
 
@@ -40,30 +40,30 @@ Load an image only when its container reaches a minimum width:
 <lazy-img
   src="large-image.jpg"
   alt="Large image"
-  min-inline-size="500">
+  min-inline-size="500px">
 </lazy-img>
 ```
 
-The image loads when the `lazy-img` element's container reaches 500px wide. This is the default query mode—it uses ResizeObserver to watch the container size.
+The image loads when the `lazy-img` element’s container reaches 500px wide. This is the default query mode—it uses `ResizeObserver` to watch the container size.
 
 ## Media queries
 
-Load based on viewport width instead:
+You can lazy load images based on viewport width instead by switching to media query mode:
 
 ```html
 <lazy-img
   src="desktop-image.jpg"
   alt="Desktop image"
-  min-inline-size="768"
+  min-inline-size="768px"
   query="media">
 </lazy-img>
 ```
 
-The image loads when the browser window is at least 768px wide. Perfect for saving bandwidth on mobile devices.
+With this configuration, the image loads when the browser window is at least 768px wide.
 
 ## View mode (scroll-based loading)
 
-Load images when they scroll into view using IntersectionObserver:
+Load images when they scroll into view using `IntersectionObserver` by switching to the "view" query type:
 
 ```html
 <lazy-img
@@ -103,7 +103,7 @@ This creates a smooth user experience—images are already loaded by the time us
 
 ## Responsive images
 
-Use `srcset` and `sizes` for responsive images:
+As with regular images, you can use `srcset` and `sizes` for responsive images:
 
 ```html
 <lazy-img
@@ -115,15 +115,15 @@ Use `srcset` and `sizes` for responsive images:
          (max-width: 1000px) 800px,
          1200px"
   alt="Responsive image"
-  min-inline-size="400">
+  min-inline-size="400px">
 </lazy-img>
 ```
 
-The component waits until the conditions are met before letting the browser choose the appropriate image size.
+The component waits until the conditions are met before loading a real image and the browser takes over from there.
 
 ## Named breakpoints
 
-Define breakpoints using CSS custom properties:
+You can also define named breakpoints using CSS custom properties:
 
 ```css
 :root {
@@ -158,7 +158,7 @@ The image loads when `--lazy-img-mq` matches "medium" or "large".
 
 ## Preventing layout shift
 
-Use `width` and `height` attributes to prevent Cumulative Layout Shift (CLS):
+As with regular images, don’t forget to use `width` and `height` attributes to prevent Cumulative Layout Shift (CLS):
 
 ```html
 <lazy-img
@@ -166,11 +166,11 @@ Use `width` and `height` attributes to prevent Cumulative Layout Shift (CLS):
   alt="A beautiful image"
   width="800"
   height="600"
-  min-inline-size="768">
+  min-inline-size="768px">
 </lazy-img>
 ```
 
-The browser reserves the correct space before the image loads, preventing content from jumping around.
+The browser reserves the correct space while the image loads, preventing content from jumping around.
 
 ## State attributes for styling
 
@@ -184,7 +184,7 @@ lazy-img[loaded]:not([qualifies]) {
 
 /* Show a placeholder for images that qualify but haven't loaded */
 lazy-img[qualifies]:not([loaded])::before {
-  content: "Loading...";
+  content: "Loading…";
   display: block;
   padding: 2em;
   background: #f0f0f0;
@@ -194,7 +194,7 @@ lazy-img[qualifies]:not([loaded])::before {
 
 ## Events
 
-Listen for when images load:
+If you crave control, you can add your own functionality by listening for when images load:
 
 ```javascript
 const lazyImg = document.querySelector('lazy-img');
@@ -203,26 +203,14 @@ lazyImg.addEventListener('lazy-img:loaded', (event) => {
 });
 ```
 
-## Configuration patterns
-
-**Immediate loading (no conditions):**
-
-```html
-<lazy-img src="image.jpg" alt="Loads immediately"></lazy-img>
-```
-
-While this loads immediately like a standard `img`, it provides a benefit: **if JavaScript fails, the image won't load at all**. This can be desirable for non-critical decorative images that enhance but aren't essential to the content.
-
-**Important:** Only use this pattern for non-critical images. Critical images should use standard `img` tags to ensure they load even when JavaScript is unavailable.
-
 ## Performance
 
 The component is highly optimized:
 
 - **Throttled resize**: Resize events are throttled to prevent excessive checks
-- **Shared ResizeObserver**: Multiple images observing the same container share a single ResizeObserver
+- **Shared `ResizeObserver`**: Multiple images observing the same container share a single ResizeObserver
 - **Shared window resize listener**: Media query mode shares a single window resize listener
-- **Shared IntersectionObserver**: View mode with the same `view-range-start` shares an IntersectionObserver
+- **Shared `IntersectionObserver`**: View mode with the same `view-range-start` shares an `IntersectionObserver`
 - **Clean disconnection**: Properly cleans up observers when elements are removed
 
 Even with hundreds of `lazy-img` elements on a page, performance remains excellent.
