@@ -46,7 +46,10 @@ class LinkSyndicator extends SocialMediaAPI {
 
 			if (!feed.items || feed.items.length === 0) {
 				console.log("📭 No links found in feed");
-				console.log("Raw feed data (first 1000 chars):", JSON.stringify(feed).substring(0, 1000));
+				console.log(
+					"Raw feed data (first 1000 chars):",
+					JSON.stringify(feed).substring(0, 1000),
+				);
 				return;
 			}
 
