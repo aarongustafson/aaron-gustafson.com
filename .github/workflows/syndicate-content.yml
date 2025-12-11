@@ -59,7 +59,7 @@ jobs:
         uses: actions/cache/restore@v4
         with:
           path: .github/cache
-          key: syndication-cache-${{ github.run_id }}
+          key: syndication-cache-${{ github.sha }}
           restore-keys: |
             syndication-cache-
 
@@ -103,4 +103,4 @@ jobs:
         if: always()
         with:
           path: .github/cache
-          key: syndication-cache-${{ github.run_id }}
+          key: syndication-cache-${{ github.sha }}
