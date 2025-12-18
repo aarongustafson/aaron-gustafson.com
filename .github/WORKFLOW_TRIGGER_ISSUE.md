@@ -33,44 +33,47 @@ However, the workflow still wasted resources by running and fetching feeds unnec
 
 ## Solution Implemented
 
-**Removed the scheduled trigger** from the workflow configuration.
+**Changed the scheduled trigger** from every 30 minutes to once daily at 11am UTC.
 
-The workflow now only runs when:
+The workflow now runs when:
 1. **Netlify Deploy Success**: Triggered via `repository_dispatch` webhook after successful Netlify deployment
 2. **Manual Trigger**: Via `workflow_dispatch` for testing and manual syndication
+3. **Daily Backup Check**: Scheduled to run once per day at 11am UTC via cron trigger
 
 ### Files Changed
 
 1. `.github/workflows/syndicate-content.yml`
-   - Removed lines 26-28 (scheduled cron trigger)
+   - Changed scheduled cron trigger from `*/30 * * * *` (every 30 minutes) to `0 11 * * *` (daily at 11am UTC)
 
 2. `.github/SYNDICATION_SETUP.md`
-   - Removed mention of "Run backup checks every 30 minutes" from the monitoring section
+   - Updated monitoring section to reflect daily backup check at 11am UTC
 
 ## Why This Fix Is Appropriate
 
 1. **Primary Trigger Works**: The Netlify webhook (`repository_dispatch`) is the intended trigger mechanism
 2. **Manual Override Available**: The `workflow_dispatch` trigger allows manual runs when needed
 3. **No Content Loss**: New content will still be syndicated immediately after deployment
-4. **Resource Efficient**: Workflow only runs when there's actually new content to syndicate
+4. **Resource Efficient**: Running once daily instead of every 30 minutes reduces resource consumption by 97%
+5. **Backup Safety Net**: Daily check ensures nothing is missed if Netlify webhook fails
 
 ## Alternative Approaches Considered
 
-1. **Keep scheduled trigger but reduce frequency** (e.g., once per day)
-   - Rejected: Still wasteful, and the primary trigger should be sufficient
+1. **Remove scheduled trigger entirely**
+   - Initially implemented but reconsidered
+   - While the primary trigger should be sufficient, a backup check adds safety
 
 2. **Add conditional logic to skip if no new deploys**
-   - Rejected: More complex than necessary; removing the trigger is cleaner
+   - Rejected: More complex than necessary; cache already handles duplicates
 
 3. **Use GitHub API to check for new commits before running**
    - Rejected: Adds complexity and still requires the workflow to run periodically
 
-## Recommendation
+## Final Solution
 
-If a "backup check" mechanism is truly needed in the future, consider:
-- Running it once per day (not every 30 minutes)
-- Adding monitoring/alerting for failed Netlify webhook deliveries
-- Implementing a manual retry mechanism rather than scheduled runs
+**Daily scheduled check at 11am UTC** provides the right balance:
+- Significantly reduces resource consumption (97% reduction from every 30 minutes)
+- Maintains a safety net in case Netlify webhooks fail
+- Simple and straightforward implementation
 
 ## Testing Recommendations
 

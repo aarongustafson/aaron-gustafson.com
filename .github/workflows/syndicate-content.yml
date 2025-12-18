@@ -23,6 +23,10 @@ on:
         default: false
         type: boolean
 
+  # Scheduled daily check at 11am UTC
+  schedule:
+    - cron: "0 11 * * *"
+
 jobs:
   syndicate:
     runs-on: ubuntu-latest
