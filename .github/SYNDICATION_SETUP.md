@@ -225,7 +225,7 @@ The workflow will:
 - ❌ Report errors to GitHub Actions logs  
 - 🔄 Use IFTTT as fallback for failed API calls
 - 💾 Cache processed items to prevent duplicates
-- ⏰ Run backup checks every 30 minutes
+- ⏰ Run daily backup check at 11am UTC
 - 📅 Only syndicate items published today (prevents re-posting old content)
 
 ## Migration from Zapier
