@@ -23,10 +23,6 @@ on:
         default: false
         type: boolean
 
-  # Scheduled backup check (runs every 30 minutes)
-  schedule:
-    - cron: "*/30 * * * *"
-
 jobs:
   syndicate:
     runs-on: ubuntu-latest
