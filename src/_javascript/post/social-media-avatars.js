@@ -4,20 +4,78 @@
 	"use strict";
 
 	if ("addEventListener" in window && document.getElementById("webmentions")) {
-		window.addEventListener("load", checkImages, false);
+		window.addEventListener("load", init, false);
+	}
+
+	function init() {
+		checkImages();
+		setupObserver();
+	}
+
+	function setupObserver() {
+		var container = document.getElementById("webmentions");
+		if (!container || !("MutationObserver" in window)) {
+			return;
+		}
+		var observer = new MutationObserver(function (mutations) {
+			var i = mutations.length;
+			while (i--) {
+				var addedNodes = mutations[i].addedNodes,
+					j = addedNodes.length;
+				while (j--) {
+					if (addedNodes[j].querySelectorAll) {
+						var imgs = addedNodes[j].querySelectorAll("img");
+						var k = imgs.length;
+						while (k--) {
+							guardImage(imgs[k]);
+						}
+					}
+				}
+			}
+		});
+		observer.observe(container, { childList: true, subtree: true });
+	}
+
+	function applyFallback(image) {
+		if (image.dataset.avatarFallbackApplied === "true") {
+			return;
+		}
+		image.dataset.avatarFallbackApplied = "true";
+		image.src = "/i/fallbacks/avatar.svg";
+	}
+
+	function guardImage(image) {
+		if (!image || image.dataset.avatarGuarded === "true") {
+			return;
+		}
+		image.dataset.avatarGuarded = "true";
+
+		if (image.complete) {
+			if (image.naturalWidth === 0) {
+				applyFallback(image);
+			}
+			return;
+		}
+
+		image.addEventListener(
+			"error",
+			function () {
+				applyFallback(image);
+			},
+			{ once: true },
+		);
 	}
 
 	function checkImages() {
-		var images = document
-				.getElementById("webmentions")
-				.getElementsByTagName("img"),
+		var container = document.getElementById("webmentions");
+		if (!container) {
+			return;
+		}
+		var images = container.getElementsByTagName("img"),
 			i = images.length;
 		while (i--) {
-			if (!images[i].naturalWidth) {
-				images[i].src = "/i/fallbacks/avatar.svg";
-			}
+			guardImage(images[i]);
 		}
-		// release the DOM reference
 		images = null;
 	}
 })(this);
