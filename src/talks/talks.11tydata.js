@@ -50,7 +50,7 @@ export default {
 			return tagsToColor(data.tags);
 		},
 		image: (data) => {
-			return `${data.site.url}/i/talks/${data.hero}`;
+			return data.hero ? `${data.site.url}/i/talks/${data.hero}` : null;
 		},
 	},
 };

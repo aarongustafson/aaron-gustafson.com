@@ -94,8 +94,8 @@ is_post: true
 							<figcaption>This deck was delivered at <a href="{{ slides.link }}">{{ evt.title }} on {{ datetime( evt.date, "talk__event__date" ) }}</a></figcaption>
 						</figure>
 					{% elseif hero %}
-						{% set hero_image %}/i/talks/{{ hero }}{% endset %}
 						<figure class="talk__hero" style="view-transition-name: {{ transition_root }}-hero">
+							{% set hero_image %}/i/talks/{{ hero }}{% endset %}
 							<img data-responsiver="hero" class="entry__hero__image" src="{{ hero_image | absoluteUrl(site.url) }}" alt="Title slide for my talk “{{ title }}”">
 						</figure>
 					{% endif %}
@@ -128,7 +128,7 @@ is_post: true
 									{% set video_id %}{{ video.link | replace("https://www.youtube.com/watch?v=","") }}{% endset %}
                   {{ youtube( video_id, title, video.start, video.end ) }}
 								{% elseif video.file %}
-									<video poster="/i/talks/{{ hero }}" class="talk__video__embed video-embed__video" src="{{ video.file }}" controls></video>
+									<video{% if hero %} poster="/i/talks/{{ hero }}"{% endif %} class="talk__video__embed video-embed__video" src="{{ video.file }}" controls></video>
 								{% else %}
 									<iframe class="talk__video__embed video-embed__video" src="{{ video.embed }}" frameborder="0" allowfullscreen></iframe>
 								{% endif %}
