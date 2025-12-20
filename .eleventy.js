@@ -27,7 +27,7 @@ import fs from "fs";
 
 import { readFile } from "fs/promises";
 const seo_conf = JSON.parse(
-	await readFile(new URL("./src/_data/seo.json", import.meta.url))
+	await readFile(new URL("./src/_data/seo.json", import.meta.url)),
 );
 
 import dotenv from "dotenv";
@@ -35,7 +35,7 @@ dotenv.config();
 const PRODUCTION = process.env.NODE_ENV === "production";
 
 const EVENTS = JSON.parse(
-	fs.readFileSync("./src/_data/speaking_engagements.json")
+	fs.readFileSync("./src/_data/speaking_engagements.json"),
 );
 function getEventDate(id) {
 	return EVENTS.filter((event) => event.id.toString() === id.toString())[0]
@@ -63,7 +63,7 @@ export default async (config) => {
 		'<ol class="footnotes-list">\n';
 	md.renderer.rules.footnote_caption = (
 		tokens,
-		idx /*, options, env, slf*/
+		idx /*, options, env, slf*/,
 	) => {
 		var n = Number(tokens[idx].meta.id + 1).toString();
 
@@ -92,10 +92,15 @@ export default async (config) => {
 	// Plugins
 	config.addPlugin(pluginSEO, seo_conf);
 	// Load SVG plugin always (since templates depend on it) but optimize for production
-	config.addPlugin(svgContents, PRODUCTION ? {
-		// Cache SVG processing to improve performance in production
-		cache: true
-	} : {});
+	config.addPlugin(
+		svgContents,
+		PRODUCTION
+			? {
+					// Cache SVG processing to improve performance in production
+					cache: true,
+				}
+			: {},
+	);
 	config.addPlugin(EleventyHtmlBasePlugin, {
 		baseHref: PRODUCTION ? "https://www.aaron-gustafson.com" : "",
 	});
@@ -133,8 +138,8 @@ export default async (config) => {
 			resizedImageUrl: (src) => {
 				return PRODUCTION
 					? `https://res.cloudinary.com/aarongustafson/image/fetch/q_100,f_auto,w_100,h_100,c_fill/${encodeURIComponent(
-							src
-					  )}`
+							src,
+						)}`
 					: src.replace(config.hostname, "");
 			},
 			attributes: {
@@ -173,7 +178,7 @@ export default async (config) => {
 	// Filters
 	config.addFilter(
 		"getNewestCollectionItemDate",
-		pluginRss.getNewestCollectionItemDate
+		pluginRss.getNewestCollectionItemDate,
 	);
 	config.addFilter("absoluteUrl", pluginRss.absoluteUrl);
 	//config.addFilter("htmlToAbsoluteUrls", pluginRss.htmlToAbsoluteUrls);
@@ -188,7 +193,7 @@ export default async (config) => {
 	// Collections
 	// Optimize: Use a shared sorting function and reuse results where possible
 	const sortByDateDesc = (a, b) => b.date - a.date;
-	
+
 	config.addCollection("posts", (collectionApi) => {
 		return collectionApi.getFilteredByGlob("**/posts/*.md").reverse();
 	});
@@ -201,7 +206,7 @@ export default async (config) => {
 			.getFilteredByGlob(["**/posts/*.md", "**/links/*.md"])
 			.sort(sortByDateDesc);
 	});
-	
+
 	config.addCollection("talks", (collectionApi) => {
 		return collectionApi
 			.getFilteredByGlob("**/talks/*.md")
@@ -253,7 +258,7 @@ export default async (config) => {
 	});
 	function filterTagList(tags) {
 		return (tags || []).filter(
-			(tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1
+			(tag) => ["all", "nav", "post", "posts"].indexOf(tag) === -1,
 		);
 	}
 	config.addCollection("tags", function (collectionApi) {
@@ -272,7 +277,7 @@ export default async (config) => {
 				JSON.stringify(tagSet, false, 2),
 				(err) => {
 					if (err) throw err;
-				}
+				},
 			);
 		}
 		return tagSet;
@@ -288,7 +293,7 @@ export default async (config) => {
 				series[item.data.series.tag] = item.data.series.name;
 			}
 		});
-		
+
 		// Only perform file operations in production
 		if (PRODUCTION) {
 			// Generate a series JSON
@@ -297,7 +302,7 @@ export default async (config) => {
 				JSON.stringify(series, false, 2),
 				(err) => {
 					if (err) throw err;
-				}
+				},
 			);
 			// Build series files
 			for (let tag in series) {
@@ -341,15 +346,16 @@ export default async (config) => {
 			output: "dist",
 		},
 		// Enable incremental builds for faster development
-		...(PRODUCTION ? {} : {
-			ignores: [
-				"src/**/*.draft.md",
-				"src/_cache/**/*"
-			]
-		}),
+		...(PRODUCTION
+			? {}
+			: {
+					ignores: ["src/**/*.draft.md", "src/_cache/**/*"],
+				}),
 		// Use faster template engines for development
-		...(PRODUCTION ? {} : {
-			pathPrefix: "/",
-		})
+		...(PRODUCTION
+			? {}
+			: {
+					pathPrefix: "/",
+				}),
 	};
 };
