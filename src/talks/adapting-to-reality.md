@@ -2,8 +2,8 @@
 title: "Adapting to Reality"
 description: "A one-size-fits-all approach rarely fits anyone well. When we embrace that, our designs, products, and experiences will be all the better for it."
 category: [talk, "guest lecture"]
-tags: [ "accessibility", "inclusive design", "progressive enhancement" ]
-events: [ 151, 150, 145, 140 ]
+tags: ["accessibility", "inclusive design", "progressive enhancement"]
+events: [151, 150, 145, 140]
 date: 2019-03-27T00:09:00-0000
 hero: "adapting-to-reality.png"
 slides:

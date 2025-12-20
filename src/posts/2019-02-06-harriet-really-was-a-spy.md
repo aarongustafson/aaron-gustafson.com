@@ -10,7 +10,7 @@ series:
   ordinal: sixth
 ---
 
-While the history of slavery in America was covered in my schooling, that education was largely superficial. I do have vivid memories of learning about [Harriet Tubman](https://wikipedia.org/wiki/Harriet_Tubman) and [the “underground railroad” that helped smuggle slaves out of the slave-owning Confederacy into freedom](https://wikipedia.org/wiki/Underground_Railroad) (such as it was) in the United States and Canada during the Civil War. What I didn’t know is that there is so much more to Harriet Tubman. She was the first woman to lead a U.S. military expedition *and* she was a spy (and recruiter) for the Union army!
+While the history of slavery in America was covered in my schooling, that education was largely superficial. I do have vivid memories of learning about [Harriet Tubman](https://wikipedia.org/wiki/Harriet_Tubman) and [the “underground railroad” that helped smuggle slaves out of the slave-owning Confederacy into freedom](https://wikipedia.org/wiki/Underground_Railroad) (such as it was) in the United States and Canada during the Civil War. What I didn’t know is that there is so much more to Harriet Tubman. She was the first woman to lead a U.S. military expedition _and_ she was a spy (and recruiter) for the Union army!
 
 <!-- more -->
 

@@ -10,15 +10,15 @@ ref_source: Webdesigner Depot
 
 The highlights:
 
-* Scroll snapping (see also [David Storey’s write-up](https://generatedcontent.org/post/66817675443/setting-native-like-scrolling-offsets-in-css-with) on this)
-* Some ECMAScript 6
-* CSS Filters
-* Removing some vendor prefixes
+- Scroll snapping (see also [David Storey’s write-up](https://generatedcontent.org/post/66817675443/setting-native-like-scrolling-offsets-in-css-with) on this)
+- Some ECMAScript 6
+- CSS Filters
+- Removing some vendor prefixes
 
 The yawners:
 
-* Pinned sites
-* Force touch
-* HTML Video picture in picture
+- Pinned sites
+- Force touch
+- HTML Video picture in picture
 
 Overall I’m kind of <i>meh</i> on the updates. I was hoping for more.

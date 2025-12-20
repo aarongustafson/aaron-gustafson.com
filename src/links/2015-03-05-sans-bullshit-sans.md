@@ -6,8 +6,8 @@ ref_url: https://www.sansbullshitsans.com/
 in_reply_to: https://www.sansbullshitsans.com/
 ref_source: Sans Bullshit Sans
 via:
- name: The Next Web
- url: https://thenextweb.com/shareables/2015/02/26/this-is-total-bullshit/
+  name: The Next Web
+  url: https://thenextweb.com/shareables/2015/02/26/this-is-total-bullshit/
 ---
 
 View content minus the jargon. ’Nuff said.

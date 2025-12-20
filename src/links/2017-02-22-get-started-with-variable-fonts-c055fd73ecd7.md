@@ -7,8 +7,8 @@ ref_url: https://medium.com/@clagnut/get-started-with-variable-fonts-c055fd73ecd
 in_reply_to: https://medium.com/@clagnut/get-started-with-variable-fonts-c055fd73ecd7
 ref_source: Richard Rutter on Medium
 via:
- name: Jeremy Keith
- url: https://adactio.com/links/11936
+  name: Jeremy Keith
+  url: https://adactio.com/links/11936
 ---
 
 Typography nerds: variable fonts are the future!

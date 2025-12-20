@@ -2,8 +2,8 @@
 title: "Media in the Age of PWAs"
 description: "In this session I discuss some of the potential pitfalls in implementing Service Workers, especially when it comes to managing heavy files like images and video."
 category: talk
-tags: [ "performance", "progressive web apps" ]
-events: [ 135 ]
+tags: ["performance", "progressive web apps"]
+events: [135]
 date: 2019-05-01T00:09:00-0000
 hero: "media-in-the-age-of-pwas.png"
 slides:

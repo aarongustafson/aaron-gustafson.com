@@ -22,6 +22,6 @@ So far, the following have been migrated:
 - TimesVideo
 - Podcast pages
 
-They are committed to moving all of NYTimes.com under HTTPS, but as we learned from the processes that other publications—The  Washington Post, Wired, BuzzFeed, The Guardian—it can take time and it can also be quite painful.
+They are committed to moving all of NYTimes.com under HTTPS, but as we learned from the processes that other publications—The Washington Post, Wired, BuzzFeed, The Guardian—it can take time and it can also be quite painful.
 
 We thank them for doing it though.

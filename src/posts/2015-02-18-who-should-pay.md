@@ -2,10 +2,10 @@
 title: "Who Should Pay?"
 date: 2015-02-18 20:35:06 -08:00
 comments: true
-tags: ["web design","progressive enhancement",empathy,performance]
+tags: ["web design", "progressive enhancement", empathy, performance]
 description: "A handful of conversations I’ve had lately have boiled down to the tradeoffs between what is more convenient for developers and what is more convenient for our customers. I thought it worth collecting my thoughts to share with you."
 photo:
-  src: 
+  src:
   credit: STOck You
   source: https://www.flickr.com/photos/63863986@N04/9503663266/
 ---
@@ -18,13 +18,13 @@ Here’s one example. In reaction to [my post on why I think CSS variables are a
 
 > Authoring CSS shouldn’t be so onerous as to require the use of a preprocessor.
 
-Fundamentally, I agree with his sentiment: A preprocessor should *not* be a requirement for authoring CSS. Thankfully, *it never was*; you can build amazing things using only hand-authored CSS. And if you find a preprocessor helpful to your process for one reason or another, great. But using a preprocessor never has been (nor should it ever be) a requirement.
+Fundamentally, I agree with his sentiment: A preprocessor should _not_ be a requirement for authoring CSS. Thankfully, _it never was_; you can build amazing things using only hand-authored CSS. And if you find a preprocessor helpful to your process for one reason or another, great. But using a preprocessor never has been (nor should it ever be) a requirement.
 
 But Chris was not railing against preprocessors. Instead, he is echoing a sentiment held by many people in the preprocessor community. He feels CSS is not as powerful as it could/should be and he hopes that one day soon preprocessors won’t need to exist because CSS will have all of the features they offer. Like variables.
 
 I used to feel that way. I used to want variables… and mixins… and functions… and loops… and declaration block-level inheritance. But I’ve changed my mind.
 
-Don’t get me wrong, I love these constructs. I use them nearly every day in the SASS I write and I am incredibly thankful for the hard work that has gone into their creation and maintenance.  Chris alone has probably saved me several weeks worth of work over the last four years through his contributions to SASS and [Compass](http://compass-style.org/). I definitely owe him a beer (or three).
+Don’t get me wrong, I love these constructs. I use them nearly every day in the SASS I write and I am incredibly thankful for the hard work that has gone into their creation and maintenance. Chris alone has probably saved me several weeks worth of work over the last four years through his contributions to SASS and [Compass](http://compass-style.org/). I definitely owe him a beer (or three).
 
 Ok, so if my issue is not with the idea of programmatically generating styles, why would I not want these to be part of CSS, the <i>lingua franca</i> for design on the Web? Well, it’s pretty simple: Converting all of these constructs into something that is actionable by the browser takes time and processing power. Someone has to pay that cost and I wouldn’t feel right passing that cost on to my end users if there are better options.
 

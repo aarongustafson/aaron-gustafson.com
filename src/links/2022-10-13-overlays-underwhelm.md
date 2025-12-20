@@ -11,4 +11,3 @@ ref_source: "Adrian Roselli at Inclusive Design 24 2022"
 Excellent talk from Adrian Roselli on the problematic nature of accessibility overlays.
 
 He’s posted [a text version of the talk](https://adrianroselli.com/2022/09/overlays-underwhelm-at-id24.html) on his site as well.
-

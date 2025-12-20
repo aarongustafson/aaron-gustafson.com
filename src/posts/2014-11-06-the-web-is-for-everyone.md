@@ -2,7 +2,15 @@
 title: "The Web is for Everyone"
 date: 2014-11-06 15:47:54 -05:00
 comments: true
-tags: [ accessibility, "user experience", "web design", presentations, "voice UX", "the future" ]
+tags:
+  [
+    accessibility,
+    "user experience",
+    "web design",
+    presentations,
+    "voice UX",
+    "the future",
+  ]
 description: "I gave this speech as the closing keynote at A11yQC, a conference on Web accessibility, on 14 October 2014 in Québec City, Canada."
 redirect_from: /notebook/2014/the-web-is-for-everyone/
 crossposted:
@@ -87,7 +95,7 @@ How much is an unlocked iPhone 6 again? It starts around $649. That’s more tha
 
 Here we have [Samsung’s flagship Galaxy S5](https://www.samsung.com/gr/microsite/galaxys5/) with an amazing set of specs. A 16GB camera?! A quad-core processor?! This is the stuff of dreams for anyone who has been working with computers for more than 10 years. My first desktop was a 5150.
 
-No not [that awesome Van Halen record](https://en.wikipedia.org/wiki/5150_(album)), [this beast from IBM](https://www.ibm.com/ibm/history/exhibits/pc25/pc25_intro.html):
+No not [that awesome Van Halen record](<https://en.wikipedia.org/wiki/5150_(album)>), [this beast from IBM](https://www.ibm.com/ibm/history/exhibits/pc25/pc25_intro.html):
 
 <figure id="fig-2014-11-06-08" class="media-container">
 
@@ -199,7 +207,7 @@ This is a crucial fact that the Web industry is only just beginning to come to t
 
 We are the champions of the egalitarian dream: equality of opportunity with the understanding that it does not guarantee equality of outcome or experience. We are pragmatic idealists who want to enable everyone access to amazing products and services.
 
-We provide *tremendous* business value.
+We provide _tremendous_ business value.
 
 But we have a lot of work to do.
 

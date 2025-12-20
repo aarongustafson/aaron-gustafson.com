@@ -44,14 +44,14 @@ Having seen the forum discussions, I already knew inserting `br` elements was ou
 
 One enterprising user discovered that an underscore on a blank line worked. The underscore was visible, sure, but it didn’t bother her. It did, however, bother me. So I opted to riff on her idea and test every invisible character I knew. There are a bunch of them. Here are a small selection:
 
-* space,
-* non-breaking space,
-* tab,
-* em-space,
-* en-space,
-* thin space,
-* zero-width space,
-* etc.
+- space,
+- non-breaking space,
+- tab,
+- em-space,
+- en-space,
+- thin space,
+- zero-width space,
+- etc.
 
 Sadly, on their own, none of these seemed to work (despite one user having luck with a single space a few years back). The system must be doing some basic sanitization on the back-end to remove white space. Knowing this, I began to play around with combinations, hoping to trip it up. Finally I discovered that a <kbd>space</kbd> followed by a <kbd>tab</kbd> worked reliably.
 

@@ -1,17 +1,16 @@
-
 /* Website Carbon Badge */
 #wcb.carbonbadge,
 #wcb.carbonbadge #wcb_a {
-  --b1: #2c2825;
+	--b1: #2c2825;
 }
 .dark-mode #wcb.carbonbadge {
-  --b1: #fff;
+	--b1: #fff;
 }
 #wcb.carbonbadge #wcb_g,
 #wcb.carbonbadge #wcb_a {
-  color: #2c2825;
+	color: #2c2825;
 }
 .dark-mode #wcb.carbonbadge #wcb_2 {
-  color: #fff;
-  color: var(--b1);
+	color: #fff;
+	color: var(--b1);
 }

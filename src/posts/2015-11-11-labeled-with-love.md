@@ -32,8 +32,7 @@ When you look at a basic form field, you have two bits of information: the field
 You could achieve this with a minimum of markup:
 
 ```html
-Your Name
-<input name="full_name">
+Your Name <input name="full_name" />
 ```
 
 The thing is, the text "Your Name" is not associated in any way with the `input`. Sure, a sighted person would likely be able to tell that that text is associated with the field, but no computer can tell that. And if a computer can’t tell the text and `input` are associated, your form control is inaccessible to anyone who uses assistive technology like a screen reader. It’s also going to pose a problem in the near-future of "headless UIs" like those hinted at by Cortana, Siri, and the Echo.
@@ -42,7 +41,7 @@ Thankfully, establishing a relationship between the two is quite easy using the 
 
 ```html
 <label for="full_name">Your Name</label>
-<input id="full_name" name="full_name">
+<input id="full_name" name="full_name" />
 ```
 
 With that markup in place, the programmatic connection between the elements is made and the results speak for themselves: When you focus the field, the contents of the `label` are read out.
@@ -51,11 +50,11 @@ https://www.youtube.com/watch?v=WR4_MAjalsU
 
 ## An Alternate Approach
 
-Since I specifically referred to this approach as *explicit* association, you probably assumed that there’s another kind of association. And you were right: *implicit* association. Implicit association is created by wrapping a form control and its associated label text in a `label` element. I like to use this approach with radio and checkbox controls:
+Since I specifically referred to this approach as _explicit_ association, you probably assumed that there’s another kind of association. And you were right: _implicit_ association. Implicit association is created by wrapping a form control and its associated label text in a `label` element. I like to use this approach with radio and checkbox controls:
 
 ```html
 <label>
-  <input type="checkbox" name="devices[]" value="Asus Nexus 7">
+  <input type="checkbox" name="devices[]" value="Asus Nexus 7" />
   Asus Nexus 7
 </label>
 ```
@@ -63,7 +62,12 @@ Since I specifically referred to this approach as *explicit* association, you pr
 It’s worth noting that there’s nothing wrong with explicit association in this context either.
 
 ```html
-<input type="checkbox" id="asus-nexus-7" name="devices[]" value="Asus Nexus 7">
+<input
+  type="checkbox"
+  id="asus-nexus-7"
+  name="devices[]"
+  value="Asus Nexus 7"
+/>
 <label for="asus-nexus-7">Asus Nexus 7</label>
 ```
 
@@ -71,19 +75,24 @@ You can even combine the two approaches.
 
 ```html
 <label for="asus-nexus-7">
-  <input type="checkbox" name="devices[]" id="asus-nexus-7" value="Asus Nexus 7">
+  <input
+    type="checkbox"
+    name="devices[]"
+    id="asus-nexus-7"
+    value="Asus Nexus 7"
+  />
   Asus Nexus 7
 </label>
 ```
 
-The reason I like to use implicit association with checkbox and radio controls has to do with ensuring the greatest breadth of support when it comes to styling inputs. For instance, if I set `width: 80%` on all `input` elements using a simple [type selector](https://developer.mozilla.org/docs/Web/CSS/Type_selectors), that width would be applied to *all* `input` elements, including radio and checkbox controls. In order to prevent radio and checkbox controls from getting rendered at that width, I would need to assign an override value of `width: auto` to them them specifically. I can do that using [attribute selectors](https://developer.mozilla.org/docs/Web/CSS/Attribute_selectors):
+The reason I like to use implicit association with checkbox and radio controls has to do with ensuring the greatest breadth of support when it comes to styling inputs. For instance, if I set `width: 80%` on all `input` elements using a simple [type selector](https://developer.mozilla.org/docs/Web/CSS/Type_selectors), that width would be applied to _all_ `input` elements, including radio and checkbox controls. In order to prevent radio and checkbox controls from getting rendered at that width, I would need to assign an override value of `width: auto` to them them specifically. I can do that using [attribute selectors](https://developer.mozilla.org/docs/Web/CSS/Attribute_selectors):
 
 ```css
 input {
   width: 80%;
 }
-input[type=checkbox],
-input[type=radio] {
+input[type="checkbox"],
+input[type="radio"] {
   width: auto;
 }
 ```
@@ -134,7 +143,7 @@ To create incredibly generous tap targets on mobile devices, we can take things 
 
 <figcaption>An animation showing very generous tap targets on a narrow screen.</figcaption></figure>
 
-It’s worth noting that older versions of Internet Explorer only provide the focus/interaction benefit when you use explicit label association. That’s why I like the combo approach of implicit *and* explicit association for checkbox and radio controls.
+It’s worth noting that older versions of Internet Explorer only provide the focus/interaction benefit when you use explicit label association. That’s why I like the combo approach of implicit _and_ explicit association for checkbox and radio controls.
 
 <ins datetime="2015-12-09" cite="#comment-2374683375">As Dennis Lembrée mentions in the comments below, Dragon’s Naturally Speaking also doesn’t recognize implicit association, which is why it’s incredibly important to use explicit association even if it seems implicit association should suffice.</ins>
 
@@ -150,11 +159,11 @@ HTML5 ushered in a new option for working with `input` elements: the `placeholde
 
 Having this supported in the browser was a huge boon. For years we’d been using JavaScript to achieve this very effect—albeit typically for label text—in an effort to create more compact forms. Now we get the effect without having to include any additional files or libraries.
 
-Of course, since `placeholder` implements an existing pattern, it came with baggage. People commonly achieved this effect by (ab)using the `value` attribute as a fake label. As such, its introduction didn’t do much to increase the accessibility of forms. *Form controls need a label*. If you want to make your form more compact, you can do that using proper markup and a little clever CSS.
+Of course, since `placeholder` implements an existing pattern, it came with baggage. People commonly achieved this effect by (ab)using the `value` attribute as a fake label. As such, its introduction didn’t do much to increase the accessibility of forms. _Form controls need a label_. If you want to make your form more compact, you can do that using proper markup and a little clever CSS.
 
 ```html
 <p class="form-control">
-  <input id="full_name" name="full_name">
+  <input id="full_name" name="full_name" />
   <label for="full_name">Your Name</label>
 </p>
 ```
@@ -167,15 +176,15 @@ label {
   display: block;
   position: absolute;
   top: 50%;
-  margin-top: -.5em;
-  left: .25em;
-  transition: .25s transform;
+  margin-top: -0.5em;
+  left: 0.25em;
+  transition: 0.25s transform;
 }
 input {
   display: block;
   border: 1px solid;
   border-radius: 3px;
-  padding: .25em;
+  padding: 0.25em;
 }
 input:focus + label {
   transform: translateY(-1.5em);
@@ -200,4 +209,5 @@ Mary Lou assembled some beautiful examples of this approach in her [Inspiration 
 We don’t have a ton of elements in HTML, which is why it’s important that we properly use the ones we do have. Hopefully this has provided a helpful overview of how to properly label form controls using HTML.
 
 [^1]: When we’re not, you know, tracking them with a [super cookie](http://arstechnica.com/security/2015/10/verizons-zombie-cookie-gets-new-life/) or something.
+
 [^2]: Browsers typically exhibit two different behaviors here. Some hide the placeholder text as soon as you focus the field, others hide it only when you start typing. Either one works although, admittedly, I favor the text disappearing when you type rather than when the field receives focus. I can see how that approach might confuse some users, I just prefer it because it ensures you see the placeholder.

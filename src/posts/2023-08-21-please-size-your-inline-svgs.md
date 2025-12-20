@@ -46,18 +46,19 @@ Yeah, that’s an inline SVG. You see, without any explicit dimensions set, the 
 Thankfully, this is a pretty easy situation to avoid: just set an explicit `width` and `height`. To use an example from this site, instead of saying
 
 ```html
-<svg viewBox="0 0 38 48"
-     version="1.1"
-     xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 38 48" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
 ```
 
 You can explicitly set the `width` and `height` in the `svg` element like this:
 
 ```html
-<svg width="38" height="48"
-     viewBox="0 0 38 48"
-     version="1.1"
-     xmlns="http://www.w3.org/2000/svg">
+<svg
+  width="38"
+  height="48"
+  viewBox="0 0 38 48"
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+></svg>
 ```
 
 What you set these values to will likely vary depending on how the icon is being used. In a pinch, you could also pull the values directly from the `viewbox` value. And using that value, you could even make the inline values dynamic within your template, reading in the `viewbox` values and tweaking them to a ratio specific to the context.

@@ -11,7 +11,7 @@ twitter_text: "Native apps and websites shouldn’t be in competition. Each has 
 
 I could not agree more with PPK on this: Platform-specific apps and websites shouldn’t be in competition. Each has its pros and cons.
 
->  If the user doesn’t want your icon on his home screen, if the user wants a just-in-time interaction, it’s the web they want — not because of any inherent technological superiority, but because it’s hassle-free. Go there, read, forget. No junk left on your phone.
+> If the user doesn’t want your icon on his home screen, if the user wants a just-in-time interaction, it’s the web they want — not because of any inherent technological superiority, but because it’s hassle-free. Go there, read, forget. No junk left on your phone.
 
 > Most businesses don’t stand a chance of ending up on the users’ home screens. So they need the web — but not a web that emulates native to no particular purpose.
 

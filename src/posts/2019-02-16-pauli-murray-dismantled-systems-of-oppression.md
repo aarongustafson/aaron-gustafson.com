@@ -15,7 +15,7 @@ History is filled with people who are notable for one reason or another. Pauli M
 
 <!-- more -->
 
-Race was a complicated subject for Anna Pauline "Pauli" Murray, who was born in 1910. On both sides of her family, her lineage included Black slaves, white slave owners, Native Americans, Irish, and free Black peoples. Her parents identified as Black, as did she, but at least one branch of the family—her cousin Maude’s—[passed for white](https://wikipedia.org/wiki/Passing_(racial_identity)) and was living in a white neighborhood in New York.
+Race was a complicated subject for Anna Pauline "Pauli" Murray, who was born in 1910. On both sides of her family, her lineage included Black slaves, white slave owners, Native Americans, Irish, and free Black peoples. Her parents identified as Black, as did she, but at least one branch of the family—her cousin Maude’s—[passed for white](<https://wikipedia.org/wiki/Passing_(racial_identity)>) and was living in a white neighborhood in New York.
 
 Born in 1910, Pauli Murray lost both of her parents pretty young. Her mother died of a cerebral hemorrhage when she was three. Her father was beaten to death by a white guard at the Hospital for the Negro Insane of Maryland—where he’d been committed after having emotional problems as a result of typhoid fever—when she was 13.
 

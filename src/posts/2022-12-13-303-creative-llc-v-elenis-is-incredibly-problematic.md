@@ -32,11 +32,11 @@ Smith contests that her web design work is her "expression" as an "artist" and t
 
 In other words, this case is not based on fact, but rather on hypotheticals. Additionally, there has been no injury on either side, just the potential for one. Anyway, if you’re interested in learning more about the case, you can check out the following:
 
-* [303 Creative LLC v Elenis on Wikipedia](https://en.wikipedia.org/wiki/303_Creative_LLC_v._Elenis)
-* [Court Docket at the Supreme Court](https://www.supremecourt.gov/docket/docketfiles/html/public/21-476.html)
-* [Oral Arguments before the Supreme Court](https://www.oyez.org/cases/2022/21-476)
-* [<cite>Strict Scrutiny</cite> podcast episode following oral arguments](https://crooked.com/podcast/how-the-303-creative-case-threatens-to-roll-back-the-21st-century/)
-* [<cite>Boom! Lawyered</cite> podcast episode following oral arguments](https://boom-lawyered.simplecast.com/episodes/is-anyone-surprised-by-sam-alitos-trolling-anymore)
+- [303 Creative LLC v Elenis on Wikipedia](https://en.wikipedia.org/wiki/303_Creative_LLC_v._Elenis)
+- [Court Docket at the Supreme Court](https://www.supremecourt.gov/docket/docketfiles/html/public/21-476.html)
+- [Oral Arguments before the Supreme Court](https://www.oyez.org/cases/2022/21-476)
+- [<cite>Strict Scrutiny</cite> podcast episode following oral arguments](https://crooked.com/podcast/how-the-303-creative-case-threatens-to-roll-back-the-21st-century/)
+- [<cite>Boom! Lawyered</cite> podcast episode following oral arguments](https://boom-lawyered.simplecast.com/episodes/is-anyone-surprised-by-sam-alitos-trolling-anymore)
 
 In particular, I highly recommend listening to Justices Ketanji Brown Jackson’s and Sonia Sotomayor’s contributions during oral arguments as they really cut through the bullshit and get to the heart of the case and its implications.
 
@@ -52,7 +52,7 @@ In the context 303 Creative LLC seeks to operate, the purpose of each project wo
 
 ## Fact: This Case is About Advertising Bigotry
 
-If you’ve run any sort of service business, you’ve likely come across clients and projects you had to turn away. Sometimes you don’t have the bandwidth to take on the project. Other times you may not be interested in the kind of work it entails. Still others, you might not have the right expertise to do the project justice. And sometimes you just get a sense that the potential client is  not someone you’d work well with (perhaps based on the tone of their inquiry). Regardless of the reason, however, you can gently explain to them that you cannot do the project for them and either leave it at that or recommend someone who might be able to help them.
+If you’ve run any sort of service business, you’ve likely come across clients and projects you had to turn away. Sometimes you don’t have the bandwidth to take on the project. Other times you may not be interested in the kind of work it entails. Still others, you might not have the right expertise to do the project justice. And sometimes you just get a sense that the potential client is not someone you’d work well with (perhaps based on the tone of their inquiry). Regardless of the reason, however, you can gently explain to them that you cannot do the project for them and either leave it at that or recommend someone who might be able to help them.
 
 In the case of 303 Creative LLC, Smith could have easily used this approach to turn away same-sex couples without making it a thing. She could even have a form email prepared for this very purpose! And unless several couples approached her at roughly the same time and got wildly different responses with respect to her ability to create them a wedding website—which, to reiterate, is not a service she currently offers—no one would be any the wiser when it came to her belief that same-sex marriage doesn’t (or shouldn’t) exist.
 
@@ -77,4 +77,3 @@ Instead of embracing our differences as a complement to one another and for the 
 If it comes to pass, I suppose the one silver lining is that we’ll learn what companies deserve our business, but that hardly outweighs the potential harms for people who need access to food, clothing, shelter, information, and other necessities for existence both online and off that are supposed to be guaranteed by anti-discrimination laws.
 
 It’s all in the Supreme Court’s hands at this point, but I am more than a little concerned with what this could mean for the future here in the United States.
-

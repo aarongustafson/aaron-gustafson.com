@@ -2,8 +2,8 @@
 title: "Planning Adaptive Interfaces"
 description: "How do you plan for the unknown? The answer is obvious—you can’t—but that’s not a bad thing. Unknowns can be scary, but they also create opportunity."
 category: [talk, workshop]
-tags: ["progressive enhancement",HTML, CSS, JavaScript, "web standards"]
-events: [62,112,105,103,75,69,67,66]
+tags: ["progressive enhancement", HTML, CSS, JavaScript, "web standards"]
+events: [62, 112, 105, 103, 75, 69, 67, 66]
 date: 2016-03-03T09:00:00-0400
 hero: planning-adaptive-interfaces.png
 slides:
@@ -22,8 +22,8 @@ But take heart, all is not lost. By being flexible in our approach and embracing
 
 In this workshop, I explain the ins and outs of crafting rich web experiences that adapt to the capabilities and peculiarities of our customers and their devices, while maintaining your sanity in the process. You’ll leave with:
 
-* an understanding of the challenges (and possibilities) presented by the wide range of browsers and devices being used to access the web;
-* a fresh perspective on interface design, grounded in the progressive enhancement philosophy;
-* ideas around how to tailor experiences based on device capabilities;
-* solid strategies for determining how common UI components can be re-imagined in an adaptive fashion; and
-* a practical knowledge of how HTML, CSS, and JavaScript can be deployed in the service of adaptive user interfaces.
+- an understanding of the challenges (and possibilities) presented by the wide range of browsers and devices being used to access the web;
+- a fresh perspective on interface design, grounded in the progressive enhancement philosophy;
+- ideas around how to tailor experiences based on device capabilities;
+- solid strategies for determining how common UI components can be re-imagined in an adaptive fashion; and
+- a practical knowledge of how HTML, CSS, and JavaScript can be deployed in the service of adaptive user interfaces.

@@ -10,8 +10,8 @@ ref_source: Smashing Magazine
 
 This is a super-detailed post about building a `textarea` with feedback about how much you’ve written in it, relative to the defined `maxlength`. There are some great recommendations here, especially:
 
-* Start with sensible helper text;
-* Use JavaScript to smartly enhance the experience; and
-* Always provide a non-JavaScript fallback.
+- Start with sensible helper text;
+- Use JavaScript to smartly enhance the experience; and
+- Always provide a non-JavaScript fallback.
 
 I gave similar advice in [a piece I wrote for <cite>Web Standards Sherpa</cite> a few years back](https://webstandardssherpa.com/reviews/improving-the-tweet-box.html).

@@ -2,28 +2,24 @@
 Navigation
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
-	
-	[role=navigation] {
-		
-		@include rem( font-size, $font-size-small );
+@include breakup-breakpoint("global") {
+	[role="navigation"] {
+		@include rem(font-size, $font-size-small);
 		text-align: center;
-		
-		@include rem( padding-bottom, $default-spacing );
+
+		@include rem(padding-bottom, $default-spacing);
 
 		@supports (margin-block: 1em) {
-			@include unset( padding-bottom );
+			@include unset(padding-bottom);
 			padding-block-end: $default-spacing;
 		}
-		
+
 		p {
 			margin: 0;
 		}
-		
 	}
-	
+
 	.main__navigation {
-		
 		a:link,
 		a:visited,
 		a:hover,
@@ -31,19 +27,16 @@ Navigation
 			text-decoration: none;
 		}
 	}
-	
 }
 
-@include breakup-breakpoint( "medium" ) {
-	
+@include breakup-breakpoint("medium") {
 	.main-navigation {
-		
 		display: flex;
 		flex-direction: row;
-		
+
 		&__item {
-			padding: .1em .5em;
-			
+			padding: 0.1em 0.5em;
+
 			&:first-child {
 				padding-left: 0;
 			}
@@ -53,8 +46,8 @@ Navigation
 
 			@supports (margin-block: 1em) {
 				padding: unset;
-				padding-block: .1em;
-				padding-inline: .5em;
+				padding-block: 0.1em;
+				padding-inline: 0.5em;
 
 				&:first-child {
 					padding-left: unset;
@@ -66,7 +59,5 @@ Navigation
 				}
 			}
 		}
-		
 	}
-	
 }

@@ -11,15 +11,15 @@ We’re all aging. There’s no way to avoid it, no matter how much [HGH](https:
 
 Ollie Campbell has put together a great read on creating digital products that accommodate the aging population (estimated to top 19% of the US population by 2030). In it, he discusses things we should consider with respect to
 
-* vision and hearing,
-* motor control,
-* device use,
-* relationships,
-* life stage,
-* experience with technology,
-* cognition,
-* memory,
-* attention, and
-* decision-making.
+- vision and hearing,
+- motor control,
+- device use,
+- relationships,
+- life stage,
+- experience with technology,
+- cognition,
+- memory,
+- attention, and
+- decision-making.
 
 It’s pretty exhaustive. You should definitely give it a read.

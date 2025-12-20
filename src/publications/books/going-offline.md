@@ -12,4 +12,4 @@ width: "134"
 full_text: "/notebook/going-offline/"
 ---
 
-As you’ve probably gathered if you’ve been following my work for the last few years, I’m super-jazzed about Progressive Web Apps.  I think they have the potential to improve user experience, performance, access, and so much more for so many people.
+As you’ve probably gathered if you’ve been following my work for the last few years, I’m super-jazzed about Progressive Web Apps. I think they have the potential to improve user experience, performance, access, and so much more for so many people.

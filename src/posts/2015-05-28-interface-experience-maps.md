@@ -2,7 +2,7 @@
 title: "Interface Experience Maps"
 date: 2015-05-28 08:43:20 -04:00
 comments: true
-tags: ["web design","progressive enhancement","user experience"]
+tags: ["web design", "progressive enhancement", "user experience"]
 description: "One of the greatest challenges of progressive enhancement lies not with the coding, but with the planning. It can be incredibly challenging to articulate how a single interface might adapt to a wide variety of situations. Interface Experience Maps (Ix Maps) can help."
 crossposted:
   Medium: https://medium.com/@AaronGustafson/ae3efd6266df
@@ -43,10 +43,10 @@ Ix Maps have become an invaluable tool to me and the teams I’ve worked with. T
 
 This sort of documentation is invaluable to just about everyone on the team:
 
-* Copywriters get a clear picture of the different experience possibilities so they can craft the copy accordingly;
-* Designers can see the different experience possibilities and can create wireframes and visual designs that account for each;
-* Developers get a clear outline of what functionality is expected and know exactly what features and capability detection to employ in generating each experience; and
-* The quality assurance team has a clear picture of what they should be looking for in each component of an interface.
+- Copywriters get a clear picture of the different experience possibilities so they can craft the copy accordingly;
+- Designers can see the different experience possibilities and can create wireframes and visual designs that account for each;
+- Developers get a clear outline of what functionality is expected and know exactly what features and capability detection to employ in generating each experience; and
+- The quality assurance team has a clear picture of what they should be looking for in each component of an interface.
 
 In short, Ix Maps ensure everyone on the team has a clear picture of what’s expected so they can work toward the common goal. One company I worked with found Ix Maps so useful that they created one for each and every pattern in their pattern library. Then they included the drawings as part of each pattern’s documentation.
 

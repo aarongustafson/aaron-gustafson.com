@@ -2,8 +2,8 @@
 title: "Beyond Responsive"
 description: "Responsive design is not an end in itself… it’s just the beginning."
 category: [talk, workshop]
-tags: ["responsive web design","progressive enhancement","web design"]
-events: [62,64,101,100,97,96,93,79]
+tags: ["responsive web design", "progressive enhancement", "web design"]
+events: [62, 64, 101, 100, 97, 96, 93, 79]
 date: 2015-08-12T09:00:00-0400
 hero: beyond-responsive.png
 slides:

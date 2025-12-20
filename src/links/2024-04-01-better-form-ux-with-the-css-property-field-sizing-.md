@@ -10,4 +10,4 @@ ref_source: "Stephanie Stimac’s Blog"
 
 Form fan that I am, I’m excited to have CSS that enables fields (especially `textarea`) to grow to accommodate the content someone’s in the process of entering into it.
 
-I distinctly remember spending a good deal of time putting together a proof-of-concept for Twitter DMs to show how it could be done via JavaScript without killing performance, but this is far more elegant. 
+I distinctly remember spending a good deal of time putting together a proof-of-concept for Twitter DMs to show how it could be done via JavaScript without killing performance, but this is far more elegant.

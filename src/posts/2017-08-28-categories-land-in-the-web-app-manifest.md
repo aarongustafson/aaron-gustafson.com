@@ -26,11 +26,19 @@ Here’s quick example of a hypothetical manifest for a web version of the book 
 {
   "name": "Gojiro",
   "description": "Gojiro, a freak mutation with a cynical worldview, suffers the pain of solitude as well as several maladies experienced by entertainers, including drug abuse and suicidal tendencies.",
-  "icons": [{
-    "src": "images/icon.png",
-    "sizes": "192x192"
-  }],
-  "categories": ["books", "fiction", "science fiction & fantasy", "kaiju", "怪獣"]
+  "icons": [
+    {
+      "src": "images/icon.png",
+      "sizes": "192x192"
+    }
+  ],
+  "categories": [
+    "books",
+    "fiction",
+    "science fiction & fantasy",
+    "kaiju",
+    "怪獣"
+  ]
 }
 ```
 

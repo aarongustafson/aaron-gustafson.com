@@ -2,7 +2,15 @@
 title: "On CrowdStrike, dependencies, and building robust products on the web"
 date: 2024-07-25 10:20:26 -07:00
 comments: true
-tags: ["progressive enhancement", "hazards", "CSS", "JavaScript", "web design", "web development"]
+tags:
+  [
+    "progressive enhancement",
+    "hazards",
+    "CSS",
+    "JavaScript",
+    "web design",
+    "web development",
+  ]
 description: "The CrowdStrike meltdown last week should be a cautionary tale for web designers and web developers."
 twitter_text: "The #CrowdStrike meltdown last week should be a cautionary tale for #WebDesigners and #WebDevleopers."
 ---

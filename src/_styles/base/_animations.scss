@@ -3,7 +3,6 @@
 \*------------------------------------*/
 
 @media not (prefers-reduced-motion: reduce) {
-
 	.banner {
 		view-transition-name: banner;
 	}
@@ -12,7 +11,7 @@
 		animation: none;
 	}
 
-	[role=navigation] {
+	[role="navigation"] {
 		view-transition-name: nav;
 	}
 	::view-transition-old(nav),
@@ -27,5 +26,4 @@
 	::view-transition-new(footer) {
 		animation: none;
 	}
-
 }

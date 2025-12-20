@@ -2,7 +2,7 @@
 title: "Autoplay, Don’t Do It"
 date: 2014-12-21 16:12:50 -04:00
 comments: true
-tags: [ "web design", "web development", multimedia ]
+tags: ["web design", "web development", multimedia]
 description: "A while back GogOm reported on Facebook’s sole responsibility for an increase in mobile data usage by 60% by auto-playing videos. Don’t do it."
 in_reply_to: https://gigaom.com/2014/09/04/facebooks-autoplay-has-led-to-a-60-boost-in-traffic-on-mobile-networks/
 ---
@@ -25,7 +25,7 @@ Don’t autoplay. Any benefits you might see in user engagement are probably goi
 
 Incidentally, you can [disable auto-play in Facebook](https://www.facebook.com/help/633446180035470), but first of all you have to know it’s an option. Facebook gives you the choice of turning it on or off entirely or to turn it on only over Wifi. That may seem like a great compromise, but I’d like to put forward a few arguments as to why it’s not:
 
-1. *Tethering:* If I am tethered to my phone, it is likely being done over Wifi. Even if my browser is aware that I am on Wifi and even if the website is paying attention to that (using the [Network Informaion API](http://www.w3.org/TR/netinfo-api/)), the website is probably going to get a false positive for Wifi even though the _actual_ data connection is over a mobile network.
-2. *Metered Wifi:* Hotels and other providers often limit how much data you can use. You could be on an awesomely fast Wifi network, but if you are limited to 100MB—it happens—being on Wifi doesn’t matter.
+1. _Tethering:_ If I am tethered to my phone, it is likely being done over Wifi. Even if my browser is aware that I am on Wifi and even if the website is paying attention to that (using the [Network Informaion API](http://www.w3.org/TR/netinfo-api/)), the website is probably going to get a false positive for Wifi even though the _actual_ data connection is over a mobile network.
+2. _Metered Wifi:_ Hotels and other providers often limit how much data you can use. You could be on an awesomely fast Wifi network, but if you are limited to 100MB—it happens—being on Wifi doesn’t matter.
 
 So again: Autoplay, don’t do it.

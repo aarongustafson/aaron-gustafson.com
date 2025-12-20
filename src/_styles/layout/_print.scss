@@ -4,43 +4,41 @@
 		Print Layout stuff
 \*------------------------------------*/
 @media print {
-		
-		@page {
-			margin: .75in;
-			padding: 0;
-		}
-		* {
-				background: transparent;
-		}
-		body {
-				background: $color-background;
-				color: $color-text;
-			font-size: 12pt;
-			margin: 0;
-			position: relative;
-		}
-		section,
-		[role="contentinfo"] {
-			border-top: 1px solid;
-			margin: 2em 0 0;
-			padding: 2em 0 0;
-		}
-		
-		// Discarded
-		nav,
-		button,
-		.button,
-		.nav-jump,
-		.pagination,
-		.footer__fork-me,
-		.footer__copyright b {
-			display: none;
-		}
-		b#license {
-			display: block;
-		}
-		input[type=submit] {
-			display: none;
-		}
+	@page {
+		margin: 0.75in;
+		padding: 0;
+	}
+	* {
+		background: transparent;
+	}
+	body {
+		background: $color-background;
+		color: $color-text;
+		font-size: 12pt;
+		margin: 0;
+		position: relative;
+	}
+	section,
+	[role="contentinfo"] {
+		border-top: 1px solid;
+		margin: 2em 0 0;
+		padding: 2em 0 0;
+	}
 
+	// Discarded
+	nav,
+	button,
+	.button,
+	.nav-jump,
+	.pagination,
+	.footer__fork-me,
+	.footer__copyright b {
+		display: none;
+	}
+	b#license {
+		display: block;
+	}
+	input[type="submit"] {
+		display: none;
+	}
 }

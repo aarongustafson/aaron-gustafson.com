@@ -2,7 +2,7 @@
 title: "Moved to HTTPS"
 date: 2015-09-03 16:06:03 -04:00
 comments: true
-tags: ["web design",security,"this site"]
+tags: ["web design", security, "this site"]
 description: "So, as much as it pains me to abandon good old fashioned HTTP, I’ve decided to lock things down a bit."
 ---
 
@@ -18,7 +18,7 @@ With the contents in place, I went through [the rather convoluted process of get
 
 Once the DNS propagated, I had to go back and button up a few scripts that were requesting non-HTTPS content. I also had to tweak my Jekyll plugins and Rake tasks to include the legacy "http://" URLs when querying for webmentions and the like (since I didn’t want to lose those references). I also updated the Apache’s `VirtualHost` configuration for the non-secure site to make all traffic redirect:
 
-	Redirect permanent / https://www.aaron-gustafson.com/
+    Redirect permanent / https://www.aaron-gustafson.com/
 
 All in all, it was a relatively painless migration. Admittedly, the initial re-build of the site (after updating the Rake tasks) did re-submit all of the webmentions I’d previously sent in order to provide the new address. If I referenced you a bunch in the past, I apologize for the flood of traffic, but it had to be done.
 

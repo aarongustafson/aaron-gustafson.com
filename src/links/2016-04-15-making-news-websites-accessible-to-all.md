@@ -9,4 +9,4 @@ ref_source: Nieman Reports
 
 This is an excellent piece on why news orgs should be paying attention to accessibility… and why they aren’t:
 
-> [M]uch of the core technology for accessibility already exists … What’s holding accessibility back is design—and awareness. 
+> [M]uch of the core technology for accessibility already exists … What’s holding accessibility back is design—and awareness.

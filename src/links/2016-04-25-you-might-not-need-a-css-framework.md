@@ -7,4 +7,4 @@ in_reply_to: https://hacks.mozilla.org/2016/04/you-might-not-need-a-css-framewor
 ref_source: Mozilla Hacks
 ---
 
-I’d take it a step further: You *don’t* need a CSS framework.
+I’d take it a step further: You _don’t_ need a CSS framework.

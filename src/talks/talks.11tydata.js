@@ -32,7 +32,7 @@ function tagsToColor(tags) {
 }
 
 export default {
-	layout: "layouts/talk.html",
+	layout: "layouts/talk.njk",
 	permalink: "/speaking-engagements/{{ page.fileSlug }}/",
 	body_class: "talk",
 	eleventyComputed: {

@@ -6,8 +6,8 @@ ref_url: https://www.mobilexweb.com/blog/ios9-safari-for-web-developers
 in_reply_to: https://www.mobilexweb.com/blog/ios9-safari-for-web-developers
 ref_source: Breaking the Mobile Web
 via:
- name: Jason Grigsby
- url: https://twitter.com/grigs/status/644499220515295232
+  name: Jason Grigsby
+  url: https://twitter.com/grigs/status/644499220515295232
 ---
 
 An excellent (and exhaustive) overview of what’s new in iOS 9 as it pertains to web design.

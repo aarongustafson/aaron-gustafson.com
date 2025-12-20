@@ -8,4 +8,4 @@ in_reply_to: https://css-tricks.com/introducing-trashy-css/
 ref_source: CSS Tricks
 ---
 
-Interesting project. Reminds me a lot of [Eric Meyer’s diagnostic CSS](https://meyerweb.com/eric/tools/css/diagnostics/)  from a little over a decade ago.
+Interesting project. Reminds me a lot of [Eric Meyer’s diagnostic CSS](https://meyerweb.com/eric/tools/css/diagnostics/) from a little over a decade ago.

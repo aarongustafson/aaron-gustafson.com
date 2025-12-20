@@ -3,91 +3,97 @@
 /*------------------------------------*\
 		Heading Levels
 \*------------------------------------*/
-@use 'sass:math';
+@use "sass:math";
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
 
-  clear: both;
+	hyphens: auto;
 
-  hyphens: auto;
+	font-family: $font-stack-serif;
+	font-weight: $font-weight-serif-bold;
+	line-height: $line-height-headings;
 
-  font-family: $font-stack-serif;
-  font-weight: $font-weight-serif-bold;
-  line-height: $line-height-headings;
-  
-  text-wrap: balance;
-  
-  .wf-active & {
-      word-spacing: 2px;
-  }
-  
-  & + * {
-      @include rem( margin-top, math.div( $default-spacing, 2 ) );
+	text-wrap: balance;
 
-      @supports (margin-block: 1em) {
-        margin-top: unset;
-        @include rem( margin-block-start, math.div( $default-spacing, 2 ), false );
-      }
-  }
+	.wf-active & {
+		word-spacing: 2px;
+	}
 
-  & > a.header-anchor {
-    position: absolute;
-    margin-left: -2rem;
-    width: 100%;
-    text-decoration: none !important;
-    background: transparent !important;
+	& + * {
+		@include rem(margin-top, math.div($default-spacing, 2));
 
-    @supports (margin-block: 1em) {
-      margin-left: unset;
-      @include rem( margin-inline-start, -2rem, false );
-    }
-  }
+		@supports (margin-block: 1em) {
+			margin-top: unset;
+			@include rem(margin-block-start, math.div($default-spacing, 2), false);
+		}
+	}
 
-  &:hover > a.header-anchor {
-    display: inline-block;
-  }
+	& > a.header-anchor {
+		position: absolute;
+		margin-left: -2rem;
+		width: 100%;
+		text-decoration: none !important;
+		background: transparent !important;
 
+		@supports (margin-block: 1em) {
+			margin-left: unset;
+			@include rem(margin-inline-start, -2rem, false);
+		}
+	}
+
+	&:hover > a.header-anchor {
+		display: inline-block;
+	}
 }
 
 h1 {
-  @include rem( font-size, $font-size-h1 );
+	@include rem(font-size, $font-size-h1);
 }
 
 section > h1,
 h2 {
-  @include rem( font-size, $font-size-h2 );
+	@include rem(font-size, $font-size-h2);
 }
 
 h3 {
-  @include rem( font-size, $font-size-h3 );
+	@include rem(font-size, $font-size-h3);
 }
 
 @media print {
+	a.header-anchor {
+		display: none;
+	}
 
-		a.header-anchor {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		page-break-inside: avoid;
+		page-break-after: avoid;
+
+		a[href]:after {
+			display: block;
+			margin-left: 0;
+			margin-bottom: 10pt;
+
+			@supports (margin-block: 1em) {
+				@include unset(margin-left margin-bottom);
+				margin-inline-start: 0;
+				margin-block-end: 10pt;
+			}
+		}
+		a[href^="#"]:after,
+		a[href^="mailto:"]:after,
+		a[href^="tel:"]:after {
 			display: none;
 		}
-
-		h1, h2, h3, h4, h5, h6 {
-			page-break-inside: avoid;
-			page-break-after: avoid;
-
-			a[href]:after {
-				display: block;
-				margin-left: 0;
-				margin-bottom: 10pt;
-
-				@supports (margin-block: 1em) {
-					@include unset( margin-left margin-bottom );
-					margin-inline-start: 0;
-					margin-block-end: 10pt;
-				}
-			}
-			a[href^="#"]:after,
-			a[href^="mailto:"]:after,
-			a[href^="tel:"]:after {
-				display: none;
-			}
-		}    
-
+	}
 }

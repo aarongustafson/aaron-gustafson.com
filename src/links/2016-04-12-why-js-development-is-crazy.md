@@ -8,6 +8,6 @@ in_reply_to: https://www.planningforaliens.com/blog/2016/04/11/why-js-developmen
 ref_source: Planning for Aliens
 ---
 
-So true: 
+So true:
 
 > Most of these tools you think you have to have are solving problems you don’t have NOR WILL YOU EVER HAVE.

@@ -1,23 +1,25 @@
 @use "../helpers/_helpers" as *;
 
 .collection__summary {
-	@include rem( margin-bottom, $default-spacing );
+	@include rem(margin-bottom, $default-spacing);
 
-	p, ul, li {
+	p,
+	ul,
+	li {
 		display: inline;
 		margin: 0;
 		padding: 0;
 	}
 	li:first-child::before {
-		content: ' ';
+		content: " ";
 	}
 	li::after {
-		content: ', ';
+		content: ", ";
 	}
 	li:last-child::after {
-		content: '';
+		content: "";
 	}
 	li:last-child::before {
-		content: 'and ';
+		content: "and ";
 	}
 }

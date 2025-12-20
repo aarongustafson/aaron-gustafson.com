@@ -6,8 +6,8 @@ ref_url: https://nolancaudill.com/2012/03/24/pagination/
 in_reply_to: https://nolancaudill.com/2012/03/24/pagination/
 ref_source: Nolan Caudill’s Blog
 via:
- name: Jeremy Keith
- url: https://adactio.com/links/8257
+  name: Jeremy Keith
+  url: https://adactio.com/links/8257
 ---
 
 Pagination is pretty arbitrary. Could it be better? Probably.

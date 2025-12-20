@@ -11,7 +11,7 @@ archived: https://web.archive.org/web/20160320042343/http://blog.getify.com/yawn
 Way back in 2010, [Kyle Simpson](https://twitter.com/getify) proposed that a new version of IE should live beside an older version to allow the new IE to prosper while the old one remains stable for enterprises that require its proprietary features:
 
 > The IE (Consumer Edition) would at its heart be a very different browser than the IE (Platform Edition). Instead of releasing once every couple of years, IE-CE could release every couple of months. IE-CE could ditch all that legacy JScript extension junk (and ActiveX!) and fully conform to open web standards. They could embrace SVG, `canvas`, `video`, CSS3, and all the other amazing things that IE9 is only barely now giving us a glimpse of. Microsoft could stop being the joke of the open web community, stop playing catch up, and actually take the lead in helping innovate in the consumer browser space.
-  
+
 > And all the while, they could keep (and from time to time, back-port to) IE-PE stable and reliable for the Platform world. IE-PE would be Microsoft’s proprietary extensions on the open-web consumer browser experience. IE-PE would serve the needs of corporations and sysadmins by giving them stability and security and not be bothered by all the “noise” of the rapidly changing consumer browser market.
 
 I wonder if he called it. Will “Project Spartan” live alongside IE11? I guess time will tell.

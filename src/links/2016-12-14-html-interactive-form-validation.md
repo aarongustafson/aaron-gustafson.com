@@ -8,4 +8,4 @@ in_reply_to: https://webkit.org/blog/7099/html-interactive-form-validation/
 ref_source: WebKit
 ---
 
-HTML5 validation is *finally* coming to WebKit and Safari! Hooray!
+HTML5 validation is _finally_ coming to WebKit and Safari! Hooray!

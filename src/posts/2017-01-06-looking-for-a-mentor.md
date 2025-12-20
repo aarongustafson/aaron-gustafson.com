@@ -2,7 +2,7 @@
 title: "Mentorship"
 date: 2017-01-09 12:00:51 -05:00
 comments: true
-tags: [career,mentoring]
+tags: [career, mentoring]
 description: "I am looking for someone to mentor in 2017. Interested? Read on."
 ---
 

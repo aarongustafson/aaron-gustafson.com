@@ -7,4 +7,4 @@ in_reply_to: https://readwrite.com/2015/05/13/walled-gardens-of-the-web
 ref_source: ReadWrite
 ---
 
-All of this has happened before: Remember the AOL keyword? 
+All of this has happened before: Remember the AOL keyword?

@@ -2,14 +2,14 @@
 title: "The Web Should Just Work for Everyone"
 date: 2016-04-11 11:51:52 -04:00
 comments: true
-tags: ["progressive enhancement",accessibility,conferences]
+tags: ["progressive enhancement", accessibility, conferences]
 description: "I had the great pleasure of delivering the following talk at the Edge Web Summit on April 4th. The talk is largely about accessibility with a push for thinking about the future of the interface and how considering accessibility now will help us prepare for a world of “headless UIs”."
 twitter_text: "Here’s the text of my talk at #EdgeWebSummit: "
 crossposted:
   Medium: https://medium.com/@AaronGustafson/2bdf13879042
 ---
 
-*I had the great pleasure of delivering the following talk at the [Edge Web Summit](https://web.archive.org/web/http://lanyrd.com/2016/edgesummit/) on April 4th. The talk is largely about accessibility with a push for thinking about the future of the interface and how considering accessibility now will help us prepare for a world of "headless UIs".*
+_I had the great pleasure of delivering the following talk at the [Edge Web Summit](https://web.archive.org/web/http://lanyrd.com/2016/edgesummit/) on April 4th. The talk is largely about accessibility with a push for thinking about the future of the interface and how considering accessibility now will help us prepare for a world of "headless UIs"._
 
 <!-- more -->
 
@@ -35,7 +35,7 @@ They have since [updated their definition of a disability](http://www.who.int/to
 
 The points of interaction between a person and society are where disability happens. It’s our responsibility to know how our designs affect these interactions.
 
-If we use our own abilities and biases as a starting point, we end up with products designed for people of a specific age, language ability, tech literacy, and physical ability. Plus those with specific access to money, time, and stable network connections. 
+If we use our own abilities and biases as a starting point, we end up with products designed for people of a specific age, language ability, tech literacy, and physical ability. Plus those with specific access to money, time, and stable network connections.
 
 <figure id="fig-2016-04-11-02" class="media-container">
 
@@ -52,7 +52,7 @@ This twist is what [John Harsanyi](https://en.wikipedia.org/wiki/John_Harsanyi)�
 
 It makes sense: what rational, self-interested human being would treat the elderly, the sick, people of a particular gender or race or creed or color, poorly if they could find themselves in that position?
 
-We’re often told accessibility is only concerned with folks with “special needs.” Well news flash: *we all have special needs*. Some we’re born with. Some we develop. Some are temporary. Some have nothing to do with us personally, but are situational or purely dependent on the hardware we are using, the interaction methods we have available to us, or even the speed at which we can access the Internet or process data.
+We’re often told accessibility is only concerned with folks with “special needs.” Well news flash: _we all have special needs_. Some we’re born with. Some we develop. Some are temporary. Some have nothing to do with us personally, but are situational or purely dependent on the hardware we are using, the interaction methods we have available to us, or even the speed at which we can access the Internet or process data.
 
 Sometimes disability is a temporary thing. A short-term injury and illness affect the way people interact with the world around them. Looking into bright light can cause brief visual impairment. Being sick with a cough makes it hard to speak. Wearing a cast can severely limit a person’s ability to lift an everyday object.
 
@@ -77,7 +77,7 @@ But curb cuts also help people with a wide range of circumstances, from kids rid
 
 </figure>
 
-Similarly, high-contrast screen settings were initially made to benefit people with vision impairments. But today, many people benefit from high-contrast settings when they use a device in bright sunlight. The same is true for remote controls, automatic door openers, voice controls, and much more. Designing with constraints in mind is simply designing well. 
+Similarly, high-contrast screen settings were initially made to benefit people with vision impairments. But today, many people benefit from high-contrast settings when they use a device in bright sunlight. The same is true for remote controls, automatic door openers, voice controls, and much more. Designing with constraints in mind is simply designing well.
 
 <figure id="fig-2016-04-11-05" class="media-container">
 
@@ -127,23 +127,23 @@ It is possible to have something both beautiful and highly functional.
 <figcaption>A ramp embedded in staircase of <a href="https://en.wikipedia.org/wiki/Robson_Square">Robson Square</a> in Vancouver, <abbr aria-label="British Columbia">BC</abbr>. <b class="media-container__credit">Photo credit: <a href="https://www.flickr.com/photos/mag3737/">Tom Magliery</a></b></figcaption>
 </figure>
 
-[24 Ways](https://24ways.org/) is an advent calendar for web professionals. It’s a magazine of sorts, but it is both highly interactive and accessible. The site’s developers employ a handful of features from [the ARIA spec](https://www.w3.org/TR/wai-aria/) to increase the accessibility of the site. 
+[24 Ways](https://24ways.org/) is an advent calendar for web professionals. It’s a magazine of sorts, but it is both highly interactive and accessible. The site’s developers employ a handful of features from [the ARIA spec](https://www.w3.org/TR/wai-aria/) to increase the accessibility of the site.
 
-One such feature is [ARIA landmarks](https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page), which identify key areas of a web page. Such as the primary header or “banner” of a site. 
+One such feature is [ARIA landmarks](https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page), which identify key areas of a web page. Such as the primary header or “banner” of a site.
 
 ```html
 <header class="banner" role="banner" id="top">
-  <h1 class="banner_logo"><a href="/" rel="home">24 ways 
-    <span>to impress your friends</span></a>ma</h1>
+  <h1 class="banner_logo">
+    <a href="/" rel="home">24 ways <span>to impress your friends</span></a
+    >ma
+  </h1>
 </header>
 ```
 
 The main content.
 
 ```html
-<main role="main">
-  …
-</main>
+<main role="main">…</main>
 ```
 
 Content concerned with easing navigation of the site.
@@ -152,8 +152,9 @@ Content concerned with easing navigation of the site.
 <nav class="navigation" role="navigation" id="menu">
   <h1 class="hidden">Browse 24 ways</h1>
   <ul class="nav nav-topics">
-    <li class="nav_item"><a href="/topics/business/"
-      data-icon="&#x2655;">Business</a></li>
+    <li class="nav_item">
+      <a href="/topics/business/" data-icon="&#x2655;">Business</a>
+    </li>
     …
   </ul>
   …
@@ -165,14 +166,16 @@ Or even information about the content, such as copyright designations.
 ```html
 <footer class="contentinfo" role="contentinfo">
   <p class="contentinfo_copyright">
-    <small>&#169; 2005-2016 24 ways and our authors.
-      <a href="/about/#colophon">Colophon</a></small>
+    <small
+      >&#169; 2005-2016 24 ways and our authors.
+      <a href="/about/#colophon">Colophon</a></small
+    >
   </p>
   <p class="contentinfo_social">
-    <a href="http://feeds.feedburner.com/24ways" rel="alternate">Grab 
-      our RSS feed</a>
-    <a href="https://twitter.com/24ways" rel="me">Follow us on 
-      Twitter</a>
+    <a href="http://feeds.feedburner.com/24ways" rel="alternate"
+      >Grab our RSS feed</a
+    >
+    <a href="https://twitter.com/24ways" rel="me">Follow us on Twitter</a>
     <a href="/newsletter">Subscribe to our newsletter</a>
   </p>
 </footer>
@@ -198,7 +201,7 @@ Considering this now will put you way ahead of your competition and empower your
 
 Similarly, conversational interfaces are concerned with the way we communicate with our users, whether there is a screen or not and whether the user can see it or not. This isn’t new, it’s a challenge we’ve tackled before…
 
-Let’s take a trip back in time to one of the earliest computer games: Zork. Zork was written between 1977 and 1979. It’s a text-based adventure game that operates a lot like a game of *Dungeons & Dragons*—with the program serving the role of gamemaster.
+Let’s take a trip back in time to one of the earliest computer games: Zork. Zork was written between 1977 and 1979. It’s a text-based adventure game that operates a lot like a game of _Dungeons & Dragons_—with the program serving the role of gamemaster.
 
 As you move from location to location throughout the game, the program describes the environment and notes objects and people you can interact with. You type what you want to do and the program tells you the results of your actions.
 
@@ -214,27 +217,27 @@ Over the 2011 holidays, Facebook users were uploading photos like crazy. In the 
 
 One unintended consequence of this deluge of photo uploads was a significant uptick in people asking Facebook to remove specific ones. Facebook received millions of these “photo reports”, but they made no sense: Moms holding babies reported for harassment, pictures of puppies reported for hate speech, and so on. Roughly 97% of these photo reports were dramatically mis-categorized.
 
-Facebook’s engineers reached out to some of the users who had reported these photos to get a bit more background regarding their submissions. 
+Facebook’s engineers reached out to some of the users who had reported these photos to get a bit more background regarding their submissions.
 
 At the time Facebook’s photo reporting interface provided a list of reasons users could choose from if they wanted a photo removed, but, as Facebook soon discovered, many of the reports were made because users didn’t want the photo posted for reasons other than those provided.
 
-In some cases, it was because they didn’t like how they looked in the photo. In others, it was because the photo was of an ex-partner or even a beloved pet they’d shared with an ex-boyfriend or ex-girlfriend. The existing photo reporting tool had not done a good job of accounting for these more personal reasons for wanting a photo removed, so the Facebook engineers went to work. They added a step that asked *How does this photo make you feel?* The options were simple:
+In some cases, it was because they didn’t like how they looked in the photo. In others, it was because the photo was of an ex-partner or even a beloved pet they’d shared with an ex-boyfriend or ex-girlfriend. The existing photo reporting tool had not done a good job of accounting for these more personal reasons for wanting a photo removed, so the Facebook engineers went to work. They added a step that asked _How does this photo make you feel?_ The options were simple:
 
-*	Embarrassing
-*	Upsetting
-*	Saddening
-*	Bad Photo
-*	Other
+- Embarrassing
+- Upsetting
+- Saddening
+- Bad Photo
+- Other
 
 The “other” option also provided a free-response text field to fill in.
 
 With this system in place, they found that 50% of reporters who answered the new question chose one of the provided options. That was pretty helpful, but there was still a problem: 34% of the “other” respondents were writing “It’s embarrassing” in the blank rather than choosing the “embarrassing” option already provided.
 
-What the Facebook team realized was that people were not identifying with the “embarrassing” text (or may have even thought it was referring to them, rather than assuming an implied “It’s”). A subtle shift in language was needed, so they changed the label to *Please describe the photo* and they updated the options to mirror how people actually talk:
+What the Facebook team realized was that people were not identifying with the “embarrassing” text (or may have even thought it was referring to them, rather than assuming an implied “It’s”). A subtle shift in language was needed, so they changed the label to _Please describe the photo_ and they updated the options to mirror how people actually talk:
 
-*	It’s embarrassing
-*	It’s a bad photo of me
-*	It makes me sad
+- It’s embarrassing
+- It’s a bad photo of me
+- It makes me sad
 
 With this subtle change, they were able to increase the percentage of photo reporters who chose one of the options provided to a whopping 78%.
 
@@ -258,7 +261,7 @@ They also make the recommendation that you read your work aloud. As we head into
 
 ## Avoid Technical and Legal Jargon
 
-For example, if you track error codes for issues on your site, send them to *your developers*, but never present them to a user. Similarly, we should avoid legalese and write in plain language. Medium has done a great job of this with [their Terms of Service](https://medium.com/policy/medium-terms-of-service-9db0094a1e0f#.mgexdk816).
+For example, if you track error codes for issues on your site, send them to _your developers_, but never present them to a user. Similarly, we should avoid legalese and write in plain language. Medium has done a great job of this with [their Terms of Service](https://medium.com/policy/medium-terms-of-service-9db0094a1e0f#.mgexdk816).
 
 ## When Requesting Feedback, Make It Clear That the User Needs to Respond
 
@@ -266,7 +269,7 @@ In perhaps the most common form example, consider the label "First Name". It’s
 
 ```html
 <label for="first_name">What’s your first name?</label>
-<input name="first_name" id="first_name">
+<input name="first_name" id="first_name" />
 ```
 
 <figure id="figure-2016-03-04-05">
@@ -281,12 +284,10 @@ Similarly, when there’s an error, notify them of the error and, if possible, g
 
 ```html
 <label for="first_name">What’s your first name?</label>
-<input name="first_name" id="first_name"
-       aria-describedby="first_name-error"
-       >
+<input name="first_name" id="first_name" aria-describedby="first_name-error" />
 <em id="first_name-error">
-  Without your first name, I won’t know how to address you.
-  Could you please provide it?
+  Without your first name, I won’t know how to address you. Could you please
+  provide it?
 </em>
 ```
 
@@ -303,7 +304,7 @@ Similarly, when there’s an error, notify them of the error and, if possible, g
 This comes into play often when dealing with forms. Ensuring radio and checkbox controls are properly associated with their labels is critical.
 
 ```html
-<input type="radio" name="agree" id="agree_yes" value="yes">
+<input type="radio" name="agree" id="agree_yes" value="yes" />
 <label for="agree_yes">Yes</label>
 ```
 
@@ -311,15 +312,14 @@ You can also use the `fieldset` and `legend` elements to group the related contr
 
 ```html
 <fieldset>
-  <legend tabindex="0">Do you agree to the terms
-    of service for this site?</legend>
-  
-  <input type="radio" name="agree"
-         id="agree_yes" value="yes">
+  <legend tabindex="0">
+    Do you agree to the terms of service for this site?
+  </legend>
+
+  <input type="radio" name="agree" id="agree_yes" value="yes" />
   <label for="agree_yes">Yes</label>
-  
-  <input type="radio" name="agree"
-         id="agree_no" value="no">
+
+  <input type="radio" name="agree" id="agree_no" value="no" />
   <label for="agree_no">No</label>
 </fieldset>
 ```
@@ -336,13 +336,16 @@ We should strive for the same sort of clarity when presenting navigation options
 
 ```html
 <nav id="nav" tabindex="0" aria-labelledby="nav-title">
-  <h1 id="nav-title" class="hidden">Here’s what you 
-    can find on this site:</h1>
+  <h1 id="nav-title" class="hidden">Here’s what you can find on this site:</h1>
   <ul>
-    <li><a href="/about/"><b class="hidden">A Bit 
-      </b>About<b class="hidden"> Me</b></a></li>
-    <li><a href="/notebook/"><b class="hidden">Entries 
-      in My </b>Notebook</a></li>
+    <li>
+      <a href="/about/"
+        ><b class="hidden">A Bit </b>About<b class="hidden"> Me</b></a
+      >
+    </li>
+    <li>
+      <a href="/notebook/"><b class="hidden">Entries in My </b>Notebook</a>
+    </li>
     …
   </ul>
 </nav>
@@ -359,8 +362,7 @@ We should strive for the same sort of clarity when presenting navigation options
 [NPR](http://www.npr.org/) has multiple navigation elements on the page and they use ARIA to label them without adding additional tags. Instead, they use the `aria-label` attribute to distinguish them.
 
 ```html
-<nav class="global-navigation" role="navigation"
-     aria-label="main navigation">
+<nav class="global-navigation" role="navigation" aria-label="main navigation">
   …
 </nav>
 ```
@@ -389,7 +391,7 @@ In the UK, the Government Digital Service has made great strides overhauling exc
 
 The original paper form asked for the address like this
 
->  The claimant seeks an order that the defendant(s) give possession of:<br> (If the premises of which you seek possession are part of a building identify the part eg. Flat 3, Rooms 6 and 7)
+> The claimant seeks an order that the defendant(s) give possession of:<br> (If the premises of which you seek possession are part of a building identify the part eg. Flat 3, Rooms 6 and 7)
 
 Before requesting the type of property concerned
 
@@ -487,7 +489,7 @@ https://www.youtube.com/watch?v=lJ-4AVxAIsc
 
 Here we see the HTML5accessibility site again. If I flip on Developer Mode in Narrator, the Edge browser window goes black and I can see where the focus carat moves (the blue box), but I can’t see the design. For diagnostic purposes, the contents being read by Narrator are also presented as text on the screen in the position of the element (which can help with identifying where the issue was when you come back out of Developer Mode).
 
-Microsoft is committed to improving the accessibility, not only of its own products, but of the Web as a whole. These two tools are only a few of the many ways we are doing that today. 
+Microsoft is committed to improving the accessibility, not only of its own products, but of the Web as a whole. These two tools are only a few of the many ways we are doing that today.
 
 Obviously, part of that is continuing to evolve and improve the accessibility of the Web for users browsing in Edge, whether they are using Narrator or other screen readers like Jaws or NVDA.
 
@@ -517,4 +519,4 @@ Thank you!
 
 <hr>
 
-*You can watch (or listen) to me present this talk (albeit with a bit of technical difficulty) [over on the Channel 9 website.](https://channel9.msdn.com/Events/WebPlatformSummit/edgesummit2016/ES1612)*
+_You can watch (or listen) to me present this talk (albeit with a bit of technical difficulty) [over on the Channel 9 website.](https://channel9.msdn.com/Events/WebPlatformSummit/edgesummit2016/ES1612)_

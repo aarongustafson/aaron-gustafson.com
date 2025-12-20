@@ -11,7 +11,7 @@
 	width: 6px;
 
 	@supports (margin-block: 1em) {
-		@include unset( width );
+		@include unset(width);
 		inline-size: 6px;
 	}
 }

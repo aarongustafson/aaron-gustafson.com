@@ -11,7 +11,7 @@ ref_source: "Cloud Four"
 Excellent forensic investigation from Jason. Reminds me of the kind of stuff we used to do over on [Web Standards Sherpa](https://webstandardssherpa.com/). You should absolutely read the whole thing, but I’ll give you the key takeaways here as your site may be making the same mistake as Chipotle.
 
 > There are three key takeaways from Chipotle’s order form that you should consider:
-> 
+>
 > 1. Use HTML5 input features
 > 2. Support autofill
 > 3. Make autofill part of your test plans

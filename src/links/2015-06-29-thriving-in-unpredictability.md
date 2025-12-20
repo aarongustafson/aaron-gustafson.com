@@ -18,5 +18,5 @@ Another great post from Tim. The sooner we recognize how little we actually cont
 
 See also (from this site):
 
-* [A Fundamental Disconnect](https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/)
-* [The Network Effect](https://www.aaron-gustafson.com/notebook/the-network-effect/)
+- [A Fundamental Disconnect](https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/)
+- [The Network Effect](https://www.aaron-gustafson.com/notebook/the-network-effect/)

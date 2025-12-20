@@ -16,7 +16,7 @@ I’ve been playing around a bit with GitHub Copilot as an autonomous agent to h
 
 <!-- more -->
 
-The good news? Most of the issues weren’t actually *code* problems; they were organizational and documentation problems. The kinds of problems that make tasks hard for humans too.
+The good news? Most of the issues weren’t actually _code_ problems; they were organizational and documentation problems. The kinds of problems that make tasks hard for humans too.
 
 As I watched the agent struggle, I realized that optimizing for AI agents is really just about removing ambiguity and making implicit knowledge explicit. In other words: it’s just good engineering.
 
@@ -30,11 +30,11 @@ The agent spent roughly 40% of its time just trying to figure out which document
 
 Sound familiar? It’s the equivalent of having five different “getting started” guides that all got written at different times by different people and nobody bothered to consolidate them. (If you’ve ever worked on a project that’s been around for more than a year with no one in charge of documentation, you know exactly what I’m talking about.)
 
-**The fix:** Establish a single source of truth. Ruthlessly. We consolidated everything into one comprehensive guide and updated all references to point *only* there. Deprecated docs were deleted and/or redirected, as appropriate. No more choose your own adventure. No more guessing.
+**The fix:** Establish a single source of truth. Ruthlessly. We consolidated everything into one comprehensive guide and updated all references to point _only_ there. Deprecated docs were deleted and/or redirected, as appropriate. No more choose your own adventure. No more guessing.
 
 ### 2. **Agents won’t optimize themselves**
 
-Here’s a fun one: the agent ran several full production builds—complete with image processing, template compilation… the whole shebang—just to validate a markdown file was in the right format. These builds took 30-60 seconds. *Each time.* 
+Here’s a fun one: the agent ran several full production builds—complete with image processing, template compilation… the whole shebang—just to validate a markdown file was in the right format. These builds took 30-60 seconds. _Each time._
 
 This is like requiring someone to assemble an entire car just to check if the owner’s guide is displaying the right “check engine” symbol. Technically it works, but yikes.
 
@@ -62,7 +62,7 @@ After implementing these changes, we expect (and early testing confirms):
 - ~75% reduction in token usage, and
 - &gt;80% reduction in confusion and circular reasoning.
 
-But here's the thing: these improvements don't just help the AI agent. They help *everyone*. The consolidated documentation is easier to navigate. The fast validation scripts are useful for humans too. The explicit edge case handling prevents future questions.
+But here's the thing: these improvements don't just help the AI agent. They help _everyone_. The consolidated documentation is easier to navigate. The fast validation scripts are useful for humans too. The explicit edge case handling prevents future questions.
 
 ## The key to reducing toil: excellent docs and tools
 

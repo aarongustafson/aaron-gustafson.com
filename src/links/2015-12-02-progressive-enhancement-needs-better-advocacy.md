@@ -7,6 +7,6 @@ in_reply_to: https://zetafleet.com/blog/2015/11/progressive-enhancement-needs-be
 ref_source: Zetafleet
 ---
 
-I don’t know that *advocacy* is the issue. Perhaps a better title would be “Developers should keep an open mind” or ”The most important thing to know is you don’t know everything”.
+I don’t know that _advocacy_ is the issue. Perhaps a better title would be “Developers should keep an open mind” or ”The most important thing to know is you don’t know everything”.
 
-This is a great post and Colin makes a lot of the same arguments I make in Chapter 5 of *Adaptive Web Design, Second Edition*. Great minds!
+This is a great post and Colin makes a lot of the same arguments I make in Chapter 5 of _Adaptive Web Design, Second Edition_. Great minds!

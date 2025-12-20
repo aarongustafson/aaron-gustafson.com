@@ -18,6 +18,6 @@ First of all, Father Divine founded the [International Peace Mission movement](h
 
 The movement also owned a variety of businesses—including hotels—and integrated them. Again, pretty revolutionary for the time. To me, their most revolutionary act, however, came during World War II when [they offered the U.S. Coast Guard use of the Brigantine Hotel in New Jersey for $1/year for the duration of the war](http://www.fatherskingdommovie.com/2018/02/16/life-during-wartime-how-father-divine-influenced-the-armed-forces/). As the hotel staff and guests were integrated, the movement’s only stipulation for use of the hotel was that the Coast Guard desegregate as well. And it worked! In 1942!
 
-While there is certainly a lot of bizarre, suspect, and downright deplorable history surrounding Father Divine, I have to admit I’m inspired by his ability to see an opportunity to use his power to further the agenda of equality. 
+While there is certainly a lot of bizarre, suspect, and downright deplorable history surrounding Father Divine, I have to admit I’m inspired by his ability to see an opportunity to use his power to further the agenda of equality.
 
 If you want to know more, check out [the documentary <cite>Father’s Kingdom</cite>](http://www.fatherskingdommovie.com/).

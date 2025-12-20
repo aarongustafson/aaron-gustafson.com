@@ -8,7 +8,7 @@ in_reply_to: https://www.ebaytechblog.com/2015/11/04/how-our-css-framework-helps
 ref_source: eBay Tech Blog
 ---
 
-I love this post so much. The tab example is pretty much identical to the approach I’ve been using for a while now. 
+I love this post so much. The tab example is pretty much identical to the approach I’ve been using for a while now.
 
 By making our selectors tied to proper semantic choices, we limit the likelihood that poor decisions will be made in HTML and covered up by CSS and JavaScript (which also introduce additional dependencies we aren’t guaranteed will make it to our users).
 

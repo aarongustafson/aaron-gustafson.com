@@ -10,10 +10,10 @@ ref_source: The Cloud Four Blog
 
 As usual, Jason Grigsby nails it:
 
-* Progressive Web Apps still work on iOS
-* Progressive Web Apps perform better on iOS
-* Billions of people use browsers that support Progressive Web Apps
-* Apple appears to be warming to Progressive Web App technology
-* Progressive Web Apps benefit all users
+- Progressive Web Apps still work on iOS
+- Progressive Web Apps perform better on iOS
+- Billions of people use browsers that support Progressive Web Apps
+- Apple appears to be warming to Progressive Web App technology
+- Progressive Web Apps benefit all users
 
 Done and done.

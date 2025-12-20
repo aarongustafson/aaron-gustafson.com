@@ -6,8 +6,8 @@ ref_url: https://www.webdesignerdepot.com/2015/04/does-responsive-web-design-mak
 in_reply_to: https://www.webdesignerdepot.com/2015/04/does-responsive-web-design-make-you-more-money/
 ref_source: Webdesigner Depot
 via:
- name: Jeremy Keith
- url: https://adactio.com/links/8793
+  name: Jeremy Keith
+  url: https://adactio.com/links/8793
 ---
 
 Yes. Yes it does. Some great stats in here including this gem:

@@ -2,7 +2,7 @@
 title: "Enhancing the Manifest"
 date: 2021-10-26 11:57:19 -07:00
 comments: true
-tags: ["progressive web apps","web standards"]
+tags: ["progressive web apps", "web standards"]
 description: "I briefly presented on a bunch of the different efforts I’m involved with at the W3C’s TPAC yesterday. Here’s a rundown of what I discussed as well as links you can follow if you want to get involved."
 ---
 
@@ -127,7 +127,7 @@ For simple Manifests, translations could be embedded directly within the Manifes
       "name": "Bon chien",
       "description": "Une application pour chiens"
     }
-  },
+  }
 }
 ```
 
@@ -175,7 +175,7 @@ One serious challenge (as with the `user_preferences` block, discussed above) is
       "$['shortcuts'][0]['name']": "Nourrissez-moi",
       "$['shortcuts'][1]['name']": "Caressez-moi"
     }
-  },
+  }
 }
 ```
 

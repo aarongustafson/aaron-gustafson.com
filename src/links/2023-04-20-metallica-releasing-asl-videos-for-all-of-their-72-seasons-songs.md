@@ -15,4 +15,3 @@ First up, the title track, “72 Seasons”:
 https://www.youtube.com/watch?v=aUhUGvFrBOs
 
 I absolutely love Amber Galloway’s signing (and enthusiasm) on this video. Kudos to Metallica for doing this!
-

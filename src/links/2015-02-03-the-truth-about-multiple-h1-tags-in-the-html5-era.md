@@ -11,5 +11,5 @@ This is a beautiful and exhaustive survey of heading level usage before HTML5 an
 
 For more:
 
-* [The HTML5 Document Outline](https://www.paciellogroup.com/blog/2013/10/html5-document-outline/)
-* [The Truth about “The Truth About Multiple H1 Tags”](https://blog.adrianroselli.com/2013/12/the-truth-about-truth-about-multiple-h1.html)
+- [The HTML5 Document Outline](https://www.paciellogroup.com/blog/2013/10/html5-document-outline/)
+- [The Truth about “The Truth About Multiple H1 Tags”](https://blog.adrianroselli.com/2013/12/the-truth-about-truth-about-multiple-h1.html)

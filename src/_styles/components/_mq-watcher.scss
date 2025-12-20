@@ -4,23 +4,23 @@
 		Media Query Watcher (for JS)
 \*------------------------------------*/
 
-@media screen and (min-width: #{$bp-tiny-em}){
-  #getActiveMQ-watcher {
-      font-family: "tiny";
-  }
+@media screen and (min-width: #{$bp-tiny-em}) {
+	#getActiveMQ-watcher {
+		font-family: "tiny";
+	}
 }
-@media screen and (min-width: #{$bp-small-em}){
-  #getActiveMQ-watcher {
-      font-family: "small";
-  }
+@media screen and (min-width: #{$bp-small-em}) {
+	#getActiveMQ-watcher {
+		font-family: "small";
+	}
 }
-@media screen and (min-width: #{$bp-medium-em}){
-  #getActiveMQ-watcher {
-      font-family: "medium";
-  }
+@media screen and (min-width: #{$bp-medium-em}) {
+	#getActiveMQ-watcher {
+		font-family: "medium";
+	}
 }
-@media screen and (min-width: #{$bp-full-em}){
-  #getActiveMQ-watcher {
-      font-family: "full";
-  }
+@media screen and (min-width: #{$bp-full-em}) {
+	#getActiveMQ-watcher {
+		font-family: "full";
+	}
 }

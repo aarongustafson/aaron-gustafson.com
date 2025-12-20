@@ -8,10 +8,10 @@ twitter_text: "Love love love these approaches to conditionally loading JavaScri
 ref_source: "Umar Hansa’s  Dev Tips"
 ---
 
-This has some awesome advice on how to conditionally load JavaScript (a.k.a, *progressively enhance*) based on…
+This has some awesome advice on how to conditionally load JavaScript (a.k.a, _progressively enhance_) based on…
 
-* device RAM
-* device CPU
-* available battery
-* available storage, and
-* network conditions
+- device RAM
+- device CPU
+- available battery
+- available storage, and
+- network conditions

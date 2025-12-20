@@ -12,8 +12,8 @@ in_reply_to: https://utilitybend.com/blog/practical-uses-of-the-has-relational-p
 
 Some nice examples of how to use `:has()` in this one:
 
-* parent selector
-* combining with `:not()`
-* changing an `li` when hovering/focusing inside
-* styling forms based on validation state
-* adjusting table display based on row count
+- parent selector
+- combining with `:not()`
+- changing an `li` when hovering/focusing inside
+- styling forms based on validation state
+- adjusting table display based on row count

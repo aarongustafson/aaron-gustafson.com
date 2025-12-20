@@ -8,4 +8,3 @@ ref_source: James Craig’s Website
 ---
 
 The insightful James Craig is compiling a list of alternatives to the [troublesome `longdesc` attribute](https://lists.w3.org/Archives/Public/public-html-a11y/2014Jun/0115.html). You should follow along.
-

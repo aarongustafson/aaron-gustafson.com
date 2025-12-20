@@ -2,7 +2,13 @@
 title: "Rebuilding a PHP App using Isomorphic JavaScript with Eleventy & Netlify"
 date: 2023-02-03 13:40:59 -07:00
 comments: true
-tags: ["mobile", "progressive enhancement", "progressive web apps", "web development"]
+tags:
+  [
+    "mobile",
+    "progressive enhancement",
+    "progressive web apps",
+    "web development",
+  ]
 description: "Back in the early days of the iPhone, I created tipr.mobi, a tip calculator that always produces a palindrome total. This is an overview of the minimal work I did to make it a modern web app that can run without a traditional back-end."
 twitter_text: "Wherein I migrate @tipr from a #PHP-based mobile web app to a #serverless #PWA."
 redirect_from: "/notebook/rebuilding-a-php-app-using-isometric-javascript-with-eleventy-and-netlify/"
@@ -22,7 +28,7 @@ Back in the early days of the iPhone, I created [Tipr](https://tipr.mobi), a tip
 
 ## What I had to work with
 
-The previous iteration of Tipr was built in my hotel room while I was on site doing some consulting for a certain Silicon Valley company. I was rocking a [Palm Treo 650](https://wikipedia.org/wiki/Treo_650) at the time and that day a few of my colleagues had lined up to wait for the release of [the very first iPhone](https://wikipedia.org/wiki/IPhone_(1st_generation)). At the time, web apps were the only way to get an "app" on the iPhone as there was no SDK or even an App Store.
+The previous iteration of Tipr was built in my hotel room while I was on site doing some consulting for a certain Silicon Valley company. I was rocking a [Palm Treo 650](https://wikipedia.org/wiki/Treo_650) at the time and that day a few of my colleagues had lined up to wait for the release of [the very first iPhone](<https://wikipedia.org/wiki/IPhone_(1st_generation)>). At the time, web apps were the only way to get an "app" on the iPhone as there was no SDK or even an App Store.
 
 <figure id="2023-02-02-02">
 
@@ -33,10 +39,10 @@ The previous iteration of Tipr was built in my hotel room while I was on site do
 
 I did a lot of PHP development back in the day, so armed with all of the mobile web development best practices of the day, I set about building the site and making it speedy. Some of the notable features of Tipr included:
 
-* Inlining CSS & JS file contents into the HTML.
-* Using [PHP output buffers](https://www.php.net/manual/en/book.outcontrol.php) to compress the HTML on the server before sending it over the wire.
-* Server side processing in PHP.
-* Client side processing via <abbr aria-label="XMLHttpRequest" title="XMLHttpRequest">XHR</abbr> to a PHP-driven API.
+- Inlining CSS & JS file contents into the HTML.
+- Using [PHP output buffers](https://www.php.net/manual/en/book.outcontrol.php) to compress the HTML on the server before sending it over the wire.
+- Server side processing in PHP.
+- Client side processing via <abbr aria-label="XMLHttpRequest" title="XMLHttpRequest">XHR</abbr> to a PHP-driven API.
 
 At the time, most of these approaches were very new. As an industry, we weren’t doing a whole lot to ensure peak performance on mobile because most people’s mobile browsers were pretty crappy. This was the heyday of Usablenet’s "mobile friendly" bolt-on and WAP. Then came Mobile Safari.
 
@@ -53,14 +59,14 @@ The Tipr site has remained largely untouched since I built it in the Summer of 2
 
 Here are a handful of things that have come to the web in the intervening years:
 
-* HTML5 Form Validation API
-* SVG support
-* CSS3
-* Media Queries
-* Web App Manifest
-* Service Worker (and its precursor the AppCache)
-* Flexbox
-* CSS Grid
+- HTML5 Form Validation API
+- SVG support
+- CSS3
+- Media Queries
+- Web App Manifest
+- Service Worker (and its precursor the AppCache)
+- Flexbox
+- CSS Grid
 
 Phew, that’s a lot! While I haven’t made upgrades in all these areas, I did sprinkle in a few, mainly to make it a true PWA and boost performance.
 
@@ -70,12 +76,12 @@ Much of my work over the last few years has been in the world of static site gen
 
 While in the process of migrating to Eleventy, I also took the opportunity to
 
-* Swap raster graphics for SVGs,
-* Set up a Web App Manifest,
-* Add a Service Worker, and
-* Update the site’s `meta` info to reflect current best practices.
+- Swap raster graphics for SVGs,
+- Set up a Web App Manifest,
+- Add a Service Worker, and
+- Update the site’s `meta` info to reflect current best practices.
 
-I also swapped out the PHP logic that governed the pink color theme for [a simple `script` in the `head` of the every page](https://github.com/aarongustafson/tipr.mobi/blob/main/src/_includes/layouts/base.html#L7-L12). Since the color change is an enhancement, rather than a necessity, I didn’t feel like it was something I needed to manage another way.
+I also swapped out the PHP logic that governed the pink color theme for [a simple `script` in the `head` of the every page](https://github.com/aarongustafson/tipr.mobi/blob/main/src/_includes/layouts/base.njk#L7-L12). Since the color change is an enhancement, rather than a necessity, I didn’t feel like it was something I needed to manage another way.
 
 The greatest challenge in moving Tipr over to a static site was setting up the tip calculation engine, which had been in PHP to ensure it would work even if JavaScript wasn’t available.
 
@@ -115,7 +121,7 @@ The homepage of the site is also home to the tip calculation form. Below the for
 {% raw %}
 <script>
   {% include "js/tipr.js" %}
-  
+
   // The rest of the JavaScript logic
 </script>
 {% endraw %}
@@ -231,7 +237,7 @@ path = "/process/"
 This tells Netlify to route requests to `/process/` through `netlify/edge-functions/tipr.js`. Then all that was left to do was wire up the `form` to use that endpoint as its `action`:
 
 ```html
-<form id="calc" method="post" action="/process/">
+<form id="calc" method="post" action="/process/"></form>
 ```
 
 ### Isomorphic Edges

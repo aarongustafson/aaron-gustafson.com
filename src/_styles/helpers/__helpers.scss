@@ -2,10 +2,9 @@
   $HELPERS
   SASS Tools
 \*------------------------------------*/
-@use 'sass:math';
-@use 'sass:list';
-@use 'sass:color';
-
+@use "sass:math";
+@use "sass:list";
+@use "sass:color";
 
 /*------------------------------------*\
     Variables
@@ -15,12 +14,10 @@
   ========================================================================== */
 $debug-grid: false; // true;
 
-
 /*  URLs
   ========================================================================== */
 $domain: "https://www.aaron-gustafson.com";
 $cdn_domain: ""; //"https://e.ed-cdn.com";
-
 
 /*  Breakpoint Management
   ========================================================================== */
@@ -33,25 +30,24 @@ $bp-medium-em: 43.125em;
 $bp-full: 960;
 $bp-full-em: 60em;
 $breakpoints: (
-  "global":       "screen",
-  "tiny":         "(min-width: #{$bp-tiny-em})",
-  "small":        "(min-width: #{$bp-small-em})",
-  "medium":       "(min-width: #{$bp-medium-em})",
-  "full":         "(min-width: #{$bp-full-em})",
-  "print":        "print",
-  "old-ie":       "screen"
+	"global": "screen",
+	"tiny": "(min-width: #{$bp-tiny-em})",
+	"small": "(min-width: #{$bp-small-em})",
+	"medium": "(min-width: #{$bp-medium-em})",
+	"full": "(min-width: #{$bp-full-em})",
+	"print": "print",
+	"old-ie": "screen",
 );
 
 /*  Grid Management
   ========================================================================== */
 $grid-full-column-sizes: "( 60px 20px )";
 $grid-breakpoints: (
-    "tiny":     3,
-    "small":    6,
-    "medium":   8,
-    "full":     12
+	"tiny": 3,
+	"small": 6,
+	"medium": 8,
+	"full": 12,
 );
-
 
 /*  Legacy support
   ========================================================================== */
@@ -60,13 +56,31 @@ $legacy-support-for-ie7: true;
 $legacy-support-for-ie8: true;
 $support-for-original-webkit-gradients: true;
 
-
 /*  Typography
   ========================================================================== */
 // Font Stacks
-$font-stack-sansserif: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-stack-sansserif:
+	system-ui,
+	-apple-system,
+	BlinkMacSystemFont,
+	"Segoe UI",
+	"Roboto",
+	"Oxygen",
+	"Ubuntu",
+	"Cantarell",
+	"Fira Sans",
+	"Droid Sans",
+	"Helvetica Neue",
+	sans-serif,
+	"Apple Color Emoji",
+	"Segoe UI Emoji",
+	"Segoe UI Symbol";
 $font-stack-serif: Cambria, Georgia, serif;
-$font-stack-mono: Inconsolata, Consolas, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+$font-stack-mono:
+	Inconsolata, Consolas, Monaco, "Andale Mono WT", "Andale Mono",
+	"Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono",
+	"Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco,
+	"Courier New", Courier, monospace;
 $font-stack-headings: $font-stack-serif;
 $font-stack-body: $font-stack-sansserif;
 $font-stack-nav: $font-stack-serif;
@@ -108,14 +122,14 @@ $color-black: #2c2825;
 $color-white: #fff;
 $color-grey: #505050;
 $color-grey-dark: #454545;
-$color-grey-light: #DDD;
+$color-grey-light: #ddd;
 $color-off-white: #fffcf4;
-$color-green: #27831B;
-$color-green-mid: color.scale( $color-green, $lightness: -10% );
-$color-green-dark: color.scale( $color-green, $lightness: -20% );
-$color-green-light: #23FE06;
-$color-teal: #9EE6FF;
-$color-dark-teal: rgb(0,121,157);
+$color-green: #27831b;
+$color-green-mid: color.scale($color-green, $lightness: -10%);
+$color-green-dark: color.scale($color-green, $lightness: -20%);
+$color-green-light: #23fe06;
+$color-teal: #9ee6ff;
+$color-dark-teal: rgb(0, 121, 157);
 
 // Functional Colors
 $color-background: $color-off-white;
@@ -138,8 +152,7 @@ $css_images: "/c/i";
 /*  Defaults
   ========================================================================== */
 $default-box-shadow: 1px 1px 0 $color-rule;
-$default-transition: .25s ease;
-
+$default-transition: 0.25s ease;
 
 /*------------------------------------*\
     Functions
@@ -149,54 +162,52 @@ $default-transition: .25s ease;
 // ---
 // @param [literal] $size: the size
 // @param [literal] $context: the context size
-@function px-to-ems( $size, $context: $font-size-default )
-{
-    $size: 0px + $size;
-    $context: 0px + $context;
-    @return #{ math.div( $size, $context )}em;
+@function px-to-ems($size, $context: $font-size-default) {
+	$size: 0px + $size;
+	$context: 0px + $context;
+	@return #{math.div($size, $context)}em;
 }
 
 // convert string to number
 // ---
 // @param [literal] $n: the string
-@function parseInt( $n )
-{
-    @return math.div( $n, ($n * 0 + 1) );
+@function parseInt($n) {
+	@return math.div($n, ($n * 0 + 1));
 }
 
 // Internet Explorer 6
 // ---
 // @param [literal] $value: value for Internet Explorer 6
 @function ie6($value) {
-  @return #{'_' + $value};
+	@return #{"_" + $value};
 }
 
 // Internet Explorer 6-7
 // ---
 // @param [literal] $value: value for Internet Explorer 6 and 7
 @function ie7($value) {
-  @return #{'!' + $value};
+	@return #{"!" + $value};
 }
 
 // Internet Explorer 6-8
 // ---
 // @param [literal] $value: value for Internet Explorer 6 to 8
 @function ie8($value) {
-  @return #{$value + ' \9'};
+	@return #{$value + " \9"};
 }
 
 // Internet Explorer 9-10
 // ---
 // @param [literal] $value: value for Internet Explorer 9 and 10
 @function ie9($value) {
-  @return #{$value + '\0'};
+	@return #{$value + "\0"};
 }
 
 // Internet Explorer 6-10
 // ---
 // @param [literal] $value: value for Internet Explorer 6 to 10
 @function ie10($value) {
-  @return #{$value + '\9'};
+	@return #{$value + "\9"};
 }
 
 /*------------------------------------*\
@@ -205,12 +216,12 @@ Mixins
 
 // Baseline-guide for vertical rhythm
 @mixin baseline-guide() {
-	background: linear-gradient( #FF6BA6 1px, transparent 1px );
-	background-size: 100% .75; // 12px grid
+	background: linear-gradient(#ff6ba6 1px, transparent 1px);
+	background-size: 100% 0.75; // 12px grid
 }
 
 // Unset
-@mixin unset( $properties ) {
+@mixin unset($properties) {
 	@each $property in $properties {
 		#{$property}: unset;
 	}
@@ -229,67 +240,52 @@ Mixins
 	}
 }
 
-
 // REM values
 // Adapted from http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
-@mixin rem( $property, $values, $fallback: true )
-{
+@mixin rem($property, $values, $fallback: true) {
 	$px: ();
 	$rem: ();
-	
-	@each $value in $values
-	{
-		@if $value == 0 or $value == auto
-		{
-			$rem: list.append( $rem, $value );
-		}
-		@else
-		{
-			$unit: math.unit( $value );
-			$val: parseInt( $value );
-			
+
+	@each $value in $values {
+		@if $value == 0 or $value == auto {
+			$rem: list.append($rem, $value);
+		} @else {
+			$unit: math.unit($value);
+			$val: parseInt($value);
+
 			// enforce pixels on unitless measurements
-			@if $unit == ""
-			{
+			@if $unit == "" {
 				$value: $value + 0px;
 				$unit: "px";
 			}
-			
+
 			// assume pixels
-			@if $unit == "px"
-			{
-				$px : list.append( $px,  $value );
-				$rem: list.append( $rem, math.div( $val, $font-size-default ) + rem );
+			@if $unit == "px" {
+				$px: list.append($px, $value);
+				$rem: list.append($rem, math.div($val, $font-size-default) + rem);
 			}
-			
-			@if $unit == "rem"
-			{
-				$px : list.append( $px,  ( $val * $font-size-default + px ) );
-				$rem: list.append( $rem, $value );
+
+			@if $unit == "rem" {
+				$px: list.append($px, ($val * $font-size-default + px));
+				$rem: list.append($rem, $value);
 			}
 		}
 	}
-	
-	@if $fallback == false
-	{
+
+	@if $fallback == false {
 		#{$property}: $rem;
-	}
-	@else if $px == $rem
-	{
+	} @else if $px == $rem {
 		#{$property}: $px;
-	}
-	@else if $px != () and $rem != ()
-  {
+	} @else if $px != () and $rem != () {
 		#{$property}: $px;
 		#{$property}: $rem;
 	}
 }
 
 // Experimental Block Constructor
-@mixin experimental-block ( $pre: "", $post: "" )
-{
-	$pre: string.unquote( $pre );
-	$post: string.unquote( $post );
+@mixin experimental-block($pre: "", $post: "") {
+	$pre: string.unquote($pre);
+	$post: string.unquote($post);
 	#{$pre}-webkit-#{$post} {
 		@content;
 	}
@@ -310,32 +306,30 @@ Mixins
 	}
 }
 
-
 // Inline separator
-@mixin inline-separator( $char: "|" ) {
+@mixin inline-separator($char: "|") {
 	&::before {
 		content: "#{$char}";
-		padding: 0 .5em 0 .25em;
+		padding: 0 0.5em 0 0.25em;
 
 		@supports (margin-block: 1em) {
 			padding: unset;
 			padding-block: 0;
-			padding-inline: .5em .25em;
+			padding-inline: 0.5em 0.25em;
 		}
 	}
 }
 
 // Background-images
-@mixin background-image ( $img_base, $img_path, $hide_text: true ) {
-	
-	background: transparent url(#{$css_images}/#{$img_base}.png) center center no-repeat;
+@mixin background-image($img_base, $img_path, $hide_text: true) {
+	background: transparent url(#{$css_images}/#{$img_base}.png) center center
+		no-repeat;
 	background-size: contain;
-	
-	@if $hide_text
-	{
+
+	@if $hide_text {
 		@extend %overflow-hide;
 	}
-	
+
 	// SVG shim in JS for Android 2.3
 	html.with-svg & {
 		background-image: url(#{$css_images}/#{$img_base}.svg);
@@ -343,38 +337,55 @@ Mixins
 }
 
 // Triangle
-@mixin triangle( $size: ( "base": 10, "length": 10 ), $direction: right, $color: #000 )
-{
-	$base: math.div( map.get( $size, "base" ), 2 );
-	$length: map.get( $size, "length" );
-	
+@mixin triangle(
+	$size: (
+		"base": 10,
+		"length": 10,
+	),
+	$direction: right,
+	$color: #000
+) {
+	$base: math.div(map.get($size, "base"), 2);
+	$length: map.get($size, "length");
+
 	width: 0;
 	height: 0;
 	border: 0px solid transparent;
-	
+
 	// Right
 	@if $direction == right {
-		border-width: ( 0px + $base ) 0 ( 0px + $base ) ( 0px + $length );
-		border-width: ( 0rem + math.div( $base, $font-size-default ) ) 0 ( 0rem + math.div( $base, $font-size-default ) ) ( 0rem + math.div( $length, $font-size-default ) );
+		border-width: (0px + $base) 0 (0px + $base) (0px + $length);
+		border-width: (0rem + math.div($base, $font-size-default))
+			0
+			(0rem + math.div($base, $font-size-default))
+			(0rem + math.div($length, $font-size-default));
 		border-left-color: $color;
 		// Left
 	} @else if $direction == left {
-		border-width: ( 0px + $base ) ( 0px + $length ) ( 0px + $base ) 0;
-		border-width: ( 0rem + math.div( $base, $font-size-default ) ) ( 0rem + math.div( $length, $font-size-default ) ) ( 0rem + math.div( $base, $font-size-default ) ) 0;
+		border-width: (0px + $base) (0px + $length) (0px + $base) 0;
+		border-width: (0rem + math.div($base, $font-size-default))
+			(0rem + math.div($length, $font-size-default))
+			(0rem + math.div($base, $font-size-default))
+			0;
 		border-right-color: $color;
 		// Up
 	} @else if $direction == up {
-		border-width: 0 ( 0px + $base ) ( 0px + $length ) ( 0px + $base );
-		border-width: 0 ( 0rem + math.div( $base, $font-size-default ) ) ( 0rem + math.div( $length, $font-size-default ) ) ( 0rem + math.div( $base, $font-size-default ) );
+		border-width: 0 (0px + $base) (0px + $length) (0px + $base);
+		border-width: 0
+			(0rem + math.div($base, $font-size-default))
+			(0rem + math.div($length, $font-size-default))
+			(0rem + math.div($base, $font-size-default));
 		border-bottom-color: $color;
 		// Down
 	} @else if $direction == down {
-		border-width: ( 0px + $length ) ( 0px + $base ) 0 ( 0px + $base );
-		border-width: ( 0rem + math.div( $length, $font-size-default ) ) ( 0rem + math.div( $base, $font-size-default ) ) 0 ( 0rem + math.div( $base, $font-size-default ) ) ;
+		border-width: (0px + $length) (0px + $base) 0 (0px + $base);
+		border-width: (0rem + math.div($length, $font-size-default))
+			(0rem + math.div($base, $font-size-default))
+			0
+			(0rem + math.div($base, $font-size-default));
 		border-top-color: $color;
 	}
 }
-
 
 @mixin moz {
 	@-moz-document url-prefix() {
@@ -382,28 +393,27 @@ Mixins
 	}
 }
 
-
 /*------------------------------------*\
 		Placeholders
 \*------------------------------------*/
 
-// should be declared as follows: 
+// should be declared as follows:
 //
 // @include breakup-create-placeholder( placeholder-name ){
-//      color: red;    
+//      color: red;
 // }
 //
 // They can then be used in any scope via
 //
 // @include breakup-placeholder( placeholder-name );
-// 
+//
 // Based on a combination of Breakup and the work of
 // Hugo Giraudel
 // http://www.sitepoint.com/cross-media-query-extend-sass/
 
 // Default Text
 %text {
-	@include rem( font-size, $font-size-body );
+	@include rem(font-size, $font-size-body);
 	font-weight: normal;
 	line-height: $line-height-default;
 
@@ -422,31 +432,30 @@ Mixins
 // Hidden
 // http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 %hidden {
-		position: absolute !important;
-		height: 1px;
-		width: 1px;
-		overflow: hidden;
-		@if $legacy-support-for-ie6 or $legacy-support-for-ie7
-		{
-				clip: rect(1px 1px 1px 1px); // IE6 and IE7 use the wrong syntax.
-		}
-		clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	@if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+		clip: rect(1px 1px 1px 1px); // IE6 and IE7 use the wrong syntax.
+	}
+	clip: rect(1px, 1px, 1px, 1px);
 
-		@supports (margin-block: 1em) {
-			@include unset ( height width );
-			block-size: 1px;
-			inline-size: 1px;
-		}
+	@supports (margin-block: 1em) {
+		@include unset(height width);
+		block-size: 1px;
+		inline-size: 1px;
+	}
 }
 
 // Un-hidden
 // Turns off the hidden effect
 %unhidden {
-		position: static !important;
-		clip: auto;
-		height: auto;
-		width: auto;
-		overflow: auto;
+	position: static !important;
+	clip: auto;
+	height: auto;
+	width: auto;
+	overflow: auto;
 }
 
 // Font Smoothing
@@ -477,53 +486,48 @@ Mixins
 
 // Small Caps
 %small-caps {
-
-	@include rem( font-size, $font-size-small );
+	@include rem(font-size, $font-size-small);
 	font-family: $font-stack-sansserif;
 	font-weight: $font-weight-sansserif-bold;
 	letter-spacing: 1px;
-	letter-spacing: ie8( 2px );
+	letter-spacing: ie8(2px);
 	text-transform: uppercase;
 	word-spacing: 1px;
-
 }
 
 // Hardware Acceleration
 %hardware-accelerate {
-	transform: translate3d(0,0,0);
+	transform: translate3d(0, 0, 0);
 }
 
 // Clearfix
 // http://nicolasgallagher.com/micro-clearfix-hack/
 @mixin clearfix {
-  // IE6 and IE7
-	@if $legacy-support-for-ie6 or $legacy-support-for-ie7
-	{
-			*zoom: 1;
+	// IE6 and IE7
+	@if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+		*zoom: 1;
 	}
 
 	&::before,
 	&::after {
-			content: " ";
-			display: table;
+		content: " ";
+		display: table;
 	}
 
 	&::after {
-			clear: both;
+		clear: both;
 	}
 }
 %clearfix {
-  @include clearfix;
+	@include clearfix;
 }
 
 // Focus indicator
 %focus-ring {
-
 	&:focus {
-		outline-color: #5B9DD9;
+		outline-color: #5b9dd9;
 		outline-offset: 0px;
 		outline-style: auto;
-		outline-width: 5px;        
+		outline-width: 5px;
 	}
-
 }

@@ -5,13 +5,12 @@ description: "If you’re looking for photos of me, look no further."
 show_title: false
 show_footer: false
 sharing: false
-sidebars: 
-  - "partials/asides/networks.html"
-  - "partials/asides/events.html"
+sidebars:
+  - "partials/asides/networks.njk"
+  - "partials/asides/events.njk"
 ---
 
 # Headshots
-
 
 <aside class="alternate">{{ bio_promo | markdownify | safe }}</aside>
 

@@ -2,7 +2,7 @@
 title: "Moved from Octopress to Jekyll"
 date: 2017-03-23 14:43:26 -04:00
 comments: true
-tags: ['this site',Octopress,Jekyll]
+tags: ["this site", Octopress, Jekyll]
 description: "It took a few days, but I think the site is pretty stable in Jekyll now. That said, there are likely some bugs yet to be discovered. Let me know if you find one."
 ---
 

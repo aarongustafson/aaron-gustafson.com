@@ -2,7 +2,7 @@
 title: "Apple, Business, and Standards"
 date: 2015-02-26 10:44:40 -05:00
 comments: true
-tags: ["web design","web standards",business, browsers]
+tags: ["web design", "web standards", business, browsers]
 description: "With Pointer Events now officially a W3C Recommendation, Apple is playing the role of the Web standards and interoperability party pooper."
 ---
 
@@ -20,9 +20,9 @@ In Lisa’s analogy, the protons of a digital project are Web standards and Key 
 
 This really resonated with me. Mainly, it resonated because I am a Web standards guy, but I also believe in the importance of standards across the board. I think projects need copywriting standards, design standards, performance standards, coding standards, and many other kinds of standards as well. Standards hold a project together. For real.
 
-That’s why *Web* standards are so important.
+That’s why _Web_ standards are so important.
 
-Without standards, the Web was [an unruly mass of spaghetti code](http://en.wikipedia.org/wiki/Browser_wars).  I started working on the Web in 1996. I know, I lived it.
+Without standards, the Web was [an unruly mass of spaghetti code](http://en.wikipedia.org/wiki/Browser_wars). I started working on the Web in 1996. I know, I lived it.
 
 We used to deliver separate browser-specific JavaScript and CSS files to different User Agents. Our HTML code had to be 3-4 times as hefty to support all of the various ways browsers had decided to implement the same features. It was horrible and made building anything remotely interesting a truly painful endeavor.
 
@@ -30,7 +30,7 @@ Then browser makers got together to codify HTML into a generally agreed-upon set
 
 Tuesday also saw the W3C officially make [Pointer Events](http://www.w3.org/TR/pointerevents/) a recommendation. I’d always liked the idea of Pointer Events because it abstracts the traditional concept of a click into a generic interaction that could be triggered by a mouse, a finger, a pen, an eye movement, or any other interaction method we come up with in the future. Sure, I work for Microsoft now—they proposed this idea—but that isn’t the reason I like the concept. I like it because it doesn’t tie us down to a single way of interacting with Web content that necessitates the creation of new specs when new interaction methods are invented. It’s future friendly and embraces the "continuum of experience" I evangelize incessantly.
 
-When Pointer Events were first proposed, there was a lot of support behind them. Obviously Microsoft was on board, but Mozilla was too. And Google was all about Pointer Events for a while and was already using them when [they did an abrupt  about-face and decided they were ripping them out of Blink in favor of overhauling Touch Events](https://code.google.com/p/chromium/issues/detail?id=162757#c64) (which Apple supports and which Pointer Events were intended to supersede).
+When Pointer Events were first proposed, there was a lot of support behind them. Obviously Microsoft was on board, but Mozilla was too. And Google was all about Pointer Events for a while and was already using them when [they did an abrupt about-face and decided they were ripping them out of Blink in favor of overhauling Touch Events](https://code.google.com/p/chromium/issues/detail?id=162757#c64) (which Apple supports and which Pointer Events were intended to supersede).
 
 And so now we have a recommendation from the W3C that browsers implement Pointer Events. [Developers want them](http://blog.jquery.com/2015/02/24/getting-on-point/) and it seems Apple doesn’t. And because Apple doesn’t want them, Google doesn’t want them now either. To quote Rick Byers (of Google) in [a Pointer Events meeting in late 2014](https://lists.w3.org/Archives/Public/public-pointer-events/2014JulSep/0071):
 
@@ -38,7 +38,7 @@ And so now we have a recommendation from the W3C that browsers implement Pointer
 
 So, effectively, Apple is holding the Web back. [Tim Kadlec](https://twitter.com/tkadlec) wrote [a great piece discussing the core issue at play here](http://timkadlec.com/2015/02/apples-web/):
 
-> Let’s set any opinions about Pointer Events aside. Frankly, I need to do a *lot* more digging here before I have any sort of strong opinion in one direction or another. There is a bigger issue here. We have a recurring situation where all vendors (save for Apple) show interest in standard, but because Apple does not express that same interest, the standard gets waylaid.
+> Let’s set any opinions about Pointer Events aside. Frankly, I need to do a _lot_ more digging here before I have any sort of strong opinion in one direction or another. There is a bigger issue here. We have a recurring situation where all vendors (save for Apple) show interest in standard, but because Apple does not express that same interest, the standard gets waylaid.
 
 <figure id="fig-2015-02-25-02" class="media-container media-container--right">
 
@@ -82,7 +82,7 @@ But he’s also quick to highlight the disappointing reality about Apple with re
 
 Apple is very much a black box and their processes are incredibly opaque. Now I’m no hater, I use their products daily.[^3], but I am also not an apologist. I think relationships are improved with honesty and openness. I honestly wish Apple’s processes—at least when it comes to the Web—were more open.[^4] Heck, they often don’t even show up to meetings at the W3C. If we knew what they were thinking or why they were doing things, we could at least understand where they were coming from rather than having to speculate about their motivations. Whether we agree or not is irrelevant.
 
-Regardless, we are where we are and I can’t help but wonder one thing: *If we stop giving Apple a free pass and continue marching forward without them, will they eventually be forced to scramble to catch up like Microsoft did when IE6 sat on the shelf for so long?* I don’t know what the answer is, but I sincerely hope they come around and begin to treat the Web with the respect it deserves before that happens.
+Regardless, we are where we are and I can’t help but wonder one thing: _If we stop giving Apple a free pass and continue marching forward without them, will they eventually be forced to scramble to catch up like Microsoft did when IE6 sat on the shelf for so long?_ I don’t know what the answer is, but I sincerely hope they come around and begin to treat the Web with the respect it deserves before that happens.
 
 When browsers refuse to implement Web standards, we all lose. And we take one step closer to the swirling pit of chaos and spaghetti code we thought we’d put behind us.
 

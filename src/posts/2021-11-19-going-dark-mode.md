@@ -2,7 +2,7 @@
 title: "Going dark (mode)"
 date: 2021-10-26 11:57:19 -07:00
 comments: true
-tags: ["CSS","progressive web apps"]
+tags: ["CSS", "progressive web apps"]
 description: "I finally got around to playing with the CSS user color-scheme preference and enabled a “dark mode” for this site."
 hero:
   src: /i/posts/2021-11-19/hero.jpg
@@ -41,11 +41,19 @@ I only wanted to add a "dark" theme as my default is pretty much a "light" theme
 You may not have realized it, but SVGs also support the `prefers-color-scheme` Media Query. Most of my SVGs were black & white already, so I had no color definitions in them. Adding an embedded stylesheet to swap out colors did the trick though:
 
 ```css
-svg { background-color: white; }
-path { fill: black; }
+svg {
+  background-color: white;
+}
+path {
+  fill: black;
+}
 @media (prefers-color-scheme: dark) {
-  svg { background-color: #454545; }
-  path { fill: #fffcf4; }
+  svg {
+    background-color: #454545;
+  }
+  path {
+    fill: #fffcf4;
+  }
 }
 ```
 

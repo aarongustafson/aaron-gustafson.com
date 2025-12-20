@@ -5,16 +5,16 @@
 	top: 5px;
 	right: 5px;
 	z-index: 100;
-	line-height: .5;
+	line-height: 0.5;
 	padding: 8px;
 	border: 1px solid $color-white;
 
 	@supports (margin-block: 1em) {
-		@include unset( top right padding  );
-		@include rem( inset-block-start, 5px, false );
-		@include rem( inset-inline-end, 5px, false );
-		@include rem( padding-block, 8px, false );
-		@include rem( padding-inline, 8px, false );
+		@include unset(top right padding);
+		@include rem(inset-block-start, 5px, false);
+		@include rem(inset-inline-end, 5px, false);
+		@include rem(padding-block, 8px, false);
+		@include rem(padding-inline, 8px, false);
 	}
 
 	html.dark-mode & {
@@ -26,7 +26,7 @@
 		height: 20px;
 
 		@supports (inline-size: 1em) {
-			@include unset( width height );
+			@include unset(width height);
 			inline-size: 20px;
 			block-size: 20px;
 		}
@@ -39,5 +39,4 @@
 			fill: $color-black;
 		}
 	}
-	
 }

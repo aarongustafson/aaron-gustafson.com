@@ -7,15 +7,15 @@ ref_url: https://www.baldurbjarnason.com/notes/media-websites-vs-facebook/
 in_reply_to: https://www.baldurbjarnason.com/notes/media-websites-vs-facebook/
 ref_source: "Baldur Bjarnason’s Blog"
 via:
- name: Jeremy Keith
- url: https://adactio.com/journal/8956
+  name: Jeremy Keith
+  url: https://adactio.com/journal/8956
 ---
 
 This post from [Baldur Bjarnason](https://twitter.com/fakebaldur) hits the nail on the head when it comes to the web vs. platform-specific development. If you work on the web (as I suspect you do since you’re reading this blog), convert "you" and "your" to "we" and "our":
 
 > The web doesn’t suck. Your websites suck.
 
-> *All of your websites suck*.
+> _All of your websites suck_.
 
 > You destroy basic usability by hijacking the scrollbar. You take native functionality (scrolling, selection, links, loading) that is fast and efficient and you rewrite it with ‘cutting edge’ javascript toolkits and frameworks so that it is slow and buggy and broken. You balloon your websites with megabytes of cruft. You ignore best practices. You take something that works and is complementary to your business and turn it into a liability.
 

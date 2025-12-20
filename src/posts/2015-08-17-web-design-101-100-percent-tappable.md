@@ -2,7 +2,7 @@
 title: "Web Design 101: 100% Tappable"
 date: 2015-08-17 14:46:35 -04:00
 comments: true
-tags: ["web design 101","web design","user experience"]
+tags: ["web design 101", "web design", "user experience"]
 description: "When you design something that looks interactive, always make sure the whole thing is actually tappable."
 twitter_text: "When you design something that looks interactive, always make sure the whole thing is actually tappable."
 redirect_from: /notebook/web-design-101-buttons-should-be-tappable/
@@ -40,4 +40,4 @@ The problem is that the 15px padding and overall button styles were put on the t
 
 <figcaption>The same email with the padding shifted to the link, making more of the "button" tappable.</figcaption></figure>
 
-When you design something that looks interactive, *always make sure the whole thing is actually tappable*. It will go along way toward reducing user frustration.
+When you design something that looks interactive, _always make sure the whole thing is actually tappable_. It will go along way toward reducing user frustration.

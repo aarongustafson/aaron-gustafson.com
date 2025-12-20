@@ -7,4 +7,4 @@ in_reply_to: https://blog.cloudfour.com/seriously-dont-use-icon-fonts/
 ref_source: The Cloud Four Blog
 ---
 
-An excellent overview of why you *shouldn’t* be using icon fonts and *should* be using SVG instead. In short: Don’t be Table Guy.
+An excellent overview of why you _shouldn’t_ be using icon fonts and _should_ be using SVG instead. In short: Don’t be Table Guy.

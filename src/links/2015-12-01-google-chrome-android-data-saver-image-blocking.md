@@ -9,4 +9,4 @@ ref_source: The Verge
 tags: [Android, mobile, performance]
 ---
 
-Full circle, eh? [The Blazer browser](https://en.wikipedia.org/wiki/Blazer_(web_browser)) on my [Palm Treo 650](https://en.wikipedia.org/wiki/Treo_650) (circa 2004) had a “Fast Mode” that switched off (optionally) images, CSS, and JavaScript.
+Full circle, eh? [The Blazer browser](<https://en.wikipedia.org/wiki/Blazer_(web_browser)>) on my [Palm Treo 650](https://en.wikipedia.org/wiki/Treo_650) (circa 2004) had a “Fast Mode” that switched off (optionally) images, CSS, and JavaScript.

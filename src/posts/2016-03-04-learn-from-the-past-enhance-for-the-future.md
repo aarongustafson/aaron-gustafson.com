@@ -2,14 +2,14 @@
 title: "Learn from the Past, Enhance for the Future"
 date: 2016-03-04 17:33:57 -05:00
 comments: true
-tags: ["the future",presentations,accessibility,"voice UX"]
+tags: ["the future", presentations, accessibility, "voice UX"]
 crossposted:
   Medium: https://medium.com/@AaronGustafson/8ab94d4f7e92
 twitter_text: "In case you missed it, here’s a written version of my #EnhanceConf talk:"
 description: "I had the great pleasure of delivering the closing keynote for the first EnhanceConf. I wanted to talk about voice and the future of “headless” user interfaces. Here’s what I had to say."
 ---
 
-*I had the great pleasure of delivering the closing keynote for the first EnhanceConf. I wanted to talk about voice and the future of "headless" user interfaces. Here’s what I had to say.*
+_I had the great pleasure of delivering the closing keynote for the first EnhanceConf. I wanted to talk about voice and the future of "headless" user interfaces. Here’s what I had to say._
 
 <!-- more -->
 
@@ -49,7 +49,7 @@ You’re a savvy bunch, so I’m sure none of this is news to you, but I wanted 
 
 ## I: The Headless UI
 
-Science fiction has often been a strong predictor of our technological future. HAL 9000 from *2001: A Space Odyssey* is probably the most (in)famous example of a computer that interacts with its users largely via voice. As a concept, the “talking computer” has appeared time and time again in space-age fiction—everything from *Red Dwarf* to *Interstellar*.
+Science fiction has often been a strong predictor of our technological future. HAL 9000 from _2001: A Space Odyssey_ is probably the most (in)famous example of a computer that interacts with its users largely via voice. As a concept, the “talking computer” has appeared time and time again in space-age fiction—everything from _Red Dwarf_ to _Interstellar_.
 
 To function in the real world like they do on TV and in the movies, computers need two capabilities: Natural language processing (to understand what we say) and speech synthesis (to communicate, aurally, back to us).
 
@@ -63,7 +63,7 @@ Natural language processing has its roots in the 1950s, but many of these early 
 
 As hardware capabilities continued to improve and computers became more powerful, they got better at recognizing the words we were saying to them. Eventually, and with enough processing power, they also began to assign meaning to words and could react accordingly.
 
-As the years marched on, the overhead required to enable our projects to listen to our users has dropped significantly. 
+As the years marched on, the overhead required to enable our projects to listen to our users has dropped significantly.
 
 Listening is great, but true communication is bidirectional. Humans have been experimenting with speech synthesis since the late 1700s, but it wasn’t until the 1980s that we got a decent result though. By the 1990s, reasonably intelligible text-to-speech software was being rolled out alongside most operating systems as a core component of their assistive technology offerings: The “screen reader”. At present, screen readers are probably the best indicator of what the future of voice interaction will sound like.
 
@@ -75,7 +75,7 @@ So how do you design a “headless” UI? That’s easy: You design the conversa
 
 ## II: Interface is Conversation
 
-Let’s take a trip back in time to one of the earliest computer games: Zork. Zork was written between 1977 and 1979. It’s a text-based adventure game that operates a lot like a game of *Dungeons & Dragons*—with the program serving the role of gamemaster.
+Let’s take a trip back in time to one of the earliest computer games: Zork. Zork was written between 1977 and 1979. It’s a text-based adventure game that operates a lot like a game of _Dungeons & Dragons_—with the program serving the role of gamemaster.
 
 > West of House<br> You are standing in an open field west of a white house, with a boarded front door.<br> There is a small mailbox here.<br><br>&gt; **open mailbox**
 
@@ -87,10 +87,10 @@ Whether Zork or a webpage, **every interface is a conversation**—we engage our
 
 Let’s look at a few web page and interface component types to identify the kinds of conversations we trying to have with our users in each:
 
-* **Homepage**<br> We’ve just met and I’m explaining what you can do on my site (and, in some cases, why it matters).
-* **Contact Form**<br> You’re asking or telling me something. I want to help you. It’s common courtesy for me to let you know how long it may take me to get back to you with a response; and for me to abide by that.
-* **Product Page**<br> I’m explaining what a particular object or service is, what it does, and how it will benefit you. I should "show" you why something is great rather than “tell”-ing you that it is because you’re immune to salesy <abbr aria-label="bullshit">BS</abbr>.
-* **Status Update**<br> I may prompt you with a question, but I’m here to listen. The floor is yours. (But I’m probably mining what you say for data so I can market to you later.)
+- **Homepage**<br> We’ve just met and I’m explaining what you can do on my site (and, in some cases, why it matters).
+- **Contact Form**<br> You’re asking or telling me something. I want to help you. It’s common courtesy for me to let you know how long it may take me to get back to you with a response; and for me to abide by that.
+- **Product Page**<br> I’m explaining what a particular object or service is, what it does, and how it will benefit you. I should "show" you why something is great rather than “tell”-ing you that it is because you’re immune to salesy <abbr aria-label="bullshit">BS</abbr>.
+- **Status Update**<br> I may prompt you with a question, but I’m here to listen. The floor is yours. (But I’m probably mining what you say for data so I can market to you later.)
 
 When we approach interfaces as conversations, we humanize our products and improve our users’ experiences. When we don’t, things can fall apart quickly…
 
@@ -100,23 +100,23 @@ One unintended consequence of this deluge of photo uploads was a significant upt
 
 Facebook’s engineers reached out to some of the users who had reported these photos to get a bit more background regarding their submissions. At the time Facebook’s photo reporting interface provided a list of reasons users could choose from if they wanted a photo removed, but, as Facebook soon discovered, many of the reports were made because users didn’t want the photo posted for reasons other than those provided. In some cases, it was because they didn’t like how they looked in the photo. In others, it was because the photo was of an ex-partner or even a beloved pet they’d shared with an ex-boyfriend or ex-girlfriend.
 
-The existing photo reporting tool had not done a good job of accounting for these more personal reasons for wanting a photo removed, so the Facebook engineers went to work. They added a step that asked *How does this photo make you feel?* The options were simple:
+The existing photo reporting tool had not done a good job of accounting for these more personal reasons for wanting a photo removed, so the Facebook engineers went to work. They added a step that asked _How does this photo make you feel?_ The options were simple:
 
-* Embarrassing
-* Upsetting
-* Saddening
-* Bad Photo
-* Other
+- Embarrassing
+- Upsetting
+- Saddening
+- Bad Photo
+- Other
 
 The “other” option also provided a free-response text field to fill in.
 
 With this system in place, they found that 50% of reporters who answered the new question chose one of the provided options. That was pretty helpful, but there was still a problem: 34% of the “other” respondents were writing “It’s embarrassing” in the blank rather than choosing the “embarrassing” option already provided.
 
-What the Facebook team realized was that people were not identifying with the “embarrassing” text (or may have even thought it was referring to them, rather than assuming an implied “It’s”). A subtle shift in language was needed, so they changed the label to *Please describe the photo* and they updated the options to mirror how people actually talk:
+What the Facebook team realized was that people were not identifying with the “embarrassing” text (or may have even thought it was referring to them, rather than assuming an implied “It’s”). A subtle shift in language was needed, so they changed the label to _Please describe the photo_ and they updated the options to mirror how people actually talk:
 
-* It’s embarrassing
-* It’s a bad photo of me
-* It makes me sad
+- It’s embarrassing
+- It’s a bad photo of me
+- It makes me sad
 
 With this subtle change, they were able to increase the percentage of photo reporters who chose one of the options provided to a whopping 78%.
 
@@ -132,7 +132,7 @@ Back in 2006, [Dustin Diaz proposed CSS Naked Day](https://css-naked-day.github.
 
 > It will be a test case to see how usable your website is to others without a "design".<br> —Dustin Diaz
 
-"Design", as Dustin was refering to it, is the visual design of a site, but design is not solely concerned with visual representations. Diving into etymology for a moment here, *design* comes from the Latin <i lang="la">designare</i> meaning “to mark out or indicate”. The purpose of design is not to make something pretty, it’s to clarify.
+"Design", as Dustin was refering to it, is the visual design of a site, but design is not solely concerned with visual representations. Diving into etymology for a moment here, _design_ comes from the Latin <i lang="la">designare</i> meaning “to mark out or indicate”. The purpose of design is not to make something pretty, it’s to clarify.
 
 If the words we use form the basis of the conversations we have with our users, the semantics we employ clarify that meaning. Choosing elements with semantic value enriches our content, illuminating the meaning and intent of our words in order to overcome the limitations of text and bring it up to par with spoken language. After all, they may look the same visually, but there’s a big difference between these two statements:
 
@@ -143,7 +143,7 @@ If the words we use form the basis of the conversations we have with our users, 
 
 Beyond using markup to clarify the intent of the words we write, we can use it to spell out relationships that are often represented visually. Dustin described one way we do this as part of the impetus for CSS Naked Day (emphasis mine):
 
-> In the spirit of promoting Web Standards along with good semantic markup and *proper hierarchy structures*
+> In the spirit of promoting Web Standards along with good semantic markup and _proper hierarchy structures_
 
 By "proper hierarchy", Dustin is talking about the document outline. A document outline is created through use of heading elements (`h1`–`h6`). It provides a easy way to review the organization of our web pages and validate our source order decisions. It also helps us ensure the flow works, which is incredibly important in any conversation. It helps us get to the point, streamline our content, and remove distractions… all of which are a sign of respect to our users.
 
@@ -153,9 +153,10 @@ When Luke Wroblewski coined "mobile first", he told us to focus on the core purp
 
 ### Write for People
 
-We don’t author content for ourselves. We write for others. If what we write frustrated or alienates our users, we’ve failed at our job. In their profoundly helpful book [<cite>Nicely Said</cite>](http://www.amazon.com/gp/product/0321988191/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0321988191&amp;linkCode=as2&amp;tag=easydesign-20&amp;linkId=5INOUNG72ODCWZQV), Nicole Fenton and Kate Kiefer Lee offer numerous suggestions for how to write with the reader in mind:
+We don’t author content for ourselves. We write for others. If what we write frustrated or alienates our users, we’ve failed at our job. In their profoundly helpful book [<cite>Nicely Said</cite>](http://www.amazon.com/gp/product/0321988191/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0321988191&linkCode=as2&tag=easydesign-20&linkId=5INOUNG72ODCWZQV), Nicole Fenton and Kate Kiefer Lee offer numerous suggestions for how to write with the reader in mind:
 
 > - Be clear.
+
 - Be concise.
 - Be honest.
 - Be considerate.
@@ -165,7 +166,7 @@ They also make the recommendation that you read your work aloud. As we head into
 
 ### Avoid Technical and Legal Jargon
 
-When we are writing for our readers, we need to be familiar with their level of domain knowledge so we don’t frustrate or alienate them. For example, if you track error codes for issues on your site, send them to *your developers*, but never present them to a user.
+When we are writing for our readers, we need to be familiar with their level of domain knowledge so we don’t frustrate or alienate them. For example, if you track error codes for issues on your site, send them to _your developers_, but never present them to a user.
 
 <figure id="figure-2016-03-04-03">
 
@@ -183,11 +184,11 @@ Similarly, we should avoid legalese and write in plain language. Medium has done
 
 ### **When Requesting Feedback, Make It Clear that the User Needs to Respond**
 
-In perhaps the most common form example, consider the label "First Name". It’s not terribly conversational and doesn’t beg for a response. Labels like "What is your first name?" make it clear the user should respond. 
+In perhaps the most common form example, consider the label "First Name". It’s not terribly conversational and doesn’t beg for a response. Labels like "What is your first name?" make it clear the user should respond.
 
 ```html
 <label for="first_name">What’s your first name?</label>
-<input name="first_name" id="first_name">
+<input name="first_name" id="first_name" />
 ```
 
 <figure id="figure-2016-03-04-05">
@@ -202,12 +203,10 @@ Similarly, when there’s an error, notify them of the error and, if possible, g
 
 ```html
 <label for="first_name">What’s your first name?</label>
-<input name="first_name" id="first_name"
-       aria-describedby="first_name-error"
-       >
+<input name="first_name" id="first_name" aria-describedby="first_name-error" />
 <em id="first_name-error">
-  Without your first name, I won’t know how to address you.
-  Could you please provide it?
+  Without your first name, I won’t know how to address you. Could you please
+  provide it?
 </em>
 ```
 
@@ -219,12 +218,12 @@ Similarly, when there’s an error, notify them of the error and, if possible, g
 </audio>
 </figure>
 
-### **When Asking a User to Choose, Clearly Present the Options** 
+### **When Asking a User to Choose, Clearly Present the Options**
 
 This comes into play often when dealing with forms. Ensuring radio and checkbox controls are properly associated with their labels is critical.
 
 ```html
-<input type="radio" name="agree" id="agree_yes" value="yes">
+<input type="radio" name="agree" id="agree_yes" value="yes" />
 <label for="agree_yes">Yes</label>
 ```
 
@@ -232,12 +231,14 @@ You can also use the `fieldset` and `legend` elements to group the related contr
 
 ```html
 <fieldset>
-  <legend tabindex="0">Do you agree to the terms of service for this site?</legend>
-  
-  <input type="radio" name="agree" id="agree_yes" value="yes">
+  <legend tabindex="0">
+    Do you agree to the terms of service for this site?
+  </legend>
+
+  <input type="radio" name="agree" id="agree_yes" value="yes" />
   <label for="agree_yes">Yes</label>
-  
-  <input type="radio" name="agree" id="agree_no" value="no">
+
+  <input type="radio" name="agree" id="agree_no" value="no" />
   <label for="agree_no">No</label>
 </fieldset>
 ```
@@ -256,8 +257,14 @@ We should strive for the same sort of clarity when presenting navigation options
 <nav id="nav" tabindex="0" aria-labelledby="nav-title">
   <h1 id="nav-title" class="hidden">Here’s what you can find on this site:</h1>
   <ul>
-    <li><a href="/about/"><b class="hidden">A Bit </b>About<b class="hidden"> Me</b></a></li>
-    <li><a href="/notebook/"><b class="hidden">Entries in My </b>Notebook</a></li>
+    <li>
+      <a href="/about/"
+        ><b class="hidden">A Bit </b>About<b class="hidden"> Me</b></a
+      >
+    </li>
+    <li>
+      <a href="/notebook/"><b class="hidden">Entries in My </b>Notebook</a>
+    </li>
     …
   </ul>
 </nav>
@@ -295,7 +302,7 @@ Here in the UK, the Government Digital Service has made great strides overhaulin
 
 The original paper form asked for the address like this
 
->  The claimant seeks an order that the defendant(s) give possession of:<br> (If the premises of which you seek possession are part of a building identify the part eg. Flat 3, Rooms 6 and 7)
+> The claimant seeks an order that the defendant(s) give possession of:<br> (If the premises of which you seek possession are part of a building identify the part eg. Flat 3, Rooms 6 and 7)
 
 Before requesting the type of property concerned
 
@@ -372,7 +379,7 @@ Both Microsoft and Amazon have given us the tools to voice-enable our websites b
 Microsoft has taken a slightly different approach. Using a relatively simple XML format, they have enabled us to teach Cortana new commands that tie directly into our website.
 
 ```html
-<meta name="msapplication-cortanavcd" content="http://myapp.io/vcd.xml">
+<meta name="msapplication-cortanavcd" content="http://myapp.io/vcd.xml" />
 ```
 
 All we need to do is include a `meta` tag pointing to an XML file that details the commands (and variations) and, when a user installs the site as a hosted app, Cortana picks up the new commands automatically. Those commands, when issued, can open a specific page or even kick off JavaScript methods in the target page.
@@ -385,7 +392,7 @@ All we need to do is include a `meta` tag pointing to an XML file that details t
     <Example>Group Post add note</Example>
     <Command Name="addNote">
       <Example>add a note {message} using group post</Example>
-      <ListenFor RequireAppName="BeforeOrAfterPhrase">[please] 
+      <ListenFor RequireAppName="BeforeOrAfterPhrase">[please]
         add a note [that] {noteSubject}</ListenFor>
       <Feedback>adding {noteSubject} to Group Post</Feedback>
       <Navigate Target="/addNote.htm"/>

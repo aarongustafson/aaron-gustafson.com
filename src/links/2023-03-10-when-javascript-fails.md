@@ -15,7 +15,7 @@ I also love how succinctly he nails this section:
 > So, if progressive enhancement is no more expensive to create, future-proof, provides us with technical credit, and ensures that our users always receive the best possible experience under any conditions, why has it fallen by the wayside?
 >
 > Because before, when you clicked on a link, the browser would go white for a moment.
-> 
+>
 > JavaScript frameworks broke the browser to avoid that momentary loss of control. They then had to recreate everything that the browser had provided for free: routing, history, the back button, accessibility features, the ability for search engines to read the page, et cetera iterum ad infinitum. Coming up with solutions to these problems has been the fixation of the JavaScript community for years now, and we do have serviceable solutions for all of these — but all together, they create the incredibly complex ecosystem of modern-day JavaScript that so many JavaScript developers bemoan and lament.
 >
 > All to avoid having a browser refresh for a moment.

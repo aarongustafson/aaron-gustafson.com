@@ -4,128 +4,125 @@
 		Anchorable
 \*------------------------------------*/
 
-@use 'sass:math';
+@use "sass:math";
 
 @keyframes fade-out {
-  0% {
-      opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 
 .anchorable {
-  font-family: $font-stack-body;
-  position: relative;
-  
-  &__icon {
-    vertical-align: top;
-    
-    display: inline-block;
-    @include rem( padding, math.div( $default-spacing, 2 ) );
-    @include rem( width, 15 );
-    @include rem( height, 15 );
+	font-family: $font-stack-body;
+	position: relative;
 
-    @supports (margin-block: 1em) {
-      @include unset( width height );
-      @include rem( inline-size, 15 );
-      @include rem( block-size, 15 );
-    }
-    
-    path {
-      fill: $color-background;
-      transition: fill .5s;
-    }
-  }
-  
-  &__anchor__text {
-    @extend %hidden;
-    left: 0;
-    bottom: 0;
+	&__icon {
+		vertical-align: top;
 
-    @supports (margin-block: 1em) {
-      @include unset( left bottom );
-      @include rem( inline-start, 0 );
-      @include rem( inset-block-end, 0 );
-    }
-  }
-  
-  &__anchor {
-      background: $color-white;
-      
-      text-decoration: none;
-      @include rem( line-height, 15 );
+		display: inline-block;
+		@include rem(padding, math.div($default-spacing, 2));
+		@include rem(width, 15);
+		@include rem(height, 15);
 
-      border: 0;
-      display: inline-block;
-      margin: 0;
-      padding: 0;
-      
-      // hide on small screens (will still be accessible though)
-      position: absolute;
-      left: -999em;
+		@supports (margin-block: 1em) {
+			@include unset(width height);
+			@include rem(inline-size, 15);
+			@include rem(block-size, 15);
+		}
 
-      @supports (margin-block: 1em) {
-        left: unset;
-        inset-inline-start: -999em;
-      }
-      
-      &:hover path,
-      &:focus path {
-        fill: $color-black;
-        transition: fill .5s;
-      }
-      
-  }
-  
-  &:hover path,
-  &:focus path {
-      fill: $color-black;
-      transition: fill .5s;
-  }
-  
-  &__alert {
-    font-weight: normal;
-    color: $color-grey;
-    @include rem( font-size, $font-size-tiny );
-    @include rem( line-height, 15 );
-    
-    display: block;
-    margin: 0;
-    
-    &--fading {
-        animation: 2.2s linear 0s 1 fade-out;
-    }
-  }
+		path {
+			fill: $color-background;
+			transition: fill 0.5s;
+		}
+	}
+
+	&__anchor__text {
+		@extend %hidden;
+		left: 0;
+		bottom: 0;
+
+		@supports (margin-block: 1em) {
+			@include unset(left bottom);
+			@include rem(inline-start, 0);
+			@include rem(inset-block-end, 0);
+		}
+	}
+
+	&__anchor {
+		background: $color-white;
+
+		text-decoration: none;
+		@include rem(line-height, 15);
+
+		border: 0;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+
+		// hide on small screens (will still be accessible though)
+		position: absolute;
+		left: -999em;
+
+		@supports (margin-block: 1em) {
+			left: unset;
+			inset-inline-start: -999em;
+		}
+
+		&:hover path,
+		&:focus path {
+			fill: $color-black;
+			transition: fill 0.5s;
+		}
+	}
+
+	&:hover path,
+	&:focus path {
+		fill: $color-black;
+		transition: fill 0.5s;
+	}
+
+	&__alert {
+		font-weight: normal;
+		color: $color-grey;
+		@include rem(font-size, $font-size-tiny);
+		@include rem(line-height, 15);
+
+		display: block;
+		margin: 0;
+
+		&--fading {
+			animation: 2.2s linear 0s 1 fade-out;
+		}
+	}
 }
 
-@supports (background-image:linear-gradient(black,white)) {
-  
-  .anchorable__anchor:link,
-  .anchorable__anchor:visited,
-  .anchorable__anchor:hover,
-  .anchorable__anchor:focus,
-  html.wf-active .anchorable__anchor:link,
-  html.wf-active .anchorable__anchor:visited,
-  html.wf-active .anchorable__anchor:hover,
-  html.wf-active .anchorable__anchor:focus {
-    background: $color-background;
-  }
-
+@supports (background-image: linear-gradient(black, white)) {
+	.anchorable__anchor:link,
+	.anchorable__anchor:visited,
+	.anchorable__anchor:hover,
+	.anchorable__anchor:focus,
+	html.wf-active .anchorable__anchor:link,
+	html.wf-active .anchorable__anchor:visited,
+	html.wf-active .anchorable__anchor:hover,
+	html.wf-active .anchorable__anchor:focus {
+		background: $color-background;
+	}
 }
 
 @media screen and (min-width: #{$bp-medium-em}) {
 	.anchorable__anchor {
 		top: 0;
 		left: auto;
-		@include rem( margin-left, 5 );
+		@include rem(margin-left, 5);
 
 		@supports (margin-block: 1em) {
-			@include unset( top left margin-left );
+			@include unset(top left margin-left);
 			inset-block-start: 0;
 			inset-inline-start: auto;
-			@include rem( margin-inline-start, 5 );
+			@include rem(margin-inline-start, 5);
 		}
 	}
 }
@@ -135,14 +132,14 @@
 		left: auto;
 		right: 100%;
 		margin-left: 0;
-		@include rem( margin-right, 5 );
+		@include rem(margin-right, 5);
 
 		@supports (margin-block: 1em) {
-			@include unset( left right margin-left margin-right );
+			@include unset(left right margin-left margin-right);
 			inset-inline-start: auto;
 			inset-inline-end: 100%;
 			margin-inline-start: 0;
-			@include rem( margin-inline-end, 5 );
+			@include rem(margin-inline-end, 5);
 		}
 	}
 }

@@ -6,8 +6,8 @@ ref_url: http://psycnet.apa.org/?&fa=main.doiLanding&doi=10.1037/pspi0000008
 in_reply_to: http://psycnet.apa.org/?&fa=main.doiLanding&doi=10.1037/pspi0000008
 ref_source: Journal of Personality and Social Psychology
 via:
- name: Ars Technica
- url: https://arstechnica.com/science/2015/02/the-powerful-cheat-for-themselves-the-powerless-cheat-for-others/
+  name: Ars Technica
+  url: https://arstechnica.com/science/2015/02/the-powerful-cheat-for-themselves-the-powerless-cheat-for-others/
 ---
 
 In this fascinating paper, David Dubois, Derek Rucker, and Adam Galinsky explore the interplay between socioeconomic status and selfishness (or cheating). In the course of their study, they discovered that people at both ends of the spectrum cheat, but for different ends:

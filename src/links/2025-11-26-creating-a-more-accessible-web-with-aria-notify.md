@@ -11,17 +11,14 @@ ref_source: "Microsoft Edge Blog"
 I just saw this very exciting announcement on the Edge Dev Blog:
 
 > ARIA Notify is an ergonomic and predictable way to tell assistive technologies (ATs), such as screen readers, exactly what to announce to users and when.
-> 
+>
 > In its simplest form, developers can call the ariaNotify() method with the text to be announced to the user.
 
 Here’s what it looks like:
 
 ```js
 // Dispatch a normal priority notification
-document.ariaNotify(
-  "Background task completed",
-  { "priority": "normal" }
-);
+document.ariaNotify("Background task completed", { priority: "normal" });
 ```
 
 I’m particularly excited by this because of how much it simplifies the update process for engineers. Previously they needed to manage upates to an `aria-live` DOM node with the appropriate announcement level and hope for the best. This approach was plagued with issues ranging from lag — because, DOM manipulation — to confusion between whether "polite" or "assertive" was the right choice.

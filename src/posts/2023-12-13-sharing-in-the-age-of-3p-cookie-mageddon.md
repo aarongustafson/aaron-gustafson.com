@@ -2,7 +2,15 @@
 title: "Sharing in the Age of 3p Cookie-mageddon"
 date: 2023-12-15 11:28:35 -07:00
 comments: true
-tags: ["HTML", "privacy", "progressive enhancement", "the web", "user experience", "web development"]
+tags:
+  [
+    "HTML",
+    "privacy",
+    "progressive enhancement",
+    "the web",
+    "user experience",
+    "web development",
+  ]
 description: "Over a decade ago, I wrote up detailed instructions on how to enable users to share your content on social media without allowing them to be tracked by every social media site via cookies. In a few short weeks “third party” cookies will get the boot in Chromium-based browsers. If you’re still relying on third party share widgets on your site, now is a good time to replace them. Here’s how…"
 twitter_text: "Are you still relying on third party share widgets? You should really stop that. Here’s how…"
 hero:
@@ -44,9 +52,10 @@ Each service is a little different, but all function similarly. I support the fo
 </tbody>
 </table>
 
-Using this information, I created [a partial template for use on any page in this site](https://github.com/aarongustafson/aaron-gustafson.com/blob/main/src/_includes/partials/post/sharing.html) (though I mainly use it on blog posts right now). Each link includes useful text content (e.g., “Share on ______”) and a local SVG of the service’s icon. Here’s a simplified overview of the markup I use:
+Using this information, I created [a partial template for use on any page in this site](https://github.com/aarongustafson/aaron-gustafson.com/blob/main/src/_includes/partials/post/sharing.njk) (though I mainly use it on blog posts right now). Each link includes useful text content (e.g., “Share on **\_\_**”) and a local SVG of the service’s icon. Here’s a simplified overview of the markup I use:
 
 {% raw %}
+
 ```html
 <ul class="social-links social-links--share">
   <li class="social-links__item">
@@ -57,6 +66,7 @@ Using this information, I created [a partial template for use on any page in thi
   </li>
 </ul>
 ```
+
 {% endraw %}
 
 You can check out the baseline experience on this very page by disabling JavaScript.
@@ -77,34 +87,35 @@ If you test out these links, you’ll notice many of the target forms will pick 
 If you played around with any of the various share forms, you probably noticed that they are, by and large, designed as discrete interactions best-suited to a narrow window (e.g., mobile) or popup. To provide that experience, I’ve long-relied on a little bit of JavaScript to launch them in a new, appropriately-sized window:
 
 ```js
-function popup( e ) {
+function popup(e) {
   var $link = e.target;
-  while ( $link.nodeName.toLowerCase() != "a" ) {
+  while ($link.nodeName.toLowerCase() != "a") {
     $link = $link.parentNode;
   }
   e.preventDefault();
-  var popup = window.open( $link.href, 'share',
-    'height=500,width=600,status=no,toolbar=no,popup'
+  var popup = window.open(
+    $link.href,
+    "share",
+    "height=500,width=600,status=no,toolbar=no,popup",
   );
   try {
     popup.focus();
     e.preventDefault();
-  } catch(e) {}
+  } catch (e) {}
 }
 
-var screen_width = "visualViewport" in window ?
-      window.visualViewport.width : window.innerWidth,
-    $links = document.querySelectorAll(
-      '.social-links--share a'
-    ),
-    count = $links.length;
+var screen_width =
+    "visualViewport" in window
+      ? window.visualViewport.width
+      : window.innerWidth,
+  $links = document.querySelectorAll(".social-links--share a"),
+  count = $links.length;
 
-if ( screen_width > 600 ) {
-  while ( count-- ) {
-    $links[count].addEventListener('click', popup, false);
-    $links[count].querySelector(
-      '.social-link__text'
-    ).innerHTML += " (in a popup)";
+if (screen_width > 600) {
+  while (count--) {
+    $links[count].addEventListener("click", popup, false);
+    $links[count].querySelector(".social-link__text").innerHTML +=
+      " (in a popup)";
   }
 }
 ```
@@ -128,7 +139,7 @@ Sharing a URL and text is [really well supported](https://developer.mozilla.org/
 [^3]: Like many modern APIs, it also requires a secure connection (HTTPS).
 
 ```js
-if ( "share" in navigator ) {
+if ("share" in navigator) {
   // all good!
 }
 ```
@@ -136,19 +147,18 @@ if ( "share" in navigator ) {
 For my particular implementation, I’ve decided to swap out the individual links for a single button that, when clicked, will proffer the page’s details over to the OS’s share widget. Here’s the code I use to do that:
 
 ```js
-var $links = document.querySelector('.social-links--share'),
-    $parent = $links.parentNode,
-    $button = document.createElement('button'),
-    title = document.querySelector('h1.p-name,title').innerText,
-    $description = document.querySelector(
-      'meta[name="og:description"],meta[name="description"]'
-    ),
-    text = $description ? $description.getAttribute('content')
-                        : '',
-    url = window.location.href;
+var $links = document.querySelector(".social-links--share"),
+  $parent = $links.parentNode,
+  $button = document.createElement("button"),
+  title = document.querySelector("h1.p-name,title").innerText,
+  $description = document.querySelector(
+    'meta[name="og:description"],meta[name="description"]',
+  ),
+  text = $description ? $description.getAttribute("content") : "",
+  url = window.location.href;
 
-$button.innerHTML = 'Share <svg>…</svg>';
-$button.addEventListener('click', function(e){
+$button.innerHTML = "Share <svg>…</svg>";
+$button.addEventListener("click", function (e) {
   navigator.share({ title, text, url });
 });
 
@@ -158,13 +168,13 @@ $links.remove();
 
 The first block sets up my variables:
 
-* <var>$links</var> - A reference to the list (`ul`) of sharing links;
-* <var>$parent</var> - the parent container of that list;
-* <var>$button</var> - the button I’m going to swap in for the links;
-* <var>title</var> - The page title (either from the page’s `h1` or `title` element);
-* <var>$description</var> - A reference to a `meta` description element;
-* <var>text</var> - The text content of that description, if one is found; and
-* <var>url</var> - The URL to be shared.
+- <var>$links</var> - A reference to the list (`ul`) of sharing links;
+- <var>$parent</var> - the parent container of that list;
+- <var>$button</var> - the button I’m going to swap in for the links;
+- <var>title</var> - The page title (either from the page’s `h1` or `title` element);
+- <var>$description</var> - A reference to a `meta` description element;
+- <var>text</var> - The text content of that description, if one is found; and
+- <var>url</var> - The URL to be shared.
 
 The second block sets up the button by inserting the text "Share" and an SVG share icon and setting an event listener on it that will pass the collected info to `navigator.share()`.
 
@@ -175,8 +185,7 @@ The third and final block swaps out the link list for the button.
 The final step to putting this all together involves setting up the conditional that determines which enhancement is offered. To keep everything a bit cleaner, I’m also moving each of the enhancements into its own function:
 
 ```js
-!(function(window, document, navigator){
-
+!(function (window, document, navigator) {
   function prepForPopup() {
     // popup code
   }
@@ -186,13 +195,12 @@ The final step to putting this all together involves setting up the conditional 
   function swapForShareAPI() {
     // share button code
   }
-  
-  if ("share" in navigator ) {
+
+  if ("share" in navigator) {
     swapForShareAPI();
   } else {
-    prepForPopup();  
+    prepForPopup();
   }
-
 })(this, this.document, this.navigator);
 ```
 

@@ -7,8 +7,8 @@ ref_url: https://teleread.org/2016/11/16/barnes-noble-50-nook-tablet-7-will-ship
 in_reply_to: https://teleread.org/2016/11/16/barnes-noble-50-nook-tablet-7-will-ship-on-black-friday/
 ref_source: TeleRead
 via:
- name: Slashdot
- url: https://hardware.slashdot.org/story/16/11/19/0619249/barnes-noble-announces-a-new-50-android-tablet
+  name: Slashdot
+  url: https://hardware.slashdot.org/story/16/11/19/0619249/barnes-noble-announces-a-new-50-android-tablet
 tags: [Android]
 ---
 

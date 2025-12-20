@@ -6,8 +6,15 @@ with:
     url: https://bradfrost.com/
     event: 77
 category: workshop
-tags: [ "progressive enhancement", "responsive web design", "user experience", "web design", "web development" ]
-events: [ 77 ]
+tags:
+  [
+    "progressive enhancement",
+    "responsive web design",
+    "user experience",
+    "web design",
+    "web development",
+  ]
+events: [77]
 date: 2014-05-02T09:00:00-0400
 hero: "responsive-design-and-beyond.png"
 slides:
@@ -24,10 +31,10 @@ As a fitting way to kick off our new workshop series, Code & Creativity asked tw
 
 For the first part of the day, Brad and I surveyed the landscape of responsive design, covering:
 
-* broad concepts,
-* strategies,
-* the design process & deliverables,
-* emerging design patterns and principles, and
-* development best practices and considerations.
+- broad concepts,
+- strategies,
+- the design process & deliverables,
+- emerging design patterns and principles, and
+- development best practices and considerations.
 
 Then, we broke into small groups to tackle some thorny responsive challenges through discussions, sketching, and even a little coding, while Brad & I provided real-time feedback and pushed attendees to go further. At the end, everyone shared their findings with the class and got additional feedback from the experts.

@@ -15,7 +15,7 @@ I picked up a copy of [Baratunde Thurston](https://twitter.com/baratunde)’s <c
 
 <!-- more -->
 
-As you'd expect, <cite>How to Be Black</cite> is incredibly funny. Like *tears-running-down-my-face-can’t-stop-myself-from-laughing-or-even-breathe* funny. But beneath the humor he tackles a ridiculous number of topics that affect the Black community and America as a whole in a way that is completely serious and deep. Topics like the natural segregation that often occurs in majority-white schools,  how ridiculous it is that Black people are so often expected to speak for the entirety of Black humankind, and questioning one’s own Black identity.
+As you'd expect, <cite>How to Be Black</cite> is incredibly funny. Like _tears-running-down-my-face-can’t-stop-myself-from-laughing-or-even-breathe_ funny. But beneath the humor he tackles a ridiculous number of topics that affect the Black community and America as a whole in a way that is completely serious and deep. Topics like the natural segregation that often occurs in majority-white schools, how ridiculous it is that Black people are so often expected to speak for the entirety of Black humankind, and questioning one’s own Black identity.
 
 I’ve seen Thurston use this "deep humor" approach to great effect over the years and I was fortunate enough to get to see him speak at a Microsoft event (earlier today, in fact). His talk combined personal stories and humor with an underlying theme of modern day oppression. I was riveted during the talk and didn’t snap any photos of the presentation, but it was recorded—for internal folks only, sorry—so I was able to retrieve perhaps the most compelling part of his talk, which I’ll share with you now.
 
@@ -50,8 +50,8 @@ It might be refreshing, but it’s not really progress. Plus, as with the origin
 
 Thurston goes on to dig a little deeper and reveal the common thread throughout all of these headlines: Black people existing and some presumed criminality to that existence. From here, Thurston discussed policing, over-policing, and self-policing, wherein the Black community—out of an interest in their own safety—has in many ways enslaved themselves in order to put white people’s comfort above their own.
 
-> One of the greatest threats in this country is the prioritization of  white people's comfort, and the power to call on potentially deadly force to ensure it. This action, "calls police," is the thing that needs to change in this story. Because these white people are using police to enforce, to clean up, their environment. [California Safeway didn't just call the cops on the Black woman donating to the homeless](https://www.foxnews.com/food-drink/california-safeway-calls-cops-on-woman-donating-food-to-homeless-man), they ordered armed, unaccountable men on her. They basically called in a drone strike on a fellow human being doing charitable works. It's weaponized discomfort.
- 
+> One of the greatest threats in this country is the prioritization of white people's comfort, and the power to call on potentially deadly force to ensure it. This action, "calls police," is the thing that needs to change in this story. Because these white people are using police to enforce, to clean up, their environment. [California Safeway didn't just call the cops on the Black woman donating to the homeless](https://www.foxnews.com/food-drink/california-safeway-calls-cops-on-woman-donating-food-to-homeless-man), they ordered armed, unaccountable men on her. They basically called in a drone strike on a fellow human being doing charitable works. It's weaponized discomfort.
+
 Thurston then related this all back to the history of lynchings in this country, all of which had similar headlines:
 
 > Reverend T. A. Allen was lynched in Hernando, Mississippi,in 1935 for organizing local sharecroppers
@@ -66,6 +66,6 @@ He continued:
 
 He closed out the talk beautifully by imploring us to make better choices.
 
-> White supremacy has a pattern and a grammar. So does misogyny. So do all systemic forms of power abuse. So what do we do about it? Let's ask ourselves: *Where do I sit in that structure? How can I use my position within that grammar to write a different reality?* We can change our story. We have that choice. When we change the story, we change the system. We can choose. We can choose something different.
+> White supremacy has a pattern and a grammar. So does misogyny. So do all systemic forms of power abuse. So what do we do about it? Let's ask ourselves: _Where do I sit in that structure? How can I use my position within that grammar to write a different reality?_ We can change our story. We have that choice. When we change the story, we change the system. We can choose. We can choose something different.
 
 I truly appreciate how Baratunde Thurston so deftly weaves important lessons and difficult conversations with humor. It’s an incredibly difficult thing to do well as you often run the risk of being too superficial in your critique or of your humor directly undermining the actual point of the conversation in the first place. But he does it brilliantly.

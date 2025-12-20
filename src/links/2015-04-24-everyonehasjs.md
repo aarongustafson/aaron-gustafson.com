@@ -6,8 +6,8 @@ ref_url: https://kryogenix.org/code/browser/everyonehasjs.html
 in_reply_to: https://kryogenix.org/code/browser/everyonehasjs.html
 ref_source: Kryogenix
 via:
- name: Jeremy Keith
- url: https://adactio.com/links/8794
+  name: Jeremy Keith
+  url: https://adactio.com/links/8794
 ---
 
 [Stuart Langridge](https://www.kryogenix.org/) beautifully illustrates all of the possible scenarios within which JavaScript availability is not guaranteed. Plan accordingly.

@@ -4,192 +4,198 @@
 		Webmentions
 \*------------------------------------*/
 
-@use 'sass:math';
+@use "sass:math";
 
 $avatar-width: 48;
 
 .webmentions {
-  @include rem( font-size, $font-size-default );
-  @include rem( margin-top, math.div( $default-spacing, 2 ) );
+	@include rem(font-size, $font-size-default);
+	@include rem(margin-top, math.div($default-spacing, 2));
 
-  @supports (margin-block: 1em) {
-    margin-top: unset;
-    @include rem( margin-block-start, math.div( $default-spacing, 2 ), false );
-  }
+	@supports (margin-block: 1em) {
+		margin-top: unset;
+		@include rem(margin-block-start, math.div($default-spacing, 2), false);
+	}
 
-  h2 {
-    @include rem( margin-top, $default-spacing );
-    @include rem( margin-bottom, math.div( $default-spacing, 2 ) );
+	h2 {
+		@include rem(margin-top, $default-spacing);
+		@include rem(margin-bottom, math.div($default-spacing, 2));
 
-    @supports (margin-block: 1em) {
-      @include unset( margin-top margin-bottom );
-      @include rem( margin-block, $default-spacing math.div( $default-spacing, 2 ), false );
-    }
-  }
+		@supports (margin-block: 1em) {
+			@include unset(margin-top margin-bottom);
+			@include rem(
+				margin-block,
+				$default-spacing math.div($default-spacing, 2),
+				false
+			);
+		}
+	}
 
-  &__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  &__item {
-    clear: both;
+	&__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
 
-    border-top: 1px solid $color-border;
-    margin: 0;
-    @include rem( padding, $default-spacing 0 $default-spacing ( $avatar-width + $default-spacing ) );
-    @include rem( min-height, $avatar-width );
+	&__item {
+		clear: both;
 
-    position: relative;
+		border-top: 1px solid $color-border;
+		margin: 0;
+		@include rem(
+			padding,
+			$default-spacing 0 $default-spacing ($avatar-width + $default-spacing)
+		);
+		@include rem(min-height, $avatar-width);
 
-    @supports (margin-block: 1em) {
-      @include unset( border-top padding min-height );
-      border-block-start: 1px solid $color-border;
-      @include rem( padding-block, $default-spacing, false );
-      padding-inline: 0;
-      @include rem( padding-inline, ( $avatar-width + $default-spacing ) 0, false );
-      min-block-size: $avatar-width;
-    }
+		position: relative;
 
-    &:first-child {
-      border-top: 0;
+		@supports (margin-block: 1em) {
+			@include unset(border-top padding min-height);
+			border-block-start: 1px solid $color-border;
+			@include rem(padding-block, $default-spacing, false);
+			padding-inline: 0;
+			@include rem(padding-inline, ($avatar-width + $default-spacing) 0, false);
+			min-block-size: $avatar-width;
+		}
 
-      @supports (margin-block: 1em) {
-        border-top: unset;
-        border-block-start: 0;
-      }
-    }
-  }
+		&:first-child {
+			border-top: 0;
+
+			@supports (margin-block: 1em) {
+				border-top: unset;
+				border-block-start: 0;
+			}
+		}
+	}
 }
 
 .webmention {
+	&__author {
+		@include rem(font-size, $font-size-small);
+		font-weight: $font-weight-sansserif-bold;
+	}
 
-  &__author {
-    @include rem( font-size, $font-size-small );
-    font-weight: $font-weight-sansserif-bold;
-  }
-  
-  &--author-starts .h-card .p-name {
-    @extend %hidden;
-  }
-  
-  &__author__photo {
-    background-color: $color-grey-light;
-    border-radius: 3px;
+	&--author-starts .h-card .p-name {
+		@extend %hidden;
+	}
 
-    display: block;
-    @include rem( width, $avatar-width );
-    @include rem( height, $avatar-width );
+	&__author__photo {
+		background-color: $color-grey-light;
+		border-radius: 3px;
 
-    position: absolute;
-    @include rem( top, $default-spacing );
-    left: 0;
+		display: block;
+		@include rem(width, $avatar-width);
+		@include rem(height, $avatar-width);
 
-    @supports (margin-block: 1em) {
-      @include unset( width height top left );
-      @include rem( inline-size, $avatar-width );
-      @include rem( block-size, $avatar-width );
-      inset-block-start: $default-spacing;
-      inset-inline-start: 0;
-    }
-  }
-  
-  &__title,
-  &__content,
-  &__meta {
-    margin: 0;
-  }
-  
-  &__meta {
-    color: $color-grey;
-    @include rem( font-size, $font-size-small );
-    text-align: right;
-    text-align: end;
+		position: absolute;
+		@include rem(top, $default-spacing);
+		left: 0;
 
-    html.dark-mode & {
-      color: $color-grey-light;
-    }
-  }
+		@supports (margin-block: 1em) {
+			@include unset(width height top left);
+			@include rem(inline-size, $avatar-width);
+			@include rem(block-size, $avatar-width);
+			inset-block-start: $default-spacing;
+			inset-inline-start: 0;
+		}
+	}
 
-  &--activity &__author,
-  &--activity &__title {
-    display: inline;
-  }
+	&__title,
+	&__content,
+	&__meta {
+		margin: 0;
+	}
 
-  &--like,
-  &--repost {
+	&__meta {
+		color: $color-grey;
+		@include rem(font-size, $font-size-small);
+		text-align: right;
+		text-align: end;
 
-    border: 0;
-    display: inline;
-    margin: 0 5px 0 0;
-    padding: 0;
+		html.dark-mode & {
+			color: $color-grey-light;
+		}
+	}
 
-    @supports (margin-block: 1em) {
-      margin: 0;
-      margin-inline-end: 5px;
-    }
+	&--activity &__author,
+	&--activity &__title {
+		display: inline;
+	}
 
-    .webmention__author {
-      display: inline;
+	&--like,
+	&--repost {
+		border: 0;
+		display: inline;
+		margin: 0 5px 0 0;
+		padding: 0;
 
-      &__photo {
-        border: 1px solid;
-        border-radius: 50%;
-        
-        display: inline;
-        max-width: 48px;
-        margin: 0;
-        
-        position: static;
+		@supports (margin-block: 1em) {
+			margin: 0;
+			margin-inline-end: 5px;
+		}
 
-        @supports (margin-block: 1em) {
-          max-width: unset;
-          max-inline-size: 48px;
-        }
-      }
-      
-      .u-url {
-        background-image: none !important;
-        display: inline-block;
-        width: 48px;
-        height: 48px;
-      }
-    }
-  }
+		.webmention__author {
+			display: inline;
+
+			&__photo {
+				border: 1px solid;
+				border-radius: 50%;
+
+				display: inline;
+				max-width: 48px;
+				margin: 0;
+
+				position: static;
+
+				@supports (margin-block: 1em) {
+					max-width: unset;
+					max-inline-size: 48px;
+				}
+			}
+
+			.u-url {
+				background-image: none !important;
+				display: inline-block;
+				width: 48px;
+				height: 48px;
+			}
+		}
+	}
 }
 
 .webmentions__list {
+	&[data-webmention-collection="likes"],
+	&[data-webmention-collection="reposts"] {
+		text-align: center;
+	}
 
-  &[data-webmention-collection="likes"],
-  &[data-webmention-collection="reposts"] {
-    text-align: center;
-  }
+	.webmention--like,
+	.webmention--repost {
+		margin-left: -0.5em;
+		margin-right: -0.5em;
 
-  .webmention--like,
-  .webmention--repost {
-    margin-left: -.5em;
-    margin-right: -.5em;
+		@supports (margin-block: 1em) {
+			@include unset(margin-right margin-left);
+			margin-inline: -0.25em;
+		}
 
-    @supports (margin-block: 1em) {
-      @include unset( margin-right margin-left );
-      margin-inline: -.25em;
-    }
+		a.u-url img {
+			transition:
+				transform 0.2s ease-in-out,
+				border-width 0.2s ease-in-out;
+			position: absolute;
+		}
+		a.u-url:hover,
+		a.u-url:focus {
+			outline: none;
+			position: relative;
 
-    a.u-url img {
-      transition: transform 0.2s ease-in-out, border-width 0.2s ease-in-out;
-      position: absolute;
-    }
-    a.u-url:hover,
-    a.u-url:focus {
-      outline: none;
-      position: relative;
-
-      img {
-        transform: scale(1.25);
-        border-width: 3px;
-        z-index: 1;
-      }
-    }
-  }
+			img {
+				transform: scale(1.25);
+				border-width: 3px;
+				z-index: 1;
+			}
+		}
+	}
 }

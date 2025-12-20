@@ -11,7 +11,7 @@ translations:
   pa: https://www.bydiscountcodes.co.uk/translations/responsive-typography/
 ---
 
-I’m incredibly excited to see that [Jason Pamental](https://twitter.com/jpamental)’s fantastic [<cite>Responsive Typography</cite>](https://www.amazon.com/gp/product/1491907096/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1491907096&amp;linkCode=as2&amp;tag=easydesign-20&amp;linkId=JC6INFXF3DHODKEM) is finally available. I had the great pleasure of reviewing an early galley and I can honestly say that it’s a book well worth reading. Jason’s natural and friendly style makes for an easy read and it’s chock-full of actionable recommendations and tips you’ll want to start using right away.
+I’m incredibly excited to see that [Jason Pamental](https://twitter.com/jpamental)’s fantastic [<cite>Responsive Typography</cite>](https://www.amazon.com/gp/product/1491907096/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1491907096&linkCode=as2&tag=easydesign-20&linkId=JC6INFXF3DHODKEM) is finally available. I had the great pleasure of reviewing an early galley and I can honestly say that it’s a book well worth reading. Jason’s natural and friendly style makes for an easy read and it’s chock-full of actionable recommendations and tips you’ll want to start using right away.
 
 <!-- more -->
 
@@ -27,7 +27,7 @@ In fact, I think <cite>Responsive Typography</cite> is such an invaluable book, 
 >
 > And while we were busy tinkering with sIFR and Cufón, eagerly awaiting the day we could abandon those hacks and have real browser support for actual font formats, an army of little black rectangles had caught a whiff of the awesome content we were serving up to desktop browsers.
 >
-> Like ants at a Sunday picnic, these little black rectangles initially appeared one or two at a time. They were easily ignored, a nuisance. Nothing to take too seriously. But before we knew what was happening, that trickle turned into a flood and those little rectangles  were hungry. Instead of taking a crumb here and there—which we tossed to them with a great sense of self-satisfaction—these ambitious ants were carrying off whole deli trays and the friggin’ <cite>New York Times</cite>.
+> Like ants at a Sunday picnic, these little black rectangles initially appeared one or two at a time. They were easily ignored, a nuisance. Nothing to take too seriously. But before we knew what was happening, that trickle turned into a flood and those little rectangles were hungry. Instead of taking a crumb here and there—which we tossed to them with a great sense of self-satisfaction—these ambitious ants were carrying off whole deli trays and the friggin’ <cite>New York Times</cite>.
 >
 > These little black rectangles are, of course, the surge of handheld (or at least hand-holdable) devices that have been redefining our concept of “the Web” almost daily. They exhibit widely variable screen sizes: from about the size of a matchbook, to ones that are bigger than an extra large pizza. They sport a plethora of pixel densities, new interaction methods, unpredictable network connection speeds, and low-powered processors that can’t possibly compete with traditional laptop and desktop CPUs (not to mention a handful of different operating systems and browsers). All of these factors affect how—and even whether—your typographic choices will make it to your customers, and it’s a lot to take in.
 >
@@ -36,6 +36,6 @@ In fact, I think <cite>Responsive Typography</cite> is such an invaluable book, 
 > By the time you finish this brief book, you’ll be ready to handle pretty much any device someone may throw at you. But hopefully they won’t. Devices are hard. And expensive.
 >
 > — Aaron Gustafson<br/>
-&nbsp;&nbsp;&nbsp;Author, <cite>Adaptive Web Design</cite>
+> &nbsp;&nbsp;&nbsp;Author, <cite>Adaptive Web Design</cite>
 
 By the way, if you’re on a typography kick I’ll also recommend an second new book by another Jason I respect greatly: [Jason Santa Maria](https://jasonsantamaria.com)’s [<cite>On Web Typography</cite>](https://www.abookapart.com/products/on-web-typography). The two books books compliment each other perfectly, with very little overlap. They’d make an awesome bundle.

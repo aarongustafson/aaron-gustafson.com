@@ -3,23 +3,24 @@
 // https://raw.githubusercontent.com/GoogleChrome/dialog-polyfill/master/dist/dialog-polyfill.css
 
 dialog {
-  position: absolute;
-  left: 0; right: 0;
-  width: -moz-fit-content;
-  width: -webkit-fit-content;
-  width: fit-content;
-  height: -moz-fit-content;
-  height: -webkit-fit-content;
-  height: fit-content;
-  margin: auto;
-  border: 1px solid $color-background;
-  padding: 1em;
-  background: $color-background;
-  color: $color-text;
-  display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: -moz-fit-content;
+	width: -webkit-fit-content;
+	width: fit-content;
+	height: -moz-fit-content;
+	height: -webkit-fit-content;
+	height: fit-content;
+	margin: auto;
+	border: 1px solid $color-background;
+	padding: 1em;
+	background: $color-background;
+	color: $color-text;
+	display: block;
 
 	&::backdrop {
-		background: rgba(0,0,0,0.6);
+		background: rgba(0, 0, 0, 0.6);
 	}
 
 	html.dark-mode & {
@@ -28,7 +29,7 @@ dialog {
 	}
 
 	@supports (margin-block: 1em) {
-		@include unset( left right width height margin );
+		@include unset(left right width height margin);
 		block-size: fit-content;
 		inline-size: fit-content;
 		inset-inline: 0;
@@ -40,34 +41,40 @@ dialog {
 }
 
 dialog:not([open]) {
-  display: none;
+	display: none;
 }
 
 dialog + .backdrop {
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
-  background: rgba(0,0,0,0.1);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.1);
 
 	@supports (margin-block: 1em) {
-		@include unset( top right bottom left );
+		@include unset(top right bottom left);
 		inset: 0;
 	}
 }
 
 ._dialog_overlay {
-  position: fixed;
-  top: 0; right: 0; bottom: 0; left: 0;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 
 	@supports (margin-block: 1em) {
-		@include unset( top right bottom left );
+		@include unset(top right bottom left);
 		inset: 0;
 	}
 }
 
 dialog.fixed {
-  position: fixed;
-  top: 50%;
-  transform: translate(0, -50%);
+	position: fixed;
+	top: 50%;
+	transform: translate(0, -50%);
 
 	@supports (margin-block: 1em) {
 		top: unset;

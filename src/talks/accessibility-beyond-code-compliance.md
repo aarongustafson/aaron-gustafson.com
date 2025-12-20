@@ -3,8 +3,8 @@ title: "Accessibility Beyond Code Compliance"
 description: "In this keynote, I discuss the future of accessibility and your place in it. I also share a number of ways accessibility devs and related practitioners are putting their skills to work, beyond code compliance."
 category: keynote
 date: 2023-03-15T00:09:00-0800
-tags: [ "accessibility", "AI/ML" ]
-events: [ 149 ]
+tags: ["accessibility", "AI/ML"]
+events: [149]
 hero: "accessibility-beyond-code-compliance.png"
 text: /notebook/accessibility-beyond-code-compliance/
 slides:

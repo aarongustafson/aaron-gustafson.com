@@ -5,9 +5,9 @@ description: "My official bio for conferences and the like."
 show_title: false
 show_footer: false
 sharing: false
-sidebars: 
-  - "partials/asides/networks.html"
-  - "partials/asides/events.html"
+sidebars:
+  - "partials/asides/networks.njk"
+  - "partials/asides/events.njk"
 ---
 
 {% set oneliner %}
@@ -25,7 +25,7 @@ As a web designer, developer, and consultant, Aaron has worked with <a href="htt
 
 In his current role, Aaron continues to drive accessibility innovation at Microsoft. He is deeply involved in projects that use AI to help people with disabilities to empower themselves and is actively working on improving developer tooling around accessibility with the help of AI. Aaron actively works with other organizations to help them improve the quality (and equality) of their AI-connected products and to integrate accessibility into their development processes.
 
-Aaron loves to share his knowledge and insights in written form. His [three-part series on progressive enhancement for *A List Apart*](http://alistapart.com/author/agustafson) is a perennial favorite and his seminal book on the subject, [*Adaptive Web Design*](https://adaptivewebdesign.info/), earned him numerous accolades and honors. When he’s not writing, Aaron is frequently on the road [presenting at conferences and running workshops](https://www.aaron-gustafson.com/speaking-engagements/) across the globe.
+Aaron loves to share his knowledge and insights in written form. His [three-part series on progressive enhancement for _A List Apart_](http://alistapart.com/author/agustafson) is a perennial favorite and his seminal book on the subject, [_Adaptive Web Design_](https://adaptivewebdesign.info/), earned him numerous accolades and honors. When he’s not writing, Aaron is frequently on the road [presenting at conferences and running workshops](https://www.aaron-gustafson.com/speaking-engagements/) across the globe.
 
 You can find out more about Aaron at [aaron-gustafson.com](https://www.aaron-gustafson.com/).
 {% endset %}
@@ -38,11 +38,9 @@ You can find out more about Aaron at [aaron-gustafson.com](https://www.aaron-gus
 
 {{ oneliner | safe }}
 
-
 ## Brief Bio ({{ brief | wordcount }} Words)
 
 {{ brief | safe }}
-
 
 ## Full Bio ({{ full | wordcount }} Words)
 

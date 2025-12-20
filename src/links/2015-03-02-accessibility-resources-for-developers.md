@@ -7,4 +7,4 @@ in_reply_to: https://social.technet.microsoft.com/wiki/contents/articles/28725.a
 ref_source: TechNet Wiki
 ---
 
-This is a treasure trove of software development resources—Web and otherwise—compiled by Jeff Petty. 
+This is a treasure trove of software development resources—Web and otherwise—compiled by Jeff Petty.

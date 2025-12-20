@@ -7,6 +7,6 @@ in_reply_to: https://www.karlgroves.com/2015/11/13/when-the-treatment-is-worse-t
 ref_source: Karl Groves
 ---
 
-Karl nails it (as per usual): 
+Karl nails it (as per usual):
 
 > [A]dd-on accessibility is a sham. … They fail to provide anything beyond a marginal benefit for the end user and are, at best, a band-aid over a gaping wound. … [Companies] would be better off spending their money educating their design and development staff on accessibility than wasting their money on snake oil solutions made by amateurs.

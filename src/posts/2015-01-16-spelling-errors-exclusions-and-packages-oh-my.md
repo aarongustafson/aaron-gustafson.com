@@ -6,7 +6,7 @@ tags: ["web design", "web standards"]
 description: "Here’s a bit of a round-up of some interesting work that came out of the W3C this week."
 ---
 
-This week the W3C published a couple of really cool new Working Drafts I wanted to bring to your attention (just in case you missed them). 
+This week the W3C published a couple of really cool new Working Drafts I wanted to bring to your attention (just in case you missed them).
 
 <!-- more -->
 
@@ -28,7 +28,7 @@ This has been a long time coming. The idea is pretty simple: Within a flow-type 
 
 In this example, child A is set to `wrap-flow: both`, allowing content to flow on both sides of it. Child B is set to `wrap-flow: start` meaning content should only be allowed on the starting side of the element (based on text direction, in this case left to right). Child C is set to `wrap-flow: end` meaning content can only appear after it in terms of text-direction. And child D is set to `wrap-flow: clear` which, as you might expect based on your existing CSS knowledge, ensures no content appears on either side of it.
 
-There is [another, more thorough example in the Working Draft](http://www.w3.org/TR/2015/WD-css3-exclusions-20150115/#wrap-flow-property) (scroll down a little bit), but it uses grid layout as well and is a little more complicated that I want to get into today. 
+There is [another, more thorough example in the Working Draft](http://www.w3.org/TR/2015/WD-css3-exclusions-20150115/#wrap-flow-property) (scroll down a little bit), but it uses grid layout as well and is a little more complicated that I want to get into today.
 
 On the flip side of the equation, there is [the `wrap-through` property](http://www.w3.org/TR/2015/WD-css3-exclusions-20150115/#wrap-through-property) which allows other elements to control whether or not they pay attention to the `wrap-flow` property of another element. A `wrap-through` value of "wrap" adheres to what they are calling the "wrapping context" of the parent element (which basically means it behaves as you’d expect, being a child element). Setting a `wrap-through` value of "none" on the child element, however, would make it ignore the parent element’s wrapping context and allow this child’s content to flow through (hence `wrap-through`) the excluded element.
 
@@ -44,4 +44,4 @@ Still, there’s a lot of potential here and I’m excited to see where it goes.
 
 <hr>
 
-Now the caveat: all of these are Working Drafts, not Technical Recommendations, so *they are not final by any means*. That said, they do point to a pretty interesting not to distant future.
+Now the caveat: all of these are Working Drafts, not Technical Recommendations, so _they are not final by any means_. That said, they do point to a pretty interesting not to distant future.

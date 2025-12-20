@@ -6,8 +6,8 @@ comments: false
 ref_url: https://sunlightfoundation.com/blog/2015/03/24/downgrading-the-district-why-were-lowering-d-c-s-legislative-data-score/
 ref_source: The Sunlight Foundation
 via:
- name: Jason Garber
- url: https://twitter.com/jgarber/status/580406764820152320
+  name: Jason Garber
+  url: https://twitter.com/jgarber/status/580406764820152320
 ---
 
 D.C. gets a downgrade for its myopic, “modern”, JavaScript-only focus:

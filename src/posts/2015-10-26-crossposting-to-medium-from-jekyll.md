@@ -2,7 +2,7 @@
 title: "Crossposting to Medium from Jekyll"
 date: 2015-10-26 15:27:00 -04:00
 comments: true
-tags: [Jekyll,Octopress,blogging,"indie web"]
+tags: [Jekyll, Octopress, blogging, "indie web"]
 description: "Last week, Jeremy Keith posted about syndicating his content to Medium using their new API."
 crossposted:
   Medium: https://medium.com/@AaronGustafson/crossposting-to-medium-from-jekyll-eb52aa3379cb

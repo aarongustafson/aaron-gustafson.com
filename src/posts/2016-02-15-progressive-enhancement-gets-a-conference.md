@@ -2,13 +2,13 @@
 title: "Progressive Enhancement Gets a Conference"
 date: 2016-02-15 10:00:51 -05:00
 comments: true
-tags: ["progressive enhancement",conferences]
+tags: ["progressive enhancement", conferences]
 description: "I interviewed EnhanceConf’s organizer, Simon McMcanus."
 crossposted:
   Medium: https://medium.com/@AaronGustafson/e65398c7b085
 ---
 
-On March 4th, I’ll be in London to give the closing talk at [EnhanceConf](http://enhanceconf.com/), the first conference dedicated progressive enhancement. Over the last few months, I’ve been talking to the conference’s organizer, [Simon McManus](https://twitter.com/simonmcmanus), quite a lot. He’s put a lot of thought into the conference and I thought it might be interesting to  interview him so he could share his motivations and hopes for the event.
+On March 4th, I’ll be in London to give the closing talk at [EnhanceConf](http://enhanceconf.com/), the first conference dedicated progressive enhancement. Over the last few months, I’ve been talking to the conference’s organizer, [Simon McManus](https://twitter.com/simonmcmanus), quite a lot. He’s put a lot of thought into the conference and I thought it might be interesting to interview him so he could share his motivations and hopes for the event.
 
 <!-- more -->
 
@@ -57,10 +57,10 @@ With an open mind I think they should have a really good time, they might hear s
 But yes. I have taken a couple of steps to mitigate an echo chamber:
 
 1. **Duplicate content**
-If you take all the talks about progressive enhancement and put them all on the same day you would end up with a fair amount of similar content. There will be no generic talks about progressive enhancement at EnhanceConf. Each talk will dig into real examples to provide unique tales from the trenches.
+   If you take all the talks about progressive enhancement and put them all on the same day you would end up with a fair amount of similar content. There will be no generic talks about progressive enhancement at EnhanceConf. Each talk will dig into real examples to provide unique tales from the trenches.
 
-2.  **Preaching to the choir**
-I’ve been reaching out to lots of different communities around London to bring as many voices into the discussions as possible. The other day I was at the Meteor London meetup talking about EnhanceConf. Tableflip (the organisers) even bought tickets for their whole company!
+2. **Preaching to the choir**
+   I’ve been reaching out to lots of different communities around London to bring as many voices into the discussions as possible. The other day I was at the Meteor London meetup talking about EnhanceConf. Tableflip (the organisers) even bought tickets for their whole company!
 
 The event is also being recorded so anyone not at the event will be able to watch all the talks and Q&A.
 
@@ -70,7 +70,7 @@ The event is also being recorded so anyone not at the event will be able to watc
 
 <b class="interview__attribution">Me:</b> Can you talk a bit about your speaker selection process?
 
-<b class="interview__attribution">Simon:</b> I had lots of people in mind to talk at EnhanceConf. To ensure we heard a wide range of viewpoints we also opened a call for proposals to which we received some superb submissions. 
+<b class="interview__attribution">Simon:</b> I had lots of people in mind to talk at EnhanceConf. To ensure we heard a wide range of viewpoints we also opened a call for proposals to which we received some superb submissions.
 
 I was fortunate to have some trusted advisors who helped me out throughout the process. I’m really pleased with how the line-up turned out.
 
@@ -78,7 +78,7 @@ I was fortunate to have some trusted advisors who helped me out throughout the p
 
 <b class="interview__attribution">Simon:</b> I’d quite like a holiday! :D
 
-But seriously, I hope we can demonstrate how to maximise the benefits and minimise any costs associated with progressive enhancement.  
+But seriously, I hope we can demonstrate how to maximise the benefits and minimise any costs associated with progressive enhancement.
 
 If at the end of EnhanceConf we had a reasoned and nurturing community able to take discussions forward that would be a fine outcome. :)
 

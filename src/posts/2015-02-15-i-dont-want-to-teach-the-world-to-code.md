@@ -2,7 +2,7 @@
 title: "I Don’t Want to Teach the World to Code… I Want to Teach the World to Problem Solve"
 date: 2015-02-15 17:51:36 -05:00
 comments: true
-tags: [career,society]
+tags: [career, society]
 description: "I’ve been wrestling for a while with the notion of “coding” being a necessary 21st century skill."
 ---
 

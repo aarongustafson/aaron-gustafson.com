@@ -2,7 +2,7 @@
 title: "Egalitarianism"
 date: 2015-01-19 10:32:20 -05:00
 comments: true
-tags: [philosophy,accessibility,"web design","inclusion"]
+tags: [philosophy, accessibility, "web design", "inclusion"]
 description: "Today is Martin Luther King Day in the United States, so I thought I’d take a moment to reflect on one aspect of equality I think is incredibly important: egalitarianism."
 ---
 
@@ -34,7 +34,7 @@ It’s a simple philosophy inspired by [the Golden Rule](http://en.wikipedia.org
 
 Heck, even Confucius said “Never impose on others what you would not choose for yourself”.
 
-With so much emphasis on treating others with the sort of respect that we would like to be given, you’d think that inequality would be a non-issue. Obviously that’s not the case. 
+With so much emphasis on treating others with the sort of respect that we would like to be given, you’d think that inequality would be a non-issue. Obviously that’s not the case.
 
 For centuries, we humans—even those of us who ascribe to [these and the other countless Golden Rule abiding religions and philosophies](http://en.wikipedia.org/wiki/Golden_Rule#Religion_and_philosophy)—have failed to recognize ourselves in others and have erected barriers (both physical and societal) to their ability to lead the sort of happy, fulfilled life that we want for ourselves and our families.
 
@@ -56,9 +56,9 @@ I love this exercise because it makes it easy to create at least basic connectio
 
 <hr>
 
-What is interesting about egalitarianism, as opposed to similar sounding philosophies like [modern communism](http://en.wikipedia.org/wiki/The_Communist_Manifesto), is that it recognizes that equality of opportunity does not necessitate equality of outcome. In other words, while pushing for equality,  it simultaneously recognizes that we have differences in capability, capacity, and interest.
+What is interesting about egalitarianism, as opposed to similar sounding philosophies like [modern communism](http://en.wikipedia.org/wiki/The_Communist_Manifesto), is that it recognizes that equality of opportunity does not necessitate equality of outcome. In other words, while pushing for equality, it simultaneously recognizes that we have differences in capability, capacity, and interest.
 
-We are different. We are similar in more ways than we are different, but to ignore our differences is to deny us our  individuality, our personhood, our true selves. But recognizing differences is not the same as assigning a value to those differences. That’s an incredibly important distinction and bears repeating: Just because you recognize that someone is different does not imply you should view or treat them as any more or less human on account of what makes them different. That said, recognizing differences is the first step towards being able to create equality of opportunity.
+We are different. We are similar in more ways than we are different, but to ignore our differences is to deny us our individuality, our personhood, our true selves. But recognizing differences is not the same as assigning a value to those differences. That’s an incredibly important distinction and bears repeating: Just because you recognize that someone is different does not imply you should view or treat them as any more or less human on account of what makes them different. That said, recognizing differences is the first step towards being able to create equality of opportunity.
 
 This is such an important concept in life, but I was not a philosophy major, so I’ll stick to discussing it in terms of what I know a lot about: The Web. Specifically, Web accessibility.
 
@@ -66,20 +66,20 @@ For a great many of us, ensuring our websites are accessible is an afterthought.
 
 Sure, people with visual impairments often use a screen reader to consume content. They might also use a braille touch feedback device or a braille printer. They probably also use a keyboard. Or they may use a touchscreen in concert with audio cues. And yes, visual impairment affects a great percentage of people, but they are only part of the “accessibility” puzzle.
 
-The dimensions of interactive elements—links, buttons, etc.—and their proximity to one another is an important factor in ensuring an interface actually registers our intent (i.e. it helps us avoid [fat fingering](http://en.wikipedia.org/wiki/Typographical_error)). *Design* is an accessibility concern.
+The dimensions of interactive elements—links, buttons, etc.—and their proximity to one another is an important factor in ensuring an interface actually registers our intent (i.e. it helps us avoid [fat fingering](http://en.wikipedia.org/wiki/Typographical_error)). _Design_ is an accessibility concern.
 
-The color contrast between text and the background is an important factor in ensuring content remains readable in different lighting situations. *Color* is an accessibility concern.
+The color contrast between text and the background is an important factor in ensuring content remains readable in different lighting situations. _Color_ is an accessibility concern.
 
-The language we use on our sites and in our interfaces directly affects how easy it is for our users to understand what we do, the products we are offering, and why it matters. It also affects how we make our users feel. *Language* is an accessibility concern.
+The language we use on our sites and in our interfaces directly affects how easy it is for our users to understand what we do, the products we are offering, and why it matters. It also affects how we make our users feel. _Language_ is an accessibility concern.
 
-The size of our Web pages and their associated assets has a direct affect on how long our pages take to download, how much it costs our customers to access them, and (sometimes) even whether or not the content can be reached. *Performance* is an accessibility concern.
+The size of our Web pages and their associated assets has a direct affect on how long our pages take to download, how much it costs our customers to access them, and (sometimes) even whether or not the content can be reached. _Performance_ is an accessibility concern.
 
 I could keep going, but I’m sure you’re starting to get the point. “Accessibility” is ultimately about ensuring people have equal opportunity to access your content while simultaneously recognizing that we all have special needs—physical limitations, bandwidth limitations, device limitations, etc.—that lead us to have different experiences of the same Web page.
 
-Accessibility *is* egalitarianism.
+Accessibility _is_ egalitarianism.
 
 <hr>
 
 We are all different, but we all human. We all deserve respect. We all deserve to be treated equally. To be treated fairly.
 
-We need more egalitarianism in this world and the good news is that *we* can make it happen.
+We need more egalitarianism in this world and the good news is that _we_ can make it happen.

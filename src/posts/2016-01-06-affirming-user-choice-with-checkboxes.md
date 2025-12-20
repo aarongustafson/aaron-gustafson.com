@@ -29,7 +29,7 @@ Standalone checkboxes are often employed to enable users to affirm a statement, 
 Here’s a simplification of the markup they’re using:
 
 ```html
-<input type="checkbox" id="lilo_checkBox" name="REMEMBERME">
+<input type="checkbox" id="lilo_checkBox" name="REMEMBERME" />
 <label for="lilo_checkBox">Remember Me</label>
 ```
 
@@ -37,7 +37,7 @@ This works really well, though I generally prefer to [combine explicit and impli
 
 ```html
 <label for="lilo_checkBox">
-  <input type="checkbox" id="lilo_checkBox" name="REMEMBERME">
+  <input type="checkbox" id="lilo_checkBox" name="REMEMBERME" />
   Remember Me
 </label>
 ```
@@ -47,8 +47,8 @@ Regardless of the markup pattern itself, it’s important to note the explicit a
 It’s worth noting that some back-end systems may require a value be submitted for the given variable name (in this case, "REMEMBERME") regardless of whether the user has ticked the checkbox. If that’s a requirement, you can alter the pattern to use a hidden `input` as well:
 
 ```html
-<input type="hidden" name="REMEMBERME" value="no">
-<input type="checkbox" id="lilo_checkBox" name="REMEMBERME" value="yes">
+<input type="hidden" name="REMEMBERME" value="no" />
+<input type="checkbox" id="lilo_checkBox" name="REMEMBERME" value="yes" />
 <label for="lilo_checkBox">Remember Me</label>
 ```
 
@@ -70,23 +70,25 @@ The markup they employ is pretty well-organized and straightforward: it’s a li
 <ul>
   <li>
     <label for="nintendo-ds-lite">
-      <input type="checkbox"
-             name="reservation_requested_device[]"
-             id="nintendo-ds-lite"
-             value="Nintendo DS Lite (Upper Cabinet #13)"
-             data-checkbox-required=""
-             >
+      <input
+        type="checkbox"
+        name="reservation_requested_device[]"
+        id="nintendo-ds-lite"
+        value="Nintendo DS Lite (Upper Cabinet #13)"
+        data-checkbox-required=""
+      />
       Nintendo DS Lite
     </label>
   </li>
   <li>
     <label for="nintendo-wii">
-      <input type="checkbox"
-             name="reservation_requested_device[]"
-             id="nintendo-wii"
-             value="Nintendo Wii (TV Area)"
-             data-checkbox-required=""
-             >
+      <input
+        type="checkbox"
+        name="reservation_requested_device[]"
+        id="nintendo-wii"
+        value="Nintendo Wii (TV Area)"
+        data-checkbox-required=""
+      />
       Nintendo Wii
     </label>
   </li>
@@ -94,20 +96,20 @@ The markup they employ is pretty well-organized and straightforward: it’s a li
 </ul>
 ```
 
-As this is an instance where a user could choose more than one option, the back end needs to be able to capture that information in what’s called an "array". An array, if you’re unfamiliar, is a collection of values. You’ll notice that the `name` given to each of these checkbox `input` elements is the same: "reservation_requested_device[]". The square brackets ("[]") at the end of the `name` are the magic bit that allows the values of *each* chosen "reservation_requested_device" checkbox to be submitted as the value of "reservation_requested_device".
+As this is an instance where a user could choose more than one option, the back end needs to be able to capture that information in what’s called an "array". An array, if you’re unfamiliar, is a collection of values. You’ll notice that the `name` given to each of these checkbox `input` elements is the same: "reservation*requested_device[]". The square brackets ("[]") at the end of the `name` are the magic bit that allows the values of \_each* chosen "reservation_requested_device" checkbox to be submitted as the value of "reservation_requested_device".
 
 ## Applicable Attributes
 
 Checkbox controls only use a subset of the typical `input` attributes. In particular, you’ll need to include
 
-* `name` - This is the variable name you want to hold the user’s response. As mentioned in [the previous section](#multiple-choice-checkboxes), appending "[]" to the variable name will allow the variable to hold all of the user’s choices as opposed to only the final one.
-* `value` - This is the value that should be captured if the user ticks the checkbox.
-* `id` - The unique identifier you’re using for the control in order to explicitly associate it with a `label`.
+- `name` - This is the variable name you want to hold the user’s response. As mentioned in [the previous section](#multiple-choice-checkboxes), appending "[]" to the variable name will allow the variable to hold all of the user’s choices as opposed to only the final one.
+- `value` - This is the value that should be captured if the user ticks the checkbox.
+- `id` - The unique identifier you’re using for the control in order to explicitly associate it with a `label`.
 
 There are a few optional attributes you might consider including as well.
 
-* `checked` - Use this null attribute if you want the default state of the checkbox to be ticked. This attribute should be used with caution. **Don’t** use this attribute to automatically check confirmation boxes for things like mailing list opt-ins. **Do** use this attribute when you are displaying sensible default settings or displaying confirmations the user has already made (e.g. in the user’s profile or when re-displaying the form when it has a submission error).
-* `required` - Use this to indicate the checkbox must be ticked for the form to be valid. It’s important to note that this attribute is typically only useful in confirmation checkbox scenarios. If you need a user to choose at least one from a multiple choice checkbox collection, it’s useless unless you need them to pick a specific one. To require one (or more) of a multiple choice checkbox group, you currently need to use JavaScript, like [the one the Chattanooga Open Device Lab uses](https://github.com/easy-designs/easy-checkbox-required.js).
+- `checked` - Use this null attribute if you want the default state of the checkbox to be ticked. This attribute should be used with caution. **Don’t** use this attribute to automatically check confirmation boxes for things like mailing list opt-ins. **Do** use this attribute when you are displaying sensible default settings or displaying confirmations the user has already made (e.g. in the user’s profile or when re-displaying the form when it has a submission error).
+- `required` - Use this to indicate the checkbox must be ticked for the form to be valid. It’s important to note that this attribute is typically only useful in confirmation checkbox scenarios. If you need a user to choose at least one from a multiple choice checkbox collection, it’s useless unless you need them to pick a specific one. To require one (or more) of a multiple choice checkbox group, you currently need to use JavaScript, like [the one the Chattanooga Open Device Lab uses](https://github.com/easy-designs/easy-checkbox-required.js).
 
 ## Checkbox vs. Other Controls
 
@@ -117,7 +119,7 @@ Checkboxes excel at allowing users to indicate preference from a pre-defined set
 
 The `select` element is another tried and true option for allowing users to indicate preference. A simple two-choice `select` could achieve the same goal as a confirmation checkbox, but it’s a little clunkier. In terms of user interface, `select` elements require more clicks of your users. They also obscure the complete list of choices from view because only one options is displayed at a time. Their appearance makes them more compact, but can make it difficult to get a complete picture of what choices are available when you can’t see them all.
 
-You can enable multiple choice in a  `select` element by adding the `multiple` attribute to it, but depending on the number of `option` elements, it could also be a little unwieldy. Depending on the size of the `select` and the number of options, you could also create an inner scroll that could be awkward on certain touch-based devices.
+You can enable multiple choice in a `select` element by adding the `multiple` attribute to it, but depending on the number of `option` elements, it could also be a little unwieldy. Depending on the size of the `select` and the number of options, you could also create an inner scroll that could be awkward on certain touch-based devices.
 
 The `select` element has its place, but should be used sparingly. I’ll go in-depth with `select` elements in a future post.
 

@@ -2,7 +2,7 @@
 title: "What Do We Own?"
 date: 2014-11-17 09:43:54 -05:00
 comments: true
-tags: [ "web design", "indie web" ]
+tags: ["web design", "indie web"]
 description: "I love the “indie web” movement, but I wonder: When you begin to assert ownership over your content, how far do you go?"
 redirect_from: /notebook/2014/what-do-we-own/
 ---

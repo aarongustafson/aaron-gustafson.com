@@ -8,4 +8,4 @@ in_reply_to: https://solar.lowtechmagazine.com/2018/09/how-to-build-a-lowtech-we
 ref_source: Low Tech Magazine
 ---
 
-I *love* this project. It ticks so many boxes for me as it’s all about doing more with less. I love the ways they’ve found to reduce consumption on the server side and throughput to their users as well. So much to unpack!
+I _love_ this project. It ticks so many boxes for me as it’s all about doing more with less. I love the ways they’ve found to reduce consumption on the server side and throughput to their users as well. So much to unpack!

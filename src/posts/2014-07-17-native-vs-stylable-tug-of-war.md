@@ -2,7 +2,7 @@
 date: 2014-07-17 08:21:47 -04:00
 title: "The “Native” vs. “Stylable” Tug of War"
 description: "In his astute post “‘Native experience’ vs styling select boxes”, Bruce Lawson correctly identified a common tension in the web world: wanting better form controls vs. wanting to throw away what the browser does. Here are my thoughts."
-tags: [ "web design", browsers, design, mobile ]
+tags: ["web design", browsers, design, mobile]
 comments: true
 canonical: https://blog.easy-designs.net/archives/the-native-vs-stylable-tug-of-war/
 canonical_site: The Easy Designs Blog
@@ -25,7 +25,7 @@ Based on my own experience, I see the following arguments in favor of changing t
 4. We want the web experience to feel like a platform-specific app.
 5. It doesn’t behave how we think it should.
 
-*(<abbr lang="it" title="nota bene: please note">n.b.</abbr> Browsers have done a pretty good job reducing the amount of color and the overall visual strength used in their UI controls to help them better blend in with a wide variety of designs, so clashes as mentioned in #3 happen far less often than they did nearly a decade ago.)*
+_(<abbr lang="it" title="nota bene: please note">n.b.</abbr> Browsers have done a pretty good job reducing the amount of color and the overall visual strength used in their UI controls to help them better blend in with a wide variety of designs, so clashes as mentioned in #3 happen far less often than they did nearly a decade ago.)_
 
 As the weathered, battle tested (and, admittedly, somewhat jaded) front-end dev that I am, I typically push back with one or more of the following:
 
@@ -55,11 +55,11 @@ First of all, there’s the possibility we could actually end up making the inte
 
 Assuming our tests go well, we will need to maintain this code and do all of the requisite browser testing. And potentially upgrade our code as new browsers and browser versions come out. Depending on the complexity of the code, this could become a large requirement, but if it is ultimately in the service of making the web a better, more usable interaction environment, it could be worth it.
 
-For what it’s worth, if we go this route and are successful, we should consider getting involved in the spec-writing process at the [W3C](https://w3.org) or  [WhatWG](https://whatwg.org). We should contribute our recommended changes back to the community and share what we learned. If we make a compelling argument, perhaps our idea will become part of some future standard and we can taper off our browser testing when the change lands in the platform.
+For what it’s worth, if we go this route and are successful, we should consider getting involved in the spec-writing process at the [W3C](https://w3.org) or [WhatWG](https://whatwg.org). We should contribute our recommended changes back to the community and share what we learned. If we make a compelling argument, perhaps our idea will become part of some future standard and we can taper off our browser testing when the change lands in the platform.
 
 <hr>
 
-As you can probably tell, I’m not a really big fan of changing existing controls as I feel it can amount to a wasted effort. That said, if there are design improvements to be made—“design” in the true sense: being about how usable something is, not just how aesthetically-pleasing it is to someone (e.g. improving contrast, making the control more intuitive, etc.)—I’m willing to accept the change as something we *should* do and then work to make sure that change has been vetted and, if successful, given away for inclusion in other projects. If it solves a major issue on the web, I want to give that change every opportunity to make it into the appropriate spec by talking to the appropriate folks about it both in-person, in blog posts, and on the appropriate mailing list. If the change solves a problem in a specific browser, I want to see it incorporated into said browser and will file a bug report and try to build momentum around it by engaging the community.
+As you can probably tell, I’m not a really big fan of changing existing controls as I feel it can amount to a wasted effort. That said, if there are design improvements to be made—“design” in the true sense: being about how usable something is, not just how aesthetically-pleasing it is to someone (e.g. improving contrast, making the control more intuitive, etc.)—I’m willing to accept the change as something we _should_ do and then work to make sure that change has been vetted and, if successful, given away for inclusion in other projects. If it solves a major issue on the web, I want to give that change every opportunity to make it into the appropriate spec by talking to the appropriate folks about it both in-person, in blog posts, and on the appropriate mailing list. If the change solves a problem in a specific browser, I want to see it incorporated into said browser and will file a bug report and try to build momentum around it by engaging the community.
 
 Anyway, that’s my general position on augmenting browser-delivered UI controls. What are your thoughts on the topic?
 

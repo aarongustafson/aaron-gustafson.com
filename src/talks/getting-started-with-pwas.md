@@ -2,8 +2,8 @@
 title: "Getting Started with PWAs"
 description: "In this workshop, Aaron Gustafson will help you get your web projects super-charged as Progressive Web Apps (PWAs)."
 category: workshop
-tags: [ "progressive web apps", "web design", "web development", "web standards" ]
-events: [ 147, 143, 136 ]
+tags: ["progressive web apps", "web design", "web development", "web standards"]
+events: [147, 143, 136]
 date: 2019-11-14T00:09:00-0000
 hero: getting-started-with-pwas-workshop.png
 slides:

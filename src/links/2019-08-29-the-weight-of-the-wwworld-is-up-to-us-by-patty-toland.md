@@ -11,5 +11,5 @@ ref_source: "Adactio’s Journal"
 So much awesome content in Patty’s talk. In particular…
 
 > There was a common assertion that slow networks were a third-world challenge. Remember Facebook’s network challenges? They always talked about new markets in India and Africa. The implication is that this isn’t our problem in, say, Omaha or New York.
-> 
+>
 > Pew Research provided a lot of data back then that showed that this thinking was wrong. Use of cell phones, especially smartphones and tablets, escalated dramatically in the United States. There was a trend towards mobile-only usage. This was in low-income households—about one third of the population. Among 5,400 panelists, 15% did not have a JavaScript-enabled device.

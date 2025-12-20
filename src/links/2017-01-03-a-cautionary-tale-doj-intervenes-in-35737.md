@@ -7,7 +7,6 @@ in_reply_to: https://www.jdsupra.com/legalnews/a-cautionary-tale-doj-intervenes-
 ref_source: Seyfarth Shaw LLP
 ---
 
-Supermarket chain Winn Dixie claims that Title III of the Americans with Disabilities Act doesn’t apply online in *Gil v. Winn Dixie* and the U.S. Department of Justice steps in to set them straight:
+Supermarket chain Winn Dixie claims that Title III of the Americans with Disabilities Act doesn’t apply online in _Gil v. Winn Dixie_ and the U.S. Department of Justice steps in to set them straight:
 
-> In response to Winn-Dixie’s position that Title III applies only to its physical location. DOJ cited the language of the ADA which says that “Title III applies to discrimination in the goods and services ‘of’ a place of public accommodation, rather than being limited to those goods and services provided ‘at’ or ‘in’ a place of public accommodation.”  DOJ also argued Title III’s application to the website at issue is consistent with every other court decision to have addressed the coverage of websites with a nexus to brick and mortar locations. 
-
+> In response to Winn-Dixie’s position that Title III applies only to its physical location. DOJ cited the language of the ADA which says that “Title III applies to discrimination in the goods and services ‘of’ a place of public accommodation, rather than being limited to those goods and services provided ‘at’ or ‘in’ a place of public accommodation.” DOJ also argued Title III’s application to the website at issue is consistent with every other court decision to have addressed the coverage of websites with a nexus to brick and mortar locations.

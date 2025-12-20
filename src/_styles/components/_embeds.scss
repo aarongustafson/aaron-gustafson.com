@@ -5,20 +5,20 @@
 \*------------------------------------*/
 
 .embed {
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 
-    @supports (margin-block: 1em) {
-      @include unset( margin-left margin-right );
-      margin-inline: auto;
-    }
-    
-    &.tweet {
-        @include rem( max-width, 502 );
+	@supports (margin-block: 1em) {
+		@include unset(margin-left margin-right);
+		margin-inline: auto;
+	}
 
-        @supports (margin-block: 1em) {
-          max-width: unset;
-          @include rem( max-inline-size, 502, false );
-        }
-    }        
+	&.tweet {
+		@include rem(max-width, 502);
+
+		@supports (margin-block: 1em) {
+			max-width: unset;
+			@include rem(max-inline-size, 502, false);
+		}
+	}
 }

@@ -7,4 +7,4 @@ in_reply_to: https://www.linkedin.com/pulse/when-touch-screen-inaccessibility-be
 ref_source: LinkedIn
 ---
 
-Touchscreen without audio cues are a *big* problem, especially on airplanes.
+Touchscreen without audio cues are a _big_ problem, especially on airplanes.

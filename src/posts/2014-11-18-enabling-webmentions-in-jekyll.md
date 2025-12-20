@@ -2,7 +2,8 @@
 title: "Enabling Webmentions in Jekyll"
 date: 2014-11-18 17:01:08 -05:00
 comments: true
-categories:  ["blogging", "web design", "indie web", "self-publishing", "decentralization"]
+categories:
+  ["blogging", "web design", "indie web", "self-publishing", "decentralization"]
 description: "A chronicle of my effort to get webmentions and Jekyll playing nicely together."
 redirect_from: /notebook/2014/enabling-webmentions-in-jekyll/
 ---

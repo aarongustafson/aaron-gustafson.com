@@ -20,8 +20,8 @@ Last Tuesday, I gave a relatively new talk on web performance and optimization a
 
 ## Liveblogs/Notes
 
-* [LukeW](https://www.lukew.com/ff/entry.asp?1991)
-* [Torre Capistran](https://hookedoncode.com/2018/04/performance-as-user-experience-aaron-gustafson/)
+- [LukeW](https://www.lukew.com/ff/entry.asp?1991)
+- [Torre Capistran](https://hookedoncode.com/2018/04/performance-as-user-experience-aaron-gustafson/)
 
 ## Resources
 

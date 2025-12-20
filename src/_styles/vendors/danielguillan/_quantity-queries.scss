@@ -26,16 +26,15 @@
 ///   $result: _last-simple-selector(ul > li); // li
 
 @function _last-simple-selector($selector) {
-    $parsed: selector.parse($selector);
+	$parsed: selector.parse($selector);
 
-    @if list.length($parsed) > 1 {
-      @error '`#{$selector}` contains #{list.length($parsed)} selectors and the `_last-simple-selector()`function accepts only 1.';
-    }
-    $last-simple-selector: list.nth(list.nth($parsed, 1), -1);
+	@if list.length($parsed) > 1 {
+		@error '`#{$selector}` contains #{list.length($parsed)} selectors and the `_last-simple-selector()`function accepts only 1.';
+	}
+	$last-simple-selector: list.nth(list.nth($parsed, 1), -1);
 
-    @return $last-simple-selector;
+	@return $last-simple-selector;
 }
-
 
 // -----------------------------------------------------------------------------
 // 2. Build Quantity Selector
@@ -48,19 +47,19 @@
 /// @return {list}                         - The final quantity query selector
 
 @function _build-quantity-selector($selector-append, $last-selector) {
-    $quantity-selector: ();
+	$quantity-selector: ();
 
-    @each $s in & {
-        $last-simple-selector: '~' + if($last-selector, $last-selector, _last-simple-selector($s));
-        $sel: selector.append($s, $selector-append);
-        $sel2: selector.nest($sel, $last-simple-selector);
-        $quantity-selector: list.append($quantity-selector, $sel, 'comma');
-        $quantity-selector: list.append($quantity-selector, $sel2 , 'comma');
-    }
+	@each $s in & {
+		$last-simple-selector: "~"+
+			if($last-selector, $last-selector, _last-simple-selector($s));
+		$sel: selector.append($s, $selector-append);
+		$sel2: selector.nest($sel, $last-simple-selector);
+		$quantity-selector: list.append($quantity-selector, $sel, "comma");
+		$quantity-selector: list.append($quantity-selector, $sel2, "comma");
+	}
 
-    @return $quantity-selector;
+	@return $quantity-selector;
 }
-
 
 // -----------------------------------------------------------------------------
 // 3. At least
@@ -78,24 +77,30 @@
 ///   }
 
 @mixin at-least($count, $selector: null) {
-    $selector-append: ':nth-last-child(n+#{$count})';
+	$selector-append: ":nth-last-child(n+#{$count})";
 
-    @if meta.type-of($count) != 'number' or not math.is-unitless($count) or $count < 1 {
-        @error '`#{$count}` is not a valid number for `at-least`';
-    }
+	@if meta.type-of($count) !=
+		"number" or not
+		math.is-unitless($count) or
+		$count <
+		1
+	{
+		@error '`#{$count}` is not a valid number for `at-least`';
+	}
 
-    @if $selector != null and (meta.type-of($selector) != 'string' or list.length($selector) > 1) {
-        @error '`#{$selector}` is not a valid selector for `at-least`';
-    }
+	@if $selector !=
+		null and
+		(meta.type-of($selector) != "string" or list.length($selector) > 1)
+	{
+		@error '`#{$selector}` is not a valid selector for `at-least`';
+	}
 
-    $at-least-selector: _build-quantity-selector($selector-append, $selector);
+	$at-least-selector: _build-quantity-selector($selector-append, $selector);
 
-
-    @at-root #{$at-least-selector} {
-        @content;
-    }
+	@at-root #{$at-least-selector} {
+		@content;
+	}
 }
-
 
 // -----------------------------------------------------------------------------
 // 4. At most
@@ -113,24 +118,30 @@
 ///   }
 
 @mixin at-most($count, $selector: null) {
-    $selector-append: ':nth-last-child(-n+#{$count}):first-child';
+	$selector-append: ":nth-last-child(-n+#{$count}):first-child";
 
-    @if meta.type-of($count) != 'number' or not math.is-unitless($count) or $count < 1 {
-        @error '`#{$count}` is not a valid number for `at-most`.';
-    }
+	@if meta.type-of($count) !=
+		"number" or not
+		math.is-unitless($count) or
+		$count <
+		1
+	{
+		@error '`#{$count}` is not a valid number for `at-most`.';
+	}
 
-    @if $selector != null and (meta.type-of($selector) != 'string' or list.length($selector) > 1) {
-        @error '`#{$selector}` is not a valid selector for `at-most`';
-    }
+	@if $selector !=
+		null and
+		(meta.type-of($selector) != "string" or list.length($selector) > 1)
+	{
+		@error '`#{$selector}` is not a valid selector for `at-most`';
+	}
 
-    $at-most-selector: _build-quantity-selector($selector-append, $selector);
+	$at-most-selector: _build-quantity-selector($selector-append, $selector);
 
-
-    @at-root #{$at-most-selector} {
-        @content;
-    }
+	@at-root #{$at-most-selector} {
+		@content;
+	}
 }
-
 
 // -----------------------------------------------------------------------------
 // 5. Between
@@ -148,34 +159,44 @@
 ///     @include between(6, 10, '*') { color: blue; }
 ///   }
 
-
 @mixin between($first, $last, $selector: null) {
-    $selector-append: ':nth-last-child(n+#{$first}):nth-last-child(-n+#{$last}):first-child';
+	$selector-append: ":nth-last-child(n+#{$first}):nth-last-child(-n+#{$last}):first-child";
 
-    @if meta.type-of($first) != 'number' or not math.is-unitless($first) or $first < 1 {
-        @error '`#{$first}` is not a valid number for `between`';
-    }
+	@if meta.type-of($first) !=
+		"number" or not
+		math.is-unitless($first) or
+		$first <
+		1
+	{
+		@error '`#{$first}` is not a valid number for `between`';
+	}
 
-    @if meta.type-of($last) != 'number' or not math.is-unitless($last) or $last < 1 {
-        @error '`#{$last}` is not a valid number for `between`';
-    }
+	@if meta.type-of($last) !=
+		"number" or not
+		math.is-unitless($last) or
+		$last <
+		1
+	{
+		@error '`#{$last}` is not a valid number for `between`';
+	}
 
-    @if $first > $last {
-        @error '#{$first} can´t be larger that #{$last} for `between`';
-    }
+	@if $first > $last {
+		@error '#{$first} can´t be larger that #{$last} for `between`';
+	}
 
-    @if $selector != null and (meta.type-of($selector) != 'string' or list.length($selector) > 1) {
-        @error '`#{$selector}` is not a valid selector for `between`';
-    }
+	@if $selector !=
+		null and
+		(meta.type-of($selector) != "string" or list.length($selector) > 1)
+	{
+		@error '`#{$selector}` is not a valid selector for `between`';
+	}
 
-    $between-selector: _build-quantity-selector($selector-append, $selector);
+	$between-selector: _build-quantity-selector($selector-append, $selector);
 
-
-    @at-root #{$between-selector} {
-        @content;
-    }
+	@at-root #{$between-selector} {
+		@content;
+	}
 }
-
 
 // -----------------------------------------------------------------------------
 // 6. Exactly
@@ -193,20 +214,27 @@
 ///   }
 
 @mixin exactly($count, $selector: null) {
-    $selector-append: ':nth-last-child(#{$count}):first-child';
+	$selector-append: ":nth-last-child(#{$count}):first-child";
 
-    @if meta.type-of($count) != 'number' or not math.is-unitless($count) or $count < 1 {
-        @error '`#{$count}` is not a valid number for `exactly`';
-    }
+	@if meta.type-of($count) !=
+		"number" or not
+		math.is-unitless($count) or
+		$count <
+		1
+	{
+		@error '`#{$count}` is not a valid number for `exactly`';
+	}
 
-    @if $selector != null and (meta.type-of($selector) != 'string' or list.length($selector) > 1) {
-        @error '`#{$selector}` is not a valid selector for `exactly`';
-    }
+	@if $selector !=
+		null and
+		(meta.type-of($selector) != "string" or list.length($selector) > 1)
+	{
+		@error '`#{$selector}` is not a valid selector for `exactly`';
+	}
 
-    $exactly-selector: _build-quantity-selector($selector-append, $selector);
+	$exactly-selector: _build-quantity-selector($selector-append, $selector);
 
-
-    @at-root #{$exactly-selector} {
-        @content;
-    }
+	@at-root #{$exactly-selector} {
+		@content;
+	}
 }

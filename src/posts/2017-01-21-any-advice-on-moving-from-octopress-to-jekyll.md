@@ -2,7 +2,7 @@
 title: "Any Advice on Moving From Octopress to Jekyll?"
 date: 2017-01-21 11:55:37 -05:00
 comments: true
-tags: ["this site",Jekyll,Octopress]
+tags: ["this site", Jekyll, Octopress]
 twitter_text: "I’m moving from @octopress to @jekyllrb on Tuesday. Any advice or recommended reading?"
 ---
 
@@ -12,10 +12,10 @@ Next Tuesday I’m planning to take the day to do a little refresh on this site.
 
 In case you’re curious why I’m making the shift, it’s pretty simple:
 
-* Octopress development seems [relatively stalled](https://github.com/octopress/octopress/graphs/code-frequency);
-* Octopress includes dependencies I don’t really need;
-* I’ve been [writing a lot of Jekyll plugins](https://github.com/aarongustafson?utf8=%E2%9C%93&amp;tab=repositories&amp;q=jekyll&amp;type=public&amp;language=ruby) and maintaining them without using them on the latest Jekyll is challenging;
-* I’m comfortable writing my own [Rake](http://rake.rubyforge.org/) commands; and
-* This is the big one: [Incremental builds](http://idratherbewriting.com/2015/11/04/jekyll-30-released-incremental-regeneration-rocks/).
+- Octopress development seems [relatively stalled](https://github.com/octopress/octopress/graphs/code-frequency);
+- Octopress includes dependencies I don’t really need;
+- I’ve been [writing a lot of Jekyll plugins](https://github.com/aarongustafson?utf8=%E2%9C%93&tab=repositories&q=jekyll&type=public&language=ruby) and maintaining them without using them on the latest Jekyll is challenging;
+- I’m comfortable writing my own [Rake](http://rake.rubyforge.org/) commands; and
+- This is the big one: [Incremental builds](http://idratherbewriting.com/2015/11/04/jekyll-30-released-incremental-regeneration-rocks/).
 
 I’m hopeful this shift will make it easier for me to get content published more quickly and more reliably. I may even move my build processes into [Travis CI](https://travis-ci.org/) to further offload the work. But I’m getting ahead of myself… let’s see how Tuesday goes first.

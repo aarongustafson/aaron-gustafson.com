@@ -2,7 +2,7 @@
 title: "What are keys to success?"
 date: 2016-06-01 11:18:31 -04:00
 comments: true
-tags: [society,personal,philosophy]
+tags: [society, personal, philosophy]
 description: "What makes me feel successful? The Golden Rule."
 crossposted:
   Medium: https://medium.com/@AaronGustafson/dde3eeb32aa5
@@ -48,9 +48,9 @@ Then there’s my personal favorite, from Judaism:
 
 The Golden Rule is a wonderful tool for helping maintain balance in your life, business, and relationships. And so, I followed this recommendation proverb with a bit more detail on how I feel we can embody this philosophy:
 
-* Treat others with respect (means respecting their time, dignity, etc.).
-* Look for opportunities to help others accomplish *their* goals.
-* Give of yourself freely without expecting return.
+- Treat others with respect (means respecting their time, dignity, etc.).
+- Look for opportunities to help others accomplish _their_ goals.
+- Give of yourself freely without expecting return.
 
 My twelve years of Catholic schooling drummed the proverb “to whomever much is given, much will be required“ into my head, which accounts for my emphasis on sharing. I know that my "success"—as I define it at least—has been made possible by the generosity of others. And so I think it’s my duty to "[pay it forward](http://www.imdb.com/title/tt0223897/)" and I look for every opportunity to create opportunities for others.
 

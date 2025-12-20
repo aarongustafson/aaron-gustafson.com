@@ -69,7 +69,7 @@ function stripFragmentLinks(text = "") {
 }
 
 export default {
-	layout: "layouts/post.html",
+	layout: "layouts/post.njk",
 	body_class: "post",
 	eleventyComputed: {
 		eleventyExcludeFromCollections: (data) => (showPost(data) ? false : true),

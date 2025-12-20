@@ -2,12 +2,12 @@
 title: "Where Do We Go From Here?"
 date: 2015-06-22 11:49:56 -04:00
 comments: true
-tags: ["progressive enhancement",accessibility,"responsive web design"]
+tags: ["progressive enhancement", accessibility, "responsive web design"]
 description: "I had the great pleasure of delivering the closing keynote for the final Responsive Day Out. Here’s what I had to say."
 twitter_text: "Here’s my closing keynote from Responsive Day Out 3."
 ---
 
-*I had the great pleasure of delivering the closing keynote for the final Responsive Day Out. Here’s what I had to say.*
+_I had the great pleasure of delivering the closing keynote for the final Responsive Day Out. Here’s what I had to say._
 
 <!-- more -->
 
@@ -31,7 +31,7 @@ It was the first time many designers had come to terms with the idea that "exper
 
 Sure, many of us in the web standards community had been talking the talk and walking the walk with regard to [progressive enhancement](http://alistapart.com/article/understandingprogressiveenhancement). And we were gaining converts, but progress was slow. Ethan demonstrated—directly and succinctly—what the progressive enhancement of visual design could look like.
 
-Providing an identical experience for each and every human being that tries to access our sites would be impossible. There are simply far too many factors to consider. We’ve got screen size, display density, CPU speed, amount of RAM, sensor availability, feature availability, interface methods … *breathe* … operating system type, operating system version, browser type, browser version, plug-ins installed, network speed, network latency, network congestion, firewalls, proxies, routers, and probably a dozen other factors my mind is incapable of plucking amid the whirlwind of technical considerations.
+Providing an identical experience for each and every human being that tries to access our sites would be impossible. There are simply far too many factors to consider. We’ve got screen size, display density, CPU speed, amount of RAM, sensor availability, feature availability, interface methods … _breathe_ … operating system type, operating system version, browser type, browser version, plug-ins installed, network speed, network latency, network congestion, firewalls, proxies, routers, and probably a dozen other factors my mind is incapable of plucking amid the whirlwind of technical considerations.
 
 **And that doesn’t even consider our users.**
 
@@ -57,11 +57,11 @@ The size of our web pages has a direct effect on how long our pages take to down
 
 I could keep going, but I’m sure you get the point.
 
-Accessibility is about providing good experiences for everyone, regardless of physical or mental abilities, gender, race, or language. It recognizes that we all have special needs—physical limitations, bandwidth limitations, device limitations—that may require us to  experience the same interface in different ways.
+Accessibility is about providing good experiences for everyone, regardless of physical or mental abilities, gender, race, or language. It recognizes that we all have special needs—physical limitations, bandwidth limitations, device limitations—that may require us to experience the same interface in different ways.
 
 When I visit a website on my phone, for example, I am visually limited by my screen resolution (especially if I am using a browser that encourages zooming) and I am limited in my ability to interact with buttons and links because I am browsing with my fingertips, which are larger and far less accurate than a mouse cursor.
 
-On a touchscreen, I may need the experience to be slightly different, but I still need to be able to do whatever it is I came to the site to do. I need *an* experience, but moreover I need the *appropriate* experience.
+On a touchscreen, I may need the experience to be slightly different, but I still need to be able to do whatever it is I came to the site to do. I need _an_ experience, but moreover I need the _appropriate_ experience.
 
 Embracing the reality that experience does’t need to be just one thing will help us reach more people with fewer headaches. Experience can—and should—be crafted as a continuum. This is progressive enhancement: We start with a baseline experience that works for everyone—content, real links, first generation form controls, and forms that actually submit to the server. Then we build up the experience from there.
 
@@ -73,7 +73,7 @@ Embracing the reality that experience does’t need to be just one thing will he
 
 Your browser supports HTML5 form controls? Great! You’ll get a better virtual keyboard when you go to type your email address. You can use CSS? Awesome, let me make that reading experience better for you. Oh, you can handle media queries! Let me adjust the layout so those line lengths are a little more comfortable. Wow, your browser supports Ajax?! Here let me load in some teasers for related content you might find interesting.
 
-Imagine sitting down in a restaurant only to have the waiter immediately bring you a steak. But you’re a vegetarian. You ask if they offer something you can eat and they politely reply *Oh I’m sorry, meat is a requirement. Why don’t you just eat meat? It’s easy! You’re really missing out on some tasty food.* No waiter who actually cares about your experience would do that.
+Imagine sitting down in a restaurant only to have the waiter immediately bring you a steak. But you’re a vegetarian. You ask if they offer something you can eat and they politely reply _Oh I’m sorry, meat is a requirement. Why don’t you just eat meat? It’s easy! You’re really missing out on some tasty food._ No waiter who actually cares about your experience would do that.
 
 And yet we—as an industry—don’t seem to have any problem telling someone they need to change their browser to accommodate us. That’s just wrong. Our work is meaningless without users. We should be bending over backwards to attract and retain them. This is customer service 101.
 
@@ -81,7 +81,7 @@ This comes back to Postel's law, which Jeremy often recounts:
 
 > Be conservative in what you do, be liberal in what you accept from others.
 
-We need to be lax when it comes to browser support and not make to many (or better yet any) assumptions about what we can send. 
+We need to be lax when it comes to browser support and not make to many (or better yet any) assumptions about what we can send.
 
 Of course this is not an approach everyone in our industry is ready to embrace, so I’ll offer another quote I come back to time and time again…
 
@@ -93,7 +93,7 @@ Now those of you who’ve gathered for this final Responsive Day Out (or who are
 
 It’s up to us to educate those around us who have—either by accident or intent—not accepted that diversity is the reality we live in and things are only going to get crazier. Burying our heads in the sand is not an option.
 
-When I am trying to help folks understand and embrace diversity, I often reach for one of my favorite thought exercises from [John Rawls](https://en.wikipedia.org/wiki/John_Rawls). 
+When I am trying to help folks understand and embrace diversity, I often reach for one of my favorite thought exercises from [John Rawls](https://en.wikipedia.org/wiki/John_Rawls).
 
 <figure id="figure-2015-06-22-03">
 
@@ -133,10 +133,9 @@ We’re just starting to dip or toes—er, hands—into the world of motion-base
 
 https://www.youtube.com/watch?v=VXhhE-l96qQ#41s/78s
 
-
 The first big leap in this direction was [Kinect](https://en.wikipedia.org/wiki/Kinect) on the Xbox 360 (and later, Windows). With Kinect, we interact with the computer using body movements like raising a hand (which gets Kinect to pay attention), pushing our hand forward to click/tap, and grasping to drag the canvas in a particular direction.
 
-The Kinect ushered in a major revolution in terms of interfacing with computers, but from an interaction perspective, it presents similar challenges to those of the [Wii controller](https://en.wikipedia.org/wiki/Wii#Wii_Remote) and Sony’s [PlayStation Move](https://en.wikipedia.org/wiki/PlayStation_Move). Large body gestures like raising your hand (or a wand controller) can be tiring. 
+The Kinect ushered in a major revolution in terms of interfacing with computers, but from an interaction perspective, it presents similar challenges to those of the [Wii controller](https://en.wikipedia.org/wiki/Wii#Wii_Remote) and Sony’s [PlayStation Move](https://en.wikipedia.org/wiki/PlayStation_Move). Large body gestures like raising your hand (or a wand controller) can be tiring.
 
 https://www.youtube.com/watch?v=21LtA5-wiwU#7s/19s
 
@@ -147,32 +146,32 @@ To accommodate interactions like this (which we currently have no way of detecti
 In [Media Queries Level 4](http://dev.w3.org/csswg/mediaqueries-4/), we became able to apply style rules to particular interaction contexts. For instance, when we have very accurate control over our cursor (as in the case of a stylus or mouse) or less accurate control (as in the case of a touch screen or physical gesture):
 
 ```css
-@media (pointer:fine) {
+@media (pointer: fine) {
   /* Smaller links and buttons are ok */
 }
-@media (pointer:coarse) {
+@media (pointer: coarse) {
   /* Larger links and buttons are probably a good idea */
 }
 ```
 
-Of course, we want to offer a sensible default in terms of size and spacing as a fallback for older browsers and devices. 
+Of course, we want to offer a sensible default in terms of size and spacing as a fallback for older browsers and devices.
 
 We also have the ability to determine whether the device is capable of hovering over an element and can adjust the interface accordingly.
 
 ```css
-@media (hover:hover) {
+@media (hover: hover) {
   /* hover-related interactions are A-OK */
 }
-@media (hover:on-demand) {
+@media (hover: on-demand) {
   /* hover-related interactions are potentially difficult,
      maybe do something else instead */
 }
-@media (hover:none) {
+@media (hover: none) {
   /* No hover possible :-( */
 }
 ```
 
-We still need to figure out how well all of this ends up working on multimodal devices like the Surface tablet, however. Will the design change as the user switches between input modes? Should it? To that end, the spec also provides `any-pointer` and `any-hover` to allow you to query for whether *any* supported interaction method meets your requirements, but here’s a word of warning from the spec:
+We still need to figure out how well all of this ends up working on multimodal devices like the Surface tablet, however. Will the design change as the user switches between input modes? Should it? To that end, the spec also provides `any-pointer` and `any-hover` to allow you to query for whether _any_ supported interaction method meets your requirements, but here’s a word of warning from the spec:
 
 > Designing a page that relies on hovering or accurate pointing only because `any-hover` or `any-pointer` indicate that an input mechanism with these capabilities is available, is likely to result in a poor experience.
 
@@ -183,16 +182,16 @@ These media query options are starting to roll out in Chrome, Mobile Safari, and
 We can unobtrusively detect support for Pointer Events…
 
 ```js
-if ( window.PointerEvent ) {
-  window.addEventListener( "pointerdown", detectType, false );
+if (window.PointerEvent) {
+  window.addEventListener("pointerdown", detectType, false);
 }
 ```
 
 …and then handle them all in the same way or create branches based on the `pointerType`:
 
 ```js
-function detectType( event ) {
-  switch( event.pointerType ) {
+function detectType(event) {
+  switch (event.pointerType) {
     case "mouse":
       /* mouse input detected */
       break;
@@ -203,7 +202,7 @@ function detectType( event ) {
       /* touch input detected */
       break;
     default:
-      /* pointerType is empty (could not be detected) or UA-specific custom type */
+    /* pointerType is empty (could not be detected) or UA-specific custom type */
   }
 }
 ```
@@ -242,7 +241,7 @@ But the idea of being able to drop a resizable virtual screen on any surface pre
 
 In a similar vein, we should begin to think about what experiences can and should look like when we are browsing solely with our gaze. Gaze tracking has its origins in the accessibility space as a means of providing interface control to folks with limited or no use of their hands. Traditionally, gaze tracking hardware has been several thousand dollars, putting it out of the reach of many people, but that is starting to change.
 
-In the last few years, the computational power of our devices has increased as the hardware costs associated with supporting gaze tracking have dropped dramatically. Looking around, you can see gaze tracking beginning to move into the public sphere: Many smartphones and smartwatches can recognize when you are looking at them (or at least they do sometimes). This is only a short step away from knowing where on the screen you are looking. And nearly every high-end smartphone is now equipped with a front-facing camera which makes them perfect candidates to provide this interaction method. 
+In the last few years, the computational power of our devices has increased as the hardware costs associated with supporting gaze tracking have dropped dramatically. Looking around, you can see gaze tracking beginning to move into the public sphere: Many smartphones and smartwatches can recognize when you are looking at them (or at least they do sometimes). This is only a short step away from knowing where on the screen you are looking. And nearly every high-end smartphone is now equipped with a front-facing camera which makes them perfect candidates to provide this interaction method.
 
 https://www.youtube.com/watch?v=DEk7PlJWQgI#18s/54s
 
@@ -260,7 +259,7 @@ Coupled with voice, the alternative interaction methods of Kinect and Sesame Pho
 
 Most of us are familiar with [Apple’s Siri](https://en.wikipedia.org/wiki/Siri), [Google Now](https://en.wikipedia.org/wiki/Google_Now), and [Microsoft’s Cortana](https://en.wikipedia.org/wiki/Microsoft_Cortana). These digital assistants are great at retrieving information from select sources and doing other assistant-y things like calculating a tip and setting a reminder. As far as interacting with the web, however, they don’t… yet. We can engage with them, but they can‘t (necessarily) engage with a web page.
 
-Exposing the information stored in our webpages via semantic HTML and structured syntaxes like [microformats](http://microformats.org/), [microdata](https://en.wikipedia.org/wiki/Microdata_(HTML)), and [RDFa](https://en.wikipedia.org/wiki/RDFa) *should* eventually make our content available to these assistants, but we don’t really know. Their various makers haven’t really given us any clue as to how to do that and, as it stands right now, none of them can look up a web page and read it to you. For that you need to invoke a screen reader.
+Exposing the information stored in our webpages via semantic HTML and structured syntaxes like [microformats](http://microformats.org/), [microdata](<https://en.wikipedia.org/wiki/Microdata_(HTML)>), and [RDFa](https://en.wikipedia.org/wiki/RDFa) _should_ eventually make our content available to these assistants, but we don’t really know. Their various makers haven’t really given us any clue as to how to do that and, as it stands right now, none of them can look up a web page and read it to you. For that you need to invoke a screen reader.
 
 Each company offers a first-party screen reader. And all are capable of helping you interact with a page, including helping you fill in forms, without having to see the page. And yet, these technologies have not been coupled with their corresponding assistants. It probably won’t be long before we see that happen.
 
@@ -273,10 +272,10 @@ Interestingly, Microsoft has given us a peek at what it might be like to design 
 In Windows 10, installable web apps can include a [Voice Command Definition (VCD) file](https://msdn.microsoft.com/en-us/library/windows/apps/dn722331.aspx) in the `head` of the page to enable custom commands:
 
 ```html
-<meta name="msapplication-cortanavcd" content="http://myapp.io/vcd.xml">
+<meta name="msapplication-cortanavcd" content="http://myapp.io/vcd.xml" />
 ```
 
-The referenced VCD file is simply an XML file defining the keyword for the web app and commands that can be issued. 
+The referenced VCD file is simply an XML file defining the keyword for the web app and commands that can be issued.
 
 Using very basic syntax, The VCD identifies optional pieces of a given phrase and variables Cortana should extract:
 
@@ -333,8 +332,8 @@ This is an incredibly exciting time, not just for the responsive design communit
 
 <hr>
 
-*Responsive Day Out 3: The Final Breakpoint was held in Brighton, UK on 19 June 2015.*
+_Responsive Day Out 3: The Final Breakpoint was held in Brighton, UK on 19 June 2015._
 
-* [Listen to this presentation on Huffduffer](https://huffduffer.com/adactio/243780).
-* Read [Orde Saunders’ notes](https://decadecity.net/blog/2015/06/19/aaron-gustafson-where-do-we-go-here) from my talk.
-* Read [Hidde de Vries’ recap of the day](https://hiddedevries.nl/en/blog/2015-06-20-responsive-day-out-3-the-final-breakpoint/).
+- [Listen to this presentation on Huffduffer](https://huffduffer.com/adactio/243780).
+- Read [Orde Saunders’ notes](https://decadecity.net/blog/2015/06/19/aaron-gustafson-where-do-we-go-here) from my talk.
+- Read [Hidde de Vries’ recap of the day](https://hiddedevries.nl/en/blog/2015-06-20-responsive-day-out-3-the-final-breakpoint/).

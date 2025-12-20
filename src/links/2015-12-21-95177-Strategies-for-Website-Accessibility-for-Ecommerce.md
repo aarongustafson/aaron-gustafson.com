@@ -7,4 +7,4 @@ in_reply_to: https://www.practicalecommerce.com/articles/95177-Strategies-for-We
 ref_source: Practical Ecommerce
 ---
 
-Accessibility is just good customer service. If you run an commerce shop, you should be following this article’s advice. Heck, if you run *any* kind of site, you should do it.
+Accessibility is just good customer service. If you run an commerce shop, you should be following this article’s advice. Heck, if you run _any_ kind of site, you should do it.

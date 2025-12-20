@@ -2,7 +2,7 @@
 title: "Competing on “Chrome”"
 date: 2015-01-21 15:20:40 -05:00
 comments: true
-tags: [browsers,"web design","web standards"]
+tags: [browsers, "web design", "web standards"]
 description: "Watching the Windows 10 announcement and the “unveiling” of its new browser, codenamed “Project Spartan”, I was amazed… not by what it was so much as what it wasn’t."
 ---
 
@@ -33,7 +33,11 @@ Which brings me back to today’s announcement. Standards-compliance wasn’t me
 This is a major milestone for IE in my opinion and it makes me wonder if we’ve finally reached the place that Chris dreamed about all those years ago. I certainly hope so.
 
 [^1]: I was told that, internally, decision-makers felt the browser was “done” and there would be no more advancements on the Web that would require a new browser.
-[^2]: An apt metaphor, Firefox was originally Phoenix, then later Firebird, before eventually becoming Firefox. 
+
+[^2]: An apt metaphor, Firefox was originally Phoenix, then later Firebird, before eventually becoming Firefox.
+
 [^3]: You may not realize it, but Opera Mobile predated even IE6. And it’s Opera Mini variant touts big numbers too: In April 2014, there were over 267 million Opera mobile browser users (244 million of whom used Opera Mini) and Opera Mini users viewed over 177 billion pages in that same month. ([Source](http://www.operasoftware.com/smw/2014-04))
+
 [^4]: The Chrome browser, from Google, did not exist at this time. By "chrome" he meant the window around a webpage—it toolbars, buttons, menus, and other browser-based functionality.
+
 [^5]: The only phrases that even hint at standards compliance were “modern Web” and “a new rendering engine… that is compatible with how the Web is written today” (starting at around 59:05 in [the video](https://ll.ms-studiosmedia.com/events/2015/1501/Windows10CP/live/Windows10CP.html?title=Windows10CP-mscom)).

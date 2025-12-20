@@ -4,111 +4,105 @@
 Navigation
 \*------------------------------------*/
 
-[role=navigation] {
-  
-  text-align: center;
+[role="navigation"] {
+	text-align: center;
 
-  @include rem( padding-bottom, $default-spacing );
+	@include rem(padding-bottom, $default-spacing);
 
-  p {
-    margin: 0;
-  }
-  
-  a {
-    @include rem( font-size, $font-size-nav );
-    font-weight: bold;
-    display: block;
-    padding: .5em 1em;
+	p {
+		margin: 0;
+	}
 
-    @supports (margin-block: 1em) {
-      @include unset( padding );
-      padding-block: .5em;
-      padding-inline: 1em;
-    }
-  }
-  
+	a {
+		@include rem(font-size, $font-size-nav);
+		font-weight: bold;
+		display: block;
+		padding: 0.5em 1em;
+
+		@supports (margin-block: 1em) {
+			@include unset(padding);
+			padding-block: 0.5em;
+			padding-inline: 1em;
+		}
+	}
 }
 
 .main-navigation {
-  
-  &__link {
-    text-decoration: none;
-  }
-  
-  &__link:hover,
-  &__link:focus,
-  &__link:active,
-  mark &__link {
-    background-color: $color-link-hover;
-    color: $color-white;
+	&__link {
+		text-decoration: none;
+	}
 
-    html.dark-mode & {
-      background-color: $color-dark-teal;
-      color: $color-white;
-    }
-  }
-  
-  // no search needed on small screens
-  [role=navigation] &__link--search {
-    display: none;
-  }
+	&__link:hover,
+	&__link:focus,
+	&__link:active,
+	mark &__link {
+		background-color: $color-link-hover;
+		color: $color-white;
+
+		html.dark-mode & {
+			background-color: $color-dark-teal;
+			color: $color-white;
+		}
+	}
+
+	// no search needed on small screens
+	[role="navigation"] &__link--search {
+		display: none;
+	}
 }
 
 .form--search {
-  
-  [type=search] {
-    @include rem( font-size, $font-size-nav );
-    
-    appearance: none;
-    border: 1px solid;
-    border-radius: 3px;
-    @include rem( margin, 0 5 0 0 );
+	[type="search"] {
+		@include rem(font-size, $font-size-nav);
 
-    @supports (margin-block: 1em) {
-      margin: 0;
-      margin-inline-end: 5px;
-    }
-  }
-  
-  button {
-    font-weight: bold;
-    @include rem( font-size, $font-size-small );
-  }
-  
+		appearance: none;
+		border: 1px solid;
+		border-radius: 3px;
+		@include rem(margin, 0 5 0 0);
+
+		@supports (margin-block: 1em) {
+			margin: 0;
+			margin-inline-end: 5px;
+		}
+	}
+
+	button {
+		font-weight: bold;
+		@include rem(font-size, $font-size-small);
+	}
 }
 
 // Better layout: Flexbox
 @supports (display: flex) {
-  [role=search] {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
+	[role="search"] {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 100%;
 
-    @supports (margin-block: 1em) {
-      width: unset;
-      inline-size: 100%;
-    }
-  }
+		@supports (margin-block: 1em) {
+			width: unset;
+			inline-size: 100%;
+		}
+	}
 }
 
 @media screen and (min-width: #{$bp-medium-em}) {
-	
-	[role=navigation] {
+	[role="navigation"] {
 		background: $color-green;
 		color: $color-background;
-		
+
 		padding-bottom: 0;
 
 		@supports (margin-block: 1em) {
 			padding-bottom: unset;
 			padding-block-end: 0;
 		}
-		
+
 		.layout-container {
 			position: relative;
 		}
-		
+
 		a:link,
 		a:visited,
 		a:hover,
@@ -121,12 +115,12 @@ Navigation
 		html.dark-mode & {
 			background: $color-teal;
 			color: $color-background-dark;
-			
+
 			a:link,
 			a:visited {
 				color: $color-background-dark;
 			}
-			
+
 			a:hover,
 			a:focus,
 			a:active,
@@ -135,20 +129,19 @@ Navigation
 				color: $color-white;
 			}
 		}
-		
 	}
-	
+
 	.main-navigation {
 		@include clearfix;
-		
+
 		&__item {
 			float: left;
-			
+
 			&:first-child {
-				margin-left: -.5em;
+				margin-left: -0.5em;
 			}
 			&:last-child {
-				margin-right: -.5em;
+				margin-right: -0.5em;
 			}
 
 			@supports (margin-block: 1em) {
@@ -156,49 +149,49 @@ Navigation
 
 				&:first-child {
 					margin-left: unset;
-					margin-inline-start: -.5em;
+					margin-inline-start: -0.5em;
 				}
 
 				&:last-child {
 					margin-right: unset;
-					margin-inline-end: -.5em;
+					margin-inline-end: -0.5em;
 				}
 			}
 		}
-		
-		[role=navigation] &__link {
-			padding: .2em .75em;    
-			
+
+		[role="navigation"] &__link {
+			padding: 0.2em 0.75em;
+
 			position: relative;
 
 			@supports (margin-block: 1em) {
 				padding: unset;
-				padding-block: .2em;
-				padding-inline: .75em;
+				padding-block: 0.2em;
+				padding-inline: 0.75em;
 			}
-			
+
 			&--search {
 				display: block;
 			}
-			
+
 			&::after {
 				content: "";
-				
+
 				background: $color-green-dark;
-				
+
 				display: block;
 				height: 3px;
 				width: 100%;
-				
-				transition: transform .25s;
-				transform: scaleX( 0 );
-				
+
+				transition: transform 0.25s;
+				transform: scaleX(0);
+
 				position: absolute;
 				top: 100%;
 				left: 0;
 
 				@supports (margin-block: 1em) {
-					@include unset( height width top left );
+					@include unset(height width top left);
 					block-size: 2px;
 					inline-size: 100%;
 					inset-block-start: 100%;
@@ -211,7 +204,7 @@ Navigation
 			}
 		}
 	}
-	
+
 	/*
 	.form--search {
 		margin: 0;
@@ -245,10 +238,9 @@ Navigation
 		
 	}
 	*/
-	
+
 	// Better layout: Flexbox
 	@supports (display: flex) {
-		
 		.alert {
 			margin-bottom: 0;
 
@@ -257,8 +249,8 @@ Navigation
 				margin-block-end: 0;
 			}
 		}
-		
-		[role=navigation] {
+
+		[role="navigation"] {
 			margin-top: 0;
 
 			@supports (margin-block: 1em) {
@@ -266,18 +258,15 @@ Navigation
 				margin-block-start: 0;
 			}
 		}
-		
+
 		.main-navigation {
-			
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
-			
+
 			&__item {
 				float: none;
 			}
-			
 		}
 	}
-	
 }

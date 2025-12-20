@@ -2,7 +2,7 @@
 title: "Playing with Flexbox and Quantity Queries"
 date: 2015-03-26 14:44:24 -04:00
 comments: true
-tags: [ "web design", experiments, CSS ]
+tags: ["web design", experiments, CSS]
 description: "While flying across the U.S. this week, I decided to play around with Flexbox and quantity queries in hopes of coming up with something interesting."
 translations:
   fr: https://la-cascade.io/jouons-avec-flexbox-et-les-quantity-queries/
@@ -20,7 +20,7 @@ Here’s a brief overview of the project:
 
 <figure id="2015-03-26-1" class="media-container">
 
-  ![]({{ site.url }}/i/posts/2015-03-26/the-idea-lg.jpg)
+![]({{ site.url }}/i/posts/2015-03-26/the-idea-lg.jpg)
 
   <figcaption>My sketch of the idea.</figcaption>
 </figure>
@@ -62,7 +62,7 @@ This simple CSS gives you exactly what you’d expect: a vertical list of events
 
 <figure id="2015-03-26-2" class="media-container">
 
-  ![]({{ site.url }}/i/posts/2015-03-26/first-pass-lg.jpg)
+![]({{ site.url }}/i/posts/2015-03-26/first-pass-lg.jpg)
 
 </figure>
 
@@ -85,18 +85,17 @@ Next up, I tackled the first breakpoint at 28.75em:
 }
 
 @media only screen and (min-width: 28.75em) {
-  
   /* 20px gap divided by 2 events per row */
   .event {
-    flex: 0 0 calc( 50% - 1.25rem / 2 );
+    flex: 0 0 calc(50% - 1.25rem / 2);
     margin-left: 1.25rem; /* 20px < */
   }
-  
+
   /* Remove left margin for row starters */
   .event:nth-child(odd) {
     margin-left: 0;
   }
-  
+
   /* Reset margins on "future" events
      & remove the correct one */
   .event--future:nth-child(odd) {
@@ -105,15 +104,14 @@ Next up, I tackled the first breakpoint at 28.75em:
   .event--future:nth-child(even) {
     margin-left: 0;
   }
-  
+
   /* Quantity Query - when more than 1,
      make the first span both columns  */
-  .event--future:nth-last-child(n+1):first-child {
+  .event--future:nth-last-child(n + 1):first-child {
     flex: 0 0 100%;
     font-size: 1.5em;
     margin-left: 0;
   }
-  
 }
 ```
 
@@ -125,7 +123,7 @@ Then I used a quantity query to select the first future event when there is more
 
 <figure id="2015-03-26-3" class="media-container">
 
-  ![]({{ site.url }}/i/posts/2015-03-26/second-pass-lg.jpg)
+![]({{ site.url }}/i/posts/2015-03-26/second-pass-lg.jpg)
 
 </figure>
 
@@ -148,18 +146,17 @@ Finally, I could tackle the third and most complicated layout. Things seemed to 
 }
 
 @media only screen and (min-width: 28.75em) {
-  
   /* 20px gap divided by 2 events per row */
   .event {
-    flex: 0 0 calc( 50% - 1.25rem / 2 );
+    flex: 0 0 calc(50% - 1.25rem / 2);
     margin-left: 1.25rem; /* 20px < */
   }
-  
+
   /* Remove left margin for row starters */
   .event:nth-child(odd) {
     margin-left: 0;
   }
-  
+
   /* Reset margins on "future" events
      & remove the correct one */
   .event--future:nth-child(odd) {
@@ -168,22 +165,20 @@ Finally, I could tackle the third and most complicated layout. Things seemed to 
   .event--future:nth-child(even) {
     margin-left: 0;
   }
-  
+
   /* Quantity Query - when more than 1,
      make the first span both columns  */
-  .event--future:nth-last-child(n+1):first-child {
+  .event--future:nth-last-child(n + 1):first-child {
     flex: 0 0 100%;
     font-size: 1.5em;
     margin-left: 0;
   }
-  
 }
 
 @media only screen and (min-width: 43.125em) {
-
   /* 1/3 width with 20px gutter */
   .event {
-    flex: 0 0 calc( 100% / 3 - .875rem );
+    flex: 0 0 calc(100% / 3 - 0.875rem);
   }
 
   /* Reset margins */
@@ -192,32 +187,32 @@ Finally, I could tackle the third and most complicated layout. Things seemed to 
     margin-left: 1.25rem;
   }
   /* Normal Grid margin removal */
-  .event:nth-child(3n+1) {
+  .event:nth-child(3n + 1) {
     margin-left: 0;
   }
-  
+
   /* Correct margins for the future events */
-  .event--future:nth-child(3n+1) {
+  .event--future:nth-child(3n + 1) {
     margin-left: 1.25rem;
   }
-  
+
   /* Quantity Query - when more than 2,
      make the first 2 go 50%  */
-  .event--future:nth-last-child(n+2):first-child, 
-  .event--future:nth-last-child(n+2):first-child + .event--future {
-    flex: 0 0 calc( 50% - 1.25rem / 2 );
+  .event--future:nth-last-child(n + 2):first-child,
+  .event--future:nth-last-child(n + 2):first-child + .event--future {
+    flex: 0 0 calc(50% - 1.25rem / 2);
     font-size: 1.5em;
   }
-  
+
   /* Quantity + nth for margin removal */
-  .event--future:nth-last-child(n+2):first-child ~ .event--future:nth-child(3n) {
+  .event--future:nth-last-child(n + 2):first-child
+    ~ .event--future:nth-child(3n) {
     margin-left: 0;
   }
-  
 }
 ```
 
-In this final pass, I used a slightly more complicated calculation to set the width of each child to 1/3 of the parent minus the gutters between them (100% / 3 - 0.875rem). 
+In this final pass, I used a slightly more complicated calculation to set the width of each child to 1/3 of the parent minus the gutters between them (100% / 3 - 0.875rem).
 
 If you’re paying close attention, you might wonder why the gutter being used in the calculation is 0.875rem rather than the full 1.25rem. Well, the reason is (as best I can surmise) rounding. In order to get the flex width to fill the parent without causing a wrap, 14px (0.875rem) seemed to be the magic number.
 
@@ -231,7 +226,7 @@ To handle the margins in the quantity query instance, I added all the margins ba
 
 <figure id="2015-03-26-4" class="media-container">
 
-  ![]({{ site.url }}/i/posts/2015-03-26/third-pass-lg.jpg)
+![]({{ site.url }}/i/posts/2015-03-26/third-pass-lg.jpg)
 
 </figure>
 
@@ -239,7 +234,8 @@ To handle the margins in the quantity query instance, I added all the margins ba
 
 And there you have it. In about 80 lines of very generously spaced and commented CSS, we’ve got a flexible grid-based Flexbox layout with visual enhancements injected via quantity queries. I’m sure I’ll continue to tinker, but I’m pretty happy with the results so far.
 
-You can view [the final page of course](/speaking-engagements/) (or [watch a video of the interaction](https://www.youtube.com/watch?v=V20wuGM2tzU)), but I also created a [distilled demo on Codepen for you to play with](http://codepen.io/aarongustafson/pen/VYRZBP). 
+You can view [the final page of course](/speaking-engagements/) (or [watch a video of the interaction](https://www.youtube.com/watch?v=V20wuGM2tzU)), but I also created a [distilled demo on Codepen for you to play with](http://codepen.io/aarongustafson/pen/VYRZBP).
 
 [^1]: If you aren’t familiar with Flexbox, [CSS Tricks has a great cheatsheet](https://css-tricks.com/snippets/css/a-guide-to-flexbox/).
+
 [^2]: Interestingly, the support matrices for [`calc()`](http://caniuse.com/#feat=calc) and [Flexbox](http://caniuse.com/#feat=flexbox) are pretty well aligned.

@@ -5,45 +5,41 @@
 \*------------------------------------*/
 
 .subsection {
+	&__header {
+		@include rem(font-size, 18);
+		text-align: center;
+		text-transform: uppercase;
 
-  &__header {
+		&::before,
+		&::after {
+			font-size: 0.75em;
+			display: block;
+		}
 
-    @include rem( font-size, 18 );
-    text-align: center;
-    text-transform: uppercase;
+		&::before {
+			content: "\2726\00A0\2726\00A0\2726";
+			@include rem(margin, 0 0 $table-spacing);
 
-    &::before,
-    &::after {
-      font-size: 0.75em;
-      display: block;
-    }
+			@supports (margin-block: 1em) {
+				margin: 0;
+				@include rem(margin-block-end, $table-spacing, false);
+			}
+		}
 
-    &::before {
-      content: '\2726\00A0\2726\00A0\2726';
-      @include rem( margin, 0 0 $table-spacing );
+		&::after {
+			content: "\2726\00A0\2726\00A0\2726";
+			@include rem(margin, $table-spacing 0 0);
 
-      @supports (margin-block: 1em) {
-        margin: 0;
-        @include rem( margin-block-end, $table-spacing, false );
-      }
-    }
+			@supports (margin-block: 1em) {
+				margin: 0;
+				@include rem(margin-block-start, $table-spacing, false);
+			}
+		}
 
-    &::after {
-      content: '\2726\00A0\2726\00A0\2726';
-      @include rem( margin, $table-spacing 0 0 );
-
-      @supports (margin-block: 1em) {
-        margin: 0;
-        @include rem( margin-block-start, $table-spacing, false );
-      }
-    }
-
-    b {
-      white-space: nowrap;
-    }
-
-  }
-
+		b {
+			white-space: nowrap;
+		}
+	}
 
 	@media screen and (min-width: #{$bp-medium-em}) {
 		&__header::before,
@@ -60,10 +56,10 @@
 		}
 
 		&__header::before {
-			content: '\2726\00A0\2726\00A0\2726\00A0\00A0';
+			content: "\2726\00A0\2726\00A0\2726\00A0\00A0";
 		}
 		&__header::after {
-			content: '\00A0\00A0\2726\00A0\2726\00A0\2726';
+			content: "\00A0\00A0\2726\00A0\2726\00A0\2726";
 		}
 	}
 }

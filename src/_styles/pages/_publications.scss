@@ -5,9 +5,7 @@
 \*------------------------------------*/
 
 .publications {
-
-  .subsection__header {
-    @include rem( margin-block-start, 60 );
-  }
-
+	.subsection__header {
+		@include rem(margin-block-start, 60);
+	}
 }

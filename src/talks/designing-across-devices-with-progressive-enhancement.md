@@ -2,8 +2,15 @@
 title: "Designing Across Devices with Progressive Enhancement"
 description: "Today, browsers are just one of the issues among a sea of considerations like accessibility, device compatibility, and responsive or adaptive design. And with new techniques and devices coming out daily, it’s easy to feel overwhelmed."
 category: webinar
-tags: [ "accessibility", "inclusive design", "mobile", "progressive enhancement", "responsive web design" ]
-events: [ 71 ]
+tags:
+  [
+    "accessibility",
+    "inclusive design",
+    "mobile",
+    "progressive enhancement",
+    "responsive web design",
+  ]
+events: [71]
 date: 2013-11-21T13:30:00-0400
 hero: "designing-across-devices-with-progressive-enhancement.png"
 ratio: "4x3"
@@ -27,28 +34,28 @@ Fortunately, I know how to wrangle all of these elements using progressive enhan
 
 Create experiences without technological constraints
 
-* Understand progressive enhancement and integrate it with your process
-* Use content as your foundation and build the experience from there
+- Understand progressive enhancement and integrate it with your process
+- Use content as your foundation and build the experience from there
 
 Stop assuming users are just like you
 
-* Come to a better understanding of how existing design decisions can unintentionally skew your analytics
-* Prevent the typical myopic view of web and mobile experiences
+- Come to a better understanding of how existing design decisions can unintentionally skew your analytics
+- Prevent the typical myopic view of web and mobile experiences
 
 Make a content­-first approach work
 
-* Fuse responsive web design and mobile­-first with progressive enhancement
-* Focus content, core tasks, and visual designs on a continuum
+- Fuse responsive web design and mobile­-first with progressive enhancement
+- Focus content, core tasks, and visual designs on a continuum
 
 Establish a solid strategy for planning
 
-* Sketch different experiences using basic UI elements and flow charts
-* Plan decision points and outcomes from simple through complex interactions
+- Sketch different experiences using basic UI elements and flow charts
+- Plan decision points and outcomes from simple through complex interactions
 
 Join us for this seminar if you:
 
-* Need a manageable design process that works for your whole team
-* Feel your sanity slipping away as more devices launch every. single. day.
-* Want to plan, design, and test all potential experiences across platforms
+- Need a manageable design process that works for your whole team
+- Feel your sanity slipping away as more devices launch every. single. day.
+- Want to plan, design, and test all potential experiences across platforms
 
 If you’re trying to create a better web ­­ and are open to rethinking how you approach designing for any interface, then you need to watch Aaron’s seminar.

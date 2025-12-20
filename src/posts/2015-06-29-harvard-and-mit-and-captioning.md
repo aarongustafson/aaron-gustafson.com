@@ -2,7 +2,7 @@
 title: "Harvard, MIT, and Captioning"
 date: 2015-06-29 14:23:28 -04:00
 comments: true
-tags: [accessibility,"web design"]
+tags: [accessibility, "web design"]
 description: "The U.S. Department of Justice has sided with the National Association of the Deaf in their cases against Harvard and MIT over online captioning."
 ---
 
@@ -12,11 +12,11 @@ The U.S. Department of Justice (DOJ) has published Statements of Interest in two
 
 The DOJ Statements make it quite clear that
 
-> Both the ADA and Section 504 currently obligate Harvard to provide effective communication to ensure equal access to its online programming services, and resolution of Plaintiffs’ claim involves a straightforward application of longstanding statutory and regulatory requirements. For more than two decades, federal courts have resolved effective communication claims brought under the ADA and Section 504 in a wide range of contexts, including claims alleging unequal access to goods, benefits and services provided through websites or other electronic media. And the Departments of Justice and Education have routinely required covered entities to ensure equal access to goods, benefits and services, electronic or otherwise, through the provision of captioning or other auxiliary aids or services. 
+> Both the ADA and Section 504 currently obligate Harvard to provide effective communication to ensure equal access to its online programming services, and resolution of Plaintiffs’ claim involves a straightforward application of longstanding statutory and regulatory requirements. For more than two decades, federal courts have resolved effective communication claims brought under the ADA and Section 504 in a wide range of contexts, including claims alleging unequal access to goods, benefits and services provided through websites or other electronic media. And the Departments of Justice and Education have routinely required covered entities to ensure equal access to goods, benefits and services, electronic or otherwise, through the provision of captioning or other auxiliary aids or services.
 
 Also…
 
-> [T]he Department issued an Advanced Notice of Proposed Rulemaking (“ANPRM”) on Accessibility of Web Information and Services of State and Local Government Entities and Public Accommodations, announcing the Department’s interest in developing more specific requirements or technical standards for  website accessibility. … In the ANPRM, the Department reaffirmed its longstanding position that the ADA applies to websites of public accommodations, and reiterated, consistent with the preamble to the 1991 regulations, that the ADA regulations should be interpreted to keep pace with developing technologies.
+> [T]he Department issued an Advanced Notice of Proposed Rulemaking (“ANPRM”) on Accessibility of Web Information and Services of State and Local Government Entities and Public Accommodations, announcing the Department’s interest in developing more specific requirements or technical standards for website accessibility. … In the ANPRM, the Department reaffirmed its longstanding position that the ADA applies to websites of public accommodations, and reiterated, consistent with the preamble to the 1991 regulations, that the ADA regulations should be interpreted to keep pace with developing technologies.
 
 Neither case has been settled yet, but the fact that the DOJ is siding with the NAD will lend more credence to their complaints and will likely result in one or both institutions settling out of court and, eventually, captioning their videos.
 

@@ -16,7 +16,7 @@ This piece is worth a thorough read. Then a re-read. It’s that important.
 
 Further reading from this site:
 
-* [Who Should Pay?](https://www.aaron-gustafson.com/notebook/who-should-pay/)
-* [How to Apply Progressive Enhancement When JavaScript Seems Like a Requirement](https://www.aaron-gustafson.com/notebook/how-to-apply-progressive-enhancement-when-javascript-seems-like-a-requirement/)
-* [The Web Should Just Work for Everyone](https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/)
-* [PWAs + Desktop = Equity, Opportunity, and Reliability](https://www.aaron-gustafson.com/notebook/PWAs-and-desktop/)
+- [Who Should Pay?](https://www.aaron-gustafson.com/notebook/who-should-pay/)
+- [How to Apply Progressive Enhancement When JavaScript Seems Like a Requirement](https://www.aaron-gustafson.com/notebook/how-to-apply-progressive-enhancement-when-javascript-seems-like-a-requirement/)
+- [The Web Should Just Work for Everyone](https://www.aaron-gustafson.com/notebook/the-web-should-just-work-for-everyone/)
+- [PWAs + Desktop = Equity, Opportunity, and Reliability](https://www.aaron-gustafson.com/notebook/PWAs-and-desktop/)
