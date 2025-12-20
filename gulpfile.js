@@ -1,4 +1,4 @@
-import gulp from 'gulp';
+import gulp from "gulp";
 import config from "./_tasks/config.js";
 const { parallel, series } = gulp;
 const gulpWatch = gulp.watch;
@@ -15,42 +15,42 @@ import styles from "./_tasks/styles.js";
 let taskTimeouts = {};
 
 function debounce(taskName, task, delay = 300) {
-  return () => {
-    clearTimeout(taskTimeouts[taskName]);
-    taskTimeouts[taskName] = setTimeout(task, delay);
-  };
+	return () => {
+		clearTimeout(taskTimeouts[taskName]);
+		taskTimeouts[taskName] = setTimeout(task, delay);
+	};
 }
 
 // Enhanced watcher with debouncing
 const watcher = () => {
-  // Watch JavaScript files
-  gulpWatch(
-    `${config.source}/_javascript/**/*.js`, 
-    { ignoreInitial: true }, 
-    debounce('scripts', scripts, 500)
-  );
-  
-  // Watch image files with longer debounce due to processing time
-  gulpWatch(
-    `${config.source}/_images/**/*`, 
-    { ignoreInitial: true }, 
-    debounce('images', images, 1000)
-  );
-  
-  // Watch SCSS files
-  gulpWatch(
-    `${config.source}/_styles/**/*.scss`, 
-    { ignoreInitial: true }, 
-    debounce('styles', styles, 300)
-  );
-  
-  console.log('👀 Watching for changes...');
+	// Watch JavaScript files
+	gulpWatch(
+		`${config.source}/_javascript/**/*.js`,
+		{ ignoreInitial: true },
+		debounce("scripts", scripts, 500),
+	);
+
+	// Watch image files with longer debounce due to processing time
+	gulpWatch(
+		`${config.source}/_images/**/*`,
+		{ ignoreInitial: true },
+		debounce("images", images, 1000),
+	);
+
+	// Watch SCSS files
+	gulpWatch(
+		`${config.source}/_styles/**/*.scss`,
+		{ ignoreInitial: true },
+		debounce("styles", styles, 300),
+	);
+
+	console.log("👀 Watching for changes...");
 };
 
 // Optimized build sequences
 export default series(
-  parallel(images, styles, scripts), // Assets that can be built in parallel
-  parallel(html, data, sw) // Post-processing tasks
+	parallel(images, styles, scripts), // Assets that can be built in parallel
+	parallel(html, data, sw), // Post-processing tasks
 );
 
 // Development watcher

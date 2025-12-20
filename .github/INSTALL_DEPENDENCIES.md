@@ -7,8 +7,9 @@ npm install axios cheerio html-to-text dotenv
 ```
 
 These dependencies provide:
+
 - `axios` - HTTP client for API requests
-- `cheerio` - Server-side jQuery for HTML parsing  
+- `cheerio` - Server-side jQuery for HTML parsing
 - `html-to-text` - Convert HTML to plain text
 - `dotenv` - Environment variable management (for local testing)
 
@@ -29,13 +30,14 @@ MASTODON_SERVER_URL=https://front-end.social
 BUFFER_ACCESS_TOKEN=your_test_token
 BUFFER_TWITTER_PROFILE_ID=your_profile_id
 BUFFER_BLUESKY_PROFILE_ID=your_profile_id
-PINTEREST_ACCESS_TOKEN=your_test_token  
+PINTEREST_ACCESS_TOKEN=your_test_token
 PINTEREST_BOARD_ID=your_board_id
 SCREENSHOT_API_KEY=your_api_key
 IFTTT_WEBHOOK_KEY=your_webhook_key
 ```
 
 Then test locally:
+
 ```bash
 # Load environment variables and test
 node -r dotenv/config .github/scripts/syndicate-posts.js

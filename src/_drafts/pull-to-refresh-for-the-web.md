@@ -2,7 +2,15 @@
 title: "Pull-to-Refresh for the Web"
 date: 2025-12-06 10:00:00 -07:00
 comments: true
-tags: ["web components", "progressive enhancement", "HTML", "JavaScript", "mobile", "UX"]
+tags:
+  [
+    "web components",
+    "progressive enhancement",
+    "HTML",
+    "JavaScript",
+    "mobile",
+    "UX",
+  ]
 description: "The pull-to-refresh gesture is second nature on mobile apps, but rare on the web. The pull-to-refresh web component brings this familiar interaction pattern to your web applications."
 twitter_text: "Want pull-to-refresh in your web app? Here's a web component that makes it happen."
 ---
@@ -24,15 +32,15 @@ Wrap your content and listen for the refresh event:
 </pull-to-refresh>
 
 <script type="module">
-  import '@aarongustafson/pull-to-refresh';
+  import "@aarongustafson/pull-to-refresh";
 
-  const ptr = document.querySelector('pull-to-refresh');
+  const ptr = document.querySelector("pull-to-refresh");
 
-  ptr.addEventListener('ptr:refresh', (e) => {
+  ptr.addEventListener("ptr:refresh", (e) => {
     // Fetch new data
-    fetch('/api/data')
-      .then(response => response.json())
-      .then(data => {
+    fetch("/api/data")
+      .then((response) => response.json())
+      .then((data) => {
         updateContent(data);
         // Signal completion
         e.detail.complete();
@@ -63,7 +71,8 @@ Customize the text shown during different states:
 <pull-to-refresh
   indicator-text="⬇ Swipe down"
   release-text="🔄 Let go!"
-  refreshing-text="⏳ Loading...">
+  refreshing-text="⏳ Loading..."
+>
   <div>Content here</div>
 </pull-to-refresh>
 ```
@@ -110,14 +119,14 @@ Supported languages include English, Spanish, French, German, Italian, Portugues
 Register custom translations:
 
 ```javascript
-import { PullToRefreshElement } from '@aarongustafson/pull-to-refresh';
+import { PullToRefreshElement } from "@aarongustafson/pull-to-refresh";
 
 PullToRefreshElement.registerTranslations({
-  'pt-BR': {
-    indicator: '↓ Puxe para atualizar',
-    release: '↻ Solte para atualizar',
-    refreshing: '⏳ Atualizando...'
-  }
+  "pt-BR": {
+    indicator: "↓ Puxe para atualizar",
+    release: "↻ Solte para atualizar",
+    refreshing: "⏳ Atualizando...",
+  },
 });
 ```
 
@@ -132,15 +141,15 @@ The component fires events throughout the pull-to-refresh lifecycle:
 - `ptr:refresh-complete` - Refresh completes
 
 ```javascript
-ptr.addEventListener('ptr:pull-start', () => {
-  console.log('User started pulling');
+ptr.addEventListener("ptr:pull-start", () => {
+  console.log("User started pulling");
 });
 
-ptr.addEventListener('ptr:pull-move', (e) => {
-  console.log('Pull distance:', e.detail.distance);
+ptr.addEventListener("ptr:pull-move", (e) => {
+  console.log("Pull distance:", e.detail.distance);
 });
 
-ptr.addEventListener('ptr:refresh', (e) => {
+ptr.addEventListener("ptr:refresh", (e) => {
   doAsyncWork().then(() => {
     e.detail.complete(); // Must call this
   });
@@ -164,6 +173,7 @@ pull-to-refresh {
 ```
 
 Available properties:
+
 - `--ptr-indicator-height` - Height of indicator area (default: 3.125rem)
 - `--ptr-indicator-bg` - Background color (default: ButtonFace)
 - `--ptr-indicator-color` - Text color (default: ButtonText)
@@ -191,15 +201,15 @@ ptr.disabled = true;
 Here's a complete example with fetch:
 
 ```javascript
-const ptr = document.querySelector('pull-to-refresh');
+const ptr = document.querySelector("pull-to-refresh");
 
-ptr.addEventListener('ptr:refresh', async (e) => {
+ptr.addEventListener("ptr:refresh", async (e) => {
   try {
-    const response = await fetch('/api/latest');
+    const response = await fetch("/api/latest");
     const data = await response.json();
     renderData(data);
   } catch (error) {
-    console.error('Refresh failed:', error);
+    console.error("Refresh failed:", error);
   } finally {
     e.detail.complete();
   }
@@ -241,7 +251,7 @@ npm install @aarongustafson/pull-to-refresh
 Import and use:
 
 ```javascript
-import '@aarongustafson/pull-to-refresh';
+import "@aarongustafson/pull-to-refresh";
 ```
 
 Bring a familiar mobile interaction pattern to your web applications—no framework required.

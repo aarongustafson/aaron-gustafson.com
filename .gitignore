@@ -14,6 +14,7 @@ Thumbs.db
 # Node modules and output
 node_modules
 dist
+_dist-before-njk
 src/_includes/css
 src/static/j
 src/static/c

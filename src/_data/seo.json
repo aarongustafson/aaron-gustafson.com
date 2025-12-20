@@ -1,13 +1,13 @@
 {
-  "title": "Aaron Gustafson",
-  "description": "Hi there. My name is Aaron Gustafson and I work on the web.",
-  "url": "https://www.aaron-gustafson.com",
-  "author": "Aaron Gustafson",
-  "twitter": "AaronGustafson",
-  "image": "https://www.aaron-gustafson.com/i/og-logo.png",
-  "options": {
-    "imageWithBaseUrl": false,
-    "titleDivider": " :: ",
-    "twitterCardType": "summary_large_image"
-  }
+	"title": "Aaron Gustafson",
+	"description": "Hi there. My name is Aaron Gustafson and I work on the web.",
+	"url": "https://www.aaron-gustafson.com",
+	"author": "Aaron Gustafson",
+	"twitter": "AaronGustafson",
+	"image": "https://www.aaron-gustafson.com/i/og-logo.png",
+	"options": {
+		"imageWithBaseUrl": false,
+		"titleDivider": " :: ",
+		"twitterCardType": "summary_large_image"
+	}
 }

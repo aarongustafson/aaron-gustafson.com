@@ -2,7 +2,15 @@
 title: "Repeatable Form Fields Made Simple"
 date: 2025-12-06 10:00:00 -07:00
 comments: true
-tags: ["forms", "HTML", "JavaScript", "progressive enhancement", "web components", "web forms"]
+tags:
+  [
+    "forms",
+    "HTML",
+    "JavaScript",
+    "progressive enhancement",
+    "web components",
+    "web forms",
+  ]
 description: "Need to let users add multiple email addresses, phone numbers, or other field groups? The form-repeatable web component handles the duplication, renumbering, and form submission automatically."
 twitter_text: "Add repeatable form field groups with automatic numbering and native form participation."
 series:
@@ -24,13 +32,14 @@ Provide a single field group and the component handles the rest:
   <form-repeatable>
     <div>
       <label for="stop-1">Stop 1</label>
-      <input id="stop-1" type="text" name="stops[]">
+      <input id="stop-1" type="text" name="stops[]" />
     </div>
   </form-repeatable>
 </form>
 ```
 
 The component uses the first child as a template. When users click "Add Another":
+
 1. The template is cloned
 2. Numbers are incremented ("Stop 1" → "Stop 2", `stop-1` → `stop-2`)
 3. The new group is added to the component
@@ -48,15 +57,15 @@ Provide multiple initial groups and the component moves them into Shadow DOM:
   <form-repeatable min="2">
     <div>
       <label for="phone-1">Phone 1</label>
-      <input id="phone-1" type="tel" name="phones[]" value="555-0100">
+      <input id="phone-1" type="tel" name="phones[]" value="555-0100" />
     </div>
     <div>
       <label for="phone-2">Phone 2</label>
-      <input id="phone-2" type="tel" name="phones[]" value="555-0101">
+      <input id="phone-2" type="tel" name="phones[]" value="555-0101" />
     </div>
     <div>
       <label for="phone-3">Phone 3</label>
-      <input id="phone-3" type="tel" name="phones[]">
+      <input id="phone-3" type="tel" name="phones[]" />
     </div>
   </form-repeatable>
 </form>
@@ -73,10 +82,10 @@ Each group can contain multiple related fields:
   <fieldset>
     <legend>Guest 1</legend>
     <label for="guest-name-1">Name</label>
-    <input id="guest-name-1" type="text" name="guest-name-1">
+    <input id="guest-name-1" type="text" name="guest-name-1" />
 
     <label for="guest-email-1">Email</label>
-    <input id="guest-email-1" type="email" name="guest-email-1">
+    <input id="guest-email-1" type="email" name="guest-email-1" />
   </fieldset>
 </form-repeatable>
 ```
@@ -92,7 +101,7 @@ Instead of using the first child, provide a `<template>` element with `{n}` plac
   <template>
     <div>
       <label for="email-{n}">Email {n}</label>
-      <input id="email-{n}" type="email" name="emails[]">
+      <input id="email-{n}" type="email" name="emails[]" />
     </div>
   </template>
 </form-repeatable>
@@ -105,15 +114,21 @@ The `{n}` placeholders are replaced with sequential numbers (1, 2, 3, etc.). The
 Control the number of allowed groups:
 
 ```html
-<form-repeatable min="2" max="5" add-label="Add Team Member" remove-label="Remove Member">
+<form-repeatable
+  min="2"
+  max="5"
+  add-label="Add Team Member"
+  remove-label="Remove Member"
+>
   <div>
     <label for="member-1">Team Member 1</label>
-    <input id="member-1" type="text" name="members[]">
+    <input id="member-1" type="text" name="members[]" />
   </div>
 </form-repeatable>
 ```
 
 This creates a component that:
+
 - Starts with 1 group (allows adding until min is met)
 - Cannot have fewer than 2 groups
 - Cannot have more than 5 groups
@@ -129,7 +144,7 @@ Provide context-appropriate labels:
 <form-repeatable add-label="Add Item" remove-label="Delete Item">
   <div>
     <label for="item-1">Item 1</label>
-    <input id="item-1" type="text" name="items[]">
+    <input id="item-1" type="text" name="items[]" />
   </div>
 </form-repeatable>
 ```
@@ -141,14 +156,14 @@ The `remove-label` is combined with the first label/legend text to create access
 Listen for when groups are added or removed:
 
 ```javascript
-const repeatable = document.querySelector('form-repeatable');
+const repeatable = document.querySelector("form-repeatable");
 
-repeatable.addEventListener('form-repeatable:added', (event) => {
-  console.log('Group added. Total groups:', event.detail.groupCount);
+repeatable.addEventListener("form-repeatable:added", (event) => {
+  console.log("Group added. Total groups:", event.detail.groupCount);
 });
 
-repeatable.addEventListener('form-repeatable:removed', (event) => {
-  console.log('Group removed. Total groups:', event.detail.groupCount);
+repeatable.addEventListener("form-repeatable:removed", (event) => {
+  console.log("Group removed. Total groups:", event.detail.groupCount);
 });
 ```
 
@@ -192,6 +207,7 @@ form-repeatable::part(groups) {
 ```
 
 Available parts:
+
 - `groups` - Container for all groups (CSS grid by default)
 - `group` - Each repeatable group wrapper
 - `content` - Container for group's fields
@@ -240,20 +256,20 @@ Here's a complete event registration form combining regular fields with repeatab
 ```html
 <form id="event-form">
   <label for="event-name">Event Name</label>
-  <input id="event-name" name="eventName" type="text" required>
+  <input id="event-name" name="eventName" type="text" required />
 
   <label for="event-date">Date</label>
-  <input id="event-date" name="eventDate" type="date" required>
+  <input id="event-date" name="eventDate" type="date" required />
 
   <fieldset>
     <legend>Attendees</legend>
     <form-repeatable min="1" max="10">
       <div>
         <label for="attendee-1">Attendee 1</label>
-        <input id="attendee-1" type="text" name="attendees[]" required>
-        
+        <input id="attendee-1" type="text" name="attendees[]" required />
+
         <label for="email-1">Email 1</label>
-        <input id="email-1" type="email" name="emails[]">
+        <input id="email-1" type="email" name="emails[]" />
       </div>
     </form-repeatable>
   </fieldset>
@@ -289,7 +305,7 @@ npm install @aarongustafson/form-repeatable
 Import and use:
 
 ```javascript
-import '@aarongustafson/form-repeatable';
+import "@aarongustafson/form-repeatable";
 ```
 
 A single component instance manages all your repeatable field groups with native form participation—no framework required.

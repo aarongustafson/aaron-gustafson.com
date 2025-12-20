@@ -2,7 +2,15 @@
 title: "Customizable Table Columns for Better UX"
 date: 2025-12-10 10:00:00 -07:00
 comments: true
-tags: ["web components", "progressive enhancement", "HTML", "tables", "accessibility", "UX"]
+tags:
+  [
+    "web components",
+    "progressive enhancement",
+    "HTML",
+    "tables",
+    "accessibility",
+    "UX",
+  ]
 description: "The table-modifiable web component lets users hide and show table columns using the Popover API, making data tables more readable on any screen size."
 twitter_text: "Let users customize which table columns they see. Progressive enhancement meets responsive design."
 ---
@@ -49,7 +57,8 @@ Start with some columns hidden:
 ```html
 <table-modifiable
   removable="Product,Price,Stock,Category,Supplier"
-  start-with="Product,Price">
+  start-with="Product,Price"
+>
   <table>
     <thead>
       <tr>
@@ -86,7 +95,8 @@ Tailor the interface to your content:
   removable="Name,Email,Phone,Address"
   button-label="⚙️ Customize View"
   button-aria-label="Customize which columns are visible in the table"
-  tools-label="Choose Columns to Display">
+  tools-label="Choose Columns to Display"
+>
   <table>
     <!-- table content -->
   </table>
@@ -102,14 +112,17 @@ Use this to match your site's voice or to provide clearer context about what the
 Track which columns users hide or show:
 
 ```javascript
-const table = document.querySelector('table-modifiable');
+const table = document.querySelector("table-modifiable");
 
-table.addEventListener('table-modifiable:change', (event) => {
-  console.log(`Column "${event.detail.column}" is now ${event.detail.visible ? 'visible' : 'hidden'}`);
+table.addEventListener("table-modifiable:change", (event) => {
+  console.log(
+    `Column "${event.detail.column}" is now ${event.detail.visible ? "visible" : "hidden"}`,
+  );
 });
 ```
 
 The `table-modifiable:change` event fires whenever a column's visibility changes. The event detail includes:
+
 - `column`: The column name (matches the text in the `<th>`)
 - `visible`: Boolean indicating whether the column is now shown or hidden
 
@@ -118,6 +131,7 @@ You can use this to save user preferences to localStorage, update analytics, or 
 ## How it works
 
 The component:
+
 1. Reads your `removable` attribute to know which columns can be toggled
 2. Creates a button that triggers a native popover
 3. Generates checkboxes for each removable column
@@ -192,14 +206,14 @@ npm install @aarongustafson/table-modifiable
 Import it in your JavaScript:
 
 ```javascript
-import '@aarongustafson/table-modifiable';
+import "@aarongustafson/table-modifiable";
 ```
 
 Or load from a CDN:
 
 ```html
 <script type="module">
-  import { defineTableModifiable } from 'https://unpkg.com/@aarongustafson/table-modifiable@latest/define.js?module';
+  import { defineTableModifiable } from "https://unpkg.com/@aarongustafson/table-modifiable@latest/define.js?module";
   defineTableModifiable();
 </script>
 ```
@@ -207,6 +221,7 @@ Or load from a CDN:
 ## Browser support
 
 The component requires:
+
 - Custom Elements v1
 - ES Modules
 - Popover API (currently in modern browsers)

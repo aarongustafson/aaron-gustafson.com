@@ -7,9 +7,10 @@ sharing: false
 is_index: true
 body_class: notebook
 permalink: "/notebook/{% if pagination.pageNumber > 0 %}pg-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
-pagination: 
+pagination:
   data: collections.notebook
   alias: posts
   size: 10
 ---
-{% extends "layouts/blog.html" %}
+
+{% extends "layouts/blog.njk" %}

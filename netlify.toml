@@ -21,6 +21,24 @@ feedPath = "/feeds/all.xml"
 limit = 5
 
 [[plugins]]
+package = "netlify-plugin-checklinks"
+[plugins.inputs]
+# Start from a handful of high-level pages and crawl internally
+entryPoints = [
+	"index.html",
+	"notebook/index.html",
+	"speaking-engagements/index.html",
+]
+recursive = true
+pretty = true
+checkExternal = false
+followSourceMaps = false
+
+# Suppress noisy fragment checks and temporarily-expected misses
+skipPatterns = ["#comments", "#slides", "#video", "#i-tanks-"]
+todoPatterns = ["inline JavaScript in dist/404.html"]
+
+[[plugins]]
 package = "netlify-plugin-github-dispatch"
 [plugins.inputs]
 owner = "aarongustafson"

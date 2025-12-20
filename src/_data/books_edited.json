@@ -1,52 +1,52 @@
 [
-  {
-    "title": "Bulletproof Ajax",
-    "author": "Jeremy Keith",
-    "url": "http://amzn.to/1oKNlQD"
-  },
-  {
-    "title": "Designing Web Navigation",
-    "author": "James Kalbach",
-    "url": "http://amzn.to/1oKO6ZW"
-  },
-  {
-    "title": "Designing with Web Standards, 3rd Edition",
-    "author": "Jeffrey Zeldman",
-    "url": "http://amzn.to/SWbEfx"
-  },
-  {
-    "title": "DOM Scripting",
-    "author": "Jeremy Keith",
-    "url": "http://amzn.to/1ioxDIb"
-  },
-  {
-    "title": "Learning Web Design, 3rd Edition",
-    "author": "Jennifer Robbins",
-    "url": "http://amzn.to/1qvIPFd"
-  },
-  {
-    "title": "PPK on JavaScript",
-    "author": "Peter-Paul Koch",
-    "url": "http://amzn.to/UQqFRT"
-  },
-  {
-    "title": "Practical Prototype and script.aculo.us",
-    "author": "Andrew Dupont",
-    "url": "http://amzn.to/1oKW5GA"
-  },
-  {
-    "title": "Pragmatic Guide to JavaScript",
-    "author": "Christophe Porteneuve",
-    "url": "http://amzn.to/1qiJrM6"
-  },
-  {
-    "title": "Transcending CSS: The Fine Art of Web Design",
-    "author": "Andy Clarke and Molly Holzschlag",
-    "url": "http://amzn.to/1ioxape"
-  },
-  {
-    "title": "2022 Web Almanac - PWA",
-    "author": "HTTP Archive",
-    "url": "https://almanac.httparchive.org/en/2022/pwa"
-  }
+	{
+		"title": "Bulletproof Ajax",
+		"author": "Jeremy Keith",
+		"url": "http://amzn.to/1oKNlQD"
+	},
+	{
+		"title": "Designing Web Navigation",
+		"author": "James Kalbach",
+		"url": "http://amzn.to/1oKO6ZW"
+	},
+	{
+		"title": "Designing with Web Standards, 3rd Edition",
+		"author": "Jeffrey Zeldman",
+		"url": "http://amzn.to/SWbEfx"
+	},
+	{
+		"title": "DOM Scripting",
+		"author": "Jeremy Keith",
+		"url": "http://amzn.to/1ioxDIb"
+	},
+	{
+		"title": "Learning Web Design, 3rd Edition",
+		"author": "Jennifer Robbins",
+		"url": "http://amzn.to/1qvIPFd"
+	},
+	{
+		"title": "PPK on JavaScript",
+		"author": "Peter-Paul Koch",
+		"url": "http://amzn.to/UQqFRT"
+	},
+	{
+		"title": "Practical Prototype and script.aculo.us",
+		"author": "Andrew Dupont",
+		"url": "http://amzn.to/1oKW5GA"
+	},
+	{
+		"title": "Pragmatic Guide to JavaScript",
+		"author": "Christophe Porteneuve",
+		"url": "http://amzn.to/1qiJrM6"
+	},
+	{
+		"title": "Transcending CSS: The Fine Art of Web Design",
+		"author": "Andy Clarke and Molly Holzschlag",
+		"url": "http://amzn.to/1ioxape"
+	},
+	{
+		"title": "2022 Web Almanac - PWA",
+		"author": "HTTP Archive",
+		"url": "https://almanac.httparchive.org/en/2022/pwa"
+	}
 ]

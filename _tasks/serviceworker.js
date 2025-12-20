@@ -1,6 +1,6 @@
 /* jshint node: true */
 import gulp from "gulp";
-const {dest, src} = gulp;
+const { dest, src } = gulp;
 import config from "./config.js";
 import path from "path";
 import concat from "gulp-concat";
@@ -20,19 +20,19 @@ const sw_data_file = `${config.source}/_data/sw.json`;
 const sw_data = JSON.parse(fs.readFileSync(sw_data_file));
 
 const sw = () => {
-  
-	return src( path.join( source_folder, "*.js") )
-    // make a file from the folder
-    .pipe( concat('serviceworker.js') )
-		.pipe( replace("{{ VERSION }}", sw_data.version) )
-    .pipe( dest(destination_folder) )
-    .pipe( dest(dist) )
-    // make & write minified version
-    .pipe( rename({suffix: ".min"} ) )
-    .pipe( minify() )
-    .pipe( dest(destination_folder) )
-    .pipe( dest(dist) );
-
+	return (
+		src(path.join(source_folder, "*.js"))
+			// make a file from the folder
+			.pipe(concat("serviceworker.js"))
+			.pipe(replace("{{ VERSION }}", sw_data.version))
+			.pipe(dest(destination_folder))
+			.pipe(dest(dist))
+			// make & write minified version
+			.pipe(rename({ suffix: ".min" }))
+			.pipe(minify())
+			.pipe(dest(destination_folder))
+			.pipe(dest(dist))
+	);
 };
 
 export default sw;

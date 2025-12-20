@@ -1,22 +1,22 @@
 [
-  {
-    "title": "Adaptive Web Design",
-    "subtitle": "Crafting Rich Experiences with Progressive Enhancement (2nd Edition)",
-    "url": "https://adaptivewebdesign.info/2nd-edition/",
-    "author": "Aaron Gustafson",
-    "published": "2015-12-06 12:00:00 -0500",
-    "cover": "adaptive-web-design-2nd.jpg",
-    "width": 129,
-    "notes": "The definitive guide to progressive enhancement, completely revised and rewritten. In this brief book, I chronicle the origins of progressive enhancement—its philosophy and mechanisms—and reveal the countless practical ways you can apply progressive enhancement principles in HTML, CSS, and JavaScript. By understanding progressive enhancement and how to apply it properly, you can craft experiences that serve users (rather than browsers), giving them access to your content from anywhere."
-  },
-  {
-    "title": "Adaptive Web Design",
-    "subtitle": "Crafting Rich Experiences with Progressive Enhancement",
-    "url": "https://adaptivewebdesign.info/1st-edition/",
-    "author": "Aaron Gustafson",
-    "published": "2011-05-30 13:00:00 -0400",
-    "cover": "adaptive-web-design.jpg",
-    "width": 129,
-    "notes": "In this brief book, I chronicle the origins of progressive enhancement—its philosophy and mechanisms—and reveal the countless practical ways you can apply progressive enhancement principles in HTML, CSS, and JavaScript. By understanding progressive enhancement and how to apply it properly, you can craft experiences that serve users (rather than browsers), giving them access to your content from anywhere. Bonus: [You can read it online for free!](http://adaptivewebdesign.info/1st-edition/read/)"
-  }
+	{
+		"title": "Adaptive Web Design",
+		"subtitle": "Crafting Rich Experiences with Progressive Enhancement (2nd Edition)",
+		"url": "https://adaptivewebdesign.info/2nd-edition/",
+		"author": "Aaron Gustafson",
+		"published": "2015-12-06 12:00:00 -0500",
+		"cover": "adaptive-web-design-2nd.jpg",
+		"width": 129,
+		"notes": "The definitive guide to progressive enhancement, completely revised and rewritten. In this brief book, I chronicle the origins of progressive enhancement—its philosophy and mechanisms—and reveal the countless practical ways you can apply progressive enhancement principles in HTML, CSS, and JavaScript. By understanding progressive enhancement and how to apply it properly, you can craft experiences that serve users (rather than browsers), giving them access to your content from anywhere."
+	},
+	{
+		"title": "Adaptive Web Design",
+		"subtitle": "Crafting Rich Experiences with Progressive Enhancement",
+		"url": "https://adaptivewebdesign.info/1st-edition/",
+		"author": "Aaron Gustafson",
+		"published": "2011-05-30 13:00:00 -0400",
+		"cover": "adaptive-web-design.jpg",
+		"width": 129,
+		"notes": "In this brief book, I chronicle the origins of progressive enhancement—its philosophy and mechanisms—and reveal the countless practical ways you can apply progressive enhancement principles in HTML, CSS, and JavaScript. By understanding progressive enhancement and how to apply it properly, you can craft experiences that serve users (rather than browsers), giving them access to your content from anywhere. Bonus: [You can read it online for free!](http://adaptivewebdesign.info/1st-edition/read/)"
+	}
 ]

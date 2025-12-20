@@ -13,80 +13,88 @@ permalink: /web-components/
 
 <h1 class="page__title">Web Components</h1>
 
-<p>A collection of web components I've built and published to help progressively enhance the web.</p>
+<p>
+	A collection of web components I've built and published to help progressively
+	enhance the web.
+</p>
 
 {% if web_components.length > 0 %}
 <ul class="listing listing--web-components">
-  {% for component in web_components %}
-  <li class="listing__item listing__item--{{ loop.index }} web-component" id="{{ component.name }}">
-    <h2 class="listing__item__title">
-      {% if component.github %}
-      <a href="https://github.com/{{ component.github }}">{{ component.name }}</a>
-      {% else %}
-      {{ component.name }}
-      {% endif %}
-    </h2>
+	{% for component in web_components %}
+	<li
+		class="listing__item listing__item--{{ loop.index }} web-component"
+		id="{{ component.name }}"
+	>
+		<h2 class="listing__item__title">
+			{% if component.github %}
+			<a href="https://github.com/{{ component.github }}"
+				>{{ component.name }}</a
+			>
+			{% else %} {{ component.name }} {% endif %}
+		</h2>
 
-    {% if component.description %}
-    <p class="listing__item__description">{{ component.description }}</p>
-    {% endif %}
+		{% if component.description %}
+		<p class="listing__item__description">{{ component.description }}</p>
+		{% endif %} {% if component.npm_package %}
+		<p class="web-component__install">
+			<code class="web-component__install__code"
+				>npm install {{ component.npm_package }}</code
+			>
+		</p>
+		{% endif %}
 
-    {% if component.npm_package %}
-    <p class="web-component__install">
-      <code class="web-component__install__code">npm install {{ component.npm_package }}</code>
-    </p>
-    {% endif %}
-
-    <div class="web-component__links">
-      {% if component.github %}
-      <a href="https://github.com/{{ component.github }}" class="web-component__link">
-        Docs (GitHub)
-      </a>
-      {% endif %}
-      {% if component.demo_url %}
-      <a href="{{ component.demo_url }}" class="web-component__link">
-        Demo
-      </a>
-      {% endif %}
-      {% if component.npm_package %}
-      <a href="https://www.npmjs.com/package/{{ component.npm_package }}" class="web-component__link">
-        npm
-      </a>
-      {% endif %}
-    </div>
-  </li>
-  {% endfor %}
+		<div class="web-component__links">
+			{% if component.github %}
+			<a
+				href="https://github.com/{{ component.github }}"
+				class="web-component__link"
+			>
+				Docs (GitHub)
+			</a>
+			{% endif %} {% if component.demo_url %}
+			<a href="{{ component.demo_url }}" class="web-component__link"> Demo </a>
+			{% endif %} {% if component.npm_package %}
+			<a
+				href="https://www.npmjs.com/package/{{ component.npm_package }}"
+				class="web-component__link"
+			>
+				npm
+			</a>
+			{% endif %}
+		</div>
+	</li>
+	{% endfor %}
 </ul>
 {% else %}
 <p><em>No web components are currently listed. Check back soon!</em></p>
 {% endif %}
 
 <style>
-  .listing {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
+	.listing {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
 
-  .listing__item+.listing__item::before {
-    content: "";
-    inline-size: 4rem;
-    border-top: 1px solid;
-    display: block;
-    margin-block: 0 2rem;
-    margin-inline: auto;
-  }
+	.listing__item + .listing__item::before {
+		content: "";
+		inline-size: 4rem;
+		border-top: 1px solid;
+		display: block;
+		margin-block: 0 2rem;
+		margin-inline: auto;
+	}
 
-  .listing__item__title {
-    font-size: 2rem;
-  }
+	.listing__item__title {
+		font-size: 2rem;
+	}
 
-  .web-component__links {
-    display: flex;
-    gap: 1rem;
-  }
+	.web-component__links {
+		display: flex;
+		gap: 1rem;
+	}
 
-  .web-component__links a {
-    margin: 0;
-  }
+	.web-component__links a {
+		margin: 0;
+	}
 </style>

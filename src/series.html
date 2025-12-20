@@ -12,8 +12,12 @@ permalink: "/notebook/series/index.html"
 
 		<ul class="listing">
 			{% for tag, name in collections.series %}
-				<li class="listing__item"><a href="/notebook/series/{{ tag | replace('series-', '') }}">{{ name }}</a>
-			{% endfor %}
+			<li class="listing__item">
+				<a href="/notebook/series/{{ tag | replace('series-', '') }}"
+					>{{ name }}</a
+				>
+				{% endfor %}
+			</li>
 		</ul>
 	</article>
 </div>

@@ -24,11 +24,11 @@ I believe everyone can benefit from mentorship, whether they are starting out in
 
 My skills and knowledge will probably be most helpful to people interested in any (or all) of the following:
 
-* writing and/or speaking;
-* building a professional practice centered around performance, progressive enhancement, user experience, accessibility, etc.;
-* ethics in web design/development or artificial intelligence (AI);
-* career growth; and/or
-* diversity & inclusion.
+- writing and/or speaking;
+- building a professional practice centered around performance, progressive enhancement, user experience, accessibility, etc.;
+- ethics in web design/development or artificial intelligence (AI);
+- career growth; and/or
+- diversity & inclusion.
 
 I’m open to mentoring in other areas as well, but these are the areas I’m most confident I can help with.
 
@@ -52,29 +52,29 @@ My mentorships last for a full year. Mentees have the option of talking to me fo
 
 ## Can I nominate someone?
 
-If you know someone who you think would benefit from my mentorship, *please nominate them*! All I ask is that you introduce us with some context. The easiest (but most public) way is to [@-message us both on Twitter](https://twitter.com/intent/tweet?text=Hey+@aarongustafson+I%27d+like+to+nominate+YOUR_FRIENDS_HANDLE+for+your+mentorship). If you’d rather keep it private, you can kick off a DM thread with us if your nominee is on Twitter too ([my DMs are open](https://twitter.com/aarongustafson)). You can also start the conversation by [dropping me a note through the contact form on this site](/contact/) or sending me a message on any of the various platforms I frequent (e.g., [LinkedIn](https://www.linkedin.com/in/aarongustafson)).
+If you know someone who you think would benefit from my mentorship, _please nominate them_! All I ask is that you introduce us with some context. The easiest (but most public) way is to [@-message us both on Twitter](https://twitter.com/intent/tweet?text=Hey+@aarongustafson+I%27d+like+to+nominate+YOUR_FRIENDS_HANDLE+for+your+mentorship). If you’d rather keep it private, you can kick off a DM thread with us if your nominee is on Twitter too ([my DMs are open](https://twitter.com/aarongustafson)). You can also start the conversation by [dropping me a note through the contact form on this site](/contact/) or sending me a message on any of the various platforms I frequent (e.g., [LinkedIn](https://www.linkedin.com/in/aarongustafson)).
 
 ## Past Mentees
 
 I am honored to have played a small role in the careers of some truly amazing people:
 
-* [Adewale Abati](https://www.adewaleabati.com/)
-* [Amy Carney](https://theamycarney.com/)
-* [Mateo Chávez](http://teochavez.com)
-* [Gift Egwuenu](https://giftegwuenu.com/)
-* [Obinna Ekwuno](https://www.obinnaspeaks.dev/)
-* [Meryl Evans](https://meryl.net/)
-* [Jacqueline Gibson](https://www.linkedin.com/in/gibsonjacqueline)
-* [Sarah Higley](https://sarahmhigley.com/)
-* [Adriana Jara](https://tropicadri.com/)
-* [Manuel Matuzović](https://www.matuzo.at/)
-* [Nitya Narasimhan](https://github.com/nitya)
-* [Olu Niyi-Awosusi](https://olu.online/)
-* [Gertrude Nyenyeshi](https://github.com/gertie-sheshe)
-* [Brenda Ray (née Hoyle)](https://www.linkedin.com/in/brendaray/)
-* [Amberley Romo](https://amberley.dev/)
-* [Stephanie Stimac](https://seaotta.dev/)
-* [Miriam Suzanne](https://www.miriamsuzanne.com/)
-* [Marcy Sutton](https://marcysutton.com/)
-* [Sara Wegman](https://sarasportfol.io/)
-* [Desirée Zamora García](https://www.linkedin.com/in/dzg123/)
+- [Adewale Abati](https://www.adewaleabati.com/)
+- [Amy Carney](https://theamycarney.com/)
+- [Mateo Chávez](http://teochavez.com)
+- [Gift Egwuenu](https://giftegwuenu.com/)
+- [Obinna Ekwuno](https://www.obinnaspeaks.dev/)
+- [Meryl Evans](https://meryl.net/)
+- [Jacqueline Gibson](https://www.linkedin.com/in/gibsonjacqueline)
+- [Sarah Higley](https://sarahmhigley.com/)
+- [Adriana Jara](https://tropicadri.com/)
+- [Manuel Matuzović](https://www.matuzo.at/)
+- [Nitya Narasimhan](https://github.com/nitya)
+- [Olu Niyi-Awosusi](https://olu.online/)
+- [Gertrude Nyenyeshi](https://github.com/gertie-sheshe)
+- [Brenda Ray (née Hoyle)](https://www.linkedin.com/in/brendaray/)
+- [Amberley Romo](https://amberley.dev/)
+- [Stephanie Stimac](https://seaotta.dev/)
+- [Miriam Suzanne](https://www.miriamsuzanne.com/)
+- [Marcy Sutton](https://marcysutton.com/)
+- [Sara Wegman](https://sarasportfol.io/)
+- [Desirée Zamora García](https://www.linkedin.com/in/dzg123/)

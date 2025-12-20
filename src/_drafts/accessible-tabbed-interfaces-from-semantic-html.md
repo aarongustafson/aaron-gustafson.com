@@ -2,7 +2,8 @@
 title: "Accessible Tabbed Interfaces from Semantic HTML"
 date: 2025-12-06 10:00:00 -07:00
 comments: true
-tags: ["web components", "progressive enhancement", "HTML", "accessibility", "ARIA"]
+tags:
+  ["web components", "progressive enhancement", "HTML", "accessibility", "ARIA"]
 description: "The tabbed-interface web component transforms heading-structured content into an accessible tabbed interface with full keyboard navigation and ARIA support—no complex markup required."
 twitter_text: "Turn semantic HTML into accessible tabs automatically. Here's how."
 ---
@@ -31,6 +32,7 @@ Wrap heading-structured content in the component:
 ```
 
 The component automatically:
+
 - Creates tab buttons from your headings
 - Builds accessible tab panels from the content
 - Adds proper ARIA attributes
@@ -200,6 +202,7 @@ tabbed-interface::part(tab)[aria-selected="true"] {
 ```
 
 Available parts:
+
 - `tablist` - Container for all tabs
 - `tab` - Individual tab buttons
 - `tabpanel` - Individual tab panel containers
@@ -209,11 +212,12 @@ Available parts:
 Listen for tab changes:
 
 ```javascript
-document.querySelector('tabbed-interface')
-  .addEventListener('tabbed-interface:change', (e) => {
+document
+  .querySelector("tabbed-interface")
+  .addEventListener("tabbed-interface:change", (e) => {
     console.log(`Switched to tab ${e.detail.tabIndex}`);
-    console.log('Tab ID:', e.detail.tabId);
-    console.log('Panel ID:', e.detail.tabpanelId);
+    console.log("Tab ID:", e.detail.tabId);
+    console.log("Panel ID:", e.detail.tabpanelId);
   });
 ```
 
@@ -222,7 +226,7 @@ document.querySelector('tabbed-interface')
 Control tabs via JavaScript:
 
 ```javascript
-const tabs = document.querySelector('tabbed-interface');
+const tabs = document.querySelector("tabbed-interface");
 
 // Navigate
 tabs.next();
@@ -313,7 +317,7 @@ npm install @aarongustafson/tabbed-interface
 Import and use:
 
 ```javascript
-import '@aarongustafson/tabbed-interface';
+import "@aarongustafson/tabbed-interface";
 ```
 
 Based on my original [TabInterface](https://github.com/easy-designs/TabInterface.js) and its [jQuery port](https://github.com/easy-designs/jquery.TabInterface.js), now as a modern Custom Element.

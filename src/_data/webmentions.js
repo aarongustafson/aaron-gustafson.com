@@ -27,12 +27,12 @@ const COMPRESSION_THRESHOLD = 1024 * 1024; // Use compression for files > 1MB
 
 /**
  * Determines if the processed cache needs to be regenerated based on cache state.
- * 
+ *
  * @param {Object|null} processedData - Previously processed webmentions data
  * @param {Object} cache - Raw webmentions cache from file
  * @param {boolean} cacheHasData - Whether the cache contains webmention data
  * @returns {boolean} True if cache should be reprocessed
- * 
+ *
  * Logic:
  * - Always reprocess if no processed data exists
  * - Never reprocess if there's no cache data to process
@@ -43,7 +43,7 @@ function shouldReprocessCache(processedData, cache, cacheHasData) {
 	if (!processedData) return true;
 	if (!cacheHasData) return false;
 	if (!processedData.lastProcessed) return true;
-	
+
 	const cacheDate = new Date(cache.lastFetched || 0);
 	const processedDate = new Date(processedData.lastProcessed);
 	return cacheDate > processedDate;
@@ -56,14 +56,14 @@ function createOptimizedWebmentionData(webmentions) {
 		urlIndex: {},
 		typeIndex: {},
 		compactData: {},
-		totalCount: webmentions.length
+		totalCount: webmentions.length,
 	};
-	
-	webmentions.forEach(mention => {
+
+	webmentions.forEach((mention) => {
 		const wmId = mention["wm-id"];
 		const target = mention["wm-target"];
 		const type = mention["wm-property"];
-		
+
 		// Store webmention in format compatible with both server and client templates
 		// This maintains compatibility with the client-side WebmentionIO.js expectations
 		data.compactData[wmId] = {
@@ -78,7 +78,7 @@ function createOptimizedWebmentionData(webmentions) {
 			content: mention.content || null,
 			name: mention.name || null,
 			summary: mention.summary || null,
-			
+
 			// Client-side WebmentionIO.js compatibility fields
 			id: wmId,
 			source: mention.url,
@@ -86,28 +86,32 @@ function createOptimizedWebmentionData(webmentions) {
 			data: {
 				url: mention.url,
 				author: mention.author || null,
-				content: mention.content && mention.content.text || mention.content && mention.content.html || mention.content && mention.content.value || null,
-				published_ts: mention.published
+				content:
+					(mention.content && mention.content.text) ||
+					(mention.content && mention.content.html) ||
+					(mention.content && mention.content.value) ||
+					null,
+				published_ts: mention.published,
 			},
 			activity: {
 				type: type,
-				sentence_html: mention.content && mention.content.html || null
-			}
+				sentence_html: (mention.content && mention.content.html) || null,
+			},
 		};
-		
+
 		// Index by target URL for O(1) lookups
 		if (!data.urlIndex[target]) {
 			data.urlIndex[target] = [];
 		}
 		data.urlIndex[target].push(wmId);
-		
+
 		// Index by type for filtering
 		if (!data.typeIndex[type]) {
 			data.typeIndex[type] = [];
 		}
 		data.typeIndex[type].push(wmId);
 	});
-	
+
 	return data;
 }
 
@@ -125,7 +129,7 @@ function readProcessedCache() {
 			console.log(">>> Error reading compressed cache:", e.message);
 		}
 	}
-	
+
 	// Fall back to JSON version
 	if (fs.existsSync(PROCESSED_CACHE_FILE)) {
 		try {
@@ -136,7 +140,7 @@ function readProcessedCache() {
 			console.log(">>> Error reading JSON cache:", e.message);
 		}
 	}
-	
+
 	return null;
 }
 
@@ -145,33 +149,44 @@ function saveProcessedCache(data) {
 	// First, estimate size to determine if compression is needed
 	// Use a rough estimate based on object keys/structure before full stringification
 	const estimatedSize = JSON.stringify(data).length; // Quick estimate
-	
+
 	try {
 		// Only do full stringification once we know we need it
 		const jsonString = JSON.stringify(data);
-		const jsonSize = Buffer.byteLength(jsonString, 'utf8');
-		
+		const jsonSize = Buffer.byteLength(jsonString, "utf8");
+
 		// Always save JSON version as fallback
 		fs.writeFileSync(PROCESSED_CACHE_FILE, jsonString);
-		
+
 		// Use compression for larger datasets
 		if (jsonSize > COMPRESSION_THRESHOLD) {
 			try {
 				const compressed = gzipSync(jsonString);
 				fs.writeFileSync(COMPRESSED_CACHE_FILE, compressed);
-				
-				const compressionRatio = ((jsonSize - compressed.length) / jsonSize * 100).toFixed(1);
-				console.log(`>>> Processed cache compressed: ${compressionRatio}% reduction (${(jsonSize/1024/1024).toFixed(1)}MB -> ${(compressed.length/1024/1024).toFixed(1)}MB)`);
+
+				const compressionRatio = (
+					((jsonSize - compressed.length) / jsonSize) *
+					100
+				).toFixed(1);
+				console.log(
+					`>>> Processed cache compressed: ${compressionRatio}% reduction (${(jsonSize / 1024 / 1024).toFixed(1)}MB -> ${(compressed.length / 1024 / 1024).toFixed(1)}MB)`,
+				);
 			} catch (compressionError) {
-				console.warn(`>>> Failed to compress cache: ${compressionError.message}`);
-				console.log(`>>> Processed cache saved: ${(jsonSize/1024/1024).toFixed(1)}MB`);
+				console.warn(
+					`>>> Failed to compress cache: ${compressionError.message}`,
+				);
+				console.log(
+					`>>> Processed cache saved: ${(jsonSize / 1024 / 1024).toFixed(1)}MB`,
+				);
 			}
 		} else {
-			console.log(`>>> Processed cache saved: ${(jsonSize/1024/1024).toFixed(1)}MB`);
+			console.log(
+				`>>> Processed cache saved: ${(jsonSize / 1024 / 1024).toFixed(1)}MB`,
+			);
 		}
 	} catch (error) {
 		console.error(`>>> Failed to save processed cache: ${error.message}`);
-		console.error('>>> Build may be slower on subsequent runs');
+		console.error(">>> Build may be slower on subsequent runs");
 		// Don't throw - allow build to continue without cache
 	}
 }
@@ -183,11 +198,14 @@ function optimizeWebmention(mention) {
 		"wm-target": mention["wm-target"],
 		"wm-property": mention["wm-property"],
 		url: mention.url,
-		published: mention.published
+		published: mention.published,
 	};
 
 	// Only include author data if it exists and has useful info
-	if (mention.author && (mention.author.name || mention.author.photo || mention.author.url)) {
+	if (
+		mention.author &&
+		(mention.author.name || mention.author.photo || mention.author.url)
+	) {
 		optimized.author = {};
 		if (mention.author.name) optimized.author.name = mention.author.name;
 		if (mention.author.photo) optimized.author.photo = mention.author.photo;
@@ -202,7 +220,8 @@ function optimizeWebmention(mention) {
 		if (mention.content.text) optimized.content.text = mention.content.text;
 		if (mention.content.value) optimized.content.value = mention.content.value;
 		// Include content-type if available
-		if (mention.content["content-type"]) optimized.content["content-type"] = mention.content["content-type"];
+		if (mention.content["content-type"])
+			optimized.content["content-type"] = mention.content["content-type"];
 	}
 
 	// Include name only if it's reasonably short and useful
@@ -216,11 +235,13 @@ function optimizeWebmention(mention) {
 	}
 
 	// Include webmention type properties
-	['like-of', 'repost-of', 'in-reply-to', 'mention-of', 'bookmark-of'].forEach(prop => {
-		if (mention[prop]) {
-			optimized[prop] = mention[prop];
-		}
-	});
+	["like-of", "repost-of", "in-reply-to", "mention-of", "bookmark-of"].forEach(
+		(prop) => {
+			if (mention[prop]) {
+				optimized[prop] = mention[prop];
+			}
+		},
+	);
 
 	// Include wm-source for Twitter/Mastodon detection
 	if (mention["wm-source"]) {
@@ -247,7 +268,7 @@ async function fetchWebmentions(since, perPage = 10000) {
 	if (response.ok) {
 		const feed = await response.json();
 		console.log(
-			`>>> ${feed.children.length} new webmentions fetched from ${API}`
+			`>>> ${feed.children.length} new webmentions fetched from ${API}`,
 		);
 		return feed;
 	}
@@ -307,41 +328,55 @@ export default async function () {
 	let processedData = readProcessedCache();
 	const cache = readFromCache();
 	const cacheHasData = cache.children && cache.children.length > 0;
-	
+
 	// Check if we need to regenerate processed cache
-	const needsReprocessing = shouldReprocessCache(processedData, cache, cacheHasData);
-	
+	const needsReprocessing = shouldReprocessCache(
+		processedData,
+		cache,
+		cacheHasData,
+	);
+
 	if (needsReprocessing && cacheHasData) {
 		console.log(`>>> ${cache.children.length} webmentions loaded from cache`);
 		console.log(">>> Processing webmentions for optimal build performance...");
-		
+
 		const startTime = Date.now();
-		
+
 		// Filter spammers and optimize data
 		const cleanCache = excludeSpammers(cache);
 		const optimizedChildren = cleanCache.children.map(optimizeWebmention);
-		
+
 		// Create optimized data structure
 		processedData = createOptimizedWebmentionData(optimizedChildren);
 		processedData.lastFetched = cache.lastFetched || new Date().toISOString();
-		
+
 		// Save for future builds (only if significant changes)
-		if (!processedData || optimizedChildren.length !== processedData.totalCount) {
+		if (
+			!processedData ||
+			optimizedChildren.length !== processedData.totalCount
+		) {
 			saveProcessedCache(processedData);
 		}
-		
+
 		const processingTime = Date.now() - startTime;
 		console.log(`>>> Processing completed in ${processingTime}ms`);
-		
+
 		// Only calculate expensive size metrics in debug mode
 		if (process.env.VERBOSE === "true" || process.env.DEBUG === "true") {
 			const originalSize = JSON.stringify(cache.children).length;
 			const optimizedSize = JSON.stringify(processedData.compactData).length;
-			const savings = ((originalSize - optimizedSize) / originalSize * 100).toFixed(1);
-			console.log(`>>> Memory optimization: ${savings}% reduction (${(originalSize/1024/1024).toFixed(1)}MB -> ${(optimizedSize/1024/1024).toFixed(1)}MB)`);
+			const savings = (
+				((originalSize - optimizedSize) / originalSize) *
+				100
+			).toFixed(1);
+			console.log(
+				`>>> Memory optimization: ${savings}% reduction (${(originalSize / 1024 / 1024).toFixed(1)}MB -> ${(optimizedSize / 1024 / 1024).toFixed(1)}MB)`,
+			);
 		}
 	} else if (processedData) {
-		console.log(`>>> Using preprocessed webmentions cache (${processedData.totalCount} webmentions) - no processing needed`);
+		console.log(
+			`>>> Using preprocessed webmentions cache (${processedData.totalCount} webmentions) - no processing needed`,
+		);
 	}
 
 	// Handle production updates
@@ -352,20 +387,21 @@ export default async function () {
 		if (feed) {
 			console.log(">>> New webmentions found, updating cache...");
 			const mergedChildren = mergeWebmentions(cache, feed);
-			
+
 			// Save unoptimized version to cache for future fetches
 			const newCache = {
 				lastFetched: new Date().toISOString(),
 				children: mergedChildren,
 			};
 			writeToCache(newCache);
-			
+
 			// Regenerate processed cache with new data
 			const cleanNewCache = excludeSpammers(newCache);
-			const optimizedNewChildren = cleanNewCache.children.map(optimizeWebmention);
+			const optimizedNewChildren =
+				cleanNewCache.children.map(optimizeWebmention);
 			processedData = createOptimizedWebmentionData(optimizedNewChildren);
 			processedData.lastFetched = newCache.lastFetched;
-			
+
 			saveProcessedCache(processedData);
 		}
 	}
@@ -377,19 +413,19 @@ export default async function () {
 			children: [],
 			urlIndex: {},
 			typeIndex: {},
-			totalCount: 0
+			totalCount: 0,
 		};
 	}
-	
+
 	// Convert compact data back to array format for templates
 	const children = Object.values(processedData.compactData);
-	
+
 	return {
 		lastFetched: processedData.lastFetched,
 		children: children,
 		urlIndex: processedData.urlIndex,
 		typeIndex: processedData.typeIndex,
 		compactData: processedData.compactData,
-		totalCount: processedData.totalCount
+		totalCount: processedData.totalCount,
 	};
 }

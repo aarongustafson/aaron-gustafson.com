@@ -1,577 +1,577 @@
 {
-  "code": [
-    {
-      "title": "MooTools Footnotes",
-      "author": "Michael Ficarra",
-      "url": "http://github.com/michaelficarra/MooTools-Footnotes/"
-    },
-    {
-      "title": "NPR’s Responsive Data Tables",
-      "author": "Alyson Hurt",
-      "url": "http://blog.apps.npr.org/2014/05/09/responsive-data-tables.html"
-    }
-  ],
-  "books": [
-    {
-      "title": "Voice Content and Usability",
-      "author": "Preston So",
-      "url": "https://abookapart.com/products/voice-content-and-usability"
-    },
-    {
-      "title": "Studies in Conversational UX Design",
-      "author": "Robert J. Moore, Margaret H. Szymanski, Raphael Arar & Guang-Jie Ren, Editors",
-      "url": "https://link.springer.com/book/10.1007/978-3-319-95579-7"
-    },
-    {
-      "title": "Conversational UX Design: A Practitioner's Guide to the Natural Conversation Framework",
-      "author": "Robert J. Moore and Raphael Arar",
-      "url": "https://books.acm.org/titles#tab2004"
-    },
-    {
-      "title": "Web Accessibility: A Foundation for Research",
-      "author": "Yeliz Yesilada & Simon Harper, Editors",
-      "url": "https://link.springer.com/book/10.1007/978-1-4471-7440-0"
-    },
-    {
-      "title": "Adaptive User-Device Interface Generation for Websites",
-      "author": "O. D. Alao, J. V. Joshua, A. O. Adebayo, M. O. Agbaje, G. A. Onanuga, O. Abereowo",
-      "url": "https://pdfs.semanticscholar.org/1087/5bd2fb48a1a0bab277ef9485d12cb1128a6a.pdf"
-    },
-    {
-      "title": "CSS Mastery, 3rd Edition",
-      "author": "Andy Budd and Emil Björklund",
-      "url": "https://www.oreilly.com/library/view/css-mastery-third/9781430258643/"
-    },
-    {
-      "title": "Web Typography",
-      "author": "Richard Rutter",
-      "url": "http://book.webtypography.net/"
-    },
-    {
-      "title": "Responsive Web Design with HTML5 and CSS3",
-      "author": "Ben Frain",
-      "url": "http://amzn.to/1iKVxIH"
-    },
-    {
-      "title": "Implementing Responsive Design",
-      "author": "Tim Kadlec",
-      "url": "http://amzn.to/1vXqIs6"
-    },
-    {
-      "title": "Foundations of Web Design: Introduction to HTML & CSS",
-      "author": "Thomas Michaud",
-      "url": "https://amzn.to/360YeHk"
-    },
-    {
-      "title": "Pro CSS Techniques",
-      "author": "Dan Rubin, Ian Lloyd, and Jeff Croft",
-      "url": "http://amzn.to/1iKWQao"
-    },
-    {
-      "title": "Designing with Progressive Enhancement: Building the Web that Works for Everyone",
-      "author": "By Todd Parker, Scott Jehl, Maggie Costello Wachs, Patty Toland",
-      "url": "https://www.amazon.com/Designing-Progressive-Enhancement-Building-Everyone/dp/0321658884/"
-    },
-    {
-      "title": "Web Standards Creativity",
-      "author": "Andy Budd, et al",
-      "url": "http://amzn.to/1lETHNH"
-    },
-    {
-      "title": "Transcending CSS: The Fine Art of Web Design",
-      "author": "Andy Clarke and Molly Holzschlag",
-      "url": "http://amzn.to/1ioxape"
-    }
-  ],
-  "articles": [
-    {
-      "title": "Engineering Adaptive Information Graphics for Disabled Communities: A Case Study with Public Space Indoor Maps",
-      "author": "Anuradha Madugalla; Yutan Huang; John Grundy; Min Hee Cho; Lasith Koswatta Gamage; Tristan Leao; Sam Thiele",
-      "url": "https://arxiv.org/abs/2401.05659"
-    },
-    {
-      "title": "Progressive",
-      "author": "Matthias Ott",
-      "url": "https://matthiasott.com/notes/progressive"
-    },
-    {
-      "title": "Evaluating Visual Consistency of Icon Usage in Across-Devices",
-      "author": "Xiaojiao Chen, Xiaoteng Tang, Ying Zhao, Tengyu Huang, Ran Qian, Jiayi Zhang, Wei Chen & Xiaosong Wang",
-      "url": "https://www.tandfonline.com/doi/abs/10.1080/10447318.2022.2162275"
-    },
-    {
-      "title": "InfoInternet for education in the Global South: A study of applications enabled by free information-only internet access in technologically disadvantaged areas",
-      "author": "Johanna Johansen, Josef Noll 2 & Christian Johansen",
-      "url": "https://journals.co.za/doi/full/10.1080/20421338.2021.1884326"
-    },
-    {
-      "title": "Ανάπτυξη εφαρμογής κινητού για την ενδυνάμωση ατόμων με σακχαρώδη διαβήτη τύπου 2",
-      "author": "Γαβαλας Χριστοφορος",
-      "lang": "gr",
-      "url": "https://dspace.lib.ntua.gr/xmlui/bitstream/handle/123456789/55236/%CE%94%CE%B9%CF%80%CE%BB%CF%89%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CE%B7_%CE%95%CF%81%CE%B3%CE%B1%CF%83%CE%B9%CE%B1_%CE%93%CE%B1%CE%B2%CE%B1%CE%BB%CE%B1%CF%82_%CE%A7%CF%81%CE%B9%CF%83%CF%84%CE%BF%CF%86%CE%BF%CF%81%CE%BF%CF%82.pdf"
-    },
-    {
-      "title": "Improving Device-to-Device Connectivity with Responsive Web Technology",
-      "author": "Minsoo Park",
-      "url": "https://koreascience.kr/article/JAKO202209156911998.page"
-    },
-    {
-      "title": "MobileVisFixer: Tailoring Web Visualizations for Mobile Phones Leveraging an Explainable Reinforcement Learning Framework",
-      "author": "Aoyu Wu, Wai Tong, Tim Dwyer, Bongshin Lee, Petra Isenberg & Huamin Qu",
-      "url": "https://ieeexplore.ieee.org/abstract/document/9229072"
-    },
-    {
-      "title": "Automatic Detection of Visibility Faults by Layout Changes in HTML5 Web Pages",
-      "author": "Yeonhee Ryou & Sukyoung Ryu",
-      "url": "https://ieeexplore.ieee.org/abstract/document/8367047"
-    },
-    {
-      "title": "Evaluation of an Adapted Design in a Multi-device Online Panel: A DemoSCOPE Case Study",
-      "author": "Birgit Arn, Stefan Klug & Janusz Kołodziejski",
-      "url": "https://mda.gesis.org/index.php/mda/article/view/2015.011"
-    },
-    {
-      "title": "Approaches and Principles for UX Web Experiences: A Case Study Approach",
-      "author": "Fernando Almeida and José Augusto Monteiro",
-      "url": "https://www.igi-global.com/article/approaches-and-principles-for-ux-web-experiences/176908"
-    },
-    {
-      "title": "Strategies for Mobile Web Design",
-      "author": "Alex Cazañas & Esther Parra",
-      "url": "http://scielo.senescyt.gob.ec/scielo.php?pid=S1390-65422017000100344&script=sci_arttext"
-    },
-    {
-      "title": "Almost (Standards) Doesn’t Count",
-      "author": "History of the Web",
-      "url": "https://thehistoryoftheweb.com/almost-standards-doesnt-count/"
-    },
-    {
-      "title": "A Short History of WaSP and Why Web Standards Matter",
-      "author": "Jay Hoffman, History of the Web",
-      "url": "https://thehistoryoftheweb.com/a-short-history-of-wasp-and-why-web-standards-matter/"
-    },
-    {
-      "title": "Automatic detection of potential layout faults following changes to responsive web pages",
-      "author": "Thomas A. Walsh, Phil McMinn & Gregory M. Kapfhammer",
-      "url": "https://ieeexplore.ieee.org/abstract/document/7372059/"
-    },
-    {
-      "title": "Styling buttons to look like links",
-      "author": "Natalie Downe",
-      "url": "https://blog.natbat.net/post/46614475051/styling-buttons-as-links"
-    },
-    {
-      "title": "Using Webmentions in Eleventy",
-      "author": "Max Böck",
-      "url": "https://mxb.dev/blog/using-webmentions-on-static-sites/"
-    },
-    {
-      "title": "Responsive Multi Level Navigation – let’s try",
-      "author": "Michael Scharnagl",
-      "url": "https://justmarkup.com/articles/2012-06-19-responsive-multi-level-navigation/"
-    },
-    {
-      "title": "Web Design Industry Jargon and Web Terms: Glossary and Resources",
-      "author": "Cameron Chapman",
-      "url": "https://www.smashingmagazine.com/2009/05/web-design-industry-jargon-glossary-and-resources/"
-    },
-    {
-      "title": "The principles of adaptive design",
-      "author": "Brad Frost",
-      "url": "https://bradfrost.com/blog/post/the-principles-of-adaptive-design/"
-    },
-    {
-      "title": "The Difference Between Adaptive Design And Responsive Design",
-      "author": "Darcy Burk",
-      "url": "https://www.searchenginepeople.com/blog/the-difference-between-adaptive-design-and-responsive-design.html"
-    },
-    {
-      "title": "How to enable CSS3 features in Internet Explorer 6, 7 and 8?",
-      "author": "Marcus Wendt",
-      "url": "https://webmasters.stackexchange.com/questions/2350/how-to-enable-css3-features-in-internet-explorer-6-7-and-8"
-    },
-    {
-      "title": "Defining and Understanding Adaptive Content",
-      "author": "Anthony Myers",
-      "url": "https://www.cmswire.com/cms/customer-experience/defining-and-understanding-adaptive-content-023433.php"
-    },
-    {
-      "title": "How to use -ms-high-contrast",
-      "author": "Greg Whitworth",
-      "url": "https://www.gwhitworth.com/posts/2017/how-to-use-ms-high-contrast/"
-    },
-    {
-      "title": "Make Your Mockup in Markup",
-      "author": "Meagan Fisher",
-      "url": "https://24ways.org/2009/make-your-mockup-in-markup/"
-    },
-    {
-      "title": "Examining Responsive Navigation: Toggle Patterns",
-      "author": "Steven Bradley",
-      "url": "https://webdesign.tutsplus.com/tutorials/examining-responsive-navigation-toggle-patterns--pre-57058"
-    },
-    {
-      "title": "Zen and the Art of Wearable Markup",
-      "author": "Jeffrey Zeldman",
-      "url": "https://the-pastry-box-project.net/jeffrey-zeldman/2015-march-21"
-    },
-    {
-      "title": "Responsive & Adaptive Web Design",
-      "author": "Jared Ponchot",
-      "url": "https://www.lullabot.com/articles/responsive-adaptive-web-design"
-    },
-    {
-      "title": "Writing about UX for over a decade — and other UX links this week",
-      "author": "Fabricio Teixeira",
-      "url": "https://uxdesign.cc/writing-about-ux-for-over-a-decade-and-other-ux-links-this-week-6b7333206934"
-    },
-    {
-      "title": "Adaptive and Responsive Design for eLearning: Part 1",
-      "author": "David Evans",
-      "url": "https://www.efrontlearning.com/blog/2015/12/adaptive-and-responsive-design-for-elearning-part-1.html"
-    },
-    {
-      "title": "Adaptive Vs. Responsive Design: Which Is Better?",
-      "author": "Charlie Svensson",
-      "url": "https://matchboxdesigngroup.com/blog/adaptive-vs-responsive-design-which-is-better/#Adaptive_Website_Design"
-    },
-    {
-      "title": "Adaptive Web Design",
-      "author": "Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Adaptive_web_design"
-    },
-    {
-      "title": "Places it’s tempting to use `display: none;`, but don’t",
-      "author": "Chris Coyier",
-      "url": "https://css-tricks.com/places-its-tempting-to-use-display-none-but-dont/"
-    },
-    {
-      "title": "Responsive vs adaptive web design: which is right for your UI design?",
-      "author": "Emily Grace Adiseshiah",
-      "url": "https://www.justinmind.com/blog/choosing-a-web-design-responsive-vs-adaptive/"
-    },
-    {
-      "title": "What is the difference between responsive vs. adaptive web design?",
-      "author": "Ryan Boudreaux",
-      "url": "https://www.techrepublic.com/blog/web-designer/what-is-the-difference-between-responsive-vs-adaptive-web-design/"
-    },
-    {
-      "title": "Microsoft Edge Canary gets a new flag to move tabs between profiles",
-      "author": "Rabia Noureen",
-      "url": "https://www.onmsft.com/news/microsoft-edge-canary-gets-a-new-flag-to-move-tabs-between-profiles"
-    },
-    {
-      "title": "The Web Designer's Idea Book, Vol. 2: More of the Best Themes, Trends and Styles in Website Design",
-      "author": "Patrick McNeil",
-      "url": "https://www.amazon.com/Web-Designers-Idea-Book-Vol/dp/160061972X"
-    },
-    {
-      "title": "Writing even more CSS with Accessibility in Mind, Part 1: Progressive Enhancement",
-      "author": "Manuel Matuzovic",
-      "url": "https://www.matuzo.at/blog/writing-even-more-css-with-accessibility-in-mind-progressive-enhancement/"
-    },
-    {
-      "title": "Getting Responsive Tables to Behave",
-      "author": "Joshua Hibbert",
-      "url": "https://joshnh.com/weblog/getting-responsive-tables-to-behave/"
-    },
-    {
-      "title": "Picking a Responsive Tables Solution",
-      "author": "Jason Grigsby",
-      "url": "https://cloudfour.com/thinks/picking-responsive-tables-solution/"
-    },
-    {
-      "title": "Web Typography: Designing Tables to be Read, Not Looked At",
-      "author": "Richard Rutter",
-      "url": "https://alistapart.com/article/web-typography-tables/"
-    },
-    {
-      "title": "Links List for Print Styles",
-      "author": "Adrian Roselli",
-      "url": "https://adrianroselli.com/2018/09/links-list-for-print-styles.html"
-    },
-    {
-      "title": "Tabellen, die sich anpassen",
-      "author": "Jens Grochtdreis",
-      "url": "http://webkrauts.de/artikel/2014/responsive-tabellen",
-      "lang": "de"
-    },
-    {
-      "title": "Development of a Dynamic Newspaper Cost Calculator with Persistent Data Storage, Responsive Design, and Excel Integration",
-      "author": "Manasij Mandal",
-      "url": "https://eprint.ijisrt.org/id/eprint/185/1/IJISRT25MAR859.pdf"
-    },
-    {
-      "title": "Дослідження впливу візуального контенту на ефективність та користувацький досвід у веб-дизайні",
-      "author": "Слободенюк Іван Федорович",
-      "url": "https://openarchive.nure.ua/server/api/core/bitstreams/e2e39a59-3a81-4908-a190-021eefa783f7/content",
-      "lang": "uk"
-    },
-    {
-      "title": "Overview of Web Application Performance Optimization Techniques",
-      "author": "Juho Vepsäläinen, Arto Hellas, and Petri Vuorimaa",
-      "url": "https://arxiv.org/pdf/2412.07892"
-    },
-    {
-      "title": "Дизайн вебсайтів електронної комерції: еволюція, естетичні аспекти",
-      "author": "Васильєв Олександр Сергійович",
-      "url": "https://er.knutd.edu.ua/bitstream/123456789/26918/1/Vasyliev_disertation.pdf",
-      "lang": "uk"
-    },
-    {
-      "title": "Дизайн веб сервісу з пошуку загублених тварин",
-      "author": "Коркосенко Анна Сергіївна",
-      "url": "https://elib.nakkkim.edu.ua/bitstream/handle/123456789/5322/korkosenko.pdf",
-      "lang": "uk"
-    },
-    {
-      "title": "Responsiv Web-Dizayn Yaratish Usullarining Qiyosiy Tahlili",
-      "author": "Jurayev Umidjon Sayfullayevich and Xabibullayeva Sitora Abdullo qizi",
-      "url": "https://dtai.tsue.uz/index.php/dtai/article/view/v3i222",
-      "lang": "uz"
-    },
-    {
-      "title": "Women’s clothing pattern-making: A web platform",
-      "author": "Carlos Guamán and Cinthia De Oleo Moreta",
-      "url": "https://intellectdiscover.com/content/journals/10.1386/fspc_00312_1"
-    },
-    {
-      "title": "Engineering support for adaptations in information graphics for disabled communities: A study with public space indoor maps",
-      "author": "Anuradha Madugalla, Yutan Huang, John Grundy, Min Hee Cho, Lasith Koswatta Gamage, Y. P. Lau, Tristan Leao & Sam Thiele",
-      "url": "https://link.springer.com/article/10.1007/s10664-025-10715-0"
-    }
-  ],
-  "talks": [
-    {
-      "title": "How CSS evolves, a look back at 2 years of CSS grid",
-      "author": "Chen Hui Jing",
-      "url": "https://huijing.github.io/slides/pdf/devfestgt-2019.pdf"
-    },
-    {
-      "title": "Building Responsive Layouts",
-      "author": "Zoe Mickley Gillenwater",
-      "url": "http://zomigi.com/blog/responsive-layouts-presentation/"
-    },
-    {
-      "title": "I’ve seen the Futur, It’s in my Browser",
-      "author": "Younes Baghor",
-      "url": "https://www.slideshare.net/webwizart/html5-presentation-slides-9675884"
-    },
-    {
-      "title": "How to improve your website’s accessibility without going crazy",
-      "author": "Eric Eggert",
-      "url": "https://www.slideshare.net/yatil/how-to-improve-your-websites-accessibility-without-going-crazy"
-    },
-    {
-      "title": "Designing Station Delhi",
-      "author": "Designing Station",
-      "url": "https://www.slideshare.net/pawansingh001/designing-station-delhi"
-    },
-    {
-      "title": "HTML Hypermedia APIs and Adaptive Web Design",
-      "author": "Gustaf Nilsson Kotte",
-      "url": "https://www.slideshare.net/GustafKotte/html-hypermedia-ap-is-and-adaptive-web-design-rejectjs"
-    },
-    {
-      "title": "Information Everywhere: Flexible Content with Responsive Design",
-      "author": "Nicky Bleiel",
-      "url": "https://www.slideshare.net/nickybleiel/responsive-design-stc-summit-bleiel-virtual-track"
-    },
-    {
-      "title": "The PC is dead… long live the mobile",
-      "author": "Rich Quick",
-      "url": "https://www.slideshare.net/richquick/pc-is-dead"
-    },
-    {
-      "title": "Responsive Web Design & Single Page Application",
-      "author": "Alessandro Colla",
-      "url": "https://www.slideshare.net/AlessandroColla/responsive-web-design-single-page-application",
-      "lang": "it"
-    },
-    {
-      "title": "The importance of adaptation in the modern adoption of responsive design",
-      "author": "David Stump",
-      "url": "https://www.slideshare.net/davidstump/stump-final-presentation"
-    },
-    {
-      "title": "Design process in the Responsive Age",
-      "author": "Pon Kattera",
-      "url": "https://www.slideshare.net/lafarge777/rwdprocess"
-    },
-    {
-      "title": "Information Architecture: From Design Patterns to Flow",
-      "author": "Dr. Sabin Buraga",
-      "url": "https://www.slideshare.net/busaco/hci-2018-510-information-architecture-from-design-patterns-to-flow"
-    },
-    {
-      "title": "Responsive Design 2.0 - Mobile Revolution",
-      "author": "Peter Solow",
-      "url": "https://www.slideshare.net/davidstump/stump-final-presentation",
-      "lang": "sv"
-    },
-    {
-      "title": "50 تمرین کاربردی برای یک طراح تجربه کاربری - جلسه پنجم",
-      "author": "Ali Akrami",
-      "url": "https://www.slideshare.net/aliakrami/50-38583134",
-      "lang": "fa",
-      "dir": "rtl"
-    },
-    {
-      "title": "Surviving the Zombie Apocalpyse of Connected Devices",
-      "author": "Gustaf Nilsson Kotte",
-      "url": "https://www.slideshare.net/GustafKotte/surviving-the-zombie-apocalpyse-of-connected-devices"
-    },
-    {
-      "title": "Design adaptatif / Mobilité",
-      "author": "André Dubreuil",
-      "url": "https://www.slideshare.net/shufflepath/responsive-web-design-28623143",
-      "lang": "fr"
-    },
-    {
-      "title": "CSS3 Media Queries And Creating Adaptive Layouts",
-      "author": "Svitlana Ivanytska",
-      "url": "https://www.slideshare.net/svlanavk/css3-media-queries-and-creating-adaptive-layouts"
-    },
-    {
-      "title": "Adaptive Design: The Next Generation of Responsive",
-      "author": "Thomas Kugler",
-      "url": "https://www.slideshare.net/tom8gem/tech2013final2-44605948"
-    },
-    {
-      "title": "Topsy Turvy Design: Adapting your design process for adaptive layout",
-      "author": "Rich Quick",
-      "url": "https://www.slideshare.net/richardfquick/topsy-turvy-design-adapting-your-design-process-for-adaptive-layour"
-    },
-    {
-      "title": "Building a Responsive Website for the Presidential Debate",
-      "author": "Jon Liu",
-      "url": "https://www.slideshare.net/mrjonliu/building-a-responsive-website-for-the-presidential-debate"
-    },
-    {
-      "title": "Hacia una Metodología de Diseño Web Responsive",
-      "author": "Hernan Beati",
-      "url": "https://www.slideshare.net/hbeati/hacia-una-metodologa-de-diseo-web-responsive",
-      "lang": "es"
-    },
-    {
-      "title": "Has responsive had it's day?",
-      "author": "Ben Seymour",
-      "url": "https://www.slideshare.net/benseymour/has-responsive-had-its-day-amplience-customer-day-2014"
-    },
-    {
-      "title": "Curso: Web Design Responsivo",
-      "author": "Tersis Zonato",
-      "url": "https://www.slideshare.net/tersis/curso-web-design-responsivo",
-      "lang": "pt"
-    },
-    {
-      "title": "Diseño adaptativo y responsive",
-      "author": "Renny Batista",
-      "url": "https://www.slideshare.net/rennybatista/diseo-adaptativo-y-responsive-55356928",
-      "lang": "es"
-    },
-    {
-      "title": "Responsive Web Design & Workflow",
-      "author": "Hongru Hou",
-      "url": "https://www.slideshare.net/houhr/responsive-web-designamp-workflow"
-    },
-    {
-      "title": "Designing Elegant UX Across Devices and Platforms",
-      "author": "Erik Loehfelm",
-      "url": "https://www.slideshare.net/eloehfelm/future-of-web-london-2012"
-    },
-    {
-      "title": "Design Process + Responsive",
-      "author": "Sophia Voychehovski",
-      "url": "https://www.slideshare.net/SophiaVoychehovski/your-brain-on-responsive-design"
-    },
-    {
-      "title": "Drawing on Quicksand: Visual Systems, Drupal & The Modern Web World",
-      "author": "Jason Pamental",
-      "url": "https://www.slideshare.net/jpamental/drawing-on-quicksand",
-      "featured": true
-    },
-    {
-      "title": "Does your website have these elements of responsive web design?",
-      "author": "Frank Spillers",
-      "url": "https://www.slideshare.net/farreaching/does-your-website-have-these-elements-of-responsive-web-design-experience-dynamics-web-seminar"
-    },
-    {
-      "title": "Adaptive Input",
-      "author": "Jason Grigsby",
-      "url": "https://www.slideshare.net/grigs/adaptive-input-bd-conf-san-diego",
-      "featured": true
-    },
-    {
-      "title": "Interactive News Editing and Producing",
-      "author": "Kurt Gessler",
-      "url": "https://www.slideshare.net/kurtgessler/northwestern-university-presentation-for-journalism-451-week-6-in-the-winter-2015-quarter-week7"
-    },
-    {
-      "title": "Responsive Design 2014",
-      "author": "1508 A/S",
-      "url": "https://www.slideshare.net/1508as/responsive-design-2014-morgenbooster",
-      "lang": "da"
-    },
-    {
-      "title": "Responsive Design Round Table",
-      "author": "Christian Glover Wilson",
-      "url": "https://www.slideshare.net/ChristianGloverWilso/responsive-web-design-51395323"
-    },
-    {
-      "title": "RWD in the Wild",
-      "author": "Rich Quick",
-      "url": "https://www.slideshare.net/richardfquick/rwd-in-the-wild"
-    },
-    {
-      "title": "CSS Layout Techniques",
-      "author": "Harshal Patil",
-      "url": "https://www.slideshare.net/HarshalPatil4/css-layout-techniques"
-    },
-    {
-      "title": "Death, Taxes & Viewport Chrome: Designing for Uncertainty",
-      "author": "Jason Pamental",
-      "url": "https://www.slideshare.net/jpamental/death-taxes-viewport-chrome-designing-for-uncertainty"
-    },
-    {
-      "title": "Per una Tipografia degli ePub",
-      "author": "Matteo Balocco",
-      "url": "https://www.slideshare.net/totanus/per-una-tipografia-degli-epub-5240497",
-      "lang": "it"
-    },
-    {
-      "title": "Dezvoltarea aplicaţiilor Web la nivel de client (cursul #4): Design Web. Proiectarea siturilor Web. Design Web responsiv",
-      "author": "Sabin Buraga",
-      "url": "https://www.slideshare.net/busaco/web04-design-web2",
-      "lang": "ro"
-    },
-    {
-      "title": "CLIW 2014—2015 (4/12): Design Web. Proiectarea siturilor Web. Design Web responsiv",
-      "author": "Sabin Buraga",
-      "url": "https://www.slideshare.net/busaco/design-web-proiectarea-siturilor-web-design-web-responsiv",
-      "lang": "ro"
-    },
-    {
-      "title": "Five Things You Need to Know About Mobile-first and Responsive Web Design",
-      "author": "John Bersentes",
-      "url": "https://www.slideshare.net/JohnTheo/tmpgovwhitepaperresponsivedesign"
-    },
-    {
-      "title": "Responsive Web Design - more than just a buzzword",
-      "author": "Russ Weakley",
-      "url": "https://www.slideshare.net/maxdesign/responsive-web-design-more-than-just-a-buzzword",
-      "featured": true
-    },
-    {
-      "title": "Designing With Web Standards in 2016”",
-      "author": "Jeffrey Zeldman",
-      "url": "https://www.youtube.com/watch?v=8p5pB1oCCW8",
-      "featured": true
-    },
-    {
-      "title": "What Every Web Designer Should Know — A Better You At What You Do",
-      "author": "Jeffrey Zeldman",
-      "url": "https://adactio.com/journal/4534/"
-    }
-  ]
+	"code": [
+		{
+			"title": "MooTools Footnotes",
+			"author": "Michael Ficarra",
+			"url": "http://github.com/michaelficarra/MooTools-Footnotes/"
+		},
+		{
+			"title": "NPR’s Responsive Data Tables",
+			"author": "Alyson Hurt",
+			"url": "http://blog.apps.npr.org/2014/05/09/responsive-data-tables.html"
+		}
+	],
+	"books": [
+		{
+			"title": "Voice Content and Usability",
+			"author": "Preston So",
+			"url": "https://abookapart.com/products/voice-content-and-usability"
+		},
+		{
+			"title": "Studies in Conversational UX Design",
+			"author": "Robert J. Moore, Margaret H. Szymanski, Raphael Arar & Guang-Jie Ren, Editors",
+			"url": "https://link.springer.com/book/10.1007/978-3-319-95579-7"
+		},
+		{
+			"title": "Conversational UX Design: A Practitioner's Guide to the Natural Conversation Framework",
+			"author": "Robert J. Moore and Raphael Arar",
+			"url": "https://books.acm.org/titles#tab2004"
+		},
+		{
+			"title": "Web Accessibility: A Foundation for Research",
+			"author": "Yeliz Yesilada & Simon Harper, Editors",
+			"url": "https://link.springer.com/book/10.1007/978-1-4471-7440-0"
+		},
+		{
+			"title": "Adaptive User-Device Interface Generation for Websites",
+			"author": "O. D. Alao, J. V. Joshua, A. O. Adebayo, M. O. Agbaje, G. A. Onanuga, O. Abereowo",
+			"url": "https://pdfs.semanticscholar.org/1087/5bd2fb48a1a0bab277ef9485d12cb1128a6a.pdf"
+		},
+		{
+			"title": "CSS Mastery, 3rd Edition",
+			"author": "Andy Budd and Emil Björklund",
+			"url": "https://www.oreilly.com/library/view/css-mastery-third/9781430258643/"
+		},
+		{
+			"title": "Web Typography",
+			"author": "Richard Rutter",
+			"url": "http://book.webtypography.net/"
+		},
+		{
+			"title": "Responsive Web Design with HTML5 and CSS3",
+			"author": "Ben Frain",
+			"url": "http://amzn.to/1iKVxIH"
+		},
+		{
+			"title": "Implementing Responsive Design",
+			"author": "Tim Kadlec",
+			"url": "http://amzn.to/1vXqIs6"
+		},
+		{
+			"title": "Foundations of Web Design: Introduction to HTML & CSS",
+			"author": "Thomas Michaud",
+			"url": "https://amzn.to/360YeHk"
+		},
+		{
+			"title": "Pro CSS Techniques",
+			"author": "Dan Rubin, Ian Lloyd, and Jeff Croft",
+			"url": "http://amzn.to/1iKWQao"
+		},
+		{
+			"title": "Designing with Progressive Enhancement: Building the Web that Works for Everyone",
+			"author": "By Todd Parker, Scott Jehl, Maggie Costello Wachs, Patty Toland",
+			"url": "https://www.amazon.com/Designing-Progressive-Enhancement-Building-Everyone/dp/0321658884/"
+		},
+		{
+			"title": "Web Standards Creativity",
+			"author": "Andy Budd, et al",
+			"url": "http://amzn.to/1lETHNH"
+		},
+		{
+			"title": "Transcending CSS: The Fine Art of Web Design",
+			"author": "Andy Clarke and Molly Holzschlag",
+			"url": "http://amzn.to/1ioxape"
+		}
+	],
+	"articles": [
+		{
+			"title": "Engineering Adaptive Information Graphics for Disabled Communities: A Case Study with Public Space Indoor Maps",
+			"author": "Anuradha Madugalla; Yutan Huang; John Grundy; Min Hee Cho; Lasith Koswatta Gamage; Tristan Leao; Sam Thiele",
+			"url": "https://arxiv.org/abs/2401.05659"
+		},
+		{
+			"title": "Progressive",
+			"author": "Matthias Ott",
+			"url": "https://matthiasott.com/notes/progressive"
+		},
+		{
+			"title": "Evaluating Visual Consistency of Icon Usage in Across-Devices",
+			"author": "Xiaojiao Chen, Xiaoteng Tang, Ying Zhao, Tengyu Huang, Ran Qian, Jiayi Zhang, Wei Chen & Xiaosong Wang",
+			"url": "https://www.tandfonline.com/doi/abs/10.1080/10447318.2022.2162275"
+		},
+		{
+			"title": "InfoInternet for education in the Global South: A study of applications enabled by free information-only internet access in technologically disadvantaged areas",
+			"author": "Johanna Johansen, Josef Noll 2 & Christian Johansen",
+			"url": "https://journals.co.za/doi/full/10.1080/20421338.2021.1884326"
+		},
+		{
+			"title": "Ανάπτυξη εφαρμογής κινητού για την ενδυνάμωση ατόμων με σακχαρώδη διαβήτη τύπου 2",
+			"author": "Γαβαλας Χριστοφορος",
+			"lang": "gr",
+			"url": "https://dspace.lib.ntua.gr/xmlui/bitstream/handle/123456789/55236/%CE%94%CE%B9%CF%80%CE%BB%CF%89%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CE%B7_%CE%95%CF%81%CE%B3%CE%B1%CF%83%CE%B9%CE%B1_%CE%93%CE%B1%CE%B2%CE%B1%CE%BB%CE%B1%CF%82_%CE%A7%CF%81%CE%B9%CF%83%CF%84%CE%BF%CF%86%CE%BF%CF%81%CE%BF%CF%82.pdf"
+		},
+		{
+			"title": "Improving Device-to-Device Connectivity with Responsive Web Technology",
+			"author": "Minsoo Park",
+			"url": "https://koreascience.kr/article/JAKO202209156911998.page"
+		},
+		{
+			"title": "MobileVisFixer: Tailoring Web Visualizations for Mobile Phones Leveraging an Explainable Reinforcement Learning Framework",
+			"author": "Aoyu Wu, Wai Tong, Tim Dwyer, Bongshin Lee, Petra Isenberg & Huamin Qu",
+			"url": "https://ieeexplore.ieee.org/abstract/document/9229072"
+		},
+		{
+			"title": "Automatic Detection of Visibility Faults by Layout Changes in HTML5 Web Pages",
+			"author": "Yeonhee Ryou & Sukyoung Ryu",
+			"url": "https://ieeexplore.ieee.org/abstract/document/8367047"
+		},
+		{
+			"title": "Evaluation of an Adapted Design in a Multi-device Online Panel: A DemoSCOPE Case Study",
+			"author": "Birgit Arn, Stefan Klug & Janusz Kołodziejski",
+			"url": "https://mda.gesis.org/index.php/mda/article/view/2015.011"
+		},
+		{
+			"title": "Approaches and Principles for UX Web Experiences: A Case Study Approach",
+			"author": "Fernando Almeida and José Augusto Monteiro",
+			"url": "https://www.igi-global.com/article/approaches-and-principles-for-ux-web-experiences/176908"
+		},
+		{
+			"title": "Strategies for Mobile Web Design",
+			"author": "Alex Cazañas & Esther Parra",
+			"url": "http://scielo.senescyt.gob.ec/scielo.php?pid=S1390-65422017000100344&script=sci_arttext"
+		},
+		{
+			"title": "Almost (Standards) Doesn’t Count",
+			"author": "History of the Web",
+			"url": "https://thehistoryoftheweb.com/almost-standards-doesnt-count/"
+		},
+		{
+			"title": "A Short History of WaSP and Why Web Standards Matter",
+			"author": "Jay Hoffman, History of the Web",
+			"url": "https://thehistoryoftheweb.com/a-short-history-of-wasp-and-why-web-standards-matter/"
+		},
+		{
+			"title": "Automatic detection of potential layout faults following changes to responsive web pages",
+			"author": "Thomas A. Walsh, Phil McMinn & Gregory M. Kapfhammer",
+			"url": "https://ieeexplore.ieee.org/abstract/document/7372059/"
+		},
+		{
+			"title": "Styling buttons to look like links",
+			"author": "Natalie Downe",
+			"url": "https://blog.natbat.net/post/46614475051/styling-buttons-as-links"
+		},
+		{
+			"title": "Using Webmentions in Eleventy",
+			"author": "Max Böck",
+			"url": "https://mxb.dev/blog/using-webmentions-on-static-sites/"
+		},
+		{
+			"title": "Responsive Multi Level Navigation – let’s try",
+			"author": "Michael Scharnagl",
+			"url": "https://justmarkup.com/articles/2012-06-19-responsive-multi-level-navigation/"
+		},
+		{
+			"title": "Web Design Industry Jargon and Web Terms: Glossary and Resources",
+			"author": "Cameron Chapman",
+			"url": "https://www.smashingmagazine.com/2009/05/web-design-industry-jargon-glossary-and-resources/"
+		},
+		{
+			"title": "The principles of adaptive design",
+			"author": "Brad Frost",
+			"url": "https://bradfrost.com/blog/post/the-principles-of-adaptive-design/"
+		},
+		{
+			"title": "The Difference Between Adaptive Design And Responsive Design",
+			"author": "Darcy Burk",
+			"url": "https://www.searchenginepeople.com/blog/the-difference-between-adaptive-design-and-responsive-design.html"
+		},
+		{
+			"title": "How to enable CSS3 features in Internet Explorer 6, 7 and 8?",
+			"author": "Marcus Wendt",
+			"url": "https://webmasters.stackexchange.com/questions/2350/how-to-enable-css3-features-in-internet-explorer-6-7-and-8"
+		},
+		{
+			"title": "Defining and Understanding Adaptive Content",
+			"author": "Anthony Myers",
+			"url": "https://www.cmswire.com/cms/customer-experience/defining-and-understanding-adaptive-content-023433.php"
+		},
+		{
+			"title": "How to use -ms-high-contrast",
+			"author": "Greg Whitworth",
+			"url": "https://www.gwhitworth.com/posts/2017/how-to-use-ms-high-contrast/"
+		},
+		{
+			"title": "Make Your Mockup in Markup",
+			"author": "Meagan Fisher",
+			"url": "https://24ways.org/2009/make-your-mockup-in-markup/"
+		},
+		{
+			"title": "Examining Responsive Navigation: Toggle Patterns",
+			"author": "Steven Bradley",
+			"url": "https://webdesign.tutsplus.com/tutorials/examining-responsive-navigation-toggle-patterns--pre-57058"
+		},
+		{
+			"title": "Zen and the Art of Wearable Markup",
+			"author": "Jeffrey Zeldman",
+			"url": "https://the-pastry-box-project.net/jeffrey-zeldman/2015-march-21"
+		},
+		{
+			"title": "Responsive & Adaptive Web Design",
+			"author": "Jared Ponchot",
+			"url": "https://www.lullabot.com/articles/responsive-adaptive-web-design"
+		},
+		{
+			"title": "Writing about UX for over a decade — and other UX links this week",
+			"author": "Fabricio Teixeira",
+			"url": "https://uxdesign.cc/writing-about-ux-for-over-a-decade-and-other-ux-links-this-week-6b7333206934"
+		},
+		{
+			"title": "Adaptive and Responsive Design for eLearning: Part 1",
+			"author": "David Evans",
+			"url": "https://www.efrontlearning.com/blog/2015/12/adaptive-and-responsive-design-for-elearning-part-1.html"
+		},
+		{
+			"title": "Adaptive Vs. Responsive Design: Which Is Better?",
+			"author": "Charlie Svensson",
+			"url": "https://matchboxdesigngroup.com/blog/adaptive-vs-responsive-design-which-is-better/#Adaptive_Website_Design"
+		},
+		{
+			"title": "Adaptive Web Design",
+			"author": "Wikipedia",
+			"url": "https://en.wikipedia.org/wiki/Adaptive_web_design"
+		},
+		{
+			"title": "Places it’s tempting to use `display: none;`, but don’t",
+			"author": "Chris Coyier",
+			"url": "https://css-tricks.com/places-its-tempting-to-use-display-none-but-dont/"
+		},
+		{
+			"title": "Responsive vs adaptive web design: which is right for your UI design?",
+			"author": "Emily Grace Adiseshiah",
+			"url": "https://www.justinmind.com/blog/choosing-a-web-design-responsive-vs-adaptive/"
+		},
+		{
+			"title": "What is the difference between responsive vs. adaptive web design?",
+			"author": "Ryan Boudreaux",
+			"url": "https://www.techrepublic.com/blog/web-designer/what-is-the-difference-between-responsive-vs-adaptive-web-design/"
+		},
+		{
+			"title": "Microsoft Edge Canary gets a new flag to move tabs between profiles",
+			"author": "Rabia Noureen",
+			"url": "https://www.onmsft.com/news/microsoft-edge-canary-gets-a-new-flag-to-move-tabs-between-profiles"
+		},
+		{
+			"title": "The Web Designer's Idea Book, Vol. 2: More of the Best Themes, Trends and Styles in Website Design",
+			"author": "Patrick McNeil",
+			"url": "https://www.amazon.com/Web-Designers-Idea-Book-Vol/dp/160061972X"
+		},
+		{
+			"title": "Writing even more CSS with Accessibility in Mind, Part 1: Progressive Enhancement",
+			"author": "Manuel Matuzovic",
+			"url": "https://www.matuzo.at/blog/writing-even-more-css-with-accessibility-in-mind-progressive-enhancement/"
+		},
+		{
+			"title": "Getting Responsive Tables to Behave",
+			"author": "Joshua Hibbert",
+			"url": "https://joshnh.com/weblog/getting-responsive-tables-to-behave/"
+		},
+		{
+			"title": "Picking a Responsive Tables Solution",
+			"author": "Jason Grigsby",
+			"url": "https://cloudfour.com/thinks/picking-responsive-tables-solution/"
+		},
+		{
+			"title": "Web Typography: Designing Tables to be Read, Not Looked At",
+			"author": "Richard Rutter",
+			"url": "https://alistapart.com/article/web-typography-tables/"
+		},
+		{
+			"title": "Links List for Print Styles",
+			"author": "Adrian Roselli",
+			"url": "https://adrianroselli.com/2018/09/links-list-for-print-styles.html"
+		},
+		{
+			"title": "Tabellen, die sich anpassen",
+			"author": "Jens Grochtdreis",
+			"url": "http://webkrauts.de/artikel/2014/responsive-tabellen",
+			"lang": "de"
+		},
+		{
+			"title": "Development of a Dynamic Newspaper Cost Calculator with Persistent Data Storage, Responsive Design, and Excel Integration",
+			"author": "Manasij Mandal",
+			"url": "https://eprint.ijisrt.org/id/eprint/185/1/IJISRT25MAR859.pdf"
+		},
+		{
+			"title": "Дослідження впливу візуального контенту на ефективність та користувацький досвід у веб-дизайні",
+			"author": "Слободенюк Іван Федорович",
+			"url": "https://openarchive.nure.ua/server/api/core/bitstreams/e2e39a59-3a81-4908-a190-021eefa783f7/content",
+			"lang": "uk"
+		},
+		{
+			"title": "Overview of Web Application Performance Optimization Techniques",
+			"author": "Juho Vepsäläinen, Arto Hellas, and Petri Vuorimaa",
+			"url": "https://arxiv.org/pdf/2412.07892"
+		},
+		{
+			"title": "Дизайн вебсайтів електронної комерції: еволюція, естетичні аспекти",
+			"author": "Васильєв Олександр Сергійович",
+			"url": "https://er.knutd.edu.ua/bitstream/123456789/26918/1/Vasyliev_disertation.pdf",
+			"lang": "uk"
+		},
+		{
+			"title": "Дизайн веб сервісу з пошуку загублених тварин",
+			"author": "Коркосенко Анна Сергіївна",
+			"url": "https://elib.nakkkim.edu.ua/bitstream/handle/123456789/5322/korkosenko.pdf",
+			"lang": "uk"
+		},
+		{
+			"title": "Responsiv Web-Dizayn Yaratish Usullarining Qiyosiy Tahlili",
+			"author": "Jurayev Umidjon Sayfullayevich and Xabibullayeva Sitora Abdullo qizi",
+			"url": "https://dtai.tsue.uz/index.php/dtai/article/view/v3i222",
+			"lang": "uz"
+		},
+		{
+			"title": "Women’s clothing pattern-making: A web platform",
+			"author": "Carlos Guamán and Cinthia De Oleo Moreta",
+			"url": "https://intellectdiscover.com/content/journals/10.1386/fspc_00312_1"
+		},
+		{
+			"title": "Engineering support for adaptations in information graphics for disabled communities: A study with public space indoor maps",
+			"author": "Anuradha Madugalla, Yutan Huang, John Grundy, Min Hee Cho, Lasith Koswatta Gamage, Y. P. Lau, Tristan Leao & Sam Thiele",
+			"url": "https://link.springer.com/article/10.1007/s10664-025-10715-0"
+		}
+	],
+	"talks": [
+		{
+			"title": "How CSS evolves, a look back at 2 years of CSS grid",
+			"author": "Chen Hui Jing",
+			"url": "https://huijing.github.io/slides/pdf/devfestgt-2019.pdf"
+		},
+		{
+			"title": "Building Responsive Layouts",
+			"author": "Zoe Mickley Gillenwater",
+			"url": "http://zomigi.com/blog/responsive-layouts-presentation/"
+		},
+		{
+			"title": "I’ve seen the Futur, It’s in my Browser",
+			"author": "Younes Baghor",
+			"url": "https://www.slideshare.net/webwizart/html5-presentation-slides-9675884"
+		},
+		{
+			"title": "How to improve your website’s accessibility without going crazy",
+			"author": "Eric Eggert",
+			"url": "https://www.slideshare.net/yatil/how-to-improve-your-websites-accessibility-without-going-crazy"
+		},
+		{
+			"title": "Designing Station Delhi",
+			"author": "Designing Station",
+			"url": "https://www.slideshare.net/pawansingh001/designing-station-delhi"
+		},
+		{
+			"title": "HTML Hypermedia APIs and Adaptive Web Design",
+			"author": "Gustaf Nilsson Kotte",
+			"url": "https://www.slideshare.net/GustafKotte/html-hypermedia-ap-is-and-adaptive-web-design-rejectjs"
+		},
+		{
+			"title": "Information Everywhere: Flexible Content with Responsive Design",
+			"author": "Nicky Bleiel",
+			"url": "https://www.slideshare.net/nickybleiel/responsive-design-stc-summit-bleiel-virtual-track"
+		},
+		{
+			"title": "The PC is dead… long live the mobile",
+			"author": "Rich Quick",
+			"url": "https://www.slideshare.net/richquick/pc-is-dead"
+		},
+		{
+			"title": "Responsive Web Design & Single Page Application",
+			"author": "Alessandro Colla",
+			"url": "https://www.slideshare.net/AlessandroColla/responsive-web-design-single-page-application",
+			"lang": "it"
+		},
+		{
+			"title": "The importance of adaptation in the modern adoption of responsive design",
+			"author": "David Stump",
+			"url": "https://www.slideshare.net/davidstump/stump-final-presentation"
+		},
+		{
+			"title": "Design process in the Responsive Age",
+			"author": "Pon Kattera",
+			"url": "https://www.slideshare.net/lafarge777/rwdprocess"
+		},
+		{
+			"title": "Information Architecture: From Design Patterns to Flow",
+			"author": "Dr. Sabin Buraga",
+			"url": "https://www.slideshare.net/busaco/hci-2018-510-information-architecture-from-design-patterns-to-flow"
+		},
+		{
+			"title": "Responsive Design 2.0 - Mobile Revolution",
+			"author": "Peter Solow",
+			"url": "https://www.slideshare.net/davidstump/stump-final-presentation",
+			"lang": "sv"
+		},
+		{
+			"title": "50 تمرین کاربردی برای یک طراح تجربه کاربری - جلسه پنجم",
+			"author": "Ali Akrami",
+			"url": "https://www.slideshare.net/aliakrami/50-38583134",
+			"lang": "fa",
+			"dir": "rtl"
+		},
+		{
+			"title": "Surviving the Zombie Apocalpyse of Connected Devices",
+			"author": "Gustaf Nilsson Kotte",
+			"url": "https://www.slideshare.net/GustafKotte/surviving-the-zombie-apocalpyse-of-connected-devices"
+		},
+		{
+			"title": "Design adaptatif / Mobilité",
+			"author": "André Dubreuil",
+			"url": "https://www.slideshare.net/shufflepath/responsive-web-design-28623143",
+			"lang": "fr"
+		},
+		{
+			"title": "CSS3 Media Queries And Creating Adaptive Layouts",
+			"author": "Svitlana Ivanytska",
+			"url": "https://www.slideshare.net/svlanavk/css3-media-queries-and-creating-adaptive-layouts"
+		},
+		{
+			"title": "Adaptive Design: The Next Generation of Responsive",
+			"author": "Thomas Kugler",
+			"url": "https://www.slideshare.net/tom8gem/tech2013final2-44605948"
+		},
+		{
+			"title": "Topsy Turvy Design: Adapting your design process for adaptive layout",
+			"author": "Rich Quick",
+			"url": "https://www.slideshare.net/richardfquick/topsy-turvy-design-adapting-your-design-process-for-adaptive-layour"
+		},
+		{
+			"title": "Building a Responsive Website for the Presidential Debate",
+			"author": "Jon Liu",
+			"url": "https://www.slideshare.net/mrjonliu/building-a-responsive-website-for-the-presidential-debate"
+		},
+		{
+			"title": "Hacia una Metodología de Diseño Web Responsive",
+			"author": "Hernan Beati",
+			"url": "https://www.slideshare.net/hbeati/hacia-una-metodologa-de-diseo-web-responsive",
+			"lang": "es"
+		},
+		{
+			"title": "Has responsive had it's day?",
+			"author": "Ben Seymour",
+			"url": "https://www.slideshare.net/benseymour/has-responsive-had-its-day-amplience-customer-day-2014"
+		},
+		{
+			"title": "Curso: Web Design Responsivo",
+			"author": "Tersis Zonato",
+			"url": "https://www.slideshare.net/tersis/curso-web-design-responsivo",
+			"lang": "pt"
+		},
+		{
+			"title": "Diseño adaptativo y responsive",
+			"author": "Renny Batista",
+			"url": "https://www.slideshare.net/rennybatista/diseo-adaptativo-y-responsive-55356928",
+			"lang": "es"
+		},
+		{
+			"title": "Responsive Web Design & Workflow",
+			"author": "Hongru Hou",
+			"url": "https://www.slideshare.net/houhr/responsive-web-designamp-workflow"
+		},
+		{
+			"title": "Designing Elegant UX Across Devices and Platforms",
+			"author": "Erik Loehfelm",
+			"url": "https://www.slideshare.net/eloehfelm/future-of-web-london-2012"
+		},
+		{
+			"title": "Design Process + Responsive",
+			"author": "Sophia Voychehovski",
+			"url": "https://www.slideshare.net/SophiaVoychehovski/your-brain-on-responsive-design"
+		},
+		{
+			"title": "Drawing on Quicksand: Visual Systems, Drupal & The Modern Web World",
+			"author": "Jason Pamental",
+			"url": "https://www.slideshare.net/jpamental/drawing-on-quicksand",
+			"featured": true
+		},
+		{
+			"title": "Does your website have these elements of responsive web design?",
+			"author": "Frank Spillers",
+			"url": "https://www.slideshare.net/farreaching/does-your-website-have-these-elements-of-responsive-web-design-experience-dynamics-web-seminar"
+		},
+		{
+			"title": "Adaptive Input",
+			"author": "Jason Grigsby",
+			"url": "https://www.slideshare.net/grigs/adaptive-input-bd-conf-san-diego",
+			"featured": true
+		},
+		{
+			"title": "Interactive News Editing and Producing",
+			"author": "Kurt Gessler",
+			"url": "https://www.slideshare.net/kurtgessler/northwestern-university-presentation-for-journalism-451-week-6-in-the-winter-2015-quarter-week7"
+		},
+		{
+			"title": "Responsive Design 2014",
+			"author": "1508 A/S",
+			"url": "https://www.slideshare.net/1508as/responsive-design-2014-morgenbooster",
+			"lang": "da"
+		},
+		{
+			"title": "Responsive Design Round Table",
+			"author": "Christian Glover Wilson",
+			"url": "https://www.slideshare.net/ChristianGloverWilso/responsive-web-design-51395323"
+		},
+		{
+			"title": "RWD in the Wild",
+			"author": "Rich Quick",
+			"url": "https://www.slideshare.net/richardfquick/rwd-in-the-wild"
+		},
+		{
+			"title": "CSS Layout Techniques",
+			"author": "Harshal Patil",
+			"url": "https://www.slideshare.net/HarshalPatil4/css-layout-techniques"
+		},
+		{
+			"title": "Death, Taxes & Viewport Chrome: Designing for Uncertainty",
+			"author": "Jason Pamental",
+			"url": "https://www.slideshare.net/jpamental/death-taxes-viewport-chrome-designing-for-uncertainty"
+		},
+		{
+			"title": "Per una Tipografia degli ePub",
+			"author": "Matteo Balocco",
+			"url": "https://www.slideshare.net/totanus/per-una-tipografia-degli-epub-5240497",
+			"lang": "it"
+		},
+		{
+			"title": "Dezvoltarea aplicaţiilor Web la nivel de client (cursul #4): Design Web. Proiectarea siturilor Web. Design Web responsiv",
+			"author": "Sabin Buraga",
+			"url": "https://www.slideshare.net/busaco/web04-design-web2",
+			"lang": "ro"
+		},
+		{
+			"title": "CLIW 2014—2015 (4/12): Design Web. Proiectarea siturilor Web. Design Web responsiv",
+			"author": "Sabin Buraga",
+			"url": "https://www.slideshare.net/busaco/design-web-proiectarea-siturilor-web-design-web-responsiv",
+			"lang": "ro"
+		},
+		{
+			"title": "Five Things You Need to Know About Mobile-first and Responsive Web Design",
+			"author": "John Bersentes",
+			"url": "https://www.slideshare.net/JohnTheo/tmpgovwhitepaperresponsivedesign"
+		},
+		{
+			"title": "Responsive Web Design - more than just a buzzword",
+			"author": "Russ Weakley",
+			"url": "https://www.slideshare.net/maxdesign/responsive-web-design-more-than-just-a-buzzword",
+			"featured": true
+		},
+		{
+			"title": "Designing With Web Standards in 2016”",
+			"author": "Jeffrey Zeldman",
+			"url": "https://www.youtube.com/watch?v=8p5pB1oCCW8",
+			"featured": true
+		},
+		{
+			"title": "What Every Web Designer Should Know — A Better You At What You Do",
+			"author": "Jeffrey Zeldman",
+			"url": "https://adactio.com/journal/4534/"
+		}
+	]
 }

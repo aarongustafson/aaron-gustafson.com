@@ -2,7 +2,15 @@
 title: "Fullscreen Video and Iframes Made Easy"
 date: 2025-12-10 10:00:00 -07:00
 comments: true
-tags: ["web components", "progressive enhancement", "HTML", "video", "accessibility", "media"]
+tags:
+  [
+    "web components",
+    "progressive enhancement",
+    "HTML",
+    "video",
+    "accessibility",
+    "media",
+  ]
 description: "The fullscreen-control web component adds fullscreen capabilities to any video or iframe element with a single wrapper and zero configuration."
 twitter_text: "Add fullscreen controls to videos and iframes with progressive enhancement. One wrapper, zero hassle."
 ---
@@ -24,6 +32,7 @@ Wrap a video element:
 ```
 
 That's it. You get:
+
 - A positioned fullscreen button overlay
 - Browser prefix handling (webkit, moz)
 - Automatic focus management
@@ -43,7 +52,8 @@ Embed a YouTube video with fullscreen support:
     src="https://www.youtube.com/embed/dQw4w9WgXcQ"
     width="560"
     height="315"
-    title="YouTube video player">
+    title="YouTube video player"
+  >
   </iframe>
 </fullscreen-control>
 ```
@@ -81,11 +91,9 @@ Sometimes the visible text and screen reader announcement should differ. Use `bu
 ```html
 <fullscreen-control
   button-text="Fullscreen"
-  button-label="View {name} in fullscreen mode">
-  <iframe
-    src="https://example.com"
-    title="Product teaser">
-  </iframe>
+  button-label="View {name} in fullscreen mode"
+>
+  <iframe src="https://example.com" title="Product teaser"> </iframe>
 </fullscreen-control>
 ```
 
@@ -102,7 +110,7 @@ All of this happens automatically without any configuration needed.
 Need to trigger fullscreen from JavaScript? The component exposes three methods:
 
 ```javascript
-const control = document.querySelector('fullscreen-control');
+const control = document.querySelector("fullscreen-control");
 
 // Enter fullscreen
 await control.enterFullscreen();
@@ -121,14 +129,14 @@ These handle all the browser prefixes and error handling for you.
 Listen for fullscreen state changes:
 
 ```javascript
-const control = document.querySelector('fullscreen-control');
+const control = document.querySelector("fullscreen-control");
 
-control.addEventListener('fullscreen-control:enter', () => {
-  console.log('Entered fullscreen mode');
+control.addEventListener("fullscreen-control:enter", () => {
+  console.log("Entered fullscreen mode");
 });
 
-control.addEventListener('fullscreen-control:exit', () => {
-  console.log('Exited fullscreen mode');
+control.addEventListener("fullscreen-control:exit", () => {
+  console.log("Exited fullscreen mode");
 });
 ```
 
@@ -175,14 +183,14 @@ npm install @aarongustafson/fullscreen-control
 Then import it in your JavaScript:
 
 ```javascript
-import '@aarongustafson/fullscreen-control/define.js';
+import "@aarongustafson/fullscreen-control/define.js";
 ```
 
 Or load it from a CDN for quick prototyping:
 
 ```html
 <script type="module">
-  import { defineFullscreenControl } from 'https://unpkg.com/@aarongustafson/fullscreen-control@latest/define.js?module';
+  import { defineFullscreenControl } from "https://unpkg.com/@aarongustafson/fullscreen-control@latest/define.js?module";
   defineFullscreenControl();
 </script>
 ```

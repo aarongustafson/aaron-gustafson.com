@@ -14,34 +14,43 @@ sitemap: false
 
 <h1 class="page__title">Notable Clients</h1>
 
-<p>Over the last {{ helpers.currentYear() - 1996 }} years, I’ve had the pleasure of working with a bunch of amazing
-organizations and brands. Often this work was done through my the agency I used to run, but some was also done in
-partnership with other amazing companies and individuals. Below are a few of the highlights from this extensive list.</a>
+<p>
+	Over the last {{ helpers.currentYear() - 1996 }} years, I’ve had the pleasure
+	of working with a bunch of amazing organizations and brands. Often this work
+	was done through my the agency I used to run, but some was also done in
+	partnership with other amazing companies and individuals. Below are a few of
+	the highlights from this extensive list.
+</p>
 
 <style>
-  .listing__item__image {
-    display: grid;
-    place-items: center;
-    width: 200px;
-    height: 180px;
-  }
-  .listing__item__image svg {
-    max-width: 80%;
-    max-height: 80%;
-    width: auto;
-    height: auto;
-  }
+	.listing__item__image {
+		display: grid;
+		place-items: center;
+		width: 200px;
+		height: 180px;
+	}
+	.listing__item__image svg {
+		max-width: 80%;
+		max-height: 80%;
+		width: auto;
+		height: auto;
+	}
 </style>
 
 <ol class="listing listing--clients listing--grid">
-  {% for client in clients %}
-    <li class="listing__item listing__item--{{ forloop.index }} client">
-      <div class="listing__item__image" aria-label="{{ client.name }}">
-        {% set svg %}{{ ( "/src/static/i/c/" + client.logo ) | svgContents | safe }}{% endset %}
-        {{ svg | safe }}
-      </div>
-    </li>
-  {% endfor %}
+	{% for client in clients %}
+	<li class="listing__item listing__item--{{ forloop.index }} client">
+		<div class="listing__item__image" aria-label="{{ client.name }}">
+			{% set svg %}{{ ( "/src/static/i/c/" + client.logo ) | svgContents | safe
+			}}{% endset %} {{ svg | safe }}
+		</div>
+	</li>
+	{% endfor %}
 </ol>
 
-<small>All product names, trademarks, and registered trademarks are property of their respective owners. All company, product and service names used are for identification purposes only. Use of these names, trademarks, and brands does not imply endorsement.</small>
+<small
+	>All product names, trademarks, and registered trademarks are property of
+	their respective owners. All company, product and service names used are for
+	identification purposes only. Use of these names, trademarks, and brands does
+	not imply endorsement.</small
+>

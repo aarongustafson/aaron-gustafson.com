@@ -34,7 +34,7 @@ exports.handler = async (event, context) => {
 					let sha = res.data.sha;
 					const github_content = Buffer.from(
 						res.data.content,
-						"base64"
+						"base64",
 					).toString("utf-8");
 					// Don’t push if it’s the same
 					if (local_content == github_content) {
@@ -60,6 +60,6 @@ exports.handler = async (event, context) => {
 							};
 						});
 				});
-		})
+		}),
 	);
 };

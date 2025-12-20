@@ -76,15 +76,15 @@ export default async (config) => {
 	config.setLibrary("md", md);
 
 	// Layout aliases
-	config.addLayoutAlias("base", "layouts/base.html");
-	config.addLayoutAlias("blog", "layouts/blog.html");
-	config.addLayoutAlias("home", "layouts/home.html");
-	config.addLayoutAlias("link", "layouts/link.html");
-	config.addLayoutAlias("page", "layouts/page.html");
-	config.addLayoutAlias("post", "layouts/post.html");
-	config.addLayoutAlias("tag", "layouts/tag.html");
-	config.addLayoutAlias("talk", "layouts/talk.html");
-	config.addLayoutAlias("tank", "layouts/tank.html");
+	config.addLayoutAlias("base", "layouts/base.njk");
+	config.addLayoutAlias("blog", "layouts/blog.njk");
+	config.addLayoutAlias("home", "layouts/home.njk");
+	config.addLayoutAlias("link", "layouts/link.njk");
+	config.addLayoutAlias("page", "layouts/page.njk");
+	config.addLayoutAlias("post", "layouts/post.njk");
+	config.addLayoutAlias("tag", "layouts/tag.njk");
+	config.addLayoutAlias("talk", "layouts/talk.njk");
+	config.addLayoutAlias("tank", "layouts/tank.njk");
 
 	// Passthru
 	config.addPassthroughCopy({ "src/static": "/" });

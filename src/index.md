@@ -13,7 +13,7 @@ Every day I strive to make the web (and world) more [accessible](/tags/accessibi
 and [equitable](/tags/inclusive-design/) place for people to live, play, and work.
 
 Over the last {{ helpers.currentYear() - 1996 }} years, I’ve written
-<a href="/publications/#books">{{ collections.books | filterTo("type", "authored") | length }} books</a> (contributing to 
+<a href="/publications/#books">{{ collections.books | filterTo("type", "authored") | length }} books</a> (contributing to
 {{ ( collections.books | length ) - ( collections.books | filterTo("type", "authored") | length ) }}
 more) and <a href="/publications/#articles">{{ collections.articles | length }} articles</a> with that focus. I’ve also presented on [these and related topics](/speaking-engagements/#talks) at
 <a href="/speaking-engagements/">over {{ speaking_engagements | length }} events</a> in
