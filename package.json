@@ -108,7 +108,6 @@
 	"devDependencies": {
 		"@zachleat/announcement-banner": "^1.0.8",
 		"netlify-cli": "^23.13.0",
-		"netlify-plugin-webmentions": "^1.1.1",
 		"plop": "^4.0.1",
 		"prettier": "^3.7.4",
 		"prettier-plugin-toml": "^2.0.6"
