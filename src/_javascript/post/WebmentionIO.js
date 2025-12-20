@@ -307,7 +307,7 @@ WebmentionIO.types = {
 		}
 		return html.replace(
 			/<(\/?)h([1-6])([^>]*)>/gi,
-			function (match, slash, level, attrs) {
+			function (_match, slash, level, attrs) {
 				var current = parseInt(level, 10);
 				var newLevel = Math.min(6, current + shift);
 				var suffix = attrs || "";
