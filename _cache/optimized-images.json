@@ -1888,5 +1888,20 @@
     "mtime": 1765084463276,
     "size": 442290,
     "processed": 1765315995910
+  },
+  "src/_images/talks/embedding-accessibility.png": {
+    "mtime": 1766258975103,
+    "size": 561705,
+    "processed": 1766261016983
+  },
+  "src/_images/talks/expanding-accessibility-with-ai.png": {
+    "mtime": 1766259017673,
+    "size": 1639687,
+    "processed": 1766261016988
+  },
+  "src/_images/talks/where-do-we-go-from-here.png": {
+    "mtime": 1766259040793,
+    "size": 260230,
+    "processed": 1766261017001
   }
 }
