@@ -56,7 +56,7 @@
 
                 {% if webmention_content %}
                   <div class="webmention__content p-content">
-                    {{ webmention_content | unescape | replace("<a href=", '<a rel="nofollow" href=') | safe }}
+                    {{ webmention_content | unescape | demote_headings(2) | replace("<a href=", '<a rel="nofollow" href=') | safe }}
                   </div>
                 {% endif %}
 

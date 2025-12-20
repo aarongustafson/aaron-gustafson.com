@@ -169,6 +169,23 @@ export default {
 			.replace(/&quot;/g, '"')
 			.replace(/&amp;amp;/g, "&amp;");
 	},
+	demote_headings: (html, levels = 1) => {
+		if (!html) {
+			return html;
+		}
+		const shift = parseInt(levels, 10);
+		if (isNaN(shift) || shift <= 0) {
+			return html;
+		}
+		return html.replace(
+			/<(\/?)h([1-6])([^>]*)>/gi,
+			(match, slash, level, attrs = "") => {
+				const current = parseInt(level, 10);
+				const newLevel = Math.min(6, current + shift);
+				return `<${slash}h${newLevel}${attrs}>`;
+			},
+		);
+	},
 
 	minus: (a, b) => parseInt(a, 10) - parseInt(b, 10),
 	size: (array) => (!array ? 0 : array.length),
