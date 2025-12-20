@@ -5,7 +5,6 @@ import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 import pluginRss from "@11ty/eleventy-plugin-rss";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import embedCodePen from "@manustays/eleventy-plugin-codepen-iframe";
-import eleventyPluginFilesMinifier from "@sherby/eleventy-plugin-files-minifier";
 import embedEverything from "eleventy-plugin-embed-everything";
 import imagesResponsiver from "eleventy-plugin-images-responsiver";
 import readingTime from "eleventy-plugin-reading-time";
@@ -170,26 +169,6 @@ export default async (config) => {
 	});
 	// Remove duplicate syntax highlight plugin
 	// config.addPlugin(syntaxHighlight); // This was duplicated
-	// Only minify files in production and with better performance settings
-	if (PRODUCTION) {
-		config.addPlugin(eleventyPluginFilesMinifier, {
-			// Optimize minification settings for better performance
-			throttle: true,
-			concurrency: 2, // Reduce concurrency to prevent memory spikes
-			preserveSymlinks: false,
-			// Only minify critical files
-			html: {
-				minifyCSS: false, // CSS is already minified by Gulp
-				minifyJS: false,  // JS is already minified by Gulp
-				removeComments: true,
-				collapseWhitespace: true,
-				removeRedundantAttributes: true,
-				removeEmptyAttributes: true,
-				caseSensitive: true,
-				keepClosingSlash: true
-			}
-		});
-	}
 
 	// Filters
 	config.addFilter(
