@@ -1,173 +1,192 @@
 ---
 is_post: true
 ---
-{% extends "layouts/base.html" %}
-{% from "macros.njk" import post_date, tag_list %}
 
-{% block content %}
-	{% set keywords %}{% if tags.length > 0 %}{{ tags | join(", ") }}{% endif %}{% endset %}
-	{% set this_url = site.url + page.url %}
-	{% set old_url %}{% if redirect_from %}{{ site.url }}{{ redirect_from }}{% else %}false{% endif %}{% endset %}
-	{% set all_mentions = webmentions | getWebmentionsForUrl(this_url, old_url) %}
-	{% set replies = all_mentions | webmentionsByType(['mention-of', 'in-reply-to', 'bookmark-of']) | required('name || summary || content') %}
-	{% set likes = all_mentions | webmentionsByType('like-of') | required('author') %}
-	{% set shares = all_mentions | webmentionsByType([ 'repost-of' ]) %}
-	{% set total_webmentions = replies.length + likes.length + shares.length %}
-	{% set has_webmentions = total_webmentions > 0 %}
-	{% set heading %}<h1 class="entry__title p-name">{{ title  | markdownify | strip_links | safe }}</h1>{% endset %}
-	{% set transition_root %}post-{{ page.fileSlug }}{% endset %}
+{% extends "layouts/base.html" %} {% from "macros.njk" import post_date,
+tag_list %} {% block content %} {% set keywords %}{% if tags.length > 0 %}{{
+tags | join(", ") }}{% endif %}{% endset %} {% set this_url = site.url +
+page.url %} {% set old_url %}{% if redirect_from %}{{ site.url }}{{
+redirect_from }}{% else %}false{% endif %}{% endset %} {% set all_mentions =
+webmentions | getWebmentionsForUrl(this_url, old_url) %} {% set replies =
+all_mentions | webmentionsByType(['mention-of', 'in-reply-to', 'bookmark-of']) |
+required('name || summary || content') %} {% set likes = all_mentions |
+webmentionsByType('like-of') | required('author') %} {% set shares =
+all_mentions | webmentionsByType([ 'repost-of' ]) %} {% set total_webmentions =
+replies.length + likes.length + shares.length %} {% set has_webmentions =
+total_webmentions > 0 %} {% set heading %}
+<h1 class="entry__title p-name">
+	{{ title | markdownify | strip_links | safe }}
+</h1>
+{% endset %} {% set transition_root %}post-{{ page.fileSlug }}{% endset %}
 
-	<div class="layout-container layout-container--blog">
-		<article role="article" class="layout-container__primary h-entry">
-			<header class="entry__header" style="view-transition-name: {{ transition_root }}-title">
-				{{ heading | safe }}
-			</header>
-			<div class="entry entry--page">
+<div class="layout-container layout-container--blog">
+	<article role="article" class="layout-container__primary h-entry">
+		<header
+			class="entry__header"
+			style="view-transition-name: {{ transition_root }}-title"
+		>
+			{{ heading | safe }}
+		</header>
+		<div class="entry entry--page">
+			<div class="entry__meta">
+				{% if reply_to_url %}
+				<p class="entry__in-reply-to">
+					You are reading a reply to
+					<a class="u-in-reply-to" href="{{ reply_to_url }}"
+						>{{ reply_to_title }}</a
+					>.
+				</p>
+				{% endif %} {% if series %}
+				<p class="entry__series">
+					This is the {{ series.ordinal }} entry in the series
+					<a href="/notebook/series/{{ series.tag | replace('series-','') }}"
+						>{{ series.name }}</a
+					>.
+				</p>
+				{% endif %}
 
-				<div class="entry__meta">
-					{% if reply_to_url %}
-						<p class="entry__in-reply-to">You are reading a reply to 
-							<a class="u-in-reply-to" href="{{ reply_to_url }}">{{ reply_to_title }}</a>.
-						</p>
-					{% endif %}
+				<dl>
+					<dt>Published</dt>
+					<dd>
+						{{ post_date( page.date, last_updated_at) }}
+						<b class="hidden"
+							>by
+							<a class="p-author h-card" href="/about">Aaron Gustafson</a></b
+						>
+						{% if in_reply_to %}
+						<b class="hidden"
+							>in reply to
+							<a class="u-in-reply-to" href="{{ in_reply_to }}"
+								>{{ in_reply_to }}</a
+							></b
+						>{% endif %}
+					</dd>
 
-					{% if series %}
-						<p class="entry__series">This is the {{ series.ordinal }} entry in the series 
-							<a href="/notebook/series/{{ series.tag | replace('series-','') }}">{{ series.name }}</a>.
-						</p>
-					{% endif %}
+					<dt>Reading Time</dt>
+					<dd>{{ content | readingTime }}</dd>
 
-					<dl>
-						<dt>Published</dt>
-						<dd>
-							{{ post_date( page.date, last_updated_at) }}
-							<b class="hidden">by <a class="p-author h-card" href="/about">Aaron Gustafson</a></b>
-							{% if in_reply_to %} <b class="hidden">in reply to <a class="u-in-reply-to" href="{{ in_reply_to }}">{{ in_reply_to }}</a></b>{% endif %}
-						</dd>
-						
-						<dt>Reading Time</dt>
-						<dd>{{ content | readingTime }}</dd>
+					<dt class="dont-read">Filed Under</dt>
+					<dd
+						class="dont-read"
+						style="view-transition-name: {{ transition_root }}-tags"
+					>
+						{{ tag_list( tags ) }}
+					</dd>
 
-						<dt class="dont-read">Filed Under</dt>
-						<dd class="dont-read"
-								style="view-transition-name: {{ transition_root }}-tags"
-								>{{ tag_list( tags ) }}</dd>
-
-						{% set hide_reactions = not has_webmentions and not disqus.commentCount %}
-            <dt class="dont-read" {% if hide_reactions %}hidden{% endif %}>Reactions</dt>
-            <dd class="dont-read" {% if hide_reactions %}hidden{% endif %}>
-              <ul class="entry__jump-links">
-                <li class="entry__jump entry__jump--webmentions" {% if not has_webmentions %}hidden{% endif %}><a href="#webmentions">{{ total_webmentions }} Webmentions</a></li>
-                <li class="entry__jump entry__jump--comments" {% if not disqus.commentCount %}hidden{% endif %}><a href="#comments">{{ disqus.commentCount }} Comments</a></li>
-              </ul>
-            </dd>
-
-						{% if crossposted %}
-							<dt class="dont-read">Crossposted</dt>
-							{% for venue, link in crossposted %}
-								<dd class="dont-read"><a class="u-syndication" href="{{ link }}">{{ venue }}</a></dd>
-							{% endfor %}
-						{% endif %}
-
-						{% if translations %}
-							<dt class="dont-read">Translated</dt>
-							{% for lang, link in translations %}
-								<dd class="dont-read"><a class="u-syndication" hreflang="{{ lang }}" href="{{ link }}">{{ langs[lang] }}</a></dd>
-							{% endfor %}
-						{% endif %}
-
-						<dt class="dont-read">Like this?</dt>
-						<dd class="dont-read">
-							{% include "partials/post/sharing.html" %}
-						</dd>
-
-					</dl>
-				</div>
-
-				<div class="entry__content e-content">
-
-					{% if hero %}
-						<figure class="entry__hero {{ 'entry__hero--' + hero.orientation if hero.orientation else '' }}">
-							<img data-responsiver="hero" class="entry__hero__image"
-									 src="{{ hero.src | absoluteUrl(site.url) }}" alt="{{ hero.alt }}"
-									 style="view-transition-name: {{ transition_root }}-hero;{% if hero.offset %} margin-top: -{{ hero.offset }}px;{% endif %}">
-							<figcaption class="entry__hero__credit">Credit:
-								{% if hero.url %}
-									<a href="{{ hero.url }}">{{ hero.credit }}</a>
-								{% else %}
-									{{ hero.credit }}
-								{% endif %}
-							</figcaption>
-						</figure>
-					{% endif %}
-
-					{{ content | safe }}
-
-          {% if url %}
-            <p class="entry__source">
-              <a href="{{ url }}" class="u-syndication">Read {% if publisher %}on {{ publisher }}{% else %}more{% endif %}</a>
-            </p>
-          {% endif %}
-				</div>
-
-				<footer class="entry__footer">
-					{% if thanks %}
-						<hr>
-
-						<p>Many thanks to
-						{% for person, url in thanks %}
-							{% set link %}{%- if url %}<a href="{{ url }}">{{ person }}</a>{% else %}{{ person }}{% endif -%}{% endset %}
-							{% if loop.last and loop.first %}
-								{{ link | safe }}
-							{% elif loop.last %}
-								and {{ link | safe }}
+					{% set hide_reactions = not has_webmentions and not
+					disqus.commentCount %}
+					<dt class="dont-read" {% if hide_reactions %}hidden{% endif %}>
+						Reactions
+					</dt>
+					<dd class="dont-read" {% if hide_reactions %}hidden{% endif %}>
+						<ul class="entry__jump-links">
+							{% if has_webmentions %}
+							<li class="entry__jump entry__jump--webmentions">
+								<a href="#webmentions">{{ total_webmentions }} Webmentions</a>
+							</li>
 							{% else %}
-								{{ link | safe }},
+							<li class="entry__jump entry__jump--webmentions" hidden>
+								<a href="#webmentions">{{ total_webmentions }} Webmentions</a>
+							</li>
+							{% endif %} {% if disqus.commentCount %}
+							<li class="entry__jump entry__jump--comments">
+								<a href="#comments">{{ disqus.commentCount }} Comments</a>
+							</li>
 							{% endif %}
-						{% endfor %}
-						for helping me with the development of this piece.</p>
-					{% endif %}
+						</ul>
+					</dd>
 
-					<hr>
+					{% if crossposted %}
+					<dt class="dont-read">Crossposted</dt>
+					{% for venue, link in crossposted %}
+					<dd class="dont-read">
+						<a class="u-syndication" href="{{ link }}">{{ venue }}</a>
+					</dd>
+					{% endfor %} {% endif %} {% if translations %}
+					<dt class="dont-read">Translated</dt>
+					{% for lang, link in translations %}
+					<dd class="dont-read">
+						<a class="u-syndication" hreflang="{{ lang }}" href="{{ link }}"
+							>{{ langs[lang] }}</a
+						>
+					</dd>
+					{% endfor %} {% endif %}
 
-					{% include "partials/global/promo.html" %}
-
-					<hr>
-					
-					{% if tags.length > 0 %}
-						{% set related = collections.feedAll | related( this_url, tags[0] ) | limit(3) %}
-						{% if related.length > 0 %}
-							<div class="entry__related">
-								<h2 class="subsection__header">You might also like</h2>
-								{% set teaser_heading_level = "h3" %}
-								{% for post in related %}
-									{% include "partials/post/teaser.html" %}
-								{% endfor %}
-							</div>
-						{% endif %}
-					{% endif %}
-
-					<hr>
-					
-					{% include "partials/post/follow.html" %}
-
-				</footer>
-
-				{% include "partials/post/webmentions.html" %}
-
-				{% include "partials/post/comments.html" %}
-
-
+					<dt class="dont-read">Like this?</dt>
+					<dd class="dont-read">{% include "partials/post/sharing.html" %}</dd>
+				</dl>
 			</div>
-		</article>
-		
-	</div>
 
-	<script type="application/ld+json" class="dont-read">
-		{% include "partials/post/jsonld.html" %}
-	</script>
-{% endblock %}
+			<div class="entry__content e-content">
+				{% if hero %}
+				<figure
+					class="entry__hero {{ 'entry__hero--' + hero.orientation if hero.orientation else '' }}"
+				>
+					<img
+						data-responsiver="hero"
+						class="entry__hero__image"
+						src="{{ hero.src | absoluteUrl(site.url) }}"
+						alt="{{ hero.alt }}"
+						style="view-transition-name: {{ transition_root }}-hero;{% if hero.offset %} margin-top: -{{ hero.offset }}px;{% endif %}"
+					/>
+					<figcaption class="entry__hero__credit">
+						Credit: {% if hero.url %}
+						<a href="{{ hero.url }}">{{ hero.credit }}</a>
+						{% else %} {{ hero.credit }} {% endif %}
+					</figcaption>
+				</figure>
+				{% endif %} {{ content | safe }} {% if url %}
+				<p class="entry__source">
+					<a href="{{ url }}" class="u-syndication"
+						>Read {% if publisher %}on {{ publisher }}{% else %}more{% endif
+						%}</a
+					>
+				</p>
+				{% endif %}
+			</div>
 
-{% block template_end %}
-  {% include "partials/post/webmentions-templates.html" %}
-{% endblock %}
+			<footer class="entry__footer">
+				{% if thanks %}
+				<hr />
+
+				<p>
+					Many thanks to {% for person, url in thanks %} {% set link %}{%- if
+					url %}<a href="{{ url }}">{{ person }}</a>{% else %}{{ person }}{%
+					endif -%}{% endset %} {% if loop.last and loop.first %} {{ link | safe
+					}} {% elif loop.last %} and {{ link | safe }} {% else %} {{ link |
+					safe }}, {% endif %} {% endfor %} for helping me with the development
+					of this piece.
+				</p>
+				{% endif %}
+
+				<hr />
+
+				{% include "partials/global/promo.html" %}
+
+				<hr />
+
+				{% if tags.length > 0 %} {% set related = collections.feedAll | related(
+				this_url, tags[0] ) | limit(3) %} {% if related.length > 0 %}
+				<div class="entry__related">
+					<h2 class="subsection__header">You might also like</h2>
+					{% set teaser_heading_level = "h3" %} {% for post in related %} {%
+					include "partials/post/teaser.html" %} {% endfor %}
+				</div>
+				{% endif %} {% endif %}
+
+				<hr />
+
+				{% include "partials/post/follow.html" %}
+			</footer>
+
+			{% include "partials/post/webmentions.html" %} {% include
+			"partials/post/comments.html" %}
+		</div>
+	</article>
+</div>
+
+<script type="application/ld+json" class="dont-read">
+	{% include "partials/post/jsonld.html" %}
+</script>
+{% endblock %} {% block template_end %} {% include
+"partials/post/webmentions-templates.html" %} {% endblock %}
