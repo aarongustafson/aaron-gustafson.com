@@ -243,6 +243,9 @@ WebmentionIO.types = {
 
 			// Process the rendered HTML to fix data attributes
 			html = processWebmentionDataAttributes(html);
+
+			// Demote headings inside incoming HTML to avoid hierarchy collisions
+			html = demoteHeadings(html, 2);
 		}
 
 		template_class = template_class || "";
@@ -292,6 +295,25 @@ WebmentionIO.types = {
 		}
 
 		return temp.innerHTML;
+	}
+
+	function demoteHeadings(html, levels) {
+		if (!html) {
+			return html;
+		}
+		var shift = parseInt(levels, 10);
+		if (isNaN(shift) || shift <= 0) {
+			return html;
+		}
+		return html.replace(
+			/<(\/?)h([1-6])([^>]*)>/gi,
+			function (match, slash, level, attrs) {
+				var current = parseInt(level, 10);
+				var newLevel = Math.min(6, current + shift);
+				var suffix = attrs || "";
+				return "<" + slash + "h" + newLevel + suffix + ">";
+			},
+		);
 	}
 
 	// Uses the ID attribute for everything except tweets
