@@ -1,7 +1,7 @@
 ---
 is_post: true
 ---
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.njk" %}
 {% from "macros.njk" import post_date, tag_list %}
 {% block content %}
 
@@ -50,7 +50,7 @@ is_post: true
 
 						<dt class="dont-read">Like this?</dt>
 						<dd class="dont-read">
-							{% include "partials/post/sharing.html" %}
+							{% include "partials/post/sharing.njk" %}
 						</dd>
 					</dl>
 				</div>
@@ -91,6 +91,6 @@ is_post: true
 	</div>
 
 	<script type="application/ld+json">
-		{% include "partials/post/jsonld.html" %}
+		{% include "partials/post/jsonld.njk" %}
 	</script>
 {% endblock %}

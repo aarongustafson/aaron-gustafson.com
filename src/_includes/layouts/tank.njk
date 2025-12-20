@@ -2,7 +2,7 @@
 is_post: false
 ---
 
-{% extends "layouts/base.html" %} {% block content %} {% set this_url = site.url
+{% extends "layouts/base.njk" %} {% block content %} {% set this_url = site.url
 + page.url %} {% set fts = site.url + fts %}
 
 <div class="layout-container layout-container--tank">
@@ -51,4 +51,4 @@ is_post: false
 	</article>
 </div>
 
-{% include "partials/global/lightbox.html" %} {% endblock %}
+{% include "partials/global/lightbox.njk" %} {% endblock %}

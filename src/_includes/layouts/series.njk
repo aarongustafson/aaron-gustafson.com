@@ -1,7 +1,7 @@
 ---
-github_edit: "_layouts/series.html"
+github_edit: "_layouts/series.njk"
 ---
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.njk" %}
 
 {% block content %}
   {% set posts = collections.posts | bySeriesTag( tag ) | reverse %}
@@ -14,7 +14,7 @@ github_edit: "_layouts/series.html"
     <div id="blog-archives">
       {% set teaser_heading_level = "h2" %}
       {% for post in posts %}
-        {% include "partials/post/teaser.html" %}
+        {% include "partials/post/teaser.njk" %}
       {% endfor %}
     </div>
   </article>

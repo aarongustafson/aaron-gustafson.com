@@ -1,7 +1,7 @@
 ---
 is_post: true
 ---
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.njk" %}
 {% from "macros.njk" import post_date, tag_list, datetime, youtube %}
 
 {% block content %}
@@ -77,7 +77,7 @@ is_post: true
 
 						<dt class="dont-read">Like this?</dt>
 						<dd class="dont-read">
-							{% include "partials/post/sharing.html" %}
+							{% include "partials/post/sharing.njk" %}
 						</dd>
 
 					</dl>
@@ -154,7 +154,7 @@ is_post: true
 								<h2 class="subsection__header">You might also like</h2>
 								{% set teaser_heading_level = "h3" %}
 								{% for post in related %}
-									{% include "partials/post/teaser.html" %}
+									{% include "partials/post/teaser.njk" %}
 								{% endfor %}
 							</div>
 						{% endif %}
@@ -162,7 +162,7 @@ is_post: true
 
 					<hr>
 					
-					{% include "partials/post/follow.html" %}
+					{% include "partials/post/follow.njk" %}
 
 				</footer>
 
@@ -172,6 +172,6 @@ is_post: true
 	</div>
 
 	<script type="application/ld+json" class="dont-read">
-		{% include "partials/post/jsonld.html" %}
+		{% include "partials/post/jsonld.njk" %}
 	</script>
 {% endblock %}

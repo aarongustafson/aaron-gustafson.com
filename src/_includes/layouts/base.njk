@@ -85,13 +85,13 @@
 
 		<hr class="rule rule--optional">
 
-		{% include "partials/global/navigation.html" %}
+		{% include "partials/global/navigation.njk" %}
 		
 		<footer role="contentinfo" class="footer">
 			<div class="layout-container">
 				<p class="footer__feeds">This site offers <a href="/feeds/">multiple feeds in XML (RSS) and JSONFeed formats</a>.</p>
 				{% if page.path != '.html' %}
-					<p class="footer__fork-me">Did you spot a typo or error? Eesh, I’m sorry. Would you mind <a href="{{ site.repo_url | replace('/tree/', '/edit/') }}{% if page.tag %}_layouts/tag.html{% elif page.blog %}_layouts/blog.html{% else %}{{ page.inputPath }}{% endif %}">fixing it</a> for me? You’re so awesome.</p>
+					<p class="footer__fork-me">Did you spot a typo or error? Eesh, I’m sorry. Would you mind <a href="{{ site.repo_url | replace('/tree/', '/edit/') }}{% if page.tag %}_layouts/tag.njk{% elif page.blog %}_layouts/blog.njk{% else %}{{ page.inputPath }}{% endif %}">fixing it</a> for me? You’re so awesome.</p>
 				{% endif %}
 				<p class="footer__copyright">
 					<b id="license">The content of this site is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons</a>.</b>
@@ -99,7 +99,7 @@
 						Interested in how this site was made? <a href="/colophon/">Check this out</a>.
 					{% endif %}
 				</p>
-				{% include "partials/global/carbon-badge.html" %}
+				{% include "partials/global/carbon-badge.njk" %}
 			</div>
 		</footer>
 

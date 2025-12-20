@@ -1,4 +1,4 @@
-{% extends "layouts/base.html" %}
+{% extends "layouts/base.njk" %}
 
 {% from "macros.njk" import post_date %}
 
@@ -19,7 +19,7 @@
       {% if show_footer %}
         <footer>
           {% if sharing %}
-            {% include "partials/post/sharing.html" %}
+            {% include "partials/post/sharing.njk" %}
           {% endif %}
         </footer>
       {% endif %}
