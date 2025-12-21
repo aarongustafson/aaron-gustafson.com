@@ -7,6 +7,12 @@
 		window.addEventListener("load", init, false);
 	}
 
+	function logDebug() {
+		if (typeof console !== "undefined" && console.debug) {
+			console.debug.apply(console, arguments);
+		}
+	}
+
 	function init() {
 		checkImages();
 		setupObserver();
@@ -41,6 +47,10 @@
 			return;
 		}
 		image.dataset.avatarFallbackApplied = "true";
+		logDebug("[Avatars] Applying fallback avatar", {
+			src: image.currentSrc || image.src,
+			target: "/i/fallbacks/avatar.svg",
+		});
 		image.src = "/i/fallbacks/avatar.svg";
 	}
 
@@ -49,9 +59,16 @@
 			return;
 		}
 		image.dataset.avatarGuarded = "true";
+		logDebug("[Avatars] Guarding image", {
+			src: image.currentSrc || image.src,
+			data: image.dataset,
+		});
 
 		if (image.complete) {
 			if (image.naturalWidth === 0) {
+				logDebug("[Avatars] Image was complete with naturalWidth 0", {
+					src: image.currentSrc || image.src,
+				});
 				applyFallback(image);
 			}
 			return;
@@ -60,6 +77,9 @@
 		image.addEventListener(
 			"error",
 			function () {
+				logDebug("[Avatars] Image error triggered fallback", {
+					src: image.currentSrc || image.src,
+				});
 				applyFallback(image);
 			},
 			{ once: true },

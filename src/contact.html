@@ -9,6 +9,8 @@ sharing: false
 sitemap: true
 ---
 
+{% set useMinifiedAssets = site.minify and not build.debugAssets %}
+
 <h1>Contact Me</h1>
 
 <p>
@@ -83,9 +85,9 @@ sitemap: true
 		Field14: "reason",
 	};
 </script>
-<script src="/j/prepopulate-form{% if site.minify %}.min{% endif %}.js"></script>
+<script src="/j/prepopulate-form{% if useMinifiedAssets %}.min{% endif %}.js"></script>
 <script
-	src="/j/form-saver{% if site.minify %}.min{% endif %}.js"
+	src="/j/form-saver{% if useMinifiedAssets %}.min{% endif %}.js"
 	async
 	defer
 ></script>

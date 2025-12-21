@@ -232,6 +232,12 @@ WebmentionIO.types = {
 		// console.log( 'Successfully added', mentions.length );
 	}
 
+	function logDebug() {
+		if (typeof console !== "undefined" && console.debug) {
+			console.debug.apply(console, arguments);
+		}
+	}
+
 	function generateWebmentionsHTML(mentions, template_key, template_class) {
 		var template = templates[template_key] || null,
 			html = "";
@@ -240,6 +246,11 @@ WebmentionIO.types = {
 			//template = nunjucks.compile( template );
 			nunjucks.configure({ autoescape: false });
 			html = nunjucks.renderString(template, { webmentions: mentions });
+			logDebug(
+				"[WebmentionIO] Rendered template %s for %d mentions",
+				template_key,
+				mentions.length,
+			);
 
 			// Process the rendered HTML to fix data attributes
 			html = processWebmentionDataAttributes(html);
@@ -305,7 +316,8 @@ WebmentionIO.types = {
 		if (isNaN(shift) || shift <= 0) {
 			return html;
 		}
-		return html.replace(
+		var hadHeadings = /<(\/?)h([1-6])[^>]*>/i.test(html);
+		var result = html.replace(
 			/<(\/?)h([1-6])([^>]*)>/gi,
 			function (_match, slash, level, attrs) {
 				var current = parseInt(level, 10);
@@ -314,6 +326,15 @@ WebmentionIO.types = {
 				return "<" + slash + "h" + newLevel + suffix + ">";
 			},
 		);
+		if (hadHeadings) {
+			var snippet = result.replace(/\s+/g, " ").trim().slice(0, 200);
+			logDebug(
+				"[WebmentionIO] Demoted headings by %d levels. Preview: %s",
+				shift,
+				snippet,
+			);
+		}
+		return result;
 	}
 
 	// Uses the ID attribute for everything except tweets

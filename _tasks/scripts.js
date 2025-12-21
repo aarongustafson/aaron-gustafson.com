@@ -14,6 +14,8 @@ const { dest, src } = gulp;
 const { Transform } = stream;
 
 let minify = composer(uglify, console);
+const keepConsole = process.env.KEEP_CONSOLE === "true";
+const shouldMinify = !keepConsole;
 
 const source_folder = `${config.source}/_javascript`;
 const destination_folder = `${config.static}/j`;
@@ -67,31 +69,34 @@ const scripts = (cb) => {
 			// Check if any source files are newer than output
 			const destPath = path.join(destination_folder, outputFile);
 
-			return (
-				src(path.join(folderPath, "*.js"))
-					// Only process if source files are newer than destination
-					.pipe(newer(destPath))
+			let stream = src(path.join(folderPath, "*.js"))
+				// Only process if source files are newer than destination
+				.pipe(newer(destPath))
 
-					// Concatenate files
-					.pipe(concat(outputFile))
+				// Concatenate files
+				.pipe(concat(outputFile))
 
-					// Write expanded version
-					.pipe(dest(destination_folder))
-					.pipe(dest(dist))
+				// Write expanded version
+				.pipe(dest(destination_folder))
+				.pipe(dest(dist))
 
-					// Create minified version
-					.pipe(rename({ suffix: ".min" }))
-					.pipe(
-						minify({
-							compress: {
-								drop_console: !isWatch, // Remove console.log in production
-							},
-						}),
-					)
-					.pipe(dest(destination_folder))
-					.pipe(dest(dist))
-					.pipe(updateServiceWorker())
-			);
+				// Prepare .min filename (contents may stay expanded for debugging)
+				.pipe(rename({ suffix: ".min" }));
+
+			if (shouldMinify) {
+				stream = stream.pipe(
+					minify({
+						compress: {
+							drop_console: keepConsole ? false : !isWatch, // Allow opting-in to console output for debugging
+						},
+					}),
+				);
+			}
+
+			return stream
+				.pipe(dest(destination_folder))
+				.pipe(dest(dist))
+				.pipe(updateServiceWorker());
 		});
 
 	const mergedTasks = merge(tasks);

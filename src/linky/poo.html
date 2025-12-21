@@ -3,6 +3,8 @@ layout: null
 sitemap: false
 ---
 
+{% set useMinifiedAssets = site.minify and not build.debugAssets %}
+
 <!doctype html>
 <html id="aaron-gustafson_com" lang="en" dir="ltr">
 	<head>
@@ -137,7 +139,7 @@ sitemap: false
 			</div>
 		</main>
 		<script
-			src="/j/form-saver{% if site.minify %}.min{% endif %}.js"
+			src="/j/form-saver{% if useMinifiedAssets %}.min{% endif %}.js"
 			async
 			defer
 		></script>

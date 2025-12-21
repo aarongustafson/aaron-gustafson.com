@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% set useMinifiedAssets = site.minify and not build.debugAssets %}
 <html id="aaron-gustafson_com" lang="en" dir="ltr">
 
 	<head>
@@ -18,7 +19,7 @@
 		<link href="/favicon.png" rel="icon">
 		<link rel="manifest" href="/manifest.json">
 
-		<link rel="stylesheet" href="/c/advanced{% if site.minify %}.min{% endif %}.css">
+		<link rel="stylesheet" href="/c/advanced{% if useMinifiedAssets %}.min{% endif %}.css">
 		<script>{% include "partials/global/dark-mode.js" %}</script>
 		<script>{% include "partials/global/banner.js" %}</script>
 		
@@ -32,9 +33,9 @@
 			<link href="{{ feed.json }}" rel="alternate" title="{{ feed.title }}{{ site.title }}" type="application/json">
 		{% endfor %}
 		
-		<link rel="preload" as="script" href="/j/main{% if site.minify %}.min{% endif %}.js">
+		<link rel="preload" as="script" href="/j/main{% if useMinifiedAssets %}.min{% endif %}.js">
 		{% for script in page.javascripts.head %}
-			<script src="/j/{{ script }}{% if site.minify %}.min{% endif %}.js" async></script>
+			<script src="/j/{{ script }}{% if useMinifiedAssets %}.min{% endif %}.js" async></script>
 		{% endfor %}
 		<meta name="twitter:widgets:csp" content="on">
 		
@@ -103,15 +104,15 @@
 			</div>
 		</footer>
 
-		<script src="/j/main{% if site.minify %}.min{% endif %}.js"></script>
+		<script src="/j/main{% if useMinifiedAssets %}.min{% endif %}.js"></script>
 		<script>{% include "partials/global/register-serviceworker.js" %}</script>
-		<script src="/j/web-components{% if site.minify %}.min{% endif %}.js"></script>
+		<script src="/j/web-components{% if useMinifiedAssets %}.min{% endif %}.js"></script>
 		{% if is_post %}
-			<script src="/j/post{% if site.minify %}.min{% endif %}.js" async></script>
-			<script src="/j/lite-youtube-embed{% if site.minify %}.min{% endif %}.js" async></script>
+			<script src="/j/post{% if useMinifiedAssets %}.min{% endif %}.js" async></script>
+			<script src="/j/lite-youtube-embed{% if useMinifiedAssets %}.min{% endif %}.js" async></script>
 		{% endif %}
 		{% for script in javascripts.body %}
-			<script src="/j/{{ script }}{% if site.minify %}.min{% endif %}.js" async></script>
+			<script src="/j/{{ script }}{% if useMinifiedAssets %}.min{% endif %}.js" async></script>
 		{% endfor %}
 
 		{% block template_end %}{% endblock %}
