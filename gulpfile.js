@@ -5,7 +5,6 @@ const gulpWatch = gulp.watch;
 
 // Pull in each task
 import data from "./_tasks/data.js";
-import html from "./_tasks/html.js";
 import images from "./_tasks/images.js";
 import scripts from "./_tasks/scripts.js";
 import sw from "./_tasks/serviceworker.js";
@@ -50,7 +49,7 @@ const watcher = () => {
 // Optimized build sequences
 export default series(
 	parallel(images, styles, scripts), // Assets that can be built in parallel
-	parallel(html, data, sw), // Post-processing tasks
+	parallel(data, sw), // Post-processing tasks
 );
 
 // Development watcher
@@ -60,7 +59,7 @@ export const watch = watcher;
 export const prebuild = parallel(scripts, images, styles);
 
 // Post-build (after Eleventy)
-export const postbuild = parallel(html, data, sw);
+export const postbuild = parallel(data, sw);
 
 // Fast rebuild (skip unchanged files) - useful for development
 export const quick = parallel(scripts, styles);
