@@ -16,7 +16,6 @@
 		"build:fast": "NODE_ENV=production NODE_OPTIONS=\"--max-old-space-size=8192\" npx @11ty/eleventy --quiet --incremental",
 		"build:dev": "NODE_OPTIONS=\"--max-old-space-size=6144\" npx @11ty/eleventy --quiet",
 		"postbuild": "gulp postbuild",
-		"start-netlify": "NODE_ENV=production netlify dev && netlify functions:serve",
 		"new:post": "plop post",
 		"new:link": "plop link",
 		"new:event": "plop event",
@@ -72,7 +71,6 @@
 		"gulp-cli": "2.3.0",
 		"gulp-concat": "^2.6.1",
 		"gulp-filter": "^7.0.0",
-		"gulp-htmlmin": "^5.0.1",
 		"gulp-if": "^3.0.0",
 		"gulp-ignore": "^3.0.0",
 		"gulp-newer": "^1.4.0",
@@ -107,7 +105,6 @@
 	},
 	"devDependencies": {
 		"@zachleat/announcement-banner": "^1.0.8",
-		"netlify-cli": "^23.13.0",
 		"plop": "^4.0.1",
 		"prettier": "^3.7.4",
 		"prettier-plugin-toml": "^2.0.6"
