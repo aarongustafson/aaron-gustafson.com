@@ -78,7 +78,7 @@
 		"markdown-it-footnote": "^4.0.0",
 		"merge-stream": "^2.0.0",
 		"netlify-plugin-cache-folder": "0.0.8",
-		"netlify-plugin-github-dispatch": "^1.1.0",
+		"netlify-plugin-github-dispatch": "github:aarongustafson/netlify-plugin-github-dispatch",
 		"node-fetch": "^3.3.2",
 		"sass": "^1.88.0",
 		"sharp": "^0.33.5",
