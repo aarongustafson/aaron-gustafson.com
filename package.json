@@ -48,7 +48,7 @@
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.1",
 		"@jlengstorf/get-share-image": "^1.0.2",
 		"@manustays/eleventy-plugin-codepen-iframe": "^2.0.1",
-		"@octokit/rest": "^21.1.1",
+		"@octokit/rest": "^22.0.1",
 		"concurrently": "^9.1.2",
 		"dotenv": "^16.6.1",
 		"eleventy-plugin-embed-everything": "^1.21.0",
