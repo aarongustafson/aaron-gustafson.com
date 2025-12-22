@@ -92,7 +92,7 @@
 		"prettier-plugin-toml": "^2.0.6"
 	},
 	"overrides": {
-		"ansi-regex": ">=6.1.0",
+		"ansi-regex@^6": "6.1.0",
 		"css-what": "^6.1.0",
 		"glob-parent": "~6.0.2",
 		"nth-check": "^2.1.1",
