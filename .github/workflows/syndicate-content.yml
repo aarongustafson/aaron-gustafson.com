@@ -22,6 +22,21 @@ on:
         required: false
         default: false
         type: boolean
+      siteName:
+        description: "Netlify site name (auto-populated)"
+        required: false
+        default: ""
+        type: string
+      deployPrimeUrl:
+        description: "Netlify deploy preview URL"
+        required: false
+        default: ""
+        type: string
+      commit:
+        description: "Commit SHA for the deploy"
+        required: false
+        default: ""
+        type: string
 
   # Scheduled backup check (runs every 30 minutes)
   schedule:
