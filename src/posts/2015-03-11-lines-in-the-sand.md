@@ -2,7 +2,7 @@
 title: "Lines in the Sand"
 date: 2015-03-11 09:21:29 -04:00
 comments: true
-tags: ["web design",browsers,"progressive enhancement"]
+tags: ["web design", browsers, "progressive enhancement"]
 description: "I don’t think we need to break up with IE8, we just need to define our relationship a bit better."
 ---
 
@@ -21,8 +21,8 @@ When it comes to HTML and CSS, browsers ignore what they don’t understand. It�
 A simple way to rid yourself of IE8 related headaches is to embrace the idea that [web pages don’t need to look (or behave) the same in every browser](http://dowebsitesneedtolookexactlythesameineverybrowser.com/) and look for ways to achieve this while still providing access to your content and tools for less-capable browsers and devices. For example:
 
 ```html
-<link rel="stylesheet" href="simple.css">
-<link rel="stylesheet" href="complex.css" media="only screen">
+<link rel="stylesheet" href="simple.css" />
+<link rel="stylesheet" href="complex.css" media="only screen" />
 ```
 
 This simple stylesheet setup will deliver only the `simple.css` file to browsers that are incapable of understanding media queries. Browsers that do understand them will get both stylesheets. Media queries support is an easy line in the sand we can draw because [lack of media query support is in fact the first media query](http://www.slideshare.net/bryanrieger/rethinking-the-mobile-web-by-yiibu/79).
@@ -33,7 +33,7 @@ On the JavaScript end, you can draw a line in the sand too. Let’s say you don�
 
 ```html
 <!--[if gte IE 9]><!-->
-  <script src="not-for-ie8.js"></script>
+<script src="not-for-ie8.js"></script>
 <!--<![endif]-->
 ```
 

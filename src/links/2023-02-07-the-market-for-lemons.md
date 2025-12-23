@@ -14,5 +14,5 @@ So much of this piece resonates with me. I’ve been there, alongside Alex, sinc
 
 See also:
 
-* [Who Should Pay?](https://www.aaron-gustafson.com/notebook/who-should-pay/)
-* [A Fundamental Disconnect](https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/)
+- [Who Should Pay?](https://www.aaron-gustafson.com/notebook/who-should-pay/)
+- [A Fundamental Disconnect](https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/)

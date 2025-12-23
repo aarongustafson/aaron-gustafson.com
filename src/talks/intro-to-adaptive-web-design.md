@@ -2,8 +2,16 @@
 title: "Intro to Adaptive Web Design"
 description: "In the course of his talk, I’ll walk you through progressive enhancement’s layered approach and show you how the latest techniques—mobile first, responsive design, and adaptive UI—fit in to the process."
 category: talk
-tags: [ "accessibility", "CSS", "HTML", "inclusive design", "JavaScript", "progressive enhancement" ]
-events: [ 70, 76 ]
+tags:
+  [
+    "accessibility",
+    "CSS",
+    "HTML",
+    "inclusive design",
+    "JavaScript",
+    "progressive enhancement",
+  ]
+events: [70, 76]
 date: 2013-11-04T09:00:00-0400
 hero: "intro-to-adaptive-web-design.png"
 slides:

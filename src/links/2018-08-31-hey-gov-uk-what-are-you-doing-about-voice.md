@@ -6,7 +6,7 @@ ref_url: https://gds.blog.gov.uk/2018/08/23/hey-gov-uk-what-are-you-doing-about-
 in_reply_to: https://gds.blog.gov.uk/2018/08/23/hey-gov-uk-what-are-you-doing-about-voice/
 ref_source: Government Digital Service
 via:
- name: Adrian Roselli
+  name: Adrian Roselli
 ---
 
 Apropos of [my recent <cite>A List Apart</cite> article](https://alistapart.com/article/conversational-semantics), here’s some information about how GOV.UK is thinking about voice interfaces.

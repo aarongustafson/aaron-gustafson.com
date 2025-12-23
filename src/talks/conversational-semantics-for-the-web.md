@@ -3,7 +3,7 @@ title: "Conversational Semantics for the Web"
 description: "Over time, your users will become more accustomed to and reliant on voice-based interactions with their computers and, thereby, the web. Enabling them to complete critical tasks without a visual user interface will be crucial for the long-term success of your website."
 category: talk
 date: 2018-11-15T00:09:00-0000
-tags: ["voice UX","web design",accessibility]
+tags: ["voice UX", "web design", accessibility]
 events: [131]
 hero: conversational-semantics-for-the-web.png
 slides:

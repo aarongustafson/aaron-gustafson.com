@@ -12,8 +12,8 @@ with:
     event: 57
     url: https://www.yeseniaperezcruz.com/
 category: panel
-tags: [ "responsive web design", "web design" ]
-events: [ 57 ]
+tags: ["responsive web design", "web design"]
+events: [57]
 date: 2013-03-08T09:00:00-0600
 ---
 

@@ -3,7 +3,7 @@ title: "Falling in Love with Forms"
 description: "I’ll explore forms from top to bottom, examining how they work and how their components can be incorporated with other elements to maximize accessibility, improve semantics, and allow for more flexible styling."
 category: talk
 tags: ["web forms", "web design", accessibility]
-events: [83,102,101,99,97,96,95,94,90,87,84]
+events: [83, 102, 101, 99, 97, 96, 95, 94, 90, 87, 84]
 date: 2015-11-02T09:00:00-0400
 hero: falling-in-love-with-forms.png
 slides:

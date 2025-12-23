@@ -2,7 +2,15 @@
 title: "A Web Component for Conditional Dependent Fields"
 date: 2024-08-13 20:26:03 -07:00
 comments: true
-tags: ["forms", "HTML", "JavaScript", "progressive enhancement", "web components", "web forms"]
+tags:
+  [
+    "forms",
+    "HTML",
+    "JavaScript",
+    "progressive enhancement",
+    "web components",
+    "web forms",
+  ]
 description: "Sometimes you need to require a value in one form field only if another field is filled in or if that field has a specific value. I ported an old jQuery plugin of mine that made this work to a web component you can use easily right now."
 twitter_text: "Sometimes you need to require a form field only if another field is filled in or has a specific value. Here’s a web component to enable that."
 series:
@@ -18,11 +26,10 @@ A few weeks back I released [a web component to enable you to add requirement ru
 The `form-required-if` web component, which is based on [a jQuery plugin I’d written in 2012](https://github.com/easy-designs/jquery.easy-dependent-required-fields.js), looks like this:
 
 ```html
-<form-required-if
-  conditions="email=*"
-  >
-  <label>Required if there’s an email value
-    <input name="depends-on-email">
+<form-required-if conditions="email=*">
+  <label
+    >Required if there’s an email value
+    <input name="depends-on-email" />
   </label>
 </form-required-if>
 ```
@@ -31,16 +38,15 @@ You wrap any field (and its `label`) in the component and then declare the condi
 
 ## Defining the requirement conditions
 
-Each condition is a key/value pair where the key aligns to the `name` of the field you need to observe and the value is the value that could trigger the dependency. If any value should trigger the dependency, you use an asterisk (*) as the value. In the example above, the field will become required when any value is assigned to the field matching `[name="email"]`.
+Each condition is a key/value pair where the key aligns to the `name` of the field you need to observe and the value is the value that could trigger the dependency. If any value should trigger the dependency, you use an asterisk (\*) as the value. In the example above, the field will become required when any value is assigned to the field matching `[name="email"]`.
 
 This `conditions` attribute can be populated with as many or as few dependencies as make sense for your use case. Multiple conditions are separated by double vertical pipes (`||` a.k.a. _or_) as in this example:
 
 ```html
-<form-required-if 
-  conditions="email=*||test=3"
-  >
-  <label>Depends on email or test field
-    <input name="depends-on-email-or-test">
+<form-required-if conditions="email=*||test=3">
+  <label
+    >Depends on email or test field
+    <input name="depends-on-email-or-test" />
   </label>
 </form-required-if>
 ```
@@ -56,18 +62,16 @@ If the field you reference doesn’t exist, no errors will be thrown, it will ju
 
 If you typically use an asterisk or similar to indicate a field is required, this web component can support that through one or both of the following attributes:
 
-* `indicator` -  This attribute is where you define the indicator itself. It could be something as simple as a string (e.g., *), or even full-blown HTML.
-* `indicator-placement` - As you can probably guess, this attribute is used to set the position of the indicator. If you want it at the start of the label text, you give it the value "before." If you want it after the text, you use "after" or don’t use the attribute at all. Indicators will be placed after the label text by default.
+- `indicator` - This attribute is where you define the indicator itself. It could be something as simple as a string (e.g., \*), or even full-blown HTML.
+- `indicator-placement` - As you can probably guess, this attribute is used to set the position of the indicator. If you want it at the start of the label text, you give it the value "before." If you want it after the text, you use "after" or don’t use the attribute at all. Indicators will be placed after the label text by default.
 
 Here’s an example with a custom indicator that is HTML:
 
 ```html
-<form-required-if
-  conditions="email=*"
-  indicator="<b>*</b>"
-  >
-  <label>Depends on email
-    <input name="dep2">
+<form-required-if conditions="email=*" indicator="<b>*</b>">
+  <label
+    >Depends on email
+    <input name="dep2" />
   </label>
 </form-required-if>
 ```

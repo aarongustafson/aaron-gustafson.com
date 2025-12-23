@@ -22,13 +22,13 @@ Both of these attributes are "empty" attributes, meaning they don’t require va
 
 ```html
 <label for="username-1">Disabled Username</label>
-<input id="username-1" name="username-1" disabled value="AaronGustafson">
-                                                                        
+<input id="username-1" name="username-1" disabled value="AaronGustafson" />
+
 <label for="username-2">Readonly Username</label>
-<input id="username-2" name="username-2" readonly value="AaronGustafson">
+<input id="username-2" name="username-2" readonly value="AaronGustafson" />
 ```
 
-As expected, both also prohibit editing directly in the browser. 
+As expected, both also prohibit editing directly in the browser.
 
 ## The Key Difference
 
@@ -36,8 +36,7 @@ So why do we have two attributes that do the same thing? Unfortunately this is w
 
 Fields marked as `readonly` are collected along with all of the normal field values in a form submission (["successful controls" in the spec](https://www.w3.org/TR/html401/interact/forms.html#h-17.13.2)). The only difference between a `readonly` field and a regular field is the user experience.
 
-Fields marked as `disabled` are ignored when collecting values from the form. In a traditional form submission, the action page would never receive values for a `disabled` field, regardless of whether it has a `name` attribute. In JavaScript, this is a little trickier as generic DOM access via a form’s `elements` collection includes all form controls, including `disabled` fields (and buttons, `output` elements, etc.). In order to ensure consistency with the spec, it is incumbent upon the JavaScript developer to keep an eye out for `disabled` fields so they can throw away their values before processing the form. 
-
+Fields marked as `disabled` are ignored when collecting values from the form. In a traditional form submission, the action page would never receive values for a `disabled` field, regardless of whether it has a `name` attribute. In JavaScript, this is a little trickier as generic DOM access via a form’s `elements` collection includes all form controls, including `disabled` fields (and buttons, `output` elements, etc.). In order to ensure consistency with the spec, it is incumbent upon the JavaScript developer to keep an eye out for `disabled` fields so they can throw away their values before processing the form.
 
 <figure id="fig-2017-10-31-01" class="media-container">
   {% CodePen "https://codepen.io/aarongustafson/pen/jaPYLr", "result", "250" %}

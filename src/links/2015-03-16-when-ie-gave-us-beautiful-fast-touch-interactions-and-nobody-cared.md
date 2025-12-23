@@ -8,7 +8,7 @@ in_reply_to: https://paulbakaus.com/2015/03/13/when-ie-gave-us-beautiful-fast-to
 ref_source: The Sea of Ideas
 ---
 
-I never even saw this proposal, but how cool would it be to set snap points for scrolling content in  CSS?!
+I never even saw this proposal, but how cool would it be to set snap points for scrolling content in CSS?!
 
 ```css
 .container {
@@ -18,7 +18,7 @@ I never even saw this proposal, but how cool would it be to set snap points for 
   white-space: nowrap;
   /* Set up points to which scrolling will snap */
   -ms-scroll-snap-points-x: snapInterval(0px, 100%);
-  /* Require that scrolling always end at a snap point */ 
-  -ms-scroll-snap-type: mandatory; 
+  /* Require that scrolling always end at a snap point */
+  -ms-scroll-snap-type: mandatory;
 }
 ```

@@ -9,6 +9,6 @@ ref_source: The blog of Ada Rose Edwards
 
 An excellent post from Ada Rose Edwards on Progressive Web Apps. She’s brings up some very real concerns, many of which I share:
 
-* The basis for what Chrome defines as a Web App is based upon a set of technology rather than a set of features.
-* We need to consider carefully before we throw away URLs or the entire browser chrome in an effort to look like and behave like platform-specific apps.
-* The install banner is the browser manufacturers’ choice; it’s not a spec.
+- The basis for what Chrome defines as a Web App is based upon a set of technology rather than a set of features.
+- We need to consider carefully before we throw away URLs or the entire browser chrome in an effort to look like and behave like platform-specific apps.
+- The install banner is the browser manufacturers’ choice; it’s not a spec.

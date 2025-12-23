@@ -5,8 +5,8 @@ comments: false
 ref_url: http://www.latina.com/lifestyle/our-issues/austin-landlords-demolish-pinata-store-jumpolin-sxsw-party
 ref_source: Latina
 via:
- name: Chris Rogers
- url: https://twitter.com/nomadicism/status/578577982664617984
+  name: Chris Rogers
+  url: https://twitter.com/nomadicism/status/578577982664617984
 archived: https://web.archive.org/web/20160314022253/http://www.latina.com/lifestyle/our-issues/austin-landlords-demolish-pinata-store-jumpolin-sxsw-party
 ---
 

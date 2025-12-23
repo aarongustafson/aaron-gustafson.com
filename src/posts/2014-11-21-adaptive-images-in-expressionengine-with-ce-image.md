@@ -2,7 +2,13 @@
 title: "Adaptive Images in ExpressionEngine with CE Image"
 date: 2014-11-21 18:18:23 -05:00
 comments: true
-tags: [ "web design", "responsive web design", "ExpressionEngine", "progressive enhancement" ]
+tags:
+  [
+    "web design",
+    "responsive web design",
+    "ExpressionEngine",
+    "progressive enhancement",
+  ]
 description: "With browser implementations now available and a rock-solid set of implementation choices, we’ve begun implementing responsive images in every new project. Here’s how we did it for a recent ExpressionEngine build using the CE Image add-on."
 redirect_from: /notebook/2014/adaptive-images-in-expressionengine-with-ce-image/
 ---
@@ -21,12 +27,12 @@ The first use case we had was a series of large, focal images. You can find diff
 
 ```html
 <picture class="page__image-header__photo">
-    <!--[if IE 9]><video style="display: none;"><![endif]-->
-    <source srcset="about_940_343_int_s_c1_full.jpg" media="(min-width: 40em)">
-    <source srcset="about_800_350_int_c1_medium.jpg" media="(min-width: 20em)">
-    <source srcset="about_480_350_int_c1_small.jpg">
-    <!--[if IE 9]></video><![endif]-->
-    <img src="{made}" alt="">
+  <!--[if IE 9]><video style="display: none;"><![endif]-->
+  <source srcset="about_940_343_int_s_c1_full.jpg" media="(min-width: 40em)" />
+  <source srcset="about_800_350_int_c1_medium.jpg" media="(min-width: 20em)" />
+  <source srcset="about_480_350_int_c1_small.jpg" />
+  <!--[if IE 9]></video><![endif]-->
+  <img src="{made}" alt="" />
 </picture>
 ```
 
@@ -34,70 +40,43 @@ To get to that point, however, we needed to use CE Image to generate (and cache)
 
 ```html
 <picture class="page__image-header__photo">
-    <!--[if IE 9]><video style="display: none;"><![endif]-->
-    {exp:ce_img:pair
-        src="{content_focal_image}"
-        filename_suffix="_full"
-        width="940"
-        allow_scale_larger="yes"
-        crop="yes"
-        interlace="yes"
-        cache_dir="/"
-        }
-        <source srcset="{made}" media="(min-width: 40em)">
-    {/exp:ce_img:pair}
-    {exp:ce_img:pair
-        src="{content_focal_image}"
-        filename_suffix="_medium"
-        width="800"
-        height="600"
-        crop="yes"
-        interlace="yes"
-        cache_dir="/"
-        }
-        <source srcset="{made}" media="(min-width: 20em)">
-    {/exp:ce_img:pair}
-    {exp:ce_img:pair
-        src="{content_focal_image}"
-        filename_suffix="_small"
-        width="480"
-        height="360"
-        crop="yes"
-        interlace="yes"
-        cache_dir="/"
-        }
-        <source srcset="{made}">
-        <!--[if IE 9]></video><![endif]-->
-        <img src="{made}" alt="">
-    {/exp:ce_img:pair}
+  <!--[if IE 9]><video style="display: none;"><![endif]-->
+  {exp:ce_img:pair src="{content_focal_image}" filename_suffix="_full"
+  width="940" allow_scale_larger="yes" crop="yes" interlace="yes" cache_dir="/"
+  }
+  <source srcset="{made}" media="(min-width: 40em)" />
+  {/exp:ce_img:pair} {exp:ce_img:pair src="{content_focal_image}"
+  filename_suffix="_medium" width="800" height="600" crop="yes" interlace="yes"
+  cache_dir="/" }
+  <source srcset="{made}" media="(min-width: 20em)" />
+  {/exp:ce_img:pair} {exp:ce_img:pair src="{content_focal_image}"
+  filename_suffix="_small" width="480" height="360" crop="yes" interlace="yes"
+  cache_dir="/" }
+  <source srcset="{made}" />
+  <!--[if IE 9]></video><![endif]-->
+  <img src="{made}" alt="" />
+  {/exp:ce_img:pair}
 </picture>
 ```
 
 Not what’s a lot of code, so let’s just look at one segment of that jumble:
 
 ```html
-{exp:ce_img:pair
-    src="{content_focal_image}"
-    filename_suffix="_full"
-    width="940"
-    allow_scale_larger="yes"
-    crop="yes"
-    interlace="yes"
-    cache_dir="/"
-    }
-    <source srcset="{made}" media="(min-width: 40em)">
+{exp:ce_img:pair src="{content_focal_image}" filename_suffix="_full" width="940"
+allow_scale_larger="yes" crop="yes" interlace="yes" cache_dir="/" }
+<source srcset="{made}" media="(min-width: 40em)" />
 {/exp:ce_img:pair}
 ```
 
 This is an example using CE Image’s tag pair option, which lets you control the markup output. In the opening tag, we set several properties:
 
- * `src` is the path to the original image uploaded by content authors;
- * `filename_suffix` is the suffix we want added to the cached file to differentiate it from others in the cache (and make the files more easily scannable);
- * `width` is our desired output width for the generated image;
- * `allow_scale_larger` does exactly what you’d expect: it dictates whether or not CE Image should scale the image to reach the desired width;
- * `crop` tells CE Image whether it’s okay to crop the image;
- * `interlace` tells CE Image to use image interlacing (which can speed load time); and
- * `cache_dir` tells CE Image where to store the cached image (in relation to our global configuration)
+- `src` is the path to the original image uploaded by content authors;
+- `filename_suffix` is the suffix we want added to the cached file to differentiate it from others in the cache (and make the files more easily scannable);
+- `width` is our desired output width for the generated image;
+- `allow_scale_larger` does exactly what you’d expect: it dictates whether or not CE Image should scale the image to reach the desired width;
+- `crop` tells CE Image whether it’s okay to crop the image;
+- `interlace` tells CE Image to use image interlacing (which can speed load time); and
+- `cache_dir` tells CE Image where to store the cached image (in relation to our global configuration)
 
 Then, within the tag pair is the `source` element with the `srcset` value set to the path to the file CE Image generated (referenced by the `made` variable) and the associated media query.
 
@@ -115,7 +94,7 @@ Now that’s all well and good, but shortly after launch, [Eric Portis](http://e
         crop="yes"
         interlace="yes"
         cache_dir="/"
-        } 
+        }
         src="{made}"
         srcset="{made} 480w,
     {/exp:ce_img:pair}
@@ -147,11 +126,16 @@ Now that’s all well and good, but shortly after launch, [Eric Portis](http://e
 The CE Image behavior is exactly the same, but the resulting markup is much clearer:
 
 ```html
-<img class="page__image-header__photo" alt=""
-     src="about_480_320_int_c1_small.jpg"
-     srcset="about_480_320_int_c1_small.jpg 480w,
-             about_800_350_int_c1_medium.jpg 800w,
-             about_940_343_int_s_c1_full.jpg 940w">
+<img
+  class="page__image-header__photo"
+  alt=""
+  src="about_480_320_int_c1_small.jpg"
+  srcset="
+    about_480_320_int_c1_small.jpg  480w,
+    about_800_350_int_c1_medium.jpg 800w,
+    about_940_343_int_s_c1_full.jpg 940w
+  "
+/>
 ```
 
 The added bonus of this approach is that I am not hard-coding any media queries and the browser gets to make the ultimate decision of which image to request. All I am doing is telling the browser the image options and their respective widths within the `srcset` attribute. As all of the images take up 100% of their containers, I didn’t even need to use the `sizes` attribute. Easy peasy.
@@ -165,29 +149,34 @@ Now some of you might be wondering: _Why not just `display:none` below a certain
 We wrote [a lazy-loading image script](https://github.com/easy-designs/easy-lazy-images.js) a few years back and have battle tested it on numerous sites to great success. It’s all based on a simple markup pattern:
 
 ```html
-<div class="module__image image--lazy"
-     data-image-src="Tim-Smith_220x140_220_140_int_c1.jpg"></div>
+<div
+  class="module__image image--lazy"
+  data-image-src="Tim-Smith_220x140_220_140_int_c1.jpg"
+></div>
 ```
 
 The `data-img-src` attribute defines the path to the "nice to have" image and then the JavaScript adds the image element into the page when the appropriate conditions are met:
 
 ```html
-<div class="module__image image--lazy"
-    data-image-src="Tim-Smith_220x140_220_140_int_c1.jpg"
-    data-image-loaded=""
-    >
-    <img alt="" src="Tim-Smith_220x140_220_140_int_c1.jpg">
+<div
+  class="module__image image--lazy"
+  data-image-src="Tim-Smith_220x140_220_140_int_c1.jpg"
+  data-image-loaded=""
+>
+  <img alt="" src="Tim-Smith_220x140_220_140_int_c1.jpg" />
 </div>
 ```
 
 Pretty simple. It even supports `srcset`:
 
 ```html
-<div class="module__image image--lazy"
-     data-image="about_480_320_int_c1_small.jpg"
-     data-image-srcset="about_480_320_int_c1_small.jpg 480w,
+<div
+  class="module__image image--lazy"
+  data-image="about_480_320_int_c1_small.jpg"
+  data-image-srcset="about_480_320_int_c1_small.jpg 480w,
                       about_800_350_int_c1_medium.jpg 800w,
-                      about_940_343_int_s_c1_full.jpg 940w"></div>
+                      about_940_343_int_s_c1_full.jpg 940w"
+></div>
 ```
 
 The [full documentation is up on Github](https://github.com/easy-designs/easy-lazy-images.js#usage).
@@ -195,19 +184,10 @@ The [full documentation is up on Github](https://github.com/easy-designs/easy-la
 Implementing this in the context of CE Image was a breeze and builds on the `source` pattern I showed earlier:
 
 ```html
-{if testimonial_photo}
-    {exp:ce_img:pair
-        src="{testimonial_photo}"
-        width="223"
-        height="140"
-        allow_scale_larger="yes"
-        crop="yes"
-        interlace="yes"
-        cache_dir="/"
-        }
-        <div class="module__image image--lazy" data-image-src="{made}"></div>
-    {/exp:ce_img:pair}
-{/if}
+{if testimonial_photo} {exp:ce_img:pair src="{testimonial_photo}" width="223"
+height="140" allow_scale_larger="yes" crop="yes" interlace="yes" cache_dir="/" }
+<div class="module__image image--lazy" data-image-src="{made}"></div>
+{/exp:ce_img:pair} {/if}
 ```
 
 We are only just beginning to scratch the surface of what’s possible with adaptive images and I am sure we will come up with newer, better ways to do this stuff. Heck, there may even be an adaptive images add-on in the pipeline for ExpressionEngine. But, in the meantime, if you are trying to implement adaptive images with ExpressionEngine, CE Image is a good way to go.

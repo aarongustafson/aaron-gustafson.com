@@ -5,7 +5,18 @@ edition: "Sixth"
 date: 2025-05-01 00:00:00 +00:00
 author: "Jennifer Niederst Robbins &amp; Aaron Gustafson"
 type: "authored"
-tags: ["accessibility", "CSS", "HTML", "JavaScript", "progressive enhancement", "responsive web design", "web design", "web development", "web standards"]
+tags:
+  [
+    "accessibility",
+    "CSS",
+    "HTML",
+    "JavaScript",
+    "progressive enhancement",
+    "responsive web design",
+    "web design",
+    "web development",
+    "web standards",
+  ]
 publisher: "O’Reilly"
 url: https://www.oreilly.com/library/view/learning-web-design/9781098137670/
 cover: "learning-web-design-6th.png"

@@ -10,16 +10,16 @@ const iso = today.toISOString().slice(0, 19);
 // Import JSON data with dynamic imports
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const series = JSON.parse(
-	readFileSync(path.join(__dirname, "_cache/series.json"), "utf8")
+	readFileSync(path.join(__dirname, "_cache/series.json"), "utf8"),
 );
 const tags = JSON.parse(
-	readFileSync(path.join(__dirname, "_cache/tags.json"), "utf8")
+	readFileSync(path.join(__dirname, "_cache/tags.json"), "utf8"),
 );
 const events = JSON.parse(
 	readFileSync(
 		path.join(__dirname, "src/_data/speaking_engagements.json"),
-		"utf8"
-	)
+		"utf8",
+	),
 );
 
 // Helper functions
@@ -117,7 +117,7 @@ export default function (plop) {
 		const use_date = config.date !== undefined ? config.date : true;
 		const filename = `./src/${config.directory}/${helpers.getFilename(
 			answers.title,
-			use_date
+			use_date,
 		)}.md`;
 		setTimeout(() => {
 			execFile(
@@ -129,7 +129,7 @@ export default function (plop) {
 						throw error;
 					}
 					console.log(stdout);
-				}
+				},
 			);
 		}, 3000);
 		return;
@@ -758,7 +758,7 @@ export default function (plop) {
 				default: (answers) =>
 					answers.slides.link.replace(
 						/^(https:\/\/presentations.aaron-gustafson.com\/.+?)\/.+$/,
-						"$1/embed"
+						"$1/embed",
 					),
 			},
 			{

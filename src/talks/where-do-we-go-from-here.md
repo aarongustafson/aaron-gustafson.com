@@ -2,7 +2,7 @@
 title: "Where Do We Go From Here?"
 description: "We’ve come a long way since Ethan’s article, fluid grids, flexible media, and media queries. What’s next?"
 category: keynote
-tags: ["responsive web design","progressive enhancement"]
+tags: ["responsive web design", "progressive enhancement"]
 events: [98]
 date: 2015-06-19T09:00:00-0400
 hero: where-do-we-go-from-here.png

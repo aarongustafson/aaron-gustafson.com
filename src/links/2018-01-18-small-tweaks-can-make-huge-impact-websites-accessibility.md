@@ -7,4 +7,4 @@ in_reply_to: https://css-tricks.com/small-tweaks-can-make-huge-impact-websites-a
 ref_source: CSS Tricks
 ---
 
-I agree with pretty much every one of the recommendations here, but I’d argue that generating the JS-requiring button *with JavaScript* is a far better approach.
+I agree with pretty much every one of the recommendations here, but I’d argue that generating the JS-requiring button _with JavaScript_ is a far better approach.

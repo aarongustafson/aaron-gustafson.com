@@ -44,7 +44,7 @@ And _gregarious_. Her boisterous laugh was infectious and memorable. I can still
 <figcaption>This was Molly and I presenting at TechEd Pasadena, CA in 2005. One of many stops we made on our tour that year.</figcaption>
 </figure>
 
-I don’t know that I’ve ever met someone who gave as much of herself as Molly did. She always, *always* put others first, sometimes to her own detriment.
+I don’t know that I’ve ever met someone who gave as much of herself as Molly did. She always, _always_ put others first, sometimes to her own detriment.
 
 When I first met Molly, she was leading the Web Standards Project (WaSP). She poured her heart and soul into that organization and the cause of web standards. I lost count of how many events she spoke at, often on her own dime. She invited educators into her home to teach them how to properly teach the next generation of web designers and developers… for free.
 
@@ -98,7 +98,6 @@ That passionate support for the open web never wavered, even when Molly became i
 
 ![In this photo Molly is presenting on some topic or another. She is isolated against a white wall with a strong shadow behind her from the spotlights.](https://www.aaron-gustafson.com/i/posts/2023-09-08/molly-presenting.jpg)
 
-
 </figure>
 
 Knowing Molly affected me. Deeply. Her kindness, thoughtfulness, generosity, and passion live on in everyone her life and work touched. Including me.
@@ -122,16 +121,16 @@ Goodnight Mols. I love you.
 
 ## Other folks’ memories of Molly
 
-* [John Allsopp](https://webdirections.org/blog/vale-molly-holzschlag/)
-* [Faruk Ateş](https://www.linkedin.com/posts/farukates_im-deeply-saddened-by-the-news-that-my-dear-activity-7105772524147277824-ndgC)
-* [Deborah Edwards-Oñoro](https://www.lireo.com/remembering-molly-holzschlag/)
-* [Meryl Evans](https://meryl.net/in-memory-of-molly-e-holzschlag-the-fairy-godmother-of-the-web/)
-* [Jason Grigsby](https://gri.gs/844/remembering-molly/)
-* [Stephen Hay](https://www.linkedin.com/posts/stephenhay_remembering-molly-aaron-gustafson-activity-7110154519165956096--rGY/)
-* [Jay Hoffman](https://thehistoryoftheweb.com/remembering-molly-one-of-the-greats/)
-* [Bruce Lawson](https://brucelawson.co.uk/2023/goodbye-molly-holzschlag/)
-* [Matt May](https://www.linkedin.com/posts/maymatt_cn-death-my-first-paid-speaking-gig-in-activity-7105036507572310016-Z55E)
-* [Eric Meyer](https://meyerweb.com/eric/thoughts/2023/09/06/memories-of-molly/)
+- [John Allsopp](https://webdirections.org/blog/vale-molly-holzschlag/)
+- [Faruk Ateş](https://www.linkedin.com/posts/farukates_im-deeply-saddened-by-the-news-that-my-dear-activity-7105772524147277824-ndgC)
+- [Deborah Edwards-Oñoro](https://www.lireo.com/remembering-molly-holzschlag/)
+- [Meryl Evans](https://meryl.net/in-memory-of-molly-e-holzschlag-the-fairy-godmother-of-the-web/)
+- [Jason Grigsby](https://gri.gs/844/remembering-molly/)
+- [Stephen Hay](https://www.linkedin.com/posts/stephenhay_remembering-molly-aaron-gustafson-activity-7110154519165956096--rGY/)
+- [Jay Hoffman](https://thehistoryoftheweb.com/remembering-molly-one-of-the-greats/)
+- [Bruce Lawson](https://brucelawson.co.uk/2023/goodbye-molly-holzschlag/)
+- [Matt May](https://www.linkedin.com/posts/maymatt_cn-death-my-first-paid-speaking-gig-in-activity-7105036507572310016-Z55E)
+- [Eric Meyer](https://meyerweb.com/eric/thoughts/2023/09/06/memories-of-molly/)
 
 More [on front-end.social by following #MollyHolzschlag](https://front-end.social/tags/mollyholzschlag).
 

@@ -7,8 +7,8 @@ ref_url: https://daverupert.com/2015/05/desktop-conundrum/
 in_reply_to: https://daverupert.com/2015/05/desktop-conundrum/
 ref_source: daverupert.com
 via:
- name: Jeremy Keith
- url: https://adactio.com/links/8958
+  name: Jeremy Keith
+  url: https://adactio.com/links/8958
 ---
 
 In this brief post, Dave Rupert muses about the future of "desktop".

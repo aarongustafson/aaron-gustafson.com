@@ -2,7 +2,7 @@
 title: "We Need More Empathy"
 date: 2014-12-28 11:17:21 -05:00
 comments: true
-tags: [ "web design", "web development", "inclusive design", empathy ]
+tags: ["web design", "web development", "inclusive design", empathy]
 in_reply_to: http://www.zeldman.com/2014/12/28/unexamined-privilege-is-the-real-source-of-cruelty-in-facebooks-your-year-in-review/
 ---
 
@@ -21,6 +21,5 @@ And Facebook isn’t the only company to blame for this sort of thing. Pretty mu
 In order to address these issues, we need to flex our empathetic muscles. We need to create connections with people who are not like us. People who live in different neighborhoods. People who come from different countries. People who require alternate means to accessing our sites and services. We need to see that the world is full of differences.
 
 Life is full of great joy as well as great tragedy. When we acknowledge diversity of experience and actually embrace it, we become better designers.
-
 
 [^1]: I don’t mind the aggregate “users”, but “user” is too clinical and distanced for my tastes. Terms like “the user” keep us from connecting with the people who actually use our software and when we are disconnected from our users, we will not do a great job of solving their problems. And solving problems is the whole point of design.

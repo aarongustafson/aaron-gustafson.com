@@ -8,4 +8,4 @@ in_reply_to: https://mxb.at/blog/layouts-of-tomorrow/
 ref_source: Max Böck
 ---
 
-Love this demo from [Max Böck](https://mxb.at)! 
+Love this demo from [Max Böck](https://mxb.at)!

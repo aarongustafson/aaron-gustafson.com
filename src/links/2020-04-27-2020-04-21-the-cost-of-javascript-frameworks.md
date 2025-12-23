@@ -2,7 +2,7 @@
 title: "The Cost of Javascript Frameworks"
 twitter_text: "The Cost of Javascript Frameworks"
 date: 2020-04-27 12:39:10 -07:00
-tags: [ performance, JavaScript ]
+tags: [performance, JavaScript]
 ref_url: https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/
 in_reply_to: https://timkadlec.com/remembers/2020-04-21-the-cost-of-javascript-frameworks/
 ref_source: TimKadlec.com

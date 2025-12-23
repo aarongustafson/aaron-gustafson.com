@@ -2,7 +2,7 @@
 title: "<cite>Adaptive Web Design</cite>: Folded &amp; Gathered"
 date: 2015-11-12 13:16:27 -05:00
 comments: true
-tags: ["Adaptive Web Design",writing]
+tags: ["Adaptive Web Design", writing]
 description: "I just got this photo from Tracey Croom, my production editor on the Second Edition of Adaptive Web Design and I wanted to share it with you."
 ---
 

@@ -15,7 +15,7 @@ A modern revolutionary, [Kimberly Bryant](https://twitter.com/6gems) left her lu
 
 <!-- more -->
 
-Kia was attending a summer camp for game development at Stamford at the time. She was one of only a handful of girls *and* she was the only person of color in the program. On top of feeling isolated, Kia and the other girls were not getting nearly the same amount of attention and direction as the boys.
+Kia was attending a summer camp for game development at Stamford at the time. She was one of only a handful of girls _and_ she was the only person of color in the program. On top of feeling isolated, Kia and the other girls were not getting nearly the same amount of attention and direction as the boys.
 
 Between being perplexed by the lack of diversity and support in Kia’s summer camp and hearing the constant cop-out of "there just aren’t enough qualified women ready to take on tech jobs," Kimberly decided to tackle the "pipeline" issue head-on. After all, little had changed since Kimberly had grown up a self-professed nerd in the 1970s when it came to role models for women in tech, let alone women of color. She was determined to change that for her daughter’s generation and founded Black Girls Code.
 

@@ -1,7 +1,15 @@
 ---
 title: "Building Resilient Web Apps: Progressive Enhancement Unveiled"
 date: 2023-08-28 00:00:00 +00:00
-tags: ["progressive enhancement", "accessibility", "JavaScript", "progressive web apps", "web design", "web development"]
+tags:
+  [
+    "progressive enhancement",
+    "accessibility",
+    "JavaScript",
+    "progressive web apps",
+    "web design",
+    "web development",
+  ]
 publisher: "Code Ryan"
 url: "https://www.youtube.com/watch?v=-ZqsLwWM7YE"
 ---

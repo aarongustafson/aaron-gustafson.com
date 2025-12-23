@@ -45,11 +45,13 @@ Next, I wrote a function to pull in the theme colors using [`window.getComputedS
 ```js
 function importTheme() {
   theme.foreground =
-    window.getComputedStyle(document.documentElement)
+    window
+      .getComputedStyle(document.documentElement)
       .getPropertyValue("--color-foreground")
       .trim() || "black";
   theme.background =
-    window.getComputedStyle(document.documentElement)
+    window
+      .getComputedStyle(document.documentElement)
       .getPropertyValue("--color-background")
       .trim() || "white";
 }
@@ -85,7 +87,6 @@ https://www.youtube.com/watch?v=pALIuO5uHUA
 # Demo
 
 I put together [a quick demo of this](https://codepen.io/aarongustafson/pen/LEEQyqg) in a fork of [Alvin Shaw’s Canvas Sine Wave Experiment](https://codepen.io/alvinshaw/pen/mdEKggg):
-
 
 <figure id="fig-2025-05-01-02" class="media-container">
   {% CodePen "https://codepen.io/aarongustafson/pen/LEEQyqg", "result", "331" %}

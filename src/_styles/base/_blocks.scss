@@ -4,132 +4,128 @@
 Block-level Semantics
 \*------------------------------------*/
 * {
-  margin-top: 0;
-  margin-bottom: 0;
-  
-  @supports (margin-block: 1em) {
-    margin: unset;
-    margin-block: 0;
-  }
+	margin-top: 0;
+	margin-bottom: 0;
+
+	@supports (margin-block: 1em) {
+		margin: unset;
+		margin-block: 0;
+	}
 }
 
 * + * {
-  @include rem( margin-top, $default-spacing );
+	@include rem(margin-top, $default-spacing);
 
-  @supports (margin-block: 1em) {
-    margin-top: unset;
-    @include rem( margin-block-start, $default-spacing, false );
-  }
+	@supports (margin-block: 1em) {
+		margin-top: unset;
+		@include rem(margin-block-start, $default-spacing, false);
+	}
 }
 
 noscript {
-  display: none;
+	display: none;
 }
 
 p:empty {
-  display: none;
+	display: none;
 }
 
 blockquote {
-  
-  @include rem( font-size, $font-size-body );
-  font-family: $font-stack-serif;
-  font-style: italic; 
-  
-  hanging-punctuation: first;
-  hyphens: none;
+	@include rem(font-size, $font-size-body);
+	font-family: $font-stack-serif;
+	font-style: italic;
 
-  margin-left: auto;
-  margin-right: auto;
-  @include rem( padding, 0 $default-spacing );
-  @include rem( max-width, 700 );
+	hanging-punctuation: first;
+	hyphens: none;
 
-  @supports (margin-block: 1em) {
-    @include unset( margin-left margin-right padding max-width );
-    margin-inline: auto;
-    padding-block: 0;
-    @include rem( padding-inline, $default-spacing, false );
-    @include rem( max-inline-size, 700, false );
-  }
-  
+	margin-left: auto;
+	margin-right: auto;
+	@include rem(padding, 0 $default-spacing);
+	@include rem(max-width, 700);
+
+	@supports (margin-block: 1em) {
+		@include unset(margin-left margin-right padding max-width);
+		margin-inline: auto;
+		padding-block: 0;
+		@include rem(padding-inline, $default-spacing, false);
+		@include rem(max-inline-size, 700, false);
+	}
 }
 
 .blockquote__attribution {
-  
-  font-family: $font-stack-sansserif;
-  
-  margin: 0;
-  @include rem( padding-left, 2 * $default-spacing );
+	font-family: $font-stack-sansserif;
 
-  @supports (margin-block: 1em) {
-    @include unset( margin padding-left );
-    margin-block: 0;
-    margin-inline: 0;
-    @include rem( padding-inline-start, 2 * $default-spacing, false );
-  }
-  
-  cite {
-    font-style: normal;
-  }
-  
+	margin: 0;
+	@include rem(padding-left, 2 * $default-spacing);
+
+	@supports (margin-block: 1em) {
+		@include unset(margin padding-left);
+		margin-block: 0;
+		margin-inline: 0;
+		@include rem(padding-inline-start, 2 * $default-spacing, false);
+	}
+
+	cite {
+		font-style: normal;
+	}
 }
 
 p {
-  font-weight: normal;
-  /*hyphens: auto;*/
-  line-height: $line-height-default;
-  
-  .wf-active & {
-    word-spacing: 2px;
-  }
+	font-weight: normal;
+	/*hyphens: auto;*/
+	line-height: $line-height-default;
+
+	.wf-active & {
+		word-spacing: 2px;
+	}
 }
 
 [aria-hidden="true"] {
-  display: none;
+	display: none;
 }
 
 hr {
-  border: 0;
-  border-top: 1px solid $color-rule;
-  
-  height: 0;
-  @include rem( margin, ($default-spacing * 2) auto );
+	border: 0;
+	border-top: 1px solid $color-rule;
 
-  @supports (margin-block: 1em) {
-    @include unset( border-top height margin );
-    border-block-start: 1px solid $color-rule;
-    block-size: 0;
-    margin-inline: auto;
-    @include rem( margin-block, $default-spacing * 2, false );
-  }
+	height: 0;
+	@include rem(margin, ($default-spacing * 2) auto);
+
+	@supports (margin-block: 1em) {
+		@include unset(border-top height margin);
+		border-block-start: 1px solid $color-rule;
+		block-size: 0;
+		margin-inline: auto;
+		@include rem(margin-block, $default-spacing * 2, false);
+	}
 }
 
 section + section {
-  @include rem( margin-top, $default-spacing * 2 );
+	@include rem(margin-top, $default-spacing * 2);
 
-  @supports (margin-block: 1em) {
-    margin-top: unset;
-    @include rem( margin-block-start, $default-spacing * 2, false );
-  }
+	@supports (margin-block: 1em) {
+		margin-top: unset;
+		@include rem(margin-block-start, $default-spacing * 2, false);
+	}
 }
 
 dialog::backdrop {
-	background: rgba( $color-black, .4 );
+	background: rgba($color-black, 0.4);
 }
 /* polyfill */
 dialog + .backdrop {
-	background: rgba( $color-black, .4 );
+	background: rgba($color-black, 0.4);
 }
 
 @media screen and (min-width: #{$bp-medium-em}) {
 	blockquote,
 	dl {
-		@include rem( padding, 0 $default-spacing );
+		@include rem(padding, 0 $default-spacing);
 
 		@supports (margin-block: 1em) {
 			padding: unset;
 			padding-block: 0;
-			@include rem( padding-inline, $default-spacing, false );
+			@include rem(padding-inline, $default-spacing, false);
 		}
 	}
 }
@@ -137,18 +133,21 @@ dialog + .backdrop {
 @media screen and (min-width: #{$bp-full-em}) {
 	blockquote,
 	dl {
-		@include rem( padding, 0 ( 3 * $default-spacing ) );
+		@include rem(padding, 0 (3 * $default-spacing));
 
 		@supports (margin-block: 1em) {
 			padding: unset;
 			padding-block: 0;
-			@include rem( padding-inline, ( 3 * $default-spacing ), false );
+			@include rem(padding-inline, (3 * $default-spacing), false);
 		}
 	}
 }
 
 @media print {
-	p, ol, ol, dl {
+	p,
+	ol,
+	ol,
+	dl {
 		hyphens: auto;
 		orphans: 3;
 		widows: 3;

@@ -2,7 +2,7 @@
 title: "Tips for Surviving Google’s “Mobilegeddon”"
 date: 2015-04-21 09:10:12 -04:00
 comments: true
-tags: ["web design",mobile,"progressive enhancement"]
+tags: ["web design", mobile, "progressive enhancement"]
 description: "Today is the day Google updates it algorithm to take into account mobile-friendliness. Here are a few tips that will help you embrace mobile without tearing your hair out."
 ---
 

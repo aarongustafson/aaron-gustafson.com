@@ -1,1 +1,1 @@
-module.exports = require('./.netlify/functions/deploy-succeeded.js')
+module.exports = require("./.netlify/functions/deploy-succeeded.js");

@@ -5,131 +5,132 @@ Links
 \*------------------------------------*/
 
 a {
-text-decoration: underline;
-text-decoration-line: underline;
-text-decoration-style: solid;
-text-decoration-skip-ink: auto;
+	text-decoration: underline;
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+	text-decoration-skip-ink: auto;
 
-&:empty {
-  display: none;
-}
+	&:empty {
+		display: none;
+	}
 
-&:link,
-&:visited {
-  color: $color-link;
-  text-decoration-color: rgba( $color-link, .25 );
-  
-  cursor: pointer;
-  
-  transition: text-decoration-color $default-transition, color $default-transition, background-color $default-transition;
+	&:link,
+	&:visited {
+		color: $color-link;
+		text-decoration-color: rgba($color-link, 0.25);
 
-  html.dark-mode & {
-    color: $color-link-dark;
-    text-decoration-color: rgba( $color-link-dark, .25 );
-  }
-}
+		cursor: pointer;
 
-&:hover,
-&:focus,
-&:active {
-  color: $color-link-hover;
-  text-decoration-color: $color-link-hover;
+		transition:
+			text-decoration-color $default-transition,
+			color $default-transition,
+			background-color $default-transition;
 
-  html.dark-mode & {
-    color: $color-link-dark-hover;
-    text-decoration-color: rgba( $color-link-dark-hover, .25 );
-  }
-}
+		html.dark-mode & {
+			color: $color-link-dark;
+			text-decoration-color: rgba($color-link-dark, 0.25);
+		}
+	}
 
-&:focus-visible {
-  outline: 5px solid #062909
-}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color-link-hover;
+		text-decoration-color: $color-link-hover;
 
-&[rel=tag] {
-  background: $color-link-hover;
-  border-radius: 5px;
-  color: $color-white;
-  leading-trim: both;
-  line-height: 2;
-  padding: 3px 7px;
-  text-decoration: none;
-  text-edge: text;
-  white-space: nowrap;
+		html.dark-mode & {
+			color: $color-link-dark-hover;
+			text-decoration-color: rgba($color-link-dark-hover, 0.25);
+		}
+	}
 
-  &:hover,
-  &:focus {
-    background-color: $color-link;
-  }
+	&:focus-visible {
+		outline: 5px solid #062909;
+	}
 
-  html.dark-mode & {
-    background-color: $color-link-dark-hover;
-    color: $color-background-dark;
+	&[rel="tag"] {
+		background: $color-link-hover;
+		border-radius: 5px;
+		color: $color-white;
+		leading-trim: both;
+		line-height: 2;
+		padding: 3px 7px;
+		text-decoration: none;
+		text-edge: text;
+		white-space: nowrap;
 
-    &:hover,
-    &:focus {
-      background-color: $color-link-dark;
-    }
-  }
+		&:hover,
+		&:focus {
+			background-color: $color-link;
+		}
 
-}
+		html.dark-mode & {
+			background-color: $color-link-dark-hover;
+			color: $color-background-dark;
 
-// don’t wrap phone #s or emails
-&[href^=mailto],
-&[href^=tel] {
-  white-space: nowrap;
-}
-&.email,
-&.tel {
-  white-space: nowrap;
-}
+			&:hover,
+			&:focus {
+				background-color: $color-link-dark;
+			}
+		}
+	}
 
-// file annotations
-a[href$=".pdf"]::after {
-  content: " (PDF)";
-  font-size: 0.8em;
-}
-a[href$=".doc"]::after,
-a[href$=".docx"]::after {
-  content: " (DOC)";
-  font-size: 0.8em;
-}
-a[href$=".ppt"]::after,
-a[href$=".pptx"]::after {
-  content: " (PPT)";
-  font-size: 0.8em;
-}
+	// don’t wrap phone #s or emails
+	&[href^="mailto"],
+	&[href^="tel"] {
+		white-space: nowrap;
+	}
+	&.email,
+	&.tel {
+		white-space: nowrap;
+	}
 
+	// file annotations
+	a[href$=".pdf"]::after {
+		content: " (PDF)";
+		font-size: 0.8em;
+	}
+	a[href$=".doc"]::after,
+	a[href$=".docx"]::after {
+		content: " (DOC)";
+		font-size: 0.8em;
+	}
+	a[href$=".ppt"]::after,
+	a[href$=".pptx"]::after {
+		content: " (PPT)";
+		font-size: 0.8em;
+	}
 
-// No underlines on image links
-a[href$="jpg"],  a[href$=png],  a[href$=gif] {
-  text-decoration: none;
-}
+	// No underlines on image links
+	a[href$="jpg"],
+	a[href$="png"],
+	a[href$="gif"] {
+		text-decoration: none;
+	}
 
-h1 &,
-h2 &,
-h3 &,
-h4 &,
-h5 &,
-h6 & {
-  text-decoration-style: none;
-  
-  &:hover,
-  &:focus,
-  &:active {
-    text-decoration-style: underline;
-  }
-}
+	h1 &,
+	h2 &,
+	h3 &,
+	h4 &,
+	h5 &,
+	h6 & {
+		text-decoration-style: none;
 
-&[rel="original-article"]::after {
-  content: "\00A0\2192";
-  display: inline-block;
-  transform: translateX(-.25em) rotate(-45deg) translateY(0.25em);
-}
+		&:hover,
+		&:focus,
+		&:active {
+			text-decoration-style: underline;
+		}
+	}
 
+	&[rel="original-article"]::after {
+		content: "\00A0\2192";
+		display: inline-block;
+		transform: translateX(-0.25em) rotate(-45deg) translateY(0.25em);
+	}
 }
 
 @media print {
-	
 	a {
 		text-decoration: none;
 		&[href]:after {
@@ -151,5 +152,4 @@ h6 & {
 			display: none;
 		}
 	}
-	
 }

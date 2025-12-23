@@ -2,7 +2,16 @@
 title: "Dynamic Datalist: Autocomplete from an API"
 date: 2025-12-16 19:46:29 +00:00
 comments: true
-tags: ["forms", "HTML", "JavaScript", "progressive enhancement", "web components", "web forms", "API"]
+tags:
+  [
+    "forms",
+    "HTML",
+    "JavaScript",
+    "progressive enhancement",
+    "web components",
+    "web forms",
+    "API",
+  ]
 description: "The `datalist` element is great for autocomplete, but it's static. The `dynamic-datalist` web component brings dynamic, API-driven suggestions to your text fields as users type."
 twitter_text: "Want API-driven autocomplete suggestions in your forms? Here’s a web component that makes it happen."
 series:
@@ -23,10 +32,14 @@ To use the component, wrap it around your `input` field and specify an endpoint:
 
 ```html
 <dynamic-datalist endpoint="/api/search">
-  <label for="search">Search
-    <input type="text" id="search" name="search"
-           placeholder="Type to search..."
-           >
+  <label for="search"
+    >Search
+    <input
+      type="text"
+      id="search"
+      name="search"
+      placeholder="Type to search..."
+    />
   </label>
 </dynamic-datalist>
 ```
@@ -37,11 +50,7 @@ The structure of the response should be JSON with an `options` array of string v
 
 ```json
 {
-  "options": [
-    "option 1",
-    "option 2",
-    "option 3"
-  ]
+  "options": ["option 1", "option 2", "option 3"]
 }
 ```
 
@@ -65,8 +74,9 @@ You can change the submission method via the `method` attribute:
 
 ```html
 <dynamic-datalist endpoint="/api/lookup" method="post">
-  <label for="lookup">Lookup
-    <input type="text" id="lookup" name="lookup">
+  <label for="lookup"
+    >Lookup
+    <input type="text" id="lookup" name="lookup" />
   </label>
 </dynamic-datalist>
 ```
@@ -79,8 +89,9 @@ As I mentioned, the component uses "query" as the parameter name by default, but
 
 ```html
 <dynamic-datalist endpoint="/api/terms" key="term">
-  <label for="search">Term search
-    <input type="text" id="search" name="term">
+  <label for="search"
+    >Term search
+    <input type="text" id="search" name="term" />
   </label>
 </dynamic-datalist>
 ```
@@ -93,10 +104,14 @@ If your `input` already has a `datalist` defined, the component will inherit it 
 
 ```html
 <dynamic-datalist endpoint="/api/cities">
-  <label for="city">City
-    <input type="text" id="city" list="cities-list"
-           placeholder="Type a city…"
-           >
+  <label for="city"
+    >City
+    <input
+      type="text"
+      id="city"
+      list="cities-list"
+      placeholder="Type a city…"
+    />
   </label>
   <datalist id="cities-list">
     <option>New York</option>
@@ -117,18 +132,18 @@ If you want to tap into the component’s event system, it fires three custom ev
 - `dynamic-datalist:error` - Fired when an error occurs fetching data
 
 ```javascript
-const element = document.querySelector('dynamic-datalist');
+const element = document.querySelector("dynamic-datalist");
 
-element.addEventListener('dynamic-datalist:ready', (e) => {
-  console.log('Component ready:', e.detail);
+element.addEventListener("dynamic-datalist:ready", (e) => {
+  console.log("Component ready:", e.detail);
 });
 
-element.addEventListener('dynamic-datalist:update', (e) => {
-  console.log('Options updated:', e.detail.options);
+element.addEventListener("dynamic-datalist:update", (e) => {
+  console.log("Options updated:", e.detail.options);
 });
 
-element.addEventListener('dynamic-datalist:error', (e) => {
-  console.error('Error:', e.detail.error);
+element.addEventListener("dynamic-datalist:error", (e) => {
+  console.error("Error:", e.detail.error);
 });
 ```
 
@@ -157,17 +172,17 @@ If you go that route, there are a few ways to register the element depending on 
 ### Option 1: Define it yourself
 
 ```javascript
-import { DynamicDatalistElement } from '@aarongustafson/dynamic-datalist';
+import { DynamicDatalistElement } from "@aarongustafson/dynamic-datalist";
 
-customElements.define('dynamic-datalist', DynamicDatalistElement);
+customElements.define("dynamic-datalist", DynamicDatalistElement);
 ```
 
 ### Option 2: Let the helper guard registration
 
 ```javascript
-import '@aarongustafson/dynamic-datalist/define.js';
+import "@aarongustafson/dynamic-datalist/define.js";
 // or, when you need to wait:
-import { defineDynamicDatalist } from '@aarongustafson/dynamic-datalist/define.js';
+import { defineDynamicDatalist } from "@aarongustafson/dynamic-datalist/define.js";
 
 defineDynamicDatalist();
 ```
@@ -175,7 +190,10 @@ defineDynamicDatalist();
 ### Option 3: Drop the helper in via a `<script>` tag
 
 ```html
-<script src="./node_modules/@aarongustafson/dynamic-datalist/define.js" type="module"></script>
+<script
+  src="./node_modules/@aarongustafson/dynamic-datalist/define.js"
+  type="module"
+></script>
 ```
 
 Regardless of how you register it, there are no framework dependencies—just clean autocomplete powered by your API. As I mentioned, it’s also available via CDNs, such as unpkg too, if you’d prefer to go that route.

@@ -9,6 +9,7 @@ Add these secrets to your GitHub repository settings (Settings → Secrets and v
 ### Required Secrets
 
 #### IFTTT (Required for LinkedIn & Pinterest)
+
 ```
 IFTTT_KEY=your_ifttt_webhook_key
 ```
@@ -16,12 +17,14 @@ IFTTT_KEY=your_ifttt_webhook_key
 **Note**: LinkedIn and Pinterest use IFTTT webhooks due to API limitations.
 
 #### Mastodon API
+
 ```
 MASTODON_ACCESS_TOKEN=your_mastodon_access_token
 MASTODON_SERVER_URL=https://front-end.social  # Your Mastodon instance
 ```
 
 #### Buffer API (for Twitter & Bluesky)
+
 ```
 BUFFER_ACCESS_TOKEN=your_buffer_access_token
 BUFFER_TWITTER_PROFILE_ID=your_twitter_profile_id
@@ -31,6 +34,7 @@ BUFFER_BLUESKY_PROFILE_ID=your_bluesky_profile_id
 ### Optional Secrets
 
 #### Screenshot Service
+
 ```
 SCREENSHOT_API_KEY=your_screenshotmachine_api_key
 ```
@@ -40,12 +44,14 @@ SCREENSHOT_API_KEY=your_screenshotmachine_api_key
 The workflow syndicates content to the following platforms:
 
 **Blog Posts:**
+
 - ✅ LinkedIn (via IFTTT)
 - ✅ Mastodon (via Mastodon API)
 - ✅ Twitter (via Buffer API)
 - ✅ Bluesky (via Buffer API)
 
 **Link Shares:**
+
 - ✅ LinkedIn (via IFTTT)
 - ✅ Pinterest (via IFTTT)
 - ✅ Mastodon (via Mastodon API)
@@ -98,6 +104,7 @@ The workflow syndicates content to the following platforms:
 **Note**: Bluesky and Mastodon do not have IFTTT integrations, so they rely entirely on their respective APIs.
 
 **LinkedIn IFTTT Webhook Payload Example:**
+
 ```json
 {
   "value1": "Article Title",
@@ -107,10 +114,12 @@ The workflow syndicates content to the following platforms:
 ```
 
 In the IFTTT LinkedIn action (Share a link):
+
 - **Link URL**: `{{Value2}}`
 - **Comment**: `{{Value1}}\n\n{{Value3}}`
 
 **Pinterest IFTTT Webhook Payload Example:**
+
 ```json
 {
   "value1": "Link Title",
@@ -120,6 +129,7 @@ In the IFTTT LinkedIn action (Share a link):
 ```
 
 In the IFTTT Pinterest action (Create a pin):
+
 - **Image URL**: `https://api.screenshotmachine.com?key=YOUR_KEY&dimension=1000x1500&url={{Value2}}`
 - **Link**: `{{Value2}}`
 - **Description**: `{{Value1}}\n\n{{Value3}}`
@@ -139,11 +149,11 @@ Configure Netlify to trigger the GitHub workflow after successful deployments:
 3. Add this to your `netlify.toml`:
    ```toml
    [[plugins]]
-     package = "netlify-plugin-github-dispatch"
-     [plugins.inputs]
-       repo = "aarongustafson/aaron-gustafson.com"
-       token = "${GITHUB_ACCESS_TOKEN}"
-       event = "netlify-deploy-succeeded"
+   package = "netlify-plugin-github-dispatch"
+   [plugins.inputs]
+   repo = "aarongustafson/aaron-gustafson.com"
+   token = "${GITHUB_ACCESS_TOKEN}"
+   event = "netlify-deploy-succeeded"
    ```
 
 **Note**: The Netlify environment variable should be named `GITHUB_ACCESS_TOKEN`.
@@ -151,45 +161,46 @@ Configure Netlify to trigger the GitHub workflow after successful deployments:
 ### Option 2: Custom Function
 
 Create `.netlify/functions/github-dispatch.js`:
+
 ```javascript
 exports.handler = async (event, context) => {
-  if (event.httpMethod !== 'POST') {
-    return { statusCode: 405, body: 'Method Not Allowed' };
+  if (event.httpMethod !== "POST") {
+    return { statusCode: 405, body: "Method Not Allowed" };
   }
 
-  const { default: fetch } = await import('node-fetch');
-  
+  const { default: fetch } = await import("node-fetch");
+
   try {
     const response = await fetch(
-      'https://api.github.com/repos/aarongustafson/aaron-gustafson.com/dispatches',
+      "https://api.github.com/repos/aarongustafson/aaron-gustafson.com/dispatches",
       {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Authorization': `token ${process.env.GITHUB_ACCESS_TOKEN}`,
-          'Content-Type': 'application/json',
-          'User-Agent': 'Netlify-Function'
+          Authorization: `token ${process.env.GITHUB_ACCESS_TOKEN}`,
+          "Content-Type": "application/json",
+          "User-Agent": "Netlify-Function",
         },
         body: JSON.stringify({
-          event_type: 'netlify-deploy-succeeded',
+          event_type: "netlify-deploy-succeeded",
           client_payload: {
-            site_id: event.headers['x-netlify-site-id'],
-            deploy_id: event.headers['x-netlify-deploy-id']
-          }
-        })
-      }
+            site_id: event.headers["x-netlify-site-id"],
+            deploy_id: event.headers["x-netlify-deploy-id"],
+          },
+        }),
+      },
     );
 
     return {
       statusCode: response.ok ? 200 : 500,
-      body: JSON.stringify({ 
+      body: JSON.stringify({
         success: response.ok,
-        status: response.status 
-      })
+        status: response.status,
+      }),
     };
   } catch (error) {
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: error.message })
+      body: JSON.stringify({ error: error.message }),
     };
   }
 };
@@ -206,6 +217,7 @@ exports.handler = async (event, context) => {
 ## Testing
 
 ### Manual Testing
+
 ```bash
 # Test from repository root
 node .github/scripts/syndicate-posts.js
@@ -213,6 +225,7 @@ node .github/scripts/syndicate-links.js
 ```
 
 ### GitHub Actions Manual Trigger
+
 1. Go to Actions tab in your repository
 2. Select "Syndicate Content to Social Media" workflow
 3. Click "Run workflow"
@@ -221,8 +234,9 @@ node .github/scripts/syndicate-links.js
 ## Monitoring
 
 The workflow will:
+
 - ✅ Log detailed progress and results
-- ❌ Report errors to GitHub Actions logs  
+- ❌ Report errors to GitHub Actions logs
 - 🔄 Use IFTTT as fallback for failed API calls
 - 💾 Cache processed items to prevent duplicates
 - ⏰ Run daily backup check at 11am UTC

@@ -21,10 +21,10 @@ Over the course of the next year, we’ll be working on his technical skills (es
 
 ### Follow Ace and check out his work
 
-* Twitter: [@Ace_KYD](https://twitter.com/Ace_KYD)
-* Blog: [acekyd.com](https://www.acekyd.com/posts/)
-* LinkedIn: [@acekyd](https://www.linkedin.com/in/acekyd/)
-* Github: [@acekyd](https://github.com/acekyd/)
+- Twitter: [@Ace_KYD](https://twitter.com/Ace_KYD)
+- Blog: [acekyd.com](https://www.acekyd.com/posts/)
+- LinkedIn: [@acekyd](https://www.linkedin.com/in/acekyd/)
+- Github: [@acekyd](https://github.com/acekyd/)
 
 ## Olu Niyi-Awosusi
 
@@ -32,10 +32,10 @@ Olu is based in London, works for the BBC, and is a champion for accessibility. 
 
 ### Follow Olu and check out their work
 
-* Twitter: [@oluoluoxenfree](https://twitter.com/oluoluoxenfree)
-* Blog: [opentagclosetag.com](https://www.opentagclosetag.com/)
-* LinkedIn: [@oluniyiawosusi](https://linkedin.com/in/oluniyiawosusi)
-* Github: [@oluoluoxenfree](https://github.com/oluoluoxenfree)
+- Twitter: [@oluoluoxenfree](https://twitter.com/oluoluoxenfree)
+- Blog: [opentagclosetag.com](https://www.opentagclosetag.com/)
+- LinkedIn: [@oluniyiawosusi](https://linkedin.com/in/oluniyiawosusi)
+- Github: [@oluoluoxenfree](https://github.com/oluoluoxenfree)
 
 ## Marcy Sutton
 
@@ -43,10 +43,10 @@ I was so honored when Marcy Sutton reached out to me and asked me to mentor her.
 
 ### Follow Marcy and check out her work
 
-* Twitter: [@marcysutton](https://twitter.com/marcysutton)
-* Blog: [marcysutton.com](https://marcysutton.com/)
-* LinkedIn: [@marcysutton](https://linkedin.com/in/marcysutton)
-* Github: [@marcysutton](https://github.com/marcysutton)
+- Twitter: [@marcysutton](https://twitter.com/marcysutton)
+- Blog: [marcysutton.com](https://marcysutton.com/)
+- LinkedIn: [@marcysutton](https://linkedin.com/in/marcysutton)
+- Github: [@marcysutton](https://github.com/marcysutton)
 
 ## Sara Wegman
 
@@ -54,9 +54,9 @@ I have to admit I fell in love with Sara’s writing immediately. She’s got a 
 
 ### Follow Sara and check out her work
 
-* Twitter: [@SaraLaughed](https://twitter.com/SaraLaughed)
-* Blog: [blog.sarawegman.com](https://blog.sarawegman.com/)
-* LinkedIn: [@saralaughed](https://linkedin.com/in/saralaughed)
+- Twitter: [@SaraLaughed](https://twitter.com/SaraLaughed)
+- Blog: [blog.sarawegman.com](https://blog.sarawegman.com/)
+- LinkedIn: [@saralaughed](https://linkedin.com/in/saralaughed)
 
 ## Desirée Zamora García
 
@@ -64,6 +64,6 @@ I’ve the great pleasure of working with Dezzie for a while now on [<cite>A Lis
 
 ### Follow Dezzie and check out her work
 
-* Twitter: [@thedezzie](https://twitter.com/thedezzie)
-* Blog: [dezz.ie](https://dezz.ie/)
-* LinkedIn: [@thedezzie](https://linkedin.com/in/thedezzie)
+- Twitter: [@thedezzie](https://twitter.com/thedezzie)
+- Blog: [dezz.ie](https://dezz.ie/)
+- LinkedIn: [@thedezzie](https://linkedin.com/in/thedezzie)

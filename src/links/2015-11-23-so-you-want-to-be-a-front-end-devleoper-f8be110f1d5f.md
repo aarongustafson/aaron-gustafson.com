@@ -6,7 +6,7 @@ ref_url: https://medium.com/shopify-ux/so-you-want-to-be-a-front-end-devleoper-f
 in_reply_to: https://medium.com/shopify-ux/so-you-want-to-be-a-front-end-devleoper-f8be110f1d5f#.93yepoulz
 ref_source: Medium
 via:
- name: Jessica Ivins
+  name: Jessica Ivins
 ---
 
 If you’re starting your career in programming, I could not give recommend a better guide than this one.

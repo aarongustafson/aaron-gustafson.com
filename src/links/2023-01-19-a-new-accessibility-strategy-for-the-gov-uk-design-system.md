@@ -19,7 +19,6 @@ Covered in this piece are:
 3. Improvements they are making to accessibility testing
 4. Their new approach to documentation
 
-
 Gotta love their guiding principles too:
 
 <blockquote>

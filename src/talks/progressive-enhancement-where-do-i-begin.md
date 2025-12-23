@@ -2,7 +2,8 @@
 title: "Progressive Enhancement: Where Do I Begin?"
 description: "In this session, I explain why progressive enhancement is the gold standard for developing web projects before diving into a host of practical examples of how you can apply this practice to a range of interfaces."
 category: talk
-tags: [ "accessibility", "progressive enhancement", "web design", "web development" ]
+tags:
+  ["accessibility", "progressive enhancement", "web design", "web development"]
 events: [148]
 date: 2022-10-27T09:00:00-0800
 hero: progressive-enhancement-where-do-i-begin.png

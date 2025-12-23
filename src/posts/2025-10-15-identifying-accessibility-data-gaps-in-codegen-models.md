@@ -44,7 +44,7 @@ Here’s how it works:
 - Screen reader compatibility problems
 - Form labeling errors
 
-When I identified errors, I remediated them and committed the remediated file to the repo with a commit message that included all of the issues and warnings on its own line. 
+When I identified errors, I remediated them and committed the remediated file to the repo with a commit message that included all of the issues and warnings on its own line.
 
 **Diff-Based Retesting**: I wanted to see if diff data could improve future codegen requests, so I created a tool to generate a collection of `.diff` files for each pattern that included the commit message as a header in each file. I then used those diff files as part of a new instance of the prompt to test whether the model can improve its output when guided.
 
@@ -57,7 +57,13 @@ Here are some of the patterns I've documented:
 **Form Label Disasters**: When asked to create a required text field, the model failed to include a visible label:
 
 ```html
-<input type="text" id="orangeColor" name="orangeColor" required placeholder="What color is an orange?">
+<input
+  type="text"
+  id="orangeColor"
+  name="orangeColor"
+  required
+  placeholder="What color is an orange?"
+/>
 ```
 
 Sure, the `placeholder` attribute is there, and in a pinch it will be included in a field’s accessible name calculation, but sighted users will lose the label as soon as they start typing.
@@ -65,8 +71,17 @@ Sure, the `placeholder` attribute is there, and in a pinch it will be included i
 **ARIA Attribute Confusion**: The model would routinely involce ARIA for no reason:
 
 ```html
-<label for="color-question">What color is an orange? <span style="color: red;">*</span></label>
-<input type="text" id="color-question" name="color-question" required aria-required="true" aria-labelledby="color-question">
+<label for="color-question"
+  >What color is an orange? <span style="color: red;">*</span></label
+>
+<input
+  type="text"
+  id="color-question"
+  name="color-question"
+  required
+  aria-required="true"
+  aria-labelledby="color-question"
+/>
 ```
 
 Here the `for` attribute already establishes the relationship between the label and input, so `aria-labelledby` is redundant. A bit of a nitpick, but the `aria-required="true"` is also unnecessary since the native `required` attribute already conveys that information to assistive technologies. `aria-required="true"` is only needed when creating custom form controls non-semantic markup.
@@ -74,7 +89,12 @@ Here the `for` attribute already establishes the relationship between the label 
 **Redundant ARIA**: Keeping on the ARIA redundancy, consider examples like this:
 
 ```html
-<input type="radio" id="option1" aria-labelledby="label1" aria-label="Option 1">
+<input
+  type="radio"
+  id="option1"
+  aria-labelledby="label1"
+  aria-label="Option 1"
+/>
 <label for="option1" id="label1">Option 1</label>
 ```
 
@@ -86,18 +106,32 @@ This redundancy raises the question _why‽_
 <fieldset>
   <legend>What fruits do you like?</legend>
   <div>
-    <input type="checkbox" id="bananas" name="fruits" value="bananas" required>
+    <input
+      type="checkbox"
+      id="bananas"
+      name="fruits"
+      value="bananas"
+      required
+    />
     <label for="bananas">Bananas</label>
   </div>
   <div>
-    <input type="checkbox" id="oranges" name="fruits" value="oranges" required>
+    <input
+      type="checkbox"
+      id="oranges"
+      name="fruits"
+      value="oranges"
+      required
+    />
     <label for="oranges">Oranges</label>
   </div>
   <div>
-    <input type="checkbox" id="apples" name="fruits" value="apples" required>
+    <input type="checkbox" id="apples" name="fruits" value="apples" required />
     <label for="apples">Apples</label>
   </div>
-  <div style="color: red; display: none;" id="validation-error">You must choose one or more fruits</div>
+  <div style="color: red; display: none;" id="validation-error">
+    You must choose one or more fruits
+  </div>
 </fieldset>
 ```
 
@@ -109,15 +143,15 @@ This breaks the intended behavior—if any checkbox is marked required, it must 
 <div>
   <label>Select Theme:</label>
   <div>
-    <input type="radio" id="light" name="theme" value="light">
+    <input type="radio" id="light" name="theme" value="light" />
     <label for="light">Light</label>
   </div>
   <div>
-    <input type="radio" id="dark" name="theme" value="dark">
+    <input type="radio" id="dark" name="theme" value="dark" />
     <label for="dark">Dark</label>
   </div>
   <div>
-    <input type="radio" id="high-contrast" name="theme" value="high-contrast">
+    <input type="radio" id="high-contrast" name="theme" value="high-contrast" />
     <label for="high-contrast">High Contrast</label>
   </div>
   <p>You can change this later</p>
@@ -170,8 +204,8 @@ The complete findings, methodology details, and code samples for my research are
 
 There are other projects and research exploring this space as well. A few worth checking out:
 
-* [AIMAC](https://aimac.ai/) - The AI Model Accessibility Checker (AIMAC) Leaderboard measures how well LLMs generate accessible HTML pages using neutral prompts without specific accessibility guidance. Checks are performed with axe-core.
-* [A11y LLM Evaluation Harness and Dataset](https://github.com/microsoft/a11y-llm-eval) - A more recent research project to evaluate how well various LLM models generate accessible HTML content.
+- [AIMAC](https://aimac.ai/) - The AI Model Accessibility Checker (AIMAC) Leaderboard measures how well LLMs generate accessible HTML pages using neutral prompts without specific accessibility guidance. Checks are performed with axe-core.
+- [A11y LLM Evaluation Harness and Dataset](https://github.com/microsoft/a11y-llm-eval) - A more recent research project to evaluate how well various LLM models generate accessible HTML content.
 
 <hr>
 

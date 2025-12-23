@@ -2,7 +2,7 @@
 title: "Pondering fallback content"
 date: 2017-03-30 20:00:50 -04:00
 comments: true
-tags: [HTML,"web standards","progressive enhancement"]
+tags: [HTML, "web standards", "progressive enhancement"]
 description: " I’ve been thinking a lot about media formats and what happens when a user’s browser encounters a `video`, `audio`, or `picture` element that only includes formats it doesn’t support."
 crossposted:
   Medium: https://medium.com/@AaronGustafson/a02bfa999bdc
@@ -12,8 +12,8 @@ I don’t remember what got it stuck in my craw, but I’ve been thinking a bit 
 
 ```html
 <picture>
-  <source type="image/webp" srcset="/i/j/r.webp">
-  <img src="/i/j/r.jpg" alt="">
+  <source type="image/webp" srcset="/i/j/r.webp" />
+  <img src="/i/j/r.jpg" alt="" />
 </picture>
 ```
 
@@ -24,7 +24,7 @@ In very simplistic terms, here’s what happens when a browser encounters this m
 1. The browser recognizes the `picture` element and begins parsing its content to determine how to render it, or
 2. The browser doesn’t recognize the `picture` and ignores it, moving inside to look for any elements it might recognize.
 
-In practical terms, this markup delivers two potential experiences. Older browsers that haven’t implemented `picture` get the JPG image. Newer browsers that have implemented `picture` get either the WebP (if they support that format) or the JPG (if they don’t). In this scenario, the `img` element can  be (and often is) referred to as "fallback content".
+In practical terms, this markup delivers two potential experiences. Older browsers that haven’t implemented `picture` get the JPG image. Newer browsers that have implemented `picture` get either the WebP (if they support that format) or the JPG (if they don’t). In this scenario, the `img` element can be (and often is) referred to as "fallback content".
 
 So why have I been thinking about fallback content? Well, I’ve been thinking a lot about media formats and what happens when a user’s browser encounters a `video`, `audio`, or `picture` element that only includes [formats it doesn’t support](https://developer.mozilla.org/docs/Web/HTML/Supported_media_formats). For instance: A `video` element that only offers an AVI `source` is highly unlikely to be playable in any browser.[^1]
 
@@ -32,7 +32,7 @@ So why have I been thinking about fallback content? Well, I’ve been thinking a
 
 ```html
 <video>
-  <source src="my.avi" type="video/avi">
+  <source src="my.avi" type="video/avi" />
 </video>
 ```
 
@@ -50,9 +50,11 @@ That would offer a much better experience. Of course, since it’s not a require
 
 ```html
 <video>
-  <source src="my.avi" type="video/avi">
-  <p>Your browser doesn’t support AVI, but you can 
-    <a href="my.avi" download>download this movie</a></p>
+  <source src="my.avi" type="video/avi" />
+  <p>
+    Your browser doesn’t support AVI, but you can
+    <a href="my.avi" download>download this movie</a>
+  </p>
 </video>
 ```
 
@@ -60,15 +62,15 @@ Given how fallbacks work, you might expect a browser to offer up the inner parag
 
 ## A better way?
 
-Obviously the paragraph fallback would be best, but I have no concept of how difficult that would be to do. So what if browsers did expose *our* fallback content when the only media types on offer are ones they don’t support?
+Obviously the paragraph fallback would be best, but I have no concept of how difficult that would be to do. So what if browsers did expose _our_ fallback content when the only media types on offer are ones they don’t support?
 
 It seems like this would offer a number of benefits:
 
 1. Authors without the requisite skill or knowledge necessary to transcode media into the various formats necessary for cross-browser support would not be penalized (nor would their users);
 2. CMS developers could provide a standardized, expected fallback pattern without worrying that content contributors might only upload one format that isn’t universally supported; and
-3. It would allow these elements to be more forward *and* backward compatible—newer media formats could be rolled out easily without sacrificing a page’s usability in non-supporting browsers.
+3. It would allow these elements to be more forward _and_ backward compatible—newer media formats could be rolled out easily without sacrificing a page’s usability in non-supporting browsers.
 
-That last one is the biggie for me. We want to support as many users as possible, now and well into the future. This might be a  way to reliably do that.
+That last one is the biggie for me. We want to support as many users as possible, now and well into the future. This might be a way to reliably do that.
 
 I [took a Twitter Poll](https://twitter.com/aarongustafson/status/847475329065041921) to gauge your thoughts, but that was just a yes/no. I’d love to know your detailed thoughts on this. Is there be any downside to this approach?
 

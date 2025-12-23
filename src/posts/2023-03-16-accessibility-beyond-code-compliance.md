@@ -11,7 +11,7 @@ hero:
   alt: ""
 ---
 
-*I had the great pleasure of delivering a talk about career opportunities for accessibility devs at [axe-con](https://www.deque.com/axe-con) earlier today. You can [view the slides](https://presentations.aaron-gustafson.com/SE8HHb/accessibility-beyond-code-compliance) or [watch the recording](https://www.deque.com/axe-con/sessions/accessibility-beyond-code-compliance/) of this talk, but what follows is an approximation my talk’s content, taken from my notes and slides.*
+_I had the great pleasure of delivering a talk about career opportunities for accessibility devs at [axe-con](https://www.deque.com/axe-con) earlier today. You can [view the slides](https://presentations.aaron-gustafson.com/SE8HHb/accessibility-beyond-code-compliance) or [watch the recording](https://www.deque.com/axe-con/sessions/accessibility-beyond-code-compliance/) of this talk, but what follows is an approximation my talk’s content, taken from my notes and slides._
 
 <!-- more -->
 
@@ -36,17 +36,17 @@ When our organizations put us in a box, they make it really difficult to grow ou
 
 Don’t get me wrong, I love compliance work. I’m not here to disparage it in any way; it’s critically important and means so much to our customers. But after years in this industry, I also see the downsides of life in the “accessibility dev” box. Perhaps you relate to a few of these:
 
-* Colleagues don’t understand (or value) what I do.
-* I need like three (or more) of me to handle the workload.
-* Teams are resistant to changing the way they do things.
-* Progress feels glacially slow and some days I feel I’m going backwards.
-* I feel isolated on the team or the company
+- Colleagues don’t understand (or value) what I do.
+- I need like three (or more) of me to handle the workload.
+- Teams are resistant to changing the way they do things.
+- Progress feels glacially slow and some days I feel I’m going backwards.
+- I feel isolated on the team or the company
 
 Again, I am not trying to cast code compliance work in a bad light, and I’m not trying to get you down on it. What I want to do is build you up.
 
 ## You’ve got so much more to offer
 
-I believe you, as a developer interested in accessibility, have so much to offer your organizations, your customers, and this industry. That’s what I am here to talk to you about today. 
+I believe you, as a developer interested in accessibility, have so much to offer your organizations, your customers, and this industry. That’s what I am here to talk to you about today.
 
 I’m here to talk to you about opportunity!
 
@@ -78,19 +78,19 @@ If you work in a small organization, it’s possible that you aren’t working w
 
 In this role, you can:
 
-* Work directly with other engineers to create system components.
-* Audit the system regularly for compliance issues (paying special attention to how combinations of components can create issues).
-* Provide in-house accessibility training to the design & engineering folks to help them level-up their own skills.
-* Provide design system training and implementation guidance to the folks implementing the design system and new hires as they come in.
-* Celebrate the successes of teams using the design system, particularly when it comes to their accessibility wins; you could do this in-person, in online meetings, or via email depending on the size and distribution of your team.
+- Work directly with other engineers to create system components.
+- Audit the system regularly for compliance issues (paying special attention to how combinations of components can create issues).
+- Provide in-house accessibility training to the design & engineering folks to help them level-up their own skills.
+- Provide design system training and implementation guidance to the folks implementing the design system and new hires as they come in.
+- Celebrate the successes of teams using the design system, particularly when it comes to their accessibility wins; you could do this in-person, in online meetings, or via email depending on the size and distribution of your team.
 
 If you’re in a larger organization that already has a design system, you could be a bit more strategic in your approach:
 
-* Being the accessibility advocate within the design system as well as in the context of all software development practices within your organization.
-* Be the conduit to your organization’s senior management as well as individual product owners to ensure accessibility is top of mind for them and baked into their roadmaps. Part of that is also advocating for the necessary funding to achieve your accessibility goals (and alleviating the issue we often face on not being appropriately-resourced).
-* Provide guidance and create structure within your organization to ensure your accessibility goals are met.
-* Educate and mentor folks from across your organization on accessibility.
-* And again, celebrate the heck out of any and all accessibility wins, no matter how small. We’ve already discussed some of the challenges we face ad accessibility devs, and getting publicly recognized for our accomplishments can really boost morale.
+- Being the accessibility advocate within the design system as well as in the context of all software development practices within your organization.
+- Be the conduit to your organization’s senior management as well as individual product owners to ensure accessibility is top of mind for them and baked into their roadmaps. Part of that is also advocating for the necessary funding to achieve your accessibility goals (and alleviating the issue we often face on not being appropriately-resourced).
+- Provide guidance and create structure within your organization to ensure your accessibility goals are met.
+- Educate and mentor folks from across your organization on accessibility.
+- And again, celebrate the heck out of any and all accessibility wins, no matter how small. We’ve already discussed some of the challenges we face ad accessibility devs, and getting publicly recognized for our accomplishments can really boost morale.
 
 As an accessibility dev, your unique perspective and skills will help build greater alignment on accessibility among teams and improve morale by speeding up development & reducing bugs!
 
@@ -100,9 +100,9 @@ As I mentioned, the role in larger orgs can be more strategic. Another strategic
 
 In this kind of a role, we can put the “shift left” credo we advocate for regularly into practice. It involves
 
-* Embedding yourself with feature teams to understand what motivates them. Understanding their vision in goals will help you frame your recommendations in a way that they will be welcomed and embraced. Being embedded with a team also means you can discover potential hazards early and eliminate them; you can educate them as to the issue and how to avoid it which makes it less likely they will run into it again.
-* Asking questions and offering to up-skill the team, helping them learn to build products that will reach and be usable by more customers.
-* Making sure people with disabilities are included (and paid for their contributions) in all research, co-creation, and testing so the team has a better understanding of their needs.
+- Embedding yourself with feature teams to understand what motivates them. Understanding their vision in goals will help you frame your recommendations in a way that they will be welcomed and embraced. Being embedded with a team also means you can discover potential hazards early and eliminate them; you can educate them as to the issue and how to avoid it which makes it less likely they will run into it again.
+- Asking questions and offering to up-skill the team, helping them learn to build products that will reach and be usable by more customers.
+- Making sure people with disabilities are included (and paid for their contributions) in all research, co-creation, and testing so the team has a better understanding of their needs.
 
 All of this work has huge business value for your organization:
 
@@ -121,27 +121,27 @@ As an accessibility dev, your unique perspective and skills will ensure your com
 
 Moving a bit further afield, I want to talk about how much we need your skills in the world of data science. As part of a data science team, you could bring attention to accessibility in our product metrics by
 
-* Ensuring key business metrics include data from people with disabilities.
-* Adding new product metrics that reflect the experience of different disability communities.
-* Measuring the time necessary to complete key tasks when using different AT and track improvements & regressions for them over time.
+- Ensuring key business metrics include data from people with disabilities.
+- Adding new product metrics that reflect the experience of different disability communities.
+- Measuring the time necessary to complete key tasks when using different AT and track improvements & regressions for them over time.
 
 Apart from products, you could also have a profound impact on your organizations’ internal processes, especially around how compliance work is done and tracked:
 
-* Capture automated testing passes and track compliance over time.
-* Highlight accessibility bug activity
-    * How many new?
-    * How many remediated?
-    * How many outstanding?
-    * How many marked “won’t fix”?
-    * Average age of outstanding bugs
-* Include this data in top-level product reports
+- Capture automated testing passes and track compliance over time.
+- Highlight accessibility bug activity
+  - How many new?
+  - How many remediated?
+  - How many outstanding?
+  - How many marked “won’t fix”?
+  - Average age of outstanding bugs
+- Include this data in top-level product reports
 
 And if you wanted to keep working in the UI space, you could put your skills to work improving the quality of the dashboards and tools used by your company:
 
-* Ensure all analysis tools are accessible.
-* Ensure charts are accessible.
-* Provide access to raw data tables.
-* Enable API access to data to enable colleagues to create additional tooling that works better for them.
+- Ensure all analysis tools are accessible.
+- Ensure charts are accessible.
+- Provide access to raw data tables.
+- Enable API access to data to enable colleagues to create additional tooling that works better for them.
 
 This is incredibly necessary work as we often neglect the accessibility of our own internal tools.
 
@@ -155,11 +155,11 @@ You have the knowledge and connections in this space to harness the power of AI 
 
 As part of an AI research team you can…
 
- * Observe how people with disabilities interact with the world today and consider how AI can
-     * increase their independence;
-     * make certain actions easier, more intuitive, or efficient; and
-     * increase the richness of experiences for them.
- * Co-design with folks from a range of disability communities; but remember not to assume everyone from a given community wants the same thing.
+- Observe how people with disabilities interact with the world today and consider how AI can
+  - increase their independence;
+  - make certain actions easier, more intuitive, or efficient; and
+  - increase the richness of experiences for them.
+- Co-design with folks from a range of disability communities; but remember not to assume everyone from a given community wants the same thing.
 
 This is the space I’m very grateful to be in right now. As part of the Accessibility Innovation team at Microsoft, I get to identify and fund projects that are using AI to improve the lives of people with disabilities.
 
@@ -171,10 +171,10 @@ That, in turn, improves the overall quality of these systems for everyone.
 
 Another example is Mentra, who has been using AI to help pair neurodivergent folks with employers who recognize the profound contributions they can make in their companies. Mentra’s platform collects holistic data on job seekers:
 
-* cognitive strengths,
-* aptitudes,
-* environmental sensitivities,
-* and necessary accommodations.
+- cognitive strengths,
+- aptitudes,
+- environmental sensitivities,
+- and necessary accommodations.
 
 It takes these into account when matching individuals to available positions (which also include comparable information).
 
@@ -194,12 +194,12 @@ AI teams need your skills to help them address bias toward and exclusion of peop
 
 You would bring a lot to an AI team in this regard:
 
-* Identify bias (or potential bias) in datasets.
-* Promote representation of people with disabilities in datasets.
-* Ensure people with disabilities are not exploited by datasets.
-* Ensure all interfaces to the AI tools are accessible.
-* Ensure the products created by AI are accessible.
-* Validate that the products of AI are not directly biased or exclusionary and they they cannot be used to perpetuate bias or exclusion.
+- Identify bias (or potential bias) in datasets.
+- Promote representation of people with disabilities in datasets.
+- Ensure people with disabilities are not exploited by datasets.
+- Ensure all interfaces to the AI tools are accessible.
+- Ensure the products created by AI are accessible.
+- Validate that the products of AI are not directly biased or exclusionary and they they cannot be used to perpetuate bias or exclusion.
 
 As an accessibility dev, your unique perspective and skills can help can ensure advancements in AI/ML are beneficial (and not harmful) to people with disabilities!
 
@@ -207,11 +207,11 @@ As an accessibility dev, your unique perspective and skills can help can ensure 
 
 The last role I’ll talk about is probably the furthest afield from development, but it also has the most profound impact on the teams that do the work and that’s D&I. I don’t imagine I need to spend a ton of time making a case to this audience for why diversity matters, but here’s a quick run-down just in case:
 
-* Diverse teams bring with them diverse perspectives & lived experiences.
-* If valued, that knowledge can make it easier to identify potential barriers (and opportunities) earlier in a project.
-* Diverse teams are more likely to exhibit empathy toward all users, including those with disabilities.
-* Diverse teams are more innovative.
-* Diverse teams make better decisions
+- Diverse teams bring with them diverse perspectives & lived experiences.
+- If valued, that knowledge can make it easier to identify potential barriers (and opportunities) earlier in a project.
+- Diverse teams are more likely to exhibit empathy toward all users, including those with disabilities.
+- Diverse teams are more innovative.
+- Diverse teams make better decisions
 
 For more on those last two points, you should [read this piece in the Harvard Business Review](https://hbr.org/2016/11/why-diverse-teams-are-smarter).
 
@@ -219,14 +219,14 @@ As someone who is keenly aware of the importance of having diverse teams to buil
 
 A lot of it starts with asking important questions:
 
-* Do we have a disability hiring policy?
-* Are our recruiters “screening in” people with disabilities?
-* Where are we posting jobs? Are they
-reaching people with disabilities?
-* Is the language of our job postings exclusionary?
-* Is our interview process inclusive and accommodating of people’s disabilities?
+- Do we have a disability hiring policy?
+- Are our recruiters “screening in” people with disabilities?
+- Where are we posting jobs? Are they
+  reaching people with disabilities?
+- Is the language of our job postings exclusionary?
+- Is our interview process inclusive and accommodating of people’s disabilities?
 
-It’s also important to actively solicit disabled talent for roles in your company. 
+It’s also important to actively solicit disabled talent for roles in your company.
 
 Some of this is actually work you could do without being part of any official D&I team, if you wanted, but if it is something you want to focus on, you might consider a job in recruiting.
 
@@ -236,10 +236,10 @@ In order to retain diverse talent, we need to make sure the teams they join reco
 
 You can influence team culture to improve retention by framing diversity in the context of your business goals and organizational success:
 
-* Lack of diversity creates knowledge gaps.
-* Diverse hiring helps to fill those gaps.
-* Diverse colleagues’ knowledge & lived
-experiences have value.
+- Lack of diversity creates knowledge gaps.
+- Diverse hiring helps to fill those gaps.
+- Diverse colleagues’ knowledge & lived
+  experiences have value.
 
 Once the framing has been established, be sure to “call in” non-inclusive/biased behaviors. Leading with curiosity can help you understand where someone is coming from so you can help them grapple with concepts like privilege and bias. Don’t burn yourself out trying to change the mind of folks who are openly antagonistic to this message, but you’ll often be surprised at how a non-confrontational, nonjudgmental conversation can both diffuse a tense situation and help to shift someone’s perspectives.
 
@@ -263,18 +263,18 @@ This work is especially important to undertake if you are from a privileged grou
 
 Finally, and in perhaps the most formal way, working full-time in D&I you can shape company policies & trainings:
 
-* Suggest edits to existing company policies.
-* Draft new policies.
-* Suggest freely-available accessibility and D&I trainings to colleagues.
-* Create (or co-create) workshops & trainings for your company or team.
-* Push for your company to mandate accessibility and D&I training; be sure to include additional training specifically for people managers as they have more to consider in this regard.
-* Advocate for diverse representation and the modeling of inclusive behavior in all in-house trainings.
+- Suggest edits to existing company policies.
+- Draft new policies.
+- Suggest freely-available accessibility and D&I trainings to colleagues.
+- Create (or co-create) workshops & trainings for your company or team.
+- Push for your company to mandate accessibility and D&I training; be sure to include additional training specifically for people managers as they have more to consider in this regard.
+- Advocate for diverse representation and the modeling of inclusive behavior in all in-house trainings.
 
 As an accessibility dev, your unique perspective and skills can help increase the inclusiveness of your company for fellow employees, which will lead to the creation of more inclusive products and services!
 
 ## These are just five areas that need you
 
-In this talk, I introduced five areas desperately in need of your skills and perspectives: Design Systems, Product Design, Data Science, AI Research & Ethics, and Diversity & Inclusion. 
+In this talk, I introduced five areas desperately in need of your skills and perspectives: Design Systems, Product Design, Data Science, AI Research & Ethics, and Diversity & Inclusion.
 
 There are way more (I only have so much time).
 

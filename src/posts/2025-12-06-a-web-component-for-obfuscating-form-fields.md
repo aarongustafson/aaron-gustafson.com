@@ -2,7 +2,16 @@
 title: "A Web Component for Obfuscating Form Fields"
 date: 2025-12-06 20:03:47 +00:00
 comments: true
-tags: ["forms", "HTML", "JavaScript", "progressive enhancement", "web components", "web forms", "security"]
+tags:
+  [
+    "forms",
+    "HTML",
+    "JavaScript",
+    "progressive enhancement",
+    "web components",
+    "web forms",
+    "security",
+  ]
 description: "There’s no standard way to make a field readable while editing but obfuscated at rest. The `form-obfuscator` web component fills that gap, giving you control over how sensitive data appears when fields aren't focused."
 twitter_text: "Need to obfuscate form field values when they’re not being edited? Here’s a web component for that."
 series:
@@ -22,11 +31,11 @@ Wrap any text field in the component and it will automatically obfuscate the val
 ```html
 <form-obfuscator>
   <label for="secret-key-1">What was your first pet’s name?</label>
-  <input type="text" id="secret-key-1" name="secret-key-1">
+  <input type="text" id="secret-key-1" name="secret-key-1" />
 </form-obfuscator>
 ```
 
-When users click into the field, they see the actual value. When they click away, it’s replaced with asterisks (*). The real value is preserved in a hidden field for form submission.
+When users click into the field, they see the actual value. When they click away, it’s replaced with asterisks (\*). The real value is preserved in a hidden field for form submission.
 
 ## Custom obfuscation characters
 
@@ -35,7 +44,7 @@ If you don’t like asterisks, you can specify any character you like:
 ```html
 <form-obfuscator character="•">
   <label for="account">Account Number</label>
-  <input type="text" id="account" name="account">
+  <input type="text" id="account" name="account" />
 </form-obfuscator>
 ```
 
@@ -44,7 +53,7 @@ Or get creative:
 ```html
 <form-obfuscator character="🤐">
   <label for="ssn">Social Security Number</label>
-  <input type="text" id="ssn" name="ssn">
+  <input type="text" id="ssn" name="ssn" />
 </form-obfuscator>
 ```
 
@@ -55,7 +64,7 @@ Sometimes you want to show part of the value while hiding the rest. The `pattern
 ```html
 <form-obfuscator pattern="\d{4}$">
   <label for="ssn">Social Security Number</label>
-  <input type="text" id="ssn" name="ssn">
+  <input type="text" id="ssn" name="ssn" />
 </form-obfuscator>
 ```
 
@@ -68,7 +77,7 @@ Use the `maxlength` attribute to cap how many characters appear when obfuscated:
 ```html
 <form-obfuscator maxlength="4">
   <label for="password">Password</label>
-  <input type="text" id="password" name="password">
+  <input type="text" id="password" name="password" />
 </form-obfuscator>
 ```
 
@@ -80,18 +89,19 @@ For complete control, you can provide a JavaScript function via the `replacer` a
 
 ```html
 <script>
-  window.emailReplacer = function() {
+  window.emailReplacer = function () {
     var username = arguments[0][1];
     var domain = arguments[0][2];
-    return username.replace(/./g, '*') + domain;
-  }
+    return username.replace(/./g, "*") + domain;
+  };
 </script>
 
-<form-obfuscator 
+<form-obfuscator
   pattern="^(.*?)(@.+)$"
-  replacer="return emailReplacer(arguments)">
+  replacer="return emailReplacer(arguments)"
+>
   <label for="email">Email Address</label>
-  <input type="text" id="email" name="email" value="user@example.com">
+  <input type="text" id="email" name="email" value="user@example.com" />
 </form-obfuscator>
 ```
 
@@ -104,15 +114,16 @@ Here's another practical example for credit cards:
   function cardNumberReplacer() {
     var beginning = arguments[0][1];
     var final_digits = arguments[0][2];
-    return beginning.replace(/\d/g, '*') + final_digits;
+    return beginning.replace(/\d/g, "*") + final_digits;
   }
 </script>
 
 <form-obfuscator
   pattern="^((?:[\d]+\-)+)(\d+)$"
-  replacer="return cardNumberReplacer(arguments)">
+  replacer="return cardNumberReplacer(arguments)"
+>
   <label for="cc">Credit Card</label>
-  <input type="text" id="cc" name="cc" value="1234-5678-9012-3456">
+  <input type="text" id="cc" name="cc" value="1234-5678-9012-3456" />
 </form-obfuscator>
 ```
 
@@ -123,12 +134,9 @@ This displays as `****-****-****-3456`, showing only the last group of digits.
 You can combine these attributes for sophisticated obfuscation patterns:
 
 ```html
-<form-obfuscator 
-  pattern="\d{4}$" 
-  character="•" 
-  maxlength="16">
+<form-obfuscator pattern="\d{4}$" character="•" maxlength="16">
   <label for="card">Credit Card</label>
-  <input type="text" id="card" name="card">
+  <input type="text" id="card" name="card" />
 </form-obfuscator>
 ```
 
@@ -139,14 +147,14 @@ This keeps the last 4 digits visible, uses bullets for obfuscation, and limits t
 The component dispatches custom events when values are hidden or revealed:
 
 ```javascript
-const obfuscator = document.querySelector('form-obfuscator');
+const obfuscator = document.querySelector("form-obfuscator");
 
-obfuscator.addEventListener('form-obfuscator:hide', (e) => {
-  console.log('Field obfuscated:', e.detail.field.value);
+obfuscator.addEventListener("form-obfuscator:hide", (e) => {
+  console.log("Field obfuscated:", e.detail.field.value);
 });
 
-obfuscator.addEventListener('form-obfuscator:reveal', (e) => {
-  console.log('Field revealed:', e.detail.field.value);
+obfuscator.addEventListener("form-obfuscator:reveal", (e) => {
+  console.log("Field revealed:", e.detail.field.value);
 });
 ```
 
@@ -194,7 +202,7 @@ npm install @aarongustafson/form-obfuscator
 Import and use:
 
 ```javascript
-import '@aarongustafson/form-obfuscator';
+import "@aarongustafson/form-obfuscator";
 ```
 
 No dependencies, just a straightforward way to add field obfuscation to your forms.

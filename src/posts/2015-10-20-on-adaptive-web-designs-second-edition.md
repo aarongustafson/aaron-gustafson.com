@@ -2,7 +2,7 @@
 title: "On <cite>Adaptive Web Design</cite>’s Second Edition"
 date: 2015-10-20 11:43:16 -04:00
 comments: true
-tags: ["Adaptive Web Design","progressive enhancement"]
+tags: ["Adaptive Web Design", "progressive enhancement"]
 description: "A little background as to why I wrote the Second Edition of Adaptive Web Design and what you can expect from it."
 crossposted:
   Medium: https://medium.com/@AaronGustafson/on-adaptive-web-design-s-second-edition-80194844bd3e
@@ -15,7 +15,7 @@ I wrote the bulk of <cite>Adaptive Web Design</cite> in early 2010 while taking 
 <style media="only screen">.figure--cover img{width:50%;margin-left:auto;margin-right:auto;}@media (min-width:37.5em){.figure--cover img{float:right;width:250px;margin:0 0 1em 1em;}}</style>
 <figure id="fig-2015-10-20-01" class="figure figure--cover"><a href="https://adaptivewebdesign.info/2nd-edition/">
 
-![](https://adaptivewebdesign.info/2nd-edition/cover-1024.jpg) { .book__cover }
+![](https://adaptivewebdesign.info/2nd-edition/cover-1024.jpg) { .book\_\_cover }
 
 </a></figure>
 
@@ -32,4 +32,3 @@ I finished writing the Second Edition about a month and a half ago and have read
 [^1]: Interestingly enough, Ethan’s book came out around the same time as <cite>Adaptive Web Design</cite>, leading many people to think they were conflicting approaches, [which is hardly the case](http://blog.easy-designs.net/archives/on-adaptive-vs-responsive-web-design/).
 
 [^2]: I like boozy cocktails, in case you were wondering.
-

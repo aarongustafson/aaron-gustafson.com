@@ -20,10 +20,10 @@ Whether you aspire to work on the web or you’re a veteran of the browser wars,
 
 To that end, my skills and knowledge will probably be most helpful to people interested in any or all of the these:
 
-* writing/speaking;
-* growing your allyship skills;
-* building a professional practice centered around performance, progressive enhancement, user experience, accessibility, etc.; and/or
-* growing in their career.
+- writing/speaking;
+- growing your allyship skills;
+- building a professional practice centered around performance, progressive enhancement, user experience, accessibility, etc.; and/or
+- growing in their career.
 
 I’m into a lot of things, but those are probably the ones I’m most confident I can help with.
 
@@ -45,7 +45,7 @@ This mentorship will last for a full year. You’ll have the option of talking t
 
 ## Can you nominate someone?
 
-If you know someone who you think would be a good fit for this, *please nominate them*! All I ask is that you introduce us with some context. The easiest (but most public) way is to [@-message us both on Twitter](https://twitter.com/intent/tweet?text=Hey+@aarongustafson+I%27d+like+to+nominate+YOUR_FRIENDS_HANDLE+for+your+mentorship). If you’d rather keep it private, you can kick off a DM thread with us if your nominee is on Twitter too ([my DMs are open](https://twitter.com/aarongustafson)). You could also start the conversation by [dropping me a note through the contact form on this site](/contact/) or sending me a message on any of the various platforms I frequent ([Facebook](https://www.facebook.com/aaronmgustafson), [LinkedIn](https://www.linkedin.com/in/aarongustafson), and so on).
+If you know someone who you think would be a good fit for this, _please nominate them_! All I ask is that you introduce us with some context. The easiest (but most public) way is to [@-message us both on Twitter](https://twitter.com/intent/tweet?text=Hey+@aarongustafson+I%27d+like+to+nominate+YOUR_FRIENDS_HANDLE+for+your+mentorship). If you’d rather keep it private, you can kick off a DM thread with us if your nominee is on Twitter too ([my DMs are open](https://twitter.com/aarongustafson)). You could also start the conversation by [dropping me a note through the contact form on this site](/contact/) or sending me a message on any of the various platforms I frequent ([Facebook](https://www.facebook.com/aaronmgustafson), [LinkedIn](https://www.linkedin.com/in/aarongustafson), and so on).
 
 ## I look forward to working with you (or your friend)!
 

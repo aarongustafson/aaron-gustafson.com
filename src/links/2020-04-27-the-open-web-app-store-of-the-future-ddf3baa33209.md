@@ -2,7 +2,7 @@
 title: "The Open Web: App Store of the Future"
 twitter_text: "This is why I continue to be so excited about Progressive Web Apps…"
 date: 2020-04-27 12:23:50 -07:00
-tags: [ "progressive web apps" ]
+tags: ["progressive web apps"]
 ref_url: https://medium.com/swlh/the-open-web-app-store-of-the-future-ddf3baa33209
 in_reply_to: https://medium.com/swlh/the-open-web-app-store-of-the-future-ddf3baa33209
 ref_source: The Startup

@@ -3,11 +3,11 @@ title: "Progressive Enhancement Just Works"
 date: 2020-04-29 14:18:22 -07:00
 comments: true
 description: "In the course of developing Front-end Bookmarks, Manuel Matuzović found that following the progressive enhancement philosophy made it easy to support older/less feature rich browsers and devices."
-tags: [ "progressive enhancement" ]
+tags: ["progressive enhancement"]
 in_reply_to: https://www.matuzo.at/blog/beauty-of-progressive-enhancement/
 ---
 
-In a recent blog post, [Manuel Matuzović offered a great case study](https://www.matuzo.at/blog/beauty-of-progressive-enhancement/) covering how he built [Front-end Bookmarks](https://www.frontendbookmarks.com/).   In the course of developing it, Manuel found that following the progressive enhancement philosophy in his development made it easy to support older/less feature rich browsers and devices:
+In a recent blog post, [Manuel Matuzović offered a great case study](https://www.matuzo.at/blog/beauty-of-progressive-enhancement/) covering how he built [Front-end Bookmarks](https://www.frontendbookmarks.com/). In the course of developing it, Manuel found that following the progressive enhancement philosophy in his development made it easy to support older/less feature rich browsers and devices:
 
 > To my surprise, I only had to reduce some paddings and font sizes to make it look nice. I didn’t have to change much because I follow the Progressive Enhancement principle when I build websites.
 

@@ -12,18 +12,15 @@ I love that the UK government is making digital product assessments, like this o
 
 In particular, I was impressed with how they held the line on the importance of robustness in tools like this (from [the “Choose the right tools and technology” section](https://digitalhealth.blog.gov.uk/2023/03/03/nhsd-apply-for-care-id-alpha-assessment/#choose-the-right-tools-and-technology)):
 
-
 > Before their reassessment, the team needs to … allow users who have issues using services with Javascript or have Javascript disabled. The team must build services for all users and cannot depend on client-side Javascript.
-
 
 Which yielded results in their reassessment:
 
-
 > The panel was impressed that:
-> 
-> * the team has worked around the limitations for progressive enhancement of the service, resulting from the use of a serverless Single Page Application (SPA) architecture, which is a historical technology choice inherited from NHS login
-the team has ensured the service now works for all applicants without requiring JavaScript to be enabled
-> * the team has used the third party Paycasso identity verification mobile application to automate many parts of the process for validating an identity document, presenting a significant improvement versus the current remote identity check process via video link
-> * the team has used the no JavaScript route through the service which re-uses the business logic for the SPA route despite the UI forms being separately maintained for both routes
+>
+> - the team has worked around the limitations for progressive enhancement of the service, resulting from the use of a serverless Single Page Application (SPA) architecture, which is a historical technology choice inherited from NHS login
+>   the team has ensured the service now works for all applicants without requiring JavaScript to be enabled
+> - the team has used the third party Paycasso identity verification mobile application to automate many parts of the process for validating an identity document, presenting a significant improvement versus the current remote identity check process via video link
+> - the team has used the no JavaScript route through the service which re-uses the business logic for the SPA route despite the UI forms being separately maintained for both routes
 
 The assessment also provides guidance for further improvements to be made. Love this!

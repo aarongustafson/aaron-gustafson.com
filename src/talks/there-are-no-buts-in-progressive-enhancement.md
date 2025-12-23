@@ -4,7 +4,7 @@ description: "Progressive enhancement sounds practical, but not for your current
 category: talk
 tags: ["progressive enhancement", HTML, CSS, JavaScript]
 date: 2015-11-03T09:00:00-0400
-events: [ 92, 102 ]
+events: [92, 102]
 with:
   - name: "Jenn Lukas"
     event: 92
@@ -28,8 +28,8 @@ In this session, Aaron will debunk the myths that often preclude individuals and
 
 By the end of this session, you’ll walk away with
 
-* a better sense of the devices people are using to access the Web,
-* a framework for envisioning experience as a continuum, and
-* a solid understanding of how to improve the accessibility and reach of your Web projects.
+- a better sense of the devices people are using to access the Web,
+- a framework for envisioning experience as a continuum, and
+- a solid understanding of how to improve the accessibility and reach of your Web projects.
 
 Come find out why progressive enhancement isn’t just for “content” sites (whatever those are).

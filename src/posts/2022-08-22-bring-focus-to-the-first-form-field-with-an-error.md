@@ -2,7 +2,17 @@
 title: "Bring Focus to the First Form Field with an Error"
 date: 2022-08-22 14:16:02 -07:00
 comments: true
-tags: ["accessibility", "forms", "HTML", "inclusive design", "JavaScript", "progressive enhancement", "WAI-ARIA", "web design"]
+tags:
+  [
+    "accessibility",
+    "forms",
+    "HTML",
+    "inclusive design",
+    "JavaScript",
+    "progressive enhancement",
+    "WAI-ARIA",
+    "web design",
+  ]
 description: "While filling out a long form the other day, I couldn’t figure out why it wasn’t submitting. Turns out I’d forgotten to fill in a field, but I didn’t know that because it had scrolled out of the viewport."
 twitter_text: "When highlighting form errors, moving focus to the first error encountered will ensure the error is seen and remedied."
 hero:
@@ -42,11 +52,7 @@ But what if you want to customize the experience?
 When you use proper markup for your forms, enhancing them with JavaScript becomes straightforward, thanks to the [Constraint Validation API](https://developer.mozilla.org/docs/Web/API/Constraint_validation). Consider the following form field:
 
 ```html
-<input id="name"
-       name="name"
-       required
-       aria-required="true"
-       >
+<input id="name" name="name" required aria-required="true" />
 ```
 
 Using JavaScript, we can check to see it’s validity at any point:
@@ -62,7 +68,7 @@ Armed with that knowledge, you could use another feature of the [Constraint Vali
 
 ```js
 var input = document.getElementById("name");
-if ( ! input.validity.valid ){
+if (!input.validity.valid) {
   input.setCustomValidity("Please enter your name");
   input.reportValidity();
 }
@@ -71,19 +77,20 @@ if ( ! input.validity.valid ){
 The thing is, you don’t really want to litter your JavaScript with strings like that. It’s not maintainable. Thankfully, we can leverage markup to achieve the same goal:
 
 ```html
-<input id="name"
-       name="name"
-       required
-       aria-required="true"
-       data-error-required="Please enter your name"
-       >
+<input
+  id="name"
+  name="name"
+  required
+  aria-required="true"
+  data-error-required="Please enter your name"
+/>
 ```
 
 The `input` in this example has a [data attribute](https://developer.mozilla.org/docs/Learn/HTML/Howto/Use_data_attributes) containing the error string (`data-error-required`). We can create whatever data attributes we want and access them using that element’s `dataset` property. It’s worth noting that hyphenated property names become camelCase when accessed as a named property of `dataset`.
 
 ```js
 var input = document.getElementById("name");
-if ( ! input.validity.valid ){
+if (!input.validity.valid) {
   input.setCustomValidity(input.dataset.errorRequired);
   input.reportValidity();
 }
@@ -100,14 +107,15 @@ With that, we get the same result with far looser coupling between individual fi
 You can even extend the approach to handle different kinds of errors:
 
 ```html
-<input type="email"
-       id="email"
-       name="email"
-       required
-       aria-required="true"
-       data-error-required="Please enter your email"
-       data-error-invalid="Your email doesn’t look right"
-       >
+<input
+  type="email"
+  id="email"
+  name="email"
+  required
+  aria-required="true"
+  data-error-required="Please enter your email"
+  data-error-invalid="Your email doesn’t look right"
+/>
 ```
 
 Here I’m using two different data attributes to apply in different error scenarios and the one I show will depend on the type of error a user has encountered. Pretty cool!
@@ -124,35 +132,34 @@ The built-in browser validation UI is pretty great, but maybe it’s not your cu
 // Validation Logic Definition
 // including validateMe() function
 
-document.querySelectorAll("form")
-        .forEach(function($form){
-          $form.addEventListener('submit', validateMe, false);
-          $form.setAttribute('novalidate','');
-        });
+document.querySelectorAll("form").forEach(function ($form) {
+  $form.addEventListener("submit", validateMe, false);
+  $form.setAttribute("novalidate", "");
+});
 ```
 
-With that in place, we can turn our attention to handling the validation setup. 
+With that in place, we can turn our attention to handling the validation setup.
 
 For simplicity, and based on personal preference, I am going to start with setting up my form to validate when the form is submitted rather than whenever an individual field is changed (hence the "submit" event listener). When the event is fired, the event handler will loop through the fields in the form and validate each one. For the sake of the widest possible browser compatibility, I’m foregoing fat arrow functions and other ES2015 goodies and rockin’ this old school.
 
 ```js
-function validateMe( e ) {
+function validateMe(e) {
   var $form = e.target,
-      i = 0,
-      field_count = $form.elements.length,
-      $first_error = false;
-  
-  for ( i; i< field_count; i++) {
+    i = 0,
+    field_count = $form.elements.length,
+    $first_error = false;
+
+  for (i; i < field_count; i++) {
     var $field = $form.elements[i],
-        valid = isValid($field);
-    if ( !$first_error && !valid ) {
+      valid = isValid($field);
+    if (!$first_error && !valid) {
       $first_error = $field;
     }
   }
 
-  if ( $first_error ){
+  if ($first_error) {
     e.preventDefault();
-    $first_error.focus();    
+    $first_error.focus();
   }
 }
 ```
@@ -171,17 +178,18 @@ First off, you will need to add `aria-invalid="true"` to any fields that have an
 
 ```html
 <label for="name">What’s Your Name?</label>
-<input id="name"
-       name="name"
-       required
-       aria-required="true"
-       data-error-required="Please enter your name"
-       aria-errormessage="name-validation-error"
-       aria-invalid="true"
-       >
-<strong class="form-validation-error"
-        id="name-validation-error"
-        >Please enter your name</strong>
+<input
+  id="name"
+  name="name"
+  required
+  aria-required="true"
+  data-error-required="Please enter your name"
+  aria-errormessage="name-validation-error"
+  aria-invalid="true"
+/>
+<strong class="form-validation-error" id="name-validation-error"
+  >Please enter your name</strong
+>
 ```
 
 It’s also worth noting that you’ll want to reset and re-validate the form field once the user has changed the contents of the field (and hopefully remediated the error). Resetting the field will involve removing the `aria-invalid` attribute and doing one of two things with the error message: either remove it from the markup entirely or simply hide it (e.g., `display: none`). Once the `aria-invalid` state is reset, it doesn’t matter that there is an existing `aria-errormessage` attribute. That said, I generally prefer to totally reset the field entirely, removing both attributes and the validation error element as well.

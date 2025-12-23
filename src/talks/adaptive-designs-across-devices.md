@@ -7,7 +7,7 @@ with:
     url: https://www.linkedin.com/in/jennlukas/
 category: workshop
 date: 2015-04-13T09:00:00-0400
-tags: ["progressive enhancement",mobile,"user experience"]
+tags: ["progressive enhancement", mobile, "user experience"]
 events: [92]
 hero: adaptive-designs-across-devices.png
 slides:
@@ -22,6 +22,6 @@ Progressive Enhancement, the heart of Adaptive Design, makes the life of a desig
 
 Practical takeaways from this workshop:
 
-* Integrate progressive enhancement with your process to take advantage of features and components as they surface.
-* Prevent existing design decisions that unintentionally skew your analytics and narrow your outlook on web and mobile experiences.
-* Fuse responsive web design and mobile­-first with progressive enhancement, and envision content, core tasks, and visual designs on a continuum.
+- Integrate progressive enhancement with your process to take advantage of features and components as they surface.
+- Prevent existing design decisions that unintentionally skew your analytics and narrow your outlook on web and mobile experiences.
+- Fuse responsive web design and mobile­-first with progressive enhancement, and envision content, core tasks, and visual designs on a continuum.

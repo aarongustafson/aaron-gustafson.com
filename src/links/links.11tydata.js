@@ -41,7 +41,7 @@ function archived(data) {
 }
 
 export default {
-	layout: "layouts/link.html",
+	layout: "layouts/link.njk",
 	permalink: "/notebook/{{ page.filePathStem }}/",
 	body_class: "link",
 	eleventyComputed: {
@@ -75,7 +75,7 @@ export default {
 							{
 								duration: "1y",
 								type: "json",
-							}
+							},
 						);
 						og_image = response.image;
 						if (og_image === "false") {
@@ -87,7 +87,9 @@ export default {
 					}
 				} else {
 					// Skip OG image fetching if token is not available (local dev)
-					console.log(`Skipping OG image fetch for ${url} (no WEBMENTION_APP_TOKEN)`);
+					console.log(
+						`Skipping OG image fetch for ${url} (no WEBMENTION_APP_TOKEN)`,
+					);
 				}
 
 				return og_image;

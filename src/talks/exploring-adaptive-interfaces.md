@@ -2,7 +2,7 @@
 title: "Exploring Adaptive Interfaces"
 description: "One of the Web’s major strengths is its ability to adapt, to travel anywhere and everywhere in service of its users. When we embrace that, our designs, products, and experiences will be all the better for it."
 category: keynote
-tags: ["progressive enhancement","web design"]
+tags: ["progressive enhancement", "web design"]
 events: [116]
 date: 2017-09-20T09:00:00-0400
 hero: exploring-adaptive-interfaces.png

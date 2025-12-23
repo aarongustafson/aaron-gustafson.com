@@ -2,7 +2,7 @@
 title: "Reefer 170, year 2"
 date: 2020-05-29 14:24:42 -07:00
 comments: true
-tags: [ "reef keeping" ]
+tags: ["reef keeping"]
 description: "Facebook reminded me of a video I recorded of my reef tank a little over a year ago, so I thought I’d shoot another video, write a post about it, and share some of the interesting things that have changed over the last year."
 ---
 

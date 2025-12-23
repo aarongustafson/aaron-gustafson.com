@@ -2,12 +2,20 @@
 title: "Lazy Loading Images Based on Screen Size"
 date: 2025-12-10 17:15:54 +00:00
 comments: true
-tags: ["web components", "progressive enhancement", "HTML", "performance", "images", "responsive design"]
+tags:
+  [
+    "web components",
+    "progressive enhancement",
+    "HTML",
+    "performance",
+    "images",
+    "responsive design",
+  ]
 description: "The lazy-img web component goes beyond native lazy loading and srcset—it can completely skip loading images on small screens, saving bandwidth where it matters most."
 twitter_text: "Want to skip loading images entirely on mobile? Here's a web component that does just that."
 ---
 
-Native lazy loading and `srcset` are great, but they have a limitation: they always load *some* variant of the image. The `lazy-img` web component takes a different approach—it can completely skip loading images when they don't meet your criteria, whether that's screen size, container size, or visibility in the viewport.
+Native lazy loading and `srcset` are great, but they have a limitation: they always load _some_ variant of the image. The `lazy-img` web component takes a different approach—it can completely skip loading images when they don't meet your criteria, whether that's screen size, container size, or visibility in the viewport.
 
 This is particularly valuable for mobile users on slow connections or limited data plans. If an image is only meaningful on larger screens, why waste their bandwidth loading it at all?
 
@@ -24,10 +32,7 @@ Once an image is loaded, however, it remains loaded even if the viewport or cont
 The `lazy-img` works pretty much identically to a regular `img` element, with all the attributes you know and love:
 
 ```html
-<lazy-img
-  src="image.jpg"
-  alt="A beautiful image">
-</lazy-img>
+<lazy-img src="image.jpg" alt="A beautiful image"> </lazy-img>
 ```
 
 But that’s not very interesting. The real power comes from conditional loading.
@@ -37,10 +42,7 @@ But that’s not very interesting. The real power comes from conditional loading
 Load an image only when its container reaches a minimum width:
 
 ```html
-<lazy-img
-  src="large-image.jpg"
-  alt="Large image"
-  min-inline-size="500px">
+<lazy-img src="large-image.jpg" alt="Large image" min-inline-size="500px">
 </lazy-img>
 ```
 
@@ -55,7 +57,8 @@ You can lazy load images based on viewport width instead by switching to media q
   src="desktop-image.jpg"
   alt="Desktop image"
   min-inline-size="768px"
-  query="media">
+  query="media"
+>
 </lazy-img>
 ```
 
@@ -66,10 +69,7 @@ With this configuration, the image loads when the browser window is at least 768
 Load images when they scroll into view using `IntersectionObserver` by switching to the "view" query type:
 
 ```html
-<lazy-img
-  src="image.jpg"
-  alt="Loads when scrolled into view"
-  query="view">
+<lazy-img src="image.jpg" alt="Loads when scrolled into view" query="view">
 </lazy-img>
 ```
 
@@ -84,7 +84,8 @@ Control when images load with the `view-range-start` attribute:
   src="image.jpg"
   alt="Loads when half visible"
   query="view"
-  view-range-start="entry 50%">
+  view-range-start="entry 50%"
+>
 </lazy-img>
 ```
 
@@ -95,7 +96,8 @@ Control when images load with the `view-range-start` attribute:
   src="image.jpg"
   alt="Preloads 200px before visible"
   query="view"
-  view-range-start="entry -200px">
+  view-range-start="entry -200px"
+>
 </lazy-img>
 ```
 
@@ -115,7 +117,8 @@ As with regular images, you can use `srcset` and `sizes` for responsive images:
          (max-width: 1000px) 800px,
          1200px"
   alt="Responsive image"
-  min-inline-size="400px">
+  min-inline-size="400px"
+>
 </lazy-img>
 ```
 
@@ -150,7 +153,8 @@ Then reference them in your markup:
   src="image.jpg"
   alt="Image with named breakpoints"
   named-breakpoints="medium, large"
-  query="media">
+  query="media"
+>
 </lazy-img>
 ```
 
@@ -166,7 +170,8 @@ As with regular images, don’t forget to use `width` and `height` attributes to
   alt="A beautiful image"
   width="800"
   height="600"
-  min-inline-size="768px">
+  min-inline-size="768px"
+>
 </lazy-img>
 ```
 
@@ -197,9 +202,9 @@ lazy-img[qualifies]:not([loaded])::before {
 If you crave control, you can add your own functionality by listening for when images load:
 
 ```javascript
-const lazyImg = document.querySelector('lazy-img');
-lazyImg.addEventListener('lazy-img:loaded', (event) => {
-  console.log('Image loaded:', event.detail.src);
+const lazyImg = document.querySelector("lazy-img");
+lazyImg.addEventListener("lazy-img:loaded", (event) => {
+  console.log("Image loaded:", event.detail.src);
 });
 ```
 
@@ -242,7 +247,7 @@ npm install @aarongustafson/lazy-img
 Import and use:
 
 ```javascript
-import '@aarongustafson/lazy-img';
+import "@aarongustafson/lazy-img";
 ```
 
 Based on my original [Easy Lazy Images](https://github.com/easy-designs/easy-lazy-images.js) concept, reimagined as a modern custom element.

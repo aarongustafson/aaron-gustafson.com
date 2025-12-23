@@ -1,134 +1,134 @@
 [
-  {
-    "site": "Mastodon",
-    "username": "@Aaron",
-    "url": "https://front-end.social/@Aaron",
-    "title": "Follow on Mastodon",
-    "category": "profile",
-    "active": true,
+	{
+		"site": "Mastodon",
+		"username": "@Aaron",
+		"url": "https://front-end.social/@Aaron",
+		"title": "Follow on Mastodon",
+		"category": "profile",
+		"active": true,
 		"promote": true
-  },
-  {
-    "site": "Twitter",
-    "username": "@AaronGustafson",
-    "url": "https://twitter.com/aarongustafson",
-    "title": "Follow on Twitter",
-    "category": "profile",
-    "active": true,
+	},
+	{
+		"site": "Twitter",
+		"username": "@AaronGustafson",
+		"url": "https://twitter.com/aarongustafson",
+		"title": "Follow on Twitter",
+		"category": "profile",
+		"active": true,
 		"promote": true
-  },
-  {
-    "site": "GitHub",
-    "username": "AaronGustafson",
-    "url": "https://github.com/aarongustafson",
-    "title": "Follow my work on Github",
-    "category": "profile",
-    "active": true
-  },
-  {
-    "site": "LinkedIn",
-    "url": "https://www.linkedin.com/in/aarongustafson",
-    "title": "View my profile on LinkedIn",
-    "category": "profile",
-    "active": true,
+	},
+	{
+		"site": "GitHub",
+		"username": "AaronGustafson",
+		"url": "https://github.com/aarongustafson",
+		"title": "Follow my work on Github",
+		"category": "profile",
+		"active": true
+	},
+	{
+		"site": "LinkedIn",
+		"url": "https://www.linkedin.com/in/aarongustafson",
+		"title": "View my profile on LinkedIn",
+		"category": "profile",
+		"active": true,
 		"promote": true
-  },
-  {
-    "site": "Polywork",
-    "url": "https://poly.me/aarongustafson",
-    "title": "View my profile on Polywork",
-    "category": "profile",
-    "active": true
-  },
-  {
-    "site": "SlideShare",
-    "url": "https://www.slideshare.net/AaronGustafson/",
-    "title": "View and download presentations I’ve given on SlideShare",
-    "category": "speaking",
-    "active": false
-  },
-  {
-    "site": "Notist",
-    "url": "https://noti.st/aarongustafson",
-    "title": "See where I’ve been &amp; where I’m going next on Notist",
-    "category": "speaking",
-    "active": true,
+	},
+	{
+		"site": "Polywork",
+		"url": "https://poly.me/aarongustafson",
+		"title": "View my profile on Polywork",
+		"category": "profile",
+		"active": true
+	},
+	{
+		"site": "SlideShare",
+		"url": "https://www.slideshare.net/AaronGustafson/",
+		"title": "View and download presentations I’ve given on SlideShare",
+		"category": "speaking",
+		"active": false
+	},
+	{
+		"site": "Notist",
+		"url": "https://noti.st/aarongustafson",
+		"title": "See where I’ve been &amp; where I’m going next on Notist",
+		"category": "speaking",
+		"active": true,
 		"promote": true
-  },
-  {
-    "site": "Dev.to",
-    "url": "https://dev.to/aarongustafson",
-    "title": "I crosspost my content to Dev.to",
-    "category": "writing",
-    "active": true,
+	},
+	{
+		"site": "Dev.to",
+		"url": "https://dev.to/aarongustafson",
+		"title": "I crosspost my content to Dev.to",
+		"category": "writing",
+		"active": true,
 		"promote": true
-  },
-  {
-    "site": "Academia.edu",
-    "username": "GustafsonAaron",
-    "url": "https://independent.academia.edu/GustafsonAaron",
-    "title": "Follow me on Academia.edu",
-    "category": "profile",
-    "active": true
-  },
-  {
-    "site": "Facebook",
-    "username": "AaronMGustafson",
-    "url": "https://www.facebook.com/aaronmgustafson",
-    "title": "Follow me on Facebook",
-    "category": "profile",
-    "active": true
-  },
-  {
-    "site": "SpeakerRate",
-    "url": "http://speakerrate.com/speakers/266-aaron-gustafson",
-    "title": "See how people like my presentations on SpeakerRate",
-    "category": "speaking",
-    "active": false
-  },
-  {
-    "site": "Instagram",
-    "username": "AaronGustafson",
-    "url": "https://instagram.com/AaronGustafson",
-    "title": "View my square photos on Instagram",
-    "category": "photos",
-    "active": true
-  },
-  {
-    "site": "Flickr",
-    "url": "https://www.flickr.com/photos/aarongustafson",
-    "title": "View my photos on Flickr",
-    "category": "photos",
-    "active": false
-  },
-  {
-    "site": "YouTube",
-    "url": "https://www.youtube.com/@AaronGustafson",
-    "title": "See my videos on YouTube",
-    "category": "videos",
-    "active": true
-  },
-  {
-    "site": "Discogs",
-    "url": "https://www.discogs.com/user/AaronGustafson",
-    "title": "Vinyl head? Check out my collection",
-    "category": "music",
-    "active": true
-  },
-  {
-    "site": "Bandcamp",
-    "url": "https://bandcamp.com/AaronGustafson/",
-    "title": "Check out the artists I support on Bandcamp",
-    "category": "music",
-    "active": true
-  },
-  {
-    "site": "Last.fm",
-    "url": "https://www.last.fm/user/AaronGustafson",
-    "title": "See what I’ve been listening to",
-    "category": "music",
-    "active": true
-  },
+	},
+	{
+		"site": "Academia.edu",
+		"username": "GustafsonAaron",
+		"url": "https://independent.academia.edu/GustafsonAaron",
+		"title": "Follow me on Academia.edu",
+		"category": "profile",
+		"active": true
+	},
+	{
+		"site": "Facebook",
+		"username": "AaronMGustafson",
+		"url": "https://www.facebook.com/aaronmgustafson",
+		"title": "Follow me on Facebook",
+		"category": "profile",
+		"active": true
+	},
+	{
+		"site": "SpeakerRate",
+		"url": "http://speakerrate.com/speakers/266-aaron-gustafson",
+		"title": "See how people like my presentations on SpeakerRate",
+		"category": "speaking",
+		"active": false
+	},
+	{
+		"site": "Instagram",
+		"username": "AaronGustafson",
+		"url": "https://instagram.com/AaronGustafson",
+		"title": "View my square photos on Instagram",
+		"category": "photos",
+		"active": true
+	},
+	{
+		"site": "Flickr",
+		"url": "https://www.flickr.com/photos/aarongustafson",
+		"title": "View my photos on Flickr",
+		"category": "photos",
+		"active": false
+	},
+	{
+		"site": "YouTube",
+		"url": "https://www.youtube.com/@AaronGustafson",
+		"title": "See my videos on YouTube",
+		"category": "videos",
+		"active": true
+	},
+	{
+		"site": "Discogs",
+		"url": "https://www.discogs.com/user/AaronGustafson",
+		"title": "Vinyl head? Check out my collection",
+		"category": "music",
+		"active": true
+	},
+	{
+		"site": "Bandcamp",
+		"url": "https://bandcamp.com/AaronGustafson/",
+		"title": "Check out the artists I support on Bandcamp",
+		"category": "music",
+		"active": true
+	},
+	{
+		"site": "Last.fm",
+		"url": "https://www.last.fm/user/AaronGustafson",
+		"title": "See what I’ve been listening to",
+		"category": "music",
+		"active": true
+	},
 	{
 		"site": "IMDb",
 		"url": "https://imdb.me/AaronGustafson",

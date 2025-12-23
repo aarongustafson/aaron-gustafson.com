@@ -8,8 +8,8 @@ ref_url: https://github.com/JoelBesada/activate-power-mode
 in_reply_to: https://github.com/JoelBesada/activate-power-mode
 ref_source: GitHub
 via:
- name: David Catuhe
- url: https://twitter.com/deltakosh
+  name: David Catuhe
+  url: https://twitter.com/deltakosh
 ---
 
 This is hilarious! If you use [Atom](https://atom.io), you can now become all-powerful…

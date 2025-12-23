@@ -7,7 +7,7 @@ ref_source: LogRocket Blog
 tags: [performance, CSS, JavaScript, DevTools]
 ---
 
-While the name is a bit confusing, this new tool helps you compare the volume of code you’ve authored to the the amount of code that is actually executed by the browser. It’s a cool idea, but you should take it’s results with a grain of salt: This tool is only diagnosing your project based on *the current page and/or flow* (if it’s a single page app). Be careful not to take the results as gospel and start eliminating code without knowing whether it’s actually unused in all scenarios.
+While the name is a bit confusing, this new tool helps you compare the volume of code you’ve authored to the the amount of code that is actually executed by the browser. It’s a cool idea, but you should take it’s results with a grain of salt: This tool is only diagnosing your project based on _the current page and/or flow_ (if it’s a single page app). Be careful not to take the results as gospel and start eliminating code without knowing whether it’s actually unused in all scenarios.
 
 Now… tie this into an automated testing tool and gather results from a complete run-through of an app or site and you’ve got something you can actually use to improve your site’s performance.
 

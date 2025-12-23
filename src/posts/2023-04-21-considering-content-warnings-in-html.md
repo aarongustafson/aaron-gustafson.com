@@ -24,9 +24,7 @@ Earlier today, [the idea of a "spoiler / content warning" element popped onto my
 I wasn’t sold on the idea of a `spoiler` element either, as that’s a pretty specific use case of a content warning. And so I wondered, _what if instead of an element, we introduced an attribute that could take the kind of content warning as its value_. For example, consider the following:
 
 ```html
-<article content-warning="child abuse">
-  … article contents …
-</article>
+<article content-warning="child abuse">… article contents …</article>
 ```
 
 This would identify the entire article as discussing child abuse. Obscuring that behind a warning would probably be a good idea.
@@ -34,16 +32,14 @@ This would identify the entire article as discussing child abuse. Obscuring that
 Or perhaps the content warning should apply to an image:
 
 ```html
-<img content-warning="violence gore" …>
+<img content-warning="violence gore" … />
 ```
 
 Or, to return to the original idea of a spoiler, it could also be applied inline:
 
 ```html
-I thoroughly enjoyed the film, especially
-when it was revealed that
-<b content-warning="spoiler">Taye Diggs
-had been the bad guy all along</b>.
+I thoroughly enjoyed the film, especially when it was revealed that
+<b content-warning="spoiler">Taye Diggs had been the bad guy all along</b>.
 ```
 
 ## Necessary behaviors

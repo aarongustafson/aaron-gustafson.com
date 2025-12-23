@@ -2,18 +2,14 @@
 		More
 \*------------------------------------*/
 
-@include breakup-breakpoint( "global" ) {
-
+@include breakup-breakpoint("global") {
 	.more {
-
-		@include breakup-placeholder( small-caps );
+		@include breakup-placeholder(small-caps);
 		font-weight: bold;
 		white-space: nowrap;
 
 		a {
 			border: 0;
 		}
-
 	}
-
 }

@@ -2,7 +2,16 @@
 title: "Visual Validation Feedback for Form Fields"
 date: 2025-12-06 10:00:00 -07:00
 comments: true
-tags: ["forms", "HTML", "JavaScript", "progressive enhancement", "web components", "web forms", "UX"]
+tags:
+  [
+    "forms",
+    "HTML",
+    "JavaScript",
+    "progressive enhancement",
+    "web components",
+    "web forms",
+    "UX",
+  ]
 description: "The form-validation-list web component provides real-time visual feedback on validation requirements, checking each rule as users type and displaying helpful checkmarks or X's."
 twitter_text: "Show users exactly which validation requirements they've met with visual feedback as they type."
 series:
@@ -24,7 +33,7 @@ Associate the component with an input and define your validation rules:
 ```html
 <form>
   <label for="username">Username:</label>
-  <input type="text" id="username" name="username" required>
+  <input type="text" id="username" name="username" required />
 
   <form-validation-list for="username">
     <ul>
@@ -85,9 +94,7 @@ Each pattern is a standard JavaScript regular expression. The component tests th
 By default, validation runs on the `input` event (as users type). Change it with `trigger-event`:
 
 ```html
-<form-validation-list
-  for="email"
-  trigger-event="blur">
+<form-validation-list for="email" trigger-event="blur">
   <ul>
     <li data-pattern=".+@.+">Contains @ symbol</li>
     <li data-pattern=".+@.+\..+">Valid email format</li>
@@ -102,9 +109,7 @@ This validates only when the field loses focus, useful for fields where you don'
 The `each-delay` attribute controls the delay between checking each rule:
 
 ```html
-<form-validation-list
-  for="password"
-  each-delay="100">
+<form-validation-list for="password" each-delay="100">
   <!-- rules -->
 </form-validation-list>
 ```
@@ -117,10 +122,18 @@ Customize class names for integration with CSS frameworks:
 
 ```html
 <style>
-  .is-valid { border-color: green; }
-  .is-invalid { border-color: red; }
-  .rule-pass { color: green; }
-  .rule-fail { color: red; }
+  .is-valid {
+    border-color: green;
+  }
+  .is-invalid {
+    border-color: red;
+  }
+  .rule-pass {
+    color: green;
+  }
+  .rule-fail {
+    color: red;
+  }
 </style>
 
 <form-validation-list
@@ -128,7 +141,8 @@ Customize class names for integration with CSS frameworks:
   field-valid-class="is-valid"
   field-invalid-class="is-invalid"
   rule-matched-class="rule-pass"
-  rule-unmatched-class="rule-fail">
+  rule-unmatched-class="rule-fail"
+>
   <ul>
     <li data-pattern=".{5,}">At least 5 characters</li>
     <li data-pattern="[!@#]+">Special char (!@#)</li>
@@ -153,6 +167,7 @@ form-validation-list {
 ```
 
 Available properties:
+
 - `--validation-icon-matched` - Content for matched state (default: "✓")
 - `--validation-icon-unmatched` - Content for unmatched state (default: "✗")
 - `--validation-icon-size` - Size of icons (default: 1em)
@@ -164,12 +179,12 @@ Available properties:
 Listen for validation changes:
 
 ```javascript
-const validationList = document.querySelector('form-validation-list');
+const validationList = document.querySelector("form-validation-list");
 
-validationList.addEventListener('form-validation-list:validated', (event) => {
+validationList.addEventListener("form-validation-list:validated", (event) => {
   const { isValid, matchedRules, totalRules, field } = event.detail;
   console.log(`Matched ${matchedRules} of ${totalRules} rules`);
-  console.log(`Field is ${isValid ? 'valid' : 'invalid'}`);
+  console.log(`Field is ${isValid ? "valid" : "invalid"}`);
 });
 ```
 
@@ -180,14 +195,14 @@ The event fires after validation completes, providing the current state.
 Manually trigger validation and check state:
 
 ```javascript
-const validationList = document.querySelector('form-validation-list');
+const validationList = document.querySelector("form-validation-list");
 
 // Trigger validation
 const isValid = validationList.validate();
-console.log('Is valid:', isValid);
+console.log("Is valid:", isValid);
 
 // Check current state
-console.log('Current state:', validationList.isValid);
+console.log("Current state:", validationList.isValid);
 ```
 
 ## Internationalization
@@ -198,7 +213,8 @@ Customize the validation message for different languages:
 <!-- Spanish -->
 <form-validation-list
   for="contrasena"
-  validation-message="Por favor, cumple todos los requisitos ({matched} de {total})">
+  validation-message="Por favor, cumple todos los requisitos ({matched} de {total})"
+>
   <ul>
     <li data-pattern="[A-Z]+">Al menos una letra mayúscula</li>
     <li data-pattern="[a-z]+">Al menos una letra minúscula</li>
@@ -209,7 +225,8 @@ Customize the validation message for different languages:
 <!-- French -->
 <form-validation-list
   for="mot-de-passe"
-  validation-message="Veuillez satisfaire à toutes les exigences ({matched} sur {total})">
+  validation-message="Veuillez satisfaire à toutes les exigences ({matched} sur {total})"
+>
   <ul>
     <li data-pattern="[A-Z]+">Au moins une lettre majuscule</li>
     <li data-pattern="[a-z]+">Au moins une lettre minuscule</li>
@@ -242,13 +259,13 @@ The component uses `setCustomValidity()` to participate in native form validatio
 - Compatible with the Constraint Validation API
 
 ```javascript
-const form = document.querySelector('form');
-const field = document.getElementById('username');
+const form = document.querySelector("form");
+const field = document.getElementById("username");
 
-form.addEventListener('submit', (e) => {
+form.addEventListener("submit", (e) => {
   if (!form.checkValidity()) {
     e.preventDefault();
-    console.log('Validation failed:', field.validationMessage);
+    console.log("Validation failed:", field.validationMessage);
   }
 });
 ```
@@ -260,7 +277,7 @@ Here's a complete password validation setup:
 ```html
 <form>
   <label for="password">Password:</label>
-  <input type="password" id="password" name="password" required>
+  <input type="password" id="password" name="password" required />
 
   <form-validation-list for="password">
     <ul>
@@ -268,7 +285,9 @@ Here's a complete password validation setup:
       <li data-pattern="[A-Z]+">At least one uppercase letter</li>
       <li data-pattern="[a-z]+">At least one lowercase letter</li>
       <li data-pattern="[\d]+">At least one number</li>
-      <li data-pattern="[!@#$%^&*]+">At least one special character (!@#$%^&*)</li>
+      <li data-pattern="[!@#$%^&*]+">
+        At least one special character (!@#$%^&*)
+      </li>
     </ul>
   </form-validation-list>
 
@@ -303,7 +322,7 @@ npm install @aarongustafson/form-validation-list
 Import and use:
 
 ```javascript
-import '@aarongustafson/form-validation-list';
+import "@aarongustafson/form-validation-list";
 ```
 
 A modern replacement for my old jQuery validation plugin, with native form validation integration and full accessibility support.

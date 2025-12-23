@@ -2,7 +2,14 @@
 title: "Sortable Tables with Progressive Enhancement"
 date: 2025-12-06 10:00:00 -07:00
 comments: true
-tags: ["web components", "progressive enhancement", "HTML", "accessibility", "tables"]
+tags:
+  [
+    "web components",
+    "progressive enhancement",
+    "HTML",
+    "accessibility",
+    "tables",
+  ]
 description: "The table-sortable web component adds client-side sorting to your tables with full keyboard navigation and screen reader support—without changing your markup."
 twitter_text: "Add accessible table sorting without changing your HTML. Progressive enhancement at its finest."
 ---
@@ -66,6 +73,7 @@ Use `data-sort-value` to specify custom values for sorting:
 ```
 
 This is useful for:
+
 - Sorting formatted numbers (currency, percentages)
 - Sorting dates by ISO format while displaying friendly formats
 - Custom sorting logic (e.g., High > Medium > Low priority)
@@ -77,9 +85,7 @@ The "Price" and "Stock" columns use numeric values for sorting while displaying 
 Use `[data-sort-as]` elements to provide hidden sort values:
 
 ```html
-<td>
-  <span data-sort-as>Smith</span>John Smith
-</td>
+<td><span data-sort-as>Smith</span>John Smith</td>
 ```
 
 Hide the element with CSS:
@@ -137,7 +143,8 @@ Customize screen reader announcements with label attributes:
 <table-sortable
   label-sortable="Cliquer pour trier"
   label-ascending="trié croissant. Cliquer pour trier décroissant"
-  label-descending="trié décroissant. Cliquer pour trier croissant">
+  label-descending="trié décroissant. Cliquer pour trier croissant"
+>
   <table>
     <thead>
       <tr>
@@ -153,6 +160,7 @@ Customize screen reader announcements with label attributes:
 The `label-ascending` and `label-descending` values are prefixed with the column name for context.
 
 Available attributes:
+
 - `label-sortable` - Label for unsorted columns (default: "Click to sort")
 - `label-ascending` - Label when sorted ascending (default: "sorted ascending. Click to sort descending")
 - `label-descending` - Label when sorted descending (default: "sorted descending. Click to sort ascending")
@@ -172,8 +180,8 @@ Customize sort indicators using CSS custom properties:
 
 ```css
 table-sortable {
-  --table-sortable-indicator-asc: '▲';
-  --table-sortable-indicator-desc: '▼';
+  --table-sortable-indicator-asc: "▲";
+  --table-sortable-indicator-desc: "▼";
 }
 
 /* Style active column header */
@@ -192,15 +200,18 @@ col.sorted {
 Listen for sort changes:
 
 ```javascript
-const element = document.querySelector('table-sortable');
+const element = document.querySelector("table-sortable");
 
-element.addEventListener('table-sortable:sort', (event) => {
+element.addEventListener("table-sortable:sort", (event) => {
   const { column, direction, header } = event.detail;
-  console.log(`Sorted column ${column} (${header.textContent}) in ${direction}ending order`);
+  console.log(
+    `Sorted column ${column} (${header.textContent}) in ${direction}ending order`,
+  );
 });
 ```
 
 The event detail includes:
+
 - `column` - Zero-based column index
 - `direction` - "asc" or "desc"
 - `header` - The `<th>` element
@@ -208,6 +219,7 @@ The event detail includes:
 ## Keyboard navigation
 
 Full keyboard support:
+
 - **Tab** - Move focus to column headers
 - **Enter** - Activate sorting
 - **Space** - Activate sorting
@@ -272,7 +284,7 @@ npm install @aarongustafson/table-sortable
 Import and use:
 
 ```javascript
-import '@aarongustafson/table-sortable';
+import "@aarongustafson/table-sortable";
 ```
 
 Based on my [jQuery Easy Sortable Tables](https://github.com/easy-designs/jquery.easy-sortable-tables.js), now as a modern Custom Element with built-in accessibility.

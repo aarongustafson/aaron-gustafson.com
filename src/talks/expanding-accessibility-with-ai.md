@@ -5,8 +5,16 @@ with:
   - name: "Ioana Tanase"
     url: https://www.ioanatanase.com
 category: webinar
-tags: [ "accessibility", "AI/ML", "inclusive design", "the future", "user experience", "voice UX" ]
-events: [ 157 ]
+tags:
+  [
+    "accessibility",
+    "AI/ML",
+    "inclusive design",
+    "the future",
+    "user experience",
+    "voice UX",
+  ]
+events: [157]
 date: 2024-12-11T00:08:30-0800
 hero: "expanding-accessibility-with-ai.png"
 slides:

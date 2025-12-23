@@ -1,6 +1,6 @@
 .test {
-  background-color: green;
+	background-color: green;
 }
 .test::before {
-  content: "It’s Green";
+	content: "It’s Green";
 }

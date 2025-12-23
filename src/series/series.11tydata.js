@@ -1,5 +1,5 @@
 export default {
-	layout: "layouts/series.html",
+	layout: "layouts/series.njk",
 	permalink: "/notebook/series/{{ page.fileSlug }}/",
 	eleventyComputed: {
 		title: (data) => {

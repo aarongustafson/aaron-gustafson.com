@@ -17,8 +17,9 @@ You set up `form-show-if` like this:
 
 ```html
 <form-show-if conditions="contact_method=phone">
-  <label for="phone">Phone Number
-    <input type="tel" id="phone" name="phone">
+  <label for="phone"
+    >Phone Number
+    <input type="tel" id="phone" name="phone" />
   </label>
 </form-show-if>
 ```
@@ -33,8 +34,9 @@ The `conditions` attribute can be populated with as many dependencies as you nee
 
 ```html
 <form-show-if conditions="contact_method=phone||contact_method=text_message">
-  <label for="phone-number">Phone Number
-    <input type="tel" id="phone" name="phone">
+  <label for="phone-number"
+    >Phone Number
+    <input type="tel" id="phone" name="phone" />
   </label>
 </form-show-if>
 ```
@@ -51,12 +53,14 @@ If the field you reference doesn’t exist, no errors will be thrown—it will j
 By default, the component uses the `hidden` attribute to hide the wrapped content when it’s not needed. But you can customize this behavior using CSS classes instead:
 
 ```html
-<form-show-if 
+<form-show-if
   conditions="shipping-method=express"
   disabled-class="fade-out"
-  enabled-class="fade-in">
-  <label for="delivery-date">Express Delivery Date
-    <input type="date" id="delivery-date" name="delivery-date">
+  enabled-class="fade-in"
+>
+  <label for="delivery-date"
+    >Express Delivery Date
+    <input type="date" id="delivery-date" name="delivery-date" />
   </label>
 </form-show-if>
 ```
@@ -86,13 +90,14 @@ Here are some practical use cases where this component shines:
 <fieldset>
   <legend>How did you hear about us?</legend>
 
-  <label><input type="radio" name="source" value="google"> Google</label>
-  <label><input type="radio" name="source" value="friend"> Friend</label>
-  <label><input type="radio" name="source" value="other"> Other</label>
-  
+  <label><input type="radio" name="source" value="google" /> Google</label>
+  <label><input type="radio" name="source" value="friend" /> Friend</label>
+  <label><input type="radio" name="source" value="other" /> Other</label>
+
   <form-show-if conditions="source=other">
-    <label for="source-other">Please specify
-      <input type="text" id="source-other" name="source-other">
+    <label for="source-other"
+      >Please specify
+      <input type="text" id="source-other" name="source-other" />
     </label>
   </form-show-if>
 </fieldset>
@@ -102,7 +107,8 @@ Here are some practical use cases where this component shines:
 
 ```html
 <form-show-if conditions="email=test@example.com">
-  <label for="debug-info">Debug Information
+  <label for="debug-info"
+    >Debug Information
     <textarea id="debug-info" name="debug-info"></textarea>
   </label>
   <small>This field only shows for test accounts</small>

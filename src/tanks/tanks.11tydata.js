@@ -10,7 +10,7 @@ function tagsToString(tags) {
 }
 
 export default {
-	layout: "layouts/tank.html",
+	layout: "layouts/tank.njk",
 	permalink: "/tanks/{{ page.fileSlug }}/",
 	eleventyComputed: {
 		image: (data) => {

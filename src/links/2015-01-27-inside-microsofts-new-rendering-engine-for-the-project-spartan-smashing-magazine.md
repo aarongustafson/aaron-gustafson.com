@@ -17,8 +17,8 @@ On a faster dev cycle for the new browser:
 
 > [W]e’ll treat Windows 10 as a service—keeping users up to date and delivering features when they are ready (“auto-update”), not waiting for the next major release. This means the new rendering engine will always be truly evergreen.
 
-On opening up the process: 
+On opening up the process:
 
 > Another welcomed change that we’ve been rolling out over the past year is a promise for increased openness about our web platform plans and roadmap. Over the last year, you’ve hopefully experienced some of this through our open standards roadmap15 (one of my personal side projects), our Reddit AMA16, regular dialog through @IEDevChat17, and sharing preview builds18 very early in our development process. You’ll see more of this over the next year.
 
-Promising stuff all around. I am still wondering if we’ll eventually see the new browser appear on other operating systems (even if it’s  just the browser chrome and not the rendering engine—like Chrome on iOS). Time will tell.
+Promising stuff all around. I am still wondering if we’ll eventually see the new browser appear on other operating systems (even if it’s just the browser chrome and not the rendering engine—like Chrome on iOS). Time will tell.

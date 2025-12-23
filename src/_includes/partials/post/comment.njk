@@ -21,7 +21,7 @@
 			<h2>Replies</h2>
 			<ol class="webmentions__list">
 				{% for reply in comment.replies %}
-					{% include "partials/post/comment.html", comment: reply %}
+					{% include "partials/post/comment.njk", comment: reply %}
 				{% endfor %}
 			</ol>
 		{% endif %}

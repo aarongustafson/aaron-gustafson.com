@@ -2,11 +2,11 @@
 title: "An Onslaught of Low-cost Smartphones"
 date: 2015-01-15 11:58:11 -05:00
 comments: true
-tags: [mobile,"web design",devices]
+tags: [mobile, "web design", devices]
 description: "It seems every week we are seeing more and more low-cost devices being launched in an effort to connect the unconnected. Here’s why that maters to you."
 ---
 
-It seems every week we are seeing more and more low-cost devices being launched in an effort to connect the unconnected. For instance, this past week  saw the announcement of [two new entries in the Microsoft Lumia line, the 435 and the 532](http://www.theverge.com/2015/1/14/7544107/microsoft-lumia-435-532-launch-specs-price-release-date), and the announcement of [Samsung’s first Tizen phone, the Z1](http://arstechnica.com/gadgets/2015/01/samsung-finally-puts-tizen-on-a-smartphone-launches-the-z1-in-india/).
+It seems every week we are seeing more and more low-cost devices being launched in an effort to connect the unconnected. For instance, this past week saw the announcement of [two new entries in the Microsoft Lumia line, the 435 and the 532](http://www.theverge.com/2015/1/14/7544107/microsoft-lumia-435-532-launch-specs-price-release-date), and the announcement of [Samsung’s first Tizen phone, the Z1](http://arstechnica.com/gadgets/2015/01/samsung-finally-puts-tizen-on-a-smartphone-launches-the-z1-in-india/).
 
 <!-- more -->
 

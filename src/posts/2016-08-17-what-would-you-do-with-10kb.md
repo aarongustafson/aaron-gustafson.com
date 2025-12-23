@@ -2,7 +2,14 @@
 title: "What Would You Do With 10kB?"
 date: 2016-08-17 14:48:27 -04:00
 comments: true
-tags: [ "web design", accessibility, Microsoft, performance, "progressive enhancement" ]
+tags:
+  [
+    "web design",
+    accessibility,
+    Microsoft,
+    performance,
+    "progressive enhancement",
+  ]
 description: "I’m thrilled to announce that the 10k Apart contest is back and brings with it a handful of new challenges."
 canonical: "https://blogs.windows.com/msedgedev/2016/08/15/10k-apart/"
 ---
@@ -27,7 +34,7 @@ As with previous editions, your entry should use web standards and work in all m
 
 All of this may sound like a tall order, but it’s entirely possible. In fact, the site we built for the contest also abides by these rules. My colleagues and I will touch on some of the techniques we used (and concessions we made) in building the site in future posts.
 
-If you’ve read this far, you might be wondering *What’s in it for me?* Well, bragging rights, of course, but we’ve got some awesome prizes too! We’re giving away $10,000 to the top three entries, plus [tickets to An Event Apart](http://aneventapart.com/events), complete collections of [A Book Apart titles](https://abookapart.com/collections/standards-collection), and copies of [my book](http://adaptivewebdesign.info/2nd-edition/) too. [Complete details of the prizes](https://a-k-apart.com/#prizes) are over on [the contest site](https://a-k-apart.com/).
+If you’ve read this far, you might be wondering _What’s in it for me?_ Well, bragging rights, of course, but we’ve got some awesome prizes too! We’re giving away $10,000 to the top three entries, plus [tickets to An Event Apart](http://aneventapart.com/events), complete collections of [A Book Apart titles](https://abookapart.com/collections/standards-collection), and copies of [my book](http://adaptivewebdesign.info/2nd-edition/) too. [Complete details of the prizes](https://a-k-apart.com/#prizes) are over on [the contest site](https://a-k-apart.com/).
 
 We’ve lined up an amazing group to judge the entires this year too: [Rachel Andrew](https://twitter.com/rachelandrew), [Lara Hogan](https://twitter.com/lara_hogan), [Mat Marquis](https://twitter.com/wilto), [Heydon Pickering](https://twitter.com/Heydonworks), [Jen Simmons](https://twitter.com/jensimmons), and [Sara Soueidan](https://twitter.com/SaraSoueidan) will all be putting your entry through its paces and peering under the hood at your code. There’s also a People’s Choice award which will be based on votes you cast. Voting will open October 1st and run through October 14th.
 

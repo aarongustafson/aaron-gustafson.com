@@ -2,7 +2,15 @@
 title: "Planning Adaptive Interfaces: The Workshop"
 date: 2016-02-21 18:56:05 -05:00
 comments: true
-tags: [conferences, "progressive enhancement", "responsive web design", "pattern libraries", empathy, "Adaptive Web Design"]
+tags:
+  [
+    conferences,
+    "progressive enhancement",
+    "responsive web design",
+    "pattern libraries",
+    empathy,
+    "Adaptive Web Design",
+  ]
 description: "For the last few years I’ve been running a workshop alternately titled “Planning Adaptive Interfaces” or “Beyond Responsive”, depending on the conference. It’s been one of my favorite workshops to run for a number of reasons, but before I get into that, let me explain what it is and how it works."
 crossposted:
   Medium: https://medium.com/@AaronGustafson/a16245f78d65

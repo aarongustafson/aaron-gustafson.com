@@ -2,8 +2,15 @@
 title: "Designing for Everyone: Building Great Web Experiences for Any Device"
 description: "In this session, I help you think about user experience from its foundation, so you understand what it means to build adaptive web experiences – whether in an app, in a browser, or beyond."
 category: talk
-tags: [ "progressive web apps", "mobile", "performance", "progressive enhancement", "responsive web design" ]
-events: [ 119 ]
+tags:
+  [
+    "progressive web apps",
+    "mobile",
+    "performance",
+    "progressive enhancement",
+    "responsive web design",
+  ]
+events: [119]
 date: 2018-05-07T09:00:00-0400
 hero: "designing-for-everyone.png"
 slides:

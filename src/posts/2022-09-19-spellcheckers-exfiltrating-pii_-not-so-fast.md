@@ -33,9 +33,7 @@ In both Chrome and Edge, the information sent to their services is the text valu
 ## Password fields are safe
 
 ```html
-<input type="password"
-       id="password" 
-       name="password">
+<input type="password" id="password" name="password" />
 ```
 
 Browsers do a lot to protect the contents of password fields already, so I wasn’t surprised to see that the contents of password fields are **not** passed to a spellcheck service.
@@ -46,14 +44,12 @@ If you are not using a true password field, however, the contents of that field 
 
 As you’d hope, neither read-only fields nor disabled fields are exposed ot the service. This even holds true when you change the values of these fields programmatically or via DevTools.
 
-I should note, however, that `readonly` fields *are* send to the server when the form is submitted and their contents are editable via JavaScript and DevTools, so you should always assume `readonly` fields are informational for the user only and never trust their contents on the server side. Fields that are marked `disabled`, in contrast, are never sent to the server.
+I should note, however, that `readonly` fields _are_ send to the server when the form is submitted and their contents are editable via JavaScript and DevTools, so you should always assume `readonly` fields are informational for the user only and never trust their contents on the server side. Fields that are marked `disabled`, in contrast, are never sent to the server.
 
 ## You can protect interactive fields with the `spellcheck` attribute
 
 ```html
-<input id="no-spellcheck"
-       name="no-spellcheck" 
-       spellcheck="false">
+<input id="no-spellcheck" name="no-spellcheck" spellcheck="false" />
 ```
 
 The `spellcheck` attribute can be applied to any element and setting it to "false" instructs browsers to turn off spellchecking services for its contents. The post from Otto JS showed this being used globally on the `body` element, but that is overkill. It would be better to use the attribute on specific fields you want to protect, as shown above.
@@ -65,10 +61,10 @@ Edge has a neat feature in its password field implementation where it enables a 
 ```js
 function togglePassword(e) {
   var $btn = e.target,
-      $field = $btn.parentNode.querySelector("input"),
-      state = $field.type;
-  if ( $btn && $field ) {
-    if ( state == "password" ) {
+    $field = $btn.parentNode.querySelector("input"),
+    state = $field.type;
+  if ($btn && $field) {
+    if (state == "password") {
       $field.type = "text";
       $btn.innerText = "Hide";
     } else {
@@ -86,10 +82,12 @@ The problem with this approach, when it comes to the spellchecker, is that the t
 Protecting the field’s contents are fairly easy, however: turn off the spellchecker for that field, even in its "password" state.
 
 ```html
-<input type="password"
-       id="password-show-nospellcheck" 
-       name="password-show-nospellcheck" 
-       spellcheck="false">
+<input
+  type="password"
+  id="password-show-nospellcheck"
+  name="password-show-nospellcheck"
+  spellcheck="false"
+/>
 ```
 
 With `spellcheck="false"` in place, you can turn the field into a text field safely, without the contents being exposed to the spellcheck service.

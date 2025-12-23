@@ -8,18 +8,18 @@ ref_source: Axess Lab
 
 Lots of real-world feedback about accessibility issues here. The laundry list of pain points is not insurmountable though:
 
-* Missing captions
-* Motion & animations
-* Visual clutter
-* Walls of text
-* Small text
-* Sites that don’t play well with magnifiers
-* Low contrast
-* Text in images
-* Bright colors
-* Reliance on color to convey information
-* Mouse-centric interactions
-* Tiny touch targets
-* CAPTCHAs
+- Missing captions
+- Motion & animations
+- Visual clutter
+- Walls of text
+- Small text
+- Sites that don’t play well with magnifiers
+- Low contrast
+- Text in images
+- Bright colors
+- Reliance on color to convey information
+- Mouse-centric interactions
+- Tiny touch targets
+- CAPTCHAs
 
 You can address most of these easily.

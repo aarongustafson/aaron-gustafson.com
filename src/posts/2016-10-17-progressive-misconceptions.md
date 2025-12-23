@@ -4,7 +4,7 @@ twitter_text: "My colleague Nolan recently wrote of his struggle with progressiv
 date: 2016-10-17 15:33:55 -04:00
 last_modified_at: 2016-10-18 11:11:00 -04:00
 comments: true
-tags: ["progressive enhancement","web design",accessibility,JavaScript]
+tags: ["progressive enhancement", "web design", accessibility, JavaScript]
 description: "My colleague Nolan recently wrote of his struggle with progressive enhancement. It’s a rift we need to repair."
 crossposted:
   Medium: https://medium.com/@AaronGustafson/af98aebe33a4
@@ -18,7 +18,7 @@ But first let’s take a a trip back in time to 2003. In March of that year, [St
 
 ## What’s graceful degradation?
 
-*Graceful degradation* assumes that an experience is going to be worse on older, less capable browsers and devices. To address potential problems, it recommends that developers take steps to avoid throwing errors—JavaScript or otherwise—for their users. Under this philosophy, a developer can take a range of approaches ranging from making everything work perfectly in down-level browsers to only addressing egregious errors or even chosing to block certain browsers from accessing the content if they are known to have problems. We saw this latter approach often with Flash-only sites, but it wasn’t limited to them. I used <a href="#2016-10-17-1">this "roadblock" example from Kodak.com</a> in [my book](http://adaptivewebdesign.info/):
+_Graceful degradation_ assumes that an experience is going to be worse on older, less capable browsers and devices. To address potential problems, it recommends that developers take steps to avoid throwing errors—JavaScript or otherwise—for their users. Under this philosophy, a developer can take a range of approaches ranging from making everything work perfectly in down-level browsers to only addressing egregious errors or even chosing to block certain browsers from accessing the content if they are known to have problems. We saw this latter approach often with Flash-only sites, but it wasn’t limited to them. I used <a href="#2016-10-17-1">this "roadblock" example from Kodak.com</a> in [my book](http://adaptivewebdesign.info/):
 
 <figure id="fig-2016-10-17-1" class="media-container">
 
@@ -37,7 +37,7 @@ What’s particularly interesting about this approach is that it is still techni
 To give a simple example, consider a form field for entering your email address. If we were to mark it up like this
 
 ```html
-<input type="email" name="email" id="email">
+<input type="email" name="email" id="email" />
 ```
 
 I automatically create layers of experience with no extra effort:
@@ -76,7 +76,7 @@ Even though JavaScript and accessibility are no longer at odds (and really haven
 
 I also mentioned that programming culture plays a part in the antagonistic relationship between the progressive enhancement camp and the JavaScript community. If you’ve been a programmer for any amount of time, you’ve probably borne witness to the constant finger-pointing, belittling, and arrogance when it come to the languages we choose to program in or the tools we use to do it.
 
-As a programmer, you receive a near constant barrage of commentary on your choices… often unsolicited. *You’re using PHP? That’s so 1996! You’re still using TextMate?! You still use jQuery? How quaint!* I’m not exactly sure where this all began, but it’s unhealthy and causes a lot of programmers to get immediately defensive when anyone challenges their language of choice or their process. And this hostile/defensive environment makes it very difficult to have a constructive conversation about best practices.
+As a programmer, you receive a near constant barrage of commentary on your choices… often unsolicited. _You’re using PHP? That’s so 1996! You’re still using TextMate?! You still use jQuery? How quaint!_ I’m not exactly sure where this all began, but it’s unhealthy and causes a lot of programmers to get immediately defensive when anyone challenges their language of choice or their process. And this hostile/defensive environment makes it very difficult to have a constructive conversation about best practices.
 
 Progressive enhancement should not be viewed as a challenge to JavaScript any more than concepts like [namespacing](https://www.safaribooksonline.com/library/view/learning-javascript-design/9781449334840/ch13s15.html), [test driven development](https://en.wikipedia.org/wiki/Test-driven_development), or [file concatenation & minification](https://www.yottaa.com/how-does-reducing-javascript-requests-minifying-javascript/) are; it’s just another way to improve your code. That said, progressive enhancement does introduce a wrinkle many for hardcore JavaScript programmers seem unwilling to concede: JavaScript is fragile. At least on the client side, JavaScript development requires far more diligence when it comes to error handling and fallbacks than traditional programming because, unlike with traditional software development, [we don’t control the execution environment](https://www.aaron-gustafson.com/notebook/a-fundamental-disconnect/).
 
@@ -101,7 +101,7 @@ When you love a language like JavaScript (as I do), it can be difficult to recog
 
 All of this is to say I don’t think JavaScript and progressive enhancement are diametrically opposed and I don’t think folks who love the JavaScript language or tout the progressive enhancement philosophy should be either. Together they have the potential to making the Web the best it can possibly be.
 
-Progressive enhancement’s focus on providing a baseline experience that makes no assumptions about browser features will provide a robust foundation for any project. It also guides us to be smarter about *how* we apply technologies like HTML, CSS, JavaScript and ARIA by asking us to consider what happens when those dependencies aren’t met.
+Progressive enhancement’s focus on providing a baseline experience that makes no assumptions about browser features will provide a robust foundation for any project. It also guides us to be smarter about _how_ we apply technologies like HTML, CSS, JavaScript and ARIA by asking us to consider what happens when those dependencies aren’t met.
 
 JavaScript absolutely makes the user experience better for anyone who can benefit from it. It can make interfaces more accessible. It can help mitigate networking issues. It can create smoother, more seamless experiences for our users. And it can reduce the friction inherent in accomplishing most tasks on the Web. JavaScript is an indispensable part of the modern Web.
 

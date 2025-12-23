@@ -13,117 +13,146 @@ javascripts:
   body: ["speaking-engagements"]
 ---
 
-{% set cloudinary = "https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,e_grayscale,w_400/" %}
-{% set contactReason = "I%E2%80%99d+like+you+to+speak+at+an+event." %}
+{% set cloudinary =
+"https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,e_grayscale,w_400/"
+%} {% set contactReason = "I%E2%80%99d+like+you+to+speak+at+an+event." %}
 
 <h1 class="page__title">A Complete List of My Conferences &amp; Workshops</h1>
 
-<p>It’s hard to believe it, but I’ve delivered <a href="https://presentations.aaron-gustafson.com">over
-{{ speaking_engagements | length }} talks and workshops</a> over the last {{ helpers.currentYear() - 2003 }} 
-years! In addition to the public events I can tell you about, I’ve also given private talks and workshops 
-for <a rel="nofollow noindex" href="/clients/">organizations around the world</a>.</p>
+<p>
+	It’s hard to believe it, but I’ve delivered
+	<a href="https://presentations.aaron-gustafson.com"
+		>over {{ speaking_engagements | length }} talks and workshops</a
+	>
+	over the last {{ helpers.currentYear() - 2003 }} years! In addition to the
+	public events I can tell you about, I’ve also given private talks and
+	workshops for
+	<a rel="nofollow noindex" href="/clients/">organizations around the world</a>.
+</p>
 
-<p>If you’d like me to come present at your company or event, 
-	<a href="/contact/?reason={{ contactReason }}">please drop me a line</a>.</p>
+<p>
+	If you’d like me to come present at your company or event,
+	<a href="/contact/?reason={{ contactReason }}">please drop me a line</a>.
+</p>
 
-<p><em>One important note: I am only interested in speaking at conferences showcasing a 
-<strong>diverse</strong> line-up of speakers. I am also happy to be part of a panel, but it can’t be 
-all-male or all-white. If you’re looking for recommendations of awesome, diverse speakers, 
-<a href="/contact/?reason=I+need+speaker+recommendations.">reach out and I will happily provide 
-you with a list of names</a>.</em><p>
+<p>
+	<em
+		>One important note: I am only interested in speaking at conferences
+		showcasing a <strong>diverse</strong> line-up of speakers. I am also happy
+		to be part of a panel, but it can’t be all-male or all-white. If you’re
+		looking for recommendations of awesome, diverse speakers,
+		<a href="/contact/?reason=I+need+speaker+recommendations."
+			>reach out and I will happily provide you with a list of names</a
+		>.</em
+	>
+</p>
 
-{% set future_events = speaking_engagements | future %}
-{% set past_events = speaking_engagements | past %}
+<p>
+	{% set future_events = speaking_engagements | future %} {% set past_events =
+	speaking_engagements | past %}
+</p>
 
 <section class="subsection">
-
 	<h2 id="future-events" class="subsection__header">In the Future</h2>
 
-	{% if future_events.length > 0 %}
-		{% for event in future_events %}
-			{% if loop.first %}
-				<ol class="listing listing--events">
-			{% endif %}
-
-			<li class="listing__item listing__item--{{ loop.index }} event event--future"
-				data-date="{{ event.date | ymd_date }}">
-				{% if event.url %}
-					<a href="{{ event.url }}">
-				{% endif %}
-				
-				<h3 class="listing__item__title event__title">{{ event.title | safe }}</h3>
-				<p class="listing__item__meta">
-					<b class="event__date">{{ event.date | readable_date  }}</b>
-					<b class="event__location">{{ event.location }}</b>
-				</p>
-
-				{% set city = cities | pluck("name", event.location) %}
-				<p class="event__location-picture" aria-hidden="true" style="background-image:url({{ cloudinary }}{{ city.photo }})" title="Photo by {{ city.credit_name }}, {{ city.credit_url }}"></p>
-				
-				{% if event.url %}
-					</a>
-				{% endif %}
-			</li>
-
-			{% if loop.last %}
-				</ol>
-			{% endif %}
-		{% endfor %}
-	{% else %}
-		<p>I am currently finalizing my schedule for the next few months. Please check back for dates or
-			<a href="/contact/?reason={{ contactReason }}">contact me</a> if you’d 
-			like me to speak at your organization or event. You can see
-			 <a href="https://presentations.aaron-gustafson.com/">some of my recent talks</a> to get a sense 
-			 of what I’ve been speaking about lately.</p>
-	{% endif %}
-
-</section>
-
-<section class="subsection">
-
-	<h2 id="past-events" class="subsection__header">In the Past</h2>
-
+	{% if future_events.length > 0 %} {% for event in future_events %} {% if
+	loop.first %}
 	<ol class="listing listing--events">
-		{% for event in past_events %}
-			<li class="listing__item listing__item--{{ loop.index }} event event--past"
-				data-date="{{ event.date | readable_date }}">
-				
-				{% if event.url %}
-					<a href="{{ event.url }}">
+		{% endif %}
+
+		<li
+			class="listing__item listing__item--{{ loop.index }} event event--future"
+			data-date="{{ event.date | ymd_date }}"
+		>
+			{% if event.url %}
+			<a href="{{ event.url }}">
 				{% endif %}
 
-				<h3 class="listing__item__title event__title">{{ event.title | safe }}</h3>
+				<h3 class="listing__item__title event__title">
+					{{ event.title | safe }}
+				</h3>
 				<p class="listing__item__meta">
 					<b class="event__date">{{ event.date | readable_date }}</b>
 					<b class="event__location">{{ event.location }}</b>
 				</p>
 
 				{% set city = cities | pluck("name", event.location) %}
-				<p class="event__location-picture" style="background-image:url({{ cloudinary }}{{ city.photo }})" title="Photo by {{ city.credit_name }}, {{ city.credit_url }}"></p>
-			
+				<p
+					class="event__location-picture"
+					aria-hidden="true"
+					style="background-image:url({{ cloudinary }}{{ city.photo }})"
+					title="Photo by {{ city.credit_name }}, {{ city.credit_url }}"
+				></p>
+
 				{% if event.url %}
-					</a>
+			</a>
+			{% endif %}
+		</li>
+
+		{% if loop.last %}
+	</ol>
+	{% endif %} {% endfor %} {% else %}
+	<p>
+		I am currently finalizing my schedule for the next few months. Please check
+		back for dates or
+		<a href="/contact/?reason={{ contactReason }}">contact me</a> if you’d like
+		me to speak at your organization or event. You can see
+		<a href="https://presentations.aaron-gustafson.com/"
+			>some of my recent talks</a
+		>
+		to get a sense of what I’ve been speaking about lately.
+	</p>
+	{% endif %}
+</section>
+
+<section class="subsection">
+	<h2 id="past-events" class="subsection__header">In the Past</h2>
+
+	<ol class="listing listing--events">
+		{% for event in past_events %}
+		<li
+			class="listing__item listing__item--{{ loop.index }} event event--past"
+			data-date="{{ event.date | readable_date }}"
+		>
+			{% if event.url %}
+			<a href="{{ event.url }}">
 				{% endif %}
 
-			</li>
+				<h3 class="listing__item__title event__title">
+					{{ event.title | safe }}
+				</h3>
+				<p class="listing__item__meta">
+					<b class="event__date">{{ event.date | readable_date }}</b>
+					<b class="event__location">{{ event.location }}</b>
+				</p>
+
+				{% set city = cities | pluck("name", event.location) %}
+				<p
+					class="event__location-picture"
+					style="background-image:url({{ cloudinary }}{{ city.photo }})"
+					title="Photo by {{ city.credit_name }}, {{ city.credit_url }}"
+				></p>
+
+				{% if event.url %}
+			</a>
+			{% endif %}
+		</li>
 		{% endfor %}
 	</ol>
-
 </section>
 
 <section class="subsection" id="talks">
-
 	<h2 class="subsection__header">Talks I’ve Given</h2>
-	<p>Here are some of the talks I’ve given. If you’d like me to speak at your organization or event,
-		<a href="/contact/?reason={{ contactReason }}">please get in touch</a>.</p>
+	<p>
+		Here are some of the talks I’ve given. If you’d like me to speak at your
+		organization or event,
+		<a href="/contact/?reason={{ contactReason }}">please get in touch</a>.
+	</p>
 
-	{% set talks = collections.talks %}
-	{% set teaser_heading_level = "h3" %}
-	{% set show_summary = true %}
+	{% set talks = collections.talks %} {% set teaser_heading_level = "h3" %} {%
+	set show_summary = true %}
 	<ol class="listing listing--talks">
-		{% for post in talks %}
-			{% include "partials/post/teaser.html" %}
-		{% endfor %}
+		{% for post in talks %} {% include "partials/post/teaser.njk" %} {% endfor
+		%}
 	</ol>
-
 </section>

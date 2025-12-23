@@ -1,0 +1,861 @@
+{
+	"auditReportVersion": 2,
+	"vulnerabilities": {
+		"@octokit/core": {
+			"name": "@octokit/core",
+			"severity": "moderate",
+			"isDirect": false,
+			"via": ["@octokit/graphql", "@octokit/request", "@octokit/request-error"],
+			"effects": ["@octokit/rest"],
+			"range": "<=5.0.0-beta.5",
+			"nodes": [
+				"node_modules/netlify-plugin-github-dispatch/node_modules/@octokit/core"
+			],
+			"fixAvailable": false
+		},
+		"@octokit/graphql": {
+			"name": "@octokit/graphql",
+			"severity": "moderate",
+			"isDirect": false,
+			"via": ["@octokit/request"],
+			"effects": [],
+			"range": "<=2.1.3 || 3.0.0 - 6.0.1",
+			"nodes": [
+				"node_modules/netlify-plugin-github-dispatch/node_modules/@octokit/graphql"
+			],
+			"fixAvailable": true
+		},
+		"@octokit/plugin-paginate-rest": {
+			"name": "@octokit/plugin-paginate-rest",
+			"severity": "moderate",
+			"isDirect": false,
+			"via": [
+				{
+					"source": 1102898,
+					"name": "@octokit/plugin-paginate-rest",
+					"dependency": "@octokit/plugin-paginate-rest",
+					"title": "@octokit/plugin-paginate-rest has a Regular Expression in iterator Leads to ReDoS Vulnerability Due to Catastrophic Backtracking",
+					"url": "https://github.com/advisories/GHSA-h5c3-5r3r-rr8q",
+					"severity": "moderate",
+					"cwe": ["CWE-1333"],
+					"cvss": {
+						"score": 5.3,
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+					},
+					"range": ">=1.0.0 <9.2.2"
+				}
+			],
+			"effects": ["@octokit/rest"],
+			"range": "<=9.2.1",
+			"nodes": [
+				"node_modules/netlify-plugin-github-dispatch/node_modules/@octokit/plugin-paginate-rest"
+			],
+			"fixAvailable": false
+		},
+		"@octokit/request": {
+			"name": "@octokit/request",
+			"severity": "moderate",
+			"isDirect": false,
+			"via": [
+				"@octokit/request-error",
+				{
+					"source": 1102896,
+					"name": "@octokit/request",
+					"dependency": "@octokit/request",
+					"title": "@octokit/request has a Regular Expression in fetchWrapper that Leads to ReDoS Vulnerability Due to Catastrophic Backtracking",
+					"url": "https://github.com/advisories/GHSA-rmvr-2pp2-xj38",
+					"severity": "moderate",
+					"cwe": ["CWE-1333"],
+					"cvss": {
+						"score": 5.3,
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+					},
+					"range": ">=1.0.0 <8.4.1"
+				}
+			],
+			"effects": ["@octokit/core", "@octokit/graphql"],
+			"range": "<=8.4.0",
+			"nodes": [
+				"node_modules/netlify-plugin-github-dispatch/node_modules/@octokit/request"
+			],
+			"fixAvailable": false
+		},
+		"@octokit/request-error": {
+			"name": "@octokit/request-error",
+			"severity": "moderate",
+			"isDirect": false,
+			"via": [
+				{
+					"source": 1102256,
+					"name": "@octokit/request-error",
+					"dependency": "@octokit/request-error",
+					"title": "@octokit/request-error has a Regular Expression in index that Leads to ReDoS Vulnerability Due to Catastrophic Backtracking",
+					"url": "https://github.com/advisories/GHSA-xx4v-prfh-6cgc",
+					"severity": "moderate",
+					"cwe": ["CWE-1333"],
+					"cvss": {
+						"score": 5.3,
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+					},
+					"range": ">=1.0.0 <5.1.1"
+				}
+			],
+			"effects": ["@octokit/core", "@octokit/request"],
+			"range": "<=5.1.0",
+			"nodes": [
+				"node_modules/netlify-plugin-github-dispatch/node_modules/@octokit/request-error"
+			],
+			"fixAvailable": false
+		},
+		"@octokit/rest": {
+			"name": "@octokit/rest",
+			"severity": "moderate",
+			"isDirect": false,
+			"via": ["@octokit/core", "@octokit/plugin-paginate-rest"],
+			"effects": ["netlify-plugin-github-dispatch"],
+			"range": "16.39.0 - 20.0.1",
+			"nodes": [
+				"node_modules/netlify-plugin-github-dispatch/node_modules/@octokit/rest"
+			],
+			"fixAvailable": false
+		},
+		"@remy/webmention": {
+			"name": "@remy/webmention",
+			"severity": "critical",
+			"isDirect": true,
+			"via": ["cheerio", "microformat-node", "optimist"],
+			"effects": ["netlify-plugin-webmentions"],
+			"range": "*",
+			"nodes": ["node_modules/@remy/webmention"],
+			"fixAvailable": false
+		},
+		"@sherby/eleventy-plugin-files-minifier": {
+			"name": "@sherby/eleventy-plugin-files-minifier",
+			"severity": "high",
+			"isDirect": true,
+			"via": ["html-minifier"],
+			"effects": [],
+			"range": "*",
+			"nodes": ["node_modules/@sherby/eleventy-plugin-files-minifier"],
+			"fixAvailable": false
+		},
+		"ansi2html": {
+			"name": "ansi2html",
+			"severity": "high",
+			"isDirect": true,
+			"via": [
+				{
+					"source": 1090827,
+					"name": "ansi2html",
+					"dependency": "ansi2html",
+					"title": "Regular Expression Denial of Service in ansi2html",
+					"url": "https://github.com/advisories/GHSA-c2v2-7rcg-2ch7",
+					"severity": "high",
+					"cwe": ["CWE-400"],
+					"cvss": {
+						"score": 0,
+						"vectorString": null
+					},
+					"range": ">=0.0.0"
+				}
+			],
+			"effects": [],
+			"range": "*",
+			"nodes": ["node_modules/ansi2html"],
+			"fixAvailable": false
+		},
+		"anymatch": {
+			"name": "anymatch",
+			"severity": "moderate",
+			"isDirect": false,
+			"via": ["micromatch"],
+			"effects": ["chokidar", "glob-watcher"],
+			"range": "1.2.0 - 2.0.0",
+			"nodes": [
+				"node_modules/glob-watcher/node_modules/anymatch",
+				"node_modules/watchpack-chokidar2/node_modules/anymatch"
+			],
+			"fixAvailable": {
+				"name": "gulp",
+				"version": "5.0.1",
+				"isSemVerMajor": true
+			}
+		},
+		"bhttp": {
+			"name": "bhttp",
+			"severity": "moderate",
+			"isDirect": false,
+			"via": ["tough-cookie"],
+			"effects": ["broken-link-checker"],
+			"range": "*",
+			"nodes": ["node_modules/bhttp"],
+			"fixAvailable": {
+				"name": "broken-link-checker",
+				"version": "0.6.7",
+				"isSemVerMajor": true
+			}
+		},
+		"braces": {
+			"name": "braces",
+			"severity": "high",
+			"isDirect": false,
+			"via": [
+				{
+					"source": 1098094,
+					"name": "braces",
+					"dependency": "braces",
+					"title": "Uncontrolled resource consumption in braces",
+					"url": "https://github.com/advisories/GHSA-grv7-fg5c-xmjg",
+					"severity": "high",
+					"cwe": ["CWE-400", "CWE-1050"],
+					"cvss": {
+						"score": 7.5,
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+					},
+					"range": "<3.0.3"
+				}
+			],
+			"effects": ["chokidar", "micromatch"],
+			"range": "<3.0.3",
+			"nodes": [
+				"node_modules/findup-sync/node_modules/braces",
+				"node_modules/glob-watcher/node_modules/braces",
+				"node_modules/matchdep/node_modules/braces",
+				"node_modules/watchpack-chokidar2/node_modules/braces",
+				"node_modules/webpack/node_modules/braces"
+			],
+			"fixAvailable": {
+				"name": "gulp-cli",
+				"version": "3.1.0",
+				"isSemVerMajor": true
+			}
+		},
+		"broken-link-checker": {
+			"name": "broken-link-checker",
+			"severity": "high",
+			"isDirect": true,
+			"via": ["bhttp", "robot-directives", "robots-txt-guard"],
+			"effects": [],
+			"range": ">=0.5.0",
+			"nodes": ["node_modules/broken-link-checker"],
+			"fixAvailable": {
+				"name": "broken-link-checker",
+				"version": "0.6.7",
+				"isSemVerMajor": true
+			}
+		},
+		"cheerio": {
+			"name": "cheerio",
+			"severity": "high",
+			"isDirect": false,
+			"via": ["css-select", "lodash.pick"],
+			"effects": ["@remy/webmention", "microformat-node"],
+			"range": "0.19.0 - 1.0.0-rc.12",
+			"nodes": [
+				"node_modules/@remy/webmention/node_modules/cheerio",
+				"node_modules/microformat-node/node_modules/cheerio"
+			],
+			"fixAvailable": false
+		},
+		"chokidar": {
+			"name": "chokidar",
+			"severity": "high",
+			"isDirect": false,
+			"via": ["anymatch", "braces", "readdirp"],
+			"effects": ["glob-watcher", "watchpack-chokidar2"],
+			"range": "1.3.0 - 2.1.8",
+			"nodes": [
+				"node_modules/glob-watcher/node_modules/chokidar",
+				"node_modules/watchpack-chokidar2/node_modules/chokidar"
+			],
+			"fixAvailable": {
+				"name": "gulp",
+				"version": "5.0.1",
+				"isSemVerMajor": true
+			}
+		},
+		"css-select": {
+			"name": "css-select",
+			"severity": "high",
+			"isDirect": false,
+			"via": ["nth-check"],
+			"effects": ["cheerio", "svgo"],
+			"range": "<=3.1.0",
+			"nodes": [
+				"node_modules/@remy/webmention/node_modules/css-select",
+				"node_modules/svgo/node_modules/css-select"
+			],
+			"fixAvailable": false
+		},
+		"findup-sync": {
+			"name": "findup-sync",
+			"severity": "moderate",
+			"isDirect": false,
+			"via": ["micromatch"],
+			"effects": ["liftoff", "matchdep"],
+			"range": "0.4.0 - 3.0.0",
+			"nodes": [
+				"node_modules/findup-sync",
+				"node_modules/matchdep/node_modules/findup-sync"
+			],
+			"fixAvailable": {
+				"name": "gulp-cli",
+				"version": "3.1.0",
+				"isSemVerMajor": true
+			}
+		},
+		"glob-watcher": {
+			"name": "glob-watcher",
+			"severity": "high",
+			"isDirect": false,
+			"via": ["anymatch", "chokidar"],
+			"effects": ["gulp"],
+			"range": "5.0.0 - 5.0.5",
+			"nodes": ["node_modules/glob-watcher"],
+			"fixAvailable": {
+				"name": "gulp",
+				"version": "5.0.1",
+				"isSemVerMajor": true
+			}
+		},
+		"gulp": {
+			"name": "gulp",
+			"severity": "high",
+			"isDirect": true,
+			"via": ["glob-watcher", "gulp-cli"],
+			"effects": [],
+			"range": "4.0.0 - 4.0.2",
+			"nodes": ["node_modules/gulp"],
+			"fixAvailable": {
+				"name": "gulp",
+				"version": "5.0.1",
+				"isSemVerMajor": true
+			}
+		},
+		"gulp-cli": {
+			"name": "gulp-cli",
+			"severity": "moderate",
+			"isDirect": true,
+			"via": ["liftoff", "matchdep"],
+			"effects": [],
+			"range": "1.3.0 - 2.3.0",
+			"nodes": ["node_modules/gulp-cli"],
+			"fixAvailable": {
+				"name": "gulp-cli",
+				"version": "3.1.0",
+				"isSemVerMajor": true
+			}
+		},
+		"gulp-htmlmin": {
+			"name": "gulp-htmlmin",
+			"severity": "high",
+			"isDirect": true,
+			"via": ["html-minifier"],
+			"effects": [],
+			"range": "*",
+			"nodes": ["node_modules/gulp-htmlmin"],
+			"fixAvailable": false
+		},
+		"gulp-svgo": {
+			"name": "gulp-svgo",
+			"severity": "high",
+			"isDirect": true,
+			"via": ["svgo"],
+			"effects": [],
+			"range": ">=1.3.0",
+			"nodes": ["node_modules/gulp-svgo"],
+			"fixAvailable": {
+				"name": "gulp-svgo",
+				"version": "1.2.5",
+				"isSemVerMajor": true
+			}
+		},
+		"html-minifier": {
+			"name": "html-minifier",
+			"severity": "high",
+			"isDirect": false,
+			"via": [
+				{
+					"source": 1105440,
+					"name": "html-minifier",
+					"dependency": "html-minifier",
+					"title": "kangax html-minifier REDoS vulnerability",
+					"url": "https://github.com/advisories/GHSA-pfq8-rq6v-vf5m",
+					"severity": "high",
+					"cwe": ["CWE-400", "CWE-1333"],
+					"cvss": {
+						"score": 7.5,
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+					},
+					"range": "<=4.0.0"
+				}
+			],
+			"effects": ["@sherby/eleventy-plugin-files-minifier", "gulp-htmlmin"],
+			"range": "*",
+			"nodes": [
+				"node_modules/gulp-htmlmin/node_modules/html-minifier",
+				"node_modules/html-minifier"
+			],
+			"fixAvailable": false
+		},
+		"jws": {
+			"name": "jws",
+			"severity": "high",
+			"isDirect": false,
+			"via": [
+				{
+					"source": 1111244,
+					"name": "jws",
+					"dependency": "jws",
+					"title": "auth0/node-jws Improperly Verifies HMAC Signature",
+					"url": "https://github.com/advisories/GHSA-869p-cjfg-cm3x",
+					"severity": "high",
+					"cwe": ["CWE-347"],
+					"cvss": {
+						"score": 7.5,
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
+					},
+					"range": "<3.2.3"
+				}
+			],
+			"effects": [],
+			"range": "<3.2.3",
+			"nodes": ["node_modules/netlify-cli/node_modules/jws"],
+			"fixAvailable": true
+		},
+		"liftoff": {
+			"name": "liftoff",
+			"severity": "moderate",
+			"isDirect": false,
+			"via": ["findup-sync"],
+			"effects": ["gulp-cli"],
+			"range": "2.2.3 - 3.1.0",
+			"nodes": ["node_modules/liftoff"],
+			"fixAvailable": {
+				"name": "gulp-cli",
+				"version": "3.1.0",
+				"isSemVerMajor": true
+			}
+		},
+		"lodash.pick": {
+			"name": "lodash.pick",
+			"severity": "high",
+			"isDirect": false,
+			"via": [
+				{
+					"source": 1106907,
+					"name": "lodash.pick",
+					"dependency": "lodash.pick",
+					"title": "Prototype Pollution in lodash",
+					"url": "https://github.com/advisories/GHSA-p6mc-m468-83gw",
+					"severity": "high",
+					"cwe": ["CWE-770", "CWE-1321"],
+					"cvss": {
+						"score": 7.4,
+						"vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H"
+					},
+					"range": ">=4.0.0 <=4.4.0"
+				}
+			],
+			"effects": ["cheerio"],
+			"range": ">=4.0.0",
+			"nodes": ["node_modules/lodash.pick"],
+			"fixAvailable": false
+		},
+		"matchdep": {
+			"name": "matchdep",
+			"severity": "moderate",
+			"isDirect": false,
+			"via": ["findup-sync", "micromatch"],
+			"effects": ["gulp-cli"],
+			"range": ">=1.0.1",
+			"nodes": ["node_modules/matchdep"],
+			"fixAvailable": {
+				"name": "gulp-cli",
+				"version": "3.1.0",
+				"isSemVerMajor": true
+			}
+		},
+		"microformat-node": {
+			"name": "microformat-node",
+			"severity": "high",
+			"isDirect": false,
+			"via": ["cheerio"],
+			"effects": [],
+			"range": ">=0.2.16",
+			"nodes": ["node_modules/microformat-node"],
+			"fixAvailable": true
+		},
+		"micromatch": {
+			"name": "micromatch",
+			"severity": "high",
+			"isDirect": false,
+			"via": [
+				{
+					"source": 1098681,
+					"name": "micromatch",
+					"dependency": "micromatch",
+					"title": "Regular Expression Denial of Service (ReDoS) in micromatch",
+					"url": "https://github.com/advisories/GHSA-952p-6rrq-rcjv",
+					"severity": "moderate",
+					"cwe": ["CWE-1333"],
+					"cvss": {
+						"score": 5.3,
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+					},
+					"range": "<4.0.8"
+				},
+				"braces"
+			],
+			"effects": ["anymatch", "findup-sync", "matchdep", "readdirp", "webpack"],
+			"range": "<=4.0.7",
+			"nodes": [
+				"node_modules/findup-sync/node_modules/micromatch",
+				"node_modules/glob-watcher/node_modules/micromatch",
+				"node_modules/matchdep/node_modules/micromatch",
+				"node_modules/watchpack-chokidar2/node_modules/micromatch",
+				"node_modules/webpack/node_modules/micromatch"
+			],
+			"fixAvailable": {
+				"name": "gulp-cli",
+				"version": "3.1.0",
+				"isSemVerMajor": true
+			}
+		},
+		"minimist": {
+			"name": "minimist",
+			"severity": "critical",
+			"isDirect": false,
+			"via": [
+				{
+					"source": 1096466,
+					"name": "minimist",
+					"dependency": "minimist",
+					"title": "Prototype Pollution in minimist",
+					"url": "https://github.com/advisories/GHSA-vh95-rmgr-6w4m",
+					"severity": "moderate",
+					"cwe": ["CWE-1321"],
+					"cvss": {
+						"score": 5.6,
+						"vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L"
+					},
+					"range": "<0.2.1"
+				},
+				{
+					"source": 1097677,
+					"name": "minimist",
+					"dependency": "minimist",
+					"title": "Prototype Pollution in minimist",
+					"url": "https://github.com/advisories/GHSA-xvch-5gv4-984h",
+					"severity": "critical",
+					"cwe": ["CWE-1321"],
+					"cvss": {
+						"score": 9.8,
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+					},
+					"range": "<0.2.4"
+				}
+			],
+			"effects": ["optimist"],
+			"range": "<=0.2.3",
+			"nodes": ["node_modules/optimist/node_modules/minimist"],
+			"fixAvailable": false
+		},
+		"netlify-lambda": {
+			"name": "netlify-lambda",
+			"severity": "moderate",
+			"isDirect": true,
+			"via": ["webpack"],
+			"effects": [],
+			"range": ">=1.0.0-babel-7-beta",
+			"nodes": ["node_modules/netlify-lambda"],
+			"fixAvailable": {
+				"name": "netlify-lambda",
+				"version": "0.4.0",
+				"isSemVerMajor": true
+			}
+		},
+		"netlify-plugin-github-dispatch": {
+			"name": "netlify-plugin-github-dispatch",
+			"severity": "moderate",
+			"isDirect": true,
+			"via": ["@octokit/rest"],
+			"effects": [],
+			"range": "*",
+			"nodes": ["node_modules/netlify-plugin-github-dispatch"],
+			"fixAvailable": false
+		},
+		"netlify-plugin-webmentions": {
+			"name": "netlify-plugin-webmentions",
+			"severity": "high",
+			"isDirect": true,
+			"via": ["@remy/webmention"],
+			"effects": [],
+			"range": "*",
+			"nodes": ["node_modules/netlify-plugin-webmentions"],
+			"fixAvailable": false
+		},
+		"nth-check": {
+			"name": "nth-check",
+			"severity": "high",
+			"isDirect": false,
+			"via": [
+				{
+					"source": 1095141,
+					"name": "nth-check",
+					"dependency": "nth-check",
+					"title": "Inefficient Regular Expression Complexity in nth-check",
+					"url": "https://github.com/advisories/GHSA-rp65-9cf3-cjxr",
+					"severity": "high",
+					"cwe": ["CWE-1333"],
+					"cvss": {
+						"score": 7.5,
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+					},
+					"range": "<2.0.1"
+				}
+			],
+			"effects": ["css-select"],
+			"range": "<2.0.1",
+			"nodes": [
+				"node_modules/@remy/webmention/node_modules/nth-check",
+				"node_modules/svgo/node_modules/nth-check"
+			],
+			"fixAvailable": false
+		},
+		"optimist": {
+			"name": "optimist",
+			"severity": "critical",
+			"isDirect": false,
+			"via": ["minimist"],
+			"effects": ["@remy/webmention"],
+			"range": ">=0.6.0",
+			"nodes": ["node_modules/optimist"],
+			"fixAvailable": false
+		},
+		"readdirp": {
+			"name": "readdirp",
+			"severity": "moderate",
+			"isDirect": false,
+			"via": ["micromatch"],
+			"effects": ["chokidar"],
+			"range": "2.2.0 - 2.2.1",
+			"nodes": [
+				"node_modules/glob-watcher/node_modules/readdirp",
+				"node_modules/watchpack-chokidar2/node_modules/readdirp"
+			],
+			"fixAvailable": {
+				"name": "gulp",
+				"version": "5.0.1",
+				"isSemVerMajor": true
+			}
+		},
+		"robot-directives": {
+			"name": "robot-directives",
+			"severity": "moderate",
+			"isDirect": false,
+			"via": ["useragent"],
+			"effects": [],
+			"range": ">=0.3.0",
+			"nodes": ["node_modules/robot-directives"],
+			"fixAvailable": true
+		},
+		"robots-txt-guard": {
+			"name": "robots-txt-guard",
+			"severity": "high",
+			"isDirect": false,
+			"via": [
+				{
+					"source": 1088819,
+					"name": "robots-txt-guard",
+					"dependency": "robots-txt-guard",
+					"title": "robots-txt-guard Inefficient Regular Expression Complexity vulnerability",
+					"url": "https://github.com/advisories/GHSA-6g33-8w2q-4hxv",
+					"severity": "high",
+					"cwe": ["CWE-1333"],
+					"cvss": {
+						"score": 7.5,
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+					},
+					"range": "<1.0.2"
+				}
+			],
+			"effects": ["broken-link-checker"],
+			"range": "<1.0.2",
+			"nodes": ["node_modules/robots-txt-guard"],
+			"fixAvailable": {
+				"name": "broken-link-checker",
+				"version": "0.6.7",
+				"isSemVerMajor": true
+			}
+		},
+		"svgo": {
+			"name": "svgo",
+			"severity": "high",
+			"isDirect": false,
+			"via": ["css-select"],
+			"effects": ["gulp-svgo"],
+			"range": "1.0.0 - 1.3.2",
+			"nodes": ["node_modules/svgo"],
+			"fixAvailable": {
+				"name": "gulp-svgo",
+				"version": "1.2.5",
+				"isSemVerMajor": true
+			}
+		},
+		"terser-webpack-plugin": {
+			"name": "terser-webpack-plugin",
+			"severity": "moderate",
+			"isDirect": false,
+			"via": ["webpack"],
+			"effects": ["webpack"],
+			"range": "<=2.2.1",
+			"nodes": ["node_modules/terser-webpack-plugin"],
+			"fixAvailable": {
+				"name": "netlify-lambda",
+				"version": "0.4.0",
+				"isSemVerMajor": true
+			}
+		},
+		"tmp": {
+			"name": "tmp",
+			"severity": "low",
+			"isDirect": false,
+			"via": [
+				{
+					"source": 1109537,
+					"name": "tmp",
+					"dependency": "tmp",
+					"title": "tmp allows arbitrary temporary file / directory write via symbolic link `dir` parameter",
+					"url": "https://github.com/advisories/GHSA-52f5-9888-hmc6",
+					"severity": "low",
+					"cwe": ["CWE-59"],
+					"cvss": {
+						"score": 2.5,
+						"vectorString": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N"
+					},
+					"range": "<=0.2.3"
+				}
+			],
+			"effects": ["useragent"],
+			"range": "<=0.2.3",
+			"nodes": ["node_modules/tmp"],
+			"fixAvailable": true
+		},
+		"tough-cookie": {
+			"name": "tough-cookie",
+			"severity": "moderate",
+			"isDirect": false,
+			"via": [
+				{
+					"source": 1097682,
+					"name": "tough-cookie",
+					"dependency": "tough-cookie",
+					"title": "tough-cookie Prototype Pollution vulnerability",
+					"url": "https://github.com/advisories/GHSA-72xf-g2v4-qvf3",
+					"severity": "moderate",
+					"cwe": ["CWE-1321"],
+					"cvss": {
+						"score": 6.5,
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N"
+					},
+					"range": "<4.1.3"
+				}
+			],
+			"effects": ["bhttp"],
+			"range": "<4.1.3",
+			"nodes": ["node_modules/tough-cookie"],
+			"fixAvailable": {
+				"name": "broken-link-checker",
+				"version": "0.6.7",
+				"isSemVerMajor": true
+			}
+		},
+		"useragent": {
+			"name": "useragent",
+			"severity": "moderate",
+			"isDirect": false,
+			"via": [
+				{
+					"source": 1107230,
+					"name": "useragent",
+					"dependency": "useragent",
+					"title": "useragent Regular Expression Denial of Service vulnerability",
+					"url": "https://github.com/advisories/GHSA-mgfv-m47x-4wqp",
+					"severity": "moderate",
+					"cwe": ["CWE-1333"],
+					"cvss": {
+						"score": 7.5,
+						"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+					},
+					"range": "<=2.3.0"
+				},
+				"tmp"
+			],
+			"effects": ["robot-directives"],
+			"range": "*",
+			"nodes": ["node_modules/useragent"],
+			"fixAvailable": true
+		},
+		"watchpack": {
+			"name": "watchpack",
+			"severity": "high",
+			"isDirect": false,
+			"via": ["watchpack-chokidar2"],
+			"effects": ["webpack"],
+			"range": "1.7.2 - 1.7.5",
+			"nodes": ["node_modules/watchpack"],
+			"fixAvailable": {
+				"name": "netlify-lambda",
+				"version": "0.4.0",
+				"isSemVerMajor": true
+			}
+		},
+		"watchpack-chokidar2": {
+			"name": "watchpack-chokidar2",
+			"severity": "high",
+			"isDirect": false,
+			"via": ["chokidar"],
+			"effects": ["watchpack"],
+			"range": "*",
+			"nodes": ["node_modules/watchpack-chokidar2"],
+			"fixAvailable": {
+				"name": "netlify-lambda",
+				"version": "0.4.0",
+				"isSemVerMajor": true
+			}
+		},
+		"webpack": {
+			"name": "webpack",
+			"severity": "high",
+			"isDirect": false,
+			"via": ["micromatch", "terser-webpack-plugin", "watchpack"],
+			"effects": ["netlify-lambda", "terser-webpack-plugin"],
+			"range": "4.0.0-alpha.0 - 5.0.0-rc.6",
+			"nodes": ["node_modules/webpack"],
+			"fixAvailable": {
+				"name": "netlify-lambda",
+				"version": "0.4.0",
+				"isSemVerMajor": true
+			}
+		}
+	},
+	"metadata": {
+		"vulnerabilities": {
+			"info": 0,
+			"low": 1,
+			"moderate": 19,
+			"high": 23,
+			"critical": 3,
+			"total": 46
+		},
+		"dependencies": {
+			"prod": 1410,
+			"dev": 1324,
+			"optional": 172,
+			"peer": 23,
+			"peerOptional": 0,
+			"total": 2805
+		}
+	}
+}

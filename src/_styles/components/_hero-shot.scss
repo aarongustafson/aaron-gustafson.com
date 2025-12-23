@@ -5,15 +5,15 @@
 \*------------------------------------*/
 
 .hero-shot {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 
-  @supports (margin-block: 1em) {
-    @include unset( top left bottom right );
-    inset-block: 0;
-    inset-inline: 0;
-  }
+	@supports (margin-block: 1em) {
+		@include unset(top left bottom right);
+		inset-block: 0;
+		inset-inline: 0;
+	}
 }

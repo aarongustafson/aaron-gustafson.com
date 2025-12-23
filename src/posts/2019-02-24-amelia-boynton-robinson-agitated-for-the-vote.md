@@ -15,7 +15,7 @@ In 1965, Amelia Boynton Robinson helped organize the march on Montgomery, Alabam
 
 <!-- more -->
 
-Amelia Boynton Robinson is often brought up in the context of these marches, and with good reason. It took a great deal of courage and faith to participate as it meant risking life and limb. And, in truth, I’m sure it was terrifying. In a 2014 interview with he <cite>New York Post</cite>, [Robinson recalled](https://nypost.com/2014/12/01/103-year-old-activist-i-was-almost-killed-fighting-for-freedom/) 
+Amelia Boynton Robinson is often brought up in the context of these marches, and with good reason. It took a great deal of courage and faith to participate as it meant risking life and limb. And, in truth, I’m sure it was terrifying. In a 2014 interview with he <cite>New York Post</cite>, [Robinson recalled](https://nypost.com/2014/12/01/103-year-old-activist-i-was-almost-killed-fighting-for-freedom/)
 
 > Then they charged. They came from the right. They came from the left. One [of the troopers] shouted: 'Run!' I thought, 'Why should I be running?' Then an officer on horseback hit me across the back of the shoulders and, for a second time, on the back of the neck. I lost consciousness.
 

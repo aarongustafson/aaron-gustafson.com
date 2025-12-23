@@ -7,8 +7,8 @@ ref_url: https://blogs.bing.com/webmaster/2015/05/14/our-approach-to-mobile-frie
 in_reply_to: https://blogs.bing.com/webmaster/2015/05/14/our-approach-to-mobile-friendly-search/
 ref_source: Bing Webmaster Blog
 via:
- name: Engadget
- url: https://www.engadget.com/2015/05/14/microsoft-bing-mobile-friendly-results/
+  name: Engadget
+  url: https://www.engadget.com/2015/05/14/microsoft-bing-mobile-friendly-results/
 ---
 
 Bing cares about mobile-friendliness now too:

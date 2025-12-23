@@ -2,7 +2,8 @@
 title: " Bringing Sanity and Order to Device Testing"
 date: 2015-06-05 09:56:03 -04:00
 comments: true
-tags: ["web design",mobile,devices,"progressive enhancement", "web development"]
+tags:
+  ["web design", mobile, devices, "progressive enhancement", "web development"]
 description: "With the constant onslaught of new devices, form factors, and considerations, it’s tempting to throw up our hands and find another line of work. Thankfully, however, all is not lost."
 ---
 
@@ -14,9 +15,9 @@ I worked on one project where the client provided me with a spreadsheet detailin
 
 As further evidence, consider [the enlightening details of this post from Jason Samuels](http://blog.jasonsamuels.net/post/21633531278/analytics-confirm-the-need-for-adaptive-web-design) of the National Council on Family relations, a non-profit organization:
 
-* In 2008, Internet Explorer dominated as the browser for 93.5% of their visitors. By 2014, that percentage had fallen to 19.7%, with Chrome bringing in the lion’s share of the traffic (37%). Firefox narrowly beat out IE with a 20% share of users.
-* In 2008, visits from "mobile" devices accounted for only about 0.1% of their traffic. In 2014, that number had skyrocketed to 14.4%.
-* In 2008, they detected 71 different screen resolutions, which is already a lot to consider. By 2014, however, they were seeing 1,000 unique screen resolutions each and every quarter (with over 200 of those recording 10+ visits per quarter).
+- In 2008, Internet Explorer dominated as the browser for 93.5% of their visitors. By 2014, that percentage had fallen to 19.7%, with Chrome bringing in the lion’s share of the traffic (37%). Firefox narrowly beat out IE with a 20% share of users.
+- In 2008, visits from "mobile" devices accounted for only about 0.1% of their traffic. In 2014, that number had skyrocketed to 14.4%.
+- In 2008, they detected 71 different screen resolutions, which is already a lot to consider. By 2014, however, they were seeing 1,000 unique screen resolutions each and every quarter (with over 200 of those recording 10+ visits per quarter).
 
 That last stat blows my mind every time I read it. You can’t design for 200 different screens, let alone 1,000. It’s a fools errand. And don’t even think of trying to test on that many devices.
 
@@ -24,9 +25,9 @@ And yet, here we are designing websites that can (and will) go anywhere. We need
 
 Testing can be tedious, time consuming, and costly. Surely there’s a way to make it easier. There sure is: Instead of getting hung up on creating one experience that needs to be nearly identical on every browser, we can be smarter about how we build things and treat experience as a continuum.
 
-We can build websites that are both nimble enough to work on low powered devices over slow networks *and* smart enough to take advantage of advanced features and sensors when opportunity knocks.
+We can build websites that are both nimble enough to work on low powered devices over slow networks _and_ smart enough to take advantage of advanced features and sensors when opportunity knocks.
 
-*Wha?! We can have our cake and eat it too*? Yes. Yes we can.
+_Wha?! We can have our cake and eat it too_? Yes. Yes we can.
 
 ## Start on Solid Footing
 
@@ -35,7 +36,7 @@ When dealing with the insane proliferation of web-enabled devices and the great 
 1. What is the purpose of this page, this form, this interface?
 2. What is the simplest way to realize that purpose?
 
-Then we need to build that *first*. Typically we’re talking text, some basic HTML, actual links to other pages, and forms that submit to a back-end of some sort. This is our minimum viable product and it will work anywhere.
+Then we need to build that _first_. Typically we’re talking text, some basic HTML, actual links to other pages, and forms that submit to a back-end of some sort. This is our minimum viable product and it will work anywhere.
 
 Then we can look for opportunities to enhance the experience, all while keeping that functional core at the center of the experience.
 
@@ -43,21 +44,21 @@ We can use CSS to add visual hierarchy to the page, provide some visual interest
 
 We’ll use JavaScript to give real-time feedback to our users. [We’ll hijack forms and links](http://domscripting.com/presentations/xtech2006/) to [lazy load additional content](http://www.filamentgroup.com/lab/ajax-includes-modular-content.html) or otherwise avoid full-page refreshes. Heck, we can even take over the entire page and [convert it into a single page app](http://nerds.airbnb.com/isomorphic-javascript-future-web-apps/).
 
-But we should never sacrifice the functional core. 
+But we should never sacrifice the functional core.
 
 This approach to designing for the web is called [progressive enhancement](http://alistapart.com/article/understandingprogressiveenhancement) and it’s the number one tool for dealing with the one-two punch of older browsers and device proliferation.
 
 ## Be Conservative in Your Delivery
 
-What makes progressive enhancement so helpful when it comes to dealing with this swirling mass of devices and browsers is that the core experience will *always be* available. There is nothing precluding our users from accessing it, even on a crappy WAP browser or a text-based browser like Lynx or even some [no so far-future talking computer](http://www.theubi.com/) that only "sees" the web as text.
+What makes progressive enhancement so helpful when it comes to dealing with this swirling mass of devices and browsers is that the core experience will _always be_ available. There is nothing precluding our users from accessing it, even on a crappy WAP browser or a text-based browser like Lynx or even some [no so far-future talking computer](http://www.theubi.com/) that only "sees" the web as text.
 
 In order to ensure we don’t accidentally deliver advanced features to less capable browsers like these, we just need to be smart about how we load stuff like CSS and JavaScript.
 
 Some basic CSS—think typography, color, etc.—will be usable by just about anyone, so we can put all that stuff in one CSS file (e.g., `basic.css`) and include it with a standard `link`. Then we can tuck all of our layout rules and other advanced CSS into a separate CSS file (e.g., `advanced.css`) that we link to with an associated media query.
 
 ```html
-<link rel="stylesheet" href="default.css" media="all">
-<link rel="stylesheet" href="advanced.css" media="only screen">
+<link rel="stylesheet" href="default.css" media="all" />
+<link rel="stylesheet" href="advanced.css" media="only screen" />
 ```
 
 Any [browsers that don’t understand media queries will ignore the second CSS file entirely](http://www.slideshare.net/bryanrieger/rethinking-the-mobile-web-by-yiibu/106) and receive only the linear, mobile view. Easy peasy, and IE8 gets the mobile layout (a baseline level of support that is not likely to cause you any testing headaches).
@@ -67,7 +68,7 @@ You can even take things a step further and use [the `@supports` block](https://
 Of course, CSS support issues are nothing compared to JavaScript, so sometimes it’s best not to deliver certain bits of JavaScript-based functionality to browsers that can’t handle it. This is where [feature (and object) detection](http://www.quirksmode.org/js/support.html) becomes incredibly useful:
 
 ```js
-if ( 'querySelector' in document ) {
+if ("querySelector" in document) {
   // We can use querySelector!
 }
 ```
@@ -76,7 +77,7 @@ You can also use [inverted conditional comments](http://en.wikipedia.org/wiki/Co
 
 ```html
 <!--[if gt IE 8]><!-->
-  <script src="main.js"></script>
+<script src="main.js"></script>
 <!--<![endif]-->
 ```
 
@@ -90,9 +91,9 @@ In order to keep testing manageable during development, it’s best to test in o
 
 I personally keep several versions of each major browser on my laptop at any given time. I work on a Mac, so I typically have a few versions of Chrome, Firefox, and Opera lying around. You can get older versions of these browsers here:
 
-* [Chromium Archive](http://commondatastorage.googleapis.com/chromium-browser-continuous/index.html)
-* [Firefox Archive](http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/)
-* [Opera Archive](http://www.opera.com/download//?custom=yes)
+- [Chromium Archive](http://commondatastorage.googleapis.com/chromium-browser-continuous/index.html)
+- [Firefox Archive](http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/)
+- [Opera Archive](http://www.opera.com/download//?custom=yes)
 
 It’s near-impossible to get older versions of Safari running on modern versions of OS X, so I typically just have the latest version locally.
 
@@ -122,7 +123,7 @@ If we really want to make things easy on ourselves (and our team), we should con
 
 Breaking our interfaces down into discrete, repeatable patterns (e.g., a label and form control, a tabbed interface, etc.) lets us look at each in isolation and test it that way too. Testing in isolation is far easier than trying to debug a page with a lot of moving parts.
 
-Gathering our patterns into a live, web-based pattern library  allows anyone on our team to collect the patterns they need to build a given interface as easily as they’d assemble a plate at a smörgåsbord. And if we really want to streamline the building and testing process, we can even [make the patterns importable into the live site](http://ianfeather.co.uk/a-maintainable-style-guide/) so everything stays in sync.
+Gathering our patterns into a live, web-based pattern library allows anyone on our team to collect the patterns they need to build a given interface as easily as they’d assemble a plate at a smörgåsbord. And if we really want to streamline the building and testing process, we can even [make the patterns importable into the live site](http://ianfeather.co.uk/a-maintainable-style-guide/) so everything stays in sync.
 
 ## Don’t Fear the Zombie Apocalypse
 

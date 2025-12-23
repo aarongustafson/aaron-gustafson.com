@@ -18,9 +18,9 @@ First of all, she was an educator. A firsthand witness to discrimination, hunger
 
 Perhaps the most instructive part of her career—for me at least—was her run for President in 1972. She was running for the Democratic nomination, ultimately finishing seventh, but she faced many struggles in that run. Naturally, being Black, she found it difficult to gather support from enough white Democratic voters. But beyond that, she also failed to get the support you might expect from her Black male colleagues (and men in general). In [an interview](https://news.google.com/newspapers?nid=1298&dat=19720408&id=nqlWAAAAIBAJ&sjid=0ucDAAAAIBAJ&pg=4748,5584936), she remarked:
 
->  They think I am trying to take power from them. The Black man must step forward, but that doesn’t mean the Black woman must step back. Being a woman is a bigger drawback for me than being Black.
+> They think I am trying to take power from them. The Black man must step forward, but that doesn’t mean the Black woman must step back. Being a woman is a bigger drawback for me than being Black.
 
-And yet, despite all of the systems and people working to hold her back, Shirley Chisholm was a force to be reckoned with. She took the cards she was dealt—like being assigned to the (*yawn*) Agricultural Committee early in her career—and found a way to make them play—by using her position to expand food stamps. She was gutsy and unafraid to speak truth to power.
+And yet, despite all of the systems and people working to hold her back, Shirley Chisholm was a force to be reckoned with. She took the cards she was dealt—like being assigned to the (_yawn_) Agricultural Committee early in her career—and found a way to make them play—by using her position to expand food stamps. She was gutsy and unafraid to speak truth to power.
 
 I’ll share two quotes from her autobiography, <cite>Unbought and Unbossed</cite> (which also happened to be her ’72 campaign slogan), that really resonate with me. The first concerns race:
 

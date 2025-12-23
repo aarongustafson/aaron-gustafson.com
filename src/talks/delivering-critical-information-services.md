@@ -3,8 +3,15 @@ title: "Delivering Critical Information &amp; Services"
 description: "In this session, Aaron discusses the many challenges to delivering critical information and services as well as the steps you can take to overcome those challenges."
 category: [talk, keynote]
 date: 2020-08-17T00:09:00-0500
-tags: [ "accessibility", "inclusive design", "performance", "web design", "web development" ]
-events: [ 142, 141, 139 ]
+tags:
+  [
+    "accessibility",
+    "inclusive design",
+    "performance",
+    "web design",
+    "web development",
+  ]
+events: [142, 141, 139]
 hero: "delivering-critical-information-services.png"
 slides:
   event: 139

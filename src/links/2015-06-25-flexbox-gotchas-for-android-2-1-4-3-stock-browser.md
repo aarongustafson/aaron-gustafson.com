@@ -11,4 +11,4 @@ tags: [Android]
 
 Many thanks to [Ben Frain](https://benfrain.com) for surfacing these issues.
 
-> The stock Android browser that shipped with Android 2.1–4.3  used the old version of the Flexible Box Layout Module. … Those are the principal devices you are likely to encounter these issues on.
+> The stock Android browser that shipped with Android 2.1–4.3 used the old version of the Flexible Box Layout Module. … Those are the principal devices you are likely to encounter these issues on.

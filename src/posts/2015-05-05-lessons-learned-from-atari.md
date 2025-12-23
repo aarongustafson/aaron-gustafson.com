@@ -2,7 +2,7 @@
 title: "Lessons Learned from Atari"
 date: 2015-05-05 17:05:40 -05:00
 comments: true
-tags: ["web design",industry]
+tags: ["web design", industry]
 description: "In watching Atari: Game Over, I couldn’t help but see all of the parallels between the early video game industry and the web design industry."
 redirect_from: "/notebook/lessons-learned%20from-atari/"
 ---

@@ -6,8 +6,8 @@ ref_url: https://www.bloomberg.com/news/articles/2015-09-03/zte-s-cheap-phones-q
 in_reply_to: https://www.bloomberg.com/news/articles/2015-09-03/zte-s-cheap-phones-quietly-winning-the-u-s-
 ref_source: Bloomberg Business
 via:
- name: Slashdot
- url: https://mobile.slashdot.org/story/15/09/04/136228/cheap-smartphones-quietly-becoming-popular-in-the-us
+  name: Slashdot
+  url: https://mobile.slashdot.org/story/15/09/04/136228/cheap-smartphones-quietly-becoming-popular-in-the-us
 ---
 
 This is a drum I’ve been beating for a while: Not all smartphones are created equal. **You should be testing on low-spec smartphones**.

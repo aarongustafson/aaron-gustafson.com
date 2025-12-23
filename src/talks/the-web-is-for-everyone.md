@@ -2,8 +2,8 @@
 title: "The Web Is for Everyone"
 description: "We should strive towards the equality of equal opportunity, while also accepting that it does not guarantee equal experience. And that&#39;s okay."
 category: keynote
-tags: [ "accessibility", "inclusive design", "progressive enhancement" ]
-events: [ 85 ]
+tags: ["accessibility", "inclusive design", "progressive enhancement"]
+events: [85]
 date: 2014-10-14T09:00:00-0400
 hero: "the-web-is-for-everyone.png"
 slides:

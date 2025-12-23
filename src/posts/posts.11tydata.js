@@ -61,8 +61,15 @@ function tagsToColor(tags) {
 	}
 }
 
+// Remove fragment-only links so excerpts don't emit dead anchors in listings
+function stripFragmentLinks(text = "") {
+	return text
+		.replace(/\[([^\]]+)\]\(#([^\)]+)\)/gi, "$1")
+		.replace(/<a\s+[^>]*href="#.*?"[^>]*>(.*?)<\/a>/gi, "$1");
+}
+
 export default {
-	layout: "layouts/post.html",
+	layout: "layouts/post.njk",
 	body_class: "post",
 	eleventyComputed: {
 		eleventyExcludeFromCollections: (data) => (showPost(data) ? false : true),
@@ -71,33 +78,35 @@ export default {
 		excerpt: (data) => {
 			let excerpt = "";
 			let sourceText = "";
-			
+
 			if ("excerpt" in data.page) {
 				sourceText = data.page.excerpt;
 			} else if (data.description) {
 				sourceText = data.description;
 			}
-			
+
 			if (sourceText) {
+				const sanitizedSource = stripFragmentLinks(sourceText);
+
 				// Check cache first
-				if (excerptCache.has(sourceText)) {
-					return excerptCache.get(sourceText);
+				if (excerptCache.has(sanitizedSource)) {
+					return excerptCache.get(sanitizedSource);
 				}
-				
+
 				excerpt = md
-					.renderInline(sourceText)
+					.renderInline(sanitizedSource)
 					.replace(/\[\^\d+\]/gi, "") // remove footnotes
 					.replace(/(<([^>]+)>)/gi, "") // remove HTML
 					.trim();
-				
+
 				// Cache the processed excerpt with size limit
 				if (excerptCache.size >= MAX_EXCERPT_CACHE_SIZE) {
 					const firstKey = excerptCache.keys().next().value;
 					excerptCache.delete(firstKey);
 				}
-				excerptCache.set(sourceText, excerpt);
+				excerptCache.set(sanitizedSource, excerpt);
 			}
-			
+
 			return excerpt;
 		},
 		hue: (data) => {
@@ -109,11 +118,11 @@ export default {
 			} else {
 				// Create cache key from title + tags to avoid regenerating identical images
 				const cacheKey = `${data.title}-${tagsToString(data.tags)}`;
-				
+
 				if (shareImageCache.has(cacheKey)) {
 					return shareImageCache.get(cacheKey);
 				}
-				
+
 				const shareImage = getShareImage({
 					cloudName: "aarongustafson",
 					imagePublicID: "share-card",
@@ -137,7 +146,7 @@ export default {
 					titleBottomOffset: 205,
 					textColor: "2C2825",
 				});
-				
+
 				// Cache with size limit
 				if (shareImageCache.size >= MAX_SHARE_IMAGE_CACHE_SIZE) {
 					const firstKey = shareImageCache.keys().next().value;

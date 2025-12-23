@@ -83,17 +83,17 @@
 		"branch": "main"
 	},
 	"sidebars": {
-		"default": ["partials/asides/recent_posts.html"],
+		"default": ["partials/asides/recent_posts.njk"],
 		"blog": [
-			"partials/asides/about.html",
-			"partials/asides/networks.html",
-			"partials/asides/recent_links.html"
+			"partials/asides/about.njk",
+			"partials/asides/networks.njk",
+			"partials/asides/recent_links.njk"
 		],
-		"post": ["partials/asides/about.html", "partials/asides/events.html"],
+		"post": ["partials/asides/about.njk", "partials/asides/events.njk"],
 		"page": [
-			"partials/asides/about.html",
-			"partials/asides/networks.html",
-			"partials/asides/events.html"
+			"partials/asides/about.njk",
+			"partials/asides/networks.njk",
+			"partials/asides/events.njk"
 		]
 	}
 }

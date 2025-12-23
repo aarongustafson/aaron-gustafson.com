@@ -5,36 +5,33 @@
 \*------------------------------------*/
 
 .appearances {
+	.podcast {
+		&__outlet {
+			@include rem(font-size, $font-size-small);
+			text-transform: uppercase;
+		}
 
-  .podcast {
-
-    &__outlet {
-      @include rem( font-size, $font-size-small );
-      text-transform: uppercase;
-    }
-
-    &__title {
-      margin-top: 0;
+		&__title {
+			margin-top: 0;
 
 			@supports (margin-block: 1em) {
 				margin-top: unset;
 				margin-block-start: 0;
 			}
-    }
+		}
 
-    &__player,
-    &__embed {
-      border: 0;
-      height: 90px;
-      max-width: 100%;
-      overflow: hidden;
+		&__player,
+		&__embed {
+			border: 0;
+			height: 90px;
+			max-width: 100%;
+			overflow: hidden;
 
 			@supports (margin-block: 1em) {
-				@include unset( height max-width );
+				@include unset(height max-width);
 				block-size: 90px;
 				max-inline-size: 100%;
 			}
-    }
-  }
-
+		}
+	}
 }

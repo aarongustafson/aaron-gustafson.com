@@ -1,33 +1,33 @@
 * {
-  display: block;
+	display: block;
 }
 
 feed {
-  margin: 2em;
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 1em;
-  font-family: "Lucida Grande", helvetica, arial, sans-serif;
+	margin: 2em;
+	background: #fff;
+	border: 1px solid #ddd;
+	padding: 1em;
+	font-family: "Lucida Grande", helvetica, arial, sans-serif;
 }
 
 title {
-  font-size: x-large;
+	font-size: x-large;
 }
 
 entry {
-  margin: 25px 0 20px 0;
+	margin: 25px 0 20px 0;
 }
 
 entry > title {
-  font-size: medium;
+	font-size: medium;
 }
 
 entry > link::after {
-  content: attr(href);
-  color: grey;
-  font-size: small;
-  margin-top: 6px;
-  margin-bottom: 6px;
+	content: attr(href);
+	color: grey;
+	font-size: small;
+	margin-top: 6px;
+	margin-bottom: 6px;
 }
 
 generator,
@@ -39,5 +39,5 @@ entry > updated,
 entry > id,
 entry > author,
 entry > content {
-  display: none;
+	display: none;
 }

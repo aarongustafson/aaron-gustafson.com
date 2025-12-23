@@ -2,19 +2,29 @@
 title: "Topics I’m interested in"
 permalink: "/tags/"
 ---
-{% extends "layouts/base.html" %}
 
-{% block content %}
-	<article role="article" class="page layout-container layout-container--blog">
-    <h1 class="page__title">{{ title }}</h1>
-    <div class="layout-container__primary">
-      <p>Here are some of the topics I’m most interested in. You can click through any one to see all the content on this site that’s associated with that topic.</p>
+{% extends "layouts/base.njk" %} {% block content %}
+<article role="article" class="page layout-container layout-container--blog">
+	<h1 class="page__title">{{ title }}</h1>
+	<div class="layout-container__primary">
+		<p>
+			Here are some of the topics I’m most interested in. You can click through
+			any one to see all the content on this site that’s associated with that
+			topic.
+		</p>
 
-			<ul>
-				{% for tag in collections.tags %}
-					<li><a href="/tags/{{ tag | lower | slugify }}" aria-label="See all posts and links tagged “{{ tag }}”">{{ tag }}</a> ({{ collections[ tag ].length }} items)</li>
-				{% endfor %}
-			</ul>
-    </div>
-  </article>
+		<ul>
+			{% for tag in collections.tags %}
+			<li>
+				<a
+					href="/tags/{{ tag | lower | slugify }}"
+					aria-label="See all posts and links tagged “{{ tag }}”"
+					>{{ tag }}</a
+				>
+				({{ collections[ tag ].length }} items)
+			</li>
+			{% endfor %}
+		</ul>
+	</div>
+</article>
 {% endblock %}

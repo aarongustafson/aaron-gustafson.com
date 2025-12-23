@@ -2,7 +2,7 @@
 title: "I’m voting for Oscar"
 date: 2016-10-11 08:06:49 -04:00
 comments: true
-tags: [personal,society,"the future"]
+tags: [personal, society, "the future"]
 description: "My son Oscar is Black and I fear for his future in Trump’s America."
 crossposted:
   Medium: https://medium.com/@AaronGustafson/im-voting-for-oscar-e91a8fa544b4#.gw3bhcpah

@@ -2,8 +2,8 @@
 title: "Writing for Engagement"
 description: "Writing tips for developer relations and technology evangelists."
 category: talk
-tags: [ "writing" ]
-events: [ 151 ]
+tags: ["writing"]
+events: [151]
 date: 2016-01-31T00:09:00-0800
 hero: "writing-for-engagement.jpg"
 slides:

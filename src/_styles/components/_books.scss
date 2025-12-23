@@ -5,78 +5,76 @@
 \*------------------------------------*/
 
 .book {
-  
-  margin-top: 0;
+	margin-top: 0;
 
-  @supports (margin-block: 1em) {
-    margin-top: unset;
-    margin-block-start: 0;
-  }
+	@supports (margin-block: 1em) {
+		margin-top: unset;
+		margin-block-start: 0;
+	}
 
-  & + & {
-    @include rem( margin-top, $default-spacing );
+	& + & {
+		@include rem(margin-top, $default-spacing);
 
-    @supports (margin-block: 1em) {
-      margin-top: unset;
-      @include rem( margin-block-start, $default-spacing );
-    }
-  }
-  
-  .listing--grid & {
-    margin: 0;
-    
-    .listing__item__title {
-      
-      height: 100%;
+		@supports (margin-block: 1em) {
+			margin-top: unset;
+			@include rem(margin-block-start, $default-spacing);
+		}
+	}
 
-      @supports (margin-block: 1em) {
-        height: unset;
-        block-size: 100%;
-      }
+	.listing--grid & {
+		margin: 0;
 
-      a {
-        background: transparent;
-        display: grid;
-        grid-template-areas: "picture" "title";
-        grid-template-rows: 200px 1fr;
-        height: 100%;
+		.listing__item__title {
+			height: 100%;
 
-        @supports (margin-block: 1em) {
-          height: unset;
-          block-size: 100%;
-        }
+			@supports (margin-block: 1em) {
+				height: unset;
+				block-size: 100%;
+			}
 
-        &:hover, &:focus {
-          border-bottom: 0;
+			a {
+				background: transparent;
+				display: grid;
+				grid-template-areas: "picture" "title";
+				grid-template-rows: 200px 1fr;
+				height: 100%;
 
-          @supports (margin-block: 1em) {
-            border-bottom: unset;
-            border-block-end: 0;
-          }
-        }
-      }
-    }
-    .book__title {
-      text-align: center;
-    }
-  }
-  &__cover {
-    grid-area: picture;
-    align-self: center;
-    justify-self: center;
-    margin: 0;
+				@supports (margin-block: 1em) {
+					height: unset;
+					block-size: 100%;
+				}
 
-    &__image {
-      max-height: 200px;
+				&:hover,
+				&:focus {
+					border-bottom: 0;
 
-      @supports (margin-block: 1em) {
-        max-height: unset;
-        max-block-size: 200px;
-      }
-    }
-  }
-  &__title {
-    grid-area: title;
-  }
-  
+					@supports (margin-block: 1em) {
+						border-bottom: unset;
+						border-block-end: 0;
+					}
+				}
+			}
+		}
+		.book__title {
+			text-align: center;
+		}
+	}
+	&__cover {
+		grid-area: picture;
+		align-self: center;
+		justify-self: center;
+		margin: 0;
+
+		&__image {
+			max-height: 200px;
+
+			@supports (margin-block: 1em) {
+				max-height: unset;
+				max-block-size: 200px;
+			}
+		}
+	}
+	&__title {
+		grid-area: title;
+	}
 }

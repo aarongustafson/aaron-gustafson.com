@@ -2,7 +2,7 @@
 title: "Web Sites as ‘Public Accommodation’ under a Pandemic"
 twitter_text: "This is incredibly important: Web Sites as ‘Public Accommodation’ under a Pandemic from @aardrian"
 date: 2020-05-01 15:32:17 -07:00
-tags: [ accessibility ]
+tags: [accessibility]
 ref_url: https://adrianroselli.com/2020/04/web-sites-as-public-accommodation-under-a-pandemic.html
 in_reply_to: https://adrianroselli.com/2020/04/web-sites-as-public-accommodation-under-a-pandemic.html
 ref_source: Adrian Roselli

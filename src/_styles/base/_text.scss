@@ -4,91 +4,88 @@
 		Text-level semantics
 \*------------------------------------*/
 
-@use 'sass:math';
+@use "sass:math";
 
 // Abbreviations
 abbr {
-  cursor: help;
-  text-decoration: inherit;
-  border: 0;
-  &[title] {
-    border: 0;
-  }
+	cursor: help;
+	text-decoration: inherit;
+	border: 0;
+	&[title] {
+		border: 0;
+	}
 }
-
 
 // Mark
 mark {
-  background: transparent;
-  color: $color-text;
-  color: inherit;
-  font-weight: normal;
-  font-weight: inherit;
-  font-style: normal;
-  font-style: inherit;
+	background: transparent;
+	color: $color-text;
+	color: inherit;
+	font-weight: normal;
+	font-weight: inherit;
+	font-style: normal;
+	font-style: inherit;
 }
 
 // Pseudo-semantics
 b {
-  font-weight: inherit;
+	font-weight: inherit;
 }
 i {
-  font-style: inherit;
+	font-style: inherit;
 }
-
 
 // Superscript & subscript
-sub, sup {
-  @include rem( font-size, $font-size-tiny );
-  font-style: inherit;
-  font-weight: inherit;
-  position: relative;
+sub,
+sup {
+	@include rem(font-size, $font-size-tiny);
+	font-style: inherit;
+	font-weight: inherit;
+	position: relative;
 }
 sub {
-  bottom: -1em;
+	bottom: -1em;
 
-  @supports (margin-block: 1em) {
-    bottom: unset;
-    inset-block-end: -1em;
-  }
+	@supports (margin-block: 1em) {
+		bottom: unset;
+		inset-block-end: -1em;
+	}
 }
 sup {
-  bottom: 1em;
+	bottom: 1em;
 
-  @supports (margin-block: 1em) {
-    bottom: unset;
-    inset-block-end: 1em;
-  }
+	@supports (margin-block: 1em) {
+		bottom: unset;
+		inset-block-end: 1em;
+	}
 }
 
-
 time {
-    white-space: nowrap;
+	white-space: nowrap;
 }
 
 small {
-  @include rem( font-size, $font-size-tiny );
-  font-style: italic;
-  display: block;
+	@include rem(font-size, $font-size-tiny);
+	font-style: italic;
+	display: block;
 }
-
 
 // Hidden
 .hidden {
-  @extend %hidden;
+	@extend %hidden;
 }
 
 // :target
 :target {
-  @include big-focus();
+	@include big-focus();
 }
 
 .footnote-ref > a:target,
 html.dark-mode .footnote-ref > a:target {
-  background-color: inherit;
-  outline: 0;
+	background-color: inherit;
+	outline: 0;
 }
 
 *:has(> .footnote-ref > a:target) {
-  @include big-focus();
+	@include big-focus();
 }

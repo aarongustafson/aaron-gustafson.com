@@ -23,7 +23,7 @@ Unlike many people who reacted negatively when confronted with the themes of Pub
 
 As an adult, I experienced Chuck D in a new way as one of the hosts of <cite>Unfiltered</cite> on [Air America Radio](https://www.nytimes.com/2004/03/31/arts/liberal-voices-some-sharp-get-new-home-on-radio-dial.html). I found a lot of solace in his wisdom and politics—and those of his co-hosts Lizz Winstead and Rachel Maddow—at the start of George W. Bush’s second term.[^1] And, as I’d come to expect by that point, he continued to challenge my comfortable life and made me question what I was doing to help others less fortunate than myself.
 
-Though many years have passed since I first discovered Chuck D, I feel like he’s shaped both my life *and* my politics. He’s encouraged me to be more aware and take a greater—which is to say active—interest in the lives and well-being of my fellow humans. And, of course, he’s also provided a killer soundtrack to boot.
+Though many years have passed since I first discovered Chuck D, I feel like he’s shaped both my life _and_ my politics. He’s encouraged me to be more aware and take a greater—which is to say active—interest in the lives and well-being of my fellow humans. And, of course, he’s also provided a killer soundtrack to boot.
 
 Thank you Chuck!
 

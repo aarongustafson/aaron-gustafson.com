@@ -2,7 +2,7 @@
 title: webOS is Back
 date: 2015-01-08 10:17:09 -05:00
 comments: true
-tags: [ mobile, devices, "web design" ]
+tags: [mobile, devices, "web design"]
 description: "It may have been the laughing stock in the app development community, but I’ve always had a soft spot in my heart for webOS. And now it’s back!"
 ---
 

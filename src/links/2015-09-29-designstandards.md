@@ -7,4 +7,4 @@ in_reply_to: https://playbook.cio.gov/designstandards/
 ref_source: U.S. Web Design Standards
 ---
 
-I’m so excited to see this resource making it out into the public. Congrats to the U.S. Digital Service and 18F folks for their awesome work *and* for their focus on accessibility!
+I’m so excited to see this resource making it out into the public. Congrats to the U.S. Digital Service and 18F folks for their awesome work _and_ for their focus on accessibility!

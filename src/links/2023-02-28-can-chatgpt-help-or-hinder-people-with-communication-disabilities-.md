@@ -10,5 +10,4 @@ ref_source: "Gizmodo"
 
 I love how people are considering the potential of conversational AIs (like ChatGPT) as assistive technology.
 
-
 > ChatGPT could be considered an “assistive technology” if it assists people with communication disability to get their message across more efficiently or effectively.

@@ -7,7 +7,7 @@ ref_url: https://modelviewculture.com/pieces/i-can-text-you-a-pile-of-poo-but-i-
 ref_source: Model View Culture
 ---
 
-A heartbreaking and damning assessment of the current state of Unicode by Aditya Mukerjee. 
+A heartbreaking and damning assessment of the current state of Unicode by Aditya Mukerjee.
 
 > My name is not only a common Indian name, but one of the top 1,000 names in the United States as well. But the final letter has still not been given its own Unicode character, so I have to use a substitute.
 
@@ -23,6 +23,6 @@ His frustration is completely understandable:
 
 And since the subject of [diversity in emoji](https://money.cnn.com/2015/02/23/technology/apple-diverse-emoji/) has been a hot button issue of late, here's a bit on that:
 
-> Perhaps I wouldn’t mind that the emoji world now literally has “colored” people, if it weren’t for the timing. Instead, what could have been a meaningless, empty gesture becomes an outright insult. *You can’t write your name in your native language, but at least you can tweet your frustration with an emoji face that’s the same shade of brown as yours!*
+> Perhaps I wouldn’t mind that the emoji world now literally has “colored” people, if it weren’t for the timing. Instead, what could have been a meaningless, empty gesture becomes an outright insult. _You can’t write your name in your native language, but at least you can tweet your frustration with an emoji face that’s the same shade of brown as yours!_
 
 This post is eye-opening on so many levels. You should definitely add it to your reading list because, as Aditya reminds us, “it’s imperative that the writing system of the 21st century be driven by the needs of the people using it.”

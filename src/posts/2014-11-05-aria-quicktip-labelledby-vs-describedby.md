@@ -2,7 +2,7 @@
 title: "ARIA Quicktip: Labelledby vs. Describedby"
 date: 2014-11-05 10:45:22 -05:00
 comments: true
-tags: [ accessibility, "web design", "WAI-ARIA" ] 
+tags: [accessibility, "web design", "WAI-ARIA"]
 description: "The difference between the `aria-labelledby` and `aria-describedby` attributes is not obvious. Here’s a bit of a clarification for using them in forms."
 redirect_from: /notebook/2014/aria-quicktip-labelledby-vs-describedby/
 ---

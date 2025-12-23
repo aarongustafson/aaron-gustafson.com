@@ -2,8 +2,9 @@
 title: "Performance as User Experience"
 description: "In this intensely practical session, I explore the ins and outs of page load performance by showing how he made the web site of the 10K Apart meet its own contest rules, by having a site that was functional and attractive even without JavaScript, and was less than ten kilobytes at initial load."
 category: talk
-tags: [ "performance", "progressive enhancement", "web design", "web development" ]
-events: [ 121, 120, 117, 118 ]
+tags:
+  ["performance", "progressive enhancement", "web design", "web development"]
+events: [121, 120, 117, 118]
 date: 2017-12-11T09:00:00-0800
 hero: "performance-as-user-experience.png"
 slides:

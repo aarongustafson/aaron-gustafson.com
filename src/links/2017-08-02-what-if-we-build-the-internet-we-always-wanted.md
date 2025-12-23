@@ -5,8 +5,8 @@ ref_url: https://www.oreilly.com/ideas/what-if-we-build-the-internet-we-always-w
 in_reply_to: https://www.oreilly.com/ideas/what-if-we-build-the-internet-we-always-wanted
 ref_source: O’Reilly Media
 via:
- name: Slashdot
- url: https://yro.slashdot.org/story/17/07/30/2333223/oreilly-media-asks-is-it-time-to-build-a-new-internet
+  name: Slashdot
+  url: https://yro.slashdot.org/story/17/07/30/2333223/oreilly-media-asks-is-it-time-to-build-a-new-internet
 ---
 
 Some interesting ideas here.

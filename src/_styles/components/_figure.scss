@@ -5,122 +5,130 @@
 \*------------------------------------*/
 
 .figure {
-  @include rem(margin, $default-spacing auto);
+	@include rem(margin, $default-spacing auto);
 
-  @supports (margin-block: 1em) {
-    @include unset(margin);
-    @include rem(margin-block, $default-spacing, false);
-    margin-inline: auto;
-  }
+	@supports (margin-block: 1em) {
+		@include unset(margin);
+		@include rem(margin-block, $default-spacing, false);
+		margin-inline: auto;
+	}
 }
 
 fullscreen-control > button {
-  inset-block-start: -23px;
-  inset-inline-end: -1px;
-  margin: 0;
+	inset-block-start: -23px;
+	inset-inline-end: -1px;
+	margin: 0;
 }
 
 .entry__thumbnail {
-  float: left;
-  margin-right: 2rem;
-  width: 100px;
-  height: 100px;
+	float: left;
+	margin-right: 2rem;
+	width: 100px;
+	height: 100px;
 
-  @supports (margin-block: 1em) {
-    @include unset(margin-right width height);
-    float: inline-start;
-    margin-inline-end: 2rem;
-    inline-size: 100px;
-    block-size: 100px;
-  }
+	@supports (margin-block: 1em) {
+		@include unset(margin-right width height);
+		float: inline-start;
+		margin-inline-end: 2rem;
+		inline-size: 100px;
+		block-size: 100px;
+	}
 }
 
 .entry__hero {
-  display: block;
-  position: relative;
+	display: block;
+	position: relative;
 }
 
 .entry__hero__credit {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: black;
-  color: white;
-  font-size: x-small;
-  padding: .25rem .5rem;
-  font-weight: bold;
-  font-style: normal;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: black;
+	color: white;
+	font-size: x-small;
+	padding: 0.25rem 0.5rem;
+	font-weight: bold;
+	font-style: normal;
 
-  @supports (margin-block: 1em) {
-    @include unset(bottom left padding);
-    padding-inline: .5rem;
-    padding-block: .25rem;
-    inset-block-end: 0;
-    inset-inline-start: 0;
-  }
+	@supports (margin-block: 1em) {
+		@include unset(bottom left padding);
+		padding-inline: 0.5rem;
+		padding-block: 0.25rem;
+		inset-block-end: 0;
+		inset-inline-start: 0;
+	}
 
-  a,
-  a:hover,
-  a:focus,
-  a:visited {
-    background-image: none;
-    color: inherit;
-    text-shadow: none;
-    text-decoration: underline;
-  }
+	a,
+	a:hover,
+	a:focus,
+	a:visited {
+		background-image: none;
+		color: inherit;
+		text-shadow: none;
+		text-decoration: underline;
+	}
 }
 
 @media screen and (max-width: #{$bp-full-em}) {
-  .entry__hero__image {
-    margin-top: 0 !important;
+	.entry__hero__image {
+		margin-top: 0 !important;
 
-    @supports (margin-block: 1em) {
-      margin-top: unset !important;
-      margin-block-start: 0;
-    }
-  }
+		@supports (margin-block: 1em) {
+			margin-top: unset !important;
+			margin-block-start: 0;
+		}
+	}
 }
 
 @media screen and (min-width: #{$bp-full-em}) {
-  .entry__hero:not(.entry__hero--landscape) {
-    cursor: ns-resize;
-    overflow: hidden;
-    max-height: 391px;
-    min-height: 391px;
-    transition: max-height .5s ease-in, max-block-size .5s ease-in;
-    will-change: max-height max-block-size transition;
+	.entry__hero:not(.entry__hero--landscape) {
+		cursor: ns-resize;
+		overflow: hidden;
+		max-height: 391px;
+		min-height: 391px;
+		transition:
+			max-height 0.5s ease-in,
+			max-block-size 0.5s ease-in;
+		will-change: max-height max-block-size transition;
 
-    @supports (margin-block: 1em) {
-      @include unset(max-height min-height);
-      max-block-size: 391px;
-      min-block-size: 391px;
-    }
+		@supports (margin-block: 1em) {
+			@include unset(max-height min-height);
+			max-block-size: 391px;
+			min-block-size: 391px;
+		}
 
-    &:hover {
-      max-height: 695px;
-      height: 100%;
-      transition: max-height .5s ease-in, max-block-size .5s ease-in;
+		&:hover {
+			max-height: 695px;
+			height: 100%;
+			transition:
+				max-height 0.5s ease-in,
+				max-block-size 0.5s ease-in;
 
-      @supports (margin-block: 1em) {
-        @include unset(max-height height);
-        max-block-size: 695px;
-        block-size: 100%;
-      }
+			@supports (margin-block: 1em) {
+				@include unset(max-height height);
+				max-block-size: 695px;
+				block-size: 100%;
+			}
 
-      .entry__hero__image {
-        transition: margin-top .5s, max-block-size .5s;
-        margin-top: 0 !important;
+			.entry__hero__image {
+				transition:
+					margin-top 0.5s,
+					max-block-size 0.5s;
+				margin-top: 0 !important;
 
-        @supports (margin-block: 1em) {
-          margin-top: unset !important;
-          margin-block-start: 0;
-        }
-      }
-    }
-  }
+				@supports (margin-block: 1em) {
+					margin-top: unset !important;
+					margin-block-start: 0;
+				}
+			}
+		}
+	}
 
-  .entry__hero__image {
-    will-change: margin-top max-block-size;
-    transition: margin-top .5s, max-block-size .5s;
-  }
+	.entry__hero__image {
+		will-change: margin-top max-block-size;
+		transition:
+			margin-top 0.5s,
+			max-block-size 0.5s;
+	}
 }

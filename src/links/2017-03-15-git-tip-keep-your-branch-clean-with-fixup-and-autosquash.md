@@ -8,4 +8,4 @@ in_reply_to: https://fle.github.io/git-tip-keep-your-branch-clean-with-fixup-and
 ref_source: Florent Lebreton
 ---
 
-A nice roll-up of how to declutter your Git commit history when  you notice a bug or typo right after committing it.
+A nice roll-up of how to declutter your Git commit history when you notice a bug or typo right after committing it.

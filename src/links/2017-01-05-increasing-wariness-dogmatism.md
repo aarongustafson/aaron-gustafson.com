@@ -8,4 +8,4 @@ in_reply_to: https://css-tricks.com/increasing-wariness-dogmatism/
 ref_source: CSS Tricks
 ---
 
-Many thanks to Chris Coyier for this piece on dogmatism. Framing is so important! Ultimately we all want to build a Web that works for as many people as possible while being fast, reliable, and a joy to create… and we can only do it if we work *together*.
+Many thanks to Chris Coyier for this piece on dogmatism. Framing is so important! Ultimately we all want to build a Web that works for as many people as possible while being fast, reliable, and a joy to create… and we can only do it if we work _together_.

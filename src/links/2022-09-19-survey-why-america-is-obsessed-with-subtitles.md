@@ -14,5 +14,3 @@ via:
 I began turning on subtitles when my kiddo was born. I spent a lot of time with him sleeping in my arms and wanted to be able to watch programs without waking him. That translated to watching videos with the sound lower and the captions/subtitles on. Six years later, it’s become a fixture of how we watch as individuals and as a family.
 
 Seeing how many other rely on captions/subtitles gives me hope that we’ll continue to see improvements in how the text is presented (and accessed… I’m looking at you Discovery+).
-
-

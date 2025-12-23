@@ -10,9 +10,7 @@ ref_source: "Apple Developer Documentation"
 
 Amidst all the kerfuffle over Apple’s push to drop PWAs (a.k.a., Home Screen Apps), two PWA features I worked on quietly landed in Safari for desktop: shortcuts & categories.
 
-> * Added support for the `shortcuts` manifest member on macOS. Shortcuts are available in the File menu and the Dock context menu. Users can set up custom keyboard shortcuts for them in System Settings > Keyboard > Keyboard Shortcuts > App Shortcuts. (106137954)
-> 
-> * Added support for the `categories` manifest member on macOS. When creating a Launchpad folder containing web apps, the folder is automatically named accordingly. (116480550)
+> - Added support for the `shortcuts` manifest member on macOS. Shortcuts are available in the File menu and the Dock context menu. Users can set up custom keyboard shortcuts for them in System Settings > Keyboard > Keyboard Shortcuts > App Shortcuts. (106137954)
+> - Added support for the `categories` manifest member on macOS. When creating a Launchpad folder containing web apps, the folder is automatically named accordingly. (116480550)
 
 🎉
-

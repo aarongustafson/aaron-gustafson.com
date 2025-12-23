@@ -8,6 +8,6 @@ in_reply_to: https://www.molly.com/2015/10/24/net-awards-outstanding-contributio
 ref_source: mollydotcom
 ---
 
-No one was more deserving of this award than [Molly](https://www.molly.com). No one. 
+No one was more deserving of this award than [Molly](https://www.molly.com). No one.
 
 Thank you for all you have done for the Web Mols! And, especially, thank you for all you have done for me.

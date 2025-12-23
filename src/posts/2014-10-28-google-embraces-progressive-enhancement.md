@@ -8,7 +8,7 @@ in_reply_to: https://googlewebmastercentral.blogspot.com/2014/10/updating-our-te
 redirect_from: /notebook/2014/google-embraces-progressive-enhancement/
 ---
 
-In case you missed it, [yesterday Pierre Far updated Google’s Webmaster Guidelines](https://googlewebmastercentral.blogspot.com/2014/10/updating-our-technical-webmaster.html). In his post, Pierre lays out their case for [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement):  
+In case you missed it, [yesterday Pierre Far updated Google’s Webmaster Guidelines](https://googlewebmastercentral.blogspot.com/2014/10/updating-our-technical-webmaster.html). In his post, Pierre lays out their case for [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement):
 
 > Just like modern browsers, our rendering engine might not support all of the technologies a page uses. Make sure your web design adheres to the principles of progressive enhancement as this helps our systems (and a wider range of browsers) see usable content and basic functionality when certain web design features are not yet supported.
 

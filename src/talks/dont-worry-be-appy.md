@@ -2,8 +2,8 @@
 title: "Don’t Worry, Be Appy"
 description: "In this talk, I walk you through a host of new web platform features you can use today to grant your web projects app-like super powers."
 category: talk
-tags: [ "progressive web apps", "web development" ]
-events: [ 144 ]
+tags: ["progressive web apps", "web development"]
+events: [144]
 date: 2022-04-18T00:09:00-0800
 hero: "dont-worry-be-appy.png"
 slides:

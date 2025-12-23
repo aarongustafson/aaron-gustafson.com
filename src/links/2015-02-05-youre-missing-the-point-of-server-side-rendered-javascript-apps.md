@@ -6,8 +6,8 @@ ref_url: https://tomdale.net/2015/02/youre-missing-the-point-of-server-side-rend
 in_reply_to: https://tomdale.net/2015/02/youre-missing-the-point-of-server-side-rendered-javascript-apps/
 ref_source: Tom Dale’s Blog
 via:
- name: Tim Kadlec
- url: https://twitter.com/tkadlec/status/563459244062539776
+  name: Tim Kadlec
+  url: https://twitter.com/tkadlec/status/563459244062539776
 ---
 
 I agree with Tom Dale. Yup, you read that right: I agree with Tom Dale. Well, he finally said something sensible:

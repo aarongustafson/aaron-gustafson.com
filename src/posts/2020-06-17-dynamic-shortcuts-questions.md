@@ -23,13 +23,13 @@ In order to set expectations properly and spec out the API, we need to decide on
 <figure>
 
 > We are working on a JavaScript API for managing PWA Shortcuts and would appreciate your input on a core feature. This thread ends with a poll. Please read the whole thing before voting.
-> 
+>
 > Background: https://t.co/NXhKogWzxQ
 >
 > —[Aaron Gustafson (@AaronGustafson)](https://twitter.com/AaronGustafson/status/1273767950185451522)
 
 > Here are the longform definitions of the choices in the poll:
-> 
+>
 > Read/write dynamic: I want immutable "static" Shortcuts and separate "dynamic" Shortcuts I can add/update/remove via JavaScript.
 >
 > —[Aaron Gustafson (@AaronGustafson)](https://twitter.com/AaronGustafson/status/1273767950982377472)

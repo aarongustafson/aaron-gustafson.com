@@ -5,71 +5,70 @@ description: "This tank is an SPS-dominant mixed reef and I am trying out the Tr
 fts: "/i/tanks/reefer-fts-2019-05-19.jpg"
 tank: "Red Sea Reefer 170"
 gallery:
-- url: /i/tanks/blastomussa-merletti.jpg
-  title: Ultra Corals Blue Raven Blastomussa merletti
-- url: /i/tanks/burning-leptastrea.jpg
-  title: WWC Burning Leptastrea
-- url: /i/tanks/devils-armor-zoas.jpg
-  title: These Devil’s Armor zoanthids have always beena  great grower for me. These came from my old tank.
-- url: /i/tanks/dragon-soul-goniastrea.jpg
-  title: A small piece of my old Dragon Soul Goniastrea from Cultivated Reef.
-- url: /i/tanks/fruit-loop-zoas.jpg
-  title: Originally sold to me as Emeralds on Fire, these are actually Fruit Loop zoanthids.
-- url: /i/tanks/german-blue-digitata.jpg
-  title: I love branching montipora and this German Blue Digitata has a particularly nice branching pattern.
-- url: /i/tanks/german-blue-digitata-2.jpg
-  title: Here’s a look at my old (sold) colony of German Blue Digitata.
-- url: /i/tanks/halle-berry-zoas.jpg
-  title: These WWC Halle Berry zoas were among the first residents of this tank and they’ve really taken off.
-- url: /i/tanks/rainbow-symphilia-wilsoni.jpg
-  title: A very cool orange-dominant Symphilia with hints of teal and green. Becomes more yellow in mid-day. Good eater. Can’t wait to see it grow!
-- url: /i/tanks/john-deere-leptastrea.jpg
-  title: I originally got this colony from World Wide Corals on a trip to Orlando back in 2014.
-- url: /i/tanks/lemon-lime-clove.jpg
-  title: I go back & forth on clove polyps, but I’m a sucker for yellow corals and these have awesome yellow tips.
-- url: /i/tanks/sunset-plate.jpg
-  title: I cannot tell you how amazing this Sunset Plate coral is. It’s easily the brightest thing in the tank. Gorgeous!
-- url: /i/tanks/micromussa-lord-blue.jpg
-  title: It may not look like much amid the purple coraline algae, but the purples and blues in this Micromussa lord are just stunning.
-- url: /i/tanks/micromussa-lord-lavender.jpg
-  title: I love this Micromussa lord because it is pretty conservative on the surface (tan and lavender), but underneath it has a glowing green mouth. Some of the polyps even have bi-color mouths (neon purple and green).
-- url: /i/tanks/micromussa-lord-rainbow.jpg
-  title: This photo doesn’t really capture all the colors that come out when this Micromussa lord is feeding. Greens, yellows, oranges, and reds… it’s beautiful.
-- url: /i/tanks/micromussa-lord-red.jpg
-  title: This Micromussa lord is predominantly a rusty orange red with a steel blue rim and it’s mounths are hot pink. This particular colony has massive polyp extension. It’s like nothing ive seen in other colonies.
-- url: /i/tanks/oxide-zoas.jpg
-  title: Another descendent from my old tank, Oxide zoanthids originally from Cultivated Reef.
-- url: /i/tanks/pink-zipper-zoas.jpg
-  title: I’m a sucker for pretty pink corals, so naturally I had to buy this mini-colony of Pink Zipper zoanthids.
-- url: /i/tanks/rainbow-incinerator-zoas.jpg
-  title: These Rainbow Incinerator zoas blew me away at the Zoanthids.com booth at a reefing tradeshow, so naturally they had to come home with me. They’re growing strong too.
-- url: /i/tanks/rasta-zoas.jpg
-  title: Rastas are one of my favorite zoas. Just look at that green!
-- url: /i/tanks/coco-worm.jpg
-  title: I’m fascinated by tube worms. This red & white coco worm is particularly beautiful.
+  - url: /i/tanks/blastomussa-merletti.jpg
+    title: Ultra Corals Blue Raven Blastomussa merletti
+  - url: /i/tanks/burning-leptastrea.jpg
+    title: WWC Burning Leptastrea
+  - url: /i/tanks/devils-armor-zoas.jpg
+    title: These Devil’s Armor zoanthids have always beena  great grower for me. These came from my old tank.
+  - url: /i/tanks/dragon-soul-goniastrea.jpg
+    title: A small piece of my old Dragon Soul Goniastrea from Cultivated Reef.
+  - url: /i/tanks/fruit-loop-zoas.jpg
+    title: Originally sold to me as Emeralds on Fire, these are actually Fruit Loop zoanthids.
+  - url: /i/tanks/german-blue-digitata.jpg
+    title: I love branching montipora and this German Blue Digitata has a particularly nice branching pattern.
+  - url: /i/tanks/german-blue-digitata-2.jpg
+    title: Here’s a look at my old (sold) colony of German Blue Digitata.
+  - url: /i/tanks/halle-berry-zoas.jpg
+    title: These WWC Halle Berry zoas were among the first residents of this tank and they’ve really taken off.
+  - url: /i/tanks/rainbow-symphilia-wilsoni.jpg
+    title: A very cool orange-dominant Symphilia with hints of teal and green. Becomes more yellow in mid-day. Good eater. Can’t wait to see it grow!
+  - url: /i/tanks/john-deere-leptastrea.jpg
+    title: I originally got this colony from World Wide Corals on a trip to Orlando back in 2014.
+  - url: /i/tanks/lemon-lime-clove.jpg
+    title: I go back & forth on clove polyps, but I’m a sucker for yellow corals and these have awesome yellow tips.
+  - url: /i/tanks/sunset-plate.jpg
+    title: I cannot tell you how amazing this Sunset Plate coral is. It’s easily the brightest thing in the tank. Gorgeous!
+  - url: /i/tanks/micromussa-lord-blue.jpg
+    title: It may not look like much amid the purple coraline algae, but the purples and blues in this Micromussa lord are just stunning.
+  - url: /i/tanks/micromussa-lord-lavender.jpg
+    title: I love this Micromussa lord because it is pretty conservative on the surface (tan and lavender), but underneath it has a glowing green mouth. Some of the polyps even have bi-color mouths (neon purple and green).
+  - url: /i/tanks/micromussa-lord-rainbow.jpg
+    title: This photo doesn’t really capture all the colors that come out when this Micromussa lord is feeding. Greens, yellows, oranges, and reds… it’s beautiful.
+  - url: /i/tanks/micromussa-lord-red.jpg
+    title: This Micromussa lord is predominantly a rusty orange red with a steel blue rim and it’s mounths are hot pink. This particular colony has massive polyp extension. It’s like nothing ive seen in other colonies.
+  - url: /i/tanks/oxide-zoas.jpg
+    title: Another descendent from my old tank, Oxide zoanthids originally from Cultivated Reef.
+  - url: /i/tanks/pink-zipper-zoas.jpg
+    title: I’m a sucker for pretty pink corals, so naturally I had to buy this mini-colony of Pink Zipper zoanthids.
+  - url: /i/tanks/rainbow-incinerator-zoas.jpg
+    title: These Rainbow Incinerator zoas blew me away at the Zoanthids.com booth at a reefing tradeshow, so naturally they had to come home with me. They’re growing strong too.
+  - url: /i/tanks/rasta-zoas.jpg
+    title: Rastas are one of my favorite zoas. Just look at that green!
+  - url: /i/tanks/coco-worm.jpg
+    title: I’m fascinated by tube worms. This red & white coco worm is particularly beautiful.
 ---
 
-## Livestock {.subsection__header}
+## Livestock {.subsection\_\_header}
 
 ### Fish
 
-* Firefish Goby (<i class="binomial">Nemateleotris magnifica</i>)
-* Green Mandarin (<i class="binomial">Synchiropus splendidus</i>)
-* Springer’s Damsel (<i class="binomial">Chrysiptera springeri</i>)
-* Starry Blenny (<i class="binomial">Salarias ramosus</i>)
-
+- Firefish Goby (<i class="binomial">Nemateleotris magnifica</i>)
+- Green Mandarin (<i class="binomial">Synchiropus splendidus</i>)
+- Springer’s Damsel (<i class="binomial">Chrysiptera springeri</i>)
+- Starry Blenny (<i class="binomial">Salarias ramosus</i>)
 
 ### Inverts
 
-* Emerald Crabs (<i class="binomial">Mithraculus sculptus</i>) × 3
-* Fighting Conch (<i class="binomial">Strombus spp.</i>)
-* Fuzzy Chiton (<i class="binomial">Acanthopleura granulata</i>) × 2
-* Marginella Snail (<i class="binomial">Marginella spp.</i>)
-* Money Cowrie (<i class="binomial">Monetaria moneta</i>)
-* Scarlet Hermit Crabs (<i class="binomial">Paguristes cadenati</i>)
-* Assorted snails (trochus, nassarius, strombus)
-* Assorted worms, pods, hermits, snails & such from [Indo-Pacific Sea Farms](https://ipsf.com/)
-* Additional Clean-up Crew (zigzag periwinkles, dwarf planaxis, etc.) from [ReefCleaners](https://www.reefcleaners.org/)
+- Emerald Crabs (<i class="binomial">Mithraculus sculptus</i>) × 3
+- Fighting Conch (<i class="binomial">Strombus spp.</i>)
+- Fuzzy Chiton (<i class="binomial">Acanthopleura granulata</i>) × 2
+- Marginella Snail (<i class="binomial">Marginella spp.</i>)
+- Money Cowrie (<i class="binomial">Monetaria moneta</i>)
+- Scarlet Hermit Crabs (<i class="binomial">Paguristes cadenati</i>)
+- Assorted snails (trochus, nassarius, strombus)
+- Assorted worms, pods, hermits, snails & such from [Indo-Pacific Sea Farms](https://ipsf.com/)
+- Additional Clean-up Crew (zigzag periwinkles, dwarf planaxis, etc.) from [ReefCleaners](https://www.reefcleaners.org/)
 
 <!--
 * Limpets
@@ -194,7 +193,7 @@ gallery:
   </ul></dd>
 </dl>
 
-## Life Support  {.subsection__header}
+## Life Support {.subsection\_\_header}
 
 <dl class="tank__specs">
   <dt>Tank</dt>
@@ -255,7 +254,7 @@ gallery:
   </ul></dd>  
 </dl>
 
-## Environment  {.subsection__header}
+## Environment {.subsection\_\_header}
 
 <dl class="tank__specs">
   <dt>Salt</dt>
@@ -278,6 +277,6 @@ gallery:
   </ul></dd>
 </dl>
 
-## Notes {.subsection__header}
+## Notes {.subsection\_\_header}
 
-* Connecting the COR to the Reefer is challenging. Here is how I ended up plumbing it all together: COR ¾" slip + [¾" slip × ¾" FPT](https://www.homedepot.com/p/Everbilt-3-4-in-CPVC-CTS-Slip-x-FPT-Female-Adapter-C4703HD34/100116710) + [¾" NPT × ⅝" barbed](https://www.bulkreefsupply.com/3-4-npt-x-5-8-barbed-straight-reducing-fitting-indelco.html)
+- Connecting the COR to the Reefer is challenging. Here is how I ended up plumbing it all together: COR ¾" slip + [¾" slip × ¾" FPT](https://www.homedepot.com/p/Everbilt-3-4-in-CPVC-CTS-Slip-x-FPT-Female-Adapter-C4703HD34/100116710) + [¾" NPT × ⅝" barbed](https://www.bulkreefsupply.com/3-4-npt-x-5-8-barbed-straight-reducing-fitting-indelco.html)

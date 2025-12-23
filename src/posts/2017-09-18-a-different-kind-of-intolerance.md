@@ -18,7 +18,7 @@ Along the way, I discovered that I had no issues with goat and sheep milk cheese
 
 [^1]: A fact that I was quite happy to discover. Goat cheeses are among some of the best I’ve ever had. Two recommendations: [Cocoa Cardona from Carr Valley](http://www.carrvalleycheese.com/Cardona-Cocoa/productinfo/3051/) and [Snøfrisk Firm Goat's Cheese](https://culturecheesemag.com/cheese-library/Snfrisk-Firm).
 
-At first I thought that maybe non-cow milks didn't have lactose, but that’s not the case. At least according to Wikipedia, both [sheep milks even contain *more* lactose](https://en.wikipedia.org/wiki/Sheep_milk#Nutrition_by_comparison). So lactose intolerance apparently wasn’t my problem. I was perplexed.
+At first I thought that maybe non-cow milks didn't have lactose, but that’s not the case. At least according to Wikipedia, both [sheep milks even contain _more_ lactose](https://en.wikipedia.org/wiki/Sheep_milk#Nutrition_by_comparison). So lactose intolerance apparently wasn’t my problem. I was perplexed.
 
 I continued digging and stumbled on a website about a doctor who’d been researching proteins in milk. The site I found it on looked like a straight-up conspiracy site,[^2] so I took what it said with a grain of salt, but the gist was this: When we domesticated cows around 10,000 years ago, they produced only the protein A2 beta-casein. Around 8,000 years ago, a genetic mutation occurred that caused some cattle to produce A1 beta-casein.
 
@@ -29,4 +29,3 @@ A1 beta-casein producing cows are pretty much all we have now in the United Stat
 I hadn’t really thought about it for a while, but the other day happened to see [A2 brand milk](https://a2milk.com/) in my grocery store the other day and decided to give it a try. Two bowls of delicious cereal later and I’m convinced that I’m actually allergic to A1 beta-casein. Not that it helps me order in restaurants. I’m sure some server would think I was [straight out of <cite class="television">Portlandia</cite> if I asked them if their milk was A1 or A2](https://www.youtube.com/watch?v=ErRHJlE4PGI).
 
 Anyway, if you think you’re lactose intolerant, you might want to run a little experiment of your own to determine if you’re actually lactose intolerant or if you’re really allergic to A1 beta-casein.
-

@@ -2,13 +2,13 @@
 title: "Apple Support: Honeybadger"
 date: 2016-01-26 17:34:17 -05:00
 comments: true
-tags: [personal,industry,empathy]
+tags: [personal, industry, empathy]
 description: "My iPhone fell clumsily out of my pocket when I was sitting down in the kitchen the other day. I was crestfallen."
 crossposted:
   Medium: https://medium.com/@AaronGustafson/apple-support-honeybadger-ae98d16e9f11
 ---
 
-My iPhone fell clumsily out of my pocket when I was sitting down in the kitchen the other day. *Thwack!* It fell face-first onto the tile from my seated position a mere 18 inches up. Of course the screen cracked. Protective case be damned, the cracks spread across the screen like a spider web cast from razor blades.
+My iPhone fell clumsily out of my pocket when I was sitting down in the kitchen the other day. _Thwack!_ It fell face-first onto the tile from my seated position a mere 18 inches up. Of course the screen cracked. Protective case be damned, the cracks spread across the screen like a spider web cast from razor blades.
 
 I was crestfallen.
 
@@ -38,17 +38,17 @@ A day or two later I got the mailer to send the phone to Apple, I shipped it to 
 
 Then Kelly asked me why Apple had charged us $329. I said I wasn’t sure. The authorization was for $299, but the repair service was only supposed to be $109 (plus tax and shipping, naturally). Perhaps they billed the whole amount and then returned the unused portion in a separate transaction. We decided to wait and see what would happen.
 
-The next day, a phone arrived. I say *a* phone because it was not *my* phone. Apple Support had sent me a refurbished replacement phone and charged me the full replacement cost. *Why?* "After thorough diagnostic testing, it has been determined that a replacement iPhone (enclosed) is necessary." Vague.
+The next day, a phone arrived. I say _a_ phone because it was not _my_ phone. Apple Support had sent me a refurbished replacement phone and charged me the full replacement cost. _Why?_ "After thorough diagnostic testing, it has been determined that a replacement iPhone (enclosed) is necessary." Vague.
 
 I was curious what their tests had revealed. <span data-quotable>What gremlins were lurking in my heretofore fully-functional device?</span> I decided to investigate with another support rep and was not thrilled with what I found.
 
-*Note: I spent the next few hours in a chat session with two different reps at Apple Support. Both were incredibly friendly and did everything in their power to help me get to the bottom of why my screen repair had turned into a complete replacement. Credit where credit is due.*
+_Note: I spent the next few hours in a chat session with two different reps at Apple Support. Both were incredibly friendly and did everything in their power to help me get to the bottom of why my screen repair had turned into a complete replacement. Credit where credit is due._
 
-In the conversation with the first rep, Josh, I made it clear that the phone was working perfectly before I sent it to them. It merely needed a new screen/digitizer. I offered that I was disappointed to see that they’d replaced it without explaining what would require that level of remediation *and* without giving me the option to have the phone returned to me as-is. From the beginning, he clearly saw where I was coming from:
+In the conversation with the first rep, Josh, I made it clear that the phone was working perfectly before I sent it to them. It merely needed a new screen/digitizer. I offered that I was disappointed to see that they’d replaced it without explaining what would require that level of remediation _and_ without giving me the option to have the phone returned to me as-is. From the beginning, he clearly saw where I was coming from:
 
 > Oh good grief, I’m really sorry you’ve had to deal with this. That’s not at all what we want from this process.
 
-After a few minutes of doing some research, he came back to me: 
+After a few minutes of doing some research, he came back to me:
 
 > So basically from what we’ve been discussing, the service center does run a plethora of tests on the phone once it’s sent in. That’s to be sure that it’s working properly in all ways, rather than just the screen repair itself, though trust me, I do fully understand that the only thing you wanted was the screen to be repaired, so I’m just compiling all of the data to see what happened.
 
@@ -70,7 +70,7 @@ He was completely empathetic:
 
 > I’m really sorry about this whole thing, Aaron. It’s looking like some sort of damage was found with the phone, which is what caused that price to be charged, rather than just the screen repair, so ultimately they decided that it would give you a longer lasting phone to replace it, so that way you wouldn’t have to deal with the hassle of having additional issues down the road. Honestly, I cannot express enough how much I understand the situation, and especially at least being informed or asked if that can be done. That’s just why the full out of warranty/replacement charge has to be held initially, is so that they have authorization to run those tests, and if needed, replace it, rather than just repair it. I’m so sorry that the process wasn’t elaborated to you, and that they didn’t at least let you know of what was going on.
 
-I reiterated that someone really should have *asked* if I wanted the additional work done. I understand Apple’s "heart" might be in the right place, but they failed to do what I had hired them to do. They didn’t consider my wishes or expectations in their process at all. Nor did they give me an opportunity to decline the replacement and get my broken phone back.
+I reiterated that someone really should have _asked_ if I wanted the additional work done. I understand Apple’s "heart" might be in the right place, but they failed to do what I had hired them to do. They didn’t consider my wishes or expectations in their process at all. Nor did they give me an opportunity to decline the replacement and get my broken phone back.
 
 Josh pleasantly informed me that by agreeing to the repair, I was out of luck:
 
@@ -98,7 +98,7 @@ Then he dropped the bombshell:
 
 > So the main bit of information that I want to address is not that the phone was replaced to address issues that may arise down the road. In this case, a screen replacement was attempted and did not yield a functioning device. When that occurs, our only option is to replace the device. I do see from your chats with Michelle and Teresa that they advised this was the procedure that we have
 
-*Wait. What?!* They didn’t find any problems. In replacing the screen, the tech bricked the phone.
+_Wait. What?!_ They didn’t find any problems. In replacing the screen, the tech bricked the phone.
 
 > No, not at all. Just that they were unable to have a fully functioning unit after a screen replacement. That does not mean that the tech bricked the phone or messed up when replacing the screen, it means the phone was not able to work after the screen was replaced.
 
@@ -106,7 +106,7 @@ Um, sounds to me like they bricked my phone. Alexander tried to clarify, but was
 
 > While the issue was only a cracked screen, that does not mean that the screen can be replaced and yield a functioning device. Unfortunately we can never know if a screen replacement will work until we try.
 
-So… iPhones are only *occasionally* repairable. In other words, it’s a crapshoot. Comforting. No one had mentioned that they could brick the phone when attempting to repair it:
+So… iPhones are only _occasionally_ repairable. In other words, it’s a crapshoot. Comforting. No one had mentioned that they could brick the phone when attempting to repair it:
 
 > I was never advised that the repair could yield a non-functioning device. This is even more strange than I expected.
 
@@ -114,7 +114,7 @@ Alexander towed the company line:
 
 > I’m looking at the chats you had with us when setting up the repair, and both advisors did say how it could be $299. I also don’t see anything from either one that says the depot would reach out to you if the repair price was not going to be $109. I’m really sorry that this happened to you Aaron, but this is how our process works and everything looks to have been done correctly here. … I see them saying that they will attempt to replace the screen and if that works it would be a $109 repair. If there were additional issues, it would cost more up to the $299 max for a full replacement unit.
 
-I clarified that they had said it *could* cost more. There’s a difference between "could" and "would". I mentioned that I could have just kept the broken phone and upgraded with AT&T and spent less money. Alexander didn’t miss a beat:
+I clarified that they had said it _could_ cost more. There’s a difference between "could" and "would". I mentioned that I could have just kept the broken phone and upgraded with AT&T and spent less money. Alexander didn’t miss a beat:
 
 > That certainly was an option you could have taken Aaron, and I do sympathize with not taking that option to end up paying more than you expected. I really wish the repair process was clearer for you, and I can only advise that you leave some feedback about the repair process to us at Apple Feedback. I don’t see any mention in these chats of the depot contacting you if the cost would be more nor an advisor stating that would be the case.
 
@@ -128,4 +128,4 @@ Alexander conceded that the process was less than ideal:
 
 We talked for a few more minutes, but it was clear I was out of options. I could file a complaint with Apple (and have), but I am skeptical they even pay attention to that stuff. I know they don’t chime in on their own forums. My only other option was to share my story with you, in hopes you might avoid a similar situation.
 
-So consider yourself warned: If you send your phone to Apple for something as simple as a screen repair, they just may brick your phone and charge you for the convenience. Oh and the replacement phone only has a 90-day warranty. *Hooray!*
+So consider yourself warned: If you send your phone to Apple for something as simple as a screen repair, they just may brick your phone and charge you for the convenience. Oh and the replacement phone only has a 90-day warranty. _Hooray!_

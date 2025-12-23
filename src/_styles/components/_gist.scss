@@ -5,47 +5,47 @@ Gist
 \*------------------------------------*/
 
 .gist {
-  border: 1px solid $color-border;
-  border-bottom: 0;
-  border-radius: 3px 3px 0 0;
+	border: 1px solid $color-border;
+	border-bottom: 0;
+	border-radius: 3px 3px 0 0;
 
-  @include rem( font-size, $font-size-code );
-  margin: 0;
-  padding: .25em .5em;
+	@include rem(font-size, $font-size-code);
+	margin: 0;
+	padding: 0.25em 0.5em;
 
-  @supports (margin-block: 1em) {
-    @include unset( border-bottom padding border-radius );
-    border-block-end: 0;
-    border-start-start-radius: 3px;
-    border-start-end-radius: 3px;
-    padding-block: .25em;
-    padding-inline: .5em;
-  }
+	@supports (margin-block: 1em) {
+		@include unset(border-bottom padding border-radius);
+		border-block-end: 0;
+		border-start-start-radius: 3px;
+		border-start-end-radius: 3px;
+		padding-block: 0.25em;
+		padding-inline: 0.5em;
+	}
 }
 .gist_link {
-  background: $color-text;
-  color: $color-background;
-  
-  border: 1px solid transparent;
-  border-radius: 0 0 3px 3px;
-  
-  @include rem( font-size, $font-size-small );
-  
-  margin-top: 0;
-  padding: .25em .5em;
-  text-align: right;
+	background: $color-text;
+	color: $color-background;
 
-  @supports (margin-block: 1em) {
-    @include unset( border-radius padding margin-top );
-    border-end-start-radius: 3px;
-    border-end-end-radius: 3px;
-    margin-block-start: 0;
-    padding-block: .25em;
-    padding-inline: .5em;
-  }
+	border: 1px solid transparent;
+	border-radius: 0 0 3px 3px;
 
-  a {
-    color: $color-background;
-    text-decoration-color: $color-background;
-  }
+	@include rem(font-size, $font-size-small);
+
+	margin-top: 0;
+	padding: 0.25em 0.5em;
+	text-align: right;
+
+	@supports (margin-block: 1em) {
+		@include unset(border-radius padding margin-top);
+		border-end-start-radius: 3px;
+		border-end-end-radius: 3px;
+		margin-block-start: 0;
+		padding-block: 0.25em;
+		padding-inline: 0.5em;
+	}
+
+	a {
+		color: $color-background;
+		text-decoration-color: $color-background;
+	}
 }

@@ -3,7 +3,7 @@ title: "Progressive Web Apps and the Windows Ecosystem"
 description: "In this session, I discuss what PWAs are, how they can be integrated into the development process of modern websites, the advantages and disadvantages of PWAs vs. native development, and what opportunities they present when installed alongside native apps in Windows."
 category: talk
 tags: ["progressive web apps", "progressive enhancement", Windows, Microsoft]
-events: [123,122,115]
+events: [123, 122, 115]
 date: 2017-05-10T09:00:00-0400
 hero: progressive-web-apps-and-the-windows-ecosystem.png
 slides:

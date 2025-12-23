@@ -3,83 +3,83 @@
 /*------------------------------------*\
 Buttons
 \*------------------------------------*/
-@use 'sass:color';
+@use "sass:color";
 
 button,
 .button,
 .button:link,
 .button:visited {
-  
-  cursor: pointer;
-  user-select: none;
-  
-  background: $color-dark-teal;
-  color: $color-white;
-  text-decoration: none;
-  
-  border: 1px solid $color-text;
-  border-radius: 3px;
-  @include rem( padding, 10 15 );
-  
-  @include rem( font-size, $font-size-default );
-  font-weight: bold;
+	cursor: pointer;
+	user-select: none;
 
-  transition: background-color $default-transition, color $default-transition;
+	background: $color-dark-teal;
+	color: $color-white;
+	text-decoration: none;
 
-  @supports (margin-block: 1em) {
-    @include unset( padding );
-    padding-block: 10px;
-    padding-inline: 15px;
-  }
-  
-  &:hover,
-  &:focus {
-    background: color.scale( $color-dark-teal, $lightness: -10% );
-  }
-  
-  &:focus-visible {
-    outline: 5px solid #062909
-  }
+	border: 1px solid $color-text;
+	border-radius: 3px;
+	@include rem(padding, 10 15);
 
-  svg {
-    display: inline-block;
-    height: 1em;
-    margin-left: .15em;
-    
-    path {
-      fill: $color-white;
-    }
+	@include rem(font-size, $font-size-default);
+	font-weight: bold;
 
-    @supports (margin-block: 1em) {
-      @include unset( height margin-left );
-      margin-inline-start: .15em;
-      block-size: 1em;
-    }
-  }
+	transition:
+		background-color $default-transition,
+		color $default-transition;
 
-  &[disabled] {
-    background: $color-grey-light;
-    border-color: color.scale( $color-grey-light, $lightness: -30% );
-    color: color.scale( $color-grey-light, $lightness: -30% );
-    cursor: default;
+	@supports (margin-block: 1em) {
+		@include unset(padding);
+		padding-block: 10px;
+		padding-inline: 15px;
+	}
 
-    svg path {
-      fill: color.scale( $color-grey-light,  $lightness: -30% );
-    }
-  }
+	&:hover,
+	&:focus {
+		background: color.scale($color-dark-teal, $lightness: -10%);
+	}
 
-  html.dark-mode & {
-    background-color: $color-link-dark-hover;
-    color: $color-background-dark;
+	&:focus-visible {
+		outline: 5px solid #062909;
+	}
 
-    svg path {
-      fill: $color-background-dark;
-    }
+	svg {
+		display: inline-block;
+		height: 1em;
+		margin-left: 0.15em;
 
-    &:hover,
-    &:focus {
-      background-color: $color-link-dark;
-    }
-  }
-  
+		path {
+			fill: $color-white;
+		}
+
+		@supports (margin-block: 1em) {
+			@include unset(height margin-left);
+			margin-inline-start: 0.15em;
+			block-size: 1em;
+		}
+	}
+
+	&[disabled] {
+		background: $color-grey-light;
+		border-color: color.scale($color-grey-light, $lightness: -30%);
+		color: color.scale($color-grey-light, $lightness: -30%);
+		cursor: default;
+
+		svg path {
+			fill: color.scale($color-grey-light, $lightness: -30%);
+		}
+	}
+
+	html.dark-mode & {
+		background-color: $color-link-dark-hover;
+		color: $color-background-dark;
+
+		svg path {
+			fill: $color-background-dark;
+		}
+
+		&:hover,
+		&:focus {
+			background-color: $color-link-dark;
+		}
+	}
 }

@@ -1,21 +1,21 @@
 * {
-  display: block;
+	display: block;
 }
 
 feed {
-    margin: 2em;
-    background: #fff;
-    border: 1px solid #ddd;
-    padding: 1em;
-    font-family: "Lucida Grande", helvetica, arial, sans-serif;
+	margin: 2em;
+	background: #fff;
+	border: 1px solid #ddd;
+	padding: 1em;
+	font-family: "Lucida Grande", helvetica, arial, sans-serif;
 }
 
 title {
-    font-size: x-large;
+	font-size: x-large;
 }
 
 entry {
-  margin: 25px 0 20px 0;
+	margin: 25px 0 20px 0;
 
 	@supports (margin-block: 1em) {
 		margin: unset;
@@ -26,16 +26,16 @@ entry {
 }
 
 entry > title {
-  font-size: medium;
-  font-weight: bold;
+	font-size: medium;
+	font-weight: bold;
 }
 
 entry > link::after {
-  content: attr(href);
-  color: grey;
-  font-size: small;
-  margin-top: 6px;
-  margin-bottom: 6px;
+	content: attr(href);
+	color: grey;
+	font-size: small;
+	margin-top: 6px;
+	margin-bottom: 6px;
 
 	@supports (margin-block: 1em) {
 		margin: unset;
@@ -45,7 +45,7 @@ entry > link::after {
 
 // two links? hide the first one
 entry > link:has(+ link)::after {
-  display: none;
+	display: none;
 }
 
 generator,
@@ -58,9 +58,9 @@ entry > id,
 entry > author,
 entry > content,
 entry > summary {
-  display: none;
+	display: none;
 }
 
 entry > amg:twitter {
-  display: none;
+	display: none;
 }

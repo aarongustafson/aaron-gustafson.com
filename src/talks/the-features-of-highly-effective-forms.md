@@ -2,8 +2,8 @@
 title: "The Features of Highly Effective Forms"
 description: "Web forms are complex beasts with many moving parts. That’s one of the reasons they're so challenging to build well."
 category: talk
-tags: ["web forms","web design",accessibility]
-events: [104,109,106]
+tags: ["web forms", "web design", accessibility]
+events: [104, 109, 106]
 date: 2016-03-14T09:00:00-0400
 hero: the-features-of-highly-effective-forms.png
 slides:

@@ -6,8 +6,8 @@ ref_url: https://webfoundation.org/2017/03/web-turns-28-letter/
 in_reply_to: https://webfoundation.org/2017/03/web-turns-28-letter/
 ref_source: World Wide Web Foundation
 via:
- name: Slashdot
- url: https://yro.slashdot.org/story/17/03/13/0433225/tim-berners-lee-warns-about-the-webs-three-biggest-threats
+  name: Slashdot
+  url: https://yro.slashdot.org/story/17/03/13/0433225/tim-berners-lee-warns-about-the-webs-three-biggest-threats
 ---
 
 1. We’ve lost control of our personal data

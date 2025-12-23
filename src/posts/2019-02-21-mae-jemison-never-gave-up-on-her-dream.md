@@ -32,4 +32,3 @@ Dr. Jemison’s resilience and persistence is impressive. Her accomplishments ha
 Here’s to you Dr. Jemison!
 
 https://www.youtube.com/watch?v=-oLSMex66sY
-

@@ -6,8 +6,8 @@ ref_url: https://govinsider.asia/smart-gov/why-britain-banned-mobile-apps/
 in_reply_to: https://govinsider.asia/smart-gov/why-britain-banned-mobile-apps/
 ref_source: GovInsider
 via:
- name: Slashdot
- url: https://news.slashdot.org/story/16/06/06/1517231/why-uks-government-digital-service-decided-to-ditch-apps
+  name: Slashdot
+  url: https://news.slashdot.org/story/16/06/06/1517231/why-uks-government-digital-service-decided-to-ditch-apps
 ---
 
 This! An excellent interview with Ben Terrett:

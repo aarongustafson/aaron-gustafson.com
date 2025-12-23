@@ -2,7 +2,14 @@
 title: "Lessons in Averaging"
 date: 2016-12-14 13:01:32 -05:00
 comments: true
-tags: ["progressive enhancement",design,"web design","user experience",accessibility]
+tags:
+  [
+    "progressive enhancement",
+    design,
+    "web design",
+    "user experience",
+    accessibility,
+  ]
 description: "We look at averages all the time in our work. Some, like average Time To Interactive (TTI) for instance, are useful measurements that allow us to improve our work; others, like the “average” user are decidedly less so."
 crossposted:
   Medium: https://medium.com/@AaronGustafson/80018015fc4f
@@ -36,6 +43,6 @@ Designing for the "average" user is incredibly problematic. The episode I mentio
 
 In 1950, the Air Force sent Gilbert S. Daniels out to collect ten measurements from thousands of airmen—yes, they were all men at the time—across the U.S. in order to establish a new average. After collecting the data, Daniels got curious and decided to see how many of the airmen he measured hit the average on all ten measurements. Not a single one. How about three of the measurements? Less than five percent. He realized that <span data-quotable>in designing for an average, they were, in fact, designing for no one.</span> Based on this discovery, the Air Force commissioned new equipment that including features like adjustable foot pedals, helmet straps, flight suits, and seats. And, wonder of wonders, pilot performance improved dramatically.
 
-When we design, we need to be cognizant of the variety of human experience and plan accordingly. <span data-quotable>For our work to be successful, we need to accommodate the adjustments our users require for *them* to be successful.</span> Responsive layouts, adaptive interfaces, support for assistive technologies… all of these approaches enable our work to go further by enabling it to be tailored to the permanent, temporary, and/or situational needs of our users.
+When we design, we need to be cognizant of the variety of human experience and plan accordingly. <span data-quotable>For our work to be successful, we need to accommodate the adjustments our users require for _them_ to be successful.</span> Responsive layouts, adaptive interfaces, support for assistive technologies… all of these approaches enable our work to go further by enabling it to be tailored to the permanent, temporary, and/or situational needs of our users.
 
 All of this is to say, this episode made me an even more ardent believer in the idea of [progressive enhancement](http://alistapart.com/article/understandingprogressiveenhancement) and the continuum of experience it enables. You should go listen to it now, I promise there’s more to the story.

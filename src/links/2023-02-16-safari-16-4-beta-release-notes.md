@@ -8,16 +8,16 @@ twitter_text: "Awesome Safari release! 👏🏻👏🏻👏🏻"
 ref_source: "Apple Developer Documentation"
 ---
 
-So much goodness in this release! 
+So much goodness in this release!
 
-* Scroll to Text Fragment
-* Service Workers and Shared Workers can access the Permissions API.
-* Notification API in dedicated workers.
-* Reporting API.
-* Screen Orientation API.
-* Screen Wake Lock API.
-* unprefixed Fullscreen API 
-* Push in web apps saved to the home screen on iOS
-* "id" member in Web App Manifest
-* Badging API.
-* third-party browsers can Add to Home Screen
+- Scroll to Text Fragment
+- Service Workers and Shared Workers can access the Permissions API.
+- Notification API in dedicated workers.
+- Reporting API.
+- Screen Orientation API.
+- Screen Wake Lock API.
+- unprefixed Fullscreen API
+- Push in web apps saved to the home screen on iOS
+- "id" member in Web App Manifest
+- Badging API.
+- third-party browsers can Add to Home Screen

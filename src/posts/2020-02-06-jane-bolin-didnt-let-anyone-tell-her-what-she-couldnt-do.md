@@ -11,7 +11,7 @@ series:
   ordinal: thirty-fourth
 ---
 
-If you‘ve heard of Jane Bolin, it’s probably in the context of her becoming the first Black judge in the United States. It’s quite the accomplishment, no doubt, but Jane’s life was quite literally filled with firsts. 
+If you‘ve heard of Jane Bolin, it’s probably in the context of her becoming the first Black judge in the United States. It’s quite the accomplishment, no doubt, but Jane’s life was quite literally filled with firsts.
 
 <!-- more -->
 
@@ -31,6 +31,6 @@ In so many ways, Jane Bolin was a pioneer. I can’t even begin to imagine what 
 
 ## Further Reading
 
-* [Jane Bolin Biography](https://www.biography.com/political-figure/jane-bolin), Biography.com, 2014
-* ["1st African-American female judge 'showed the strength of the subtle'"](https://www.poughkeepsiejournal.com/story/life/2017/02/13/african-american-female-judge-jane-matilda-bolin-poughkeepsie-high-school-williams-college-gaius-historical-society-of-the-new-york-courts/97851416/), <cite>Poughkeepsie Journal</cite>, 2017
-* ["Jane Matilda Bolin—A Woman of Firsts"](https://nypost.com/2007/02/09/jane-matilda-bolin-a-woman-of-firsts/), <cite>New York Post</cite>, 2007
+- [Jane Bolin Biography](https://www.biography.com/political-figure/jane-bolin), Biography.com, 2014
+- ["1st African-American female judge 'showed the strength of the subtle'"](https://www.poughkeepsiejournal.com/story/life/2017/02/13/african-american-female-judge-jane-matilda-bolin-poughkeepsie-high-school-williams-college-gaius-historical-society-of-the-new-york-courts/97851416/), <cite>Poughkeepsie Journal</cite>, 2017
+- ["Jane Matilda Bolin—A Woman of Firsts"](https://nypost.com/2007/02/09/jane-matilda-bolin-a-woman-of-firsts/), <cite>New York Post</cite>, 2007

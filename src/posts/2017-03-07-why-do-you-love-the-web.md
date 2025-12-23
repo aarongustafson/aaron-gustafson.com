@@ -38,11 +38,11 @@ A few weeks back, [I put out the call for a mentee for 2017](https://www.aaron-g
 
 ## [river kanies: Why I chose to become a web startup consultant](https://medium.com/@river.kanies/why-i-chose-to-become-a-web-startup-consultant-28b059397fe2)
 
->  I will never stop learning, and I will never stop putting myself out of my financial and intellectual comfort zone. I think that, ultimately, this attitude will lead me to be very successful, even if it means being dirt poor for the next few years :}
+> I will never stop learning, and I will never stop putting myself out of my financial and intellectual comfort zone. I think that, ultimately, this attitude will lead me to be very successful, even if it means being dirt poor for the next few years :}
 
 ## [Manuel Matuzovic: This is not a New Year’s resolution](https://medium.com/@matuzo/this-is-not-a-new-years-resolution-2c69d3a0ffeb)
 
-> Web design and web development are not (just) about writing the most flexible, *reactive* and dynamic app, impressing colleagues and clients, and earning awards. First and foremost it’s about people using our products. I believe that from time to time we all need to be reminded of that fact.
+> Web design and web development are not (just) about writing the most flexible, _reactive_ and dynamic app, impressing colleagues and clients, and earning awards. First and foremost it’s about people using our products. I believe that from time to time we all need to be reminded of that fact.
 
 ## [Max Böck: Three Goals for 2017](https://mxb.at/blog/three-goals-for-2017/)
 
@@ -80,19 +80,19 @@ A few weeks back, [I put out the call for a mentee for 2017](https://www.aaron-g
 
 ## [Tyler Malone: State of a Career](https://medium.com/@tylermalone/state-of-a-career-b53ef3a9e53a)
 
->  I love what I do now because my experience in development has been diametrically opposed to that previous job. Solutions to problems are almost never a 1:1 ratio, collaboration is embraced, the pursuit of continual learning is highly encouraged, and the communities I’ve been a part of have been thoroughly supportive.
+> I love what I do now because my experience in development has been diametrically opposed to that previous job. Solutions to problems are almost never a 1:1 ratio, collaboration is embraced, the pursuit of continual learning is highly encouraged, and the communities I’ve been a part of have been thoroughly supportive.
 
 ## [Tabassum Mohamed Fakier: Career goals](http://tabassum.com/blog/day-16-career-goals)
 
 > I thought this was going to be difficult to answer, but it's actually quite simple - albeit long-winded. I love the immense potential it represents; allowing people to help themselves, allowing people to help others directly, fostering connections in lieu of constant personal contact, delivering new experiences, helping people do good things for free - I could go on. There are just so, so, so many reasons why the web is important. The web extends beyond just websites for me: I used it as a crutch to overcome social anxieties and excessive shyness. I taught myself how to code using resources my parents would not afford on paper. I expressed myself. I entertained myself. I made friends when it was difficult for me to maintain friendships at school - and some of these individuals are close friends of mine seven years later. Heck, the web even introduced to me to my soulmate who is with me in Australia. I loved being on the web and I always wanted to be a creator on it.
 
-> There are so many lines being crossed for the sake of monetisation, for the sake of control, and I want this to change. Ultimately, I really want to give back in honour of the faceless strangers that made a lot of my life happen the way it did. The web should be better for everyone. 
+> There are so many lines being crossed for the sake of monetisation, for the sake of control, and I want this to change. Ultimately, I really want to give back in honour of the faceless strangers that made a lot of my life happen the way it did. The web should be better for everyone.
 
 ## [Brian Bell: The Puddle Jumper](http://brianbell.me/2017/the-puddle-jumper/)
 
 > As a kid, I rarely played with a toy the same way twice. When I got older I spent my waking hours flipping, spinning, and grinding at the skatepark. In school, I pursued graphic design. A few months into my first nine-to-five, I discovered the web.
 
-> Every decision along the way was made with that question top-of-mind, *“What else can I do with this?”*
+> Every decision along the way was made with that question top-of-mind, _“What else can I do with this?”_
 
 ## [Todd Libby: Mentoring](http://six03.com/2017/mentoring/)
 
