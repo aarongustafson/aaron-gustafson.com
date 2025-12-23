@@ -149,6 +149,12 @@ const processImages = () => {
 	});
 };
 
+const mediaGlobs = `${config.source}/_images/**/*.{mp4,mov,mp3,ogg}`;
+const mediaCopyOptions = {
+	allowEmpty: true,
+	encoding: false, // Ensure binary assets stay untouched (no UTF-8 decoding)
+};
+
 // Optimized images function with performance tracking
 const images = () => {
 	const startTime = Date.now();
@@ -159,8 +165,8 @@ const images = () => {
 	cacheHits = 0;
 	cacheMisses = 0;
 
-	// Handle media files separately (no processing needed)
-	src([`${config.source}/_images/**/*.{mp4,mov,mp3,ogg}`])
+	// Handle media files separately (no processing needed, preserve binary data)
+	src([mediaGlobs], mediaCopyOptions)
 		.pipe(dest(destination))
 		.pipe(dest(dist));
 
