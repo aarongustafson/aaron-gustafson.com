@@ -166,9 +166,7 @@ const images = () => {
 	cacheMisses = 0;
 
 	// Handle media files separately (no processing needed, preserve binary data)
-	src([mediaGlobs], mediaCopyOptions)
-		.pipe(dest(destination))
-		.pipe(dest(dist));
+	src([mediaGlobs], mediaCopyOptions).pipe(dest(destination)).pipe(dest(dist));
 
 	return (
 		src([
