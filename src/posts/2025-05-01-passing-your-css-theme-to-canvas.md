@@ -3,17 +3,17 @@ title: "Passing Your CSS Theme to `canvas`"
 date: 2025-05-01 14:49:27 -07:00
 comments: true
 tags: ["accessibility", "animation", "CSS", "design", "JavaScript"]
-description: "While working on a recent project I noticed an issue with a `canvas`-based audio visualization when I toggled between light and dark modes. I couldn’t find any articles on to make `canvas` respond nicely to user preserences, so I thought I’d share (in brief) how I solved it."
+description: "While working on a recent project I noticed an issue with a `canvas`-based audio visualization when I toggled between light and dark modes. I couldn’t find any articles on to make `canvas` respond nicely to user preferences, so I thought I’d share (in brief) how I solved it."
 twitter_text: "Need to pipe your CSS theme into a `canvas` element? Here’s how I did it."
 ---
 
-While working on a recent project I noticed an issue with a `canvas`-based audio visualization when I toggled between light and dark modes. When I’d originally set it up I was browsing in dark mode and the light visualization stroke showed up perfectly on the dark background, but it was invisible when viewed using the light theme (which I’d neglected to test). I searched around, but didn’t find any articles on easy ways to make `canvas` respond nicely to user preserences, so I thought I’d share (in brief) how I solved it.
+While working on a recent project I noticed an issue with a `canvas`-based audio visualization when I toggled between light and dark modes. When I’d originally set it up I was browsing in dark mode and the light visualization stroke showed up perfectly on the dark background, but it was invisible when viewed using the light theme (which I’d neglected to test). I searched around, but didn’t find any articles on easy ways to make `canvas` respond nicely to user preferences, so I thought I’d share (in brief) how I solved it.
 
 <!-- more -->
 
 ## The CSS Setup
 
-The themeing of this particular project uses [CSS custom properties](https://developer.mozilla.org/docs/Web/CSS/CSS_cascading_variables/Using_CSS_custom_properties). For simplicty I’m going to set up two named colors and then use two theme-specific custom properties to apply them in the default light theme and the dark theme:
+The theming of this particular project uses [CSS custom properties](https://developer.mozilla.org/docs/Web/CSS/CSS_cascading_variables/Using_CSS_custom_properties). For simplicty I’m going to set up two named colors and then use two theme-specific custom properties to apply them in the default light theme and the dark theme:
 
 ```css
 :root {
@@ -94,4 +94,4 @@ I put together [a quick demo of this](https://codepen.io/aarongustafson/pen/LEEQ
 
 <hr>
 
-Hopefully this is helpful to someone out there. Happy themeing!
+Hopefully this is helpful to someone out there. Happy theming!
