@@ -44,7 +44,7 @@ To use the component, wrap it around your `input` field and specify an endpoint:
 </dynamic-datalist>
 ```
 
-As users type, the component makes GET requests to that endpoint, passing in the typed value as the "query" parameter (e.g., `/api/search?query=WHAT_THE_USER_TYPED`). The response fromm the endpoint is used to populates a dynamic `datalist` element with the results.
+As users type, the component makes GET requests to that endpoint, passing in the typed value as the "query" parameter (e.g., `/api/search?query=WHAT_THE_USER_TYPED`). The response from the endpoint is used to populates a dynamic `datalist` element with the results.
 
 The structure of the response should be JSON with an `options` array of string values:
 
