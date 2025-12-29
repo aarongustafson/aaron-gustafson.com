@@ -1,4 +1,4 @@
-import axios from "axios";
+import fetch from "node-fetch";
 import fs from "fs/promises";
 import path from "path";
 import { htmlToText } from "html-to-text";
@@ -210,16 +210,16 @@ class SocialMediaAPI {
 					mediaIds.push("test-media-" + Date.now());
 				} else {
 					try {
-						const mediaResponse = await axios.post(
-							`${serverUrl}/api/v1/media`,
-							{ url: mediaUrl },
-							{
-								headers: {
-									Authorization: `Bearer ${accessToken}`,
-								},
+						const mediaResponse = await fetch(`${serverUrl}/api/v1/media`, {
+							method: "POST",
+							headers: {
+								Authorization: `Bearer ${accessToken}`,
+								"Content-Type": "application/json",
 							},
-						);
-						mediaIds.push(mediaResponse.data.id);
+							body: JSON.stringify({ url: mediaUrl }),
+						});
+						const mediaData = await mediaResponse.json();
+						mediaIds.push(mediaData.id);
 					} catch (error) {
 						console.log("Failed to upload media to Mastodon:", error.message);
 					}
@@ -242,18 +242,16 @@ class SocialMediaAPI {
 			};
 		}
 
-		const response = await axios.post(
-			`${serverUrl}/api/v1/statuses`,
-			postData,
-			{
-				headers: {
-					Authorization: `Bearer ${accessToken}`,
-					"Content-Type": "application/json",
-				},
+		const response = await fetch(`${serverUrl}/api/v1/statuses`, {
+			method: "POST",
+			headers: {
+				Authorization: `Bearer ${accessToken}`,
+				"Content-Type": "application/json",
 			},
-		);
+			body: JSON.stringify(postData),
+		});
 
-		return response.data;
+		return await response.json();
 	}
 
 	async postToBuffer(text, profileIds, mediaUrl = null) {
@@ -265,21 +263,19 @@ class SocialMediaAPI {
 		const results = [];
 
 		for (const profileId of profileIds) {
-			const postData = {
-				text: text,
-				profile_ids: [profileId],
-			};
+			// Build form-encoded data (Buffer API expects this format)
+			const formData = new URLSearchParams();
+			formData.append("text", text);
+			formData.append("profile_ids[]", profileId);
 
 			if (mediaUrl) {
-				postData.media = {
-					photo: mediaUrl,
-				};
+				formData.append("media[photo]", mediaUrl);
 			}
 
 			if (this.testMode) {
 				console.log(
 					`🧪 TEST: Buffer post data for profile ${profileId}:`,
-					JSON.stringify(postData, null, 2),
+					formData.toString(),
 				);
 				results.push({
 					id: `test-buffer-${profileId}-${Date.now()}`,
@@ -290,30 +286,48 @@ class SocialMediaAPI {
 			}
 
 			try {
-				const response = await axios.post(
+				const response = await fetch(
 					"https://api.bufferapp.com/1/updates/create.json",
-					postData,
 					{
+						method: "POST",
 						headers: {
 							Authorization: `Bearer ${accessToken}`,
-							"Content-Type": "application/json",
+							"Content-Type": "application/x-www-form-urlencoded",
 						},
+						body: formData.toString(),
 					},
 				);
-				results.push(response.data);
+				const data = await response.json();
+
+				// Check for errors in the response
+				if (!response.ok || !data.success) {
+					throw new Error(data.message || `HTTP ${response.status}`);
+				}
+
+				results.push(data);
 			} catch (error) {
-				const errorDetails = error.response?.data || error.message;
+				// For fetch errors, try to get response data
+				let errorDetails = error.message;
+				let responseData = null;
+
+				try {
+					if (error.response) {
+						responseData = await error.response.json();
+						errorDetails = responseData;
+					}
+				} catch (e) {
+					// Ignore JSON parse errors
+				}
+
 				console.log(
 					`Failed to post to Buffer profile ${profileId}:`,
 					error.message,
 				);
-				if (error.response?.data) {
+				if (responseData) {
 					console.log(
 						"Buffer API error details:",
-						JSON.stringify(error.response.data, null, 2),
+						JSON.stringify(responseData, null, 2),
 					);
-				}
-				if (error.response?.status === 400) {
 					console.log(
 						"Post data that was rejected:",
 						JSON.stringify(postData, null, 2),
@@ -349,17 +363,18 @@ class SocialMediaAPI {
 			};
 		}
 
-		const response = await axios.post(
+		const response = await fetch(
 			`https://maker.ifttt.com/trigger/${event}/with/key/${webhookKey}`,
-			data,
 			{
+				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
 				},
+				body: JSON.stringify(data),
 			},
 		);
 
-		return response.data;
+		return await response.json();
 	}
 }
 

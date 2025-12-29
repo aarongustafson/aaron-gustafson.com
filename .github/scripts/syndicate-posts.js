@@ -1,4 +1,4 @@
-import axios from "axios";
+import fetch from "node-fetch";
 import { fileURLToPath } from "url";
 import { ContentProcessor, SocialMediaAPI } from "./social-media-utils.js";
 
@@ -17,39 +17,23 @@ class PostSyndicator extends SocialMediaAPI {
 
 			// Add cache-busting parameter to ensure we get fresh content
 			const cacheBustedUrl = `${feedUrl}?t=${Date.now()}`;
-			const response = await axios.get(cacheBustedUrl, {
+			const response = await fetch(cacheBustedUrl, {
 				headers: {
 					"Cache-Control": "no-cache",
 					Pragma: "no-cache",
 					Accept: "application/json",
 				},
-				responseType: "json",
 			});
 
 			console.log("Feed URL:", cacheBustedUrl);
 			console.log("Response status:", response.status);
-			console.log("Response content-type:", response.headers["content-type"]);
+			console.log(
+				"Response content-type:",
+				response.headers.get("content-type"),
+			);
 
-			// Parse JSON if it's a string (sometimes axios doesn't auto-parse)
-			let feed = response.data;
-			if (typeof feed === "string") {
-				console.log("Feed is string, parsing JSON...");
-				try {
-					feed = JSON.parse(feed);
-				} catch (parseError) {
-					console.error("❌ JSON parsing failed:", parseError.message);
-					// Try to identify the problematic area
-					const errorPosition = parseError.message.match(/position (\d+)/);
-					if (errorPosition) {
-						const pos = parseInt(errorPosition[1]);
-						const start = Math.max(0, pos - 100);
-						const end = Math.min(feed.length, pos + 100);
-						console.log(`Context around position ${pos}:`);
-						console.log(feed.substring(start, end));
-					}
-					throw parseError;
-				}
-			}
+			// Parse JSON
+			let feed = await response.json();
 
 			// Debug logging
 			console.log("Feed type:", typeof feed);
