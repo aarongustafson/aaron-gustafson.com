@@ -311,4 +311,13 @@
 			}
 		}
 	}
+
+	.listing--talks {
+		.entry__type {
+			display: none;
+		}
+		.entry__details {
+			margin-inline-start: 0;
+		}
+	}
 }
