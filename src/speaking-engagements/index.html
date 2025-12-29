@@ -152,7 +152,10 @@ javascripts:
 	{% set talks = collections.talks %} {% set teaser_heading_level = "h3" %} {%
 	set show_summary = true %}
 	<ol class="listing listing--talks">
-		{% for post in talks %} {% include "partials/post/teaser.njk" %} {% endfor
-		%}
+		{% for post in talks %}
+			<li>
+				{% include "partials/post/teaser.njk" %}
+			</li>
+		{% endfor %}
 	</ol>
 </section>

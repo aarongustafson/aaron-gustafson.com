@@ -110,17 +110,6 @@
 				@include rem(margin-block-end, 12, false);
 			}
 
-			&--future .listing__item__title {
-				@include rem(font-size, 24);
-			}
-
-			&--future {
-				border-color: $color-dark-teal;
-				background: $color-dark-teal;
-				box-shadow: inset 0 0 50px 7px $color-dark-teal;
-				text-shadow: 1px 1px 1px $color-dark-teal;
-			}
-
 			//&__presentation-type {
 			//  font-weight: bold;
 			//}
@@ -133,6 +122,19 @@
 			//  font-size: .8em;
 			//  white-space: nowrap;
 			//}
+		}
+
+		&--future {
+			border-color: $color-dark-teal;
+			background: $color-dark-teal;
+			box-shadow: inset 0 0 50px 7px $color-dark-teal;
+			// Use a darker text-shadow to meet WCAG AA contrast requirements
+			// when background images don't load
+			text-shadow: 1px 1px 1px color.scale($color-dark-teal, $lightness: -40%);
+
+			.listing__item__title {
+				@include rem(font-size, 24);
+			}
 		}
 
 		&__location-picture {
@@ -307,6 +309,15 @@
 					}
 				}
 			}
+		}
+	}
+
+	.listing--talks .entry--teaser {
+		.entry__type {
+			display: none;
+		}
+		.entry__details {
+			margin-inline-start: 0;
 		}
 	}
 }
