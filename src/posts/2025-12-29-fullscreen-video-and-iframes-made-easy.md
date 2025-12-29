@@ -1,6 +1,6 @@
 ---
 title: "Fullscreen Video and Iframes Made Easy"
-date: 2025-12-10 10:00:00 -07:00
+date: 2025-12-29 17:17:27 +00:00
 comments: true
 tags:
   [
@@ -15,15 +15,13 @@ description: "The fullscreen-control web component adds fullscreen capabilities 
 twitter_text: "Add fullscreen controls to videos and iframes with progressive enhancement. One wrapper, zero hassle."
 ---
 
-Adding fullscreen capabilities to videos and embedded iframes shouldn't require wrestling with prefixed APIs or managing focus states. The `fullscreen-control` web component handles all of that for you—just wrap your media element and you're done.
+Adding fullscreen capabilities to videos and embedded iframes shouldn’t require wrestling with prefixed APIs or managing focus states. The `fullscreen-control` web component handles all of that for you — just wrap it around the element. The component handles the rest as a discrete progressive enhancement.
 
 <!-- more -->
 
-This component takes care of browser prefixes, keyboard navigation, focus management, and accessibility attributes automatically. It's progressive enhancement at its best: wrap it, forget it, and let your users enjoy fullscreen media.
+## Easy-peasy
 
-## Drop-dead simple
-
-Wrap a video element:
+Here’s a simple example using a `video` element:
 
 ```html
 <fullscreen-control>
@@ -31,20 +29,19 @@ Wrap a video element:
 </fullscreen-control>
 ```
 
-That's it. You get:
+With that in place, the component
 
-- A positioned fullscreen button overlay
-- Browser prefix handling (webkit, moz)
-- Automatic focus management
-- Keyboard support (Escape to exit)
-- ARIA attributes for accessibility
-- Native video controls enabled automatically
+* Adds a styleable button for launching fullscreen control over the contained element,
+* Handles browser prefixes as needed,
+* Manages focus automatically,
+* Rigs up the necessary keyboard events (e.g. <kbd>Escape</kbd> to exit), and
+* Assigns the relevant ARIA attributes. 
 
-The component uses light DOM, so your video stays in the regular DOM tree and all your existing CSS continues to work.
+The component uses light DOM, so your `video` stays in the regular DOM tree and all your existing CSS continues to work.
 
-## Works with iframes too
+## Fullscreen iframes
 
-Embed a YouTube video with fullscreen support:
+Need to embed a YouTube video, slide deck, or code demo? The component works with `iframe` elements too:
 
 ```html
 <fullscreen-control>
@@ -60,9 +57,9 @@ Embed a YouTube video with fullscreen support:
 
 The component automatically adds the necessary `allow="fullscreen"` and `allowfullscreen` attributes, including prefixed versions for broader compatibility.
 
-## Customizable button text
+## Customizable `button` text
 
-Change the button label to match your site's language or style:
+You can change the `button` label to match your site’s language or writing style by setting the `button-text` attribute:
 
 ```html
 <fullscreen-control button-text="全画面表示">
@@ -70,11 +67,7 @@ Change the button label to match your site's language or style:
 </fullscreen-control>
 ```
 
-The default is "View fullscreen" but you can customize it to anything you like.
-
-## Accessible name injection
-
-Use the `{name}` token to automatically pull the media's accessible name into the button text:
+The default button label is “View fullscreen,” but you can use this attribute to customize it to anything you like. You can even dynamically inject the accessible name of the contained element, using the `{name}` token. For example:
 
 ```html
 <fullscreen-control button-text="View {name} fullscreen">
@@ -82,11 +75,11 @@ Use the `{name}` token to automatically pull the media's accessible name into th
 </fullscreen-control>
 ```
 
-This creates a button with the text "View Product demo fullscreen". The component looks for `aria-label`, `title`, or other native naming on the wrapped element and uses that to make the button more contextual.
+This creates a `button` with the text “View Product demo fullscreen”. The component looks for `aria-label`, `title`, or other native naming on the wrapped element and uses that to make the `button` contextual.
 
 ## Distinct screen reader labels
 
-Sometimes the visible text and screen reader announcement should differ. Use `button-label` for a separate ARIA label:
+If you want the visible label and accessible button name to differ, use the `button-label` attribute. Like `button-text`, it can also inject the accessible name of the controlled element using the `{name}` token:
 
 ```html
 <fullscreen-control
@@ -97,17 +90,15 @@ Sometimes the visible text and screen reader announcement should differ. Use `bu
 </fullscreen-control>
 ```
 
-This shows "Fullscreen" visually but announces "View Product teaser in fullscreen mode" to screen reader users. Only use this when you need different text for accessibility—otherwise skip it and let the component mirror `button-text` automatically.
+This code will generate a `button` that visually reads “Fullscreen”, but is announced as “View Product teaser in fullscreen mode” to screen readers. In mode cases, `button-text` will suffice, but this option is available if you need to distinguish the buttons of multiple fullscreen controls from one another and don’t have visual space to display their accessible names.
 
-## Perfect focus management
+## Focus management 
 
-When users click the fullscreen button, focus automatically returns to the button after exiting fullscreen. This ensures keyboard users don't lose their place. The component also listens for the Escape key to exit fullscreen, matching native browser behavior.
+If users activate fullscreen using the button, focus will automatically return to the button upon exiting fullscreen. This ensures keyboard users don’t lose their place.
 
-All of this happens automatically without any configuration needed.
+## Need more control?
 
-## Programmatic control
-
-Need to trigger fullscreen from JavaScript? The component exposes three methods:
+Want to manage the component yourself? The component exposes three methods:
 
 ```javascript
 const control = document.querySelector("fullscreen-control");
@@ -124,9 +115,7 @@ control.toggleFullscreen();
 
 These handle all the browser prefixes and error handling for you.
 
-## Event hooks
-
-Listen for fullscreen state changes:
+There are also a set of events you can tap into when the fullscreen state changes:
 
 ```javascript
 const control = document.querySelector("fullscreen-control");
@@ -140,7 +129,7 @@ control.addEventListener("fullscreen-control:exit", () => {
 });
 ```
 
-These custom events let you hook into state changes to update your UI, pause other media, or track analytics.
+These events give you the ability to pause other media, track analytics, and the like.
 
 ## Style the button
 
@@ -199,10 +188,6 @@ Or load it from a CDN for quick prototyping:
 
 The component uses modern web standards (Custom Elements v1, ES Modules) and handles browser-prefixed fullscreen APIs internally. For older browsers, you may need polyfills, but the component gracefully handles missing APIs with console warnings rather than breaking your page.
 
-## Why I built this
-
-I kept writing the same fullscreen boilerplate for video players and iframe embeds—checking for prefixes, managing focus, wiring up keyboard events. This component packages all of that into a single wrapper that just works.
-
-The focus management piece was particularly important. Too many custom video players forget to return focus to the trigger button after exiting fullscreen, leaving keyboard users stranded. This component gets it right by default.
+## Demo and source code
 
 Check out the [live demo](https://aarongustafson.github.io/fullscreen-control/demo/) to see all the features in action, or grab the code from [GitHub](https://github.com/aarongustafson/fullscreen-control).
