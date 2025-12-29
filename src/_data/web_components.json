@@ -1,5 +1,12 @@
 [
 	{
+		"name": "content-warning",
+		"github": "aarongustafson/content-warning",
+		"description": "Web component for block and inline content warnings.",
+		"demo_url": "https://aarongustafson.github.io/content-warning/demo/",
+		"npm_package": "@aarongustafson/content-warning"
+	},
+	{
 		"name": "dynamic-datalist",
 		"github": "aarongustafson/dynamic-datalist",
 		"description": "Web component that enables you to dynamically update a field's `datalist` with values retrieved from a URL as the user types.",
