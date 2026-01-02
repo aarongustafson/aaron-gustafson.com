@@ -97,7 +97,8 @@ class PostSyndicator extends SocialMediaAPI {
 		const socialText =
 			post.social_text || ContentProcessor.stripHtml(post.content_html);
 		// For LinkedIn posts, use summary/excerpt if available, otherwise use truncated content
-		const linkedInExcerpt = post.summary || ContentProcessor.truncateText(socialText, 600);
+		const linkedInExcerpt =
+			post.summary || ContentProcessor.truncateText(socialText, 600);
 		const linkedInContent = ContentProcessor.processContentForLinkedIn(
 			linkedInExcerpt,
 			true, // isPost = true
