@@ -96,8 +96,12 @@ class PostSyndicator extends SocialMediaAPI {
 		// Prepare content for different platforms
 		const socialText =
 			post.social_text || ContentProcessor.stripHtml(post.content_html);
+		// For LinkedIn posts, use summary/excerpt if available, otherwise use truncated content
+		const linkedInExcerpt = post.summary || ContentProcessor.truncateText(socialText, 600);
 		const linkedInContent = ContentProcessor.processContentForLinkedIn(
-			post.content_html,
+			linkedInExcerpt,
+			true, // isPost = true
+			post.url,
 		);
 
 		// LinkedIn via IFTTT
@@ -117,7 +121,7 @@ class PostSyndicator extends SocialMediaAPI {
 				await this.sendToIFTTT("linkedin_post", {
 					value1: post.title,
 					value2: post.url,
-					value3: ContentProcessor.truncateText(linkedInContent, 200),
+					value3: linkedInContent,
 				});
 				await this.cache.markPlatformSuccess(
 					"posts",

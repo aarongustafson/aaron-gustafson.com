@@ -96,10 +96,14 @@ class LinkSyndicator extends SocialMediaAPI {
 		// Prepare content for different platforms
 		const socialText =
 			link.social_text || ContentProcessor.stripHtml(link.content_html);
+		const relatedUrl = link.external_url || link.url;
+		// For LinkedIn links, include full content with the external URL appended
 		const linkedInContent = ContentProcessor.processContentForLinkedIn(
 			link.content_html,
+			false, // isPost = false
+			link.url,
+			relatedUrl,
 		);
-		const relatedUrl = link.external_url || link.url;
 
 		// Generate screenshot URL
 		const screenshotUrl = ContentProcessor.createScreenshotUrl(relatedUrl);
@@ -120,8 +124,8 @@ class LinkSyndicator extends SocialMediaAPI {
 				console.log("📊 Posting to LinkedIn via IFTTT...");
 				await this.sendToIFTTT("linkedin_link", {
 					value1: link.title,
-					value2: relatedUrl,
-					value3: ContentProcessor.truncateText(linkedInContent, 200),
+					value2: link.url,
+					value3: linkedInContent,
 				});
 				await this.cache.markPlatformSuccess(
 					"links",

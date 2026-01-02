@@ -27,7 +27,12 @@ class ContentProcessor {
 		return content;
 	}
 
-	static processContentForLinkedIn(rawContent) {
+	static processContentForLinkedIn(
+		rawContent,
+		isPost = false,
+		itemUrl = "",
+		externalUrl = "",
+	) {
 		let processed = rawContent;
 		processed = this.removeBlockquotes(processed);
 		processed = this.removeTrailingParagraphs(processed);
@@ -36,6 +41,14 @@ class ContentProcessor {
 		// Clean up extra newlines
 		processed = processed.replace(/\n\s*\n\s*\n/g, "\n\n");
 		processed = processed.trim();
+
+		if (isPost) {
+			// For posts: use excerpt and add "Read the full post" link
+			processed = `${processed}\n\Continue reading this post on my blog: ${itemUrl}`;
+		} else if (externalUrl) {
+			// For links: append the external URL in its own paragraph
+			processed = `${processed}\n\n${externalUrl}`;
+		}
 
 		return processed;
 	}
