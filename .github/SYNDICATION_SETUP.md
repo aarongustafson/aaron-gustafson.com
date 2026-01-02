@@ -103,20 +103,32 @@ The workflow syndicates content to the following platforms:
 
 **Note**: Bluesky and Mastodon do not have IFTTT integrations, so they rely entirely on their respective APIs.
 
-**LinkedIn IFTTT Webhook Payload Example:**
+**LinkedIn IFTTT Webhook Payload Examples:**
 
+For **Posts** (`linkedin_post`):
 ```json
 {
   "value1": "Article Title",
   "value2": "https://www.aaron-gustafson.com/notebook/article-slug/",
-  "value3": "Brief excerpt or tags"
+  "value3": "Excerpt text...\n\nRead the full post on my blog: https://www.aaron-gustafson.com/notebook/article-slug/"
 }
 ```
 
-In the IFTTT LinkedIn action (Share a link):
+For **Links** (`linkedin_link`):
+```json
+{
+  "value1": "Link Title",
+  "value2": "https://www.aaron-gustafson.com/links/saved-link/",
+  "value3": "Full content in markdown...\n\nhttps://external-url.com/article"
+}
+```
+
+In the IFTTT LinkedIn action (Share a link/post):
 
 - **Link URL**: `{{Value2}}`
-- **Comment**: `{{Value1}}\n\n{{Value3}}`
+- **Comment**: `{{Value3}}`
+
+**Note**: For posts, `value3` includes the excerpt followed by "Read the full post on my blog: [URL]". For links, `value3` includes the full content with the external URL appended. The URL in `value2` uses the original domain (not LinkedIn's shortener).
 
 **Pinterest IFTTT Webhook Payload Example:**
 
