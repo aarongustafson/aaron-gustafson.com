@@ -68,7 +68,7 @@ Here are some of the patterns I've documented:
 
 Sure, the `placeholder` attribute is there, and in a pinch it will be included in a field’s accessible name calculation, but sighted users will lose the label as soon as they start typing.
 
-**ARIA Attribute Confusion**: The model would routinely involce ARIA for no reason:
+**ARIA Attribute Confusion**: The model would routinely involve ARIA for no reason:
 
 ```html
 <label for="color-question"
