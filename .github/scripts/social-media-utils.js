@@ -27,6 +27,11 @@ class ContentProcessor {
 		return content;
 	}
 
+	// LinkedIn shortens URLs to approximately this many characters
+	// (e.g. https://lnkd.in/gqwacVKT)
+	static LINKEDIN_SHORTENED_URL_LENGTH = 28;
+	static LINKEDIN_MAX_LENGTH = 3000;
+
 	static processContentForLinkedIn(
 		rawContent,
 		isPost = false,
@@ -43,14 +48,48 @@ class ContentProcessor {
 		processed = processed.trim();
 
 		if (isPost) {
-			// For posts: use excerpt and add "Read the full post" link
-			processed = `${processed}\n\Continue reading this post on my blog: ${itemUrl}`;
+			// For posts: include full content if it fits, otherwise truncate by word
+			const fullSuffix = `\n\nOriginally posted at ${itemUrl}`;
+			const truncatedSuffix = `\n\nContinue reading on ${itemUrl}`;
+
+			// Account for LinkedIn shortening the URL
+			const urlSavings = Math.max(0, itemUrl.length - this.LINKEDIN_SHORTENED_URL_LENGTH);
+
+			const fullMessage = `${processed}${fullSuffix}`;
+			const effectiveFullLength = fullMessage.length - urlSavings;
+
+			if (effectiveFullLength <= this.LINKEDIN_MAX_LENGTH) {
+				// Full content fits within the limit
+				processed = fullMessage;
+			} else {
+				// Need to truncate: budget = max length - suffix (with shortened URL) - ellipsis
+				const effectiveSuffixLength = truncatedSuffix.length - urlSavings;
+				const contentBudget = this.LINKEDIN_MAX_LENGTH - effectiveSuffixLength - 1; // 1 for "…"
+				const truncatedContent = this.truncateByWord(processed, contentBudget);
+				processed = `${truncatedContent}\u2026${truncatedSuffix}`;
+			}
 		} else if (externalUrl) {
-			// For links: append the external URL in its own paragraph
-			processed = `${processed}\n\n${externalUrl}`;
+			// For links: append "Check it out: {url}"
+			processed = `${processed}\n\nCheck it out: ${externalUrl}`;
 		}
 
 		return processed;
+	}
+
+	/**
+	 * Truncate text at a word boundary without adding any suffix.
+	 */
+	static truncateByWord(text, maxLength) {
+		if (text.length <= maxLength) return text;
+
+		const truncated = text.substring(0, maxLength);
+		const lastSpace = truncated.lastIndexOf(" ");
+
+		if (lastSpace > 0) {
+			return truncated.substring(0, lastSpace);
+		}
+
+		return truncated;
 	}
 
 	static createScreenshotUrl(url) {
