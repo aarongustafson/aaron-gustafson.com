@@ -39,7 +39,13 @@ const version = "v{{ VERSION }}:",
 			name: `${version}other`,
 			limit: 50,
 		},
+		webmentions: {
+			name: `${version}webmentions`,
+			limit: 10,
+			maxAge: 60 * 60 * 1000, // 1 hour in ms
+		},
 	},
+	webmention_api = /webmention\.io\/api\//,
 	// Never cache
 	ignore = [
 		"/api/",

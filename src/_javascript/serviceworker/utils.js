@@ -67,3 +67,12 @@ function requestIsLikelyForHTML(url) {
 	}
 	return false;
 }
+
+function isCacheExpired(response, maxAge) {
+	const dateHeader = response.headers.get("Date");
+	if (!dateHeader) {
+		return true; // no date = treat as expired
+	}
+	const cachedTime = new Date(dateHeader).getTime();
+	return (Date.now() - cachedTime) > maxAge;
+}

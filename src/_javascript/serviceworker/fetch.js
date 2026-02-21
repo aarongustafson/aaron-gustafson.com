@@ -42,13 +42,13 @@ self.addEventListener("fetch", (event) => {
 		);
 	}
 
-	// JavaScript
-	else if (/\.js$/.test(url) && isHighPriority(url)) {
+	// CSS - stale-while-revalidate
+	else if (/\.css$/.test(url) && isHighPriority(url)) {
 		event.respondWith(
 			caches.match(request).then((cached_result) => {
 				// cached first
 				if (cached_result) {
-					// Update the cache in the background, but only if we’re not trying to save data
+					// Update the cache in the background, but only if we're not trying to save data
 					if (!save_data && !slow_connection) {
 						event.waitUntil(refreshCachedCopy(request, sw_caches.static.name));
 					}
@@ -67,6 +67,62 @@ self.addEventListener("fetch", (event) => {
 						// fallback to offline page
 						.catch(respondWithServerOffline)
 				);
+			}),
+		);
+	}
+
+	// JavaScript - stale-while-revalidate
+	else if (/\.js$/.test(url) && isHighPriority(url)) {
+		event.respondWith(
+			caches.match(request).then((cached_result) => {
+				// cached first
+				if (cached_result) {
+					// Update the cache in the background, but only if we're not trying to save data
+					if (!save_data && !slow_connection) {
+						event.waitUntil(refreshCachedCopy(request, sw_caches.static.name));
+					}
+					return cached_result;
+				}
+				// fallback to network
+				return (
+					fetch(request)
+						.then((response) => {
+							const copy = response.clone();
+							event.waitUntil(
+								saveToCache(sw_caches.static.name, request, copy),
+							);
+							return response;
+						})
+						// fallback to offline page
+						.catch(respondWithServerOffline)
+				);
+			}),
+		);
+	}
+
+	// Webmention.io API - time-based cache (1 hour)
+	else if (webmention_api.test(url)) {
+		event.respondWith(
+			caches.open(sw_caches.webmentions.name).then((cache) => {
+				return cache.match(request).then((cached_result) => {
+					if (cached_result && !isCacheExpired(cached_result, sw_caches.webmentions.maxAge)) {
+						return cached_result;
+					}
+					// Cache is missing or expired — fetch fresh
+					return fetch(request)
+						.then((response) => {
+							const copy = response.clone();
+							event.waitUntil(saveToCache(sw_caches.webmentions.name, request, copy));
+							return response;
+						})
+						.catch(() => {
+							// Network failed — return stale cache if available
+							if (cached_result) {
+								return cached_result;
+							}
+							return respondWithServerOffline();
+						});
+				});
 			}),
 		);
 	}
