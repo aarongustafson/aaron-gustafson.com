@@ -7,7 +7,7 @@
 	"features": {
 		"ghcr.io/devcontainers-contrib/features/git-lfs:2": {}
 	},
-	"postCreateCommand": "git lfs install --force"
+	"postCreateCommand": "command -v git-lfs >/dev/null 2>&1 || (sudo apt-get update && sudo apt-get install -y git-lfs); git lfs install --force"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
