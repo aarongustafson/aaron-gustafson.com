@@ -1,5 +1,6 @@
 [build]
 command = "npm run build"
+publish = "dist"
 functions = ".netlify/functions"
 edge_functions = ".netlify/edge-functions"
 
@@ -33,8 +34,11 @@ workflow = "syndicate-content.yml"
 NODE_VERSION = "20"
 
 # Post-deploy hook for social media syndication
-[[build.processing]]
-skip_processing = false
+[build.processing]
+skip_processing = true
+
+[build.processing.images]
+compress = false
 
 [[redirects]]
 from = "/notebook/20*/:slug"
