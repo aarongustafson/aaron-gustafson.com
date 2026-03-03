@@ -1,7 +1,6 @@
 /* jshint node: true */
 import fs from "fs";
 import gulp from "gulp";
-import filter from "gulp-filter";
 import gulpif from "gulp-if";
 import svgo from "gulp-svgo";
 import path from "path";
@@ -11,6 +10,10 @@ import through2 from "through2";
 import config from "./config.js";
 const { dest, src } = gulp;
 const { Transform } = stream;
+
+const DISABLE_IMAGE_OPTIMIZATION =
+	process.env.DISABLE_IMAGE_OPTIMIZATION === "1" ||
+	process.env.DISABLE_IMAGE_OPTIMIZATION === "true";
 
 const destination = `${config.static}/i`;
 const dist = `${config.destination}/i`;
@@ -120,6 +123,11 @@ const svgo_opts = {
 const processImages = () => {
 	return through2.obj(async function (file, _, cb) {
 		try {
+			// If optimization is disabled, keep original bytes.
+			if (DISABLE_IMAGE_OPTIMIZATION) {
+				return cb(null, file);
+			}
+
 			// Skip if already processed
 			if (!needsProcessing(file)) {
 				return cb(null, file);
@@ -155,6 +163,11 @@ const mediaCopyOptions = {
 	encoding: false, // Ensure binary assets stay untouched (no UTF-8 decoding)
 };
 
+const imageCopyOptions = {
+	allowEmpty: true,
+	encoding: false,
+};
+
 // Optimized images function with performance tracking
 const images = () => {
 	const startTime = Date.now();
@@ -169,21 +182,24 @@ const images = () => {
 	src([mediaGlobs], mediaCopyOptions).pipe(dest(destination)).pipe(dest(dist));
 
 	return (
-		src([
+		src(
+			[
 			`${config.source}/_images/**/*.{jpg,png,gif,svg}`,
 			`!${config.source}/**/*.sketch/**`,
-		])
-			// Use filter to skip unchanged files
+			`!${config.source}/**/.DS_Store`,
+			],
+			imageCopyOptions,
+		)
+
+			// Track cache stats without dropping files (important for clean builds)
 			.pipe(
-				filter((file) => {
-					const needs = needsProcessing(file);
-					if (needs) {
-						processedCount++;
-						return true;
-					} else {
+				through2.obj(function (file, _, cb) {
+					if (DISABLE_IMAGE_OPTIMIZATION || !needsProcessing(file)) {
 						skippedCount++;
-						return false;
+					} else {
+						processedCount++;
 					}
+					return cb(null, file);
 				}),
 			)
 
