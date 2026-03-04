@@ -151,7 +151,7 @@ export default async (config) => {
 			resizedImageUrl: (src) => {
 				const sameOriginPath = getSameOriginPath(src);
 				if (PRODUCTION && sameOriginPath) {
-					return `/img/100x100${sameOriginPath}`;
+					return `/img/100/x/100${sameOriginPath}`;
 				}
 				return PRODUCTION
 					? `https://res.cloudinary.com/aarongustafson/image/fetch/q_100,f_auto,w_100,h_100,c_fill/${encodeURIComponent(
