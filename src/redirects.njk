@@ -3,7 +3,7 @@ permalink: /_redirects
 eleventyExcludeFromCollections: true
 ---
 /img/full/*  /.netlify/images?url=/:splat  200!
-/img/:width/:height/*  /.netlify/images?url=/:splat&width=:width&height=:height&fit=cover  200!
+/img/:widthx:height/*  /.netlify/images?url=/:splat&width=:width&height=:height&fit=cover  200!
 /img/:width/*  /.netlify/images?url=/:splat&width=:width  200!
 
 {% for page in collections.all %}
