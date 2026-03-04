@@ -45,14 +45,16 @@ compress = false
 # Use via: /img/full/i/... or /img/<width>/i/...
 # These are rewrites (status 200), not redirects.
 [[redirects]]
-from = "/img/full/i/*"
-to = "/.netlify/images?url=/i/:splat"
+from = "/img/full/*"
+to = "/.netlify/images?url=/:splat"
 status = 200
+force = true
 
 [[redirects]]
-from = "/img/:width/i/*"
-to = "/.netlify/images?url=/i/:splat&width=:width"
+from = "/img/:width/*"
+to = "/.netlify/images?url=/:splat&width=:width"
 status = 200
+force = true
 
 [[redirects]]
 from = "/notebook/20*/:slug"
