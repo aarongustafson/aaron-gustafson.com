@@ -47,6 +47,15 @@ export default async (config) => {
 	config.cloudinaryCloudName = "aarongustafson";
 	config.hostname = "https://www.aaron-gustafson.com";
 
+	function getSameOriginPath(src) {
+		if (!src) return null;
+		if (src.startsWith("/")) return src;
+		if (src.startsWith(config.hostname)) {
+			return src.slice(config.hostname.length) || "/";
+		}
+		return null;
+	}
+
 	// Markdown
 	let md = markdownIt(markdown_options)
 		.use(anchor, {
@@ -121,6 +130,10 @@ export default async (config) => {
 		hero: {
 			sizes: "(min-width:60em) 700px, (max-width: 60em) 100vw",
 			resizedImageUrl: (src, width) => {
+				const sameOriginPath = getSameOriginPath(src);
+				if (PRODUCTION && sameOriginPath) {
+					return `/img/${width}${sameOriginPath}`;
+				}
 				return PRODUCTION
 					? `https://res.cloudinary.com/aarongustafson/image/fetch/q_auto,f_auto,w_${width}/${src}`
 					: src.replace(config.hostname, "");
@@ -136,6 +149,10 @@ export default async (config) => {
 		thumbnail: {
 			sizes: "100px",
 			resizedImageUrl: (src) => {
+				const sameOriginPath = getSameOriginPath(src);
+				if (PRODUCTION && sameOriginPath) {
+					return `/img/100/100${sameOriginPath}`;
+				}
 				return PRODUCTION
 					? `https://res.cloudinary.com/aarongustafson/image/fetch/q_100,f_auto,w_100,h_100,c_fill/${encodeURIComponent(
 							src,
@@ -154,6 +171,10 @@ export default async (config) => {
 		default: {
 			sizes: "(min-width:60em) 700px, (max-width: 60em) 100vw",
 			resizedImageUrl: (src, width) => {
+				const sameOriginPath = getSameOriginPath(src);
+				if (PRODUCTION && sameOriginPath) {
+					return `/img/${width}${sameOriginPath}`;
+				}
 				return PRODUCTION
 					? `https://res.cloudinary.com/aarongustafson/image/fetch/q_auto,f_auto,w_${width}/${src}`
 					: src.replace(config.hostname, "");
