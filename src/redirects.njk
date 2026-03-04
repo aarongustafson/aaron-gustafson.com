@@ -2,6 +2,9 @@
 permalink: /_redirects
 eleventyExcludeFromCollections: true
 ---
+/img/full/*  /.netlify/images?url=/:splat  200!
+/img/:width/*  /.netlify/images?url=/:splat&width=:width  200!
+
 {% for page in collections.all %}
 {% if page.url and page.data.redirect_from %}{{ page.data.redirect_from }}		{{ page.url }}
 {% endif %}

@@ -41,21 +41,6 @@ skip_processing = true
 [build.processing.images]
 compress = false
 
-# Netlify Image CDN rewrites (keep image URLs stable & testable)
-# Use via: /img/full/i/... or /img/<width>/i/...
-# These are rewrites (status 200), not redirects.
-[[redirects]]
-from = "/img/full/*"
-to = "/.netlify/images?url=/:splat"
-status = 200
-force = true
-
-[[redirects]]
-from = "/img/:width/*"
-to = "/.netlify/images?url=/:splat&width=:width"
-status = 200
-force = true
-
 [[redirects]]
 from = "/notebook/20*/:slug"
 to = "/notebook/:slug"
