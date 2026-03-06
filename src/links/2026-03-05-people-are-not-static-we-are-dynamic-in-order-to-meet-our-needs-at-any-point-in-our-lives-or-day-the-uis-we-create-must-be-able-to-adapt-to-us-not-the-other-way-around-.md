@@ -1,5 +1,5 @@
 ---
-title: "People are not static, we are dynamic. In order to meet our needs at any point in our lives or day, the UIs we create must be able to adapt to us — not the other way around."
+title: "Different contexts, different tools, same person"
 date: 2026-03-05T18:38:46.805Z
 tags: ["accessibility", "progressive enhancement", "inclusive design"]
 ref_url: https://www.linkedin.com/posts/derekfeatherstone_accessibility-disability-activity-7434648295420870656-mH3o
