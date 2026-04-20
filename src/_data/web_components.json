@@ -42,6 +42,13 @@
 		"npm_package": "@aarongustafson/form-required-if"
 	},
 	{
+		"name": "form-saver",
+		"github": "aarongustafson/form-saver",
+		"description": "A web component that stores (and restores) values within the form it wraps.",
+		"demo_url": "https://aarongustafson.github.io/form-saver/demo/",
+		"npm_package": "@aarongustafson/form-saver"
+	},
+	{
 		"name": "form-show-if",
 		"github": "aarongustafson/form-show-if",
 		"description": "Web component that enables you to make one HTML form field show (or not) based on the value(s) of another field.",
