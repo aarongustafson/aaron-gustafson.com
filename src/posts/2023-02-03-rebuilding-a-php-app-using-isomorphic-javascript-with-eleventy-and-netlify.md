@@ -28,7 +28,7 @@ Back in the early days of the iPhone, I created [Tipr](https://tipr.mobi), a tip
 
 ## What I had to work with
 
-The previous iteration of Tipr was built in my hotel room while I was on site doing some consulting for a certain Silicon Valley company. I was rocking a [Palm Treo 650](https://wikipedia.org/wiki/Treo_650) at the time and that day a few of my colleagues had lined up to wait for the release of [the very first iPhone](<https://wikipedia.org/wiki/IPhone_(1st_generation)>). At the time, web apps were the only way to get an "app" on the iPhone as there was no SDK or even an App Store.
+The previous iteration of Tipr was built in my hotel room while I was on site doing some consulting for a certain Silicon Valley company. I was rocking a [Palm Treo 650](https://wikipedia.org/wiki/Treo_650) at the time and that day a few of my colleagues had lined up to wait for the release of [the very first iPhone](<https://wikipedia.org/wiki/IPhone_(1st_generation)>). At the time, web apps were the only way to get an “app” on the iPhone as there was no SDK or even an App Store.
 
 <figure id="2023-02-02-02">
 
@@ -44,7 +44,7 @@ I did a lot of PHP development back in the day, so armed with all of the mobile 
 - Server side processing in PHP.
 - Client side processing via <abbr aria-label="XMLHttpRequest" title="XMLHttpRequest">XHR</abbr> to a PHP-driven API.
 
-At the time, most of these approaches were very new. As an industry, we weren’t doing a whole lot to ensure peak performance on mobile because most people’s mobile browsers were pretty crappy. This was the heyday of Usablenet’s "mobile friendly" bolt-on and WAP. Then came Mobile Safari.
+At the time, most of these approaches were very new. As an industry, we weren’t doing a whole lot to ensure peak performance on mobile because most people’s mobile browsers were pretty crappy. This was the heyday of Usablenet’s “mobile friendly” bolt-on and WAP. Then came Mobile Safari.
 
 <figure id="2023-02-02-03">
 
@@ -70,7 +70,7 @@ Here are a handful of things that have come to the web in the intervening years:
 
 Phew, that’s a lot! While I haven’t made upgrades in all these areas, I did sprinkle in a few, mainly to make it a true PWA and boost performance.
 
-## Moving from PHP to a "static" site
+## Moving from PHP to a “static” site
 
 Much of my work over the last few years has been in the world of static site generators (e.g., [Jekyll](https://jekyllrb.com/), [Eleventy](https://www.11ty.dev/)). I’m quite enamored of [Eleventy](https://www.11ty.dev/), having used it for a number of projects at this point. Since I know it really well, it made sense to use it for this project too. The installation steps are minimal and I already had a library of configuration options, plugins, and filters to roll with.
 
@@ -129,7 +129,7 @@ The homepage of the site is also home to the tip calculation form. Below the for
 
 ### `src/j/process.njk`
 
-This file exists solely to export the JavaScript logic from the include in a way that it can be consumed by the Edge Function. It will render a new JavaScript file called "process.js" and turns the central processing logic into a JavaScript module that [Deno](https://deno.land/) can use (Deno powers Netlify’s Edge Functions):
+This file exists solely to export the JavaScript logic from the include in a way that it can be consumed by the Edge Function. It will render a new JavaScript file called “process.js” and turns the central processing logic into a JavaScript module that [Deno](https://deno.land/) can use (Deno powers Netlify’s Edge Functions):
 
 ```njk
 {% raw %}

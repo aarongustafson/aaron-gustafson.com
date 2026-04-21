@@ -62,11 +62,11 @@ After implementing these changes, we expect (and early testing confirms):
 - ~75% reduction in token usage, and
 - &gt;80% reduction in confusion and circular reasoning.
 
-But here's the thing: these improvements don't just help the AI agent. They help _everyone_. The consolidated documentation is easier to navigate. The fast validation scripts are useful for humans too. The explicit edge case handling prevents future questions.
+But here’s the thing: these improvements don’t just help the AI agent. They help _everyone_. The consolidated documentation is easier to navigate. The fast validation scripts are useful for humans too. The explicit edge case handling prevents future questions.
 
 ## The key to reducing toil: excellent docs and tools
 
-Optimizing for AI agents isn't really about AI. It’s about removing ambiguity, eliminating redundancy, and making implicit knowledge explicit. It’s about writing code and documentation that doesn’t require a deep understanding of the project to comprehend.
+Optimizing for AI agents isn’t really about AI. It’s about removing ambiguity, eliminating redundancy, and making implicit knowledge explicit. It’s about writing code and documentation that doesn’t require a deep understanding of the project to comprehend.
 
 In other words: it’s just good engineering.
 

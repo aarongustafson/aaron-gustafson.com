@@ -35,7 +35,7 @@ In future iterations of the talk, I expounded upon the idea of a flowchart for d
 
 <figcaption>A flowchart describing the progressive enhancement and interaction options for an FAQ.</figcaption></figure>
 
-Over the years I found more and more ways to put these artifacts to use. And at a certain point, "flowchart" didn’t seem to cut it, so I began calling them "UI construction flows"—which, admittedly, was a mouthful—and then finally settled on the name "Interaction Experience Maps" with the help of a client.
+Over the years I found more and more ways to put these artifacts to use. And at a certain point, “flowchart” didn’t seem to cut it, so I began calling them “UI construction flows”—which, admittedly, was a mouthful—and then finally settled on the name “Interaction Experience Maps” with the help of a client.
 
 ## The Benefits of Ix Maps
 

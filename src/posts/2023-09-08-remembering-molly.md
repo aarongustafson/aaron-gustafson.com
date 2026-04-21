@@ -86,7 +86,7 @@ Her example is what inspired me to build my mentoring program. I don’t know th
 
 If you know Molly’s name, this is probably why. She was a staunch—and loud—advocate for web standards and accessibility. A veteran of the browser wars (and subsequent skirmishes), she knew the landscape and she knew how imperative it was for standards to emerge and for browsers to implement them consistently.
 
-I wasn’t there for the meeting, but she told me Bill Gates tried to tell her the web was "done" ’round about the IE6 days and she yelled at him. While she wasn’t one to shy away from the occasional embellishment, she was just as unlikely to shy away from a confrontation over the viability and future of the web… so it would not surprise me at all to hear that she’d yelled at him.
+I wasn’t there for the meeting, but she told me Bill Gates tried to tell her the web was “done” ’round about the IE6 days and she yelled at him. While she wasn’t one to shy away from the occasional embellishment, she was just as unlikely to shy away from a confrontation over the viability and future of the web… so it would not surprise me at all to hear that she’d yelled at him.
 
 Molly was a lioness—nurturing and maternal to the web and its denizens and a fierce protector when they were threatened. She saw the potential of the web as a great equalizer and bristled when folks would try to wall it off or exclude people—especially disempowered people—from accessing it.
 

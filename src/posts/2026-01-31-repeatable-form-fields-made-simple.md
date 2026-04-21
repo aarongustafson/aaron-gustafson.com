@@ -225,7 +225,7 @@ repeatable.addEventListener("form-repeatable:removed", (event) => {
 
 ## Go with the progressive enhancement flow
 
-If JavaScript fails, users see the initial field group(s) and can fill them in. They can't add more, but nothing breaks. Make sure your minimum count accommodates users without JavaScript.
+If JavaScript fails, users see the initial field group(s) and can fill them in. They can’t add more, but nothing breaks. Make sure your minimum count accommodates users without JavaScript.
 
 ## Demo
 

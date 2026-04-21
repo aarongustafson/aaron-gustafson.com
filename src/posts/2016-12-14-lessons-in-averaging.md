@@ -15,7 +15,7 @@ crossposted:
   Medium: https://medium.com/@AaronGustafson/80018015fc4f
 ---
 
-In the work that we do on the Web (as well as in our daily lives), we’re often confronted, informed, or judged based on averages. I never really stopped to think about it, beyond being bugged by the fact that averages aren’t truly representative of reality. Then I listened to [99% Invisible’s episode "On Average"](http://99percentinvisible.org/episode/on-average/). It was incredibly enlightening and the stories shared in that episode provide sage wisdom that is very relevant to the work that we do.
+In the work that we do on the Web (as well as in our daily lives), we’re often confronted, informed, or judged based on averages. I never really stopped to think about it, beyond being bugged by the fact that averages aren’t truly representative of reality. Then I listened to [99% Invisible’s episode “On Average”](http://99percentinvisible.org/episode/on-average/). It was incredibly enlightening and the stories shared in that episode provide sage wisdom that is very relevant to the work that we do.
 
 <!-- more -->
 
@@ -25,13 +25,13 @@ Do you know where our fascination with averages began? It all started with Adolp
 
 Quetelet decided to apply this tool to people, starting with Scottish soldiers’ chest sizes. Turns out the average chest size of a Scottish soldier in the 1830s was 39.75 inches. File that one away for Pub Trivia.
 
-Quetelet believed that the average was the "true" size of something… something that we should strive for or that nature would attempt to create. The [Platonic ideal](https://en.wikipedia.org/wiki/Platonic_idealism) if you will:
+Quetelet believed that the average was the “true” size of something… something that we should strive for or that nature would attempt to create. The [Platonic ideal](https://en.wikipedia.org/wiki/Platonic_idealism) if you will:
 
 > In Quetelet’s mind, human averages had a certain moral mandate. By his logic, if everyone were optimally fed and lived under the same environmental conditions, they would be average. And this is what society should be striving for: the continual improvement of the average of the group.
 
-We look at averages all the time in our work. Some, like average [Time To Interactive (TTI)](https://developers.google.com/web/tools/lighthouse/audits/time-to-interactive), are useful measurements that allow us to improve our work; others, like the "average" user are decidedly less so. <span data-quotable>The "average" person (or dog or flower) is a myth. Everyone and everything is unique to some equally unique degree.</span> [Even mass-produced objects have variance](https://en.wikipedia.org/wiki/Factory_second).
+We look at averages all the time in our work. Some, like average [Time To Interactive (TTI)](https://developers.google.com/web/tools/lighthouse/audits/time-to-interactive), are useful measurements that allow us to improve our work; others, like the “average” user are decidedly less so. <span data-quotable>The “average” person (or dog or flower) is a myth. Everyone and everything is unique to some equally unique degree.</span> [Even mass-produced objects have variance](https://en.wikipedia.org/wiki/Factory_second).
 
-Designing for the "average" user is incredibly problematic. The episode I mentioned captured this perfectly in a story about the U.S. Army’s design of airplane cockpits:
+Designing for the “average” user is incredibly problematic. The episode I mentioned captured this perfectly in a story about the U.S. Army’s design of airplane cockpits:
 
 > [I]n 1926, when the Army designed its first airplane cockpit, they measured the physical dimensions of male pilots and calculated the average measurement of their height, weight, arm-length and other dimensions.
 

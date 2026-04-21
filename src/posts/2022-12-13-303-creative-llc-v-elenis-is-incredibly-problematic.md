@@ -23,9 +23,9 @@ Which brings me to the subject at hand: <cite>303 Creative LLC v. Elenis</cite>.
 
 ## The case, in a nutshell
 
-Lorie Smith, a web designer operating as 303 Creative LLC, is interested in getting into the wedding announcement website game. She does not believe same-sex couples should be able to marry, so she wanted to put a notice on her website to that effect, stating that she would not create wedding announcements for same-sex weddings. This violates Colorado’s anti-discrimination law (some of you may recall it from <cite>Masterpiece Cakeshop v. Colorado Civil Rights Commission</cite>) which prevents public businesses from discriminating against gay people, who are a "protected class" in legal speak.
+Lorie Smith, a web designer operating as 303 Creative LLC, is interested in getting into the wedding announcement website game. She does not believe same-sex couples should be able to marry, so she wanted to put a notice on her website to that effect, stating that she would not create wedding announcements for same-sex weddings. This violates Colorado’s anti-discrimination law (some of you may recall it from <cite>Masterpiece Cakeshop v. Colorado Civil Rights Commission</cite>) which prevents public businesses from discriminating against gay people, who are a “protected class” in legal speak.
 
-Smith contests that her web design work is her "expression" as an "artist" and that the First Amendment protects her right to that expression. What a lot of the coverage fails to include, however, is
+Smith contests that her web design work is her “expression” as an “artist” and that the First Amendment protects her right to that expression. What a lot of the coverage fails to include, however, is
 
 1. She does not currently offer wedding announcement website services, and
 2. No same-sex couples have requested her services in creating a wedding announcement website.
@@ -46,7 +46,7 @@ This is something I talked about way back in [my 2013 talk “Designing With Emp
 
 > I’ve been amazed at how often those outside the discipline of design assume that what designers do is decoration. Good design is problem solving.
 
-Design is not the creation of pretty pictures and decoration. Design serves a purpose. In fact, the term “design” originated in Medieval Latin as <i>designare</i> which meant "to mark out" (hence the related term <em>designate</em>). To design is “to devise for a specific function or end.” To practice “web design” is to use the tools of graphic design to achieve the purpose of the project.
+Design is not the creation of pretty pictures and decoration. Design serves a purpose. In fact, the term “design” originated in Medieval Latin as <i>designare</i> which meant “to mark out” (hence the related term <em>designate</em>). To design is “to devise for a specific function or end.” To practice “web design” is to use the tools of graphic design to achieve the purpose of the project.
 
 In the context 303 Creative LLC seeks to operate, the purpose of each project would be to announce and provide the details about a wedding. 303 Creative LLC seeks to provide these services in exchange for money, at the behest of a client. It is not artistic expression any way you slice it.
 
@@ -68,9 +68,9 @@ Corporations are not a protected class. Neither are politicians. Same-sex couple
 
 If the conservative majority on the Court decides to ignore all of the facts in this case an rule in favor of 303 Creative LLC, that decision will open the floodgates for discrimination against people based on their protected status by anyone who claims to have a religious objection to treating that person respectfully.
 
-For example, people with disabilities are a protected class under the Americans with Disabilities Act. If this ruling goes in 303 Creative LLC’s favor, a business owner could claim eugenics as a "firmly held religious view" and refuse to provide accommodations for them. From the web side of things, that could mean they could intentionally make their site inaccessible to people who use screen readers. In the physical world, it could mean they could make entry to their business impossible for anyone using a wheelchair.
+For example, people with disabilities are a protected class under the Americans with Disabilities Act. If this ruling goes in 303 Creative LLC’s favor, a business owner could claim eugenics as a “firmly held religious view” and refuse to provide accommodations for them. From the web side of things, that could mean they could intentionally make their site inaccessible to people who use screen readers. In the physical world, it could mean they could make entry to their business impossible for anyone using a wheelchair.
 
-It might take a little time, but we’d likely end up in another "Jim Crow"-like era where restaurants are once again free to adorn their windows with "Whites Only" signs. Where the grocery store hangs a "Christians Only" sign on its door. Where the local bank proudly announces that only "Heterosexual Evangelical Christian Women" can apply for an open teller position. Where only women under 25 can date Leonardo DiCaprio… wait.
+It might take a little time, but we’d likely end up in another “Jim Crow”-like era where restaurants are once again free to adorn their windows with “Whites Only” signs. Where the grocery store hangs a “Christians Only” sign on its door. Where the local bank proudly announces that only “Heterosexual Evangelical Christian Women” can apply for an open teller position. Where only women under 25 can date Leonardo DiCaprio… wait.
 
 Instead of embracing our differences as a complement to one another and for the betterment of our society, condoning this would further drive us apart and foster a world of exclusion. People could use their religion to mask their bigotry and claim exemption from having to provide equal access to people based on their disabilities, gender (or gender expression), sexual orientation, racial characteristics, religion, age, or any other protected category. That’s not a world I want to live in nor is it a future I want for my kid.
 

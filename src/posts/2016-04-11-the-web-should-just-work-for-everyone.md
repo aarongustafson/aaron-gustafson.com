@@ -9,7 +9,7 @@ crossposted:
   Medium: https://medium.com/@AaronGustafson/2bdf13879042
 ---
 
-_I had the great pleasure of delivering the following talk at the [Edge Web Summit](https://web.archive.org/web/http://lanyrd.com/2016/edgesummit/) on April 4th. The talk is largely about accessibility with a push for thinking about the future of the interface and how considering accessibility now will help us prepare for a world of "headless UIs"._
+_I had the great pleasure of delivering the following talk at the [Edge Web Summit](https://web.archive.org/web/http://lanyrd.com/2016/edgesummit/) on April 4th. The talk is largely about accessibility with a push for thinking about the future of the interface and how considering accessibility now will help us prepare for a world of “headless UIs”._
 
 <!-- more -->
 
@@ -41,7 +41,7 @@ If we use our own abilities and biases as a starting point, we end up with produ
 
 ![]({{ site.url }}/i/posts/2016-04-11/02.png)
 
-<figcaption>A figurative graph charting user ability against population using a bunch of different icons for people. One person is identified as a designer and she is part of a subset of the people that are in grey, signifying that they are "included" when the designer considers things from their own perspective. The vast majority of the people icons are in red, signifying they are "excluded" by this line of thinking.</figcaption>
+<figcaption>A figurative graph charting user ability against population using a bunch of different icons for people. One person is identified as a designer and she is part of a subset of the people that are in grey, signifying that they are “included” when the designer considers things from their own perspective. The vast majority of the people icons are in red, signifying they are “excluded” by this line of thinking.</figcaption>
 </figure>
 
 When it comes to people, there’s no such thing as “normal”. For example, the interactions we design with technology depend heavily on what we can see, hear, say, and touch. If we’re designing with ourselves as a baseline, we can overlook people with circumstances different from ours.
@@ -207,7 +207,7 @@ As you move from location to location throughout the game, the program describes
 
 > West of House<br> You are standing in an open field west of a white house, with a boarded front door.<br> There is a small mailbox here.<br><br>&gt; **open mailbox**
 
-As this was the early days of computer gaming, you might think Zork’s interactions would be simple noun-verb combinations—"kill troll"—but Zork was more sophisticated than that. Its parser was could understand far more complex commands like "hit the troll with the Elvish sword". This made the experience far more natural, as if you were playing a table top game with friends.
+As this was the early days of computer gaming, you might think Zork’s interactions would be simple noun-verb combinations—“kill troll”—but Zork was more sophisticated than that. Its parser was could understand far more complex commands like “hit the troll with the Elvish sword”. This made the experience far more natural, as if you were playing a table top game with friends.
 
 Whether Zork or a webpage, **every interface is a conversation**. When I create a homepage, I’m talking to visitors as if we’ve just met. I’m explaining what they can do on my site (and, in some cases, why it matters). If I’m designing a product page, the conversation is a little different. I’m explaining to my users what a particular object or service is, what it does, and how it will benefit them. I’ll skip the BS sales pitch and talk honestly about the product’s benefits. If I’m designing a contact form, I want to help my users get a message to me quickly and efficiently. I’m also going to set some expectations around how long it will take me to get back to them (and, of course, I’ll need to abide by that promise). Even the humble status update is a conversation. I’m asking a question and then stepping back and letting my users speak. The floor is theirs. (But I’m probably mining what they say for data so I can market to them later.)
 
@@ -243,7 +243,7 @@ With this subtle change, they were able to increase the percentage of photo repo
 
 Words matter. Even in something as simple and banal as a form, the words we choose set the tone for our users’ experiences and often have an affect on what they do… or fail to do. The words we choose matter even more in the world of headless UIs. Without visual aids to help a user see where they are in a form or to aid them in managing the cognitive load of our interfaces, every bit of label and helper text becomes even more important.
 
-When Luke Wroblewski coined "mobile first", he told us to focus on the core purpose each and every page. He was, in essence, telling us to focus on the conversation we are having with our users. This approach pays huge dividends on small screens, but when it comes to voice-based interactions, "the page" doesn’t really exist. Experience is the sum of each individual interaction.
+When Luke Wroblewski coined “mobile first”, he told us to focus on the core purpose each and every page. He was, in essence, telling us to focus on the conversation we are having with our users. This approach pays huge dividends on small screens, but when it comes to voice-based interactions, “the page” doesn’t really exist. Experience is the sum of each individual interaction.
 
 As part of their Alexa Skills Kit, Amazon offers a ton of recommendations for designing for voice, many of which happen to be equally useful for sighted users.
 
@@ -265,7 +265,7 @@ For example, if you track error codes for issues on your site, send them to _you
 
 ## When Requesting Feedback, Make It Clear That the User Needs to Respond
 
-In perhaps the most common form example, consider the label "First Name". It’s not terribly conversational and doesn’t beg for a response.
+In perhaps the most common form example, consider the label “First Name”. It’s not terribly conversational and doesn’t beg for a response.
 
 ```html
 <label for="first_name">What’s your first name?</label>
@@ -451,7 +451,7 @@ HTML5 introduced a host of new field types that consolidate phone numbers, dates
 
 ### Present Information in Consumable Pieces
 
-Like computers, we humans have a finite amount of "working memory". The amount of mental resources required to operate an interface is called its "cognitive load". When the amount of information we need to process exceeds our capacity to handle it, we can miss important details, have trouble concentrating, and become frustrated.
+Like computers, we humans have a finite amount of “working memory”. The amount of mental resources required to operate an interface is called its “cognitive load”. When the amount of information we need to process exceeds our capacity to handle it, we can miss important details, have trouble concentrating, and become frustrated.
 
 We deal with cognitive load in GUI design all the time, but in voice-based interactions, there are no visuals to act as signposts and provide reminders about where we are and what we’re doing. This is why it is critical to break complicated tasks down into simpler ones and eliminate excess noise (like non-required fields). We can also reduce cognitive load by chunking search results and other list-type content into small groups, asking the user if they want more before loading and presenting them.
 

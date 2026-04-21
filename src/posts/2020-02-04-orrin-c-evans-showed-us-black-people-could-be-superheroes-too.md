@@ -11,7 +11,7 @@ series:
   ordinal: thirty-second
 ---
 
-Did you know that the first Black comic book hero debuted in 1947? "Lion Man" was a college-educated Black American sent to the Gold Coast (now Ghana) by the United Nations to investigate a uranium deposit. His story was but one of nine depicted in the first (and only) issue of <cite>All-Negro Comics</cite>, the first comic book created by an all Black team. That team was led by a journalist named Orrin Cromwell Evans.
+Did you know that the first Black comic book hero debuted in 1947? “Lion Man” was a college-educated Black American sent to the Gold Coast (now Ghana) by the United Nations to investigate a uranium deposit. His story was but one of nine depicted in the first (and only) issue of <cite>All-Negro Comics</cite>, the first comic book created by an all Black team. That team was led by a journalist named Orrin Cromwell Evans.
 
 <!-- more -->
 
@@ -31,6 +31,6 @@ Comics are still pretty damn white, but I am hopeful things are changing for the
 
 ## Further reading
 
-1. ["Orrin C Evans and the story of All Negro Comics" (archived)](https://web.archive.org/web/20090307212906/http://www.tomchristopher.com/?op=home%2FComic+History%2FOrrin+C.+Evans+and+The+Story+of+All+Negro+Comics), <cite>tomchristopher.com</cite>, 2002; first published in <cite>Comic Buyer’s Guide</cite>
-2. ["Orrin C Evans: The First Black Comic Book Publisher" (archived)](https://web.archive.org/web/20160306045620/http://www.firstcomicsnews.com/?p=98138), <cite>First Comic News</cite>, 2016
-3. ["The Press: Ace Harlem to the Rescue" (archived)](https://web.archive.org/web/20100424121454/http://www.time.com/time/magazine/article/0%2C9171%2C779181%2C00.html), <cite>Time Magazine</cite>, 1947
+1. [“Orrin C Evans and the story of All Negro Comics” (archived)](https://web.archive.org/web/20090307212906/http://www.tomchristopher.com/?op=home%2FComic+History%2FOrrin+C.+Evans+and+The+Story+of+All+Negro+Comics), <cite>tomchristopher.com</cite>, 2002; first published in <cite>Comic Buyer’s Guide</cite>
+2. [“Orrin C Evans: The First Black Comic Book Publisher” (archived)](https://web.archive.org/web/20160306045620/http://www.firstcomicsnews.com/?p=98138), <cite>First Comic News</cite>, 2016
+3. [“The Press: Ace Harlem to the Rescue” (archived)](https://web.archive.org/web/20100424121454/http://www.time.com/time/magazine/article/0%2C9171%2C779181%2C00.html), <cite>Time Magazine</cite>, 1947

@@ -24,7 +24,7 @@ In very simplistic terms, here’s what happens when a browser encounters this m
 1. The browser recognizes the `picture` element and begins parsing its content to determine how to render it, or
 2. The browser doesn’t recognize the `picture` and ignores it, moving inside to look for any elements it might recognize.
 
-In practical terms, this markup delivers two potential experiences. Older browsers that haven’t implemented `picture` get the JPG image. Newer browsers that have implemented `picture` get either the WebP (if they support that format) or the JPG (if they don’t). In this scenario, the `img` element can be (and often is) referred to as "fallback content".
+In practical terms, this markup delivers two potential experiences. Older browsers that haven’t implemented `picture` get the JPG image. Newer browsers that have implemented `picture` get either the WebP (if they support that format) or the JPG (if they don’t). In this scenario, the `img` element can be (and often is) referred to as “fallback content”.
 
 So why have I been thinking about fallback content? Well, I’ve been thinking a lot about media formats and what happens when a user’s browser encounters a `video`, `audio`, or `picture` element that only includes [formats it doesn’t support](https://developer.mozilla.org/docs/Web/HTML/Supported_media_formats). For instance: A `video` element that only offers an AVI `source` is highly unlikely to be playable in any browser.[^1]
 
@@ -40,7 +40,7 @@ So what happens when most browsers encounter this markup? Nothing. Blank space. 
 
 This is the correct behavior, [according to the spec](https://html.spec.whatwg.org/#the-video-element):
 
-> When no video data is available (the element’s `readyState` attribute is either `HAVE_NOTHING`, or `HAVE_METADATA` but no video data has yet been obtained at all, or the element's `readyState` attribute is any subsequent value but the media resource does not have a video channel) … The `video` element represents its poster frame, if any, or else transparent black with no intrinsic dimensions.
+> When no video data is available (the element’s `readyState` attribute is either `HAVE_NOTHING`, or `HAVE_METADATA` but no video data has yet been obtained at all, or the element’s `readyState` attribute is any subsequent value but the media resource does not have a video channel) … The `video` element represents its poster frame, if any, or else transparent black with no intrinsic dimensions.
 
 It’s also a pretty crappy user experience if you ask me. Now it’s worth noting that the spec does allow for a better experience, but it doesn’t require it:
 

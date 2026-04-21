@@ -6,7 +6,7 @@ tags: ["web design"]
 description: "A lot of folks have helped me on the way to becoming the web professional that I am. Here are just a few."
 ---
 
-A lot of folks have helped me on the way to becoming the web professional that I am. When [Molly declared today "Unsung Leaders of the Web Day"](https://twitter.com/mollydotcom/status/586187780113309697), I had to join in.
+A lot of folks have helped me on the way to becoming the web professional that I am. When [Molly declared today “Unsung Leaders of the Web Day”](https://twitter.com/mollydotcom/status/586187780113309697), I had to join in.
 
 <!-- more -->
 

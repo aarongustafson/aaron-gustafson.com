@@ -28,7 +28,7 @@ He, rightly, saw this as a problem and wanted to address it. He told his staff
 
 His approach to address this was perfectly rational and aligned with the approach Jon had discussed mere moments before:
 
-> What I found was hiring has a certain inertia to it, right? Generally, the people that started whatever industry or whatever office did, generally hire close to people that resemble them. So I’m not even talking about White/Black. I'm talking about like… I’ll just go with late-night comedy, right?
+> What I found was hiring has a certain inertia to it, right? Generally, the people that started whatever industry or whatever office did, generally hire close to people that resemble them. So I’m not even talking about White/Black. I’m talking about like… I’ll just go with late-night comedy, right?
 >
 > David Letterman revolutionized late-night comedy. He did it with a lot of Harvard, Lampoon, SNL, same way, writers. The comedy writing industry was for a long time — not necessarily out of malevolence or prejudice — the inertia of it, the status quo of it, was nerdy white dudes from Harvard and the other Ivy Leagues.
 >
@@ -44,7 +44,7 @@ So these two men from very different political viewpoints totally agree on the i
 
 When Stewart highlighted how aligned their two perspectives were and Christie pushed back, stating that DEI policies were problematic:
 
-> I think there have been a number of areas where there are people who hire certain folks just for their diversity. I've seen it happen here in New Jersey, in the government since I left. Where people say, “I am going to make sure that I have one of every...” It's almost like a half a Noah’s Ark. “I’m going to have one of these and one of these and one one of these and one of these.”
+> I think there have been a number of areas where there are people who hire certain folks just for their diversity. I’ve seen it happen here in New Jersey, in the government since I left. Where people say, “I am going to make sure that I have one of every...” It’s almost like a half a Noah’s Ark. “I’m going to have one of these and one of these and one one of these and one of these.”
 
 Stewart questioned that:
 
@@ -62,7 +62,7 @@ When people hire folks or celebrate folks for their diversity rather than their 
 
 As they both said, we need to [screen in](https://blog.skill.jobs/screening-in-vs-screening-out-shifting-recruitment-strategies-for-better-hiring-outcomes/) job applicants who wouldn’t otherwise consider applying for roles in our organizations. Christie talked about this too:
 
-> The aha moment for me on that concept and why it was the right way to go was there was a young guy that I hired very early on: African-American, University of Michigan, University of Penn Law School, clerk for Alan Page — the former Minnesota Viking, defensive tackle in the Supreme Court of Minnesota— He’s from New Jersey, grew up in Maplewood. I said to him, “Why didn’t you ever apply here before?” He said, “Because I knew people like me wouldn't get hired.”
+> The aha moment for me on that concept and why it was the right way to go was there was a young guy that I hired very early on: African-American, University of Michigan, University of Penn Law School, clerk for Alan Page — the former Minnesota Viking, defensive tackle in the Supreme Court of Minnesota— He’s from New Jersey, grew up in Maplewood. I said to him, “Why didn’t you ever apply here before?” He said, “Because I knew people like me wouldn’t get hired.”
 
 Hiring is just part of the process though. You can widen the applicant funnel and bring in a more representative — which is to say _diverse_ — applicant pool with relatively little effort. Where things often fall short is retention.
 
@@ -74,7 +74,7 @@ The first thing you need to do is _educate_. You need to help folks on your team
 
 And make sure they understand the historical barriers folks from different communities have faced in getting access to jobs at organizations like yours… even when they were equally or more accomplished than folks from the dominant group. As Stewart said on the show:
 
-> It's not rigging [the system] in a different direction, it's unrigging it.
+> It’s not rigging [the system] in a different direction, it’s unrigging it.
 
 It’s also important to note that the process here needs to be inclusive as well… call people _in_, don’t call them _out_. Everyone is on their own journey and deserves the space to fail and learn from their mistakes. If someone says something offensive, let them know that it’s offensive and why. Tell them what they should say — if anything — instead.
 

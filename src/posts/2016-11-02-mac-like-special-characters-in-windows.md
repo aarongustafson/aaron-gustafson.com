@@ -46,7 +46,7 @@ In AutoHotKey scripting, “!” stands in for <kbd>Alt</kbd> and “+” stands
 1. <kbd>Alt + -</kbd> will produce an en dash (–)
 2. <kbd>Shift Alt + -</kbd> will produce an em dash (—)
 
-With these two examples, I was able to jump right in and map many of the most common shortcuts I use while writing. Before I got too far, however, I realized I really needed accents, umlauts, and the like. I searched some more and eventually discovered [a post in the AutoHotKey forum archive by "Veil" from way back in 2008](https://autohotkey.com/board/topic/27801-special-characters-osx-style).
+With these two examples, I was able to jump right in and map many of the most common shortcuts I use while writing. Before I got too far, however, I realized I really needed accents, umlauts, and the like. I searched some more and eventually discovered [a post in the AutoHotKey forum archive by “Veil” from way back in 2008](https://autohotkey.com/board/topic/27801-special-characters-osx-style).
 
 Veil broke his solution into two parts, but I’ve combined them here to make it easier for your to copy into your AutoHotKey script file. This code has provided everything I’ve needed so far, so Veil—wherever you are—**thank you**!
 

@@ -16,7 +16,7 @@ I worked on one project where the client provided me with a spreadsheet detailin
 As further evidence, consider [the enlightening details of this post from Jason Samuels](http://blog.jasonsamuels.net/post/21633531278/analytics-confirm-the-need-for-adaptive-web-design) of the National Council on Family relations, a non-profit organization:
 
 - In 2008, Internet Explorer dominated as the browser for 93.5% of their visitors. By 2014, that percentage had fallen to 19.7%, with Chrome bringing in the lion’s share of the traffic (37%). Firefox narrowly beat out IE with a 20% share of users.
-- In 2008, visits from "mobile" devices accounted for only about 0.1% of their traffic. In 2014, that number had skyrocketed to 14.4%.
+- In 2008, visits from “mobile” devices accounted for only about 0.1% of their traffic. In 2014, that number had skyrocketed to 14.4%.
 - In 2008, they detected 71 different screen resolutions, which is already a lot to consider. By 2014, however, they were seeing 1,000 unique screen resolutions each and every quarter (with over 200 of those recording 10+ visits per quarter).
 
 That last stat blows my mind every time I read it. You can’t design for 200 different screens, let alone 1,000. It’s a fools errand. And don’t even think of trying to test on that many devices.
@@ -50,7 +50,7 @@ This approach to designing for the web is called [progressive enhancement](http:
 
 ## Be Conservative in Your Delivery
 
-What makes progressive enhancement so helpful when it comes to dealing with this swirling mass of devices and browsers is that the core experience will _always be_ available. There is nothing precluding our users from accessing it, even on a crappy WAP browser or a text-based browser like Lynx or even some [no so far-future talking computer](http://www.theubi.com/) that only "sees" the web as text.
+What makes progressive enhancement so helpful when it comes to dealing with this swirling mass of devices and browsers is that the core experience will _always be_ available. There is nothing precluding our users from accessing it, even on a crappy WAP browser or a text-based browser like Lynx or even some [no so far-future talking computer](http://www.theubi.com/) that only “sees” the web as text.
 
 In order to ensure we don’t accidentally deliver advanced features to less capable browsers like these, we just need to be smart about how we load stuff like CSS and JavaScript.
 

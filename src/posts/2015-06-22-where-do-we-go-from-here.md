@@ -25,9 +25,9 @@ We’ve explored the future of modular code and browsers’ capacity for working
 
 We’ve come a long way since [Ethan’s article](https://huffduffer.com/adactio/243780), fluid grids, flexible media, and media queries. Those three tenets sowed a seed that has grown and flourished as we have come to better understand the implications of device proliferation. We’ve seen that the web is capable of going anywhere and doing pretty much anything.
 
-I would argue that ["Responsive Web Design"](https://huffduffer.com/adactio/243780) was the first article that really managed to capture the concepts that John Allsopp had discussed so many years before in [“A Dao of Web Design”](http://www.alistapart.com/articles/dao/) and distilled them into something the design and development community could really sink their teeth into. It provided a concrete example of the web’s ability to flex and mold itself into whatever shape it needed to take on.
+I would argue that [“Responsive Web Design”](https://huffduffer.com/adactio/243780) was the first article that really managed to capture the concepts that John Allsopp had discussed so many years before in [“A Dao of Web Design”](http://www.alistapart.com/articles/dao/) and distilled them into something the design and development community could really sink their teeth into. It provided a concrete example of the web’s ability to flex and mold itself into whatever shape it needed to take on.
 
-It was the first time many designers had come to terms with the idea that "experience" was not some monolithic thing.
+It was the first time many designers had come to terms with the idea that “experience” was not some monolithic thing.
 
 Sure, many of us in the web standards community had been talking the talk and walking the walk with regard to [progressive enhancement](http://alistapart.com/article/understandingprogressiveenhancement). And we were gaining converts, but progress was slow. Ethan demonstrated—directly and succinctly—what the progressive enhancement of visual design could look like.
 
@@ -35,19 +35,19 @@ Providing an identical experience for each and every human being that tries to a
 
 **And that doesn’t even consider our users.**
 
-When it comes to the people we need to reach for our work to actually matter, we have to consider literacy level, reading acumen, level of domain knowledge, cognitive impairments like learning disabilities and dyslexia, attention deficit issues, environmental distractions, vision impairment, hearing impairment, motor impairment, how much they understand how to use their device, how much they understand how to use their browser, how well-versed in common web conventions they are, and a ton of other "human factors".
+When it comes to the people we need to reach for our work to actually matter, we have to consider literacy level, reading acumen, level of domain knowledge, cognitive impairments like learning disabilities and dyslexia, attention deficit issues, environmental distractions, vision impairment, hearing impairment, motor impairment, how much they understand how to use their device, how much they understand how to use their browser, how well-versed in common web conventions they are, and a ton of other “human factors”.
 
 Every person is different and everyone comes to the web with their own set of special needs. Some are always with them, blindness for example. Others are transient, like breaking your mousing arm. Still others are purely situational and dependent on the device you are using at the time and its technical capabilities or constraints.
 
 Trying to devise one monolithic experience for each and every person to have in every context that considers every factor would be impossible. And yet, Sir Tim Berners Lee had a vision for a web that was capable of going anywhere. Was he insane?
 
-[Sir Tim’s vision for the web](http://www.w3.org/History/1989/proposal.html) was that content could be created once and accessed from anywhere. Disparate but related pieces of "hypermedia" scattered across the globe could be connected to one another via links. Moreover, they would be retrievable by anyone on any device capable of reading HTML. For free.
+[Sir Tim’s vision for the web](http://www.w3.org/History/1989/proposal.html) was that content could be created once and accessed from anywhere. Disparate but related pieces of “hypermedia” scattered across the globe could be connected to one another via links. Moreover, they would be retrievable by anyone on any device capable of reading HTML. For free.
 
 **Ultimately, Sir Tim envisioned universal accessibility.**
 
 For a great many of us, ensuring our websites are accessible is an afterthought. We talk a good game when it comes to “user centered” this or that, but often treat the word “accessibility” as a synonym for “screen reader”. It’s so much more than that. “Accessibility” is about people. People consume content and use interfaces in many different ways, some similar and some quite dissimilar to how we do it.
 
-Sure, people with visual impairments often use a screen reader to consume content. But they might also use a braille touch feedback device or a braille printer. They probably also use a keyboard. Or they may use a touchscreen in concert with audio cues. Or they may even use a camera to allow them to "read" content via OCR and text-to-speech. And yes, visual impairment affects a decent percentage of the populace (especially as we age), but it is only part of the “accessibility” puzzle.
+Sure, people with visual impairments often use a screen reader to consume content. But they might also use a braille touch feedback device or a braille printer. They probably also use a keyboard. Or they may use a touchscreen in concert with audio cues. Or they may even use a camera to allow them to “read” content via OCR and text-to-speech. And yes, visual impairment affects a decent percentage of the populace (especially as we age), but it is only part of the “accessibility” puzzle.
 
 The contrast between text and the background is an important factor in ensuring content remains readable in different lighting situations. Color choice is an accessibility concern.
 
@@ -77,7 +77,7 @@ Imagine sitting down in a restaurant only to have the waiter immediately bring y
 
 And yet we—as an industry—don’t seem to have any problem telling someone they need to change their browser to accommodate us. That’s just wrong. Our work is meaningless without users. We should be bending over backwards to attract and retain them. This is customer service 101.
 
-This comes back to Postel's law, which Jeremy often recounts:
+This comes back to Postel’s law, which Jeremy often recounts:
 
 > Be conservative in what you do, be liberal in what you accept from others.
 
@@ -306,9 +306,9 @@ But traditional computers and smart mobile devices aren’t the only place we’
 
 </figure>
 
-Right now, they both seem squarely focused on helping your house become "smarter"—streaming music, adjusting the thermostat, etc.—but it isn’t hard to imagine these devices becoming coupled with the ability to browse and interact with the web.
+Right now, they both seem squarely focused on helping your house become “smarter”—streaming music, adjusting the thermostat, etc.—but it isn’t hard to imagine these devices becoming coupled with the ability to browse and interact with the web.
 
-In the near future, voice-based interactions with the web will be entirely possible. They will likely suck a bit at first, but they'll get better.
+In the near future, voice-based interactions with the web will be entirely possible. They will likely suck a bit at first, but they’ll get better.
 
 I’m going to make a somewhat bold prediction: while touch has been revolutionary in many ways toward improving digital access, voice is going to be even more significant. Voice-based interfaces will create new opportunities for people to interact with and participate in the digital world.
 

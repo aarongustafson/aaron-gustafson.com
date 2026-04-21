@@ -16,7 +16,7 @@ Toward the end of his second piece, Eran nailed my long-time contention in this 
 
 As with everything, the right choice often depends on a variety of factors, many of which are likely to change.
 
-In the end, I typically fall down on the side of the Web because I find its "messy" nature to be one of its great strengths. The Web is malleable and capable of being different things for different people. This flexibility allows it to travel further and empower more people than platform-specific apps ever will. I guess that’s why I am so stoked about progressive web apps too. When done well, they enable useful tools to go further and reach more people while providing many of the benefits of an installed application. If they’re successful, they really could be the best of both worlds.
+In the end, I typically fall down on the side of the Web because I find its “messy” nature to be one of its great strengths. The Web is malleable and capable of being different things for different people. This flexibility allows it to travel further and empower more people than platform-specific apps ever will. I guess that’s why I am so stoked about progressive web apps too. When done well, they enable useful tools to go further and reach more people while providing many of the benefits of an installed application. If they’re successful, they really could be the best of both worlds.
 
 Anyway, both posts are well worth a read:
 

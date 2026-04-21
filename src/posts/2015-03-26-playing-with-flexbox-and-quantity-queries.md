@@ -15,7 +15,7 @@ Ever since reading [Haydon Pickering](http://twitter.com/heydonworks)’s [piece
 Here’s a brief overview of the project:
 
 **The Candidate**: My [speaking engagements](/speaking-engagements/) page.<br>
-**The Challenge**: The "Future" list will grow and shrink as I book things, so I never know how many will be there. The "Past" list will also grow, but I am less interested in getting crazy with that.<br>
+**The Challenge**: The “Future” list will grow and shrink as I book things, so I never know how many will be there. The “Past” list will also grow, but I am less interested in getting crazy with that.<br>
 **The Idea**: A grid layout that flexes to visually highlight 1-2 upcoming future events and allows the others to flow in at the default grid size. It should be set up to handle everything from a single future event to a dozen or more.
 
 <figure id="2015-03-26-1" class="media-container">
@@ -117,7 +117,7 @@ Next up, I tackled the first breakpoint at 28.75em:
 
 In this pass, I set up the event blocks to fill 50% of the parent container (well, 50% minus the 1.25rem gutter between them, using [`calc()`](http://www.w3.org/TR/css3-values/#calc)).[^2] In order to make the children wrap to form rows, I set `flex-wrap: wrap` on the list (`.listing--events`). Then, to make the children all equal heights across each row, I set `align-items: stretch`. The gutter space was achieved via left margins on all events save the row starters (`.event:nth-child(odd)`).
 
-It’s worth noting that in the full page I have two sets of event listings: one past and one future. The "event" `class` is used in all instances. The modified "future" `class` is added to events that have not happened yet.
+It’s worth noting that in the full page I have two sets of event listings: one past and one future. The “event” `class` is used in all instances. The modified “future” `class` is added to events that have not happened yet.
 
 Then I used a quantity query to select the first future event when there is more than one in the list (line 38) and set it span 100% of the parent width. To keep the gutters accurate, I also swapped where the margins were applied, adding the margin back to `.event--future:nth-child(odd)` and removing it from `.event--future:nth-child(even)`.
 

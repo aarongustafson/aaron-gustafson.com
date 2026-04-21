@@ -14,7 +14,7 @@ The other day I got a message from someone I’ve been mentoring via email. His 
 
 <!-- more -->
 
-That’s a tough one. "Success" can be defined in so many ways. Is success making truckloads of money? Is it having 100,000 Twitter followers? Is it getting invited to speak at conferences in exotic locations? Those are very external notions of success, perhaps it’s more personal: Feeling like you’ve accomplished what you set out to do. Feeling like your life has meaning. Finding joy in both your work and your play. With so many ways to define success, there’s no magic formula for achieving it.
+That’s a tough one. “Success” can be defined in so many ways. Is success making truckloads of money? Is it having 100,000 Twitter followers? Is it getting invited to speak at conferences in exotic locations? Those are very external notions of success, perhaps it’s more personal: Feeling like you’ve accomplished what you set out to do. Feeling like your life has meaning. Finding joy in both your work and your play. With so many ways to define success, there’s no magic formula for achieving it.
 
 Unsure how to answer this perplexing question, I decided to answer by sharing what makes me feel successful—the Golden Rule. I used the Islamic version in my response:
 
@@ -52,7 +52,7 @@ The Golden Rule is a wonderful tool for helping maintain balance in your life, b
 - Look for opportunities to help others accomplish _their_ goals.
 - Give of yourself freely without expecting return.
 
-My twelve years of Catholic schooling drummed the proverb “to whomever much is given, much will be required“ into my head, which accounts for my emphasis on sharing. I know that my "success"—as I define it at least—has been made possible by the generosity of others. And so I think it’s my duty to "[pay it forward](http://www.imdb.com/title/tt0223897/)" and I look for every opportunity to create opportunities for others.
+My twelve years of Catholic schooling drummed the proverb “to whomever much is given, much will be required“ into my head, which accounts for my emphasis on sharing. I know that my “success”—as I define it at least—has been made possible by the generosity of others. And so I think it’s my duty to “[pay it forward](http://www.imdb.com/title/tt0223897/)” and I look for every opportunity to create opportunities for others.
 
 In my experience, living life this way—or at least improving on it a bit each day—makes me feel successful. Perhaps it will work for you as well.
 

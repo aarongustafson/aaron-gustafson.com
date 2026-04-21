@@ -64,7 +64,7 @@ But yes. I have taken a couple of steps to mitigate an echo chamber:
 
 The event is also being recorded so anyone not at the event will be able to watch all the talks and Q&A.
 
-<b class="interview__attribution">Me:</b> You're modeling the format of the event—four acts, each comprising three twenty-minute talks and a group Q&A session—on Responsive Day Out. What was the draw of that approach?
+<b class="interview__attribution">Me:</b> You’re modeling the format of the event—four acts, each comprising three twenty-minute talks and a group Q&A session—on Responsive Day Out. What was the draw of that approach?
 
 <b class="interview__attribution">Simon:</b> Yes, we get to hear lots of different viewpoints and then bring the speakers together for a Q&A. This should allow new viewpoints to emerge from discussions and join related threads. It also means we get to spend each section focusing on a particular area.
 
@@ -86,7 +86,7 @@ If at the end of EnhanceConf we had a reasoned and nurturing community able to t
 
 <b class="interview__attribution">Simon:</b> EnhanceConf is the first conference I’ve organised. It’s been an unfathomable amount of work and financial risk to get this far and it’s mostly been done in my evenings and weekends. That said, it has been quite fun.
 
-I'd like to do some traveling this year, maybe 2018?
+I’d like to do some traveling this year, maybe 2018?
 
 <hr>
 

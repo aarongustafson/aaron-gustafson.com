@@ -6,11 +6,11 @@ tags: ["web design", hazards, JavaScript]
 description: "A few links worth taking a peek at."
 ---
 
-I’ve talked about this before: As web designers, [we can’t trust the network](http://www.aaron-gustafson.com/notebook/the-network-effect/). Sure, we have to contend with mobile data "dead zones" and dropped connections as our users move about throughout the day, but there’s a lot more to the network that’s beyond our control.
+I’ve talked about this before: As web designers, [we can’t trust the network](http://www.aaron-gustafson.com/notebook/the-network-effect/). Sure, we have to contend with mobile data “dead zones” and dropped connections as our users move about throughout the day, but there’s a lot more to the network that’s beyond our control.
 
 <!-- more -->
 
-Here’s a roundup of some of my "favorite" network issue related headlines from the last few years:
+Here’s a roundup of some of my “favorite” network issue related headlines from the last few years:
 
 - [Sky Broadband misclassified the jQuery CDN as a malware site](http://www.theguardian.com/technology/2014/jan/28/sky-broadband-blocks-jquery-web-critical-plugin) and broke much of the web for their users.
 - [Comcast admitted to injecting self-promotional advertising](http://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/) into web pages served by their Xfinity routers. (They have also been called out for [artificially inflating subscriber bandwidth usage with their own crap](https://blog.ryankearney.com/2013/01/comcast-caught-intercepting-and-altering-your-web-traffic/).)

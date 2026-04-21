@@ -10,7 +10,7 @@ tags:
     "developer tools",
     "best practices",
   ]
-description: "I created a comprehensive starter template for creating production-ready web components with modern tooling, testing, and CI/CD—following Google's Custom Element Best Practices."
+description: "I created a comprehensive starter template for creating production-ready web components with modern tooling, testing, and CI/CD—following Google’s Custom Element Best Practices."
 twitter_text: "Start building web components the right way with this production-ready template."
 ---
 
@@ -18,9 +18,9 @@ Creating a new web component from scratch involves a lot of boilerplate—testin
 
 <!-- more -->
 
-The [Web Component Starter Template](https://github.com/aarongustafson/web-component-starter) is based on the architecture and patterns I’ve refined across my web component work, incorporating [Google's Custom Element Best Practices](https://web.dev/articles/custom-elements-best-practices) and advice from other web components practitioners including the always-brilliant <a href="https://daverupert.com/">Dave Rupert</a>.
+The [Web Component Starter Template](https://github.com/aarongustafson/web-component-starter) is based on the architecture and patterns I’ve refined across my web component work, incorporating [Google’s Custom Element Best Practices](https://web.dev/articles/custom-elements-best-practices) and advice from other web components practitioners including the always-brilliant <a href="https://daverupert.com/">Dave Rupert</a>.
 
-## What's included
+## What’s included
 
 The template provides everything you need to create a production-ready web component:
 

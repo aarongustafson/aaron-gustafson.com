@@ -18,7 +18,7 @@ There are times when you want to expose a bit of data to the user but don’t wa
 
 The best choice in that situation would be to avoid using a form field to display the username, full stop, but if you’re hamstrung and need to drop it in an `input` field, you want to make sure the user can’t edit it. That’s when you need to make a choice between `disabled` and `readonly`.
 
-Both of these attributes are "empty" attributes, meaning they don’t require value assignment:
+Both of these attributes are “empty” attributes, meaning they don’t require value assignment:
 
 ```html
 <label for="username-1">Disabled Username</label>
@@ -34,12 +34,12 @@ As expected, both also prohibit editing directly in the browser.
 
 So why do we have two attributes that do the same thing? Unfortunately this is where developers often get confused: the user experience is the same, but the mechanics are quite different.
 
-Fields marked as `readonly` are collected along with all of the normal field values in a form submission (["successful controls" in the spec](https://www.w3.org/TR/html401/interact/forms.html#h-17.13.2)). The only difference between a `readonly` field and a regular field is the user experience.
+Fields marked as `readonly` are collected along with all of the normal field values in a form submission ([“successful controls” in the spec](https://www.w3.org/TR/html401/interact/forms.html#h-17.13.2)). The only difference between a `readonly` field and a regular field is the user experience.
 
 Fields marked as `disabled` are ignored when collecting values from the form. In a traditional form submission, the action page would never receive values for a `disabled` field, regardless of whether it has a `name` attribute. In JavaScript, this is a little trickier as generic DOM access via a form’s `elements` collection includes all form controls, including `disabled` fields (and buttons, `output` elements, etc.). In order to ensure consistency with the spec, it is incumbent upon the JavaScript developer to keep an eye out for `disabled` fields so they can throw away their values before processing the form.
 
 <figure id="fig-2017-10-31-01" class="media-container">
-  {% CodePen "https://codepen.io/aarongustafson/pen/jaPYLr", "result", "250" %}
+  {% CodePen “https://codepen.io/aarongustafson/pen/jaPYLr", “result”, “250” %}
 </figure>
 
 Thankfully, most library code I’ve found does this, so it’s not much of an issue if you are working with [jQuery’s `serialize()` method](https://api.jquery.com/serialize/) or even [the `form-serialize` module for Node](https://www.npmjs.com/package/form-serialize) (and React, etc.). Confusingly, the Node module enables developers to treat `disabled` fields as though they are `readonly`. Luckily, that’s not the default behavior.

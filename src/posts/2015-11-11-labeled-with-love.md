@@ -35,7 +35,7 @@ You could achieve this with a minimum of markup:
 Your Name <input name="full_name" />
 ```
 
-The thing is, the text "Your Name" is not associated in any way with the `input`. Sure, a sighted person would likely be able to tell that that text is associated with the field, but no computer can tell that. And if a computer can’t tell the text and `input` are associated, your form control is inaccessible to anyone who uses assistive technology like a screen reader. It’s also going to pose a problem in the near-future of "headless UIs" like those hinted at by Cortana, Siri, and the Echo.
+The thing is, the text “Your Name” is not associated in any way with the `input`. Sure, a sighted person would likely be able to tell that that text is associated with the field, but no computer can tell that. And if a computer can’t tell the text and `input` are associated, your form control is inaccessible to anyone who uses assistive technology like a screen reader. It’s also going to pose a problem in the near-future of “headless UIs” like those hinted at by Cortana, Siri, and the Echo.
 
 Thankfully, establishing a relationship between the two is quite easy using the `label` element. The most common (and preferable) way to do this is to wrap the labeling text in a `label` element. Then you create an explicit association with the field using the `for` attribute, which is an `id` reference. In other words, the value of the `for` attribute needs to match the value of the `id` attribute on the field you want to associate with that `label`.
 
@@ -116,7 +116,7 @@ Obviously, associated labels are great for folks who use screen readers, but the
 
 <figure id="fig-2015-11-11-02" class="media-container">
 
-![]({{ site.url }}/i/posts/2015-11-11/02.gif)"
+![]({{ site.url }}/i/posts/2015-11-11/02.gif)”
 
 <figcaption>Animation showing how clicking a <code>label</code> will focus the associated form control.</figcaption></figure>
 
@@ -192,7 +192,7 @@ input:focus + label {
 ```
 
 <figure id="fig-2015-11-11-06" class="media-container">
-  {% CodePen "https://codepen.io/aarongustafson/pen/BoGgYM", "result", "112" %}
+  {% CodePen “https://codepen.io/aarongustafson/pen/BoGgYM", “result”, “112” %}
 </figure>
 
 Mary Lou assembled some beautiful examples of this approach in her [Inspiration for Text Input Effects](http://tympanus.net/codrops/2015/01/08/inspiration-text-input-effects/). I highly recommend you check those out, but here’s a teaser to whet your whistle:

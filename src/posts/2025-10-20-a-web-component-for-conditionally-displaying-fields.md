@@ -72,7 +72,7 @@ When using custom classes:
 
 Both are optional. Just remember that if you define a `disabled-class`, the `hidden` attribute will not be used — you will need to accessibly hide the content yourself.
 
-This gives you complete control over the visual presentation. You could use CSS transitions for smooth animations, apply different styling states, or integrate with your existing design system's utility classes.
+This gives you complete control over the visual presentation. You could use CSS transitions for smooth animations, apply different styling states, or integrate with your existing design system’s utility classes.
 
 ## Handling form state properly
 

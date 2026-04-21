@@ -43,7 +43,7 @@ Oh, and a little secret here… it’s a web app. In fact it’s a Progressive W
 
 Now that we’ve seen one in action, I want to start by clarifying what a Progressive Web App is, just so I’m sure we’re all on the same page before we go down this rabbit hole. As a point of clarification, you’ll hear me use the terms Progressive Web App and PWA interchangeably.
 
-So what is a Progressive Web App? Let’s ignore the first part of this term for a moment—_progressive_—I promise I’ll circle back to it shortly. Now the term "web app” may sound like something you can put your finger on, right? It’s software, on the Web, you use to complete a task. Like an expense manager, but it can be any website or property, really.
+So what is a Progressive Web App? Let’s ignore the first part of this term for a moment—_progressive_—I promise I’ll circle back to it shortly. Now the term “web app” may sound like something you can put your finger on, right? It’s software, on the Web, you use to complete a task. Like an expense manager, but it can be any website or property, really.
 
 And so it is with Progressive Web Apps too.
 
@@ -67,7 +67,7 @@ similar. In fact, if you’ve built an HWA, it shouldn’t be too difficult for 
 
 You’ll notice that from a quality, polish, and user experience perspective, they are nearly indistinguishable. And this is just the first iteration of Twitter Lite. It launched last month. The only real difference is that one was built using Web technologies and lives at a URL.
 
-Though [the "progressive web apps" moniker was coined by Frances Berriman in 2015](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/) and has quickly become a buzzword in our industry, it’s important to recognize that this idea of the Web as app is not new.
+Though [the “progressive web apps” moniker was coined by Frances Berriman in 2015](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/) and has quickly become a buzzword in our industry, it’s important to recognize that this idea of the Web as app is not new.
 
 Back in 2007, [Adobe introduced Apollo](https://web.archive.org/web/20070322155954/http://www.adobe.com/aboutadobe/pressroom/pressreleases/200703/031907ApolloLabs.html), later renamed the Adobe Integrated Runtime (<abbr aria-title="also known as">a.k.a.</abbr> [Adobe AIR](http://www.adobe.com/products/air.html)). This technology enabled designers and developers to build apps in Flash or using Web technologies—HTML, CSS and JavaScript. It was pretty revolutionary for the time, supporting drag & drop, menu bar integration, file management, and more.
 
@@ -81,12 +81,12 @@ Countless tools have followed Adobe’s lead as well, enabling designers and dev
 
 Google’s [Alex Russell](https://infrequently.org/) defined 10 characteristics he believes define this new breed of Web application:
 
-1. **Progressive:** It works for every user, regardless of browser choice because it's built with progressive enhancement as a core tenet.
+1. **Progressive:** It works for every user, regardless of browser choice because it’s built with progressive enhancement as a core tenet.
 2. **Responsive:** The UI adapts to fit any form factor.
 3. **Network independent:** It works offline and on low-quality networks (which is something [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker) helps with).
 4. **App-like:** It feels like an app in terms of responsiveness and UX.
 5. **Fresh:** The experience is always up to date (another area where Service Worker shines).
-6. **Safe:** It is served via HTTPS to prevent snooping and to ensure content hasn't been tampered with.
+6. **Safe:** It is served via HTTPS to prevent snooping and to ensure content hasn’t been tampered with.
 7. **Discoverable:** Search spiders can identify it as an app because it uses a [Web Application Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) (and a Service Worker).
 8. **Re-engageable:** It can re-engage users through features like [push notifications](https://developer.mozilla.org/en-US/docs/Web/API/Push_API).
 9. **Installable:** It can be installed by users if they find it useful. This could be done independently of—but is not necessarily exclusive of—app stores.
@@ -120,7 +120,7 @@ Contrast that with building your software as a web-based product with the charac
 
 </figure>
 
-Now that we’ve talked about install ability—the "app" bit, if you will—let’s circle back to that first principle of Progressive Web Apps: _progressive_. It must be important, after all it is literally the first word in this approach. “Progressive” in this context refers to _progressive enhancement_. In case you’re unfamiliar with the idea, I’ll provide a quick analogy; I’m a huge music and movie fan, so we’ll focus on sound for this analogy.
+Now that we’ve talked about install ability—the “app” bit, if you will—let’s circle back to that first principle of Progressive Web Apps: _progressive_. It must be important, after all it is literally the first word in this approach. “Progressive” in this context refers to _progressive enhancement_. In case you’re unfamiliar with the idea, I’ll provide a quick analogy; I’m a huge music and movie fan, so we’ll focus on sound for this analogy.
 
 Back in the early days of recording, we only had a single speaker (or horn, back in the Victrola days) to relay the sound to our ears. Round about the 1930s, modern two-channel stereophonic sound was invented to solve a cinematic problem: in early “talkies” a single channel of sound was delivered through multiple speakers, which sometimes led to a weird situation where a performer would be on one side of the screen, but their voice would be coming from the other side (the speaker near you). Stereo sound allowed the actor’s voice to follow them in a much more natural way. Even with this advancement, though, stereo recordings could still be listened to on a single speaker by combining the channels.
 
@@ -161,7 +161,7 @@ Here we have an email input field:
 <input type="email" name="email" id="email" required aria-required="true" />
 ```
 
-The "email" field type was introduced in HTML5, so older browsers may not support it. Those that don’t will provide the default `input` type—a text field—to users. That’s totally fine—it’s all we had for more than a dozen years before HTML5 came along! But even if a user’s device does support email fields, it’s implementation may vary. Based on how a browser answers the following questions, users will end up with different experiences:
+The “email” field type was introduced in HTML5, so older browsers may not support it. Those that don’t will provide the default `input` type—a text field—to users. That’s totally fine—it’s all we had for more than a dozen years before HTML5 came along! But even if a user’s device does support email fields, it’s implementation may vary. Based on how a browser answers the following questions, users will end up with different experiences:
 
 - Do you support for email input type?
 - Do you support the HTML5 form validation algorithm including the email format?
@@ -187,7 +187,7 @@ In terms of experience of this field, it improves incrementally along a path lik
 
 Now think about that for a second—this incredible variety of experience is created by one HTML element when you add three specific attributes to it. And the experienced is enhanced—_progressively_—as the browser’s and operating system’s capabilities increase. Amazing!
 
-As I mentioned, <span data-quotable>progressive enhancement ensures people can use your product, no matter what</span>. You could just as easily swap in "PWA" for "progressive enhancement" in that statement. After all, PWAs give you network awareness and independence, they can be used to lower the overall cost of using your product for your for users through smart caching, they enable access to platform APIs on certain platforms, and they provide more ways for your product to get discovered (e.g., search, store, links). Those are some impressive progressive enhancement bona fides.
+As I mentioned, <span data-quotable>progressive enhancement ensures people can use your product, no matter what</span>. You could just as easily swap in “PWA” for “progressive enhancement” in that statement. After all, PWAs give you network awareness and independence, they can be used to lower the overall cost of using your product for your for users through smart caching, they enable access to platform APIs on certain platforms, and they provide more ways for your product to get discovered (e.g., search, store, links). Those are some impressive progressive enhancement bona fides.
 
 Additionally, the two technical lynchpins of PWA—Web App Manifest and Service Worker—are ignored if they aren’t supported. Products you build using them [will continue to work really well, even in their absence](https://cloudfour.com/thinks/why-does-the-washington-posts-progressive-web-app-increase-engagement-on-ios/). They are, by definition, progressive enhancements too.
 
@@ -247,7 +247,7 @@ PWAs can get into the Windows Store in one of two ways. The first is through act
 
 _Note: I invited Jeff back up on stage to walk through building a PWA and submitting it to the Windows Store using PWA Builder._
 
-Obviously we want Windows users to have access to as many quality PWAs as possible, but we recognize that not all development teams have the time to submit and maintain their apps in the Store. To address this, we’ve developed an approach to enable their apps to be easily discovered in the Store too. For lack of a better term, we’re currently calling this process "passive ingestion".
+Obviously we want Windows users to have access to as many quality PWAs as possible, but we recognize that not all development teams have the time to submit and maintain their apps in the Store. To address this, we’ve developed an approach to enable their apps to be easily discovered in the Store too. For lack of a better term, we’re currently calling this process “passive ingestion”.
 
 <figure id="fig-2017-05-24-12" class="media-container">
 
@@ -265,13 +265,13 @@ User-agent: bingbot
 Disallow: /manifest.json
 ```
 
-We are working on a set of criteria that will help us separate quality PWAs from sites that simply appear PWA-like. It’s still early days, but our consideration of what constitutes a "quality" PWA hinges on the following:
+We are working on a set of criteria that will help us separate quality PWAs from sites that simply appear PWA-like. It’s still early days, but our consideration of what constitutes a “quality” PWA hinges on the following:
 
 - **Does this site have a Web App Manifest?** In our initial crawl of sites looking for PWAs, we discovered over 1.5 million manifests across 800k domains. Looking at a selection of these sites, we discovered that not all are good candidates for ingestion. Some aren’t PWAs at all, others have a boilerplate manifest generated by tools like favicon generators.
 - **Does the Web App Manifest suggest quality?** We will be looking for non-boilerplate manifests that include a name, description, and at least one icon that is larger than 192px square.
 - **Is the site secure?** At this point, we are only looking for HTTPS, we aren’t evaluating [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) or other protections.
 - **Does the site have a valid Service Worker?** [Mozilla has a bunch of recipes](https://serviceworke.rs/) if you are looking for somewhere to start.
-- **Is the site popular?** We will prioritize sites that rank highly on [Alexa](http://www.alexa.com/topsites), [Quantcast](https://www.quantcast.com/top-sites), and other "top sites" lists.
+- **Is the site popular?** We will prioritize sites that rank highly on [Alexa](http://www.alexa.com/topsites), [Quantcast](https://www.quantcast.com/top-sites), and other “top sites” lists.
 - **Does the site pass automated testing for quality?** There are a number of tools out there for this, including our [Site Scanner](https://developer.microsoft.com/en-us/microsoft-edge/tools/staticscan/), [Lighthouse](https://developers.google.com/web/tools/lighthouse/), [aXe](https://www.deque.com/products/axe/), and more.
 - **Is the app content free?** There are certainly ways to charge for apps and content in the Windows Store, but we won’t passively ingest any sites that require a licensing fee or subscription. You’ll be able to submit those manually though.
 - **Does the app pass manual review?** PWAs will need to meet the standards of the Windows Store, just like any other app. We will not ingest apps that violate laws or Store policies.

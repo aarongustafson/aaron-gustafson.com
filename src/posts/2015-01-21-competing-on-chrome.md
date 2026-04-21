@@ -38,6 +38,6 @@ This is a major milestone for IE in my opinion and it makes me wonder if we’ve
 
 [^3]: You may not realize it, but Opera Mobile predated even IE6. And it’s Opera Mini variant touts big numbers too: In April 2014, there were over 267 million Opera mobile browser users (244 million of whom used Opera Mini) and Opera Mini users viewed over 177 billion pages in that same month. ([Source](http://www.operasoftware.com/smw/2014-04))
 
-[^4]: The Chrome browser, from Google, did not exist at this time. By "chrome" he meant the window around a webpage—it toolbars, buttons, menus, and other browser-based functionality.
+[^4]: The Chrome browser, from Google, did not exist at this time. By “chrome” he meant the window around a webpage—it toolbars, buttons, menus, and other browser-based functionality.
 
 [^5]: The only phrases that even hint at standards compliance were “modern Web” and “a new rendering engine… that is compatible with how the Web is written today” (starting at around 59:05 in [the video](https://ll.ms-studiosmedia.com/events/2015/1501/Windows10CP/live/Windows10CP.html?title=Windows10CP-mscom)).

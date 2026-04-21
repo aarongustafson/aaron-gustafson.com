@@ -44,7 +44,7 @@ This works really well, though I generally prefer to [combine explicit and impli
 
 Regardless of the markup pattern itself, it’s important to note the explicit association of the form control and the `label` element (using the `for` attribute). You’ll also notice the input has a straightforward `name` value which will be submitted to the back end if the user ticks the box.
 
-It’s worth noting that some back-end systems may require a value be submitted for the given variable name (in this case, "REMEMBERME") regardless of whether the user has ticked the checkbox. If that’s a requirement, you can alter the pattern to use a hidden `input` as well:
+It’s worth noting that some back-end systems may require a value be submitted for the given variable name (in this case, “REMEMBERME”) regardless of whether the user has ticked the checkbox. If that’s a requirement, you can alter the pattern to use a hidden `input` as well:
 
 ```html
 <input type="hidden" name="REMEMBERME" value="no" />
@@ -52,7 +52,7 @@ It’s worth noting that some back-end systems may require a value be submitted 
 <label for="lilo_checkBox">Remember Me</label>
 ```
 
-The source order matters because with matching `name` values, the final submittable `value` will always be the one the back-end receives. With this setup, the `value` of "no" (from the hidden `input`) will be submitted by default. If the checkbox is ticked, its `value` is submitted instead, setting REMEMBERME to "yes".
+The source order matters because with matching `name` values, the final submittable `value` will always be the one the back-end receives. With this setup, the `value` of “no” (from the hidden `input`) will be submitted by default. If the checkbox is ticked, its `value` is submitted instead, setting REMEMBERME to “yes”.
 
 ## Multiple Choice Checkboxes
 
@@ -96,13 +96,13 @@ The markup they employ is pretty well-organized and straightforward: it’s a li
 </ul>
 ```
 
-As this is an instance where a user could choose more than one option, the back end needs to be able to capture that information in what’s called an "array". An array, if you’re unfamiliar, is a collection of values. You’ll notice that the `name` given to each of these checkbox `input` elements is the same: "reservation*requested_device[]". The square brackets ("[]") at the end of the `name` are the magic bit that allows the values of \_each* chosen "reservation_requested_device" checkbox to be submitted as the value of "reservation_requested_device".
+As this is an instance where a user could choose more than one option, the back end needs to be able to capture that information in what’s called an “array”. An array, if you’re unfamiliar, is a collection of values. You’ll notice that the `name` given to each of these checkbox `input` elements is the same: “reservation*requested_device[]”. The square brackets (“[]”) at the end of the `name` are the magic bit that allows the values of \_each* chosen “reservation_requested_device” checkbox to be submitted as the value of “reservation_requested_device”.
 
 ## Applicable Attributes
 
 Checkbox controls only use a subset of the typical `input` attributes. In particular, you’ll need to include
 
-- `name` - This is the variable name you want to hold the user’s response. As mentioned in [the previous section](#multiple-choice-checkboxes), appending "[]" to the variable name will allow the variable to hold all of the user’s choices as opposed to only the final one.
+- `name` - This is the variable name you want to hold the user’s response. As mentioned in [the previous section](#multiple-choice-checkboxes), appending “[]” to the variable name will allow the variable to hold all of the user’s choices as opposed to only the final one.
 - `value` - This is the value that should be captured if the user ticks the checkbox.
 - `id` - The unique identifier you’re using for the control in order to explicitly associate it with a `label`.
 
@@ -133,7 +133,7 @@ For simple confirmation questions, it’s completely valid to use a radio form c
 
 <figcaption>In this excerpt from Subway’s online ordering tool, they use a checkbox to confirm the user wants their sandwich toasted.</figcaption></figure>
 
-A checkbox labelled "Fresh Toasted", isn’t terribly clear. A better approach would be to ask something like “Would you like your sandwich toasted?” with radio controls for “yes” and “no”. Alternately, if they absolutely wanted to keep it as a checkbox, they could use a better label: “Please toast my sandwich”.
+A checkbox labelled “Fresh Toasted”, isn’t terribly clear. A better approach would be to ask something like “Would you like your sandwich toasted?” with radio controls for “yes” and “no”. Alternately, if they absolutely wanted to keep it as a checkbox, they could use a better label: “Please toast my sandwich”.
 
 <figure id="fig-2016-01-06-04" class="media-container">
 

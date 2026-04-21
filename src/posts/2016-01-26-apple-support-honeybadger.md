@@ -38,7 +38,7 @@ A day or two later I got the mailer to send the phone to Apple, I shipped it to 
 
 Then Kelly asked me why Apple had charged us $329. I said I wasn’t sure. The authorization was for $299, but the repair service was only supposed to be $109 (plus tax and shipping, naturally). Perhaps they billed the whole amount and then returned the unused portion in a separate transaction. We decided to wait and see what would happen.
 
-The next day, a phone arrived. I say _a_ phone because it was not _my_ phone. Apple Support had sent me a refurbished replacement phone and charged me the full replacement cost. _Why?_ "After thorough diagnostic testing, it has been determined that a replacement iPhone (enclosed) is necessary." Vague.
+The next day, a phone arrived. I say _a_ phone because it was not _my_ phone. Apple Support had sent me a refurbished replacement phone and charged me the full replacement cost. _Why?_ “After thorough diagnostic testing, it has been determined that a replacement iPhone (enclosed) is necessary.” Vague.
 
 I was curious what their tests had revealed. <span data-quotable>What gremlins were lurking in my heretofore fully-functional device?</span> I decided to investigate with another support rep and was not thrilled with what I found.
 
@@ -70,7 +70,7 @@ He was completely empathetic:
 
 > I’m really sorry about this whole thing, Aaron. It’s looking like some sort of damage was found with the phone, which is what caused that price to be charged, rather than just the screen repair, so ultimately they decided that it would give you a longer lasting phone to replace it, so that way you wouldn’t have to deal with the hassle of having additional issues down the road. Honestly, I cannot express enough how much I understand the situation, and especially at least being informed or asked if that can be done. That’s just why the full out of warranty/replacement charge has to be held initially, is so that they have authorization to run those tests, and if needed, replace it, rather than just repair it. I’m so sorry that the process wasn’t elaborated to you, and that they didn’t at least let you know of what was going on.
 
-I reiterated that someone really should have _asked_ if I wanted the additional work done. I understand Apple’s "heart" might be in the right place, but they failed to do what I had hired them to do. They didn’t consider my wishes or expectations in their process at all. Nor did they give me an opportunity to decline the replacement and get my broken phone back.
+I reiterated that someone really should have _asked_ if I wanted the additional work done. I understand Apple’s “heart” might be in the right place, but they failed to do what I had hired them to do. They didn’t consider my wishes or expectations in their process at all. Nor did they give me an opportunity to decline the replacement and get my broken phone back.
 
 Josh pleasantly informed me that by agreeing to the repair, I was out of luck:
 
@@ -88,7 +88,7 @@ Ultimately, however, it didn’t really matter:
 
 > Basically, again, as much as I wish there was something that could be done on the matter in order to basically reverse what happened, it’s just not possible. Since it was authorized when it was initiated, and I do see where the previous advisors let you know that the full charge would be taken if additional damage was found, but if the only damage found to the phone was the screen cracks, then all but the screen repair fee of $109 plus taxes and shipping would be reimbursed. It’s just that additional damage was found, which is what caused that full charge to be taken.
 
-After a bit more back-and-forth, Josh recommended I file a complaint with Apple (I have), said he would make sure the process was reviewed internally, and connected me with a Senior Advisor, Alexander, to help me get a few more details regarding the "damage" that prompted the replacement. I thanked him for his time and for his empathy toward my situation.
+After a bit more back-and-forth, Josh recommended I file a complaint with Apple (I have), said he would make sure the process was reviewed internally, and connected me with a Senior Advisor, Alexander, to help me get a few more details regarding the “damage” that prompted the replacement. I thanked him for his time and for his empathy toward my situation.
 
 The next few minutes involved getting Alexander up to speed with what had happened. He was equally helpful:
 
@@ -114,7 +114,7 @@ Alexander towed the company line:
 
 > I’m looking at the chats you had with us when setting up the repair, and both advisors did say how it could be $299. I also don’t see anything from either one that says the depot would reach out to you if the repair price was not going to be $109. I’m really sorry that this happened to you Aaron, but this is how our process works and everything looks to have been done correctly here. … I see them saying that they will attempt to replace the screen and if that works it would be a $109 repair. If there were additional issues, it would cost more up to the $299 max for a full replacement unit.
 
-I clarified that they had said it _could_ cost more. There’s a difference between "could" and "would". I mentioned that I could have just kept the broken phone and upgraded with AT&T and spent less money. Alexander didn’t miss a beat:
+I clarified that they had said it _could_ cost more. There’s a difference between “could” and “would”. I mentioned that I could have just kept the broken phone and upgraded with AT&T and spent less money. Alexander didn’t miss a beat:
 
 > That certainly was an option you could have taken Aaron, and I do sympathize with not taking that option to end up paying more than you expected. I really wish the repair process was clearer for you, and I can only advise that you leave some feedback about the repair process to us at Apple Feedback. I don’t see any mention in these chats of the depot contacting you if the cost would be more nor an advisor stating that would be the case.
 

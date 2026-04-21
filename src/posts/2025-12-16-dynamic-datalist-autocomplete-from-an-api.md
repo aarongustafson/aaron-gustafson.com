@@ -12,7 +12,7 @@ tags:
     "web forms",
     "API",
   ]
-description: "The `datalist` element is great for autocomplete, but it's static. The `dynamic-datalist` web component brings dynamic, API-driven suggestions to your text fields as users type."
+description: "The `datalist` element is great for autocomplete, but it’s static. The `dynamic-datalist` web component brings dynamic, API-driven suggestions to your text fields as users type."
 twitter_text: "Want API-driven autocomplete suggestions in your forms? Here’s a web component that makes it happen."
 series:
   name: "Modern Web Form Best Practices"
@@ -44,7 +44,7 @@ To use the component, wrap it around your `input` field and specify an endpoint:
 </dynamic-datalist>
 ```
 
-As users type, the component makes GET requests to that endpoint, passing in the typed value as the "query" parameter (e.g., `/api/search?query=WHAT_THE_USER_TYPED`). The response from the endpoint is used to populates a dynamic `datalist` element with the results.
+As users type, the component makes GET requests to that endpoint, passing in the typed value as the “query” parameter (e.g., `/api/search?query=WHAT_THE_USER_TYPED`). The response from the endpoint is used to populates a dynamic `datalist` element with the results.
 
 The structure of the response should be JSON with an `options` array of string values:
 
@@ -59,7 +59,7 @@ The structure of the response should be JSON with an `options` array of string v
 Under the hood, the component:
 
 1. Adopts (or creates) a `datalist` element for your `input`,
-2. Listens for "input" events,
+2. Listens for “input” events,
 3. Debounces requests (waiting at least 250ms) to avoid overwhelming your API,
 4. Sends requests to your endpoint with the current value of the `input`,
 5. Reads back the JSON response,
@@ -85,7 +85,7 @@ This sends a POST request with a JSON body: `{ "query": "..." }`. Currently GET 
 
 ## Custom variable names
 
-As I mentioned, the component uses "query" as the parameter name by default, but you can easily change it via the `key` attribute:
+As I mentioned, the component uses “query” as the parameter name by default, but you can easily change it via the `key` attribute:
 
 ```html
 <dynamic-datalist endpoint="/api/terms" key="term">

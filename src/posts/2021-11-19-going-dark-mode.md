@@ -34,7 +34,7 @@ The first step was to add in the `prefers-color-scheme` Media Query. If you’re
 }
 ```
 
-I only wanted to add a "dark" theme as my default is pretty much a "light" theme anyway. For the most part, this was pretty straightforward… just swapping color values, being sure to use the specific properties I wanted to change (e.g., `background-color`, `border-color`) rather than the shorthand. The only tricky/convoluted bit was updating my fancy link underlines (which don’t use `text-decoration`).
+I only wanted to add a “dark” theme as my default is pretty much a “light” theme anyway. For the most part, this was pretty straightforward… just swapping color values, being sure to use the specific properties I wanted to change (e.g., `background-color`, `border-color`) rather than the shorthand. The only tricky/convoluted bit was updating my fancy link underlines (which don’t use `text-decoration`).
 
 ## Tweaking SVGs
 

@@ -17,7 +17,7 @@ One of the features I really love about Mastodon is their first-class Content Wa
 
 <!-- more -->
 
-Earlier today, [the idea of a "spoiler / content warning" element popped onto my radar through the Web We Want inbox](https://github.com/WebWeWant/webwewant.fyi/issues/615). It referenced [a discussion over on the WICG](https://discourse.wicg.io/t/standardized-spoiler-tag/5814) and I was intrigued but the potential of this kind of feature for HTML. Some folks suggested progressive disclosures like `details`/`summary` was the way to go, but that approach is limited to flow content (and fraught with a host of issues).
+Earlier today, [the idea of a “spoiler / content warning” element popped onto my radar through the Web We Want inbox](https://github.com/WebWeWant/webwewant.fyi/issues/615). It referenced [a discussion over on the WICG](https://discourse.wicg.io/t/standardized-spoiler-tag/5814) and I was intrigued but the potential of this kind of feature for HTML. Some folks suggested progressive disclosures like `details`/`summary` was the way to go, but that approach is limited to flow content (and fraught with a host of issues).
 
 ## Markup possibilities
 
@@ -48,7 +48,7 @@ When considering how content behind a warning should be handled, there are a few
 
 1. Indicated content should be obscured by default.
 1. Users must choose to reveal the content.
-1. Content should not be included in the "find in page" index.
+1. Content should not be included in the “find in page” index.
 1. Images should not be downloaded until they are requested (or there is a good chance they will be needed).
 
 There’s also an interesting opportunity for browsers to offer user preferences around this approach as well. For example, I may never want to be shown content that deals with rape, so I could configure that in my preferences and the browser could take additional steps to hide that content from me or at least make sure I actually want to reveal it by requiring a second step for final approval (i.e., _Are you actually sure you want to see this?_).
@@ -59,7 +59,7 @@ I threw together [a quick & dirty demo of what the experience could be like](htt
 
 <figure id="2023-04-21-01">
 
-{% CodePen "https://codepen.io/aarongustafson/pen/rNqjeqj", "result", "500" %}
+{% CodePen “https://codepen.io/aarongustafson/pen/rNqjeqj", “result”, “500” %}
 
 </figure>
 
@@ -82,7 +82,7 @@ I tested this approach with VoiceOver and JAWS and it works a treat. I also conf
 
 <figure id="2023-04-21-02">
 
-{% CodePen "https://codepen.io/aarongustafson/pen/QWZpqPe", "result", "500" %}
+{% CodePen “https://codepen.io/aarongustafson/pen/QWZpqPe", “result”, “500” %}
 
 </figure>
 

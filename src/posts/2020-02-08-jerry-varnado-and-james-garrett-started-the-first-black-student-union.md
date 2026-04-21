@@ -18,9 +18,9 @@ James same to San Francisco State partly to organize and partly to take classes 
 
 Jerry was the chapter president of Alpha Phi Alpha, a Black fraternity. A Mississippi native, he’d joined the Air Force before ending up at San Francisco State. He was also active in the (Negro Student Association) NSA, an organized club for all Black students. He and James met at a party and instantly hit it off.
 
-The two began meeting to discuss strategies for organizing on campus. Even though their ideas seemed like the sort of thing the NSA would be interested in, it became clear the NSA was not motivated to agitate in the same way James & Jerry wanted it to; their group needed its own identity. Tricia Navara, a fellow student, dubbed them the "Black Student Union" (BSU) and the name stuck.
+The two began meeting to discuss strategies for organizing on campus. Even though their ideas seemed like the sort of thing the NSA would be interested in, it became clear the NSA was not motivated to agitate in the same way James & Jerry wanted it to; their group needed its own identity. Tricia Navara, a fellow student, dubbed them the “Black Student Union” (BSU) and the name stuck.
 
-"Our thing was not simply to understand the world. Our duty was to change it," Garrett recalled. "Everybody on the campus who identified themselves as a Black person, whether they were a student, faculty, worked in the yards, you were a member of the Black Student Union by definition."
+“Our thing was not simply to understand the world. Our duty was to change it,” Garrett recalled. “Everybody on the campus who identified themselves as a Black person, whether they were a student, faculty, worked in the yards, you were a member of the Black Student Union by definition.”
 
 Pretty soon word of the BSU spread beyond the San Fransisco State campus and the group began getting calls from other schools. First from a group at Stamford, then other colleges, high schools, and even elementary schools. As the BSUs spread, they put collective pressure on schools to diversify, to create more liberal admissions policies, and to change their treatment of Black students. Ibram Rogers referred to the movement as the Black Campus Movement.
 
@@ -33,6 +33,6 @@ As an interesting side note, the Black Studies Department at San Francisco State
 ## Further Reading
 
 1. <cite>Blow it up!: The Black student revolt at San Francisco State College and the emergence of Dr. Hayakawa</cite>, by Dikran Karagueuzian, 1971
-2. ["On Strike! Blow It Up!"](https://www.npr.org/2019/03/20/704988020/-on-strike-blow-it-up) <cite>Code Switch</cite> podcast, 2019
-3. ["Remembering the Black Campus Movement: An Oral History Interview with James P. Garrett"](http://www.jpanafrican.org/docs/vol2no10/2.10_Remembering_the_Black_Campus_Movement.pdf) by Ibram Rogers, M.A., Temple University
-4. ["The Black Student Union at SFSU started it all"](https://www.sfgate.com/news/article/The-Black-Student-Union-at-SFSU-started-it-all-3274175.php) SFGate, 2010
+2. [“On Strike! Blow It Up!”](https://www.npr.org/2019/03/20/704988020/-on-strike-blow-it-up) <cite>Code Switch</cite> podcast, 2019
+3. [“Remembering the Black Campus Movement: An Oral History Interview with James P. Garrett”](http://www.jpanafrican.org/docs/vol2no10/2.10_Remembering_the_Black_Campus_Movement.pdf) by Ibram Rogers, M.A., Temple University
+4. [“The Black Student Union at SFSU started it all”](https://www.sfgate.com/news/article/The-Black-Student-Union-at-SFSU-started-it-all-3274175.php) SFGate, 2010

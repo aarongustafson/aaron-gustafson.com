@@ -89,7 +89,7 @@ https://www.youtube.com/watch?v=pALIuO5uHUA
 I put together [a quick demo of this](https://codepen.io/aarongustafson/pen/LEEQyqg) in a fork of [Alvin Shaw’s Canvas Sine Wave Experiment](https://codepen.io/alvinshaw/pen/mdEKggg):
 
 <figure id="fig-2025-05-01-02" class="media-container">
-  {% CodePen "https://codepen.io/aarongustafson/pen/LEEQyqg", "result", "331" %}
+  {% CodePen “https://codepen.io/aarongustafson/pen/LEEQyqg", “result”, “331” %}
 </figure>
 
 <hr>

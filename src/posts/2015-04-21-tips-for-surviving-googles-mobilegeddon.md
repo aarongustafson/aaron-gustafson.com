@@ -14,12 +14,12 @@ Today is the day [Google updates it algorithm to take into account mobile-friend
 
 This is a quick win. I’ve done the mobile-first overhaul on a number of existing sites over the last few years and the best strategy I’ve found is this:
 
-1. Create two CSS files. Name the first something like "basic.css" and link to it with `media="all"`. Name the second something like "advanced.css" and link to it with `media="only screen"`.
+1. Create two CSS files. Name the first something like “basic.css” and link to it with `media="all"`. Name the second something like “advanced.css” and link to it with `media="only screen"`.
 2. Move all of your existing desktop-only CSS into advanced.css and wrap the rules in a media query corresponding to your design width (e.g. `@media (min-width:60em)` for a 960px max width).
 3. Open a page from your site in a new browser window and make it as small as possible. Move any basic typographic and color styles from advanced.css to default.css and refresh the page. How does it look? Make the browser wider. Still acceptable? Awesome! This is the CSS you’ll serve to older browsers that don’t understand media queries and it forms the basis of your larger screen styles.
-4. Shrink the browser back down to the smallest it can go and create a breakpoint for that size in advanced.css (e.g. `@media (min-width:10.5em)` if you want to small target devices like the [Pebble](https://getpebble.com/)). Move any styles you want applied in this scenario from your "full screen" breakpoint and add any new rules you need to make things look good.
+4. Shrink the browser back down to the smallest it can go and create a breakpoint for that size in advanced.css (e.g. `@media (min-width:10.5em)` if you want to small target devices like the [Pebble](https://getpebble.com/)). Move any styles you want applied in this scenario from your “full screen” breakpoint and add any new rules you need to make things look good.
 5. Increase the browser width until the layout looks odd, then make a new breakpoint and move in or add the necessary styles.
-6. Rinse & repeat until you get up to the "full screen" layout.
+6. Rinse & repeat until you get up to the “full screen” layout.
 7. Move your print styles—you do have print styles, right?—into default.css and wrap them in a print `@media` block.
 
 For another approach to responsive retrofitting, check out [this piece from Ben Callahan](http://webstandardssherpa.com/reviews/responsive-retrofitting/).

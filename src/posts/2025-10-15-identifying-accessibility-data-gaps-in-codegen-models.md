@@ -34,7 +34,7 @@ Here’s how it works:
 
 **Prompt Engineering**: I designed prompts that ask for specific UI components—form fields, navigation menus, interactive elements—without explicitly mentioning accessibility requirements. This gives us a baseline of what the model considers “standard” output. I included one prompt that specifically requested accessibility features to see if the model could improve when guided. I suspected it would often add ARIA attributes without addressing underlying issues, but I wanted to validate that too.
 
-**Response Collection**: For each prompt, I generated 10 iterations at high temperature (0.95) to capture the model's range of responses. Each unique response got saved as an individual HTML file for analysis.
+**Response Collection**: For each prompt, I generated 10 iterations at high temperature (0.95) to capture the model’s range of responses. Each unique response got saved as an individual HTML file for analysis.
 
 **Systematic Analysis**: I manually review each generated code snippet, cataloging accessibility errors, warnings, and missed opportunities. I tried using the LLM as a judge, but even with a detailed rubric, the results were poor. My eval looked specifically for things like:
 
@@ -50,9 +50,9 @@ When I identified errors, I remediated them and committed the remediated file to
 
 ## What did I learn?
 
-After analyzing hundreds of generated code snippets, the results are sobering. The model consistently demonstrates what I'd describe as superficial awareness without true understanding — it knows accessibility concepts exist but fundamentally misunderstands their purpose and proper implementation.
+After analyzing hundreds of generated code snippets, the results are sobering. The model consistently demonstrates what I’d describe as superficial awareness without true understanding — it knows accessibility concepts exist but fundamentally misunderstands their purpose and proper implementation.
 
-Here are some of the patterns I've documented:
+Here are some of the patterns I’ve documented:
 
 **Form Label Disasters**: When asked to create a required text field, the model failed to include a visible label:
 
@@ -100,7 +100,7 @@ Here the `for` attribute already establishes the relationship between the label 
 
 This redundancy raises the question _why‽_
 
-**Required Field Misapplication**: For checkbox groups where users need to select "one or more," the model often adds `required` to individual checkboxes:
+**Required Field Misapplication**: For checkbox groups where users need to select “one or more,” the model often adds `required` to individual checkboxes:
 
 ```html
 <fieldset>
@@ -172,7 +172,7 @@ Ideally, this would be a `fieldset` with a `legend` and the descriptive text wou
 
 ## How Does This Help?
 
-Here's where things get interesting — and hopeful. When I retested using prompts that included accessibility hints, the model’s output improved dramatically. Not just slightly better, but often going from fundamentally broken to genuinely accessible.
+Here’s where things get interesting — and hopeful. When I retested using prompts that included accessibility hints, the model’s output improved dramatically. Not just slightly better, but often going from fundamentally broken to genuinely accessible.
 
 For example, when I added diff data related to fieldset use to a prompt about radio button groups, the model switched from generating meaningless `div` wrappers to proper semantic structures.
 
@@ -186,7 +186,7 @@ These findings point to several concrete approaches for improving accessibility 
 
 **Accessibility-Aware Fine-Tuning**: Post-training refinement specifically focused on accessibility compliance could help models prioritize inclusive patterns. This could involve training on accessibility-annotated code pairs — showing inaccessible implementations alongside their accessible counterparts, like the diffs do.
 
-**Prompt Engineering Guidelines**: Tool creators should integrate accessibility considerations into their default system prompts. Instead of just asking for "clean, semantic HTML," prompts should provide detailed instructions to demonstrate accessibility best practices rather than pointing at often vague guidelines like WCAG."
+**Prompt Engineering Guidelines**: Tool creators should integrate accessibility considerations into their default system prompts. Instead of just asking for “clean, semantic HTML,” prompts should provide detailed instructions to demonstrate accessibility best practices rather than pointing at often vague guidelines like WCAG.”
 
 **Integrated Accessibility Validation**: IDE integrations should include real-time accessibility linting of AI-generated code, providing immediate feedback and suggestions for improvement.
 
@@ -194,11 +194,11 @@ These findings point to several concrete approaches for improving accessibility 
 
 <hr>
 
-The data from this project provides a roadmap for where to focus these efforts. We’re not dealing with models that are fundamentally incapable of generating accessible code — we’re dealing with models that haven't been properly trained to prioritize accessibility by default.
+The data from this project provides a roadmap for where to focus these efforts. We’re not dealing with models that are fundamentally incapable of generating accessible code — we’re dealing with models that haven’t been properly trained to prioritize accessibility by default.
 
 ## Want to Get Involved?
 
-If you want to conduct similar evaluations with your preferred models or specific use cases, I've created a template repository with the testing framework: [CodeGen Model Eval and Refine Tools](https://github.com/aarongustafson/CodeGen-Model-Eval-and-Refine-Tools). It includes the Python testing harness, prompt templates, and analysis guidelines to get you started.
+If you want to conduct similar evaluations with your preferred models or specific use cases, I’ve created a template repository with the testing framework: [CodeGen Model Eval and Refine Tools](https://github.com/aarongustafson/CodeGen-Model-Eval-and-Refine-Tools). It includes the Python testing harness, prompt templates, and analysis guidelines to get you started.
 
 The complete findings, methodology details, and code samples for my research are available [on GitHub](https://github.com/aarongustafson/testing-llm-code-a11y). I encourage you to dig into the data — it’s eye-opening and frustrating, yes, but ultimately actionable.
 

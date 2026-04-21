@@ -10,7 +10,7 @@ crossposted:
 
 Kelly and I are in the process of [selling our (beautiful) home](https://www.zillow.com/homedetails/1115-Hanover-St-Chattanooga-TN-37405/41420955_zpid/?fullpage=true) and I have been amazed at how difficult it’s been for our agents to break up the listing description into paragraphs, especially on [Zillow](https://www.zillow.com). After a ton of trial and error—after all, I wasn’t gonna let poor software design trump readability—I found a solution.
 
-> TLDR; Insert a blank line between the paragraphs and put "  " (that’s a space followed by a tab) on that line.
+> TLDR; Insert a blank line between the paragraphs and put “  “ (that’s a space followed by a tab) on that line.
 
 <!-- more -->
 
@@ -20,7 +20,7 @@ _Note: I wouldn’t normally blog about something like this. My preference would
 
 On Zillow (and many other real estate and other sites), you are only given a standard `textarea` to enter a description. Ignoring the fact that they hard-code it to be 78px high, I’m cool with that. The problem is that their field does not respect hard or soft returns and reduces them to a single line break.
 
-This has been [the subject of much consternation within the Zillow community](https://www.zillow.com/advice-thread/How-to-add-line-breaks-or-paragraph-separation-in-home-description/506436/) and the source of a lot of cludgey "workarounds" like putting single underscores on otherwise empty lines just to get some semblance of paragraph-level separation. Blech!
+This has been [the subject of much consternation within the Zillow community](https://www.zillow.com/advice-thread/How-to-add-line-breaks-or-paragraph-separation-in-home-description/506436/) and the source of a lot of cludgey “workarounds” like putting single underscores on otherwise empty lines just to get some semblance of paragraph-level separation. Blech!
 
 ## Why is This a Big Deal?
 
@@ -40,7 +40,7 @@ Expand that to the full description (around 440 words) and you quickly realize h
 
 ## Coming up With a Solution
 
-Having seen the forum discussions, I already knew inserting `br` elements was out. The field treated the element as text and would literally display "&lt;br&gt;" on the page. No dice.
+Having seen the forum discussions, I already knew inserting `br` elements was out. The field treated the element as text and would literally display “&lt;br&gt;” on the page. No dice.
 
 One enterprising user discovered that an underscore on a blank line worked. The underscore was visible, sure, but it didn’t bother her. It did, however, bother me. So I opted to riff on her idea and test every invisible character I knew. There are a bunch of them. Here are a small selection:
 

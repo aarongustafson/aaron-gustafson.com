@@ -18,7 +18,7 @@ But first let’s take a a trip back in time to 2003. In March of that year, [St
 
 ## What’s graceful degradation?
 
-_Graceful degradation_ assumes that an experience is going to be worse on older, less capable browsers and devices. To address potential problems, it recommends that developers take steps to avoid throwing errors—JavaScript or otherwise—for their users. Under this philosophy, a developer can take a range of approaches ranging from making everything work perfectly in down-level browsers to only addressing egregious errors or even chosing to block certain browsers from accessing the content if they are known to have problems. We saw this latter approach often with Flash-only sites, but it wasn’t limited to them. I used <a href="#2016-10-17-1">this "roadblock" example from Kodak.com</a> in [my book](http://adaptivewebdesign.info/):
+_Graceful degradation_ assumes that an experience is going to be worse on older, less capable browsers and devices. To address potential problems, it recommends that developers take steps to avoid throwing errors—JavaScript or otherwise—for their users. Under this philosophy, a developer can take a range of approaches ranging from making everything work perfectly in down-level browsers to only addressing egregious errors or even chosing to block certain browsers from accessing the content if they are known to have problems. We saw this latter approach often with Flash-only sites, but it wasn’t limited to them. I used <a href="#2016-10-17-1">this “roadblock” example from Kodak.com</a> in [my book](http://adaptivewebdesign.info/):
 
 <figure id="fig-2016-10-17-1" class="media-container">
 
@@ -64,7 +64,7 @@ How does it do this? Progressive enhancement takes advantage of the fault tolera
 
 As a member of the JavaScript community for over a decade now, I have theory for why many JavaScript developers are so antagonistic toward progressive enhancement. Part of it has to do with history and part of it has to do with programming culture. Let’s tackle the history first.
 
-When progressive enhancement was first proposed, the Web was getting more standardized, but things were still a bit of a mess… especially in the JavaScript world. Many JavaScript programs were poorly-written, contained lots of browser-specific code, and were generally unfriendly to anyone who fell outside of the relatively narrow band of "normal" Web use… like screen reader users, for example. It’s not surprising though: Graceful degradation was the name of the game at the time.
+When progressive enhancement was first proposed, the Web was getting more standardized, but things were still a bit of a mess… especially in the JavaScript world. Many JavaScript programs were poorly-written, contained lots of browser-specific code, and were generally unfriendly to anyone who fell outside of the relatively narrow band of “normal” Web use… like screen reader users, for example. It’s not surprising though: Graceful degradation was the name of the game at the time.
 
 Because JavaScript programs were creating barriers for users who just wanted to read news articles, access public services, and check their bank accounts, many accessibility advocates recommended that these folks disable JavaScript in their browsers. By turning off JavaScript, the theory went, users would get clean and clear access to the content and tasks they were using the Web for. Of course that was in the days before Ajax, but I digress.
 

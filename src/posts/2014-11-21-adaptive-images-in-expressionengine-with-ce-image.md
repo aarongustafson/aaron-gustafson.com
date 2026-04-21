@@ -140,9 +140,9 @@ The CE Image behavior is exactly the same, but the resulting markup is much clea
 
 The added bonus of this approach is that I am not hard-coding any media queries and the browser gets to make the ultimate decision of which image to request. All I am doing is telling the browser the image options and their respective widths within the `srcset` attribute. As all of the images take up 100% of their containers, I didn’t even need to use the `sizes` attribute. Easy peasy.
 
-## "Nice to Have" Images
+## “Nice to Have” Images
 
-Not every image adds something to the page. Some are purely optional, a visual enhancement. In order to reduce the size of pages on smaller screens, we often choose to "lazy load" certain image assets after page load, when we know there is enough room to display the image or when we feel it would be an enhancement to the design.
+Not every image adds something to the page. Some are purely optional, a visual enhancement. In order to reduce the size of pages on smaller screens, we often choose to “lazy load” certain image assets after page load, when we know there is enough room to display the image or when we feel it would be an enhancement to the design.
 
 Now some of you might be wondering: _Why not just `display:none` below a certain threshold?_ Well, I’ll tell you: images that are hidden with CSS are still requested by the browser. That means users who don’t see the images are still paying to download them (whether in terms of time waiting for the page to render or actual money on a metered connection). That kinda sucks for them. We should show our users a bit more respect and only request the images when we need them.
 
@@ -155,7 +155,7 @@ We wrote [a lazy-loading image script](https://github.com/easy-designs/easy-lazy
 ></div>
 ```
 
-The `data-img-src` attribute defines the path to the "nice to have" image and then the JavaScript adds the image element into the page when the appropriate conditions are met:
+The `data-img-src` attribute defines the path to the “nice to have” image and then the JavaScript adds the image element into the page when the appropriate conditions are met:
 
 ```html
 <div

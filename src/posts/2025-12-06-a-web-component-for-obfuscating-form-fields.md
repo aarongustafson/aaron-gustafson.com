@@ -12,7 +12,7 @@ tags:
     "web forms",
     "security",
   ]
-description: "There’s no standard way to make a field readable while editing but obfuscated at rest. The `form-obfuscator` web component fills that gap, giving you control over how sensitive data appears when fields aren't focused."
+description: "There’s no standard way to make a field readable while editing but obfuscated at rest. The `form-obfuscator` web component fills that gap, giving you control over how sensitive data appears when fields aren’t focused."
 twitter_text: "Need to obfuscate form field values when they’re not being edited? Here’s a web component for that."
 series:
   name: "Modern Web Form Best Practices"
@@ -107,7 +107,7 @@ For complete control, you can provide a JavaScript function via the `replacer` a
 
 This example uses a pattern to separate the username from the domain, then obfuscates only the username portion, leaving `@example.com` visible.
 
-Here's another practical example for credit cards:
+Here’s another practical example for credit cards:
 
 ```html
 <script>

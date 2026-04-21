@@ -15,7 +15,7 @@ About a year ago, I picked up a copy of [<cite>Mae Among the Stars</cite>](https
 
 <!-- more -->
 
-I was never much of a "space" kid, to be honest. I was a nerd for sure, and into science, but I always gravitated more toward biology than physics, which aligned with my interest in fantasy over science fiction (if that makes sense). All of that is to say that I don’t really remember who America’s astronauts have been beyond Neil Armstrong and John Glenn (and on a good memory day Buzz Aldrin and Sally Ride). So I guess it’s not surprising that Dr. Jemison’s wasn’t a name I was familiar with.
+I was never much of a “space” kid, to be honest. I was a nerd for sure, and into science, but I always gravitated more toward biology than physics, which aligned with my interest in fantasy over science fiction (if that makes sense). All of that is to say that I don’t really remember who America’s astronauts have been beyond Neil Armstrong and John Glenn (and on a good memory day Buzz Aldrin and Sally Ride). So I guess it’s not surprising that Dr. Jemison’s wasn’t a name I was familiar with.
 
 Anyway, after picking up this book and reading the mini-bio about Dr. Jemison, I got interested in learning more about her. The book does a good job of demonstrating her childhood passion for science and astronomy, but it totally jumps from her childhood to her being an astronaut, completely skipping over some of her other impressive accomplishments.
 

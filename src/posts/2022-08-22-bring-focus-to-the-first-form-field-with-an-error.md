@@ -140,7 +140,7 @@ document.querySelectorAll("form").forEach(function ($form) {
 
 With that in place, we can turn our attention to handling the validation setup.
 
-For simplicity, and based on personal preference, I am going to start with setting up my form to validate when the form is submitted rather than whenever an individual field is changed (hence the "submit" event listener). When the event is fired, the event handler will loop through the fields in the form and validate each one. For the sake of the widest possible browser compatibility, I’m foregoing fat arrow functions and other ES2015 goodies and rockin’ this old school.
+For simplicity, and based on personal preference, I am going to start with setting up my form to validate when the form is submitted rather than whenever an individual field is changed (hence the “submit” event listener). When the event is fired, the event handler will loop through the fields in the form and validate each one. For the sake of the widest possible browser compatibility, I’m foregoing fat arrow functions and other ES2015 goodies and rockin’ this old school.
 
 ```js
 function validateMe(e) {
@@ -196,6 +196,6 @@ It’s also worth noting that you’ll want to reset and re-validate the form fi
 
 Here you can see [a complete working prototype of this approach](https://codepen.io/aarongustafson/pen/eYMXMPP):
 
-{% CodePen "https://codepen.io/aarongustafson/pen/eYMXMPP", "result", "400" %}
+{% CodePen “https://codepen.io/aarongustafson/pen/eYMXMPP", “result”, “400” %}
 
 Hopefully this helps you with the development of your own forms. Good luck!

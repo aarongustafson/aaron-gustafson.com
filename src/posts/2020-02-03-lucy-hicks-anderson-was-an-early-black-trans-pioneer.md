@@ -11,11 +11,11 @@ series:
   ordinal: thirty-first
 ---
 
-While the term <i>transgender</i> is a recent development, [trans people have always been with us](https://wikipedia.org/wiki/Transgender_history). In the white supremacist system that dominates the United States and has declared cit-het people "normal" (and everyone else "abnormal"), being trans has never been easy, but it’s been [especially dangerous for Black trans women](https://www.forbes.com/sites/dawnstaceyennis/2019/06/15/american-medical-association-responds-to-epidemic-of-violence-against-transgender-community/). Knowing this, I am awestruck by the bravery of Lucy Hicks Anderson, a Black trans woman born in Kentucky in 1886, who became a renown socialite and hostess in 1940s California.
+While the term <i>transgender</i> is a recent development, [trans people have always been with us](https://wikipedia.org/wiki/Transgender_history). In the white supremacist system that dominates the United States and has declared cit-het people “normal” (and everyone else “abnormal”), being trans has never been easy, but it’s been [especially dangerous for Black trans women](https://www.forbes.com/sites/dawnstaceyennis/2019/06/15/american-medical-association-responds-to-epidemic-of-violence-against-transgender-community/). Knowing this, I am awestruck by the bravery of Lucy Hicks Anderson, a Black trans woman born in Kentucky in 1886, who became a renown socialite and hostess in 1940s California.
 
 <!-- more -->
 
-As I mentioned, Lucy Hicks Anderson was born in 1886. Born "Tobias Lawson," she was assigned male at birth. She was adamant that she was a girl from a very early age and insisted on wearing dresses and being called Lucy when she started school. Her mother took her to a physician and he supported Lucy’s parents in raising her as a young woman.
+As I mentioned, Lucy Hicks Anderson was born in 1886. Born “Tobias Lawson,” she was assigned male at birth. She was adamant that she was a girl from a very early age and insisted on wearing dresses and being called Lucy when she started school. Her mother took her to a physician and he supported Lucy’s parents in raising her as a young woman.
 
 Lucy left school at 15 and worked as a domestic servant. In doing so, she raised enough money to move West. First to Texas, then New Mexico. She met her first husband, Clarence Hicks, in New Mexico and the two later relocated to Oxnard, California where Lucy gained some notoriety as a chef. By the time her marriage ended, Lucy had saved up enough money to purchase a boarding house/brothel that also sold liquor during the height of prohibition. In 1944, Lucy married a soldier named Rueben Anderson.
 

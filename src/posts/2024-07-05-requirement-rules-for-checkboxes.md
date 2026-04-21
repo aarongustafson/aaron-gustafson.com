@@ -30,7 +30,7 @@ HTML checkboxes debuted as [part of HTML 2.0 in 1995](https://datatracker.ietf.o
 Before I tuck into the details, I’ll start by saying that the web component begins with the assumption that you are following best practices with respect to form markup:
 
 - Your checkbox group should be in a `fieldset` with a `legend`
-- All of the checkbox elements must have the same `name` (e.g., "foo[]").
+- All of the checkbox elements must have the same `name` (e.g., “foo[]”).
 
 In other words, they should look something like this:
 
@@ -79,8 +79,8 @@ The `form-required-checkboxes` element requires at least one attribute to functi
   - Single number (e.g., 3) requires exactly that number of choices.
   - Range (e.g., 3-5) requires a minimum of the first number and a max of the second number be chosen.
   - Max (e.g., 0-3) requires a minimum of zero and a max of the second number to be chosen.
-- `notice` (optional) - This is a string description that explains details of the required value in plain language. If you don't supply one, the component will create one for you based on the current language (if supported). This description will be added as a `small` element within the component (as a sibling to the `fieldset`).
-- `error` (optional) - This is a string validation error you'd like to be shown when the validation criteria is not met. If not provided, an appropriate error message will be generated based on the current language (if supported).
+- `notice` (optional) - This is a string description that explains details of the required value in plain language. If you don’t supply one, the component will create one for you based on the current language (if supported). This description will be added as a `small` element within the component (as a sibling to the `fieldset`).
+- `error` (optional) - This is a string validation error you’d like to be shown when the validation criteria is not met. If not provided, an appropriate error message will be generated based on the current language (if supported).
 - `lang` (optional) - Language code for localized messages (e.g., “en,” “es,” “fr,” “de”). Falls back to the nearest ancestor’s `lang` attribute or the document language.
 
 ## Localization
@@ -98,7 +98,7 @@ You can use it like this:
 </form-required-checkboxes>
 ```
 
-The component automatically detects the language from the `lang` attribute on the element itself, the nearest ancestor element, or the document's `lang` attribute, falling back to English if none is found.
+The component automatically detects the language from the `lang` attribute on the element itself, the nearest ancestor element, or the document’s `lang` attribute, falling back to English if none is found.
 
 You can also register custom translations or override existing ones using the `FormRequiredCheckboxesElement.registerTranslations()` static method. Regional language codes (e.g., `en-US`, `es-MX`) automatically fall back to their base language.
 

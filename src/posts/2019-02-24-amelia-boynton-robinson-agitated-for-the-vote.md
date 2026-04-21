@@ -17,9 +17,9 @@ In 1965, Amelia Boynton Robinson helped organize the march on Montgomery, Alabam
 
 Amelia Boynton Robinson is often brought up in the context of these marches, and with good reason. It took a great deal of courage and faith to participate as it meant risking life and limb. And, in truth, I’m sure it was terrifying. In a 2014 interview with he <cite>New York Post</cite>, [Robinson recalled](https://nypost.com/2014/12/01/103-year-old-activist-i-was-almost-killed-fighting-for-freedom/)
 
-> Then they charged. They came from the right. They came from the left. One [of the troopers] shouted: 'Run!' I thought, 'Why should I be running?' Then an officer on horseback hit me across the back of the shoulders and, for a second time, on the back of the neck. I lost consciousness.
+> Then they charged. They came from the right. They came from the left. One [of the troopers] shouted: ‘Run!’ I thought, ‘Why should I be running?’ Then an officer on horseback hit me across the back of the shoulders and, for a second time, on the back of the neck. I lost consciousness.
 
-According to the article, another officer stood over her unconscious body, "pumping tear gas into her eyes and mouth from a canister." He left her for dead and it’s a miracle she survived.
+According to the article, another officer stood over her unconscious body, “pumping tear gas into her eyes and mouth from a canister.” He left her for dead and it’s a miracle she survived.
 
 But Bloody Sunday wasn’t the only time Robinson agitated for change. As a young girl in Savannah, Georgia, she was involved in the women’s suffrage movement. In 1934, at the age of 23, she registered to vote in Selma, Alabama, where she had relocated after taking a job with the U.S. Department of Agriculture. Registering to vote was no easy task for a Black person in Alabama, thanks to disenfranchising constitution it passed during reconstruction. The articles of that constitution excluded most Black people from politics right up until the 1960s.
 

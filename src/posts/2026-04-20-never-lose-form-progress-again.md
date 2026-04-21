@@ -145,7 +145,7 @@ If you need something more explicit, you can provide your own `storage-key`:
 </form-saver>
 ```
 
-This is useful when a form's URL is not stable or when you want multiple views to intentionally share the same saved state. Sometimes explicit is just easier. Sometimes it is the only way to stay sane.
+This is useful when a form’s URL is not stable or when you want multiple views to intentionally share the same saved state. Sometimes explicit is just easier. Sometimes it is the only way to stay sane.
 
 ## Want to drive it yourself?
 

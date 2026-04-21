@@ -23,7 +23,7 @@ Molly recognized the power of the web—and the Open Web in particular—to conn
 
 As I reflected on her life last year when we lost her, this passage really struck me:
 
-> Mortality reminds us in very cold, frightening terms how fragile our life and times truly are. The Web, which is a naturally social and interactive communications platform, can help bring us all closer. The fighting, the drama, the debates - they all become irrelevant in these very mortal moments. Let us all reach for the greatness within ourselves and put it into our Web work every day, because even on those days we feel it's overwhelming or doesn't matter, it really truly does. One world, one Web, one love, my brothers and sisters.
+> Mortality reminds us in very cold, frightening terms how fragile our life and times truly are. The Web, which is a naturally social and interactive communications platform, can help bring us all closer. The fighting, the drama, the debates - they all become irrelevant in these very mortal moments. Let us all reach for the greatness within ourselves and put it into our Web work every day, because even on those days we feel it’s overwhelming or doesn’t matter, it really truly does. One world, one Web, one love, my brothers and sisters.
 
 I cannot think of a better way to remember Molly on this day.
 

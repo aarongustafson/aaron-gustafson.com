@@ -16,7 +16,7 @@ In 1724, the man who came to be known as Francisco Menéndez escaped his enslave
 
 In the late 17th Century, Spain and Britain were bickering neighbors in the southeast of what is now the United states. In 1693, Spain’s King Charles II ordered Spanish colonists to grant freedom and protection to any escaped British slaves who agreed to convert to Catholicism and serve Spain in the militia for four years. To be clear, Spain did not do this because it didn’t support slavery—far from it—they did it for two directly related reasons: it undermined the British colonists by depleting their workforce _and_ it boosted the size of <i>La Florida</i>. Between 1688 and 1725 at least six separate groups of slaves escaped from South Carolina and settled in St. Augustine (the capital of Spanish Florida).
 
-We don’t know his original name, but the man baptized in the Catholic Church as "Francisco Menéndez" was from the Mandinka nation in western Africa, located along the Gambia River. It’s believed that he was captured and sold by slave traders and likely arrived in Carolina some time between 1709 and 1711. A veteran of the Yamasee War, Francisco was appointed captain of the slave militia at St. Augustine in 1726, just two years after his arrival. His defense of the city in 1727 earned him a reputation for strong leadership and bravery.
+We don’t know his original name, but the man baptized in the Catholic Church as “Francisco Menéndez” was from the Mandinka nation in western Africa, located along the Gambia River. It’s believed that he was captured and sold by slave traders and likely arrived in Carolina some time between 1709 and 1711. A veteran of the Yamasee War, Francisco was appointed captain of the slave militia at St. Augustine in 1726, just two years after his arrival. His defense of the city in 1727 earned him a reputation for strong leadership and bravery.
 
 Despite Spain’s promise and all he had done for Spain in such a short time, Francisco did not earn his unconditional freedom from slavery until nine years later, in 1738. In that same year, the Spanish governor established <i>Gracia Real de Santa Teresa de Mose</i> (Fort Mose) about two miles north of St. Augustine. Slaves who had escaped from the British colonies were directed there and, with around 100 residents, Fort Mose became the first legal settlement of free Black people in what would eventually become the United States.
 
@@ -31,4 +31,4 @@ You can visit the Fort Mose site, which is [a national park](https://www.nps.gov
 ## Further Reading
 
 1. [Fort Mose Site, Florida](https://www.nps.gov/nr/travel/American_Latino_Heritage/Fort_Mose.html)
-2. [Fort Mose: Colonial America's Black Fortress of Freedom](https://books.google.com/books?id=i1oAPwAACAAJ), University Press of Florida, 1995
+2. [Fort Mose: Colonial America’s Black Fortress of Freedom](https://books.google.com/books?id=i1oAPwAACAAJ), University Press of Florida, 1995

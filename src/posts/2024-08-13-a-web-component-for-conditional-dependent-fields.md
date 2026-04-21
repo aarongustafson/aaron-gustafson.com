@@ -54,7 +54,7 @@ This `conditions` attribute can be populated with as many or as few dependencies
 Here the field depends on one of the following conditions being true:
 
 1. the field matching `[name="email"]` has a value, _or_
-2. the field matching `[name="test"]` has a value of "3"
+2. the field matching `[name="test"]` has a value of “3”
 
 If the field you reference doesn’t exist, no errors will be thrown, it will just quietly exit.
 
@@ -63,7 +63,7 @@ If the field you reference doesn’t exist, no errors will be thrown, it will ju
 If you typically use an asterisk or similar to indicate a field is required, this web component can support that through one or both of the following attributes:
 
 - `indicator` - This attribute is where you define the indicator itself. It could be something as simple as a string (e.g., \*), or even full-blown HTML.
-- `indicator-placement` - As you can probably guess, this attribute is used to set the position of the indicator. If you want it at the start of the label text, you give it the value "before." If you want it after the text, you use "after" or don’t use the attribute at all. Indicators will be placed after the label text by default.
+- `indicator-placement` - As you can probably guess, this attribute is used to set the position of the indicator. If you want it at the start of the label text, you give it the value “before.” If you want it after the text, you use “after” or don’t use the attribute at all. Indicators will be placed after the label text by default.
 
 Here’s an example with a custom indicator that is HTML:
 

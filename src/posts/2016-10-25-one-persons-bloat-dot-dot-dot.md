@@ -16,7 +16,7 @@ The [Web Bloat Score Calculator](http://www.webbloatscore.com/) has been making 
 
 <!-- more -->
 
-First off, I am a big fan of simple tools that provide an often much-needed reality check on a project. Based squarely on its simplicity, I’d put this tool right up there alongside [WebPageTest](https://www.webpagetest.org/) and [What Does My Site Cost?](https://whatdoesmysitecost.com/). The Web Bloat Score (or WebBS… clever) Calculator is about as simple an interface as you can get: Enter a URL & hit the "Calculate" button.
+First off, I am a big fan of simple tools that provide an often much-needed reality check on a project. Based squarely on its simplicity, I’d put this tool right up there alongside [WebPageTest](https://www.webpagetest.org/) and [What Does My Site Cost?](https://whatdoesmysitecost.com/). The Web Bloat Score (or WebBS… clever) Calculator is about as simple an interface as you can get: Enter a URL & hit the “Calculate” button.
 
 When you do this, the service runs two tasks:
 

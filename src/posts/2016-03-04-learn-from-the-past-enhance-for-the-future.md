@@ -9,7 +9,7 @@ twitter_text: "In case you missed it, here’s a written version of my #EnhanceC
 description: "I had the great pleasure of delivering the closing keynote for the first EnhanceConf. I wanted to talk about voice and the future of “headless” user interfaces. Here’s what I had to say."
 ---
 
-_I had the great pleasure of delivering the closing keynote for the first EnhanceConf. I wanted to talk about voice and the future of "headless" user interfaces. Here’s what I had to say._
+_I had the great pleasure of delivering the closing keynote for the first EnhanceConf. I wanted to talk about voice and the future of “headless” user interfaces. Here’s what I had to say._
 
 <!-- more -->
 
@@ -23,13 +23,13 @@ The submitter, JamHam, is certainly not alone in feeling this way. The ways we b
 
 As the years pressed on, the three major technologies underpinning the Web—HTML, CSS, and JavaScript—evolved and became even more powerful.
 
-Things coalesced for a while in the early oughts before Jesse James Garrett re-christened a relatively obscure Microsoft creation, `XMLHttpRequest`, "AJAX" and set countless designers hearts aflutter with the promise of banishing the page refresh. At the heart of this revolution was JavaScript, and companies began betting their entire Web presence on its availability. Most learned that wasn’t such a good idea and began using it as an enhancement to the experience rather than a requirement.
+Things coalesced for a while in the early oughts before Jesse James Garrett re-christened a relatively obscure Microsoft creation, `XMLHttpRequest`, “AJAX” and set countless designers hearts aflutter with the promise of banishing the page refresh. At the heart of this revolution was JavaScript, and companies began betting their entire Web presence on its availability. Most learned that wasn’t such a good idea and began using it as an enhancement to the experience rather than a requirement.
 
 After Ajax, there was HTML5, CSS3, and a host of new JavaScript APIs… the JavaScript frameworks—Angular, Knockout, Backbone, Ember, React… The ways we can create Web products just keep changing; sometimes slowly, but more often than not at such a speedy clip it leaves my head spinning.
 
-The one thing I’ve learned however, being an "old man" in Web terms, is that web design is cyclical, just like everything else. **The challenges we face building web products today are not new challenges.** Moreover, the lessons we learned building similar products in the "Web 1.0" days pay dividends today and will continue to do so in the future.
+The one thing I’ve learned however, being an “old man” in Web terms, is that web design is cyclical, just like everything else. **The challenges we face building web products today are not new challenges.** Moreover, the lessons we learned building similar products in the “Web 1.0” days pay dividends today and will continue to do so in the future.
 
-When I started out on the Web, I had a 28.8 <abbr aria-label="kilobits per second">kbit/s</abbr> modem, but still had to support users on 14.4 <abbr aria-label="kilobits per second">kbit/s</abbr> connections. That’s half the speed I was used to running at. That may have been 20 years ago, but the lessons I learned about streamlining my HTML, optimizing images, and minimizing downloads has helped me immeasurably when dealing with high-latency mobile networks and excruciatingly slow "broadband" connections.
+When I started out on the Web, I had a 28.8 <abbr aria-label="kilobits per second">kbit/s</abbr> modem, but still had to support users on 14.4 <abbr aria-label="kilobits per second">kbit/s</abbr> connections. That’s half the speed I was used to running at. That may have been 20 years ago, but the lessons I learned about streamlining my HTML, optimizing images, and minimizing downloads has helped me immeasurably when dealing with high-latency mobile networks and excruciatingly slow “broadband” connections.
 
 (I’m looking at you, every hotel ever.)
 
@@ -81,7 +81,7 @@ Let’s take a trip back in time to one of the earliest computer games: Zork. Zo
 
 As you move from location to location throughout the game, the program describes the environment and notes objects and people you can interact with. You type what you want to do and the program tells you the results of your actions.
 
-As this was the early days of computer gaming, you might think Zork’s interactions would be simple noun-verb combinations—"kill troll"—but Zork was more sophisticated than that. Its parser was could understand far more complex commands like "hit the troll with the Elvish sword". This made the experience far more natural, as if you were playing a table top game with friends.
+As this was the early days of computer gaming, you might think Zork’s interactions would be simple noun-verb combinations—“kill troll”—but Zork was more sophisticated than that. Its parser was could understand far more complex commands like “hit the troll with the Elvish sword”. This made the experience far more natural, as if you were playing a table top game with friends.
 
 Whether Zork or a webpage, **every interface is a conversation**—we engage our users directly in an effort to inform them, entertain them, or persuade them to act in a particular way. How this conversation goes directly affects the experience our users have.
 
@@ -89,7 +89,7 @@ Let’s look at a few web page and interface component types to identify the kin
 
 - **Homepage**<br> We’ve just met and I’m explaining what you can do on my site (and, in some cases, why it matters).
 - **Contact Form**<br> You’re asking or telling me something. I want to help you. It’s common courtesy for me to let you know how long it may take me to get back to you with a response; and for me to abide by that.
-- **Product Page**<br> I’m explaining what a particular object or service is, what it does, and how it will benefit you. I should "show" you why something is great rather than “tell”-ing you that it is because you’re immune to salesy <abbr aria-label="bullshit">BS</abbr>.
+- **Product Page**<br> I’m explaining what a particular object or service is, what it does, and how it will benefit you. I should “show” you why something is great rather than “tell”-ing you that it is because you’re immune to salesy <abbr aria-label="bullshit">BS</abbr>.
 - **Status Update**<br> I may prompt you with a question, but I’m here to listen. The floor is yours. (But I’m probably mining what you say for data so I can market to you later.)
 
 When we approach interfaces as conversations, we humanize our products and improve our users’ experiences. When we don’t, things can fall apart quickly…
@@ -130,9 +130,9 @@ The more time and consideration we put into how our interfaces read, the better-
 
 Back in 2006, [Dustin Diaz proposed CSS Naked Day](https://css-naked-day.github.io/)—a day when sites could be stripped of their visual design to showcase their content, semantics, and organization.
 
-> It will be a test case to see how usable your website is to others without a "design".<br> —Dustin Diaz
+> It will be a test case to see how usable your website is to others without a “design”.<br> —Dustin Diaz
 
-"Design", as Dustin was refering to it, is the visual design of a site, but design is not solely concerned with visual representations. Diving into etymology for a moment here, _design_ comes from the Latin <i lang="la">designare</i> meaning “to mark out or indicate”. The purpose of design is not to make something pretty, it’s to clarify.
+“Design”, as Dustin was refering to it, is the visual design of a site, but design is not solely concerned with visual representations. Diving into etymology for a moment here, _design_ comes from the Latin <i lang="la">designare</i> meaning “to mark out or indicate”. The purpose of design is not to make something pretty, it’s to clarify.
 
 If the words we use form the basis of the conversations we have with our users, the semantics we employ clarify that meaning. Choosing elements with semantic value enriches our content, illuminating the meaning and intent of our words in order to overcome the limitations of text and bring it up to par with spoken language. After all, they may look the same visually, but there’s a big difference between these two statements:
 
@@ -145,11 +145,11 @@ Beyond using markup to clarify the intent of the words we write, we can use it t
 
 > In the spirit of promoting Web Standards along with good semantic markup and _proper hierarchy structures_
 
-By "proper hierarchy", Dustin is talking about the document outline. A document outline is created through use of heading elements (`h1`–`h6`). It provides a easy way to review the organization of our web pages and validate our source order decisions. It also helps us ensure the flow works, which is incredibly important in any conversation. It helps us get to the point, streamline our content, and remove distractions… all of which are a sign of respect to our users.
+By “proper hierarchy”, Dustin is talking about the document outline. A document outline is created through use of heading elements (`h1`–`h6`). It provides a easy way to review the organization of our web pages and validate our source order decisions. It also helps us ensure the flow works, which is incredibly important in any conversation. It helps us get to the point, streamline our content, and remove distractions… all of which are a sign of respect to our users.
 
 None of this is news, of course, content strategists have been recommending that we streamline our content since the dawn of the Web. Sadly, many folks didn’t heed that advice until they were forced to confront the often infuriating world of mobile. Smaller screens required focused content.
 
-When Luke Wroblewski coined "mobile first", he told us to focus on the core purpose each and every page. He was, in essence, telling us to focus on the conversation we are having with our users. This approach pays huge dividends on small screens, but when it comes to voice-based interactions, "the page" doesn’t really exist. Experience is the sum of each individual interaction. As part of their [Alexa Skills Kit](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit), [Amazon offers a ton of recommendations for designing for voice](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-voice-design-best-practices), many of which happen to be equally useful for sighted users.
+When Luke Wroblewski coined “mobile first”, he told us to focus on the core purpose each and every page. He was, in essence, telling us to focus on the conversation we are having with our users. This approach pays huge dividends on small screens, but when it comes to voice-based interactions, “the page” doesn’t really exist. Experience is the sum of each individual interaction. As part of their [Alexa Skills Kit](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit), [Amazon offers a ton of recommendations for designing for voice](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-voice-design-best-practices), many of which happen to be equally useful for sighted users.
 
 ### Write for People
 
@@ -184,7 +184,7 @@ Similarly, we should avoid legalese and write in plain language. Medium has done
 
 ### **When Requesting Feedback, Make It Clear that the User Needs to Respond**
 
-In perhaps the most common form example, consider the label "First Name". It’s not terribly conversational and doesn’t beg for a response. Labels like "What is your first name?" make it clear the user should respond.
+In perhaps the most common form example, consider the label “First Name”. It’s not terribly conversational and doesn’t beg for a response. Labels like “What is your first name?” make it clear the user should respond.
 
 ```html
 <label for="first_name">What’s your first name?</label>
@@ -362,7 +362,7 @@ HTML5 introduced a host of new field types that consolidate phone numbers, dates
 
 ### Present Information in Consumable Pieces
 
-Like computers, we humans have a finite amount of "working memory". The amount of mental resources required to operate an interface is called its "cognitive load". When the amount of information we need to process exceeds our capacity to handle it, we can miss important details, have trouble concentrating, and become frustrated.
+Like computers, we humans have a finite amount of “working memory”. The amount of mental resources required to operate an interface is called its “cognitive load”. When the amount of information we need to process exceeds our capacity to handle it, we can miss important details, have trouble concentrating, and become frustrated.
 
 We deal with cognitive load in GUI design all the time, but in voice-based interactions, there are no visuals to act as signposts and provide reminders about where we are and what we’re doing. This is why it is critical to break complicated tasks down into simpler ones and eliminate excess noise (like non-required fields). We can also reduce cognitive load by chunking search results and other list-type content into small groups, asking the user if they want more before loading and presenting them.
 
@@ -374,7 +374,7 @@ We deal with cognitive load in GUI design all the time, but in voice-based inter
 
 Paying attention to how our interfaces read is critical to success in the future of voice-based interactions. Thankfully, we already view content as the centerpiece of every progressively enhanced experience. But we can go further.
 
-Both Microsoft and Amazon have given us the tools to voice-enable our websites beyond the HTML we present. Amazon has chosen to do this via a dedicated JSON API, through which we can "teach" Alexa "skills". Using this API, you can enable your users to access core site functionality through the Echo, FireTV, or any other device that has integrated the Alexa Voice Service.
+Both Microsoft and Amazon have given us the tools to voice-enable our websites beyond the HTML we present. Amazon has chosen to do this via a dedicated JSON API, through which we can “teach” Alexa “skills”. Using this API, you can enable your users to access core site functionality through the Echo, FireTV, or any other device that has integrated the Alexa Voice Service.
 
 Microsoft has taken a slightly different approach. Using a relatively simple XML format, they have enabled us to teach Cortana new commands that tie directly into our website.
 

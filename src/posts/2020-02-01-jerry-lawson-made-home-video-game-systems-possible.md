@@ -23,7 +23,7 @@ Lawson never earned a degree, but he joined Fairchild Semiconductor in 1970 as a
 
 In this new role, Lawson led the development of the Fairchild Channel F, the first system to feature interchangeable game cartridges that enabled a single system to play multiple titles. Prior to that, a game’s ROM had been soldered to the game hardware. This move was a game changer (pardon the pun) for the burgeoning industry, creating a whole new revenue stream for console manufacturers. While the Channel F didn’t achieve much commercial success, its novel approach to game integration was quickly copied by the Atari 2600, released in 1977. And the rest, as they say, is history.
 
-It’s also worth noting that Lawson was one of only two members of the influential [Homebrew Computer Club](https://wikipedia.org/wiki/Homebrew_Computer_Club) (alongside Steve Jobs and Steve Wozniak). According to Lawson, he even interviewed "Woz" for a position at Fairchild, but declined to hire him.
+It’s also worth noting that Lawson was one of only two members of the influential [Homebrew Computer Club](https://wikipedia.org/wiki/Homebrew_Computer_Club) (alongside Steve Jobs and Steve Wozniak). According to Lawson, he even interviewed “Woz” for a position at Fairchild, but declined to hire him.
 
 Lawson died of complications from diabetes in 2011, just one month after being recognized by the International Game Developers Association (IGDA) for his role in the development of the cartridge-based game console.
 

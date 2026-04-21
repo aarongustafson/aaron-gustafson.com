@@ -163,7 +163,7 @@ As part of an AI research team you can…
 
 This is the space I’m very grateful to be in right now. As part of the Accessibility Innovation team at Microsoft, I get to identify and fund projects that are using AI to improve the lives of people with disabilities.
 
-For example: the ORBIT project. There’s been lots of work in the object detection space, but there is a lot of focus on labelling "high-quality" images. This doesn’t really help folks in the real world. A blind person, for instance, is likely to have a hard time providing the image recognizer a with a perfectly-framed, perfectly focused capture of an object they need identified.
+For example: the ORBIT project. There’s been lots of work in the object detection space, but there is a lot of focus on labelling “high-quality” images. This doesn’t really help folks in the real world. A blind person, for instance, is likely to have a hard time providing the image recognizer a with a perfectly-framed, perfectly focused capture of an object they need identified.
 
 The Orbit project, from the City University of London, worked to enable “few-shot learning” of novel objects by training the model on brief videos taken by blind & low vision collectors. These videos are “imperfect” in that they are likely to be poorly framed, blurry, and so on.
 This increases the noise-to-signal ratio, which is actually a good thing in training a machine learning model. Enabling AI systems to recognize objects captured in imprecise ways makes for a more robust recognizer that is capable of identifying objects in less than ideal contexts.
@@ -180,7 +180,7 @@ It takes these into account when matching individuals to available positions (wh
 
 Mentra takes care not to “screen out” individuals with non-traditional backgrounds. It also works in a “reverse job fair” model, where applicants only fill in one profile, letting Mentra’s AI recommend them for jobs that are a good fit. Employers indicate their interest and invite job seekers to interview, lessening the stress level on the job seeker.
 
-Mentra’s straightforward approach also reduces the need for job seekers to "cover" in a new role as they’ve made it clear what accommodations they need in order to be successful.
+Mentra’s straightforward approach also reduces the need for job seekers to “cover” in a new role as they’ve made it clear what accommodations they need in order to be successful.
 
 The third project I’ll share with you is iWill, who are working in the mental health space.
 
@@ -215,7 +215,7 @@ The last role I’ll talk about is probably the furthest afield from development
 
 For more on those last two points, you should [read this piece in the Harvard Business Review](https://hbr.org/2016/11/why-diverse-teams-are-smarter).
 
-As someone who is keenly aware of the importance of having diverse teams to build inclusive products, you can do a lot to ensure your organization embraces diversity in its recruiting efforts. Fixing leaks in "the pipeline," if you will.
+As someone who is keenly aware of the importance of having diverse teams to build inclusive products, you can do a lot to ensure your organization embraces diversity in its recruiting efforts. Fixing leaks in “the pipeline,” if you will.
 
 A lot of it starts with asking important questions:
 

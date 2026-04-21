@@ -11,7 +11,7 @@ series:
   ordinal: twenty-seventh
 ---
 
-Unless you’re really into bugs, the name Margaret S. Collins may not mean that much to you. She was an entomologist who specialized in the study of termites, publishing prolifically throughout her career. She wasn’t just the "Termite Lady," though, she was also an advocate for civil rights who pushed for equality through scientific investigation, risking both her life and freedom.
+Unless you’re really into bugs, the name Margaret S. Collins may not mean that much to you. She was an entomologist who specialized in the study of termites, publishing prolifically throughout her career. She wasn’t just the “Termite Lady,” though, she was also an advocate for civil rights who pushed for equality through scientific investigation, risking both her life and freedom.
 
 <!-- more -->
 
@@ -23,11 +23,11 @@ In the early 1950s, while the civil rights struggles were really beginning to co
 
 When invited to speak at a predominantly white university nearby, she decided to speak about biology and its implications when it came to discussions of equality. When word got out, someone phoned in a bomb threat and the university canceled her talk.[^1]
 
-[^1]: It’s worth noting that the bomb threat didn’t stop her from discussing this topic. And she even led an American Association for the Advancement of Science symposium entitled "Science and the Question of Human Equality" in 1979. It was turned into a book that was published in 1981.
+[^1]: It’s worth noting that the bomb threat didn’t stop her from discussing this topic. And she even led an American Association for the Advancement of Science symposium entitled “Science and the Question of Human Equality” in 1979. It was turned into a book that was published in 1981.
 
 In 1956, when the president of the Florida A & M Student Council called for a bus boycott in Tallahassee, she volunteered to drive people back and forth to work. When the protest organization got a tip that police and the FBI were going to raid their offices, Collins volunteered to transport the records containing sensitive information like the protestors’ names and addresses to safety. During this time, she recalled being routinely followed by both police and the FBI.
 
-During the period from 1952–1957, Collins didn’t publish a single paper. In the years prior and subsequent to this period, she published at least two. That gives you some idea of how much of a focus her civil rights work had become.She recalled "A lot of people opposed our civil rights efforts. I had to do what I thought was the most important thing. That’s all there was to it."
+During the period from 1952–1957, Collins didn’t publish a single paper. In the years prior and subsequent to this period, she published at least two. That gives you some idea of how much of a focus her civil rights work had become.She recalled “A lot of people opposed our civil rights efforts. I had to do what I thought was the most important thing. That’s all there was to it.”
 
 In 1958, she returned to field work with termites, which was her greatest passion. She continued her research and field work right up until her death in 1996 while researching termites in the Cayman Islands.
 

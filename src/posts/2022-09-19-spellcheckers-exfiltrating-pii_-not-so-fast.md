@@ -24,7 +24,7 @@ A recent post from the [Otto JS](https://www.otto-js.com) research team highligh
 
 ## Background
 
-In their research, the Otto JS team found that Chrome and Edge each use their own web services to drive their spellchecking services. In Chrome’s case it seems to only be with their "advanced spellcheck" feature turned on. I was able to validate this behavior using Charles on macOS Monterey using the latest Chrome Stable and the latest Edge Canary. I did not see the same exfiltration happen with Safari or Firefox. I created [a CodePen form with several fields to test different permutations of form field attributes and behaviors](https://codepen.io/aarongustafson/pen/gOzWNgM). What I am sharing, below, is a result of that testing.
+In their research, the Otto JS team found that Chrome and Edge each use their own web services to drive their spellchecking services. In Chrome’s case it seems to only be with their “advanced spellcheck” feature turned on. I was able to validate this behavior using Charles on macOS Monterey using the latest Chrome Stable and the latest Edge Canary. I did not see the same exfiltration happen with Safari or Firefox. I created [a CodePen form with several fields to test different permutations of form field attributes and behaviors](https://codepen.io/aarongustafson/pen/gOzWNgM). What I am sharing, below, is a result of that testing.
 
 ## What gets sent?
 
@@ -52,11 +52,11 @@ I should note, however, that `readonly` fields _are_ send to the server when the
 <input id="no-spellcheck" name="no-spellcheck" spellcheck="false" />
 ```
 
-The `spellcheck` attribute can be applied to any element and setting it to "false" instructs browsers to turn off spellchecking services for its contents. The post from Otto JS showed this being used globally on the `body` element, but that is overkill. It would be better to use the attribute on specific fields you want to protect, as shown above.
+The `spellcheck` attribute can be applied to any element and setting it to “false” instructs browsers to turn off spellchecking services for its contents. The post from Otto JS showed this being used globally on the `body` element, but that is overkill. It would be better to use the attribute on specific fields you want to protect, as shown above.
 
 ## Don‘t forget about password controls that support show/hide
 
-Edge has a neat feature in its password field implementation where it enables a user to toggle the visibility of the password within the control itself. When users show their password using that built-in functionality, no content is shared with the spellchecker. Not all browsers have this feature, however, which has led to JavaScript-based implementations that simply swap the "password" `type` value for "text" to show the contents and then swap it back again to hide the contents. Here’s a quick & dirty example of what the toggle button’s event handler might look like:
+Edge has a neat feature in its password field implementation where it enables a user to toggle the visibility of the password within the control itself. When users show their password using that built-in functionality, no content is shared with the spellchecker. Not all browsers have this feature, however, which has led to JavaScript-based implementations that simply swap the “password” `type` value for “text” to show the contents and then swap it back again to hide the contents. Here’s a quick & dirty example of what the toggle button’s event handler might look like:
 
 ```js
 function togglePassword(e) {
@@ -77,9 +77,9 @@ function togglePassword(e) {
 }
 ```
 
-The problem with this approach, when it comes to the spellchecker, is that the text field is considered fair game for checking. Its contents aren’t sent right away, but if the field receives focus or its value is changed in any way while in the "text" state, its contents are sent to the spellcheck service.
+The problem with this approach, when it comes to the spellchecker, is that the text field is considered fair game for checking. Its contents aren’t sent right away, but if the field receives focus or its value is changed in any way while in the “text” state, its contents are sent to the spellcheck service.
 
-Protecting the field’s contents are fairly easy, however: turn off the spellchecker for that field, even in its "password" state.
+Protecting the field’s contents are fairly easy, however: turn off the spellchecker for that field, even in its “password” state.
 
 ```html
 <input

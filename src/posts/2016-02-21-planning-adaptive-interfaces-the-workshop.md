@@ -16,11 +16,11 @@ crossposted:
   Medium: https://medium.com/@AaronGustafson/a16245f78d65
 ---
 
-For the last few years I’ve been running a workshop alternately titled "Planning Adaptive Interfaces" or "Beyond Responsive", depending on the conference. It’s been one of my favorite workshops to run for a number of reasons, but before I get into that, let me explain what it is and how it works.
+For the last few years I’ve been running a workshop alternately titled “Planning Adaptive Interfaces” or “Beyond Responsive”, depending on the conference. It’s been one of my favorite workshops to run for a number of reasons, but before I get into that, let me explain what it is and how it works.
 
 <!-- more -->
 
-I think we all recognize how much Ethan’s seminal article ["Responsive Web Design"](http://alistapart.com/article/responsive-web-design) (and [his follow-up book](https://abookapart.com/products/responsive-web-design)) shook up our industry. It changed the way we look at visual design and kindled (or in some cases re-kindled) an interest in catering an experience to mobile devices. But simply incorporating responsive design’s three core strategies—fluid grids, flexible media, media queries—is not the goal; meeting our user’s needs is. Responsive design is not an end in itself… it’s just the beginning.
+I think we all recognize how much Ethan’s seminal article [“Responsive Web Design”](http://alistapart.com/article/responsive-web-design) (and [his follow-up book](https://abookapart.com/products/responsive-web-design)) shook up our industry. It changed the way we look at visual design and kindled (or in some cases re-kindled) an interest in catering an experience to mobile devices. But simply incorporating responsive design’s three core strategies—fluid grids, flexible media, media queries—is not the goal; meeting our user’s needs is. Responsive design is not an end in itself… it’s just the beginning.
 
 We need to embrace the heterogenous nature of the Web—myriad connected devices with vastly different screen sizes (if they even have screens), network connectivity, and capabilities in use by countless individuals, each with their own special needs—and craft experiences that will work anywhere at any time. We need to build robust systems that adapt in ways far beyond aesthetics. I designed this workshop to explore the rich variety of use cases that often get overlooked in the course of building web projects and to show how we can begin considering them as early as possible.
 
