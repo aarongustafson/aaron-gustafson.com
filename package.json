@@ -27,8 +27,8 @@
 		"new:press": "plop press",
 		"new:citation": "plop citation",
 		"publish:draft": "plop publish",
-		"prose:check": "node .github/scripts/typographic-punctuation.js",
-		"prose:fix": "node .github/scripts/typographic-punctuation.js --write"
+		"prose:check": "node .github/scripts/typographic-punctuation.js src/_drafts src/posts",
+		"prose:fix": "node .github/scripts/typographic-punctuation.js --write src/_drafts src/posts"
 	},
 	"repository": {
 		"type": "git",
