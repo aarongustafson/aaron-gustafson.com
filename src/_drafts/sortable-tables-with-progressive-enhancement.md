@@ -10,11 +10,11 @@ tags:
     "accessibility",
     "tables",
   ]
-description: "The table-sortable web component adds client-side sorting to your tables with full keyboard navigation and screen reader support—without changing your markup."
-twitter_text: "Add accessible table sorting without changing your HTML. Progressive enhancement at its finest."
+description: "The table-sortable web component adds client-side sorting to your tables with keyboard and screen reader support, without asking you to rewrite the markup."
+twitter_text: "Add accessible table sorting without having to rebuild your table markup."
 ---
 
-HTML tables are great for displaying structured data, but they're static. Users often need to sort that data by different columns to find what they're looking for. The `table-sortable` web component adds client-side sorting with full accessibility support—and it requires zero changes to your existing table markup.
+HTML tables are great for displaying structured data, but they are static. Users often want to sort that data by different columns so they can find what they are after a little faster. The `table-sortable` web component adds client-side sorting with full accessibility support, and it does it without asking you to rewrite your existing table markup.
 
 <!-- more -->
 
@@ -22,7 +22,7 @@ This is a modern web component port of my [jQuery Easy Sortable Tables](https://
 
 ## Progressive enhancement
 
-The beauty of this component is its simplicity. Just wrap your table:
+The nice thing about this component is its simplicity. Just wrap your table:
 
 ```html
 <table-sortable>
@@ -55,7 +55,7 @@ The beauty of this component is its simplicity. Just wrap your table:
 </table-sortable>
 ```
 
-The component automatically creates accessible `<button>` elements inside each `<th>` for sorting. You don't add any buttons or links manually—the component handles that.
+The component automatically creates accessible `<button>` elements inside each `<th>` for sorting. You do not have to add buttons or links manually. The component handles that part for you.
 
 Click a column header to sort ascending, click again for descending. The component detects numeric values automatically and sorts them correctly (so 100 comes after 20, not after 1).
 
@@ -78,7 +78,7 @@ This is useful for:
 - Sorting dates by ISO format while displaying friendly formats
 - Custom sorting logic (e.g., High > Medium > Low priority)
 
-The "Price" and "Stock" columns use numeric values for sorting while displaying formatted text.
+The “Price” and “Stock” columns use numeric values for sorting while displaying formatted text. You get the sort behavior you want without having to show the raw value to anyone.
 
 ## Hidden sort keys
 
@@ -96,7 +96,7 @@ Hide the element with CSS:
 }
 ```
 
-This allows sorting by last name while displaying "First Last" format. The hidden value is used for sorting; the visible text appears to users.
+This allows sorting by last name while displaying “First Last” format. The hidden value is used for sorting; the visible text appears to users.
 
 ## Grouped tables
 
@@ -161,20 +161,20 @@ The `label-ascending` and `label-descending` values are prefixed with the column
 
 Available attributes:
 
-- `label-sortable` - Label for unsorted columns (default: "Click to sort")
-- `label-ascending` - Label when sorted ascending (default: "sorted ascending. Click to sort descending")
-- `label-descending` - Label when sorted descending (default: "sorted descending. Click to sort ascending")
+- `label-sortable` - Label for unsorted columns (default: “Click to sort”)
+- `label-ascending` - Label when sorted ascending (default: “sorted ascending. Click to sort descending”)
+- `label-descending` - Label when sorted descending (default: “sorted descending. Click to sort ascending”)
 
 ## Styling
 
-The component uses light DOM, so you can style tables normally. It adds classes to help with sort indicators:
+The component uses light DOM, so you can style tables normally. It adds a few classes to help with sort indicators:
 
 - `active` - Applied to the currently sorted `<th>`
 - `up` - Applied when sorted ascending
 - `down` - Applied when sorted descending
 - `sorted` - Applied to the corresponding `<col>` element
 
-The component automatically injects `<colgroup>` and `<col>` elements if they don't exist, allowing column-wide styling.
+The component automatically injects `<colgroup>` and `<col>` elements if they don’t exist, allowing column-wide styling.
 
 Customize sort indicators using CSS custom properties:
 
@@ -213,7 +213,7 @@ element.addEventListener("table-sortable:sort", (event) => {
 The event detail includes:
 
 - `column` - Zero-based column index
-- `direction` - "asc" or "desc"
+- `direction` - “asc” or “desc”
 - `header` - The `<th>` element
 
 ## Keyboard navigation
@@ -245,7 +245,7 @@ The component prioritizes accessibility:
 - **Numeric sorting**: Automatic detection and numeric comparison
 - **Mixed content**: Text values sort before or after numbers depending on direction
 
-The component is smart about numeric detection—values like "10", "20", "100" sort numerically rather than alphabetically.
+The component is smart about numeric detection. Values like “10”, “20”, and “100” sort numerically rather than alphabetically, which is the sort of thing users rarely notice until it is wrong.
 
 ## Column highlighting
 
@@ -259,9 +259,9 @@ col.sorted {
 
 ## Progressive enhancement philosophy
 
-If JavaScript fails to load, you have a perfectly functional HTML table. Users can read all the data; they just can't sort it. Nothing breaks, you just lose the enhancement.
+If JavaScript fails to load, you still have a perfectly functional HTML table. Users can read all the data; they just cannot sort it. Nothing breaks. You just lose the enhancement.
 
-The component creates buttons inside `<th>` elements automatically—you write plain semantic HTML and get accessibility for free.
+The component creates buttons inside `<th>` elements automatically. You write plain semantic HTML and get the accessible behavior layered on top, which is exactly how I like these things to work.
 
 ## Demo
 

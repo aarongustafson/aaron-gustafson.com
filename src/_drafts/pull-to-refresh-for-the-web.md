@@ -11,11 +11,11 @@ tags:
     "mobile",
     "UX",
   ]
-description: "The pull-to-refresh gesture is second nature on mobile apps, but rare on the web. The pull-to-refresh web component brings this familiar interaction pattern to your web applications."
-twitter_text: "Want pull-to-refresh in your web app? Here's a web component that makes it happen."
+description: "The pull-to-refresh gesture is second nature on mobile apps, but still uncommon on the web. This web component brings it over without too much fuss."
+twitter_text: "Want pull-to-refresh on the web? Here’s a web component that brings it over nicely."
 ---
 
-Anyone who's used a mobile app is familiar with pull-to-refresh—drag down from the top, release, and watch the content update. It's such an established pattern that users instinctively try it on web pages. The `pull-to-refresh` web component brings this interaction to the web, complete with touch optimization, visual feedback, and comprehensive localization.
+Anyone who has used a mobile app is familiar with pull-to-refresh: drag down from the top, let go, and watch the content update. It is such an established pattern that plenty of people try it on web pages anyway, whether we planned for it or not. The `pull-to-refresh` web component brings that interaction to the web, complete with touch optimization, visual feedback, and comprehensive localization.
 
 <!-- more -->
 
@@ -49,7 +49,7 @@ Wrap your content and listen for the refresh event:
 </script>
 ```
 
-The component handles the gesture detection, visual feedback, and state management. You just fetch your data and call `complete()` when done.
+The component handles the gesture detection, visual feedback, and state management. You fetch your data, update the UI, and call `complete()` when you are done. A reasonable division of labor.
 
 ## Customizing the threshold
 
@@ -61,7 +61,7 @@ The default pull distance is 80 pixels. Adjust it with the `threshold` attribute
 </pull-to-refresh>
 ```
 
-Users now need to pull 120 pixels before triggering the refresh. This can reduce accidental triggers.
+Users now need to pull 120 pixels before triggering the refresh. That can cut down on accidental refreshes, which is often a good thing.
 
 ## Custom messages
 
@@ -77,7 +77,7 @@ Customize the text shown during different states:
 </pull-to-refresh>
 ```
 
-The component shows these messages as users pull, reach the threshold, and while refreshing.
+The component shows these messages as users pull, reach the threshold, and while refreshing. Small detail, but it helps the interaction feel a lot less mysterious.
 
 ## Preventing text selection
 
@@ -89,7 +89,7 @@ By default, text selection is allowed during pull gestures. Use `disable-selecti
 </pull-to-refresh>
 ```
 
-This can improve the user experience on touch devices.
+This can improve the experience on touch devices, especially if stray text selection has ever ruined your day.
 
 ## Built-in localization
 
@@ -112,9 +112,9 @@ The component includes translations for 16 languages. Set the `lang` attribute a
 </pull-to-refresh>
 ```
 
-Language detection follows a cascade: the element's `lang` attribute, nearest ancestor's `lang`, document's `lang`, then defaults to English.
+Language detection follows a cascade: the element’s `lang` attribute, nearest ancestor’s `lang`, document’s `lang`, then defaults to English.
 
-Supported languages include English, Spanish, French, German, Italian, Portuguese, Russian, Japanese, Korean, Chinese (Mandarin), Hindi, Arabic, Bengali, Punjabi, Javanese, and Vietnamese. Regional variants automatically fall back to base languages.
+Supported languages include English, Spanish, French, German, Italian, Portuguese, Russian, Japanese, Korean, Chinese (Mandarin), Hindi, Arabic, Bengali, Punjabi, Javanese, and Vietnamese. Regional variants automatically fall back to base languages, which is exactly the sort of boring detail I appreciate.
 
 Register custom translations:
 
@@ -156,7 +156,7 @@ ptr.addEventListener("ptr:refresh", (e) => {
 });
 ```
 
-**Important:** Always call `event.detail.complete()` in your `ptr:refresh` handler to signal completion. If you don't, the component auto-completes after 2 seconds.
+**Important:** Always call `event.detail.complete()` in your `ptr:refresh` handler to signal completion. If you do not, the component auto-completes after 2 seconds. Helpful, yes, but still better not to make it guess.
 
 ## Styling with CSS custom properties
 
@@ -198,7 +198,7 @@ ptr.disabled = true;
 
 ## Practical example
 
-Here's a complete example with fetch:
+Here’s a complete example with fetch:
 
 ```javascript
 const ptr = document.querySelector("pull-to-refresh");
@@ -216,7 +216,7 @@ ptr.addEventListener("ptr:refresh", async (e) => {
 });
 ```
 
-The `finally` block ensures `complete()` is called even if the fetch fails.
+The `finally` block ensures `complete()` is called even if the fetch fails. Your users should not get stuck in refresh limbo because the network had a moment.
 
 ## Accessibility
 
@@ -224,11 +224,11 @@ The component includes proper ARIA attributes and screen reader support. The ind
 
 ## Touch optimization
 
-The component provides smooth pull gestures with momentum and visual feedback. It handles touch events properly, distinguishing between vertical pulls (refresh) and horizontal swipes (ignore).
+The component provides smooth pull gestures with momentum and visual feedback. It handles touch events properly, distinguishing between vertical pulls (refresh) and horizontal swipes (ignore). Which is important, because no one likes a component that gets a little too enthusiastic.
 
 ## Progressive enhancement
 
-If JavaScript fails to load, the content displays normally—users just don't get pull-to-refresh functionality. Nothing breaks, you just lose the enhancement.
+If JavaScript fails to load, the content displays normally. Users just do not get pull-to-refresh functionality. Nothing breaks; you simply lose the enhancement.
 
 ## Demo
 
@@ -254,4 +254,4 @@ Import and use:
 import "@aarongustafson/pull-to-refresh";
 ```
 
-Bring a familiar mobile interaction pattern to your web applications—no framework required.
+It is a familiar mobile interaction pattern, adapted for the web without dragging a framework into the room.

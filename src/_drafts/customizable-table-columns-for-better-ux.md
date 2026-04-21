@@ -11,15 +11,15 @@ tags:
     "accessibility",
     "UX",
   ]
-description: "The table-modifiable web component lets users hide and show table columns using the Popover API, making data tables more readable on any screen size."
-twitter_text: "Let users customize which table columns they see. Progressive enhancement meets responsive design."
+description: "The table-modifiable web component lets users hide and show table columns using the Popover API, making wide data tables a lot easier to live with."
+twitter_text: "Let users choose which table columns they actually want to see."
 ---
 
-Data tables are powerful but can become overwhelming, especially when you've got a dozen columns fighting for space. The `table-modifiable` web component gives users control over which columns they see, using the native Popover API to create a clean, accessible column selector.
+Data tables are powerful, but they can get unwieldy fast, especially when you’ve got a dozen columns all trying to elbow one another off the screen. The `table-modifiable` web component gives users control over which columns they see, using the native Popover API to create a clean, accessible column selector.
 
 <!-- more -->
 
-This isn't about responsive tables that hide columns on mobile (though this helps there too)—it's about giving users agency. Maybe they only care about product names and prices, not stock levels or suppliers. Let them choose.
+This is not just about responsive tables that hide columns on mobile, though it certainly helps there too. It is about giving users agency. Maybe they only care about product names and prices, not stock levels or suppliers. Let them choose.
 
 ## Simplest usage
 
@@ -46,9 +46,9 @@ Specify which columns can be toggled:
 </table-modifiable>
 ```
 
-This creates a "Modify Table" button above your table. Click it and you get a popover with checkboxes for each column. Uncheck a column and it disappears from the table; check it again and it reappears.
+This creates a “Modify Table” button above your table. Click it and you get a popover with checkboxes for each column. Uncheck a column and it disappears from the table; check it again and it reappears. Nice and straightforward.
 
-All columns listed in `removable` are shown by default. The component won't let users hide every column—at least one must remain visible.
+All columns listed in `removable` are shown by default. The component won’t let users hide every column—at least one must remain visible.
 
 ## Control initial visibility
 
@@ -84,7 +84,7 @@ Start with some columns hidden:
 
 The `start-with` attribute specifies which columns appear on page load. In this example, Stock, Category, and Supplier are hidden initially but users can show them via the popover.
 
-This is perfect for mobile-first responsive design—start with essential columns only, then let users opt into more detail.
+This is especially handy for mobile-first responsive design: start with the essentials, then let users opt into more detail when they want it.
 
 ## Custom button labels
 
@@ -103,9 +103,9 @@ Tailor the interface to your content:
 </table-modifiable>
 ```
 
-The `button-label` sets the visible button text (default: "Modify Table"), `button-aria-label` provides a more descriptive announcement for screen readers (defaults to matching `button-label`), and `tools-label` changes the heading inside the popover (default: "Show/Hide Columns").
+The `button-label` sets the visible button text (default: “Modify Table”), `button-aria-label` provides a more descriptive announcement for screen readers (defaults to matching `button-label`), and `tools-label` changes the heading inside the popover (default: “Show/Hide Columns”).
 
-Use this to match your site's voice or to provide clearer context about what the button does.
+Use this to match your site’s voice or just make the control a little clearer about what it actually does.
 
 ## Listen to changes
 
@@ -121,12 +121,12 @@ table.addEventListener("table-modifiable:change", (event) => {
 });
 ```
 
-The `table-modifiable:change` event fires whenever a column's visibility changes. The event detail includes:
+The `table-modifiable:change` event fires whenever a column’s visibility changes. The event detail includes:
 
 - `column`: The column name (matches the text in the `<th>`)
 - `visible`: Boolean indicating whether the column is now shown or hidden
 
-You can use this to save user preferences to localStorage, update analytics, or sync state across multiple tables.
+You can use this to save user preferences to localStorage, update analytics, or sync state across multiple tables. Or ignore all that and just let people hide columns in peace.
 
 ## How it works
 
@@ -143,7 +143,7 @@ It uses light DOM, so your table remains in the regular DOM tree and participate
 
 ## Simple tables only
 
-This component works with straightforward tables: one header row, matching body cells. It doesn't support `colspan` or `rowspan` because tracking column indices across merged cells gets messy fast. Keep it simple and this component keeps it working.
+This component works with straightforward tables: one header row, matching body cells. It does not support `colspan` or `rowspan` because tracking column indices across merged cells gets messy fast. Keep it simple and the component will happily do its thing.
 
 ## Style the popover
 
@@ -226,14 +226,14 @@ The component requires:
 - ES Modules
 - Popover API (currently in modern browsers)
 
-For older browsers or those without Popover API support, you'll need polyfills. The component does graceful degradation—if it can't initialize, users just see the regular table.
+For older browsers or those without Popover API support, you’ll need polyfills. The component does graceful degradation—if it can’t initialize, users just see the regular table.
 
 ## Why I built this
 
-I kept running into data tables with 15+ columns that were nearly impossible to scan, especially on smaller screens. Hiding columns on mobile helps, but why should the developer decide which columns matter to users? Different people care about different data.
+I kept running into data tables with 15+ columns that were nearly impossible to scan, especially on smaller screens. Hiding columns on mobile helps, but why should the developer decide which columns matter most to users? Different people care about different data.
 
-This component lets users make that choice themselves. Show what matters to you, hide what doesn't. It's a small UX improvement that makes data tables significantly more pleasant to use.
+This component lets users make that choice themselves. Show what matters to you, hide what doesn’t. It’s a small UX improvement that makes data tables significantly more pleasant to use.
 
-The Popover API was perfect for this—no z-index battles, automatic focus management, and built-in dismissal behavior. It's a joy to work with when you want a disclosure widget that doesn't require reinventing the wheel.
+The Popover API was perfect for this: no z-index battles, automatic focus management, and built-in dismissal behavior. It is refreshingly civilized.
 
 Check out the [live demo](https://aarongustafson.github.io/table-modifiable/demo/) to see it in action, or grab the source from [GitHub](https://github.com/aarongustafson/table-modifiable).

@@ -12,15 +12,15 @@ tags:
     "web forms",
     "UX",
   ]
-description: "The form-validation-list web component provides real-time visual feedback on validation requirements, checking each rule as users type and displaying helpful checkmarks or X's."
-twitter_text: "Show users exactly which validation requirements they've met with visual feedback as they type."
+description: "The form-validation-list web component provides real-time visual feedback on validation requirements, showing users which rules they have satisfied as they type."
+twitter_text: "Show users which validation requirements they have actually met as they type."
 series:
   name: "Modern Web Form Best Practices"
   tag: "series-forms"
-  ordinal: "11"
+  ordinal: "12"
 ---
 
-Password requirements, username rules, input format constraints—forms often have multiple validation requirements, but users don't know if they're meeting them until they submit. The `form-validation-list` web component changes that, providing real-time visual feedback as users type, showing exactly which requirements are met and which aren't.
+Password requirements, username rules, input format constraints: forms often have multiple validation requirements, but users frequently do not find out whether they are meeting them until they hit submit. The `form-validation-list` web component changes that by providing real-time visual feedback as users type, showing exactly which requirements are met and which are not.
 
 <!-- more -->
 
@@ -47,7 +47,7 @@ Associate the component with an input and define your validation rules:
 </form>
 ```
 
-As users type, each rule is checked against its regular expression pattern. Matched rules get a checkmark (✓), unmatched rules get an X (✗). When all rules match, the field is valid and the form can be submitted.
+As users type, each rule is checked against its regular expression pattern. Matched rules get a checkmark (✓), unmatched rules get an X (✗). When all rules match, the field is valid and the form can be submitted. No guessing required.
 
 ## How it works
 
@@ -61,7 +61,7 @@ The component:
 6. Uses `setCustomValidity()` to integrate with native form validation
 7. Prevents form submission until all rules match
 
-The cascade animation (controlled by `each-delay`) creates a pleasant visual effect as rules are checked sequentially.
+The cascade animation, controlled by `each-delay`, creates a pleasant visual effect as rules are checked sequentially. It is a small touch, but a nice one.
 
 ## Pattern-based validation
 
@@ -102,7 +102,7 @@ By default, validation runs on the `input` event (as users type). Change it with
 </form-validation-list>
 ```
 
-This validates only when the field loses focus, useful for fields where you don't want to show errors while users are still typing.
+This validates only when the field loses focus, which is useful for fields where you do not want to start waving red flags while users are still in the middle of typing.
 
 ## Adjusting the cascade delay
 
@@ -150,7 +150,7 @@ Customize class names for integration with CSS frameworks:
 </form-validation-list>
 ```
 
-This lets you use class names that match your existing CSS architecture.
+This lets you use class names that match your existing CSS architecture, rather than making one small component dictate terms to the rest of your styles.
 
 ## Styling with CSS custom properties
 
@@ -188,7 +188,7 @@ validationList.addEventListener("form-validation-list:validated", (event) => {
 });
 ```
 
-The event fires after validation completes, providing the current state.
+The event fires after validation completes and gives you the current state. Nice and tidy.
 
 ## JavaScript API
 
@@ -246,14 +246,14 @@ The component is built with accessibility in mind:
 - **ARIA described-by**: The validation list is associated with the input via `aria-describedby`
 - **Existing descriptions preserved**: If the field already has `aria-describedby`, values are preserved
 
-Screen readers announce validation requirements when users focus the input, and announce changes as rules are matched or unmatched.
+Screen readers announce validation requirements when users focus the input, and they announce changes as rules are matched or unmatched. That feedback matters.
 
 ## Browser validation integration
 
 The component uses `setCustomValidity()` to participate in native form validation:
 
 - When all rules match, custom validity is cleared
-- When rules don't match, a custom validity message is set
+- When rules don’t match, a custom validity message is set
 - Form submission is prevented until all rules pass
 - Works with `:valid` and `:invalid` CSS pseudo-classes
 - Compatible with the Constraint Validation API
@@ -272,7 +272,7 @@ form.addEventListener("submit", (e) => {
 
 ## Real-world example
 
-Here's a complete password validation setup:
+Here’s a complete password validation setup:
 
 ```html
 <form>
@@ -295,11 +295,11 @@ Here's a complete password validation setup:
 </form>
 ```
 
-Users see exactly which requirements they've met and which they still need to satisfy.
+Users see exactly which requirements they have met and which they still need to satisfy. That tends to be a lot kinder than springing the whole list on them after submit.
 
 ## Progressive enhancement
 
-The component uses light DOM, so if JavaScript fails, users still see the validation requirements as a standard list. They can read what's expected even without the visual feedback. Server-side validation ensures security regardless.
+The component uses light DOM, so if JavaScript fails, users still see the validation requirements as a standard list. They can read what is expected even without the visual feedback. Server-side validation still does the important work regardless.
 
 ## Demo
 

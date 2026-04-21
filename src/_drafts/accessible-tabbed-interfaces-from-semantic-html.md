@@ -4,15 +4,15 @@ date: 2025-12-06 10:00:00 -07:00
 comments: true
 tags:
   ["web components", "progressive enhancement", "HTML", "accessibility", "ARIA"]
-description: "The tabbed-interface web component transforms heading-structured content into an accessible tabbed interface with full keyboard navigation and ARIA support—no complex markup required."
-twitter_text: "Turn semantic HTML into accessible tabs automatically. Here's how."
+description: "The tabbed-interface web component turns heading-structured content into an accessible tabbed interface with keyboard navigation and ARIA support, without making you contort your markup."
+twitter_text: "Want accessible tabs without a bunch of bespoke markup? Here’s a web component for that."
 ---
 
-Creating accessible tabbed interfaces usually requires careful attention to ARIA attributes, keyboard navigation, and complex markup patterns. The `tabbed-interface` web component takes a different approach—it transforms simple heading-structured content into fully accessible tabs automatically.
+Creating accessible tabbed interfaces can get fiddly in a hurry. There are ARIA attributes to wire up, keyboard interactions to get right, and enough markup ceremony to make a perfectly reasonable person reconsider their life choices. The `tabbed-interface` web component takes a different approach: it transforms simple heading-structured content into fully accessible tabs automatically.
 
 <!-- more -->
 
-This is a modern web component port of my original [TabInterface](https://github.com/easy-designs/TabInterface.js), bringing progressive enhancement and accessibility to tabbed content.
+This is a modern web component port of my original [TabInterface](https://github.com/easy-designs/TabInterface.js), bringing progressive enhancement and accessibility along for the ride.
 
 ## Basic usage
 
@@ -39,7 +39,7 @@ The component automatically:
 - Enables keyboard navigation
 - Hides headings in panels (by default)
 
-All you provide is semantic HTML.
+All you provide is semantic HTML. The component handles the tab wrangling.
 
 ## Showing headings in panels
 
@@ -71,7 +71,7 @@ Put tabs below the content with `tablist-after`:
 </tabbed-interface>
 ```
 
-Useful for unconventional layouts or specific design requirements.
+Useful for unconventional layouts or when the design gets a little opinionated.
 
 ## Setting the default tab
 
@@ -90,7 +90,7 @@ Specify which tab is active initially:
 </tabbed-interface>
 ```
 
-Use a zero-based index, or reference a heading's `id`:
+Use a zero-based index, or reference a heading’s `id`:
 
 ```html
 <tabbed-interface default-tab="features">
@@ -104,7 +104,7 @@ Use a zero-based index, or reference a heading's `id`:
 
 ## Auto-activation behavior
 
-By default, users must press Enter or Space to activate a tab after focusing it with arrow keys (manual activation). This follows ARIA best practices for better accessibility.
+By default, users must press Enter or Space to activate a tab after focusing it with arrow keys (manual activation). This follows ARIA best practices and tends to make keyboard navigation a bit less jumpy.
 
 Enable auto-activation to make tabs activate immediately on focus:
 
@@ -130,7 +130,7 @@ The component includes full keyboard support:
 - **End** - Last tab
 - **Enter/Space** - Activate focused tab and focus first focusable element in panel (when auto-activate is off)
 
-When a user activates a tab with Enter or Space, focus automatically moves to the first focusable element in that panel, making keyboard navigation seamless.
+When a user activates a tab with Enter or Space, focus automatically moves to the first focusable element in that panel, which makes keyboard navigation feel a lot less like work.
 
 ## Custom tab titles
 
@@ -143,7 +143,7 @@ Use `data-tab-short-name` to show different text in tabs than in headings:
 </tabbed-interface>
 ```
 
-The tab shows "Intro" while the full heading text remains available to screen readers via `aria-label`.
+The tab shows “Intro” while the full heading text remains available to screen readers via `aria-label`. Short for the UI, complete for everyone else.
 
 ## Hash navigation
 
@@ -294,7 +294,7 @@ The component is built with accessibility as a core feature:
 
 ## Progressive enhancement
 
-If JavaScript fails, users see all the headings and content in a standard document outline. Everything remains accessible and readable—you just lose the tabbed interaction pattern.
+If JavaScript fails, users see all the headings and content in a standard document outline. Everything remains accessible and readable. You just lose the tabbed interaction pattern, which is annoying but entirely survivable.
 
 ## Demo
 
