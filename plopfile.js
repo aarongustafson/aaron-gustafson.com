@@ -1,7 +1,8 @@
-import { readFileSync, readdirSync, renameSync, writeFileSync } from "fs";
+import { readFileSync, readdirSync, writeFileSync } from "fs";
 import { execFile } from "node:child_process";
 import path from "path";
 import { fileURLToPath } from "url";
+import { typographMarkdown } from "./.github/scripts/typographic-punctuation.js";
 
 // Get current date information in UTC
 const today = new Date();
@@ -145,7 +146,9 @@ export default function (plop) {
 		const content = readFileSync(draftPath, "utf8");
 
 		// Update the date in frontmatter
-		const updatedContent = content.replace(/^date:.*$/m, `date: ${timestamp}`);
+		const updatedContent = typographMarkdown(
+			content.replace(/^date:.*$/m, `date: ${timestamp}`),
+		);
 
 		// Create new filename with date prefix
 		const newFilename = `${datePrefix}-${answers.draft}`;
