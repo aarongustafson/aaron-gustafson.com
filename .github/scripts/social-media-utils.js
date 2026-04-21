@@ -122,7 +122,9 @@ class CacheManager {
 	constructor() {
 		this.cacheDir = ".github/cache";
 		this.cacheFile = path.join(this.cacheDir, "syndication-status.json");
-		this.cacheBootstrapDate = new Date("2026-04-20T00:00:00.000Z");
+		this.cacheBootstrapDateId = "2026-04-20";
+		this.cacheBootstrapDate = new Date(`${this.cacheBootstrapDateId}T00:00:00.000Z`);
+		this.cacheBootstrapPlatform = `baseline_${this.cacheBootstrapDateId.replaceAll("-", "_")}`;
 	}
 
 	async ensureCacheDir() {
@@ -222,7 +224,7 @@ class CacheManager {
 			if (!itemStatus && isBeforeBootstrapDate) {
 				cache[type][item.id] = {
 					platforms: {
-						baseline_2026_04_20: {
+						[this.cacheBootstrapPlatform]: {
 							success: true,
 							timestamp: now,
 						},

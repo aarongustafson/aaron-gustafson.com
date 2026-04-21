@@ -112,9 +112,20 @@ jobs:
           IFTTT_KEY: ${{ secrets.IFTTT_KEY }}
 
       # Save updated cache after processing
+      - name: Compute processed items cache key
+        id: syndication-cache-key
+        if: always()
+        run: |
+          if [ -f .github/cache/syndication-status.json ]; then
+            cache_hash=$(sha256sum .github/cache/syndication-status.json | cut -d' ' -f1)
+          else
+            cache_hash=empty
+          fi
+          echo "key=syndication-cache-${{ github.ref_name }}-${cache_hash}" >> "$GITHUB_OUTPUT"
+
       - name: Save processed items cache
         uses: actions/cache/save@v5
-        if: always() && steps.syndication-cache.outputs.cache-hit != 'true'
+        if: always() && steps.syndication-cache.outputs.cache-matched-key != steps.syndication-cache-key.outputs.key
         with:
           path: .github/cache
-          key: syndication-cache-${{ github.ref_name }}-${{ hashFiles('.github/cache/syndication-status.json') }}
+          key: ${{ steps.syndication-cache-key.outputs.key }}
