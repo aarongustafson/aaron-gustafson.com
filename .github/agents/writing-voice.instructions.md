@@ -41,6 +41,12 @@ that will appear under Aaron's byline.
   thoughts or qualifiers mid-sentence:
   *"I now have a vague understanding of what they do, but that's only based on
   what I learned about the cause of the incident."*
+- **Typographically correct punctuation in prose.** In normal written content
+  (including headings, paragraphs, captions, and frontmatter strings intended
+  for display), use curly apostrophes and quotation marks (`’`, `“`, `”`) and
+  the appropriate dash (`–` or `—`) rather than straight ASCII punctuation.
+  Do **not** apply this rule inside code blocks, inline code, URLs, selectors,
+  command lines, or other code-like literals.
 - **Occasional parenthetical qualifiers** — e.g., *(a.k.a., do something I'd
   later regret)* — add a self-aware, slightly self-deprecating humor.
 - **Bulleted and numbered lists** are frequent in technical and argumentative
