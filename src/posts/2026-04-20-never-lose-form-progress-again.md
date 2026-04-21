@@ -76,19 +76,7 @@ That is what the `retain` attribute is for:
 ```html
 <form-saver retain="name email">
   <form action="/contact" method="post">
-    <label>
-      Name
-      <input name="name" autocomplete="name" />
-    </label>
-    <label>
-      Email
-      <input name="email" type="email" autocomplete="email" />
-    </label>
-    <label>
-      Message
-      <textarea name="message"></textarea>
-    </label>
-    <button type="submit">Send</button>
+    …
   </form>
 </form-saver>
 ```
@@ -108,19 +96,7 @@ Add it alongside `retain` and `form-saver` will inject an opt-in checkbox for th
   retain-choice-label="Store my contact information for later"
 >
   <form action="/contact" method="post">
-    <label>
-      Name
-      <input name="name" autocomplete="name" />
-    </label>
-    <label>
-      Email
-      <input name="email" type="email" autocomplete="email" />
-    </label>
-    <label>
-      Message
-      <textarea name="message"></textarea>
-    </label>
-    <button type="submit">Send</button>
+    …
   </form>
 </form-saver>
 ```
@@ -137,18 +113,7 @@ Need to place that control somewhere more appropriate in your layout? Use `retai
   retain-choice-container=".form-footer"
 >
   <form action="/contact" method="post">
-    <label>
-      Name
-      <input name="name" autocomplete="name" />
-    </label>
-    <label>
-      Email
-      <input name="email" type="email" autocomplete="email" />
-    </label>
-    <label>
-      Message
-      <textarea name="message"></textarea>
-    </label>
+    …
     <div class="form-footer">
       <button type="submit">Send</button>
     </div>
