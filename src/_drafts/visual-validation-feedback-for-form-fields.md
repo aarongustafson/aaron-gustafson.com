@@ -168,8 +168,8 @@ form-validation-list {
 
 Available properties:
 
-- `--validation-icon-matched` - Content for matched state (default: "✓")
-- `--validation-icon-unmatched` - Content for unmatched state (default: "✗")
+- `--validation-icon-matched` - Content for matched state (default: “✓”)
+- `--validation-icon-unmatched` - Content for unmatched state (default: “✗”)
 - `--validation-icon-size` - Size of icons (default: 1em)
 - `--validation-matched-color` - Color for matched rules (default: green)
 - `--validation-unmatched-color` - Color for unmatched rules (default: red)
