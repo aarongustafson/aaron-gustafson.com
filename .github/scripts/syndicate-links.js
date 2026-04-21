@@ -56,8 +56,8 @@ class LinkSyndicator extends SocialMediaAPI {
 				return;
 			}
 
-			// Get links newer than last syndication time
-			const newLinks = await this.cache.getItemsNewerThan(feed.items, "links");
+			// Get links that are not yet fully processed
+			const newLinks = await this.cache.getUnprocessedItems(feed.items, "links");
 
 			if (newLinks.length === 0) {
 				console.log("✅ No new links to syndicate");

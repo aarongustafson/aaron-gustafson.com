@@ -69,12 +69,13 @@ jobs:
 
       # Restore cache before processing to avoid duplicates
       - name: Restore processed items cache
+        id: syndication-cache
         uses: actions/cache/restore@v5
         with:
           path: .github/cache
-          key: syndication-cache-${{ github.ref_name }}
+          key: syndication-cache-${{ github.ref_name }}-${{ hashFiles('.github/cache/syndication-status.json') }}
           restore-keys: |
-            syndication-cache-
+            syndication-cache-${{ github.ref_name }}-
 
       # Check for new posts
       - name: Syndicate Posts
@@ -113,7 +114,7 @@ jobs:
       # Save updated cache after processing
       - name: Save processed items cache
         uses: actions/cache/save@v5
-        if: always()
+        if: always() && steps.syndication-cache.outputs.cache-hit != 'true'
         with:
           path: .github/cache
-          key: syndication-cache-${{ github.ref_name }}-${{ github.run_id }}
+          key: syndication-cache-${{ github.ref_name }}-${{ hashFiles('.github/cache/syndication-status.json') }}

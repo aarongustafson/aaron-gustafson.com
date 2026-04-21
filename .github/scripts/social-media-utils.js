@@ -122,6 +122,7 @@ class CacheManager {
 	constructor() {
 		this.cacheDir = ".github/cache";
 		this.cacheFile = path.join(this.cacheDir, "syndication-status.json");
+		this.cacheBootstrapDate = new Date("2026-04-20T00:00:00.000Z");
 	}
 
 	async ensureCacheDir() {
@@ -193,16 +194,59 @@ class CacheManager {
 		return cache[type][itemId]?.platforms[platform]?.success === true;
 	}
 
-	async getItemsNewerThan(items, type) {
+	isItemProcessed(itemStatus) {
+		if (!itemStatus) return false;
+
+		const platforms = Object.values(itemStatus.platforms || {});
+		return platforms.length > 0 && platforms.every((platform) => platform.success);
+	}
+
+	async getUnprocessedItems(items, type) {
+		const cache = await this.getSyndicationStatus();
 		const unprocessedItems = [];
+		let cacheUpdated = false;
+		const now = new Date().toISOString();
 
 		for (const item of items) {
-			if (!(await this.isProcessed(type, item))) {
-				unprocessedItems.push(item);
+			const itemStatus = cache[type][item.id];
+			if (this.isItemProcessed(itemStatus)) {
+				continue;
 			}
+
+			const itemDate = item.date_published ? new Date(item.date_published) : null;
+			const isBeforeBootstrapDate =
+				itemDate && !Number.isNaN(itemDate.getTime())
+					? itemDate < this.cacheBootstrapDate
+					: false;
+
+			if (!itemStatus && isBeforeBootstrapDate) {
+				cache[type][item.id] = {
+					platforms: {
+						baseline_2026_04_20: {
+							success: true,
+							timestamp: now,
+						},
+					},
+					firstAttempt: now,
+					lastUpdated: now,
+				};
+				cacheUpdated = true;
+				continue;
+			}
+
+			unprocessedItems.push(item);
+		}
+
+		if (cacheUpdated) {
+			await fs.writeFile(this.cacheFile, JSON.stringify(cache, null, 2));
 		}
 
 		return unprocessedItems;
+	}
+
+	// Backwards-compatible alias
+	async getItemsNewerThan(items, type) {
+		return this.getUnprocessedItems(items, type);
 	}
 
 	// For backwards compatibility - this method is deprecated
@@ -218,12 +262,7 @@ class CacheManager {
 		// Consider an item processed only if ALL platforms succeeded
 		const cache = await this.getSyndicationStatus();
 		const itemStatus = cache[type][item.id];
-
-		if (!itemStatus) return false;
-
-		// Check if all platforms succeeded
-		const platforms = Object.values(itemStatus.platforms);
-		return platforms.length > 0 && platforms.every((p) => p.success === true);
+		return this.isItemProcessed(itemStatus);
 	}
 }
 
