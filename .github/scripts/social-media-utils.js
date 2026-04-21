@@ -119,12 +119,13 @@ class ContentProcessor {
 }
 
 class CacheManager {
-	constructor() {
+	constructor(testMode = false) {
 		this.cacheDir = ".github/cache";
 		this.cacheFile = path.join(this.cacheDir, "syndication-status.json");
 		this.cacheBootstrapDateId = "2026-04-20";
 		this.cacheBootstrapDate = new Date(`${this.cacheBootstrapDateId}T00:00:00.000Z`);
 		this.cacheBootstrapPlatform = `baseline_${this.cacheBootstrapDateId.replaceAll("-", "_")}`;
+		this.testMode = testMode;
 	}
 
 	async ensureCacheDir() {
@@ -151,6 +152,13 @@ class CacheManager {
 	}
 
 	async markPlatformSuccess(type, itemId, platform) {
+		if (this.testMode) {
+			console.log(
+				`🧪 TEST: Skipping cache success write for ${type}:${itemId}:${platform}`,
+			);
+			return;
+		}
+
 		const cache = await this.getSyndicationStatus();
 
 		if (!cache[type][itemId]) {
@@ -171,6 +179,13 @@ class CacheManager {
 	}
 
 	async markPlatformFailure(type, itemId, platform, error) {
+		if (this.testMode) {
+			console.log(
+				`🧪 TEST: Skipping cache failure write for ${type}:${itemId}:${platform}`,
+			);
+			return;
+		}
+
 		const cache = await this.getSyndicationStatus();
 
 		if (!cache[type][itemId]) {
@@ -239,8 +254,10 @@ class CacheManager {
 			unprocessedItems.push(item);
 		}
 
-		if (cacheUpdated) {
+		if (cacheUpdated && !this.testMode) {
 			await fs.writeFile(this.cacheFile, JSON.stringify(cache, null, 2));
+		} else if (cacheUpdated) {
+			console.log("🧪 TEST: Skipping cache bootstrap writes");
 		}
 
 		return unprocessedItems;
@@ -270,8 +287,8 @@ class CacheManager {
 
 class SocialMediaAPI {
 	constructor(testMode = false) {
-		this.cache = new CacheManager();
 		this.testMode = testMode || process.env.TEST_MODE === "true";
+		this.cache = new CacheManager(this.testMode);
 
 		if (this.testMode) {
 			console.log("🧪 Running in TEST MODE - no actual posts will be made");
