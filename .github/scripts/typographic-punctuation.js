@@ -186,7 +186,7 @@ function runCli() {
 	const args = process.argv.slice(2);
 	const write = args.includes("--write");
 	const targets = args.filter((arg) => !arg.startsWith("--"));
-	const selectedTargets = targets.length > 0 ? targets : ["src/_drafts"];
+	const selectedTargets = targets.length > 0 ? targets : ["src/_drafts", "src/posts"];
 	const changedFiles = processMarkdownFiles(selectedTargets, { write });
 
 	if (changedFiles.length === 0) {
