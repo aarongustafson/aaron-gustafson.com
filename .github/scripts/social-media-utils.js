@@ -119,9 +119,13 @@ class ContentProcessor {
 }
 
 class CacheManager {
-	constructor() {
+	constructor(testMode = false) {
 		this.cacheDir = ".github/cache";
 		this.cacheFile = path.join(this.cacheDir, "syndication-status.json");
+		this.cacheBootstrapDateId = "2026-04-20";
+		this.cacheBootstrapDate = new Date(`${this.cacheBootstrapDateId}T00:00:00.000Z`);
+		this.cacheBootstrapPlatform = `baseline_${this.cacheBootstrapDateId.replaceAll("-", "_")}`;
+		this.testMode = testMode;
 	}
 
 	async ensureCacheDir() {
@@ -148,6 +152,13 @@ class CacheManager {
 	}
 
 	async markPlatformSuccess(type, itemId, platform) {
+		if (this.testMode) {
+			console.log(
+				`🧪 TEST: Skipping cache success write for ${type}:${itemId}:${platform}`,
+			);
+			return;
+		}
+
 		const cache = await this.getSyndicationStatus();
 
 		if (!cache[type][itemId]) {
@@ -168,6 +179,13 @@ class CacheManager {
 	}
 
 	async markPlatformFailure(type, itemId, platform, error) {
+		if (this.testMode) {
+			console.log(
+				`🧪 TEST: Skipping cache failure write for ${type}:${itemId}:${platform}`,
+			);
+			return;
+		}
+
 		const cache = await this.getSyndicationStatus();
 
 		if (!cache[type][itemId]) {
@@ -193,15 +211,61 @@ class CacheManager {
 		return cache[type][itemId]?.platforms[platform]?.success === true;
 	}
 
-	async getItemsNewerThan(items, type) {
-		const today = new Date();
-		today.setHours(0, 0, 0, 0);
+	isItemProcessed(itemStatus) {
+		if (!itemStatus) return false;
 
-		return items.filter((item) => {
-			const itemDate = new Date(item.date_published);
-			// Only include items published today or later
-			return itemDate >= today;
-		});
+		const platforms = Object.values(itemStatus.platforms || {});
+		return platforms.length > 0 && platforms.every((platform) => platform.success);
+	}
+
+	async getUnprocessedItems(items, type) {
+		const cache = await this.getSyndicationStatus();
+		const unprocessedItems = [];
+		let cacheUpdated = false;
+		const now = new Date().toISOString();
+
+		for (const item of items) {
+			const itemStatus = cache[type][item.id];
+			if (this.isItemProcessed(itemStatus)) {
+				continue;
+			}
+
+			const itemDate = item.date_published ? new Date(item.date_published) : null;
+			const isBeforeBootstrapDate =
+				itemDate && !Number.isNaN(itemDate.getTime())
+					? itemDate < this.cacheBootstrapDate
+					: false;
+
+			if (!itemStatus && isBeforeBootstrapDate) {
+				cache[type][item.id] = {
+					platforms: {
+						[this.cacheBootstrapPlatform]: {
+							success: true,
+							timestamp: now,
+						},
+					},
+					firstAttempt: now,
+					lastUpdated: now,
+				};
+				cacheUpdated = true;
+				continue;
+			}
+
+			unprocessedItems.push(item);
+		}
+
+		if (cacheUpdated && !this.testMode) {
+			await fs.writeFile(this.cacheFile, JSON.stringify(cache, null, 2));
+		} else if (cacheUpdated) {
+			console.log("🧪 TEST: Skipping cache bootstrap writes");
+		}
+
+		return unprocessedItems;
+	}
+
+	// Backwards-compatible alias
+	async getItemsNewerThan(items, type) {
+		return this.getUnprocessedItems(items, type);
 	}
 
 	// For backwards compatibility - this method is deprecated
@@ -217,19 +281,14 @@ class CacheManager {
 		// Consider an item processed only if ALL platforms succeeded
 		const cache = await this.getSyndicationStatus();
 		const itemStatus = cache[type][item.id];
-
-		if (!itemStatus) return false;
-
-		// Check if all platforms succeeded
-		const platforms = Object.values(itemStatus.platforms);
-		return platforms.length > 0 && platforms.every((p) => p.success === true);
+		return this.isItemProcessed(itemStatus);
 	}
 }
 
 class SocialMediaAPI {
 	constructor(testMode = false) {
-		this.cache = new CacheManager();
 		this.testMode = testMode || process.env.TEST_MODE === "true";
+		this.cache = new CacheManager(this.testMode);
 
 		if (this.testMode) {
 			console.log("🧪 Running in TEST MODE - no actual posts will be made");

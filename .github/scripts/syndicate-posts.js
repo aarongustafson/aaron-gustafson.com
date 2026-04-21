@@ -56,8 +56,8 @@ class PostSyndicator extends SocialMediaAPI {
 				return;
 			}
 
-			// Get posts newer than last syndication time
-			const newPosts = await this.cache.getItemsNewerThan(feed.items, "posts");
+			// Get posts that are not yet fully processed
+			const newPosts = await this.cache.getUnprocessedItems(feed.items, "posts");
 
 			if (newPosts.length === 0) {
 				console.log("✅ No new posts to syndicate");

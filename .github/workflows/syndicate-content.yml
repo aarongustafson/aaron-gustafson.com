@@ -48,10 +48,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "20"
 
@@ -69,12 +69,13 @@ jobs:
 
       # Restore cache before processing to avoid duplicates
       - name: Restore processed items cache
-        uses: actions/cache/restore@v4
+        id: syndication-cache
+        uses: actions/cache/restore@v5
         with:
           path: .github/cache
-          key: syndication-cache-${{ github.sha }}
+          key: syndication-cache-${{ github.ref_name }}-${{ hashFiles('.github/cache/syndication-status.json') }}
           restore-keys: |
-            syndication-cache-
+            syndication-cache-${{ github.ref_name }}-
 
       # Check for new posts
       - name: Syndicate Posts
@@ -111,9 +112,20 @@ jobs:
           IFTTT_KEY: ${{ secrets.IFTTT_KEY }}
 
       # Save updated cache after processing
-      - name: Save processed items cache
-        uses: actions/cache/save@v4
+      - name: Compute processed items cache key
+        id: syndication-cache-key
         if: always()
+        run: |
+          if [ -f .github/cache/syndication-status.json ]; then
+            cache_hash=$(sha256sum .github/cache/syndication-status.json | cut -d' ' -f1)
+          else
+            cache_hash=empty
+          fi
+          echo "key=syndication-cache-${{ github.ref_name }}-${cache_hash}" >> "$GITHUB_OUTPUT"
+
+      - name: Save processed items cache
+        uses: actions/cache/save@v5
+        if: always() && steps.syndication-cache.outputs.cache-matched-key != steps.syndication-cache-key.outputs.key
         with:
           path: .github/cache
-          key: syndication-cache-${{ github.sha }}
+          key: ${{ steps.syndication-cache-key.outputs.key }}

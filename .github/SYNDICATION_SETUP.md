@@ -58,7 +58,7 @@ The workflow syndicates content to the following platforms:
 - ✅ Twitter (via Buffer API)
 - ✅ Bluesky (via Buffer API)
 
-**Important**: The workflow only syndicates items published today to prevent re-posting old content.
+**Important**: The workflow syndicates items that are not yet fully processed in the syndication cache (not just items published today). During cache bootstrap, items published before `2026-04-20` are automatically marked as completed baseline entries so syndication proceeds forward from that date.
 
 ## API Setup Instructions
 
@@ -252,7 +252,8 @@ The workflow will:
 - 🔄 Use IFTTT as fallback for failed API calls
 - 💾 Cache processed items to prevent duplicates
 - ⏰ Run daily backup check at 11am UTC
-- 📅 Only syndicate items published today (prevents re-posting old content)
+- 📅 Syndicate items not yet fully processed in cache (prevents duplicate re-posting while still catching missed items)
+- 🧱 Bootstrap pre-`2026-04-20` items as completed baseline entries
 
 ## Migration from Zapier
 
