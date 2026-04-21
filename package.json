@@ -26,7 +26,9 @@
 		"new:podcast": "plop podcast",
 		"new:press": "plop press",
 		"new:citation": "plop citation",
-		"publish:draft": "plop publish"
+		"publish:draft": "plop publish",
+		"prose:check": "node .github/scripts/typographic-punctuation.js",
+		"prose:fix": "node .github/scripts/typographic-punctuation.js --write"
 	},
 	"repository": {
 		"type": "git",
