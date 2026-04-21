@@ -194,14 +194,15 @@ class CacheManager {
 	}
 
 	async getItemsNewerThan(items, type) {
-		const today = new Date();
-		today.setHours(0, 0, 0, 0);
+		const unprocessedItems = [];
 
-		return items.filter((item) => {
-			const itemDate = new Date(item.date_published);
-			// Only include items published today or later
-			return itemDate >= today;
-		});
+		for (const item of items) {
+			if (!(await this.isProcessed(type, item))) {
+				unprocessedItems.push(item);
+			}
+		}
+
+		return unprocessedItems;
 	}
 
 	// For backwards compatibility - this method is deprecated

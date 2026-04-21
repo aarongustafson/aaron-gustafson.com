@@ -48,10 +48,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "20"
 
@@ -69,10 +69,10 @@ jobs:
 
       # Restore cache before processing to avoid duplicates
       - name: Restore processed items cache
-        uses: actions/cache/restore@v4
+        uses: actions/cache/restore@v5
         with:
           path: .github/cache
-          key: syndication-cache-${{ github.sha }}
+          key: syndication-cache-${{ github.ref_name }}
           restore-keys: |
             syndication-cache-
 
@@ -112,8 +112,8 @@ jobs:
 
       # Save updated cache after processing
       - name: Save processed items cache
-        uses: actions/cache/save@v4
+        uses: actions/cache/save@v5
         if: always()
         with:
           path: .github/cache
-          key: syndication-cache-${{ github.sha }}
+          key: syndication-cache-${{ github.ref_name }}-${{ github.run_id }}
