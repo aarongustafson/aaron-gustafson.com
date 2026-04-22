@@ -122,7 +122,7 @@ class CacheManager {
 	constructor(testMode = false) {
 		this.cacheDir = ".github/cache";
 		this.cacheFile = path.join(this.cacheDir, "syndication-status.json");
-		this.cacheBootstrapDateId = "2026-04-20";
+		this.cacheBootstrapDateId = "2026-04-21";
 		this.cacheBootstrapDate = new Date(`${this.cacheBootstrapDateId}T00:00:00.000Z`);
 		this.cacheBootstrapPlatform = `baseline_${this.cacheBootstrapDateId.replaceAll("-", "_")}`;
 		this.testMode = testMode;

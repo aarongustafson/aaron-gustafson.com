@@ -22,6 +22,16 @@ on:
         required: false
         default: false
         type: boolean
+      bootstrap_cache_before:
+        description: "Seed cache for items published before this date (YYYY-MM-DD)"
+        required: false
+        default: ""
+        type: string
+      bootstrap_cache_only:
+        description: "Only seed the cache and skip syndication"
+        required: false
+        default: false
+        type: boolean
       siteName:
         description: "Netlify site name (auto-populated)"
         required: false
@@ -66,6 +76,8 @@ jobs:
           echo "POSTS_FEED_URL=https://www.aaron-gustafson.com/feeds/latest-posts.json" >> $GITHUB_ENV
           echo "LINKS_FEED_URL=https://www.aaron-gustafson.com/feeds/latest-links.json" >> $GITHUB_ENV
           echo "TEST_MODE=${{ github.event.inputs.test_mode || 'false' }}" >> $GITHUB_ENV
+          echo "BOOTSTRAP_CACHE_BEFORE=${{ github.event.inputs.bootstrap_cache_before || '' }}" >> $GITHUB_ENV
+          echo "BOOTSTRAP_CACHE_CONTENT_TYPE=${{ github.event.inputs.content_type || 'both' }}" >> $GITHUB_ENV
 
       # Restore cache before processing to avoid duplicates
       - name: Restore processed items cache
@@ -77,9 +89,13 @@ jobs:
           restore-keys: |
             syndication-cache-${{ github.ref_name }}-
 
+      - name: Seed processed items cache
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.bootstrap_cache_before != ''
+        run: node .github/scripts/bootstrap-syndication-cache.js
+
       # Check for new posts
       - name: Syndicate Posts
-        if: github.event.inputs.content_type != 'links'
+        if: github.event.inputs.bootstrap_cache_only != 'true' && github.event.inputs.content_type != 'links'
         run: node .github/scripts/syndicate-posts.js
         env:
           # Mastodon API
@@ -96,7 +112,7 @@ jobs:
 
       # Check for new links
       - name: Syndicate Links
-        if: github.event.inputs.content_type != 'posts'
+        if: github.event.inputs.bootstrap_cache_only != 'true' && github.event.inputs.content_type != 'posts'
         run: node .github/scripts/syndicate-links.js
         env:
           # Mastodon API
