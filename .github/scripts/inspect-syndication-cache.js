@@ -17,6 +17,18 @@ function countFullySuccessfulItems(collection = {}) {
 	}).length;
 }
 
+function getIncompleteItems(collection = {}) {
+	return Object.entries(collection)
+		.filter(([, itemStatus]) => {
+			const platforms = Object.values(itemStatus?.platforms || {});
+			return platforms.length === 0 || platforms.some((platform) => !platform.success);
+		})
+		.map(([itemId, itemStatus]) => ({
+			itemId,
+			platforms: itemStatus?.platforms || {},
+		}));
+}
+
 async function main() {
 	const samplePostId = process.argv[2] || DEFAULT_SAMPLE_POST_ID;
 
@@ -34,11 +46,25 @@ async function main() {
 		console.log(`links_total=${countItems(cache.links)}`);
 		console.log(`links_fully_successful=${countFullySuccessfulItems(cache.links)}`);
 
+		const incompletePosts = getIncompleteItems(cache.posts);
+		const incompleteLinks = getIncompleteItems(cache.links);
+		console.log(`posts_incomplete=${incompletePosts.length}`);
+		console.log(`links_incomplete=${incompleteLinks.length}`);
+		if (incompletePosts.length > 0) {
+			console.log(`posts_incomplete_ids=${incompletePosts.map((item) => item.itemId).join(",")}`);
+		}
+		if (incompleteLinks.length > 0) {
+			console.log(`links_incomplete_ids=${incompleteLinks.map((item) => item.itemId).join(",")}`);
+		}
+
 		const samplePost = cache.posts?.[samplePostId];
 		if (samplePost) {
 			console.log(`sample_post_id=${samplePostId}`);
 			console.log(
 				`sample_post_platforms=${Object.keys(samplePost.platforms || {}).sort().join(",")}`,
+			);
+			console.log(
+				`sample_post_platform_statuses=${JSON.stringify(samplePost.platforms || {})}`,
 			);
 		} else {
 			console.log(`sample_post_missing=${samplePostId}`);
