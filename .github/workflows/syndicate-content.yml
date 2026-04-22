@@ -70,6 +70,28 @@ jobs:
           # Only install the minimal dependencies needed for syndication
           npm install node-fetch@3 html-to-text
 
+      - name: Resolve latest processed items cache key
+        id: syndication-cache-latest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          key_prefix="syndication-cache-${{ github.ref_name }}-"
+          latest_key=$(curl -fsSL -G \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            --data-urlencode "per_page=100" \
+            --data-urlencode "key=${key_prefix}" \
+            --data-urlencode "ref=${{ github.ref }}" \
+            "${{ github.api_url }}/repos/${{ github.repository }}/actions/caches" | jq -r '.actions_caches | sort_by(.created_at) | last | .key // empty')
+
+          if [ -n "$latest_key" ]; then
+            echo "latest_key=$latest_key" >> "$GITHUB_OUTPUT"
+            echo "Resolved latest cache key: $latest_key"
+          else
+            echo "latest_key=${key_prefix}" >> "$GITHUB_OUTPUT"
+            echo "No existing cache key found for prefix: $key_prefix"
+          fi
+
       - name: Setup environment
         run: |
           echo "SITE_URL=https://www.aaron-gustafson.com" >> $GITHUB_ENV
@@ -85,13 +107,21 @@ jobs:
         uses: actions/cache/restore@v5
         with:
           path: .github/cache
-          key: syndication-cache-${{ github.ref_name }}-${{ hashFiles('.github/cache/syndication-status.json') }}
+          key: ${{ steps.syndication-cache-latest.outputs.latest_key }}
           restore-keys: |
             syndication-cache-${{ github.ref_name }}-
+
+      - name: Inspect restored cache
+        if: always()
+        run: node .github/scripts/inspect-syndication-cache.js
 
       - name: Seed processed items cache
         if: github.event_name == 'workflow_dispatch' && github.event.inputs.bootstrap_cache_before != ''
         run: node .github/scripts/bootstrap-syndication-cache.js
+
+      - name: Inspect cache after seeding
+        if: always() && github.event_name == 'workflow_dispatch' && github.event.inputs.bootstrap_cache_before != ''
+        run: node .github/scripts/inspect-syndication-cache.js
 
       # Check for new posts
       - name: Syndicate Posts
@@ -138,6 +168,13 @@ jobs:
             cache_hash=empty
           fi
           echo "key=syndication-cache-${{ github.ref_name }}-${cache_hash}" >> "$GITHUB_OUTPUT"
+
+      - name: Inspect cache before save
+        if: always()
+        run: |
+          echo "restored_key=${{ steps.syndication-cache.outputs.cache-matched-key }}"
+          echo "computed_key=${{ steps.syndication-cache-key.outputs.key }}"
+          node .github/scripts/inspect-syndication-cache.js
 
       - name: Save processed items cache
         uses: actions/cache/save@v5
