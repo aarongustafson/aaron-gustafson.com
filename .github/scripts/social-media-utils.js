@@ -390,7 +390,7 @@ class SocialMediaAPI {
 				);
 				results.push({
 					id: `test-buffer-${profileId}-${Date.now()}`,
-					profile_id: profileId,
+					profileId,
 					testMode: true,
 				});
 				continue;
@@ -415,7 +415,10 @@ class SocialMediaAPI {
 					throw new Error(data.message || `HTTP ${response.status}`);
 				}
 
-				results.push(data);
+				results.push({
+					...data,
+					profileId,
+				});
 			} catch (error) {
 				// For fetch errors, try to get response data
 				let errorDetails = error.message;
@@ -485,7 +488,29 @@ class SocialMediaAPI {
 			},
 		);
 
-		return await response.json();
+		const responseText = await response.text();
+		let parsedResponse;
+
+		if (responseText) {
+			try {
+				parsedResponse = JSON.parse(responseText);
+			} catch (error) {
+				parsedResponse = { message: responseText };
+			}
+		}
+
+		if (!response.ok) {
+			const errorMessage =
+				parsedResponse?.message || responseText || `HTTP ${response.status}`;
+			throw new Error(errorMessage);
+		}
+
+		return (
+			parsedResponse || {
+				status: response.status,
+				ok: response.ok,
+			}
+		);
 	}
 }
 
