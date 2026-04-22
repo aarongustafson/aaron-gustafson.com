@@ -1,7 +1,7 @@
-import fetch from "node-fetch";
 import fs from "fs/promises";
-import path from "path";
 import { htmlToText } from "html-to-text";
+import fetch from "node-fetch";
+import path from "path";
 
 class ContentProcessor {
 	static stripHtml(content) {
@@ -514,4 +514,5 @@ class SocialMediaAPI {
 	}
 }
 
-export { ContentProcessor, CacheManager, SocialMediaAPI };
+export { CacheManager, ContentProcessor, SocialMediaAPI };
+

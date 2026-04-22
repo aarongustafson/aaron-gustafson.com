@@ -1,5 +1,5 @@
-import fetch from "node-fetch";
 import fs from "fs/promises";
+import fetch from "node-fetch";
 import path from "path";
 
 const DEFAULT_CUTOFF = "2026-04-21";
