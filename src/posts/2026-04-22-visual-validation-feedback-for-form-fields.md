@@ -1,19 +1,19 @@
 ---
 title: "Visual Validation Feedback for Form Fields"
-date: 2025-12-06 10:00:00 -07:00
+date: 2026-04-22 20:17:47 +00:00
 comments: true
 tags:
   [
+    "web components",
+    "progressive enhancement",
     "forms",
     "HTML",
     "JavaScript",
-    "progressive enhancement",
-    "web components",
     "web forms",
     "UX",
   ]
-description: "The form-validation-list web component provides real-time visual feedback on validation requirements, showing users which rules they have satisfied as they type."
-twitter_text: "Show users which validation requirements they have actually met as they type."
+description: "The `form-validation-list` web component provides real-time visual feedback on validation requirements, showing users which rules they have satisfied as they type."
+twitter_text: "New #WebComponent: Show users which validation requirements they’ve met — as they type."
 series:
   name: "Modern Web Form Best Practices"
   tag: "series-forms"
@@ -26,9 +26,9 @@ Password requirements, username rules, input format constraints: forms often hav
 
 This is a modern replacement for my old [jQuery Easy Validation Rules](https://github.com/easy-designs/jquery.easy-validation-rules.js) plugin, reimagined as a web component with native form validation integration.
 
-## Basic usage
+<hr>
 
-Associate the component with an input and define your validation rules:
+To get started, associate the component with an `input` element using the `for` attribute and define your validation rules:
 
 ```html
 <form>
@@ -49,11 +49,11 @@ Associate the component with an input and define your validation rules:
 
 As users type, each rule is checked against its regular expression pattern. Matched rules get a checkmark (✓), unmatched rules get an X (✗). When all rules match, the field is valid and the form can be submitted. No guessing required.
 
-## How it works
+## What’s happening under the hood?
 
 The component:
 
-1. Associates with an input via the `for` attribute
+1. Associates with an input via the `for` attribute (just like a `label` element)
 2. Finds all elements with `data-pattern` attributes
 3. Tests the input value against each pattern
 4. Adds `validation-matched` or `validation-unmatched` classes accordingly
@@ -63,7 +63,7 @@ The component:
 
 The cascade animation, controlled by `each-delay`, creates a pleasant visual effect as rules are checked sequentially. It is a small touch, but a nice one.
 
-## Pattern-based validation
+## Whose rules? Your rules.
 
 Define rules using regular expression patterns in the `data-pattern` attribute:
 
@@ -87,11 +87,11 @@ Define rules using regular expression patterns in the `data-pattern` attribute:
 </form-validation-list>
 ```
 
-Each pattern is a standard JavaScript regular expression. The component tests the input value against all patterns on every input event.
+Each pattern is a standard JavaScript regular expression. The component tests the `input` value against all patterns on every input event (i.e., as users type).
 
-## Customizing the trigger event
+## Input event too noisy? No worries.
 
-By default, validation runs on the `input` event (as users type). Change it with `trigger-event`:
+By default, validation runs on the `input` event, but you can change it by setting the `trigger-event` attribute to ”blur”:
 
 ```html
 <form-validation-list for="email" trigger-event="blur">
@@ -102,11 +102,11 @@ By default, validation runs on the `input` event (as users type). Change it with
 </form-validation-list>
 ```
 
-This validates only when the field loses focus, which is useful for fields where you do not want to start waving red flags while users are still in the middle of typing.
+With this atttribute in place, the validation runs only when the field loses focus. This is useful when you don’t want to start validating while users are still in the middle of typing.
 
-## Adjusting the cascade delay
+## Wanna adjust the cascade delay? Go for it.
 
-The `each-delay` attribute controls the delay between checking each rule:
+Use the `each-delay` attribute to control the delay between checking each rule. The default speed is 150ms, but you can tune it to any number of milliseconds:
 
 ```html
 <form-validation-list for="password" each-delay="100">
@@ -114,11 +114,13 @@ The `each-delay` attribute controls the delay between checking each rule:
 </form-validation-list>
 ```
 
-Set it to `0` to remove the cascade effect entirely and check all rules simultaneously.
+Set it to “0” to remove the cascade effect entirely and check all rules simultaneously.
 
-## Custom CSS classes
+## Need full design control? You got it.
 
-Customize class names for integration with CSS frameworks:
+If you want full design control over the component, you can absolutely have it. The whole component operated in light DOM, so your styles will piecrce through. And you can customize `class` names for integration with CSS frameworks using a set of attributes on the `form-validation-list` element. The `field-valid-class` and `field-invalid-class` attributes control the class names applied to the `input` field itself, while the `rule-matched-class` and `rule-unmatched-class` attributes control the `class` names applied to each rule item.
+
+Here’s a complete example:
 
 ```html
 <style>
@@ -150,11 +152,17 @@ Customize class names for integration with CSS frameworks:
 </form-validation-list>
 ```
 
-This lets you use class names that match your existing CSS architecture, rather than making one small component dictate terms to the rest of your styles.
+This approach lets you use `class` names that match your existing CSS architecture, rather than making one small component dictate terms to the rest of your styles.
 
-## Styling with CSS custom properties
+You can also control the visual indicators using CSS custom properties:
 
-Customize the visual indicators:
+- `--validation-icon-matched` - Content for matched state (default: “✓”)
+- `--validation-icon-unmatched` - Content for unmatched state (default: “✗”)
+- `--validation-icon-size` - Size of icons (default: 1em)
+- `--validation-matched-color` - Color for matched rules (default: green)
+- `--validation-unmatched-color` - Color for unmatched rules (default: red)
+
+Here’s an example of that:
 
 ```css
 form-validation-list {
@@ -166,17 +174,9 @@ form-validation-list {
 }
 ```
 
-Available properties:
+## Bit of a control freak? There’s an API.
 
-- `--validation-icon-matched` - Content for matched state (default: “✓”)
-- `--validation-icon-unmatched` - Content for unmatched state (default: “✗”)
-- `--validation-icon-size` - Size of icons (default: 1em)
-- `--validation-matched-color` - Color for matched rules (default: green)
-- `--validation-unmatched-color` - Color for unmatched rules (default: red)
-
-## Events
-
-Listen for validation changes:
+If you really want to get into the weeds, you can also listen for validation changes in your JavaScript code:
 
 ```javascript
 const validationList = document.querySelector("form-validation-list");
@@ -190,9 +190,7 @@ validationList.addEventListener("form-validation-list:validated", (event) => {
 
 The event fires after validation completes and gives you the current state. Nice and tidy.
 
-## JavaScript API
-
-Manually trigger validation and check state:
+You can also manually trigger validation and check the element’s current state at any time:
 
 ```javascript
 const validationList = document.querySelector("form-validation-list");
@@ -205,9 +203,9 @@ console.log("Is valid:", isValid);
 console.log("Current state:", validationList.isValid);
 ```
 
-## Internationalization
+## Global site? <i lang="es">Relaje!</i>
 
-Customize the validation message for different languages:
+If you need the component to work in different languages, that’s totally doable. You can customize the validation message for different languages using the `validation-message` attribute. It supports placeholders `{matched}` and `{total}` which are replaced with the current count of matched rules and total rules:
 
 ```html
 <!-- Spanish -->
@@ -235,20 +233,20 @@ Customize the validation message for different languages:
 </form-validation-list>
 ```
 
-The `{matched}` and `{total}` placeholders are replaced with the current count of matched rules and total rules.
+## Is it a progressive enhancement? Heck yeah!
 
-## Accessibility
+The component uses light DOM, so if JavaScript fails, users still see the validation requirements as a standard list. They can read what is expected even without the visual feedback. Your server-side validation still does the important enforcement work regardless… right? _Right?_
+
+## Is it screen reader accessible? Yep.
 
 The component is built with accessibility in mind:
 
-- **ARIA roles**: Component has `role="list"`, each rule has `role="listitem"`
-- **ARIA live regions**: Each rule has `aria-live="polite"` to announce changes
-- **ARIA described-by**: The validation list is associated with the input via `aria-describedby`
-- **Existing descriptions preserved**: If the field already has `aria-describedby`, values are preserved
+- **Proper description support**: The validation list is automatically associated with the `input` via `aria-describedby`, but if the field already has `aria-describedby`, the original value is preserved.
+- **Validation changes are announced**: Each rule has `aria-live="polite"`, so when it updates, screen readers announce the change.
 
-Screen readers announce validation requirements when users focus the input, and they announce changes as rules are matched or unmatched. That feedback matters.
+If you have suggestions for other ways to improve the accessibility of this component, please [open an issue on GitHub](https://github.com/aarongustafson/form-validation-list/issues).
 
-## Browser validation integration
+## Does it integrate with the browser’s validation engine? Naturally.
 
 The component uses `setCustomValidity()` to participate in native form validation:
 
@@ -270,7 +268,7 @@ form.addEventListener("submit", (e) => {
 });
 ```
 
-## Real-world example
+## Here’s a real-world example
 
 Here’s a complete password validation setup:
 
@@ -297,11 +295,7 @@ Here’s a complete password validation setup:
 
 Users see exactly which requirements they have met and which they still need to satisfy. That tends to be a lot kinder than springing the whole list on them after submit.
 
-## Progressive enhancement
-
-The component uses light DOM, so if JavaScript fails, users still see the validation requirements as a standard list. They can read what is expected even without the visual feedback. Server-side validation still does the important work regardless.
-
-## Demo
+## Play with it
 
 Check out [the demo](https://aarongustafson.github.io/form-validation-list/demo/) with various examples:
 
@@ -313,7 +307,9 @@ Check out [the demo](https://aarongustafson.github.io/form-validation-list/demo/
 
 ## Grab it
 
-View the project on [GitHub](https://github.com/aarongustafson/form-validation-list). Install via npm:
+View the project on [GitHub](https://github.com/aarongustafson/form-validation-list).
+
+Install via `npm`:
 
 ```bash
 npm install @aarongustafson/form-validation-list
@@ -325,4 +321,4 @@ Import and use:
 import "@aarongustafson/form-validation-list";
 ```
 
-A modern replacement for my old jQuery validation plugin, with native form validation integration and full accessibility support.
+Happy validating!
