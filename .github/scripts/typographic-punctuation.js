@@ -21,6 +21,9 @@ function maskSegments(text) {
 
 	const patterns = [
 		/`[^`]*`/g,
+		/\{\{[\s\S]*?\}\}/g,
+		/\{%[\s\S]*?%\}/g,
+		/\{#[\s\S]*?#\}/g,
 		/<[^>]+>/g,
 		/https?:\/\/[^\s)]+/g,
 	];

@@ -75,7 +75,7 @@ svg {
 I’ve thrown together a quick comparison over on CodePen so you can see the three different states:
 
 <figure id="2023-08-21-03">
-{% CodePen “https://codepen.io/aarongustafson/pen/JjwoLME", “result”, “500” %}
+{% CodePen "https://codepen.io/aarongustafson/pen/JjwoLME", "result", "500" %}
 </figure>
 
 And now that you know, please, please, _please_ take a few minutes to make this small, simple change to your websites. While not a catastrophic issue, taking care to control how your sites render in the worst of circumstances goes a long way to demonstrating thoughtful consideration of your users.

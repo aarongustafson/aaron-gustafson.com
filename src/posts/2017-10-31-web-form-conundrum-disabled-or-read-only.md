@@ -39,7 +39,7 @@ Fields marked as `readonly` are collected along with all of the normal field val
 Fields marked as `disabled` are ignored when collecting values from the form. In a traditional form submission, the action page would never receive values for a `disabled` field, regardless of whether it has a `name` attribute. In JavaScript, this is a little trickier as generic DOM access via a form’s `elements` collection includes all form controls, including `disabled` fields (and buttons, `output` elements, etc.). In order to ensure consistency with the spec, it is incumbent upon the JavaScript developer to keep an eye out for `disabled` fields so they can throw away their values before processing the form.
 
 <figure id="fig-2017-10-31-01" class="media-container">
-  {% CodePen “https://codepen.io/aarongustafson/pen/jaPYLr", “result”, “250” %}
+  {% CodePen "https://codepen.io/aarongustafson/pen/jaPYLr", "result", "250" %}
 </figure>
 
 Thankfully, most library code I’ve found does this, so it’s not much of an issue if you are working with [jQuery’s `serialize()` method](https://api.jquery.com/serialize/) or even [the `form-serialize` module for Node](https://www.npmjs.com/package/form-serialize) (and React, etc.). Confusingly, the Node module enables developers to treat `disabled` fields as though they are `readonly`. Luckily, that’s not the default behavior.

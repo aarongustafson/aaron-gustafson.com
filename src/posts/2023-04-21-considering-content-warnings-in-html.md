@@ -59,7 +59,7 @@ I threw together [a quick & dirty demo of what the experience could be like](htt
 
 <figure id="2023-04-21-01">
 
-{% CodePen “https://codepen.io/aarongustafson/pen/rNqjeqj", “result”, “500” %}
+{% CodePen "https://codepen.io/aarongustafson/pen/rNqjeqj", "result", "500" %}
 
 </figure>
 
@@ -82,7 +82,7 @@ I tested this approach with VoiceOver and JAWS and it works a treat. I also conf
 
 <figure id="2023-04-21-02">
 
-{% CodePen “https://codepen.io/aarongustafson/pen/QWZpqPe", “result”, “500” %}
+{% CodePen "https://codepen.io/aarongustafson/pen/QWZpqPe", "result", "500" %}
 
 </figure>
 

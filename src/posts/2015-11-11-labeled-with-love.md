@@ -192,7 +192,7 @@ input:focus + label {
 ```
 
 <figure id="fig-2015-11-11-06" class="media-container">
-  {% CodePen “https://codepen.io/aarongustafson/pen/BoGgYM", “result”, “112” %}
+  {% CodePen "https://codepen.io/aarongustafson/pen/BoGgYM", "result", "112" %}
 </figure>
 
 Mary Lou assembled some beautiful examples of this approach in her [Inspiration for Text Input Effects](http://tympanus.net/codrops/2015/01/08/inspiration-text-input-effects/). I highly recommend you check those out, but here’s a teaser to whet your whistle:

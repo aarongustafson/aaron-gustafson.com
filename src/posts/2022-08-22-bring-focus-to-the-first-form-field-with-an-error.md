@@ -196,6 +196,6 @@ It’s also worth noting that you’ll want to reset and re-validate the form fi
 
 Here you can see [a complete working prototype of this approach](https://codepen.io/aarongustafson/pen/eYMXMPP):
 
-{% CodePen “https://codepen.io/aarongustafson/pen/eYMXMPP", “result”, “400” %}
+{% CodePen "https://codepen.io/aarongustafson/pen/eYMXMPP", "result", "400" %}
 
 Hopefully this helps you with the development of your own forms. Good luck!
