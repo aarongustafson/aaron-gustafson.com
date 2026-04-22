@@ -62,7 +62,7 @@ li:nth-last-child(-n + 6):first-child ~ li {
 }
 ```
 
-This one is largely the same as the “more than” example, but the multiplier is reversed (with the minus sign) which means the count runs backward: 0+6 (6), -1+5 (5), -2+6 (4), and so on.
+This one is largely the same as the “more than” example, but the multiplier is reversed (with the minus sign) which means the count runs backward: 0+6 (6), -1+6 (5), -2+6 (4), and so on.
 
 I am just overjoyed with how brilliant this is. I can think of so many places to use it (and will likely be doing so quite soon).
 
@@ -71,7 +71,7 @@ I am just overjoyed with how brilliant this is. I can think of so many places to
 [Daniel Guillan](https://twitter.com/danielguillan) has [ported this functionality (and more) to SASS](https://github.com/danielguillan/quantity-queries) using a handful of really straightforward mixins. Here’s a demo:
 
 <figure id="fig-2015-03-20-01" class="media-container">
-  {% CodePen “https://codepen.io/danielguillan/pen/GgBOxm", “result”, “331” %}
+  {% CodePen "https://codepen.io/danielguillan/pen/GgBOxm", "result", "331" %}
 </figure>
 
 Happy counting!
