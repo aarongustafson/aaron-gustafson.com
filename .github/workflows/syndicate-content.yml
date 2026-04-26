@@ -53,7 +53,7 @@ on:
         default: "1"
         type: string
 
-  # Scheduled weekday check at 11:30am PT (18:30 UTC / PDT)
+  # Scheduled weekday check at 18:30 UTC (11:30am PDT / 10:30am PST)
   schedule:
     - cron: "30 18 * * 1-5"
 
