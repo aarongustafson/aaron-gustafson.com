@@ -47,10 +47,15 @@ on:
         required: false
         default: ""
         type: string
+      max_items_per_run:
+        description: "Max items to syndicate per platform per run (0 = no limit)"
+        required: false
+        default: "1"
+        type: string
 
-  # Scheduled daily check at 11am UTC
+  # Scheduled weekday check at 11:30am PT (18:30 UTC / PDT)
   schedule:
-    - cron: "0 11 * * *"
+    - cron: "30 18 * * 1-5"
 
 jobs:
   syndicate:
@@ -140,6 +145,9 @@ jobs:
           # IFTTT Webhook (fallback)
           IFTTT_KEY: ${{ secrets.IFTTT_KEY }}
 
+          # Stagger: max items to post per platform per run (0 = no limit)
+          MAX_ITEMS_PER_RUN: ${{ github.event.inputs.max_items_per_run || '1' }}
+
       # Check for new links
       - name: Syndicate Links
         if: github.event.inputs.bootstrap_cache_only != 'true' && github.event.inputs.content_type != 'posts'
@@ -156,6 +164,9 @@ jobs:
 
           # IFTTT Webhook (fallback)
           IFTTT_KEY: ${{ secrets.IFTTT_KEY }}
+
+          # Stagger: max items to post per platform per run (0 = no limit)
+          MAX_ITEMS_PER_RUN: ${{ github.event.inputs.max_items_per_run || '1' }}
 
       # Save updated cache after processing
       - name: Compute processed items cache key

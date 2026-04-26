@@ -66,8 +66,18 @@ class PostSyndicator extends SocialMediaAPI {
 
 			console.log(`📝 Found ${newPosts.length} new post(s) to syndicate`);
 
+			// Limit the number of posts processed per run to avoid flooding platforms.
+			// Set MAX_ITEMS_PER_RUN=0 to disable the limit and process everything.
+			const limit = parseInt(process.env.MAX_ITEMS_PER_RUN || "1", 10);
+			const postsToProcess = limit > 0 ? newPosts.slice(0, limit) : newPosts;
+			if (limit > 0 && newPosts.length > limit) {
+				console.log(
+					`⏳ Processing ${postsToProcess.length} of ${newPosts.length} post(s) this run (MAX_ITEMS_PER_RUN=${limit}). Remaining will be posted in future runs.`,
+				);
+			}
+
 			// Process each new post (most recent first)
-			for (const post of newPosts) {
+			for (const post of postsToProcess) {
 				console.log(`📝 Processing post: ${post.title}`);
 				await this.syndicatePost(post);
 			}
