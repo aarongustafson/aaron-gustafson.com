@@ -68,7 +68,13 @@ class LinkSyndicator extends SocialMediaAPI {
 
 			// Limit the number of links processed per run to avoid flooding platforms.
 			// Set MAX_ITEMS_PER_RUN=0 to disable the limit and process everything.
-			const limit = parseInt(process.env.MAX_ITEMS_PER_RUN || "1", 10);
+			const rawLimit = process.env.MAX_ITEMS_PER_RUN;
+			const parsedLimit =
+				rawLimit === undefined || rawLimit.trim() === ""
+					? 1
+					: parseInt(rawLimit, 10);
+			const limit =
+				Number.isNaN(parsedLimit) || parsedLimit < 0 ? 1 : parsedLimit;
 			const linksToProcess = limit > 0 ? newLinks.slice(0, limit) : newLinks;
 			if (limit > 0 && newLinks.length > limit) {
 				console.log(
