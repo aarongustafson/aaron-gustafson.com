@@ -75,6 +75,22 @@ class LinkSyndicator extends SocialMediaAPI {
 					: parseInt(rawLimit, 10);
 			const limit =
 				Number.isNaN(parsedLimit) || parsedLimit < 0 ? 1 : parsedLimit;
+
+			// Deprioritize items that have prior platform failures so they don't
+			// block never-attempted items (head-of-line blocking).
+			const cacheStatus = await this.cache.getSyndicationStatus();
+			newLinks.sort((a, b) => {
+				const aHasFailure = Object.values(
+					cacheStatus.links[a.id]?.platforms || {},
+				).some((p) => !p.success);
+				const bHasFailure = Object.values(
+					cacheStatus.links[b.id]?.platforms || {},
+				).some((p) => !p.success);
+				if (aHasFailure && !bHasFailure) return 1;
+				if (!aHasFailure && bHasFailure) return -1;
+				return 0;
+			});
+
 			const linksToProcess = limit > 0 ? newLinks.slice(0, limit) : newLinks;
 			if (limit > 0 && newLinks.length > limit) {
 				console.log(
