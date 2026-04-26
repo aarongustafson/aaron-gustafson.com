@@ -66,8 +66,40 @@ class LinkSyndicator extends SocialMediaAPI {
 
 			console.log(`🔗 Found ${newLinks.length} new link(s) to syndicate`);
 
+			// Limit the number of links processed per run to avoid flooding platforms.
+			// Set MAX_ITEMS_PER_RUN=0 to disable the limit and process everything.
+			const rawLimit = process.env.MAX_ITEMS_PER_RUN;
+			const parsedLimit =
+				rawLimit === undefined || rawLimit.trim() === ""
+					? 1
+					: parseInt(rawLimit, 10);
+			const limit =
+				Number.isNaN(parsedLimit) || parsedLimit < 0 ? 1 : parsedLimit;
+
+			// Deprioritize items that have prior platform failures so they don't
+			// block never-attempted items (head-of-line blocking).
+			const cacheStatus = await this.cache.getSyndicationStatus();
+			newLinks.sort((a, b) => {
+				const aHasFailure = Object.values(
+					cacheStatus.links[a.id]?.platforms || {},
+				).some((p) => !p.success);
+				const bHasFailure = Object.values(
+					cacheStatus.links[b.id]?.platforms || {},
+				).some((p) => !p.success);
+				if (aHasFailure && !bHasFailure) return 1;
+				if (!aHasFailure && bHasFailure) return -1;
+				return 0;
+			});
+
+			const linksToProcess = limit > 0 ? newLinks.slice(0, limit) : newLinks;
+			if (limit > 0 && newLinks.length > limit) {
+				console.log(
+					`⏳ Processing ${linksToProcess.length} of ${newLinks.length} link(s) this run (MAX_ITEMS_PER_RUN=${limit}). Remaining will be posted in future runs.`,
+				);
+			}
+
 			// Process each new link (most recent first)
-			for (const link of newLinks) {
+			for (const link of linksToProcess) {
 				console.log(`🔗 Processing link: ${link.title}`);
 				await this.syndicateLink(link);
 			}

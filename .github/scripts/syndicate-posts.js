@@ -66,8 +66,40 @@ class PostSyndicator extends SocialMediaAPI {
 
 			console.log(`📝 Found ${newPosts.length} new post(s) to syndicate`);
 
+			// Limit the number of posts processed per run to avoid flooding platforms.
+			// Set MAX_ITEMS_PER_RUN=0 to disable the limit and process everything.
+			const rawLimit = process.env.MAX_ITEMS_PER_RUN;
+			const parsedLimit =
+				rawLimit === undefined || rawLimit.trim() === ""
+					? 1
+					: parseInt(rawLimit, 10);
+			const limit =
+				Number.isNaN(parsedLimit) || parsedLimit < 0 ? 1 : parsedLimit;
+
+			// Deprioritize items that have prior platform failures so they don't
+			// block never-attempted items (head-of-line blocking).
+			const cacheStatus = await this.cache.getSyndicationStatus();
+			newPosts.sort((a, b) => {
+				const aHasFailure = Object.values(
+					cacheStatus.posts[a.id]?.platforms || {},
+				).some((p) => !p.success);
+				const bHasFailure = Object.values(
+					cacheStatus.posts[b.id]?.platforms || {},
+				).some((p) => !p.success);
+				if (aHasFailure && !bHasFailure) return 1;
+				if (!aHasFailure && bHasFailure) return -1;
+				return 0;
+			});
+
+			const postsToProcess = limit > 0 ? newPosts.slice(0, limit) : newPosts;
+			if (limit > 0 && newPosts.length > limit) {
+				console.log(
+					`⏳ Processing ${postsToProcess.length} of ${newPosts.length} post(s) this run (MAX_ITEMS_PER_RUN=${limit}). Remaining will be posted in future runs.`,
+				);
+			}
+
 			// Process each new post (most recent first)
-			for (const post of newPosts) {
+			for (const post of postsToProcess) {
 				console.log(`📝 Processing post: ${post.title}`);
 				await this.syndicatePost(post);
 			}
