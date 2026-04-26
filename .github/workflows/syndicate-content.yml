@@ -48,7 +48,7 @@ on:
         default: ""
         type: string
       max_items_per_run:
-        description: "Max items to syndicate per platform per run (0 = no limit)"
+        description: "Max feed items to syndicate per content type per run (0 = no limit)"
         required: false
         default: "1"
         type: string
