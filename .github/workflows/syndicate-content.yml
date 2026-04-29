@@ -57,6 +57,15 @@ on:
   schedule:
     - cron: "30 18 * * 1-5"
 
+# Only allow one syndication run at a time per branch to prevent concurrent runs
+# from reading the same stale cache and sending duplicate posts to social platforms.
+# cancel-in-progress: false ensures queued runs wait for the current run to finish
+# (rather than being cancelled) so they pick up the updated cache and skip
+# already-syndicated items.
+concurrency:
+  group: syndication-${{ github.ref_name }}
+  cancel-in-progress: false
+
 jobs:
   syndicate:
     runs-on: ubuntu-latest
