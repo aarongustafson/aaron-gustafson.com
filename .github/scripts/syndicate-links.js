@@ -297,6 +297,10 @@ class LinkSyndicator extends SocialMediaAPI {
 				skipped: true,
 			});
 		} else {
+			// Track whether postToBuffer was actually called so the catch block
+			// knows whether Buffer may have already queued the posts. If Buffer was
+			// called we must NOT also send via IFTTT – that would create duplicates.
+			let bufferCalled = false;
 			try {
 				console.log("🐦 Posting to Buffer (Twitter & Bluesky)...");
 				const bufferText = ContentProcessor.truncateText(
@@ -319,6 +323,10 @@ class LinkSyndicator extends SocialMediaAPI {
 
 				if (profileIds.length > 0) {
 					const bufferResults = await this.postToBuffer(bufferText, profileIds);
+					// Set only after postToBuffer returns so that a pre-request throw
+					// (e.g. missing BUFFER_ACCESS_TOKEN) leaves bufferCalled false and
+					// the catch block can fall back to IFTTT correctly.
+					bufferCalled = true;
 
 					// Track success/failure per profile
 					for (const result of bufferResults) {
@@ -381,14 +389,26 @@ class LinkSyndicator extends SocialMediaAPI {
 					error: error.message,
 				});
 
-				// Fallback to IFTTT for both platforms
-				await this.sendToIFTTT("twitter_link", {
-					text: `${socialText} ${relatedUrl}`,
-				});
+				// Only fall back to IFTTT when Buffer was never called (i.e. the
+				// error occurred before postToBuffer). If Buffer was already called the
+				// posts may have been queued successfully; sending via IFTTT as well
+				// would create duplicates. Items with failed cache state will be
+				// retried via Buffer on the next run.
+				// Check each platform independently: only fall back for platforms that
+				// had not already been successfully posted before this run.
+				if (!bufferCalled) {
+					if (!twitterDone) {
+						await this.sendToIFTTT("twitter_link", {
+							text: `${socialText} ${relatedUrl}`,
+						});
+					}
 
-				await this.sendToIFTTT("bluesky_link", {
-					text: `${socialText} ${relatedUrl}`,
-				});
+					if (!blueskyDone) {
+						await this.sendToIFTTT("bluesky_link", {
+							text: `${socialText} ${relatedUrl}`,
+						});
+					}
+				}
 			}
 		}
 
