@@ -322,8 +322,11 @@ class LinkSyndicator extends SocialMediaAPI {
 				}
 
 				if (profileIds.length > 0) {
-					bufferCalled = true;
 					const bufferResults = await this.postToBuffer(bufferText, profileIds);
+					// Set only after postToBuffer returns so that a pre-request throw
+					// (e.g. missing BUFFER_ACCESS_TOKEN) leaves bufferCalled false and
+					// the catch block can fall back to IFTTT correctly.
+					bufferCalled = true;
 
 					// Track success/failure per profile
 					for (const result of bufferResults) {
@@ -391,14 +394,20 @@ class LinkSyndicator extends SocialMediaAPI {
 				// posts may have been queued successfully; sending via IFTTT as well
 				// would create duplicates. Items with failed cache state will be
 				// retried via Buffer on the next run.
+				// Check each platform independently: only fall back for platforms that
+				// had not already been successfully posted before this run.
 				if (!bufferCalled) {
-					await this.sendToIFTTT("twitter_link", {
-						text: `${socialText} ${relatedUrl}`,
-					});
+					if (!twitterDone) {
+						await this.sendToIFTTT("twitter_link", {
+							text: `${socialText} ${relatedUrl}`,
+						});
+					}
 
-					await this.sendToIFTTT("bluesky_link", {
-						text: `${socialText} ${relatedUrl}`,
-					});
+					if (!blueskyDone) {
+						await this.sendToIFTTT("bluesky_link", {
+							text: `${socialText} ${relatedUrl}`,
+						});
+					}
 				}
 			}
 		}
