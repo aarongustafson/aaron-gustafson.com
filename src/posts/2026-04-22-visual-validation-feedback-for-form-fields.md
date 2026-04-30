@@ -1,6 +1,7 @@
 ---
 title: "Visual Validation Feedback for Form Fields"
 date: 2026-04-22 20:17:47 +00:00
+last_updated_at: 2026-04-30 00:00:00 +00:00
 comments: true
 tags:
   [
@@ -23,6 +24,8 @@ series:
 Password requirements, username rules, input format constraints: forms often have multiple validation requirements, but users frequently do not find out whether they are meeting them until they hit submit. The `form-validation-list` web component changes that by providing real-time visual feedback as users type, showing exactly which requirements are met and which are not.
 
 <!-- more -->
+
+<ins datetime="2026-04-30T00:00:00+00:00">**Update:** This post has been refreshed to cover the component’s current loading options, throttled input behavior, accessibility model, and localization hooks.</ins>
 
 This is a modern replacement for my old [jQuery Easy Validation Rules](https://github.com/easy-designs/jquery.easy-validation-rules.js) plugin, reimagined as a web component with native form validation integration.
 
@@ -47,7 +50,7 @@ To get started, associate the component with an `input` element using the `for` 
 </form>
 ```
 
-As users type, each rule is checked against its regular expression pattern. Matched rules get a checkmark (✓), unmatched rules get an X (✗). When all rules match, the field is valid and the form can be submitted. No guessing required.
+By default, validation runs on the `input` event with a 250ms throttle. Matched rules get a checkmark (✓), unmatched rules get an X (✗), and while someone is typing the component announces a concise progress summary instead of repeatedly re-reading the whole rule list. When all rules match, the field is valid and the form can be submitted.
 
 ## What’s happening under the hood?
 
@@ -55,11 +58,12 @@ The component:
 
 1. Associates with an input via the `for` attribute (just like a `label` element)
 2. Finds all elements with `data-pattern` attributes
-3. Tests the input value against each pattern
-4. Adds `validation-matched` or `validation-unmatched` classes accordingly
-5. Shows visual indicators (✓ or ✗)
-6. Uses `setCustomValidity()` to integrate with native form validation
-7. Prevents form submission until all rules match
+3. Tests the input value against each pattern when the configured trigger fires
+4. Adds `validation-matched` or `validation-unmatched` classes and visual indicators accordingly
+5. Inserts localized, visually hidden state text once the field has a value
+6. Updates a single polite live region while users type
+7. Uses `setCustomValidity()` to integrate with native form validation
+8. Prevents form submission until all rules match
 
 The cascade animation, controlled by `each-delay`, creates a pleasant visual effect as rules are checked sequentially. It is a small touch, but a nice one.
 
@@ -87,11 +91,11 @@ Define rules using regular expression patterns in the `data-pattern` attribute:
 </form-validation-list>
 ```
 
-Each pattern is a standard JavaScript regular expression. The component tests the `input` value against all patterns on every input event (i.e., as users type).
+Each pattern is a standard JavaScript regular expression. The component tests the `input` value against all patterns on the configured trigger, using throttled `input` events by default.
 
 ## Input event too noisy? No worries.
 
-By default, validation runs on the `input` event, but you can change it by setting the `trigger-event` attribute to ”blur”:
+By default, validation runs on the `input` event with a 250ms throttle. If you want immediate feedback while typing, set `input-throttle="0"`. If you’d rather wait until the field loses focus, switch the `trigger-event` to `"blur"`:
 
 ```html
 <form-validation-list for="email" trigger-event="blur">
@@ -102,7 +106,7 @@ By default, validation runs on the `input` event, but you can change it by setti
 </form-validation-list>
 ```
 
-With this atttribute in place, the validation runs only when the field loses focus. This is useful when you don’t want to start validating while users are still in the middle of typing.
+With this attribute in place, validation runs immediately when the field loses focus. In this mode, `input-throttle` is ignored and the component keeps the full criteria list available to assistive technology while someone types.
 
 ## Wanna adjust the cascade delay? Go for it.
 
@@ -118,7 +122,7 @@ Set it to “0” to remove the cascade effect entirely and check all rules simu
 
 ## Need full design control? You got it.
 
-If you want full design control over the component, you can absolutely have it. The whole component operated in light DOM, so your styles will piecrce through. And you can customize `class` names for integration with CSS frameworks using a set of attributes on the `form-validation-list` element. The `field-valid-class` and `field-invalid-class` attributes control the class names applied to the `input` field itself, while the `rule-matched-class` and `rule-unmatched-class` attributes control the `class` names applied to each rule item.
+If you want full design control over the component, you can absolutely have it. The whole component operates in light DOM, so your styles will pierce through. And you can customize `class` names for integration with CSS frameworks using a set of attributes on the `form-validation-list` element. The `field-valid-class` and `field-invalid-class` attributes control the class names applied to the `input` field itself, while the `rule-matched-class` and `rule-unmatched-class` attributes control the `class` names applied to each rule item.
 
 Here’s a complete example:
 
@@ -154,25 +158,31 @@ Here’s a complete example:
 
 This approach lets you use `class` names that match your existing CSS architecture, rather than making one small component dictate terms to the rest of your styles.
 
-You can also control the visual indicators using CSS custom properties:
+You can also override the per-instance icon glyphs with the `rule-matched-icon` and `rule-unmatched-icon` attributes, or control the shared visual styling using CSS custom properties:
 
-- `--validation-icon-matched` - Content for matched state (default: “✓”)
-- `--validation-icon-unmatched` - Content for unmatched state (default: “✗”)
-- `--validation-icon-size` - Size of icons (default: 1em)
-- `--validation-matched-color` - Color for matched rules (default: green)
-- `--validation-unmatched-color` - Color for unmatched rules (default: red)
+- `--rule-matched-icon` - Content for matched state (default: “✓”)
+- `--rule-unmatched-icon` - Content for unmatched state (default: “✗”)
+- `--rule-icon-size` - Size of icons (default: 1em)
+- `--rule-matched-color` - Color for matched rules (default: green)
+- `--rule-unmatched-color` - Color for unmatched rules (default: red)
+
+The older `--validation-*` custom property names are still supported as legacy aliases.
 
 Here’s an example of that:
 
 ```css
 form-validation-list {
-  --validation-icon-matched: "✅";
-  --validation-icon-unmatched: "❌";
-  --validation-icon-size: 1.2em;
-  --validation-matched-color: #28a745;
-  --validation-unmatched-color: #dc3545;
+  --rule-matched-icon: "✅";
+  --rule-unmatched-icon: "❌";
+  --rule-icon-size: 1.2em;
+  --rule-matched-color: #28a745;
+  --rule-unmatched-color: #dc3545;
 }
 ```
+
+## TypeScript or framework project? You’re covered.
+
+The package now ships with bundled type definitions and reflects its core properties and attributes in both directions. That makes it a much better fit for TypeScript, JSX, SSR, and declarative framework setups where properties may be assigned before the custom element upgrades.
 
 ## Bit of a control freak? There’s an API.
 
@@ -205,12 +215,15 @@ console.log("Current state:", validationList.isValid);
 
 ## Global site? <i lang="es">Relaje!</i>
 
-If you need the component to work in different languages, that’s totally doable. You can customize the validation message for different languages using the `validation-message` attribute. It supports placeholders `{matched}` and `{total}` which are replaced with the current count of matched rules and total rules:
+If you need the component to work in different languages, that’s totally doable. You can customize three separate pieces of copy: the browser validation message (`validation-message`), the live summary announced while typing (`announcement`), and the per-rule hidden status text (`rule-matched-alt` and `rule-unmatched-alt`). All of the message templates support the `{matched}` and `{total}` placeholders:
 
 ```html
 <!-- Spanish -->
 <form-validation-list
   for="contrasena"
+  announcement="{matched} de {total} criterios cumplidos"
+  rule-matched-alt="Criterio cumplido"
+  rule-unmatched-alt="Criterio pendiente"
   validation-message="Por favor, cumple todos los requisitos ({matched} de {total})"
 >
   <ul>
@@ -223,6 +236,9 @@ If you need the component to work in different languages, that’s totally doabl
 <!-- French -->
 <form-validation-list
   for="mot-de-passe"
+  announcement="{matched} critères satisfaits sur {total}"
+  rule-matched-alt="Critère satisfait"
+  rule-unmatched-alt="Critère non satisfait"
   validation-message="Veuillez satisfaire à toutes les exigences ({matched} sur {total})"
 >
   <ul>
@@ -241,8 +257,10 @@ The component uses light DOM, so if JavaScript fails, users still see the valida
 
 The component is built with accessibility in mind:
 
-- **Proper description support**: The validation list is automatically associated with the `input` via `aria-describedby`, but if the field already has `aria-describedby`, the original value is preserved.
-- **Validation changes are announced**: Each rule has `aria-live="polite"`, so when it updates, screen readers announce the change.
+- **Proper description support**: The validation list is automatically associated with the `input` via `aria-describedby`, and if the field already has `aria-describedby`, the original value is preserved.
+- **A concise announcement model**: With the default `trigger-event="input"`, the component temporarily suspends the full criteria list from `aria-describedby` while someone types and uses a single polite live region to announce progress instead.
+- **State restoration on blur**: When focus leaves the field, any pending validation timeouts are cleared and the full criteria list is restored so returning to the field announces the final criteria state.
+- **Localized rule state**: Once the field has a value, each rule gets visually hidden localized state text in the DOM, which is more robust than relying on CSS-generated content alone.
 
 If you have suggestions for other ways to improve the accessibility of this component, please [open an issue on GitHub](https://github.com/aarongustafson/form-validation-list/issues).
 
@@ -315,10 +333,12 @@ Install via `npm`:
 npm install @aarongustafson/form-validation-list
 ```
 
-Import and use:
+For most projects, import the guarded auto-definition helper:
 
 ```javascript
-import "@aarongustafson/form-validation-list";
+import "@aarongustafson/form-validation-list/define.js";
 ```
+
+If you want to control the tag name yourself, import `FormValidationListElement` and register it manually.
 
 Happy validating!
