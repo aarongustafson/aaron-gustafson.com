@@ -1,5 +1,19 @@
 [
   {
+    "id": 165,
+    "title": "Microsoft Build",
+    "date": "2026-06-02 00:09:00 +0000",
+    "location": "San Francisco, CA USA",
+    "url": "https://build.microsoft.com/"
+  },
+  {
+    "id": 164,
+    "title": "Ability Summit",
+    "date": "2026-05-19 00:09:00 +0000",
+    "location": "Redmond, WA USA",
+    "url": "https://abilitysummit.event.microsoft.com/"
+  },
+  {
     "id": 163,
     "title": "No. 48 International Conference on Collaborative Intelligence (ICCI)",
     "date": "2026-02-19 00:09:00 +0000",
