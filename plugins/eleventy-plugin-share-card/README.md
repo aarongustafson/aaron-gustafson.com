@@ -130,6 +130,7 @@ Each entry in `layers` configures one text block composited over the base image.
 | Option | Type | Required | Default | Description |
 |---|---|---|---|---|
 | `font` | `string` | ✅ | — | CSS `font-family` value (e.g. `"Source Serif 4"`). |
+| `fontFallback` | `string` | | `"serif"` | Generic CSS font family used as a fallback when the custom font is unavailable (e.g. `"sans-serif"` for sans-serif faces, `"monospace"` for monospace). |
 | `fontPath` | `string` | | — | Path to a WOFF2, WOFF, TTF, or OTF file. When provided the font is embedded as a base64 data URI so the generator works without system fonts. Relative paths are resolved from `process.cwd()`. |
 | `fontSize` | `number` | ✅ | — | Font size in pixels. |
 | `fontWeight` | `number` | | `400` | CSS font-weight (e.g. `700` for bold, `300` for light). |

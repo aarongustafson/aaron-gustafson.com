@@ -73,7 +73,7 @@ function loadFontAsDataUri(fontPath) {
 
 	try {
 		const data = fs.readFileSync(resolved);
-		const ext = path.extname(resolved).toLowerCase().replace(".", "");
+		const ext = path.extname(resolved).toLowerCase().slice(1);
 		const mime =
 			ext === "woff2" ? "font/woff2"
 			: ext === "woff" ? "font/woff"
@@ -209,7 +209,7 @@ export function createGenerator(options = {}) {
 	const preparedLayers = layers.map((layer) => {
 		const fontData = loadFontAsDataUri(layer.fontPath);
 		const ext = layer.fontPath
-			? path.extname(layer.fontPath).toLowerCase().replace(".", "")
+			? path.extname(layer.fontPath).toLowerCase().slice(1)
 			: "woff2";
 		const fontFormat =
 			ext === "woff2" ? "woff2"

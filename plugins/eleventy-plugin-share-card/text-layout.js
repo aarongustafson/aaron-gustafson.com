@@ -142,6 +142,7 @@ export function buildTextElements(layer, text, imageHeight) {
 		y,
 		fontSize,
 		font = "serif",
+		fontFallback = "serif",
 		fontWeight = 400,
 		color = "#000000",
 		maxWidth,
@@ -163,7 +164,7 @@ export function buildTextElements(layer, text, imageHeight) {
 		for (let i = lines.length - 1; i >= 0; i--) {
 			const offset = lines.length - 1 - i; // 0 for last line, 1 for second-to-last …
 			const baseline = lastBaseline - offset * lineHeight;
-			elements.unshift(buildTextEl(lines[i], x, baseline, font, fontWeight, fontSize, fill));
+		elements.unshift(buildTextEl(lines[i], x, baseline, font, fontFallback, fontWeight, fontSize, fill));
 		}
 	} else {
 		// North gravity (default): the first line's baseline is at (y + fontSize)
@@ -171,13 +172,13 @@ export function buildTextElements(layer, text, imageHeight) {
 		const firstBaseline = yValue + fontSize;
 		for (let i = 0; i < lines.length; i++) {
 			const baseline = firstBaseline + i * lineHeight;
-			elements.push(buildTextEl(lines[i], x, baseline, font, fontWeight, fontSize, fill));
+			elements.push(buildTextEl(lines[i], x, baseline, font, fontFallback, fontWeight, fontSize, fill));
 		}
 	}
 
 	return elements.join("\n");
 }
 
-function buildTextEl(text, x, y, font, weight, size, fill) {
-	return `\t<text x="${x}" y="${y.toFixed(2)}" font-family="${escapeXml(font)}, serif" font-weight="${weight}" font-size="${size}" fill="${fill}">${escapeXml(text)}</text>`;
+function buildTextEl(text, x, y, font, fontFallback, weight, size, fill) {
+	return `\t<text x="${x}" y="${y.toFixed(2)}" font-family="${escapeXml(font)}, ${escapeXml(fontFallback)}" font-weight="${weight}" font-size="${size}" fill="${fill}">${escapeXml(text)}</text>`;
 }

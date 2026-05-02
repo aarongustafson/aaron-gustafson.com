@@ -17,6 +17,7 @@ const generateShareCard = createGenerator({
 		{
 			// Post title — Source Serif 4 Bold, anchored to the bottom of the text area
 			font: "Source Serif 4",
+			fontFallback: "serif",
 			fontPath:
 				"node_modules/@fontsource/source-serif-4/files/source-serif-4-latin-700-normal.woff2",
 			fontSize: 72,
@@ -30,6 +31,7 @@ const generateShareCard = createGenerator({
 		{
 			// Hashtag tagline — Open Sans Light, anchored to the top of the text area
 			font: "Open Sans",
+			fontFallback: "sans-serif",
 			fontPath:
 				"node_modules/@fontsource/open-sans/files/open-sans-latin-300-normal.woff2",
 			fontSize: 36,
