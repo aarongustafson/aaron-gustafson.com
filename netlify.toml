@@ -11,6 +11,9 @@ publish = "dist"
 [[plugins]]
 package = "netlify-plugin-cache-folder"
 
+[[plugins]]
+package = "./plugins/share-cards-cache"
+
 #[[plugins]]
 #	package = "./plugins/persist-static-directory"
 

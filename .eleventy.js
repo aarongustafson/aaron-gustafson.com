@@ -43,8 +43,7 @@ function getEventDate(id) {
 }
 
 export default async (config) => {
-	// Cloudinary
-	config.cloudinaryCloudName = "aarongustafson";
+	// Hostname used for absolute URL construction
 	config.hostname = "https://www.aaron-gustafson.com";
 
 	function getSameOriginPath(src) {

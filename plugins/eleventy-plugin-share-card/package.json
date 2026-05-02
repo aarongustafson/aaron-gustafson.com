@@ -1,0 +1,39 @@
+{
+	"name": "eleventy-plugin-share-card",
+	"version": "1.0.0",
+	"description": "Build-time social share-card (OG image) generator for Eleventy. Composites text over a base image using sharp + SVG — no external services required.",
+	"type": "module",
+	"main": "index.js",
+	"exports": {
+		".": "./index.js"
+	},
+	"keywords": [
+		"eleventy",
+		"eleventy-plugin",
+		"11ty",
+		"og-image",
+		"share-card",
+		"open-graph",
+		"social-image",
+		"sharp"
+	],
+	"license": "MIT",
+	"peerDependencies": {
+		"@11ty/eleventy": ">=2.0.0",
+		"sharp": ">=0.33.0"
+	},
+	"peerDependenciesMeta": {
+		"@11ty/eleventy": {
+			"optional": true
+		}
+	},
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"files": [
+		"index.js",
+		"generator.js",
+		"text-layout.js",
+		"README.md"
+	]
+}
