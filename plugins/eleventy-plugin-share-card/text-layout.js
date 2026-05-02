@@ -55,10 +55,17 @@ export function estimateTextWidth(text, fontSize) {
  * @param {string} text - the raw text to wrap
  * @param {number} maxWidth - maximum line width in pixels
  * @param {number} fontSize - font size in pixels
+ * @param {number} [charWidthRatio=1] - multiplier applied to all width estimates;
+ *   increase above 1.0 for fonts that render wider than the default heuristic
+ *   (e.g. 1.1 for Open Sans, 1.15 for wider display faces)
  * @returns {string[]} array of lines (never empty — returns [''] for empty input)
  */
-export function wrapText(text, maxWidth, fontSize) {
+export function wrapText(text, maxWidth, fontSize, charWidthRatio = 1) {
 	if (!text) return [""];
+
+	// Scaled width helpers — apply charWidthRatio consistently
+	const scaledTextWidth = (str) => estimateTextWidth(str, fontSize) * charWidthRatio;
+	const scaledSpaceWidth = estimateCharWidth(" ", fontSize) * charWidthRatio;
 
 	const words = text.split(/\s+/).filter(Boolean);
 	const lines = [];
@@ -66,8 +73,8 @@ export function wrapText(text, maxWidth, fontSize) {
 	let currentWidth = 0;
 
 	for (const word of words) {
-		const wordWidth = estimateTextWidth(word, fontSize);
-		const spaceWidth = currentLine ? estimateCharWidth(" ", fontSize) : 0;
+		const wordWidth = scaledTextWidth(word);
+		const spaceWidth = currentLine ? scaledSpaceWidth : 0;
 
 		if (currentLine && currentWidth + spaceWidth + wordWidth > maxWidth) {
 			// Current line is full — flush it
@@ -76,13 +83,13 @@ export function wrapText(text, maxWidth, fontSize) {
 			if (wordWidth > maxWidth) {
 				// Hard-break words wider than the whole area
 				let remaining = word;
-				while (estimateTextWidth(remaining, fontSize) > maxWidth) {
+				while (scaledTextWidth(remaining) > maxWidth) {
 					// Binary-search the break point
 					let lo = 1;
 					let hi = remaining.length;
 					while (lo < hi) {
 						const mid = Math.ceil((lo + hi) / 2);
-						if (estimateTextWidth(remaining.slice(0, mid), fontSize) <= maxWidth) {
+						if (scaledTextWidth(remaining.slice(0, mid)) <= maxWidth) {
 							lo = mid;
 						} else {
 							hi = mid - 1;
@@ -92,7 +99,7 @@ export function wrapText(text, maxWidth, fontSize) {
 					remaining = remaining.slice(lo);
 				}
 				currentLine = remaining;
-				currentWidth = estimateTextWidth(remaining, fontSize);
+				currentWidth = scaledTextWidth(remaining);
 			} else {
 				currentLine = word;
 				currentWidth = wordWidth;
@@ -147,11 +154,12 @@ export function buildTextElements(layer, text, imageHeight) {
 		color = "#000000",
 		maxWidth,
 		lineSpacing = 0,
+		charWidthRatio = 1,
 	} = layer;
 
 	// Line height: natural 1.2× leading adjusted by lineSpacing
 	const lineHeight = fontSize * 1.2 + lineSpacing;
-	const lines = wrapText(text, maxWidth, fontSize);
+	const lines = wrapText(text, maxWidth, fontSize, charWidthRatio);
 
 	// Normalise color — accept "RRGGBB" or "#RRGGBB"
 	const fill = color.startsWith("#") ? color : `#${color}`;
