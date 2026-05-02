@@ -41,7 +41,6 @@ const generateShareCard = createGenerator({
 			y: { from: "top", value: 505 },
 			maxWidth: 760,
 			lineSpacing: -5,
-			charWidthRatio: 1.1,
 		},
 	],
 });

@@ -118,7 +118,7 @@ function buildSvg(layers, texts, { imageWidth, imageHeight }) {
 		.join("\n");
 
 	return [
-		`<svg xmlns="http://www.w3.org/2000/svg" width="${imageWidth}" height="${imageHeight}">`,
+		`<svg xmlns="http://www.w3.org/2000/svg" width="${imageWidth}" height="${imageHeight}" overflow="hidden">`,
 		fontFaces
 			? `\t<defs>\n\t\t<style>\n${fontFaces}\n\t\t</style>\n\t</defs>`
 			: "",
