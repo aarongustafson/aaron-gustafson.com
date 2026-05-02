@@ -24,8 +24,9 @@ const markdown_options = {
 //import gulp from "gulp";
 //const {series} = gulp;
 import fs from "fs";
+import path from "path";
 
-import { readFile } from "fs/promises";
+import { readFile, cp } from "fs/promises";
 const seo_conf = JSON.parse(
 	await readFile(new URL("./src/_data/seo.json", import.meta.url)),
 );
@@ -355,6 +356,18 @@ export default async (config) => {
 
 	// Upgrade Helper
 	// config.addPlugin(upgrade_helper);
+
+	// Share-card images are generated into src/static/i/share-cards/ during
+	// eleventyComputed data processing, which runs AFTER passthrough copy has
+	// already scanned the source tree. Copy them into dist manually once the
+	// full build is done so they are available in the deployed output.
+	config.on("eleventy.after", async ({ dir }) => {
+		const srcDir = path.resolve(process.cwd(), "src/static/i/share-cards");
+		if (!fs.existsSync(srcDir)) return;
+		const destDir = path.resolve(process.cwd(), dir.output, "i/share-cards");
+		fs.mkdirSync(destDir, { recursive: true });
+		await cp(srcDir, destDir, { recursive: true });
+	});
 
 	// Config
 	return {
