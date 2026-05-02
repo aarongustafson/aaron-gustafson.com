@@ -1,4 +1,41 @@
-import getShareImage from "@jlengstorf/get-share-image";
+import { createGenerator } from "../../plugins/eleventy-plugin-share-card/index.js";
+
+const generateShareCard = createGenerator({
+	baseImagePath: "./src/_images/share-card.jpg",
+	outputDir: "./src/static/i/share-cards",
+	outputUrlPath: "/i/share-cards",
+	cacheFile: "./_cache/share-cards.json",
+	imageWidth: 1280,
+	imageHeight: 669,
+	layers: [
+		{
+			font: "Source Serif 4",
+			fontFallback: "serif",
+			fontPath:
+				"node_modules/@fontsource/source-serif-4/files/source-serif-4-latin-700-normal.woff2",
+			fontSize: 72,
+			fontWeight: 700,
+			color: "#2C2825",
+			x: 480,
+			y: { from: "bottom", value: 205 },
+			maxWidth: 760,
+			lineSpacing: -18,
+		},
+		{
+			font: "Open Sans",
+			fontFallback: "sans-serif",
+			fontPath:
+				"node_modules/@fontsource/open-sans/files/open-sans-latin-300-normal.woff2",
+			fontSize: 36,
+			fontWeight: 300,
+			color: "#505050",
+			x: 480,
+			y: { from: "top", value: 505 },
+			maxWidth: 760,
+			lineSpacing: -5,
+		},
+	],
+});
 
 function tagsToString(tags) {
 	var non_alpha_numeric = /[^a-zA-z0-9]/g;
@@ -13,30 +50,11 @@ export default {
 	layout: "layouts/tank.njk",
 	permalink: "/tanks/{{ page.fileSlug }}/",
 	eleventyComputed: {
-		image: (data) => {
-			return getShareImage({
-				cloudName: "aarongustafson",
-				imagePublicID: "share-card",
-				tagline: tagsToString(data.tags),
-				taglineColor: "505050",
-				taglineFont: "Open Sans",
-				// light, -5 line spacing
-				taglineExtraConfig: "_light_line_spacing_-5",
-				taglineFontSize: 36,
-				taglineGravity: "north_west",
-				taglineLeftOffset: 480,
-				taglineTopOffset: 505,
-				textAreaWidth: 760,
-				title: data.title,
-				titleFont: "Source Serif Pro",
-				titleFontSize: 72,
-				titleGravity: "south_west",
-				// 700 weight, -18 line spacing
-				titleExtraConfig: "_700_line_spacing_-18",
-				titleLeftOffset: 480,
-				titleBottomOffset: 205,
-				textColor: "2C2825",
-			});
+		image: async (data) => {
+			return generateShareCard(
+				[data.title, tagsToString(data.tags)],
+				data.page.fileSlug,
+			);
 		},
 	},
 };
