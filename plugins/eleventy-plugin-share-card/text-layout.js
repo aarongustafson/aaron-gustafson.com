@@ -162,6 +162,11 @@ export function buildTextElements(layer, text, imageHeight) {
 		// Measure once for your font by comparing estimated vs actual pixel widths;
 		// a value of 1.0 (default) means the estimator is already accurate.
 		actualWidthFactor = 1,
+		// Unconditional horizontal scale applied to every line in this layer.
+		// Use to narrow a font that renders wider than the target design (e.g. 0.93
+		// narrows all glyphs by 7%).  Applied in addition to any constrainToWidth
+		// compression, and independent of line width.  1.0 means no change.
+		scaleX: layerScaleX = 1,
 	} = layer;
 
 	// Line height: natural 1.2× leading adjusted by lineSpacing
@@ -178,11 +183,15 @@ export function buildTextElements(layer, text, imageHeight) {
 	// actualWidthFactor corrects for the known gap between the heuristic estimator
 	// and the actual font shaping: scaleX = maxWidth / (estimatedWidth × factor).
 	const getScaleX = (line) => {
-		if (!constrainToWidth || !maxWidth || !actualWidthFactor) return 1;
-		const est = estimateTextWidth(line, fontSize) * charWidthRatio;
-		if (est < maxWidth * 0.7) return 1;
-		const scaleX = maxWidth / (est * actualWidthFactor);
-		return Math.min(1, scaleX);
+		let scaleX = layerScaleX;
+		if (constrainToWidth && maxWidth && actualWidthFactor) {
+			const est = estimateTextWidth(line, fontSize) * charWidthRatio;
+			if (est >= maxWidth * 0.7) {
+				const overflowScale = maxWidth / (est * actualWidthFactor);
+				scaleX = Math.min(scaleX, overflowScale);
+			}
+		}
+		return scaleX;
 	};
 
 	const elements = [];

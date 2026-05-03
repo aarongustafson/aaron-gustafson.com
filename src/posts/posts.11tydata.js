@@ -27,6 +27,9 @@ const generateShareCard = createGenerator({
 			y: { from: "bottom", value: 205 },
 			maxWidth: 760,
 			lineSpacing: -18,
+			// Source Serif Pro renders ~7% wider than the original Cloudinary "Source Serif Pro";
+			// narrow all glyphs uniformly to match production appearance.
+			scaleX: 0.93,
 		},
 		{
 			// Hashtag tagline — Open Sans Light, anchored to the top of the text area
