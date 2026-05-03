@@ -11,27 +11,28 @@
   {%- elif type == "press" -%}🎤
   {%- endif -%}
 {% endset -%}
+{% set title_text %}{% if prepend_title and icon %}{{ icon }} {% endif %}{{ post.data.title | striptags }}{% endset %}
+{% set feed_url = post_url %}
+{% if type != "post" and type != "link" and post.data.url %}
+  {% set feed_url = post.data.url %}
+{% endif %}
 {
-  "id": "{{ post_url }}",
-  "title": "{% if prepend_title and icon %}{{ icon }} {% endif %}{{ post.data.title | replace('"', '\\"') | striptags | safe }}",
+  "id": {{ post_url | dump | safe }},
+  "title": {{ title_text | dump | safe }},
   
   {% if summary %}
-  "summary": "{{ summary | markdownify | trim_newlines | replace('\\', '\\\\') | replace('"', '\\"') | safe }}",
+  "summary": {{ (summary | markdownify | trim_newlines) | dump | safe }},
   {% endif %}
 
-  "content_html": "{{ post.templateContent | replace('\\', '\\\\') | replace('\t', '\\t') | replace('\n', '\\n') | replace('\r', '\\r') | replace('"', '\\"') | safe }}",
+  "content_html": {{ post.templateContent | dump | safe }},
   
   {% if post.data.twitter_text %}
-  "social_text": "{{ post.data.twitter_text | replace('"', '\\"') | safe }}",
+  "social_text": {{ post.data.twitter_text | dump | safe }},
   {% endif %}
   
-  {% if type == "post" or type == "link" %}
-    "url": "{{ post_url }}",
-  {% else %}
-    "url": "{{ post.data.url }}",
-  {% endif %}
+  "url": {{ feed_url | dump | safe }},
   {% if post.data.ref_url %}
-    "external_url": "{{ post.data.ref_url }}",
+    "external_url": {{ post.data.ref_url | dump | safe }},
   {% endif %}
   
   {% if post.data.tags %}
@@ -39,10 +40,10 @@
   {% endif %}
   
   {% if post.data.hero %}
-    "image": "{{ post.data.hero.src | absoluteUrl(site.url) }}",
+    "image": {{ (post.data.hero.src | absoluteUrl(site.url)) | dump | safe }},
   {% elif post.data.og_image %}
-    "image": "{{ post.data.og_image }}",
+    "image": {{ post.data.og_image | dump | safe }},
   {% endif %}
   
-  "date_published": "{{ post.date | dateToRfc3339 }}"
+  "date_published": {{ (post.date | dateToRfc3339) | dump | safe }}
 }
