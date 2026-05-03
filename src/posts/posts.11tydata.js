@@ -1,55 +1,7 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-import { createGenerator } from "@aarongustafson/eleventy-plugin-share-card";
-
-// Build-time share-card generator — composites text onto share-card.jpg locally.
-// Images are written to src/static/i/share-cards/ and cached in _cache/share-cards.json
-// so only posts whose title or tags have changed are regenerated.
-const generateShareCard = createGenerator({
-  baseImagePath: "./src/_images/share-card.jpg",
-  outputDir: "./src/static/i/share-cards",
-  outputUrlPath: "/i/share-cards",
-  cacheFile: "./_cache/share-cards.json",
-  imageWidth: 1280,
-  imageHeight: 669,
-  layers: [
-    {
-      // Post title — Source Serif Pro Bold, anchored to the bottom of the text area
-      font: "Source Serif Pro",
-      fontFallback: "serif",
-      fontPath:
-        "node_modules/@fontsource/source-serif-pro/files/source-serif-pro-latin-700-normal.woff2",
-      fontSize: 72,
-      fontWeight: 700,
-      color: "#2C2825",
-      x: 480,
-      y: { from: "bottom", value: 205 },
-      maxWidth: 760,
-      lineSpacing: -18,
-      scaleX: 0.9,
-    },
-    {
-      // Hashtag tagline — Open Sans Light, anchored to the top of the text area
-      font: "Open Sans",
-      fontFallback: "sans-serif",
-      fontPath:
-        "node_modules/@fontsource/open-sans/files/open-sans-latin-300-normal.woff2",
-      fontSize: 36,
-      fontWeight: 300,
-      color: "#5b5b5b",
-      x: 480,
-      y: { from: "top", value: 505 },
-      maxWidth: 760,
-      lineSpacing: -5,
-      // constrainToWidth: use SVG transform scale (not textLength, which librsvg ignores)
-      // actualWidthFactor: Open Sans 300 at 36px renders ~12% wider than the heuristic
-      // estimate, so lines near maxWidth get a horizontal scale transform to fit.
-      constrainToWidth: true,
-      actualWidthFactor: 1.15,
-    },
-  ],
-});
+import { generateShareCard } from "../_data/generate-share-cards.js";
 
 // Markdown
 import markdownIt from "markdown-it";

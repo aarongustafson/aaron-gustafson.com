@@ -45,11 +45,11 @@
 		"gulp-imagemin": "gulp-imagemin 3.x requires ESM and will require major work to overhaul"
 	},
 	"dependencies": {
-		"@aarongustafson/eleventy-plugin-share-card": "^1.0.0",
 		"@11ty/eleventy": "^3.1.2",
 		"@11ty/eleventy-fetch": "^5.1.0",
 		"@11ty/eleventy-plugin-rss": "^2.0.4",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.1",
+		"@aarongustafson/eleventy-plugin-share-card": "^1.0.2",
 		"@fontsource/open-sans": "^5.2.7",
 		"@fontsource/source-serif-4": "^5.2.9",
 		"@fontsource/source-serif-pro": "^5.2.5",
