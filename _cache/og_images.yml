@@ -110,7 +110,7 @@ https://demosthenes.info/blog/1029/Automatic-Text-Contrast-with-CSS-Blend-Modes:
 https://admixweb.com/the-javascript-framework-bangwagonism/: "https://www.admixweb.com/wp-content/uploads/2021/09/admixweb.png"
 https://timkadlec.com/2015/05/choosing-performance/: true
 https://daverupert.com/2015/05/desktop-conundrum/: "https://daverupert.com/images/global/newshammericon.png"
-https://www.baldurbjarnason.com/notes/media-websites-vs-facebook/: "https://www.baldurbjarnason.com//icon.png"
+https://www.baldurbjarnason.com/notes/media-websites-vs-facebook/: "https://www.baldurbjarnason.com/icon.png"
 https://www.engadget.com/2015/05/18/microsoft-vc3/: "https://s.yimg.com/uu/api/res/1.2/UwZJcW6UlPiJwNZD4ZYhKA--~B/aD0zNzg7dz02MzA7YXBwaWQ9eXRhY2h5b24-/https://o.aolcdn.com/hss/storage/midas/17a6832faffff3c4a4830f7493aab899/201323288/google-microsoft-vulnerability-2015-01-02-01.jpg"
 https://blogs.bing.com/webmaster/2015/05/14/our-approach-to-mobile-friendly-search/: "https://blogs.bing.com/CMSPages/GetFile.aspx?guid=13eaf0f5-2947-4734-88e1-78b786ee85bd"
 https://blog.reybango.com/2015/05/15/woah-i-can-test-edge-ie-on-a-mac-linux/: "https://s0.wp.com/i/blank.jpg"
@@ -631,7 +631,7 @@ https://www.theatlantic.com/technology/archive/2018/10/agents-of-automation/5687
 https://www.wired.com/2014/10/all-technology-is-assistive/: "https://media.wired.com/photos/5941ee63aae1c722e8a118e9/191:100/w_1280,c_limit/1yRvWHC88tupF7_FvGWSChg-7.png"
 https://medium.com/@amyalexandraleak/should-you-use-alt-text-or-a-caption-48311e259ded: "https://miro.medium.com/max/1029/1*e3MP61Ndn5H7LSkB6yx1zQ.png"
 https://yourstory.com/2018/10/even-need-app-best-user-experience-asks-ajay-datta/: "https://images.yourstory.com/cs/wordpress/2018/10/Ajay-Datta-1-TS2018.jpg "
-https://solar.lowtechmagazine.com/2018/09/how-to-build-a-lowtech-website/: "https://solar.lowtechmagazine.com//dithers/sps_close.png"
+https://solar.lowtechmagazine.com/2018/09/how-to-build-a-lowtech-website/: "https://solar.lowtechmagazine.com/dithers/sps_close.png"
 https://meowni.ca/font-style-matcher/: "https://meowni.ca/font-style-matcher/./images/icon-48x48.png"
 https://addyosmani.com/blog/performance-budgets/: "https://addyosmani.com/assets/images/perf-budget-metrics.png"
 https://daverupert.com/2018/10/hard-costs-of-third-party-scripts/: "https://daverupert.com/images/global/newshammericon.png"
@@ -807,11 +807,11 @@ https://jeffbridgforth.com/thank-you-to-those-who-helped-me-to-be-the-css-develo
 https://www.publishnews.com.br/materias/2023/12/18/acessibilidade-o-verdadeiro-diferencial-dos-livros-digitais: "https://www.publishnews.com.br/estaticos/uploads/2023/12/NUnd53uTzgmyUSR0kQga1npwoiqlCK29dSDnFDRcdah5OQypkRpt8bYhzbjWxmDGF3E4PcPUAPnV4Mb4.jpg"
 https://alvaromontoro.com/blog/68048/creating-progressive-enhanced-codepen-links-and-embeds: "https://alvaromontoro.com/images/blog/prog-title.webp"
 https://medium.com/@neerventure/purepwa-a-radical-u-turn-in-web-development-a386c0dc092e: "https://miro.medium.com/v2/resize:fit:1200/1*ZEDw2ropDtOTGm_RUIMJlg.png"
-https://daverupert.com/2024/01/focus-visible-love/: "false"
-https://developer.apple.com/documentation/safari-release-notes/safari-17_4-release-notes: "false"
-https://joshcollinsworth.com/blog/devaluing-frontend: "false"
-https://www.eff.org/deeplinks/2023/12/no-robotstxt-how-ask-chatgpt-and-google-bard-not-use-your-website-training: "false"
-https://blog.stephaniestimac.com/posts/2024/01/css-field-sizing/: "false"
+https://daverupert.com/2024/01/focus-visible-love/: true
+https://developer.apple.com/documentation/safari-release-notes/safari-17_4-release-notes: true
+https://joshcollinsworth.com/blog/devaluing-frontend: true
+https://www.eff.org/deeplinks/2023/12/no-robotstxt-how-ask-chatgpt-and-google-bard-not-use-your-website-training: true
+https://blog.stephaniestimac.com/posts/2024/01/css-field-sizing/: true
 https://blogs.microsoft.com/accessibility/accessibility-training-at-microsoft/: true
 https://www.youtube.com/watch?v=6zcGGdO4e98: true
 https://dev.to/schalkneethling/why-i-care-deeply-about-web-accessibility-and-you-should-too-274a: true
@@ -832,3 +832,19 @@ https://blogs.microsoft.com/accessibility/forrester-research-2025/: "https://blo
 https://cydstumpel.nl/why-we-teach-our-students-progressive-enhancement/: "https://cydstumpel.nl/wp-content/uploads/og-images/og-work-1900.jpg?v=1772487917"
 https://apnews.com/article/nfl-blind-fans-super-bowl-6daf12a08127c46c23dab6100a659681: "https://dims.apnews.com/dims4/default/9b439cc/2147483647/strip/true/crop/5333x3554+0+1/resize/980x653!/quality/90/?url=https%253A%252F%252Fassets.apnews.com%252F1b%252Fe5%252F28e0bd88c1be654d380ee1c3b2f2%252F9a7b2e31c9464fa6a86eb6d04b0a3266"
 https://www.linkedin.com/posts/derekfeatherstone_accessibility-disability-activity-7434648295420870656-mH3o: "https://static.licdn.com/aero-v1/sc/h/c45fy346jw096z9pbphyyhdz7"
+https://www.mnot.net/blog/2026/02/13/no: "https://mnot.net/blog/image/wait_here.jpeg"
+https://blogs.windows.com/msedgedev/2026/03/05/making-keyboard-navigation-effortless/: true
+https://nerdy.dev/nice-select: "https://nerdy.dev/media/nice-selects.jpg"
+https://developer.mozilla.org/en-US/blog/mdn-front-end-deep-dive/: true
+https://piccalil.li/blog/accessible-faux-nested-interactive-controls/: "https://piccalil.b-cdn.net/api/og-image?slug=accessible-faux-nested-interactive-controls/"
+https://zeroheight.com/blog/design-systems-cant-automate-away-all-of-your-accessibility-considerations/: "https://zh-marketing-wordpress-uploads.s3.amazonaws.com/wp-content/uploads/2025/11/blog-feature-computer-yellow.png"
+https://gerireid.com/blog/ai-is-accidently-making-documentation-accessible/: "https://gerireid.com/images/open-graph.png"
+https://www.deque.com/axe-con/sessions/accessibility-in-the-end-of-deterministic-design-again/: true
+https://conesible.de/wab/: true
+https://paulmakeswebsites.com/writing/shadcn-radio-button/: true
+https://webaim.org/projects/million/: true
+https://codepen.github.io/slideVars/: true
+https://www.linkedin.com/posts/plasticmind_designsystem-ai-civictech-share-7420295564430450688-0RM5/: "https://static.licdn.com/aero-v1/sc/h/c45fy346jw096z9pbphyyhdz7"
+https://www.anildash.com/2026/03/27/endgame-open-web/: "https://www.anildash.com/images/tunnel.jpg"
+https://www.theguardian.com/us-news/ng-interactive/2026/jan/18/tech-ai-bubble-burst-reverse-centaur: true
+https://shadow-dom-css.adobe.com/: true
