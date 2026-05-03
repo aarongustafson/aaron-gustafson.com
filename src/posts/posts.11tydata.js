@@ -41,7 +41,11 @@ const generateShareCard = createGenerator({
 			y: { from: "top", value: 505 },
 			maxWidth: 760,
 			lineSpacing: -5,
+			// constrainToWidth: use SVG transform scale (not textLength, which librsvg ignores)
+			// actualWidthFactor: Open Sans 300 at 36px renders ~12% wider than the heuristic
+			// estimate, so lines near maxWidth get a horizontal scale transform to fit.
 			constrainToWidth: true,
+			actualWidthFactor: 1.15,
 		},
 	],
 });

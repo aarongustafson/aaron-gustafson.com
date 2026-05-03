@@ -156,6 +156,12 @@ export function buildTextElements(layer, text, imageHeight) {
 		lineSpacing = 0,
 		charWidthRatio = 1,
 		constrainToWidth = false,
+		// Ratio of actual rendered width to the heuristic-estimated width for this
+		// font/size combination.  Used only when constrainToWidth is true to compute
+		// the SVG horizontal scale needed to fit a wide line inside maxWidth.
+		// Measure once for your font by comparing estimated vs actual pixel widths;
+		// a value of 1.0 (default) means the estimator is already accurate.
+		actualWidthFactor = 1,
 	} = layer;
 
 	// Line height: natural 1.2× leading adjusted by lineSpacing
@@ -166,15 +172,17 @@ export function buildTextElements(layer, text, imageHeight) {
 	const fill = color.startsWith("#") ? color : `#${color}`;
 
 	// When constrainToWidth is true, lines whose estimated width is ≥ 70% of
-	// maxWidth get a SVG textLength attribute so librsvg renders them at exactly
-	// the estimated width.  This prevents the ~5-6% rendering-width discrepancy
-	// between the heuristic estimator and the actual font shaping from causing
-	// text to overflow the text area.  The imperceptible glyph compression is
-	// far preferable to visible overflow or incorrect line-breaks.
-	const getTextLength = (line) => {
-		if (!constrainToWidth || !maxWidth) return null;
+	// maxWidth get a horizontal SVG scale transform to fit them inside maxWidth.
+	// This uses transform="translate scale translate" rather than SVG textLength
+	// because librsvg (used by sharp) ignores the textLength attribute.
+	// actualWidthFactor corrects for the known gap between the heuristic estimator
+	// and the actual font shaping: scaleX = maxWidth / (estimatedWidth × factor).
+	const getScaleX = (line) => {
+		if (!constrainToWidth || !maxWidth || !actualWidthFactor) return 1;
 		const est = estimateTextWidth(line, fontSize) * charWidthRatio;
-		return est >= maxWidth * 0.7 ? est : null;
+		if (est < maxWidth * 0.7) return 1;
+		const scaleX = maxWidth / (est * actualWidthFactor);
+		return Math.min(1, scaleX);
 	};
 
 	const elements = [];
@@ -185,7 +193,7 @@ export function buildTextElements(layer, text, imageHeight) {
 		for (let i = lines.length - 1; i >= 0; i--) {
 			const offset = lines.length - 1 - i; // 0 for last line, 1 for second-to-last …
 			const baseline = lastBaseline - offset * lineHeight;
-			elements.unshift(buildTextEl(lines[i], x, baseline, font, fontFallback, fontWeight, fontSize, fill, getTextLength(lines[i])));
+			elements.unshift(buildTextEl(lines[i], x, baseline, font, fontFallback, fontWeight, fontSize, fill, getScaleX(lines[i])));
 		}
 	} else {
 		// North gravity (default): the first line's baseline is at (y + fontSize)
@@ -193,16 +201,19 @@ export function buildTextElements(layer, text, imageHeight) {
 		const firstBaseline = yValue + fontSize;
 		for (let i = 0; i < lines.length; i++) {
 			const baseline = firstBaseline + i * lineHeight;
-			elements.push(buildTextEl(lines[i], x, baseline, font, fontFallback, fontWeight, fontSize, fill, getTextLength(lines[i])));
+			elements.push(buildTextEl(lines[i], x, baseline, font, fontFallback, fontWeight, fontSize, fill, getScaleX(lines[i])));
 		}
 	}
 
 	return elements.join("\n");
 }
 
-function buildTextEl(text, x, y, font, fontFallback, weight, size, fill, textLength = null) {
-	const textLengthAttr = textLength !== null
-		? ` textLength="${textLength.toFixed(1)}" lengthAdjust="spacingAndGlyphs"`
-		: "";
-	return `\t<text x="${x}" y="${y.toFixed(2)}"${textLengthAttr} font-family="${escapeXml(font)}, ${escapeXml(fontFallback)}" font-weight="${weight}" font-size="${size}" fill="${fill}">${escapeXml(text)}</text>`;
+function buildTextEl(text, x, y, font, fontFallback, weight, size, fill, scaleX = 1) {
+	const inner = `<text x="${x}" y="${y.toFixed(2)}" font-family="${escapeXml(font)}, ${escapeXml(fontFallback)}" font-weight="${weight}" font-size="${size}" fill="${fill}">${escapeXml(text)}</text>`;
+	if (scaleX < 1) {
+		// Wrap in a transform group that compresses the text horizontally around
+		// its left edge (x) so it fits inside maxWidth.
+		return `\t<g transform="translate(${x},0) scale(${scaleX.toFixed(4)},1) translate(-${x},0)">\n\t\t${inner}\n\t</g>`;
+	}
+	return `\t${inner}`;
 }
