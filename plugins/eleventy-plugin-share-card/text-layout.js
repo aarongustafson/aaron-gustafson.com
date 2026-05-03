@@ -166,7 +166,7 @@ export function buildTextElements(layer, text, imageHeight) {
 		// Use to narrow a font that renders wider than the target design (e.g. 0.93
 		// narrows all glyphs by 7%).  Applied in addition to any constrainToWidth
 		// compression, and independent of line width.  1.0 means no change.
-		scaleX: layerScaleX = 1,
+		scaleX: baseScaleX = 1,
 	} = layer;
 
 	// Line height: natural 1.2× leading adjusted by lineSpacing
@@ -183,7 +183,7 @@ export function buildTextElements(layer, text, imageHeight) {
 	// actualWidthFactor corrects for the known gap between the heuristic estimator
 	// and the actual font shaping: scaleX = maxWidth / (estimatedWidth × factor).
 	const getScaleX = (line) => {
-		let scaleX = layerScaleX;
+		let scaleX = baseScaleX;
 		if (constrainToWidth && maxWidth && actualWidthFactor) {
 			const est = estimateTextWidth(line, fontSize) * charWidthRatio;
 			if (est >= maxWidth * 0.7) {
