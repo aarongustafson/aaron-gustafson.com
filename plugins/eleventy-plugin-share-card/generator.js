@@ -134,19 +134,37 @@ function buildSvg(layers, texts, { imageWidth, imageHeight }) {
 // ---------------------------------------------------------------------------
 
 /**
- * Compute a short SHA-256 hex digest from the combined text strings.
- * Used to detect when the text for a given slug has changed so the image
- * can be regenerated.
+ * Compute a short SHA-256 hex digest from the combined text strings plus a
+ * config salt.  The config salt captures the layer settings (font, size,
+ * positions, options) so that any change to the generator configuration
+ * invalidates the cache and forces images to be regenerated — even when the
+ * source text itself hasn't changed.
  *
  * @param {string[]} texts
+ * @param {string}   configSalt - stable string representing the current layer config
  * @returns {string} first 12 hex chars of the SHA-256 digest
  */
-function contentHash(texts) {
+function contentHash(texts, configSalt = "") {
 	return crypto
 		.createHash("sha256")
-		.update(texts.join("\x00"))
+		.update(texts.join("\x00") + "\x01" + configSalt)
 		.digest("hex")
 		.slice(0, 12);
+}
+
+/**
+ * Produce a stable string that summarises the layer configuration.
+ * Changes to any layer property (font, size, positions, flags …) will
+ * produce a different salt, causing all cached images to be regenerated.
+ *
+ * We deliberately exclude `fontData` (the base64 blob) to keep this fast.
+ *
+ * @param {object[]} layers
+ * @returns {string}
+ */
+function layerConfigSalt(layers) {
+	const summary = layers.map(({ fontData: _fd, ...rest }) => rest);
+	return JSON.stringify(summary);
 }
 
 // ---------------------------------------------------------------------------
@@ -220,6 +238,11 @@ export function createGenerator(options = {}) {
 		return { ...layer, fontData, fontFormat };
 	});
 
+	// Stable salt derived from layer configuration.  Any change to the layer
+	// options (font, size, positions, flags …) will produce a different salt
+	// so previously-cached images are automatically regenerated.
+	const configSalt = layerConfigSalt(preparedLayers);
+
 	// Ensure output directory exists
 	fs.mkdirSync(path.resolve(process.cwd(), outputDir), { recursive: true });
 
@@ -236,7 +259,7 @@ export function createGenerator(options = {}) {
 			return "";
 		}
 
-		const hash = contentHash(texts);
+		const hash = contentHash(texts, configSalt);
 		const filename = `${slug}.jpg`;
 		const outputPath = path.resolve(process.cwd(), outputDir, filename);
 		const publicUrl = `${outputUrlPath.replace(/\/$/, "")}/${filename}`;

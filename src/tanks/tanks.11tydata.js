@@ -9,10 +9,10 @@ const generateShareCard = createGenerator({
 	imageHeight: 669,
 	layers: [
 		{
-			font: "Source Serif 4",
+			font: "Source Serif Pro",
 			fontFallback: "serif",
 			fontPath:
-				"node_modules/@fontsource/source-serif-4/files/source-serif-4-latin-700-normal.woff2",
+				"node_modules/@fontsource/source-serif-pro/files/source-serif-pro-latin-700-normal.woff2",
 			fontSize: 72,
 			fontWeight: 700,
 			color: "#2C2825",

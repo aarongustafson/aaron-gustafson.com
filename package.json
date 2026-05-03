@@ -51,6 +51,7 @@
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.1",
 		"@fontsource/open-sans": "^5.2.7",
 		"@fontsource/source-serif-4": "^5.2.9",
+		"@fontsource/source-serif-pro": "^5.2.5",
 		"@manustays/eleventy-plugin-codepen-iframe": "^2.0.1",
 		"@octokit/rest": "^22.0.1",
 		"concurrently": "^9.1.2",
