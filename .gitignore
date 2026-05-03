@@ -29,6 +29,3 @@ todo
 
 # GitHub Actions syndication cache
 .github/cache/*.json
-
-# Generated share-card images (rebuilt on every deploy; keep the directory itself)
-src/static/i/share-cards/*.jpg
