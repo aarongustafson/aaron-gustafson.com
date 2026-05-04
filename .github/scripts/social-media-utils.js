@@ -448,28 +448,27 @@ class SocialMediaAPI {
 				});
 			} catch (error) {
 				// For fetch errors, try to get response data
-				let errorDetails = error.message;
-				const responseData = error.bufferData || null;
+				let details = error.message;
+				let responseData = error.bufferData || null;
 
 				try {
 					if (!responseData && error.response) {
-						const parsedResponseData = await error.response.json();
-						errorDetails = parsedResponseData;
-						error.bufferData = parsedResponseData;
-					} else if (responseData) {
-						errorDetails = responseData;
+						responseData = await error.response.json();
+						error.bufferData = responseData;
 					}
 				} catch (e) {
 					// Ignore JSON parse errors
 				}
 
-				const duplicateDetected =
-					this.isBufferDuplicateError(
-						error.message,
-						typeof errorDetails === "string" ? errorDetails : null,
-						responseData?.message,
-						responseData?.error,
-					);
+				if (responseData) {
+					details = responseData;
+				}
+
+				const duplicateDetected = this.isBufferDuplicateError(
+					error.message,
+					responseData?.message,
+					responseData?.error,
+				);
 
 				if (duplicateDetected) {
 					console.log(
@@ -497,7 +496,7 @@ class SocialMediaAPI {
 				results.push({
 					error: error.message,
 					profileId,
-					details: errorDetails,
+					details,
 				});
 			}
 		}
