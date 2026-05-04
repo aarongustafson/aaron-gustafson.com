@@ -1,7 +1,6 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-import { generateShareCard } from "../_data/generate-share-cards.js";
 
 // Markdown
 import markdownIt from "markdown-it";
@@ -108,12 +107,12 @@ export default {
     hue: (data) => {
       return tagsToColor(data.tags);
     },
-    image: async (data) => {
+    image: async function (data) {
       if (data.hero) {
         return `${data.site.url}${data.hero.src}`;
       }
       // Generate (or return cached) share-card image locally — no Cloudinary needed.
-      return generateShareCard(
+      return this.generateShareCard(
         [data.title, tagsToString(data.tags)],
         data.page.fileSlug,
       );

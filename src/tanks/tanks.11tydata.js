@@ -1,4 +1,3 @@
-import { generateShareCard } from "../_data/generate-share-cards.js";
 
 function tagsToString(tags) {
   var non_alpha_numeric = /[^a-zA-z0-9]/g;
@@ -13,8 +12,8 @@ export default {
   layout: "layouts/tank.njk",
   permalink: "/tanks/{{ page.fileSlug }}/",
   eleventyComputed: {
-    image: async (data) => {
-      return generateShareCard(
+    image: async function (data) {
+      return this.generateShareCard(
         [data.title, tagsToString(data.tags)],
         data.page.fileSlug,
       );
