@@ -312,6 +312,12 @@ class SocialMediaAPI {
 		);
 	}
 
+	isBufferDuplicateError(...messages) {
+		return messages.some((message) =>
+			this.isBufferDuplicateErrorMessage(message),
+		);
+	}
+
 	// NOTE: LinkedIn and Pinterest now use IFTTT webhooks instead of direct API calls
 	// The methods below are kept for reference but are not actively used
 	// To use direct API integration, update syndicate-posts.js and syndicate-links.js
@@ -429,7 +435,11 @@ class SocialMediaAPI {
 
 				// Check for errors in the response
 				if (!response.ok || !data.success) {
-					throw new Error(data.message || `HTTP ${response.status}`);
+					const error = new Error(
+						data.message || data.error || `HTTP ${response.status}`,
+					);
+					error.bufferData = data;
+					throw error;
 				}
 
 				results.push({
@@ -439,34 +449,26 @@ class SocialMediaAPI {
 			} catch (error) {
 				// For fetch errors, try to get response data
 				let errorDetails = error.message;
-				let responseData = null;
+				const responseData = error.bufferData || null;
 
 				try {
-					if (error.response) {
-						responseData = await error.response.json();
+					if (!responseData && error.response) {
+						const parsedResponseData = await error.response.json();
+						errorDetails = parsedResponseData;
+						error.bufferData = parsedResponseData;
+					} else if (responseData) {
 						errorDetails = responseData;
 					}
 				} catch (e) {
 					// Ignore JSON parse errors
 				}
 
-				console.log(
-					`Failed to post to Buffer profile ${profileId}:`,
-					error.message,
-				);
-				if (responseData) {
-					console.log(
-						"Buffer API error details:",
-						JSON.stringify(responseData, null, 2),
-					);
-				}
 				const duplicateDetected =
-					this.isBufferDuplicateErrorMessage(error.message) ||
-					this.isBufferDuplicateErrorMessage(
+					this.isBufferDuplicateError(
+						error.message,
 						typeof errorDetails === "string" ? errorDetails : null,
-					) ||
-					this.isBufferDuplicateErrorMessage(
-						responseData?.message || responseData?.error,
+						responseData?.message,
+						responseData?.error,
 					);
 
 				if (duplicateDetected) {
@@ -479,6 +481,17 @@ class SocialMediaAPI {
 						success: true,
 					});
 					continue;
+				}
+
+				console.log(
+					`Failed to post to Buffer profile ${profileId}:`,
+					error.message,
+				);
+				if (responseData) {
+					console.log(
+						"Buffer API error details:",
+						JSON.stringify(responseData, null, 2),
+					);
 				}
 
 				results.push({
