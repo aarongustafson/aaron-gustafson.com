@@ -448,7 +448,7 @@ class SocialMediaAPI {
 				});
 			} catch (error) {
 				// For fetch errors, try to get response data
-				let details = error.message;
+				let errorDetails = error.message;
 				let responseData = error.bufferData || null;
 
 				try {
@@ -461,7 +461,7 @@ class SocialMediaAPI {
 				}
 
 				if (responseData) {
-					details = responseData;
+					errorDetails = responseData;
 				}
 
 				const duplicateDetected = this.isBufferDuplicateError(
@@ -496,7 +496,7 @@ class SocialMediaAPI {
 				results.push({
 					error: error.message,
 					profileId,
-					details,
+					details: errorDetails,
 				});
 			}
 		}
