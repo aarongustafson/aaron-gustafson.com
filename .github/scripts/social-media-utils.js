@@ -3,6 +3,13 @@ import { htmlToText } from "html-to-text";
 import fetch from "node-fetch";
 import path from "path";
 
+const BUFFER_DUPLICATE_ERROR_PATTERNS = [
+	/posted that one recently/i,
+	/not able to post the same thing again so soon/i,
+	/\balready (?:queued|scheduled|posted)\b/i,
+	/\bduplicate (?:update|post)\b/i,
+];
+
 class ContentProcessor {
 	static stripHtml(content) {
 		return htmlToText(content, {
@@ -295,6 +302,22 @@ class SocialMediaAPI {
 		}
 	}
 
+	isBufferDuplicateErrorMessage(message) {
+		if (typeof message !== "string") {
+			return false;
+		}
+
+		return BUFFER_DUPLICATE_ERROR_PATTERNS.some((pattern) =>
+			pattern.test(message),
+		);
+	}
+
+	isBufferDuplicateError(...messages) {
+		return messages.some((message) =>
+			this.isBufferDuplicateErrorMessage(message),
+		);
+	}
+
 	// NOTE: LinkedIn and Pinterest now use IFTTT webhooks instead of direct API calls
 	// The methods below are kept for reference but are not actively used
 	// To use direct API integration, update syndicate-posts.js and syndicate-links.js
@@ -412,7 +435,11 @@ class SocialMediaAPI {
 
 				// Check for errors in the response
 				if (!response.ok || !data.success) {
-					throw new Error(data.message || `HTTP ${response.status}`);
+					const error = new Error(
+						data.message || data.error || `HTTP ${response.status}`,
+					);
+					error.bufferData = data;
+					throw error;
 				}
 
 				results.push({
@@ -422,15 +449,37 @@ class SocialMediaAPI {
 			} catch (error) {
 				// For fetch errors, try to get response data
 				let errorDetails = error.message;
-				let responseData = null;
+				let responseData = error.bufferData || null;
 
 				try {
-					if (error.response) {
+					if (!responseData && error.response) {
 						responseData = await error.response.json();
-						errorDetails = responseData;
+						error.bufferData = responseData;
 					}
 				} catch (e) {
 					// Ignore JSON parse errors
+				}
+
+				if (responseData) {
+					errorDetails = responseData;
+				}
+
+				const duplicateDetected = this.isBufferDuplicateError(
+					error.message,
+					responseData?.message,
+					responseData?.error,
+				);
+
+				if (duplicateDetected) {
+					console.log(
+						`ℹ️ Buffer reports profile ${profileId} already has this update queued or posted; treating as success to avoid duplicate retries`,
+					);
+					results.push({
+						profileId,
+						duplicateDetected: true,
+						success: true,
+					});
+					continue;
 				}
 
 				console.log(
@@ -442,11 +491,8 @@ class SocialMediaAPI {
 						"Buffer API error details:",
 						JSON.stringify(responseData, null, 2),
 					);
-					console.log(
-						"Post data that was rejected:",
-						JSON.stringify(postData, null, 2),
-					);
 				}
+
 				results.push({
 					error: error.message,
 					profileId,
@@ -515,4 +561,3 @@ class SocialMediaAPI {
 }
 
 export { CacheManager, ContentProcessor, SocialMediaAPI };
-
