@@ -295,6 +295,19 @@ class SocialMediaAPI {
 		}
 	}
 
+	isBufferDuplicateErrorMessage(message) {
+		if (typeof message !== "string") {
+			return false;
+		}
+
+		return (
+			/posted that one recently/i.test(message) ||
+			/not able to post the same thing again so soon/i.test(message) ||
+			/\balready (?:queued|scheduled|posted)\b/i.test(message) ||
+			/\bduplicate (?:update|post)\b/i.test(message)
+		);
+	}
+
 	// NOTE: LinkedIn and Pinterest now use IFTTT webhooks instead of direct API calls
 	// The methods below are kept for reference but are not actively used
 	// To use direct API integration, update syndicate-posts.js and syndicate-links.js
@@ -442,11 +455,29 @@ class SocialMediaAPI {
 						"Buffer API error details:",
 						JSON.stringify(responseData, null, 2),
 					);
-					console.log(
-						"Post data that was rejected:",
-						JSON.stringify(postData, null, 2),
-					);
 				}
+				const duplicateDetected =
+					this.isBufferDuplicateErrorMessage(error.message) ||
+					this.isBufferDuplicateErrorMessage(
+						typeof errorDetails === "string" ? errorDetails : null,
+					) ||
+					this.isBufferDuplicateErrorMessage(
+						responseData?.message || responseData?.error,
+					);
+
+				if (duplicateDetected) {
+					console.log(
+						`ℹ️ Buffer reports profile ${profileId} already has this update queued or posted; treating as success to avoid duplicate retries`,
+					);
+					results.push({
+						id: `buffer-duplicate-${profileId}-${Date.now()}`,
+						profileId,
+						duplicateDetected: true,
+						success: true,
+					});
+					continue;
+				}
+
 				results.push({
 					error: error.message,
 					profileId,
@@ -515,4 +546,3 @@ class SocialMediaAPI {
 }
 
 export { CacheManager, ContentProcessor, SocialMediaAPI };
-
