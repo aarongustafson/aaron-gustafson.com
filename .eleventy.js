@@ -9,6 +9,7 @@ import embedEverything from "eleventy-plugin-embed-everything";
 import imagesResponsiver from "eleventy-plugin-images-responsiver";
 import readingTime from "eleventy-plugin-reading-time";
 import svgContents from "eleventy-plugin-svg-contents";
+import { createGenerator } from "@aarongustafson/eleventy-plugin-share-card";
 import markdownIt from "markdown-it";
 import anchor from "markdown-it-anchor";
 import markdownit_attrs from "markdown-it-attrs";
@@ -24,8 +25,9 @@ const markdown_options = {
 //import gulp from "gulp";
 //const {series} = gulp;
 import fs from "fs";
+import path from "path";
 
-import { readFile } from "fs/promises";
+import { readFile, cp } from "fs/promises";
 const seo_conf = JSON.parse(
 	await readFile(new URL("./src/_data/seo.json", import.meta.url)),
 );
@@ -43,8 +45,7 @@ function getEventDate(id) {
 }
 
 export default async (config) => {
-	// Cloudinary
-	config.cloudinaryCloudName = "aarongustafson";
+	// Hostname used for absolute URL construction
 	config.hostname = "https://www.aaron-gustafson.com";
 
 	function getSameOriginPath(src) {
@@ -97,6 +98,53 @@ export default async (config) => {
 
 	// Passthru
 	config.addPassthroughCopy({ "src/static": "/" });
+
+	// Share-card generator — registered here so the eleventy.after flush hook
+	// has access to eleventyConfig and fires at end of each build.
+	const generateShareCard = createGenerator(
+		{
+			baseImagePath: "./src/_images/share-card.jpg",
+			outputDir: "./src/static/i/share-cards",
+			outputUrlPath: "/i/share-cards",
+			cacheFile: "./_cache/share-cards.json",
+			imageWidth: 1280,
+			imageHeight: 669,
+			verbose: true,
+			layers: [
+				{
+					font: "Source Serif Pro",
+					fontFallback: "serif",
+					fontPath:
+						"node_modules/@fontsource/source-serif-pro/files/source-serif-pro-latin-700-normal.woff2",
+					fontSize: 72,
+					fontWeight: 700,
+					color: "#2C2825",
+					x: 480,
+					y: { from: "bottom", value: 205 },
+					maxWidth: 760,
+					lineSpacing: -18,
+					scaleX: 0.9,
+				},
+				{
+					font: "Open Sans",
+					fontFallback: "sans-serif",
+					fontPath:
+						"node_modules/@fontsource/open-sans/files/open-sans-latin-300-normal.woff2",
+					fontSize: 36,
+					fontWeight: 300,
+					color: "#5b5b5b",
+					x: 480,
+					y: { from: "top", value: 505 },
+					maxWidth: 760,
+					lineSpacing: -5,
+					constrainToWidth: true,
+					actualWidthFactor: 1.15,
+				},
+			],
+		},
+		config,
+	);
+	config.addJavaScriptFunction("generateShareCard", generateShareCard);
 
 	// Plugins
 	config.addPlugin(pluginSEO, seo_conf);
@@ -356,6 +404,18 @@ export default async (config) => {
 
 	// Upgrade Helper
 	// config.addPlugin(upgrade_helper);
+
+	// Share-card images are generated into src/static/i/share-cards/ during
+	// eleventyComputed data processing, which runs AFTER passthrough copy has
+	// already scanned the source tree. Copy them into dist manually once the
+	// full build is done so they are available in the deployed output.
+	config.on("eleventy.after", async ({ dir }) => {
+		const srcDir = path.resolve(process.cwd(), "src/static/i/share-cards");
+		if (!fs.existsSync(srcDir)) return;
+		const destDir = path.resolve(process.cwd(), dir.output, "i/share-cards");
+		fs.mkdirSync(destDir, { recursive: true });
+		await cp(srcDir, destDir, { recursive: true });
+	});
 
 	// Config
 	return {

@@ -1,25 +1,20 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-import getShareImage from "@jlengstorf/get-share-image";
-
-// Cache for generated share images to avoid regeneration
-const shareImageCache = new Map();
-const MAX_SHARE_IMAGE_CACHE_SIZE = 500; // More than enough for current site
 
 // Markdown
 import markdownIt from "markdown-it";
 import markdownit_attrs from "markdown-it-attrs";
 import markdownit_footnote from "markdown-it-footnote";
 const markdown_options = {
-	html: true,
-	linkify: true,
-	typographer: true,
-	breaks: false,
+  html: true,
+  linkify: true,
+  typographer: true,
+  breaks: false,
 };
 const md = markdownIt(markdown_options)
-	.use(markdownit_attrs)
-	.use(markdownit_footnote);
+  .use(markdownit_attrs)
+  .use(markdownit_footnote);
 
 // Cache for processed excerpts to avoid re-processing markdown
 const excerptCache = new Map();
@@ -29,132 +24,98 @@ const isDevEnv = process.env.ELEVENTY_ENV === "development";
 const todaysDate = new Date();
 
 function showPost(data) {
-	const isDraft = "draft" in data && data.draft !== false;
-	const isFutureDate = data.page.date > todaysDate;
-	//console.log('slug', data.page.fileSlug, 'draft', isDraft, 'future', isFutureDate);
-	return isDevEnv || (!isDraft && !isFutureDate);
+  const isDraft = "draft" in data && data.draft !== false;
+  const isFutureDate = data.page.date > todaysDate;
+  //console.log('slug', data.page.fileSlug, 'draft', isDraft, 'future', isFutureDate);
+  return isDevEnv || (!isDraft && !isFutureDate);
 }
 
 function tagsToString(tags) {
-	var non_alpha_numeric = /[^a-zA-z0-9]/g;
-	tags = tags || [];
-	tags = tags.slice(0, 3); // no more than 3
-	tags = tags.map((tag) => {
-		return "#" + tag.toLowerCase().replace(non_alpha_numeric, "-");
-	});
-	return tags.join(" ");
+  var non_alpha_numeric = /[^a-zA-z0-9]/g;
+  tags = tags || [];
+  tags = tags.slice(0, 3); // no more than 3
+  tags = tags.map((tag) => {
+    return "#" + tag.toLowerCase().replace(non_alpha_numeric, "-");
+  });
+  return tags.join(" ");
 }
 
 function tagsToColor(tags) {
-	const colors = {
-		abcdef: "82acd9",
-		ghijkl: "22c655",
-		mnopqrs: "f17ee8",
-		tuvwxyz: "de973c",
-	};
-	tags = tags || ["a"];
-	const letter = tags[0].split("").shift().toLowerCase();
-	for (let letters in colors) {
-		if (letters.indexOf(letter) > -1) {
-			return colors[letters];
-		}
-	}
+  const colors = {
+    abcdef: "82acd9",
+    ghijkl: "22c655",
+    mnopqrs: "f17ee8",
+    tuvwxyz: "de973c",
+  };
+  tags = tags || ["a"];
+  const letter = tags[0].split("").shift().toLowerCase();
+  for (let letters in colors) {
+    if (letters.indexOf(letter) > -1) {
+      return colors[letters];
+    }
+  }
 }
 
 // Remove fragment-only links so excerpts don't emit dead anchors in listings
 function stripFragmentLinks(text = "") {
-	return text
-		.replace(/\[([^\]]+)\]\(#([^\)]+)\)/gi, "$1")
-		.replace(/<a\s+[^>]*href="#.*?"[^>]*>(.*?)<\/a>/gi, "$1");
+  return text
+    .replace(/\[([^\]]+)\]\(#([^\)]+)\)/gi, "$1")
+    .replace(/<a\s+[^>]*href="#.*?"[^>]*>(.*?)<\/a>/gi, "$1");
 }
 
 export default {
-	layout: "layouts/post.njk",
-	body_class: "post",
-	eleventyComputed: {
-		eleventyExcludeFromCollections: (data) => (showPost(data) ? false : true),
-		permalink: (data) =>
-			showPost(data) ? `/notebook/${data.page.fileSlug}/` : false,
-		excerpt: (data) => {
-			let excerpt = "";
-			let sourceText = "";
+  layout: "layouts/post.njk",
+  body_class: "post",
+  eleventyComputed: {
+    eleventyExcludeFromCollections: (data) => (showPost(data) ? false : true),
+    permalink: (data) =>
+      showPost(data) ? `/notebook/${data.page.fileSlug}/` : false,
+    excerpt: (data) => {
+      let excerpt = "";
+      let sourceText = "";
 
-			if ("excerpt" in data.page) {
-				sourceText = data.page.excerpt;
-			} else if (data.description) {
-				sourceText = data.description;
-			}
+      if ("excerpt" in data.page) {
+        sourceText = data.page.excerpt;
+      } else if (data.description) {
+        sourceText = data.description;
+      }
 
-			if (sourceText) {
-				const sanitizedSource = stripFragmentLinks(sourceText);
+      if (sourceText) {
+        const sanitizedSource = stripFragmentLinks(sourceText);
 
-				// Check cache first
-				if (excerptCache.has(sanitizedSource)) {
-					return excerptCache.get(sanitizedSource);
-				}
+        // Check cache first
+        if (excerptCache.has(sanitizedSource)) {
+          return excerptCache.get(sanitizedSource);
+        }
 
-				excerpt = md
-					.renderInline(sanitizedSource)
-					.replace(/\[\^\d+\]/gi, "") // remove footnotes
-					.replace(/(<([^>]+)>)/gi, "") // remove HTML
-					.trim();
+        excerpt = md
+          .renderInline(sanitizedSource)
+          .replace(/\[\^\d+\]/gi, "") // remove footnotes
+          .replace(/(<([^>]+)>)/gi, "") // remove HTML
+          .trim();
 
-				// Cache the processed excerpt with size limit
-				if (excerptCache.size >= MAX_EXCERPT_CACHE_SIZE) {
-					const firstKey = excerptCache.keys().next().value;
-					excerptCache.delete(firstKey);
-				}
-				excerptCache.set(sanitizedSource, excerpt);
-			}
+        // Cache the processed excerpt with size limit
+        if (excerptCache.size >= MAX_EXCERPT_CACHE_SIZE) {
+          const firstKey = excerptCache.keys().next().value;
+          excerptCache.delete(firstKey);
+        }
+        excerptCache.set(sanitizedSource, excerpt);
+      }
 
-			return excerpt;
-		},
-		hue: (data) => {
-			return tagsToColor(data.tags);
-		},
-		image: (data) => {
-			if (data.hero) {
-				return `${data.site.url}${data.hero.src}`;
-			} else {
-				// Create cache key from title + tags to avoid regenerating identical images
-				const cacheKey = `${data.title}-${tagsToString(data.tags)}`;
-
-				if (shareImageCache.has(cacheKey)) {
-					return shareImageCache.get(cacheKey);
-				}
-
-				const shareImage = getShareImage({
-					cloudName: "aarongustafson",
-					imagePublicID: "share-card",
-					tagline: tagsToString(data.tags),
-					taglineColor: "505050",
-					taglineFont: "Open Sans",
-					// light, -5 line spacing
-					taglineExtraConfig: "_light_line_spacing_-5",
-					taglineFontSize: 36,
-					taglineGravity: "north_west",
-					taglineLeftOffset: 480,
-					taglineTopOffset: 505,
-					textAreaWidth: 760,
-					title: data.title,
-					titleFont: "Source Serif Pro",
-					titleFontSize: 72,
-					titleGravity: "south_west",
-					// 700 weight, -18 line spacing
-					titleExtraConfig: "_700_line_spacing_-18",
-					titleLeftOffset: 480,
-					titleBottomOffset: 205,
-					textColor: "2C2825",
-				});
-
-				// Cache with size limit
-				if (shareImageCache.size >= MAX_SHARE_IMAGE_CACHE_SIZE) {
-					const firstKey = shareImageCache.keys().next().value;
-					shareImageCache.delete(firstKey);
-				}
-				shareImageCache.set(cacheKey, shareImage);
-				return shareImage;
-			}
-		},
-	},
+      return excerpt;
+    },
+    hue: (data) => {
+      return tagsToColor(data.tags);
+    },
+    image: async function (data) {
+      if (data.hero) {
+        return `${data.site.url}${data.hero.src}`;
+      }
+      // Generate (or return cached) share-card image locally — no Cloudinary needed.
+      return this.generateShareCard(
+        [data.title, tagsToString(data.tags)],
+        data.page.fileSlug,
+      );
+    },
+  },
 };
