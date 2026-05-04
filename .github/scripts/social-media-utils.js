@@ -3,6 +3,13 @@ import { htmlToText } from "html-to-text";
 import fetch from "node-fetch";
 import path from "path";
 
+const BUFFER_DUPLICATE_ERROR_PATTERNS = [
+	/posted that one recently/i,
+	/not able to post the same thing again so soon/i,
+	/\balready (?:queued|scheduled|posted)\b/i,
+	/\bduplicate (?:update|post)\b/i,
+];
+
 class ContentProcessor {
 	static stripHtml(content) {
 		return htmlToText(content, {
@@ -300,11 +307,8 @@ class SocialMediaAPI {
 			return false;
 		}
 
-		return (
-			/posted that one recently/i.test(message) ||
-			/not able to post the same thing again so soon/i.test(message) ||
-			/\balready (?:queued|scheduled|posted)\b/i.test(message) ||
-			/\bduplicate (?:update|post)\b/i.test(message)
+		return BUFFER_DUPLICATE_ERROR_PATTERNS.some((pattern) =>
+			pattern.test(message),
 		);
 	}
 
@@ -470,7 +474,6 @@ class SocialMediaAPI {
 						`ℹ️ Buffer reports profile ${profileId} already has this update queued or posted; treating as success to avoid duplicate retries`,
 					);
 					results.push({
-						id: `buffer-duplicate-${profileId}-${Date.now()}`,
 						profileId,
 						duplicateDetected: true,
 						success: true,
