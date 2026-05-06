@@ -89,11 +89,24 @@ async function fetchFeed(feedUrl, label) {
 }
 
 function markAllPlatformsSuccessful(cache, type, itemId, timestamp) {
-	if (!cache[type][itemId]) {
+	// Defensively initialize the type bucket and the item entry in case the
+	// cache file is partial or corrupt.
+	if (!cache[type] || typeof cache[type] !== "object") {
+		cache[type] = {};
+	}
+
+	if (!cache[type][itemId] || typeof cache[type][itemId] !== "object") {
 		cache[type][itemId] = {
 			platforms: {},
 			firstAttempt: timestamp,
 		};
+	}
+
+	if (
+		!cache[type][itemId].platforms ||
+		typeof cache[type][itemId].platforms !== "object"
+	) {
+		cache[type][itemId].platforms = {};
 	}
 
 	for (const platform of PLATFORM_MAP[type]) {
@@ -107,23 +120,19 @@ function markAllPlatformsSuccessful(cache, type, itemId, timestamp) {
 	cache[type][itemId].lastUpdated = timestamp;
 }
 
-function markAllCacheEntriesForType(cache, type, timestamp) {
-	let count = 0;
+function markAllCacheEntriesForType(cache, type, markedIds, timestamp) {
 	for (const itemId of Object.keys(cache[type] || {})) {
 		markAllPlatformsSuccessful(cache, type, itemId, timestamp);
-		count += 1;
+		markedIds.add(itemId);
 	}
-	return count;
 }
 
-function markFeedItemsForType(cache, type, items, timestamp) {
-	let count = 0;
+function markFeedItemsForType(cache, type, items, markedIds, timestamp) {
 	for (const item of items) {
 		if (!item.id) continue;
 		markAllPlatformsSuccessful(cache, type, item.id, timestamp);
-		count += 1;
+		markedIds.add(item.id);
 	}
-	return count;
 }
 
 async function main() {
@@ -148,9 +157,12 @@ async function main() {
 	const types = contentType === "both" ? ["posts", "links"] : [contentType];
 
 	for (const type of types) {
+		// Use a Set so each unique item ID is counted exactly once even if it
+		// appears in both the existing cache and the live feed.
+		const markedIds = new Set();
+
 		// Mark existing cache entries
-		const cacheCount = markAllCacheEntriesForType(cache, type, timestamp);
-		console.log(`  ✅ ${type}: ${cacheCount} existing cache entries marked as sent`);
+		markAllCacheEntriesForType(cache, type, markedIds, timestamp);
 
 		// Optionally fetch live feeds and mark those items too
 		if (alsoFetchFeeds) {
@@ -158,15 +170,14 @@ async function main() {
 			const feedUrl = process.env[feedEnvKey];
 			try {
 				const items = await fetchFeed(feedUrl, type);
-				const feedCount = markFeedItemsForType(cache, type, items, timestamp);
-				console.log(`  📡 ${type}: ${feedCount} live feed items marked as sent`);
-				totalMarked += feedCount;
+				markFeedItemsForType(cache, type, items, markedIds, timestamp);
 			} catch (error) {
 				console.error(`  ⚠️  Failed to fetch ${type} feed: ${error.message}`);
 			}
 		}
 
-		totalMarked += cacheCount;
+		console.log(`  ✅ ${type}: ${markedIds.size} unique items marked as sent`);
+		totalMarked += markedIds.size;
 	}
 
 	if (totalMarked === 0) {
