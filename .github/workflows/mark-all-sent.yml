@@ -1,0 +1,110 @@
+name: Mark All Syndication Cache Entries as Sent
+
+on:
+  workflow_dispatch:
+    inputs:
+      content_type:
+        description: "Content type to mark as sent"
+        required: false
+        default: "both"
+        type: choice
+        options:
+          - posts
+          - links
+          - both
+      also_fetch_feeds:
+        description: "Also fetch live feeds to include items not yet in the cache"
+        required: false
+        default: false
+        type: boolean
+      dry_run:
+        description: "Dry run — inspect what would change without writing the cache"
+        required: false
+        default: false
+        type: boolean
+
+# Reuse the same concurrency group as the syndication workflow so this action
+# cannot run at the same time as a normal syndication run and vice versa.
+concurrency:
+  group: syndication-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  mark-all-sent:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: npm install node-fetch@3
+
+      - name: Resolve latest processed items cache key
+        id: syndication-cache-latest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          key_prefix="syndication-cache-${{ github.ref_name }}-"
+          latest_key=$(curl -fsSL -G \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            --data-urlencode "per_page=100" \
+            --data-urlencode "key=${key_prefix}" \
+            --data-urlencode "ref=${{ github.ref }}" \
+            "${{ github.api_url }}/repos/${{ github.repository }}/actions/caches" | jq -r '.actions_caches | sort_by(.created_at) | last | .key // empty')
+
+          if [ -n "$latest_key" ]; then
+            echo "latest_key=$latest_key" >> "$GITHUB_OUTPUT"
+            echo "Resolved latest cache key: $latest_key"
+          else
+            echo "latest_key=${key_prefix}" >> "$GITHUB_OUTPUT"
+            echo "No existing cache key found for prefix: $key_prefix"
+          fi
+
+      - name: Restore processed items cache
+        id: syndication-cache
+        uses: actions/cache/restore@v5
+        with:
+          path: .github/cache
+          key: ${{ steps.syndication-cache-latest.outputs.latest_key }}
+          restore-keys: |
+            syndication-cache-${{ github.ref_name }}-
+
+      - name: Inspect cache before update
+        run: node .github/scripts/inspect-syndication-cache.js
+
+      - name: Mark all entries as sent
+        run: node .github/scripts/mark-all-sent.js
+        env:
+          MARK_ALL_SENT_CONTENT_TYPE: ${{ github.event.inputs.content_type }}
+          MARK_ALL_SENT_DRY_RUN: ${{ github.event.inputs.dry_run }}
+          MARK_ALL_SENT_FETCH_FEEDS: ${{ github.event.inputs.also_fetch_feeds }}
+          POSTS_FEED_URL: https://www.aaron-gustafson.com/feeds/latest-posts.json
+          LINKS_FEED_URL: https://www.aaron-gustafson.com/feeds/latest-links.json
+
+      - name: Inspect cache after update
+        run: node .github/scripts/inspect-syndication-cache.js
+
+      - name: Compute processed items cache key
+        id: syndication-cache-key
+        if: github.event.inputs.dry_run != 'true'
+        run: |
+          if [ -f .github/cache/syndication-status.json ]; then
+            cache_hash=$(sha256sum .github/cache/syndication-status.json | cut -d' ' -f1)
+          else
+            cache_hash=empty
+          fi
+          echo "key=syndication-cache-${{ github.ref_name }}-${cache_hash}" >> "$GITHUB_OUTPUT"
+
+      - name: Save processed items cache
+        uses: actions/cache/save@v5
+        if: github.event.inputs.dry_run != 'true' && steps.syndication-cache.outputs.cache-matched-key != steps.syndication-cache-key.outputs.key
+        with:
+          path: .github/cache
+          key: ${{ steps.syndication-cache-key.outputs.key }}
