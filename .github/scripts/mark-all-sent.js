@@ -42,16 +42,31 @@ async function ensureCacheDir() {
 }
 
 async function readCache() {
+	await ensureCacheDir();
+
+	let raw;
 	try {
-		await ensureCacheDir();
-		const data = await fs.readFile(CACHE_FILE, "utf8");
-		return JSON.parse(data);
-	} catch {
-		return {
-			posts: {},
-			links: {},
-			initialized: new Date().toISOString(),
-		};
+		raw = await fs.readFile(CACHE_FILE, "utf8");
+	} catch (err) {
+		if (err.code === "ENOENT") {
+			// Cache file does not exist yet — start fresh.
+			return {
+				posts: {},
+				links: {},
+				initialized: new Date().toISOString(),
+			};
+		}
+		throw err;
+	}
+
+	// File exists — parse it; a parse failure means the file is corrupt and
+	// we must not silently overwrite it.
+	try {
+		return JSON.parse(raw);
+	} catch (err) {
+		throw new Error(
+			`Cache file exists but could not be parsed (${CACHE_FILE}): ${err.message}`,
+		);
 	}
 }
 
@@ -168,12 +183,10 @@ async function main() {
 		if (alsoFetchFeeds) {
 			const feedEnvKey = type === "posts" ? "POSTS_FEED_URL" : "LINKS_FEED_URL";
 			const feedUrl = process.env[feedEnvKey];
-			try {
-				const items = await fetchFeed(feedUrl, type);
-				markFeedItemsForType(cache, type, items, markedIds, timestamp);
-			} catch (error) {
-				console.error(`  ⚠️  Failed to fetch ${type} feed: ${error.message}`);
-			}
+			// Feed fetch failure is treated as a hard error when feeds were
+			// explicitly requested — re-throw so the workflow exits non-zero.
+			const items = await fetchFeed(feedUrl, type);
+			markFeedItemsForType(cache, type, items, markedIds, timestamp);
 		}
 
 		console.log(`  ✅ ${type}: ${markedIds.size} unique items marked as sent`);
