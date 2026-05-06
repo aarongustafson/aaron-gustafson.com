@@ -1,0 +1,93 @@
+name: Inspect Syndication Cache
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "Branch whose cache to inspect (defaults to main)"
+        required: false
+        default: "main"
+        type: string
+      verbose:
+        description: "Dump full cache contents (every entry with per-platform details)"
+        required: false
+        default: true
+        type: boolean
+
+# Use the same concurrency group as the syndication workflow so this read-only
+# inspection cannot race with an active syndication or mark-all-sent run.
+concurrency:
+  group: syndication-${{ github.event.inputs.branch || 'main' }}
+  cancel-in-progress: false
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.inputs.branch || 'main' }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "20"
+
+      - name: Resolve latest processed items cache key
+        id: syndication-cache-latest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          target_branch="${{ github.event.inputs.branch || 'main' }}"
+          key_prefix="syndication-cache-${target_branch}-"
+          latest_key=$(curl -fsSL -G \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            --data-urlencode "per_page=100" \
+            --data-urlencode "key=${key_prefix}" \
+            --data-urlencode "ref=refs/heads/${target_branch}" \
+            "${{ github.api_url }}/repos/${{ github.repository }}/actions/caches" | jq -r '.actions_caches | sort_by(.created_at) | last | .key // empty')
+
+          if [ -n "$latest_key" ]; then
+            echo "latest_key=$latest_key" >> "$GITHUB_OUTPUT"
+            echo "Resolved latest cache key: $latest_key"
+          else
+            echo "latest_key=${key_prefix}" >> "$GITHUB_OUTPUT"
+            echo "No existing cache key found for prefix: $key_prefix"
+          fi
+
+      - name: Restore processed items cache
+        id: syndication-cache
+        uses: actions/cache/restore@v5
+        with:
+          path: .github/cache
+          key: ${{ steps.syndication-cache-latest.outputs.latest_key }}
+          restore-keys: |
+            syndication-cache-${{ github.event.inputs.branch || 'main' }}-
+
+      - name: Inspect cache
+        run: |
+          args=""
+          if [ "${{ github.event.inputs.verbose }}" = "true" ]; then
+            args="--verbose"
+          fi
+          node .github/scripts/inspect-syndication-cache.js $args
+
+      - name: Show all available cache keys for this branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          target_branch="${{ github.event.inputs.branch || 'main' }}"
+          key_prefix="syndication-cache-${target_branch}-"
+          echo "All cached syndication-cache keys for branch '${target_branch}':"
+          curl -fsSL -G \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            --data-urlencode "per_page=100" \
+            --data-urlencode "key=${key_prefix}" \
+            --data-urlencode "ref=refs/heads/${target_branch}" \
+            "${{ github.api_url }}/repos/${{ github.repository }}/actions/caches" \
+            | jq -r '.actions_caches[] | "\(.created_at)  \(.size_in_bytes)B  \(.key)"' \
+            | sort -r

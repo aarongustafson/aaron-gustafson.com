@@ -115,6 +115,15 @@ jobs:
           echo "BOOTSTRAP_CACHE_BEFORE=${{ github.event.inputs.bootstrap_cache_before || '' }}" >> $GITHUB_ENV
           echo "BOOTSTRAP_CACHE_CONTENT_TYPE=${{ github.event.inputs.content_type || 'both' }}" >> $GITHUB_ENV
 
+      # Safety guard: prevent accidental real posts when running on a non-main branch.
+      # This can happen when workflow_dispatch is triggered on a feature or Copilot branch
+      # that has no syndication cache — every feed item would appear "new" and get posted.
+      - name: Enforce test mode on non-main branches
+        if: github.ref_name != 'main'
+        run: |
+          echo "⚠️  Running on non-main branch ('${{ github.ref_name }}'). Forcing TEST_MODE=true to prevent real posts."
+          echo "TEST_MODE=true" >> $GITHUB_ENV
+
       # Restore cache before processing to avoid duplicates
       - name: Restore processed items cache
         id: syndication-cache
