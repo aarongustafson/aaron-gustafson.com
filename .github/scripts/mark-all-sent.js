@@ -136,7 +136,11 @@ function markAllPlatformsSuccessful(cache, type, itemId, timestamp) {
 }
 
 function markAllCacheEntriesForType(cache, type, markedIds, timestamp) {
-	for (const itemId of Object.keys(cache[type] || {})) {
+	if (!cache[type] || typeof cache[type] !== "object" || Array.isArray(cache[type])) {
+		cache[type] = {};
+	}
+
+	for (const itemId of Object.keys(cache[type])) {
 		markAllPlatformsSuccessful(cache, type, itemId, timestamp);
 		markedIds.add(itemId);
 	}
