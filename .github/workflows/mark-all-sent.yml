@@ -76,6 +76,16 @@ jobs:
           restore-keys: |
             syndication-cache-${{ github.ref_name }}-
 
+      # Warn when run on a non-main branch so the operator knows they are
+      # updating a branch-scoped cache, not the production (main) cache.
+      - name: Warn if running on non-main branch
+        if: github.ref_name != 'main'
+        run: |
+          echo "⚠️  This workflow is running on branch '${{ github.ref_name }}', not 'main'."
+          echo "    The syndication cache is scoped per-branch, so this update will only"
+          echo "    affect the cache for '${{ github.ref_name }}'."
+          echo "    To update the production cache, re-run this workflow on 'main'."
+
       - name: Inspect cache before update
         run: node .github/scripts/inspect-syndication-cache.js
 
