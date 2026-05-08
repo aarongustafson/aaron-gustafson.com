@@ -9,7 +9,7 @@ tags:
     "HTML",
     "tables",
     "accessibility",
-    "UX",
+    "user experience",
   ]
 description: "The table-modifiable web component lets users hide and show table columns using the Popover API, making wide data tables a lot easier to live with."
 twitter_text: "Let users choose which table columns they actually want to see."

@@ -11,7 +11,7 @@ tags:
     "HTML",
     "JavaScript",
     "web forms",
-    "UX",
+    "user experience",
   ]
 description: "The `form-validation-list` web component provides real-time visual feedback on validation requirements, showing users which rules they have satisfied as they type."
 twitter_text: "New #WebComponent: Show users which validation requirements they’ve met — as they type."

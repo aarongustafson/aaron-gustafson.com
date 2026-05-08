@@ -10,7 +10,7 @@ tags:
     "JavaScript",
     "progressive enhancement",
     "web forms",
-    "UX",
+    "user experience",
   ]
 description: "Browsers crash. Tabs close. Life happens. Here’s a web component that saves form progress so your users don’t have to start over from scratch."
 twitter_text: "Browsers crash. Tabs close. Life happens. Here’s a web component that saves form progress so your users don’t have to start over from scratch."

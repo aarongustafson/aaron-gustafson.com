@@ -2,7 +2,10 @@
 title: "A Web For Everyone"
 date: 2014-01-21 20:46:48 -04:00
 comments: true
-tags: [accessibility, writing]
+tags:
+  - "accessibility"
+  - "inclusion"
+  - "writing"
 description: "If you work on the web at all, you need this book. It’s an amazingly easy read that brings humanity to an often dry subject and I am very thankful to have been a part of it."
 canonical: https://blog.easy-designs.net/archives/a-web-for-everyone/
 ---

@@ -2,7 +2,9 @@
 title: "Implementing Responsive Design"
 date: 2012-08-06 20:46:48 -04:00
 comments: true
-tags: ["responsive web design", writing]
+tags:
+  - "responsive web design"
+  - "writing"
 description: "Tim Kadlec’s Implementing Responsive Design is a fantastic and necessary read for any practicing web professional out there and I was honored Tim asked me to write the foreword."
 canonical: https://blog.easy-designs.net/archives/implementing-responsive-design/
 ---
