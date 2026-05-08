@@ -47,13 +47,21 @@ function tagsToColor(tags) {
     mnopqrs: "f17ee8",
     tuvwxyz: "de973c",
   };
-  tags = tags || ["a"];
-  const letter = tags[0].split("").shift().toLowerCase();
+  const firstTag = (
+    Array.isArray(tags)
+      ? tags.find((tag) => typeof tag === "string" && tag.length > 0)
+      : typeof tags === "string" && tags.length > 0
+        ? tags
+        : undefined
+  ) || "a";
+  const letter = firstTag.charAt(0).toLowerCase() || "a";
   for (let letters in colors) {
     if (letters.indexOf(letter) > -1) {
       return colors[letters];
     }
   }
+
+  return colors.abcdef;
 }
 
 // Remove fragment-only links so excerpts don't emit dead anchors in listings
