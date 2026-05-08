@@ -3,10 +3,8 @@ title: "Designing with Empathy at #btconf"
 date: 2013-07-15 06:11:00
 comments: true
 tags:
-  - "performance"
-  - "mobile"
-  - "JavaScript"
-  - "web development"
+  - "empathy"
+  - "presentations"
   - "conferences"
 description: "A little over a month ago I had the pleasure of speaking at Beyond Tellerrand in Düsseldorf, Germany. It was my second time speaking (and attending) the conference and I can honestly say it’s easily one of my favorites. Marc Thiele does..."
 canonical: "https://blog.easy-designs.net/archives/designing-with-empathy-at-btconf/"

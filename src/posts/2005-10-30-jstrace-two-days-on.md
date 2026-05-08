@@ -4,12 +4,13 @@ date: 2005-10-30 01:04:04
 comments: true
 tags:
   - "JavaScript"
+  - "developer tools"
   - "web development"
 description: "The reception for our latest script release , jsTrace , has been fantastic. From the write-up on the DOM Scripting Task Force blog to all of the emails and comments, it’s been great."
 canonical: "https://blog.easy-designs.net/archives/jstrace-two-days-on/"
 ---
 
-<p>The reception for our <a href="/notebook/debugging-javascript-just-got-a-little-bit-easier/">latest script release</a>, <a href="http://www.easy-designs.net/code/jsTrace/"><code>jsTrace</code></a>, has been fantastic. From <a href="http://domscripting.webstandards.org/?p=28">the write-up on the <abbr title="Document Object Model"><span class="caps">DOM</span></abbr> Scripting Task Force blog</a> to all of the emails and comments, it’s been great.</p>
+<p>The reception for our <a href="/notebook/debugging-javascript-just-got-a-little-bit-easier/">latest script release</a>, <a href="http://www.easy-designs.net/code/jsTrace/"><code>jsTrace</code></a>, has been fantastic. From <a href="http://domscripting.webstandards.org/?p=28">the write-up on the DOM Scripting Task Force blog</a> to all of the emails and comments, it’s been great.</p>
 
 <!-- more -->
 

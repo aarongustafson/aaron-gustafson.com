@@ -3,11 +3,9 @@ title: "Don’t Sell Out Your Users"
 date: 2012-04-24 13:17:00
 comments: true
 tags:
-  - "progressive enhancement"
-  - "web standards"
-  - "HTML"
+  - "privacy"
   - "user experience"
-  - "web development"
+  - "progressive enhancement"
 description: "As a profession, we spend a lot of time thinking of the best ways to protect our users’ data and their privacy. In fact, most sites have exhaustive Privacy Policies detailing what information they collect and what they may do with it..."
 canonical: "https://blog.easy-designs.net/archives/dont-sell-out-your-users/"
 ---
@@ -37,7 +35,7 @@ canonical: "https://blog.easy-designs.net/archives/dont-sell-out-your-users/"
   </section>
 ```
 <p>
-	To trigger a share via Twitter, we use Twitter’s “tweet intent” <span class="caps">URL</span>: <code>https://twitter.com/intent/tweet</code>. We then supply several key-value pairs as part of the query string:</p>
+	To trigger a share via Twitter, we use Twitter’s “tweet intent” URL: <code>https://twitter.com/intent/tweet</code>. We then supply several key-value pairs as part of the query string:</p>
 <ol>
 <li>
 		The referer (our page) as <code>original-referer</code>;</li>
@@ -49,7 +47,7 @@ canonical: "https://blog.easy-designs.net/archives/dont-sell-out-your-users/"
 		(optionally) a Twitter account handle you’d like the tweet to appear “via”.</li>
 </ol>
 <p>
-	Facebook seems less complicated, but it’s really not. Sure, the <span class="caps">URL</span> is simple—<code>http://www.facebook.com/sharer.php</code> with the <span class="caps">URL</span> supplied as <code>u</code> in the query string—but to control what Facebook displays when your page is shared, you need to add some <code>meta</code> tags that describe the page as an <a href="http://ogp.me/">OpenGraph</a> object. Here’s a sample from this blog post:</p>
+	Facebook seems less complicated, but it’s really not. Sure, the URL is simple—<code>http://www.facebook.com/sharer.php</code> with the URL supplied as <code>u</code> in the query string—but to control what Facebook displays when your page is shared, you need to add some <code>meta</code> tags that describe the page as an <a href="http://ogp.me/">OpenGraph</a> object. Here’s a sample from this blog post:</p>
 ```html
   <meta property="og:site_name" content="The Easy Designs Blog"/>
   <meta property="og:image" content="/i/facebook-icon.png?v=20111226"/>
@@ -61,11 +59,11 @@ canonical: "https://blog.easy-designs.net/archives/dont-sell-out-your-users/"
   <meta property="og:url" content="http://blog.easy-designs.net/archives/dont-sell-out-your-users/"/>
 ```
 <p>
-	This set of <code>meta</code> tags establishes this post as an “article” with a title, description, and a canonical <span class="caps">URL</span>, which ensures it is displayed in Facebook properly. Facebook maintains <a href="https://developers.facebook.com/docs/opengraph/">pretty decent documentation on OpenGraph and the pieces they support</a> and they also have a <a href="https://developers.facebook.com/tools/debug">handy testing tool you can use to see if everything is making it to them properly</a>. (It’s also worth noting that, using the debugger, you can also force Facebook to update any previously cached content from a given <span class="caps">URL.</span>)</p>
+	This set of <code>meta</code> tags establishes this post as an “article” with a title, description, and a canonical URL, which ensures it is displayed in Facebook properly. Facebook maintains <a href="https://developers.facebook.com/docs/opengraph/">pretty decent documentation on OpenGraph and the pieces they support</a> and they also have a <a href="https://developers.facebook.com/tools/debug">handy testing tool you can use to see if everything is making it to them properly</a>. (It’s also worth noting that, using the debugger, you can also force Facebook to update any previously cached content from a given URL.)</p>
 <p>
 	Rounding out the pack are LinkedIn and Google Plus. Both use OpenGraph like Facebook does, but <a href="https://developer.linkedin.com/documents/setting-display-tags-shares">LinkedIn only supports a subset of OpenGraph tags</a>—<code class="html">og:title</code>, <code class="html">og:url</code>, and <code class="html">og:image</code> (though only if the image is wider than 150px and taller than 80px)—and <a href="https://developers.google.com/+/plugins/+1button/#plus-snippet">Google Plus would prefer you use the ridiculously convoluted attributes defined by schema.org</a>, but will fall back to OpenGraph or basic <code class="html">meta</code> title and description tags if necessary.</p>
 <p>
-	Now that the <span class="caps">HTML</span> links are working properly (you did test them, right?), you need some buttons. There are tons of options out there, but if you like the ones we are using, you can <a href="../../assets/posts/share-icons.psd">download a layered <span class="caps">PSD</span> from us</a> and tweak to your heart’s content. If, however, you want to go image-less, you could use one of the many great icon fonts out there (like <a href="http://keyamoon.com/icomoon/#toPreview">IcoMoon</a>). Whatever you do, just don’t link to images on a 3rd party site because then you are falling back into the same trap again because image requests also pass along headers and cookies.</p>
+	Now that the HTML links are working properly (you did test them, right?), you need some buttons. There are tons of options out there, but if you like the ones we are using, you can <a href="../../assets/posts/share-icons.psd">download a layered PSD from us</a> and tweak to your heart’s content. If, however, you want to go image-less, you could use one of the many great icon fonts out there (like <a href="http://keyamoon.com/icomoon/#toPreview">IcoMoon</a>). Whatever you do, just don’t link to images on a 3rd party site because then you are falling back into the same trap again because image requests also pass along headers and cookies.</p>
 <p>
 	And there you have it: a fully-funcitonal set of sharing tools that requires no JavaScript and doesn’t sacrifice your users’ privacy.</p>
 <p>

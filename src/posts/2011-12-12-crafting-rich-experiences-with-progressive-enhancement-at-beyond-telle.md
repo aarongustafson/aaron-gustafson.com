@@ -3,11 +3,9 @@ title: "Crafting Rich Experiences with Progressive Enhancement at Beyond Tellerr
 date: 2011-12-12 21:05:00
 comments: true
 tags:
-  - "accessibility"
-  - "web standards"
-  - "HTML"
-  - "browsers"
-  - "web development"
+  - "progressive enhancement"
+  - "presentations"
+  - "conferences"
 description: "After a whirlwind trip to 4 countries (5 if you count Florida), I am back to a rock-solid internet connection and got a moment to take a breath and post my slides from the first stop on the trip: Beyond Tellerrand in Düsseldorf, Germany."
 canonical: "https://blog.easy-designs.net/archives/crafting-rich-experiences-with-progressive-enhancement-at-beyond-telle/"
 ---

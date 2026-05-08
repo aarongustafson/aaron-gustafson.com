@@ -3,9 +3,8 @@ title: "Honorable, my ass!"
 date: 2006-02-09 17:59:00
 comments: false
 tags:
-  - "HTML"
-  - "career"
   - "society"
+  - "philosophy"
 description: "It appears that some Dems, including my Representative from the 3rd District in Connecticut, Rosa De Lauro , are trying to cripple our democracy under the guise of public financing."
 canonical: "https://blog.easy-designs.net/archives/honorable-my-ass/"
 ---
@@ -14,11 +13,11 @@ canonical: "https://blog.easy-designs.net/archives/honorable-my-ass/"
 
 <!-- more -->
 
-<p><a href="http://frwebgate.access.gpo.gov/cgi-bin/getdoc.cgi?dbname=109_cong_bills&amp;docid=f:h4694ih.txt.pdf"><span class="caps">HR</span> 4694</a>, or the “Let the People Decide Clean Campaign Act,” proposed by <a href="http://web.archive.org/web/20070908182715/obey.house.gov/hor/wi07/">Representative David Obey (<abbr title="Democrat">D</abbr>, <abbr title="Wisconsin"><span class="caps">WI</span></abbr>)</a>,  would make great strides toward establishing public financing for House of Representatives races, but there’s a catch. The bill contains some very sneaky language regarding how 3rd parties and independent candidates can conduct their campaigns which virtually guarantees the continuance of the two-party system. Let’s break down some of the key provisions:</p>
+<p><a href="http://frwebgate.access.gpo.gov/cgi-bin/getdoc.cgi?dbname=109_cong_bills&amp;docid=f:h4694ih.txt.pdf">HR 4694</a>, or the “Let the People Decide Clean Campaign Act,” proposed by <a href="http://web.archive.org/web/20070908182715/obey.house.gov/hor/wi07/">Representative David Obey (<abbr title="Democrat">D</abbr>, <abbr title="Wisconsin">WI</abbr>)</a>,  would make great strides toward establishing public financing for House of Representatives races, but there’s a catch. The bill contains some very sneaky language regarding how 3rd parties and independent candidates can conduct their campaigns which virtually guarantees the continuance of the two-party system. Let’s break down some of the key provisions:</p>
 <ul>
-<li>Nominees of parties (including 3rd parties) that had averaged 25% of the vote for <span class="caps">US</span> House in that district (over the last two elections) would get full public funding</li>
+<li>Nominees of parties (including 3rd parties) that had averaged 25% of the vote for US House in that district (over the last two elections) would get full public funding</li>
 </ul>
-<p><span class="caps">OK</span>, this seems pretty reasonable and is to be expected.</p>
+<p>OK, this seems pretty reasonable and is to be expected.</p>
 <ul>
 <li>Independent candidates who had averaged 25% would get full public funding</li>
 </ul>
@@ -27,7 +26,7 @@ canonical: "https://blog.easy-designs.net/archives/honorable-my-ass/"
 <ul>
 <li>All others would be required to submit petitions signed by 10% of the last vote cast, for partial funding; and 20% petitions for full funding</li>
 </ul>
-<p><span class="caps">OK</span>, so a candidate or party does not have standing to automatically get public funding. No biggie, but gathering signatures from 10%-20% of the last vote cast to qualify does seem a little steep. I understand wanting to keep out the non-serious candidates, but it seems a little excessive. The <a href="http://stloracle.blogspot.com/2006/02/bill-would-ban-3rd-party-campaigns-for.html">St Louis Oracle did the math</a>:</p>
+<p>OK, so a candidate or party does not have standing to automatically get public funding. No biggie, but gathering signatures from 10%-20% of the last vote cast to qualify does seem a little steep. I understand wanting to keep out the non-serious candidates, but it seems a little excessive. The <a href="http://stloracle.blogspot.com/2006/02/bill-would-ban-3rd-party-campaigns-for.html">St Louis Oracle did the math</a>:</p>
 <blockquote cite="http://stloracle.blogspot.com/2006/02/bill-would-ban-3rd-party-campaigns-for.html">
 <p><i>n Missouri’s 2nd congressional district, a candidate with a party that won less than 25% of the vote in the last two elections would need nearly 70,000 signatures to qualify for the public funding that her/his Democratic and Republican opponents would get automatically, and only signatures from the 2nd District would count. Nearly 35,000 signatures would be required in order to allow the candidate to spend anything at all on the campaign.</i></p>
 </blockquote>

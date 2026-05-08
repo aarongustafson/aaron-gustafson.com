@@ -3,11 +3,9 @@ title: "From “Mobile Friendly” to “Mobile First”"
 date: 2011-10-12 11:33:00
 comments: true
 tags:
-  - "accessibility"
-  - "web standards"
-  - "HTML"
-  - "browsers"
-  - "web development"
+  - "responsive web design"
+  - "progressive enhancement"
+  - "mobile"
 description: "If you’re reading this on a desktop browser, you may not have noticed, but we just turned this blog on it’s head, design-wise. Those of you browsing on a tablet or mobile device, however, should be enjoying a much more comfortable..."
 canonical: "https://blog.easy-designs.net/archives/from-mobile-friendly-to-mobile-first/"
 ---
@@ -18,7 +16,7 @@ canonical: "https://blog.easy-designs.net/archives/from-mobile-friendly-to-mobil
 <!-- more -->
 
 <p>
-	Our initial approach to this site involved building out the desktop view as the default layout. We then used <span class="caps">CSS</span>3 media queries to “dumb down” the content by removing some page components and reconfiguring some of the content. It worked pretty well, but we were relying on our mobile users to have media query support in their device. Given that our audience tends to have more capable mobile devices, it probably wasn’t an incorrect assumption, but it wasn’t all that kind to people who happen to have less-capable devices. And, in truth, it didn’t sit well with us because it didn’t really jive with <a href="http://adaptivewebdesign.info">the progressive enhancement philosophy I advocate so hard for</a>. That said, the world of media queries was pretty new at the time. </p>
+	Our initial approach to this site involved building out the desktop view as the default layout. We then used CSS3 media queries to “dumb down” the content by removing some page components and reconfiguring some of the content. It worked pretty well, but we were relying on our mobile users to have media query support in their device. Given that our audience tends to have more capable mobile devices, it probably wasn’t an incorrect assumption, but it wasn’t all that kind to people who happen to have less-capable devices. And, in truth, it didn’t sit well with us because it didn’t really jive with <a href="http://adaptivewebdesign.info">the progressive enhancement philosophy I advocate so hard for</a>. That said, the world of media queries was pretty new at the time. </p>
 <p>
 	We know better now.</p>
 <p>
@@ -36,20 +34,20 @@ canonical: "https://blog.easy-designs.net/archives/from-mobile-friendly-to-mobil
 <figure>
 <img alt="" src="/i/posts/2011-10-12/blog-comparison-wide.png"/><figcaption>A comparison of the wide/desktop layout of this blog. There are some minor spacing differences, but not much else has changed.</figcaption></figure>
 <p>
-	Taken altogether, the differences don’t appear that substantial, but given that every device/browser has access to the narrow layout, the reading experience is vastly improved. <em>Note: to get <span class="caps">IE</span> to apply media queries in versions 8 and under, we’re using the <a href="https://github.com/scottjehl/Respond">Scott Jehl’s Respond.js</a>.</em></p>
+	Taken altogether, the differences don’t appear that substantial, but given that every device/browser has access to the narrow layout, the reading experience is vastly improved. <em>Note: to get IE to apply media queries in versions 8 and under, we’re using the <a href="https://github.com/scottjehl/Respond">Scott Jehl’s Respond.js</a>.</em></p>
 <p>
 	So that gives you a pretty good sense of how we’re adjusting the layout based on the device size, but there are a few other niceities going on under the hood that I’d like to share as well. Here’s a round-up:</p>
 <ol>
 <li>
-<strong>Our content images are now being served via src.sencha.io</strong>, a free web service and <span class="caps">CDN</span> from the folks behind <a href="http://www.sencha.com/">Sencha</a> that takes the pain out of serving images based on the device requesting them. To keep the implementation simple (and easily swappable), I wrote <a href="https://github.com/easy-designs/easy_src_sencha_io.ee_addon">an ExpressionEngine plugin to automatically swap images for their src.sencha.io equivalents</a> (<span class="caps">EE</span>1 only for right now, but I’ll port it shortly). For more detail on using src.sencha.io, check out <a href="http://www.sencha.com/learn/how-to-use-src-sencha-io/">this article</a>.</li>
+<strong>Our content images are now being served via src.sencha.io</strong>, a free web service and CDN from the folks behind <a href="http://www.sencha.com/">Sencha</a> that takes the pain out of serving images based on the device requesting them. To keep the implementation simple (and easily swappable), I wrote <a href="https://github.com/easy-designs/easy_src_sencha_io.ee_addon">an ExpressionEngine plugin to automatically swap images for their src.sencha.io equivalents</a> (EE1 only for right now, but I’ll port it shortly). For more detail on using src.sencha.io, check out <a href="http://www.sencha.com/learn/how-to-use-src-sencha-io/">this article</a>.</li>
 <li>
-<strong>Comments are now loaded via Ajax.</strong> I know, it sounds crazy, but it makes sense. By default, we include a link to an alternate version of the blog post template with comments exposed (well, really it’s the same template with an additional <span class="caps">URL</span> segment passed in). Then, using JavaScript, we look for that link and replace it with the comments thread after the page finishes loading. You know, <em>progressive enhancement</em>. The overall effect is that it reduces the time it takes to download the page, which means you get to the content you want to read faster. You can check out <a href="https://gist.github.com/b976b67e88ffbfc9f125">the code that makes it work over on Github</a> (it’s a slightly modified version of <a href="https://gist.github.com/d0e4918cf5e97edf99f3">Scott Jehl’s original script</a>).</li>
+<strong>Comments are now loaded via Ajax.</strong> I know, it sounds crazy, but it makes sense. By default, we include a link to an alternate version of the blog post template with comments exposed (well, really it’s the same template with an additional URL segment passed in). Then, using JavaScript, we look for that link and replace it with the comments thread after the page finishes loading. You know, <em>progressive enhancement</em>. The overall effect is that it reduces the time it takes to download the page, which means you get to the content you want to read faster. You can check out <a href="https://gist.github.com/b976b67e88ffbfc9f125">the code that makes it work over on Github</a> (it’s a slightly modified version of <a href="https://gist.github.com/d0e4918cf5e97edf99f3">Scott Jehl’s original script</a>).</li>
 <li>
-<strong>Our social plugins now protect your privacy.</strong> We hadn’t really thought about the fact that every time a script is included from Twitter or Facebook, that can be used to track your movement around the web. Once we realized it though, we decided we needed to change our social links to protect you. As such, we’ve changed the links to work without JavaScript and using images delivered by servers we control. <a href="http://plus.google.com">Google+</a> has been dropped for the time being as they do not seem to offer a consistent destination <span class="caps">URL</span> for their +1 service. If they change that or someone can tell us what it is, we’ll likely bring it back.</li>
+<strong>Our social plugins now protect your privacy.</strong> We hadn’t really thought about the fact that every time a script is included from Twitter or Facebook, that can be used to track your movement around the web. Once we realized it though, we decided we needed to change our social links to protect you. As such, we’ve changed the links to work without JavaScript and using images delivered by servers we control. <a href="http://plus.google.com">Google+</a> has been dropped for the time being as they do not seem to offer a consistent destination URL for their +1 service. If they change that or someone can tell us what it is, we’ll likely bring it back.</li>
 <li>
 <strong>Better support for services like <a href="http://www.readability.com/">Readability</a>.</strong> We want you to be comfortable reading our content; if you don’t like our layout, that’s fine with us.</li>
 </ol>
 <p>
 	What do you think? Did we miss anything that would make your reding experience better on this blog?</p>
 <p>
-<span class="caps">PS</span> - If you’re interested, I’ll be giving <a href="http://inspireconf.com/">a full-day Adaptive Web Design workshop in Amsterdam on 29 November 2011</a>, during which I will be discussing these topics and more in much greater depth and mentoring attendees on how to craft truly rich web experiences with progressive enhancement. Tickets are available <a href="http://inspire-adaptivewebdesign.eventbrite.com/">on EventBrite</a>.</p>
+PS - If you’re interested, I’ll be giving <a href="http://inspireconf.com/">a full-day Adaptive Web Design workshop in Amsterdam on 29 November 2011</a>, during which I will be discussing these topics and more in much greater depth and mentoring attendees on how to craft truly rich web experiences with progressive enhancement. Tickets are available <a href="http://inspire-adaptivewebdesign.eventbrite.com/">on EventBrite</a>.</p>

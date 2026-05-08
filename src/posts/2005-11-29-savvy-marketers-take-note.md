@@ -3,8 +3,8 @@ title: "Savvy Marketers Take Note"
 date: 2005-11-29 18:14:07
 comments: false
 tags:
-  - "mobile"
   - "web standards"
+  - "business"
   - "web development"
 description: "One of the web’s preeminent marketing websites, MarketingSherpa , has just published an article which may start a web standards stampede . The focus is Firefox , but the underlying message is standards, standards and more standards:"
 canonical: "https://blog.easy-designs.net/archives/savvy-marketers-take-note/"
@@ -26,6 +26,6 @@ canonical: "https://blog.easy-designs.net/archives/savvy-marketers-take-note/"
 <li>Decreased development and maintenance costs</li>
 <li>Lower bandwidth usage</li>
 <li>Faster download times</li>
-<li>Web viewing beyond the computer (your site on wireless devices <span class="amp">&amp;</span> <span class="caps">RSS</span>)</li>
+<li>Web viewing beyond the computer (your site on wireless devices & RSS)</li>
 </ol>
 <p>It’s nice to see marketers taking note of all we can do for them. Now roll up your shirt sleeves and get to work.</p>

@@ -3,11 +3,8 @@ title: "Progressive Enhancement vs. Hardboiled Design"
 date: 2012-01-09 15:27:00
 comments: true
 tags:
-  - "accessibility"
   - "progressive enhancement"
-  - "CSS"
-  - "JavaScript"
-  - "user experience"
+  - "philosophy"
 description: "Late last week, I linked my Forrst followers to Stephanie Rieger’s awesome post “A Plea for Progressive Enhancement ” which offered a even-handed critique of a sliding menu interaction on the website for the Obama campaign. The main..."
 canonical: "https://blog.easy-designs.net/archives/progressive-enhancement-vs.-hardboiled-design/"
 ---
@@ -22,7 +19,7 @@ canonical: "https://blog.easy-designs.net/archives/progressive-enhancement-vs.-h
 		[T]he menu failed. Never even opened. Suddenly, the site was without navigation…at all.</p>
 </blockquote>
 <p>
-<a href="http://dribbble.com/JoeSeddon">Joe Seddon</a>, a <span class="caps">UK</span>-based designer, shared his reaction to the post in the comment thread, but if you’re not a Forrst member, you can’t read the comments, so I wanted to share his reaction:</p>
+<a href="http://dribbble.com/JoeSeddon">Joe Seddon</a>, a UK-based designer, shared his reaction to the post in the comment thread, but if you’re not a Forrst member, you can’t read the comments, so I wanted to share his reaction:</p>
 <blockquote cite="http://forrst.com/posts/A_plea_for_progressive_enhancement-JKd#comment-527846">
 <p>
 		I know you’re a big fan of progressive advancement Aaron and I have huge respect for you as a designer, however I disagree with your way of thinking and feel it is holding our industry back.</p>
@@ -35,7 +32,7 @@ canonical: "https://blog.easy-designs.net/archives/progressive-enhancement-vs.-h
 	I don’t mean to pick on Joe here, but he shares a common misconception about progressive enhancement. One I hope my response (below) dispels:</p>
 <blockquote cite="http://forrst.com/posts/A_plea_for_progressive_enhancement-JKd#comment-527892">
 <p>
-<a href="http://forrst.com/people/JoeSeddon">@JoeSeddon</a> It sounds like you’re firmly in the Andy Clarke camp on this one, but I couldn’t disagree more with your statement that my “way of thinking” (i.e. progressive enhancement) is “holding our industry back.” If anything, I think it is the way forward. And for the record, I’m not the only one thinking this way: Jeffrey Zeldman, <a href="http://forrst.com/people/adactio">@adactio</a>, Ethan Marcotte, Daniel Mall, Scott Jehl <span class="amp">&amp;</span> the Filament Group, Brad Frost, Stephanie and <a href="http://forrst.com/people/bryanrieger">@bryanrieger</a>, and countless others support and promote progressive enhancement every day.</p>
+<a href="http://forrst.com/people/JoeSeddon">@JoeSeddon</a> It sounds like you’re firmly in the Andy Clarke camp on this one, but I couldn’t disagree more with your statement that my “way of thinking” (i.e. progressive enhancement) is “holding our industry back.” If anything, I think it is the way forward. And for the record, I’m not the only one thinking this way: Jeffrey Zeldman, <a href="http://forrst.com/people/adactio">@adactio</a>, Ethan Marcotte, Daniel Mall, Scott Jehl & the Filament Group, Brad Frost, Stephanie and <a href="http://forrst.com/people/bryanrieger">@bryanrieger</a>, and countless others support and promote progressive enhancement every day.</p>
 <blockquote>
 <p>
 			Starting from the bottom instead of the top limits creativity.</p>
@@ -43,15 +40,15 @@ canonical: "https://blog.easy-designs.net/archives/progressive-enhancement-vs.-h
 <p>
 		Actually no. Building a website is a heck of a lot like building a house—you need a solid foundation and “good bones” for it so stand the test of time and for it to be able to support the amazing things you want to do with it. Your server forms the foundation—keeping the whole website stable. And smart, semantic markup is the framing—the joists and supports that allow you to build higher without worrying about collapse.</p>
 <p>
-		To take the analogy further, your backend (assuming you have an <span class="caps">API</span> or at least a <span class="caps">DB</span> and some code to talk to it) is like the electrical, water, and communication systems which will support the fixtures of your site. <span class="caps">CSS</span> is your façade and interior design. Basic <span class="caps">HTTP</span> (e.g. links and communication via <span class="caps">POST</span> and <span class="caps">GET</span>) and JavaScript (probably in concert with an <span class="caps">API</span>) connects the systems to your fixtures (most likely a combo of <span class="caps">HTML</span>, <span class="caps">CSS</span> <span class="amp">&amp;</span> <span class="caps">JS</span>) and makes them functional.</p>
+		To take the analogy further, your backend (assuming you have an API or at least a DB and some code to talk to it) is like the electrical, water, and communication systems which will support the fixtures of your site. CSS is your façade and interior design. Basic HTTP (e.g. links and communication via POST and GET) and JavaScript (probably in concert with an API) connects the systems to your fixtures (most likely a combo of HTML, CSS & JS) and makes them functional.</p>
 <p>
-		All of these pieces are orchestrated by your <span class="caps">IA</span>, User Flows, and <span class="caps">UX</span> design—the blueprints, elevations, etc. of the web world. And, to be honest, that’s where you should be doing the lion’s share of your creative thinking when it comes to interface.</p>
+		All of these pieces are orchestrated by your IA, User Flows, and UX design—the blueprints, elevations, etc. of the web world. And, to be honest, that’s where you should be doing the lion’s share of your creative thinking when it comes to interface.</p>
 <blockquote>
 <p>
 			By designing from the top we as designers can take advantage of new technology and build the best user experience possible for those who use the best browsers.</p>
 </blockquote>
 <p>
-		You, as a designer, should be considering the implications of technical decisions and options at the planning stage. If you’re a freelancer or run a small shop, you may be the <span class="caps">UX</span> person too, but if you aren’t, you should be working with your <span class="caps">UX</span> person to propose innovative interactions and then plan out how those can be used on the latest and greatest browsers and what the experience would be on less capable browsers and devices. It all starts with the planning.</p>
+		You, as a designer, should be considering the implications of technical decisions and options at the planning stage. If you’re a freelancer or run a small shop, you may be the UX person too, but if you aren’t, you should be working with your UX person to propose innovative interactions and then plan out how those can be used on the latest and greatest browsers and what the experience would be on less capable browsers and devices. It all starts with the planning.</p>
 <p>
 		Nothing in progressive enhancement says you can’t use the latest and greatest technologies and techniques, it just asks you to respect your content and your users by being smart about how you apply them. Remember: browsers and technologies come and go<sup><a href="/notebook/progressive-enhancement-vs.-hardboiled-design/#footnote-browser-examples">1</a></sup>; focus on your content and your users.</p>
 <blockquote>
@@ -73,9 +70,9 @@ canonical: "https://blog.easy-designs.net/archives/progressive-enhancement-vs.-h
 <p>
 		Of course he shouldn’t. Progressive enhancement doesn’t say that he should.</p>
 <p>
-		I think you should rethink what progressive enhancement is all about. Not to plug my own work, but the first chapter of my book lays it out pretty well. You can <a class="external" href="http://adaptivewebdesign.info" target="_blank">download it for free as a <span class="caps">PDF</span></a> or <a class="external" href="http://www.netmagazine.com/features/progressive-enhancement-demystified" target="_blank">read the web-based version on <cite>.net Magazine</cite></a> .</p>
+		I think you should rethink what progressive enhancement is all about. Not to plug my own work, but the first chapter of my book lays it out pretty well. You can <a class="external" href="http://adaptivewebdesign.info" target="_blank">download it for free as a PDF</a> or <a class="external" href="http://www.netmagazine.com/features/progressive-enhancement-demystified" target="_blank">read the web-based version on <cite>.net Magazine</cite></a> .</p>
 <p id="footnote-browser-examples">
-		1. Don’t believe me? Look at how many companies built software and intranets around <span class="caps">IE</span>6. Why did they do it? It was considered a pretty good browser at the time. Need a more recent example? Look at WebDB (SQLite). It was introduced in Webkit and and looked to be on track to become a formal W3C recommendation, but then it was dropped in favor of IndexedDB. I speak from experience when I say things like this can and often do bite you in the ass if you work on the bleeding edge.</p>
+		1. Don’t believe me? Look at how many companies built software and intranets around IE6. Why did they do it? It was considered a pretty good browser at the time. Need a more recent example? Look at WebDB (SQLite). It was introduced in Webkit and and looked to be on track to become a formal W3C recommendation, but then it was dropped in favor of IndexedDB. I speak from experience when I say things like this can and often do bite you in the ass if you work on the bleeding edge.</p>
 </blockquote>
 <p>
 	After reading my incredibly lengthy response, Joe kindly wrote back:</p>

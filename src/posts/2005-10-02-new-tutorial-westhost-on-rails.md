@@ -3,8 +3,8 @@ title: "New tutorial: Westhost on Rails"
 date: 2005-10-02 15:40:20
 comments: true
 tags:
-  - "web design"
-  - "writing"
+  - "web development"
+  - "best practices"
 description: "I have been hosting on Westhost for a little over four years now with no major complaints and I also host the majority of my clients there. They offer a lot of options for very little money and are always adding new features to the..."
 canonical: "https://blog.easy-designs.net/archives/new-tutorial-westhost-on-rails/"
 ---

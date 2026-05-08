@@ -3,10 +3,9 @@ title: "Adaptive Design, Empathy & Beating Creative Block"
 date: 2014-04-01 14:33:00
 comments: false
 tags:
-  - "progressive enhancement"
-  - "mobile"
-  - "web standards"
-  - "browsers"
+  - "presentations"
+  - "empathy"
+  - "Adaptive Web Design"
 description: "Lately I’ve been doing a few more podcasts, local events, and interviews. Here’s a round-up of a few that posted in the last week or so:"
 canonical: "https://blog.easy-designs.net/archives/adaptive-design-empathy-and-beating-creative-block/"
 ---
@@ -16,13 +15,13 @@ canonical: "https://blog.easy-designs.net/archives/adaptive-design-empathy-and-b
 <p>
 	Lately I’ve been doing a few more podcasts, local events, and interviews. Here’s a round-up of a few that posted in the last week or so:</p>
 <p>
-<strong><a href="http://www.modern.ie/en-us/podcast/modernie-podcast-with-aaron-gustafson">The modern.<span class="caps">IE</span> Podcast</a></strong><br/>
+<strong><a href="http://www.modern.ie/en-us/podcast/modernie-podcast-with-aaron-gustafson">The modern.IE Podcast</a></strong><br/>
 	Josh Holmes interviewed me about adaptive design, progressive enhancement, and a wide range of other things.</p>
 
 <!-- more -->
 
 <p>
-<a href="http://www.pechakucha.org/cities/chattanooga/events/526e68fc4f5c29f968000004"><strong><span class="caps">PKNCHA</span>#15</strong></a><br/>
+<a href="http://www.pechakucha.org/cities/chattanooga/events/526e68fc4f5c29f968000004"><strong>PKNCHA#15</strong></a><br/>
 	I did a PechaKucha talk on empathy and the golden rule last December. <a href="https://www.youtube.com/watch?v=6QlAj4_6m5s">The video is now on YouTube.</a></p>
 
 {{ youtube( "6QlAj4_6m5s" ) }}

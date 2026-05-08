@@ -4,7 +4,7 @@ date: 2005-11-03 11:08:29
 comments: false
 tags:
   - "web standards"
-  - "HTML"
+  - "best practices"
 description: "Andy’s beautiful standards-based design is gone, replaced by a table-based pile of (ahem) tag soup. Being the gentleman that he is, Andy has chosen to remain silent on the issue , but he has provided a forum for anyone else who wants to..."
 canonical: "https://blog.easy-designs.net/archives/disneystorecouk-in-retrograde/"
 ---

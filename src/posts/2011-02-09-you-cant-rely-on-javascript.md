@@ -3,11 +3,9 @@ title: "Face It: You Can’t Rely on JavaScript"
 date: 2011-02-09 05:51:28
 comments: true
 tags:
-  - "accessibility"
   - "progressive enhancement"
-  - "web standards"
+  - "accessibility"
   - "JavaScript"
-  - "user experience"
 description: "I’ve been cautioning folks against over-reliance on JavaScript for the better part of a decade. In that time, I harped a lot on Lala.com (which was eventually bought by Apple and shuttered) because they loaded all of their content via..."
 canonical: "https://blog.easy-designs.net/archives/you-cant-rely-on-javascript/"
 ---
@@ -27,5 +25,5 @@ canonical: "https://blog.easy-designs.net/archives/you-cant-rely-on-javascript/"
 <li>A JavaScript issue as simple as a typo could cause a fatal error that causes JavaScript execution to be aborted completely.</li>
 <li>In the case of Ajax, the service you are relying on to deliver content to the browser may, itself, experience an error and return nothing or a bunch of error code.</li>
 </ol>
-<p>For these reasons, you should always build your website following progressive enhancement: start with the reliable baseline of <span class="caps">HTTP</span> and good copywriting; add semantic <span class="caps">HTML</span> (and microformats); apply <span class="caps">CSS</span> in layers to create visual hierarchies; use Hijax and other progressively-enhanced JavaScript patterns to improve the interactivity; and cap it off with accessibility enhancements in the form of <span class="caps">ARIA</span> roles and states.</p>
+<p>For these reasons, you should always build your website following progressive enhancement: start with the reliable baseline of HTTP and good copywriting; add semantic HTML (and microformats); apply CSS in layers to create visual hierarchies; use Hijax and other progressively-enhanced JavaScript patterns to improve the interactivity; and cap it off with accessibility enhancements in the form of ARIA roles and states.</p>
 <p>For musings on the Gawker redesign, progressive enhancement, and JavaScript-focused “hash-bang” URLs, read <a href="http://adactio.com/journal/4346/">Jeremy’s excellent post</a> and <a href="http://isolani.co.uk/blog/javascript/BreakingTheWebWithHashBangs">Mike’s in-depth analysis</a>.</p>

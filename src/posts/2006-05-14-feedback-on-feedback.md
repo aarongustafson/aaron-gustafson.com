@@ -3,15 +3,14 @@ title: "Feedback on feedback"
 date: 2006-05-14 14:37:25
 comments: false
 tags:
+  - "conferences"
+  - "presentations"
   - "web standards"
-  - "HTML"
-  - "JavaScript"
-  - "web development"
 description: "SXSW has released their “ Honor Roll” for 2006 and “ How to Bluff Your Way in DOM Scripting ” managed to make it pretty darn close to the top. I had no idea there was such a thing, but apparently audience feedback is tallied and the..."
 canonical: "https://blog.easy-designs.net/archives/feedback-on-feedback/"
 ---
 
-<p><span class="caps">SXSW</span> has released their <a href="http://2006.sxsw.com/bits_n_bytes/pivot/entry.php?id=112"><span class="initial quote">“</span>Honor Roll” for 2006</a> and “<a href="http://2006.sxsw.com/interactive/programming/panels/?action=show&amp;id=IAP060040">How to Bluff Your Way in <abbr title="Document Object Model"><span class="caps">DOM</span></abbr> Scripting</a>” managed to make it pretty darn close to the top. I had no idea there was such a thing, but apparently audience feedback is tallied and the sessions are graded and then ranked. I’m pretty proud of our 4.69 “<abbr title="Grade Point Average"><span class="caps">GPA</span></abbr>” too — it put us solidly in the Top 10. The two other sessions I participated in (“<a href="http://2006.sxsw.com/interactive/programming/panels/?action=show&amp;id=IAP060035">Web Standards <span class="amp">&amp;</span> Search Engines</a>” and “<a href="http://2006.sxsw.com/interactive/programming/panels/?action=show&amp;id=IAP060006">Web Standards <span class="amp">&amp;</span> <span class="caps">SEO</span></a>”) also garnered some respectable scores (4.01 and 4.06 respectively) and made the list.</p>
+<p>SXSW has released their <a href="http://2006.sxsw.com/bits_n_bytes/pivot/entry.php?id=112"><span class="initial quote">“</span>Honor Roll” for 2006</a> and “<a href="http://2006.sxsw.com/interactive/programming/panels/?action=show&amp;id=IAP060040">How to Bluff Your Way in DOM Scripting</a>” managed to make it pretty darn close to the top. I had no idea there was such a thing, but apparently audience feedback is tallied and the sessions are graded and then ranked. I’m pretty proud of our 4.69 “<abbr title="Grade Point Average">GPA</abbr>” too — it put us solidly in the Top 10. The two other sessions I participated in (“<a href="http://2006.sxsw.com/interactive/programming/panels/?action=show&amp;id=IAP060035">Web Standards & Search Engines</a>” and “<a href="http://2006.sxsw.com/interactive/programming/panels/?action=show&amp;id=IAP060006">Web Standards & SEO</a>”) also garnered some respectable scores (4.01 and 4.06 respectively) and made the list.</p>
 
 <!-- more -->
 
@@ -28,7 +27,7 @@ canonical: "https://blog.easy-designs.net/archives/feedback-on-feedback/"
 <p>Great breakdown of concepts…</p>
 </blockquote>
 <blockquote>
-<p>…interesting to even an experienced <abbr title="Document Object Model"><span class="caps">DOM</span></abbr> coder</p>
+<p>…interesting to even an experienced DOM coder</p>
 </blockquote>
 <blockquote>
 <p>Broke down things to a real level…</p>

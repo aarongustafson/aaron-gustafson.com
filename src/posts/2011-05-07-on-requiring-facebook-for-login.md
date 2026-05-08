@@ -3,9 +3,8 @@ title: "On Requiring Facebook for Login"
 date: 2011-05-07 11:03:58
 comments: true
 tags:
-  - "HTML"
   - "user experience"
-  - "society"
+  - "inclusion"
 description: "Last night, I had a great conversation on Twitter with Jeff Croft about the pros and cons of requiring a Facebook account for login. It’s a trend that seems to be on the rise and I, personally, don’t think it’s a good long term strategy."
 canonical: "https://blog.easy-designs.net/archives/on-requiring-facebook-for-login/"
 ---
@@ -14,7 +13,7 @@ canonical: "https://blog.easy-designs.net/archives/on-requiring-facebook-for-log
 
 <!-- more -->
 
-<p>It all started when I visited <a href="http://www.homeelephant.com/">Home Elephant</a> on <a href="http://www.good.is/post/home-elephant-an-app-to-help-neighbors-help-neighbors/">a tip from <cite><span class="caps">GOOD</span></cite> magazine</a>. It looks like an interesting service, but, as I have chosen not to create a Facebook account, is not something I can sign up for. And so it sparked <a href="http://twitter.com/AaronGustafson/status/66632382568075264">this tweet</a>:</p>
+<p>It all started when I visited <a href="http://www.homeelephant.com/">Home Elephant</a> on <a href="http://www.good.is/post/home-elephant-an-app-to-help-neighbors-help-neighbors/">a tip from <cite>GOOD</cite> magazine</a>. It looks like an interesting service, but, as I have chosen not to create a Facebook account, is not something I can sign up for. And so it sparked <a href="http://twitter.com/AaronGustafson/status/66632382568075264">this tweet</a>:</p>
 <blockquote cite="http://twitter.com/AaronGustafson/status/66632382568075264">
 <p>AaronGustafson reminds you that not everyone has (or wants) a <a href="ttp://twitter.com/facebook" rel="nofollow">@facebook</a> account. You’re limiting your reach by requiring one for sign up. /cc <a href="../../HomeElephant.html" rel="nofollow">@HomeElephant</a></p>
 </blockquote>
@@ -36,7 +35,7 @@ canonical: "https://blog.easy-designs.net/archives/on-requiring-facebook-for-log
 </blockquote>
 <p>To which he responded (combined from <a href="http://twitter.com/jcroft/status/66665270982344704">a short</a> <a href="http://twitter.com/jcroft/status/66665497910968320">series of</a> <a href="http://twitter.com/jcroft/status/66665646078959616">tweets</a>):</p>
 <blockquote>
-<p>What other service offers a social graph and auth? And if I used it, would you just complain that I require <span class="caps">THAT</span> service? If I need to accommodate people who don’t want to use Facebook (or whatever), I now have to build my own auth and graph which may be too costly. It’s a business decision. Maybe I’ll trade the extra users for the cost associated with them.</p>
+<p>What other service offers a social graph and auth? And if I used it, would you just complain that I require THAT service? If I need to accommodate people who don’t want to use Facebook (or whatever), I now have to build my own auth and graph which may be too costly. It’s a business decision. Maybe I’ll trade the extra users for the cost associated with them.</p>
 </blockquote>
 <p>My reply (again, combined from <a href="http://twitter.com/AaronGustafson/status/66667146880618496">two</a> <a href="http://twitter.com/AaronGustafson/status/66667838353584128">tweets</a>):</p>
 <blockquote>
@@ -52,11 +51,11 @@ canonical: "https://blog.easy-designs.net/archives/on-requiring-facebook-for-log
 </blockquote>
 <p>Jeff continued (again, from <a href="http://twitter.com/jcroft/status/66668308686057472">a</a> <a href="http://twitter.com/jcroft/status/66668421894520833">series</a> <a href="http://twitter.com/jcroft/status/66668762753015808">of</a> <a href="http://twitter.com/jcroft/status/66668956399828992">tweets</a>):</p>
 <blockquote>
-<p>JanRain is great, but it’s only for auth, right? Doesn’t have graph, events, pages, groups, photos, etc. that <span class="caps">FB</span> has. If those things are essential to your app, you either use <span class="caps">FB</span>, or build them yourself (again, increasing cost). Really, I’m just making an observation that us <span class="caps">UX</span> people often forget that there are business goals, as well, and sometimes they conflict with the <span class="caps">UX</span> goals. Sometimes there are tradeoffs between optimal <span class="caps">UX</span> and cost.</p>
+<p>JanRain is great, but it’s only for auth, right? Doesn’t have graph, events, pages, groups, photos, etc. that FB has. If those things are essential to your app, you either use FB, or build them yourself (again, increasing cost). Really, I’m just making an observation that us UX people often forget that there are business goals, as well, and sometimes they conflict with the UX goals. Sometimes there are tradeoffs between optimal UX and cost.</p>
 </blockquote>
 <p>And <a href="http://twitter.com/jcroft/status/66670060579725312">Jeff’s response</a> <a href="http://twitter.com/jcroft/status/66670120277254144">to my earlier comment</a>:</p>
 <blockquote>
-<p>Yep, I agree. Just pointing out, we don’t know <span class="caps">WHY</span> that site requires Facebook. Maybe they totally agree that it’d be better if they didn’t, but doing so would have cost them millions. I dunno.</p>
+<p>Yep, I agree. Just pointing out, we don’t know WHY that site requires Facebook. Maybe they totally agree that it’d be better if they didn’t, but doing so would have cost them millions. I dunno.</p>
 </blockquote>
 <p><a href="http://twitter.com/AaronGustafson/status/66670120063340545">My</a> <a href="http://twitter.com/AaronGustafson/status/66670698336223232">response</a>:</p>
 <blockquote>
@@ -68,10 +67,10 @@ canonical: "https://blog.easy-designs.net/archives/on-requiring-facebook-for-log
 </blockquote>
 <p>Jeff had a <a href="http://twitter.com/jcroft/status/66672490788814848">similar</a> <a href="http://twitter.com/jcroft/status/66672578982457344">experience</a>:</p>
 <blockquote>
-<p>Yeah, I get the same thing on Lendle. About 50% sign up without <span class="caps">FB</span> or Twitter. But, it <span class="caps">DID</span> take me more time to allow that. For me, it was worth it. But if others come to another conclusion, that’s cool, too. And yeah, great discussion! :)</p>
+<p>Yeah, I get the same thing on Lendle. About 50% sign up without FB or Twitter. But, it DID take me more time to allow that. For me, it was worth it. But if others come to another conclusion, that’s cool, too. And yeah, great discussion! :)</p>
 </blockquote>
-<p>Anyway, I just thought it was worth preserving and sharing that conversation with all of you as login/auth and Facebook integration is a hot topic right now. Coincidentally, <cite><span class="caps">GOOD</span></cite> published an article yesterday about <a href="http://www.good.is/post/the-new-dinosaur-why-i-m-not-on-facebook-and-why-you-shouldn-t-be-either/?utm_source=supr">why one of their senior editors is not on Facebook</a>.</p>
+<p>Anyway, I just thought it was worth preserving and sharing that conversation with all of you as login/auth and Facebook integration is a hot topic right now. Coincidentally, <cite>GOOD</cite> published an article yesterday about <a href="http://www.good.is/post/the-new-dinosaur-why-i-m-not-on-facebook-and-why-you-shouldn-t-be-either/?utm_source=supr">why one of their senior editors is not on Facebook</a>.</p>
 <p>Oh, and Home Elephant <a href="http://twitter.com/HomeElephant/status/66672480831541248">got back to me</a> at the end of my conversation with Jeff:</p>
 <blockquote cite="http://twitter.com/HomeElephant/status/66672480831541248">
-<p><a href="http://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> Working our tails off right now for non-<span class="caps">FB</span> signups. Stay tuned…</p>
+<p><a href="http://twitter.com/AaronGustafson" rel="nofollow">@AaronGustafson</a> Working our tails off right now for non-FB signups. Stay tuned…</p>
 </blockquote>

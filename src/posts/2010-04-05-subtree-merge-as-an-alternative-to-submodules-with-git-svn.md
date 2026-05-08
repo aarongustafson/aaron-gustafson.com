@@ -3,8 +3,8 @@ title: "Subtree merge as an alternative to submodules with git svn"
 date: 2010-04-05 10:45:21
 comments: false
 tags:
-  - "HTML"
-  - "JavaScript"
+  - "developer tools"
+  - "software development"
 description: "We use Subversion as our version control system for all client work here at Easy because we absolutely love Springloops’ hosted Subversion service , but we use Git for all of our open source projects because, well, Git is a lot more fun..."
 canonical: "https://blog.easy-designs.net/archives/subtree-merge-as-an-alternative-to-submodules-with-git-svn/"
 ---

@@ -3,10 +3,8 @@ title: "WebVisions wrapped"
 date: 2007-05-04 16:58:21
 comments: true
 tags:
-  - "accessibility"
-  - "web standards"
-  - "HTML"
-  - "web development"
+  - "web forms"
+  - "conferences"
 description: "I just wrapped my presentation at WebVisions and have posted the slides for my talk, titled “Learning to Love Forms,” up on SlideShare . I have also embedded them below (though the formatting is a bit off on some of the longer sidebars)."
 canonical: "https://blog.easy-designs.net/archives/webvisions-wrapped/"
 ---

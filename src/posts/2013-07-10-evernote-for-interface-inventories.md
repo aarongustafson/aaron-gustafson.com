@@ -3,11 +3,9 @@ title: "Evernote for Interface Inventories"
 date: 2013-07-10 12:00:00
 comments: true
 tags:
-  - "performance"
-  - "software development"
   - "design"
+  - "developer tools"
   - "web design"
-  - "the web"
 description: "Earlier today, Brad Frost posted a great piece touting the usefulness of interface inventories . I’ll give him the floor to explain:"
 canonical: "https://blog.easy-designs.net/archives/evernote-for-interface-inventories/"
 ---
@@ -42,7 +40,7 @@ canonical: "https://blog.easy-designs.net/archives/evernote-for-interface-invent
 <figure>
 <img alt="" src="/i/posts/2013-07-10/interface-inventory-skitch-screenshot.png"/> <figcaption>…your snap is captured in Skitch</figcaption></figure>
 <p>
-<strong>Step 3:</strong> Rinse <span class="amp">&amp;</span> repeat.</p>
+<strong>Step 3:</strong> Rinse & repeat.</p>
 <p>
 	When Skitch syncs up to Evernote, your screenshots will magically appear on any device you have.</p>
 <p>

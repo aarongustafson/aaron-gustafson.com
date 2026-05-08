@@ -3,8 +3,9 @@ title: "Apple vs. the Open Web"
 date: 2013-07-07 22:39:00
 comments: true
 tags:
-  - "mobile"
+  - "the web"
   - "user experience"
+  - "philosophy"
 description: "I’ll admit it: I never really got Siri."
 canonical: "https://blog.easy-designs.net/archives/apple-vs-the-open-web/"
 ---
@@ -23,7 +24,7 @@ canonical: "https://blog.easy-designs.net/archives/apple-vs-the-open-web/"
 <blockquote>
 <ul>
 <li>
-<span class="initial quote">“</span>Hey Dan, your flight to <span class="caps">NYC</span> has just been canceled! Would you like me to book the next one?<span class="final quote">”</span></li>
+<span class="initial quote">“</span>Hey Dan, your flight to NYC has just been canceled! Would you like me to book the next one?<span class="final quote">”</span></li>
 <li>
 <span class="initial quote">“</span>Hey Dan, you weren’t at home when your package got delivered. Would you like me to redirect it to your office?<span class="final quote">”</span></li>
 <li>

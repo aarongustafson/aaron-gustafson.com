@@ -3,8 +3,8 @@ title: "WestHost gets Rails"
 date: 2006-04-14 14:50:29
 comments: false
 tags:
-  - "web design"
-  - "writing"
+  - "web development"
+  - "open source"
 description: "I received an email announcement yesterday that WestHost (my host of choice) is going to be offering Ruby on Rails for install through its Site Manager. I guess it means that, sometime this month, my tutorial on the subject will no..."
 canonical: "https://blog.easy-designs.net/archives/westhost-gets-rails/"
 ---

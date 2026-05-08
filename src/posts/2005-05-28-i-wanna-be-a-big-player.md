@@ -4,7 +4,7 @@ date: 2005-05-28 23:04:03
 comments: false
 tags:
   - "business"
-  - "writing"
+  - "web design"
 description: "I opened the latest issue of Baseline to find a giant 2-page spread for 1&1 (a hosting company), touting their “ Dynamic Content Catalog ” and it’s ability to give you “website content like the big players.” Basically, they are offering..."
 canonical: "https://blog.easy-designs.net/archives/i-wanna-be-a-big-player/"
 ---

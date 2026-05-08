@@ -3,11 +3,9 @@ title: "Zoom Layouts v2"
 date: 2013-09-16 15:56:00
 comments: true
 tags:
-  - "accessibility"
-  - "mobile"
-  - "web standards"
+  - "responsive web design"
   - "CSS"
-  - "web development"
+  - "accessibility"
 description: "Some of you might find it hard to believe, but I began working with adaptive layouts way back in 2005. I was working on project for the Connecticut Department of Transportation and my primary design made heavy use of fixed positioning..."
 canonical: "https://blog.easy-designs.net/archives/zoom-layouts-v2/"
 ---
@@ -17,7 +15,7 @@ canonical: "https://blog.easy-designs.net/archives/zoom-layouts-v2/"
 <figure style="max-width:320px">
 <img alt="" src="/i/posts/2013-09-16/drink-drive-lose-ad-challenge.png"/></figure>
 <p>
-	The layout really started to break down on smaller screens—we had quite a few 800x600 monitors to deal with back in the day—so, inspired by Joe Clark’s A List Apart article “<a href="http://alistapart.com/article/lowvision">Big, Stark <span class="amp">&amp;</span> Chunky</a>,” I created an alternate stylesheet that rearranged the page layout, enlarged the text, and improved the reading experience. Sadly, I don’t have a screenshot of what that looked like, but here’s a decent approximation (sans background images), courtesy of the Wayback Machine:</p>
+	The layout really started to break down on smaller screens—we had quite a few 800x600 monitors to deal with back in the day—so, inspired by Joe Clark’s A List Apart article “<a href="http://alistapart.com/article/lowvision">Big, Stark & Chunky</a>,” I created an alternate stylesheet that rearranged the page layout, enlarged the text, and improved the reading experience. Sadly, I don’t have a screenshot of what that looked like, but here’s a decent approximation (sans background images), courtesy of the Wayback Machine:</p>
 
 <!-- more -->
 
@@ -37,7 +35,7 @@ canonical: "https://blog.easy-designs.net/archives/zoom-layouts-v2/"
 }
 </code></pre>
 <p>
-	This tiny bit of <span class="caps">CSS</span> can ensure that the entire layout is proportionately scaled up based on the screen size being used to access it. To figure out how this bit of code would fit best into your own work, use this formula (replace “X” with your max width size in ems):</p>
+	This tiny bit of CSS can ensure that the entire layout is proportionately scaled up based on the screen size being used to access it. To figure out how this bit of code would fit best into your own work, use this formula (replace “X” with your max width size in ems):</p>
 <pre class="css"><code>
 @media screen and (min-width: 64em) {
   body {

@@ -4,8 +4,8 @@ date: 2005-10-31 15:11:28
 comments: false
 tags:
   - "web standards"
-  - "HTML"
-  - "user experience"
+  - "philosophy"
+  - "web development"
 description: "In his most recent essay , Gerry McGovern was discussing expert opinions and voices. One particular comment he made struck a chord:"
 canonical: "https://blog.easy-designs.net/archives/spreading-the-praise/"
 ---
@@ -21,5 +21,5 @@ canonical: "https://blog.easy-designs.net/archives/spreading-the-praise/"
 <blockquote>
 <p>Limited time, limited people, limited funding… they make you creative</p>
 </blockquote>
-<p>I think the same could be said for embracing web standards. I mean look at <a href="http://www.csszengarden.com">the Zen Garden</a>, the <a href="http://www.webstandardsawards.com">Web Standards Awards</a>, etc. There is some amazingly creative work out there that embraces the “restrictions” of web standards. Frankly, I think that web standards are the main reason <span class="caps">DOM</span> scripting (and all that comes with it) has been able to flourish: standards ensure a solid platform upon which to build anything. Their constraints free you to get creative and really make something new.</p>
+<p>I think the same could be said for embracing web standards. I mean look at <a href="http://www.csszengarden.com">the Zen Garden</a>, the <a href="http://www.webstandardsawards.com">Web Standards Awards</a>, etc. There is some amazingly creative work out there that embraces the “restrictions” of web standards. Frankly, I think that web standards are the main reason DOM scripting (and all that comes with it) has been able to flourish: standards ensure a solid platform upon which to build anything. Their constraints free you to get creative and really make something new.</p>
 <p>So let’s hear it for them: a round of applause for all of the standards evangelists out there. Keep up the great work, we appreciate all that you do.</p>

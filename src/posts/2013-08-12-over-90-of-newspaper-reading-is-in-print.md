@@ -3,17 +3,14 @@ title: "Study: Over 90% of Newspaper Reading is in Print"
 date: 2013-08-12 15:45:00
 comments: true
 tags:
-  - "accessibility"
-  - "responsive design"
-  - "mobile"
-  - "HTML"
+  - "media"
   - "society"
 description: "A recent study in of the UK came to the conclusion that over 90% of newspaper reading is still taking place in print. Their findings are based on a survey of 12 UK newspapers during the period of 2007–2011, examining National Readership..."
 canonical: "https://blog.easy-designs.net/archives/over-90-of-newspaper-reading-is-in-print/"
 ---
 
 <p>
-	A <a href="http://www.tandfonline.com/doi/pdf/10.1080/21670811.2013.818365">recent study in of the <span class="caps">UK</span></a> came to the conclusion that over 90% of newspaper reading is still taking place in print. Their findings are based on a survey of 12 <span class="caps">UK</span> newspapers during the period of 2007–2011, examining National Readership Survey data, circulation audits from the Audit Bureau of Circulations, and Neilsen data regarding web-based engagement.</p>
+	A <a href="http://www.tandfonline.com/doi/pdf/10.1080/21670811.2013.818365">recent study in of the UK</a> came to the conclusion that over 90% of newspaper reading is still taking place in print. Their findings are based on a survey of 12 UK newspapers during the period of 2007–2011, examining National Readership Survey data, circulation audits from the Audit Bureau of Circulations, and Neilsen data regarding web-based engagement.</p>
 
 <!-- more -->
 
@@ -33,7 +30,7 @@ canonical: "https://blog.easy-designs.net/archives/over-90-of-newspaper-reading-
 <li>
 		How has the advent of media queries and responsive design changed the data since 2011?</li>
 <li>
-		Is there a correlation in the <span class="caps">US</span> and other newspaper markets as well? It seems all the stats we see show print declining here.</li>
+		Is there a correlation in the US and other newspaper markets as well? It seems all the stats we see show print declining here.</li>
 <li>
 		With <a href="http://www.thedailybeast.com/articles/2012/10/18/a-turn-of-the-page-for-newsweek.html"><cite>Newsweek</cite> killing off its print version back in 2012</a> and many calls for Jeff Bezos to do the same with the <cite>Washington Post</cite>, is that a wise strategy?</li>
 </ul>

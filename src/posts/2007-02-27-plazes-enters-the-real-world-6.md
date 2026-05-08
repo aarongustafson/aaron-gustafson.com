@@ -3,7 +3,7 @@ title: "Plazes enters the real world"
 date: 2007-02-27 14:14:27
 comments: true
 tags:
-  - "society"
+  - "personal"
 description: "From the plazes photostream ."
 canonical: "https://blog.easy-designs.net/archives/plazes-enters-the-real-world-6/"
 ---

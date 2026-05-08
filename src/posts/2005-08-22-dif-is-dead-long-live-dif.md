@@ -3,8 +3,8 @@ title: "DiF is dead. Long live DiF."
 date: 2005-08-22 14:55:21
 comments: false
 tags:
-  - "career"
-  - "society"
+  - "blogging"
+  - "personal"
 description: "Just when I had gotten over the loss of Design In-Flight , the magazine relaunches as a web-only publication. From the history/about page :"
 canonical: "https://blog.easy-designs.net/archives/dif-is-dead-long-live-dif/"
 ---

@@ -3,8 +3,8 @@ title: "New Easy! app: Tipr"
 date: 2007-07-12 18:07:25
 comments: true
 tags:
-  - "performance"
   - "mobile"
+  - "web development"
 description: "Those of you who’ve been paying attention to the apps that came out of iPhoneDevCamp (or who are using Applists , AppMarks , or any of the other iPhone web app aggregators/launchers) are probably already aware, but we just launched our..."
 canonical: "https://blog.easy-designs.net/archives/new-easy-app-tipr/"
 ---

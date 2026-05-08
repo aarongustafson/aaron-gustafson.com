@@ -3,9 +3,8 @@ title: "Welcome Jeff Bridgforth"
 date: 2013-01-15 12:00:56
 comments: true
 tags:
-  - "web development"
-  - "business"
   - "career"
+  - "personal"
 description: "Today, I have the honor of introducing you to the newest Easy team member: Jeff Bridgforth . Jeff comes to us from Bonnier, where he built websites for Popular Science , Popular Photography , Saveur , and Parenting . Being a former..."
 canonical: "https://blog.easy-designs.net/archives/welcome-jeff-bridgforth/"
 ---

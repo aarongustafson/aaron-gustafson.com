@@ -3,7 +3,7 @@ title: "Proof you can find anything on eBay"
 date: 2005-10-24 01:37:40
 comments: false
 tags:
-  - "society"
+  - "personal"
 canonical: "https://blog.easy-designs.net/archives/proof-you-can-find-anything-on-ebay/"
 ---
 

@@ -3,10 +3,9 @@ title: "Repetition and Replacement"
 date: 2006-01-09 15:26:31
 comments: true
 tags:
+  - "CSS"
   - "web standards"
   - "HTML"
-  - "CSS"
-  - "web development"
 description: "While working on a new site for a client, I stumbled upon an application of the Leahy / Langridge method of image replacement… to images. As far as I know, it had not been attempted before and, frankly, I was a little amazed it worked."
 canonical: "https://blog.easy-designs.net/archives/repetition-and-replacement/"
 ---

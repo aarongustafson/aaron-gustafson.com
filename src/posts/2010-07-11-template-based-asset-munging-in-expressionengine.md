@@ -3,16 +3,15 @@ title: "Template-based Asset Munging in ExpressionEngine"
 date: 2010-07-11 12:28:47
 comments: true
 tags:
-  - "progressive enhancement"
   - "performance"
-  - "HTML"
+  - "ExpressionEngine"
   - "CSS"
   - "JavaScript"
 description: "In our years of working with ExpressionEngine, we’ve tweaked our standard setup quite a few times. We generally handle most every asset, including CSS and JavaScript, as a template. Being a bit obsessed with organization and overall..."
 canonical: "https://blog.easy-designs.net/archives/template-based-asset-munging-in-expressionengine/"
 ---
 
-<p>In our years of working with ExpressionEngine, we’ve tweaked our standard setup quite a few times. We generally handle most every asset, including <span class="caps">CSS</span> and JavaScript, as a template. Being a bit obsessed with organization and overall maintainability of code, we separate out our styles and scripts into separate templates for each major concern (e.g. typography, color, screen layout, etc.).</p>
+<p>In our years of working with ExpressionEngine, we’ve tweaked our standard setup quite a few times. We generally handle most every asset, including CSS and JavaScript, as a template. Being a bit obsessed with organization and overall maintainability of code, we separate out our styles and scripts into separate templates for each major concern (e.g. typography, color, screen layout, etc.).</p>
 
 <!-- more -->
 
@@ -51,4 +50,4 @@ canonical: "https://blog.easy-designs.net/archives/template-based-asset-munging-
   /* Individual page handlers go here */
 ```
 <p>In this particular example, we’re including two jQuery plugins: <a href="http://github.com/easy-designs/FunctionHandler.js">FunctionHandler</a> and <a href="http://cherne.net/brian/resources/jquery.hoverIntent.html">hoverIntent</a>, along with <a href="http://eCSStender.org">eCSStender</a> before adding our <a href="/notebook/a-new-onload-scheme/">page-specific code in FunctionHandler registrations</a>. (jQuery itself is loaded in from Google.)</p>
-<p>Using ExpressionEngine’s template system to manage the munging like this is dead simple and (from our experience evaluating other people’s <span class="caps">EE</span> setups) often underused. Give it a shot on your next project.</p>
+<p>Using ExpressionEngine’s template system to manage the munging like this is dead simple and (from our experience evaluating other people’s EE setups) often underused. Give it a shot on your next project.</p>

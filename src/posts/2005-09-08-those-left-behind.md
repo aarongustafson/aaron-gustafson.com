@@ -3,8 +3,8 @@ title: "Those left behind"
 date: 2005-09-08 00:11:30
 comments: false
 tags:
-  - "software development"
   - "society"
+  - "personal"
 description: "In the wake of the tragedy that befel the citizens of and visitors to New Orleans recently, I’ve been amazed at the amount of support and kindness being shown to the survivors ( Barbara Bush’s comments notwithstanding ). Help has come..."
 canonical: "https://blog.easy-designs.net/archives/those-left-behind/"
 ---
@@ -13,6 +13,6 @@ canonical: "https://blog.easy-designs.net/archives/those-left-behind/"
 
 <!-- more -->
 
-<p>I received an email from a friend in Florida who has agreed to take in two dogs that made it through <abbr title="okay"><span class="caps">OK</span></abbr>, but there are thousands more animals that need temporary homes, be they in kennels, animal boarding houses, veterinarian’s offices, animal shelters, foster homes or rescue programs.</p>
+<p>I received an email from a friend in Florida who has agreed to take in two dogs that made it through <abbr title="okay">OK</abbr>, but there are thousands more animals that need temporary homes, be they in kennels, animal boarding houses, veterinarian’s offices, animal shelters, foster homes or rescue programs.</p>
 <p>From what I understand, there are all breeds of dogs and cats in need of our help. Some are in family groups of 2, 3 and 4 while others are solo. And there are volunteers willing to drive them to you, no matter where you live. The current safe houses for these animals are being inundated and some of these pets will have to be euthanized if they are not moved to make room for the incoming animals.</p>
-<p>If you are interested in taking in a dog or cat (or know someone who is), contact <a href="mailto:Lynda@portone.com">Lynda <span class="caps">V.</span></a> on her cell: 203-515-3024 or at home: 203-227-5308 at any time (day or night).</p>
+<p>If you are interested in taking in a dog or cat (or know someone who is), contact <a href="mailto:Lynda@portone.com">Lynda V.</a> on her cell: 203-515-3024 or at home: 203-227-5308 at any time (day or night).</p>

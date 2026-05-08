@@ -3,16 +3,13 @@ title: "Be a good localStorage neighbor"
 date: 2010-08-02 12:17:28
 comments: true
 tags:
-  - "web standards"
-  - "HTML"
   - "JavaScript"
-  - "browsers"
-  - "web development"
+  - "best practices"
 description: "Most JavaScript developers are keenly aware of what they add to the global object and do their best to namespace their work or sequester it in closures . Namespacing and closures reduce the likelihood that necessary functions and..."
 canonical: "https://blog.easy-designs.net/archives/be-a-good-localstorage-neighbor/"
 ---
 
-<p>Most JavaScript developers are keenly aware of what they add to the global object and do their best to <a href="http://www.dustindiaz.com/namespace-your-javascript/">namespace their work</a> or <a href="http://robertnyman.com/2008/10/09/explaining-javascript-scope-and-closures/">sequester it in closures</a>. Namespacing and closures reduce the likelihood that necessary functions and variables will be accidentally overwritten, causing errors to be thrown and interfaces to break. Unfortunately, <a href="http://dev.w3.org/html5/webstorage/#the-localstorage-attribute">the <code class="js">localStorage</code> <span class="caps">API</span></a> (available in most modern browsers) doesn’t inherently support creating isolated caches for each script because the cache is site-specific and consists simply of key-value pairs. <a href="http://msdn.microsoft.com/en-us/library/ms531424(VS.85).aspx">Internet Explorer’s <code class="js">userData</code> behavior</a> (which is available all the way back to <span class="caps">IE</span>5) does support sequestering the cache to a degree because you need to provide a name for it, but the <span class="caps">API</span> doesn’t make a whole lot of sense and isn’t at all equivalent to <code class="js">localStorage</code>.</p>
+<p>Most JavaScript developers are keenly aware of what they add to the global object and do their best to <a href="http://www.dustindiaz.com/namespace-your-javascript/">namespace their work</a> or <a href="http://robertnyman.com/2008/10/09/explaining-javascript-scope-and-closures/">sequester it in closures</a>. Namespacing and closures reduce the likelihood that necessary functions and variables will be accidentally overwritten, causing errors to be thrown and interfaces to break. Unfortunately, <a href="http://dev.w3.org/html5/webstorage/#the-localstorage-attribute">the <code class="js">localStorage</code> API</a> (available in most modern browsers) doesn’t inherently support creating isolated caches for each script because the cache is site-specific and consists simply of key-value pairs. <a href="http://msdn.microsoft.com/en-us/library/ms531424(VS.85).aspx">Internet Explorer’s <code class="js">userData</code> behavior</a> (which is available all the way back to IE5) does support sequestering the cache to a degree because you need to provide a name for it, but the API doesn’t make a whole lot of sense and isn’t at all equivalent to <code class="js">localStorage</code>.</p>
 
 <!-- more -->
 

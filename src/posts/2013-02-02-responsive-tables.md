@@ -3,11 +3,9 @@ title: "Responsive Tables"
 date: 2013-02-02 17:32:27
 comments: true
 tags:
-  - "accessibility"
-  - "progressive enhancement"
-  - "mobile"
-  - "web standards"
+  - "responsive web design"
   - "HTML"
+  - "accessibility"
 description: "A few smart folks have already put together their thoughts on responsive tables and, while I think the proposed methods are pretty good, I think there might be room for improvement. As such, I’ve been tinkering for a while and came up..."
 canonical: "https://blog.easy-designs.net/archives/responsive-tables/"
 ---
@@ -57,7 +55,7 @@ canonical: "https://blog.easy-designs.net/archives/responsive-tables/"
    </tbody>
   </table>
 ```
-<p><strong>Step 2:</strong> When the screen is below a certain threshold, set the <code class="html">table</code> elements to <code class="html">display: block</code> (thereby linearizing the table), hide the <code class="html">thead</code> where assistive tech won’t see it, and use generated content to expose the <code class="html">data-*</code> attributes. Here’s a snippet of <span class="caps">SASS</span> <span class="amp">&amp;</span> Compass that does that:</p>
+<p><strong>Step 2:</strong> When the screen is below a certain threshold, set the <code class="html">table</code> elements to <code class="html">display: block</code> (thereby linearizing the table), hide the <code class="html">thead</code> where assistive tech won’t see it, and use generated content to expose the <code class="html">data-*</code> attributes. Here’s a snippet of SASS & Compass that does that:</p>
 ```scss
   // undo tables for small screens
   // $break-4 is the px-width break at which you want to cut it off

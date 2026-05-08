@@ -3,8 +3,8 @@ title: "Book Report: Nickel and Dimed"
 date: 2006-11-22 19:58:00
 comments: true
 tags:
-  - "career"
   - "society"
+  - "writing"
 description: "I just finished reading Barbara Ehrenreich’s Nickel and Dimed and it really opened my eyes. Clevery subtitled “How (Not) To Get By in America,” the book is a chronicle of Ehrenreich’s “adventures“ in survival as a member of the low-wage..."
 canonical: "https://blog.easy-designs.net/archives/book-report-nickel-and-dimed/"
 ---

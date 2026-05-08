@@ -3,9 +3,8 @@ title: "Knock on Wood (Pulp)"
 date: 2011-05-06 18:59:11
 comments: false
 tags:
-  - "software development"
-  - "web design"
   - "writing"
+  - "personal"
 description: "I was pretty chuffed to see Web Design in a Nutshell , a book I wrote a few chapters for, show up in this incredible video of a book xylophone. Check it out:"
 canonical: "https://blog.easy-designs.net/archives/knock-on-wood-pulp/"
 ---

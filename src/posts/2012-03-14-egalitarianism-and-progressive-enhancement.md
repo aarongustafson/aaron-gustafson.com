@@ -3,11 +3,9 @@ title: "Egalitarianism and Progressive Enhancement"
 date: 2012-03-14 13:09:00
 comments: true
 tags:
-  - "accessibility"
   - "progressive enhancement"
-  - "web standards"
-  - "user experience"
-  - "society"
+  - "philosophy"
+  - "inclusion"
 description: "In 1971, John Rawls published A Theory of Justice , in which he described the following Thought Experiment he often conducted with students and other groups: The members of the Group were asked to design a society down to the very..."
 canonical: "https://blog.easy-designs.net/archives/egalitarianism-and-progressive-enhancement/"
 ---
@@ -49,7 +47,7 @@ canonical: "https://blog.easy-designs.net/archives/egalitarianism-and-progressiv
 <p>
 	Really? I know a lot of blind people with TVs. Sure, they may not be able to see it themselves, but their spouses, children, and friends likely can. And they can listen to it.</p>
 <p>
-	Back at my old ad agency, I had <a href="/notebook/apparently-some-people-just-dont-care/">an email run-in with a department head over the National Federation for the Blind’s lawsuit againt Target</a>. The <span class="caps">NFB</span> was suing Target because the company refused to address issues with the accessibility of its website that prevented blind users (among others) from being able to shop there. So I passed around a link to <a href="http://www.webstandards.org/2006/02/09/taking-aim-at-targetcom/">Derek Featherstone’s post on the subject</a> as suggested reading. The reaction I got from the department head was that of your typical free-market libertarian:</p>
+	Back at my old ad agency, I had <a href="/notebook/apparently-some-people-just-dont-care/">an email run-in with a department head over the National Federation for the Blind’s lawsuit againt Target</a>. The NFB was suing Target because the company refused to address issues with the accessibility of its website that prevented blind users (among others) from being able to shop there. So I passed around a link to <a href="http://www.webstandards.org/2006/02/09/taking-aim-at-targetcom/">Derek Featherstone’s post on the subject</a> as suggested reading. The reaction I got from the department head was that of your typical free-market libertarian:</p>
 <blockquote cite="http://blog.easy-designs.net/archives/apparently-some-people-just-dont-care/">
 <p>
 		Is Target forcing blind people to shop there? If they don’t, does Target hurt them in some way?</p>
@@ -59,7 +57,7 @@ canonical: "https://blog.easy-designs.net/archives/egalitarianism-and-progressiv
 <p>
 	These are fair points and are the very arguments we often hear against equality legislation like the <a href="http://www.ada.gov/">Americans with Disabilities Act</a>. Ignoring the legal requirements and altruistic motivations behind doing something to provide equal opportunity—and ignoring the fact that in many cases the government will give you tax credits for making your business more accessible—let’s consider the business benefits of being more accessible.</p>
 <p>
-	To return to the <span class="caps">TV</span> store analogy, for all we know, a potential customer—who just happens to be blind (or even just vision-impaired)—might be on the hunt for an awesome home theater system that would be a huge sale for whoever gets her business. If she can’t easily navigate our site to find what she’s looking for—or access our physical storefront—do you think she’s going to stick around and struggle through a frustrating (or potentially humiliating) experience just to give you her money? No way, she’s going to make her purchase from somewhere that is more accomodating, that gives her equal opportunity to make a purchase by respecting her needs. So beyond doing the “right thing,” it’s in our self-interest to be as respectful as possible of our customers and potential customers—that’s <em>good <em>customer</em></em><em> service</em>.</p>
+	To return to the TV store analogy, for all we know, a potential customer—who just happens to be blind (or even just vision-impaired)—might be on the hunt for an awesome home theater system that would be a huge sale for whoever gets her business. If she can’t easily navigate our site to find what she’s looking for—or access our physical storefront—do you think she’s going to stick around and struggle through a frustrating (or potentially humiliating) experience just to give you her money? No way, she’s going to make her purchase from somewhere that is more accomodating, that gives her equal opportunity to make a purchase by respecting her needs. So beyond doing the “right thing,” it’s in our self-interest to be as respectful as possible of our customers and potential customers—that’s <em>good <em>customer</em></em><em> service</em>.</p>
 <p>
 	Progressive enhancement considers customer service (a.k.a. user experience) at every level of an interface because it instructs us to provide equal opportunities to access content and functionality.</p>
 <hr/>
@@ -76,4 +74,4 @@ canonical: "https://blog.easy-designs.net/archives/egalitarianism-and-progressiv
 <p>
 	Many people say it’s impolite to discuss politics (or religion), but I live for these discussions. Discussing either topic gives you so much insight into the what makes a person tick, and I love getting to know people. And despite having never formally studied it, I just love philosophy and believe that my personal philosophy (which is largely shared by the team here at Easy) greatly informs the work that we do. I hope sharing it leads to some interesting discussions both here in the comments and (just maybe) out in the real world when we run into each other—be it at conferences or the coffeshop.</p>
 <p>
-<span class="caps">P.S.</span> - To see other perspectives on progressive enhancement and politics, I highly recommend reading <a href="http://benhoh.com/2012/01/30/from-degradation-to-enhancement/">Ben Hoh’s post</a> and <a href="http://barrysaunders.com/2012/02/progressive-enhancement-and-progressive-politics-a-reply-to-ben-hoh/">Barry Saunders’ follow-up</a>.</p>
+P.S. - To see other perspectives on progressive enhancement and politics, I highly recommend reading <a href="http://benhoh.com/2012/01/30/from-degradation-to-enhancement/">Ben Hoh’s post</a> and <a href="http://barrysaunders.com/2012/02/progressive-enhancement-and-progressive-politics-a-reply-to-ben-hoh/">Barry Saunders’ follow-up</a>.</p>

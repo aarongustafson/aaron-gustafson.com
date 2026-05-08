@@ -3,9 +3,10 @@ title: "Retreat, remembered"
 date: 2011-07-14 10:51:00
 comments: false
 tags:
+  - "conferences"
+  - "mentoring"
   - "HTML"
   - "CSS"
-  - "conferences"
 description: "First off, this post has been way too long in the making. I should have written it a couple months ago, but that’s the thing about running things, you don’t always have time to come up for air. Anyway, without further ado…"
 canonical: "https://blog.easy-designs.net/archives/retreat-remembered/"
 ---
@@ -18,7 +19,7 @@ canonical: "https://blog.easy-designs.net/archives/retreat-remembered/"
 <figure>
 <img alt="" src="/i/posts/2011-07-14/retreat-1-group.jpg"/></figure>
 <p>
-	As many of you know, we officially launched our new training series, <a href="http://retreats4geeks.com">Retreats 4 Geeks</a>, with a <span class="caps">HTML</span>5 <span class="amp">&amp;</span> <span class="caps">CSS</span>3 retreat co-led by Eric Meyer and yours truly. The event was held in an amazing cabin on the side of a mountain in Gatlinburg, <span class="caps">TN</span> and, as you can probably guess, it was downright magical.</p>
+	As many of you know, we officially launched our new training series, <a href="http://retreats4geeks.com">Retreats 4 Geeks</a>, with a HTML5 & CSS3 retreat co-led by Eric Meyer and yours truly. The event was held in an amazing cabin on the side of a mountain in Gatlinburg, TN and, as you can probably guess, it was downright magical.</p>
 <p>
 	I know, it’s my event series, so of course I'm gonna gush, but it really was so much better than even I could have imagined, and here’s why:</p>
 <h2>
@@ -32,7 +33,7 @@ canonical: "https://blog.easy-designs.net/archives/retreat-remembered/"
 <h2>
 	My co-lead</h2>
 <p>
-	Eric Meyer is an amazing guy. Not only is he one of the smartest people working on the web today, but he's also an incredibly nice fellow and a helluvalot of fun to hang out with. His sessions were awesome, often mind-blowing (for me too), and very practical. He was also an excellent mentor (as though I expected any less of him) and was really the perfect co-lead for our inaugural retreat. Plus I had a great time working on <a href="http://meyerweb.com/eric/tools/matrix/">our silly little <span class="caps">CSS</span> transforms tool</a>.</p>
+	Eric Meyer is an amazing guy. Not only is he one of the smartest people working on the web today, but he's also an incredibly nice fellow and a helluvalot of fun to hang out with. His sessions were awesome, often mind-blowing (for me too), and very practical. He was also an excellent mentor (as though I expected any less of him) and was really the perfect co-lead for our inaugural retreat. Plus I had a great time working on <a href="http://meyerweb.com/eric/tools/matrix/">our silly little CSS transforms tool</a>.</p>
 <h2>
 	Last, but by no means least, the people</h2>
 <p>
@@ -40,4 +41,4 @@ canonical: "https://blog.easy-designs.net/archives/retreat-remembered/"
 <p>
 	All told, we felt the retreat was a huge success and are looking forward to organizing next year’s events (to be announced soon!). I’d like to personally extend a huge thank you to Kelly and Jessica for organizing the whole thing and keeping everything running smoothly, to Eric for being an incredible co-trainer, and to all of the attendees for taking a chance on a new idea and making it an incredible experience for all involved.</p>
 <p>
-	Oh, and one last thing, for the hands-on project on the third day of the event, our attendees built <a href="http://r4g.co/events/2011/html5-css3/project/">a pretty stellar tribute to Johnny Cash</a> using all of the <span class="caps">HTML</span>5 <span class="amp">&amp;</span> <span class="caps">CSS</span>3 knowledge they gained over the previous two days. I was really happy with the fruits of their labor, especially considering they organized themselves and managed to build it all in less than a day. Great job yet again guys!</p>
+	Oh, and one last thing, for the hands-on project on the third day of the event, our attendees built <a href="http://r4g.co/events/2011/html5-css3/project/">a pretty stellar tribute to Johnny Cash</a> using all of the HTML5 & CSS3 knowledge they gained over the previous two days. I was really happy with the fruits of their labor, especially considering they organized themselves and managed to build it all in less than a day. Great job yet again guys!</p>

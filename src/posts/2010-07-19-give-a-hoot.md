@@ -3,11 +3,8 @@ title: "Give a hoot"
 date: 2010-07-19 19:06:57
 comments: false
 tags:
-  - "performance"
-  - "HTML"
-  - "CSS"
   - "JavaScript"
-  - "web development"
+  - "best practices"
 description: "As any competent JavaScript knows, it’s not cool to litter the global namespace with variables, functions, and the like. It’s far better to encapsulate your code in an object, a series of objects, or even a closure, exposing only what..."
 canonical: "https://blog.easy-designs.net/archives/give-a-hoot/"
 ---
@@ -22,7 +19,7 @@ canonical: "https://blog.easy-designs.net/archives/give-a-hoot/"
    var a = b = 0;
   })();
 ```
-<p>If you’re familiar with languages like <span class="caps">PHP</span>, you might think this simple closure creates two variables with the same value, but you’d be wrong. It creates a local variable, <code class="js">a</code> and a global variable <code class="js">b</code>, both of which have their value set to 0.</p>
+<p>If you’re familiar with languages like PHP, you might think this simple closure creates two variables with the same value, but you’d be wrong. It creates a local variable, <code class="js">a</code> and a global variable <code class="js">b</code>, both of which have their value set to 0.</p>
 ```php
   <?php
   
@@ -33,7 +30,7 @@ canonical: "https://blog.easy-designs.net/archives/give-a-hoot/"
   
   ?>
 ```
-<p>In exp:easy_gists this means of sharing the value assignment of variables is perfectly legit; the difference, however, is how JavaScript and <span class="caps">PHP</span> treat variable scope. By default, every variable declared in <span class="caps">PHP</span> is scoped to the function it is called within. Global variables only come into play when you use the <code class="php">global</code> declaration or the <code class="php">$_GLOBALS</code> array. In JavaScript, by contrast, any variables not instantiated with a <code class="js">var</code> are added to the global namespace. Hence the namespace pollution in the above example.</p>
+<p>In exp:easy_gists this means of sharing the value assignment of variables is perfectly legit; the difference, however, is how JavaScript and PHP treat variable scope. By default, every variable declared in PHP is scoped to the function it is called within. Global variables only come into play when you use the <code class="php">global</code> declaration or the <code class="php">$_GLOBALS</code> array. In JavaScript, by contrast, any variables not instantiated with a <code class="js">var</code> are added to the global namespace. Hence the namespace pollution in the above example.</p>
 <p>Revisiting the closure, it’s best to rewrite it in one of two ways to maintain the variable scope:</p>
 ```js
   (function(){

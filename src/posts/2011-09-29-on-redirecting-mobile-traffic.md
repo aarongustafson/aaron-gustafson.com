@@ -4,7 +4,6 @@ date: 2011-09-29 11:24:34
 comments: false
 tags:
   - "mobile"
-  - "CSS"
   - "user experience"
 description: "While perusing the latest Costco email, I stumbled onto a pretty sweet looking mini-greenhouse and decided to click through to read more about the product. Unfortunately for me, I was on my phone and Costco is not particularly savvy..."
 canonical: "https://blog.easy-designs.net/archives/on-redirecting-mobile-traffic/"
@@ -15,8 +14,8 @@ canonical: "https://blog.easy-designs.net/archives/on-redirecting-mobile-traffic
 <!-- more -->
 
 <figure><img alt="" src="/i/posts/2011-09-29/costco-redirect.png"/></figure>
-<p>Now I am not completely sold on the need for creating (and maintaining) an independent mobile version of every website; sometimes it makes sense, but other times it’s overkill. That said, however, I am sure of one thing: <strong>if you do redirect mobile traffic, make sure you do so to an equivalent <span class="caps">URI</span>; don’t redirect all requests to the homepage</strong>. When users click a link, they have an expectation of what they will find on the other end of that link. Make sure you meet that expectation.</p>
-<p>I can’t speak to Costco’s server setup specifically because it seems their main site is .Net and the mobile version is <span class="caps">JSP</span>/Struts (neither of which are my cup of tea), but for those of you running Apache (which more than half of you likely are), setting up proper redirection is relatively easy using an .htaccess file:</p>
+<p>Now I am not completely sold on the need for creating (and maintaining) an independent mobile version of every website; sometimes it makes sense, but other times it’s overkill. That said, however, I am sure of one thing: <strong>if you do redirect mobile traffic, make sure you do so to an equivalent URI; don’t redirect all requests to the homepage</strong>. When users click a link, they have an expectation of what they will find on the other end of that link. Make sure you meet that expectation.</p>
+<p>I can’t speak to Costco’s server setup specifically because it seems their main site is .Net and the mobile version is JSP/Struts (neither of which are my cup of tea), but for those of you running Apache (which more than half of you likely are), setting up proper redirection is relatively easy using an .htaccess file:</p>
 ```apacheconf
   # setup
   RewriteEngine on
@@ -34,7 +33,7 @@ canonical: "https://blog.easy-designs.net/archives/on-redirecting-mobile-traffic
 <li>Line 2 ensures redirection is on;</li>
 <li>Line 3 lets us assume all URIs start with “/”;</li>
 <li>Line 8 is a very contrived test for a mobile device by querying the User Agent string being reported by the browser, in a real-world scenario, you will want a much more robust test here;</li>
-<li>Line 9 tests for the existence of a “Prodid” value in the query string and captures the actual product <span class="caps">ID</span> (in Costco’s case, a series of digits) so we can use it later on; and</li>
-<li>Line 10 redirects all requests for “/Browse/​Product.aspx” that pass the two previous tests to “http://m.costco.com/​costco/​product/​productDirectDetail.do” and adds the captured product <span class="caps">ID</span> to the query string as “itemId” (“%1” tells Apache to use the digits that were captured on line 9).</li>
+<li>Line 9 tests for the existence of a “Prodid” value in the query string and captures the actual product ID (in Costco’s case, a series of digits) so we can use it later on; and</li>
+<li>Line 10 redirects all requests for “/Browse/​Product.aspx” that pass the two previous tests to “http://m.costco.com/​costco/​product/​productDirectDetail.do” and adds the captured product ID to the query string as “itemId” (“%1” tells Apache to use the digits that were captured on line 9).</li>
 </ul>
 <p><span>With this sort of simple redirection in place, you can ensure users get where they want to go, quickly and easily.</span></p>

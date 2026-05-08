@@ -3,9 +3,8 @@ title: "Google Measure Map?!?"
 date: 2006-02-14 17:57:44
 comments: false
 tags:
-  - "HTML"
-  - "software development"
   - "business"
+  - "blogging"
 description: "Just when you though all the good purchases were going to Yahoo! , Google ups the ante by picking up Measure Map , the wonderful blog stats analytics tool from my friends at Adaptive Path . Measure Map is what web analytics should be..."
 canonical: "https://blog.easy-designs.net/archives/google-measure-map/"
 ---

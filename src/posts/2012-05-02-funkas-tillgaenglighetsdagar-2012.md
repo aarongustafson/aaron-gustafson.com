@@ -4,9 +4,7 @@ date: 2012-05-02 22:17:00
 comments: false
 tags:
   - "accessibility"
-  - "web standards"
-  - "HTML"
-  - "web development"
+  - "presentations"
   - "conferences"
 description: "A few weeks back, I flew to Sweden to deliver a talk on progressive enhancement for mobile devices at Funkas Tillgänglighetsdagar , an accessibility conference whose name I will probably always butcher. I really enjoyed getting to know..."
 canonical: "https://blog.easy-designs.net/archives/funkas-tillgaenglighetsdagar-2012/"

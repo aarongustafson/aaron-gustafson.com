@@ -9,7 +9,7 @@ tags:
     "HTML",
     "JavaScript",
     "mobile",
-    "UX",
+    "user experience",
   ]
 description: "The pull-to-refresh gesture is second nature on mobile apps, but still uncommon on the web. This web component brings it over without too much fuss."
 twitter_text: "Want pull-to-refresh on the web? Here’s a web component that brings it over nicely."
