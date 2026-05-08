@@ -26,7 +26,7 @@ canonical: "https://blog.easy-designs.net/archives/progressive-enhancement-vs.-h
 <p>
 		Starting from the bottom instead of the top limits creativity. By designing from the top we as designers can take advantage of new technology and build the best user experience possible for those who use the best browsers. I agree that designs should work to a usable degree on every browser and device in which there is a decent level of traffic coming from, however this doesn’t mean we should have to start designing for them first.</p>
 <p>
-		In the case of Brad Frost, he should keep his nifty slider on Barack Obama’s website however on mobile he should find an alternative solution that works. If this means removing the slider all together and replacing it with a simpler navigation method then so be it. He shouldn’t limit the experience of the desktop user just because of the mobile user doesn't have a device that supports this or that.</p>
+		In the case of Brad Frost, he should keep his nifty slider on Barack Obama’s website however on mobile he should find an alternative solution that works. If this means removing the slider all together and replacing it with a simpler navigation method then so be it. He shouldn’t limit the experience of the desktop user just because the mobile user doesn’t have a device that supports this or that.</p>
 </blockquote>
 <p>
 	I don’t mean to pick on Joe here, but he shares a common misconception about progressive enhancement. One I hope my response (below) dispels:</p>
@@ -53,19 +53,19 @@ canonical: "https://blog.easy-designs.net/archives/progressive-enhancement-vs.-h
 		Nothing in progressive enhancement says you can’t use the latest and greatest technologies and techniques, it just asks you to respect your content and your users by being smart about how you apply them. Remember: browsers and technologies come and go<sup><a href="/notebook/progressive-enhancement-vs.-hardboiled-design/#footnote-browser-examples">1</a></sup>; focus on your content and your users.</p>
 <blockquote>
 <p>
-			I agree that designs should work to a usable degree on every browser and device in which there is a decent level of traffic coming from, however this doesn't mean we should have to start designing for them first.</p>
+			I agree that designs should work to a usable degree on every browser and device in which there is a decent level of traffic coming from, however this doesn’t mean we should have to start designing for them first.</p>
 </blockquote>
 <p>
 		First of all, analytics are not always 100% accurate and, secondly, as a web designer or developer, we never know who is coming to our site and what they are looking to do. For all you know, there’s a lady out there looking to spend millions of dollars on the product or service your site (or your client’s) is providing and your analytics program can’t tell you that she’s the 0.001% that came to your site on an aging Blackberry. Analytics can tell you general trends, but they should only be used for general guidance. I’d rather build something that is going to work for a user regardless of her device. I’m not going to waste time trying to re-create the awesome experience she may have in the latest version of Chrome or Firefox, but I sure as hell want to make sure the experience she does have is a positive one.</p>
 <blockquote>
 <p>
-			In the case of Brad Frost, he should keep his nifty slider on Barack Obama's website however on mobile he should find an alternative solution that works.</p>
+			In the case of Brad Frost, he should keep his nifty slider on Barack Obama’s website however on mobile he should find an alternative solution that works.</p>
 </blockquote>
 <p>
 		Point of clarification: Brad does not work for the Obama campaign, he simply brought Stephanie’s attention to the interface, but to your point: “he should find an alternative solution that works.” Absolutely! Building from a workable baseline up to the hi-fi experience of the sliding nav would accomplish that. There’s nothing to say that you can’t have your cake and eat it too; you just need to be smart about your approach—proper planning is key.</p>
 <blockquote>
 <p>
-			He shouldn't limit the experience of the desktop user just because of the mobile user doesn't have a device that supports this or that.</p>
+			He shouldn’t limit the experience of the desktop user just because the mobile user doesn’t have a device that supports this or that.</p>
 </blockquote>
 <p>
 		Of course he shouldn’t. Progressive enhancement doesn’t say that he should.</p>

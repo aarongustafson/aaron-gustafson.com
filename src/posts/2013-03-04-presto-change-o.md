@@ -45,7 +45,7 @@ canonical: "https://blog.easy-designs.net/archives/presto-change-o/"
 <h2>
 	Webkit itself suffers from numerous long-standing, serious bugs</h2>
 <p>
-	Overall, Webkit is a pretty awesome rendering engine. It’s fast, lightweight, and does a damn good job laying out pages. But it’s not a panacea. It has it’s issues.</p>
+	Overall, Webkit is a pretty awesome rendering engine. It’s fast, lightweight, and does a damn good job laying out pages. But it’s not a panacea. It has its issues.</p>
 <p>
 	A brief sojourn through the <a href="https://bugs.webkit.org/">Webkit bug tracker</a> (and <a href="http://code.google.com/p/chromium/issues/">Chromium’s</a> if you’re up for it) reveals a litany of well-documented, long-standing, serious usability, accessibility, and standards-implementation bugs that have not been touched. Here are a couple I’ve been tracking:</p>
 <ul>
@@ -72,7 +72,7 @@ canonical: "https://blog.easy-designs.net/archives/presto-change-o/"
 <li>
 <a href="http://techcrunch.com/2013/02/17/the-pros-and-cons-of-a-webkit-monoculture/">The Pros and Cons of a Webkit Monoculture</a></li>
 <li>
-<a href="http://www.informationweek.com/software/infrastructure/operas-webkit-move-isolates-mozilla/240148741">Opera's WebKit Move Isolates Mozilla</a></li>
+<a href="http://www.informationweek.com/software/infrastructure/operas-webkit-move-isolates-mozilla/240148741">Opera’s WebKit Move Isolates Mozilla</a></li>
 <li>
 <a href="http://www.webmonkey.com/2013/02/think-one-less-browser-means-less-work-think-again/">Think One Fewer Browser Means Less Work? Think Again</a></li>
 <li>

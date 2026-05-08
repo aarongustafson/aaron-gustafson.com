@@ -5,7 +5,7 @@ comments: true
 tags:
   - "progressive enhancement"
   - "business"
-description: "When you’ve been evangelizing progressive enhancement for as long as we have, you invariably come across skeptics. Take this comment on Tim Kadlec’s recent (and well-argued) post about designing experiences that work without JavaScript :"
+description: "When you’ve been evangelizing progressive enhancement for as long as we have, you invariably come across skeptics."
 canonical: "https://blog.easy-designs.net/archives/the-true-cost-of-progressive-enhancement/"
 ---
 
@@ -13,7 +13,7 @@ canonical: "https://blog.easy-designs.net/archives/the-true-cost-of-progressive-
 	When you’ve been evangelizing progressive enhancement for as long as we have, you invariably come across skeptics. Take this comment on <a href="http://timkadlec.com/2013/07/crippling-the-web/">Tim Kadlec’s recent (and well-argued) post about designing experiences that work without JavaScript</a>:</p>
 <blockquote>
 <p>
-		This is all fine and dandy, but not very real world. A cost-benefit analysis has to happen – what does that next user/visitor cost, and more importantly earn you? This idealistic approach would leave most broke if they had to consider “every user” when building a site. That's why clothes come in small, medium, large, and extra large. Most of us have to buy them that way because not everyone can afford a tailor made suit, much less an entire wardrobe. Your approach only works for those who can see the return.</p>
+		This is all fine and dandy, but not very real world. A cost-benefit analysis has to happen — what does that next user/visitor cost, and more importantly earn you? This idealistic approach would leave most broke if they had to consider “every user” when building a site. That’s why clothes come in small, medium, large, and extra large. Most of us have to buy them that way because not everyone can afford a tailor made suit, much less an entire wardrobe. Your approach only works for those who can see the return.</p>
 
 <!-- more -->
 
@@ -22,9 +22,9 @@ canonical: "https://blog.easy-designs.net/archives/the-true-cost-of-progressive-
 	Tim’s response was dead-on:</p>
 <blockquote>
 <p>
-		I think that's where the difference between “support” and “optimization” comes into play. I'm certainly not saying to go out and buy every device under the sun, test on them, make sure things look and behave the same. You don't necessarily have to optimize for all these different devices and scenarios (that's where the cost-benefit analysis has to come in), but it's often not very time consuming to at least support them on some level.</p>
+		I think that’s where the difference between “support” and “optimization” comes into play. I’m certainly not saying to go out and buy every device under the sun, test on them, make sure things look and behave the same. You don’t necessarily have to optimize for all these different devices and scenarios (that’s where the cost-benefit analysis has to come in), but it’s often not very time consuming to at least support them on some level.</p>
 <p>
-		Progressive enhancement can get you a long way towards accomplishing that goal. Sometimes it's as simple as doing something like “cutting the mustard” to exclude older devices and browsers that might choke on advanced JS from having to try and deal with that. The experience isn't the same, but if you've used progressive enhancement to make sure the markup is solid and not reliant on the JavaScript, it's at least something that is usable for them.</p>
+		Progressive enhancement can get you a long way towards accomplishing that goal. Sometimes it’s as simple as doing something like “cutting the mustard” to exclude older devices and browsers that might choke on advanced JS from having to try and deal with that. The experience isn’t the same, but if you’ve used progressive enhancement to make sure the markup is solid and not reliant on the JavaScript, it’s at least something that is usable for them.</p>
 </blockquote>
 <p>
 	I’ve had similar conversations innumerable times in person, on conference calls, in blog comments, and (of course) on Twitter. Sometimes I can win the skeptics over with a well-reasoned philosophical argument, but often I need to start filling in numbers.</p>
@@ -33,7 +33,7 @@ canonical: "https://blog.easy-designs.net/archives/the-true-cost-of-progressive-
 <h2>
 	Backing Off From the Bleeding Edge</h2>
 <p>
-	Some time ago <a href="../we-built-a-chrome-app/index.html">we built a Chrome app for WikiHow</a>. As a Chrome app and a show-piece for the new app store, our client wanted it to have fancy CSS3 animations & transitions, web fonts, a WebDB “back-end”, offline support, and lots of other HTML5-y bells and whistles. And, as our target was a single browser, we relented when asked to go the single-page app route. The app was built to degrade gracefully (it blocked non-WebKit browsers), but it was not progressively enhanced.</p>
+	Some time ago <a href="/notebook/we-built-a-chrome-app/">we built a Chrome app for WikiHow</a>. As a Chrome app and a show-piece for the new app store, our client wanted it to have fancy CSS3 animations & transitions, web fonts, a WebDB “back-end”, offline support, and lots of other HTML5-y bells and whistles. And, as our target was a single browser, we relented when asked to go the single-page app route. The app was built to degrade gracefully (it blocked non-WebKit browsers), but it was not progressively enhanced.</p>
 <p>
 	Skip ahead about a year and our client returned to add support for Firefox and IE9+. Oh boy.</p>
 <p>

@@ -6,7 +6,7 @@ tags:
   - "privacy"
   - "user experience"
   - "progressive enhancement"
-description: "As a profession, we spend a lot of time thinking of the best ways to protect our users’ data and their privacy. In fact, most sites have exhaustive Privacy Policies detailing what information they collect and what they may do with it..."
+description: "As a profession, we spend a lot of time thinking of the best ways to protect our users’ data and their privacy. In fact, most sites have exhaustive Privacy Policies detailing what information they collect and what they may do with it…"
 canonical: "https://blog.easy-designs.net/archives/dont-sell-out-your-users/"
 ---
 
@@ -68,14 +68,15 @@ canonical: "https://blog.easy-designs.net/archives/dont-sell-out-your-users/"
 	And there you have it: a fully-funcitonal set of sharing tools that requires no JavaScript and doesn’t sacrifice your users’ privacy.</p>
 <p>
 	If you want to take it a step further, it’s pretty easy to add a tiny bit of JavaScript to make the links trigger a popup when there’s enough real estate (after all, you probably don’t want to do that on mobile). Here’s the jQuery code we currently use on this site for that purpose:</p>
+
 ```js
-  $('#bookmark').delegate('a','click',function(e){
-   if ( $(window).width() > 700 )
-   {
-   e.preventDefault();
-   window.open(this.href,'share-this','height=300,width=500,status=no,toolbar=no');
-   }
-  });
+$('#bookmark').delegate('a','click',function(e){
+  if ( $(window).width() > 700 ) {
+    e.preventDefault();
+    window.open(this.href,'share-this','height=300,width=500,status=no,toolbar=no');
+  }
+});
 ```
+
 <p>
 	As you can see, with just a little bit of effort (and maybe a bit of research), it’s easy to protect your users. Please consider doing it on your own sites.</p>
