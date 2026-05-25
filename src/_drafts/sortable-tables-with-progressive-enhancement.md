@@ -14,7 +14,7 @@ description: "The table-sortable web component adds client-side sorting to your 
 twitter_text: "Add accessible table sorting without having to rebuild your table markup."
 ---
 
-HTML tables are great for displaying structured data, but they are static. Users often want to sort that data by different columns so they can find what they are after a little faster. The `table-sortable` web component adds client-side sorting with full accessibility support, and it does it without asking you to rewrite your existing table markup.
+HTML tables are great for displaying structured data, but they’re static. Users often want to sort that data by different columns so they can find what they’re after a little faster. The `table-sortable` web component adds client-side sorting with full accessibility support, and it does it without asking you to rewrite your existing table markup.
 
 <!-- more -->
 
@@ -55,7 +55,7 @@ The nice thing about this component is its simplicity. Just wrap your table:
 </table-sortable>
 ```
 
-The component automatically creates accessible `<button>` elements inside each `<th>` for sorting. You do not have to add buttons or links manually. The component handles that part for you.
+The component automatically creates accessible `<button>` elements inside each column header to trigger the sorting behavior. You don’t have to add buttons or links manually. The component handles everything for you.
 
 Click a column header to sort ascending, click again for descending. The component detects numeric values automatically and sorts them correctly (so 100 comes after 20, not after 1).
 
@@ -80,7 +80,7 @@ This is useful for:
 
 The “Price” and “Stock” columns use numeric values for sorting while displaying formatted text. You get the sort behavior you want without having to show the raw value to anyone.
 
-## Hidden sort keys
+## Hidden sort keys -- this feels odd. Wouldn’t you just wrap Smith?
 
 Use `[data-sort-as]` elements to provide hidden sort values:
 
@@ -162,12 +162,12 @@ The `label-ascending` and `label-descending` values are prefixed with the column
 Available attributes:
 
 - `label-sortable` - Label for unsorted columns (default: “Click to sort”)
-- `label-ascending` - Label when sorted ascending (default: “sorted ascending. Click to sort descending”)
-- `label-descending` - Label when sorted descending (default: “sorted descending. Click to sort ascending”)
+- `label-ascending` - Label when sorted ascending (default: “Sorted ascending. Click to sort descending”)
+- `label-descending` - Label when sorted descending (default: “Sorted descending. Click to sort ascending”)
 
 ## Styling
 
-The component uses light DOM, so you can style tables normally. It adds a few classes to help with sort indicators:
+The component uses light DOM, so you can style tables normally. It adds a few `class` values to help with sort indicators:
 
 - `active` - Applied to the currently sorted `<th>`
 - `up` - Applied when sorted ascending
@@ -197,7 +197,7 @@ col.sorted {
 
 ## Events
 
-Listen for sort changes:
+If you want to layer in your own functionality on top of the default behavior, you can listen for sort changes:
 
 ```javascript
 const element = document.querySelector("table-sortable");
@@ -216,21 +216,13 @@ The event detail includes:
 - `direction` - “asc” or “desc”
 - `header` - The `<th>` element
 
-## Keyboard navigation
-
-Full keyboard support:
-
-- **Tab** - Move focus to column headers
-- **Enter** - Activate sorting
-- **Space** - Activate sorting
-
-All sortable headers are focusable and activatable via keyboard.
-
 ## Accessibility features
 
 The component prioritizes accessibility:
 
 1. **Keyboard navigation**: All headers are keyboard accessible
+   - <kbd>Tab</kbd> - Move focus to column headers
+   - <kbd>Enter</kbd> or <kbd>Space</kbd> - Activate sorting
 2. **Screen reader support**: `aria-sort` indicates column sort state (ascending, descending, none)
 3. **Live region**: Announces sort changes using customizable labels
 4. **Progressive enhancement**: Automatically creates accessible buttons
@@ -238,6 +230,8 @@ The component prioritizes accessibility:
 6. **Focus indicators**: Proper focus styles for keyboard navigation
 
 ## Sorting behavior
+
+Here’s the default approach to sorting:
 
 - **First click**: Sort ascending
 - **Second click**: Sort descending
@@ -247,21 +241,9 @@ The component prioritizes accessibility:
 
 The component is smart about numeric detection. Values like “10”, “20”, and “100” sort numerically rather than alphabetically, which is the sort of thing users rarely notice until it is wrong.
 
-## Column highlighting
-
-The component provides automatic column highlighting via `<col>` elements. The currently sorted column receives a `.sorted` class on its corresponding `<col>`, allowing you to style entire columns:
-
-```css
-col.sorted {
-  background-color: rgba(0, 0, 0, 0.03);
-}
-```
-
-## Progressive enhancement philosophy
+## Progressive enhancement, naturally
 
 If JavaScript fails to load, you still have a perfectly functional HTML table. Users can read all the data; they just cannot sort it. Nothing breaks. You just lose the enhancement.
-
-The component creates buttons inside `<th>` elements automatically. You write plain semantic HTML and get the accessible behavior layered on top, which is exactly how I like these things to work.
 
 ## Demo
 
