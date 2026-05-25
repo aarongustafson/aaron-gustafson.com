@@ -8,7 +8,7 @@ twitter_text: "@MrChuckD challenges me to confront myself and my privilege"
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: eleventh
+  ordinal: "11th"
 ---
 
 Few people in hip-hop command as much respect as <a href="https://twitter.com/MrChuckD">Chuck D</a>. But unlike many who’ve achieved his level of critical and commercial success, Chuck D has never stopped fighting for others. And he’s challenged me to do my part.

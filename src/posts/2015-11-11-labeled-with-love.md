@@ -10,7 +10,7 @@ crossposted:
 series:
   name: "Modern Web Form Best Practices"
   tag: series-forms
-  ordinal: first
+  ordinal: "1st"
 ---
 
 Forms exist on pretty much every site on the web in one form or another. They are the primary mechanism by which we gather information from our users.[^1] Of course, before anyone can fill out a form, they need to know what it’s asking for. Labeling is key.

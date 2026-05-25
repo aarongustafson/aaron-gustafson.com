@@ -18,7 +18,7 @@ twitter_text: "New #WebComponent: Show users which validation requirements theyâ
 series:
   name: "Modern Web Form Best Practices"
   tag: "series-forms"
-  ordinal: "12"
+  ordinal: "12th"
 ---
 
 Password requirements, username rules, input format constraints: forms often have multiple validation requirements, but users frequently do not find out whether they are meeting them until they hit submit. The `form-validation-list` web component changes that by providing real-time visual feedback as users type, showing exactly which requirements are met and which are not.

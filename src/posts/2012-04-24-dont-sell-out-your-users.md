@@ -48,6 +48,7 @@ canonical: "https://blog.easy-designs.net/archives/dont-sell-out-your-users/"
 </ol>
 <p>
 	Facebook seems less complicated, but it’s really not. Sure, the URL is simple—<code>http://www.facebook.com/sharer.php</code> with the URL supplied as <code>u</code> in the query string—but to control what Facebook displays when your page is shared, you need to add some <code>meta</code> tags that describe the page as an <a href="http://ogp.me/">OpenGraph</a> object. Here’s a sample from this blog post:</p>
+
 ```html
   <meta property="og:site_name" content="The Easy Designs Blog"/>
   <meta property="og:image" content="/i/facebook-icon.png?v=20111226"/>
@@ -58,6 +59,7 @@ canonical: "https://blog.easy-designs.net/archives/dont-sell-out-your-users/"
   <meta property="og:description" content="Most sites have exhaustive Privacy Policies detailing what information they collect and what they may do with it, which is why I find it bizarre that many of these same sites have chosen to hand over their users’ browsing habits to third parties such as Twitter, Facebook, and Google without considering the implications."/>
   <meta property="og:url" content="http://blog.easy-designs.net/archives/dont-sell-out-your-users/"/>
 ```
+
 <p>
 	This set of <code>meta</code> tags establishes this post as an “article” with a title, description, and a canonical URL, which ensures it is displayed in Facebook properly. Facebook maintains <a href="https://developers.facebook.com/docs/opengraph/">pretty decent documentation on OpenGraph and the pieces they support</a> and they also have a <a href="https://developers.facebook.com/tools/debug">handy testing tool you can use to see if everything is making it to them properly</a>. (It’s also worth noting that, using the debugger, you can also force Facebook to update any previously cached content from a given URL.)</p>
 <p>

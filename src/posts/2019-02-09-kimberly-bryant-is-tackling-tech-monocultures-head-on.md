@@ -8,7 +8,7 @@ twitter_text: "@6gems risked everything to improve the lives of young Black wome
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: ninth
+  ordinal: "9th"
 ---
 
 A modern revolutionary, [Kimberly Bryant](https://twitter.com/6gems) left her lucrative biotech job to address the lack of diversity in the tech industry by starting [Black Girls Code](http://www.blackgirlscode.com/). It all started when her daughter Kia—an avid gamer—expressed interest in learning to program at the age of 10.

@@ -8,7 +8,7 @@ twitter_text: "Pauli Murray was fearless, outspoken, and committed to removing b
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: sixteenth
+  ordinal: "16th"
 ---
 
 History is filled with people who are notable for one reason or another. Pauli Murray is notable for dozens. Throughout her life, she was told she couldn’t do things, often because she was Black or a woman (or both). In pretty much every instance, she pushed back, challenging the cultural norms of her time and notions of what was acceptable.

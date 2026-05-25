@@ -9,7 +9,7 @@ crossposted:
 series:
   name: "Modern Web Form Best Practices"
   tag: series-forms
-  ordinal: second
+  ordinal: "2nd"
 ---
 
 “Checkbox” form controls have long been a part of software. They enable users to provide a simple binary response—yes or no. On the Web, we often see them in two scenarios: confirmations and multiple choice.

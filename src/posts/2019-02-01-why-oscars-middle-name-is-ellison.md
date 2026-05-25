@@ -7,7 +7,7 @@ description: "Ralph Ellison’s acclaimed Invisible Man has been hugely influent
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: first
+  ordinal: "1st"
 ---
 
 I don’t remember the class or the year, but back in high school I remember being asked to choose one from a selection of books to read and write a report on. That was my first exposure to Ralph Ellison’s <cite>Invisible Man</cite> and my first glimpse into the realities of racism as seen from the perspective of a Black man in America.

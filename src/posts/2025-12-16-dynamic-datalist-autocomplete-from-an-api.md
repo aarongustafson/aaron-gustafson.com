@@ -17,7 +17,7 @@ twitter_text: "Want API-driven autocomplete suggestions in your forms? Here’s 
 series:
   name: "Modern Web Form Best Practices"
   tag: "series-forms"
-  ordinal: "9"
+  ordinal: "9th"
 ---
 
 HTML’s `datalist` element provides native autocomplete functionality, but it’s entirely static—you have to know all the options up front. The `dynamic-datalist` web component solves this by fetching suggestions from an API endpoint as users type, giving you the benefits of native autocomplete with the flexibility of dynamic data.

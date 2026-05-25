@@ -8,7 +8,7 @@ twitter_text: "I can’t even begin to comprehend the brilliance of Katherine Jo
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: twenty-sixth
+  ordinal: "26th"
 ---
 
 As I’ve mentioned previously, I’ve wasn’t all that into space growing up. That said, I remember going to the Kennedy Space Center and watching movies and TV shows about our journeys into space. And I vividly recall the participants being depicted as white men. All of them. But that’s not accurate; there was an entire corps of women who did complex math to make flight (including space flight) possible and safe. And among those women, there was a group of Black women who did this work too. Katherine Johnson was chief among them.

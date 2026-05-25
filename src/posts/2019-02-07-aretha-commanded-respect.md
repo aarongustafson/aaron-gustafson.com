@@ -7,7 +7,7 @@ description: "Apart from her amazing voice and presence, the thing I will rememb
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: seventh
+  ordinal: "7th"
 ---
 
 We lost an amazing voice and an amazing human being when Aretha Franklin died last year. Countless articles have been written about the positive impact she’s had on the struggles for both Civil Rights and Native American rights. Apart from her amazing voice and presence, the thing I will remember most about Aretha is her purse.

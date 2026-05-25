@@ -9,7 +9,7 @@ in_reply_to: https://www.otto-js.com/news/article/chrome-and-edge-enhanced-spell
 series:
   name: "Modern Web Form Best Practices"
   tag: "series-forms"
-  ordinal: "fourth"
+  ordinal: "4th"
 hero:
   src: /i/posts/2022-09-19/hero.jpg
   credit: Aaron Gustafson × DALL·E

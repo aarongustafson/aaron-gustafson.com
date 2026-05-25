@@ -8,7 +8,7 @@ twitter_text: "Jack Johnson’s unwillingness to settle for what he was given as
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: twenty-second
+  ordinal: "22nd"
 ---
 
 As I’ve mentioned before, I’m not much of a sports guy. And if I’m not much of a sports guy, I’m really not much of a boxing guy; I’ve just never been into watching people beat the crap out of each other. That said, I find Jack Johnson’s story an interesting one, especially for its significance in the time of modern athlete activists like Colin Kaepernick.

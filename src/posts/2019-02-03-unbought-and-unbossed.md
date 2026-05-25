@@ -7,7 +7,7 @@ description: "Shirley Chisholm was not a woman I had much familiarity with growi
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: third
+  ordinal: "3rd"
 ---
 
 I’ll start by admitting that Shirley Chisholm was not a woman I had much familiarity with growing up. Even though I spent a good portion of my youth in New York, my family (my mother especially) leaned heavily republican when it came to politics. Over the years, her name cropped up, but it wasn’t until Kelly became a recipient of Girls, Inc.’s “Unbought and Unbossed” award that I began to look into her history and appreciate the lasting impact of her life on this earth.
