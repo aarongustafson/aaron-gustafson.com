@@ -1,6 +1,6 @@
 ---
 title: "Easy Data-entry Verification with a Web Component"
-date: 2026-05-25 10:00:00 -07:00
+date: 2026-05-25 22:23:24 +00:00
 comments: true
 tags:
   [
