@@ -17,7 +17,7 @@ twitter_text: "Browsers crash. Tabs close. Life happens. Here’s a web componen
 series:
   name: "Modern Web Form Best Practices"
   tag: "series-forms"
-  ordinal: "11"
+  ordinal: "11th"
 ---
 
 Few things are more annoying than losing your progress halfway through a form. Maybe the browser crashes. Maybe the tab gets closed. Maybe your kid yells from the other room and you come back three hours later wondering why you ever thought now was a good time to fill out a mortgage application. Whatever the cause, `form-saver` makes those interruptions a lot less obnoxious. Which is nice, because forms are usually annoying enough on their own.

@@ -24,7 +24,7 @@ hero:
 series:
   name: "Modern Web Form Best Practices"
   tag: "series-forms"
-  ordinal: "third"
+  ordinal: "3rd"
 crossposted:
   Codementor: https://www.codementor.io/@aarongustafson/bring-focus-to-the-first-form-field-with-an-error-23ckq7nj58/
 ---

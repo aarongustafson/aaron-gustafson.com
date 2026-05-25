@@ -8,7 +8,7 @@ twitter_text: "Add repeatable form field groups with automatic numbering and nat
 series:
   name: "Modern Web Form Best Practices"
   tag: "series-forms"
-  ordinal: "10"
+  ordinal: "10th"
 ---
 
 Sometimes you need users to provide multiple instances of the same information—multiple email addresses, phone numbers, team members, or emergency contacts. The `form-repeatable` web component makes this straightforward, handling field duplication, automatic renumbering, and seamless form submission via the ElementInternals API.

@@ -17,7 +17,7 @@ twitter_text: "Need to obfuscate form field values when they’re not being edit
 series:
   name: "Modern Web Form Best Practices"
   tag: "series-forms"
-  ordinal: "8"
+  ordinal: "8th"
 ---
 
 We have the password reveal pattern for passwords, but what about other sensitive fields that need to be readable while editing and obfuscated while at rest? The `form-obfuscator` web component does exactly that.

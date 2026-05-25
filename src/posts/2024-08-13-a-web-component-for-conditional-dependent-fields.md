@@ -16,7 +16,7 @@ twitter_text: "Sometimes you need to require a form field only if another field 
 series:
   name: "Modern Web Form Best Practices"
   tag: "series-forms"
-  ordinal: "6"
+  ordinal: "6th"
 ---
 
 A few weeks back I released [a web component to enable you to add requirement rules to checkbox groups](https://www.aaron-gustafson.com/notebook/requirement-rules-for-checkboxes/). Continuing in the form utility space, I’ve created a new web component that allows you to make fields required based on the values of other fields: `form-required-if`.

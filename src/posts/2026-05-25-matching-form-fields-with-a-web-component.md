@@ -17,7 +17,7 @@ twitter_text: "Need two form fields to match? `form-matching-fields` adds simple
 series:
   name: "Modern Web Form Best Practices"
   tag: "series-forms"
-  ordinal: "7"
+  ordinal: "7th"
 ---
 
 Sometimes the simplest form pattern ends up being the one you repeat <i lang="la">ad infinitum</i>: “Type it once, then type it again.” We do it for password confirmations, email verification, and any flow where a typo can create expensive follow-up work. This week I released a small web component to handle that pattern cleanly: [`form-matching-fields`](https://github.com/aarongustafson/form-matching-fields).
