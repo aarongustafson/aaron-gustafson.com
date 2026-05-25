@@ -8,7 +8,7 @@ twitter_text: "Remember when Maya Angelou became San Francisco’s first Black w
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: thirtieth
+  ordinal: "30th"
 ---
 
 There are so many reasons to love and admire Maya Angelou. Most of these stem from her novels, poetry, and civil rights work, but I’m going to pick an unusual one: she was determined to be the first Black woman to conduct a cable car in San Francisco. And she succeeded at 16.

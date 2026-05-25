@@ -8,7 +8,7 @@ twitter_text: "@Baratunde deftly weaves important lessons and difficult conversa
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: twentieth
+  ordinal: "20th"
 ---
 
 I picked up a copy of [Baratunde Thurston](https://twitter.com/baratunde)’s <cite>How to Be Black</cite> pretty much as soon as it hit the shelves in 2012. I was a huge fan of his work as digital director for [<cite>The Onion</cite>](https://www.theonion.com/) and was really excited to read his take on what it meant to be Black in America. The book was brilliant in its concept—part memoir, part satirical self-help book—but also in its execution, which included not only reflections on his own life experiences, but thoughts from others folks like [W. Kamau Bell](https://twitter.com/wkamaubell) (who [I profiled earlier](/notebook/w-kamau-bell-is-all-about-dialogue/)) and [damali ayo](https://wikipedia.org/wiki/Damali_ayo).

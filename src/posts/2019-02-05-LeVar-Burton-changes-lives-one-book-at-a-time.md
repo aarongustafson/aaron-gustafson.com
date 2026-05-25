@@ -7,7 +7,7 @@ description: "LeVar Burton has done tons of other notable things during his care
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: fifth
+  ordinal: "5th"
 ---
 
 Growing up, I was a casual viewer of the various Star Trek series, but was never a huge fan. Sure, I had a passing familiarity with [LeVar Burton](https://twitter.com/levarburton)’s character, Geordi La Forge, on [<cite>Star Trek: The Next Generation</cite>](https://en.wikipedia.org/wiki/Star_Trek:_The_Next_Generation), but to me he will always be the host of [<cite>Reading Rainbow</cite>](https://en.wikipedia.org/wiki/Reading_Rainbow). And I’m no alone. Millions of late GenX-ers (like me) and young Millennials grew up watching and learning from his PBS show.

@@ -8,7 +8,7 @@ twitter_text: "I can’t help but appreciate the irony of Thomas Jennings’ use
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: eighth
+  ordinal: "8th"
 ---
 
 I hadn’t heard about Thomas Jennings until recently, but his story is a pretty impressive one. Did you know he invented dry cleaning? Yeah, a white man is often credited with the invention of modern dry cleaning, but Thomas Jennings invented the “dry scouring” technique that gave birth to modern dry cleaning. He also successfully patented the idea, becoming the first Black man to be awarded a patent for his invention. In 1821, a full 42 years before the Emancipation Proclamation!

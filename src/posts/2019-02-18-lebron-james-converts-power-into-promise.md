@@ -8,7 +8,7 @@ twitter_text: "@KingJames greatest legacy will be as a champion for education an
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: eighteenth
+  ordinal: "18th"
 ---
 
 I’m the first to admit that I really don’t know much about sports. Sure, I know, generally, how most sports are played, but I only recognize a handful of “sports heroes,” mainly because I dabbled in collecting sports trading cards in my teens. When it comes to sports, I may live under a rock, but I know who LeBron James is. I also respect the hell out of him. Not because he’s a phenomenal basketball player (which I’m sure he is… I’ve never seen him play), but because of how he has channeled his power as a cultural icon into making a difference for the children of Akron, Ohio.

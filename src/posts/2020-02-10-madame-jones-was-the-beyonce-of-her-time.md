@@ -7,7 +7,7 @@ description: "With her incredible voice, Sissieretta Jones became the highest-pa
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: thirty-eighth
+  ordinal: "38th"
 ---
 
 When I learned of Sissieretta Jones (a.k.a., Madame Jones), and began reading up on her, I noticed several parallels between her career and Beyoncé’s.

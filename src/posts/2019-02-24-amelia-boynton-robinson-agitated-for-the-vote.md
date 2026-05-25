@@ -8,7 +8,7 @@ twitter_text: "Amelia Boynton Robinson’s courage and commitment to getting (an
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: twenty-fourth
+  ordinal: "24th"
 ---
 
 In 1965, Amelia Boynton Robinson helped organize the march on Montgomery, Alabama’s capital in protest of segregation and the continued disenfranchisement of Black people. That march turned became known as Bloody Sunday and has been chronicled in numerous books and films, most recently in <cite>Selma</cite>. For her part in the march, she was beaten unconscious by a member of the Alabama State Police. Undeterred, she marched again two days later, but they didn’t make it to Montgomery. A few weeks later, with an army of 25,000 at her side, she marched all the way to the capital, helping to draw national attention to the disenfranchisement of Black citizens and contributing to the passage of the Voting Rights Act of 1965.

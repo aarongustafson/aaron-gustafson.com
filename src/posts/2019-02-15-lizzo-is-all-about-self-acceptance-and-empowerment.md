@@ -8,7 +8,7 @@ twitter_text: "As someone who’s dealt with his own body issues, I am inspired 
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: fifteenth
+  ordinal: "15th"
 ---
 
 I can’t remember exactly when I discovered [Lizzo](https://twitter.com/lizzo), but I do remember how refreshing I found [her work](https://www.youtube.com/playlist?list=PLbHR-EqT3TYTcc4jWKxZLxhQSRwszuOVx). A self-professed “big girl with a cute face,” Lizzo is incredibly empowered and comfortable in her own skin. Having struggled with my own body image issues—including dealing with a decent amount of body shaming—I’ve found her ability to find beauty in everyone—including herself—inspirational.

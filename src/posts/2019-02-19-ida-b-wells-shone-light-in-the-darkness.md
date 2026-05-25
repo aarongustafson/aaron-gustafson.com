@@ -8,7 +8,7 @@ twitter_text: "Ida B. Wells was a Black former slave (and woman) reporting on ly
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: nineteenth
+  ordinal: "19th"
 ---
 
 Investigative journalists have it rough. First off, it takes a ton of research to uncover the truth. Triple that if the subject is something folks really don’t want you investigating. Then there are the smear campaigns, threats of violence, intimidation, and (in some cases) actual violence committed against these reporters. With that in your head, imagine being Ida B. Wells, a Black former slave (and woman) reporting on lynchings throughout the South after Emancipation. Brave doesn’t even begin to describe her.

@@ -7,7 +7,7 @@ description: "From Uncivil to “Seeing White” to his Twitter feed, Chenjerai 
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: second
+  ordinal: "2nd"
 ---
 
 If you aren’t a podcast nerd like me, you may not be familiar with the name [Chenjerai Kumanyika](https://twitter.com/catchatweetdown). My first introduction to his thoughtful and matter-of-fact approach to race relations, Black history, and more came when I started listening to the [Uncivil podcast](https://www.gimletmedia.com/uncivil).

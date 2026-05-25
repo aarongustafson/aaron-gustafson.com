@@ -8,7 +8,7 @@ twitter_text: "Nina Simone wasn’t afraid to say what others wouldn’t… or c
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: fourteenth
+  ordinal: "14th"
 ---
 
 Nina Simone’s performance of “My Baby Just Cares for Me” has long been one of my favorite songs. Her hands slink across the piano keys as her unmistakable voice seems to dance in, out and, around the melody they produce. It’s a joy to listen to and still gives me those _this-is-amazing_ shivers that only the best music does. I don’t recall my first introduction to Nina Simone, but I remember how striking her voice was. And she used that voice to say the things others couldn’t.

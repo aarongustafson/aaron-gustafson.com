@@ -8,7 +8,7 @@ twitter_text: "Anna Arnold Hedgeman was the glue for several civil rights moveme
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: twelfth
+  ordinal: "12th"
 ---
 
 A few weeks back, [Marcy Sutton](https://twitter.com/marcysutton) shared a slide deck by [Tanya Reilly](https://twitter.com/whereistanya) with me. The talk was [“Being Glue”](https://www.slideshare.net/TanyaReilly/being-glue) and it discussed the incredibly important (and shamefully undervalued) role of being the “glue” that holds a team together and makes them successful. That talk was concerned with technical teams, but this role is universal to any organization, collaboration, or project. In many ways, [Anna Arnold Hedgeman](https://www.thoughtco.com/anna-arnold-hedgeman-biography-3530370) was glue for the civil rights movement and I don’t think she gets enough credit for it.

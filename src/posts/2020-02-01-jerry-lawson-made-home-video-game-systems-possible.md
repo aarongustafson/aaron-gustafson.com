@@ -8,7 +8,7 @@ twitter_text: "I would have had a very different childhood had it not been for J
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: twenty-ninth
+  ordinal: "29th"
 ---
 
 One of my fondest childhood memories was getting a Nintendo Entertainment System for my birthday. It wasn’t the expensive set with the robot and the gun (we were poor), but my mom somehow managed to scrape together the $199 (over $470 in today’s dollars) for the system. It opened up a whole new world for me.

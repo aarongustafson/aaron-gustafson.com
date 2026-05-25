@@ -7,7 +7,7 @@ description: "While there is certainly a lot of bizarre, suspect, and downright 
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: fourth
+  ordinal: "4th"
 ---
 
 Before [the January 28th episode of The Nod dropped](https://www.gimletmedia.com/the-nod/finesse-god), I’ll be honest, I had absolutely no idea who [Father Divine](https://wikipedia.org/wiki/Father_Divine)—a Black man who claimed to be God—was. You should definitely listen to the episode—it’s fascinating—but I wanted to take a moment to share a few pieces of Father Divine’s story that really stuck out to me.

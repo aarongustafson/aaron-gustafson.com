@@ -8,7 +8,7 @@ tweet_text: "In so many ways, Jane Bolin was a pioneer. I can’t even begin to 
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: thirty-fourth
+  ordinal: "34th"
 ---
 
 If you‘ve heard of Jane Bolin, it’s probably in the context of her becoming the first Black judge in the United States. It’s quite the accomplishment, no doubt, but Jane’s life was quite literally filled with firsts.

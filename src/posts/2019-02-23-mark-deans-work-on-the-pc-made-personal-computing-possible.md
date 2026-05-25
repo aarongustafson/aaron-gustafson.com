@@ -8,7 +8,7 @@ twitter_text: "Without Mark Dean’s pioneering work at IBM, the web-based giant
 series:
   name: "Honoring Black History"
   tag: series-black-history
-  ordinal: twenty-third
+  ordinal: "23rd"
 ---
 
 Mark Dean’s name may not be part of the public consciousness that Jeff Bezos’ or Elon Musk’s is, but they actually owe him a huge debt of gratitude. Without his pioneering work at IBM, their big money-makers—Amazon and PayPal, respectively—might never have existed.
