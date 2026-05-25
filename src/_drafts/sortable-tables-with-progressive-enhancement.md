@@ -55,7 +55,7 @@ The nice thing about this component is its simplicity. Just wrap your table:
 </table-sortable>
 ```
 
-The component automatically creates accessible `<button>` elements inside each column header to trigger the sorting behavior. You don’t have to add buttons or links manually. The component handles everything for you.
+The component automatically creates accessible `<button>` elements inside each column header to trigger the sorting behavior. If you already have links or buttons in your headers, it works with those too.
 
 Click a column header to sort ascending, click again for descending. The component detects numeric values automatically and sorts them correctly (so 100 comes after 20, not after 1).
 
@@ -80,15 +80,18 @@ This is useful for:
 
 The “Price” and “Stock” columns use numeric values for sorting while displaying formatted text. You get the sort behavior you want without having to show the raw value to anyone.
 
-## Hidden sort keys -- this feels odd. Wouldn’t you just wrap Smith?
+## Inline sort keys with `data-sort-as`
 
-Use `[data-sort-as]` elements to provide hidden sort values:
+Use `[data-sort-as]` to mark the visible text fragment that should lead sorting:
 
 ```html
-<td><span data-sort-as>Smith</span>John Smith</td>
+<td>John <span data-sort-as>Smith</span></td>
 ```
 
-Hide the element with CSS:
+This lets you sort by last name while still displaying a natural full name.
+
+If you need a sort token that should not be visible, you can hide a
+`[data-sort-as]` element with CSS:
 
 ```css
 [data-sort-as] {
@@ -96,7 +99,7 @@ Hide the element with CSS:
 }
 ```
 
-This allows sorting by last name while displaying “First Last” format. The hidden value is used for sorting; the visible text appears to users.
+In most cases, though, keeping the sort token visible is preferable because it reduces duplicated content.
 
 ## Grouped tables
 
@@ -225,7 +228,7 @@ The component prioritizes accessibility:
    - <kbd>Enter</kbd> or <kbd>Space</kbd> - Activate sorting
 2. **Screen reader support**: `aria-sort` indicates column sort state (ascending, descending, none)
 3. **Live region**: Announces sort changes using customizable labels
-4. **Progressive enhancement**: Automatically creates accessible buttons
+4. **Progressive enhancement**: Automatically creates accessible buttons when needed and works with existing links/buttons
 5. **Visual indicators**: CSS classes for active columns and sort direction
 6. **Focus indicators**: Proper focus styles for keyboard navigation
 
@@ -263,10 +266,21 @@ Check out the project on [GitHub](https://github.com/aarongustafson/table-sortab
 npm install @aarongustafson/table-sortable
 ```
 
-Import and use:
+Use the guarded auto-define helper:
 
 ```javascript
-import "@aarongustafson/table-sortable";
+import "@aarongustafson/table-sortable/define.js";
 ```
 
-Based on my [jQuery Easy Sortable Tables](https://github.com/easy-designs/jquery.easy-sortable-tables.js), now as a modern Custom Element with built-in accessibility.
+Or import the class and define it yourself:
+
+```javascript
+import { TableSortableElement } from "@aarongustafson/table-sortable";
+
+customElements.define("my-custom-name", TableSortableElement);
+```
+
+
+<hr>
+
+Happy sorting!
