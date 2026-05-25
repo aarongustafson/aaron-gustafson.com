@@ -77,4 +77,4 @@ canonical: "https://blog.easy-designs.net/archives/the-true-cost-of-progressive-
 <p>
 	We’ve been practicing the art of progressive enhancement for a long time. It’s deeply-ingrained in our process and part of who we are as a company. That often makes it difficult for us to put hard numbers against the cost of <em>not </em>doing progressive enhancement and the financial savings of doing things the way we almost always do. Hopefully, these two small case studies help illuminate things a bit for those who may still be a bit skeptical. </p>
 <p>
-	Do you have any case studies or anecdotes you can share? We'd love to hear them.</p>
+	Do you have any case studies or anecdotes you can share? We’d love to hear them.</p>

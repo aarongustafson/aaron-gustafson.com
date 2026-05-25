@@ -19,19 +19,23 @@ canonical: "https://blog.easy-designs.net/archives/subtree-merge-as-an-alternati
 </blockquote>
 <p>That annoying message is the painful reminder that you need to find another way to add content from another project into your repository. Subtree merge to the rescue!</p>
 <p>If you’ve already hit the error, go ahead and delete your submodule folder(s) and the <code>.gitmodules</code> file and commit the changes to your repository to make the path available again. Next, from a shell within the root of your Git repository enter these commands at the prompt (replacing the capitalized phrases with your relevant information):</p>
-<ol>
-<li><code class="shell">git remote add -f LOCAL_NAME PATH/TO/GIT/REPOSITORY</code></li>
-<li><code class="shell">git merge -s ours --no-commit LOCAL_NAME/BRANCH_NAME</code></li>
-<li><code class="shell">git read-tree --prefix=PATH/I/WANT/IT/IN/ -u LOCAL_NAME/BRANCH_NAME </code></li>
-<li><code class="shell">git commit -m "Merge of PROJECT"</code></li>
-<li><code class="shell">git pull -s subtree LOCAL_NAME master</code></li>
-</ol>
+
+```bash
+$> git remote add -f LOCAL_NAME PATH/TO/GIT/REPOSITORY
+$> git merge -s ours --no-commit LOCAL_NAME/BRANCH_NAME
+$> git read-tree --prefix=PATH/I/WANT/IT/IN/ -u LOCAL_NAME/BRANCH_NAME
+$> git commit -m "Merge of PROJECT"
+$> git pull -s subtree LOCAL_NAME master
+```
+
 <p>To provide a fully fleshed-out example for you, I used the following to merge the master branch of eCSStender into the path <code>vendors/ecsstender</code> within another project.</p>
-<ol>
-<li><code class="shell">git remote add -f eCSStender git://github.com/easy-designs/eCSStender.js.git</code></li>
-<li><code class="shell">git merge -s ours --no-commit eCSStender/master</code></li>
-<li><code class="shell">git read-tree --prefix=vendors/ecsstender/ -u eCSStender/master</code></li>
-<li><code class="shell">git commit -m "Merge of eCSStender into the vendors directory"</code></li>
-<li><code class="shell">git pull -s subtree eCSStender master</code></li>
-</ol>
+
+```bash
+$> git remote add -f eCSStender git://github.com/easy-designs/eCSStender.js.git
+$> git merge -s ours --no-commit eCSStender/master
+$> git read-tree --prefix=vendors/ecsstender/ -u eCSStender/master
+$> git commit -m "Merge of eCSStender into the vendors directory"
+$> git pull -s subtree eCSStender master
+```
+
 <p>The beauty of this is that you can use that last line to pull in the latest version of the external project and then all you have to do is <code class="shell">dcommit</code> the changes to get them into Subversion. Problem solved.</p>

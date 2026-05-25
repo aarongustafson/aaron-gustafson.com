@@ -18,6 +18,7 @@ const DISPLAY_FRONTMATTER_KEYS = new Set([
 function maskSegments(text) {
 	const masked = [];
 	let output = text;
+	const tokenFor = (index) => `__TYPO_MASK_${index}__`;
 
 	const patterns = [
 		/`[^`]*`/g,
@@ -30,7 +31,7 @@ function maskSegments(text) {
 
 	for (const pattern of patterns) {
 		output = output.replace(pattern, (match) => {
-			const token = `\u0000${masked.length}\u0000`;
+			const token = tokenFor(masked.length);
 			masked.push(match);
 			return token;
 		});
@@ -40,7 +41,16 @@ function maskSegments(text) {
 }
 
 function unmaskSegments(text, masked) {
-	return text.replace(/\u0000(\d+)\u0000/g, (_match, index) => masked[Number(index)]);
+	const tokenPattern = /__TYPO_MASK_(\d+)__/g;
+	let output = text;
+
+	// Restore repeatedly to safely handle placeholder nesting from multi-pass masking.
+	while (tokenPattern.test(output)) {
+		tokenPattern.lastIndex = 0;
+		output = output.replace(tokenPattern, (_match, index) => masked[Number(index)]);
+	}
+
+	return output;
 }
 
 function isOpeningQuote(previous) {
