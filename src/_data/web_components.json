@@ -14,6 +14,13 @@
 		"npm_package": "@aarongustafson/dynamic-datalist"
 	},
 	{
+		"name": "form-matching-fields",
+		"github": "aarongustafson/form-matching-fields",
+		"description": "Web component wrapper that adds additive validation to ensure two text-type fields match.",
+		"demo_url": "https://aarongustafson.github.io/form-matching-fields/demo/",
+		"npm_package": "@aarongustafson/form-matching-fields"
+	},
+	{
 		"name": "form-obfuscator",
 		"github": "aarongustafson/form-obfuscator",
 		"description": "Web component that obfuscates fields when they don't have focus",
