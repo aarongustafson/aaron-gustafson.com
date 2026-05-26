@@ -217,9 +217,9 @@ export default async (config) => {
         if (PRODUCTION && sameOriginPath) {
           return `/img/100/x/100${sameOriginPath}`;
         }
-        return PRODUCTION
-          ? getNetlifyImageUrl(src, { width: 100, height: 100, fit: "cover" })
-          : src.replace(config.hostname, "");
+        // Avoid Netlify remote-image allowlist churn for external thumbnails.
+        // Keep remote URLs as-is, and only optimize same-origin assets.
+        return PRODUCTION ? src : src.replace(config.hostname, "");
       },
       attributes: {
         loading: "lazy",
