@@ -99,7 +99,7 @@ In most forms, that gives you a clear error message without requiring extra setu
 
 I put together [a demo of the web component](https://aarongustafson.github.io/form-matching-fields/demo/) over on GitHub:
 
-<figure class="video-embed video-embed--4x3">
+<figure class="media-container">
 <fullscreen-control class="talk__slides__embed video-embed__video">
 <iframe src="https://aarongustafson.github.io/form-matching-fields/demo/" class="talk__slides__embed video-embed__video" frameborder="0"></iframe>
 </fullscreen-control>
