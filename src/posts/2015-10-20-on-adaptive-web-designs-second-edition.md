@@ -15,7 +15,7 @@ I wrote the bulk of <cite>Adaptive Web Design</cite> in early 2010 while taking 
 <style media="only screen">.figure--cover img{width:50%;margin-left:auto;margin-right:auto;}@media (min-width:37.5em){.figure--cover img{float:right;width:250px;margin:0 0 1em 1em;}}</style>
 <figure id="fig-2015-10-20-01" class="figure figure--cover"><a href="https://adaptivewebdesign.info/2nd-edition/">
 
-![](https://adaptivewebdesign.info/2nd-edition/cover-1024.jpg) { .book\_\_cover }
+![](/i/books/adaptive-web-design-2nd.jpg) { .book\_\_cover }
 
 </a></figure>
 
