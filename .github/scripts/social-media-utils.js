@@ -14,9 +14,32 @@ class ContentProcessor {
 	static stripHtml(content) {
 		return htmlToText(content, {
 			wordwrap: false,
-			ignoreHref: true,
-			ignoreImage: true,
-			preserveNewlines: true,
+			selectors: [
+				{ selector: "a", format: "inline", options: { ignoreHref: true } },
+				{ selector: "img", format: "skip" },
+			],
+		});
+	}
+
+	static stripHtmlForLinkedIn(content) {
+		return htmlToText(content, {
+			wordwrap: false,
+			selectors: [
+				{ selector: "a", format: "inline", options: { ignoreHref: true } },
+				{ selector: "img", format: "skip" },
+				{
+					selector: "ul",
+					format: "unorderedList",
+					options: { itemPrefix: "• " },
+				},
+				{ selector: "pre", format: "skip" },
+				{ selector: "code", format: "inline" },
+				{
+					selector: "blockquote",
+					format: "block",
+					options: { leadingLineBreaks: 1, trailingLineBreaks: 1 },
+				},
+			],
 		});
 	}
 
@@ -46,9 +69,7 @@ class ContentProcessor {
 		externalUrl = "",
 	) {
 		let processed = rawContent;
-		processed = this.removeBlockquotes(processed);
-		processed = this.removeTrailingParagraphs(processed);
-		processed = this.stripHtml(processed);
+		processed = this.stripHtmlForLinkedIn(processed);
 
 		// Clean up extra newlines
 		processed = processed.replace(/\n\s*\n\s*\n/g, "\n\n");
@@ -90,10 +111,13 @@ class ContentProcessor {
 		if (text.length <= maxLength) return text;
 
 		const truncated = text.substring(0, maxLength);
-		const lastSpace = truncated.lastIndexOf(" ");
+		const lastBreak = Math.max(
+			truncated.lastIndexOf(" "),
+			truncated.lastIndexOf("\n"),
+		);
 
-		if (lastSpace > 0) {
-			return truncated.substring(0, lastSpace);
+		if (lastBreak > 0) {
+			return truncated.substring(0, lastBreak);
 		}
 
 		return truncated;
