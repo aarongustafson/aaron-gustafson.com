@@ -21,19 +21,67 @@ class ContentProcessor {
 		});
 	}
 
+	/**
+	 * Extract all text content from an HTML element tree, preserving newlines.
+	 */
+	static getElemText(elem) {
+		if (elem.type === "text") return elem.data;
+		if (elem.children) return elem.children.map((c) => this.getElemText(c)).join("");
+		return "";
+	}
+
 	static stripHtmlForLinkedIn(content) {
 		return htmlToText(content, {
 			wordwrap: false,
+			formatters: {
+				headingTitleCase: (elem, walk, builder, formatOptions) => {
+					builder.openBlock({
+						leadingLineBreaks: formatOptions.leadingLineBreaks || 2,
+					});
+					builder.pushWordTransform(
+						(str) => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase(),
+					);
+					walk(elem.children, builder);
+					builder.popWordTransform();
+					builder.closeBlock({
+						trailingLineBreaks: formatOptions.trailingLineBreaks || 2,
+					});
+				},
+				preBlock: (elem, walk, builder) => {
+					const rawText = ContentProcessor.getElemText(elem).trim();
+					const lines = rawText.split("\n");
+					builder.openBlock({ leadingLineBreaks: 2 });
+					lines.forEach((line, i) => {
+						builder.openBlock({ leadingLineBreaks: 0 });
+						if (i === 0) builder.addInline("`" + line);
+						else if (i === lines.length - 1) builder.addInline(line + "`");
+						else builder.addInline(line);
+						builder.closeBlock({ trailingLineBreaks: i < lines.length - 1 ? 1 : 0 });
+					});
+					if (lines.length === 1) builder.addInline("`");
+					builder.closeBlock({ trailingLineBreaks: 2 });
+				},
+			},
 			selectors: [
 				{ selector: "a", format: "inline", options: { ignoreHref: true } },
 				{ selector: "img", format: "skip" },
+				{ selector: "h1", format: "headingTitleCase", options: { leadingLineBreaks: 2, trailingLineBreaks: 2 } },
+				{ selector: "h2", format: "headingTitleCase", options: { leadingLineBreaks: 2, trailingLineBreaks: 2 } },
+				{ selector: "h3", format: "headingTitleCase", options: { leadingLineBreaks: 2, trailingLineBreaks: 2 } },
+				{ selector: "h4", format: "headingTitleCase", options: { leadingLineBreaks: 2, trailingLineBreaks: 2 } },
+				{ selector: "h5", format: "headingTitleCase", options: { leadingLineBreaks: 2, trailingLineBreaks: 2 } },
+				{ selector: "h6", format: "headingTitleCase", options: { leadingLineBreaks: 2, trailingLineBreaks: 2 } },
 				{
 					selector: "ul",
 					format: "unorderedList",
 					options: { itemPrefix: "• " },
 				},
-				{ selector: "pre", format: "skip" },
-				{ selector: "code", format: "inline" },
+				{ selector: "pre", format: "preBlock" },
+				{
+					selector: "code",
+					format: "inlineSurround",
+					options: { prefix: "`", suffix: "`" },
+				},
 				{
 					selector: "blockquote",
 					format: "block",
@@ -76,25 +124,11 @@ class ContentProcessor {
 		processed = processed.trim();
 
 		if (isPost) {
-			// For posts: include full content if it fits, otherwise truncate by word
-			const fullSuffix = `\n\nOriginally posted at ${itemUrl}`;
-			const truncatedSuffix = `\n\nContinue reading on ${itemUrl}`;
-
-			// Account for LinkedIn shortening the URL
-			const urlSavings = Math.max(0, itemUrl.length - this.LINKEDIN_SHORTENED_URL_LENGTH);
-
-			const fullMessage = `${processed}${fullSuffix}`;
-			const effectiveFullLength = fullMessage.length - urlSavings;
-
-			if (effectiveFullLength <= this.LINKEDIN_MAX_LENGTH) {
-				// Full content fits within the limit
-				processed = fullMessage;
-			} else {
-				// Need to truncate: budget = max length - suffix (with shortened URL) - ellipsis
-				const effectiveSuffixLength = truncatedSuffix.length - urlSavings;
-				const contentBudget = this.LINKEDIN_MAX_LENGTH - effectiveSuffixLength - 1; // 1 for "…"
-				const truncatedContent = this.truncateByWord(processed, contentBudget);
-				processed = `${truncatedContent}\u2026${truncatedSuffix}`;
+			// For posts: the URL is already shown at the top by IFTTT via value2,
+			// so don't repeat it at the bottom. Just truncate if needed.
+			if (processed.length > this.LINKEDIN_MAX_LENGTH) {
+				const budget = this.LINKEDIN_MAX_LENGTH - 1; // 1 for "…"
+				processed = `${this.truncateByWord(processed, budget)}\u2026`;
 			}
 		} else if (externalUrl) {
 			// For links: append "Check it out: {url}"
