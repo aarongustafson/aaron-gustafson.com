@@ -75,6 +75,7 @@
 		"gulp-sass": "^6.0.1",
 		"gulp-svgo": "^2.2.1",
 		"gulp-uglify": "^3.0.2",
+		"html-to-text": "^10.0.0",
 		"js-yaml": "^4.1.1",
 		"lodash": "^4.18.1",
 		"luxon": "^3.6.1",
