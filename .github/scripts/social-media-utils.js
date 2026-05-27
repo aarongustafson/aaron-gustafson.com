@@ -53,12 +53,9 @@ class ContentProcessor {
 					builder.openBlock({ leadingLineBreaks: 2 });
 					lines.forEach((line, i) => {
 						builder.openBlock({ leadingLineBreaks: 0 });
-						if (i === 0) builder.addInline("`" + line);
-						else if (i === lines.length - 1) builder.addInline(line + "`");
-						else builder.addInline(line);
+						builder.addInline(line);
 						builder.closeBlock({ trailingLineBreaks: i < lines.length - 1 ? 1 : 0 });
 					});
-					if (lines.length === 1) builder.addInline("`");
 					builder.closeBlock({ trailingLineBreaks: 2 });
 				},
 			},
