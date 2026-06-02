@@ -178,6 +178,42 @@ class ContentProcessor {
 
 		return truncated + "...";
 	}
+
+	static truncateTextPreservingUrl(text, url, maxLength) {
+		const normalizedUrl = url?.trim();
+		const normalizedText = text?.trim() || "";
+
+		if (!normalizedUrl) {
+			return this.truncateText(normalizedText, maxLength);
+		}
+
+		if (!normalizedText) {
+			return normalizedUrl;
+		}
+
+		const combined = `${normalizedText} ${normalizedUrl}`;
+		if (combined.length <= maxLength) {
+			return combined;
+		}
+
+		const reservedLength = normalizedUrl.length + 1;
+		if (reservedLength >= maxLength) {
+			return normalizedUrl;
+		}
+
+		const ellipsis = "...";
+		const textBudget = maxLength - reservedLength;
+		const truncateBudget = Math.max(0, textBudget - ellipsis.length);
+		const truncatedText = this.truncateByWord(normalizedText, truncateBudget);
+		const shortenedText =
+			truncatedText.length < normalizedText.length
+				? `${truncatedText}${ellipsis}`
+				: truncatedText;
+
+		return shortenedText
+			? `${shortenedText} ${normalizedUrl}`
+			: normalizedUrl;
+	}
 }
 
 class CacheManager {

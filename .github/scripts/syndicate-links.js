@@ -129,6 +129,16 @@ class LinkSyndicator extends SocialMediaAPI {
 		const socialText =
 			link.social_text || ContentProcessor.stripHtml(link.content_html);
 		const relatedUrl = link.external_url || link.url;
+		const mastodonText = ContentProcessor.truncateTextPreservingUrl(
+			socialText,
+			relatedUrl,
+			450,
+		);
+		const bufferText = ContentProcessor.truncateTextPreservingUrl(
+			socialText,
+			relatedUrl,
+			260,
+		);
 		// For LinkedIn links, include full content with the external URL appended
 		const linkedInContent = ContentProcessor.processContentForLinkedIn(
 			link.content_html,
@@ -156,7 +166,7 @@ class LinkSyndicator extends SocialMediaAPI {
 				console.log("📊 Posting to LinkedIn via IFTTT...");
 				await this.sendToIFTTT("linkedin_link", {
 					value1: link.title,
-					value2: link.url,
+					value2: relatedUrl,
 					value3: linkedInContent,
 				});
 				await this.cache.markPlatformSuccess(
@@ -234,10 +244,6 @@ class LinkSyndicator extends SocialMediaAPI {
 		} else {
 			try {
 				console.log("🐘 Posting to Mastodon...");
-				const mastodonText = ContentProcessor.truncateText(
-					`${socialText} ${relatedUrl}`,
-					450,
-				);
 				const mastodonResult = await this.postToMastodon(mastodonText);
 				await this.cache.markPlatformSuccess(
 					"links",
@@ -303,11 +309,6 @@ class LinkSyndicator extends SocialMediaAPI {
 			let bufferCalled = false;
 			try {
 				console.log("🐦 Posting to Buffer (Twitter & Bluesky)...");
-				const bufferText = ContentProcessor.truncateText(
-					`${socialText} ${relatedUrl}`,
-					260,
-				);
-
 				const profileIds = [];
 				const profileMap = {};
 
@@ -399,13 +400,13 @@ class LinkSyndicator extends SocialMediaAPI {
 				if (!bufferCalled) {
 					if (!twitterDone) {
 						await this.sendToIFTTT("twitter_link", {
-							text: `${socialText} ${relatedUrl}`,
+							text: bufferText,
 						});
 					}
 
 					if (!blueskyDone) {
 						await this.sendToIFTTT("bluesky_link", {
-							text: `${socialText} ${relatedUrl}`,
+							text: bufferText,
 						});
 					}
 				}
