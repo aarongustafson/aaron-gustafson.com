@@ -9,12 +9,36 @@ let og_images = yaml.load(fs.readFileSync(CACHE_FILE_PATH));
 const CACHE_404_PATH = "_cache/404s.yml";
 const cached404s = yaml.load(fs.readFileSync(CACHE_404_PATH));
 
+function decodeHtmlEntities(str) {
+  return str.replace(
+    /&(?:amp|lt|gt|quot|#39|#x([0-9a-f]+)|#([0-9]+));/gi,
+    (match, hex, dec) => {
+      const lower = match.toLowerCase();
+      if (lower === "&amp;") return "&";
+      if (lower === "&lt;") return "<";
+      if (lower === "&gt;") return ">";
+      if (lower === "&quot;") return '"';
+      if (lower === "&#39;") return "'";
+      if (hex !== undefined) return String.fromCodePoint(parseInt(hex, 16));
+      if (dec !== undefined) return String.fromCodePoint(parseInt(dec, 10));
+      return match;
+    },
+  );
+}
+
 function normalizeOgImageUrl(imageUrl, pageUrl) {
   if (!imageUrl || imageUrl === true || imageUrl === "false" || imageUrl === "404") {
     return false;
   }
 
-  const value = String(imageUrl).trim();
+  // Decode HTML entities (e.g. &amp; → &) that may appear in og:image meta content values.
+  // Also strip any surrounding quote characters (literal or percent-encoded) that may have
+  // been included from the HTML source.
+  const value = decodeHtmlEntities(String(imageUrl).trim()).replace(
+    /^(?:%22|["'])+|(?:%22|["'])+$/gi,
+    "",
+  );
+
   if (!value) {
     return false;
   }
