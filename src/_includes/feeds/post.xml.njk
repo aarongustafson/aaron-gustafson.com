@@ -1,5 +1,5 @@
 {% set post_url %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
-{%- set summary %}{% if post.data.description %}{{ post.data.description }}{% elif post.data.page.excerpt %}{{ post.data.page.excerpt }}{% endif %}{% endset -%}
+{%- set summary = post.data.page.excerpt or post.data.description -%}
 {%- set type %}{{ post.inputPath | content_type }}{% endset -%}
 {%- set icon -%}
   {%- if type == "post" -%}✍🏻
@@ -33,8 +33,8 @@
     <amg:twitter><![CDATA[{{ post.data.twitter_text | safe }}]]></amg:twitter>
   {% endif %}
   {% if summary %}
-    <amg:summary><![CDATA[{{ summary | markdownify | trim_newlines | safe }}]]></amg:summary>
-    <summary type="html"><![CDATA[<p>{{ summary | markdownify | trim_newlines | safe }}</p>]]></summary>
+    <amg:summary><![CDATA[{{ summary | block_markdownify | trim_newlines | safe }}]]></amg:summary>
+    <summary type="html"><![CDATA[{{ summary | block_markdownify | trim_newlines | safe }}]]></summary>
   {% endif %}
 
   {% for tag in post.data.tags %}

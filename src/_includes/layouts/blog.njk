@@ -14,7 +14,7 @@ github_edit: "_layouts/blog.njk"
 		<div class="layout-container__primary">
 			
 			{% for post in posts %}
-				{% set content %}{% if post.data.page.excerpt %}<p>{{ post.data.page.excerpt | markdownify | safe }}</p>{% else %}{{ post.templateContent | safe }}{% endif %}{% endset %}
+				{% set content %}{% if post.data.page.excerpt %}{{ post.data.page.excerpt | block_markdownify | safe }}{% else %}{{ post.templateContent | safe }}{% endif %}{% endset %}
 				{% set is_excerpted = ( "templateContent" in post and post.templateContent != content ) %}
 				{% set post_title %}{{ post.data.title | markdownify | strip_links | safe }}{% endset %}
 				{% set transition_root %}post-{{ post.fileSlug }}{% endset %}
