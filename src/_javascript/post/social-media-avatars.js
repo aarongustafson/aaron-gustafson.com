@@ -4,7 +4,11 @@
 	"use strict";
 
 	if ("addEventListener" in window && document.getElementById("webmentions")) {
-		window.addEventListener("load", init, false);
+		if (document.readyState === "complete") {
+			init();
+		} else {
+			window.addEventListener("load", init, false);
+		}
 	}
 
 	function logDebug() {
