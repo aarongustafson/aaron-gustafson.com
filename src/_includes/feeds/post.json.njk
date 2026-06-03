@@ -1,5 +1,5 @@
 {% set post_url %}{{ post.url | url | absoluteUrl(site.url) }}{% endset %}
-{% set summary %}{% if post.data.description %}{{ post.data.description }}{% elif post.data.page.excerpt %}{{ post.data.page.excerpt }}{% endif %}{% endset %}
+{% set summary = post.data.page.excerpt or post.data.description %}
 {%- set type %}{{ post.inputPath | content_type }}{% endset -%}
 {%- set icon -%}
   {%- if type == "post" -%}✍🏻
@@ -21,7 +21,7 @@
   "title": {{ title_text | dump | safe }},
   
   {% if summary %}
-  "summary": {{ (summary | markdownify | trim_newlines) | dump | safe }},
+  "summary": {{ (summary | block_markdownify | trim_newlines) | dump | safe }},
   {% endif %}
 
   "content_html": {{ post.templateContent | dump | safe }},

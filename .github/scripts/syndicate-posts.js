@@ -128,10 +128,10 @@ class PostSyndicator extends SocialMediaAPI {
 		// Prepare content for different platforms
 		const socialText =
 			post.social_text || ContentProcessor.stripHtml(post.content_html);
-		// For LinkedIn posts, pass full content and let processContentForLinkedIn
-		// handle truncation within LinkedIn's 3000-char limit
+		// For LinkedIn posts, prefer the feed summary/excerpt so long-form and
+		// highly technical posts don't turn into unwieldy wall-of-text updates.
 		const linkedInContent = ContentProcessor.processContentForLinkedIn(
-			post.content_html,
+			post.summary || post.content_html,
 			true, // isPost = true
 			post.url,
 		);

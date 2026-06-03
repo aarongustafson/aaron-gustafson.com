@@ -269,6 +269,9 @@ export default async (config) => {
   config.addFilter("markdownify", (text) => {
     return md.renderInline(text);
   });
+  config.addFilter("block_markdownify", (text) => {
+    return md.render(text);
+  });
   Object.keys(filters).forEach((filterName) => {
     config.addFilter(filterName, filters[filterName]);
   });
