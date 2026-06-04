@@ -295,12 +295,17 @@ WebmentionIO.types = {
 			}
 		}
 
-		// Process author photos
+		// Process author photos - wrap in Cloudinary fetch to match server-side rendering
+		var cloudinaryPrefix =
+			"https://res.cloudinary.com/aarongustafson/image/fetch/c_fill,f_auto,q_auto,w_48,h_48/";
 		var authorPhotos = temp.querySelectorAll("[data-mention-author-photo]");
 		for (var k = 0; k < authorPhotos.length; k++) {
 			var photoUrl = authorPhotos[k].getAttribute("data-mention-author-photo");
 			if (photoUrl) {
-				authorPhotos[k].setAttribute("src", photoUrl);
+				authorPhotos[k].setAttribute(
+					"src",
+					cloudinaryPrefix + encodeURIComponent(photoUrl),
+				);
 				authorPhotos[k].removeAttribute("data-mention-author-photo");
 			}
 		}
