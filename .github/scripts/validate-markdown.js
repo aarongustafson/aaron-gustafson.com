@@ -1,10 +1,10 @@
-import { readFileSync, readdirSync, statSync } from "node:fs";
-import path from "node:path";
-import { pathToFileURL } from "node:url";
 import yaml from "js-yaml";
 import markdownIt from "markdown-it";
 import markdownit_attrs from "markdown-it-attrs";
 import markdownit_footnote from "markdown-it-footnote";
+import { readFileSync, readdirSync, statSync } from "node:fs";
+import path from "node:path";
+import { pathToFileURL } from "node:url";
 
 const md = markdownIt({
   html: true,
