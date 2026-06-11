@@ -22,7 +22,7 @@ Joining me were four people doing important work from very different angles:
 
 Our conversation centered on what “shifting left” means in the age of AI: improving model inputs, tightening prompts and instructions, adding deterministic checks, and building accessibility directly into the harnesses and processes that increasingly guide software creation.
 
-Unfortunately, the panel wasn’t recorded, but my good friend [Kelly Goto](https://www.kellygoto.com/) recorded the audio, so I was able to put together the following transcript. It’s a bit rough — some of the audio was garbled — but I think it captures the spirit of the conversation and the key points that were made. I hope you find it useful!
+Many thanks to [Kelly Goto](https://www.kellygoto.com/) for recording the audio, which enabled me to put together the following transcript. It’s a bit rough — some of the audio was garbled — but I think it captures the spirit of the conversation and the key points that were made. I hope you find it useful!
 
 ## Full Transcript
 
