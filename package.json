@@ -27,6 +27,7 @@
 		"new:press": "plop press",
 		"new:citation": "plop citation",
 		"publish:draft": "plop publish",
+		"markdown:check": "node .github/scripts/validate-markdown.js src",
 		"prose:check": "node .github/scripts/typographic-punctuation.js src/_drafts src/posts",
 		"prose:fix": "node .github/scripts/typographic-punctuation.js --write src/_drafts src/posts"
 	},

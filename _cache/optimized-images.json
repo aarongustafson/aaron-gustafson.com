@@ -1,2052 +1,2147 @@
 {
   "src/_images/share-card.jpg": {
-    "mtime": 1731179344076,
+    "mtime": 1761167228383,
     "size": 277756,
-    "processed": 1781136102248
+    "processed": 1781150590624
   },
   "src/_images/background-logo.png": {
-    "mtime": 1731179343576,
+    "mtime": 1696268949885,
     "size": 13240,
-    "processed": 1781136101869
+    "processed": 1781150590380
   },
   "src/_images/icon-reverse.png": {
-    "mtime": 1731179343650,
+    "mtime": 1712089958801,
     "size": 17450,
-    "processed": 1781136101891
+    "processed": 1781150590392
   },
   "src/_images/icon.png": {
-    "mtime": 1731179343650,
+    "mtime": 1676583909288,
     "size": 12847,
-    "processed": 1781136101902
+    "processed": 1781150590407
   },
   "src/_images/notification-icon-reverse.png": {
-    "mtime": 1731179343668,
+    "mtime": 1676583910304,
     "size": 5229,
-    "processed": 1781136102181
+    "processed": 1781150590570
   },
   "src/_images/notification-icon.png": {
-    "mtime": 1731179343669,
+    "mtime": 1676583909286,
     "size": 28139,
-    "processed": 1781136102226
+    "processed": 1781150590608
   },
   "src/_images/og-logo.png": {
-    "mtime": 1731179343669,
+    "mtime": 1696269361483,
     "size": 41668,
-    "processed": 1781136102239
+    "processed": 1781150590613
   },
   "src/_images/icon.svg": {
-    "mtime": 1731179343650,
+    "mtime": 1676583909855,
     "size": 6547,
-    "processed": 1781136101908
+    "processed": 1781150590416
   },
   "src/_images/fallbacks/avatar.svg": {
-    "mtime": 1731179343612,
+    "mtime": 1676583910078,
     "size": 838,
-    "processed": 1781136105785
+    "processed": 1781150591844
   },
   "src/_images/fallbacks/image.svg": {
-    "mtime": 1731179343614,
+    "mtime": 1676583910049,
     "size": 429,
-    "processed": 1781136105789
+    "processed": 1781150591847
   },
   "src/_images/fallbacks/offline.svg": {
-    "mtime": 1731179343616,
+    "mtime": 1676583910037,
     "size": 418,
-    "processed": 1781136105792
+    "processed": 1781150591849
   },
   "src/_images/books/a-web-for-everyone.jpg": {
-    "mtime": 1731179343581,
+    "mtime": 1676583909888,
     "size": 770059,
-    "processed": 1781136102263
+    "processed": 1781150590642
   },
   "src/_images/books/accelerated-dom-scripting.jpg": {
-    "mtime": 1731179343585,
+    "mtime": 1676583909878,
     "size": 281554,
-    "processed": 1781136102268
+    "processed": 1781150590650
   },
   "src/_images/books/adaptive-web-design-2nd.jpg": {
-    "mtime": 1731179343587,
+    "mtime": 1676583909883,
     "size": 177886,
-    "processed": 1781136103154
+    "processed": 1781150591211
   },
   "src/_images/books/adaptive-web-design.jpg": {
-    "mtime": 1731179343590,
+    "mtime": 1676583909885,
     "size": 445049,
-    "processed": 1781136103193
+    "processed": 1781150591224
   },
   "src/_images/books/advanced-dom-scripting.jpg": {
-    "mtime": 1731179343591,
+    "mtime": 1676583909881,
     "size": 70446,
-    "processed": 1781136103198
+    "processed": 1781150591242
   },
   "src/_images/books/design-for-developers.jpg": {
-    "mtime": 1731179343592,
+    "mtime": 1695755738833,
     "size": 95190,
-    "processed": 1781136104713
+    "processed": 1781150591261
   },
   "src/_images/books/implementing-responsive-design.jpg": {
-    "mtime": 1731179343595,
+    "mtime": 1676583909893,
     "size": 205162,
-    "processed": 1781136104733
+    "processed": 1781150591281
   },
   "src/_images/books/responsive-typography.jpg": {
-    "mtime": 1731179343595,
+    "mtime": 1676583909886,
     "size": 70215,
-    "processed": 1781136105040
+    "processed": 1781150591298
   },
   "src/_images/books/smashing-book-4.jpg": {
-    "mtime": 1731179343597,
+    "mtime": 1676583909879,
     "size": 191856,
-    "processed": 1781136105056
+    "processed": 1781150591308
   },
   "src/_images/books/web-design-in-a-nutshell.jpg": {
-    "mtime": 1731179343598,
+    "mtime": 1676583909891,
     "size": 29423,
-    "processed": 1781136105063
+    "processed": 1781150591313
   },
   "src/_images/books/web-form-design.jpg": {
-    "mtime": 1731179343601,
+    "mtime": 1676583909890,
     "size": 400970,
-    "processed": 1781136105238
+    "processed": 1781150591331
   },
   "src/_images/books/going-offline.png": {
-    "mtime": 1731179343593,
+    "mtime": 1676583909876,
     "size": 95233,
-    "processed": 1781136104722
+    "processed": 1781150591271
   },
   "src/_images/books/learning-web-design-6th.png": {
-    "mtime": 1765084463237,
+    "mtime": 1747093635425,
     "size": 54943,
-    "processed": 1781136104739
+    "processed": 1781150591289
   },
   "src/_images/headshots/2007-sm.jpg": {
-    "mtime": 1731179343619,
+    "mtime": 1676583909841,
     "size": 449135,
-    "processed": 1781136105800
+    "processed": 1781150591858
   },
   "src/_images/headshots/2007.jpg": {
-    "mtime": 1731179343621,
+    "mtime": 1676583909833,
     "size": 166310,
-    "processed": 1781136105804
+    "processed": 1781150591861
   },
   "src/_images/headshots/2013-sm.jpg": {
-    "mtime": 1731179343623,
+    "mtime": 1676583909843,
     "size": 373241,
-    "processed": 1781136105808
+    "processed": 1781150591865
   },
   "src/_images/headshots/2013.jpg": {
-    "mtime": 1731179343627,
+    "mtime": 1676583909834,
     "size": 643982,
-    "processed": 1781136105815
+    "processed": 1781150591873
   },
   "src/_images/headshots/2014-sm.jpg": {
-    "mtime": 1731179343630,
+    "mtime": 1676583909803,
     "size": 368262,
-    "processed": 1781136105818
+    "processed": 1781150591878
   },
   "src/_images/headshots/2014.jpg": {
-    "mtime": 1731179343632,
+    "mtime": 1676583909831,
     "size": 55721,
-    "processed": 1781136105821
+    "processed": 1781150591879
   },
   "src/_images/headshots/2022-sm.jpg": {
-    "mtime": 1731179343635,
+    "mtime": 1676583909825,
     "size": 473863,
-    "processed": 1781136105829
+    "processed": 1781150591887
   },
   "src/_images/headshots/2022.jpg": {
-    "mtime": 1731179343641,
+    "mtime": 1676583909837,
     "size": 1024090,
-    "processed": 1781136105840
+    "processed": 1781150591899
   },
   "src/_images/headshots/doll-sm.jpg": {
-    "mtime": 1731179343648,
+    "mtime": 1676583909851,
     "size": 458861,
-    "processed": 1781136105856
+    "processed": 1781150591917
   },
   "src/_images/headshots/doll.jpg": {
-    "mtime": 1731179343649,
+    "mtime": 1676583909839,
     "size": 113287,
-    "processed": 1781136105883
+    "processed": 1781150591921
   },
   "src/_images/headshots/avatar-cornell-sm.png": {
-    "mtime": 1731179343643,
+    "mtime": 1676583909847,
     "size": 252126,
-    "processed": 1781136105845
+    "processed": 1781150591902
   },
   "src/_images/headshots/avatar-cornell.png": {
-    "mtime": 1731179343644,
+    "mtime": 1676583909828,
     "size": 90409,
-    "processed": 1781136105848
+    "processed": 1781150591906
   },
   "src/_images/c/aetna.svg": {
-    "mtime": 1731179343602,
+    "mtime": 1676583910099,
     "size": 10331,
-    "processed": 1781136105245
+    "processed": 1781150591352
   },
   "src/_images/c/american-idol.svg": {
-    "mtime": 1731179343602,
+    "mtime": 1676583910091,
     "size": 43023,
-    "processed": 1781136105273
+    "processed": 1781150591390
   },
   "src/_images/c/autobytel.svg": {
-    "mtime": 1731179343603,
+    "mtime": 1676583910134,
     "size": 15939,
-    "processed": 1781136105345
+    "processed": 1781150591455
   },
   "src/_images/c/box.svg": {
-    "mtime": 1731179343603,
+    "mtime": 1676583910096,
     "size": 863,
-    "processed": 1781136105370
+    "processed": 1781150591486
   },
   "src/_images/c/connecticut-lottery.svg": {
-    "mtime": 1731179343603,
+    "mtime": 1676583910104,
     "size": 7275,
-    "processed": 1781136105376
+    "processed": 1781150591494
   },
   "src/_images/c/delta-air-lines.svg": {
-    "mtime": 1731179343603,
+    "mtime": 1676583910087,
     "size": 6146,
-    "processed": 1781136105386
+    "processed": 1781150591511
   },
   "src/_images/c/fidelity-investments.svg": {
-    "mtime": 1731179343603,
+    "mtime": 1676583910127,
     "size": 9051,
-    "processed": 1781136105398
+    "processed": 1781150591519
   },
   "src/_images/c/gartner.svg": {
-    "mtime": 1731179343604,
+    "mtime": 1676583910100,
     "size": 2839,
-    "processed": 1781136105416
+    "processed": 1781150591537
   },
   "src/_images/c/general-colognere.svg": {
-    "mtime": 1731179343604,
+    "mtime": 1676583910094,
     "size": 5633,
-    "processed": 1781136105422
+    "processed": 1781150591546
   },
   "src/_images/c/guinness.svg": {
-    "mtime": 1731179343604,
+    "mtime": 1676583910093,
     "size": 18144,
-    "processed": 1781136105433
+    "processed": 1781150591556
   },
   "src/_images/c/ibm.svg": {
-    "mtime": 1731179343604,
+    "mtime": 1676583910085,
     "size": 1947,
-    "processed": 1781136105462
+    "processed": 1781150591592
   },
   "src/_images/c/intuit.svg": {
-    "mtime": 1731179343604,
+    "mtime": 1676583910133,
     "size": 5425,
-    "processed": 1781136105467
+    "processed": 1781150591602
   },
   "src/_images/c/keurig.svg": {
-    "mtime": 1731179343605,
+    "mtime": 1676583910137,
     "size": 10042,
-    "processed": 1781136105479
+    "processed": 1781150591621
   },
   "src/_images/c/konica-minolta.svg": {
-    "mtime": 1731179343605,
+    "mtime": 1676583910125,
     "size": 14476,
-    "processed": 1781136105497
+    "processed": 1781150591636
   },
   "src/_images/c/major-league-baseball.svg": {
-    "mtime": 1731179343605,
+    "mtime": 1676583910092,
     "size": 6131,
-    "processed": 1781136105515
+    "processed": 1781150591651
   },
   "src/_images/c/marriott.svg": {
-    "mtime": 1731179343605,
+    "mtime": 1676583910084,
     "size": 6190,
-    "processed": 1781136105523
+    "processed": 1781150591658
   },
   "src/_images/c/mcafee.svg": {
-    "mtime": 1731179343606,
+    "mtime": 1706291193205,
     "size": 2974,
-    "processed": 1781136105534
+    "processed": 1781150591666
   },
   "src/_images/c/microsoft.svg": {
-    "mtime": 1731179343606,
+    "mtime": 1676583910082,
     "size": 8744,
-    "processed": 1781136105541
+    "processed": 1781150591672
   },
   "src/_images/c/new-york-times.svg": {
-    "mtime": 1731179343606,
+    "mtime": 1676583910136,
     "size": 11135,
-    "processed": 1781136105553
+    "processed": 1781150591684
   },
   "src/_images/c/participant.svg": {
-    "mtime": 1731179343606,
+    "mtime": 1676583910097,
     "size": 6621,
-    "processed": 1781136105571
+    "processed": 1781150591698
   },
   "src/_images/c/pfizer.svg": {
-    "mtime": 1731179343606,
+    "mtime": 1676583910131,
     "size": 2391,
-    "processed": 1781136105580
+    "processed": 1781150591710
   },
   "src/_images/c/sap.svg": {
-    "mtime": 1731179343607,
+    "mtime": 1676583910089,
     "size": 1284,
-    "processed": 1781136105586
+    "processed": 1781150591715
   },
   "src/_images/c/sas.svg": {
-    "mtime": 1731179343607,
+    "mtime": 1706291139424,
     "size": 3237,
-    "processed": 1781136105593
+    "processed": 1781150591719
   },
   "src/_images/c/scholastic.svg": {
-    "mtime": 1731179343607,
+    "mtime": 1676583910105,
     "size": 25354,
-    "processed": 1781136105602
+    "processed": 1781150591730
   },
   "src/_images/c/spalding.svg": {
-    "mtime": 1731179343607,
+    "mtime": 1676583910130,
     "size": 5299,
-    "processed": 1781136105631
+    "processed": 1781150591746
   },
   "src/_images/c/stubhub.svg": {
-    "mtime": 1731179343607,
+    "mtime": 1676583910123,
     "size": 18695,
-    "processed": 1781136105639
+    "processed": 1781150591754
   },
   "src/_images/c/time.svg": {
-    "mtime": 1731179343608,
+    "mtime": 1676583910088,
     "size": 5380,
-    "processed": 1781136105665
+    "processed": 1781150591769
   },
   "src/_images/c/u-s--environmental-protection-agency.svg": {
-    "mtime": 1731179343608,
+    "mtime": 1676583910086,
     "size": 1204,
-    "processed": 1781136105671
+    "processed": 1781150591772
   },
   "src/_images/c/vanguard.svg": {
-    "mtime": 1731179343609,
+    "mtime": 1676583910090,
     "size": 80332,
-    "processed": 1781136105677
+    "processed": 1781150591777
   },
   "src/_images/c/walgreens.svg": {
-    "mtime": 1731179343609,
+    "mtime": 1676583910129,
     "size": 16506,
-    "processed": 1781136105757
+    "processed": 1781150591827
   },
   "src/_images/c/wikihow.svg": {
-    "mtime": 1731179343609,
+    "mtime": 1676583910102,
     "size": 4381,
-    "processed": 1781136105775
+    "processed": 1781150591837
   },
   "src/_images/screenshots/about-mobile.jpg": {
-    "mtime": 1731179344070,
+    "mtime": 1696270500038,
     "size": 59374,
-    "processed": 1781136106238
+    "processed": 1781150592127
   },
   "src/_images/screenshots/home.png": {
-    "mtime": 1731179344072,
+    "mtime": 1696379110180,
     "size": 125293,
-    "processed": 1781136106240
+    "processed": 1781150592137
   },
   "src/_images/screenshots/post-mobile.png": {
-    "mtime": 1731179344072,
+    "mtime": 1696270500048,
     "size": 59286,
-    "processed": 1781136106243
+    "processed": 1781150592141
   },
   "src/_images/screenshots/post.png": {
-    "mtime": 1731179344074,
+    "mtime": 1696270500054,
     "size": 179110,
-    "processed": 1781136106248
+    "processed": 1781150592145
   },
   "src/_images/screenshots/widget-links.png": {
-    "mtime": 1731179344075,
+    "mtime": 1696268926668,
     "size": 17428,
-    "processed": 1781136106249
+    "processed": 1781150592147
   },
   "src/_images/screenshots/widget-posts.png": {
-    "mtime": 1731179344075,
+    "mtime": 1696268946078,
     "size": 17673,
-    "processed": 1781136106251
+    "processed": 1781150592148
   },
   "src/_images/icons/books.png": {
-    "mtime": 1731179343652,
+    "mtime": 1676583909939,
     "size": 2383,
-    "processed": 1781136105988
+    "processed": 1781150591938
   },
   "src/_images/icons/chat.png": {
-    "mtime": 1731179343652,
+    "mtime": 1676583909996,
     "size": 1953,
-    "processed": 1781136106007
+    "processed": 1781150591944
   },
   "src/_images/icons/keynote.png": {
-    "mtime": 1731179343655,
+    "mtime": 1676583909988,
     "size": 1963,
-    "processed": 1781136106094
+    "processed": 1781150591987
   },
   "src/_images/icons/link-intact.png": {
-    "mtime": 1731179343656,
+    "mtime": 1676583909931,
     "size": 630,
-    "processed": 1781136106116
+    "processed": 1781150591996
   },
   "src/_images/icons/mic.png": {
-    "mtime": 1731179343657,
+    "mtime": 1676583910004,
     "size": 1902,
-    "processed": 1781136106128
+    "processed": 1781150592006
   },
   "src/_images/icons/notebook.png": {
-    "mtime": 1731179343657,
+    "mtime": 1676583909946,
     "size": 1923,
-    "processed": 1781136106132
+    "processed": 1781150592012
   },
   "src/_images/icons/webicon-rss.png": {
-    "mtime": 1731179343666,
+    "mtime": 1696378978603,
     "size": 791,
-    "processed": 1781136106208
+    "processed": 1781150592091
   },
   "src/_images/icons/academiaedu.svg": {
-    "mtime": 1731179343651,
+    "mtime": 1706133716297,
     "size": 825,
-    "processed": 1781136105927
+    "processed": 1781150591923
   },
   "src/_images/icons/article.svg": {
-    "mtime": 1731179343651,
+    "mtime": 1695755738837,
     "size": 1634,
-    "processed": 1781136105957
+    "processed": 1781150591925
   },
   "src/_images/icons/bandcamp.svg": {
-    "mtime": 1731179343651,
+    "mtime": 1676583909899,
     "size": 866,
-    "processed": 1781136105965
+    "processed": 1781150591929
   },
   "src/_images/icons/book.svg": {
-    "mtime": 1731179343651,
+    "mtime": 1695755738841,
     "size": 3621,
-    "processed": 1781136105969
+    "processed": 1781150591930
   },
   "src/_images/icons/books.svg": {
-    "mtime": 1731179343652,
+    "mtime": 1676583909932,
     "size": 1546,
-    "processed": 1781136105999
+    "processed": 1781150591941
   },
   "src/_images/icons/chat.svg": {
-    "mtime": 1731179343653,
+    "mtime": 1695755738844,
     "size": 765,
-    "processed": 1781136106017
+    "processed": 1781150591947
   },
   "src/_images/icons/color-toggle.svg": {
-    "mtime": 1731179343653,
+    "mtime": 1677779129029,
     "size": 527,
-    "processed": 1781136106022
+    "processed": 1781150591955
   },
   "src/_images/icons/devto.svg": {
-    "mtime": 1731179343653,
+    "mtime": 1725468406630,
     "size": 564,
-    "processed": 1781136106025
+    "processed": 1781150591957
   },
   "src/_images/icons/discogs.svg": {
-    "mtime": 1731179343653,
+    "mtime": 1676583909993,
     "size": 2284,
-    "processed": 1781136106031
+    "processed": 1781150591961
   },
   "src/_images/icons/essay.svg": {
-    "mtime": 1731179343654,
+    "mtime": 1676583909927,
     "size": 1341,
-    "processed": 1781136106036
+    "processed": 1781150591968
   },
   "src/_images/icons/facebook.svg": {
-    "mtime": 1731179343654,
+    "mtime": 1676583909975,
     "size": 465,
-    "processed": 1781136106040
+    "processed": 1781150591971
   },
   "src/_images/icons/github.svg": {
-    "mtime": 1731179343654,
+    "mtime": 1676583909904,
     "size": 858,
-    "processed": 1781136106043
+    "processed": 1781150591975
   },
   "src/_images/icons/hacker-news.svg": {
-    "mtime": 1731179343654,
+    "mtime": 1676583909937,
     "size": 214,
-    "processed": 1781136106046
+    "processed": 1781150591976
   },
   "src/_images/icons/imdb.svg": {
-    "mtime": 1731179343655,
+    "mtime": 1681228584498,
     "size": 1222,
-    "processed": 1781136106050
+    "processed": 1781150591977
   },
   "src/_images/icons/instagram.svg": {
-    "mtime": 1731179343655,
+    "mtime": 1676583909938,
     "size": 1625,
-    "processed": 1781136106053
+    "processed": 1781150591983
   },
   "src/_images/icons/keynote.svg": {
-    "mtime": 1731179343656,
+    "mtime": 1695755738847,
     "size": 1185,
-    "processed": 1781136106097
+    "processed": 1781150591991
   },
   "src/_images/icons/lastfm.svg": {
-    "mtime": 1731179343656,
+    "mtime": 1676583909901,
     "size": 801,
-    "processed": 1781136106110
+    "processed": 1781150591994
   },
   "src/_images/icons/link-intact.svg": {
-    "mtime": 1731179343656,
+    "mtime": 1676583909940,
     "size": 828,
-    "processed": 1781136106117
+    "processed": 1781150591998
   },
   "src/_images/icons/linkedin.svg": {
-    "mtime": 1731179343657,
+    "mtime": 1676583909990,
     "size": 549,
-    "processed": 1781136106122
+    "processed": 1781150592001
   },
   "src/_images/icons/mastodon.svg": {
-    "mtime": 1731179343657,
+    "mtime": 1676583909934,
     "size": 1248,
-    "processed": 1781136106125
+    "processed": 1781150592002
   },
   "src/_images/icons/mic.svg": {
-    "mtime": 1731179343657,
+    "mtime": 1695755738850,
     "size": 814,
-    "processed": 1781136106129
+    "processed": 1781150592008
   },
   "src/_images/icons/notebook.svg": {
-    "mtime": 1731179343658,
+    "mtime": 1676583910002,
     "size": 661,
-    "processed": 1781136106133
+    "processed": 1781150592022
   },
   "src/_images/icons/notist.svg": {
-    "mtime": 1731179343658,
+    "mtime": 1676583909906,
     "size": 920,
-    "processed": 1781136106136
+    "processed": 1781150592025
   },
   "src/_images/icons/pin.svg": {
-    "mtime": 1731179343658,
+    "mtime": 1676583909941,
     "size": 927,
-    "processed": 1781136106139
+    "processed": 1781150592026
   },
   "src/_images/icons/pinterest.svg": {
-    "mtime": 1731179343658,
+    "mtime": 1676583909977,
     "size": 654,
-    "processed": 1781136106142
+    "processed": 1781150592028
   },
   "src/_images/icons/polywork.svg": {
-    "mtime": 1731179343658,
+    "mtime": 1676583909980,
     "size": 783,
-    "processed": 1781136106144
+    "processed": 1781150592031
   },
   "src/_images/icons/share.svg": {
-    "mtime": 1731179343659,
+    "mtime": 1678143232665,
     "size": 743,
-    "processed": 1781136106148
+    "processed": 1781150592035
   },
   "src/_images/icons/twitter.svg": {
-    "mtime": 1731179343659,
+    "mtime": 1676583909992,
     "size": 601,
-    "processed": 1781136106150
+    "processed": 1781150592039
   },
   "src/_images/icons/webicon-dribbble.svg": {
-    "mtime": 1731179343659,
+    "mtime": 1676583909933,
     "size": 2400,
-    "processed": 1781136106153
+    "processed": 1781150592042
   },
   "src/_images/icons/webicon-facebook.svg": {
-    "mtime": 1731179343659,
+    "mtime": 1676583909942,
     "size": 1151,
-    "processed": 1781136106157
+    "processed": 1781150592044
   },
   "src/_images/icons/webicon-flickr.svg": {
-    "mtime": 1731179343660,
+    "mtime": 1676583909925,
     "size": 1092,
-    "processed": 1781136106160
+    "processed": 1781150592051
   },
   "src/_images/icons/webicon-foursquare.svg": {
-    "mtime": 1731179343660,
+    "mtime": 1676583909982,
     "size": 3305,
-    "processed": 1781136106163
+    "processed": 1781150592054
   },
   "src/_images/icons/webicon-github.svg": {
-    "mtime": 1731179343660,
+    "mtime": 1676583909998,
     "size": 2943,
-    "processed": 1781136106170
+    "processed": 1781150592057
   },
   "src/_images/icons/webicon-goodreads.svg": {
-    "mtime": 1731179343664,
+    "mtime": 1676583909985,
     "size": 3091,
-    "processed": 1781136106175
+    "processed": 1781150592066
   },
   "src/_images/icons/webicon-googleplus.svg": {
-    "mtime": 1731179343664,
+    "mtime": 1676583909903,
     "size": 5302,
-    "processed": 1781136106181
+    "processed": 1781150592069
   },
   "src/_images/icons/webicon-instagram.svg": {
-    "mtime": 1731179343664,
+    "mtime": 1676583909950,
     "size": 2747,
-    "processed": 1781136106188
+    "processed": 1781150592074
   },
   "src/_images/icons/webicon-lastfm.svg": {
-    "mtime": 1731179343665,
+    "mtime": 1676583909989,
     "size": 4289,
-    "processed": 1781136106191
+    "processed": 1781150592076
   },
   "src/_images/icons/webicon-linkedin.svg": {
-    "mtime": 1731179343665,
+    "mtime": 1676583909929,
     "size": 1889,
-    "processed": 1781136106196
+    "processed": 1781150592079
   },
   "src/_images/icons/webicon-medium.svg": {
-    "mtime": 1731179343665,
+    "mtime": 1676583909991,
     "size": 1507,
-    "processed": 1781136106199
+    "processed": 1781150592082
   },
   "src/_images/icons/webicon-pinterest.svg": {
-    "mtime": 1731179343666,
+    "mtime": 1676583909945,
     "size": 3287,
-    "processed": 1781136106202
+    "processed": 1781150592085
   },
   "src/_images/icons/webicon-rss.svg": {
-    "mtime": 1731179343666,
+    "mtime": 1696378930489,
     "size": 1479,
-    "processed": 1781136106209
+    "processed": 1781150592094
   },
   "src/_images/icons/webicon-stackoverflow.svg": {
-    "mtime": 1731179343667,
+    "mtime": 1676583909984,
     "size": 2501,
-    "processed": 1781136106214
+    "processed": 1781150592098
   },
   "src/_images/icons/webicon-twitter.svg": {
-    "mtime": 1731179343667,
+    "mtime": 1676583909949,
     "size": 2315,
-    "processed": 1781136106218
+    "processed": 1781150592103
   },
   "src/_images/icons/webicon-vimeo.svg": {
-    "mtime": 1731179343667,
+    "mtime": 1676583909936,
     "size": 1706,
-    "processed": 1781136106221
+    "processed": 1781150592109
   },
   "src/_images/icons/webicon-yelp.svg": {
-    "mtime": 1731179343668,
+    "mtime": 1676583910000,
     "size": 5120,
-    "processed": 1781136106225
+    "processed": 1781150592114
   },
   "src/_images/icons/webicon-youtube.svg": {
-    "mtime": 1731179343668,
+    "mtime": 1676583909995,
     "size": 1520,
-    "processed": 1781136106232
+    "processed": 1781150592121
   },
   "src/_images/icons/youtube.svg": {
-    "mtime": 1731179343668,
+    "mtime": 1676583909986,
     "size": 404,
-    "processed": 1781136106235
+    "processed": 1781150592124
   },
   "src/_images/talks/writing-for-engagement.jpg": {
-    "mtime": 1731179344099,
+    "mtime": 1695755738980,
     "size": 54174,
-    "processed": 1781136106349
+    "processed": 1781150592337
   },
   "src/_images/talks/accessibility-beyond-code-compliance.png": {
-    "mtime": 1731179344077,
+    "mtime": 1695755738937,
     "size": 22588,
-    "processed": 1781136106254
+    "processed": 1781150592154
   },
   "src/_images/talks/adapting-to-reality.png": {
-    "mtime": 1731179344077,
+    "mtime": 1695755738938,
     "size": 25105,
-    "processed": 1781136106256
+    "processed": 1781150592161
   },
   "src/_images/talks/adaptive-designs-across-devices.png": {
-    "mtime": 1731179344078,
+    "mtime": 1695755738939,
     "size": 38322,
-    "processed": 1781136106258
+    "processed": 1781150592163
   },
   "src/_images/talks/adaptive-web-design-layer-by-layer.png": {
-    "mtime": 1731179344079,
+    "mtime": 1695755738942,
     "size": 263072,
-    "processed": 1781136106264
+    "processed": 1781150592170
   },
   "src/_images/talks/adaptive-web-design.png": {
-    "mtime": 1731179344080,
+    "mtime": 1695755738944,
     "size": 86901,
-    "processed": 1781136106266
+    "processed": 1781150592176
   },
   "src/_images/talks/advanced-design-methods.png": {
-    "mtime": 1731179344080,
+    "mtime": 1695755738945,
     "size": 30255,
-    "processed": 1781136106268
+    "processed": 1781150592181
   },
   "src/_images/talks/better-performance-greater-accessibility.png": {
-    "mtime": 1731179344082,
+    "mtime": 1695755738946,
     "size": 26729,
-    "processed": 1781136106270
+    "processed": 1781150592183
   },
   "src/_images/talks/beyond-responsive.png": {
-    "mtime": 1731179344082,
+    "mtime": 1695755738947,
     "size": 16909,
-    "processed": 1781136106272
+    "processed": 1781150592198
   },
   "src/_images/talks/conversational-semantics-for-the-web.png": {
-    "mtime": 1731179344083,
+    "mtime": 1695755738948,
     "size": 28395,
-    "processed": 1781136106274
+    "processed": 1781150592225
   },
   "src/_images/talks/delivering-critical-information-services.png": {
-    "mtime": 1731179344084,
+    "mtime": 1695755738949,
     "size": 112698,
-    "processed": 1781136106277
+    "processed": 1781150592230
   },
   "src/_images/talks/designing-across-devices-with-progressive-enhancement.png": {
-    "mtime": 1731179344086,
+    "mtime": 1695755738952,
     "size": 304403,
-    "processed": 1781136106282
+    "processed": 1781150592239
   },
   "src/_images/talks/designing-for-everyone.png": {
-    "mtime": 1731179344086,
+    "mtime": 1695755738953,
     "size": 25136,
-    "processed": 1781136106285
+    "processed": 1781150592245
   },
   "src/_images/talks/designing-the-conversation.png": {
-    "mtime": 1731179344086,
+    "mtime": 1695755738954,
     "size": 23812,
-    "processed": 1781136106288
+    "processed": 1781150592255
   },
   "src/_images/talks/designing-with-empathy.png": {
-    "mtime": 1731179344086,
+    "mtime": 1695755738955,
     "size": 24149,
-    "processed": 1781136106290
+    "processed": 1781150592268
   },
   "src/_images/talks/dont-worry-be-appy.png": {
-    "mtime": 1731179344087,
+    "mtime": 1695755738955,
     "size": 31293,
-    "processed": 1781136106291
+    "processed": 1781150592270
   },
   "src/_images/talks/exploring-adaptive-interfaces.png": {
-    "mtime": 1731179344088,
+    "mtime": 1695755738956,
     "size": 26396,
-    "processed": 1781136106304
+    "processed": 1781150592297
   },
   "src/_images/talks/falling-in-love-with-forms.png": {
-    "mtime": 1731179344088,
+    "mtime": 1695755738957,
     "size": 22212,
-    "processed": 1781136106306
+    "processed": 1781150592299
   },
   "src/_images/talks/finding-empathy-and-the-golden-rule.png": {
-    "mtime": 1731179344091,
+    "mtime": 1695755738961,
     "size": 576866,
-    "processed": 1781136106310
+    "processed": 1781150592302
   },
   "src/_images/talks/getting-started-with-pwas-workshop.png": {
-    "mtime": 1731179344092,
+    "mtime": 1695755738962,
     "size": 26232,
-    "processed": 1781136106312
+    "processed": 1781150592304
   },
   "src/_images/talks/intro-to-adaptive-web-design.png": {
-    "mtime": 1731179344092,
+    "mtime": 1695755738963,
     "size": 25986,
-    "processed": 1781136106314
+    "processed": 1781150592305
   },
   "src/_images/talks/learn-from-the-past-enhance-for-the-future.png": {
-    "mtime": 1731179344093,
+    "mtime": 1695755738964,
     "size": 26668,
-    "processed": 1781136106316
+    "processed": 1781150592309
   },
   "src/_images/talks/media-in-the-age-of-pwas.png": {
-    "mtime": 1731179344093,
+    "mtime": 1695755738965,
     "size": 31615,
-    "processed": 1781136106319
+    "processed": 1781150592310
   },
   "src/_images/talks/performance-as-user-experience.png": {
-    "mtime": 1731179344094,
+    "mtime": 1695755738966,
     "size": 28061,
-    "processed": 1781136106321
+    "processed": 1781150592311
   },
   "src/_images/talks/planning-adaptive-interfaces.png": {
-    "mtime": 1731179344094,
+    "mtime": 1695755738966,
     "size": 24912,
-    "processed": 1781136106324
+    "processed": 1781150592313
   },
   "src/_images/talks/progressive-enhancement-where-do-i-begin.png": {
-    "mtime": 1731179344094,
+    "mtime": 1695755738967,
     "size": 63745,
-    "processed": 1781136106325
+    "processed": 1781150592315
   },
   "src/_images/talks/progressive-web-apps-and-the-windows-ecosystem.png": {
-    "mtime": 1731179344095,
+    "mtime": 1695755738969,
     "size": 35502,
-    "processed": 1781136106328
+    "processed": 1781150592319
   },
   "src/_images/talks/progressive-web-apps-where-do-i-begin.png": {
-    "mtime": 1731179344095,
+    "mtime": 1695755738969,
     "size": 17490,
-    "processed": 1781136106330
+    "processed": 1781150592322
   },
   "src/_images/talks/responsive-design-and-beyond.png": {
-    "mtime": 1731179344096,
+    "mtime": 1695755738971,
     "size": 90834,
-    "processed": 1781136106332
+    "processed": 1781150592324
   },
   "src/_images/talks/responsive-design-studio.png": {
-    "mtime": 1731179344097,
+    "mtime": 1695755738973,
     "size": 171934,
-    "processed": 1781136106337
+    "processed": 1781150592326
   },
   "src/_images/talks/the-features-of-highly-effective-forms.png": {
-    "mtime": 1731179344097,
+    "mtime": 1695755738974,
     "size": 20819,
-    "processed": 1781136106338
+    "processed": 1781150592327
   },
   "src/_images/talks/the-web-is-for-everyone.png": {
-    "mtime": 1731179344097,
+    "mtime": 1695755738975,
     "size": 17441,
-    "processed": 1781136106340
+    "processed": 1781150592328
   },
   "src/_images/talks/the-web-should-just-work-for-everyone.png": {
-    "mtime": 1731179344098,
+    "mtime": 1695755738976,
     "size": 28070,
-    "processed": 1781136106342
+    "processed": 1781150592330
   },
   "src/_images/talks/there-are-no-buts-in-progressive-enhancement.png": {
-    "mtime": 1731179344099,
+    "mtime": 1695755738978,
     "size": 104480,
-    "processed": 1781136106344
+    "processed": 1781150592333
   },
   "src/_images/talks/your-brand-is-not-a-logo.png": {
-    "mtime": 1731179344100,
+    "mtime": 1695755738981,
     "size": 42805,
-    "processed": 1781136106350
+    "processed": 1781150592338
   },
   "src/_images/tanks/blastomussa-merletti.jpg": {
-    "mtime": 1731179344103,
+    "mtime": 1676583910152,
     "size": 463172,
-    "processed": 1781136106355
+    "processed": 1781150592345
   },
   "src/_images/tanks/burning-leptastrea.jpg": {
-    "mtime": 1731179344106,
+    "mtime": 1676583910281,
     "size": 549691,
-    "processed": 1781136106362
+    "processed": 1781150592353
   },
   "src/_images/tanks/coco-worm.jpg": {
-    "mtime": 1731179344123,
+    "mtime": 1676583910298,
     "size": 3257566,
-    "processed": 1781136106389
+    "processed": 1781150592392
   },
   "src/_images/tanks/devils-armor-zoas.jpg": {
-    "mtime": 1731179344126,
+    "mtime": 1676583910295,
     "size": 339447,
-    "processed": 1781136106394
+    "processed": 1781150592398
   },
   "src/_images/tanks/dragon-soul-goniastrea.jpg": {
-    "mtime": 1731179344133,
+    "mtime": 1676583910192,
     "size": 1485632,
-    "processed": 1781136106415
+    "processed": 1781150592420
   },
   "src/_images/tanks/fruit-loop-zoas.jpg": {
-    "mtime": 1731179344138,
+    "mtime": 1676583910150,
     "size": 715758,
-    "processed": 1781136106421
+    "processed": 1781150592435
   },
   "src/_images/tanks/german-blue-digitata-2.jpg": {
-    "mtime": 1731179344190,
+    "mtime": 1676583910240,
     "size": 9879440,
-    "processed": 1781136106506
+    "processed": 1781150592553
   },
   "src/_images/tanks/german-blue-digitata.jpg": {
-    "mtime": 1731179344195,
+    "mtime": 1676583910250,
     "size": 448314,
-    "processed": 1781136106512
+    "processed": 1781150592558
   },
   "src/_images/tanks/halle-berry-zoas.jpg": {
-    "mtime": 1731179344198,
+    "mtime": 1676583910140,
     "size": 428988,
-    "processed": 1781136106519
+    "processed": 1781150592573
   },
   "src/_images/tanks/john-deere-leptastrea.jpg": {
-    "mtime": 1731179344202,
+    "mtime": 1676583910275,
     "size": 651093,
-    "processed": 1781136106527
+    "processed": 1781150592583
   },
   "src/_images/tanks/lemon-lime-clove.jpg": {
-    "mtime": 1731179344205,
+    "mtime": 1676583910141,
     "size": 595151,
-    "processed": 1781136106531
+    "processed": 1781150592602
   },
   "src/_images/tanks/micromussa-lord-blue.jpg": {
-    "mtime": 1731179344209,
+    "mtime": 1676583910143,
     "size": 683592,
-    "processed": 1781136106537
+    "processed": 1781150592610
   },
   "src/_images/tanks/micromussa-lord-lavender.jpg": {
-    "mtime": 1731179344213,
+    "mtime": 1676583910279,
     "size": 559498,
-    "processed": 1781136106542
+    "processed": 1781150592624
   },
   "src/_images/tanks/micromussa-lord-rainbow-2.jpg": {
-    "mtime": 1731179344226,
+    "mtime": 1676583910293,
     "size": 3166581,
-    "processed": 1781136106567
+    "processed": 1781150592664
   },
   "src/_images/tanks/micromussa-lord-rainbow.jpg": {
-    "mtime": 1731179344231,
+    "mtime": 1676583910195,
     "size": 600984,
-    "processed": 1781136106571
+    "processed": 1781150592676
   },
   "src/_images/tanks/micromussa-lord-red.jpg": {
-    "mtime": 1731179344258,
+    "mtime": 1676583910178,
     "size": 6191270,
-    "processed": 1781136106599
+    "processed": 1781150592748
   },
   "src/_images/tanks/nirvana-zoas.jpg": {
-    "mtime": 1731179344279,
+    "mtime": 1676583910247,
     "size": 3756422,
-    "processed": 1781136106645
+    "processed": 1781150592794
   },
   "src/_images/tanks/oregon-tort.jpg": {
-    "mtime": 1731179344290,
+    "mtime": 1676583910155,
     "size": 2239308,
-    "processed": 1781136106660
+    "processed": 1781150592839
   },
   "src/_images/tanks/oxide-zoas.jpg": {
-    "mtime": 1731179344295,
+    "mtime": 1676583910229,
     "size": 758927,
-    "processed": 1781136106667
+    "processed": 1781150592877
   },
   "src/_images/tanks/pc-rainbow.jpg": {
-    "mtime": 1731179344321,
+    "mtime": 1676583910288,
     "size": 4942795,
-    "processed": 1781136106716
+    "processed": 1781150592939
   },
   "src/_images/tanks/pink-zipper-zoas.jpg": {
-    "mtime": 1731179344325,
+    "mtime": 1676583910277,
     "size": 341480,
-    "processed": 1781136106718
+    "processed": 1781150592949
   },
   "src/_images/tanks/rainbow-incinerator-zoas.jpg": {
-    "mtime": 1731179344328,
+    "mtime": 1676583910182,
     "size": 513339,
-    "processed": 1781136106723
+    "processed": 1781150592961
   },
   "src/_images/tanks/rainbow-symphilia-wilsoni.jpg": {
-    "mtime": 1739032344248,
+    "mtime": 1736296374332,
     "size": 542551,
-    "processed": 1781136106727
+    "processed": 1781150592975
   },
   "src/_images/tanks/rasta-zoas.jpg": {
-    "mtime": 1731179344331,
+    "mtime": 1676583910197,
     "size": 568781,
-    "processed": 1781136106732
+    "processed": 1781150592985
   },
   "src/_images/tanks/reefer-fts-2019-05-19.jpg": {
-    "mtime": 1731179344334,
+    "mtime": 1676583910283,
     "size": 643159,
-    "processed": 1781136106738
+    "processed": 1781150592996
   },
   "src/_images/tanks/slimeball-anacropora-and-cali-tort.jpg": {
-    "mtime": 1731179344355,
+    "mtime": 1676583910255,
     "size": 5106905,
-    "processed": 1781136106752
+    "processed": 1781150593075
   },
   "src/_images/tanks/sunset-plate.jpg": {
-    "mtime": 1731179344365,
+    "mtime": 1676583910205,
     "size": 611566,
-    "processed": 1781136106758
+    "processed": 1781150593084
   },
   "src/_images/tanks/unnamed-green-zoas.jpg": {
-    "mtime": 1731179344371,
+    "mtime": 1676583910147,
     "size": 1233360,
-    "processed": 1781136106768
+    "processed": 1781150593096
   },
   "src/_images/tanks/walt-disney.jpg": {
-    "mtime": 1731179344384,
+    "mtime": 1676583910202,
     "size": 2841396,
-    "processed": 1781136106815
+    "processed": 1781150593135
   },
   "src/_images/tanks/watchman-goby.jpg": {
-    "mtime": 1731179344395,
+    "mtime": 1676583910226,
     "size": 1781613,
-    "processed": 1781136106826
+    "processed": 1781150593162
   },
   "src/_images/tanks/zoa-garden.jpg": {
-    "mtime": 1731179344429,
+    "mtime": 1676583910188,
     "size": 7602261,
-    "processed": 1781136106862
+    "processed": 1781150593255
   },
   "src/_images/posts/2015-01-22/creepy-lg.png": {
-    "mtime": 1731179343723,
+    "mtime": 1676583909539,
     "size": 358623,
-    "processed": 1781136107086
+    "processed": 1781150593614
   },
   "src/_images/posts/2015-01-22/creepy-md.png": {
-    "mtime": 1731179343724,
+    "mtime": 1676583909540,
     "size": 244891,
-    "processed": 1781136107092
+    "processed": 1781150593623
   },
   "src/_images/posts/2015-01-22/creepy-sm.png": {
-    "mtime": 1731179343725,
+    "mtime": 1676583909541,
     "size": 95447,
-    "processed": 1781136107096
+    "processed": 1781150593629
   },
   "src/_images/posts/2015-03-26/first-pass-lg.jpg": {
-    "mtime": 1731179343728,
+    "mtime": 1676583909381,
     "size": 57812,
-    "processed": 1781136107109
+    "processed": 1781150593645
   },
   "src/_images/posts/2015-03-26/first-pass-md.jpg": {
-    "mtime": 1731179343729,
+    "mtime": 1676583909377,
     "size": 28894,
-    "processed": 1781136107114
+    "processed": 1781150593649
   },
   "src/_images/posts/2015-03-26/first-pass-sm.jpg": {
-    "mtime": 1731179343729,
+    "mtime": 1676583909354,
     "size": 14833,
-    "processed": 1781136107116
+    "processed": 1781150593652
   },
   "src/_images/posts/2015-03-26/second-pass-lg.jpg": {
-    "mtime": 1731179343730,
+    "mtime": 1676583909351,
     "size": 57675,
-    "processed": 1781136107119
+    "processed": 1781150593655
   },
   "src/_images/posts/2015-03-26/second-pass-md.jpg": {
-    "mtime": 1731179343730,
+    "mtime": 1676583909349,
     "size": 29114,
-    "processed": 1781136107122
+    "processed": 1781150593660
   },
   "src/_images/posts/2015-03-26/second-pass-sm.jpg": {
-    "mtime": 1731179343731,
+    "mtime": 1676583909373,
     "size": 12931,
-    "processed": 1781136107126
+    "processed": 1781150593663
   },
   "src/_images/posts/2015-03-26/the-idea-lg.jpg": {
-    "mtime": 1731179343731,
+    "mtime": 1676583909375,
     "size": 59947,
-    "processed": 1781136107129
+    "processed": 1781150593665
   },
   "src/_images/posts/2015-03-26/the-idea-md.jpg": {
-    "mtime": 1731179343732,
+    "mtime": 1676583909379,
     "size": 29817,
-    "processed": 1781136107134
+    "processed": 1781150593666
   },
   "src/_images/posts/2015-03-26/the-idea-sm.jpg": {
-    "mtime": 1731179343733,
+    "mtime": 1676583909352,
     "size": 14760,
-    "processed": 1781136107138
+    "processed": 1781150593668
   },
   "src/_images/posts/2015-03-26/third-pass-lg.jpg": {
-    "mtime": 1731179343733,
+    "mtime": 1676583909378,
     "size": 59349,
-    "processed": 1781136107142
+    "processed": 1781150593670
   },
   "src/_images/posts/2015-03-26/third-pass-md.jpg": {
-    "mtime": 1731179343733,
+    "mtime": 1676583909376,
     "size": 29542,
-    "processed": 1781136107147
+    "processed": 1781150593671
   },
   "src/_images/posts/2015-03-26/third-pass-sm.jpg": {
-    "mtime": 1731179343734,
+    "mtime": 1676583909355,
     "size": 15051,
-    "processed": 1781136107150
+    "processed": 1781150593673
   },
   "src/_images/posts/2015-02-26/atom-lg.jpg": {
-    "mtime": 1731179343726,
+    "mtime": 1676583909336,
     "size": 246978,
-    "processed": 1781136107102
+    "processed": 1781150593637
   },
   "src/_images/posts/2015-02-26/atom-sm.jpg": {
-    "mtime": 1731179343727,
+    "mtime": 1676583909335,
     "size": 72591,
-    "processed": 1781136107105
+    "processed": 1781150593641
   },
   "src/_images/posts/2014-11-06/01-lg.jpg": {
-    "mtime": 1731179343671,
+    "mtime": 1676583909474,
     "size": 68186,
-    "processed": 1781136106934
+    "processed": 1781150593385
   },
   "src/_images/posts/2014-11-06/01-md.jpg": {
-    "mtime": 1731179343672,
+    "mtime": 1676583909445,
     "size": 14299,
-    "processed": 1781136106936
+    "processed": 1781150593390
   },
   "src/_images/posts/2014-11-06/01-sm.jpg": {
-    "mtime": 1731179343672,
+    "mtime": 1676583909530,
     "size": 10274,
-    "processed": 1781136106939
+    "processed": 1781150593395
   },
   "src/_images/posts/2014-11-06/02-lg.jpg": {
-    "mtime": 1731179343673,
+    "mtime": 1676583909504,
     "size": 64103,
-    "processed": 1781136106940
+    "processed": 1781150593399
   },
   "src/_images/posts/2014-11-06/02-md.jpg": {
-    "mtime": 1731179343674,
+    "mtime": 1676583909527,
     "size": 14055,
-    "processed": 1781136106941
+    "processed": 1781150593401
   },
   "src/_images/posts/2014-11-06/02-sm.jpg": {
-    "mtime": 1731179343674,
+    "mtime": 1676583909453,
     "size": 9765,
-    "processed": 1781136106943
+    "processed": 1781150593403
   },
   "src/_images/posts/2014-11-06/03-lg.jpg": {
-    "mtime": 1731179343674,
+    "mtime": 1676583909448,
     "size": 51133,
-    "processed": 1781136106944
+    "processed": 1781150593405
   },
   "src/_images/posts/2014-11-06/03-md.jpg": {
-    "mtime": 1731179343674,
+    "mtime": 1676583909477,
     "size": 12355,
-    "processed": 1781136106946
+    "processed": 1781150593406
   },
   "src/_images/posts/2014-11-06/03-sm.jpg": {
-    "mtime": 1731179343675,
+    "mtime": 1676583909505,
     "size": 8416,
-    "processed": 1781136106948
+    "processed": 1781150593409
   },
   "src/_images/posts/2014-11-06/04-lg.jpg": {
-    "mtime": 1731179343676,
+    "mtime": 1676583909482,
     "size": 62530,
-    "processed": 1781136106951
+    "processed": 1781150593417
   },
   "src/_images/posts/2014-11-06/04-md.jpg": {
-    "mtime": 1731179343677,
+    "mtime": 1676583909501,
     "size": 14603,
-    "processed": 1781136106953
+    "processed": 1781150593419
   },
   "src/_images/posts/2014-11-06/04-sm.jpg": {
-    "mtime": 1731179343677,
+    "mtime": 1676583909430,
     "size": 10227,
-    "processed": 1781136106954
+    "processed": 1781150593424
   },
   "src/_images/posts/2014-11-06/05-lg.jpg": {
-    "mtime": 1731179343678,
+    "mtime": 1676583909427,
     "size": 60795,
-    "processed": 1781136106956
+    "processed": 1781150593427
   },
   "src/_images/posts/2014-11-06/05-md.jpg": {
-    "mtime": 1731179343680,
+    "mtime": 1676583909437,
     "size": 14439,
-    "processed": 1781136106957
+    "processed": 1781150593429
   },
   "src/_images/posts/2014-11-06/05-sm.jpg": {
-    "mtime": 1731179343680,
+    "mtime": 1676583909486,
     "size": 9652,
-    "processed": 1781136106961
+    "processed": 1781150593434
   },
   "src/_images/posts/2014-11-06/06-lg.jpg": {
-    "mtime": 1731179343682,
+    "mtime": 1676583909494,
     "size": 125149,
-    "processed": 1781136106963
+    "processed": 1781150593439
   },
   "src/_images/posts/2014-11-06/06-md.jpg": {
-    "mtime": 1731179343682,
+    "mtime": 1676583909478,
     "size": 26732,
-    "processed": 1781136106966
+    "processed": 1781150593443
   },
   "src/_images/posts/2014-11-06/06-sm.jpg": {
-    "mtime": 1731179343683,
+    "mtime": 1676583909440,
     "size": 17966,
-    "processed": 1781136106969
+    "processed": 1781150593444
   },
   "src/_images/posts/2014-11-06/07-lg.jpg": {
-    "mtime": 1731179343684,
+    "mtime": 1676583909441,
     "size": 182797,
-    "processed": 1781136106973
+    "processed": 1781150593449
   },
   "src/_images/posts/2014-11-06/07-md.jpg": {
-    "mtime": 1731179343685,
+    "mtime": 1676583909433,
     "size": 29148,
-    "processed": 1781136106976
+    "processed": 1781150593451
   },
   "src/_images/posts/2014-11-06/07-sm.jpg": {
-    "mtime": 1731179343687,
+    "mtime": 1676583909489,
     "size": 19322,
-    "processed": 1781136106978
+    "processed": 1781150593454
   },
   "src/_images/posts/2014-11-06/08-lg.jpg": {
-    "mtime": 1731179343688,
+    "mtime": 1676583909485,
     "size": 114612,
-    "processed": 1781136106980
+    "processed": 1781150593460
   },
   "src/_images/posts/2014-11-06/08-md.jpg": {
-    "mtime": 1731179343689,
+    "mtime": 1676583909497,
     "size": 20129,
-    "processed": 1781136106981
+    "processed": 1781150593468
   },
   "src/_images/posts/2014-11-06/08-sm.jpg": {
-    "mtime": 1731179343690,
+    "mtime": 1676583909426,
     "size": 13463,
-    "processed": 1781136106984
+    "processed": 1781150593470
   },
   "src/_images/posts/2014-11-06/09-lg.jpg": {
-    "mtime": 1731179343692,
+    "mtime": 1676583909429,
     "size": 192284,
-    "processed": 1781136106987
+    "processed": 1781150593477
   },
   "src/_images/posts/2014-11-06/09-md.jpg": {
-    "mtime": 1731179343695,
+    "mtime": 1676583909436,
     "size": 40942,
-    "processed": 1781136106989
+    "processed": 1781150593482
   },
   "src/_images/posts/2014-11-06/09-sm.jpg": {
-    "mtime": 1731179343696,
+    "mtime": 1676583909481,
     "size": 14525,
-    "processed": 1781136106992
+    "processed": 1781150593485
   },
   "src/_images/posts/2014-11-06/10-lg.jpg": {
-    "mtime": 1731179343698,
+    "mtime": 1676583909523,
     "size": 194475,
-    "processed": 1781136106996
+    "processed": 1781150593493
   },
   "src/_images/posts/2014-11-06/10-md.jpg": {
-    "mtime": 1731179343699,
+    "mtime": 1676583909526,
     "size": 42732,
-    "processed": 1781136106998
+    "processed": 1781150593495
   },
   "src/_images/posts/2014-11-06/10-sm.jpg": {
-    "mtime": 1731179343699,
+    "mtime": 1676583909450,
     "size": 16551,
-    "processed": 1781136107000
+    "processed": 1781150593499
   },
   "src/_images/posts/2014-11-06/11-lg.jpg": {
-    "mtime": 1731179343700,
+    "mtime": 1676583909452,
     "size": 79441,
-    "processed": 1781136107003
+    "processed": 1781150593502
   },
   "src/_images/posts/2014-11-06/11-md.jpg": {
-    "mtime": 1731179343700,
+    "mtime": 1676583909476,
     "size": 18351,
-    "processed": 1781136107006
+    "processed": 1781150593505
   },
   "src/_images/posts/2014-11-06/11-sm.jpg": {
-    "mtime": 1731179343701,
+    "mtime": 1676583909502,
     "size": 13118,
-    "processed": 1781136107009
+    "processed": 1781150593507
   },
   "src/_images/posts/2014-11-06/12-lg.jpg": {
-    "mtime": 1731179343701,
+    "mtime": 1676583909529,
     "size": 80819,
-    "processed": 1781136107013
+    "processed": 1781150593509
   },
   "src/_images/posts/2014-11-06/12-md.jpg": {
-    "mtime": 1731179343702,
+    "mtime": 1676583909525,
     "size": 18645,
-    "processed": 1781136107017
+    "processed": 1781150593512
   },
   "src/_images/posts/2014-11-06/12-sm.jpg": {
-    "mtime": 1731179343703,
+    "mtime": 1676583909473,
     "size": 13344,
-    "processed": 1781136107020
+    "processed": 1781150593515
   },
   "src/_images/posts/2014-11-06/13-lg.jpg": {
-    "mtime": 1731179343704,
+    "mtime": 1676583909455,
     "size": 113681,
-    "processed": 1781136107023
+    "processed": 1781150593518
   },
   "src/_images/posts/2014-11-06/13-md.jpg": {
-    "mtime": 1731179343704,
+    "mtime": 1676583909447,
     "size": 25865,
-    "processed": 1781136107026
+    "processed": 1781150593522
   },
   "src/_images/posts/2014-11-06/13-sm.jpg": {
-    "mtime": 1731179343705,
+    "mtime": 1676583909531,
     "size": 17938,
-    "processed": 1781136107028
+    "processed": 1781150593526
   },
   "src/_images/posts/2014-11-06/14-lg.jpg": {
-    "mtime": 1731179343707,
+    "mtime": 1676583909490,
     "size": 227653,
-    "processed": 1781136107032
+    "processed": 1781150593531
   },
   "src/_images/posts/2014-11-06/14-md.jpg": {
-    "mtime": 1731179343707,
+    "mtime": 1676583909480,
     "size": 39849,
-    "processed": 1781136107034
+    "processed": 1781150593535
   },
   "src/_images/posts/2014-11-06/14-sm.jpg": {
-    "mtime": 1731179343708,
+    "mtime": 1676583909442,
     "size": 14408,
-    "processed": 1781136107038
+    "processed": 1781150593538
   },
   "src/_images/posts/2014-11-06/15-lg.jpg": {
-    "mtime": 1731179343709,
+    "mtime": 1676583909438,
     "size": 55866,
-    "processed": 1781136107040
+    "processed": 1781150593540
   },
   "src/_images/posts/2014-11-06/15-md.jpg": {
-    "mtime": 1731179343710,
+    "mtime": 1676583909434,
     "size": 13036,
-    "processed": 1781136107044
+    "processed": 1781150593541
   },
   "src/_images/posts/2014-11-06/15-sm.jpg": {
-    "mtime": 1731179343710,
+    "mtime": 1676583909491,
     "size": 11879,
-    "processed": 1781136107046
+    "processed": 1781150593542
   },
   "src/_images/posts/2014-11-06/16-lg.jpg": {
-    "mtime": 1731179343710,
+    "mtime": 1676583909484,
     "size": 42269,
-    "processed": 1781136107049
+    "processed": 1781150593543
   },
   "src/_images/posts/2014-11-06/16-md.jpg": {
-    "mtime": 1731179343711,
+    "mtime": 1676583909499,
     "size": 10185,
-    "processed": 1781136107052
+    "processed": 1781150593543
   },
   "src/_images/posts/2014-11-06/16-sm.jpg": {
-    "mtime": 1731179343711,
+    "mtime": 1676583909424,
     "size": 9048,
-    "processed": 1781136107053
+    "processed": 1781150593550
   },
   "src/_images/posts/2014-11-06/17-lg.jpg": {
-    "mtime": 1731179343713,
+    "mtime": 1676583909431,
     "size": 268871,
-    "processed": 1781136107057
+    "processed": 1781150593559
   },
   "src/_images/posts/2014-11-06/17-md.jpg": {
-    "mtime": 1731179343713,
+    "mtime": 1676583909435,
     "size": 33454,
-    "processed": 1781136107058
+    "processed": 1781150593568
   },
   "src/_images/posts/2014-11-06/17-sm.jpg": {
-    "mtime": 1731179343714,
+    "mtime": 1676583909483,
     "size": 14244,
-    "processed": 1781136107060
+    "processed": 1781150593569
   },
   "src/_images/posts/2014-11-06/18-lg.jpg": {
-    "mtime": 1731179343715,
+    "mtime": 1676583909493,
     "size": 152004,
-    "processed": 1781136107063
+    "processed": 1781150593575
   },
   "src/_images/posts/2014-11-06/18-md.jpg": {
-    "mtime": 1731179343715,
+    "mtime": 1676583909479,
     "size": 47590,
-    "processed": 1781136107065
+    "processed": 1781150593577
   },
   "src/_images/posts/2014-11-06/18-sm.jpg": {
-    "mtime": 1731179343716,
+    "mtime": 1676583909439,
     "size": 13143,
-    "processed": 1781136107067
+    "processed": 1781150593579
   },
   "src/_images/posts/2014-11-06/19-lg.jpg": {
-    "mtime": 1731179343717,
+    "mtime": 1676583909443,
     "size": 81225,
-    "processed": 1781136107069
+    "processed": 1781150593581
   },
   "src/_images/posts/2014-11-06/19-md.jpg": {
-    "mtime": 1731179343717,
+    "mtime": 1676583909432,
     "size": 29302,
-    "processed": 1781136107071
+    "processed": 1781150593586
   },
   "src/_images/posts/2014-11-06/19-sm.jpg": {
-    "mtime": 1731179343718,
+    "mtime": 1676583909491,
     "size": 11293,
-    "processed": 1781136107073
+    "processed": 1781150593587
   },
   "src/_images/posts/2014-11-06/20-lg.jpg": {
-    "mtime": 1731179343719,
+    "mtime": 1676583909487,
     "size": 120586,
-    "processed": 1781136107076
+    "processed": 1781150593591
   },
   "src/_images/posts/2014-11-06/20-md.jpg": {
-    "mtime": 1731179343720,
+    "mtime": 1676583909496,
     "size": 46986,
-    "processed": 1781136107079
+    "processed": 1781150593599
   },
   "src/_images/posts/2014-11-06/20-sm.jpg": {
-    "mtime": 1731179343720,
+    "mtime": 1676583909406,
     "size": 11196,
-    "processed": 1781136107080
+    "processed": 1781150593606
   },
   "src/_images/posts/2015-06-22/01.jpg": {
-    "mtime": 1731179343742,
+    "mtime": 1676583909635,
     "size": 456655,
-    "processed": 1781136107171
+    "processed": 1781150593707
   },
   "src/_images/posts/2015-06-22/03.jpg": {
-    "mtime": 1731179343750,
+    "mtime": 1676583909637,
     "size": 1350227,
-    "processed": 1781136107182
+    "processed": 1781150593732
   },
   "src/_images/posts/2015-06-22/04.jpg": {
-    "mtime": 1731179343762,
+    "mtime": 1676583909645,
     "size": 2220495,
-    "processed": 1781136107204
+    "processed": 1781150593756
   },
   "src/_images/posts/2015-06-22/05.jpg": {
-    "mtime": 1731179343769,
+    "mtime": 1676583909641,
     "size": 921841,
-    "processed": 1781136107218
+    "processed": 1781150593772
   },
   "src/_images/posts/2015-06-22/06.jpg": {
-    "mtime": 1731179343780,
+    "mtime": 1676583909639,
     "size": 1799416,
-    "processed": 1781136107238
+    "processed": 1781150593795
   },
   "src/_images/posts/2015-06-22/02.gif": {
-    "mtime": 1731179343743,
+    "mtime": 1676583909648,
     "size": 160301,
-    "processed": 1781136107174
+    "processed": 1781150593711
   },
   "src/_images/posts/2015-05-28/01.png": {
-    "mtime": 1731179343734,
+    "mtime": 1676583909749,
     "size": 54654,
-    "processed": 1781136107153
+    "processed": 1781150593677
   },
   "src/_images/posts/2015-05-28/02.png": {
-    "mtime": 1731179343736,
+    "mtime": 1676583909754,
     "size": 156186,
-    "processed": 1781136107156
+    "processed": 1781150593688
   },
   "src/_images/posts/2015-05-28/03.png": {
-    "mtime": 1731179343737,
+    "mtime": 1676583909752,
     "size": 94066,
-    "processed": 1781136107159
+    "processed": 1781150593689
   },
   "src/_images/posts/2015-05-28/04.png": {
-    "mtime": 1731179343738,
+    "mtime": 1676583909776,
     "size": 150711,
-    "processed": 1781136107163
+    "processed": 1781150593691
   },
   "src/_images/posts/2015-05-28/05.png": {
-    "mtime": 1731179343739,
+    "mtime": 1676583909773,
     "size": 140559,
-    "processed": 1781136107166
+    "processed": 1781150593695
   },
   "src/_images/posts/2015-08-17/01.png": {
-    "mtime": 1731179343781,
+    "mtime": 1676583909390,
     "size": 97269,
-    "processed": 1781136107239
+    "processed": 1781150593798
   },
   "src/_images/posts/2015-08-17/02.png": {
-    "mtime": 1731179343782,
+    "mtime": 1676583909392,
     "size": 97273,
-    "processed": 1781136107241
+    "processed": 1781150593801
   },
   "src/_images/posts/2015-11-11/01.png": {
-    "mtime": 1731179343782,
+    "mtime": 1676583909784,
     "size": 2481,
-    "processed": 1781136107243
+    "processed": 1781150593806
   },
   "src/_images/posts/2015-11-11/03.png": {
-    "mtime": 1731179343783,
+    "mtime": 1676583909785,
     "size": 33081,
-    "processed": 1781136107246
+    "processed": 1781150593809
   },
   "src/_images/posts/2015-11-11/02.gif": {
-    "mtime": 1731179343783,
+    "mtime": 1676583909787,
     "size": 3260,
-    "processed": 1781136107244
+    "processed": 1781150593807
   },
   "src/_images/posts/2015-11-11/04.gif": {
-    "mtime": 1731179343783,
+    "mtime": 1676583909793,
     "size": 15471,
-    "processed": 1781136107247
+    "processed": 1781150593811
   },
   "src/_images/posts/2015-11-11/05.gif": {
-    "mtime": 1731179343784,
+    "mtime": 1676583909791,
     "size": 21675,
-    "processed": 1781136107249
+    "processed": 1781150593813
   },
   "src/_images/posts/2015-11-11/06.gif": {
-    "mtime": 1731179343784,
+    "mtime": 1676583909788,
     "size": 7899,
-    "processed": 1781136107250
+    "processed": 1781150593815
   },
   "src/_images/posts/2015-11-11/07.gif": {
-    "mtime": 1731179343784,
+    "mtime": 1676583909790,
     "size": 5737,
-    "processed": 1781136107254
+    "processed": 1781150593818
   },
   "src/_images/posts/2015-11-12/01.jpg": {
-    "mtime": 1731179343784,
+    "mtime": 1676583909543,
     "size": 90013,
-    "processed": 1781136107255
+    "processed": 1781150593821
   },
   "src/_images/posts/2016-01-06/01.png": {
-    "mtime": 1731179343785,
+    "mtime": 1676583909394,
     "size": 37711,
-    "processed": 1781136107257
+    "processed": 1781150593824
   },
   "src/_images/posts/2016-01-06/02.png": {
-    "mtime": 1731179343785,
+    "mtime": 1676583909397,
     "size": 11370,
-    "processed": 1781136107259
+    "processed": 1781150593827
   },
   "src/_images/posts/2016-01-06/03.png": {
-    "mtime": 1731179343786,
+    "mtime": 1676583909395,
     "size": 145940,
-    "processed": 1781136107261
+    "processed": 1781150593832
   },
   "src/_images/posts/2016-01-06/04.png": {
-    "mtime": 1731179343787,
+    "mtime": 1676583909398,
     "size": 151699,
-    "processed": 1781136107264
+    "processed": 1781150593836
   },
   "src/_images/posts/2016-03-04/11.jpg": {
-    "mtime": 1731179343798,
+    "mtime": 1676583909305,
     "size": 55157,
-    "processed": 1781136107278
+    "processed": 1781150593874
   },
   "src/_images/posts/2016-03-04/12.jpg": {
-    "mtime": 1731179343798,
+    "mtime": 1676583909302,
     "size": 49208,
-    "processed": 1781136107280
+    "processed": 1781150593877
   },
   "src/_images/posts/2016-03-04/03.png": {
-    "mtime": 1731179343789,
+    "mtime": 1676583909299,
     "size": 11753,
-    "processed": 1781136107270
+    "processed": 1781150593853
   },
   "src/_images/posts/2016-03-04/04.png": {
-    "mtime": 1731179343790,
+    "mtime": 1676583909306,
     "size": 106133,
-    "processed": 1781136107273
+    "processed": 1781150593861
   },
   "src/_images/posts/2016-03-04/09.png": {
-    "mtime": 1731179343796,
+    "mtime": 1676583909325,
     "size": 80880,
-    "processed": 1781136107274
+    "processed": 1781150593869
   },
   "src/_images/posts/2016-03-04/10.png": {
-    "mtime": 1731179343797,
+    "mtime": 1676583909324,
     "size": 50032,
-    "processed": 1781136107276
+    "processed": 1781150593873
   },
   "src/_images/posts/2016-03-04/13.png": {
-    "mtime": 1731179343798,
+    "mtime": 1676583909303,
     "size": 6488,
-    "processed": 1781136107282
+    "processed": 1781150593879
   },
   "src/_images/posts/2016-03-04/01.gif": {
-    "mtime": 1731179343788,
+    "mtime": 1676583909330,
     "size": 56620,
-    "processed": 1781136107266
+    "processed": 1781150593840
   },
   "src/_images/posts/2016-03-04/02.gif": {
-    "mtime": 1731179343788,
+    "mtime": 1676583909331,
     "size": 26603,
-    "processed": 1781136107268
+    "processed": 1781150593846
   },
   "src/_images/posts/2016-10-11/oscar.jpg": {
-    "mtime": 1731179343843,
+    "mtime": 1676583909603,
     "size": 1104797,
-    "processed": 1781136107314
+    "processed": 1781150593952
   },
   "src/_images/posts/2016-10-17/kodak-roadblock.png": {
-    "mtime": 1731179343844,
+    "mtime": 1676583909632,
     "size": 85205,
-    "processed": 1781136107316
+    "processed": 1781150593957
   },
   "src/_images/posts/2016-04-11/03.jpg": {
-    "mtime": 1731179343805,
+    "mtime": 1676583909653,
     "size": 396550,
-    "processed": 1781136107291
+    "processed": 1781150593911
   },
   "src/_images/posts/2016-04-11/08.jpg": {
-    "mtime": 1731179343813,
+    "mtime": 1676583909682,
     "size": 248170,
-    "processed": 1781136107305
+    "processed": 1781150593935
   },
   "src/_images/posts/2016-04-11/02.png": {
-    "mtime": 1731179343802,
+    "mtime": 1676583909656,
     "size": 411674,
-    "processed": 1781136107285
+    "processed": 1781150593901
   },
   "src/_images/posts/2016-04-11/04.png": {
-    "mtime": 1731179343806,
+    "mtime": 1676583909681,
     "size": 104592,
-    "processed": 1781136107293
+    "processed": 1781150593915
   },
   "src/_images/posts/2016-04-11/05.png": {
-    "mtime": 1731179343807,
+    "mtime": 1676583909679,
     "size": 78074,
-    "processed": 1781136107295
+    "processed": 1781150593917
   },
   "src/_images/posts/2016-04-11/06.png": {
-    "mtime": 1731179343809,
+    "mtime": 1676583909675,
     "size": 89857,
-    "processed": 1781136107296
+    "processed": 1781150593920
   },
   "src/_images/posts/2016-04-11/07.png": {
-    "mtime": 1731179343811,
+    "mtime": 1676583909677,
     "size": 273339,
-    "processed": 1781136107300
+    "processed": 1781150593929
   },
   "src/_images/posts/2016-04-11/01.gif": {
-    "mtime": 1731179343799,
+    "mtime": 1676583909684,
     "size": 59171,
-    "processed": 1781136107283
+    "processed": 1781150593883
   },
   "src/_images/posts/2016-10-25/webbloatscore.png": {
-    "mtime": 1731179343845,
+    "mtime": 1676583909344,
     "size": 86308,
-    "processed": 1781136107318
+    "processed": 1781150593960
   },
   "src/_images/posts/2017-03-31/video-avi-poster.jpg": {
-    "mtime": 1731179343860,
+    "mtime": 1676583909727,
     "size": 9639,
-    "processed": 1781136107334
+    "processed": 1781150594018
   },
   "src/_images/posts/2016-12-06/01.png": {
-    "mtime": 1731179343846,
+    "mtime": 1676583909691,
     "size": 23837,
-    "processed": 1781136107319
+    "processed": 1781150593965
   },
   "src/_images/posts/2016-12-06/02.png": {
-    "mtime": 1731179343852,
+    "mtime": 1676583909697,
     "size": 807154,
-    "processed": 1781136107323
+    "processed": 1781150593978
   },
   "src/_images/posts/2016-12-06/03.png": {
-    "mtime": 1731179343859,
+    "mtime": 1676583909694,
     "size": 1281801,
-    "processed": 1781136107332
+    "processed": 1781150594012
   },
   "src/_images/posts/2017-05-24/11.jpg": {
-    "mtime": 1731179343893,
+    "mtime": 1676583909555,
     "size": 76778,
-    "processed": 1781136107343
+    "processed": 1781150594036
   },
   "src/_images/posts/2017-05-24/04.png": {
-    "mtime": 1731179343878,
+    "mtime": 1676583909556,
     "size": 10320,
-    "processed": 1781136107335
+    "processed": 1781150594022
   },
   "src/_images/posts/2017-05-24/06.png": {
-    "mtime": 1731179343885,
+    "mtime": 1676583909550,
     "size": 11840,
-    "processed": 1781136107337
+    "processed": 1781150594026
   },
   "src/_images/posts/2017-05-24/07.png": {
-    "mtime": 1731179343886,
+    "mtime": 1676583909553,
     "size": 12724,
-    "processed": 1781136107338
+    "processed": 1781150594031
   },
   "src/_images/posts/2017-05-24/09.png": {
-    "mtime": 1731179343892,
+    "mtime": 1676583909576,
     "size": 6171,
-    "processed": 1781136107340
+    "processed": 1781150594032
   },
   "src/_images/posts/2017-05-24/10.png": {
-    "mtime": 1731179343892,
+    "mtime": 1676583909574,
     "size": 11026,
-    "processed": 1781136107341
+    "processed": 1781150594034
   },
   "src/_images/posts/2017-05-24/12.png": {
-    "mtime": 1731179343894,
+    "mtime": 1676583909552,
     "size": 45932,
-    "processed": 1781136107345
+    "processed": 1781150594038
   },
   "src/_images/posts/2019-04-26/share-target.png": {
-    "mtime": 1731179343894,
+    "mtime": 1676583909383,
     "size": 41558,
-    "processed": 1781136107348
+    "processed": 1781150594043
   },
   "src/_images/posts/2021-11-19/hero.jpg": {
-    "mtime": 1731179343895,
+    "mtime": 1676583909598,
     "size": 166322,
-    "processed": 1781136107352
+    "processed": 1781150594048
   },
   "src/_images/posts/2021-11-19/hero.png": {
-    "mtime": 1731179343899,
+    "mtime": 1676583909595,
     "size": 1708403,
-    "processed": 1781136107358
+    "processed": 1781150594071
   },
   "src/_images/posts/2022-02-15/hero.jpg": {
-    "mtime": 1731179343900,
+    "mtime": 1676583909388,
     "size": 115794,
-    "processed": 1781136107361
+    "processed": 1781150594074
   },
   "src/_images/posts/2022-02-15/hero.png": {
-    "mtime": 1731179343903,
+    "mtime": 1676583909386,
     "size": 1404696,
-    "processed": 1781136107371
+    "processed": 1781150594109
   },
   "src/_images/posts/2022-06-10/hero.jpg": {
-    "mtime": 1731179343903,
+    "mtime": 1676583909707,
     "size": 45742,
-    "processed": 1781136107373
+    "processed": 1781150594111
   },
   "src/_images/posts/2022-06-10/hero.png": {
-    "mtime": 1731179343906,
+    "mtime": 1676583909704,
     "size": 1170756,
-    "processed": 1781136107378
+    "processed": 1781150594121
   },
   "src/_images/posts/2022-07-27/hero.jpg": {
-    "mtime": 1731179343907,
+    "mtime": 1676583909734,
     "size": 211220,
-    "processed": 1781136107383
+    "processed": 1781150594127
   },
   "src/_images/posts/2022-07-27/hero.png": {
-    "mtime": 1731179343912,
+    "mtime": 1676583909732,
     "size": 1868676,
-    "processed": 1781136107398
+    "processed": 1781150594138
   },
   "src/_images/posts/2022-08-11/hero.jpg": {
-    "mtime": 1731179343913,
+    "mtime": 1676583909628,
     "size": 113579,
-    "processed": 1781136107400
+    "processed": 1781150594141
   },
   "src/_images/posts/2022-08-11/hero.png": {
-    "mtime": 1731179343917,
+    "mtime": 1676583909626,
     "size": 1625480,
-    "processed": 1781136107407
+    "processed": 1781150594145
   },
   "src/_images/posts/2022-08-22/01.jpg": {
-    "mtime": 1731179343917,
+    "mtime": 1676583909342,
     "size": 17280,
-    "processed": 1781136107409
+    "processed": 1781150594146
   },
   "src/_images/posts/2022-08-22/hero.jpg": {
-    "mtime": 1731179343918,
+    "mtime": 1676583909341,
     "size": 152325,
-    "processed": 1781136107411
+    "processed": 1781150594150
   },
   "src/_images/posts/2022-08-22/hero.png": {
-    "mtime": 1731179343920,
+    "mtime": 1676583909340,
     "size": 1542144,
-    "processed": 1781136107417
+    "processed": 1781150594159
   },
   "src/_images/posts/2022-08-31/hero.jpg": {
-    "mtime": 1731179343921,
+    "mtime": 1676583909536,
     "size": 288631,
-    "processed": 1781136107420
+    "processed": 1781150594161
   },
   "src/_images/posts/2022-08-31/hero.png": {
-    "mtime": 1731179343927,
+    "mtime": 1676583909535,
     "size": 1933016,
-    "processed": 1781136107436
+    "processed": 1781150594169
   },
   "src/_images/posts/2022-09-19/hero.jpg": {
-    "mtime": 1731179343932,
+    "mtime": 1676583909701,
     "size": 176633,
-    "processed": 1781136107442
+    "processed": 1781150594175
   },
   "src/_images/posts/2022-10-03/hero.jpg": {
-    "mtime": 1731179343936,
+    "mtime": 1676583909591,
     "size": 553236,
-    "processed": 1781136107460
+    "processed": 1781150594184
   },
   "src/_images/posts/2022-10-03/hero.png": {
-    "mtime": 1731179343946,
+    "mtime": 1676583909589,
     "size": 2219170,
-    "processed": 1781136107477
+    "processed": 1781150594192
   },
   "src/_images/posts/2022-12-13/hero.png": {
-    "mtime": 1731179343965,
+    "mtime": 1676583909402,
     "size": 1579513,
-    "processed": 1781136107496
+    "processed": 1781150594215
   },
   "src/_images/posts/2022-10-07/hero.jpg": {
-    "mtime": 1731179343955,
+    "mtime": 1676583909781,
     "size": 1370830,
-    "processed": 1781136107485
+    "processed": 1781150594200
   },
   "src/_images/posts/2022-10-12/hero.jpg": {
-    "mtime": 1731179343957,
+    "mtime": 1676583909688,
     "size": 84090,
-    "processed": 1781136107488
+    "processed": 1781150594202
   },
   "src/_images/posts/2023-02-03/hero.jpg": {
-    "mtime": 1731179343991,
+    "mtime": 1676583909739,
     "size": 993706,
-    "processed": 1781136107506
+    "processed": 1781150594228
   },
   "src/_images/posts/2023-02-03/iphone.jpg": {
-    "mtime": 1731179343997,
+    "mtime": 1676583909741,
     "size": 406439,
-    "processed": 1781136107510
+    "processed": 1781150594233
   },
   "src/_images/posts/2023-02-03/app-store.png": {
-    "mtime": 1731179343968,
+    "mtime": 1676583909743,
     "size": 147620,
-    "processed": 1781136107499
+    "processed": 1781150594218
   },
   "src/_images/posts/2023-03-06/hero.jpg": {
-    "mtime": 1731179344001,
+    "mtime": 1678153286067,
     "size": 488022,
-    "processed": 1781136107513
+    "processed": 1781150594241
   },
   "src/_images/posts/2023-03-16/hero.png": {
-    "mtime": 1731179344001,
+    "mtime": 1679000530551,
     "size": 70915,
-    "processed": 1781136107515
+    "processed": 1781150594245
   },
   "src/_images/posts/2023-04-21/hero.jpg": {
-    "mtime": 1731179344004,
+    "mtime": 1695755738853,
     "size": 152062,
-    "processed": 1781136107518
+    "processed": 1781150594249
   },
   "src/_images/posts/2023-06-09/hero.jpg": {
-    "mtime": 1731179344012,
+    "mtime": 1695755738863,
     "size": 1041658,
-    "processed": 1781136107523
+    "processed": 1781150594266
   },
   "src/_images/posts/2023-09-08/aaron-and-molly.jpg": {
-    "mtime": 1731179344027,
+    "mtime": 1695755738886,
     "size": 475481,
-    "processed": 1781136107543
+    "processed": 1781150594306
   },
   "src/_images/posts/2023-09-08/breakfast-at-sxsw.jpg": {
-    "mtime": 1731179344027,
+    "mtime": 1695755738888,
     "size": 54293,
-    "processed": 1781136107544
+    "processed": 1781150594311
   },
   "src/_images/posts/2023-09-08/molly-and-bill.jpg": {
-    "mtime": 1731179344027,
+    "mtime": 1695755738889,
     "size": 47439,
-    "processed": 1781136107546
+    "processed": 1781150594317
   },
   "src/_images/posts/2023-09-08/molly-and-patrick-at-tpac.jpg": {
-    "mtime": 1731179344044,
+    "mtime": 1695755738912,
     "size": 2381054,
-    "processed": 1781136107556
+    "processed": 1781150594354
   },
   "src/_images/posts/2023-09-08/molly-presenting.jpg": {
-    "mtime": 1731179344045,
+    "mtime": 1695755738914,
     "size": 67152,
-    "processed": 1781136107558
+    "processed": 1781150594359
   },
   "src/_images/posts/2023-09-08/molly-relaxing.jpg": {
-    "mtime": 1731179344047,
+    "mtime": 1695755738916,
     "size": 218097,
-    "processed": 1781136107561
+    "processed": 1781150594363
   },
   "src/_images/posts/2023-09-08/molly-taking-pictures.jpg": {
-    "mtime": 1731179344058,
+    "mtime": 1695755738933,
     "size": 2280505,
-    "processed": 1781136107572
+    "processed": 1781150594381
   },
   "src/_images/posts/2023-09-08/molly-training.jpg": {
-    "mtime": 1731179344059,
+    "mtime": 1695755738935,
     "size": 34273,
-    "processed": 1781136107574
+    "processed": 1781150594385
   },
   "src/_images/posts/2023-09-08/working-on-slides.jpg": {
-    "mtime": 1731179344060,
+    "mtime": 1695755738936,
     "size": 48858,
-    "processed": 1781136107576
+    "processed": 1781150594391
   },
   "src/_images/posts/2023-08-21/hero.jpg": {
-    "mtime": 1731179344023,
+    "mtime": 1695755738882,
     "size": 1261743,
-    "processed": 1781136107538
+    "processed": 1781150594292
   },
   "src/_images/posts/2023-08-21/01.png": {
-    "mtime": 1731179344014,
+    "mtime": 1695755738867,
     "size": 167932,
-    "processed": 1781136107527
+    "processed": 1781150594268
   },
   "src/_images/posts/2023-08-21/02.png": {
-    "mtime": 1731179344015,
+    "mtime": 1695755738869,
     "size": 43012,
-    "processed": 1781136107528
+    "processed": 1781150594275
   },
   "src/_images/posts/2023-10-09/hero.jpg": {
-    "mtime": 1731179344062,
+    "mtime": 1696892646358,
     "size": 159110,
-    "processed": 1781136107579
+    "processed": 1781150594396
   },
   "src/_images/posts/2023-10-09/hero1.jpg": {
-    "mtime": 1731179344063,
+    "mtime": 1702703936486,
     "size": 131684,
-    "processed": 1781136107582
+    "processed": 1781150594405
   },
   "src/_images/posts/2023-10-09/widgets-in-windows.jpg": {
-    "mtime": 1731179344065,
+    "mtime": 1696892646379,
     "size": 330202,
-    "processed": 1781136107586
+    "processed": 1781150594414
   },
   "src/_images/posts/2023-10-09/widgets-promotion.gif": {
-    "mtime": 1731179344066,
+    "mtime": 1696892646395,
     "size": 66735,
-    "processed": 1781136107589
+    "processed": 1781150594420
   },
   "src/_images/posts/2023-12-15/hero.jpg": {
-    "mtime": 1731179344067,
+    "mtime": 1702672264495,
     "size": 359419,
-    "processed": 1781136107594
+    "processed": 1781150594432
   },
   "src/_images/posts/2023-12-15/1.png": {
-    "mtime": 1731179344066,
+    "mtime": 1702672264490,
     "size": 20881,
-    "processed": 1781136107591
+    "processed": 1781150594423
   },
   "src/_images/posts/2024-01-25/hero.jpg": {
-    "mtime": 1731179344068,
+    "mtime": 1706217235210,
     "size": 177729,
-    "processed": 1781136107598
+    "processed": 1781150594440
   },
   "src/_images/posts/2024-02-02/hero.jpg": {
-    "mtime": 1731179344070,
+    "mtime": 1706909472679,
     "size": 293892,
-    "processed": 1781136107604
+    "processed": 1781150594454
   },
   "src/_images/posts/2025-07-10/lwd-6e.jpg": {
-    "mtime": 1765084463250,
+    "mtime": 1752168648848,
     "size": 2470125,
-    "processed": 1781136107617
+    "processed": 1781150594495
   },
   "src/_images/posts/2025-10-15/hero.png": {
-    "mtime": 1765084463271,
+    "mtime": 1760648118332,
     "size": 3859324,
-    "processed": 1781136107639
+    "processed": 1781150594528
   },
   "src/_images/posts/2025-10-21/hero.jpg": {
-    "mtime": 1765084463276,
+    "mtime": 1761088220463,
     "size": 442290,
-    "processed": 1781136107644
+    "processed": 1781150594539
   },
   "src/_images/talks/embedding-accessibility.png": {
-    "mtime": 1767028807434,
+    "mtime": 1769817758901,
     "size": 561705,
-    "processed": 1781136106296
+    "processed": 1781150592282
   },
   "src/_images/talks/expanding-accessibility-with-ai.png": {
-    "mtime": 1767028807440,
+    "mtime": 1769817758914,
     "size": 1639687,
-    "processed": 1781136106303
+    "processed": 1781150592293
   },
   "src/_images/talks/where-do-we-go-from-here.png": {
-    "mtime": 1767028807441,
+    "mtime": 1769817758917,
     "size": 260230,
-    "processed": 1781136106347
+    "processed": 1781150592335
   },
   "src/_images/posts/2005-05-26/aitErrorMsg.jpg": {
-    "mtime": 1779745303622,
+    "mtime": 1779312540107,
     "size": 17344,
-    "processed": 1781136106863
+    "processed": 1781150593261
   },
   "src/_images/posts/2005-11-07/please_wait_t.jpg": {
-    "mtime": 1779745303624,
+    "mtime": 1779312540109,
     "size": 23795,
-    "processed": 1781136106866
+    "processed": 1781150593265
   },
   "src/_images/posts/2006-02-02/a_lot_of_malarkey_with_ie1.png": {
-    "mtime": 1779745303628,
+    "mtime": 1779312540111,
     "size": 79858,
-    "processed": 1781136106869
+    "processed": 1781150593269
   },
   "src/_images/posts/2006-02-18/png_compare.png": {
-    "mtime": 1779745303630,
+    "mtime": 1779312540113,
     "size": 10203,
-    "processed": 1781136106872
+    "processed": 1781150593275
   },
   "src/_images/posts/2006-03-06/WDiaN.gif": {
-    "mtime": 1779745303632,
+    "mtime": 1779312540115,
     "size": 6527,
-    "processed": 1781136106874
+    "processed": 1781150593281
   },
   "src/_images/posts/2006-03-22/sexy-presentations.jpg": {
-    "mtime": 1779745303634,
+    "mtime": 1779312540116,
     "size": 15609,
-    "processed": 1781136106877
+    "processed": 1781150593289
   },
   "src/_images/posts/2006-03-28/binary.gif": {
-    "mtime": 1779745303636,
+    "mtime": 1779312540118,
     "size": 1406,
-    "processed": 1781136106879
+    "processed": 1781150593297
   },
   "src/_images/posts/2008-02-25/wasp-logo.png": {
-    "mtime": 1779745303637,
+    "mtime": 1779312540119,
     "size": 2662,
-    "processed": 1781136106880
+    "processed": 1781150593300
   },
   "src/_images/posts/2011-02-09/lala-fail.png": {
-    "mtime": 1779745303641,
+    "mtime": 1779312540123,
     "size": 30585,
-    "processed": 1781136106884
+    "processed": 1781150593303
   },
   "src/_images/posts/2011-02-09/lifehacker-fail.png": {
-    "mtime": 1779745303643,
+    "mtime": 1779312540124,
     "size": 11602,
-    "processed": 1781136106886
+    "processed": 1781150593305
   },
   "src/_images/posts/2011-06-21/adaptive-web-design-stack.jpg": {
-    "mtime": 1779745303645,
+    "mtime": 1779312540127,
     "size": 48779,
-    "processed": 1781136106890
+    "processed": 1781150593309
   },
   "src/_images/posts/2011-07-14/retreat-1-group.jpg": {
-    "mtime": 1779745303647,
+    "mtime": 1779312540129,
     "size": 73779,
-    "processed": 1781136106891
+    "processed": 1781150593313
   },
   "src/_images/posts/2011-10-12/blog-comparison-mid.png": {
-    "mtime": 1779745303657,
+    "mtime": 1779312540137,
     "size": 77778,
-    "processed": 1781136106897
+    "processed": 1781150593324
   },
   "src/_images/posts/2011-10-12/blog-comparison-small.png": {
-    "mtime": 1779745303660,
+    "mtime": 1779312540139,
     "size": 127708,
-    "processed": 1781136106899
+    "processed": 1781150593328
   },
   "src/_images/posts/2011-10-12/blog-comparison-tiny.png": {
-    "mtime": 1779745303665,
+    "mtime": 1779312540141,
     "size": 157567,
-    "processed": 1781136106903
+    "processed": 1781150593332
   },
   "src/_images/posts/2011-10-12/blog-comparison-wide.png": {
-    "mtime": 1779745303668,
+    "mtime": 1779312540143,
     "size": 78358,
-    "processed": 1781136106904
+    "processed": 1781150593335
   },
   "src/_images/posts/2013-07-07/ios-maps-transit.png": {
-    "mtime": 1779745303671,
+    "mtime": 1779312540146,
     "size": 47748,
-    "processed": 1781136106906
+    "processed": 1781150593339
   },
   "src/_images/posts/2013-07-10/interface-inventory-evernote-inventory.png": {
-    "mtime": 1779745303675,
+    "mtime": 1779312540148,
     "size": 48952,
-    "processed": 1781136106908
+    "processed": 1781150593343
   },
   "src/_images/posts/2013-07-10/interface-inventory-screen-snapping.png": {
-    "mtime": 1779745303677,
+    "mtime": 1779312540150,
     "size": 22907,
-    "processed": 1781136106910
+    "processed": 1781150593352
   },
   "src/_images/posts/2013-07-10/interface-inventory-skitch-prefs.png": {
-    "mtime": 1779745303680,
+    "mtime": 1779312540152,
     "size": 19694,
-    "processed": 1781136106912
+    "processed": 1781150593360
   },
   "src/_images/posts/2013-07-10/interface-inventory-skitch-screenshot.png": {
-    "mtime": 1779745303682,
+    "mtime": 1779312540153,
     "size": 36881,
-    "processed": 1781136106915
+    "processed": 1781150593362
   },
   "src/_images/posts/2013-07-10/interface-inventory-skitch.png": {
-    "mtime": 1779745303686,
+    "mtime": 1779312540154,
     "size": 58314,
-    "processed": 1781136106917
+    "processed": 1781150593365
   },
   "src/_images/posts/2013-07-10/interface-inventory-web-clipper.png": {
-    "mtime": 1779745303688,
+    "mtime": 1779312540155,
     "size": 32222,
-    "processed": 1781136106921
+    "processed": 1781150593372
   },
   "src/_images/posts/2013-09-16/drink-drive-lose-ad-challenge-small.png": {
-    "mtime": 1779745303690,
+    "mtime": 1779312540159,
     "size": 38696,
-    "processed": 1781136106923
+    "processed": 1781150593376
   },
   "src/_images/posts/2013-09-16/drink-drive-lose-ad-challenge.png": {
-    "mtime": 1779745303692,
+    "mtime": 1779312540160,
     "size": 22270,
-    "processed": 1781136106926
+    "processed": 1781150593377
   },
   "src/_images/posts/2014-02-27/hallways.jpg": {
-    "mtime": 1779745303700,
+    "mtime": 1779312540164,
     "size": 404841,
-    "processed": 1781136106932
+    "processed": 1781150593381
   },
   "src/_images/posts/2010-07-11/2010-07-11-style-templates.png": {
-    "mtime": 1779745303639,
+    "mtime": 1779312540121,
     "size": 29224,
-    "processed": 1781136106882
+    "processed": 1781150593302
   },
   "src/_images/posts/2011-08-04/the-grid-system.png": {
-    "mtime": 1779745303650,
+    "mtime": 1779312540131,
     "size": 95635,
-    "processed": 1781136106893
+    "processed": 1781150593317
   },
   "src/_images/posts/2011-09-29/costco-redirect.png": {
-    "mtime": 1779745303653,
+    "mtime": 1779312540135,
     "size": 111503,
-    "processed": 1781136106895
+    "processed": 1781150593322
+  },
+  "src/_images/talks/can-your-ai-pass-the-accessibility-test.png": {
+    "mtime": 1781149343187,
+    "size": 84890,
+    "processed": 1781150592213
+  },
+  "src/_images/posts/2026-06-10/Slide1.png": {
+    "mtime": 1781141331433,
+    "size": 62943,
+    "processed": 1781150594540
+  },
+  "src/_images/posts/2026-06-10/Slide10.png": {
+    "mtime": 1781141331822,
+    "size": 277673,
+    "processed": 1781150594546
+  },
+  "src/_images/posts/2026-06-10/Slide11.png": {
+    "mtime": 1781141331862,
+    "size": 101897,
+    "processed": 1781150594551
+  },
+  "src/_images/posts/2026-06-10/Slide12.png": {
+    "mtime": 1781141331896,
+    "size": 62059,
+    "processed": 1781150594553
+  },
+  "src/_images/posts/2026-06-10/Slide13.png": {
+    "mtime": 1781141331934,
+    "size": 108666,
+    "processed": 1781150594556
+  },
+  "src/_images/posts/2026-06-10/Slide14.png": {
+    "mtime": 1781141331985,
+    "size": 873740,
+    "processed": 1781150594565
+  },
+  "src/_images/posts/2026-06-10/Slide15.png": {
+    "mtime": 1781141332026,
+    "size": 311565,
+    "processed": 1781150594567
+  },
+  "src/_images/posts/2026-06-10/Slide16.png": {
+    "mtime": 1781141332069,
+    "size": 111661,
+    "processed": 1781150594576
+  },
+  "src/_images/posts/2026-06-10/Slide17.png": {
+    "mtime": 1781141332108,
+    "size": 96707,
+    "processed": 1781150594578
+  },
+  "src/_images/posts/2026-06-10/Slide18.png": {
+    "mtime": 1781141332145,
+    "size": 56537,
+    "processed": 1781150594580
+  },
+  "src/_images/posts/2026-06-10/Slide2.png": {
+    "mtime": 1781141331487,
+    "size": 84890,
+    "processed": 1781150594583
+  },
+  "src/_images/posts/2026-06-10/Slide3.png": {
+    "mtime": 1781141331528,
+    "size": 77689,
+    "processed": 1781150594585
+  },
+  "src/_images/posts/2026-06-10/Slide4.png": {
+    "mtime": 1781141331571,
+    "size": 81864,
+    "processed": 1781150594589
+  },
+  "src/_images/posts/2026-06-10/Slide5.png": {
+    "mtime": 1781141331626,
+    "size": 1033885,
+    "processed": 1781150594594
+  },
+  "src/_images/posts/2026-06-10/Slide6.png": {
+    "mtime": 1781141331665,
+    "size": 81932,
+    "processed": 1781150594597
+  },
+  "src/_images/posts/2026-06-10/Slide7.png": {
+    "mtime": 1781141331704,
+    "size": 89534,
+    "processed": 1781150594599
+  },
+  "src/_images/posts/2026-06-10/Slide8.png": {
+    "mtime": 1781141331741,
+    "size": 116289,
+    "processed": 1781150594605
+  },
+  "src/_images/posts/2026-06-10/Slide9.png": {
+    "mtime": 1781141331782,
+    "size": 95946,
+    "processed": 1781150594607
   }
 }
