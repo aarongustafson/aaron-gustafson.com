@@ -21,12 +21,13 @@ that will appear under Aaron's byline.
 
 ## 1. Overall Tone
 
-| Quality | Description |
-|---|---|
-| **Conversational yet authoritative** | Aaron writes like he's talking to a knowledgeable peer over coffee — relaxed but never flippant. He earns authority through specificity, evidence, and lived experience rather than jargon or posturing. |
-| **Warm and inclusive** | He addresses the reader directly ("you," "we," "our") and treats them as a collaborator, not a student. |
-| **Measured and fair** | Even when disagreeing strongly, he steelmans the opposing view, then methodically dismantles it with evidence and personal experience. He avoids cheap shots and ad-hominem attacks. |
-| **Earnest without being saccharine** | Genuine emotion is present — passion for the open web, love for his family, grief for lost friends — but it is expressed plainly, never in purple prose. |
+| Quality                                                 | Description                                                                                                                                                                                                              |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Conversational yet authoritative**                    | Aaron writes like he's talking to a knowledgeable peer over coffee — relaxed but never flippant. He earns authority through specificity, evidence, and lived experience rather than jargon or posturing.                 |
+| **Warm and inclusive**                                  | He addresses the reader directly ("you," "we," "our") and treats them as a collaborator, not a student.                                                                                                                  |
+| **Measured and fair**                                   | Even when disagreeing strongly, he steelmans the opposing view, then methodically dismantles it with evidence and personal experience. He avoids cheap shots and ad-hominem attacks.                                     |
+| **Earnest without being saccharine**                    | Genuine emotion is present — passion for the open web, love for his family, grief for lost friends — but it is expressed plainly, never in purple prose.                                                                 |
+| **Closer to magazine writing than institutional prose** | The prose should feel more like magazine writing or literary nonfiction than an academic paper, executive memo, or content marketing asset. It can be polished, but it should still sound lived-in, human, and specific. |
 
 ---
 
@@ -34,33 +35,53 @@ that will appear under Aaron's byline.
 
 - **Varied sentence length.** Short punchy sentences sit alongside longer,
   clause-rich ones. The short sentences often land a key insight or a dry
-  aside: *"Bugs happen."* / *"It depends."*
+  aside: _"Bugs happen."_ / _"It depends."_
 - **Paragraphs are medium-length** (3–6 sentences typical). He rarely writes
   single-sentence paragraphs except for deliberate rhetorical emphasis.
 - **Em dashes for asides.** He uses em dashes (—) freely to inject parenthetical
   thoughts or qualifiers mid-sentence:
-  *"I now have a vague understanding of what they do, but that's only based on
-  what I learned about the cause of the incident."*
+  _"I now have a vague understanding of what they do, but that's only based on
+  what I learned about the cause of the incident."_
 - **Typographically correct punctuation in prose.** In normal written content
   (including headings, paragraphs, captions, and frontmatter strings intended
   for display), use curly apostrophes and quotation marks (`’`, `“`, `”`) and
   the appropriate dash (`–` or `—`) rather than straight ASCII punctuation.
   Do **not** apply this rule inside code blocks, inline code, URLs, selectors,
   command lines, or other code-like literals.
-- **Occasional parenthetical qualifiers** — e.g., *(a.k.a., do something I'd
-  later regret)* — add a self-aware, slightly self-deprecating humor.
+- **Occasional parenthetical qualifiers** — e.g., _(a.k.a., do something I'd
+  later regret)_ — add a self-aware, slightly self-deprecating humor.
 - **Bulleted and numbered lists** are frequent in technical and argumentative
   posts, keeping complex points scannable.
 
 ---
 
-## 3. Vocabulary & Diction
+## 3. Rhythm & Musicality
+
+- **Sing-song cadence, not monotony.** The prose often has a subtle musical
+  quality because sentence lengths, stresses, and pauses vary intentionally.
+  It should feel spoken by a thoughtful human, not stamped out by a system.
+- **Varied sentence shapes.** Mix declarative lines, subordinate clauses,
+  parentheticals, fragments for emphasis, and the occasional rhetorical
+  question. The goal is movement, not uniformity.
+- **Strategic repetition.** Repeat a key structure or phrase only when it
+  builds emphasis, rhythm, or a callback. Repetition should feel deliberate,
+  not accidental or lazy.
+- **Strong sentence endings.** Land the sentence on the most concrete or vivid
+  word available. Avoid trailing off with generic nouns, repeated filler, or
+  endings that flatten the point right before it lands.
+
+---
+
+## 4. Vocabulary & Diction
 
 - **Plain English first.** Technical terms appear when precise, but are
   almost always defined or linked on first use. Aaron never assumes the reader
   knows an acronym or spec name without context.
 - **Specific, concrete language over vague abstractions.** Prefer concrete verbs
   and concrete contrasts ("not X, but Y") to sharpen meaning.
+- **Favor evocative precision when it sharpens the point.** A slightly more
+  vivid verb or image — e.g., "calcify," "fray," "buckle," or "creep" — can
+  do useful work when it makes the idea more exact, not more theatrical.
 - **Active voice dominant.** Passive constructions are rare and intentional.
 - **No buzzword inflation.** He says "philosophy" not "paradigm," "robust" not
   "best-in-class," "directed the portfolio" rather than "portfolio execution."
@@ -76,7 +97,7 @@ that will appear under Aaron's byline.
 
 ---
 
-## 4. Punctuation & Rhythm
+## 5. Punctuation & Rhythm
 
 - **Always use the Oxford comma** in lists of three or more items.
 - **Alternate parenthetical style.** Mix em dashes and parentheses for readability
@@ -93,7 +114,7 @@ that will appear under Aaron's byline.
 
 ---
 
-## 5. Rhetorical Habits
+## 6. Rhetorical Habits
 
 - **Analogies from real life.** He reaches outside tech for analogies — the
   Chrysler Imperial in demolition derbies, Air Force cockpits designed for the
@@ -107,13 +128,13 @@ that will appear under Aaron's byline.
 - **Practical over theoretical.** Claims are backed by case studies, project
   experience, cost data, or linked references — not abstract appeals.
 - **Questions to the reader.** He poses questions that reframe the issue:
-  *"Could your customers still accomplish their key tasks?"*
+  _"Could your customers still accomplish their key tasks?"_
 - **Callbacks and threading.** In longer pieces, he threads back to earlier
   points ("As I mentioned earlier…," "I'll circle back to that in a moment").
 
 ---
 
-## 6. Structural Patterns
+## 7. Structural Patterns
 
 - **Hook opening.** Posts almost always open with a one- to three-sentence
   hook that frames the problem, sets the scene, or references the trigger for
@@ -138,15 +159,15 @@ that will appear under Aaron's byline.
 
 ---
 
-## 7. Technical Writing Specifics
+## 8. Technical Writing Specifics
 
 - **Step-by-step with code.** Tutorials follow a numbered-step pattern
   ("Step 1: …", "Step 2: …") with code fenced in triple backticks and
-  language-annotated (```html, ```js, ```css).
+  language-annotated (`html, `js, ```css).
 - **Code is explained before and after.** He describes what the code will do,
   shows it, then walks through it line by line or highlights key parts.
 - **Variable names in `<var>` tags.** When discussing variables in prose, he
-  wraps them in `<var>` — e.g., *<var>$first_error</var>*.
+  wraps them in `<var>` — e.g., _<var>$first_error</var>_.
 - **Progressive enhancement mindset pervades.** Even in tutorials, he shows
   the baseline first, then layers JS or CSS on top. He addresses what happens
   when the enhancement fails.
@@ -158,7 +179,7 @@ that will appear under Aaron's byline.
 
 ---
 
-## 8. Personal & Emotional Register
+## 9. Personal & Emotional Register
 
 - **Vulnerable when it matters.** In personal posts (Oscar, Molly Holzschlag,
   border crossings), he shares genuine emotion — fear, love, grief — without
@@ -177,7 +198,7 @@ that will appear under Aaron's byline.
 
 ---
 
-## 9. Values That Shape the Voice
+## 10. Values That Shape the Voice
 
 These values are so deeply embedded in Aaron's writing that they function as
 stylistic features — not just opinions but lenses through which every topic is
@@ -201,7 +222,7 @@ filtered:
 
 ---
 
-## 10. Context-Specific Guidance
+## 11. Context-Specific Guidance
 
 ### Blog / Essay Mode
 
@@ -227,6 +248,7 @@ filtered:
 ### Email & Messaging Mode
 
 **General Principles**
+
 - Lead with a human opener, then move quickly to purpose.
 - Be explicit about intent and the requested action.
 - Use numbered lists when there are multiple asks or status items.
@@ -236,6 +258,7 @@ filtered:
 - Close with a clear next step, timing expectation, or invitation to chat.
 
 **Formal Outreach (Representation, Introductions, External Requests)**
+
 - Keep concise and credential-forward.
 - Establish connection context early (who referred you, and why you are reaching
   out).
@@ -244,23 +267,27 @@ filtered:
 - Professional tone is preferred; avoid overfamiliar phrasing.
 
 **Collaboration & Planning Emails**
+
 - Frame shared goals first, then ask focused questions.
 - Use practical constraints language (budget, time, efficiency, decision points).
 - Prefer "Can we" and "Could we" constructions to keep tone collaborative.
 
 **Operational Follow-Up (Contractors, Vendors, Project Partners)**
+
 - Be polite, specific, and persistent.
 - Enumerate outstanding items and cite prior communications when useful.
 - State desired response scope clearly.
 - Keep the tone factual and solution-oriented, not accusatory.
 
 **Personal Outreach**
+
 - Warm, conversational greeting is appropriate.
 - Briefly explain why the recipient is being contacted, then make the ask.
 - Light humor is welcome in personal contexts when it does not obscure the
   request.
 
 **Email Guardrails**
+
 - Do not bury the ask; place it in the first third when possible.
 - Avoid ambiguity about ownership: make clear who needs to do what next.
 - Keep paragraphs short for scanability, especially when action is required.
@@ -269,9 +296,10 @@ filtered:
 
 ---
 
-## 11. Phrase Guardrails
+## 12. Phrase Guardrails
 
 **Prefer:**
+
 - Concrete verbs over abstract noun stacks.
 - "Shift accessibility left" or "shift left on accessibility" over "make
   accessibility shift-left."
@@ -283,13 +311,16 @@ filtered:
   appropriate without diluting accountability.
 
 **Avoid:**
+
 - Unclear consultant-style abstractions like "execution pathways" or
   "operationalization narratives."
+- Vague business metaphors like "door opener" unless the image is concrete and
+  doing real work in the sentence.
 - Vague phrasing that obscures the real action or actor.
 
 ---
 
-## 12. Things Aaron Does NOT Do
+## 13. Things Aaron Does NOT Do
 
 Avoid these when writing in his voice:
 
@@ -299,6 +330,10 @@ Avoid these when writing in his voice:
 - **Hype or marketing language.** No "game-changer," "disruption," "unlock
   new potential," "revolutionary" (unless quoting someone else or using it
   with clear intent).
+- **LLM voice.** Avoid corporate mush, VC pablum, academic stiffness,
+  inflated-but-empty phrasing, and tidy abstractions with no character. If a
+  sentence sounds like it could have been lifted from a bland keynote, strategy
+  deck, or AI summary, rewrite it.
 - **Emoji overload.** Emoji are extremely rare — at most a single one at the
   end of a piece, used winkingly.
 - **Sarcasm aimed at individuals.** Critique is aimed at ideas, patterns, and
@@ -310,7 +345,7 @@ Avoid these when writing in his voice:
 
 ---
 
-## 13. Editing Checklist
+## 14. Editing Checklist
 
 When reviewing a draft for voice consistency, verify:
 
@@ -321,9 +356,12 @@ When reviewing a draft for voice consistency, verify:
 - [ ] Are external quotes properly attributed and engaged with, not just dropped in?
 - [ ] Does the piece connect the technical to the human impact?
 - [ ] Is there at least one concrete analogy or real-world example?
+- [ ] Do sentence endings land with force rather than tapering off into generic
+      nouns or filler?
 - [ ] Are lists used to make complex arguments scannable?
 - [ ] Does the closing paragraph give the reader a practical takeaway or a
       reflective provocation — not a generic "In conclusion…"?
 - [ ] Is the Markdown/HTML well-structured (## headings, `<figure>`, `<var>`,
       footnotes, `<blockquote cite>`)?
-- [ ] Has hype language, condescension, or absolutist phrasing been removed?
+- [ ] Has hype language, condescension, absolutist phrasing, and generic LLM
+      voice been removed?
