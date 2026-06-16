@@ -69,6 +69,12 @@ that will appear under Aaron's byline.
 - **Strong sentence endings.** Land the sentence on the most concrete or vivid
   word available. Avoid trailing off with generic nouns, repeated filler, or
   endings that flatten the point right before it lands.
+- **Keep it simple and snappy.** Prefer straightforward phrasing over polished,
+  abstract, or “writerly” constructions when both convey the same idea.
+- **Soundplay can sharpen clarity.** Light alliteration, internal rhyme, or
+  phrase-level echo is welcome when it feels natural and improves recall.
+- **Callbacks build cohesion.** In longer pieces, brief callbacks to earlier
+  language or examples are encouraged when they sharpen continuity and payoff.
 
 ---
 
@@ -325,6 +331,7 @@ filtered:
 **Prefer:**
 
 - Concrete verbs over abstract noun stacks.
+- Simpler, shorter phrasing when it says the same thing more clearly.
 - "Shift accessibility left" or "shift left on accessibility" over "make
   accessibility shift-left."
 - "From the start" or "from the jump" over "from the foundation up."
@@ -341,6 +348,8 @@ filtered:
 - Vague business metaphors like "door opener" unless the image is concrete and
   doing real work in the sentence.
 - Vague phrasing that obscures the real action or actor.
+- Stiff, over-processed phrasing that sounds machine-polished rather than
+  spoken.
 
 ---
 
@@ -379,6 +388,12 @@ When reviewing a draft for voice consistency, verify:
 - [ ] Is the reader addressed directly and treated as a peer?
 - [ ] Does the prose use contractions and conversational phrasing where that
   keeps the tone human and direct?
+- [ ] Does any sentence sound stiff or over-polished, and if so, can it be made
+  simpler and snappier?
+- [ ] If there is soundplay (alliteration, echo, rhythm), is it subtle,
+  purposeful, and clarity-first?
+- [ ] In longer pieces, are callbacks used intentionally to connect sections
+      and reinforce key ideas without feeling repetitive?
 - [ ] Are external quotes properly attributed and engaged with, not just dropped in?
 - [ ] Does the piece connect the technical to the human impact?
 - [ ] Is there at least one concrete analogy or real-world example?
