@@ -10,9 +10,9 @@ hero:
   alt: "Title slide for Can Your AI Pass the Accessibility Test? with Carie Fisher, Aaron Gustafson, and Jessie Lorenz."
 ---
 
-Last week at Microsoft Build, [Jessie Lorenz](https://www.linkedin.com/in/jessie-lorenz/), [Carie Fisher](https://www.linkedin.com/in/cariefisher/), and I gave a short talk on a question I think every team using AI should be asking: can your AI pass the accessibility test?
+Last week at Microsoft Build, [Jessie Lorenz](https://www.linkedin.com/in/jessie-lorenz/), [Carie Fisher](https://www.linkedin.com/in/cariefisher/), and I gave a short talk on a question every AI-enabled product team should be asking: can your AI pass the accessibility test?
 
-The core point was straightforward: AI does not fix a broken process. It accelerates whatever process you already have. If accessibility is already part of the workflow, AI can help scale inclusion. If it’s not, AI will absolutely accelerate and scale the barriers teams are already shipping.
+The core point was straightforward: AI does not fix a broken process; it accelerates whatever process you already have. If accessibility is already in the workflow, AI can help scale inclusion. If it’s not, AI will scale the same barriers teams are already shipping.
 
 <!-- more -->
 

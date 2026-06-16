@@ -11,7 +11,7 @@ series:
   ordinal: "10th"
 ---
 
-Sometimes you need users to provide multiple instances of the same information—multiple email addresses, phone numbers, team members, or emergency contacts. The `form-repeatable` web component makes this straightforward, handling field duplication, automatic renumbering, and seamless form submission via the ElementInternals API.
+Sometimes you need people to provide multiple instances of the same information: email addresses, phone numbers, team members, or emergency contacts. The `form-repeatable` web component handles that cleanly, including duplication, renumbering, and seamless form submission via the ElementInternals API.
 
 <!-- more -->
 
@@ -43,11 +43,11 @@ That last piece is crucial. The plugin is a fully-participating member in the pa
 - In-built form reset is respected
 - A form’s disabled state is respected
 
-No special handling required — it works like any native form control.
+No special handling required; it works like a native form control.
 
 ## Need customized buttons? You bet!
 
-If you don’t like the default text or your site is in another language — no biggie! You can define your own button labels using the `add-label` and `remove-label` attributes:
+If you don’t like the default text, or your site is in another language, you can define your own button labels using the `add-label` and `remove-label` attributes:
 
 ```html
 <form-repeatable add-label="Add Another Item" remove-label="Delete">
@@ -83,9 +83,9 @@ If your form needs to start with multiple groups already filled in, just provide
 </form>
 ```
 
-All the children will become groups managed by the component and their existing values are preserved. Perfect progressive enhancement!
+All child elements become managed groups, and existing values are preserved. Perfect progressive enhancement!
 
-## Need to do something a little more complex? I got you.
+## Need to do something more complex? I got you.
 
 You’re not limited to repeating a single field. Each group can contain multiple, related fields. Here’s an example with a `fieldset` for guest information:
 
@@ -102,9 +102,9 @@ You’re not limited to repeating a single field. Each group can contain multipl
 </form-repeatable>
 ```
 
-When this gets picked up by the component, the whole `fieldset` will become the template. When users add new Guests, all of the numeric values — whether in text or attributes — increment automatically when new groups are added. So in this case, the `legend` will update, as will the `for` attribute on the `label` and `id` and `name` attributes on the `input`.
+When the component initializes, the whole `fieldset` becomes the template. As users add guests, numeric values in text and attributes increment automatically. In this example, that means the `legend`, `for`, `id`, and `name` values all stay in sync.
 
-## Need to constrain the responses? You got it.
+## Need to constrain the responses? Sure thing.
 
 Use the `min` and `max` attributes to control the number of allowed groups:
 
@@ -207,7 +207,7 @@ Available parts:
 - `add-button` - The add button
 - `remove-button` - All remove buttons
 
-## Want to keep a watchful eye? You’re extra, but sure.
+## Want to hook into changes? You’re extra, but sure.
 
 You can listen for when groups are added or removed and run your own custom code:
 
@@ -225,7 +225,7 @@ repeatable.addEventListener("form-repeatable:removed", (event) => {
 
 ## Go with the progressive enhancement flow
 
-If JavaScript fails, users see the initial field group(s) and can fill them in. They can’t add more, but nothing breaks. Make sure your minimum count accommodates users without JavaScript.
+If JavaScript fails, users still see the initial field group(s) and can complete the form. They won’t be able to add more, but nothing breaks. Set your minimums accordingly.
 
 ## Demo
 
@@ -251,4 +251,4 @@ Import and go:
 import "@aarongustafson/form-repeatable";
 ```
 
-This single component instance manages all your repeatable field groups with native form participation — no framework required.
+This single component manages repeatable field groups with native form participation, no framework required.

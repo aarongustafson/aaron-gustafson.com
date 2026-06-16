@@ -20,7 +20,7 @@ series:
   ordinal: "11th"
 ---
 
-Few things are more annoying than losing your progress halfway through a form. Maybe the browser crashes. Maybe the tab gets closed. Maybe your kid yells from the other room and you come back three hours later wondering why you ever thought now was a good time to fill out a mortgage application. Whatever the cause, `form-saver` makes those interruptions a lot less obnoxious. Which is nice, because forms are usually annoying enough on their own.
+Few things are more annoying than losing your progress halfway through a form. Maybe the browser crashes. Maybe the tab closes. Maybe your kid yells from the other room, and you come back three hours later wondering why you thought now was a good time to fill out a mortgage application. Whatever the cause, `form-saver` makes those interruptions a lot less painful, which helps because forms are usually frustrating enough on their own.
 
 <!-- more -->
 
@@ -50,7 +50,7 @@ All you need to do is wrap your form in the component:
 </form-saver>
 ```
 
-That’s it. The component targets the first descendant `form`, saves values as users type or make changes, and restores them when they come back. No extra plumbing. Just a form with a slightly better memory than most of us have before coffee — depending on the day, that may not be a terribly high bar, but still.
+That’s it. The component targets the first descendant `form`, saves values as people type or make changes, and restores them when they come back. No extra plumbing, just a form with a slightly better memory than most of us before coffee. Depending on the day, that may not be a terribly high bar, but still.
 
 This is especially handy for forms that are a little more involved than a simple email signup. Job applications, checkout flows, support requests, and multi-question onboarding forms all benefit from a little resilience. So do the people filling them out, who generally have better things to do than retype the same answers because a tab got squirrelly.
 
@@ -59,8 +59,8 @@ This is especially handy for forms that are a little more involved than a simple
 `form-saver` supports the controls most of us reach for every day:
 
 - Text-style `input` fields
-- `textarea` elements, 
-- `select` elements (including multi-selects), and  
+- `textarea` elements,
+- `select` elements (including multi-selects), and
 - `checkbox` and `radio` controls.
 
 File inputs are intentionally excluded.
@@ -81,11 +81,11 @@ That is what the `retain` attribute is for:
 </form-saver>
 ```
 
-After a successful submission, `name` and `email` stick around, but `message` gets cleared. Simple, sensible, and less likely to leave someone staring at your form like it just betrayed them personally.
+After a successful submission, `name` and `email` stick around, but `message` gets cleared. Simple, sensible, and less likely to leave someone staring at your form like it just read their credit card number aloud in a bus station.
 
 ## Better yet, let users decide
 
-Persisting form data can be incredibly helpful, but there is a human side to this too. Just because we *can* keep someone’s information around does not necessarily mean we *should* do it without asking. That is where `retain-choice` comes in. It lets you be useful without getting presumptuous.
+Persisting form data can be incredibly helpful, but there is a human side to this. Just because we *can* keep someone’s information around doesn’t mean we *should* do it without asking. That is where `retain-choice` comes in: it lets you be useful without being presumptuous.
 
 Add it alongside `retain` and `form-saver` will inject an opt-in checkbox for the user. Nice and easy:
 
@@ -101,7 +101,7 @@ Add it alongside `retain` and `form-saver` will inject an opt-in checkbox for th
 </form-saver>
 ```
 
-By default, that checkbox is inserted just before the first submit control. If the user leaves it unchecked, the retained fields are cleared along with everything else after submit. If they opt in, those selected fields remain. Their call, as it should be. Gotta love a little informed consent.
+By default, that checkbox is inserted just before the first submit control. If the user leaves it unchecked, the retained fields are cleared along with everything else after submit. If they opt in, those selected fields remain. Their call, as it should be.
 
 Need to place that control somewhere more appropriate in your layout? Use `retain-choice-container` to point to a CSS selector:
 
@@ -145,7 +145,7 @@ If you need something more explicit, you can provide your own `storage-key`:
 </form-saver>
 ```
 
-This is useful when a form’s URL is not stable or when you want multiple views to intentionally share the same saved state. Sometimes explicit is just easier. Sometimes it is the only way to stay sane.
+This is useful when a form’s URL is not stable, or when you want multiple views to intentionally share the same saved state.
 
 ## Want to drive it yourself?
 
@@ -164,7 +164,7 @@ saver.restoreFormState();
 saver.clearSavedData();
 ```
 
-That can be useful when you want to pair it with your own UI, analytics, or some custom workflow around save and restore. Or when you just like being the one driving and do not fully trust anything labeled “automatic.”
+That can be useful when you want to pair it with your own UI, analytics, or custom workflow around save and restore.
 
 ## Progressive enhancement, as usual
 

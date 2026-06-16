@@ -7,7 +7,7 @@ description: "At Ability Summit 2026, I moderated a panel on shifting accessibil
 twitter_text: "At Ability Summit 2026, I moderated a panel on shifting accessibility left in the age of AI with Yumeng Ma, Dylan Barrell, Navin Thadani, and Ed Summers."
 ---
 
-At Ability Summit 2026, I had the pleasure of moderating a panel on a topic that feels more urgent by the day: how we prevent accessibility defects before they are baked into AI-assisted workflows and shipped at scale.
+At Ability Summit 2026, I moderated a panel on a question that feels more urgent by the day: how do we prevent accessibility defects before they get baked into AI-assisted workflows and shipped at scale?
 
 > As AI accelerates how software and content are created, accessibility risks emerge earlier and propagate faster than traditional testing and remediation can handle. This panel explores what “shifting left” means in the age of AI, from evaluating foundation models and code generation for accessibility, to embedding inclusive intent directly into design and development workflows. Panelists discuss how AI-assisted design tooling, automated scanning, and remediation in engineering pipelines can work together to prevent defects before they ship. Drawing on internal and external perspectives, the session presents a closed-loop view of accessibility that spans creation, evaluation, and remediation at AI speed.
 
@@ -22,7 +22,7 @@ Joining me were four people doing important work from very different angles:
 
 Our conversation centered on what “shifting left” means in the age of AI: improving model inputs, tightening prompts and instructions, adding deterministic checks, and building accessibility directly into the harnesses and processes that increasingly guide software creation.
 
-Many thanks to [Kelly Goto](https://www.kellygoto.com/) for recording the audio, which enabled me to put together the following transcript. It’s a bit rough — some of the audio was garbled — but I think it captures the spirit of the conversation and the key points that were made. I hope you find it useful!
+Many thanks to [Kelly Goto](https://www.kellygoto.com/) for recording the audio, which made this transcript possible. It is a little rough in spots—some of the audio was garbled—but I think it captures the spirit of the discussion and the key takeaways.
 
 ## Full Transcript
 
@@ -340,7 +340,7 @@ And to the audience, I want to thank all of you for having us. If you don’t mi
 
 ## Thank You
 
-My thanks again to Yumeng Ma, Dylan Barrell, Navin Thadani, and Ed Summers for a thoughtful conversation and for sharing so much practical insight from their respective corners of the accessibility and AI ecosystem.
+My thanks again to Yumeng Ma, Dylan Barrell, Navin Thadani, and Ed Summers for a thoughtful conversation and for sharing practical insight from their respective corners of the accessibility and AI ecosystem.
 
 ## Resources Shared During the Panel
 

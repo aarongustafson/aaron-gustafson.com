@@ -14,14 +14,14 @@ tags:
     "user experience",
   ]
 description: "The `form-validation-list` web component provides real-time visual feedback on validation requirements, showing users which rules they have satisfied as they type."
-twitter_text: "New #WebComponent: Show users which validation requirements they’ve met — as they type."
+twitter_text: "New #WebComponent: Show users which validation requirements they’ve met—as they type."
 series:
   name: "Modern Web Form Best Practices"
   tag: "series-forms"
   ordinal: "12th"
 ---
 
-Password requirements, username rules, input format constraints: forms often have multiple validation requirements, but users frequently do not find out whether they are meeting them until they hit submit. The `form-validation-list` web component changes that by providing real-time visual feedback as users type, showing exactly which requirements are met and which are not.
+Password requirements, username rules, and format constraints tend to pile up fast. Too often, people only learn whether they met them after they hit submit. The `form-validation-list` web component changes that by providing real-time feedback as someone types, showing exactly which requirements are met, and which still need work.
 
 <!-- more -->
 
@@ -65,7 +65,7 @@ The component:
 7. Uses `setCustomValidity()` to integrate with native form validation
 8. Prevents form submission until all rules match
 
-The cascade animation, controlled by `each-delay`, creates a pleasant visual effect as rules are checked sequentially. It is a small touch, but a nice one.
+The cascade animation, controlled by `each-delay`, adds a subtle sequential effect as rules are checked. Small detail, meaningful feedback.
 
 ## Whose rules? Your rules.
 
@@ -156,7 +156,7 @@ Here’s a complete example:
 </form-validation-list>
 ```
 
-This approach lets you use `class` names that match your existing CSS architecture, rather than making one small component dictate terms to the rest of your styles.
+This approach lets you use `class` names that match your existing CSS architecture instead of making one small component dictate terms to the rest of your styles.
 
 You can also override the per-instance icon glyphs with the `rule-matched-icon` and `rule-unmatched-icon` attributes, or control the shared visual styling using CSS custom properties:
 
@@ -213,7 +213,7 @@ console.log("Is valid:", isValid);
 console.log("Current state:", validationList.isValid);
 ```
 
-## Global site? <i lang="es">Relaje!</i>
+## Global site? <i lang="es">Relájese.</i>
 
 If you need the component to work in different languages, that’s totally doable. You can customize three separate pieces of copy: the browser validation message (`validation-message`), the live summary announced while typing (`announcement`), and the per-rule hidden status text (`rule-matched-alt` and `rule-unmatched-alt`). All of the message templates support the `{matched}` and `{total}` placeholders:
 
@@ -311,7 +311,7 @@ Here’s a complete password validation setup:
 </form>
 ```
 
-Users see exactly which requirements they have met and which they still need to satisfy. That tends to be a lot kinder than springing the whole list on them after submit.
+Users see exactly which requirements they have met, and which they still need to satisfy. That is usually a lot kinder than springing the whole list on them after submit.
 
 ## Play with it
 
@@ -341,4 +341,4 @@ import "@aarongustafson/form-validation-list/define.js";
 
 If you want to control the tag name yourself, import `FormValidationListElement` and register it manually.
 
-Happy validating!
+If you give it a spin, I’d love to hear how it works in your forms. Happy validating!

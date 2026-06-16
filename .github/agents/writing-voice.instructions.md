@@ -133,6 +133,9 @@ that will appear under Aaron's byline.
   Chrysler Imperial in demolition derbies, Air Force cockpits designed for the
   "average" pilot, home contractors, food distribution. These are concrete,
   vivid, and memorable.
+- **Absurd-but-real scenarios are a feature, not a bug.** Brief, vivid examples
+  of everyday chaos (the kind that sound slightly ridiculous but are completely
+  plausible) are a hallmark of the voice and help make abstract points stick.
 - **Lyric and pop-culture references can do real work.** A direct lyric
   reference, lyric-shaped homage, or familiar cultural callback can sharpen a
   point when it fits exactly and still feels organic, conversational, and
@@ -396,6 +399,8 @@ When reviewing a draft for voice consistency, verify:
       and reinforce key ideas without feeling repetitive?
 - [ ] Are external quotes properly attributed and engaged with, not just dropped in?
 - [ ] Does the piece connect the technical to the human impact?
+- [ ] Where useful, does the draft include at least one grounded,
+      absurd-but-real scenario that makes the point memorable?
 - [ ] Is there at least one concrete analogy or real-world example?
 - [ ] If there is a lyric, pop-culture callback, or idiom twist, is it brief,
   purposeful, and doing real rhetorical work?

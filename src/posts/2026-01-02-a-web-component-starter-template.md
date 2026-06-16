@@ -14,15 +14,15 @@ description: "I created a comprehensive starter template for creating production
 twitter_text: "Start building web components the right way with this production-ready template."
 ---
 
-Creating a new web component from scratch involves a lot of boilerplate—testing setup, build configuration, linting, CI/CD, documentation structure, and more. After building — and refining/rebuilding — numerous web components, I’ve distilled all that work into a starter template that lets you focus on your component’s functionality rather than project setup. 
+Starting a new web component from scratch usually means rebuilding the same scaffolding: test setup, build configuration, linting, CI/CD, docs, and all the rest. After building—and rebuilding—more components than I care to count, I pulled those patterns into a starter template so you can spend your time on component behavior instead of project plumbing.
 
 <!-- more -->
 
-The [Web Component Starter Template](https://github.com/aarongustafson/web-component-starter) is based on the architecture and patterns I’ve refined across my web component work, incorporating [Google’s Custom Element Best Practices](https://web.dev/articles/custom-elements-best-practices) and advice from other web components practitioners including the always-brilliant <a href="https://daverupert.com/">Dave Rupert</a>.
+The [Web Component Starter Template](https://github.com/aarongustafson/web-component-starter) is based on architecture and patterns I’ve refined across recent projects. It incorporates [Google’s Custom Element Best Practices](https://web.dev/articles/custom-elements-best-practices) and advice from other web component practitioners, including the always-brilliant <a href="https://daverupert.com/">Dave Rupert</a>.
 
 ## What’s included
 
-The template provides everything you need to create a production-ready web component:
+The template includes most everything you need to ship a production-ready web component:
 
 - **Interactive setup wizard** that scaffolds everything for your component.
 - **Multiple import patterns** supporting both auto-define and manual registration.
@@ -55,7 +55,7 @@ You’re left with a fully scaffolded repository, ready for you to develop your 
 
 ## Flexible import patterns
 
-One of the key features is support for multiple registration patterns. Users of your component can choose what works best:
+One of the key features is support for multiple registration patterns. Folks can choose what works best for them:
 
 **Manual registration for full control:**
 
@@ -79,7 +79,7 @@ import { defineComponentName } from '@yourscope/component-name/define.js';
 defineComponentName();
 ```
 
-The auto-define approach includes guards to ensure it only runs in browser environments and checks if `customElements` is available, making it safe for server-side rendered (SSR) scenarios.
+The auto-define approach includes guards, so it only runs in browser environments and only when `customElements` is available. That keeps it safe for server-side rendered (SSR) scenarios.
 
 ## Testing made easy
 
@@ -124,6 +124,6 @@ The included [`WEB-COMPONENTS-BEST-PRACTICES.md` document](https://github.com/aa
 
 ## Why I built this
 
-After creating components like [form-obfuscator](https://github.com/aarongustafson/form-obfuscator), [tabbed-interface](https://github.com/aarongustafson/tabbed-interface), and several others, I found myself copying and adapting the same project structure each time. This template captures those patterns so I — and now you — can start building components faster.
+After creating components like [form-obfuscator](https://github.com/aarongustafson/form-obfuscator), [tabbed-interface](https://github.com/aarongustafson/tabbed-interface), and several others, I kept copying and adapting the same project structure. This template captures those patterns so I—and now you—can start faster without skipping the fundamentals.
 
 If you build something with it, I’d love to hear about it!

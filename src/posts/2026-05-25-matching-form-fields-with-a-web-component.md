@@ -20,7 +20,7 @@ series:
   ordinal: "7th"
 ---
 
-Sometimes the simplest form pattern ends up being the one you repeat <i lang="la">ad infinitum</i>: “Type it once, then type it again.” We do it for password confirmations, email verification, and any flow where a typo can create expensive follow-up work. This week I released a small web component to handle that pattern cleanly: [`form-matching-fields`](https://github.com/aarongustafson/form-matching-fields).
+Sometimes the simplest form pattern is the one you repeat <i lang="la">ad infinitum</i>: “Type it once, then type it again.” We do it for password confirmations, email verification, and any flow where a typo creates expensive follow-up work. I released a small web component to handle that pattern cleanly: [`form-matching-fields`](https://github.com/aarongustafson/form-matching-fields).
 
 <!-- more -->
 
@@ -59,11 +59,11 @@ It ignores `disabled` and `readonly` controls, which helps prevent false positiv
 
 One of the core goals here was to avoid stepping on existing validation rules. In practice, that means:
 
-- If the second field already has a native validation issue (like `required` or `type` mismatch), this component won’t obscure that.
+- If the second field already has a native validation issue (like `required` or `type` mismatch), this component won’t mask it.
 - If the second field already has a custom validity message, this component won’t overwrite that either.
 - It only clears mismatch errors that it set itself.
 
-That last point is especially useful in larger forms where multiple constraints can overlap. You don’t want one helper trying to be the sole source of truth.
+That last point is especially useful in larger forms where multiple constraints overlap. You don’t want one helper trying to be the sole source of truth.
 
 ## Customizing the validation message
 
@@ -93,7 +93,7 @@ You can override it with the `validation-message` attribute:
 </form-matching-fields>
 ```
 
-In most forms, that gives you a clear error message without requiring extra setup.
+In most forms, that gives you a clear error message without extra setup.
 
 ## Demo
 
