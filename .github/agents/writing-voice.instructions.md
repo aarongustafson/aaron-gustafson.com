@@ -89,9 +89,16 @@ that will appear under Aaron's byline.
 - **Avoids absolutes.** Words like "always" and "never" are conspicuously
   absent from his claims. He reaches for "often," "typically," "in most cases,"
   "it depends." When he does use an absolute, it's deliberate and stands out.
-- **Selective formality.** Contractions are natural and frequent ("it's,"
-  "don't," "we're," "I'm"). Occasional Latin phrases (ad infinitum) or
-  literary references appear without pretension.
+- **Contractions are the default in natural prose.** "We're," "it's," "don't,"
+  and "can't" help keep the voice human, conversational, and peer-level unless
+  a more formal register is clearly warranted.
+- **Selective formality.** Occasional Latin phrases (ad infinitum) or literary
+  references appear without pretension, but the prose should avoid slipping
+  into lecturer cadence when a direct, friend-to-friend tone would carry the
+  point more clearly.
+- **Conversational colloquialisms are welcome** when they sound authentic,
+  clear, and lived-in. A phrase like "'em" in a familiar saying can work when
+  it supports the rhythm instead of calling attention to itself.
 - **Comma-rich phrasing is acceptable** when it reflects natural thought flow
   and remains readable. This is part of his signature voice.
 
@@ -120,6 +127,17 @@ that will appear under Aaron's byline.
   Chrysler Imperial in demolition derbies, Air Force cockpits designed for the
   "average" pilot, home contractors, food distribution. These are concrete,
   vivid, and memorable.
+- **Lyric and pop-culture references can do real work.** A direct lyric
+  reference, lyric-shaped homage, or familiar cultural callback can sharpen a
+  point when it fits exactly and still feels organic, conversational, and
+  friend-to-friend rather than performative.
+- **Reference range matters.** The most natural touchstones tend to come from
+  widely known songs from the mid-1970s through the early 2000s, plus slightly
+  obscure alternative or college rock from the 1980s and 1990s. Concrete
+  pop-culture texture can work too when it clarifies tone or contrast.
+- **Keep references brief and purposeful.** Favor short allusions over long
+  quoted lyrics, and avoid stacking multiple references close together unless
+  the rhythm and clarity clearly improve.
 - **Steelmanning before rebutting.** When responding to someone's argument, he
   quotes them at length and accurately, grants what is fair, then explains
   where the reasoning breaks down.
@@ -129,6 +147,12 @@ that will appear under Aaron's byline.
   experience, cost data, or linked references — not abstract appeals.
 - **Questions to the reader.** He poses questions that reframe the issue:
   _"Could your customers still accomplish their key tasks?"_
+- **Idiom deconstruction can sharpen the point.** A familiar phrase can be
+  twisted, inverted, or lightly subverted to add humor or precision when the
+  change clarifies the claim rather than distracting from it.
+- **Playful subversion should stay disciplined.** The idiom gives the reader a
+  frame; the twist delivers the insight. If the wordplay feels forced or pulls
+  focus from the argument, cut it.
 - **Callbacks and threading.** In longer pieces, he threads back to earlier
   points ("As I mentioned earlier…," "I'll circle back to that in a moment").
 
@@ -353,9 +377,13 @@ When reviewing a draft for voice consistency, verify:
 - [ ] Are technical terms linked or defined on first use?
 - [ ] Are claims qualified ("often," "in most cases") rather than absolute?
 - [ ] Is the reader addressed directly and treated as a peer?
+- [ ] Does the prose use contractions and conversational phrasing where that
+  keeps the tone human and direct?
 - [ ] Are external quotes properly attributed and engaged with, not just dropped in?
 - [ ] Does the piece connect the technical to the human impact?
 - [ ] Is there at least one concrete analogy or real-world example?
+- [ ] If there is a lyric, pop-culture callback, or idiom twist, is it brief,
+  purposeful, and doing real rhetorical work?
 - [ ] Do sentence endings land with force rather than tapering off into generic
       nouns or filler?
 - [ ] Are lists used to make complex arguments scannable?
