@@ -20,6 +20,10 @@
   "id": {{ post_url | dump | safe }},
   "title": {{ title_text | dump | safe }},
   
+  {% if post.data.page.excerpt %}
+  "excerpt": {{ (post.data.page.excerpt | block_markdownify | trim_newlines) | dump | safe }},
+  {% endif %}
+
   {% if summary %}
   "summary": {{ (summary | block_markdownify | trim_newlines) | dump | safe }},
   {% endif %}
