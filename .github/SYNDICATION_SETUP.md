@@ -110,9 +110,11 @@ For **Posts** (`linkedin_post`):
 {
   "value1": "Article Title",
   "value2": "https://www.aaron-gustafson.com/notebook/article-slug/",
-  "value3": "Excerpt text...\n\nRead the full post on my blog: https://www.aaron-gustafson.com/notebook/article-slug/"
+  "value3": "Excerpt text..."
 }
 ```
+
+If a post does not have an excerpt, the workflow falls back to the post summary or full content.
 
 For **Links** (`linkedin_link`):
 ```json
@@ -128,7 +130,7 @@ In the IFTTT LinkedIn action (Share a link/post):
 - **Link URL**: `{{Value2}}`
 - **Comment**: `{{Value3}}`
 
-**Note**: For posts, `value3` includes the excerpt followed by "Read the full post on my blog: [URL]". For links, `value3` includes the full content with the external URL appended. The URL in `value2` uses the original domain (not LinkedIn's shortener).
+**Note**: For posts, `value3` includes the excerpt when available; otherwise, it falls back to the post summary or full content. For links, `value3` includes the full content with the external URL appended. The URL in `value2` uses the original domain (not LinkedIn’s shortener).
 
 **Pinterest IFTTT Webhook Payload Example:**
 
@@ -239,8 +241,8 @@ node .github/scripts/syndicate-links.js
 ### GitHub Actions Manual Trigger
 
 1. Go to Actions tab in your repository
-2. Select "Syndicate Content to Social Media" workflow
-3. Click "Run workflow"
+2. Select “Syndicate Content to Social Media” workflow
+3. Click “Run workflow”
 4. Choose content type (posts/links/both)
 
 ## Monitoring
