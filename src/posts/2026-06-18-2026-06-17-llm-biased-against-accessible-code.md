@@ -1,13 +1,12 @@
 ---
 title: "LLM biased against accessible code (Claude Code issue #56079)"
 ref_source: "EstiShay on GitHub"
-date: 2026-06-17 13:00:00 +00:00
+date: 2026-06-18 14:03:30 +00:00
 comments: true
 tags: ["accessibility", "AI/ML", "progressive enhancement"]
 description: "Making accessibility a project requirement and still having the coding model treat a11y fixes as optional? It’s not you. It’s the model."
 twitter_text: "Making accessibility a project requirement and still having the coding model treat a11y fixes as optional? It’s not you. It’s the model."
 ref_url: https://github.com/anthropics/claude-code/issues/56079
-in_reply_to: https://github.com/anthropics/claude-code/issues/56079
 ---
 
 EstiShay filed a bug report that’s concerning. They found that Claude Code treats accessibility fixes as optional, even when the project’s requirements file explicitly specifies “WCAG 2.2 AA minimum.” When asked, the model explains:
