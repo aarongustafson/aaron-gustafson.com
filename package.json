@@ -57,7 +57,7 @@
 		"@fontsource/source-serif-pro": "^5.2.5",
 		"@manustays/eleventy-plugin-codepen-iframe": "^2.0.1",
 		"@octokit/rest": "^22.0.1",
-		"concurrently": "^9.1.2",
+		"concurrently": "^9.2.4",
 		"dotenv": "^16.6.1",
 		"eleventy-plugin-embed-everything": "^1.21.0",
 		"eleventy-plugin-images-responsiver": "^3.0.0",
