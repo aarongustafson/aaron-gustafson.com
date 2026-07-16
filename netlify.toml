@@ -34,7 +34,7 @@ workflow = "syndicate-content.yml"
 # Deploy notifications for syndication
 [build.environment]
 # This helps with function execution
-NODE_VERSION = "20"
+NODE_VERSION = "22"
 DISABLE_IMAGE_OPTIMIZATION = "1"
 
 # Post-deploy hook for social media syndication
