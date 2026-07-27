@@ -28,6 +28,7 @@ LINKEDIN_ACCESS_TOKEN=your_test_token
 MASTODON_ACCESS_TOKEN=your_test_token
 MASTODON_SERVER_URL=https://front-end.social
 BUFFER_ACCESS_TOKEN=your_test_token
+BUFFER_ORGANIZATION_ID=your_organization_id
 BUFFER_TWITTER_PROFILE_ID=your_profile_id
 BUFFER_BLUESKY_PROFILE_ID=your_profile_id
 PINTEREST_ACCESS_TOKEN=your_test_token

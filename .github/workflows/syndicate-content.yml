@@ -158,6 +158,7 @@ jobs:
 
           # Buffer API for Twitter/Bluesky
           BUFFER_ACCESS_TOKEN: ${{ secrets.BUFFER_ACCESS_TOKEN }}
+          BUFFER_ORGANIZATION_ID: ${{ secrets.BUFFER_ORGANIZATION_ID }}
           BUFFER_TWITTER_PROFILE_ID: ${{ secrets.BUFFER_TWITTER_PROFILE_ID }}
           BUFFER_BLUESKY_PROFILE_ID: ${{ secrets.BUFFER_BLUESKY_PROFILE_ID }}
 
@@ -178,6 +179,7 @@ jobs:
 
           # Buffer API for Twitter/Bluesky
           BUFFER_ACCESS_TOKEN: ${{ secrets.BUFFER_ACCESS_TOKEN }}
+          BUFFER_ORGANIZATION_ID: ${{ secrets.BUFFER_ORGANIZATION_ID }}
           BUFFER_TWITTER_PROFILE_ID: ${{ secrets.BUFFER_TWITTER_PROFILE_ID }}
           BUFFER_BLUESKY_PROFILE_ID: ${{ secrets.BUFFER_BLUESKY_PROFILE_ID }}
 

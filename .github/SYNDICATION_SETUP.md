@@ -27,6 +27,7 @@ MASTODON_SERVER_URL=https://front-end.social  # Your Mastodon instance
 
 ```
 BUFFER_ACCESS_TOKEN=your_buffer_access_token
+BUFFER_ORGANIZATION_ID=your_buffer_organization_id
 BUFFER_TWITTER_PROFILE_ID=your_twitter_profile_id
 BUFFER_BLUESKY_PROFILE_ID=your_bluesky_profile_id
 ```

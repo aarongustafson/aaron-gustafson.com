@@ -409,6 +409,39 @@ class SocialMediaAPI {
 		);
 	}
 
+	getBufferAuthorizationHeader() {
+		const accessToken = process.env.BUFFER_ACCESS_TOKEN;
+		return {
+			Authorization: "Bearer " + accessToken,
+			"Content-Type": "application/json",
+		};
+	}
+
+
+	buildBufferGraphQLRequest(text, organizationId, channelId) {
+		return {
+			method: "POST",
+			headers: this.getBufferAuthorizationHeader(),
+			body: JSON.stringify({
+				query: `mutation CreateTextPost($organizationId: ID!, $channelId: ID!, $text: String!) {
+					createPost(input: { organizationId: $organizationId, channelId: $channelId, content: { text: $text } }) {
+						... on Post {
+							id
+							content {
+								text
+							}
+						}
+					}
+				}`,
+				variables: {
+					organizationId,
+					channelId,
+					text,
+				},
+			}),
+		};
+	}
+
 	// NOTE: LinkedIn and Pinterest now use IFTTT webhooks instead of direct API calls
 	// The methods below are kept for reference but are not actively used
 	// To use direct API integration, update syndicate-posts.js and syndicate-links.js
@@ -481,26 +514,23 @@ class SocialMediaAPI {
 
 	async postToBuffer(text, profileIds, mediaUrl = null) {
 		const accessToken = process.env.BUFFER_ACCESS_TOKEN;
+		const organizationId = process.env.BUFFER_ORGANIZATION_ID || process.env.BUFFER_ACCOUNT_ID;
+
 		if (!accessToken && !this.testMode) {
 			throw new Error("Buffer access token not provided");
+		}
+
+		if (!organizationId && !this.testMode) {
+			throw new Error("Buffer organization ID not provided");
 		}
 
 		const results = [];
 
 		for (const profileId of profileIds) {
-			// Build form-encoded data (Buffer API expects this format)
-			const formData = new URLSearchParams();
-			formData.append("text", text);
-			formData.append("profile_ids[]", profileId);
-
-			if (mediaUrl) {
-				formData.append("media[photo]", mediaUrl);
-			}
-
 			if (this.testMode) {
 				console.log(
 					`🧪 TEST: Buffer post data for profile ${profileId}:`,
-					formData.toString(),
+					text,
 				);
 				results.push({
 					id: `test-buffer-${profileId}-${Date.now()}`,
@@ -511,34 +541,26 @@ class SocialMediaAPI {
 			}
 
 			try {
-				const response = await fetch(
-					"https://api.bufferapp.com/1/updates/create.json",
-					{
-						method: "POST",
-						headers: {
-							Authorization: `Bearer ${accessToken}`,
-							"Content-Type": "application/x-www-form-urlencoded",
-						},
-						body: formData.toString(),
-					},
-				);
+				const response = await fetch("https://api.buffer.com/graphql", {
+					...this.buildBufferGraphQLRequest(text, organizationId, profileId),
+				});
 				const data = await response.json();
+				const postData = data?.data?.createPost;
+				const graphQLErrors = data?.errors?.map((error) => error.message) || [];
 
-				// Check for errors in the response
-				if (!response.ok || !data.success) {
+				if (!response.ok || graphQLErrors.length > 0 || !postData) {
 					const error = new Error(
-						data.message || data.error || `HTTP ${response.status}`,
+						graphQLErrors[0] || data?.message || data?.error || `HTTP ${response.status}`,
 					);
 					error.bufferData = data;
 					throw error;
 				}
 
 				results.push({
-					...data,
+					...postData,
 					profileId,
 				});
 			} catch (error) {
-				// For fetch errors, try to get response data
 				let errorDetails = error.message;
 				let responseData = error.bufferData || null;
 
@@ -559,6 +581,7 @@ class SocialMediaAPI {
 					error.message,
 					responseData?.message,
 					responseData?.error,
+					...(responseData?.errors?.map((responseError) => responseError.message) || []),
 				);
 
 				if (duplicateDetected) {
@@ -594,6 +617,7 @@ class SocialMediaAPI {
 
 		return results;
 	}
+
 
 	async sendToIFTTT(event, data) {
 		const webhookKey = process.env.IFTTT_KEY;
