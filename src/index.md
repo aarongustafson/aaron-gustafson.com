@@ -9,20 +9,17 @@ sitemap: true
 
 ## Hi there, I’m Aaron and I work on the web.
 
-Every day I strive to make the web (and world) more [accessible](/tags/accessibility/), [open](/tags/web-standards/),
-and [equitable](/tags/inclusive-design/) place for people to live, play, and work.
+For more than 30 years, I’ve been working to make the web—and, increasingly, the AI systems being grafted onto it—more [accessible](/tags/accessibility/), [open](/tags/web-standards/), [resilient](/tags/progressive-enhancement/), and [equitable](/tags/inclusion).
 
-Over the last {{ helpers.currentYear() - 1996 }} years, I’ve written
-<a href="/publications/#books">{{ collections.books | filterTo("type", "authored") | length }} books</a> (contributing to
-{{ ( collections.books | length ) - ( collections.books | filterTo("type", "authored") | length ) }}
-more) and <a href="/publications/#articles">{{ collections.articles | length }} articles</a> with that focus. I’ve also presented on [these and related topics](/speaking-engagements/#talks) at
-<a href="/speaking-engagements/">over {{ speaking_engagements | length }} events</a> in
-{{ ( cities | length ) - 1 }} cities across the globe.
+Today, I’m a Principal Technical Program Manager on Microsoft’s Accessibility Engineering team. I build benchmarks, evaluation systems, agentic coding tools, and [design software](https://www.figma.com/community/plugin/731310036968334777/accessibility-assistant) that help teams find and fix accessibility issues early in the process of making software. Before that, I shaped Microsoft’s accessibility innovation portfolio by leading [its $25m AI for Accessibility grant program](https://blogs.microsoft.com/accessibility/ai-for-accessibility/), [advanced AI systems with people who have speech disabilities](https://www.youtube.com/watch?v=5FWwM1S8RfE), and helped promising research move from proposal to proven.
 
-I’m a Principal Accessibility Innovation Strategist at Microsoft, where I run the $25<abbr title="million">M</abbr> [Accessibility Innovation grant program](https://www.microsoft.com/en-us/accessibility/innovation) and lead the charge on accessibility innovation across the company. In my prior role on the Edge browser team, I steered our investments in [Progressive Web Apps (PWAs)](/tags/progressive-web-apps/).
+Before accessibility became my full-time focus, I helped shape Microsoft Edge’s Progressive Web App strategy, edited several W3C specifications related to [Progressive Web Apps](/tags/progressive-web-apps), and created [the Web We Want](https://webwewant.fyi) as a listening tool for understanding what web designers and developers wanted from the web platform. Before Microsoft, I spent two decades designing, developing, consulting, teaching, and making the case for [progressive enhancement](/tags/progressive-enhancement/), [web standards](/tags/web-standards/), [web performance](/tags/performance/), and accessibility.
 
-I’m also deeply involved in culture work within Microsoft, providing [allyship and related training](/tags/inclusion/) across a broad swath of Microsoft product teams.
+Along the way, I’ve written and contributed to [a small shelf of books](/publications/#books), published [dozens of articles](/publications/#articles), and spoken at [events around the world](/speaking-engagements/). That shelf includes [<cite>Adaptive Web Design</cite>](https://adaptivewebdesign.info/) and, most recently, the sixth edition of [<cite>Learning Web Design</cite>](https://www.oreilly.com/library/view/learning-web-design/9781098137670/), which I co-authored with Jen Robbins.
 
-I’m a spec editor at [the <abbr title="World Wide Web Consortium">W3C</abbr>](https://www.w3.org/), a former manager of the [Web Standards Project](http://webstandards.org), Editor-in-chief of [<cite>A List Apart</cite>](http://alistapart.com), and the creator of [the Web We Want](https://webwewant.fyi).
+I’m also a former manager of the [Web Standards Project](http://webstandards.org) and a former Editor-in-Chief of [<cite>A List Apart</cite>](http://alistapart.com).
 
-If you’re interested in learning more about what I’m up to, [check out what I’m working on right now](/now/).
+
+Throughout my career, my roles have changed, but my mission hasn’t: build technology that works for more people, in more places, under more conditions.
+
+If you’re curious about what’s holding my attention right now, [take a look at my “now” page](/now/).
