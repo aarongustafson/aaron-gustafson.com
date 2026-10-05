@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-05-26T03:34:43.712Z",
+  "lastFetched": "2026-10-04T23:36:28.791Z",
   "children": [
     {
       "type": "entry",
@@ -105716,6 +105716,630 @@
       "wm-target": "https://www.aaron-gustafson.com/notebook/visual-validation-feedback-for-form-fields/",
       "wm-protocol": "webmention",
       "like-of": "https://www.aaron-gustafson.com/notebook/visual-validation-feedback-for-form-fields/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Evil Jim O’Donnell",
+        "photo": "https://avatars.webmention.io/eurosky.social/f19c772d86c389e4c81423b9d48de04f655f887f91bf9df90b5e51d374c67d85.jpg",
+        "url": "https://bsky.app/profile/eatyourgreens.org.uk"
+      },
+      "url": "https://bsky.app/profile/did:plc:mvy6jvolas42qzt6yezkyzou/post/3mwv27zdels2z",
+      "published": "2026-10-02T09:20:43+00:00",
+      "published_ts": 1790932843,
+      "wm-received": "2026-10-02T09:20:57Z",
+      "wm-id": 2037284,
+      "wm-source": "https://bsky.brid.gy/convert/web/at://did:plc:mvy6jvolas42qzt6yezkyzou/app.bsky.feed.post/3mwv27zdels2z%23bridgy-fed-create-2026-10-02T09:20:45.113126+00:00",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/can-your-ai-pass-the-accessibility-test/",
+      "wm-protocol": "webmention",
+      "content": {
+        "content-type": "text/html",
+        "value": "Can Your AI Pass The Accessibility Test? is another good read about this, and emphasises including feedback from disabled users.\n\nIn the era of \"synthetic user research\", I do worry that developers might use agents in place of user research with real people.\n\n<a href=\"https://www.aaron-gustafson.com/notebook/can-your-ai-pass-the-accessibility-test/\">www.aaron-gustafson.com/notebook/can...</a>",
+        "html": "Can Your AI Pass The Accessibility Test? is another good read about this, and emphasises including feedback from disabled users.\n\nIn the era of \"synthetic user research\", I do worry that developers might use agents in place of user research with real people.\n\n<a href=\"https://www.aaron-gustafson.com/notebook/can-your-ai-pass-the-accessibility-test/\">www.aaron-gustafson.com/notebook/can...</a>",
+        "text": "Can Your AI Pass The Accessibility Test? is another good read about this, and emphasises including feedback from disabled users.\n\nIn the era of \"synthetic user research\", I do worry that developers might use agents in place of user research with real people.\n\nwww.aaron-gustafson.com/notebook/can..."
+      },
+      "in-reply-to": "https://www.aaron-gustafson.com/notebook/can-your-ai-pass-the-accessibility-test/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Evil Jim O’Donnell",
+        "photo": "https://avatars.webmention.io/eurosky.social/f19c772d86c389e4c81423b9d48de04f655f887f91bf9df90b5e51d374c67d85.jpg",
+        "url": "https://bsky.app/profile/eatyourgreens.org.uk"
+      },
+      "url": "https://bsky.app/profile/did:plc:mvy6jvolas42qzt6yezkyzou/post/3mqlpcuc37c2w",
+      "published": "2026-07-14T07:40:20+00:00",
+      "published_ts": 1784014820,
+      "wm-received": "2026-07-14T07:40:25Z",
+      "wm-id": 2011943,
+      "wm-source": "https://bsky.brid.gy/convert/web/at://did:plc:mvy6jvolas42qzt6yezkyzou/app.bsky.feed.post/3mqlpcuc37c2w%23bridgy-fed-create-2026-07-14T07:40:21.941228+00:00",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/can-your-ai-pass-the-accessibility-test/",
+      "wm-protocol": "webmention",
+      "content": {
+        "content-type": "text/html",
+        "value": "It goes well with this talk from Microsoft Build (by <a href=\"https://bsky.brid.gy/web/did:plc:6rmgrvblxflqh34omwywu6ib\">aaron-gustafson.com</a>) If your accessibility process is broken, AI won’t fix that for you. \n\n<a href=\"https://www.aaron-gustafson.com/notebook/can-your-ai-pass-the-accessibility-test/\">www.aaron-gustafson.com/notebook/can...</a>",
+        "html": "It goes well with this talk from Microsoft Build (by <a href=\"https://bsky.brid.gy/web/did:plc:6rmgrvblxflqh34omwywu6ib\">aaron-gustafson.com</a>) If your accessibility process is broken, AI won’t fix that for you. \n\n<a href=\"https://www.aaron-gustafson.com/notebook/can-your-ai-pass-the-accessibility-test/\">www.aaron-gustafson.com/notebook/can...</a>",
+        "text": "It goes well with this talk from Microsoft Build (by aaron-gustafson.com) If your accessibility process is broken, AI won’t fix that for you. \n\nwww.aaron-gustafson.com/notebook/can..."
+      },
+      "in-reply-to": "https://www.aaron-gustafson.com/notebook/can-your-ai-pass-the-accessibility-test/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "graste",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/a1339f05f453cb52a2e7f82be237cdabd377c5d35a6d7dfe9ecc8f47a16009fe.jpg",
+        "url": "https://social.vivaldi.net/@graste"
+      },
+      "url": "https://front-end.social/@Aaron/116771503348956787#reblogged-by-109372194678727141",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-06-22T18:54:25Z",
+      "wm-id": 2004214,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/116771503348956787/109372194678727141",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/2026-06-17-llm-biased-against-accessible-code/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/2026-06-17-llm-biased-against-accessible-code/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "graste",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/a1339f05f453cb52a2e7f82be237cdabd377c5d35a6d7dfe9ecc8f47a16009fe.jpg",
+        "url": "https://social.vivaldi.net/@graste"
+      },
+      "url": "https://front-end.social/@Aaron/116771503348956787#favorited-by-109372194678727141",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-06-22T18:53:55Z",
+      "wm-id": 2004213,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/116771503348956787/109372194678727141",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/2026-06-17-llm-biased-against-accessible-code/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/2026-06-17-llm-biased-against-accessible-code/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Roberto Perez",
+        "photo": "https://avatars.webmention.io/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://tweesecake.social/@rperez030"
+      },
+      "url": "https://tweesecake.social/@rperez030/116776903685217737",
+      "published": "2026-06-19T13:02:20+00:00",
+      "published_ts": 1781874140,
+      "wm-received": "2026-06-19T13:27:38Z",
+      "wm-id": 2003717,
+      "wm-source": "https://brid.gy/comment/mastodon/@aaron@front-end.social/116771503348956787/116776903701910889",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/2026-06-17-llm-biased-against-accessible-code/",
+      "wm-protocol": "webmention",
+      "content": {
+        "content-type": "text/html",
+        "value": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@Aaron\" class=\"u-url\">@<span>Aaron</span></a></span> Unfortunately it is not the LLMs, it's us. It is baked right into the training data. Accessibility shouldn't be a requirement in the first place.</p>",
+        "html": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@Aaron\" class=\"u-url\">@<span>Aaron</span></a></span> Unfortunately it is not the LLMs, it's us. It is baked right into the training data. Accessibility shouldn't be a requirement in the first place.</p>",
+        "text": "@Aaron Unfortunately it is not the LLMs, it's us. It is baked right into the training data. Accessibility shouldn't be a requirement in the first place."
+      },
+      "in-reply-to": "https://www.aaron-gustafson.com/notebook/2026-06-17-llm-biased-against-accessible-code/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Peter Saathoff-Harshfield",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/ff2e18e69842d7cf4f117073b474270eb434d3b561f5c8724b7b8071d4ff533d.jpg",
+        "url": "https://mastodon.social/@pesh"
+      },
+      "url": "https://front-end.social/@Aaron/116771503348956787#favorited-by-109303563519470652",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-06-18T17:46:06Z",
+      "wm-id": 2003564,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/116771503348956787/109303563519470652",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/2026-06-17-llm-biased-against-accessible-code/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/2026-06-17-llm-biased-against-accessible-code/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Devin Prater :blind:",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/4df6da15ed6f9904a80ff55bf27feeb165244b43b929ad22a23a0a40f0b3e089.jpg",
+        "url": "https://tweesecake.social/@pixelate"
+      },
+      "url": "https://front-end.social/@Aaron/116771503348956787#reblogged-by-111674698510521562",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-06-18T14:38:19Z",
+      "wm-id": 2003537,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/116771503348956787/111674698510521562",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/2026-06-17-llm-biased-against-accessible-code/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/2026-06-17-llm-biased-against-accessible-code/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Devin Prater :blind:",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/4df6da15ed6f9904a80ff55bf27feeb165244b43b929ad22a23a0a40f0b3e089.jpg",
+        "url": "https://tweesecake.social/@pixelate"
+      },
+      "url": "https://front-end.social/@Aaron/116771503348956787#favorited-by-111674698510521562",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-06-18T14:38:18Z",
+      "wm-id": 2003535,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/116771503348956787/111674698510521562",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/2026-06-17-llm-biased-against-accessible-code/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/2026-06-17-llm-biased-against-accessible-code/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "David's Alter (Algo) Ego",
+        "photo": "https://avatars.webmention.io/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://mastodon.social/@colarusso_algo"
+      },
+      "url": "https://front-end.social/@Aaron/116729548956867781#reblogged-by-113305589295986445",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-06-11T11:00:53Z",
+      "wm-id": 2001848,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/116729548956867781/113305589295986445",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/can-your-ai-pass-the-accessibility-test/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/can-your-ai-pass-the-accessibility-test/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Christian Liebel",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/a475172ebff1434b4b2a1b53043be680fb59029453e19bfb9e02efb9cd7a1dda.jpg",
+        "url": "https://mastodon.cloud/@christianliebel"
+      },
+      "url": "https://front-end.social/@Aaron/116729548956867781#favorited-by-109304001382327938",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-06-11T06:17:38Z",
+      "wm-id": 2001807,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/116729548956867781/109304001382327938",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/can-your-ai-pass-the-accessibility-test/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/can-your-ai-pass-the-accessibility-test/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "DennisL",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/fb8de881b6dd3f6553507221e50b9293496480708f174774f537082e0d0e4d0a.png",
+        "url": "https://mastodon.social/@dennisl"
+      },
+      "url": "https://front-end.social/@Aaron/116660363976759260#favorited-by-109293045760113761",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-05-30T15:31:02Z",
+      "wm-id": 1999354,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/116660363976759260/109293045760113761",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/fixing-accessibility-after-the-fact-is-too-late/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/fixing-accessibility-after-the-fact-is-too-late/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Jones",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:25pfyk2gzco2qxfdr4m44gtu/bafkreiaaem3l5pxvm7ovv6hhksqllq3jl46dc7wfrynapeafw4dn3clgzy",
+        "url": "https://bsky.app/profile/simonrjones.net"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mn3almrtfk2t#liked_by_did:plc:25pfyk2gzco2qxfdr4m44gtu",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-05-30T14:55:12Z",
+      "wm-id": 1999350,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mn3almrtfk2t/did%253Aplc%253A25pfyk2gzco2qxfdr4m44gtu",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/fixing-accessibility-after-the-fact-is-too-late/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/fixing-accessibility-after-the-fact-is-too-late/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "David Dzumba",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:2yjtrpjojva6wdijcamn4m7q/bafkreibv3wvq6c3et5ekftvf5uncepzqdkkxh2ezqbf42bogszpcrprqze",
+        "url": "https://bsky.app/profile/ddzumba.bsky.social"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mn3almrtfk2t#liked_by_did:plc:2yjtrpjojva6wdijcamn4m7q",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-05-30T14:54:21Z",
+      "wm-id": 1999349,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mn3almrtfk2t/did%253Aplc%253A2yjtrpjojva6wdijcamn4m7q",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/fixing-accessibility-after-the-fact-is-too-late/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/fixing-accessibility-after-the-fact-is-too-late/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://bsky.app/profile/did:plc:6rmgrvblxflqh34omwywu6ib/post/3mn3almrtfk2t",
+      "published": "2026-05-30T14:18:37+00:00",
+      "published_ts": 1780150717,
+      "wm-received": "2026-05-30T14:18:39Z",
+      "wm-id": 1999338,
+      "wm-source": "https://bsky.brid.gy/convert/web/at://did:plc:6rmgrvblxflqh34omwywu6ib/app.bsky.feed.post/3mn3almrtfk2t%23bridgy-fed-create-2026-05-30T14:18:37.810616+00:00",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/fixing-accessibility-after-the-fact-is-too-late/",
+      "wm-protocol": "webmention",
+      "content": {
+        "content-type": "text/html",
+        "value": "At Ability Summit 2026, I moderated a panel on shifting accessibility left in the age of AI with Yumeng Ma, Dylan Barrell, Navin Thadani, and Ed Summers.\n\n<a href=\"https://www.aaron-gustafson.com/notebook/fixing-accessibility-after-the-fact-is-too-late/\">www.aaron-gustafson.com/notebook/fix...</a>",
+        "html": "At Ability Summit 2026, I moderated a panel on shifting accessibility left in the age of AI with Yumeng Ma, Dylan Barrell, Navin Thadani, and Ed Summers.\n\n<a href=\"https://www.aaron-gustafson.com/notebook/fixing-accessibility-after-the-fact-is-too-late/\">www.aaron-gustafson.com/notebook/fix...</a>",
+        "text": "At Ability Summit 2026, I moderated a panel on shifting accessibility left in the age of AI with Yumeng Ma, Dylan Barrell, Navin Thadani, and Ed Summers.\n\nwww.aaron-gustafson.com/notebook/fix..."
+      },
+      "mention-of": "https://www.aaron-gustafson.com/notebook/fixing-accessibility-after-the-fact-is-too-late/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "David's Alter (Algo) Ego",
+        "photo": "https://avatars.webmention.io/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://mastodon.social/@colarusso_algo"
+      },
+      "url": "https://front-end.social/@Aaron/116660363976759260#reblogged-by-113305589295986445",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-05-30T10:07:53Z",
+      "wm-id": 1999288,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/116660363976759260/113305589295986445",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/fixing-accessibility-after-the-fact-is-too-late/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/fixing-accessibility-after-the-fact-is-too-late/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "David Dzumba",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:2yjtrpjojva6wdijcamn4m7q/bafkreibv3wvq6c3et5ekftvf5uncepzqdkkxh2ezqbf42bogszpcrprqze",
+        "url": "https://bsky.app/profile/ddzumba.bsky.social"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mmqzkeowi525#liked_by_did:plc:2yjtrpjojva6wdijcamn4m7q",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-05-26T16:25:54Z",
+      "wm-id": 1998503,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mmqzkeowi525/did%253Aplc%253A2yjtrpjojva6wdijcamn4m7q",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "sdussaut",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/1a05a4638f6c3a8b5bcdae0d09f41304f7884e84cd508665683ed4aedf8d32d7.jpg",
+        "url": "https://mastodon.social/@sdussaut"
+      },
+      "url": "https://front-end.social/@Aaron/116637647231613369#reblogged-by-109288538295767293",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-05-26T09:03:56Z",
+      "wm-id": 1998459,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/116637647231613369/109288538295767293",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "sdussaut",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/1a05a4638f6c3a8b5bcdae0d09f41304f7884e84cd508665683ed4aedf8d32d7.jpg",
+        "url": "https://mastodon.social/@sdussaut"
+      },
+      "url": "https://front-end.social/@Aaron/116637647231613369#favorited-by-109288538295767293",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-05-26T09:03:55Z",
+      "wm-id": 1998457,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/116637647231613369/109288538295767293",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Hidde",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/271fe63075676a0898d5fcd3435204bfcbc43c62f0f722ee3be1c03242603599.jpg",
+        "url": "https://front-end.social/@hdv"
+      },
+      "url": "https://front-end.social/@Aaron/116637647231613369#favorited-by-109292541621018376",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-05-26T09:03:55Z",
+      "wm-id": 1998458,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/116637647231613369/109292541621018376",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tobias Köngeter",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/594f925375d54a49000a9821b1ed6db1a9da9648bc7af3fba59ca82b33415321.png",
+        "url": "https://sueden.social/@tobiaskoengeter"
+      },
+      "url": "https://front-end.social/@Aaron/116637647231613369#favorited-by-109791565594868803",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-05-26T09:03:54Z",
+      "wm-id": 1998456,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/116637647231613369/109791565594868803",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Luca",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/66fd100e4cc5277978482b5e26188094f10e1de7bc8ce7ef3c9172152f0e7072.jpg",
+        "url": "https://mastodon.social/@oelsner"
+      },
+      "url": "https://front-end.social/@Aaron/116637647231613369#favorited-by-110650844191282012",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-05-26T09:03:49Z",
+      "wm-id": 1998455,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/116637647231613369/110650844191282012",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jonathan Schofield",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/8daee2e43ad5db5086664e27fc4d6189ae1546a92801fbd0ce6e3e5f384f3f58.jpg",
+        "url": "https://mastodon.social/@urlyman"
+      },
+      "url": "https://front-end.social/@Aaron/116637647231613369#reblogged-by-109338564626822745",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-05-26T04:28:27Z",
+      "wm-id": 1998425,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/116637647231613369/109338564626822745",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Curtiss Grymala (he/him/his)",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/4a1114e9b7f49efd0183b2cf952017831addfa0390310e856251013afc22110a.jpg",
+        "url": "https://higheredweb.social/@cgrymala"
+      },
+      "url": "https://front-end.social/@Aaron/116637647231613369#reblogged-by-109349353860914232",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-05-26T04:28:26Z",
+      "wm-id": 1998423,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/116637647231613369/109349353860914232",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "David's Alter (Algo) Ego",
+        "photo": "https://avatars.webmention.io/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://mastodon.social/@colarusso_algo"
+      },
+      "url": "https://front-end.social/@Aaron/116637647231613369#reblogged-by-113305589295986445",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-05-26T04:28:26Z",
+      "wm-id": 1998424,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/116637647231613369/113305589295986445",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jonathan Schofield",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/8daee2e43ad5db5086664e27fc4d6189ae1546a92801fbd0ce6e3e5f384f3f58.jpg",
+        "url": "https://mastodon.social/@urlyman"
+      },
+      "url": "https://front-end.social/@Aaron/116637647231613369#favorited-by-109338564626822745",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-05-26T04:28:25Z",
+      "wm-id": 1998421,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/116637647231613369/109338564626822745",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chris Coyier",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/d35cbbbc72da6db6260b7fb3970dfdea39aa5a8e639566f797f1b956ab284bf7.jpg",
+        "url": "https://front-end.social/@chriscoyier"
+      },
+      "url": "https://front-end.social/@Aaron/116637647231613369#reblogged-by-109304655908819292",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-05-26T04:28:25Z",
+      "wm-id": 1998422,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/116637647231613369/109304655908819292",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Nick F",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/45d8b03318cd4a217b2dc50d69bf0bed2e93825242dbe401472de8a396f668b8.jpg",
+        "url": "https://mastodon.social/@nickautomatic"
+      },
+      "url": "https://front-end.social/@Aaron/116637647231613369#favorited-by-109293008411545262",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-05-26T04:28:24Z",
+      "wm-id": 1998420,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/116637647231613369/109293008411545262",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Curtiss Grymala (he/him/his)",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/4a1114e9b7f49efd0183b2cf952017831addfa0390310e856251013afc22110a.jpg",
+        "url": "https://higheredweb.social/@cgrymala"
+      },
+      "url": "https://front-end.social/@Aaron/116637647231613369#favorited-by-109349353860914232",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-05-26T04:28:23Z",
+      "wm-id": 1998419,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/116637647231613369/109349353860914232",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "clergyman",
+        "photo": "https://avatars.webmention.io/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://infosec.exchange/@clergyman"
+      },
+      "url": "https://front-end.social/@Aaron/116637647231613369#favorited-by-113242630490338183",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-05-26T04:28:21Z",
+      "wm-id": 1998417,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/116637647231613369/113242630490338183",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "alpha1beta",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/cf33b4d57d5de44365acac53da9cf31b5819eb2ff7452329a5a0d503bb92f681.jpg",
+        "url": "https://libretweet.com/@alpha1beta"
+      },
+      "url": "https://front-end.social/@Aaron/116637647231613369#favorited-by-109827917942738856",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-05-26T04:28:21Z",
+      "wm-id": 1998418,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/116637647231613369/109827917942738856",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
       "wm-property": "like-of",
       "wm-private": false
     }
