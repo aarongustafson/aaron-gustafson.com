@@ -76,11 +76,14 @@ The workflow syndicates content to the following platforms:
 
 1. Go to [Buffer Developers](https://buffer.com/developers/api)
 2. Create an application and get access token
-3. Get your profile IDs:
+3. Get your channel IDs by running:
    ```bash
-   curl -X GET "https://api.bufferapp.com/1/profiles.json?access_token=YOUR_TOKEN"
+   node .github/scripts/check-buffer-profiles.js
    ```
-4. Find the IDs for your Twitter and Bluesky profiles
+   The legacy `https://api.bufferapp.com/1/profiles.json` REST endpoint is
+   retired; channel IDs now come from the GraphQL `channels` query, which that
+   script wraps.
+4. Find the IDs for your Twitter and Bluesky channels
 
 ### 3. Screenshot Service (Optional)
 

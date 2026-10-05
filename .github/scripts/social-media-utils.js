@@ -3,6 +3,8 @@ import { htmlToText } from "html-to-text";
 import fetch from "node-fetch";
 import path from "path";
 
+const BUFFER_API_ENDPOINT = "https://api.buffer.com";
+
 const BUFFER_DUPLICATE_ERROR_PATTERNS = [
 	/posted that one recently/i,
 	/not able to post the same thing again so soon/i,
@@ -417,26 +419,35 @@ class SocialMediaAPI {
 		};
 	}
 
-
-	buildBufferGraphQLRequest(text, organizationId, channelId) {
+	buildBufferGraphQLRequest(text, channelId) {
 		return {
 			method: "POST",
 			headers: this.getBufferAuthorizationHeader(),
 			body: JSON.stringify({
-				query: `mutation CreateTextPost($organizationId: ID!, $channelId: ID!, $text: String!) {
-					createPost(input: { organizationId: $organizationId, channelId: $channelId, content: { text: $text } }) {
-						... on Post {
-							id
-							content {
-								text
+				query: `mutation CreatePost($input: CreatePostInput!) {
+					createPost(input: $input) {
+						__typename
+						... on PostActionSuccess {
+							post {
+								id
+								status
 							}
 						}
+						... on NotFoundError { message }
+						... on UnauthorizedError { message }
+						... on UnexpectedError { message }
+						... on RestProxyError { message }
+						... on LimitReachedError { message }
+						... on InvalidInputError { message }
 					}
 				}`,
 				variables: {
-					organizationId,
-					channelId,
-					text,
+					input: {
+						channelId,
+						text,
+						schedulingType: "automatic",
+						mode: "addToQueue",
+					},
 				},
 			}),
 		};
@@ -512,16 +523,39 @@ class SocialMediaAPI {
 		return await response.json();
 	}
 
+	// Buffer always responds 200: system errors arrive in the top-level `errors`
+	// array, while mutation failures are typed members of the result union.
+	// Returns the created post, or throws with the most specific message found.
+	extractBufferPost(data, response = { ok: true, status: 200 }) {
+		const result = data?.data?.createPost;
+		const systemErrors = data?.errors?.map((error) => error.message) || [];
+
+		if (!response.ok || systemErrors.length > 0 || !result?.post) {
+			const error = new Error(
+				result?.message ||
+					systemErrors[0] ||
+					data?.message ||
+					data?.error ||
+					`HTTP ${response.status}`,
+			);
+			error.bufferData = data;
+			throw error;
+		}
+
+		return result.post;
+	}
+
 	async postToBuffer(text, profileIds, mediaUrl = null) {
 		const accessToken = process.env.BUFFER_ACCESS_TOKEN;
-		const organizationId = process.env.BUFFER_ORGANIZATION_ID || process.env.BUFFER_ACCOUNT_ID;
 
 		if (!accessToken && !this.testMode) {
 			throw new Error("Buffer access token not provided");
 		}
 
-		if (!organizationId && !this.testMode) {
-			throw new Error("Buffer organization ID not provided");
+		if (mediaUrl) {
+			console.warn(
+				"⚠️ Buffer media attachments are not supported on the GraphQL createPost path; posting text only.",
+			);
 		}
 
 		const results = [];
@@ -541,23 +575,15 @@ class SocialMediaAPI {
 			}
 
 			try {
-				const response = await fetch("https://api.buffer.com/graphql", {
-					...this.buildBufferGraphQLRequest(text, organizationId, profileId),
-				});
+				const response = await fetch(
+					BUFFER_API_ENDPOINT,
+					this.buildBufferGraphQLRequest(text, profileId),
+				);
 				const data = await response.json();
-				const postData = data?.data?.createPost;
-				const graphQLErrors = data?.errors?.map((error) => error.message) || [];
-
-				if (!response.ok || graphQLErrors.length > 0 || !postData) {
-					const error = new Error(
-						graphQLErrors[0] || data?.message || data?.error || `HTTP ${response.status}`,
-					);
-					error.bufferData = data;
-					throw error;
-				}
+				const post = this.extractBufferPost(data, response);
 
 				results.push({
-					...postData,
+					...post,
 					profileId,
 				});
 			} catch (error) {
@@ -581,6 +607,7 @@ class SocialMediaAPI {
 					error.message,
 					responseData?.message,
 					responseData?.error,
+					responseData?.data?.createPost?.message,
 					...(responseData?.errors?.map((responseError) => responseError.message) || []),
 				);
 
@@ -675,4 +702,9 @@ class SocialMediaAPI {
 	}
 }
 
-export { CacheManager, ContentProcessor, SocialMediaAPI };
+export {
+	BUFFER_API_ENDPOINT,
+	CacheManager,
+	ContentProcessor,
+	SocialMediaAPI,
+};

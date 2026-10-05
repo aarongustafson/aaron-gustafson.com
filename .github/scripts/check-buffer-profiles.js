@@ -1,11 +1,13 @@
 import fetch from "node-fetch";
 import dotenv from "dotenv";
 
+import { BUFFER_API_ENDPOINT } from "./social-media-utils.js";
+
 // Load environment variables from .env file
 dotenv.config();
 
 async function makeBufferRequest(accessToken, query, variables = {}) {
-	const response = await fetch("https://api.buffer.com/graphql", {
+	const response = await fetch(BUFFER_API_ENDPOINT, {
 		method: "POST",
 		headers: {
 			Authorization: "Bearer " + accessToken,
@@ -34,19 +36,24 @@ async function checkBufferProfiles() {
 	console.log("🔍 Fetching Buffer channels...\n");
 
 	try {
-		const organizationId = process.env.BUFFER_ORGANIZATION_ID || process.env.BUFFER_ACCOUNT_ID;
-		const accountData = await makeBufferRequest(
-			accessToken,
-			`query GetOrganizations {
-				account {
-					organizations {
-						id
-						name
+		let organizationId = process.env.BUFFER_ORGANIZATION_ID;
+
+		// Only look the organization up when it isn't already configured.
+		if (!organizationId) {
+			const accountData = await makeBufferRequest(
+				accessToken,
+				`query GetOrganizations {
+					account {
+						organizations {
+							id
+							name
+						}
 					}
-				}
-			}`,
-		);
-		const organizations = accountData?.account?.organizations || [];
+				}`,
+			);
+			const [primaryOrganization] = accountData?.account?.organizations || [];
+			organizationId = primaryOrganization?.id;
+		}
 
 		let channels = [];
 		if (organizationId) {
@@ -60,20 +67,6 @@ async function checkBufferProfiles() {
 					}
 				}`,
 				{ organizationId },
-			);
-			channels = channelData?.channels || [];
-		} else if (organizations.length > 0) {
-			const [primaryOrganization] = organizations;
-			const channelData = await makeBufferRequest(
-				accessToken,
-				`query GetChannels($organizationId: ID!) {
-					channels(input: { organizationId: $organizationId }) {
-						id
-						name
-						service
-					}
-				}`,
-				{ organizationId: primaryOrganization.id },
 			);
 			channels = channelData?.channels || [];
 		}
