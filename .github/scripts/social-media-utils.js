@@ -3,6 +3,8 @@ import { htmlToText } from "html-to-text";
 import fetch from "node-fetch";
 import path from "path";
 
+const BUFFER_API_ENDPOINT = "https://api.buffer.com";
+
 const BUFFER_DUPLICATE_ERROR_PATTERNS = [
 	/posted that one recently/i,
 	/not able to post the same thing again so soon/i,
@@ -409,6 +411,48 @@ class SocialMediaAPI {
 		);
 	}
 
+	getBufferAuthorizationHeader() {
+		const accessToken = process.env.BUFFER_ACCESS_TOKEN;
+		return {
+			Authorization: "Bearer " + accessToken,
+			"Content-Type": "application/json",
+		};
+	}
+
+	buildBufferGraphQLRequest(text, channelId) {
+		return {
+			method: "POST",
+			headers: this.getBufferAuthorizationHeader(),
+			body: JSON.stringify({
+				query: `mutation CreatePost($input: CreatePostInput!) {
+					createPost(input: $input) {
+						__typename
+						... on PostActionSuccess {
+							post {
+								id
+								status
+							}
+						}
+						... on NotFoundError { message }
+						... on UnauthorizedError { message }
+						... on UnexpectedError { message }
+						... on RestProxyError { message }
+						... on LimitReachedError { message }
+						... on InvalidInputError { message }
+					}
+				}`,
+				variables: {
+					input: {
+						channelId,
+						text,
+						schedulingType: "automatic",
+						mode: "addToQueue",
+					},
+				},
+			}),
+		};
+	}
+
 	// NOTE: LinkedIn and Pinterest now use IFTTT webhooks instead of direct API calls
 	// The methods below are kept for reference but are not actively used
 	// To use direct API integration, update syndicate-posts.js and syndicate-links.js
@@ -479,28 +523,48 @@ class SocialMediaAPI {
 		return await response.json();
 	}
 
+	// Buffer always responds 200: system errors arrive in the top-level `errors`
+	// array, while mutation failures are typed members of the result union.
+	// Returns the created post, or throws with the most specific message found.
+	extractBufferPost(data, response = { ok: true, status: 200 }) {
+		const result = data?.data?.createPost;
+		const systemErrors = data?.errors?.map((error) => error.message) || [];
+
+		if (!response.ok || systemErrors.length > 0 || !result?.post) {
+			const error = new Error(
+				result?.message ||
+					systemErrors[0] ||
+					data?.message ||
+					data?.error ||
+					`HTTP ${response.status}`,
+			);
+			error.bufferData = data;
+			throw error;
+		}
+
+		return result.post;
+	}
+
 	async postToBuffer(text, profileIds, mediaUrl = null) {
 		const accessToken = process.env.BUFFER_ACCESS_TOKEN;
+
 		if (!accessToken && !this.testMode) {
 			throw new Error("Buffer access token not provided");
+		}
+
+		if (mediaUrl) {
+			console.warn(
+				"⚠️ Buffer media attachments are not supported on the GraphQL createPost path; posting text only.",
+			);
 		}
 
 		const results = [];
 
 		for (const profileId of profileIds) {
-			// Build form-encoded data (Buffer API expects this format)
-			const formData = new URLSearchParams();
-			formData.append("text", text);
-			formData.append("profile_ids[]", profileId);
-
-			if (mediaUrl) {
-				formData.append("media[photo]", mediaUrl);
-			}
-
 			if (this.testMode) {
 				console.log(
 					`🧪 TEST: Buffer post data for profile ${profileId}:`,
-					formData.toString(),
+					text,
 				);
 				results.push({
 					id: `test-buffer-${profileId}-${Date.now()}`,
@@ -512,33 +576,17 @@ class SocialMediaAPI {
 
 			try {
 				const response = await fetch(
-					"https://api.bufferapp.com/1/updates/create.json",
-					{
-						method: "POST",
-						headers: {
-							Authorization: `Bearer ${accessToken}`,
-							"Content-Type": "application/x-www-form-urlencoded",
-						},
-						body: formData.toString(),
-					},
+					BUFFER_API_ENDPOINT,
+					this.buildBufferGraphQLRequest(text, profileId),
 				);
 				const data = await response.json();
-
-				// Check for errors in the response
-				if (!response.ok || !data.success) {
-					const error = new Error(
-						data.message || data.error || `HTTP ${response.status}`,
-					);
-					error.bufferData = data;
-					throw error;
-				}
+				const post = this.extractBufferPost(data, response);
 
 				results.push({
-					...data,
+					...post,
 					profileId,
 				});
 			} catch (error) {
-				// For fetch errors, try to get response data
 				let errorDetails = error.message;
 				let responseData = error.bufferData || null;
 
@@ -559,6 +607,8 @@ class SocialMediaAPI {
 					error.message,
 					responseData?.message,
 					responseData?.error,
+					responseData?.data?.createPost?.message,
+					...(responseData?.errors?.map((responseError) => responseError.message) || []),
 				);
 
 				if (duplicateDetected) {
@@ -594,6 +644,7 @@ class SocialMediaAPI {
 
 		return results;
 	}
+
 
 	async sendToIFTTT(event, data) {
 		const webhookKey = process.env.IFTTT_KEY;
@@ -651,4 +702,9 @@ class SocialMediaAPI {
 	}
 }
 
-export { CacheManager, ContentProcessor, SocialMediaAPI };
+export {
+	BUFFER_API_ENDPOINT,
+	CacheManager,
+	ContentProcessor,
+	SocialMediaAPI,
+};

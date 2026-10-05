@@ -27,6 +27,7 @@ MASTODON_SERVER_URL=https://front-end.social  # Your Mastodon instance
 
 ```
 BUFFER_ACCESS_TOKEN=your_buffer_access_token
+BUFFER_ORGANIZATION_ID=your_buffer_organization_id
 BUFFER_TWITTER_PROFILE_ID=your_twitter_profile_id
 BUFFER_BLUESKY_PROFILE_ID=your_bluesky_profile_id
 ```
@@ -75,11 +76,14 @@ The workflow syndicates content to the following platforms:
 
 1. Go to [Buffer Developers](https://buffer.com/developers/api)
 2. Create an application and get access token
-3. Get your profile IDs:
+3. Get your channel IDs by running:
    ```bash
-   curl -X GET "https://api.bufferapp.com/1/profiles.json?access_token=YOUR_TOKEN"
+   node .github/scripts/check-buffer-profiles.js
    ```
-4. Find the IDs for your Twitter and Bluesky profiles
+   The legacy `https://api.bufferapp.com/1/profiles.json` REST endpoint is
+   retired; channel IDs now come from the GraphQL `channels` query, which that
+   script wraps.
+4. Find the IDs for your Twitter and Bluesky channels
 
 ### 3. Screenshot Service (Optional)
 

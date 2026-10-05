@@ -1,8 +1,29 @@
 import fetch from "node-fetch";
 import dotenv from "dotenv";
 
+import { BUFFER_API_ENDPOINT } from "./social-media-utils.js";
+
 // Load environment variables from .env file
 dotenv.config();
+
+async function makeBufferRequest(accessToken, query, variables = {}) {
+	const response = await fetch(BUFFER_API_ENDPOINT, {
+		method: "POST",
+		headers: {
+			Authorization: "Bearer " + accessToken,
+			"Content-Type": "application/json",
+		},
+		body: JSON.stringify({ query, variables }),
+	});
+
+	const data = await response.json();
+	if (!response.ok || data.errors?.length > 0) {
+		const messages = data.errors?.map((error) => error.message).join(", ");
+		throw new Error(messages || data.message || data.error || `HTTP ${response.status}`);
+	}
+
+	return data.data;
+}
 
 async function checkBufferProfiles() {
 	const accessToken = process.env.BUFFER_ACCESS_TOKEN;
@@ -12,101 +33,91 @@ async function checkBufferProfiles() {
 		process.exit(1);
 	}
 
-	console.log("🔍 Fetching Buffer profiles...\n");
+	console.log("🔍 Fetching Buffer channels...\n");
 
 	try {
-		const response = await fetch("https://api.bufferapp.com/1/profiles.json", {
-			headers: {
-				Authorization: `Bearer ${accessToken}`,
-			},
-		});
+		let organizationId = process.env.BUFFER_ORGANIZATION_ID;
 
-		const profiles = await response.json();
+		// Only look the organization up when it isn't already configured.
+		if (!organizationId) {
+			const accountData = await makeBufferRequest(
+				accessToken,
+				`query GetOrganizations {
+					account {
+						organizations {
+							id
+							name
+						}
+					}
+				}`,
+			);
+			const [primaryOrganization] = accountData?.account?.organizations || [];
+			organizationId = primaryOrganization?.id;
+		}
 
-		if (!profiles || profiles.length === 0) {
-			console.log("⚠️  No Buffer profiles found");
+		let channels = [];
+		if (organizationId) {
+			const channelData = await makeBufferRequest(
+				accessToken,
+				`query GetChannels($organizationId: ID!) {
+					channels(input: { organizationId: $organizationId }) {
+						id
+						name
+						service
+					}
+				}`,
+				{ organizationId },
+			);
+			channels = channelData?.channels || [];
+		}
+
+		if (!channels || channels.length === 0) {
+			console.log("⚠️  No Buffer channels found");
 			return;
 		}
 
-		console.log(`📊 Found ${profiles.length} Buffer profile(s):\n`);
+		console.log(`📊 Found ${channels.length} Buffer channel(s):\n`);
 
-		for (const profile of profiles) {
-			console.log(`Profile ID: ${profile.id}`);
-			console.log(`Service: ${profile.service}`);
-			console.log(
-				`Username: ${profile.formatted_username || profile.service_username}`,
-			);
-			console.log(`Status: ${profile.status || "unknown"}`);
-			console.log(`Connected: ${profile.service ? "Yes" : "No"}`);
-
-			// Check if profile is active and can post
-			if (profile.disabled) {
-				console.log(`⚠️  WARNING: This profile is DISABLED`);
-			}
-			if (profile.status === "disconnected") {
-				console.log(`⚠️  WARNING: This profile is DISCONNECTED`);
-			}
-
-			console.log(`URL: https://publish.buffer.com/channels/${profile.id}`);
-			console.log("---");
+		for (const channel of channels) {
+			console.log(`Channel ID: ${channel.id}`);
+			console.log(`Service: ${channel.service || "unknown"}`);
+			console.log(`Name: ${channel.name || "unknown"}`);
+			console.log(`---`);
 		}
 
-		// Check environment variables
 		console.log("\n🔧 Current environment configuration:");
 		const twitterId = process.env.BUFFER_TWITTER_PROFILE_ID;
 		const blueskyId = process.env.BUFFER_BLUESKY_PROFILE_ID;
 
 		if (twitterId) {
-			const twitterProfile = profiles.find((p) => p.id === twitterId);
-			console.log(`\nTwitter Profile ID: ${twitterId}`);
-			if (twitterProfile) {
+			const twitterChannel = channels.find((channel) => channel.id === twitterId);
+			console.log(`\nTwitter Channel ID: ${twitterId}`);
+			if (twitterChannel) {
 				console.log(
-					`  ✅ Found: ${twitterProfile.service} - ${twitterProfile.formatted_username || twitterProfile.service_username}`,
+					`  ✅ Found: ${twitterChannel.service} - ${twitterChannel.name || twitterChannel.service}`,
 				);
-				if (
-					twitterProfile.disabled ||
-					twitterProfile.status === "disconnected"
-				) {
-					console.log(
-						`  ❌ ERROR: Profile is ${twitterProfile.disabled ? "disabled" : "disconnected"}`,
-					);
-				}
 			} else {
-				console.log(`  ❌ ERROR: Profile ID not found in your Buffer account`);
+				console.log(`  ❌ ERROR: Channel ID not found in your Buffer account`);
 			}
 		} else {
 			console.log("\n⚠️  BUFFER_TWITTER_PROFILE_ID not set");
 		}
 
 		if (blueskyId) {
-			const blueskyProfile = profiles.find((p) => p.id === blueskyId);
-			console.log(`\nBluesky Profile ID: ${blueskyId}`);
-			if (blueskyProfile) {
+			const blueskyChannel = channels.find((channel) => channel.id === blueskyId);
+			console.log(`\nBluesky Channel ID: ${blueskyId}`);
+			if (blueskyChannel) {
 				console.log(
-					`  ✅ Found: ${blueskyProfile.service} - ${blueskyProfile.formatted_username || blueskyProfile.service_username}`,
+					`  ✅ Found: ${blueskyChannel.service} - ${blueskyChannel.name || blueskyChannel.service}`,
 				);
-				if (
-					blueskyProfile.disabled ||
-					blueskyProfile.status === "disconnected"
-				) {
-					console.log(
-						`  ❌ ERROR: Profile is ${blueskyProfile.disabled ? "disabled" : "disconnected"}`,
-					);
-				}
 			} else {
-				console.log(`  ❌ ERROR: Profile ID not found in your Buffer account`);
+				console.log(`  ❌ ERROR: Channel ID not found in your Buffer account`);
 			}
 		} else {
 			console.log("\n⚠️  BUFFER_BLUESKY_PROFILE_ID not set");
 		}
 	} catch (error) {
-		console.error("❌ Error fetching Buffer profiles:", error.message);
-		if (error.response?.data) {
-			console.error(
-				"API error details:",
-				JSON.stringify(error.response.data, null, 2),
-			);
-		}
+		console.error("❌ Error fetching Buffer channels:", error.message);
 		process.exit(1);
 	}
 }
