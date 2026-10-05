@@ -115,10 +115,6 @@ const writeCache = () => {
 	return stream;
 };
 
-const svgo_opts = {
-	plugins: [{ removeViewBox: false }],
-};
-
 // Parallel Sharp processing for better performance
 const processImages = () => {
 	return through2.obj(async function (file, _, cb) {
@@ -204,7 +200,7 @@ const images = () => {
 			)
 
 			// Optimize based on file type
-			.pipe(gulpif("*.svg", svgo(svgo_opts), processImages()))
+			.pipe(gulpif("*.svg", svgo(), processImages()))
 
 			// Save to destinations
 			.pipe(dest(destination))
