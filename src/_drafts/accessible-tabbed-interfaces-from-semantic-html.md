@@ -1,323 +1,116 @@
 ---
-title: "Accessible Tabbed Interfaces from Semantic HTML"
+title: "Tabbed Interface: The Web Component"
 date: 2025-12-06 10:00:00 -07:00
 comments: true
 tags:
   ["web components", "progressive enhancement", "HTML", "accessibility", "ARIA"]
-description: "The tabbed-interface web component turns heading-structured content into an accessible tabbed interface with keyboard navigation and ARIA support, without making you contort your markup."
-twitter_text: "Want accessible tabs without a bunch of bespoke markup? Here’s a web component for that."
+description: "I’ve been building tabbed interfaces from document headings since 2007. My new custom element carries that approach forward and now drops the tabs when they don’t fit."
+twitter_text: "I keep coming back to tabbed interfaces."
 ---
 
-Creating accessible tabbed interfaces can get fiddly in a hurry. There are ARIA attributes to wire up, keyboard interactions to get right, and enough markup ceremony to make a perfectly reasonable person reconsider their life choices. The `tabbed-interface` web component takes a different approach: it transforms simple heading-structured content into fully accessible tabs automatically.
+I keep coming back to tabbed interfaces.
 
 <!-- more -->
 
-This is a modern web component port of my original [TabInterface](https://github.com/easy-designs/TabInterface.js), bringing progressive enhancement and accessibility along for the ride.
+Back in 2007, I built [`TabInterface.js`](https://easy-designs.github.io/TabInterface.js/). It used the document outline—a heading followed by some content, then another heading and more content—and turned those implicit sections into tabs. The only markup required was a single wrapper.
 
-## Basic usage
+I shared that work in my “Fundamental Progressive Enhancement” talk at Web Builder 2.0 in 2008, then wrote it up in a 2-part article for <cite>NET Magazine</cite> in 2009 ([Part 1](https://www.aaron-gustafson.com/docs/create-a-tabbed-interface-part-1.pdf) and [Part 2](https://www.aaron-gustafson.com/docs/create-a-tabbed-interface-part-2.pdf)). When responsive design became a thing, I started recommending another step: only make the tabs when they fit; leave the content alone when they wouldn’t.
 
-Wrap heading-structured content in the component:
+Nearly two decades on, I’ve built the idea yet again. [`@aarongustafson/tabbed-interface`](https://github.com/aarongustafson/tabbed-interface) is the lastest incarnation — as a custom element.
+
+<!-- more -->
+
+## Something old, something new
+
+The markup requirement looks a lot like it did back in 2007, the only difference is the `div` wrapper is now a `tabbed-interface` element:
 
 ```html
 <tabbed-interface>
-  <h2>First Tab</h2>
-  <p>Content for the first tab panel.</p>
+  <h2 id="overview">Overview</h2>
+  <p>A summary of the service.</p>
 
-  <h2>Second Tab</h2>
-  <p>Content for the second tab panel.</p>
+  <h2 id="requirements">Requirements</h2>
+  <p>What you need before getting started.</p>
 
-  <h2>Third Tab</h2>
-  <p>Content for the third tab panel.</p>
+  <h2 id="support">Support</h2>
+  <p>Where to go when things get weird.</p>
 </tabbed-interface>
 ```
 
-The component automatically:
+As you can see, it’s still several implicit sections in a sensible reading order. The headings give each section a name, the `id` attributes provide link targets, and the content is available even if JavaScript fails or hasn’t loaded yet.
 
-- Creates tab buttons from your headings
-- Builds accessible tab panels from the content
-- Adds proper ARIA attributes
-- Enables keyboard navigation
-- Hides headings in panels (by default)
+When the component boots, it uses those headings to create the tab controls. The headings, paragraphs, form controls, and any other elements contained within remain in the light DOM. The component assigns them to slots, retaining their connections to other elements, events, and such — like you (as the author) intended.
 
-All you provide is semantic HTML. The component handles the tab wrangling.
+The component generates the necessary controls and wires everything up. Buttons with `role="tab"` sit in a `role="tablist"`, each button points to a `tabpanel`, and `aria-selected` indicates which one is active. Arrow keys move focus among the tabs; <kbd>Home</kbd> and <kbd>End</kbd> jump to either end. All as you’d expect.
 
-## Showing headings in panels
-
-By default, headings are hidden inside panels. Keep them visible with `show-headers`:
-
-```html
-<tabbed-interface show-headers>
-  <h2>Overview</h2>
-  <p>Content here.</p>
-
-  <h2>Details</h2>
-  <p>More content.</p>
-</tabbed-interface>
-```
-
-The heading appears both as a tab and inside the panel.
-
-## Positioning tabs
-
-Put tabs below the content with `tablist-after`:
-
-```html
-<tabbed-interface tablist-after>
-  <h2>First</h2>
-  <p>Content appears above tabs.</p>
-
-  <h2>Second</h2>
-  <p>More content.</p>
-</tabbed-interface>
-```
-
-Useful for unconventional layouts or when the design gets a little opinionated.
-
-## Setting the default tab
-
-Specify which tab is active initially:
-
-```html
-<tabbed-interface default-tab="1">
-  <h2>Tab 0</h2>
-  <p>First tab.</p>
-
-  <h2>Tab 1</h2>
-  <p>This tab is active by default.</p>
-
-  <h2>Tab 2</h2>
-  <p>Third tab.</p>
-</tabbed-interface>
-```
-
-Use a zero-based index, or reference a heading’s `id`:
-
-```html
-<tabbed-interface default-tab="features">
-  <h2 id="intro">Introduction</h2>
-  <p>Intro content.</p>
-
-  <h2 id="features">Features</h2>
-  <p>Feature content.</p>
-</tabbed-interface>
-```
-
-## Auto-activation behavior
-
-By default, users must press Enter or Space to activate a tab after focusing it with arrow keys (manual activation). This follows ARIA best practices and tends to make keyboard navigation a bit less jumpy.
-
-Enable auto-activation to make tabs activate immediately on focus:
+By default, moving focus between the tabs doesn’t activate the associated panel. <kbd>Enter</kbd> and <kbd>Space</kbd> do that. You can override that default by adding the `auto-activate` attribute. With that attribute, moving focus changes the visible panel:
 
 ```html
 <tabbed-interface auto-activate>
-  <h2>Tab One</h2>
-  <p>Content here.</p>
-
-  <h2>Tab Two</h2>
-  <p>More content.</p>
+  <!-- headings and content -->
 </tabbed-interface>
 ```
 
-With auto-activation, arrow keys both focus and activate tabs. Without it, arrow keys focus tabs and Enter/Space activates them.
+Neither choice is better, they’re just options. If changing panels takes noticeable time—or simply causes a lot of visual commotion—I’d stick with manual activation.
 
-## Keyboard navigation
+## Anchors aweigh!
 
-The component includes full keyboard support:
-
-- **Arrow Left/Up** - Previous tab
-- **Arrow Right/Down** - Next tab
-- **Home** - First tab
-- **End** - Last tab
-- **Enter/Space** - Activate focused tab and focus first focusable element in panel (when auto-activate is off)
-
-When a user activates a tab with Enter or Space, focus automatically moves to the first focusable element in that panel, which makes keyboard navigation feel a lot less like work.
-
-## Custom tab titles
-
-Use `data-tab-short-name` to show different text in tabs than in headings:
+In 2026, adding `id` attributes to headings has become quite commonplace as it provides direct access to portions of the page through fragment identifiers. They also make super-stable targets for tabbed interfaces. One way I’ve leveraged them in this component is for setting the default tabpanel to activate (if you don’t want it to be the first one):
 
 ```html
-<tabbed-interface>
-  <h2 data-tab-short-name="Intro">Introduction and Getting Started Guide</h2>
-  <p>Full content with the complete heading visible in the panel.</p>
+<tabbed-interface default-tab="requirements">
+  <h2 id="overview">Overview</h2>
+  <p>...</p>
+
+  <h2 id="requirements">Requirements</h2>
+  <p>...</p>
 </tabbed-interface>
 ```
 
-The tab shows “Intro” while the full heading text remains available to screen readers via `aria-label`. Short for the UI, complete for everyone else.
+Here, the component opens “Requirements” initially. On top of this, I’ve also enabled a tabpanel to be activated through the fragment identifier itself — a link to `#requirements` will activate that section when tabs are present; without tabs, the browser scrolls to the same heading as you’d expect. 
 
-## Hash navigation
+This is a perfect example of carrying forward the intent of a tool like a fragment identifier into an alternate display widget.
 
-The component supports deep linking via URL hashes:
+## No squeezing, no scrolling
+
+My early responsive versions estimated whether tabs would fit based on the viewport width and character length, but that’s not reliable. A media query can only tell us so much and it can’t say how long a translated label will become, whether a web font has arrived, or how much room the component’s actual container provided. Container queries can help with that last bit, but only so much.
+
+In this latest incarnation, I’m measuring the fully styled tablist instead. The component builds a hidden measurement copy, applies the current selected state, and checks whether the list can fit on one row inside the component. A `ResizeObserver` checks again when the container changes. Font loading, label changes, padding, borders, gaps, and custom styles all feed into the component’s measurement too.
+
+If the row fits, the component renders tabs. If it doesn’t, the content is displayed in a linear fashion instead. It helpfully records the display mode as either `data-layout="tabs"` or `data-layout="linear"`, should you need a layout-specific style.
+
+There’s no breakpoint to keep in sync with the component. You can resize the browser, adjust the font size, and rotate your device all you want — you’ll never be stuck with a bad layout. The script measures over and over, choosing between the two presentations as the available space changes.
+
+### If you’re dead-set on tabs…
+
+Just because I think it’s a good idea to toggle between the tabbed presentation and the linear one doesn’t mean you feel likewise. We don’t have to agree. You can opt out using the `fixed-tabs` attribute:
 
 ```html
-<a href="#features">Go to Features</a>
-
-<tabbed-interface>
-  <h2 id="intro">Introduction</h2>
-  <p>Intro content.</p>
-
-  <h2 id="features">Features</h2>
-  <p>Feature content.</p>
+<tabbed-interface fixed-tabs>
+  <!-- headings and content -->
 </tabbed-interface>
 ```
 
-Clicking the link activates the matching tab. Users can bookmark specific tabs.
+`fixed-tabs` ensures tabs are always shown if they can be. If you decide to go this way, however, you’re assuming the responsibility for making the tabs work in whatever dimensions someone happens to view your site. Be prepared to handle overflow — you own it. Side scrolling tabs are an abomination in my opinion, but you may feel differently.
 
-## Styling with CSS parts
+## Printable tabs? Hell yeah!
 
-The component uses Shadow DOM, but exposes parts for styling:
+I don’t know about you, but I love it when sites think about the print experience. So few do that when I find a site where the author has clearly put time and effort into their print styles, I get chills. Yeah, I know I’m odd.
 
-```css
-/* Style the tab list container */
-tabbed-interface::part(tablist) {
-  gap: 4px;
-  background: #f0f0f0;
-  padding: 8px;
-}
+Anyway, I hate it when widgets print like garbage, so I set this one up to print better than most: Before the print dialog opens, the component switches to the linear layout so every heading and section appears on paper. Afterward, it measures again and brings back the tabs.
 
-/* Style individual tabs */
-tabbed-interface::part(tab) {
-  padding: 0.75em 1.5em;
-  background: white;
-  border: 1px solid #ccc;
-  border-radius: 4px 4px 0 0;
-}
+No more missing content!
 
-/* Style tab panels */
-tabbed-interface::part(tabpanel) {
-  padding: 2em;
-  border: 1px solid #ccc;
-  background: white;
-}
-```
+## Give it a spin
 
-Target active tabs using attribute selectors:
+I put together a [live demo](https://aarongustafson.github.io/tabbed-interface/demo/) of the component so you can check it out. 
 
-```css
-tabbed-interface::part(tab)[aria-selected="true"] {
-  background: white;
-  border-bottom-color: white;
-  font-weight: bold;
-}
-```
-
-Available parts:
-
-- `tablist` - Container for all tabs
-- `tab` - Individual tab buttons
-- `tabpanel` - Individual tab panel containers
-
-## Events
-
-Listen for tab changes:
-
-```javascript
-document
-  .querySelector("tabbed-interface")
-  .addEventListener("tabbed-interface:change", (e) => {
-    console.log(`Switched to tab ${e.detail.tabIndex}`);
-    console.log("Tab ID:", e.detail.tabId);
-    console.log("Panel ID:", e.detail.tabpanelId);
-  });
-```
-
-## Programmatic control
-
-Control tabs via JavaScript:
-
-```javascript
-const tabs = document.querySelector("tabbed-interface");
-
-// Navigate
-tabs.next();
-tabs.previous();
-tabs.first();
-tabs.last();
-
-// Set active tab directly
-tabs.activeIndex = 2;
-```
-
-Properties are also available:
-
-```javascript
-tabs.activeIndex; // Get current tab index
-tabs.showHeaders = true; // Show/hide headers
-tabs.tablistAfter = true; // Move tabs below content
-tabs.autoActivate = true; // Toggle auto-activation
-```
-
-## Accessibility
-
-The component is built with accessibility as a core feature:
-
-- **ARIA roles**: Proper `role="tablist"`, `role="tab"`, `role="tabpanel"`
-- **ARIA states**: `aria-selected`, `aria-controls`, `aria-labelledby`
-- **Keyboard navigation**: Full arrow key support following ARIA practices
-- **Focus management**: Proper focus indication and movement
-- **Screen reader support**: Descriptive labels and announcements
-
-## Theming examples
-
-**Pill-style tabs:**
-
-```css
-.pills::part(tablist) {
-  gap: 8px;
-  background: transparent;
-}
-
-.pills::part(tab) {
-  border-radius: 20px;
-  background: #e0e0e0;
-}
-
-.pills::part(tab)[aria-selected="true"] {
-  background: #007bff;
-  color: white;
-}
-```
-
-**Minimal style:**
-
-```css
-.minimal::part(tab) {
-  border: none;
-  border-bottom: 2px solid transparent;
-  background: transparent;
-}
-
-.minimal::part(tab)[aria-selected="true"] {
-  border-bottom-color: #007bff;
-}
-```
-
-## Progressive enhancement
-
-If JavaScript fails, users see all the headings and content in a standard document outline. Everything remains accessible and readable. You just lose the tabbed interaction pattern, which is annoying but entirely survivable.
-
-## Demo
-
-Explore [the demo](https://aarongustafson.github.io/tabbed-interface/demo/) with various configurations and styling examples:
-
-<figure id="fig-2025-12-06-06" class="media-container">
+<figure class="media-container">
 <fullscreen-control class="talk__slides__embed video-embed__video">
 <iframe src="https://aarongustafson.github.io/tabbed-interface/demo/" class="talk__slides__embed video-embed__video" frameborder="0"></iframe>
 </fullscreen-control>
 </figure>
 
-## Grab it
+If it seems useful to you, head on over to [the `tabbed-interface` project page](https://github.com/aarongustafson/tabbed-interface) for the installation options.
 
-Check out the project on [GitHub](https://github.com/aarongustafson/tabbed-interface). Install via npm:
-
-```bash
-npm install @aarongustafson/tabbed-interface
-```
-
-Import and use:
-
-```javascript
-import "@aarongustafson/tabbed-interface";
-```
-
-Based on my original [TabInterface](https://github.com/easy-designs/TabInterface.js) and its [jQuery port](https://github.com/easy-designs/jquery.TabInterface.js), now as a modern Custom Element.
+And if you use it on your site, let me know. Hapy tabbing!
