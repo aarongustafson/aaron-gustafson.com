@@ -91,7 +91,7 @@
 		"netlify-plugin-github-dispatch": "github:aarongustafson/netlify-plugin-github-dispatch",
 		"node-fetch": "^3.3.2",
 		"sass": "^1.88.0",
-		"sharp": "^0.35.4",
+		"sharp": "^0.35.5",
 		"through2": "^4.0.2",
 		"uglify-es": "^3.3.9",
 		"widont": "^0.4.0"
