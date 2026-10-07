@@ -59,7 +59,7 @@ async function checkBufferProfiles() {
 		if (organizationId) {
 			const channelData = await makeBufferRequest(
 				accessToken,
-				`query GetChannels($organizationId: ID!) {
+				`query GetChannels($organizationId: OrganizationId!) {
 					channels(input: { organizationId: $organizationId }) {
 						id
 						name
