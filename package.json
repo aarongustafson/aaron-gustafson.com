@@ -6,7 +6,8 @@
 	"type": "module",
 	"scripts": {
 		"test": "node --test \".github/scripts/*.test.js\"",
-		"start": "gulp && concurrently 'gulp watch' 'NODE_OPTIONS=\"--max-old-space-size=8192\" npx @11ty/eleventy --incremental --serve --quiet'",
+		"start": "gulp && concurrently 'gulp watch' 'SKIP_SHARE_CARDS=true NODE_OPTIONS=\"--max-old-space-size=6144\" npx @11ty/eleventy --incremental --serve --quiet'",
+		"start:cards": "gulp && concurrently 'gulp watch' 'NODE_OPTIONS=\"--max-old-space-size=6144\" npx @11ty/eleventy --incremental --serve --quiet'",
 		"netlify:dev": "npx netlify dev",
 		"serve": "cd dist && npx http-server -p 8888 -a 127.0.0.1",
 		"clean": "rm -rf ./dist && mkdir -p ./dist",

@@ -117,49 +117,52 @@ export default async (config) => {
 
   // Share-card generator — registered here so the eleventy.after flush hook
   // has access to eleventyConfig and fires at end of each build.
-  const generateShareCard = createGenerator(
-    {
-      baseImagePath: "./src/_images/share-card.jpg",
-      outputDir: "./src/static/i/share-cards",
-      outputUrlPath: "/i/share-cards",
-      cacheFile: "./_cache/share-cards.json",
-      imageWidth: 1280,
-      imageHeight: 669,
-      verbose: true,
-      layers: [
-        {
-          font: "Source Serif Pro",
-          fontFallback: "serif",
-          fontPath:
-            "node_modules/@fontsource/source-serif-pro/files/source-serif-pro-latin-700-normal.woff2",
-          fontSize: 72,
-          fontWeight: 700,
-          color: "#2C2825",
-          x: 480,
-          y: { from: "bottom", value: 205 },
-          maxWidth: 760,
-          lineSpacing: -18,
-          scaleX: 0.9,
-        },
-        {
-          font: "Open Sans",
-          fontFallback: "sans-serif",
-          fontPath:
-            "node_modules/@fontsource/open-sans/files/open-sans-latin-300-normal.woff2",
-          fontSize: 36,
-          fontWeight: 300,
-          color: "#5b5b5b",
-          x: 480,
-          y: { from: "top", value: 505 },
-          maxWidth: 760,
-          lineSpacing: -5,
-          constrainToWidth: true,
-          actualWidthFactor: 1.15,
-        },
-      ],
-    },
-    config,
-  );
+  const generateShareCard =
+    process.env.SKIP_SHARE_CARDS === "true"
+      ? async () => "/i/share-card.jpg"
+      : createGenerator(
+          {
+            baseImagePath: "./src/_images/share-card.jpg",
+            outputDir: "./src/static/i/share-cards",
+            outputUrlPath: "/i/share-cards",
+            cacheFile: "./_cache/share-cards.json",
+            imageWidth: 1280,
+            imageHeight: 669,
+            verbose: true,
+            layers: [
+              {
+                font: "Source Serif Pro",
+                fontFallback: "serif",
+                fontPath:
+                  "node_modules/@fontsource/source-serif-pro/files/source-serif-pro-latin-700-normal.woff2",
+                fontSize: 72,
+                fontWeight: 700,
+                color: "#2C2825",
+                x: 480,
+                y: { from: "bottom", value: 205 },
+                maxWidth: 760,
+                lineSpacing: -18,
+                scaleX: 0.9,
+              },
+              {
+                font: "Open Sans",
+                fontFallback: "sans-serif",
+                fontPath:
+                  "node_modules/@fontsource/open-sans/files/open-sans-latin-300-normal.woff2",
+                fontSize: 36,
+                fontWeight: 300,
+                color: "#5b5b5b",
+                x: 480,
+                y: { from: "top", value: 505 },
+                maxWidth: 760,
+                lineSpacing: -5,
+                constrainToWidth: true,
+                actualWidthFactor: 1.15,
+              },
+            ],
+          },
+          config,
+        );
   config.addJavaScriptFunction("generateShareCard", generateShareCard);
 
   // Plugins
