@@ -10,19 +10,21 @@ tags:
     "accessibility",
     "tables",
   ]
-description: "The table-sortable web component adds client-side sorting to your tables with keyboard and screen reader support, without asking you to rewrite the markup."
-twitter_text: "Add accessible table sorting without having to rebuild your table markup."
+description: "I rebuilt my old jQuery Easy Sortable Tables plugin as a custom element, keeping the HTML table intact while adding buttons, sort state, and better handling for displayed data."
+twitter_text: "I rebuilt my old jQuery Easy Sortable Tables plugin as a custom element. Here’s how table-sortable 2.0.4 adds useful sorting without replacing the table underneath."
 ---
 
-HTML tables are great for displaying structured data, but they’re static. Users often want to sort that data by different columns so they can find what they’re after a little faster. The `table-sortable` web component adds client-side sorting with full accessibility support, and it does it without asking you to rewrite your existing table markup.
+Many years ago, I made a little jQuery plugin called [Easy Sortable Tables](https://github.com/easy-designs/jquery.easy-sortable-tables.js). It did what the name promised: point it at a table, and a reader could sort the rows by activating a column heading.
+
+I still need that behavior from time to time. I don’t need the jQuery part anymore.
+
+So I revisited the idea as [`@aarongustafson/table-sortable`](https://github.com/aarongustafson/table-sortable), a custom element now at version 2.0.4. The browser has changed quite a bit since I wrote the original plugin, but my starting point hasn’t: the table should be useful before the script does anything to it.
 
 <!-- more -->
 
-This is a modern web component port of my [jQuery Easy Sortable Tables](https://github.com/easy-designs/jquery.easy-sortable-tables.js), bringing progressive enhancement and accessibility to table sorting.
+## The table is already the fallback
 
-## Progressive enhancement
-
-The nice thing about this component is its simplicity. Just wrap your table:
+Here’s the whole setup:
 
 ```html
 <table-sortable>
@@ -55,92 +57,43 @@ The nice thing about this component is its simplicity. Just wrap your table:
 </table-sortable>
 ```
 
-The component automatically creates accessible `<button>` elements inside each column header to trigger the sorting behavior. If you already have links or buttons in your headers, it works with those too.
+If the custom element never loads, the browser ignores the unfamiliar wrapper and renders the table. You can read it, navigate it, copy from it, or print it in the order the server supplied. Sorting is useful, but it isn’t required to recover the data.
 
-Click a column header to sort ascending, click again for descending. The component detects numeric values automatically and sorts them correctly (so 100 comes after 20, not after 1).
+When the element initializes, its script turns each heading’s text into a button. I chose actual buttons because they already participate in the tab order and respond to <kbd>Enter</kbd> and <kbd>Space</kbd>. A click on “Age” sorts the rows by age; the next click reverses them.
 
-## Custom sort keys
+That interaction changes more than the row order. The script updates `aria-sort` on the active `<th>` and writes an announcement such as “Age sorted ascending” to a polite live region. The visible indicator, header state, and announcement all describe the same change. Nothing here is especially exotic, but leaving out any one of those pieces makes the result harder for someone to follow.
 
-Use `data-sort-value` to specify custom values for sorting:
+## What you see isn’t always what you sort
+
+The first version of a sortable table usually behaves beautifully with names and integers. Then real data arrives.
+
+Prices include currency symbols. Dates are written for people rather than parsers. A product name grows a parenthetical note. That doesn’t mean the displayed content should get uglier just to make the comparison easier.
+
+For those cases, I added `data-sort-value`:
 
 ```html
 <tr>
   <td data-sort-value="WIDGET-B">Widget B (Premium)</td>
-  <td>WDG-002</td>
   <td data-sort-value="50">$50.00</td>
-  <td data-sort-value="15">Low (15)</td>
+  <td data-sort-value="2026-10-05">October 5, 2026</td>
 </tr>
 ```
 
-This is useful for:
+The reader still sees a friendly price and date; the script compares `50` and `2026-10-05`. This also gives the author control when the browser’s best guess would be wrong.
 
-- Sorting formatted numbers (currency, percentages)
-- Sorting dates by ISO format while displaying friendly formats
-- Custom sorting logic (e.g., High > Medium > Low priority)
-
-The “Price” and “Stock” columns use numeric values for sorting while displaying formatted text. You get the sort behavior you want without having to show the raw value to anyone.
-
-## Inline sort keys with `data-sort-as`
-
-Use `[data-sort-as]` to mark the visible text fragment that should lead sorting:
+Names presented another small wrinkle. If the cell says “John Smith,” I may want it filed under Smith without maintaining a second, invisible copy of the whole name. Marking the useful fragment with `data-sort-as` handles that:
 
 ```html
 <td>John <span data-sort-as>Smith</span></td>
 ```
 
-This lets you sort by last name while still displaying a natural full name.
+The component puts “Smith” first when it builds the comparison key, then includes the rest of the cell text. The name remains natural to read, and the sorting behavior reflects the choice I made for that table.
 
-If you need a sort token that should not be visible, you can hide a
-`[data-sort-as]` element with CSS:
+## A couple of details that mattered later
 
-```css
-[data-sort-as] {
-  display: none;
-}
-```
+Some tables use multiple rows for one logical item—perhaps a summary followed by details. Giving those rows the same `data-table-sort-group` value keeps them together while the groups move. That feature came from the sort of table that looks simple right up until one row wanders away from the explanation beneath it.
 
-In most cases, though, keeping the sort token visible is preferable because it reduces duplicated content.
-
-## Grouped tables
-
-Use multiple `<tbody>` elements with `data-table-sort-group` to maintain groupings:
-
-```html
-<table-sortable>
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Score</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr data-table-sort-group="engineering">
-        <td>Charlie (Engineering)</td>
-        <td>85</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr data-table-sort-group="design">
-        <td>Alice (Design)</td>
-        <td>92</td>
-      </tr>
-    </tbody>
-    <tbody>
-      <tr data-table-sort-group="sales">
-        <td>Bob (Sales)</td>
-        <td>78</td>
-      </tr>
-    </tbody>
-  </table>
-</table-sortable>
-```
-
-Each group (`tbody`) is sorted independently and maintains its structure. Multiple rows can exist within each group.
-
-## Localization
-
-Customize screen reader announcements with label attributes:
+The text attached to the controls can be localized as well:
 
 ```html
 <table-sortable
@@ -148,139 +101,22 @@ Customize screen reader announcements with label attributes:
   label-ascending="trié croissant. Cliquer pour trier décroissant"
   label-descending="trié décroissant. Cliquer pour trier croissant"
 >
-  <table>
-    <thead>
-      <tr>
-        <th>Nom</th>
-        <th>Âge</th>
-      </tr>
-    </thead>
-    <!-- table content -->
-  </table>
+  <!-- the table -->
 </table-sortable>
 ```
 
-The `label-ascending` and `label-descending` values are prefixed with the column name for context.
+Those strings tell a screen-reader user both what happened and what another activation will do, so they need the same translation care as the visible page.
 
-Available attributes:
-
-- `label-sortable` - Label for unsorted columns (default: “Click to sort”)
-- `label-ascending` - Label when sorted ascending (default: “Sorted ascending. Click to sort descending”)
-- `label-descending` - Label when sorted descending (default: “Sorted descending. Click to sort ascending”)
-
-## Styling
-
-The component uses light DOM, so you can style tables normally. It adds a few `class` values to help with sort indicators:
-
-- `active` - Applied to the currently sorted `<th>`
-- `up` - Applied when sorted ascending
-- `down` - Applied when sorted descending
-- `sorted` - Applied to the corresponding `<col>` element
-
-The component automatically injects `<colgroup>` and `<col>` elements if they don’t exist, allowing column-wide styling.
-
-Customize sort indicators using CSS custom properties:
-
-```css
-table-sortable {
-  --table-sortable-indicator-asc: "▲";
-  --table-sortable-indicator-desc: "▼";
-}
-
-/* Style active column header */
-thead th.active {
-  background-color: #e3f2fd;
-}
-
-/* Highlight sorted column */
-col.sorted {
-  background-color: rgba(0, 102, 204, 0.05);
-}
-```
-
-## Events
-
-If you want to layer in your own functionality on top of the default behavior, you can listen for sort changes:
-
-```javascript
-const element = document.querySelector("table-sortable");
-
-element.addEventListener("table-sortable:sort", (event) => {
-  const { column, direction, header } = event.detail;
-  console.log(
-    `Sorted column ${column} (${header.textContent}) in ${direction}ending order`,
-  );
-});
-```
-
-The event detail includes:
-
-- `column` - Zero-based column index
-- `direction` - “asc” or “desc”
-- `header` - The `<th>` element
-
-## Accessibility features
-
-The component prioritizes accessibility:
-
-1. **Keyboard navigation**: All headers are keyboard accessible
-   - <kbd>Tab</kbd> - Move focus to column headers
-   - <kbd>Enter</kbd> or <kbd>Space</kbd> - Activate sorting
-2. **Screen reader support**: `aria-sort` indicates column sort state (ascending, descending, none)
-3. **Live region**: Announces sort changes using customizable labels
-4. **Progressive enhancement**: Automatically creates accessible buttons when needed and works with existing links/buttons
-5. **Visual indicators**: CSS classes for active columns and sort direction
-6. **Focus indicators**: Proper focus styles for keyboard navigation
-
-## Sorting behavior
-
-Here’s the default approach to sorting:
-
-- **First click**: Sort ascending
-- **Second click**: Sort descending
-- **Text sorting**: Case-insensitive alphabetical
-- **Numeric sorting**: Automatic detection and numeric comparison
-- **Mixed content**: Text values sort before or after numbers depending on direction
-
-The component is smart about numeric detection. Values like “10”, “20”, and “100” sort numerically rather than alphabetically, which is the sort of thing users rarely notice until it is wrong.
-
-## Progressive enhancement, naturally
-
-If JavaScript fails to load, you still have a perfectly functional HTML table. Users can read all the data; they just cannot sort it. Nothing breaks. You just lose the enhancement.
-
-## Demo
-
-Explore [the demo](https://aarongustafson.github.io/table-sortable/demo/) with various examples:
-
-<figure id="fig-2025-12-06-08" class="media-container">
-<fullscreen-control class="talk__slides__embed video-embed__video">
-<iframe src="https://aarongustafson.github.io/table-sortable/demo/" class="talk__slides__embed video-embed__video" frameborder="0"></iframe>
-</fullscreen-control>
-</figure>
-
-## Grab it
-
-Check out the project on [GitHub](https://github.com/aarongustafson/table-sortable). Install via npm:
+You can [try the examples in the live demo](https://aarongustafson.github.io/table-sortable/demo/). To use the component in a project, install and register it:
 
 ```bash
 npm install @aarongustafson/table-sortable
 ```
 
-Use the guarded auto-define helper:
-
 ```javascript
 import "@aarongustafson/table-sortable/define.js";
 ```
 
-Or import the class and define it yourself:
+Zach Leatherman called it [“a very good web component!”](https://fediverse.zachleat.com/@zachleat/117221563504038933), which was awfully nice to hear.
 
-```javascript
-import { TableSortableElement } from "@aarongustafson/table-sortable";
-
-customElements.define("my-custom-name", TableSortableElement);
-```
-
-
-<hr>
-
-Happy sorting!
+The new version does more than my jQuery plugin did, but it still leaves the original table in charge of the data. That’s the part I wanted to keep.

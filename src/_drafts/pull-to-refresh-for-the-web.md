@@ -11,247 +11,94 @@ tags:
     "mobile",
     "user experience",
   ]
-description: "The pull-to-refresh gesture is second nature on mobile apps, but still uncommon on the web. This web component brings it over without too much fuss."
-twitter_text: "Want pull-to-refresh on the web? Here’s a web component that brings it over nicely."
+description: "I wanted to see what it would take to add pull-to-refresh to a web page as an optional touch enhancement, without making the hidden gesture the only way to refresh."
+twitter_text: "I wanted to see what it would take to add pull-to-refresh to a web page as an optional enhancement. The gesture works, but important refreshes still need a visible control."
 ---
 
-Anyone who has used a mobile app is familiar with pull-to-refresh: drag down from the top, let go, and watch the content update. It is such an established pattern that plenty of people try it on web pages anyway, whether we planned for it or not. The `pull-to-refresh` web component brings that interaction to the web, complete with touch optimization, visual feedback, and comprehensive localization.
+I wanted to see what it would take to bring pull-to-refresh to the web.
+
+Not because every website has been quietly waiting to become a mobile feed. The gesture is familiar on touch devices, and I was curious whether I could add it as an optional enhancement without taking over the page. That experiment became [`@aarongustafson/pull-to-refresh`](https://github.com/aarongustafson/pull-to-refresh), now at version 1.1.0.
 
 <!-- more -->
 
-## Basic usage
-
-Wrap your content and listen for the refresh event:
+The basic markup is small:
 
 ```html
 <pull-to-refresh>
-  <div class="content">
-    <h1>My Content</h1>
-    <p>Pull down from the top to refresh!</p>
-  </div>
-</pull-to-refresh>
-
-<script type="module">
-  import "@aarongustafson/pull-to-refresh";
-
-  const ptr = document.querySelector("pull-to-refresh");
-
-  ptr.addEventListener("ptr:refresh", (e) => {
-    // Fetch new data
-    fetch("/api/data")
-      .then((response) => response.json())
-      .then((data) => {
-        updateContent(data);
-        // Signal completion
-        e.detail.complete();
-      });
-  });
-</script>
-```
-
-The component handles the gesture detection, visual feedback, and state management. You fetch your data, update the UI, and call `complete()` when you are done. A reasonable division of labor.
-
-## Customizing the threshold
-
-The default pull distance is 80 pixels. Adjust it with the `threshold` attribute:
-
-```html
-<pull-to-refresh threshold="120">
-  <div>Content here</div>
+  <main>
+    <h1>Latest updates</h1>
+    <div id="updates">
+      <!-- server-rendered updates -->
+    </div>
+  </main>
 </pull-to-refresh>
 ```
 
-Users now need to pull 120 pixels before triggering the refresh. That can cut down on accidental refreshes, which is often a good thing.
+The custom element wraps the part of the page that can be refreshed. Until its script runs—or if it never does—the browser displays the heading and the server-rendered updates normally. There’s no gesture, but there’s also no missing content.
 
-## Custom messages
+Once the component is active, a touch that starts at the top can pull the content downward. The indicator first asks the reader to keep pulling, changes when the threshold has been crossed, then reports that a refresh is underway after release. Its status text is exposed through an assertive live region so the changing state isn’t communicated by movement alone.
 
-Customize the text shown during different states:
-
-```html
-<pull-to-refresh
-  indicator-text="⬇ Swipe down"
-  release-text="🔄 Let go!"
-  refreshing-text="⏳ Loading..."
->
-  <div>Content here</div>
-</pull-to-refresh>
-```
-
-The component shows these messages as users pull, reach the threshold, and while refreshing. Small detail, but it helps the interaction feel a lot less mysterious.
-
-## Preventing text selection
-
-By default, text selection is allowed during pull gestures. Use `disable-selection` to prevent accidental text selection while pulling:
-
-```html
-<pull-to-refresh disable-selection>
-  <div>Content here</div>
-</pull-to-refresh>
-```
-
-This can improve the experience on touch devices, especially if stray text selection has ever ruined your day.
-
-## Built-in localization
-
-The component includes translations for 16 languages. Set the `lang` attribute and messages automatically adapt:
-
-```html
-<!-- Spanish -->
-<pull-to-refresh lang="es">
-  <div>Contenido aquí</div>
-</pull-to-refresh>
-
-<!-- French -->
-<pull-to-refresh lang="fr">
-  <div>Contenu ici</div>
-</pull-to-refresh>
-
-<!-- Japanese -->
-<pull-to-refresh lang="ja">
-  <div>ここにコンテンツ</div>
-</pull-to-refresh>
-```
-
-Language detection follows a cascade: the element’s `lang` attribute, nearest ancestor’s `lang`, document’s `lang`, then defaults to English.
-
-Supported languages include English, Spanish, French, German, Italian, Portuguese, Russian, Japanese, Korean, Chinese (Mandarin), Hindi, Arabic, Bengali, Punjabi, Javanese, and Vietnamese. Regional variants automatically fall back to base languages, which is exactly the sort of boring detail I appreciate.
-
-Register custom translations:
+The component doesn’t know how your site gets new data. Instead, it dispatches `ptr:refresh` and hands the listener a `complete()` function:
 
 ```javascript
-import { PullToRefreshElement } from "@aarongustafson/pull-to-refresh";
+const pullToRefresh = document.querySelector("pull-to-refresh");
 
-PullToRefreshElement.registerTranslations({
-  "pt-BR": {
-    indicator: "↓ Puxe para atualizar",
-    release: "↻ Solte para atualizar",
-    refreshing: "⏳ Atualizando...",
-  },
-});
-```
-
-## Event lifecycle
-
-The component fires events throughout the pull-to-refresh lifecycle:
-
-- `ptr:pull-start` - Pull gesture starts
-- `ptr:pull-move` - During pull (includes distance)
-- `ptr:pull-end` - Pull gesture ends
-- `ptr:refresh` - Refresh triggered (call `complete()` when done)
-- `ptr:refresh-complete` - Refresh completes
-
-```javascript
-ptr.addEventListener("ptr:pull-start", () => {
-  console.log("User started pulling");
-});
-
-ptr.addEventListener("ptr:pull-move", (e) => {
-  console.log("Pull distance:", e.detail.distance);
-});
-
-ptr.addEventListener("ptr:refresh", (e) => {
-  doAsyncWork().then(() => {
-    e.detail.complete(); // Must call this
-  });
-});
-```
-
-**Important:** Always call `event.detail.complete()` in your `ptr:refresh` handler to signal completion. If you do not, the component auto-completes after 2 seconds. Helpful, yes, but still better not to make it guess.
-
-## Styling with CSS custom properties
-
-Customize the indicator appearance:
-
-```css
-pull-to-refresh {
-  --ptr-indicator-height: 3.75rem;
-  --ptr-indicator-bg: #f0f0f0;
-  --ptr-indicator-color: #1976d2;
-  --ptr-indicator-font-size: 1rem;
-  --ptr-transition-duration: 0.3s;
-}
-```
-
-Available properties:
-
-- `--ptr-indicator-height` - Height of indicator area (default: 3.125rem)
-- `--ptr-indicator-bg` - Background color (default: ButtonFace)
-- `--ptr-indicator-color` - Text color (default: ButtonText)
-- `--ptr-indicator-font-size` - Font size (default: 0.875rem)
-- `--ptr-transition-duration` - Transition duration (default: 0.2s)
-
-## Disabling pull-to-refresh
-
-Temporarily disable the functionality:
-
-```html
-<pull-to-refresh disabled>
-  <div>No refresh available</div>
-</pull-to-refresh>
-```
-
-Or toggle programmatically:
-
-```javascript
-ptr.disabled = true;
-```
-
-## Practical example
-
-Here’s a complete example with fetch:
-
-```javascript
-const ptr = document.querySelector("pull-to-refresh");
-
-ptr.addEventListener("ptr:refresh", async (e) => {
+pullToRefresh.addEventListener("ptr:refresh", async (event) => {
   try {
     const response = await fetch("/api/latest");
+
+    if (!response.ok) {
+      throw new Error(`Refresh failed: ${response.status}`);
+    }
+
     const data = await response.json();
-    renderData(data);
+    renderUpdates(data);
   } catch (error) {
-    console.error("Refresh failed:", error);
+    console.error(error);
   } finally {
-    e.detail.complete();
+    event.detail.complete();
   }
 });
 ```
 
-The `finally` block ensures `complete()` is called even if the fetch fails. Your users should not get stuck in refresh limbo because the network had a moment.
+Calling `complete()` retracts the indicator and dispatches `ptr:refresh-complete`. The `finally` block is important. A failed request is still finished; without that call, the interface would sit there claiming to refresh long after the network had given up. The component has a two-second fallback in case a listener forgets, but the code doing the actual work knows when that work ends.
 
-## Accessibility
+## A hidden gesture needs backup
 
-The component includes proper ARIA attributes and screen reader support. The indicator has semantic HTML and announces state changes using the customizable or localized labels.
+Pull-to-refresh has an obvious limitation: there’s no control to see until you start pulling. A keyboard user can’t perform the touch gesture, and someone who hasn’t met the pattern before has little reason to discover it.
 
-## Touch optimization
+If getting fresh data matters, I’d provide a button, too:
 
-The component provides smooth pull gestures with momentum and visual feedback. It handles touch events properly, distinguishing between vertical pulls (refresh) and horizontal swipes (ignore). Which is important, because no one likes a component that gets a little too enthusiastic.
+```html
+<button type="button" id="refresh-updates">Refresh updates</button>
 
-## Progressive enhancement
+<pull-to-refresh>
+  <div id="updates"><!-- updates --></div>
+</pull-to-refresh>
+```
 
-If JavaScript fails to load, the content displays normally. Users just do not get pull-to-refresh functionality. Nothing breaks; you simply lose the enhancement.
+The button and `ptr:refresh` listener can call the same refresh function. The gesture then rewards familiarity without becoming a toll booth for everyone else.
 
-## Demo
+The hidden nature of the interaction also affected a few smaller choices. You can raise or lower the default 80-pixel threshold to suit the content:
 
-Check out [the demo](https://aarongustafson.github.io/pull-to-refresh/demo/) with various configurations:
+```html
+<pull-to-refresh threshold="120">
+  <!-- refreshable content -->
+</pull-to-refresh>
+```
 
-<figure id="fig-2025-12-06-05" class="media-container">
-<fullscreen-control class="talk__slides__embed video-embed__video">
-<iframe src="https://aarongustafson.github.io/pull-to-refresh/demo/" class="talk__slides__embed video-embed__video" frameborder="0"></iframe>
-</fullscreen-control>
-</figure>
+And because the indicator carries the instructions, its text follows the element’s `lang`, the nearest ancestor language, or the document language. Version 1.1.0 includes translations for 16 languages and falls back from regional tags such as `es-MX` to their base language. Individual strings can be overridden when a project uses different wording.
 
-## Grab it
+Those options don’t make the gesture accessible to a keyboard. They make the touch interaction less cryptic for the people who can use it. The visible button still has a different job.
 
-View the project on [GitHub](https://github.com/aarongustafson/pull-to-refresh). Install via npm:
+You can [try the gesture and its different states in the demo](https://aarongustafson.github.io/pull-to-refresh/demo/). Install and register the component with:
 
 ```bash
 npm install @aarongustafson/pull-to-refresh
 ```
 
-Import and use:
-
 ```javascript
-import "@aarongustafson/pull-to-refresh";
+import "@aarongustafson/pull-to-refresh/define.js";
 ```
 
-It is a familiar mobile interaction pattern, adapted for the web without dragging a framework into the room.
+I like pull-to-refresh as a shortcut on the right kind of frequently updated page. I wouldn’t make anyone depend on it.

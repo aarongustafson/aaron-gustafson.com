@@ -4,14 +4,20 @@ ref_source: "Eric Meyer"
 date: 2026-06-17 11:30:00 +00:00
 comments: true
 tags: ["HTML", "CSS", "JavaScript", "web standards", "web components"]
-description: "Eric Meyer digs into Chrome’s flag-gated HTML-in-canvas API with a real use case—saving social media banners as images—and surfaces a fundamental tension between canvas’s fixed-size raster model and the DOM’s fluid, content-driven sizing."
-twitter_text: "Eric Meyer’s hands-on with HTML-in-canvas is the kind of piece only someone who actually tried to ship it could write. The technical frustrations are real; the architectural tension is more interesting."
+description: "Eric Meyer tried HTML-in-canvas on a real banner-making tool and ran straight into the mismatch between a fixed canvas and fluid DOM content."
+twitter_text: "Eric Meyer exercised HTML-in-canvas on a real banner-making tool, hit the tension between fixed canvas dimensions and fluid DOM content, and came away wondering whether the experiment points to a simpler primitive."
 ref_url: https://meyerweb.com/eric/thoughts/2026/04/27/canvas-ing-the-web/
 in_reply_to: https://meyerweb.com/eric/thoughts/2026/04/27/canvas-ing-the-web/
 ---
 
-Eric Meyer took Chrome’s flag-gated HTML-in-canvas API for a real spin—not a toy demo, but a practical tool he built at Igalia for generating social media thumbnails—and wrote up everything that bit him along the way. The `moveBefore()` trick to avoid blowing the call stack when inserting a custom element into a canvas is exactly the kind of hard-won detail you only get from someone who actually shipped the thing.
+I’m glad [Eric Meyer tried HTML-in-canvas on an actual problem](https://meyerweb.com/eric/thoughts/2026/04/27/canvas-ing-the-web/), rather than stopping at a clever demo. He wanted coworkers to click a button in his browser-based banner tool and download a thumbnail. In getting there, he had to move a live custom element into a canvas without kicking off its lifecycle again, then make the canvas match content whose scale could change.
 
-The implementation snags are interesting, but what I keep coming back to is the underlying tension Eric identifies: canvases want fixed dimensions; the DOM wants to grow and shrink with content. HTML-in-canvas is rasterizing something inherently fluid into something inherently bounded, sixty frames per second. For Eric’s use case—capturing a mostly-static banner as a PNG—that tradeoff is manageable. For general-purpose UI? Less so.
+That second snag exposed the interesting bit:
 
-His closing musing is the part worth sitting with: maybe what we actually need isn’t HTML-in-canvas, but a CSS property or HTML attribute that marks standard elements as more visually manipulable. We’ve reached for that before (Houdini, old IE filters), never quite landed it. HTML-in-canvas might be the path that teaches us what that simpler primitive should look like—by showing us, painfully, what it needs to make possible.
+<blockquote cite="https://meyerweb.com/eric/thoughts/2026/04/27/canvas-ing-the-web/">
+
+> Canvases do not, as a rule, grow or shrink to fit their contents.  DOM elements, as a rule, very much do, unless you force them not to.  HTML-in-canvas is taking a very fluid, flexible, mostly unbounded layout paradigm and rasterizing it, or at least some of it, into a very bounded window of a given size.
+
+</blockquote>
+
+For Eric’s thumbnail, a bounded image is the goal, so the experiment works. I’m more intrigued by where he ends up: perhaps exercising HTML-in-canvas will show us which visual capabilities belong in a simpler HTML, CSS, or DOM primitive. The rough edges are doing useful work here.

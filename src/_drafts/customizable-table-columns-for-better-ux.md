@@ -11,48 +11,21 @@ tags:
     "accessibility",
     "user experience",
   ]
-description: "The table-modifiable web component lets users hide and show table columns using the Popover API, making wide data tables a lot easier to live with."
-twitter_text: "Let users choose which table columns they actually want to see."
+description: "After running into one 15-column table after another, I built a custom element that lets readers choose which columns to show without removing anything from the source table."
+twitter_text: "I kept running into 15-column tables that were miserable to scan on smaller screens, so I built table-modifiable to let readers choose which columns they need."
 ---
 
-Data tables are powerful, but they can get unwieldy fast, especially when you’ve got a dozen columns all trying to elbow one another off the screen. The `table-modifiable` web component gives users control over which columns they see, using the native Popover API to create a clean, accessible column selector.
+I kept running into data tables with 15 columns. Sometimes more.
+
+Even on a roomy screen, finding the two values you need in a row like that can feel like tracking a tennis ball from the cheap seats. On a smaller screen, the usual response is to hide whichever columns the development team considers less important. That never sat well with me. We know how much room the layout has; we don’t necessarily know which bit of information the person at the other end needs today.
+
+I built [`@aarongustafson/table-modifiable`](https://github.com/aarongustafson/table-modifiable) to try a different arrangement: authors provide a sensible starting view, and readers can change it.
 
 <!-- more -->
 
-This is not just about responsive tables that hide columns on mobile, though it certainly helps there too. It is about giving users agency. Maybe they only care about product names and prices, not stock levels or suppliers. Let them choose.
+## Keep the whole table in the HTML
 
-## Simplest usage
-
-Specify which columns can be toggled:
-
-```html
-<table-modifiable removable="Name,Email,Phone">
-  <table>
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Phone</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>John Doe</td>
-        <td>john@example.com</td>
-        <td>555-1234</td>
-      </tr>
-    </tbody>
-  </table>
-</table-modifiable>
-```
-
-This creates a “Modify Table” button above your table. Click it and you get a popover with checkboxes for each column. Uncheck a column and it disappears from the table; check it again and it reappears. Nice and straightforward.
-
-All columns listed in `removable` are shown by default. The component won’t let users hide every column—at least one must remain visible.
-
-## Control initial visibility
-
-Start with some columns hidden:
+The source contains every column:
 
 ```html
 <table-modifiable
@@ -82,158 +55,49 @@ Start with some columns hidden:
 </table-modifiable>
 ```
 
-The `start-with` attribute specifies which columns appear on page load. In this example, Stock, Category, and Supplier are hidden initially but users can show them via the popover.
+`removable` names the columns the reader is allowed to toggle. `start-with` says which of those the component should show initially. In this example, Product and Price make up the compact view; Stock, Category, and Supplier are one control away.
 
-This is especially handy for mobile-first responsive design: start with the essentials, then let users opt into more detail when they want it.
+The names have to match the trimmed text in the first header row. It’s a deliberately small API, although it does mean changing “Supplier” to “Vendor” requires changing the attribute as well.
 
-## Custom button labels
+If the script doesn’t run, the browser ignores `start-with` and shows the full table. That fallback matters here. Hiding columns in the source—or with CSS that has no corresponding control—would leave some readers with less information and no way to ask for it.
 
-Tailor the interface to your content:
+## Let the browser build the interaction
 
-```html
-<table-modifiable
-  removable="Name,Email,Phone,Address"
-  button-label="⚙️ Customize View"
-  button-aria-label="Customize which columns are visible in the table"
-  tools-label="Choose Columns to Display"
->
-  <table>
-    <!-- table content -->
-  </table>
-</table-modifiable>
-```
+When the custom element initializes, its script adds a “Modify Table” button before the table. The button targets a native popover containing labeled checkboxes, one for each removable column. Uncheck Supplier and the script hides that header and the cells beneath it; check Supplier again and they return.
 
-The `button-label` sets the visible button text (default: “Modify Table”), `button-aria-label` provides a more descriptive announcement for screen readers (defaults to matching `button-label`), and `tools-label` changes the heading inside the popover (default: “Show/Hide Columns”).
+I used a button, checkboxes, and the [Popover API](https://developer.mozilla.org/en-US/docs/Web/API/Popover_API) because those controls already have the behavior this little interface needs. The popover can sit in the browser’s top layer, dismiss when someone clicks elsewhere, and close with <kbd>Escape</kbd>. The checkboxes expose which columns are currently visible. There was no upside in re-creating all of that with clickable `<div>` elements and optimism.
 
-Use this to match your site’s voice or just make the control a little clearer about what it actually does.
+The component also prevents the last visible removable column from being unchecked. A table with no columns would be a faithful response to the controls, technically, but not a particularly useful one.
 
-## Listen to changes
+Authors still have to choose `start-with` carefully. I’d base it on the most common task and the available space, not on which headings happen to produce the tidiest screenshot. The checkboxes are there because someone else’s task may differ.
 
-Track which columns users hide or show:
+## There is a boundary
+
+Version 1.1.0 supports simple tables: one header row, body cells that line up with those headers, and no `colspan` or `rowspan`.
+
+That’s an implementation constraint. The script hides cells by column index. Once a cell spans two columns—or a header describes a more complex relationship—“hide column four” stops being a single, reliable operation. The component isn’t designed for those tables; supporting them would require a more complete model of the table’s structure.
+
+For simple tables, the component dispatches `table-modifiable:change` whenever a checkbox changes:
 
 ```javascript
 const table = document.querySelector("table-modifiable");
 
 table.addEventListener("table-modifiable:change", (event) => {
-  console.log(
-    `Column "${event.detail.column}" is now ${event.detail.visible ? "visible" : "hidden"}`,
-  );
+  const { column, visible } = event.detail;
+  saveColumnPreference(column, visible);
 });
 ```
 
-The `table-modifiable:change` event fires whenever a column’s visibility changes. The event detail includes:
+That gives the surrounding application a place to save someone’s choices if persistence makes sense. I left storage out of the component itself; a one-time comparison table and a dashboard someone uses every morning don’t need the same memory.
 
-- `column`: The column name (matches the text in the `<th>`)
-- `visible`: Boolean indicating whether the column is now shown or hidden
-
-You can use this to save user preferences to localStorage, update analytics, or sync state across multiple tables. Or ignore all that and just let people hide columns in peace.
-
-## How it works
-
-The component:
-
-1. Reads your `removable` attribute to know which columns can be toggled
-2. Creates a button that triggers a native popover
-3. Generates checkboxes for each removable column
-4. Caches column indices for performance
-5. Toggles `display: none` on header and body cells when checkboxes change
-6. Prevents unchecking the last visible column
-
-It uses light DOM, so your table remains in the regular DOM tree and participates normally in forms and CSS. The column names in your `removable` attribute must match the text content of your `<th>` elements exactly (whitespace trimmed).
-
-## Simple tables only
-
-This component works with straightforward tables: one header row, matching body cells. It does not support `colspan` or `rowspan` because tracking column indices across merged cells gets messy fast. Keep it simple and the component will happily do its thing.
-
-## Style the popover
-
-The component uses the native Popover API and generates elements with specific classes, making them easy to style:
-
-```css
-/* Style the toggle button */
-.modification-tools-toggle {
-  background: #0969da;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-/* Style the popover */
-.modification-tools {
-  background: white;
-  color: #333;
-  padding: 1rem;
-  border-radius: 6px;
-  border: 1px solid #d0d7de;
-  box-shadow: 0 8px 24px rgba(140, 149, 159, 0.2);
-  min-width: 250px;
-}
-
-/* Style the checkboxes */
-.modification-tools label {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.modification-tools label:hover {
-  background: #f6f8fa;
-  border-radius: 3px;
-}
-```
-
-You can also use CSS custom properties for theming:
-
-```css
-:root {
-  --table-modifiable-tool-bg: #f5f5f5;
-  --table-modifiable-tool-color: #222;
-}
-```
-
-## Installation
-
-Install via npm:
+The [demo](https://aarongustafson.github.io/table-modifiable/demo/) shows a few starting views and column sets. To use the component:
 
 ```bash
 npm install @aarongustafson/table-modifiable
 ```
 
-Import it in your JavaScript:
-
 ```javascript
-import "@aarongustafson/table-modifiable";
+import "@aarongustafson/table-modifiable/define.js";
 ```
 
-Or load from a CDN:
-
-```html
-<script type="module">
-  import { defineTableModifiable } from "https://unpkg.com/@aarongustafson/table-modifiable@latest/define.js?module";
-  defineTableModifiable();
-</script>
-```
-
-## Browser support
-
-The component requires:
-
-- Custom Elements v1
-- ES Modules
-- Popover API (currently in modern browsers)
-
-For older browsers or those without Popover API support, you’ll need polyfills. The component does graceful degradation—if it can’t initialize, users just see the regular table.
-
-## Why I built this
-
-I kept running into data tables with 15+ columns that were nearly impossible to scan, especially on smaller screens. Hiding columns on mobile helps, but why should the developer decide which columns matter most to users? Different people care about different data.
-
-This component lets users make that choice themselves. Show what matters to you, hide what doesn’t. It’s a small UX improvement that makes data tables significantly more pleasant to use.
-
-The Popover API was perfect for this: no z-index battles, automatic focus management, and built-in dismissal behavior. It is refreshingly civilized.
-
-Check out the [live demo](https://aarongustafson.github.io/table-modifiable/demo/) to see it in action, or grab the source from [GitHub](https://github.com/aarongustafson/table-modifiable).
+I’m still choosing a default when I add `start-with`. The difference is that the reader can correct me.
