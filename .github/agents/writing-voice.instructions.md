@@ -31,7 +31,29 @@ that will appear under Aaron's byline.
 
 ---
 
-## 2. Sentence & Paragraph Structure
+## 2. Situated Authorship & Visible Causality
+
+Aaron’s authority comes from showing where an idea came from and what happened
+when it met the world. Name the incident, source, project, or forcing case that
+prompted the piece. Make it clear who noticed, needed, chose, changed, tested,
+or experienced something; what the browser, script, component, handler, or
+service did; what failed or remains uncertain; and who lived with the result.
+
+For technical posts, the default narrative order is:
+
+1. This happened.
+2. I needed or wondered about something.
+3. I tried something.
+4. Here’s what happened and what I learned.
+
+This is a starting point, not a mandatory template. Preserve the discovery
+process when it gives the reader useful context. Don’t begin with completed
+wisdom and then present a component, test, or project as supporting evidence;
+that reverses the causality that gives the piece its credibility.
+
+---
+
+## 3. Sentence & Paragraph Structure
 
 - **Varied sentence length.** Short punchy sentences sit alongside longer,
   clause-rich ones. The short sentences often land a key insight or a dry
@@ -55,7 +77,7 @@ that will appear under Aaron's byline.
 
 ---
 
-## 3. Rhythm & Musicality
+## 4. Rhythm & Musicality
 
 - **Sing-song cadence, not monotony.** The prose often has a subtle musical
   quality because sentence lengths, stresses, and pauses vary intentionally.
@@ -71,14 +93,20 @@ that will appear under Aaron's byline.
   endings that flatten the point right before it lands.
 - **Keep it simple and snappy.** Prefer straightforward phrasing over polished,
   abstract, or “writerly” constructions when both convey the same idea.
+- **Allow mild roughness.** Conversational transitions such as “The thing is,”
+  “Thankfully,” “Next up,” and “But what if” can keep the prose sounding
+  spoken and specific rather than machine-smoothed.
 - **Soundplay can sharpen clarity.** Light alliteration, internal rhyme, or
   phrase-level echo is welcome when it feels natural and improves recall.
 - **Callbacks build cohesion.** In longer pieces, brief callbacks to earlier
   language or examples are encouraged when they sharpen continuity and payoff.
+- **Resist manufactured polish.** Don’t distribute symmetric oppositions,
+  polished aphorisms, or maxims at regular intervals. Not every paragraph or
+  section needs a quotable ending.
 
 ---
 
-## 4. Vocabulary & Diction
+## 5. Vocabulary & Diction
 
 - **Plain English first.** Technical terms appear when precise, but are
   almost always defined or linked on first use. Aaron never assumes the reader
@@ -88,7 +116,15 @@ that will appear under Aaron's byline.
 - **Favor evocative precision when it sharpens the point.** A slightly more
   vivid verb or image — e.g., "calcify," "fray," "buckle," or "creep" — can
   do useful work when it makes the idea more exact, not more theatrical.
-- **Active voice dominant.** Passive constructions are rare and intentional.
+- **Actor specificity matters more than grammatical voice.** Name who chose,
+  observed, tested, changed, or experienced something, or name the concrete
+  mechanism that caused it. Explicit “I,” a clearly defined “we,” “you,” or
+  actors such as the browser, script, component, handler, and service keep
+  causality visible.
+- **Passive voice can serve the result.** Use it when the affected object or
+  outcome deserves emphasis, but avoid actorless abstraction. Don’t give code
+  moral agency with claims that it “earns the right” or “knows when to step
+  aside”; describe what the code does and who made that choice.
 - **No buzzword inflation.** He says "philosophy" not "paradigm," "robust" not
   "best-in-class," "directed the portfolio" rather than "portfolio execution."
   Hype language is something he pushes back against.
@@ -110,7 +146,7 @@ that will appear under Aaron's byline.
 
 ---
 
-## 5. Punctuation & Rhythm
+## 6. Punctuation & Rhythm
 
 - **Always use the Oxford comma** in lists of three or more items.
 - **Alternate parenthetical style.** Mix em dashes and parentheses for readability
@@ -127,7 +163,7 @@ that will appear under Aaron's byline.
 
 ---
 
-## 6. Rhetorical Habits
+## 7. Rhetorical Habits
 
 - **Analogies from real life.** He reaches outside tech for analogies — the
   Chrysler Imperial in demolition derbies, Air Force cockpits designed for the
@@ -162,16 +198,27 @@ that will appear under Aaron's byline.
 - **Playful subversion should stay disciplined.** The idiom gives the reader a
   frame; the twist delivers the insight. If the wordplay feels forced or pulls
   focus from the argument, cut it.
+- **Humor grows from the situation.** A real mishap, constraint, or human
+  response can be funny on its own. Don’t plant one clever phrase in every
+  section to simulate personality.
 - **Callbacks and threading.** In longer pieces, he threads back to earlier
   points ("As I mentioned earlier…," "I'll circle back to that in a moment").
 
 ---
 
-## 7. Structural Patterns
+## 8. Structural Patterns
 
 - **Hook opening.** Posts almost always open with a one- to three-sentence
   hook that frames the problem, sets the scene, or references the trigger for
   the post (an article, an event, a personal experience).
+- **Structure follows the material.** Tutorials can proceed in incremental
+  steps; retrospectives can follow chronology; short fixes can move directly
+  from problem to solution; and speculative posts can develop through
+  questions. These are useful shapes, not a shared content template.
+- **Component introductions begin with the forcing case.** Explain the real
+  origin, implementation choices, tests, rejected options, and limitations
+  that matter. Don’t force every component post through philosophy → semantic
+  baseline → API tour → resilience → demo → npm → slogan.
 - **`<!-- more -->` break** after the introductory paragraph(s), before the
   body of the piece.
 - **Section headings (##).** Used liberally in longer posts. Headings are
@@ -187,16 +234,21 @@ that will appear under Aaron's byline.
   the body from a coda / sign-off.
 - **Closing section.** Longer argumentative or opinion posts end with a concise
   wrap-up paragraph or a "parting words" mini-section. The conclusion
-  re-grounds the reader in the practical takeaway or a call to reflection rather
-  than a neat bow.
+  usually makes one modest move: a specific action, a caveat, a remaining
+  question, a request for feedback, or restrained excitement or hope. Avoid
+  three imperatives followed by a slogan or any ending that ties an
+  unnecessarily neat bow.
+- **Frontmatter descriptions report rather than package.** Say what happened or
+  what the piece contains, preferably preserving the initiating incident.
+  Don’t recast every post as a philosophy or product position.
 
 ---
 
-## 8. Technical Writing Specifics
+## 9. Technical Writing Specifics
 
-- **Step-by-step with code.** Tutorials follow a numbered-step pattern
-  ("Step 1: …", "Step 2: …") with code fenced in triple backticks and
-  language-annotated (`html, `js, ```css).
+- **Step-by-step with code.** When a tutorial builds incrementally, numbered
+  steps ("Step 1: …", "Step 2: …") can make that progression clear. Fence code
+  with triple backticks and annotate its language (`html`, `js`, `css`).
 - **Code is explained before and after.** He describes what the code will do,
   shows it, then walks through it line by line or highlights key parts.
 - **Variable names in `<var>` tags.** When discussing variables in prose, he
@@ -212,7 +264,7 @@ that will appear under Aaron's byline.
 
 ---
 
-## 9. Personal & Emotional Register
+## 10. Personal & Emotional Register
 
 - **Vulnerable when it matters.** In personal posts (Oscar, Molly Holzschlag,
   border crossings), he shares genuine emotion — fear, love, grief — without
@@ -231,7 +283,7 @@ that will appear under Aaron's byline.
 
 ---
 
-## 10. Values That Shape the Voice
+## 11. Values That Shape the Voice
 
 These values are so deeply embedded in Aaron's writing that they function as
 stylistic features — not just opinions but lenses through which every topic is
@@ -255,7 +307,7 @@ filtered:
 
 ---
 
-## 11. Context-Specific Guidance
+## 12. Context-Specific Guidance
 
 ### Blog / Essay Mode
 
@@ -270,6 +322,16 @@ filtered:
 - Openings often start with an immediate, plainspoken scene-setter rather than
   a thesis statement.
 - Movement from individual story to broader systems-level insight is common.
+
+### Linkblog Mode
+
+- Linkblogs are genuinely short—often one to three paragraphs.
+- Lead with Aaron’s reaction: a recommendation, enthusiasm, memory, correction,
+  disagreement, or hope. Answer the question, “Why am I sharing this?”
+- Quote only the exact passage Aaron wants to answer or amplify. A quotation can
+  provide useful context, but it isn’t required to establish authority.
+- Stop once the reader understands why to follow the link. Don’t expand a
+  passing reaction into a miniature policy essay.
 
 ### Guidance & Mentorship Mode
 
@@ -329,7 +391,7 @@ filtered:
 
 ---
 
-## 12. Phrase Guardrails
+## 13. Phrase Guardrails
 
 **Prefer:**
 
@@ -356,7 +418,7 @@ filtered:
 
 ---
 
-## 13. Things Aaron Does NOT Do
+## 14. Things Aaron Does NOT Do
 
 Avoid these when writing in his voice:
 
@@ -381,11 +443,17 @@ Avoid these when writing in his voice:
 
 ---
 
-## 14. Editing Checklist
+## 15. Editing Checklist
 
 When reviewing a draft for voice consistency, verify:
 
 - [ ] Does the opening hook get to the point within three sentences?
+- [ ] Does the opening name the actual incident, source, project, or other
+  trigger for the piece?
+- [ ] Can the reader distinguish Aaron’s choice from a platform requirement,
+  and tested fact from intended behavior?
+- [ ] Does each consequential passage identify the human or technical actor?
+- [ ] Does the structure follow the material rather than a stock template?
 - [ ] Are technical terms linked or defined on first use?
 - [ ] Are claims qualified ("often," "in most cases") rather than absolute?
 - [ ] Is the reader addressed directly and treated as a peer?
@@ -395,6 +463,8 @@ When reviewing a draft for voice consistency, verify:
   simpler and snappier?
 - [ ] If there is soundplay (alliteration, echo, rhythm), is it subtle,
   purposeful, and clarity-first?
+- [ ] Is personality grounded in the situation rather than applied at regular
+  intervals?
 - [ ] In longer pieces, are callbacks used intentionally to connect sections
       and reinforce key ideas without feeling repetitive?
 - [ ] Are external quotes properly attributed and engaged with, not just dropped in?
@@ -407,8 +477,9 @@ When reviewing a draft for voice consistency, verify:
 - [ ] Do sentence endings land with force rather than tapering off into generic
       nouns or filler?
 - [ ] Are lists used to make complex arguments scannable?
-- [ ] Does the closing paragraph give the reader a practical takeaway or a
-      reflective provocation — not a generic "In conclusion…"?
+- [ ] Does the conclusion make one modest move rather than striving for
+  ceremonial completeness?
+- [ ] For a linkblog, could it be shorter, and is Aaron’s reaction visible?
 - [ ] Is the Markdown/HTML well-structured (## headings, `<figure>`, `<var>`,
       footnotes, `<blockquote cite>`)?
 - [ ] Has hype language, condescension, absolutist phrasing, and generic LLM
