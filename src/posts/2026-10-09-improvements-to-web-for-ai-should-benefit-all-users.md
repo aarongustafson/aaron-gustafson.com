@@ -1,6 +1,6 @@
 ---
 title: "Improvements to the Web for AI Should Benefit All Users"
-date: 2026-06-17 10:00:00 +00:00
+date: 2026-10-09 16:44:38 +00:00
 comments: true
 tags: ["accessibility", "AI/ML", "web standards", "ARIA"]
 description: "Apple’s WebKit team opposed a separate semantic layer for AI agents, echoing concerns I’d raised when I first learned about WebMCP."
