@@ -1,10 +1,11 @@
 ---
-title: "Improvements to the Web for AI Should Benefit All Users"
+title: "WebMCP Should Prioritize People over Agents"
 date: 2026-10-09 16:44:38 +00:00
 comments: true
 tags: ["accessibility", "AI/ML", "web standards", "ARIA"]
 description: "Apple’s WebKit team opposed a separate semantic layer for AI agents, echoing concerns I’d raised when I first learned about WebMCP."
 twitter_text: "If we improve the web for AI agents, we should begin with the semantics authors already provide for people—not create a parallel layer that can leave them behind."
+redirect_from: /notebook/improvements-to-web-for-ai-should-benefit-all-users/
 in_reply_to: https://github.com/WebKit/standards-positions/issues/670#issuecomment-4608432694
 via:
   name: "Jason Grigsby"
