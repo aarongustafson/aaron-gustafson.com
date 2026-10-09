@@ -1,5 +1,19 @@
 [
   {
+    "id": 167,
+    "title": "Microsoft Ignite",
+    "date": "2026-11-17 00:09:00 +0000",
+    "location": "San Francisco, CA USA",
+    "url": "https://ignite.microsoft.com/"
+  },
+  {
+    "id": 166,
+    "title": "Convergence Summit",
+    "date": "2026-10-28 00:09:00 +0000",
+    "location": "Seattle, WA USA",
+    "url": "https://luma.com/syfcw48i"
+  },
+  {
     "id": 165,
     "title": "Microsoft Build",
     "date": "2026-06-02 00:09:00 +0000",
