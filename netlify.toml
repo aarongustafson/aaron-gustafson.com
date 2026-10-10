@@ -1,5 +1,5 @@
 [build]
-command = "npm run build"
+command = "npm run clean && npm run build"
 publish = "dist"
 functions = ".netlify/functions"
 edge_functions = ".netlify/edge-functions"

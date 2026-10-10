@@ -7,6 +7,6 @@ eleventyExcludeFromCollections: true
 /img/:width/*  /.netlify/images?url=/:splat&width=:width  200!
 
 {% for page in collections.all %}
-{% if page.url and page.data.redirect_from %}{{ page.data.redirect_from }}		{{ page.url }}
+{% if page.url and page.data.redirect_from %}{{ page.data.redirect_from }}		{{ page.url }}		301!
 {% endif %}
 {% endfor %}
