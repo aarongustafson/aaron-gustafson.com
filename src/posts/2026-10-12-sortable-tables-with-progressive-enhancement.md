@@ -1,6 +1,6 @@
 ---
 title: "Sortable Tables with Progressive Enhancement"
-date: 2025-12-06 10:00:00 -07:00
+date: 2026-10-12 19:50:32 +00:00
 comments: true
 tags:
   [
