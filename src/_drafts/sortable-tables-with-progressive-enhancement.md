@@ -14,17 +14,15 @@ description: "I rebuilt my old jQuery Easy Sortable Tables plugin as a custom el
 twitter_text: "I rebuilt my old jQuery Easy Sortable Tables plugin as a custom element. Here’s how table-sortable 2.0.4 adds useful sorting without replacing the table underneath."
 ---
 
-Many years ago, I made a little jQuery plugin called [Easy Sortable Tables](https://github.com/easy-designs/jquery.easy-sortable-tables.js). It did what the name promised: point it at a table, and a reader could sort the rows by activating a column heading.
+Many years ago, I made a little jQuery plugin called [Easy Sortable Tables](https://github.com/easy-designs/jquery.easy-sortable-tables.js). It works exactly as promised: point it at a table and it upgrades the UI so a reader can sort the rows by clicking a column heading. The functionality is still useful, but I can’t even remember the last time I added jQuery to a site.
 
-I still need that behavior from time to time. I don’t need the jQuery part anymore.
-
-So I revisited the idea as [`@aarongustafson/table-sortable`](https://github.com/aarongustafson/table-sortable), a custom element now at version 2.0.4. The browser has changed quite a bit since I wrote the original plugin, but my starting point hasn’t: the table should be useful before the script does anything to it.
+The web platform’s changed quite a bit since I wrote that plugin, so I decided to modernize it as a web component: [`<table-sortable>`](https://github.com/aarongustafson/table-sortable).
 
 <!-- more -->
 
-## The table is already the fallback
+## It all starts with a table
 
-Here’s the whole setup:
+Just like the original, this web component upgrades a real table when you wrap it:
 
 ```html
 <table-sortable>
@@ -57,19 +55,17 @@ Here’s the whole setup:
 </table-sortable>
 ```
 
-If the custom element never loads, the browser ignores the unfamiliar wrapper and renders the table. You can read it, navigate it, copy from it, or print it in the order the server supplied. Sorting is useful, but it isn’t required to recover the data.
+If the custom element never loads, the browser rightfully ignores the custom element—thanks to the fault tolerant nature of HTML—and renders the `<table>`. People can read it, navigate it, copy from it, or print it in the order it’s written.
 
-When the element initializes, its script turns each heading’s text into a button. I chose actual buttons because they already participate in the tab order and respond to <kbd>Enter</kbd> and <kbd>Space</kbd>. A click on “Age” sorts the rows by age; the next click reverses them.
+When the element initializes, it turns each table header’s text into a button. I chose actual `<button>` elements over `<div>`s because they naturally participate in the tab order and respond to <kbd>Enter</kbd> and <kbd>Space</kbd>. A click on “Age” sorts the rows by age; the next click reverses them.
 
-That interaction changes more than the row order. The script updates `aria-sort` on the active `<th>` and writes an announcement such as “Age sorted ascending” to a polite live region. The visible indicator, header state, and announcement all describe the same change. Nothing here is especially exotic, but leaving out any one of those pieces makes the result harder for someone to follow.
+That interaction changes more than the row order. The script updates `aria-sort` on the active `<th>` and politely announces “Age sorted ascending” via a live region. The visible indicator, header state, and announcement all describe the same change, making it easier for everyone to follow.
 
-## What you see isn’t always what you sort
+## What you see isn’t always what to sort
 
-The first version of a sortable table usually behaves beautifully with names and integers. Then real data arrives.
+If your table contains just strings and numbers, that’s all you reallty need. If, however, your table contains things like people’s names, prices, and dates, you’re probably going to want to customize the way the data sorts.
 
-Prices include currency symbols. Dates are written for people rather than parsers. A product name grows a parenthetical note. That doesn’t mean the displayed content should get uglier just to make the comparison easier.
-
-For those cases, I added `data-sort-value`:
+You can customize the way a value sorts by using `data-sort-value`:
 
 ```html
 <tr>
@@ -79,21 +75,38 @@ For those cases, I added `data-sort-value`:
 </tr>
 ```
 
-The reader still sees a friendly price and date; the script compares `50` and `2026-10-05`. This also gives the author control when the browser’s best guess would be wrong.
+Readers see a human-friendly value, the sorting logic sees a computer-friendly one. 
 
-Names presented another small wrinkle. If the cell says “John Smith,” I may want it filed under Smith without maintaining a second, invisible copy of the whole name. Marking the useful fragment with `data-sort-as` handles that:
+If you want to sort by only a portion of the value, this component supports that too. For example, if you want to sort a name like “John Smith” by "Smith" you can indicate that via `data-sort-as`:
 
 ```html
 <td>John <span data-sort-as>Smith</span></td>
 ```
 
-The component puts “Smith” first when it builds the comparison key, then includes the rest of the cell text. The name remains natural to read, and the sorting behavior reflects the choice I made for that table.
+With this in place, the component will put “Smith” first, before the rest of the cell’s value. This allows users to read the name naturally while the sorting behavior implements the more typical last-name-first sort.
 
-## A couple of details that mattered later
+## Stay with your group!
 
-Some tables use multiple rows for one logical item—perhaps a summary followed by details. Giving those rows the same `data-table-sort-group` value keeps them together while the groups move. That feature came from the sort of table that looks simple right up until one row wanders away from the explanation beneath it.
+If you’re working with a particularly complex table, you might want to sort rows together based on a chared characteristic (such as people within a department). You can do that using `data-table-sort-group`. This attribute can be placed on a `<tbody>`  value to maintain its rows as a group while sorting them individually. 
 
-The text attached to the controls can be localized as well:
+You can also apply `data-table-sort-group` to individual `<tr>` elements and they will move as a group, regardless of whether they sit inside the same `<tbody>`. If you happen to use both, the `data-table-sort-group` applied to the `<tr>` takes precendence.
+
+## Accessible by default
+
+Accessibility isn’t a nice-to-have, it a core principal of all of my work. And so it is with this web component. Here are a few of the accessibility features of this component:
+
+- True `<button>` elements that receive focus and work with any input method
+- The UI state is represented via ARIA, and
+- All authored `<table>` semantics are retained throughout the lifecycle of the component
+- Changes to the `<table>` are announced using `ariaNotify()`, with a fallback to an injected live region.
+
+I also took care to ensure the component is accessible to end users, regardless of what language(s) they happen to speak.
+
+## <i lang="es" aria-label="What direction are you going?">¿En qué dirrección vas?</i>
+
+Since I primarily speak English, this web component’s accessible labels and notifications default to English, but adapting it to another language (or overriding my default phrasing) is straightforward using a few properties. Here’s an example <i lang="fr" aria-label="in French">en Fraçais</i>:
+
+<div lang="fr">
 
 ```html
 <table-sortable
@@ -105,18 +118,30 @@ The text attached to the controls can be localized as well:
 </table-sortable>
 ```
 
-Those strings tell a screen-reader user both what happened and what another activation will do, so they need the same translation care as the visible page.
+</div>
 
-You can [try the examples in the live demo](https://aarongustafson.github.io/table-sortable/demo/). To use the component in a project, install and register it:
+## Sort with style
 
-```bash
-npm install @aarongustafson/table-sortable
-```
+I also want to note that `<table-sortable>` gives designers a remarkable amount of control over the styles of the table. The following selectors are available to style the individual pieces:
 
-```javascript
-import "@aarongustafson/table-sortable/define.js";
-```
+- `th[aria-sort="none"]` - column header in the unsorted state
+- `th[aria-sort="ascending"]` - column header in the ascending sort state
+- `th[aria-sort="descending"]` - column header in the descending sort state
+- `th[aria-sort] > button` - the button used to handle sorting
+- `col.sorted` - the currently sorted column
 
-Zach Leatherman called it [“a very good web component!”](https://fediverse.zachleat.com/@zachleat/117221563504038933), which was awfully nice to hear.
+You’ll see these put to good use in the demo, below.
 
-The new version does more than my jQuery plugin did, but it still leaves the original table in charge of the data. That’s the part I wanted to keep.
+## Get yourself sorted
+
+You can [try the examples in the live demo](https://aarongustafson.github.io/table-sortable/demo/).
+
+<figure class="media-container">
+<fullscreen-control class="talk__slides__embed video-embed__video">
+<iframe src="https://aarongustafson.github.io/table-sortable/demo/" class="talk__slides__embed video-embed__video" frameborder="0"></iframe>
+</fullscreen-control>
+</figure>
+
+If you’d like to put this web component to use on your own site, you can find out more on [the `<table-sortable>` project page](https://github.com/aarongustafson/table-sortable).
+
+If you use it on your site, please do let me know. The incredibly talented [Zach Leatherman](https://zachleat.com) (creator of Eleventy and an impressive number of useful web components) did and he called it [“a very good web component!”](https://fediverse.zachleat.com/@zachleat/117221563504038933), which was awfully nice to hear.
