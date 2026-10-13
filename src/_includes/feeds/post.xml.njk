@@ -41,10 +41,8 @@
     <category term="{{ tag }}" />
   {% endfor %}
 
-  {% if post.data.hero %}
-    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{{ post.data.hero.src | absoluteUrl(site.url) }}" />
-  {% elif post.data.og_image %}
-    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{{ post.data.og_image }}" />
+  {% if post.data.image %}
+    <media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{{ post.data.image | absoluteUrl(site.url) }}" />
   {% endif %}
 
 </entry>

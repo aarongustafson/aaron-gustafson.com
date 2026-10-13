@@ -43,10 +43,8 @@
     "tags": {{ post.data.tags | dump | safe }},
   {% endif %}
   
-  {% if post.data.hero %}
-    "image": {{ (post.data.hero.src | absoluteUrl(site.url)) | dump | safe }},
-  {% elif post.data.og_image %}
-    "image": {{ post.data.og_image | dump | safe }},
+  {% if post.data.image %}
+    "image": {{ (post.data.image | absoluteUrl(site.url)) | dump | safe }},
   {% endif %}
   
   "date_published": {{ (post.date | dateToRfc3339) | dump | safe }}

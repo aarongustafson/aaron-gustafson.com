@@ -30,8 +30,8 @@
   {% if image != "" %}
     "image":{  
       "@type": "ImageObject",
-      "contentUrl": "{{ image }}",
-      "url": "{{ image }}",
+      "contentUrl": "{{ image | absoluteUrl(site.url) }}",
+      "url": "{{ image | absoluteUrl(site.url) }}",
       "height": "669",
       "width": "1280"
     },

@@ -4,9 +4,9 @@
 	"url": "https://www.aaron-gustafson.com",
 	"author": "Aaron Gustafson",
 	"twitter": "AaronGustafson",
-	"image": "https://www.aaron-gustafson.com/i/og-logo.png",
+	"image": "/i/og-logo.png",
 	"options": {
-		"imageWithBaseUrl": false,
+		"imageWithBaseUrl": true,
 		"titleDivider": " :: ",
 		"twitterCardType": "summary_large_image"
 	}

@@ -1,5 +1,5 @@
 {% set this_url %}{{ page.url | absoluteUrl(site.url) }}{% endset %}
-{% set this_hero %}{% if hero %}{{ hero.src | absoluteUrl(site.url) }}{% else %}{{ seo.image | absoluteUrl(site.url) }}{% endif %}{% endset %}
+{% set this_hero %}{{ image | default(seo.image, true) | absoluteUrl(site.url) }}{% endset %}
 {% set svg_twitter %}{{ "/src/static/i/icons/twitter.svg" | svgContents | safe }}{% endset %}
 {% set svg_hackernews %}{{ "/src/static/i/icons/hacker-news.svg" | svgContents | safe }}{% endset %}
 {% set svg_facebook %}{{ "/src/static/i/icons/facebook.svg" | svgContents | safe }}{% endset %}
