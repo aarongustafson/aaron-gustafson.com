@@ -9,6 +9,7 @@ series:
   name: "Honoring Black History"
   tag: series-black-history
   ordinal: "30th"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw6mfus2p"
 ---
 
 There are so many reasons to love and admire Maya Angelou. Most of these stem from her novels, poetry, and civil rights work, but I’m going to pick an unusual one: she was determined to be the first Black woman to conduct a cable car in San Francisco. And she succeeded at 16.

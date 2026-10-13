@@ -4,6 +4,7 @@ date: 2015-01-30 10:14:40 -05:00
 comments: true
 tags: ["web design", personal]
 description: "Monday, February 2nd will be the start of a new chapter in my professional career: I will joining Microsoft as a standards evangelist."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwjpdkh2f"
 ---
 
 Monday, February 2nd will be the start of a new chapter in my professional career: I will joining Microsoft as a standards evangelist.

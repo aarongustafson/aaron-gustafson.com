@@ -8,6 +8,7 @@ series:
   name: "Honoring Black History"
   tag: series-black-history
   ordinal: "7th"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwb7gvo2e"
 ---
 
 We lost an amazing voice and an amazing human being when Aretha Franklin died last year. Countless articles have been written about the positive impact she’s had on the struggles for both Civil Rights and Native American rights. Apart from her amazing voice and presence, the thing I will remember most about Aretha is her purse.

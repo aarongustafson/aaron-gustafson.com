@@ -7,6 +7,7 @@ tags:
   - "web development"
 description: "A few projects back, I decided to rethink our JavaScript organization strategy and came up with a new technique that, I think, helps us better manage behaviors from page to page."
 canonical: "https://blog.easy-designs.net/archives/a-new-onload-scheme/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwweiat2a"
 ---
 
 <p>A few projects back, I decided to rethink our JavaScript organization strategy and came up with a new technique that, I think, helps us better manage behaviors from page to page.</p>

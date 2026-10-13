@@ -4,6 +4,7 @@ date: 2015-04-27 15:10:11 -04:00
 comments: true
 tags: [JavaScript, "user experience"]
 description: "There is no reason to fake a progress bar. It’s pointless."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwieu6j2l"
 ---
 
 Late last week I stumbled on a video from [Graeme Pyle](https://twitter.com/graemepyle) that exposed a UX lie in the [First National Bank of South Africa](https://www.fnb.co.za/).

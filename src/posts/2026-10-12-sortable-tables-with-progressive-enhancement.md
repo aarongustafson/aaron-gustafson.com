@@ -12,6 +12,7 @@ tags:
   ]
 description: "My table-sortable web component adds accessible, customizable sorting to ordinary HTML tables while keeping their core structure and semantics intact."
 twitter_text: "Need sortable tables? My table-sortable web component adds accessible, customizable sorting to ordinary HTML tables—and they still work when JavaScript doesn’t."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvyrt772w"
 ---
 
 Many years ago, I made a little jQuery plugin called [Easy Sortable Tables](https://github.com/easy-designs/jquery.easy-sortable-tables.js). It works exactly as promised: point it at a table and it upgrades the UI so a reader can sort the rows by clicking a column heading. The functionality is still useful, but I can’t even remember the last time I added jQuery to a site.

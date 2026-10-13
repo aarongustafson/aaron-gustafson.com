@@ -7,6 +7,7 @@ tags:
   - "developer tools"
 description: "I got an email the other day from Steven Mading, a developer at the BioMagnetic Resonance Bank at the University of Wisconsin . In it, he shared his experience using jsTrace and, with his permission, I’m sharing it with all of you:"
 canonical: "https://blog.easy-designs.net/archives/now-thats-what-i-love-to-hear/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx46e6o2e"
 ---
 
 <p>I got an email the other day from Steven Mading, a developer at the <a href="http://www.bmrb.wisc.edu">BioMagnetic Resonance Bank at the University of Wisconsin</a>. In it, he shared his experience using <a href="http://www.easy-designs.net/code/jsTrace/">jsTrace</a> and, with his permission, I’m sharing it with all of you:</p>

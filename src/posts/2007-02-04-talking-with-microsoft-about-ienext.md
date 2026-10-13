@@ -8,6 +8,7 @@ tags:
   - "browsers"
 description: "You may recall that the DOM Scripting and Microsoft task forces, in collaboration with JS Ninjas, had been compiling a list of issues, needs, and wants for IE .next over the last few months (a list many of you contributed to as well..."
 canonical: "https://blog.easy-designs.net/archives/talking-with-microsoft-about-ienext/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwy4dwl2p"
 ---
 
 <p>You may recall that the DOM Scripting and Microsoft task forces, in collaboration with <abbr title="JavaScript">JS</abbr> Ninjas, had been <a href="http://www.webstandards.org/2006/11/04/you-can-improve-ie-next/">compiling a list of issues, needs, and wants for <abbr title="Internet Explorer">IE</abbr>.next</a> over the last few months (a list many of you contributed to as well, via your feedback). The list was to focus on what we wanted to see happen in terms of JavaScript support (as <abbr title="Internet Explorer 7">IE7</abbr> didn’t get much of an update in that area), but when it came down to it, there were other areas we really felt needed some love.</p>

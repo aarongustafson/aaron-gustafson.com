@@ -4,6 +4,7 @@ date: 2015-02-26 10:44:40 -05:00
 comments: true
 tags: ["web design", "web standards", business, browsers]
 description: "With Pointer Events now officially a W3C Recommendation, Apple is playing the role of the Web standards and interoperability party pooper."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwj7tqc2w"
 ---
 
 At [Tuesday night’s Code & Creativity](http://www.codeandcreativity.com/events/2015-02-24), digital governance expert [Lisa Welchman](https://twitter.com/lwelchman) equated digital projects to an atom. Content, IA, project management, networking, graphic design, application development, performance, and other concerns are flying this way and that like electrons—a swirling mass of energy and velocity. What holds this chaos together and keeps the electrons from flying off in all directions is the magnetic pull of protons in the nucleus of the atom.

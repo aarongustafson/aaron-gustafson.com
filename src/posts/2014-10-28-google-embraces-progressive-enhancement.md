@@ -6,6 +6,7 @@ tags: ["web design", "web development", JavaScript, "progressive enhancement"]
 description: "I don’t tend to be a “magic pill” kind of believer, but I can honestly say that embracing progressive enhancement can radically change your business for the better. And I’m glad to see Google agrees with me."
 in_reply_to: https://googlewebmastercentral.blogspot.com/2014/10/updating-our-technical-webmaster.html
 redirect_from: /notebook/2014/google-embraces-progressive-enhancement/
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwluefd2a"
 ---
 
 In case you missed it, [yesterday Pierre Far updated Google’s Webmaster Guidelines](https://googlewebmastercentral.blogspot.com/2014/10/updating-our-technical-webmaster.html). In his post, Pierre lays out their case for [progressive enhancement](https://en.wikipedia.org/wiki/Progressive_enhancement):

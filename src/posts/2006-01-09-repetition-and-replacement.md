@@ -8,6 +8,7 @@ tags:
   - "HTML"
 description: "While working on a new site for a client, I stumbled upon an application of the Leahy / Langridge method of image replacement… to images. As far as I know, it had not been attempted before and, frankly, I was a little amazed it worked."
 canonical: "https://blog.easy-designs.net/archives/repetition-and-replacement/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx4hndb2n"
 ---
 
 <p>While working on a new site for a client, I stumbled upon an application of the  <a href="http://www.moronicbajebus.com/playground/cssplay/image-replacement/">Leahy</a>/<a href="http://www.kryogenix.org/code/browser/lir/">Langridge</a> method of image replacement… to images. As far as I know, it had not been attempted before and, frankly, I was a little amazed it worked.</p>

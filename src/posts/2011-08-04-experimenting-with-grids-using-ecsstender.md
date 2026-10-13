@@ -8,6 +8,7 @@ tags:
   - "web standards"
 description: "In preparation for the launch of 10K Apart (Responsive Edition) from Mix Online and An Event Apart , I’ve been feverishly working on a modest implementation of the proposed CSS 3 Grid Layout module (also referred to as Grid Alignment in..."
 canonical: "https://blog.easy-designs.net/archives/experimenting-with-grids-using-ecsstender/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwqzfqc2l"
 ---
 
 <p>In preparation for the launch of <a href="http://10k.aneventapart.com/">10K Apart (Responsive Edition)</a> from <a href="http://visitmix.com/">Mix Online</a> and <a href="http://aneventapart.com/">An Event Apart</a>, I’ve been feverishly working on a modest implementation of <a href="http://dev.w3.org/csswg/css3-grid-align/">the proposed CSS3 Grid Layout module</a> (also referred to as Grid Alignment in <a href="http://www.interoperabilitybridges.com/css3-grid-align/">alternate drafts</a>) using <a href="http://eCSStender.org">eCSStender</a>. As you might imagine, it was a pretty massive undertaking, but it’s been pretty rewarding to use eCSStender for it’s original intent: prototyping implementations of proposed specifications.</p>

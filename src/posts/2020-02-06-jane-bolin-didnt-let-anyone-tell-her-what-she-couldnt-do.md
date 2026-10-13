@@ -9,6 +9,7 @@ series:
   name: "Honoring Black History"
   tag: series-black-history
   ordinal: "34th"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw6arst2g"
 ---
 
 If you‘ve heard of Jane Bolin, it’s probably in the context of her becoming the first Black judge in the United States. It’s quite the accomplishment, no doubt, but Jane’s life was quite literally filled with firsts.

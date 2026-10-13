@@ -8,6 +8,7 @@ tags:
   - "user experience"
 description: "At SXSW , I gave a sneak peek at the new bizhub Pro site I built for Konica Minolta and, in particular, the “scroll and flash” usability enhancement I added to the product pages. I have gotten a lot of questions about it and the..."
 canonical: "https://blog.easy-designs.net/archives/scroll-and-flash/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwywh6s2p"
 ---
 
 <p>At SXSW, I gave a sneak peek at the <a href="http://www.bizhubpro.com/">new bizhub Pro site I built for Konica Minolta</a> and, in particular, the “scroll and flash” usability enhancement I added to the product pages. I have gotten a lot of questions about it and the technique even generated <a href="http://web.archive.org/web/20080120011442/nubyonrails.com/articles/2006/03/22/yet-another-realigned-theme">some discussion over on Geoffrey’s site</a>. Well, the site finally launched and you can now see the “scroll and flash” for yourself.</p>

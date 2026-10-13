@@ -7,6 +7,7 @@ tags:
   - "business"
 description: "When you’ve been evangelizing progressive enhancement for as long as we have, you invariably come across skeptics."
 canonical: "https://blog.easy-designs.net/archives/the-true-cost-of-progressive-enhancement/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwnoxjj2k"
 ---
 
 <p>

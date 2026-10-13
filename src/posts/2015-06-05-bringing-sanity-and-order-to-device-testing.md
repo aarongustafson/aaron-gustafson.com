@@ -5,6 +5,7 @@ comments: true
 tags:
   ["web design", mobile, devices, "progressive enhancement", "web development"]
 description: "With the constant onslaught of new devices, form factors, and considerations, it’s tempting to throw up our hands and find another line of work. Thankfully, however, all is not lost."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwhs7jq2w"
 ---
 
 It seems like every other day the public is granted some new means of accessing the web. Some days it’s [a new browser](http://www.engadget.com/2015/04/29/microsoft-edge/). Others it’s [a new smartphone](http://www.pcadvisor.co.uk/reviews/mobile-phone/3504276/yotaphone-2-review-uk-dual-screen-smartphone/). Or [a tablet](http://www.engadget.com/products/microsoft/surface/3/). Or [an e-reader](http://the-digital-reader.com/2014/10/22/voyage-vs-paperwhite-comparison-review-web-browser/). Or [a video game console](https://www.nintendo.com/3ds/internetbrowser/specs/). Or [a smartwatch](http://www.phonearena.com/news/Surf-the-Internet-from-your-Android-Wear-smartwatch-Now-possible-via-this-new-app_id58580). Or [a TV](https://html5test.com/compare/browser/samsungsmarttv-2013.html). Or [a heads-up display](http://www.techradar.com/us/reviews/wearables/microsoft-hololens-1281834/review). Or [a car](http://www.popularmechanics.com/cars/a13191/the-future-of-car-connectivity-is-a-real-web-browser-in-the-dash-17416796/). Or [a refrigerator](http://www.lgblog.lt/2009/10/28/zvilgsnis-atgal-pirmasis-pasaulyje-saldytuvas-su-internetu-lg-internet-digital-dios/).

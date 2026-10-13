@@ -4,6 +4,7 @@ date: 2015-05-18 14:38:29 -04:00
 comments: true
 tags: ["web design", URLs]
 description: "The awesomeness of this URL is almost indescribable."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwhysud2p"
 ---
 
 It’s like a snake eating its own tail:

@@ -8,6 +8,7 @@ photo:
   src:
   credit: STOck You
   source: https://www.flickr.com/photos/63863986@N04/9503663266/
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwjfzp72f"
 ---
 
 In more than a handful of conversations lately, it’s become quite clear that we, the web development community, are prioritizing our own convenience and our own time over that of our users. With our industry’s focus on “user-centered design”, you might find that hard to believe, but it’s true.

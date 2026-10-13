@@ -4,6 +4,7 @@ date: 2015-03-09 09:35:42 -04:00
 comments: true
 tags: ["web design", writing]
 description: "On April 2nd, Web Standards Sherpa, a publication I helped found, will close its doors."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwizte22w"
 ---
 
 It is with a heavy heart that I announce that we are closing [_Web Standards Sherpa_](http://webstandardssherpa.com/). As of April 2, we will be archiving the site in order to keep the valuable insights and techniques shared by our authors available in perpetuity.

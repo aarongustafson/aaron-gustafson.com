@@ -13,6 +13,7 @@ tags:
 description: "We look at averages all the time in our work. Some, like average Time To Interactive (TTI) for instance, are useful measurements that allow us to improve our work; others, like the “average” user are decidedly less so."
 crossposted:
   Medium: https://medium.com/@AaronGustafson/80018015fc4f
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwdz4cr2n"
 ---
 
 In the work that we do on the Web (as well as in our daily lives), we’re often confronted, informed, or judged based on averages. I never really stopped to think about it, beyond being bugged by the fact that averages aren’t truly representative of reality. Then I listened to [99% Invisible’s episode “On Average”](http://99percentinvisible.org/episode/on-average/). It was incredibly enlightening and the stories shared in that episode provide sage wisdom that is very relevant to the work that we do.

@@ -7,6 +7,7 @@ crossposted:
   Medium: https://medium.com/@AaronGustafson/8ab94d4f7e92
 twitter_text: "In case you missed it, here’s a written version of my #EnhanceConf talk:"
 description: "I had the great pleasure of delivering the closing keynote for the first EnhanceConf. I wanted to talk about voice and the future of “headless” user interfaces. Here’s what I had to say."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwfhbs32g"
 ---
 
 _I had the great pleasure of delivering the closing keynote for the first EnhanceConf. I wanted to talk about voice and the future of “headless” user interfaces. Here’s what I had to say._

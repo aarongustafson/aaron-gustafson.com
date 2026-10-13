@@ -7,6 +7,7 @@ tags:
   - "presentations"
 description: "That’s right, I’m coming to NYC to join Jeffrey , Eric , “ Stan ” , Khoi & Adam to deliver An Event Apart in its new 2-day format. It’s gonna be a blast and I’m incredibly honored that I was invited to join in the fun. I’ll be dropping..."
 canonical: "https://blog.easy-designs.net/archives/if-i-can-make-it-there/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwyzrgo2e"
 ---
 
 <p><a href="http://www.flickr.com/photos/aarongustafson/136066759/"><img alt=" " class="feature" src="http://static.flickr.com/56/136066759_17497fe37c_m.jpg"/></a></p>

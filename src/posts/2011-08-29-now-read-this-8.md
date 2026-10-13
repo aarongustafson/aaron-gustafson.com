@@ -6,6 +6,7 @@ tags:
   - "blogging"
 description: "Last week, Steve Jobs resigned and Twitter launched a resource for quickly building prototypes and apps. Here’s the roundup of those and other links you’ll want to check out:"
 canonical: "https://blog.easy-designs.net/archives/now-read-this-8/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwqipva2u"
 ---
 
 <p>Last week, Steve Jobs resigned and Twitter launched a resource for quickly building prototypes and apps. Here’s the roundup of those and other links you’ll want to check out:</p>

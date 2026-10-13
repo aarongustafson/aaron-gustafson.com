@@ -7,6 +7,7 @@ tags:
   - "web development"
 description: "As a content-focused web development firm, we’re frequently called on to design and build content management systems for our clients. More often than not, that involves using some form of in-browser rich text editor (RTE) to more…"
 canonical: "https://blog.easy-designs.net/archives/what-do-you-look-for-in-an-browser-based-rich-text-editor/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwqsv3c2w"
 ---
 
 As a content-focused web development firm, we’re frequently called on to design and build content management systems for our clients. More often than not, that involves using some form of in-browser rich text editor (RTE) to more easily allow users to add and edit content. Over the years we’ve used a number of different scripts and libraries to do this—everything from TinyMCE and CK Editor to our own home-grown solutions. The thing is that we’ve never felt 100% happy with any software we’ve used.

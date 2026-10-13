@@ -8,6 +8,7 @@ tags:
   - "web standards"
 description: "Microsoft released Internet Explorer 7 Beta 2 for public consumption yesterday. Based on everything I’d been reading, the development team seemed to be moving in the right direction . I decided to take it for a test drive to see how..."
 canonical: "https://blog.easy-designs.net/archives/a-load-of-malarkey/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx43fpz2n"
 ---
 
 <p>Microsoft released <a href="http://www.microsoft.com/windows/IE/ie7/ie7betaredirect.mspx">Internet Explorer 7 Beta 2</a> for public consumption yesterday. Based on everything I’d been reading, the development team seemed to be <a href="http://blogs.msdn.com/ie/archive/2005/07/29/445242.aspx">moving in the right direction</a>. I decided to take it for a test drive to see how things were coming along.</p>

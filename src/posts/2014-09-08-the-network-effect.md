@@ -5,6 +5,7 @@ date: 2014-09-08 16:40:44 -04:00
 comments: true
 tags: ["web design", JavaScript, hazards]
 redirect_from: /notebook/2014/the-network-effect/
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwmbfbk2p"
 ---
 
 <cite>Ars Technica</cite> revealed today that [Comcast is injecting self-promotional advertising into web pages delivered via it’s Wi-Fi hotspots](https://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/):

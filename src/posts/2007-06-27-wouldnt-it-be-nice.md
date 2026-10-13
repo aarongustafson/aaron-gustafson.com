@@ -7,6 +7,7 @@ tags:
   - "web standards"
 description: "Over the last two years, I’ve been wishing for just one thing in CSS : rotation. There’s been some discussion about it on the W3C lists, etc. but no one has made a solid pitch for it yet. Inspired a bit by Andy’s modest..."
 canonical: "https://blog.easy-designs.net/archives/wouldnt-it-be-nice/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwxdrnq2u"
 ---
 
 <p><img alt=" " class="alt-feature" src="http://farm2.static.flickr.com/1025/641641966_705587ae5b.jpg?v=0"/></p>

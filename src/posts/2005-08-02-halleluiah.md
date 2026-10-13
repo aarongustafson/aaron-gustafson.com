@@ -8,6 +8,7 @@ tags:
   - "browsers"
 description: "I finally got around to reading Chris Wilson’s post about standards support in IE 7 and I have to admit I am more than a little giddy. Working for an ad agency , most clients (and the majority of my coworkers) have not gotten the whole..."
 canonical: "https://blog.easy-designs.net/archives/halleluiah/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx7wp4s2h"
 ---
 
 <p>I finally got around to reading <a href="http://blogs.msdn.com/ie/archive/2005/07/29/445242.aspx">Chris Wilson’s post about standards support in <abbr title="Internet Explorer 7">IE7</abbr></a> and I have to admit I am more than a little giddy. Working for an <a href="http://www.cronin-co.com" title="I work for Cronin and Company, but have not (as of yet) worked on the site, so don't hold me responsible ;-)">ad agency</a>, most clients (and the majority of my coworkers) have not gotten the whole Web Standards thing, mostly because they only use <abbr title="Internet Explorer">IE</abbr>. I can’t express how much relief I feel that <abbr title="Internet Explorer 7">IE7</abbr> is going to fall in line with most of the other browsers out there with regard to standards support.</p>

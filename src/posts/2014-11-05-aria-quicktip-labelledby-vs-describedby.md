@@ -5,6 +5,7 @@ comments: true
 tags: [accessibility, "web design", "WAI-ARIA"]
 description: "The difference between the `aria-labelledby` and `aria-describedby` attributes is not obvious. Here’s a bit of a clarification for using them in forms."
 redirect_from: /notebook/2014/aria-quicktip-labelledby-vs-describedby/
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwlnxv32p"
 ---
 
 Last night, while we were enjoying a cool evening and a few drinks outside after day 1 of [BDConf](https://bdconf.com), [Jeremy](https://adactio.com) asked me for some clarification on the ARIA attributes I had demoed as part of [my forms presentation](https://www.slideshare.net/AaronGustafson/falling-in-love-with-forms-bdconf-2014) earlier in the afternoon. In particular, he was confused by how `aria-labelledby` and `aria-describedby` differ.

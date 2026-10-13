@@ -4,6 +4,7 @@ date: 2015-01-16 07:15:12 -05:00
 comments: true
 tags: ["web design", "web standards"]
 description: "Here’s a bit of a round-up of some interesting work that came out of the W3C this week."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwkbgfk2p"
 ---
 
 This week the W3C published a couple of really cool new Working Drafts I wanted to bring to your attention (just in case you missed them).

@@ -4,6 +4,7 @@ date: 2015-03-20 11:00:03 -04:00
 comments: true
 tags: ["web design", CSS]
 description: "I love-love-love Heydon Pickering’s “quantity queries” technique."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwitvvk2w"
 ---
 
 [Heydon Pickering](http://twitter.com/heydonworks)’s [Quantity Queries for CSS](http://alistapart.com/article/quantity-queries-for-css) is sheer brilliance and it’s so simple I’m surprised we hadn’t landed on the idea sooner.

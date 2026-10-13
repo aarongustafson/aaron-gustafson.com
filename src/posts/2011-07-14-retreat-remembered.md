@@ -9,6 +9,7 @@ tags:
   - "CSS"
 description: "First off, this post has been way too long in the making. I should have written it a couple months ago, but that’s the thing about running things, you don’t always have time to come up for air. Anyway, without further ado…"
 canonical: "https://blog.easy-designs.net/archives/retreat-remembered/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwuw5p725"
 ---
 
 <p>

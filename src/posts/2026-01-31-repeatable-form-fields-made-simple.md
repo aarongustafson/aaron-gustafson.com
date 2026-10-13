@@ -9,6 +9,7 @@ series:
   name: "Modern Web Form Best Practices"
   tag: "series-forms"
   ordinal: "10th"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvzmcjt2p"
 ---
 
 Sometimes you need people to provide multiple instances of the same information: email addresses, phone numbers, team members, or emergency contacts. The `form-repeatable` web component handles that cleanly, including duplication, renumbering, and seamless form submission via the ElementInternals API.

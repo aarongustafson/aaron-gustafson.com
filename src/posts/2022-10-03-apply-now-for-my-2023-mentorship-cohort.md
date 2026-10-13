@@ -11,6 +11,7 @@ hero:
   alt: "A forest clearing in the fall. In front of you are 2 paths leading in different directions. In the center is an old signpost, but it is dilapidated."
   url: https://labs.openai.com/s/PFGM2lvPQaP0WnT0KmR3VJ1D
   offset: "100"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw4mem22w"
 ---
 
 Are you a web professional (or aspiring web professional) who is looking for career guidance and opportunities? Consider applying for my 2023 mentorship cohort.

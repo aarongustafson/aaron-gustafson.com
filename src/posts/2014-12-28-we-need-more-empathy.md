@@ -4,6 +4,7 @@ date: 2014-12-28 11:17:21 -05:00
 comments: true
 tags: ["web design", "web development", "inclusive design", empathy]
 in_reply_to: http://www.zeldman.com/2014/12/28/unexamined-privilege-is-the-real-source-of-cruelty-in-facebooks-your-year-in-review/
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwkteub2k"
 ---
 
 For a while now I’ve been [beating the “empathy” drum](http://www.slideshare.net/AaronGustafson/designing-with-empathy-breaking-development-nashville-2013) ([notes](http://www.lukew.com/ff/entry.asp?1810)), trying to get folks in our industry to understand the importance of creating connections with the people for whom we build software, websites, etc. After all, we design and build tools to solve the needs of actual people, not some generic “user”.<!-- more -->[^1]

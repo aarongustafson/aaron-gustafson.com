@@ -8,6 +8,7 @@ tags:
   - "accessibility"
 description: "A few smart folks have already put together their thoughts on responsive tables and, while I think the proposed methods are pretty good, I think there might be room for improvement. As such, I’ve been tinkering for a while and came up..."
 canonical: "https://blog.easy-designs.net/archives/responsive-tables/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwogfss2w"
 ---
 
 <p>A few smart folks have already put together their thoughts on responsive tables and, while I think the proposed methods are pretty good, I think there might be room for improvement. As such, I’ve been tinkering for a while and came up with the following strategy when it comes to tables.</p>

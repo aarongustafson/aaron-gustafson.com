@@ -6,6 +6,7 @@ tags:
   - "web standards"
 description: "I just got the best comment spam ever:"
 canonical: "https://blog.easy-designs.net/archives/web-standards-sex-partners-spam/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwyt6x72f"
 ---
 
 <p>I just got the best comment spam ever:</p>

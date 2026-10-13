@@ -6,6 +6,7 @@ crossposted:
   Medium: https://medium.com/@AaronGustafson/95d3c8d15d8
 tags: [personal]
 description: "A bit of a reflection on my now decade-long relationship with Twitter."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwe74m725"
 ---
 
 Ten years ago today:

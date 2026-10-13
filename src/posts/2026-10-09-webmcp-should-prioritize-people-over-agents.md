@@ -10,6 +10,7 @@ in_reply_to: https://github.com/WebKit/standards-positions/issues/670#issuecomme
 via:
   name: "Jason Grigsby"
   url: "https://cloudfour.com/thinks/improvements-to-web-for-ai-should-benefit-all-users/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvyuwdo2u"
 ---
 
 Apple’s WebKit team recently [opposed the WebMCP proposal](https://github.com/WebKit/standards-positions/issues/670#issuecomment-4608432694), arguing that it creates a separate semantic layer for agents when we should instead improve the shared layers people, assistive technology, and agents already use. [Jason Grigsby’s post](https://cloudfour.com/thinks/improvements-to-web-for-ai-should-benefit-all-users/) led me to Apple’s comment, and I share the concerns raised in both. In fact, I’d made a similar case over email back in April, when I first learned about [WebMCP](https://developer.chrome.com/docs/ai/webmcp).

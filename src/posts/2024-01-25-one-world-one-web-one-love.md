@@ -11,6 +11,7 @@ hero:
   alt: "An older woman smiling with her hands in a heart gesture. She has a mane of long curly black hair. Illustration."
   url: https://www.bing.com/images/create/an-older-woman-smiling-with-her-hands-in-a-heart-g/1-65b2cddea171416787c7fd1179d646cf?id=1Fy8tSnD%2fJV%2bPe90Awpdpw%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&mode=overlay
   offset: "30"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw3bn572f"
 ---
 
 Today would have been Molly Holzschlag’s 61st birthday. I want to take a moment to remember her by sharing a bit from [a post she made way back in 2012 on the new defunct <cite>Pastry Box Project</cite>](https://web.archive.org/web/20120706174033/http://the-pastry-box-project.net/molly-holzschlag/2012-may-20).

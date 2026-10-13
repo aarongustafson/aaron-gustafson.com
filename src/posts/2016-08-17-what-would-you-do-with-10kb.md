@@ -12,6 +12,7 @@ tags:
   ]
 description: "I’m thrilled to announce that the 10k Apart contest is back and brings with it a handful of new challenges."
 canonical: "https://blogs.windows.com/msedgedev/2016/08/15/10k-apart/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwepmay2w"
 ---
 
 Sixteen years ago, [Stewart Butterfield](https://twitter.com/stewart) conceived of a contest that would test the mettle of any web designer: [The 5k](http://web.archive.org/web/20000510010054/http:/www.sylloge.com/5k/home.html). The idea was that entrants would build [an entire site in 5kB of code or less](http://alistapart.com/article/5k). Its aim was to force us to get creative by putting a bounding box on what we could do:

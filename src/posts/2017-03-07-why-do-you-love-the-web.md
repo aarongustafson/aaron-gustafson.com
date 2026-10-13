@@ -6,6 +6,7 @@ tags: [mentoring, "the web"]
 description: "The applicants for my mentorship program shared some amazing stories, anecdotes, and experiences in their posts on why they love the Web and I wanted to take a moment to share them with you"
 crossposted:
   Medium: https://medium.com/@AaronGustafson/9798d29edb3a
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwdkqky2w"
 ---
 
 A few weeks back, [I put out the call for a mentee for 2017](https://www.aaron-gustafson.com/notebook/looking-for-a-mentor/). As part of the application process, I asked folks to publicly discuss why they love the Web. The applicants shared some amazing stories, anecdotes, and experiences in those posts and I wanted to take a moment to share them with you.[^1] <!-- more --> I present them here, in order of submission.

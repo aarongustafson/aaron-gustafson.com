@@ -4,6 +4,7 @@ date: 2015-01-21 15:20:40 -05:00
 comments: true
 tags: [browsers, "web design", "web standards"]
 description: "Watching the Windows 10 announcement and the “unveiling” of its new browser, codenamed “Project Spartan”, I was amazed… not by what it was so much as what it wasn’t."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwk3ebc2l"
 ---
 
 Watching the [Windows 10 announcement](http://news.microsoft.com/windows10story/) today and the “unveiling” of its new browser, codenamed “Project Spartan”, I was amazed… not by what was said so much as what wasn’t.

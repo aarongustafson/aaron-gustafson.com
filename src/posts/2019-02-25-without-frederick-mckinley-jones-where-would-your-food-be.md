@@ -8,6 +8,7 @@ series:
   name: "Honoring Black History"
   tag: series-black-history
   ordinal: "25th"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw7ihdt2g"
 ---
 
 You may not think a lot about where your food comes from, but if you shop at a grocer, chances are you food arrives by truck. And if that food is perishable—fruits, veggies, milk—it likely arrived at your grocer on a refrigerated truck. That truck, and so much more, was made possible by Frederick McKinley Jones.

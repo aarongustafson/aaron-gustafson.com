@@ -11,6 +11,7 @@ hero:
   alt: "Design for Developers book cover."
   url: http://mng.bz/zXqB
   offset: "93"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw3sf3j2n"
 ---
 
 One of my favorite web designers, [Stephanie Stimac](https://stephaniestimac.com/), asked me to write the foreword for her amazing new book, [<cite>Design for Developers</cite>](http://mng.bz/zXqB). With her permission, and Manning’s, I’m reprinting it here.

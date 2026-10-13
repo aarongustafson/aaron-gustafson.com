@@ -9,6 +9,7 @@ series:
   name: "Honoring Black History"
   tag: series-black-history
   ordinal: "29th"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw6pepl2a"
 ---
 
 One of my fondest childhood memories was getting a Nintendo Entertainment System for my birthday. It wasn’t the expensive set with the robot and the gun (we were poor), but my mom somehow managed to scrape together the $199 (over $470 in today’s dollars) for the system. It opened up a whole new world for me.

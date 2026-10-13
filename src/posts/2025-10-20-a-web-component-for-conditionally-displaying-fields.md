@@ -5,6 +5,7 @@ comments: true
 tags: ["web components", "web forms", "progressive enhancement", "HTML"]
 description: "Sometimes you only want a field to show when certain other fields have a (particular) value. The `form-show-if` web component enables that."
 twitter_text: "Sometimes you only want a field to show when certain other fields have a (particular) value. The `form-show-if` web component enables that."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw2ahmj2l"
 ---
 
 Building on my recent work in the [form utility space](https://www.aaron-gustafson.com/notebook/series/forms/), I’ve created a new web component that allows you to conditionally display form fields based on the values of other fields: `form-show-if`.

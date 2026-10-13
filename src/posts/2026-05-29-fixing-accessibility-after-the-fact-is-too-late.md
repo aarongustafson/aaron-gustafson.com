@@ -5,6 +5,7 @@ comments: true
 tags: ["accessibility", "AI/ML"]
 description: "At Ability Summit 2026, I moderated a panel on shifting accessibility left in the age of AI with Yumeng Ma, Dylan Barrell, Navin Thadani, and Ed Summers."
 twitter_text: "At Ability Summit 2026, I moderated a panel on shifting accessibility left in the age of AI with Yumeng Ma, Dylan Barrell, Navin Thadani, and Ed Summers."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvz5nn22w"
 ---
 
 At Ability Summit 2026, I moderated a panel on a question that feels more urgent by the day: how do we prevent accessibility defects before they get baked into AI-assisted workflows and shipped at scale?

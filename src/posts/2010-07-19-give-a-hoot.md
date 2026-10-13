@@ -7,6 +7,7 @@ tags:
   - "best practices"
 description: "As any competent JavaScript knows, it’s not cool to litter the global namespace with variables, functions, and the like. It’s far better to encapsulate your code in an object, a series of objects, or even a closure, exposing only what..."
 canonical: "https://blog.easy-designs.net/archives/give-a-hoot/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwvvesr2n"
 ---
 
 <p>As any competent JavaScript knows, it’s not cool to litter the global namespace with variables, functions, and the like. It’s far better to encapsulate your code in an object, a series of objects, or even a closure, exposing only what you absolutely need to via the global namespace. This helps reduce the potential for collisions that will probably cause your site to break.</p>

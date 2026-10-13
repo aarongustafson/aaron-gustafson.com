@@ -9,6 +9,7 @@ series:
   name: "Honoring Black History"
   tag: series-black-history
   ordinal: "32nd"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw6gims2l"
 ---
 
 Did you know that the first Black comic book hero debuted in 1947? “Lion Man” was a college-educated Black American sent to the Gold Coast (now Ghana) by the United Nations to investigate a uranium deposit. His story was but one of nine depicted in the first (and only) issue of <cite>All-Negro Comics</cite>, the first comic book created by an all Black team. That team was led by a journalist named Orrin Cromwell Evans.

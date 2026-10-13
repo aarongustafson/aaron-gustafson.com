@@ -7,6 +7,7 @@ tags:
   - "career"
 description: "My friends at Gartner are hiring a new member for their web team. If you are within commuting distance of Stamford, CT (about 45 minutes outside of NYC by train), I highly recommend considering this job as I know first-hand how awesome..."
 canonical: "https://blog.easy-designs.net/archives/gartner-wants-you/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx4w6eb2l"
 ---
 
 <p>My friends at <a href="http://www.gartner.com">Gartner</a> are hiring a new member for their web team. If you are within commuting distance of Stamford, CT (about 45 minutes outside of NYC by train), I highly recommend considering this job as I know first-hand how awesome this team is to work with.</p>

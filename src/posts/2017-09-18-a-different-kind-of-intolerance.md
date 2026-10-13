@@ -4,6 +4,7 @@ date: 2017-09-18 20:23:23 -04:00
 comments: true
 tags: [personal]
 description: "Turns out my problem had more to do with proteins than sugar."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwcj4fi2w"
 ---
 
 Nearly two decades ago, Kelly unravelled the mystery of my digestive tract that had eluded me for a number of years. It had become commonplace for me to get an upset stomach after eating. I didn’t think much of it really, but Kelly noticed a pattern: it only happened after meals that involved milk of some kind. “I bet you’re lactose intolerant.” Turns out she was right. Kind of.

@@ -5,6 +5,7 @@ comments: true
 tags: ["accessibility", "design", "inclusive design", "Microsoft", "user experience", "WAI-ARIA"]
 description: "I just hit “publish” on Accessibility Assistant for Figma v52 and I wanted to share some details on why this is a monumental release for us."
 twitter_text: "I just hit “publish” on Accessibility Assistant for Figma v52 and I wanted to share some details on why this is a monumental release for us."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvzj7qw2u"
 ---
 
 I just hit “publish” on [Accessibility Assistant for Figma](https://www.figma.com/community/plugin/731310036968334777/accessibility-assistant) v52, and I wanted to share why this release matters so much to our team.

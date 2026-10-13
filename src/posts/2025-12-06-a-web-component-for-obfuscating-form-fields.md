@@ -18,6 +18,7 @@ series:
   name: "Modern Web Form Best Practices"
   tag: "series-forms"
   ordinal: "8th"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw22o2z2l"
 ---
 
 We have the password reveal pattern for passwords, but what about other sensitive fields that need to be readable while editing and obfuscated while at rest? The `form-obfuscator` web component does exactly that.

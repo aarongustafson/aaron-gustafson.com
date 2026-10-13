@@ -7,6 +7,7 @@ tags:
   - "inclusion"
 description: "Last night, I had a great conversation on Twitter with Jeff Croft about the pros and cons of requiring a Facebook account for login. It’s a trend that seems to be on the rise and I, personally, don’t think it’s a good long term strategy."
 canonical: "https://blog.easy-designs.net/archives/on-requiring-facebook-for-login/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwva5lq2u"
 ---
 
 <p>Last night, I had a great conversation on <a href="http://twitter.com">Twitter</a> with <a href="http://jeffcroft.com">Jeff Croft</a> about the pros and cons of requiring a <a href="http://facebook.com">Facebook</a> account for login. It’s a trend that seems to be on the rise and I, personally, don’t think it’s a good long term strategy.</p>

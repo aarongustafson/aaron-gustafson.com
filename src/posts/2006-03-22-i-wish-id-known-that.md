@@ -7,6 +7,7 @@ tags:
   - "personal"
 description: "So, upon returning home from SXSW and cracking open the new issue of Seed , I read something I wish I’d known before:"
 canonical: "https://blog.easy-designs.net/archives/i-wish-id-known-that/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx2ky4b2l"
 ---
 
 <p><img alt="" class="focal" src="/i/posts/2006-03-22/sexy-presentations.jpg" title="How to “Buff” Your Way in DOM Scripting - a mock presentation"/></p>

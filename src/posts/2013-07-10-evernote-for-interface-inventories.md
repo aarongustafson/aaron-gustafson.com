@@ -8,6 +8,7 @@ tags:
   - "web design"
 description: "Earlier today, Brad Frost posted a great piece touting the usefulness of interface inventories . I’ll give him the floor to explain:"
 canonical: "https://blog.easy-designs.net/archives/evernote-for-interface-inventories/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwnz7gp2w"
 ---
 
 <p>

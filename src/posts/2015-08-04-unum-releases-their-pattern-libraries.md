@@ -4,6 +4,7 @@ date: 2015-08-04 13:55:34 -04:00
 comments: true
 tags: ["web design", "pattern libraries"]
 description: "I love it when companies share stuff like this."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwhiivk2l"
 ---
 
 Insurance company [Unum](http://www.unum.com/) has just released the “UX Toolkits” (a.k.a. patten libraries) they use for both Unum and Colonial Life. They are pretty bare-bones right now, but I am hopeful they will flesh them out over time.

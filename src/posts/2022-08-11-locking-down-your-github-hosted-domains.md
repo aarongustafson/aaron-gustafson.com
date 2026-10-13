@@ -11,6 +11,7 @@ hero:
   alt: "Photo of a black tentacle holding a padlock that is open"
   url: https://labs.openai.com/s/1AdsanuXOheOnpD3WAdvhuNo
   offset: "230"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw4y5ko2u"
 ---
 
 The other day someone claimed a hostname on a domain I own and it took me a while to track down how. After a lot of digging around, trying to figure out how the hijack was accomplished, it turns out it was via GitHub Pages.

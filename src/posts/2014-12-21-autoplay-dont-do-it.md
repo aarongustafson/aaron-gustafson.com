@@ -5,6 +5,7 @@ comments: true
 tags: ["web design", "web development", multimedia]
 description: "A while back GogOm reported on Facebook’s sole responsibility for an increase in mobile data usage by 60% by auto-playing videos. Don’t do it."
 in_reply_to: https://gigaom.com/2014/09/04/facebooks-autoplay-has-led-to-a-60-boost-in-traffic-on-mobile-networks/
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwkwfli2w"
 ---
 
 A while back [GogOm reported on how Facebook’s decision to autoplay videos led to a 60% increase in mobile data usage](https://gigaom.com/2014/09/04/facebooks-autoplay-has-led-to-a-60-boost-in-traffic-on-mobile-networks/). It was a business decision with the intent of increasing engagement, but it was a bad decision from a user experience. It’s a tax on users and they weren’t to happy about it.

@@ -4,6 +4,7 @@ date: 2015-04-09 15:05:21 -04:00
 comments: true
 tags: ["web design"]
 description: "A lot of folks have helped me on the way to becoming the web professional that I am. Here are just a few."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwilmxj2k"
 ---
 
 A lot of folks have helped me on the way to becoming the web professional that I am. When [Molly declared today “Unsung Leaders of the Web Day”](https://twitter.com/mollydotcom/status/586187780113309697), I had to join in.

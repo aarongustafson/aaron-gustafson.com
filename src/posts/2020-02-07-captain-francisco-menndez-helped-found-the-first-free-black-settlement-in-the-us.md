@@ -8,6 +8,7 @@ series:
   name: "Honoring Black History"
   tag: series-black-history
   ordinal: "35th"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw65u4r2n"
 ---
 
 In 1724, the man who came to be known as Francisco Menéndez escaped his enslavement in South Carolina and sought refuge in Spanish-controlled Florida. His quest for freedom, made alongside a number of other Black slaves, was part of a series of events that led to the legal establishment of the first free Black community in the United States.

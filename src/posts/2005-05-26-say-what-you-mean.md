@@ -7,6 +7,7 @@ tags:
   - "web design"
 description: "While doing some DNS modifications (for this site, in fact) on AIT Domains , I received the following error message when trying to update the nameservers:"
 canonical: "https://blog.easy-designs.net/archives/say-what-you-mean/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnxajua725"
 ---
 
 <p>While doing some DNS modifications (for this site, in fact) on <a href="http://www.aitdomains.com">AIT Domains</a>, I received the following error message when trying to update the nameservers:</p>

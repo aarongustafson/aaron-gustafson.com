@@ -8,6 +8,7 @@ tags:
   - "personal"
 description: "Kel and I landed in Austin, TX this afternoon. We’re here for SXSWi . It’s like an annual pilgrimage. Molly calls it “geek camp,” but I think of it more as a time to actually see the people I spend so much time with virtually. Between..."
 canonical: "https://blog.easy-designs.net/archives/touchdown/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx2rh572f"
 ---
 
 <p><img alt="Dinner at the Paradise in Austin, TX" class="feature" src="http://static.flickr.com/52/110334725_d95f121ff8_m.jpg"/></p>

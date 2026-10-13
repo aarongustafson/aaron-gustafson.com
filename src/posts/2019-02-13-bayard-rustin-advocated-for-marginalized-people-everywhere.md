@@ -9,6 +9,7 @@ series:
   name: "Honoring Black History"
   tag: series-black-history
   ordinal: "13th"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwalct72f"
 ---
 
 During Black History Month, there is, understandably, a great deal of focus placed on the folks who risked their lives (and, in some cases, lost them) in the fight for the civil rights of their fellow Black Americans. Growing up, however, I never heard about Bayard Rustin and his incredible legacy of standing up for marginalized people, both here in the U.S. and abroad.

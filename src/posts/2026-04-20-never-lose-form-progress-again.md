@@ -18,6 +18,7 @@ series:
   name: "Modern Web Form Best Practices"
   tag: "series-forms"
   ordinal: "11th"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvzgjfd2a"
 ---
 
 Few things are more annoying than losing your progress halfway through a form. Maybe the browser crashes. Maybe the tab closes. Maybe your kid yells from the other room, and you come back three hours later wondering why you thought now was a good time to fill out a mortgage application. Whatever the cause, `form-saver` makes those interruptions a lot less painful, which helps because forms are usually frustrating enough on their own.

@@ -6,6 +6,7 @@ tags:
   - "blogging"
 description: "In this week’s link round-up, we bring you the reasoning behind Typekit’s font-loading strategy, two new CSS grid systems, a fantastic mash-up of Peanuts with Jaws, and the story of a woman ejected from a Houston bar for tweeting..."
 canonical: "https://blog.easy-designs.net/archives/now-read-this-7/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwqlyy22h"
 ---
 
 <p>In this week’s link round-up, we bring you the reasoning behind Typekit’s font-loading strategy, two new CSS grid systems, a fantastic mash-up of Peanuts with Jaws, and the story of a woman ejected from a Houston bar for tweeting something the General Manager didn’t like. Happy reading!</p>

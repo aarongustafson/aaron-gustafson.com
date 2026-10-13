@@ -8,6 +8,7 @@ description: "Seeing the current U.S. administration taking an axe to DEI progra
 twitter_text: "Seeing the current U.S. administration taking an axe to DEI programs in the government and bully private businesses to do the same has me incredibly frustrated, confused, and (yes) angry. I want more equality and more opportunity in the world, not less."
 crossposted:
   HustleCrew: https://hustlecrew.substack.com/p/aaron-gustafson-on-diversity
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw2rdhr2n"
 ---
 
 I’ve been broadly working in the DEI (or DEIA if you like) sphere for decades now. Most of my work has been coming at it from the accessibility side of things, but I got really involved in allyship and more traditional DEI work starting in 2019. Seeing [the current U.S. administration taking an axe to DEI programs in the government](https://www.npr.org/2025/01/23/nx-s1-5271588/trump-dei-diversity-equity-inclusion-federal-workers-government) and [bully private businesses to do the same](https://www.forbes.com/sites/saradorn/2025/01/23/trumps-diversity-orders-rattle-ceos-what-companies-should-know-about-new-dei-rules/) has me incredibly frustrated, confused, and (yes) angry. I want more equality and more opportunity in the world, not less.

@@ -8,6 +8,7 @@ tags:
   - "user experience"
 description: "When we launched the mobile-first version of this blog, we opted not to include Google+ as one of the sharing options because there was no way to make it work without JavaScript (a fact which undermined both our progressive enhancement…"
 canonical: "https://blog.easy-designs.net/archives/javascript-less-google-finally/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwpknh32g"
 ---
 
 <p>

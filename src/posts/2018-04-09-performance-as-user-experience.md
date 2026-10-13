@@ -4,6 +4,7 @@ date: 2018-04-09 14:09:21 -04:00
 comments: true
 tags: [performance, "user experience", HTML, presentations]
 description: "Slides, notes, and resources from my Performance as User Experience talk at An Event Apart in Seattle."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwc7nes2p"
 ---
 
 Last Tuesday, I gave a relatively new talk on web performance and optimization at An Event Apart in Seattle. The response to this talk has been tremendous both times I gave it, so I wanted to share the deck and relevant links here.

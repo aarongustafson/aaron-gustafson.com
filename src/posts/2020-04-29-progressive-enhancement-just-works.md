@@ -5,6 +5,7 @@ comments: true
 description: "In the course of developing Front-end Bookmarks, Manuel Matuzović found that following the progressive enhancement philosophy made it easy to support older/less feature rich browsers and devices."
 tags: ["progressive enhancement"]
 in_reply_to: https://www.matuzo.at/blog/beauty-of-progressive-enhancement/
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw5pp6r2l"
 ---
 
 In a recent blog post, [Manuel Matuzović offered a great case study](https://www.matuzo.at/blog/beauty-of-progressive-enhancement/) covering how he built [Front-end Bookmarks](https://www.frontendbookmarks.com/). In the course of developing it, Manuel found that following the progressive enhancement philosophy in his development made it easy to support older/less feature rich browsers and devices:

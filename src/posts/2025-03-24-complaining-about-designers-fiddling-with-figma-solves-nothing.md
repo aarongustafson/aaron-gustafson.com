@@ -6,6 +6,7 @@ tags: ["design", "web development", "industry"]
 description: "Michael F. Buckley posted a somewhat imflamatory piece to the UX Collective blog over on Medium and I had some strong reactions to it I wanted to share."
 twitter_text: "Michael F. Buckley posted a somewhat imflamatory piece to the UX Collective blog over on Medium and I had some strong reactions to it I wanted to share."
 in_reply_to: https://uxdesign.cc/figmas-not-a-design-tool-it-s-a-rube-goldberg-machine-for-avoiding-code-2a24f11add5d
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw2olrb2l"
 ---
 
 Michael F. Buckley posted [a somewhat imflamatory piece to the UX Collective blog over on Medium](https://uxdesign.cc/figmas-not-a-design-tool-it-s-a-rube-goldberg-machine-for-avoiding-code-2a24f11add5d) and I had some strong reactions to it I wanted to share. You should read it first before continuing.

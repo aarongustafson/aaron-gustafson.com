@@ -5,6 +5,7 @@ comments: false
 tags:
   - "blogging"
 canonical: "https://blog.easy-designs.net/archives/now-read-this-6/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwqpnso2e"
 ---
 
 <div>We found some great design, UX, optimization, and innovation links for you last week. Enjoy!</div>

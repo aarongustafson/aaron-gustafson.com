@@ -8,6 +8,7 @@ tags:
   - "presentations"
 description: "A lot fo my work lately has been consulting and working with teams to help them to establish or improve upon their responsive strategies."
 canonical: "https://blog.easy-designs.net/archives/beyond-responsive-workshops-this-may/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwms5nj2k"
 ---
 
 <p>

@@ -7,6 +7,7 @@ tags:
   - "Windows"
 description: "Today is a momentous day."
 canonical: "https://blog.easy-designs.net/archives/an-end-to-aging-ie-installs/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwpnxyl2a"
 ---
 
 <p>Today is a momentous day.</p>

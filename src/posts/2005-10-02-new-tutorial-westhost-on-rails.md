@@ -7,6 +7,7 @@ tags:
   - "best practices"
 description: "I have been hosting on Westhost for a little over four years now with no major complaints and I also host the majority of my clients there. They offer a lot of options for very little money and are always adding new features to the..."
 canonical: "https://blog.easy-designs.net/archives/new-tutorial-westhost-on-rails/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx6wopk2h"
 ---
 
 <p>I have been hosting on <a href="http://www.westhost.com">Westhost</a> for a little over four years now with no major complaints and I also host the majority of my clients there. They offer a lot of options for very little money and are always adding new features to the accounts. Unfortunately, <a href="http://www.rubyonrails.org">Ruby on Rails</a> is not one of them… yet.</p>

@@ -6,6 +6,7 @@ tags: ["Adaptive Web Design", "progressive enhancement"]
 description: "A little background as to why I wrote the Second Edition of Adaptive Web Design and what you can expect from it."
 crossposted:
   Medium: https://medium.com/@AaronGustafson/on-adaptive-web-design-s-second-edition-80194844bd3e
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwgpgqg2e"
 ---
 
 I wrote the bulk of <cite>Adaptive Web Design</cite> in early 2010 while taking a much-needed break from client projects. I had originally slated for it to be released just before the holidays that year, but life happened and the book did not make it out into the world until mid-2011. Six months is a long time in the technical world, and especially on the Web. A year is forever.

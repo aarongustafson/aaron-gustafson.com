@@ -9,6 +9,7 @@ tags:
   - "JavaScript"
 description: "In our years of working with ExpressionEngine, we’ve tweaked our standard setup quite a few times. We generally handle most every asset, including CSS and JavaScript, as a template. Being a bit obsessed with organization and overall..."
 canonical: "https://blog.easy-designs.net/archives/template-based-asset-munging-in-expressionengine/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwvytrl2p"
 ---
 
 <p>In our years of working with ExpressionEngine, we’ve tweaked our standard setup quite a few times. We generally handle most every asset, including CSS and JavaScript, as a template. Being a bit obsessed with organization and overall maintainability of code, we separate out our styles and scripts into separate templates for each major concern (e.g. typography, color, screen layout, etc.).</p>

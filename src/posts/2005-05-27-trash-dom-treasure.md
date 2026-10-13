@@ -9,6 +9,7 @@ tags:
   - "JavaScript"
 description: "I was browsing the popular links on del.icio.us today and stumbled onto Nifty Corners and (via that page) More Nifty Corners . I have to say that I am incredibly impressed with the scripting, but I fear there is something wrong with..."
 canonical: "https://blog.easy-designs.net/archives/trash-dom-treasure/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnxaglyr2k"
 ---
 
 <p>I was browsing the popular links on <a href="http://del.icio.us/">del.icio.us</a> today and stumbled onto <a href="http://pro.html.it/esempio/nifty/">Nifty Corners</a> and (via that page) <a href="http://pro.html.it/articoli/id_599/idcat_31/pag_1/pag.html">More Nifty Corners</a>. I have to say that I am incredibly impressed with the scripting, but I fear there is something wrong with this picture.</p>

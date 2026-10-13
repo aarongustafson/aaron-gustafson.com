@@ -4,6 +4,7 @@ date: 2015-01-05 14:10:49 -05:00
 comments: true
 description: "I am currently working on the second edition of Adaptive Web Design, so it seemed only natural to release the entirety of the first edition, for free as HTML. And yes, the book is progressively enhanced."
 tags: ["web design", writing, "Adaptive Web Design"]
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwkq7qd2p"
 ---
 
 As you probably know, back in 2011 Easy Readers published my first solo book: [<cite>Adaptive Web Design</cite>](http://adaptivewebdesign.info). It was an immediate hit and the response to continues to be tremendous even though it will turn four this coming May (which has to be like 80 in technology book years… many are outdated before they are even released).

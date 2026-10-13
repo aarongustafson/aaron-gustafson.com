@@ -4,6 +4,7 @@ date: 2015-10-19 11:33:37 -04:00
 comments: true
 tags: ["web design", pranks]
 description: "I wrote a silly little extension that stops Bootstrap dead in its tracks."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwgspop2f"
 ---
 
 On Friday, [Kelly](https://twitter.com/ShirleyTemper) and I were having a conversation over lunch about the ubiquity of Bootstrap. It’s a topic we’ve been kvetching about for the the last few years—we’ve grown tired of seeing the same site everywhere we look.

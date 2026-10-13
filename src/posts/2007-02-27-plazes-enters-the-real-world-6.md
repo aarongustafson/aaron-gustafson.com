@@ -6,6 +6,7 @@ tags:
   - "personal"
 description: "From the plazes photostream ."
 canonical: "https://blog.easy-designs.net/archives/plazes-enters-the-real-world-6/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwxyzws2h"
 ---
 
 <p><a href="http://www.flickr.com/photos/plazes/403332059/"><img alt=" " src="http://farm1.static.flickr.com/149/403332059_110d65d9f4_o.jpg"/></a></p>

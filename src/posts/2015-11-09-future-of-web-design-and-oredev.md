@@ -3,6 +3,7 @@ title: "Future of Web Design &amp; Øredev"
 date: 2015-11-09 15:17:15 -05:00
 comments: true
 tags: [forms, "progressive enhancement", presentations, "web design"]
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwgfiui2w"
 ---
 
 Between [Future of Web Design](https://web.archive.org/web/20150821084438/https://futureofwebdesign.com/nyc-2015/) in New York City and [Øredev](https://web.archive.org/web/http://lanyrd.com/2015/oredev/) in Malmö, Sweden, I was a busy boy last week. I delivered three talks and a workshop in total and am a bit exhausted.

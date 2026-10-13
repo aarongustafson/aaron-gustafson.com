@@ -8,6 +8,7 @@ tags:
   - "philosophy"
 description: "In a recent post, Adrian Roselli ranted a bit about the awkward position we are in with regard to HTML 5 . Here’s a taste:"
 canonical: "https://blog.easy-designs.net/archives/html5-is-the-new-dhtml/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwpe76o2e"
 ---
 
 <p>In a recent post, <a href="http://blog.adrianroselli.com/2012/01/no-dhtml-please.html">Adrian Roselli ranted a bit about the awkward position we are in with regard to HTML5</a>. Here’s a taste:</p>

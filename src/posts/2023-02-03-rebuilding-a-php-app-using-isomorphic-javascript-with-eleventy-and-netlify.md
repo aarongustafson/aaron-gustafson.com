@@ -20,6 +20,7 @@ hero:
   offset: "75"
 crossposted:
   Codementor: https://www.codementor.io/@aarongustafson/rebuilding-a-php-app-using-isomorphic-javascript-with-eleventy-netlify-23cfltqu1v/
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw4aipw2u"
 ---
 
 Back in the early days of the iPhone, I created [Tipr](https://tipr.mobi), a tip calculator that always produces a palindrome total.[^1] This is an overview of the minimal work I did to make it a modern web app that can run without a traditional back-end.

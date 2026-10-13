@@ -8,6 +8,7 @@ tags:
   - "web development"
 description: "It managed to sneak past me for a few days, but my recent interview with Jeremy Keith has made its way into the latest issue of Digital Web Magazine . In the interview we cover the impetus behind his new book , WaSP ’s DOM Scripting..."
 canonical: "https://blog.easy-designs.net/archives/jeremy-keith-and-me/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx6tb7h2w"
 ---
 
 <p>It managed to sneak past me for a few days, but <a href="http://www.digital-web.com/articles/jeremy_keith/">my recent interview with Jeremy Keith</a> has made its way into the latest issue of <a href="http://www.digital-web.com/"><cite>Digital Web Magazine</cite></a>. In the interview we cover the impetus behind <a href="http://www.amazon.com/exec/obidos/redirect?path=ASIN/1590595335&amp;link_code=as2&amp;camp=1789&amp;tag=easydesign-20&amp;creative=9325">his new book</a>, <abbr title="Web Standards project">WaSP</abbr>’s DOM Scripting Task Force, and Jeremy’s future as a rockstar.</p>

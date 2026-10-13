@@ -4,6 +4,7 @@ date: 2015-01-22 17:27:27 -05:00
 comments: true
 tags: [personal]
 description: "So yeah, this happened…"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwjyix32p"
 ---
 
 So yeah, this happened:

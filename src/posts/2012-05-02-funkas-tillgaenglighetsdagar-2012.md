@@ -8,6 +8,7 @@ tags:
   - "conferences"
 description: "A few weeks back, I flew to Sweden to deliver a talk on progressive enhancement for mobile devices at Funkas Tillgänglighetsdagar , an accessibility conference whose name I will probably always butcher. I really enjoyed getting to know..."
 canonical: "https://blog.easy-designs.net/archives/funkas-tillgaenglighetsdagar-2012/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwoto3t2g"
 ---
 
 <p>

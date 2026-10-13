@@ -6,6 +6,7 @@ tags: ["web design", "progressive enhancement", "user experience"]
 description: "One of the greatest challenges of progressive enhancement lies not with the coding, but with the planning. It can be incredibly challenging to articulate how a single interface might adapt to a wide variety of situations. Interface Experience Maps (Ix Maps) can help."
 crossposted:
   Medium: https://medium.com/@AaronGustafson/ae3efd6266df
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwhvrzy2u"
 ---
 
 One of the greatest challenges of progressive enhancement lies not with the coding, but with the planning. It can be incredibly challenging to articulate how a single interface might adapt to a wide variety of situations. Interface Experience Maps (Ix Maps) can help.

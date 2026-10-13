@@ -6,6 +6,7 @@ tags: [Jekyll, Octopress, blogging, "indie web"]
 description: "Last week, Jeremy Keith posted about syndicating his content to Medium using their new API."
 crossposted:
   Medium: https://medium.com/@AaronGustafson/crossposting-to-medium-from-jekyll-eb52aa3379cb
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwgm3qz2k"
 ---
 
 Last week, [Jeremy Keith posted about syndicating his content to Medium using their new API](https://adactio.com/journal/9694). Before they added [the API](https://github.com/Medium/medium-api-docs), there was no way to automatically publishing to [Medium](https://medium.com) from your own blog. And doing it manually was quite tedious.

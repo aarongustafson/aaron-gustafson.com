@@ -9,6 +9,7 @@ series:
   name: "Honoring Black History"
   tag: series-black-history
   ordinal: "21st"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw7uehb2l"
 ---
 
 About a year ago, I picked up a copy of [<cite>Mae Among the Stars</cite>](https://www.goodreads.com/book/show/34907235-mae-among-the-stars) for Oscar. The book told an abbreviated story of Mae Carol Jemison, the first woman of color in space. The book itself is a little formulaic and simplistic, but so are most children’s books to be honest. But credit where credit’s due, it introduced me to [Dr. Mae Jemison](https://twitter.com/maejemison), who I hadn’t heard of previously.

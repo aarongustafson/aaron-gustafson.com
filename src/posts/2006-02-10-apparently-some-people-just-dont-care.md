@@ -8,6 +8,7 @@ tags:
   - "web standards"
 description: "On WaSP today, Derek wrote an incredibly poignant post about the NFB lawsuit against Target . In fact, I thought it so relevant to the interactive work we do at Cronin and Company (the ad agency I work for), that I forwarded a copy of..."
 canonical: "https://blog.easy-designs.net/archives/apparently-some-people-just-dont-care/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx3icgt2a"
 ---
 
 <p>On <a href="http://www.webstandards.org"><abbr title="Web Standards Project">WaSP</abbr></a> today, <a href="http://www.boxofchocolates.ca">Derek</a> wrote <a href="http://www.webstandards.org/2006/02/09/taking-aim-at-targetcom/">an incredibly poignant post about the <abbr title="National Federation of the Blind">NFB</abbr> lawsuit against Target</a>. In fact, I thought it so relevant to the interactive work we do at Cronin and Company (the ad agency I work for), that I forwarded a copy of it to everyone who works there. The reaction was, for the most part, pretty good (at least from those that read it), but there’s always at least one person who just doesn’t get it.</p>

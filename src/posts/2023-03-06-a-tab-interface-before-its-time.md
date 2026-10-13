@@ -12,6 +12,7 @@ hero:
   alt: "A photo of a steampunk robot sitting in the corner of a dusty shed. It is covered in spider webs, dust, and is partially draped in a sheet. It looks a little rusty, but also looks like it could still work if given a little care."
   url: https://labs.openai.com/s/YLRGLlmZlJWsO61Ag81Bo0X5
   offset: "0"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw45r362e"
 ---
 
 I finally got around to reading [the CSS Tricks piece on “Spicy Sections”](https://css-tricks.com/spicy-sections/) and it’s cool how closely what the [OpenUI folks](https://open-ui.org/) are talking about aligns with work I was doing in the mid-to-late oughts.

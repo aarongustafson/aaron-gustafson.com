@@ -8,6 +8,7 @@ tags:
   - "presentations"
 description: "Below you’ll find the slides from the talk I gave earlier today at Future of Web Design titled “ HTML 5: Smart Markup for Smarter Websites .” It’s been a long day, so that’s it for now. I’ll post my notes from some of the talks I caught..."
 canonical: "https://blog.easy-designs.net/archives/slides-from-fowd-nyc-2011/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwpxmbo2e"
 ---
 
 <p>Below you’ll find the slides from the talk I gave earlier today at <a href="http://futureofwebdesign.com/new-york-2011/">Future of Web Design</a> titled “<a href="http://www.slideshare.net/AaronGustafson/html5-smart-markup-for-smarter-websites-fowd-nyc-2011">HTML5: Smart Markup for Smarter Websites</a>.” It’s been a long day, so that’s it for now. I’ll post my notes from some of the talks I caught in a day or so (once I’ve finished prepping for Wednesday’s workshop).</p>

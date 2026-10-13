@@ -7,6 +7,7 @@ tags:
   - "progressive enhancement"
 description: "There’s been some great discussion surrounding my latest article for A List Apart . It is amazing to see how some people get the idea of progressive enhancement and some just don’t (or perhaps refuse to)."
 canonical: "https://blog.easy-designs.net/archives/ruining-reactions/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwxmbot2a"
 ---
 
 <p>There’s been <a href="http://www.alistapart.com/comments/ruininguserexperience/">some great discussion</a> surrounding <a href="http://www.alistapart.com/articles/ruininguserexperience/">my latest article for <cite>A List Apart</cite></a>. It is amazing to see how some people get the idea of progressive enhancement and some just don’t (or perhaps refuse to).</p>

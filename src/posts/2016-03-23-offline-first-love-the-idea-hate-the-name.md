@@ -4,6 +4,7 @@ date: 2016-03-28 08:25:26 -04:00
 comments: true
 tags: [philosophy, "web design"]
 description: "With the rise of Service Workers as a simple, usable means of making our content available offline, I thought it worth revisiting the idea of “offline first”, if only to address its core fallacy."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwfagzs2p"
 ---
 
 Back in 2014, I had the great pleasure of listening to [Ola Gasidlo](https://twitter.com/misprintedtype) of [Hood.ie](http://hood.ie/) [discuss the importance of offline](https://vimeo.com/103221949) at Beyond Tellerrand in Düsseldorf, Germany. Her excellent talk was my introduction to [the “Offline First” movement](https://www.google.com/search?q=offline+first) and, while I can get behind the idea, I’ve had some serious issues with the name. And with the rise of Service Workers as a simple, usable means of making our content available offline, I thought it worth revisiting the idea of “offline first”, if only to address its core fallacy.

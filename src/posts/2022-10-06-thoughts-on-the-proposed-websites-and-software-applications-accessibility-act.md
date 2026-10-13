@@ -19,6 +19,7 @@ hero:
   alt: "A photograph of a sledgehammer leaning against a pile of bricks and rubble."
   url: https://labs.openai.com/s/5TVrwg4U549xQrE7rMtoWoO6
   offset: "300"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw4jjas2p"
 ---
 
 Last month, Senator Tammy Duckworth (D-Ill.) and Representative John P. Sarbanes (D-Md.) introduced the Websites and Software Applications Accessibility Act—I’m gonna call it the WS3A for short—simultaneously in the U.S. Senate ([S. 4998](https://www.congress.gov/bill/117th-congress/senate-bill/4998)) and House of Representatives ([H.R. 9021](https://www.congress.gov/bill/117th-congress/house-bill/9021)) to explicitly bring websites—and other forms of digital media that didn’t exist when the ADA was signed into law—into the purview of the Americans with Disabilities Act (ADA). I am definitely in favor of this effort as it removes the ambiguity that currently exists in U.S. law as to whether websites are governed by the ADA. The WS3A is a reasonable framework, but there is still a lot of work to be done when it (hopefully) passes.

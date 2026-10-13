@@ -6,6 +6,7 @@ tags:
   - "blogging"
 description: "We found some awesome links last week:"
 canonical: "https://blog.easy-designs.net/archives/now-read-this-3/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwruqjs2p"
 ---
 
 <p>We found some awesome links last week:</p>

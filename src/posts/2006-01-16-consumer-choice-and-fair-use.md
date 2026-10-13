@@ -8,6 +8,7 @@ tags:
   - "society"
 description: "In a recent issue of Game Informer , I read an interesting news piece on the upcoming PS 3 , but its significance goes far beyond that system and even the world of video games. In fact, it applies to all digital media."
 canonical: "https://blog.easy-designs.net/archives/consumer-choice-and-fair-use/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx4biar2l"
 ---
 
 <p>In a recent issue of <cite>Game Informer</cite>, I read an interesting news piece on the upcoming <abbr title="PlayStation 3">PS3</abbr>, but its significance goes far beyond that system and even the world of video games. In fact, it applies to all digital media.</p>

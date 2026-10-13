@@ -7,6 +7,7 @@ tags:
   - "writing"
 description: "Apparently I missed the release of Web Design in a Nutshell, 3rd Edition . It hit bookshelves February 23rd. I haven’t seen a physical copy yet, but Jen ’s got a few copies for me when I get down to SXSW ."
 canonical: "https://blog.easy-designs.net/archives/i-missed-it/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx2uqm72f"
 ---
 
 <p><a href="http://www.amazon.com/exec/obidos/redirect?path=ASIN/0596009879&amp;link_code=as2&amp;camp=1789&amp;tag=easydesign-20&amp;creative=9325"><img alt="Web Design in a Nutshell, 3rd Edition" class="feature" id="image82" src="/i/posts/2006-03-06/WDiaN.gif"/></a></p>

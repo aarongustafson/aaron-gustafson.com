@@ -8,6 +8,7 @@ tags:
   - "conferences"
 description: "A little over a month ago I had the pleasure of speaking at Beyond Tellerrand in Düsseldorf, Germany. It was my second time speaking (and attending) the conference and I can honestly say it’s easily one of my favorites. Marc Thiele does..."
 canonical: "https://blog.easy-designs.net/archives/designing-with-empathy-at-btconf/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwnvsyh25"
 ---
 
 {% from "macros.njk" import youtube %}

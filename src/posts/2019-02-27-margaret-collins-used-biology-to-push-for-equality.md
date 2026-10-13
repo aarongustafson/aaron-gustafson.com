@@ -9,6 +9,7 @@ series:
   name: "Honoring Black History"
   tag: series-black-history
   ordinal: "27th"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw7cpsr2n"
 ---
 
 Unless you’re really into bugs, the name Margaret S. Collins may not mean that much to you. She was an entomologist who specialized in the study of termites, publishing prolifically throughout her career. She wasn’t just the “Termite Lady,” though, she was also an advocate for civil rights who pushed for equality through scientific investigation, risking both her life and freedom.

@@ -7,6 +7,7 @@ description: "I had the great pleasure of delivering the following talk at the E
 twitter_text: "Here’s the text of my talk at #EdgeWebSummit: "
 crossposted:
   Medium: https://medium.com/@AaronGustafson/2bdf13879042
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwez7kx25"
 ---
 
 _I had the great pleasure of delivering the following talk at the [Edge Web Summit](https://web.archive.org/web/http://lanyrd.com/2016/edgesummit/) on April 4th. The talk is largely about accessibility with a push for thinking about the future of the interface and how considering accessibility now will help us prepare for a world of “headless UIs”._

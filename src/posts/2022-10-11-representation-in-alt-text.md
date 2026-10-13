@@ -12,6 +12,7 @@ hero:
   alt: "Impressionist painting of a female Black doctor racing out to hand a file folder to Filipino woman in a wheelchair. Both are smiling."
   url: https://labs.openai.com/s/jkgbd3qsovfM8VSnvusHac3n
   offset: "100"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw4geo22p"
 ---
 
 Inclusion can take many forms.

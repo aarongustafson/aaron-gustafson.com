@@ -8,6 +8,7 @@ tags:
   - "Adaptive Web Design"
 description: "Lately I’ve been doing a few more podcasts, local events, and interviews. Here’s a round-up of a few that posted in the last week or so:"
 canonical: "https://blog.easy-designs.net/archives/adaptive-design-empathy-and-beating-creative-block/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwmvktz2n"
 ---
 
 {% from "macros.njk" import youtube %}

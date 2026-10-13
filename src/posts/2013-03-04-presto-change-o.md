@@ -7,6 +7,7 @@ tags:
   - "web standards"
 description: "As you’ve probably heard, Opera has announced that they are abandoning their Presto rendering engine in favor of Webkit . CTO Håkon Wium Lie (you know, one of the guys who invented CSS ) has stated that this will allow Opera’s resources..."
 canonical: "https://blog.easy-designs.net/archives/presto-change-o/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwodcu22l"
 ---
 
 <p>

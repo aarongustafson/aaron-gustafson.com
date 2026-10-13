@@ -4,6 +4,7 @@ date: 2020-06-17 14:57:19 -07:00
 comments: true
 tags: ["progressive web apps"]
 description: "Rayan Kanso and I are currently working on a proposal for Shortcuts v2, which will introduce a JavaScript API for managing Shortcuts and we’d love your input."
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw5jkvj2l"
 ---
 
 You may or may not be aware, but [the Shortcuts feature](https://www.w3.org/TR/appmanifest/#shortcuts-member) for PWAs [has begun rolling out in Chromium-based browsers](https://www.windowslatest.com/2020/01/20/microsoft-is-adding-shortcuts-menu-to-chrome-pwas/) and implementation is underway in other browsers as well. The first version of Shortcuts provides you with the ability to define a small set of links in your Manifest. Rayan Kanso and I are currently working on [a proposal for Shortcuts v2](https://github.com/rayankans/app-shortcuts) which will introduce a JavaScript API for managing these links and we’d love your input too.

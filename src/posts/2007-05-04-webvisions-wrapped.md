@@ -7,6 +7,7 @@ tags:
   - "conferences"
 description: "I just wrapped my presentation at WebVisions and have posted the slides for my talk, titled “Learning to Love Forms,” up on SlideShare . I have also embedded them below (though the formatting is a bit off on some of the longer sidebars)."
 canonical: "https://blog.easy-designs.net/archives/webvisions-wrapped/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwxje3j2l"
 ---
 
 <p>I just wrapped my presentation at WebVisions and have posted the slides for my talk, titled “Learning to Love Forms,” up on <a href="http://www.slideshare.net">SlideShare</a>. I have also embedded them below (though the formatting is a bit off on some of the longer sidebars).</p>

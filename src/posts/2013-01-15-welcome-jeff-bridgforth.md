@@ -7,6 +7,7 @@ tags:
   - "personal"
 description: "Today, I have the honor of introducing you to the newest Easy team member: Jeff Bridgforth . Jeff comes to us from Bonnier, where he built websites for Popular Science , Popular Photography , Saveur , and Parenting . Being a former..."
 canonical: "https://blog.easy-designs.net/archives/welcome-jeff-bridgforth/"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwojlt22p"
 ---
 
 <p>Today, I have the honor of introducing you to the newest Easy team member: <a href="http://jeffbridgforth.com/">Jeff Bridgforth</a>. Jeff comes to us from Bonnier, where he built websites for <cite>Popular Science</cite>, <cite>Popular Photography</cite>, <cite>Saveur</cite>, and <cite>Parenting</cite>. Being a former publishing guy myself, I’m delighted to be bringing someone on who has a solid grounding in content-rich websites.</p>
