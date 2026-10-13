@@ -74,7 +74,6 @@ $avatar-width: 48;
 	&__author {
 		@include rem(font-size, $font-size-small);
 		font-weight: $font-weight-sansserif-bold;
-		position: relative;
 	}
 
 	&--author-starts .h-card .p-name {
@@ -138,6 +137,7 @@ $avatar-width: 48;
 
 		.webmention__author {
 			display: inline;
+			position: relative;
 
 			&__photo {
 				border: 1px solid;
