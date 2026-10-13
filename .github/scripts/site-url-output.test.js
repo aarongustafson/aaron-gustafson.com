@@ -3,6 +3,8 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 
 import { htmlBaseOptions } from "../../_11ty/html-base.js";
+import filters from "../../_11ty/filters.js";
+import { setWebmentionsData } from "../../_11ty/webmentions-store.js";
 
 test("HTML base configuration preserves authored URLs", () => {
 	assert.deepEqual(htmlBaseOptions, { baseHref: "/" });
@@ -74,4 +76,28 @@ test("the carbon badge requests the absolute canonical page URL", () => {
 		/https:\/\/api\.websitecarbon\.com\/b\?url=/,
 	);
 	assert.doesNotMatch(carbonBadgePartial, /website-carbon-badges/);
+});
+
+test("webmentions stay in the shared lookup store", () => {
+	setWebmentionsData({
+		urlIndex: {
+			"https://example.com/current/": [2],
+			"https://example.com/old/": [1, 2],
+		},
+		compactData: {
+			1: { "wm-id": 1, name: "First" },
+			2: { "wm-id": 2, name: "Second" },
+		},
+	});
+
+	const mentions = filters.getWebmentionsForUrl(
+		{ totalCount: 2 },
+		"https://example.com/current/",
+		"https://example.com/old/",
+	);
+
+	assert.deepEqual(
+		mentions.map((mention) => mention["wm-id"]),
+		[1, 2],
+	);
 });

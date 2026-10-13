@@ -1,5 +1,6 @@
 import { DateTime } from "luxon";
 import widont from "widont";
+import { getWebmentionsForUrls } from "./webmentions-store.js";
 
 function parse_date(date) {
 	if (!date) {
@@ -290,6 +291,11 @@ export default {
 	},
 
 	getWebmentionsForUrl: (webmentions, url, old_url) => {
+		const storedMentions = getWebmentionsForUrls(url, old_url);
+		if (storedMentions) {
+			return storedMentions;
+		}
+
 		// Use URL index if available for O(1) lookup instead of O(n) filtering
 		if (webmentions.urlIndex) {
 			const mentions = [];

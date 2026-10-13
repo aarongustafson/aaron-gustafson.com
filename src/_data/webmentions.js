@@ -2,6 +2,7 @@ import fs from "fs";
 import unionBy from "lodash/unionBy.js";
 import fetch from "node-fetch";
 import { gunzipSync, gzipSync } from "zlib";
+import { setWebmentionsData } from "../../_11ty/webmentions-store.js";
 
 // Load .env variables with dotenv
 import dotenv from "dotenv";
@@ -408,24 +409,17 @@ export default async function () {
 
 	// Return data in format expected by templates
 	if (!processedData) {
+		setWebmentionsData(null);
 		return {
 			lastFetched: null,
-			children: [],
-			urlIndex: {},
-			typeIndex: {},
 			totalCount: 0,
 		};
 	}
 
-	// Convert compact data back to array format for templates
-	const children = Object.values(processedData.compactData);
+	setWebmentionsData(processedData);
 
 	return {
 		lastFetched: processedData.lastFetched,
-		children: children,
-		urlIndex: processedData.urlIndex,
-		typeIndex: processedData.typeIndex,
-		compactData: processedData.compactData,
 		totalCount: processedData.totalCount,
 	};
 }
