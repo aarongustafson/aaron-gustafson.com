@@ -6,6 +6,7 @@ dotenv.config();
 import markdownIt from "markdown-it";
 import markdownit_attrs from "markdown-it-attrs";
 import markdownit_footnote from "markdown-it-footnote";
+import { tagsToShareCardText } from "../../_11ty/share-card-config.js";
 const markdown_options = {
   html: true,
   linkify: true,
@@ -28,16 +29,6 @@ function showPost(data) {
   const isFutureDate = data.page.date > todaysDate;
   //console.log('slug', data.page.fileSlug, 'draft', isDraft, 'future', isFutureDate);
   return isDevEnv || (!isDraft && !isFutureDate);
-}
-
-function tagsToString(tags) {
-  var non_alpha_numeric = /[^a-zA-z0-9]/g;
-  tags = tags || [];
-  tags = tags.slice(0, 3); // no more than 3
-  tags = tags.map((tag) => {
-    return "#" + tag.toLowerCase().replace(non_alpha_numeric, "-");
-  });
-  return tags.join(" ");
 }
 
 function tagsToColor(tags) {
@@ -116,12 +107,14 @@ export default {
       return tagsToColor(data.tags);
     },
     image: async function (data) {
-      if (data.hero) {
-        return `${data.site.url}${data.hero.src}`;
+      if (data.image && process.env.FORCE_SHARE_CARDS !== "true") {
+        return data.image;
       }
-      // Generate (or return cached) share-card image locally — no Cloudinary needed.
+      if (data.hero) {
+        return this.generateHeroShareCard(data.hero, data.page.fileSlug);
+      }
       return this.generateShareCard(
-        [data.title, tagsToString(data.tags)],
+        [data.title, tagsToShareCardText(data.tags)],
         data.page.fileSlug,
       );
     },
