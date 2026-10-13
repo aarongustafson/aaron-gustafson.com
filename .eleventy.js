@@ -15,6 +15,7 @@ import anchor from "markdown-it-anchor";
 import markdownit_attrs from "markdown-it-attrs";
 import markdownit_footnote from "markdown-it-footnote";
 import filters from "./_11ty/filters.js";
+import { htmlBaseOptions } from "./_11ty/html-base.js";
 const markdown_options = {
   html: true,
   linkify: true,
@@ -177,9 +178,7 @@ export default async (config) => {
       }
       : {},
   );
-  config.addPlugin(EleventyHtmlBasePlugin, {
-    baseHref: PRODUCTION ? "https://www.aaron-gustafson.com" : "",
-  });
+  config.addPlugin(EleventyHtmlBasePlugin, htmlBaseOptions);
   config.addPlugin(embedEverything, {
     // Add more aggressive caching for better performance
     youtube: {

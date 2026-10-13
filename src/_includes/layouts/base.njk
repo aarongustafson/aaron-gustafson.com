@@ -72,7 +72,7 @@
 		<header role="banner" class="banner">
 			<div class="layout-container">
 				{% set title_tag %}{% if body_class == "home" %}h1{% else %}b{% endif %}{% endset %}
-				<{{ title_tag }} class="site-title"><a href="{{ site_url }}/" aria-label="Return to Aaron Gustafson’s homepage">{{ site.title }}</a></{{ title_tag }}>
+				<{{ title_tag }} class="site-title"><a href="/" aria-label="Return to Aaron Gustafson’s homepage">{{ site.title }}</a></{{ title_tag }}>
 				{% if body_class == "home" %}
 					<h2 class="site-subtitle">{{ site.subtitle }}</h2>
 				{% endif %}
