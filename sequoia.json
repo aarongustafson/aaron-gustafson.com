@@ -1,15 +1,15 @@
 {
-  "$schema": "https://tangled.org/stevedylan.dev/sequoia/raw/main/sequoia.schema.json",
-  "siteUrl": "https://www.aaron-gustafson.com/",
-  "contentDir": "./src/posts",
-  "imagesDir": "./src/static/i/share-cards",
-  "publicDir": "./src/static/.well-known",
-  "outputDir": "./dist",
-  "pathPrefix": "/notebook/",
-  "publicationUri": "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.publication/3mxrnn345yl2w",
-  "frontmatter": {
-    "publishDate": "date",
-    "coverImage": "image"
-  },
-  "publishContent": true
+	"$schema": "https://tangled.org/stevedylan.dev/sequoia/raw/main/sequoia.schema.json",
+	"siteUrl": "https://www.aaron-gustafson.com/",
+	"contentDir": "./src/posts",
+	"imagesDir": "./src/static/i/share-cards",
+	"publicDir": "./src/static",
+	"outputDir": "./dist",
+	"pathPrefix": "/notebook/",
+	"publicationUri": "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.publication/3mxrnn345yl2w",
+	"frontmatter": {
+		"publishDate": "date",
+		"coverImage": "image"
+	},
+	"publishContent": true
 }
