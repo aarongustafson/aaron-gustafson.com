@@ -20,3 +20,27 @@ test("the site title uses a root-relative homepage URL", () => {
 	);
 	assert.doesNotMatch(baseLayout, /\bsite_url\b/);
 });
+
+test("webmentions use each post's absolute canonical target", () => {
+	const webmentionsPartial = fs.readFileSync(
+		new URL(
+			"../../src/_includes/partials/post/webmentions.njk",
+			import.meta.url,
+		),
+		"utf8",
+	);
+	const webmentionsScript = fs.readFileSync(
+		new URL("../../src/_javascript/post/WebmentionIO.js", import.meta.url),
+		"utf8",
+	);
+
+	assert.match(
+		webmentionsPartial,
+		/data-webmention-target="\{\{ this_url \}\}"/,
+	);
+	assert.match(
+		webmentionsScript,
+		/getAttribute\("data-webmention-target"\)/,
+	);
+	assert.match(webmentionsScript, /"per-page=10000&"/);
+});

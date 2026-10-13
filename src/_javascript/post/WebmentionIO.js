@@ -7065,18 +7065,27 @@ WebmentionIO.types = {
 	}
 
 	var targets = [],
+		$webmentions = document.getElementById("webmentions"),
 		$redirects = document.querySelector(
 			'meta[property="webmention:redirected_from"]',
 		),
 		redirects,
-		base_url = window.location.origin,
+		$target_url,
+		target_url,
+		base_url,
 		$script;
 
-	if (base_url.indexOf("localhost") > -1) {
-		base_url = "https://www.aaron-gustafson.com";
-	}
+	target_url = $webmentions
+		? $webmentions.getAttribute("data-webmention-target")
+		: null;
+	target_url =
+		target_url ||
+		"https://www.aaron-gustafson.com" + window.location.pathname;
+	$target_url = document.createElement("a");
+	$target_url.href = target_url;
+	base_url = $target_url.protocol + "//" + $target_url.host;
 
-	targets.push(base_url + window.location.pathname);
+	targets.push(target_url);
 	if ($redirects) {
 		redirects = $redirects.getAttribute("content").split(",");
 		redirects.forEach(function (value) {
@@ -7090,6 +7099,7 @@ WebmentionIO.types = {
 	$script.async = true;
 	$script.src =
 		"https://webmention.io/api/mentions?" +
+		"per-page=10000&" +
 		"jsonp=window.WebmentionIO.processWebmentions&target[]=" +
 		targets.join("&target[]=");
 	document.querySelector("head").appendChild($script);
