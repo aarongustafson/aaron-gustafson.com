@@ -1,14 +1,60 @@
 /* Website Carbon Badge */
-#wcb.carbonbadge,
-#wcb.carbonbadge #wcb_a {
+#wcb.carbonbadge {
 	--b1: #2c2825;
+	--b2: #00ffbc;
+	color: var(--b1);
+	font-family: system-ui, sans-serif;
+	font-size: 15px;
+	line-height: 1.15;
+	text-align: center;
+
+	sub {
+		font-size: 0.7em;
+		position: relative;
+		top: 0.3em;
+		vertical-align: middle;
+	}
 }
 .dark-mode #wcb.carbonbadge {
 	--b1: #fff;
 }
+#wcb.carbonbadge #wcb_2,
 #wcb.carbonbadge #wcb_g,
 #wcb.carbonbadge #wcb_a {
+	align-items: center;
+	display: inline-flex;
+	font-size: 1em;
+	justify-content: center;
+	line-height: 1.15;
+	margin: 0.2em 0;
+	text-align: center;
+	text-decoration: none;
+}
+#wcb.carbonbadge #wcb_g,
+#wcb.carbonbadge #wcb_a {
+	border: 0.13em solid var(--b2);
 	color: #2c2825;
+	padding: 0.3em 0.5em;
+}
+#wcb.carbonbadge #wcb_g {
+	background: #fff;
+	border-radius: 0.3em 0 0 0.3em;
+	border-right: 0;
+	min-width: 8.2em;
+}
+#wcb.carbonbadge #wcb_a {
+	--b1: #2c2825;
+	background: var(--b1);
+	border-color: var(--b1);
+	border-left: 0;
+	border-radius: 0 0.3em 0.3em 0;
+	color: #fff;
+	font-weight: 700;
+}
+#wcb.carbonbadge.wcb-d #wcb_a {
+	background: var(--b2);
+	border-color: var(--b2);
+	color: var(--b1);
 }
 .dark-mode #wcb.carbonbadge #wcb_2 {
 	color: #fff;

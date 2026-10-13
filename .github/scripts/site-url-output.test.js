@@ -44,3 +44,34 @@ test("webmentions use each post's absolute canonical target", () => {
 	);
 	assert.match(webmentionsScript, /"per-page=10000&"/);
 });
+
+test("the carbon badge requests the absolute canonical page URL", () => {
+	const carbonBadgePartial = fs.readFileSync(
+		new URL(
+			"../../src/_includes/partials/global/carbon-badge.njk",
+			import.meta.url,
+		),
+		"utf8",
+	);
+	const carbonBadgeScript = fs.readFileSync(
+		new URL(
+			"../../src/_javascript/main/carbon-badge.js",
+			import.meta.url,
+		),
+		"utf8",
+	);
+
+	assert.match(
+		carbonBadgePartial,
+		/data-carbon-target="\{\{ site\.url \+ page\.url \}\}"/,
+	);
+	assert.match(
+		carbonBadgeScript,
+		/getAttribute\("data-carbon-target"\)/,
+	);
+	assert.match(
+		carbonBadgeScript,
+		/https:\/\/api\.websitecarbon\.com\/b\?url=/,
+	);
+	assert.doesNotMatch(carbonBadgePartial, /website-carbon-badges/);
+});
