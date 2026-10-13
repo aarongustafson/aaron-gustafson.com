@@ -7116,7 +7116,7 @@ WebmentionIO.types = {
 		if ($webmention_link.parentNode.hidden) {
 			$webmention_link.parentNode.hidden = false;
 			$webmention_link_section.hidden = false;
-			$webmention_link_section.previousSibling.hidden = false;
+			$webmention_link_section.previousElementSibling.hidden = false;
 		}
 	}
 

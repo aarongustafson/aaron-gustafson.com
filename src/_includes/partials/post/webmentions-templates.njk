@@ -42,15 +42,14 @@
       <li class="webmentions__item webmention TEMPLATE_CLASS">
         <div class="webmention__author p-author h-card">
           <a class="u-url" rel="nofollow" data-mention-url="{{ mention.url }}">
-            {% if mention.author.photo %}
-              <img class="webmention__author__photo u-photo"
-                   width="48" height="48" loading="lazy"
-                   alt="{{ mention.author.name }}"
-                   title="{{ mention.author.name }}"
-                   data-responsiver="ignore"
-                   data-mention-author-photo="{{ mention.author.photo }}"
-                   >
-            {% endif %}
+            <img class="webmention__author__photo u-photo"
+                 width="48" height="48" loading="lazy"
+                 src="/i/fallbacks/avatar.svg"
+                 alt="{{ mention.author.name }}"
+                 title="{{ mention.author.name }}"
+                 data-responsiver="ignore"
+                 data-mention-author-photo="{{ mention.author.photo }}"
+                 >
           </a>
         </div>
       </li>
