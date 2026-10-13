@@ -46,13 +46,13 @@ WebmentionIO.types = {
 
 				// hand them out
 				doleOutWebmentions(webmentions);
-
-				// reset the counters
-				if (this.counter_update_event) {
-					document.dispatchEvent(this.counter_update_event);
-				}
 			} else {
 				// console.log( 'no new webmentions to add' );
+			}
+
+			// reset the counters after every successful API response
+			if (this.counter_update_event) {
+				document.dispatchEvent(this.counter_update_event);
 			}
 		}
 	};
@@ -7103,24 +7103,25 @@ WebmentionIO.types = {
 		return;
 	}
 
-	var $webmention_link = document.querySelector('a[href="#webmentions"]'),
+	var $webmentions = document.getElementById("webmentions"),
+		$webmention_link = document.querySelector('a[href$="#webmentions"]'),
 		$webmention_link_section = document.querySelector(
-			'dd:has(a[href="#webmentions"])',
+			'dd:has(a[href$="#webmentions"])',
 		),
 		event_name = "WebmentionIO:update_counters";
 
 	function updateCounts() {
-		var count = document.querySelectorAll(".webmention").length;
+		var count = $webmentions.querySelectorAll(".webmention").length;
 		$webmention_link.innerText = count + " Webmentions";
 
-		if ($webmention_link.parentNode.hidden) {
+		if (count > 0 && $webmention_link.parentNode.hidden) {
 			$webmention_link.parentNode.hidden = false;
 			$webmention_link_section.hidden = false;
 			$webmention_link_section.previousElementSibling.hidden = false;
 		}
 	}
 
-	if ($webmention_link) {
+	if ($webmentions && $webmention_link) {
 		WebmentionIO.counter_update_event = new Event(event_name);
 		document.addEventListener(event_name, updateCounts, false);
 	}
