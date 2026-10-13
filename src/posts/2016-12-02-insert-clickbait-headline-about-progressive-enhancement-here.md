@@ -12,6 +12,7 @@ thanks:
   "Jason Garber": https://sixtwothree.org/
   "Tim Kadlec": "https://timkadlec.com/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwe4c3q2w"
+image: "/i/share-cards/insert-clickbait-headline-about-progressive-enhancement-here.jpg"
 ---
 
 Late last week, Josh Korr, a project manager at Viget, posted at length about [what he sees as a fundamental flaw with the argument for progressive enhancement](https://www.viget.com/articles/the-case-against-progressive-enhancements-flimsy-moral-foundation). In reading the post, it became clear to me that Josh really doesn’t have a good grasp on progressive enhancement or the reasons its proponents think it’s a good philosophy to follow. Despite claiming to be “an expert at spotting fuzzy rhetoric and teasing out what’s really being said”, Josh makes a lot of false assumptions and inferences. My response would not have fit in a comment, so here it is…

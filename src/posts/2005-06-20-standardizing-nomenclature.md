@@ -8,6 +8,7 @@ tags:
 description: "I agree with Richard : peoples’ eyes do glaze over when you say “semantic,” but they don’t have to. When Molly & I co-teach or when I am on my own, I always try to strike a balance by alternating “meaningful” and “semantic.” I feel it..."
 canonical: "https://blog.easy-designs.net/archives/standardizing-nomenclature/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnxa4w7p2w"
+image: "/i/share-cards/standardizing-nomenclature.jpg"
 ---
 
 <p>I agree with <a href="http://www.clagnut.com">Richard</a>: peoples’ eyes do glaze over when you say “semantic,” but they don’t have to. When <a href="http://www.molly.com">Molly</a> & I co-teach or when I am on my own, I always try to strike a balance by alternating “meaningful” and “semantic.” I feel it is important that “semantic” does not go away because it does have value. That said, it is necessary to relate to your audience, no matter what their level or experience, so I think alternating the terms and showing the interchangability of the two is beneficial for everyone.</p>

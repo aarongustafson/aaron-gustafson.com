@@ -9,6 +9,7 @@ tags:
 description: "I just encountered a DOM implementation issue in IE which took about three hours to solve (and like a year off my life). The story goes like this:"
 canonical: "https://blog.easy-designs.net/archives/death-to-bad-dom-implementations/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx7jpvx25"
+image: "/i/share-cards/death-to-bad-dom-implementations.jpg"
 ---
 
 <p>I just encountered a DOM implementation issue in <abbr title="Internet Explorer">IE</abbr> which took about three hours to solve (and like a year off my life). The story goes like this:</p>

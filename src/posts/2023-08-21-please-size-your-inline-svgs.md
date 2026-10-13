@@ -14,6 +14,7 @@ hero:
 crossposted:
   Medium: https://medium.com/@AaronGustafson/please-size-your-inline-svgs-4f915f59e48c
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw3picr2n"
+image: "/i/share-cards/please-size-your-inline-svgs.jpg"
 ---
 
 While it is a bit of an edge case, every now and then I’ll hit a site—yes, even a high profile one—and the CSS will fail to load for some reason. When this happens, inevitably every inline SVG resource on the page will grow to fill the entire width of my viewport, making for a _really_ awkward experience.

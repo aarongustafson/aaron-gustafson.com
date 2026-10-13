@@ -6,6 +6,7 @@ tags: ["accessibility", "animation", "CSS", "design", "JavaScript"]
 description: "While working on a recent project I noticed an issue with a `canvas`-based audio visualization when I toggled between light and dark modes. I couldn’t find any articles on to make `canvas` respond nicely to user preferences, so I thought I’d share (in brief) how I solved it."
 twitter_text: "Need to pipe your CSS theme into a `canvas` element? Here’s how I did it."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw2j4op25"
+image: "/i/share-cards/passing-your-css-theme-to-canvas.jpg"
 ---
 
 While working on a recent project I noticed an issue with a `canvas`-based audio visualization when I toggled between light and dark modes. When I’d originally set it up I was browsing in dark mode and the light visualization stroke showed up perfectly on the dark background, but it was invisible when viewed using the light theme (which I’d neglected to test). I searched around, but didn’t find any articles on easy ways to make `canvas` respond nicely to user preferences, so I thought I’d share (in brief) how I solved it.

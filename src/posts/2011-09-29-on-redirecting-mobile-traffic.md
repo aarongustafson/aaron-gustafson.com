@@ -8,6 +8,7 @@ tags:
 description: "While perusing the latest Costco email, I stumbled onto a pretty sweet looking mini-greenhouse and decided to click through to read more about the product. Unfortunately for me, I was on my phone and Costco is not particularly savvy..."
 canonical: "https://blog.easy-designs.net/archives/on-redirecting-mobile-traffic/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwqbxkp2w"
+image: "/i/share-cards/on-redirecting-mobile-traffic.jpg"
 ---
 
 <p>While perusing the latest Costco email, I stumbled onto <a href="http://www.costco.com/Browse/Product.aspx?Prodid=11524865">a pretty sweet looking mini-greenhouse</a> and decided to click through to read more about the product. Unfortunately for me, I was on my phone and Costco is not particularly savvy about how they handle the redirection of mobile traffic to their “mobile friendly” site. Instead of landing on the product page as I should have, I was redirected to the mobile landing page.</p>

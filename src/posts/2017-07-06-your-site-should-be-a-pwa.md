@@ -9,6 +9,7 @@ crossposted:
   Medium: https://medium.com/@AaronGustafson/97ddcc21c2cb
   Codementor: https://www.codementor.io/@aarongustafson/your-site-any-site-should-be-a-pwa-a69pe17og/
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwcphz62e"
+image: "/i/share-cards/your-site-should-be-a-pwa.jpg"
 ---
 
 The other day, [Frances Berriman](https://fberriman.com/)—who coined the term “Progressive Web App”—[wrote a bit about how she came up with that name](https://fberriman.com/2017/06/26/naming-progressive-web-apps/). In it she clearly points out that the name has become a little problematic in dev circles<!-- more -->:

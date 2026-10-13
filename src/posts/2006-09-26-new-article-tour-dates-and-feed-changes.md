@@ -9,6 +9,7 @@ tags:
 description: "Hello, my name is Aaron Gustafson and I’m a delinquent blogger. It’s been over a month since my last confession post ."
 canonical: "https://blog.easy-designs.net/archives/new-article-tour-dates-and-feed-changes/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwygqel2a"
+image: "/i/share-cards/new-article-tour-dates-and-feed-changes.jpg"
 ---
 
 <p>Hello, my name is Aaron Gustafson and I’m a delinquent blogger. It’s been over a month since my last <del>confession</del><ins>post</ins>.</p>

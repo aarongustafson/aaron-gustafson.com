@@ -8,6 +8,7 @@ tags:
 description: "First off, let me preface this by saying I just got back to the East Coast after catching a red-eye from San Francisco on Saturday night, so if I seem a bit incoherent, that’s likely why."
 canonical: "https://blog.easy-designs.net/archives/alex-russell-is-not-a-heretic/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwwwyzl2a"
+image: "/i/share-cards/alex-russell-is-not-a-heretic.jpg"
 ---
 
 <p>First off, let me preface this by saying I just got back to the East Coast after catching a red-eye from San Francisco on Saturday night, so if I seem a bit incoherent, that’s likely why.</p>

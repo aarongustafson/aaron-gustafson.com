@@ -5,6 +5,7 @@ comments: true
 tags: ["web design", browsers, "progressive enhancement"]
 description: "I don’t think we need to break up with IE8, we just need to define our relationship a bit better."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwiwq732g"
+image: "/i/share-cards/lines-in-the-sand.jpg"
 ---
 
 A new site, [Break Up with Internet Explorer 8](http://breakupwithie8.com/) by [Humaan](http://www.humaan.com/), has been making the rounds on the Interwebs of late. It’s cleverly done and an attractive site, but I don’t really agree with the premise:

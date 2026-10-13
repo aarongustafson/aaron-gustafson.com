@@ -7,6 +7,7 @@ crossposted:
 tags: [personal]
 description: "A bit of a reflection on my now decade-long relationship with Twitter."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwe74m725"
+image: "/i/share-cards/ten-years-on-twitter.jpg"
 ---
 
 Ten years ago today:

@@ -14,6 +14,7 @@ tags:
 description: "Unfortunately, I was unable to spend Tuesday in Nashville for An Event Apart (for reasons that will be revealed in about a month), but I did catch Monday and it was amazing."
 redirect_from: /notebook/slides-the-features-of-highly-effective-forms-at-an-event-apart-nashville/
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwfdtlk2h"
+image: "/i/share-cards/an-event-apart-nashville-2016-day-one.jpg"
 ---
 
 Unfortunately, I was unable to spend Tuesday in Nashville for An Event Apart (for reasons that will be revealed in about a month), but I did catch Monday and it was amazing.

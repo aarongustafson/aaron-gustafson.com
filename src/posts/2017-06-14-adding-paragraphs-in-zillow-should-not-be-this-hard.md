@@ -7,6 +7,7 @@ description: "Paragraphs serve as a distinct piece of writing. They generally en
 crossposted:
   Medium: https://medium.com/@AaronGustafson/ab16f1434f8b
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwcszp22l"
+image: "/i/share-cards/adding-paragraphs-in-zillow-should-not-be-this-hard.jpg"
 ---
 
 Kelly and I are in the process of [selling our (beautiful) home](https://www.zillow.com/homedetails/1115-Hanover-St-Chattanooga-TN-37405/41420955_zpid/?fullpage=true) and I have been amazed at how difficult it’s been for our agents to break up the listing description into paragraphs, especially on [Zillow](https://www.zillow.com). After a ton of trial and error—after all, I wasn’t gonna let poor software design trump readability—I found a solution.

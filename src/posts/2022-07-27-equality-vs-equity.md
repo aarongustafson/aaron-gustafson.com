@@ -10,6 +10,7 @@ hero:
   alt: "Pencil and watercolor illustration of an Indian man stepping off a city bus with a bag of groceries"
   url: https://labs.openai.com/s/Zz46PbVpdjeKFAs5AB3DgUCQ
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw53hpj2k"
+image: "/i/share-cards/equality-vs-equity.jpg"
 ---
 
 Over the last few years, I’ve been quietly leading training efforts within Microsoft focused on leveling up folks’ allyship skills. There are a ton of really important lessons to be learned form the curriculum my team and I developed, but one folks ofter struggle with is the concept of “equality” as compared to “equity.”

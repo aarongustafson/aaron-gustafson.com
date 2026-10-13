@@ -14,6 +14,7 @@ hero:
 crossposted:
   Codementor: https://www.codementor.io/@aarongustafson/salvaging-linkrot-with-the-wayback-machine-23chvlw7mu/
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw4sbkh2w"
+image: "/i/share-cards/salvaging-linkrot-with-the-wayback-machine.jpg"
 ---
 
 While making some updates to the site, I did a 404 scan of [my link blog](/notebook/links/) and the results were… less than awesome. So I decided to work some Eleventy magic to recover from them.

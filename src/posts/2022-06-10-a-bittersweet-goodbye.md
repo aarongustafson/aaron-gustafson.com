@@ -11,6 +11,7 @@ hero:
   url: https://labs.openai.com/s/hHh5sHXlOw5cla0HbZPEfFBt
   offset: "30"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw567ni2w"
+image: "/i/share-cards/a-bittersweet-goodbye.jpg"
 ---
 
 June 3rd was my last day on the Edge team. It’s been an absolute honor and privilege to work with such an amazing team all these years, moving from Internet Explorer (IE) to “Spartan” Edge and, finally, to “Anaheim” Edge.

@@ -9,6 +9,7 @@ tags:
 description: "As a profession, we spend a lot of time thinking of the best ways to protect our users’ data and their privacy. In fact, most sites have exhaustive Privacy Policies detailing what information they collect and what they may do with it…"
 canonical: "https://blog.easy-designs.net/archives/dont-sell-out-your-users/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwox5jl2a"
+image: "/i/share-cards/dont-sell-out-your-users.jpg"
 ---
 
 <p>

@@ -9,6 +9,7 @@ series:
   tag: series-black-history
   ordinal: "39th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw5shuj2n"
+image: "/i/share-cards/charles-v-bush-agitated-for-equity-in-the-officer-corps.jpg"
 ---
 
 Charles Vernon Bush is perhaps best known for holding not one, but two “first” titles. In 1954, Charles became the first Black page of the Supreme Court of the United States. Nine years later, he became the first Black cadet to graduate from the United States Air Force Academy (USAFA). Charles didn’t stop there, however.

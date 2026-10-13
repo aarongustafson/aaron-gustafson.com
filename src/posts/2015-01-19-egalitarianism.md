@@ -5,6 +5,7 @@ comments: true
 tags: [philosophy, accessibility, "web design", "inclusion"]
 description: "Today is Martin Luther King Day in the United States, so I thought I’d take a moment to reflect on one aspect of equality I think is incredibly important: egalitarianism."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwk6fus2h"
+image: "/i/share-cards/egalitarianism.jpg"
 ---
 
 Today is Martin Luther King Day in the United States, so I thought I’d take a moment to reflect on one aspect of equality I think is incredibly important: egalitarianism.

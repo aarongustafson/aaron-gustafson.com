@@ -5,6 +5,7 @@ comments: true
 tags: [personal]
 description: "So yeah, this happened…"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwjyix32p"
+image: "/i/share-cards/creepy-namefellow.jpg"
 ---
 
 So yeah, this happened:

@@ -9,6 +9,7 @@ tags:
 description: "I’ve been cautioning folks against over-reliance on JavaScript for the better part of a decade. In that time, I harped a lot on Lala.com (which was eventually bought by Apple and shuttered) because they loaded all of their content via..."
 canonical: "https://blog.easy-designs.net/archives/you-cant-rely-on-javascript/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwvh4vc2l"
+image: "/i/share-cards/you-cant-rely-on-javascript.jpg"
 ---
 
 <p>I’ve been cautioning folks against over-reliance on JavaScript for the better part of a decade. In that time, I harped a lot on Lala.com (which was eventually bought by Apple and shuttered) because they loaded all of their content via Ajax. If you showed up to the page with JavaScript disabled, you were greeted with a curt “you must be this high to ride” type message and, my favorite feature, a “loading” indicator:</p>

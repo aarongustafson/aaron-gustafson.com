@@ -14,6 +14,7 @@ hero:
   url: https://labs.openai.com/s/kleV0rfm9jTQfd9GQpWV6Cw2
   offset: "0"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw4dmwk2h"
+image: "/i/share-cards/303-creative-llc-v-elenis-is-incredibly-problematic.jpg"
 ---
 
 Before I get into this, let me start with this preface: I am not a legal expert by any means. I never even watched <cite>Law & Order</cite>. That said, I am keenly interested in the law and how it relates to bias and discrimination, particularly if that intersects with technology, especially the web.

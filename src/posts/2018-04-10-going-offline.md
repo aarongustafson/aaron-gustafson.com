@@ -12,6 +12,7 @@ tags:
   ]
 description: "I was stoked when Jeremy Keith asked me to write the foreword for his latest book, Going Offline. With his permission (and A Book Apart’s), I’m reprinting the foreword here."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwc4net2p"
+image: "/i/share-cards/going-offline.jpg"
 ---
 
 As you’ve probably gathered if you’ve been following my work for the last few years, I’m super-jazzed about Progressive Web Apps. I think they have the potential to improve user experience, performance, access, and so much more for so many people. So I was stoked when [Jeremy Keith](https://adactio.com) asked me to write the foreword for his latest book, [<cite>Going Offline</cite>](https://abookapart.com/products/going-offline), which tackles the complex topic of Service Workers with aplomb.

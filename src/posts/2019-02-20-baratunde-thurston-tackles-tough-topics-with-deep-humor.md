@@ -10,6 +10,7 @@ series:
   tag: series-black-history
   ordinal: "20th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw7x6222p"
+image: "/i/share-cards/baratunde-thurston-tackles-tough-topics-with-deep-humor.jpg"
 ---
 
 I picked up a copy of [Baratunde Thurston](https://twitter.com/baratunde)’s <cite>How to Be Black</cite> pretty much as soon as it hit the shelves in 2012. I was a huge fan of his work as digital director for [<cite>The Onion</cite>](https://www.theonion.com/) and was really excited to read his take on what it meant to be Black in America. The book was brilliant in its concept—part memoir, part satirical self-help book—but also in its execution, which included not only reflections on his own life experiences, but thoughts from others folks like [W. Kamau Bell](https://twitter.com/wkamaubell) (who [I profiled earlier](/notebook/w-kamau-bell-is-all-about-dialogue/)) and [damali ayo](https://wikipedia.org/wiki/Damali_ayo).

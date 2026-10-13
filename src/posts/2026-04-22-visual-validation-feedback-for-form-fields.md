@@ -20,6 +20,7 @@ series:
   tag: "series-forms"
   ordinal: "12th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvzdmr72f"
+image: "/i/share-cards/visual-validation-feedback-for-form-fields.jpg"
 ---
 
 Password requirements, username rules, and format constraints tend to pile up fast. Too often, people only learn whether they met them after they hit submit. The `form-validation-list` web component changes that by providing real-time feedback as someone types, showing exactly which requirements are met, and which still need work.

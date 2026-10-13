@@ -13,6 +13,7 @@ tags:
 description: "I created a comprehensive starter template for creating production-ready web components with modern tooling, testing, and CI/CD—following Google’s Custom Element Best Practices."
 twitter_text: "Start building web components the right way with this production-ready template."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvzpgiz2n"
+image: "/i/share-cards/a-web-component-starter-template.jpg"
 ---
 
 Starting a new web component from scratch usually means rebuilding the same scaffolding: test setup, build configuration, linting, CI/CD, docs, and all the rest. After building—and rebuilding—more components than I care to count, I pulled those patterns into a starter template so you can spend your time on component behavior instead of project plumbing.

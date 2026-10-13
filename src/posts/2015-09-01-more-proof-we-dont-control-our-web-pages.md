@@ -5,6 +5,7 @@ comments: true
 tags: ["web design", hazards, JavaScript]
 description: "A few links worth taking a peek at."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwh2ioz2k"
+image: "/i/share-cards/more-proof-we-dont-control-our-web-pages.jpg"
 ---
 
 I’ve talked about this before: As web designers, [we can’t trust the network](http://www.aaron-gustafson.com/notebook/the-network-effect/). Sure, we have to contend with mobile data “dead zones” and dropped connections as our users move about throughout the day, but there’s a lot more to the network that’s beyond our control.

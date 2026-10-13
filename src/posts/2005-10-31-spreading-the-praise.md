@@ -9,6 +9,7 @@ tags:
 description: "In his most recent essay , Gerry McGovern was discussing expert opinions and voices. One particular comment he made struck a chord:"
 canonical: "https://blog.easy-designs.net/archives/spreading-the-praise/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx62uvs2p"
+image: "/i/share-cards/spreading-the-praise.jpg"
 ---
 
 <p>In <a href="http://www.gerrymcgovern.com/nt/2005/nt-2005-10-31-web-experts.htm">his most recent essay</a>, <a href="http://www.gerrymcgovern.com">Gerry McGovern</a> was discussing expert opinions and voices. One particular comment he made struck a chord:</p>

@@ -8,6 +8,7 @@ tags:
 description: "Late last week, I linked my Forrst followers to Stephanie Rieger’s awesome post “A Plea for Progressive Enhancement ” which offered a even-handed critique of a sliding menu interaction on the website for the Obama campaign. The main..."
 canonical: "https://blog.easy-designs.net/archives/progressive-enhancement-vs.-hardboiled-design/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwphllg2e"
+image: "/i/share-cards/progressive-enhancement-vs.-hardboiled-design.jpg"
 ---
 
 <p>

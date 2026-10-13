@@ -16,6 +16,7 @@ redirect_from: /notebook/2014/the-web-is-for-everyone/
 crossposted:
   Medium: https://medium.com/@AaronGustafson/856e6cbc89ac
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwlkxzy2u"
+image: "/i/share-cards/the-web-is-for-everyone.jpg"
 ---
 
 _I gave this speech as the closing keynote at [A11yQC](https://a11yqc.org/), a conference on Web accessibility, on 14 October 2014 in Québec City, Canada. I have published my script here as the slides can’t really convey its message on their own._

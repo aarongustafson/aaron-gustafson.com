@@ -5,6 +5,7 @@ comments: true
 tags: ["progressive web apps", "this site"]
 description: "While I was redoing the Service Worker implementation on this site —to improve performance for you, dear reader—I decided to throw in a little goody for me as well."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw723f32g"
+image: "/i/share-cards/my-own-personal-pwa.jpg"
 ---
 
 Progressive Web Apps are often something we think of as building for others, but while I was redoing the Service Worker implementation on this site—to improve performance for you, dear reader—I decided to throw in a little goody for me as well, in the form of the [Share Target](https://wicg.github.io/web-share-target/).

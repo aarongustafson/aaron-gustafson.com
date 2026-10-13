@@ -9,6 +9,7 @@ series:
   tag: series-black-history
   ordinal: "38th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw5vc6c2w"
+image: "/i/share-cards/madame-jones-was-the-beyonce-of-her-time.jpg"
 ---
 
 When I learned of Sissieretta Jones (a.k.a., Madame Jones), and began reading up on her, I noticed several parallels between her career and Beyoncé’s.

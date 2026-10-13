@@ -8,6 +8,7 @@ tags:
 description: "Jon Hicks came to SXSW in 2005 and made quite an impression on many of us. It’s no surprise, he’s an incredibly nice chap."
 canonical: "https://blog.easy-designs.net/archives/paper-dolls/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwmylb62e"
+image: "/i/share-cards/paper-dolls.jpg"
 ---
 
 <p>

@@ -14,6 +14,7 @@ tags:
 description: "The CrowdStrike meltdown last week should be a cautionary tale for web designers and web developers."
 twitter_text: "The #CrowdStrike meltdown last week should be a cautionary tale for #WebDesigners and #WebDevleopers."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw2yxkx2w"
+image: "/i/share-cards/on-crowdstrike-dependencies-and-building-robust-products-on-the-web.jpg"
 ---
 
 I have no opinion on CrowdStrike as a company or service. I’ve never used their products. In fact, prior to [the incident last week](https://wikipedia.org/wiki/2024_CrowdStrike_incident), I had only a passing familiarity with their name — likely from headlines in the tech press I’d scrolled past at some point in time. I now have a vague understanding of what they do, but that’s only based on what I learned about [the cause of the incident](https://www.crowdstrike.com/wp-content/uploads/2024/07/CrowdStrike-PIR-Executive-Summary.pdf). In reflecting on this unfortunate incident, I can’t help but think of the lesson it holds for web designers and developers.

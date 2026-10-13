@@ -5,6 +5,7 @@ comments: true
 tags: ["web design", performance, "inclusive design"]
 description: "We spend a lot of time talking about how to optimize the front-end of websites, but the truth is, your back-end needs to be fast too."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwj4lvc2l"
+image: "/i/share-cards/who-should-pay-2-the-hosting.jpg"
 ---
 
 Two weeks ago, I argued that our [users should never foot the bill for developer convenience](http://aaron-gustafson.com/notebook/who-should-pay/) and yesterday I stumbled on a post from EllisLab (the makers of ExpressionEngine) that echoes that sentiment, but from a different angle. The title might make you scratch your head: [Save Thousands of Dollars by Paying More for Hosting](https://ellislab.com/blog/entry/save-thousands-of-dollars-by-paying-more-for-hosting).

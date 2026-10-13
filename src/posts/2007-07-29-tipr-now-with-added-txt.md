@@ -9,6 +9,7 @@ tags:
 description: "So, as it turns out, this little app I built for myself is actually useful to other folks."
 canonical: "https://blog.easy-designs.net/archives/tipr-now-with-added-txt/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwx5dzh25"
+image: "/i/share-cards/tipr-now-with-added-txt.jpg"
 ---
 
 <p>So, as it turns out, <a href="http://tipr.mobi">this little app I built for myself</a> is actually useful to other folks.</p>

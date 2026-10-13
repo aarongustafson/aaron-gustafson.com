@@ -10,6 +10,7 @@ series:
   tag: series-black-history
   ordinal: "16th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwaci5g2e"
+image: "/i/share-cards/pauli-murray-dismantled-systems-of-oppression.jpg"
 ---
 
 History is filled with people who are notable for one reason or another. Pauli Murray is notable for dozens. Throughout her life, she was told she couldn’t do things, often because she was Black or a woman (or both). In pretty much every instance, she pushed back, challenging the cultural norms of her time and notions of what was acceptable.

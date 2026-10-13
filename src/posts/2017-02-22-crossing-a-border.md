@@ -7,6 +7,7 @@ description: "If you travel abroad for work, you may have some concerns based on
 crossposted:
   Medium: https://medium.com/@AaronGustafson/b71e4fcabfb6
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwdnzqs2p"
+image: "/i/share-cards/crossing-a-border.jpg"
 ---
 
 If you travel abroad for work, you may have some concerns about border crossings, based on [recent](https://www.theatlantic.com/technology/archive/2017/02/a-nasa-engineer-is-required-to-unlock-his-phone-at-the-border/516489/) [news](https://www.cnet.com/news/border-patrol-agents-checking-facebook-profiles-trump-immigration-ban/) [coverage](http://www.cnn.com/2017/01/29/politics/donald-trump-immigrant-policy-social-media-contacts/). I know I do. **I’m not a lawyer**, but I’ve been researching quite a bit and asking for opinions and recommendations. Below is a summary of the advice I’ve been given. I’m providing it here in case it might be of use to you.

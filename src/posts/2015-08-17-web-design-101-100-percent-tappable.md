@@ -7,6 +7,7 @@ description: "When you design something that looks interactive, always make sure
 twitter_text: "When you design something that looks interactive, always make sure the whole thing is actually tappable."
 redirect_from: /notebook/web-design-101-buttons-should-be-tappable/
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwhbmar2l"
+image: "/i/share-cards/web-design-101-100-percent-tappable.jpg"
 ---
 
 I see this one all the time: something that looks like a button, but only a portion of it is tappable. <!-- more -->Consider this example from a recent email I received (emails are notorious for this crap):

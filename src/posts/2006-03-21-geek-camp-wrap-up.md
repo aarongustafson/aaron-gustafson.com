@@ -9,6 +9,7 @@ tags:
 description: "I had a fantastic time at SXSWi this year. It was great to catch up with old friends, make some new ones, and see what everyone’s been working on for the last year. If you’re interested in seeing the shennanigans you can check out my..."
 canonical: "https://blog.easy-designs.net/archives/geek-camp-wrap-up/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx2nsol2g"
+image: "/i/share-cards/geek-camp-wrap-up.jpg"
 ---
 
 <p>

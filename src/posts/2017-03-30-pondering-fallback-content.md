@@ -7,6 +7,7 @@ description: " I’ve been thinking a lot about media formats and what happens w
 crossposted:
   Medium: https://medium.com/@AaronGustafson/a02bfa999bdc
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwdb7sc2l"
+image: "/i/share-cards/pondering-fallback-content.jpg"
 ---
 
 I don’t remember what got it stuck in my craw, but I’ve been thinking a bit about HTML fallbacks of late. <!-- more -->If you’re unfamiliar, consider the following `picture` element:

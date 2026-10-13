@@ -10,6 +10,7 @@ translations:
   hi: https://dealsdaddy.co.uk/translations/responsive-typography/
   pa: https://www.bydiscountcodes.co.uk/translations/responsive-typography/
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwlxpq72w"
+image: "/i/share-cards/responsive-typography.jpg"
 ---
 
 I’m incredibly excited to see that [Jason Pamental](https://twitter.com/jpamental)’s fantastic [<cite>Responsive Typography</cite>](https://www.amazon.com/gp/product/1491907096/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1491907096&linkCode=as2&tag=easydesign-20&linkId=JC6INFXF3DHODKEM) is finally available. I had the great pleasure of reviewing an early galley and I can honestly say that it’s a book well worth reading. Jason’s natural and friendly style makes for an easy read and it’s chock-full of actionable recommendations and tips you’ll want to start using right away.

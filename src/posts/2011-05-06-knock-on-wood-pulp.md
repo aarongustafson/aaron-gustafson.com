@@ -8,6 +8,7 @@ tags:
 description: "I was pretty chuffed to see Web Design in a Nutshell , a book I wrote a few chapters for, show up in this incredible video of a book xylophone. Check it out:"
 canonical: "https://blog.easy-designs.net/archives/knock-on-wood-pulp/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwve6ik2w"
+image: "/i/share-cards/knock-on-wood-pulp.jpg"
 ---
 
 {% from "macros.njk" import youtube %}

@@ -28,6 +28,7 @@ series:
 crossposted:
   Codementor: https://www.codementor.io/@aarongustafson/bring-focus-to-the-first-form-field-with-an-error-23ckq7nj58/
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw4vbib2l"
+image: "/i/share-cards/bring-focus-to-the-first-form-field-with-an-error.jpg"
 ---
 
 While filling out a long form the other day, I couldn’t figure out why it wasn’t submitting. Turns out I’d forgotten to fill in a field, but I didn’t know that because it had scrolled out of the viewport. This is a common problem on the web, but easily remedied with a little bit of JavaScript.

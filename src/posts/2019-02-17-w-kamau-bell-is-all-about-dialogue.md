@@ -10,6 +10,7 @@ series:
   tag: series-black-history
   ordinal: "17th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwa7m422w"
+image: "/i/share-cards/w-kamau-bell-is-all-about-dialogue.jpg"
 ---
 
 I don’t recall the first time I heard [W. Kamau Bell](https://twitter.com/wkamaubell) speak. Perhaps it was one of his stand-up specials or maybe it was an interview on <cite>the Daily Show</cite> or an appearance on <cite>Premium Blend</cite>, but he immediately made an impression. Throughout his career, he’s never shied away from confronting issues of race, racism, and the systemic oppression of Black people in America, but he’s also used his bully pulpit to start some important, but difficult conversations.

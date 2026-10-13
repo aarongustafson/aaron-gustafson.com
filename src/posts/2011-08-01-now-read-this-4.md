@@ -7,6 +7,7 @@ tags:
 description: "Awesome stuff last week from the worlds of typography, mobile, customer service, and design."
 canonical: "https://blog.easy-designs.net/archives/now-read-this-4/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwr4zyp2f"
+image: "/i/share-cards/now-read-this-4.jpg"
 ---
 
 <p>Awesome stuff last week from the worlds of typography, mobile, customer service, and design.</p>

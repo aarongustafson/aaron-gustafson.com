@@ -5,6 +5,7 @@ comments: true
 tags: ["web design", URLs]
 description: "The awesomeness of this URL is almost indescribable."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwhysud2p"
+image: "/i/share-cards/url-inception.jpg"
 ---
 
 It’s like a snake eating its own tail:

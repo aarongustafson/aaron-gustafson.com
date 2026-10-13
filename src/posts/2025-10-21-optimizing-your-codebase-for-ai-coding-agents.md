@@ -11,6 +11,7 @@ hero:
   alt: "A cute red robot is adrift in a choppy, foggy sea. A lighthouse on a cliff in the distance is beaming light across the sea, creating a safe, clear path to a nearby shore. The robot is steering the boat toward shore, following the path through the fog created by the lighthouse. Vintage travel poster aesthetic."
   orientation: landscape
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw25got2g"
+image: "/i/share-cards/optimizing-your-codebase-for-ai-coding-agents.jpg"
 ---
 
 I’ve been playing around a bit with GitHub Copilot as an autonomous agent to help with software development. The results have been mixed, but positive overall. I made an interesting discovery when I took the time to read through the agent’s reasoning over a particular task. I thought the task was straightforward, but I was wrong. Watching the agent work was like watching someone try to navigate an unfamiliar room, in complete darkness, with furniture and Lego bricks scattered everywhere.

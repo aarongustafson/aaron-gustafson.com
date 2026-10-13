@@ -5,6 +5,7 @@ comments: true
 tags: ["this site", Octopress, Jekyll]
 description: "It took a few days, but I think the site is pretty stable in Jekyll now. That said, there are likely some bugs yet to be discovered. Let me know if you find one."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwdhjsr2n"
+image: "/i/share-cards/moved-from-octopress-to-jekyll.jpg"
 ---
 
 A while back I mentioned my desire to move this site from [Octopress](http://octopress.org/) to [Jekyll](https://jekyllrb.com/). I liked Octopress when I re-christened this site, but I didn’t really see much benefit to moving to [Octopress 3](https://github.com/octopress/octopress) over stripping away the Octopress 2 bits and going with a core Jekyll install.

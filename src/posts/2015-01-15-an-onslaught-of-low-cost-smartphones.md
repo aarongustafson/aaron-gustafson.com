@@ -5,6 +5,7 @@ comments: true
 tags: [mobile, "web design", devices]
 description: "It seems every week we are seeing more and more low-cost devices being launched in an effort to connect the unconnected. Here’s why that maters to you."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwkfbh22p"
+image: "/i/share-cards/an-onslaught-of-low-cost-smartphones.jpg"
 ---
 
 It seems every week we are seeing more and more low-cost devices being launched in an effort to connect the unconnected. For instance, this past week saw the announcement of [two new entries in the Microsoft Lumia line, the 435 and the 532](http://www.theverge.com/2015/1/14/7544107/microsoft-lumia-435-532-launch-specs-price-release-date), and the announcement of [Samsung’s first Tizen phone, the Z1](http://arstechnica.com/gadgets/2015/01/samsung-finally-puts-tizen-on-a-smartphone-launches-the-z1-in-india/).

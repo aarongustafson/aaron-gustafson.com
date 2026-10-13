@@ -8,6 +8,7 @@ tags:
 description: "Tim Kadlec’s Implementing Responsive Design is a fantastic and necessary read for any practicing web professional out there and I was honored Tim asked me to write the foreword."
 canonical: https://blog.easy-designs.net/archives/implementing-responsive-design/
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwoql5t2p"
+image: "/i/share-cards/implementing-responsive-design.jpg"
 ---
 
 In case you hadn’t heard, Tim Kadlec’s [<cite>Implementing Responsive Design</cite>](http://www.implementingresponsivedesign.com/) came out today from New Riders. It’s a fantastic and necessary read for any practicing web professional out there and I was honored Tim asked me to write the foreword. With his permission, I have included it below:

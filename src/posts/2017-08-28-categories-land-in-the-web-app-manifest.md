@@ -5,6 +5,7 @@ comments: true
 tags: ["progressive web apps"]
 description: "This optional member will be really useful in store and catalog scenarios."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwcm7wc2l"
+image: "/i/share-cards/categories-land-in-the-web-app-manifest.jpg"
 ---
 
 Starting in early May, [Rob Dolin](https://github.com/RobDolinMS) began advocating for adding a `categories` member to [the Web App Manifest spec](https://www.w3.org/TR/appmanifest/). It was something we’d been discussing for a while now. It’s a feature that will be incredibly useful to users, especially as it relates to [PWAs in the Windows Store](https://www.aaron-gustafson.com/notebook/progressive-web-apps-and-the-windows-ecosystem/#how-does-a-user-discover-a-progressive-web-app), other app stores, and in catalogs. This weekend, our hard work paid off and [it was added to the spec](https://github.com/w3c/manifest/commit/bf14335a4e50ca4049c21a5071d160620ae96d56)!

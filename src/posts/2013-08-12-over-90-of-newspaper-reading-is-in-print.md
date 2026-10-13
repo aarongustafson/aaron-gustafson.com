@@ -8,6 +8,7 @@ tags:
 description: "A recent study in of the UK came to the conclusion that over 90% of newspaper reading is still taking place in print. Their findings are based on a survey of 12 UK newspapers during the period of 2007–2011, examining National Readership..."
 canonical: "https://blog.easy-designs.net/archives/over-90-of-newspaper-reading-is-in-print/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwnlsas2w"
+image: "/i/share-cards/over-90-of-newspaper-reading-is-in-print.jpg"
 ---
 
 <p>

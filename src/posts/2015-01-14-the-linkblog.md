@@ -5,6 +5,7 @@ comments: true
 tags: [blogging, "web design", "this site"]
 description: "I’m doing a little housekeeping and cleaning up the links a bit. The linkblog now has its own permenant home."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwkkclc2p"
+image: "/i/share-cards/the-linkblog.jpg"
 ---
 
 Since re-starting my blog I’ve been continuing to tinker with Octopress and Jekyll in an effort to customize things a bit more to my liking.

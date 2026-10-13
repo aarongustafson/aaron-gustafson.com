@@ -13,6 +13,7 @@ hero:
 crossposted:
   dev.to: https://dev.to/aarongustafson/going-dark-mode-4d39
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw5ds5b2n"
+image: "/i/share-cards/going-dark-mode.jpg"
 ---
 
 While working on tooling to analyze Web App Manifest usage in relation to some new feature proposals, it became clear we needed a test Manifest that included the proposed syntax for dark/light mode support. I decided to make this site the guinea pig and spent an hour or so tweaking things to make it happen. Here’s a run-down of what I did:

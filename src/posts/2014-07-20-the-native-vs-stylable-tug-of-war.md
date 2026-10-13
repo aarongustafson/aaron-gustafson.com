@@ -10,6 +10,7 @@ tags:
 description: "In his astute post “ ‘Native experience’ vs styling select boxes ” , Bruce Lawson correctly identified a common tension in the web world:"
 canonical: "https://blog.easy-designs.net/archives/the-native-vs-stylable-tug-of-war/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwmejwj2n"
+image: "/i/share-cards/the-native-vs-stylable-tug-of-war.jpg"
 ---
 
 <p>

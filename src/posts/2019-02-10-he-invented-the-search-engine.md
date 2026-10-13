@@ -10,6 +10,7 @@ series:
   tag: series-black-history
   ordinal: "10th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwatqrt2p"
+image: "/i/share-cards/he-invented-the-search-engine.jpg"
 ---
 
 Have you ever heard the name Alan Emtage? Probably not. He didn’t start a nearly trillion-dollar company. He isn’t digging massive tunnels under cities. His pet project isn’t putting people on Mars. But he wrote the first search engine, way back in 1990. The thing is, he doesn’t brag about this accomplishment.

@@ -7,6 +7,7 @@ description: "I couldn’t comment directly on Stuart Langridge’s response to 
 in_reply_to: https://www.kryogenix.org/days/2014/09/19/fundamentally-connected
 redirect_from: /notebook/2014/missed-connections/
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwm2xhj2k"
+image: "/i/share-cards/missed-connections.jpg"
 ---
 
 Earlier today, [Stuart Langridge](https://www.kryogenix.org)—who I worked with on WaSP’s DOM Scripting Task Force and have the utmost respect for—[published a blog response](https://www.kryogenix.org/days/2014/09/19/fundamentally-connected/) to [my last post](https://aaron-gustafson.com/notebook/2014/a-fundamental-disconnect/). In it, he made some good points I wanted to highlight, but he also misunderstood one thing I said and managed to avoid addressing the core of my argument. As comments aren’t enabled on his site, I thought I’d respond here.

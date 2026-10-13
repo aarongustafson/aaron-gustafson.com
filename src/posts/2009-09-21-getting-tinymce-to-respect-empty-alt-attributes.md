@@ -8,6 +8,7 @@ tags:
 description: "This one took a little futzing around and digging through the TinyMCE forum to figure out, but it’s been nagging at me for a while. By default (or at least in the default configuration provided under the LG TinyMCE extension for..."
 canonical: "https://blog.easy-designs.net/archives/getting-tinymce-to-respect-empty-alt-attributes/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwwhcji2u"
+image: "/i/share-cards/getting-tinymce-to-respect-empty-alt-attributes.jpg"
 ---
 
 <p>This one took a little futzing around and digging through the <a href="http://tinymce.moxiecode.com/punbb/">TinyMCE forum</a> to figure out, but it’s been nagging at me for a while. By default (or at least in the default configuration provided under the <a href="http://leevigraham.com/cms-customisation/expressionengine/lg-tinymce/">LG TinyMCE extension for ExpressionEngine</a>), <a href="http://tinymce.moxiecode.com/">TinyMCE</a> will remove the <code class="html">alt</code> attribute if it is empty. Obviously, for accessibility and validation reasons, this is highly undesirable and needs correcting. Thankfully, the fix is pretty simple: add the following to your <a href="http://wiki.moxiecode.com/index.php/TinyMCE:Configuration">TinyMCE configuration options</a>:</p>

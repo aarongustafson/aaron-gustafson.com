@@ -10,6 +10,7 @@ series:
   tag: series-black-history
   ordinal: "11th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwaqudh2w"
+image: "/i/share-cards/chuck-d-challenges-me-to-confront-myself.jpg"
 ---
 
 Few people in hip-hop command as much respect as <a href="https://twitter.com/MrChuckD">Chuck D</a>. But unlike many who’ve achieved his level of critical and commercial success, Chuck D has never stopped fighting for others. And he’s challenged me to do my part.

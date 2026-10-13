@@ -5,6 +5,7 @@ comments: true
 tags: ["Adaptive Web Design", writing]
 description: "I just got this photo from Tracey Croom, my production editor on the Second Edition of Adaptive Web Design and I wanted to share it with you."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwg723i2u"
+image: "/i/share-cards/adaptive-web-design-folded-and-gathered.jpg"
 ---
 
 I just got this photo from [Tracey Croom](https://www.linkedin.com/pub/tracey-croom/13/a6/985), my production editor on [the Second Edition of <cite>Adaptive Web Design</cite>](http://adaptivewebdesign.info/2nd-edition/) and I wanted to share it with you. Production is almost done and I should be getting my bound copies soon. I’m so excited!

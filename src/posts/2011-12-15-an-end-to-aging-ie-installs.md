@@ -8,6 +8,7 @@ tags:
 description: "Today is a momentous day."
 canonical: "https://blog.easy-designs.net/archives/an-end-to-aging-ie-installs/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwpnxyl2a"
+image: "/i/share-cards/an-end-to-aging-ie-installs.jpg"
 ---
 
 <p>Today is a momentous day.</p>

@@ -5,6 +5,7 @@ comments: true
 tags: [mobile, devices, "web design"]
 description: "It may have been the laughing stock in the app development community, but I’ve always had a soft spot in my heart for webOS. And now it’s back!"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwkn3p72f"
+image: "/i/share-cards/webos-is-back.jpg"
 ---
 
 You may not remember it, but Palm’s groundbreaking—yes, I said groundbreaking—operating system, [webOS](https://en.wikipedia.org/wiki/WebOS), has been resuscitated yet again. This time by LG.

@@ -5,6 +5,7 @@ comments: true
 tags: ["web design", "web development", browsers, "progressive enhancement"]
 description: "Orde Saunders nails it!"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwjscys2p"
+image: "/i/share-cards/the-one-weird-trick-that-takes-the-pain-out-of-cross-browser-testing.jpg"
 ---
 
 Love this!

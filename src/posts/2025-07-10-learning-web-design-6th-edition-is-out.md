@@ -11,6 +11,7 @@ hero:
   alt: "Perspective shot of the physical book"
   offset: "0"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw2g3lg2u"
+image: "/i/share-cards/learning-web-design-6th-edition-is-out.jpg"
 ---
 
 It’s here! Nearly 900 pages of guidance on how to build web pages, to which I contributed a little over 100 pages: <a href="https://www.oreilly.com/library/view/learning-web-design/9781098137670/"><cite>Learning Web Design, 6th Edition</cite></a>.

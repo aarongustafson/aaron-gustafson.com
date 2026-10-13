@@ -14,6 +14,7 @@ tags:
 description: "The fullscreen-control web component adds fullscreen capabilities to any video or iframe element with a single wrapper and zero configuration."
 twitter_text: "Add fullscreen controls to videos and iframes with progressive enhancement. One wrapper, zero hassle."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvzs7kp2f"
+image: "/i/share-cards/fullscreen-video-and-iframes-made-easy.jpg"
 ---
 
 Adding fullscreen capabilities to videos and embedded iframes shouldn’t require wrestling with prefixed APIs or managing focus states. The `fullscreen-control` web component handles all of that for you — just wrap it around the element. The component handles the rest as a discrete progressive enhancement.

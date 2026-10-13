@@ -9,6 +9,7 @@ description: "My colleague Nolan recently wrote of his struggle with progressive
 crossposted:
   Medium: https://medium.com/@AaronGustafson/af98aebe33a4
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnweiqir2l"
+image: "/i/share-cards/progressive-misconceptions.jpg"
 ---
 
 Last week, my colleague[^1] [Nolan Lawson](https://nolanlawson.com/) wrote [a lengthy post about his struggles with progressive enhancement](https://nolanlawson.com/2016/10/13/progressive-enhancement-isnt-dead-but-it-smells-funny/). In it, he identified a key tension between the JavaScript community and the progressive enhancement community that has, frankly, existed since the term “progressive enhancement” was coined some 13 years ago. I wanted to take a few minutes to tuck into that tension and assure Nolan and other folks within the JS community that neither progressive enhancement nor the folks who advocate it (like me) is at odds with them or their work.

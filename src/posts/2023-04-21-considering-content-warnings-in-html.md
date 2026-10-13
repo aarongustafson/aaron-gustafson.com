@@ -12,6 +12,7 @@ hero:
   alt: "A photo of a cute stuffed animal monkey with its hands over its eyes. Camera is tightly framing its head. Its eyes are not visible as they are completely covered by its hands."
   offset: "10"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw3y2vj2k"
+image: "/i/share-cards/considering-content-warnings-in-html.jpg"
 ---
 
 One of the features I really love about Mastodon is their first-class Content Warning feature. With one additional step, you can add any warning of your choice to your post and it will be hidden by default, showing only the content warning text. It’s a super-simple idea, but so powerful when it comes to reducing potential the likelihood of causing our readers to experience the kinds of trauma that could have severe consequences.

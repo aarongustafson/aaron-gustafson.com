@@ -9,6 +9,7 @@ series:
   tag: series-black-history
   ordinal: "1st"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwbrjf22h"
+image: "/i/share-cards/why-oscars-middle-name-is-ellison.jpg"
 ---
 
 I don’t remember the class or the year, but back in high school I remember being asked to choose one from a selection of books to read and write a report on. That was my first exposure to Ralph Ellison’s <cite>Invisible Man</cite> and my first glimpse into the realities of racism as seen from the perspective of a Black man in America.

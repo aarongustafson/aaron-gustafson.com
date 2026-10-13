@@ -8,6 +8,7 @@ tags:
 description: "It appears that some Dems, including my Representative from the 3rd District in Connecticut, Rosa De Lauro , are trying to cripple our democracy under the guise of public financing."
 canonical: "https://blog.easy-designs.net/archives/honorable-my-ass/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx3twwq2u"
+image: "/i/share-cards/honorable-my-ass.jpg"
 ---
 
 <p>It appears that some Dems, including my Representative from the 3rd District in Connecticut, <a href="http://www.house.gov/delauro/">Rosa De Lauro</a>, are trying to cripple our democracy under the guise of public financing.</p>

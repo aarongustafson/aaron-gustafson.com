@@ -5,6 +5,7 @@ comments: true
 tags: ["progressive enhancement", "web design"]
 description: "Jason Garber has penned a series of posts on progressive enhancement. Here’s a quick rundown on what they cover and why you should read them."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwjmh7d2p"
+image: "/i/share-cards/three-worthwhile-posts-on-progressive-enhancement.jpg"
 ---
 
 Jason Garber has penned a series of posts on progressive enhancement. Here’s a quick rundown on what they cover and why you should read them.

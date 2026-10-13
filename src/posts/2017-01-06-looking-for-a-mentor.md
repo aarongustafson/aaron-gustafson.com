@@ -5,6 +5,7 @@ comments: true
 tags: [career, mentoring]
 description: "I am looking for someone to mentor in 2017. Interested? Read on."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwdufno2e"
+image: "/i/share-cards/looking-for-a-mentor.jpg"
 ---
 
 I didn’t get to where I am in my life and career on my own. <!-- more --> I have a ton of respect and admiration for the folks who’ve helped and mentored me along the way. [Molly Holzschlag](http://www.molly.com/) took me under her wing and taught me so much about public speaking and selflessly working for a better Web. [Jeffrey Zeldman](http://www.zeldman.com/) made a place for me at [<cite>A List Apart</cite>](http://alistapart.com/), heavily influenced my writing, invited me onto his team at [Happy Cog](http://happycog.com/), and has both supported and promoted my work for well over a decade now. [Jeremy Keith](https://adactio.com/) collaborated with me early on and has provided invaluable guidance to me over the years. And these are but a few of the dozens upon dozens of folks I owe my career to and, if I’m being honest, helped me discover my passion.

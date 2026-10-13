@@ -9,6 +9,7 @@ tags:
 description: "Here in Connecticut, the Secretary of State is getting ready to purchase new computerized voting machines and is doing an exhibition of the different options throughout the state’s five Congressional Districts. As computerized voting is..."
 canonical: "https://blog.easy-designs.net/archives/e-voting-comes-to-ct/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx5gkk72w"
+image: "/i/share-cards/e-voting-comes-to-ct.jpg"
 ---
 
 <p>Here in Connecticut, the Secretary of State is getting ready to purchase new computerized voting machines and is doing an exhibition of the different options throughout the state’s five Congressional Districts. As <a href="http://www.wired.com/news/evote/">computerized voting is such a hot topic</a> right now, I highly recommend anyone and everyone who lives in my state go to one of the exhibitions and offer some sort of public comment. We need to ensure we get safe voting machines that actually record what we intend them to.</p>

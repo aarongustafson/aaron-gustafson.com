@@ -9,6 +9,7 @@ tags:
 description: "Over the last five years, one of the most frequent questions I’ve gotten has been “When are you going to write a book? ”"
 canonical: "https://blog.easy-designs.net/archives/i-finally-wrote-a-book/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwv4l2j2l"
+image: "/i/share-cards/i-finally-wrote-a-book.jpg"
 ---
 
 <p>Over the last five years, one of the most frequent questions I’ve gotten has been “When are you going to write a book?<span class="final quote">”</span></p>

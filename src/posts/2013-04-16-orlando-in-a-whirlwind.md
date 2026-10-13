@@ -9,6 +9,7 @@ tags:
 description: "Last week was a bit of a whirlwind: Kelly and I flew to Orlando, co-hosted a vegan chili cook-off with the Filament Group and lost the coveted trophy Kelly so lovingly created, launched a refresh of the website for the Registrar’s..."
 canonical: "https://blog.easy-designs.net/archives/orlando-in-a-whirlwind/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwoa27z2n"
+image: "/i/share-cards/orlando-in-a-whirlwind.jpg"
 ---
 
 <p>

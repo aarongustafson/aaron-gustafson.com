@@ -8,6 +8,7 @@ tags:
 description: "For a few years in the late aughts, the place to stay during SXSW Interactive was the Hampton Inn at San Jacinto and 2nd. There were 3 main reasons for this: 1) proximity to the Convention Center, 2) free breakfast, and 3) happy hour..."
 canonical: "https://blog.easy-designs.net/archives/the-hampton/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwn45bk2w"
+image: "/i/share-cards/the-hampton.jpg"
 ---
 
 <p>

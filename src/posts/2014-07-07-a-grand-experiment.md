@@ -6,6 +6,7 @@ tags: [blogging, "web design", "this site"]
 description: So, a mere three years after my old “life blog” stopped working, I decided to scrap it and start fresh.
 redirect_from: /notebook/2014/a-grand-experiment/
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwmoqzx2w"
+image: "/i/share-cards/a-grand-experiment.jpg"
 ---
 
 So, a mere three years after my old “life blog” stopped working, I decided to scrap it and start fresh.

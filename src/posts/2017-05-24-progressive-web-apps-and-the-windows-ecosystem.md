@@ -14,6 +14,7 @@ description: "I had the great pleasure of delivering this talk about Microsoftâ€
 crossposted:
   Medium: https://medium.com/@AaronGustafson/b2b2aa2f1521
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwczxhi2w"
+image: "/i/share-cards/progressive-web-apps-and-the-windows-ecosystem.jpg"
 ---
 
 _I had the great pleasure of delivering a talk about Microsoftâ€™s strategy towards Progressive Web Apps at [Build](https://build.microsoft.com). You can [view the slides](#slides) or [watch the recording](#video) of this talk, but what follows is a distillation of my talk, taken from my notes and slides._

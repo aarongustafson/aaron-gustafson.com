@@ -7,6 +7,7 @@ tags:
 description: "I find a lot of cool links throughout the week and I usually bookmark them on some service, like Pinboard , but for some reason I never considered posting them to the blog. I’m recitfying that as of today."
 canonical: "https://blog.easy-designs.net/archives/now-read-this-1/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwuzhul2p"
+image: "/i/share-cards/now-read-this-1.jpg"
 ---
 
 <p>I find a lot of cool links throughout the week and I usually bookmark them on some service, like <a href="http://pinboard.in/u:aarongustafson">Pinboard</a>, but for some reason I never considered posting them to the blog. I’m recitfying that as of today.</p>

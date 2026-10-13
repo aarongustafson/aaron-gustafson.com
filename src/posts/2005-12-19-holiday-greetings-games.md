@@ -9,6 +9,7 @@ tags:
 description: "This has been one crazy Fall work-wise, so I apologize for the scarcity of posts, but I do have a few holiday treats for you."
 canonical: "https://blog.easy-designs.net/archives/holiday-greetings-games/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx4nptz2l"
+image: "/i/share-cards/holiday-greetings-games.jpg"
 ---
 
 <p>This has been one crazy Fall work-wise, so I apologize for the scarcity of posts, but I do have a few holiday treats for you.</p>

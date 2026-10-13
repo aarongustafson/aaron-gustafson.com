@@ -6,6 +6,7 @@ tags: ["web design", "indie web"]
 description: "I love the “indie web” movement, but I wonder: When you begin to assert ownership over your content, how far do you go?"
 redirect_from: /notebook/2014/what-do-we-own/
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwlhbmq2w"
+image: "/i/share-cards/what-do-we-own.jpg"
 ---
 
 My good friend [Jeremy](https://adactio.com) is [incredibly excited](https://adactio.com/journal/6801) about the [Indie Web movement](https://indieweb.org/) and I am right there with him. I love the idea of owning your content and then syndicating it out to social networks, photo sites, and the like. It makes complete sense… [Web-based services have a habit of disappearing](https://www.gyford.com/phil/writing/2009/04/28/geocities.php), so we shouldn’t rely on them. The only Web that is permanent is the one we control.

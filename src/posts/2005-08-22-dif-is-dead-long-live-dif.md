@@ -8,6 +8,7 @@ tags:
 description: "Just when I had gotten over the loss of Design In-Flight , the magazine relaunches as a web-only publication. From the history/about page :"
 canonical: "https://blog.easy-designs.net/archives/dif-is-dead-long-live-dif/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx7tqwd2p"
+image: "/i/share-cards/dif-is-dead-long-live-dif.jpg"
 ---
 
 <p>Just when I had gotten over <a href="http://web.archive.org/web/20050903202544/designinflight.com/" title="RIP DiF">the loss of Design In-Flight</a>, the magazine relaunches as a web-only publication. From the <a href="http://web.archive.org/web/20050903142238/designinflight.com/about/">history/about page</a>:</p>

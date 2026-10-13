@@ -6,6 +6,7 @@ tags: ["progressive enhancement", accessibility, "responsive web design"]
 description: "I had the great pleasure of delivering the closing keynote for the final Responsive Day Out. Here’s what I had to say."
 twitter_text: "Here’s my closing keynote from Responsive Day Out 3."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwhow2q2w"
+image: "/i/share-cards/where-do-we-go-from-here.jpg"
 ---
 
 _I had the great pleasure of delivering the closing keynote for the final Responsive Day Out. Here’s what I had to say._

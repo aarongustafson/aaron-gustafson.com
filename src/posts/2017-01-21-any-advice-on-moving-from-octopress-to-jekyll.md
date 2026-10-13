@@ -5,6 +5,7 @@ comments: true
 tags: ["this site", Jekyll, Octopress]
 twitter_text: "I’m moving from @octopress to @jekyllrb on Tuesday. Any advice or recommended reading?"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwdr4nb2l"
+image: "/i/share-cards/any-advice-on-moving-from-octopress-to-jekyll.jpg"
 ---
 
 Next Tuesday I’m planning to take the day to do a little refresh on this site. The largest part of that effort will be moving this project off of [Octopress](http://octopress.org/) to [Jekyll](https://jekyllrb.com/). I’m not expecting it to be a huge challenge—Jekyll underpins Octopress anyway—but I’m sure there are some gotchas I should look out for. If you’ve made the leap yourself in the past and have any advice or recommended reading, please leave a comment or [Web Mention](https://indieweb.org/Webmention).

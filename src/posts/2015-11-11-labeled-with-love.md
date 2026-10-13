@@ -12,6 +12,7 @@ series:
   tag: series-forms
   ordinal: "1st"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwgcex725"
+image: "/i/share-cards/labeled-with-love.jpg"
 ---
 
 Forms exist on pretty much every site on the web in one form or another. They are the primary mechanism by which we gather information from our users.[^1] Of course, before anyone can fill out a form, they need to know what it’s asking for. Labeling is key.

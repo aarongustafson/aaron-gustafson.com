@@ -10,6 +10,7 @@ series:
   tag: series-black-history
   ordinal: "23rd"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw7ogzq2w"
+image: "/i/share-cards/mark-deans-work-on-the-pc-made-personal-computing-possible.jpg"
 ---
 
 Mark Dean’s name may not be part of the public consciousness that Jeff Bezos’ or Elon Musk’s is, but they actually owe him a huge debt of gratitude. Without his pioneering work at IBM, their big money-makers—Amazon and PayPal, respectively—might never have existed.

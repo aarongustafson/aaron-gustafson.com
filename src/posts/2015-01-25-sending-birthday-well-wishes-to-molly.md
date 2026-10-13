@@ -5,6 +5,7 @@ comments: true
 tags: [personal, "web design"]
 description: "Today is the birthday of an amazing woman, Molly Holzschlag, and she needs our help!"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwjvi4q2u"
+image: "/i/share-cards/sending-birthday-well-wishes-to-molly.jpg"
 ---
 
 Today is the birthday of an amazing woman, [Molly Holzschlag](http://molly.com), and she needs our help!

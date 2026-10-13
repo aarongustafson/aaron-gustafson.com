@@ -8,6 +8,7 @@ redirect_from: /notebook/2014/a-fundamental-disconnect/
 crossposted:
   Medium: https://medium.com/@AaronGustafson/a-fundamental-disconnect-e0a238ed232a
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwm6dub2k"
+image: "/i/share-cards/a-fundamental-disconnect.jpg"
 ---
 
 Yesterday at [BlendConf](https://2014.blendconf.com/), [Scott Hanselman](https://www.hanselman.com/) gave a fantastically-entertaining keynote entitled “JavaScript, The Cloud, and the rise of the New Virtual Machine.” In it, he chronicled all of the ways Web development and deployment has changed—for the better—over the years. He also boldly declared that JavaScript is now, effectively, a virtual machine in the browser.

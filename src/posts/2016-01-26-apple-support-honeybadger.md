@@ -7,6 +7,7 @@ description: "My iPhone fell clumsily out of my pocket when I was sitting down i
 crossposted:
   Medium: https://medium.com/@AaronGustafson/apple-support-honeybadger-ae98d16e9f11
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwfrmn62e"
+image: "/i/share-cards/apple-support-honeybadger.jpg"
 ---
 
 My iPhone fell clumsily out of my pocket when I was sitting down in the kitchen the other day. _Thwack!_ It fell face-first onto the tile from my seated position a mere 18 inches up. Of course the screen cracked. Protective case be damned, the cracks spread across the screen like a spider web cast from razor blades.

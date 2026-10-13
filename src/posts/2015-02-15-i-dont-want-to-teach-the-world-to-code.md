@@ -5,6 +5,7 @@ comments: true
 tags: [career, society]
 description: "I’ve been wrestling for a while with the notion of “coding” being a necessary 21st century skill."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwjj2ej2k"
+image: "/i/share-cards/i-dont-want-to-teach-the-world-to-code.jpg"
 ---
 
 It seems that every other day a new code school opens it doors. In my mid-sized city, Chattanooga, there are no fewer than three businesses centered around teaching “coding” classes[^1] that I am aware of. And there are at least a half-dozen free or community driven programs and camps on top of that. Most are aimed at youth, but some offer adult education as well. And that, of course, is over and above what’s available in our public and private schools (which is considerable) and a plethora of online options.

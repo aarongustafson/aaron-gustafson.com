@@ -13,6 +13,7 @@ hero:
   url: https://labs.openai.com/s/YLRGLlmZlJWsO61Ag81Bo0X5
   offset: "0"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw45r362e"
+image: "/i/share-cards/a-tab-interface-before-its-time.jpg"
 ---
 
 I finally got around to reading [the CSS Tricks piece on “Spicy Sections”](https://css-tricks.com/spicy-sections/) and it’s cool how closely what the [OpenUI folks](https://open-ui.org/) are talking about aligns with work I was doing in the mid-to-late oughts.

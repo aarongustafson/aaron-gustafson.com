@@ -7,6 +7,7 @@ tags:
 description: "Last week the U.S. teetered on the brink of economic collapse, but there were lots of goodies to think about and share too. Here’s a smattering of things to check out on the topics of design, development, and social commentary:"
 canonical: "https://blog.easy-designs.net/archives/now-read-this-v/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwqw5l22w"
+image: "/i/share-cards/now-read-this-v.jpg"
 ---
 
 <p>Last week the U.S. teetered on the brink of economic collapse, but there were lots of goodies to think about and share too. Here’s a smattering of things to check out on the topics of design, development, and social commentary:</p>

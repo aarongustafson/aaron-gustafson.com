@@ -7,6 +7,7 @@ tags:
 description: "I’ve had a few interesting things come through my inbox of late and I thought I would share them with you:"
 canonical: "https://blog.easy-designs.net/archives/a-little-random-stuff/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx6zvey2w"
+image: "/i/share-cards/a-little-random-stuff.jpg"
 ---
 
 <p>I’ve had a few interesting things come through my inbox of late and I thought I would share them with you:</p>

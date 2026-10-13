@@ -12,6 +12,7 @@ hero:
   url: https://www.bing.com/images/create/a-person-playing-trumpet-and-a-robot-playing-drums/1-65bd5c702f59457583b11e08515eb603?id=mPSMVHOoB6ulGJYLeL5I6Q%3d%3d&view=detailv2&idpp=genimg&FORM=GCRIDP&mode=overlay
   offset: "60"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw36s6d2a"
+image: "/i/share-cards/dont-outsource-your-perspective-to-a-llm.jpg"
 ---
 
 At [<cite>A List Apart</cite>](https://alistapart.com/), I’m seeing a lot of article pitches that were clearly written by a Large Language Model (LLM) rather than a human being. In many cases, the people making the submission clearly put a lot of thought into the prompts they used to get the output they desired, but had zero follow though when it came to taking ownership of the output they were handed. To be clear, the issue I have here is not that they used an LLM as part of their process, but rather how they failed to wield such powerful tool effectively.

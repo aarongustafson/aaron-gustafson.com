@@ -5,6 +5,7 @@ description: "I have been struggling with some of my initial decisions with resp
 comments: true
 tags: ["web design", "this site"]
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwl4nik2p"
+image: "/i/share-cards/indecisiveness-and-urls.jpg"
 ---
 
 If you know me, you know I am a pretty indecisive guy. It is not uncommon for [Kelly](https://twitter.com/shirleytemper) and I to spend 15 minutes or more just trying to figure out where we want to grab a meal.

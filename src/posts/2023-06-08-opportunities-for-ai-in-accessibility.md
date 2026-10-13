@@ -15,6 +15,7 @@ hero:
 thanks:
   "Kartik Sawhney": "https://twitter.com/kartiks22"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw3vbds2w"
+image: "/i/share-cards/opportunities-for-ai-in-accessibility.jpg"
 ---
 
 In reading through [Joe Dolson’s recent piece on the intersection of AI and accessibility](https://www.joedolson.com/2023/06/accessibility-and-artificial-intelligence/), I absolutely appreciated the skepticism he has for AI in general as well as the ways in which many have been using it. In fact, I am very skeptical of AI myself, despite my role at Microsoft being that of an Accessibility Innovation Strategist helping run the AI for Accessibility grant program. As with any tool, AI can be used in very constructive, inclusive, and accessible ways _and_ it can be used in destructive, exclusive, and harmful ones. And there are a ton of uses somewhere in the mediocre middle as well.

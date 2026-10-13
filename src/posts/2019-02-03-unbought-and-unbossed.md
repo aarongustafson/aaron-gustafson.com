@@ -9,6 +9,7 @@ series:
   tag: series-black-history
   ordinal: "3rd"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwbm3np2f"
+image: "/i/share-cards/unbought-and-unbossed.jpg"
 ---
 
 I’ll start by admitting that Shirley Chisholm was not a woman I had much familiarity with growing up. Even though I spent a good portion of my youth in New York, my family (my mother especially) leaned heavily republican when it came to politics. Over the years, her name cropped up, but it wasn’t until Kelly became a recipient of Girls, Inc.’s “Unbought and Unbossed” award that I began to look into her history and appreciate the lasting impact of her life on this earth.

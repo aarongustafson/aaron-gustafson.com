@@ -13,6 +13,7 @@ hero:
   url: https://labs.openai.com/s/jkgbd3qsovfM8VSnvusHac3n
   offset: "100"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw4geo22p"
+image: "/i/share-cards/representation-in-alt-text.jpg"
 ---
 
 Inclusion can take many forms.

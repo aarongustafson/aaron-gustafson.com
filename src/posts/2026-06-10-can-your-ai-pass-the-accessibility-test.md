@@ -9,6 +9,7 @@ hero:
   src: /i/posts/2026-06-10/Slide2.png
   alt: "Title slide for Can Your AI Pass the Accessibility Test? with Carie Fisher, Aaron Gustafson, and Jessie Lorenz."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvz2sky2w"
+image: "/i/share-cards/can-your-ai-pass-the-accessibility-test.jpg"
 ---
 
 Last week at Microsoft Build, [Jessie Lorenz](https://www.linkedin.com/in/jessie-lorenz/), [Carie Fisher](https://www.linkedin.com/in/cariefisher/), and I gave a short talk on a question every AI-enabled product team should be asking: can your AI pass the accessibility test?

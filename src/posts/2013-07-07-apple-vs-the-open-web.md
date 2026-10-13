@@ -9,6 +9,7 @@ tags:
 description: "I’ll admit it: I never really got Siri."
 canonical: "https://blog.easy-designs.net/archives/apple-vs-the-open-web/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwo4mzz2l"
+image: "/i/share-cards/apple-vs-the-open-web.jpg"
 ---
 
 <p>

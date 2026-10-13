@@ -5,6 +5,7 @@ comments: true
 tags: ["web design", mobile, "progressive enhancement"]
 description: "Today is the day Google updates it algorithm to take into account mobile-friendliness. Here are a few tips that will help you embrace mobile without tearing your hair out."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwiicjp2f"
+image: "/i/share-cards/tips-for-surviving-googles-mobilegeddon.jpg"
 ---
 
 Today is the day [Google updates it algorithm to take into account mobile-friendliness](http://www.economist.com/news/business-and-finance/21648947-worlds-biggest-search-engine-shakes-up-its-algorithms-mobilegeddon). Here are a few tips that will help you embrace mobile without tearing your hair out.

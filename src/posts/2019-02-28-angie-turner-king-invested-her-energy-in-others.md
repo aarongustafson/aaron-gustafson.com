@@ -10,6 +10,7 @@ series:
   tag: series-black-history
   ordinal: "28th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw77u422h"
+image: "/i/share-cards/angie-turner-king-invested-her-energy-in-others.jpg"
 ---
 
 Chances are you’ve never heard the name Angie Turner King, and that’s because, like so many Black women, she invested her time and energy in other people. In King’s case, students.

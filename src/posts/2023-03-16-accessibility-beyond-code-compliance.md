@@ -10,6 +10,7 @@ hero:
   credit: "Aaron Gustafson"
   alt: ""
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw42yhz2n"
+image: "/i/share-cards/accessibility-beyond-code-compliance.jpg"
 ---
 
 _I had the great pleasure of delivering a talk about career opportunities for accessibility devs at [axe-con](https://www.deque.com/axe-con) earlier today. You can [view the slides](https://presentations.aaron-gustafson.com/SE8HHb/accessibility-beyond-code-compliance) or [watch the recording](https://www.deque.com/axe-con/sessions/accessibility-beyond-code-compliance/) of this talk, but what follows is an approximation my talk’s content, taken from my notes and slides._

@@ -10,6 +10,7 @@ series:
   tag: series-black-history
   ordinal: "9th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwayy3d2g"
+image: "/i/share-cards/kimberly-bryant-is-tackling-tech-monocultures-head-on.jpg"
 ---
 
 A modern revolutionary, [Kimberly Bryant](https://twitter.com/6gems) left her lucrative biotech job to address the lack of diversity in the tech industry by starting [Black Girls Code](http://www.blackgirlscode.com/). It all started when her daughter Kia—an avid gamer—expressed interest in learning to program at the age of 10.

@@ -7,6 +7,7 @@ description: "My son Oscar is Black and I fear for his future in Trump’s Ameri
 crossposted:
   Medium: https://medium.com/@AaronGustafson/im-voting-for-oscar-e91a8fa544b4#.gw3bhcpah
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwelzbc2w"
+image: "/i/share-cards/im-voting-for-oscar.jpg"
 ---
 
 <figure id="fig-2016-10-11-1" class="media-container">

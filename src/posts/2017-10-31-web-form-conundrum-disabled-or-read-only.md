@@ -5,6 +5,7 @@ comments: true
 tags: [forms, "web design 101", HTML, "user experience"]
 description: "It’s hard to know which is the right way to go, especially when presented with a choice between two seemingly similar options for disallowing a field to be edited."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwcfyqx2f"
+image: "/i/share-cards/web-form-conundrum-disabled-or-read-only.jpg"
 ---
 
 Web forms are complex beasts. There are a lot of field types to remember, each with dozens of attributes. It’s hard to know which is the right way to go, especially when presented with a choice between two seemingly similar options for disallowing a field to be edited: `disabled` and `readonly`.

@@ -5,6 +5,7 @@ comments: true
 tags: [Microsoft, "web design", Android]
 description: "I may work for Microsoft, but I don’t know everything that’s going on across the company. It’s big and I don’t have that kind of time."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwibqty2u"
+image: "/i/share-cards/collected-reactions-to-build.jpg"
 ---
 
 I may work for Microsoft, but I don’t know everything that’s going on across the company. It’s big and I don’t have that kind of time.

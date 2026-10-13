@@ -11,6 +11,7 @@ hero:
   alt: "Molly loved to take pictures. Here she’s sitting on a couch taking a picture of me taking a picture of her. It was a favorite pastime of ours. She was wearing a black shirt with a laced coverup and has a beautiful smile on her face. This was probably at the Hampton Inn near the Convention Center as we were there for SXSW."
   offset: "30"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw3mkik2p"
+image: "/i/share-cards/remembering-molly.jpg"
 ---
 
 We lost a seminal figure in the world of web design this week. And I lost a good friend and mentor. Molly Holzschlag cared deeply for the web and those of us who till its soils.

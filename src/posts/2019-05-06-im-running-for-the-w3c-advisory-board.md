@@ -5,6 +5,7 @@ comments: true
 tags: ["web standards", career, W3C]
 description: "When a handful of my colleagues reached out to see if I’d consider running for the W3C Advisory Board, I was… well… speechless."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw6xc2y2u"
+image: "/i/share-cards/im-running-for-the-w3c-advisory-board.jpg"
 ---
 
 As many of you know, I’ve been involved in the push for web standards for the better part of two decades. I caught the bug early and have been advocating for their use in pretty much every [article](/publications/#articles), [book](/publications/#books), [talk, and workshop](/speaking-engagements/) I’ve created. I’ve also had the great pleasure of helping run the [Web Standards Project (WaSP)](https://www.webstandards.org/), [a group whose impact on the web cannot be understated](https://wikipedia.org/wiki/Web_Standards_Project).[^1] And so, when a handful of my colleagues reached out to see if I’d consider running for the [W3C Advisory Board](https://www.w3.org/2005/10/Process-20051014/organization.html#AB), I was… well… speechless. What an honor it is to be nominated, especially out of the blue like that!

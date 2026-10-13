@@ -11,6 +11,7 @@ hero:
   alt: "A pop-art style illustration of a wide chasm. On the left side of the chasm stands a small, cute, red robot, gazing to the right, across the abyss. On the right side of the chasm is his destination: a finish line flag. The flag reads “Accessible.”"
   offset: ""
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw2daa22p"
+image: "/i/share-cards/identifying-accessibility-data-gaps-in-codegen-models.jpg"
 ---
 
 Late last year, I probed an LLM’s responses to HTML code generation prompts to assess its adherence to accessibility best practices. The results were unsurprisingly disappointing — roughly what I’d expect from a developer aware of accessibility but unsure how to implement it. The study highlighted key areas where training data needs improvement.

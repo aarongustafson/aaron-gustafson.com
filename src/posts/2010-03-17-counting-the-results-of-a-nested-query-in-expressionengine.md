@@ -7,6 +7,7 @@ tags:
 description: "If you’ve built anything remotely challenging in ExpressionEngine, you’ve no doubt discovered things that are easier done in native PHP than in EE tags. A lot of it has to do with how ExpressionEngine parses templates and what gets..."
 canonical: "https://blog.easy-designs.net/archives/counting-the-results-of-a-nested-query-in-expressionengine/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwwau6r2l"
+image: "/i/share-cards/counting-the-results-of-a-nested-query-in-expressionengine.jpg"
 ---
 
 <p>If you’ve built anything remotely challenging in ExpressionEngine, you’ve no doubt discovered things that are easier done in native PHP than in EE tags. A lot of it has to do with how ExpressionEngine parses templates and what gets parsed first.</p>

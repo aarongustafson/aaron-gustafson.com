@@ -7,6 +7,7 @@ tags:
 description: "Hot links last week:"
 canonical: "https://blog.easy-designs.net/archives/now-read-this-2/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwuskzc2w"
+image: "/i/share-cards/now-read-this-2.jpg"
 ---
 
 <p>Hot links last week:</p>

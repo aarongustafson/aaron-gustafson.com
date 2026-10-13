@@ -5,6 +5,7 @@ comments: true
 tags: [mentoring, career]
 description: "I look forward to getting to know you and taking a few of you under my wing."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw6ugj62e"
+image: "/i/share-cards/apply-for-a-spot-in-my-2020-2021-mentorship.jpg"
 ---
 
 It’s hard to believe how quickly the last year has gone. It has been a tremendous honor to work with [Ace](https://twitter.com/Ace_KYD), [Dezzie](https://twitter.com/thedezzie), [Marcy](https://twitter.com/marcysutton), [Olu](https://twitter.com/oluoluoxenfree), and [Sara](https://twitter.com/SaraLaughed) for these past 12 months. And while we wrap up our mentorship calls this month, I thought it would be a good idea to open up the application for my 2020–21 cohort.

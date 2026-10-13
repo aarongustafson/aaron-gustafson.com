@@ -5,6 +5,7 @@ comments: true
 tags: ["progressive enhancement", "the web", "progressive web apps"]
 description: "As with everything, the decision to go Web or platform-specific often depends on a variety of factors, many of which are likely to change."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwesxls2l"
+image: "/i/share-cards/the-web-is-messy-and-beautiful.jpg"
 ---
 
 In two back-to-back, potentially <abbr aria-label="Not Safe for Work">NSFW</abbr> posts discussing web development vs. platform-specific development, Eran Hammer covered a lot of the pain points encountered in each. For instance, on the Web, you’ve got rendering and user interface inconsistencies between browsers. On the other hand, retention for apps is notoriously crappy.

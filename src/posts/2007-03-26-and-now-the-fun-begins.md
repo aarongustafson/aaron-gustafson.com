@@ -10,6 +10,7 @@ tags:
 description: "Today marked the last day of my “work” here at SXSW and now it’s play time. It’s only been two days of the conference, but it seems like I’ve already done a week’s worth of stuff. My two sessions both went extremely well from my..."
 canonical: "https://blog.easy-designs.net/archives/and-now-the-fun-begins/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwxsg4p2f"
+image: "/i/share-cards/and-now-the-fun-begins.jpg"
 ---
 
 <p>Today marked the last day of my “work” here at SXSW and now it’s play time. It’s only been two days of the conference, but it seems like I’ve already done a week’s worth of stuff. My two sessions both went extremely well from my perspective and the feedback I’ve received has also been very good so far.</p>

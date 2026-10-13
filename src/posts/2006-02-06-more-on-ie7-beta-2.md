@@ -9,6 +9,7 @@ tags:
 description: "Eric has a very enlightened post for those of you out to document bugs in IE 7 Beta 2 . He also echoed my feelings that this is a beta people!"
 canonical: "https://blog.easy-designs.net/archives/more-on-ie7-beta-2/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx3xxj22l"
+image: "/i/share-cards/more-on-ie7-beta-2.jpg"
 ---
 
 <p>Eric has a very enlightened post <a href="http://meyerweb.com/eric/thoughts/2006/02/03/charting-ie7b2/">for those of you out to document bugs in <abbr title="Internet Explorer 7">IE7</abbr> Beta 2</a>. He also echoed my feelings that <em>this is a beta people!</em></p>

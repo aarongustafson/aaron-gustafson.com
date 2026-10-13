@@ -5,6 +5,7 @@ comments: true
 tags: ["web design", security, "this site"]
 description: "So, as much as it pains me to abandon good old fashioned HTTP, I’ve decided to lock things down a bit."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwgvtyp25"
+image: "/i/share-cards/moved-to-https.jpg"
 ---
 
 I’ve been complaining about [“man in the middle” attacks brought on by internet service providers](https://www.aaron-gustafson.com/notebook/more-proof-we-dont-control-our-web-pages/) a bunch over the last year. The only way to keep uninvited third parties from injecting JavaScript and more—potentially screwing up your page—is to move to HTTPS. So, as much as it pains me to abandon good old fashioned HTTP, I’ve decided to lock things down a bit.

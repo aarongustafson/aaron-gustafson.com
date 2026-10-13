@@ -7,6 +7,7 @@ tags:
 description: "Apologies for not posting links last week…between the holiday on Monday and spending all of Tuesday without power, I got a little behind. Here are some highlights from the last two weeks:"
 canonical: "https://blog.easy-designs.net/archives/now-read-this-9/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwqf6m22w"
+image: "/i/share-cards/now-read-this-9.jpg"
 ---
 
 <p>Apologies for not posting links last week…between the holiday on Monday and spending all of Tuesday without power, I got a little behind. Here are some highlights from the last two weeks:</p>

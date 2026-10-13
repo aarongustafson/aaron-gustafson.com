@@ -9,6 +9,7 @@ tags:
 description: "I know, I know, I haven’t posted anything in the aftermath of AEA - NYC . Things have been a little busy on the homefront (new roof, kitchen remodelling and the firing of a lazy, lying contractor) and since moving into the new offi ce..."
 canonical: "https://blog.easy-designs.net/archives/an-event-apart-nyc-post-mortem/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwyl3pg2e"
+image: "/i/share-cards/an-event-apart-nyc-post-mortem.jpg"
 ---
 
 <p><img alt=" " class="feature" src="http://static.flickr.com/56/136066759_17497fe37c_o.png"/></p>

@@ -8,6 +8,7 @@ tags:
 description: "A fantastic new t-shirt from J! NX ."
 canonical: "https://blog.easy-designs.net/archives/wait-for-it/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx5ji2w2e"
+image: "/i/share-cards/wait-for-it.jpg"
 ---
 
 <p><a href="http://www.jinx.com/scripts/details.asp?productID=535&amp;catID=-1"><img alt="T-shirt reads &amp;#8220;[please wait while image loads]&amp;#8221;" src="/i/posts/2005-11-07/please_wait_t.jpg"/></a></p>

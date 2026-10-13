@@ -9,6 +9,7 @@ series:
   tag: series-black-history
   ordinal: "33rd"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw6djx72f"
+image: "/i/share-cards/dr-rebecca-lee-crumpler-prioritized-the-most-vulnerable.jpg"
 ---
 
 Given the often slow way in which systems of oppression—in this case, both white supremacy and the patriarchy—are broken down, it’s relatively surprising to discover that one woman, Dr. Rebecca Lee Crumpler, managed to to so much in her 64 years on this earth. She was the first Black woman to enter medical school in the United States and, upon graduation became the first Black woman physician. She was also the first Black woman to write a medical textbook—at a time when few Black people were even admitted into medical school—and the only woman to publish a medical book in the entirety of the 19th century! But even with all of those accolades, the thing that stands out most to me about Rebecca was her commitment to the most vulnerable.

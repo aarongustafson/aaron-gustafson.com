@@ -9,6 +9,7 @@ tags:
 description: "Yesterday saw the launch of the Chrome App Store and, along with it, a Chrome app we created called the wikiHow Survival Kit ( also available as a web app )."
 canonical: "https://blog.easy-designs.net/archives/we-built-a-chrome-app/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwvko7z2l"
+image: "/i/share-cards/we-built-a-chrome-app.jpg"
 ---
 
 <p>Yesterday saw the launch of the <a href="http://chrome.google.com/webstore/">Chrome App Store</a> and, along with it, a Chrome app we created called the <a href="https://chrome.google.com/webstore/detail/ickaeddjnhfofihhibhnjemlphjmnchl">wikiHow Survival Kit</a> (<a href="http://apps.wikihow.com/survivalkit/">also available as a web app</a>).</p>
