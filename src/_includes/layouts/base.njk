@@ -47,6 +47,10 @@
 		<link rel="pingback" href="https://webmention.io/www.aaron-gustafson.com/xmlrpc" />
 
 		<meta name="monetization" content="$ilp.uphold.com/bQeAXrfee6wW">
+
+		{% if atUri %}
+			<link rel="site.standard.document" href="{{ atUri }}" />
+		{% endif %}
 	</head>
 
 	{% set svg_essay %}{{ "/src/static/i/icons/essay.svg" | svgContents | safe }}{% endset %}
