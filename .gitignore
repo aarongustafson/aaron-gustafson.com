@@ -29,3 +29,5 @@ todo
 
 # GitHub Actions syndication cache
 .github/cache/*.json
+
+.sequoia-state.json
