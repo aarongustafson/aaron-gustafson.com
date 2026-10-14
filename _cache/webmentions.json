@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-04T23:36:28.791Z",
+  "lastFetched": "2026-10-14T04:35:45.833Z",
   "children": [
     {
       "type": "entry",
@@ -106341,6 +106341,2324 @@
       "wm-protocol": "webmention",
       "like-of": "https://www.aaron-gustafson.com/notebook/matching-form-fields-with-a-web-component/",
       "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:kemnnphy4vqvsbo2fyb26ht3/bafkreidmkyhrmxnkk63did42djylz3nvcnkktoexmbfmkai6qbvnrycfra",
+        "url": "https://bsky.app/profile/hell-maestro.eurosky.social"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:kemnnphy4vqvsbo2fyb26ht3",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T22:51:08Z",
+      "wm-id": 2040445,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Akemnnphy4vqvsbo2fyb26ht3",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Michael Spellacy (Spell) ❌👑",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:4takexkuib3jqikvqvqamaqu/bafkreihylqiymy7vgq3go6osog5hy7xs3lidkefo64ly5tzdki43hw2l5m",
+        "url": "https://bsky.app/profile/michaelspellacy.com"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#reposted_by_did:plc:4takexkuib3jqikvqvqamaqu",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T21:15:27Z",
+      "wm-id": 2040404,
+      "wm-source": "https://brid.gy/repost/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253A4takexkuib3jqikvqvqamaqu",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Michael Spellacy (Spell) ❌👑",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:4takexkuib3jqikvqvqamaqu/bafkreihylqiymy7vgq3go6osog5hy7xs3lidkefo64ly5tzdki43hw2l5m",
+        "url": "https://bsky.app/profile/michaelspellacy.com"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:4takexkuib3jqikvqvqamaqu",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T21:15:24Z",
+      "wm-id": 2040403,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253A4takexkuib3jqikvqvqamaqu",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:y4jhcy6vda424i37mf36mflq/bafkreihfiuh767yp2dk5l7jbmhky6n3phzy4ybcetowjy7dc5nyxkl2xui",
+        "url": "https://bsky.app/profile/bdadam.bsky.social"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:y4jhcy6vda424i37mf36mflq",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T20:21:56Z",
+      "wm-id": 2040379,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Ay4jhcy6vda424i37mf36mflq",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Frank // Mottokrosh",
+        "photo": "https://cdn.masto.host/frontendsocial/cache/accounts/avatars/112/009/595/676/132/535/original/d46e8e8bd266027d.jpeg",
+        "url": "https://social.mottokrosh.com/@mottokrosh"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#favorited-by-112009595676132535",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T19:02:56Z",
+      "wm-id": 2040323,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117401091943095022/112009595676132535",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Joface",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:lltcrzdrjxzdf5ld7kflm5wj/bafkreifblxyln562kpsaedl3lt2y4dbaei3vi5vd6zpypstpchympmqez4",
+        "url": "https://bsky.app/profile/joface.mastodon.scot.ap.brid.gy"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:lltcrzdrjxzdf5ld7kflm5wj",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T19:00:38Z",
+      "wm-id": 2040322,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Alltcrzdrjxzdf5ld7kflm5wj",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Florian Geierstanger",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:y3zkcheff6qz7jnyftttet2f/bafkreig77wetfoamcuay4wxsnlf3eezxihum4vs5pgarno6627h3alhalq",
+        "url": "https://bsky.app/profile/kinoauge.bsky.social"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:y3zkcheff6qz7jnyftttet2f",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T18:28:23Z",
+      "wm-id": 2040319,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Ay3zkcheff6qz7jnyftttet2f",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Brad Wenner",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:fyxup3moaom35xzxnomsryyx/bafkreigxwwfw6kmsmw6bdmu6wrvyqgop4lbeluqpdsksqabvgribnwfmpi",
+        "url": "https://bsky.app/profile/bradwenner.photo"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:fyxup3moaom35xzxnomsryyx",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T17:00:05Z",
+      "wm-id": 2040295,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Afyxup3moaom35xzxnomsryyx",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mister Magoo 👁️👁️👂🏼🕟",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:ia55mn55lkokfqpm4ljeyvzm/bafkreidgpgdbxbfnrz6s34rlwh3wmahhbjorq7xsndwrvfduwtew5eargi",
+        "url": "https://bsky.app/profile/mistermagoo.bsky.social"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:ia55mn55lkokfqpm4ljeyvzm",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T17:00:04Z",
+      "wm-id": 2040294,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Aia55mn55lkokfqpm4ljeyvzm",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Random Username",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:z35y36spdjcypagerqmji6ks/bafkreibzn7bofsxot24scmcogvrpeeyrbwzgrjxm2oid7sz6b7ldrer37e",
+        "url": "https://bsky.app/profile/v2loko7mn63auhyy.bsky.social"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:z35y36spdjcypagerqmji6ks",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T17:00:03Z",
+      "wm-id": 2040293,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Az35y36spdjcypagerqmji6ks",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "fry69",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:web:fry69.dev/bafkreicxcocpyrg7bl4to3e6ncrizsove7lbi3swq3yhmn3x77h6ii3z2i",
+        "url": "https://bsky.app/profile/fry69.dev"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:web:fry69.dev",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T16:30:44Z",
+      "wm-id": 2040285,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aweb%253Afry69.dev",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rick",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:swyp6rpv24vvdzpiucf3765i/bafkreicqynlvw5zfif3egivj4rxsfvbtipfn6szidwvrwlsubdpkkyvoeq",
+        "url": "https://bsky.app/profile/calder12.bsky.social"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:swyp6rpv24vvdzpiucf3765i",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T16:30:44Z",
+      "wm-id": 2040286,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Aswyp6rpv24vvdzpiucf3765i",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ryan Swaney",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:5qipkkvtkhxtlky55ixfuuho/bafkreiezmt2wjtszkzfqxyvvzc3vpdjb2w535ine6iil5w2wptmsuoq5b4",
+        "url": "https://bsky.app/profile/ryanswaney.dev"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:5qipkkvtkhxtlky55ixfuuho",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T16:05:33Z",
+      "wm-id": 2040278,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253A5qipkkvtkhxtlky55ixfuuho",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eric Bailey",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:c577wa5hifxtmprlqc5mo5cb/bafkreihpor2oxmufrmbnapr3n4vp6zopr4bvlwciiaholzd7dxe3tpzopi",
+        "url": "https://bsky.app/profile/ericwbailey.website"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#reposted_by_did:plc:c577wa5hifxtmprlqc5mo5cb",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T16:05:13Z",
+      "wm-id": 2040277,
+      "wm-source": "https://brid.gy/repost/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Ac577wa5hifxtmprlqc5mo5cb",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kevin Powell",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:xbj7qbl7qmoo7dpf5dheplex/bafkreidvcnutqrcf27jf53ft2uhjunj62hx5nx35o5cemqfc2qirktoksa",
+        "url": "https://bsky.app/profile/kevinpowell.co"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#reposted_by_did:plc:xbj7qbl7qmoo7dpf5dheplex",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T16:05:10Z",
+      "wm-id": 2040276,
+      "wm-source": "https://brid.gy/repost/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Axbj7qbl7qmoo7dpf5dheplex",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "lion-byte (mark)",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:fgtasruwazisgfbzj3duasis/bafkreihrl7cxh4pv7nnk5yigisjbzq4ob7akbfufml7luvv7mfa3m5uwn4",
+        "url": "https://bsky.app/profile/lion-byte.com"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:fgtasruwazisgfbzj3duasis",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T16:05:09Z",
+      "wm-id": 2040275,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Afgtasruwazisgfbzj3duasis",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oliver Turner",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:xrzzq56w2gdeo2d4f43va6yy/bafkreiglpb2sb6npcfnhgt6hd6wmj7l3sbrslci5vxrr7nqiblonp6graa",
+        "url": "https://bsky.app/profile/oliverturner.cloud"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:xrzzq56w2gdeo2d4f43va6yy",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T16:05:07Z",
+      "wm-id": 2040273,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Axrzzq56w2gdeo2d4f43va6yy",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "maya",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:7uefbver43fsdts7cg4eyf7q/bafkreicdohinlapzif4b2ilyshgt5xa7kcydckhdizqcshnvxwxabigtdu",
+        "url": "https://bsky.app/profile/maya.land"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:7uefbver43fsdts7cg4eyf7q",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T16:05:07Z",
+      "wm-id": 2040274,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253A7uefbver43fsdts7cg4eyf7q",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kevin Powell",
+        "photo": "https://avatars.webmention.io/oyster.us-east.host.bsky.network/751369384445d7d25eecb3d50e9a353ed1efd6df7d77444640a2d411154dca90.jpg",
+        "url": "https://bsky.app/profile/kevinpowell.co"
+      },
+      "url": "https://bsky.app/profile/did:plc:6rmgrvblxflqh34omwywu6ib/post/3mxr2ta2jnr2w#reposted_by_did:plc:xbj7qbl7qmoo7dpf5dheplex",
+      "published": "2026-10-13T15:57:01+00:00",
+      "published_ts": 1791907021,
+      "wm-received": "2026-10-13T15:57:07Z",
+      "wm-id": 2040272,
+      "wm-source": "https://bsky.brid.gy/convert/web/at://did:plc:xbj7qbl7qmoo7dpf5dheplex/app.bsky.feed.repost/3mxrfiqsgfg2s",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "content": {
+        "content-type": "text/html",
+        "value": "Shared <a href=\"https://bsky.app/profile/did:plc:6rmgrvblxflqh34omwywu6ib/post/3mxr2ta2jnr2w\">a post</a> by <span class=\"h-card\">\n  \n  <a class=\"u-url\" href=\"https://bsky.brid.gy/web/did:plc:6rmgrvblxflqh34omwywu6ib\">bsky.brid.gy/web/did:plc:6r...</a>\n</span>\n  Need sortable tables? My table-sortable web component adds accessible, customizable sorting to ordinary HTML tables—and they still work when JavaScript doesn’t. <a href=\"https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/\">www.aaron-gustafson.com/notebook/sor...</a>",
+        "html": "Shared <a href=\"https://bsky.app/profile/did:plc:6rmgrvblxflqh34omwywu6ib/post/3mxr2ta2jnr2w\">a post</a> by <span class=\"h-card\">\n  \n  <a class=\"u-url\" href=\"https://bsky.brid.gy/web/did:plc:6rmgrvblxflqh34omwywu6ib\">bsky.brid.gy/web/did:plc:6r...</a>\n</span>\n  Need sortable tables? My table-sortable web component adds accessible, customizable sorting to ordinary HTML tables—and they still work when JavaScript doesn’t. <a href=\"https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/\">www.aaron-gustafson.com/notebook/sor...</a>",
+        "text": "Shared a post by \n  \n  bsky.brid.gy/web/did:plc:6r...\n\n  Need sortable tables? My table-sortable web component adds accessible, customizable sorting to ordinary HTML tables—and they still work when JavaScript doesn’t. www.aaron-gustafson.com/notebook/sor..."
+      },
+      "repost-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Adrian Parsons",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:ubqz3ecumlvknvjfacbwhxve/bafkreibcf2vughjecmnexahtcdzwkflky7fzi47bheswyikzahaf3bl6jy",
+        "url": "https://bsky.app/profile/adrianparsons.com"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:ubqz3ecumlvknvjfacbwhxve",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T15:40:35Z",
+      "wm-id": 2040269,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Aubqz3ecumlvknvjfacbwhxve",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jason Byrne",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:3wbj4e2kwmwzt2hdbd34k53q/bafkreiajycbs42k7qq55n67pxqz25e4mvika3n775mxtwhqwd2njirgugm",
+        "url": "https://bsky.app/profile/geekwithsoul.bsky.social"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:3wbj4e2kwmwzt2hdbd34k53q",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T15:40:35Z",
+      "wm-id": 2040270,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253A3wbj4e2kwmwzt2hdbd34k53q",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jacob Lamb",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:armut7dirmaum6vvdo3dnw2w/bafkreigxidjgl2mvrrgiewfnpsucpfbmmfc4kykqp6rhjwsab4urzzwvau",
+        "url": "https://bsky.app/profile/dalamb.me"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:armut7dirmaum6vvdo3dnw2w",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T15:40:34Z",
+      "wm-id": 2040268,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Aarmut7dirmaum6vvdo3dnw2w",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ky",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:ns7i7bp55lay2bx75k5jcnbh/bafkreiflyircnzzamkv6sycmvnvkriqgl2cjvq2wu3l3uzbaxzdpmrzilq",
+        "url": "https://bsky.app/profile/ky.fyi"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:ns7i7bp55lay2bx75k5jcnbh",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T15:40:33Z",
+      "wm-id": 2040266,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Ans7i7bp55lay2bx75k5jcnbh",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jeremy Thompson",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:lwdezponannqokkcuk7uuew3/bafkreig4grfcni4bpbuykm4w45mggmnqu2n27ndlaqqbefegqxbz4ua6au",
+        "url": "https://bsky.app/profile/jhthompson.ca"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:lwdezponannqokkcuk7uuew3",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T15:40:33Z",
+      "wm-id": 2040267,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Alwdezponannqokkcuk7uuew3",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Evil Jim O’Donnell",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:mvy6jvolas42qzt6yezkyzou/bafkreihrtr3s3bwdrhsmqfbdxhki3ycpmvpyq74rx6o7sc26khjxjrt5qu",
+        "url": "https://bsky.app/profile/eatyourgreens.org.uk"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#reposted_by_did:plc:mvy6jvolas42qzt6yezkyzou",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T15:06:36Z",
+      "wm-id": 2040245,
+      "wm-source": "https://brid.gy/repost/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Amvy6jvolas42qzt6yezkyzou",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Steve",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:onmv7m3klplzio5fuvz3a6el/bafkreiedh4l4ju53wyhbcii5nwj4adhhdig736ngoguqurnwmhds4gvlky",
+        "url": "https://bsky.app/profile/steveax.bsky.social"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:onmv7m3klplzio5fuvz3a6el",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T15:06:35Z",
+      "wm-id": 2040242,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Aonmv7m3klplzio5fuvz3a6el",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Zach Leatherman",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:xpchjovbk6sxl3bv74z7cs54/bafkreie4yypxcxrte6shppdo6glzt7gtmueprazp3xndeksuw2uid2ecfm",
+        "url": "https://bsky.app/profile/zachleat.com"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:xpchjovbk6sxl3bv74z7cs54",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T15:06:35Z",
+      "wm-id": 2040243,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Axpchjovbk6sxl3bv74z7cs54",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Zach Leatherman",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:xpchjovbk6sxl3bv74z7cs54/bafkreie4yypxcxrte6shppdo6glzt7gtmueprazp3xndeksuw2uid2ecfm",
+        "url": "https://bsky.app/profile/zachleat.com"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#reposted_by_did:plc:xpchjovbk6sxl3bv74z7cs54",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T15:06:35Z",
+      "wm-id": 2040244,
+      "wm-source": "https://brid.gy/repost/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Axpchjovbk6sxl3bv74z7cs54",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "SimonCox",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:tki7vwlanxbwrz2er67eaeqa/bafkreiabali2634y2slw3yiixyfgxibw6qhnvmp6imzbvyuflezvkjg4em",
+        "url": "https://bsky.app/profile/simoncox.com"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:tki7vwlanxbwrz2er67eaeqa",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T15:06:34Z",
+      "wm-id": 2040240,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Atki7vwlanxbwrz2er67eaeqa",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Evil Jim O’Donnell",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:mvy6jvolas42qzt6yezkyzou/bafkreihrtr3s3bwdrhsmqfbdxhki3ycpmvpyq74rx6o7sc26khjxjrt5qu",
+        "url": "https://bsky.app/profile/eatyourgreens.org.uk"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:mvy6jvolas42qzt6yezkyzou",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T15:06:34Z",
+      "wm-id": 2040241,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Amvy6jvolas42qzt6yezkyzou",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jonny Buchanan",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:rj7nlruukyhpdudnv72bh7ck/bafkreie6fuzvdzly7ubcfwxb2vdvytsnigtxxduva7pqss6euelfchdaly",
+        "url": "https://bsky.app/profile/jbscript.dev"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:rj7nlruukyhpdudnv72bh7ck",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T15:06:32Z",
+      "wm-id": 2040239,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Arj7nlruukyhpdudnv72bh7ck",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Evil Jim O’Donnell",
+        "photo": "https://avatars.webmention.io/eurosky.social/f19c772d86c389e4c81423b9d48de04f655f887f91bf9df90b5e51d374c67d85.jpg",
+        "url": "https://bsky.app/profile/eatyourgreens.org.uk"
+      },
+      "url": "https://bsky.app/profile/did:plc:6rmgrvblxflqh34omwywu6ib/post/3mxr2ta2jnr2w#reposted_by_did:plc:mvy6jvolas42qzt6yezkyzou",
+      "published": "2026-10-13T14:47:02+00:00",
+      "published_ts": 1791902822,
+      "wm-received": "2026-10-13T14:47:08Z",
+      "wm-id": 2040236,
+      "wm-source": "https://bsky.brid.gy/convert/web/at://did:plc:mvy6jvolas42qzt6yezkyzou/app.bsky.feed.repost/3mxrblnumgt2g",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "content": {
+        "content-type": "text/html",
+        "value": "Shared <a href=\"https://bsky.app/profile/did:plc:6rmgrvblxflqh34omwywu6ib/post/3mxr2ta2jnr2w\">a post</a> by <span class=\"h-card\">\n  \n  <a class=\"u-url\" href=\"https://bsky.brid.gy/web/did:plc:6rmgrvblxflqh34omwywu6ib\">bsky.brid.gy/web/did:plc:6r...</a>\n</span>\n  Need sortable tables? My table-sortable web component adds accessible, customizable sorting to ordinary HTML tables—and they still work when JavaScript doesn’t. <a href=\"https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/\">www.aaron-gustafson.com/notebook/sor...</a>",
+        "html": "Shared <a href=\"https://bsky.app/profile/did:plc:6rmgrvblxflqh34omwywu6ib/post/3mxr2ta2jnr2w\">a post</a> by <span class=\"h-card\">\n  \n  <a class=\"u-url\" href=\"https://bsky.brid.gy/web/did:plc:6rmgrvblxflqh34omwywu6ib\">bsky.brid.gy/web/did:plc:6r...</a>\n</span>\n  Need sortable tables? My table-sortable web component adds accessible, customizable sorting to ordinary HTML tables—and they still work when JavaScript doesn’t. <a href=\"https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/\">www.aaron-gustafson.com/notebook/sor...</a>",
+        "text": "Shared a post by \n  \n  bsky.brid.gy/web/did:plc:6r...\n\n  Need sortable tables? My table-sortable web component adds accessible, customizable sorting to ordinary HTML tables—and they still work when JavaScript doesn’t. www.aaron-gustafson.com/notebook/sor..."
+      },
+      "repost-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:z465rpu6tp65n6kqoj6ukjto/bafkreifdssxwwxhmjjw5epa3gecioroa6ov5ilptakw2ix44bjke5jmnnm",
+        "url": "https://bsky.app/profile/platinumsoul.bsky.social"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:z465rpu6tp65n6kqoj6ukjto",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T14:32:23Z",
+      "wm-id": 2040234,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Az465rpu6tp65n6kqoj6ukjto",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mårten Thavenius",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:mknegpb52yda57ajtufwor7z/bafkreifns5pqskqgtcz7mmignixmybhaqrlschkjwj2x5mru6n2dxzuag4",
+        "url": "https://bsky.app/profile/thavenius.se"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:mknegpb52yda57ajtufwor7z",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T14:32:22Z",
+      "wm-id": 2040233,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Amknegpb52yda57ajtufwor7z",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Benjy Stanton",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:v6c4yqz5ldftgz73tthgirah/bafkreie3deulyfdimrmcjag45tdajwhmcgw3bwn5ayygidxdmunnfzr424",
+        "url": "https://bsky.app/profile/benjystanton.co.uk"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:v6c4yqz5ldftgz73tthgirah",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T14:07:34Z",
+      "wm-id": 2040231,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Av6c4yqz5ldftgz73tthgirah",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Brian Milne",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:q2nqsia2zwarz5oqa6wym45t/bafkreiggwvlixld67ylaxcram7cqktlof7imqev72f57tkwu5e7435bthi",
+        "url": "https://bsky.app/profile/briandmilne.bsky.social"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:q2nqsia2zwarz5oqa6wym45t",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T13:32:59Z",
+      "wm-id": 2040219,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Aq2nqsia2zwarz5oqa6wym45t",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Frontend Focus 🚀",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:m7cjitrn2ay262zhyqlkwoqc/bafkreigdv77g3g276ff7ijqgk5y6hkrowjae5gdlvipzw66gdjwrqbhuh4",
+        "url": "https://bsky.app/profile/frontendfocus.bsky.social"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#reposted_by_did:plc:m7cjitrn2ay262zhyqlkwoqc",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T13:32:59Z",
+      "wm-id": 2040220,
+      "wm-source": "https://brid.gy/repost/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Am7cjitrn2ay262zhyqlkwoqc",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Purplebiker",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:gwuy6qtapsfjdwxxbknaa5ml/bafkreibrwo5hlgsiylqiyitv5ahclqk5c3bl7jsbibczdvxrezxc2u4mse",
+        "url": "https://bsky.app/profile/torstenknabe.com"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#reposted_by_did:plc:gwuy6qtapsfjdwxxbknaa5ml",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T13:32:59Z",
+      "wm-id": 2040221,
+      "wm-source": "https://brid.gy/repost/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Agwuy6qtapsfjdwxxbknaa5ml",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Purplebiker",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:gwuy6qtapsfjdwxxbknaa5ml/bafkreibrwo5hlgsiylqiyitv5ahclqk5c3bl7jsbibczdvxrezxc2u4mse",
+        "url": "https://bsky.app/profile/torstenknabe.com"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:gwuy6qtapsfjdwxxbknaa5ml",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T13:32:58Z",
+      "wm-id": 2040218,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Agwuy6qtapsfjdwxxbknaa5ml",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Purplebiker",
+        "photo": "https://avatars.webmention.io/enoki.us-east.host.bsky.network/31b3ba759a48c2e08c2275e80e25c15d16c2bfa641404591d6f1266e2d538c91.jpg",
+        "url": "https://bsky.app/profile/torstenknabe.com"
+      },
+      "url": "https://bsky.app/profile/did:plc:6rmgrvblxflqh34omwywu6ib/post/3mxr2ta2jnr2w#reposted_by_did:plc:gwuy6qtapsfjdwxxbknaa5ml",
+      "published": "2026-10-13T13:03:07+00:00",
+      "published_ts": 1791896587,
+      "wm-received": "2026-10-13T13:03:08Z",
+      "wm-id": 2040169,
+      "wm-source": "https://bsky.brid.gy/convert/web/at://did:plc:gwuy6qtapsfjdwxxbknaa5ml/app.bsky.feed.repost/3mxr3rruzsp2m",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "content": {
+        "content-type": "text/html",
+        "value": "Shared <a href=\"https://bsky.app/profile/did:plc:6rmgrvblxflqh34omwywu6ib/post/3mxr2ta2jnr2w\">a post</a> by <span class=\"h-card\">\n  \n  <a class=\"u-url\" href=\"https://bsky.brid.gy/web/did:plc:6rmgrvblxflqh34omwywu6ib\">bsky.brid.gy/web/did:plc:6r...</a>\n</span>\n  Need sortable tables? My table-sortable web component adds accessible, customizable sorting to ordinary HTML tables—and they still work when JavaScript doesn’t. <a href=\"https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/\">www.aaron-gustafson.com/notebook/sor...</a>",
+        "html": "Shared <a href=\"https://bsky.app/profile/did:plc:6rmgrvblxflqh34omwywu6ib/post/3mxr2ta2jnr2w\">a post</a> by <span class=\"h-card\">\n  \n  <a class=\"u-url\" href=\"https://bsky.brid.gy/web/did:plc:6rmgrvblxflqh34omwywu6ib\">bsky.brid.gy/web/did:plc:6r...</a>\n</span>\n  Need sortable tables? My table-sortable web component adds accessible, customizable sorting to ordinary HTML tables—and they still work when JavaScript doesn’t. <a href=\"https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/\">www.aaron-gustafson.com/notebook/sor...</a>",
+        "text": "Shared a post by \n  \n  bsky.brid.gy/web/did:plc:6r...\n\n  Need sortable tables? My table-sortable web component adds accessible, customizable sorting to ordinary HTML tables—and they still work when JavaScript doesn’t. www.aaron-gustafson.com/notebook/sor..."
+      },
+      "repost-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jrlarsen",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:dx4hfgdeyfswmn2muss7gy6s/bafkreifebarzjqzq7kz6uqq4kdtelxbl7y7mof2zrr2cjen3bboophra5a",
+        "url": "https://bsky.app/profile/room51.co.uk"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#liked_by_did:plc:dx4hfgdeyfswmn2muss7gy6s",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T13:02:15Z",
+      "wm-id": 2040167,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Adx4hfgdeyfswmn2muss7gy6s",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jrlarsen",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:dx4hfgdeyfswmn2muss7gy6s/bafkreifebarzjqzq7kz6uqq4kdtelxbl7y7mof2zrr2cjen3bboophra5a",
+        "url": "https://bsky.app/profile/room51.co.uk"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxr2ta2jnr2w#reposted_by_did:plc:dx4hfgdeyfswmn2muss7gy6s",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T13:02:15Z",
+      "wm-id": 2040168,
+      "wm-source": "https://brid.gy/repost/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxr2ta2jnr2w/did%253Aplc%253Adx4hfgdeyfswmn2muss7gy6s",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Aaron Gustafson",
+        "photo": "https://avatars.webmention.io/inkcap.us-east.host.bsky.network/dbfde1edfa1e81f4cd2c11e7c92108a54752820249f2b5c8ea3ccf529f203120.jpg",
+        "url": "https://bsky.app/profile/aaron-gustafson.com"
+      },
+      "url": "https://bsky.app/profile/did:plc:6rmgrvblxflqh34omwywu6ib/post/3mxr2ta2jnr2w",
+      "published": "2026-10-13T12:46:00+00:00",
+      "published_ts": 1791895560,
+      "wm-received": "2026-10-13T12:46:03Z",
+      "wm-id": 2040162,
+      "wm-source": "https://bsky.brid.gy/convert/web/at://did:plc:6rmgrvblxflqh34omwywu6ib/app.bsky.feed.post/3mxr2ta2jnr2w%23bridgy-fed-create-2026-10-13T12:46:01.330960+00:00",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "content": {
+        "content-type": "text/html",
+        "value": "Need sortable tables? My table-sortable web component adds accessible, customizable sorting to ordinary HTML tables—and they still work when JavaScript doesn’t. <a href=\"https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/\">www.aaron-gustafson.com/notebook/sor...</a>",
+        "html": "Need sortable tables? My table-sortable web component adds accessible, customizable sorting to ordinary HTML tables—and they still work when JavaScript doesn’t. <a href=\"https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/\">www.aaron-gustafson.com/notebook/sor...</a>",
+        "text": "Need sortable tables? My table-sortable web component adds accessible, customizable sorting to ordinary HTML tables—and they still work when JavaScript doesn’t. www.aaron-gustafson.com/notebook/sor..."
+      },
+      "mention-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Steph",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/a049e0d666b73b2c4b6aa11329b4d3bba017ec9da988c8977f2224d9cd15b69d.jpg",
+        "url": "https://thecanadian.social/@idoclosecuts"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#favorited-by-116694049063059810",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T11:57:42Z",
+      "wm-id": 2040144,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117401091943095022/116694049063059810",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Richard Rutter",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/f8d101367dc3b43d889da5c7f0609359cc1475a78bbf9c36adc4f9993742c4de.jpg",
+        "url": "https://mastodon.social/@Richr"
+      },
+      "url": "https://front-end.social/@Aaron/117429701533950224#favorited-by-109295355573470476",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T09:33:40Z",
+      "wm-id": 2040134,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117429701533950224/109295355573470476",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "M.Schuette",
+        "photo": "https://avatars.webmention.io/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://chaos.social/@m_schuett"
+      },
+      "url": "https://front-end.social/@Aaron/117429701533950224#favorited-by-110224220043853634",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T09:06:25Z",
+      "wm-id": 2040130,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117429701533950224/110224220043853634",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Adrian",
+        "photo": "https://avatars.webmention.io/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://social.tchncs.de/@adkurz"
+      },
+      "url": "https://front-end.social/@Aaron/117429701533950224#favorited-by-116084788777299531",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T08:39:25Z",
+      "wm-id": 2040125,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117429701533950224/116084788777299531",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Svenja",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/f843c70d52735cbace8e4646b001ddbc02cfe3e500c3e87e233fea65e6e9b67c.jpg",
+        "url": "https://mstdn.games/@svenja"
+      },
+      "url": "https://front-end.social/@Aaron/117429701533950224#reblogged-by-113321078790986037",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T07:49:06Z",
+      "wm-id": 2040113,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/117429701533950224/113321078790986037",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "lilo",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/fa3c581eefb6074a82c6239335df918e59b52677b9c034944eea64981f2a8ef8.jpg",
+        "url": "https://muenster.im/@lilo"
+      },
+      "url": "https://front-end.social/@Aaron/117429701533950224#favorited-by-109326119105759967",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T07:49:01Z",
+      "wm-id": 2040112,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117429701533950224/109326119105759967",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Anke",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/9656be79a631f8a650562edad85f97cd9c5807217d3ccdc96253749cb0c2078a.jpg",
+        "url": "https://social.scribblers.club/@Anke"
+      },
+      "url": "https://front-end.social/@Aaron/117429701533950224#favorited-by-109297401144932858",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T07:49:00Z",
+      "wm-id": 2040111,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117429701533950224/109297401144932858",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dan Connolly",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/36fda1797d4ad7e70d33be6609c8f8180e2a77a5ba996e010478d6b616a7ea77.jpg",
+        "url": "https://social.coop/@dckc"
+      },
+      "url": "https://front-end.social/@Aaron/117429701533950224#favorited-by-109311581927291980",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T02:16:38Z",
+      "wm-id": 2040056,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117429701533950224/109311581927291980",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "samarositz",
+        "photo": "https://avatars.webmention.io/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://tweesecake.social/@samarositz"
+      },
+      "url": "https://front-end.social/@Aaron/117429701533950224#reblogged-by-109585081466344205",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T00:45:29Z",
+      "wm-id": 2040050,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/117429701533950224/109585081466344205",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Aaron Crowder",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://crowdersoup.com/blog/post/like-1791839216/",
+      "published": "2026-10-12T21:06:56+00:00",
+      "published_ts": 1791839216,
+      "wm-received": "2026-10-12T21:06:57Z",
+      "wm-id": 2039954,
+      "wm-source": "https://crowdersoup.com/blog/post/like-1791839216/",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "name": "Like: 1791839216",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kaveinthran",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/81104bc8b9e168ea4159c99f026458a1e4f1efebf3ff08e501c0072a3f41d3aa.jpg",
+        "url": "https://mastodon.stickbear.me/@kaveinthran"
+      },
+      "url": "https://front-end.social/@Aaron/117429701533950224#reblogged-by-116186189928657422",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T20:37:28Z",
+      "wm-id": 2039947,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/117429701533950224/116186189928657422",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jay",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/c22ba5d10212a240e94824c38cfd889977d74e81d0197c97ce15c46fde5caced.jpg",
+        "url": "https://mastodon.social/@jaygooby"
+      },
+      "url": "https://front-end.social/@Aaron/117429701533950224#favorited-by-109522624063131349",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T20:37:28Z",
+      "wm-id": 2039948,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117429701533950224/109522624063131349",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Anna E. Cook",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/137ec6f82b5175a8039a6574efb8f92f3ef4024201ae0022369e26aea010e8e2.png",
+        "url": "https://mastodon.social/@annaecook"
+      },
+      "url": "https://front-end.social/@Aaron/117429701533950224#favorited-by-109299430068019590",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T20:37:27Z",
+      "wm-id": 2039946,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117429701533950224/109299430068019590",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/sortable-tables-with-progressive-enhancement/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "it rhymes with satan",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/8dbe75b1c11ba0f3462c6bd023c7f926a337108cdab66c34eada8ac4b1214e1f.jpg",
+        "url": "https://beige.party/@llatan"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#favorited-by-116208224246604609",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T14:03:54Z",
+      "wm-id": 2039781,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117401091943095022/116208224246604609",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chris",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/b88c7e91f65938f3216eb8515782634256ecbcce33321e31e831664c94a29875.jpg",
+        "url": "https://mastodon.social/@chris_colvin"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#favorited-by-115236748555340575",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T13:35:39Z",
+      "wm-id": 2039773,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117401091943095022/115236748555340575",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Patrick Grey",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/36a846e24c2e0a6456e9d88fad6705c212924bc2acdc2e89f3ca76c40dc40106.jpg",
+        "url": "https://glasgow.social/@patrick"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#favorited-by-109308938893617109",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T07:18:09Z",
+      "wm-id": 2039682,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117401091943095022/109308938893617109",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Patrick Grey",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/36a846e24c2e0a6456e9d88fad6705c212924bc2acdc2e89f3ca76c40dc40106.jpg",
+        "url": "https://glasgow.social/@patrick"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#reblogged-by-109308938893617109",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T07:18:09Z",
+      "wm-id": 2039683,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/117401091943095022/109308938893617109",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Renato Mancuso",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/1643bce7663a793f1155d0eb9bb7004bd9268c68428849748573a0a2098be5f3.png",
+        "url": "https://mstdn.social/@renatius"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#favorited-by-113566621286067949",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T04:47:40Z",
+      "wm-id": 2039670,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117401091943095022/113566621286067949",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "spartanatreyu",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/d595f668135de2d1029ba73e7e8e02cf192fec65443dde879d6efd6aee6dfe92.jpg",
+        "url": "https://mastodon.social/@spartanatreyu"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#favorited-by-110698628327115923",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T03:44:58Z",
+      "wm-id": 2039657,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117401091943095022/110698628327115923",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jesse Wilson",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/a28c23ff78bfd755303805b8504104b1f6eb751d201e8818dc1487f0117b7618.jpg",
+        "url": "https://cosocial.ca/@jessewilson"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#reblogged-by-110163755510918616",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T03:11:41Z",
+      "wm-id": 2039654,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/117401091943095022/110163755510918616",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Adam DJ Brett",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/1aa233391d76671160107c90cafcfd26336ea684dbd60a5bcaaf609f3bf0f341.jpg",
+        "url": "https://hcommons.social/@adjb"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#reblogged-by-109359909680376961",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T02:38:18Z",
+      "wm-id": 2039649,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/117401091943095022/109359909680376961",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dave Rupert",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/df90600eac314bfae461e88ce4a64f1853a8f914c25802ed58d55307a0525a72.jpg",
+        "url": "https://mastodon.social/@davatron5000"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#favorited-by-109287751678680224",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T02:38:17Z",
+      "wm-id": 2039647,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117401091943095022/109287751678680224",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dave Rupert",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/df90600eac314bfae461e88ce4a64f1853a8f914c25802ed58d55307a0525a72.jpg",
+        "url": "https://mastodon.social/@davatron5000"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#reblogged-by-109287751678680224",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T02:38:17Z",
+      "wm-id": 2039648,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/117401091943095022/109287751678680224",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tim Riley",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/db03071e9ffdd9d17170e52860e7bda7f1b0501ee87f80eaaa47e091686e8cfd.png",
+        "url": "https://ruby.social/@timriley"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#favorited-by-109304372071110129",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T02:04:38Z",
+      "wm-id": 2039640,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117401091943095022/109304372071110129",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Paul Shryock",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/4db6779f2ca3ad9d9cfd636685ea5b7948da4d6f56315c449f9c8d99a70029a4.jpg",
+        "url": "https://phpc.social/@paulshryock"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#favorited-by-111015705424563299",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T01:38:13Z",
+      "wm-id": 2039636,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117401091943095022/111015705424563299",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Paul Shryock",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/4db6779f2ca3ad9d9cfd636685ea5b7948da4d6f56315c449f9c8d99a70029a4.jpg",
+        "url": "https://phpc.social/@paulshryock"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#reblogged-by-111015705424563299",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T01:38:13Z",
+      "wm-id": 2039637,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/117401091943095022/111015705424563299",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "motionsuggests",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/082a72cfc2f564399835029ef4ea4f7dedc021cf9959177b056f89816a09cb3d.png",
+        "url": "https://indieweb.social/@motionsuggests"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#favorited-by-109452400413304522",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T01:12:02Z",
+      "wm-id": 2039632,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117401091943095022/109452400413304522",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "motionsuggests",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/082a72cfc2f564399835029ef4ea4f7dedc021cf9959177b056f89816a09cb3d.png",
+        "url": "https://indieweb.social/@motionsuggests"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#reblogged-by-109452400413304522",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T01:12:02Z",
+      "wm-id": 2039633,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/117401091943095022/109452400413304522",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kees de Kooter 🍉 🇺🇦",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/89536dd2c849ef4ec0f8b41f6fdaeaa1ec5e1f542e9b609701dbb50f2397265e.jpg",
+        "url": "https://mastodon.social/@kdekooter"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#favorited-by-109308559398244512",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T01:12:01Z",
+      "wm-id": 2039631,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117401091943095022/109308559398244512",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Zach Leatherman",
+        "photo": "https://cdn.masto.host/frontendsocial/cache/accounts/avatars/109/287/923/857/668/672/original/4790705ed34737b8.png",
+        "url": "https://fediverse.zachleat.com/@zachleat"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#reblogged-by-109287923857668672",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T00:36:40Z",
+      "wm-id": 2039627,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/117401091943095022/109287923857668672",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Alex M",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/416c7b2327cb34f9a85f99af909a63de8bfc896fac36d2844d40f25fa5a9a42d.png",
+        "url": "https://indieweb.social/@amccausl"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#favorited-by-109363765243848842",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T00:36:36Z",
+      "wm-id": 2039625,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117401091943095022/109363765243848842",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Zach Leatherman",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/14ce4eedb6fa8c93ac6e7e3bb2fe381ed3e096f00f61e664def82c368d89c1d7.png",
+        "url": "https://fediverse.zachleat.com/@zachleat"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#favorited-by-109287923857668672",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T00:36:36Z",
+      "wm-id": 2039626,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117401091943095022/109287923857668672",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": "https://bsky.app/profile/divdev.bsky.social"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxhp3oa7x32w#liked_by_did:plc:kmhqy4byj3ys5v3hatxxo2is",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-10T14:11:16Z",
+      "wm-id": 2039258,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxhp3oa7x32w/did%253Aplc%253Akmhqy4byj3ys5v3hatxxo2is",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": "https://bsky.app/profile/divdev.bsky.social"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxhp3oa7x32w#reposted_by_did:plc:kmhqy4byj3ys5v3hatxxo2is",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-10T14:11:16Z",
+      "wm-id": 2039259,
+      "wm-source": "https://brid.gy/repost/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxhp3oa7x32w/did%253Aplc%253Akmhqy4byj3ys5v3hatxxo2is",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "lion-byte (mark)",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:fgtasruwazisgfbzj3duasis/bafkreihrl7cxh4pv7nnk5yigisjbzq4ob7akbfufml7luvv7mfa3m5uwn4",
+        "url": "https://bsky.app/profile/lion-byte.com"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxjjghysfg2l#liked_by_did:plc:fgtasruwazisgfbzj3duasis",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-10T14:11:15Z",
+      "wm-id": 2039257,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxjjghysfg2l/did%253Aplc%253Afgtasruwazisgfbzj3duasis",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy 🛋️",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:6m363fx23qwtjqavhmg4h2o7/bafkreigw5lmcdnrea4mm5er7pwmvx4urca3asb3tqowbhufktwo4s44oc4",
+        "url": "https://bsky.app/profile/andycouch.com"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxjjghysfg2l#liked_by_did:plc:6m363fx23qwtjqavhmg4h2o7",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-10T13:02:09Z",
+      "wm-id": 2039248,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxjjghysfg2l/did%253Aplc%253A6m363fx23qwtjqavhmg4h2o7",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Aaron Gustafson",
+        "photo": "https://avatars.webmention.io/inkcap.us-east.host.bsky.network/dbfde1edfa1e81f4cd2c11e7c92108a54752820249f2b5c8ea3ccf529f203120.jpg",
+        "url": "https://bsky.app/profile/aaron-gustafson.com"
+      },
+      "url": "https://bsky.app/profile/did:plc:6rmgrvblxflqh34omwywu6ib/post/3mxjjghysfg2l",
+      "published": "2026-10-10T12:46:01+00:00",
+      "published_ts": 1791636361,
+      "wm-received": "2026-10-10T12:46:05Z",
+      "wm-id": 2039244,
+      "wm-source": "https://bsky.brid.gy/convert/web/at://did:plc:6rmgrvblxflqh34omwywu6ib/app.bsky.feed.post/3mxjjghysfg2l%23bridgy-fed-create-2026-10-10T12:46:01.819916+00:00",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-protocol": "webmention",
+      "content": {
+        "content-type": "text/html",
+        "value": "If we improve the web for AI agents, we should begin with the semantics authors already provide for people—not create a parallel layer that can leave them behind. <a href=\"https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/\">www.aaron-gustafson.com/notebook/web...</a>",
+        "html": "If we improve the web for AI agents, we should begin with the semantics authors already provide for people—not create a parallel layer that can leave them behind. <a href=\"https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/\">www.aaron-gustafson.com/notebook/web...</a>",
+        "text": "If we improve the web for AI agents, we should begin with the semantics authors already provide for people—not create a parallel layer that can leave them behind. www.aaron-gustafson.com/notebook/web..."
+      },
+      "mention-of": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "x0",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/b7d6e519f4c9ee9691c03304e73b3bd9aa3ac0f431384900856c31c221a23c9a.jpg",
+        "url": "https://dragonscave.space/@x0"
+      },
+      "url": "https://front-end.social/@Aaron/117412482465635957#reblogged-by-109402156623541959",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-10T00:50:49Z",
+      "wm-id": 2039106,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/117412482465635957/109402156623541959",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Devin Prater :blind:",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/4df6da15ed6f9904a80ff55bf27feeb165244b43b929ad22a23a0a40f0b3e089.jpg",
+        "url": "https://tweesecake.social/@pixelate"
+      },
+      "url": "https://front-end.social/@Aaron/117412482465635957#favorited-by-111674698510521562",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-10T00:50:49Z",
+      "wm-id": 2039107,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117412482465635957/111674698510521562",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Devin Prater :blind:",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/4df6da15ed6f9904a80ff55bf27feeb165244b43b929ad22a23a0a40f0b3e089.jpg",
+        "url": "https://tweesecake.social/@pixelate"
+      },
+      "url": "https://front-end.social/@Aaron/117412482465635957#reblogged-by-111674698510521562",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-10T00:50:49Z",
+      "wm-id": 2039108,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/117412482465635957/111674698510521562",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Richard Rutter",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/f8d101367dc3b43d889da5c7f0609359cc1475a78bbf9c36adc4f9993742c4de.jpg",
+        "url": "https://mastodon.social/@Richr"
+      },
+      "url": "https://front-end.social/@Aaron/117412482465635957#favorited-by-109295355573470476",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-09T21:26:13Z",
+      "wm-id": 2039058,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117412482465635957/109295355573470476",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Josh “Yoshi” Vickerson",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/52deb648a2752cdcd52f03d34a4b7e40fdaf863e91c4f658a01664657f133de9.png",
+        "url": "https://vickerson.me/@josh"
+      },
+      "url": "https://front-end.social/@Aaron/117412322722375571#reblogged-by-110017428888491088",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-09T19:40:49Z",
+      "wm-id": 2039045,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/117412322722375571/110017428888491088",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Pitermach",
+        "photo": "https://avatars.webmention.io/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://dragonscave.space/@pitermach"
+      },
+      "url": "https://front-end.social/@Aaron/117412482465635957#reblogged-by-109410117522045855",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-09T19:40:48Z",
+      "wm-id": 2039042,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/117412482465635957/109410117522045855",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Josh “Yoshi” Vickerson",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/52deb648a2752cdcd52f03d34a4b7e40fdaf863e91c4f658a01664657f133de9.png",
+        "url": "https://vickerson.me/@josh"
+      },
+      "url": "https://front-end.social/@Aaron/117412322722375571#favorited-by-110017428888491088",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-09T19:40:48Z",
+      "wm-id": 2039043,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117412322722375571/110017428888491088",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Drew Mochak",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/8631208d4e9f3294f5c267794bdd7e392284ac9faee63beb4c2947168fde2f41.jpg",
+        "url": "https://infosec.exchange/@prism"
+      },
+      "url": "https://front-end.social/@Aaron/117412482465635957#reblogged-by-115290105834675674",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-09T19:40:48Z",
+      "wm-id": 2039044,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/117412482465635957/115290105834675674",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ben Unsworth",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:bc2gbxtx5scfvyoajyacw3ao/bafkreig5nk2q3hp43qpuurfamo5beabx2cvbb7e6uhzulh27gigre4zm4a",
+        "url": "https://bsky.app/profile/benunsworth.co.uk"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxhp3oa7x32w#liked_by_did:plc:bc2gbxtx5scfvyoajyacw3ao",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-09T19:40:41Z",
+      "wm-id": 2039040,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxhp3oa7x32w/did%253Aplc%253Abc2gbxtx5scfvyoajyacw3ao",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Evil Jim O’Donnell",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:mvy6jvolas42qzt6yezkyzou/bafkreihrtr3s3bwdrhsmqfbdxhki3ycpmvpyq74rx6o7sc26khjxjrt5qu",
+        "url": "https://bsky.app/profile/eatyourgreens.org.uk"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxhp3oa7x32w#reposted_by_did:plc:mvy6jvolas42qzt6yezkyzou",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-09T19:40:41Z",
+      "wm-id": 2039041,
+      "wm-source": "https://brid.gy/repost/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxhp3oa7x32w/did%253Aplc%253Amvy6jvolas42qzt6yezkyzou",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Evil Jim O’Donnell",
+        "photo": "https://avatars.webmention.io/eurosky.social/f19c772d86c389e4c81423b9d48de04f655f887f91bf9df90b5e51d374c67d85.jpg",
+        "url": "https://bsky.app/profile/eatyourgreens.org.uk"
+      },
+      "url": "https://bsky.app/profile/did:plc:6rmgrvblxflqh34omwywu6ib/post/3mxhp3oa7x32w#reposted_by_did:plc:mvy6jvolas42qzt6yezkyzou",
+      "published": "2026-10-09T19:24:09+00:00",
+      "published_ts": 1791573849,
+      "wm-received": "2026-10-09T19:24:12Z",
+      "wm-id": 2039039,
+      "wm-source": "https://bsky.brid.gy/convert/web/at://did:plc:mvy6jvolas42qzt6yezkyzou/app.bsky.feed.repost/3mxhp7ifavq2b",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-protocol": "webmention",
+      "content": {
+        "content-type": "text/html",
+        "value": "Shared <a href=\"https://bsky.app/profile/did:plc:6rmgrvblxflqh34omwywu6ib/post/3mxhp3oa7x32w\">a post</a> by <span class=\"h-card\">\n  \n  <a class=\"u-url\" href=\"https://bsky.brid.gy/web/did:plc:6rmgrvblxflqh34omwywu6ib\">bsky.brid.gy/web/did:plc:6r...</a>\n</span>\n  If we improve the web for AI agents, we should begin with the semantics authors already provide for people—not create a parallel layer that can leave them behind. <a href=\"https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/\">www.aaron-gustafson.com/notebook/imp...</a>",
+        "html": "Shared <a href=\"https://bsky.app/profile/did:plc:6rmgrvblxflqh34omwywu6ib/post/3mxhp3oa7x32w\">a post</a> by <span class=\"h-card\">\n  \n  <a class=\"u-url\" href=\"https://bsky.brid.gy/web/did:plc:6rmgrvblxflqh34omwywu6ib\">bsky.brid.gy/web/did:plc:6r...</a>\n</span>\n  If we improve the web for AI agents, we should begin with the semantics authors already provide for people—not create a parallel layer that can leave them behind. <a href=\"https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/\">www.aaron-gustafson.com/notebook/imp...</a>",
+        "text": "Shared a post by \n  \n  bsky.brid.gy/web/did:plc:6r...\n\n  If we improve the web for AI agents, we should begin with the semantics authors already provide for people—not create a parallel layer that can leave them behind. www.aaron-gustafson.com/notebook/imp..."
+      },
+      "repost-of": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Aaron Gustafson",
+        "photo": "https://avatars.webmention.io/inkcap.us-east.host.bsky.network/dbfde1edfa1e81f4cd2c11e7c92108a54752820249f2b5c8ea3ccf529f203120.jpg",
+        "url": "https://bsky.app/profile/aaron-gustafson.com"
+      },
+      "url": "https://bsky.app/profile/did:plc:6rmgrvblxflqh34omwywu6ib/post/3mxhp3oa7x32w",
+      "published": "2026-10-09T19:22:01+00:00",
+      "published_ts": 1791573721,
+      "wm-received": "2026-10-09T19:22:08Z",
+      "wm-id": 2039038,
+      "wm-source": "https://bsky.brid.gy/convert/web/at://did:plc:6rmgrvblxflqh34omwywu6ib/app.bsky.feed.post/3mxhp3oa7x32w%23bridgy-fed-create-2026-10-09T19:22:04.568835+00:00",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-protocol": "webmention",
+      "content": {
+        "content-type": "text/html",
+        "value": "If we improve the web for AI agents, we should begin with the semantics authors already provide for people—not create a parallel layer that can leave them behind. <a href=\"https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/\">www.aaron-gustafson.com/notebook/imp...</a>",
+        "html": "If we improve the web for AI agents, we should begin with the semantics authors already provide for people—not create a parallel layer that can leave them behind. <a href=\"https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/\">www.aaron-gustafson.com/notebook/imp...</a>",
+        "text": "If we improve the web for AI agents, we should begin with the semantics authors already provide for people—not create a parallel layer that can leave them behind. www.aaron-gustafson.com/notebook/imp..."
+      },
+      "mention-of": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jared White (ResistanceNet ✊)",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/92c7c55b19737fe0cddf4ec7d1bb690a279a9e78c592be63d5bb9cc5bdc1e7ac.jpg",
+        "url": "https://indieweb.social/@jaredwhite"
+      },
+      "url": "https://front-end.social/@Aaron/117412322722375571#favorited-by-109288510409552696",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-09T19:09:02Z",
+      "wm-id": 2039036,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117412322722375571/109288510409552696",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kaveinthran",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/81104bc8b9e168ea4159c99f026458a1e4f1efebf3ff08e501c0072a3f41d3aa.jpg",
+        "url": "https://mastodon.stickbear.me/@kaveinthran"
+      },
+      "url": "https://front-end.social/@Aaron/117412322722375571#reblogged-by-116186189928657422",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-09T19:09:02Z",
+      "wm-id": 2039037,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/117412322722375571/116186189928657422",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jer",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/84dca452932828b566b5b4e54ddcb58b862476178370e9ea472d3e33652b8e57.jpg",
+        "url": "https://gts.nyquil.org/@nyquildotorg"
+      },
+      "url": "https://front-end.social/@Aaron/117412482465635957#favorited-by-114800062957328953",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-09T19:09:01Z",
+      "wm-id": 2039034,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117412482465635957/114800062957328953",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Okwari",
+        "photo": "https://cdn.masto.host/frontendsocial/cache/accounts/avatars/109/327/797/105/533/977/original/a4e64b115c97b904.png",
+        "url": "https://mastodon.art/@okwari"
+      },
+      "url": "https://front-end.social/@Aaron/117412482465635957#favorited-by-109327797105533977",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-09T19:09:01Z",
+      "wm-id": 2039035,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117412482465635957/109327797105533977",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "sarah a",
+        "photo": "https://avatars.webmention.io/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://glitchsoc.bg-presents.us/@ke7zum"
+      },
+      "url": "https://front-end.social/@Aaron/117412482465635957#reblogged-by-113874307745765848",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-09T19:09:00Z",
+      "wm-id": 2039033,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/117412482465635957/113874307745765848",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/webmcp-should-prioritize-people-over-agents/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jason Grigsby",
+        "photo": "https://avatars.webmention.io/lionsmane.us-east.host.bsky.network/03b89c6f593ee6f50ec16e867101dfb34645f4db9eb5b99d9a0e12114d01fb1e.jpg",
+        "url": "https://bsky.app/profile/gri.gs"
+      },
+      "url": "https://bsky.app/profile/did:plc:qrtnod4xihqdylupyjxscjjl/post/3mxhn6h3aec2z",
+      "published": "2026-10-09T18:47:47+00:00",
+      "published_ts": 1791571667,
+      "wm-received": "2026-10-09T18:47:50Z",
+      "wm-id": 2039031,
+      "wm-source": "https://bsky.brid.gy/convert/web/at://did:plc:qrtnod4xihqdylupyjxscjjl/app.bsky.feed.post/3mxhn6h3aec2z%23bridgy-fed-create-2026-10-09T18:47:47.920651+00:00",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-protocol": "webmention",
+      "content": {
+        "content-type": "text/html",
+        "value": "Unsurprisingly, I fully endorse <a href=\"https://bsky.brid.gy/web/did:plc:6rmgrvblxflqh34omwywu6ib\">aaron-gustafson.com</a>’s argument here given he quotes my post with the same title. But Aaron has several specific examples worth considering. <a href=\"https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/\">www.aaron-gustafson.com/notebook/imp...</a>",
+        "html": "Unsurprisingly, I fully endorse <a href=\"https://bsky.brid.gy/web/did:plc:6rmgrvblxflqh34omwywu6ib\">aaron-gustafson.com</a>’s argument here given he quotes my post with the same title. But Aaron has several specific examples worth considering. <a href=\"https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/\">www.aaron-gustafson.com/notebook/imp...</a>",
+        "text": "Unsurprisingly, I fully endorse aaron-gustafson.com’s argument here given he quotes my post with the same title. But Aaron has several specific examples worth considering. www.aaron-gustafson.com/notebook/imp..."
+      },
+      "mention-of": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tane Piper ⁂",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/72b8ef863d589287650b47e90bb203e1e0cebcb8c3b1f43facdf1c371165e4b5.jpg",
+        "url": "https://tane.codes/@tanepiper"
+      },
+      "url": "https://front-end.social/@Aaron/117412322722375571#favorited-by-109288758177975889",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-09T18:39:44Z",
+      "wm-id": 2039025,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117412322722375571/109288758177975889",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tane Piper ⁂",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/72b8ef863d589287650b47e90bb203e1e0cebcb8c3b1f43facdf1c371165e4b5.jpg",
+        "url": "https://tane.codes/@tanepiper"
+      },
+      "url": "https://tane.codes/@tanepiper/117412367280501638",
+      "published": "2026-10-09T18:29:05+00:00",
+      "published_ts": 1791570545,
+      "wm-received": "2026-10-09T18:39:44Z",
+      "wm-id": 2039026,
+      "wm-source": "https://brid.gy/comment/mastodon/@aaron@front-end.social/117412322722375571/117412367385469171",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-protocol": "webmention",
+      "content": {
+        "content-type": "text/html",
+        "value": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@Aaron\" class=\"u-url\">@<span>Aaron</span></a></span> yes - I'm all for bringing μ-formats back - but working with knowledge systems for the last 5 year it's been clear that we've already had a way to make the web easier for AI to use and most of it is just good accessibility</p>",
+        "html": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@Aaron\" class=\"u-url\">@<span>Aaron</span></a></span> yes - I'm all for bringing μ-formats back - but working with knowledge systems for the last 5 year it's been clear that we've already had a way to make the web easier for AI to use and most of it is just good accessibility</p>",
+        "text": "@Aaron yes - I'm all for bringing μ-formats back - but working with knowledge systems for the last 5 year it's been clear that we've already had a way to make the web easier for AI to use and most of it is just good accessibility"
+      },
+      "in-reply-to": "https://www.aaron-gustafson.com/notebook/improvements-to-web-for-ai-should-benefit-all-users/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tyler Sticka",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:xs4kp6lv77kme3cfthgi5owr/bafkreibk7vgvahxisvzqcxid3ehtbgr4f3jt63htrxeokjizf6vaqcyqfu",
+        "url": "https://bsky.app/profile/tylersticka.com"
+      },
+      "url": "https://bsky.app/profile/aaron-gustafson.com/post/3mxd25uy2qc2h#liked_by_did:plc:xs4kp6lv77kme3cfthgi5owr",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-08T13:32:32Z",
+      "wm-id": 2038552,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxd25uy2qc2h/did%253Aplc%253Axs4kp6lv77kme3cfthgi5owr",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Stephanie Rewis",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:wegwfz3gsd54zuvnda6egfky/bafkreihcyz5d7uwccrznoiknsg7bpedyhat2bm72egsrmo3faky3ogafei",
+        "url": "https://bsky.app/profile/stefsull.bsky.social"
+      },
+      "url": "https://bsky.app/profile/stefsull.bsky.social/post/3mxd3oeptns2h",
+      "published": "2026-10-07T23:23:55+00:00",
+      "published_ts": 1791415435,
+      "wm-received": "2026-10-08T13:32:32Z",
+      "wm-id": 2038553,
+      "wm-source": "https://brid.gy/comment/bluesky/did:plc:6rmgrvblxflqh34omwywu6ib/at%253A%252F%252Fdid%253Aplc%253A6rmgrvblxflqh34omwywu6ib%252Fapp.bsky.feed.post%252F3mxd25uy2qc2h/at%253A%252F%252Fdid%253Aplc%253Awegwfz3gsd54zuvnda6egfky%252Fapp.bsky.feed.post%252F3mxd3oeptns2h",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "content": {
+        "content-type": "text/plain",
+        "value": "Love this my friend. I don’t disagree. Even in my old age. 🤣",
+        "text": "Love this my friend. I don’t disagree. Even in my old age. 🤣"
+      },
+      "in-reply-to": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Alan Bristow",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/32b6500e1be8d0ddb48e36e74265b55abe35bb0a9a0d1fa24d0eec43b4d3baef.jpg",
+        "url": "https://mastodon.social/@alan42"
+      },
+      "url": "https://mastodon.social/@alan42/117404663568909945",
+      "published": "2026-10-08T09:49:56+00:00",
+      "published_ts": 1791452996,
+      "wm-received": "2026-10-08T10:13:44Z",
+      "wm-id": 2038513,
+      "wm-source": "https://brid.gy/comment/mastodon/@aaron@front-end.social/117401091943095022/117404663781721446",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "content": {
+        "content-type": "text/html",
+        "value": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@Aaron\" class=\"u-url\">@<span>Aaron</span></a></span> fantastic, I love this. I feel the same about tabs. I built my own for an internal project but it is less elegant, I think I’ll adopt yours. I did it original to document code, so I have an autoDemo class that triggers it to take the content in the previous tab and use prism.js on it, so I’ll try to integrate that. </p><p>Fun!</p>",
+        "html": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@Aaron\" class=\"u-url\">@<span>Aaron</span></a></span> fantastic, I love this. I feel the same about tabs. I built my own for an internal project but it is less elegant, I think I’ll adopt yours. I did it original to document code, so I have an autoDemo class that triggers it to take the content in the previous tab and use prism.js on it, so I’ll try to integrate that. </p><p>Fun!</p>",
+        "text": "@Aaron fantastic, I love this. I feel the same about tabs. I built my own for an internal project but it is less elegant, I think I’ll adopt yours. I did it original to document code, so I have an autoDemo class that triggers it to take the content in the previous tab and use prism.js on it, so I’ll try to integrate that. \n\nFun!"
+      },
+      "in-reply-to": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Alan Bristow",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/32b6500e1be8d0ddb48e36e74265b55abe35bb0a9a0d1fa24d0eec43b4d3baef.jpg",
+        "url": "https://mastodon.social/@alan42"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#reblogged-by-111888124975165375",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-08T09:49:07Z",
+      "wm-id": 2038508,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/117401091943095022/111888124975165375",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Alan Bristow",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/32b6500e1be8d0ddb48e36e74265b55abe35bb0a9a0d1fa24d0eec43b4d3baef.jpg",
+        "url": "https://mastodon.social/@alan42"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#favorited-by-111888124975165375",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-08T09:49:07Z",
+      "wm-id": 2038509,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117401091943095022/111888124975165375",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Charles Bauer",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/829faaf439d095b40ecdcaf6b3372c0c5b13a78db28e4671e9668fbad994ce51.png",
+        "url": "https://mastodon.design/@chrlsbr"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#reblogged-by-109288670905265819",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-08T05:46:30Z",
+      "wm-id": 2038488,
+      "wm-source": "https://brid.gy/repost/mastodon/@aaron@front-end.social/117401091943095022/109288670905265819",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Charles Bauer",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/829faaf439d095b40ecdcaf6b3372c0c5b13a78db28e4671e9668fbad994ce51.png",
+        "url": "https://mastodon.design/@chrlsbr"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#favorited-by-109288670905265819",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-08T05:46:30Z",
+      "wm-id": 2038489,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117401091943095022/109288670905265819",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mike Mathew",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/65aa833989d0bc50420326a99d7e826568612a8de98efffc133023396ebb37a4.png",
+        "url": "https://social.lol/@drumsensei"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#favorited-by-115818073984240088",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-08T00:15:28Z",
+      "wm-id": 2038470,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117401091943095022/115818073984240088",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Aaron Gustafson",
+        "photo": "https://avatars.webmention.io/inkcap.us-east.host.bsky.network/dbfde1edfa1e81f4cd2c11e7c92108a54752820249f2b5c8ea3ccf529f203120.jpg",
+        "url": "https://bsky.app/profile/aaron-gustafson.com"
+      },
+      "url": "https://bsky.app/profile/did:plc:6rmgrvblxflqh34omwywu6ib/post/3mxd25uy2qc2h",
+      "published": "2026-10-07T22:56:48+00:00",
+      "published_ts": 1791413808,
+      "wm-received": "2026-10-07T22:56:50Z",
+      "wm-id": 2038457,
+      "wm-source": "https://bsky.brid.gy/convert/web/at://did:plc:6rmgrvblxflqh34omwywu6ib/app.bsky.feed.post/3mxd25uy2qc2h%23bridgy-fed-create-2026-10-07T22:56:48.671432+00:00",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "content": {
+        "content-type": "text/html",
+        "value": "I keep coming back to tabbed interfaces. <a href=\"https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/\">www.aaron-gustafson.com/notebook/tab...</a>",
+        "html": "I keep coming back to tabbed interfaces. <a href=\"https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/\">www.aaron-gustafson.com/notebook/tab...</a>",
+        "text": "I keep coming back to tabbed interfaces. www.aaron-gustafson.com/notebook/tab..."
+      },
+      "mention-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Peter Janes",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/af7c0b655169807f6823041712828d9df8aa5af1b01ac2d7f9b9215bf96cd775.png",
+        "url": "https://mastodon.peterjanes.ca/@me"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#favorited-by-109293013652265294",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-07T21:46:48Z",
+      "wm-id": 2038444,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117401091943095022/109293013652265294",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Joshua Iz",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/803d410fb69b88973cfb1d45895f3e2e4d8630a287a90e81a7543effb63def99.jpg",
+        "url": "https://mastodon.social/@joshuaiz"
+      },
+      "url": "https://front-end.social/@Aaron/117401091943095022#favorited-by-109374639069165699",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-07T21:12:50Z",
+      "wm-id": 2038439,
+      "wm-source": "https://brid.gy/like/mastodon/@aaron@front-end.social/117401091943095022/109374639069165699",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "like-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Michael Bishop",
+        "photo": "https://avatars.webmention.io/shiitake.us-east.host.bsky.network/e773cec94b6dc2ec463e6e0ed04476daa6ce2df2be48f293e897aa80b59fc435.jpg",
+        "url": "https://bsky.app/profile/michaelbishop.me"
+      },
+      "url": "https://bsky.app/profile/did:plc:ulxk572dnu5v56yssqyupulk/post/3mxctq7eyos2n",
+      "published": "2026-10-07T20:32:23+00:00",
+      "published_ts": 1791405143,
+      "wm-received": "2026-10-07T21:02:06Z",
+      "wm-id": 2038437,
+      "wm-source": "https://bsky.brid.gy/convert/web/at://did:plc:ulxk572dnu5v56yssqyupulk/app.bsky.feed.post/3mxctq7eyos2n%23bridgy-fed-create-2026-10-07T21:01:51.786540+00:00",
+      "wm-target": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-protocol": "webmention",
+      "content": {
+        "content-type": "text/html",
+        "value": "Aaron Gustafson back with another banger of a web component, this time a tabbed interface\n\n<a href=\"https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/\">https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/</a>",
+        "html": "Aaron Gustafson back with another banger of a web component, this time a tabbed interface\n\n<a href=\"https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/\">https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/</a>",
+        "text": "Aaron Gustafson back with another banger of a web component, this time a tabbed interface\n\nhttps://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/"
+      },
+      "mention-of": "https://www.aaron-gustafson.com/notebook/tabbed-interface-the-web-component/",
+      "wm-property": "mention-of",
       "wm-private": false
     }
   ]
