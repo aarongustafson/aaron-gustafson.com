@@ -6,6 +6,7 @@ dotenv.config();
 import markdownIt from "markdown-it";
 import markdownit_attrs from "markdown-it-attrs";
 import markdownit_footnote from "markdown-it-footnote";
+import { plainText } from "../../_11ty/metadata.js";
 import { tagsToShareCardText } from "../../_11ty/share-card-config.js";
 const markdown_options = {
   html: true,
@@ -114,7 +115,7 @@ export default {
         return this.generateHeroShareCard(data.hero, data.page.fileSlug);
       }
       return this.generateShareCard(
-        [data.title, tagsToShareCardText(data.tags)],
+        [plainText(data.title), tagsToShareCardText(data.tags)],
         data.page.fileSlug,
       );
     },

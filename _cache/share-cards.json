@@ -1,1279 +1,1286 @@
 {
-  "a-grand-experiment": {
-    "hash": "e7caac3d25b7",
-    "url": "/i/share-cards/a-grand-experiment.jpg"
-  },
-  "native-vs-stylable-tug-of-war": {
-    "hash": "fdc941be128e",
-    "url": "/i/share-cards/native-vs-stylable-tug-of-war.jpg"
-  },
-  "the-network-effect": {
-    "hash": "f11835512c63",
-    "url": "/i/share-cards/the-network-effect.jpg"
-  },
-  "missed-connections": {
-    "hash": "bf56e4071a38",
-    "url": "/i/share-cards/missed-connections.jpg"
-  },
-  "responsive-typography": {
-    "hash": "bd9efadddaa0",
-    "url": "/i/share-cards/responsive-typography.jpg"
-  },
-  "google-embraces-progressive-enhancement": {
-    "hash": "5ca48b763f8c",
-    "url": "/i/share-cards/google-embraces-progressive-enhancement.jpg"
-  },
-  "the-web-is-for-everyone": {
-    "hash": "198beb0c03fa",
-    "url": "/i/share-cards/the-web-is-for-everyone.jpg"
-  },
-  "indecisiveness-and-urls": {
-    "hash": "608eee5ddda9",
-    "url": "/i/share-cards/indecisiveness-and-urls.jpg"
-  },
-  "visualizing-css3-transformations": {
-    "hash": "411fcd0deb73",
-    "url": "/i/share-cards/visualizing-css3-transformations.jpg"
-  },
-  "autoplay-dont-do-it": {
-    "hash": "f9964dac6572",
-    "url": "/i/share-cards/autoplay-dont-do-it.jpg"
-  },
-  "revisiting-and-releasing-adaptive-web-design": {
-    "hash": "d84faa78f948",
-    "url": "/i/share-cards/revisiting-and-releasing-adaptive-web-design.jpg"
-  },
-  "webos-is-back": {
-    "hash": "c1840ded37bc",
-    "url": "/i/share-cards/webos-is-back.jpg"
-  },
-  "an-onslaught-of-low-cost-smartphones": {
-    "hash": "e0588cd00b0e",
-    "url": "/i/share-cards/an-onslaught-of-low-cost-smartphones.jpg"
-  },
-  "spelling-errors-exclusions-and-packages-oh-my": {
-    "hash": "abc9bafda3ad",
-    "url": "/i/share-cards/spelling-errors-exclusions-and-packages-oh-my.jpg"
-  },
-  "egalitarianism": {
-    "hash": "e31ec49a7d4b",
-    "url": "/i/share-cards/egalitarianism.jpg"
-  },
-  "competing-on-chrome": {
-    "hash": "6a4730fb733b",
-    "url": "/i/share-cards/competing-on-chrome.jpg"
-  },
-  "the-one-weird-trick-that-takes-the-pain-out-of-cross-browser-testing": {
-    "hash": "8d4a7251039b",
-    "url": "/i/share-cards/the-one-weird-trick-that-takes-the-pain-out-of-cross-browser-testing.jpg"
-  },
-  "three-worthwhile-posts-on-progressive-enhancement": {
-    "hash": "c1bff21ec967",
-    "url": "/i/share-cards/three-worthwhile-posts-on-progressive-enhancement.jpg"
-  },
-  "consider-how-your-forms-read": {
-    "hash": "0b4ac2456b06",
-    "url": "/i/share-cards/consider-how-your-forms-read.jpg"
-  },
-  "apple-business-and-standards": {
-    "hash": "80afcdac74db",
-    "url": "/i/share-cards/apple-business-and-standards.jpg"
-  },
-  "bidding-farewell-to-shirley-the-goat": {
-    "hash": "0e02ed678103",
-    "url": "/i/share-cards/bidding-farewell-to-shirley-the-goat.jpg"
-  },
-  "quantity-queries-where-have-you-been-all-my-life": {
-    "hash": "a4a68fee6077",
-    "url": "/i/share-cards/quantity-queries-where-have-you-been-all-my-life.jpg"
-  },
-  "how-to-apply-progressive-enhancement-when-javascript-seems-like-a-requirement": {
-    "hash": "b72015786c63",
-    "url": "/i/share-cards/how-to-apply-progressive-enhancement-when-javascript-seems-like-a-requirement.jpg"
-  },
-  "honoringwebfolk": {
-    "hash": "ddf2bf1e8c0e",
-    "url": "/i/share-cards/honoringwebfolk.jpg"
-  },
-  "collected-reactions-to-build": {
-    "hash": "97c2df2c9d56",
-    "url": "/i/share-cards/collected-reactions-to-build.jpg"
-  },
-  "lessons-learned-from-atari": {
-    "hash": "c6c97b12ec8f",
-    "url": "/i/share-cards/lessons-learned-from-atari.jpg"
-  },
-  "url-inception": {
-    "hash": "f95787e1f043",
-    "url": "/i/share-cards/url-inception.jpg"
-  },
-  "bringing-sanity-and-order-to-device-testing": {
-    "hash": "a12d14c6e754",
-    "url": "/i/share-cards/bringing-sanity-and-order-to-device-testing.jpg"
-  },
-  "harvard-and-mit-and-captioning": {
-    "hash": "e8ed7a034327",
-    "url": "/i/share-cards/harvard-and-mit-and-captioning.jpg"
-  },
-  "unum-releases-their-pattern-libraries": {
-    "hash": "b5c9caaba425",
-    "url": "/i/share-cards/unum-releases-their-pattern-libraries.jpg"
-  },
-  "my-trip-to-18f": {
-    "hash": "dffdbd6c4add",
-    "url": "/i/share-cards/my-trip-to-18f.jpg"
-  },
-  "future-of-web-design-and-oredev": {
-    "hash": "b15daa5725d9",
-    "url": "/i/share-cards/future-of-web-design-and-oredev.jpg"
-  },
-  "speeding-things-up-with-service-worker-resource-hints-and-more": {
-    "hash": "7c31e17e3952",
-    "url": "/i/share-cards/speeding-things-up-with-service-worker-resource-hints-and-more.jpg"
-  },
-  "an-event-apart-nashville-2016-day-one": {
-    "hash": "daa05be1dac4",
-    "url": "/i/share-cards/an-event-apart-nashville-2016-day-one.jpg"
-  },
-  "what-would-you-do-with-10kb": {
-    "hash": "7bf24405a80b",
-    "url": "/i/share-cards/what-would-you-do-with-10kb.jpg"
-  },
-  "one-persons-bloat-dot-dot-dot": {
-    "hash": "67b2e6143109",
-    "url": "/i/share-cards/one-persons-bloat-dot-dot-dot.jpg"
-  },
-  "going-offline": {
-    "hash": "9e307eed3047",
-    "url": "/i/share-cards/going-offline.jpg"
-  },
-  "on-crowdstrike-dependencies-and-building-robust-products-on-the-web": {
-    "hash": "761a2b13bd49",
-    "url": "/i/share-cards/on-crowdstrike-dependencies-and-building-robust-products-on-the-web.jpg"
-  },
-  "a-fundamental-disconnect": {
-    "hash": "a3d5c7e0caa9",
-    "url": "/i/share-cards/a-fundamental-disconnect.jpg"
-  },
-  "css-variables-are-a-bad-idea": {
-    "hash": "68587986b178",
-    "url": "/i/share-cards/css-variables-are-a-bad-idea.jpg"
-  },
-  "aria-quicktip-labelledby-vs-describedby": {
-    "hash": "d10b5dde2ee8",
-    "url": "/i/share-cards/aria-quicktip-labelledby-vs-describedby.jpg"
-  },
-  "what-do-we-own": {
-    "hash": "c96e7132cdf4",
-    "url": "/i/share-cards/what-do-we-own.jpg"
-  },
-  "adaptive-images-in-expressionengine-with-ce-image": {
-    "hash": "00e71dc48bf1",
-    "url": "/i/share-cards/adaptive-images-in-expressionengine-with-ce-image.jpg"
-  },
-  "we-need-more-empathy": {
-    "hash": "810673f7b5a8",
-    "url": "/i/share-cards/we-need-more-empathy.jpg"
-  },
-  "the-linkblog": {
-    "hash": "9d81e11b0a1a",
-    "url": "/i/share-cards/the-linkblog.jpg"
-  },
-  "sending-birthday-well-wishes-to-molly": {
-    "hash": "e02a1e33b598",
-    "url": "/i/share-cards/sending-birthday-well-wishes-to-molly.jpg"
-  },
-  "ch-ch-ch-changes": {
-    "hash": "9ada990ba199",
-    "url": "/i/share-cards/ch-ch-ch-changes.jpg"
-  },
-  "who-should-pay": {
-    "hash": "fe0974d21acb",
-    "url": "/i/share-cards/who-should-pay.jpg"
-  },
-  "who-should-pay-2-the-hosting": {
-    "hash": "595672677e6f",
-    "url": "/i/share-cards/who-should-pay-2-the-hosting.jpg"
-  },
-  "lines-in-the-sand": {
-    "hash": "9de7f13da675",
-    "url": "/i/share-cards/lines-in-the-sand.jpg"
-  },
-  "playing-with-flexbox-and-quantity-queries": {
-    "hash": "56bfced2c6d0",
-    "url": "/i/share-cards/playing-with-flexbox-and-quantity-queries.jpg"
-  },
-  "tips-for-surviving-googles-mobilegeddon": {
-    "hash": "a2dbca89e949",
-    "url": "/i/share-cards/tips-for-surviving-googles-mobilegeddon.jpg"
-  },
-  "interface-experience-maps": {
-    "hash": "8654434a2bee",
-    "url": "/i/share-cards/interface-experience-maps.jpg"
-  },
-  "ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web": {
-    "hash": "94eaf60201a1",
-    "url": "/i/share-cards/ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web.jpg"
-  },
-  "web-design-101-100-percent-tappable": {
-    "hash": "a6d5a54cadef",
-    "url": "/i/share-cards/web-design-101-100-percent-tappable.jpg"
-  },
-  "more-proof-we-dont-control-our-web-pages": {
-    "hash": "1252a81ee85e",
-    "url": "/i/share-cards/more-proof-we-dont-control-our-web-pages.jpg"
-  },
-  "moved-to-https": {
-    "hash": "662213de15f6",
-    "url": "/i/share-cards/moved-to-https.jpg"
-  },
-  "strapless": {
-    "hash": "43ddbf17a37f",
-    "url": "/i/share-cards/strapless.jpg"
-  },
-  "labeled-with-love": {
-    "hash": "51ba62deef75",
-    "url": "/i/share-cards/labeled-with-love.jpg"
-  },
-  "affirming-user-choice-with-checkboxes": {
-    "hash": "33ac90e03d02",
-    "url": "/i/share-cards/affirming-user-choice-with-checkboxes.jpg"
-  },
-  "offline-first-love-the-idea-hate-the-name": {
-    "hash": "ed1b983cf30b",
-    "url": "/i/share-cards/offline-first-love-the-idea-hate-the-name.jpg"
-  },
-  "progressive-misconceptions": {
-    "hash": "d99aa2bae67e",
-    "url": "/i/share-cards/progressive-misconceptions.jpg"
-  },
-  "insert-clickbait-headline-about-progressive-enhancement-here": {
-    "hash": "286dc326659d",
-    "url": "/i/share-cards/insert-clickbait-headline-about-progressive-enhancement-here.jpg"
-  },
-  "lessons-in-averaging": {
-    "hash": "89d749ef6d27",
-    "url": "/i/share-cards/lessons-in-averaging.jpg"
-  },
-  "your-site-should-be-a-pwa": {
-    "hash": "aee9170baf48",
-    "url": "/i/share-cards/your-site-should-be-a-pwa.jpg"
-  },
-  "crossing-a-border": {
-    "hash": "1f49a019df8e",
-    "url": "/i/share-cards/crossing-a-border.jpg"
-  },
-  "excellent-speakers-for-your-next-tech-event": {
-    "hash": "f511eee97e97",
-    "url": "/i/share-cards/excellent-speakers-for-your-next-tech-event.jpg"
-  },
-  "im-running-for-the-w3c-advisory-board": {
-    "hash": "0218b880f416",
-    "url": "/i/share-cards/im-running-for-the-w3c-advisory-board.jpg"
-  },
-  "enhancing-the-manifest": {
-    "hash": "8b065fb5f325",
-    "url": "/i/share-cards/enhancing-the-manifest.jpg"
-  },
-  "pondering-fallback-content": {
-    "hash": "21c683cc8cae",
-    "url": "/i/share-cards/pondering-fallback-content.jpg"
-  },
-  "where-do-we-go-from-here": {
-    "hash": "5336f14dd3de",
-    "url": "/i/share-cards/where-do-we-go-from-here.jpg"
-  },
-  "on-adaptive-web-designs-second-edition": {
-    "hash": "e64174dd1c79",
-    "url": "/i/share-cards/on-adaptive-web-designs-second-edition.jpg"
-  },
-  "progressive-enhancement-gets-a-conference": {
-    "hash": "2fa69fff617c",
-    "url": "/i/share-cards/progressive-enhancement-gets-a-conference.jpg"
-  },
-  "the-web-should-just-work-for-everyone": {
-    "hash": "6e070210ca8b",
-    "url": "/i/share-cards/the-web-should-just-work-for-everyone.jpg"
-  },
-  "the-web-is-messy-and-beautiful": {
-    "hash": "566d4db8dddb",
-    "url": "/i/share-cards/the-web-is-messy-and-beautiful.jpg"
-  },
-  "PWAs-and-desktop": {
-    "hash": "11979c44d3cf",
-    "url": "/i/share-cards/PWAs-and-desktop.jpg"
-  },
-  "progressive-enhancement-just-works": {
-    "hash": "ad16f0e7d07c",
-    "url": "/i/share-cards/progressive-enhancement-just-works.jpg"
-  },
-  "requirement-rules-for-checkboxes": {
-    "hash": "c9b19c10a7ab",
-    "url": "/i/share-cards/requirement-rules-for-checkboxes.jpg"
-  },
-  "a-web-component-for-conditional-dependent-fields": {
-    "hash": "15986d0d4e4b",
-    "url": "/i/share-cards/a-web-component-for-conditional-dependent-fields.jpg"
-  },
-  "a-web-component-for-conditionally-displaying-fields": {
-    "hash": "1cd56ed254ba",
-    "url": "/i/share-cards/a-web-component-for-conditionally-displaying-fields.jpg"
-  },
-  "a-web-component-for-obfuscating-form-fields": {
-    "hash": "37512469be9c",
-    "url": "/i/share-cards/a-web-component-for-obfuscating-form-fields.jpg"
-  },
-  "lazy-loading-images-based-on-screen-size": {
-    "hash": "22ecafd7e2b1",
-    "url": "/i/share-cards/lazy-loading-images-based-on-screen-size.jpg"
-  },
-  "dynamic-datalist-autocomplete-from-an-api": {
-    "hash": "5f93b769023e",
-    "url": "/i/share-cards/dynamic-datalist-autocomplete-from-an-api.jpg"
-  },
-  "fullscreen-video-and-iframes-made-easy": {
-    "hash": "45728b4bb27e",
-    "url": "/i/share-cards/fullscreen-video-and-iframes-made-easy.jpg"
-  },
-  "repeatable-form-fields-made-simple": {
-    "hash": "3c17aff77c87",
-    "url": "/i/share-cards/repeatable-form-fields-made-simple.jpg"
-  },
-  "never-lose-form-progress-again": {
-    "hash": "e07bfb2249d0",
-    "url": "/i/share-cards/never-lose-form-progress-again.jpg"
-  },
-  "visual-validation-feedback-for-form-fields": {
-    "hash": "2562e597d36c",
-    "url": "/i/share-cards/visual-validation-feedback-for-form-fields.jpg"
-  },
-  "planning-adaptive-interfaces-the-workshop": {
-    "hash": "e4854da42a93",
-    "url": "/i/share-cards/planning-adaptive-interfaces-the-workshop.jpg"
-  },
-  "progressive-web-apps-and-the-windows-ecosystem": {
-    "hash": "2222cd00cfad",
-    "url": "/i/share-cards/progressive-web-apps-and-the-windows-ecosystem.jpg"
-  },
-  "implementing-responsive-design": {
-    "hash": "43444c4b40bf",
-    "url": "/i/share-cards/implementing-responsive-design.jpg"
+  "need-a-job": {
+    "hash": "35ae3777e1b0",
+    "url": "/i/share-cards/need-a-job.jpg"
+  },
+  "e-voting-comes-to-ct": {
+    "hash": "81343d043a63",
+    "url": "/i/share-cards/e-voting-comes-to-ct.jpg"
+  },
+  "e-voting-options-for-ct-looking-bleak": {
+    "hash": "fd66f96a64d5",
+    "url": "/i/share-cards/e-voting-options-for-ct-looking-bleak.jpg"
+  },
+  "apparently-some-people-just-dont-care": {
+    "hash": "0b6a6ef3db5c",
+    "url": "/i/share-cards/apparently-some-people-just-dont-care.jpg"
+  },
+  "further-adventures-in-indifference": {
+    "hash": "61dd4f54ad6e",
+    "url": "/i/share-cards/further-adventures-in-indifference.jpg"
+  },
+  "ruining-reactions": {
+    "hash": "6888e2cc0aab",
+    "url": "/i/share-cards/ruining-reactions.jpg"
+  },
+  "getting-tinymce-to-respect-empty-alt-attributes": {
+    "hash": "b1ce148170f3",
+    "url": "/i/share-cards/getting-tinymce-to-respect-empty-alt-attributes.jpg"
+  },
+  "you-cant-rely-on-javascript": {
+    "hash": "ce43810330e9",
+    "url": "/i/share-cards/you-cant-rely-on-javascript.jpg"
+  },
+  "funkas-tillgaenglighetsdagar-2012": {
+    "hash": "59545dac55e9",
+    "url": "/i/share-cards/funkas-tillgaenglighetsdagar-2012.jpg"
+  },
+  "responsive-tables": {
+    "hash": "ed128ee91bed",
+    "url": "/i/share-cards/responsive-tables.jpg"
+  },
+  "zoom-layouts-v2": {
+    "hash": "6f81dbf9b3de",
+    "url": "/i/share-cards/zoom-layouts-v2.jpg"
   },
   "a-web-for-everyone": {
-    "hash": "85654cc49b5b",
+    "hash": "8120126a5cfa",
     "url": "/i/share-cards/a-web-for-everyone.jpg"
   },
+  "the-web-is-for-everyone": {
+    "hash": "51a155dd9846",
+    "url": "/i/share-cards/the-web-is-for-everyone.jpg"
+  },
+  "egalitarianism": {
+    "hash": "63ebfebe24cd",
+    "url": "/i/share-cards/egalitarianism.jpg"
+  },
+  "consider-how-your-forms-read": {
+    "hash": "91271aab7c9c",
+    "url": "/i/share-cards/consider-how-your-forms-read.jpg"
+  },
+  "where-do-we-go-from-here": {
+    "hash": "70c070d620ec",
+    "url": "/i/share-cards/where-do-we-go-from-here.jpg"
+  },
+  "harvard-and-mit-and-captioning": {
+    "hash": "ed42d3272b02",
+    "url": "/i/share-cards/harvard-and-mit-and-captioning.jpg"
+  },
+  "the-web-should-just-work-for-everyone": {
+    "hash": "0522f865b622",
+    "url": "/i/share-cards/the-web-should-just-work-for-everyone.jpg"
+  },
+  "what-would-you-do-with-10kb": {
+    "hash": "62083fc1426c",
+    "url": "/i/share-cards/what-would-you-do-with-10kb.jpg"
+  },
   "we-can-truly-transform-peoples-lives": {
-    "hash": "388f0bee8297",
+    "hash": "a819cd9f00a4",
     "url": "/i/share-cards/we-can-truly-transform-peoples-lives.jpg"
   },
+  "requirement-rules-for-checkboxes": {
+    "hash": "c2b78567ee75",
+    "url": "/i/share-cards/requirement-rules-for-checkboxes.jpg"
+  },
   "on-diversity": {
-    "hash": "52c35c632764",
+    "hash": "e1aa08884147",
     "url": "/i/share-cards/on-diversity.jpg"
   },
   "exploring-ais-role-in-accessibility-with-gymnasium": {
-    "hash": "e0ac85f3b23b",
+    "hash": "6b2d711c4ede",
     "url": "/i/share-cards/exploring-ais-role-in-accessibility-with-gymnasium.jpg"
   },
   "passing-your-css-theme-to-canvas": {
-    "hash": "6b6e7c2a0983",
+    "hash": "c0b6213f459b",
     "url": "/i/share-cards/passing-your-css-theme-to-canvas.jpg"
   },
+  "fullscreen-video-and-iframes-made-easy": {
+    "hash": "39075b77b0ed",
+    "url": "/i/share-cards/fullscreen-video-and-iframes-made-easy.jpg"
+  },
   "accessibility-assistant-for-figma-v52": {
-    "hash": "4c01ac6694a1",
+    "hash": "e26cf72cc647",
     "url": "/i/share-cards/accessibility-assistant-for-figma-v52.jpg"
   },
-  "learn-from-the-past-enhance-for-the-future": {
-    "hash": "145b5406b151",
-    "url": "/i/share-cards/learn-from-the-past-enhance-for-the-future.jpg"
-  },
-  "lies-damn-lies-and-javascript": {
-    "hash": "52f49c3483cf",
-    "url": "/i/share-cards/lies-damn-lies-and-javascript.jpg"
-  },
-  "a-web-component-starter-template": {
-    "hash": "1d7362de7469",
-    "url": "/i/share-cards/a-web-component-starter-template.jpg"
-  },
-  "searching-for-the-right-size": {
-    "hash": "392ed23d731f",
-    "url": "/i/share-cards/searching-for-the-right-size.jpg"
-  },
-  "complaining-about-designers-fiddling-with-figma-solves-nothing": {
-    "hash": "0f616f56b8bc",
-    "url": "/i/share-cards/complaining-about-designers-fiddling-with-figma-solves-nothing.jpg"
-  },
-  "apple-support-honeybadger": {
-    "hash": "640aea0c6f6a",
-    "url": "/i/share-cards/apple-support-honeybadger.jpg"
-  },
-  "i-dont-want-to-teach-the-world-to-code": {
-    "hash": "f8542e460f71",
-    "url": "/i/share-cards/i-dont-want-to-teach-the-world-to-code.jpg"
-  },
-  "looking-for-a-mentor": {
-    "hash": "aba2b60315d2",
-    "url": "/i/share-cards/looking-for-a-mentor.jpg"
-  },
-  "mentorship-2018-2019": {
-    "hash": "b6309c28d0bc",
-    "url": "/i/share-cards/mentorship-2018-2019.jpg"
-  },
-  "apply-for-a-spot-in-my-2020-2021-mentorship": {
-    "hash": "87c48cac612e",
-    "url": "/i/share-cards/apply-for-a-spot-in-my-2020-2021-mentorship.jpg"
-  },
-  "avoiding-linkrot-in-print-with-the-help-of-perma-dot-cc": {
-    "hash": "2a7f28ce9f3b",
-    "url": "/i/share-cards/avoiding-linkrot-in-print-with-the-help-of-perma-dot-cc.jpg"
-  },
-  "web-form-conundrum-disabled-or-read-only": {
-    "hash": "3e248963868c",
-    "url": "/i/share-cards/web-form-conundrum-disabled-or-read-only.jpg"
-  },
-  "performance-as-user-experience": {
-    "hash": "f91801ce99b4",
-    "url": "/i/share-cards/performance-as-user-experience.jpg"
-  },
-  "pwa-qa": {
-    "hash": "4e19cccad8d4",
-    "url": "/i/share-cards/pwa-qa.jpg"
-  },
-  "my-own-personal-pwa": {
-    "hash": "ee219c5bdf8b",
-    "url": "/i/share-cards/my-own-personal-pwa.jpg"
-  },
-  "dynamic-shortcuts-questions": {
-    "hash": "59f07c421db8",
-    "url": "/i/share-cards/dynamic-shortcuts-questions.jpg"
-  },
-  "categories-land-in-the-web-app-manifest": {
-    "hash": "c3fe2f707928",
-    "url": "/i/share-cards/categories-land-in-the-web-app-manifest.jpg"
-  },
-  "adding-paragraphs-in-zillow-should-not-be-this-hard": {
-    "hash": "91b73d9ace2d",
-    "url": "/i/share-cards/adding-paragraphs-in-zillow-should-not-be-this-hard.jpg"
-  },
-  "im-voting-for-oscar": {
-    "hash": "7e2d1caec95d",
-    "url": "/i/share-cards/im-voting-for-oscar.jpg"
-  },
-  "slides-from-my-talk-at-number-msedgesummit": {
-    "hash": "739554b5cde4",
-    "url": "/i/share-cards/slides-from-my-talk-at-number-msedgesummit.jpg"
-  },
-  "my-top-takeaways-from-the-edge-web-summit-2016": {
-    "hash": "3ebf97ecfd8e",
-    "url": "/i/share-cards/my-top-takeaways-from-the-edge-web-summit-2016.jpg"
-  },
-  "adaptive-web-design-folded-and-gathered": {
-    "hash": "6fb788688890",
-    "url": "/i/share-cards/adaptive-web-design-folded-and-gathered.jpg"
-  },
-  "mac-like-special-characters-in-windows": {
-    "hash": "d8dfba1b4179",
-    "url": "/i/share-cards/mac-like-special-characters-in-windows.jpg"
-  },
-  "crossposting-to-medium-from-jekyll": {
-    "hash": "d803cf0f09ec",
-    "url": "/i/share-cards/crossposting-to-medium-from-jekyll.jpg"
-  },
-  "moved-from-octopress-to-jekyll": {
-    "hash": "98e9cadcd52a",
-    "url": "/i/share-cards/moved-from-octopress-to-jekyll.jpg"
-  },
-  "any-advice-on-moving-from-octopress-to-jekyll": {
-    "hash": "ac2623f9d92c",
-    "url": "/i/share-cards/any-advice-on-moving-from-octopress-to-jekyll.jpg"
-  },
-  "enabling-webmentions-in-jekyll": {
-    "hash": "7f4da2c72eb0",
-    "url": "/i/share-cards/enabling-webmentions-in-jekyll.jpg",
-    "generated": "2026-05-03T20:37:08.494Z"
-  },
-  "what-are-keys-to-success": {
-    "hash": "6d8ceec81336",
-    "url": "/i/share-cards/what-are-keys-to-success.jpg"
-  },
-  "creepy-namefellow": {
-    "hash": "70f8bc200bfc",
-    "url": "/i/share-cards/creepy-namefellow.jpg"
-  },
-  "ten-years-on-twitter": {
-    "hash": "ece3b0731b30",
-    "url": "/i/share-cards/ten-years-on-twitter.jpg"
-  },
-  "a-different-kind-of-intolerance": {
-    "hash": "3fa03a78a6a3",
-    "url": "/i/share-cards/a-different-kind-of-intolerance.jpg"
-  },
-  "trypod": {
-    "hash": "32141f58fcf2",
-    "url": "/i/share-cards/trypod.jpg"
-  },
-  "why-do-you-love-the-web": {
-    "hash": "99337902a8c6",
-    "url": "/i/share-cards/why-do-you-love-the-web.jpg"
-  },
-  "my-2017-mentees": {
-    "hash": "b88c4a302573",
-    "url": "/i/share-cards/my-2017-mentees.jpg"
-  },
-  "introducing-my-2019-mentees": {
-    "hash": "2225fca30211",
-    "url": "/i/share-cards/introducing-my-2019-mentees.jpg"
-  },
-  "why-oscars-middle-name-is-ellison": {
-    "hash": "cd735ae4a392",
-    "url": "/i/share-cards/why-oscars-middle-name-is-ellison.jpg"
-  },
-  "ive-learned-so-much-from-chenjerai-kumanyika": {
-    "hash": "1b984142015d",
-    "url": "/i/share-cards/ive-learned-so-much-from-chenjerai-kumanyika.jpg"
-  },
-  "unbought-and-unbossed": {
-    "hash": "c9f3208bfc78",
-    "url": "/i/share-cards/unbought-and-unbossed.jpg"
-  },
-  "god-was-a-complicated-man-who-did-some-amazing-things": {
-    "hash": "d0ce7290c3be",
-    "url": "/i/share-cards/god-was-a-complicated-man-who-did-some-amazing-things.jpg"
-  },
-  "LeVar-Burton-changes-lives-one-book-at-a-time": {
-    "hash": "2bff5620ed5d",
-    "url": "/i/share-cards/LeVar-Burton-changes-lives-one-book-at-a-time.jpg"
-  },
-  "harriet-really-was-a-spy": {
-    "hash": "343e801333cd",
-    "url": "/i/share-cards/harriet-really-was-a-spy.jpg"
-  },
-  "aretha-commanded-respect": {
-    "hash": "4bab324680ab",
-    "url": "/i/share-cards/aretha-commanded-respect.jpg"
-  },
-  "Thomas-Jennings-put-his-money-on-the-line": {
-    "hash": "ad4ec5f4a9ee",
-    "url": "/i/share-cards/Thomas-Jennings-put-his-money-on-the-line.jpg"
-  },
-  "kimberly-bryant-is-tackling-tech-monocultures-head-on": {
-    "hash": "2fdcc0be1352",
-    "url": "/i/share-cards/kimberly-bryant-is-tackling-tech-monocultures-head-on.jpg"
-  },
-  "he-invented-the-search-engine": {
-    "hash": "2438f1044734",
-    "url": "/i/share-cards/he-invented-the-search-engine.jpg"
-  },
-  "chuck-d-challenges-me-to-confront-myself": {
-    "hash": "efc264c22d7f",
-    "url": "/i/share-cards/chuck-d-challenges-me-to-confront-myself.jpg"
-  },
-  "anna-arnold-hedgeman-was-the-glue-for-the-civil-rights-movement": {
-    "hash": "768ebb1bf063",
-    "url": "/i/share-cards/anna-arnold-hedgeman-was-the-glue-for-the-civil-rights-movement.jpg"
-  },
-  "bayard-rustin-advocated-for-marginalized-people-everywhere": {
-    "hash": "9c877a931b33",
-    "url": "/i/share-cards/bayard-rustin-advocated-for-marginalized-people-everywhere.jpg"
-  },
-  "nina-simone-said-it-when-others-were-afraid-to": {
-    "hash": "c21dd057115a",
-    "url": "/i/share-cards/nina-simone-said-it-when-others-were-afraid-to.jpg"
-  },
-  "lizzo-is-all-about-self-acceptance-and-empowerment": {
-    "hash": "6e5fdaabd022",
-    "url": "/i/share-cards/lizzo-is-all-about-self-acceptance-and-empowerment.jpg"
-  },
-  "pauli-murray-dismantled-systems-of-oppression": {
-    "hash": "9a665211ad79",
-    "url": "/i/share-cards/pauli-murray-dismantled-systems-of-oppression.jpg"
-  },
-  "w-kamau-bell-is-all-about-dialogue": {
-    "hash": "c8f10a1095e1",
-    "url": "/i/share-cards/w-kamau-bell-is-all-about-dialogue.jpg"
-  },
-  "lebron-james-converts-power-into-promise": {
-    "hash": "b9b3d9f6006e",
-    "url": "/i/share-cards/lebron-james-converts-power-into-promise.jpg"
-  },
-  "ida-b-wells-shone-light-in-the-darkness": {
-    "hash": "f79d33eb5b94",
-    "url": "/i/share-cards/ida-b-wells-shone-light-in-the-darkness.jpg"
-  },
-  "baratunde-thurston-tackles-tough-topics-with-deep-humor": {
-    "hash": "d9e59e8400ce",
-    "url": "/i/share-cards/baratunde-thurston-tackles-tough-topics-with-deep-humor.jpg"
-  },
-  "mae-jemison-never-gave-up-on-her-dream": {
-    "hash": "c4890fb5c905",
-    "url": "/i/share-cards/mae-jemison-never-gave-up-on-her-dream.jpg"
-  },
-  "jack-johnson-trolled-for-his-shot-at-equality-and-inspired-future-generations-of-black-athlete-activists": {
-    "hash": "66f605192f3a",
-    "url": "/i/share-cards/jack-johnson-trolled-for-his-shot-at-equality-and-inspired-future-generations-of-black-athlete-activists.jpg"
-  },
-  "mark-deans-work-on-the-pc-made-personal-computing-possible": {
-    "hash": "2240a450bab2",
-    "url": "/i/share-cards/mark-deans-work-on-the-pc-made-personal-computing-possible.jpg"
-  },
-  "amelia-boynton-robinson-agitated-for-the-vote": {
-    "hash": "caf610938caf",
-    "url": "/i/share-cards/amelia-boynton-robinson-agitated-for-the-vote.jpg"
-  },
-  "without-frederick-mckinley-jones-where-would-your-food-be": {
-    "hash": "017defb7f944",
-    "url": "/i/share-cards/without-frederick-mckinley-jones-where-would-your-food-be.jpg"
-  },
-  "katherine-johnson-took-us-to-the-moon-and-back": {
-    "hash": "a5a800600de7",
-    "url": "/i/share-cards/katherine-johnson-took-us-to-the-moon-and-back.jpg"
-  },
-  "margaret-collins-used-biology-to-push-for-equality": {
-    "hash": "81d8b811f321",
-    "url": "/i/share-cards/margaret-collins-used-biology-to-push-for-equality.jpg"
-  },
-  "angie-turner-king-invested-her-energy-in-others": {
-    "hash": "90f64f996a91",
-    "url": "/i/share-cards/angie-turner-king-invested-her-energy-in-others.jpg"
-  },
-  "jerry-lawson-made-home-video-game-systems-possible": {
-    "hash": "8adb607b5465",
-    "url": "/i/share-cards/jerry-lawson-made-home-video-game-systems-possible.jpg"
-  },
-  "maya-angelou-persevered-but-many-dont": {
-    "hash": "1a1b9f9c7fe4",
-    "url": "/i/share-cards/maya-angelou-persevered-but-many-dont.jpg"
-  },
-  "lucy-hicks-anderson-was-an-early-black-trans-pioneer": {
-    "hash": "bb6afb7d3bd5",
-    "url": "/i/share-cards/lucy-hicks-anderson-was-an-early-black-trans-pioneer.jpg"
-  },
-  "orrin-c-evans-showed-us-black-people-could-be-superheroes-too": {
-    "hash": "34c0642b289e",
-    "url": "/i/share-cards/orrin-c-evans-showed-us-black-people-could-be-superheroes-too.jpg"
-  },
-  "dr-rebecca-lee-crumpler-prioritized-the-most-vulnerable": {
-    "hash": "3569650eecb0",
-    "url": "/i/share-cards/dr-rebecca-lee-crumpler-prioritized-the-most-vulnerable.jpg"
-  },
-  "jane-bolin-didnt-let-anyone-tell-her-what-she-couldnt-do": {
-    "hash": "3e34d55e6191",
-    "url": "/i/share-cards/jane-bolin-didnt-let-anyone-tell-her-what-she-couldnt-do.jpg"
-  },
-  "captain-francisco-menndez-helped-found-the-first-free-black-settlement-in-the-us": {
-    "hash": "5ec13ef5012a",
-    "url": "/i/share-cards/captain-francisco-menndez-helped-found-the-first-free-black-settlement-in-the-us.jpg"
-  },
-  "jerry-varnado-and-james-garrett-started-the-first-black-student-union": {
-    "hash": "a0eac07fe1c3",
-    "url": "/i/share-cards/jerry-varnado-and-james-garrett-started-the-first-black-student-union.jpg"
-  },
-  "two-black-women-received-patents-in-1884-and-1885": {
-    "hash": "c304d7248918",
-    "url": "/i/share-cards/two-black-women-received-patents-in-1884-and-1885.jpg"
-  },
-  "madame-jones-was-the-beyonce-of-her-time": {
-    "hash": "bd9986c619c8",
-    "url": "/i/share-cards/madame-jones-was-the-beyonce-of-her-time.jpg"
-  },
-  "charles-v-bush-agitated-for-equity-in-the-officer-corps": {
-    "hash": "a61dad1562c4",
-    "url": "/i/share-cards/charles-v-bush-agitated-for-equity-in-the-officer-corps.jpg"
-  },
-  "reefer-170-year-two": {
-    "hash": "c94ce1b6ea54",
-    "url": "/i/share-cards/reefer-170-year-two.jpg"
-  },
-  "reefer-170": {
-    "hash": "98881ade4bda",
-    "url": "/i/share-cards/reefer-170.jpg"
-  },
-  "i-wanna-be-a-big-player": {
-    "hash": "bb895474e0b9",
-    "url": "/i/share-cards/i-wanna-be-a-big-player.jpg"
-  },
-  "why-intel": {
-    "hash": "2e906f3f10b8",
-    "url": "/i/share-cards/why-intel.jpg"
-  },
-  "rip-dif": {
-    "hash": "a3a9970774d9",
-    "url": "/i/share-cards/rip-dif.jpg"
-  },
-  "dif-is-dead-long-live-dif": {
-    "hash": "514c5c5f17e8",
-    "url": "/i/share-cards/dif-is-dead-long-live-dif.jpg"
-  },
-  "my-opinion-on-the-alas-redesign": {
-    "hash": "9c89711c7df5",
-    "url": "/i/share-cards/my-opinion-on-the-alas-redesign.jpg"
-  },
-  "adding-more-to-my-plate": {
-    "hash": "e7e1d2e9c675",
-    "url": "/i/share-cards/adding-more-to-my-plate.jpg"
-  },
-  "playing-catch-up": {
-    "hash": "a97fc31b309f",
-    "url": "/i/share-cards/playing-catch-up.jpg"
-  },
-  "cash-and-prizes": {
-    "hash": "e4ffebf42e5e",
-    "url": "/i/share-cards/cash-and-prizes.jpg"
-  },
-  "jeremy-keith-and-me": {
-    "hash": "ba4b70980c36",
-    "url": "/i/share-cards/jeremy-keith-and-me.jpg"
-  },
-  "need-a-job": {
-    "hash": "569679496813",
-    "url": "/i/share-cards/need-a-job.jpg"
-  },
-  "in-2030-google-became-self-aware": {
-    "hash": "fb9b8fdbd51f",
-    "url": "/i/share-cards/in-2030-google-became-self-aware.jpg"
-  },
-  "debugging-javascript-just-got-a-little-bit-easier": {
-    "hash": "1da55e6fb52e",
-    "url": "/i/share-cards/debugging-javascript-just-got-a-little-bit-easier.jpg"
-  },
-  "jstrace-two-days-on": {
-    "hash": "3e6e4e423d20",
-    "url": "/i/share-cards/jstrace-two-days-on.jpg"
-  },
-  "spreading-the-praise": {
-    "hash": "820642910ea5",
-    "url": "/i/share-cards/spreading-the-praise.jpg"
-  },
-  "more-developments-in-jstrace": {
-    "hash": "b7300c2d0ba9",
-    "url": "/i/share-cards/more-developments-in-jstrace.jpg"
-  },
-  "disneystorecouk-in-retrograde": {
-    "hash": "f7b2182be36b",
-    "url": "/i/share-cards/disneystorecouk-in-retrograde.jpg"
-  },
-  "oracle-opens-up": {
-    "hash": "5558b29f4df8",
-    "url": "/i/share-cards/oracle-opens-up.jpg"
-  },
-  "what-are-they-thinking": {
-    "hash": "9a6952de2ba9",
-    "url": "/i/share-cards/what-are-they-thinking.jpg"
-  },
-  "daves-work-draws-a-crowd": {
-    "hash": "cd5f0e9e34c8",
-    "url": "/i/share-cards/daves-work-draws-a-crowd.jpg"
-  },
-  "savvy-marketers-take-note": {
-    "hash": "07a8036b6822",
-    "url": "/i/share-cards/savvy-marketers-take-note.jpg"
-  },
-  "gartner-wants-you": {
-    "hash": "eb91fe95fc9e",
-    "url": "/i/share-cards/gartner-wants-you.jpg"
-  },
-  "karova-redesigns": {
-    "hash": "b19cd0a04776",
-    "url": "/i/share-cards/karova-redesigns.jpg"
-  },
-  "holiday-greetings-games": {
-    "hash": "a239bcfaac6d",
-    "url": "/i/share-cards/holiday-greetings-games.jpg"
-  },
-  "got-ajax-skills-odeo-beckons": {
-    "hash": "4df07fbffbec",
-    "url": "/i/share-cards/got-ajax-skills-odeo-beckons.jpg"
-  },
-  "consumer-choice-and-fair-use": {
-    "hash": "7a9f9030dbe7",
-    "url": "/i/share-cards/consumer-choice-and-fair-use.jpg"
-  },
-  "more-on-ie7-beta-2": {
-    "hash": "deb9290fa417",
-    "url": "/i/share-cards/more-on-ie7-beta-2.jpg"
-  },
-  "apparently-some-people-just-dont-care": {
-    "hash": "667e8da047b7",
-    "url": "/i/share-cards/apparently-some-people-just-dont-care.jpg"
-  },
-  "google-measure-map": {
-    "hash": "cc50291f8629",
-    "url": "/i/share-cards/google-measure-map.jpg"
-  },
-  "leap": {
-    "hash": "dc45e708fd45",
-    "url": "/i/share-cards/leap.jpg"
-  },
-  "further-adventures-in-indifference": {
-    "hash": "4819a42f1a0b",
-    "url": "/i/share-cards/further-adventures-in-indifference.jpg"
-  },
-  "i-missed-it": {
-    "hash": "f542a9735127",
-    "url": "/i/share-cards/i-missed-it.jpg"
-  },
-  "touchdown": {
-    "hash": "a0da7b0d3f18",
-    "url": "/i/share-cards/touchdown.jpg"
-  },
-  "geek-camp-wrap-up": {
-    "hash": "94a6e4640feb",
-    "url": "/i/share-cards/geek-camp-wrap-up.jpg"
-  },
-  "job-newyork-presbyterian-hospital": {
-    "hash": "865590a12ddb",
-    "url": "/i/share-cards/job-newyork-presbyterian-hospital.jpg"
-  },
-  "speeding-up-your-code-with-the-bitwise-operator": {
-    "hash": "a6f144d24d40",
-    "url": "/i/share-cards/speeding-up-your-code-with-the-bitwise-operator.jpg"
-  },
-  "getting-naked": {
-    "hash": "7238760aef99",
-    "url": "/i/share-cards/getting-naked.jpg"
-  },
-  "new-article-tour-dates-and-feed-changes": {
-    "hash": "244091fbb3ad",
-    "url": "/i/share-cards/new-article-tour-dates-and-feed-changes.jpg"
-  },
-  "heading-south": {
-    "hash": "72814e67b16a",
-    "url": "/i/share-cards/heading-south.jpg"
-  },
-  "and-now-the-fun-begins": {
-    "hash": "079736e548c6",
-    "url": "/i/share-cards/and-now-the-fun-begins.jpg"
-  },
-  "new-easy-app-tipr": {
-    "hash": "7faab7ff14d2",
-    "url": "/i/share-cards/new-easy-app-tipr.jpg"
-  },
-  "tipr-now-with-added-txt": {
-    "hash": "c27462410063",
-    "url": "/i/share-cards/tipr-now-with-added-txt.jpg"
-  },
-  "were-back-sort-of": {
-    "hash": "4ffccd86021a",
-    "url": "/i/share-cards/were-back-sort-of.jpg"
-  },
-  "on-requiring-facebook-for-login": {
-    "hash": "311bb4ee4855",
-    "url": "/i/share-cards/on-requiring-facebook-for-login.jpg"
-  },
-  "retreat-remembered": {
-    "hash": "160a661d0d0f",
-    "url": "/i/share-cards/retreat-remembered.jpg"
-  },
-  "now-read-this-3": {
-    "hash": "825374663052",
-    "url": "/i/share-cards/now-read-this-3.jpg"
-  },
-  "now-read-this-4": {
-    "hash": "c0d8d70f34e7",
-    "url": "/i/share-cards/now-read-this-4.jpg"
-  },
-  "now-read-this-9": {
-    "hash": "ae5ec9342962",
-    "url": "/i/share-cards/now-read-this-9.jpg"
-  },
-  "progressive-enhancement-and-expressionengine": {
-    "hash": "67ca912ff868",
-    "url": "/i/share-cards/progressive-enhancement-and-expressionengine.jpg"
-  },
-  "javascript-less-google-finally": {
-    "hash": "11eee439b8a9",
-    "url": "/i/share-cards/javascript-less-google-finally.jpg"
-  },
-  "html5-is-the-new-dhtml": {
-    "hash": "b3ca1b9ab08e",
-    "url": "/i/share-cards/html5-is-the-new-dhtml.jpg"
-  },
-  "welcome-jeff-bridgforth": {
-    "hash": "8bf1439d436c",
-    "url": "/i/share-cards/welcome-jeff-bridgforth.jpg"
-  },
-  "apple-vs-the-open-web": {
-    "hash": "2c2f1fecb9b2",
-    "url": "/i/share-cards/apple-vs-the-open-web.jpg"
-  },
-  "the-true-cost-of-progressive-enhancement": {
-    "hash": "66d4dc1d6e68",
-    "url": "/i/share-cards/the-true-cost-of-progressive-enhancement.jpg"
-  },
-  "over-90-of-newspaper-reading-is-in-print": {
-    "hash": "90e086346882",
-    "url": "/i/share-cards/over-90-of-newspaper-reading-is-in-print.jpg"
-  },
-  "beyond-responsive-workshops-this-may": {
-    "hash": "5ff1615b7594",
-    "url": "/i/share-cards/beyond-responsive-workshops-this-may.jpg"
-  },
-  "standardizing-nomenclature": {
-    "hash": "c640653b2259",
-    "url": "/i/share-cards/standardizing-nomenclature.jpg"
-  },
-  "repetition-and-replacement": {
-    "hash": "48316588d2ec",
-    "url": "/i/share-cards/repetition-and-replacement.jpg"
-  },
-  "a-load-of-malarkey": {
-    "hash": "8017ff3a4b26",
-    "url": "/i/share-cards/a-load-of-malarkey.jpg"
-  },
-  "png-color-oddities-in-ie": {
-    "hash": "62aa67fecc61",
-    "url": "/i/share-cards/png-color-oddities-in-ie.jpg"
-  },
-  "now-hear-this": {
-    "hash": "1933b7b14cd4",
-    "url": "/i/share-cards/now-hear-this.jpg"
-  },
-  "web-standards-sex-partners-spam": {
-    "hash": "c8c2c30819b3",
-    "url": "/i/share-cards/web-standards-sex-partners-spam.jpg"
-  },
-  "an-event-apart-nyc-post-mortem": {
-    "hash": "c3d4cc246cdf",
-    "url": "/i/share-cards/an-event-apart-nyc-post-mortem.jpg"
-  },
-  "talking-with-microsoft-about-ienext": {
-    "hash": "33c5c2e39250",
-    "url": "/i/share-cards/talking-with-microsoft-about-ienext.jpg"
-  },
-  "naked-again": {
-    "hash": "d97e37a0b670",
-    "url": "/i/share-cards/naked-again.jpg"
-  },
-  "ruining-reactions": {
-    "hash": "bc351c629c35",
-    "url": "/i/share-cards/ruining-reactions.jpg"
-  },
-  "webvisions-wrapped": {
-    "hash": "2fc3ffc318e3",
-    "url": "/i/share-cards/webvisions-wrapped.jpg"
-  },
-  "wouldnt-it-be-nice": {
-    "hash": "22fcf476f3fd",
-    "url": "/i/share-cards/wouldnt-it-be-nice.jpg"
-  },
-  "automatically-opting-in-to-ie-standards-mode": {
-    "hash": "dffdf796acc5",
-    "url": "/i/share-cards/automatically-opting-in-to-ie-standards-mode.jpg"
-  },
-  "rip-xhtml2": {
-    "hash": "bffa0cc18eac",
-    "url": "/i/share-cards/rip-xhtml2.jpg"
-  },
-  "getting-tinymce-to-respect-empty-alt-attributes": {
-    "hash": "8fb10a375d24",
-    "url": "/i/share-cards/getting-tinymce-to-respect-empty-alt-attributes.jpg"
-  },
-  "honored": {
-    "hash": "1746ea349fa9",
-    "url": "/i/share-cards/honored.jpg"
-  },
-  "we-built-a-chrome-app": {
-    "hash": "abbc333dc06c",
-    "url": "/i/share-cards/we-built-a-chrome-app.jpg"
-  },
-  "you-cant-rely-on-javascript": {
-    "hash": "05729cddfecf",
-    "url": "/i/share-cards/you-cant-rely-on-javascript.jpg"
-  },
-  "i-finally-wrote-a-book": {
-    "hash": "42c635b90256",
-    "url": "/i/share-cards/i-finally-wrote-a-book.jpg"
-  },
-  "now-read-this-v": {
-    "hash": "76d14206ed03",
-    "url": "/i/share-cards/now-read-this-v.jpg"
-  },
-  "now-read-this-6": {
-    "hash": "c05311bcff60",
-    "url": "/i/share-cards/now-read-this-6.jpg"
-  },
-  "now-read-this-8": {
-    "hash": "f289ff5f88e0",
-    "url": "/i/share-cards/now-read-this-8.jpg"
-  },
-  "from-mobile-friendly-to-mobile-first": {
-    "hash": "466dfca5c8e4",
-    "url": "/i/share-cards/from-mobile-friendly-to-mobile-first.jpg"
-  },
-  "slides-from-fowd-nyc-2011": {
-    "hash": "f1bd3bff2f9d",
-    "url": "/i/share-cards/slides-from-fowd-nyc-2011.jpg"
-  },
-  "on-adaptive-vs-responsive-web-design": {
-    "hash": "4636a2d7fccc",
-    "url": "/i/share-cards/on-adaptive-vs-responsive-web-design.jpg"
-  },
-  "crafting-rich-experiences-with-progressive-enhancement-at-beyond-telle": {
-    "hash": "b3eaff36f868",
-    "url": "/i/share-cards/crafting-rich-experiences-with-progressive-enhancement-at-beyond-telle.jpg"
-  },
-  "an-end-to-aging-ie-installs": {
-    "hash": "fff61d7971ca",
-    "url": "/i/share-cards/an-end-to-aging-ie-installs.jpg"
-  },
-  "egalitarianism-and-progressive-enhancement": {
-    "hash": "cf844051581e",
-    "url": "/i/share-cards/egalitarianism-and-progressive-enhancement.jpg"
-  },
-  "funkas-tillgaenglighetsdagar-2012": {
-    "hash": "bb61bb2a4434",
-    "url": "/i/share-cards/funkas-tillgaenglighetsdagar-2012.jpg"
-  },
-  "slides-from-my-talk-at-how-interactive": {
-    "hash": "4d6d2164b141",
-    "url": "/i/share-cards/slides-from-my-talk-at-how-interactive.jpg"
-  },
-  "designing-with-empathy-at-btconf": {
-    "hash": "87bebb8cc9d2",
-    "url": "/i/share-cards/designing-with-empathy-at-btconf.jpg"
-  },
-  "zoom-layouts-v2": {
-    "hash": "2761815b0e93",
-    "url": "/i/share-cards/zoom-layouts-v2.jpg"
-  },
-  "adaptive-design-empathy-and-beating-creative-block": {
-    "hash": "e96ef9b16983",
-    "url": "/i/share-cards/adaptive-design-empathy-and-beating-creative-block.jpg"
-  },
-  "the-native-vs-stylable-tug-of-war": {
-    "hash": "f805bf16e7da",
-    "url": "/i/share-cards/the-native-vs-stylable-tug-of-war.jpg"
-  },
-  "progressive-enhancement-vs.-hardboiled-design": {
-    "hash": "bc9780ae4613",
-    "url": "/i/share-cards/progressive-enhancement-vs.-hardboiled-design.jpg"
-  },
-  "counting-the-results-of-a-nested-query-in-expressionengine": {
-    "hash": "01215008f551",
-    "url": "/i/share-cards/counting-the-results-of-a-nested-query-in-expressionengine.jpg"
-  },
-  "e-voting-comes-to-ct": {
-    "hash": "ae5e643199be",
-    "url": "/i/share-cards/e-voting-comes-to-ct.jpg"
-  },
-  "now-thats-what-i-love-to-hear": {
-    "hash": "ab60394387cf",
-    "url": "/i/share-cards/now-thats-what-i-love-to-hear.jpg"
-  },
-  "if-i-can-make-it-there": {
-    "hash": "7875b5a92540",
-    "url": "/i/share-cards/if-i-can-make-it-there.jpg"
-  },
-  "scroll-and-flash": {
-    "hash": "df44d147397e",
-    "url": "/i/share-cards/scroll-and-flash.jpg"
-  },
-  "feedback-on-feedback": {
-    "hash": "514fff3a82dd",
-    "url": "/i/share-cards/feedback-on-feedback.jpg"
-  },
-  "server-side-figurehandler-thoughts": {
-    "hash": "2e82bcad3eb8",
-    "url": "/i/share-cards/server-side-figurehandler-thoughts.jpg"
-  },
-  "now-read-this-7": {
-    "hash": "357eb7e20e35",
-    "url": "/i/share-cards/now-read-this-7.jpg"
-  },
-  "now-read-this-2": {
-    "hash": "1229a1e2b32b",
-    "url": "/i/share-cards/now-read-this-2.jpg"
-  },
-  "orlando-in-a-whirlwind": {
-    "hash": "af18e560952c",
-    "url": "/i/share-cards/orlando-in-a-whirlwind.jpg"
-  },
-  "halleluiah": {
-    "hash": "39a04ad16b10",
-    "url": "/i/share-cards/halleluiah.jpg"
-  },
-  "say-what-you-mean": {
-    "hash": "d913556fb33d",
-    "url": "/i/share-cards/say-what-you-mean.jpg"
-  },
-  "e-voting-options-for-ct-looking-bleak": {
-    "hash": "2fb3f8a10a63",
-    "url": "/i/share-cards/e-voting-options-for-ct-looking-bleak.jpg"
-  },
-  "what-do-you-look-for-in-an-browser-based-rich-text-editor": {
-    "hash": "36c4bb85d7ec",
-    "url": "/i/share-cards/what-do-you-look-for-in-an-browser-based-rich-text-editor.jpg"
-  },
-  "proof-positive-that-editing-is-an-art": {
-    "hash": "f60370afcf18",
-    "url": "/i/share-cards/proof-positive-that-editing-is-an-art.jpg"
-  },
-  "proof-you-can-find-anything-on-ebay": {
-    "hash": "9d734c3bb7b9",
-    "url": "/i/share-cards/proof-you-can-find-anything-on-ebay.jpg"
-  },
-  "san-francisco-never-looked-so-tasty": {
-    "hash": "907dda954edc",
-    "url": "/i/share-cards/san-francisco-never-looked-so-tasty.jpg"
-  },
-  "wait-for-it": {
-    "hash": "e05a1c645998",
-    "url": "/i/share-cards/wait-for-it.jpg"
-  },
-  "plazes-enters-the-real-world-6": {
-    "hash": "cf70303936c5",
-    "url": "/i/share-cards/plazes-enters-the-real-world-6.jpg"
-  },
-  "now-read-this-1": {
-    "hash": "60c519c5a732",
-    "url": "/i/share-cards/now-read-this-1.jpg"
-  },
-  "paper-dolls": {
-    "hash": "f46bf53939ab",
-    "url": "/i/share-cards/paper-dolls.jpg"
-  },
-  "estate-tax-thoughts": {
-    "hash": "b66cfdbec59f",
-    "url": "/i/share-cards/estate-tax-thoughts.jpg"
-  },
-  "those-left-behind": {
-    "hash": "51fea5b39b83",
-    "url": "/i/share-cards/those-left-behind.jpg"
-  },
-  "a-little-random-stuff": {
-    "hash": "4c76b7fe930d",
-    "url": "/i/share-cards/a-little-random-stuff.jpg"
-  },
-  "another-political-divide": {
-    "hash": "06af6ec0979f",
-    "url": "/i/share-cards/another-political-divide.jpg"
-  },
-  "browse-flickr-with-the-stroke-of-a-pen": {
-    "hash": "3ca05960cc10",
-    "url": "/i/share-cards/browse-flickr-with-the-stroke-of-a-pen.jpg"
-  },
-  "honorable-my-ass": {
-    "hash": "a239bb86cbd1",
-    "url": "/i/share-cards/honorable-my-ass.jpg"
-  },
-  "i-wish-id-known-that": {
-    "hash": "282b0e9167f4",
-    "url": "/i/share-cards/i-wish-id-known-that.jpg"
-  },
-  "book-report-nickel-and-dimed": {
-    "hash": "9d91fd5c155c",
-    "url": "/i/share-cards/book-report-nickel-and-dimed.jpg"
-  },
-  "filemaker": {
-    "hash": "0bce1e2ab813",
-    "url": "/i/share-cards/filemaker.jpg"
-  },
-  "hallways": {
-    "hash": "c0b6dcbc579a",
-    "url": "/i/share-cards/hallways.jpg"
-  },
-  "the-hampton": {
-    "hash": "3fdedb32b406",
-    "url": "/i/share-cards/the-hampton.jpg"
-  },
-  "evernote-for-interface-inventories": {
-    "hash": "d6a8d3227381",
-    "url": "/i/share-cards/evernote-for-interface-inventories.jpg"
-  },
-  "new-tutorial-westhost-on-rails": {
-    "hash": "cf45b6805774",
-    "url": "/i/share-cards/new-tutorial-westhost-on-rails.jpg"
-  },
-  "westhost-gets-rails": {
-    "hash": "69c9c6a996cc",
-    "url": "/i/share-cards/westhost-gets-rails.jpg"
-  },
-  "knock-on-wood-pulp": {
-    "hash": "4b89deccfb1c",
-    "url": "/i/share-cards/knock-on-wood-pulp.jpg"
-  },
-  "whoops": {
-    "hash": "6f233cebb70e",
-    "url": "/i/share-cards/whoops.jpg"
-  },
-  "subtree-merge-as-an-alternative-to-submodules-with-git-svn": {
-    "hash": "2e93a88c95fb",
-    "url": "/i/share-cards/subtree-merge-as-an-alternative-to-submodules-with-git-svn.jpg"
-  },
-  "presto-change-o": {
-    "hash": "51e02bbda2ee",
-    "url": "/i/share-cards/presto-change-o.jpg"
-  },
-  "trash-dom-treasure": {
-    "hash": "6792362a64e9",
-    "url": "/i/share-cards/trash-dom-treasure.jpg"
-  },
-  "death-to-bad-dom-implementations": {
-    "hash": "65b453479867",
-    "url": "/i/share-cards/death-to-bad-dom-implementations.jpg"
-  },
-  "a-better-createelementwithname": {
-    "hash": "2b1a8409eaa7",
-    "url": "/i/share-cards/a-better-createelementwithname.jpg"
-  },
-  "alex-russell-is-not-a-heretic": {
-    "hash": "31d3bc9506da",
-    "url": "/i/share-cards/alex-russell-is-not-a-heretic.jpg"
-  },
-  "a-new-onload-scheme": {
-    "hash": "4b592166e2c6",
-    "url": "/i/share-cards/a-new-onload-scheme.jpg"
-  },
-  "be-a-good-localstorage-neighbor": {
-    "hash": "ffe92f73f039",
-    "url": "/i/share-cards/be-a-good-localstorage-neighbor.jpg"
-  },
-  "experimenting-with-grids-using-ecsstender": {
-    "hash": "196047caadba",
-    "url": "/i/share-cards/experimenting-with-grids-using-ecsstender.jpg"
-  },
-  "this-must-not-happen": {
-    "hash": "6ff204870218",
-    "url": "/i/share-cards/this-must-not-happen.jpg"
-  },
-  "iir-redux": {
-    "hash": "f89ee0227155",
-    "url": "/i/share-cards/iir-redux.jpg"
-  },
-  "dont-sell-out-your-users": {
-    "hash": "bb81d4bc5e35",
-    "url": "/i/share-cards/dont-sell-out-your-users.jpg"
-  },
-  "responsive-tables": {
-    "hash": "0b6e1eedd8d5",
-    "url": "/i/share-cards/responsive-tables.jpg"
-  },
-  "jail-ing-images-in-expressionengine": {
-    "hash": "8fc346263e75",
-    "url": "/i/share-cards/jail-ing-images-in-expressionengine.jpg"
-  },
-  "template-based-asset-munging-in-expressionengine": {
-    "hash": "4f11e48bcf09",
-    "url": "/i/share-cards/template-based-asset-munging-in-expressionengine.jpg"
-  },
-  "give-a-hoot": {
-    "hash": "932db1aa26c5",
-    "url": "/i/share-cards/give-a-hoot.jpg"
-  },
-  "on-redirecting-mobile-traffic": {
-    "hash": "1b9fc7f41d06",
-    "url": "/i/share-cards/on-redirecting-mobile-traffic.jpg"
-  },
   "matching-form-fields-with-a-web-component": {
-    "hash": "679c454a21e1",
+    "hash": "81e37fcc772d",
     "url": "/i/share-cards/matching-form-fields-with-a-web-component.jpg"
   },
   "fixing-accessibility-after-the-fact-is-too-late": {
-    "hash": "22128f90339a",
+    "hash": "42f917e5b742",
     "url": "/i/share-cards/fixing-accessibility-after-the-fact-is-too-late.jpg"
   },
-  "can-your-ai-pass-the-accessibility-test": {
-    "hash": "a0adcfaf76a9",
-    "url": "/i/share-cards/can-your-ai-pass-the-accessibility-test.jpg"
+  "tabbed-interface-the-web-component": {
+    "hash": "b7789aa8b1be",
+    "url": "/i/share-cards/tabbed-interface-the-web-component.jpg"
+  },
+  "webmcp-should-prioritize-people-over-agents": {
+    "hash": "84226dda1b23",
+    "url": "/i/share-cards/webmcp-should-prioritize-people-over-agents.jpg"
+  },
+  "sortable-tables-with-progressive-enhancement": {
+    "hash": "a2779e895a2d",
+    "url": "/i/share-cards/sortable-tables-with-progressive-enhancement.jpg"
+  },
+  "aria-quicktip-labelledby-vs-describedby": {
+    "hash": "b1832ded534c",
+    "url": "/i/share-cards/aria-quicktip-labelledby-vs-describedby.jpg"
+  },
+  "labeled-with-love": {
+    "hash": "60fb5687a844",
+    "url": "/i/share-cards/labeled-with-love.jpg"
+  },
+  "affirming-user-choice-with-checkboxes": {
+    "hash": "2e76b962b4c0",
+    "url": "/i/share-cards/affirming-user-choice-with-checkboxes.jpg"
+  },
+  "learn-from-the-past-enhance-for-the-future": {
+    "hash": "c2b12688f1df",
+    "url": "/i/share-cards/learn-from-the-past-enhance-for-the-future.jpg"
+  },
+  "progressive-misconceptions": {
+    "hash": "9c8e438e0a02",
+    "url": "/i/share-cards/progressive-misconceptions.jpg"
+  },
+  "lessons-in-averaging": {
+    "hash": "ac62913c7cfd",
+    "url": "/i/share-cards/lessons-in-averaging.jpg"
+  },
+  "we-need-more-empathy": {
+    "hash": "89ce4d04c9c1",
+    "url": "/i/share-cards/we-need-more-empathy.jpg"
+  },
+  "who-should-pay-2-the-hosting": {
+    "hash": "99013bbfb413",
+    "url": "/i/share-cards/who-should-pay-2-the-hosting.jpg"
+  },
+  "getting-naked": {
+    "hash": "7538a3df65f2",
+    "url": "/i/share-cards/getting-naked.jpg"
+  },
+  "alex-russell-is-not-a-heretic": {
+    "hash": "7764da4c8b2e",
+    "url": "/i/share-cards/alex-russell-is-not-a-heretic.jpg"
+  },
+  "i-finally-wrote-a-book": {
+    "hash": "d824b9077db4",
+    "url": "/i/share-cards/i-finally-wrote-a-book.jpg"
+  },
+  "from-mobile-friendly-to-mobile-first": {
+    "hash": "2894d9124ab1",
+    "url": "/i/share-cards/from-mobile-friendly-to-mobile-first.jpg"
+  },
+  "progressive-enhancement-and-expressionengine": {
+    "hash": "bb0ffe9e7af4",
+    "url": "/i/share-cards/progressive-enhancement-and-expressionengine.jpg"
+  },
+  "on-adaptive-vs-responsive-web-design": {
+    "hash": "14c19ad5035c",
+    "url": "/i/share-cards/on-adaptive-vs-responsive-web-design.jpg"
+  },
+  "crafting-rich-experiences-with-progressive-enhancement-at-beyond-telle": {
+    "hash": "ab6b5a2dbe48",
+    "url": "/i/share-cards/crafting-rich-experiences-with-progressive-enhancement-at-beyond-telle.jpg"
+  },
+  "javascript-less-google-finally": {
+    "hash": "682d4401edd2",
+    "url": "/i/share-cards/javascript-less-google-finally.jpg"
+  },
+  "progressive-enhancement-vs.-hardboiled-design": {
+    "hash": "f4e7887e1e5a",
+    "url": "/i/share-cards/progressive-enhancement-vs.-hardboiled-design.jpg"
+  },
+  "egalitarianism-and-progressive-enhancement": {
+    "hash": "8d74a12caf0e",
+    "url": "/i/share-cards/egalitarianism-and-progressive-enhancement.jpg"
+  },
+  "dont-sell-out-your-users": {
+    "hash": "0d2b37f0a2df",
+    "url": "/i/share-cards/dont-sell-out-your-users.jpg"
+  },
+  "slides-from-my-talk-at-how-interactive": {
+    "hash": "2caeae2d7504",
+    "url": "/i/share-cards/slides-from-my-talk-at-how-interactive.jpg"
+  },
+  "the-true-cost-of-progressive-enhancement": {
+    "hash": "833dce34fd6c",
+    "url": "/i/share-cards/the-true-cost-of-progressive-enhancement.jpg"
+  },
+  "google-embraces-progressive-enhancement": {
+    "hash": "84c05247c71d",
+    "url": "/i/share-cards/google-embraces-progressive-enhancement.jpg"
+  },
+  "the-one-weird-trick-that-takes-the-pain-out-of-cross-browser-testing": {
+    "hash": "9a98b72433e9",
+    "url": "/i/share-cards/the-one-weird-trick-that-takes-the-pain-out-of-cross-browser-testing.jpg"
+  },
+  "three-worthwhile-posts-on-progressive-enhancement": {
+    "hash": "d014c1a99179",
+    "url": "/i/share-cards/three-worthwhile-posts-on-progressive-enhancement.jpg"
+  },
+  "how-to-apply-progressive-enhancement-when-javascript-seems-like-a-requirement": {
+    "hash": "088cf9bdacb0",
+    "url": "/i/share-cards/how-to-apply-progressive-enhancement-when-javascript-seems-like-a-requirement.jpg"
+  },
+  "bringing-sanity-and-order-to-device-testing": {
+    "hash": "d97a2c25952e",
+    "url": "/i/share-cards/bringing-sanity-and-order-to-device-testing.jpg"
+  },
+  "my-trip-to-18f": {
+    "hash": "5b5b3402adbd",
+    "url": "/i/share-cards/my-trip-to-18f.jpg"
+  },
+  "on-adaptive-web-designs-second-edition": {
+    "hash": "f343620d9bfe",
+    "url": "/i/share-cards/on-adaptive-web-designs-second-edition.jpg"
+  },
+  "future-of-web-design-and-oredev": {
+    "hash": "a53b40d4d064",
+    "url": "/i/share-cards/future-of-web-design-and-oredev.jpg"
+  },
+  "speeding-things-up-with-service-worker-resource-hints-and-more": {
+    "hash": "a14854781062",
+    "url": "/i/share-cards/speeding-things-up-with-service-worker-resource-hints-and-more.jpg"
+  },
+  "progressive-enhancement-gets-a-conference": {
+    "hash": "78f923c4320b",
+    "url": "/i/share-cards/progressive-enhancement-gets-a-conference.jpg"
+  },
+  "an-event-apart-nashville-2016-day-one": {
+    "hash": "70d336ec706b",
+    "url": "/i/share-cards/an-event-apart-nashville-2016-day-one.jpg"
+  },
+  "the-web-is-messy-and-beautiful": {
+    "hash": "0a0880564f55",
+    "url": "/i/share-cards/the-web-is-messy-and-beautiful.jpg"
+  },
+  "PWAs-and-desktop": {
+    "hash": "6061bba449c3",
+    "url": "/i/share-cards/PWAs-and-desktop.jpg"
+  },
+  "progressive-enhancement-just-works": {
+    "hash": "7cdb2ccee109",
+    "url": "/i/share-cards/progressive-enhancement-just-works.jpg"
+  },
+  "on-crowdstrike-dependencies-and-building-robust-products-on-the-web": {
+    "hash": "a752ccad1cf4",
+    "url": "/i/share-cards/on-crowdstrike-dependencies-and-building-robust-products-on-the-web.jpg"
+  },
+  "a-web-component-for-conditional-dependent-fields": {
+    "hash": "cc9d3fb94402",
+    "url": "/i/share-cards/a-web-component-for-conditional-dependent-fields.jpg"
+  },
+  "a-web-component-for-conditionally-displaying-fields": {
+    "hash": "5a6e57f1c5a5",
+    "url": "/i/share-cards/a-web-component-for-conditionally-displaying-fields.jpg"
+  },
+  "a-web-component-for-obfuscating-form-fields": {
+    "hash": "ed25cff79197",
+    "url": "/i/share-cards/a-web-component-for-obfuscating-form-fields.jpg"
+  },
+  "lazy-loading-images-based-on-screen-size": {
+    "hash": "2eb5834ce1f0",
+    "url": "/i/share-cards/lazy-loading-images-based-on-screen-size.jpg"
+  },
+  "dynamic-datalist-autocomplete-from-an-api": {
+    "hash": "845f8e1e14d5",
+    "url": "/i/share-cards/dynamic-datalist-autocomplete-from-an-api.jpg"
+  },
+  "repeatable-form-fields-made-simple": {
+    "hash": "a3e0db7b0f89",
+    "url": "/i/share-cards/repeatable-form-fields-made-simple.jpg"
+  },
+  "never-lose-form-progress-again": {
+    "hash": "481c2cdf1c2f",
+    "url": "/i/share-cards/never-lose-form-progress-again.jpg"
+  },
+  "visual-validation-feedback-for-form-fields": {
+    "hash": "b32d5829efca",
+    "url": "/i/share-cards/visual-validation-feedback-for-form-fields.jpg"
+  },
+  "adaptive-images-in-expressionengine-with-ce-image": {
+    "hash": "b07c9ff66d80",
+    "url": "/i/share-cards/adaptive-images-in-expressionengine-with-ce-image.jpg"
+  },
+  "who-should-pay": {
+    "hash": "f130d2ee287f",
+    "url": "/i/share-cards/who-should-pay.jpg"
+  },
+  "lines-in-the-sand": {
+    "hash": "cf83499b89ce",
+    "url": "/i/share-cards/lines-in-the-sand.jpg"
+  },
+  "tips-for-surviving-googles-mobilegeddon": {
+    "hash": "99b9d41297e5",
+    "url": "/i/share-cards/tips-for-surviving-googles-mobilegeddon.jpg"
+  },
+  "interface-experience-maps": {
+    "hash": "18eb06280aac",
+    "url": "/i/share-cards/interface-experience-maps.jpg"
+  },
+  "planning-adaptive-interfaces-the-workshop": {
+    "hash": "4fd53ab53fb3",
+    "url": "/i/share-cards/planning-adaptive-interfaces-the-workshop.jpg"
+  },
+  "insert-clickbait-headline-about-progressive-enhancement-here": {
+    "hash": "9c326de8eb44",
+    "url": "/i/share-cards/insert-clickbait-headline-about-progressive-enhancement-here.jpg"
+  },
+  "pondering-fallback-content": {
+    "hash": "d7bd1ca18a30",
+    "url": "/i/share-cards/pondering-fallback-content.jpg"
+  },
+  "progressive-web-apps-and-the-windows-ecosystem": {
+    "hash": "f886c08a1715",
+    "url": "/i/share-cards/progressive-web-apps-and-the-windows-ecosystem.jpg"
+  },
+  "trash-dom-treasure": {
+    "hash": "ec2f36ddb043",
+    "url": "/i/share-cards/trash-dom-treasure.jpg"
+  },
+  "death-to-bad-dom-implementations": {
+    "hash": "d63e113fbf70",
+    "url": "/i/share-cards/death-to-bad-dom-implementations.jpg"
+  },
+  "jeremy-keith-and-me": {
+    "hash": "153c97eee451",
+    "url": "/i/share-cards/jeremy-keith-and-me.jpg"
+  },
+  "debugging-javascript-just-got-a-little-bit-easier": {
+    "hash": "988ea14ecc40",
+    "url": "/i/share-cards/debugging-javascript-just-got-a-little-bit-easier.jpg"
+  },
+  "jstrace-two-days-on": {
+    "hash": "0bf25a4b6f57",
+    "url": "/i/share-cards/jstrace-two-days-on.jpg"
+  },
+  "more-developments-in-jstrace": {
+    "hash": "30bfe5107b8f",
+    "url": "/i/share-cards/more-developments-in-jstrace.jpg"
+  },
+  "holiday-greetings-games": {
+    "hash": "105cb7193a61",
+    "url": "/i/share-cards/holiday-greetings-games.jpg"
+  },
+  "got-ajax-skills-odeo-beckons": {
+    "hash": "f2d80b06a243",
+    "url": "/i/share-cards/got-ajax-skills-odeo-beckons.jpg"
+  },
+  "now-thats-what-i-love-to-hear": {
+    "hash": "1ba49bb09c74",
+    "url": "/i/share-cards/now-thats-what-i-love-to-hear.jpg"
+  },
+  "speeding-up-your-code-with-the-bitwise-operator": {
+    "hash": "ecd65bb5055e",
+    "url": "/i/share-cards/speeding-up-your-code-with-the-bitwise-operator.jpg"
+  },
+  "now-hear-this": {
+    "hash": "6546d422be4e",
+    "url": "/i/share-cards/now-hear-this.jpg"
+  },
+  "scroll-and-flash": {
+    "hash": "0a4753c719dc",
+    "url": "/i/share-cards/scroll-and-flash.jpg"
+  },
+  "and-now-the-fun-begins": {
+    "hash": "8b72e19bed7d",
+    "url": "/i/share-cards/and-now-the-fun-begins.jpg"
+  },
+  "tipr-now-with-added-txt": {
+    "hash": "bf1a6305995b",
+    "url": "/i/share-cards/tipr-now-with-added-txt.jpg"
+  },
+  "a-better-createelementwithname": {
+    "hash": "9a8cfa6dea86",
+    "url": "/i/share-cards/a-better-createelementwithname.jpg"
+  },
+  "a-new-onload-scheme": {
+    "hash": "dd29383c05a4",
+    "url": "/i/share-cards/a-new-onload-scheme.jpg"
+  },
+  "template-based-asset-munging-in-expressionengine": {
+    "hash": "4396ada5d819",
+    "url": "/i/share-cards/template-based-asset-munging-in-expressionengine.jpg"
+  },
+  "give-a-hoot": {
+    "hash": "2ac4d74b600c",
+    "url": "/i/share-cards/give-a-hoot.jpg"
+  },
+  "be-a-good-localstorage-neighbor": {
+    "hash": "7c6256f974d6",
+    "url": "/i/share-cards/be-a-good-localstorage-neighbor.jpg"
+  },
+  "experimenting-with-grids-using-ecsstender": {
+    "hash": "8262cb58b3fe",
+    "url": "/i/share-cards/experimenting-with-grids-using-ecsstender.jpg"
+  },
+  "the-network-effect": {
+    "hash": "60a71bc1f323",
+    "url": "/i/share-cards/the-network-effect.jpg"
+  },
+  "missed-connections": {
+    "hash": "205e7ebf375e",
+    "url": "/i/share-cards/missed-connections.jpg"
+  },
+  "lies-damn-lies-and-javascript": {
+    "hash": "28903c7c9143",
+    "url": "/i/share-cards/lies-damn-lies-and-javascript.jpg"
+  },
+  "a-web-component-starter-template": {
+    "hash": "999364666aee",
+    "url": "/i/share-cards/a-web-component-starter-template.jpg"
+  },
+  "a-fundamental-disconnect": {
+    "hash": "aa151fafd5f1",
+    "url": "/i/share-cards/a-fundamental-disconnect.jpg"
+  },
+  "more-proof-we-dont-control-our-web-pages": {
+    "hash": "86f95b1e0446",
+    "url": "/i/share-cards/more-proof-we-dont-control-our-web-pages.jpg"
+  },
+  "repetition-and-replacement": {
+    "hash": "ca91376c6449",
+    "url": "/i/share-cards/repetition-and-replacement.jpg"
+  },
+  "server-side-figurehandler-thoughts": {
+    "hash": "49f3739840a5",
+    "url": "/i/share-cards/server-side-figurehandler-thoughts.jpg"
+  },
+  "rip-xhtml2": {
+    "hash": "60505a8fa57d",
+    "url": "/i/share-cards/rip-xhtml2.jpg"
+  },
+  "retreat-remembered": {
+    "hash": "bfa95b93767a",
+    "url": "/i/share-cards/retreat-remembered.jpg"
+  },
+  "slides-from-fowd-nyc-2011": {
+    "hash": "49d7b81c24f8",
+    "url": "/i/share-cards/slides-from-fowd-nyc-2011.jpg"
+  },
+  "html5-is-the-new-dhtml": {
+    "hash": "ff32e6d1227e",
+    "url": "/i/share-cards/html5-is-the-new-dhtml.jpg"
+  },
+  "the-native-vs-stylable-tug-of-war": {
+    "hash": "4efcbf20d864",
+    "url": "/i/share-cards/the-native-vs-stylable-tug-of-war.jpg"
+  },
+  "slides-from-my-talk-at-number-msedgesummit": {
+    "hash": "d10b0081930a",
+    "url": "/i/share-cards/slides-from-my-talk-at-number-msedgesummit.jpg"
+  },
+  "web-form-conundrum-disabled-or-read-only": {
+    "hash": "8edef064cd64",
+    "url": "/i/share-cards/web-form-conundrum-disabled-or-read-only.jpg"
+  },
+  "performance-as-user-experience": {
+    "hash": "ea282bd83a85",
+    "url": "/i/share-cards/performance-as-user-experience.jpg"
+  },
+  "halleluiah": {
+    "hash": "79a230074379",
+    "url": "/i/share-cards/halleluiah.jpg"
+  },
+  "my-opinion-on-the-alas-redesign": {
+    "hash": "0685ddaa065c",
+    "url": "/i/share-cards/my-opinion-on-the-alas-redesign.jpg"
+  },
+  "playing-catch-up": {
+    "hash": "71b5c6e49b3a",
+    "url": "/i/share-cards/playing-catch-up.jpg"
+  },
+  "a-load-of-malarkey": {
+    "hash": "35d4e16f4c97",
+    "url": "/i/share-cards/a-load-of-malarkey.jpg"
+  },
+  "more-on-ie7-beta-2": {
+    "hash": "0f6f51925c7b",
+    "url": "/i/share-cards/more-on-ie7-beta-2.jpg"
+  },
+  "png-color-oddities-in-ie": {
+    "hash": "ac2c77c327ab",
+    "url": "/i/share-cards/png-color-oddities-in-ie.jpg"
+  },
+  "naked-again": {
+    "hash": "62c01a4c8e0d",
+    "url": "/i/share-cards/naked-again.jpg"
+  },
+  "wouldnt-it-be-nice": {
+    "hash": "59bc867a5c8f",
+    "url": "/i/share-cards/wouldnt-it-be-nice.jpg"
+  },
+  "we-built-a-chrome-app": {
+    "hash": "0f310a0d4562",
+    "url": "/i/share-cards/we-built-a-chrome-app.jpg"
+  },
+  "this-must-not-happen": {
+    "hash": "0fda9106ff1d",
+    "url": "/i/share-cards/this-must-not-happen.jpg"
+  },
+  "visualizing-css3-transformations": {
+    "hash": "4e126808b367",
+    "url": "/i/share-cards/visualizing-css3-transformations.jpg"
+  },
+  "quantity-queries-where-have-you-been-all-my-life": {
+    "hash": "e1c4c0e76a05",
+    "url": "/i/share-cards/quantity-queries-where-have-you-been-all-my-life.jpg"
+  },
+  "css-variables-are-a-bad-idea": {
+    "hash": "0dec2831b613",
+    "url": "/i/share-cards/css-variables-are-a-bad-idea.jpg"
+  },
+  "playing-with-flexbox-and-quantity-queries": {
+    "hash": "f912da85ef6b",
+    "url": "/i/share-cards/playing-with-flexbox-and-quantity-queries.jpg"
+  },
+  "say-what-you-mean": {
+    "hash": "68980935dd10",
+    "url": "/i/share-cards/say-what-you-mean.jpg"
+  },
+  "i-wanna-be-a-big-player": {
+    "hash": "e9a5eda16f0c",
+    "url": "/i/share-cards/i-wanna-be-a-big-player.jpg"
+  },
+  "cash-and-prizes": {
+    "hash": "a625ccc47af3",
+    "url": "/i/share-cards/cash-and-prizes.jpg"
+  },
+  "daves-work-draws-a-crowd": {
+    "hash": "d73f54731788",
+    "url": "/i/share-cards/daves-work-draws-a-crowd.jpg"
+  },
+  "karova-redesigns": {
+    "hash": "62265261f7a1",
+    "url": "/i/share-cards/karova-redesigns.jpg"
+  },
+  "evernote-for-interface-inventories": {
+    "hash": "e12a2b58f1a7",
+    "url": "/i/share-cards/evernote-for-interface-inventories.jpg"
+  },
+  "a-grand-experiment": {
+    "hash": "0dfe7ae93804",
+    "url": "/i/share-cards/a-grand-experiment.jpg"
+  },
+  "native-vs-stylable-tug-of-war": {
+    "hash": "ed28175a267e",
+    "url": "/i/share-cards/native-vs-stylable-tug-of-war.jpg"
+  },
+  "responsive-typography": {
+    "hash": "0bd73bbe012d",
+    "url": "/i/share-cards/responsive-typography.jpg"
+  },
+  "indecisiveness-and-urls": {
+    "hash": "9110db218175",
+    "url": "/i/share-cards/indecisiveness-and-urls.jpg"
+  },
+  "autoplay-dont-do-it": {
+    "hash": "695884df346d",
+    "url": "/i/share-cards/autoplay-dont-do-it.jpg"
+  },
+  "revisiting-and-releasing-adaptive-web-design": {
+    "hash": "5c98aaf5c563",
+    "url": "/i/share-cards/revisiting-and-releasing-adaptive-web-design.jpg"
+  },
+  "webos-is-back": {
+    "hash": "f380bb861579",
+    "url": "/i/share-cards/webos-is-back.jpg"
+  },
+  "an-onslaught-of-low-cost-smartphones": {
+    "hash": "89f2b086514b",
+    "url": "/i/share-cards/an-onslaught-of-low-cost-smartphones.jpg"
+  },
+  "spelling-errors-exclusions-and-packages-oh-my": {
+    "hash": "a923e380cf1b",
+    "url": "/i/share-cards/spelling-errors-exclusions-and-packages-oh-my.jpg"
+  },
+  "competing-on-chrome": {
+    "hash": "a92661749428",
+    "url": "/i/share-cards/competing-on-chrome.jpg"
+  },
+  "apple-business-and-standards": {
+    "hash": "96d9fd6bd9d4",
+    "url": "/i/share-cards/apple-business-and-standards.jpg"
+  },
+  "bidding-farewell-to-shirley-the-goat": {
+    "hash": "9774c7124a3e",
+    "url": "/i/share-cards/bidding-farewell-to-shirley-the-goat.jpg"
+  },
+  "honoringwebfolk": {
+    "hash": "19302c2a12ba",
+    "url": "/i/share-cards/honoringwebfolk.jpg"
+  },
+  "collected-reactions-to-build": {
+    "hash": "127ec4eb75ba",
+    "url": "/i/share-cards/collected-reactions-to-build.jpg"
+  },
+  "lessons-learned-from-atari": {
+    "hash": "2d35cd7713b0",
+    "url": "/i/share-cards/lessons-learned-from-atari.jpg"
+  },
+  "url-inception": {
+    "hash": "d758d44a108d",
+    "url": "/i/share-cards/url-inception.jpg"
+  },
+  "unum-releases-their-pattern-libraries": {
+    "hash": "eecf3c0357ee",
+    "url": "/i/share-cards/unum-releases-their-pattern-libraries.jpg"
+  },
+  "one-persons-bloat-dot-dot-dot": {
+    "hash": "19df7a9604ea",
+    "url": "/i/share-cards/one-persons-bloat-dot-dot-dot.jpg"
+  },
+  "going-offline": {
+    "hash": "64db220fb46a",
+    "url": "/i/share-cards/going-offline.jpg"
+  },
+  "what-do-we-own": {
+    "hash": "24f0fda600ba",
+    "url": "/i/share-cards/what-do-we-own.jpg"
+  },
+  "the-linkblog": {
+    "hash": "02e0996fd5f7",
+    "url": "/i/share-cards/the-linkblog.jpg"
+  },
+  "sending-birthday-well-wishes-to-molly": {
+    "hash": "be5b5e82faed",
+    "url": "/i/share-cards/sending-birthday-well-wishes-to-molly.jpg"
+  },
+  "ch-ch-ch-changes": {
+    "hash": "d36252d8f100",
+    "url": "/i/share-cards/ch-ch-ch-changes.jpg"
+  },
+  "ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web": {
+    "hash": "5843a43a90fa",
+    "url": "/i/share-cards/ramblings-on-new-browser-features-interoperability-craft-and-the-future-of-the-web.jpg"
+  },
+  "web-design-101-100-percent-tappable": {
+    "hash": "9a0f45bc3b5d",
+    "url": "/i/share-cards/web-design-101-100-percent-tappable.jpg"
+  },
+  "moved-to-https": {
+    "hash": "7fc92472ecc9",
+    "url": "/i/share-cards/moved-to-https.jpg"
+  },
+  "strapless": {
+    "hash": "299df71be2f1",
+    "url": "/i/share-cards/strapless.jpg"
+  },
+  "offline-first-love-the-idea-hate-the-name": {
+    "hash": "31971faba78a",
+    "url": "/i/share-cards/offline-first-love-the-idea-hate-the-name.jpg"
+  },
+  "your-site-should-be-a-pwa": {
+    "hash": "ea89ef003308",
+    "url": "/i/share-cards/your-site-should-be-a-pwa.jpg"
+  },
+  "standardizing-nomenclature": {
+    "hash": "c4ae2ed15bc8",
+    "url": "/i/share-cards/standardizing-nomenclature.jpg"
+  },
+  "new-tutorial-westhost-on-rails": {
+    "hash": "977d46f08298",
+    "url": "/i/share-cards/new-tutorial-westhost-on-rails.jpg"
+  },
+  "spreading-the-praise": {
+    "hash": "4bcdbbe7dccb",
+    "url": "/i/share-cards/spreading-the-praise.jpg"
+  },
+  "savvy-marketers-take-note": {
+    "hash": "730d324e27d3",
+    "url": "/i/share-cards/savvy-marketers-take-note.jpg"
+  },
+  "job-newyork-presbyterian-hospital": {
+    "hash": "870c0fddbb17",
+    "url": "/i/share-cards/job-newyork-presbyterian-hospital.jpg"
+  },
+  "westhost-gets-rails": {
+    "hash": "5bc8844c5136",
+    "url": "/i/share-cards/westhost-gets-rails.jpg"
+  },
+  "new-easy-app-tipr": {
+    "hash": "8f1992754fb4",
+    "url": "/i/share-cards/new-easy-app-tipr.jpg"
+  },
+  "what-do-you-look-for-in-an-browser-based-rich-text-editor": {
+    "hash": "fec27d9f58fc",
+    "url": "/i/share-cards/what-do-you-look-for-in-an-browser-based-rich-text-editor.jpg"
+  },
+  "complaining-about-designers-fiddling-with-figma-solves-nothing": {
+    "hash": "3a42ade1de01",
+    "url": "/i/share-cards/complaining-about-designers-fiddling-with-figma-solves-nothing.jpg"
+  },
+  "adding-paragraphs-in-zillow-should-not-be-this-hard": {
+    "hash": "fe4a6de98cbc",
+    "url": "/i/share-cards/adding-paragraphs-in-zillow-should-not-be-this-hard.jpg"
+  },
+  "pwa-qa": {
+    "hash": "14d1d7e78581",
+    "url": "/i/share-cards/pwa-qa.jpg"
+  },
+  "my-own-personal-pwa": {
+    "hash": "e6401cdaade6",
+    "url": "/i/share-cards/my-own-personal-pwa.jpg"
+  },
+  "dynamic-shortcuts-questions": {
+    "hash": "6f0766e14796",
+    "url": "/i/share-cards/dynamic-shortcuts-questions.jpg"
+  },
+  "enhancing-the-manifest": {
+    "hash": "402859ffea53",
+    "url": "/i/share-cards/enhancing-the-manifest.jpg"
+  },
+  "categories-land-in-the-web-app-manifest": {
+    "hash": "5fc4ecb338a9",
+    "url": "/i/share-cards/categories-land-in-the-web-app-manifest.jpg"
+  },
+  "iir-redux": {
+    "hash": "ef0dd045b70f",
+    "url": "/i/share-cards/iir-redux.jpg"
+  },
+  "implementing-responsive-design": {
+    "hash": "1452f292ab81",
+    "url": "/i/share-cards/implementing-responsive-design.jpg"
+  },
+  "beyond-responsive-workshops-this-may": {
+    "hash": "d7de5c9150a0",
+    "url": "/i/share-cards/beyond-responsive-workshops-this-may.jpg"
+  },
+  "adding-more-to-my-plate": {
+    "hash": "41d8f0ee4c24",
+    "url": "/i/share-cards/adding-more-to-my-plate.jpg"
+  },
+  "disneystorecouk-in-retrograde": {
+    "hash": "596106fdbbb1",
+    "url": "/i/share-cards/disneystorecouk-in-retrograde.jpg"
+  },
+  "gartner-wants-you": {
+    "hash": "9bf2b4e3d0c2",
+    "url": "/i/share-cards/gartner-wants-you.jpg"
+  },
+  "i-missed-it": {
+    "hash": "8150b56f3378",
+    "url": "/i/share-cards/i-missed-it.jpg"
+  },
+  "geek-camp-wrap-up": {
+    "hash": "4e9f7c2ed8b3",
+    "url": "/i/share-cards/geek-camp-wrap-up.jpg"
+  },
+  "web-standards-sex-partners-spam": {
+    "hash": "ebb0d9bddc6f",
+    "url": "/i/share-cards/web-standards-sex-partners-spam.jpg"
+  },
+  "feedback-on-feedback": {
+    "hash": "c73cb7e54b15",
+    "url": "/i/share-cards/feedback-on-feedback.jpg"
+  },
+  "an-event-apart-nyc-post-mortem": {
+    "hash": "9e55a10f3ab6",
+    "url": "/i/share-cards/an-event-apart-nyc-post-mortem.jpg"
+  },
+  "new-article-tour-dates-and-feed-changes": {
+    "hash": "e219fd2bdc3b",
+    "url": "/i/share-cards/new-article-tour-dates-and-feed-changes.jpg"
+  },
+  "talking-with-microsoft-about-ienext": {
+    "hash": "de5d195deafd",
+    "url": "/i/share-cards/talking-with-microsoft-about-ienext.jpg"
+  },
+  "automatically-opting-in-to-ie-standards-mode": {
+    "hash": "15b3bff65503",
+    "url": "/i/share-cards/automatically-opting-in-to-ie-standards-mode.jpg"
+  },
+  "presto-change-o": {
+    "hash": "ddad6ae25049",
+    "url": "/i/share-cards/presto-change-o.jpg"
+  },
+  "im-running-for-the-w3c-advisory-board": {
+    "hash": "01fb4835e908",
+    "url": "/i/share-cards/im-running-for-the-w3c-advisory-board.jpg"
+  },
+  "on-requiring-facebook-for-login": {
+    "hash": "9c0fa3dcb7de",
+    "url": "/i/share-cards/on-requiring-facebook-for-login.jpg"
+  },
+  "on-redirecting-mobile-traffic": {
+    "hash": "3dbceecaa6d7",
+    "url": "/i/share-cards/on-redirecting-mobile-traffic.jpg"
+  },
+  "apple-vs-the-open-web": {
+    "hash": "dae4bb0c69e1",
+    "url": "/i/share-cards/apple-vs-the-open-web.jpg"
+  },
+  "avoiding-linkrot-in-print-with-the-help-of-perma-dot-cc": {
+    "hash": "f1a69285ebdd",
+    "url": "/i/share-cards/avoiding-linkrot-in-print-with-the-help-of-perma-dot-cc.jpg"
+  },
+  "an-end-to-aging-ie-installs": {
+    "hash": "1e4b2ce681fe",
+    "url": "/i/share-cards/an-end-to-aging-ie-installs.jpg"
+  },
+  "my-top-takeaways-from-the-edge-web-summit-2016": {
+    "hash": "854f213f0654",
+    "url": "/i/share-cards/my-top-takeaways-from-the-edge-web-summit-2016.jpg"
+  },
+  "webvisions-wrapped": {
+    "hash": "98202ba55f27",
+    "url": "/i/share-cards/webvisions-wrapped.jpg"
+  },
+  "why-intel": {
+    "hash": "d3e7e9a2d738",
+    "url": "/i/share-cards/why-intel.jpg"
+  },
+  "in-2030-google-became-self-aware": {
+    "hash": "547f09529da2",
+    "url": "/i/share-cards/in-2030-google-became-self-aware.jpg"
+  },
+  "oracle-opens-up": {
+    "hash": "062eebcdd533",
+    "url": "/i/share-cards/oracle-opens-up.jpg"
+  },
+  "consumer-choice-and-fair-use": {
+    "hash": "053e68552ba8",
+    "url": "/i/share-cards/consumer-choice-and-fair-use.jpg"
+  },
+  "google-measure-map": {
+    "hash": "3e6f1373fdbb",
+    "url": "/i/share-cards/google-measure-map.jpg"
+  },
+  "crossing-a-border": {
+    "hash": "25f10f417f20",
+    "url": "/i/share-cards/crossing-a-border.jpg"
+  },
+  "excellent-speakers-for-your-next-tech-event": {
+    "hash": "68f93afb4460",
+    "url": "/i/share-cards/excellent-speakers-for-your-next-tech-event.jpg"
+  },
+  "counting-the-results-of-a-nested-query-in-expressionengine": {
+    "hash": "f791b6f2148c",
+    "url": "/i/share-cards/counting-the-results-of-a-nested-query-in-expressionengine.jpg"
+  },
+  "jail-ing-images-in-expressionengine": {
+    "hash": "f59d6a6c898d",
+    "url": "/i/share-cards/jail-ing-images-in-expressionengine.jpg"
+  },
+  "searching-for-the-right-size": {
+    "hash": "2bcbc05a2892",
+    "url": "/i/share-cards/searching-for-the-right-size.jpg"
+  },
+  "apple-support-honeybadger": {
+    "hash": "e397fdc08bd8",
+    "url": "/i/share-cards/apple-support-honeybadger.jpg"
+  },
+  "leap": {
+    "hash": "4a0916d52ec9",
+    "url": "/i/share-cards/leap.jpg"
+  },
+  "honored": {
+    "hash": "fc2bc62f0134",
+    "url": "/i/share-cards/honored.jpg"
+  },
+  "welcome-jeff-bridgforth": {
+    "hash": "26e9899e5c9f",
+    "url": "/i/share-cards/welcome-jeff-bridgforth.jpg"
+  },
+  "i-dont-want-to-teach-the-world-to-code": {
+    "hash": "9953d5a8ae9d",
+    "url": "/i/share-cards/i-dont-want-to-teach-the-world-to-code.jpg"
+  },
+  "looking-for-a-mentor": {
+    "hash": "af642c3f8c39",
+    "url": "/i/share-cards/looking-for-a-mentor.jpg"
+  },
+  "mentorship-2018-2019": {
+    "hash": "c13146fcef4c",
+    "url": "/i/share-cards/mentorship-2018-2019.jpg"
+  },
+  "apply-for-a-spot-in-my-2020-2021-mentorship": {
+    "hash": "4322bf312a7d",
+    "url": "/i/share-cards/apply-for-a-spot-in-my-2020-2021-mentorship.jpg"
+  },
+  "orlando-in-a-whirlwind": {
+    "hash": "7223fa6270c1",
+    "url": "/i/share-cards/orlando-in-a-whirlwind.jpg"
+  },
+  "designing-with-empathy-at-btconf": {
+    "hash": "201afd7f2a8f",
+    "url": "/i/share-cards/designing-with-empathy-at-btconf.jpg"
+  },
+  "adaptive-design-empathy-and-beating-creative-block": {
+    "hash": "faff4738d1c0",
+    "url": "/i/share-cards/adaptive-design-empathy-and-beating-creative-block.jpg"
+  },
+  "im-voting-for-oscar": {
+    "hash": "2b856aeb3c7f",
+    "url": "/i/share-cards/im-voting-for-oscar.jpg"
+  },
+  "reefer-170": {
+    "hash": "e7bb0f295546",
+    "url": "/i/share-cards/reefer-170.jpg"
+  },
+  "book-report-nickel-and-dimed": {
+    "hash": "d38ab4959c88",
+    "url": "/i/share-cards/book-report-nickel-and-dimed.jpg"
+  },
+  "knock-on-wood-pulp": {
+    "hash": "9a38d60897c0",
+    "url": "/i/share-cards/knock-on-wood-pulp.jpg"
+  },
+  "adaptive-web-design-folded-and-gathered": {
+    "hash": "7193d6ba0da6",
+    "url": "/i/share-cards/adaptive-web-design-folded-and-gathered.jpg"
+  },
+  "mac-like-special-characters-in-windows": {
+    "hash": "33efeb2ef27b",
+    "url": "/i/share-cards/mac-like-special-characters-in-windows.jpg"
+  },
+  "rip-dif": {
+    "hash": "ccffd8927a42",
+    "url": "/i/share-cards/rip-dif.jpg"
+  },
+  "dif-is-dead-long-live-dif": {
+    "hash": "adf1ce2ae3f3",
+    "url": "/i/share-cards/dif-is-dead-long-live-dif.jpg"
+  },
+  "now-read-this-1": {
+    "hash": "146f0b6d869c",
+    "url": "/i/share-cards/now-read-this-1.jpg"
+  },
+  "now-read-this-2": {
+    "hash": "2bebdea692c8",
+    "url": "/i/share-cards/now-read-this-2.jpg"
+  },
+  "now-read-this-3": {
+    "hash": "f5acf370f51e",
+    "url": "/i/share-cards/now-read-this-3.jpg"
+  },
+  "now-read-this-4": {
+    "hash": "8b5a0b160bb9",
+    "url": "/i/share-cards/now-read-this-4.jpg"
+  },
+  "now-read-this-v": {
+    "hash": "82fb3ee15891",
+    "url": "/i/share-cards/now-read-this-v.jpg"
+  },
+  "now-read-this-6": {
+    "hash": "84efcbf53566",
+    "url": "/i/share-cards/now-read-this-6.jpg"
+  },
+  "now-read-this-7": {
+    "hash": "ec5b8b209422",
+    "url": "/i/share-cards/now-read-this-7.jpg"
+  },
+  "now-read-this-8": {
+    "hash": "6f36200e6a5c",
+    "url": "/i/share-cards/now-read-this-8.jpg"
+  },
+  "now-read-this-9": {
+    "hash": "3e544200d254",
+    "url": "/i/share-cards/now-read-this-9.jpg"
+  },
+  "crossposting-to-medium-from-jekyll": {
+    "hash": "4cbf43557177",
+    "url": "/i/share-cards/crossposting-to-medium-from-jekyll.jpg"
+  },
+  "estate-tax-thoughts": {
+    "hash": "bdabb2b1b693",
+    "url": "/i/share-cards/estate-tax-thoughts.jpg"
+  },
+  "those-left-behind": {
+    "hash": "0b9db1cc2e64",
+    "url": "/i/share-cards/those-left-behind.jpg"
+  },
+  "a-little-random-stuff": {
+    "hash": "b7167c9856fc",
+    "url": "/i/share-cards/a-little-random-stuff.jpg"
+  },
+  "proof-positive-that-editing-is-an-art": {
+    "hash": "773d1614c621",
+    "url": "/i/share-cards/proof-positive-that-editing-is-an-art.jpg"
+  },
+  "proof-you-can-find-anything-on-ebay": {
+    "hash": "2776b11cf3c3",
+    "url": "/i/share-cards/proof-you-can-find-anything-on-ebay.jpg"
+  },
+  "san-francisco-never-looked-so-tasty": {
+    "hash": "bde5f1c9457b",
+    "url": "/i/share-cards/san-francisco-never-looked-so-tasty.jpg"
+  },
+  "wait-for-it": {
+    "hash": "681cc5f31ab3",
+    "url": "/i/share-cards/wait-for-it.jpg"
+  },
+  "touchdown": {
+    "hash": "6669a4363c53",
+    "url": "/i/share-cards/touchdown.jpg"
+  },
+  "i-wish-id-known-that": {
+    "hash": "2a530bf74f7c",
+    "url": "/i/share-cards/i-wish-id-known-that.jpg"
+  },
+  "plazes-enters-the-real-world-6": {
+    "hash": "901bbb9311c4",
+    "url": "/i/share-cards/plazes-enters-the-real-world-6.jpg"
+  },
+  "were-back-sort-of": {
+    "hash": "99d2fb82fa83",
+    "url": "/i/share-cards/were-back-sort-of.jpg"
+  },
+  "filemaker": {
+    "hash": "52eb4918ec87",
+    "url": "/i/share-cards/filemaker.jpg"
+  },
+  "hallways": {
+    "hash": "723d638e9c39",
+    "url": "/i/share-cards/hallways.jpg"
+  },
+  "the-hampton": {
+    "hash": "4e91327d3a85",
+    "url": "/i/share-cards/the-hampton.jpg"
+  },
+  "paper-dolls": {
+    "hash": "1fd5b4c4d3f7",
+    "url": "/i/share-cards/paper-dolls.jpg"
+  },
+  "creepy-namefellow": {
+    "hash": "5155fbafa0cf",
+    "url": "/i/share-cards/creepy-namefellow.jpg"
+  },
+  "what-are-keys-to-success": {
+    "hash": "9e4828c72870",
+    "url": "/i/share-cards/what-are-keys-to-success.jpg"
+  },
+  "ten-years-on-twitter": {
+    "hash": "aa90a7fc6627",
+    "url": "/i/share-cards/ten-years-on-twitter.jpg"
+  },
+  "a-different-kind-of-intolerance": {
+    "hash": "93a3461b38d5",
+    "url": "/i/share-cards/a-different-kind-of-intolerance.jpg"
+  },
+  "trypod": {
+    "hash": "f9f5553d4645",
+    "url": "/i/share-cards/trypod.jpg"
+  },
+  "what-are-they-thinking": {
+    "hash": "2979dae5d868",
+    "url": "/i/share-cards/what-are-they-thinking.jpg"
+  },
+  "another-political-divide": {
+    "hash": "4721d9b62336",
+    "url": "/i/share-cards/another-political-divide.jpg"
+  },
+  "honorable-my-ass": {
+    "hash": "627cd1d50fdb",
+    "url": "/i/share-cards/honorable-my-ass.jpg"
+  },
+  "over-90-of-newspaper-reading-is-in-print": {
+    "hash": "0ea767fab2c4",
+    "url": "/i/share-cards/over-90-of-newspaper-reading-is-in-print.jpg"
+  },
+  "if-i-can-make-it-there": {
+    "hash": "9341fa447ce9",
+    "url": "/i/share-cards/if-i-can-make-it-there.jpg"
+  },
+  "heading-south": {
+    "hash": "5759b12d521c",
+    "url": "/i/share-cards/heading-south.jpg"
+  },
+  "subtree-merge-as-an-alternative-to-submodules-with-git-svn": {
+    "hash": "c596d6a3f609",
+    "url": "/i/share-cards/subtree-merge-as-an-alternative-to-submodules-with-git-svn.jpg"
+  },
+  "browse-flickr-with-the-stroke-of-a-pen": {
+    "hash": "5acd0d726fa9",
+    "url": "/i/share-cards/browse-flickr-with-the-stroke-of-a-pen.jpg"
+  },
+  "whoops": {
+    "hash": "0320dfc60903",
+    "url": "/i/share-cards/whoops.jpg"
+  },
+  "moved-from-octopress-to-jekyll": {
+    "hash": "582f0e6ff672",
+    "url": "/i/share-cards/moved-from-octopress-to-jekyll.jpg"
+  },
+  "any-advice-on-moving-from-octopress-to-jekyll": {
+    "hash": "8aeaeadd3329",
+    "url": "/i/share-cards/any-advice-on-moving-from-octopress-to-jekyll.jpg"
+  },
+  "why-do-you-love-the-web": {
+    "hash": "7317f4521826",
+    "url": "/i/share-cards/why-do-you-love-the-web.jpg"
+  },
+  "my-2017-mentees": {
+    "hash": "6daf73dbe83d",
+    "url": "/i/share-cards/my-2017-mentees.jpg"
+  },
+  "introducing-my-2019-mentees": {
+    "hash": "4839d5f4599b",
+    "url": "/i/share-cards/introducing-my-2019-mentees.jpg"
+  },
+  "enabling-webmentions-in-jekyll": {
+    "hash": "5d249dcd3d8c",
+    "url": "/i/share-cards/enabling-webmentions-in-jekyll.jpg"
+  },
+  "why-oscars-middle-name-is-ellison": {
+    "hash": "40595c01ebc0",
+    "url": "/i/share-cards/why-oscars-middle-name-is-ellison.jpg"
+  },
+  "ive-learned-so-much-from-chenjerai-kumanyika": {
+    "hash": "6d2b18780c49",
+    "url": "/i/share-cards/ive-learned-so-much-from-chenjerai-kumanyika.jpg"
+  },
+  "unbought-and-unbossed": {
+    "hash": "29d475758120",
+    "url": "/i/share-cards/unbought-and-unbossed.jpg"
+  },
+  "god-was-a-complicated-man-who-did-some-amazing-things": {
+    "hash": "a43b3bf28960",
+    "url": "/i/share-cards/god-was-a-complicated-man-who-did-some-amazing-things.jpg"
+  },
+  "LeVar-Burton-changes-lives-one-book-at-a-time": {
+    "hash": "da4950ff8c1b",
+    "url": "/i/share-cards/LeVar-Burton-changes-lives-one-book-at-a-time.jpg"
+  },
+  "harriet-really-was-a-spy": {
+    "hash": "7de31ecd596b",
+    "url": "/i/share-cards/harriet-really-was-a-spy.jpg"
+  },
+  "aretha-commanded-respect": {
+    "hash": "870e8a0554bd",
+    "url": "/i/share-cards/aretha-commanded-respect.jpg"
+  },
+  "Thomas-Jennings-put-his-money-on-the-line": {
+    "hash": "7277448e3de8",
+    "url": "/i/share-cards/Thomas-Jennings-put-his-money-on-the-line.jpg"
+  },
+  "kimberly-bryant-is-tackling-tech-monocultures-head-on": {
+    "hash": "7e89f5c8a5de",
+    "url": "/i/share-cards/kimberly-bryant-is-tackling-tech-monocultures-head-on.jpg"
+  },
+  "he-invented-the-search-engine": {
+    "hash": "99b3f8aa2b5b",
+    "url": "/i/share-cards/he-invented-the-search-engine.jpg"
+  },
+  "chuck-d-challenges-me-to-confront-myself": {
+    "hash": "4b5fe8ab186a",
+    "url": "/i/share-cards/chuck-d-challenges-me-to-confront-myself.jpg"
+  },
+  "anna-arnold-hedgeman-was-the-glue-for-the-civil-rights-movement": {
+    "hash": "59686a78910a",
+    "url": "/i/share-cards/anna-arnold-hedgeman-was-the-glue-for-the-civil-rights-movement.jpg"
+  },
+  "bayard-rustin-advocated-for-marginalized-people-everywhere": {
+    "hash": "d8f02d5e7f54",
+    "url": "/i/share-cards/bayard-rustin-advocated-for-marginalized-people-everywhere.jpg"
+  },
+  "nina-simone-said-it-when-others-were-afraid-to": {
+    "hash": "ea05c05a237f",
+    "url": "/i/share-cards/nina-simone-said-it-when-others-were-afraid-to.jpg"
+  },
+  "lizzo-is-all-about-self-acceptance-and-empowerment": {
+    "hash": "dfc0ce6a0da4",
+    "url": "/i/share-cards/lizzo-is-all-about-self-acceptance-and-empowerment.jpg"
+  },
+  "pauli-murray-dismantled-systems-of-oppression": {
+    "hash": "643dab50a044",
+    "url": "/i/share-cards/pauli-murray-dismantled-systems-of-oppression.jpg"
+  },
+  "w-kamau-bell-is-all-about-dialogue": {
+    "hash": "f307e9c39f70",
+    "url": "/i/share-cards/w-kamau-bell-is-all-about-dialogue.jpg"
+  },
+  "lebron-james-converts-power-into-promise": {
+    "hash": "851f62b7f9e8",
+    "url": "/i/share-cards/lebron-james-converts-power-into-promise.jpg"
+  },
+  "ida-b-wells-shone-light-in-the-darkness": {
+    "hash": "d376103a136d",
+    "url": "/i/share-cards/ida-b-wells-shone-light-in-the-darkness.jpg"
+  },
+  "baratunde-thurston-tackles-tough-topics-with-deep-humor": {
+    "hash": "1f245960ffcd",
+    "url": "/i/share-cards/baratunde-thurston-tackles-tough-topics-with-deep-humor.jpg"
+  },
+  "mae-jemison-never-gave-up-on-her-dream": {
+    "hash": "2b7e2e4f88a7",
+    "url": "/i/share-cards/mae-jemison-never-gave-up-on-her-dream.jpg"
+  },
+  "jack-johnson-trolled-for-his-shot-at-equality-and-inspired-future-generations-of-black-athlete-activists": {
+    "hash": "b8c964ef2e4e",
+    "url": "/i/share-cards/jack-johnson-trolled-for-his-shot-at-equality-and-inspired-future-generations-of-black-athlete-activists.jpg"
+  },
+  "mark-deans-work-on-the-pc-made-personal-computing-possible": {
+    "hash": "751574fb03e0",
+    "url": "/i/share-cards/mark-deans-work-on-the-pc-made-personal-computing-possible.jpg"
+  },
+  "amelia-boynton-robinson-agitated-for-the-vote": {
+    "hash": "86cc502a6c09",
+    "url": "/i/share-cards/amelia-boynton-robinson-agitated-for-the-vote.jpg"
+  },
+  "without-frederick-mckinley-jones-where-would-your-food-be": {
+    "hash": "8522418c67c2",
+    "url": "/i/share-cards/without-frederick-mckinley-jones-where-would-your-food-be.jpg"
+  },
+  "katherine-johnson-took-us-to-the-moon-and-back": {
+    "hash": "506d58d09e86",
+    "url": "/i/share-cards/katherine-johnson-took-us-to-the-moon-and-back.jpg"
+  },
+  "margaret-collins-used-biology-to-push-for-equality": {
+    "hash": "f64658b592c8",
+    "url": "/i/share-cards/margaret-collins-used-biology-to-push-for-equality.jpg"
+  },
+  "angie-turner-king-invested-her-energy-in-others": {
+    "hash": "bf3f330aed92",
+    "url": "/i/share-cards/angie-turner-king-invested-her-energy-in-others.jpg"
+  },
+  "jerry-lawson-made-home-video-game-systems-possible": {
+    "hash": "830fdb5a55c7",
+    "url": "/i/share-cards/jerry-lawson-made-home-video-game-systems-possible.jpg"
+  },
+  "maya-angelou-persevered-but-many-dont": {
+    "hash": "1e6c2258a931",
+    "url": "/i/share-cards/maya-angelou-persevered-but-many-dont.jpg"
+  },
+  "lucy-hicks-anderson-was-an-early-black-trans-pioneer": {
+    "hash": "605e49657607",
+    "url": "/i/share-cards/lucy-hicks-anderson-was-an-early-black-trans-pioneer.jpg"
+  },
+  "orrin-c-evans-showed-us-black-people-could-be-superheroes-too": {
+    "hash": "9974c71ed284",
+    "url": "/i/share-cards/orrin-c-evans-showed-us-black-people-could-be-superheroes-too.jpg"
+  },
+  "dr-rebecca-lee-crumpler-prioritized-the-most-vulnerable": {
+    "hash": "727f27a1f4a8",
+    "url": "/i/share-cards/dr-rebecca-lee-crumpler-prioritized-the-most-vulnerable.jpg"
+  },
+  "jane-bolin-didnt-let-anyone-tell-her-what-she-couldnt-do": {
+    "hash": "a945baad1ca0",
+    "url": "/i/share-cards/jane-bolin-didnt-let-anyone-tell-her-what-she-couldnt-do.jpg"
+  },
+  "captain-francisco-menndez-helped-found-the-first-free-black-settlement-in-the-us": {
+    "hash": "25b498e52d85",
+    "url": "/i/share-cards/captain-francisco-menndez-helped-found-the-first-free-black-settlement-in-the-us.jpg"
+  },
+  "jerry-varnado-and-james-garrett-started-the-first-black-student-union": {
+    "hash": "baca73a8e67c",
+    "url": "/i/share-cards/jerry-varnado-and-james-garrett-started-the-first-black-student-union.jpg"
+  },
+  "two-black-women-received-patents-in-1884-and-1885": {
+    "hash": "306ab4535b4d",
+    "url": "/i/share-cards/two-black-women-received-patents-in-1884-and-1885.jpg"
+  },
+  "madame-jones-was-the-beyonce-of-her-time": {
+    "hash": "468174fa5bed",
+    "url": "/i/share-cards/madame-jones-was-the-beyonce-of-her-time.jpg"
+  },
+  "charles-v-bush-agitated-for-equity-in-the-officer-corps": {
+    "hash": "4c0251fc2ce3",
+    "url": "/i/share-cards/charles-v-bush-agitated-for-equity-in-the-officer-corps.jpg"
+  },
+  "reefer-170-year-two": {
+    "hash": "e02e4fd50379",
+    "url": "/i/share-cards/reefer-170-year-two.jpg"
   }
 }

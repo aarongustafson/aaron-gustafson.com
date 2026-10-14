@@ -50,6 +50,29 @@ test("posts with heroes queue a derived hero card", async () => {
 	assert.equal(result, "/i/share-cards/example.jpg");
 });
 
+test("text cards strip title markup and decode entities", async () => {
+	let received;
+	const result = await postData.eleventyComputed.image.call(
+		{
+			generateShareCard(text, slug) {
+				received = { text, slug };
+				return "/i/share-cards/example.jpg";
+			},
+		},
+		{
+			title: "<cite>Adaptive Web Design</cite>: Folded &amp; Gathered",
+			tags: ["Writing"],
+			page: { fileSlug: "example" },
+		},
+	);
+
+	assert.deepEqual(received, {
+		text: ["Adaptive Web Design: Folded & Gathered", "#writing"],
+		slug: "example",
+	});
+	assert.equal(result, "/i/share-cards/example.jpg");
+});
+
 test("image frontmatter insertion preserves existing formatting", () => {
 	const source =
 		'---\r\ntitle: "Example"\r\natUri: "at://example"\r\n---\r\n\r\nBody\r\n';
@@ -127,8 +150,8 @@ test("hero cards use cover dimensions without changing the source", async () => 
 		staticDir,
 		outputDir,
 		outputUrlPath: "/i/share-cards",
-		imageWidth: 1280,
-		imageHeight: 669,
+		imageWidth: 1200,
+		imageHeight: 630,
 		jpegQuality: 90,
 	};
 	const cache = {};
@@ -142,8 +165,8 @@ test("hero cards use cover dimensions without changing the source", async () => 
 		);
 		const metadata = await sharp(path.join(outputDir, "example.jpg")).metadata();
 		assert.equal(url, "/i/share-cards/example.jpg");
-		assert.equal(metadata.width, 1280);
-		assert.equal(metadata.height, 669);
+		assert.equal(metadata.width, 1200);
+		assert.equal(metadata.height, 630);
 		assert.deepEqual(fs.readFileSync(source), original);
 		assert.equal(cache.example.url, url);
 	} finally {
