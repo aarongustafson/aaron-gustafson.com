@@ -6,6 +6,8 @@ comments: false
 ref_url: https://blogs.msdn.com/b/emargraff/archive/2015/11/27/how-vorlon-js-helps-you-improve-your-web-code.aspx
 in_reply_to: https://blogs.msdn.com/b/emargraff/archive/2015/11/27/how-vorlon-js-helps-you-improve-your-web-code.aspx
 ref_source: Etienne Margraff
+meta_description: "You can now scan your website for potential issues with standards & interoperability, accessibility, performance, and mobile, right from within Vorlon.js."
+social_description: "You can now scan your website for potential issues with standards & interoperability, accessibility, performance, and mobile, right from within Vorlon.js. This is really awesome stuff!"
 ---
 
 You can now scan your website for potential issues with standards & interoperability, accessibility, performance, and mobile, right from within [Vorlon.js](https://vorlonjs.com). This is really awesome stuff!

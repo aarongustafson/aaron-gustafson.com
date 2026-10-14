@@ -11,6 +11,8 @@ series:
   ordinal: "10th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvzmcjt2p"
 image: "/i/share-cards/repeatable-form-fields-made-simple.jpg"
+meta_description: "Need to let users add multiple email addresses, phone numbers, or other field groups?"
+social_description: "Need to let users add multiple email addresses, phone numbers, or other field groups? The `<form-repeatable>` web component handles the duplication, renumbering, and form submission automatically."
 ---
 
 Sometimes you need people to provide multiple instances of the same information: email addresses, phone numbers, team members, or emergency contacts. The `form-repeatable` web component handles that cleanly, including duplication, renumbering, and seamless form submission via the ElementInternals API.

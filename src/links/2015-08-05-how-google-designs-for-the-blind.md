@@ -5,6 +5,8 @@ comments: false
 ref_url: https://money.cnn.com/2015/08/04/technology/google-accessability/index.html
 in_reply_to: https://money.cnn.com/2015/08/04/technology/google-accessability/index.html
 ref_source: CNN Money
+meta_description: "While not hugely in-depth, this is a good piece for a broad audience on why accessibility matters."
+social_description: "While not hugely in-depth, this is a good piece for a broad audience on why accessibility matters. It also talks about some of the ways Google is working to make accessibility part of their culture."
 ---
 
 While not hugely in-depth, this is a good piece for a broad audience on why accessibility matters. It also talks about some of the ways Google is working to make accessibility part of their culture.

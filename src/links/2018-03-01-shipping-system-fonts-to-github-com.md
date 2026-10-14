@@ -9,6 +9,8 @@ ref_source: "@mdo"
 via:
   name: "Frontend Focus"
   url: "https://frontendfoc.us/"
+meta_description: "A detailed account of GitHub’s switch to system fonts—and the complexity hiding inside a seemingly simple change."
+social_description: "I love posts like this that get into the nitty-gritty detail of seemingly simple undertakings like updating a site’s font stack, especially one based on system fonts!"
 ---
 
 I love posts like this that get into the nitty-gritty detail of seemingly simple undertakings like updating a site’s font stack, especially one based on system fonts! There’s a lot to learn from this post and it’s well worth your time.

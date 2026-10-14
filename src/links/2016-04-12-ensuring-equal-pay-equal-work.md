@@ -5,6 +5,8 @@ comments: false
 ref_url: https://blogs.microsoft.com/blog/2016/04/11/ensuring-equal-pay-equal-work/#sm.001oh58x8usfddx11gd2e9bpq28if
 in_reply_to: https://blogs.microsoft.com/blog/2016/04/11/ensuring-equal-pay-equal-work/#sm.001oh58x8usfddx11gd2e9bpq28if
 ref_source: The Official Microsoft Blog
+meta_description: "In their latest update, Microsoft has gotten pretty damn close to equal pay for equal work."
+social_description: "In their latest update, Microsoft has gotten pretty damn close to equal pay for equal work."
 ---
 
 In their latest update, Microsoft has gotten pretty damn close to equal pay for equal work. There’s still some work to be done for Latin & Hispanic populations and women in general, but this is progress. And I appreciate the honesty.

@@ -6,6 +6,8 @@ ref_url: https://medium.com/@neerventure/purepwa-a-radical-u-turn-in-web-develop
 in_reply_to: https://medium.com/@neerventure/purepwa-a-radical-u-turn-in-web-development-a386c0dc092e
 twitter_text: "I love experiments that showcase the power of the web platform and this is no exception: a pure #WebStandards-powered #ProgressiveWebApp"
 ref_source: "Marc van Neerven on Medium"
+meta_description: "I love experiments that showcase the web platform’s power. PurePWA builds a Progressive Web App with web standards alone."
+social_description: "I love experiments that showcase the web platform’s power. PurePWA builds a Progressive Web App with web standards, web components, and view transitions."
 ---
 
 I love experiments that showcase the power of the web platform and this is no exception: a pure web standards-powered Progressive Web App (PWA) replete with straightforward web components, view transitions, and more.

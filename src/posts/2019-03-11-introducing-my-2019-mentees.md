@@ -7,6 +7,8 @@ description: "After considering a ton of amazing applicants, I finally selected 
 twitter_text: "Meet @Ace_KYD, @oluoluoxenfree, @marcysutton, @SaraLaughed, @thedezzie, my 2019 mentees"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw74xes2l"
 image: "/i/share-cards/introducing-my-2019-mentees.jpg"
+meta_description: "After considering a ton of amazing applicants, I finally selected my 2019 mentee cohort."
+social_description: "After considering a ton of amazing applicants, I finally selected my 2019 mentee cohort. They are Adewale Abati, Olu Niyi-Awosusi, Marcy Sutton, Sara Wegman, and Desirée Zamora García."
 ---
 
 Late last year, [I opened applications for my 2019 mentorship cohort.](https://www.aaron-gustafson.com/notebook/mentorship-2018-2019/). To say I was overwhelmed by the response is a drastic understatement. I got so many awesome applications, that I decided to increase the slots from two to five! In the end, I’m really excited about the folks I’ll be working with this year: [Adewale Abati](https://twitter.com/Ace_KYD), [Olu Niyi-Awosusi](https://twitter.com/oluoluoxenfree), [Marcy Sutton](https://twitter.com/marcysutton), [Sara Wegman](https://twitter.com/SaraLaughed), and [Desirée Zamora García](https://twitter.com/thedezzie).

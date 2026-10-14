@@ -9,6 +9,8 @@ ref_source: "Azure Blog"
 via:
   name: "MSFT Accessibility"
   url: "https://twitter.com/MSFTEnable/status/1629198226791313408"
+meta_description: "Six practical ways Azure AI can help teams improve accessibility."
+social_description: "Setting aside my employers’ service offerings promoted in this piece, I appreciate its focus on creating more opportunities for everyone, regardless of ability or disability."
 ---
 
 Setting aside my employers’ service offerings promoted in this piece, I appreciate its focus on creating more opportunities for everyone, regardless of ability or disability. The more ways we enable people to consume or interact with our products, the more they will tailor their experience to their own needs and take advantage of affordances that will make them more efficient, productive, and comfortable.

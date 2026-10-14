@@ -6,6 +6,8 @@ tags: [performance, "web design"]
 description: "I am a big fan of simple tools that provide an often much-needed reality check on a project, but I think the Web Bloat Score Calculator needs to be considered in context and with knowledge of its limitations."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwefhud2a"
 image: "/i/share-cards/one-persons-bloat-dot-dot-dot.jpg"
+meta_description: "Simple tools can offer a useful reality check, but the Web Bloat Score Calculator needs context."
+social_description: "Simple tools can offer a useful reality check, but the Web Bloat Score Calculator needs context."
 ---
 
 <figure id="fig-2016-10-25-1" class="media-container">

@@ -5,6 +5,8 @@ comments: false
 ref_url: https://www.practicalecommerce.com/articles/95177-Strategies-for-Website-Accessibility-for-Ecommerce
 in_reply_to: https://www.practicalecommerce.com/articles/95177-Strategies-for-Website-Accessibility-for-Ecommerce
 ref_source: Practical Ecommerce
+meta_description: "Accessibility is just good customer service. If you run an commerce shop, you should be following this article’s advice."
+social_description: "Accessibility is just good customer service. If you run an commerce shop, you should be following this article’s advice. Heck, if you run any kind of site, you should do it."
 ---
 
 Accessibility is just good customer service. If you run an commerce shop, you should be following this article’s advice. Heck, if you run _any_ kind of site, you should do it.

@@ -10,6 +10,8 @@ series:
   ordinal: "37th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw5xzdg2e"
 image: "/i/share-cards/two-black-women-received-patents-in-1884-and-1885.jpg"
+meta_description: "Two Black women received patents in 1884 and 1885—an achievement history too often overlooks."
+social_description: "Regardless of who you consider “first,” the fact is that this is just yet another example of Black women excelling at something often considered the domain of men."
 ---
 
 I have to admit that I was a little surprised when I learned that the first Black woman to receive a patent was granted it in 1884. To be clear, I wasn’t surprised because I didn’t think Black women were capable of inventing things—not at all. I was surprised because the process of obtaining a patent is pretty arduous on its own, even without factoring in the very overt racism I’m sure these inventors were dealing with at every step of the way.

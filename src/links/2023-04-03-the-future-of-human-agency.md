@@ -6,6 +6,8 @@ ref_url: https://www.elon.edu/u/imagining/surveys/xv2023/the-future-of-human-age
 in_reply_to: https://www.elon.edu/u/imagining/surveys/xv2023/the-future-of-human-agency-2035/
 twitter_text: "This was an interesting survey on what #automation and #AI might mean for the future of human agency."
 ref_source: "Elon University + Pew Research Center"
+meta_description: "This was an interesting (and exhaustive) survey on what automation and AI might mean for the future of human agency."
+social_description: "This was an interesting (and exhaustive) survey on what automation and AI might mean for the future of human agency. Some of the verbatims were quite insightful."
 ---
 
 This was an interesting (and exhaustive) survey on what automation and AI might mean for the future of human agency. Some of the verbatims were quite insightful.

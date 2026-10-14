@@ -5,6 +5,8 @@ comments: false
 ref_url: https://blogs.windows.com/msedgedev/2015/01/22/project-spartan-and-the-windows-10-january-preview-build/
 in_reply_to: https://blogs.windows.com/msedgedev/2015/01/22/project-spartan-and-the-windows-10-january-preview-build/
 ref_source: Microsoft Edge Blog
+meta_description: "Jason Weber offers more detail on Project Spartan and how Microsoft plans to balance consumer and enterprise needs."
+social_description: "Jason Weber, Group Program Manager of Internet Explorer, provides a little more insight into “Project Spartan” and how Microsoft plans to balance consumer and enterprise needs."
 ---
 
 [Jason Weber](https://www.jasonweber.com/), Group Program Manager of Internet Explorer, provides a little more insight into “Project Spartan” and how Microsoft plans to balance consumer and enterprise needs.

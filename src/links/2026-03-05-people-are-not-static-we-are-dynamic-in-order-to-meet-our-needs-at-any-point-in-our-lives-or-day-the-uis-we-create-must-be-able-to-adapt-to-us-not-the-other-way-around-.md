@@ -6,6 +6,8 @@ ref_url: https://www.linkedin.com/posts/derekfeatherstone_accessibility-disabili
 in_reply_to: https://www.linkedin.com/posts/derekfeatherstone_accessibility-disability-activity-7434648295420870656-mH3o
 twitter_text: "People are not static, we are dynamic. In order to meet our needs at any point in our lives or day, the UIs we create must be able to adapt to us — not the other way around."
 ref_source: "Derek Featherstone on LinkedIn"
+meta_description: "People are not static, we are dynamic."
+social_description: "People are not static, we are dynamic. In order to meet our needs at any point in our lives or day, the UIs we create must be able to adapt to us — not the other way around."
 ---
 
 People are not static, we are dynamic. In order to meet our needs at any point in our lives or day, the UIs we create must be able to adapt to us — not the other way around.

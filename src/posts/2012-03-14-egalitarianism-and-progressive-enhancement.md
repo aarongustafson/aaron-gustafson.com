@@ -10,6 +10,8 @@ description: "In 1971, John Rawls published A Theory of Justice , in which he de
 canonical: "https://blog.easy-designs.net/archives/egalitarianism-and-progressive-enhancement/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwp5q5o2e"
 image: "/i/share-cards/egalitarianism-and-progressive-enhancement.jpg"
+meta_description: "John Rawls used a thought experiment with students and other groups to explore how people would design a society."
+social_description: "John Rawls used a thought experiment with students and other groups to explore how people would design a society."
 ---
 
 <p>

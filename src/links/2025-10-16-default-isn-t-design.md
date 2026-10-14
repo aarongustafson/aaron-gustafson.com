@@ -6,6 +6,8 @@ ref_url: https://eisenbergeffect.medium.com/default-isnt-design-24df33272abb
 in_reply_to: https://eisenbergeffect.medium.com/default-isnt-design-24df33272abb
 twitter_text: "👍🏻 “When one approach becomes ‘how things are done,’ we unconsciously defend it even when standards would give us a healthier, more interoperable ecosystem.”"
 ref_source: "EisenbergEffect on Medium"
+meta_description: "When one approach becomes “how things are done,” we unconsciously defend it even when standards would give us a healthier, more interoperable ecosystem."
+social_description: "When one approach becomes “how things are done,” we unconsciously defend it even when standards would give us a healthier, more interoperable ecosystem."
 ---
 
 > When one approach becomes “how things are done,” we unconsciously defend it even when standards would give us a healthier, more interoperable ecosystem. Psychologists call this reflex System Justification. Naming it helps us steer toward a standards-first future without turning the discussion into a framework war.

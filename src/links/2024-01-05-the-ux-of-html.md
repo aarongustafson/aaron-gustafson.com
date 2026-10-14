@@ -6,6 +6,8 @@ ref_url: https://www.htmhell.dev/adventcalendar/2023/1/
 in_reply_to: https://www.htmhell.dev/adventcalendar/2023/1/
 twitter_text: "We should absolutely be (and continue) touting the #UX freebies we get with #HTML."
 ref_source: "HTMHell"
+meta_description: "Somehow my students are allergic to semantics and shit. And they’re not alone."
+social_description: "Somehow my students are allergic to semantics and shit. And they’re not alone. If you look at 99% of all websites in the wild, everybody who worked on them seems to be allergic to semantics and shit."
 ---
 
 > Somehow my students are allergic to semantics and shit. And they’re not alone. If you look at 99% of all websites in the wild, everybody who worked on them seems to be allergic to semantics and shit. On most websites heading levels are just random numbers, loosely based on font-size. Form fields have no labels. Links and buttons are divs. It’s really pretty bad. So it’s not just my students, the whole industry doesn’t understand semantics and shit.

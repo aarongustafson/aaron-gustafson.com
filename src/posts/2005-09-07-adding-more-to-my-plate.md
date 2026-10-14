@@ -10,6 +10,8 @@ description: "It’s funny, but the more I take on, the more zen I get about wor
 canonical: "https://blog.easy-designs.net/archives/adding-more-to-my-plate/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx7gkvq2u"
 image: "/i/share-cards/adding-more-to-my-plate.jpg"
+meta_description: "It’s funny, but the more I take on, the more zen I get about work."
+social_description: "It’s funny, but the more I take on, the more zen I get about work."
 ---
 
 <p>It’s funny, but the more I take on, the more zen I get about work. Perhaps it’s the recent addition of a daily trek to the gym in the wee hours of the morning which is getting my day off to a better start. Or maybe it’s the Pragmatic philosophy which is beginning to take hold since finishing <a href="http://www.amazon.com/exec/obidos/redirect?path=ASIN/020161622X&amp;link_code=as2&amp;camp=1789&amp;tag=easydesign-20&amp;creative=9325">The Pragmatic Programmer</a> and starting <a href="http://www.amazon.com/exec/obidos/redirect?path=ASIN/097669400X&amp;link_code=as2&amp;camp=1789&amp;tag=easydesign-20&amp;creative=9325">Agile Web Development with Rails</a>. Who knows, but I am thankful for the calm.</p>

@@ -6,6 +6,8 @@ tags: ["web design", "web development", performance]
 ref_url: https://solar.lowtechmagazine.com/2018/09/how-to-build-a-lowtech-website/
 in_reply_to: https://solar.lowtechmagazine.com/2018/09/how-to-build-a-lowtech-website/
 ref_source: Low Tech Magazine
+meta_description: "I love this project. It ticks so many boxes for me as it’s all about doing more with less."
+social_description: "I love this project. It ticks so many boxes for me as it’s all about doing more with less. I love the ways they’ve found to reduce consumption on the server side and throughput to their users as well."
 ---
 
 I _love_ this project. It ticks so many boxes for me as it’s all about doing more with less. I love the ways they’ve found to reduce consumption on the server side and throughput to their users as well. So much to unpack!

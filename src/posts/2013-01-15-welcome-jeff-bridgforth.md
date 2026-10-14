@@ -9,6 +9,8 @@ description: "Today, I have the honor of introducing you to the newest Easy team
 canonical: "https://blog.easy-designs.net/archives/welcome-jeff-bridgforth/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwojlt22p"
 image: "/i/share-cards/welcome-jeff-bridgforth.jpg"
+meta_description: "Today, I have the honor of introducing you to the newest Easy team member: Jeff Bridgforth."
+social_description: "Today, I have the honor of introducing you to the newest Easy team member: Jeff Bridgforth."
 ---
 
 <p>Today, I have the honor of introducing you to the newest Easy team member: <a href="http://jeffbridgforth.com/">Jeff Bridgforth</a>. Jeff comes to us from Bonnier, where he built websites for <cite>Popular Science</cite>, <cite>Popular Photography</cite>, <cite>Saveur</cite>, and <cite>Parenting</cite>. Being a former publishing guy myself, I’m delighted to be bringing someone on who has a solid grounding in content-rich websites.</p>

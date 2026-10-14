@@ -5,6 +5,8 @@ comments: false
 ref_url: https://msdn.microsoft.com/en-us/windows/uwp/accessibility/accessibility-in-the-store
 in_reply_to: https://msdn.microsoft.com/en-us/windows/uwp/accessibility/accessibility-in-the-store
 ref_source: Windows Dev Center
+meta_description: "Apps in the Windows Store can now be flagged as accessible on submission."
+social_description: "Apps in the Windows Store can now be flagged as accessible on submission. Not sure if anyone is validating these claims, but my guess is that they will if it becomes abused."
 ---
 
 Apps in the [Windows Store](https://www.microsoft.com/en-us/store/apps) can now be flagged as accessible on submission. Not sure if anyone is validating these claims, but my guess is that they will if it becomes abused. Regardless, I’m excited to see Microsoft take this step to make it easier for folks who need it to find accessible apps.

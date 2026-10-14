@@ -10,6 +10,8 @@ description: "Like many of you, I’m sure, I hate debugging JavaScript. Really,
 canonical: "https://blog.easy-designs.net/archives/debugging-javascript-just-got-a-little-bit-easier/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx6be6j2k"
 image: "/i/share-cards/debugging-javascript-just-got-a-little-bit-easier.jpg"
+meta_description: "Like many of you, I’m sure, I hate debugging JavaScript. Really, it’s not the debugging, per se, as much as it’s using alert() to echo stuff out to the screen."
+social_description: "Like many of you, I’m sure, I hate debugging JavaScript. Really, it’s not the debugging, per se, as much as it’s using alert() to echo stuff out to the screen."
 ---
 
 <p>Like many of you, I’m sure, I hate debugging JavaScript. Really, it’s not the debugging, <dfn lang="la" title="in itself">per se</dfn>, as much as it’s using <code>alert()</code> to echo stuff out to the screen. It’s stupid and distracting and takes for ever if you’re debugging a lot of stuff.</p>

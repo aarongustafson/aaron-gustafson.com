@@ -10,6 +10,8 @@ description: "These last two days have been a bit of a whirlwind, but I have had
 canonical: "https://blog.easy-designs.net/archives/slides-from-my-talk-at-how-interactive/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwonkdc2w"
 image: "/i/share-cards/slides-from-my-talk-at-how-interactive.jpg"
+meta_description: "I had a great time meeting and talking to the attendees (and other speakers) at HOW Interactive in San Francisco."
+social_description: "These last two days have been a bit of a whirlwind, but I have had a great time meeting and talking to the attendees (and other speakers) here at the HOW Interactive conference in San Francisco."
 ---
 
 <p>These last two days have been a bit of a whirlwind, but I have had a great time meeting and talking to the attendees (and other speakers) here at the <a href="http://www.howinteractiveconference.com/ehome/35392/">HOW Interactive conference in San Francisco</a>. I gave <a href="http://www.howinteractiveconference.com/ereg/popups/sessiondetails.php?eventid=35392&amp;sessionid=2198869&amp;sessionchoice=2">my talk</a> yesterday on progressive enhancement (of course) and how it can make designing and devloping for mobile a little more sane. Here are the slides (which you can also <a href="http://www.slideshare.net/AaronGustafson/progressive-enhancement-mobile">see and download on Slideshare</a>) form that talk:</p>

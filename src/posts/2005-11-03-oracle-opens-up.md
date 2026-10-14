@@ -10,6 +10,8 @@ description: "In hopes of stemming the massive explosion of open source database
 canonical: "https://blog.easy-designs.net/archives/oracle-opens-up/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx5s74k2w"
 image: "/i/share-cards/oracle-opens-up.jpg"
+meta_description: "A look at Oracle’s decision to open up—and what that change might mean."
+social_description: "In hopes of stemming the massive explosion of open source database use, Oracle is preparing an “express” version of it’s Oracle Database 10g line: Oracle Database XE."
 ---
 
 <p>In hopes of stemming the massive explosion of open source database use, Oracle is preparing an “express” version of it’s Oracle Database 10g line: <a href="http://www.oracle.com/technology/products/database/xe/index.html">Oracle Database XE</a>. Like many things on the web right now, it’s currently in beta, with a full release planned for late this year.</p>

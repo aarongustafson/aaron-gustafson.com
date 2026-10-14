@@ -6,6 +6,8 @@ tags: [accessibility]
 ref_url: https://themarkup.org/2020/04/21/blind-users-struggle-with-state-coronavirus-websites
 in_reply_to: https://themarkup.org/2020/04/21/blind-users-struggle-with-state-coronavirus-websites
 ref_source: The Markup
+meta_description: "I wish I could say this came as a surprise, but having worked with state agencies in the past, it does not surprise me at all."
+social_description: "I wish I could say this came as a surprise, but having worked with state agencies in the past, it does not surprise me at all. That said, this kind of thing should never happen."
 ---
 
 I wish I could say this came as a surprise, but having worked with state agencies in the past, it does not surprise me at all. That said, this kind of thing _should never happen_.

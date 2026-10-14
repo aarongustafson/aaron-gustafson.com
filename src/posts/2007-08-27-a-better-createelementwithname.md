@@ -9,6 +9,8 @@ description: "Back in 2005, I wrote a piece about IE ’s abysmal generation of 
 canonical: "https://blog.easy-designs.net/archives/a-better-createelementwithname/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwx2bnj2k"
 image: "/i/share-cards/a-better-createelementwithname.jpg"
+meta_description: "Back in 2005, I wrote about IE’s abysmal generation of named elements via the DOM. It became one of the blog’s most popular posts—clearly a pain point."
+social_description: "Back in 2005, I wrote about IE’s abysmal generation of named elements via the DOM. It became one of the blog’s most popular posts—clearly a pain point."
 ---
 
 <p>Back in 2005, I wrote <a href="/notebook/death-to-bad-dom-implementations/">a piece about <abbr title="Internet Explorer">IE</abbr>’s abysmal generation of <code>NAME</code>d elements via the DOM</a> (which, interestingly enough, has proven to be one of the most popular posts on the blog, pointing to the fact that this is an obvious pain point for many DOM scripters out there). The the time, I wrote</p>

@@ -6,6 +6,8 @@ ref_url: https://dev.to/tigt/making-the-worlds-fastest-website-and-other-mistake
 in_reply_to: https://dev.to/tigt/making-the-worlds-fastest-website-and-other-mistakes-56na
 twitter_text: "This series on web performance from @tigt_ is really dense but full of so many excellent real-world learnings."
 ref_source: "Taylor Hunt"
+meta_description: "This 4 part series walks through the various levels of Hell you must traverse to actually achieve solid web performance on a large e-commerce platform."
+social_description: "This 4 part series walks through the various levels of Hell you must traverse to actually achieve solid web performance on a large e-commerce platform."
 ---
 
 This 4 part series walks through the various levels of Hell you must traverse to actually achieve solid web performance on a large e-commerce platform. What is most amazing to me is how things continue to align pretty directly with the philosophy of progressive enhancement.

@@ -5,6 +5,8 @@ comments: false
 ref_url: https://www.wired.com/2015/01/diy-cellular-phone-networks-mexico/
 in_reply_to: https://www.wired.com/2015/01/diy-cellular-phone-networks-mexico/
 ref_source: Wired
+meta_description: "A beautiful account of the struggle to bring cellular networks to poor, rural areas that major providers consider unprofitable."
+social_description: "This is a beautiful account of the struggles of bringing cellular networks to poor, rural areas that are uninteresting (e.g. unprofitable) to the major providers."
 ---
 
 This is a beautiful account of the struggles of bringing cellular networks to poor, rural areas that are uninteresting (e.g. unprofitable) to the major providers.

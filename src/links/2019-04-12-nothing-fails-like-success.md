@@ -6,6 +6,8 @@ ref_url: https://alistapart.com/article/nothing-fails-like-success/
 in_reply_to: https://alistapart.com/article/nothing-fails-like-success/
 twitter_text: "Great piece from @zeldman on the unsavory consequences of mortgaging the web’s future."
 ref_source: "A List Apart"
+meta_description: "From optimistically conceived origins and message statements about making the world a better place, too many websites and startups have become the leading edge."
+social_description: "From optimistically conceived origins and message statements about making the world a better place, too many websites and startups have become the leading edge of bias and trauma."
 ---
 
 > From optimistically conceived origins and message statements about making the world a better place, too many websites and startups have become the leading edge of bias and trauma, especially for marginalized and at-risk groups.

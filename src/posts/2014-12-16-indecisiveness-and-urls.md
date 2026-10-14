@@ -6,6 +6,8 @@ comments: true
 tags: ["web design", "this site"]
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwl4nik2p"
 image: "/i/share-cards/indecisiveness-and-urls.jpg"
+meta_description: "I reconsidered some early URL decisions and made changes before too many outside links pointed to the site."
+social_description: "I have been struggling with some of my initial decisions with respect to URLs on this site and finally decided to make some changes before too many links to its content get out there."
 ---
 
 If you know me, you know I am a pretty indecisive guy. It is not uncommon for [Kelly](https://twitter.com/shirleytemper) and I to spend 15 minutes or more just trying to figure out where we want to grab a meal.

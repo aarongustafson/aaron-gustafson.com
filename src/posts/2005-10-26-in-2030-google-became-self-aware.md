@@ -10,6 +10,8 @@ description: "Some interesting news on the Google front: there’s been sighting
 canonical: "https://blog.easy-designs.net/archives/in-2030-google-became-self-aware/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx6eid62e"
 image: "/i/share-cards/in-2030-google-became-self-aware.jpg"
+meta_description: "Some interesting news from 2030, when Google apparently became self-aware."
+social_description: "Some interesting news from 2030, when Google apparently became self-aware."
 ---
 
 <p>Some interesting news on the <a href="http://www.google.com">Google</a> front: there’s been <a href="http://arstechnica.com/news.ars/post/20051025-5480.html">sightings of a new Google universe</a> which looks more than a little scary, especially in light of the mockumentary-with-a-stright-face known as <a href="http://web.archive.org/web/20071016203913/epic.lightover.com/ols-master.html"><cite>EPIC 2014</cite></a>.</p>

@@ -9,6 +9,8 @@ description: "As opposed to just adding it to the comments in my original post, 
 canonical: "https://blog.easy-designs.net/archives/further-adventures-in-indifference/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx2xpu62e"
 image: "/i/share-cards/further-adventures-in-indifference.jpg"
+meta_description: "I continued my email exchange with a former employer’s unnamed executive about the Target.com lawsuit in a new post."
+social_description: "I continued my email exchange with a former employer’s unnamed executive about the Target.com lawsuit in a new post."
 ---
 
 <p>As opposed to just adding it to the comments in my original post, I decided to post the continuation of <a href="/notebook/apparently-some-people-just-dont-care/">my email conversation with the unnamed executive</a> at <a href="http://www.cronin-co.com">my former employer</a> about <a href="http://www.boxofchocolates.ca/archives/taking-aim-at-target-dot-com">the Target.com lawsuit</a> as a new entry. This is mostly <a href="/notebook/apparently-some-people-just-dont-care/#comment-268">for Derek’s amusement</a>, but I thought of a few other things to say on the subject as well.</p>

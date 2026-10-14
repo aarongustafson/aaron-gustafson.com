@@ -9,6 +9,8 @@ description: "It appears that some Dems, including my Representative from the 3r
 canonical: "https://blog.easy-designs.net/archives/honorable-my-ass/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx3twwq2u"
 image: "/i/share-cards/honorable-my-ass.jpg"
+meta_description: "Some Democrats—including my own representative—were trying to weaken democracy under the guise of public-finance reform."
+social_description: "It appears that some Dems, including my Representative from the 3rd District in Connecticut, Rosa De Lauro, are trying to cripple our democracy under the guise of public financing."
 ---
 
 <p>It appears that some Dems, including my Representative from the 3rd District in Connecticut, <a href="http://www.house.gov/delauro/">Rosa De Lauro</a>, are trying to cripple our democracy under the guise of public financing.</p>

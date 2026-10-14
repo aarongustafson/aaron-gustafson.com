@@ -6,6 +6,8 @@ comments: false
 ref_url: https://simplyaccessible.com/article/the-accessibility-stack/
 in_reply_to: https://simplyaccessible.com/article/the-accessibility-stack/
 ref_source: Simply Accessible
+meta_description: "This echoes themes from Adaptive Web Design: experiences can and should be built in layers because people experience them in layers."
+social_description: "This echoes themes from Adaptive Web Design: experiences can and should be built in layers because people experience them in layers."
 ---
 
 This post hits on a lot of the same topics I talk about in <a href="https://adaptivewebdesign.info"><cite>Adaptive Web Design</cite></a> and my progressive enhancement talks and workshops: experience can and should be built in layers because it is experienced in them.

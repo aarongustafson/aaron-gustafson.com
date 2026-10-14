@@ -6,6 +6,8 @@ ref_url: https://scai.globalsymbols.com/
 in_reply_to: https://scai.globalsymbols.com/
 twitter_text: "I am incredibly excited about this: crowdsourced & AI-assisted symbol generation for #AAC users. Now people can create the symbols they need in their lives. #NoGatekeepers"
 ref_source: "Global Symbols"
+meta_description: "Global Symbols envisioned using image-generation models to make new AAC symbols that fit an existing visual set."
+social_description: "About a year ago, the folks at Global Symbols pitched me on their vision for using image generation models to create new AAC symbols that fit thematically within an existing set."
 ---
 
 About a year ago, the folks at Global Symbols pitched me on their vision for using image generation models to create new AAC symbols that fit thematically within an existing set. It was a truly compelling use case for generative AI and I was thrilled to fund their project through the AI for Accessibility grant program.

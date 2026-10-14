@@ -10,6 +10,8 @@ description: "After a whirlwind trip to 4 countries (5 if you count Florida), I 
 canonical: "https://blog.easy-designs.net/archives/crafting-rich-experiences-with-progressive-enhancement-at-beyond-telle/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwprec32g"
 image: "/i/share-cards/crafting-rich-experiences-with-progressive-enhancement-at-beyond-telle.jpg"
+meta_description: "After a whirlwind trip to 4 countries, I am back to a rock-solid internet connection and got a moment to take a breath and post my slides."
+social_description: "After a whirlwind trip to 4 countries, I am back to a rock-solid internet connection and got a moment to take a breath and post my slides from the first stop on the trip."
 ---
 
 <p>

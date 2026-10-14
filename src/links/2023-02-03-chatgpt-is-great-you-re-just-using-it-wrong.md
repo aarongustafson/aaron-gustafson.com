@@ -6,6 +6,8 @@ ref_url: https://theconversation.com/chatgpt-is-great-youre-just-using-it-wrong-
 in_reply_to: https://theconversation.com/chatgpt-is-great-youre-just-using-it-wrong-198848
 twitter_text: "Setting aside it’s current issues with facts, the idea of using ChatGPT as an improv partner is interesting. Could work well for brainstorming and getting your own creative juices flowing."
 ref_source: "The Conversation"
+meta_description: "Setting aside it’s current issues with facts, the idea of using ChatGPT as an improv partner is interesting."
+social_description: "Setting aside it’s current issues with facts, the idea of using ChatGPT as an improv partner is interesting. Could work well for brainstorming and getting your own creative juices flowing."
 ---
 
 Setting aside it’s current issues with facts, the idea of using ChatGPT as an improv partner is interesting. Could work well for brainstorming and getting your own creative juices flowing.

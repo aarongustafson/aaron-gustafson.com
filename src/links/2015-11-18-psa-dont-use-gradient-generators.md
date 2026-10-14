@@ -5,6 +5,8 @@ comments: false
 ref_url: https://codepen.io/thebabydino/full/pjxVWp/
 in_reply_to: https://codepen.io/thebabydino/full/pjxVWp/
 ref_source: CodePen
+meta_description: "Did you know most of the CSS gradient generation tools out there are highly inefficient?"
+social_description: "Did you know most of the CSS gradient generation tools out there are highly inefficient?"
 ---
 
 Did you know most of the CSS gradient generation tools out there are highly inefficient? This post from Ana Tudor fills you in on why and makes some excellent recommendations for slimming down your CSS.

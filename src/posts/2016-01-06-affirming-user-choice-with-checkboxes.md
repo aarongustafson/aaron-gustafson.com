@@ -12,6 +12,8 @@ series:
   ordinal: "2nd"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwfunlj2n"
 image: "/i/share-cards/affirming-user-choice-with-checkboxes.jpg"
+meta_description: "“Checkbox” form controls have long been a part of software, enabling users to provide a simple binary response—yes or no."
+social_description: "“Checkbox” form controls have long been a part of software, enabling users to provide a simple binary response—yes or no. Here are some best practices for using them on the Web."
 ---
 
 “Checkbox” form controls have long been a part of software. They enable users to provide a simple binary response—yes or no. On the Web, we often see them in two scenarios: confirmations and multiple choice.

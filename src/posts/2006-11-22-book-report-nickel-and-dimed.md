@@ -9,6 +9,8 @@ description: "I just finished reading Barbara Ehrenreich’s Nickel and Dimed an
 canonical: "https://blog.easy-designs.net/archives/book-report-nickel-and-dimed/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwycs3g2e"
 image: "/i/share-cards/book-report-nickel-and-dimed.jpg"
+meta_description: "I just finished reading Barbara Ehrenreich’s Nickel and Dimed and it really opened my eyes."
+social_description: "I just finished reading Barbara Ehrenreich’s Nickel and Dimed and it really opened my eyes."
 ---
 
 <p>I just finished reading Barbara Ehrenreich’s <cite>Nickel and Dimed</cite> and it really opened my eyes. Clevery subtitled “How (Not) To Get By in America,” the book is a chronicle of Ehrenreich’s “adventures“ in survival as a member of the low-wage workforce that serves our meals, cleans our homes, and cares for our elderly.</p>

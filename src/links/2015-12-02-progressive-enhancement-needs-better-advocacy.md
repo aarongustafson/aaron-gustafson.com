@@ -5,6 +5,8 @@ comments: false
 ref_url: https://zetafleet.com/blog/2015/11/progressive-enhancement-needs-better-advocacy.html
 in_reply_to: https://zetafleet.com/blog/2015/11/progressive-enhancement-needs-better-advocacy.html
 ref_source: Zetafleet
+meta_description: "I don’t know that advocacy is the issue."
+social_description: "I don’t know that advocacy is the issue. Perhaps a better title would be “Developers should keep an open mind” or “The most important thing to know is you don’t know everything.”"
 ---
 
 I don’t know that _advocacy_ is the issue. Perhaps a better title would be “Developers should keep an open mind” or ”The most important thing to know is you don’t know everything”.

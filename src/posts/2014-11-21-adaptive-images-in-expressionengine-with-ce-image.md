@@ -13,6 +13,8 @@ description: "With browser implementations now available and a rock-solid set of
 redirect_from: /notebook/2014/adaptive-images-in-expressionengine-with-ce-image/
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwla7vs2h"
 image: "/i/share-cards/adaptive-images-in-expressionengine-with-ce-image.jpg"
+meta_description: "With browser implementations now available and a rock-solid set of implementation choices, we’ve begun implementing responsive images in every new project."
+social_description: "With browser implementations now available and a rock-solid set of implementation choices, we’ve begun implementing responsive images in every new project."
 ---
 
 One of the biggest headaches of responsive design has been dealing with images. Thankfully our work on the [Responsive <del>Images</del> <ins>Issues</ins> Community Group](http://ricg.io) has resulted in a rock-solid set of elements and attributes to address all of your adaptive image needs. My company, [Easy Designs](http://easy-designs.net), recently redesigned [Nichols College’s website](http://www.nichols.edu) and that project just happened to coincide adaptive images landing in [Blink](http://www.chromium.org/blink) (the rendering engine that powers Chrome and Opera). Naturally, we jumped at the opportunity to use them.

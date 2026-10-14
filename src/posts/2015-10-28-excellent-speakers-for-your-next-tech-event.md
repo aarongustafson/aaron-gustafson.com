@@ -10,6 +10,8 @@ crossposted:
   Medium: https://medium.com/@AaronGustafson/excellent-speakers-for-your-next-tech-event-bc093479fa56
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwgiofh2f"
 image: "/i/share-cards/excellent-speakers-for-your-next-tech-event.jpg"
+meta_description: "A few excellent speakers worth considering for your next technology event."
+social_description: "A few excellent speakers worth considering for your next technology event."
 ---
 
 Like many, I’m disappointed that gender—or ethnicity, etc., etc., etc.—should even have to play a role when it comes to selecting awesome speakers, but the reality is that the dais at most tech-related events and conferences is still occupied (largely) by white men. That needs to change. We’ve been very intentional with our programming of [Code & Creativity](http://codeandcreativity.com), but it wasn’t like it was hard to find [an incredible speaker lineup that also happened to be pretty diverse](http://www.codeandcreativity.com/events/).

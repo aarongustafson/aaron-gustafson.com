@@ -20,6 +20,8 @@ series:
   ordinal: "8th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw22o2z2l"
 image: "/i/share-cards/a-web-component-for-obfuscating-form-fields.jpg"
+meta_description: "There’s no standard way to make a field readable while editing but obfuscated at rest."
+social_description: "There’s no standard way to make a field readable while editing but obfuscated at rest."
 ---
 
 We have the password reveal pattern for passwords, but what about other sensitive fields that need to be readable while editing and obfuscated while at rest? The `form-obfuscator` web component does exactly that.

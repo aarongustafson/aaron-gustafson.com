@@ -10,6 +10,8 @@ description: "If you’re reading this on a desktop browser, you may not have no
 canonical: "https://blog.easy-designs.net/archives/from-mobile-friendly-to-mobile-first/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwq6oto2e"
 image: "/i/share-cards/from-mobile-friendly-to-mobile-first.jpg"
+meta_description: "If you’re reading this on a desktop browser, you may not have noticed, but we just turned this blog on it’s head, design-wise."
+social_description: "If you’re reading this on a desktop browser, you may not have noticed, but we just turned this blog on it’s head, design-wise."
 ---
 
 <p>

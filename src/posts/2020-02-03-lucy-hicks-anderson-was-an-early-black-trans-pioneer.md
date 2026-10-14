@@ -11,6 +11,8 @@ series:
   ordinal: "31st"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw6jfhb2l"
 image: "/i/share-cards/lucy-hicks-anderson-was-an-early-black-trans-pioneer.jpg"
+meta_description: "Lucy Hicks Anderson was an early Black trans pioneer whose life and work deserve wider recognition."
+social_description: "I am awestruck by the bravery of Lucy Hicks Anderson, a Black trans woman born in Kentucky in 1886, who became a renown socialite and hostess in 1940s California."
 ---
 
 While the term <i>transgender</i> is a recent development, [trans people have always been with us](https://wikipedia.org/wiki/Transgender_history). In the white supremacist system that dominates the United States and has declared cit-het people “normal” (and everyone else “abnormal”), being trans has never been easy, but it’s been [especially dangerous for Black trans women](https://www.forbes.com/sites/dawnstaceyennis/2019/06/15/american-medical-association-responds-to-epidemic-of-violence-against-transgender-community/). Knowing this, I am awestruck by the bravery of Lucy Hicks Anderson, a Black trans woman born in Kentucky in 1886, who became a renown socialite and hostess in 1940s California.

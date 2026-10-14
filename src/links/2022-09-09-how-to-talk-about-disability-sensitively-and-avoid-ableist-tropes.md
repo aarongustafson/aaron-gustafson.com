@@ -8,6 +8,8 @@ description: "The way we discuss people’s capabilities and disabilities is rif
 twitter_text: "The way we discuss people’s capabilities and disabilities is rife with ableist language and concepts. This piece from NPR offers a starting point for talking about disability without being offensive."
 ref_url: https://www.npr.org/2022/08/08/1115682836/how-to-talk-about-disability-sensitively-and-avoid-ableist-tropes
 in_reply_to: https://www.npr.org/2022/08/08/1115682836/how-to-talk-about-disability-sensitively-and-avoid-ableist-tropes
+meta_description: "The way we discuss people’s capabilities and disabilities is rife with ableist language and concepts."
+social_description: "The way we discuss people’s capabilities and disabilities is rife with ableist language and concepts. This piece from NPR offers a starting point for talking about disability without being offensive."
 ---
 
 The way we discuss people’s capabilities and disabilities is rife with ableist language and concepts. This piece from NPR offers a starting point for talking about disability without being offensive.

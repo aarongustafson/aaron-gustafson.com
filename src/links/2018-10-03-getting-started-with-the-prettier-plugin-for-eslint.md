@@ -6,6 +6,8 @@ tags: [JavaScript]
 ref_url: https://cloudfour.com/thinks/getting-started-with-the-prettier-plugin-for-eslint/
 in_reply_to: https://cloudfour.com/thinks/getting-started-with-the-prettier-plugin-for-eslint/
 ref_source: The Cloud Four Blog
+meta_description: "I love it when code is consistent."
+social_description: "I love it when code is consistent. This is a great tutorial on how to use ESLint and Prettier to make sure your (or your team’s) JavaScript always follows a standard convention."
 ---
 
 I love it when code is consistent. This is a great tutorial on how to use ESLint and Prettier to make sure your (or your team’s) JavaScript always follows a standard convention.

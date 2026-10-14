@@ -6,6 +6,8 @@ ref_url: http://andregarzia.com/posts/en/whatsappdoesntunderstandtheweb/
 in_reply_to: http://andregarzia.com/posts/en/whatsappdoesntunderstandtheweb/
 ref_source: Andre Alves Garzia’s Blog
 archived: https://web.archive.org/web/20160325155616/http://andregarzia.com/posts/en/whatsappdoesntunderstandtheweb/
+meta_description: "I am not a WhatsApp user, but I have long been impressed with the way they embrace operating systems others ignore."
+social_description: "I am not a WhatsApp user, but I have long been impressed with the way they embrace operating systems others ignore."
 ---
 
 I am not a WhatsApp user, but I have long been impressed with the way they embrace operating systems others ignore. I think it has been a key to their success and speaks to the "accessibility" (in the broader sense) of their service.

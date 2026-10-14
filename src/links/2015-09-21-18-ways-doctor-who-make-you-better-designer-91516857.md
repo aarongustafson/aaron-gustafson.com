@@ -5,6 +5,8 @@ comments: false
 ref_url: https://www.creativebloq.com/web-design/18-ways-doctor-who-make-you-better-designer-91516857
 in_reply_to: https://www.creativebloq.com/web-design/18-ways-doctor-who-make-you-better-designer-91516857
 ref_source: Creative Bloq
+meta_description: "A bit of fun, but there’s some good stuff in here."
+social_description: "A bit of fun, but there’s some good stuff in here."
 ---
 
 A bit of fun, but there’s some good stuff in here. One particularly crucial fact: "Answers are often obvious in design if you are asking the right questions, but sometimes finding the question is the tricky bit."

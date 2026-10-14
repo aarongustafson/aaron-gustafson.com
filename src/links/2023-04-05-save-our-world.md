@@ -8,6 +8,8 @@ twitter_text: "I wish I could have been at #CSUN to see @jenstrickland deliver t
 
 It’s about the potential and actual harms inherent in web design and how to address them in our work."
 ref_source: "Jen Strickland"
+meta_description: "I wish I could have been at CSUN to see Jen Strickland deliver this talk."
+social_description: "I wish I could have been at CSUN to see Jen Strickland deliver this talk. It’s about the potential and actual harms inherent in web design and how to address them in our work."
 ---
 
 I wish I could have been at CSUN to see Jen Strickland deliver this talk. It’s about the potential and actual harms inherent in web design and how to address them in our work.

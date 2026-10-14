@@ -6,6 +6,8 @@ ref_url: https://webkit.org/blog/14205/news-from-wwdc23-webkit-features-in-safar
 in_reply_to: https://webkit.org/blog/14205/news-from-wwdc23-webkit-features-in-safari-17-beta/
 twitter_text: "I’m very excited to see Apple roll out greater support for #PWAs in macOS Safari! "
 ref_source: "WebKit"
+meta_description: "I’m very excited to see Apple roll out greater support for PWAs (though I’d bet good money on them never using that term publicly) in macOS Safari!"
+social_description: "I’m very excited to see Apple roll out greater support for PWAs (though I’d bet good money on them never using that term publicly) in macOS Safari!"
 ---
 
 I’m very excited to see Apple roll out greater support for PWAs (though I’d bet good money on them never using that term publicly) in macOS Safari! I sincerely hope this is the beginning of many good things to come.

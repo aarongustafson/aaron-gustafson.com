@@ -10,6 +10,8 @@ description: "The reception for our latest script release , jsTrace , has been f
 canonical: "https://blog.easy-designs.net/archives/jstrace-two-days-on/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx662px2f"
 image: "/i/share-cards/jstrace-two-days-on.jpg"
+meta_description: "The reception for our latest script release, jsTrace, has been fantastic."
+social_description: "The reception for our latest script release, jsTrace, has been fantastic. From the write-up on the DOM Scripting Task Force blog to all of the emails and comments, it’s been great."
 ---
 
 <p>The reception for our <a href="/notebook/debugging-javascript-just-got-a-little-bit-easier/">latest script release</a>, <a href="http://www.easy-designs.net/code/jsTrace/"><code>jsTrace</code></a>, has been fantastic. From <a href="http://domscripting.webstandards.org/?p=28">the write-up on the DOM Scripting Task Force blog</a> to all of the emails and comments, it’s been great.</p>

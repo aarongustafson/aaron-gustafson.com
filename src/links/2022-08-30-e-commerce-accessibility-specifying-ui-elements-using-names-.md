@@ -6,6 +6,8 @@ ref_url: https://baymard.com/blog/names-accessibility
 in_reply_to: https://baymard.com/blog/names-accessibility
 twitter_text: "Great article from @Baymard, covering why your interactive components need to be named and a few different ways to do it. Applicable beyond shopping sites too."
 ref_source: "Baymard Institute"
+meta_description: "For users relying on assistive technology such as screen readers, it’s … critically important to have programmatically determined names identifying various UI."
+social_description: "For users relying on assistive technology such as screen readers, it’s critically important to have programmatically determined names identifying various UI elements."
 ---
 
 > For users relying on assistive technology such as screen readers, it’s … critically important to have programmatically determined names identifying various UI elements. … Doing so consistently with all interactive page elements will help ensure users using assistive technologies will be able to navigate through a site and complete a purchase successfully.

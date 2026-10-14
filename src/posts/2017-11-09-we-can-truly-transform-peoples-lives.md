@@ -6,6 +6,8 @@ tags: [accessibility, "inclusive design"]
 description: "At scenic overlooks throughout Tennessee, the state has installed special viewfinders capable of bringing the gorgeous yellows, oranges, and reds of Fall to people who are colorblind."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwcd3jo2e"
 image: "/i/share-cards/we-can-truly-transform-peoples-lives.jpg"
+meta_description: "Tennessee installed scenic-viewfinder filters that reveal autumn’s yellows, oranges, and reds to people who are colorblind."
+social_description: "At scenic overlooks throughout Tennessee, the state has installed special viewfinders capable of bringing the gorgeous yellows, oranges, and reds of Fall to people who are colorblind."
 ---
 
 Kelly, Oscar, and I are getting ready to head out for a long weekend up in Gatlinburg, TN to take a break from house selling insanity and kick off the celebration of our 16-year anniversary. We love the Fall, but not everyone is equipped to take in the awesome beauty of Fall foliage. Thankfully, Tennessee is doing something about that.

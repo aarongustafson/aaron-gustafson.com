@@ -5,6 +5,8 @@ comments: false
 ref_url: https://gist.github.com/paulirish/5d52fb081b3570c81e3a
 in_reply_to: https://gist.github.com/paulirish/5d52fb081b3570c81e3a
 ref_source: Paul Irish
+meta_description: "A good overview of layout and reflow triggers in JavaScript."
+social_description: "A good overview of layout and reflow triggers in JavaScript."
 ---
 
 A good overview of layout and reflow triggers in JavaScript. It’s worth noting that this resource can be made more complete with contributions from the WebKit and Microsoft Edge teams (hopefully forthcoming).

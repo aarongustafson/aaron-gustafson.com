@@ -9,6 +9,8 @@ ref_source: "Preply"
 via:
   name: "Meryl Evans"
   url: "https://twitter.com/merylkevans/status/1571874509501747200"
+meta_description: "I began turning on subtitles when my kiddo was born."
+social_description: "I began turning on subtitles when my kiddo was born. I spent a lot of time with him sleeping in my arms and wanted to be able to watch programs without waking him."
 ---
 
 I began turning on subtitles when my kiddo was born. I spent a lot of time with him sleeping in my arms and wanted to be able to watch programs without waking him. That translated to watching videos with the sound lower and the captions/subtitles on. Six years later, it’s become a fixture of how we watch as individuals and as a family.

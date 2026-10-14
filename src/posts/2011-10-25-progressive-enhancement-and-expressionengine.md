@@ -10,6 +10,8 @@ description: "This past week was a bit of a whirlwind as Kelly and I flew to DC 
 canonical: "https://blog.easy-designs.net/archives/progressive-enhancement-and-expressionengine/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwq3bnh25"
 image: "/i/share-cards/progressive-enhancement-and-expressionengine.jpg"
+meta_description: "This past week was a bit of a whirlwind as Kelly and I flew to DC for a few meetings and then to NYC for the ExpressionEngine CodeIgniter Conference."
+social_description: "This past week was a bit of a whirlwind as Kelly and I flew to DC for a few meetings and then to NYC for the ExpressionEngine CodeIgniter Conference."
 ---
 
 <p>

@@ -6,6 +6,8 @@ tags: ["progressive web apps", Android]
 ref_url: https://medium.com/@firt/android-oreo-takes-a-bite-out-of-progressive-web-apps-30b7e854648f
 in_reply_to: https://medium.com/@firt/android-oreo-takes-a-bite-out-of-progressive-web-apps-30b7e854648f
 ref_source: Maximiliano Firtman on Medium
+meta_description: "It seems like the Android team and the Chrome team were not on the same page and Android Oreo undermines some critical features of Progressive Web Apps."
+social_description: "It seems like the Android team and the Chrome team were not on the same page and Android Oreo (a.k.a., Android 8) undermines some critical features of Progressive Web Apps."
 ---
 
 It seems like the Android team and the Chrome team were not on the same page and Android Oreo (a.k.a., Android 8) undermines some critical features of Progressive Web Apps. As Maximiliano is quick to point out, most of these are easily fixable in a software update, so there’s not a whole lot of wailing and gnashing of teeth needed, but you should still be aware of how the experience differs from what users saw on the previous release.

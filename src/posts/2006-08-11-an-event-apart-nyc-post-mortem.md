@@ -10,6 +10,8 @@ description: "I know, I know, I haven’t posted anything in the aftermath of AE
 canonical: "https://blog.easy-designs.net/archives/an-event-apart-nyc-post-mortem/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwyl3pg2e"
 image: "/i/share-cards/an-event-apart-nyc-post-mortem.jpg"
+meta_description: "I know, I know, I haven’t posted anything in the aftermath of AEA - NYC."
+social_description: "I know, I know, I haven’t posted anything in the aftermath of AEA-NYC."
 ---
 
 <p><img alt=" " class="feature" src="http://static.flickr.com/56/136066759_17497fe37c_o.png"/></p>

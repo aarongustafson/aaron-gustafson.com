@@ -9,6 +9,8 @@ description: "I’ve been insanely busy building a new Rails app for a client an
 canonical: "https://blog.easy-designs.net/archives/playing-catch-up/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx7abhb2l"
 image: "/i/share-cards/playing-catch-up.jpg"
+meta_description: "I’ve been insanely busy building a new Rails app for a client and travelling a lot for speaking engagements."
+social_description: "I’ve been insanely busy building a new Rails app for a client and travelling a lot for speaking engagements."
 ---
 
 <p>I’ve been insanely busy building a new <a href="http://www.rubyonrails.org">Rails</a> app for a client and travelling a lot for speaking engagements. I just got back from an incredible trip to San Jose (well, Cupertino actually) where <a href="http://www.molly.com">Molly</a>, <a href="http://www.stuffandnonsense.co.uk">Andy</a> and I were doing some training. I had an amazing time with both of them and it was really fun to see Andy in action (I, unfortunately, did not have the peasure of seeing him rock the audience at <a href="http://www.atmedia2005.co.uk/">@media</a>). We had a really great group of conference attendees too. I am a little saddened that this was my last stop on the WOW tour (I am missing Hawaii as it takes place on election day, but more on that later), but I have heard some rumblings that the show may go back on the road for a European leg. Fingers crossed.</p>

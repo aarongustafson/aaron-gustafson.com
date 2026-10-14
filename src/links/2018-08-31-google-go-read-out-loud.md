@@ -6,6 +6,8 @@ tags: ["voice UX", automation]
 ref_url: https://www.engadget.com/2018/08/28/google-go-read-out-loud/
 in_reply_to: https://www.engadget.com/2018/08/28/google-go-read-out-loud/
 ref_source: Engadget
+meta_description: "I’m very interested in trying Google Go out as I want to check out the voice synthesis quality. Unfortunately it’s not available in the US."
+social_description: "I’m very interested in trying Google Go out as I want to check out the voice synthesis quality. Unfortunately it’s not available in the US. Can any of my Google friends hook me up?"
 ---
 
 I’m very interested in trying Google Go out as I want to check out the voice synthesis quality. Unfortunately it’s not available in the US. Can any of my Google friends hook me up?

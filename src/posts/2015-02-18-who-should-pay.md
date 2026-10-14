@@ -10,6 +10,8 @@ photo:
   source: https://www.flickr.com/photos/63863986@N04/9503663266/
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwjfzp72f"
 image: "/i/share-cards/who-should-pay.jpg"
+meta_description: "A closer look at who should pay—and how that choice distributes cost and responsibility."
+social_description: "A handful of conversations I’ve had lately have boiled down to the tradeoffs between what is more convenient for developers and what is more convenient for our customers."
 ---
 
 In more than a handful of conversations lately, it’s become quite clear that we, the web development community, are prioritizing our own convenience and our own time over that of our users. With our industry’s focus on “user-centered design”, you might find that hard to believe, but it’s true.

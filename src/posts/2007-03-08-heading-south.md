@@ -10,6 +10,8 @@ description: "Tomorrow morning I’ll be making my annual pilgrimage to SXSW (a.
 canonical: "https://blog.easy-designs.net/archives/heading-south/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwxvuvl2p"
 image: "/i/share-cards/heading-south.jpg"
+meta_description: "Tomorrow morning I’ll be making my annual pilgrimage to SXSW (a.k.a. geek camp)."
+social_description: "Tomorrow morning I’ll be making my annual pilgrimage to SXSW (a.k.a. geek camp)."
 ---
 
 <p>Tomorrow morning I’ll be making my annual pilgrimage to <a href="http://2007.sxsw.com/interactive/">SXSW</a> (a.k.a. geek camp). In between catching up with friends, drinking, and checking out some of the excellent panels, I will be co-presenting two 25-minute “power sessions,” a new format for the conference.</p>

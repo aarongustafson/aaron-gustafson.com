@@ -6,6 +6,8 @@ comments: false
 ref_url: https://radar.oreilly.com/2015/11/panels-and-panel-sets.html
 in_reply_to: https://radar.oreilly.com/2015/11/panels-and-panel-sets.html
 ref_source: "O’Reilly Radar"
+meta_description: "This is an interesting proposal for generic panel and panelset elements that would function well for marking up accordion, tabbed, and carousel interfaces."
+social_description: "This is an interesting proposal for generic panel and panelset (and paneltitle) elements that would function well for marking up accordion, tabbed, and carousel interfaces."
 ---
 
 This is an interesting proposal for generic `panel` and `panelset` (and `paneltitle`) elements that would function well for marking up accordion, tabbed, and carousel interfaces.

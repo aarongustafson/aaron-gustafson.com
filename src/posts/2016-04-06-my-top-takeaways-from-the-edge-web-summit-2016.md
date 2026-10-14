@@ -6,6 +6,8 @@ tags: [browsers, conferences]
 twitter_text: "My top takeaways from the 2016 Edge Web Summit: "
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwf4opo2e"
 image: "/i/share-cards/my-top-takeaways-from-the-edge-web-summit-2016.jpg"
+meta_description: "Earlier this week, my colleagues on the Microsoft Edge team put on the second of what has now become an annual event: the Edge Web Summit."
+social_description: "Earlier this week, my colleagues on the Microsoft Edge team put on the second of what has now become an annual event: the Edge Web Summit."
 ---
 
 Earlier this week, my colleagues on the Microsoft Edge team put on the second of what has now become an annual event: [the Edge Web Summit](https://web.archive.org/web/http://lanyrd.com/2016/edgesummit/). The format was a little different this year, with team members from across the organization delivering quick, punchy 30-minute talks on topics ranging from standard implementations to the user experience of a browser to real-time communications. I live-tweeted quite a few of the talks, but I thought I’d provide a bit of a round-up of what was revealed, discussed, and more so you can read it all in one place.

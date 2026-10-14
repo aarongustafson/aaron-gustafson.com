@@ -10,6 +10,8 @@ description: "If you work on the web at all, you need this book. It’s an amazi
 canonical: https://blog.easy-designs.net/archives/a-web-for-everyone/
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwnfmaw2e"
 image: "/i/share-cards/a-web-for-everyone.jpg"
+meta_description: "If you work on the web at all, you need this book."
+social_description: "If you work on the web at all, you need this book. It’s an amazingly easy read that brings humanity to an often dry subject and I am very thankful to have been a part of it."
 ---
 
 What follows is the foreword I wrote for [<cite>A Web For Everyone: Designing Accessible User Experiences</a>](http://rosenfeldmedia.com/books/a-web-for-everyone/) by Sarah Horton & Whitney Quesenbery. If you work on the web at all, you need this book. It’s an amazingly easy read that brings humanity to an often dry subject and I am very thankful to have been a part of it.

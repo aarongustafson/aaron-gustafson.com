@@ -6,6 +6,8 @@ tags: [mobile]
 redirect_from: /notebook/2014/searching-for-the-right-size/
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwml4zz2k"
 image: "/i/share-cards/searching-for-the-right-size.jpg"
+meta_description: "This recent piece from Wired attributes dwindling tablet sales to cannibalization from larger mobile phones which are nearly as big as 7-8˝ tablets."
+social_description: "A Wired piece connects dwindling tablet sales to larger phones—“phablets” nearly as big as 7–8˝ tablets—and our search for the “right” screen size."
 ---
 
 This [recent piece from <cite>Wired</cite>](https://www.wired.com/2014/07/what-a-stalling-tablet-market-says-about-our-search-for-the-perfect-screen/) attributes dwindling tablet sales to cannibalization from larger mobile phones (<abbr title="also known as">aka</abbr> “phablets”) which are nearly as big as 7-8˝ tablets:

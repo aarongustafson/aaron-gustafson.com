@@ -5,6 +5,8 @@ comments: false
 ref_url: https://section508.gov/home
 in_reply_to: https://section508.gov/home
 ref_source: Section508.gov
+meta_description: "Consolidating everything a government agency or other entity needs to know about Section 508 compliance was a good idea."
+social_description: "Consolidating everything a government agency or other entity needs to know about Section 508 compliance and contracting for accessible results was a good idea."
 ---
 
 Consolidating everything a government agency or other entity needs to know about Section 508 compliance and contracting for accessible results was a good idea. Hopefully the net result will be more accessible public websites here in the States.

@@ -10,6 +10,8 @@ description: "All this week, the Secretary of State’s office is offering demon
 canonical: "https://blog.easy-designs.net/archives/e-voting-options-for-ct-looking-bleak/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx5dpoh25"
 image: "/i/share-cards/e-voting-options-for-ct-looking-bleak.jpg"
+meta_description: "Connecticut’s electronic-voting options were looking bleak, so I dug into the available choices."
+social_description: "All this week, the Secretary of State’s office is offering demonstrations of and soliciting public comment on the three finalists for Connecticut’s electronic voting machines."
 ---
 
 <p>All this week, the Secretary of State’s office is offering demonstrations of and soliciting public comment on the three finalists for Connecticut’s electronic voting machines. The line was long at Monday’s demonstration at Buckland Hills Mall in Manchester (easily an hour wait), but well worth it to see what we’re in for when we return to the polls next year.</p>

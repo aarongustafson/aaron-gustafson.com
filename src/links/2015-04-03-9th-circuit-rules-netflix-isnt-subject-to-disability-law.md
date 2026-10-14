@@ -5,6 +5,8 @@ comments: false
 ref_url: https://arstechnica.com/tech-policy/2015/04/9th-circuit-rules-netflix-isnt-subject-to-disability-law/
 in_reply_to: https://arstechnica.com/tech-policy/2015/04/9th-circuit-rules-netflix-isnt-subject-to-disability-law/
 ref_source: Ars Technica
+meta_description: "So the 9th Circuit Court threw out an ADA suit against Netflix for a lack of captions."
+social_description: "So the 9th Circuit Court threw out an ADA suit against Netflix for a lack of captions."
 ---
 
 So the 9th Circuit Court threw out an ADA suit against Netflix for a lack of captions. To [Joe Mullin](https://arstechnica.com/author/joe-mullin/) of <cite>Ars</cite> it seemed like a question of whether a website constitutes a “public accommodation”, but I don't know that it does in this instance. I did agree with [<cite>NFB v. Target</cite>](https://en.wikipedia.org/wiki/National_Federation_of_the_Blind_v._Target_Corp), but this seems different.

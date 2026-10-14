@@ -6,6 +6,8 @@ ref_url: https://alistapart.com/article/breaking-out-of-the-box/
 in_reply_to: https://alistapart.com/article/breaking-out-of-the-box/
 twitter_text: "Make your PWA look more like an app by building your own titlebar. @patrickbrosset shows you how."
 ref_source: "A List Apart"
+meta_description: "Years ago we started thinking about how PWAs could extend their reach into the titlebar (like Electron apps can) and it's finally a reality!"
+social_description: "Years ago we started thinking about how PWAs could extend their reach into the titlebar (like Electron apps can) and it's finally a reality!"
 ---
 
 Years ago we started thinking about how PWAs could extend their reach into the titlebar (like Electron apps can) and it's finally a reality! Check out this deep dive from Patrick Brosset to learn how to do it with just a little bit of CSS and/or JavaScript.

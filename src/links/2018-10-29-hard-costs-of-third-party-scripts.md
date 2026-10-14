@@ -6,6 +6,8 @@ tags: [performance]
 ref_url: https://daverupert.com/2018/10/hard-costs-of-third-party-scripts/
 in_reply_to: https://daverupert.com/2018/10/hard-costs-of-third-party-scripts/
 ref_source: DaveRupert.com
+meta_description: "Dave has an excellent round-up of considerations when looking at your reliance on 3rd party scripts (or any 3rd party resources, for that matter)."
+social_description: "Dave has an excellent round-up of considerations when looking at your reliance on 3rd party scripts (or any 3rd party resources, for that matter)."
 ---
 
 Dave has an excellent round-up of considerations when looking at your reliance on 3rd party scripts (or any 3rd party resources, for that matter). Most are hidden and all have a serious effect on download performance, UI responsiveness, and, ultimately, user experience.

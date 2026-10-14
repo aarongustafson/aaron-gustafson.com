@@ -9,6 +9,8 @@ description: "In the interest of observing politics and activism online, I have 
 canonical: "https://blog.easy-designs.net/archives/another-political-divide/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx5ar3d2a"
 image: "/i/share-cards/another-political-divide.jpg"
+meta_description: "To observe online politics and activism, I subscribed to newsletters and action alerts spanning the ACLU, MoveOn, and the GOP."
+social_description: "In the interest of observing politics and activism online, I have signed up to receive numerous newsletters and “action alerts” from groups ranging from MoveOn and the ACLU to the GOP."
 ---
 
 <p>In the interest of observing politics and activism online, I have signed up to receive numerous newsletters and “action alerts” from groups ranging from <a href="http://www.moveon.org">MoveOn</a> and the <a href="http://www.aclu.org"><abbr title="American Civil Liberties Union">ACLU</abbr></a> to the <a href="http://www.gop.com"><abbr title="The Republican or ">GOP</abbr></a>. Politics aside, one thing I find very striking is how much freedom is given to an individual to add a personal message or rewrite a letter in support of or against a particular issue by the “left.” The “right,” however, does not seem to have any interest in their activists’ opinions.</p>

@@ -9,6 +9,8 @@ description: "After making a ridiculously stupid mistake by axing the server tha
 canonical: "https://blog.easy-designs.net/archives/were-back-sort-of/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwwnei22h"
 image: "/i/share-cards/were-back-sort-of.jpg"
+meta_description: "Easy! Reader is back—sort of—after I mistakenly axed the server before confirming the blog and its database backup had moved."
+social_description: "Easy! Reader is back—sort of—after I mistakenly axed the server before confirming the blog and its database backup had moved."
 ---
 
 <p>After making a ridiculously stupid mistake by axing the server that hosted this blog (without checking that I had actually moved it to the new server and without making sure I had a backup of the DB), Easy! Reader is back. Sort of. Thankfully, I had a backup from late ‘06 and I haven’t been an incredibly prolific blogger in the time since that backup. And, thanks to the Internet Archive, it looks like we should be able to recover all but one article (my last post, from about a year ago) from the ether. It may take a little time, but we should have it all up in the next few weeks.</p>

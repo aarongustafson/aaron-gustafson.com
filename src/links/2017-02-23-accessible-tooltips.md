@@ -5,6 +5,8 @@ comments: false
 ref_url: https://sarasoueidan.com/blog/accessible-tooltips/
 in_reply_to: https://sarasoueidan.com/blog/accessible-tooltips/
 ref_source: Sara Soueidan
+meta_description: "Robust interfaces take thought, research, and testing. Thankfully, Sara shares what she learned so others can follow her lead."
+social_description: "Robust interfaces take thought, research, and testing. Thankfully, Sara shares what she learned so others can follow her lead."
 ---
 
 It takes a lot of thoughtful consideration, research, and testing to build robust interfaces, but once that work is done, you can share your findings and make it simple for others to follow in your footsteps. Sara has kindly done the hard work here and has lovingly provided you with a guided tour on how to make an accessible help tooltip. Thank you Sara!

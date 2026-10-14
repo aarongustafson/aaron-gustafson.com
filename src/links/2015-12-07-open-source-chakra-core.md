@@ -5,6 +5,8 @@ comments: false
 ref_url: https://blogs.windows.com/msedgedev/2015/12/05/open-source-chakra-core/
 in_reply_to: https://blogs.windows.com/msedgedev/2015/12/05/open-source-chakra-core/
 ref_source: Microsoft Edge Dev Blog
+meta_description: "I don’t know the first thing about writing C++ or building a JavaScript parser, but I think this is a really cool thing for Microsoft to do."
+social_description: "I don’t know the first thing about writing C++ or building a JavaScript parser, but I think this is a really cool thing for Microsoft to do. Seeing stuff like this makes me very happy to work there."
 ---
 
 I don’t know the first thing about writing C++ or building a JavaScript parser, but I think this is a really cool thing for Microsoft to do. Seeing stuff like this makes me very happy to work there.

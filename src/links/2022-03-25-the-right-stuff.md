@@ -6,6 +6,8 @@ ref_url: https://www.wnycstudios.org/podcasts/radiolab/articles/right-stuff
 in_reply_to: https://www.wnycstudios.org/podcasts/radiolab/articles/right-stuff
 twitter_text: "Would people who are disabled here on Earth make excellent astronauts? Dr. Sheri Wells-Jensen thinks they could."
 ref_source: "Radiolab"
+meta_description: "Would people who are disabled here on Earth make excellent astronauts? Dr. Sheri Wells-Jensen thinks they could."
+social_description: "Would people who are disabled here on Earth make excellent astronauts? Dr. Sheri Wells-Jensen thinks they could."
 ---
 
 Would people who are disabled here on Earth make excellent astronauts? Dr. Sheri Wells-Jensen thinks they could. This episode of [Radiolab](https://www.wnycstudios.org/podcasts/radiolab/) takes zero-gravity flight with a host of people with disabilities to explore that question.

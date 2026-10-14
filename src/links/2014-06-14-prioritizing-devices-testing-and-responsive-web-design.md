@@ -5,6 +5,8 @@ comments: false
 ref_url: https://www.smashingmagazine.com/2014/07/14/testing-and-responsive-web-design/
 in_reply_to: https://www.smashingmagazine.com/2014/07/14/testing-and-responsive-web-design/
 ref_source: Smashing Magazine
+meta_description: "Try to support as many browsers as possible, but realize that a small group of browsers and devices drive most of your traffic."
+social_description: "While you should try to support as large a proportion of your audience as possible, your analytics will show that a small group of browsers and devices make up the majority of your traffic."
 ---
 
 > While you should try to support as large a proportion of your audience as possible, your analytics will show that a small group of browsers and devices make up the majority of your traffic, while the rest are a long tail of obscure browsers and devices. Take advantage of this.

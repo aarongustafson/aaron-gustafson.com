@@ -5,6 +5,8 @@ comments: false
 ref_url: https://sofoarchon.com/existential-depression-in-gifted-children/
 in_reply_to: https://sofoarchon.com/existential-depression-in-gifted-children/
 ref_source: The Unbounded Spirit
+meta_description: "This article explains the root causes of existential depression (which is not just a childhood issue) and how to help people cope with it."
+social_description: "Well written and helpful, this article explains the root causes of existential depression (which is not just a childhood issue) and how to help people cope with it."
 ---
 
 Well written and helpful, this article explains the root causes of existential depression (which is not just a childhood issue) and how to help people cope with it.

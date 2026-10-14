@@ -6,6 +6,8 @@ tags: ["the web", hazards]
 ref_url: https://motherboard.vice.com/en_us/article/paabgg/i-bought-a-book-about-the-internet-from-1994-and-none-of-the-links-worked
 in_reply_to: https://motherboard.vice.com/en_us/article/paabgg/i-bought-a-book-about-the-internet-from-1994-and-none-of-the-links-worked
 ref_source: Motherboard
+meta_description: "A tale of woe as old as… well, the Web. The Web is mutable. Content disappears, for good and for bad."
+social_description: "A tale of woe as old as… well, the Web. The Web is mutable. Content disappears, for good and for bad. This is part of the reason projects like Archive.org and Perma.cc excite me so much."
 ---
 
 A tale of woe as old as… well, the Web. The Web is mutable. Content disappears, for good and for bad. This is part of the reason projects like [Archive.org](https://archive.org/web/) and [Perma.cc](https://perma.cc/) excite me so much. It’s also why [I chose to use Perma.cc to archive every site referenced in my book](https://aarongustafson.github.io/notebook/avoiding-linkrot-in-print-with-the-help-of-perma-dot-cc/).

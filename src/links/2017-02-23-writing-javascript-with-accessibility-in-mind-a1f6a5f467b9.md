@@ -6,6 +6,8 @@ comments: false
 ref_url: https://medium.com/@matuzo/writing-javascript-with-accessibility-in-mind-a1f6a5f467b9
 in_reply_to: https://medium.com/@matuzo/writing-javascript-with-accessibility-in-mind-a1f6a5f467b9
 ref_source: Manuel Matuzovic on Medium
+meta_description: "This is an excellent introduction to some of the things you should be considering when writing JavaScript."
+social_description: "This is an excellent introduction to some of the things you should be considering when writing JavaScript. There is tons of practical and actionable advice in here."
 ---
 
 This is an excellent introduction to some of the things you should be considering when writing JavaScript. There is tons of practical and actionable advice in here.

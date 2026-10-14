@@ -6,6 +6,8 @@ comments: false
 ref_url: https://inside.hopwork.com/les-defis-du-progressive-enhancement/
 in_reply_to: https://inside.hopwork.com/les-defis-du-progressive-enhancement/
 hreflang: fr
+meta_description: "This is a nice overview (in French) of how Hopwork handles progressive enhancement in their SaaS product."
+social_description: "This is a nice overview (in French) of how Hopwork handles progressive enhancement in their SaaS product. Their back-end is Java too."
 ---
 
 This is a nice overview (in French) of how [Hopwork](https://www.hopwork.com) handles progressive enhancement in their SaaS product. Their back-end is Java too. It’s nice to see folks talking about how to progressively enhance products in that language; we don’t hear about that often enough.

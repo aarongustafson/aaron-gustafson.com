@@ -7,6 +7,8 @@ in_reply_to: https://www.sarawb.com/2015/01/13/personal-histories/
 ref_source: Sara Wachter-Boettcher
 is_404: true
 archived: https://web.archive.org/web/20190427094359/http://www.sarawb.com/2015/01/13/personal-histories/
+meta_description: "This is a beautiful post from Sara that takes a deep dive into the impersonal nature of forms."
+social_description: "This beautiful post from Sara takes a deep dive into the impersonal nature of forms—and how lives are so much messier than a form field."
 ---
 
 This is a beautiful post from Sara that takes a deep dive into the impersonal nature of forms. I could not put it more beautifully and succinctly than her introductory tweet:

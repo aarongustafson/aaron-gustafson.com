@@ -5,6 +5,8 @@ comments: false
 ref_url: https://bradfrost.com/blog/post/interface-inventory/
 in_reply_to: https://bradfrost.com/blog/post/interface-inventory/
 ref_source: Brad Frost’s Blog
+meta_description: "An interface inventory is similar to a content inventory, only instead of sifting through and categorizing content, you’re taking stock."
+social_description: "An interface inventory is similar to a content inventory, only instead of sifting through and categorizing content, you’re taking stock and categorizing the components making up your website, app."
 ---
 
 > An interface inventory is similar to a content inventory, only instead of sifting through and categorizing content, you’re taking stock and categorizing the components making up your website, app, intranet, hoobadyboop, or whatever (it doesn’t matter).

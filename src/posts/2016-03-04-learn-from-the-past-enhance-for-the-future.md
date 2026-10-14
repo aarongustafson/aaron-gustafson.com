@@ -9,6 +9,8 @@ twitter_text: "In case you missed it, here’s a written version of my #EnhanceC
 description: "I had the great pleasure of delivering the closing keynote for the first EnhanceConf. I wanted to talk about voice and the future of “headless” user interfaces. Here’s what I had to say."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwfhbs32g"
 image: "/i/share-cards/learn-from-the-past-enhance-for-the-future.jpg"
+meta_description: "I had the great pleasure of delivering the closing keynote for the first EnhanceConf. I wanted to talk about voice and the future of “headless” user interfaces."
+social_description: "I had the great pleasure of delivering the closing keynote for the first EnhanceConf. I wanted to talk about voice and the future of “headless” user interfaces. Here’s what I had to say."
 ---
 
 _I had the great pleasure of delivering the closing keynote for the first EnhanceConf. I wanted to talk about voice and the future of “headless” user interfaces. Here’s what I had to say._

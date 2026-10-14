@@ -8,6 +8,8 @@ description: "Apologies for not posting links last week…between the holiday on
 canonical: "https://blog.easy-designs.net/archives/now-read-this-9/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwqf6m22w"
 image: "/i/share-cards/now-read-this-9.jpg"
+meta_description: "Apologies for not posting links last week…between the holiday on Monday and spending all of Tuesday without power, I got a little behind."
+social_description: "A holiday and a day-long power outage put me behind, so this roundup gathers the highlights from the last two weeks."
 ---
 
 <p>Apologies for not posting links last week…between the holiday on Monday and spending all of Tuesday without power, I got a little behind. Here are some highlights from the last two weeks:</p>

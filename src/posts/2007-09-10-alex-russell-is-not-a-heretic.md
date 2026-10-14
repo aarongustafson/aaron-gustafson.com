@@ -9,6 +9,8 @@ description: "First off, let me preface this by saying I just got back to the Ea
 canonical: "https://blog.easy-designs.net/archives/alex-russell-is-not-a-heretic/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwwwyzl2a"
 image: "/i/share-cards/alex-russell-is-not-a-heretic.jpg"
+meta_description: "I had just returned to the East Coast on a red-eye from San Francisco, which may explain any incoherence."
+social_description: "First off, let me preface this by saying I just got back to the East Coast after catching a red-eye from San Francisco on Saturday night, so if I seem a bit incoherent, that’s likely why."
 ---
 
 <p>First off, let me preface this by saying I just got back to the East Coast after catching a red-eye from San Francisco on Saturday night, so if I seem a bit incoherent, that’s likely why.</p>

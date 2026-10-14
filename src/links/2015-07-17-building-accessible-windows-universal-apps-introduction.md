@@ -5,6 +5,8 @@ comments: false
 ref_url: https://blogs.msdn.com/b/winuiautomation/archive/2015/07/14/building-accessible-windows-universal-apps-introduction.aspx
 in_reply_to: https://blogs.msdn.com/b/winuiautomation/archive/2015/07/14/building-accessible-windows-universal-apps-introduction.aspx
 ref_source: Microsoft Windows UI Automation Blog
+meta_description: "If you happen to be building a Windows Universal app, I just stumbled on this awesome series of posts with invaluable advice for making it more accessible."
+social_description: "If you happen to be building a Windows Universal app (or know someone who is), I just stumbled on this awesome series of posts with invaluable advice for making it more accessible."
 ---
 
 If you happen to be building a Windows Universal app (or know someone who is), I just stumbled on this awesome series of posts with invaluable advice for making it more accessible.

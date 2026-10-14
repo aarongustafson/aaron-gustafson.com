@@ -8,6 +8,8 @@ description: "A useful look at GitHub’s accessibility agent experiment and a n
 twitter_text: "A useful look at GitHub’s accessibility agent experiment and what it takes to make these systems genuinely helpful rather than merely busy."
 ref_url: https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process/
 in_reply_to: https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process/
+meta_description: "What we learned while building a general-purpose accessibility agent."
+social_description: "A useful look at GitHub’s accessibility agent experiment and a nice complement to my recent posts on accessibility data gaps in codegen models and optimizing codebases for AI coding agents."
 ---
 
 This post is a detailed and useful look at GitHub’s accessibility agent experiment.

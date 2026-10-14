@@ -8,6 +8,8 @@ description: "A sobering but necessary reminder that the open web’s current cr
 twitter_text: "This is a tough read, but an important one: the attacks on the open web are not abstract anymore."
 ref_url: https://www.anildash.com/2026/03/27/endgame-open-web/
 in_reply_to: https://www.anildash.com/2026/03/27/endgame-open-web/
+meta_description: "A sobering look at what an endgame for the open web might entail."
+social_description: "A sobering but necessary reminder that the open web’s current crisis is not theoretical; it’s already playing out across publishing, open source, standards, and shared infrastructure."
 ---
 
 This is a sobering but necessary reminder that the open web’s current crisis is not theoretical; it’s already playing out across publishing, open source, standards, and shared infrastructure.

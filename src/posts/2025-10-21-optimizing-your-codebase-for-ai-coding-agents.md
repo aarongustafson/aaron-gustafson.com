@@ -12,6 +12,8 @@ hero:
   orientation: landscape
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw25got2g"
 image: "/i/share-cards/optimizing-your-codebase-for-ai-coding-agents.jpg"
+meta_description: "By looking at how a model reasons over a codebase to solve tasks, I found ways to help it reduce wasted time."
+social_description: "By looking at how a model reasons over a codebase to solve tasks, I found ways to help it — as well as the human engineers working in the same project — reduce wasted time."
 ---
 
 I’ve been playing around a bit with GitHub Copilot as an autonomous agent to help with software development. The results have been mixed, but positive overall. I made an interesting discovery when I took the time to read through the agent’s reasoning over a particular task. I thought the task was straightforward, but I was wrong. Watching the agent work was like watching someone try to navigate an unfamiliar room, in complete darkness, with furniture and Lego bricks scattered everywhere.

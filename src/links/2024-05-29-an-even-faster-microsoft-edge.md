@@ -6,6 +6,8 @@ ref_url: https://blogs.windows.com/msedgedev/2024/05/28/an-even-faster-microsoft
 in_reply_to: https://blogs.windows.com/msedgedev/2024/05/28/an-even-faster-microsoft-edge/
 twitter_text: "Progressive enhancement for the win! This post from the Edge team demonstrates that producing markup directly rather than relying on JavaScript to do it for you is faster — even in the browser UI!"
 ref_source: "Microsoft Edge Blog"
+meta_description: "Progressive enhancement for the win!"
+social_description: "Progressive enhancement for the win! This post from the Edge team demonstrates that producing markup directly rather than relying on JavaScript to do it for you is faster — even in the browser UI!"
 ---
 
 Progressive enhancement for the win! This post from the Edge team demonstrates that producing markup directly rather than relying on JavaScript to do it for you is faster — even in the browser UI!

@@ -8,6 +8,8 @@ description: "Cory Doctorow offers a characteristically sharp critique of the AI
 twitter_text: "This is a sharp and useful read from Cory Doctorow, especially his framing of workers being turned into ‘reverse centaurs’ and accountability sinks."
 ref_url: https://www.theguardian.com/us-news/ng-interactive/2026/jan/18/tech-ai-bubble-burst-reverse-centaur
 in_reply_to: https://www.theguardian.com/us-news/ng-interactive/2026/jan/18/tech-ai-bubble-burst-reverse-centaur
+meta_description: "Cory Doctorow sharply critiques the AI bubble and, more usefully, explains how companies intend to deploy these systems."
+social_description: "Cory Doctorow sharply critiques the AI bubble and, more usefully, explains how companies intend to deploy these systems."
 ---
 
 Cory Doctorow offers a characteristically sharp critique of the AI bubble, but what I found most useful here is his framing of how these systems are actually meant to be deployed: not to empower workers, but to turn them into “reverse centaurs.”

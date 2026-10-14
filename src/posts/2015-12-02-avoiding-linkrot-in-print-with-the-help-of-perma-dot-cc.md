@@ -8,6 +8,8 @@ crossposted:
   Medium: https://medium.com/@AaronGustafson/avoiding-link-rot-in-print-with-the-help-of-perma-cc-412d93d818a2
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwfxw622h"
 image: "/i/share-cards/avoiding-linkrot-in-print-with-the-help-of-perma-dot-cc.jpg"
+meta_description: "While writing the second edition of Adaptive Web Design, I realized some printed links would inevitably rot."
+social_description: "When I was mid-way through writing the Second Edition of Adaptive Web Design, I realized that it was pretty likely some of the links I was referencing might disappear over the years."
 ---
 
 I think we can all agree, [link rot](https://en.wikipedia.org/wiki/Link_rot) is a problem. A 2014 study by Harvard Law School determined that [roughly 50% of the URLs referenced in U.S. Supreme Court opinions no longer work](http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=9282809&fileId=S1472669614000255/). That’s _terrifying_.

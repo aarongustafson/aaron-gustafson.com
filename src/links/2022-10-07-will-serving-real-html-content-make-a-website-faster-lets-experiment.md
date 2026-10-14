@@ -6,6 +6,8 @@ ref_url: https://blog.webpagetest.org/posts/will-html-content-make-site-faster/
 in_reply_to: https://blog.webpagetest.org/posts/will-html-content-make-site-faster/
 twitter_text: "Loving @scottjehl’s in-depth performance comparison between serving HTML and JavaScript that builds HTML. No surprise: HTML wins every time."
 ref_source: "WebPageTest Blog"
+meta_description: "When you’ve worked on the web for as long as I have, you see trends come and go."
+social_description: "When you’ve worked on the web for as long as I have, you see trends come and go."
 ---
 
 When you’ve worked on the web for as long as I have, you see trends come and go. I’ve witnessed at least three different eras where folks began to put all their eggs in the JavaScript basket, only to realize the massive hits they were taking to performance.

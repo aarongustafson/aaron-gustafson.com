@@ -10,6 +10,8 @@ description: "While working on a new site, I started playing around a little mor
 canonical: "https://blog.easy-designs.net/archives/png-color-oddities-in-ie/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx32ptb2n"
 image: "/i/share-cards/png-color-oddities-in-ie.jpg"
+meta_description: "While working on a new site, I started playing around a little more with 8-bit PNG files, comparing them to GIFs."
+social_description: "While working on a new site, I started playing around a little more with 8-bit PNG files, comparing them to GIFs."
 ---
 
 <p>While working on a new site, I started playing around a little more with 8-bit <abbr title="Portable Network Graphics">PNG</abbr> files, comparing them to GIFs. In a few cases the <abbr title="Portable Network Graphics">PNG</abbr> was smaller (it didn’t used to be that way, but perhaps Photoshop CS2 does a better job of compressing <abbr title="Portable Network Graphics">PNG</abbr> files or something), so used it. All was good until I started testing the design in <abbr title="Internet Explorer">IE</abbr>, where the colors were all off. Here’s a breakdown of how the same graphic (placed as a CSS background image against a background color equal to its own background color) rendered between the two browsers: <img alt="PNG comparison between Firefox 1.5 and Internet Explorer 6/7B2" src="/i/posts/2006-02-18/png_compare.png" style="margin: 1em auto 0pt; display: block; width: 400px;"/></p>

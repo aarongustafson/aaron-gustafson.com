@@ -8,6 +8,8 @@ twitter_text: "A lot of us came up on the web *before* JavaScript was available 
 
 Heck, a couple of us were there for the first couple of attempts too. Do you remember Jaxer? JsExt? Rhino?"
 ref_source: "Adactio"
+meta_description: "Some thoughts on JavaScript, how we use it, and the trade-offs that come with those choices."
+social_description: "When we old timers bemoan developers’ overreliance on JavaScript, we are coming at it from the perspective of folks who were building for the web before JavaScript was a server-side thing."
 ---
 
 When we old timers bemoan developers’ overreliance on JavaScript, we are coming at it from the perspective of folks who were building for the web _before_ JavaScript was a server-side thing.

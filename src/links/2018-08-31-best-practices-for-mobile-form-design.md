@@ -6,6 +6,8 @@ tags: [forms, "user experience", accessibility]
 ref_url: https://www.smashingmagazine.com/2018/08/best-practices-for-mobile-form-design/
 in_reply_to: https://www.smashingmagazine.com/2018/08/best-practices-for-mobile-form-design/
 ref_source: Smashing Magazine
+meta_description: "An exhaustive (and kinda overwhelming) look at best practices for form design in general. I wouldn’t even add \"mobile\" as an adjective."
+social_description: "An exhaustive (and kinda overwhelming) look at best practices for form design in general. I wouldn’t even add \"mobile\" as an adjective. Good advice all around for accessibility and usability."
 ---
 
 An exhaustive (and kinda overwhelming) look at best practices for form design in general. I wouldn’t even add "mobile" as an adjective. Good advice all around for accessibility and usability.

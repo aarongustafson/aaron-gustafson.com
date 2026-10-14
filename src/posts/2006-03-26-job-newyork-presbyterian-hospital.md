@@ -9,6 +9,8 @@ description: "The fine follks over at NewYork-Presbyterian Hospital are looking 
 canonical: "https://blog.easy-designs.net/archives/job-newyork-presbyterian-hospital/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx2hbwj2k"
 image: "/i/share-cards/job-newyork-presbyterian-hospital.jpg"
+meta_description: "The fine follks over at NewYork-Presbyterian Hospital are looking for a designer/developer to join their 5-person Intranet team."
+social_description: "The fine follks over at NewYork-Presbyterian Hospital are looking for a designer/developer to join their 5-person Intranet team."
 ---
 
 <!--

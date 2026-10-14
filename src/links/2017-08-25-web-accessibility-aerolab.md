@@ -6,6 +6,8 @@ tags: [accessibility, "web design", "web development"]
 ref_url: https://aerolab.co/blog/web-accessibility/
 in_reply_to: https://aerolab.co/blog/web-accessibility/
 ref_source: Aerolab
+meta_description: "A good rough guide to improving your site’s accessibility."
+social_description: "A good rough guide to beefing up your site’s accessibility. I’m not sure I agree with the timings she allotted for each task as those really depend on the site, but the list is solid overall."
 ---
 
 A good rough guide to beefing up you site’s accessibility. I’m not sure I agree with the timings she allotted for each task as those really depend on the site, but the list is solid overall.

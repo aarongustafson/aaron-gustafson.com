@@ -8,6 +8,8 @@ ref_source: "DEV Community 👩‍💻👨‍💻"
 via:
   name: "Jeremy Keith"
   url: "https://adactio.com/links/15583"
+meta_description: "“We are building toilets with world-class plumbing that people can't then sit on.”"
+social_description: "“We are building toilets with world-class plumbing that people can't then sit on. And the people who know how to fix the toilets have no clue how to fit a toilet into our plumbing.”"
 ---
 
 > We are building toilets with world-class plumbing that people can't then sit on. And the people who know how to fix the toilets have no clue how to fit a toilet into our plumbing.

@@ -11,6 +11,8 @@ series:
   ordinal: "15th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwafnzd2a"
 image: "/i/share-cards/lizzo-is-all-about-self-acceptance-and-empowerment.jpg"
+meta_description: "Lizzo’s message of self-acceptance and empowerment resonated with my own experience of body-image struggles and body shaming."
+social_description: "As someone who has struggled with my own body image issues—including dealing with a decent amount of body shaming—I’ve found her ability to find beauty in everyone—including herself—inspirational."
 ---
 
 I can’t remember exactly when I discovered [Lizzo](https://twitter.com/lizzo), but I do remember how refreshing I found [her work](https://www.youtube.com/playlist?list=PLbHR-EqT3TYTcc4jWKxZLxhQSRwszuOVx). A self-professed “big girl with a cute face,” Lizzo is incredibly empowered and comfortable in her own skin. Having struggled with my own body image issues—including dealing with a decent amount of body shaming—I’ve found her ability to find beauty in everyone—including herself—inspirational.

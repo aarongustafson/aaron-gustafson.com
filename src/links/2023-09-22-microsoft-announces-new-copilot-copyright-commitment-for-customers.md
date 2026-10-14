@@ -6,6 +6,8 @@ ref_url: https://blogs.microsoft.com/on-the-issues/2023/09/07/copilot-copyright-
 in_reply_to: https://blogs.microsoft.com/on-the-issues/2023/09/07/copilot-copyright-commitment-ai-legal-concerns/
 twitter_text: "I can’t help but wonder how this squares with AI-generated content not being copyrightable."
 ref_source: "Microsoft On the Issues"
+meta_description: "I appreciate Microsoft standing behind its AI, but I wonder how that squares with the U.S. Copyright Office’s ruling on prompt-generated content."
+social_description: "While I really appreciate Microsoft standing behind the AI it’s deploying, I do wonder how this squares with the U.S. Copyright Office’s ruling that prompt-generated content isn’t copyrightable."
 ---
 
 While I really appreciate Microsoft standing behind the AI it’s deploying, I do wonder how this squares with [the U.S. Copyright Office’s ruling that prompt-generated content isn’t copyrightable](https://www.federalregister.gov/documents/2023/03/16/2023-05321/copyright-registration-guidance-works-containing-material-generated-by-artificial-intelligence).

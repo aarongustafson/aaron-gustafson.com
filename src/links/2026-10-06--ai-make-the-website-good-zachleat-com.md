@@ -6,6 +6,8 @@ ref_url: https://www.zachleat.com/web/ai-websites/
 in_reply_to: https://www.zachleat.com/web/ai-websites/
 twitter_text: "I’ve spent the better part of the last 2 years both using coding models and trying to help these models deliver higher quality code and I honestly could not agree more with Zach here…"
 ref_source: "Zach Leatherman"
+meta_description: "Zach Leatherman examines what happens when we ask AI to “make the website good.”"
+social_description: "I’ve spent the better part of the last 2 years both using coding models and trying to help these models deliver higher quality code and I honestly could not agree more with Zach here."
 ---
 
 I’ve spent the better part of the last 2 years both using coding models and trying to help these models deliver higher quality code and I honestly could not agree more with Zach here:

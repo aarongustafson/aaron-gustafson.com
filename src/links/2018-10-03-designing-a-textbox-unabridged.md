@@ -6,6 +6,8 @@ tags: [forms, "progressive enhancement"]
 ref_url: https://www.smashingmagazine.com/2018/09/designing-a-textbox-unabridged/
 in_reply_to: https://www.smashingmagazine.com/2018/09/designing-a-textbox-unabridged/
 ref_source: Smashing Magazine
+meta_description: "This is a super-detailed post about building a `<textarea>` with feedback about how much you’ve written in it, relative to the defined `maxlength`."
+social_description: "This super-detailed post explains how to build a `<textarea>` that reports progress toward `maxlength`, with sensible helper text, a JavaScript enhancement, and a non-JavaScript fallback."
 ---
 
 This is a super-detailed post about building a `textarea` with feedback about how much you’ve written in it, relative to the defined `maxlength`. There are some great recommendations here, especially:

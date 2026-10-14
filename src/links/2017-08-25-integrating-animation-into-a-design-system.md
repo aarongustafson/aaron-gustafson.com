@@ -6,6 +6,8 @@ tags: ["user experience", animation]
 ref_url: https://alistapart.com/article/integrating-animation-into-a-design-system
 in_reply_to: https://alistapart.com/article/integrating-animation-into-a-design-system
 ref_source: A List Apart
+meta_description: "An excellent (and exhaustive) look at how how animation can be integrated into style guides and pattern libraries."
+social_description: "An excellent (and exhaustive) look at how how animation can be integrated into style guides and pattern libraries. It includes excellent examples from FutureLearn, Google, Marvel, SalesForce."
 ---
 
 An excellent (and exhaustive) look at how how animation can be integrated into style guides and pattern libraries. It includes excellent examples from FutureLearn, Google, Marvel, SalesForce.

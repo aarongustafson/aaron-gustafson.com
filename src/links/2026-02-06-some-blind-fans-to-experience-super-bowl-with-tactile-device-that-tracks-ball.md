@@ -6,6 +6,8 @@ ref_url: https://apnews.com/article/nfl-blind-fans-super-bowl-6daf12a08127c46c23
 in_reply_to: https://apnews.com/article/nfl-blind-fans-super-bowl-6daf12a08127c46c23dab6100a659681
 twitter_text: "So proud of the OneCourt team for their work in bringing more leisure opportunities to the Blind & low vision community."
 ref_source: "AP News"
+meta_description: "A few years ago, a couple students at the University of Washington asked me to come to their campus for a visit."
+social_description: "A few years ago, a couple students at the University of Washington asked me to come to their campus for a visit."
 ---
 
 A few years ago, a couple students at the University of Washington asked me to come to their campus for a visit. They gave me a demo of an early prototype they’d been working on — a haptic feedback device that could allow someone who is Blind or low vision to follow a game. The demo took video data from a tennis match and mapped it onto the haptic tablet. It felt like Pong, but they had a bolder vision — tackling fast-moving and complicated sports like basketball, football, American football, and hockey.

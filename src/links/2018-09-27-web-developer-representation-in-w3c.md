@@ -6,6 +6,8 @@ tags: ["web standards"]
 ref_url: https://alistapart.com/article/web-developer-representation-in-w3c
 in_reply_to: https://alistapart.com/article/web-developer-representation-in-w3c
 ref_source: A List Apart
+meta_description: "One thing I’ve always felt was missing from the W3C process was input from real web designers and developers."
+social_description: "One thing I’ve always felt was missing from the W3C process was input from real web designers and developers."
 ---
 
 One thing I’ve always felt was missing from the W3C process was input from real web designers and developers. Sure, a handful of us have been tapped to join specific workign groups as “invited experts,” but they have been few and far between. And few designers and developers have the piles of cash laying about that are required to join the W3C.

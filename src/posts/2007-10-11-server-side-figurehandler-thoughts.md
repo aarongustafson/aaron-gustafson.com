@@ -9,6 +9,8 @@ description: "In reaction to my latest article for A List Apart , on FigureHandl
 canonical: "https://blog.easy-designs.net/archives/server-side-figurehandler-thoughts/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwwtlp22h"
 image: "/i/share-cards/server-side-figurehandler-thoughts.jpg"
+meta_description: "In reaction to my latest article for A List Apart, on FigureHandler, many folks have boldly claimed that this sort of thing should be done server-side."
+social_description: "In reaction to my latest article for A List Apart, on FigureHandler, many folks have boldly claimed that this sort of thing should be done server-side."
 ---
 
 <p>In reaction to <a href="http://www.alistapart.com/articles/figurehandler/">my latest article for A List Apart</a>, on <a href="http://code.google.com/p/easy-designs/wiki/FigureHandler">FigureHandler</a>, many folks have <a href="http://www.alistapart.com/comments/figurehandler?page=1#8">boldly claimed that this sort of thing</a> <a href="http://www.alistapart.com/comments/figurehandler?page=2#17">should be done server-side</a>. Below are my thoughts on the matter as posted as a comment in <a href="http://www.alistapart.com/comments/figurehandler/">the article’s discussion thread</a>.</p>

@@ -10,6 +10,8 @@ series:
   ordinal: "2nd"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwbosjc2l"
 image: "/i/share-cards/ive-learned-so-much-from-chenjerai-kumanyika.jpg"
+meta_description: "Across Uncivil, “Seeing White,” and his social posts, Chenjerai Kumanyika shares clear, thoughtful lessons about race in America."
+social_description: "From Uncivil to “Seeing White” to his Twitter feed, Chenjerai drops thoughtful and matter-of-fact knowledge about race in America and I can’t thank him enough for this work."
 ---
 
 If you aren’t a podcast nerd like me, you may not be familiar with the name [Chenjerai Kumanyika](https://twitter.com/catchatweetdown). My first introduction to his thoughtful and matter-of-fact approach to race relations, Black history, and more came when I started listening to the [Uncivil podcast](https://www.gimletmedia.com/uncivil).

@@ -5,6 +5,8 @@ comments: false
 ref_url: https://www.fastcodesign.com/3057483/the-next-big-tech-revolution-will-be-in-your-ear
 in_reply_to: https://www.fastcodesign.com/3057483/the-next-big-tech-revolution-will-be-in-your-ear
 ref_source: Fast Company Design
+meta_description: "A look at why the next big technology revolution may happen in your ear."
+social_description: "I’ve said it before and I’ll say it again: Every experience is a conversation and those who design for that now will be well-positioned to succeed in the future of “headless UIs”."
 ---
 
 [I’ve said it before](https://www.aaron-gustafson.com/notebook/learn-from-the-past-enhance-for-the-future/#ii-interface-is-conversation) and I’ll say it again: Every experience is a conversation and those who design for that now will be well-positioned to succeed in the future of “headless UIs”.

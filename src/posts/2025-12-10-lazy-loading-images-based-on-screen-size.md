@@ -15,6 +15,8 @@ description: "The lazy-img web component goes beyond native lazy loading and src
 twitter_text: "Want to skip loading images entirely on mobile? Here’s a web component that does just that."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvzxszh2w"
 image: "/i/share-cards/lazy-loading-images-based-on-screen-size.jpg"
+meta_description: "The `<lazy-img>` web component can skip images on small screens entirely, saving bandwidth where it matters most."
+social_description: "The `<lazy-img>` web component goes beyond native lazy loading and srcset—it can completely skip loading images on small screens, saving bandwidth where it matters most."
 ---
 
 Native lazy loading and `srcset` are great, but they have a limitation: they always load _some_ variant of the image. The `lazy-img` web component takes a different approach—it can completely skip loading images when they don’t meet your criteria, whether that’s screen size, container size, or visibility in the viewport.

@@ -6,6 +6,8 @@ comments: false
 ref_url: https://techcrunch.com/2015/03/31/espn-launches-a-big-redesign-for-its-web-versions/
 in_reply_to: https://techcrunch.com/2015/03/31/espn-launches-a-big-redesign-for-its-web-versions/
 ref_source: TechCrunch
+meta_description: "Testing “new” tech isn’t really a new thing for ESPN."
+social_description: "Testing “new” tech isn’t really a new thing for ESPN."
 ---
 
 ESPN launched its responsive site. I still need to tuck into it, but here’s a little background as to why:

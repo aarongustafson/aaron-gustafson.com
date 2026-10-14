@@ -10,6 +10,8 @@ description: "When I opened my inbox this morning, I nearly fell over. According
 canonical: "https://blog.easy-designs.net/archives/this-must-not-happen/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwpauik2w"
 image: "/i/share-cards/this-must-not-happen.jpg"
+meta_description: "When I opened my inbox this morning, I nearly fell over."
+social_description: "When I opened my inbox this morning, I nearly fell over."
 ---
 
 <p>When I opened my inbox this morning, I nearly fell over. According to <a href="http://glazman.org">Daniel Glazman</a>, co-chair of the <a href="http://www.w3.org/Style/CSS/members.en.php3">CSS Working Group at the W3C</a>, <a href="http://www.glazman.org/weblog/dotclear/index.php?post/2012/02/09/CALL-FOR-ACTION:-THE-OPEN-WEB-NEEDS-YOU-NOW">browser makers are considering supporting the WebKit vendor prefix (<code>-webkit-*</code>) because the web development community can’t be bothered to use the equivalent experimental properties for other browsers</a>:</p>

@@ -5,6 +5,8 @@ comments: false
 ref_url: https://www.brucelawson.co.uk/2015/progressive-web-apps-ready-for-primetime/
 in_reply_to: https://www.brucelawson.co.uk/2015/progressive-web-apps-ready-for-primetime/
 ref_source: "Bruce Lawson"
+meta_description: "Very interesting info from Bruce Lawson on how Opera’s implementation of Progressive Apps differs from Chrome’s."
+social_description: "Very interesting info from Bruce Lawson on how Opera’s implementation of Progressive Apps differs from Chrome’s. I look forward to tucking into this approach soon."
 ---
 
 Very interesting info from Bruce Lawson on how Opera’s implementation of Progressive Apps differs from Chrome’s. I look forward to tucking into this approach soon.

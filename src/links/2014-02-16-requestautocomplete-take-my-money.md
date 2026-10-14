@@ -5,6 +5,8 @@ comments: false
 in_reply_to: https://www.html5rocks.com/en/tutorials/forms/requestautocomplete/
 ref_url: https://www.html5rocks.com/en/tutorials/forms/requestautocomplete/
 ref_source: HTML5 Rocks
+meta_description: "Rather than the site relying on a particular payment provider, `requestAutocomplete()` requests payment details from the browser."
+social_description: "Rather than the site relying on a particular payment provider, `requestAutocomplete()` requests payment details from the browser, which stores them on the user’s behalf."
 ---
 
 > Rather than the site relying on a particular payment provider, `requestAutocomplete` requests payment details from the browser, which stores them on the user’s behalf.

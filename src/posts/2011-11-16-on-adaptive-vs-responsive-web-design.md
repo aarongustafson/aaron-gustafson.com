@@ -10,6 +10,8 @@ description: "In the past few months, I’ve spent an inordinate amount of time 
 canonical: "https://blog.easy-designs.net/archives/on-adaptive-vs-responsive-web-design/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwpulrp25"
 image: "/i/share-cards/on-adaptive-vs-responsive-web-design.jpg"
+meta_description: "In the past few months, I’ve spent an inordinate amount of time discussing the differences between the “adaptive” and “responsive” web design philosophies."
+social_description: "In the past few months, I’ve spent an inordinate amount of time discussing the differences between the “adaptive” and “responsive” web design philosophies."
 ---
 
 <p>

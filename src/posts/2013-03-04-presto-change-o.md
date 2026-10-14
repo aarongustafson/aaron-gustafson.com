@@ -9,6 +9,8 @@ description: "As you’ve probably heard, Opera has announced that they are aban
 canonical: "https://blog.easy-designs.net/archives/presto-change-o/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwodcu22l"
 image: "/i/share-cards/presto-change-o.jpg"
+meta_description: "As you’ve probably heard, Opera has announced that they are abandoning their Presto rendering engine in favor of Webkit."
+social_description: "As you’ve probably heard, Opera has announced that they are abandoning their Presto rendering engine in favor of Webkit."
 ---
 
 <p>

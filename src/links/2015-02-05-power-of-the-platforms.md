@@ -5,6 +5,8 @@ comments: false
 ref_url: https://radar.oreilly.com/2015/02/power-of-the-platforms.html
 in_reply_to: https://radar.oreilly.com/2015/02/power-of-the-platforms.html
 ref_source: O’Reilly Radar
+meta_description: "This is a great post from Simon St. Laurent on how isolated Web \"platforms\" have come and go while web standards soldier on."
+social_description: "This is a great post from Simon St. Laurent on how isolated Web \"platforms\" have come and go while the \"tangled mess\" that is HTML, CSS, and JavaScript soldiers on. It’s a must read."
 ---
 
 This is a great post from Simon St. Laurent on how isolated Web "platforms" have come and go while the "tangled mess" that is HTML, CSS, and JavaScript soldiers on. It’s a must read.

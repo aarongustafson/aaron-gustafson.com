@@ -5,6 +5,8 @@ comments: false
 ref_url: https://www.filamentgroup.com/lab/mv-initial-load-times.html
 in_reply_to: https://www.filamentgroup.com/lab/mv-initial-load-times.html
 ref_source: Filament Group
+meta_description: "I often talk about the negative performance impact of using front-end MVC frameworks like Angular and Ember to generate your HTML."
+social_description: "I often talk about the negative performance impact of using front-end MVC frameworks like Angular and Ember to generate your HTML."
 ---
 
 I often talk about the negative performance impact of using front-end MVC frameworks like Angular and Ember to generate your HTML. It should be pretty obvious why: a framework must be downloaded, interpreted, and executed before any HTML is generated and eventually rendered in the browser. The one thing I had yet to do was actually see how the various frameworks stack up side-by-side. Now the [Filament Group](https://www.filamentgroup.com) has done just that.

@@ -8,6 +8,8 @@ description: "I’ve been building tabbed interfaces from document headings sinc
 twitter_text: "I keep coming back to tabbed interfaces."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvyxrob2n"
 image: "/i/share-cards/tabbed-interface-the-web-component.jpg"
+meta_description: "I’ve been building tabbed interfaces from document headings since 2007."
+social_description: "I’ve been building tabbed interfaces from document headings since 2007. My new custom element carries that approach forward and now drops the tabs when they don’t fit."
 ---
 
 I keep coming back to tabbed interfaces.

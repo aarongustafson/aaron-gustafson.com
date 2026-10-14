@@ -14,6 +14,8 @@ hero:
   offset: "100"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw4geo22p"
 image: "/i/share-cards/representation-in-alt-text.jpg"
+meta_description: "By including information about people’s physical attributes, we can normalize and even embrace our differences."
+social_description: "By including information about people’s physical attributes, we can normalize and even embrace our differences. We can celebrate diversity and promote representation."
 ---
 
 Inclusion can take many forms.

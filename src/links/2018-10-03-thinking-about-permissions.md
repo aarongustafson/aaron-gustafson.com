@@ -5,6 +5,8 @@ tags: [privacy]
 ref_url: https://sallylait.com/blog/2018/09/27/thinking-about-permissions/
 in_reply_to: https://sallylait.com/blog/2018/09/27/thinking-about-permissions/
 ref_source: Sally Lait
+meta_description: "I’ve been thinking quite a bit about privacy and permissions both generally and in web browsers and our product that rely on them."
+social_description: "I’ve been thinking quite a bit about privacy and permissions both generally and in web browsers and our product that rely on them. I very much appreciated this perspective from Sally Lait."
 ---
 
 I’ve been thinking quite a bit about privacy and permissions both generally and in web browsers and our product that rely on them. I very much appreciated this perspective from Sally Lait.

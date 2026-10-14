@@ -5,6 +5,8 @@ comments: false
 ref_url: https://www.jdsupra.com/legalnews/a-cautionary-tale-doj-intervenes-in-35737/
 in_reply_to: https://www.jdsupra.com/legalnews/a-cautionary-tale-doj-intervenes-in-35737/
 ref_source: Seyfarth Shaw LLP
+meta_description: "Supermarket chain Winn Dixie claims that Title III of the Americans with Disabilities Act doesn’t apply online."
+social_description: "Supermarket chain Winn Dixie claims that Title III of the Americans with Disabilities Act doesn’t apply online in Gil v. Winn Dixie and the U.S. Department of Justice steps in to set them straight."
 ---
 
 Supermarket chain Winn Dixie claims that Title III of the Americans with Disabilities Act doesn’t apply online in _Gil v. Winn Dixie_ and the U.S. Department of Justice steps in to set them straight:

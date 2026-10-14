@@ -9,6 +9,8 @@ description: "That’s right, I’m coming to NYC to join Jeffrey , Eric , “ S
 canonical: "https://blog.easy-designs.net/archives/if-i-can-make-it-there/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwyzrgo2e"
 image: "/i/share-cards/if-i-can-make-it-there.jpg"
+meta_description: "That’s right, I’m coming to NYC to join Jeffrey, Eric, “Stan,” Khoi & Adam to deliver An Event Apart in its new 2-day format."
+social_description: "That’s right, I’m coming to NYC to join Jeffrey, Eric, “Stan,” Khoi & Adam to deliver An Event Apart in its new 2-day format."
 ---
 
 <p><a href="http://www.flickr.com/photos/aarongustafson/136066759/"><img alt=" " class="feature" src="http://static.flickr.com/56/136066759_17497fe37c_m.jpg"/></a></p>

@@ -8,6 +8,8 @@ crossposted:
   Medium: https://medium.com/@AaronGustafson/a02bfa999bdc
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwdb7sc2l"
 image: "/i/share-cards/pondering-fallback-content.jpg"
+meta_description: "Some thoughts on fallback content and the experience it creates when an enhancement is unavailable."
+social_description: "I’ve been thinking a lot about media formats and what happens when a user’s browser encounters a video, audio, or picture element that only includes formats it doesn’t support."
 ---
 
 I don’t remember what got it stuck in my craw, but I’ve been thinking a bit about HTML fallbacks of late. <!-- more -->If you’re unfamiliar, consider the following `picture` element:

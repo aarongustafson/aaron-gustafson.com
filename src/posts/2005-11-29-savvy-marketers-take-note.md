@@ -10,6 +10,8 @@ description: "One of the web’s preeminent marketing websites, MarketingSherpa 
 canonical: "https://blog.easy-designs.net/archives/savvy-marketers-take-note/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx55jhc2p"
 image: "/i/share-cards/savvy-marketers-take-note.jpg"
+meta_description: "One of the web’s preeminent marketing websites, MarketingSherpa, has just published an article which may start a web standards stampede."
+social_description: "One of the web’s preeminent marketing websites, MarketingSherpa, has just published an article which may start a web standards stampede."
 ---
 
 <p>One of the web’s preeminent marketing websites, <a href="http://www.marketingsherpa.com">MarketingSherpa</a>, has just published <a href="http://www.marketingsherpa.com/sample.cfm?contentID=3130">an article which may start a web standards stampede</a>. The focus is <a href="http://www.mozilla.org/firefox/">Firefox</a>, but the underlying message is standards, standards and more standards:</p>

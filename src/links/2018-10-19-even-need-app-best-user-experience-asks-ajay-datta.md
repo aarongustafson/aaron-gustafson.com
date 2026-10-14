@@ -6,6 +6,8 @@ tags: ["progressive web apps"]
 ref_url: https://yourstory.com/2018/10/even-need-app-best-user-experience-asks-ajay-datta/
 in_reply_to: https://yourstory.com/2018/10/even-need-app-best-user-experience-asks-ajay-datta/
 ref_source: YourStory
+meta_description: "This is a great peek behind the curtain on LinkedIn Lite, a progressive web app from the LinkedIn India team."
+social_description: "This is a great peek behind the curtain on LinkedIn Lite, a progressive web app from the LinkedIn India team. I love seeing more companies embracing the web over apps when it makes sense to do so."
 ---
 
 This is a great peek behind the curtain on LinkedIn Lite, a progressive web app from the LinkedIn India team. I love seeing more companies embracing the web over apps when it makes sense to do so.

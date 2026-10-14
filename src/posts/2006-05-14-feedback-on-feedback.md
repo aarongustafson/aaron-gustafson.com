@@ -10,6 +10,8 @@ description: "SXSW has released their “ Honor Roll” for 2006 and “ How to 
 canonical: "https://blog.easy-designs.net/archives/feedback-on-feedback/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwypsd72w"
 image: "/i/share-cards/feedback-on-feedback.jpg"
+meta_description: "SXSW has released their “Honor Roll” for 2006 and “How to Bluff Your Way in DOM Scripting” managed to make it pretty darn close to the top."
+social_description: "SXSW has released their “Honor Roll” for 2006 and “How to Bluff Your Way in DOM Scripting” managed to make it pretty darn close to the top."
 ---
 
 <p>SXSW has released their <a href="http://2006.sxsw.com/bits_n_bytes/pivot/entry.php?id=112"><span class="initial quote">“</span>Honor Roll” for 2006</a> and “<a href="http://2006.sxsw.com/interactive/programming/panels/?action=show&amp;id=IAP060040">How to Bluff Your Way in DOM Scripting</a>” managed to make it pretty darn close to the top. I had no idea there was such a thing, but apparently audience feedback is tallied and the sessions are graded and then ranked. I’m pretty proud of our 4.69 “<abbr title="Grade Point Average">GPA</abbr>” too — it put us solidly in the Top 10. The two other sessions I participated in (“<a href="http://2006.sxsw.com/interactive/programming/panels/?action=show&amp;id=IAP060035">Web Standards & Search Engines</a>” and “<a href="http://2006.sxsw.com/interactive/programming/panels/?action=show&amp;id=IAP060006">Web Standards & SEO</a>”) also garnered some respectable scores (4.01 and 4.06 respectively) and made the list.</p>

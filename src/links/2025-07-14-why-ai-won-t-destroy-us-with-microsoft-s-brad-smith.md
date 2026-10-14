@@ -6,6 +6,8 @@ ref_url: https://tools-and-weapons-with-brad-smith.simplecast.com/episodes/why-a
 in_reply_to: https://tools-and-weapons-with-brad-smith.simplecast.com/episodes/why-ai-wont-destroy-us
 twitter_text: "I really appreciate this discussion of how we create information bubbles and labeled lenses through which we process information. It starts around minute 20."
 ref_source: "What Now? with Trevor Noah"
+meta_description: "Trevor Noah and Brad Smith cover a lot of ground, including a particularly timely discussion of AI and its effects on society."
+social_description: "In this episode, Trevor Noah and Brad Smith talk about a lot of things, but I think the most prescient is their discussion of information bubbles and organizing around labels."
 ---
 
 In this episode, Trevor Noah and Brad Smith talk about a lot of things, but I think the most prescient is their discussion of information bubbles and organizing around labels. Trevor astutely observes how the source of information often colors how we receive that information and whether we consider it or reject it out of hand. In today’s media ecosystem, the system of “in groups” and “out groups” creates deep division and makes us more susceptible to misinformation.

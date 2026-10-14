@@ -6,6 +6,8 @@ comments: false
 ref_url: https://www.coolfields.co.uk/2016/05/text-for-screen-readers-only-updated/
 in_reply_to: https://www.coolfields.co.uk/2016/05/text-for-screen-readers-only-updated/
 ref_source: Coolfields Consulting
+meta_description: "This post includes a few excellent ways to add context for “headless” UIs."
+social_description: "This post includes a few excellent ways to add context for “headless” UIs. I use quite a few of these approaches on this very site and they’ve proven quite useful."
 ---
 
 This post includes a few excellent ways to add context for “headless” UIs. I use quite a few of these approaches on this very site and they’ve proven quite useful.

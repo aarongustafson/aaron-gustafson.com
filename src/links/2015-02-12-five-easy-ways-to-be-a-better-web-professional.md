@@ -5,6 +5,8 @@ comments: false
 ref_url: https://sixtwothree.org/posts/five-easy-ways-to-be-a-better-web-professional
 in_reply_to: https://sixtwothree.org/posts/five-easy-ways-to-be-a-better-web-professional
 ref_source: Jason Garber’s Blog
+meta_description: "My old friend Jason Garbercame up with a great list of \"professional self-improvement tips for anyone working on the Web today\"."
+social_description: "My old friend Jason Garber—who I, sadly, haven’t seen in probably a decade—came up with a great list of \"professional self-improvement tips for anyone working on the Web today\"."
 ---
 
 My old friend Jason Garber—who I, sadly, haven’t seen in probably a decade—came up with a great list of "professional self-improvement tips for anyone working on the Web today". I’ll give you the synopses, but you should do yourself a favor and read the full post for the background:

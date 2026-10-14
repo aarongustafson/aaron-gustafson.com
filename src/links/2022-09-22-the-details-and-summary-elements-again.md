@@ -8,6 +8,8 @@ description: "Another deep dive into `details` and `summary`, courtesy of Scott.
 twitter_text: "Another deep dive into `details` and `summary`, courtesy of @scottohara"
 ref_url: https://www.scottohara.me/blog/2022/09/12/details-summary.html
 in_reply_to: https://www.scottohara.me/blog/2022/09/12/details-summary.html
+meta_description: "Another deep dive into details and summary, courtesy of Scott."
+social_description: "Another deep dive into details and summary, courtesy of Scott."
 ---
 
 Another deep dive into `details` and `summary`, courtesy of Scott. He’s tested so many permutations and edge cases that this is really required reading if you’re considering using this element pairing for progressive disclosure.

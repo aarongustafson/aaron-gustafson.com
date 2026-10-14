@@ -5,6 +5,8 @@ comments: false
 ref_url: https://blogs.windows.com/msedgedev/2015/02/26/a-break-from-the-past-the-birth-of-microsofts-new-web-rendering-engine/
 in_reply_to: https://blogs.windows.com/msedgedev/2015/02/26/a-break-from-the-past-the-birth-of-microsofts-new-web-rendering-engine/
 ref_source: Microsoft Edge Blog
+meta_description: "Charles Morris wrote a lengthy post about the germination of Microsoft’s new browser rendering engine."
+social_description: "Charles Morris wrote a lengthy post about the germination of Microsoft’s new browser rendering engine. If you ever wondered where babies browsers come from, this is full of insights."
 ---
 
 [Charles Morris](https://twitter.com/morris_charles) wrote a lengthy post about the germination of Microsoft’s new browser rendering engine. If you ever wondered where <del>babies</del> <ins>browsers</ins> come from, this is full of insights.

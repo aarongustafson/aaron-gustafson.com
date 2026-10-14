@@ -6,6 +6,8 @@ tags: [HTML, accessibility]
 ref_url: https://blog.whatwg.org/the-state-of-fieldset-interoperability
 in_reply_to: https://blog.whatwg.org/the-state-of-fieldset-interoperability
 ref_source: The WHATWG Blog
+meta_description: "A close look at `<fieldset>` interoperability and the browser differences developers still need to account for."
+social_description: "I’m a huge fan of `<fieldset>` and `<legend>` from a semantic standpoint and agree that getting better cross-browser alignment (and better assistive tech support) is key to their usefulness."
 ---
 
 I’m a huge fan of `fieldset` and `legend` from a semantic standpoint and agree that getting better cross-browser alignment (and better assistive tech support) is key to their usefulness. I’m glad this work is being done.

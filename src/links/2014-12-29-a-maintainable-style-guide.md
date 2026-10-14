@@ -5,6 +5,8 @@ comments: false
 ref_url: https://ianfeather.co.uk/a-maintainable-style-guide/
 in_reply_to: https://ianfeather.co.uk/a-maintainable-style-guide/
 ref_source: Ian Feather’s Blog
+meta_description: "A fantastic overview of the modular architecture Lonely Planet is using to run their website and their style guide, keeping both perfectly in sync."
+social_description: "A fantastic overview of the modular architecture Lonely Planet is using to run their website and their style guide, keeping both perfectly in sync."
 ---
 
 This is a fantastic overview of the modular architecture Lonely Planet is using to run their website and their style guide, keeping both perfectly in sync. The system that drives all of this, Rizzo, is [available on Github](https://github.com/lonelyplanet/rizzo).

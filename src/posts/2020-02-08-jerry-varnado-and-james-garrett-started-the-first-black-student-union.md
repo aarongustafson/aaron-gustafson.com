@@ -10,6 +10,8 @@ series:
   ordinal: "36th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw62tf32g"
 image: "/i/share-cards/jerry-varnado-and-james-garrett-started-the-first-black-student-union.jpg"
+meta_description: "Jerry Varnado and James Garrett founded the first Black Student Union and sparked a movement for change across higher education."
+social_description: "Together, they created the first Black Student Union and kicked off a campus movement that demanded schools of higher learning make themselves more welcoming and supportive of their Black students."
 ---
 
 In the aftermath of the Watts Riots of 1965, Jerry Varnado and James Garrett looked around and decided they needed to shake things up on the predominantly white campus of San Francisco State University. Together, they created the first Black Student Union and kicked off a campus movement that demanded schools of higher learning take the needs of their Black students seriously.

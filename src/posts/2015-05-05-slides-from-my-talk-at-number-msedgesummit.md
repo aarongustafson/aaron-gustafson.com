@@ -6,6 +6,8 @@ tags: [forms, HTML, presentations]
 description: "I just came off stage from my talk at the Microsoft Edge Web Summit and I wanted to share the deck with you. The talk was live-streamed, but I will post a video link as soon as it is up."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwi3tk32p"
 image: "/i/share-cards/slides-from-my-talk-at-number-msedgesummit.jpg"
+meta_description: "I just came off stage from my talk at the Microsoft Edge Web Summit and I wanted to share the deck with you."
+social_description: "I just came off stage from my talk at the Microsoft Edge Web Summit and I wanted to share the deck with you. The talk was live-streamed, but I will post a video link as soon as it is up."
 ---
 
 I just came off stage from my talk at the [Microsoft Edge Web Summit](https://web.archive.org/web/20150906080858/https://channel9.msdn.com/Events/WebPlatformSummit/2015) and I wanted to share [the deck](/notebook/slides-from-my-talk-at-number-msedgesummit/#figure-2015-05-05-01) with you. The talk was live-streamed, but I will post a video link as soon as it is up.

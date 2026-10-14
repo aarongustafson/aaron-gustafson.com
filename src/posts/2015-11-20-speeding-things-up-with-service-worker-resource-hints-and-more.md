@@ -6,6 +6,8 @@ tags: ["web design", "progressive enhancement", experiments, "web development"]
 description: "User experience encompasses more than just the interface. Download speed, render performance, and the cost of accessing a site are often overlooked areas when it comes to the practice of UX, but they all affect how users experience what we build on the Web."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwg3hcx2w"
 image: "/i/share-cards/speeding-things-up-with-service-worker-resource-hints-and-more.jpg"
+meta_description: "User experience encompasses more than just the interface."
+social_description: "User experience encompasses more than just the interface."
 ---
 
 User experience encompasses more than just the interface. Download speed, render performance, and the cost of accessing a site are often overlooked areas when it comes to the practice of UX, but they all affect how users experience what we build on the Web.

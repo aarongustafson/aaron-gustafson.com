@@ -11,6 +11,8 @@ in_reply_to: https://paulmakeswebsites.com/writing/shadcn-radio-button/
 via:
   name: "mvneerven on LinkedIn"
   url: "https://www.linkedin.com/posts/mvneerven_puredesignsystem-webstandards-shadcn-share-7433473431062450176-IyP1/"
+meta_description: "It’s just a radio button."
+social_description: "It’s just a radio button. Paul’s teardown is a good illustration of how far modern front-end practice can drift from the simple, robust platform primitives we already have."
 ---
 
 _It’s just a radio button._

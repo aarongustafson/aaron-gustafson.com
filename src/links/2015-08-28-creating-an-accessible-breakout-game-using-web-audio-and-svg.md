@@ -6,6 +6,8 @@ comments: false
 ref_url: https://blogs.msdn.com/b/davrous/archive/2015/08/27/creating-an-accessible-breakout-game-using-web-audio-amp-svg.aspx
 in_reply_to: https://blogs.msdn.com/b/davrous/archive/2015/08/27/creating-an-accessible-breakout-game-using-web-audio-amp-svg.aspx
 ref_source: David Rousset
+meta_description: "I had the great pleasure of seeing Dave present his accessible breakout game at the MS Edge Web Summit and have been eagerly awaiting this post ever since."
+social_description: "I had the great pleasure of seeing Dave present his accessible breakout game at the MS Edge Web Summit and have been eagerly awaiting this post ever since. So much good stuff in here!"
 ---
 
 I had the great pleasure of seeing Dave present his accessible breakout game at the MS Edge Web Summit and have been eagerly awaiting this post ever since. So much good stuff in here!

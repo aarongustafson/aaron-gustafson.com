@@ -5,6 +5,8 @@ tags: [accessibility]
 ref_url: https://seesparkbox.com/foundry/website_accessibility_through_responsive_web_design
 in_reply_to: https://seesparkbox.com/foundry/website_accessibility_through_responsive_web_design
 ref_source: Sparkbox
+meta_description: "I recently asked a friend who happens to be blind if he’d share some sites that were built really well—sites that were beautifully accessible."
+social_description: "I asked a blind friend to share some beautifully accessible sites. He replied, “I don’t use the web. Everything is broken.”"
 ---
 
 > I recently asked a friend who happens to be blind if he’d share some sites that were built really well—sites that were beautifully accessible. You know what he said? “I don’t use the web. Everything is broken.”

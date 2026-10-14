@@ -6,6 +6,8 @@ ref_url: https://theoutline.com/post/7800/dsa-conference-2019-invisible-disabili
 in_reply_to: https://theoutline.com/post/7800/dsa-conference-2019-invisible-disability?zd=1&zi=nvo4myo5
 twitter_text: "This piece is an excellent dissection of the reasons why inclusion matters and some of the many ways disabilities can be hidden."
 ref_source: "The Outline"
+meta_description: "This is an excellent piece on the sometimes awkward, but kind and necessary move toward true inclusion."
+social_description: "This is an excellent piece on the sometimes awkward, but kind and necessary move toward true inclusion."
 ---
 
 This is an excellent piece on the sometimes awkward, but kind and necessary move toward true inclusion. This passage nails the problems with (typically) conservative thinking in this regard and why it’s a problem:

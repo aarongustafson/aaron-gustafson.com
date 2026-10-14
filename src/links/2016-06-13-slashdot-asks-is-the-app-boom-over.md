@@ -5,6 +5,8 @@ comments: false
 ref_url: https://developers.slashdot.org/story/16/06/08/200216/slashdot-asks-is-the-app-boom-over
 in_reply_to: https://developers.slashdot.org/story/16/06/08/200216/slashdot-asks-is-the-app-boom-over
 ref_source: Slashdot
+meta_description: "Riffing on a post in ReCode and research done by Quartz, Slashdot asked its readership if apps are done. The comments are especially telling."
+social_description: "Riffing on a post in ReCode and research done by Quartz, Slashdot asked its readership if apps are done. The comments are especially telling."
 ---
 
 Riffing on [a post in ReCode](https://www.recode.net/2016/6/8/11883518/app-boom-over-snapchat-uber) and [research done by Quartz](https://qz.com/253618/most-smartphone-users-download-zero-apps-per-month/), Slashdot asked its readership if apps are done. The comments are especially telling. My personal favorite is this gem:

@@ -6,6 +6,8 @@ ref_url: https://blog.stephaniestimac.com/posts/2024/01/css-field-sizing/
 in_reply_to: https://blog.stephaniestimac.com/posts/2024/01/css-field-sizing/
 twitter_text: "Form fan that I am, I’m excited to have CSS that enables fields (especially `textarea`) to grow to accommodate the content someone’s entered."
 ref_source: "Stephanie Stimac’s Blog"
+meta_description: "The CSS `field-sizing` property can create better form experiences with less code."
+social_description: "Form fan that I am, I’m excited to have CSS that enables fields (especially `<textarea>`) to grow to accommodate the content someone’s in the process of entering into it."
 ---
 
 Form fan that I am, I’m excited to have CSS that enables fields (especially `textarea`) to grow to accommodate the content someone’s in the process of entering into it.

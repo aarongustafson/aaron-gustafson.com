@@ -5,6 +5,8 @@ comments: false
 ref_url: https://www.notey.com/@qz_unofficial/external/13839193/obama%E2%80%99s-white-house-webmaster-says-we-should-cut-trump%E2%80%99s-team-some-slack.html
 in_reply_to: https://www.notey.com/@qz_unofficial/external/13839193/obama%E2%80%99s-white-house-webmaster-says-we-should-cut-trump%E2%80%99s-team-some-slack.html
 ref_source: Quartz
+meta_description: "It’s easy to get upset when we feel like the things we care dearly about—accessibility, translations, etc.—don’t seem to register with others."
+social_description: "It’s easy to get upset when we feel like the things we care dearly about—accessibility, translations, etc.—don’t seem to register with others."
 ---
 
 It’s easy to get upset when we feel like the things we care dearly about—accessibility, translations, etc.—don’t seem to register with others. But appearances can be deceiving, as Tom Cochran—a former director of digital for the White House—points out with respect to the changes to [WhiteHouse.gov](https://www.whitehouse.gov/):

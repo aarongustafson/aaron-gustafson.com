@@ -9,6 +9,8 @@ ref_source: Medium
 via:
   name: Slashdot
   url: https://tech.slashdot.org/story/15/08/03/148205/the-web-we-have-to-save
+meta_description: "A wonderful celebration of hyperlinks and the decentralized web in a world of social platforms fighting to keep us inside their walls."
+social_description: "This is a wonderful celebration of the hyperlink and the beauty of the decentralized web in a world of social media sites vying to keep us in their walled gardens."
 ---
 
 This is a wonderful celebration of the hyperlink and the beauty of the decentralized web in a world of social media sites vying to keep us in their walled gardens. Hossein Derakhshan’s perspective is an interesting one as he’d been in prison (for blogging) since 2008.

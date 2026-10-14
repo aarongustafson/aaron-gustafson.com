@@ -6,6 +6,8 @@ tags: [HTML, browsers]
 ref_url: https://medium.com/@mandy.michael/building-websites-for-safari-reader-mode-and-other-reading-apps-1562913c86c9
 in_reply_to: https://medium.com/@mandy.michael/building-websites-for-safari-reader-mode-and-other-reading-apps-1562913c86c9
 ref_source: Mandy Michael on Medium
+meta_description: "Mandy Michael has another great piece on HTML semantics, this time focused on browsers in “reader mode” and apps that offer similar experiences."
+social_description: "Mandy Michael has another great piece on the importance of HTML semantics, this time with a focus on browsers in \"reader mode\" (and apps that offer similar experiences)."
 ---
 
 Mandy Michael has another great piece on the importance of HTML semantics, this time with a focus on browsers in "reader mode" (and apps that offer similar experiences). Give it a read, then go tend to your markup.

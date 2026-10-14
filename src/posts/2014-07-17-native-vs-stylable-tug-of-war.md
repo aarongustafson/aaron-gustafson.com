@@ -9,6 +9,8 @@ canonical_site: The Easy Designs Blog
 redirect_from: /notebook/2014/the-native-vs-stylable-tug-of-war/
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwmhwah25"
 image: "/i/share-cards/native-vs-stylable-tug-of-war.jpg"
+meta_description: "Bruce Lawson identifies a familiar tension on the web: better native form controls versus the freedom to style them."
+social_description: "In his astute post “‘Native experience’ vs styling select boxes”, Bruce Lawson correctly identified a common tension in the web world: wanting better form controls vs. the freedom to style them."
 ---
 
 In his astute post [“‘Native experience’ vs styling select boxes”](https://www.brucelawson.co.uk/2014/native-experience-vs-styling-select-boxes/), Bruce Lawson correctly identified a common tension in the web world:

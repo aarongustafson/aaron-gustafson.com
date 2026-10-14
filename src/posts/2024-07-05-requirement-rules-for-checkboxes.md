@@ -21,6 +21,8 @@ series:
   ordinal: "5th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw342pc2w"
 image: "/i/share-cards/requirement-rules-for-checkboxes.jpg"
+meta_description: "Currently, we can only make checkboxes required or not, individually."
+social_description: "Currently, we can only make checkboxes required or not, individually. In some cases you need to be able to set a specific number of checkboxes that need to be checked."
 ---
 
 HTML checkboxes debuted as [part of HTML 2.0 in 1995](https://datatracker.ietf.org/doc/html/rfc1866#section-8.1.2.3). Our ability to mark an individual checkbox as being required became part of the HTML5 spec that published in 2014. A decade later, we can still only make checkboxes required on a case-by-case basis. To overcome this limitation, I had created [a jQuery plugin that allowed me to indicate that a user should choose a specific number of items from within a checkbox group](https://github.com/easy-designs/easy-checkbox-required.js). Yesterday I turned that plugin into a web component: [`form-required-checkboxes`](https://github.com/aarongustafson/form-required-checkboxes).

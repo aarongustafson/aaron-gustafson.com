@@ -5,6 +5,8 @@ comments: false
 ref_url: https://miranj.in/blog/2015/collateral-damage
 in_reply_to: https://miranj.in/blog/2015/collateral-damage
 ref_source: Miranj
+meta_description: "Just like JavaScript, CSS, and images, you are not guaranteed that your web fonts are going to reach (or be appreciated by) your users."
+social_description: "Just like JavaScript, CSS, and images, you are not guaranteed that your web fonts are going to reach (or be appreciated by) your users."
 ---
 
 Just like JavaScript, CSS, and images, you are not guaranteed that your web fonts are going to reach (or be appreciated by) your users. I know I constantly run into web font-related performance issues with _Wired_ on my iPhone, even on a speedy WiFi connection, so I’m not at all surprised users are looking to block them.

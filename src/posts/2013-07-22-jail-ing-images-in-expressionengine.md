@@ -10,6 +10,8 @@ description: "A while back I came across a link to Sebastiano Armeli-Battana’s
 canonical: "https://blog.easy-designs.net/archives/jail-ing-images-in-expressionengine/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwnsaq725"
 image: "/i/share-cards/jail-ing-images-in-expressionengine.jpg"
+meta_description: "A while back I came across a link to Sebastiano Armeli-Battana’s jQuery Asynchronous Image Loader (JAIL) and filed it away to revisit when I had some time."
+social_description: "A while back I came across a link to Sebastiano Armeli-Battana’s jQuery Asynchronous Image Loader (JAIL) and filed it away to revisit when I had some time. I finally made some time this weekend."
 ---
 
 <p>

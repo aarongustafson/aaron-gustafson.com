@@ -9,6 +9,8 @@ ref_source: Bleeping Computer
 via:
   name: Slashdot
   url: https://mobile.slashdot.org/story/18/06/04/1648206/mobile-devs-making-the-same-security-mistakes-web-devs-made-in-the-early-2000s
+meta_description: "Anyone who’s seen one of my forms talks knows how adamant I am about this: you can never trust the client!"
+social_description: "Anyone who’s seen one of my forms talks knows how adamant I am about this: you can never trust the client! Doesn’t matter if that client is a web browser or your mobile app."
 ---
 
 Anyone who’s seen one of my forms talks knows how adamant I am about this: you can never trust the client! Doesn’t matter if that client is a web browser or your mobile app.

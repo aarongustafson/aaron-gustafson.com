@@ -10,6 +10,8 @@ description: "A few weeks back, I flew to Sweden to deliver a talk on progressiv
 canonical: "https://blog.easy-designs.net/archives/funkas-tillgaenglighetsdagar-2012/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwoto3t2g"
 image: "/i/share-cards/funkas-tillgaenglighetsdagar-2012.jpg"
+meta_description: "I traveled to Sweden to speak about progressive enhancement for mobile devices at Funkas Tillgänglighetsdagar."
+social_description: "I traveled to Sweden to speak about progressive enhancement for mobile devices at Funkas Tillgänglighetsdagar."
 ---
 
 <p>

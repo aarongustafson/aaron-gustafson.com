@@ -6,6 +6,8 @@ ref_url: https://digitalhealth.blog.gov.uk/2023/03/03/nhsd-apply-for-care-id-alp
 in_reply_to: https://digitalhealth.blog.gov.uk/2023/03/03/nhsd-apply-for-care-id-alpha-assessment/
 twitter_text: "I love that the UK government is making digital product assessments, like this one for the in-development Care ID Assessment tool, public. There’s a lot to be learned from critiques like this."
 ref_source: "GOV.UK - Digital Health and Social Care"
+meta_description: "I love that the UK government is making digital product assessments, like this one for the in-development Care ID Assessment tool, public."
+social_description: "I love that the UK government is making digital product assessments, like this one for the in-development Care ID Assessment tool, public. There’s a lot to be learned from critiques like this."
 ---
 
 I love that the UK government is making digital product assessments, like this one for the in-development Care ID Assessment tool, public. There’s a lot to be learned from critiques like this.

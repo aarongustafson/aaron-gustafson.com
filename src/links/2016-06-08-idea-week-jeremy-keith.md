@@ -5,6 +5,8 @@ comments: false
 ref_url: https://www.webdirections.org/blog/idea-week-jeremy-keith/
 in_reply_to: https://www.webdirections.org/blog/idea-week-jeremy-keith/
 ref_source: Web Directions
+meta_description: "Reading Jeremy’s history with the Web, I noticed a lot of parallels with mine."
+social_description: "Reading Jeremy’s history with the Web, I noticed a lot of parallels with mine."
 ---
 
 Reading Jeremy’s history with the Web, I noticed a lot of parallels with mine. I think a lot of us old timers made our way to the Web in a very similar fashion and it’s surprising how many of us made our way here through music.

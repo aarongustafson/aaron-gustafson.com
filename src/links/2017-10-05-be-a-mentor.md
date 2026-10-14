@@ -6,6 +6,8 @@ tags: [mentoring]
 ref_url: https://alistapart.com/article/be-a-mentor
 in_reply_to: https://alistapart.com/article/be-a-mentor
 ref_source: A List Apart
+meta_description: "Your knowledge and experience is valuable, no matter where you are in your career; you should share that knowledge with others."
+social_description: "Your knowledge and experience is valuable, no matter where you are in your career; you should share that knowledge with others."
 ---
 
 Your knowledge and experience is valuable, no matter where you are in your career; you should share that knowledge with others. The web is what it is today because we shared our code and learned from each other. Be a part of that legacy. Brandon Gregory will show you the way.

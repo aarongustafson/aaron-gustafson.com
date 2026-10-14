@@ -12,6 +12,8 @@ hero:
   offset: ""
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw2daa22p"
 image: "/i/share-cards/identifying-accessibility-data-gaps-in-codegen-models.jpg"
+meta_description: "I probed an LLM’s responses to HTML code generation prompts to assess its adherence to accessibility best practices."
+social_description: "I probed an LLM’s responses to HTML code generation prompts to assess its adherence to accessibility best practices. The results showed key areas where better training data is needed."
 ---
 
 Late last year, I probed an LLM’s responses to HTML code generation prompts to assess its adherence to accessibility best practices. The results were unsurprisingly disappointing — roughly what I’d expect from a developer aware of accessibility but unsure how to implement it. The study highlighted key areas where training data needs improvement.

@@ -10,6 +10,8 @@ description: "Some of you might find it hard to believe, but I began working wit
 canonical: "https://blog.easy-designs.net/archives/zoom-layouts-v2/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwnimwo2e"
 image: "/i/share-cards/zoom-layouts-v2.jpg"
+meta_description: "Some of you might find it hard to believe, but I began working with adaptive layouts way back in 2005."
+social_description: "Some of you might find it hard to believe, but I began working with adaptive layouts way back in 2005."
 ---
 
 <p>

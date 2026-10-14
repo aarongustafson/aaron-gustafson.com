@@ -9,6 +9,8 @@ description: "Late last week, I linked my Forrst followers to Stephanie Riegerâ€
 canonical: "https://blog.easy-designs.net/archives/progressive-enhancement-vs.-hardboiled-design/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwphllg2e"
 image: "/i/share-cards/progressive-enhancement-vs.-hardboiled-design.jpg"
+meta_description: "Some thoughts on progressive enhancement, hardboiled design, and where the two approaches differ."
+social_description: "Some thoughts on progressive enhancement, hardboiled design, and where the two approaches differ."
 ---
 
 <p>

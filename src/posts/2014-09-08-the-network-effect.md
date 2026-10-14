@@ -7,6 +7,8 @@ tags: ["web design", JavaScript, hazards]
 redirect_from: /notebook/2014/the-network-effect/
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwmbfbk2p"
 image: "/i/share-cards/the-network-effect.jpg"
+meta_description: "A few thoughts on “The Network Effect”"
+social_description: "Comcast’s move to inject JavaScript into other people’s web pages via their XFinity routers only serves to remind us—yet again—that we don’t control how our sites are delivered or what our users see."
 ---
 
 <cite>Ars Technica</cite> revealed today that [Comcast is injecting self-promotional advertising into web pages delivered via it’s Wi-Fi hotspots](https://arstechnica.com/tech-policy/2014/09/why-comcasts-javascript-ad-injections-threaten-security-net-neutrality/):

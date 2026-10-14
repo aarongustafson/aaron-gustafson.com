@@ -6,6 +6,8 @@ comments: false
 ref_url: https://arc.applause.com/2015/11/02/mobile-accessibility-end-user/
 in_reply_to: https://arc.applause.com/2015/11/02/mobile-accessibility-end-user/
 ref_source: Arc
+meta_description: "We should deliver positive experiences while recognizing that we cannot give every user the same experience."
+social_description: "We should do everything in our power to deliver positive experiences to our users while simultaneously recognizing that it is impossible to deliver the same experience to each of them."
 ---
 
 There’s a ton of great info in this article, but this one little bit is definitely worth calling out:

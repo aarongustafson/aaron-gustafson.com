@@ -15,6 +15,8 @@ hero:
   offset: "0"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw4dmwk2h"
 image: "/i/share-cards/303-creative-llc-v-elenis-is-incredibly-problematic.jpg"
+meta_description: "A look at why the 303 Creative LLC v. Elenis decision is so deeply troubling."
+social_description: "The myriad reasons I don’t think this case should be before the Supreme Court of the United States and the potential ramifications of it being decided in favor of the plaintiff."
 ---
 
 Before I get into this, let me start with this preface: I am not a legal expert by any means. I never even watched <cite>Law & Order</cite>. That said, I am keenly interested in the law and how it relates to bias and discrimination, particularly if that intersects with technology, especially the web.

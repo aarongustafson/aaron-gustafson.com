@@ -8,6 +8,8 @@ description: "This is a tremendously useful resource for anyone working with Sha
 twitter_text: "This is exactly the kind of resource the web platform needs more of: practical, test-backed guidance on how modern CSS features actually behave with Shadow DOM."
 ref_url: https://shadow-dom-css.adobe.com/
 in_reply_to: https://shadow-dom-css.adobe.com/
+meta_description: "A tremendously useful guide to where modern CSS features stand for developers working with Shadow DOM."
+social_description: "This is a tremendously useful resource for anyone working with Shadow DOM and trying to understand where modern CSS features actually stand in practice, not just in theory."
 ---
 
 Adobe has produced a tremendously useful resource for anyone working with Shadow DOM and trying to understand where modern CSS features actually stand in practice, not just in theory.

@@ -5,6 +5,8 @@ comments: false
 ref_url: https://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824
 in_reply_to: https://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824
 ref_source: Tuts+
+meta_description: "This is a beautiful and exhaustive survey of heading level usage before HTML5 and in HTML5. Sadly, no one implements the HTML5 scenario yet."
+social_description: "This is a beautiful and exhaustive survey of heading level usage before HTML5 and in HTML5. Sadly, no one implements the HTML5 scenario yet. But it’s nice to dream. Maybe one day."
 ---
 
 This is a beautiful and exhaustive survey of heading level usage before HTML5 and in HTML5. Sadly, [no one implements the HTML5 scenario yet](https://www.w3.org/TR/html5/sections.html#outlines). But it’s nice to dream. Maybe one day.

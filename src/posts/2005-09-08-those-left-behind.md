@@ -9,6 +9,8 @@ description: "In the wake of the tragedy that befel the citizens of and visitors
 canonical: "https://blog.easy-designs.net/archives/those-left-behind/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx7ddyc2h"
 image: "/i/share-cards/those-left-behind.jpg"
+meta_description: "In the wake of the tragedy in New Orleans, I was struck by the support and kindness shown to survivors—Barbara Bush’s comments notwithstanding."
+social_description: "In the wake of the tragedy in New Orleans, I’ve been amazed by the support and kindness shown to survivors—Barbara Bush’s comments notwithstanding."
 ---
 
 <p>In the wake of the tragedy that befel the citizens of and visitors to New Orleans recently, I’ve been amazed at the amount of support and kindness being shown to the survivors (<a href="http://www.publicradio.org/tools/media/player/marketplace/2005/09/feature_barbarabush_sept5">Barbara Bush’s comments notwithstanding</a>). Help has come from the <a href="http://www.redcross.org">likely</a> <a href="http://www.salvationarmy.org">places</a> as well as <a href="http://news.bbc.co.uk/1/hi/technology/4208038.stm">some</a> <a href="http://web.archive.org/web/20051205074839/spiceplay.com/player/Scott/3321/">unlikely</a> <a href="http://www.bdsmstore.com/">ones</a> and I am sure most of you have already donated money, blood and possibly even a room or two in your house/apartment. While a good deal of assistance is still needed for our fellow humans, there are others in need too: their displaced pets.</p>

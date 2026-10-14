@@ -8,6 +8,8 @@ description: "The disability personas contained in Sarah Horton &amp; Whitney Qu
 twitter_text: "I ❤️ these disability personas. What an amazing resource!"
 ref_url: https://knowaboutaccessibility.org/category/resources/
 in_reply_to: https://knowaboutaccessibility.org/category/resources/
+meta_description: "A useful set of disability personas drawn from A Web for Everyone."
+social_description: "The disability personas contained in Sarah Horton & Whitney Quesenbery’s A Web for Everyone are a terrific resource, so I’m thrilled their available beyond the book now too."
 ---
 
 The disability personas contained in Sarah Horton &amp; Whitney Quesenbery’s <cite>A Web for Everyone</cite> are a terrific resource, so I’m thrilled their available beyond the book now too.

@@ -5,6 +5,8 @@ comments: false
 ref_url: https://plus.google.com/+LukeWroblewski/posts/UjoStGYKLxe
 in_reply_to: https://plus.google.com/+LukeWroblewski/posts/UjoStGYKLxe
 ref_source: Luke Wroblewski (on Google+)
+meta_description: "Some updates from Luke on accessibility improvements on Google’s social network."
+social_description: "Some updates from Luke on accessibility improvements on Google’s social network. Of note: “In the past year alone, we've found & fixed over 450 accessibility bugs.”"
 ---
 
 Some updates from Luke on accessibility improvements on Google’s social network. Of note: “In the past year alone, we've found & fixed over 450 accessibility bugs.”

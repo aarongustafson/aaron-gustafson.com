@@ -6,6 +6,8 @@ comments: false
 ref_url: https://blog.jasonsamuels.net/post/21633531278/analytics-confirm-the-need-for-adaptive-web-design
 in_reply_to: https://blog.jasonsamuels.net/post/21633531278/analytics-confirm-the-need-for-adaptive-web-design
 ref_source: Jason Samuels (Tech Thoughts)
+meta_description: "This post is a look at browser stats for an industry/research site over a size year period of 6 years."
+social_description: "This post is a look at browser stats for an industry/research site over a size year period of 6 years."
 ---
 
 I cite this post a ton in my talks and workshops (and in [the forthcoming second edition of <cite>Adaptive Web Design</cite>](https://adaptivewebdesign.info/2nd-edition/)), but I realized I had not explicitly linked it up here.

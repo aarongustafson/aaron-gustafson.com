@@ -8,6 +8,8 @@ ref_source: World Wide Web Foundation
 via:
   name: Slashdot
   url: https://yro.slashdot.org/story/17/03/13/0433225/tim-berners-lee-warns-about-the-webs-three-biggest-threats
+meta_description: "1) We can’t control our personal data; 2) Misinformation spreads easily; 3) Political ads need transparency."
+social_description: "1. We’ve lost control of our personal data; 2. It’s too easy for misinformation to spread on the web; 3. Political advertising online needs transparency and understanding."
 ---
 
 1. We’ve lost control of our personal data

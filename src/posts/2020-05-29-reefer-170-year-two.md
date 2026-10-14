@@ -6,6 +6,8 @@ tags: ["reef keeping"]
 description: "Facebook reminded me of a video I recorded of my reef tank a little over a year ago, so I thought I’d shoot another video, write a post about it, and share some of the interesting things that have changed over the last year."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw5mp7h25"
 image: "/i/share-cards/reefer-170-year-two.jpg"
+meta_description: "A social-media reminder prompted me to record a new video and share an update on my reef tank."
+social_description: "A social-media reminder prompted me to record a new video and share an update on my reef tank."
 ---
 
 Facebook reminded me of a video I recorded of [my reef tank](/tanks/reefer-170/) a little over a year ago, so I thought I’d shoot another video, write a post about it, and share some of the interesting things that have changed over the last year.

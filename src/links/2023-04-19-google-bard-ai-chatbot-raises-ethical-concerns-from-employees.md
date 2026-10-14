@@ -6,6 +6,8 @@ ref_url: https://www.bloomberg.com/news/features/2023-04-19/google-bard-ai-chatb
 in_reply_to: https://www.bloomberg.com/news/features/2023-04-19/google-bard-ai-chatbot-raises-ethical-concerns-from-employees?leadSource=uverify%20wall
 twitter_text: "When you consider your product to be your stock price rather than your software…"
 ref_source: "Bloomberg"
+meta_description: "Why do companies release software before it’s safe?"
+social_description: "Why do companies release software before it’s safe?"
 ---
 
 Why do companies release software before it’s safe? Chances are they actually consider their product to be their stock price rather than their software… yet another victim of the financialization of our economy.

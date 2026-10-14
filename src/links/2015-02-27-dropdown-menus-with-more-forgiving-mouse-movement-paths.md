@@ -5,6 +5,8 @@ comments: false
 ref_url: https://css-tricks.com/dropdown-menus-with-more-forgiving-mouse-movement-paths/
 in_reply_to: https://css-tricks.com/dropdown-menus-with-more-forgiving-mouse-movement-paths/
 ref_source: CSS Tricks
+meta_description: "Chris Coyier surveys ways to make dropdown and flyout menus more forgiving for people who use a mouse."
+social_description: "Chris Coyier put together a nice overview of ways to reduce user frustration when dealing with dropdown and flyout menus because, you know, some people still use a mouse."
 ---
 
 Chris Coyier put together a nice overview of ways to reduce user frustration when dealing with dropdown and flyout menus because, you know, some people still use a mouse.

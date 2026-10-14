@@ -5,6 +5,8 @@ comments: false
 ref_url: https://meiert.com/en/blog/20150917/fire-and-forget/
 in_reply_to: https://meiert.com/en/blog/20150917/fire-and-forget/
 ref_source: Jens Oliver Meiert
+meta_description: "Jens Oliver Meiert on why we should continue to tidy up to and improve on our creations rather than letting them site once we’ve launched them."
+social_description: "Jens Oliver Meiert on why we should continue to tidy up to and improve on our creations rather than letting them site once we’ve launched them."
 ---
 
 [Jens Oliver Meiert](https://meiert.com/) on why we should continue to tidy up to and improve on our creations rather than letting them site once we’ve launched them. I’ve never been once for maintenance contracts with clients, but I also believe that sites that aren’t tended to every now and again can become overgrown or, worse, wither and die.

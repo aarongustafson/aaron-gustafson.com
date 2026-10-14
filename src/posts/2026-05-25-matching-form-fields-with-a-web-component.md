@@ -20,6 +20,8 @@ series:
   ordinal: "7th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvzaswb2l"
 image: "/i/share-cards/matching-form-fields-with-a-web-component.jpg"
+meta_description: "Confirming values like email addresses and passwords is a common form need."
+social_description: "Confirming values like email addresses and passwords is a common form need."
 ---
 
 Sometimes the simplest form pattern is the one you repeat <i lang="la">ad infinitum</i>: “Type it once, then type it again.” We do it for password confirmations, email verification, and any flow where a typo creates expensive follow-up work. I released a small web component to handle that pattern cleanly: [`form-matching-fields`](https://github.com/aarongustafson/form-matching-fields).

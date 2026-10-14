@@ -6,6 +6,8 @@ tags: ["progressive web apps", "web standards"]
 description: "I briefly presented on a bunch of the different efforts I’m involved with at the W3C’s TPAC yesterday. Here’s a rundown of what I discussed as well as links you can follow if you want to get involved."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw5goup2w"
 image: "/i/share-cards/enhancing-the-manifest.jpg"
+meta_description: "I briefly presented on a bunch of the different efforts I’m involved with at the W3C’s TPAC yesterday."
+social_description: "I briefly presented on a bunch of the different efforts I’m involved with at the W3C’s TPAC yesterday. Here’s a rundown of what I discussed as well as links you can follow if you want to get involved."
 ---
 
 Since joining the esteemed group of editors maintaining the [Web App Manifest spec](https://www.w3.org/TR/appmanifest/) for the [W3C](https://www.w3.org/), I’ve been on the lookout for ways to enhance both web apps themselves—in terms of functionality—and how web apps are represented in app catalogs and digital storefronts. Some of that work is finally gaining traction and I’d love to get your input.

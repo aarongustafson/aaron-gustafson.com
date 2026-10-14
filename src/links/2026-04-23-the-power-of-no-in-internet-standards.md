@@ -8,6 +8,8 @@ description: "This is an important piece about where power actually lives on the
 twitter_text: "A useful reminder that the real power in standards work is often the power to say no."
 ref_url: https://www.mnot.net/blog/2026/02/13/no
 in_reply_to: https://www.mnot.net/blog/2026/02/13/no
+meta_description: "Power on the web lives not in a specification alone, but in whether influential players choose to participate, implement, and ship."
+social_description: "This is an important piece about where power actually lives on the web: not in the specification itself, but in whether powerful players choose to participate, implement, and ship."
 ---
 
 This is an important piece about where power actually lives on the web: not in the specification itself, but in whether powerful players choose to participate, implement, and ship.

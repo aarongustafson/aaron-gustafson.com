@@ -13,6 +13,8 @@ hero:
   offset: "93"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw3sf3j2n"
 image: "/i/share-cards/design-for-developers.jpg"
+meta_description: "One of my favorite web designers, Stephanie Stimac, asked me to write the foreword for her amazing new book."
+social_description: "One of my favorite web designers, Stephanie Stimac, asked me to write the foreword for her amazing new book. With her permission, and Manning’s, I’m reprinting the foreword here."
 ---
 
 One of my favorite web designers, [Stephanie Stimac](https://stephaniestimac.com/), asked me to write the foreword for her amazing new book, [<cite>Design for Developers</cite>](http://mng.bz/zXqB). With her permission, and Manning’s, I’m reprinting it here.

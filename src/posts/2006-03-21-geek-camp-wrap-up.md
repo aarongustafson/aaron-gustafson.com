@@ -10,6 +10,8 @@ description: "I had a fantastic time at SXSWi this year. It was great to catch u
 canonical: "https://blog.easy-designs.net/archives/geek-camp-wrap-up/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx2nsol2g"
 image: "/i/share-cards/geek-camp-wrap-up.jpg"
+meta_description: "I had a fantastic time at SXSWi this year."
+social_description: "I had a fantastic time at SXSWi this year. It was great to catch up with old friends, make some new ones, and see what everyone’s been working on for the last year."
 ---
 
 <p>

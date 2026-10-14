@@ -5,6 +5,8 @@ comments: false
 ref_url: https://blogs.opera.com/mobile/2015/06/opera-mini-for-windows-phone/
 in_reply_to: https://blogs.opera.com/mobile/2015/06/opera-mini-for-windows-phone/
 ref_source: Opera Blogs
+meta_description: "I love that Opera is building its browser for as many platforms as possible."
+social_description: "I love that Opera is building its browser for as many platforms as possible."
 ---
 
 I love that Opera is building its browser for as many platforms as possible. OS X and Windows of course, but they are also on iOS, Android, Blackberry, Symbian, Java ME, Bada, Windows Mobile, Zeebo, and now Windows Phone.

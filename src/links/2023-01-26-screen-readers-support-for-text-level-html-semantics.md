@@ -6,6 +6,8 @@ ref_url: https://www.tpgi.com/screen-readers-support-for-text-level-html-semanti
 in_reply_to: https://www.tpgi.com/screen-readers-support-for-text-level-html-semantics/
 twitter_text: "A deep dive into support for common text level #HTML semantics (`em`, `strong`, `ins`, `del`, `mark` & their #ARIA equivalents) in #ScreenReaders & #accessibility APIs."
 ref_source: "TPGi"
+meta_description: "Steve Faulkner updated his assessment of support for text-level semantics in screen readers and accessibility APIs."
+social_description: "Steve Faulkner updated his assessment of support for text-level semantics in screen readers and accessibility APIs."
 ---
 
 Steve Faulkner updated his assessment of support for text-level semantics in screen readers and accessibility APIs. He discusses what’s changed in the last 15 years (since his last assessment) and what it means in terms of conformance with respect to accessibility guidelines.

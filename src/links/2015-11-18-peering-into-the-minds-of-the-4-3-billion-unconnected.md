@@ -8,6 +8,8 @@ ref_source: TechCrunch
 via:
   name: Bruce Lawson
   url: https://www.brucelawson.co.uk/2015/reading-list-133/
+meta_description: "This article touches on many of the issues we will struggle with as more of the world’s population comes online."
+social_description: "This article touches on many of the issues we will struggle with as more of the world’s population comes online. The biggest one (in my mind at least) is low/no literacy."
 ---
 
 This article touches on many of the issues we will struggle with as more of the world’s population comes online. The biggest one (in my mind at least) is low/no literacy. I am hopeful that voice-based interactions (e.g. Siri, Cortana, Echo) will help with that.

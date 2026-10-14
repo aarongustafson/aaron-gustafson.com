@@ -6,6 +6,8 @@ ref_url: https://garymarcus.substack.com/p/what-google-should-really-be-worried
 in_reply_to: https://garymarcus.substack.com/p/what-google-should-really-be-worried
 twitter_text: "The old computer programming adage “garbage in, garbage out” is going to ring even more true as search engine crawlers consume more and more empty calories in the form of AI-generated b.s."
 ref_source: "Gary Marcus"
+meta_description: "“Garbage in, garbage out” matters even more as search crawlers consume content produced by AI systems."
+social_description: "“Garbage in, garbage out” matters even more as search crawlers consume content produced by AI systems."
 ---
 
 The old computer programming adage “garbage in, garbage out” is going to ring even more true as search engine crawlers consume more and more empty calories in the form of AI-generated bullshit and misinformation.

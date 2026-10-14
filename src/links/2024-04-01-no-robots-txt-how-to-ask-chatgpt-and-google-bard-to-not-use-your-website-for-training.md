@@ -6,6 +6,8 @@ ref_url: https://www.eff.org/deeplinks/2023/12/no-robotstxt-how-ask-chatgpt-and-
 in_reply_to: https://www.eff.org/deeplinks/2023/12/no-robotstxt-how-ask-chatgpt-and-google-bard-not-use-your-website-training
 twitter_text: "Want to keep your site from being indexed by LLMs? "
 ref_source: "Electronic Frontier Foundation"
+meta_description: "The Electronic Frontier Foundation (EFF) has you covered if you’d like to opt out of being indexed into tools like Open AI’s ChatGPT and Google’s Gemini."
+social_description: "The Electronic Frontier Foundation explains how to opt out of ChatGPT and Gemini indexing with a few additions to your robots.txt file."
 ---
 
 The Electronic Frontier Foundation (EFF) has you covered if you’d like to opt out of being indexed into tools like Open AI’s ChatGPT and Google’s Gemini. Just add these to your robots.txt file:

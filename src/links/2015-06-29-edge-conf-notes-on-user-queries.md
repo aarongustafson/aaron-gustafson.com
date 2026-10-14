@@ -5,6 +5,8 @@ comments: false
 ref_url: https://www.brucelawson.co.uk/2015/edge-conf-notes-on-user-queries/
 in_reply_to: https://www.brucelawson.co.uk/2015/edge-conf-notes-on-user-queries/
 ref_source: "Bruce Lawson’s Personal Site"
+meta_description: "The esteemed Bruce Lawson on user preferences (e.g., contrast level) and querying them via CSS (or not)."
+social_description: "The esteemed Bruce Lawson on user preferences (e.g., contrast level) and querying them via CSS (or not)."
 ---
 
 The esteemed [Bruce Lawson](https://www.brucelawson.co.uk/) on user preferences (e.g., contrast level) and querying them via CSS (or not). User queries present some interesting possibilities, but I doubt users will want to set manually. Via a browser’s UI, however, that is interesting.

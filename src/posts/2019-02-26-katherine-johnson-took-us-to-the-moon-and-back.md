@@ -11,6 +11,8 @@ series:
   ordinal: "26th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw7fqfp25"
 image: "/i/share-cards/katherine-johnson-took-us-to-the-moon-and-back.jpg"
+meta_description: "Katherine Johnson’s story is yet another in a long line of stories that prove how important it is to give people the opportunity to do their best work."
+social_description: "Katherine Johnson’s story is yet another in a long line of stories that prove how important it is to give people the opportunity to do their best work."
 ---
 
 As I’ve mentioned previously, I’ve wasn’t all that into space growing up. That said, I remember going to the Kennedy Space Center and watching movies and TV shows about our journeys into space. And I vividly recall the participants being depicted as white men. All of them. But that’s not accurate; there was an entire corps of women who did complex math to make flight (including space flight) possible and safe. And among those women, there was a group of Black women who did this work too. Katherine Johnson was chief among them.

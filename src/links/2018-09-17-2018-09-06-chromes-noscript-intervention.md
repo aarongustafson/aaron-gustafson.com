@@ -6,6 +6,8 @@ tags: [performance, JavaScript]
 ref_url: https://timkadlec.com/remembers/2018-09-06-chromes-noscript-intervention/
 in_reply_to: https://timkadlec.com/remembers/2018-09-06-chromes-noscript-intervention/
 ref_source: Tim Kadlec
+meta_description: "A look at Chrome’s NOSCRIPT intervention and what it means for people who browse without JavaScript."
+social_description: "You can always count on Tim Kadlec to deep dive into the implications of new performance features and Chrome’s decision to remove block JavaScript in certain scenarios is no exception."
 ---
 
 You can always count on Tim Kadlec to deep dive into the implications of new performance features and Chrome’s decision to remove block JavaScript in certain scenarios is no exception.

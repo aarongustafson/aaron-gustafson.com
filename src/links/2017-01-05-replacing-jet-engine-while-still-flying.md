@@ -6,6 +6,8 @@ comments: false
 ref_url: https://jensimmons.com/post/jan-4-2017/replacing-jet-engine-while-still-flying
 in_reply_to: https://jensimmons.com/post/jan-4-2017/replacing-jet-engine-while-still-flying
 ref_source: Jen Simmons
+meta_description: "Building a browser is hard. Making major changes to an existing one is even harder."
+social_description: "Building a browser is hard. Making major changes to an existing one is even harder. I love it when folks talk about the processes and challenges of making the Web work."
 ---
 
 Building a browser is hard. Making major changes to an existing one is even harder. I love it when folks talk about the processes and challenges of making the Web work.

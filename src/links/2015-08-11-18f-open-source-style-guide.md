@@ -6,6 +6,8 @@ comments: false
 ref_url: https://pages.18f.gov/open-source-guide/index.html
 in_reply_to: https://pages.18f.gov/open-source-guide/index.html
 ref_source: 18F
+meta_description: "A fantastic overview of best practices for running an open source project on Github, from the folks at 18F."
+social_description: "A fantastic overview of best practices for running an open source project on Github from the folks at 18F. Covers everything to naming your project to writing READMEs to reporting issues."
 ---
 
 A fantastic overview of best practices for running an open source project on Github from the folks at [18F](https://18f.gsa.gov/). Covers everything to naming your project to writing READMEs to reporting issues.

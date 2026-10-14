@@ -5,6 +5,8 @@ comments: false
 ref_url: https://alistapart.com/blog/post/practicing-empathy-with-teams
 in_reply_to: https://alistapart.com/blog/post/practicing-empathy-with-teams
 ref_source: A List Apart
+meta_description: "I’ve touched on this a bit in my Designing with Empathy presentation: “Empathy is just as important for us to practice as we interact with our team members”."
+social_description: "I’ve touched on this a bit in my Designing with Empathy presentation: “Empathy is just as important for us to practice as we interact with our team members”."
 ---
 
 I’ve touched on this a bit in my [Designing with Empathy](https://www.slideshare.net/AaronGustafson/designing-with-empathy-reasons-to-be-creative-2013) presentation: “Empathy is just as important for us to practice as we interact with our team members”. [Susan Robertson](https://twitter.com/susanjrobertson) goes into the topic of empathy building for teams in this great post for <cite>A List Apart</cite>.

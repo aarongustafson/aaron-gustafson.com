@@ -9,6 +9,8 @@ ref_source: "CNN"
 via:
   name: "patrisse cullors"
   url: "https://twitter.com/OsopePatrisse/status/1058094652069306368?s=20"
+meta_description: "I am 100% in favor of social media platforms taking a proactive stance against online harassment, bullying, threats, and the like."
+social_description: "I am 100% in favor of social media platforms taking a proactive stance against online harassment, bullying, threats, and the like. Sadly, few are doing much (if anything about it)."
 ---
 
 I am 100% in favor of social media platforms taking a proactive stance against online harassment, bullying, threats, and the like. Sadly, few are doing much (if anything about it).

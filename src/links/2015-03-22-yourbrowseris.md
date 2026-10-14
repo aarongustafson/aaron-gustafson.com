@@ -4,6 +4,8 @@ date: 2015-03-22 17:51:36 -05:00
 comments: false
 ref_url: https://yourbrowser.is/
 ref_source: YourBrowser.is
+meta_description: "One of the hardest things about debugging websites is parsing bug reports provided by non-tech folks."
+social_description: "One of the hardest things about debugging websites is parsing bug reports provided by non-tech folks."
 ---
 
 One of the hardest things about debugging websites is parsing bug reports provided by non-tech folks. And one of the most common issues with them is confirmation of what browser & version, OS & version, and possibly what device they are running it on. Do yourself a favor and have them hit [yourbrowser.is](https://yourbrowser.is) to copy & paste the results for you before posting the bug.

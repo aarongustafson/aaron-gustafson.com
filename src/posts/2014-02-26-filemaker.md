@@ -9,6 +9,8 @@ description: "I started attending SXSW in 1997 as a music journalist. I ran a sm
 canonical: "https://blog.easy-designs.net/archives/filemaker/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwncf3s2h"
 image: "/i/share-cards/filemaker.jpg"
+meta_description: "I started attending SXSW in 1997 as a music journalist."
+social_description: "I started attending SXSW in 1997 as a music journalist."
 ---
 
 <p>

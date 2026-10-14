@@ -5,6 +5,8 @@ comments: false
 ref_url: https://developer.microsoft.com/en-us/microsoft-edge/platform/faq/#how-can-i-debug-localhost
 in_reply_to: https://developer.microsoft.com/en-us/microsoft-edge/platform/faq/#how-can-i-debug-localhost
 ref_source: Microsoft Edge Developer
+meta_description: "As a security precaution, Microsoft Edge uses network isolation by default."
+social_description: "As a security precaution, Microsoft Edge uses network isolation by default. You can override it via the command line right now, but it will be in about:flags in the future."
 ---
 
 As a security precaution, Microsoft Edge uses network isolation by default. You can override it via the command line right now, but it will be in `about:flags` in the future.

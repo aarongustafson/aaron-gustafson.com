@@ -9,6 +9,8 @@ ref_source: "Time"
 via:
   name: "Billy Perrigo"
   url: "https://twitter.com/billyperrigo/status/1615682180201447425"
+meta_description: "Ethical supply chains need to protect knowledge workers, not only the people extracting minerals or working in factories."
+social_description: "We talk a lot about needing to improve the ethics of our supply chains when it comes to mineral extraction and factory conditions, but we need protections for knowledge workers too!"
 ---
 
 We talk a lot about needing to improve the ethics of our supply chains when it comes to mineral extraction and factory conditions, but we need protections for knowledge workers too!

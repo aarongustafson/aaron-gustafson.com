@@ -10,6 +10,8 @@ description: "When we launched the mobile-first version of this blog, we opted n
 canonical: "https://blog.easy-designs.net/archives/javascript-less-google-finally/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwpknh32g"
 image: "/i/share-cards/javascript-less-google-finally.jpg"
+meta_description: "When we launched the mobile-first version of this blog, we left out Google+ sharing because it couldn’t work without JavaScript."
+social_description: "When we launched the mobile-first version of this blog, we left out Google+ sharing because it couldn’t work without JavaScript. That didn’t fit our progressive enhancement goals."
 ---
 
 <p>

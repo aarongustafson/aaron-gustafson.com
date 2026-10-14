@@ -5,6 +5,8 @@ comments: false
 ref_url: https://thenextweb.com/insider/2015/04/10/locking-the-web-open-why-we-need-to-rethink-the-world-wide-web/
 in_reply_to: https://thenextweb.com/insider/2015/04/10/locking-the-web-open-why-we-need-to-rethink-the-world-wide-web/
 ref_source: The Next Web
+meta_description: "Hmm… distribute the Web for endurance and longevity and make it private through blockchain-esque encryption."
+social_description: "Hmm… distribute the Web for endurance and longevity and make it private through blockchain-esque encryption. It’s an interesting idea, but I don’t know that Marketing will go for it."
 ---
 
 Hmm… distribute the Web for endurance and longevity and make it private through [blockchain](https://en.bitcoin.it/wiki/Block_chain)-esque encryption. It’s an interesting idea, but I don’t know that Marketing will go for it.

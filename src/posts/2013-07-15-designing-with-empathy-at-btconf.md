@@ -10,6 +10,8 @@ description: "A little over a month ago I had the pleasure of speaking at Beyond
 canonical: "https://blog.easy-designs.net/archives/designing-with-empathy-at-btconf/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwnvsyh25"
 image: "/i/share-cards/designing-with-empathy-at-btconf.jpg"
+meta_description: "A little over a month ago I had the pleasure of speaking at Beyond Tellerrand in Düsseldorf, Germany."
+social_description: "A little over a month ago I had the pleasure of speaking at Beyond Tellerrand in Düsseldorf, Germany."
 ---
 
 {% from "macros.njk" import youtube %}

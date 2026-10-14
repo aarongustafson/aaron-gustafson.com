@@ -20,6 +20,8 @@ series:
   ordinal: "9th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvzuwhz2l"
 image: "/i/share-cards/dynamic-datalist-autocomplete-from-an-api.jpg"
+meta_description: "The `<datalist>` element is great for autocomplete, but it’s static."
+social_description: "The `<datalist>` element is great for autocomplete, but it’s static. The dynamic-datalist web component brings dynamic, API-driven suggestions to your text fields as users type."
 ---
 
 HTML’s `datalist` element provides native autocomplete functionality, but it’s entirely static—you have to know all the options up front. The `dynamic-datalist` web component solves this by fetching suggestions from an API endpoint as users type, giving you the benefits of native autocomplete with the flexibility of dynamic data.

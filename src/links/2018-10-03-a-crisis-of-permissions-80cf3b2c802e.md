@@ -9,6 +9,8 @@ ref_source: Jo Franchetti on Medium
 via:
   name: Sally Lait
   url: https://sallylait.com/blog/2018/09/27/thinking-about-permissions/
+meta_description: "More great thoughts on privacy and permissions from Jo Franchetti. I love her list of suggested improvements at the end."
+social_description: "More great thoughts on privacy and permissions from Jo Franchetti. I love her list of suggested improvements at the end."
 ---
 
 More great thoughts on privacy and permissions from [Jo Franchetti](https://twitter.com/ThisIsJoFrank). I love her list of suggested improvements at the end. Especially “Encourage/standardise clearer wording and UI to explain reasons for permissions and how long permissions will be granted.”

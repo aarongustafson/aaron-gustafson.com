@@ -10,6 +10,8 @@ description: "I knew things had taken a turn for the worse when DMCA passed and 
 canonical: "https://blog.easy-designs.net/archives/what-are-they-thinking/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx5mlu725"
 image: "/i/share-cards/what-are-they-thinking.jpg"
+meta_description: "I knew things had taken a darker turn when media owners began discussing ways to spy on consumers’ computers for illicit media."
+social_description: "I knew things had taken a darker turn when media owners began discussing ways to spy on consumers’ computers for illicit media."
 ---
 
 <p>I knew things had taken a turn for the worse when <abbr title="Digital Millenium Copyright Act">DMCA</abbr> passed and media owners were discussing their desire to spy on consumers’ computers in search of illicit media, but who knew it had gotten <a href="http://www.sysinternals.com/blog/2005/10/sony-rootkits-and-digital-rights.html">this bad</a>?</p>

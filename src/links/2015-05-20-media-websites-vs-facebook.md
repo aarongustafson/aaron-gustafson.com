@@ -9,6 +9,8 @@ ref_source: "Baldur Bjarnason’s Blog"
 via:
   name: Jeremy Keith
   url: https://adactio.com/journal/8956
+meta_description: "This post from Baldur Bjarnason hits the nail on the head when it comes to the web vs. platform-specific development."
+social_description: "This post from Baldur Bjarnason hits the nail on the head when it comes to the web vs. platform-specific development."
 ---
 
 This post from [Baldur Bjarnason](https://twitter.com/fakebaldur) hits the nail on the head when it comes to the web vs. platform-specific development. If you work on the web (as I suspect you do since you’re reading this blog), convert "you" and "your" to "we" and "our":

@@ -5,6 +5,8 @@ ref_url: https://blog.logrocket.com/using-the-chrome-devtools-new-code-coverage-
 in_reply_to: https://blog.logrocket.com/using-the-chrome-devtools-new-code-coverage-feature-ca96c3dddcaf
 ref_source: LogRocket Blog
 tags: [performance, CSS, JavaScript, DevTools]
+meta_description: "A look at Chrome DevTools’ new code-coverage feature and what it reveals about unused code."
+social_description: "While the name is a bit confusing, this new tool helps you compare the volume of code you’ve authored to the the amount of code that is actually executed by the browser."
 ---
 
 While the name is a bit confusing, this new tool helps you compare the volume of code you’ve authored to the the amount of code that is actually executed by the browser. It’s a cool idea, but you should take it’s results with a grain of salt: This tool is only diagnosing your project based on _the current page and/or flow_ (if it’s a single page app). Be careful not to take the results as gospel and start eliminating code without knowing whether it’s actually unused in all scenarios.

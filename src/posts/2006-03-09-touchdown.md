@@ -10,6 +10,8 @@ description: "Kel and I landed in Austin, TX this afternoon. We’re here for SX
 canonical: "https://blog.easy-designs.net/archives/touchdown/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnx2rh572f"
 image: "/i/share-cards/touchdown.jpg"
+meta_description: "Kel and I landed in Austin, TX this afternoon. We’re here for SXSWi. It’s like an annual pilgrimage."
+social_description: "Kel and I landed in Austin, TX this afternoon. We’re here for SXSWi. It’s like an annual pilgrimage."
 ---
 
 <p><img alt="Dinner at the Paradise in Austin, TX" class="feature" src="http://static.flickr.com/52/110334725_d95f121ff8_m.jpg"/></p>

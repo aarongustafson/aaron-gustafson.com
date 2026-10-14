@@ -8,6 +8,8 @@ description: "This is a fascinating look at how MDN rebuilt its frontend around 
 twitter_text: "This is a fascinating architecture write-up from MDN: fewer abstractions, less shipped JavaScript, and interactivity where it actually belongs."
 ref_url: https://developer.mozilla.org/en-US/blog/mdn-front-end-deep-dive/
 in_reply_to: https://developer.mozilla.org/en-US/blog/mdn-front-end-deep-dive/
+meta_description: "A fascinating look at how MDN rebuilt its frontend with server-rendered HTML, web components, and a clear role for interactivity."
+social_description: "This is a fascinating look at how MDN rebuilt its frontend around server-rendered HTML, web components, and a clear understanding of where interactivity actually belongs."
 ---
 
 This is a fascinating look at how MDN rebuilt its frontend around server-rendered HTML, web components, and a clear understanding of where interactivity actually belongs (and how to deliver it).

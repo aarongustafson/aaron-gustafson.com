@@ -9,6 +9,8 @@ description: "While building a Flash game, I wrote some code to alternate throug
 canonical: "https://blog.easy-designs.net/archives/speeding-up-your-code-with-the-bitwise-operator/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwzhd7h25"
 image: "/i/share-cards/speeding-up-your-code-with-the-bitwise-operator.jpg"
+meta_description: "While building a Flash game, I wrote some code to alternate through squares on a grid system and it seemed rather slow."
+social_description: "While building a Flash game, I wrote some code to alternate through squares on a grid system and it seemed rather slow."
 ---
 
 <p><img alt="" class="feature" id="image95" src="/i/posts/2006-03-28/binary.gif"/></p>

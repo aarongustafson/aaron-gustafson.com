@@ -6,6 +6,8 @@ ref_url: https://begin.com/blog/posts/2023-02-28-redefining-developer-experience
 in_reply_to: https://begin.com/blog/posts/2023-02-28-redefining-developer-experience
 twitter_text: "Excellent discussion of #DeveloperExperience in the context of #WebDevelopment."
 ref_source: "Begin Blog"
+meta_description: "This is a rather lengthy piece on developer experience from Cole Peters (who works on the Enhance framework)."
+social_description: "This is a rather lengthy piece on developer experience from Cole Peters (who works on the Enhance framework). He makes some excellent points."
 ---
 
 This is a rather lengthy piece on developer experience from Cole Peters (who works on the Enhance framework). He makes some excellent points, including this one:

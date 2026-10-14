@@ -6,6 +6,8 @@ tags: [accessibility]
 ref_url: https://medium.com/@amyalexandraleak/should-you-use-alt-text-or-a-caption-48311e259ded
 in_reply_to: https://medium.com/@amyalexandraleak/should-you-use-alt-text-or-a-caption-48311e259ded
 ref_source: Amy Leak on Medium
+meta_description: "Amy Leak offers a straightforward comparison of alt text and captions, including some excellent examples of when and how to use each."
+social_description: "Amy Leak offers a straightforward comparison of alt text and captions, including some excellent examples of when and how to use each."
 ---
 
 Amy Leak offers a straightforward comparison of `alt` text and captions, including some excellent examples of when and how to use each. There’s so much great advice in this article, I won’t take up any more of your time. Go read it!

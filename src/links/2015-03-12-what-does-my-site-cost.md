@@ -5,6 +5,8 @@ comments: false
 ref_url: https://whatdoesmysitecost.com/
 in_reply_to: https://whatdoesmysitecost.com/
 ref_source: Tim Kadlec
+meta_description: "This is a fantastic tool from the one and only Tim Kadlec that helps you understand how much it costs to load your web page."
+social_description: "This is a fantastic tool from the one and only Tim Kadlec. It helps you get a better understanding of how much it costs users to view a web page in different countries around the world."
 ---
 
 This is a fantastic tool from the one and only Tim Kadlec. It helps you get a better understanding of how much it costs users to view a web page in different countries around the world.

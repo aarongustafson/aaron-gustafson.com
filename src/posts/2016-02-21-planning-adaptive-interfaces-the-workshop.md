@@ -16,6 +16,8 @@ crossposted:
   Medium: https://medium.com/@AaronGustafson/a16245f78d65
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwfkwod2p"
 image: "/i/share-cards/planning-adaptive-interfaces-the-workshop.jpg"
+meta_description: "For the last few years I’ve been running a workshop alternately titled “Planning Adaptive Interfaces” or “Beyond Responsive”, depending on the conference."
+social_description: "For the last few years I’ve been running a workshop alternately titled “Planning Adaptive Interfaces” or “Beyond Responsive”, depending on the conference."
 ---
 
 For the last few years I’ve been running a workshop alternately titled “Planning Adaptive Interfaces” or “Beyond Responsive”, depending on the conference. It’s been one of my favorite workshops to run for a number of reasons, but before I get into that, let me explain what it is and how it works.

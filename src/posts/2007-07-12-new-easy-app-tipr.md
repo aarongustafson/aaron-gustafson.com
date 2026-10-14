@@ -9,6 +9,8 @@ description: "Those of you who’ve been paying attention to the apps that came 
 canonical: "https://blog.easy-designs.net/archives/new-easy-app-tipr/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwxaiux2f"
 image: "/i/share-cards/new-easy-app-tipr.jpg"
+meta_description: "If you’ve followed the apps coming out of iPhoneDevCamp, you may already know this one: we just launched Tipr."
+social_description: "Tipr makes it easier to leave and collect tips through a simple app."
 ---
 
 <p>Those of you who’ve been paying attention to the apps that came out of <a href="http://barcamp.org/iPhoneDevCamp">iPhoneDevCamp</a> (or who are using <a href="http://applists.com">Applists</a>, <del><a href="http://web.archive.org/web/20071225132153/appmarks.com/main/">AppMarks</a>,</del> or any of the other iPhone web app aggregators/launchers) are probably already aware, but we just launched our first micro-application named “Tipr” last week.</p>

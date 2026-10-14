@@ -9,6 +9,8 @@ description: "A recent study in of the UK came to the conclusion that over 90% o
 canonical: "https://blog.easy-designs.net/archives/over-90-of-newspaper-reading-is-in-print/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwnlsas2w"
 image: "/i/share-cards/over-90-of-newspaper-reading-is-in-print.jpg"
+meta_description: "A recent study in of the UK came to the conclusion that over 90% of newspaper reading is still taking place in print."
+social_description: "A recent study in of the UK came to the conclusion that over 90% of newspaper reading is still taking place in print."
 ---
 
 <p>

@@ -5,6 +5,8 @@ comments: false
 ref_url: https://www.bing.com/webmaster/tools/mobile-friendliness
 in_reply_to: https://www.bing.com/webmaster/tools/mobile-friendliness
 ref_source: Bing
+meta_description: "The folks at Bing have put together their own mobile-friendliness test."
+social_description: "The folks at Bing have put together their own mobile-friendliness test. Like the Google one, it’s a good litmus test for how you’re doing, but neither is a replacement for testing on a real device."
 ---
 
 The folks at Bing have put together their own mobile-friendliness test. Like [the Google one](https://www.google.com/webmasters/tools/mobile-friendly/), it’s a good litmus test for how you’re doing, but neither is a replacement for testing on a real device.

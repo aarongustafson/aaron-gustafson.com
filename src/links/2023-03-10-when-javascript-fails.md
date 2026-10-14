@@ -6,6 +6,8 @@ ref_url: https://medium.com/@jason.godesky/when-javascript-fails-52eef47e90db
 in_reply_to: https://medium.com/@jason.godesky/when-javascript-fails-52eef47e90db
 twitter_text: "An excellent reflection on JavaScript and progressive enhancement."
 ref_source: "Jason Godesky"
+meta_description: "A clear account of how JavaScript fails on the web—and why progressive enhancement remains such an important approach."
+social_description: "This piece does a great job of relaying the reality of JavaScript failures on the web and makes a strong case for why progressive enhancement is such an important approach."
 ---
 
 This piece does a great job of relaying the reality of JavaScript failures on the web and makes a strong case for why progressive enhancement is such an important approach. Jason’ illustrations of who is affected by JavaScript failures and how are particularly compelling.

@@ -18,6 +18,8 @@ hero:
   offset: "100"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw4perp2w"
 image: "/i/share-cards/spellcheckers-exfiltrating-pii_-not-so-fast.jpg"
+meta_description: "Otto’s research showed how spellcheck services can leak sensitive data, including passwords, from a website."
+social_description: "A recent post from the Otto JS research team highlighted how spellcheck services can inadvertently exfiltrate sensitive user data, including passwords, from your site."
 ---
 
 A recent post from the [Otto JS](https://www.otto-js.com) research team highlighted [how spellcheck services can inadvertently exfiltrate sensitive user data, including passwords](https://www.otto-js.com/news/article/chrome-and-edge-enhanced-spellcheck-features-expose-pii-even-your-passwords), from your site. To be honest, I found the post a tad alarmist and lacking when it came to recommending solid protections. Consider this your no-nonsense guide to protecting your users’ sensitive information.

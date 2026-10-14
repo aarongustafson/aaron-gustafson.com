@@ -11,6 +11,8 @@ series:
   ordinal: "22nd"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw7r7fw2e"
 image: "/i/share-cards/jack-johnson-trolled-for-his-shot-at-equality-and-inspired-future-generations-of-black-athlete-activists.jpg"
+meta_description: "Jack Johnson’s unwillingness to settle for what he was given became an example for future athletes."
+social_description: "Jack Johnson’s unwillingness to settle for what he was given as a Black man in early 20th Century America became an example for future athletes to use their visibility to agitate for change."
 ---
 
 As I’ve mentioned before, I’m not much of a sports guy. And if I’m not much of a sports guy, I’m really not much of a boxing guy; I’ve just never been into watching people beat the crap out of each other. That said, I find Jack Johnson’s story an interesting one, especially for its significance in the time of modern athlete activists like Colin Kaepernick.

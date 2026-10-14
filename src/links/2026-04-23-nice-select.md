@@ -8,6 +8,8 @@ description: "This is a terrific demonstration of how far the platform has come:
 twitter_text: "This is exactly the sort of UI work I love seeing: ambitious, polished, and still rooted in native controls and progressive enhancement."
 ref_url: https://nerdy.dev/nice-select
 in_reply_to: https://nerdy.dev/nice-select
+meta_description: "A terrific demonstration of a richly styled `<select>` built with native semantics, native accessibility, and progressive enhancement."
+social_description: "A terrific demonstration of a richly styled `<select>` built with native semantics, native accessibility, and progressive enhancement."
 ---
 
 This is a terrific demonstration of how far the platform has come: a richly styled `select` that leans on native semantics, native accessibility, and progressive enhancement instead of fighting the browser.

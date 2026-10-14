@@ -9,6 +9,8 @@ ref_source: "Appt"
 via:
   name: "Bruce Lawson"
   url: "https://twitter.com/brucel/status/1573217713975181313"
+meta_description: "Interesting study of 2 million Dutch smartphone users reveals how many people are using accessibility features on their phones (and which ones)."
+social_description: "Interesting study of 2 million Dutch smartphone users reveals how many people are using accessibility features on their phones (and which ones). It’s more than you think."
 ---
 
 Interesting study of ~2 million Dutch smartphone users reveals how many people are using accessibility features on their phones (and which ones). It’s more than you think.

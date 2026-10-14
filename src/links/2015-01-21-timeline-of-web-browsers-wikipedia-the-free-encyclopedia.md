@@ -5,6 +5,8 @@ comments: false
 ref_url: https://en.wikipedia.org/wiki/Timeline_of_web_browsers
 in_reply_to: https://en.wikipedia.org/wiki/Timeline_of_web_browsers
 ref_source: Wikipedia
+meta_description: "I love this visual timeline of web browsers and the way it shows where browser ideas converged, diverged, and changed course."
+social_description: "I love this visual timeline of Web browsers because it shows where we’ve been, where we’re at and where browsers have converged, diverged, and switched things up. Thank you Internet!"
 ---
 
 I love this visual timeline of Web browsers because it shows where we’ve been, where we’re at and where browsers have converged, diverged, and switched things up. Thank you Internet!

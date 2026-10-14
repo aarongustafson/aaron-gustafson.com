@@ -6,6 +6,8 @@ tags: ["web design", accessibility, forms, "inclusive design"]
 description: "We need to remember that we are authoring interfaces that will be used by actual people. When we are creating forms that don’t require that kind of scientific rigor, we can (and should) do whatever we can to make the interaction more human."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwjd3ya2w"
 image: "/i/share-cards/consider-how-your-forms-read.jpg"
+meta_description: "We need to remember that we are authoring interfaces that will be used by actual people."
+social_description: "We need to remember that we are authoring interfaces that will be used by actual people."
 ---
 
 While listening to [Radiolab’s “The Trust Engineers”](http://www.radiolab.org/story/trust-engineers/), I’ll admit I got a little excited when they started talking about web form performance. And no, not “performance” in the time-to-download sense, but “performance” in terms of how well the forms performed in attempting to capture meaningful, actionable data.

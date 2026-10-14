@@ -5,6 +5,8 @@ comments: false
 ref_url: https://christianheilmann.com/2015/01/22/browsers-services-and-the-os-oh-my/
 in_reply_to: https://christianheilmann.com/2015/01/22/browsers-services-and-the-os-oh-my/
 ref_source: Christian Heilmann
+meta_description: "Christian Heilmann considers the shifting relationship between browsers, services, and the operating system."
+social_description: "Christian Heilmann’s take on yesterday’s IE announcement, including a bit of historical context and a look toward the future of browsers killing stand-alone apps."
 ---
 
 [Christian Heilmann](https://christianheilmann.com)’s take on [yesterday’s IE announcement](https://news.microsoft.com/windows10story/), including a bit of historical context and a look toward the future of browsers killing stand-alone apps.

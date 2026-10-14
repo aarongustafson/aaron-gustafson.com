@@ -9,6 +9,8 @@ description: "As some of you have read (or heard ), WaSP organized a Round Table
 canonical: "https://blog.easy-designs.net/archives/automatically-opting-in-to-ie-standards-mode/"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwwqj4c2l"
 image: "/i/share-cards/automatically-opting-in-to-ie-standards-mode.jpg"
+meta_description: "A guide to opting into IE8’s Standards Mode automatically."
+social_description: "As some of you have read (or heard), WaSP organized a Round Table discussion on IE 8’s standards mode and its default behavior of opting-out any sites that don’t engage in version targeting."
 ---
 
 <p><img alt="Web standards Project" src="/i/posts/2008-02-25/wasp-logo.png" style="float: left;"/>As some of you have <a href="http://www.webstandards.org/2008/02/24/wasp-round-table-ie8s-default-version-targeting-behavior/">read</a> (or <a href="http://www.webstandards.org.nyud.net/files/wasp_ie8_round_table_discussion_final.mp3">heard</a>), WaSP organized a Round Table discussion on IE8’s standards mode and its default behavior of opting-out any sites that don’t engage in <a href="http://www.alistapart.com/articles/beyonddoctype">version targeting</a>. We discussed a few different aspects of the issues this presents for standards-aware developers (and progress on the web in general) and discussed a few tacks Microsoft could take to make IE8 more standardista-friendly.</p>
