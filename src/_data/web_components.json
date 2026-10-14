@@ -14,11 +14,25 @@
 		"npm_package": "@aarongustafson/dynamic-datalist"
 	},
 	{
+		"name": "form-dropzone",
+		"github": "aarongustafson/form-dropzone",
+		"description": "A progressively enhanced file field wrapper with drag-and-drop support, accessible status announcements, and optional image previews.",
+		"demo_url": "https://aarongustafson.github.io/form-dropzone/demo/",
+		"npm_package": "@aarongustafson/form-dropzone"
+	},
+	{
 		"name": "form-matching-fields",
 		"github": "aarongustafson/form-matching-fields",
 		"description": "Web component wrapper that adds additive validation to ensure two text-type fields match.",
 		"demo_url": "https://aarongustafson.github.io/form-matching-fields/demo/",
 		"npm_package": "@aarongustafson/form-matching-fields"
+	},
+	{
+		"name": "form-maxlength-progress",
+		"github": "aarongustafson/form-maxlength-progress",
+		"description": "Indicates someone’s progress toward the limit of a field’s `maxlength` value.",
+		"demo_url": "https://aarongustafson.github.io/form-maxlength-progress/demo/",
+		"npm_package": "@aarongustafson/form-maxlength-progress"
 	},
 	{
 		"name": "form-obfuscator",
