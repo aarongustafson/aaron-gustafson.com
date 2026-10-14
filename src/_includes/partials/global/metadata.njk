@@ -1,0 +1,29 @@
+<title>{{ metadata.documentTitle | escape }}</title>
+<meta name="description" content="{{ metadata.metaDescription | escape }}">
+<meta name="robots" content="index,follow">
+<meta name="author" content="{{ site.author.name | escape }}">
+<link rel="canonical" href="{{ metadata.canonicalUrl | escape }}">
+
+<meta property="og:title" content="{{ metadata.socialTitle | escape }}">
+<meta property="og:type" content="{{ metadata.type | escape }}">
+<meta property="og:url" content="{{ metadata.canonicalUrl | escape }}">
+<meta property="og:description" content="{{ metadata.socialDescription | escape }}">
+<meta property="og:site_name" content="{{ metadata.siteName | escape }}">
+<meta property="og:locale" content="{{ metadata.locale | escape }}">
+{% if metadata.image %}
+	<meta property="og:image" content="{{ metadata.image | escape }}">
+	{% if metadata.imageType %}<meta property="og:image:type" content="{{ metadata.imageType | escape }}">{% endif %}
+	{% if metadata.imageWidth %}<meta property="og:image:width" content="{{ metadata.imageWidth }}">{% endif %}
+	{% if metadata.imageHeight %}<meta property="og:image:height" content="{{ metadata.imageHeight }}">{% endif %}
+	<meta property="og:image:alt" content="{{ metadata.imageAlt | escape }}">
+{% endif %}
+
+<meta name="twitter:card" content="{{ metadata.twitterCard | escape }}">
+{% if metadata.twitterSite %}<meta name="twitter:site" content="@{{ metadata.twitterSite | escape }}">{% endif %}
+<meta name="twitter:url" content="{{ metadata.canonicalUrl | escape }}">
+<meta name="twitter:title" content="{{ metadata.socialTitle | escape }}">
+<meta name="twitter:description" content="{{ metadata.socialDescription | escape }}">
+{% if metadata.image %}
+	<meta name="twitter:image" content="{{ metadata.image | escape }}">
+	<meta name="twitter:image:alt" content="{{ metadata.imageAlt | escape }}">
+{% endif %}

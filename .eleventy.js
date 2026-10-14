@@ -1,4 +1,3 @@
-import pluginSEO from "eleventy-plugin-seo";
 // import { DateTime } from "luxon";
 // import upgrade_helper from "@11ty/eleventy-upgrade-help";
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
@@ -30,10 +29,7 @@ const markdown_options = {
 import fs from "fs";
 import path from "path";
 
-import { readFile, cp } from "fs/promises";
-const seo_conf = JSON.parse(
-  await readFile(new URL("./src/_data/seo.json", import.meta.url)),
-);
+import { cp } from "fs/promises";
 
 import dotenv from "dotenv";
 dotenv.config();
@@ -138,7 +134,6 @@ export default async (config) => {
   );
 
   // Plugins
-  config.addPlugin(pluginSEO, seo_conf);
   // Load SVG plugin always (since templates depend on it) but optimize for production
   config.addPlugin(
     svgContents,
