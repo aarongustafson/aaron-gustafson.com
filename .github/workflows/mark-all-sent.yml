@@ -23,6 +23,10 @@ on:
         default: false
         type: boolean
 
+permissions:
+  actions: write
+  contents: read
+
 # Reuse the same concurrency group as the syndication workflow so this action
 # cannot run at the same time as a normal syndication run and vice versa.
 concurrency:

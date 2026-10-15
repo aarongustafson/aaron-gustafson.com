@@ -68,7 +68,7 @@ sitemap: false
 								<input id="p_source" name="p_source" required />
 							</li>
 							<li class="fields__group fields__group--textarea">
-								<label for="p_body">Want to tweet something specific?</label>
+								<label for="p_tweet">Want to tweet something specific?</label>
 								<textarea
 									id="p_tweet"
 									name="p_tweet"
@@ -109,28 +109,37 @@ sitemap: false
 							</li>
 						</ul>
 					</fieldset>
+					<ul class="fields">
+						<li class="fields__group fields__group--text">
+							<label for="username">Username</label>
+							<input
+								type="text"
+								id="username"
+								name="username"
+								autocomplete="username"
+								required
+							/>
+						</li>
+						<li class="fields__group fields__group--password">
+							<label for="token">Token</label>
+							<input
+								type="password"
+								id="token"
+								name="token"
+								autocomplete="current-password"
+								required
+							/>
+						</li>
+					</ul>
 					<p>
 						<button class="button" id="go">Save It</button>
 					</p>
 					<details id="setup">
 						<summary>Setup</summary>
-						<ul class="fields">
-							<li class="fields__group fields__group--text">
-								<label for="username">Username</label>
-								<input id="username" name="username" required />
-							</li>
-							<li class="fields__group fields__group--password">
-								<label for="password">Token</label>
-								<input type="password" id="password" name="password" required />
-							</li>
-							<li class="fields__group fields__group--buttons">
-								<button id="save">Save your credentials</button>
-							</li>
-						</ul>
 						<p>
 							Drag this link to your bookmarks, to post from any webpage:
 							<a
-								href="javascript:(function(){var title = document.getElementsByTagName('title')[0].innerHTML;title = encodeURIComponent(title);var selection = '';if (window.getSelection) {selection = window.getSelection().toString();} else if (document.selection &amp;&amp; document.selection.type != 'Control') {selection = document.selection.createRange().text;}selection = encodeURIComponent(selection);new_window=window.open(`{{ site.url }}/linky/poo/?title=${title}&amp;selection=${selection}&amp;url=${encodeURIComponent(document.location.href)}`,`LinkyPooPopup`,`resizable,scrollbars,status=0,toolbar=0,menubar=0,titlebar=0,width=640,height=600,location=0`);})();"
+								href="javascript:(function(){var title = encodeURIComponent(document.title);var selection = '';if (window.getSelection) {selection = window.getSelection().toString();} else if (document.selection &amp;&amp; document.selection.type != 'Control') {selection = document.selection.createRange().text;}selection = encodeURIComponent(selection);window.open(`{{ site.url }}/linky/poo/?title=${title}&amp;selection=${selection}&amp;url=${encodeURIComponent(document.location.href)}`,`LinkyPooPopup`,`resizable,scrollbars,status=0,toolbar=0,menubar=0,titlebar=0,width=640,height=600,location=0`);})();"
 								>Linky</a
 							>
 						</p>
@@ -144,17 +153,6 @@ sitemap: false
 			defer
 		></script>
 		<script>
-			function get_query() {
-				var url = document.location.href;
-				if (url.indexOf("?") == -1) return false;
-				var qs = url.substring(url.indexOf("?") + 1).split("&");
-				for (var i = 0, result = {}; i < qs.length; i++) {
-					qs[i] = qs[i].split("=");
-					result[qs[i][0]] = decodeURIComponent(qs[i][1].replace(/\+/g, "%20"));
-				}
-				return result;
-			}
-
 			function postFile(title) {
 				var d = new Date(),
 					dd = d.getDate(),
@@ -190,85 +188,107 @@ sitemap: false
 				while (t--) {
 					tags[t] = tags[t].trim();
 				}
-				return '["' + tags.join('", "') + '"]';
+				return tags;
 			}
 
 			var API_NEW_POST =
 					"https://api.github.com/repos/{{ site.github.repo }}/contents/src/links/",
-				$go = document.getElementById("go"),
 				$messages = document.getElementById("messages"),
 				$title = document.getElementById("p_title"),
 				$link = document.getElementById("p_link"),
 				$content = document.getElementById("p_body"),
 				$via_url = document.getElementById("p_via_url"),
-				$username = document.getElementById("username"),
-				$password = document.getElementById("password"),
-				$save = document.getElementById("save"),
-				credentials = window.localStorage.getItem("credentials");
+				$token = document.getElementById("token"),
+				$form = document.querySelector("form");
 
 			function toYamlFrontmatter(yaml) {
-				var front_matter = [];
+				var front_matter = ["---"];
 
-				front_matter.push("---");
-				for (key in yaml) {
-					if (yaml[key].constructor == String) {
-						if (
-							key == "title" ||
-							key == "twitter_text" ||
-							key == "ref_source"
-						) {
-							front_matter.push(key + ': "' + yaml[key] + '"');
-						} else {
-							front_matter.push(key + ": " + yaml[key]);
-						}
-					} else if (yaml[key].constructor == Array) {
-						front_matter.push(key + ': ["' + yaml[key].join('", "') + '"]');
-					} else if (yaml[key].constructor == Object) {
+				Object.keys(yaml).forEach(function (key) {
+					if (
+						yaml[key] !== null &&
+						typeof yaml[key] == "object" &&
+						!Array.isArray(yaml[key])
+					) {
 						front_matter.push(key + ":");
-						for (nested in yaml[key]) {
+						Object.keys(yaml[key]).forEach(function (nested) {
 							front_matter.push(
-								"  " + nested + ': "' + yaml[key][nested] + '"',
+								"  " + nested + ": " + JSON.stringify(yaml[key][nested]),
 							);
-						}
+						});
+					} else {
+						front_matter.push(key + ": " + JSON.stringify(yaml[key]));
 					}
-				}
+				});
 				front_matter.push("---");
 
 				return front_matter.join("\n");
 			}
 
-			function linkComplete() {
-				$messages.innerHTML = "<p>Link successfully posted!</p>";
+			function replaceMessage(content) {
+				$messages.replaceChildren(content);
 				$messages.focus();
+			}
+
+			function linkComplete() {
+				var message = document.createElement("p");
+				message.textContent = "Link successfully posted!";
+				replaceMessage(message);
 				setTimeout(function () {
 					window.close();
 				}, 500);
 			}
 
-			function linkFailed(request, status, error) {
-				var responseText = JSON.decode(request.responseText);
-				$messages.innerHTML =
-					'<div role="alert"><strong>' +
-					request.status +
-					"</strong>: " +
-					responseText.message +
-					"<br>If you are using two-factor-auth, you will have to create " +
-					'<a href="https://github.com/settings/tokens">a personal access token</a> ' +
-					" with “repo” permissions and use this instead of your password.</div>";
-				$messages.focus();
+			function githubErrorMessage(request) {
+				var response = request.response;
+
+				if (typeof response == "string") {
+					try {
+						response = JSON.parse(response);
+					} catch (error) {
+						return "";
+					}
+				}
+				return response &&
+					typeof response == "object" &&
+					typeof response.message == "string"
+					? response.message
+					: "";
+			}
+
+			function linkFailed(request, status) {
+				var message = document.createElement("div"),
+					summary = document.createElement("p"),
+					help = document.createElement("p"),
+					tokenLink = document.createElement("a"),
+					githubMessage = githubErrorMessage(request);
+
+				message.setAttribute("role", "alert");
+				summary.textContent =
+					status + (githubMessage ? ": " + githubMessage : "");
+				tokenLink.href = "https://github.com/settings/tokens";
+				tokenLink.textContent = "personal access token";
+				help.append(
+					"If you are using two-factor authentication, create a ",
+					tokenLink,
+					" with “repo” permissions and use it instead of your password.",
+				);
+				message.append(summary, help);
+				replaceMessage(message);
 			}
 
 			function linkCanceled() {
-				$messages.innerHTML = "<p>Link canceled!</p>";
-				$messages.focus();
+				var message = document.createElement("p");
+				message.setAttribute("role", "alert");
+				message.textContent = "Link canceled!";
+				replaceMessage(message);
 			}
 
 			function submitLink(e) {
-				e.cancel;
 				e.preventDefault();
 
 				var link = $link.value,
-					tweet = document.getElementById("p_tweet").value.replace('"', '\"'),
+					tweet = document.getElementById("p_tweet").value,
 					source = document.getElementById("p_source").value,
 					via_name = document.getElementById("p_via_name").value,
 					via_url = document.getElementById("p_via_url").value,
@@ -276,7 +296,7 @@ sitemap: false
 					XHR = new XMLHttpRequest(),
 					p_body;
 
-				yaml.title = $title.value.replace("&nbsp;", " ");
+				yaml.title = $title.value.replaceAll("\u00a0", " ");
 				yaml.date = getDate();
 				yaml.tags = getTags();
 				yaml.ref_url = link;
@@ -300,9 +320,17 @@ sitemap: false
 				XHR.responseType = "json";
 				XHR.setRequestHeader("Accept", "application/vnd.github.v3+json");
 				XHR.setRequestHeader("Content-Type", "application/json; charset=UTF-8");
-				XHR.setRequestHeader("Authorization", "token " + $password.value);
-				XHR.addEventListener("load", linkComplete);
-				XHR.addEventListener("error", linkFailed);
+				XHR.setRequestHeader("Authorization", "token " + $token.value);
+				XHR.addEventListener("load", function () {
+					if (XHR.status >= 200 && XHR.status < 300) {
+						linkComplete();
+					} else {
+						linkFailed(XHR, "GitHub returned status " + XHR.status);
+					}
+				});
+				XHR.addEventListener("error", function () {
+					linkFailed(XHR, "Network error");
+				});
 				XHR.addEventListener("abort", linkCanceled);
 				XHR.send(
 					JSON.stringify({
@@ -316,65 +344,51 @@ sitemap: false
 				);
 			}
 
-			function isValidURL(str) {
-				var a = document.createElement("a");
-				a.href = str;
-				return a.host && a.host != window.location.host;
+			function getHttpUrl(value) {
+				try {
+					var url = new URL(value);
+					return url.protocol == "http:" || url.protocol == "https:"
+						? url.href
+						: "";
+				} catch (error) {
+					return "";
+				}
 			}
 
-			$go.addEventListener("click", submitLink, false);
+			$form.addEventListener("submit", submitLink, false);
 
-			var query_params = get_query();
-			((body_param = query_params["body"]),
-				(src_body = ""),
-				(referrer = document.referrer));
+			var query_params = new URLSearchParams(window.location.search),
+				body_param = query_params.get("body"),
+				src_body = "",
+				referrer = getHttpUrl(document.referrer);
 
-			if (query_params) {
-				if (query_params["title"]) {
-					var src_title = query_params["title"];
+			if (query_params.size > 0) {
+				if (query_params.has("title")) {
+					var src_title = query_params.get("title");
 					$title.value = src_title;
 				}
-				if (query_params["selection"]) {
-					src_body += "> " + query_params["selection"];
+				if (query_params.has("selection")) {
+					src_body += "> " + query_params.get("selection");
 				}
 				if (body_param) {
-					if (isValidURL(body_param)) {
-						$link.value = body_param;
+					var body_url = getHttpUrl(body_param);
+					if (body_url) {
+						$link.value = body_url;
 					} else {
 						src_body += body_param;
 					}
 				}
-				if (query_params["url"]) {
-					$link.value = query_params["url"];
+				if (query_params.has("url")) {
+					var link_url = getHttpUrl(query_params.get("url"));
+					if (link_url) {
+						$link.value = link_url;
+					}
 				}
 				$content.value = src_body;
 			}
 
-			if (referrer != "") {
-				$via_url = referrer;
-			}
-
-			// Credentials
-			$save.addEventListener(
-				"click",
-				function (e) {
-					e.preventDefault();
-					window.localStorage.setItem(
-						"credentials",
-						JSON.stringify({
-							username: document.getElementById("username").value,
-							password: document.getElementById("password").value,
-						}),
-					);
-					$messages.innerHTML = "<p>Credentials saved!</p>";
-					$messages.focus();
-				},
-				false,
-			);
-			if (credentials) {
-				credentials = JSON.parse(credentials);
-				$username.value = credentials.username;
-				$password.value = credentials.password;
+			if (referrer) {
+				$via_url.value = referrer;
 			}
 
 			// Datalist stuff
@@ -424,7 +438,7 @@ sitemap: false
 					$opt;
 
 				if ($input.value.indexOf(separator) > -1 && $input.options.length > 0) {
-					$datalist.innerHTML = "";
+					$datalist.replaceChildren();
 					for (var i = 0; i < options_array.length; i++) {
 						if (prefix.indexOf(options_array[i]) < 0) {
 							$opt = $option.cloneNode(true);

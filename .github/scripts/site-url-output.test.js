@@ -40,11 +40,15 @@ test("webmentions use each post's absolute canonical target", () => {
 		webmentionsPartial,
 		/data-webmention-target="\{\{ this_url \}\}"/,
 	);
+	assert.match(webmentionsScript, /getAttribute\("data-webmention-target"\)/);
 	assert.match(
 		webmentionsScript,
-		/getAttribute\("data-webmention-target"\)/,
+		/endpoint\.searchParams\.set\("per-page",\s*"10000"\)/,
 	);
-	assert.match(webmentionsScript, /"per-page=10000&"/);
+	assert.match(
+		webmentionsScript,
+		/endpoint\.searchParams\.append\("target\[\]",\s*value\)/,
+	);
 });
 
 test("the carbon badge requests the absolute canonical page URL", () => {
@@ -56,10 +60,7 @@ test("the carbon badge requests the absolute canonical page URL", () => {
 		"utf8",
 	);
 	const carbonBadgeScript = fs.readFileSync(
-		new URL(
-			"../../src/_javascript/main/carbon-badge.js",
-			import.meta.url,
-		),
+		new URL("../../src/_javascript/main/carbon-badge.js", import.meta.url),
 		"utf8",
 	);
 
@@ -67,14 +68,8 @@ test("the carbon badge requests the absolute canonical page URL", () => {
 		carbonBadgePartial,
 		/data-carbon-target="\{\{ site\.url \+ page\.url \}\}"/,
 	);
-	assert.match(
-		carbonBadgeScript,
-		/getAttribute\("data-carbon-target"\)/,
-	);
-	assert.match(
-		carbonBadgeScript,
-		/https:\/\/api\.websitecarbon\.com\/b\?url=/,
-	);
+	assert.match(carbonBadgeScript, /getAttribute\("data-carbon-target"\)/);
+	assert.match(carbonBadgeScript, /https:\/\/api\.websitecarbon\.com\/b\?url=/);
 	assert.doesNotMatch(carbonBadgePartial, /website-carbon-badges/);
 });
 
