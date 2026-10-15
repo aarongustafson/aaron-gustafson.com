@@ -1,18 +1,23 @@
 announcement-banner {
 	margin: 0;
 }
-.banner--hide announcement-banner,
+.banner--hide announcement-banner[data-site-announcement],
 announcement-banner[hidden] {
 	display: none;
 }
 /* The close button will not be visible until the component is registered,
  * preventing ghost clicks on the button before the event listener is added.
  */
-button[data-banner-close] {
+button[data-banner-close],
+button[data-service-worker-refresh] {
 	margin-top: 0;
 	margin-block: 0;
+	padding-block: 0.35rem;
+	padding-inline: 0.5rem;
+	margin-inline-start: 0.5rem;
 }
-announcement-banner:not(:defined) [data-banner-close] {
+announcement-banner:not(:defined) [data-banner-close],
+announcement-banner:not(:defined) [data-service-worker-refresh] {
 	opacity: 0;
 	pointer-events: none;
 }

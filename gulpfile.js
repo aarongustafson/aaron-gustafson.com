@@ -10,37 +10,41 @@ import scripts from "./_tasks/scripts.js";
 import sw from "./_tasks/serviceworker.js";
 import styles from "./_tasks/styles.js";
 
-// Debounced task runner to prevent multiple rapid executions
-let taskTimeouts = {};
-
-function debounce(taskName, task, delay = 300) {
-	return () => {
-		clearTimeout(taskTimeouts[taskName]);
-		taskTimeouts[taskName] = setTimeout(task, delay);
-	};
-}
-
 // Enhanced watcher with debouncing
 const watcher = () => {
 	// Watch JavaScript files
 	gulpWatch(
-		`${config.source}/_javascript/**/*.js`,
-		{ ignoreInitial: true },
-		debounce("scripts", scripts, 500),
+		[
+			`${config.source}/_javascript/**/*.js`,
+			`!${config.source}/_javascript/serviceworker/**/*.js`,
+		],
+		{ ignoreInitial: true, delay: 500 },
+		scripts,
 	);
 
 	// Watch image files with longer debounce due to processing time
 	gulpWatch(
 		`${config.source}/_images/**/*`,
-		{ ignoreInitial: true },
-		debounce("images", images, 1000),
+		{ ignoreInitial: true, delay: 1000 },
+		images,
 	);
 
 	// Watch SCSS files
 	gulpWatch(
-		`${config.source}/_styles/**/*.scss`,
-		{ ignoreInitial: true },
-		debounce("styles", styles, 300),
+		`${config.source}/_styles/**/*.{css,scss}`,
+		{ ignoreInitial: true, delay: 300 },
+		styles,
+	);
+
+	// Rebuild the service worker after its source or generated assets change
+	gulpWatch(
+		[
+			`${config.source}/_javascript/serviceworker/**/*.js`,
+			`${config.static}/c/**/*.css`,
+			`${config.static}/j/**/*.js`,
+		],
+		{ ignoreInitial: true, delay: 500 },
+		sw,
 	);
 
 	console.log("👀 Watching for changes...");
@@ -48,7 +52,8 @@ const watcher = () => {
 
 // Optimized build sequences
 export default series(
-	parallel(images, styles, scripts), // Assets that can be built in parallel
+	styles,
+	parallel(images, scripts),
 	parallel(data, sw), // Post-processing tasks
 );
 
@@ -56,10 +61,10 @@ export default series(
 export const watch = watcher;
 
 // Pre-build (before Eleventy) - optimized order
-export const prebuild = parallel(scripts, images, styles);
+export const prebuild = series(styles, parallel(scripts, images));
 
 // Post-build (after Eleventy)
 export const postbuild = parallel(data, sw);
 
 // Fast rebuild (skip unchanged files) - useful for development
-export const quick = parallel(scripts, styles);
+export const quick = series(styles, scripts);
