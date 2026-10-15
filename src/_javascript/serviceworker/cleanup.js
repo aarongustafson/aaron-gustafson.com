@@ -1,5 +1,7 @@
 addEventListener("message", (messageEvent) => {
-	if (messageEvent.data == "clean up") {
+	if (messageEvent.data === "skip waiting") {
+		messageEvent.waitUntil(self.skipWaiting());
+	} else if (messageEvent.data === "clean up") {
 		for (let key in sw_caches) {
 			if (sw_caches[key].limit !== undefined) {
 				trimCache(sw_caches[key].name, sw_caches[key].limit);
