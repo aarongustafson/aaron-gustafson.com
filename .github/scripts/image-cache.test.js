@@ -3,7 +3,11 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import test from "node:test";
-import { isOptimizedCacheHit, smallestBuffer } from "../../_tasks/images.js";
+import {
+	isOptimizedCacheHit,
+	shouldEmitImage,
+	smallestBuffer,
+} from "../../_tasks/images.js";
 
 test("optimized image cache requires matching content and optimizer", () => {
 	const directory = fs.mkdtempSync(path.join(os.tmpdir(), "image-cache-"));
@@ -58,4 +62,10 @@ test("optimization never increases the artifact size", () => {
 
 	assert.equal(smallestBuffer(original, larger), original);
 	assert.equal(smallestBuffer(original, smaller), smaller);
+});
+
+test("watch mode emits only cache misses", () => {
+	assert.equal(shouldEmitImage(true, true), false);
+	assert.equal(shouldEmitImage(false, true), true);
+	assert.equal(shouldEmitImage(true, false), true);
 });
