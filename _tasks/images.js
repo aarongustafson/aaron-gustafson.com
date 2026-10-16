@@ -1,12 +1,12 @@
 /* jshint node: true */
 import fs from "fs";
 import gulp from "gulp";
-import gulpif from "gulp-if";
-import svgo from "gulp-svgo";
+import crypto from "crypto";
 import path from "path";
 import sharp from "sharp";
 import stream from "stream";
 import through2 from "through2";
+import { optimize } from "svgo";
 import config from "./config.js";
 const { dest, src } = gulp;
 const { Transform } = stream;
@@ -18,8 +18,35 @@ const DISABLE_IMAGE_OPTIMIZATION =
 const destination = `${config.static}/i`;
 const dist = `${config.destination}/i`;
 
-// Enhanced cache with file hashes and timestamps
 const cache_file = `${config.cache}/optimized-images.json`;
+const optimizationOptions = {
+	jpeg: {
+		progressive: true,
+		force: false,
+		mozjpeg: true,
+		quality: 85,
+	},
+	png: {
+		progressive: true,
+		force: false,
+		compressionLevel: 9,
+		adaptiveFiltering: true,
+	},
+};
+const optimizerSignature = crypto
+	.createHash("sha256")
+	.update(
+		JSON.stringify({
+			cacheSchema: 3,
+			sharp: sharp.versions.sharp,
+			vips: sharp.versions.vips,
+			svgo: JSON.parse(
+				fs.readFileSync("./node_modules/svgo/package.json", "utf8"),
+			).version,
+			options: optimizationOptions,
+		}),
+	)
+	.digest("hex");
 let imageCache = {};
 
 // Load existing cache
@@ -48,63 +75,59 @@ try {
 	imageCache = {};
 }
 
-// Global cache statistics
 let cacheHits = 0;
 let cacheMisses = 0;
 
-// Check if file needs processing (optimized for performance)
-function needsProcessing(file) {
+function getCacheDetails(file) {
 	const filePath = path.relative(file.cwd, file.path);
-	const stats = fs.statSync(file.path);
-	const currentMtime = stats.mtime.getTime();
-
+	const hash = crypto.createHash("sha256").update(file.contents).digest("hex");
 	const cached = imageCache[filePath];
+	const optimizedPath = path.join(destination, file.relative);
+	const isHit = isOptimizedCacheHit(
+		cached,
+		hash,
+		optimizerSignature,
+		optimizedPath,
+	);
 
-	// Process if:
-	// - File not in cache
-	// - File modification time changed
-	const needsWork = !cached || cached.mtime !== currentMtime;
-
-	if (needsWork) {
-		cacheMisses++;
-		// Update cache immediately for files being processed
-		imageCache[filePath] = {
-			mtime: currentMtime,
-			size: stats.size,
-			processed: Date.now(),
-		};
-	} else {
-		cacheHits++;
-	}
-
-	return needsWork;
+	return { filePath, hash, optimizedPath, isHit };
 }
 
-// Update cache with file info
-const updateCache = () => {
-	let stream = new Transform({
-		objectMode: true,
-		transform: (file, encoding, next) => {
-			const filePath = path.relative(file.cwd, file.path);
+export function isOptimizedCacheHit(
+	cached,
+	sourceHash,
+	signature,
+	optimizedPath,
+) {
+	return Boolean(
+		cached?.optimized === true &&
+		cached.hash === sourceHash &&
+		cached.optimizer === signature &&
+		fs.existsSync(optimizedPath),
+	);
+}
 
-			// Store only essential data for faster caching
-			const stats = fs.statSync(file.path);
-			imageCache[filePath] = {
-				mtime: stats.mtime.getTime(),
-				size: stats.size,
-				processed: Date.now(),
-			};
-
-			return next(null, file);
-		},
-	});
-	return stream;
-};
+export function smallestBuffer(originalContents, optimizedContents) {
+	return optimizedContents.length < originalContents.length
+		? optimizedContents
+		: originalContents;
+}
 
 const writeCache = () => {
 	let stream = new Transform({
 		objectMode: true,
 		transform: (file, encoding, next) => {
+			if (file.imageCacheUpdate) {
+				const { filePath, hash, size, optimized } = file.imageCacheUpdate;
+				imageCache[filePath] = {
+					hash,
+					size,
+					optimized,
+					optimizer: optimizerSignature,
+					processed: Date.now(),
+				};
+				delete file.imageCacheUpdate;
+			}
 			return next(null, file);
 		},
 		flush: (next) => {
@@ -115,40 +138,60 @@ const writeCache = () => {
 	return stream;
 };
 
-// Parallel Sharp processing for better performance
-const processImages = () => {
-	return through2.obj(async function (file, _, cb) {
+const processImages = (counts) => {
+	return through2.obj(async (file, _, cb) => {
+		const originalContents = Buffer.from(file.contents);
+		let cacheDetails;
+
 		try {
-			// If optimization is disabled, keep original bytes.
 			if (DISABLE_IMAGE_OPTIMIZATION) {
+				cacheDetails = getCacheDetails(file);
+				file.imageCacheUpdate = {
+					filePath: cacheDetails.filePath,
+					hash: cacheDetails.hash,
+					size: originalContents.length,
+					optimized: false,
+				};
+				counts.skipped++;
 				return cb(null, file);
 			}
 
-			// Skip if already processed
-			if (!needsProcessing(file)) {
+			cacheDetails = getCacheDetails(file);
+
+			if (cacheDetails.isHit) {
+				file.contents = fs.readFileSync(cacheDetails.optimizedPath);
+				cacheHits++;
+				counts.cached++;
 				return cb(null, file);
 			}
 
-			const result = await sharp(file.contents)
-				.jpeg({
-					progressive: true,
-					force: false,
-					mozjpeg: true,
-					quality: 85, // Add quality control
-				})
-				.png({
-					progressive: true,
-					force: false,
-					compressionLevel: 9,
-					adaptiveFiltering: true,
-				})
-				.toBuffer();
+			cacheMisses++;
 
-			file.contents = result;
+			if (path.extname(file.path).toLowerCase() === ".svg") {
+				const result = optimize(originalContents.toString(), {
+					path: file.path,
+				});
+				const optimizedContents = Buffer.from(result.data);
+				file.contents = smallestBuffer(originalContents, optimizedContents);
+			} else {
+				const optimizedContents = await sharp(originalContents)
+					.jpeg(optimizationOptions.jpeg)
+					.png(optimizationOptions.png)
+					.toBuffer();
+				file.contents = smallestBuffer(originalContents, optimizedContents);
+			}
+
+			file.imageCacheUpdate = {
+				filePath: cacheDetails.filePath,
+				hash: cacheDetails.hash,
+				size: originalContents.length,
+				optimized: true,
+			};
+			counts.optimized++;
 			return cb(null, file);
 		} catch (err) {
-			console.error(`Error processing ${file.path}:`, err);
-			return cb(null, file); // Continue with original file
+			counts.failed++;
+			return cb(new Error(`Error processing ${file.path}: ${err.message}`));
 		}
 	});
 };
@@ -167,8 +210,12 @@ const imageCopyOptions = {
 // Optimized images function with performance tracking
 const images = () => {
 	const startTime = Date.now();
-	let processedCount = 0;
-	let skippedCount = 0;
+	const counts = {
+		optimized: 0,
+		cached: 0,
+		skipped: 0,
+		failed: 0,
+	};
 
 	// Reset cache counters
 	cacheHits = 0;
@@ -180,27 +227,13 @@ const images = () => {
 	return (
 		src(
 			[
-			`${config.source}/_images/**/*.{jpg,png,gif,svg}`,
-			`!${config.source}/**/*.sketch/**`,
-			`!${config.source}/**/.DS_Store`,
+				`${config.source}/_images/**/*.{jpg,png,gif,svg}`,
+				`!${config.source}/**/*.sketch/**`,
+				`!${config.source}/**/.DS_Store`,
 			],
 			imageCopyOptions,
 		)
-
-			// Track cache stats without dropping files (important for clean builds)
-			.pipe(
-				through2.obj(function (file, _, cb) {
-					if (DISABLE_IMAGE_OPTIMIZATION || !needsProcessing(file)) {
-						skippedCount++;
-					} else {
-						processedCount++;
-					}
-					return cb(null, file);
-				}),
-			)
-
-			// Optimize based on file type
-			.pipe(gulpif("*.svg", svgo(), processImages()))
+			.pipe(processImages(counts))
 
 			// Save to destinations
 			.pipe(dest(destination))
@@ -215,7 +248,7 @@ const images = () => {
 						? ((cacheHits / (cacheHits + cacheMisses)) * 100).toFixed(1)
 						: "0.0";
 				console.log(
-					`>>> Images: ${processedCount} processed, ${skippedCount} skipped (${duration}ms, ${hitRate}% cache hit rate)`,
+					`>>> Images: ${counts.optimized} optimized, ${counts.cached} cached, ${counts.skipped} skipped, ${counts.failed} failed (${duration}ms, ${hitRate}% cache hit rate)`,
 				);
 			})
 	);
