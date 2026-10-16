@@ -17,6 +17,7 @@ const DISABLE_IMAGE_OPTIMIZATION =
 
 const destination = `${config.static}/i`;
 const dist = `${config.destination}/i`;
+const isWatch = process.argv.includes("watch");
 
 const cache_file = `${config.cache}/optimized-images.json`;
 const optimizationOptions = {
@@ -113,6 +114,10 @@ export function smallestBuffer(originalContents, optimizedContents) {
 		: originalContents;
 }
 
+export function shouldEmitImage(isCacheHit, watchMode) {
+	return !isCacheHit || !watchMode;
+}
+
 const writeCache = () => {
 	let stream = new Transform({
 		objectMode: true,
@@ -159,9 +164,12 @@ const processImages = (counts) => {
 			cacheDetails = getCacheDetails(file);
 
 			if (cacheDetails.isHit) {
-				file.contents = fs.readFileSync(cacheDetails.optimizedPath);
 				cacheHits++;
 				counts.cached++;
+				if (!shouldEmitImage(true, isWatch)) {
+					return cb();
+				}
+				file.contents = fs.readFileSync(cacheDetails.optimizedPath);
 				return cb(null, file);
 			}
 
