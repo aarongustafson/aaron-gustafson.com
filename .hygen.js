@@ -12,7 +12,7 @@ import * as events from "./src/_data/speaking_engagements.json";
 export default {
 	helpers: {
 		escapeQuotes: (str) => {
-			return str.replace('"', '\\"');
+			return JSON.stringify(String(str)).slice(1, -1);
 		},
 		getTimestamp: () => {
 			return `${iso.replace("T", " ")} -07:00`;

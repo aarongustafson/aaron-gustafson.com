@@ -1,0 +1,92 @@
+{
+	"links": [
+		{
+			"id": "reply-hostile",
+			"source": "https://social.example/@attacker/1",
+			"verified_date": "not a date",
+			"data": {
+				"url": "https://social.example/@attacker/1",
+				"author": {
+					"name": "<img src=x onerror=alert(1)>",
+					"url": "javascript:alert(1)",
+					"photo": "javascript:alert(2)"
+				},
+				"content": "<h1>Heading<h2>Nested</h2><a href=\"javascript:alert(3)\" onclick=\"alert(4)\">bad</a><a href=\"https://safe.example/path\">safe</a><img src=\"javascript:alert(5)\" onerror=\"alert(6)\"><script>alert(7)</script>"
+			},
+			"activity": {
+				"type": "reply"
+			},
+			"__proto__": {
+				"type": "like",
+				"polluted": true
+			}
+		},
+		{
+			"id": "like-valid",
+			"source": "https://example.com/like",
+			"data": {
+				"url": "https://example.com/like",
+				"author": {
+					"name": "A Liker",
+					"url": "https://example.com/",
+					"photo": "https://example.com/photo.jpg"
+				}
+			},
+			"activity": {
+				"type": "like"
+			}
+		},
+		{
+			"id": "twitter-like-alice",
+			"source": "https://twitter.com/example/status/123456789#favorited-by-alice",
+			"data": {
+				"url": "https://twitter.com/example/status/123456789#favorited-by-alice",
+				"author": {
+					"name": "Alice",
+					"url": "https://twitter.com/alice"
+				}
+			},
+			"activity": {
+				"type": "like"
+			}
+		},
+		{
+			"id": "twitter-like-bob",
+			"source": "https://twitter.com/example/status/123456789#favorited-by-bob",
+			"data": {
+				"url": "https://twitter.com/example/status/123456789#favorited-by-bob",
+				"author": {
+					"name": "Bob",
+					"url": "https://twitter.com/bob"
+				}
+			},
+			"activity": {
+				"type": "like"
+			}
+		},
+		{
+			"id": "repost-valid",
+			"source": "https://example.net/repost",
+			"data": {
+				"url": "https://example.net/repost",
+				"author": {
+					"name": "A Reposter",
+					"url": "https://example.net/"
+				}
+			},
+			"activity": {
+				"type": "repost"
+			}
+		},
+		{
+			"id": "bookmark-valid",
+			"source": "https://example.org/bookmark",
+			"data": {
+				"url": "https://example.org/bookmark"
+			},
+			"activity": {
+				"type": "bookmark"
+			}
+		}
+	]
+}

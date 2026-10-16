@@ -57,6 +57,10 @@ on:
   schedule:
     - cron: "30 18 * * 1-5"
 
+permissions:
+  actions: write
+  contents: read
+
 # Only allow one syndication run at a time per branch to prevent concurrent runs
 # from reading the same stale cache and sending duplicate posts to social platforms.
 # cancel-in-progress: false ensures queued runs wait for the current run to finish

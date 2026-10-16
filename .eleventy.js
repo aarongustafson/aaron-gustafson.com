@@ -34,6 +34,7 @@ import { cp } from "fs/promises";
 import dotenv from "dotenv";
 dotenv.config();
 const PRODUCTION = process.env.NODE_ENV === "production";
+const NETLIFY_IMAGE_CDN = PRODUCTION && process.env.NETLIFY === "true";
 
 const EVENTS = JSON.parse(
   fs.readFileSync("./src/_data/speaking_engagements.json"),
@@ -163,10 +164,10 @@ export default async (config) => {
       sizes: "(min-width:60em) 700px, (max-width: 60em) 100vw",
       resizedImageUrl: (src, width) => {
         const sameOriginPath = getSameOriginPath(src);
-        if (PRODUCTION && sameOriginPath) {
+        if (NETLIFY_IMAGE_CDN && sameOriginPath) {
           return `/img/${width}${sameOriginPath}`;
         }
-        return PRODUCTION
+        return NETLIFY_IMAGE_CDN
           ? getNetlifyImageUrl(src, { width })
           : src.replace(config.hostname, "");
       },
@@ -182,12 +183,12 @@ export default async (config) => {
       sizes: "100px",
       resizedImageUrl: (src) => {
         const sameOriginPath = getSameOriginPath(src);
-        if (PRODUCTION && sameOriginPath) {
+        if (NETLIFY_IMAGE_CDN && sameOriginPath) {
           return `/img/100/x/100${sameOriginPath}`;
         }
         // Avoid Netlify remote-image allowlist churn for external thumbnails.
         // Keep remote URLs as-is, and only optimize same-origin assets.
-        return PRODUCTION ? src : src.replace(config.hostname, "");
+        return NETLIFY_IMAGE_CDN ? src : src.replace(config.hostname, "");
       },
       attributes: {
         loading: "lazy",
@@ -202,10 +203,10 @@ export default async (config) => {
       sizes: "(min-width:60em) 700px, (max-width: 60em) 100vw",
       resizedImageUrl: (src, width) => {
         const sameOriginPath = getSameOriginPath(src);
-        if (PRODUCTION && sameOriginPath) {
+        if (NETLIFY_IMAGE_CDN && sameOriginPath) {
           return `/img/${width}${sameOriginPath}`;
         }
-        return PRODUCTION
+        return NETLIFY_IMAGE_CDN
           ? getNetlifyImageUrl(src, { width })
           : src.replace(config.hostname, "");
       },

@@ -23,10 +23,33 @@ const events = JSON.parse(
   ),
 );
 
+export function escapeYamlDoubleQuotedScalar(value) {
+  return JSON.stringify(String(value)).slice(1, -1);
+}
+
+export function getPresentationEmbedUrl(value) {
+  try {
+    const url = new URL(value);
+    const pathSegments = url.pathname.split("/").filter(Boolean);
+
+    if (
+      url.protocol !== "https:" ||
+      url.hostname !== "presentations.aaron-gustafson.com" ||
+      pathSegments.length < 2
+    ) {
+      return value;
+    }
+
+    return `https://presentations.aaron-gustafson.com/${pathSegments[0]}/embed`;
+  } catch {
+    return value;
+  }
+}
+
 // Helper functions
-const helpers = {
+export const helpers = {
   escapeQuotes: (str) => {
-    return str.replace('"', '\\"');
+    return escapeYamlDoubleQuotedScalar(str);
   },
   getTimestamp: () => {
     return `${iso.replace("T", " ")} +00:00`;
@@ -771,11 +794,7 @@ export default function (plop) {
         name: "slides.embed",
         message: "Embed URL",
         when: (answers) => answers.has_slides,
-        default: (answers) =>
-          answers.slides.link.replace(
-            /^(https:\/\/presentations.aaron-gustafson.com\/.+?)\/.+$/,
-            "$1/embed",
-          ),
+        default: (answers) => getPresentationEmbedUrl(answers.slides.link),
       },
       {
         type: "input",
