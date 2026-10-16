@@ -77,6 +77,11 @@ test("forms load the packaged Form Saver web component", () => {
 	}
 });
 
+test("contact fields expose autofill metadata", () => {
+	assert.match(contactSource, /name="Field12"[\s\S]*?autocomplete="name"/);
+	assert.match(contactSource, /name="Field13"[\s\S]*?autocomplete="email"/);
+});
+
 test("Linky exposes password-manager fields and clears accepted drafts", () => {
 	const usernamePosition = linkySource.indexOf('autocomplete="username"');
 	const tokenPosition = linkySource.indexOf('autocomplete="current-password"');
