@@ -18,6 +18,7 @@ const source_folder = `${config.source}/_javascript`;
 const destination_folder = `${config.static}/j`;
 const dist = `${config.destination}/j`;
 const isWatch = process.argv.includes("watch");
+const form_saver_source = "node_modules/@aarongustafson/form-saver";
 
 function getFolders(dir) {
 	return fs.readdirSync(dir).filter(function (file) {
@@ -25,8 +26,25 @@ function getFolders(dir) {
 	});
 }
 
+const copyFormSaver = () =>
+	new Promise((resolve, reject) => {
+		src(
+			[
+				path.join(form_saver_source, "define.js"),
+				path.join(form_saver_source, "form-saver.js"),
+			],
+			{ base: form_saver_source },
+		)
+			.pipe(dest(path.join(destination_folder, "form-saver")))
+			.pipe(dest(path.join(dist, "form-saver")))
+			.on("finish", resolve)
+			.on("error", reject);
+	});
+
 // Optimized scripts function with better caching
 const scripts = async () => {
+	await copyFormSaver();
+
 	const folders = getFolders(source_folder);
 
 	for (const folder of folders
