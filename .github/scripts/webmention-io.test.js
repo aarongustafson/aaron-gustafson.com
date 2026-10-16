@@ -83,6 +83,22 @@ test("renders hostile replies as sanitized DOM fragments", () => {
 	);
 });
 
+test("keeps Twitter likes with distinct favorited-by fragments", () => {
+	const window = createPage();
+	const likes = fixture.links.filter((link) =>
+		link.source.includes("#favorited-by-"),
+	);
+
+	window.WebmentionIO.processWebmentions({ links: likes });
+
+	assert.deepEqual(
+		[...window.document.querySelectorAll(".webmentions--likes .webmention")].map(
+			(mention) => mention.id,
+		),
+		["webmention-twitter-like-bob", "webmention-twitter-like-alice"],
+	);
+});
+
 test("preserves replies, likes, reposts, bookmarks, counters, and encoded targets", () => {
 	const window = createPage();
 	window.WebmentionIO.processWebmentions({ links: fixture.links });
@@ -94,7 +110,7 @@ test("preserves replies, likes, reposts, bookmarks, counters, and encoded target
 	);
 	assert.equal(
 		document.querySelectorAll(".webmentions--likes .webmention--like").length,
-		1,
+		3,
 	);
 	assert.equal(
 		document.querySelectorAll(".webmentions--reposts .webmention--repost")
@@ -103,7 +119,7 @@ test("preserves replies, likes, reposts, bookmarks, counters, and encoded target
 	);
 	assert.equal(
 		document.querySelector('a[href="#webmentions"]').textContent,
-		"4 Webmentions",
+		"6 Webmentions",
 	);
 	const loader = document.querySelector(
 		'script[src^="https://webmention.io/api/mentions"]',

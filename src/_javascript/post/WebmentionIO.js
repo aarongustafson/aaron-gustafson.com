@@ -1565,7 +1565,7 @@ WebmentionIO.types = Object.freeze({
 		if (
 			service === "twitter" &&
 			mentionUrl &&
-			mentionUrl.hash !== "#favorited-by"
+			mentionUrl.hash.indexOf("#favorited-by") !== 0
 		) {
 			var status = mentionUrl.pathname.match(/\/status\/(\d+)\/?$/);
 			if (status) id = status[1];

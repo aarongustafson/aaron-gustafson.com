@@ -37,6 +37,34 @@
 			}
 		},
 		{
+			"id": "twitter-like-alice",
+			"source": "https://twitter.com/example/status/123456789#favorited-by-alice",
+			"data": {
+				"url": "https://twitter.com/example/status/123456789#favorited-by-alice",
+				"author": {
+					"name": "Alice",
+					"url": "https://twitter.com/alice"
+				}
+			},
+			"activity": {
+				"type": "like"
+			}
+		},
+		{
+			"id": "twitter-like-bob",
+			"source": "https://twitter.com/example/status/123456789#favorited-by-bob",
+			"data": {
+				"url": "https://twitter.com/example/status/123456789#favorited-by-bob",
+				"author": {
+					"name": "Bob",
+					"url": "https://twitter.com/bob"
+				}
+			},
+			"activity": {
+				"type": "like"
+			}
+		},
+		{
 			"id": "repost-valid",
 			"source": "https://example.net/repost",
 			"data": {

@@ -1,4 +1,0 @@
-name: Repository CodeQL configuration
-
-paths-ignore:
-  - src/temp/**
