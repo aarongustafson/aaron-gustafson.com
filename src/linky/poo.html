@@ -51,114 +51,105 @@ sitemap: false
 					{% endif %}
 				</div>
 
-				<form
-					class="contact-form"
-					accept-charset="UTF-8"
-					method="post"
-					data-form-saver-cleanup="credentials password"
-				>
-					<fieldset>
-						<legend>Link Info</legend>
+				<form-saver>
+					<form class="contact-form" accept-charset="UTF-8" method="post">
+						<fieldset>
+							<legend>Link Info</legend>
+							<ul class="fields">
+								<li class="fields__group fields__group--text">
+									<label for="p_title">Title</label>
+									<input id="p_title" name="p_title" required />
+								</li>
+								<li class="fields__group fields__group--url">
+									<label for="p_link">URL</label>
+									<input type="url" id="p_link" name="p_link" required />
+								</li>
+								<li class="fields__group fields__group--text">
+									<label for="p_source">Source</label>
+									<input id="p_source" name="p_source" required />
+								</li>
+								<li class="fields__group fields__group--textarea">
+									<label for="p_tweet">Want to tweet something specific?</label>
+									<textarea
+										id="p_tweet"
+										name="p_tweet"
+										maxlength="200"
+									></textarea>
+								</li>
+								<li class="fields__group fields__group--textarea">
+									<label for="p_body">What do you want to say?</label>
+									<textarea id="p_body" name="p_body" required></textarea>
+								</li>
+								<li class="fields__group fields__group--text">
+									<label for="p_tags">How would you tag this?</label>
+									<input
+										id="p_tags"
+										name="p_tags"
+										list="tags"
+										data-multiple
+										required
+									/>
+									<datalist id="tags">
+										{% for tag in collections.tags %}
+										<option>{{ tag }}</option>
+										{% endfor %}
+									</datalist>
+								</li>
+							</ul>
+						</fieldset>
+						<fieldset>
+							<legend>Did you find this link via someone?</legend>
+							<ul class="fields">
+								<li class="fields__group fields__group--text">
+									<label for="p_via_name">Name</label>
+									<input id="p_via_name" name="p_via_name" />
+								</li>
+								<li class="fields__group fields__group--url">
+									<label for="p_via_url">URL</label>
+									<input type="url" id="p_via_url" name="p_via_url" />
+								</li>
+							</ul>
+						</fieldset>
 						<ul class="fields">
 							<li class="fields__group fields__group--text">
-								<label for="p_title">Title</label>
-								<input id="p_title" name="p_title" required />
-							</li>
-							<li class="fields__group fields__group--url">
-								<label for="p_link">URL</label>
-								<input type="url" id="p_link" name="p_link" required />
-							</li>
-							<li class="fields__group fields__group--text">
-								<label for="p_source">Source</label>
-								<input id="p_source" name="p_source" required />
-							</li>
-							<li class="fields__group fields__group--textarea">
-								<label for="p_tweet">Want to tweet something specific?</label>
-								<textarea
-									id="p_tweet"
-									name="p_tweet"
-									maxlength="200"
-								></textarea>
-							</li>
-							<li class="fields__group fields__group--textarea">
-								<label for="p_body">What do you want to say?</label>
-								<textarea id="p_body" name="p_body" required></textarea>
-							</li>
-							<li class="fields__group fields__group--text">
-								<label for="p_tags">How would you tag this?</label>
+								<label for="username">Username</label>
 								<input
-									id="p_tags"
-									name="p_tags"
-									list="tags"
-									data-multiple
+									type="text"
+									id="username"
+									name="username"
+									autocomplete="username"
 									required
 								/>
-								<datalist id="tags">
-									{% for tag in collections.tags %}
-									<option>{{ tag }}</option>
-									{% endfor %}
-								</datalist>
+							</li>
+							<li class="fields__group fields__group--password">
+								<label for="token">Token</label>
+								<input
+									type="password"
+									id="token"
+									name="token"
+									autocomplete="current-password"
+									required
+								/>
 							</li>
 						</ul>
-					</fieldset>
-					<fieldset>
-						<legend>Did you find this link via someone?</legend>
-						<ul class="fields">
-							<li class="fields__group fields__group--text">
-								<label for="p_via_name">Name</label>
-								<input id="p_via_name" name="p_via_name" />
-							</li>
-							<li class="fields__group fields__group--url">
-								<label for="p_via_url">URL</label>
-								<input type="url" id="p_via_url" name="p_via_url" />
-							</li>
-						</ul>
-					</fieldset>
-					<ul class="fields">
-						<li class="fields__group fields__group--text">
-							<label for="username">Username</label>
-							<input
-								type="text"
-								id="username"
-								name="username"
-								autocomplete="username"
-								data-form-saver-ignore
-								required
-							/>
-						</li>
-						<li class="fields__group fields__group--password">
-							<label for="token">Token</label>
-							<input
-								type="password"
-								id="token"
-								name="token"
-								autocomplete="current-password"
-								data-form-saver-ignore
-								required
-							/>
-						</li>
-					</ul>
-					<p>
-						<button class="button" id="go">Save It</button>
-					</p>
-					<details id="setup">
-						<summary>Setup</summary>
 						<p>
-							Drag this link to your bookmarks, to post from any webpage:
-							<a
-								href="javascript:(function(){var title = encodeURIComponent(document.title);var selection = '';if (window.getSelection) {selection = window.getSelection().toString();} else if (document.selection &amp;&amp; document.selection.type != 'Control') {selection = document.selection.createRange().text;}selection = encodeURIComponent(selection);window.open(`{{ site.url }}/linky/poo/?title=${title}&amp;selection=${selection}&amp;url=${encodeURIComponent(document.location.href)}`,`LinkyPooPopup`,`resizable,scrollbars,status=0,toolbar=0,menubar=0,titlebar=0,width=640,height=600,location=0`);})();"
-								>Linky</a
-							>
+							<button class="button" id="go">Save It</button>
 						</p>
-					</details>
-				</form>
+						<details id="setup">
+							<summary>Setup</summary>
+							<p>
+								Drag this link to your bookmarks, to post from any webpage:
+								<a
+									href="javascript:(function(){var title = encodeURIComponent(document.title);var selection = '';if (window.getSelection) {selection = window.getSelection().toString();} else if (document.selection &amp;&amp; document.selection.type != 'Control') {selection = document.selection.createRange().text;}selection = encodeURIComponent(selection);window.open(`{{ site.url }}/linky/poo/?title=${title}&amp;selection=${selection}&amp;url=${encodeURIComponent(document.location.href)}`,`LinkyPooPopup`,`resizable,scrollbars,status=0,toolbar=0,menubar=0,titlebar=0,width=640,height=600,location=0`);})();"
+									>Linky</a
+								>
+							</p>
+						</details>
+					</form>
+				</form-saver>
 			</div>
 		</main>
-		<script
-			src="/j/form-saver{% if useMinifiedAssets %}.min{% endif %}.js"
-			async
-			defer
-		></script>
+		<script type="module" src="/j/form-saver/define.js"></script>
 		<script>
 			function postFile(title) {
 				var d = new Date(),
@@ -239,6 +230,7 @@ sitemap: false
 
 			function linkComplete() {
 				var message = document.createElement("p");
+				document.querySelector("form-saver").clearSavedData();
 				message.textContent = "Link successfully posted!";
 				replaceMessage(message);
 				setTimeout(function () {
