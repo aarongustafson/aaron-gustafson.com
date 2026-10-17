@@ -1,6 +1,7 @@
 ---
 title: "Sortable Tables with Progressive Enhancement"
 date: 2026-10-12 19:50:32 +00:00
+last_updated_at: 2026-10-17 16:58:42 +00:00
 comments: true
 tags:
   [
@@ -61,7 +62,7 @@ If the custom element never loads, the browser rightfully ignores it—thanks to
 
 When the element initializes, it turns each table header’s text into a button. I chose actual `<button>` elements over `<div>`s because they naturally participate in the tab order and respond to <kbd>Enter</kbd> and <kbd>Space</kbd>. A click on “Age” sorts the rows by age; the next click reverses them.
 
-That interaction changes more than the row order. The script updates `aria-sort` on the active `<th>` and politely announces “Age sorted ascending.” The visible indicator, header state, and announcement all describe the same change, making it easier for everyone to follow.
+That interaction changes more than the row order. The script updates `aria-sort` on the active `<th>` and associates the button with a description of its current state and next action using `aria-describedby`. The button’s name remains the column heading.
 
 ## What you see isn’t always what to sort
 
@@ -106,13 +107,13 @@ Accessibility isn’t a nice-to-have; it’s a core principle of all my work. An
 - True `<button>` elements that receive focus and work with any input method
 - UI state represented with ARIA
 - The real `<table>` remains in the light DOM, preserving its core structure and semantics
-- Sort changes announced using `ariaNotify()`, with a fallback to an injected live region
+- Sort state exposed using `aria-sort`, with button descriptions associated using `aria-describedby`
 
-I also took care to make those announcements adaptable to whatever language your audience speaks.
+I also took care to make those descriptions adaptable to whatever language your audience speaks.
 
 ## <i lang="es" aria-label="What direction are you going?">¿En qué dirección vas?</i>
 
-Since I primarily speak English, the sort labels and announcements default to English. You can adapt them to another language—or just override my phrasing—with a few attributes. Here’s an example <i lang="fr" aria-label="in French">en français</i>:
+Since I primarily speak English, the sort descriptions default to English. You can adapt them to another language—or just override my phrasing—with a few attributes. Here’s an example <i lang="fr" aria-label="in French">en français</i>:
 
 <div lang="fr">
 
@@ -153,3 +154,12 @@ You can [try the examples in the live demo](https://aarongustafson.github.io/tab
 If you’d like to put this web component to use on your own site, you can find out more on [the `<table-sortable>` project page](https://github.com/aarongustafson/table-sortable).
 
 If you use it on your site, please do let me know. The incredibly talented [Zach Leatherman](https://zachleat.com)—creator of Eleventy and an impressive number of useful web components—did, and he called it [“a very good web component!”](https://fediverse.zachleat.com/@zachleat/117221563504038933), which was awfully nice to hear.
+
+## Update 2026-10-17
+
+[Adrian Roselli took a look at the component](https://adrianroselli.com/2021/04/sortable-table-columns.html#Update01) and offered some excellent feedback on how different screen readers announce the sorting updates and better visual affordances for sighted users. I’ve made a few minor changes to the component and demo in an effort to address it:
+
+- I removed the `ariaNotify()` calls and live-region fallback. The component now relies on `aria-sort` and the button descriptions rather than adding an announcement that can duplicate what a screen reader already says.
+- I updated the demo to include an example with SVG sort indicators.
+
+I updated the relevant sections above too. These changes don’t make every browser and screen reader behave alike; as Adrian points out, it’s worth testing with the combinations your audience uses. Thanks, Adrian!
