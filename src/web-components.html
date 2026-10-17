@@ -21,39 +21,27 @@ permalink: /web-components/
 {% if web_components.length > 0 %}
 <ul class="listing listing--web-components">
 	{% for component in web_components %}
-	<li
-		class="listing__item listing__item--{{ loop.index }} web-component"
-		id="{{ component.name }}"
-	>
+	{% set component_name %}<code>&lt;{{ component.name }}&gt;</code>{% endset %}
+	<li class="listing__item listing__item--{{ loop.index }} web-component" id="{{ component.name }}">
 		<h2 class="listing__item__title">
-			{% if component.github %}
-			<a href="https://github.com/{{ component.github }}"
-				>{{ component.name }}</a
-			>
-			{% else %} {{ component.name }} {% endif %}
+			{{ component_name | safe }}
 		</h2>
 
 		{% if component.description %}
-		<p class="listing__item__description">{{ component.description }}</p>
+		<p class="listing__item__description">{{ component.description | markdownify | safe }}</p>
 		{% endif %}
 
 		{% if component.npm_package or component.github %}
 		<p class="web-component__badges">
 			{% if component.npm_package %}
 			<a href="https://www.npmjs.com/package/{{ component.npm_package }}">
-				<img
-					src="https://img.shields.io/npm/v/{{ component.npm_package }}.svg"
-					alt="{{ component.name }} npm version"
-					loading="lazy"
-				>
+				<img src="https://img.shields.io/npm/v/{{ component.npm_package }}.svg"
+					alt="{{ component.name }} npm version" loading="lazy">
 			</a>
 			{% endif %} {% if component.github %}
 			<a href="https://github.com/{{ component.github }}/actions">
-				<img
-					src="https://img.shields.io/github/actions/workflow/status/{{ component.github }}/ci.yml?branch=main"
-					alt="{{ component.name }} build status"
-					loading="lazy"
-				>
+				<img src="https://img.shields.io/github/actions/workflow/status/{{ component.github }}/ci.yml.svg?branch=main"
+					alt="{{ component.name }} build status" data-responsiver="false" loading="lazy">
 			</a>
 			{% endif %}
 		</p>
@@ -61,27 +49,19 @@ permalink: /web-components/
 
 		{% if component.npm_package %}
 		<p class="web-component__install">
-			<code class="web-component__install__code"
-				>npm install {{ component.npm_package }}</code
-			>
+			<code class="web-component__install__code">npm install {{ component.npm_package }}</code>
 		</p>
 		{% endif %}
 
 		<div class="web-component__links">
 			{% if component.github %}
-			<a
-				href="https://github.com/{{ component.github }}"
-				class="web-component__link"
-			>
+			<a href="https://github.com/{{ component.github }}" class="web-component__link">
 				Docs (GitHub)
 			</a>
 			{% endif %} {% if component.demo_url %}
 			<a href="{{ component.demo_url }}" class="web-component__link"> Demo </a>
 			{% endif %} {% if component.npm_package %}
-			<a
-				href="https://www.npmjs.com/package/{{ component.npm_package }}"
-				class="web-component__link"
-			>
+			<a href="https://www.npmjs.com/package/{{ component.npm_package }}" class="web-component__link">
 				npm
 			</a>
 			{% endif %}
@@ -100,7 +80,7 @@ permalink: /web-components/
 		gap: 2rem;
 	}
 
-	.listing__item + .listing__item::before {
+	.listing__item+.listing__item::before {
 		content: "";
 		inline-size: 4rem;
 		border-top: 1px solid;
