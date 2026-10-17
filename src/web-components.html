@@ -35,7 +35,31 @@ permalink: /web-components/
 
 		{% if component.description %}
 		<p class="listing__item__description">{{ component.description }}</p>
-		{% endif %} {% if component.npm_package %}
+		{% endif %}
+
+		{% if component.npm_package or component.github %}
+		<p class="web-component__badges">
+			{% if component.npm_package %}
+			<a href="https://www.npmjs.com/package/{{ component.npm_package }}">
+				<img
+					src="https://img.shields.io/npm/v/{{ component.npm_package }}.svg"
+					alt="{{ component.name }} npm version"
+					loading="lazy"
+				>
+			</a>
+			{% endif %} {% if component.github %}
+			<a href="https://github.com/{{ component.github }}/actions">
+				<img
+					src="https://img.shields.io/github/actions/workflow/status/{{ component.github }}/ci.yml?branch=main"
+					alt="{{ component.name }} build status"
+					loading="lazy"
+				>
+			</a>
+			{% endif %}
+		</p>
+		{% endif %}
+
+		{% if component.npm_package %}
 		<p class="web-component__install">
 			<code class="web-component__install__code"
 				>npm install {{ component.npm_package }}</code
@@ -95,6 +119,16 @@ permalink: /web-components/
 	}
 
 	.web-component__links a {
+		margin: 0;
+	}
+
+	.web-component__badges {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+
+	.web-component__badges a {
 		margin: 0;
 	}
 </style>
