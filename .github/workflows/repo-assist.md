@@ -372,6 +372,8 @@ The schema stores only:
 - `completed_actions`: Monthly Activity actions checked off by a maintainer, so they are not proposed again
 - `priorities`: a short queue of concrete follow-up work
 
+Each `checks` entry must contain exactly `area`, `checked_at`, `result`, and `follow_up`. Use a supported area (`dependencies`, `ci`, `tooling`, `build`, `code`, `docs`, `qa`, `hygiene`, `performance`, `tests`, `release`, or `repo_assist_prs`), a `YYYY-MM-DD` date, a non-empty result of at most 300 characters, and either `null` or a non-empty follow-up of at most 300 characters.
+
 Keep notes terse and current. Replace superseded entries, remove resolved issue records and closed fix records once they are no longer needed for duplicate prevention, and never store run-by-run narration, exhaustive label histories, stale PR inventories, copied GitHub content, or facts that can be cheaply queried again. Stay within the schema's array and text limits; do not create another memory file.
 
 After every change to `notes.json`, run `jq empty /tmp/gh-aw/repo-memory/default/notes.json`, then call `push_repo_memory`. A successful tool result is required before finishing the run. If either check reports an error, repair `notes.json` and retry both checks. Prefer `jq` with a temporary file and atomic rename over manual partial JSON edits.
