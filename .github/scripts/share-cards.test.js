@@ -6,10 +6,144 @@ import test from "node:test";
 import sharp from "sharp";
 import { deriveHeroShareCard } from "../../_11ty/hero-share-card.js";
 import postData from "../../src/posts/posts.11tydata.js";
+import siteData from "../../src/src.11tydata.js";
 import {
 	insertImageFrontmatter,
 	syncPostImages,
 } from "./share-card-frontmatter.js";
+
+const site = {
+	url: "https://example.com",
+	title: "Aaron Gustafson",
+	social_image: "/i/share-card.jpg",
+};
+
+test("HTML pages generate titled cards instead of using the blank fallback", async () => {
+	let received;
+	const metadata = await siteData.eleventyComputed.metadata.call(
+		{
+			generateShareCard(text, slug) {
+				received = { text, slug };
+				return `/i/share-cards/${slug}.jpg`;
+			},
+		},
+		{
+			title: "<cite>Web Components</cite> &amp; More",
+			site,
+			page: { url: "/web-components/" },
+		},
+	);
+
+	assert.deepEqual(received.text, ["Web Components & More"]);
+	assert.match(received.slug, /^page-[a-f0-9]{16}$/);
+	assert.equal(
+		metadata.image,
+		`https://example.com/i/share-cards/${received.slug}.jpg`,
+	);
+	assert.equal(metadata.imageWidth, 1200);
+	assert.equal(metadata.imageHeight, 630);
+	assert.match(metadata.imageAlt, /title “Web Components & More”/);
+});
+
+test("page cards preserve explicit image precedence", async () => {
+	for (const images of [
+		{ social_image: "/social.jpg", image: "/image.jpg", og_image: "/og.jpg" },
+		{ image: "/image.jpg", og_image: "/og.jpg" },
+		{ og_image: "https://external.example/og.jpg" },
+	]) {
+		const metadata = await siteData.eleventyComputed.metadata.call(
+			{
+				generateShareCard() {
+					throw new Error("Explicit images should not generate a card");
+				},
+			},
+			{ ...images, site, page: { url: "/example/" } },
+		);
+		assert.equal(
+			metadata.image,
+			new URL(images.social_image || images.image || images.og_image, site.url)
+				.href,
+		);
+	}
+});
+
+test("page card names are stable and unique across sections and pagination", async () => {
+	const slugs = [];
+	const context = {
+		generateShareCard(text, slug) {
+			slugs.push(slug);
+			return `/i/share-cards/${slug}.jpg`;
+		},
+	};
+	for (const url of [
+		"/about/",
+		"/about/",
+		"/publications/about/",
+		"/notebook/",
+		"/notebook/pg-2/",
+	]) {
+		await siteData.eleventyComputed.metadata.call(context, {
+			title: "Example",
+			site,
+			page: { url, fileSlug: "index" },
+		});
+	}
+	assert.equal(slugs[0], slugs[1]);
+	assert.equal(new Set(slugs).size, 4);
+});
+
+test("non-HTML and unpublished outputs do not generate page cards", async () => {
+	for (const url of [
+		"/feeds/all.xml",
+		"/feeds/all.json",
+		"/sitemap.xml",
+		false,
+		undefined,
+	]) {
+		await siteData.eleventyComputed.metadata.call(
+			{
+				generateShareCard() {
+					throw new Error("Non-HTML outputs should not generate cards");
+				},
+			},
+			{ site, page: { url } },
+		);
+	}
+});
+
+test("HTML files and untitled pages get usable cards", async () => {
+	let texts;
+	await siteData.eleventyComputed.metadata.call(
+		{
+			generateShareCard(value) {
+				texts = value;
+				return "/i/share-cards/error.jpg";
+			},
+		},
+		{ site, page: { url: "/404.html" } },
+	);
+	assert.deepEqual(texts, ["Aaron Gustafson"]);
+});
+
+test("page metadata supports Eleventy's non-enumerable computed-data proxy", async () => {
+	const data = {
+		title: "Web Components",
+		site,
+		page: { url: "/web-components/" },
+	};
+	const proxy = new Proxy({}, { get: (target, key) => data[key] });
+	const metadata = await siteData.eleventyComputed.metadata.call(
+		{
+			generateShareCard() {
+				return "/i/share-cards/example.jpg";
+			},
+		},
+		proxy,
+	);
+	assert.equal(metadata.canonicalUrl, "https://example.com/web-components/");
+	assert.equal(metadata.image, "https://example.com/i/share-cards/example.jpg");
+	assert.equal(metadata.socialTitle, "Web Components");
+});
 
 test("post images skip generation when frontmatter has an image", async () => {
 	const result = await postData.eleventyComputed.image.call(
@@ -114,10 +248,7 @@ test("sync writes only missing image fields", () => {
 			missingOutputs: [],
 		});
 		assert.match(
-			fs.readFileSync(
-				path.join(postsDir, "2026-01-01-example.md"),
-				"utf8",
-			),
+			fs.readFileSync(path.join(postsDir, "2026-01-01-example.md"), "utf8"),
 			/image: "\/i\/share-cards\/example\.jpg"/,
 		);
 		assert.equal(
@@ -163,7 +294,9 @@ test("hero cards use cover dimensions without changing the source", async () => 
 			options,
 			cache,
 		);
-		const metadata = await sharp(path.join(outputDir, "example.jpg")).metadata();
+		const metadata = await sharp(
+			path.join(outputDir, "example.jpg"),
+		).metadata();
 		assert.equal(url, "/i/share-cards/example.jpg");
 		assert.equal(metadata.width, 1200);
 		assert.equal(metadata.height, 630);

@@ -22,6 +22,7 @@ src/static/j
 src/static/c
 src/static/serviceworker*
 src/temp/c
+src/static/i/share-cards/page-*.jpg
 
 # old jekyll stuff
 todo

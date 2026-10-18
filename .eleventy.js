@@ -115,19 +115,28 @@ export default async (config) => {
   // Passthru
   config.addPassthroughCopy({ "src/static": "/" });
 
-  // Share-card generator — registered here so the eleventy.after flush hook
-  // has access to eleventyConfig and fires at end of each build.
+  // Eleventy runs event listeners concurrently; flush both generators before
+  // copying their output in the single eleventy.after handler below.
+  const shareCardBuildHooks = [];
+  const shareCardConfig = {
+    on(event, callback) {
+      if (event !== "eleventy.after") {
+        throw new Error(`Unexpected share-card build event: ${event}`);
+      }
+      shareCardBuildHooks.push(callback);
+    },
+  };
   const generateShareCard =
     process.env.SKIP_SHARE_CARDS === "true"
       ? async () => "/i/share-card.jpg"
       : createGenerator(
           shareCardOptions,
-          config,
+          shareCardConfig,
         );
   const generateHeroShareCard =
     process.env.SKIP_SHARE_CARDS === "true"
       ? async () => "/i/share-card.jpg"
-      : createHeroShareCardGenerator(config);
+      : createHeroShareCardGenerator(shareCardConfig);
   config.addJavaScriptFunction("generateShareCard", generateShareCard);
   config.addJavaScriptFunction(
     "generateHeroShareCard",
@@ -391,11 +400,11 @@ export default async (config) => {
   // Upgrade Helper
   // config.addPlugin(upgrade_helper);
 
-  // Share-card images are generated into src/static/i/share-cards/ during
-  // eleventyComputed data processing, which runs AFTER passthrough copy has
-  // already scanned the source tree. Copy them into dist manually once the
-  // full build is done so they are available in the deployed output.
+  // Passthrough copy scans before queued cards exist, so copy after generation.
   config.on("eleventy.after", async ({ dir }) => {
+    for (const flush of shareCardBuildHooks) {
+      await flush();
+    }
     const srcDir = path.resolve(process.cwd(), "src/static/i/share-cards");
     if (!fs.existsSync(srcDir)) return;
     const destDir = path.resolve(process.cwd(), dir.output, "i/share-cards");
