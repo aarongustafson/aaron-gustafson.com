@@ -133,6 +133,9 @@ content- and optimizer-version-based index in `_cache/optimized-images.json`.
 Both are generated, ignored by Git, and preserved by the existing Netlify
 `_cache` plugin. An older index or a missing artifact requires one optimization
 pass; subsequent builds reuse it until the source or optimizer changes.
+Artifact paths include the source hash and optimizer signature, so a failed
+build cannot replace the bytes referenced by an older index. Cache artifacts
+and the index are published with atomic renames to avoid partial cache files.
 
 Unchanged images and media are not rewritten in `src/static/i` or `dist/i`,
 including on full builds. If `dist` is cleaned, it is repopulated from cached

@@ -71,7 +71,7 @@ export function smallestBuffer(originalContents, optimizedContents) {
 		: originalContents;
 }
 
-async function writeIfChanged(filePath, contents) {
+async function writeIfChanged(filePath, contents, { atomic = false } = {}) {
 	try {
 		const existing = await fs.promises.readFile(filePath);
 		if (existing.equals(contents)) return false;
@@ -79,7 +79,17 @@ async function writeIfChanged(filePath, contents) {
 		if (error.code !== "ENOENT") throw error;
 	}
 	await fs.promises.mkdir(path.dirname(filePath), { recursive: true });
-	await fs.promises.writeFile(filePath, contents);
+	if (atomic) {
+		const temporary = `${filePath}.tmp-${crypto.randomUUID()}`;
+		try {
+			await fs.promises.writeFile(temporary, contents);
+			await fs.promises.rename(temporary, filePath);
+		} finally {
+			await fs.promises.rm(temporary, { force: true });
+		}
+	} else {
+		await fs.promises.writeFile(filePath, contents);
+	}
 	return true;
 }
 
@@ -114,10 +124,12 @@ export async function buildImages({
 			} else {
 				const filePath = path.relative(file.cwd, file.path);
 				const hash = crypto.createHash("sha256").update(contents).digest("hex");
-				// Keep cached artifacts separate from outputs that disabled builds replace.
+				// Failed builds must not replace bytes referenced by the persisted index.
 				const optimizedPath = path.join(
 					cacheDir,
 					"optimized-images",
+					optimizerSignature,
+					hash,
 					file.relative,
 				);
 				if (
@@ -146,7 +158,7 @@ export async function buildImages({
 					}
 					const sourceSize = contents.length;
 					contents = smallestBuffer(contents, optimized);
-					await writeIfChanged(optimizedPath, contents);
+					await writeIfChanged(optimizedPath, contents, { atomic: true });
 					imageCache[filePath] = {
 						hash,
 						size: sourceSize,
@@ -191,7 +203,9 @@ export async function buildImages({
 	);
 	const updatedCache = JSON.stringify(imageCache, null, 2);
 	if (updatedCache !== previousCache) {
-		await writeIfChanged(cacheFile, Buffer.from(updatedCache));
+		await writeIfChanged(cacheFile, Buffer.from(updatedCache), {
+			atomic: true,
+		});
 	}
 	console.log(
 		`>>> Images: ${counts.optimized} optimized, ${counts.cached} cached, ${counts.skipped} skipped, ${counts.media} media, ${counts.written} output writes, ${counts.unchanged} unchanged (${Date.now() - startTime}ms)`,

@@ -84,13 +84,24 @@ function fixture(t) {
 	);
 	const media = Buffer.from([0, 255, 128, 64, 0, 1]);
 	fs.writeFileSync(path.join(options.sourceDir, "example.mp4"), media);
+	const key = path.relative(process.cwd(), source);
+	const cacheFile = path.join(options.cacheDir, "optimized-images.json");
 	return {
 		options,
 		source,
 		media,
-		key: path.relative(process.cwd(), source),
-		cacheFile: path.join(options.cacheDir, "optimized-images.json"),
-		artifact: path.join(options.cacheDir, "optimized-images/example.svg"),
+		key,
+		cacheFile,
+		get artifact() {
+			const cached = JSON.parse(fs.readFileSync(cacheFile))[key];
+			return path.join(
+				options.cacheDir,
+				"optimized-images",
+				cached.optimizer,
+				cached.hash,
+				"example.svg",
+			);
+		},
 		staticFile: path.join(options.staticDir, "example.svg"),
 		outputFile: path.join(options.outputDir, "example.svg"),
 	};
@@ -191,7 +202,10 @@ test("cold disabled builds never mark originals as optimized", async (t) => {
 	});
 	assert.equal(disabled.skipped, 1);
 	assert.equal(fs.existsSync(f.cacheFile), false);
-	assert.equal(fs.existsSync(f.artifact), false);
+	assert.equal(
+		fs.existsSync(path.join(f.options.cacheDir, "optimized-images")),
+		false,
+	);
 	assert.deepEqual(fs.readFileSync(f.staticFile), fs.readFileSync(f.source));
 	const enabled = await buildImages(f.options);
 	assert.equal(enabled.optimized, 1);
@@ -230,6 +244,48 @@ test("legacy cache entries migrate once and subsequent builds reuse artifacts", 
 	assert.equal((await buildImages(f.options)).optimized, 1);
 	assert.equal((await buildImages(f.options)).optimized, 0);
 });
+
+for (const failure of ["output-write", "later-image"]) {
+	test(`failed ${failure} builds cannot poison cached images after a source revert`, async (t) => {
+		const f = fixture(t);
+		await buildImages(f.options);
+		const originalSource = fs.readFileSync(f.source);
+		const originalArtifact = fs.readFileSync(f.artifact);
+		const originalCache = fs.readFileSync(f.cacheFile);
+		fs.writeFileSync(
+			f.source,
+			originalSource.toString().replace("red", "blue"),
+		);
+		const brokenImage = path.join(f.options.sourceDir, "zzz-broken.png");
+		if (failure === "output-write") {
+			fs.unlinkSync(f.outputFile);
+			fs.mkdirSync(f.outputFile);
+		} else {
+			fs.writeFileSync(brokenImage, "not an image");
+		}
+
+		await assert.rejects(buildImages(f.options), /Error processing/);
+		assert.deepEqual(fs.readFileSync(f.cacheFile), originalCache);
+		assert.deepEqual(fs.readFileSync(f.artifact), originalArtifact);
+		fs.writeFileSync(f.source, originalSource);
+		if (failure === "output-write") {
+			fs.rmdirSync(f.outputFile);
+		} else {
+			fs.unlinkSync(brokenImage);
+		}
+
+		for (const disableOptimization of [true, false]) {
+			const recovered = await buildImages({
+				...f.options,
+				disableOptimization,
+			});
+			assert.equal(recovered.cached, 1);
+			assert.equal(recovered.optimized, 0);
+			assert.deepEqual(fs.readFileSync(f.staticFile), originalArtifact);
+			assert.deepEqual(fs.readFileSync(f.outputFile), originalArtifact);
+		}
+	});
+}
 
 test("invalid cache and image data fail the task explicitly", async (t) => {
 	const f = fixture(t);
