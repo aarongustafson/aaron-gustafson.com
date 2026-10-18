@@ -9,6 +9,8 @@ Thumbs.db
 .sass-cache
 .env
 .cache
+_cache/optimized-images.json
+_cache/optimized-images/
 .ssh
 
 # Node modules and output

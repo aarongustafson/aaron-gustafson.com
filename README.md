@@ -115,6 +115,24 @@ changes through the normal Git workflow. After Netlify successfully deploys
 
 ## Building and maintenance
 
+### Image optimization
+
+The image task caches optimized bytes in `_cache/optimized-images/` with a
+content- and optimizer-version-based index in `_cache/optimized-images.json`.
+Both are generated, ignored by Git, and preserved by the existing Netlify
+`_cache` plugin. An older index or a missing artifact requires one optimization
+pass; subsequent builds reuse it until the source or optimizer changes.
+
+Unchanged images and media are not rewritten in `src/static/i` or `dist/i`,
+including on full builds. If `dist` is cleaned, it is repopulated from cached
+artifacts without reoptimizing. The image summary reports optimization counts
+and actual output writes.
+
+`DISABLE_IMAGE_OPTIMIZATION=1` (also `true`) reuses matching cached artifacts
+where available and otherwise copies originals. It does not overwrite the
+optimized cache with originals, so switching back to optimization does not
+invalidate previously cached work. Netlify currently uses this mode.
+
 | Command               | What it does                                                                                                                      |
 | --------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
 | `npm run build`       | Runs the complete production build. The `prebuild` and `postbuild` lifecycle scripts run automatically before and after Eleventy. |
