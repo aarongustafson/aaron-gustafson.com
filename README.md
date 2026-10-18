@@ -88,6 +88,17 @@ into an absolute production URL.
 Generated cards live in `src/static/i/share-cards`. Hero-based cards are
 1200×630 JPEG derivatives; their original hero images are not modified.
 
+HTML pages without a `social_image`, `image`, or `og_image` automatically get
+a titled card during the build, including listing, tag, and publication pages
+and links without an external preview image. These cards use
+`/i/share-cards/page-<url-hash>.jpg` so pagination and matching names in different
+sections cannot overwrite each other or post cards. Their paths are computed
+for social metadata, not written to frontmatter. Non-HTML outputs do not
+generate cards; `npm start` still skips generation for faster previews.
+Page cards are generated assets and are not committed; Netlify caches them
+between builds. Generation finishes before the cards are copied into the
+deployment output, including on the first build.
+
 ## Search and social metadata
 
 Page metadata uses the complete `title` plus the site name for the document
