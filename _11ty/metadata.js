@@ -69,7 +69,7 @@ function positiveInteger(value) {
 	return Number.isInteger(number) && number > 0 ? number : undefined;
 }
 
-export function resolveMetadata(data = {}) {
+export function resolveMetadata(data = {}, { fallbackImage } = {}) {
 	const site = data.site || {};
 	const siteUrl = site.url || "";
 	const siteName = plainText(site.title || "Aaron Gustafson");
@@ -106,6 +106,7 @@ export function resolveMetadata(data = {}) {
 		data.social_image ||
 		data.image ||
 		data.og_image ||
+		fallbackImage ||
 		site.social_image ||
 		site.logo;
 	const image = absoluteUrl(rawImage, siteUrl);
