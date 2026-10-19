@@ -306,3 +306,45 @@ test("hero cards use cover dimensions without changing the source", async () => 
 		fs.rmSync(root, { recursive: true, force: true });
 	}
 });
+
+test("hero cards read new and updated originals without creating static copies", async (t) => {
+	const root = fs.mkdtempSync(path.join(os.tmpdir(), "hero-original-"));
+	t.after(() => fs.rmSync(root, { recursive: true, force: true }));
+	const sourceDir = path.join(root, "source");
+	const staticDir = path.join(root, "static");
+	fs.mkdirSync(sourceDir);
+	fs.mkdirSync(path.join(staticDir, "i"), { recursive: true });
+	const source = path.join(sourceDir, "hero.svg");
+	const original =
+		'<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect width="100" height="100" fill="red"/></svg>';
+	fs.writeFileSync(source, original);
+	const options = {
+		sourceDir,
+		staticDir,
+		outputDir: path.join(root, "cards"),
+		outputUrlPath: "/i/share-cards",
+		imageWidth: 1200,
+		imageHeight: 630,
+		jpegQuality: 90,
+	};
+	const cache = {};
+	await deriveHeroShareCard({ src: "/i/hero.svg" }, "example", options, cache);
+	assert.equal(fs.existsSync(path.join(staticDir, "i/hero.svg")), false);
+	const previousHash = cache.example.hash;
+	const output = path.join(options.outputDir, "example.jpg");
+	const previousImage = fs.readFileSync(output);
+	// A stale tracked copy must not hide an updated original.
+	fs.writeFileSync(path.join(staticDir, "i/hero.svg"), original);
+	fs.writeFileSync(source, original.replace("red", "blue"));
+	await deriveHeroShareCard({ src: "/i/hero.svg" }, "example", options, cache);
+	assert.notEqual(cache.example.hash, previousHash);
+	assert.notDeepEqual(fs.readFileSync(output), previousImage);
+	assert.equal(
+		fs.readFileSync(path.join(staticDir, "i/hero.svg"), "utf8"),
+		original,
+	);
+	await assert.rejects(
+		deriveHeroShareCard({ src: "/i/../../outside.svg" }, "bad", options, cache),
+		/outside the (static|image) directory/,
+	);
+});

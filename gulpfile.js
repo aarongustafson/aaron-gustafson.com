@@ -22,13 +22,6 @@ const watcher = () => {
 		scripts,
 	);
 
-	// Watch image files with longer debounce due to processing time
-	gulpWatch(
-		`${config.source}/_images/**/*`,
-		{ ignoreInitial: true, delay: 1000 },
-		images,
-	);
-
 	// Watch SCSS files
 	gulpWatch(
 		`${config.source}/_styles/**/*.{css,scss}`,

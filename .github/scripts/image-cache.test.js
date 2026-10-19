@@ -71,7 +71,6 @@ function fixture(t) {
 	t.after(() => fs.rmSync(root, { recursive: true, force: true }));
 	const options = {
 		sourceDir: path.join(root, "source"),
-		staticDir: path.join(root, "static"),
 		outputDir: path.join(root, "dist"),
 		cacheDir: path.join(root, "cache"),
 		disableOptimization: false,
@@ -84,6 +83,10 @@ function fixture(t) {
 	);
 	const media = Buffer.from([0, 255, 128, 64, 0, 1]);
 	fs.writeFileSync(path.join(options.sourceDir, "example.mp4"), media);
+	const staticDir = path.join(root, "static");
+	fs.mkdirSync(staticDir);
+	fs.copyFileSync(source, path.join(staticDir, "example.svg"));
+	fs.writeFileSync(path.join(staticDir, "example.mp4"), media);
 	const key = path.relative(process.cwd(), source);
 	const cacheFile = path.join(options.cacheDir, "optimized-images.json");
 	return {
@@ -102,7 +105,8 @@ function fixture(t) {
 				"example.svg",
 			);
 		},
-		staticFile: path.join(options.staticDir, "example.svg"),
+		staticDir,
+		staticFile: path.join(staticDir, "example.svg"),
 		outputFile: path.join(options.outputDir, "example.svg"),
 	};
 }
@@ -111,8 +115,9 @@ test("warm builds do no optimization, output writes, or cache rewrites", async (
 	const f = fixture(t);
 	const cold = await buildImages(f.options);
 	assert.equal(cold.optimized, 1);
-	assert.equal(cold.written, 4);
-	assert.ok(fs.statSync(f.staticFile).size < fs.statSync(f.source).size);
+	assert.equal(cold.written, 2);
+	assert.ok(fs.statSync(f.outputFile).size < fs.statSync(f.source).size);
+	assert.deepEqual(fs.readFileSync(f.staticFile), fs.readFileSync(f.source));
 	assert.deepEqual(
 		fs.readFileSync(path.join(f.options.outputDir, "example.mp4")),
 		f.media,
@@ -122,7 +127,7 @@ test("warm builds do no optimization, output writes, or cache rewrites", async (
 		f.artifact,
 		f.staticFile,
 		f.outputFile,
-		path.join(f.options.staticDir, "example.mp4"),
+		path.join(f.staticDir, "example.mp4"),
 		path.join(f.options.outputDir, "example.mp4"),
 	];
 	const timestamp = new Date("2000-01-01T00:00:00Z");
@@ -131,7 +136,7 @@ test("warm builds do no optimization, output writes, or cache rewrites", async (
 	assert.equal(warm.optimized, 0);
 	assert.equal(warm.cached, 1);
 	assert.equal(warm.written, 0);
-	assert.equal(warm.unchanged, 4);
+	assert.equal(warm.unchanged, 2);
 	for (const file of paths)
 		assert.equal(fs.statSync(file).mtimeMs, timestamp.getTime());
 });
@@ -165,7 +170,8 @@ test("disabled builds reuse valid artifacts without invalidating the cache", asy
 	assert.equal(disabled.cached, 1);
 	assert.equal(disabled.written, 0);
 	assert.deepEqual(fs.readFileSync(f.cacheFile), cache);
-	assert.deepEqual(fs.readFileSync(f.staticFile), artifact);
+	assert.deepEqual(fs.readFileSync(f.staticFile), fs.readFileSync(f.source));
+	assert.deepEqual(fs.readFileSync(f.outputFile), artifact);
 	const enabled = await buildImages(f.options);
 	assert.equal(enabled.optimized, 0);
 	assert.equal(enabled.written, 0);
@@ -225,11 +231,12 @@ test("missing artifacts and optimizer changes invalidate cache entries", async (
 test("overwritten output files are repaired from cache rather than reoptimized", async (t) => {
 	const f = fixture(t);
 	await buildImages(f.options);
-	fs.copyFileSync(f.source, f.staticFile);
+	fs.copyFileSync(f.source, f.outputFile);
 	const result = await buildImages(f.options);
 	assert.equal(result.optimized, 0);
 	assert.equal(result.written, 1);
-	assert.deepEqual(fs.readFileSync(f.staticFile), fs.readFileSync(f.artifact));
+	assert.deepEqual(fs.readFileSync(f.outputFile), fs.readFileSync(f.artifact));
+	assert.deepEqual(fs.readFileSync(f.staticFile), fs.readFileSync(f.source));
 });
 
 test("legacy cache entries migrate once and subsequent builds reuse artifacts", async (t) => {
@@ -281,7 +288,7 @@ for (const failure of ["output-write", "later-image"]) {
 			});
 			assert.equal(recovered.cached, 1);
 			assert.equal(recovered.optimized, 0);
-			assert.deepEqual(fs.readFileSync(f.staticFile), originalArtifact);
+			assert.deepEqual(fs.readFileSync(f.staticFile), originalSource);
 			assert.deepEqual(fs.readFileSync(f.outputFile), originalArtifact);
 		}
 	});

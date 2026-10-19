@@ -95,7 +95,6 @@ async function writeIfChanged(filePath, contents, { atomic = false } = {}) {
 
 export async function buildImages({
 	sourceDir = `${config.source}/_images`,
-	staticDir = `${config.static}/i`,
 	outputDir = `${config.destination}/i`,
 	cacheDir = config.cache,
 	disableOptimization = DISABLE_IMAGE_OPTIMIZATION,
@@ -169,14 +168,10 @@ export async function buildImages({
 					counts.optimized++;
 				}
 			}
-			for (const directory of [staticDir, outputDir]) {
-				if (
-					await writeIfChanged(path.join(directory, file.relative), contents)
-				) {
-					counts.written++;
-				} else {
-					counts.unchanged++;
-				}
+			if (await writeIfChanged(path.join(outputDir, file.relative), contents)) {
+				counts.written++;
+			} else {
+				counts.unchanged++;
 			}
 		}
 		processFile().then(

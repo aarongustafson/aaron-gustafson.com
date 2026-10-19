@@ -2,9 +2,7 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
-import {
-	heroShareCardOptions,
-} from "./share-card-config.js";
+import { heroShareCardOptions } from "./share-card-config.js";
 
 function loadCache(cacheFile) {
 	try {
@@ -25,7 +23,7 @@ function saveCache(cacheFile, cache) {
 	fs.renameSync(temporary, resolved);
 }
 
-function resolveHeroSource(heroSrc, staticDir) {
+function resolveHeroSource(heroSrc, { staticDir, sourceDir }) {
 	if (!heroSrc || !heroSrc.startsWith("/")) {
 		throw new Error(`Hero source must be site-root relative: ${heroSrc}`);
 	}
@@ -34,6 +32,14 @@ function resolveHeroSource(heroSrc, staticDir) {
 	const source = path.resolve(staticRoot, heroSrc.slice(1));
 	if (!source.startsWith(`${staticRoot}${path.sep}`)) {
 		throw new Error(`Hero source is outside the static directory: ${heroSrc}`);
+	}
+	if (sourceDir && heroSrc.startsWith("/i/")) {
+		const sourceRoot = path.resolve(sourceDir);
+		const original = path.resolve(sourceRoot, heroSrc.slice(3));
+		if (!original.startsWith(`${sourceRoot}${path.sep}`)) {
+			throw new Error(`Hero source is outside the image directory: ${heroSrc}`);
+		}
+		if (fs.existsSync(original)) return original;
 	}
 	if (!fs.existsSync(source)) {
 		throw new Error(`Hero source does not exist: ${source}`);
@@ -56,7 +62,7 @@ export async function deriveHeroShareCard(
 	cache = {},
 	force = false,
 ) {
-	const source = resolveHeroSource(hero.src, options.staticDir);
+	const source = resolveHeroSource(hero.src, options);
 	const output = path.resolve(options.outputDir, `${slug}.jpg`);
 	const publicUrl = `${options.outputUrlPath.replace(/\/$/, "")}/${slug}.jpg`;
 	const offset = Number.parseFloat(hero.offset);
@@ -80,8 +86,8 @@ export async function deriveHeroShareCard(
 		return publicUrl;
 	}
 
-	const image = sharp(source).rotate();
-	const dimensions = normalizedDimensions(await sharp(source).metadata());
+	const image = sharp(sourceBytes).rotate();
+	const dimensions = normalizedDimensions(await sharp(sourceBytes).metadata());
 	if (!dimensions.width || !dimensions.height) {
 		throw new Error(`Unable to read hero dimensions: ${source}`);
 	}
@@ -131,13 +137,7 @@ export function createHeroShareCardGenerator(eleventyConfig) {
 		const cache = loadCache(heroShareCardOptions.cacheFile);
 		const force = process.env.FORCE_SHARE_CARDS === "true";
 		for (const [slug, hero] of queue) {
-			await deriveHeroShareCard(
-				hero,
-				slug,
-				heroShareCardOptions,
-				cache,
-				force,
-			);
+			await deriveHeroShareCard(hero, slug, heroShareCardOptions, cache, force);
 			queue.delete(slug);
 		}
 		saveCache(heroShareCardOptions.cacheFile, cache);

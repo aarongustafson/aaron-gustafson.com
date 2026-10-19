@@ -17,6 +17,7 @@ import filters from "./_11ty/filters.js";
 import { createHeroShareCardGenerator } from "./_11ty/hero-share-card.js";
 import { htmlBaseOptions } from "./_11ty/html-base.js";
 import { shareCardOptions } from "./_11ty/share-card-config.js";
+import imagePipeline from "./_11ty/image-pipeline.js";
 const markdown_options = {
   html: true,
   linkify: true,
@@ -113,7 +114,7 @@ export default async (config) => {
   config.addLayoutAlias("tank", "layouts/tank.njk");
 
   // Passthru
-  config.addPassthroughCopy({ "src/static": "/" });
+  config.addPlugin(imagePipeline);
 
   // Eleventy runs event listeners concurrently; flush both generators before
   // copying their output in the single eleventy.after handler below.

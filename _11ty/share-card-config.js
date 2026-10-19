@@ -49,6 +49,7 @@ export const heroShareCardOptions = {
 	imageHeight: shareCardOptions.imageHeight,
 	jpegQuality: 90,
 	staticDir: "./src/static",
+	sourceDir: "./src/_images",
 };
 
 export function tagsToShareCardText(tags = []) {

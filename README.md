@@ -94,6 +94,8 @@ You can also pass `--post <path>` to the sync, force, and dry-run commands.
 
 Generated cards live in `src/static/i/share-cards`. Hero-based cards are
 1200×630 JPEG derivatives; their original hero images are not modified.
+Hero cards read originals from `src/_images` when available and fall back to
+static-only assets, so publishing a new hero does not require a tracked copy.
 
 HTML pages without a `social_image`, `image`, or `og_image` automatically get
 a titled card during the build, including listing, tag, and publication pages
@@ -148,10 +150,18 @@ Artifact paths include the source hash and optimizer signature, so a failed
 build cannot replace the bytes referenced by an older index. Cache artifacts
 and the index are published with atomic renames to avoid partial cache files.
 
-Unchanged images and media are not rewritten in `src/static/i` or `dist/i`,
-including on full builds. If `dist` is cleaned, it is repopulated from cached
-artifacts without reoptimizing. The image summary reports optimization counts
-and actual output writes.
+The image task writes only to `dist/i`, never to tracked files in `src/static/i`.
+Eleventy excludes static duplicates of managed source images from passthrough
+copying and finishes image processing after other copies, so originals cannot
+overwrite optimized output. Static-only assets, including generated share
+cards, are still copied normally. The development server serves the built
+files, and Eleventy watches `src/_images` for image changes.
+
+Unchanged output images and media are not rewritten, including on full builds.
+If `dist` is cleaned, it is repopulated from cached artifacts without
+reoptimizing. The image summary reports optimization counts and actual output
+writes. Running `npm start` does not replace tracked images with optimized
+versions or create new tracked copies of source images.
 
 `DISABLE_IMAGE_OPTIMIZATION=1` (also `true`) reuses matching cached artifacts
 where available and otherwise copies originals. It does not overwrite the
