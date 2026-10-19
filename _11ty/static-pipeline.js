@@ -3,7 +3,7 @@ import path from "node:path";
 import config from "../_tasks/config.js";
 import { buildImages } from "../_tasks/images.js";
 
-export default function imagePipeline(
+export default function staticPipeline(
 	eleventyConfig,
 	{
 		sourceDir = `${config.source}/_images`,

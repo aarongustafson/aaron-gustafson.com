@@ -3,7 +3,7 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import Eleventy from "@11ty/eleventy";
-import imagePipeline from "../../_11ty/image-pipeline.js";
+import staticPipeline from "../../_11ty/static-pipeline.js";
 
 function fixture(t) {
 	const parent = path.resolve("_cache/optimized-images");
@@ -28,14 +28,14 @@ function fixture(t) {
 	return { root, input, output, sourceDir, staticDir, cacheDir, svg };
 }
 
-test("image pipeline filters only managed duplicates and registers one watcher", (t) => {
+test("static pipeline filters only managed duplicates and registers one watcher", (t) => {
 	const f = fixture(t);
 	let copies;
 	let options;
 	let behavior;
 	const watches = [];
 	const hooks = [];
-	imagePipeline(
+	staticPipeline(
 		{
 			setServerPassthroughCopyBehavior(value) {
 				behavior = value;
@@ -81,7 +81,7 @@ for (const mode of ["build", "serve"]) {
 			quietMode: true,
 			config(config) {
 				config.setUseGitIgnore(false);
-				config.addPlugin(imagePipeline, f);
+				config.addPlugin(staticPipeline, f);
 			},
 		});
 		project.setRunMode(mode);
