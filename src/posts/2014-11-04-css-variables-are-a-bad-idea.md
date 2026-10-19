@@ -1,16 +1,16 @@
 ---
 title: "CSS Variables are a Bad Idea"
 date: 2014-11-04 14:58:01 -05:00
-last_updated_at: 2026-10-18 16:26:02 +00:00
+last_updated_at: 2026-10-19 17:03:59 +00:00
 comments: true
 tags: [CSS, W3C, "web standards", "web design", "web development"]
-description: "In 2014, I argued against CSS variables. I no longer agree with that conclusion; a new note explains my changed position, with the original post preserved below."
+description: "In 2014, I argued against CSS variables. I no longer agree with that conclusion; a note explains my changed position, with the original post preserved below."
 redirect_from: /notebook/2014/css-variables-are-a-bad-idea/
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnwlr7oh25"
 image: "/i/share-cards/css-variables-are-a-bad-idea.jpg"
 ---
 
-<ins datetime="2026-10-18T16:26:02+00:00">**Update — October 18, 2026:** I no longer agree with this post’s conclusion. When I wrote it in 2014, I was evaluating CSS custom properties primarily as a replacement for preprocessor variables. I now use them in my own work, including progressively enhanced interfaces. My concerns about resilient styling remain, but I no longer think rejecting custom properties is the answer. I’ve left the original post intact as a record of my thinking at the time.</ins>
+<ins datetime="2026-10-18T16:26:02+00:00">**Update — October 18, 2026:** I no longer agree with this post’s conclusion. When I wrote it in 2014, I was evaluating CSS custom properties primarily as a replacement for preprocessor variables. I now use them in my own work, including progressively enhanced interfaces. My concerns about resilient styling remain, but I no longer think rejecting custom properties is the answer. I’ve left the original post intact as a record of my thinking at the time. [I’ve written a follow-up explaining what changed and how I use them today.](/notebook/i-changed-my-mind-about-css-variables/)</ins>
 
 I’ll level with you: I used to think I wanted variables in CSS.
 

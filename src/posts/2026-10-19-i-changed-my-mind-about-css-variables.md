@@ -1,11 +1,12 @@
 ---
 title: "I’ve Changed My Mind About CSS Variables"
-date: 2026-10-18 16:26:02 +00:00
+date: 2026-10-19 16:48:33 +00:00
 comments: true
 tags: ["CSS", "progressive enhancement", "accessibility", "web components", "web design", "web development"]
 description: "An email from Eric Meyer prompted me to revisit my 2014 argument against CSS variables. My feelings are quite different now, though some of my original concerns still hold."
 meta_description: "An email from Eric Meyer prompted me to revisit my 2014 argument against CSS variables: what I missed, how I use them now, and why fallbacks still matter."
 twitter_text: "Back in 2014, I decried CSS variables, but my perspective has largely changed. Here’s what I missed, how I use them now, and why fallbacks still matter."
+image: "/i/share-cards/i-changed-my-mind-about-css-variables.jpg"
 ---
 
 A while back, Eric Meyer emailed to ask about [my old post arguing that CSS variables were a bad idea](/notebook/css-variables-are-a-bad-idea/). Did I still feel that way?
