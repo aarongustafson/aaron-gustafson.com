@@ -16,7 +16,7 @@ No. I’ve changed my mind.
 
 These days, I use CSS custom properties—the feature we often call “CSS variables”—quite a lot. To adapt interfaces to people’s preferences. To pass theme colors to JavaScript-driven interfaces. To theme many of the web components I build. I also discuss them quite a bit in my forthcoming course on progressive enhancement. At this point, that old headline no longer applies.
 
-I’ve added a brief note to the original post, but I thought it best to explain why I’ve changed my mind in more detail. Hence this post.
+I’ve added a brief note to the original post, but I thought it best to explain the change in more detail. Hence this post.
 
 My change of heart came not just because browser support improved, but because I realized I’d been too focused on custom properties as Sass variable replacements.
 
@@ -36,7 +36,7 @@ body {
 }
 ```
 
-I was concerned that browsers without support would lose those color declarations. To give those browsers the intended colors too, we’d need to write old school color values first:
+I was concerned that browsers without support would lose those color declarations. To give those browsers the intended colors too, we’d need to write old-school color values first:
 
 ```css
 :root {
@@ -52,7 +52,7 @@ body {
 }
 ```
 
-I compared that with Sass, which could substitute the values during compilation, yielding universally-understandable CSS:
+I compared that with Sass, which could substitute the values during compilation, yielding universally understandable CSS:
 
 ```scss
 $color-background: #fff;
@@ -68,13 +68,13 @@ If we only need to replace a name with a fixed value, doing that before sending 
 
 But I went further. I treated the necessity of fallback declarations as a flaw and used it to dismiss custom properties altogether. I shouldn’t have.
 
-The uncomfortable irony is that I’ve advocated for authoring a usable baseline followed by an enhancement in CSS for years. Some degree of repetition is required to make that work. I shouldn’t have dismissed custom properties just because a preprocessor let me avoid the redundancy.
+The uncomfortable irony is that I’ve advocated for authoring a usable baseline followed by an enhancement in CSS for years. Some degree of repetition is often required to make that work. I shouldn’t have dismissed custom properties just because a preprocessor let me avoid the redundancy.
 
-In that piece, I also speculated about the performance cost of custom props without bringing receipts. Browsers do have to resolve their values, but there’s no evidence that they negatively affect performance.
+In that piece, I also speculated about the performance cost of custom props without bringing receipts. Browsers do have to resolve their values, but I had no proof this would cause a meaningful performance problem.
 
 ## What I missed
 
-I’ll admit I had a very simplistic view of custom properties. It was largely informed by my immersion in Sass at the time. I didn’t take the time to dig into [the more powerful aspects of custom properties](https://developer.mozilla.org/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties). Custom properties participate in the cascade. They can inherit too. Their values can differ across elements or change in response to media queries and changes in the document.
+I’ll admit I had a very simplistic view of custom properties. It was largely informed by my immersion in Sass at the time. I didn’t take the time to dig into [the more powerful aspects of custom properties](https://developer.mozilla.org/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties). Custom properties participate in the cascade. They inherit by default too. Their values can differ across elements or change in response to media queries and changes in the document.
 
 That power becomes apparent in an example like this:
 
@@ -247,14 +247,14 @@ button {
 
 A browser that supports custom properties but doesn’t know what `color-mix()` means will still retain the custom property’s value as a sequence of tokens. The failure comes later, when it tries to use that value as a background color. Neither the preceding declaration nor the fallback argument can save you; the background becomes transparent, its initial value.
 
-To provide a fallback for `color-mix()`, we must test for support before assigning it:
+To retain a known-good value while using `color-mix()` as an enhancement, we can test for support before assigning it:
 
 ```css
 :root {
   --button-background: #222;
 }
 
-@supports (background-color: color-mix(in oklab, #e200ff, black 65%)) {
+@supports (color: color-mix(in oklab, red, red)) {
   :root {
     --button-background: color-mix(in oklab, #e200ff, black 65%);
   }
@@ -267,9 +267,11 @@ button {
 }
 ```
 
-In this scenario, the known-good value (`#222`) remains unless the browser supports `color-mix()`. Browsers without custom-property support still have the literal background declaration too.
+The `@supports` block checks whether the browser accepts `color-mix()` in the `oklab` color space, without tying it to a particular palette or background. Mixing red with itself is a terse way to test the syntax. We can then group multiple enhanced custom-property assignments inside that same block. If you’re using other color spaces or newer color syntax, place each in its own `@supports` block to ensure maximum compatibility.
 
-_Note: When enhancing this way, it’s critical that you test each potential color combination to ensure accessible contrast levels._
+In this example, the known-good value (`#222`) remains unless the support test passes. Browsers without custom-property support still have the literal background declaration too.
+
+_Note: When enhancing this way, it’s critical that we test each potential color combination to ensure accessible contrast levels._
 
 ---
 
