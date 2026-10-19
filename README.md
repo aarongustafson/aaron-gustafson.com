@@ -84,6 +84,13 @@ into an absolute production URL.
 | `npm run share-cards:dry-run` | Reports how many posts need an `image` value. It does not build cards or modify files.                                                                                                                   |
 | `npm run share-cards:sync`    | Builds missing text- or hero-based cards, verifies the output, and adds missing `image` values to post frontmatter. Existing image values and cards are left alone.                                      |
 | `npm run share-cards:force`   | Clears the text and hero card caches, regenerates every card, verifies the output, and synchronizes frontmatter. Use this after changing card dimensions, design, cropping behavior, or generation code. |
+| `npm run share-cards:post -- src/posts/YYYY-MM-DD-slug.md` | Generates or refreshes only that post’s text- or hero-based card and adds its missing `image` value, without building the site. Preserves custom images. |
+
+The single-post command rebuilds the selected text card and reuses unchanged
+hero cards. Add `--force` to regenerate a hero card too, without clearing other
+cards’ cache entries, or `--dry-run` to report the selected post’s missing
+image field without writing.
+You can also pass `--post <path>` to the sync, force, and dry-run commands.
 
 Generated cards live in `src/static/i/share-cards`. Hero-based cards are
 1200×630 JPEG derivatives; their original hero images are not modified.
@@ -123,6 +130,10 @@ to a review CSV.
 Publishing a file does not deploy it by itself. Commit and push the resulting
 changes through the normal Git workflow. After Netlify successfully deploys
 `main`, GitHub Actions checks the live feeds and syndicates new content.
+
+Publishing a post builds only the selected post’s share card, without running
+Eleventy or generating other posts’ or pages’ images. If card generation fails,
+the draft is retained and the error is reported.
 
 ## Building and maintenance
 

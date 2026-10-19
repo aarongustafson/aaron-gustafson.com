@@ -193,6 +193,13 @@ export default function (plop) {
     // Write to target directory
     writeFileSync(publishPath, updatedContent, "utf8");
 
+    if (targetDir === "posts") {
+      const { manageShareCards } = await import(
+        "./.github/scripts/manage-share-cards.js"
+      );
+      await manageShareCards({ post: publishPath });
+    }
+
     // Delete the draft
     const fs = await import("fs/promises");
     await fs.unlink(draftPath);

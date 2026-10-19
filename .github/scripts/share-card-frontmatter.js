@@ -50,11 +50,12 @@ export function syncPostImages({
 	outputUrlPath = shareCardOptions.outputUrlPath,
 	dryRun = false,
 	validateOutput = true,
-} = {}) {
-	const files = fs
+	files = fs
 		.readdirSync(postsDir)
 		.filter((file) => file.endsWith(".md"))
-		.sort();
+		.sort()
+		.map((file) => path.join(postsDir, file)),
+} = {}) {
 	const summary = {
 		posts: files.length,
 		updated: 0,
@@ -62,8 +63,7 @@ export function syncPostImages({
 		missingOutputs: [],
 	};
 
-	for (const file of files) {
-		const filePath = path.join(postsDir, file);
+	for (const filePath of files) {
 		const source = fs.readFileSync(filePath, "utf8");
 		const { data } = parseFrontmatter(source, filePath);
 		if (data.image) {
@@ -71,7 +71,7 @@ export function syncPostImages({
 			continue;
 		}
 
-		const slug = postSlugFromPath(file);
+		const slug = postSlugFromPath(filePath);
 		const image = `${outputUrlPath.replace(/\/$/, "")}/${slug}.jpg`;
 		const output = path.join(outputDir, `${slug}.jpg`);
 		if (!fs.existsSync(output)) {
