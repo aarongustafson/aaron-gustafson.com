@@ -4,7 +4,8 @@ date: 2026-10-18 16:26:02 +00:00
 comments: true
 tags: ["CSS", "progressive enhancement", "accessibility", "web components", "web design", "web development"]
 description: "An email from Eric Meyer prompted me to revisit my 2014 argument against CSS variables. My feelings are quite different now, though some of my original concerns still hold."
-twitter_text: "Back in 2014, I decried CSS variables but my perspective has largely changed. Here’s what I missed, how I’m using custom properties today, and why we still need to care about fallbacks."
+meta_description: "An email from Eric Meyer prompted me to revisit my 2014 argument against CSS variables: what I missed, how I use them now, and why fallbacks still matter."
+twitter_text: "Back in 2014, I decried CSS variables, but my perspective has largely changed. Here’s what I missed, how I use them now, and why fallbacks still matter."
 ---
 
 A while back, Eric Meyer emailed to ask about [my old post arguing that CSS variables were a bad idea](/notebook/css-variables-are-a-bad-idea/). Did I still feel that way?
@@ -13,15 +14,15 @@ No. I’ve changed my mind.
 
 <!-- more -->
 
-These days, I use CSS custom properties—the feature we often call “CSS variables”—quite a lot. I use them to adapt interfaces to people’s preferences. I use them to pass theme colors to JavaScript-driven UI. I also use them in many of the web components I build. They also come up quite a bit in the progressive enhancement course I’m working on. At this point, that old headline gives a pretty misleading impression of my thoughts.
+These days, I use CSS custom properties—the feature we often call “CSS variables”—quite a lot. To adapt interfaces to people’s preferences. To pass theme colors to JavaScript-driven interfaces. To theme many of the web components I build. I also discuss them quite a bit in my forthcoming course on progressive enhancement. At this point, that old headline no longer applies.
 
-I’ve added a brief note to the original post, but I thought it best to share my thoughts in an expanded form. Hence this post. 
+I’ve added a brief note to the original post, but I thought it best to explain why I’ve changed my mind in more detail. Hence this post.
 
-My change of heart came because not just because browser support improved, but also because I was evaluating custom properties too narrowly.
+My change of heart came not just because browser support improved, but because I realized I’d been too focused on custom properties as Sass variable replacements.
 
 ## My original concerns
 
-At the time of my original post, published in November 2014, browser support was extremely limited. Its example used custom properties to store foreground and background colors:
+At the time of my original post, published in November 2014, browser support was extremely limited. The example I included used custom properties to store foreground and background colors:
 
 ```css
 :root {
@@ -35,7 +36,7 @@ body {
 }
 ```
 
-My concern was that browsers without support would lose those color declarations. To ensure all browsers get the custom colors, we must write the literal color values before the declarations using `var()`.
+I was concerned that browsers without support would lose those color declarations. To give those browsers the intended colors too, we’d need to write old school color values first:
 
 ```css
 :root {
@@ -51,9 +52,9 @@ body {
 }
 ```
 
-I compared that with Sass, which could substitute the values during compilation, yielding one line with universal support.
+I compared that with Sass, which could substitute the values during compilation, yielding universally-understandable CSS:
 
-```sass
+```scss
 $color-background: #fff;
 $color-foreground: #333;
 
@@ -63,19 +64,17 @@ body {
 }
 ```
 
-If you only need to replace a name with a fixed value, doing that before sending the stylesheet was (and remains) perfectly reasonable.
+If we only need to replace a name with a fixed value, doing that before sending the stylesheet was (and remains) perfectly reasonable.
 
-But I went further. I treated the fallback declarations as evidence that the feature defeated its own purpose and wrote off custom properties altogether. I was wrong to do that.
+But I went further. I treated the necessity of fallback declarations as a flaw and used it to dismiss custom properties altogether. I shouldn’t have.
 
-The uncomfortable irony is that Ive advocated for authoring a usable baseline followed by an enhancement in CSS for years. Some degree of repetition is often required to make that work. I shouldn’t have dismissed custom properties just because a preprocessor let me avoid the redundancy.
+The uncomfortable irony is that I’ve advocated for authoring a usable baseline followed by an enhancement in CSS for years. Some degree of repetition is required to make that work. I shouldn’t have dismissed custom properties just because a preprocessor let me avoid the redundancy.
 
-I also speculated about performance cost of custom props without bringing receipts. Custom props do create extra work for browsers, but that doesn’t mean the feature will meaningfully and negatively impact perf.
+In that piece, I also speculated about the performance cost of custom props without bringing receipts. Browsers do have to resolve their values, but there’s no evidence that they negatively affect performance.
 
 ## What I missed
 
-I had a very simplistic view of custom properties. It was largely informed by my Sass work with variables and I didn’t take the time to dig into [the more powerful aspects of custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties). Custom properties participate in the cascade. They can inherit too.[^registration] Their values can also change on different elements or in response to media queries and changes in the document.
-
-[^registration]: You can change the inheritance behavior of a custom property by registering it with [`@property`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@property). Registration can also define its syntax and an initial value. The examples here use unregistered custom properties.
+I’ll admit I had a very simplistic view of custom properties. It was largely informed by my immersion in Sass at the time. I didn’t take the time to dig into [the more powerful aspects of custom properties](https://developer.mozilla.org/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties). Custom properties participate in the cascade. They can inherit too. Their values can differ across elements or change in response to media queries and changes in the document.
 
 That power becomes apparent in an example like this:
 
@@ -105,19 +104,19 @@ That power becomes apparent in an example like this:
 }
 ```
 
-Here, notices will change their theme based on a user’s color-scheme preference. A warning notice, however, can be themed without changing the declarations they flow into. Descendants can inherit those custom properties and use them too.
+Here, ordinary notices change their theme based on a user’s color-scheme preference. A warning notice, however, gets its own colors without changing the declarations that use them. Descendants can inherit those custom properties and use them too.
 
 A Sass variable, in contrast, is static. It doesn’t respond to that context at all. A custom property does. We can generate preference-aware styles with Sass, of course, but compiled variables and browser-resolved custom properties are worlds apart.
 
-I didn’t understand how powerful custom properties are when I wrote the original post. I was looking at it through Sass-tinted glasses.
+I didn’t understand how powerful custom properties are when I wrote the original post. I was squinting at them through Sass’s pink-tinted glasses.
 
-## Themeing through and through
+## Theming through and through
 
-A recent project made the value and power of custom props infinitly more clear to me. I had a `canvas`-based audio visualizer that looked fine while I was using dark mode. When I switched to the light theme, the visualization disappeared against its background. As my son would say: “Buns.”
+One project that made the value of custom props much clearer to me was a `canvas`-based audio visualizer I was working on. It looked fine while I was using dark mode. When I switched to the light theme, however, the visualization disappeared against its background. As my son would say: “That’s buns.”
 
 I’m almost always in dark mode, so that’s what I’d been testing in. I’d totally neglected to give it a look in light mode. Yikes.
 
-I was already using custom props to handle themeing so, rather than maintain a second set of theme colors in JavaScript, I opted to read the values CSS had resolved:
+I was already using custom props to handle site-wide theming, so rather than maintain a second set of theme colors in JavaScript, I opted to read the values CSS had resolved:
 
 ```js
 const theme = {};
@@ -147,7 +146,7 @@ I covered the setup in [“Passing Your CSS Theme to `canvas`”](/notebook/pass
 
 ## Styling components
 
-If you’ve been following my work for any time, you’ve probably seen [my growing list of web components](/web-components/). I use custom properties in them quite often. My [`<fullscreen-control>` component](/notebook/fullscreen-video-and-iframes-made-easy/), for instance, adds a “fullscreen” button to a wrapped `<video>` or `<iframe>`. Authors can adjust the button’s position through CSS:
+If you’ve been following my work for a while, you’ve probably seen [my growing list of web components](/web-components/). I use custom properties in them quite often. My [`<fullscreen-control>` component](/notebook/fullscreen-video-and-iframes-made-easy/), for instance, adds a “fullscreen” button to a wrapped `<video>` or `<iframe>`. Authors can adjust the button’s position through custom props:
 
 ```css
 fullscreen-control {
@@ -156,15 +155,15 @@ fullscreen-control {
 }
 ```
 
-Those values control the component design. No need to crack open the JavaScript to get a different value. And because the positioning uses logical properties, the offsets follow the writing mode rather than assuming a particular physical corner.
+Those values control the button’s position. No need to crack open the JavaScript to move it. And because the positioning uses logical properties, the offsets follow the writing mode rather than assuming a particular physical corner.
 
 Similarly, [`<form-validation-list>`](/notebook/visual-validation-feedback-for-form-fields/) exposes custom properties for icon size, matched and unmatched colors, and similar design choices. That makes it relatively straightforward to adapt the component to a site’s design without touching the component’s behavior.
 
-In both cases, custom properties provide a simple way to alter the look and feel of the component directly from a stylesheet.
+In both cases, custom properties provide a simple way to alter the look and feel of the component directly from within a stylesheet, where design decisions belong.
 
 ## Fallback, carefully
 
-Even though I complained about it at the time, I don’t want to gloss over the importance of fallbacks for custom properties. Used properly, they ensure our designs are robust and progressively enhanced.
+Even though I complained about them at the time, I don’t want to gloss over the importance of fallbacks for custom properties. Used properly, they help make our designs robust and progressively enhanced.
 
 ### When the browser doesn’t support custom properties
 
@@ -172,7 +171,7 @@ Take the following, for example:
 
 ```css
 :root {
-  --flow-space: 1.5em;
+  --flow-space: 1em;
 }
 
 .flow > * + * {
@@ -185,11 +184,13 @@ Take the following, for example:
 }
 ```
 
-In this code sample, the second rule (`.flow > * + * {}`) establishes space between adjacent children through two different methods: First, it sets a block-start margin using a standard value (`1em`), then it overrides that value with a custom property (`var(--flow-space)`).
+In this code sample, the second rule (`.flow > * + * {}`) establishes space between adjacent children in two steps: first, it sets a block-start margin using a standard value (`1em`), then it overrides that value using a custom property (`var(--flow-space)`).
 
-Browsers that understand custom properties use the value of `--flow-space` because that declaration comes later in the rule. Browsers that don’t, ignore that declaration when they encounter `var()` and don’t understand the syntax (following the rules of fault tolerance). They apply the initial `1em` declaration instead.[^logical]
+Browsers that understand custom properties use the value of `--flow-space` because that declaration comes later in the rule. Browsers that don’t understand `var()` ignore that declaration, following the rules of fault tolerance. They apply the earlier `1em` declaration instead.[^logical]
 
 [^logical]: This assumes the browser also supports `margin-block-start`; a browser that doesn’t will ignore both declarations.
+
+The `.compact` rule overrides the inherited spacing value, so a flow container in a compact region can use tighter spacing without a different margin rule.
 
 ### When the custom property is missing
 
@@ -204,7 +205,7 @@ The second argument in `var()` handles a different situation:
 
 In a browser that supports custom properties, it provides a backup value the browser can use when the referenced property is missing or resolves to the [_guaranteed-invalid value_](https://developer.mozilla.org/docs/Glossary/guaranteed_invalid_value). To test this, you could remove the `--flow-space` assignment from `:root` and—if no other assignment applied or was inherited—the fallback argument would supply `1em`.
 
-It’s important to note that this situation is different from a value being unacceptable for a given property. The fallback argument doesn’t check whether the custom prop’s value is a valid length for `margin` or color for `color`.
+It’s important to note that this situation is different from a value being unacceptable for a given property. The fallback argument doesn’t check whether the custom prop’s value is a valid size or color.
 
 I’ll illustrate that with a silly example:
 
@@ -217,17 +218,17 @@ I’ll illustrate that with a silly example:
 }
 ```
 
-In a browser that supports `var()`, the initial color declaration (`color: #333`) isn’t used. The custom property (`--notice-color`) exists, and `20px` is a valid value for an unregistered custom property[^registration], so the fallback argument isn’t used either. Unfortunately, after substitution, the winning declaration is `color: 20px` and `20px` is not a valid `color` value.
+In a browser that supports `var()`, the earlier color declaration (`color: #333`) isn’t used. The custom property (`--notice-color`) exists, and `20px` is a valid value for an unregistered custom property[^registration], so the fallback argument isn’t used either. Unfortunately, after substitution, the winning declaration is `color: 20px`, and `20px` is not a valid color value.
 
-[^registration] If a custom property is defined using [`@property`](https://developer.mozilla.org/docs/Web/CSS/Guides/Properties_and_values_API/Registering_properties), it’s a _registered_ property. If it’s defined using the custom property syntax (e.g., `--foo: bar;`), it’s _unregistered_. All the examples in this post are unregistered custom properties.
+[^registration]: You can register a custom property with [`@property`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@property), defining its syntax, inheritance behavior, and an initial value. Assigning a value using syntax like `--foo: bar;` doesn’t register it. The examples in this post use unregistered custom properties.
 
 In this scenario, you might expect the browser to fall back to the previous `color` declaration. It doesn’t.
 
-This is an example of an [invalid-at-computed-value-time](https://developer.mozilla.org/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties#invalid_custom_properties) failure. The browser stores the `20px` value for `--notice-color` with no problem. However, when that value is used as a `color` (after the cascade has selected the declaration), it doesn’t apply. But instead of ignoring the declaration during parsing (as it would with a literal `color: 20px`), the browser _inherits_ a `color` value from the element’s context. For other, non-inherited properties like `background-color`, the browser will assign the _initial_ value instead.
+This is an example of an [invalid-at-computed-value-time](https://developer.mozilla.org/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties#invalid_custom_properties) failure. The browser stores the `20px` value for `--notice-color` with no problem. The problem only becomes apparent when that value is used as a color, after the cascade has selected the declaration. At that point, it’s too late to ignore the declaration during parsing, as the browser would with a literal `color: 20px`. Instead, the element _inherits_ its `color` from its parent. For non-inherited properties like `background-color`, the browser uses the _initial_ value instead.
 
 The browser won’t rewrite the custom property. It won’t go back through the earlier declarations looking for a replacement either.
 
-Now, that was a contrived example, but I’ll share a more realistic one in the next section.
+That was a contrived example. Here’s a more realistic one.
 
 ### When the value requires a newer feature
 
@@ -244,9 +245,9 @@ button {
 }
 ```
 
-A browser that supports custom properties but doesn’t know what `color-mix()` means will still retain the custom property’s value as a token sequence. The failure comes later, when it tries to use that sequence as a background color. Neither the preceding declaration nor the fallback argument can save you either; the background becomes transparent, its initial value.
+A browser that supports custom properties but doesn’t know what `color-mix()` means will still retain the custom property’s value as a sequence of tokens. The failure comes later, when it tries to use that value as a background color. Neither the preceding declaration nor the fallback argument can save you; the background becomes transparent, its initial value.
 
-If you want to progressively enhance for newer browsers that support color-mix, you need to test for support before assigning it:
+To provide a fallback for `color-mix()`, we must test for support before assigning it:
 
 ```css
 :root {
@@ -268,18 +269,18 @@ button {
 
 In this scenario, the known-good value (`#222`) remains unless the browser supports `color-mix()`. Browsers without custom-property support still have the literal background declaration too.
 
-_Note: When enhancing this way, it’s critical that you test the contrast of each potential color combination to ensure proper accessibility._
+_Note: When enhancing this way, it’s critical that you test each potential color combination to ensure accessible contrast levels._
 
 ---
 
-Fallbacks aren’t mandatory. Sometimes an inherited value or the browser’s default provides a reasonable baseline experience. It’s good to know we have these options though, and a modest amount of redundancy when it matters is a small price to pay.
+Fallbacks aren’t mandatory. Sometimes an inherited value or the browser’s default provides a reasonable baseline experience. It’s good to know we have these options, though, and a modest amount of redundancy when it matters is a small price to pay.
 
 ## Where that leaves me
 
 Eric’s question was a useful nudge to revisit an opinion I’d left sitting on the Web long after my own work had moved on.
 
-I still believe the central conceit of that original post—that people should have a usable experience when a particular enhancement isn’t available—but now I’ve got plenty of reasons to use custom properties in service of that goal. They let me adjust to preferences, provide easy ways to adapt components, and share dynamic styles between CSS and JavaScript.
+I still stand by the central concern in that original post: people should have a usable experience when a particular enhancement isn’t available. The difference is that now I’ve got plenty of ways to use custom properties in service of that goal. They let me respond to preferences, adapt components, and share dynamic styles between CSS and JavaScript.
 
-If you’re deciding between a preprocessor variable and a custom property, the most important thing to consider is when the value needs to be resolved and whether that value needs to change. If it needs to respond to the end-user or the rendering context, going with a custom property that can be resolved in the browser can be genuinely useful. Just be sure to check what happens when the value—or the enhancement consuming it—isn’t available.
+If you’re deciding between a preprocessor variable and a custom property, consider when the value needs to be resolved and what needs to influence it. If it needs to respond to the person using the page or the rendering context, a custom property resolved in the browser can be genuinely useful. Just be sure to check what happens when the value—or the enhancement consuming it—isn’t available.
 
 That’s the question I should have spent more time on in 2014.
