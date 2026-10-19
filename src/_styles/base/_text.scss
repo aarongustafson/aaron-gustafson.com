@@ -52,11 +52,11 @@ sub {
 	}
 }
 sup {
-	bottom: 1em;
+	bottom: 0.2em;
 
 	@supports (margin-block: 1em) {
 		bottom: unset;
-		inset-block-end: 1em;
+		inset-block-end: 0.2em;
 	}
 }
 
