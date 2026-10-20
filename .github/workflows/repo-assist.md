@@ -372,6 +372,8 @@ The schema stores only:
 - `completed_actions`: Monthly Activity actions checked off by a maintainer, so they are not proposed again
 - `priorities`: a short queue of concrete follow-up work
 
+Each `fixes` entry must contain exactly `issue`, `pr`, `branch`, `status`, `updated_at`, and `note`. Use a positive issue number; `pr` must be a positive PR number or `null`; `branch` must be a non-empty string of at most 120 characters or `null`; `status` must be `open`, `merged`, `closed`, or `blocked`; `updated_at` must use `YYYY-MM-DD`; and `note` must be a non-empty string of at most 300 characters. Keep issue numbers and non-null PR numbers unique.
+
 Each `checks` entry must contain exactly `area`, `checked_at`, `result`, and `follow_up`. Use a supported area (`dependencies`, `ci`, `tooling`, `build`, `code`, `docs`, `qa`, `hygiene`, `performance`, `tests`, `release`, or `repo_assist_prs`), a `YYYY-MM-DD` date, a non-empty result of at most 300 characters, and either `null` or a non-empty follow-up of at most 300 characters.
 
 Keep notes terse and current. Replace superseded entries, remove resolved issue records and closed fix records once they are no longer needed for duplicate prevention, and never store run-by-run narration, exhaustive label histories, stale PR inventories, copied GitHub content, or facts that can be cheaply queried again. Stay within the schema's array and text limits; do not create another memory file.
