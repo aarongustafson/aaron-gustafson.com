@@ -1,12 +1,13 @@
 ---
 title: "Accessibility Assistant for Figma v53: From Design Decisions to Handoff"
-date: 2026-10-20 00:00:00 +00:00
+date: 2026-10-21 19:58:40 +00:00
 comments: true
 permalink: false
 eleventyExcludeFromCollections: true
 tags: ["accessibility", "design", "inclusive design", "Microsoft", "user experience"]
 description: "Accessibility Assistant for Figma v53 brings annotations, assessments, issues, and accessibility specs together in projects."
 twitter_text: "Accessibility Assistant for Figma v53 connects annotation, assessment, issue tracking, and handoff in a project-based workflow."
+image: "/i/share-cards/accessibility-assistant-for-figma-v53.jpg"
 ---
 
 In an internal analysis of accessibility bugs, a colleague found that roughly half could be traced back to design decisions. These were issues we should have caught earlier, before those decisions became codified in code and long before anyone encountered them in a shipped product.
