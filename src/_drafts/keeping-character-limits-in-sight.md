@@ -17,11 +17,13 @@ description: "The form-maxlength-progress web component turns a field’s native
 twitter_text: "A character limit shouldn’t sneak up on anyone. My new form-maxlength-progress web component makes a field’s native maxlength visible, accessible, and styleable."
 ---
 
-Character limits are usually presented as a number someone has to remember: “Tell us about yourself (500 characters maximum).” Then we give them a roomy text box and no idea whether they’ve used 50 characters or 499 until the browser suddenly refuses to accept another one.
+Back in 2011, I wrote [“Improving the Tweet Box”](https://webstandardssherpa.com/reviews/improving-the-tweet-box) for <cite>Web Standards Sherpa</cite>. Twitter still had a 140-character limit, and one of the things I looked at was its character counter. The number on its own, sitting below the text box, didn’t tell people much; adding “characters remaining” gave it some meaning, including for people using screen readers.
 
-The limit is doing useful work, but the experience of approaching it could be a lot better. That’s why I built [`<form-maxlength-progress>`](https://github.com/aarongustafson/form-maxlength-progress), a small web component that turns a field’s native `maxlength` into visible, accessible feedback.
+That need hasn’t gone away. A field’s native `maxlength` can enforce a limit, but it doesn’t tell someone how much room they have left as they type. My [`<form-maxlength-progress>`](https://github.com/aarongustafson/form-maxlength-progress) web component adds that feedback.
 
 <!-- more -->
+
+It also takes the accessibility work a little further: the counter is associated with the field using `aria-describedby`, so the remaining count is available as part of the field’s description. It updates visually as someone types without announcing a new number to screen reader users after every keystroke.
 
 ## Start with the constraint
 
