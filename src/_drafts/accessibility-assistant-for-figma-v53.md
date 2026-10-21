@@ -4,12 +4,12 @@ date: 2026-10-20 00:00:00 +00:00
 comments: true
 permalink: false
 eleventyExcludeFromCollections: true
-tags: ["accessibility", "design", "inclusive design", "Microsoft", "user experience", "WAI-ARIA"]
+tags: ["accessibility", "design", "inclusive design", "Microsoft", "user experience"]
 description: "Accessibility Assistant for Figma v53 brings annotations, assessments, issues, and accessibility specs together in projects."
 twitter_text: "Accessibility Assistant for Figma v53 connects annotation, assessment, issue tracking, and handoff in a project-based workflow."
 ---
 
-In an internal analysis of accessibility bugs, a colleague found that roughly half could be traced back to design decisions. These were issues we should have caught earlier, prior to someone codifying them in code and long before anyone encountered them in a shipped product.
+In an internal analysis of accessibility bugs, a colleague found that roughly half could be traced back to design decisions. These were issues we should have caught earlier, before those decisions became codified in code and long before anyone encountered them in a shipped product.
 
 That’s one of the reasons I started working on [Accessibility Assistant for Figma](https://www.figma.com/community/plugin/731310036968334777/accessibility-assistant). I wanted to help designers catch issues while they worked and help them build their accessibility knowledge along the way. Version 53 brings more of that work together, organizing annotations, assessments, issues, and handoff around projects.
 
@@ -23,23 +23,23 @@ Consider a dialog. Often, there’s a “close” button in the upper corner. Re
 
 Perhaps. But if someone has opened a dialog to complete a task, directing them to the “close” button can feel a bit like opening your front door to greet a visitor and skipping right past the pleasantries to ask if they’d like you to shut it again.
 
-Where they should start depends on the function of the dialog. If someone opened it to fill out a short form, the first field is probably the best place to start. If they need to read some text, placing focus at the beginning ensures they can dive right in. If they’re confirming an irreversible action, there’s a case to be made for focusing the least destructive option.[^dialog]
+Where they should start depends on the function of the dialog. If someone opened it to fill out a short form, the first field is probably the best place to start. If they need to read some text, placing focus on the heading or first paragraph can help them start at the beginning. If they’re confirming an irreversible action, there’s a case to be made for focusing the least destructive option.[^dialog]
 
 [^dialog]: The [ARIA Authoring Practices Guide’s dialog pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/) walks through these considerations.
 
 These are user experience decisions that have a profound effect on the accessibility of a UI. Thinking about them through a disability lens helps us describe an experience that doesn’t depend on someone seeing the whole screen or using a mouse.
 
-A picture of a user interface doesn’t communicate this nuance. Annotations do. Recording design intent using annotations provides guidance to the people implementing the design and eliminates the guesswork.
+A picture of a user interface doesn’t communicate this nuance. Annotations do. Recording design intent using annotations provides guidance to the people implementing the design and reduces the guesswork.
 
 ## Keep the work organized
 
-In previous versions of Accessibility Assistant for Figma (and A11y Focus Order before it), you could create sets of annotations and assess your project’s accessibility, but those activities were disconnected and frequently tied to a page within the Figma file. 
+In previous versions of Accessibility Assistant for Figma (and A11y Focus Order before it), you could create sets of annotations and assess your project’s accessibility, but those activities were disconnected and frequently tied to a page within the Figma file.
 
 That page-based organization doesn’t fit everyone’s workflow. It also makes it harder to remember whether the accessibility checklist you created applies to the entire UI or just a single screen.
 
 In v53, we’ve organized the entire experience around “projects.” You can create a project at the page level (the default) or build one around a single screen or multiple screens within a page. You can also name the project, set its target platform (e.g., Web or iOS), identify the design system being used, and note whether it’s connected to work happening outside of Figma, such as in a GitHub issue. Each project comprises one or more annotation sets, its own assessment progress, and any issues you uncover.
 
-If you’ve used the plugin before, on launch the plugin will gather existing Dev Mode annotations, checklists, and issues into an Imported project so you don’t need to start over. You can also discard that project and start fresh if you prefer. If you open a file with legacy (non-Dev Mode) annotations, we leave those alone and don’t import them.
+Already using Accessibility Assistant? When you launch v53, it gathers any existing Dev Mode annotations and checklists from the current page into an Imported project so you don’t need to start over. You can discard that project and start fresh if you prefer. If you open a file with legacy (non-Dev Mode) annotations, we leave those alone and don’t import them.
 
 The plugin now supports a larger set of target platforms: Web, Android, iOS, macOS, Windows Win32, Windows WinUI 3, and Windows WPF. The platform you choose determines which annotations are available within that project. That context matters because controls don’t all behave the same way, and keyboard navigation conventions differ. We’ve also improved focus-order calculations to account for platform-specific focusable roles, focusable children, and controls that use arrow keys or internal navigation.
 
@@ -57,7 +57,7 @@ When a designer (or one of our automated checks) finds an issue, the designer ca
 
 Another new feature enables designers to download an accessibility spec as HTML or copy it as Markdown.
 
-That artifact can help an engineer understand how to build the UI, support reviews with accessibility specialists, and serve as a reference for documentation writers. We’ve also had really good results handing these specs off to AI code-generation models to help with UI creation and debugging. As with anything AI-generated, the resulting implementation still needs review and testing, of course.
+That artifact can help an engineer understand how to build the UI, support reviews with accessibility specialists, and serve as a reference for documentation writers. We’ve also had really good results handing these specs off to AI code-generation models to help with UI creation and debugging. Of course, the resulting implementation still needs review and testing.
 
 I [discussed some of our early experiments with that last use at Microsoft Build](/notebook/can-your-ai-pass-the-accessibility-test/). The spec gives us a way to carry accessibility intent beyond the design file, whether the next person doing the work is writing code themselves or directing an agent.
 
@@ -71,7 +71,7 @@ We included a lot of everyday improvements in this release too:
 * Large operations, including duplicating annotated pages, stay more responsive. Imports do a better job of preventing duplicates and repairing inconsistent artifacts.
 * Deleting annotated canvas items and switching pages clean up dangling annotation records more reliably.
 
-One behavior worth calling out: if you delete the page that contains a project’s scope, the project remains visible in the plugin UI, but won’t accept new annotations. We retain the project to avoid data loss; to continue annotating, create a new project with a valid scope. You can still delete the disconnected project to keep the plugin tidy.
+One behavior worth calling out: if you delete the page that contains a project’s scope, that project will persist in the plugin, but won’t accept new annotations. We retain the project to avoid data loss. You can still delete the disconnected project to keep the plugin tidy though.
 
 ---
 
