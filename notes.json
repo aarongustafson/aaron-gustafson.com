@@ -6,7 +6,14 @@
   },
   "issues": [],
   "fixes": [],
-  "checks": [],
+  "checks": [
+    {
+      "area": "tests",
+      "checked_at": "2026-10-21",
+      "result": "npm test passes (70/70); no obvious gaps",
+      "follow_up": null
+    }
+  ],
   "completed_actions": [],
   "priorities": []
 }
