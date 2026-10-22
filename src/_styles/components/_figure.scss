@@ -86,7 +86,6 @@ fullscreen-control > button {
 		cursor: ns-resize;
 		overflow: hidden;
 		max-height: 391px;
-		min-height: 391px;
 		transition:
 			max-height 0.5s ease-in,
 			max-block-size 0.5s ease-in;
@@ -95,7 +94,6 @@ fullscreen-control > button {
 		@supports (margin-block: 1em) {
 			@include unset(max-height min-height);
 			max-block-size: 391px;
-			min-block-size: 391px;
 		}
 
 		&:hover {
