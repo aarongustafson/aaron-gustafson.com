@@ -29,8 +29,8 @@ the commands below.
    `npm test`.
 4. **Publish a draft.** Use `npm run publish:post` or
    `npm run publish:link` to move the selected draft into its published
-   collection. Publishing a post also generates its share card and persists the
-   card path in frontmatter.
+   collection. Publishing a post also generates its share card, checks metadata,
+   and runs Sequoia to publish new or changed posts to AT Protocol.
 5. **Build and deploy.** Run `npm run build` for a production build. A
    successful Netlify deployment triggers the syndication workflow, which
    shares newly published posts and links.
@@ -123,28 +123,33 @@ publication, so there is no need to run `sequoia init` again.
 | `npm run sequoia:dry-run` | Previews what would be published without making changes. |
 | `npm run sequoia:publish` | Publishes new or changed posts to AT Protocol. |
 | `npm run sequoia:sync` | Restores local state from existing AT Protocol records. |
-| `npm run sequoia:inject` | Adds document verification link tags to built HTML in `dist`. |
 | `npm run sequoia:update` | Interactively updates local config or the AT Protocol publication record. |
 
-For normal publishing:
+Before publishing for the first time:
 
 1. Sign in with `npm run sequoia:auth` or `npm run sequoia:login`.
 2. If working in a fresh checkout or missing `.sequoia-state.json`, run
    `npm run sequoia:sync` to restore state before publishing.
-3. Run `npm run sequoia:dry-run` and review the posts it would publish.
-4. Run `npm run sequoia:publish` when ready.
+For normal publishing, run `npm run publish:post`. After moving the selected
+draft, generating its share card, and checking metadata, this runs
+`npm run sequoia:publish`. Sequoia scans all of `src/posts`, so it can publish
+other new or changed posts too, not just the selected draft. For a separate
+preview, run `npm run sequoia:dry-run` before publishing; the selected draft
+will not appear in that preview until it is moved into `src/posts`.
 
-These commands are manual and separate from site deployment and social
-syndication. Publishing can update local post frontmatter as well as remote
-records; review local changes before committing. `.sequoia-state.json` is
+AT Protocol publishing happens locally before site deployment and is separate
+from post-deployment social syndication. Sequoia writes `atUri` values into
+post frontmatter; commit those changes along with the post and share card,
+then push to GitHub to trigger Netlify. AT Protocol records may briefly link
+to a website page that is not live yet. `.sequoia-state.json` is
 already ignored by Git. Keep app passwords and OAuth credentials out of the
 repository.
 
 Pass extra CLI options after `--`, for example
 `npm run sequoia:sync -- --dry-run` or
-`npm run sequoia:publish -- --help`. To add verification links to a build, run
-`npm run build`, then `npm run sequoia:inject`, and deploy that same output.
-A subsequent build replaces the injected links.
+`npm run sequoia:publish -- --help`. The site's base layout already renders
+verification links from `atUri`, so `sequoia:inject` is not needed for normal
+publishing.
 
 ## Search and social metadata
 
@@ -164,7 +169,7 @@ to a review CSV.
 
 | Command                | What it does                                                                                                                                 |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `npm run publish:post` | Prompts for a draft, moves it into the posts collection, generates and synchronizes its share card, then reports metadata length advisories. |
+| `npm run publish:post` | Prompts for a draft, moves it into the posts collection, generates and synchronizes its share card, reports metadata length advisories, then publishes new or changed posts to AT Protocol through Sequoia. |
 | `npm run publish:link` | Prompts for a draft, moves it into the links collection, then reports metadata length advisories.                                            |
 
 Publishing a file does not deploy it by itself. Commit and push the resulting
@@ -174,6 +179,13 @@ changes through the normal Git workflow. After Netlify successfully deploys
 Publishing a post builds only the selected post’s share card, without running
 Eleventy or generating other posts’ or pages’ images. If card generation fails,
 the draft is retained and the error is reported.
+
+Sequoia runs only after draft publishing and metadata checking succeed.
+If AT Protocol publishing fails, the post has already been moved into
+`src/posts`; fix the reported issue (for example, sign in with
+`npm run sequoia:auth`) and retry with `npm run sequoia:publish`, not
+`npm run publish:post`. Review the resulting `atUri` changes before committing.
+Link publishing does not run Sequoia.
 
 ## Building and maintenance
 
