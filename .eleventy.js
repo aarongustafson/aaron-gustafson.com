@@ -46,6 +46,8 @@ function getEventDate(id) {
 }
 
 export default async (config) => {
+  config.addWatchTarget("./sequoia.json");
+
   // Hostname used for absolute URL construction
   config.hostname = "https://www.aaron-gustafson.com";
   const siteHost = new URL(config.hostname).hostname.replace(/^www\./, "");

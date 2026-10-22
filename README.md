@@ -148,8 +148,13 @@ repository.
 Pass extra CLI options after `--`, for example
 `npm run sequoia:sync -- --dry-run` or
 `npm run sequoia:publish -- --help`. The site's base layout already renders
-verification links from `atUri`, so `sequoia:inject` is not needed for normal
-publishing.
+the `site.standard.publication` link on every page using the publication URI
+in `sequoia.json`, and the `site.standard.document` link on posts with an
+`atUri`. Keep the publication verification endpoint at
+`src/static/.well-known/site.standard.publication` in sync if that URI changes.
+`sequoia:inject` is not needed for normal publishing. Deploy these links before
+sharing a website URL in Bluesky so its composer can discover the records for
+enhanced cards.
 
 ## Search and social metadata
 

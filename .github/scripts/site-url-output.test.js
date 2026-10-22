@@ -1,10 +1,12 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
+import nunjucks from "nunjucks";
 
 import { htmlBaseOptions } from "../../_11ty/html-base.js";
 import filters from "../../_11ty/filters.js";
 import { setWebmentionsData } from "../../_11ty/webmentions-store.js";
+import sequoiaData from "../../src/_data/sequoia.js";
 
 test("HTML base configuration preserves authored URLs", () => {
 	assert.deepEqual(htmlBaseOptions, { baseHref: "/" });
@@ -21,6 +23,64 @@ test("the site title uses a root-relative homepage URL", () => {
 		/<a href="\/" aria-label="Return to Aaron Gustafson’s homepage">/,
 	);
 	assert.doesNotMatch(baseLayout, /\bsite_url\b/);
+});
+
+test("all site pages expose the publication and only articles expose a document", () => {
+	const baseLayout = fs.readFileSync(
+		new URL("../../src/_includes/layouts/base.njk", import.meta.url),
+		"utf8",
+	);
+	const config = JSON.parse(
+		fs.readFileSync(new URL("../../sequoia.json", import.meta.url), "utf8"),
+	);
+	const verification = fs.readFileSync(
+		new URL(
+			"../../src/static/.well-known/site.standard.publication",
+			import.meta.url,
+		),
+		"utf8",
+	).trim();
+	const sequoia = sequoiaData();
+	assert.equal(sequoia.publicationUri, config.publicationUri);
+	assert.equal(sequoia.publicationUri, verification);
+
+	class EmptyPartialsLoader extends nunjucks.Loader {
+		getSource(name) {
+			return { src: "", path: name, noCache: true };
+		}
+	}
+	const environment = new nunjucks.Environment(new EmptyPartialsLoader());
+	environment.addFilter("svgContents", () => "");
+	const atUri = "at://did:plc:example/site.standard.document/article";
+
+	for (const page of [
+		{ url: "/", body_class: "home" },
+		{ url: "/notebook/" },
+		{ url: "/notebook/article/", atUri },
+	]) {
+		const html = environment.renderString(baseLayout, {
+			site: { title: "Example Site", repo_url: "" },
+			build: {},
+			sequoia,
+			page: { url: page.url },
+			...page,
+		});
+		const publicationLinks = html.match(
+			/<link rel="site\.standard\.publication" href="([^"]+)"\s*\/?>/g,
+		);
+		assert.equal(publicationLinks?.length, 1, page.url);
+		assert.ok(publicationLinks[0].includes(`href="${config.publicationUri}"`));
+		assert.equal(
+			(html.match(/rel="site\.standard\.document"/g) ?? []).length,
+			page.atUri ? 1 : 0,
+			page.url,
+		);
+		assert.equal(
+			html.includes(`<link rel="site.standard.document" href="${atUri}"`),
+			Boolean(page.atUri),
+			page.url,
+		);
+	}
 });
 
 test("webmentions use each post's absolute canonical target", () => {
