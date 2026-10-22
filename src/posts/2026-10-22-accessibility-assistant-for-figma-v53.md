@@ -12,6 +12,7 @@ hero:
   alt: "The Accessibility Assistant for Figma icon"
   credit: Microsoft
 image: "/i/share-cards/accessibility-assistant-for-figma-v53.jpg"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3myhxpo7j542w"
 ---
 
 In an internal analysis of accessibility bugs, a colleague found that roughly half could be traced back to design decisions. These were issues we should have caught earlier, before those decisions became codified in code and long before anyone encountered them in a shipped product.

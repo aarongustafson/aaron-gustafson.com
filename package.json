@@ -23,6 +23,14 @@
 		"share-cards:post": "node .github/scripts/manage-share-cards.js --post",
 		"share-cards:force": "node .github/scripts/manage-share-cards.js --force",
 		"share-cards:dry-run": "node .github/scripts/manage-share-cards.js --dry-run",
+		"sequoia": "sequoia",
+		"sequoia:auth": "sequoia auth",
+		"sequoia:login": "sequoia login",
+		"sequoia:dry-run": "sequoia publish --dry-run",
+		"sequoia:publish": "sequoia publish",
+		"sequoia:sync": "sequoia sync",
+		"sequoia:inject": "sequoia inject",
+		"sequoia:update": "sequoia update",
 		"metadata:check": "node .github/scripts/metadata-audit.js",
 		"metadata:check:built": "node .github/scripts/validate-built-metadata.js",
 		"new:post": "plop post",
@@ -106,7 +114,8 @@
 		"jsdom": "^29.1.1",
 		"plop": "^4.0.1",
 		"prettier": "^3.7.4",
-		"prettier-plugin-toml": "^2.0.6"
+		"prettier-plugin-toml": "^2.0.6",
+		"sequoia-cli": "^0.5.7"
 	},
 	"overrides": {
 		"ansi-regex@^6": "6.1.0",

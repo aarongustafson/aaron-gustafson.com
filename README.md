@@ -108,6 +108,44 @@ Page cards are generated assets and are not committed; Netlify caches them
 between builds. Generation finishes before the cards are copied into the
 deployment output, including on the first build.
 
+## Managing AT Protocol publishing with Sequoia
+
+Sequoia publishes blog posts as Standard.site documents on AT Protocol. The CLI
+is installed with `npm install`; no global installation is needed.
+The existing `sequoia.json` config points at `src/posts` and the site's
+publication, so there is no need to run `sequoia init` again.
+
+| Command | What it does |
+| ------- | ------------ |
+| `npm run sequoia -- --help` | Lists all Sequoia commands. |
+| `npm run sequoia:auth` | Signs in with an AT Protocol handle and app password. |
+| `npm run sequoia:login` | Signs in using browser-based OAuth instead. |
+| `npm run sequoia:dry-run` | Previews what would be published without making changes. |
+| `npm run sequoia:publish` | Publishes new or changed posts to AT Protocol. |
+| `npm run sequoia:sync` | Restores local state from existing AT Protocol records. |
+| `npm run sequoia:inject` | Adds document verification link tags to built HTML in `dist`. |
+| `npm run sequoia:update` | Interactively updates local config or the AT Protocol publication record. |
+
+For normal publishing:
+
+1. Sign in with `npm run sequoia:auth` or `npm run sequoia:login`.
+2. If working in a fresh checkout or missing `.sequoia-state.json`, run
+   `npm run sequoia:sync` to restore state before publishing.
+3. Run `npm run sequoia:dry-run` and review the posts it would publish.
+4. Run `npm run sequoia:publish` when ready.
+
+These commands are manual and separate from site deployment and social
+syndication. Publishing can update local post frontmatter as well as remote
+records; review local changes before committing. `.sequoia-state.json` is
+already ignored by Git. Keep app passwords and OAuth credentials out of the
+repository.
+
+Pass extra CLI options after `--`, for example
+`npm run sequoia:sync -- --dry-run` or
+`npm run sequoia:publish -- --help`. To add verification links to a build, run
+`npm run build`, then `npm run sequoia:inject`, and deploy that same output.
+A subsequent build replaces the injected links.
+
 ## Search and social metadata
 
 Page metadata uses the complete `title` plus the site name for the document

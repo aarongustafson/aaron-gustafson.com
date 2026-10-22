@@ -7,6 +7,7 @@ description: "An email from Eric Meyer prompted me to revisit my 2014 argument a
 meta_description: "An email from Eric Meyer prompted me to revisit my 2014 argument against CSS variables: what I missed, how I use them now, and why fallbacks still matter."
 twitter_text: "Back in 2014, I decried CSS variables, but my perspective has largely changed. Here’s what I missed, how I use them now, and why fallbacks still matter."
 image: "/i/share-cards/i-changed-my-mind-about-css-variables.jpg"
+atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3myhxppedts2r"
 ---
 
 A while back, Eric Meyer emailed to ask about [my old post arguing that CSS variables were a bad idea](/notebook/css-variables-are-a-bad-idea/). Did I still feel that way?
