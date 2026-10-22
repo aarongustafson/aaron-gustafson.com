@@ -1,12 +1,16 @@
 ---
 title: "Accessibility Assistant for Figma v53: From Design Decisions to Handoff"
-date: 2026-10-21 19:58:40 +00:00
+date: 2026-10-22 15:09:42 +00:00
 comments: true
 permalink: false
 eleventyExcludeFromCollections: true
 tags: ["accessibility", "design", "inclusive design", "Microsoft", "user experience"]
 description: "Accessibility Assistant for Figma v53 brings annotations, assessments, issues, and accessibility specs together in projects."
 twitter_text: "Accessibility Assistant for Figma v53 connects annotation, assessment, issue tracking, and handoff in a project-based workflow."
+hero:
+  src: /i/posts/2026-10-22/hero.jpg
+  alt: "The Accessibility Assistant for Figma icon"
+  credit: Microsoft
 image: "/i/share-cards/accessibility-assistant-for-figma-v53.jpg"
 ---
 
@@ -27,6 +31,13 @@ Perhaps. But if someone has opened a dialog to complete a task, directing them t
 Where they should start depends on the function of the dialog. If someone opened it to fill out a short form, the first field is probably the best place to start. If they need to read some text, placing focus on the heading or first paragraph can help them start at the beginning. If they’re confirming an irreversible action, there’s a case to be made for focusing the least destructive option.[^dialog]
 
 [^dialog]: The [ARIA Authoring Practices Guide’s dialog pattern](https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/) walks through these considerations.
+
+<figure id="fig-2026-10-22-01" class="media-container">
+
+![](/i/posts/2026-10-22/1.png)
+
+<figcaption><p>The Focus Order overlay makes the intended keyboard sequence explicit: start with the speed slider and reach the close button last. The plugin lists the dialog’s annotations on the left, with matching callouts on the canvas.</p></figcaption>
+</figure>
 
 These are user experience decisions that have a profound effect on the accessibility of a UI. Thinking about them through a disability lens helps us describe an experience that doesn’t depend on someone seeing the whole screen or using a mouse.
 
