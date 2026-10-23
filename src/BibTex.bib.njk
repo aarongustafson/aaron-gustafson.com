@@ -23,7 +23,7 @@ permalink: "/aaron-gustafson.bib"
 {% for item in collections.articles %}
   {% set itemslug = "Aaron Gustafson " + item.data.title %}
 {% raw %}@article{{% endraw %}{{ itemslug | slugify }},
- author    = "Aaron Gustafson",
+ author    = "{{ item.data.author or 'Aaron Gustafson' }}",
  title     = "{{ item.data.title | replace("&amp;", "&") | safe }}",
  journal   = "{{ item.data.publisher | replace("&amp;", "&") | safe }}",
  year      =  {{ item.date | year }},
