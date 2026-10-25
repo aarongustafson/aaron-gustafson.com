@@ -11,4 +11,4 @@ cover: "advanced-dom-scripting.jpg"
 width: "167"
 ---
 
-I contributed a chapter exploring the creation of a custom-designed, accessible `select` element to Jeffrey Sambells’ advanced JavaScript technique book.
+I contributed a chapter exploring the creation of a custom-designed, accessible `<select>` element to Jeffrey Sambells’ advanced JavaScript technique book.

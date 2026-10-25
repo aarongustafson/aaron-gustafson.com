@@ -8,8 +8,8 @@ twitter_text: "The `dialog` element is ready for prime time. Use it, don’t abu
 ref_source: "Scott O’Hara"
 ---
 
-The `dialog` element is ready for prime time:
+The `<dialog>` element is ready for prime time:
 
-> IMO, the dialog element has reached the tipping point of being the better option for web developers who need to implement dialogs in their web pages. The number of accessibility requirements a developer needs to be aware of, and the level of effort to implement custom ARIA dialogs is now largely taken care of by browsers.
+> IMO, the `dialog` element has reached the tipping point of being the better option for web developers who need to implement dialogs in their web pages. The number of accessibility requirements a developer needs to be aware of, and the level of effort to implement custom ARIA dialogs is now largely taken care of by browsers.
 
 Use it, don’t abuse it.
