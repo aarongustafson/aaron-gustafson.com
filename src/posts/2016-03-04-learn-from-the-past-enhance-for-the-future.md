@@ -149,7 +149,7 @@ Beyond using markup to clarify the intent of the words we write, we can use it t
 
 > In the spirit of promoting Web Standards along with good semantic markup and _proper hierarchy structures_
 
-By “proper hierarchy”, Dustin is talking about the document outline. A document outline is created through use of heading elements (`h1`–`h6`). It provides a easy way to review the organization of our web pages and validate our source order decisions. It also helps us ensure the flow works, which is incredibly important in any conversation. It helps us get to the point, streamline our content, and remove distractions… all of which are a sign of respect to our users.
+By “proper hierarchy”, Dustin is talking about the document outline. A document outline is created through use of heading elements (`<h1>`–`<h6>`). It provides a easy way to review the organization of our web pages and validate our source order decisions. It also helps us ensure the flow works, which is incredibly important in any conversation. It helps us get to the point, streamline our content, and remove distractions… all of which are a sign of respect to our users.
 
 None of this is news, of course, content strategists have been recommending that we streamline our content since the dawn of the Web. Sadly, many folks didn’t heed that advice until they were forced to confront the often infuriating world of mobile. Smaller screens required focused content.
 
@@ -231,7 +231,7 @@ This comes into play often when dealing with forms. Ensuring radio and checkbox 
 <label for="agree_yes">Yes</label>
 ```
 
-You can also use the `fieldset` and `legend` elements to group the related controls, but be sure to make the `legend` focusable or associate it with the first focusable form control in order to ensure the question is read out.
+You can also use the `<fieldset>` and `<legend>` elements to group the related controls, but be sure to make the `<legend>` focusable or associate it with the first focusable form control in order to ensure the question is read out.
 
 ```html
 <fieldset>
@@ -255,7 +255,7 @@ You can also use the `fieldset` and `legend` elements to group the related contr
 </audio>
 </figure>
 
-We should strive for the same sort of clarity when presenting navigation options. The HTML5 `nav` element enables us to semantically identify an area of the page being used for navigation. It does not, however, identify the `nav` element as being for navigation when encountered naturally in the flow of the document. For that reason, it can be useful to provide an textual introduction to the section, even if you choose to visibly hide it. You might even consider expanding the text of your navigation items to provide additional context.
+We should strive for the same sort of clarity when presenting navigation options. The HTML5 `<nav>` element enables us to semantically identify an area of the page being used for navigation. It does not, however, identify the `<nav>` element as being for navigation when encountered naturally in the flow of the document. For that reason, it can be useful to provide an textual introduction to the section, even if you choose to visibly hide it. You might even consider expanding the text of your navigation items to provide additional context.
 
 ```html
 <nav id="nav" tabindex="0" aria-labelledby="nav-title">
@@ -386,7 +386,7 @@ Microsoft has taken a slightly different approach. Using a relatively simple XML
 <meta name="msapplication-cortanavcd" content="http://myapp.io/vcd.xml" />
 ```
 
-All we need to do is include a `meta` tag pointing to an XML file that details the commands (and variations) and, when a user installs the site as a hosted app, Cortana picks up the new commands automatically. Those commands, when issued, can open a specific page or even kick off JavaScript methods in the target page.
+All we need to do is include a `<meta>` tag pointing to an XML file that details the commands (and variations) and, when a user installs the site as a hosted app, Cortana picks up the new commands automatically. Those commands, when issued, can open a specific page or even kick off JavaScript methods in the target page.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

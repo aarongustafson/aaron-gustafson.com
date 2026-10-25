@@ -85,7 +85,7 @@ While in the process of migrating to Eleventy, I also took the opportunity to
 - Add a Service Worker, and
 - Update the site’s `meta` info to reflect current best practices.
 
-I also swapped out the PHP logic that governed the pink color theme for [a simple `script` in the `head` of the every page](https://github.com/aarongustafson/tipr.mobi/blob/main/src/_includes/layouts/base.njk#L7-L12). Since the color change is an enhancement, rather than a necessity, I didn’t feel like it was something I needed to manage another way.
+I also swapped out the PHP logic that governed the pink color theme for [a simple `<script>` in the `<head>` of the every page](https://github.com/aarongustafson/tipr.mobi/blob/main/src/_includes/layouts/base.njk#L7-L12). Since the color change is an enhancement, rather than a necessity, I didn’t feel like it was something I needed to manage another way.
 
 The greatest challenge in moving Tipr over to a static site was setting up the tip calculation engine, which had been in PHP to ensure it would work even if JavaScript wasn’t available.
 
@@ -119,7 +119,7 @@ This file contains the central logic of the tip calculator. It’s written in va
 
 ### `src/index.html`
 
-The homepage of the site is also home to the tip calculation form. Below the form is an embedded `script` element containing the logic for interacting with the DOM for the client-side version of the tip calculator. I include the logic at the top of that `script`:
+The homepage of the site is also home to the tip calculation form. Below the form is an embedded `<script>` element containing the logic for interacting with the DOM for the client-side version of the tip calculator. I include the logic at the top of that `<script>`:
 
 ```njk
 {% raw %}
@@ -238,7 +238,7 @@ function = "tipr"
 path = "/process/"
 ```
 
-This tells Netlify to route requests to `/process/` through `netlify/edge-functions/tipr.js`. Then all that was left to do was wire up the `form` to use that endpoint as its `action`:
+This tells Netlify to route requests to `/process/` through `netlify/edge-functions/tipr.js`. Then all that was left to do was wire up the `<form>` to use that endpoint as its `action`:
 
 ```html
 <form id="calc" method="post" action="/process/"></form>

@@ -20,7 +20,7 @@ I finally got around to reading [the CSS Tricks piece on “Spicy Sections”](h
 
 <!-- more -->
 
-Back in 2007, I built [a little standalone JavaScript called `TabInterface.js`](https://easy-designs.github.io/TabInterface.js/). I built it to generate tabbed interfaces using the natural document outline (`h1`-`h6`) to inform the UI. It only required that the author add a single wrapper to indicate the content could be converted into a tabbed interface. For example, given the following HTML:
+Back in 2007, I built [a little standalone JavaScript called `TabInterface.js`](https://easy-designs.github.io/TabInterface.js/). I built it to generate tabbed interfaces using the natural document outline (`<h1>`-`<h6>`) to inform the UI. It only required that the author add a single wrapper to indicate the content could be converted into a tabbed interface. For example, given the following HTML:
 
 ```html
 <div id="recipe" class="tabbed">
@@ -62,7 +62,7 @@ Over the years, my approach continued to evolve to include
 
 - Testing to see if the tabs would even fit horizontally, considering the viewport width and length of the headings (`TabInterface` does support alternate, shorter markup-driven headings too).
 - Adapting to provide an accordion when horizontal space was scarce.
-  - This could use `details` & `summary`, if supported or
-  - `div` elements if not.
+  - This could use `<details>` & `<summary>`, if supported or
+  - `<div>` elements if not.
 
 Anyway, it’s wild to see the idea finally beginning to get some traction in a broader sense. Clearly `TabInterface` was an idea before its time.

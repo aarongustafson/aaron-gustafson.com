@@ -17,7 +17,7 @@ In his astute post [“‘Native experience’ vs styling select boxes”](https
 
 > But why this urge to re-style page elements that end-users are familiar with? … Or is it that we love native look and feel, except when we don’t?
 
-Speaking as the guy who not only wrote JavaScript to help me create an accessible `select` element alternative, but who also made it [the focus of a case study (PNG, 128kB)](https://books.google.com/books/content?id=Wmg6dkBJd50C&pg=PA507&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U2DB7JkEBRWEjSwZLHwIJnpGqgq9w&w=1280) in [AdvancED DOM Scripting](https://amzn.to/TaoffD), I am fully aware of the desire to have it both ways. I have not often seen the desire for both in a single individual, but it does happen in one particular instance occasionally.
+Speaking as the guy who not only wrote JavaScript to help me create an accessible `<select>` element alternative, but who also made it [the focus of a case study (PNG, 128kB)](https://books.google.com/books/content?id=Wmg6dkBJd50C&pg=PA507&img=1&zoom=3&hl=en&bul=1&sig=ACfU3U2DB7JkEBRWEjSwZLHwIJnpGqgq9w&w=1280) in [AdvancED DOM Scripting](https://amzn.to/TaoffD), I am fully aware of the desire to have it both ways. I have not often seen the desire for both in a single individual, but it does happen in one particular instance occasionally.
 
 <!-- more -->
 
@@ -35,7 +35,7 @@ As the weathered, battle tested (and, admittedly, somewhat jaded) front-end dev 
 
 ## In Addressing Desired Design Changes
 
-In terms of aesthetics (addressing arguments 1, 2, and 3), I understand where you’re coming from. Browser-delivered UI controls are not the most appealing things, but they are familiar to your users. A `select` box they see on your site that looks like the one they see on Wikipedia or their banking site will be immediately recognizable. Sure, the looks and feel may differ from browser to browser, but most people use only a small number of browsers throughout the day—at work, at home, on their device—and if you want to ensure the design of a form control feels “right” in the browser they are using, sometimes it’s best to let go of that control.
+In terms of aesthetics (addressing arguments 1, 2, and 3), I understand where you’re coming from. Browser-delivered UI controls are not the most appealing things, but they are familiar to your users. A `<select>` box they see on your site that looks like the one they see on Wikipedia or their banking site will be immediately recognizable. Sure, the looks and feel may differ from browser to browser, but most people use only a small number of browsers throughout the day—at work, at home, on their device—and if you want to ensure the design of a form control feels “right” in the browser they are using, sometimes it’s best to let go of that control.
 
 ## In Addressing OS Parity
 

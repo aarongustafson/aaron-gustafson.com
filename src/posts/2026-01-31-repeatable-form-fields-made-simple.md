@@ -3,7 +3,7 @@ title: "Repeatable Form Fields Made Simple"
 date: 2026-01-31 00:04:36 +00:00
 comments: true
 tags: ["forms", "HTML", "JavaScript", "progressive enhancement", "web components", "web forms"]
-description: "Need to let users add multiple email addresses, phone numbers, or other field groups? The `form-repeatable` web component handles the duplication, renumbering, and form submission automatically."
+description: "Need to let users add multiple email addresses, phone numbers, or other field groups? The `<form-repeatable>` web component handles the duplication, renumbering, and form submission automatically."
 twitter_text: "Add repeatable form field groups with automatic numbering and native form participation."
 series:
   name: "Modern Web Form Best Practices"
@@ -15,7 +15,7 @@ meta_description: "Need to let users add multiple email addresses, phone numbers
 social_description: "Need to let users add multiple email addresses, phone numbers, or other field groups? The `<form-repeatable>` web component handles the duplication, renumbering, and form submission automatically."
 ---
 
-Sometimes you need people to provide multiple instances of the same information: email addresses, phone numbers, team members, or emergency contacts. The `form-repeatable` web component handles that cleanly, including duplication, renumbering, and seamless form submission via the ElementInternals API.
+Sometimes you need people to provide multiple instances of the same information: email addresses, phone numbers, team members, or emergency contacts. The `<form-repeatable>` web component handles that cleanly, including duplication, renumbering, and seamless form submission via the ElementInternals API.
 
 <!-- more -->
 
@@ -32,7 +32,7 @@ All you need to do is provide a single field group and the component handles the
 </form>
 ```
 
-The `form-repeatable` component treats its first child as a template and injects a `button` that allows users to repeat the field. When users click “Add Another” (the default “add” button text), the following happens:
+The `<form-repeatable>` component treats its first child as a template and injects a `<button>` that allows users to repeat the field. When users click “Add Another” (the default “add” button text), the following happens:
 
 1. The template is cloned,
 2. Any numbers are auto-incremented (“Stop 1” → “Stop 2”, `stop-1` → `stop-2`),
@@ -91,7 +91,7 @@ All child elements become managed groups, and existing values are preserved. Per
 
 ## Need to do something more complex? I got you.
 
-You’re not limited to repeating a single field. Each group can contain multiple, related fields. Here’s an example with a `fieldset` for guest information:
+You’re not limited to repeating a single field. Each group can contain multiple, related fields. Here’s an example with a `<fieldset>` for guest information:
 
 ```html
 <form-repeatable>
@@ -106,7 +106,7 @@ You’re not limited to repeating a single field. Each group can contain multipl
 </form-repeatable>
 ```
 
-When the component initializes, the whole `fieldset` becomes the template. As users add guests, numeric values in text and attributes increment automatically. In this example, that means the `legend`, `for`, `id`, and `name` values all stay in sync.
+When the component initializes, the whole `<fieldset>` becomes the template. As users add guests, numeric values in text and attributes increment automatically. In this example, that means the `<legend>`, `for`, `id`, and `name` values all stay in sync.
 
 ## Need to constrain the responses? Sure thing.
 
@@ -136,9 +136,9 @@ This creates a component that:
 
 The remove buttons are not shown when at the minimum threshold (1 by default) and the add button disappears when you hit the maximum.
 
-## Prefer an explicit `template`? Bring it!
+## Prefer an explicit `<template>`? Bring it! {#prefer-an-explicit-template%3F-bring-it!}
 
-This component can accept a `template` element containing the fields you want to repeat. Just drop in `{n}` placeholders where you want the sequential numbers to appear:
+This component can accept a `<template>` element containing the fields you want to repeat. Just drop in `{n}` placeholders where you want the sequential numbers to appear:
 
 ```html
 <form-repeatable>
@@ -151,7 +151,7 @@ This component can accept a `template` element containing the fields you want to
 </form-repeatable>
 ```
 
-When hoisted into the component, the `template` element is removed from the light DOM and used internally.
+When hoisted into the component, the `<template>` element is removed from the light DOM and used internally.
 
 ## Here’s what you need to know about styling it
 

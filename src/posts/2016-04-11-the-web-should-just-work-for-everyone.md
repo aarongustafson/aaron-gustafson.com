@@ -312,7 +312,7 @@ This comes into play often when dealing with forms. Ensuring radio and checkbox 
 <label for="agree_yes">Yes</label>
 ```
 
-You can also use the `fieldset` and `legend` elements to group the related controls, but be sure to make the `legend` focusable or associate it with the first focusable form control in order to ensure the question is read out.
+You can also use the `<fieldset>` and `<legend>` elements to group the related controls, but be sure to make the `<legend>` focusable or associate it with the first focusable form control in order to ensure the question is read out.
 
 ```html
 <fieldset>
@@ -336,7 +336,7 @@ You can also use the `fieldset` and `legend` elements to group the related contr
 </audio>
 </figure>
 
-We should strive for the same sort of clarity when presenting navigation options. The HTML5 `nav` element enables us to semantically identify an area of the page being used for navigation. It is not, however, always identified as being navigation when encountered naturally in the flow of the document. (It is when using role-based navigation like we saw earlier.) For that reason, it can be useful to provide an textual introduction to the section, even if you choose to visibly hide it. You might even consider expanding the text of your navigation items to provide additional context like I do on my site.
+We should strive for the same sort of clarity when presenting navigation options. The HTML5 `<nav>` element enables us to semantically identify an area of the page being used for navigation. It is not, however, always identified as being navigation when encountered naturally in the flow of the document. (It is when using role-based navigation like we saw earlier.) For that reason, it can be useful to provide an textual introduction to the section, even if you choose to visibly hide it. You might even consider expanding the text of your navigation items to provide additional context like I do on my site.
 
 ```html
 <nav id="nav" tabindex="0" aria-labelledby="nav-title">

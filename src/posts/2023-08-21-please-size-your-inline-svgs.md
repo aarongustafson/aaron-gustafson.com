@@ -51,7 +51,7 @@ Thankfully, this is a pretty easy situation to avoid: just set an explicit `widt
 <svg viewBox="0 0 38 48" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
 ```
 
-You can explicitly set the `width` and `height` in the `svg` element like this:
+You can explicitly set the `width` and `height` in the `<svg>` element like this:
 
 ```html
 <svg

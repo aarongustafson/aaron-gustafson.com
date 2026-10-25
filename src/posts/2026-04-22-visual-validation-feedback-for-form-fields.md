@@ -13,7 +13,7 @@ tags:
     "web forms",
     "user experience",
   ]
-description: "The `form-validation-list` web component provides real-time visual feedback on validation requirements, showing users which rules they have satisfied as they type."
+description: "The `<form-validation-list>` web component provides real-time visual feedback on validation requirements, showing users which rules they have satisfied as they type."
 twitter_text: "New #WebComponent: Show users which validation requirements they’ve met—as they type."
 series:
   name: "Modern Web Form Best Practices"
@@ -25,7 +25,7 @@ meta_description: "The `<form-validation-list>` web component shows people which
 social_description: "The `<form-validation-list>` web component provides real-time visual feedback on validation requirements, showing users which rules they have satisfied as they type."
 ---
 
-Password requirements, username rules, and format constraints tend to pile up fast. Too often, people only learn whether they met them after they hit submit. The `form-validation-list` web component changes that by providing real-time feedback as someone types, showing exactly which requirements are met, and which still need work.
+Password requirements, username rules, and format constraints tend to pile up fast. Too often, people only learn whether they met them after they hit submit. The `<form-validation-list>` web component changes that by providing real-time feedback as someone types, showing exactly which requirements are met, and which still need work.
 
 <!-- more -->
 
@@ -35,7 +35,7 @@ This is a modern replacement for my old [jQuery Easy Validation Rules](https://g
 
 <hr>
 
-To get started, associate the component with an `input` element using the `for` attribute and define your validation rules:
+To get started, associate the component with an `<input>` element using the `for` attribute and define your validation rules:
 
 ```html
 <form>
@@ -60,7 +60,7 @@ By default, validation runs on the `input` event with a 250ms throttle. Matched 
 
 The component:
 
-1. Associates with an input via the `for` attribute (just like a `label` element)
+1. Associates with an input via the `for` attribute (just like a `<label>` element)
 2. Finds all elements with `data-pattern` attributes
 3. Tests the input value against each pattern when the configured trigger fires
 4. Adds `validation-matched` or `validation-unmatched` classes and visual indicators accordingly
@@ -95,7 +95,7 @@ Define rules using regular expression patterns in the `data-pattern` attribute:
 </form-validation-list>
 ```
 
-Each pattern is a standard JavaScript regular expression. The component tests the `input` value against all patterns on the configured trigger, using throttled `input` events by default.
+Each pattern is a standard JavaScript regular expression. The component tests the `<input>` value against all patterns on the configured trigger, using throttled `input` events by default.
 
 ## Input event too noisy? No worries.
 
@@ -126,7 +126,7 @@ Set it to “0” to remove the cascade effect entirely and check all rules simu
 
 ## Need full design control? You got it.
 
-If you want full design control over the component, you can absolutely have it. The whole component operates in light DOM, so your styles will pierce through. And you can customize `class` names for integration with CSS frameworks using a set of attributes on the `form-validation-list` element. The `field-valid-class` and `field-invalid-class` attributes control the class names applied to the `input` field itself, while the `rule-matched-class` and `rule-unmatched-class` attributes control the `class` names applied to each rule item.
+If you want full design control over the component, you can absolutely have it. The whole component operates in light DOM, so your styles will pierce through. And you can customize `class` names for integration with CSS frameworks using a set of attributes on the `<form-validation-list>` element. The `field-valid-class` and `field-invalid-class` attributes control the class names applied to the `<input>` field itself, while the `rule-matched-class` and `rule-unmatched-class` attributes control the `class` names applied to each rule item.
 
 Here’s a complete example:
 
@@ -261,7 +261,7 @@ The component uses light DOM, so if JavaScript fails, users still see the valida
 
 The component is built with accessibility in mind:
 
-- **Proper description support**: The validation list is automatically associated with the `input` via `aria-describedby`, and if the field already has `aria-describedby`, the original value is preserved.
+- **Proper description support**: The validation list is automatically associated with the `<input>` via `aria-describedby`, and if the field already has `aria-describedby`, the original value is preserved.
 - **A concise announcement model**: With the default `trigger-event="input"`, the component temporarily suspends the full criteria list from `aria-describedby` while someone types and uses a single polite live region to announce progress instead.
 - **State restoration on blur**: When focus leaves the field, any pending validation timeouts are cleared and the full criteria list is restored so returning to the field announces the final criteria state.
 - **Localized rule state**: Once the field has a value, each rule gets visually hidden localized state text in the DOM, which is more robust than relying on CSS-generated content alone.

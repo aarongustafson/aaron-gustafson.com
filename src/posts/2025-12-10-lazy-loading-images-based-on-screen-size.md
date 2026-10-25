@@ -19,7 +19,7 @@ meta_description: "The `<lazy-img>` web component can skip images on small scree
 social_description: "The `<lazy-img>` web component goes beyond native lazy loading and srcset—it can completely skip loading images on small screens, saving bandwidth where it matters most."
 ---
 
-Native lazy loading and `srcset` are great, but they have a limitation: they always load _some_ variant of the image. The `lazy-img` web component takes a different approach—it can completely skip loading images when they don’t meet your criteria, whether that’s screen size, container size, or visibility in the viewport.
+Native lazy loading and `srcset` are great, but they have a limitation: they always load _some_ variant of the image. The `<lazy-img>` web component takes a different approach—it can completely skip loading images when they don’t meet your criteria, whether that’s screen size, container size, or visibility in the viewport.
 
 This is particularly valuable for mobile users on slow connections or limited data plans. If an image is only meaningful on larger screens, why waste their bandwidth loading it at all?
 
@@ -27,13 +27,13 @@ This is particularly valuable for mobile users on slow connections or limited da
 
 ## The performance benefit
 
-Unlike `picture` or `srcset`, which always load some image variant, `lazy-img` can **completely skip loading images** on screens or containers below your specified threshold. Set `min-inline-size="768px"` and mobile users will never download that image at all—saving data and speeding up page loads.
+Unlike `<picture>` or `srcset`, which always load some image variant, `<lazy-img>` can **completely skip loading images** on screens or containers below your specified threshold. Set `min-inline-size="768px"` and mobile users will never download that image at all—saving data and speeding up page loads.
 
 Once an image is loaded, however, it remains loaded even if the viewport or container is resized below the threshold. This is intentional—the component prevents unnecessary downloads but doesn’t unload images already in memory. You can control visibility with CSS if needed using the `loaded` and `qualifies` attributes (which we’ll get to shortly).
 
 ## Basic usage
 
-The `lazy-img` works pretty much identically to a regular `img` element, with all the attributes you know and love:
+The `<lazy-img>` works pretty much identically to a regular `<img>` element, with all the attributes you know and love:
 
 ```html
 <lazy-img src="image.jpg" alt="A beautiful image"> </lazy-img>
@@ -50,7 +50,7 @@ Load an image only when its container reaches a minimum width:
 </lazy-img>
 ```
 
-The image loads when the `lazy-img` element’s container reaches 500px wide. This is the default query mode—it uses `ResizeObserver` to watch the container size.
+The image loads when the `<lazy-img>` element’s container reaches 500px wide. This is the default query mode—it uses `ResizeObserver` to watch the container size.
 
 ## Media queries
 
@@ -222,13 +222,13 @@ The component is highly optimized:
 - **Shared `IntersectionObserver`**: View mode with the same `view-range-start` shares an `IntersectionObserver`
 - **Clean disconnection**: Properly cleans up observers when elements are removed
 
-Even with hundreds of `lazy-img` elements on a page, performance remains excellent.
+Even with hundreds of `<lazy-img>` elements on a page, performance remains excellent.
 
 ## Progressive enhancement
 
 If JavaScript fails to load, images simply don’t appear (unless using immediate loading mode). This might sound problematic, but for non-critical images—decorative graphics, supplementary screenshots, marketing imagery—it’s often exactly what you want. Your content remains accessible; you just lose the enhancements.
 
-For critical images that are part of your content, use standard `img` tags. Use `lazy-img` for conditional enhancements.
+For critical images that are part of your content, use standard `<img>` tags. Use `<lazy-img>` for conditional enhancements.
 
 ## Demo
 

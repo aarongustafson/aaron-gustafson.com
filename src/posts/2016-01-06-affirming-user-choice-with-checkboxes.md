@@ -46,9 +46,9 @@ This works really well, though I generally prefer to [combine explicit and impli
 </label>
 ```
 
-Regardless of the markup pattern itself, it’s important to note the explicit association of the form control and the `label` element (using the `for` attribute). You’ll also notice the input has a straightforward `name` value which will be submitted to the back end if the user ticks the box.
+Regardless of the markup pattern itself, it’s important to note the explicit association of the form control and the `<label>` element (using the `for` attribute). You’ll also notice the input has a straightforward `name` value which will be submitted to the back end if the user ticks the box.
 
-It’s worth noting that some back-end systems may require a value be submitted for the given variable name (in this case, “REMEMBERME”) regardless of whether the user has ticked the checkbox. If that’s a requirement, you can alter the pattern to use a hidden `input` as well:
+It’s worth noting that some back-end systems may require a value be submitted for the given variable name (in this case, “REMEMBERME”) regardless of whether the user has ticked the checkbox. If that’s a requirement, you can alter the pattern to use a hidden `<input>` as well:
 
 ```html
 <input type="hidden" name="REMEMBERME" value="no" />
@@ -56,7 +56,7 @@ It’s worth noting that some back-end systems may require a value be submitted 
 <label for="lilo_checkBox">Remember Me</label>
 ```
 
-The source order matters because with matching `name` values, the final submittable `value` will always be the one the back-end receives. With this setup, the `value` of “no” (from the hidden `input`) will be submitted by default. If the checkbox is ticked, its `value` is submitted instead, setting REMEMBERME to “yes”.
+The source order matters because with matching `name` values, the final submittable `value` will always be the one the back-end receives. With this setup, the `value` of “no” (from the hidden `<input>`) will be submitted by default. If the checkbox is ticked, its `value` is submitted instead, setting REMEMBERME to “yes”.
 
 ## Multiple Choice Checkboxes
 
@@ -100,15 +100,15 @@ The markup they employ is pretty well-organized and straightforward: it’s a li
 </ul>
 ```
 
-As this is an instance where a user could choose more than one option, the back end needs to be able to capture that information in what’s called an “array”. An array, if you’re unfamiliar, is a collection of values. You’ll notice that the `name` given to each of these checkbox `input` elements is the same: “reservation*requested_device[]”. The square brackets (“[]”) at the end of the `name` are the magic bit that allows the values of \_each* chosen “reservation_requested_device” checkbox to be submitted as the value of “reservation_requested_device”.
+As this is an instance where a user could choose more than one option, the back end needs to be able to capture that information in what’s called an “array”. An array, if you’re unfamiliar, is a collection of values. You’ll notice that the `name` given to each of these checkbox `<input>` elements is the same: “reservation*requested_device[]”. The square brackets (“[]”) at the end of the `name` are the magic bit that allows the values of \_each* chosen “reservation_requested_device” checkbox to be submitted as the value of “reservation_requested_device”.
 
 ## Applicable Attributes
 
-Checkbox controls only use a subset of the typical `input` attributes. In particular, you’ll need to include
+Checkbox controls only use a subset of the typical `<input>` attributes. In particular, you’ll need to include
 
 - `name` - This is the variable name you want to hold the user’s response. As mentioned in [the previous section](#multiple-choice-checkboxes), appending “[]” to the variable name will allow the variable to hold all of the user’s choices as opposed to only the final one.
 - `value` - This is the value that should be captured if the user ticks the checkbox.
-- `id` - The unique identifier you’re using for the control in order to explicitly associate it with a `label`.
+- `id` - The unique identifier you’re using for the control in order to explicitly associate it with a `<label>`.
 
 There are a few optional attributes you might consider including as well.
 
@@ -119,13 +119,13 @@ There are a few optional attributes you might consider including as well.
 
 Checkboxes excel at allowing users to indicate preference from a pre-defined set of options. But there are other form control types that allow for similar control over user responses. That can make it difficult to decide which element to use.
 
-### Dropdown List (`select`)
+### Dropdown List (`<select>`) {#dropdown-list-(select)}
 
-The `select` element is another tried and true option for allowing users to indicate preference. A simple two-choice `select` could achieve the same goal as a confirmation checkbox, but it’s a little clunkier. In terms of user interface, `select` elements require more clicks of your users. They also obscure the complete list of choices from view because only one options is displayed at a time. Their appearance makes them more compact, but can make it difficult to get a complete picture of what choices are available when you can’t see them all.
+The `<select>` element is another tried and true option for allowing users to indicate preference. A simple two-choice `<select>` could achieve the same goal as a confirmation checkbox, but it’s a little clunkier. In terms of user interface, `<select>` elements require more clicks of your users. They also obscure the complete list of choices from view because only one options is displayed at a time. Their appearance makes them more compact, but can make it difficult to get a complete picture of what choices are available when you can’t see them all.
 
-You can enable multiple choice in a `select` element by adding the `multiple` attribute to it, but depending on the number of `option` elements, it could also be a little unwieldy. Depending on the size of the `select` and the number of options, you could also create an inner scroll that could be awkward on certain touch-based devices.
+You can enable multiple choice in a `<select>` element by adding the `multiple` attribute to it, but depending on the number of `<option>` elements, it could also be a little unwieldy. Depending on the size of the `<select>` and the number of options, you could also create an inner scroll that could be awkward on certain touch-based devices.
 
-The `select` element has its place, but should be used sparingly. I’ll go in-depth with `select` elements in a future post.
+The `<select>` element has its place, but should be used sparingly. I’ll go in-depth with `<select>` elements in a future post.
 
 ### Choose One (`input[type=radio]`)
 

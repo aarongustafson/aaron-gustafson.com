@@ -20,11 +20,11 @@ Back in 2007, I built [`TabInterface.js`](https://easy-designs.github.io/TabInte
 
 I shared that work in my “Fundamental Progressive Enhancement” talk at Web Builder 2.0 in 2008, then wrote it up in a two-part article for <cite>NET Magazine</cite> in 2009 ([Part 1](https://www.aaron-gustafson.com/docs/create-a-tabbed-interface-part-1.pdf) and [Part 2](https://www.aaron-gustafson.com/docs/create-a-tabbed-interface-part-2.pdf)). When responsive design became a thing, I started recommending another step: only make the tabs when they fit; leave the content alone when the tabs wouldn’t.
 
-Nearly two decades on, I’ve built the idea yet again. [`@aarongustafson/tabbed-interface`](https://github.com/aarongustafson/tabbed-interface) is the latest incarnation—as a custom element.
+Nearly two decades on, I’ve built the idea yet again. [`<tabbed-interface>`](https://github.com/aarongustafson/tabbed-interface) is the latest incarnation—as a custom element.
 
 ## Something old, something new
 
-The markup requirement looks a lot like it did back in 2007; the only difference is that the `div` wrapper is now a `tabbed-interface` element:
+The markup requirement looks a lot like it did back in 2007; the only difference is that the `<div>` wrapper is now a `<tabbed-interface>` element:
 
 ```html
 <tabbed-interface>
@@ -113,6 +113,6 @@ I put together a [live demo](https://aarongustafson.github.io/tabbed-interface/d
 </fullscreen-control>
 </figure>
 
-If it seems useful to you, head on over to [the `tabbed-interface` project page](https://github.com/aarongustafson/tabbed-interface) for the installation options and a complete list of features and options.
+If it seems useful to you, head on over to [the `<tabbed-interface>` project page](https://github.com/aarongustafson/tabbed-interface) for the installation options and a complete list of features and options.
 
 And if you use it on your site, let me know. Happy tabbing!

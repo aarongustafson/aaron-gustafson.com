@@ -22,11 +22,11 @@ atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvzgjfd
 image: "/i/share-cards/never-lose-form-progress-again.jpg"
 ---
 
-Few things are more annoying than losing your progress halfway through a form. Maybe the browser crashes. Maybe the tab closes. Maybe your kid yells from the other room, and you come back three hours later wondering why you thought now was a good time to fill out a mortgage application. Whatever the cause, `form-saver` makes those interruptions a lot less painful, which helps because forms are usually frustrating enough on their own.
+Few things are more annoying than losing your progress halfway through a form. Maybe the browser crashes. Maybe the tab closes. Maybe your kid yells from the other room, and you come back three hours later wondering why you thought now was a good time to fill out a mortgage application. Whatever the cause, `<form-saver>` makes those interruptions a lot less painful, which helps because forms are usually frustrating enough on their own.
 
 <!-- more -->
 
-At its core, `form-saver` is a small web component that wraps a form, keeps an eye on it, stores values in `localStorage`, and restores them when the page loads again. Better yet, it clears out saved data after a successful submission so you’re not accidentally resurrecting stale information the next time someone stops by. Nobody wants yesterday’s half-finished support request shambling back to life.
+At its core, `<form-saver>` is a small web component that wraps a form, keeps an eye on it, stores values in `localStorage`, and restores them when the page loads again. Better yet, it clears out saved data after a successful submission so you’re not accidentally resurrecting stale information the next time someone stops by. Nobody wants yesterday’s half-finished support request shambling back to life.
 
 ## Basic usage
 
@@ -52,22 +52,22 @@ All you need to do is wrap your form in the component:
 </form-saver>
 ```
 
-That’s it. The component targets the first descendant `form`, saves values as people type or make changes, and restores them when they come back. No extra plumbing, just a form with a slightly better memory than most of us before coffee. Depending on the day, that may not be a terribly high bar, but still.
+That’s it. The component targets the first descendant `<form>`, saves values as people type or make changes, and restores them when they come back. No extra plumbing, just a form with a slightly better memory than most of us before coffee. Depending on the day, that may not be a terribly high bar, but still.
 
 This is especially handy for forms that are a little more involved than a simple email signup. Job applications, checkout flows, support requests, and multi-question onboarding forms all benefit from a little resilience. So do the people filling them out, who generally have better things to do than retype the same answers because a tab got squirrelly.
 
 ## What actually gets saved?
 
-`form-saver` supports the controls most of us reach for every day:
+`<form-saver>` supports the controls most of us reach for every day:
 
-- Text-style `input` fields
-- `textarea` elements,
-- `select` elements (including multi-selects), and
+- Text-style `<input>` fields
+- `<textarea>` elements,
+- `<select>` elements (including multi-selects), and
 - `checkbox` and `radio` controls.
 
 File inputs are intentionally excluded.
 
-Because the component works in light DOM, your form remains your form. Your labels, validation, layout, and CSS continue to work exactly as they did before. `form-saver` just adds a bit of memory and, ideally, cuts down on a few muttered curses.
+Because the component works in light DOM, your form remains your form. Your labels, validation, layout, and CSS continue to work exactly as they did before. `<form-saver>` just adds a bit of memory and, ideally, cuts down on a few muttered curses.
 
 ## Want to keep a few fields after submit?
 
@@ -89,7 +89,7 @@ After a successful submission, `name` and `email` stick around, but `message` ge
 
 Persisting form data can be incredibly helpful, but there is a human side to this. Just because we *can* keep someone’s information around doesn’t mean we *should* do it without asking. That is where `retain-choice` comes in: it lets you be useful without being presumptuous.
 
-Add it alongside `retain` and `form-saver` will inject an opt-in checkbox for the user. Nice and easy:
+Add it alongside `retain` and `<form-saver>` will inject an opt-in checkbox for the user. Nice and easy:
 
 ```html
 <form-saver
@@ -127,7 +127,7 @@ That gives you a lot more control over the experience without making you build t
 
 ## Need a custom storage key?
 
-By default, `form-saver` derives its storage key from the wrapped form’s method and action, which is usually exactly what you want. It keeps different forms from stepping on one another and keeps the setup nice and boring. Boring is good.
+By default, `<form-saver>` derives its storage key from the wrapped form’s method and action, which is usually exactly what you want. It keeps different forms from stepping on one another and keeps the setup nice and boring. Boring is good.
 
 If you need something more explicit, you can provide your own `storage-key`:
 
