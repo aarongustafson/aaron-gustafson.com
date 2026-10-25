@@ -45,6 +45,33 @@ test("HTML pages generate titled cards instead of using the blank fallback", asy
 	assert.match(metadata.imageAlt, /title “Web Components & More”/);
 });
 
+test("page and post cards preserve bracketed element names and code punctuation", async () => {
+	const title = "Use `<input>` and `data-*`";
+	const received = [];
+	const context = {
+		generateShareCard(text, slug) {
+			received.push(text);
+			return `/i/share-cards/${slug}.jpg`;
+		},
+	};
+	const metadata = await siteData.eleventyComputed.metadata.call(context, {
+		title,
+		site,
+		page: { url: "/input/" },
+	});
+	await postData.eleventyComputed.image.call(context, {
+		title,
+		tags: [],
+		page: { fileSlug: "input" },
+	});
+	assert.equal(received.length, 2);
+	for (const text of received) {
+		assert.equal(text[0], "Use <input> and data-*");
+	}
+	assert.equal(metadata.socialTitle, "Use <input> and data-*");
+	assert.match(metadata.imageAlt, /title “Use <input> and data-\*”/);
+});
+
 test("page cards preserve explicit image precedence", async () => {
 	for (const images of [
 		{ social_image: "/social.jpg", image: "/image.jpg", og_image: "/og.jpg" },

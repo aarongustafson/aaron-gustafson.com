@@ -1,5 +1,34 @@
 import fs from "node:fs";
-import { convert } from "html-to-text";
+import { compile } from "html-to-text";
+import MarkdownIt from "markdown-it";
+import attrs from "markdown-it-attrs";
+import footnote from "markdown-it-footnote";
+
+const markdown = new MarkdownIt({ html: true }).use(attrs).use(footnote);
+markdown.renderer.rules.text = (tokens, index) =>
+	markdown.utils.escapeHtml(tokens[index].content.replace(/\[\^[^\]]+\]/g, ""));
+markdown.renderer.rules.footnote_ref = () => "";
+markdown.core.ruler.after("footnote_tail", "metadata_footnotes", (state) => {
+	const start = state.tokens.findIndex(
+		(token) => token.type === "footnote_block_open",
+	);
+	if (start !== -1) state.tokens.length = start;
+});
+// Preserve Markdown image descriptions, but continue skipping raw HTML images.
+markdown.renderer.rules.image = (tokens, index, options, env, renderer) =>
+	renderer.renderInline(tokens[index].children, options, env);
+
+const htmlToPlainText = compile({
+	wordwrap: false,
+	selectors: [
+		{ selector: "a", options: { ignoreHref: true } },
+		{ selector: "img", format: "skip" },
+		...["h1", "h2", "h3", "h4", "h5", "h6"].map((selector) => ({
+			selector,
+			options: { uppercase: false },
+		})),
+	],
+});
 
 export const metadataTargets = Object.freeze({
 	metaDescription: 160,
@@ -7,25 +36,12 @@ export const metadataTargets = Object.freeze({
 });
 
 export function plainText(value = "") {
-	const markdown = String(value)
-		.replace(/!\[([^\]]*)\]\([^)]+\)/g, "$1")
-		.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
-		.replace(/`([^`]+)`/g, "$1")
-		.replace(/[*_~]+/g, "")
-		.replace(/\[\^\d+\]/g, "");
-
-	return convert(markdown, {
-		wordwrap: false,
-		selectors: [
-			{ selector: "a", options: { ignoreHref: true } },
-			{ selector: "img", format: "skip" },
-		],
-	})
+	return htmlToPlainText(markdown.render(String(value)))
 		.replace(/\s+/g, " ")
 		.trim();
 }
 
-export function contentExcerpt(body = "") {
+export function contentExcerptSource(body = "") {
 	const beforeMarker = String(body).split("<!-- more -->", 1)[0];
 	const paragraphs = beforeMarker
 		.split(/\r?\n\s*\r?\n/)
@@ -36,7 +52,11 @@ export function contentExcerpt(body = "") {
 				!paragraph.startsWith("<!--") &&
 				!paragraph.startsWith("{%"),
 		);
-	return plainText(paragraphs[0] || "");
+	return paragraphs[0] || "";
+}
+
+export function contentExcerpt(body = "") {
+	return plainText(contentExcerptSource(body));
 }
 
 function sourceExcerpt(inputPath) {
@@ -73,7 +93,7 @@ export function resolveMetadata(data = {}, { fallbackImage } = {}) {
 	const site = data.site || {};
 	const siteUrl = site.url || "";
 	const siteName = plainText(site.title || "Aaron Gustafson");
-	const rawTitle = plainText(data.title || siteName);
+	const rawTitle = data.title ? plainText(data.title) : siteName;
 	const socialTitle = rawTitle || siteName;
 	const divider = data.title_divider || " :: ";
 	const documentTitle =
@@ -82,22 +102,21 @@ export function resolveMetadata(data = {}, { fallbackImage } = {}) {
 			: siteName;
 	const canUseSourceExcerpt =
 		data.is_post || ["post", "link"].includes(data.body_class);
-	const excerpt = plainText(
-		data.excerpt ||
-			data.page?.excerpt ||
-			(canUseSourceExcerpt ? sourceExcerpt(data.page?.inputPath) : ""),
-	);
+	const excerptSource = data.excerpt || data.page?.excerpt;
+	const excerpt = excerptSource
+		? plainText(excerptSource)
+		: canUseSourceExcerpt
+			? sourceExcerpt(data.page?.inputPath)
+			: "";
 	const fallbackDescription = plainText(site.description || "");
-	const metaDescription = plainText(
-		data.meta_description || data.description || excerpt || fallbackDescription,
-	);
-	const socialDescription = plainText(
-		data.social_description ||
-			data.meta_description ||
-			data.description ||
-			excerpt ||
-			fallbackDescription,
-	);
+	const metaSource = data.meta_description || data.description;
+	const socialSource = data.social_description || metaSource;
+	const metaDescription = metaSource
+		? plainText(metaSource)
+		: excerpt || fallbackDescription;
+	const socialDescription = socialSource
+		? plainText(socialSource)
+		: excerpt || fallbackDescription;
 	const canonicalUrl = absoluteUrl(
 		data.canonical_url || data.page?.url || "/",
 		siteUrl,
@@ -127,15 +146,16 @@ export function resolveMetadata(data = {}, { fallbackImage } = {}) {
 		(isSiteLogo
 			? positiveInteger(site.social_image_height || site.logo_height)
 			: undefined);
-	const imageAlt = plainText(
+	const imageAltSource =
 		data.image_alt ||
-			data.social_image_alt ||
-			data.hero?.alt ||
-			(isSiteLogo ? site.social_image_alt || site.logo_alt : "") ||
-			(isGeneratedCard
-				? `A share card with a crocheted doll of Aaron Gustafson and the title “${socialTitle}”.`
-				: `Preview image for ${socialTitle}.`),
-	);
+		data.social_image_alt ||
+		data.hero?.alt ||
+		(isSiteLogo ? site.social_image_alt || site.logo_alt : "");
+	const imageAlt = imageAltSource
+		? plainText(imageAltSource)
+		: isGeneratedCard
+			? `A share card with a crocheted doll of Aaron Gustafson and the title “${socialTitle}”.`
+			: `Preview image for ${socialTitle}.`;
 	const type =
 		data.ogtype ||
 		(data.is_post || ["post", "link"].includes(data.body_class)

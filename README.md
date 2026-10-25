@@ -165,6 +165,14 @@ name. Content can override descriptions with `meta_description` and
 cards use the post title for image alternative text; custom or external images
 can provide `image_alt`.
 
+The shared plain-text helper renders Markdown before converting HTML to text.
+Inline code such as `` `<input>` `` therefore retains its literal brackets in
+metadata and share-card text, while actual HTML formatting, link destinations,
+and footnotes are omitted. Markdown image descriptions are retained; raw HTML
+images are skipped. Derived plain-text fallbacks are not converted a second time.
+`twitter_text` remains plain social copy, not Markdown: use `<input>` without
+backticks there unless literal backticks are wanted.
+
 The description length targets are editorial guidance rather than hard protocol
 limits. `npm run metadata:check` reports them as warnings so older content does
 not block a build. Add `-- --csv <path>` to write the over-limit descriptions
