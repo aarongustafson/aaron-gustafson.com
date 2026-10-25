@@ -10,4 +10,4 @@ meta_description: "My HTMHell Advent Calendar article explores the controls peop
 social_description: "My HTMHell Advent Calendar article explores the controls people can use to choose one option from many."
 ---
 
-My latest article is a part of the HTMHell Advent Calendar and takes you through all the ins and outs of form controls used to enable people to choose one option from many: `select`, `input[type=radio]`, and `input[list]`.
+My latest article is a part of the HTMHell Advent Calendar and takes you through all the ins and outs of form controls used to enable people to choose one option from many: `<select>`, `input[type=radio]`, and `input[list]`.

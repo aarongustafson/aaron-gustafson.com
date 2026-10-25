@@ -8,4 +8,4 @@ in_reply_to: https://w3c.github.io/html/grouping-content.html#the-address-elemen
 ref_source: W3C
 ---
 
-Wait, what? Physical addresses in the `address` element?!
+Wait, what? Physical addresses in the `<address>` element?!

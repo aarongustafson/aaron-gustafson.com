@@ -8,4 +8,4 @@ in_reply_to: https://shkspr.mobi/blog/2017/08/mapping-in-html-a-proposal-for-a-n
 ref_source: Terence Eden’s Blog
 ---
 
-This is an interesting proposal. It’s a shame the `map` element is already taken.
+This is an interesting proposal. It’s a shame the `<map>` element is already taken.

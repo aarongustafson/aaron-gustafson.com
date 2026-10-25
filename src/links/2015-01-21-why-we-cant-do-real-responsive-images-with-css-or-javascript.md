@@ -7,7 +7,7 @@ in_reply_to: https://www.brucelawson.co.uk/2015/why-we-cant-do-real-responsive-i
 ref_source: "Bruce Lawson’s  personal site"
 ---
 
-Bruce Lawson, briefly, on why [`picture`, `srcset`, and `sizes`](https://html.spec.whatwg.org/multipage/embedded-content.html#adaptive-images) are better for adaptive images than CSS or JavaScript any day of the week when it comes to performance:
+Bruce Lawson, briefly, on why [`<picture>`, `srcset`, and `sizes`](https://html.spec.whatwg.org/multipage/embedded-content.html#adaptive-images) are better for adaptive images than CSS or JavaScript any day of the week when it comes to performance:
 
 > The only way to beat the preloader is to put all the potential image sources in the HTML and give the browser all the information it needs to make the selection there.
 
