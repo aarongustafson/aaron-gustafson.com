@@ -12,7 +12,7 @@ tags:
     "web forms",
     "security",
   ]
-description: "There’s no standard way to make a field readable while editing but obfuscated at rest. The `form-obfuscator` web component fills that gap, giving you control over how sensitive data appears when fields aren’t focused."
+description: "There’s no standard way to make a field readable while editing but obfuscated at rest. The `<form-obfuscator>` web component fills that gap, giving you control over how sensitive data appears when fields aren’t focused."
 twitter_text: "Need to obfuscate form field values when they’re not being edited? Here’s a web component for that."
 series:
   name: "Modern Web Form Best Practices"
@@ -24,7 +24,7 @@ meta_description: "There’s no standard way to make a field readable while edit
 social_description: "There’s no standard way to make a field readable while editing but obfuscated at rest."
 ---
 
-We have the password reveal pattern for passwords, but what about other sensitive fields that need to be readable while editing and obfuscated while at rest? The `form-obfuscator` web component does exactly that.
+We have the password reveal pattern for passwords, but what about other sensitive fields that need to be readable while editing and obfuscated while at rest? The `<form-obfuscator>` web component does exactly that.
 
 <!-- more -->
 
@@ -166,7 +166,7 @@ You can access both the visible field and the hidden field through `event.detail
 
 ## How it works
 
-The component creates a hidden `input` field to store the actual value for form submission. When the visible field loses focus, it:
+The component creates a hidden `<input>` field to store the actual value for form submission. When the visible field loses focus, it:
 
 1. Copies the current value to the hidden field
 2. Applies your obfuscation rules to create the display value
@@ -183,7 +183,7 @@ The source order ensures the hidden field is the one that gets submitted with th
 
 ## Progressive enhancement
 
-The component makes no assumptions about your markup—it works with any text-style `input` element. If JavaScript fails to load, the field behaves like a normal `input`, which is exactly what you want. Users can still enter and submit values; they just won’t get the obfuscation behavior.
+The component makes no assumptions about your markup—it works with any text-style `<input>` element. If JavaScript fails to load, the field behaves like a normal `<input>`, which is exactly what you want. Users can still enter and submit values; they just won’t get the obfuscation behavior.
 
 ## Demo
 

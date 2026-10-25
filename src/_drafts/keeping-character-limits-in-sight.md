@@ -13,8 +13,8 @@ tags:
     "web forms",
     "user experience",
   ]
-description: "The form-maxlength-progress web component turns a field’s native maxlength into useful, accessible feedback about how much room remains."
-twitter_text: "A character limit shouldn’t sneak up on anyone. My new form-maxlength-progress web component makes a field’s native maxlength visible, accessible, and styleable."
+description: "The `<form-maxlength-progress>` web component turns a field’s native maxlength into useful, accessible feedback about how much room remains."
+twitter_text: "A character limit shouldn’t sneak up on anyone. My new `<form-maxlength-progress>` web component makes a field’s native maxlength visible, accessible, and styleable."
 ---
 
 Back in 2011, I wrote [“Improving the Tweet Box”](https://webstandardssherpa.com/reviews/improving-the-tweet-box) for <cite>Web Standards Sherpa</cite>. Twitter still had a 140-character limit, and one of the things I looked at was its character counter. The number on its own, sitting below the text box, didn’t tell people much; adding “characters remaining” gave it some meaning, including for people using screen readers.
@@ -36,15 +36,15 @@ The basic setup uses the same pieces you’d use without the component: a label,
 <form-maxlength-progress for="message"></form-maxlength-progress>
 ```
 
-The `for` attribute works like the one on a `label`: it points to the field’s unique `id`. The component reads that field’s `maxlength`, inserts a counter, and updates the number as someone types.
+The `for` attribute works like the one on a `<label>`: it points to the field’s unique `id`. The component reads that field’s `maxlength`, inserts a counter, and updates the number as someone types.
 
 That distinction matters. The component doesn’t invent a second limit or ask you to repeat `280` somewhere else. The field remains the source of truth, and the browser still enforces its native constraint.
 
-The component works with `textarea` and the text-like `input` types: `text`, `search`, `tel`, `url`, `email`, and `password`.
+The component works with `<textarea>` and the text-like `<input>` types: `text`, `search`, `tel`, `url`, `email`, and `password`.
 
 ## A number, a meter, or both
 
-Sometimes a simple “42 characters remaining” is exactly right. In other settings, a progress bar can make the shape of the limit easier to scan. You can provide your own counter and native `progress` element:
+Sometimes a simple “42 characters remaining” is exactly right. In other settings, a progress bar can make the shape of the limit easier to scan. You can provide your own counter and native `<progress>` element:
 
 ```html
 <label for="summary">Summary</label>
@@ -177,7 +177,7 @@ I put together [a live demo](https://aarongustafson.github.io/form-maxlength-pro
 
 ## Grab it
 
-You can explore the source and file issues in [the `form-maxlength-progress` repository](https://github.com/aarongustafson/form-maxlength-progress), or install it from npm:
+You can explore the source and file issues in [the `<form-maxlength-progress>` repository](https://github.com/aarongustafson/form-maxlength-progress), or install it from npm:
 
 ```bash
 npm install @aarongustafson/form-maxlength-progress

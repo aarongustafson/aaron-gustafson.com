@@ -13,8 +13,8 @@ tags:
     "web forms",
     "user experience",
   ]
-description: "The form-dropzone web component adds drag-and-drop, status announcements, and optional image previews to a native file input without taking away its fallback."
-twitter_text: "Drag-and-drop file fields are convenient, but dragging can’t be the only option. My form-dropzone component enhances a native file input without replacing it."
+description: "The `<form-dropzone>` web component adds drag-and-drop, status announcements, and optional image previews to a native file `<input>` without taking away its fallback."
+twitter_text: "Drag-and-drop file fields are convenient, but dragging can’t be the only option. I created a web component that enhances a native file input without replacing it."
 ---
 
 Dragging a file onto a page can be much faster than opening a picker and retracing your steps through the filesystem. That convenience has made drop zones a familiar part of upload forms, but they’re often built as though everyone can drag, everyone knows where to drop, and the browser’s file input is an implementation detail best hidden from view.
@@ -27,7 +27,7 @@ The layout and interaction were inspired by Nikita Hlopov’s article, [“Custo
 
 ## Begin with a file field
 
-The component expects one `input[type="file"]` and its associated `label`:
+The component expects one `input[type="file"]` and its associated `<label>`:
 
 ```html
 <form-dropzone>
@@ -84,7 +84,7 @@ Using both an extension and a MIME type can make intent clearer across files who
 
 Treat `accept` as guidance and early feedback, not a security boundary. Browsers and files can report incomplete or misleading MIME information, and client-side code can always be bypassed. Your server still needs to verify the type, inspect the contents where appropriate, enforce size limits, generate safe filenames, and decide where the upload may be stored.
 
-`form-dropzone` doesn’t add a file-size API. That’s intentional scope, not permission to accept a 14-gigabyte “headshot.” If size matters, communicate the limit near the field, check it before upload for faster feedback, and enforce it again on the server.
+`<form-dropzone>` doesn’t add a file-size API. That’s intentional scope, not permission to accept a 14-gigabyte “headshot.” If size matters, communicate the limit near the field, check it before upload for faster feedback, and enforce it again on the server.
 
 ## One file means one file
 
@@ -179,7 +179,7 @@ You can [experiment with the live demo](https://aarongustafson.github.io/form-dr
 
 ## Grab it
 
-The source, documentation, and issue tracker are in [the `form-dropzone` repository](https://github.com/aarongustafson/form-dropzone). You can install the package from npm:
+The source, documentation, and issue tracker are in [the `<form-dropzone>` repository](https://github.com/aarongustafson/form-dropzone). You can install the package from npm:
 
 ```bash
 npm install @aarongustafson/form-dropzone

@@ -23,11 +23,11 @@ meta_description: "Sometimes you need to require a value in one form field only 
 social_description: "Sometimes you need to require a value in one form field only if another field is filled in or if that field has a specific value."
 ---
 
-A few weeks back I released [a web component to enable you to add requirement rules to checkbox groups](https://www.aaron-gustafson.com/notebook/requirement-rules-for-checkboxes/). Continuing in the form utility space, I’ve created a new web component that allows you to make fields required based on the values of other fields: `form-required-if`.
+A few weeks back I released [a web component to enable you to add requirement rules to checkbox groups](https://www.aaron-gustafson.com/notebook/requirement-rules-for-checkboxes/). Continuing in the form utility space, I’ve created a new web component that allows you to make fields required based on the values of other fields: `<form-required-if>`.
 
 <!-- more -->
 
-The `form-required-if` web component, which is based on [a jQuery plugin I’d written in 2012](https://github.com/easy-designs/jquery.easy-dependent-required-fields.js), looks like this:
+The `<form-required-if>` web component, which is based on [a jQuery plugin I’d written in 2012](https://github.com/easy-designs/jquery.easy-dependent-required-fields.js), looks like this:
 
 ```html
 <form-required-if conditions="email=*">
@@ -38,7 +38,7 @@ The `form-required-if` web component, which is based on [a jQuery plugin I’d w
 </form-required-if>
 ```
 
-You wrap any field (and its `label`) in the component and then declare the conditions under which it should be required in the `conditions` attribute.
+You wrap any field (and its `<label>`) in the component and then declare the conditions under which it should be required in the `conditions` attribute.
 
 ## Defining the requirement conditions
 
@@ -80,7 +80,7 @@ Here’s an example with a custom indicator that is HTML:
 </form-required-if>
 ```
 
-If you don’t include markup in your indicator, it will be automatically wrapped in `span` when injected into the DOM. The `hidden` and `aria-hidden` attributes are used to toggle its visibility, relative to the requirement state of the field.
+If you don’t include markup in your indicator, it will be automatically wrapped in `<span>` when injected into the DOM. The `hidden` and `aria-hidden` attributes are used to toggle its visibility, relative to the requirement state of the field.
 
 ## Demo
 
@@ -94,4 +94,4 @@ I put together [a comprehensive demo of the web component](https://aarongustafso
 
 ## Grab It
 
-You can view the entire project (and suggest enhancements) over on [the `form-required-if` component’s Github repo](https://github.com/aarongustafson/form-required-if).
+You can view the entire project (and suggest enhancements) over on [the `<form-required-if>` component’s Github repo](https://github.com/aarongustafson/form-required-if).

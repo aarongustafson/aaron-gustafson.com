@@ -141,7 +141,7 @@ This redundancy raises the question _why‽_
 
 This breaks the intended behavior—if any checkbox is marked required, it must be checked for form validation to pass. For a web component that addresses this limitation in HTML, see my post “[Requirement Rules for Checkboxes](/notebook/requirement-rules-for-checkboxes/).”
 
-**Grouped Field Confusion**: Not understanding when to use `fieldset` and `legend` (or at least using `role="group"` and `aria-labelledby`) on a field group:
+**Grouped Field Confusion**: Not understanding when to use `<fieldset>` and `<legend>` (or at least using `role="group"` and `aria-labelledby`) on a field group:
 
 ```html
 <div>
@@ -162,7 +162,7 @@ This breaks the intended behavior—if any checkbox is marked required, it must 
 </div>
 ```
 
-Ideally, this would be a `fieldset` with a `legend` and the descriptive text would appear right after the `legend` and be associated with the group using `aria-describedby`.
+Ideally, this would be a `<fieldset>` with a `<legend>` and the descriptive text would appear right after the `<legend>` and be associated with the group using `aria-describedby`.
 
 **Color-Only Error Indication**: Generating error states that rely solely on color changes without text indicators or proper ARIA attributes to convey the error state to screen readers.
 
@@ -178,7 +178,7 @@ Ideally, this would be a `fieldset` with a `legend` and the descriptive text wou
 
 Here’s where things get interesting — and hopeful. When I retested using prompts that included accessibility hints, the model’s output improved dramatically. Not just slightly better, but often going from fundamentally broken to genuinely accessible.
 
-For example, when I added diff data related to fieldset use to a prompt about radio button groups, the model switched from generating meaningless `div` wrappers to proper semantic structures.
+For example, when I added diff data related to fieldset use to a prompt about radio button groups, the model switched from generating meaningless `<div>` wrappers to proper semantic structures.
 
 This suggests the model can produce quality code if properly primed. It also indicates that the training data likely lacks sufficient examples of well-implemented accessible components. If the model had been trained on a richer dataset of accessible code, it might not need such explicit guidance to produce good results.
 

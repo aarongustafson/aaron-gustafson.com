@@ -18,7 +18,7 @@ I briefly presented on a bunch of the different efforts I’m involved with at t
 
 ## Indicating an app’s policies & other legalese
 
-Many app catalogs enable developers to provide links to things like their app’s Privacy Policy and Terms of Use. There is no way, however, to semantically indicate this information in your markup; the closest you can get is `link[rel="license"]`, but that’s limited in scope. Rather than propose including more `link` or `meta` elements (which would need to be included on _every_ page of your site), we think it makes more sense to roll this information into the Manifest as part of a `policies` object.
+Many app catalogs enable developers to provide links to things like their app’s Privacy Policy and Terms of Use. There is no way, however, to semantically indicate this information in your markup; the closest you can get is `link[rel="license"]`, but that’s limited in scope. Rather than propose including more `<link>` or `<meta>` elements (which would need to be included on _every_ page of your site), we think it makes more sense to roll this information into the Manifest as part of a `policies` object.
 
 [My proposal](https://github.com/w3c/manifest-app-info/pull/46) enables developers to provide URLs for an app’s accessibility statement, content license, and policies governing privacy, security, support, and usage. Developers would be free to include whichever policies their app has and they can be URLs within the app itself or link off to other websites (such as the publisher’s). Here’s what that could look like:
 
