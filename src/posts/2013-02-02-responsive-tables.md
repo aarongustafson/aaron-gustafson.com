@@ -14,11 +14,12 @@ meta_description: "A few thoughts on “Responsive Tables”"
 social_description: "A few smart folks have already put together their thoughts on responsive tables and, while I think the proposed methods are pretty good, I think there might be room for improvement."
 ---
 
-<p>A few smart folks have already put together their thoughts on responsive tables and, while I think the proposed methods are pretty good, I think there might be room for improvement. As such, I’ve been tinkering for a while and came up with the following strategy when it comes to tables.</p>
+A few smart folks have already put together their thoughts on responsive tables and, while I think the proposed methods are pretty good, I think there might be room for improvement. As such, I’ve been tinkering for a while and came up with the following strategy when it comes to tables.
 
 <!-- more -->
 
-<p><strong>Step 1:</strong> Use <code class="html">data-*</code> attributes to hold information about the column header(s) associated with the markup:</p>
+**Step 1:** Use `data-*`{.html} attributes to hold information about the column header(s) associated with the markup:
+
 ```html
   <table>
    <thead>
@@ -59,7 +60,8 @@ social_description: "A few smart folks have already put together their thoughts 
    </tbody>
   </table>
 ```
-<p><strong>Step 2:</strong> When the screen is below a certain threshold, set the <code class="html">&lt;table&gt;</code> elements to <code class="html">display: block</code> (thereby linearizing the table), hide the <code class="html">&lt;thead&gt;</code> where assistive tech won’t see it, and use generated content to expose the <code class="html">data-*</code> attributes. Here’s a snippet of Sass & Compass that does that:</p>
+
+**Step 2:** When the screen is below a certain threshold, set the `<table>`{.html} elements to `display: block`{.html} (thereby linearizing the table), hide the `<thead>`{.html} where assistive tech won’t see it, and use generated content to expose the `data-*`{.html} attributes. Here’s a snippet of Sass & Compass that does that:
 
 ```scss
   // undo tables for small screens
@@ -135,10 +137,10 @@ social_description: "A few smart folks have already put together their thoughts 
   }
 ```
 
-<p>We’ve been using this approach on a number of sites currently in development and it works really well. I put together <a href="http://codepen.io/aarongustafson/pen/ucJGv">a demo of this technique</a> so you could play around with it yourself.</p>
-<p><strong>Notes:</strong></p>
-<ol>
-<li>I chose to use a <code class="html">data-*</code> attribute (<code class="html">data-title</code>) instead of <code class="html">title</code> as the <code class="html">title</code> attribute could be read out by assistive technology and in the case of the <code class="html">thead</code> being available as well (when not <code class="html">display: none</code>), resulting in the information being read twice (which is not ideal). <a href="http://www.paciellogroup.com/resources/articles/WE05/#slide9">That’s not a certainty however</a>, so you could choose to go the <code class="html">title</code> route if that’s your preference. I prefer to avoid the potential issue.</li>
-<li>If you have multiple header rows over a cell (say a parent row and then a child row), I’d recommend making the <code class="html">data-title</code> something like “Parent Header - Child Header.<span class="final quote">”</span></li>
-<li>While you could use JavaScript to auto-generate the <code class="html">data-title</code> attributes by referencing the column headers, I feel this is information that should exist even if JavaScript is not available. You may disagree.</li>
-</ol>
+We’ve been using this approach on a number of sites currently in development and it works really well. I put together [a demo of this technique](http://codepen.io/aarongustafson/pen/ucJGv) so you could play around with it yourself.
+
+**Notes:**
+
+1. I chose to use a `data-*`{.html} attribute (`data-title`{.html}) instead of `title`{.html} as the `title`{.html} attribute could be read out by assistive technology and in the case of the `<thead>`{.html} being available as well (when not `display: none`{.html}), resulting in the information being read twice (which is not ideal). [That’s not a certainty however](http://www.paciellogroup.com/resources/articles/WE05/#slide9), so you could choose to go the `title`{.html} route if that’s your preference. I prefer to avoid the potential issue.
+2. If you have multiple header rows over a cell (say a parent row and then a child row), I’d recommend making the `data-title`{.html} something like “Parent Header - Child Header.<span class="final quote">”</span>
+3. While you could use JavaScript to auto-generate the `data-title`{.html} attributes by referencing the column headers, I feel this is information that should exist even if JavaScript is not available. You may disagree.
