@@ -31,10 +31,10 @@ social_description: "The DOM Scripting and Microsoft task forces, working with J
 <p>Not willing to let the <abbr title="Internet Explorer">IE</abbr> team off that easy, the document presented also highlighted several other issues which really need addressing including (among others)</p>
 <ul>
 <li>fixing CSS bugs (including collapsing adjoining margins and <code>z-index</code>);</li>
-<li>various form control fixes (including implementations of the <code>button</code> element, <code>label</code>s, and the <code>disabled</code> attribute);</li>
-<li>correcting its support for <code>object</code>;</li>
-<li>adding support for the <code>q</code> element (which should be a breeze once generated content is enabled); and</li>
-<li>fixing attribute issues (such as <code>alt</code> being used for a tooltip, <code>cite</code> not being supported on <code>q</code> and <code>blockquote</code>, and <code>summary</code> not being supported on <code>table</code>s).</li>
+<li>various form control fixes (including implementations of the <code>&lt;button&gt;</code> element, <code>&lt;label&gt;</code>s, and the <code>disabled</code> attribute);</li>
+<li>correcting its support for <code>&lt;object&gt;</code>;</li>
+<li>adding support for the <code>&lt;q&gt;</code> element (which should be a breeze once generated content is enabled); and</li>
+<li>fixing attribute issues (such as <code>alt</code> being used for a tooltip, <code>cite</code> not being supported on <code>&lt;q&gt;</code> and <code>&lt;blockquote&gt;</code>, and <code>summary</code> not being supported on <code>&lt;table&gt;</code>s).</li>
 </ul>
 <h3>The meeting</h3>
 <p>In Redmond, I met with Pete LePage, a Product Manager at Microsoft Web Platform and Tools, and several other key members on the <abbr title="Internet Explorer">IE</abbr> team. We discussed the list and its implications in great detail for nearly two hours. While I am not at liberty to discuss all of the details of the meeting, I can say for certain that the group I met with was keenly aware of the issues we brought up and are eager to address them. One team member even said that he could have easily guessed our top 5.</p>

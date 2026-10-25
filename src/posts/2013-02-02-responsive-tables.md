@@ -59,7 +59,8 @@ social_description: "A few smart folks have already put together their thoughts 
    </tbody>
   </table>
 ```
-<p><strong>Step 2:</strong> When the screen is below a certain threshold, set the <code class="html">table</code> elements to <code class="html">display: block</code> (thereby linearizing the table), hide the <code class="html">thead</code> where assistive tech won’t see it, and use generated content to expose the <code class="html">data-*</code> attributes. Here’s a snippet of SASS & Compass that does that:</p>
+<p><strong>Step 2:</strong> When the screen is below a certain threshold, set the <code class="html">&lt;table&gt;</code> elements to <code class="html">display: block</code> (thereby linearizing the table), hide the <code class="html">&lt;thead&gt;</code> where assistive tech won’t see it, and use generated content to expose the <code class="html">data-*</code> attributes. Here’s a snippet of Sass & Compass that does that:</p>
+
 ```scss
   // undo tables for small screens
   // $break-4 is the px-width break at which you want to cut it off
@@ -133,6 +134,7 @@ social_description: "A few smart folks have already put together their thoughts 
     }
   }
 ```
+
 <p>We’ve been using this approach on a number of sites currently in development and it works really well. I put together <a href="http://codepen.io/aarongustafson/pen/ucJGv">a demo of this technique</a> so you could play around with it yourself.</p>
 <p><strong>Notes:</strong></p>
 <ol>

@@ -30,7 +30,7 @@ social_description: "Some of you might find it hard to believe, but I began work
 <p>
 	So why am I bringing this up? Well, I remembered Joe’s article the other day and was thinking about how relevant it is in this, the age of responsive design. I think the idea of high-contrast zoom layouts is incredibly useful, but not just for mobile. When you start to think about the other end of the spectrum—giant high-definition televisions sitting 8-10 feet from your face—zoom layouts become really useful again.</p>
 <p>
-	To that end, I have been thinking quite a bit about <a href="http://css-tricks.com/viewport-sized-typography/">the viewport-based units available to us in modern browsers</a> and how we can use them to create automated zoom layouts by simply increasing the font size of the <code>body</code> element. Consider this bit of code:</p>
+	To that end, I have been thinking quite a bit about <a href="http://css-tricks.com/viewport-sized-typography/">the viewport-based units available to us in modern browsers</a> and how we can use them to create automated zoom layouts by simply increasing the font size of the <code>&lt;body&gt;</code> element. Consider this bit of code:</p>
 <pre class="css"><code>
 @media screen and (min-width: 64em) {
   body {

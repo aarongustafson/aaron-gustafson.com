@@ -80,7 +80,7 @@ Here’s an example from [my Beyond Responsive workshop](https://www.facebook.co
 
 ![]({{ site.url }}/i/posts/2015-05-28/05.png)
 
-<figcaption>Pass 3: Test for <code>details</code>/<code>summary</code> support and use the functionality if available.</figcaption></figure>
+<figcaption>Pass 3: Test for <code>&lt;details&gt;</code>/<code>&lt;summary&gt;</code> support and use the functionality if available.</figcaption></figure>
 
 ## Simple, Powerful
 

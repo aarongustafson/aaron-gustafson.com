@@ -18,7 +18,7 @@ social_description: "A few projects back, I decided to rethink our JavaScript or
 <!-- more -->
 
 <p>For years, when I needed page-specific interactions, I would either embed the JS (unobtrusively, of course) at the bottom of the page or externalize it to a separate page-specific file. In some sites, that became a difficult setup to manage because we were juggling so many files and we were also forcing our users to download each of those files individually.</p>
-<p>Looking for a better way to manage all of the code, I built <a href="http://github.com/easy-designs/FunctionHandler.js">FunctionHandler</a>. This script takes lets you declare blocks of JavaScript and then target them at pages based on the <code class="html">id</code> attribute on the <code class="html">body</code> element. When the targeted <code class="html">id</code> is encountered, the code block is executed on DOM ready. Here’s a quick example:</p>
+<p>Looking for a better way to manage all of the code, I built <a href="http://github.com/easy-designs/FunctionHandler.js">FunctionHandler</a>. This script takes lets you declare blocks of JavaScript and then target them at pages based on the <code class="html">id</code> attribute on the <code class="html">&lt;body&gt;</code> element. When the targeted <code class="html">id</code> is encountered, the code block is executed on DOM ready. Here’s a quick example:</p>
 ```js
   FunctionHandler.register(
    ['home'],

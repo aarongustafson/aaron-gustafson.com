@@ -23,7 +23,7 @@ image: "/i/share-cards/the-native-vs-stylable-tug-of-war.jpg"
 
 </blockquote>
 <p>
-	Speaking as the guy who not only wrote JavaScript to help me create an accessible <code>select</code> element alternative, but who also made it <a href="http://d1b14unh5d6w7g.cloudfront.net/1590598563.01.S0ER.LXXXXXXX.jpg?Expires=1405686346&amp;Signature=DCT4Z0l75JQESDNyP0PVGVonuJYwY9XYtaTI3grX/RhdlLcXGRAVADJCB/N/fAj7GxLhEVzuXqstMebJIJ9Ip5I6kE7IKYt2F20F5EGD+1ghua9zKwyjS1e4KBgumMKzQytbcfIVX4dMr7XFzj26mScFKz9bSKtZT5jU1LU6hWM=&amp;Key-Pair-Id=APKAIUO27P366FGALUMQ">the focus of a case study (image)</a> in <a href="http://amzn.to/TaoffD">AdvancED DOM Scripting</a>, I am fully aware of the desire to have it both ways. I have not often seen the desire for both in a single individual, but it does happen in one particular instance occasionally.</p>
+	Speaking as the guy who not only wrote JavaScript to help me create an accessible <code>&lt;select&gt;</code> element alternative, but who also made it <a href="http://d1b14unh5d6w7g.cloudfront.net/1590598563.01.S0ER.LXXXXXXX.jpg?Expires=1405686346&amp;Signature=DCT4Z0l75JQESDNyP0PVGVonuJYwY9XYtaTI3grX/RhdlLcXGRAVADJCB/N/fAj7GxLhEVzuXqstMebJIJ9Ip5I6kE7IKYt2F20F5EGD+1ghua9zKwyjS1e4KBgumMKzQytbcfIVX4dMr7XFzj26mScFKz9bSKtZT5jU1LU6hWM=&amp;Key-Pair-Id=APKAIUO27P366FGALUMQ">the focus of a case study (image)</a> in <a href="http://amzn.to/TaoffD">AdvancED DOM Scripting</a>, I am fully aware of the desire to have it both ways. I have not often seen the desire for both in a single individual, but it does happen in one particular instance occasionally.</p>
 <p>
 	Based on my own experience, I see the following arguments in favor of changing the display of a native control quite often:</p>
 <ol>
@@ -45,7 +45,7 @@ image: "/i/share-cards/the-native-vs-stylable-tug-of-war.jpg"
 <h2>
 	In Addressing Desired Design Changes</h2>
 <p>
-	In terms of aesthetics (addressing arguments 1, 2, and 3), I understand where you’re coming from. Native controls are not the most appealing things, but they are familiar to your users. A <code>select</code> box they see on your site that looks like the one they see on Wikipedia or their banking site will be immediately recognizable. Sure, the looks and feel may differ from browser to browser, but most people use only a small number of browsers throughout the day—at work, at home, on their device—and if you want to ensure the design of a form control feels “right” in the browser they are using, sometimes it’s best to let go of that control.</p>
+	In terms of aesthetics (addressing arguments 1, 2, and 3), I understand where you’re coming from. Native controls are not the most appealing things, but they are familiar to your users. A <code>&lt;select&gt;</code> box they see on your site that looks like the one they see on Wikipedia or their banking site will be immediately recognizable. Sure, the looks and feel may differ from browser to browser, but most people use only a small number of browsers throughout the day—at work, at home, on their device—and if you want to ensure the design of a form control feels “right” in the browser they are using, sometimes it’s best to let go of that control.</p>
 <h2>
 	In Addressing OS Parity</h2>
 <p>
