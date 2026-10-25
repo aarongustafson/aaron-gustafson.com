@@ -18,6 +18,12 @@
       "checked_at": "2026-10-23",
       "result": "Only major bumps and sass/uglify-es patch outdated; nothing worth a PR",
       "follow_up": null
+    },
+    {
+      "area": "ci",
+      "checked_at": "2026-10-25",
+      "result": "Workflows use current action majors except prose-check (checkout/setup-node v4); low value",
+      "follow_up": null
     }
   ],
   "completed_actions": [],
