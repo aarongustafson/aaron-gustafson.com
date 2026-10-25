@@ -56,7 +56,7 @@ I automatically create layers of experience with no extra effort:
 </li>
 </ol>
 
-That means that there are between 5 and 13 potential experiences (given all of the different possible combinations of these layers) in this one single single element… it’s kind of mind-boggling to think about, right? And the clincher here is that any of these experiences can be a good experience. Heck for nearly 15 years of the Web, the plain-ol’ text `input` was the only way we had for entering an email address. Anything better than that is gravy.
+That means that there are between 5 and 13 potential experiences (given all of the different possible combinations of these layers) in this one single single element… it’s kind of mind-boggling to think about, right? And the clincher here is that any of these experiences can be a good experience. Heck for nearly 15 years of the Web, the plain-ol’ text `<input>` was the only way we had for entering an email address. Anything better than that is gravy.
 
 Progressive enhancement embraces the idea of experience as a continuum rather than some singular ideal. It recognizes that every person is different and we all have special requirements for Web access. Some may depend on our browser, the device we’re on, and the network we are using. Others may be the result of a limitation we have dealt with since birth, are dealing with temporarily as the result of an injury or incident, or are simply a factor of our current situation. We all experience the world differently and progressive enhancement not only respects that, it embraces that variability.
 

@@ -27,8 +27,8 @@ li:nth-last-child(6):first-child ~ li {
 
 With these selectors, the rule set would only apply if the total count of list items was exactly 6. Here’s what he is selecting:
 
-1. A list item (`li`) that is 6th sibling in a group of list item siblings when counted backwards (`:nth-last-child(6)`), but only if it is also the first of those siblings (`:first-child`); and
-2. Any list item (`li`) siblings that follow the one selected above (`~`).
+1. A list item (`<li>`) that is 6th sibling in a group of list item siblings when counted backwards (`:nth-last-child(6)`), but only if it is also the first of those siblings (`:first-child`); and
+2. Any list item (`<li>`) siblings that follow the one selected above (`~`).
 
 Brilliant! [Heydon breaks it down way more eloquently](http://alistapart.com/article/quantity-queries-for-css#section4) (and with illustrated squid to boot). To use this in your own projects, simply swap the “6” for whatever count you are looking for it to be equal to.
 
@@ -44,8 +44,8 @@ li:nth-last-child(n + 6) ~ li {
 
 This one is slightly more complex, using the `nth-*` formula to manage the calculation. In English, this selects:
 
-1. A list item (`li`) which is the sixth, seventh, eighth, etc. sibling in a collection of list item siblings when counted backwards from the end of that collection (`:nth-last-child(n+6)`); and
-2. Any list item (`li`) siblings that follow the one(s) selected above (`~`).
+1. A list item (`<li>`) which is the sixth, seventh, eighth, etc. sibling in a collection of list item siblings when counted backwards from the end of that collection (`:nth-last-child(n+6)`); and
+2. Any list item (`<li>`) siblings that follow the one(s) selected above (`~`).
 
 The magic is in the formula: _n+6_.
 
@@ -68,9 +68,9 @@ This one is largely the same as the “more than” example, but the multiplier 
 
 I am just overjoyed with how brilliant this is. I can think of so many places to use it (and will likely be doing so quite soon).
 
-## Bonus: Now with SASS
+## Bonus: Now with Sass
 
-[Daniel Guillan](https://twitter.com/danielguillan) has [ported this functionality (and more) to SASS](https://github.com/danielguillan/quantity-queries) using a handful of really straightforward mixins. Here’s a demo:
+[Daniel Guillan](https://twitter.com/danielguillan) has [ported this functionality (and more) to Sass](https://github.com/danielguillan/quantity-queries) using a handful of really straightforward mixins. Here’s a demo:
 
 <figure id="fig-2015-03-20-01" class="media-container">
   {% CodePen "https://codepen.io/danielguillan/pen/GgBOxm", "result", "331" %}

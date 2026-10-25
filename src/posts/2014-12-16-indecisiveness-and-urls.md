@@ -34,7 +34,7 @@ In a traditional hosting scenario, I could use `.htaccess` to set up [302 redire
 
 Thankfully, there is [a plugin for Jekyll to manage redirects](https://github.com/jekyll/jekyll-redirect-from). With it, you can redirect from an an existing page in the YAML front matter using the `redirect_to` key or you can use the `redirect_from` key in the YAML front matter on the destination page. I ended up using the former for old pages (articles, books, and events), and the latter for blog posts.
 
-The plugin covers all the bases. It generates pages at the old URLs that redirect using the good old `meta` refresh, a JavaScript redirect, and a fallback link just in case neither of those work. Oh, and it sets the new URL as the [canonical reference](https://support.google.com/webmasters/answer/139066?hl=en) to boot.
+The plugin covers all the bases. It generates pages at the old URLs that redirect using the good old `<meta>` refresh, a JavaScript redirect, and a fallback link just in case neither of those work. Oh, and it sets the new URL as the [canonical reference](https://support.google.com/webmasters/answer/139066?hl=en) to boot.
 
 Done and done.
 

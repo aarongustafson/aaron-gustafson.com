@@ -15,7 +15,7 @@ Last night, while we were enjoying a cool evening and a few drinks outside after
 
 I hadn’t really thought about it before, but it’s a good question. They seem pretty similar in function, right? And both support a space separated list of one or more `id` references. It’s downright confusing.
 
-My simple explanation was that, at least in terms of form fields, they differ in when they are read. The `aria-labelledby` attribute replaces the associated `label` element (which is, of course, associated with the field via the `label`’s `for` attribute). The `aria-describedby` attribute, on the other hand, is read after the field type is stated.
+My simple explanation was that, at least in terms of form fields, they differ in when they are read. The `aria-labelledby` attribute replaces the associated `<label>` element (which is, of course, associated with the field via the `<label>`’s `for` attribute). The `aria-describedby` attribute, on the other hand, is read after the field type is stated.
 
 To demonstrate how all of this plays out, I threw together [a quick CodePen demo](https://codepen.io/aarongustafson/pen/dmuoe/) that takes you through numerous ways you can use and combine these attributes. I also did a [screen recording to demonstrate how ChromeVox exposes these attributes](https://youtu.be/U8_VjI-Z1LA):
 

@@ -20,7 +20,7 @@ TL;DR: If you really need it, which you probably don’t, `readonly` is what you
 
 There are times when you want to expose a bit of data to the user but don’t want them to be able to edit it. For example, your system might not allow a user to edit their username after completing the registration process. In situations like this, you may want to present the username in the context of a profile editing interface without allowing them to edit it.
 
-The best choice in that situation would be to avoid using a form field to display the username, full stop, but if you’re hamstrung and need to drop it in an `input` field, you want to make sure the user can’t edit it. That’s when you need to make a choice between `disabled` and `readonly`.
+The best choice in that situation would be to avoid using a form field to display the username, full stop, but if you’re hamstrung and need to drop it in an `<input>` field, you want to make sure the user can’t edit it. That’s when you need to make a choice between `disabled` and `readonly`.
 
 Both of these attributes are “empty” attributes, meaning they don’t require value assignment:
 
@@ -40,7 +40,7 @@ So why do we have two attributes that do the same thing? Unfortunately this is w
 
 Fields marked as `readonly` are collected along with all of the normal field values in a form submission ([“successful controls” in the spec](https://www.w3.org/TR/html401/interact/forms.html#h-17.13.2)). The only difference between a `readonly` field and a regular field is the user experience.
 
-Fields marked as `disabled` are ignored when collecting values from the form. In a traditional form submission, the action page would never receive values for a `disabled` field, regardless of whether it has a `name` attribute. In JavaScript, this is a little trickier as generic DOM access via a form’s `elements` collection includes all form controls, including `disabled` fields (and buttons, `output` elements, etc.). In order to ensure consistency with the spec, it is incumbent upon the JavaScript developer to keep an eye out for `disabled` fields so they can throw away their values before processing the form.
+Fields marked as `disabled` are ignored when collecting values from the form. In a traditional form submission, the action page would never receive values for a `disabled` field, regardless of whether it has a `name` attribute. In JavaScript, this is a little trickier as generic DOM access via a form’s `elements` collection includes all form controls, including `disabled` fields (and buttons, `<output>` elements, etc.). In order to ensure consistency with the spec, it is incumbent upon the JavaScript developer to keep an eye out for `disabled` fields so they can throw away their values before processing the form.
 
 <figure id="fig-2017-10-31-01" class="media-container">
   {% CodePen "https://codepen.io/aarongustafson/pen/jaPYLr", "result", "250" %}
