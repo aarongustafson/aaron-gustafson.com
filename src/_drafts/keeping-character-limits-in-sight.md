@@ -14,7 +14,7 @@ tags:
     "user experience",
   ]
 description: "The `<form-maxlength-progress>` web component turns a field’s native maxlength into useful, accessible feedback about how much room remains."
-twitter_text: "A character limit shouldn’t sneak up on anyone. My new `<form-maxlength-progress>` web component makes a field’s native maxlength visible, accessible, and styleable."
+twitter_text: "A character limit shouldn’t sneak up on anyone. My new <form-maxlength-progress> web component makes a field’s native maxlength visible, accessible, and styleable."
 ---
 
 Back in 2011, I wrote [“Improving the Tweet Box”](https://webstandardssherpa.com/reviews/improving-the-tweet-box) for <cite>Web Standards Sherpa</cite>. Twitter still had a 140-character limit, and one of the things I looked at was its character counter. The number on its own, sitting below the text box, didn’t tell people much; adding “characters remaining” gave it some meaning, including for people using screen readers.
