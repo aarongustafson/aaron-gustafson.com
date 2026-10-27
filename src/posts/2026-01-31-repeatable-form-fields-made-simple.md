@@ -136,7 +136,7 @@ This creates a component that:
 
 The remove buttons are not shown when at the minimum threshold (1 by default) and the add button disappears when you hit the maximum.
 
-## Prefer an explicit `<template>`? Bring it! {#prefer-an-explicit-template%3F-bring-it!}
+## Prefer an explicit `<template>`? Bring it! {id="prefer-an-explicit-template%3F-bring-it!"}
 
 This component can accept a `<template>` element containing the fields you want to repeat. Just drop in `{n}` placeholders where you want the sequential numbers to appear:
 

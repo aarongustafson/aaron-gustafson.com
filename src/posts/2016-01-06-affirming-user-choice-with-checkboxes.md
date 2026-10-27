@@ -119,7 +119,7 @@ There are a few optional attributes you might consider including as well.
 
 Checkboxes excel at allowing users to indicate preference from a pre-defined set of options. But there are other form control types that allow for similar control over user responses. That can make it difficult to decide which element to use.
 
-### Dropdown List (`<select>`) {#dropdown-list-(select)}
+### Dropdown List (`<select>`) {id="dropdown-list-(select)"}
 
 The `<select>` element is another tried and true option for allowing users to indicate preference. A simple two-choice `<select>` could achieve the same goal as a confirmation checkbox, but it’s a little clunkier. In terms of user interface, `<select>` elements require more clicks of your users. They also obscure the complete list of choices from view because only one options is displayed at a time. Their appearance makes them more compact, but can make it difficult to get a complete picture of what choices are available when you can’t see them all.
 

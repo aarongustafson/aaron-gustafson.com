@@ -59,7 +59,7 @@ Need to embed a YouTube video, slide deck, or code demo? The component works wit
 
 The component automatically adds the necessary `allow="fullscreen"` and `allowfullscreen` attributes, including prefixed versions for broader compatibility.
 
-## Customizable `<button>` text {#customizable-button-text}
+## Customizable `<button>` text {id="customizable-button-text"}
 
 You can change the `<button>` label to match your site’s language or writing style by setting the `button-text` attribute:
 
