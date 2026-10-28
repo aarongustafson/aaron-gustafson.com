@@ -35,10 +35,7 @@
 
 	.listing__item__meta {
 		color: $color-off-white;
-
-		html.dark-mode & {
-			color: $color-white;
-		}
+		color: var(--theme-event-meta, #{$color-off-white});
 	}
 
 	//.listing__extra {
@@ -68,6 +65,7 @@
 
 	.event {
 		background: $color-green-dark;
+		background: var(--theme-event-background, #{$color-green-dark});
 		color: $color-off-white;
 		text-shadow: 1px 1px 1px $color-green-dark;
 
@@ -92,6 +90,7 @@
 		html & a {
 			color: $color-white;
 			text-decoration: none;
+			text-shadow: var(--theme-event-link-shadow, inherit);
 		}
 
 		.listing__item__title,
@@ -126,7 +125,9 @@
 
 		&--future {
 			border-color: $color-dark-teal;
+			border-color: var(--theme-future-border, #{$color-dark-teal});
 			background: $color-dark-teal;
+			background: var(--theme-future-background, #{$color-dark-teal});
 			box-shadow: inset 0 0 50px 7px $color-dark-teal;
 			// Use a darker text-shadow to meet WCAG AA contrast requirements
 			// when background images don't load
@@ -170,19 +171,6 @@
 			transform: scale(1.125);
 		}
 
-		html.dark-mode & {
-			background: color.scale($color-green-light, $lightness: -20%);
-
-			a {
-				text-shadow: 1px 1px 1px
-					color.scale($color-green-light, $lightness: -50%);
-			}
-
-			&--future {
-				border-color: $color-teal;
-				background: color.scale($color-teal, $lightness: -20%);
-			}
-		}
 
 		@media screen and (min-width: #{$bp-small-em}) {
 			// 2 events per row, 20px gutter

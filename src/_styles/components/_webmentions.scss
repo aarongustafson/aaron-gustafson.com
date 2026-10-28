@@ -109,13 +109,11 @@ $avatar-width: 48;
 
 	&__meta {
 		color: $color-grey;
+		color: var(--theme-muted, #{$color-grey});
 		@include rem(font-size, $font-size-small);
 		text-align: right;
 		text-align: end;
 
-		html.dark-mode & {
-			color: $color-grey-light;
-		}
 	}
 
 	&--activity &__author,

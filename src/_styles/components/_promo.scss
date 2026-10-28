@@ -13,7 +13,9 @@ $promo-background-color: color.scale(#7fb843, $lightness: 45%);
 
 .promo {
 	background: $promo-background-color;
+	background: var(--theme-promo-background, #{$promo-background-color});
 	border: 1px solid color.scale($promo-background-color, $lightness: -5%);
+	border-color: var(--theme-promo-border, #{color.scale($promo-background-color, $lightness: -5%)});
 	@include rem(margin, ($default-spacing * 2) -19);
 	@include rem(padding, $default-spacing);
 
@@ -25,18 +27,10 @@ $promo-background-color: color.scale(#7fb843, $lightness: 45%);
 		@include rem(padding-inline, $default-spacing, false);
 	}
 
-	html.dark-mode & {
-		background: $color-green-dark;
-		border-color: color.scale($color-green-dark, $lightness: -5%);
-	}
-
 	a:link,
 	a:visited {
 		color: #14440e;
-
-		html.dark-mode & {
-			color: $color-green-light;
-		}
+		color: var(--theme-promo-link, #14440e);
 	}
 
 	p:has(+ .social-links) {

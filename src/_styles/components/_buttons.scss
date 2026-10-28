@@ -13,7 +13,9 @@ button,
 	user-select: none;
 
 	background: $color-dark-teal;
+	background: var(--theme-button-background, #{$color-dark-teal});
 	color: $color-white;
+	color: var(--theme-button-text, #{$color-white});
 	text-decoration: none;
 
 	border: 1px solid $color-text;
@@ -36,6 +38,7 @@ button,
 	&:hover,
 	&:focus {
 		background: color.scale($color-dark-teal, $lightness: -10%);
+		background: var(--theme-button-hover, #{color.scale($color-dark-teal, $lightness: -10%)});
 	}
 
 	&:focus-visible {
@@ -49,6 +52,7 @@ button,
 
 		path {
 			fill: $color-white;
+			fill: var(--theme-button-text, #{$color-white});
 		}
 
 		@supports (margin-block: 1em) {
@@ -69,17 +73,4 @@ button,
 		}
 	}
 
-	html.dark-mode & {
-		background-color: $color-link-dark-hover;
-		color: $color-background-dark;
-
-		svg path {
-			fill: $color-background-dark;
-		}
-
-		&:hover,
-		&:focus {
-			background-color: $color-link-dark;
-		}
-	}
 }

@@ -16,17 +16,15 @@ dialog {
 	border: 1px solid $color-background;
 	padding: 1em;
 	background: $color-background;
+	background: var(--theme-background, #{$color-background});
 	color: $color-text;
+	color: var(--theme-text, #{$color-text});
 	display: block;
 
 	&::backdrop {
 		background: rgba(0, 0, 0, 0.6);
 	}
 
-	html.dark-mode & {
-		background: $color-background-dark;
-		color: $color-text-dark;
-	}
 
 	@supports (margin-block: 1em) {
 		@include unset(left right width height margin);
@@ -42,6 +40,40 @@ dialog {
 
 dialog:not([open]) {
 	display: none;
+}
+
+dialog:has(button[command="close"]) {
+	padding-block-start: 1.25rem;
+}
+
+dialog button[command="close"] {
+	position: absolute;
+	inset-block-start: 0.25rem;
+	inset-inline-end: 0.25rem;
+	display: grid;
+	place-items: center;
+	box-sizing: border-box;
+	min-inline-size: 2.75rem;
+	min-block-size: 2.75rem;
+	margin: 0;
+	padding: 0.25rem;
+	border: 1px solid transparent;
+	border-radius: 0.25rem;
+	background: transparent;
+	color: inherit;
+	font-size: 1.5rem;
+	line-height: 1;
+
+	&:hover,
+	&:focus-visible {
+		background: var(--theme-button-background, #{$color-dark-teal});
+		color: var(--theme-button-text, #{$color-white});
+	}
+
+	&:focus-visible {
+		outline: 3px solid var(--theme-link, #{$color-link});
+		outline-offset: 2px;
+	}
 }
 
 dialog + .backdrop {

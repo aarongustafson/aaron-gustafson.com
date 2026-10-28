@@ -1,0 +1,15 @@
+<button id="theme-switcher" type="button" commandfor="theme-dialog" command="show-modal"
+	aria-label="Choose a color theme" aria-haspopup="dialog" aria-controls="theme-dialog" hidden>
+	<span aria-hidden="true">{{ "/src/static/i/icons/color-toggle.svg" | svgContents | safe }}</span>
+</button>
+<dialog id="theme-dialog" class="theme-dialog" aria-labelledby="theme-dialog-title">
+	<theme-switcher class="theme-icons">
+		<fieldset>
+			<legend id="theme-dialog-title">Color theme</legend>
+			<label><input type="radio" name="theme" value="system" checked>System</label>
+			<label><input type="radio" name="theme" value="light">Light</label>
+			<label><input type="radio" name="theme" value="dark">Dark</label>
+		</fieldset>
+	</theme-switcher>
+	<button type="button" commandfor="theme-dialog" command="close" aria-label="Close">&times;</button>
+</dialog>

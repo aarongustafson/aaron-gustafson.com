@@ -2,41 +2,104 @@
 
 #theme-switcher {
 	position: fixed;
-	top: 5px;
-	right: 5px;
+	inset-block-start: 5px;
+	inset-inline-end: 5px;
 	z-index: 100;
 	line-height: 0.5;
+	margin: 0;
 	padding: 8px;
-	border: 1px solid $color-white;
+	border: 1px solid var(--theme-toggle-border, #{$color-white});
 
-	@supports (margin-block: 1em) {
-		@include unset(top right padding);
-		@include rem(inset-block-start, 5px, false);
-		@include rem(inset-inline-end, 5px, false);
-		@include rem(padding-block, 8px, false);
-		@include rem(padding-inline, 8px, false);
-	}
-
-	html.dark-mode & {
-		border-color: transparent;
+	> span {
+		display: inline-block;
 	}
 
 	svg {
-		width: 20px;
-		height: 20px;
+		display: block;
+		margin: 0;
+		inline-size: 20px;
+		block-size: 20px;
+	}
+}
 
-		@supports (inline-size: 1em) {
-			@include unset(width height);
-			inline-size: 20px;
-			block-size: 20px;
+.theme-dialog {
+	position: fixed;
+	inset-block: 0;
+	box-sizing: border-box;
+	inline-size: 28rem;
+	max-inline-size: calc(100% - 2rem);
+	max-block-size: calc(100% - 2rem);
+	overflow: auto;
+	border-radius: 0.5rem;
+
+	theme-switcher {
+		font-size: 1rem;
+		--multi-switch-background: var(--theme-background);
+		--multi-switch-color: var(--theme-text);
+		--multi-switch-border: var(--theme-muted);
+		--multi-switch-selected-background: var(--theme-button-background);
+		--multi-switch-selected-color: var(--theme-button-text);
+		--multi-switch-focus-color: var(--theme-link);
+		--multi-switch-padding: 0.5em;
+
+		legend {
+			font-size: 1.375rem;
+			margin-bottom: 0.5em;
 		}
 	}
 
-	path {
-		fill: $color-white;
+	[data-multi-switch-choice],
+	[data-multi-switch-label] {
+		margin-block-start: 0;
+		line-height: 1;
+	}
 
-		html.dark-mode & {
-			fill: $color-black;
+	[data-multi-switch-choice] {
+		align-items: center;
+	}
+
+	.theme-icons {
+		[data-multi-switch-choice]::before {
+			content: "";
+			inline-size: 1.25em;
+			block-size: 1.25em;
+			flex-shrink: 0;
+			background: currentColor;
+			mask: var(--theme-icon) center / contain no-repeat;
 		}
+
+		[data-value="system"] {
+			--theme-icon: url("/i/icons/theme-system.svg");
+		}
+
+		[data-value="light"] {
+			--theme-icon: url("/i/icons/theme-light.svg");
+		}
+
+		[data-value="dark"] {
+			--theme-icon: url("/i/icons/theme-dark.svg");
+		}
+
+		@media (forced-colors: active) {
+			[data-multi-switch-choice]::before {
+				background: ButtonText;
+				forced-color-adjust: none;
+			}
+
+			[data-selected]::before {
+				background: HighlightText;
+			}
+		}
+	}
+
+	@container multi-switch (inline-size < 20rem) {
+		[data-multi-switch-choice]:not([data-first]) {
+			margin-block-start: -1px;
+		}
+	}
+
+	:focus-visible {
+		outline: 3px solid currentColor;
+		outline-offset: 3px;
 	}
 }

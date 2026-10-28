@@ -1,6 +1,6 @@
 /* Website Carbon Badge */
 #wcb.carbonbadge {
-	--b1: #2c2825;
+	--b1: var(--theme-carbon-text, #2c2825);
 	--b2: #00ffbc;
 	color: var(--b1);
 	font-family: system-ui, sans-serif;
@@ -14,9 +14,6 @@
 		top: 0.3em;
 		vertical-align: middle;
 	}
-}
-.dark-mode #wcb.carbonbadge {
-	--b1: #fff;
 }
 #wcb.carbonbadge #wcb_2,
 #wcb.carbonbadge #wcb_g,
@@ -56,7 +53,6 @@
 	border-color: var(--b2);
 	color: var(--b1);
 }
-.dark-mode #wcb.carbonbadge #wcb_2 {
-	color: #fff;
+#wcb.carbonbadge #wcb_2 {
 	color: var(--b1);
 }

@@ -16,8 +16,8 @@
 		<link href="/favicon.png" rel="icon">
 		<link rel="manifest" href="/manifest.json">
 
+		<script>{% include "partials/global/theme-preference.js" %}</script>
 		<link rel="stylesheet" href="/c/advanced{% if useMinifiedAssets %}.min{% endif %}.css">
-		<script>{% include "partials/global/dark-mode.js" %}</script>
 		<script>{% include "partials/global/banner.js" %}</script>
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -80,6 +80,7 @@
 				{% endif %}
 			</div>
 		</header>
+		{% include "partials/global/theme-switcher.njk" %}
 		{% if body_class != "home" %}{{ alert | safe }}{% endif %}
 
 		<main role="main">
@@ -106,6 +107,15 @@
 			</div>
 		</footer>
 
+		<script type="importmap">
+			{
+				"imports": {
+					"@aarongustafson/theme-switcher/define.js": "/j/theme-switcher/define.js",
+					"@aarongustafson/form-multi-switch": "/j/form-multi-switch/index.js"
+				}
+			}
+		</script>
+		<script type="module" src="/j/theme/init.js"></script>
 		<script src="/j/main{% if useMinifiedAssets %}.min{% endif %}.js"></script>
 		<script>{% include "partials/global/register-serviceworker.js" %}</script>
 		<script src="/j/web-components{% if useMinifiedAssets %}.min{% endif %}.js"></script>

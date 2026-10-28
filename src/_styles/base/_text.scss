@@ -80,8 +80,7 @@ small {
 	@include big-focus();
 }
 
-.footnote-ref > a:target,
-html.dark-mode .footnote-ref > a:target {
+.footnote-ref > a:target {
 	background-color: inherit;
 	outline: 0;
 }
