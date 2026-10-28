@@ -16,7 +16,7 @@ One of the greatest challenges of progressive enhancement lies not with the codi
 
 <!-- more -->
 
-<hr>
+---
 
 Back in 2007, I was presented with this challenge while putting together a talk called [Ruining the User Experience](https://web.archive.org/web/20070515221318/http://2007.sxsw.com/interactive/programming/panels/?action=show&id=IAP060214) (which I co-presented for the first time at SXSW with [Sarah B. Nelson](https://twitter.com/sarahbeee)). In the talk, Sarah and I discussed how to treat JavaScript as an enhancement and what happens when you don’t—in 2007, I know!
 
@@ -80,7 +80,7 @@ Here’s an example from [my Beyond Responsive workshop](https://www.facebook.co
 
 ![]({{ site.url }}/i/posts/2015-05-28/05.png)
 
-<figcaption>Pass 3: Test for <code>details</code>/<code>summary</code> support and use the functionality if available.</figcaption></figure>
+<figcaption>Pass 3: Test for <code>&lt;details&gt;</code>/<code>&lt;summary&gt;</code> support and use the functionality if available.</figcaption></figure>
 
 ## Simple, Powerful
 

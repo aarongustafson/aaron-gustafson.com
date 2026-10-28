@@ -20,7 +20,7 @@ Obviously [this is a double edged sword](/notebook/native-vs-stylable-tug-of-war
 
 ## [CSS 3 Exclusions](http://www.w3.org/TR/2015/WD-css3-exclusions-20150115/)
 
-This has been a long time coming. The idea is pretty simple: Within a flow-type element (think `p`, `div`, etc.) you can apply [the `wrap-flow` property](http://www.w3.org/TR/2015/WD-css3-exclusions-20150115/#wrap-flow-property) to children in order to control where content can go in relation to them. Here’s an example from the spec:
+This has been a long time coming. The idea is pretty simple: Within a flow-type element (think `<p>`, `<div>`, etc.) you can apply [the `wrap-flow` property](http://www.w3.org/TR/2015/WD-css3-exclusions-20150115/#wrap-flow-property) to children in order to control where content can go in relation to them. Here’s an example from the spec:
 
 <figure id="fig-2015-01-16-1">
 

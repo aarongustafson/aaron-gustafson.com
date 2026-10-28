@@ -8,4 +8,4 @@ in_reply_to: https://adrianroselli.com/2015/08/where-to-put-your-search-role.htm
 ref_source: Adrian Roselli
 ---
 
-Not on the `form`. Noted.
+Not on the `<form>`. Noted.

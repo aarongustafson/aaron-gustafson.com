@@ -114,7 +114,7 @@ I didn’t understand how powerful custom properties are when I wrote the origin
 
 ## Theming through and through
 
-One project that made the value of custom props much clearer to me was a `canvas`-based audio visualizer I was working on. It looked fine while I was using dark mode. When I switched to the light theme, however, the visualization disappeared against its background. As my son would say: “That’s buns.”
+One project that made the value of custom props much clearer to me was a `<canvas>`-based audio visualizer I was working on. It looked fine while I was using dark mode. When I switched to the light theme, however, the visualization disappeared against its background. As my son would say: “That’s buns.”
 
 I’m almost always in dark mode, so that’s what I’d been testing in. I’d totally neglected to give it a look in light mode. Yikes.
 

@@ -12,7 +12,7 @@ tags:
     "web components",
     "web forms",
   ]
-description: "Confirming values like email addresses and passwords is a common form need. The `form-matching-fields` web component injects the necessary validation without stomping on browser-native validation using `required`, `pattern`, and such."
+description: "Confirming values like email addresses and passwords is a common form need. The `<form-matching-fields>` web component injects the necessary validation without stomping on browser-native validation using `required`, `pattern`, and such."
 twitter_text: "Need two form fields to match? `form-matching-fields` adds simple validation for confirmation fields."
 series:
   name: "Modern Web Form Best Practices"
@@ -24,7 +24,7 @@ meta_description: "Confirming values like email addresses and passwords is a com
 social_description: "Confirming values like email addresses and passwords is a common form need."
 ---
 
-Sometimes the simplest form pattern is the one you repeat <i lang="la">ad infinitum</i>: “Type it once, then type it again.” We do it for password confirmations, email verification, and any flow where a typo creates expensive follow-up work. I released a small web component to handle that pattern cleanly: [`form-matching-fields`](https://github.com/aarongustafson/form-matching-fields).
+Sometimes the simplest form pattern is the one you repeat <i lang="la">ad infinitum</i>: “Type it once, then type it again.” We do it for password confirmations, email verification, and any flow where a typo creates expensive follow-up work. I released a small web component to handle that pattern cleanly: [`<form-matching-fields>`](https://github.com/aarongustafson/form-matching-fields).
 
 <!-- more -->
 
@@ -48,7 +48,7 @@ The component evaluates the first two eligible text-type inputs it contains and 
 
 ## What counts as an eligible field?
 
-To keep behavior predictable, the component only considers descendant `input` elements of these types:
+To keep behavior predictable, the component only considers descendant `<input>` elements of these types:
 
 - text
 - email
@@ -111,4 +111,4 @@ I put together [a demo of the web component](https://aarongustafson.github.io/fo
 
 ## Grab it
 
-You can explore the source, file issues, and suggest enhancements in [the `form-matching-fields` repository](https://github.com/aarongustafson/form-matching-fields).
+You can explore the source, file issues, and suggest enhancements in [the `<form-matching-fields>` repository](https://github.com/aarongustafson/form-matching-fields).

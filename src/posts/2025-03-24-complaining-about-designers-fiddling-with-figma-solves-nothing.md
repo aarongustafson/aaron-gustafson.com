@@ -18,7 +18,7 @@ First off, I agree with his core message: designers should understand the medium
 
 > They pat themselves on the back, believing they’ve mastered digital design. Meanwhile, a developer glances at the file, sighs, and codes the button in five minutes.
 
-Condescention toward designers aside, this also assumes a high degree of competency and understanding of nuance on the engineering side which — in my experience — is not guaranteed. I cannot tell you how often I’ve designed an interface that calls for a button to submit a form and I get back a `div` with a click handler that can’t accept focus and has no design considerations for hover, focus, etc. In other words, if I provided a design with a single button on it, I get that button exactly. Sometimes exactly to those explicit dimensions, text overflow be damned.
+Condescention toward designers aside, this also assumes a high degree of competency and understanding of nuance on the engineering side which — in my experience — is not guaranteed. I cannot tell you how often I’ve designed an interface that calls for a button to submit a form and I get back a `<div>` with a click handler that can’t accept focus and has no design considerations for hover, focus, etc. In other words, if I provided a design with a single button on it, I get that button exactly. Sometimes exactly to those explicit dimensions, text overflow be damned.
 
 There needs to be an acknowledgement and appreciation that designers know their craft and (generally) have good reasons for being overly prescriptive. Do some designers stray into realms of self-indulgence… absolutely! But so do engineers.
 

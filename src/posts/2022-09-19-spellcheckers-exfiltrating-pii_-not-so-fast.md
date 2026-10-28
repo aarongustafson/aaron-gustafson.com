@@ -56,7 +56,7 @@ I should note, however, that `readonly` fields _are_ send to the server when the
 <input id="no-spellcheck" name="no-spellcheck" spellcheck="false" />
 ```
 
-The `spellcheck` attribute can be applied to any element and setting it to “false” instructs browsers to turn off spellchecking services for its contents. The post from Otto JS showed this being used globally on the `body` element, but that is overkill. It would be better to use the attribute on specific fields you want to protect, as shown above.
+The `spellcheck` attribute can be applied to any element and setting it to “false” instructs browsers to turn off spellchecking services for its contents. The post from Otto JS showed this being used globally on the `<body>` element, but that is overkill. It would be better to use the attribute on specific fields you want to protect, as shown above.
 
 ## Don‘t forget about password controls that support show/hide
 

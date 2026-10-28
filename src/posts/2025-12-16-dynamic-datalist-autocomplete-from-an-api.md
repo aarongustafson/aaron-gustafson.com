@@ -12,7 +12,7 @@ tags:
     "web forms",
     "API",
   ]
-description: "The `datalist` element is great for autocomplete, but it’s static. The `dynamic-datalist` web component brings dynamic, API-driven suggestions to your text fields as users type."
+description: "The `<datalist>` element is great for autocomplete, but it’s static. The `<dynamic-datalist>` web component brings dynamic, API-driven suggestions to your text fields as users type."
 twitter_text: "Want API-driven autocomplete suggestions in your forms? Here’s a web component that makes it happen."
 series:
   name: "Modern Web Form Best Practices"
@@ -24,7 +24,7 @@ meta_description: "The `<datalist>` element is great for autocomplete, but it’
 social_description: "The `<datalist>` element is great for autocomplete, but it’s static. The dynamic-datalist web component brings dynamic, API-driven suggestions to your text fields as users type."
 ---
 
-HTML’s `datalist` element provides native autocomplete functionality, but it’s entirely static—you have to know all the options up front. The `dynamic-datalist` web component solves this by fetching suggestions from an API endpoint as users type, giving you the benefits of native autocomplete with the flexibility of dynamic data.
+HTML’s `<datalist>` element provides native autocomplete functionality, but it’s entirely static—you have to know all the options up front. The `<dynamic-datalist>` web component solves this by fetching suggestions from an API endpoint as users type, giving you the benefits of native autocomplete with the flexibility of dynamic data.
 
 <!-- more -->
 
@@ -32,7 +32,7 @@ This component is a modern replacement for [my old jQuery predictive typing plug
 
 ## Basic usage
 
-To use the component, wrap it around your `input` field and specify an endpoint:
+To use the component, wrap it around your `<input>` field and specify an endpoint:
 
 ```html
 <dynamic-datalist endpoint="/api/search">
@@ -48,7 +48,7 @@ To use the component, wrap it around your `input` field and specify an endpoint:
 </dynamic-datalist>
 ```
 
-As users type, the component makes GET requests to that endpoint, passing in the typed value as the “query” parameter (e.g., `/api/search?query=WHAT_THE_USER_TYPED`). The response from the endpoint is used to populates a dynamic `datalist` element with the results.
+As users type, the component makes GET requests to that endpoint, passing in the typed value as the “query” parameter (e.g., `/api/search?query=WHAT_THE_USER_TYPED`). The response from the endpoint is used to populates a dynamic `<datalist>` element with the results.
 
 The structure of the response should be JSON with an `options` array of string values:
 
@@ -62,12 +62,12 @@ The structure of the response should be JSON with an `options` array of string v
 
 Under the hood, the component:
 
-1. Adopts (or creates) a `datalist` element for your `input`,
+1. Adopts (or creates) a `<datalist>` element for your `<input>`,
 2. Listens for “input” events,
 3. Debounces requests (waiting at least 250ms) to avoid overwhelming your API,
-4. Sends requests to your endpoint with the current value of the `input`,
+4. Sends requests to your endpoint with the current value of the `<input>`,
 5. Reads back the JSON response,
-6. Updates the `datalist` `option` elements, and
+6. Updates the `<datalist>` `<option>` elements, and
 7. Dispatches the update event.
 
 All of this happens transparently—users just see autocomplete suggestions appearing as they type.
@@ -104,7 +104,7 @@ This sends the GET request `/api/terms?term=...`.
 
 ## Working with existing datalists
 
-If your `input` already has a `datalist` defined, the component will inherit it and replace the existing options with the fetched results, which makes for a nice progressive enhancement:
+If your `<input>` already has a `<datalist>` defined, the component will inherit it and replace the existing options with the fetched results, which makes for a nice progressive enhancement:
 
 ```html
 <dynamic-datalist endpoint="/api/cities">
@@ -132,7 +132,7 @@ Users see the pre-populated cities immediately, and as they type, API results su
 If you want to tap into the component’s event system, it fires three custom events:
 
 - `dynamic-datalist:ready` - Fired when the component initializes
-- `dynamic-datalist:update` - Fired when the `datalist` is updated with new options
+- `dynamic-datalist:update` - Fired when the `<datalist>` is updated with new options
 - `dynamic-datalist:error` - Fired when an error occurs fetching data
 
 ```javascript
@@ -151,7 +151,7 @@ element.addEventListener("dynamic-datalist:error", (e) => {
 });
 ```
 
-Each event provides helpful `detail` objects with references to the `input`, `datalist`, and other relevant data.
+Each event provides helpful `detail` objects with references to the `<input>`, `<datalist>`, and other relevant data.
 
 ## Demo
 

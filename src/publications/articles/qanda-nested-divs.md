@@ -6,4 +6,4 @@ publisher: "Web Standards Sherpa"
 url: http://webstandardssherpa.com/ask-the-sherpas/nested-divs
 ---
 
-I offer my thoughts on the use of nested <code>div</code>s in your HTML.
+I offer my thoughts on the use of nested `<div>` elements in your HTML.

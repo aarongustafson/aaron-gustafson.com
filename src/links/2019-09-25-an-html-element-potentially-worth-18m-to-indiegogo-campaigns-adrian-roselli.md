@@ -12,4 +12,4 @@ Following up on Jason’s post, Adrian offers some forms advice to Indiegogo.
 
 > It was immediately apparent that the fields had no accessible name. Despite the visible text label, nothing was programmatically associated.
 
-C’mon people. It’s 2019. Use a fucking `label` and associate it with the field using the `for` attribute. If you can figure out React (or Angular or whatever), you can absolutely figure this out.
+C’mon people. It’s 2019. Use a fucking `<label>` and associate it with the field using the `for` attribute. If you can figure out React (or Angular or whatever), you can absolutely figure this out.

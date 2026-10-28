@@ -37,22 +37,22 @@ You could achieve this with a minimum of markup:
 Your Name <input name="full_name" />
 ```
 
-The thing is, the text “Your Name” is not associated in any way with the `input`. Sure, a sighted person would likely be able to tell that that text is associated with the field, but no computer can tell that. And if a computer can’t tell the text and `input` are associated, your form control is inaccessible to anyone who uses assistive technology like a screen reader. It’s also going to pose a problem in the near-future of “headless UIs” like those hinted at by Cortana, Siri, and the Echo.
+The thing is, the text “Your Name” is not associated in any way with the `<input>`. Sure, a sighted person would likely be able to tell that that text is associated with the field, but no computer can tell that. And if a computer can’t tell the text and `<input>` are associated, your form control is inaccessible to anyone who uses assistive technology like a screen reader. It’s also going to pose a problem in the near-future of “headless UIs” like those hinted at by Cortana, Siri, and the Echo.
 
-Thankfully, establishing a relationship between the two is quite easy using the `label` element. The most common (and preferable) way to do this is to wrap the labeling text in a `label` element. Then you create an explicit association with the field using the `for` attribute, which is an `id` reference. In other words, the value of the `for` attribute needs to match the value of the `id` attribute on the field you want to associate with that `label`.
+Thankfully, establishing a relationship between the two is quite easy using the `<label>` element. The most common (and preferable) way to do this is to wrap the labeling text in a `<label>` element. Then you create an explicit association with the field using the `for` attribute, which is an `id` reference. In other words, the value of the `for` attribute needs to match the value of the `id` attribute on the field you want to associate with that `<label>`.
 
 ```html
 <label for="full_name">Your Name</label>
 <input id="full_name" name="full_name" />
 ```
 
-With that markup in place, the programmatic connection between the elements is made and the results speak for themselves: When you focus the field, the contents of the `label` are read out.
+With that markup in place, the programmatic connection between the elements is made and the results speak for themselves: When you focus the field, the contents of the `<label>` are read out.
 
 https://www.youtube.com/watch?v=WR4_MAjalsU
 
 ## An Alternate Approach
 
-Since I specifically referred to this approach as _explicit_ association, you probably assumed that there’s another kind of association. And you were right: _implicit_ association. Implicit association is created by wrapping a form control and its associated label text in a `label` element. I like to use this approach with radio and checkbox controls:
+Since I specifically referred to this approach as _explicit_ association, you probably assumed that there’s another kind of association. And you were right: _implicit_ association. Implicit association is created by wrapping a form control and its associated label text in a `<label>` element. I like to use this approach with radio and checkbox controls:
 
 ```html
 <label>
@@ -87,7 +87,7 @@ You can even combine the two approaches.
 </label>
 ```
 
-The reason I like to use implicit association with checkbox and radio controls has to do with ensuring the greatest breadth of support when it comes to styling inputs. For instance, if I set `width: 80%` on all `input` elements using a simple [type selector](https://developer.mozilla.org/docs/Web/CSS/Type_selectors), that width would be applied to _all_ `input` elements, including radio and checkbox controls. In order to prevent radio and checkbox controls from getting rendered at that width, I would need to assign an override value of `width: auto` to them them specifically. I can do that using [attribute selectors](https://developer.mozilla.org/docs/Web/CSS/Attribute_selectors):
+The reason I like to use implicit association with checkbox and radio controls has to do with ensuring the greatest breadth of support when it comes to styling inputs. For instance, if I set `width: 80%` on all `<input>` elements using a simple [type selector](https://developer.mozilla.org/docs/Web/CSS/Type_selectors), that width would be applied to _all_ `<input>` elements, including radio and checkbox controls. In order to prevent radio and checkbox controls from getting rendered at that width, I would need to assign an override value of `width: auto` to them them specifically. I can do that using [attribute selectors](https://developer.mozilla.org/docs/Web/CSS/Attribute_selectors):
 
 ```css
 input {
@@ -114,13 +114,13 @@ This approach results in a greater amount of support and, incidentally, less CSS
 
 ## Added Benefit: Interactivity
 
-Obviously, associated labels are great for folks who use screen readers, but they have another benefit: tapping on a `label` will focus or activate the associated form control.
+Obviously, associated labels are great for folks who use screen readers, but they have another benefit: tapping on a `<label>` will focus or activate the associated form control.
 
 <figure id="fig-2015-11-11-02" class="media-container">
 
 ![]({{ site.url }}/i/posts/2015-11-11/02.gif)”
 
-<figcaption>Animation showing how clicking a <code>label</code> will focus the associated form control.</figcaption></figure>
+<figcaption>Animation showing how clicking a <code>&lt;label&gt;</code> will focus the associated form control.</figcaption></figure>
 
 This isn’t a game-changer when it comes to standard text fields, but it’s an exceptional affordance when it comes to radio and checkbox controls, especially on mobile, as it vastly increases the tappable region used to activate the control.
 
@@ -130,7 +130,7 @@ This isn’t a game-changer when it comes to standard text fields, but it’s an
 
 <figcaption>A screenshot of a group of checkbox controls with their labels outlined.</figcaption></figure>
 
-To create incredibly generous tap targets on mobile devices, we can take things a little further. Add padding to the top and bottom of the `label` to make it bigger and then use negative margins to counter that enlargement and keep the layout as it was before the padding was applied.
+To create incredibly generous tap targets on mobile devices, we can take things a little further. Add padding to the top and bottom of the `<label>` to make it bigger and then use negative margins to counter that enlargement and keep the layout as it was before the padding was applied.
 
 ```css
 .grouped label {
@@ -151,7 +151,7 @@ It’s worth noting that older versions of Internet Explorer only provide the fo
 
 ## Placeholders Aren’t Labels
 
-HTML5 ushered in a new option for working with `input` elements: the `placeholder` attribute. This declarative attribute makes it possible to offer hint as to the sort of content you were looking for in a field. In [supporting browsers](http://caniuse.com/#feat=input-placeholder), it appears in the field, ghosted back a bit, and disappears when you start typing a response.[^2]
+HTML5 ushered in a new option for working with `<input>` elements: the `placeholder` attribute. This declarative attribute makes it possible to offer hint as to the sort of content you were looking for in a field. In [supporting browsers](http://caniuse.com/#feat=input-placeholder), it appears in the field, ghosted back a bit, and disappears when you start typing a response.[^2]
 
 <figure id="fig-2015-11-11-05" class="media-container">
 

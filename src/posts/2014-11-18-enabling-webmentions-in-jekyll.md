@@ -30,7 +30,7 @@ The tag to display webmentions for a page is pretty simple:
 {% raw %}{% webmentions YOUR_URL %}{% endraw %}
 ```
 
-This tag outputs a container `div` and an ordered list of every webmention found when the site is generated (or previewed). To show the current webmention count, you use a slightly different tag which just outputs a number:
+This tag outputs a container `<div>` and an ordered list of every webmention found when the site is generated (or previewed). To show the current webmention count, you use a slightly different tag which just outputs a number:
 
 ```liquid
 {% raw %}{% webmention_count YOUR_URL %}{% endraw %}

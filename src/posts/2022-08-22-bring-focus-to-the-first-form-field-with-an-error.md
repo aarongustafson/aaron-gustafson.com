@@ -42,7 +42,7 @@ While filling out a long form the other day, I couldn’t figure out why it wasn
 Whenever you’re building a form, you should use every tool in your toolbox for building that form properly. That means:
 
 1. [Associate labels with their fields](/notebook/labeled-with-love/)
-1. Use specialized `input` types (e.g., email, URL) as appropriate
+1. Use specialized `<input>` types (e.g., email, URL) as appropriate
 1. Identify required fields with `required` and `aria-required`
 1. If you’re expecting a field to match a particular format, note that with `pattern` and provide an example with `placeholder`
 1. Additional information about a field should be bound to it using `aria-describedby`
@@ -90,7 +90,7 @@ The thing is, you don’t really want to litter your JavaScript with strings lik
 />
 ```
 
-The `input` in this example has a [data attribute](https://developer.mozilla.org/docs/Learn/HTML/Howto/Use_data_attributes) containing the error string (`data-error-required`). We can create whatever data attributes we want and access them using that element’s `dataset` property. It’s worth noting that hyphenated property names become camelCase when accessed as a named property of `dataset`.
+The `<input>` in this example has a [`data-*` attribute](https://developer.mozilla.org/docs/Learn/HTML/Howto/Use_data_attributes) containing the error string (`data-error-required`). We can create whatever data attributes we want and access them using that element’s `dataset` property. It’s worth noting that hyphenated property names become camelCase when accessed as a named property of `dataset`.
 
 ```js
 var input = document.getElementById("name");
@@ -130,7 +130,7 @@ But what if you want to bypass the built-in experience and go full custom?
 
 ## Step 3: Going Rogue
 
-The built-in browser validation UI is pretty great, but maybe it’s not your cup of tea. Thankfully, it’s pretty easy to take the training wheels off. You just add a `novalidate` attribute to the `form` element. But before you go dropping that attribute in your markup, consider that your custom validation code will all be JavaScript and if that fails to run—[yes, it happens](/notebook/progressive-misconceptions/)—the browser won’t step in and fill the void. So instead of putting it in your markup, inject it into the `form` when you know absolutely all of the JavaScript code necessary to run your custom validation experience is loaded and ready to rock. In fact, it should be the last line of code to execute:
+The built-in browser validation UI is pretty great, but maybe it’s not your cup of tea. Thankfully, it’s pretty easy to take the training wheels off. You just add a `novalidate` attribute to the `<form>` element. But before you go dropping that attribute in your markup, consider that your custom validation code will all be JavaScript and if that fails to run—[yes, it happens](/notebook/progressive-misconceptions/)—the browser won’t step in and fill the void. So instead of putting it in your markup, inject it into the `<form>` when you know absolutely all of the JavaScript code necessary to run your custom validation experience is loaded and ready to rock. In fact, it should be the last line of code to execute:
 
 ```js
 // Validation Logic Definition

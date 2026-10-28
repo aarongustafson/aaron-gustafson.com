@@ -27,7 +27,7 @@ I won’t bore you with how to set up CE Image as there is [documentation on tha
 
 ## Header images
 
-The first use case we had was a series of large, focal images. You can find different examples of them on [the homepage](http://www.nichols.edu) and landing pages (like [this one for Admissions](http://www.nichols.edu/admissions/)). The first pass on making these images adaptive involved the `picture` element for which [the spec](https://html.spec.whatwg.org/multipage/embedded-content.html#adaptive-images) is known. The markup we were generating was based on the pattern outlined for [Picturefill](http://scottjehl.github.io/picturefill/), a JavaScript polyfill that implements adaptive images in browsers that don’t:
+The first use case we had was a series of large, focal images. You can find different examples of them on [the homepage](http://www.nichols.edu) and landing pages (like [this one for Admissions](http://www.nichols.edu/admissions/)). The first pass on making these images adaptive involved the `<picture>` element for which [the spec](https://html.spec.whatwg.org/multipage/embedded-content.html#adaptive-images) is known. The markup we were generating was based on the pattern outlined for [Picturefill](http://scottjehl.github.io/picturefill/), a JavaScript polyfill that implements adaptive images in browsers that don’t:
 
 ```html
 <picture class="page__image-header__photo">
@@ -82,11 +82,11 @@ This is an example using CE Image’s tag pair option, which lets you control th
 - `interlace` tells CE Image to use image interlacing (which can speed load time); and
 - `cache_dir` tells CE Image where to store the cached image (in relation to our global configuration)
 
-Then, within the tag pair is the `source` element with the `srcset` value set to the path to the file CE Image generated (referenced by the `made` variable) and the associated media query.
+Then, within the tag pair is the `<source>` element with the `srcset` value set to the path to the file CE Image generated (referenced by the `made` variable) and the associated media query.
 
-Multiply that a few times for the different sizes and you have the full `picture` element.
+Multiply that a few times for the different sizes and you have the full `<picture>` element.
 
-Now that’s all well and good, but shortly after launch, [Eric Portis](http://ericportis.com/) wrote [an amazing post explaining how the `srcset` and `sizes` attributes operate](http://ericportis.com/posts/2014/srcset-sizes/) and it cleared up a lot of my confusion on the matter. He convinced me that the age-old `img` element, with these new attributes, would be far more maintainable. With a fire in my belly, I rewrote the markup:
+Now that’s all well and good, but shortly after launch, [Eric Portis](http://ericportis.com/) wrote [an amazing post explaining how the `srcset` and `sizes` attributes operate](http://ericportis.com/posts/2014/srcset-sizes/) and it cleared up a lot of my confusion on the matter. He convinced me that the age-old `<img>` element, with these new attributes, would be far more maintainable. With a fire in my belly, I rewrote the markup:
 
 ```html
 <img class="page__image-header__photo" alt=""
@@ -185,7 +185,7 @@ Pretty simple. It even supports `srcset`:
 
 The [full documentation is up on Github](https://github.com/easy-designs/easy-lazy-images.js#usage).
 
-Implementing this in the context of CE Image was a breeze and builds on the `source` pattern I showed earlier:
+Implementing this in the context of CE Image was a breeze and builds on the `<source>` pattern I showed earlier:
 
 ```html
 {if testimonial_photo} {exp:ce_img:pair src="{testimonial_photo}" width="223"

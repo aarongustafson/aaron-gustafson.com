@@ -10,4 +10,4 @@ meta_description: "A close look at `<fieldset>` interoperability and the browser
 social_description: "I’m a huge fan of `<fieldset>` and `<legend>` from a semantic standpoint and agree that getting better cross-browser alignment (and better assistive tech support) is key to their usefulness."
 ---
 
-I’m a huge fan of `fieldset` and `legend` from a semantic standpoint and agree that getting better cross-browser alignment (and better assistive tech support) is key to their usefulness. I’m glad this work is being done.
+I’m a huge fan of `<fieldset>` and `<legend>` from a semantic standpoint and agree that getting better cross-browser alignment (and better assistive tech support) is key to their usefulness. I’m glad this work is being done.

@@ -12,7 +12,7 @@ meta_description: "Some thoughts on fallback content and the experience it creat
 social_description: "I’ve been thinking a lot about media formats and what happens when a user’s browser encounters a video, audio, or picture element that only includes formats it doesn’t support."
 ---
 
-I don’t remember what got it stuck in my craw, but I’ve been thinking a bit about HTML fallbacks of late. <!-- more -->If you’re unfamiliar, consider the following `picture` element:
+I don’t remember what got it stuck in my craw, but I’ve been thinking a bit about HTML fallbacks of late. <!-- more -->If you’re unfamiliar, consider the following `<picture>` element:
 
 ```html
 <picture>
@@ -21,16 +21,16 @@ I don’t remember what got it stuck in my craw, but I’ve been thinking a bit 
 </picture>
 ```
 
-This `picture` element has two children: one `source` referencing a WebP image and an `img` element referencing a JPG. This pattern demonstrates how `picture` elements must be built in order to validate, but it also reinforces a best practice that uses the fault tolerant nature of HTML parsers to guarantee every user gets something.
+This `<picture>` element has two children: one `<source>` referencing a WebP image and an `<img>` element referencing a JPG. This pattern demonstrates how `<picture>` elements must be built in order to validate, but it also reinforces a best practice that uses the fault tolerant nature of HTML parsers to guarantee every user gets something.
 
 In very simplistic terms, here’s what happens when a browser encounters this markup:
 
-1. The browser recognizes the `picture` element and begins parsing its content to determine how to render it, or
-2. The browser doesn’t recognize the `picture` and ignores it, moving inside to look for any elements it might recognize.
+1. The browser recognizes the `<picture>` element and begins parsing its content to determine how to render it, or
+2. The browser doesn’t recognize the `<picture>` and ignores it, moving inside to look for any elements it might recognize.
 
-In practical terms, this markup delivers two potential experiences. Older browsers that haven’t implemented `picture` get the JPG image. Newer browsers that have implemented `picture` get either the WebP (if they support that format) or the JPG (if they don’t). In this scenario, the `img` element can be (and often is) referred to as “fallback content”.
+In practical terms, this markup delivers two potential experiences. Older browsers that haven’t implemented `<picture>` get the JPG image. Newer browsers that have implemented `<picture>` get either the WebP (if they support that format) or the JPG (if they don’t). In this scenario, the `<img>` element can be (and often is) referred to as “fallback content”.
 
-So why have I been thinking about fallback content? Well, I’ve been thinking a lot about media formats and what happens when a user’s browser encounters a `video`, `audio`, or `picture` element that only includes [formats it doesn’t support](https://developer.mozilla.org/docs/Web/HTML/Supported_media_formats). For instance: A `video` element that only offers an AVI `source` is highly unlikely to be playable in any browser.[^1]
+So why have I been thinking about fallback content? Well, I’ve been thinking a lot about media formats and what happens when a user’s browser encounters a `<video>`, `<audio>`, or `<picture>` element that only includes [formats it doesn’t support](https://developer.mozilla.org/docs/Web/HTML/Supported_media_formats). For instance: A `<video>` element that only offers an AVI `<source>` is highly unlikely to be playable in any browser.[^1]
 
 [^1]: Safari is the only possible exception here, and that’s only if QuickTime supports the particular CODEC that was used to create the AVI in the first place. Pretty slim odds.
 

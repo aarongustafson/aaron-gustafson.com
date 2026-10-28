@@ -3,7 +3,7 @@ import path from "node:path";
 import { pathToFileURL } from "node:url";
 import yaml from "js-yaml";
 import {
-	contentExcerpt,
+	contentExcerptSource,
 	metadataTargets,
 	plainText,
 	resolveMetadata,
@@ -118,7 +118,7 @@ export function readMetadataRecord(filePath, root = process.cwd()) {
 	const type = contentType(absolutePath, root);
 	const excerptBody =
 		type !== "page" || body.includes("<!-- more -->") ? body : "";
-	const excerpt = contentExcerpt(excerptBody);
+	const excerpt = contentExcerptSource(excerptBody);
 	const resolved = resolveMetadata({
 		...data,
 		excerpt,

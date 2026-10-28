@@ -18,7 +18,7 @@ In more than a handful of conversations lately, it’s become quite clear that w
 
 <!-- more -->
 
-Here’s one example. In reaction to [my post on why I think CSS variables are a bad idea](/notebook/css-variables-are-a-bad-idea/), [SASS](http://sass-lang.com) core team member [Chris Eppstein](https://github.com/chriseppstein/) had this to say:
+Here’s one example. In reaction to [my post on why I think CSS variables are a bad idea](/notebook/css-variables-are-a-bad-idea/), [Sass](http://sass-lang.com) core team member [Chris Eppstein](https://github.com/chriseppstein/) had this to say:
 
 > Authoring CSS shouldn’t be so onerous as to require the use of a preprocessor.
 
@@ -36,7 +36,7 @@ This is a topic I bring up often in my conference talks and workshops: Every dec
 
 When we add another JavaScript library or plugin, it’s no big deal from our perspective. We tend to have fast connections and faster processors. For our users it’s another story: It’s one more thing to request. One more thing to download. One more script to parse. One more thing holding up page rendering. One more reason to leave our site and seek out a competitor who actually values their time.
 
-When we hide an `img` in the small screen version of our responsive design using `display: none`, the cost to us is quite minimal. It’s just one little declaration. What’s the harm? But the cost to our end users is quite significant: Longer load times, slower performance, and (in some cases) in real dollars if they are on a [metered data connection](http://blog.kaspersky.com/cost-aware/). And they don’t even get to see the image they paid for!
+When we hide an `<img>` in the small screen version of our responsive design using `display: none`, the cost to us is quite minimal. It’s just one little declaration. What’s the harm? But the cost to our end users is quite significant: Longer load times, slower performance, and (in some cases) in real dollars if they are on a [metered data connection](http://blog.kaspersky.com/cost-aware/). And they don’t even get to see the image they paid for!
 
 When we decide to build a site using a front-end JavaScript MVC framework, it can make the development process go so much faster for us and we can reduce our need for a robust back-end infrastructure. I mean everyone has JavaScript these days… [the browser is the new VM](/notebook/a-fundamental-disconnect/). But when we do this, our users suffer because we don’t give their browsers real HTML. Instead we force them to download a hefty framework so we can move all of the processing we would normally handle on a much faster, dedicated server to their questionably-capable machine instead. Oh, and if the browser encounters an error while parsing or executing the JavaScript execution, they don’t get anything at all. Welcome to the Modern Web™!
 

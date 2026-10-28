@@ -65,7 +65,7 @@ open them for editing:
 
 | Command                        | What it does                                                                                                                            |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| `npm run prose:fix`            | Rewrites drafts and posts to use the project’s preferred typographic punctuation. Review the resulting changes before committing them.  |
+| `npm run prose:fix`            | Rewrites drafts and posts to use the project’s preferred typographic punctuation, preserving code, template syntax, and HTML/Markdown attributes. Review the resulting changes before committing them. |
 | `npm run prose:check`          | Checks drafts and posts for punctuation that `prose:fix` would change, without modifying files. This check also runs in GitHub Actions. |
 | `npm run markdown:check`       | Validates Markdown and frontmatter throughout `src`.                                                                                    |
 | `npm run metadata:check`       | Reports advisory search and social metadata length issues without failing the build.                                                    |
@@ -164,6 +164,14 @@ name. Content can override descriptions with `meta_description` and
 `social_description` without changing the visible body copy. Generated post
 cards use the post title for image alternative text; custom or external images
 can provide `image_alt`.
+
+The shared plain-text helper renders Markdown before converting HTML to text.
+Inline code such as `` `<input>` `` therefore retains its literal brackets in
+metadata and share-card text, while actual HTML formatting, link destinations,
+and footnotes are omitted. Markdown image descriptions are retained; raw HTML
+images are skipped. Derived plain-text fallbacks are not converted a second time.
+`twitter_text` remains plain social copy, not Markdown: use `<input>` without
+backticks there unless literal backticks are wanted.
 
 The description length targets are editorial guidance rather than hard protocol
 limits. `npm run metadata:check` reports them as warnings so older content does

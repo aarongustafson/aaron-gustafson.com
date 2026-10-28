@@ -36,7 +36,7 @@ If company or client politics preclude you from getting rid of all distractions 
 
 ## 3. Get smarter about images
 
-Images are great, but they often comprise the majority of a web page’s bulk. To slim things down, first consider whether a given image is actually needed. If it isn’t, get rid of it. If it offers an enhancement, but isn’t crucial, consider lazy-loading it after page load. If the image is really important, [use `srcset` and `sizes`](https://ericportis.com/posts/2014/srcset-sizes/) (or the `picture` element) to deliver the smallest and yet most appropriate image to your users, based on their device.
+Images are great, but they often comprise the majority of a web page’s bulk. To slim things down, first consider whether a given image is actually needed. If it isn’t, get rid of it. If it offers an enhancement, but isn’t crucial, consider lazy-loading it after page load. If the image is really important, [use `srcset` and `sizes`](https://ericportis.com/posts/2014/srcset-sizes/) (or the `<picture>` element) to deliver the smallest and yet most appropriate image to your users, based on their device.
 
 ## 4. Embrace the continuum
 

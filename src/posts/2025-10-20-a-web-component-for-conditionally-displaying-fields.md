@@ -9,13 +9,13 @@ atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw2ahmj
 image: "/i/share-cards/a-web-component-for-conditionally-displaying-fields.jpg"
 ---
 
-Building on my recent work in the [form utility space](https://www.aaron-gustafson.com/notebook/series/forms/), I’ve created a new web component that allows you to conditionally display form fields based on the values of other fields: `form-show-if`.
+Building on my recent work in the [form utility space](https://www.aaron-gustafson.com/notebook/series/forms/), I’ve created a new web component that allows you to conditionally display form fields based on the values of other fields: `<form-show-if>`.
 
 <!-- more -->
 
 This component tackles a common UX pattern that HTML doesn’t natively support. You know the scenario—you have a form where certain fields should only appear when specific conditions are met. Maybe you want to show shipping address fields only when someone checks “Ship to different address,” or display a text input for “Other” when someone selects that option from a dropdown. This web component makes that setup effortless — and declarative.
 
-You set up `form-show-if` like this:
+You set up `<form-show-if>` like this:
 
 ```html
 <form-show-if conditions="contact_method=phone">
@@ -26,7 +26,7 @@ You set up `form-show-if` like this:
 </form-show-if>
 ```
 
-You wrap any field and its `label` in the component and then declare the conditions under which it should be displayed in the `conditions` attribute.
+You wrap any field and its `<label>` in the component and then declare the conditions under which it should be displayed in the `conditions` attribute.
 
 ## Defining the display conditions
 
@@ -119,7 +119,7 @@ Here are some practical use cases where this component shines:
 
 ## Progressive enhancement in action
 
-Like all good web components, `form-show-if` follows progressive enhancement principles. If JavaScript fails to load or the browser doesn’t support custom elements, your form still works—users just see all the fields all the time. Not ideal for the user experience, but nothing breaks either.
+Like all good web components, `<form-show-if>` follows progressive enhancement principles. If JavaScript fails to load or the browser doesn’t support custom elements, your form still works—users just see all the fields all the time. Not ideal for the user experience, but nothing breaks either.
 
 The component is lightweight, has no dependencies, and works in all modern browsers.
 
@@ -143,6 +143,6 @@ The demo includes examples of:
 
 ## Grab it
 
-You can view the entire project (and suggest enhancements) over on [the form-show-if component’s GitHub repo](https://github.com/aarongustafson/form-show-if). The component is available as both a standard script and an ES module, so you can integrate it however works best for your project.
+You can view the entire project (and suggest enhancements) over on [the `<form-show-if>` component’s GitHub repo](https://github.com/aarongustafson/form-show-if). The component is available as both a standard script and an ES module, so you can integrate it however works best for your project.
 
-Installation is straightforward—just include the script in your page and start using the `form-show-if` element. No build step required, no framework dependencies, just clean, standards-based progressive enhancement.
+Installation is straightforward—just include the script in your page and start using the `<form-show-if>` element. No build step required, no framework dependencies, just clean, standards-based progressive enhancement.

@@ -20,7 +20,7 @@ But first let’s take a a trip back in time to 2003. In March of that year, [St
 
 ## What’s graceful degradation?
 
-_Graceful degradation_ assumes that an experience is going to be worse on older, less capable browsers and devices. To address potential problems, it recommends that developers take steps to avoid throwing errors—JavaScript or otherwise—for their users. Under this philosophy, a developer can take a range of approaches ranging from making everything work perfectly in down-level browsers to only addressing egregious errors or even chosing to block certain browsers from accessing the content if they are known to have problems. We saw this latter approach often with Flash-only sites, but it wasn’t limited to them. I used <a href="#2016-10-17-1">this “roadblock” example from Kodak.com</a> in [my book](http://adaptivewebdesign.info/):
+_Graceful degradation_ assumes that an experience is going to be worse on older, less capable browsers and devices. To address potential problems, it recommends that developers take steps to avoid throwing errors—JavaScript or otherwise—for their users. Under this philosophy, a developer can take a range of approaches ranging from making everything work perfectly in down-level browsers to only addressing egregious errors or even chosing to block certain browsers from accessing the content if they are known to have problems. We saw this latter approach often with Flash-only sites, but it wasn’t limited to them. I used [this “roadblock” example from Kodak.com](#2016-10-17-1) in [my book](http://adaptivewebdesign.info/):
 
 <figure id="fig-2016-10-17-1" class="media-container">
 
@@ -44,19 +44,15 @@ To give a simple example, consider a form field for entering your email address.
 
 I automatically create layers of experience with no extra effort:
 
-<ol>
-<li>Browsers that don’t understand “email” as a valid <code>input</code> type will treat the “email” text as a typo in my HTML (like when you type “rdio” instead of “radio”… or maybe I’m the only one that does that). As a result, they will fall back to the default input type of “text”, which is usable in every browser that supports HTML2 and up.</li>
-<li>Browsers that consider “email” a valid <code>input</code> type will provide one (or more) of many potential enhanced experiences:
-<ol type="a">
-<li>In a virtual keyboard context, the browser may present a keyboard that is tailored toward quickly entering email addresses.</li>
-<li>In a browser that supports auto-completion, it may use this as a cue to suggest entering a commonly-entered email or one that has been stored in the user’s profile.</li>
-<li>In a browser that supports HTML5 validation, the browser may validate this field for proper email formatting when the user attempts to submit the form.</li>
-<li>In a browser that does not support HTML5 validation or that doesn’t actively block submission on validation errors—<a href="https://bugs.webkit.org/show_bug.cgi?id=28649">like Safari</a>—a developer-supplied JavaScript program may use the <code>type</code> attribute as a signal that it should validate the field for proper email address formatting.</li>
-</ol>
-</li>
-</ol>
+1. Browsers that don’t understand “email” as a valid `<input>` type will treat the “email” text as a typo in my HTML (like when you type “rdio” instead of “radio”… or maybe I’m the only one that does that). As a result, they will fall back to the default input type of “text”, which is usable in every browser that supports HTML2 and up.
+2. Browsers that consider “email” a valid `<input>` type will provide one (or more) of many potential enhanced experiences:
+   1. In a virtual keyboard context, the browser may present a keyboard that is tailored toward quickly entering email addresses.
+   2. In a browser that supports auto-completion, it may use this as a cue to suggest entering a commonly-entered email or one that has been stored in the user’s profile.
+   3. In a browser that supports HTML5 validation, the browser may validate this field for proper email formatting when the user attempts to submit the form.
+   4. In a browser that does not support HTML5 validation or that doesn’t actively block submission on validation errors—[like Safari](https://bugs.webkit.org/show_bug.cgi?id=28649)—a developer-supplied JavaScript program may use the `type` attribute as a signal that it should validate the field for proper email address formatting.
+   {type="a"}
 
-That means that there are between 5 and 13 potential experiences (given all of the different possible combinations of these layers) in this one single single element… it’s kind of mind-boggling to think about, right? And the clincher here is that any of these experiences can be a good experience. Heck for nearly 15 years of the Web, the plain-ol’ text `input` was the only way we had for entering an email address. Anything better than that is gravy.
+That means that there are between 5 and 13 potential experiences (given all of the different possible combinations of these layers) in this one single single element… it’s kind of mind-boggling to think about, right? And the clincher here is that any of these experiences can be a good experience. Heck for nearly 15 years of the Web, the plain-ol’ text `<input>` was the only way we had for entering an email address. Anything better than that is gravy.
 
 Progressive enhancement embraces the idea of experience as a continuum rather than some singular ideal. It recognizes that every person is different and we all have special requirements for Web access. Some may depend on our browser, the device we’re on, and the network we are using. Others may be the result of a limitation we have dealt with since birth, are dealing with temporarily as the result of an injury or incident, or are simply a factor of our current situation. We all experience the world differently and progressive enhancement not only respects that, it embraces that variability.
 
@@ -74,7 +70,7 @@ This recommendation served as a bit of a wake-up call for many JavaScript develo
 
 Even though JavaScript and accessibility are no longer at odds (and really haven’t been for the better part of a decade), there are still some folks who believe they are. People routinely come across old articles that talk about JavaScript being inaccessible and they turn around and unfairly demonize JavaScript developers as unsympathetic toward folks who rely on screen readers or other AT. It’s no wonder that some JavaScript developers become immediately defensive when the subject of accessibility comes up… especially if it’s not something they’re all that familiar with.
 
-<hr>
+---
 
 I also mentioned that programming culture plays a part in the antagonistic relationship between the progressive enhancement camp and the JavaScript community. If you’ve been a programmer for any amount of time, you’ve probably borne witness to the constant finger-pointing, belittling, and arrogance when it come to the languages we choose to program in or the tools we use to do it.
 

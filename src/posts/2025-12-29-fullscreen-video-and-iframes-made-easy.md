@@ -17,13 +17,13 @@ atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvzs7kp
 image: "/i/share-cards/fullscreen-video-and-iframes-made-easy.jpg"
 ---
 
-Adding fullscreen capabilities to videos and embedded iframes shouldn’t require wrestling with prefixed APIs or managing focus states. The `fullscreen-control` web component handles all of that for you — just wrap it around the element. The component handles the rest as a discrete progressive enhancement.
+Adding fullscreen capabilities to videos and embedded iframes shouldn’t require wrestling with prefixed APIs or managing focus states. The `<fullscreen-control>` web component handles all of that for you — just wrap it around the element. The component handles the rest as a discrete progressive enhancement.
 
 <!-- more -->
 
 ## Easy-peasy
 
-Here’s a simple example using a `video` element:
+Here’s a simple example using a `<video>` element:
 
 ```html
 <fullscreen-control>
@@ -39,11 +39,11 @@ With that in place, the component
 * Rigs up the necessary keyboard events (e.g. <kbd>Escape</kbd> to exit), and
 * Assigns the relevant ARIA attributes. 
 
-The component uses light DOM, so your `video` stays in the regular DOM tree and all your existing CSS continues to work.
+The component uses light DOM, so your `<video>` stays in the regular DOM tree and all your existing CSS continues to work.
 
 ## Fullscreen iframes
 
-Need to embed a YouTube video, slide deck, or code demo? The component works with `iframe` elements too:
+Need to embed a YouTube video, slide deck, or code demo? The component works with `<iframe>` elements too:
 
 ```html
 <fullscreen-control>
@@ -59,9 +59,9 @@ Need to embed a YouTube video, slide deck, or code demo? The component works wit
 
 The component automatically adds the necessary `allow="fullscreen"` and `allowfullscreen` attributes, including prefixed versions for broader compatibility.
 
-## Customizable `button` text
+## Customizable `<button>` text {id="customizable-button-text"}
 
-You can change the `button` label to match your site’s language or writing style by setting the `button-text` attribute:
+You can change the `<button>` label to match your site’s language or writing style by setting the `button-text` attribute:
 
 ```html
 <fullscreen-control button-text="全画面表示">
@@ -77,7 +77,7 @@ The default button label is “View fullscreen,” but you can use this attribut
 </fullscreen-control>
 ```
 
-This creates a `button` with the text “View Product demo fullscreen”. The component looks for `aria-label`, `title`, or other native naming on the wrapped element and uses that to make the `button` contextual.
+This creates a `<button>` with the text “View Product demo fullscreen”. The component looks for `aria-label`, `title`, or other native naming on the wrapped element and uses that to make the `<button>` contextual.
 
 ## Distinct screen reader labels
 
@@ -92,7 +92,7 @@ If you want the visible label and accessible button name to differ, use the `but
 </fullscreen-control>
 ```
 
-This code will generate a `button` that visually reads “Fullscreen”, but is announced as “View Product teaser in fullscreen mode” to screen readers. In mode cases, `button-text` will suffice, but this option is available if you need to distinguish the buttons of multiple fullscreen controls from one another and don’t have visual space to display their accessible names.
+This code will generate a `<button>` that visually reads “Fullscreen”, but is announced as “View Product teaser in fullscreen mode” to screen readers. In mode cases, `button-text` will suffice, but this option is available if you need to distinguish the buttons of multiple fullscreen controls from one another and don’t have visual space to display their accessible names.
 
 ## Focus management 
 

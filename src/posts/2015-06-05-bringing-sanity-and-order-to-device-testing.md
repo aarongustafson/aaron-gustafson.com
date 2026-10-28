@@ -58,7 +58,7 @@ What makes progressive enhancement so helpful when it comes to dealing with this
 
 In order to ensure we don’t accidentally deliver advanced features to less capable browsers like these, we just need to be smart about how we load stuff like CSS and JavaScript.
 
-Some basic CSS—think typography, color, etc.—will be usable by just about anyone, so we can put all that stuff in one CSS file (e.g., `basic.css`) and include it with a standard `link`. Then we can tuck all of our layout rules and other advanced CSS into a separate CSS file (e.g., `advanced.css`) that we link to with an associated media query.
+Some basic CSS—think typography, color, etc.—will be usable by just about anyone, so we can put all that stuff in one CSS file (e.g., `basic.css`) and include it with a standard `<link>`. Then we can tuck all of our layout rules and other advanced CSS into a separate CSS file (e.g., `advanced.css`) that we link to with an associated media query.
 
 ```html
 <link rel="stylesheet" href="default.css" media="all" />

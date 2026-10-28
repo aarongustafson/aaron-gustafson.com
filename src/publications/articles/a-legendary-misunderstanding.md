@@ -6,4 +6,4 @@ publisher: "Web Standards Sherpa"
 url: http://webstandardssherpa.com/reviews/a-legendary-misunderstanding
 ---
 
-I unearthed code consistency issues at American Express, and shows how we can use <code>fieldset</code> and <code>legend</code> more effectively in the markup of web forms.
+I unearthed code consistency issues at American Express, and shows how we can use `<fieldset>` and `<legend>` more effectively in the markup of web forms.

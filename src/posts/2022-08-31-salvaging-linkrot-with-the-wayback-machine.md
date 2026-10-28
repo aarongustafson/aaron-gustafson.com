@@ -171,7 +171,7 @@ I am only going to share code with you for that final bit as it should give you 
 
 {% endraw %}
 
-Here you can see I am injecting a `footer` into the markup when the entry is 404-ing. Within that footer, I note the link’s status. Then I inject some additional text to point to the Wayback Machine’s archive of the page. It’s worth noting that I am being overly cautious here and only injecting the link if <var>post.data.archived</var> is truthy. This will ensure that the link won’t be shown if something fails in my code or I change how I am implementing the <var>archived</var> property.
+Here you can see I am injecting a `<footer>` into the markup when the entry is 404-ing. Within that footer, I note the link’s status. Then I inject some additional text to point to the Wayback Machine’s archive of the page. It’s worth noting that I am being overly cautious here and only injecting the link if <var>post.data.archived</var> is truthy. This will ensure that the link won’t be shown if something fails in my code or I change how I am implementing the <var>archived</var> property.
 
 ## Crossing my fingers
 

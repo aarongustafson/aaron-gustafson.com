@@ -19,11 +19,11 @@ One of the features I really love about Mastodon is their first-class Content Wa
 
 <!-- more -->
 
-Earlier today, [the idea of a “spoiler / content warning” element popped onto my radar through the Web We Want inbox](https://github.com/WebWeWant/webwewant.fyi/issues/615). It referenced [a discussion over on the WICG](https://discourse.wicg.io/t/standardized-spoiler-tag/5814) and I was intrigued but the potential of this kind of feature for HTML. Some folks suggested progressive disclosures like `details`/`summary` was the way to go, but that approach is limited to flow content (and fraught with a host of issues).
+Earlier today, [the idea of a “spoiler / content warning” element popped onto my radar through the Web We Want inbox](https://github.com/WebWeWant/webwewant.fyi/issues/615). It referenced [a discussion over on the WICG](https://discourse.wicg.io/t/standardized-spoiler-tag/5814) and I was intrigued but the potential of this kind of feature for HTML. Some folks suggested progressive disclosures like `<details>`/`<summary>` was the way to go, but that approach is limited to flow content (and fraught with a host of issues).
 
 ## Markup possibilities
 
-I wasn’t sold on the idea of a `spoiler` element either, as that’s a pretty specific use case of a content warning. And so I wondered, _what if instead of an element, we introduced an attribute that could take the kind of content warning as its value_. For example, consider the following:
+I wasn’t sold on the idea of a `<spoiler>` element either, as that’s a pretty specific use case of a content warning. And so I wondered, _what if instead of an element, we introduced an attribute that could take the kind of content warning as its value_. For example, consider the following:
 
 ```html
 <article content-warning="child abuse">… article contents …</article>
@@ -73,12 +73,12 @@ What do you think? Is this something you’d like to see on the web? I’d love 
 
 ## Update 2023-04-24
 
-[James Edwards mentioned the potential interplay issues with Reader Mode (and similar)](https://mastodon.world/@siblingpastry/110254145981433059) so I started playing around with an alternate approach. I landed on a version that physically swaps out the elements in the DOM for a custom element `content-warning` that acts as a placeholder. Here’s how it works:
+[James Edwards mentioned the potential interplay issues with Reader Mode (and similar)](https://mastodon.world/@siblingpastry/110254145981433059) so I started playing around with an alternate approach. I landed on a version that physically swaps out the elements in the DOM for a custom element `<content-warning>` that acts as a placeholder. Here’s how it works:
 
 1. Author uses `content-warning` attribute as described above.
-1. The runtime script swaps that element for the custom `content-warning` element, which contains a wrapper element (`span`) that is sized to occupy the same space as the original element (including margins).
-1. The content warning text is used to label a `button` inside that wrapper.
-1. Clicking the `button` swaps the original element back into position and announces it to screen reader users (using `role="alert"`).
+1. The runtime script swaps that element for the custom `<content-warning>` element, which contains a wrapper element (`<span>`) that is sized to occupy the same space as the original element (including margins).
+1. The content warning text is used to label a `<button>` inside that wrapper.
+1. Clicking the `<button>` swaps the original element back into position and announces it to screen reader users (using `role="alert"`).
 
 I tested this approach with VoiceOver and JAWS and it works a treat. I also confirmed the Edge’s Reader Mode does not deliver the hidden content.
 

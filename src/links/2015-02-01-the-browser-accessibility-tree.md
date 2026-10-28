@@ -7,4 +7,4 @@ in_reply_to: https://www.paciellogroup.com/blog/2015/01/the-browser-accessibilit
 ref_source: The Paciello Group
 ---
 
-A clear and concise overview of browsers’ accessibility trees, using the `video` element as an example. Yet another reason to love [Steve Faulkner](https://twitter.com/stevefaulkner).
+A clear and concise overview of browsers’ accessibility trees, using the `<video>` element as an example. Yet another reason to love [Steve Faulkner](https://twitter.com/stevefaulkner).

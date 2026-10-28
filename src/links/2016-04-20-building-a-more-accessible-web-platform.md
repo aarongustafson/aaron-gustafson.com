@@ -13,7 +13,7 @@ I’m so incredibly excited about this! Highlights:
 - ARIA Landmarks and document structure navigation;
 - Proper computing of accessible name & description;
 - Improved error validity states;
-- Accessible `datalist`, improved `select`, and improvements to all list type elements;
+- Accessible `<datalist>`, improved `<select>`, and improvements to all list type elements;
 - Keyboard controls for the number field;
 - Accessible `input[type=color]`;
 - Improved high contrast mode (no more removing background images, instead, the image stays and a solid color is placed behind the text);

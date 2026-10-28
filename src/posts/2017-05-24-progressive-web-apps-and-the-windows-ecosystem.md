@@ -163,7 +163,7 @@ Here we have an email input field:
 <input type="email" name="email" id="email" required aria-required="true" />
 ```
 
-The “email” field type was introduced in HTML5, so older browsers may not support it. Those that don’t will provide the default `input` type—a text field—to users. That’s totally fine—it’s all we had for more than a dozen years before HTML5 came along! But even if a user’s device does support email fields, it’s implementation may vary. Based on how a browser answers the following questions, users will end up with different experiences:
+The “email” field type was introduced in HTML5, so older browsers may not support it. Those that don’t will provide the default `<input>` type—a text field—to users. That’s totally fine—it’s all we had for more than a dozen years before HTML5 came along! But even if a user’s device does support email fields, it’s implementation may vary. Based on how a browser answers the following questions, users will end up with different experiences:
 
 - Do you support for email input type?
 - Do you support the HTML5 form validation algorithm including the email format?

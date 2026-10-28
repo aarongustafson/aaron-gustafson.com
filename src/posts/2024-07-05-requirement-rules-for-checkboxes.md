@@ -25,7 +25,7 @@ meta_description: "Currently, we can only make checkboxes required or not, indiv
 social_description: "Currently, we can only make checkboxes required or not, individually. In some cases you need to be able to set a specific number of checkboxes that need to be checked."
 ---
 
-HTML checkboxes debuted as [part of HTML 2.0 in 1995](https://datatracker.ietf.org/doc/html/rfc1866#section-8.1.2.3). Our ability to mark an individual checkbox as being required became part of the HTML5 spec that published in 2014. A decade later, we can still only make checkboxes required on a case-by-case basis. To overcome this limitation, I had created [a jQuery plugin that allowed me to indicate that a user should choose a specific number of items from within a checkbox group](https://github.com/easy-designs/easy-checkbox-required.js). Yesterday I turned that plugin into a web component: [`form-required-checkboxes`](https://github.com/aarongustafson/form-required-checkboxes).
+HTML checkboxes debuted as [part of HTML 2.0 in 1995](https://datatracker.ietf.org/doc/html/rfc1866#section-8.1.2.3). Our ability to mark an individual checkbox as being required became part of the HTML5 spec that published in 2014. A decade later, we can still only make checkboxes required on a case-by-case basis. To overcome this limitation, I had created [a jQuery plugin that allowed me to indicate that a user should choose a specific number of items from within a checkbox group](https://github.com/easy-designs/easy-checkbox-required.js). Yesterday I turned that plugin into a web component: [`<form-required-checkboxes>`](https://github.com/aarongustafson/form-required-checkboxes).
 
 <!-- more -->
 
@@ -33,7 +33,7 @@ HTML checkboxes debuted as [part of HTML 2.0 in 1995](https://datatracker.ietf.o
 
 Before I tuck into the details, I’ll start by saying that the web component begins with the assumption that you are following best practices with respect to form markup:
 
-- Your checkbox group should be in a `fieldset` with a `legend`
+- Your checkbox group should be in a `<fieldset>` with a `<legend>`
 - All of the checkbox elements must have the same `name` (e.g., “foo[]”).
 
 In other words, they should look something like this:
@@ -59,7 +59,7 @@ In other words, they should look something like this:
 </fieldset>
 ```
 
-To use the web component, you wrap the group in a `form-required-checkboxes` element and then include the JavaScript to initialize it.
+To use the web component, you wrap the group in a `<form-required-checkboxes>` element and then include the JavaScript to initialize it.
 
 ```html
 <form-required-checkboxes>
@@ -73,17 +73,17 @@ To use the web component, you wrap the group in a `form-required-checkboxes` ele
 <script src="/js/web-components/form-required-checkboxes.js" async></script>
 ```
 
-If you’re following right along, there’s an error waiting for you in the `console` — we need to set the requirement rules.
+If you’re following right along, there’s an error waiting for you in the Console — we need to set the requirement rules.
 
 ## The API
 
-The `form-required-checkboxes` element requires at least one attribute to function, but using some of the others you can more fully customize the experience for users:
+The `<form-required-checkboxes>` element requires at least one attribute to function, but using some of the others you can more fully customize the experience for users:
 
 - `required` - Represents the range of required values. You can set this up in one of three ways depending on your needs:
   - Single number (e.g., 3) requires exactly that number of choices.
   - Range (e.g., 3-5) requires a minimum of the first number and a max of the second number be chosen.
   - Max (e.g., 0-3) requires a minimum of zero and a max of the second number to be chosen.
-- `notice` (optional) - This is a string description that explains details of the required value in plain language. If you don’t supply one, the component will create one for you based on the current language (if supported). This description will be added as a `small` element within the component (as a sibling to the `fieldset`).
+- `notice` (optional) - This is a string description that explains details of the required value in plain language. If you don’t supply one, the component will create one for you based on the current language (if supported). This description will be added as a `<small>` element within the component (as a sibling to the `<fieldset>`).
 - `error` (optional) - This is a string validation error you’d like to be shown when the validation criteria is not met. If not provided, an appropriate error message will be generated based on the current language (if supported).
 - `lang` (optional) - Language code for localized messages (e.g., “en,” “es,” “fr,” “de”). Falls back to the nearest ancestor’s `lang` attribute or the document language.
 
