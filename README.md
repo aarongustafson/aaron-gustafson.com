@@ -65,8 +65,11 @@ open them for editing:
 
 The color-theme button opens a native dialog containing
 [`@aarongustafson/theme-switcher`](https://www.npmjs.com/package/@aarongustafson/theme-switcher).
-Its default choices are System, Light, and Dark. A user-driven theme change
+Its default choices are System, Light, and Dark, with the demo's decorative
+monitor, sun, and moon icons alongside the visible labels. A user-driven theme change
 closes the dialog; Close and Escape dismiss it without changing the preference.
+The authored fieldset legend also provides the dialog's accessible name, without
+a duplicate heading.
 
 The component owns ongoing theme state and saves the choice under the
 `theme-switcher` localStorage key. A small script before the stylesheet restores

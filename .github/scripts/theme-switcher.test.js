@@ -150,7 +150,13 @@ test("theme UI includes a named dialog, native close, and script behavior hook",
 	assert.match(html, /commandfor="theme-dialog" command="show-modal"/);
 	assert.match(html, /aria-haspopup="dialog"/);
 	assert.match(html, /aria-labelledby="theme-dialog-title"/);
-	assert.match(html, /<theme-switcher script="\/j\/theme\/dialog.js">/);
+	assert.match(html, /<legend id="theme-dialog-title">Color theme<\/legend>/);
+	assert.doesNotMatch(html, /<h[1-6]\b/);
+	for (const theme of ["system", "light", "dark"]) {
+		assert.ok(html.includes(`name="theme" value="${theme}"`));
+	}
+	assert.match(html, /<theme-switcher class="theme-icons" script="\/j\/theme\/dialog.js">/);
+	assert.doesNotMatch(html, /\bicon-only\b/);
 	assert.match(html, /commandfor="theme-dialog" command="close">Close<\/button>/);
 	assert.doesNotMatch(html, /<form\b/);
 	assert.match(html, /aria-controls="theme-dialog" hidden/);
@@ -207,6 +213,13 @@ test("expanded and minified palettes support System without overriding explicit 
 		assert.match(css, /var\(--theme-background/);
 		assert.match(css, /--multi-switch-selected-background:\s*var\(--theme-button-background\)/);
 		assert.match(css, /#theme-switcher\s*>\s*span\s*\{\s*display:\s*inline-block/);
+		assert.match(css, /\[data-multi-switch-label\]\s*\{\s*margin-block-start:\s*0/);
+		assert.match(css, /forced-colors:\s*active/);
+		assert.match(css, /forced-color-adjust:\s*none/);
+		for (const theme of ["system", "light", "dark"]) {
+			assert.ok(css.includes(`/i/icons/theme-${theme}.svg`));
+			assert.ok(fs.existsSync(new URL(`../../src/_images/icons/theme-${theme}.svg`, import.meta.url)));
+		}
 		const defined = new Set([...css.matchAll(/(--theme-[\w-]+):/g)].map(match => match[1]));
 		for (const [, token] of css.matchAll(/var\((--theme-[\w-]+)/g)) {
 			assert.ok(defined.has(token), `Undefined palette token ${token}`);

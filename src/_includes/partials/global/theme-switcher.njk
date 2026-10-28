@@ -3,7 +3,13 @@
 	<span aria-hidden="true">{{ "/src/static/i/icons/color-toggle.svg" | svgContents | safe }}</span>
 </button>
 <dialog id="theme-dialog" class="theme-dialog" aria-labelledby="theme-dialog-title">
-	<h2 id="theme-dialog-title">Color theme</h2>
-	<theme-switcher script="/j/theme/dialog.js"></theme-switcher>
+	<theme-switcher class="theme-icons" script="/j/theme/dialog.js">
+		<fieldset>
+			<legend id="theme-dialog-title">Color theme</legend>
+			<label><input type="radio" name="theme" value="system" checked>System</label>
+			<label><input type="radio" name="theme" value="light">Light</label>
+			<label><input type="radio" name="theme" value="dark">Dark</label>
+		</fieldset>
+	</theme-switcher>
 	<button class="theme-dialog__close" type="button" commandfor="theme-dialog" command="close">Close</button>
 </dialog>

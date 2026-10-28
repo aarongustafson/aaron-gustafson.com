@@ -32,10 +32,6 @@
 	overflow: auto;
 	border-radius: 0.5rem;
 
-	h2 {
-		margin-block-start: 0;
-	}
-
 	&__close {
 		display: block;
 		margin-block-start: 1rem;
@@ -43,16 +39,57 @@
 	}
 
 	theme-switcher {
+		font-size: 1rem;
 		--multi-switch-background: var(--theme-background);
 		--multi-switch-color: var(--theme-text);
 		--multi-switch-border: var(--theme-muted);
 		--multi-switch-selected-background: var(--theme-button-background);
 		--multi-switch-selected-color: var(--theme-button-text);
 		--multi-switch-focus-color: var(--theme-link);
+		--multi-switch-padding: 0.5em;
+
+		legend {
+			font-size: 1.375rem;
+		}
 	}
 
-	[data-multi-switch-choice] {
+	[data-multi-switch-choice],
+	[data-multi-switch-label] {
 		margin-block-start: 0;
+	}
+
+	.theme-icons {
+		[data-multi-switch-choice]::before {
+			content: "";
+			inline-size: 1.25em;
+			block-size: 1.25em;
+			flex-shrink: 0;
+			background: currentColor;
+			mask: var(--theme-icon) center / contain no-repeat;
+		}
+
+		[data-value="system"] {
+			--theme-icon: url("/i/icons/theme-system.svg");
+		}
+
+		[data-value="light"] {
+			--theme-icon: url("/i/icons/theme-light.svg");
+		}
+
+		[data-value="dark"] {
+			--theme-icon: url("/i/icons/theme-dark.svg");
+		}
+
+		@media (forced-colors: active) {
+			[data-multi-switch-choice]::before {
+				background: ButtonText;
+				forced-color-adjust: none;
+			}
+
+			[data-selected]::before {
+				background: HighlightText;
+			}
+		}
 	}
 
 	@container multi-switch (inline-size < 20rem) {
