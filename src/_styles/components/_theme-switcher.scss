@@ -32,12 +32,6 @@
 	overflow: auto;
 	border-radius: 0.5rem;
 
-	&__close {
-		display: block;
-		margin-block-start: 1rem;
-		margin-inline-start: auto;
-	}
-
 	theme-switcher {
 		font-size: 1rem;
 		--multi-switch-background: var(--theme-background);
@@ -56,6 +50,11 @@
 	[data-multi-switch-choice],
 	[data-multi-switch-label] {
 		margin-block-start: 0;
+		line-height: 1;
+	}
+
+	[data-multi-switch-choice] {
+		align-items: center;
 	}
 
 	.theme-icons {

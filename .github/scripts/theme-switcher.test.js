@@ -157,7 +157,7 @@ test("theme UI includes a named dialog, native close, and script behavior hook",
 	}
 	assert.match(html, /<theme-switcher class="theme-icons" script="\/j\/theme\/dialog.js">/);
 	assert.doesNotMatch(html, /\bicon-only\b/);
-	assert.match(html, /commandfor="theme-dialog" command="close">Close<\/button>/);
+	assert.match(html, /commandfor="theme-dialog" command="close" aria-label="Close">&times;<\/button>/);
 	assert.doesNotMatch(html, /<form\b/);
 	assert.match(html, /aria-controls="theme-dialog" hidden/);
 });
@@ -214,6 +214,14 @@ test("expanded and minified palettes support System without overriding explicit 
 		assert.match(css, /--multi-switch-selected-background:\s*var\(--theme-button-background\)/);
 		assert.match(css, /#theme-switcher\s*>\s*span\s*\{\s*display:\s*inline-block/);
 		assert.match(css, /\[data-multi-switch-label\]\s*\{\s*margin-block-start:\s*0/);
+		const closeRule = css.match(/dialog button\[command="?close"?\]\s*\{([^}]+)\}/)?.[1];
+		assert.ok(closeRule);
+		assert.match(closeRule, /position:\s*absolute/);
+		assert.match(closeRule, /inset-block-start:\s*0?\.25rem/);
+		assert.match(closeRule, /inset-inline-end:\s*0?\.25rem/);
+		assert.match(closeRule, /min-inline-size:\s*2\.75rem/);
+		assert.match(closeRule, /min-block-size:\s*2\.75rem/);
+		assert.match(css, /\[data-multi-switch-choice\]\s*\{\s*align-items:\s*center/);
 		assert.match(css, /forced-colors:\s*active/);
 		assert.match(css, /forced-color-adjust:\s*none/);
 		for (const theme of ["system", "light", "dark"]) {

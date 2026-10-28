@@ -71,6 +71,13 @@ closes the dialog; Close and Escape dismiss it without changing the preference.
 The authored fieldset legend also provides the dialog's accessible name, without
 a duplicate heading.
 
+For a consistent upper-right dialog close control, use a command button with an
+accessible label. Shared dialog styles reserve space for its 44px target:
+
+```html
+<button type="button" commandfor="dialog-id" command="close" aria-label="Close">&times;</button>
+```
+
 The component owns ongoing theme state and saves the choice under the
 `theme-switcher` localStorage key. A small script before the stylesheet restores
 that preference to avoid a theme flash. When there is no valid new preference,

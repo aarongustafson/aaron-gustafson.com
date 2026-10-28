@@ -42,6 +42,40 @@ dialog:not([open]) {
 	display: none;
 }
 
+dialog:has(button[command="close"]) {
+	padding-block-start: 3.25rem;
+}
+
+dialog button[command="close"] {
+	position: absolute;
+	inset-block-start: 0.25rem;
+	inset-inline-end: 0.25rem;
+	display: grid;
+	place-items: center;
+	box-sizing: border-box;
+	min-inline-size: 2.75rem;
+	min-block-size: 2.75rem;
+	margin: 0;
+	padding: 0.25rem;
+	border: 1px solid transparent;
+	border-radius: 0.25rem;
+	background: transparent;
+	color: inherit;
+	font-size: 1.5rem;
+	line-height: 1;
+
+	&:hover,
+	&:focus-visible {
+		background: var(--theme-button-background, #{$color-dark-teal});
+		color: var(--theme-button-text, #{$color-white});
+	}
+
+	&:focus-visible {
+		outline: 3px solid var(--theme-link, #{$color-link});
+		outline-offset: 2px;
+	}
+}
+
 dialog + .backdrop {
 	position: fixed;
 	top: 0;
