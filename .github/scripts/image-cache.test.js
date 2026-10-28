@@ -111,6 +111,28 @@ function fixture(t) {
 	};
 }
 
+test("talk icon preserves currentColor through optimization and in the static asset", async (t) => {
+	const f = fixture(t);
+	const source = fs.readFileSync(
+		new URL("../../src/_images/icons/keynote.svg", import.meta.url),
+		"utf8",
+	);
+	fs.writeFileSync(f.source, source);
+	await buildImages(f.options);
+	for (const svg of [
+		source,
+		fs.readFileSync(f.outputFile, "utf8"),
+		fs.readFileSync(
+			new URL("../../src/static/i/icons/keynote.svg", import.meta.url),
+			"utf8",
+		),
+	]) {
+		assert.match(svg, /fill="currentColor"/);
+		assert.doesNotMatch(svg, /<style\b|\bstyle=|prefers-color-scheme/);
+		assert.doesNotMatch(svg, /fill="(?:black|#000(?:000)?|#fffcf4)"/i);
+	}
+});
+
 test("warm builds do no optimization, output writes, or cache rewrites", async (t) => {
 	const f = fixture(t);
 	const cold = await buildImages(f.options);
