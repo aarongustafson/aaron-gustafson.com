@@ -103,6 +103,7 @@ search {
 @media screen and (min-width: #{$bp-medium-em}) {
   .form--search {
     background: rgba($color-white, 0.9);
+    background: var(--theme-search-background, #{rgba($color-white, 0.9)});
 
     box-sizing: content-box;
     margin: 0;
@@ -116,9 +117,6 @@ search {
       inline-size: 80vw;
     }
 
-    html.dark-mode & {
-      background: rgba($color-background-dark, 0.9);
-    }
 
     button {
       @include rem(font-size, 22);

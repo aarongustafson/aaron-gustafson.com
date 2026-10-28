@@ -1,0 +1,87 @@
+@use "../helpers/_helpers" as *;
+@use "sass:color";
+
+$promo-background: color.scale(#7fb843, $lightness: 45%);
+
+@mixin dark-palette {
+	color-scheme: dark;
+	--theme-background: #{$color-background-dark};
+	--theme-text: #{$color-text-dark};
+	--theme-muted: #{$color-grey-light};
+	--theme-link: #{$color-link-dark};
+	--theme-link-underline: #{rgba($color-link-dark, 0.25)};
+	--theme-link-hover: #{$color-link-dark-hover};
+	--theme-link-hover-underline: #{rgba($color-link-dark-hover, 0.25)};
+	--theme-tag-background: #{$color-link-dark-hover};
+	--theme-tag-text: #{$color-background-dark};
+	--theme-tag-hover: #{$color-link-dark};
+	--theme-button-background: #{$color-link-dark-hover};
+	--theme-button-text: #{$color-background-dark};
+	--theme-button-hover: #{$color-link-dark};
+	--theme-input-background: #{$color-text-dark-light};
+	--theme-focus-background: #21210d;
+	--theme-focus-text: #ddd;
+	--theme-code-outline: #{$color-off-white};
+	--theme-scrollbar: #{$color-black};
+	--theme-navigation-background: #{$color-teal};
+	--theme-navigation-text: #{$color-background-dark};
+	--theme-navigation-active: #{$color-dark-teal};
+	--theme-promo-background: #{$color-green-dark};
+	--theme-promo-border: #{color.scale($color-green-dark, $lightness: -5%)};
+	--theme-promo-link: #{$color-green-light};
+	--theme-search-background: #{rgba($color-background-dark, 0.9)};
+	--theme-event-meta: #{$color-white};
+	--theme-event-background: #{color.scale($color-green-light, $lightness: -20%)};
+	--theme-event-link-shadow: 1px 1px 1px #{color.scale($color-green-light, $lightness: -50%)};
+	--theme-future-background: #{color.scale($color-teal, $lightness: -20%)};
+	--theme-future-border: #{$color-teal};
+	--theme-carbon-text: #fff;
+	--theme-toggle-border: transparent;
+}
+
+:root {
+	color-scheme: light;
+	--theme-background: #{$color-background};
+	--theme-text: #{$color-text};
+	--theme-muted: #{$color-grey};
+	--theme-link: #{$color-link};
+	--theme-link-underline: #{rgba($color-link, 0.25)};
+	--theme-link-hover: #{$color-link-hover};
+	--theme-link-hover-underline: #{$color-link-hover};
+	--theme-tag-background: #{$color-link-hover};
+	--theme-tag-text: #{$color-white};
+	--theme-tag-hover: #{$color-link};
+	--theme-button-background: #{$color-dark-teal};
+	--theme-button-text: #{$color-white};
+	--theme-button-hover: #{color.scale($color-dark-teal, $lightness: -10%)};
+	--theme-input-background: #{$color-background};
+	--theme-focus-background: #ffff93;
+	--theme-focus-text: #000;
+	--theme-code-outline: #{$color-black};
+	--theme-scrollbar: #{$color-grey-light};
+	--theme-navigation-background: #{$color-green};
+	--theme-navigation-text: #{$color-background};
+	--theme-navigation-active: #{$color-link-hover};
+	--theme-promo-background: #{$promo-background};
+	--theme-promo-border: #{color.scale($promo-background, $lightness: -5%)};
+	--theme-promo-link: #14440e;
+	--theme-search-background: #{rgba($color-white, 0.9)};
+	--theme-event-meta: #{$color-off-white};
+	--theme-event-background: #{$color-green-dark};
+	--theme-event-link-shadow: inherit;
+	--theme-future-background: #{$color-dark-teal};
+	--theme-future-border: #{$color-dark-teal};
+	--theme-carbon-text: #2c2825;
+	--theme-toggle-border: #{$color-white};
+}
+
+@media (prefers-color-scheme: dark) {
+	:root:not([data-theme]),
+	:root[data-theme="system"] {
+		@include dark-palette;
+	}
+}
+
+:root[data-theme="dark"] {
+	@include dark-palette;
+}

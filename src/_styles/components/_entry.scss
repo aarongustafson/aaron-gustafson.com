@@ -18,11 +18,9 @@ Blog Entry
 	&__meta {
 		@include rem(font-size, $font-size-small);
 		color: $color-grey;
+		color: var(--theme-muted, #{$color-grey});
 		padding: 0;
 
-		html.dark-mode & {
-			color: $color-grey-light;
-		}
 
 		dl {
 			padding: 0;

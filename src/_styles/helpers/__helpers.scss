@@ -230,14 +230,11 @@ Mixins
 // Big focus
 @mixin big-focus() {
 	background: #ffff93;
+	background: var(--theme-focus-background, #ffff93);
 	outline: 15px solid #ffff93;
+	outline-color: var(--theme-focus-background, #ffff93);
 	color: #000;
-
-	html.dark-mode & {
-		background: #21210d;
-		outline: 15px solid #21210d;
-		color: #ddd;
-	}
+	color: var(--theme-focus-text, #000);
 }
 
 // REM values

@@ -53,6 +53,7 @@ pre {
 
 	&:focus {
 		outline: 3px double $color-black;
+		outline-color: var(--theme-code-outline, #{$color-black});
 		overflow-x: scroll;
 
 		@supports (margin-block: 1em) {
@@ -60,9 +61,6 @@ pre {
 			overflow-inline: scroll;
 		}
 
-		html.dark-mode & {
-			outline-color: $color-off-white;
-		}
 	}
 
 	code {

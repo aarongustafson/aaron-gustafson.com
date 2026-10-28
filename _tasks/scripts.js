@@ -20,6 +20,30 @@ const dist = `${config.destination}/j`;
 const isWatch = process.argv.includes("watch");
 const form_saver_source = "node_modules/@aarongustafson/form-saver";
 
+export async function copyThemeModules({
+	packages = "node_modules/@aarongustafson",
+	source = path.join(source_folder, "theme"),
+	outputs = [destination_folder, dist],
+} = {}) {
+	for (const [directory, name] of [
+		[path.join(packages, "theme-switcher"), "theme-switcher"],
+		[path.join(packages, "form-multi-switch"), "form-multi-switch"],
+		[source, "theme"],
+	]) {
+		const files = await fs.promises.readdir(directory, { withFileTypes: true });
+		for (const output of outputs) {
+			const target = path.join(output, name);
+			await fs.promises.mkdir(target, { recursive: true });
+			for (const file of files.filter((entry) => entry.isFile() && entry.name.endsWith(".js"))) {
+				await fs.promises.copyFile(
+					path.join(directory, file.name),
+					path.join(target, file.name),
+				);
+			}
+		}
+	}
+}
+
 function getFolders(dir) {
 	return fs.readdirSync(dir).filter(function (file) {
 		return fs.statSync(path.join(dir, file)).isDirectory();
@@ -44,12 +68,13 @@ const copyFormSaver = () =>
 // Optimized scripts function with better caching
 const scripts = async () => {
 	await copyFormSaver();
+	await copyThemeModules();
 
 	const folders = getFolders(source_folder);
 
 	for (const folder of folders
 		// Exclude serviceworker folder as it has its own dedicated task
-		.filter((folder) => folder !== "serviceworker")) {
+		.filter((folder) => !["serviceworker", "theme"].includes(folder))) {
 		await new Promise((resolve, reject) => {
 			const folderPath = path.join(source_folder, folder);
 			const outputFile = folder + ".js";

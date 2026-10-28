@@ -37,12 +37,8 @@ Navigation
 	&__link:active,
 	mark &__link {
 		background-color: $color-link-hover;
+		background-color: var(--theme-navigation-active, #{$color-link-hover});
 		color: $color-white;
-
-		html.dark-mode & {
-			background-color: $color-dark-teal;
-			color: $color-white;
-		}
 	}
 
 	// no search needed on small screens
@@ -90,7 +86,9 @@ Navigation
 @media screen and (min-width: #{$bp-medium-em}) {
 	[role="navigation"] {
 		background: $color-green;
+		background: var(--theme-navigation-background, #{$color-green});
 		color: $color-background;
+		color: var(--theme-navigation-text, #{$color-background});
 
 		padding-bottom: 0;
 
@@ -112,22 +110,12 @@ Navigation
 			color: inherit;
 		}
 
-		html.dark-mode & {
-			background: $color-teal;
-			color: $color-background-dark;
-
-			a:link,
-			a:visited {
-				color: $color-background-dark;
-			}
-
-			a:hover,
-			a:focus,
-			a:active,
-			mark a:link,
-			mark a:visited {
-				color: $color-white;
-			}
+		a:hover,
+		a:focus,
+		a:active,
+		mark a:link,
+		mark a:visited {
+			color: $color-white;
 		}
 	}
 

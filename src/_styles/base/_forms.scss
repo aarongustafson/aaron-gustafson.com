@@ -69,6 +69,7 @@ form {
 		input,
 		textarea {
 			background: $color-background;
+			background: var(--theme-input-background, #{$color-background});
 			color: $color-text;
 
 			display: block;
@@ -81,11 +82,9 @@ form {
 
 			&:focus {
 				background: $color-text-dark;
+				background: var(--theme-input-background, #{$color-text-dark});
 			}
 
-			html.dark-mode & {
-				background: $color-text-dark-light;
-			}
 		}
 
 		textarea {

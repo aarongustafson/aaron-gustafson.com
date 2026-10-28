@@ -16,6 +16,7 @@
 
 		&__meta {
 			color: $color-text-light;
+			color: var(--theme-muted, #{$color-text-light});
 			@extend %small-caps;
 			@include rem(margin, 2 0 0);
 
@@ -25,9 +26,6 @@
 				margin-inline: 0;
 			}
 
-			html.dark-mode & {
-				color: $color-text-dark-light;
-			}
 		}
 
 		&__description {

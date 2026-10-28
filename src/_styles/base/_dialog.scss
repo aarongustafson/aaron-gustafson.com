@@ -16,17 +16,15 @@ dialog {
 	border: 1px solid $color-background;
 	padding: 1em;
 	background: $color-background;
+	background: var(--theme-background, #{$color-background});
 	color: $color-text;
+	color: var(--theme-text, #{$color-text});
 	display: block;
 
 	&::backdrop {
 		background: rgba(0, 0, 0, 0.6);
 	}
 
-	html.dark-mode & {
-		background: $color-background-dark;
-		color: $color-text-dark;
-	}
 
 	@supports (margin-block: 1em) {
 		@include unset(left right width height margin);

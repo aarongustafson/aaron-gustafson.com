@@ -2,41 +2,67 @@
 
 #theme-switcher {
 	position: fixed;
-	top: 5px;
-	right: 5px;
+	inset-block-start: 5px;
+	inset-inline-end: 5px;
 	z-index: 100;
 	line-height: 0.5;
+	margin: 0;
 	padding: 8px;
-	border: 1px solid $color-white;
+	border: 1px solid var(--theme-toggle-border, #{$color-white});
 
-	@supports (margin-block: 1em) {
-		@include unset(top right padding);
-		@include rem(inset-block-start, 5px, false);
-		@include rem(inset-inline-end, 5px, false);
-		@include rem(padding-block, 8px, false);
-		@include rem(padding-inline, 8px, false);
-	}
-
-	html.dark-mode & {
-		border-color: transparent;
+	> span {
+		display: inline-block;
 	}
 
 	svg {
-		width: 20px;
-		height: 20px;
+		display: block;
+		margin: 0;
+		inline-size: 20px;
+		block-size: 20px;
+	}
+}
 
-		@supports (inline-size: 1em) {
-			@include unset(width height);
-			inline-size: 20px;
-			block-size: 20px;
+.theme-dialog {
+	position: fixed;
+	inset-block: 0;
+	box-sizing: border-box;
+	inline-size: 28rem;
+	max-inline-size: calc(100% - 2rem);
+	max-block-size: calc(100% - 2rem);
+	overflow: auto;
+	border-radius: 0.5rem;
+
+	h2 {
+		margin-block-start: 0;
+	}
+
+	&__close {
+		display: block;
+		margin-block-start: 1rem;
+		margin-inline-start: auto;
+	}
+
+	theme-switcher {
+		--multi-switch-background: var(--theme-background);
+		--multi-switch-color: var(--theme-text);
+		--multi-switch-border: var(--theme-muted);
+		--multi-switch-selected-background: var(--theme-button-background);
+		--multi-switch-selected-color: var(--theme-button-text);
+		--multi-switch-focus-color: var(--theme-link);
+	}
+
+	[data-multi-switch-choice] {
+		margin-block-start: 0;
+	}
+
+	@container multi-switch (inline-size < 20rem) {
+		[data-multi-switch-choice]:not([data-first]) {
+			margin-block-start: -1px;
 		}
 	}
 
-	path {
-		fill: $color-white;
-
-		html.dark-mode & {
-			fill: $color-black;
-		}
+	:focus-visible {
+		outline: 3px solid currentColor;
+		outline-offset: 3px;
 	}
 }

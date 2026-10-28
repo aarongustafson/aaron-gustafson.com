@@ -40,7 +40,9 @@ body {
 	@extend %font-smoothing;
 
 	background: $color-background;
+	background: var(--theme-background, #{$color-background});
 	color: $color-text;
+	color: var(--theme-text, #{$color-text});
 
 	font-family: $font-stack-body;
 	font-weight: $font-weight-sansserif;
@@ -57,8 +59,4 @@ body {
 		block-size: 100%;
 	}
 
-	html.dark-mode & {
-		background: $color-background-dark;
-		color: $color-text-dark;
-	}
 }

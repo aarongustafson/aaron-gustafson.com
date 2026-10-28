@@ -61,6 +61,40 @@ open them for editing:
 | `npm run netlify:dev` | Runs the site through Netlify Dev when local testing requires Netlify behavior.                                                            |
 | `npm run serve`       | Serves the existing `dist` directory at `http://127.0.0.1:8888` without rebuilding it.                                                     |
 
+## Theme preferences
+
+The color-theme button opens a native dialog containing
+[`@aarongustafson/theme-switcher`](https://www.npmjs.com/package/@aarongustafson/theme-switcher).
+Its default choices are System, Light, and Dark. A user-driven theme change
+closes the dialog; Close and Escape dismiss it without changing the preference.
+
+The component owns ongoing theme state and saves the choice under the
+`theme-switcher` localStorage key. A small script before the stylesheet restores
+that preference to avoid a theme flash. When there is no valid new preference,
+it migrates the former `darkmode=true/false` cookie to Dark/Light. The cookie is
+removed only after the new preference is verified in storage. If storage is
+blocked, the old choice still applies for the current page and the cookie is
+retained for another visit; errors are reported in the console.
+
+Theme colors are semantic CSS custom properties in
+[`src/_styles/base/_theme.scss`](src/_styles/base/_theme.scss), selected through
+`html[data-theme]`. System follows `prefers-color-scheme`; an explicit Light or
+Dark choice takes precedence. Without JavaScript, the page follows the OS and
+the inactive chooser stays hidden.
+
+The script task copies both the theme-switcher and form-multi-switch npm modules
+to local assets, alongside the site integration modules in
+[`src/_javascript/theme/`](src/_javascript/theme/). The base layout supplies the
+import map. These ES modules are copied without legacy concatenation/minification;
+no external component CDN is required. The component's `script` attribute loads
+the small dialog behavior module using its abortable initializer contract.
+
+Run the focused integration tests with:
+
+```sh
+node --test .github/scripts/theme-switcher.test.js
+```
+
 ## Checking content and code
 
 | Command                        | What it does                                                                                                                            |

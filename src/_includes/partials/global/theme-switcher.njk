@@ -1,0 +1,9 @@
+<button id="theme-switcher" type="button" commandfor="theme-dialog" command="show-modal"
+	aria-label="Choose a color theme" aria-haspopup="dialog" aria-controls="theme-dialog" hidden>
+	<span aria-hidden="true">{{ "/src/static/i/icons/color-toggle.svg" | svgContents | safe }}</span>
+</button>
+<dialog id="theme-dialog" class="theme-dialog" aria-labelledby="theme-dialog-title">
+	<h2 id="theme-dialog-title">Color theme</h2>
+	<theme-switcher script="/j/theme/dialog.js"></theme-switcher>
+	<button class="theme-dialog__close" type="button" commandfor="theme-dialog" command="close">Close</button>
+</dialog>

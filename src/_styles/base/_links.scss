@@ -17,7 +17,9 @@ a {
 	&:link,
 	&:visited {
 		color: $color-link;
+		color: var(--theme-link, #{$color-link});
 		text-decoration-color: rgba($color-link, 0.25);
+		text-decoration-color: var(--theme-link-underline, #{rgba($color-link, 0.25)});
 
 		cursor: pointer;
 
@@ -26,22 +28,15 @@ a {
 			color $default-transition,
 			background-color $default-transition;
 
-		html.dark-mode & {
-			color: $color-link-dark;
-			text-decoration-color: rgba($color-link-dark, 0.25);
-		}
 	}
 
 	&:hover,
 	&:focus,
 	&:active {
 		color: $color-link-hover;
+		color: var(--theme-link-hover, #{$color-link-hover});
 		text-decoration-color: $color-link-hover;
-
-		html.dark-mode & {
-			color: $color-link-dark-hover;
-			text-decoration-color: rgba($color-link-dark-hover, 0.25);
-		}
+		text-decoration-color: var(--theme-link-hover-underline, #{$color-link-hover});
 	}
 
 	&:focus-visible {
@@ -50,8 +45,10 @@ a {
 
 	&[rel="tag"] {
 		background: $color-link-hover;
+		background: var(--theme-tag-background, #{$color-link-hover});
 		border-radius: 5px;
 		color: $color-white;
+		color: var(--theme-tag-text, #{$color-white});
 		leading-trim: both;
 		line-height: 2;
 		padding: 3px 7px;
@@ -62,16 +59,7 @@ a {
 		&:hover,
 		&:focus {
 			background-color: $color-link;
-		}
-
-		html.dark-mode & {
-			background-color: $color-link-dark-hover;
-			color: $color-background-dark;
-
-			&:hover,
-			&:focus {
-				background-color: $color-link-dark;
-			}
+			background-color: var(--theme-tag-hover, #{$color-link});
 		}
 	}
 

@@ -4,6 +4,7 @@
 * {
 	scrollbar-width: auto;
 	scrollbar-color: $color-grey-light transparent;
+	scrollbar-color: var(--theme-scrollbar, #{$color-grey-light}) transparent;
 }
 
 /* Chrome, Edge, and Safari */
@@ -24,8 +25,4 @@
 	background-color: $color-grey-light;
 	border-radius: 6px;
 	border: 0px solid transparent;
-}
-
-html.dark-mode * {
-	scrollbar-color: $color-black transparent;
 }
