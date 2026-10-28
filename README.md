@@ -65,7 +65,7 @@ open them for editing:
 
 | Command                        | What it does                                                                                                                            |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| `npm run prose:fix`            | Rewrites drafts and posts to use the project’s preferred typographic punctuation. Review the resulting changes before committing them.  |
+| `npm run prose:fix`            | Rewrites drafts and posts to use the project’s preferred typographic punctuation, preserving code, template syntax, and HTML/Markdown attributes. Review the resulting changes before committing them. |
 | `npm run prose:check`          | Checks drafts and posts for punctuation that `prose:fix` would change, without modifying files. This check also runs in GitHub Actions. |
 | `npm run markdown:check`       | Validates Markdown and frontmatter throughout `src`.                                                                                    |
 | `npm run metadata:check`       | Reports advisory search and social metadata length issues without failing the build.                                                    |
