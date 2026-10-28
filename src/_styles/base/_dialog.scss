@@ -43,7 +43,7 @@ dialog:not([open]) {
 }
 
 dialog:has(button[command="close"]) {
-	padding-block-start: 3.25rem;
+	padding-block-start: 1.25rem;
 }
 
 dialog button[command="close"] {
