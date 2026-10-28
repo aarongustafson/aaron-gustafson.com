@@ -8,7 +8,6 @@ import * as sass from "sass";
 import CleanCSS from "clean-css";
 import nunjucks from "nunjucks";
 import { copyThemeModules } from "../../_tasks/scripts.js";
-import { initialize } from "../../src/_javascript/theme/dialog.js";
 
 const bootstrap = fs.readFileSync(
 	new URL("../../src/_includes/partials/global/theme-preference.js", import.meta.url),
@@ -105,41 +104,7 @@ test("blocked stores are explicit and fall back to System when no preference can
 	assert.ok(result.warnings.length > 0);
 });
 
-test("dialog behavior closes only for user changes and cleans up on abort", () => {
-	const element = new EventTarget();
-	const dialog = { open: true, calls: 0, close() { this.open = false; this.calls++; } };
-	element.closest = selector => {
-		assert.equal(selector, "dialog");
-		return dialog;
-	};
-	const controller = new AbortController();
-	initialize(element, { signal: controller.signal });
-	function change(source) {
-		element.dispatchEvent(new CustomEvent("theme-switcher:change", { detail: { source } }));
-	}
-	for (const source of ["initial", "system", "storage", "sync", "api", "reset", "configuration"]) {
-		change(source);
-		assert.equal(dialog.open, true);
-	}
-	change("user");
-	assert.equal(dialog.open, false);
-	assert.equal(dialog.calls, 1);
-	change("user");
-	assert.equal(dialog.calls, 1);
-	dialog.open = true;
-	controller.abort();
-	change("user");
-	assert.equal(dialog.open, true);
-});
-
-test("dialog behavior rejects placement outside a dialog", () => {
-	assert.throws(
-		() => initialize({ closest: () => null }, { signal: new AbortController().signal }),
-		/must be inside a dialog/,
-	);
-});
-
-test("theme UI includes a named dialog, native close, and script behavior hook", () => {
+test("theme UI includes a named dialog and explicit close without change-dismissal hooks", () => {
 	const source = fs.readFileSync(
 		new URL("../../src/_includes/partials/global/theme-switcher.njk", import.meta.url),
 		"utf8",
@@ -155,7 +120,8 @@ test("theme UI includes a named dialog, native close, and script behavior hook",
 	for (const theme of ["system", "light", "dark"]) {
 		assert.ok(html.includes(`name="theme" value="${theme}"`));
 	}
-	assert.match(html, /<theme-switcher class="theme-icons" script="\/j\/theme\/dialog.js">/);
+	assert.match(html, /<theme-switcher class="theme-icons">/);
+	assert.doesNotMatch(html, /<theme-switcher\b[^>]*\bscript=/);
 	assert.doesNotMatch(html, /\bicon-only\b/);
 	assert.match(html, /commandfor="theme-dialog" command="close" aria-label="Close">&times;<\/button>/);
 	assert.doesNotMatch(html, /<form\b/);
@@ -185,13 +151,13 @@ test("module copies preserve ES imports and repair missing outputs on repeated b
 			fs.readFileSync(path.join(output, "theme-switcher/theme-switcher.js")),
 			fs.readFileSync(source),
 		);
-		for (const file of ["theme/init.js", "theme/dialog.js", "form-multi-switch/index.js", "form-multi-switch/form-multi-switch.js", "theme-switcher/define.js"]) {
+		for (const file of ["theme/init.js", "form-multi-switch/index.js", "form-multi-switch/form-multi-switch.js", "theme-switcher/define.js"]) {
 			assert.ok(fs.existsSync(path.join(output, file)));
 		}
 	}
-	fs.unlinkSync(path.join(outputs[1], "theme/dialog.js"));
+	fs.unlinkSync(path.join(outputs[1], "theme/init.js"));
 	await copyThemeModules({ outputs });
-	assert.ok(fs.existsSync(path.join(outputs[1], "theme/dialog.js")));
+	assert.ok(fs.existsSync(path.join(outputs[1], "theme/init.js")));
 	await assert.rejects(copyThemeModules({ packages: path.join(root, "missing"), outputs }), /ENOENT/);
 });
 

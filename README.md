@@ -66,13 +66,14 @@ open them for editing:
 The color-theme button opens a native dialog containing
 [`@aarongustafson/theme-switcher`](https://www.npmjs.com/package/@aarongustafson/theme-switcher).
 Its default choices are System, Light, and Dark, with the demo's decorative
-monitor, sun, and moon icons alongside the visible labels. A user-driven theme change
-closes the dialog; Close and Escape dismiss it without changing the preference.
+monitor, sun, and moon icons alongside the visible labels. Theme changes apply
+immediately without closing the dialog, so keyboard users can explore the choices.
+Close and Escape dismiss it without reverting the selected preference.
 The authored fieldset legend also provides the dialog's accessible name, without
 a duplicate heading.
 
 For a consistent upper-right dialog close control, use a command button with an
-accessible label. Shared dialog styles reserve space for its 44px target:
+accessible label. Shared dialog styles position the control and provide a 44px target:
 
 ```html
 <button type="button" commandfor="dialog-id" command="close" aria-label="Close">&times;</button>
@@ -96,8 +97,7 @@ The script task copies both the theme-switcher and form-multi-switch npm modules
 to local assets, alongside the site integration modules in
 [`src/_javascript/theme/`](src/_javascript/theme/). The base layout supplies the
 import map. These ES modules are copied without legacy concatenation/minification;
-no external component CDN is required. The component's `script` attribute loads
-the small dialog behavior module using its abortable initializer contract.
+no external component CDN is required.
 
 Run the focused integration tests with:
 
