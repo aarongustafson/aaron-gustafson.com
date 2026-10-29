@@ -107,6 +107,13 @@ node --test .github/scripts/theme-switcher.test.js
 
 ## Checking content and code
 
+The service worker versions its long-lived cache from built CSS, JavaScript
+(including local component modules), and worker source—not posts or other HTML.
+It fetches a complete fresh asset set before offering the refresh banner.
+Cached HTML is refreshed silently in the background for the next visit, subject
+to the existing data-saving settings. Run the cache and bundle regression tests
+with `node --test .github/scripts/serviceworker.test.js .github/scripts/scripts-build.test.js`.
+
 | Command                        | What it does                                                                                                                            |
 | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
 | `npm run prose:fix`            | Rewrites drafts and posts to use the project’s preferred typographic punctuation, preserving code, template syntax, and HTML/Markdown attributes. Review the resulting changes before committing them. |

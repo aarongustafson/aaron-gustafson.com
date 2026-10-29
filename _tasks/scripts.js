@@ -2,7 +2,6 @@
 import fs from "fs";
 import gulp from "gulp";
 import concat from "gulp-concat";
-import newer from "gulp-newer";
 import rename from "gulp-rename";
 import composer from "gulp-uglify/composer.js";
 import path from "path";
@@ -65,7 +64,6 @@ const copyFormSaver = () =>
 			.on("error", reject);
 	});
 
-// Optimized scripts function with better caching
 const scripts = async () => {
 	await copyFormSaver();
 	await copyThemeModules();
@@ -80,13 +78,7 @@ const scripts = async () => {
 			const outputFile = folder + ".js";
 			const outputMin = folder + ".min.js";
 
-			// Check if any source files are newer than output
-			const destPath = path.join(destination_folder, outputFile);
-
 			let stream = src(path.join(folderPath, "*.js"))
-				// Only process if source files are newer than destination
-				.pipe(newer(destPath))
-
 				// Concatenate files
 				.pipe(concat(outputFile))
 
