@@ -1,5 +1,19 @@
 [
   {
+    "id": 169,
+    "title": "axe-con",
+    "date": "2027-02-23 00:09:00 +0000",
+    "location": "Online",
+    "url": "https://www.deque.com/axe-con/"
+  },
+  {
+    "id": 168,
+    "title": "CSUN Assistive Technology Conference",
+    "date": "2027-03-08 00:09:00 +0000",
+    "location": "Anaheim, CA USA",
+    "url": "https://conference.csun.at/event/2027/"
+  },
+  {
     "id": 167,
     "title": "Microsoft Ignite",
     "date": "2026-11-17 00:09:00 +0000",

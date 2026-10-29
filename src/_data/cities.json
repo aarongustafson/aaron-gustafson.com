@@ -6,6 +6,12 @@
 		"credit_url": "http://commons.wikimedia.org/wiki/File:Albanyskylineclouds.jpg"
 	},
 	{
+		"name": "Anaheim, CA USA",
+		"photo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Anaheimcityhall.jpg/960px-Anaheimcityhall.jpg",
+		"credit_name": "Buchanan-Hermit",
+		"credit_url": "https://commons.wikimedia.org/wiki/File:Anaheimcityhall.jpg"
+	},
+	{
 		"name": "Amsterdam, Netherlands",
 		"photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Bridges%2C_Amsterdam%2C_Netherlands.jpg/400px-Bridges%2C_Amsterdam%2C_Netherlands.jpg",
 		"credit_name": "David Spender",
