@@ -16,29 +16,46 @@ const source_folder = `${config.source}/_javascript/serviceworker`;
 const destination_folder = `${config.static}`;
 const dist = `${config.destination}/`;
 
-const hashDirectory = (hash, directory, extensions) => {
+const assetFiles = (directory, extensions, root = directory) => {
 	const entries = fs
 		.readdirSync(directory, { withFileTypes: true })
 		.sort((a, b) => a.name.localeCompare(b.name));
 
-	for (const entry of entries) {
+	return entries.flatMap((entry) => {
 		const entryPath = path.join(directory, entry.name);
 
 		if (entry.isDirectory()) {
-			hashDirectory(hash, entryPath, extensions);
+			return assetFiles(entryPath, extensions, root);
 		} else if (extensions.includes(path.extname(entry.name))) {
-			hash.update(entryPath);
-			hash.update(fs.readFileSync(entryPath));
+			return [path.relative(root, entryPath).split(path.sep).join("/")];
 		}
-	}
+		return [];
+	});
 };
 
-const getAssetVersion = () => {
+export const getPreinstallAssets = (assets = config.static) =>
+	["c", "j"].flatMap((directory) =>
+		assetFiles(path.join(assets, directory), [".css", ".js"]).map(
+			(file) => `/${directory}/${file}`,
+		),
+	);
+
+export const getAssetVersion = ({
+	worker = source_folder,
+	assets = config.static,
+} = {}) => {
 	const hash = crypto.createHash("sha256");
 
-	hashDirectory(hash, source_folder, [".js"]);
-	hashDirectory(hash, path.join(config.static, "c"), [".css"]);
-	hashDirectory(hash, path.join(config.static, "j"), [".js"]);
+	for (const [label, directory, extensions] of [
+		["worker", worker, [".js"]],
+		["c", path.join(assets, "c"), [".css"]],
+		["j", path.join(assets, "j"), [".js"]],
+	]) {
+		for (const file of assetFiles(directory, extensions)) {
+			hash.update(`${label}/${file}\0`);
+			hash.update(fs.readFileSync(path.join(directory, file)));
+		}
+	}
 
 	return hash.digest("hex").slice(0, 16);
 };
@@ -51,6 +68,7 @@ const sw = () => {
 			// make a file from the folder
 			.pipe(concat("serviceworker.js"))
 			.pipe(replace("{{ VERSION }}", version))
+			.pipe(replace('"{{ ASSETS }}"', JSON.stringify(getPreinstallAssets())))
 			.pipe(dest(destination_folder))
 			.pipe(dest(dist))
 			// make & write minified version

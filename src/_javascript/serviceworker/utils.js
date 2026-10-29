@@ -1,18 +1,18 @@
 function saveToCache(cache_name, request, response) {
 	// console.log( 'saving a copy of', request.url );
-	caches.open(cache_name).then((cache) => {
+	return caches.open(cache_name).then((cache) => {
 		return cache.put(request, response);
 	});
 }
 
 function refreshCachedCopy(the_request, cache_name) {
-	fetch(the_request)
+	return fetch(the_request, { cache: "no-cache" })
 		.then((the_response) => {
-			caches.open(cache_name).then((the_cache) => {
-				return the_cache.put(the_request, the_response);
-			});
+			if (the_response.ok) {
+				return saveToCache(cache_name, the_request, the_response);
+			}
 		})
-		.catch(respondWithOfflinePage);
+		.catch(() => {});
 }
 
 function shouldBeIgnored(url) {

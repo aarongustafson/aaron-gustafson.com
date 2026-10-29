@@ -10,10 +10,8 @@ const version = "v{{ VERSION }}:",
 		fallback_avatar,
 		fallback_image,
 		offline_image,
-		// CSS
-		"/c/advanced.min.css",
-		// JavaScript
-		"/j/main.min.js",
+		// Built CSS and JavaScript, including imported modules
+		..."{{ ASSETS }}",
 		// Offline
 		offline_page,
 	],

@@ -42,60 +42,23 @@ self.addEventListener("fetch", (event) => {
 		);
 	}
 
-	// CSS - stale-while-revalidate
-	else if (/\.css$/.test(url) && isHighPriority(url)) {
+	// Keep CSS and JavaScript together in the installed asset version.
+	else if (/\.(css|js)$/.test(new URL(url).pathname) && isHighPriority(url)) {
 		event.respondWith(
-			caches.match(request).then((cached_result) => {
-				// cached first
-				if (cached_result) {
-					// Update the cache in the background, but only if we're not trying to save data
-					if (!save_data && !slow_connection) {
-						event.waitUntil(refreshCachedCopy(request, sw_caches.static.name));
-					}
-					return cached_result;
-				}
-				// fallback to network
-				return (
-					fetch(request)
-						.then((response) => {
-							const copy = response.clone();
-							event.waitUntil(
-								saveToCache(sw_caches.static.name, request, copy),
-							);
-							return response;
-						})
-						// fallback to offline page
-						.catch(respondWithServerOffline)
-				);
-			}),
-		);
-	}
+			caches.open(sw_caches.static.name).then(async (cache) => {
+				const cached_result = await cache.match(request);
+				if (cached_result) return cached_result;
 
-	// JavaScript - stale-while-revalidate
-	else if (/\.js$/.test(url) && isHighPriority(url)) {
-		event.respondWith(
-			caches.match(request).then((cached_result) => {
-				// cached first
-				if (cached_result) {
-					// Update the cache in the background, but only if we're not trying to save data
-					if (!save_data && !slow_connection) {
-						event.waitUntil(refreshCachedCopy(request, sw_caches.static.name));
-					}
-					return cached_result;
-				}
-				// fallback to network
-				return (
-					fetch(request)
-						.then((response) => {
-							const copy = response.clone();
+				return fetch(request, { cache: "reload" })
+					.then((response) => {
+						if (response.ok) {
 							event.waitUntil(
-								saveToCache(sw_caches.static.name, request, copy),
+								saveToCache(sw_caches.static.name, request, response.clone()),
 							);
-							return response;
-						})
-						// fallback to offline page
-						.catch(respondWithServerOffline)
-				);
+						}
+						return response;
+					})
+					.catch(respondWithServerOffline);
 			}),
 		);
 	}
@@ -129,56 +92,35 @@ self.addEventListener("fetch", (event) => {
 
 	// HTML
 	else if (
-		request.headers.get("Accept").includes("text/html") ||
+		(request.headers.get("Accept") || "").includes("text/html") ||
 		requestIsLikelyForHTML(url)
 	) {
-		// notebook entries - cache first, then network (posts will be saved for offline individually), offline fallback
-		if (sw_caches.posts.path.test(url)) {
-			event.respondWith(
-				caches.match(request).then((cached_result) => {
-					// cached first
-					if (cached_result) {
-						// Update the cache in the background, but only if we’re not trying to save data
-						if (!save_data && !slow_connection) {
-							event.waitUntil(refreshCachedCopy(request, sw_caches.posts.name));
-						}
-						return cached_result;
+		const isPost = sw_caches.posts.path.test(url);
+		const cacheName = isPost ? sw_caches.posts.name : sw_caches.pages.name;
+		event.respondWith(
+			caches.match(request).then((cached_result) => {
+				if (cached_result) {
+					if (!save_data && !slow_connection) {
+						event.waitUntil(refreshCachedCopy(request, cacheName));
 					}
-					// fallback to network
-					return (
-						fetch(request)
-							// fallback to offline page
-							.catch(respondWithOfflinePage)
-					);
-				}),
-			);
-		}
+					return cached_result;
+				}
 
-		// all other pages - check the network &  cache response, then cache, offline fallback
-		else {
-			event.respondWith(
-				// network first, then cache the result
-				fetch(request)
+				return fetch(request, { cache: "no-cache" })
 					.then((response) => {
-						const copy = response.clone();
-						event.waitUntil(saveToCache(sw_caches.pages.name, request, copy)); // end waitUntil
+						// Posts are saved for offline reading individually.
+						if (!isPost && response.ok) {
+							event.waitUntil(saveToCache(cacheName, request, response.clone()));
+						}
 						return response;
 					})
-					// fallback to offline page
-					.catch(() => {
-						return caches
-							.match(request)
-							.then((cached_result) => {
-								return cached_result;
-							})
-							.catch(respondWithOfflinePage);
-					}),
-			);
-		}
+					.catch(respondWithOfflinePage);
+			}),
+		);
 	}
 
 	// images - cache first, then determine if we should request form the network & cache, fallbacks
-	else if (request.headers.get("Accept").includes("image")) {
+	else if ((request.headers.get("Accept") || "").includes("image")) {
 		event.respondWith(
 			// check the cache first
 			caches.match(request).then((cached_result) => {
