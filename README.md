@@ -4,6 +4,30 @@ You can view it at [aaron-gustafson.com](https://www.aaron-gustafson.com).
 
 ## Getting started
 
+### Dev container
+
+Open the repository in VS Code and run **Dev Containers: Rebuild and Reopen in
+Container**. The container uses Node.js 26 LTS on Debian Trixie, runs editor
+commands as the non-root `node` user, and includes GitHub CLI and Git LFS.
+The image tag tracks patch updates; periodically use **Dev Containers: Rebuild
+Container Without Cache** to pick up newer image and tool releases.
+
+Git LFS hooks are installed for this repository without overwriting existing
+hooks. LFS files are not automatically downloaded; run `git lfs pull` when needed.
+If hook setup reports a conflict, reconcile the existing hook before retrying.
+Dependencies are installed manually with `npm ci` after creating the container.
+
+Preview ports 8080 (Eleventy) and 8888 (static preview / Netlify Dev) are forwarded
+to localhost. Keep Codespaces port visibility **Private**; do not make previews
+public unless you intend to share them. No privileged mode or Docker socket
+access is requested. This is a development environment, not a sandbox for
+untrusted code; the base image still provides `sudo`.
+
+The dev container does not change the separately configured CI or Netlify
+Node.js versions.
+
+### Local setup
+
 Install the project dependencies:
 
 ```sh

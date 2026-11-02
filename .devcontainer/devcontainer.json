@@ -1,25 +1,30 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
 {
-	"name": "Node.js",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
-	"postCreateCommand": "command -v git-lfs >/dev/null 2>&1 || (sudo apt-get update && sudo apt-get install -y git-lfs); git lfs install --force",
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
+	"name": "aaron-gustafson.com",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:5-26-trixie",
+	"remoteUser": "node",
 	"features": {
-  		"ghcr.io/devcontainers/features/github-cli:1": {}
-	}//,
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
-
-	// Configure tool-specific properties.
-	// "customizations": {},
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+		"ghcr.io/devcontainers/features/github-cli:1": {},
+		"ghcr.io/devcontainers/features/git-lfs:1": {
+			"autoPull": false
+		}
+	},
+	"postCreateCommand": "git lfs install --local",
+	"forwardPorts": [8080, 8888],
+	"portsAttributes": {
+		"8080": {
+			"label": "Eleventy",
+			"onAutoForward": "notify"
+		},
+		"8888": {
+			"label": "Static preview / Netlify Dev",
+			"onAutoForward": "notify"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"remote.localPortHost": "localhost"
+			}
+		}
+	}
 }
