@@ -24,6 +24,12 @@
       "checked_at": "2026-10-25",
       "result": "Workflows use current action majors except prose-check (checkout/setup-node v4); low value",
       "follow_up": null
+    },
+    {
+      "area": "performance",
+      "checked_at": "2026-11-04",
+      "result": "No actionable perf work identified",
+      "follow_up": null
     }
   ],
   "completed_actions": [],
