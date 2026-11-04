@@ -138,11 +138,13 @@ total_webmentions > 0 %}
 						alt="{{ hero.alt }}"
 						style="view-transition-name: {{ transition_root }}-hero;{% if hero.offset %} margin-top: -{{ hero.offset }}px;{% endif %}"
 					/>
+					{% if hero.credit and hero.credit | trim %}
 					<figcaption class="entry__hero__credit">
 						Credit: {% if hero.url %}
 						<a href="{{ hero.url }}">{{ hero.credit }}</a>
 						{% else %} {{ hero.credit }} {% endif %}
 					</figcaption>
+					{% endif %}
 				</figure>
 				{% endif %} {{ content | safe }} {% if url %}
 				<p class="entry__source">
