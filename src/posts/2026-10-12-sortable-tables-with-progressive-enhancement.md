@@ -14,6 +14,9 @@ tags:
 description: "My table-sortable web component adds accessible, customizable sorting to ordinary HTML tables while keeping their core structure and semantics intact."
 twitter_text: "Need sortable tables? My table-sortable web component adds accessible, customizable sorting to ordinary HTML tables—and they still work when JavaScript doesn’t."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvyrt772w"
+hero:
+  src: /i/posts/2026-10-12/hero.jpg
+  alt: "A table of names, ages, cities, and occupations sorted by age from 26 to 42, with an ascending-sort indicator on Age."
 image: "/i/share-cards/sortable-tables-with-progressive-enhancement.jpg"
 ---
 

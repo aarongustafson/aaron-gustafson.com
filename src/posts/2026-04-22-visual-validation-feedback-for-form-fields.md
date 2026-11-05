@@ -20,6 +20,9 @@ series:
   tag: "series-forms"
   ordinal: "12th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvzdmr72f"
+hero:
+  src: /i/posts/2026-04-22/hero.jpg
+  alt: "Username validation compares River, which lacks a number, with River42, which satisfies the capital-letter, lowercase-letter, and number requirements."
 image: "/i/share-cards/visual-validation-feedback-for-form-fields.jpg"
 meta_description: "The `<form-validation-list>` web component shows people which validation rules they have satisfied as they type."
 social_description: "The `<form-validation-list>` web component provides real-time visual feedback on validation requirements, showing users which rules they have satisfied as they type."

@@ -14,6 +14,9 @@ tags:
 description: "The fullscreen-control web component adds fullscreen capabilities to any video or iframe element with a single wrapper and zero configuration."
 twitter_text: "Add fullscreen controls to videos and iframes with progressive enhancement. One wrapper, zero hassle."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvzs7kp2f"
+hero:
+  src: /i/posts/2025-12-29/hero.jpg
+  alt: "An embedded shipping-speed selector, with Express selected, and a View fullscreen button at the upper right of the iframe."
 image: "/i/share-cards/fullscreen-video-and-iframes-made-easy.jpg"
 ---
 

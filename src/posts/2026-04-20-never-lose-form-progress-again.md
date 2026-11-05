@@ -19,6 +19,9 @@ series:
   tag: "series-forms"
   ordinal: "11th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvzgjfd2a"
+hero:
+  src: /i/posts/2026-04-20/hero.jpg
+  alt: "A contact form restored after a page reload, retaining an example name, email address, and partially written message."
 image: "/i/share-cards/never-lose-form-progress-again.jpg"
 ---
 

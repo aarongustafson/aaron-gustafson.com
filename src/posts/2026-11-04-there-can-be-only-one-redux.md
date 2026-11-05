@@ -15,7 +15,7 @@ tags:
 description: "Building on my HTMHell piece about “choose one” fields, I created `<form-multi-switch>` to turn radio buttons into a more compact switch control."
 twitter_text: "One benefit of radio buttons is that they show every choice; a select doesn’t, but is more compact. <form-multi-switch> aims to split the difference."
 hero:
-  src: /i/posts/form-multi-switch/hero.jpg
+  src: /i/posts/2026-11-04/hero.jpg
   alt: "Delivery speed choices shown as a vertical radio group and a horizontal segmented control. Both show Standard, Express, and Overnight, with Express selected."
 image: "/i/share-cards/there-can-be-only-one-redux.jpg"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mzjgobfz4k2u"

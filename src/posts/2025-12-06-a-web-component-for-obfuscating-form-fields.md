@@ -19,6 +19,9 @@ series:
   tag: "series-forms"
   ordinal: "8th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw22o2z2l"
+hero:
+  src: /i/posts/2025-12-06/hero.jpg
+  alt: "A credit-card field shows an example number while focused, then masks the first three groups of digits while leaving the last four, 3456, visible."
 image: "/i/share-cards/a-web-component-for-obfuscating-form-fields.jpg"
 meta_description: "There’s no standard way to make a field readable while editing but obfuscated at rest."
 social_description: "There’s no standard way to make a field readable while editing but obfuscated at rest."

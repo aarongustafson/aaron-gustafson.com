@@ -6,6 +6,9 @@ tags: ["web components", "web forms", "progressive enhancement", "HTML"]
 description: "Sometimes you only want a field to show when certain other fields have a (particular) value. The `form-show-if` web component enables that."
 twitter_text: "Sometimes you only want a field to show when certain other fields have a (particular) value. The `form-show-if` web component enables that."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw2ahmj2l"
+hero:
+  src: /i/posts/2025-10-20/hero.jpg
+  alt: "Contact via radios set to Email and Phone in two form states. Email address appears when Email is selected; Phone number appears when Phone is selected."
 image: "/i/share-cards/a-web-component-for-conditionally-displaying-fields.jpg"
 ---
 

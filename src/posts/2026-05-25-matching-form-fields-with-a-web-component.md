@@ -19,6 +19,9 @@ series:
   tag: "series-forms"
   ordinal: "7th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvzaswb2l"
+hero:
+  src: /i/posts/2026-05-25/hero.jpg
+  alt: "Two email-confirmation forms compare a mismatched address, raeder@example.com, with a matching pair of reader@example.com addresses."
 image: "/i/share-cards/matching-form-fields-with-a-web-component.jpg"
 meta_description: "Confirming values like email addresses and passwords is a common form need."
 social_description: "Confirming values like email addresses and passwords is a common form need."

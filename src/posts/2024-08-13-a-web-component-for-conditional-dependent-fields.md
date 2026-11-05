@@ -18,6 +18,9 @@ series:
   tag: "series-forms"
   ordinal: "6th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw2vvuh25"
+hero:
+  src: /i/posts/2024-08-13/hero.jpg
+  alt: "Contact via radios set to Email and Phone in two form states. Both fields stay visible, and the required label moves from Email address to Phone number."
 image: "/i/share-cards/a-web-component-for-conditional-dependent-fields.jpg"
 meta_description: "Sometimes you need to require a value in one form field only if another field is filled in or if that field has a specific value."
 social_description: "Sometimes you need to require a value in one form field only if another field is filled in or if that field has a specific value."

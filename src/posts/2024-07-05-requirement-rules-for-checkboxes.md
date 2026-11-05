@@ -20,6 +20,9 @@ series:
   tag: "series-forms"
   ordinal: "5th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnw342pc2w"
+hero:
+  src: /i/posts/2024-07-05/hero.jpg
+  alt: "A checkbox group asks for three skills, with JavaScript, Python, and Rust selected from five options."
 image: "/i/share-cards/requirement-rules-for-checkboxes.jpg"
 meta_description: "Currently, we can only make checkboxes required or not, individually."
 social_description: "Currently, we can only make checkboxes required or not, individually. In some cases you need to be able to set a specific number of checkboxes that need to be checked."

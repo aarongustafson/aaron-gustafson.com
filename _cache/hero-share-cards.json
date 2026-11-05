@@ -114,5 +114,49 @@
   "there-can-be-only-one-redux": {
     "hash": "2047be65073d7eed",
     "url": "/i/share-cards/there-can-be-only-one-redux.jpg"
+  },
+  "requirement-rules-for-checkboxes": {
+    "hash": "65866a098343fe8e",
+    "url": "/i/share-cards/requirement-rules-for-checkboxes.jpg"
+  },
+  "a-web-component-for-conditional-dependent-fields": {
+    "hash": "ca92cb24f4c48371",
+    "url": "/i/share-cards/a-web-component-for-conditional-dependent-fields.jpg"
+  },
+  "a-web-component-for-conditionally-displaying-fields": {
+    "hash": "77ec995ebdc73342",
+    "url": "/i/share-cards/a-web-component-for-conditionally-displaying-fields.jpg"
+  },
+  "a-web-component-for-obfuscating-form-fields": {
+    "hash": "f5722be6aa42cea5",
+    "url": "/i/share-cards/a-web-component-for-obfuscating-form-fields.jpg"
+  },
+  "fullscreen-video-and-iframes-made-easy": {
+    "hash": "081f0b45b2979e20",
+    "url": "/i/share-cards/fullscreen-video-and-iframes-made-easy.jpg"
+  },
+  "repeatable-form-fields-made-simple": {
+    "hash": "f84de257eab55e2f",
+    "url": "/i/share-cards/repeatable-form-fields-made-simple.jpg"
+  },
+  "never-lose-form-progress-again": {
+    "hash": "9883dd357c34249a",
+    "url": "/i/share-cards/never-lose-form-progress-again.jpg"
+  },
+  "visual-validation-feedback-for-form-fields": {
+    "hash": "ec89fa2680b9726c",
+    "url": "/i/share-cards/visual-validation-feedback-for-form-fields.jpg"
+  },
+  "matching-form-fields-with-a-web-component": {
+    "hash": "94f3e27d85202ac4",
+    "url": "/i/share-cards/matching-form-fields-with-a-web-component.jpg"
+  },
+  "tabbed-interface-the-web-component": {
+    "hash": "120ab5245c97f999",
+    "url": "/i/share-cards/tabbed-interface-the-web-component.jpg"
+  },
+  "sortable-tables-with-progressive-enhancement": {
+    "hash": "20e0b1b3e4487784",
+    "url": "/i/share-cards/sortable-tables-with-progressive-enhancement.jpg"
   }
 }

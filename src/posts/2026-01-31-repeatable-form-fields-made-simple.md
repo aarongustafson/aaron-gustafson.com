@@ -10,6 +10,9 @@ series:
   tag: "series-forms"
   ordinal: "10th"
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvzmcjt2p"
+hero:
+  src: /i/posts/2026-01-31/hero.jpg
+  alt: "A trip form contains three numbered stops—Portland, Seattle, and Vancouver—with remove controls and an Add Another button."
 image: "/i/share-cards/repeatable-form-fields-made-simple.jpg"
 meta_description: "Need to let users add multiple email addresses, phone numbers, or other field groups?"
 social_description: "Need to let users add multiple email addresses, phone numbers, or other field groups? The `<form-repeatable>` web component handles the duplication, renumbering, and form submission automatically."
