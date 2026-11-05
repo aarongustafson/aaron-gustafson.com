@@ -235,6 +235,52 @@ Sequoia strips date prefixes from filenames and uses `/notebook/{slug}/`, matchi
 Eleventy's published URLs. Keep `siteUrl` free of a trailing slash: Sequoia
 concatenates it with the document path when writing `canonicalUrl`.
 
+### Social link cards
+
+The JSON feeds include a `_social` extension containing the same resolved title,
+description, image URL, and alt text used by the page's Open Graph/Twitter tags.
+Post syndication preserves the full destination URL when shortening text.
+For saved links, syndication shares the external destination, not the local
+commentary page or its share-card image.
+The production postbuild validates that same-origin social images exist in the
+built output. Netlify's share-card cache preserves checked-out images when
+restoring older cached files, so newly committed cards are not lost on deploy.
+
+| Destination | Card metadata |
+| ----------- | ------------- |
+| Bluesky via Buffer | An explicit `metadata.bluesky.linkAttachment`, rather than a URL in text alone. |
+| Bluesky direct | Open Graph/Twitter metadata plus current document/publication `associatedRefs` for standard.site pages. |
+| Twitter/X via Buffer | Full URL in the text; the crawler reads the page's Twitter Card/Open Graph tags. |
+| Mastodon | Full URL in the text; the server reads Open Graph. Article pages also advertise `fediverse:creator`. |
+| LinkedIn via IFTTT | The applet receives the destination URL and excerpt; LinkedIn reads Open Graph when configured to create a link share. |
+| Pinterest via IFTTT | The existing applet receives the destination URL, title, and description. Image selection still depends on the applet's configuration. |
+
+Buffer's documented link-attachment input does not expose standard.site
+`associatedRefs`; do not assume an ordinary Buffer link card is an enhanced
+standard.site card. Direct Bluesky posting supplies those references explicitly,
+while leaving Twitter on Buffer:
+
+1. Add repository Actions secrets `ATP_IDENTIFIER` and `ATP_APP_PASSWORD` using
+   the Bluesky account's handle and an app password.
+2. Set repository Actions variable `BLUESKY_POSTING_MODE` to `direct`.
+3. Optionally set variable `PDS_URL` (defaults to `https://bsky.social`).
+   Keep `BUFFER_BLUESKY_PROFILE_ID`: it remains the identifier used to route and
+   track this platform in the existing syndication cache.
+
+Without that variable, Bluesky continues through Buffer with explicit link cards.
+Direct mode publishes at workflow execution time, not Buffer's scheduled slot.
+It requires live article verification links and matching standard.site record
+paths. It uses deterministic post keys so an interrupted request can be retried
+without creating a second post. Direct failures remain failed in the cache;
+they never fall back to a text-only IFTTT post.
+Post keys use the source item's publication timestamp, so backfilled shares may
+sort with older posts rather than appearing as newly published content.
+
+The enhanced embed must be present when the Bluesky post is created. Updating
+an existing text-only post record did not update its AppView rendering during
+verification; re-share the article to get a new enhanced card instead of editing
+or deleting a post with existing interactions.
+
 ## Search and social metadata
 
 Page metadata uses the complete `title` plus the site name for the document

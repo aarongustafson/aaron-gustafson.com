@@ -323,7 +323,16 @@ class LinkSyndicator extends SocialMediaAPI {
 				}
 
 				if (profileIds.length > 0) {
-					const bufferResults = await this.postToBuffer(bufferText, profileIds);
+					const bufferResults = await this.postToBuffer(bufferText, profileIds, {
+						id: link.id,
+						publishedAt: link.date_published,
+						url: relatedUrl,
+						...(!link.external_url ? {
+							title: link._social?.title || link.title,
+							description: link._social?.description || ContentProcessor.stripHtml(link.summary || ""),
+							image: link._social?.image || link.image,
+						} : {}),
+					});
 					// Set only after postToBuffer returns so that a pre-request throw
 					// (e.g. missing BUFFER_ACCESS_TOKEN) leaves bufferCalled false and
 					// the catch block can fall back to IFTTT correctly.
@@ -404,7 +413,7 @@ class LinkSyndicator extends SocialMediaAPI {
 						});
 					}
 
-					if (!blueskyDone) {
+					if (!blueskyDone && process.env.BLUESKY_POSTING_MODE !== "direct") {
 						await this.sendToIFTTT("bluesky_link", {
 							text: bufferText,
 						});

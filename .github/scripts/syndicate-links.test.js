@@ -35,6 +35,7 @@ test("link syndication sends LinkedIn the external URL instead of the local perm
 	try {
 		const syndicator = new LinkSyndicator();
 		const iftttCalls = [];
+		const bufferCalls = [];
 
 		syndicator.cache = {
 			isPlatformSuccessful: async () => false,
@@ -46,14 +47,19 @@ test("link syndication sends LinkedIn the external URL instead of the local perm
 			return { event, payload };
 		};
 		syndicator.postToMastodon = async () => ({ id: "mastodon-post" });
-		syndicator.postToBuffer = async () => [];
+		syndicator.postToBuffer = async (...args) => {
+			bufferCalls.push(args);
+			return [];
+		};
 
 		const link = {
 			id: "link-1",
+			date_published: "2026-11-05T00:00:00Z",
 			title: "GitHub accessibility agent",
 			social_text:
 				"A useful look at GitHub’s accessibility agent experiment and what it takes to make these systems genuinely helpful rather than merely busy.",
 			content_html: "<p>Interesting link.</p>",
+			image: "https://www.aaron-gustafson.com/i/our-commentary.jpg",
 			url: "https://www.aaron-gustafson.com/notebook/links/github-accessibility-agent/",
 			external_url:
 				"https://github.blog/ai-and-ml/github-copilot/building-a-general-purpose-accessibility-agent-and-what-we-learned-in-the-process/",
@@ -64,6 +70,8 @@ test("link syndication sends LinkedIn the external URL instead of the local perm
 		const linkedInCall = iftttCalls.find(({ event }) => event === "linkedin_link");
 		assert.ok(linkedInCall);
 		assert.equal(linkedInCall.payload.value2, link.external_url);
+		assert.ok(bufferCalls[0][0].endsWith(link.external_url));
+		assert.deepEqual(bufferCalls[0][2], { id: link.id, publishedAt: link.date_published, url: link.external_url });
 	} finally {
 		process.env.TEST_MODE = env.TEST_MODE;
 		process.env.BUFFER_TWITTER_PROFILE_ID = env.BUFFER_TWITTER_PROFILE_ID;

@@ -2,6 +2,14 @@ import fs from "fs/promises";
 import { htmlToText } from "html-to-text";
 import fetch from "node-fetch";
 import path from "path";
+import {
+	AtprotoClient,
+	atprotoCredentials,
+	blueskyLinkFacet,
+	blueskyPostKey,
+	buildBlueskyEmbed,
+	fetchLinkMetadata,
+} from "./atproto.js";
 
 const BUFFER_API_ENDPOINT = "https://api.buffer.com";
 
@@ -419,7 +427,7 @@ class SocialMediaAPI {
 		};
 	}
 
-	buildBufferGraphQLRequest(text, channelId) {
+	buildBufferGraphQLRequest(text, channelId, link) {
 		return {
 			method: "POST",
 			headers: this.getBufferAuthorizationHeader(),
@@ -447,6 +455,20 @@ class SocialMediaAPI {
 						text,
 						schedulingType: "automatic",
 						mode: "addToQueue",
+						...(link && channelId === process.env.BUFFER_BLUESKY_PROFILE_ID
+							? {
+								metadata: {
+									bluesky: {
+										linkAttachment: {
+											url: link.url,
+											...(link.title ? { title: link.title } : {}),
+											...(link.description ? { description: link.description } : {}),
+											...(link.image ? { thumbnail: { url: link.image } } : {}),
+										},
+									},
+								},
+							}
+							: {}),
 					},
 				},
 			}),
@@ -545,22 +567,53 @@ class SocialMediaAPI {
 		return result.post;
 	}
 
-	async postToBuffer(text, profileIds, mediaUrl = null) {
-		const accessToken = process.env.BUFFER_ACCESS_TOKEN;
-
-		if (!accessToken && !this.testMode) {
-			throw new Error("Buffer access token not provided");
+	async postToBluesky(text, link) {
+		if (!link?.url || !link.id) throw new Error("Direct Bluesky posting requires a link URL and source item ID.");
+		const length = [...new Intl.Segmenter("en", { granularity: "grapheme" }).segment(text)].length;
+		if (length > 300) throw new Error("Bluesky post exceeds 300 graphemes.");
+		if (this.testMode) return { uri: "at://test/app.bsky.feed.post/test", testMode: true };
+		const client = await new AtprotoClient().login(atprotoCredentials());
+		const rkey = blueskyPostKey(link.id, link.publishedAt);
+		const ref = { repo: client.did, collection: "app.bsky.feed.post", rkey };
+		try {
+			const existing = await client.request("com.atproto.repo.getRecord", { params: ref });
+			const links = existing.value.facets?.flatMap((facet) => facet.features) || [];
+			if (!links.some((feature) => feature.$type === "app.bsky.richtext.facet#link" && feature.uri === link.url)) {
+				throw new Error("Existing Bluesky syndication record points to a different URL.");
+			}
+			return existing;
+		} catch (error) {
+			if (error.code !== "RecordNotFound") throw error;
 		}
+		const metadata = await fetchLinkMetadata(link.url);
+		const embed = await buildBlueskyEmbed(client, metadata);
+		return client.request("com.atproto.repo.putRecord", {
+			body: {
+				...ref,
+				swapRecord: null,
+				record: {
+					$type: "app.bsky.feed.post",
+					text,
+					createdAt: new Date().toISOString(),
+					langs: ["en"],
+					facets: [blueskyLinkFacet(text, link.url)],
+					embed,
+				},
+			},
+		});
+	}
 
-		if (mediaUrl) {
-			console.warn(
-				"⚠️ Buffer media attachments are not supported on the GraphQL createPost path; posting text only.",
-			);
+	async postToBuffer(text, profileIds, link = null) {
+		const accessToken = process.env.BUFFER_ACCESS_TOKEN;
+		const blueskyMode = process.env.BLUESKY_POSTING_MODE || "buffer";
+		if (!["buffer", "direct"].includes(blueskyMode)) {
+			throw new Error(`Unknown BLUESKY_POSTING_MODE: ${blueskyMode}`);
 		}
 
 		const results = [];
 
 		for (const profileId of profileIds) {
+			const direct = profileId === process.env.BUFFER_BLUESKY_PROFILE_ID && blueskyMode === "direct";
 			if (this.testMode) {
 				console.log(
 					`🧪 TEST: Buffer post data for profile ${profileId}:`,
@@ -575,9 +628,15 @@ class SocialMediaAPI {
 			}
 
 			try {
+				if (direct) {
+					const post = await this.postToBluesky(text, link);
+					results.push({ ...post, id: post.uri, profileId });
+					continue;
+				}
+				if (!accessToken) throw new Error("Buffer access token not provided");
 				const response = await fetch(
 					BUFFER_API_ENDPOINT,
-					this.buildBufferGraphQLRequest(text, profileId),
+					this.buildBufferGraphQLRequest(text, profileId, link),
 				);
 				const data = await response.json();
 				const post = this.extractBufferPost(data, response);
@@ -603,7 +662,7 @@ class SocialMediaAPI {
 					errorDetails = responseData;
 				}
 
-				const duplicateDetected = this.isBufferDuplicateError(
+				const duplicateDetected = !direct && this.isBufferDuplicateError(
 					error.message,
 					responseData?.message,
 					responseData?.error,
@@ -624,7 +683,7 @@ class SocialMediaAPI {
 				}
 
 				console.log(
-					`Failed to post to Buffer profile ${profileId}:`,
+					`Failed to post via ${direct ? "direct Bluesky" : "Buffer"} for profile ${profileId}:`,
 					error.message,
 				);
 				if (responseData) {

@@ -74,6 +74,48 @@ test("extractBufferPost returns the post on PostActionSuccess", () => {
 	assert.equal(post.status, "queued");
 });
 
+test("Buffer Bluesky requests include an explicit link card without changing Twitter requests", () => {
+	const previous = process.env.BUFFER_BLUESKY_PROFILE_ID;
+	process.env.BUFFER_BLUESKY_PROFILE_ID = "bluesky-profile";
+	try {
+		const api = new SocialMediaAPI(true);
+		const link = {
+			url: "https://example.com/article/",
+			title: "Article",
+			description: "Summary",
+			image: "https://example.com/card.jpg",
+		};
+		const bluesky = JSON.parse(
+			api.buildBufferGraphQLRequest("Text", "bluesky-profile", link).body,
+		);
+		assert.deepEqual(bluesky.variables.input.metadata, {
+			bluesky: {
+				linkAttachment: {
+					url: link.url,
+					title: link.title,
+					description: link.description,
+					thumbnail: { url: link.image },
+				},
+			},
+		});
+		const twitter = JSON.parse(
+			api.buildBufferGraphQLRequest("Text", "twitter-profile", link).body,
+		);
+		assert.equal(twitter.variables.input.metadata, undefined);
+		const external = JSON.parse(
+			api.buildBufferGraphQLRequest("Text", "bluesky-profile", {
+				url: link.url,
+			}).body,
+		);
+		assert.deepEqual(external.variables.input.metadata.bluesky.linkAttachment, {
+			url: link.url,
+		});
+	} finally {
+		if (previous === undefined) delete process.env.BUFFER_BLUESKY_PROFILE_ID;
+		else process.env.BUFFER_BLUESKY_PROFILE_ID = previous;
+	}
+});
+
 test("extractBufferPost throws on a typed InvalidInputError returned with HTTP 200", () => {
 	const api = new SocialMediaAPI(true);
 

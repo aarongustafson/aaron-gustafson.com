@@ -190,8 +190,9 @@ class PostSyndicator extends SocialMediaAPI {
     } else {
       try {
         console.log("🐘 Posting to Mastodon...");
-        const mastodonText = ContentProcessor.truncateText(
-          `${socialText} ${post.url}`,
+        const mastodonText = ContentProcessor.truncateTextPreservingUrl(
+          socialText,
+          post.url,
           450,
         );
         const mastodonResult = await this.postToMastodon(mastodonText);
@@ -259,8 +260,9 @@ class PostSyndicator extends SocialMediaAPI {
       let bufferCalled = false;
       try {
         console.log("🐦 Posting to Buffer (Twitter & Bluesky)...");
-        const bufferText = ContentProcessor.truncateText(
-          `${socialText} ${post.url}`,
+        const bufferText = ContentProcessor.truncateTextPreservingUrl(
+          socialText,
+          post.url,
           260,
         );
 
@@ -278,7 +280,14 @@ class PostSyndicator extends SocialMediaAPI {
         }
 
         if (profileIds.length > 0) {
-          const bufferResults = await this.postToBuffer(bufferText, profileIds);
+          const bufferResults = await this.postToBuffer(bufferText, profileIds, {
+            id: post.id,
+            publishedAt: post.date_published,
+            url: post.url,
+            title: post._social?.title || post.title,
+            description: post._social?.description || ContentProcessor.stripHtml(post.summary || ""),
+            image: post._social?.image || post.image,
+          });
           // Set only after postToBuffer returns so that a pre-request throw
           // (e.g. missing BUFFER_ACCESS_TOKEN) leaves bufferCalled false and
           // the catch block can fall back to IFTTT correctly.
@@ -359,7 +368,7 @@ class PostSyndicator extends SocialMediaAPI {
             });
           }
 
-          if (!blueskyDone) {
+          if (!blueskyDone && process.env.BLUESKY_POSTING_MODE !== "direct") {
             await this.sendToIFTTT("bluesky_post", {
               text: `${socialText} ${post.url}`,
             });
