@@ -114,13 +114,10 @@ test("theme UI includes a named dialog and explicit close without change-dismiss
 	const html = environment.renderString(source);
 	assert.match(html, /commandfor="theme-dialog" command="show-modal"/);
 	assert.match(html, /aria-haspopup="dialog"/);
-	assert.match(html, /aria-labelledby="theme-dialog-title"/);
-	assert.match(html, /<legend id="theme-dialog-title">Color theme<\/legend>/);
+	assert.match(html, /<dialog\b[^>]*aria-label="Color theme"/);
 	assert.doesNotMatch(html, /<h[1-6]\b/);
-	for (const theme of ["system", "light", "dark"]) {
-		assert.ok(html.includes(`name="theme" value="${theme}"`));
-	}
-	assert.match(html, /<theme-switcher class="theme-icons">/);
+	assert.match(html, /<theme-switcher class="theme-icons" label="Color theme"><\/theme-switcher>/);
+	assert.doesNotMatch(html, /<(?:fieldset|legend|input|label)\b/);
 	assert.doesNotMatch(html, /<theme-switcher\b[^>]*\bscript=/);
 	assert.doesNotMatch(html, /\bicon-only\b/);
 	assert.match(html, /commandfor="theme-dialog" command="close" aria-label="Close">&times;<\/button>/);
