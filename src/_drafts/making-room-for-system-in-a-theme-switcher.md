@@ -1,5 +1,5 @@
 ---
-title: "Making Room for System in a Theme Switcher"
+title: "Theme Switching Made Easy"
 date: 2026-11-02 04:50:49 +00:00
 comments: true
 tags:
@@ -12,8 +12,8 @@ tags:
     "user experience",
     "web components",
   ]
-description: "My `<theme-switcher>` web component builds on `<form-multi-switch>` to offer explicit System, Light, and Dark choices, remember preferences, and keep theme controls in sync."
-twitter_text: "“Use dark” and “follow my system” aren’t the same preference. My <theme-switcher> web component makes room for both—and I’ve adapted my own site to use it."
+description: "My `<theme-switcher>` web component builds on `<form-multi-switch>` to offer explicit System, Light, and Dark choices, remember preferences, and support additional custom themes."
+twitter_text: "I’ve revisited how I handle them switching on my own site and have open-sourced the web component that drives it."
 ---
 
 If you’ve used the theme switcher on this site, you may notice it works a little differently now.
@@ -71,7 +71,21 @@ With System selected, the first rule applies and the browser chooses the appropr
 
 ## Need additional themes? No problem
 
+System, Light, and Dark aren’t the only options. If you want to offer a Sepia theme, for instance, you can supply the choices as JSON in the `choices` attribute:
 
+```html
+<theme-switcher
+  label="Color theme"
+  choices='[
+    {"label": "System", "value": "system"},
+    {"label": "Light", "value": "light"},
+    {"label": "Dark", "value": "dark"},
+    {"label": "Sepia", "value": "sepia"}
+  ]'
+></theme-switcher>
+```
+
+The `choices` setting overrides the default choices, so you must to include `system`, `light`, and `dark` alongside any extras. Each choice has a text `label` and a unique `value`. Selecting Sepia sets `data-theme="sepia"` on `<html>`; then you supply the color scheme using `:root[data-theme="sepia"]` in your CSS.
 
 ## Remembering a user’s preference
 
@@ -109,9 +123,12 @@ Adding a small `<script>` in the document `<head>` can prevent this theme flash 
 
 This code, and an alternative that loads from the cookie as a fallback, is available in [the project documentation](https://github.com/aarongustafson/theme-switcher#restore-a-saved-choice-before-first-paint).
 
+**Note: If you [add custom choices to your `<theme-switcher>` configuration](#need-additional-themes-no-problem), be sure to include your unique value(s) in the array defined above. If you don’t include them, it wouldn’t know to restore that option before the component boots.**
+
+
 ## Preference and appearance
 
-Sometimes another part of your page needs to know when the theme changes. The component exposes both what someone requested and what that request currently resolves to:
+If another component or part of your page needs to know when the theme changes, the component exposes a custom event that carries information about the preference chosen:
 
 ```js
 const switcher = document.querySelector("theme-switcher");
@@ -121,33 +138,9 @@ switcher.addEventListener("theme-switcher:change", ({ detail }) => {
 });
 ```
 
-For a System preference on a device using dark mode, `value` is `system` and `resolvedTheme` is `dark`. If the device changes to light, the resolved theme changes while the preference remains System.
+The `resolvedTheme` informs you of the theme that’s applied when a user chooses System. If they do and are using dark mode at the system level, `value` will be `system` and `resolvedTheme` will be `dark`. If the device changes to light, the `resolvedTheme` changes while the `value` remains the same.
 
-That’s useful for something CSS can’t handle on its own, like redrawing a chart. For ordinary page styling, the `data-theme` attribute and media queries are generally all you need.
-
-You can also add themes beyond the standard three—Sepia, for instance—as long as System, Light, and Dark remain available. The component manages the choice; you still define what that extra theme looks like.
-
-=====
-
-To install and register the component:
-
-```sh
-npm install @aarongustafson/theme-switcher
-```
-
-```js
-import "@aarongustafson/theme-switcher/define.js";
-```
-
-Your bundler needs to resolve package imports, or you can use an import map when serving the modules directly. That includes the dependency on `@aarongustafson/form-multi-switch`.
-
-Changing the theme here requires JavaScript, so there’s no need to ship radio buttons that wouldn’t do anything without it. The dialog opener stays hidden until the component has generated and enhanced its controls. Without JavaScript, the site’s CSS still follows the system preference.
-
-
-
-## Remember the request
-
-
+That’s useful for things CSS can’t handle, like redrawing a chart. For ordinary page styling though, the `data-theme` attribute and media queries are generally all you need.
 
 ## Try it here—or elsewhere
 
@@ -159,4 +152,4 @@ You can try the control on this site, or explore the [standalone demos](https://
 </fullscreen-control>
 </figure>
 
-The [repository](https://github.com/aarongustafson/theme-switcher) has the full API and configuration options. If you try it, I’d be interested to hear whether the explicit System choice makes the interaction clearer for the people using your site.
+The [repository](https://github.com/aarongustafson/theme-switcher) has the full API and detailed configuration options. If you try it, please let me know how it goes.
