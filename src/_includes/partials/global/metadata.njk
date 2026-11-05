@@ -10,6 +10,10 @@
 <meta property="og:description" content="{{ metadata.socialDescription | escape }}">
 <meta property="og:site_name" content="{{ metadata.siteName | escape }}">
 <meta property="og:locale" content="{{ metadata.locale | escape }}">
+{% if metadata.type == "article" %}
+	<meta property="article:author" content="{{ site.author.uri | escape }}">
+	{% if site.author.mastodon %}<meta name="fediverse:creator" content="{{ site.author.mastodon | escape }}">{% endif %}
+{% endif %}
 {% if metadata.image %}
 	<meta property="og:image" content="{{ metadata.image | escape }}">
 	{% if metadata.imageType %}<meta property="og:image:type" content="{{ metadata.imageType | escape }}">{% endif %}
@@ -20,6 +24,7 @@
 
 <meta name="twitter:card" content="{{ metadata.twitterCard | escape }}">
 {% if metadata.twitterSite %}<meta name="twitter:site" content="@{{ metadata.twitterSite | escape }}">{% endif %}
+{% if metadata.type == "article" and site.author.twitter %}<meta name="twitter:creator" content="@{{ site.author.twitter | escape }}">{% endif %}
 <meta name="twitter:url" content="{{ metadata.canonicalUrl | escape }}">
 <meta name="twitter:title" content="{{ metadata.socialTitle | escape }}">
 <meta name="twitter:description" content="{{ metadata.socialDescription | escape }}">

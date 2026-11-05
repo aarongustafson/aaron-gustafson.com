@@ -18,7 +18,7 @@
 		"build": "NODE_ENV=production NODE_OPTIONS=\"--max-old-space-size=6144\" npx @11ty/eleventy --quiet",
 		"build:fast": "NODE_ENV=production NODE_OPTIONS=\"--max-old-space-size=8192\" npx @11ty/eleventy --quiet --incremental",
 		"build:dev": "NODE_OPTIONS=\"--max-old-space-size=6144\" npx @11ty/eleventy --quiet",
-		"postbuild": "gulp postbuild",
+		"postbuild": "gulp postbuild && npm run metadata:check:built",
 		"share-cards:sync": "node .github/scripts/manage-share-cards.js",
 		"share-cards:post": "node .github/scripts/manage-share-cards.js --post",
 		"share-cards:force": "node .github/scripts/manage-share-cards.js --force",

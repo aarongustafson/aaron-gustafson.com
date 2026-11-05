@@ -46,6 +46,15 @@
   {% if post.data.image %}
     "image": {{ (post.data.image | absoluteUrl(site.url)) | dump | safe }},
   {% endif %}
+
+  {% if post.data.metadata %}
+    "_social": {
+      "title": {{ post.data.metadata.socialTitle | dump | safe }},
+      "description": {{ post.data.metadata.socialDescription | dump | safe }},
+      "image": {{ post.data.metadata.image | dump | safe }},
+      "image_alt": {{ post.data.metadata.imageAlt | dump | safe }}
+    },
+  {% endif %}
   
   "date_published": {{ (post.date | dateToRfc3339) | dump | safe }}
 }

@@ -18,7 +18,7 @@ function quotedMeta(html, attribute, value) {
 	return html.match(pattern)?.[1];
 }
 
-function validateFile(filePath) {
+export function validateFile(filePath, outputDir) {
 	const html = fs.readFileSync(filePath, "utf8");
 	if (
 		!/<head[\s>]/i.test(html) ||
@@ -58,6 +58,23 @@ function validateFile(filePath) {
 	}
 	const image = quotedMeta(html, "property", "og:image");
 	if (
+		outputDir &&
+		image?.startsWith("https://") &&
+		canonical?.startsWith("https://")
+	) {
+		const imageUrl = new URL(image);
+		if (
+			imageUrl.origin === new URL(canonical).origin &&
+			!fs.existsSync(
+				path.join(outputDir, decodeURIComponent(imageUrl.pathname)),
+			)
+		) {
+			errors.push(
+				`social image is missing from built output: ${imageUrl.pathname}`,
+			);
+		}
+	}
+	if (
 		image?.includes("/i/share-cards/") ||
 		image?.endsWith("/i/share-card.jpg")
 	) {
@@ -76,11 +93,13 @@ function validateFile(filePath) {
 
 function runCli() {
 	const target = path.resolve(process.argv[2] || "dist");
-	const files = fs.statSync(target).isDirectory()
-		? htmlFiles(target)
-		: [target];
+	const directory = fs.statSync(target).isDirectory();
+	const files = directory ? htmlFiles(target) : [target];
 	const results = files
-		.map((filePath) => ({ filePath, errors: validateFile(filePath) }))
+		.map((filePath) => ({
+			filePath,
+			errors: validateFile(filePath, directory ? target : undefined),
+		}))
 		.filter((result) => result.errors !== null);
 	const failures = results.filter((result) => result.errors.length > 0);
 	if (failures.length > 0) {
