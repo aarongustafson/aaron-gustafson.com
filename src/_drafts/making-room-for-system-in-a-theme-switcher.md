@@ -16,83 +16,37 @@ description: "My `<theme-switcher>` web component builds on `<form-multi-switch>
 twitter_text: "“Use dark” and “follow my system” aren’t the same preference. My <theme-switcher> web component makes room for both—and I’ve adapted my own site to use it."
 ---
 
-Imagine you’re reading a site in the afternoon. Your device is using its light appearance, and the site follows along. You try the site’s dark theme, decide you prefer light for this particular site, and switch back.
+If you’ve used the theme switcher on this site, you may notice it works a little differently now.
 
-Later, your device switches to dark. What should the site do?
+There’s been a lot of discussion lately about whether theme controls should be two state ot three state by default. [Bramus has made the case for three states](https://www.bram.us/2026/08/18/the-case-for-tri-state-dark-mode-toggles/), while [Lea has argued that two are enough](https://lea.verou.me/blog/2026/dark-mode-toggles/). 
 
-If “Light” meant “keep this site light,” it should stay light. If it meant “go back to following my device,” it should change. The page looked the same when you made that choice, but those are two different requests.
+That discussion prompted me to revisit the way I’ve been managing themes on this site. I’d supported two themes — dark and light — and neglected the system setting entirely. I wanted to rectify that and felt the urge to build a web component to make it re-usable: [`<theme-switcher>`](https://github.com/aarongustafson/theme-switcher).
 
 <!-- more -->
 
-There’s been a lot of discussion lately about whether theme controls should expose that distinction. [Bramus has made the case for three states](https://www.bram.us/2026/08/18/the-case-for-tri-state-dark-mode-toggles/), while [Lea Verou has argued that two are enough](https://lea.verou.me/blog/2026/dark-mode-toggles/). The discussion inspired me to build [`<theme-switcher>`](https://github.com/aarongustafson/theme-switcher), and I’ve adapted my own site to use it.
+Fun fact: The whole reason I built `<form-multi-switch>`, which [I posted about yesterday](/notebook/there-can-be-only-one-redux/), was to provide the foundation to make `<theme-switcher>` a reality. If you find this component useful or interesting, you should really check `<form-multi-switch>` out too.
 
-For this site, I wanted the choices to be explicit: **System**, **Light**, and **Dark**.
+## How I’m using it
 
-## Three choices, not three colors
-
-System isn’t a third palette. It’s an instruction to follow the device preference, including when that preference changes. Light and Dark are explicit overrides.
-
-The component remembers `system` as `system`, rather than saving whichever appearance it happens to resolve to at the moment. That distinction lets someone return control to their device without clearing storage or hunting for a separate reset link.
-
-Underneath, `<theme-switcher>` inherits from my [`<form-multi-switch>` component](https://github.com/aarongustafson/form-multi-switch). The base class handles the radio group and segmented presentation; the subclass adds theme selection, persistence, and synchronization.
-
-There’s no need to build another set of keyboard interactions for what is still, fundamentally, a choice among radio buttons.
-
-## Start with the choice
-
-Here’s the markup I’m using inside this site’s theme dialog:
+Here’s the markup I’m using inside this site’s theme `<dialog>`:
 
 ```html
-<theme-switcher class="theme-icons">
-  <fieldset>
-    <legend id="theme-dialog-title">Color theme</legend>
-    <label>
-      <input type="radio" name="theme" value="system" checked />
-      System
-    </label>
-    <label>
-      <input type="radio" name="theme" value="light" />
-      Light
-    </label>
-    <label>
-      <input type="radio" name="theme" value="dark" />
-      Dark
-    </label>
-  </fieldset>
-</theme-switcher>
+<theme-switcher class="theme-icons" label="Color theme"></theme-switcher>
 ```
 
-The `theme-icons` class is my own styling hook, not a requirement. I use it to add decorative icons alongside the text labels. The dialog supplies the surrounding interaction; the component doesn’t create a dialog or an opener.
+With this modest amount of markup in place, the component generates a `<fieldset>` with a “Color theme” `<legend>` and the three standard choices: System, Light, and Dark.
 
-To install and register the component:
+Notes: The `theme-icons` class is my own styling hook, not a requirement. I use it to add decorative icons alongside the text labels. My `<dialog>` supplies the surrounding interaction; the component doesn’t create a `<dialog>` or its opener.
 
-```sh
-npm install @aarongustafson/theme-switcher
-```
-
-```js
-import "@aarongustafson/theme-switcher/define.js";
-```
-
-Your bundler needs to resolve package imports, or you can use an import map when serving the modules directly. That includes the dependency on `@aarongustafson/form-multi-switch`.
-
-If you don’t need authored markup, `<theme-switcher></theme-switcher>` generates the three standard choices for you. As with the base component, though, an empty element has no usable controls until JavaScript runs.
-
-Authored radios retain their native selection and form-submission behavior without JavaScript. They don’t, on their own, change the page’s theme. You could put them in a form and have a server apply the submitted preference, but that’s behavior you’d need to provide.
-
-On my site, the dialog opener stays hidden until the enhancement is ready. Without it, the site’s CSS still follows the system preference.
-
-## You supply the colors
-
-When someone makes a choice, the component writes it to the document element:
+When someone makes a choice, the component writes it to the `<html>` element as `data-theme`:
 
 ```html
 <html data-theme="dark">
 ```
 
-It doesn’t impose a palette. You supply the CSS.
+That’s it. Not really, but pretty much. It doesn’t impose a theme, it doesn’t set any CSS rules, it just adds adds a signal for CSS to respond to.
 
-For a small example using browser-provided system colors, this is enough:
+Here’s a simple example of how you could do that, using browser-provided system colors:
 
 ```css
 :root {
@@ -113,37 +67,47 @@ body {
 }
 ```
 
-With System selected, neither explicit override applies, so the browser chooses the appropriate color scheme.
+With System selected, the first rule applies and the browser chooses the appropriate color scheme using media queries (which I’ve not shown here). When Light or Dark are applied, those take precedence. That approach is crucial because a system-preference media query shouldn’t undo an explicit user choice on your site.
 
-My site uses its own palette, with CSS custom properties for backgrounds, text, links, and such. A `prefers-color-scheme: dark` query applies the dark palette only when `data-theme` is absent or set to `system`. An explicit `data-theme="dark"` applies it directly; an explicit Light choice keeps the light palette.
+## Need additional themes? No problem
 
-That scoping matters. A system-preference media query shouldn’t undo a choice someone just made.
 
-The control itself inherits the base component’s CSS custom properties and styling hooks, so it can use those same site colors.
 
-## Remember the request
+## Remembering a user’s preference
 
-By default, the component saves the preference in `localStorage`, using the key `theme-switcher`. A valid saved preference takes precedence over author-provided defaults.
-
-You can opt out with `storage="none"`, or add cookie backing if your server needs to read the preference:
+By default, `<theme-switcher>` saves a user’s preference in `localStorage`, using the key `theme-switcher`. A valid saved preference takes precedence any author-provided defaults. If you’d like to enable your server to get access to the preference too, you can back this up with a cookie by adding the `cookie` attribute:
 
 ```html
 <theme-switcher cookie></theme-switcher>
 ```
 
-With cookie backing enabled, a valid local-storage value wins; a valid cookie provides a fallback when local storage is unavailable or has no supported value. A server can use that cookie to render the appropriate `data-theme` before the page reaches the browser.
+With cookie backing enabled, a valid `localStorage` value wins; a valid cookie provides a fallback when `localStorage` is unavailable or has no supported value. Your server can use that cookie to render the appropriate `data-theme` before sending a page to the browser.
 
-The component also keeps connected theme controls on the same page in sync. With local storage enabled, tabs using the same storage key can pick up changes through the browser’s `storage` event.
+While it’s unlikely you’d include multiple instances of this component on your site, the component does ensure that all theme controls on the same page remain in sync. When `localStorage` is available, it will also keep all tabs in sync by listening for the browser’s `storage` event.
 
-You shouldn’t have to choose Dark separately in the header, footer, and another open tab.
+If you want to test the control without saving the preference, I’ve included an option to prevent values from being saved by adding `storage="none"` to the component.
 
-## Before the control loads
 
-Remembering a choice isn’t quite enough. If the component waits until its module loads to apply a saved Dark preference, someone may see a flash of the light theme first.
+## Preventing theme change during load
 
-On my site, a small script in the document head restores the preference before the stylesheets load. It also migrates the old theme cookie, so an existing preference carries over to the new control. That’s site-specific integration, not something the component can do before it has loaded.
+One challenge in building this component is that I don’t have control over how long the component takes to boot and, therefore, at what point the value stored in `localStorage` will be read and applied to the `<html>` element. It’s just a sad reality. That means the default theme will load first and then switch to the user’s preference, if it’s a different one.
 
-If you add a similar bootstrap, keep its storage key and supported values aligned with the component. The [project documentation](https://github.com/aarongustafson/theme-switcher#restore-a-saved-choice-before-first-paint) includes examples, including cookie-backed setups.
+Adding a small `<script>` in the document `<head>` can prevent this theme flash by restoring the preference before the stylesheets load:
+
+```js
+<script>
+  try {
+    const theme = localStorage.getItem('theme-switcher');
+    if (['system', 'light', 'dark'].includes(theme)) {
+      document.documentElement.setAttribute('data-theme', theme);
+    }
+  } catch (error) {
+    console.warn('Could not restore the saved theme.', error);
+  }
+</script>
+```
+
+This code, and an alternative that loads from the cookie as a fallback, is available in [the project documentation](https://github.com/aarongustafson/theme-switcher#restore-a-saved-choice-before-first-paint).
 
 ## Preference and appearance
 
@@ -162,6 +126,28 @@ For a System preference on a device using dark mode, `value` is `system` and `re
 That’s useful for something CSS can’t handle on its own, like redrawing a chart. For ordinary page styling, the `data-theme` attribute and media queries are generally all you need.
 
 You can also add themes beyond the standard three—Sepia, for instance—as long as System, Light, and Dark remain available. The component manages the choice; you still define what that extra theme looks like.
+
+=====
+
+To install and register the component:
+
+```sh
+npm install @aarongustafson/theme-switcher
+```
+
+```js
+import "@aarongustafson/theme-switcher/define.js";
+```
+
+Your bundler needs to resolve package imports, or you can use an import map when serving the modules directly. That includes the dependency on `@aarongustafson/form-multi-switch`.
+
+Changing the theme here requires JavaScript, so there’s no need to ship radio buttons that wouldn’t do anything without it. The dialog opener stays hidden until the component has generated and enhanced its controls. Without JavaScript, the site’s CSS still follows the system preference.
+
+
+
+## Remember the request
+
+
 
 ## Try it here—or elsewhere
 
