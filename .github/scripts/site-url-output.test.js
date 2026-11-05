@@ -12,6 +12,23 @@ test("HTML base configuration preserves authored URLs", () => {
 	assert.deepEqual(htmlBaseOptions, { baseHref: "/" });
 });
 
+test("Sequoia configuration produces the same URL as Eleventy for dated post names", () => {
+	const config = JSON.parse(
+		fs.readFileSync(new URL("../../sequoia.json", import.meta.url), "utf8"),
+	);
+	assert.equal(config.stripDatePrefix, true);
+	assert.equal(config.pathPrefix.endsWith("/"), false);
+	const slug = "2026-11-04-there-can-be-only-one-redux".replace(
+		/^\d{4}-\d{2}-\d{2}-/,
+		"",
+	);
+	const pathname = config.pathTemplate.replace("{slug}", slug);
+	assert.equal(
+		`${config.siteUrl}${pathname}`,
+		"https://www.aaron-gustafson.com/notebook/there-can-be-only-one-redux/",
+	);
+});
+
 test("the site title uses a root-relative homepage URL", () => {
 	const baseLayout = fs.readFileSync(
 		new URL("../../src/_includes/layouts/base.njk", import.meta.url),
@@ -33,13 +50,15 @@ test("all site pages expose the publication and only articles expose a document"
 	const config = JSON.parse(
 		fs.readFileSync(new URL("../../sequoia.json", import.meta.url), "utf8"),
 	);
-	const verification = fs.readFileSync(
-		new URL(
-			"../../src/static/.well-known/site.standard.publication",
-			import.meta.url,
-		),
-		"utf8",
-	).trim();
+	const verification = fs
+		.readFileSync(
+			new URL(
+				"../../src/static/.well-known/site.standard.publication",
+				import.meta.url,
+			),
+			"utf8",
+		)
+		.trim();
 	const sequoia = sequoiaData();
 	assert.equal(sequoia.publicationUri, config.publicationUri);
 	assert.equal(sequoia.publicationUri, verification);

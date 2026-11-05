@@ -231,6 +231,10 @@ in `sequoia.json`, and the `site.standard.document` link on posts with an
 sharing a website URL in Bluesky so its composer can discover the records for
 enhanced cards.
 
+Sequoia strips date prefixes from filenames and uses `/notebook/{slug}/`, matching
+Eleventy's published URLs. Keep `siteUrl` free of a trailing slash: Sequoia
+concatenates it with the document path when writing `canonicalUrl`.
+
 ## Search and social metadata
 
 Page metadata uses the complete `title` plus the site name for the document
