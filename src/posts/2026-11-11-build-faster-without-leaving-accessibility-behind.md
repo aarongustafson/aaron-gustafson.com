@@ -26,7 +26,7 @@ Today, my team is open sourcing the [Accessibility Considerations Toolkit (ACT)]
 
 ## Start with how people use things
 
-Act brings together guidance on access strategies, assistive technologies, devices, and the contexts in which people are trying to get things done. It gives designers, developers, researchers, and evaluators a starting point for investigating barriers in an actual interface.
+ACT brings together guidance on access strategies, assistive technologies, devices, and the contexts in which people are trying to get things done. It gives designers, developers, researchers, and evaluators a starting point for investigating barriers in an actual interface.
 
 The emphasis on *actual* is important. Guidance alone can’t tell you whether something works. You need to examine the interface, consider how someone might interact with it, and gather evidence.
 
@@ -36,7 +36,7 @@ Consider someone filling out a form. They might increase browser zoom, pan aroun
 - When someone using screen magnification selects Save, does the confirmation appear where they’re looking, or in another part of the screen they can’t see?
 - In a high-contrast theme, can someone tell which fields need correcting, or do the error indicators disappear?
 
-The answers to these questions help us understand whether someone can use what we’ve built under the conditions in which they need to use it. Act helps teams ask those questions and investigate the answers.
+The answers to these questions help us understand whether someone can use what we’ve built under the conditions in which they need to use it. ACT helps teams ask those questions and investigate the answers.
 
 ## Better questions, earlier
 
