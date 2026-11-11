@@ -108,6 +108,8 @@ that reverses the causality that gives the piece its credibility.
 
 ## 5. Vocabulary & Diction
 
+- **Person-first language for disability.** Use “people with disabilities”
+  rather than “disabled people” in Aaron’s prose.
 - **Plain English first.** Technical terms appear when precise, but are
   almost always defined or linked on first use. Aaron never assumes the reader
   knows an acronym or spec name without context.
