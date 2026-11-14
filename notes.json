@@ -30,6 +30,12 @@
       "checked_at": "2026-11-04",
       "result": "No actionable perf work identified",
       "follow_up": null
+    },
+    {
+      "area": "docs",
+      "checked_at": "2026-11-14",
+      "result": "No actionable docs/QA/forward work identified this run",
+      "follow_up": null
     }
   ],
   "completed_actions": [],
