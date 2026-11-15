@@ -19,6 +19,11 @@ test("script rebuilds retain unchanged sources and recreate clean output determi
 		path.join(source, "_javascript/theme"),
 		{ recursive: true },
 	);
+	fs.cpSync(
+		new URL("../../src/_javascript/post-components", import.meta.url),
+		path.join(source, "_javascript/post-components"),
+		{ recursive: true },
+	);
 	fs.writeFileSync(`${main}/first.js`, "window.first = 1;");
 	fs.writeFileSync(`${main}/second.js`, "window.second = 2;");
 	Object.assign(config, { source, static: output, destination: dist });
@@ -29,6 +34,22 @@ test("script rebuilds retain unchanged sources and recreate clean output determi
 		Object.assign(config, original);
 	}
 	await scripts();
+	for (const directory of [output, dist]) {
+		for (const component of ["img-alt-overlay", "print-link-list"]) {
+			for (const file of ["define.js", `${component}.js`]) {
+				assert.deepEqual(
+					fs.readFileSync(path.join(directory, "j", component, file)),
+					fs.readFileSync(
+						path.join("node_modules/@aarongustafson", component, file),
+					),
+				);
+			}
+		}
+		assert.deepEqual(
+			fs.readFileSync(path.join(directory, "j/post-components/init.js")),
+			fs.readFileSync(path.join(source, "_javascript/post-components/init.js")),
+		);
+	}
 	const first = fs.readFileSync(`${output}/j/main.js`, "utf8");
 	const minified = fs.readFileSync(`${output}/j/main.min.js`, "utf8");
 	await scripts();
@@ -45,6 +66,9 @@ test("script rebuilds retain unchanged sources and recreate clean output determi
 	fs.rmSync(dist, { recursive: true });
 	await scripts();
 	assert.equal(fs.readFileSync(`${dist}/j/main.js`, "utf8"), updated);
+	for (const component of ["img-alt-overlay", "print-link-list"]) {
+		assert.ok(fs.existsSync(path.join(dist, "j", component, "define.js")));
+	}
 	fs.unlinkSync(`${main}/second.js`);
 	await scripts();
 	assert.doesNotMatch(

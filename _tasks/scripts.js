@@ -24,11 +24,27 @@ export async function copyThemeModules({
 	source = path.join(source_folder, "theme"),
 	outputs = [destination_folder, dist],
 } = {}) {
-	for (const [directory, name] of [
+	await copyModules([
 		[path.join(packages, "theme-switcher"), "theme-switcher"],
 		[path.join(packages, "form-multi-switch"), "form-multi-switch"],
 		[source, "theme"],
-	]) {
+	], outputs);
+}
+
+export async function copyPostModules({
+	packages = "node_modules/@aarongustafson",
+	source = path.join(source_folder, "post-components"),
+	outputs = [destination_folder, dist],
+} = {}) {
+	await copyModules([
+		[path.join(packages, "img-alt-overlay"), "img-alt-overlay"],
+		[path.join(packages, "print-link-list"), "print-link-list"],
+		[source, "post-components"],
+	], outputs);
+}
+
+async function copyModules(directories, outputs) {
+	for (const [directory, name] of directories) {
 		const files = await fs.promises.readdir(directory, { withFileTypes: true });
 		for (const output of outputs) {
 			const target = path.join(output, name);
@@ -67,12 +83,13 @@ const copyFormSaver = () =>
 const scripts = async () => {
 	await copyFormSaver();
 	await copyThemeModules();
+	await copyPostModules();
 
 	const folders = getFolders(source_folder);
 
 	for (const folder of folders
 		// Exclude serviceworker folder as it has its own dedicated task
-		.filter((folder) => !["serviceworker", "theme"].includes(folder))) {
+		.filter((folder) => !["serviceworker", "theme", "post-components"].includes(folder))) {
 		await new Promise((resolve, reject) => {
 			const folderPath = path.join(source_folder, folder);
 			const outputFile = folder + ".js";
