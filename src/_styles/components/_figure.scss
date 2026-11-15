@@ -40,6 +40,100 @@ fullscreen-control > button {
 	position: relative;
 }
 
+// A contents wrapper must pass the original sibling spacing to its image/link.
+:where(img-alt-overlay:not(:first-child)) > :first-child {
+	@include rem(margin-block-start, $default-spacing);
+}
+
+img-alt-overlay {
+	display: contents;
+
+	[data-alt-ui] {
+		display: contents;
+	}
+
+	[data-alt-trigger] {
+		margin: 0;
+		position: absolute;
+		inset: 10px 10px auto auto;
+		z-index: 1;
+	}
+
+	dialog[data-alt-dialog] {
+		position: absolute;
+		inset: 50% 0 auto;
+		transform: translateY(-50%);
+		box-sizing: border-box;
+		inline-size: auto;
+		block-size: auto;
+		max-inline-size: none;
+		max-block-size: none;
+		margin: 0;
+		@include rem(margin-block-start, $default-spacing);
+		padding: 25px;
+		border: 0;
+		border-radius: 0;
+		background: #000;
+		color: #fff;
+		text-align: inherit;
+		overflow: visible;
+
+		&:not([open]) {
+			display: none;
+		}
+	}
+
+	[data-alt-text] {
+		margin: 0;
+		white-space: pre-wrap;
+		font: inherit;
+		outline: none;
+	}
+
+	[data-alt-dialog] h2,
+	[data-alt-close]:not(:focus, :active) {
+		position: absolute;
+		inline-size: 1px;
+		block-size: 1px;
+		margin: -1px;
+		padding: 0;
+		border: 0;
+		overflow: hidden;
+		clip-path: inset(50%);
+		white-space: nowrap;
+	}
+
+	[data-alt-close]:focus,
+	[data-alt-close]:active {
+		inset: 0 0 auto auto;
+	}
+
+	[data-alt-close] > [aria-hidden="true"] {
+		display: inline;
+	}
+
+	dialog button[data-alt-close] {
+		&,
+		&:hover,
+		&:focus-visible {
+			background: inherit;
+			color: inherit;
+		}
+
+		&:focus-visible {
+			outline: 3px solid currentColor;
+			outline-offset: -3px;
+		}
+	}
+}
+
+@media print {
+	img-alt-overlay [data-alt-ui],
+	img-alt-overlay [data-alt-trigger] {
+		display: none;
+	}
+}
+
 .entry__hero__credit {
 	position: absolute;
 	bottom: 0;

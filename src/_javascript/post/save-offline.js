@@ -52,11 +52,11 @@
 			false,
 		);
 
-		$intro.classList.add("dont-read");
+		$intro.classList.add("dont-read", "print-hidden");
 		$intro.innerText = "Can’t read now?";
 		$df.appendChild($intro);
 		$controls.appendChild($button);
-		$controls.classList.add("dont-read");
+		$controls.classList.add("dont-read", "print-hidden");
 		$df.appendChild($controls);
 		document.querySelector(".entry__meta > dl").appendChild($df);
 	}

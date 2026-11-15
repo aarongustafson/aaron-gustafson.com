@@ -21,6 +21,13 @@
 		"npm_package": "@aarongustafson/form-dropzone"
 	},
 	{
+		"name": "form-fieldset-progress",
+		"github": "aarongustafson/form-fieldset-progress",
+		"description": "Progressively enhance fieldsets into a validated step-by-step form.",
+		"demo_url": "https://aarongustafson.github.io/form-fieldset-progress/demo/",
+		"npm_package": "@aarongustafson/form-fieldset-progress"
+	},
+	{
 		"name": "form-matching-fields",
 		"github": "aarongustafson/form-matching-fields",
 		"description": "Web component wrapper that adds additive validation to ensure two text-type fields match.",
@@ -33,6 +40,13 @@
 		"description": "Indicates someone’s progress toward the limit of a field’s `maxlength` value.",
 		"demo_url": "https://aarongustafson.github.io/form-maxlength-progress/demo/",
 		"npm_package": "@aarongustafson/form-maxlength-progress"
+	},
+	{
+		"name": "form-multi-switch",
+		"github": "aarongustafson/form-multi-switch",
+		"description": "Progressively enhance native radio groups into accessible light-DOM segmented controls.",
+		"demo_url": "https://aarongustafson.github.io/form-multi-switch/demo/",
+		"npm_package": "@aarongustafson/form-multi-switch"
 	},
 	{
 		"name": "form-obfuscator",
@@ -91,11 +105,25 @@
 		"npm_package": "@aarongustafson/fullscreen-control"
 	},
 	{
+		"name": "img-alt-overlay",
+		"github": "aarongustafson/img-alt-overlay",
+		"description": "Reveal an image's alternative text in a non-modal, in-image dialog",
+		"demo_url": "https://aarongustafson.github.io/img-alt-overlay/demo/",
+		"npm_package": "@aarongustafson/img-alt-overlay"
+	},
+	{
 		"name": "lazy-img",
 		"github": "aarongustafson/lazy-img",
 		"description": "Web component that enables you to lazy load an image based on screen size.",
 		"demo_url": "https://aarongustafson.github.io/lazy-img/demo/",
 		"npm_package": "@aarongustafson/lazy-img"
+	},
+	{
+		"name": "print-link-list",
+		"github": "aarongustafson/print-link-list",
+		"description": "Generate a deduplicated print-only list of links and citations.",
+		"demo_url": "https://aarongustafson.github.io/print-link-list/demo/",
+		"npm_package": "@aarongustafson/print-link-list"
 	},
 	{
 		"name": "pull-to-refresh",
@@ -124,5 +152,12 @@
 		"description": "A web component to enable users to sort the data in a table based on table cell values.",
 		"demo_url": "https://aarongustafson.github.io/table-sortable/demo/",
 		"npm_package": "@aarongustafson/table-sortable"
+	},
+	{
+		"name": "theme-switcher",
+		"github": "aarongustafson/theme-switcher",
+		"description": "A light-DOM tri-state theme picker built on form-multi-switch.",
+		"demo_url": "https://aarongustafson.github.io/theme-switcher/demo/",
+		"npm_package": "@aarongustafson/theme-switcher"
 	}
 ]

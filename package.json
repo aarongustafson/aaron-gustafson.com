@@ -69,6 +69,8 @@
 		"@aarongustafson/eleventy-plugin-share-card": "^1.0.5",
 		"@aarongustafson/form-multi-switch": "^0.1.0",
 		"@aarongustafson/form-saver": "^1.0.0",
+		"@aarongustafson/img-alt-overlay": "^1.0.0",
+		"@aarongustafson/print-link-list": "^1.0.3",
 		"@aarongustafson/theme-switcher": "^0.1.0",
 		"@fontsource/open-sans": "^5.2.7",
 		"@fontsource/source-serif-4": "^5.2.9",
