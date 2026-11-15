@@ -139,5 +139,8 @@ a {
 		&[href^="tel:"]:after {
 			display: none;
 		}
+		&[href]:has(+ [data-print-link-list-marker]):after {
+			content: none;
+		}
 	}
 }

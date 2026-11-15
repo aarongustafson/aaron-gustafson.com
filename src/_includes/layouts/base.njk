@@ -120,6 +120,7 @@
 		<script>{% include "partials/global/register-serviceworker.js" %}</script>
 		<script src="/j/web-components{% if useMinifiedAssets %}.min{% endif %}.js"></script>
 		{% if is_post %}
+			<script type="module" src="/j/post-components/init.js"></script>
 			<script src="/j/post{% if useMinifiedAssets %}.min{% endif %}.js" async></script>
 			<script src="/j/lite-youtube-embed{% if useMinifiedAssets %}.min{% endif %}.js" async></script>
 		{% endif %}
