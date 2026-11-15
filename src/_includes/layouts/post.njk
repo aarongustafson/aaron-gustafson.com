@@ -71,8 +71,8 @@ total_webmentions > 0 %}
 						>{% endif %}
 					</dd>
 
-					<dt>Reading Time</dt>
-					<dd>{{ content | readingTime }}</dd>
+					<dt class="print-hidden">Reading Time</dt>
+					<dd class="print-hidden">{{ content | readingTime }}</dd>
 
 					<dt class="dont-read">Filed Under</dt>
 					<dd
@@ -84,10 +84,10 @@ total_webmentions > 0 %}
 
 					{% set hide_reactions = not has_webmentions and not
 					disqus.commentCount %}
-					<dt class="dont-read" {% if hide_reactions %}hidden{% endif %}>
+					<dt class="dont-read print-hidden" {% if hide_reactions %}hidden{% endif %}>
 						Reactions
 					</dt>
-					<dd class="dont-read" {% if hide_reactions %}hidden{% endif %}>
+					<dd class="dont-read print-hidden" {% if hide_reactions %}hidden{% endif %}>
 						<ul class="entry__jump-links">
 							{% if has_webmentions %}
 							<li class="entry__jump entry__jump--webmentions">
@@ -121,8 +121,8 @@ total_webmentions > 0 %}
 					</dd>
 					{% endfor %} {% endif %}
 
-					<dt class="dont-read">Like this?</dt>
-					<dd class="dont-read">{% include "partials/post/sharing.njk" %}</dd>
+					<dt class="dont-read print-hidden">Like this?</dt>
+					<dd class="dont-read print-hidden">{% include "partials/post/sharing.njk" %}</dd>
 				</dl>
 			</div>
 
@@ -162,7 +162,7 @@ total_webmentions > 0 %}
 				{% if thanks %}
 				<hr />
 
-				<p>
+				<p class="entry__thanks">
 					Many thanks to {% for person, url in thanks %} {% set link %}{%- if
 					url %}<a href="{{ url }}">{{ person }}</a>{% else %}{{ person }}{%
 					endif -%}{% endset %} {% if loop.last and loop.first %} {{ link | safe

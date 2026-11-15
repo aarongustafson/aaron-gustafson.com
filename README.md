@@ -131,6 +131,48 @@ node --test .github/scripts/theme-switcher.test.js
 
 ## Checking content and code
 
+### Post enhancements
+
+Post pages use locally served
+[`@aarongustafson/img-alt-overlay`](https://www.npmjs.com/package/@aarongustafson/img-alt-overlay)
+for figure images with nonempty alt text, including the hero. The post integration
+wraps each image (and its picture or image link) while leaving captions outside
+the overlay. Authored `img-alt-overlay` wrappers are preserved. Site styles
+replace the optional component stylesheet to match the former imperative overlay:
+the same site button with “View Alt”/“Dismiss Alt” labels, a 10px upper-right
+inset, and a full-width black panel with white text and 25px padding, centered
+on the figure. The wrapper does not introduce a layout box or change hero cropping.
+The dialog close control retains the overlay's black background and white text
+on hover and focus, with an inset white keyboard-focus outline.
+Its decorative close icon overrides the site's blanket `aria-hidden` display rule
+only within that control; it remains hidden from assistive technology.
+
+Post printing uses a compact, single-column reading layout with publication
+metadata above the article and comma-separated tags. Parenthesized inline URLs,
+reading time, interactive metadata, announcements, promotions, related posts,
+comments, and webmentions are omitted. The numbered Links list, acknowledgments,
+and site license remain. Screen layouts and non-post print layouts are unchanged. Browser
+headers and footers (date, URL, and page numbers) can be disabled in the print dialog.
+The print-only attribution reads “Printed from the website of” followed by the
+bold site name.
+
+[`@aarongustafson/print-link-list`](https://www.npmjs.com/package/@aarongustafson/print-link-list)
+generates print-only references for `.entry__content`, excluding metadata,
+related posts, comments, and navigation. Post prints use these references instead
+of inline URL expansions. Without JavaScript, the article remains readable but
+the reference list is not generated. Overlay controls and open alt dialogs are
+hidden when printing.
+
+Gulp copies the package modules and
+[`src/_javascript/post-components/init.js`](src/_javascript/post-components/init.js)
+without concatenating or minifying them. The site's overlay styles are included
+in the built CSS. Run the integration checks with:
+
+```sh
+node --test .github/scripts/post-components.test.js .github/scripts/scripts-build.test.js
+node --test .github/scripts/post-print.test.js
+```
+
 The service worker versions its long-lived cache from built CSS, JavaScript
 (including local component modules), and worker source—not posts or other HTML.
 It fetches a complete fresh asset set before offering the refresh banner.
