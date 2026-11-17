@@ -125,6 +125,15 @@ test("theme UI includes a named dialog and explicit close without change-dismiss
 	assert.match(html, /aria-controls="theme-dialog" hidden/);
 });
 
+test("web component page IDs do not collide with global UI IDs", () => {
+	const source = fs.readFileSync(
+		new URL("../../src/web-components.html", import.meta.url),
+		"utf8",
+	);
+	assert.match(source, /id="web-component-\{\{ component\.name \}\}"/);
+	assert.doesNotMatch(source, /id="\{\{ component\.name \}\}"/);
+});
+
 test("head restores preferences before styles and maps every bare module import", () => {
 	const source = fs.readFileSync(
 		new URL("../../src/_includes/layouts/base.njk", import.meta.url),

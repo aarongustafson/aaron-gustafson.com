@@ -22,7 +22,7 @@ permalink: /web-components/
 <ul class="listing listing--web-components">
 	{% for component in web_components %}
 	{% set component_name %}<code>&lt;{{ component.name }}&gt;</code>{% endset %}
-	<li class="listing__item listing__item--{{ loop.index }} web-component" id="{{ component.name }}">
+	<li class="listing__item listing__item--{{ loop.index }} web-component" id="web-component-{{ component.name }}">
 		<h2 class="listing__item__title">
 			{{ component_name | safe }}
 		</h2>
