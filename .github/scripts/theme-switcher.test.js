@@ -134,6 +134,33 @@ test("web component page IDs do not collide with global UI IDs", () => {
 	assert.doesNotMatch(source, /id="\{\{ component\.name \}\}"/);
 });
 
+test("web component catalog remains server rendered and progressively enhances", () => {
+	const source = fs.readFileSync(
+		new URL("../../src/web-components.html", import.meta.url),
+		"utf8",
+	);
+	const script = fs.readFileSync(
+		new URL("../../src/_javascript/web-components/catalog.js", import.meta.url),
+		"utf8",
+	);
+	assert.match(source, /<script-dependent script="\/j\/web-components\/catalog\.js" hidden>/);
+	assert.match(source, /data-web-component-search/);
+	assert.match(source, /data-web-component-category/);
+	assert.match(source, /listing--grid listing--web-components/);
+	assert.doesNotMatch(source, /<micro-lighter\b|web-component__install|data-copy=/);
+	assert.match(source, /block-size:\s*auto/);
+	assert.match(source, /height:\s*auto/);
+	assert.match(source, /\.web-component\[hidden\]\s*\{\s*display:\s*none/);
+	assert.match(source, /grid-template-columns:\s*1fr 12rem 10rem/);
+	assert.match(source, /margin-inline:\s*-1\.25rem/);
+	assert.doesNotMatch(source, /data-copy=/);
+	assert.match(source, /font-size:\s*1rem/);
+	assert.match(source, /background:\s*var\(--theme-input-background/);
+	assert.match(source, /border:\s*1px solid var\(--theme-border/);
+	assert.match(source, /\.web-components__controls select,\n\s*\.web-components__controls select option\s*\{[\s\S]*?background:\s*#fffcf4;[\s\S]*?color:\s*#2c2825;/);
+	assert.match(script, /controls\.hidden = false/);
+});
+
 test("head restores preferences before styles and maps every bare module import", () => {
 	const source = fs.readFileSync(
 		new URL("../../src/_includes/layouts/base.njk", import.meta.url),

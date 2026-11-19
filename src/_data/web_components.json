@@ -4,160 +4,224 @@
 		"github": "aarongustafson/content-warning",
 		"description": "Web component for block and inline content warnings.",
 		"demo_url": "https://aarongustafson.github.io/content-warning/demo/",
-		"npm_package": "@aarongustafson/content-warning"
+		"npm_package": "@aarongustafson/content-warning",
+		"category": "utilities",
+		"image": "content-warning-social-preview.jpg"
 	},
 	{
 		"name": "dynamic-datalist",
 		"github": "aarongustafson/dynamic-datalist",
 		"description": "Web component that enables you to dynamically update a field's `datalist` with values retrieved from a URL as the user types.",
 		"demo_url": "https://aarongustafson.github.io/dynamic-datalist/demo/",
-		"npm_package": "@aarongustafson/dynamic-datalist"
+		"npm_package": "@aarongustafson/dynamic-datalist",
+		"category": "forms",
+		"image": "dynamic-datalist-social-preview.jpg"
 	},
 	{
 		"name": "form-dropzone",
 		"github": "aarongustafson/form-dropzone",
 		"description": "A progressively enhanced file field wrapper with drag-and-drop support, accessible status announcements, and optional image previews.",
 		"demo_url": "https://aarongustafson.github.io/form-dropzone/demo/",
-		"npm_package": "@aarongustafson/form-dropzone"
+		"npm_package": "@aarongustafson/form-dropzone",
+		"category": "forms",
+		"image": "form-dropzone-social-preview.jpg"
 	},
 	{
 		"name": "form-fieldset-progress",
 		"github": "aarongustafson/form-fieldset-progress",
 		"description": "Progressively enhance fieldsets into a validated step-by-step form.",
 		"demo_url": "https://aarongustafson.github.io/form-fieldset-progress/demo/",
-		"npm_package": "@aarongustafson/form-fieldset-progress"
+		"npm_package": "@aarongustafson/form-fieldset-progress",
+		"category": "forms",
+		"image": "form-fieldset-progress-social-preview.jpg"
 	},
 	{
 		"name": "form-matching-fields",
 		"github": "aarongustafson/form-matching-fields",
 		"description": "Web component wrapper that adds additive validation to ensure two text-type fields match.",
 		"demo_url": "https://aarongustafson.github.io/form-matching-fields/demo/",
-		"npm_package": "@aarongustafson/form-matching-fields"
+		"npm_package": "@aarongustafson/form-matching-fields",
+		"category": "forms",
+		"image": "form-matching-fields-social-preview.jpg"
 	},
 	{
 		"name": "form-maxlength-progress",
 		"github": "aarongustafson/form-maxlength-progress",
 		"description": "Indicates someone’s progress toward the limit of a field’s `maxlength` value.",
 		"demo_url": "https://aarongustafson.github.io/form-maxlength-progress/demo/",
-		"npm_package": "@aarongustafson/form-maxlength-progress"
+		"npm_package": "@aarongustafson/form-maxlength-progress",
+		"category": "forms",
+		"image": "form-maxlength-progress-social-preview.jpg"
 	},
 	{
 		"name": "form-multi-switch",
 		"github": "aarongustafson/form-multi-switch",
 		"description": "Progressively enhance native radio groups into accessible light-DOM segmented controls.",
 		"demo_url": "https://aarongustafson.github.io/form-multi-switch/demo/",
-		"npm_package": "@aarongustafson/form-multi-switch"
+		"npm_package": "@aarongustafson/form-multi-switch",
+		"category": "forms",
+		"image": "form-multi-switch-social-preview.jpg"
 	},
 	{
 		"name": "form-obfuscator",
 		"github": "aarongustafson/form-obfuscator",
 		"description": "Web component that obfuscates fields when they don't have focus",
 		"demo_url": "https://aarongustafson.github.io/form-obfuscator/demo/",
-		"npm_package": "@aarongustafson/form-obfuscator"
+		"npm_package": "@aarongustafson/form-obfuscator",
+		"category": "forms",
+		"image": "form-obfuscator-social-preview.jpg"
 	},
 	{
 		"name": "form-repeatable",
 		"github": "aarongustafson/form-repeatable",
 		"description": "A web component that enables you to control the duplication of fields.",
 		"demo_url": "https://aarongustafson.github.io/form-repeatable/demo/",
-		"npm_package": "@aarongustafson/form-repeatable"
+		"npm_package": "@aarongustafson/form-repeatable",
+		"category": "forms",
+		"image": "form-repeatable-social-preview.jpg"
 	},
 	{
 		"name": "form-required-checkboxes",
 		"github": "aarongustafson/form-required-checkboxes",
 		"description": "Web component that enables requirement rules for checkbox groups.",
 		"demo_url": "https://aarongustafson.github.io/form-required-checkboxes/demo/",
-		"npm_package": "@aarongustafson/form-required-checkboxes"
+		"npm_package": "@aarongustafson/form-required-checkboxes",
+		"category": "forms",
+		"image": "form-required-checkboxes-social-preview.jpg"
 	},
 	{
 		"name": "form-required-if",
 		"github": "aarongustafson/form-required-if",
 		"description": "Web component that enables fields to be required based on the value(s) of other fields.",
 		"demo_url": "https://aarongustafson.github.io/form-required-if/demo/",
-		"npm_package": "@aarongustafson/form-required-if"
+		"npm_package": "@aarongustafson/form-required-if",
+		"category": "forms",
+		"image": "form-required-if-social-preview.jpg"
 	},
 	{
 		"name": "form-saver",
 		"github": "aarongustafson/form-saver",
 		"description": "A web component that stores (and restores) values within the form it wraps.",
 		"demo_url": "https://aarongustafson.github.io/form-saver/demo/",
-		"npm_package": "@aarongustafson/form-saver"
+		"npm_package": "@aarongustafson/form-saver",
+		"category": "forms",
+		"image": "form-saver-social-preview.jpg"
 	},
 	{
 		"name": "form-show-if",
 		"github": "aarongustafson/form-show-if",
 		"description": "Web component that enables you to make one HTML form field show (or not) based on the value(s) of another field.",
 		"demo_url": "https://aarongustafson.github.io/form-show-if/demo/",
-		"npm_package": "@aarongustafson/form-show-if"
+		"npm_package": "@aarongustafson/form-show-if",
+		"category": "forms",
+		"image": "form-show-if-social-preview.jpg"
 	},
 	{
 		"name": "form-validation-list",
 		"github": "aarongustafson/form-validation-list",
 		"description": "A web component comprising a list of validation rules for a field.",
 		"demo_url": "https://aarongustafson.github.io/form-validation-list/demo/",
-		"npm_package": "@aarongustafson/form-validation-list"
+		"npm_package": "@aarongustafson/form-validation-list",
+		"category": "forms",
+		"image": "form-validation-list-social-preview.jpg"
 	},
 	{
 		"name": "fullscreen-control",
 		"github": "aarongustafson/fullscreen-control",
-		"description": "A web component to add progressively enhance any video or iframe element to have fullscreen capabilities.",
+		"description": "Fullscreen controls for video, embedded content, or an authored wrapper.",
 		"demo_url": "https://aarongustafson.github.io/fullscreen-control/demo/",
-		"npm_package": "@aarongustafson/fullscreen-control"
+		"npm_package": "@aarongustafson/fullscreen-control",
+		"category": "media",
+		"image": "fullscreen-control-social-preview.jpg"
 	},
 	{
 		"name": "img-alt-overlay",
 		"github": "aarongustafson/img-alt-overlay",
 		"description": "Reveal an image's alternative text in a non-modal, in-image dialog",
 		"demo_url": "https://aarongustafson.github.io/img-alt-overlay/demo/",
-		"npm_package": "@aarongustafson/img-alt-overlay"
+		"npm_package": "@aarongustafson/img-alt-overlay",
+		"category": "media",
+		"image": "img-alt-overlay-social-preview.jpg"
+	},
+	{
+		"name": "img-enlarge",
+		"github": "aarongustafson/img-enlarge",
+		"description": "Progressively enhance images with a dialog-based enlarged view and grouped navigation.",
+		"demo_url": "https://aarongustafson.github.io/img-enlarge/demo/",
+		"npm_package": "@aarongustafson/img-enlarge",
+		"category": "media",
+		"image": "img-enlarge-social-preview.jpg"
 	},
 	{
 		"name": "lazy-img",
 		"github": "aarongustafson/lazy-img",
 		"description": "Web component that enables you to lazy load an image based on screen size.",
 		"demo_url": "https://aarongustafson.github.io/lazy-img/demo/",
-		"npm_package": "@aarongustafson/lazy-img"
+		"npm_package": "@aarongustafson/lazy-img",
+		"category": "media",
+		"image": "lazy-img-social-preview.jpg"
 	},
 	{
 		"name": "print-link-list",
 		"github": "aarongustafson/print-link-list",
 		"description": "Generate a deduplicated print-only list of links and citations.",
 		"demo_url": "https://aarongustafson.github.io/print-link-list/demo/",
-		"npm_package": "@aarongustafson/print-link-list"
+		"npm_package": "@aarongustafson/print-link-list",
+		"category": "utilities",
+		"image": "print-link-list-social-preview.jpg"
 	},
 	{
 		"name": "pull-to-refresh",
 		"github": "aarongustafson/pull-to-refresh",
 		"description": "Web component that enables pull-to-refresh functionality.",
 		"demo_url": "https://aarongustafson.github.io/pull-to-refresh/demo/",
-		"npm_package": "@aarongustafson/pull-to-refresh"
+		"npm_package": "@aarongustafson/pull-to-refresh",
+		"category": "navigation",
+		"image": "pull-to-refresh-social-preview.jpg"
+	},
+	{
+		"name": "script-dependent",
+		"github": "aarongustafson/script-dependent",
+		"description": "Reveals authored content only after its module and optional initializer are ready.",
+		"demo_url": "https://aarongustafson.github.io/script-dependent/demo/",
+		"npm_package": "@aarongustafson/script-dependent",
+		"category": "utilities",
+		"image": "script-dependent-social-preview.jpg"
 	},
 	{
 		"name": "tabbed-interface",
 		"github": "aarongustafson/tabbed-interface",
 		"description": "A web component that transforms heading-structured content into an accessible tabbed interface.",
 		"demo_url": "https://aarongustafson.github.io/tabbed-interface/demo/",
-		"npm_package": "@aarongustafson/tabbed-interface"
+		"npm_package": "@aarongustafson/tabbed-interface",
+		"category": "navigation",
+		"image": "tabbed-interface-social-preview.jpg"
 	},
 	{
 		"name": "table-modifiable",
 		"github": "aarongustafson/table-modifiable",
 		"description": "A web component that enables users to hide & show columns on an HTML table.",
 		"demo_url": "https://aarongustafson.github.io/table-modifiable/demo/",
-		"npm_package": "@aarongustafson/table-modifiable"
+		"npm_package": "@aarongustafson/table-modifiable",
+		"category": "navigation",
+		"image": "table-modifiable-social-preview.jpg"
 	},
 	{
 		"name": "table-sortable",
 		"github": "aarongustafson/table-sortable",
 		"description": "A web component to enable users to sort the data in a table based on table cell values.",
 		"demo_url": "https://aarongustafson.github.io/table-sortable/demo/",
-		"npm_package": "@aarongustafson/table-sortable"
+		"npm_package": "@aarongustafson/table-sortable",
+		"category": "navigation",
+		"image": "table-sortable-social-preview.jpg"
 	},
 	{
 		"name": "theme-switcher",
 		"github": "aarongustafson/theme-switcher",
 		"description": "A light-DOM tri-state theme picker built on form-multi-switch.",
 		"demo_url": "https://aarongustafson.github.io/theme-switcher/demo/",
-		"npm_package": "@aarongustafson/theme-switcher"
+		"npm_package": "@aarongustafson/theme-switcher",
+		"category": "utilities",
+		"image": "theme-switcher-social-preview.jpg"
 	}
 ]
