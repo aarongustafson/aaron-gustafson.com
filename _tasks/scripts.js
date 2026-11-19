@@ -96,8 +96,15 @@ const scripts = async () => {
 			const folderPath = path.join(source_folder, folder);
 			const outputFile = folder + ".js";
 			const outputMin = folder + ".min.js";
+			const sourcePattern =
+				folder === "web-components"
+					? [
+						path.join(folderPath, "banner.js"),
+						path.join(folderPath, "fullscreen-control.js"),
+					]
+					: path.join(folderPath, "*.js");
 
-			let stream = src(path.join(folderPath, "*.js"))
+			let stream = src(sourcePattern)
 				// Concatenate files
 				.pipe(concat(outputFile))
 

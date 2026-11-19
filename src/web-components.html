@@ -44,11 +44,12 @@ permalink: /web-components/
 <ul class="listing listing--grid listing--web-components" data-web-component-list>
 	{% for component in web_components %}
 	{% set component_name %}<code>&lt;{{ component.name }}&gt;</code>{% endset %}
+	{% set component_search_text %}{{ component.description | markdownify | striptags }}{% endset %}
 	<li class="listing__item listing__item--{{ loop.index }} web-component"
 		id="web-component-{{ component.name }}"
 		data-web-component
 		data-category="{{ component.category or 'utilities' }}"
-		data-search="{{ component.name }} {{ component.description }}">
+		data-search="{{ component.name }} {{ component_search_text | escape }}">
 		{% if component.image %}
 		<img class="web-component__image"
 			src="/i/share-cards/{{ component.image }}"
