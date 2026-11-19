@@ -140,6 +140,9 @@ permalink: /web-components/
 
 	.web-components__controls input[type="search"] {
 		-webkit-appearance: textfield;
+		background: #fffcf4;
+		color: #2c2825;
+		color-scheme: light;
 	}
 
 	.web-components__controls input:focus,
@@ -148,6 +151,11 @@ permalink: /web-components/
 		border-color: var(--theme-button-background);
 		outline: 3px solid var(--theme-button-background);
 		outline-offset: 2px;
+	}
+
+	.web-components__controls input[type="search"]:focus {
+		background: #fffcf4;
+		color: #2c2825;
 	}
 
 	.web-components__controls label + input,
@@ -231,6 +239,11 @@ permalink: /web-components/
 	.web-component .listing__item__title {
 		font-size: 1.35rem;
 		margin-block: 0 1rem;
+	}
+
+	.web-component .listing__item__title code {
+		white-space: normal;
+		overflow-wrap: anywhere;
 	}
 
 	.web-component__links {

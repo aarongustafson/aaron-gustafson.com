@@ -158,6 +158,8 @@ test("web component catalog remains server rendered and progressively enhances",
 	assert.match(source, /background:\s*var\(--theme-input-background/);
 	assert.match(source, /border:\s*1px solid var\(--theme-border/);
 	assert.match(source, /\.web-components__controls select,\n\s*\.web-components__controls select option\s*\{[\s\S]*?background:\s*#fffcf4;[\s\S]*?color:\s*#2c2825;/);
+	assert.match(source, /\.web-components__controls input\[type="search"\]\s*\{[\s\S]*?background:\s*#fffcf4;[\s\S]*?color:\s*#2c2825;/);
+	assert.match(source, /\.web-component \.listing__item__title code\s*\{[\s\S]*?white-space:\s*normal;/);
 	assert.match(script, /controls\.hidden = false/);
 });
 
