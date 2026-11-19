@@ -19,52 +19,69 @@ permalink: /web-components/
 </p>
 
 {% if web_components.length > 0 %}
-<ul class="listing listing--web-components">
+<script-dependent script="/j/web-components/catalog.js" hidden>
+	<search class="web-components__controls" aria-label="Filter web components">
+		<label for="web-component-search">Search components</label>
+		<input id="web-component-search" type="search" autocomplete="off"
+			placeholder="Name or description" data-web-component-search>
+
+		<label for="web-component-category">Category</label>
+		<select id="web-component-category" data-web-component-category>
+			<option value="">All components</option>
+			<option value="forms">Forms</option>
+			<option value="media">Media</option>
+			<option value="navigation">Navigation</option>
+			<option value="utilities">Utilities</option>
+		</select>
+		<button type="button" data-web-component-reset>Reset filters</button>
+	</search>
+</script-dependent>
+
+<p class="web-components__status" data-web-component-status aria-live="polite">
+	{{ web_components.length }} components
+</p>
+
+<ul class="listing listing--grid listing--web-components" data-web-component-list>
 	{% for component in web_components %}
 	{% set component_name %}<code>&lt;{{ component.name }}&gt;</code>{% endset %}
-	<li class="listing__item listing__item--{{ loop.index }} web-component" id="web-component-{{ component.name }}">
-		<h2 class="listing__item__title">
-			{{ component_name | safe }}
-		</h2>
-
-		{% if component.description %}
-		<p class="listing__item__description">{{ component.description | markdownify | safe }}</p>
+	{% set component_search_text %}{{ component.description | markdownify | striptags }}{% endset %}
+	<li class="listing__item listing__item--{{ loop.index }} web-component"
+		id="web-component-{{ component.name }}"
+		data-web-component
+		data-category="{{ component.category or 'utilities' }}"
+		data-search="{{ component.name }} {{ component_search_text | escape }}">
+		{% if component.image %}
+		<img class="web-component__image"
+			src="/i/share-cards/{{ component.image }}"
+			alt=""
+			width="1200"
+			height="630"
+			loading="lazy">
+		{% else %}
+		<div class="web-component__placeholder" aria-hidden="true">
+			<code>&lt;{{ component.name }}&gt;</code>
+		</div>
 		{% endif %}
 
-		{% if component.npm_package or component.github %}
-		<p class="web-component__badges">
-			{% if component.npm_package %}
-			<a href="https://www.npmjs.com/package/{{ component.npm_package }}">
-				<img src="https://img.shields.io/npm/v/{{ component.npm_package }}.svg"
-					alt="{{ component.name }} npm version" loading="lazy">
-			</a>
-			{% endif %} {% if component.github %}
-			<a href="https://github.com/{{ component.github }}/actions">
-				<img src="https://img.shields.io/github/actions/workflow/status/{{ component.github }}/ci.yml.svg?branch=main"
-					alt="{{ component.name }} build status" data-responsiver="false" loading="lazy">
-			</a>
+		<div class="web-component__body">
+			<p class="web-component__category">{{ component.category or "utilities" }}</p>
+			<h2 class="listing__item__title">
+				{{ component_name | safe }}
+			</h2>
+
+			{% if component.description %}
+			<p class="listing__item__description">{{ component.description | markdownify | safe }}</p>
 			{% endif %}
-		</p>
-		{% endif %}
 
-		{% if component.npm_package %}
-		<p class="web-component__install">
-			<code class="web-component__install__code">npm install {{ component.npm_package }}</code>
-		</p>
-		{% endif %}
-
-		<div class="web-component__links">
-			{% if component.github %}
-			<a href="https://github.com/{{ component.github }}" class="web-component__link">
-				Docs (GitHub)
-			</a>
-			{% endif %} {% if component.demo_url %}
-			<a href="{{ component.demo_url }}" class="web-component__link"> Demo </a>
-			{% endif %} {% if component.npm_package %}
-			<a href="https://www.npmjs.com/package/{{ component.npm_package }}" class="web-component__link">
-				npm
-			</a>
-			{% endif %}
+			<div class="web-component__links">
+				{% if component.github %}
+				<a href="https://github.com/{{ component.github }}" class="web-component__link">Docs</a>
+				{% endif %} {% if component.demo_url %}
+				<a href="{{ component.demo_url }}" class="web-component__link">Demo</a>
+				{% endif %} {% if component.npm_package %}
+				<a href="https://www.npmjs.com/package/{{ component.npm_package }}" class="web-component__link">npm</a>
+				{% endif %}
+			</div>
 		</div>
 	</li>
 	{% endfor %}
@@ -73,42 +90,208 @@ permalink: /web-components/
 <p><em>No web components are currently listed. Check back soon!</em></p>
 {% endif %}
 
+<script type="module" src="/j/script-dependent/define.js"></script>
+
 <style>
-	.listing {
+	body.web-components main .layout-container {
+		max-inline-size: 72rem;
+	}
+
+	.web-components__controls {
+		display: grid;
+		block-size: auto;
+		height: auto;
+		gap: 0.25rem 0.75rem;
+		align-items: end;
+		margin-block: 1rem 1.25rem;
+		padding: 1rem;
+		border: 1px solid var(--web-component-border, var(--theme-border, currentColor));
+		border-radius: 0.375rem;
+	}
+
+	.web-components__controls label {
+		font-weight: bold;
+	}
+
+	.web-components__controls input,
+	.web-components__controls select {
+		box-sizing: border-box;
+		background: var(--theme-input-background, var(--theme-background));
+		color: var(--theme-text);
+		border: 1px solid var(--theme-border, var(--theme-text, currentColor));
+		border-radius: 3px;
+		font: inherit;
+		font-size: 1rem;
+		inline-size: 100%;
+		min-block-size: 2.75rem;
+		margin: 0;
+		padding: 10px;
+		transition:
+			background-color var(--default-transition, 0.2s),
+			color var(--default-transition, 0.2s);
+	}
+
+	.web-components__controls select,
+	.web-components__controls select option {
+		background: var(--theme-background);
+		background: #fffcf4;
+		color: #2c2825;
+		color-scheme: light;
+	}
+
+	.web-components__controls input[type="search"] {
+		-webkit-appearance: textfield;
+		background: #fffcf4;
+		color: #2c2825;
+		color-scheme: light;
+	}
+
+	.web-components__controls input:focus,
+	.web-components__controls select:focus {
+		background: var(--theme-input-background, var(--theme-background));
+		border-color: var(--theme-button-background);
+		outline: 3px solid var(--theme-button-background);
+		outline-offset: 2px;
+	}
+
+	.web-components__controls input[type="search"]:focus {
+		background: #fffcf4;
+		color: #2c2825;
+	}
+
+	.web-components__controls label + input,
+	.web-components__controls label + select,
+	.web-components__controls label + button,
+	.web-components__controls label ~ label,
+	.web-components__controls label {
+		margin-block-start: 0;
+	}
+
+	.web-components__controls button {
+		margin: 0;
+		min-block-size: 2.75rem;
+	}
+
+	.web-components__status {
+		color: var(--theme-muted, inherit);
+		margin-block: 0 1rem;
+	}
+
+	.listing--web-components {
+		gap: 1.5rem;
+		margin-inline: 0;
+	}
+
+	.web-component {
 		display: flex;
 		flex-direction: column;
-		gap: 2rem;
+		--web-component-border: var(--theme-border, var(--theme-text, currentColor));
+		border: 1px solid var(--web-component-border);
+		border-radius: 0.375rem;
+		overflow: hidden;
+		margin-block-start: 0;
 	}
 
-	.listing__item+.listing__item::before {
-		content: "";
-		inline-size: 4rem;
-		border-top: 1px solid;
-		display: block;
-		margin-block: 0 2rem;
-		margin-inline: auto;
+	.web-component[hidden] {
+		display: none;
 	}
 
-	.listing__item__title {
-		font-size: 2rem;
+	.web-component__image,
+	.web-component__placeholder {
+		aspect-ratio: 40 / 21;
+		block-size: auto;
+		inline-size: 100%;
+		object-fit: cover;
+	}
+
+	.web-component__placeholder {
+		display: grid;
+		place-items: center;
+		box-sizing: border-box;
+		padding: 1.5rem;
+		background: var(--theme-button-background, #454545);
+		color: var(--theme-button-text, #fff);
+	}
+
+	.web-component__placeholder code {
+		font-size: clamp(0.8rem, 2.5vw, 1.1rem);
+		overflow-wrap: anywhere;
+	}
+
+	.web-component__body {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		padding-block-start: 1.25rem;
+		padding-inline: 1.25rem;
+	}
+
+	.listing__item__description {
+		flex-grow: 1;
+	}
+
+	.web-component__category {
+		margin: 0 0 0.5rem;
+		text-transform: uppercase;
+		letter-spacing: 0.08em;
+		font-size: 0.75rem;
+		font-weight: bold;
+	}
+
+	.web-component .listing__item__title {
+		font-size: 1.35rem;
+		margin-block: 0 1rem;
+	}
+
+	.web-component .listing__item__title code {
+		white-space: normal;
+		overflow-wrap: anywhere;
 	}
 
 	.web-component__links {
 		display: flex;
-		gap: 1rem;
+		align-items: stretch;
+		border-block-start: 1px solid var(--web-component-border);
+		margin-inline: -1.25rem;
+		margin-block: 1.25rem 0;
 	}
 
 	.web-component__links a {
+		flex: 1 1 0;
 		margin: 0;
+		padding-block: 1rem;
+		text-align: center;
 	}
 
-	.web-component__badges {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.5rem;
+	.web-component__links a + a {
+		border-inline-start: 1px solid var(--web-component-border);
 	}
 
-	.web-component__badges a {
-		margin: 0;
+	@media screen and (min-width: 40em) {
+		.web-components__controls {
+			grid-template-columns: 1fr 12rem 10rem;
+			align-items: end;
+			padding: 0;
+			border: 0;
+		}
+
+		.web-components__controls label {
+			grid-row: 1;
+		}
+
+		.web-components__controls input,
+		.web-components__controls select {
+			grid-row: 2;
+		}
+
+		.web-components__controls button {
+			grid-column: 3;
+			grid-row: 2;
+		}
+
+		.listing--web-components {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			margin-inline: 0;
+		}
 	}
 </style>

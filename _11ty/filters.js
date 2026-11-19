@@ -54,6 +54,9 @@ function getContentTypeByPath(path) {
 }
 
 export default {
+	striptags: (html) => {
+		return (html || "").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim();
+	},
 	readable_date: (date) => {
 		return parse_date(date).toFormat("dd LLL yyyy");
 	},

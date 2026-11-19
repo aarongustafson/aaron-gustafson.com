@@ -39,6 +39,8 @@ export async function copyPostModules({
 	await copyModules([
 		[path.join(packages, "img-alt-overlay"), "img-alt-overlay"],
 		[path.join(packages, "print-link-list"), "print-link-list"],
+		[path.join(packages, "script-dependent"), "script-dependent"],
+		[path.join(source_folder, "web-components"), "web-components"],
 		[source, "post-components"],
 	], outputs);
 }
@@ -94,8 +96,15 @@ const scripts = async () => {
 			const folderPath = path.join(source_folder, folder);
 			const outputFile = folder + ".js";
 			const outputMin = folder + ".min.js";
+			const sourcePattern =
+				folder === "web-components"
+					? [
+						path.join(folderPath, "banner.js"),
+						path.join(folderPath, "fullscreen-control.js"),
+					]
+					: path.join(folderPath, "*.js");
 
-			let stream = src(path.join(folderPath, "*.js"))
+			let stream = src(sourcePattern)
 				// Concatenate files
 				.pipe(concat(outputFile))
 

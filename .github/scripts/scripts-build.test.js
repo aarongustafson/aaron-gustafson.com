@@ -24,6 +24,11 @@ test("script rebuilds retain unchanged sources and recreate clean output determi
 		path.join(source, "_javascript/post-components"),
 		{ recursive: true },
 	);
+	fs.cpSync(
+		new URL("../../src/_javascript/web-components", import.meta.url),
+		path.join(source, "_javascript/web-components"),
+		{ recursive: true },
+	);
 	fs.writeFileSync(`${main}/first.js`, "window.first = 1;");
 	fs.writeFileSync(`${main}/second.js`, "window.second = 2;");
 	Object.assign(config, { source, static: output, destination: dist });
