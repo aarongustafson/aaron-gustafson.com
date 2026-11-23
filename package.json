@@ -70,6 +70,7 @@
 		"@aarongustafson/form-multi-switch": "^0.1.0",
 		"@aarongustafson/form-saver": "^1.0.0",
 		"@aarongustafson/img-alt-overlay": "^1.0.0",
+		"@aarongustafson/list-filter": "^1.0.0",
 		"@aarongustafson/print-link-list": "^1.0.3",
 		"@aarongustafson/script-dependent": "^1.0.0",
 		"@aarongustafson/theme-switcher": "^0.1.0",
