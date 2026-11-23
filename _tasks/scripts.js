@@ -39,8 +39,7 @@ export async function copyPostModules({
 	await copyModules([
 		[path.join(packages, "img-alt-overlay"), "img-alt-overlay"],
 		[path.join(packages, "print-link-list"), "print-link-list"],
-		[path.join(packages, "script-dependent"), "script-dependent"],
-		[path.join(source_folder, "web-components"), "web-components"],
+		[path.join(packages, "list-filter"), "list-filter"],
 		[source, "post-components"],
 	], outputs);
 }

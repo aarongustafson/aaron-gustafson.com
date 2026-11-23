@@ -134,18 +134,16 @@ test("web component page IDs do not collide with global UI IDs", () => {
 	assert.doesNotMatch(source, /id="\{\{ component\.name \}\}"/);
 });
 
-test("web component catalog remains server rendered and progressively enhances", () => {
+test("web component catalog remains server rendered and uses list-filter", () => {
 	const source = fs.readFileSync(
 		new URL("../../src/web-components.html", import.meta.url),
 		"utf8",
 	);
-	const script = fs.readFileSync(
-		new URL("../../src/_javascript/web-components/catalog.js", import.meta.url),
-		"utf8",
-	);
-	assert.match(source, /<script-dependent script="\/j\/web-components\/catalog\.js" hidden>/);
-	assert.match(source, /data-web-component-search/);
-	assert.match(source, /data-web-component-category/);
+	assert.match(source, /<list-filter[\s\S]*for="web-components-list"[\s\S]*search[\s\S]*categories/);
+	assert.match(source, /data-list-filter-ref="search"/);
+	assert.match(source, /data-list-filter-ref="categories"/);
+	assert.match(source, /data-list-filter-ref="reset"/);
+	assert.match(source, /data-list-filter-ref="output"/);
 	assert.match(source, /listing--grid listing--web-components/);
 	assert.doesNotMatch(source, /<micro-lighter\b|web-component__install|data-copy=/);
 	assert.match(source, /block-size:\s*auto/);
@@ -161,7 +159,7 @@ test("web component catalog remains server rendered and progressively enhances",
 	assert.match(source, /\.web-components__controls input\[type="search"\]\s*\{[\s\S]*?background:\s*#fffcf4;[\s\S]*?color:\s*#2c2825;/);
 	assert.match(source, /\.web-component \.listing__item__title code\s*\{[\s\S]*?white-space:\s*normal;/);
 	assert.match(source, /component.description \| markdownify \| striptags/);
-	assert.match(script, /controls\.hidden = false/);
+	assert.doesNotMatch(source, /data-web-component-search|data-web-component-category|data-web-component-reset|catalog\.js/);
 });
 
 test("head restores preferences before styles and maps every bare module import", () => {
