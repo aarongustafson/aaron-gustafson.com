@@ -19,29 +19,36 @@ permalink: /web-components/
 </p>
 
 {% if web_components.length > 0 %}
-<script-dependent script="/j/web-components/catalog.js" hidden>
-	<search class="web-components__controls" aria-label="Filter web components">
-		<label for="web-component-search">Search components</label>
-		<input id="web-component-search" type="search" autocomplete="off"
-			placeholder="Name or description" data-web-component-search>
+<list-filter
+	for="web-components-list"
+	search
+	categories
+	title="Filter web components"
+	search-label="Search components"
+	search-placeholder="Name or description"
+	categories-label="Category"
+	categories-placeholder="All components"
+	reset-label="Reset filters"
+	output-label="{count} components"
+	output-label-one="{count} component"
+>
+	<template>
+		<search class="web-components__controls" aria-label="Filter web components">
+			<label for="web-component-search">Search components</label>
+			<input id="web-component-search" type="search" autocomplete="off"
+				placeholder="Name or description" data-list-filter-ref="search">
 
-		<label for="web-component-category">Category</label>
-		<select id="web-component-category" data-web-component-category>
-			<option value="">All components</option>
-			<option value="forms">Forms</option>
-			<option value="media">Media</option>
-			<option value="navigation">Navigation</option>
-			<option value="utilities">Utilities</option>
-		</select>
-		<button type="button" data-web-component-reset>Reset filters</button>
-	</search>
-</script-dependent>
+			<label for="web-component-category">Category</label>
+			<select id="web-component-category" data-list-filter-ref="categories">
+				<option value="">All components</option>
+			</select>
+			<button type="button" data-list-filter-ref="reset">Reset filters</button>
+			<output data-list-filter-ref="output" aria-live="off"></output>
+		</search>
+	</template>
+</list-filter>
 
-<p class="web-components__status" data-web-component-status aria-live="polite">
-	{{ web_components.length }} components
-</p>
-
-<ul class="listing listing--grid listing--web-components" data-web-component-list>
+<ul id="web-components-list" class="listing listing--grid listing--web-components" data-web-component-list>
 	{% for component in web_components %}
 	{% set component_name %}<code>&lt;{{ component.name }}&gt;</code>{% endset %}
 	{% set component_search_text %}{{ component.description | markdownify | striptags }}{% endset %}
@@ -90,7 +97,7 @@ permalink: /web-components/
 <p><em>No web components are currently listed. Check back soon!</em></p>
 {% endif %}
 
-<script type="module" src="/j/script-dependent/define.js"></script>
+<script type="module" src="/j/list-filter/define.js"></script>
 
 <style>
 	body.web-components main .layout-container {
