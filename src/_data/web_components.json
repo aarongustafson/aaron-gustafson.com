@@ -162,6 +162,15 @@
 		"image": "lazy-img-social-preview.jpg"
 	},
 	{
+		"name": "list-filter",
+		"github": "aarongustafson/list-filter",
+		"description": "Progressively filter native lists with search and category controls.",
+		"demo_url": "https://aarongustafson.github.io/list-filter/demo/",
+		"npm_package": "@aarongustafson/list-filter",
+		"category": "utilities",
+		"image": "list-filter-social-preview.jpg"
+	},
+	{
 		"name": "print-link-list",
 		"github": "aarongustafson/print-link-list",
 		"description": "Generate a deduplicated print-only list of links and citations.",
