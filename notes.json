@@ -15,7 +15,7 @@
     },
     {
       "area": "dependencies",
-      "checked_at": "2026-10-23",
+      "checked_at": "2026-11-23",
       "result": "Only major bumps and sass/uglify-es patch outdated; nothing worth a PR",
       "follow_up": null
     },
@@ -27,13 +27,13 @@
     },
     {
       "area": "performance",
-      "checked_at": "2026-11-04",
+      "checked_at": "2026-11-23",
       "result": "No actionable perf work identified",
       "follow_up": null
     },
     {
       "area": "docs",
-      "checked_at": "2026-11-14",
+      "checked_at": "2026-11-23",
       "result": "No actionable docs/QA/forward work identified this run",
       "follow_up": null
     }
