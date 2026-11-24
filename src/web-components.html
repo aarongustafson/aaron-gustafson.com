@@ -197,10 +197,31 @@ permalink: /web-components/
 		border-radius: 0.375rem;
 		overflow: hidden;
 		margin-block-start: 0;
+		opacity: 1;
+		transform: translateY(0);
+		transition:
+			opacity 250ms ease,
+			transform 250ms ease,
+			display 250ms allow-discrete;
 	}
 
 	.web-component[hidden] {
 		display: none;
+		opacity: 0;
+		transform: translateY(0.5rem);
+	}
+
+	@starting-style {
+		.web-component:not([hidden]) {
+			opacity: 0;
+			transform: translateY(0.5rem);
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.web-component {
+			transition: none;
+		}
 	}
 
 	.web-component__image,
