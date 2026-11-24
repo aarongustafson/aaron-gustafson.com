@@ -163,6 +163,7 @@ test("web component catalog remains server rendered and uses list-filter", () =>
 	assert.match(source, /transition:[\s\S]*?display 250ms allow-discrete/);
 	assert.match(source, /@starting-style\s*\{[\s\S]*?\.web-component:not\(\[hidden\]\)/);
 	assert.match(source, /@media \(prefers-reduced-motion: reduce\)/);
+	assert.match(source, /transform:\s*scale\((?:0\.98|1)\)/);
 });
 
 test("head restores preferences before styles and maps every bare module import", () => {
