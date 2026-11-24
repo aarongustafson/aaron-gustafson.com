@@ -98,6 +98,32 @@ permalink: /web-components/
 {% endif %}
 
 <script type="module" src="/j/list-filter/define.js"></script>
+<script type="module">
+	const filter = document.querySelector("list-filter");
+	const list = document.querySelector("#web-components-list");
+	const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+	let fadeTimer;
+
+	if (filter && list && !reducedMotion.matches) {
+		function beginListFade() {
+			window.clearTimeout(fadeTimer);
+			list.classList.remove("is-filtering-in");
+			list.classList.add("is-filtering-out");
+
+			fadeTimer = window.setTimeout(() => {
+				list.classList.remove("is-filtering-out");
+				list.classList.add("is-filtering-in");
+				fadeTimer = window.setTimeout(() => {
+					list.classList.remove("is-filtering-in");
+				}, 250);
+			}, 120);
+		}
+
+		filter.addEventListener("input", beginListFade, true);
+		filter.addEventListener("change", beginListFade, true);
+		filter.addEventListener("click", beginListFade, true);
+	}
+</script>
 
 <style>
 	body.web-components main .layout-container {
@@ -187,6 +213,17 @@ permalink: /web-components/
 	.listing--web-components {
 		gap: 1.5rem;
 		margin-inline: 0;
+		opacity: 1;
+		transition: opacity 250ms ease;
+	}
+
+	.listing--web-components.is-filtering-out {
+		opacity: 0;
+		transition-duration: 120ms;
+	}
+
+	.listing--web-components.is-filtering-in {
+		opacity: 1;
 	}
 
 	.web-component {
@@ -197,31 +234,10 @@ permalink: /web-components/
 		border-radius: 0.375rem;
 		overflow: hidden;
 		margin-block-start: 0;
-		opacity: 1;
-		transform: scale(1);
-		transition:
-			opacity 250ms ease,
-			transform 250ms ease,
-			display 250ms allow-discrete;
 	}
 
 	.web-component[hidden] {
 		display: none;
-		opacity: 0;
-		transform: scale(0.98);
-	}
-
-	@starting-style {
-		.web-component:not([hidden]) {
-			opacity: 0;
-			transform: scale(0.98);
-		}
-	}
-
-	@media (prefers-reduced-motion: reduce) {
-		.web-component {
-			transition: none;
-		}
 	}
 
 	.web-component__image,

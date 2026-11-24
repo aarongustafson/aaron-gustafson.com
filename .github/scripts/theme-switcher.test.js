@@ -160,10 +160,9 @@ test("web component catalog remains server rendered and uses list-filter", () =>
 	assert.match(source, /\.web-component \.listing__item__title code\s*\{[\s\S]*?white-space:\s*normal;/);
 	assert.match(source, /component.description \| markdownify \| striptags/);
 	assert.doesNotMatch(source, /data-web-component-search|data-web-component-category|data-web-component-reset|catalog\.js/);
-	assert.match(source, /transition:[\s\S]*?display 250ms allow-discrete/);
-	assert.match(source, /@starting-style\s*\{[\s\S]*?\.web-component:not\(\[hidden\]\)/);
-	assert.match(source, /@media \(prefers-reduced-motion: reduce\)/);
-	assert.match(source, /transform:\s*scale\((?:0\.98|1)\)/);
+	assert.match(source, /is-filtering-out/);
+	assert.match(source, /is-filtering-in/);
+	assert.match(source, /prefers-reduced-motion/);
 });
 
 test("head restores preferences before styles and maps every bare module import", () => {
