@@ -98,6 +98,30 @@ permalink: /web-components/
 {% endif %}
 
 <script type="module" src="/j/list-filter/define.js"></script>
+<script type="module">
+	const filter = document.querySelector("list-filter");
+	const list = document.querySelector("#web-components-list");
+	const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+	let fadeTimer;
+
+	if (filter && list && !reducedMotion.matches) {
+		function beginListFade() {
+			window.clearTimeout(fadeTimer);
+			list.classList.remove("is-filtering-in");
+			list.classList.add("is-filtering-out");
+
+			fadeTimer = window.setTimeout(() => {
+				list.classList.remove("is-filtering-out");
+				list.classList.add("is-filtering-in");
+				fadeTimer = window.setTimeout(() => {
+					list.classList.remove("is-filtering-in");
+				}, 250);
+			}, 120);
+		}
+
+		filter.addEventListener("list-filter:change", beginListFade);
+	}
+</script>
 
 <style>
 	body.web-components main .layout-container {
@@ -187,6 +211,22 @@ permalink: /web-components/
 	.listing--web-components {
 		gap: 1.5rem;
 		margin-inline: 0;
+		opacity: 1;
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		.listing--web-components {
+			transition: opacity 250ms ease;
+		}
+
+		.listing--web-components.is-filtering-out {
+			opacity: 0;
+			transition-duration: 120ms;
+		}
+
+		.listing--web-components.is-filtering-in {
+			opacity: 1;
+		}
 	}
 
 	.web-component {
