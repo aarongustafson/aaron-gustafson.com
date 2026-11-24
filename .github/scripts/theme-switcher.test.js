@@ -163,6 +163,7 @@ test("web component catalog remains server rendered and uses list-filter", () =>
 	assert.match(source, /is-filtering-out/);
 	assert.match(source, /is-filtering-in/);
 	assert.match(source, /prefers-reduced-motion/);
+	assert.match(source, /@media \(prefers-reduced-motion: no-preference\)/);
 });
 
 test("head restores preferences before styles and maps every bare module import", () => {

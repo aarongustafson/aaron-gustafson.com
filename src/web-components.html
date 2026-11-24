@@ -214,16 +214,21 @@ permalink: /web-components/
 		gap: 1.5rem;
 		margin-inline: 0;
 		opacity: 1;
-		transition: opacity 250ms ease;
 	}
 
-	.listing--web-components.is-filtering-out {
-		opacity: 0;
-		transition-duration: 120ms;
-	}
+	@media (prefers-reduced-motion: no-preference) {
+		.listing--web-components {
+			transition: opacity 250ms ease;
+		}
 
-	.listing--web-components.is-filtering-in {
-		opacity: 1;
+		.listing--web-components.is-filtering-out {
+			opacity: 0;
+			transition-duration: 120ms;
+		}
+
+		.listing--web-components.is-filtering-in {
+			opacity: 1;
+		}
 	}
 
 	.web-component {
