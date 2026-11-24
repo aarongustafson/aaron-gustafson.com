@@ -119,9 +119,7 @@ permalink: /web-components/
 			}, 120);
 		}
 
-		filter.addEventListener("input", beginListFade, true);
-		filter.addEventListener("change", beginListFade, true);
-		filter.addEventListener("click", beginListFade, true);
+		filter.addEventListener("list-filter:change", beginListFade);
 	}
 </script>
 
