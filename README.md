@@ -85,6 +85,15 @@ open them for editing:
 | `npm run netlify:dev` | Runs the site through Netlify Dev when local testing requires Netlify behavior.                                                            |
 | `npm run serve`       | Serves the existing `dist` directory at `http://127.0.0.1:8888` without rebuilding it.                                                     |
 
+## Web component listings
+
+The web components page is maintained in `src/_data/web_components.json`.
+To feature related notebook entries in a component’s card, add a `related_posts`
+array containing post slugs (the Markdown filename without its date prefix or
+extension). Entries reuse the tag-page teaser with compact styling, using each
+published post’s title, URL, and date. Posts excluded from the build are not shown.
+Omit `related_posts` for components without a related entry.
+
 ## Theme preferences
 
 The color-theme button opens a native dialog containing
