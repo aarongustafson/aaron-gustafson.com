@@ -1,6 +1,7 @@
 ---
 title: "Drag and Drop without Leaving Anyone Behind"
 date: 2026-10-14 18:04:34 +00:00
+last_updated_at: 2026-11-25 18:52:55 +00:00
 comments: true
 tags:
   [
@@ -48,6 +49,8 @@ That last part is important: drag-and-drop is an additional path, not the only p
 
 The wrapper doesn’t add a button role or another tab stop. The file input and label already provide the keyboard interaction, so manufacturing a second control would make the interface more complicated without making it more capable.
 
+Clicking the enhanced surface outside the label or another interactive control opens the picker too. That larger pointer target doesn’t replace the native input’s keyboard behavior.
+
 ## What happens when files are dropped?
 
 When someone drops files onto the enhanced surface, the component:
@@ -61,6 +64,8 @@ When someone drops files onto the enhanced surface, the component:
 Because the accepted files belong to the actual input, they participate in an ordinary form submission and appear in `FormData` just like files chosen through the picker. Your validation and upload code can listen for the same events either way.
 
 A mixed drop doesn’t have to be all or nothing. If someone drops a PDF, a JPEG, and an unsupported executable, the acceptable files remain selected and the rejected one is named in the status message. That’s more useful than silently discarding the entire batch—or, worse, appearing to accept files that will disappear later.
+
+An accepted drop replaces the previous selection; it doesn’t append to it. A wholly rejected drop leaves the previous selection intact. Picker selections use the browser’s native behavior—the component’s rejection messages apply to drops.
 
 ## `accept` is useful, but it isn’t security
 
@@ -111,6 +116,8 @@ A preview confirms which file was selected. It does _not_ mean the file has been
 
 The component revokes its temporary object URLs whenever previews are replaced, disabled, or removed. That housekeeping isn’t visible, but it keeps a helpful flourish from turning into a resource leak.
 
+A normal form reset clears stale previews, drag state, and drop feedback after the browser resets the input. Canceling the reset leaves them alone. Choosing files through the picker also clears old drop feedback.
+
 ## Tell people what happened
 
 Drop outcomes are written to a polite, atomic status region. Accepted files, rejected types, and extra files in a single-file field each have their own message, so partial success doesn’t get flattened into a vague “Something went wrong.”
@@ -134,6 +141,48 @@ The `{files}` token becomes a comma-separated list of filenames and `{count}` be
 
 Filename announcements can get long, especially when `multiple` is involved. That’s another reason to choose useful constraints instead of accepting everything by default. If your workflow expects dozens of files, consider whether a summarized count and a visible file list would be kinder than reading every name aloud.
 
+### Shared wording and plural forms
+
+The current repository source adds shared messages, a drop-result event, and state and refresh APIs. These additions aren’t in the published npm version, 1.0.3, as of this draft’s November 25 update; use the repository source to try them for now.
+
+When several fields need the same wording, put the defaults in one inline JSON script before the components connect:
+
+```html
+<script type="application/json" data-form-dropzone-config>
+  {
+    "drop-label": "Drop documents here",
+    "received-message": {
+      "one": "Received one file: {files}.",
+      "other": "Received {count} files: {files}."
+    }
+  }
+</script>
+```
+
+Instance attributes override shared values, and shared values override the built-in defaults. The five text settings can be shared; `preview-images` remains an instance option. Shared messages accept plain strings or plural forms with a required `other` phrase. `Intl.PluralRules` uses the inherited `lang` to choose a supplied form; you still write the translations.
+
+After changing the JSON, call `refresh()` on each affected component. It rereads the configuration without replacing the input, clearing selected files or previews, moving focus, or replaying an announcement. It returns `false` and logs the problem if configuration is invalid or the component isn’t connected and enhanced. The read-only `enhanced` property reports whether enhancement is active.
+
+### Make rejection feedback visible too
+
+A live-region announcement isn’t a visible record. If people need to review rejected filenames, provide visible feedback as well. The new `form-dropzone:drop` event supplies the native input and separate arrays of `File` objects for each outcome:
+
+```javascript
+const zone = document.querySelector('form-dropzone');
+const feedback = document.querySelector('#file-feedback');
+
+zone.addEventListener('form-dropzone:drop', ({ detail }) => {
+  const rejected = [...detail.rejectedType, ...detail.rejectedMultiple];
+  feedback.textContent = rejected.length
+    ? `Not selected: ${rejected.map((file) => file.name).join(', ')}.`
+    : '';
+});
+```
+
+Here, `#file-feedback` is a visible element you provide near the field. The `accepted`, `rejectedType`, and `rejectedMultiple` arrays describe that drop, not necessarily the input’s current selection. An all-rejected drop has no accepted files, but the input can still contain files selected earlier.
+
+The event fires after any native selection events and preview synchronization, including when every file was rejected. It doesn’t fire for picker changes or resets; continue listening to the input’s native events for selection and upload behavior. The event reports a completed outcome and can’t cancel the drop.
+
 ## Style the states that matter
 
 The component adds stable Light DOM classes for the enhanced surface, active drag state, status, and previews. You can override the low-specificity defaults with ordinary selectors:
@@ -148,6 +197,7 @@ form-dropzone {
 form-dropzone.form-dropzone--drag-active {
   border-color: rebeccapurple;
   background: lavender;
+  color: #222;
 }
 
 form-dropzone .form-dropzone__previews {
@@ -156,6 +206,8 @@ form-dropzone .form-dropzone__previews {
 ```
 
 The active state should make the target easier to recognize, but don’t rely on a subtle color change alone. A clear border, background shift, or other visible treatment can help someone track the destination while dragging.
+
+The defaults use a dashed `currentColor` border that becomes solid during a file drag, leaving foreground and background colors to the page. If you add a background, supply its foreground too, as above. Keep the native input’s focus indicator visible and check your overrides in forced colors.
 
 Also remember that dragging a file across nested elements fires a surprising number of enter and leave events. The component handles that bookkeeping so the active style doesn’t flicker every time the pointer crosses the prompt or label. Sometimes the best reusable abstraction is simply the one that absorbs browser weirdness once.
 
@@ -190,5 +242,7 @@ For most projects, the guarded definition helper will register `<form-dropzone>`
 ```javascript
 import "@aarongustafson/form-dropzone/define.js";
 ```
+
+The npm installation covers the released behavior; the additions marked above require the newer repository source until the next package release.
 
 Use the drop zone when it makes uploading easier. Keep the file field because it makes uploading possible.
