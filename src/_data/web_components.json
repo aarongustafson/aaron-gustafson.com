@@ -1,6 +1,7 @@
 [
 	{
 		"name": "content-warning",
+		"related_posts": ["considering-content-warnings-in-html"],
 		"github": "aarongustafson/content-warning",
 		"description": "Web component for block and inline content warnings.",
 		"demo_url": "https://aarongustafson.github.io/content-warning/demo/",
@@ -10,6 +11,7 @@
 	},
 	{
 		"name": "dynamic-datalist",
+		"related_posts": ["dynamic-datalist-autocomplete-from-an-api"],
 		"github": "aarongustafson/dynamic-datalist",
 		"description": "Web component that enables you to dynamically update a field's `datalist` with values retrieved from a URL as the user types.",
 		"demo_url": "https://aarongustafson.github.io/dynamic-datalist/demo/",
@@ -37,6 +39,7 @@
 	},
 	{
 		"name": "form-matching-fields",
+		"related_posts": ["matching-form-fields-with-a-web-component"],
 		"github": "aarongustafson/form-matching-fields",
 		"description": "Web component wrapper that adds additive validation to ensure two text-type fields match.",
 		"demo_url": "https://aarongustafson.github.io/form-matching-fields/demo/",
@@ -55,6 +58,7 @@
 	},
 	{
 		"name": "form-multi-switch",
+		"related_posts": ["there-can-be-only-one-redux"],
 		"github": "aarongustafson/form-multi-switch",
 		"description": "Progressively enhance native radio groups into accessible light-DOM segmented controls.",
 		"demo_url": "https://aarongustafson.github.io/form-multi-switch/demo/",
@@ -64,6 +68,7 @@
 	},
 	{
 		"name": "form-obfuscator",
+		"related_posts": ["a-web-component-for-obfuscating-form-fields"],
 		"github": "aarongustafson/form-obfuscator",
 		"description": "Web component that obfuscates fields when they don't have focus",
 		"demo_url": "https://aarongustafson.github.io/form-obfuscator/demo/",
@@ -73,6 +78,7 @@
 	},
 	{
 		"name": "form-repeatable",
+		"related_posts": ["repeatable-form-fields-made-simple"],
 		"github": "aarongustafson/form-repeatable",
 		"description": "A web component that enables you to control the duplication of fields.",
 		"demo_url": "https://aarongustafson.github.io/form-repeatable/demo/",
@@ -82,6 +88,7 @@
 	},
 	{
 		"name": "form-required-checkboxes",
+		"related_posts": ["requirement-rules-for-checkboxes"],
 		"github": "aarongustafson/form-required-checkboxes",
 		"description": "Web component that enables requirement rules for checkbox groups.",
 		"demo_url": "https://aarongustafson.github.io/form-required-checkboxes/demo/",
@@ -91,6 +98,7 @@
 	},
 	{
 		"name": "form-required-if",
+		"related_posts": ["a-web-component-for-conditional-dependent-fields"],
 		"github": "aarongustafson/form-required-if",
 		"description": "Web component that enables fields to be required based on the value(s) of other fields.",
 		"demo_url": "https://aarongustafson.github.io/form-required-if/demo/",
@@ -100,6 +108,7 @@
 	},
 	{
 		"name": "form-saver",
+		"related_posts": ["never-lose-form-progress-again"],
 		"github": "aarongustafson/form-saver",
 		"description": "A web component that stores (and restores) values within the form it wraps.",
 		"demo_url": "https://aarongustafson.github.io/form-saver/demo/",
@@ -109,6 +118,7 @@
 	},
 	{
 		"name": "form-show-if",
+		"related_posts": ["a-web-component-for-conditionally-displaying-fields"],
 		"github": "aarongustafson/form-show-if",
 		"description": "Web component that enables you to make one HTML form field show (or not) based on the value(s) of another field.",
 		"demo_url": "https://aarongustafson.github.io/form-show-if/demo/",
@@ -118,6 +128,7 @@
 	},
 	{
 		"name": "form-validation-list",
+		"related_posts": ["visual-validation-feedback-for-form-fields"],
 		"github": "aarongustafson/form-validation-list",
 		"description": "A web component comprising a list of validation rules for a field.",
 		"demo_url": "https://aarongustafson.github.io/form-validation-list/demo/",
@@ -127,6 +138,7 @@
 	},
 	{
 		"name": "fullscreen-control",
+		"related_posts": ["fullscreen-video-and-iframes-made-easy"],
 		"github": "aarongustafson/fullscreen-control",
 		"description": "Fullscreen controls for video, embedded content, or an authored wrapper.",
 		"demo_url": "https://aarongustafson.github.io/fullscreen-control/demo/",
@@ -154,6 +166,7 @@
 	},
 	{
 		"name": "lazy-img",
+		"related_posts": ["lazy-loading-images-based-on-screen-size"],
 		"github": "aarongustafson/lazy-img",
 		"description": "Web component that enables you to lazy load an image based on screen size.",
 		"demo_url": "https://aarongustafson.github.io/lazy-img/demo/",
@@ -199,6 +212,7 @@
 	},
 	{
 		"name": "tabbed-interface",
+		"related_posts": ["tabbed-interface-the-web-component"],
 		"github": "aarongustafson/tabbed-interface",
 		"description": "A web component that transforms heading-structured content into an accessible tabbed interface.",
 		"demo_url": "https://aarongustafson.github.io/tabbed-interface/demo/",
@@ -217,6 +231,7 @@
 	},
 	{
 		"name": "table-sortable",
+		"related_posts": ["sortable-tables-with-progressive-enhancement"],
 		"github": "aarongustafson/table-sortable",
 		"description": "A web component to enable users to sort the data in a table based on table cell values.",
 		"demo_url": "https://aarongustafson.github.io/table-sortable/demo/",
@@ -226,6 +241,7 @@
 	},
 	{
 		"name": "theme-switcher",
+		"related_posts": ["theme-switching-made-easy"],
 		"github": "aarongustafson/theme-switcher",
 		"description": "A light-DOM tri-state theme picker built on form-multi-switch.",
 		"demo_url": "https://aarongustafson.github.io/theme-switcher/demo/",
