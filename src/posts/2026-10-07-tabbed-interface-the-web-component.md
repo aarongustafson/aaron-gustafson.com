@@ -1,6 +1,7 @@
 ---
 title: "Tabbed Interface: The Web Component"
 date: 2026-10-07 04:04:09 +00:00
+last_updated_at: 2026-11-25 20:03:33 +00:00
 comments: true
 tags:
   ["web components", "progressive enhancement", "HTML", "accessibility", "ARIA"]
@@ -44,6 +45,8 @@ The markup requirement looks a lot like it did back in 2007; the only difference
 
 As you can see, it’s still several implicit sections in a sensible reading order. The headings give each section a name, the `id` attributes provide link targets, and the content is available even if JavaScript fails or hasn’t loaded yet.
 
+One thing to watch: that first heading needs to be a direct child of the component. In this example, each `<h2>` starts a section; an `<h3>` would belong to the section above it. Any introductory content should go before the opening `<tabbed-interface>` tag so it doesn’t get left out of the panels.
+
 When the component boots, it uses those headings to create the tab controls. The headings, paragraphs, form controls, and any other elements contained within remain in the light DOM. The component assigns them to slots, retaining their connections to other elements, events, and such—like you (as the author) intended.
 
 The component generates the necessary controls and wires everything up. Buttons with `role="tab"` sit in a `role="tablist"`, each button points to a `div[role="tabpanel"]`, and `aria-selected` indicates which one is active. Arrow keys move focus among the tabs; <kbd>Home</kbd> and <kbd>End</kbd> jump to either end. All as you’d expect.
@@ -74,6 +77,8 @@ In 2026, adding `id` attributes to headings has become quite commonplace because
 
 Here, the component opens “Requirements” initially. I’ve also enabled a tabpanel to be activated through the fragment identifier itself—a link to `#requirements` will activate that section when tabs are present; without tabs, the browser scrolls to the same heading as you’d expect.
 
+If you’ve set `default-tab` but someone follows a link to a different section, their link wins. Selecting another tab doesn’t change the URL, though. I’d also stick with simple, unique IDs like the ones above, as the component doesn’t currently decode percent-encoded fragments.
+
 This is a perfect example of carrying forward the intent of a tool like a fragment identifier into an alternate display widget.
 
 ## No squeezing, no scrolling
@@ -88,21 +93,23 @@ There’s no breakpoint to keep in sync with the component. You can resize the b
 
 ### If you’re dead-set on tabs…
 
-Just because I think it’s a good idea to toggle between the tabbed presentation and the linear one doesn’t mean you feel likewise. We don’t have to agree. You can opt out using the `fixed-tabs` attribute:
+Just because I think it’s a good idea to toggle between the tabbed presentation and the linear one doesn’t mean you feel likewise. We don’t have to agree, you can opt out using `presentation="tabs"`:
 
 ```html
-<tabbed-interface fixed-tabs>
+<tabbed-interface presentation="tabs">
   <!-- headings and content -->
 </tabbed-interface>
 ```
 
-`fixed-tabs` ensures tabs are always shown, whether they fit or not. If you decide to go this way, however, you’re assuming responsibility for making the tabs work at whatever dimensions someone happens to view your site. Be prepared to handle overflow—you own it. Side-scrolling tabs are an abomination in my opinion, but you may feel differently.
+This keeps tabs visible whether they fit or not. If you decide to go this way, however, you’re assuming responsibility for making the tabs work at whatever dimensions someone happens to view your site. Be prepared to handle overflow—you own it. Side-scrolling tabs are an abomination in my opinion, but you may feel differently.
+
+You can go the other direction too: `presentation="linear"` shows all the sections, regardless of how much room is available. Set it back to `"auto"` (the default) to let the component measure and decide.
 
 ## Printable tabs? Hell yeah!
 
 I don’t know about you, but I love it when sites think about the print experience. So few do. When I find a site where the author has clearly put time and effort into their print styles, I get chills. Yeah, I know I’m odd.
 
-Anyway, I hate it when widgets print like garbage, so I set this one up to print better than most: before the print dialog opens, the component switches to the linear layout so every heading and section appears on paper. Afterward, it measures again and brings back the tabs.
+Anyway, I hate it when widgets print like garbage, so I set this one up to print better than most: before the print dialog opens, the component switches to the linear layout so every heading and section appears on paper—even with `presentation="tabs"`. Afterward, it restores the requested presentation, measuring again if it’s automatic.
 
 No more missing content!
 
@@ -119,3 +126,7 @@ I put together a [live demo](https://aarongustafson.github.io/tabbed-interface/d
 If it seems useful to you, head on over to [the `<tabbed-interface>` project page](https://github.com/aarongustafson/tabbed-interface) for the installation options and a complete list of features and options.
 
 And if you use it on your site, let me know. Happy tabbing!
+
+## Update 2026-11-25
+
+I changed things up a bit in Version 3.1, allowing you to toggle the `presentation` directly via attribute and DOM property. Consequently, I updated the examples above, replacing `fixed-tabs` (which I’ve decprecated and will remove in 4.0) with this new attribute. I also added a little more detail about what happens to focus when the layout changes.

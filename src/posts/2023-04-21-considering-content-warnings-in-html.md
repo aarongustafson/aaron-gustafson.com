@@ -1,7 +1,7 @@
 ---
 title: "Considering content warnings in HTML"
 date: 2023-04-21 15:15:48 -07:00
-updated: 2023-04-24 14:39:48 -07:00
+last_updated_at: 2026-11-25 20:03:33 +00:00
 comments: true
 tags: ["HTML", "inclusive design"]
 description: "Prompted by a recent suggestion in the Web We Want inbox, I gave some thought to the potential for allowing authors to provide content warnings in their markup."
@@ -89,3 +89,25 @@ I tested this approach with VoiceOver and JAWS and it works a treat. I also conf
 </figure>
 
 Note: The browser doing the work of my demo would be much faster as it could do all the size calculations prior to rendering. I am having to fake that in JavaScript, so I have to peg it to the window’s `onload` event to ensure all CSS is applied to get the size calculations right.
+
+## Update 2026-11-25
+
+I turned this experiment into [a reusable `<content-warning>` component](https://github.com/aarongustafson/content-warning). I still want browsers to handle this sort of thing, but in the meantime, you can use the component without having to adapt my old CodePens. The markup is a little different from what I explored above: instead of adding an attribute to the content, you wrap it in a custom element.
+
+```html
+<content-warning
+  type="spoilers"
+  reveal-label="Warning: {type}. Show details"
+  hidden
+>
+  <p>The character returns in the final episode.</p>
+</content-warning>
+```
+
+Once you’ve installed `@aarongustafson/content-warning` from npm, this import registers the element:
+
+```javascript
+import '@aarongustafson/content-warning/define.js';
+```
+
+I’ve [put together a demo](https://aarongustafson.github.io/content-warning/demo/) so you can explore how the component works. Please test it out and let me know what you think.

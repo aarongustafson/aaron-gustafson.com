@@ -1,6 +1,7 @@
 ---
 title: "Drag and Drop without Leaving Anyone Behind"
 date: 2026-10-14 18:04:34 +00:00
+last_updated_at: 2026-11-25 20:03:33 +00:00
 comments: true
 tags:
   [
@@ -13,17 +14,15 @@ tags:
     "web forms",
     "user experience",
   ]
-description: "The `<form-dropzone>` web component adds drag-and-drop, status announcements, and optional image previews to a native file `<input>` without taking away its fallback."
-twitter_text: "Drag-and-drop file fields are convenient, but dragging can’t be the only option. I created a web component that enhances a native file input without replacing it."
+description: "Inspired by Nikita Hlopov’s file-input styling approach, I built a web component that adds drag-and-drop and optional image previews to a native file field."
+twitter_text: "I built a drag-and-drop file component around a native file input, inspired by Nikita Hlopov’s approach."
 ---
 
-Dragging a file onto a page can be much faster than opening a picker and retracing your steps through the filesystem. That convenience has made drop zones a familiar part of upload forms, but they’re often built as though everyone can drag, everyone knows where to drop, and the browser’s file input is an implementation detail best hidden from view.
+Nikita Hlopov’s article, [“Custom styled input type file”](https://nikitahl.com/custom-styled-input-type-file), takes an approach to file fields that I really like: keep the native input and its label, then build the drop zone around them. I wanted to make that approach reusable, so I built [`<form-dropzone>`](https://github.com/aarongustafson/form-dropzone).
 
-It isn’t. The native file input is the dependable part. My new [`<form-dropzone>`](https://github.com/aarongustafson/form-dropzone) web component keeps it intact and layers drag-and-drop, clear status messages, and optional image previews around it.
+Dragging a file onto a page is handy when you already have it in front of you. Having to drag it, on the other hand, is a problem. The component adds that convenience without taking away the file picker, along with feedback about dropped files and optional image previews.
 
 <!-- more -->
-
-The layout and interaction were inspired by Nikita Hlopov’s article, [“Custom styled input type file”](https://nikitahl.com/custom-styled-input-type-file). I liked the way that approach treated the real input and label as assets rather than obstacles, and I wanted to package that progressive enhancement into something reusable.
 
 ## Begin with a file field
 
@@ -44,9 +43,7 @@ The component expects one `input[type="file"]` and its associated `<label>`:
 
 Before the component upgrades, that’s an ordinary, usable file field. After it upgrades, the wrapper becomes a drop surface with the prompt “Drop file(s) here,” followed by “or” and the original label.
 
-That last part is important: drag-and-drop is an additional path, not the only path. People can still activate the label and use the operating system’s file picker. Keyboard, touch, switch, and voice input users don’t have to imitate a mouse gesture to upload something.
-
-The wrapper doesn’t add a button role or another tab stop. The file input and label already provide the keyboard interaction, so manufacturing a second control would make the interface more complicated without making it more capable.
+You can still use the file picker, whether you’re working with a keyboard, touch, voice input, or something else. Clicking the drop surface opens it too, unless you’re clicking another interactive control. I haven’t given the wrapper a button role or a tab stop; the file input already does that job.
 
 ## What happens when files are dropped?
 
@@ -60,17 +57,15 @@ When someone drops files onto the enhanced surface, the component:
 
 Because the accepted files belong to the actual input, they participate in an ordinary form submission and appear in `FormData` just like files chosen through the picker. Your validation and upload code can listen for the same events either way.
 
-A mixed drop doesn’t have to be all or nothing. If someone drops a PDF, a JPEG, and an unsupported executable, the acceptable files remain selected and the rejected one is named in the status message. That’s more useful than silently discarding the entire batch—or, worse, appearing to accept files that will disappear later.
+For example, with the markup above, you could drop a PDF, a JPEG, and an executable. The PDF and JPEG would be selected, and the component would announce that it rejected the executable. Without `multiple`, it would keep only the first acceptable file and explain that the others weren’t selected.
 
-## `accept` is useful, but it isn’t security
+Dropping acceptable files replaces any previous selection, just as choosing a new batch in the picker does. If nothing in the drop is acceptable, though, the existing selection stays put. I wouldn’t want an unsuccessful attempt to add a file to wipe out the ones you’d already chosen.
 
-The component understands the same comma-separated forms used by the input’s `accept` attribute:
+### A note about `accept`
 
-- file extensions, such as `.pdf`
-- exact MIME types, such as `application/pdf`
-- wildcard MIME groups, such as `image/*`
+For drops, the component checks the input’s [`accept` attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/accept). It understands extensions like `.pdf`, MIME types like `application/pdf`, and groups like `image/*`. Files chosen through the picker still follow the browser’s native behavior; the component’s rejection messages apply to drops.
 
-Using both an extension and a MIME type can make intent clearer across files whose type metadata isn’t especially dependable:
+You can combine these when file metadata might be incomplete:
 
 ```html
 <input
@@ -82,19 +77,11 @@ Using both an extension and a MIME type can make intent clearer across files who
 />
 ```
 
-Treat `accept` as guidance and early feedback, not a security boundary. Browsers and files can report incomplete or misleading MIME information, and client-side code can always be bypassed. Your server still needs to verify the type, inspect the contents where appropriate, enforce size limits, generate safe filenames, and decide where the upload may be stored.
+Bear in mind that these checks are for feedback, not security. File metadata can be wrong, and someone can bypass client-side checks altogether. You still need to validate uploads on the server.
 
-`<form-dropzone>` doesn’t add a file-size API. That’s intentional scope, not permission to accept a 14-gigabyte “headshot.” If size matters, communicate the limit near the field, check it before upload for faster feedback, and enforce it again on the server.
+The component doesn’t impose a file-size limit either. If your form has one, explain it near the field and enforce it on the server too.
 
-## One file means one file
-
-Without `multiple`, the first acceptable dropped file is selected and later acceptable files are rejected. The component announces both outcomes, which gives someone a useful explanation instead of quietly choosing on their behalf.
-
-If the task genuinely supports several files, add `multiple`. Don’t add it merely because the interface can. A tax-return form that expects one signed document shouldn’t turn into a mystery collection because someone dropped their whole Downloads folder.
-
-The same principle applies to `accept`: make it broad enough for legitimate work, but no broader. Requiring a designer to convert a perfectly good PNG to JPEG before uploading doesn’t improve your system; it just transfers work to them.
-
-## Optional previews, not pretend uploads
+## Want image previews?
 
 For image-oriented tasks, `preview-images` adds previews for selected images:
 
@@ -107,18 +94,19 @@ For image-oriented tasks, `preview-images` adds previews for selected images:
 
 The previews work for files selected through the picker and files added by dropping. Non-image files can remain selected, but the component won’t try to render them as images.
 
-A preview confirms which file was selected. It does _not_ mean the file has been uploaded. Selection, validation, transfer, processing, and storage are different stages, and interfaces should name them honestly. If uploading starts immediately, provide separate progress and success states tied to the actual network request. If the form still needs to be submitted, keep the submit control and say so.
+A preview is useful confirmation that you chose the right image, but it doesn’t mean the image has been uploaded. This component handles file selection, not the network request. If your form uploads immediately, you’ll need to provide progress and confirmation separately.
 
-The component revokes its temporary object URLs whenever previews are replaced, disabled, or removed. That housekeeping isn’t visible, but it keeps a helpful flourish from turning into a resource leak.
+The component cleans up the temporary object URLs when it no longer needs them. Resetting the form clears the previews and old drop feedback too, unless you’ve canceled the reset. Choosing files through the picker clears the previous drop feedback as well.
 
 ## Tell people what happened
 
-Drop outcomes are written to a polite, atomic status region. Accepted files, rejected types, and extra files in a single-file field each have their own message, so partial success doesn’t get flattened into a vague “Something went wrong.”
+If some files were selected and others weren’t, people need to know which was which. The component announces those results using a polite live region, with separate messages for accepted files, rejected types, and extra files dropped onto a single-file field.
 
-All of that wording can be adapted:
+You can change all that wording. Here’s a French example:
 
 ```html
 <form-dropzone
+  lang="fr"
   drop-label="Déposez les fichiers ici"
   separator-label="ou"
   received-message="{count} fichier(s) reçu(s) : {files}."
@@ -132,11 +120,41 @@ All of that wording can be adapted:
 
 The `{files}` token becomes a comma-separated list of filenames and `{count}` becomes the number of files in that part of the result.
 
-Filename announcements can get long, especially when `multiple` is involved. That’s another reason to choose useful constraints instead of accepting everything by default. If your workflow expects dozens of files, consider whether a summarized count and a visible file list would be kinder than reading every name aloud.
+If you’re expecting dozens of files, reading all those names aloud could get tiresome. You might prefer a count in the announcement and a visible list people can review.
+
+### Shared wording and plural forms
+
+**A release note before we go further:** as of November 25, the shared-message and drop-event features below are in the repository, but not yet in the npm package (1.0.3). You’ll need the repository source to try them for now.
+
+With several drop zones on a page, repeating the same messages on every field gets tedious. You can now set the wording once, in a JSON script before the components:
+
+```html
+<script type="application/json" data-form-dropzone-config>
+  {
+    "drop-label": "Drop documents here",
+    "received-message": {
+      "one": "Received one file: {files}.",
+      "other": "Received {count} files: {files}."
+    }
+  }
+</script>
+```
+
+Here, the accepted-file message has two forms, so someone dropping one file doesn’t get “Received 1 files.” The component uses [`Intl.PluralRules`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules) and the inherited `lang` to choose among the phrases you supply. `other` is required; you can add the other plural forms your language needs. You still write the translations.
+
+An attribute on an individual drop zone takes precedence over the shared wording, so you can make an exception without copying everything. If you change the JSON after the components have loaded, call `refresh()` on each affected instance. That updates the wording in place without clearing someone’s files or moving their focus. It returns `false` and logs the problem if it can’t apply the change. You can also read `enhanced` to check whether a drop zone is active.
+
+### Make rejection feedback visible too
+
+The generated live region is visually hidden, so it won’t help someone who needs to _see_ which files were rejected. For that, the new `form-dropzone:drop` event gives you the input and three lists of files: `accepted`, `rejectedType`, and `rejectedMultiple`. You can use those to write a message alongside the field.
+
+There’s a distinction worth keeping in mind: those lists describe the drop, not necessarily what’s selected now. If the entire drop was rejected, `accepted` will be empty, but the input will still have any files selected earlier.
+
+Keep listening to the input’s native events for selection and upload behavior. This extra event reports completed drops, including rejected ones; it doesn’t fire when someone uses the picker or resets the form. The [event documentation](https://github.com/aarongustafson/form-dropzone#drop-outcomes) has the full details.
 
 ## Style the states that matter
 
-The component adds stable Light DOM classes for the enhanced surface, active drag state, status, and previews. You can override the low-specificity defaults with ordinary selectors:
+The styles use ordinary classes in the light DOM, so there’s no shadow root to work around. For example, you could left-align the field, give the active drop target a different background, and put the previews in two columns:
 
 ```css
 form-dropzone {
@@ -148,6 +166,7 @@ form-dropzone {
 form-dropzone.form-dropzone--drag-active {
   border-color: rebeccapurple;
   background: lavender;
+  color: #222;
 }
 
 form-dropzone .form-dropzone__previews {
@@ -155,17 +174,15 @@ form-dropzone .form-dropzone__previews {
 }
 ```
 
-The active state should make the target easier to recognize, but don’t rely on a subtle color change alone. A clear border, background shift, or other visible treatment can help someone track the destination while dragging.
+By default, the boundary changes from dashed to solid while a file is being dragged over it. That gives you a cue beyond a color change. The example above adds a background and a matching foreground; you’ll want to check those colors, along with the native input’s focus indicator, in your own page and in forced colors.
 
-Also remember that dragging a file across nested elements fires a surprising number of enter and leave events. The component handles that bookkeeping so the active style doesn’t flicker every time the pointer crosses the prompt or label. Sometimes the best reusable abstraction is simply the one that absorbs browser weirdness once.
+The component also keeps track of drag events across nested elements. Without that bookkeeping, crossing the prompt or label can make the active style flicker even though you haven’t left the drop zone.
 
-## Progressive enhancement is doing real work here
+## And without JavaScript?
 
-If the browser doesn’t support the drag-and-drop and assignable `FileList` APIs the component needs, it leaves the label and input alone. If JavaScript fails, it does the same. People lose the drop surface and previews, but they can still choose files and submit the form.
+You still have the label and file input you started with. The same is true if the browser lacks the file drag-and-drop APIs or won’t let the script assign files to the input. There’s no drop surface or preview, but you can choose files and submit the form.
 
-Invalid markup is also left unchanged and reported in the console. That failure mode is preferable to half-enhancing a field and making the dependable path harder to use.
-
-The core best practice is straightforward: build the upload around a native file input, then treat dropping as a convenience. A pointer gesture can make an experience quicker for some people; it shouldn’t make the experience possible only for them.
+If the component can’t find the expected input and label, it leaves the markup alone and reports the problem in the console.
 
 ## Try it out
 
@@ -191,4 +208,4 @@ For most projects, the guarded definition helper will register `<form-dropzone>`
 import "@aarongustafson/form-dropzone/define.js";
 ```
 
-Use the drop zone when it makes uploading easier. Keep the file field because it makes uploading possible.
+Remember that the shared messages and drop event described above need the newer repository source until the next npm release. If you give the component a try, I’d love to hear how it works with your forms.
