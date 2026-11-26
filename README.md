@@ -93,6 +93,8 @@ array containing post slugs (the Markdown filename without its date prefix or
 extension). Entries reuse the tag-page teaser with compact styling, using each
 published post’s title, URL, and date. Posts excluded from the build are not shown.
 Omit `related_posts` for components without a related entry.
+Related-entry blocks are temporarily marked `hidden` while their presentation is
+revisited; the data and teaser markup remain in place.
 
 ## Theme preferences
 

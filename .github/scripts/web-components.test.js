@@ -70,6 +70,8 @@ test("component cards reuse notebook teasers with real post metadata and preserv
 		const teasers = card.querySelectorAll(".web-component__post .entry--post");
 		assert.equal(teasers.length, component.related_posts?.length ?? 0);
 		for (const [index, teaser] of [...teasers].entries()) {
+			assert.equal(teaser.parentElement.hidden, true);
+			assert.equal(teaser.parentElement.querySelector("hr"), null);
 			const post = posts.find(
 				(item) => item.fileSlug === component.related_posts[index],
 			);

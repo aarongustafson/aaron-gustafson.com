@@ -93,8 +93,7 @@ permalink: /web-components/
 			{% for post_slug in component.related_posts %}
 			{% set post = collections.posts | pluck("fileSlug", post_slug) %}
 			{% if post %}
-			<div class="web-component__post">
-				<hr>
+			<div class="web-component__post" hidden>
 				{% include "partials/post/teaser.njk" %}
 			</div>
 			{% endif %}
@@ -363,13 +362,6 @@ permalink: /web-components/
 	}
 	.web-component__post {
 		margin-block: 0;
-	}
-
-	.web-component__post hr {
-		border: 0;
-		border-block-start: 1px solid var(--web-component-border);
-		margin: 0;
-		margin-block: 1.375rem;
 	}
 
 	.web-component__post .entry--teaser {
