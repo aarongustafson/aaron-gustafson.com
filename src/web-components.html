@@ -18,6 +18,16 @@ permalink: /web-components/
 	enhance the web.
 </p>
 
+<p>
+	Building a component of your own? My
+	<a href="/notebook/a-web-component-starter-template/">Web Component Starter Template</a>
+	brings together the scaffolding, testing, and publishing tools so you can focus
+	on what your component does.
+</p>
+
+{% set svg_essay %}{{ "/src/static/i/icons/essay.svg" | svgContents | safe }}{% endset %}
+{% set teaser_heading_level = "h3" %}
+{% set show_summary = false %}
 {% if web_components.length > 0 %}
 <list-filter
 	for="web-components-list"
@@ -79,6 +89,15 @@ permalink: /web-components/
 			{% if component.description %}
 			<p class="listing__item__description">{{ component.description | markdownify | safe }}</p>
 			{% endif %}
+
+			{% for post_slug in component.related_posts %}
+			{% set post = collections.posts | pluck("fileSlug", post_slug) %}
+			{% if post %}
+			<div class="web-component__post" hidden>
+				{% include "partials/post/teaser.njk" %}
+			</div>
+			{% endif %}
+			{% endfor %}
 
 			<div class="web-component__links">
 				{% if component.github %}
@@ -340,5 +359,44 @@ permalink: /web-components/
 			grid-template-columns: repeat(2, minmax(0, 1fr));
 			margin-inline: 0;
 		}
+	}
+	.web-component__post {
+		margin-block: 0;
+	}
+
+	.web-component__post .entry--teaser {
+		align-items: flex-start;
+		gap: 0.75rem;
+		margin: 0;
+	}
+
+	.web-component__post .entry__type {
+		flex: none;
+		inline-size: 1rem;
+		block-size: 1rem;
+		padding: 0.5rem;
+		margin: 0;
+	}
+
+	.web-component__post .entry__type svg {
+		display: block;
+		inline-size: 1rem;
+		max-block-size: 1rem;
+	}
+
+	.web-component__post .entry__details {
+		min-inline-size: 0;
+		margin: 0;
+	}
+
+	.web-component__post .entry__title {
+		font-size: 1.125rem;
+		line-height: 1.3;
+		margin: 0;
+	}
+
+	.web-component__post .entry__meta {
+		font-size: 0.75rem;
+		margin: 0.25rem 0 0;
 	}
 </style>
