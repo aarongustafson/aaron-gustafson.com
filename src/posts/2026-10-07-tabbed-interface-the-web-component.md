@@ -1,7 +1,7 @@
 ---
 title: "Tabbed Interface: The Web Component"
 date: 2026-10-07 04:04:09 +00:00
-last_updated_at: 2026-11-25 18:52:55 +00:00
+last_updated_at: 2026-11-25 20:03:33 +00:00
 comments: true
 tags:
   ["web components", "progressive enhancement", "HTML", "accessibility", "ARIA"]
@@ -45,7 +45,7 @@ The markup requirement looks a lot like it did back in 2007; the only difference
 
 As you can see, it’s still several implicit sections in a sensible reading order. The headings give each section a name, the `id` attributes provide link targets, and the content is available even if JavaScript fails or hasn’t loaded yet.
 
-Start with a direct-child heading: its level determines which later headings begin new sections. Lower-level headings belong to the current section. Keep introductory content outside the component, as content before that first heading isn’t included in the enhanced panels.
+One thing to watch: that first heading needs to be a direct child of the component. In this example, each `<h2>` starts a section; an `<h3>` would belong to the section above it. Any introductory content should go before the opening `<tabbed-interface>` tag so it doesn’t get left out of the panels.
 
 When the component boots, it uses those headings to create the tab controls. The headings, paragraphs, form controls, and any other elements contained within remain in the light DOM. The component assigns them to slots, retaining their connections to other elements, events, and such—like you (as the author) intended.
 
@@ -77,7 +77,7 @@ In 2026, adding `id` attributes to headings has become quite commonplace because
 
 Here, the component opens “Requirements” initially. I’ve also enabled a tabpanel to be activated through the fragment identifier itself—a link to `#requirements` will activate that section when tabs are present; without tabs, the browser scrolls to the same heading as you’d expect.
 
-A matching fragment takes precedence over `default-tab` when the component initializes. Selecting a tab doesn’t rewrite the URL. Use simple, unique heading IDs; the component matches fragment text directly rather than decoding percent-encoded IDs.
+If you’ve set `default-tab` but someone follows a link to a different section, their link wins. Selecting another tab doesn’t change the URL, though. I’d also stick with simple, unique IDs like the ones above, as the component doesn’t currently decode percent-encoded fragments.
 
 This is a perfect example of carrying forward the intent of a tool like a fragment identifier into an alternate display widget.
 
@@ -93,7 +93,7 @@ There’s no breakpoint to keep in sync with the component. You can resize the b
 
 ### If you’re dead-set on tabs…
 
-Just because I think it’s a good idea to toggle between the tabbed presentation and the linear one doesn’t mean you feel likewise. We don’t have to agree. As of version 3.1, you can request tabs using `presentation="tabs"`:
+Just because I think it’s a good idea to toggle between the tabbed presentation and the linear one doesn’t mean you feel likewise. We don’t have to agree. As of version 3.1, you can opt out using `presentation="tabs"`:
 
 ```html
 <tabbed-interface presentation="tabs">
@@ -103,18 +103,22 @@ Just because I think it’s a good idea to toggle between the tabbed presentatio
 
 This keeps tabs visible whether they fit or not. If you decide to go this way, however, you’re assuming responsibility for making the tabs work at whatever dimensions someone happens to view your site. Be prepared to handle overflow—you own it. Side-scrolling tabs are an abomination in my opinion, but you may feel differently.
 
-The same attribute accepts `"linear"` to show every section or `"auto"` for the default fit-based behavior. The older `fixed-tabs` attribute and `fixedTabs` property still work in automatic mode, but they’re deprecated. Remove them when migrating; otherwise, returning to `"auto"` could unexpectedly force tabs again.
+You can go the other direction too: `presentation="linear"` shows all the sections, regardless of how much room is available. Set it back to `"auto"` (the default) to let the component measure and decide.
 
-You can change the presentation in JavaScript without moving the authored nodes or reconnecting nested components:
+If you used `fixed-tabs` in an earlier version, it still works, but I’m deprecating it in favor of this single setting. Remove the old attribute when you switch; leaving it in place will force tabs again if you later return to `"auto"`.
+
+The setting is available in JavaScript too:
 
 ```javascript
 const tabs = document.querySelector('tabbed-interface');
 tabs.presentation = 'linear';
 ```
 
-The component remembers the selected section while the content is linear. When tabs return, a section containing keyboard focus takes precedence so the focused control doesn’t disappear.
+Changing it doesn’t move your content around or disconnect and reconnect any components inside it. That matters if, say, someone has already selected a file in a form. Changing the surrounding layout shouldn’t undo their work.
 
-`presentation` is what you requested; the read-only `layout` property tells you what’s actually displayed: `"tabs"`, `"linear"`, or `null` before initialization or after disconnection. Layout changes are queued, so don’t assume the applied layout changes synchronously with a property assignment. The `data-layout` attribute reflects that result for CSS; it isn’t a configuration option.
+The component also remembers which tab was selected. If someone moves focus into a different section while the content is linear, however, that section gets selected when the tabs return. Otherwise, we’d be hiding the very control they’re using.
+
+If you need to check which layout is actually on screen, read `layout` rather than `presentation`. Asking for `"auto"` doesn’t tell you whether the tabs fit. The read-only `layout` property and `data-layout` attribute report the result once the component has applied it; setting `data-layout` yourself won’t choose the layout.
 
 ## Printable tabs? Hell yeah!
 
@@ -140,4 +144,4 @@ And if you use it on your site, let me know. Happy tabbing!
 
 ## Update 2026-11-25
 
-I updated the examples for version 3.1’s `presentation` API and clarified section boundaries, fragment selection, focus preservation, and the distinction between requested presentation and applied layout. Existing `fixed-tabs` uses still work, but new code should use `presentation="tabs"`.
+Version 3.1 brings the layout choices together under `presentation`: automatic, tabs, or linear. I’ve updated the examples above, including the replacement for `fixed-tabs`, and added a little more detail about what happens to focus when the layout changes.

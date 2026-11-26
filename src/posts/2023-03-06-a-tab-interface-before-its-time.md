@@ -1,7 +1,7 @@
 ---
 title: "A Tab Interface Before Its Time"
 date: 2023-03-06 16:22:14 -07:00
-last_updated_at: 2026-11-25 18:52:55 +00:00
+last_updated_at: 2026-11-25 20:03:33 +00:00
 comments: true
 tags: ["HTML", "web components"]
 description: "It’s cool to see ideas I was playing with over a dozen years ago starting to make it into new markup constructs."
@@ -70,4 +70,4 @@ Anyway, it’s wild to see the idea finally beginning to get some traction in a 
 
 ## Update 2026-11-25
 
-I’ve since carried this approach into [`<tabbed-interface>`](/notebook/tabbed-interface-the-web-component/). It measures the styled tabs and switches between tabbed and linear presentations as space changes; it doesn’t turn the sections into an accordion. The newer post covers the current API, including version 3.1’s `presentation` setting.
+Well, I built it again. This time it’s a web component: [`<tabbed-interface>`](/notebook/tabbed-interface-the-web-component/). It measures the tabs with their styles applied and, when they don’t fit, shows the headings and content in order rather than switching to an accordion. I’ve written up that version separately if you’d like to give it a try.

@@ -1,7 +1,7 @@
 ---
 title: "A Production-Ready Web Component Starter Template"
 date: 2026-01-02 00:06:37 +00:00
-last_updated_at: 2026-11-25 18:52:55 +00:00
+last_updated_at: 2026-11-25 20:03:33 +00:00
 comments: true
 tags:
   [
@@ -11,12 +11,12 @@ tags:
     "developer tools",
     "best practices",
   ]
-description: "I created a comprehensive starter template for creating production-ready web components with modern tooling, testing, and CI/CD—following Google’s Custom Element Best Practices."
-twitter_text: "Start building web components the right way with this production-ready template."
+description: "After copying the same setup between web components, I pulled it into a starter template with tests, demos, and npm publishing workflows."
+twitter_text: "I kept copying the same setup between web components, so I made a starter template."
 atUri: "at://did:plc:6rmgrvblxflqh34omwywu6ib/site.standard.document/3mxrnvzpgiz2n"
 image: "/i/share-cards/a-web-component-starter-template.jpg"
-meta_description: "I built a production-ready web-component starter with modern tooling, testing, and CI/CD based on Google’s best practices."
-social_description: "I created a comprehensive starter template for creating production-ready web components with modern tooling, testing, and CI/CD—following Google’s Custom Element Best Practices."
+meta_description: "I pulled the setup I kept copying between web components into a starter template with tests, demos, and npm publishing workflows."
+social_description: "After copying the same setup between web components, I pulled it into a starter template with tests, demos, and npm publishing workflows."
 ---
 
 Starting a new web component from scratch usually means rebuilding the same scaffolding: test setup, build configuration, linting, CI/CD, docs, and all the rest. After building—and rebuilding—more components than I care to count, I pulled those patterns into a starter template so you can spend your time on component behavior instead of project plumbing.
@@ -53,13 +53,13 @@ npm run setup
 The setup wizard asks for your component name and description, then automatically:
 
 - Renames the component, declaration, and component test files,
-- Updates the listed source and configuration placeholders with your details,
+- Replaces the component-name and description placeholders,
 - Generates a proper README from the included template,
 - Removes the one-time setup files and command,
 - Installs dependencies, and
 - Initializes Git and creates an initial commit only if there’s no existing `.git` directory.
 
-You’re left with a scaffolded repository, ready for you to develop your component. Setup retains the contributor instructions, demo editing guide, shared demo checks, and versioning helpers. It doesn’t create a GitHub repository or change an existing remote. Review the generated files and replace the example documentation with your component’s actual behavior.
+That takes care of the repetitive bits. The contributor instructions, demo guide, checks, and versioning helpers stay in place for you to use as you develop. You’ll still need to review the generated files and write the documentation for what your component actually does. Setup won’t create a GitHub repository or change an existing remote for you.
 
 ## Flexible import patterns
 
@@ -87,7 +87,7 @@ import { defineComponentName } from '@yourscope/component-name/define.js';
 defineComponentName();
 ```
 
-The registration helper checks for a browser custom-element registry and skips an already registered tag. That doesn’t make the module safe to import during server-side rendering (SSR), though: the component class extends `HTMLElement` when the module is evaluated. Keep these imports in browser-only code.
+The helper won’t try to register the same tag twice, and it checks that a browser registry is available before registering anything. There’s an important caveat, though: the class still extends `HTMLElement` as soon as you import the module. If you’re rendering on the server, keep that import in your browser-only code. The registration guard won’t save you from a missing `HTMLElement`.
 
 ## Testing made easy
 
@@ -111,30 +111,30 @@ Happy DOM provides a lightweight browser environment, and the included scripts s
 - Interactive UI: `npm run test:ui`
 - Coverage reports: `npm run test:coverage`
 
-Happy DOM is useful, but it isn’t a substitute for checking browser behavior. The starter also includes Playwright tests for Chromium, Firefox, and WebKit:
+Of course, a simulated DOM can only tell us so much. For things like native form behavior and focus, the starter also includes [Playwright](https://playwright.dev/) tests in Chromium, Firefox, and WebKit:
 
 ```bash
 npx playwright install chromium firefox webkit
 npm run test:browser
 ```
 
-Those tests check native form participation, labels, focus during upgrade, `hidden`, and the no-JavaScript fallback. Unit tests cover properties assigned before definition and preservation of authored content through rendering and reconnection. You’ll still need tests for your own enhancement and a keyboard and assistive-technology review.
+These check that forms and labels still work, that upgrading the element doesn’t steal focus, and that the original HTML remains useful without JavaScript. The unit tests also cover setting properties before an element is defined and keeping its content intact when it reconnects. They give you a starting point, not a clean bill of health for whatever you build. You’ll need to test your component’s behavior, including with a keyboard and assistive technology.
 
 ## Demos that preserve the example
 
-The full demo pages now show Code and Live example tabs, with Code selected initially—unless someone has already started interacting with the live example while the enhancement loads. A page-level toggle switches every example back to the linear code-and-example view and saves that preference. Printing shows both.
+I’ve also been working on the demos that accompany these components. The full demo pages now let you switch between the code and the live example using tabs, or turn the tabs off to see both together. The page remembers your preference, and printing includes both views.
 
-The live component stays in a permanent host when the presentation changes. Toggling the demo shouldn’t reconnect a nested component, clear a file selection, or reset something you were trying out. If the optional tab enhancement fails, the linear examples remain available.
+There’s a less visible detail here that matters more than the tabs: switching views leaves the live component in place. If you’ve selected a file or filled in a field, you shouldn’t lose that work because you wanted to look at the code. Likewise, if you start using an example before the tabs finish loading, the enhancement keeps that example open rather than hiding it. Otherwise, Code is selected first.
 
-The shared demo shell also supplies Copy controls and optional syntax highlighting. Component examples and component-specific styles remain yours to edit; shared layout and enhancement files have integrity checks so they don’t quietly drift between projects. Run `npm run demo:check` and follow the retained [demo editing guide](https://github.com/aarongustafson/web-component-starter/blob/main/demo/README.md) when changing them. There isn’t a standalone automatic updater for existing projects.
+Copy buttons and syntax highlighting are included too. If the optional enhancements fail, the code and live examples are still there. The common demo files are shared across projects, with checks to catch accidental differences. If you want to change those, the [demo editing guide](https://github.com/aarongustafson/web-component-starter/blob/main/demo/README.md) explains what belongs where and how to run `npm run demo:check`. Existing projects won’t update themselves.
 
 ## Automated publishing with OIDC
 
 The template uses [npm trusted publishing](https://docs.npmjs.com/trusted-publishers/) with OpenID Connect (OIDC), avoiding a long-lived npm token. Publish the first version manually, then configure a trusted publisher on npm for your repository’s `publish.yml` workflow.
 
-For subsequent versions, run `npm version patch` (or `minor` or `major`) from a clean working tree. The version helper updates the versioned esm.sh demo URLs, and npm creates a commit and version tag. The `postversion` script then runs `git push --follow-tags`—so this command pushes, not just versions locally.
+After that, you can publish a new version by running `npm version patch` (or `minor` or `major`) from a clean working tree. Along with npm’s version commit and tag, the setup updates the esm.sh demo URLs to match.
 
-The publishing workflow runs on a pushed `v*` tag, **not** a GitHub release. It verifies the tag against the package version, runs lint and unit tests, and publishes with provenance. You can also run the workflow manually; it defaults to a dry run.
+One thing to be aware of: **this also pushes the commit and tag**. The starter’s `postversion` script runs `git push --follow-tags`, which triggers publishing when the tag begins with `v`. You don’t need to create a GitHub release. The workflow checks the version, runs lint and unit tests, then publishes with provenance. If you’d rather check the process first, a manual workflow run defaults to a dry run.
 
 Manual publishing is still supported if you prefer that approach.
 
@@ -151,7 +151,7 @@ The template bakes in best practices from the start:
 
 The included [`WEB-COMPONENTS-BEST-PRACTICES.md` document](https://github.com/aarongustafson/web-component-starter/blob/main/WEB-COMPONENTS-BEST-PRACTICES.md) explains the reasoning behind each pattern, making it a learning resource as well as a starter template.
 
-The example component deliberately does very little: `render()` records initialization rather than replacing your HTML or inventing a widget. You supply the behavior, semantics, and tests the actual component needs.
+The example component deliberately does very little. Its `render()` method records that it initialized; it doesn’t replace your HTML, add roles, or create a shadow root. I’d rather start there and add what a component needs than ask you to undo assumptions that don’t fit. Shadow DOM is still an option, but it’s a choice to make for the component you’re building.
 
 ## Why I built this
 
@@ -161,4 +161,4 @@ If you build something with it, I’d love to hear about it!
 
 ## Update 2026-11-25
 
-The starter now defaults to light DOM and includes browser tests, declarations, and shared demo infrastructure. I updated the setup and publishing instructions too, including the automatic push performed by `npm version`, and corrected the earlier claim that guarded registration made imports server-safe.
+As I’ve continued working on these components, I’ve brought more of that work back into the starter: light DOM by default, browser tests, type declarations, and the shared demos described above. I also corrected two things in this post: publishing starts from a pushed version tag, not a GitHub release, and the registration guard doesn’t make the modules safe to import on a server.

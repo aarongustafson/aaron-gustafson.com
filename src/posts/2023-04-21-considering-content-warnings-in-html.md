@@ -1,7 +1,7 @@
 ---
 title: "Considering content warnings in HTML"
 date: 2023-04-21 15:15:48 -07:00
-last_updated_at: 2026-11-25 18:52:55 +00:00
+last_updated_at: 2026-11-25 20:03:33 +00:00
 comments: true
 tags: ["HTML", "inclusive design"]
 description: "Prompted by a recent suggestion in the Web We Want inbox, I gave some thought to the potential for allowing authors to provide content warnings in their markup."
@@ -92,7 +92,7 @@ Note: The browser doing the work of my demo would be much faster as it could do 
 
 ## Update 2026-11-25
 
-I’ve since packaged this work as [`<content-warning>`](https://github.com/aarongustafson/content-warning), with a [live demo](https://aarongustafson.github.io/content-warning/demo/). The examples above document the original experiment, not the current component’s API. Instead of adding an attribute to an arbitrary element, wrap the content:
+This experiment eventually became [a reusable `<content-warning>` component](https://github.com/aarongustafson/content-warning). I still want browsers to handle this sort of thing, but in the meantime, you can use the component without having to adapt my old CodePens. The markup is a little different from what I explored above: instead of adding an attribute to the content, you wrap it:
 
 ```html
 <content-warning
@@ -104,21 +104,21 @@ I’ve since packaged this work as [`<content-warning>`](https://github.com/aaro
 </content-warning>
 ```
 
-Register it with the package’s definition module:
+Once you’ve installed `@aarongustafson/content-warning` from npm, this import registers the element:
 
 ```javascript
 import '@aarongustafson/content-warning/define.js';
 ```
 
-The native `hidden` attribute keeps the authored content hidden before upgrade and if JavaScript fails. The component removes that host attribute on connection and renders its warning on the next animation frame, so it doesn’t guarantee uninterrupted hiding during initialization. Without authored `hidden`, the content is visible before upgrade.
+Notice the `hidden` attribute. That’s what keeps the content out of view before the script runs or if JavaScript fails. Without it, you’ll have ordinary, visible HTML until the component takes over. There’s still a wrinkle: the component removes `hidden` when it connects, then renders the warning on the next animation frame. I can’t promise there won’t be a flash of content between those steps.
 
-After rendering, the default block presentation obscures content beneath a dark overlay and uses `inert` to prevent interaction and exclude it from the accessibility tree. Inline warnings use `inline` and hide their unrevealed wrapper. The optional `blur` mode is a visual alternative, not equivalent protection: bare text nodes aren’t blurred, and focusable descendants can remain in the keyboard order. I’d avoid interactive content in that mode.
+Once rendered, a block warning covers the content with a dark overlay and uses [`inert`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/inert) to keep it out of the keyboard order and accessibility tree. Add `inline` for a warning within a sentence. There’s a `blur` option too, but I’d be careful with it: it doesn’t blur bare text nodes or keep focusable descendants out of the keyboard order.
 
-My earlier Reader Mode test was encouraging, but it wasn’t a universal guarantee. Reading tools differ in when and how they extract a page, and the current component doesn’t guarantee exclusion from every Reader Mode either. Nor does wrapping an image guarantee that its download is deferred. The content is still in the document; this isn’t access control.
+As for Reader Mode, my earlier result in Edge was just that: a result in Edge, with that version of the demo. Other reading tools may extract the content differently, and the packaged component doesn’t reliably exclude it from every one of them. It also doesn’t guarantee that images will wait to download. Those are still good reasons to want browser support; a JavaScript component can only do so much. And, of course, anyone inspecting the document can still read what’s there.
 
-Version 1.2 adds complete button-label templates. `reveal-label` controls both the visible wording and the accessible name, with `{type}` substituted as plain text. That gives translators control over the whole phrase instead of splitting it into a prefix and suffix. The old `label-prefix` and `label-suffix` options still work, but are deprecated.
+The latest change, in version 1.2, concerns the warning itself. Earlier versions split the button label into a prefix, the warning type, and a suffix. That’s awkward if you need a different word order in another language. Now `reveal-label` lets you write the whole phrase, putting `{type}` wherever it belongs. The visible wording is also the button’s accessible name, so you only have one label to translate. If you’re using `label-prefix` and `label-suffix`, they still work, but they’re deprecated.
 
-For repeated warnings, you can share wording using one inline JSON script:
+And if you have several warnings on a page, you don’t need to repeat the wording on every one:
 
 ```html
 <script type="application/json" data-content-warning-config>
@@ -129,6 +129,6 @@ For repeated warnings, you can share wording using one inline JSON script:
 </script>
 ```
 
-An instance’s `reveal-label` overrides the shared template; `type-label` supplies the wording when `type` is missing or empty. Supply translations yourself and set `lang` appropriately—the component doesn’t include a language catalog. If you edit the shared JSON after initialization, call `refresh()` on each affected instance; it updates labels without rebuilding the button or concealing already revealed content.
+This script supplies the page’s defaults. You can still give an individual warning its own `reveal-label`; `type-label` provides the description when you haven’t supplied a `type`. You’ll need to write any translations and set `lang` yourself. If you change the shared wording after the components have loaded, call `refresh()` on the affected warnings to pick it up—anything someone has already revealed stays revealed.
 
-Revealing removes the warning control and emits `content-warning:revealed` once. The component uses alert semantics and attempts to focus the host, but actual focus and announcements depend on the content, browser, and assistive technology. Test those combinations rather than assuming my original demo results carry over unchanged.
+I’ve put together [a current demo](https://aarongustafson.github.io/content-warning/demo/) so you can explore the options. Please test the reveal behavior with your own content and assistive technology too. The component uses alerts and attempts to move focus when content is revealed, but the original VoiceOver and JAWS checks above don’t establish how today’s component will behave in every combination.
