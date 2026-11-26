@@ -144,4 +144,4 @@ And if you use it on your site, let me know. Happy tabbing!
 
 ## Update 2026-11-25
 
-Version 3.1 brings the layout choices together under `presentation`: automatic, tabs, or linear. I’ve updated the examples above, including the replacement for `fixed-tabs`, and added a little more detail about what happens to focus when the layout changes.
+I changed things up a bit in Version 3.1, allowing you to toggle the `presentation` directly via attribute and DOM property. Consequently, I updated the examples above, replacing `fixed-tabs` (which I’ve decprecated and will remove in 4.0) with this new attribute. I also added a little more detail about what happens to focus when the layout changes.

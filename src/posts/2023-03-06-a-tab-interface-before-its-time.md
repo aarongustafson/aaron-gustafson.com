@@ -70,4 +70,4 @@ Anyway, it’s wild to see the idea finally beginning to get some traction in a 
 
 ## Update 2026-11-25
 
-Well, I built it again. This time it’s a web component: [`<tabbed-interface>`](/notebook/tabbed-interface-the-web-component/). It measures the tabs with their styles applied and, when they don’t fit, shows the headings and content in order rather than switching to an accordion. I’ve written up that version separately if you’d like to give it a try.
+Well, I built it again. This time it’s a web component: [`<tabbed-interface>`](https://aarongustafson.github.io/tabbed-interface/). It measures the tabs with their styles applied and, when they don’t fit, shows the headings and content in order rather than switching to an accordion. [I’ve written up that version separately](/notebook/tabbed-interface-the-web-component/) if you’d like to give it a try.

@@ -161,4 +161,7 @@ If you build something with it, I’d love to hear about it!
 
 ## Update 2026-11-25
 
-As I’ve continued working on these components, I’ve brought more of that work back into the starter: light DOM by default, browser tests, type declarations, and the shared demos described above. I also corrected two things in this post: publishing starts from a pushed version tag, not a GitHub release, and the registration guard doesn’t make the modules safe to import on a server.
+As I’ve continued working on these components, I’ve brought more of that work back into the starter: light DOM by default, browser tests, type declarations, and a more predictable way of keeping demos in sync. I also corrected two things in this post:
+
+1. publishing starts from a pushed version tag, not a GitHub release, and
+2. the registration guard doesn’t make the modules safe to import on a server.

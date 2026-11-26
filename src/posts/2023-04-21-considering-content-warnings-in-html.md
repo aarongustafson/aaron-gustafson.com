@@ -92,7 +92,7 @@ Note: The browser doing the work of my demo would be much faster as it could do 
 
 ## Update 2026-11-25
 
-This experiment eventually became [a reusable `<content-warning>` component](https://github.com/aarongustafson/content-warning). I still want browsers to handle this sort of thing, but in the meantime, you can use the component without having to adapt my old CodePens. The markup is a little different from what I explored above: instead of adding an attribute to the content, you wrap it:
+I turned this experiment into [a reusable `<content-warning>` component](https://github.com/aarongustafson/content-warning). I still want browsers to handle this sort of thing, but in the meantime, you can use the component without having to adapt my old CodePens. The markup is a little different from what I explored above: instead of adding an attribute to the content, you wrap it in a custom element.
 
 ```html
 <content-warning
@@ -110,25 +110,4 @@ Once you’ve installed `@aarongustafson/content-warning` from npm, this import 
 import '@aarongustafson/content-warning/define.js';
 ```
 
-Notice the `hidden` attribute. That’s what keeps the content out of view before the script runs or if JavaScript fails. Without it, you’ll have ordinary, visible HTML until the component takes over. There’s still a wrinkle: the component removes `hidden` when it connects, then renders the warning on the next animation frame. I can’t promise there won’t be a flash of content between those steps.
-
-Once rendered, a block warning covers the content with a dark overlay and uses [`inert`](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/inert) to keep it out of the keyboard order and accessibility tree. Add `inline` for a warning within a sentence. There’s a `blur` option too, but I’d be careful with it: it doesn’t blur bare text nodes or keep focusable descendants out of the keyboard order.
-
-As for Reader Mode, my earlier result in Edge was just that: a result in Edge, with that version of the demo. Other reading tools may extract the content differently, and the packaged component doesn’t reliably exclude it from every one of them. It also doesn’t guarantee that images will wait to download. Those are still good reasons to want browser support; a JavaScript component can only do so much. And, of course, anyone inspecting the document can still read what’s there.
-
-The latest change, in version 1.2, concerns the warning itself. Earlier versions split the button label into a prefix, the warning type, and a suffix. That’s awkward if you need a different word order in another language. Now `reveal-label` lets you write the whole phrase, putting `{type}` wherever it belongs. The visible wording is also the button’s accessible name, so you only have one label to translate. If you’re using `label-prefix` and `label-suffix`, they still work, but they’re deprecated.
-
-And if you have several warnings on a page, you don’t need to repeat the wording on every one:
-
-```html
-<script type="application/json" data-content-warning-config>
-  {
-    "reveal-label": "Warning: {type}. Show content",
-    "type-label": "sensitive content"
-  }
-</script>
-```
-
-This script supplies the page’s defaults. You can still give an individual warning its own `reveal-label`; `type-label` provides the description when you haven’t supplied a `type`. You’ll need to write any translations and set `lang` yourself. If you change the shared wording after the components have loaded, call `refresh()` on the affected warnings to pick it up—anything someone has already revealed stays revealed.
-
-I’ve put together [a current demo](https://aarongustafson.github.io/content-warning/demo/) so you can explore the options. Please test the reveal behavior with your own content and assistive technology too. The component uses alerts and attempts to move focus when content is revealed, but the original VoiceOver and JAWS checks above don’t establish how today’s component will behave in every combination.
+I’ve [put together a demo](https://aarongustafson.github.io/content-warning/demo/) so you can explore how the component works. Please test it out and let me know what you think.
