@@ -93,7 +93,7 @@ There’s no breakpoint to keep in sync with the component. You can resize the b
 
 ### If you’re dead-set on tabs…
 
-Just because I think it’s a good idea to toggle between the tabbed presentation and the linear one doesn’t mean you feel likewise. We don’t have to agree. As of version 3.1, you can opt out using `presentation="tabs"`:
+Just because I think it’s a good idea to toggle between the tabbed presentation and the linear one doesn’t mean you feel likewise. We don’t have to agree, you can opt out using `presentation="tabs"`:
 
 ```html
 <tabbed-interface presentation="tabs">
@@ -104,21 +104,6 @@ Just because I think it’s a good idea to toggle between the tabbed presentatio
 This keeps tabs visible whether they fit or not. If you decide to go this way, however, you’re assuming responsibility for making the tabs work at whatever dimensions someone happens to view your site. Be prepared to handle overflow—you own it. Side-scrolling tabs are an abomination in my opinion, but you may feel differently.
 
 You can go the other direction too: `presentation="linear"` shows all the sections, regardless of how much room is available. Set it back to `"auto"` (the default) to let the component measure and decide.
-
-If you used `fixed-tabs` in an earlier version, it still works, but I’m deprecating it in favor of this single setting. Remove the old attribute when you switch; leaving it in place will force tabs again if you later return to `"auto"`.
-
-The setting is available in JavaScript too:
-
-```javascript
-const tabs = document.querySelector('tabbed-interface');
-tabs.presentation = 'linear';
-```
-
-Changing it doesn’t move your content around or disconnect and reconnect any components inside it. That matters if, say, someone has already selected a file in a form. Changing the surrounding layout shouldn’t undo their work.
-
-The component also remembers which tab was selected. If someone moves focus into a different section while the content is linear, however, that section gets selected when the tabs return. Otherwise, we’d be hiding the very control they’re using.
-
-If you need to check which layout is actually on screen, read `layout` rather than `presentation`. Asking for `"auto"` doesn’t tell you whether the tabs fit. The read-only `layout` property and `data-layout` attribute report the result once the component has applied it; setting `data-layout` yourself won’t choose the layout.
 
 ## Printable tabs? Hell yeah!
 

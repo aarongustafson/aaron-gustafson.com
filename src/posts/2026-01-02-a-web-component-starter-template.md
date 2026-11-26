@@ -124,8 +124,6 @@ These check that forms and labels still work, that upgrading the element doesn�
 
 I’ve also been working on the demos that accompany these components. The full demo pages now let you switch between the code and the live example using tabs, or turn the tabs off to see both together. The page remembers your preference, and printing includes both views.
 
-There’s a less visible detail here that matters more than the tabs: switching views leaves the live component in place. If you’ve selected a file or filled in a field, you shouldn’t lose that work because you wanted to look at the code. Likewise, if you start using an example before the tabs finish loading, the enhancement keeps that example open rather than hiding it. Otherwise, Code is selected first.
-
 Copy buttons and syntax highlighting are included too. If the optional enhancements fail, the code and live examples are still there. The common demo files are shared across projects, with checks to catch accidental differences. If you want to change those, the [demo editing guide](https://github.com/aarongustafson/web-component-starter/blob/main/demo/README.md) explains what belongs where and how to run `npm run demo:check`. Existing projects won’t update themselves.
 
 ## Automated publishing with OIDC
